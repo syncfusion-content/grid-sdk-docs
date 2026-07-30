@@ -1,0 +1,55 @@
+<div style="padding-bottom:20px">
+    <ejs-button id="save" content="Save column settings" class="e-primary"></ejs-button>
+    <ejs-button id="restore" content="Restore column settings" class="e-primary custom"></ejs-button>
+</div>
+<div id="message" class="message"></div>
+<ejs-grid id="grid" dataSource="@ViewBag.dataSource" enablePersistence="true" allowPaging="true" allowFiltering="true" height="348px"> 
+    <e-grid-columns>
+        <e-grid-column field="OrderID" headerText="Order ID" textAlign="Right" width="120"></e-grid-column>
+        <e-grid-column field="CustomerID" headerText="Customer Name" width="150" headerTemplate="#customertemplate"></e-grid-column>
+        <e-grid-column field="OrderDate" headerText="Order Date" format="yMd" textAlign="Right" width="150"></e-grid-column>
+        <e-grid-column field="Freight" headerText="Freight" width="150" textAlign="Right" template="#template"></e-grid-column>
+    </e-grid-columns>
+</ejs-grid>
+<script>
+    document.getElementById('save').addEventListener('click', function () {
+        var grid = document.getElementById('grid').ej2_instances[0];
+        var persistedGridSettings = JSON.parse(grid.getPersistData());
+        var gridColumns = Object.assign([], (grid.getColumns()));
+        persistedGridSettings.columns.forEach(function (persistedColumn) {
+            var column = gridColumns.find(function (col) { return col.field === persistedColumn.field; });
+            if (column) {
+                persistedColumn.headerText = 'Text Changed';
+                persistedColumn.template = column.template;
+                persistedColumn.headerTemplate = column.headerTemplate;
+            }
+        });
+        window.localStorage.setItem('orderGridSettings', JSON.stringify(persistedGridSettings));
+        grid.setProperties(persistedGridSettings);
+        document.getElementById('message').innerText = 'Saved the headerText, template column, and headerTemplate properties in the persisted settings';
+    });
+    document.getElementById('restore').addEventListener('click', function () {
+        var savedSettings = window.localStorage.getItem('orderGridSettings');
+        var grid = document.getElementById('grid').ej2_instances[0];
+        if (savedSettings) {
+            grid.setProperties(JSON.parse(savedSettings));
+            document.getElementById('message').innerText = 'Restored the headerText, template column, and headerTemplate';
+        } else {
+            document.getElementById('message').innerText = 'No saved settings found.';
+        }
+    });
+</script>
+<script id="customertemplate" type="text/x-template">
+    <button>HeaderTemplate</button>
+</script>
+<style>
+    .message {
+        text-align: center;
+        color: red;
+        font-size: 16px;
+        padding-bottom: 20px;
+    }
+    .custom {
+        margin-left: 20px;
+    }
+</style>

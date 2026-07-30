@@ -1,0 +1,44 @@
+---
+layout: post
+title: Validation in Vue Treegrid component | Syncfusion
+description: Learn here all about Validation in Syncfusion Vue Treegrid component of Syncfusion Essential JS 2 and more.
+control: Validation 
+platform: grid-sdk
+documentation: ug
+domainurl: https://help.syncfusion.com/grid-sdk
+---
+
+# Validation in Vue Treegrid component
+
+## Column validation
+
+Column validation allows you to validate the edited or added row data and it display errors for invalid fields before saving data.
+TreeGrid uses `Form Validator` component for column validation. You can set validation rules by defining the [`columns.validationRules`](https://ej2.syncfusion.com/vue/documentation/api/treegrid/column/#validationrules).
+
+{% tabs %}
+{% highlight html tabtitle="Composition API (~/src/App.vue)" %}
+{% include code-snippet/grid-sdk/vue/treegrid/editing/default-cs14/app-composition.vue %}
+{% endhighlight %}
+{% highlight html tabtitle="Options API (~/src/App.vue)" %}
+{% include code-snippet/grid-sdk/vue/treegrid/editing/default-cs14/app.vue %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/treegrid/editing/default-cs14" %}
+
+## Custom validation
+
+You can define your own custom validation rules for the specific columns by using `Form Validator custom rules`.
+
+In the below demo, custom validation applied for `Priority` column.
+
+{% tabs %}
+{% highlight html tabtitle="Composition API (~/src/App.vue)" %}
+{% include code-snippet/grid-sdk/vue/treegrid/editing/default-cs15/app-composition.vue %}
+{% endhighlight %}
+{% highlight html tabtitle="Options API (~/src/App.vue)" %}
+{% include code-snippet/grid-sdk/vue/treegrid/editing/default-cs15/app.vue %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/treegrid/editing/default-cs15" %}

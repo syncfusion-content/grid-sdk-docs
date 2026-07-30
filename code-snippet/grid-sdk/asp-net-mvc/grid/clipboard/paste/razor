@@ -1,0 +1,8 @@
+@Html.EJS().Grid("Paste").DataSource((IEnumerable<object>)ViewBag.DataSource).AllowSelection().Columns(col =>
+{
+    col.Field("OrderID").HeaderText("Order ID").IsPrimaryKey(true).Width("90").Visible(true).TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("CustomerID").HeaderText("Customer Name").Width("100").Add();
+    col.Field("ShipCity").HeaderText("Ship City").Width("100").Add();
+    col.Field("ShipCountry").HeaderText("Ship Country").Width("100").Add();
+    col.Field("ShipName").HeaderText("Ship Name").Width("100").Add();
+}).SelectionSettings(select => select.CellSelectionMode(Syncfusion.EJ2.Grids.CellSelectionMode.Box).Mode(Syncfusion.EJ2.Grids.SelectionMode.Cell).Type(Syncfusion.EJ2.Grids.SelectionType.Multiple)).EditSettings(edit => { edit.AllowAdding(true).AllowEditing(true).AllowDeleting(true).Mode(Syncfusion.EJ2.Grids.EditMode.Batch); }).Toolbar(new List<string>() { "Add", "Update", "Cancel" }).Render()

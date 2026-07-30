@@ -1,0 +1,24 @@
+---
+layout: post
+title: Adding header and footer in Vue Treegrid component | Syncfusion
+description: Learn here all about Adding header and footer in Syncfusion Vue Treegrid component of Syncfusion Essential JS 2 and more.
+control: Adding header and footer 
+platform: grid-sdk
+documentation: ug
+domainurl: https://help.syncfusion.com/grid-sdk
+---
+
+# Adding header and footer in Vue Treegrid component
+
+The excel export provides an option to include header and footer content for exported excel document.
+
+{% tabs %}
+{% highlight html tabtitle="Composition API (~/src/App.vue)" %}
+{% include code-snippet/grid-sdk/vue/treegrid/excel/default-cs1/app-composition.vue %}
+{% endhighlight %}
+{% highlight html tabtitle="Options API (~/src/App.vue)" %}
+{% include code-snippet/grid-sdk/vue/treegrid/excel/default-cs1/app.vue %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/treegrid/excel/default-cs1" %}

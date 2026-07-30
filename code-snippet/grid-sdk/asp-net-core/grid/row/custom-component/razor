@@ -1,0 +1,27 @@
+@Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)ViewBag.EmployeeDataSource).DetailTemplate("#detailtemplate").Width("auto").Columns(col =>
+{
+    col.Field("EmployeeID").HeaderText("Employee ID").Width("140").Add();
+    col.Field("FirstName").HeaderText("Name").Width("140").Add();
+    col.Field("City").HeaderText("City").Width("150").Add();
+    col.Field("Country").HeaderText("Country").Width("150").Add();
+
+}).DetailDataBound("detailDataBound").Render()
+
+<script id='detailtemplate' type="text/x-template">
+    <div class='custom-grid'></div>
+</script>
+<script>
+    function detailDataBound(e) {
+        var ordersDataSource = @Html.Raw(JsonConvert.SerializeObject(ViewBag.DataSource));
+        var detail=new ej.grids.Grid({
+            dataSource: ordersDataSource.filter((item) =>
+            item['EmployeeID'] === e.data['EmployeeID']),
+            columns: [
+                { field: 'OrderID', headerText: 'Order ID', width: 110 },
+                { field: 'CustomerID', headerText: 'Customer Name', width: 140 },
+                { field: 'ShipCountry', headerText: 'Ship Country', width: 150 }
+            ]
+                });
+        detail.appendTo(e.detailElement.querySelector('.custom-grid'));
+    }
+</script>

@@ -1,0 +1,24 @@
+<ejs-grid id="grid" dataSource="@ViewBag.dataSource" allowExcelExport="true" height="348px" toolbarClick="toolbarClick" excelExportComplete="excelExportComplete" toolbar="@(new List<string>() { "ExcelExport" })" allowPaging="true">
+    <e-grid-columns>
+        <e-grid-column field="OrderID" headerText="Order ID" isPrimaryKey="true" textAlign="Right" width="120"></e-grid-column>
+        <e-grid-column field="CustomerID" headerText="Customer Name" visible="false" width="150"></e-grid-column>
+        <e-grid-column field="OrderDate" headerText="Order Date" format="yMd" textAlign="Right" width="130"></e-grid-column>
+        <e-grid-column field="Freight" headerText="Freight" format="C2" textAlign="Right" width="150"></e-grid-column>
+        <e-grid-column field="ShipCountry" headerText="Ship Country" width="150"></e-grid-column>
+    </e-grid-columns>
+</ejs-grid>
+<script>
+    function toolbarClick(args) {
+        var grid = document.getElementById("grid").ej2_instances[0];
+        if (args.item.id === 'grid_excelexport') {
+            grid.columns[1].visible = true;
+            grid.columns[3].visible = false;
+            grid.excelExport();
+        }
+    }
+    function excelExportComplete(args) {
+        var grid = document.getElementById("grid").ej2_instances[0];
+        grid.columns[1].visible = false;
+        grid.columns[3].visible = true;
+    }
+</script>

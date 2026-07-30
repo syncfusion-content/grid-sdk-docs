@@ -1,0 +1,19 @@
+@{
+    List<object> ContextMenuitems = new List<object>();
+    ContextMenuitems.Add(new { text = "Copy with headers", target = ".e-content", id = "copywithheader" });
+}
+@Html.EJS().Grid("grid").DataSource((IEnumerable<object>)ViewBag.dataSource).Height("348px").Columns(col =>
+{
+   col.Field("OrderID").HeaderText("Order ID").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+   col.Field("CustomerID").HeaderText("Customer Name").Width("150").Add();
+   col.Field("ShipName").HeaderText("Ship Name").Width("150").Add();
+   col.Field("ShipCity").HeaderText("Ship City").Width("150").Add();
+}).AllowPaging().AllowSelection().ContextMenuItems(ContextMenuitems).ContextMenuClick("contextMenuClick").Render()
+<script>
+    function contextMenuClick(args) {
+        if (args.item.id === 'copywithheader') {
+            var grid = document.getElementById("grid").ej2_instances[0];
+            grid.copy(true);
+        }
+    }
+</script> 

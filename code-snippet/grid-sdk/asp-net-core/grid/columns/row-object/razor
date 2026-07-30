@@ -1,0 +1,26 @@
+@Html.EJS().Dialog("dialog").Header("Selected Row Details").Content("dialogContent").ShowCloseIcon(true).Visible(false).Width("50%").Render()
+@Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)ViewBag.DataSource).Height(315).QueryCellInfo("queryCellInfo").Columns(col =>
+{
+    col.Field("EmployeeID").HeaderText("Employee ID").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Width(130).Add();
+    col.Field("FirstName").HeaderText("First Name").Width(120).Add();
+    col.HeaderText("Employee Data").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Template("#columnTemplate").Width(150).IsPrimaryKey(true).Add();
+}).Render()
+
+<script id="columnTemplate" type="text/x-template">
+    <button class='e-btn view-button'>View</button>
+</script>
+
+<script>
+    function queryCellInfo(args) {
+        let dialog = document.getElementById("dialog").ej2_instances[0];
+        if (args.column.headerText === 'Employee Data') {
+            args.cell.querySelector('.view-button').addEventListener('click', function () {
+                dialog.visible = true;
+                dialog.content =
+                `<p><b>EmployeeID:</b> ${args.data.EmployeeID}</p>
+                 <p><b>FirstName:</b> ${args.data.FirstName}</p>
+                 <p><b>LastName:</b> ${args.data.LastName}</p>`;
+            });
+        }
+    }
+</script>

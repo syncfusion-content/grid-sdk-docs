@@ -1,0 +1,76 @@
+@Html.AntiForgeryToken()
+<ejs-grid id="grid" dataSource="@ViewBag.DataSource" height="348px" allowPaging="true" actionComplete="actionComplete" toolbar="@( new List<object>() {"Add","Edit","Delete","Update","Cancel"})">
+    <e-grid-editsettings allowAdding="true" allowDeleting="true" allowEditing="true" mode="Dialog" template='#dialogtemplate'></e-grid-editsettings>
+    <e-grid-columns>
+        <e-grid-column field="OrderID" headerText="Order ID" isPrimaryKey="true" textAlign="Right" width="120"></e-grid-column>
+        <e-grid-column field="CustomerID" headerText="Customer Name" width="150"></e-grid-column>
+        <e-grid-column field="ShipCountry" headerText="ShipCountry" width="150"></e-grid-column>
+    </e-grid-columns>
+</ejs-grid>
+<script id='dialogtemplate' type="text/x-template">
+    <div id="dialogTemp"></div>
+</script>
+<script>
+    function actionComplete(args) {
+        let spinner = ej.popups.createSpinner({ target: args.dialog.element });
+        ej.popups.showSpinner(args.dialog.element);
+        if (args.requestType === 'beginEdit') {
+            var ajax = new ej.base.Ajax({
+                type: "POST",
+                url: "/Index?handler=EditPartial",
+                beforeSend: function (xhr) {
+                    ajax.httpRequest.setRequestHeader("XSRF-TOKEN",
+                       $('input:hidden[name="__RequestVerificationToken"]').val());
+                },
+                contentType: "application/json",
+                dataType: 'json',
+                data: JSON.stringify({ value: args.rowData })
+            });
+            ajax.send().then(function (data) {
+                appendElement(data, args.form);
+                args.form.elements.namedItem('CustomerID').focus();
+                ej.popups.hideSpinner(args.dialog.element);
+            }).catch(function (xhr) {
+                    console.log(xhr);
+                    ej.popups.hideSpinner(args.dialog.element);
+            });
+        }
+        else if (args.requestType === 'add') {
+            var ajax = new ej.base.Ajax({
+                type: "POST",
+                url: "/Index?handler=AddPartial",
+                beforeSend: function (xhr) {
+                    ajax.httpRequest.setRequestHeader("XSRF-TOKEN",
+                        $('input:hidden[name="__RequestVerificationToken"]').val());
+                },
+                contentType: "application/json",
+                dataType: 'json'
+            });
+            ajax.send().then(function (data) {
+                $("#dialogTemp").html(data);
+                    args.form.elements.namedItem('OrderID').focus();
+                    ej.popups.hideSpinner(args.dialog.element);
+                }).catch(function (xhr) {
+                    console.log(xhr);
+                    ej.popups.hideSpinner(args.dialog.element);
+                });
+            }
+        }
+    function appendElement(elementString, form) {
+        form.querySelector("#dialogTemp").innerHTML = elementString;
+        var script = document.createElement('script');
+        script.type = "text/javascript";
+        var serverScript = form.querySelector("#dialogTemp").querySelector('script');
+        script.textContent = serverScript.innerHTML;
+        document.head.appendChild(script);
+        serverScript.remove();
+    }
+</script>
+<style>
+    .form-group.col-md-6 {
+        width: 250px;
+    }
+    #ShipAddress {
+        resize: vertical;
+    }
+</style >

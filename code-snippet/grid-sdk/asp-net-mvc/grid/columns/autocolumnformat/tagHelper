@@ -1,0 +1,20 @@
+<ejs-grid id="Grid" dataSource="@ViewBag.DataSource" dataBound="dataBound">        
+</ejs-grid>
+<script>
+    function dataBound() {
+        const grid = document.getElementById('Auto').ej2_instances[0];
+        for (const cols of grid.columns) {
+            if (cols.field === 'OrderID') {
+                cols.width = 120;
+            }
+            if (cols.field === 'OrderDate') {
+                cols.type = 'date';
+                cols.format = 'yMd';
+            }
+            if (cols.field === 'Freight') {
+                cols.format = 'P2';
+            }
+        }
+        grid.refreshColumns();
+    }
+</script>

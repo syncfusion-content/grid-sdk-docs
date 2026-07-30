@@ -1,0 +1,51 @@
+<div style="padding-bottom: 20px; display: flex">
+    <label style="margin-right: 10px;">Enable or diable RTL mode:</label>
+    <ejs-switch id="switch" change="onSwitchChange"></ejs-switch>
+</div>
+    <ejs-grid id="Grid" dataSource="@ViewBag.DataSource" allowSorting="true" allowReordering="true" allowFiltering="true" allowGrouping="true" allowPaging="true" enableRtl="true" height="315" showColumnMenu="true" showColumnChooser="true" toolbar="@(new List<string>() {"Add", "Edit" , "Delete" , "Update" , "Cancel" })">
+        <e-grid-editSettings allowAdding="true" allowDeleting="true" allowEditing="true"></e-grid-editSettings>
+        <e-grid-pagesettings pageSize="7"></e-grid-pagesettings>
+        <e-grid-columns>
+            <e-grid-column field="OrderID" headerText="Order ID" textAlign="Right" isPrimaryKey="true"
+                width="90"></e-grid-column>
+            <e-grid-column field="CustomerID" headerText="Customer ID" width="100"></e-grid-column>
+            <e-grid-column field="ShipCity" headerText="Ship City" width="100"></e-grid-column>
+            <e-grid-column field="ShipName" headerText="Ship Name" width="120"></e-grid-column>
+        </e-grid-columns>
+    </ejs-grid>
+<script>
+    loadLocaleFile();
+    function loadLocaleFile() {
+        fetch('/cldr-data/locale.json')
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Failed to load culture file');
+                }
+                return response.json();
+            })
+            .then(arAELocalization => {
+                ej.base.L10n.load(arAELocalization);
+                applyLocaleToGrid();  // Refresh the grid after localization is loaded
+            })
+            .catch(error => {
+                console.error('Error loading culture file:', error);
+            });
+    }
+
+    function applyLocaleToGrid() {
+        var grid = document.getElementById('Grid').ej2_instances[0];
+        if (grid) {
+            grid.locale = "ar-AE";
+            grid.refresh();
+        }
+    }
+
+    function onSwitchChange(args) {
+        var grid = document.getElementById("Grid").ej2_instances[0];
+        if (args.checked) {
+            grid.enableRtl = false;
+        } else {
+            grid.enableRtl = true;
+        }
+    }
+    </script>

@@ -1,0 +1,32 @@
+@{
+    string[] exportGrids = { "FirstGrid", "SecondGrid" };
+}
+<ejs-grid id="FirstGrid" dataSource="@ViewBag.FirstGridData" allowPdfExport="true" toolbarClick="toolbarClick" exportGrids="exportGrids" toolbar="@(new List<string>() {"PdfExport"})">
+    <e-grid-columns>
+        <e-grid-column field="OrderID" headerText="Order ID" textAlign="Right" width="90"></e-grid-column>
+        <e-grid-column field="CustomerID" headerText="Customer ID" width="100"></e-grid-column>
+        <e-grid-column field="ShipCity" headerText="Ship City" width="100"></e-grid-column>
+        <e-grid-column field="ShipName" headerText="Ship Name" width="110"></e-grid-column>
+    </e-grid-columns>
+</ejs-grid>
+
+<ejs-grid id="SecondGrid" dataSource="@ViewBag.SecondGridData" allowPdfExport="true">
+    <e-grid-columns>
+        <e-grid-column field="EmployeeID" headerText="Employee ID" textAlign="Right" width="90"></e-grid-column>
+        <e-grid-column field="FirstName" headerText="First Name" width="100"></e-grid-column>
+        <e-grid-column field="LastName" headerText="Last Name" width="100"></e-grid-column>
+        <e-grid-column field="City" headerText="City" width="100"></e-grid-column>
+    </e-grid-columns>
+</ejs-grid>
+
+<script>
+    function toolbarClick(args) {
+        var firstGrid = document.getElementById("FirstGrid").ej2_instances[0];
+        if (args.item.id === 'FirstGrid_pdfexport') {
+            var appendPdfExportProperties = {
+                multipleExport: { type: "AppendToPage", blankSpace: 10 }
+            };
+            firstGrid.pdfExport(appendPdfExportProperties, true);
+        }
+    }
+</script>

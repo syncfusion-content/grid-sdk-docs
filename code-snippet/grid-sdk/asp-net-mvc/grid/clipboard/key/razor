@@ -1,0 +1,8 @@
+@(Html.EJS().Grid("Clipboard").DataSource((IEnumerable<object>)ViewBag.DataSource).Columns(col =>
+{
+    col.Field("OrderID").HeaderText("Order ID").Width("90").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("CustomerID").HeaderText("Customer ID").Width("100").Add();
+    col.Field("ShipCity").HeaderText("Ship City").Width("100").Add();
+    col.Field("ShipName").HeaderText("Ship Name").Width("130").Add();
+    
+}).AllowSelection(true).SelectionSettings(select => select.Type(Syncfusion.EJ2.Grids.SelectionType.Multiple)).Height("272").Render())

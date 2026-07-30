@@ -1,0 +1,58 @@
+---
+layout: post
+title: Enable Disable Grid And Its Actions in ASP.NET MVC Grid Component
+description: Learn here all about Enable Disable Grid And Its Actions in Syncfusion ASP.NET MVC Grid component of Syncfusion Essential JS 2 and more.
+platform: grid-sdk
+control: Enable Disable Grid And Its Actions
+publishingplatform: grid-sdk
+documentation: ug
+---
+
+# Enable disable grid and its actions in ASP.Net MVC Grid component
+
+You can enable or disable the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.Net MVC Grid and its actions by applying or removing specific CSS styles. This functionality is particularly useful in scenarios where interactions need to be restricted. Follow the steps below to implement this feature.
+
+**Step 1**: Create CSS class with custom style to override the default style of Grid.
+
+```css
+        .disablegrid {
+            pointer-events: none;
+            opacity: 0.4;
+        }
+        .wrapper {
+            cursor: not-allowed;
+        }
+
+```
+
+**Step 2**: Add/Remove the CSS class to the Grid in the click event handler of Button.
+
+```typescript
+    <script>
+        document.getElementById('element').onclick = function () {
+            var grid = document.getElementById("grid").ej2_instances[0];
+            if (grid.element.classList.contains('disablegrid')) {
+                grid.element.classList.remove('disablegrid');
+                document.getElementById("gridParent").classList.remove('wrapper');
+            }
+            else {
+                grid.element.classList.add('disablegrid');
+                document.getElementById("gridParent").classList.add('wrapper');
+            }
+        }
+    </script>
+
+```
+
+In the below demo, the button click will enable/disable the Grid and its actions.
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/grid-sdk/asp-net-mvc/grid/how-to/disablegrid/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="disablegrid.cs" %}
+{% include code-snippet/grid-sdk/asp-net-mvc/grid/how-to/disablegrid/disablegrid.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+![Enable disable grid and its actions](../images/howto-enable-disable.gif)

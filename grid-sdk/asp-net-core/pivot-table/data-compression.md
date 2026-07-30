@@ -1,0 +1,54 @@
+---
+layout: post
+title: Data Compression in ASP.NET Core Pivot Table component | Syncfusion
+description: Learn here all about data compression in Syncfusion ASP.NET Core Pivot Table component of Syncfusion Essential JS 2 and more.
+platform: grid-sdk
+control: Data Compression
+publishingplatform: grid-sdk
+documentation: ug
+---
+
+<!-- markdownlint-disable MD036 -->
+
+# Data Compression in ASP.NET Core Pivot Table component
+
+> This property is applicable only for the relational data source.
+
+When binding large volumes of raw data, the pivot table processes all raw data to generate aggregated data during initial rendering and report manipulation. However, with data compression enabled, the input raw data is compressed based on the uniqueness of the raw data, and the final compressed raw data is utilized by the pivot table. The compressed raw data is then used for all subsequent operations, reducing the looping complexity and improving the performance of the pivot table. For example, if the pivot table connects to one million raw data records that compress to 1,000 unique raw data records, it will render significantly faster—potentially within 3 seconds rather than 10 seconds, depending on the data complexity and system specifications. Enable this option by using the [allowDataCompression](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_AllowDataCompression) property along with the [enableVirtualization](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_EnableVirtualization) property.
+
+N> This options will only function when the virtual scrolling is enabled.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/virtual-scrolling-compression/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="VirtualScrolling.cs" %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/virtual-scrolling-compression/VirtualScrolling.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/virtual-scrolling-compression/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="VirtualScrolling.cs" %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/virtual-scrolling-compression/VirtualScrolling.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+**Limitations during data compression:**
+
+- The following aggregation types will not be supported:
+  - Average
+  - Populationstdev
+  - Samplestdev
+  - Populationvar
+  - Samplevar
+- If you use any of the above aggregations, they will result in the aggregation type **"Sum"**.
+- **"DistinctCount"** will act as **"Count"** aggregation type.
+- In the calculated field, an existing field can be inserted without altering its default aggregation type. Even if changed, it would revert to the default aggregation type for calculation.

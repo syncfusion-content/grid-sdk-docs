@@ -1,0 +1,49 @@
+---
+layout: post
+title: Command column editing in Vue Treegrid component | Syncfusion
+description: Learn here all about Command column editing in Syncfusion Vue Treegrid component of Syncfusion Essential JS 2 and more.
+control: Command column editing 
+platform: grid-sdk
+documentation: ug
+domainurl: https://help.syncfusion.com/grid-sdk
+---
+
+# Command column editing in Vue Treegrid component
+
+The command column provides an option to add CRUD action buttons in a column. This can be defined by the [`column.commands`](https://ej2.syncfusion.com/vue/documentation/api/treegrid/column/#commands) property.
+
+The available built-in command buttons are:
+
+| Command Button | Actions |
+|----------------|---------|
+| Edit | Edit the current row.|
+| Delete | Delete the current row.|
+| Save | Update the edited row.|
+| Cancel | Cancel the edited state. |
+
+{% tabs %}
+{% highlight html tabtitle="Composition API (~/src/App.vue)" %}
+{% include code-snippet/grid-sdk/vue/treegrid/editing/default-cs3/app-composition.vue %}
+{% endhighlight %}
+{% highlight html tabtitle="Options API (~/src/App.vue)" %}
+{% include code-snippet/grid-sdk/vue/treegrid/editing/default-cs3/app.vue %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/treegrid/editing/default-cs3" %}
+
+## Custom command
+
+ The custom command buttons can be added in a column by using the [`column.commands`](https://ej2.syncfusion.com/vue/documentation/api/treegrid/column/#commands) property and
+the action for the custom buttons can be defined in the [`buttonOption.click`](https://ej2.syncfusion.com/vue/documentation/api/grid/commandButtonOptions/#click) event.
+
+{% tabs %}
+{% highlight html tabtitle="Composition API (~/src/App.vue)" %}
+{% include code-snippet/grid-sdk/vue/treegrid/editing/default-cs4/app-composition.vue %}
+{% endhighlight %}
+{% highlight html tabtitle="Options API (~/src/App.vue)" %}
+{% include code-snippet/grid-sdk/vue/treegrid/editing/default-cs4/app.vue %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/treegrid/editing/default-cs4" %}

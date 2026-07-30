@@ -1,0 +1,23 @@
+<div style="padding-bottom: 20px; display: flex">
+   <label style="margin-right:5px;font-weight: bold;">Enable or disable toolbar items</label>
+   @Html.EJS().Switch("switch").Checked(true).Change("onSwitchChange").Render()
+</div>
+@Html.EJS().Grid("grid").DataSource((IEnumerable<object>)ViewBag.dataSource).Height("348px").ToolbarClick("toolbarClick").Columns(col =>
+{
+   col.Field("OrderID").HeaderText("Order ID").IsPrimaryKey(true).Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+   col.Field("CustomerID").HeaderText("Customer Name").Width("150").Add();
+   col.Field("ShipCity").HeaderText("Ship City").Width("150").Add();
+   col.Field("ShipName").HeaderText("Ship Name").Width("150").Add();
+}).AllowGrouping().GroupSettings(group => group.Columns(new string[] { "CustomerID" })).Toolbar(new List<string>() { "Expand", "Collapse" }).Render();
+<script>
+    function toolbarClick(args){
+        var grid = document.getElementById("grid").ej2_instances[0];
+        if (args.item.id === 'grid_Collapse') grid.groupModule.collapseAll();
+        else grid.groupModule.expandAll();
+    }
+    function onSwitchChange(args)
+    {       
+        var grid = document.getElementById("grid").ej2_instances[0];
+        grid.toolbarModule.enableItems(['grid_Collapse', 'grid_Expand'], args.checked);
+    }
+</script>

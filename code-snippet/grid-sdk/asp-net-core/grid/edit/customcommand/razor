@@ -1,0 +1,37 @@
+@{
+    List<object> commands = new List<object>();
+    commands.Add(new { buttonOption = new { content = "Details", cssClass = "e-flat" } });
+}
+<div id="dialog" ></div>
+@Html.EJS().Grid("grid").DataSource((IEnumerable<object>)ViewBag.DataSource).Height("348px").Columns(col =>
+{
+    col.Field("OrderID").HeaderText("Order ID").IsPrimaryKey(true).Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("CustomerID").HeaderText("Customer Name").Width("150").Add();
+    col.Field("Freight").HeaderText("Freight").Width("120").EditType("numericedit").Format("C2").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("ShipCountry").HeaderText("Ship Country").EditType("dropdownedit").Width("150").Add();
+    col.HeaderText("Commands").Width("160").Commands(commands).Add();
+}).CommandClick("commandClick").Render();
+<script>
+    var dialogVisible = false;
+    var dialog = new ej.popups.Dialog({
+        header: "Row Information",
+        content: "dialogContent",
+        showCloseIcon: "true",
+        width: "400px",
+        position: { X: 570, Y: 220 },
+        visible: dialogVisible,
+        close: dialogClose,
+    });
+    dialog.appendTo('#dialog');
+    function commandClick(args) {
+        var dialog = document.getElementById('dialog').ej2_instances[0];
+        dialog.visible = true;
+        dialog.content =
+            `<p><b>ShipName:</b> ${args.rowData.ShipName}</p>
+            <p><b>ShipPostalCode:</b> ${args.rowData.ShipPostalCode}</p>
+            <p><b>ShipAddress:</b> ${args.rowData.ShipAddress}</p>`
+    }
+    function dialogClose() {
+        dialogVisible = false;
+    }
+</script>

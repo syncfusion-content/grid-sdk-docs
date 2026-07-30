@@ -1,0 +1,20 @@
+@{
+    List<object> toolbarItems = new List<object>();
+    toolbarItems.Add(new { text= "Expand All", tooltipText= "Expand All", prefixIcon= "e-expand", id= "expandall" });
+    toolbarItems.Add(new { text= "Collapse All", tooltipText= "Collapse All", prefixIcon= "e-collapse-2", id= "collapseall", align= "Right"  });
+}
+<ejs-grid id="grid" dataSource="@ViewBag.dataSource" toolbarClick="toolbarClick" toolbar=toolbarItems height="348px" allowGrouping="true">
+    <e-grid-groupsettings columns="@(new string[] {"CustomerID"})"></e-grid-groupsettings>
+    <e-grid-columns>
+        <e-grid-column field="OrderID" headerText="Order ID" textAlign="Right" width="120"></e-grid-column>
+        <e-grid-column field="CustomerID" headerText="Customer Name" width="140"></e-grid-column>
+        <e-grid-column field="ShipCity" headerText="Ship City" width="120"></e-grid-column>
+        <e-grid-column field="ShipName" headerText="Ship Name" width="140"></e-grid-column>
+    </e-grid-columns>
+</ejs-grid>
+<script>
+    function toolbarClick(args) {
+        if (args.item.id === 'expandall') this.groupModule.expandAll();
+        else this.groupModule.collapseAll();
+    }
+</script>

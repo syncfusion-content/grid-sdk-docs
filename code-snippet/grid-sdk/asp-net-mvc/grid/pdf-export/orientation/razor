@@ -1,0 +1,27 @@
+<div style="margin-bottom: 10px;">
+    <label>Page Orientation: </label>
+    @Html.EJS().DropDownList("dropdown").PopupHeight("240px").Width("150px").DataSource(new List<object>{
+            new { text = "Portrait", value = "Portrait" },
+            new { text = "Landscape", value = "Landscape" }
+        }).Value("Portrait").Render()
+</div>
+@Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)ViewBag.DataSource).AllowPdfExport(true).Toolbar(new List<string>{ "PdfExport" }).ToolbarClick("toolbarClick").Height(260).Columns(col =>
+{
+    col.Field("OrderID").HeaderText("Order ID").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Width(90).Add();
+    col.Field("CustomerID").HeaderText("Customer ID").Width(100).Add();
+    col.Field("ShipCity").HeaderText("Ship City").Width(120).Add();
+    col.Field("ShipName").HeaderText("Ship Name").Width(100).Add();
+}).Render()
+<script>
+    function toolbarClick(args) {
+        if (args.item.text === 'PDF Export') {
+            let grid = document.getElementById("Grid").ej2_instances[0];
+            let dropDown = document.getElementById("dropdown").ej2_instances[0];
+            let pdfExportProperties = {
+                pageOrientation: dropDown.value
+            };
+
+            grid.pdfExport(pdfExportProperties);
+        }
+    }
+</script>

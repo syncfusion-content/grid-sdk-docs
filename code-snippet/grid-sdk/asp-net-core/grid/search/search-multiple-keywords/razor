@@ -1,0 +1,65 @@
+@Html.EJS().Grid("Search").DataSource((IEnumerable < object >)ViewBag.datasource).Height("350px").Columns(col => {
+    col.Field("OrderID").HeaderText("Order ID").IsPrimaryKey(true).Width("120").Add();
+    col.Field("CustomerID").HeaderText("Customer ID").Width("120").Add();
+    col.Field("Freight").HeaderText("Freight").Width("120").Format("C2").Add();
+    col.Field("ShipCity").HeaderText("Ship City").Width("120").Add();
+}).Toolbar(new List < string > () { "Search" }).ActionBegin("actionBegin").ActionComplete("actionComplete").Render()
+<script>
+    var values;
+    var key = '';
+    var refresh = false;
+    var removeQuery = false;
+    var valueAssign = false;
+    function actionBegin(args) {
+        if (args.requestType == 'searching') {
+            var grid = document.getElementById("Search").ej2_instances[0];
+            const keys = args.searchString.split(',');
+            var flag = true;
+            var predicate;
+            if (keys.length > 1 && grid.searchSettings.key !== '') {
+                this.values = args.searchString;
+                keys.forEach((key) => {
+                    grid.getColumns().forEach((colum) => {
+                        if (flag) {
+                            predicate = new ej.data.Predicate(colum.field, 'contains', key, true);
+                            flag = false;
+                        }
+                        else {
+                            var newPredicate = new ej.data.Predicate(colum.field, 'contains', key, true);
+                            predicate = predicate.or(newPredicate);
+                        }
+                    });
+                });
+                grid.query = new ej.data.Query().where(predicate);
+                grid.searchSettings.key = '';
+                this.valueAssign = true;
+                this.removeQuery = true;
+                grid.refresh();
+            }
+        }
+    }
+    function actionComplete(args) {
+        var grid = document.getElementById("Search").ej2_instances[0];
+        if (args.requestType === 'refresh') {
+            var searchBar = document.querySelector('#' + grid.element.id + '_searchbar');
+            if (searchBar) {
+                if (this.valueAssign) {
+                    searchBar.value = this.values || '';
+                    this.valueAssign = false;
+                } else if (this.removeQuery && searchBar.value=='') {
+                    searchBar.value = ''
+                    grid.query = new ej.data.Query();
+                    this.removeQuery = false;
+                    grid.refresh();
+                }
+            }
+            document.getElementById(grid.element.id + '_searchbar').addEventListener('keyup', (args) => {
+                if (args.target.value === '' && (args.key === 'Enter' || args.key === 'Backspace')) {
+                    grid.query = new ej.data.Query();
+                    removeQuery = false;
+                    grid.refresh();
+                }
+            });
+        }
+    }
+</script>

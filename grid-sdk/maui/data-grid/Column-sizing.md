@@ -1,0 +1,391 @@
+---
+layout: post
+title: Column Sizing in .NET MAUI DataGrid control | Syncfusion®
+description: Learn all about Column Sizing support in Syncfusion® MAUI DataGrid (SfDataGrid) control and more here.
+platform: grid-sdk
+control: SfDataGrid
+documentation: ug
+keywords : maui datagrid, maui grid, grid maui, maui gridview, grid in maui, .net maui datagrid, .net maui grid, .net grid maui, .net maui sizing, maui column sizing
+---
+
+# Column Sizing in .NET MAUI DataGrid (SfDataGrid)
+
+The [.NET MAUI DataGrid](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.DataGrid.SfDataGrid.html) allows you to set the column widths based on certain logics using the [SfDataGrid.ColumnWidthMode](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.DataGrid.SfDataGrid.html#Syncfusion_Maui_DataGrid_SfDataGrid_ColumnWidthMode) or [DataGridColumn.ColumnWidthMode](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.DataGrid.DataGridColumn.html#Syncfusion_Maui_DataGrid_DataGridColumn_ColumnWidthMode) property. 
+
+To get started quickly with column sizing in [.NET MAUI DataGrid](https://www.syncfusion.com/maui-controls/maui-datagrid), you can check on this video:
+
+<style>#MAUIDataGridVideoTutorial{width : 90% !important; height: 400px !important }</style> <iframe id='MAUIDataGridVideoTutorial' src="https://www.youtube.com/embed/vtMmQIWyipU?start=243"></iframe>
+
+Below is the list of predefined column sizing options available:
+
+<table>
+<tr>
+<th>
+Type
+</th>
+<th>
+Column width
+</th>
+</tr>
+<tr>
+<td>
+<code>Fill</code>
+</td>
+<td>
+Divides the total width equally for columns. 
+</td>
+</tr>
+<tr>
+<td>
+<code>Auto</code>
+</td>
+<td>
+Calculates the width of columns based on header and cell contents so that header and cell contents are not truncated. 
+</td>
+</tr>
+<tr>
+<td>
+<code>LastColumnFill</code>
+</td>
+<td>
+The column width of the DataGridColumns is adjusted with respect to the SfDataGrid.DefaultColumnWidth property. If the columns do not fill the entire view space, the width of the last column fills the unoccupied space in the view.
+</td>
+</tr>
+<tr>
+<td>
+<code>FitByCell</code>
+</td>
+<td>
+Calculates the width of columns based on cell contents so that cell contents are not truncated. 
+</td>
+</tr>
+<tr>
+<td>
+<code>FitByHeader</code>
+</td>
+<td>
+Calculates the width of columns based on header content so that header content is not truncated.  
+</td>
+</tr>
+<tr>
+<td>
+<code>None</code>
+</td>
+<td>
+Default column width or defined width set to a column.
+</td>
+</tr>
+</table>
+
+N> `ColumnWidthMode` will not work when the column width is defined explicitly. The `ColumnWidthMode` calculates the column width based on [MinimumWidth](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.DataGrid.DataGridColumn.html#Syncfusion_Maui_DataGrid_DataGridColumn_MinimumWidth) and [MaximumWidth](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.DataGrid.DataGridColumn.html#Syncfusion_Maui_DataGrid_DataGridColumn_MaximumWidth) properties.
+
+The code below applies the [ColumnWidthMode.Fill](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.DataGrid.ColumnWidthMode.html#Syncfusion_Maui_DataGrid_ColumnWidthMode_Fill) to equally set the width for `SfDataGrid.Columns`.
+
+{% tabs %}
+{% highlight xaml %}
+<ContentPage.BindingContext>
+    <local:OrderInfoViewModel />
+</ContentPage.BindingContext>
+
+<syncfusion:SfDataGrid  x:Name = "dataGrid"
+                        ColumnWidthMode = "Fill"
+                        ItemsSource = "{Binding Orders}" />
+{% endhighlight %}
+{% highlight c# %}
+SfDataGrid dataGrid = new SfDataGrid();
+OrderInfoViewModel viewModel = new OrderInfoViewModel();
+dataGrid.ItemsSource = viewModel.Orders;
+dataGrid.ColumnWidthMode = ColumnWidthMode.Fill;
+this.Content = dataGrid;
+{% endhighlight %}
+{% endtabs %}
+
+<img alt="maui-datagrid-fill-column-width-mode" src="Images\column-sizing\net-maui-datagrid-fill-column-width-mode.png" width="404" Height = "396"/>
+
+## Change the default column width for columns
+
+If you want to set the common width for all the columns, you can use the [DefaultColumnWidth](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.DataGrid.SfDataGrid.html#Syncfusion_Maui_DataGrid_SfDataGrid_DefaultColumnWidth) property.
+
+{% tabs %}
+{% highlight xaml tabtitle="MainPage.xaml" %}
+<ContentPage.BindingContext>
+    <local:OrderInfoViewModel />
+</ContentPage.BindingContext>
+
+<syncfusion:SfDataGrid  x:Name = "dataGrid"
+                        DefaultColumnWidth = "120"
+                        ItemsSource = "{Binding Orders}" />
+{% endhighlight %}
+{% highlight c# %}
+SfDataGrid dataGrid = new SfDataGrid();
+OrderInfoViewModel viewModel = new OrderInfoViewModel();
+dataGrid.ItemsSource = viewModel.Orders;
+dataGrid.DefaultColumnWidth = 120d;
+this.Content = dataGrid;
+{% endhighlight %}
+{% endtabs %}
+
+## Retrieve the auto-calculated width of columns
+
+You can retrieve the width of the columns when it is auto-calculated based on the `ColumnWidthMode` property using the [ActualWidth](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.DataGrid.DataGridColumn.html#Syncfusion_Maui_DataGrid_DataGridColumn_ActualWidth) property. The `ActualWidth` is only accurate after the DataGrid has been loaded and laid out.
+
+{% tabs %}
+{% highlight xaml tabtitle="MainPage.xaml" %}
+<ContentPage.BindingContext>
+    <local:OrderInfoViewModel />
+</ContentPage.BindingContext>
+
+<Grid RowDefinitions="*,50">
+    <syncfusion:SfDataGrid x:Name = "dataGrid"
+                           Grid.Row = "0"
+                           ItemsSource = "{Binding Orders}"
+                           ColumnWidthMode = "Auto" />
+    <Button Text = "Get Column Width"
+            Grid.Row = "1"
+            WidthRequest = "300"
+            HorizontalOptions = "Center"
+            Clicked = "Button_Clicked">
+    </Button>
+</Grid>
+{% endhighlight %}
+{% highlight c# tabtitle="MainPage.xaml.cs" %}
+SfDataGrid dataGrid = new SfDataGrid();
+OrderInfoViewModel viewModel = new OrderInfoViewModel();
+dataGrid.ItemsSource = viewModel.Orders;
+dataGrid.ColumnWidthMode = ColumnWidthMode.Auto;
+
+Button button = new Button();
+button.Text = "Get Column Width";
+button.WidthRequest = 300;
+button.HorizontalOptions = LayoutOptions.Center;
+button.Clicked += Button_Clicked;
+
+Grid grid = new Grid();
+grid.RowDefinitions.Add(new RowDefinition() { Height = GridLength.Star });
+grid.RowDefinitions.Add(new RowDefinition() { Height = 50 });
+grid.Children.Add(dataGrid);
+grid.Children.Add(button);
+grid.SetRow(dataGrid, 0);
+grid.SetRow(button, 1);
+this.Content = grid;
+{% endhighlight %}
+{% endtabs %}
+
+{% tabs %}
+{% highlight c# tabtitle="MainPage.xaml.cs" %}
+private void Button_Clicked(object sender, EventArgs e)
+{
+    double width = dataGrid.Columns["OrderID"].ActualWidth;
+}
+{% endhighlight %}
+{% endtabs %}
+
+## Apply ColumnWidthMode for a particular column
+
+To apply column sizing to an individual column, use the `DataGridColumn.ColumnWidthMode` property. The `DataGridColumn.ColumnWidthMode` property is also a type of the `ColumnWidthMode`. If the `DataGridColumn.ColumnWidthMode` is not explicitly set to a value, then it takes the value of the `SfDataGrid.ColumnWidthMode` and applies the width to the columns accordingly.
+
+To apply `ColumnWidthMode` for a particular column, follow the code example:
+
+{% tabs %}
+{% highlight xaml %}
+<ContentPage.BindingContext>
+    <local:OrderInfoViewModel />
+</ContentPage.BindingContext>
+
+<syncfusion:SfDataGrid x:Name = "dataGrid"
+                       ItemsSource = "{Binding Orders}"
+                       ColumnWidthMode = "None">
+    <syncfusion:SfDataGrid.Columns>
+        <syncfusion:DataGridTextColumn MappingName = "Customer"
+                                       ColumnWidthMode = "Auto"
+                                       HeaderText = "Customer">
+        </syncfusion:DataGridTextColumn>
+    </syncfusion:SfDataGrid.Columns>
+</syncfusion:SfDataGrid>
+{% endhighlight %}
+{% highlight c# %}
+SfDataGrid dataGrid = new SfDataGrid();
+OrderInfoViewModel viewModel = new OrderInfoViewModel();
+dataGrid.ItemsSource = viewModel.Orders;
+dataGrid.ColumnWidthMode = ColumnWidthMode.None;
+
+DataGridTextColumn textColumn = new DataGridTextColumn();
+textColumn.MappingName = "Customer";
+textColumn.HeaderText = "Customer";
+textColumn.ColumnWidthMode = ColumnWidthMode.Auto;
+
+dataGrid.Columns.Add(textColumn);
+
+this.Content = dataGrid;
+{% endhighlight %}
+{% endtabs %}
+
+<img alt="maui-datagrid-individual-column-width-mode" src="Images\column-sizing\net-maui-datagrid-invididual-column-width-mode.png" width="404" Height = "396"/>
+
+## Set minimum and maximum column widths
+
+You can constrain the auto-calculated column width by setting the `MinimumWidth` and `MaximumWidth` properties on individual columns. These constraints are respected when any `ColumnWidthMode` is applied.
+
+N> `MinimumWidth` and `MaximumWidth` work with all `ColumnWidthMode` options (Auto, Fill, FitByCell, FitByHeader, LastColumnFill) to ensure columns stay within defined bounds.
+
+{% tabs %}
+{% highlight xaml %}
+<ContentPage.BindingContext>
+    <local:OrderInfoViewModel />
+</ContentPage.BindingContext>
+
+<syncfusion:SfDataGrid x:Name = "dataGrid"
+                       ItemsSource = "{Binding Orders}"
+                       ColumnWidthMode = "Auto">
+    <syncfusion:SfDataGrid.Columns>
+        <syncfusion:DataGridTextColumn MappingName = "OrderID"
+                                       HeaderText = "Order ID"
+                                       MinimumWidth = "80"
+                                       MaximumWidth = "150">
+        </syncfusion:DataGridTextColumn>
+        <syncfusion:DataGridTextColumn MappingName = "Customer"
+                                       HeaderText = "Customer"
+                                       MinimumWidth = "100"
+                                       MaximumWidth = "250">
+        </syncfusion:DataGridTextColumn>
+    </syncfusion:SfDataGrid.Columns>
+</syncfusion:SfDataGrid>
+{% endhighlight %}
+{% highlight c# %}
+SfDataGrid dataGrid = new SfDataGrid();
+OrderInfoViewModel viewModel = new OrderInfoViewModel();
+dataGrid.ItemsSource = viewModel.Orders;
+dataGrid.ColumnWidthMode = ColumnWidthMode.Auto;
+
+DataGridTextColumn orderIdColumn = new DataGridTextColumn();
+orderIdColumn.MappingName = "OrderID";
+orderIdColumn.HeaderText = "Order ID";
+orderIdColumn.MinimumWidth = 80;
+orderIdColumn.MaximumWidth = 150;
+
+DataGridTextColumn customerColumn = new DataGridTextColumn();
+customerColumn.MappingName = "Customer";
+customerColumn.HeaderText = "Customer";
+customerColumn.MinimumWidth = 100;
+customerColumn.MaximumWidth = 250;
+
+dataGrid.Columns.Add(orderIdColumn);
+dataGrid.Columns.Add(customerColumn);
+
+this.Content = dataGrid;
+{% endhighlight %}
+{% endtabs %}
+
+## Refreshing ColumnSizer at runtime
+
+To refresh the column sizing for [SfDataGrid.Columns](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.DataGrid.SfDataGrid.html#Syncfusion_Maui_DataGrid_SfDataGrid_Columns) at runtime, use the [SfDataGrid.ColumnSizer.Refresh](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.DataGrid.DataGridColumnSizer.html#Syncfusion_Maui_DataGrid_DataGridColumnSizer_Refresh_System_Boolean_) method.
+
+Consider that [ColumnWidthMode.Auto](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.DataGrid.ColumnWidthMode.html#Syncfusion_Maui_DataGrid_ColumnWidthMode_Auto) is applied to the SfDataGrid. If the underlying values are changed at run time, refresh the column sizer as follows:
+
+{% tabs %}
+{% highlight xaml %}
+<ContentPage.BindingContext>
+    <local:OrderInfoViewModel />
+</ContentPage.BindingContext>    
+<Grid RowDefinitions = "*,50">
+    <syncfusion:SfDataGrid x:Name = "dataGrid"
+                           Grid.Row = "0"
+                           ColumnWidthMode = "Auto"
+                           ItemsSource = "{Binding Orders}">
+    </syncfusion:SfDataGrid>
+    <Button x:Name = "button"
+            Grid.Row = "1"
+            Text = "Refresh ColumnSizer"
+            WidthRequest = "200"
+            HorizontalOptions = "Center"
+            Clicked = "ColumnSizerChanged">
+    </Button>
+</Grid>
+{% endhighlight %}
+{% highlight c# %}
+SfDataGrid dataGrid = new SfDataGrid();
+OrderInfoViewModel viewModel = new OrderInfoViewModel();
+dataGrid.ItemsSource = viewModel.Orders;
+dataGrid.ColumnWidthMode = ColumnWidthMode.Auto;
+
+Button button = new Button();
+button.Text = "Refresh ColumnSizer";
+button.WidthRequest = 200;
+button.HorizontalOptions = LayoutOptions.Center;
+button.Clicked += ColumnSizerChanged;
+
+Grid grid = new Grid();
+grid.RowDefinitions.Add(new RowDefinition() { Height = GridLength.Star });
+grid.RowDefinitions.Add(new RowDefinition() { Height = 50 });
+grid.Children.Add(dataGrid);
+grid.Children.Add(button);
+grid.SetRow(dataGrid, 0);
+grid.SetRow(button, 1);
+this.Content = grid;
+{% endhighlight %}
+{% endtabs %}
+
+{% tabs %}
+{% highlight c# tabtitle="MainPage.xaml.cs" %}
+private void ColumnSizerChanged(object sender, EventArgs e)
+{
+    //Refreshes the column sizer of the SfDataGrid
+    dataGrid.ColumnSizer.Refresh(true);
+}    
+{% endhighlight %}
+{% endtabs %} 
+ 
+
+## Customize auto width calculation for a column
+
+For cases where a column might require more width than the applied auto width or if you want to use your custom logic to calculate the auto width of a column, return a desired width in the [OnComputeCellWidth()](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.DataGrid.DataGridColumnSizer.html#Syncfusion_Maui_DataGrid_DataGridColumnSizer_OnComputeCellWidth_Syncfusion_Maui_DataGrid_DataGridColumn_System_String_) override of the custom-written column-sizer class derived from `DataGridColumnSizer` and assign it to the `SfDataGrid.ColumnSizer` property.
+In case you want to modify the auto calculations of a column's header cell alone, return the desired width in the [OnComputeHeaderCellWidth()](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.DataGrid.DataGridColumnSizer.html#Syncfusion_Maui_DataGrid_DataGridColumnSizer_OnComputeHeaderCellWidth_System_String_Syncfusion_Maui_DataGrid_DataGridColumn_) override of your custom column-sizer class.
+
+{% tabs %}
+{% highlight c# %}
+public class CustomColumnSizer : DataGridColumnSizer
+{
+    protected override double OnComputeHeaderCellWidth(string cellValue, DataGridColumn column = null)
+    {
+        if (column.MappingName == "Customer")
+        {
+            // return width based on your logic
+            return 150;	
+        }
+        else
+        {
+            return base.OnComputeHeaderCellWidth(cellValue, column);
+        }
+    }
+}
+{% endhighlight %}
+{% endtabs %}
+
+{% tabs %}
+{% highlight xaml %}
+<ContentPage.Resources>
+    <local:CustomColumnSizer x:Key = "CustomColumnSizer"/>
+</ContentPage.Resources>
+
+<ContentPage.BindingContext>
+    <local:OrderInfoViewModel />
+</ContentPage.BindingContext>
+
+<syncfusion:SfDataGrid x:Name = "dataGrid"
+                       ItemsSource = "{Binding Orders}"
+                       ColumnWidthMode = "Auto"
+                       ColumnSizer = "{x:StaticResource CustomColumnSizer}">
+</syncfusion:SfDataGrid>
+{% endhighlight %}
+
+{% highlight c# %}
+SfDataGrid dataGrid = new SfDataGrid();
+OrderInfoViewModel viewModel = new OrderInfoViewModel();
+dataGrid.ItemsSource = viewModel.Orders;
+dataGrid.ColumnWidthMode = ColumnWidthMode.Auto;
+dataGrid.ColumnSizer = new CustomColumnSizer();
+this.Content = dataGrid;
+{% endhighlight %}
+{% endtabs %}
+
+<img alt="maui-datagrid-customize-auto-width-calculation" src="Images\column-sizing\net-maui-datagrid-customize-column-width-calculation.gif" width="404" Height = "396"/>

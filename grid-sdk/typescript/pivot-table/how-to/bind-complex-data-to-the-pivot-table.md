@@ -1,0 +1,94 @@
+---
+layout: post
+title: Complex JSON to flat JSON in Javascript | Syncfusion
+description: Learn here all about how to convert complex JSON to flat JSON and assign it to the pivot table in Syncfusion Javascript of Syncfusion Essential JS 2 and more.
+platform: grid-sdk
+control: Convert complex JSON to flat JSON and assign it to the pivot table 
+publishingplatform: grid-sdk
+documentation: ug
+domainurl: https://help.syncfusion.com/grid-sdk
+---
+
+<!-- markdownlint-disable MD009 -->
+# Complex JSON to flat JSON in JavaScript Pivot Table component
+
+## Overview
+
+The Typescript Pivot Table component requires data in flat JSON format for proper binding. This guide explains how to convert complex, nested JSON structures to flat JSON format and bind it to the pivot table.
+
+## Understanding complex vs flat JSON
+
+Complex JSON contains nested objects and arrays, making it difficult to directly bind to the pivot table. For example:
+
+```json
+{
+  "CustomerID": "VINET",
+  "Freight": 32.38,
+  "OrderDetails": [
+    {
+      "OrderID": 10248,
+      "OrderDate": "1996-07-04T10:10:00.000Z"
+    }
+  ],
+  "ShipDetails": [
+    {
+      "ShipName": "Vins et alcools Chevalier",
+      "ShipAddress": "59 rue de l'Abbaye",
+      "ShipCity": "Reims",
+      "ShipRegion": null,
+      "ShipCountry": "France",
+      "ShippedDate": "1996-07-16T12:20:00.000Z"
+    }
+  ]
+}
+```
+
+Flat JSON has a simple key-value structure without nesting, which is suitable for pivot table binding:
+
+```json
+{
+  "CustomerID": "VINET",
+  "Freight": 32.38,
+  "OrderID": 10248,
+  "OrderDate": "1996-07-04T10:10:00.000Z",
+  "ShipName": "Vins et alcools Chevalier",
+  "ShipAddress": "59 rue de l'Abbaye",
+  "ShipCity": "Reims",
+  "ShipRegion": null,
+  "ShipCountry": "France",
+  "ShippedDate": "1996-07-16T12:20:00.000Z"
+}
+```
+
+## Implementation
+
+You can convert complex JSON to flat JSON programmatically and bind it to the pivot table using the [`dataSource`](https://ej2.syncfusion.com/documentation/api/pivotview/dataSourceSettings#datasource) property in the [`load`](https://ej2.syncfusion.com/documentation/api/pivotview/index-default#load) event.
+
+In the following example, the **complexToFlatJson()** method is used to convert complex JSON to flat JSON and bind it to the pivot table using the [`dataSource`](https://ej2.syncfusion.com/documentation/api/pivotview/dataSourceSettings#datasource) property, then modifying the field names in the [`rows`](https://ej2.syncfusion.com/documentation/api/pivotview/dataSourceSettingsModel#rows) and [`columns`](https://ej2.syncfusion.com/documentation/api/pivotview/dataSourceSettingsModel#columns) based on the converted flat JSON under [`dataSourceSettings`](https://ej2.syncfusion.com/documentation/api/pivotview/index-default#datasourcesettings) in the [`load`](https://ej2.syncfusion.com/documentation/api/pivotview/index-default#load) event.
+
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs499/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs499/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs499" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs499/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs499/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs499" %}
+{% endif %}

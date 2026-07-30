@@ -1,0 +1,44 @@
+---
+layout: post
+title: Configure Grid Options in Edit Mode in ASP.NET Core | Syncfusion
+description: Learn here all about Configure Data Grid Options On Editing Mode in Syncfusion ASP.NET Core Pivot Table component of syncfusion and more.
+platform: grid-sdk
+control: Configure Data Grid Options On Editing Mode
+publishingplatform: grid-sdk
+documentation: ug
+---
+
+# Configure Grid Options in Edit Mode - ASP.NET Core Pivot Table
+
+The ASP.NET Core Pivot Table component provides the ability to configure various data grid options when working with drill-through functionality in editing mode. When users double-click on value cells (cells containing aggregated data), the component displays the underlying raw data in a drill-through grid popup. The [`beginDrillThrough`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_BeginDrillThrough) event allows users to access and configure grid features such as sorting, grouping, and filtering before displaying the drill-through grid popup.
+
+## Implementation
+
+The [`beginDrillThrough`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_BeginDrillThrough) event occurs when users double-click on any value cell in the pivot table. This event provides access to the grid instance and its configuration options before displaying the drill-through popup, enabling users to customize the grid behavior according to their requirements.
+
+> Grid features are segregated into individual feature-wise modules. For example, to use the sorting feature, the `Sort` module must be injected using the `Grid.Inject(Sort)` method.
+
+{% if page.publishingplatform == "aspnet-core" %}
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/custom-editing/custom-editing/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="CustomEditing.cs" %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/custom-editing/custom-editing/CustomEditing.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+{% elsif page.publishingplatform == "aspnet-mvc" %}
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/custom-editing/custom-editing/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="CustomEditing.cs" %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/custom-editing/custom-editing/CustomEditing.cs %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+

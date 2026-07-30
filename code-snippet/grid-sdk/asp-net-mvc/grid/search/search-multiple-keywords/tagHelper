@@ -1,0 +1,67 @@
+<ejs-grid id="Search" dataSource="@ViewBag.DataSource" height="350px" toolbar="@(new List<string>() {"Search" })" actionBegin="actionBegin" actionComplete="actionComplete">
+  <e-grid-columns>
+    <e-grid-column field="OrderID" headerText="Order ID" isPrimaryKey="true" width="120"></e-grid-column>
+    <e-grid-column field="CustomerID" headerText="Customer ID" width="120"></e-grid-column>
+    <e-grid-column field="Freight" headerText="Freight" width="150" format="C2"></e-grid-column>
+    <e-grid-column field="ShipCity" headerText="Ship City" width="120"></e-grid-column>
+  </e-grid-columns>
+</ejs-grid>
+<script>
+    var values;
+    var key = '';
+    var refresh = false;
+    var removeQuery = false;
+    var valueAssign = false;
+    function actionBegin(args) {
+        if (args.requestType == 'searching') {
+            var grid = document.getElementById("Search").ej2_instances[0];
+            const keys = args.searchString.split(',');
+            var flag = true;
+            var predicate;
+            if (keys.length > 1 && grid.searchSettings.key !== '') {
+                this.values = args.searchString;
+                keys.forEach((key) => {
+                    grid.getColumns().forEach((colum) => {
+                        if (flag) {
+                            predicate = new ej.data.Predicate(colum.field, 'contains', key, true);
+                            flag = false;
+                        }
+                        else {
+                            var newPredicate = new ej.data.Predicate(colum.field, 'contains', key, true);
+                            predicate = predicate.or(newPredicate);
+                        }
+                    });
+                });
+                grid.query = new ej.data.Query().where(predicate);
+                grid.searchSettings.key = '';
+                this.valueAssign = true;
+                this.removeQuery = true;
+                grid.refresh();
+            }
+        }
+    }
+    function actionComplete(args) {
+        var grid = document.getElementById("Search").ej2_instances[0];
+        if (args.requestType === 'refresh') {
+            var searchBar = document.querySelector('#' + grid.element.id + '_searchbar');
+            if (searchBar) {
+                if (this.valueAssign) {
+                    searchBar.value = this.values || '';
+                    this.valueAssign = false;
+                } else if (this.removeQuery && searchBar.value=='') {
+                    searchBar.value = ''
+                    grid.query = new ej.data.Query();
+                    this.removeQuery = false;
+                    grid.refresh();
+                }
+            }
+            document.getElementById(grid.element.id + '_searchbar').addEventListener('keyup', (args) => {
+                if (args.target.value === '' && (args.key === 'Enter' || args.key === 'Backspace')) {
+                    grid.query = new ej.data.Query();
+                    removeQuery = false;
+                    grid.refresh();
+                }
+            });
+        }
+    }
+</script>
