@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>EJ2 Tree Grid</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Typescript Tree Grid Control" />
+    <meta name="author" content="Syncfusion" />
+    <link href="index.css" rel="stylesheet" />
+     <!-- Syncfusion Essential JS 2 Styles -->
+    <link rel="stylesheet" href="https://cdn.syncfusion.com/ej2/material.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
+    <script src="systemjs.config.js"></script>
+</head>
+<style>
+    .immutablegrid,
+    .normalgrid {
+        pointer-events: none;
+    }
+</style>
+<body>
+   <div id='loader'>Loading....</div>
+    <div id='container'>
+        <table>
+            <tbody>
+                <tr>
+                    <td>
+                        <span id='immutableDelete'></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span id='normalDelete'></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div>
+                            <button id="addtop" class="e-control e-btn e-lib e-info">Add row at top</button>
+                            <button id="addbottom" class="e-control e-btn e-lib e-info">Add row at bottom</button>
+                            <button id="delete" class="e-control e-btn e-lib e-info">Delete 5 rows</button>
+                            <button id="reverse" class="e-control e-btn e-lib e-info">Sort Task ID</button>
+                            <button id="paging" class="e-control e-btn e-lib e-info">Paging</button>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <span><b>Immutable Tree Grid</b></span>
+                        <div id='immutable' class="immutablegrid"></div>
+                    </td>
+                    <td>
+                        <span><b>Normal Tree Grid</b></span>
+                        <div id='normal' class="normalgrid"></div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>  
+</body>
+</html>
