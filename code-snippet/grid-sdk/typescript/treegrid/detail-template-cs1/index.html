@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>EJ2 TreeGrid</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Typescript TreeGrid Control" />
+    <meta name="author" content="Syncfusion" />
+    <link href="https://cdn.syncfusion.com/ej2/34.1.29/ej2-base/styles/material.css" rel="stylesheet" />
+    <link href="https://cdn.syncfusion.com/ej2/34.1.29/ej2-grids/styles/material.css" rel="stylesheet" />
+    <link href="https://cdn.syncfusion.com/ej2/34.1.29/ej2-buttons/styles/material.css" rel="stylesheet" />
+    <link href="https://cdn.syncfusion.com/ej2/34.1.29/ej2-popups/styles/material.css" rel="stylesheet" />
+    <link href="https://cdn.syncfusion.com/ej2/34.1.29/ej2-navigations/styles/material.css" rel="stylesheet" />
+    <link href="https://cdn.syncfusion.com/ej2/34.1.29/ej2-dropdowns/styles/material.css" rel="stylesheet" />
+    <link href="https://cdn.syncfusion.com/ej2/34.1.29/ej2-lists/styles/material.css" rel="stylesheet" />
+    <link href="https://cdn.syncfusion.com/ej2/34.1.29/ej2-inputs/styles/material.css" rel="stylesheet" />
+    <link href="https://cdn.syncfusion.com/ej2/34.1.29/ej2-calendars/styles/material.css" rel="stylesheet" />
+    <link href="https://cdn.syncfusion.com/ej2/34.1.29/ej2-treegrid/styles/material.css" rel="stylesheet" />
+    <link href="https://cdn.syncfusion.com/ej2/34.1.29/ej2-splitbuttons/styles/material.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
+    <script src="systemjs.config.js"></script>
+</head>
+
+<body>
+    <script id="detailtemplate" type="text/x-template">
+
+            <div style="position: relative; display: inline-block; float: left; font-weight: bold; width: 10%;padding:5px 4px 2px 27px;;">
+                <img src="${FullName}.png" alt="${FullName}"/>
+            </div>
+            <div style="padding-left: 10px; display: inline-block; width: 66%; text-wrap: normal;font-size:13px;font-family:'Segoe UI';">
+                <div class="e-description" style="word-wrap: break-word;">
+                    <b>${Name}</b> was born on ${format(data.DOB)}. Now lives at ${Address}, ${Country}. ${Name} holds a position of <b>${Designation}</b> in our WA department, (Seattle USA).
+                </div>
+                <div class="e-description" style="word-wrap: break-word;margin-top:5px;">
+                    <b style="margin-right:10px;">Contact:</b>${Contact}
+                </div>
+            </div>
+        </script>
+    <div class="loader">
+        <div class="container">
+            <div id="TreeGrid">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

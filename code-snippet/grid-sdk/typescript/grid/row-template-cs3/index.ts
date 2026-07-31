@@ -1,0 +1,24 @@
+import { Grid } from '@syncfusion/ej2-grids';
+import { data  } from './datasource.ts';
+
+let grid: Grid = new Grid ({
+    dataSource: data,
+    dataBound: dataBound
+});
+grid.appendTo('#Grid');
+
+function dataBound() {
+    for (let i = 0; i < this.columns.length; i++) {
+      if (this.columns[i].field === 'OrderID') {
+        this.columns[i].width = 120;
+      }
+      if (this.columns[i].field === 'OrderDate') {
+        this.columns[i].type = 'date';
+        this.columns[i].format = 'yMd';
+      }
+      if (this.columns[i].field === 'Freight') {
+        this.columns[i].format = 'P2';
+      }
+    }
+    grid.refreshColumns();
+  }

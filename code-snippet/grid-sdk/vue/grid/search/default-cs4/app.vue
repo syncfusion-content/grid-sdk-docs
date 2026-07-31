@@ -1,0 +1,46 @@
+<template>
+  <div id="app">
+    <ejs-grid :dataSource='data' :searchSettings='searchOptions' :toolbar='toolbarOptions' height='272px'>
+      <e-columns>
+        <e-column field='OrderID' headerText='Order ID' textAlign='Right' width=80></e-column>
+        <e-column field='CustomerID' headerText='Customer ID' width=100></e-column>
+        <e-column field='Freight' headerText='Freight' textAlign='Right' format='C' width=80></e-column>
+        <e-column field='OrderDate' headerText='Order Date' textAlign='Right' format='yMd' type="date"  width=100></e-column>
+      </e-columns>
+    </ejs-grid>
+  </div>
+</template>
+<script>
+
+import { GridComponent, ColumnsDirective, ColumnDirective, Toolbar, Search } from "@syncfusion/ej2-vue-grids";
+import { data } from './datasource.js'
+export default {
+name: "App",
+components: {
+"ejs-grid":GridComponent,
+"e-columns":ColumnsDirective,
+"e-column":ColumnDirective
+},
+  data() {
+    return {
+      data: data,
+      toolbarOptions: ['Search'],
+      searchOptions: { fields: ['CustomerID'], operator: 'contains', key: 'Ha', ignoreCase: true, ignoreAccent:true }
+    };
+  },
+  provide: {
+    grid: [Toolbar, Search]
+  }
+}
+</script>
+<style>
+  @import "../node_modules/@syncfusion/ej2-base/styles/material3.css";
+  @import "../node_modules/@syncfusion/ej2-buttons/styles/material3.css";
+  @import "../node_modules/@syncfusion/ej2-calendars/styles/material3.css";
+  @import "../node_modules/@syncfusion/ej2-dropdowns/styles/material3.css";
+  @import "../node_modules/@syncfusion/ej2-inputs/styles/material3.css";
+  @import "../node_modules/@syncfusion/ej2-navigations/styles/material3.css";
+  @import "../node_modules/@syncfusion/ej2-popups/styles/material3.css";
+  @import "../node_modules/@syncfusion/ej2-splitbuttons/styles/material3.css";
+  @import "../node_modules/@syncfusion/ej2-vue-grids/styles/material3.css";
+</style>
