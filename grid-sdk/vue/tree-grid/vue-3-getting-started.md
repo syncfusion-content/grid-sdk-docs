@@ -114,7 +114,7 @@ Then add the following CSS reference to the **src/App.vue** file:
 {% highlight html tabtitle="Composition API ~/src/App.vue" %}
 
 <style>
-    @import "../node_modules/@syncfusion/ej2-material3-theme/treegrid/treegrid/index.css";
+    @import "../node_modules/@syncfusion/ej2-material3-theme/styles/treegrid/index.css";
 </style>
 
 {% endhighlight %}
