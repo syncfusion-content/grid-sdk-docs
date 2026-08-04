@@ -108,27 +108,27 @@ yarn add @syncfusion/ej2-react-grids
 
 ## Adding CSS reference
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> React components come with [built-in themes](https://ej2.syncfusion.com/react/documentation/appearance/theme), which are available in the installed packages. It's easy to adapt the Syncfusion<sup style="font-size:70%">&reg;</sup> React components to match the style of your application by referring to one of the built-in themes.
+Themes for Syncfusion<sup style="font-size:70%">&reg;</sup> Data Grid component can be applied using CSS files provided through [npm theme packages](https://www.npmjs.com/package/@syncfusion/ej2-tailwind3-theme). For available themes, refer to the [Themes](https://ej2.syncfusion.com/react/documentation/appearance/theme) documentation.
 
-Import the `Tailwind 3` theme into the **src/app/globals.css** file and remove the existing styles in that file, as shown below:
+Install the Tailwind 3 theme package using the following command:
 
 {% tabs %}
-{% highlight css tabtitle="globals.css" %}
+{% highlight bash tabtitle="npm" %}
 
-@import '../../node_modules/@syncfusion/ej2-base/styles/tailwind3.css';
-@import '../../node_modules/@syncfusion/ej2-buttons/styles/tailwind3.css';  
-@import '../../node_modules/@syncfusion/ej2-calendars/styles/tailwind3.css';  
-@import '../../node_modules/@syncfusion/ej2-dropdowns/styles/tailwind3.css';  
-@import '../../node_modules/@syncfusion/ej2-inputs/styles/tailwind3.css';  
-@import '../../node_modules/@syncfusion/ej2-navigations/styles/tailwind3.css';
-@import '../../node_modules/@syncfusion/ej2-popups/styles/tailwind3.css';
-@import '../../node_modules/@syncfusion/ej2-splitbuttons/styles/tailwind3.css';
-@import "../../node_modules/@syncfusion/ej2-react-grids/styles/tailwind3.css";
+npm install @syncfusion/ej2-tailwind3-theme --save
 
 {% endhighlight %}
 {% endtabs %}
 
-> Refer to the [themes documentation](https://ej2.syncfusion.com/react/documentation/appearance/theme) for information about other available themes and component-specific CSS references.
+Then add the following CSS reference to the  **src/app/globals.css** file:
+
+{% tabs %}
+{% highlight css tabtitle="App.css" %}
+
+@import "../../node_modules/@syncfusion/ej2-tailwind3-theme/styles/grid/index.css";
+
+{% endhighlight %}
+{% endtabs %}
 
 ## Adding Grid component
 
