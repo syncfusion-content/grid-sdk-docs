@@ -20,20 +20,20 @@ Additionally, apply the `e-bigger` class to the grid's parent element to enable 
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/data-grid/react/data-grid/react/data-grid/adaptive-cs1/app/App.jsx %}
+{% include code-snippet/grid-sdk/react/grid/adaptive-cs1/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/data-grid/react/data-grid/react/data-grid/adaptive-cs1/app/App.tsx %}
+{% include code-snippet/grid-sdk/react/grid/adaptive-cs1/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/grid-sdk/react/data-grid/react/data-grid/react/data-grid/adaptive-cs1/app/datasource.jsx %}
+{% include code-snippet/grid-sdk/react/grid/adaptive-cs1/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/grid-sdk/react/data-grid/react/data-grid/react/data-grid/adaptive-cs1/app/datasource.tsx %}
+{% include code-snippet/grid-sdk/react/grid/adaptive-cs1/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
- {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/data-grid/help.syncfusion.com/code-snippet/grid-sdk/react/data-grid/help.syncfusion.com/code-snippet/grid-sdk/react/data-grid/adaptive-cs1" %}
+ {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/grid/adaptive-cs1" %}
 
 ## Vertical row rendering
 
@@ -183,14 +183,14 @@ export default App;
 {% endraw %} 
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/grid-sdk/react/data-grid/react/data-grid/react/data-grid/adaptive-cs2/app/datasource.jsx %}
+{% include code-snippet/grid-sdk/react/grid/adaptive-cs2/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/grid-sdk/react/data-grid/react/data-grid/react/data-grid/adaptive-cs2/app/datasource.tsx %}
+{% include code-snippet/grid-sdk/react/grid/adaptive-cs2/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
- {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/data-grid/help.syncfusion.com/code-snippet/grid-sdk/react/data-grid/help.syncfusion.com/code-snippet/grid-sdk/react/data-grid/adaptive-cs2" %}
+ {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/grid/adaptive-cs2" %}
 
 > [enableAdaptiveUI](https://ej2.syncfusion.com/react/documentation/api/grid#enableadaptiveui) property must be enabled for vertical row rendering.
 
@@ -336,11 +336,11 @@ export default App;
 {% endraw %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/grid-sdk/react/data-grid/react/data-grid/react/data-grid/adaptive-cs3/app/datasource.jsx %}
+{% include code-snippet/grid-sdk/react/grid/adaptive-cs3/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/grid-sdk/react/data-grid/react/data-grid/react/data-grid/adaptive-cs3/app/datasource.tsx %}
+{% include code-snippet/grid-sdk/react/grid/adaptive-cs3/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/data-grid/help.syncfusion.com/code-snippet/grid-sdk/react/data-grid/help.syncfusion.com/code-snippet/grid-sdk/react/data-grid/adaptive-cs1" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/grid/adaptive-cs1" %}
