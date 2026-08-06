@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Styling in .NET MAUI DataGrid control | Syncfusion®
-description: Learn all about Styling support in Syncfusion® .NET MAUI DataGrid (SfDataGrid) control, its elements and more.
-platform: grid-sdk
+title: Styling in .NET MAUI DataGrid | Syncfusion®
+description: Learn how to customize the appearance of Syncfusion® .NET MAUI DataGrid using styling options for rows, cells, headers, and other grid elements.
+platform: MAUI
 control: SfDataGrid
 documentation: ug
 keywords : maui datagrid, maui grid, grid maui, maui gridview, grid in maui, .net maui datagrid, .net maui grid, .net grid maui, .net maui styling, maui styling
 ---
 
-# Styling in .NET MAUI DataGrid (SfDataGrid)
+# Styling in .NET MAUI DataGrid
 
 The [DataGrid](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.DataGrid.html) applies style for all of its elements by setting desired values to the style properties in [SfDataGrid.DefaultStyle](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.DataGrid.SfDataGrid.html#Syncfusion_Maui_DataGrid_SfDataGrid_DefaultStyleProperty). This property has all the required styling properties for each element in the DataGrid.
 
@@ -533,9 +533,9 @@ this.Content = dataGrid;
 
 The column hover highlighting feature in `SfDataGrid` allows you to visually highlight an entire column when the mouse pointer is placed over it.
 
-To enable this feature, set the `SfDataGrid.AllowColumnHoverHighlighting` property to `true`. The default value is `false`.
+To enable this feature, set the [SfDataGrid.AllowColumnHoverHighlighting](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.DataGrid.SfDataGrid.html?tabs=tabid-1#Syncfusion_Maui_DataGrid_SfDataGrid_AllowColumnHoverHighlighting) property to `true`. The default value is `false`.
 
-You can also customize the appearance of the highlighted column by setting the `ColumnHoveredBackground` property in [SfDataGrid.DefaultStyle](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.DataGrid.SfDataGrid.html#Syncfusion_Maui_DataGrid_SfDataGrid_DefaultStyleProperty).
+You can also customize the appearance of the highlighted column by setting the [ColumnHoveredBackground](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.DataGrid.DataGridStyle.html#Syncfusion_Maui_DataGrid_DataGridStyle_ColumnHoveredBackground) property in [SfDataGrid.DefaultStyle](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.DataGrid.SfDataGrid.html#Syncfusion_Maui_DataGrid_SfDataGrid_DefaultStyleProperty).
 
 {% tabs %}
 {% highlight xaml hl_lines="5 7" %}
@@ -567,9 +567,9 @@ this.Content = dataGrid;
 
 The header cell hover highlighting feature in `SfDataGrid` allows you to visually highlight a column header cell when the mouse pointer is placed over it.
 
-To enable this feature, set the `SfDataGrid.AllowHeaderCellHoverHighlighting` property to `true`. The default value is `false`.
+To enable this feature, set the [SfDataGrid.AllowHeaderCellHoverHighlighting](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.DataGrid.SfDataGrid.html#Syncfusion_Maui_DataGrid_SfDataGrid_AllowHeaderCellHoverHighlighting) property to `true`. The default value is `false`.
 
-You can also customize the appearance of the hovered header cell by setting the `HeaderCellHoveredBackground` property in [SfDataGrid.DefaultStyle](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.DataGrid.SfDataGrid.html#Syncfusion_Maui_DataGrid_SfDataGrid_DefaultStyleProperty).
+You can also customize the appearance of the hovered header cell by setting the [HeaderCellHoveredBackground](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.DataGrid.DataGridStyle.html#Syncfusion_Maui_DataGrid_DataGridStyle_HeaderCellHoveredBackground) property in [SfDataGrid.DefaultStyle](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.DataGrid.SfDataGrid.html#Syncfusion_Maui_DataGrid_SfDataGrid_DefaultStyleProperty).
 
 {% tabs %}
 {% highlight xaml hl_lines="5 7" %}
