@@ -356,7 +356,7 @@ export class AppComponent implements OnInit {
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid-sdk/angular/data-grid/ensuring-accessibility/src/main.ts %}
+{% include code-snippet/grid-sdk/angular/grid/ensuring-accessibility/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

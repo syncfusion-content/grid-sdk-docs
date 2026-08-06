@@ -30,7 +30,7 @@ The following sample demonstrates to enable adaptive dialogs in the Syncfusion A
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/help.syncfusion.com/samples/grid-sdk/angular/data-grid/help.syncfusion.com/samples/grid-sdk/angular/data-grid/adaptive-cs1" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/adaptive-cs1" %}
 
 ## Vertical row rendering
 
@@ -135,11 +135,11 @@ export class AppComponent implements OnInit {
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid-sdk/angular/data-grid/angular/data-grid/angular/data-grid/adaptive-cs2/src/main.ts %}
+{% include code-snippet/grid-sdk/angular/grid/adaptive-cs2/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/help.syncfusion.com/samples/grid-sdk/angular/data-grid/help.syncfusion.com/samples/grid-sdk/angular/data-grid/adaptive-cs2" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/adaptive-cs2" %}
 
 > The [enableAdaptiveUI](https://ej2.syncfusion.com/angular/documentation/api/grid#enableadaptiveui) property must be enabled for vertical row rendering to function properly.
 
@@ -245,11 +245,11 @@ export class AppComponent implements OnInit {
 {% endraw %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid-sdk/angular/data-grid/angular/data-grid/angular/data-grid/adaptive-cs3/src/main.ts %}
+{% include code-snippet/grid-sdk/angular/grid/adaptive-cs3/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/help.syncfusion.com/samples/grid-sdk/angular/data-grid/help.syncfusion.com/samples/grid-sdk/angular/data-grid/adaptive-cs3" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/adaptive-cs3" %}
 
 
 ## See Also
