@@ -22,11 +22,11 @@ The following sample demonstrates to enable adaptive dialogs in the Syncfusion A
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid-sdk/angular/data-grid/angular/data-grid/angular/data-grid/adaptive-cs1/src/app.component.ts %}
+{% include code-snippet/grid-sdk/angular/grid/adaptive-cs1/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid-sdk/angular/data-grid/angular/data-grid/angular/data-grid/adaptive-cs1/src/main.ts %}
+{% include code-snippet/grid-sdk/angular/grid/adaptive-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

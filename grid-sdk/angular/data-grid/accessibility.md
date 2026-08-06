@@ -212,11 +212,11 @@ To disable the default key action in the grid, use the [keyPressed](https://ej2.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid-sdk/angular/data-grid/keyboard-navigation-cs1/src/app.component.ts %}
+{% include code-snippet/grid-sdk/angular/grid/keyboard-navigation-cs1/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid-sdk/angular/data-grid/keyboard-navigation-cs1/src/main.ts %}
+{% include code-snippet/grid-sdk/angular/grid/keyboard-navigation-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
