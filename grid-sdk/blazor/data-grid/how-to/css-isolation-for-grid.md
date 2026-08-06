@@ -2,7 +2,7 @@
 layout: post
 title: CSS isolation for Blazor DataGrid Component | Syncfusion®
 description: Check out how to apply styles using CSS isolation in the Blazor DataGrid component with ::deep selectors and scoped wrapper patterns.
-platform: grid-sdk
+platform: Blazor
 control: DataGrid
 documentation: ug
 ---

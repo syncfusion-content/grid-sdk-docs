@@ -2,7 +2,7 @@
 layout: post
 title: Remote Data in Blazor DataGrid | Syncfusion®
 description: Explore remote data integration in Syncfusion® Blazor DataGrid, including setup, binding options, and advanced features.
-platform: grid-sdk
+platform: Blazor
 control: DataGrid
 documentation: ug
 ---

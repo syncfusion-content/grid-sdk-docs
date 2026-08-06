@@ -2,7 +2,7 @@
 layout: post
 title: Accessibility in Blazor DataGrid | Syncfusion®
 description: Learn how to make the Blazor DataGrid accessible with WCAG 2.2 and Section 508 support, ARIA roles, keyboard navigation, and screen reader support.
-platform: grid-sdk
+platform: Blazor
 control: DataGrid
 documentation: ug
 ---

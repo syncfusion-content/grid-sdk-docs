@@ -2,7 +2,7 @@
 layout: post
 title: Header styling and visibility in Blazor DataGrid | Syncfusion®
 description: Learn how to style and hide the Blazor DataGrid header using CSS—customize header bar, cells, text, with CSS isolation tips.
-platform: grid-sdk
+platform: Blazor
 control: DataGrid
 documentation: ug
 ---
@@ -143,7 +143,7 @@ internal sealed class OrderData
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://blazorplayground.syncfusion.com/embed/BtBSiDWnrSSbAdxE?appbar=false&editor=false&result=true&errorlist=false&theme=bootstrap5" %}
+{% previewsample "https://blazorplayground.syncfusion.com/embed/BXVdDmDiBReioGup?appbar=false&editor=false&result=true&errorlist=false&theme=fluent2" %}
 
 ## Customize the Blazor DataGrid frozen header cells
 
@@ -297,7 +297,7 @@ public class OrderDetails
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://blazorplayground.syncfusion.com/embed/hDVxNyWoJBAoNKsc?appbar=false&editor=false&result=true&errorlist=false&theme=bootstrap5" %}
+{% previewsample "https://blazorplayground.syncfusion.com/embed/BDBRXmXCVnyfDLZr?appbar=false&editor=false&result=true&errorlist=false&theme=fluent2" %}
 
 ## Hide the Blazor DataGrid header
 
@@ -391,4 +391,4 @@ internal sealed class OrderDetails
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://blazorplayground.syncfusion.com/embed/LXroMtixVyHRNvjg?appbar=false&editor=false&result=true&errorlist=false&theme=bootstrap5" %}
+{% previewsample "https://blazorplayground.syncfusion.com/embed/BXBnZGXihdePgNcU?appbar=false&editor=false&result=true&errorlist=false&theme=fluent2" %}

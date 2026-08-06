@@ -2,7 +2,7 @@
 layout: post
 title: Customize editing in Blazor DataGrid | Syncfusion®
 description: Learn how to style and customize edited and added rows, input fields, the edit dialog header, and command buttons in the Blazor DataGrid using CSS.
-platform: grid-sdk
+platform: Blazor
 control: DataGrid
 documentation: ug
 ---
@@ -132,7 +132,7 @@ internal sealed class OrderData
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://blazorplayground.syncfusion.com/embed/BZBIWNCxTcuUSDfi?appbar=false&editor=false&result=true&errorlist=false&theme=bootstrap5" %}
+{% previewsample "https://blazorplayground.syncfusion.com/embed/hNBdtwDMLHDBMvAD?appbar=false&editor=false&result=true&errorlist=false&theme=fluent2" %}
 
 ## Customize the edit dialog header
 
@@ -232,7 +232,7 @@ internal sealed class OrderData
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://blazorplayground.syncfusion.com/embed/VjLSMjiRTFXgRbNm?appbar=false&editor=false&result=true&errorlist=false&theme=bootstrap5" %}
+{% previewsample "https://blazorplayground.syncfusion.com/embed/BDBxjwXsVxDdhWAx?appbar=false&editor=false&result=true&errorlist=false&theme=fluent2" %}
 
 ## Customize command column buttons
 
@@ -345,4 +345,4 @@ internal sealed class OrderData
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://blazorplayground.syncfusion.com/embed/BNVSMNiHTPsZJUUc?appbar=false&editor=false&result=true&errorlist=false&theme=bootstrap5" %}
+{% previewsample "https://blazorplayground.syncfusion.com/embed/VZrdNGtWBRtOxHoF?appbar=false&editor=false&result=true&errorlist=false&theme=fluent2" %}

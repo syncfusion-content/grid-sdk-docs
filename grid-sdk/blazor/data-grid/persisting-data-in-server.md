@@ -2,7 +2,7 @@
 layout: post
 title: Persisting data in the server in Blazor DataGrid | Syncfusion®
 description: Learn how to persist Blazor DataGrid data to servers using adaptors like UrlAdaptor, ODataV4Adaptor, WebApiAdaptor, and GraphQLAdaptor.
-platform: grid-sdk
+platform: Blazor
 control: DataGrid
 documentation: ug
 ---

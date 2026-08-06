@@ -2,7 +2,7 @@
 layout: post
 title: Blazor Data Grid with Real-time Updates Using SignalR | Syncfusion®
 description: Bind real-time stock market data to Blazor Data Grid using SignalR hub with complete bidirectional communication, live updates, and in-memory data operations.
-platform: grid-sdk
+platform: Blazor
 control: DataGrid
 documentation: ug
 ---
