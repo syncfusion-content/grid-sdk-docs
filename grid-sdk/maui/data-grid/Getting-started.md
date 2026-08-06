@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Getting Started with .NET MAUI DataGrid control | Syncfusion
+title: Getting Started with .NET MAUI DataGrid | Syncfusion®
 canonical_url: "https://www.syncfusion.com/maui-controls/maui-datagrid"
-description: Learn about getting started with Syncfusion .NET MAUI DataGrid (SfDataGrid) control, its elements, and more here.
-platform: grid-sdk
+description: Learn how to get started with the Syncfusion® .NET MAUI DataGrid control. Explore setup, features, examples, and customization options
+platform: MAUI
 control: SfDataGrid
 documentation: ug
 keywords : maui datagrid, maui grid, grid maui, maui gridview, grid in maui, .net maui datagrid, .net maui grid, .net grid maui
@@ -94,9 +94,9 @@ Before proceeding, ensure the following are set up:
 
 ## Step 3: Register Syncfusion handler
  
-To use Syncfusion controls, you must register the Syncfusion core handler in your application's startup configuration.
+To use Syncfusion controls, register the Syncfusion core handler in your application's startup configuration.
 
-In the `MauiProgram.cs` file (located at the root of your project), add the namespace and register the handler in the `CreateMauiApp` method:
+In the `MauiProgram.cs` file (located at the root of your project), add the following namespace:
  
 {% tabs %}
 {% highlight c# %}
@@ -104,7 +104,7 @@ using Syncfusion.Maui.Core.Hosting;
 {% endhighlight %}
 {% endtabs %}
  
-Register the Syncfusion core handler in your `CreateMauiApp` method of `MauiProgram.cs` file to use Syncfusion controls.
+Then, register the Syncfusion core handler in the `CreateMauiApp` method:
  
 {% tabs %}
 {% highlight c# %}
@@ -120,37 +120,37 @@ Create a simple data model as shown in the following code example, and save it a
 {% highlight c# %}
 public class OrderInfo
 {
-    private string orderID;
-    private string customerID;
-    private string customer;
-    private string shipCity;
-    private string shipCountry;
+    private string? orderID;
+    private string? customerID;
+    private string? customer;
+    private string? shipCity;
+    private string? shipCountry;
 
-    public string OrderID
+    public string? OrderID
     {
         get { return orderID; }
         set { this.orderID = value; }
     }
 
-    public string CustomerID
+    public string? CustomerID
     {
         get { return customerID; }
         set { this.customerID = value; }
     }
 
-    public string ShipCountry
+    public string? ShipCountry
     {
         get { return shipCountry; }
         set { this.shipCountry = value; }
     }
 
-    public string Customer
+    public string? Customer
     {
         get { return this.customer; }
         set { this.customer = value; }
     }
-    
-    public string ShipCity
+
+    public string? ShipCity
     {
         get { return shipCity; }
         set { this.shipCity = value; }
