@@ -2,7 +2,7 @@
 layout: post
 title: Customize aggregates in Blazor DataGrid | Syncfusion®
 description: Learn how to customize aggregate rows in the Blazor DataGrid using CSS, including footer containers and summary cells and much more details.
-platform: grid-sdk
+platform: Blazor
 control: DataGrid
 documentation: ug
 ---
@@ -140,4 +140,4 @@ internal sealed class OrderData
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://blazorplayground.syncfusion.com/embed/hXhIMNMcivWmiUmh?appbar=false&editor=false&result=true&errorlist=false&theme=bootstrap5" %}
+{% previewsample "https://blazorplayground.syncfusion.com/embed/hZLnjmDWVeFwFgTt?appbar=false&editor=false&result=true&errorlist=false&theme=fluent2" %}

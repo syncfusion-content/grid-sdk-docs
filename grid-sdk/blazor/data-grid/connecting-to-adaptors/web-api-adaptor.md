@@ -2,7 +2,7 @@
 layout: post
 title: Blazor DataGrid with WebApiAdaptor| Syncfusion®.
 description: Learn about bind data and performing CRUD operations using WebApiAdaptor in Blazor DataGrid and much more details.
-platform: grid-sdk
+platform: Blazor
 keywords: adaptors, webapiadaptor, webapi adaptor, remotedata
 control: DataGrid
 documentation: ug

@@ -2,7 +2,7 @@
 layout: post
 title: Blazor DataGrid with UrlAdaptor| Syncfusion®
 description: Learn about bind data and performing CRUD operations using UrlAdaptor in Blazor DataGrid and much more details.
-platform: grid-sdk
+platform: Blazor
 control: DataGrid
 keywords: adaptors, urladaptor, url adaptor, remotedata 
 documentation: ug

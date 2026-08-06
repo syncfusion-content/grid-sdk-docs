@@ -2,7 +2,7 @@
 layout: post
 title: Blazor Data Grid connected to Elasticsearch | Syncfusion®
 description: Bind Elasticsearch data to Blazor Data Grid using Elastic.Clients.Elasticsearch with complete CRUD, filtering, sorting, paging, and advanced data operations.
-platform: grid-sdk
+platform: Blazor
 control: DataGrid
 documentation: ug
 ---

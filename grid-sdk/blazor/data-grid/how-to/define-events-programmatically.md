@@ -2,7 +2,7 @@
 layout: post
 title: Define events in Blazor DataGrid Component | Syncfusion®
 description: Learn how to define GridEvents programmatically in the Blazor DataGrid using a component reference and EventCallbackFactory.
-platform: grid-sdk
+platform: Blazor
 control: DataGrid
 documentation: ug
 ---
@@ -75,4 +75,4 @@ To define events programmatically:
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://blazorplayground.syncfusion.com/embed/rDVStoioTWEakEfK?appbar=false&editor=false&result=true&errorlist=false&theme=bootstrap5" %}
+{% previewsample "https://blazorplayground.syncfusion.com/embed/rZBHjGjsskxheQCa?appbar=false&editor=false&result=true&errorlist=false&theme=fluent2" %}

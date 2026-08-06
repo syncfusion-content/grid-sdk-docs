@@ -2,7 +2,7 @@
 layout: post
 title: Caption template in Blazor DataGrid | Syncfusion®
 description: Learn how to customize group caption rows in Blazor DataGrid using CaptionTemplate and CaptionTemplateContext.
-platform: grid-sdk
+platform: Blazor
 control: DataGrid
 documentation: ug
 ---
@@ -96,7 +96,7 @@ public class OrderData
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://blazorplayground.syncfusion.com/embed/rtBzXMjlgozlWLsz?appbar=false&editor=false&result=true&errorlist=false&theme=bootstrap5" %}
+{% previewsample "https://blazorplayground.syncfusion.com/embed/VZBdDQjWgSQmeAQm?appbar=false&editor=false&result=true&errorlist=false&theme=fluent2" %}
 
 ## Adding custom text in group caption
 
@@ -180,7 +180,7 @@ public class OrderData
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://blazorplayground.syncfusion.com/embed/hXVzjiXvgoxRzKIb?appbar=false&editor=false&result=true&errorlist=false&theme=bootstrap5" %}
+{% previewsample "https://blazorplayground.syncfusion.com/embed/LNLnXctMgobNFNrU?appbar=false&editor=false&result=true&errorlist=false&theme=fluent2" %}
 
 ## Customize group caption text using locale
 
@@ -442,4 +442,4 @@ public class OrderData
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://blazorplayground.syncfusion.com/embed/rXVqCsjEtWGsGdKj?appbar=false&editor=false&result=true&errorlist=false&theme=bootstrap5" %}
+{% previewsample "https://blazorplayground.syncfusion.com/embed/rZBxZQZMqykMQscc?appbar=false&editor=false&result=true&errorlist=false&theme=fluent2" %}

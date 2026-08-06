@@ -2,7 +2,7 @@
 layout: post
 title: Pager styling and customization in Blazor DataGrid | Syncfusion®
 description: Learn how to style the Blazor DataGrid pager using CSS—customize container, buttons, numeric items, and page indicator.
-platform: grid-sdk
+platform: Blazor
 control: DataGrid
 documentation: ug
 ---
@@ -208,4 +208,4 @@ internal sealed class OrderData
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://blazorplayground.syncfusion.com/embed/LtBeitMeWnMUTNeW?appbar=false&editor=false&result=true&errorlist=false&theme=bootstrap5" %}
+{% previewsample "https://blazorplayground.syncfusion.com/embed/BDLHjwXsLndqTqxh?appbar=false&editor=false&result=true&errorlist=false&theme=fluent2" %}

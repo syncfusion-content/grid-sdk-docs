@@ -2,7 +2,7 @@
 layout: post
 title: Blazor DataGrid with SQL using Entity Framework | Syncfusion®
 description: Bind SQL Server data to Blazor DataGrid using Entity Framework core with CRUD, filtering, sorting, and paging.
-platform: grid-sdk
+platform: Blazor
 control: DataGrid
 documentation: ug
 ---

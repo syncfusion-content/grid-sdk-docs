@@ -2,7 +2,7 @@
 layout: post
 title: Print in Blazor DataGrid Component | Syncfusion®
 description: Learn to print the Blazor DataGrid using the toolbar Print command or PrintAsync method, configure browser page setup, and handle large columns.
-platform: grid-sdk
+platform: Blazor
 control: DataGrid
 documentation: ug
 ---
@@ -78,7 +78,7 @@ internal sealed class OrderData
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://blazorplayground.syncfusion.com/embed/BNLoiXMfUGltKtYZ?appbar=false&editor=false&result=true&errorlist=false&theme=bootstrap5" %}
+{% previewsample "https://blazorplayground.syncfusion.com/embed/rXBHZcDgdBDMtdCy?appbar=false&editor=false&result=true&errorlist=false&theme=fluent2" %}
 
 ## Page Setup for Printing
 
@@ -166,7 +166,7 @@ internal sealed class OrderData
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://blazorplayground.syncfusion.com/embed/BZVyCZsJTDndUnwJ?appbar=false&editor=false&result=true&errorlist=false&theme=bootstrap5" %}
+{% previewsample "https://blazorplayground.syncfusion.com/embed/BtLRZGNKHVjIqLIF?appbar=false&editor=false&result=true&errorlist=false&theme=fluent2" %}
 
 ## Print only the visible page
 
@@ -268,7 +268,7 @@ internal sealed class OrderData
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://blazorplayground.syncfusion.com/embed/BthAWMNUhrlcjXzc?appbar=false&editor=false&result=true&errorlist=false&theme=bootstrap5" %}
+{% previewsample "https://blazorplayground.syncfusion.com/embed/VNBnNGZKnLXkdMwz?appbar=false&editor=false&result=true&errorlist=false&theme=fluent2" %}
 
 <!-- Print the hierarchy datagrid
 
@@ -448,4 +448,4 @@ These formats can be printed using desktop applications, which offer better cont
 
 > The printed output reflects the current state of the DataGrid, including visible columns, sorting, and filtering at the time printing is initiated.
 
-N> Refer to the [Blazor DataGrid](https://www.syncfusion.com/blazor-components/blazor-datagrid) feature tour for a broad overview. Explore the [Blazor DataGrid example](https://blazor.syncfusion.com/demos/datagrid/overview?theme=bootstrap5) to understand data presentation and manipulation.
+N> Refer to the [Blazor DataGrid](https://www.syncfusion.com/blazor-components/blazor-datagrid) feature tour for a broad overview. Explore the [Blazor DataGrid example](https://blazor.syncfusion.com/demos/datagrid/overview?theme=fluent2) to understand data presentation and manipulation.

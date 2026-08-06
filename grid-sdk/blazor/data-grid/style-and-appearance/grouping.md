@@ -2,7 +2,7 @@
 layout: post
 title: Customize grouping in Blazor DataGrid | Syncfusion®
 description: Learn how to style and customize the grouping UI in Blazor DataGrid—group headers, icons, caption rows, and indent cells with CSS tips.
-platform: grid-sdk
+platform: Blazor
 control: DataGrid
 documentation: ug
 ---
@@ -199,4 +199,4 @@ internal sealed class OrderData
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://blazorplayground.syncfusion.com/embed/LtBSCDinhwfxPloP?appbar=false&editor=false&result=true&errorlist=false&theme=bootstrap5" %}
+{% previewsample "https://blazorplayground.syncfusion.com/embed/LNBHZmDiLngpxcKL?appbar=false&editor=false&result=true&errorlist=false&theme=fluent2" %}

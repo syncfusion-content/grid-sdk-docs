@@ -2,7 +2,7 @@
 layout: post
 title: Blazor DataGrid with ODataV4Adaptor| Syncfusion®
 description: Learn about bind data and performing CRUD operations using ODataV4Adaptor in Blazor DataGrid and much more.
-platform: grid-sdk
+platform: Blazor
 control: DataGrid
 keywords: adaptors, ODataV4adaptor, ODataV4 adaptor, remotedata 
 documentation: ug
