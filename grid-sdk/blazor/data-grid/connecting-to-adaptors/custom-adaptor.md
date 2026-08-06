@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Data Binding in Blazor Data Grid | Syncfusion
+title: Blazor Grid Custom Binding | Syncfusion
 description: Learn custom data binding in Blazor Data Grid. Explore data operations, UI customization, and CRUD handling in this step-by-step guide.
 platform: grid-sdk
 control: DataGrid
