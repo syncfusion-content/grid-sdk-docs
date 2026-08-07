@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Edit types in React TreeGrid component | Syncfusion
-description: Learn here all about Edit types in Syncfusion React TreeGrid component of Syncfusion Essential JS 2 and more.
+title: React TreeGrid Edit Types | Syncfusion
+description: Learn how to use different edit types in React TreeGrid, including cell, row, batch, and dialog editing modes for managing data.
 control: Edit types 
 platform: grid-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Edit types in React TreeGrid
+# Edit Types in React TreeGrid
 
 ## Cell edit type and its params
 

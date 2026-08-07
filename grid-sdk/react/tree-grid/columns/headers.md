@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Headers in React TreeGrid component | Syncfusion
-description: Learn here all about Headers in Syncfusion React TreeGrid component of Syncfusion Essential JS 2 and more.
+title: React TreeGrid Headers | Syncfusion
+description: Learn how to configure and customize column headers in React TreeGrid, including header text and template options.
 control: Headers 
 platform: grid-sdk
 documentation: ug
