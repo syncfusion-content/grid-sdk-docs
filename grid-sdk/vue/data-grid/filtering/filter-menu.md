@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Filter menu in Vue Grid component | Syncfusion
-description: Learn here all about Filter menu in Syncfusion Vue Grid component of Syncfusion Essential JS 2 and more.
+title: Vue Grid Filter Menu | Syncfusion
+description: Learn how to use Filter Menu in Vue Data Grid with configurable dialogs, custom components, operator options, and multi-value filtering.
 control: Filter menu 
 platform: grid-sdk
 documentation: ug
