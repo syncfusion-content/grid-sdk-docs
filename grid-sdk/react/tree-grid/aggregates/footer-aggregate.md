@@ -8,7 +8,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# ooter Aggregate in React TreeGrid
+# Footer Aggregate in React TreeGrid
 
 Footer aggregate values are calculated across all rows and displayed in footer cells. Render footer aggregates using the [footerTemplate](https://ej2.syncfusion.com/react/documentation/api/treegrid/aggregateColumnModel/#footertemplate) property.
 
