@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Aggregates in Syncfusion ASP.NET Core Grid Component
-description: Learn here all about Aggregates in Syncfusion ASP.NET Core Grid component of Syncfusion Essential JS 2 and more.
+title: ASP.NET Core Grid Aggregates | Syncfusion
+description: Learn how to use aggregates in ASP.NET Core Data Grid to display column summaries, footer and group aggregates, and create custom aggregate calculations.
 platform: grid-sdk
 control: Aggregates
 publishingplatform: grid-sdk
 documentation: ug
 ---
 
-# Aggregates in ASP.NET Core Grid component
+# Aggregates in ASP.NET Core Data Grid
 
 The Aggregates feature in the [ASP.NET Core DataGrid](https://www.syncfusion.com/aspnet-core-ui-controls/grid) component allows you to display aggregate values in the footer, group footer, and group caption of the Grid. With this feature, you can easily perform calculations on specific columns and show summary information. This feature can be configured using the **e-grid-aggregates** directive. To represent an aggregate column, you need to specify the minimum required properties, such as `field` and `type`.
 
