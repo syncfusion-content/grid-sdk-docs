@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Export table and chart into the same document in React | Syncfusion
-description: Learn here all about how to export table and chart into the same document using toolbar in Syncfusion React of Syncfusion Essential JS 2 and more.
-platform: grid-sdk
-control: Export table and chart into the same document using toolbar 
+title: How to export Pivot Table and Chart to a PDF document | Syncfusion
+description: Step-by-step example showing how to export the table and the chart into the same PDF document in the React Pivot Table using the pdfExport method.
+platform: ej2-react
+control: Pivot Table
 documentation: ug
-domainurl: https://help.syncfusion.com/grid-sdk
+domainurl: ##DomainURL##
 ---
 
 <!-- markdownlint-disable MD009 -->
 
-# Export table and chart into the same document using toolbar in React
+# How to export Pivot Table and Chart to a PDF document
 
 By default, when the [displayOption.view](https://ej2.syncfusion.com/react/documentation/api/pivotview/displayoptionmodel#view) property is set to **Both** in the Pivot Table, the export functionality exports either the table or the chart to the PDF document based on the current value of the [displayOption.primary](https://ej2.syncfusion.com/react/documentation/api/pivotview/displayoptionmodel#primary) property. However, to export both the table and the chart into the same PDF document simultaneously, use the [`pdfExport`](https://ej2.syncfusion.com/react/documentation/api/pivotview/index-default#pdfexport) method during the [`actionBegin`](https://ej2.syncfusion.com/react/documentation/api/pivotview/index-default#actionbegin) event.
 
@@ -20,9 +20,10 @@ This approach is particularly useful when users need comprehensive reports that 
 
 Follow these steps to enable combined table and chart export:
 
-1. **Configure the Pivot Table** with both table and chart display options.
-2. **Handle the actionBegin event** to intercept the default export action.
-3. **Call the pdfExport method** with the `exportBothTableAndChart` parameter set to **true**.
+1. **Configure the Pivot Table** with both table and chart display options by setting [`displayOption.view`](https://ej2.syncfusion.com/react/documentation/api/pivotview/displayOptionModel#view) to **Both**.
+2. **Inject the `PDFExport` module** using `<Inject services={[PDFExport]} />` so the [`pdfExport`](https://ej2.syncfusion.com/react/documentation/api/pivotview/index-default#pdfexport) method is available.
+3. **Handle the actionBegin event** to intercept the default export action.
+4. **Call the pdfExport method** with the `exportBothTableAndChart` parameter set to **true**.
 
 ## Code example
 
@@ -30,17 +31,17 @@ The following example demonstrates how to restrict the built-in export action by
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs315/app/App.jsx %}
+{% include code-snippet/pivot-table/default-cs315/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs315/app/App.tsx %}
+{% include code-snippet/pivot-table/default-cs315/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs315/app/datasource.jsx %}
+{% include code-snippet/pivot-table/default-cs315/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs315/app/datasource.tsx %}
+{% include code-snippet/pivot-table/default-cs315/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs315" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs315" %}

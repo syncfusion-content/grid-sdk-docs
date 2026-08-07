@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Globalization in React Pivot Table component | Syncfusion
-description: Learn here all about Globalization and localization in Syncfusion React Pivot Table component of Syncfusion Essential JS 2 and more.
-control: Globalization and localization
-platform: grid-sdk
+title: Globalization in React Pivot Table | Syncfusion
+description: Learn how the React Pivot Table supports globalization and localization for culture-specific number, date, and currency formats, plus translated UI strings.
+control: Pivot Table
+platform: ej2-react
 documentation: ug
-domainurl: https://help.syncfusion.com/grid-sdk
+domainurl: ##DomainURL##
 ---
 
-# Globalization and localization in React Pivot Table component
+# Globalization and localization in React Pivot Table
 
 The Pivot Table helps users view and interact with data in their own language and regional format. This means users from different countries can easily read and understand the data because dates, numbers, and words are shown in a way that feels familiar to them.
 
@@ -78,14 +78,14 @@ By default, all Syncfusion components use English culture ('en-US'). To use a di
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs110/app/App.jsx %}
+{% include code-snippet/pivot-table/default-cs110/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs110/app/App.tsx %}
+{% include code-snippet/pivot-table/default-cs110/app/App.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs110" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs110" %}
 
 > * In the above sample, `Amount` field is formatted by [`NumberFormatOptions`](https://ej2.syncfusion.com/react/documentation/common/globalization/internationalization#manipulating-numbers). For date formats, the value strings are formatted by [`DateFormatOptions`](https://ej2.syncfusion.com/react/documentation/common/globalization/internationalization#manipulating-datetime).
 > * By default, [`locale`](https://ej2.syncfusion.com/react/documentation/api/pivotview/index-default#locale) value is `en-US`. If you want to change the `en-US` culture to a different culture, you have to change  the [`locale`](https://ej2.syncfusion.com/react/documentation/api/pivotview/index-default#locale) accordingly.
@@ -101,20 +101,20 @@ The following example shows how decimal separators appear when using the `Deutsc
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/locale-cs1/app/App.jsx %}
+{% include code-snippet/pivot-table/locale-cs1/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/locale-cs1/app/App.tsx %}
+{% include code-snippet/pivot-table/locale-cs1/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/locale-cs1/app/datasource.jsx %}
+{% include code-snippet/pivot-table/locale-cs1/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/locale-cs1/app/datasource.tsx %}
+{% include code-snippet/pivot-table/locale-cs1/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/locale-cs1" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/locale-cs1" %}
 
 ## Localization
 
@@ -574,14 +574,14 @@ The following example demonstrates the Pivot Table in `Deutsch` culture.
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs111/app/App.jsx %}
+{% include code-snippet/pivot-table/default-cs111/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs111/app/App.tsx %}
+{% include code-snippet/pivot-table/default-cs111/app/App.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs111" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs111" %}
 
 ## Right-to-left (RTL)
 
@@ -589,20 +589,20 @@ Right-to-left (RTL) support makes the Pivot Table more accessible and user-frien
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs112/app/App.jsx %}
+{% include code-snippet/pivot-table/default-cs112/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs112/app/App.tsx %}
+{% include code-snippet/pivot-table/default-cs112/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs112/app/datasource.jsx %}
+{% include code-snippet/pivot-table/default-cs112/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs112/app/datasource.tsx %}
+{% include code-snippet/pivot-table/default-cs112/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs112" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs112" %}
 
 ## See Also
 

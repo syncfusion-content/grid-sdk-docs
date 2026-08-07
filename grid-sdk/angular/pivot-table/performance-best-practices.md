@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Performance tips for Angular Pivot Table component | Syncfusion
-description: Checkout and learn here all about best practices to improve the performance of the Syncfusion Angular Pivot Table component and much more.
-platform: grid-sdk
+title: Performance Best Practices in Angular Pivot Table | Syncfusion
+description: Learn how the Angular Pivot Table improves load and render performance with virtual scrolling, paging, and data compression tips.
+platform: ej2-angular
 control: Performance best practices
-publishingplatform: grid-sdk
+publishingplatform: ##Platform_Name##
 documentation: ug
-domainurl: https://help.syncfusion.com/grid-sdk
+domainurl: ##DomainURL##
 ---
 
-# Best practices to improve the performance of the Pivot Table
+# Performance Best Practices in Angular Pivot Table
 
 Performance optimization is crucial when working with large datasets in the [Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Pivot Table](https://www.syncfusion.com/angular-components/angular-pivot-table). This documentation provides some best practices to empower your data analysis and enhance the user experience.
 
@@ -83,15 +83,15 @@ It obviously impacts the overall performance during pivot table rendering becaus
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/performance-best-practices-cs1/src/app.component.ts %}
+{% include code-snippet/pivot-grid/performance-best-practices-cs1/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/performance-best-practices-cs1/src/main.ts %}
+{% include code-snippet/pivot-grid/performance-best-practices-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/performance-best-practices-cs1" %}
+{% previewsample "page.domainurl/samples/pivot-grid/performance-best-practices-cs1" %}
 
 To avoid this performance constraint, we recommend passing the input raw data along with pre-processed group field sets based on your grouping needs. For example, if your input raw data has a date field "Date" with the value "15/AUG/2019 03:41 PM" and you want to display it as the year and month alone, split out the date field as "Date_Year" = "15/AUG/2019" for the year and "Date_Month" = "15/AUG/2019" for the month. Further use the [formatSettings](https://ej2.syncfusion.com/angular/documentation/api/pivotview/datasourcesettings#formatsettings) property to show these date fields with the chosen date format. Similarly, to group a number field, just alter its value based on your requirements (e.g., 1–5, 6–10).
 
@@ -99,15 +99,15 @@ Here's an example below of configuring grouping in your input raw data and assig
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/performance-best-practices-cs2/src/app.component.ts %}
+{% include code-snippet/pivot-grid/performance-best-practices-cs2/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/performance-best-practices-cs2/src/main.ts %}
+{% include code-snippet/pivot-grid/performance-best-practices-cs2/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/performance-best-practices-cs2" %}
+{% previewsample "page.domainurl/samples/pivot-grid/performance-best-practices-cs2" %}
 
 ### Value filtering
 

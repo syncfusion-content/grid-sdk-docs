@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Aggregation in React Pivot Table component | Syncfusion
-description: Learn here all about Aggregation in Syncfusion React Pivot Table component of Syncfusion Essential JS 2 and more.
-control: Aggregation
-platform: grid-sdk
+title: Aggregation in React Pivot Table | Syncfusion
+description: Learn how the React Pivot Table aggregates grouped values using built-in types like Sum, Count, Average, Min, Max, Product, Median, and more.
+control: Pivot Table
+platform: ej2-react
 documentation: ug
-domainurl: https://help.syncfusion.com/grid-sdk
+domainurl: ##DomainURL##
 ---
 
-# Aggregation in React Pivot Table component
+# Aggregation in React Pivot Table
 
 > This feature is applicable only for the relational data source.
 
@@ -53,20 +53,20 @@ For each value field, the aggregation type can be set using the property [`type`
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs1/app/App.jsx %}
+{% include code-snippet/pivot-table/default-cs1/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs1/app/App.tsx %}
+{% include code-snippet/pivot-table/default-cs1/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs1/app/datasource.jsx %}
+{% include code-snippet/pivot-table/default-cs1/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs1/app/datasource.tsx %}
+{% include code-snippet/pivot-table/default-cs1/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs1" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs1" %}
 
 > By default, the aggregation will be considered as **Sum** to the value fields which had number type and for the value fields which had non-number type values such as string, date, datetime, boolean, etc., the aggregation type will be considered as **Count**.
 
@@ -88,20 +88,20 @@ The following code demonstrates how to configure the pivot table component to di
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs2/app/App.jsx %}
+{% include code-snippet/pivot-table/default-cs2/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs2/app/App.tsx %}
+{% include code-snippet/pivot-table/default-cs2/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs2/app/datasource.jsx %}
+{% include code-snippet/pivot-table/default-cs2/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs2/app/datasource.tsx %}
+{% include code-snippet/pivot-table/default-cs2/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs2" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs2" %}
 
 ## Hiding aggregation type from button text
 
@@ -111,20 +111,20 @@ This customization enhances the clarity of the pivot table’s interface by simp
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs3/app/App.jsx %}
+{% include code-snippet/pivot-table/default-cs3/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs3/app/App.tsx %}
+{% include code-snippet/pivot-table/default-cs3/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs3/app/datasource.jsx %}
+{% include code-snippet/pivot-table/default-cs3/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs3/app/datasource.tsx %}
+{% include code-snippet/pivot-table/default-cs3/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs3" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs3" %}
 
 ## Hiding aggregation type icon from UI
 
@@ -134,20 +134,20 @@ By default, the dropdown icon to change the aggregation type is visible in the g
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs4/app/App.jsx %}
+{% include code-snippet/pivot-table/default-cs4/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs4/app/App.tsx %}
+{% include code-snippet/pivot-table/default-cs4/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs4/app/datasource.jsx %}
+{% include code-snippet/pivot-table/default-cs4/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs4/app/datasource.tsx %}
+{% include code-snippet/pivot-table/default-cs4/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs4" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs4" %}
 
 ## Event
 
@@ -167,20 +167,20 @@ The [`aggregateCellInfo`](https://ej2.syncfusion.com/react/documentation/api/piv
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs5/app/App.jsx %}
+{% include code-snippet/pivot-table/default-cs5/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs5/app/App.tsx %}
+{% include code-snippet/pivot-table/default-cs5/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs5/app/datasource.jsx %}
+{% include code-snippet/pivot-table/default-cs5/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs5/app/datasource.tsx %}
+{% include code-snippet/pivot-table/default-cs5/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs5" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs5" %}
 
 ### ActionBegin
 
@@ -200,20 +200,20 @@ In the following example, an action taken during aggregation type selection via 
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs6/app/App.jsx %}
+{% include code-snippet/pivot-table/default-cs6/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs6/app/App.tsx %}
+{% include code-snippet/pivot-table/default-cs6/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs6/app/datasource.jsx %}
+{% include code-snippet/pivot-table/default-cs6/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs6/app/datasource.tsx %}
+{% include code-snippet/pivot-table/default-cs6/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs6" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs6" %}
 
 ### ActionComplete
 
@@ -228,20 +228,20 @@ The [`actionComplete`](https://ej2.syncfusion.com/react/documentation/api/pivotv
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs7/app/App.jsx %}
+{% include code-snippet/pivot-table/default-cs7/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs7/app/App.tsx %}
+{% include code-snippet/pivot-table/default-cs7/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs7/app/datasource.jsx %}
+{% include code-snippet/pivot-table/default-cs7/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs7/app/datasource.tsx %}
+{% include code-snippet/pivot-table/default-cs7/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs7" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs7" %}
 
 ### ActionFailure
 
@@ -252,17 +252,17 @@ The [`actionFailure`](https://ej2.syncfusion.com/react/documentation/api/pivotvi
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs8/app/App.jsx %}
+{% include code-snippet/pivot-table/default-cs8/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs8/app/App.tsx %}
+{% include code-snippet/pivot-table/default-cs8/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs8/app/datasource.jsx %}
+{% include code-snippet/pivot-table/default-cs8/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs8/app/datasource.tsx %}
+{% include code-snippet/pivot-table/default-cs8/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs8" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs8" %}

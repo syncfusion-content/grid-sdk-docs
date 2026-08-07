@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Show hide totals in React Pivot Table component | Syncfusion
-description: Learn here all about Show hide totals in Syncfusion React Pivot Table component of Syncfusion Essential JS 2 and more.
-control: Show hide totals 
-platform: grid-sdk
+title: Show hide totals in React Pivot Table | Syncfusion
+description: Learn how the React Pivot Table shows or hides grand totals and sub-totals for rows, columns, or both to control summary visibility.
+control: Pivot Table
+platform: ej2-react
 documentation: ug
-domainurl: https://help.syncfusion.com/grid-sdk
+domainurl: ##DomainURL##
 ---
 
-# Show hide totals in React Pivot Table component
+# Show hide totals in React Pivot Table
 
 The Pivot Table component allows users to easily customize the display of grand totals and sub-totals. This documentation explains how to control their visibility and positioning to suit your data analysis needs.
 
@@ -24,20 +24,20 @@ The Pivot Table component provides options to display or hide grand totals for r
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs273/app/App.jsx %}
+{% include code-snippet/pivot-table/default-cs273/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs273/app/App.tsx %}
+{% include code-snippet/pivot-table/default-cs273/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs273/app/datasource.jsx %}
+{% include code-snippet/pivot-table/default-cs273/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs273/app/datasource.tsx %}
+{% include code-snippet/pivot-table/default-cs273/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs273" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs273" %}
 
 ## Set grand totals position
 
@@ -47,20 +47,20 @@ To display grand totals at the top of both rows and columns, set the [`grandTota
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs274/app/App.jsx %}
+{% include code-snippet/pivot-table/default-cs274/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs274/app/App.tsx %}
+{% include code-snippet/pivot-table/default-cs274/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs274/app/datasource.jsx %}
+{% include code-snippet/pivot-table/default-cs274/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs274/app/datasource.tsx %}
+{% include code-snippet/pivot-table/default-cs274/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs274" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs274" %}
 
 ## Show or hide sub-totals
 
@@ -74,20 +74,20 @@ The Pivot Table component enables showing or hiding sub-totals for rows, columns
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs275/app/App.jsx %}
+{% include code-snippet/pivot-table/default-cs275/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs275/app/App.tsx %}
+{% include code-snippet/pivot-table/default-cs275/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs275/app/datasource.jsx %}
+{% include code-snippet/pivot-table/default-cs275/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs275/app/datasource.tsx %}
+{% include code-snippet/pivot-table/default-cs275/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs275" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs275" %}
 
 ## Show or hide sub-totals for specific fields
 
@@ -97,20 +97,20 @@ The Pivot Table component allows users to show or hide sub-totals for specific f
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs276/app/App.jsx %}
+{% include code-snippet/pivot-table/default-cs276/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs276/app/App.tsx %}
+{% include code-snippet/pivot-table/default-cs276/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs276/app/datasource.jsx %}
+{% include code-snippet/pivot-table/default-cs276/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs276/app/datasource.tsx %}
+{% include code-snippet/pivot-table/default-cs276/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs276" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs276" %}
 
 ## Show sub-totals at top or bottom
 
@@ -120,27 +120,27 @@ To display sub-totals at the top of header groups for both rows and columns, set
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs291/app/App.jsx %}
+{% include code-snippet/pivot-table/default-cs291/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs291/app/App.tsx %}
+{% include code-snippet/pivot-table/default-cs291/app/App.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs291" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs291" %}
 
 To display sub-totals at the bottom of header groups for both rows and columns, set the [`subTotalsPosition`](https://ej2.syncfusion.com/react/documentation/api/pivotview/dataSourceSettingsModel/#subtotalsposition) property in [`dataSourceSettings`](https://ej2.syncfusion.com/react/documentation/api/pivotview/index-default#datasourcesettings) to **Bottom**.
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs292/app/App.jsx %}
+{% include code-snippet/pivot-table/default-cs292/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs292/app/App.tsx %}
+{% include code-snippet/pivot-table/default-cs292/app/App.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs292" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs292" %}
 
 ## Show or hide totals using toolbar
 
@@ -150,17 +150,17 @@ The toolbar also includes options for "Grand Totals Position" and "Subtotals Pos
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs277/app/App.jsx %}
+{% include code-snippet/pivot-table/default-cs277/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs277/app/App.tsx %}
+{% include code-snippet/pivot-table/default-cs277/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs277/app/datasource.jsx %}
+{% include code-snippet/pivot-table/default-cs277/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs277/app/datasource.tsx %}
+{% include code-snippet/pivot-table/default-cs277/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs277" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs277" %}

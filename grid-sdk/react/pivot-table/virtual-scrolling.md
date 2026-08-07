@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Virtual scrolling in React Pivot Table component | Syncfusion
-description: Learn here all about Virtual scrolling in Syncfusion React Pivot Table component of Syncfusion Essential JS 2 and more.
-control: Virtual scrolling 
-platform: grid-sdk
+title: Virtual scrolling in React Pivot Table | Syncfusion
+description: Learn how the React Pivot Table renders only the rows and columns visible in the viewport using enableVirtualization, for efficient large-dataset rendering.
+control: Pivot Table
+platform: ej2-react
 documentation: ug
-domainurl: https://help.syncfusion.com/grid-sdk
+domainurl: ##DomainURL##
 ---
 
-# Virtual Scrolling in React Pivot Table Component
+# Virtual scrolling in React Pivot Table
 
 ## Virtual Scrolling
 
@@ -20,14 +20,14 @@ To use the virtual scrolling feature, inject the `VirtualScroll` module into the
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs308/app/App.jsx %}
+{% include code-snippet/pivot-table/default-cs308/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs308/app/App.tsx %}
+{% include code-snippet/pivot-table/default-cs308/app/App.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs308" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs308" %}
 
 > The `height` and `width` properties should be set for virtual scrolling. If it is not defined, then the Pivot Table will consider its value as `300px` and `800px` respectively.
 
@@ -39,14 +39,14 @@ To optimize performance, set the [allowSinglePage](https://ej2.syncfusion.com/re
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/single-page-mode/app/App.jsx %}
+{% include code-snippet/pivot-table/single-page-mode/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/single-page-mode/app/App.tsx %}
+{% include code-snippet/pivot-table/single-page-mode/app/App.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/single-page-mode" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/single-page-mode" %}
 
 ## Limitations for Virtual Scrolling
 
@@ -70,14 +70,14 @@ Here's how to make virtual scrolling work with a static field list:
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs310/app/App.jsx %}
+{% include code-snippet/pivot-table/default-cs310/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs310/app/App.tsx %}
+{% include code-snippet/pivot-table/default-cs310/app/App.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs310" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs310" %}
 
 ## See Also
 

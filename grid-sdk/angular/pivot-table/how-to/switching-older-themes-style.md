@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Switching themes style in Angular Pivotview component | Syncfusion
-description: Learn here all about Switching older themes style in Syncfusion Angular Pivotview component of Syncfusion Essential JS 2 and more.
-platform: grid-sdk
+title: How to Switch to Older Themes Style in Angular Pivot Table | Syncfusion
+description: Step-by-step example showing how to switch to older themes style in the Angular Pivot Table, with code snippets and property references.
+platform: ej2-angular
 control: Switching older themes style 
 documentation: ug
-domainurl: https://help.syncfusion.com/grid-sdk
+domainurl: ##DomainURL##
 ---
 
 <!-- markdownlint-disable MD009 -->
 
-# Switching older themes style in Angular Pivotview component
+# How to Switch to Older Themes Style in Angular Pivot Table
 
 Since Volume 1, 2020, Syncfusion<sup style="font-size:70%">&reg;</sup> has revised the theming and layout of the Pivot Table. If you prefer the appearance of the earlier theme, you can revert to it by making specific changes. This guide explains how to restore the older theme's style by modifying the CSS to adjust cell background colors and set the row height to match the previous layout.
 
@@ -72,12 +72,12 @@ The following code sample demonstrates how to replicate the older theme style:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/switch-theme-cs1/src/app.component.ts %}
+{% include code-snippet/pivot-grid/switch-theme-cs1/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/switch-theme-cs1/src/main.ts %}
+{% include code-snippet/pivot-grid/switch-theme-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/switch-theme-cs1" %}
+{% previewsample "page.domainurl/samples/pivot-grid/switch-theme-cs1" %}

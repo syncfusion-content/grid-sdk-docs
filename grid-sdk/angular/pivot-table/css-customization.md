@@ -1,14 +1,14 @@
 ---
 layout: post
-title: CSS customization in Angular Pivot Table component | Syncfusion
-description: Learn here all about CSS customization in Syncfusion Angular Pivot Table component of Syncfusion Essential JS 2 and more.
-platform: grid-sdk
+title: Style and Appearance in Angular Pivot Table | Syncfusion
+description: Learn how the Angular Pivot Table styles row headers, column headers, value cells, and the field list with theme CSS overrides.
+platform: ej2-angular
 control: CSS customization 
 documentation: ug
-domainurl: https://help.syncfusion.com/grid-sdk
+domainurl: ##DomainURL##
 ---
 
-# CSS customization in Angular Pivot Table component
+# Style and Appearance in Angular Pivot Table
 
 The Angular Pivot Table component provides extensive CSS customization options, allowing users to modify the visual appearance and layout of various pivot table elements. This includes styling row headers, column headers, value cells, summary cells, Field List components, and Grouping Bar areas to match application themes and design requirements.
 
@@ -44,15 +44,15 @@ The CSS selectors target the following Pivot Table elements:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/css-custom-cs1/src/app.component.ts %}
+{% include code-snippet/pivot-grid/css-custom-cs1/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/css-custom-cs1/src/main.ts %}
+{% include code-snippet/pivot-grid/css-custom-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/css-custom-cs1" %}
+{% previewsample "page.domainurl/samples/pivot-grid/css-custom-cs1" %}
 
 ## Text Alignment
 
@@ -66,15 +66,15 @@ The alignment of text inside row headers, column headers, value cells, and summa
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/text-align-cs1/src/app.component.ts %}
+{% include code-snippet/pivot-grid/text-align-cs1/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/text-align-cs1/src/main.ts %}
+{% include code-snippet/pivot-grid/text-align-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/text-align-cs1" %}
+{% previewsample "page.domainurl/samples/pivot-grid/text-align-cs1" %}
 
 ## Customize header, value and summary cell styles
 
@@ -104,12 +104,12 @@ The CSS classes target the following PivotView elements:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/summary-cell-cs1/src/app.component.ts %}
+{% include code-snippet/pivot-grid/summary-cell-cs1/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/summary-cell-cs1/src/main.ts %}
+{% include code-snippet/pivot-grid/summary-cell-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/summary-cell-cs1" %}
+{% previewsample "page.domainurl/samples/pivot-grid/summary-cell-cs1" %}

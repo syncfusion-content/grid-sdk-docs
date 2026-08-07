@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Pdf export in Vue Pivot Table component | Syncfusion
-description: Learn here all about Pdf export in Syncfusion Vue Pivot Table component of Syncfusion Essential JS 2 and more.
+title: PDF Export in Vue Pivot Table | Syncfusion
+description: Learn how the Vue Pivot Table exports data as a PDF document via the pdfExport method, with custom fonts, headers, footers, and file-name configuration.
 control: Pdf export 
-platform: grid-sdk
+platform: ej2-vue
 documentation: ug
-domainurl: https://help.syncfusion.com/grid-sdk
+domainurl: ##DomainURL##
 ---
 
-# PDF export in Vue Pivot Table component
+# PDF Export in Vue Pivot Table
 
 The Vue Pivot Table allows exporting pivot table data as a PDF document. To enable PDF export, inject the `PDFExport` module into the Pivot Table and set the [`allowPdfExport`](https://ej2.syncfusion.com/vue/documentation/api/pivotview/index-default#allowpdfexport) property to **true**. Once enabled, use the [`pdfExport`](https://ej2.syncfusion.com/vue/documentation/api/pivotview/index-default#pdfexport) method to generate and download the PDF file.
 
@@ -16,14 +16,14 @@ In the following example, an external button is used to start the PDF export pro
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/default-cs160/app-composition.vue %}
+{% include code-snippet/pivot-grid/default-cs160/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/default-cs160/app.vue %}
+{% include code-snippet/pivot-grid/default-cs160/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/default-cs160" %}
+{% previewsample "page.domainurl/code-snippet/pivot-grid/default-cs160" %}
 
 ## Multiple Pivot Table exporting
 
@@ -37,14 +37,14 @@ To export multiple Pivot Tables on the same page, set the `multipleExport.type` 
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/default-cs161/app-composition.vue %}
+{% include code-snippet/pivot-grid/default-cs161/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/default-cs161/app.vue %}
+{% include code-snippet/pivot-grid/default-cs161/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/default-cs161" %}
+{% previewsample "page.domainurl/code-snippet/pivot-grid/default-cs161" %}
 
 ### New page
 
@@ -52,14 +52,14 @@ To export each Pivot Table on a separate page, set the `multipleExport.type` pro
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/default-cs292/app-composition.vue %}
+{% include code-snippet/pivot-grid/default-cs292/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/default-cs292/app.vue %}
+{% include code-snippet/pivot-grid/default-cs292/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/default-cs292" %}
+{% previewsample "page.domainurl/code-snippet/pivot-grid/default-cs292" %}
 
 ## Export table and chart into the same document
 
@@ -69,14 +69,14 @@ The following example shows how you can set this up in your application:
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/default-cs162/app-composition.vue %}
+{% include code-snippet/pivot-grid/default-cs162/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/default-cs162/app.vue %}
+{% include code-snippet/pivot-grid/default-cs162/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/default-cs162" %}
+{% previewsample "page.domainurl/code-snippet/pivot-grid/default-cs162" %}
 
 ## Customization during PDF export
 
@@ -180,14 +180,14 @@ The below code illustrates the PDF export customization options.
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/default-cs163/app-composition.vue %}
+{% include code-snippet/pivot-grid/default-cs163/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/default-cs163/app.vue %}
+{% include code-snippet/pivot-grid/default-cs163/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/default-cs163" %}
+{% previewsample "page.domainurl/code-snippet/pivot-grid/default-cs163" %}
 
 #### Add an image in header/footer
 
@@ -218,14 +218,14 @@ The below code illustrates the PDF export customization options.
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/default-cs274/app-composition.vue %}
+{% include code-snippet/pivot-grid/default-cs274/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/default-cs274/app.vue %}
+{% include code-snippet/pivot-grid/default-cs274/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/default-cs274" %}
+{% previewsample "page.domainurl/code-snippet/pivot-grid/default-cs274" %}
 
 ### Changing the file name while exporting
 
@@ -233,14 +233,14 @@ The PDF export provides an option to change the file name of the document before
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/default-cs164/app-composition.vue %}
+{% include code-snippet/pivot-grid/default-cs164/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/default-cs164/app.vue %}
+{% include code-snippet/pivot-grid/default-cs164/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/default-cs164" %}
+{% previewsample "page.domainurl/code-snippet/pivot-grid/default-cs164" %}
 
 ### Changing page orientation while exporting
 
@@ -248,14 +248,14 @@ When exporting the Pivot Table as a PDF, users can choose the page orientation o
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/default-cs165/app-composition.vue %}
+{% include code-snippet/pivot-grid/default-cs165/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/default-cs165/app.vue %}
+{% include code-snippet/pivot-grid/default-cs165/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/default-cs165" %}
+{% previewsample "page.domainurl/code-snippet/pivot-grid/default-cs165" %}
 
 ### Changing page size while exporting
 
@@ -267,14 +267,14 @@ This option lets users easily adjust the PDF layout to fit their specific needs 
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/default-cs166/app-composition.vue %}
+{% include code-snippet/pivot-grid/default-cs166/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/default-cs166/app.vue %}
+{% include code-snippet/pivot-grid/default-cs166/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/default-cs166" %}
+{% previewsample "page.domainurl/code-snippet/pivot-grid/default-cs166" %}
 
 ### Changing document width and height while exporting
 
@@ -284,14 +284,14 @@ You can adjust the size of the exported PDF document by setting the [`height`](h
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/default-cs167/app-composition.vue %}
+{% include code-snippet/pivot-grid/default-cs167/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/default-cs167/app.vue %}
+{% include code-snippet/pivot-grid/default-cs167/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/default-cs167" %}
+{% previewsample "page.domainurl/code-snippet/pivot-grid/default-cs167" %}
 
 ### Customize the table column count while exporting
 
@@ -301,14 +301,14 @@ Users can control how many Pivot Table columns appear on each page of the export
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/default-cs168/app-composition.vue %}
+{% include code-snippet/pivot-grid/default-cs168/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/default-cs168/app.vue %}
+{% include code-snippet/pivot-grid/default-cs168/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/default-cs168" %}
+{% previewsample "page.domainurl/code-snippet/pivot-grid/default-cs168" %}
 
 ### Changing the table's column width and row height while exporting
 
@@ -322,14 +322,14 @@ For example, the **"Units Sold"** column under **"FY 2015"** can be set to a wid
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/default-cs272/app-composition.vue %}
+{% include code-snippet/pivot-grid/default-cs272/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/default-cs272/app.vue %}
+{% include code-snippet/pivot-grid/default-cs272/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/default-cs272" %}
+{% previewsample "page.domainurl/code-snippet/pivot-grid/default-cs272" %}
 
 #### Adjusting row height
 
@@ -339,14 +339,14 @@ For example, the **"Mountain Bikes"** row under **"France"** can be set to a hei
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/default-cs273/app-composition.vue %}
+{% include code-snippet/pivot-grid/default-cs273/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/default-cs273/app.vue %}
+{% include code-snippet/pivot-grid/default-cs273/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/default-cs273" %}
+{% previewsample "page.domainurl/code-snippet/pivot-grid/default-cs273" %}
 
 ### Customize the pivot report during export
 
@@ -356,14 +356,14 @@ In the following example, the [`beforeExport`](https://ej2.syncfusion.com/vue/do
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/default-cs277/app-composition.vue %}
+{% include code-snippet/pivot-grid/default-cs277/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/default-cs277/app.vue %}
+{% include code-snippet/pivot-grid/default-cs277/app.vue %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/default-cs277" %}
+{% previewsample "page.domainurl/code-snippet/pivot-grid/default-cs277" %}
 
 ### Exporting with row and column cells spanning
 
@@ -378,14 +378,14 @@ In the following code example, the row and column spans are adjusted for empty c
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/default-cs294/app-composition.vue %}
+{% include code-snippet/pivot-grid/default-cs294/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/default-cs294/app.vue %}
+{% include code-snippet/pivot-grid/default-cs294/app.vue %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/default-cs294" %}
+{% previewsample "page.domainurl/code-snippet/pivot-grid/default-cs294" %}
 
 ### Exporting with hyperlinks and images
 
@@ -395,14 +395,14 @@ The Pivot Table allows adding hyperlinks and images to cells during PDF export. 
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/default-cs295/app-composition.vue %}
+{% include code-snippet/pivot-grid/default-cs295/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/default-cs295/app.vue %}
+{% include code-snippet/pivot-grid/default-cs295/app.vue %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/default-cs295" %}
+{% previewsample "page.domainurl/code-snippet/pivot-grid/default-cs295" %}
 
 ## Exporting with custom aggregates
 
@@ -421,14 +421,14 @@ The following example shows how to add two custom aggregate types to the aggrega
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/default-cs296/app-composition.vue %}
+{% include code-snippet/pivot-grid/default-cs296/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/default-cs296/app.vue %}
+{% include code-snippet/pivot-grid/default-cs296/app.vue %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/default-cs296" %}
+{% previewsample "page.domainurl/code-snippet/pivot-grid/default-cs296" %}
 
 ## Exporting with custom date format
 
@@ -444,14 +444,14 @@ The following example demonstrates exporting a Pivot Table with a custom date fo
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/default-cs297/app-composition.vue %}
+{% include code-snippet/pivot-grid/default-cs297/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/default-cs297/app.vue %}
+{% include code-snippet/pivot-grid/default-cs297/app.vue %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/default-cs297" %}
+{% previewsample "page.domainurl/code-snippet/pivot-grid/default-cs297" %}
 
 ## Changing the pivot table style while exporting
 
@@ -461,14 +461,14 @@ When you export the Pivot Table as a PDF document, you can change the colors use
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/default-cs169/app-composition.vue %}
+{% include code-snippet/pivot-grid/default-cs169/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/default-cs169/app.vue %}
+{% include code-snippet/pivot-grid/default-cs169/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/default-cs169" %}
+{% previewsample "page.domainurl/code-snippet/pivot-grid/default-cs169" %}
 
 ### Changing default font while exporting 
 
@@ -502,14 +502,14 @@ You can also use custom fonts when exporting if you need support for languages o
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/default-cs170/app-composition.vue %}
+{% include code-snippet/pivot-grid/default-cs170/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/default-cs170/app.vue %}
+{% include code-snippet/pivot-grid/default-cs170/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/default-cs170" %}
+{% previewsample "page.domainurl/code-snippet/pivot-grid/default-cs170" %}
 
 > Non-English alphabets can also be exported correctly when you specify a suitable font.
 
@@ -521,14 +521,14 @@ The following example demonstrates how to apply conditional formatting to the **
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/default-cs298/app-composition.vue %}
+{% include code-snippet/pivot-grid/default-cs298/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/default-cs298/app.vue %}
+{% include code-snippet/pivot-grid/default-cs298/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/default-cs298" %}
+{% previewsample "page.domainurl/code-snippet/pivot-grid/default-cs298" %}
 
 ## Enabling horizontal overflow
 
@@ -536,14 +536,14 @@ The Pivot Table component supports exporting all columns on a single page in the
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/default-cs299/app-composition.vue %}
+{% include code-snippet/pivot-grid/default-cs299/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/default-cs299/app.vue %}
+{% include code-snippet/pivot-grid/default-cs299/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/default-cs299" %}
+{% previewsample "page.domainurl/code-snippet/pivot-grid/default-cs299" %}
 
 ## Export only the current page
 
@@ -553,14 +553,14 @@ By default, the Pivot Table exports all data records. When working with large da
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/default-cs173/app-composition.vue %}
+{% include code-snippet/pivot-grid/default-cs173/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/default-cs173/app.vue %}
+{% include code-snippet/pivot-grid/default-cs173/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/default-cs173" %}
+{% previewsample "page.domainurl/code-snippet/pivot-grid/default-cs173" %}
 
 ## Repeat row headers
 
@@ -568,14 +568,14 @@ By default, row headers are repeated on each page when exporting the Pivot Table
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/default-cs172/app-composition.vue %}
+{% include code-snippet/pivot-grid/default-cs172/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/default-cs172/app.vue %}
+{% include code-snippet/pivot-grid/default-cs172/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/default-cs172" %}
+{% previewsample "page.domainurl/code-snippet/pivot-grid/default-cs172" %}
 
 ## Repeat column headers on every page
 
@@ -583,14 +583,14 @@ By default, column headers are repeated on each page when exporting the Pivot Ta
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/default-cs300/app-composition.vue %}
+{% include code-snippet/pivot-grid/default-cs300/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/default-cs300/app.vue %}
+{% include code-snippet/pivot-grid/default-cs300/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/default-cs300" %}
+{% previewsample "page.domainurl/code-snippet/pivot-grid/default-cs300" %}
 
 ## Show spinner during export
 
@@ -598,14 +598,14 @@ When exporting data, displaying a spinner provides visual feedback to users that
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/default-cs301/app-composition.vue %}
+{% include code-snippet/pivot-grid/default-cs301/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/default-cs301/app.vue %}
+{% include code-snippet/pivot-grid/default-cs301/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/default-cs301" %}
+{% previewsample "page.domainurl/code-snippet/pivot-grid/default-cs301" %}
 
 ## Events
 
@@ -622,14 +622,14 @@ By using this event, users can easily update the cell text, apply different styl
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/default-cs174/app-composition.vue %}
+{% include code-snippet/pivot-grid/default-cs174/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/default-cs174/app.vue %}
+{% include code-snippet/pivot-grid/default-cs174/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/default-cs174" %}
+{% previewsample "page.domainurl/code-snippet/pivot-grid/default-cs174" %}
 
 ### PdfHeaderQueryCellInfo
 
@@ -642,14 +642,14 @@ The event provides the following parameters:
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/default-cs175/app-composition.vue %}
+{% include code-snippet/pivot-grid/default-cs175/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/default-cs175/app.vue %}
+{% include code-snippet/pivot-grid/default-cs175/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/default-cs175" %}
+{% previewsample "page.domainurl/code-snippet/pivot-grid/default-cs175" %}
 
 ### ExportComplete
 
@@ -662,14 +662,14 @@ The event provides the following parameters:
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/default-cs176/app-composition.vue %}
+{% include code-snippet/pivot-grid/default-cs176/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/default-cs176/app.vue %}
+{% include code-snippet/pivot-grid/default-cs176/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/default-cs176" %}
+{% previewsample "page.domainurl/code-snippet/pivot-grid/default-cs176" %}
 
 ## See Also
 

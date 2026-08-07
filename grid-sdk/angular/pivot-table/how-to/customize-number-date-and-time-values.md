@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Customize number, date & time in Angular PivotView | Syncfusion
-description: Learn here all about customizing number, date and time values in Syncfusion Angular Pivotview component of Syncfusion Essential JS 2 and more.
-platform: grid-sdk
+title: How to Customize Number, Date, Time Values in Angular Pivot Table | Syncfusion
+description: Step-by-step example showing how to customize number, date, and time values in the Angular Pivot Table, with code snippets and property references.
+platform: ej2-angular
 control: Customize number date and time values 
 documentation: ug
-domainurl: https://help.syncfusion.com/grid-sdk
+domainurl: ##DomainURL##
 ---
 
-# Customize number, date and time values in Angular Pivotview component
+# How to Customize Number, Date, Time Values in Angular Pivot Table
 
 You can format the number, date, and time values for each field using the [`formatSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/datasourcesettings#formatsettings) option under [`dataSourceSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/datasourcesettings). This configuration is applied during component initialization to ensure consistent data presentation across the pivot view.
 
@@ -23,15 +23,15 @@ For numeric fields, the formatting settings include the following properties:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs163/src/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs163/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs163/src/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs163/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs163" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs163" %}
 
 ## Date and Time formatting
 
@@ -45,15 +45,15 @@ For date and time fields, the formatting settings include these properties:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs164/src/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs164/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs164/src/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs164/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs164" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs164" %}
 
 ## Limitations of date formatting
 

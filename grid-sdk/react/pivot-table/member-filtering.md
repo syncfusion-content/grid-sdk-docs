@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Member filtering in React Pivotview component | Syncfusion
-description: Learn here all about Member filtering in Syncfusion React Pivotview component of Syncfusion Essential JS 2 and more.
-control: Member filtering 
-platform: grid-sdk
+title: Member filtering in React Pivot Table | Syncfusion
+description: Learn how the React Pivot Table applies member filtering to include or exclude specific field members from rows and columns in the pivot view.
+control: Pivot Table
+platform: ej2-react
 documentation: ug
-domainurl: https://help.syncfusion.com/grid-sdk
+domainurl: ##DomainURL##
 ---
 
-# Member filtering in React Pivotview component
+# Member filtering in React Pivot Table
 
 Member filtering allows you to view pivot table with particular records based on filter criteria. You can disable the member filter by setting the [`allowMemberFilter`](https://ej2.syncfusion.com/react/documentation/api/pivotview/dataSourceSettings/#allowmemberfilter) property to **false**. By default, this property is set as **true**.
 
@@ -25,14 +25,14 @@ It can be configured using the `filterSettings` option through code-behind. The 
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs181/app/App.jsx %}
+{% include code-snippet/pivot-table/default-cs181/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs181/app/App.tsx %}
+{% include code-snippet/pivot-table/default-cs181/app/App.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
- {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs181" %}
+ {% previewsample "page.domainurl/code-snippet/pivot-table/default-cs181" %}
 
 ### On demand member loading
 
@@ -42,14 +42,14 @@ Users can load members on demand by setting the [`loadOnDemandInMemberEditor`](h
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs182/app/App.jsx %}
+{% include code-snippet/pivot-table/default-cs182/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs182/app/App.tsx %}
+{% include code-snippet/pivot-table/default-cs182/app/App.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
- {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs182" %}
+ {% previewsample "page.domainurl/code-snippet/pivot-table/default-cs182" %}
 
 ![output](images/ondemand_member.png)
 
@@ -65,14 +65,14 @@ User can load the members based on the level count by using the property [`level
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs183/app/App.jsx %}
+{% include code-snippet/pivot-table/default-cs183/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs183/app/App.tsx %}
+{% include code-snippet/pivot-table/default-cs183/app/App.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
- {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs183" %}
+ {% previewsample "page.domainurl/code-snippet/pivot-table/default-cs183" %}
 
 ![output](images/level-count.png)
 

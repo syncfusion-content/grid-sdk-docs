@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Accessibility in Vue Pivot Table component | Syncfusion
-description: Learn here all about Accessibility in Syncfusion Vue Pivot Table component of Syncfusion Essential JS 2 and more.
+title: Accessibility in Vue Pivot Table | Syncfusion
+description: Learn how the Vue Pivot Table supports accessibility with WAI-ARIA roles, full keyboard navigation, and screen reader integration.
 control: Accessibility 
-platform: grid-sdk
+platform: ej2-vue
 documentation: ug
-domainurl: https://help.syncfusion.com/grid-sdk
+domainurl: ##DomainURL##
 ---
 
-# Accessibility in Vue Pivot Table component
+# Accessibility in Vue Pivot Table
 
 The pivot table component followed the accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) that are commonly used to evaluate accessibility.
 
@@ -235,14 +235,14 @@ The accessibility compliance of the pivot table component is shown in the follow
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/accessibility/app-composition.vue %}
+{% include code-snippet/pivot-grid/accessibility/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/accessibility/app.vue %}
+{% include code-snippet/pivot-grid/accessibility/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/accessibility" %}
+{% previewsample "page.domainurl/code-snippet/pivot-grid/accessibility" %}
 
 ## See also
 

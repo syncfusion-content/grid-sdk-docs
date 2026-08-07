@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Summary customization in Vue Pivot Table component | Syncfusion
-description: Learn here all about Summary customization in Syncfusion Vue Pivot Table component of Syncfusion Essential JS 2 and more.
+title: Summary Customization in Vue Pivot Table | Syncfusion
+description: Learn how the Vue Pivot Table shows or hides grand totals and subtotals per row or column, and repositions totals to the top or bottom via the dataSourceSettings properties.
 control: Summary customization 
-platform: grid-sdk
+platform: ej2-vue
 documentation: ug
-domainurl: https://help.syncfusion.com/grid-sdk
+domainurl: ##DomainURL##
 ---
 
-# Summary customization in Vue Pivot Table component
+# Summary Customization in Vue Pivot Table
 
 ## Show or hide grand totals
 
@@ -18,14 +18,14 @@ Allows to show or hide grand totals in rows and columns using the [`showGrandTot
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/default-cs236/app-composition.vue %}
+{% include code-snippet/pivot-grid/default-cs236/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/default-cs236/app.vue %}
+{% include code-snippet/pivot-grid/default-cs236/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/default-cs236" %}
+{% previewsample "page.domainurl/code-snippet/pivot-grid/default-cs236" %}
 
 ## Show grand totals at top or bottom
 
@@ -33,14 +33,14 @@ Allows to show grand totals either at top or bottom in rows and columns using th
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/default-cs237/app-composition.vue %}
+{% include code-snippet/pivot-grid/default-cs237/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/default-cs237/app.vue %}
+{% include code-snippet/pivot-grid/default-cs237/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/default-cs237" %}
+{% previewsample "page.domainurl/code-snippet/pivot-grid/default-cs237" %}
 
 ## Show or hide sub-totals
 
@@ -50,14 +50,14 @@ Allows to show or hide sub-totals in rows and columns using the [`showSubTotals`
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/default-cs238/app-composition.vue %}
+{% include code-snippet/pivot-grid/default-cs238/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/default-cs238/app.vue %}
+{% include code-snippet/pivot-grid/default-cs238/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/default-cs238" %}
+{% previewsample "page.domainurl/code-snippet/pivot-grid/default-cs238" %}
 
 ## Show/hide sub-totals for specific fields
 
@@ -67,14 +67,14 @@ Allows to show or hide sub-totals for specific fields in rows and columns using 
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/default-cs239/app-composition.vue %}
+{% include code-snippet/pivot-grid/default-cs239/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/default-cs239/app.vue %}
+{% include code-snippet/pivot-grid/default-cs239/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/default-cs239" %}
+{% previewsample "page.domainurl/code-snippet/pivot-grid/default-cs239" %}
 
 ## Show sub-totals at top or bottom
 
@@ -84,27 +84,27 @@ To show sub-totals at top of the header group in rows and columns, set the [`sub
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/default-cs240/app-composition.vue %}
+{% include code-snippet/pivot-grid/default-cs240/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/default-cs240/app.vue %}
+{% include code-snippet/pivot-grid/default-cs240/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/default-cs240" %}
+{% previewsample "page.domainurl/code-snippet/pivot-grid/default-cs240" %}
 
 To show sub-totals at bottom of the header group in rows and columns, set the [`subTotalsPosition`](https://ej2.syncfusion.com/vue/documentation/api/pivotview/iDataOptions#subtotalsposition) property in [`dataSourceSettings`](https://ej2.syncfusion.com/vue/documentation/api/pivotview/dataSourceSettings) to **Bottom**.
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/default-cs241/app-composition.vue %}
+{% include code-snippet/pivot-grid/default-cs241/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/default-cs241/app.vue %}
+{% include code-snippet/pivot-grid/default-cs241/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/default-cs241" %}
+{% previewsample "page.domainurl/code-snippet/pivot-grid/default-cs241" %}
 
 ## Show or hide totals using toolbar
 
@@ -114,11 +114,11 @@ The grand totals and sub-totals can be dynamically displayed at the top or botto
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/default-cs242/app-composition.vue %}
+{% include code-snippet/pivot-grid/default-cs242/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/default-cs242/app.vue %}
+{% include code-snippet/pivot-grid/default-cs242/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/default-cs242" %}
+{% previewsample "page.domainurl/code-snippet/pivot-grid/default-cs242" %}

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Sorting in Vue Pivot Table component | Syncfusion
-description: Learn here all about Sorting in Syncfusion Vue Pivot Table component of Syncfusion Essential JS 2 and more.
+title: Sorting in Vue Pivot Table | Syncfusion
+description: Learn how the Vue Pivot Table sorts field members and value axes in ascending or descending order via the enableSorting and valueSortSettings properties and runtime sort icons.
 control: Sorting 
-platform: grid-sdk
+platform: ej2-vue
 documentation: ug
-domainurl: https://help.syncfusion.com/grid-sdk
+domainurl: ##DomainURL##
 ---
 
-# Sorting in Vue Pivot Table Component
+# Sorting in Vue Pivot Table
 
 To have a quick glance on how to sort data in the Vue Pivot Table, watch this video:
 
@@ -48,14 +48,14 @@ The following example demonstrates how to configure the Pivot Table to enable me
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/default-cs227/app-composition.vue %}
+{% include code-snippet/pivot-grid/default-cs227/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/default-cs227/app.vue %}
+{% include code-snippet/pivot-grid/default-cs227/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/default-cs227" %}
+{% previewsample "page.domainurl/code-snippet/pivot-grid/default-cs227" %}
 
 ### Alphanumeric Sorting
 
@@ -65,14 +65,14 @@ When [`dataType`](https://ej2.syncfusion.com/vue/documentation/api/pivotview/iFi
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/alphanumeric_data-cs1/app-composition.vue %}
+{% include code-snippet/pivot-grid/alphanumeric_data-cs1/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/alphanumeric_data-cs1/app.vue %}
+{% include code-snippet/pivot-grid/alphanumeric_data-cs1/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/alphanumeric_data-cs1" %}
+{% previewsample "page.domainurl/code-snippet/pivot-grid/alphanumeric_data-cs1" %}
 
 ### Custom Sorting
 
@@ -86,14 +86,14 @@ To set up custom sorting, use the following properties:
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/default-cs228/app-composition.vue %}
+{% include code-snippet/pivot-grid/default-cs228/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/default-cs228/app.vue %}
+{% include code-snippet/pivot-grid/default-cs228/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/default-cs228" %}
+{% previewsample "page.domainurl/code-snippet/pivot-grid/default-cs228" %}
 
 ## Value Sorting
 
@@ -109,14 +109,14 @@ You can also configure value sorting programmatically using the [`valueSortSetti
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/default-cs229/app-composition.vue %}
+{% include code-snippet/pivot-grid/default-cs229/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/default-cs229/app.vue %}
+{% include code-snippet/pivot-grid/default-cs229/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/default-cs229" %}
+{% previewsample "page.domainurl/code-snippet/pivot-grid/default-cs229" %}
 
 ### Multiple Axis Sorting
 
@@ -132,14 +132,14 @@ Multiple axis sorting allows simultaneous sorting of value fields in both row an
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/default-cs276/app-composition.vue %}
+{% include code-snippet/pivot-grid/default-cs276/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/default-cs276/app.vue %}
+{% include code-snippet/pivot-grid/default-cs276/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/default-cs276" %}
+{% previewsample "page.domainurl/code-snippet/pivot-grid/default-cs276" %}
 
 ## Event
 
@@ -161,14 +161,14 @@ The example below demonstrates how to use the [`onHeadersSort`](https://ej2.sync
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/default-cs230/app-composition.vue %}
+{% include code-snippet/pivot-grid/default-cs230/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/default-cs230/app.vue %}
+{% include code-snippet/pivot-grid/default-cs230/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/default-cs230" %}
+{% previewsample "page.domainurl/code-snippet/pivot-grid/default-cs230" %}
 
 ### ActionBegin
 
@@ -191,14 +191,14 @@ In the sample below, the sort action is restricted by setting the **args.cancel*
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/default-cs231/app-composition.vue %}
+{% include code-snippet/pivot-grid/default-cs231/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/default-cs231/app.vue %}
+{% include code-snippet/pivot-grid/default-cs231/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/default-cs231" %}
+{% previewsample "page.domainurl/code-snippet/pivot-grid/default-cs231" %}
 
 ### ActionComplete
 
@@ -219,14 +219,14 @@ The event [`actionComplete`](https://ej2.syncfusion.com/vue/documentation/api/pi
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/default-cs232/app-composition.vue %}
+{% include code-snippet/pivot-grid/default-cs232/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/default-cs232/app.vue %}
+{% include code-snippet/pivot-grid/default-cs232/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/default-cs232" %}
+{% previewsample "page.domainurl/code-snippet/pivot-grid/default-cs232" %}
 
 ### ActionFailure
 
@@ -243,11 +243,11 @@ The [`actionFailure`](https://ej2.syncfusion.com/vue/documentation/api/pivotview
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/default-cs233/app-composition.vue %}
+{% include code-snippet/pivot-grid/default-cs233/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/default-cs233/app.vue %}
+{% include code-snippet/pivot-grid/default-cs233/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/default-cs233" %}
+{% previewsample "page.domainurl/code-snippet/pivot-grid/default-cs233" %}

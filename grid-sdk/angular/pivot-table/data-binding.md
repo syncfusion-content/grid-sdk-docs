@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Data binding in Angular Pivotview component | Syncfusion
-description: Learn here all about Data binding in Syncfusion Angular Pivotview component of Syncfusion Essential JS 2 and more.
-platform: grid-sdk
+title: Data Binding in Angular Pivot Table | Syncfusion
+description: Learn how the Angular Pivot Table binds to JSON, CSV, and remote data sources like OData via DataManager and REST endpoints.
+platform: ej2-angular
 control: Data binding 
 documentation: ug
-domainurl: https://help.syncfusion.com/grid-sdk
+domainurl: ##DomainURL##
 ---
-# Data binding in Angular Pivotview component
+# Data Binding in Angular Pivot Table
 
 To get start quickly with Data Binding, you can check on this video:
 
@@ -23,29 +23,29 @@ You can bind local JSON data to the Pivot Table by assigning a local variable co
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs21/src/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs21/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs21/src/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs21/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs21" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs21" %}
 
 You can also bind JSON data using the [`DataManager`](https://ej2.syncfusion.com/documentation/api/data/datamanager) with `JsonAdaptor`. In this approach, assign the [`DataManager`](https://ej2.syncfusion.com/documentation/api/data/datamanager) instance containing JSON data to the [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/datasourcesettings#datasource) property under [`dataSourceSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/datasourcesettings). Using [`DataManager`](https://ej2.syncfusion.com/documentation/api/data/datamanager) is optional for local JSON data binding.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs22/src/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs22/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs22/src/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs22/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs22" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs22" %}
 
 You can also load JSON data from a local *.json file using the file uploader option. After uploading the file, convert the resulting string to JSON data and assign it to the [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/datasourcesettings#datasource) property under [`dataSourceSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/datasourcesettings). The following code example demonstrates this approach.
 
@@ -97,15 +97,15 @@ To bind remote JSON data to the Pivot Table, set the endpoint [`URL`](https://ej
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs23/src/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs23/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs23/src/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs23/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs23" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs23" %}
 
 ## CSV
 
@@ -119,15 +119,15 @@ To bind local CSV data to the pivot table, convert the data into a string array 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs24/src/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs24/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs24/src/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs24/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs24" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs24" %}
 
 You can also connect CSV data from a local *.csv file to the pivot table using the file uploader option. After uploading the file, convert the resulting string to a string array and assign it to the [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/datasourcesettings#datasource) property under [`dataSourceSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/datasourcesettings). The following code example shows how to implement this:
 
@@ -181,15 +181,15 @@ To bind remote CSV data, set the [`URL`](https://ej2.syncfusion.com/angular/docu
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs25/src/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs25/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs25/src/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs25/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs25" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs25" %}
 
 ## Remote Data Binding
 
@@ -205,15 +205,15 @@ The following example demonstrates how to bind the Pivot Table to an OData servi
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs26/src/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs26/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs26/src/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs26/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs26" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs26" %}
 
 ### Binding with OData V4 services
 
@@ -221,15 +221,15 @@ OData V4 services provide enhanced query capabilities and improved performance f
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs27/src/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs27/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs27/src/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs27/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs27" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs27" %}
 
 ### Web API
 
@@ -237,15 +237,15 @@ Web API binding allows you to connect the Pivot Table directly to RESTful web se
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs28/src/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs28/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs28/src/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs28/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs28" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs28" %}
 
 ### Querying in Data Manager
 
@@ -255,15 +255,15 @@ The query can include operations such as filtering records based on specific con
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs29/src/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs29/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs29/src/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs29/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs29" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs29" %}
 
 ## Mapping
 
@@ -313,15 +313,15 @@ The following code sample demonstrates how to configure the visibility of field 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs30/src/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs30/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs30/src/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs30/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs30" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs30" %}
 
 ## Values in row axis
 
@@ -329,15 +329,15 @@ You can display value fields in the row axis of the Pivot Table to make your dat
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs31/src/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs31/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs31/src/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs31/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs31" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs31" %}
 
 ## Values at different positions
 
@@ -347,15 +347,15 @@ Positioning value fields at specific locations helps create more meaningful data
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs32/src/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs32/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs32/src/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs32/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs32" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs32" %}
 
 ## Show 'no data' items
 
@@ -365,15 +365,15 @@ In the following example, the "Country" and "State" field rows are displayed eve
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs33/src/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs33/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs33/src/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs33/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs33" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs33" %}
 
 ## Show value headers always
 
@@ -381,15 +381,15 @@ Ensure value headers remain visible in your Pivot Table at all times, providing 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs34/src/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs34/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs34/src/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs34/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs34" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs34" %}
 
 ## Customize empty value cells
 
@@ -397,15 +397,15 @@ Show custom text in cells that contain no data to make your Pivot Table more inf
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs35/src/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs35/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs35/src/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs35/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs35" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs35" %}
 
 ## Event
 
@@ -429,15 +429,15 @@ The load event provides the following parameters:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs36/src/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs36/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs36/src/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs36/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs36" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs36" %}
 
 ### EnginePopulated
 
@@ -453,15 +453,15 @@ Below is an example showing how the [`enginePopulated`](https://ej2.syncfusion.c
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs37/src/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs37/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs37/src/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs37/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs37" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs37" %}
 
 ### EnginePopulating
 
@@ -471,15 +471,15 @@ The [`enginePopulating`](https://ej2.syncfusion.com/angular/documentation/api/pi
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs38/src/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs38/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs38/src/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs38/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs38" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs38" %}
 
 ## See Also
 

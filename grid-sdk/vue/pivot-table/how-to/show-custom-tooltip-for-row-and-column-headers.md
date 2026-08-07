@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Show tooltip for row and column headers in Vue | Syncfusion
-description: Learn here all about Show tooltip for row and column headers in Syncfusion Vue Pivotview component of Syncfusion Essential JS 2 and more.
-platform: grid-sdk
+title: How to show custom tooltips for headers in Vue Pivot Table | Syncfusion
+description: Step-by-step example showing how to show custom tooltips for row and column headers in the Vue Pivot Table by initializing a Tooltip component in the dataBound event.
+platform: ej2-vue
 control: Show tooltip for row and column headers 
 documentation: ug
-domainurl: https://help.syncfusion.com/grid-sdk
+domainurl: ##DomainURL##
 ---
 
-# Show tooltip for row and column headers in Vue
+# How to show custom tooltips for headers in Vue Pivot Table
 
 You can display custom tooltips for row and column headers to provide additional context and information. This approach enhances the user experience by showing detailed field information when hovering over header cells in the pivot table.
 
@@ -20,11 +20,11 @@ For row header tooltips, the formatted text and field name of the current row he
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/default-cs263/app-composition.vue %}
+{% include code-snippet/pivot-grid/default-cs263/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/default-cs263/app.vue %}
+{% include code-snippet/pivot-grid/default-cs263/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/default-cs263" %}
+{% previewsample "page.domainurl/code-snippet/pivot-grid/default-cs263" %}

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Label filtering in React Pivotview component | Syncfusion
-description: Learn here all about Label filtering in Syncfusion React Pivotview component of Syncfusion Essential JS 2 and more.
-control: Label filtering 
-platform: grid-sdk
+title: Label filtering in React Pivot Table | Syncfusion
+description: Learn how the React Pivot Table applies label filtering on row and column members using text conditions such as equals, contains, and begins with.
+control: Pivot Table
+platform: ej2-react
 documentation: ug
-domainurl: https://help.syncfusion.com/grid-sdk
+domainurl: ##DomainURL##
 ---
 
-# Label filtering in React Pivotview component
+# Label filtering in React Pivot Table
 
 Label filtering allows you to view the pivot table with particular records of a field based on headers. Label filtering can be enabled by setting the `allowLabelFilter` property to **true**. The following are the three different types of available label filtering:
 
@@ -53,14 +53,14 @@ Operators that can be used in label filtering are:
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs178/app/App.jsx %}
+{% include code-snippet/pivot-table/default-cs178/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs178/app/App.tsx %}
+{% include code-snippet/pivot-table/default-cs178/app/App.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
- {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs178" %}
+ {% previewsample "page.domainurl/code-snippet/pivot-table/default-cs178" %}
 
 ## Date filtering through code
 
@@ -91,14 +91,14 @@ Operators that can be used in date filtering are:
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs179/app/App.jsx %}
+{% include code-snippet/pivot-table/default-cs179/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs179/app/App.tsx %}
+{% include code-snippet/pivot-table/default-cs179/app/App.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
- {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs179" %}
+ {% previewsample "page.domainurl/code-snippet/pivot-table/default-cs179" %}
 
 ## Number filtering through code
 
@@ -129,14 +129,14 @@ Operators that can be used in date filtering are:
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs180/app/App.jsx %}
+{% include code-snippet/pivot-table/default-cs180/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs180/app/App.tsx %}
+{% include code-snippet/pivot-table/default-cs180/app/App.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
- {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs180" %}
+ {% previewsample "page.domainurl/code-snippet/pivot-table/default-cs180" %}
 
 ## See Also
 

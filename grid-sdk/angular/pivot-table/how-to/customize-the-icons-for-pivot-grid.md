@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Customize pivot grid icons in Angular Pivotview | Syncfusion
-description: Learn here all about Customize the icons for pivot grid in Syncfusion Angular Pivotview component of Syncfusion Essential JS 2 and more.
-platform: grid-sdk
+title: How to Customize Pivot Table Icons in Angular Pivot Table | Syncfusion
+description: Step-by-step example showing how to customize pivot table icons in the Angular Pivot Table, with code snippets and property references.
+platform: ej2-angular
 control: Customize the icons for pivot grid 
 documentation: ug
-domainurl: https://help.syncfusion.com/grid-sdk
+domainurl: ##DomainURL##
 ---
 
-# Customize the icons for pivot grid in Angular Pivotview component
+# How to Customize Pivot Table Icons in Angular Pivot Table
 
 The Angular Pivot Table component supports the customization of various icons across its interface. This includes icons for the field list, expand/collapse actions, and other interactive elements. You can customize these icons by overriding the default CSS classes with custom Unicode values.
 
@@ -39,12 +39,12 @@ The following sample demonstrates a pivot table rendered with customized field l
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/icon-customization-cs1/src/app.component.ts %}
+{% include code-snippet/pivot-grid/icon-customization-cs1/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/icon-customization-cs1/src/main.ts %}
+{% include code-snippet/pivot-grid/icon-customization-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/icon-customization-cs1" %}
+{% previewsample "page.domainurl/samples/pivot-grid/icon-customization-cs1" %}

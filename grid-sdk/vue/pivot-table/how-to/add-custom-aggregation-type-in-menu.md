@@ -1,17 +1,17 @@
 ---
 layout: post
-title: Add custom aggregation type to the menu in Vue | Syncfusion
-description: Learn here all about how to add custom aggregation type to menu in Syncfusion Vue Pivot Table component of Syncfusion Essential JS 2 and more.
-platform: grid-sdk
+title: How to add a custom aggregation type in Vue Pivot Table | Syncfusion
+description: Step-by-step example showing how to add a custom aggregation type to the Vue Pivot Table menu via dataBound, with logic in aggregateCellInfo.
+platform: ej2-vue
 control: Add custom aggregation type to the menu 
-publishingplatform: grid-sdk
+publishingplatform: ##Platform_Name##
 documentation: ug
-domainurl: https://help.syncfusion.com/grid-sdk
+domainurl: ##DomainURL##
 ---
 
 <!-- markdownlint-disable MD009 -->
 
-# Add custom aggregation type to the menu in Vue Pivot Table component
+# How to add a custom aggregation type in Vue Pivot Table
 
 The Vue Pivot Table component allows you to extend its functionality by adding custom aggregation types to the built-in aggregation menu. This enables you to implement specific calculation methods beyond the standard options like Sum, Average, Min, and Max.
 
@@ -34,11 +34,11 @@ The calculation logic for these custom aggregation types is implemented using th
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/default-cs266/app-composition.vue %}
+{% include code-snippet/pivot-grid/default-cs266/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/default-cs266/app.vue %}
+{% include code-snippet/pivot-grid/default-cs266/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/default-cs266" %}
+{% previewsample "page.domainurl/code-snippet/pivot-grid/default-cs266" %}

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Grouping in React Pivot Table component | Syncfusion
-description: Learn here all about Grouping in Syncfusion React Pivot Table component of Syncfusion Essential JS 2 and more.
-platform: grid-sdk
-control: Grouping
+title: Grouping in React Pivot Table | Syncfusion
+description: Learn how the React Pivot Table groups date, number, and string fields into categories such as years, quarters, and value ranges for easier analysis.
+platform: ej2-react
+control: Pivot Table
 documentation: ug
-domainurl: https://help.syncfusion.com/grid-sdk
+domainurl: ##DomainURL##
 ---
 
-# Grouping in React Pivot Table component
+# Grouping in React Pivot Table
 
 > This feature is applicable only for the relational data source.
 
@@ -32,20 +32,20 @@ To have a quick glance on how to group row and column field items in the React P
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs146/app/App.jsx %}
+{% include code-snippet/pivot-table/default-cs146/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs146/app/App.tsx %}
+{% include code-snippet/pivot-table/default-cs146/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs146/app/datasource.jsx %}
+{% include code-snippet/pivot-table/default-cs146/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs146/app/datasource.tsx %}
+{% include code-snippet/pivot-table/default-cs146/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs146" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs146" %}
 
 ## Number Grouping
 
@@ -53,20 +53,20 @@ Number grouping allows users to organize numerical data into different ranges, s
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs147/app/App.jsx %}
+{% include code-snippet/pivot-table/default-cs147/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs147/app/App.tsx %}
+{% include code-snippet/pivot-table/default-cs147/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs147/app/datasource.jsx %}
+{% include code-snippet/pivot-table/default-cs147/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs147/app/datasource.tsx %}
+{% include code-snippet/pivot-table/default-cs147/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs147" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs147" %}
 
 ![Context-menu options for number grouping](images/number-group-option.png)
 
@@ -99,20 +99,20 @@ You can configure number grouping through code-behind using the [`groupSettings`
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs148/app/App.jsx %}
+{% include code-snippet/pivot-table/default-cs148/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs148/app/App.tsx %}
+{% include code-snippet/pivot-table/default-cs148/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs148/app/datasource.jsx %}
+{% include code-snippet/pivot-table/default-cs148/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs148/app/datasource.tsx %}
+{% include code-snippet/pivot-table/default-cs148/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs148" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs148" %}
 
 ![Applied grouping settings updated in Pivot Table for number grouping](images/number-group-updated.png)
 
@@ -128,20 +128,20 @@ Date grouping organizes date and time data into hierarchical segments, such as y
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs149/app/App.jsx %}
+{% include code-snippet/pivot-table/default-cs149/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs149/app/App.tsx %}
+{% include code-snippet/pivot-table/default-cs149/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs149/app/datasource.jsx %}
+{% include code-snippet/pivot-table/default-cs149/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs149/app/datasource.tsx %}
+{% include code-snippet/pivot-table/default-cs149/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs149" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs149" %}
 
 ![Context-menu options for date grouping](images/date-group-option.jpeg)
 
@@ -179,20 +179,20 @@ You can configure date grouping programmatically using the [`groupSettings`](htt
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs150/app/App.jsx %}
+{% include code-snippet/pivot-table/default-cs150/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs150/app/App.tsx %}
+{% include code-snippet/pivot-table/default-cs150/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs150/app/datasource.jsx %}
+{% include code-snippet/pivot-table/default-cs150/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs150/app/datasource.tsx %}
+{% include code-snippet/pivot-table/default-cs150/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs150" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs150" %}
 
 Furthermore, in the field list UI, these date group fields **Years (Date)**, **Quarters (Date)**, **Months (Date)**, etc... will be automatically grouped and displayed under the **Date** folder name.
 
@@ -210,20 +210,20 @@ Custom grouping is an option that enables users to group data types (date, time,
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs151/app/App.jsx %}
+{% include code-snippet/pivot-table/default-cs151/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs151/app/App.tsx %}
+{% include code-snippet/pivot-table/default-cs151/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs151/app/datasource.jsx %}
+{% include code-snippet/pivot-table/default-cs151/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs151/app/datasource.tsx %}
+{% include code-snippet/pivot-table/default-cs151/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs151" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs151" %}
 
 ### Creating a Custom Group
 
@@ -277,20 +277,20 @@ Here’s an example of configuring custom grouping programmatically:
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs152/app/App.jsx %}
+{% include code-snippet/pivot-table/default-cs152/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs152/app/App.tsx %}
+{% include code-snippet/pivot-table/default-cs152/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs152/app/datasource.jsx %}
+{% include code-snippet/pivot-table/default-cs152/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs152/app/datasource.tsx %}
+{% include code-snippet/pivot-table/default-cs152/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs152" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs152" %}
 
 ![Applied grouping settings updated in Pivot Table for custom grouping](images/custom-group-updated.png)
 

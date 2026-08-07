@@ -1,17 +1,17 @@
 ---
 layout: post
-title: Complex JSON to flat JSON in Vue | Syncfusion
-description: Learn here all about how to convert complex JSON to flat JSON and assign it to the pivot table in Syncfusion Vue of Syncfusion Essential JS 2 and more.
-platform: grid-sdk
+title: How to bind complex data in Vue Pivot Table | Syncfusion
+description: Step-by-step example showing how to bind complex nested JSON to the Vue Pivot Table by converting it to flat JSON in the load event.
+platform: ej2-vue
 control: Convert complex JSON to flat JSON and assign it to the pivot table 
-publishingplatform: grid-sdk
+publishingplatform: ##Platform_Name##
 documentation: ug
-domainurl: https://help.syncfusion.com/grid-sdk
+domainurl: ##DomainURL##
 ---
 
 <!-- markdownlint-disable MD009 -->
 
-# Complex JSON to flat JSON in Vue Pivot Table component
+# How to bind complex data in Vue Pivot Table
 
 ## Overview
 
@@ -69,11 +69,11 @@ In the following example, the **complexToFlatJson()** method is used to convert 
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/default-cs268/app-composition.vue %}
+{% include code-snippet/pivot-grid/default-cs268/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/default-cs268/app.vue %}
+{% include code-snippet/pivot-grid/default-cs268/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/default-cs268" %}
+{% previewsample "page.domainurl/code-snippet/pivot-grid/default-cs268" %}

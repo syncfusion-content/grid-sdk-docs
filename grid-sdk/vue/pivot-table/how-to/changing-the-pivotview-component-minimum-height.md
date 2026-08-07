@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Changing the pivotview component minimum height in Vue | Syncfusion
-description: Learn here all about Changing the pivotview component minimum height in Syncfusion Vue Pivotview component of Syncfusion Essential JS 2 and more.
+title: How to change the minimum height in Vue Pivot Table | Syncfusion
+description: Step-by-step example showing how to set the Vue Pivot Table's minHeight property to control the minimum component height, default 300px, for responsive layouts.
 control: Changing the pivotview component minimum height 
-platform: grid-sdk
+platform: ej2-vue
 documentation: ug
-domainurl: https://help.syncfusion.com/grid-sdk
+domainurl: ##DomainURL##
 ---
 
-# Changing the Pivot Table component minimum height in Vue
+# How to change the minimum height in Vue Pivot Table
 
 The `minHeight` property allows you to set the minimum height for the Vue Pivot Table component. By default, the component maintains a minimum height of **300px**. This property ensures the component remains visible and functional even when the container height is smaller than the specified minimum value.
 
@@ -16,11 +16,11 @@ When the content exceeds the minimum height, the component automatically adjusts
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/default-cs132/app-composition.vue %}
+{% include code-snippet/pivot-grid/default-cs132/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/default-cs132/app.vue %}
+{% include code-snippet/pivot-grid/default-cs132/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/default-cs132" %}
+{% previewsample "page.domainurl/code-snippet/pivot-grid/default-cs132" %}

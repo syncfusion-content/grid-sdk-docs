@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Paging in Vue Pivot Table component | Syncfusion
-description: Learn here all about Paging in Syncfusion Vue Pivot Table component of Syncfusion Essential JS 2 and more.
+title: Paging in Vue Pivot Table | Syncfusion
+description: Learn how the Vue Pivot Table splits large data into row and column pages via enablePaging, customizes page sizes, and renders a built-in pager UI for navigation.
 control: Paging 
-platform: grid-sdk
+platform: ej2-vue
 documentation: ug
-domainurl: https://help.syncfusion.com/grid-sdk
+domainurl: ##DomainURL##
 ---
 
-# Paging in Vue Pivot Table component
+# Paging in Vue Pivot Table
 
 The paging feature in the Pivot Table component is designed to handle large datasets efficiently by dividing the data into manageable pages. This prevents performance issues associated with rendering large amounts of data at once, allowing users to navigate through rows and columns page by page.
 
@@ -31,14 +31,14 @@ You can also change the position, visibility, compact view, and template of the 
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/common-cs25/app-composition.vue %}
+{% include code-snippet/pivot-grid/common-cs25/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/common-cs25/app.vue %}
+{% include code-snippet/pivot-grid/common-cs25/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/common-cs25" %}
+{% previewsample "page.domainurl/code-snippet/pivot-grid/common-cs25" %}
 
 ### Show pager UI at top or bottom
 
@@ -48,14 +48,14 @@ The following code demonstrates how to configure the pager UI to appear at the t
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/common-cs26/app-composition.vue %}
+{% include code-snippet/pivot-grid/common-cs26/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/common-cs26/app.vue %}
+{% include code-snippet/pivot-grid/common-cs26/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/common-cs26" %}
+{% previewsample "page.domainurl/code-snippet/pivot-grid/common-cs26" %}
 
 ### Inverse pager
 
@@ -63,14 +63,14 @@ The Pivot Table allows you to toggle the positions of the row and column pagers 
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/common-cs27/app-composition.vue %}
+{% include code-snippet/pivot-grid/common-cs27/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/common-cs27/app.vue %}
+{% include code-snippet/pivot-grid/common-cs27/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/common-cs27" %}
+{% previewsample "page.domainurl/code-snippet/pivot-grid/common-cs27" %}
 
 ### Compact view
 
@@ -78,14 +78,14 @@ The Pivot Table provides a compact view for the pager UI, displaying only the pr
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/common-cs28/app-composition.vue %}
+{% include code-snippet/pivot-grid/common-cs28/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/common-cs28/app.vue %}
+{% include code-snippet/pivot-grid/common-cs28/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/common-cs28" %}
+{% previewsample "page.domainurl/code-snippet/pivot-grid/common-cs28" %}
 
 ### Show or hide paging option
 
@@ -95,14 +95,14 @@ The following code demonstrates how to hide the row pager by setting the [`showR
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/common-cs29/app-composition.vue %}
+{% include code-snippet/pivot-grid/common-cs29/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/common-cs29/app.vue %}
+{% include code-snippet/pivot-grid/common-cs29/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/common-cs29" %}
+{% previewsample "page.domainurl/code-snippet/pivot-grid/common-cs29" %}
 
 ### Show or hide page size
 
@@ -110,14 +110,14 @@ The Pivot Table allows you to control the visibility of the "Rows per page" and 
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/common-cs30/app-composition.vue %}
+{% include code-snippet/pivot-grid/common-cs30/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/common-cs30/app.vue %}
+{% include code-snippet/pivot-grid/common-cs30/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/common-cs30" %}
+{% previewsample "page.domainurl/code-snippet/pivot-grid/common-cs30" %}
 
 ### Customize page size
 
@@ -127,14 +127,14 @@ The following example sets the "Rows per page" dropdown with page sizes of 10, 2
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/common-cs31/app-composition.vue %}
+{% include code-snippet/pivot-grid/common-cs31/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/common-cs31/app.vue %}
+{% include code-snippet/pivot-grid/common-cs31/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/common-cs31" %}
+{% previewsample "page.domainurl/code-snippet/pivot-grid/common-cs31" %}
 
 ### Template
 
@@ -144,11 +144,11 @@ This following example shows how to create a custom template for both row and co
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/common-cs32/app-composition.vue %}
+{% include code-snippet/pivot-grid/common-cs32/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/common-cs32/app.vue %}
+{% include code-snippet/pivot-grid/common-cs32/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/common-cs32" %}
+{% previewsample "page.domainurl/code-snippet/pivot-grid/common-cs32" %}

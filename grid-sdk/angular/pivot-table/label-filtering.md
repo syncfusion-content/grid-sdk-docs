@@ -2,10 +2,10 @@
 layout: post
 title: Label filtering in Angular Pivotview component | Syncfusion
 description: Learn here all about Label filtering in Syncfusion Angular Pivotview component of Syncfusion Essential JS 2 and more.
-platform: grid-sdk
+platform: ej2-angular
 control: Label filtering 
 documentation: ug
-domainurl: https://help.syncfusion.com/grid-sdk
+domainurl: ##DomainURL##
 ---
 
 # Label filtering in Angular Pivotview component
@@ -53,15 +53,15 @@ Operators that can be used in label filtering are:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs180/src/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs180/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs180/src/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs180/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs180" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs180" %}
 
 ## Date filtering through code
 
@@ -92,15 +92,15 @@ Operators that can be used in date filtering are:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs181/src/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs181/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs181/src/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs181/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs181" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs181" %}
 
 ## Number filtering through code
 
@@ -131,15 +131,15 @@ Operators that can be used in date filtering are:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs182/src/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs182/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs182/src/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs182/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs182" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs182" %}
 
 ## See Also
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Print in Vue Pivot Table component | Syncfusion
-description: Learn here all about Print in Syncfusion Vue Pivot Table component of Syncfusion Essential JS 2 and more.
-platform: grid-sdk
+title: Print in Vue Pivot Table | Syncfusion
+description: Learn how the Vue Pivot Table prints the current pivot table or pivot chart with applied filters, sorting, and formatting using the underlying Grid print method.
+platform: ej2-vue
 control: Print 
 documentation: ug
-domainurl: https://help.syncfusion.com/grid-sdk
+domainurl: ##DomainURL##
 ---
 
-# Print in Vue Pivot Table component
+# Print in Vue Pivot Table
 
 The Vue Pivot Table component supports print functionality, allowing users to print the current state of the pivot table or pivot chart. This feature enables users to generate hard copies of pivot table reports for convenient review and data sharing.
 
@@ -18,14 +18,14 @@ The rendered pivot table can be printed by invoking the [print](https://ej2.sync
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/default-cs270/app-composition.vue %}
+{% include code-snippet/pivot-grid/default-cs270/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/default-cs270/app.vue %}
+{% include code-snippet/pivot-grid/default-cs270/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/default-cs270" %}
+{% previewsample "page.domainurl/code-snippet/pivot-grid/default-cs270" %}
 
 ## Print pivot chart
 
@@ -39,14 +39,14 @@ The sample code below illustrates how to print the pivot chart through an extern
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/default-cs271/app-composition.vue %}
+{% include code-snippet/pivot-grid/default-cs271/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/default-cs271/app.vue %}
+{% include code-snippet/pivot-grid/default-cs271/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/default-cs271" %}
+{% previewsample "page.domainurl/code-snippet/pivot-grid/default-cs271" %}
 
 ## See Also
 

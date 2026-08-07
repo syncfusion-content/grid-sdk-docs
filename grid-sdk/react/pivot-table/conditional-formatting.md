@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Conditional formatting in React Pivotview component | Syncfusion
-description: Learn here all about Conditional formatting in Syncfusion React Pivotview component of Syncfusion Essential JS 2 and more.
-control: Conditional formatting 
-platform: grid-sdk
+title: Conditional formatting in React Pivot Table | Syncfusion
+description: Learn how the React Pivot Table highlights value cells by applying conditional formatting with custom background color, font, and rules.
+control: Pivot Table
+platform: ej2-react
 documentation: ug
-domainurl: https://help.syncfusion.com/grid-sdk
+domainurl: ##DomainURL##
 ---
 
-# Conditional formatting in React Pivot Table component
+# Conditional formatting in React Pivot Table
 
 The conditional formatting feature enables users to customize the appearance of Pivot Table value cells by modifying background color, font color, font family, and font size based on specific conditions. This powerful visualization feature helps highlight important value cells and makes them stand out in the Pivot Table.
 
@@ -22,20 +22,20 @@ To learn how to work with conditional formatting options, you can check out this
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs16/app/App.jsx %}
+{% include code-snippet/pivot-table/default-cs16/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs16/app/App.tsx %}
+{% include code-snippet/pivot-table/default-cs16/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs16/app/datasource.jsx %}
+{% include code-snippet/pivot-table/default-cs16/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs16/app/datasource.tsx %}
+{% include code-snippet/pivot-table/default-cs16/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs16" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs16" %}
 
 ## Configure conditional formatting through code-behind
 
@@ -61,20 +61,20 @@ Users can also access the conditional formatting dialog through external UI elem
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs17/app/App.jsx %}
+{% include code-snippet/pivot-table/default-cs17/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs17/app/App.tsx %}
+{% include code-snippet/pivot-table/default-cs17/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs17/app/datasource.jsx %}
+{% include code-snippet/pivot-table/default-cs17/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs17/app/datasource.tsx %}
+{% include code-snippet/pivot-table/default-cs17/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs17" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs17" %}
 
 ## Conditional formatting for all fields
 
@@ -84,20 +84,20 @@ To format all value fields together, use the [conditionalFormatSettings](https:/
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs18/app/App.jsx %}
+{% include code-snippet/pivot-table/default-cs18/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs18/app/App.tsx %}
+{% include code-snippet/pivot-table/default-cs18/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs18/app/datasource.jsx %}
+{% include code-snippet/pivot-table/default-cs18/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs18/app/datasource.tsx %}
+{% include code-snippet/pivot-table/default-cs18/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs18" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs18" %}
 
 ## Conditional formatting for specific value field
 
@@ -105,20 +105,20 @@ To apply conditional formatting exclusively to a particular value field, set the
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs19/app/App.jsx %}
+{% include code-snippet/pivot-table/default-cs19/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs19/app/App.tsx %}
+{% include code-snippet/pivot-table/default-cs19/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs19/app/datasource.jsx %}
+{% include code-snippet/pivot-table/default-cs19/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs19/app/datasource.tsx %}
+{% include code-snippet/pivot-table/default-cs19/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs19" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs19" %}
 
 ## Editing and removing existing conditional format
 
@@ -142,20 +142,20 @@ The [conditionalFormatting](https://ej2.syncfusion.com/react/documentation/api/p
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs20/app/App.jsx %}
+{% include code-snippet/pivot-table/default-cs20/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs20/app/App.tsx %}
+{% include code-snippet/pivot-table/default-cs20/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs20/app/datasource.jsx %}
+{% include code-snippet/pivot-table/default-cs20/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs20/app/datasource.tsx %}
+{% include code-snippet/pivot-table/default-cs20/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs20" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs20" %}
 
 ## See Also
 

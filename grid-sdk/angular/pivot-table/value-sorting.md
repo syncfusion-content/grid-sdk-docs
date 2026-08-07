@@ -2,10 +2,10 @@
 layout: post
 title: Value sorting in Angular Pivotview component | Syncfusion
 description: Learn here all about Value sorting in Syncfusion Angular Pivotview component of Syncfusion Essential JS 2 and more.
-platform: grid-sdk
+platform: ej2-angular
 control: Value sorting 
 documentation: ug
-domainurl: https://help.syncfusion.com/grid-sdk
+domainurl: ##DomainURL##
 ---
 
 # Value sorting in Angular Pivotview component
@@ -19,15 +19,15 @@ Value sorting can be configured using the `valueSortSettings` option through cod
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs299/src/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs299/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs299/src/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs299/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs299" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs299" %}
 
 ## See Also
 

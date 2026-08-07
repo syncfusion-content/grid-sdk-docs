@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Add custom aggregation type in Angular Pivotview | Syncfusion
-description: Learn here all about how to add custom aggregation type to the menu in Syncfusion Angular Pivotview component of Syncfusion Essential JS 2 and more.
-platform: grid-sdk
+title: How to Add a Custom Aggregation in Angular Pivot Table | Syncfusion
+description: Step-by-step example showing how to add a custom aggregation type to the menu in the Angular Pivot Table, with code snippets and property references.
+platform: ej2-angular
 control: Add custom aggregation type to the menu 
 documentation: ug
-domainurl: https://help.syncfusion.com/grid-sdk
+domainurl: ##DomainURL##
 ---
 
 <!-- markdownlint-disable MD009 -->
 
-# Add custom aggregation type to the menu in Angular Pivotview component
+# How to Add a Custom Aggregation in Angular Pivot Table
 
 The Angular Pivotview component allows you to extend its functionality by adding custom aggregation types to the built-in aggregation menu. This feature enables you to implement specific calculation methods beyond the standard options like Sum, Average, Min, and Max.
 
@@ -33,12 +33,12 @@ The calculation logic for these custom aggregation types is implemented using th
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs315/src/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs315/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs315/src/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs315/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs315" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs315" %}

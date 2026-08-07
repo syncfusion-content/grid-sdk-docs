@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Value filtering in Vue Pivot Table component | Syncfusion
-description: Learn here all about Value filtering in Syncfusion Vue Pivot Table component of Syncfusion Essential JS 2 and more.
+title: Value Filtering in Vue Pivot Table | Syncfusion
+description: Learn how the Vue Pivot Table applies value filtering on aggregated measures via the allowValueFilter property and filterSettings, with operator-based UI dialogs and code configuration.
 control: Value filtering 
-platform: grid-sdk
+platform: ej2-vue
 documentation: ug
-domainurl: https://help.syncfusion.com/grid-sdk
+domainurl: ##DomainURL##
 ---
 
-# Value filtering in Vue Pivot Table component
+# Value Filtering in Vue Pivot Table
 
 Value filtering allows you to perform filtering operation to be performed based on the aggregate values. For example, to show the data where the total sum of units sold for each country exceeds 2000, apply a value filter **2000** with filter operator **GreaterThan** on the country field.
 
@@ -44,14 +44,14 @@ Operators that can be used in label filtering are:
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/default-cs258/app-composition.vue %}
+{% include code-snippet/pivot-grid/default-cs258/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/default-cs258/app.vue %}
+{% include code-snippet/pivot-grid/default-cs258/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/default-cs258" %}
+{% previewsample "page.domainurl/code-snippet/pivot-grid/default-cs258" %}
 
 ## See Also
 

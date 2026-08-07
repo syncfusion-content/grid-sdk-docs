@@ -2,10 +2,10 @@
 layout: post
 title: Value filtering in Angular Pivotview component | Syncfusion
 description: Learn here all about Value filtering in Syncfusion Angular Pivotview component of Syncfusion Essential JS 2 and more.
-platform: grid-sdk
+platform: ej2-angular
 control: Value filtering 
 documentation: ug
-domainurl: https://help.syncfusion.com/grid-sdk
+domainurl: ##DomainURL##
 ---
 
 # Value filtering in Angular Pivotview component
@@ -44,15 +44,15 @@ Operators that can be used in label filtering are:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs298/src/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs298/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs298/src/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs298/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs298" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs298" %}
 
 ## See Also
 

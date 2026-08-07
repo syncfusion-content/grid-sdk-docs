@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Apply custom style to pivot cells in Vue  | Syncfusion
-description: Learn here all about Apply custom style to pivot cells in Syncfusion Vue Pivot Table component of Syncfusion Essential JS 2 and more.
-platform: grid-sdk
+title: How to apply custom styles to pivot cells in Vue Pivot | Syncfusion
+description: Step-by-step example showing how to apply custom styles to pivot cells in the Vue Pivot Table via the queryCellInfo and headerCellInfo events in gridSettings.
+platform: ej2-vue
 control: Apply custom style to pivot cells 
 documentation: ug
-domainurl: https://help.syncfusion.com/grid-sdk
+domainurl: ##DomainURL##
 ---
 
-# Apply custom style to pivot cells in Vue Pivot Table component
+# How to apply custom styles to pivot cells in Vue Pivot
 
 The Vue Pivot Table component allows you to alter the appearance of pivot cells using event handlers. This guide demonstrates how to apply custom styling to specific cells in your pivot table.
 
@@ -29,13 +29,13 @@ The following example shows how to apply styles to:
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/default-cs262/app-composition.vue %}
+{% include code-snippet/pivot-grid/default-cs262/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/default-cs262/app.vue %}
+{% include code-snippet/pivot-grid/default-cs262/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/default-cs262" %}
+{% previewsample "page.domainurl/code-snippet/pivot-grid/default-cs262" %}
 
 N> The **dot(.)** character in **FY 2016.Sold Amount** is used by default to identify the header levels in the pivot table's row and column. It can be changed by setting the [`headerDelimiter`](https://ej2.syncfusion.com/vue/documentation/api/pivotview/iValueSortSettings#headerdelimiter) in the [`valueSortSettings`](https://ej2.syncfusion.com/vue/documentation/api/pivotview/iValueSortSettings) property to any other delimiter instead of the default separator.

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Drill down in React Pivot Table component | Syncfusion
-description: Learn here all about Drill down in Syncfusion React Pivot Table component of Syncfusion Essential JS 2 and more.
-control: Drill down
-platform: grid-sdk
+title: Drill down in React Pivot Table | Syncfusion
+description: Learn how the React Pivot Table expands and collapses row and column members for hierarchical data exploration using built-in drill down and drill up.
+control: Pivot Table
+platform: ej2-react
 documentation: ug
-domainurl: https://help.syncfusion.com/grid-sdk
+domainurl: ##DomainURL##
 ---
 
-# Drill down in React Pivot Table component
+# Drill down in React Pivot Table
 
 ## Drill down and drill up
 
@@ -26,20 +26,20 @@ The drill-down and drill-up features allow you to expand or collapse data for a 
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs330/app/App.jsx %}
+{% include code-snippet/pivot-table/default-cs330/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs330/app/App.tsx %}
+{% include code-snippet/pivot-table/default-cs330/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs330/app/datasource.jsx %}
+{% include code-snippet/pivot-table/default-cs330/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs330/app/datasource.tsx %}
+{% include code-snippet/pivot-table/default-cs330/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs330" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs330" %}
 
 ## Expand All
 
@@ -49,20 +49,20 @@ The Pivot Table component allows users to interactively expand or collapse all f
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs43/app/App.jsx %}
+{% include code-snippet/pivot-table/default-cs43/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs43/app/App.tsx %}
+{% include code-snippet/pivot-table/default-cs43/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs43/app/datasource.jsx %}
+{% include code-snippet/pivot-table/default-cs43/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs43/app/datasource.tsx %}
+{% include code-snippet/pivot-table/default-cs43/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs43" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs43" %}
 
 ## Expand all headers for specific fields
 
@@ -74,20 +74,20 @@ The following code demonstrates how to configure a Pivot Table with the [`expand
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs44/app/App.jsx %}
+{% include code-snippet/pivot-table/default-cs44/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs44/app/App.tsx %}
+{% include code-snippet/pivot-table/default-cs44/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs44/app/datasource.jsx %}
+{% include code-snippet/pivot-table/default-cs44/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs44/app/datasource.tsx %}
+{% include code-snippet/pivot-table/default-cs44/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs44" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs44" %}
 
 ## Expand all except specific member(s)
 
@@ -102,20 +102,20 @@ The following example demonstrates how to configure a Pivot Table where all head
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs45/app/App.jsx %}
+{% include code-snippet/pivot-table/default-cs45/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs45/app/App.tsx %}
+{% include code-snippet/pivot-table/default-cs45/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs45/app/datasource.jsx %}
+{% include code-snippet/pivot-table/default-cs45/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs45/app/datasource.tsx %}
+{% include code-snippet/pivot-table/default-cs45/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs45" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs45" %}
 
 ## Expand or Collapse Specific Members
 
@@ -129,20 +129,20 @@ The following code demonstrates how to configure the Pivot Table to expand speci
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs46/app/App.jsx %}
+{% include code-snippet/pivot-table/default-cs46/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs46/app/App.tsx %}
+{% include code-snippet/pivot-table/default-cs46/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs46/app/datasource.jsx %}
+{% include code-snippet/pivot-table/default-cs46/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs46/app/datasource.tsx %}
+{% include code-snippet/pivot-table/default-cs46/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs46" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs46" %}
 
 ## Event
 
@@ -156,20 +156,20 @@ The [`drill`](https://ej2.syncfusion.com/react/documentation/api/pivotview/index
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs47/app/App.jsx %}
+{% include code-snippet/pivot-table/default-cs47/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs47/app/App.tsx %}
+{% include code-snippet/pivot-table/default-cs47/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs47/app/datasource.jsx %}
+{% include code-snippet/pivot-table/default-cs47/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs47/app/datasource.tsx %}
+{% include code-snippet/pivot-table/default-cs47/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs47" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs47" %}
 
 ### ActionBegin
 
@@ -189,20 +189,20 @@ In the below sample, drill down and drill up action can be restricted by setting
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs48/app/App.jsx %}
+{% include code-snippet/pivot-table/default-cs48/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs48/app/App.tsx %}
+{% include code-snippet/pivot-table/default-cs48/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs48/app/datasource.jsx %}
+{% include code-snippet/pivot-table/default-cs48/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs48/app/datasource.tsx %}
+{% include code-snippet/pivot-table/default-cs48/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs48" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs48" %}
 
 ### ActionComplete
 
@@ -221,20 +221,20 @@ The event [`actionComplete`](https://ej2.syncfusion.com/react/documentation/api/
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs49/app/App.jsx %}
+{% include code-snippet/pivot-table/default-cs49/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs49/app/App.tsx %}
+{% include code-snippet/pivot-table/default-cs49/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs49/app/datasource.jsx %}
+{% include code-snippet/pivot-table/default-cs49/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs49/app/datasource.tsx %}
+{% include code-snippet/pivot-table/default-cs49/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs49" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs49" %}
 
 ### ActionFailure
 
@@ -251,17 +251,17 @@ The [`actionFailure`](https://ej2.syncfusion.com/react/documentation/api/pivotvi
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs50/app/App.jsx %}
+{% include code-snippet/pivot-table/default-cs50/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs50/app/App.tsx %}
+{% include code-snippet/pivot-table/default-cs50/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs50/app/datasource.jsx %}
+{% include code-snippet/pivot-table/default-cs50/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs50/app/datasource.tsx %}
+{% include code-snippet/pivot-table/default-cs50/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs50" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs50" %}

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Getting started with React Pivotview component | Syncfusion
-description:  Checkout and learn about Getting started with React Pivotview component of Syncfusion Essential JS 2 and more details.
-control: Getting started 
-platform: grid-sdk
+title: Getting Started with React Pivot Table | Syncfusion
+description: Learn how to get started with the React Pivot Table. Explore setup, features, examples, and customization options.
+control: Pivot Table
+platform: ej2-react
 documentation: ug
-domainurl: https://help.syncfusion.com/grid-sdk
+domainurl: ##DomainURL##
 ---
 
-# Getting started in React PivotView component
+# Getting Started with React Pivot Table
 
 This section guides you through the steps to create a simple [Pivot Table](https://www.syncfusion.com/react-components/react-pivot-table) using the Syncfusion `PivotView` component in a React application. It demonstrates how to set up and use the component to display and analyze data effectively.
 
@@ -87,10 +87,10 @@ The Pivot Table code should be placed in the **src/App.tsx** file (or **src/App.
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/getting-started-cs1/app/App.jsx %}
+{% include code-snippet/pivot-table/getting-started-cs1/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/getting-started-cs1/app/App.tsx %}
+{% include code-snippet/pivot-table/getting-started-cs1/app/App.tsx %}
 {% endhighlight %}
 {% endtabs %}
 

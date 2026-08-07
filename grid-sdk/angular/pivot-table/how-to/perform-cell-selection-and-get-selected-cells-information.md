@@ -2,10 +2,10 @@
 layout: post
 title: Select Cells & Get Info in Angular Pivot Table | Syncfusion
 description: Select and retrieve data from cells in the Syncfusion EJ2 Angular Pivot Table. Learn to manage user interaction and data extraction.
-platform: grid-sdk
+platform: ej2-angular
 control: Perform cell selection and get selected cells information 
 documentation: ug
-domainurl: https://help.syncfusion.com/grid-sdk
+domainurl: ##DomainURL##
 ---
 
 # Cell Selection and Getting Cell Information
@@ -35,12 +35,12 @@ The event `cellSelected` fires on every cell/row/column on selected/deselected o
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs168/src/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs168/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs168/src/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs168/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs168" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs168" %}

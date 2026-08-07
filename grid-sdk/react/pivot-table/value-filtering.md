@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Value filtering in React Pivotview component | Syncfusion
-description: Learn here all about Value filtering in Syncfusion React Pivotview component of Syncfusion Essential JS 2 and more.
-control: Value filtering 
-platform: grid-sdk
+title: Value filtering in React Pivot Table | Syncfusion
+description: Learn how the React Pivot Table applies value filtering on row and column members using numeric conditions such as greater than, less than, or between.
+control: Pivot Table
+platform: ej2-react
 documentation: ug
-domainurl: https://help.syncfusion.com/grid-sdk
+domainurl: ##DomainURL##
 ---
 
-# Value filtering in React Pivotview component
+# Value filtering in React Pivot Table
 
 Value filtering allows you to perform filtering operation to be performed based on the aggregate values. For example, to show the data where the total sum of units sold for each country exceeds 2000, apply a value filter **2000** with filter operator **GreaterThan** on the country field.
 
@@ -44,14 +44,14 @@ Operators that can be used in label filtering are:
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs306/app/App.jsx %}
+{% include code-snippet/pivot-table/default-cs306/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs306/app/App.tsx %}
+{% include code-snippet/pivot-table/default-cs306/app/App.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
- {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs306" %}
+ {% previewsample "page.domainurl/code-snippet/pivot-table/default-cs306" %}
 
 ## See Also
 

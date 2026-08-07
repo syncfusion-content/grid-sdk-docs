@@ -1,14 +1,14 @@
 ---
 layout: post
-title: OLAP in Angular Pivot Table component | Syncfusion
-description: Learn here all about Olap in Syncfusion Angular Pivot Table component of Syncfusion Essential JS 2 and more.
-platform: grid-sdk
+title: OLAP in Angular Pivot Table | Syncfusion
+description: Learn how the Angular Pivot Table connects to OLAP cube sources like SSAS with providerType, catalog, cube, and axes configuration.
+platform: ej2-angular
 control: Olap 
 documentation: ug
-domainurl: https://help.syncfusion.com/grid-sdk
+domainurl: ##DomainURL##
 ---
 
-# OLAP in Angular Pivot Table component
+# OLAP in Angular Pivot Table
 
 ## Getting started
 
@@ -223,15 +223,15 @@ For example, in the sample below, the element "Product Categories" is assigned t
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs189/src/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs189/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs189/src/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs189/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs189" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs189" %}
 
 ### Applying formatting to a value field
 
@@ -243,15 +243,15 @@ In the following example, the [`formatSettings`](https://ej2.syncfusion.com/angu
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs190/src/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs190/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs190/src/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs190/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs190" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs190" %}
 
 ### Enable grouping bar
 
@@ -263,15 +263,15 @@ To display the grouping bar, set the [`showGroupingBar`](https://ej2.syncfusion.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs191/src/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs191/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs191/src/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs191/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs191" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs191" %}
 
 ### Enable pivot field list
 
@@ -283,15 +283,15 @@ To display the Field List, set the [`showFieldList`](https://ej2.syncfusion.com/
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs192/src/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs192/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs192/src/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs192/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs192" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs192" %}
 
 ### Exploring filter axis
 
@@ -301,15 +301,15 @@ Users can add [OLAP cube elements](#olap-cube-elements) and filter members to th
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs193/src/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs193/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs193/src/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs193/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs193" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs193" %}
 
 ### Calculated field
 
@@ -335,15 +335,15 @@ You can also add calculated fields at runtime through the built-in dialog. To en
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs194/src/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs194/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs194/src/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs194/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs194" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs194" %}
 
 Users can add a calculated field at runtime using the built-in dialog by following these steps:
 
@@ -483,15 +483,15 @@ To enable virtual scrolling, set the [`enableVirtualization`](https://ej2.syncfu
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs195/src/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs195/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs195/src/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs195/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs195" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs195" %}
 
 #### Limitations for virtual scrolling
 
@@ -512,15 +512,15 @@ ng serve --open
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs196/src/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs196/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs196/src/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs196/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs196" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs196" %}
 
 ## Data Binding
 
@@ -537,15 +537,15 @@ Below are sample code files showing how to bind an OLAP data source in Angular:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs197/src/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs197/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs197/src/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs197/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs197" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs197" %}
 
 ### Fields
 
@@ -557,15 +557,15 @@ Alternatively, you can set up the measure directly in your code by configuring t
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs198/src/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs198/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs198/src/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs198/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs198" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs198" %}
 
 #### Measures in different positions
 
@@ -573,15 +573,15 @@ You can choose where to place measures on either the row or column axis thorough
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs199/src/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs199/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs199/src/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs199/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs199" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs199" %}
 
 ### Named set
 
@@ -591,15 +591,15 @@ To display a named set in the Pivot Table, set its unique name using the [`name`
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs200/src/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs200/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs200/src/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs200/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs200" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs200" %}
 
 ### Configuring authentication
 
@@ -802,15 +802,15 @@ When the [`beforeServiceInvoke`](https://ej2.syncfusion.com/angular/documentatio
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/olap-beforeServiceInvoke/src/app.component.ts %}
+{% include code-snippet/pivot-grid/olap-beforeServiceInvoke/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/olap-beforeServiceInvoke/src/main.ts %}
+{% include code-snippet/pivot-grid/olap-beforeServiceInvoke/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/olap-beforeServiceInvoke" %}
+{% previewsample "page.domainurl/samples/pivot-grid/olap-beforeServiceInvoke" %}
 
 ### AfterServiceInvoke
 
@@ -823,12 +823,12 @@ When the [`afterServiceInvoke`](https://ej2.syncfusion.com/angular/documentation
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/olap-afterServiceInvoke/src/app.component.ts %}
+{% include code-snippet/pivot-grid/olap-afterServiceInvoke/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/olap-afterServiceInvoke/src/main.ts %}
+{% include code-snippet/pivot-grid/olap-afterServiceInvoke/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/olap-afterServiceInvoke" %}
+{% previewsample "page.domainurl/samples/pivot-grid/olap-afterServiceInvoke" %}

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: OLAP in React Pivot Table component | Syncfusion
-description: Learn here all about OLAP in Syncfusion React Pivot Table component of Syncfusion Essential JS 2 and more.
-control: OLAP 
-platform: grid-sdk
+title: OLAP in React Pivot Table | Syncfusion
+description: Learn how the React Pivot Table connects to OLAP cubes and analyzes multidimensional data with MDX queries, axes, measures, and drill operations.
+control: Pivot Table
+platform: ej2-react
 documentation: ug
-domainurl: https://help.syncfusion.com/grid-sdk
+domainurl: ##DomainURL##
 ---
 
-# OLAP in React Pivot Table component
+# OLAP in React Pivot Table
 
 ## Getting Started
 
@@ -186,14 +186,14 @@ For example, in the sample below, the element "Product Categories" is assigned t
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs189/app/App.jsx %}
+{% include code-snippet/pivot-table/default-cs189/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs189/app/App.tsx %}
+{% include code-snippet/pivot-table/default-cs189/app/App.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs189" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs189" %}
 
 ### Applying Formatting to a Value Field
 
@@ -205,14 +205,14 @@ In the following example, the [`formatSettings`](https://ej2.syncfusion.com/reac
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs190/app/App.jsx %}
+{% include code-snippet/pivot-table/default-cs190/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs190/app/App.tsx %}
+{% include code-snippet/pivot-table/default-cs190/app/App.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs190" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs190" %}
 
 ### Enable Grouping Bar
 
@@ -224,14 +224,14 @@ To display the grouping bar, set the [`showGroupingBar`](https://ej2.syncfusion.
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs191/app/App.jsx %}
+{% include code-snippet/pivot-table/default-cs191/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs191/app/App.tsx %}
+{% include code-snippet/pivot-table/default-cs191/app/App.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs191" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs191" %}
 
 ### Enable Pivot Field List
 
@@ -243,14 +243,14 @@ To display the Field List, set the [`showFieldList`](https://ej2.syncfusion.com/
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs192/app/App.jsx %}
+{% include code-snippet/pivot-table/default-cs192/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs192/app/App.tsx %}
+{% include code-snippet/pivot-table/default-cs192/app/App.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs192" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs192" %}
 
 ### Exploring Filter Axis
 
@@ -260,14 +260,14 @@ Users can add [OLAP cube elements](#olap-cube-elements) and filter members to th
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs193/app/App.jsx %}
+{% include code-snippet/pivot-table/default-cs193/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs193/app/App.tsx %}
+{% include code-snippet/pivot-table/default-cs193/app/App.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs193" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs193" %}
 
 ### Calculated Field
 
@@ -293,14 +293,14 @@ You can also add calculated fields at runtime through the built-in dialog. To en
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs194/app/App.jsx %}
+{% include code-snippet/pivot-table/default-cs194/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs194/app/App.tsx %}
+{% include code-snippet/pivot-table/default-cs194/app/App.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs194" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs194" %}
 
 Users can add a calculated field at runtime using the built-in dialog by following these steps:
 
@@ -424,14 +424,14 @@ To enable virtual scrolling, set the [`enableVirtualization`](https://ej2.syncfu
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs195/app/App.jsx %}
+{% include code-snippet/pivot-table/default-cs195/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs195/app/App.tsx %}
+{% include code-snippet/pivot-table/default-cs195/app/App.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs195" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs195" %}
 
 #### Limitations for Virtual Scrolling
 
@@ -452,14 +452,14 @@ npm start
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs196/app/App.jsx %}
+{% include code-snippet/pivot-table/default-cs196/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs196/app/App.tsx %}
+{% include code-snippet/pivot-table/default-cs196/app/App.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs196" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs196" %}
 
 ## Data Binding
 
@@ -476,14 +476,14 @@ Below are sample code files showing how to bind an OLAP data source in React:
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs197/app/App.jsx %}
+{% include code-snippet/pivot-table/default-cs197/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs197/app/App.tsx %}
+{% include code-snippet/pivot-table/default-cs197/app/App.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs197" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs197" %}
 
 ### Fields
 
@@ -495,14 +495,14 @@ Alternatively, you can set up the measure directly in your code by configuring t
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs198/app/App.jsx %}
+{% include code-snippet/pivot-table/default-cs198/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs198/app/App.tsx %}
+{% include code-snippet/pivot-table/default-cs198/app/App.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs198" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs198" %}
 
 #### Measures in Different Positions
 
@@ -510,14 +510,14 @@ You can choose where to place measures on either the row or column axis through 
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs199/app/App.jsx %}
+{% include code-snippet/pivot-table/default-cs199/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs199/app/App.tsx %}
+{% include code-snippet/pivot-table/default-cs199/app/App.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs199" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs199" %}
 
 ### Named Set
 
@@ -527,14 +527,14 @@ To display a named set in the Pivot Table, set its unique name using the [`name`
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs200/app/App.jsx %}
+{% include code-snippet/pivot-table/default-cs200/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs200/app/App.tsx %}
+{% include code-snippet/pivot-table/default-cs200/app/App.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs200" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs200" %}
 
 ### Configuring Authentication
 
@@ -744,14 +744,14 @@ When the [`beforeServiceInvoke`](https://ej2.syncfusion.com/react/documentation/
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/olap-beforeServiceInvoke/app/App.jsx %}
+{% include code-snippet/pivot-table/olap-beforeServiceInvoke/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/olap-beforeServiceInvoke/app/App.tsx %}
+{% include code-snippet/pivot-table/olap-beforeServiceInvoke/app/App.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/olap-beforeServiceInvoke" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/olap-beforeServiceInvoke" %}
 
 ### AfterServiceInvoke
 
@@ -765,11 +765,11 @@ When the [`afterServiceInvoke`](https://ej2.syncfusion.com/react/documentation/a
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/olap-afterServiceInvoke/app/App.jsx %}
+{% include code-snippet/pivot-table/olap-afterServiceInvoke/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/olap-afterServiceInvoke/app/App.tsx %}
+{% include code-snippet/pivot-table/olap-afterServiceInvoke/app/App.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/olap-afterServiceInvoke" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/olap-afterServiceInvoke" %}
