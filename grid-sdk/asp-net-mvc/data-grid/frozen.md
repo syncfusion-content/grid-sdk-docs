@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Frozen in Syncfusion ASP.NET MVC Grid Component
-description: Learn here all about Frozen in Syncfusion ASP.NET MVC Grid component of Syncfusion Essential JS 2 and more.
+title: #ASP.NET MVC Grid Frozen | Syncfusion
+description: Learn how to freeze and pin rows and columns in #ASP.NET MVC Data Grid to keep important data visible while scrolling and configure freeze directions.
 platform: grid-sdk
 control: Frozen
 publishingplatform: grid-sdk
 documentation: ug
 ---
 
-# Frozen rows and columns in ASP.NET Core Grid Component
+# Frozen in #ASP.NET MVC Data Grid
 
 Frozen rows and columns provides an option to make rows and columns always visible in the top and left side of the grid while scrolling.
 

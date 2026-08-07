@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Column Template in Syncfusion ASP.NET MVC Grid Component
-description: Learn here all about Column Template in Syncfusion ASP.NET MVC Grid component of Syncfusion Essential JS 2 and more.
+title: ASP.NET MVC Grid Column Template| Syncfusion
+description: Learn how to create custom column templates in ASP.NET MVC Data Grid to render rich cell content, editors, formatting, and interactive UI elements.
 platform: grid-sdk
 control: Column Template
 publishingplatform: grid-sdk
 documentation: ug
 ---
 
-# Column Template in ASP.NET MVC Grid Component
+# Column Template in ASP.NET MVC Data Grid
 
 Grid component provides a `Template` option that allows you to display custom elements in a column instead of the field value. This can be useful when you need to display images, buttons, or other custom content within a column.
 
