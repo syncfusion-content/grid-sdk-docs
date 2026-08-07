@@ -8,7 +8,7 @@ publishingplatform: grid-sdk
 documentation: ug
 ---
 
-# Remote data in ASP.Net MVC Grid Component
+# Remote Data Binding in ASP.NET MVC Data Grid
 
 In ASP.Net MVC Grid component, binding remote data is a fundamental aspect that enhances the efficiency of data interaction. This process involves assigning the service data, represented as an instance of `DataManager`, to the `DataSource` property of the ASP.NET MVC Grid component. By doing so, you enable seamless interaction with a remote data source, and this is achieved by specifying the endpoint URL where the data is hosted.
 

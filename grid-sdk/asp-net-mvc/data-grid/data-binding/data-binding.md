@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Data Binding in ASP.NET MVC Grid Control | Syncfusion
-description: Learn here all about Data Binding in Syncfusion ASP.NET MVC Grid component of Syncfusion Essential JS 2 and more.
+title: ASP.NET MVC Grid Data Binding | Syncfusion
+description: Learn how to bind local and remote data sources in ASP.NET MVC Data Grid, enable dynamic updates, and manage data flow efficiently.
 platform: grid-sdk
 control: Data Binding
 publishingplatform: grid-sdk
 documentation: ug
 ---
 
-# Data binding in ASP.NET MVC Grid
+# Data Binding in ASP.NET MVC Data Grid
 
 Data binding is a fundamental technique that empowers the Syncfusion ASP.NET MVC Grid to integrate data into its interface, enabling the creation of dynamic and interactive Grid views. This feature is particularly valuable when working with large datasets or when data needs to be fetched remotely. 
 

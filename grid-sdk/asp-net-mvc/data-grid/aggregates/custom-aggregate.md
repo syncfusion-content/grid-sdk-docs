@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Custom Aggregate in ASP.NET MVC Grid Component
-description: Learn here all about Custom Aggregate in Syncfusion ASP.NET MVC Grid component of Syncfusion Essential JS 2 and more.
+title: ASP.NET MVC Grid Custom Aggregate | Syncfusion
+description: Learn how to create custom aggregate functions in ASP.NET MVC Data Grid to calculate and display custom summary values in aggregate rows.
 platform: grid-sdk
 control: Custom Aggregate
 publishingplatform: grid-sdk

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Caption Template in ASP.NET MVC Grid Component
-description: Learn here all about Caption Template in Syncfusion ASP.NET MVC Grid component of Syncfusion Essential JS 2 and more.
+title: ##Platform_Name## Grid Caption Template | Syncfusion
+description: Learn how to use Caption Template in ##Platform_Name## Data Grid to customize group captions, apply formatting, and display group information effectively.
 platform: grid-sdk
 control: Caption Template
 publishingplatform: grid-sdk

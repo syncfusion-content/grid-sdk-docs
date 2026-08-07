@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Edit in Syncfusion ASP.NET MVC Grid Component
-description: Learn here all about Edit in Syncfusion ASP.NET MVC Grid component of Syncfusion Essential JS 2 and more.
+title: ASP.NET MVC Grid Editing | Syncfusion
+description: Learn how to configure editing in ASP.NET MVC Data Grid, customize edit modes, apply validation rules, use templates, and manage CRUD workflows efficiently.
 platform: grid-sdk
 control: Edit
 publishingplatform: grid-sdk
 documentation: ug
 ---
 
-# Editing in ASP.NET MVC Grid Component
+# Editing in ASP.NET MVC Data Grid
 
 The Grid component provides powerful options for dynamically inserting, deleting, and updating records, enabling you to modify data directly within the grid. This feature is useful when you want to enable you to perform CRUD (Create, Read, Update, Delete) operations seamlessly.
 
