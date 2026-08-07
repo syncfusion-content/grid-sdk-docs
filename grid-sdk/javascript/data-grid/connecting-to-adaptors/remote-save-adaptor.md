@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Bind data & perform CRUD with RemoteSaveAdaptor in Syncfusion Grid
-description: Learn here all about how to bind data and perform CRUD action using RemoteSaveAdaptor in Syncfusion JavaScript Grid control.
+title: Javascript Grid Bind Data with RemoteSaveAdaptor | Syncfusion
+description: Learn how to use hybrid data binding in Javascript Data Grid to perform data operations locally while handling CRUD actions on the server.
 platform: grid-sdk
 control: grid
 keywords: Adaptors, RemoteSaveAdaptor, remotesave adaptor, remotedata 
@@ -10,7 +10,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# RemoteSaveAdaptor in Control
+# Hybrid Data Binding in Javascript Data Grid
 
 The RemoteSaveAdaptor in Angular Grid Component allows you to perform grid actions such as sorting, filtering, searching and paging primarily on the client-side while handling CRUD operations, such as updating, inserting, and removing data, on the server-side for data persistence. This approach optimizes your experience by minimizing unnecessary server interactions.
 

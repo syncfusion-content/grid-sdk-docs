@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Local data in JavaScript Grid control | Syncfusion
-description: Learn here all about Local data in Syncfusion JavaScript Grid control of Syncfusion Essential JS 2 and more.
+title: Javascript Grid Local Data Binding | Syncfusion
+description: Learn how to bind local data sources and in-memory datasets in Javascript Data Grid, enable dynamic updates, and efficiently manage displayed data.
 platform: grid-sdk
 control: Local data 
 publishingplatform: grid-sdk
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Local data in JavaScript Grid control
+# Local Data Binding in Javascript Data Grid
 
 The Syncfusion<sup style="font-size:70%">&reg;</sup> Grid offers a straight forward way to bind local data, such as arrays or JSON objects, to the grid control. This feature allows you to display and manipulate data within the grid without the need for external server calls, making it particularly useful for scenarios where you're working with static or locally stored data.
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Detail template in JavaScript Grid control | Syncfusion
-description: Learn here all about Detail template in Syncfusion JavaScript Grid control of Syncfusion Essential JS 2 and more.
+title: Javascript Grid Detail Template | Syncfusion
+description: Learn how to use detail templates in Javascript Data Grid with Syncfusion. Display expandable row details, embed custom components, and create rich data layouts.
 platform: grid-sdk
 control: Detail template 
 publishingplatform: grid-sdk
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Detail template in JavaScript Grid control
+# Detail Template in Javascript Data Grid
 
 The detail template in the Grid control allows you to display additional information about a specific row in the grid by expanding or collapsing detail content. This feature is useful when you need to show additional data or custom content that is specific to each row in the grid. You can use the [detailTemplate](../../api/grid#detailtemplate) property to define an HTML template for the detail row. This template can include any HTML element or JavaScript control that you want to display as detail content.
 

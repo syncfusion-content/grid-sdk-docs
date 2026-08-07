@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Column chooser in JavaScript Grid control | Syncfusion
-description: Learn here all about Column chooser in Syncfusion JavaScript Grid control of Syncfusion Essential JS 2 and more.
+title:  Javascript Grid Column Chooser | Syncfusion
+description: Learn how to show, hide, and manage column visibility in Javascript Data Grid using the Column Chooser for a customizable view.
 platform: grid-sdk
 control: Column chooser 
 publishingplatform: grid-sdk
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Column chooser in JavaScript Grid control
+# Column Chooser in Javascript Data Grid
 
 The column chooser feature in the JavaScript Grid control allows you to dynamically show or hide columns. This feature can be enabled by defining the [showColumnChooser](../../api/grid#showcolumnchooser) property as **true**.
 
