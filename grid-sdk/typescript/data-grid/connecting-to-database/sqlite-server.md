@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Bind SQLite Server Data in Syncfusion TypeScript Grid
-description: Learn how to consume data from SQLite Server, bind it to Syncfusion TypeScript Grid, and perform CRUD operations.
+title: Typescript Grid SQLite Data Binding | Syncfusion
+description: Learn how to connect Typescript Data Grid to SQLite using EF Core, perform CRUD operations, and enable filtering, sorting, and advanced data management.
 platform: grid-sdk
 control: grid
 keywords: adaptors, customadaptor, urladaptor, sqlite, remotedata
@@ -10,7 +10,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Connecting SQLite Server data to Syncfusion TypeScript Grid
+# SQLite Data Binding in Typescript Data Grid
 
 This section describes how to connect and retrieve data from a SQLite Server database using [Microsoft.Data.Sqlite](https://www.nuget.org/packages/Microsoft.Data.Sqlite/) and bind it to the Syncfusion TypeScript Grid.
 

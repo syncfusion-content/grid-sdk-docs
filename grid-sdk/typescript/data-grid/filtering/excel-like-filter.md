@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Excel like filter in TypeScript Grid control | Syncfusion
-description: Learn here all about Excel like filter in Syncfusion TypeScript Grid control of Syncfusion Essential JS 2 and more.
+title: Typescript Grid Excel Like Filter | Syncfusion
+description: Learn how to use Excel Like Filter in Typescript Data Grid with multi-condition filtering, checkbox lists, search, remote data binding, and template customization.
 platform: grid-sdk
 control: Excel like filter 
 publishingplatform: grid-sdk
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Excel like filter in TypeScript Grid control
+# Excel Like Filter in Typescript Data Grid
 
 The Syncfusion<sup style="font-size:70%">&reg;</sup> Grid control offers an Excel-like filter feature, providing a familiar and user-friendly interface for filtering data within the grid. This feature simplifies complex filtering operations on specific columns, allowing for quick data location and manipulation, similar to Microsoft Excel. Excel like filtering is especially useful when dealing with large datasets and complex filtering requirements.
 
