@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Compatibility for Angular components | Syncfusion
-description: Learn about Angular version compatibility and supported Syncfusion Essential JS 2 Angular DataGrid component versions across different Angular releases.
+title: Angular Grid Compatibility | Syncfusion
+description: Learn how to check Angular Data Grid compatibility across supported Angular versions and Syncfusion releases.
 platform: grid-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Angular Supported Versions
+# Angular Supported Versions in Angular Data Grid
 
 The following table lists Angular versions and the minimum Syncfusion Angular DataGrid versions that support them.
 
