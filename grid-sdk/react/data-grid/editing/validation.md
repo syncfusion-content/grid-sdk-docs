@@ -1,14 +1,14 @@
 ---
 layout: post
-title: React Grid - Validation | Syncfusion
-description: React Grid validation supports built-in and custom rules, clear error messages, and safeguards that block invalid entries during editing.
+title: React Grid Validation | Syncfusion
+description: Learn how to configure validation in React Data Grid using built-in and custom rules, display error messages, and prevent invalid data entry.
 control: Validation 
 platform: grid-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Validation in React Grid Component
+# Validation in React Data Grid
 
 Data validation ensures that information entered or modified in the Grid follows specific validation rules, preventing errors and maintaining accuracy. The React Grid component in Syncfusion<sup style="font-size:70%">&reg;</sup> provides built-in validation support to make this process easy and effective.
 
