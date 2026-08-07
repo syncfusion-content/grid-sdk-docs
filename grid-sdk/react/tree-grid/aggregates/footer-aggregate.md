@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Footer aggregate in React TreeGrid | Syncfusion
-description: Learn here all about Footer aggregate in Syncfusion React TreeGrid component of Syncfusion Essential JS 2 and more.
+title: React TreeGrid Footer Aggregate | Syncfusion
+description: Learn how to configure and display footer aggregate values in React TreeGrid, including API usage, templates, and formatting options.
 control: Footer aggregate
 platform: grid-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Footer aggregate in React TreeGrid 
+# ooter Aggregate in React TreeGrid
 
 Footer aggregate values are calculated across all rows and displayed in footer cells. Render footer aggregates using the [footerTemplate](https://ej2.syncfusion.com/react/documentation/api/treegrid/aggregateColumnModel/#footertemplate) property.
 

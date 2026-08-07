@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Sorting in React TreeGrid component | Syncfusion
-description: Learn here all about Sorting in Syncfusion React TreeGrid component of Syncfusion Essential JS 2 and more.
+title: React TreeGrid Sorting | Syncfusion
+description: Learn how to sort data in React TreeGrid, including single and multi-column sorting, custom sorting, and sort order configuration.
 control: Sorting 
 platform: grid-sdk
 documentation: ug
