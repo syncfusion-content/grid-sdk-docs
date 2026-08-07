@@ -6,7 +6,7 @@ timestamps
   def Content="";
 		env.PATH = "${ProgramFiles}"+"\\Git\\mingw64\\bin;${env.PATH}"
 
-     timeout(time: 7200000, unit: 'MILLISECONDS') {
+     timeout(time: 9000000, unit: 'MILLISECONDS') {
 String platform='grid-sdk';
    try
 	{   
@@ -15,7 +15,6 @@ String platform='grid-sdk';
 	    { 
 	    dir('Spell-Checker') 
            {
-          deleteDir()
 		     checkout scm
 			 
 
