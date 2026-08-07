@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Migration in TypeScript Grid control | Syncfusion
-description: Learn here all about Migration in Syncfusion TypeScript Grid control of Syncfusion Essential JS 2 and more.
+title: Typescript Grid Migration Guide | Syncfusion
+description: Learn how to migrate Typescript Data Grid applications by updating enum values, API changes, and PascalCase naming conventions in Essential JS 2.
 platform: grid-sdk
 control: Migration 
 publishingplatform: grid-sdk
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Migration in TypeScript Grid control
+# Migration Guide for Typescript Data Grid
 
 The following enum property values are changed from camel casing to pascal casing.
 

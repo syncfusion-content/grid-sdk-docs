@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Row pinning in TypeScript Grid control | Syncfusion
-description: Learn here all about Row pinning in Syncfusion TypeScript Grid control of Syncfusion Essential JS 2 and more.
+title: Typescript Grid Row Pinning | Syncfusion
+description: Learn how to pin rows in Typescript Data Grid using Syncfusion. Keep important rows fixed at the top while supporting data operations.
 platform: grid-sdk
 control: Row Pinning
 publishingplatform: grid-sdk
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Row Pinning in EJ2 TypeScript Grid Control
+# Row Pinning in Typescript Data Grid
 
 The Syncfusion <sup style="font-size:70%">&reg;</sup> TypeScript Grid control provides option to pin specific rows at the top, ensuring important information remains visible while scrolling vertically. This feature is useful when you want to keep specific rows always visible for quick reference or priority viewing, regardless of user interactions.
 

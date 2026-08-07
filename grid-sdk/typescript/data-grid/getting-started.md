@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting started with TypeScript DataGrid control | Syncfusion
-description:  Checkout and learn about Getting started with TypeScript DataGrid control of Syncfusion Essential JS 2 and more details.
+title: TypeScript Data Grid Getting Started (Quick Setup Guide) | Syncfusion
+description: Learn how to install and configure the TypeScript Data Grid. Set up a new TypeScript app and enable paging, sorting, filtering, and grouping.
 platform: grid-sdk
 control: Getting started 
 publishingplatform: grid-sdk

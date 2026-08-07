@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Grouping customization in TypeScript Grid control | Syncfusion
-description: Learn here all about Grouping customization in Syncfusion TypeScript Grid control of Syncfusion Essential JS 2 and more.
+title: Typescript Grid Grouping Customization | Syncfusion
+description: Learn how to customize grouping styles in Typescript Data Grid with group headers, captions, aggregates, and group area appearance.
 platform: grid-sdk
 control: Grouping 
 publishingplatform: grid-sdk
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Grouping customization in TypeScript Grid control
+# Grouping Style in Typescript Data Grid
 
 You can customize the appearance of grouping elements in the TypeScript Grid control using CSS. Here are examples of how to customize the group header, group expand/collapse icons, group caption row, and grouping indent cell.
 
