@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Drill Through Grid Cell Edit Type in ASP.NET MVC Pivot Table Component
-description: Learn here all about Drill Through Grid Cell Edit Type in Syncfusion ASP.NET MVC Pivot Table component of Syncfusion Essential JS 2 and more.
-platform: grid-sdk
+title: Set Drill-Through Edit Type in ASP.NET MVC Pivot Table | Syncfusion
+description: Learn how to set the cell edit type on the ASP.NET MVC Pivot Table's drill-through grid via the DrillThrough event.
+platform: ej2-asp-core-mvc
 control: Drill Through Grid Cell Edit Type
-publishingplatform: grid-sdk
+publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Drill-through grid's cell edit type
+# How to Set Drill-Through Edit Type in ASP.NET MVC Pivot Table
 
 The drill-through feature in the Pivot Table allows users to view the raw data behind aggregated values by opening a detailed grid dialog. When this dialog appears, you can customize the edit behavior of specific columns to provide appropriate input controls based on their data types.
 
@@ -22,10 +22,10 @@ The following edit types are available for different data types:
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/summary-customization/edit-type/tagHelper %}
+{% include code-snippet/pivot-table/summary-customization/edit-type/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="EditType.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/summary-customization/edit-type/EditType.cs %}
+{% include code-snippet/pivot-table/summary-customization/edit-type/EditType.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -33,10 +33,10 @@ The following edit types are available for different data types:
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/summary-customization/edit-type/razor %}
+{% include code-snippet/pivot-table/summary-customization/edit-type/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="EditType.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/summary-customization/edit-type/EditType.cs %}
+{% include code-snippet/pivot-table/summary-customization/edit-type/EditType.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

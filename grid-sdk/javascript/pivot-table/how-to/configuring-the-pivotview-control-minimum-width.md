@@ -1,12 +1,12 @@
 ---
 layout: post  
 title: Configure minimum width in Javascript | Syncfusion
-description: Learn all about configuring the minimum width in the Syncfusion JavaScript Pivot Table component of Syncfusion Essential JS 2, and more.  
-platform: grid-sdk  
+description: Learn all about configuring the minimum width in the Syncfusion ##Platform_Name## Pivot Table component of Syncfusion Essential JS 2, and more.  
+platform: ej2-javascript  
 control: Configuring the minimum width in the Pivot Table component  
-publishingplatform: grid-sdk  
+publishingplatform: ##Platform_Name##  
 documentation: ug  
-domainurl: https://help.syncfusion.com/grid-sdk  
+domainurl: ##DomainURL##  
 ---
 
 # Configuring the minimum width in the JavaScript
@@ -30,25 +30,25 @@ To customize the minimum width according to specific layout requirements, config
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs503/index.ts %}
+{% include code-snippet/pivot-table/pivot-table-cs503/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs503/index.html %}
+{% include code-snippet/pivot-table/pivot-table-cs503/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs503" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs503" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs503/index.js %}
+{% include code-snippet/pivot-table/pivot-table-cs503/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs503/index.html %}
+{% include code-snippet/pivot-table/pivot-table-cs503/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs503" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs503" %}
 {% endif %}

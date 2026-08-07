@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Switching Older Themes Style in ASP.NET MVC Pivot Table Component
-description: Learn here all about Switching Older Themes Style in Syncfusion ASP.NET MVC Pivot Table component of Syncfusion Essential JS 2 and more.
-platform: grid-sdk
+title: How to Switch to Older Theme in ASP.NET MVC Pivot Table | Syncfusion
+description: Learn how to switch the ASP.NET MVC Pivot Table to the pre-2020 theme style by overriding background colors via CSS and setting a custom pivot table height.
+platform: ej2-asp-core-mvc
 control: Switching Older Themes Style
-publishingplatform: grid-sdk
+publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
@@ -62,10 +62,10 @@ The following code sample demonstrates how to replicate the older theme style:
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/switch-theme/tagHelper %}
+{% include code-snippet/pivot-table/switch-theme/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="SwitchTheme.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/switch-theme/SwitchTheme.cs %}
+{% include code-snippet/pivot-table/switch-theme/SwitchTheme.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -73,10 +73,10 @@ The following code sample demonstrates how to replicate the older theme style:
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/switch-theme/razor %}
+{% include code-snippet/pivot-table/switch-theme/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="SwitchTheme.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/switch-theme/SwitchTheme.cs %}
+{% include code-snippet/pivot-table/switch-theme/SwitchTheme.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

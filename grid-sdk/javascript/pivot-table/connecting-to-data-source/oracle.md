@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Oracle in JavaScript Pivot Table control | Syncfusion
-description: Learn here all about Oracle in Syncfusion JavaScript Pivot Table control of Syncfusion Essential JS 2 and more.
-platform: grid-sdk
-control: Oracle 
-publishingplatform: grid-sdk
+title: Oracle in ##Platform_Name## Pivot Table | Syncfusion
+description: Learn how the ##Platform_Name## Pivot Table connects to Oracle via the Oracle.ManagedDataAccess library and a Web API controller to fetch and bind data at runtime.
+platform: ej2-javascript
+control: Oracle
+publishingplatform: ##Platform_Name##
 documentation: ug
-domainurl: https://help.syncfusion.com/grid-sdk
+domainurl: ##DomainURL##
 ---
 
-# Oracle in JavaScript Pivot Table Component
+# Oracle in ##Platform_Name## Pivot Table
 
 This guide explains how to retrieve data from an Oracle database using the [Oracle Managed Data Access](https://www.nuget.org/packages/Oracle.ManagedDataAccess) library and bind it to the Pivot Table through a Web API controller.
 

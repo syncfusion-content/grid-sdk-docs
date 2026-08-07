@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Field list in JavaScript Pivot Table component | Syncfusion
-description: Learn here all about Field list in Syncfusion JavaScript Pivot Table component of Syncfusion Essential JS 2 and more.
-platform: grid-sdk
-control: Field list 
-publishingplatform: grid-sdk
+title: Field List in ##Platform_Name## Pivot Table | Syncfusion
+description: Learn how the ##Platform_Name## Pivot Table shows a Field List to add, remove, and rearrange fields across axes, in either popup or stand-alone mode.
+platform: ej2-javascript
+control: Field list
+publishingplatform: ##Platform_Name##
 documentation: ug
-domainurl: https://help.syncfusion.com/grid-sdk
+domainurl: ##DomainURL##
 ---
 
-# Field list in JavaScript Pivot Table component
+# Field List in ##Platform_Name## Pivot Table
 
 The Field List makes it easy to organize and analyze data in your Pivot Table. It provides a user-friendly interface similar to Microsoft Excel that allows you to add or remove fields and move them between different axes like columns, rows, values, and filters. You can also apply sorting and filtering options while working with your data.
 
@@ -28,14 +28,14 @@ To use the field list, you need to inject the `FieldList` module in the Pivot Ta
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs140/index.js %}
+{% include code-snippet/pivot-table/pivot-table-cs140/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs140/index.html %}
+{% include code-snippet/pivot-table/pivot-table-cs140/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs140" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs140" %}
 
 ## Stand-alone Field List (Fixed)
 
@@ -45,14 +45,14 @@ The stand-alone Field List allows users to keep the Field List visible at a spec
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/field-list-cs5/index.js %}
+{% include code-snippet/pivot-table/field-list-cs5/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/field-list-cs5/index.html %}
+{% include code-snippet/pivot-table/field-list-cs5/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/pivot-table/field-list-cs5" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/field-list-cs5" %}
 
 ## Invoking dynamic Field List (Customized)
 
@@ -66,14 +66,14 @@ The sample code below shows how to open the Field List dialog using an external 
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/popup-cs2/index.js %}
+{% include code-snippet/pivot-table/popup-cs2/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/popup-cs2/index.html %}
+{% include code-snippet/pivot-table/popup-cs2/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/pivot-table/popup-cs2" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/popup-cs2" %}
 
 ## Search desired field
 
@@ -89,14 +89,14 @@ To enable the search box in the stand-alone Field List UI, set the [`enableField
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/field-list-cs6/index.js %}
+{% include code-snippet/pivot-table/field-list-cs6/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/field-list-cs6/index.html %}
+{% include code-snippet/pivot-table/field-list-cs6/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/pivot-table/field-list-cs6" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/field-list-cs6" %}
 
 **Pivot Table's Built-in Popup Field List**
 
@@ -104,14 +104,14 @@ To enable the search box in the Pivot Table's built-in popup Field List UI, set 
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/popup-field-list-cs2/index.js %}
+{% include code-snippet/pivot-table/popup-field-list-cs2/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/popup-field-list-cs2/index.html %}
+{% include code-snippet/pivot-table/popup-field-list-cs2/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/pivot-table/popup-field-list-cs2" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/popup-field-list-cs2" %}
 
 ## Option to sort fields
 
@@ -129,14 +129,14 @@ Below is an example showing how to set up this option when initializing the Pivo
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs491/index.js %}
+{% include code-snippet/pivot-table/pivot-table-cs491/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs491/index.html %}
+{% include code-snippet/pivot-table/pivot-table-cs491/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs491" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs491" %}
 
 ## Group fields under desired folder name
 
@@ -146,14 +146,14 @@ Organizing fields into custom folders in the Field List helps users manage and l
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs141/index.js %}
+{% include code-snippet/pivot-table/pivot-table-cs141/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs141/index.html %}
+{% include code-snippet/pivot-table/pivot-table-cs141/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs141" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs141" %}
 
 ## Add or remove fields
 
@@ -167,14 +167,14 @@ When you connect a data source to the Pivot Table, all available fields from the
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs142/index.js %}
+{% include code-snippet/pivot-table/pivot-table-cs142/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs142/index.html %}
+{% include code-snippet/pivot-table/pivot-table-cs142/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs142" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs142" %}
 
 ## Re-arranging fields
 
@@ -234,14 +234,14 @@ The sample code below demonstrates how to display the built-in Field List dialog
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs143/index.js %}
+{% include code-snippet/pivot-table/pivot-table-cs143/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs143/index.html %}
+{% include code-snippet/pivot-table/pivot-table-cs143/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs143" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs143" %}
 
 ## Show field list using toolbar
 
@@ -249,14 +249,14 @@ The Field List can be displayed in the toolbar by enabling specific options in t
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs144/index.js %}
+{% include code-snippet/pivot-table/pivot-table-cs144/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs144/index.html %}
+{% include code-snippet/pivot-table/pivot-table-cs144/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs144" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs144" %}
 
 ## Set caption to fields which isn’t bound to the report
 
@@ -266,14 +266,14 @@ In the example below, captions are set for the `Year` and `Quarter` fields dynam
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/popup-field-list-cs3/index.js %}
+{% include code-snippet/pivot-table/popup-field-list-cs3/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/popup-field-list-cs3/index.html %}
+{% include code-snippet/pivot-table/popup-field-list-cs3/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/pivot-table/popup-field-list-cs3" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/popup-field-list-cs3" %}
 
 ## Show values button
 
@@ -285,14 +285,14 @@ At runtime, the **Values** button in the field list allows users to move the val
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/field-list-cs7/index.js %}
+{% include code-snippet/pivot-table/field-list-cs7/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/field-list-cs7/index.html %}
+{% include code-snippet/pivot-table/field-list-cs7/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/pivot-table/field-list-cs7" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/field-list-cs7" %}
 
 ## Events
 
@@ -309,14 +309,14 @@ This event includes the following parameters: [`dataSourceSettings`](https://ej2
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/field-list-cs8/index.js %}
+{% include code-snippet/pivot-table/field-list-cs8/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/field-list-cs8/index.html %}
+{% include code-snippet/pivot-table/field-list-cs8/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/pivot-table/field-list-cs8" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/field-list-cs8" %}
 
 
 ### FieldListRefreshed
@@ -327,14 +327,14 @@ For example, when a user sorts a field in the field list, the field list updates
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs145/index.js %}
+{% include code-snippet/pivot-table/pivot-table-cs145/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs145/index.html %}
+{% include code-snippet/pivot-table/pivot-table-cs145/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs145" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs145" %}
 
 ### FieldDropped
 
@@ -350,14 +350,14 @@ In the following code example, we changed the caption of the dropped field using
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs146/index.js %}
+{% include code-snippet/pivot-table/pivot-table-cs146/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs146/index.html %}
+{% include code-snippet/pivot-table/pivot-table-cs146/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs146" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs146" %}
 
 ### ActionBegin
 
@@ -387,14 +387,14 @@ In the following sample, you can restrict opening the popup field list by settin
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/action-events-cs13/index.js %}
+{% include code-snippet/pivot-table/action-events-cs13/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/action-events-cs13/index.html %}
+{% include code-snippet/pivot-table/action-events-cs13/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/pivot-table/action-events-cs13" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/action-events-cs13" %}
 
 ### ActionComplete
 
@@ -422,14 +422,14 @@ The [`actionComplete`](https://ej2.syncfusion.com/javascript/documentation/api/p
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/action-events-cs14/index.js %}
+{% include code-snippet/pivot-table/action-events-cs14/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/action-events-cs14/index.html %}
+{% include code-snippet/pivot-table/action-events-cs14/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/pivot-table/action-events-cs14" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/action-events-cs14" %}
 
 ### ActionFailure
 
@@ -451,14 +451,14 @@ The [`actionFailure`](https://ej2.syncfusion.com/javascript/documentation/api/pi
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/action-events-cs15/index.js %}
+{% include code-snippet/pivot-table/action-events-cs15/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/action-events-cs15/index.html %}
+{% include code-snippet/pivot-table/action-events-cs15/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/pivot-table/action-events-cs15" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/action-events-cs15" %}
 
 ## See Also
 

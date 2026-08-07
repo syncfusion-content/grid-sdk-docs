@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Drill down in TypeScript Pivot Table component | Syncfusion
-description: Learn here all about Drill down in Syncfusion TypeScript Pivot Table component of Syncfusion Essential JS 2 and more.
-platform: grid-sdk
-control: Drill down 
-publishingplatform: grid-sdk
+title: Drill Down in ##Platform_Name## Pivot Table | Syncfusion
+description: Learn how the ##Platform_Name## Pivot Table expands or collapses hierarchical data with drill down, drill position, and `expandAll` for one-click full expansion.
+platform: ej2-javascript
+control: Drill down
+publishingplatform: ##Platform_Name##
 documentation: ug
-domainurl: https://help.syncfusion.com/grid-sdk
+domainurl: ##DomainURL##
 ---
 
-# Drill down in TypeScript Pivot Table component
+# Drill Down in ##Platform_Name## Pivot Table
 
 ## Drill down and drill up
 
@@ -33,14 +33,14 @@ The Pivot Table component allows users to interactively expand or collapse all f
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs337/index.ts %}
+{% include code-snippet/pivot-table/pivot-table-cs337/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs337/index.html %}
+{% include code-snippet/pivot-table/pivot-table-cs337/index.html %}
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs337" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs337" %}
 
 ## Expand all headers for specific fields
 
@@ -52,14 +52,14 @@ The following code demonstrates how to configure a Pivot Table with the [`expand
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs338/index.ts %}
+{% include code-snippet/pivot-table/pivot-table-cs338/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs338/index.html %}
+{% include code-snippet/pivot-table/pivot-table-cs338/index.html %}
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs338" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs338" %}
 
 ## Expand all except specific member(s)
 
@@ -74,14 +74,14 @@ The following example demonstrates how to configure a Pivot Table where all head
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs339/index.ts %}
+{% include code-snippet/pivot-table/pivot-table-cs339/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs339/index.html %}
+{% include code-snippet/pivot-table/pivot-table-cs339/index.html %}
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs339" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs339" %}
 
 ## Expand or Collapse Specific Members
 
@@ -95,14 +95,14 @@ The following code demonstrates how to configure the Pivot Table to expand speci
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs340/index.ts %}
+{% include code-snippet/pivot-table/pivot-table-cs340/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs340/index.html %}
+{% include code-snippet/pivot-table/pivot-table-cs340/index.html %}
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs340" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs340" %}
 
 ## Event
 
@@ -116,14 +116,14 @@ The [`drill`](https://ej2.syncfusion.com/documentation/api/pivotview/index-defau
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs341/index.ts %}
+{% include code-snippet/pivot-table/pivot-table-cs341/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs341/index.html %}
+{% include code-snippet/pivot-table/pivot-table-cs341/index.html %}
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs341" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs341" %}
 
 ### ActionBegin
 
@@ -143,14 +143,14 @@ In the below sample, drill down and drill up action can be restricted by setting
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/action-events-cs35/index.ts %}
+{% include code-snippet/pivot-table/action-events-cs35/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/action-events-cs35/index.html %}
+{% include code-snippet/pivot-table/action-events-cs35/index.html %}
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/pivot-table/action-events-cs35" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/action-events-cs35" %}
 
 ### ActionComplete
 
@@ -168,14 +168,14 @@ The event [`actionComplete`](https://ej2.syncfusion.com/documentation/api/pivotv
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/action-events-cs8/index.js %}
+{% include code-snippet/pivot-table/action-events-cs8/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/action-events-cs8/index.html %}
+{% include code-snippet/pivot-table/action-events-cs8/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/pivot-table/action-events-cs8" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/action-events-cs8" %}
 
 ### ActionFailure
 
@@ -192,11 +192,11 @@ The [`actionFailure`](https://ej2.syncfusion.com/documentation/api/pivotview/ind
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/action-events-cs36/index.ts %}
+{% include code-snippet/pivot-table/action-events-cs36/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/action-events-cs36/index.html %}
+{% include code-snippet/pivot-table/action-events-cs36/index.html %}
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/pivot-table/action-events-cs36" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/action-events-cs36" %}

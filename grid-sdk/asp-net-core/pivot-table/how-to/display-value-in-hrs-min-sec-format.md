@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Display string value in ASP.NET Core | Syncfusion Pivot Table
-description: Learn here all about Display string value to pivot table values in Syncfusion ASP.NET Core Pivot Table component of syncfusion and more.
-platform: grid-sdk
+title: How to Display String Values in ASP.NET Core Pivot Table | Syncfusion
+description: Learn how to render custom string values in ASP.NET Core Pivot Table value cells via the aggregateCellInfo event's args.cellSets data.
+platform: ej2-asp-core-mvc
 control: Display string value to pivot table values
 documentation: ug
-publishingplatform: grid-sdk
+publishingplatform: ##Platform_Name##
 ---
 
-# Display string values in ASP.NET Core Pivot Table cells
+# How to Display String Values in ASP.NET Core Pivot Table
 
 The Pivot Table allows users to display custom string values in value cells by using the [`aggregateCellInfo`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_AggregateCellInfo) event. This is useful when you need to format numeric values into readable strings, such as converting seconds to time format or applying custom formatting rules.
 
@@ -20,10 +20,10 @@ The following example demonstrates how to convert numeric values in the **Sold**
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/display-string-value/tagHelper %}
+{% include code-snippet/pivot-table/display-string-value/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="DisplayStringValue.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/display-string-value/DisplayStringValue.cs %}
+{% include code-snippet/pivot-table/display-string-value/DisplayStringValue.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -31,10 +31,10 @@ The following example demonstrates how to convert numeric values in the **Sold**
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/display-string-value/razor %}
+{% include code-snippet/pivot-table/display-string-value/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="DisplayStringValue.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/display-string-value/DisplayStringValue.cs %}
+{% include code-snippet/pivot-table/display-string-value/DisplayStringValue.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

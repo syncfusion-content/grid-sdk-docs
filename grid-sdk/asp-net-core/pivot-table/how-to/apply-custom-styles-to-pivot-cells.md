@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Apply custom style to pivot cells in ASP.NET Core | Syncfusion
-description: Learn here all about Apply custom style to pivot cells in Syncfusion ASP.NET Core Pivot Table component of syncfusion and more.
-platform: grid-sdk
+title: How to Apply Cell Styles in ASP.NET Core Pivot Table | Syncfusion
+description: Learn how to style cells in the ASP.NET Core Pivot Table via the queryCellInfo and headerCellInfo events in e-gridSettings, applying CSS to values and headers.
+platform: ej2-asp-core-mvc
 control: Apply custom style to pivot cells 
 documentation: ug
-publishingplatform: grid-sdk 
+publishingplatform: ##Platform_Name## 
 ---
 
-# Apply custom style to pivot cells in ASP.NET Core Pivotview component
+# How to Apply Cell Styles in ASP.NET Core Pivot Table
 
 The ASP.NET Core Pivot Table component allows you to alter the appearance of pivot cells using event handlers. This guide demonstrates how to apply custom styling to specific cells in your pivot table.
 
@@ -31,10 +31,10 @@ The following example shows how to apply styles to:
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/apply-custom-styles/tagHelper %}
+{% include code-snippet/pivot-table/apply-custom-styles/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="CustomStyles.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/apply-custom-styles/CustomStyles.cs %}
+{% include code-snippet/pivot-table/apply-custom-styles/CustomStyles.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -42,10 +42,10 @@ The following example shows how to apply styles to:
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/apply-custom-styles/razor %}
+{% include code-snippet/pivot-table/apply-custom-styles/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="CustomStyles.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/apply-custom-styles/CustomStyles.cs %}
+{% include code-snippet/pivot-table/apply-custom-styles/CustomStyles.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

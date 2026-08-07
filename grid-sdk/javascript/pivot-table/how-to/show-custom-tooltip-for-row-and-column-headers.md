@@ -1,12 +1,12 @@
 ---
 layout: post
 title: Show tooltip for headers in Javascript | Syncfusion
-description: Learn here all about Show tooltip for row and column headers in Syncfusion JavaScript Pivot Table component of Syncfusion Essential JS 2 and more.
-platform: grid-sdk
+description: Learn here all about Show tooltip for row and column headers in Syncfusion ##Platform_Name## Pivot Table component of Syncfusion Essential JS 2 and more.
+platform: ej2-javascript
 control: Show tooltip for row and column headers 
-publishingplatform: grid-sdk
+publishingplatform: ##Platform_Name##
 documentation: ug
-domainurl: https://help.syncfusion.com/grid-sdk
+domainurl: ##DomainURL##
 ---
 
 # Show tooltip for row and column headers in JavaScript
@@ -23,25 +23,25 @@ For row header tooltips, the formatted text and field name of the current row he
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs497/index.ts %}
+{% include code-snippet/pivot-table/pivot-table-cs497/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs497/index.html %}
+{% include code-snippet/pivot-table/pivot-table-cs497/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs497" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs497" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs497/index.js %}
+{% include code-snippet/pivot-table/pivot-table-cs497/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs497/index.html %}
+{% include code-snippet/pivot-table/pivot-table-cs497/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs497" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs497" %}
 {% endif %}

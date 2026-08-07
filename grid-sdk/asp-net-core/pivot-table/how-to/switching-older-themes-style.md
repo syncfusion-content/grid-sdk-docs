@@ -1,17 +1,17 @@
 ---
 layout: post
-title: Switching Older Themes Style in ASP.NET Core | Syncfusion
-description: Learn here all about Switching Older Themes Style in Syncfusion ASP.NET Core Pivot Table component of Syncfusion Essential JS 2 and more.
-platform: grid-sdk
+title: How to Switch to Older Theme in ASP.NET Core Pivot Table | Syncfusion
+description: Learn how to switch the ASP.NET Core Pivot Table to the pre-2020 theme style by overriding background colors via CSS and setting a custom pivot table height.
+platform: ej2-asp-core-mvc
 control: Switching Older Themes Style
-publishingplatform: grid-sdk
+publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
 
 <!-- markdownlint-disable MD009 -->
 
-# Switching to older themes style
+# How to Switch to Older Themes Style in ASP.NET Core Pivot Table
 
 From Volume 1, 2020 onwards Syncfusion<sup style="font-size:70%">&reg;</sup> has revised the theming and layout of the Pivot Table. So, to inherit the older theme style and layout do the necessary changes in CSS and pivot table height.
 
@@ -61,10 +61,10 @@ In the below code sample, we replicate the older theme style.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/switch-theme/tagHelper %}
+{% include code-snippet/pivot-table/switch-theme/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="SwitchTheme.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/switch-theme/SwitchTheme.cs %}
+{% include code-snippet/pivot-table/switch-theme/SwitchTheme.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -72,10 +72,10 @@ In the below code sample, we replicate the older theme style.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/switch-theme/razor %}
+{% include code-snippet/pivot-table/switch-theme/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="SwitchTheme.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/switch-theme/SwitchTheme.cs %}
+{% include code-snippet/pivot-table/switch-theme/SwitchTheme.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

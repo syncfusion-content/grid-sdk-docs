@@ -2,11 +2,11 @@
 layout: post
 title: Export table, chart to same document in Javascript | Syncfusion
 description: Learn here all about how to export table and chart into the same document using toolbar in Syncfusion Javascript of Syncfusion Essential JS 2 and more.
-platform: grid-sdk
+platform: ej2-javascript
 control: Export table and chart into the same document using toolbar 
-publishingplatform: grid-sdk
+publishingplatform: ##Platform_Name##
 documentation: ug
-domainurl: https://help.syncfusion.com/grid-sdk
+domainurl: ##DomainURL##
 ---
 
 # Export table and chart to the same document in JavaScript
@@ -31,25 +31,25 @@ The following example demonstrates how to restrict the built-in export action by
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs493/index.ts %}
+{% include code-snippet/pivot-table/pivot-table-cs493/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs493/index.html %}
+{% include code-snippet/pivot-table/pivot-table-cs493/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs493" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs493" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs493/index.js %}
+{% include code-snippet/pivot-table/pivot-table-cs493/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs493/index.html %}
+{% include code-snippet/pivot-table/pivot-table-cs493/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs493" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs493" %}
 {% endif %}

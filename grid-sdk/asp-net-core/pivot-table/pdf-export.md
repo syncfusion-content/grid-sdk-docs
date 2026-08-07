@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Pdf Export in ASP.NET Core Syncfusion Pivot Table Component
-description: Learn here all about Pdf Export in Syncfusion ASP.NET Core Pivot Table component of Syncfusion Essential JS 2 and more.
-platform: grid-sdk
+title: PDF Export in ASP.NET Core Pivot Table | Syncfusion
+description: Learn how the ASP.NET Core Pivot Table exports the rendered pivot report to a PDF document via allowPdfExport and the pdfExport method.
+platform: ej2-asp-core-mvc
 control: Pdf Export
-publishingplatform: grid-sdk
+publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
 
-# PDF Export in ASP.NET Core Pivot Table Component
+# PDF Export in ASP.NET Core Pivot Table
 
 The ASP.NET Core Pivot Table lets users easily export their pivot table data as a PDF document. By setting the [`allowPdfExport`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_AllowPdfExport) property to **true** in the Pivot Table configuration, users can enable PDF export. Once enabled, you can use the `pdfExport` method to generate and download the PDF file.
 
@@ -19,10 +19,10 @@ In the following example, an external button is used to start the PDF export pro
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pdf-export/export/tagHelper %}
+{% include code-snippet/pivot-table/pdf-export/export/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Export.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pdf-export/export/Export.cs %}
+{% include code-snippet/pivot-table/pdf-export/export/Export.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -30,10 +30,10 @@ In the following example, an external button is used to start the PDF export pro
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pdf-export/export/razor %}
+{% include code-snippet/pivot-table/pdf-export/export/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Export.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pdf-export/export/Export.cs %}
+{% include code-snippet/pivot-table/pdf-export/export/Export.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -52,10 +52,10 @@ To export multiple Pivot Tables on the same page, set the `multipleExport.type` 
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pdf-export/multiple-export/tagHelper %}
+{% include code-snippet/pivot-table/pdf-export/multiple-export/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="MultipleExport.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pdf-export/multiple-export/MultipleExport.cs %}
+{% include code-snippet/pivot-table/pdf-export/multiple-export/MultipleExport.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -63,10 +63,10 @@ To export multiple Pivot Tables on the same page, set the `multipleExport.type` 
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pdf-export/multiple-export/razor %}
+{% include code-snippet/pivot-table/pdf-export/multiple-export/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="MultipleExport.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pdf-export/multiple-export/MultipleExport.cs %}
+{% include code-snippet/pivot-table/pdf-export/multiple-export/MultipleExport.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -79,10 +79,10 @@ To export each Pivot Table on a separate page, set the `multipleExport.type` pro
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pdf-export/multiple-export-with-new-page/tagHelper %}
+{% include code-snippet/pivot-table/pdf-export/multiple-export-with-new-page/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="MultipleExportNewPage.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pdf-export/multiple-export-with-new-page/MultipleExportNewPage.cs %}
+{% include code-snippet/pivot-table/pdf-export/multiple-export-with-new-page/MultipleExportNewPage.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -90,10 +90,10 @@ To export each Pivot Table on a separate page, set the `multipleExport.type` pro
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pdf-export/multiple-export-with-new-page/razor %}
+{% include code-snippet/pivot-table/pdf-export/multiple-export-with-new-page/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="MultipleExportNewPage.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pdf-export/multiple-export-with-new-page/MultipleExportNewPage.cs %}
+{% include code-snippet/pivot-table/pdf-export/multiple-export-with-new-page/MultipleExportNewPage.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -108,10 +108,10 @@ The following example shows how you can set this up in your application:
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pdf-export/export-tableAndChart/tagHelper %}
+{% include code-snippet/pivot-table/pdf-export/export-tableAndChart/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="exportTableAndChart.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pdf-export/export-tableAndChart/exportTableAndChart.cs %}
+{% include code-snippet/pivot-table/pdf-export/export-tableAndChart/exportTableAndChart.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -119,10 +119,10 @@ The following example shows how you can set this up in your application:
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pdf-export/export-tableAndChart/razor %}
+{% include code-snippet/pivot-table/pdf-export/export-tableAndChart/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="exportTableAndChart.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pdf-export/export-tableAndChart/exportTableAndChart.cs %}
+{% include code-snippet/pivot-table/pdf-export/export-tableAndChart/exportTableAndChart.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -231,10 +231,10 @@ The below code illustrates the PDF export customization options.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pdf-export/header-footer/tagHelper %}
+{% include code-snippet/pivot-table/pdf-export/header-footer/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="ThemeExport.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pdf-export/header-footer/ThemeExport.cs %}
+{% include code-snippet/pivot-table/pdf-export/header-footer/ThemeExport.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -242,10 +242,10 @@ The below code illustrates the PDF export customization options.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pdf-export/header-footer/razor %}
+{% include code-snippet/pivot-table/pdf-export/header-footer/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="ThemeExport.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pdf-export/header-footer/ThemeExport.cs %}
+{% include code-snippet/pivot-table/pdf-export/header-footer/ThemeExport.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -279,10 +279,10 @@ The below code illustrates the PDF export customization options.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pdf-export/header-footer/tagHelper %}
+{% include code-snippet/pivot-table/pdf-export/header-footer/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="ThemeExport.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pdf-export/header-footer/ThemeExport.cs %}
+{% include code-snippet/pivot-table/pdf-export/header-footer/ThemeExport.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -290,10 +290,10 @@ The below code illustrates the PDF export customization options.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pdf-export/header-footer/razor %}
+{% include code-snippet/pivot-table/pdf-export/header-footer/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="ThemeExport.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pdf-export/header-footer/ThemeExport.cs %}
+{% include code-snippet/pivot-table/pdf-export/header-footer/ThemeExport.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -306,10 +306,10 @@ The PDF export provides an option to change the file name of the document before
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pdf-export/file-name/tagHelper %}
+{% include code-snippet/pivot-table/pdf-export/file-name/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="FileName.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pdf-export/file-name/FileName.cs %}
+{% include code-snippet/pivot-table/pdf-export/file-name/FileName.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -317,10 +317,10 @@ The PDF export provides an option to change the file name of the document before
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pdf-export/file-name/razor %}
+{% include code-snippet/pivot-table/pdf-export/file-name/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="FileName.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pdf-export/file-name/FileName.cs %}
+{% include code-snippet/pivot-table/pdf-export/file-name/FileName.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -333,10 +333,10 @@ When exporting the Pivot Table as a PDF, users can choose the page orientation o
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pdf-export/page-layout/tagHelper %}
+{% include code-snippet/pivot-table/pdf-export/page-layout/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="PageLayout.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pdf-export/page-layout/PageLayout.cs %}
+{% include code-snippet/pivot-table/pdf-export/page-layout/PageLayout.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -344,10 +344,10 @@ When exporting the Pivot Table as a PDF, users can choose the page orientation o
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pdf-export/page-layout/razor %}
+{% include code-snippet/pivot-table/pdf-export/page-layout/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="PageLayout.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pdf-export/page-layout/PageLayout.cs %}
+{% include code-snippet/pivot-table/pdf-export/page-layout/PageLayout.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -364,10 +364,10 @@ This option lets users easily adjust the PDF layout to fit their specific needs 
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pdf-export/page-size/tagHelper %}
+{% include code-snippet/pivot-table/pdf-export/page-size/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="PageSize.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pdf-export/page-size/PageSize.cs %}
+{% include code-snippet/pivot-table/pdf-export/page-size/PageSize.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -375,10 +375,10 @@ This option lets users easily adjust the PDF layout to fit their specific needs 
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pdf-export/page-size/razor %}
+{% include code-snippet/pivot-table/pdf-export/page-size/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="PageSize.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pdf-export/page-size/PageSize.cs %}
+{% include code-snippet/pivot-table/pdf-export/page-size/PageSize.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -391,10 +391,10 @@ You can adjust the size of the exported PDF document by setting the `height` and
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pdf-export/exporting-customization/tagHelper %}
+{% include code-snippet/pivot-table/pdf-export/exporting-customization/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="exporting-customization.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pdf-export/exporting-customization/exporting-customization.cs %}
+{% include code-snippet/pivot-table/pdf-export/exporting-customization/exporting-customization.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -402,10 +402,10 @@ You can adjust the size of the exported PDF document by setting the `height` and
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pdf-export/exporting-customization/razor %}
+{% include code-snippet/pivot-table/pdf-export/exporting-customization/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="exporting-customization.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pdf-export/exporting-customization/exporting-customization.cs %}
+{% include code-snippet/pivot-table/pdf-export/exporting-customization/exporting-customization.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -418,10 +418,10 @@ Users can control how many Pivot Table columns appear on each page of the export
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pdf-export/exporting-columnCustomization/tagHelper %}
+{% include code-snippet/pivot-table/pdf-export/exporting-columnCustomization/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="exporting-columnCustomization.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pdf-export/exporting-columnCustomization/exporting-columnCustomization.cs %}
+{% include code-snippet/pivot-table/pdf-export/exporting-columnCustomization/exporting-columnCustomization.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -429,10 +429,10 @@ Users can control how many Pivot Table columns appear on each page of the export
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pdf-export/exporting-columnCustomization/razor %}
+{% include code-snippet/pivot-table/pdf-export/exporting-columnCustomization/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="exporting-columnCustomization.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pdf-export/exporting-columnCustomization/exporting-columnCustomization.cs %}
+{% include code-snippet/pivot-table/pdf-export/exporting-columnCustomization/exporting-columnCustomization.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -451,10 +451,10 @@ For example, the **"Units Sold"** column under **"FY 2015"** can be set to a wid
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pdf-export/exporting-columnWidthCustomization/tagHelper %}
+{% include code-snippet/pivot-table/pdf-export/exporting-columnWidthCustomization/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="exporting-columnWidthCustomization.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pdf-export/exporting-columnWidthCustomization/exporting-columnWidthCustomization.cs %}
+{% include code-snippet/pivot-table/pdf-export/exporting-columnWidthCustomization/exporting-columnWidthCustomization.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -462,10 +462,10 @@ For example, the **"Units Sold"** column under **"FY 2015"** can be set to a wid
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pdf-export/exporting-columnWidthCustomization/razor %}
+{% include code-snippet/pivot-table/pdf-export/exporting-columnWidthCustomization/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="exporting-columnWidthCustomization.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pdf-export/exporting-columnWidthCustomization/exporting-columnWidthCustomization.cs %}
+{% include code-snippet/pivot-table/pdf-export/exporting-columnWidthCustomization/exporting-columnWidthCustomization.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -480,10 +480,10 @@ For example, the **"Mountain Bikes"** row under **"France"** can be set to a hei
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pdf-export/exporting-rowHeightCustomization/tagHelper %}
+{% include code-snippet/pivot-table/pdf-export/exporting-rowHeightCustomization/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="exporting-rowHeightCustomization.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pdf-export/exporting-rowHeightCustomization/exporting-rowHeightCustomization.cs %}
+{% include code-snippet/pivot-table/pdf-export/exporting-rowHeightCustomization/exporting-rowHeightCustomization.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -491,10 +491,10 @@ For example, the **"Mountain Bikes"** row under **"France"** can be set to a hei
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pdf-export/exporting-rowHeightCustomization/razor %}
+{% include code-snippet/pivot-table/pdf-export/exporting-rowHeightCustomization/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="exporting-rowHeightCustomization.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pdf-export/exporting-rowHeightCustomization/exporting-rowHeightCustomization.cs %}
+{% include code-snippet/pivot-table/pdf-export/exporting-rowHeightCustomization/exporting-rowHeightCustomization.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -509,10 +509,10 @@ In the following example, the [`beforeExport`](https://help.syncfusion.com/cr/as
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pdf-export/customizing-pivot-report/tagHelper %}
+{% include code-snippet/pivot-table/pdf-export/customizing-pivot-report/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="CustomizingPivotReport.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pdf-export/customizing-pivot-report/CustomizingPivotReport.cs %}
+{% include code-snippet/pivot-table/pdf-export/customizing-pivot-report/CustomizingPivotReport.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -520,10 +520,10 @@ In the following example, the [`beforeExport`](https://help.syncfusion.com/cr/as
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pdf-export/customizing-pivot-report/razor %}
+{% include code-snippet/pivot-table/pdf-export/customizing-pivot-report/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="CustomizingPivotReport.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pdf-export/customizing-pivot-report/CustomizingPivotReport.cs %}
+{% include code-snippet/pivot-table/pdf-export/customizing-pivot-report/CustomizingPivotReport.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -543,10 +543,10 @@ In the following code example, the row and column spans are adjusted for empty c
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pdf-export/export-row-column-spanning/tagHelper %}
+{% include code-snippet/pivot-table/pdf-export/export-row-column-spanning/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="ExportWithCellSpanning.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pdf-export/export-row-column-spanning/ExportWithCellSpanning.cs %}
+{% include code-snippet/pivot-table/pdf-export/export-row-column-spanning/ExportWithCellSpanning.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -554,10 +554,10 @@ In the following code example, the row and column spans are adjusted for empty c
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pdf-export/export-row-column-spanning/razor %}
+{% include code-snippet/pivot-table/pdf-export/export-row-column-spanning/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="ExportWithCellSpanning.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pdf-export/export-row-column-spanning/ExportWithCellSpanning.cs %}
+{% include code-snippet/pivot-table/pdf-export/export-row-column-spanning/ExportWithCellSpanning.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -572,10 +572,10 @@ The Pivot Table allows adding hyperlinks and images to cells during PDF export. 
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pdf-export/export-hyperlinks-images/tagHelper %}
+{% include code-snippet/pivot-table/pdf-export/export-hyperlinks-images/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="ExportHyperlinksImages.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pdf-export/export-hyperlinks-images/ExportHyperlinksImages.cs %}
+{% include code-snippet/pivot-table/pdf-export/export-hyperlinks-images/ExportHyperlinksImages.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -583,10 +583,10 @@ The Pivot Table allows adding hyperlinks and images to cells during PDF export. 
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pdf-export/export-hyperlinks-images/razor %}
+{% include code-snippet/pivot-table/pdf-export/export-hyperlinks-images/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="ExportHyperlinksImages.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pdf-export/export-hyperlinks-images/ExportHyperlinksImages.cs %}
+{% include code-snippet/pivot-table/pdf-export/export-hyperlinks-images/ExportHyperlinksImages.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -610,10 +610,10 @@ The following example shows how to add two custom aggregate types to the aggrega
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pdf-export/custom-aggregate-export/tagHelper %}
+{% include code-snippet/pivot-table/pdf-export/custom-aggregate-export/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="CustomAggregateExport.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pdf-export/custom-aggregate-export/CustomAggregateExport.cs %}
+{% include code-snippet/pivot-table/pdf-export/custom-aggregate-export/CustomAggregateExport.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -621,10 +621,10 @@ The following example shows how to add two custom aggregate types to the aggrega
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pdf-export/custom-aggregate-export/razor %}
+{% include code-snippet/pivot-table/pdf-export/custom-aggregate-export/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="CustomAggregateExport.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pdf-export/custom-aggregate-export/CustomAggregateExport.cs %}
+{% include code-snippet/pivot-table/pdf-export/custom-aggregate-export/CustomAggregateExport.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -645,10 +645,10 @@ The following example demonstrates exporting a Pivot Table with a custom date fo
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pdf-export/custom-date-export/tagHelper %}
+{% include code-snippet/pivot-table/pdf-export/custom-date-export/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="CustomDateExport.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pdf-export/custom-date-export/CustomDateExport.cs %}
+{% include code-snippet/pivot-table/pdf-export/custom-date-export/CustomDateExport.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -656,10 +656,10 @@ The following example demonstrates exporting a Pivot Table with a custom date fo
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pdf-export/custom-date-export/razor %}
+{% include code-snippet/pivot-table/pdf-export/custom-date-export/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="CustomDateExport.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pdf-export/custom-date-export/CustomDateExport.cs %}
+{% include code-snippet/pivot-table/pdf-export/custom-date-export/CustomDateExport.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -674,10 +674,10 @@ When you export the Pivot Table as a PDF document, you can change the colors use
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pdf-export/theme-export/tagHelper %}
+{% include code-snippet/pivot-table/pdf-export/theme-export/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="ThemeExport.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pdf-export/theme-export/ThemeExport.cs %}
+{% include code-snippet/pivot-table/pdf-export/theme-export/ThemeExport.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -685,10 +685,10 @@ When you export the Pivot Table as a PDF document, you can change the colors use
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pdf-export/theme-export/razor %}
+{% include code-snippet/pivot-table/pdf-export/theme-export/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="ThemeExport.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pdf-export/theme-export/ThemeExport.cs %}
+{% include code-snippet/pivot-table/pdf-export/theme-export/ThemeExport.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -723,10 +723,10 @@ You can also use custom fonts when exporting if you need support for languages o
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pdf-export/non-english-export/tagHelper %}
+{% include code-snippet/pivot-table/pdf-export/non-english-export/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Non-english-export.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pdf-export/non-english-export/non-english-export.cs %}
+{% include code-snippet/pivot-table/pdf-export/non-english-export/non-english-export.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -734,10 +734,10 @@ You can also use custom fonts when exporting if you need support for languages o
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pdf-export/non-english-export/razor %}
+{% include code-snippet/pivot-table/pdf-export/non-english-export/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Non-english-export.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pdf-export/non-english-export/non-english-export.cs %}
+{% include code-snippet/pivot-table/pdf-export/non-english-export/non-english-export.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -754,10 +754,10 @@ The following example demonstrates how to apply conditional formatting to the **
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pdf-export/apply-custom-styles/tagHelper %}
+{% include code-snippet/pivot-table/pdf-export/apply-custom-styles/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="ApplyCustomStyles.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pdf-export/apply-custom-styles/ApplyCustomStyles.cs %}
+{% include code-snippet/pivot-table/pdf-export/apply-custom-styles/ApplyCustomStyles.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -765,10 +765,10 @@ The following example demonstrates how to apply conditional formatting to the **
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pdf-export/apply-custom-styles/razor %}
+{% include code-snippet/pivot-table/pdf-export/apply-custom-styles/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="ApplyCustomStyles.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pdf-export/apply-custom-styles/ApplyCustomStyles.cs %}
+{% include code-snippet/pivot-table/pdf-export/apply-custom-styles/ApplyCustomStyles.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -781,10 +781,10 @@ The Pivot Table component supports exporting all columns on a single page in the
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pdf-export/horizontal-overflow/tagHelper %}
+{% include code-snippet/pivot-table/pdf-export/horizontal-overflow/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="HorizontalOverflow.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pdf-export/horizontal-overflow/HorizontalOverflow.cs %}
+{% include code-snippet/pivot-table/pdf-export/horizontal-overflow/HorizontalOverflow.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -792,10 +792,10 @@ The Pivot Table component supports exporting all columns on a single page in the
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pdf-export/horizontal-overflow/razor %}
+{% include code-snippet/pivot-table/pdf-export/horizontal-overflow/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="HorizontalOverflow.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pdf-export/horizontal-overflow/HorizontalOverflow.cs %}
+{% include code-snippet/pivot-table/pdf-export/horizontal-overflow/HorizontalOverflow.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -810,10 +810,10 @@ By default, the Pivot Table exports all data records. When working with large da
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pdf-export/exportallpages/tagHelper %}
+{% include code-snippet/pivot-table/pdf-export/exportallpages/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Exportallpages.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pdf-export/exportallpages/exportallpages.cs %}
+{% include code-snippet/pivot-table/pdf-export/exportallpages/exportallpages.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -821,10 +821,10 @@ By default, the Pivot Table exports all data records. When working with large da
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pdf-export/exportallpages/razor %}
+{% include code-snippet/pivot-table/pdf-export/exportallpages/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Exportallpages.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pdf-export/exportallpages/exportallpages.cs %}
+{% include code-snippet/pivot-table/pdf-export/exportallpages/exportallpages.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -837,10 +837,10 @@ By default, row headers are repeated on each page when exporting the Pivot Table
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pdf-export/repeat-headers/tagHelper %}
+{% include code-snippet/pivot-table/pdf-export/repeat-headers/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Export.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pdf-export/repeat-headers/Export.cs %}
+{% include code-snippet/pivot-table/pdf-export/repeat-headers/Export.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -848,10 +848,10 @@ By default, row headers are repeated on each page when exporting the Pivot Table
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pdf-export/repeat-headers/razor %}
+{% include code-snippet/pivot-table/pdf-export/repeat-headers/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Export.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pdf-export/repeat-headers/Export.cs %}
+{% include code-snippet/pivot-table/pdf-export/repeat-headers/Export.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -864,10 +864,10 @@ By default, column headers are repeated on each page when exporting the Pivot Ta
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pdf-export/repeat-column-headers/tagHelper %}
+{% include code-snippet/pivot-table/pdf-export/repeat-column-headers/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="RepeatColumnHeaders.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pdf-export/repeat-column-headers/RepeatColumnHeaders.cs %}
+{% include code-snippet/pivot-table/pdf-export/repeat-column-headers/RepeatColumnHeaders.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -875,10 +875,10 @@ By default, column headers are repeated on each page when exporting the Pivot Ta
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pdf-export/repeat-column-headers/razor %}
+{% include code-snippet/pivot-table/pdf-export/repeat-column-headers/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="RepeatColumnHeaders.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pdf-export/repeat-column-headers/RepeatColumnHeaders.cs %}
+{% include code-snippet/pivot-table/pdf-export/repeat-column-headers/RepeatColumnHeaders.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -891,10 +891,10 @@ When exporting data, displaying a spinner provides visual feedback to users that
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pdf-export/show-spinner/tagHelper %}
+{% include code-snippet/pivot-table/pdf-export/show-spinner/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="ShowSpinner.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pdf-export/show-spinner/ShowSpinner.cs %}
+{% include code-snippet/pivot-table/pdf-export/show-spinner/ShowSpinner.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -902,10 +902,10 @@ When exporting data, displaying a spinner provides visual feedback to users that
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pdf-export/show-spinner/razor %}
+{% include code-snippet/pivot-table/pdf-export/show-spinner/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="ShowSpinner.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pdf-export/show-spinner/ShowSpinner.cs %}
+{% include code-snippet/pivot-table/pdf-export/show-spinner/ShowSpinner.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -927,10 +927,10 @@ By using this event, users can easily update the cell text, apply different styl
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grid-customization/pdf-querycell/tagHelper %}
+{% include code-snippet/pivot-table/grid-customization/pdf-querycell/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="PdfQueryCell.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grid-customization/pdf-querycell/PdfQueryCell.cs %}
+{% include code-snippet/pivot-table/grid-customization/pdf-querycell/PdfQueryCell.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -938,10 +938,10 @@ By using this event, users can easily update the cell text, apply different styl
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grid-customization/pdf-querycell/razor %}
+{% include code-snippet/pivot-table/grid-customization/pdf-querycell/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="PdfQueryCell.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grid-customization/pdf-querycell/PdfQueryCell.cs %}
+{% include code-snippet/pivot-table/grid-customization/pdf-querycell/PdfQueryCell.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -959,10 +959,10 @@ The event provides the following parameters:
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grid-customization/pdf-headercell/tagHelper %}
+{% include code-snippet/pivot-table/grid-customization/pdf-headercell/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="PdfHeader.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grid-customization/pdf-headercell/PdfHeader.cs %}
+{% include code-snippet/pivot-table/grid-customization/pdf-headercell/PdfHeader.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -970,10 +970,10 @@ The event provides the following parameters:
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grid-customization/pdf-headercell/razor %}
+{% include code-snippet/pivot-table/grid-customization/pdf-headercell/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="PdfHeader.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grid-customization/pdf-headercell/PdfHeader.cs %}
+{% include code-snippet/pivot-table/grid-customization/pdf-headercell/PdfHeader.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -991,10 +991,10 @@ The event provides the following parameters:
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pdf-export/blob-export/tagHelper %}
+{% include code-snippet/pivot-table/pdf-export/blob-export/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Blob-export.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pdf-export/blob-export/blob-export.cs %}
+{% include code-snippet/pivot-table/pdf-export/blob-export/blob-export.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -1002,10 +1002,10 @@ The event provides the following parameters:
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pdf-export/blob-export/razor %}
+{% include code-snippet/pivot-table/pdf-export/blob-export/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Blob-export.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pdf-export/blob-export/blob-export.cs %}
+{% include code-snippet/pivot-table/pdf-export/blob-export/blob-export.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

@@ -1,17 +1,17 @@
 ---
 layout: post
-title: Row and column in TypeScript Pivot Table component | Syncfusion
-description: Learn here all about Row and column in Syncfusion TypeScript Pivot Table component of Syncfusion Essential JS 2 and more.
-platform: grid-sdk
-control: Row and column 
-publishingplatform: grid-sdk
+title: Row and Column in ##Platform_Name## Pivot Table | Syncfusion
+description: Learn how the ##Platform_Name## Pivot Table sets `height` and `width` in pixel, percentage, or auto formats, with a 400px minimum width for proper display.
+platform: ej2-javascript
+control: Row and column
+publishingplatform: ##Platform_Name##
 documentation: ug
-domainurl: https://help.syncfusion.com/grid-sdk
+domainurl: ##DomainURL##
 ---
 
 <!-- markdownlint-disable MD012 -->
 
-# Row and column in TypeScript Pivot Table component
+# Row and Column in ##Platform_Name## Pivot Table
 
 ## Width and Height
 
@@ -29,14 +29,14 @@ These dimension properties support multiple formats to accommodate various layou
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs444/index.ts %}
+{% include code-snippet/pivot-table/pivot-table-cs444/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs444/index.html %}
+{% include code-snippet/pivot-table/pivot-table-cs444/index.html %}
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs444" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs444" %}
 
 ## Row Height
 
@@ -48,14 +48,14 @@ For example, in the sample code below, the [`rowHeight`](https://ej2.syncfusion.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs445/index.ts %}
+{% include code-snippet/pivot-table/pivot-table-cs445/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs445/index.html %}
+{% include code-snippet/pivot-table/pivot-table-cs445/index.html %}
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs445" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs445" %}
 
 ## Column Width
 
@@ -67,14 +67,14 @@ In the following example, the [`columnWidth`](https://ej2.syncfusion.com/documen
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs446/index.ts %}
+{% include code-snippet/pivot-table/pivot-table-cs446/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs446/index.html %}
+{% include code-snippet/pivot-table/pivot-table-cs446/index.html %}
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs446" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs446" %}
 
 ### Adjust width based on columns
 
@@ -82,14 +82,14 @@ By default, when the component width exceeds the total width of all columns, the
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs447/index.ts %}
+{% include code-snippet/pivot-table/pivot-table-cs447/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs447/index.html %}
+{% include code-snippet/pivot-table/pivot-table-cs447/index.html %}
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs447" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs447" %}
 
 ## Reorder
 
@@ -99,14 +99,14 @@ To enable this option, set the [`allowReordering`](https://ej2.syncfusion.com/do
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs448/index.ts %}
+{% include code-snippet/pivot-table/pivot-table-cs448/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs448/index.html %}
+{% include code-snippet/pivot-table/pivot-table-cs448/index.html %}
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs448" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs448" %}
 
 ## Column Resizing
 
@@ -118,14 +118,14 @@ This option is enabled by default. To control column resizing, set the [`allowRe
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs449/index.ts %}
+{% include code-snippet/pivot-table/pivot-table-cs449/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs449/index.html %}
+{% include code-snippet/pivot-table/pivot-table-cs449/index.html %}
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs449" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs449" %}
 
 ## Text Wrap
 
@@ -133,14 +133,14 @@ The Pivot Table allows users to wrap cell content to the next line when the cont
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs450/index.ts %}
+{% include code-snippet/pivot-table/pivot-table-cs450/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs450/index.html %}
+{% include code-snippet/pivot-table/pivot-table-cs450/index.html %}
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs450" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs450" %}
 
 ## Text Align
 
@@ -153,14 +153,14 @@ Text alignment provides flexibility in positioning content within cells, making 
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs451/index.ts %}
+{% include code-snippet/pivot-table/pivot-table-cs451/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs451/index.html %}
+{% include code-snippet/pivot-table/pivot-table-cs451/index.html %}
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs451" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs451" %}
 
 ## AutoFit
 
@@ -168,27 +168,27 @@ The AutoFit option allows users to easily adjust Pivot Table columns so that eac
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs452/index.ts %}
+{% include code-snippet/pivot-table/pivot-table-cs452/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs452/index.html %}
+{% include code-snippet/pivot-table/pivot-table-cs452/index.html %}
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs452" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs452" %}
 
 > When the grouping bar is enabled, the first column in the Pivot Table has a minimum width of **250** pixels, which cannot be decreased. In such cases, if you want to auto fit the remaining columns, you can call the [`autoFitColumns`](https://ej2.syncfusion.com/documentation/api/grid#autofitcolumns) method from the grid instance, passing the field names of the Pivot Table columns except the first column.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs453/index.ts %}
+{% include code-snippet/pivot-table/pivot-table-cs453/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs453/index.html %}
+{% include code-snippet/pivot-table/pivot-table-cs453/index.html %}
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs453" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs453" %}
 
 ### Autofit Specific Columns
 
@@ -198,14 +198,14 @@ To implement this functionality during the initial rendering of the Pivot Table,
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs454/index.ts %}
+{% include code-snippet/pivot-table/pivot-table-cs454/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs454/index.html %}
+{% include code-snippet/pivot-table/pivot-table-cs454/index.html %}
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs454" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs454" %}
 
 ## Grid Lines
 
@@ -225,14 +225,14 @@ The following grid line modes are available:
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs455/index.ts %}
+{% include code-snippet/pivot-table/pivot-table-cs455/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs455/index.html %}
+{% include code-snippet/pivot-table/pivot-table-cs455/index.html %}
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs455" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs455" %}
 
 ## Selection
 
@@ -247,14 +247,14 @@ The Pivot Table provides two selection modes, controlled by the [`type`](https:/
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs456/index.ts %}
+{% include code-snippet/pivot-table/pivot-table-cs456/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs456/index.html %}
+{% include code-snippet/pivot-table/pivot-table-cs456/index.html %}
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs456" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs456" %}
 
 ### Selection mode
 
@@ -269,14 +269,14 @@ By choosing the right selection mode, users can quickly highlight and review the
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs457/index.ts %}
+{% include code-snippet/pivot-table/pivot-table-cs457/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs457/index.html %}
+{% include code-snippet/pivot-table/pivot-table-cs457/index.html %}
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs457" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs457" %}
 
 ### Cell Selection Mode
 
@@ -288,14 +288,14 @@ To set the cell selection mode, use the [`cellSelectionMode`](https://ej2.syncfu
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs458/index.ts %}
+{% include code-snippet/pivot-table/pivot-table-cs458/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs458/index.html %}
+{% include code-snippet/pivot-table/pivot-table-cs458/index.html %}
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs458" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs458" %}
 
 > To use cell selection modes, ensure that the [`mode`](https://ej2.syncfusion.com/documentation/api/pivotview/pivotSelectionSettings#mode) property in [`selectionSettings`](https://ej2.syncfusion.com/documentation/api/pivotview/gridSettingsModel#selectionsettings) is set to **Cell** or **Both** and the [`type`](https://ej2.syncfusion.com/documentation/api/pivotview/pivotSelectionSettings#type) property is set to **Multiple**. This allows users to select more than one cell at a time for better comparison and review.
 
@@ -307,14 +307,14 @@ In the example below, selected cells appear with a **green-yellow** background. 
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/cell-selection-cs2/index.ts %}
+{% include code-snippet/pivot-table/cell-selection-cs2/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/cell-selection-cs2/index.html %}
+{% include code-snippet/pivot-table/cell-selection-cs2/index.html %}
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/pivot-table/cell-selection-cs2" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/cell-selection-cs2" %}
 
 ### Event
 
@@ -324,14 +324,14 @@ When a user finishes selecting cells, the [`cellSelected`](https://ej2.syncfusio
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs459/index.ts %}
+{% include code-snippet/pivot-table/pivot-table-cs459/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs459/index.html %}
+{% include code-snippet/pivot-table/pivot-table-cs459/index.html %}
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs459" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs459" %}
 
 #### CellSelecting
 
@@ -345,14 +345,14 @@ You can use these parameters to decide whether or not the cell should be selecte
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs460/index.ts %}
+{% include code-snippet/pivot-table/pivot-table-cs460/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs460/index.html %}
+{% include code-snippet/pivot-table/pivot-table-cs460/index.html %}
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs460" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs460" %}
 
 ### Limitations
 
@@ -370,14 +370,14 @@ The clip mode option in the Pivot Table determines how cell content is displayed
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs461/index.ts %}
+{% include code-snippet/pivot-table/pivot-table-cs461/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs461/index.html %}
+{% include code-snippet/pivot-table/pivot-table-cs461/index.html %}
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs461" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs461" %}
 
 ## Cell Template
 
@@ -389,14 +389,14 @@ For example, in the following sample, each year's revenue cost is shown along wi
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs462/index.ts %}
+{% include code-snippet/pivot-table/pivot-table-cs462/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs462/index.html %}
+{% include code-snippet/pivot-table/pivot-table-cs462/index.html %}
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs462" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs462" %}
 
 ## Events
 
@@ -417,14 +417,14 @@ By using these parameters in the event, users can highlight cells, format values
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs463/index.ts %}
+{% include code-snippet/pivot-table/pivot-table-cs463/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs463/index.html %}
+{% include code-snippet/pivot-table/pivot-table-cs463/index.html %}
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs463" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs463" %}
 
 ### HeaderCellInfo
 
@@ -437,14 +437,14 @@ By using these parameters, users can update header cell styles, add tooltips, or
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs464/index.ts %}
+{% include code-snippet/pivot-table/pivot-table-cs464/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs464/index.html %}
+{% include code-snippet/pivot-table/pivot-table-cs464/index.html %}
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs464" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs464" %}
 
 ### ColumnRender
 
@@ -458,14 +458,14 @@ The event provides the following parameters:
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs465/index.ts %}
+{% include code-snippet/pivot-table/pivot-table-cs465/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs465/index.html %}
+{% include code-snippet/pivot-table/pivot-table-cs465/index.html %}
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs465" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs465" %}
 
 ### CellClick
 
@@ -476,11 +476,11 @@ The [`cellClick`](https://ej2.syncfusion.com/documentation/api/pivotview/index-d
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs466/index.ts %}
+{% include code-snippet/pivot-table/pivot-table-cs466/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs466/index.html %}
+{% include code-snippet/pivot-table/pivot-table-cs466/index.html %}
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs466" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs466" %}

@@ -1,17 +1,17 @@
 ---
 layout: post
-title: Print in JavaScript Pivot Table component | Syncfusion
-description: Learn here all about Print in Syncfusion JavaScript Pivot Table component of Syncfusion Essential JS 2 and more.
-platform: grid-sdk
-control: Print 
-publishingplatform: grid-sdk
+title: Print in ##Platform_Name## Pivot Table | Syncfusion
+description: Learn how the ##Platform_Name## Pivot Table prints the current state of the pivot table or pivot chart via the underlying Grid's `print` method.
+platform: ej2-javascript
+control: Print
+publishingplatform: ##Platform_Name##
 documentation: ug
-domainurl: https://help.syncfusion.com/grid-sdk
+domainurl: ##DomainURL##
 ---
 
-# Print
+# Print in ##Platform_Name## Pivot Table
 
-The Javascript Pivot Table component supports print functionality, allowing users to print the current state of the pivot table or pivot chart. This feature enables users to generate hard copies of pivot table reports for convenient review and data sharing.
+The JavaScript Pivot Table component supports print functionality, allowing users to print the current state of the pivot table or pivot chart. This feature enables users to generate hard copies of pivot table reports for convenient review and data sharing.
 
 ## Print pivot table
 
@@ -19,14 +19,14 @@ The rendered pivot table can be printed by invoking the [print](https://ej2.sync
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs495/index.js %}
+{% include code-snippet/pivot-table/pivot-table-cs495/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs495/index.html %}
+{% include code-snippet/pivot-table/pivot-table-cs495/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs495" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs495" %}
 
 ## Print pivot chart
 
@@ -40,11 +40,11 @@ The sample code below illustrates how to print the pivot chart through an extern
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs496/index.js %}
+{% include code-snippet/pivot-table/pivot-table-cs496/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs496/index.html %}
+{% include code-snippet/pivot-table/pivot-table-cs496/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs496" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs496" %}

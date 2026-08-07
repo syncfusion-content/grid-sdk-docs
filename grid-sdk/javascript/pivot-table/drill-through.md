@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Drill through in JavaScript Pivot Table component | Syncfusion
-description: Learn here all about Drill through in Syncfusion JavaScript Pivot Table component of Syncfusion Essential JS 2 and more.
-platform: grid-sdk
-control: Drill through 
-publishingplatform: grid-sdk
+title: Drill Through in ##Platform_Name## Pivot Table | Syncfusion
+description: Learn how the ##Platform_Name## Pivot Table shows raw data behind aggregated cells via `allowDrillThrough`, with `maxRowsInDrillThrough` to cap rows.
+platform: ej2-javascript
+control: Drill through
+publishingplatform: ##Platform_Name##
 documentation: ug
-domainurl: https://help.syncfusion.com/grid-sdk
+domainurl: ##DomainURL##
 ---
 
-# Drill through in JavaScript Pivot Table component
+# Drill Through in ##Platform_Name## Pivot Table
 
 The drill-through feature in the Pivot Table component allows users to view the raw, unaggregated data behind any aggregated cell in the Pivot Table. To enable this feature, set the [`allowDrillThrough`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/index-default#allowdrillthrough) property to **true**. By double-clicking an aggregated cell, users can view its detailed raw data in a data grid displayed in a new window. The new window shows the row header, column header, and measure name of the selected cell at the top. Additionally, users can include or exclude fields available in the data grid using the column chooser option.
 
@@ -19,14 +19,14 @@ Below is an example of enabling drill-through in a Pivot Table:
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs127/index.js %}
+{% include code-snippet/pivot-table/pivot-table-cs127/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs127/index.html %}
+{% include code-snippet/pivot-table/pivot-table-cs127/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs127" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs127" %}
 
 Users can also access drill-through data through the pivot chart. By clicking on any data point in the pivot chart, they can view the raw data in a data grid displayed in a new window.
 
@@ -34,14 +34,14 @@ Below is an example of enabling drill-through with a pivot chart:
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs128/index.js %}
+{% include code-snippet/pivot-table/pivot-table-cs128/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs128/index.html %}
+{% include code-snippet/pivot-table/pivot-table-cs128/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs128" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs128" %}
 
 ## Maximum rows to retrieve
 
@@ -126,14 +126,14 @@ Below is an example of using the [`drillThrough`](https://ej2.syncfusion.com/jav
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs129/index.js %}
+{% include code-snippet/pivot-table/pivot-table-cs129/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs129/index.html %}
+{% include code-snippet/pivot-table/pivot-table-cs129/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs129" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs129" %}
 
 ### BeginDrillThrough
 
@@ -148,11 +148,11 @@ The following example demonstrates how to enable [`sorting`](https://ej2.syncfus
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs130/index.js %}
+{% include code-snippet/pivot-table/pivot-table-cs130/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs130/index.html %}
+{% include code-snippet/pivot-table/pivot-table-cs130/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs130" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs130" %}

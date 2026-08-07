@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Olap in TypeScript Pivot Table component | Syncfusion
-description: Learn here all about Olap in Syncfusion TypeScript Pivot Table component of Syncfusion Essential JS 2 and more.
-platform: grid-sdk
-control: Olap 
-publishingplatform: grid-sdk
+title: OLAP in ##Platform_Name## Pivot Table | Syncfusion
+description: Learn how the ##Platform_Name## Pivot Table connects to OLAP data sources via dependency packages and supports MDX queries, drill operations, and axis configuration.
+platform: ej2-javascript
+control: OLAP
+publishingplatform: ##Platform_Name##
 documentation: ug
-domainurl: https://help.syncfusion.com/grid-sdk
+domainurl: ##DomainURL##
 ---
 
-# OLAP in TypeScript Pivot Table component
+# OLAP in ##Platform_Name## Pivot Table
 
 ## Getting Started
 
@@ -192,14 +192,14 @@ For example, in the sample below, the element "Product Categories" is assigned t
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs406/index.ts %}
+{% include code-snippet/pivot-table/pivot-table-cs406/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs406/index.html %}
+{% include code-snippet/pivot-table/pivot-table-cs406/index.html %}
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs406" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs406" %}
 
 ### Applying Formatting to a Value Field
 
@@ -211,14 +211,14 @@ In the following example, the [`formatSettings`](https://ej2.syncfusion.com/docu
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs407/index.ts %}
+{% include code-snippet/pivot-table/pivot-table-cs407/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs407/index.html %}
+{% include code-snippet/pivot-table/pivot-table-cs407/index.html %}
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs407" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs407" %}
 
 ### Enable grouping bar
 
@@ -230,14 +230,14 @@ To display the grouping bar, set the [`showGroupingBar`](https://ej2.syncfusion.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs408/index.ts %}
+{% include code-snippet/pivot-table/pivot-table-cs408/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs408/index.html %}
+{% include code-snippet/pivot-table/pivot-table-cs408/index.html %}
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs408" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs408" %}
 
 ### Enable pivot field list
 
@@ -249,14 +249,14 @@ To display the Field List, set the [`showFieldList`](https://ej2.syncfusion.com/
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs409/index.ts %}
+{% include code-snippet/pivot-table/pivot-table-cs409/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs409/index.html %}
+{% include code-snippet/pivot-table/pivot-table-cs409/index.html %}
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs409" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs409" %}
 
 ### Exploring filter axis
 
@@ -266,14 +266,14 @@ Users can add [OLAP cube elements](#olap-cube-elements) and filter members to th
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs410/index.ts %}
+{% include code-snippet/pivot-table/pivot-table-cs410/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs410/index.html %}
+{% include code-snippet/pivot-table/pivot-table-cs410/index.html %}
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs410" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs410" %}
 
 ### Calculated field
 
@@ -299,14 +299,14 @@ You can also add calculated fields at runtime through the built-in dialog. To en
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/calculatedfield-cs7/index.ts %}
+{% include code-snippet/pivot-table/calculatedfield-cs7/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/calculatedfield-cs7/index.html %}
+{% include code-snippet/pivot-table/calculatedfield-cs7/index.html %}
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/pivot-table/calculatedfield-cs7" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/calculatedfield-cs7" %}
 
 Users can add a calculated field at runtime using the built-in dialog by following these steps:
 
@@ -430,14 +430,14 @@ To enable virtual scrolling, set the [`enableVirtualization`](https://ej2.syncfu
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs411/index.ts %}
+{% include code-snippet/pivot-table/pivot-table-cs411/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs411/index.html %}
+{% include code-snippet/pivot-table/pivot-table-cs411/index.html %}
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs411" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs411" %}
 
 #### Limitations for virtual scrolling
 
@@ -458,14 +458,14 @@ Output will be displayed as follows.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs412/index.ts %}
+{% include code-snippet/pivot-table/pivot-table-cs412/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs412/index.html %}
+{% include code-snippet/pivot-table/pivot-table-cs412/index.html %}
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs412" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs412" %}
 
 ## Data Binding
 
@@ -482,14 +482,14 @@ Below are sample code files showing how to bind an OLAP data source in Typescrip
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs413/index.ts %}
+{% include code-snippet/pivot-table/pivot-table-cs413/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs413/index.html %}
+{% include code-snippet/pivot-table/pivot-table-cs413/index.html %}
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs413" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs413" %}
 
 ### Fields
 
@@ -501,14 +501,14 @@ Alternatively, you can set up the measure directly in your code by configuring t
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs414/index.ts %}
+{% include code-snippet/pivot-table/pivot-table-cs414/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs414/index.html %}
+{% include code-snippet/pivot-table/pivot-table-cs414/index.html %}
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs414" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs414" %}
 
 #### Measures in different position
 
@@ -516,14 +516,14 @@ You can choose where to place measures on either the row or column axis through 
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs415/index.ts %}
+{% include code-snippet/pivot-table/pivot-table-cs415/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs415/index.html %}
+{% include code-snippet/pivot-table/pivot-table-cs415/index.html %}
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs415" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs415" %}
 
 ### Named set
 
@@ -533,14 +533,14 @@ To display a named set in the Pivot Table, set its unique name using the [`name`
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs416/index.ts %}
+{% include code-snippet/pivot-table/pivot-table-cs416/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs416/index.html %}
+{% include code-snippet/pivot-table/pivot-table-cs416/index.html %}
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs416" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs416" %}
 
 ### Configuring authentication
 
@@ -722,14 +722,14 @@ When the [`beforeServiceInvoke`](https://ej2.syncfusion.com/documentation/api/pi
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/olap-beforeserviceinvoke/index.ts %}
+{% include code-snippet/pivot-table/olap-beforeserviceinvoke/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/olap-beforeserviceinvoke/index.html %}
+{% include code-snippet/pivot-table/olap-beforeserviceinvoke/index.html %}
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/pivot-table/olap-beforeserviceinvoke" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/olap-beforeserviceinvoke" %}
 
 ### AfterServiceInvoke
 
@@ -743,11 +743,11 @@ When the [`afterServiceInvoke`](https://ej2.syncfusion.com/documentation/api/piv
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/olap-afterServiceInvoke/index.ts %}
+{% include code-snippet/pivot-table/olap-afterServiceInvoke/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/olap-afterServiceInvoke/index.html %}
+{% include code-snippet/pivot-table/olap-afterServiceInvoke/index.html %}
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/pivot-table/olap-afterServiceInvoke" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/olap-afterServiceInvoke" %}

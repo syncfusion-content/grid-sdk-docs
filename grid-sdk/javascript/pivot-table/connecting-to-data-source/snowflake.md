@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Snowflake in JavaScript Pivot Table control | Syncfusion
-description: Learn here all about Snowflake in Syncfusion JavaScript Pivot Table control of Syncfusion Essential JS 2 and more.
-platform: grid-sdk
-control: Snowflake 
-publishingplatform: grid-sdk
+title: Snowflake in ##Platform_Name## Pivot Table | Syncfusion
+description: Learn how the ##Platform_Name## Pivot Table connects to Snowflake via the Snowflake.Data library and a Web API controller to fetch and bind data at runtime.
+platform: ej2-javascript
+control: Snowflake
+publishingplatform: ##Platform_Name##
 documentation: ug
-domainurl: https://help.syncfusion.com/grid-sdk
+domainurl: ##DomainURL##
 ---
 
-# Snowflake in JavaScript Pivot Table Component
+# Snowflake in ##Platform_Name## Pivot Table
 
 This guide explains how to retrieve data from a Snowflake database using the [Snowflake.Data](https://www.nuget.org/packages/Snowflake.Data) library and bind it to the Pivot Table through a Web API controller.
 

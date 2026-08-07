@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Export table and chart into the same document using toolbar in ASP.NET MVC Pivot Table Component
-description: Learn here all about Export table and chart into the same document using toolbar in Syncfusion ASP.NET MVC Pivot Table component of Syncfusion Essential JS 2 and more.
-platform: grid-sdk
+title: Export Both Table and Chart in ASP.NET MVC Pivot Table | Syncfusion
+description: Learn how to export the ASP.NET MVC Pivot Table's grid and chart to the same PDF via the ActionBegin event and PdfExport.
+platform: ej2-asp-core-mvc
 control: Export table and chart into the same document using toolbar 
 documentation: ug
-publishingplatform: grid-sdk
+publishingplatform: ##Platform_Name##
 ---
 
-# Export table and chart into the same document using toolbar 
+# How to Export Both Table and Chart in ASP.NET MVC Pivot Table
 
 By default, when the  [`PivotViewDisplayOption.View`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewDisplayOption.html#Syncfusion_EJ2_PivotView_PivotViewDisplayOption_View) property is set to **Both** in the Pivot Table, the export functionality exports either the table or the chart to the PDF document based on the current value of the [`PivotViewDisplayOption.Primary`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewDisplayOption.html#Syncfusion_EJ2_PivotView_PivotViewDisplayOption_Primary) property. However, to export both the table and the chart into the same PDF document simultaneously, use the `pdfExport` method during the [`ActionBegin`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_ActionBegin) event.
 
@@ -30,10 +30,10 @@ The following example demonstrates how to restrict the built-in export action by
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/export-table-and-chart/tagHelper %}
+{% include code-snippet/pivot-table/export-table-and-chart/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="ExportTableAndChart.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/export-table-and-chart/ExportTableAndChart.cs %}
+{% include code-snippet/pivot-table/export-table-and-chart/ExportTableAndChart.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -41,10 +41,10 @@ The following example demonstrates how to restrict the built-in export action by
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/export-table-and-chart/razor %}
+{% include code-snippet/pivot-table/export-table-and-chart/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="ExportTableAndChart.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/export-table-and-chart/ExportTableAndChart.cs %}
+{% include code-snippet/pivot-table/export-table-and-chart/ExportTableAndChart.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
