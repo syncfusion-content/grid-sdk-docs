@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Column reorder in Angular TreeGrid component | Syncfusion
-description: Learn here all about Column reorder in Syncfusion Angular TreeGrid component of Syncfusion Essential JS 2 and more.
+title: Angular TreeGrid Column Reorder | Syncfusion
+description: Learn how to reorder columns in Angular TreeGrid using drag-and-drop functionality and customize column arrangement.
 platform: grid-sdk
 control: Column reorder 
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Column reorder in Angular TreeGrid component
+# Column Reorder in Angular TreeGrid
 
 The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular TreeGrid component allows reordering columns by drag and drop of a particular column header from one index to another index within the TreeGrid. This feature can be enabled by injecting the **ReorderService** in the provider section of **AppModule**.
 

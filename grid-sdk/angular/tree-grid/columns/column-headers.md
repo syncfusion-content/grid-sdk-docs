@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Headers in Angular TreeGrid component | Syncfusion
-description: Learn here all about Headers in Syncfusion Angular TreeGrid component of Syncfusion Essential JS 2 and more.
+title: Angular TreeGrid Headers | Syncfusion
+description: Learn how to configure and customize column headers in Angular TreeGrid, including header text and template options.
 platform: grid-sdk
 control: Column Headers 
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Headers in Angular TreeGrid component
+# Headers in Angular TreeGrid
 
 ## Header text
 

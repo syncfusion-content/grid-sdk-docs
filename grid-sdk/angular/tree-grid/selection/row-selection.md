@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Row selection in Angular TreeGrid component | Syncfusion
-description: Learn how to use row selection in the Syncfusion Angular TreeGrid component, including programmatic selection, getting selected indexes and records, and persistent selection.
+title: Angular TreeGrid Row Selection | Syncfusion
+description: Learn how to use row selection in Angular TreeGrid, including programmatic selection, selected records, row indexes, and persistent selection.
 platform: grid-sdk
 control: Row selection
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Row selection in Angular TreeGrid component
+# Row Selection in Angular TreeGrid
 
 ## Select row at initial rendering
 
