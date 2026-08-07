@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Infinite Scrolling in Syncfusion ASP.NET Core Grid Control | Syncfusion
-description: Learn here all about Infinite Scrolling in Syncfusion ASP.NET Core Grid component of Syncfusion Essential JS 2 and more.
+title: ASP.NET Core Grid Infinite Scrolling | Syncfusion
+description: Learn how to use Infinite Scrolling in ASP.NET Core Data Grid to load data incrementally, retrieve records on demand, and efficiently handle large datasets.
 platform: grid-sdk
 control: Infinite Scroll
 publishingplatform: grid-sdk
 documentation: ug
 ---
 
-# Infinite scrolling in ASP.NET Core Grid component
+# Infinite Scroll in ASP.NET Core Data Grid
 
 The infinite scrolling feature in the Grid is a powerful tool for seamlessly handling extensive data sets without compromising grid performance. It operates on a “load-on-demand” concept, ensuring that data is fetched only when needed. In the default infinite scrolling mode, a new block of data is loaded each time the scrollbar reaches the end of the vertical scroller. This approach significantly enhances the user experience when working with large data collections in the ASP.NET Core Grid.
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Perform Crud Operation Using Anti Forgery Token in ASP.NET Core Grid Component
-description: Learn here all about Perform Crud Operation Using Anti Forgery Token in Syncfusion ASP.NET Core Grid component of syncfusion and more.
+title: ASP.NET Core Grid Anti-Forgery Token CRUD Operations | Syncfusion
+description: Learn how to secure CRUD operations in ASP.NET Core Data Grid using anti-forgery tokens and custom adaptors to prevent CSRF attacks.
 platform: grid-sdk
 control: Perform Crud Operation Using Anti Forgery Token
 publishingplatform: grid-sdk
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Perform CRUD operation using anti-forgery token
+# CRUD with Anti-Forgery Tokens in ASP.NET Core Data Grid
 
 Anti-forgery token is used between the client and server to prevent cross-site request forgery (CSRF) attack. For more information on preventing CSRF attack, refer to the [link]( https://docs.microsoft.com/en-us/aspnet/core/security/anti-request-forgery?view=aspnetcore-2.1#authentication-fundamentals).
 
