@@ -1,7 +1,7 @@
 ---
 layout: post
-title: React Data TreeGrid Preact | Syncfusion
-description: Learn how to use React TreeData Grid in Preact applications with setup instructions, required configuration, and full grid feature support.
+title: React TreeGrid Preact | Syncfusion
+description: Learn how to use React TreeGrid in Preact applications with setup instructions, required configuration, and full grid feature support.
 control: Preact
 platform: grid-sdk
 documentation: ug
