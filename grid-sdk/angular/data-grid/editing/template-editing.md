@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Angular Grid - Template editing | Syncfusion
-description: Angular Grid inline editing enables direct row edits, auto updates, conditional control, CRUD actions, confirmations, and flexible add/delete.
+title: Angular Grid Custom Template Editing | Syncfusion
+description: Learn how to use inline and dialog template editing in Angular Data Grid to customize edit forms, capture user input, and manage CRUD operations efficiently.
 platform: grid-sdk
 control: Template editing 
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Template Editing in Angular Grid Component
+# Custom Template Editing in Angular Data Grid
 
 The [Angular Data Grid](https://www.syncfusion.com/angular-components/angular-data-grid) component supports template editing, providing a powerful and flexible way to customize the appearance and behavior of cells during editing. Angular templates enable defining the structure and content of cells within the grid.
 
