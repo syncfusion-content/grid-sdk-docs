@@ -1,14 +1,14 @@
 ---
 layout: post
-title: React Grid - Next.js Getting Started | Syncfusion
-description: React Grid Next.js getting started guides server-side rendering, dynamic imports, and setup steps to use the Grid component in Next.js applications.
+title: React Data Grid Next.js Getting Started | Syncfusion
+description: Learn how to use React Data Grid in Next.js applications with setup steps, server-side rendering support, dynamic imports, and efficient grid integration.
 control: Next.js
 platform: grid-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Getting Started with React Grid Component in the Next.js
+# Getting Started with React Data Grid in Next.js
 
 This section provides a step-by-step guide for creating a Next.js application and integrating the React Data Grid component.
 
