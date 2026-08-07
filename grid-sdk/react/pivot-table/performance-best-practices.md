@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Performance tips for React Pivot Table component | Syncfusion
-description: Checkout and learn here all about best practices to improve the performance of the Syncfusion React Pivot Table component and much more.
-platform: grid-sdk
-control: Performance best practices
-publishingplatform: grid-sdk
+title: Performance best practices in React Pivot Table | Syncfusion
+description: Learn how the React Pivot Table handles large datasets and complex reports with performance tips like virtual scrolling, paging, and data compression.
+platform: ej2-react
+control: Pivot Table
 documentation: ug
-domainurl: https://help.syncfusion.com/grid-sdk
+domainurl: ##DomainURL##
 ---
 
-# Best practices to improve the performance of the Pivot Table
+# Performance best practices in React Pivot Table
 
 Performance optimization is crucial when working with large datasets in the [Syncfusion<sup style="font-size:70%">&reg;</sup> React Pivot Table](https://www.syncfusion.com/react-components/react-pivot-table). This documentation provides some best practices to empower your data analysis and enhance the user experience.
 
@@ -83,20 +82,20 @@ It obviously impacts the overall performance during Pivot Table rendering becaus
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/performance-best-practices-cs1/app/App.jsx %}
+{% include code-snippet/pivot-table/performance-best-practices-cs1/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/performance-best-practices-cs1/app/App.tsx %}
+{% include code-snippet/pivot-table/performance-best-practices-cs1/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/performance-best-practices-cs1/app/datasource.jsx %}
+{% include code-snippet/pivot-table/performance-best-practices-cs1/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/performance-best-practices-cs1/app/datasource.tsx %}
+{% include code-snippet/pivot-table/performance-best-practices-cs1/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/performance-best-practices-cs1" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/performance-best-practices-cs1" %}
 
 To avoid this performance constraint, we recommend passing the input raw data along with pre-processed group field sets based on your grouping needs. For example, if your input raw data has a date field "Date" with the value "15/AUG/2019 03:41 PM" and you want to display it as the year and month alone, split out the date field as "Date_Year" = "15/AUG/2019" for the year and "Date_Month" = "15/AUG/2019" for the month. Further use the [formatSettings](https://ej2.syncfusion.com/react/documentation/api/pivotview/datasourcesettings#formatsettings) property to show these date fields with the chosen date format. Similarly, to group a number field, just alter its value based on your requirements (e.g., 1–5, 6–10).
 
@@ -104,20 +103,20 @@ Here's an example below of configuring grouping in your input raw data and assig
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/performance-best-practices-cs2/app/App.jsx %}
+{% include code-snippet/pivot-table/performance-best-practices-cs2/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/performance-best-practices-cs2/app/App.tsx %}
+{% include code-snippet/pivot-table/performance-best-practices-cs2/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/performance-best-practices-cs2/app/datasource.jsx %}
+{% include code-snippet/pivot-table/performance-best-practices-cs2/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/performance-best-practices-cs2/app/datasource.tsx %}
+{% include code-snippet/pivot-table/performance-best-practices-cs2/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/performance-best-practices-cs2" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/performance-best-practices-cs2" %}
 
 ### Value filtering
 

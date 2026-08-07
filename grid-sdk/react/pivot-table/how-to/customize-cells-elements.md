@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Customize cells elements in React Pivotview component | Syncfusion
-description: Learn here all about Customize cells elements in Syncfusion React Pivotview component of Syncfusion Essential JS 2 and more.
-control: Customize cells elements 
-platform: grid-sdk
+title: How to customize cell elements in React Pivot Table | Syncfusion
+description: Step-by-step example showing how to customize cell elements in the React Pivot Table using the cellTemplate property.
+control: Pivot Table
+platform: ej2-react
 documentation: ug
-domainurl: https://help.syncfusion.com/grid-sdk
+domainurl: ##DomainURL##
 ---
 
-# Customize cells elements in React Pivotview component
+# How to customize cell elements in React Pivot Table
 
-You can customize each cell in the Pivot Table by using the [`cellTemplate`](https://ej2.syncfusion.com/react/documentation/api/pivotview/#celltemplate) property. The [`cellTemplate`](https://ej2.syncfusion.com/react/documentation/api/pivotview/#celltemplate) option accepts either an HTML string or the ID of an HTML element. You can use this to append extra HTML and show custom content or styles for every cell.
+You can customize each cell in the Pivot Table by using the [`cellTemplate`](https://ej2.syncfusion.com/react/documentation/api/pivotview#celltemplate) property. The [`cellTemplate`](https://ej2.syncfusion.com/react/documentation/api/pivotview#celltemplate) option accepts either an HTML string or the ID of an HTML element. You can use this to append extra HTML and show custom content or styles for every cell.
 
 ## Implementation example
 
@@ -18,11 +18,11 @@ The following example demonstrates how to customize pivot table cells by display
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs159/app/App.jsx %}
+{% include code-snippet/pivot-table/default-cs159/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs159/app/App.tsx %}
+{% include code-snippet/pivot-table/default-cs159/app/App.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs159" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs159" %}

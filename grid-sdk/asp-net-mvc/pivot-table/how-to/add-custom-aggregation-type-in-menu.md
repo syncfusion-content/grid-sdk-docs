@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Custom aggregation menu ASP.NET MVC Pivot Table Syncfusion
-description: Learn here all about how to add custom aggregation type to the menu in Syncfusion ASP.NET MVC Pivot Table component of syncfusion and more.
-platform: grid-sdk
+title: How to Add Custom Aggregation in ASP.NET MVC Pivot Table | Syncfusion
+description: Learn how to add a custom aggregation type to the ASP.NET MVC Pivot Table's aggregate menu via the AggregateCellInfo event.
+platform: ej2-asp-core-mvc
 control: Add custom aggregation type to the menu
-publishingplatform: grid-sdk 
+publishingplatform: ##Platform_Name## 
 documentation: ug
 ---
 
 <!-- markdownlint-disable MD009 -->
 
-# Add custom aggregation type menu in ASP.NET MVC PivotView component
+# How to Add Custom Aggregation in ASP.NET MVC Pivot Table
 
 The ASP.NET MVC Pivot Table component allows you to extend its functionality by adding custom aggregation types to the built-in aggregation menu. This enables you to implement specific calculation methods beyond the standard options like Sum, Average, Min, and Max.
 
@@ -24,10 +24,10 @@ In the following example, we have added two custom aggregation types **CustomAgg
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/add-custom-aggregation/tagHelper %}
+{% include code-snippet/pivot-table/add-custom-aggregation/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="CustomAggregation.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/add-custom-aggregation/CustomAggregation.cs %}
+{% include code-snippet/pivot-table/add-custom-aggregation/CustomAggregation.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -35,10 +35,10 @@ In the following example, we have added two custom aggregation types **CustomAgg
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/add-custom-aggregation/razor %}
+{% include code-snippet/pivot-table/add-custom-aggregation/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="CustomAggregation.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/add-custom-aggregation/CustomAggregation.cs %}
+{% include code-snippet/pivot-table/add-custom-aggregation/CustomAggregation.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

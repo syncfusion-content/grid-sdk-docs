@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Conditional formatting in Angular Pivotview component | Syncfusion
-description: Learn here all about Conditional formatting in Syncfusion Angular Pivotview component of Syncfusion Essential JS 2 and more.
-platform: grid-sdk
+title: Conditional Formatting in Angular Pivot Table | Syncfusion
+description: Learn how the Angular Pivot Table applies conditional formatting to value cells via font, color, and background based on rules.
+platform: ej2-angular
 control: Conditional formatting 
 documentation: ug
-domainurl: https://help.syncfusion.com/grid-sdk
+domainurl: ##DomainURL##
 ---
 
-# Conditional formatting in Angular Pivotview component
+# Conditional Formatting in Angular Pivot Table
 
 The conditional formatting feature enables users to customize the appearance of pivot table value cells by modifying background color, font color, font family, and font size based on specific conditions. This powerful visualization feature helps highlight important value cells and makes them stand out in the pivot table.
 
@@ -16,15 +16,15 @@ The conditional formatting can be applied at runtime through the built-in dialog
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs16/src/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs16/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs16/src/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs16/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs16" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs16" %}
 
 ## Configure conditional formatting through code-behind
 
@@ -52,15 +52,15 @@ To enable conditional formatting, the `ConditionalFormattingService` must be add
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs17/src/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs17/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs17/src/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs17/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs17" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs17" %}
 
 ## Conditional formatting for all fields
 
@@ -70,15 +70,15 @@ To format all value fields together, use the [conditionalFormatSettings](https:/
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs18/src/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs18/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs18/src/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs18/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs18" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs18" %}
 
 ## Conditional formatting for specific value field
 
@@ -86,21 +86,21 @@ To apply conditional formatting exclusively to a particular value field, set the
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs19/src/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs19/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs19/src/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs19/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs19" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs19" %}
 
 ## Editing and removing existing conditional format
 
 Editing and removing existing conditional format can be done through the UI at runtime. To do so, open the conditional formatting dialog and edit the "Value", "Condition" and "Format" options based on user requirement and click "OK". To remove a conditional format, click the "Delete" icon besides the respective condition.  
 
-![output](images/cformatting_remove.png)
+![output](../images/cformatting_remove.png)
 
 ## Event
 
@@ -118,15 +118,15 @@ The [conditionalFormatting](https://ej2.syncfusion.com/angular/documentation/api
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs20/src/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs20/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs20/src/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs20/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs20" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs20" %}
 
 ## See Also
 

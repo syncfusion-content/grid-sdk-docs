@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Value sorting in Vue Pivot Table component | Syncfusion
-description: Learn here all about Value sorting in Syncfusion Vue Pivot Table component of Syncfusion Essential JS 2 and more.
+title: Value Sorting in Vue Pivot Table | Syncfusion
+description: Learn how the Vue Pivot Table sorts individual value columns via the enableValueSorting and valueSortSettings properties, with header text and delimiter controls.
 control: Value sorting 
-platform: grid-sdk
+platform: ej2-vue
 documentation: ug
-domainurl: https://help.syncfusion.com/grid-sdk
+domainurl: ##DomainURL##
 ---
 
-# Value sorting in Vue Pivot Table component
+# Value Sorting in Vue Pivot Table
 
 Value sorting allows you to sort individual column based on it's values either in ascending or descending order. It can been enabled by setting the `enableValueSorting` property to **true**. You can sort the column values by clicking the column header.
 
@@ -19,14 +19,14 @@ Value sorting can be configured using the `valueSortSettings` option through cod
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/default-cs259/app-composition.vue %}
+{% include code-snippet/pivot-grid/default-cs259/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/default-cs259/app.vue %}
+{% include code-snippet/pivot-grid/default-cs259/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/default-cs259" %}
+{% previewsample "page.domainurl/code-snippet/pivot-grid/default-cs259" %}
 
 ## See Also
 

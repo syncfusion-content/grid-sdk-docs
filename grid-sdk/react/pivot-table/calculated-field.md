@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Calculated field in React Pivot Table component | Syncfusion
-description: Learn here all about Calculated field in Syncfusion React Pivot Table component of Syncfusion Essential JS 2 and more.
-control: Calculated field
-platform: grid-sdk 
+title: Calculated field in React Pivot Table | Syncfusion
+description: Learn how the React Pivot Table calculates new value fields at runtime using custom formulas, arithmetic operators, and the calculatedFieldSettings property.
+control: Pivot Table
+platform: ej2-react
 documentation: ug
-domainurl: https://help.syncfusion.com/grid-sdk
+domainurl: ##DomainURL##
 ---
 
-# Calculated field in React Pivot Table component
+# Calculated field in React Pivot Table
 
 The calculated field feature enables users to create custom value fields using mathematical formulas and existing fields from their data source. Users can perform complex calculations with basic arithmetic operators and seamlessly integrate these custom fields into their pivot table for enhanced data visualization and reporting.
 
@@ -34,20 +34,20 @@ To use the calculated field feature, you must inject the `CalculatedField` modul
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs9/app/App.jsx %}
+{% include code-snippet/pivot-table/default-cs9/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs9/app/App.tsx %}
+{% include code-snippet/pivot-table/default-cs9/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs9/app/datasource.jsx %}
+{% include code-snippet/pivot-table/default-cs9/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs9/app/datasource.tsx %}
+{% include code-snippet/pivot-table/default-cs9/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs9" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs9" %}
 
 ## Opening the calculated field dialog programmatically
 
@@ -55,20 +55,20 @@ You can display the calculated field dialog by calling the [`createCalculatedFie
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs10/app/App.jsx %}
+{% include code-snippet/pivot-table/default-cs10/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs10/app/App.tsx %}
+{% include code-snippet/pivot-table/default-cs10/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs10/app/datasource.jsx %}
+{% include code-snippet/pivot-table/default-cs10/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs10/app/datasource.tsx %}
+{% include code-snippet/pivot-table/default-cs10/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs10" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs10" %}
 
 ## Editing through the field list and grouping bar
 
@@ -294,20 +294,20 @@ Below is a list of operators and functions that can be used in the formula to cr
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs11/app/App.jsx %}
+{% include code-snippet/pivot-table/default-cs11/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs11/app/App.tsx %}
+{% include code-snippet/pivot-table/default-cs11/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs11/app/datasource.jsx %}
+{% include code-snippet/pivot-table/default-cs11/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs11/app/datasource.tsx %}
+{% include code-snippet/pivot-table/default-cs11/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs11" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs11" %}
 
 ## Event
 
@@ -335,20 +335,20 @@ The following example shows how to prevent users from creating calculated fields
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs12/app/App.jsx %}
+{% include code-snippet/pivot-table/default-cs12/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs12/app/App.tsx %}
+{% include code-snippet/pivot-table/default-cs12/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs12/app/datasource.jsx %}
+{% include code-snippet/pivot-table/default-cs12/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs12/app/datasource.tsx %}
+{% include code-snippet/pivot-table/default-cs12/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs12" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs12" %}
 
 ### ActionBegin
 
@@ -385,20 +385,20 @@ The example below illustrates how to prevent access to the calculated field dial
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs13/app/App.jsx %}
+{% include code-snippet/pivot-table/default-cs13/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs13/app/App.tsx %}
+{% include code-snippet/pivot-table/default-cs13/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs13/app/datasource.jsx %}
+{% include code-snippet/pivot-table/default-cs13/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs13/app/datasource.tsx %}
+{% include code-snippet/pivot-table/default-cs13/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs13" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs13" %}
 
 ### ActionComplete
 
@@ -429,20 +429,20 @@ The example below demonstrates how to use the [`actionComplete`](https://ej2.syn
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs14/app/App.jsx %}
+{% include code-snippet/pivot-table/default-cs14/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs14/app/App.tsx %}
+{% include code-snippet/pivot-table/default-cs14/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs14/app/datasource.jsx %}
+{% include code-snippet/pivot-table/default-cs14/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs14/app/datasource.tsx %}
+{% include code-snippet/pivot-table/default-cs14/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs14" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs14" %}
 
 ### ActionFailure
 
@@ -460,17 +460,17 @@ The [`actionFailure`](https://ej2.syncfusion.com/react/documentation/api/pivotvi
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs15/app/App.jsx %}
+{% include code-snippet/pivot-table/default-cs15/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs15/app/App.tsx %}
+{% include code-snippet/pivot-table/default-cs15/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs15/app/datasource.jsx %}
+{% include code-snippet/pivot-table/default-cs15/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs15/app/datasource.tsx %}
+{% include code-snippet/pivot-table/default-cs15/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs15" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs15" %}

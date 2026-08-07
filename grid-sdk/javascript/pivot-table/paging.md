@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Paging in JavaScript Pivot Table component | Syncfusion
-description: Learn here all about Paging in Syncfusion JavaScript Pivot Table component of Syncfusion Essential JS 2 and more.
-platform: grid-sdk
-control: Paging 
-publishingplatform: grid-sdk
+title: Paging in ##Platform_Name## Pivot Table | Syncfusion
+description: Learn how the ##Platform_Name## Pivot Table paginates large row and column data via `enablePaging` and `pageSettings`, with a built-in pager UI for navigation.
+platform: ej2-javascript
+control: Paging
+publishingplatform: ##Platform_Name##
 documentation: ug
-domainurl: https://help.syncfusion.com/grid-sdk
+domainurl: ##DomainURL##
 ---
 
-# Paging in JavaScript Pivot Table component
+# Paging in ##Platform_Name## Pivot Table
 
 The paging feature in the Pivot Table component is designed to handle large datasets efficiently by dividing the data into manageable pages. This prevents performance issues associated with rendering large amounts of data at once, allowing users to navigate through rows and columns page by page.
 
@@ -32,14 +32,14 @@ You can also change the position, visibility, compact view, and template of the 
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs198/index.js %}
+{% include code-snippet/pivot-table/pivot-table-cs198/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs198/index.html %}
+{% include code-snippet/pivot-table/pivot-table-cs198/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs198" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs198" %}
 
 ### Show pager UI at top or bottom
 
@@ -49,14 +49,14 @@ The following code demonstrates how to configure the pager UI to appear at the t
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs199/index.js %}
+{% include code-snippet/pivot-table/pivot-table-cs199/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs199/index.html %}
+{% include code-snippet/pivot-table/pivot-table-cs199/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs199" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs199" %}
 
 ### Inverse pager
 
@@ -64,14 +64,14 @@ The Pivot Table allows you to toggle the positions of the row and column pagers 
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs200/index.js %}
+{% include code-snippet/pivot-table/pivot-table-cs200/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs200/index.html %}
+{% include code-snippet/pivot-table/pivot-table-cs200/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs200" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs200" %}
 
 ### Compact view
 
@@ -79,14 +79,14 @@ The Pivot Table provides a compact view for the pager UI, displaying only the pr
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs201/index.js %}
+{% include code-snippet/pivot-table/pivot-table-cs201/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs201/index.html %}
+{% include code-snippet/pivot-table/pivot-table-cs201/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs201" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs201" %}
 
 ### Show or hide paging option
 
@@ -96,14 +96,14 @@ The following code demonstrates how to hide the row pager by setting the [`showR
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs202/index.js %}
+{% include code-snippet/pivot-table/pivot-table-cs202/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs202/index.html %}
+{% include code-snippet/pivot-table/pivot-table-cs202/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs202" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs202" %}
 
 ### Show or hide page size
 
@@ -111,14 +111,14 @@ The Pivot Table allows you to control the visibility of the "Rows per page" and 
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs203/index.js %}
+{% include code-snippet/pivot-table/pivot-table-cs203/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs203/index.html %}
+{% include code-snippet/pivot-table/pivot-table-cs203/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs203" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs203" %}
 
 ### Customize page size
 
@@ -128,14 +128,14 @@ The following example sets the "Rows per page" dropdown with page sizes of 10, 2
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs204/index.js %}
+{% include code-snippet/pivot-table/pivot-table-cs204/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs204/index.html %}
+{% include code-snippet/pivot-table/pivot-table-cs204/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs204" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs204" %}
 
 ### Template
 
@@ -145,11 +145,11 @@ This following example shows how to create a custom template for both row and co
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/paging-cs1/index.js %}
+{% include code-snippet/pivot-table/paging-cs1/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/paging-cs1/index.html %}
+{% include code-snippet/pivot-table/paging-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/pivot-table/paging-cs1" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/paging-cs1" %}

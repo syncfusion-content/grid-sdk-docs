@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Hyper link in JavaScript Pivot Table component | Syncfusion
-description: Learn here all about Hyper link in Syncfusion JavaScript Pivot Table component of Syncfusion Essential JS 2 and more.
-platform: grid-sdk
-control: Hyper link 
-publishingplatform: grid-sdk
+title: Hyper Link in ##Platform_Name## Pivot Table | Syncfusion
+description: Learn how the ##Platform_Name## Pivot Table adds hyperlinks to row headers, column headers, value cells, and summary cells via `hyperlinkSettings`.
+platform: ej2-javascript
+control: Hyper link
+publishingplatform: ##Platform_Name##
 documentation: ug
-domainurl: https://help.syncfusion.com/grid-sdk
+domainurl: ##DomainURL##
 ---
 
-# Hyper link in JavaScript Pivot Table component
+# Hyper Link in ##Platform_Name## Pivot Table
 
 The Pivot Table component provides built-in support for displaying hyperlinks within individual cells. This feature allows users to link data in specific cells, enhancing interactivity and navigation.
 
@@ -46,14 +46,14 @@ Once enabled, hyperlinks will be shown consistently in row headers, column heade
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs179/index.js %}
+{% include code-snippet/pivot-table/pivot-table-cs179/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs179/index.html %}
+{% include code-snippet/pivot-table/pivot-table-cs179/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs179" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs179" %}
 
 ## Hyperlink for row headers
 
@@ -61,14 +61,14 @@ The pivot table provides a way to display hyperlinks specifically in **row heade
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs180/index.js %}
+{% include code-snippet/pivot-table/pivot-table-cs180/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs180/index.html %}
+{% include code-snippet/pivot-table/pivot-table-cs180/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs180" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs180" %}
 
 ## Hyperlink for column headers
 
@@ -76,14 +76,14 @@ The pivot table provides an option to display hyperlinks specifically in column 
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs181/index.js %}
+{% include code-snippet/pivot-table/pivot-table-cs181/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs181/index.html %}
+{% include code-snippet/pivot-table/pivot-table-cs181/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs181" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs181" %}
 
 ## Hyperlink for value cells
 
@@ -91,14 +91,14 @@ The pivot table provides support for displaying hyperlinks specifically in value
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs182/index.js %}
+{% include code-snippet/pivot-table/pivot-table-cs182/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs182/index.html %}
+{% include code-snippet/pivot-table/pivot-table-cs182/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs182" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs182" %}
 
 ## Hyperlink for summary cells
 
@@ -106,14 +106,14 @@ The pivot table provides support for displaying hyperlinks specifically in summa
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs183/index.js %}
+{% include code-snippet/pivot-table/pivot-table-cs183/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs183/index.html %}
+{% include code-snippet/pivot-table/pivot-table-cs183/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs183" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs183" %}
 
 ## Condition based hyperlink
 
@@ -128,14 +128,14 @@ In the example below, the pivot table is configured to display hyperlinks only i
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs184/index.js %}
+{% include code-snippet/pivot-table/pivot-table-cs184/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs184/index.html %}
+{% include code-snippet/pivot-table/pivot-table-cs184/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs184" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs184" %}
 
 ## Header based hyperlink
 
@@ -147,14 +147,14 @@ N> The **dot(.)** character in **FY 2015.Q1.Units Sold** is used by default to i
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs185/index.js %}
+{% include code-snippet/pivot-table/pivot-table-cs185/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs185/index.html %}
+{% include code-snippet/pivot-table/pivot-table-cs185/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs185" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs185" %}
 
 ## Event
 
@@ -167,18 +167,18 @@ It provides two parameters:
 * [`data`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/hyperCellClickEventArgs#data): Contains detailed information about the clicked cell, including its value, row and column headers, position, and whether it’s a summary cell.
 * [`nativeEvent`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/hyperCellClickEventArgs#nativeevent): Represents the original browser event triggered by the click, useful for advanced event handling.
 
-In the example below, when a hyperlink cell is clicked, a custom attribute (**data-url**) is added to the cell to redirect users to the Syncfusion Javascript Pivot Table Hyperlink [Demo](https://ej2.syncfusion.com/demos#/tailwind3/pivot-table/hyper-link.html). The [`cancel`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/hyperCellClickEventArgs#cancel) property is set to **false** to enable this interaction.
+In the example below, when a hyperlink cell is clicked, a custom attribute (**data-url**) is added to the cell to redirect users to the Syncfusion JavaScript Pivot Table Hyperlink [Demo](https://ej2.syncfusion.com/demos/#/tailwind3/pivot-table/hyper-link.html). The [`cancel`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/hyperCellClickEventArgs#cancel) property is set to **false** to enable this interaction.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs186/index.js %}
+{% include code-snippet/pivot-table/pivot-table-cs186/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs186/index.html %}
+{% include code-snippet/pivot-table/pivot-table-cs186/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs186" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs186" %}
 
 ## See Also
 

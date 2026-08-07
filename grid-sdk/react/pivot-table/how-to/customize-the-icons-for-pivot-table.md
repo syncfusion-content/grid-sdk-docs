@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Customize the icons for pivot table in React | Syncfusion
-description: Learn here all about Customize the icons for pivot table in Syncfusion React Pivotview component of Syncfusion Essential JS 2 and more.
-control: Customize the icons for pivot table 
-platform: grid-sdk
+title: How to customize pivot table icons in React Pivot Table | Syncfusion
+description: Step-by-step example showing how to customize the icons for pivot table in the React Pivot Table by overriding CSS classes with custom Unicode.
+control: Pivot Table
+platform: ej2-react
 documentation: ug
-domainurl: https://help.syncfusion.com/grid-sdk
+domainurl: ##DomainURL##
 ---
 
-# Customize the icons within the React Pivot Table component
+# How to customize pivot table icons in React Pivot Table
 
 The React Pivot Table component supports the customization of various icons across its interface. This includes icons for the field list, expand/collapse actions, and other interactive elements. You can customize these icons by overriding the default CSS classes with custom Unicode values.
 
@@ -37,17 +37,17 @@ The following sample demonstrates a pivot table rendered with customized field l
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/icon-customization-cs1/app/App.jsx %}
+{% include code-snippet/pivot-table/icon-customization-cs1/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/icon-customization-cs1/app/App.tsx %}
+{% include code-snippet/pivot-table/icon-customization-cs1/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/icon-customization-cs1/app/datasource.jsx %}
+{% include code-snippet/pivot-table/icon-customization-cs1/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/icon-customization-cs1/app/datasource.tsx %}
+{% include code-snippet/pivot-table/icon-customization-cs1/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/icon-customization-cs1" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/icon-customization-cs1" %}

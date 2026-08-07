@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Ej1 api migration in TypeScript Pivot Table component | Syncfusion
-description: Learn here all about Ej1 api migration in Syncfusion TypeScript Pivot Table component of Syncfusion Essential JS 2 and more.
-platform: grid-sdk
-control: Ej1 api migration 
-publishingplatform: grid-sdk
+title: EJ1 API Migration in ##Platform_Name## Pivot Table | Syncfusion
+description: Learn how the ##Platform_Name## Pivot Table migrates from Essential JS 1 to JS 2, mapping data source, rows, columns, values, and filters to `dataSourceSettings`.
+platform: ej2-javascript
+control: EJ1 API migration
+publishingplatform: ##Platform_Name##
 documentation: ug
-domainurl: https://help.syncfusion.com/grid-sdk
+domainurl: ##DomainURL##
 ---
 
-# Ej1 api migration in TypeScript Pivot Table component
+# EJ1 API Migration in ##Platform_Name## Pivot Table
 
 This article describes the API migration process of pivot table component from Essential<sup style="font-size:70%">&reg;</sup> JS 1 to Essential<sup style="font-size:70%">&reg;</sup> JS 2.
 

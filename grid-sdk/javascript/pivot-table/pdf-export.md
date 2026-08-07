@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Pdf export in JavaScript Pivot Table component | Syncfusion
-description: Learn here all about Pdf export in Syncfusion JavaScript Pivot Table component of Syncfusion Essential JS 2 and more.
-platform: grid-sdk
-control: Pdf export 
-publishingplatform: grid-sdk
+title: PDF Export in ##Platform_Name## Pivot Table | Syncfusion
+description: Learn how the ##Platform_Name## Pivot Table exports to PDF via `pdfExport`, with multiple Pivot Tables supported in a single document using `pivotTableIds`.
+platform: ej2-javascript
+control: PDF export
+publishingplatform: ##Platform_Name##
 documentation: ug
-domainurl: https://help.syncfusion.com/grid-sdk
+domainurl: ##DomainURL##
 ---
 
-# Pdf export in JavaScript Pivot Table component
+# PDF Export in ##Platform_Name## Pivot Table
 
 The Javascript Pivot Table lets users easily export their pivot table data as a PDF document. By setting the [`allowPdfExport`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/index-default#allowpdfexport) property to **true** in the Pivot Table configuration, users can enable PDF export. Once enabled, you can use the [`pdfExport`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/index-default#pdfexport) method to generate and download the PDF file.
 
@@ -17,14 +17,14 @@ In the following example, an external button is used to start the PDF export pro
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/pdf-export-cs1/index.js %}
+{% include code-snippet/pivot-table/pdf-export-cs1/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/pdf-export-cs1/index.html %}
+{% include code-snippet/pivot-table/pdf-export-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/pivot-table/pdf-export-cs1" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/pdf-export-cs1" %}
 
 ## Multiple pivot table exporting
 
@@ -38,14 +38,14 @@ To export multiple Pivot Tables on the same page, set the `multipleExport.type` 
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/pdf-export-cs25/index.js %}
+{% include code-snippet/pivot-table/pdf-export-cs25/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/pdf-export-cs25/index.html %}
+{% include code-snippet/pivot-table/pdf-export-cs25/index.html %}
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/pivot-table/pdf-export-cs25" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/pdf-export-cs25" %}
 
 ### New page
 
@@ -53,14 +53,14 @@ To export each Pivot Table on a separate page, set the `multipleExport.type` pro
 
 {% tabs %}
 {% highlight ts tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/pdf-export-cs42/index.js %}
+{% include code-snippet/pivot-table/pdf-export-cs42/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/pdf-export-cs42/index.html %}
+{% include code-snippet/pivot-table/pdf-export-cs42/index.html %}
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/pivot-table/pdf-export-cs42" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/pdf-export-cs42" %}
 
 ## Export table and chart into the same document
 
@@ -70,14 +70,14 @@ The following example shows how you can set this up in your application:
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/pdf-export-cs3/index.js %}
+{% include code-snippet/pivot-table/pdf-export-cs3/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/pdf-export-cs3/index.html %}
+{% include code-snippet/pivot-table/pdf-export-cs3/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/pivot-table/pdf-export-cs3" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/pdf-export-cs3" %}
 
 ## Customization during PDF export
 
@@ -174,14 +174,14 @@ The below code illustrates the PDF export customization options.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/pdf-export-cs4/index.js %}
+{% include code-snippet/pivot-table/pdf-export-cs4/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/pdf-export-cs4/index.html %}
+{% include code-snippet/pivot-table/pdf-export-cs4/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/pivot-table/pdf-export-cs4" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/pdf-export-cs4" %}
 
 #### Add an image in header/footer
 
@@ -210,14 +210,14 @@ The below code illustrates the PDF export customization options.
 
 {% tabs %}
 {% highlight ts tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/pdf-export-cs41/index.js %}
+{% include code-snippet/pivot-table/pdf-export-cs41/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/pdf-export-cs41/index.html %}
+{% include code-snippet/pivot-table/pdf-export-cs41/index.html %}
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/pivot-table/pdf-export-cs41" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/pdf-export-cs41" %}
 
 ### Changing the file name while exporting
 
@@ -225,14 +225,14 @@ The PDF export provides an option to change the file name of the document before
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/pdf-export-cs5/index.js %}
+{% include code-snippet/pivot-table/pdf-export-cs5/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/pdf-export-cs5/index.html %}
+{% include code-snippet/pivot-table/pdf-export-cs5/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/pivot-table/pdf-export-cs5" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/pdf-export-cs5" %}
 
 ### Changing page orientation while exporting
 
@@ -240,14 +240,14 @@ When exporting the Pivot Table as a PDF, users can choose the page orientation o
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/pdf-export-cs6/index.js %}
+{% include code-snippet/pivot-table/pdf-export-cs6/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/pdf-export-cs6/index.html %}
+{% include code-snippet/pivot-table/pdf-export-cs6/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/pivot-table/pdf-export-cs6" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/pdf-export-cs6" %}
 
 ### Changing page size while exporting
 
@@ -259,14 +259,14 @@ This option lets users easily adjust the PDF layout to fit their specific needs 
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/pdf-export-cs7/index.js %}
+{% include code-snippet/pivot-table/pdf-export-cs7/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/pdf-export-cs7/index.html %}
+{% include code-snippet/pivot-table/pdf-export-cs7/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/pivot-table/pdf-export-cs7" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/pdf-export-cs7" %}
 
 ### Changing document width and height while exporting
 
@@ -274,14 +274,14 @@ You can adjust the size of the exported PDF document by setting the [`height`](h
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/pdf-export-cs8/index.js %}
+{% include code-snippet/pivot-table/pdf-export-cs8/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/pdf-export-cs8/index.html %}
+{% include code-snippet/pivot-table/pdf-export-cs8/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/pivot-table/pdf-export-cs8" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/pdf-export-cs8" %}
 
 ### Customize the table column count while exporting
 
@@ -289,14 +289,14 @@ Users can control how many Pivot Table columns appear on each page of the export
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/pdf-export-cs9/index.js %}
+{% include code-snippet/pivot-table/pdf-export-cs9/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/pdf-export-cs9/index.html %}
+{% include code-snippet/pivot-table/pdf-export-cs9/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/pivot-table/pdf-export-cs9" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/pdf-export-cs9" %}
 
 ### Changing the table's column width and row height while exporting
 
@@ -310,14 +310,14 @@ For example, the **"Units Sold"** column under **"FY 2015"** can be set to a wid
 
 {% tabs %}
 {% highlight ts tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/pdf-export-cs39/index.js %}
+{% include code-snippet/pivot-table/pdf-export-cs39/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/pdf-export-cs39/index.html %}
+{% include code-snippet/pivot-table/pdf-export-cs39/index.html %}
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/pivot-table/pdf-export-cs39" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/pdf-export-cs39" %}
 
 #### Adjusting row height
 
@@ -327,14 +327,14 @@ For example, the **"Mountain Bikes"** row under **"France"** can be set to a hei
 
 {% tabs %}
 {% highlight ts tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/pdf-export-cs40/index.js %}
+{% include code-snippet/pivot-table/pdf-export-cs40/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/pdf-export-cs40/index.html %}
+{% include code-snippet/pivot-table/pdf-export-cs40/index.html %}
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/pivot-table/pdf-export-cs40" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/pdf-export-cs40" %}
 
 ### Customize the pivot report during export
 
@@ -344,14 +344,14 @@ In the following example, the [`beforeExport`](https://ej2.syncfusion.com/javasc
 
 {% tabs %}
 {% highlight ts tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/pdf-export-cs43/index.js %}
+{% include code-snippet/pivot-table/pdf-export-cs43/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/pdf-export-cs43/index.html %}
+{% include code-snippet/pivot-table/pdf-export-cs43/index.html %}
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/pivot-table/pdf-export-cs43" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/pdf-export-cs43" %}
 
 ### Exporting with row and column cells spanning
 
@@ -366,14 +366,14 @@ In the following code example, the row and column spans are adjusted for empty c
 
 {% tabs %}
 {% highlight ts tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/pdf-export-cs51/index.js %}
+{% include code-snippet/pivot-table/pdf-export-cs51/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/pdf-export-cs51/index.html %}
+{% include code-snippet/pivot-table/pdf-export-cs51/index.html %}
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/pivot-table/pdf-export-cs51" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/pdf-export-cs51" %}
 
 ### Exporting with hyperlinks and images
 
@@ -383,14 +383,14 @@ The Pivot Table allows adding hyperlinks and images to cells during PDF export. 
 
 {% tabs %}
 {% highlight ts tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/pdf-export-cs49/index.js %}
+{% include code-snippet/pivot-table/pdf-export-cs49/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/pdf-export-cs49/index.html %}
+{% include code-snippet/pivot-table/pdf-export-cs49/index.html %}
 {% endhighlight %}
 {% endtabs %}
  
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/pivot-table/pdf-export-cs49" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/pdf-export-cs49" %}
 
 ## Exporting with custom aggregates
 
@@ -409,14 +409,14 @@ The following example shows how to add two custom aggregate types to the aggrega
 
 {% tabs %}
 {% highlight ts tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/pdf-export-cs44/index.js %}
+{% include code-snippet/pivot-table/pdf-export-cs44/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/pdf-export-cs44/index.html %}
+{% include code-snippet/pivot-table/pdf-export-cs44/index.html %}
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/pivot-table/pdf-export-cs44" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/pdf-export-cs44" %}
 
 ## Exporting with custom date format
 
@@ -432,14 +432,14 @@ The following example demonstrates exporting a Pivot Table with a custom date fo
 
 {% tabs %}
 {% highlight ts tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/pdf-export-cs45/index.js %}
+{% include code-snippet/pivot-table/pdf-export-cs45/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/pdf-export-cs45/index.html %}
+{% include code-snippet/pivot-table/pdf-export-cs45/index.html %}
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/pivot-table/pdf-export-cs45" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/pdf-export-cs45" %}
 
 ## Changing the pivot table style while exporting
 
@@ -449,14 +449,14 @@ When you export the Pivot Table as a PDF document, you can change the colors use
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/pdf-export-cs10/index.js %}
+{% include code-snippet/pivot-table/pdf-export-cs10/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/pdf-export-cs10/index.html %}
+{% include code-snippet/pivot-table/pdf-export-cs10/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/pivot-table/pdf-export-cs10" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/pdf-export-cs10" %}
 
 ### Changing default font while exporting 
 
@@ -488,14 +488,14 @@ You can also use custom fonts when exporting if you need support for languages o
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/pdf-export-cs11/index.js %}
+{% include code-snippet/pivot-table/pdf-export-cs11/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/pdf-export-cs11/index.html %}
+{% include code-snippet/pivot-table/pdf-export-cs11/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/pivot-table/pdf-export-cs11" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/pdf-export-cs11" %}
 
 > Non-English alphabets can also be exported correctly when you specify a suitable font.
 
@@ -507,14 +507,14 @@ The following example demonstrates how to apply conditional formatting to the **
 
 {% tabs %}
 {% highlight ts tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/pdf-export-cs46/index.js %}
+{% include code-snippet/pivot-table/pdf-export-cs46/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/pdf-export-cs46/index.html %}
+{% include code-snippet/pivot-table/pdf-export-cs46/index.html %}
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/pivot-table/pdf-export-cs46" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/pdf-export-cs46" %}
 
 ## Enabling horizontal overflow
 
@@ -522,14 +522,14 @@ The Pivot Table component supports exporting all columns on a single page in the
 
 {% tabs %}
 {% highlight ts tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/pdf-export-cs48/index.js %}
+{% include code-snippet/pivot-table/pdf-export-cs48/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/pdf-export-cs48/index.html %}
+{% include code-snippet/pivot-table/pdf-export-cs48/index.html %}
 {% endhighlight %}
 {% endtabs %}
  
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/pivot-table/pdf-export-cs48" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/pdf-export-cs48" %}
 
 ## Export only the current page
 
@@ -539,14 +539,14 @@ By default, the Pivot Table exports all data records. When working with large da
 
 {% tabs %}
 {% highlight ts tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/pdf-export-cs37/index.js %}
+{% include code-snippet/pivot-table/pdf-export-cs37/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/pdf-export-cs37/index.html %}
+{% include code-snippet/pivot-table/pdf-export-cs37/index.html %}
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/pivot-table/pdf-export-cs37" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/pdf-export-cs37" %}
 
 ## Repeat row headers
 
@@ -554,14 +554,14 @@ By default, row headers are repeated on each page when exporting the Pivot Table
 
 {% tabs %}
 {% highlight ts tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/pdf-export-cs36/index.js %}
+{% include code-snippet/pivot-table/pdf-export-cs36/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/pdf-export-cs36/index.html %}
+{% include code-snippet/pivot-table/pdf-export-cs36/index.html %}
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/pivot-table/pdf-export-cs36" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/pdf-export-cs36" %}
 
 ## Repeat column headers on every page
 
@@ -569,14 +569,14 @@ By default, column headers are repeated on each page when exporting the Pivot Ta
 
 {% tabs %}
 {% highlight ts tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/pdf-export-cs50/index.js %}
+{% include code-snippet/pivot-table/pdf-export-cs50/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/pdf-export-cs50/index.html %}
+{% include code-snippet/pivot-table/pdf-export-cs50/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/pivot-table/pdf-export-cs50" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/pdf-export-cs50" %}
 
 ## Show spinner during export
 
@@ -584,14 +584,14 @@ When exporting data, displaying a spinner provides visual feedback to users that
 
 {% tabs %}
 {% highlight ts tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/pdf-export-cs47/index.js %}
+{% include code-snippet/pivot-table/pdf-export-cs47/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/pdf-export-cs47/index.html %}
+{% include code-snippet/pivot-table/pdf-export-cs47/index.html %}
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/pivot-table/pdf-export-cs47" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/pdf-export-cs47" %}
 
 ## Events
 
@@ -608,14 +608,14 @@ By using this event, users can easily update the cell text, apply different styl
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs205/index.js %}
+{% include code-snippet/pivot-table/pivot-table-cs205/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs205/index.html %}
+{% include code-snippet/pivot-table/pivot-table-cs205/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs205" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs205" %}
 
 ### PdfHeaderQueryCellInfo
 
@@ -628,14 +628,14 @@ The event provides the following parameters:
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs206/index.js %}
+{% include code-snippet/pivot-table/pivot-table-cs206/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs206/index.html %}
+{% include code-snippet/pivot-table/pivot-table-cs206/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs206" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs206" %}
 
 ### ExportComplete
 
@@ -648,14 +648,14 @@ The event provides the following parameters:
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/pdf-export-cs15/index.js %}
+{% include code-snippet/pivot-table/pdf-export-cs15/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/pdf-export-cs15/index.html %}
+{% include code-snippet/pivot-table/pdf-export-cs15/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/pivot-table/pdf-export-cs15" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/pdf-export-cs15" %}
 
 ## See Also
 

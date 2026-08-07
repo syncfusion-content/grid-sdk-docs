@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Refresh the field list in Angular Pivotview component | Syncfusion
-description: Learn here all about Refresh the field list in Syncfusion Angular Pivotview component of Syncfusion Essential JS 2 and more.
-platform: grid-sdk
+title: How to Refresh the Field List in Angular Pivot Table | Syncfusion
+description: Step-by-step example showing how to refresh the field list in the Angular Pivot Table, with code snippets and property references.
+platform: ej2-angular
 control: Refresh the field list 
 documentation: ug
-domainurl: https://help.syncfusion.com/grid-sdk
+domainurl: ##DomainURL##
 ---
 
-# Refresh the field list in Angular Pivotview component
+# How to Refresh the Field List in Angular Pivot Table
 
 The Angular Pivotview component allows dynamic data source updates, enabling you to refresh both the pivot table and field list with new data at runtime. This approach is especially useful in scenarios where data changes frequently or when switching between different datasets without reinitializing the entire component.
 
@@ -18,12 +18,12 @@ The following code example demonstrates how to refresh the Pivot Table and field
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs169/src/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs169/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs169/src/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs169/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs169" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs169" %}

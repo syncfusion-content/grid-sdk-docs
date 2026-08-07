@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Filtering in React Pivot Table component | Syncfusion
-description: Learn here all about Filtering in Syncfusion React Pivot Table component of Syncfusion Essential JS 2 and more.
-platform: grid-sdk
-control: Filtering
+title: Filtering in React Pivot Table | Syncfusion
+description: Learn how the React Pivot Table filters rows and columns using member, label, and value filtering for focused data analysis.
+platform: ej2-react
+control: Pivot Table
 documentation: ug
-domainurl: https://help.syncfusion.com/grid-sdk
+domainurl: ##DomainURL##
 ---
 
 <!-- markdownlint-disable MD012 -->
 
-# Filtering in React Pivot Table component
+# Filtering in React Pivot Table
 
 Filtering helps you focus on specific data by showing only the records you need in the Pivot Table. This allows you to analyze relevant information more effectively by including or excluding specific members through the user interface or programmatically.
 
@@ -50,20 +50,20 @@ You can also configure filtering programmatically using the [`filterSettings`](h
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs95/app/App.jsx %}
+{% include code-snippet/pivot-table/default-cs95/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs95/app/App.tsx %}
+{% include code-snippet/pivot-table/default-cs95/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs95/app/datasource.jsx %}
+{% include code-snippet/pivot-table/default-cs95/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs95/app/datasource.tsx %}
+{% include code-snippet/pivot-table/default-cs95/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs95" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs95" %}
 
 ### Option to select and unselect all members
 
@@ -101,14 +101,14 @@ You can control how many members are displayed in the member filter dialog using
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs96/app/App.jsx %}
+{% include code-snippet/pivot-table/default-cs96/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs96/app/App.tsx %}
+{% include code-snippet/pivot-table/default-cs96/app/App.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs96" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs96" %}
 
 When the member count exceeds your set limit, you can use the search option to find specific members beyond the displayed range. For example, if your data contains 5000 members named "Node 1", "Node 2", "Node 3", and so on, and you set the [`maxNodeLimitInMemberEditor`](https://ej2.syncfusion.com/react/documentation/api/pivotview/index-default#maxnodelimitinmembereditor) property to **500**, only the first 500 members will appear by default. The dialog will show a message like "4500 more items. Search to refine further." To access members 501 to 5000, type the starting characters in the search box to locate the desired members. Once the members appear in the list, you can select or deselect them to apply your filtering preferences.
 
@@ -127,14 +127,14 @@ This approach prevents performance issues when working with hierarchies that con
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs97/app/App.jsx %}
+{% include code-snippet/pivot-table/default-cs97/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs97/app/App.tsx %}
+{% include code-snippet/pivot-table/default-cs97/app/App.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs97" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs97" %}
 
 ![Loading members on-demand](images/ondemand_member.png)
 
@@ -159,14 +159,14 @@ The [`levelCount`](https://ej2.syncfusion.com/react/documentation/api/pivotview/
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs98/app/App.jsx %}
+{% include code-snippet/pivot-table/default-cs98/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs98/app/App.tsx %}
+{% include code-snippet/pivot-table/default-cs98/app/App.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs98" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs98" %}
 
 ![Loading members based on level number](images/level-count.png)
 
@@ -198,20 +198,20 @@ To enable label filtering, set the [`allowLabelFilter`](https://ej2.syncfusion.c
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs99/app/App.jsx %}
+{% include code-snippet/pivot-table/default-cs99/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs99/app/App.tsx %}
+{% include code-snippet/pivot-table/default-cs99/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs99/app/datasource.jsx %}
+{% include code-snippet/pivot-table/default-cs99/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs99/app/datasource.tsx %}
+{% include code-snippet/pivot-table/default-cs99/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
- {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs99" %}
+ {% previewsample "page.domainurl/code-snippet/pivot-table/default-cs99" %}
 
 ![Filter icon in field list](images/labelfiltering_fl_icon.png)
 <br/>
@@ -262,20 +262,20 @@ The following table shows all available **operators** for label filtering:
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs100/app/App.jsx %}
+{% include code-snippet/pivot-table/default-cs100/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs100/app/App.tsx %}
+{% include code-snippet/pivot-table/default-cs100/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs100/app/datasource.jsx %}
+{% include code-snippet/pivot-table/default-cs100/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs100/app/datasource.tsx %}
+{% include code-snippet/pivot-table/default-cs100/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs100" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs100" %}
 
 ### Filtering number data type through code
 
@@ -295,20 +295,20 @@ For example, to display only sales data where the "Sold" field values are less t
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs101/app/App.jsx %}
+{% include code-snippet/pivot-table/default-cs101/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs101/app/App.tsx %}
+{% include code-snippet/pivot-table/default-cs101/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs101/app/datasource.jsx %}
+{% include code-snippet/pivot-table/default-cs101/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs101/app/datasource.tsx %}
+{% include code-snippet/pivot-table/default-cs101/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs101" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs101" %}
 
 ### Filtering date data type through code
 
@@ -322,20 +322,20 @@ To apply date filtering, specify your filtering criteria using the [`value1`](ht
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs102/app/App.jsx %}
+{% include code-snippet/pivot-table/default-cs102/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs102/app/App.tsx %}
+{% include code-snippet/pivot-table/default-cs102/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs102/app/datasource.jsx %}
+{% include code-snippet/pivot-table/default-cs102/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs102/app/datasource.tsx %}
+{% include code-snippet/pivot-table/default-cs102/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs102" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs102" %}
 
 ### Clearing the existing label filter
 
@@ -351,20 +351,20 @@ You can enable value filtering by setting the [`allowValueFilter`](https://ej2.s
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs103/app/App.jsx %}
+{% include code-snippet/pivot-table/default-cs103/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs103/app/App.tsx %}
+{% include code-snippet/pivot-table/default-cs103/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs103/app/datasource.jsx %}
+{% include code-snippet/pivot-table/default-cs103/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs103/app/datasource.tsx %}
+{% include code-snippet/pivot-table/default-cs103/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
- {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs103" %}
+ {% previewsample "page.domainurl/code-snippet/pivot-table/default-cs103" %}
 
 ![Filter icon in field list](images/labelfiltering_fl_icon.png)
 <br/>
@@ -406,20 +406,20 @@ The following table shows the available operators for value filtering:
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs104/app/App.jsx %}
+{% include code-snippet/pivot-table/default-cs104/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs104/app/App.tsx %}
+{% include code-snippet/pivot-table/default-cs104/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs104/app/datasource.jsx %}
+{% include code-snippet/pivot-table/default-cs104/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs104/app/datasource.tsx %}
+{% include code-snippet/pivot-table/default-cs104/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs104" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs104" %}
 
 ### Clearing the existing value filter
 
@@ -445,20 +445,20 @@ For example, you can use the [`memberFiltering`](https://ej2.syncfusion.com/reac
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs105/app/App.jsx %}
+{% include code-snippet/pivot-table/default-cs105/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs105/app/App.tsx %}
+{% include code-snippet/pivot-table/default-cs105/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs105/app/datasource.jsx %}
+{% include code-snippet/pivot-table/default-cs105/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs105/app/datasource.tsx %}
+{% include code-snippet/pivot-table/default-cs105/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs105" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs105" %}
 
 ### MemberEditorOpen
 
@@ -473,20 +473,20 @@ Here’s an example. In the Pivot Table below, only the selected member for the 
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs106/app/App.jsx %}
+{% include code-snippet/pivot-table/default-cs106/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs106/app/App.tsx %}
+{% include code-snippet/pivot-table/default-cs106/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs106/app/datasource.jsx %}
+{% include code-snippet/pivot-table/default-cs106/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs106/app/datasource.tsx %}
+{% include code-snippet/pivot-table/default-cs106/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs106" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs106" %}
 
 ### ActionBegin
 
@@ -504,20 +504,20 @@ In the example below, you can prevent a filter action by setting **args.cancel**
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs107/app/App.jsx %}
+{% include code-snippet/pivot-table/default-cs107/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs107/app/App.tsx %}
+{% include code-snippet/pivot-table/default-cs107/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs107/app/datasource.jsx %}
+{% include code-snippet/pivot-table/default-cs107/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs107/app/datasource.tsx %}
+{% include code-snippet/pivot-table/default-cs107/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs107" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs107" %}
 
 ### ActionComplete
 
@@ -537,20 +537,20 @@ The event provides the following parameters:
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs108/app/App.jsx %}
+{% include code-snippet/pivot-table/default-cs108/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs108/app/App.tsx %}
+{% include code-snippet/pivot-table/default-cs108/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs108/app/datasource.jsx %}
+{% include code-snippet/pivot-table/default-cs108/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs108/app/datasource.tsx %}
+{% include code-snippet/pivot-table/default-cs108/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs108" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs108" %}
 
 ### ActionFailure
 
@@ -562,20 +562,20 @@ The [`actionFailure`](https://ej2.syncfusion.com/react/documentation/api/pivotvi
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs109/app/App.jsx %}
+{% include code-snippet/pivot-table/default-cs109/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs109/app/App.tsx %}
+{% include code-snippet/pivot-table/default-cs109/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs109/app/datasource.jsx %}
+{% include code-snippet/pivot-table/default-cs109/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs109/app/datasource.tsx %}
+{% include code-snippet/pivot-table/default-cs109/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs109" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs109" %}
 
 ## See Also
 

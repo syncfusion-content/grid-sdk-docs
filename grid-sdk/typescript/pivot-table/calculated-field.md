@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Calculated field in TypeScript Pivot Table component | Syncfusion
-description: Learn here all about Calculated field in Syncfusion TypeScript Pivot Table component of Syncfusion Essential JS 2 and more.
-platform: grid-sdk
-control: Calculated field 
-publishingplatform: grid-sdk
+title: Calculated Field in ##Platform_Name## Pivot Table | Syncfusion
+description: Learn how the ##Platform_Name## Pivot Table creates calculated fields via the dialog or `calculatedFieldSettings`, then adds them to the values axis for custom formulas.
+platform: ej2-javascript
+control: Calculated field
+publishingplatform: ##Platform_Name##
 documentation: ug
-domainurl: https://help.syncfusion.com/grid-sdk
+domainurl: ##DomainURL##
 ---
 
-# Calculated field in TypeScript Pivot Table component
+# Calculated Field in ##Platform_Name## Pivot Table
 
 The calculated field feature enables users to create custom value fields using mathematical formulas and existing fields from their data source. Users can perform complex calculations with basic arithmetic operators and seamlessly integrate these custom fields into their pivot table for enhanced data visualization and reporting.
 
@@ -34,14 +34,14 @@ To use the calculated field feature, you must inject the `CalculatedField` modul
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs313/index.ts %}
+{% include code-snippet/pivot-table/pivot-table-cs313/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs313/index.html %}
+{% include code-snippet/pivot-table/pivot-table-cs313/index.html %}
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs313" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs313" %}
 
 ## Opening the calculated field dialog programmatically
 
@@ -49,14 +49,14 @@ You can display the calculated field dialog by calling the [`createCalculatedFie
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/calculatedfield-cs5/index.ts %}
+{% include code-snippet/pivot-table/calculatedfield-cs5/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/calculatedfield-cs5/index.html %}
+{% include code-snippet/pivot-table/calculatedfield-cs5/index.html %}
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/pivot-table/calculatedfield-cs5" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/calculatedfield-cs5" %}
 
 ## Editing through the field list and grouping bar
 
@@ -271,14 +271,14 @@ Syntax: max(number1, number2)
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs314/index.ts %}
+{% include code-snippet/pivot-table/pivot-table-cs314/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs314/index.html %}
+{% include code-snippet/pivot-table/pivot-table-cs314/index.html %}
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs314" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs314" %}
 
 ## Event
 
@@ -299,14 +299,14 @@ The following example shows how to prevent users from creating calculated fields
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs315/index.ts %}
+{% include code-snippet/pivot-table/pivot-table-cs315/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs315/index.html %}
+{% include code-snippet/pivot-table/pivot-table-cs315/index.html %}
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs315" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs315" %}
 
 ### ActionBegin
 
@@ -338,14 +338,14 @@ The example below illustrates how to prevent access to the calculated field dial
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/action-events-cs31/index.ts %}
+{% include code-snippet/pivot-table/action-events-cs31/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/action-events-cs31/index.html %}
+{% include code-snippet/pivot-table/action-events-cs31/index.html %}
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/pivot-table/action-events-cs31" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/action-events-cs31" %}
 
 ### ActionComplete
 
@@ -371,14 +371,14 @@ The example below demonstrates how to use the [`actionComplete`](https://ej2.syn
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/action-events-cs32/index.ts %}
+{% include code-snippet/pivot-table/action-events-cs32/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/action-events-cs32/index.html %}
+{% include code-snippet/pivot-table/action-events-cs32/index.html %}
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/pivot-table/action-events-cs32" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/action-events-cs32" %}
 
 ### ActionFailure
 
@@ -394,11 +394,11 @@ The [`actionFailure`](https://ej2.syncfusion.com/documentation/api/pivotview/ind
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/action-events-cs33/index.ts %}
+{% include code-snippet/pivot-table/action-events-cs33/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/action-events-cs33/index.html %}
+{% include code-snippet/pivot-table/action-events-cs33/index.html %}
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/pivot-table/action-events-cs33" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/action-events-cs33" %}

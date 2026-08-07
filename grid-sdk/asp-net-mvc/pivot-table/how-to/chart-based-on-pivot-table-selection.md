@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Chart based on pivot selection in Syncfusion ASP.NET MVC Pivot Table
-description: Learn here all about Chart Based On Pivot Table Selection in Syncfusion ASP.NET MVC Pivot Table component of syncfusion and more.
-platform: grid-sdk
+title: How to Plot Chart from Cells in ASP.NET MVC Pivot Table | Syncfusion
+description: Learn how to plot an ASP.NET MVC Chart control from cells selected in the ASP.NET MVC Pivot Table, using the CellSelected event and PivotSelectionSettings.
+platform: ej2-asp-core-mvc
 control: Chart Based On Pivot Table Selection
-publishingplatform: grid-sdk
+publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Render chart control based on cell selection
+# How to Render Chart Based on Cell Selection in ASP.NET MVC Pivot Table
 
 The ASP.NET MVC Pivot Table component supports creating charts based on cell selections within the pivot table. This customization allows charts to be plotted dynamically using data from selected cells, providing visual representation of specific data segments.
 
@@ -24,10 +24,10 @@ The [`CellSelected`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/field-list/chart/tagHelper %}
+{% include code-snippet/pivot-table/field-list/chart/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Popup.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/field-list/chart/Popup.cs %}
+{% include code-snippet/pivot-table/field-list/chart/Popup.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -35,10 +35,10 @@ The [`CellSelected`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/field-list/chart/razor %}
+{% include code-snippet/pivot-table/field-list/chart/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Popup.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/field-list/chart/Popup.cs %}
+{% include code-snippet/pivot-table/field-list/chart/Popup.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

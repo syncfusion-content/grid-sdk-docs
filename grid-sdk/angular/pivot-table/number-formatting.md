@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Number formatting in Angular Pivotview component | Syncfusion
-description: Learn here all about Number formatting in Syncfusion Angular Pivotview component of Syncfusion Essential JS 2 and more.
-platform: grid-sdk
+title: Number Formatting in Angular Pivot Table | Syncfusion
+description: Learn how the Angular Pivot Table formats numeric value cells using number, currency, percent, and custom format strings.
+platform: ej2-angular
 control: Number formatting 
 documentation: ug
-domainurl: https://help.syncfusion.com/grid-sdk
+domainurl: ##DomainURL##
 ---
 
-# Number formatting in Angular Pivotview component
+# Number Formatting in Angular Pivot Table
 
 The Pivot Table component provides comprehensive number formatting capabilities, allowing you to display numeric values in various formats. This enhances data readability and ensures values are displayed accurately to meet your specific needs.
 
@@ -47,15 +47,15 @@ Use these standard format codes to specify the formatting type:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs184/src/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs184/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs184/src/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs184/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs184" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs184" %}
 
 You can also format the values at runtime using the formatting dialog. This option can be enabled by setting the [`allowNumberFormatting`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#allownumberformatting) property to **true**. The same has been discussed in some of the upcoming topics.
 
@@ -79,15 +79,15 @@ Custom format lets you display numbers in your preferred pattern by setting the 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs185/src/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs185/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs185/src/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs185/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs185" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs185" %}
 
 ## Toolbar
 
@@ -95,15 +95,15 @@ Number formatting can be applied instantly at runtime through the built-in dialo
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs186/src/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs186/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs186/src/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs186/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs186" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs186" %}
 
 ## Invoking formatting dialog through external button
 
@@ -111,15 +111,15 @@ The number formatting dialog can be opened programmatically by clicking an exter
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs187/src/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs187/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs187/src/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs187/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs187" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs187" %}
 
 ## Events
 
@@ -137,15 +137,15 @@ The following sample demonstrates how to prevent number formatting changes for t
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs188/src/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs188/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs188/src/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs188/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs188" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs188" %}
 
 ## See Also
 

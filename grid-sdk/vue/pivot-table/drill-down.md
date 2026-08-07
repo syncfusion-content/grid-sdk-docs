@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Drill down in Vue Pivot Table component | Syncfusion
-description: Learn here all about Drill down in Syncfusion Vue Pivot Table component of Syncfusion Essential JS 2 and more.
+title: Drill Down in Vue Pivot Table | Syncfusion
+description: Learn how the Vue Pivot Table drills down and up through hierarchical row and column members, expands all headers for fields, and selectively drills.
 control: Drill down 
-platform: grid-sdk
+platform: ej2-vue
 documentation: ug
-domainurl: https://help.syncfusion.com/grid-sdk
+domainurl: ##DomainURL##
 ---
 
-# Drill down in Vue Pivot Table component
+# Drill Down in Vue Pivot Table
 
 ## Drill down and drill up
 
@@ -32,14 +32,14 @@ The Pivot Table component allows users to interactively expand or collapse all f
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/default-cs27/app-composition.vue %}
+{% include code-snippet/pivot-grid/default-cs27/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/default-cs27/app.vue %}
+{% include code-snippet/pivot-grid/default-cs27/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/default-cs27" %}
+{% previewsample "page.domainurl/code-snippet/pivot-grid/default-cs27" %}
 
 ## Expand all headers for specific fields
 
@@ -51,14 +51,14 @@ The following code demonstrates how to configure a Pivot Table with the [`expand
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/default-cs28/app-composition.vue %}
+{% include code-snippet/pivot-grid/default-cs28/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/default-cs28/app.vue %}
+{% include code-snippet/pivot-grid/default-cs28/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/default-cs28" %}
+{% previewsample "page.domainurl/code-snippet/pivot-grid/default-cs28" %}
 
 ## Expand all except specific member(s)
 
@@ -73,14 +73,14 @@ The following example demonstrates how to configure a Pivot Table where all head
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/default-cs29/app-composition.vue %}
+{% include code-snippet/pivot-grid/default-cs29/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/default-cs29/app.vue %}
+{% include code-snippet/pivot-grid/default-cs29/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/default-cs29" %}
+{% previewsample "page.domainurl/code-snippet/pivot-grid/default-cs29" %}
 
 ## Expand or Collapse Specific Members
 
@@ -94,14 +94,14 @@ The following code demonstrates how to configure the Pivot Table to expand speci
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/default-cs30/app-composition.vue %}
+{% include code-snippet/pivot-grid/default-cs30/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/default-cs30/app.vue %}
+{% include code-snippet/pivot-grid/default-cs30/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/default-cs30" %}
+{% previewsample "page.domainurl/code-snippet/pivot-grid/default-cs30" %}
 
 ## Event
 
@@ -115,14 +115,14 @@ The [`drill`](https://ej2.syncfusion.com/vue/documentation/api/pivotview/index-d
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/default-cs31/app-composition.vue %}
+{% include code-snippet/pivot-grid/default-cs31/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/default-cs31/app.vue %}
+{% include code-snippet/pivot-grid/default-cs31/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/default-cs31" %}
+{% previewsample "page.domainurl/code-snippet/pivot-grid/default-cs31" %}
 
 ### ActionBegin
 
@@ -142,14 +142,14 @@ In the below sample, drill down and drill up action can be restricted by setting
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/default-cs32/app-composition.vue %}
+{% include code-snippet/pivot-grid/default-cs32/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/default-cs32/app.vue %}
+{% include code-snippet/pivot-grid/default-cs32/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/default-cs32" %}
+{% previewsample "page.domainurl/code-snippet/pivot-grid/default-cs32" %}
 
 ### ActionComplete
 
@@ -168,14 +168,14 @@ The event [`actionComplete`](https://ej2.syncfusion.com/vue/documentation/api/pi
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/default-cs33/app-composition.vue %}
+{% include code-snippet/pivot-grid/default-cs33/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/default-cs33/app.vue %}
+{% include code-snippet/pivot-grid/default-cs33/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/default-cs33" %}
+{% previewsample "page.domainurl/code-snippet/pivot-grid/default-cs33" %}
 
 ### ActionFailure
 
@@ -192,11 +192,11 @@ The [`actionFailure`](https://ej2.syncfusion.com/vue/documentation/api/pivotview
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/default-cs34/app-composition.vue %}
+{% include code-snippet/pivot-grid/default-cs34/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/default-cs34/app.vue %}
+{% include code-snippet/pivot-grid/default-cs34/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/default-cs34" %}
+{% previewsample "page.domainurl/code-snippet/pivot-grid/default-cs34" %}

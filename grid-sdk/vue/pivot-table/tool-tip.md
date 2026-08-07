@@ -1,27 +1,27 @@
 ---
 layout: post
-title: Tool tip in Vue Pivot Table component | Syncfusion
-description: Learn here all about Tool tip in Syncfusion Vue Pivot Table component of Syncfusion Essential JS 2 and more.
+title: Tooltip in Vue Pivot Table | Syncfusion
+description: Learn how the Vue Pivot Table shows hover tooltips on value cells with row, column, and measure context, and supports custom tooltip templates per cell.
 control: Tool tip 
-platform: grid-sdk
+platform: ej2-vue
 documentation: ug
-domainurl: https://help.syncfusion.com/grid-sdk
+domainurl: ##DomainURL##
 ---
 
-# Tooltip in Vue Pivot Table Component
+# Tooltip in Vue Pivot Table
 
 The tooltip displays contextual information when users hover over value cells in the pivot table. It can be enabled or disabled by setting the [`showTooltip`](https://ej2.syncfusion.com/vue/documentation/api/pivotview/index-default#showtooltip) property to **true** or **false**. By default, tooltip is enabled in the pivot table and shows the cell value along with row and column header information.
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/default-cs256/app-composition.vue %}
+{% include code-snippet/pivot-grid/default-cs256/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/default-cs256/app.vue %}
+{% include code-snippet/pivot-grid/default-cs256/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/default-cs256" %}
+{% previewsample "page.domainurl/code-snippet/pivot-grid/default-cs256" %}
 
 ## Tooltip Template
 
@@ -41,11 +41,11 @@ The example below shows how to define the Pivot Table tooltip template in `index
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/default-cs257/app-composition.vue %}
+{% include code-snippet/pivot-grid/default-cs257/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/default-cs257/app.vue %}
+{% include code-snippet/pivot-grid/default-cs257/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/default-cs257" %}
+{% previewsample "page.domainurl/code-snippet/pivot-grid/default-cs257" %}

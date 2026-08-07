@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Add custom aggregation type to the menu in React | Syncfusion
-description: Learn here all about how to add custom aggregation type to the menu in Syncfusion React Pivotview component of Syncfusion Essential JS 2 and more.
-platform: grid-sdk
-control: Add custom aggregation type to the menu 
+title: How to add a custom aggregation in React Pivot Table | Syncfusion
+description: Step-by-step example showing how to add a custom aggregation type to the menu in the React Pivot Table through the aggregation menu.
+platform: ej2-react
+control: Pivot Table
 documentation: ug
-domainurl: https://help.syncfusion.com/grid-sdk
+domainurl: ##DomainURL##
 ---
 
 <!-- markdownlint-disable MD009 -->
 
-# Add custom aggregation type to the menu in React Pivotview component
+# How to add a custom aggregation in React Pivot Table
 
 The React Pivot Table component allows you to extend its functionality by adding custom aggregation types to the built-in aggregation menu. This enables you to implement specific calculation methods beyond the standard options like Sum, Average, Min, and Max.
 
@@ -33,17 +33,17 @@ The calculation logic for these custom aggregation types is implemented using th
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs317/app/App.jsx %}
+{% include code-snippet/pivot-table/default-cs317/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs317/app/App.tsx %}
+{% include code-snippet/pivot-table/default-cs317/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs317/app/datasource.jsx %}
+{% include code-snippet/pivot-table/default-cs317/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs317/app/datasource.tsx %}
+{% include code-snippet/pivot-table/default-cs317/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
- {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs317" %}
+ {% previewsample "page.domainurl/code-snippet/pivot-table/default-cs317" %}

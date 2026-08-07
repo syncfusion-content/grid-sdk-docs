@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Drill Down in ASP.NET MVC Syncfusion Pivot Table Component
-description: Learn here all about Drill Down in Syncfusion ASP.NET MVC Pivot Table component of Syncfusion Essential JS 2 and more.
-platform: grid-sdk
+title: Drill Down in ASP.NET MVC Pivot Table | Syncfusion
+description: Learn how the ASP.NET MVC Pivot Table expands or collapses hierarchical row and column members on demand for relational data sources.
+platform: ej2-asp-core-mvc
 control: Drill Down
-publishingplatform: grid-sdk
+publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
 
-# Drill Down in ASP.NET MVC Pivot Table Control
+# Drill Down in ASP.NET MVC Pivot Table
 
 ## Drill down and drill up
 
@@ -29,10 +29,10 @@ The drill-down and drill-up features allow you to expand or collapse data for a 
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/drill-down/drill-position/tagHelper %}
+{% include code-snippet/pivot-table/drill-down/drill-position/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="DrillPosition.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/drill-down/drill-position/DrillPosition.cs %}
+{% include code-snippet/pivot-table/drill-down/drill-position/DrillPosition.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -40,10 +40,10 @@ The drill-down and drill-up features allow you to expand or collapse data for a 
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/drill-down/drill-position/razor %}
+{% include code-snippet/pivot-table/drill-down/drill-position/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="DrillPosition.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/drill-down/drill-position/DrillPosition.cs %}
+{% include code-snippet/pivot-table/drill-down/drill-position/DrillPosition.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -58,10 +58,10 @@ The Pivot Table component allows users to interactively expand or collapse all f
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/drill-down/expand-all/tagHelper %}
+{% include code-snippet/pivot-table/drill-down/expand-all/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="ExpandAll.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/drill-down/expand-all/ExpandAll.cs %}
+{% include code-snippet/pivot-table/drill-down/expand-all/ExpandAll.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -69,10 +69,10 @@ The Pivot Table component allows users to interactively expand or collapse all f
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/drill-down/expand-all/razor %}
+{% include code-snippet/pivot-table/drill-down/expand-all/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="ExpandAll.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/drill-down/expand-all/ExpandAll.cs %}
+{% include code-snippet/pivot-table/drill-down/expand-all/ExpandAll.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -93,10 +93,10 @@ The following code demonstrates how to configure a Pivot Table with the [`Expand
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/drill-down/expand-all-headers/tagHelper %}
+{% include code-snippet/pivot-table/drill-down/expand-all-headers/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="ExpandAll.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/drill-down/expand-all-headers/ExpandAll.cs %}
+{% include code-snippet/pivot-table/drill-down/expand-all-headers/ExpandAll.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -104,10 +104,10 @@ The following code demonstrates how to configure a Pivot Table with the [`Expand
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/drill-down/expand-all-headers/razor %}
+{% include code-snippet/pivot-table/drill-down/expand-all-headers/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="ExpandAll.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/drill-down/expand-all-headers/ExpandAll.cs %}
+{% include code-snippet/pivot-table/drill-down/expand-all-headers/ExpandAll.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -131,10 +131,10 @@ The following example demonstrates how to configure a Pivot Table where all head
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/drill-down/drilled-members/tagHelper %}
+{% include code-snippet/pivot-table/drill-down/drilled-members/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="DrilledMembers.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/drill-down/drilled-members/DrilledMembers.cs %}
+{% include code-snippet/pivot-table/drill-down/drilled-members/DrilledMembers.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -142,10 +142,10 @@ The following example demonstrates how to configure a Pivot Table where all head
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/drill-down/drilled-members/razor %}
+{% include code-snippet/pivot-table/drill-down/drilled-members/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="DrilledMembers.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/drill-down/drilled-members/DrilledMembers.cs %}
+{% include code-snippet/pivot-table/drill-down/drilled-members/DrilledMembers.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -168,10 +168,10 @@ The following code demonstrates how to configure the Pivot Table to expand speci
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/drill-down/expand-specific/tagHelper %}
+{% include code-snippet/pivot-table/drill-down/expand-specific/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="DrilledMembers.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/drill-down/expand-specific/DrilledMembers.cs %}
+{% include code-snippet/pivot-table/drill-down/expand-specific/DrilledMembers.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -179,10 +179,10 @@ The following code demonstrates how to configure the Pivot Table to expand speci
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/drill-down/expand-specific/razor %}
+{% include code-snippet/pivot-table/drill-down/expand-specific/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="DrilledMembers.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/drill-down/expand-specific/DrilledMembers.cs %}
+{% include code-snippet/pivot-table/drill-down/expand-specific/DrilledMembers.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -205,10 +205,10 @@ The [`Drill`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotV
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/drill-down/drill-event/tagHelper %}
+{% include code-snippet/pivot-table/drill-down/drill-event/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="DrillEvent.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/drill-down/drill-event/DrillEvent.cs %}
+{% include code-snippet/pivot-table/drill-down/drill-event/DrillEvent.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -216,10 +216,10 @@ The [`Drill`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotV
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/drill-down/drill-event/razor %}
+{% include code-snippet/pivot-table/drill-down/drill-event/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="DrillEvent.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/drill-down/drill-event/DrillEvent.cs %}
+{% include code-snippet/pivot-table/drill-down/drill-event/DrillEvent.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -244,10 +244,10 @@ In the below sample, drill down and drill up action can be restricted by setting
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/action-event/actionBegin-drill/tagHelper %}
+{% include code-snippet/pivot-table/action-event/actionBegin-drill/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="ActionBegin-drill.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/action-event/actionBegin-drill/actionBegin-drill.cs %}
+{% include code-snippet/pivot-table/action-event/actionBegin-drill/actionBegin-drill.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -255,10 +255,10 @@ In the below sample, drill down and drill up action can be restricted by setting
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/action-event/actionBegin-drill/razor %}
+{% include code-snippet/pivot-table/action-event/actionBegin-drill/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="ActionBegin-drill.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/action-event/actionBegin-drill/actionBegin-drill.cs %}
+{% include code-snippet/pivot-table/action-event/actionBegin-drill/actionBegin-drill.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -282,10 +282,10 @@ The event [`ActionComplete`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncf
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/action-event/actionComplete-drill/tagHelper %}
+{% include code-snippet/pivot-table/action-event/actionComplete-drill/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="ActionComplete-drill.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/action-event/actionComplete-drill/actionComplete-drill.cs %}
+{% include code-snippet/pivot-table/action-event/actionComplete-drill/actionComplete-drill.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -293,10 +293,10 @@ The event [`ActionComplete`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncf
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/action-event/actionComplete-drill/razor %}
+{% include code-snippet/pivot-table/action-event/actionComplete-drill/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="ActionComplete-drill.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/action-event/actionComplete-drill/actionComplete-drill.cs %}
+{% include code-snippet/pivot-table/action-event/actionComplete-drill/actionComplete-drill.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -318,10 +318,10 @@ The [`ActionFailure`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.E
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/action-event/actionFailure-drill/tagHelper %}
+{% include code-snippet/pivot-table/action-event/actionFailure-drill/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="ActionFailure-drill.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/action-event/actionFailure-drill/actionFailure-drill.cs %}
+{% include code-snippet/pivot-table/action-event/actionFailure-drill/actionFailure-drill.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -329,10 +329,10 @@ The [`ActionFailure`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.E
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/action-event/actionFailure-drill/razor %}
+{% include code-snippet/pivot-table/action-event/actionFailure-drill/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="ActionFailure-drill.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/action-event/actionFailure-drill/actionFailure-drill.cs %}
+{% include code-snippet/pivot-table/action-event/actionFailure-drill/actionFailure-drill.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

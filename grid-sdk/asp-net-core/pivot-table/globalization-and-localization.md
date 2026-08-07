@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Globalization And Localization in ASP.NET Core Syncfusion
-description: Learn here all about Globalization And Localization in Syncfusion ASP.NET Core Pivot Table component of Syncfusion Essential JS 2 and more.
-platform: grid-sdk
+title: Globalization/Localization in ASP.NET Core Pivot Table | Syncfusion
+description: Learn how the ASP.NET Core Pivot Table adapts to different cultures by loading CLDR JSON data and using the L10n class for localization.
+platform: ej2-asp-core-mvc
 control: Globalization And Localization
-publishingplatform: grid-sdk
+publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
 
-# Globalization in ASP.NET Core Pivot Table Control
+# Globalization and Localization in ASP.NET Core Pivot Table
 
 Globalization is the combination of internalization and localization. You can adapt the component to various languages by parsing and formatting the date or number ([`Internationalization`](https://ej2.syncfusion.com/aspnetcore/documentation/base/intl.html)) & adding culture specific customization and translation to the text ([`Localization`](https://ej2.syncfusion.com/aspnetcore/documentation/base/localization.html)).
 
@@ -80,10 +80,10 @@ In ASP.NET MVC refer the culture files directly from `/scripts/cldr-data` locati
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/globalization/internationalization/tagHelper %}
+{% include code-snippet/pivot-table/globalization/internationalization/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Internationalization.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/globalization/internationalization/Internationalization.cs %}
+{% include code-snippet/pivot-table/globalization/internationalization/Internationalization.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -91,10 +91,10 @@ In ASP.NET MVC refer the culture files directly from `/scripts/cldr-data` locati
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/globalization/internationalization/razor %}
+{% include code-snippet/pivot-table/globalization/internationalization/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Internationalization.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/globalization/internationalization/Internationalization.cs %}
+{% include code-snippet/pivot-table/globalization/internationalization/Internationalization.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -115,10 +115,10 @@ The following example demonstrates the decimal separators in `Deutsch` culture.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/globalization/locale/tagHelper %}
+{% include code-snippet/pivot-table/globalization/locale/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Locale.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/globalization/locale/Locale.cs %}
+{% include code-snippet/pivot-table/globalization/locale/Locale.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -126,10 +126,10 @@ The following example demonstrates the decimal separators in `Deutsch` culture.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/globalization/locale/razor %}
+{% include code-snippet/pivot-table/globalization/locale/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Locale.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/globalization/locale/Locale.cs %}
+{% include code-snippet/pivot-table/globalization/locale/Locale.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -602,10 +602,10 @@ The following example demonstrates the Pivot Table in `Deutsch` culture.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/globalization/localization/tagHelper %}
+{% include code-snippet/pivot-table/globalization/localization/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Localization.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/globalization/localization/Localization.cs %}
+{% include code-snippet/pivot-table/globalization/localization/Localization.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -613,10 +613,10 @@ The following example demonstrates the Pivot Table in `Deutsch` culture.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/globalization/localization/razor %}
+{% include code-snippet/pivot-table/globalization/localization/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Localization.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/globalization/localization/Localization.cs %}
+{% include code-snippet/pivot-table/globalization/localization/Localization.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -631,10 +631,10 @@ RTL provides an option to switch the text direction and layout of the Pivot Tabl
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/globalization/rtl/tagHelper %}
+{% include code-snippet/pivot-table/globalization/rtl/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="RTL.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/globalization/rtl/RTL.cs %}
+{% include code-snippet/pivot-table/globalization/rtl/RTL.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -642,10 +642,10 @@ RTL provides an option to switch the text direction and layout of the Pivot Tabl
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/globalization/rtl/razor %}
+{% include code-snippet/pivot-table/globalization/rtl/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="RTL.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/globalization/rtl/RTL.cs %}
+{% include code-snippet/pivot-table/globalization/rtl/RTL.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

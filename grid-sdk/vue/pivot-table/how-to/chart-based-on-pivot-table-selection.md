@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Chart based on pivot table selection in Vue | Syncfusion
-description: Learn here all about Chart based on pivot table selection in Syncfusion Vue Pivotview component of Syncfusion Essential JS 2 and more.
+title: How to render chart based on cell selection in Vue Pivot Table | Syncfusion
+description: Step-by-step example showing how to render a chart based on selected cells in the Vue Pivot Table, using the cellSelected event to pass row, column, and measure data to a chart control.
 control: Chart based on pivot table selection 
-platform: grid-sdk
+platform: ej2-vue
 documentation: ug
-domainurl: https://help.syncfusion.com/grid-sdk
+domainurl: ##DomainURL##
 ---
 
-# Chart based on pivot table selection in Vue Pivotview component
+# How to render chart based on cell selection in Vue Pivot Table
 
 The Vue Pivot Table component supports creating charts based on cell selections within the pivot table. This customization allows charts to be plotted dynamically using data from selected cells, providing visual representation of specific data segments.
 
@@ -22,11 +22,11 @@ The [`cellSelected`](https://ej2.syncfusion.com/vue/documentation/api/pivotview/
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/renewableEnergy-cs1/app-composition.vue %}
+{% include code-snippet/pivot-grid/renewableEnergy-cs1/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/renewableEnergy-cs1/app.vue %}
+{% include code-snippet/pivot-grid/renewableEnergy-cs1/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/renewableEnergy-cs1" %}
+{% previewsample "page.domainurl/code-snippet/pivot-grid/renewableEnergy-cs1" %}

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Chart Based On Pivot Table Selection in ASP.NET Core | syncfusion
-description: Learn here all about Chart Based On Pivot Table Selection in Syncfusion ASP.NET Core Pivot Table component of syncfusion and more.
-platform: grid-sdk
+title: How to Plot Chart from Cells in ASP.NET Core Pivot Table | Syncfusion
+description: Learn how to plot an ASP.NET Core Chart control from cells selected in the ASP.NET Core Pivot Table, using the cellSelected event and e-selectionSettings.
+platform: ej2-asp-core-mvc
 control: Chart Based On Pivot Table Selection
-publishingplatform: grid-sdk
+publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Chart based on selection in ASP.NET Core Pivotview component
+# How to Plot Chart from Cells in ASP.NET Core Pivot Table
 
 The ASP.NET Core Pivot Table component supports creating charts based on cell selections within the pivot table. This customization allows charts to be plotted dynamically using data from selected cells, providing visual representation of specific data segments.
 
@@ -24,10 +24,10 @@ The [`cellSelected`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/field-list/chart/tagHelper %}
+{% include code-snippet/pivot-table/field-list/chart/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Popup.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/field-list/chart/Popup.cs %}
+{% include code-snippet/pivot-table/field-list/chart/Popup.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -35,10 +35,10 @@ The [`cellSelected`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/field-list/chart/razor %}
+{% include code-snippet/pivot-table/field-list/chart/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Popup.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/field-list/chart/Popup.cs %}
+{% include code-snippet/pivot-table/field-list/chart/Popup.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

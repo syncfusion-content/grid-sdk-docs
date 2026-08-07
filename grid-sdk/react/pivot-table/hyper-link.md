@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Hyper link in React Pivot Table component | Syncfusion
-description: Learn here all about Hyper link in Syncfusion React Pivot Table component of Syncfusion Essential JS 2 and more.
-control: Hyper link 
-platform: grid-sdk
+title: Hyperlink in React Pivot Table | Syncfusion
+description: Learn how the React Pivot Table adds hyperlinks to row, column, and value cells through hyperlinkSettings for interactive navigation and drill-through.
+control: Pivot Table
+platform: ej2-react
 documentation: ug
-domainurl: https://help.syncfusion.com/grid-sdk
+domainurl: ##DomainURL##
 ---
 
-# Hyper link in React Pivot Table component
+# Hyperlink in React Pivot Table
 
 The Pivot Table component provides built-in support for displaying hyperlinks within individual cells. This feature allows users to link data in specific cells, enhancing interactivity and navigation.
 
@@ -45,20 +45,20 @@ Once enabled, hyperlinks will be shown consistently in row headers, column heade
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs170/app/App.jsx %}
+{% include code-snippet/pivot-table/default-cs170/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs170/app/App.tsx %}
+{% include code-snippet/pivot-table/default-cs170/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs170/app/datasource.jsx %}
+{% include code-snippet/pivot-table/default-cs170/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs170/app/datasource.tsx %}
+{% include code-snippet/pivot-table/default-cs170/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs170" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs170" %}
 
 ## Hyperlink for row headers
 
@@ -66,20 +66,20 @@ The pivot table provides a way to display hyperlinks specifically in **row heade
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs171/app/App.jsx %}
+{% include code-snippet/pivot-table/default-cs171/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs171/app/App.tsx %}
+{% include code-snippet/pivot-table/default-cs171/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs171/app/datasource.jsx %}
+{% include code-snippet/pivot-table/default-cs171/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs171/app/datasource.tsx %}
+{% include code-snippet/pivot-table/default-cs171/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs171" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs171" %}
 
 ## Hyperlink for column headers
 
@@ -87,20 +87,20 @@ The pivot table provides an option to display hyperlinks specifically in column 
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs172/app/App.jsx %}
+{% include code-snippet/pivot-table/default-cs172/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs172/app/App.tsx %}
+{% include code-snippet/pivot-table/default-cs172/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs172/app/datasource.jsx %}
+{% include code-snippet/pivot-table/default-cs172/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs172/app/datasource.tsx %}
+{% include code-snippet/pivot-table/default-cs172/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs172" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs172" %}
 
 ## Hyperlink for value cells
 
@@ -108,20 +108,20 @@ The pivot table provides support for displaying hyperlinks specifically in value
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs173/app/App.jsx %}
+{% include code-snippet/pivot-table/default-cs173/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs173/app/App.tsx %}
+{% include code-snippet/pivot-table/default-cs173/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs173/app/datasource.jsx %}
+{% include code-snippet/pivot-table/default-cs173/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs173/app/datasource.tsx %}
+{% include code-snippet/pivot-table/default-cs173/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs173" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs173" %}
 
 ## Hyperlink for summary cells
 
@@ -129,20 +129,20 @@ The pivot table provides support for displaying hyperlinks specifically in summa
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs174/app/App.jsx %}
+{% include code-snippet/pivot-table/default-cs174/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs174/app/App.tsx %}
+{% include code-snippet/pivot-table/default-cs174/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs174/app/datasource.jsx %}
+{% include code-snippet/pivot-table/default-cs174/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs174/app/datasource.tsx %}
+{% include code-snippet/pivot-table/default-cs174/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs174" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs174" %}
 
 ## Condition based hyperlink
 
@@ -157,20 +157,20 @@ In the example below, the pivot table is configured to display hyperlinks only i
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs175/app/App.jsx %}
+{% include code-snippet/pivot-table/default-cs175/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs175/app/App.tsx %}
+{% include code-snippet/pivot-table/default-cs175/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs175/app/datasource.jsx %}
+{% include code-snippet/pivot-table/default-cs175/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs175/app/datasource.tsx %}
+{% include code-snippet/pivot-table/default-cs175/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs175" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs175" %}
 
 ## Header based hyperlink
 
@@ -182,20 +182,20 @@ N> The **dot(.)** character in **FY 2015.Q1.Units Sold** is used by default to i
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs176/app/App.jsx %}
+{% include code-snippet/pivot-table/default-cs176/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs176/app/App.tsx %}
+{% include code-snippet/pivot-table/default-cs176/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs176/app/datasource.jsx %}
+{% include code-snippet/pivot-table/default-cs176/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs176/app/datasource.tsx %}
+{% include code-snippet/pivot-table/default-cs176/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs176" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs176" %}
 
 ## Event
 
@@ -212,20 +212,20 @@ In the example below, when a hyperlink cell is clicked, a custom attribute (**da
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs177/app/App.jsx %}
+{% include code-snippet/pivot-table/default-cs177/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs177/app/App.tsx %}
+{% include code-snippet/pivot-table/default-cs177/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs177/app/datasource.jsx %}
+{% include code-snippet/pivot-table/default-cs177/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs177/app/datasource.tsx %}
+{% include code-snippet/pivot-table/default-cs177/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs177" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs177" %}
 
 ## See Also
 

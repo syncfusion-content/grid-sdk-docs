@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Field list in Angular Pivotview component | Syncfusion
-description: Learn here all about Field list in Syncfusion Angular Pivotview component of Syncfusion Essential JS 2 and more.
-platform: grid-sdk
+title: Field List in Angular Pivot Table | Syncfusion
+description: Learn how the Angular Pivot Table field list lets users add, remove, and rearrange fields between axes with sort and filter options.
+platform: ej2-angular
 control: Field list 
 documentation: ug
-domainurl: https://help.syncfusion.com/grid-sdk
+domainurl: ##DomainURL##
 ---
 
-# Field list in Angular Pivotview component
+# Field List in Angular Pivot Table
 
 The Field List makes it easy to organize and analyze data in your Pivot Table. It provides a user-friendly interface similar to Microsoft Excel that allows you to add or remove fields and move them between different axes like columns, rows, values, and filters. You can also apply sorting and filtering options while working with your data.
 
@@ -27,15 +27,15 @@ To use the field list, you need to add the `FieldListService` module to your Piv
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs76/src/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs76/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs76/src/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs76/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs76" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs76" %}
 
 ## Stand-alone Field List (Fixed)
 
@@ -45,15 +45,15 @@ The stand-alone Field List allows users to keep the Field List visible at a spec
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs77/src/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs77/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs77/src/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs77/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs77" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs77" %}
 
 ## Search desired field
 
@@ -69,15 +69,15 @@ To enable the search box in the stand-alone Field List UI, set the [`enableField
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs78/src/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs78/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs78/src/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs78/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs78" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs78" %}
 
 **Pivot Table's Built-in Popup Field List**
 
@@ -85,15 +85,15 @@ To enable the search box in the Pivot Table's built-in popup Field List UI, set 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs79/src/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs79/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs79/src/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs79/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs79" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs79" %}
 
 ## Option to sort fields
 
@@ -101,7 +101,7 @@ The field list provides a simple way to organize fields in different orders, mak
 
 > By default, fields are displayed in the default order as they appear in the data source.
 
-![Field list with sorting options](images/fieldlist-default-sort.png)
+![Field list with sorting options](../images/fieldlist-default-sort.png)
 
 ### Sort fields in a desired order
 
@@ -111,15 +111,15 @@ Below is an example showing how to set up this option when initializing the Pivo
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs309/src/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs309/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs309/src/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs309/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs309" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs309" %}
 
 ## Group fields under desired folder name
 
@@ -129,21 +129,21 @@ Organizing fields into custom folders in the Field List helps users manage and l
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs80/src/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs80/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs80/src/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs80/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs80" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs80" %}
 
 ## Add or remove fields
 
 The Field List allows users to quickly modify their data analysis by selecting or unselecting fields as needed. Using the checkbox beside each field, users can easily add fields to include them in the report or remove fields to exclude them from the current analysis at runtime.
 
-![Field List with checkboxes for adding or removing fields](images/fieldlist_treeview.png)
+![Field List with checkboxes for adding or removing fields](../images/fieldlist_treeview.png)
 
 ## Remove specific field(s) from displaying
 
@@ -151,70 +151,70 @@ When you connect a data source to the Pivot Table, all available fields from the
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs81/src/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs81/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs81/src/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs81/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs81" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs81" %}
 
 ## Re-arranging fields
 
 To rearrange fields, users can drag a field from the Field List and drop it into the desired axis (column, row, value, or filter) using the drag-and-drop holder. This allows users to modify the report dynamically during runtime, adjusting the layout to suit their needs.
 
-![output](images/fieldlist_axes.png)
+![output](../images/fieldlist_axes.png)
 
 ## Filtering members
 
 Users can filter members in the row, column, and filter axes by selecting the filter icon next to each field. This opens a dialog where users can choose to include or exclude specific members from the Pivot Table. To learn more about filtering members, [refer to the filtering documentation](./filtering).
 
-![Filter icon next to each field](images/fieldlist_filtericon.png)
+![Filter icon next to each field](../images/fieldlist_filtericon.png)
 
-![Filter dialog to include or exclude members](images/fieldlist_editor.png)
+![Filter dialog to include or exclude members](../images/fieldlist_editor.png)
 
-![Pivot Table after filtering members](images/fieldlist_filteringgrid.png)
+![Pivot Table after filtering members](../images/fieldlist_filteringgrid.png)
 
 ## Sorting members
 
 The Pivot Table allows users to sort members in the row and column axes using a sort icon next to each field. By clicking this icon, users can arrange members in either ascending or descending order at runtime. This option helps users organize data in a way that suits their needs. For more details on sorting members, [refer here](./sorting).
 
-![Sorting the field list](images/fieldlist_sorticon.png)
+![Sorting the field list](../images/fieldlist_sorticon.png)
 <br/>
 
-![Sorted pivot table](images/fieldlist_sortgrid.png)
+![Sorted pivot table](../images/fieldlist_sortgrid.png)
 
 ## Calculated fields
 
 The calculated field option allows users to create a new field based on existing fields from the data source using basic arithmetic operations, such as addition, subtraction, multiplication, and division. To use this option in the Field List UI, set the [`allowCalculatedField`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/index-default#allowcalculatedfield) property in the Pivot Table to **true**. When enabled, a button appears in the Field List UI. Clicking this button opens the calculated field dialog, where users can define a new calculated field. For more details on calculated fields, refer to [this section](./calculated-field).
 
-![Enabling calculated field in Field List UI](images/gs_calc_button.png)
+![Enabling calculated field in Field List UI](../images/gs_calc_button.png)
 <br/>
 
-![Creating new calculated field](images/gs_calc_dialog.png)
+![Creating new calculated field](../images/gs_calc_dialog.png)
 <br/>
 
-![New calculated field named Total Amount has been added in the Pivot Table](images/gs_calc_grid.png)
+![New calculated field named Total Amount has been added in the Pivot Table](../images/gs_calc_grid.png)
 
 ## Changing aggregation type of value fields at runtime
 
 Users can perform calculations on a group of values by selecting an aggregation type. Each value field in the Field List appears with a dropdown icon. Clicking this icon allows users to choose an aggregation type, such as sum, average, or count, at runtime. Once selected, the Pivot Table updates automatically to reflect the chosen aggregation type for the values. For more details on aggregation, refer to [aggregation](./aggregation).
 
-![Icon to change aggregation type](images/aggregation_fl_icon.png)
+![Icon to change aggregation type](../images/aggregation_fl_icon.png)
 <br/>
 
-![List of pre-defined aggregation types](images/fieldlist_aggregation_avg.png)
+![List of pre-defined aggregation types](../images/fieldlist_aggregation_avg.png)
 <br/>
 
-![Resultant Pivot Table shows that the average aggregation type has been applied to the Unit Sold value field](images/fieldlist_aggregation_grid.png)
+![Resultant Pivot Table shows that the average aggregation type has been applied to the Unit Sold value field](../images/fieldlist_aggregation_grid.png)
 
 ## Defer layout update
 
 The defer layout update option allows users to update the Pivot Table only when needed, instead of after every change in the Field List. To enable this option, set the [`allowDeferLayoutUpdate`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/index-default#allowdeferlayoutupdate) property to **true** in the Pivot Table. When enabled, a checkbox appears in the Field List, checked by default. Users can uncheck this checkbox to make changes without updating the Pivot Table immediately, and then apply all changes at once. For more details on defer layout update, refer to [defer update](./defer-update).
 
-![Defer layout update checkbox](images/fieldlist_deferupdate.png)
+![Defer layout update checkbox](../images/fieldlist_deferupdate.png)
 
 ## Show built-in Field List (Popup) over specific target
 
@@ -224,15 +224,15 @@ The sample code below demonstrates how to display the built-in Field List dialog
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs82/src/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs82/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs82/src/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs82/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs82" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs82" %}
 
 ## Show field list using toolbar
 
@@ -240,15 +240,15 @@ The Field List can be displayed in the toolbar by enabling specific options in t
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs83/src/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs83/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs83/src/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs83/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs83" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs83" %}
 
 ## Invoking dynamic Field List (Customized)
 
@@ -262,15 +262,15 @@ The sample code below shows how to open the Field List dialog using an external 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs84/src/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs84/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs84/src/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs84/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs84" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs84" %}
 
 ## Set caption to fields which isn’t bound to the report
 
@@ -280,15 +280,15 @@ In the example below, captions are set for the `Year` and `Quarter` fields dynam
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs85/src/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs85/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs85/src/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs85/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs85" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs85" %}
 
 ## Show values button
 
@@ -298,15 +298,15 @@ At runtime, the **Values** button in the field list allows users to move the val
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs86/src/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs86/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs86/src/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs86/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs86" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs86" %}
 
 ## Events
 
@@ -329,15 +329,15 @@ For example, when a user sorts a field in the field list, the field list updates
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs87/src/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs87/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs87/src/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs87/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs87" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs87" %}
 
 ### OnFieldDropped
 
@@ -353,15 +353,15 @@ In the following code example, we changed the caption of the dropped field using
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs88/src/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs88/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs88/src/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs88/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs88" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs88" %}
 
 ### ActionBegin
 
@@ -391,15 +391,15 @@ In the following sample, you can restrict opening the popup field list by settin
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs89/src/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs89/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs89/src/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs89/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs89" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs89" %}
 
 ### ActionComplete
 
@@ -427,15 +427,15 @@ The [`actionComplete`](https://ej2.syncfusion.com/angular/documentation/api/pivo
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs90/src/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs90/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs90/src/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs90/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs90" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs90" %}
 
 ### ActionFailure
 
@@ -457,15 +457,15 @@ The [`actionFailure`](https://ej2.syncfusion.com/angular/documentation/api/pivot
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs91/src/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs91/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs91/src/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs91/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs91" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs91" %}
 
 ## See Also
 

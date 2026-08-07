@@ -1,17 +1,17 @@
 ---
 layout: post
-title: Switching older themes style in TypeScript Pivot Table component | Syncfusion
-description: Learn here all about Switching older themes style in Syncfusion TypeScript Pivot Table component of Syncfusion Essential JS 2 and more.
-platform: grid-sdk
-control: Switching older themes style 
-publishingplatform: grid-sdk
+title: How to Switch to Older Themes Style in ##Platform_Name## Pivot Table | Syncfusion
+description: Step-by-step example showing how to switch to older themes style in the ##Platform_Name## Pivot Table, with CSS selectors and pivot table height configuration.
+platform: ej2-javascript
+control: Switching older themes style
+publishingplatform: ##Platform_Name##
 documentation: ug
-domainurl: https://help.syncfusion.com/grid-sdk
+domainurl: ##DomainURL##
 ---
 
 <!-- markdownlint-disable MD009 -->
 
-# Switching older themes style in TypeScript Pivot Table component
+# How to Switch to Older Themes Style in ##Platform_Name## Pivot Table
 
 From Volume 1, 2020 onwards Syncfusion<sup style="font-size:70%">&reg;</sup> has revised the theming and layout of the Pivot Table. So, to inherit the older theme style and layout please do the necessary changes in CSS and pivot table height.
 
@@ -73,11 +73,11 @@ In the below code sample, we replicate the older theme style.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/theme-switch-cs3/index.ts %}
+{% include code-snippet/pivot-table/theme-switch-cs3/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/theme-switch-cs3/index.html %}
+{% include code-snippet/pivot-table/theme-switch-cs3/index.html %}
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/pivot-table/theme-switch-cs3" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/theme-switch-cs3" %}

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Accessibility in Angular Pivotview component | Syncfusion
-description: Learn here all about Accessibility in Syncfusion Angular Pivotview component of Syncfusion Essential JS 2 and more.
+title: Accessibility in Angular Pivot Table | Syncfusion
+description: Learn how the Angular Pivot Table meets WCAG 2.2 and Section 508 standards with WAI-ARIA roles, keyboard navigation, and screen reader support.
 control: Accessibility 
-platform: grid-sdk
+platform: ej2-angular
 documentation: ug
-domainurl: https://help.syncfusion.com/grid-sdk
+domainurl: ##DomainURL##
 ---
 
-# Accessibility in Angular Pivotview component
+# Accessibility in Angular Pivot Table
 
 The pivot table component followed the accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) that are commonly used to evaluate accessibility.
 
@@ -235,15 +235,15 @@ The accessibility compliance of the pivot table component is shown in the follow
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/accessibility/src/app.component.ts %}
+{% include code-snippet/pivot-grid/accessibility/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/accessibility/src/main.ts %}
+{% include code-snippet/pivot-grid/accessibility/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/accessibility" %}
+{% previewsample "page.domainurl/samples/pivot-grid/accessibility" %}
 
 ## See also
 

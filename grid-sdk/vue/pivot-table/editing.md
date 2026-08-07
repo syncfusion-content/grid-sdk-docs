@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Editing in Vue Pivot Table component | Syncfusion
-description: Learn here all about Editing in Syncfusion Vue Pivot Table component of Syncfusion Essential JS 2 and more.
+title: Editing in Vue Pivot Table | Syncfusion
+description: Learn how the Vue Pivot Table enables cell editing in normal, dialog, batch, and command-column modes, with editSettings for CRUD.
 control: Editing 
-platform: grid-sdk
+platform: ej2-vue
 documentation: ug
-domainurl: https://help.syncfusion.com/grid-sdk
+domainurl: ##DomainURL##
 ---
 
-# Editing in Vue Pivot Table component
+# Editing in Vue Pivot Table
 
 > This feature is applicable only for the relational data source.
 
@@ -51,14 +51,14 @@ Normal edit mode allows users to edit one row at a time in the editing dialog wi
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/default-cs39/app-composition.vue %}
+{% include code-snippet/pivot-grid/default-cs39/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/default-cs39/app.vue %}
+{% include code-snippet/pivot-grid/default-cs39/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/default-cs39" %}
+{% previewsample "page.domainurl/code-snippet/pivot-grid/default-cs39" %}
 
 ## Dialog
 
@@ -66,14 +66,14 @@ The dialog edit mode provides a focused editing environment by displaying the se
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/default-cs40/app-composition.vue %}
+{% include code-snippet/pivot-grid/default-cs40/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/default-cs40/app.vue %}
+{% include code-snippet/pivot-grid/default-cs40/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/default-cs40" %}
+{% previewsample "page.domainurl/code-snippet/pivot-grid/default-cs40" %}
 
 ## Batch
 
@@ -81,14 +81,14 @@ Batch editing enables users to make multiple changes to data grid cells and save
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/default-cs41/app-composition.vue %}
+{% include code-snippet/pivot-grid/default-cs41/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/default-cs41/app.vue %}
+{% include code-snippet/pivot-grid/default-cs41/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/default-cs41" %}
+{% previewsample "page.domainurl/code-snippet/pivot-grid/default-cs41" %}
 
 ## Command column
 
@@ -109,14 +109,14 @@ N>
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/default-cs42/app-composition.vue %}
+{% include code-snippet/pivot-grid/default-cs42/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/default-cs42/app.vue %}
+{% include code-snippet/pivot-grid/default-cs42/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/default-cs42" %}
+{% previewsample "page.domainurl/code-snippet/pivot-grid/default-cs42" %}
 
 ## Inline Editing
 
@@ -124,14 +124,14 @@ The inline editing option provides streamlined data modification by allowing dir
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/pivot_flatdata-cs1/app-composition.vue %}
+{% include code-snippet/pivot-grid/pivot_flatdata-cs1/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/pivot_flatdata-cs1/app.vue %}
+{% include code-snippet/pivot-grid/pivot_flatdata-cs1/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/pivot_flatdata-cs1" %}
+{% previewsample "page.domainurl/code-snippet/pivot-grid/pivot_flatdata-cs1" %}
 
 ## Editing using the pivot chart
 
@@ -141,14 +141,14 @@ Clicking a data point in the pivot chart displays the underlying raw items in a 
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/default-cs43/app-composition.vue %}
+{% include code-snippet/pivot-grid/default-cs43/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/default-cs43/app.vue %}
+{% include code-snippet/pivot-grid/default-cs43/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/default-cs43" %}
+{% previewsample "page.domainurl/code-snippet/pivot-grid/default-cs43" %}
 
 ## Events
 
@@ -163,14 +163,14 @@ The event [`editCompleted`](https://ej2.syncfusion.com/vue/documentation/api/piv
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/default-cs44/app-composition.vue %}
+{% include code-snippet/pivot-grid/default-cs44/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/default-cs44/app.vue %}
+{% include code-snippet/pivot-grid/default-cs44/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/default-cs44" %}
+{% previewsample "page.domainurl/code-snippet/pivot-grid/default-cs44" %}
 
 ### DrillThrough
 
@@ -200,14 +200,14 @@ For example, you can restrict add and save actions by setting **args.cancel** to
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/default-cs45/app-composition.vue %}
+{% include code-snippet/pivot-grid/default-cs45/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/default-cs45/app.vue %}
+{% include code-snippet/pivot-grid/default-cs45/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/default-cs45" %}
+{% previewsample "page.domainurl/code-snippet/pivot-grid/default-cs45" %}
 
 ### ActionComplete
 
@@ -227,14 +227,14 @@ The [`actionComplete`](https://ej2.syncfusion.com/vue/documentation/api/pivotvie
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/default-cs46/app-composition.vue %}
+{% include code-snippet/pivot-grid/default-cs46/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/default-cs46/app.vue %}
+{% include code-snippet/pivot-grid/default-cs46/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/default-cs46" %}
+{% previewsample "page.domainurl/code-snippet/pivot-grid/default-cs46" %}
 
 ### ActionFailure
 
@@ -253,14 +253,14 @@ The [`actionFailure`](https://ej2.syncfusion.com/vue/documentation/api/pivotview
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/default-cs47/app-composition.vue %}
+{% include code-snippet/pivot-grid/default-cs47/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/default-cs47/app.vue %}
+{% include code-snippet/pivot-grid/default-cs47/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/default-cs47" %}
+{% previewsample "page.domainurl/code-snippet/pivot-grid/default-cs47" %}
 
 ## See Also
 

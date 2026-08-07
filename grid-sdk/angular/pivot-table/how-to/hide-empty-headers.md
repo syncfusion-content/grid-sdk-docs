@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Hide empty headers in Angular Pivotview component | Syncfusion
-description: Learn here all about Hide empty headers in Syncfusion Angular Pivotview component of Syncfusion Essential JS 2 and more.
-platform: grid-sdk
+title: How to Hide Empty Headers in Angular Pivot Table | Syncfusion
+description: Step-by-step example showing how to hide empty headers in the Angular Pivot Table, with code snippets and property references.
+platform: ej2-angular
 control: Hide empty headers 
 documentation: ug
-domainurl: https://help.syncfusion.com/grid-sdk
+domainurl: ##DomainURL##
 ---
 
-# Hide empty headers in Angular Pivotview component
+# How to Hide Empty Headers in Angular Pivot Table
 
 When the raw data for a particular field is not defined, it will be shown as 'Undefined' in the pivot table headers. You can hide those headers by setting the [`showHeaderWhenEmpty`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettingsModel/#showheaderwhenempty) property to **false** in the pivot table.
 
@@ -18,12 +18,12 @@ For example, when the raw data contains **"United Kingdom"** for the 'Country' f
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs167/src/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs167/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs167/src/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs167/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs167" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs167" %}

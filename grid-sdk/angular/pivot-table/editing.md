@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Editing in Angular Pivotview component | Syncfusion
-description: Learn here all about Editing in Syncfusion Angular Pivotview component of Syncfusion Essential JS 2 and more.
-platform: grid-sdk
+title: Editing in Angular Pivot Table | Syncfusion
+description: Learn how the Angular Pivot Table lets users add, update, and delete raw data in value cells via the editSettings drill-through grid.
+platform: ej2-angular
 control: Editing 
 documentation: ug
-domainurl: https://help.syncfusion.com/grid-sdk
+domainurl: ##DomainURL##
 ---
 
-# Editing in Angular Pivotview component
+# Editing in Angular Pivot Table
 
 > This feature is applicable only for the relational data source.
 
@@ -51,15 +51,15 @@ Normal edit mode allows users to edit one row at a time in the editing dialog wi
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs53/src/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs53/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs53/src/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs53/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs53" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs53" %}
 
 ## Dialog
 
@@ -67,15 +67,15 @@ The dialog edit mode provides a focused editing environment by displaying the se
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs54/src/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs54/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs54/src/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs54/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs54" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs54" %}
 
 ## Batch
 
@@ -83,15 +83,15 @@ Batch editing enables users to make multiple changes to data grid cells and save
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs55/src/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs55/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs55/src/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs55/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs55" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs55" %}
 
 ## Command column
 
@@ -108,15 +108,15 @@ The available built-in command buttons are:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs56/src/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs56/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs56/src/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs56/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs56" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs56" %}
 
 ## Inline Editing
 
@@ -124,15 +124,15 @@ The inline editing option provides streamlined data modification by allowing dir
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs57/src/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs57/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs57/src/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs57/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs57" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs57" %}
 
 ## Editing using the pivot chart
 
@@ -142,15 +142,15 @@ Clicking a data point in the pivot chart displays the underlying raw items in a 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs58/src/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs58/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs58/src/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs58/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs58" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs58" %}
 
 ## Events
 
@@ -165,15 +165,15 @@ The event [`editCompleted`](https://ej2.syncfusion.com/angular/documentation/api
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs59/src/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs59/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs59/src/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs59/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs59" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs59" %}
 
 ### DrillThrough
 
@@ -203,15 +203,15 @@ For example, you can restrict add and save actions by setting **args.cancel** to
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs60/src/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs60/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs60/src/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs60/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs60" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs60" %}
 
 ### ActionComplete
 
@@ -231,15 +231,15 @@ The [`actionComplete`](https://ej2.syncfusion.com/angular/documentation/api/pivo
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs61/src/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs61/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs61/src/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs61/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs61" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs61" %}
 
 ### ActionFailure
 
@@ -258,12 +258,12 @@ The [`actionFailure`](https://ej2.syncfusion.com/angular/documentation/api/pivot
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs62/src/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs62/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs62/src/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs62/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs62" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs62" %}

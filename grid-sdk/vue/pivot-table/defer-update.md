@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Defer update in Vue Pivot Table component | Syncfusion
-description: Learn here all about Defer update in Syncfusion Vue Pivot Table component of Syncfusion Essential JS 2 and more.
+title: Defer Update in Vue Pivot Table | Syncfusion
+description: Learn how the Vue Pivot Table defers layout updates so report changes are batched until the Apply button is clicked in the field list.
 control: Defer update 
-platform: grid-sdk
+platform: ej2-vue
 documentation: ug
-domainurl: https://help.syncfusion.com/grid-sdk
+domainurl: ##DomainURL##
 ---
 
-# Defer update in Vue Pivot Table component
+# Defer Update in Vue Pivot Table
 
 Defer layout update support allows updating the pivot table component only on demand, significantly improving performance for complex data operations. When this feature is enabled, users can drag-and-drop fields between row, column, value, and filter axes, apply sorting and filtering inside the Field List, resulting in changes to the pivot report configuration without immediately updating the pivot table values. Once all operations are performed and the "Apply" button is clicked in the Field List, the pivot table will update with the final modified report. This approach reduces multiple unnecessary renders and brings better performance, especially when working with large datasets or performing multiple field operations.
 
@@ -23,14 +23,14 @@ To enable deferred updates in the pivot table, set the [`allowDeferLayoutUpdate`
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/default-cs25/app-composition.vue %}
+{% include code-snippet/pivot-grid/default-cs25/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/default-cs25/app.vue %}
+{% include code-snippet/pivot-grid/default-cs25/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/default-cs25" %}
+{% previewsample "page.domainurl/code-snippet/pivot-grid/default-cs25" %}
 
 ## Stand-alone Field List (Fixed)
 
@@ -42,11 +42,11 @@ To enable deferred updates in the static fieldlist, set the [`allowDeferLayoutUp
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/default-cs26/app-composition.vue %}
+{% include code-snippet/pivot-grid/default-cs26/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/default-cs26/app.vue %}
+{% include code-snippet/pivot-grid/default-cs26/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/default-cs26" %}
+{% previewsample "page.domainurl/code-snippet/pivot-grid/default-cs26" %}

@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Server side pivot engine in Vue Pivot Table component | Syncfusion
-description: Learn here all about Server side pivot engine in Syncfusion Vue Pivot Table component of Syncfusion Essential JS 2 and more.
+title: Server-side Engine in Vue Pivot Table | Syncfusion
+description: Learn how the Vue Pivot Table uses the Syncfusion.Pivot.Engine server-side library via a Web API to offload aggregation, filtering, sorting, and grouping for large relational datasets.
 control: Server side pivot engine 
-platform: grid-sdk
+platform: ej2-vue
 documentation: ug
-domainurl: https://help.syncfusion.com/grid-sdk
+domainurl: ##DomainURL##
 ---
 
 > By default, the Pivot Table processes and displays data using its built-in engine with the given data source. Alternatively, you can use a server-side pivot engine to connect external data to the Pivot Table, which is especially useful when working with large datasets. This option is applicable only for relational data sources.
 
-# Server side pivot engine in Vue Pivot Table component
+# Server-side Engine in Vue Pivot Table
 
 This section explains how to use the Syncfusion<sup style="font-size:70%">&reg;</sup> assembly [`Syncfusion.Pivot.Engine`](https://www.nuget.org/packages/Syncfusion.Pivot.Engine) in a server-side application. The server-side engine performs operations such as aggregation, filtering, sorting, and grouping on the server. Only the information required for the Pivot Table viewport is sent to the client through a web service (Web API), instead of transferring the entire data source. This approach helps reduce network traffic and improves Pivot Table rendering performance when working with large data sets. It works efficiently with the virtual scrolling option and supports all existing features in the Pivot Table.
 
@@ -1345,14 +1345,14 @@ Use a trusted token issued by the authentication flow after sign‑in. Keep toke
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/server-side-cs1/app-composition.vue %}
+{% include code-snippet/pivot-grid/server-side-cs1/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/server-side-cs1/app.vue %}
+{% include code-snippet/pivot-grid/server-side-cs1/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/server-side-cs1" %}
+{% previewsample "page.domainurl/code-snippet/pivot-grid/server-side-cs1" %}
 
 **Production tips**
 - Load tokens on demand and rotate them regularly; never hard-code secrets in source control.

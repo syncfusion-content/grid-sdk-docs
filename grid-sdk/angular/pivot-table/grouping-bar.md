@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Grouping bar in Angular Pivotview component | Syncfusion
-description: Learn here all about Grouping bar in Syncfusion Angular Pivotview component of Syncfusion Essential JS 2 and more.
-platform: grid-sdk
+title: Grouping Bar in Angular Pivot Table | Syncfusion
+description: Learn how the Angular Pivot Table uses the grouping bar to drag and drop fields between row, column, value, and filter axes.
+platform: ej2-angular
 control: Grouping bar 
 documentation: ug
-domainurl: https://help.syncfusion.com/grid-sdk
+domainurl: ##DomainURL##
 ---
 
-# Grouping bar in Angular Pivotview component
+# Grouping Bar in Angular Pivot Table
 
 The Grouping Bar option in the Pivot Table automatically displays fields from the bound data source. It allows users to drag and drop fields between different axes such as columns, rows, values, and filters to create a pivot table at runtime. You can enable it by setting the [`showGroupingBar`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/index-default#showgroupingbar) property to **true**.
 
@@ -24,15 +24,15 @@ To use the grouping bar, you need to inject the `GroupingBarService` module in t
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs125/src/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs125/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs125/src/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs125/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs125" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs125" %}
 
 The grouping bar offers additional options to modify its appearance and behavior using the [`groupingBarSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/index-default#groupingbarsettings) property.
 
@@ -44,15 +44,15 @@ To display the fields panel, set the [`showFieldsPanel`](https://ej2.syncfusion.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs126/src/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs126/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs126/src/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs126/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs126" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs126" %}
 
 ## Show or hide all filter icon
 
@@ -64,15 +64,15 @@ By default, the filter icon appears next to each field in the grouping bar. If y
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs127/src/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs127/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs127/src/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs127/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs127" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs127" %}
 
 ## Show or hide specific filter icon
 
@@ -82,15 +82,15 @@ In the sample below, the filter icons for the "Quarter" and "Products" fields ar
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs128/src/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs128/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs128/src/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs128/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs128" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs128" %}
 
 ## Show or hide all sort icon
 
@@ -102,15 +102,15 @@ To disable the sort option, set the [`showSortIcon`](https://ej2.syncfusion.com/
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs129/src/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs129/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs129/src/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs129/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs129" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs129" %}
 
 ## Show or hide specific sort icon
 
@@ -120,15 +120,15 @@ In the example below, the sort icons for the "Quarter" and "Country" fields are 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs130/src/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs130/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs130/src/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs130/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs130" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs130" %}
 
 ## Show or hide all remove icon
 
@@ -140,15 +140,15 @@ If you want to hide the remove icon, set the [`showRemoveIcon`](https://ej2.sync
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs131/src/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs131/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs131/src/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs131/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs131" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs131" %}
 
 ## Show or hide a specific remove icon
 
@@ -158,15 +158,15 @@ In the example below, the remove icon for the "Year", "Sold", and "Products" fie
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs132/src/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs132/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs132/src/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs132/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs132" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs132" %}
 
 ## Disable all fields from dragging
 
@@ -174,15 +174,15 @@ In the Pivot Table, the grouping bar lets users move fields between the row, col
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs133/src/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs133/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs133/src/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs133/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs133" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs133" %}
 
 ## Disable specific field from dragging
 
@@ -192,15 +192,15 @@ In the example below, users cannot drag the "Year" and "Products" fields. This s
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs134/src/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs134/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs134/src/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs134/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs134" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs134" %}
 
 ## Remove specific field(s) from displaying
 
@@ -212,15 +212,15 @@ To exclude specific fields, add the field names to the [`excludeFields`](https:/
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs135/src/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs135/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs135/src/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs135/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs135" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs135" %}
 
 ## Changing aggregation type of value fields at runtime
 
@@ -230,15 +230,15 @@ By default, the icon for setting the aggregation type is visible in the grouping
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs136/src/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs136/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs136/src/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs136/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs136" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs136" %}
 
 ## Show or hide specific dropdown icon
 
@@ -248,15 +248,15 @@ In the following example, the dropdown icon for the "Sold" field is hidden:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs137/src/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs137/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs137/src/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs137/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs137" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs137" %}
 
 > The following properties—[`showFilterIcon`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/fieldoptions#showfiltericon), [`showSortIcon`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/fieldoptions#showsorticon), [`showValueTypeIcon`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/fieldoptions#showvaluetypeicon), and [`allowDragAndDrop`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/fieldoptions#allowdraganddrop)—in the fields of [`dataSourceSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/datasourcesettings) apply to both the grouping bar and field list.
 
@@ -268,15 +268,15 @@ The **Values** button appears in the grouping bar when the [showValuesButton](ht
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs138/src/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs138/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs138/src/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs138/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs138" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs138" %}
 
 ## Event
 
@@ -293,15 +293,15 @@ For example, you can use this event to change the caption of the [`droppedField`
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs139/src/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs139/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs139/src/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs139/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs139" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs139" %}
 
 ### FieldDragStart
 
@@ -317,15 +317,15 @@ In the following example, the drag action is prevented only for fields placed in
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs140/src/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs140/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs140/src/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs140/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs140" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs140" %}
 
 ### FieldDrop
 
@@ -343,15 +343,15 @@ In the example below, dropping any field into the "Values" axis is prevented. Th
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs141/src/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs141/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs141/src/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs141/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs141" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs141" %}
 
 ### FieldRemove
 
@@ -369,15 +369,15 @@ In the following example, the field "Country" cannot be removed from the report 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs142/src/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs142/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs142/src/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs142/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs142" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs142" %}
 
 ### AggregateMenuOpen
 
@@ -394,15 +394,15 @@ In the following sample, the dropdown menu for the "Amount" field is customized 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs143/src/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs143/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs143/src/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs143/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs143" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs143" %}
 
 > The [`aggregateMenuOpen`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/index-default#aggregatemenuopen), [`fieldRemove`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/index-default#fieldremove), [`fieldDrop`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/index-default#fielddrop), [`fieldDragStart`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/index-default#fielddragstart), and [`onFieldDropped`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/index-default#onfielddropped) events are available for both the grouping bar and field list.
 
@@ -431,15 +431,15 @@ For example, in the sample below, users can restrict actions like sorting or fil
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs144/src/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs144/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs144/src/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs144/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs144" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs144" %}
 
 ### ActionComplete
 
@@ -468,15 +468,15 @@ The event provides the following parameters:
   
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs145/src/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs145/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs145/src/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs145/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs145" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs145" %}
 
 ### ActionFailure
 
@@ -500,15 +500,15 @@ When this event is triggered, users can refer to the information in these parame
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs146/src/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs146/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs146/src/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs146/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs146" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs146" %}
 
 ## See Also
 

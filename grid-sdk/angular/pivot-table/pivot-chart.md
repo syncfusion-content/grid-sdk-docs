@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Pivot chart in Angular Pivotview component | Syncfusion
-description: Learn here all about Pivot chart in Syncfusion Angular Pivotview component of Syncfusion Essential JS 2 and more.
-platform: grid-sdk
+title: Pivot Chart in Angular Pivot Table | Syncfusion
+description: Learn how the Angular Pivot Table renders 21 chart types, accumulation charts, drill operations, and label customization alongside the grid.
+platform: ej2-angular
 control: Pivot chart 
 documentation: ug
-domainurl: https://help.syncfusion.com/grid-sdk
+domainurl: ##DomainURL##
 ---
 
-# Pivot chart in Angular Pivotview component
+# Pivot Chart in Angular Pivot Table
 
 The Pivot Chart in the Syncfusion Angular Pivot Table component helps users visualize aggregated values in a clear and graphical format. It provides essential options like drill down and drill up operations, over 15 chart types, and various display settings for series, axes, legends, export, print, and tooltips. The main purpose of the Pivot Chart is to present Pivot Table data in a way that is easy to understand and interact with.
 
@@ -23,15 +23,15 @@ The following sample shows the pivot chart component based on the pivot report b
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs222/src/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs222/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs222/src/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs222/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs222" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs222" %}
 
 ## Data Binding
 
@@ -69,15 +69,15 @@ For example, to display a **Bar** chart, set the chart type to 'Bar' within the 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs223/src/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs223/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs223/src/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs223/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs223" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs223" %}
 
 ## Accumulation Charts
 
@@ -94,15 +94,15 @@ In the code example below, the **Pie** chart is displayed by default. You can sw
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs224/src/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs224/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs224/src/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs224/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs224" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs224" %}
 
 ### Drill down and up
 
@@ -116,15 +116,15 @@ In accumulation charts, you can use the drill down and drill up options to explo
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs225/src/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs225/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs225/src/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs225/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs225" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs225" %}
 
 ![output](images/expand_collapse.png)
 
@@ -136,15 +136,15 @@ If the column has more than one header, enter all the headers separated by a del
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs226/src/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs226/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs226/src/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs226/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs226" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs226" %}
 
 ### Label Customization
 
@@ -161,29 +161,29 @@ In the following code sample, the data labels are placed inside the chart points
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs227/src/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs227/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs227/src/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs227/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs227" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs227" %}
 
 The **Connector Line** appears when data labels are positioned outside the chart. You can style this connector line using the [`connectorStyle`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/pivotChartDataLabelModel/#connectorstyle) property in [`dataLabel`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/pivotSeriesModel/#datalabel) to modify its color, length, width, and other properties. In the example below, the connector line appearance is changed to show a different style.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs228/src/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs228/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs228/src/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs228/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs228" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs228" %}
 
 ### Pie and Doughnut Customization
 
@@ -191,15 +191,15 @@ You can draw pie and doughnut charts within a specific range by using the [`star
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs229/src/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs229/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs229/src/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs229/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs229" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs229" %}
 
 You can convert a pie chart to a doughnut chart and vice-versa using the [`innerRadius`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/pivotSeriesModel/#innerradius) property in the [`chartSeries`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/pivotSeriesModel/) configuration. When this property is set to a value greater than **0** percent, the chart appears as a doughnut instead of a pie chart.
 
@@ -207,15 +207,15 @@ You can convert a pie chart to a doughnut chart and vice-versa using the [`inner
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs230/src/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs230/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs230/src/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs230/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs230" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs230" %}
 
 ### Exploding Series Points
 
@@ -223,15 +223,15 @@ You can make an individual point in a pivot chart stand out by enabling the expl
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs231/src/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs231/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs231/src/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs231/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs231" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs231" %}
 
 ## Field List
 
@@ -241,15 +241,15 @@ The sample below demonstrates the field list shown in `Popup` mode within the pi
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs232/src/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs232/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs232/src/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs232/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs232" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs232" %}
 
 ## Grouping Bar
 
@@ -259,29 +259,29 @@ You can display the grouping bar in the Pivot Chart by setting the [`showGroupin
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs233/src/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs233/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs233/src/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs233/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs233" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs233" %}
 
 When using accumulation charts, the drop-down list appears on the column axis. This list contains the column headers available in the Pivot Chart. Users can switch column headers using this drop-down, and the accumulation chart will update with the selected header.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs234/src/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs234/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs234/src/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs234/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs234" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs234" %}
 
 ## Single Axis
 
@@ -289,15 +289,15 @@ By default, the pivot chart uses the first value field (measure) from your repor
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs235/src/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs235/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs235/src/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs235/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs235" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs235" %}
 
 ## Multiple Axis
 
@@ -307,29 +307,29 @@ The pivot chart can be drawn with multiple value fields by setting the [`enableM
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs236/src/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs236/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs236/src/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs236/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs236" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs236" %}
 
 When binding more value fields, the result displays multiple pivot charts, with each chart shrinking within the parent container height. To prevent this behavior, set the [`enableScrollOnMultiAxis`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/chartSettings/#enablescrollonmultiaxis) property to **true** in the [`chartSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/chartSettings/). This ensures each pivot chart maintains a minimum height of "160px" to "180px" and displays a vertical scroll bar for better visibility.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs237/src/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs237/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs237/src/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs237/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs237" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs237" %}
 
 Alternatively, you can display multiple values in a single chart. In this approach, the series from multiple values are grouped and displayed together. Based on the values, multiple Y-axis scales are created with different ranges. This can be achieved by setting [`enableMultipleAxis`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/chartSettings/#enablemultipleaxis) to **true** and [`multipleAxisMode`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/chartSettings/#multipleaxismode) to `Single` in the [`chartSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/chartSettings/).
 
@@ -337,15 +337,15 @@ In the following code sample, the pivot chart appears as a single chart with mul
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs238/src/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs238/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs238/src/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs238/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs238" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs238" %}
 
 To display chart series for multiple values within a single Y-axis, set the [`enableMultipleAxis`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/chartSettingsModel/#enablemultipleaxis) property to **true** and the [`multipleAxisMode`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/chartSettingsModel/#multipleaxismode) property to **Combined** in the [`chartSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/chartSettingsModel/).
 
@@ -355,15 +355,15 @@ The following code sample shows a pivot chart with multiple value fields such as
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs305/src/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs305/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs305/src/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs305/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs305" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs305" %}
 
 ### Show point color based on members
 
@@ -373,15 +373,15 @@ In addition, users can show or hide specific members from all measures in the ch
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs239/src/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs239/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs239/src/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs239/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs239" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs239" %}
 
 ## Series customization
 
@@ -389,15 +389,15 @@ You can customize the series in the pivot chart by using the [`chartSeries`](htt
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs240/src/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs240/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs240/src/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs240/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs240" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs240" %}
 
 If you want to change each series separately, use the [`chartSeriesCreated`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/pivotViewModel/#chartseriescreated) event. This event happens after the pivot chart series are created, making it possible to work with each series one at a time.
 
@@ -405,15 +405,15 @@ The sample below shows how you can hide every even-numbered series in the pivot 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs241/src/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs241/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs241/src/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs241/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs241" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs241" %}
 
 ## Axis Customization
 
@@ -425,15 +425,15 @@ For example, in the sample below, the titles for the y-axis and x-axis are set t
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs242/src/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs242/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs242/src/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs242/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs242" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs242" %}
 
 Users can also modify multi-level labels on the primary x-axis by using the [`multiLevelLabelRender`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/chartSettingsModel/#multilevellabelrender) event in [`chartSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/chartSettings/). This event is triggered whenever a multi-level label is rendered on the chart. The event provides the following options:
 
@@ -446,15 +446,15 @@ The example below shows how to update the text and style for multi-level labels 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs243/src/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs243/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs243/src/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs243/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs243" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs243" %}
 
 ## Legend customization
 
@@ -490,15 +490,15 @@ In the following code example, you can see how to set a different legend shape a
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs244/src/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs244/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs244/src/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs244/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs244" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs244" %}
 
 ## User interaction
 
@@ -514,15 +514,15 @@ In the following code sample, both marker and crosshair options are enabled and 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs245/src/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs245/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs245/src/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs245/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs245" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs245" %}
 
 ### Zooming and panning
 
@@ -547,15 +547,15 @@ In the code sample below, all four zooming types are enabled, along with the too
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs246/src/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs246/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs246/src/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs246/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs246" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs246" %}
 
 ### Tooltip
 
@@ -567,15 +567,15 @@ The code below shows how to change the default tooltip appearance and settings i
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs247/src/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs247/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs247/src/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs247/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs247" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs247" %}
 
 ## Export
 
@@ -597,15 +597,15 @@ The example below shows how to export the pivot chart using an external button l
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs248/src/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs248/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs248/src/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs248/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs248" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs248" %}
 
 ## Print
 
@@ -615,15 +615,15 @@ In the example below, clicking an external button labeled "Print Chart" calls th
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs249/src/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs249/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs249/src/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs249/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs249" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs249" %}
 
 ## Events
 
@@ -640,12 +640,12 @@ The [multiLevelLabelRender](https://helpej2.syncfusion.com/angular/documentation
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs323/src/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs323/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs323/src/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs323/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs323" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs323" %}

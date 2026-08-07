@@ -1,28 +1,28 @@
 ---
 layout: post
-title: State persistence in Angular Pivotview component | Syncfusion
-description: Learn here all about State persistence in Syncfusion Angular Pivotview component of Syncfusion Essential JS 2 and more.
-platform: grid-sdk
+title: State Persistence in Angular Pivot Table | Syncfusion
+description: Learn how the Angular Pivot Table persists the report state, filters, and sort in browser local storage with enablePersistence.
+platform: ej2-angular
 control: State persistence 
 documentation: ug
-domainurl: https://help.syncfusion.com/grid-sdk
+domainurl: ##DomainURL##
 ---
 
-# State persistence in Angular Pivotview component
+# State Persistence in Angular Pivot Table
 
 State persistence enables users to automatically retain the entire configuration of the Pivot Table component in the browser's local storage (cookies). This includes the current layout, field arrangements, sorting, applied filters, and the expanded or collapsed states of fields. By enabling the [`enablePersistence`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#enablepersistence) property in the Pivot Table component, all these interactive states and settings are saved automatically. As a result, users can refresh the browser or navigate to different pages and return at any time, knowing that all modified report settings will be retained—ensuring a seamless and uninterrupted data analysis experience.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs281/src/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs281/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs281/src/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs281/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs281" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs281" %}
 
 ## Save and Load Pivot Layout
 
@@ -30,12 +30,12 @@ In addition to automatic state persistence, the Pivot Table component allows you
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs282/src/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs282/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs282/src/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs282/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs282" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs282" %}

@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Switching older themes style in React Pivotview component | Syncfusion
-description: Learn here all about Switching older themes style in Syncfusion React Pivotview component of Syncfusion Essential JS 2 and more.
-control: Switching older themes style 
-platform: grid-sdk
+title: Switching older themes style in React Pivot Table | Syncfusion
+description: Learn how the React Pivot Table reverts to the pre-Volume 1 2020 theme by overriding CSS and adjusting the row height for older layouts.
+control: Pivot Table
+platform: ej2-react
 documentation: ug
-domainurl: https://help.syncfusion.com/grid-sdk
+domainurl: ##DomainURL##
 ---
 
 <!-- markdownlint-disable MD009 -->
 
-# Switching older themes style in React Pivotview component
+# Switching older themes style in React Pivot Table
 
 From Volume 1, 2020 onwards Syncfusion<sup style="font-size:70%">&reg;</sup> has revised the theming and layout of the Pivot Table. So, to inherit the older theme style and layout please do the necessary changes in CSS and pivot table height.
 
@@ -72,17 +72,17 @@ In the below code sample, we replicate the older theme style.
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/switch-theme-cs2/app/App.jsx %}
+{% include code-snippet/pivot-table/switch-theme-cs2/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/switch-theme-cs2/app/App.tsx %}
+{% include code-snippet/pivot-table/switch-theme-cs2/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/switch-theme-cs2/app/datasource.jsx %}
+{% include code-snippet/pivot-table/switch-theme-cs2/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/switch-theme-cs2/app/datasource.tsx %}
+{% include code-snippet/pivot-table/switch-theme-cs2/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
- {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/switch-theme-cs2" %}
+ {% previewsample "page.domainurl/code-snippet/pivot-table/switch-theme-cs2" %}

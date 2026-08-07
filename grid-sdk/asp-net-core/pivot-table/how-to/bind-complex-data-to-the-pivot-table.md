@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Complex JSON to flat JSON in ASP.NET Core Syncfusion
-description: Learn to convert complex JSON to flat JSON and bind to Syncfusion ASP.NET Core Pivot Table component of syncfusion and more.
-platform: grid-sdk
+title: How to Flatten Complex JSON in ASP.NET Core Pivot Table | Syncfusion
+description: Learn how to flatten complex nested JSON and bind it to the ASP.NET Core Pivot Table, mapping parent and child object fields into individual columns.
+platform: ej2-asp-core-mvc
 control: Convert complex JSON to flat JSON and assign it to the pivot table 
 documentation: ug
-publishingplatform: grid-sdk 
+publishingplatform: ##Platform_Name## 
 ---
 
 <!-- markdownlint-disable MD009 -->
-# Convert complex JSON to flat JSON and assign it to pivot table
+# How to Flatten Complex JSON in ASP.NET Core Pivot Table
 
 ## Overview
 
@@ -69,10 +69,10 @@ In the following example, the **complexToFlatJson()** method is used to convert 
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/complex-to-flat-json/tagHelper %}
+{% include code-snippet/pivot-table/complex-to-flat-json/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="ComplexToFlatJson.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/complex-to-flat-json/ComplexToFlatJson.cs %}
+{% include code-snippet/pivot-table/complex-to-flat-json/ComplexToFlatJson.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -80,10 +80,10 @@ In the following example, the **complexToFlatJson()** method is used to convert 
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/complex-to-flat-json/razor %}
+{% include code-snippet/pivot-table/complex-to-flat-json/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="ComplexToFlatJson.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/complex-to-flat-json/ComplexToFlatJson.cs %}
+{% include code-snippet/pivot-table/complex-to-flat-json/ComplexToFlatJson.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

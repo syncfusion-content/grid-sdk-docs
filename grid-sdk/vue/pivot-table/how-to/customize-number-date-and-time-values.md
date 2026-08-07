@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Customize number date and time values in Vue | Syncfusion
-description: Learn here all about Customize number date and time values in Syncfusion Vue Pivotview component of Syncfusion Essential JS 2 and more.
+title: How to customize number date and time values in Vue Pivot Table | Syncfusion
+description: Step-by-step example showing how to customize number, date, and time values in the Vue Pivot Table with the formatSettings property and NumberFormat or DateFormat options.
 control: Customize number date and time values 
-platform: grid-sdk
+platform: ej2-vue
 documentation: ug
-domainurl: https://help.syncfusion.com/grid-sdk
+domainurl: ##DomainURL##
 ---
 
-# Customize number, date, and time values in Vue Pivot Table component
+# How to customize number date and time values in Vue Pivot Table
 
 You can format the number, date, and time values for each field using the [`formatSettings`](https://ej2.syncfusion.com/vue/documentation/api/pivotview/dataSourceSettings#formatsettings) option under [`dataSourceSettings`](https://ej2.syncfusion.com/vue/documentation/api/pivotview/dataSourceSettings). This configuration is applied during component initialization to ensure consistent data presentation across the pivot table.
 
@@ -23,14 +23,14 @@ For numeric fields, the formatting settings include the following properties:
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/default-cs135/app-composition.vue %}
+{% include code-snippet/pivot-grid/default-cs135/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/default-cs135/app.vue %}
+{% include code-snippet/pivot-grid/default-cs135/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/default-cs135" %}
+{% previewsample "page.domainurl/code-snippet/pivot-grid/default-cs135" %}
 
 ## Date and Time formatting
 
@@ -44,14 +44,14 @@ For date and time fields, the formatting settings include these properties:
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/default-cs136/app-composition.vue %}
+{% include code-snippet/pivot-grid/default-cs136/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/default-cs136/app.vue %}
+{% include code-snippet/pivot-grid/default-cs136/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/default-cs136" %}
+{% previewsample "page.domainurl/code-snippet/pivot-grid/default-cs136" %}
 
 ## Limitations of date formatting
 

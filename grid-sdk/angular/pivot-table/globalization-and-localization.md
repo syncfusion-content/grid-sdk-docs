@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Globalization in Angular Pivotview component | Syncfusion
-description: Learn here all about Globalization and localization in Syncfusion Angular Pivotview component of Syncfusion Essential JS 2 and more.
-platform: grid-sdk
+title: Globalization and Localization in Angular Pivot Table | Syncfusion
+description: Learn how the Angular Pivot Table localizes culture, date, number, and currency formats with locale and L10n resources.
+platform: ej2-angular
 control: Globalization and localization 
 documentation: ug
-domainurl: https://help.syncfusion.com/grid-sdk
+domainurl: ##DomainURL##
 ---
 
-# Globalization and localization in Angular Pivotview component
+# Globalization and Localization in Angular Pivot Table
 
 The Pivot Table helps users view and interact with data in their own language and regional format. This means users from different countries can easily read and understand the data because dates, numbers, and words are shown in a way that feels familiar to them.
 
@@ -69,15 +69,15 @@ Set the culture by using the [`locale`](https://ej2.syncfusion.com/angular/docum
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs110/src/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs110/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs110/src/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs110/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs110" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs110" %}
 
 > * In the above example, the `Amount` field is formatted using [`NumberFormatOptions`](https://ej2.syncfusion.com/angular/documentation/common/internationalization#manipulating-numbers). For date formats, value strings are formatted using [`DateFormatOptions`](https://ej2.syncfusion.com/angular/documentation/common/internationalization#manipulating-datetime).
 > * The default [`locale`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/index-default#locale) value is `en-US`. To change from the `en-US` culture to a different culture, update the `locale` property accordingly.
@@ -93,15 +93,15 @@ The following example shows how decimal separators appear when using the `Deutsc
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs111/src/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs111/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs111/src/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs111/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs111" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs111" %}
 
 ## Localization
 
@@ -561,15 +561,15 @@ The following example shows how to display the Pivot Table in German (`Deutsch`)
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs112/src/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs112/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs112/src/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs112/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs112" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs112" %}
 
 ## Right-to-left (RTL)
 
@@ -577,15 +577,15 @@ Right-to-left (RTL) support makes the Pivot Table more accessible and user-frien
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs113/src/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs113/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs113/src/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs113/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs113" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs113" %}
 
 ## See Also
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Drill through in React Pivot Table component | Syncfusion
-description: Learn here all about Drill through in Syncfusion React Pivot Table component of Syncfusion Essential JS 2 and more.
-control: Drill through 
-platform: grid-sdk
+title: Drill through in React Pivot Table | Syncfusion
+description: Learn how the React Pivot Table shows the raw, unaggregated records behind any aggregated value cell on double-click through the drill-through grid.
+control: Pivot Table
+platform: ej2-react
 documentation: ug
-domainurl: https://help.syncfusion.com/grid-sdk
+domainurl: ##DomainURL##
 ---
 
-# Drill through in React Pivot Table component
+# Drill through in React Pivot Table
 
 The drill-through feature in the Pivot Table component allows users to view the raw, unaggregated data behind any aggregated cell in the Pivot Table. To enable this feature, set the [`allowDrillThrough`](https://ej2.syncfusion.com/react/documentation/api/pivotview/index-default#allowdrillthrough) property to **true**. By double-clicking an aggregated cell, users can view its detailed raw data in a data grid displayed in a new window. The new window shows the row header, column header, and measure name of the selected cell at the top. Additionally, users can include or exclude fields available in the data grid using the column chooser option.
 
@@ -18,20 +18,20 @@ Below is an example of enabling drill-through in a Pivot Table:
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs51/app/App.jsx %}
+{% include code-snippet/pivot-table/default-cs51/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs51/app/App.tsx %}
+{% include code-snippet/pivot-table/default-cs51/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs51/app/datasource.jsx %}
+{% include code-snippet/pivot-table/default-cs51/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs51/app/datasource.tsx %}
+{% include code-snippet/pivot-table/default-cs51/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs51" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs51" %}
 
 Users can also access drill-through data through the pivot chart. By clicking on any data point in the pivot chart, they can view the raw data in a data grid displayed in a new window.
 
@@ -39,20 +39,20 @@ Below is an example of enabling drill-through with a pivot chart:
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs52/app/App.jsx %}
+{% include code-snippet/pivot-table/default-cs52/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs52/app/App.tsx %}
+{% include code-snippet/pivot-table/default-cs52/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs52/app/datasource.jsx %}
+{% include code-snippet/pivot-table/default-cs52/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs52/app/datasource.tsx %}
+{% include code-snippet/pivot-table/default-cs52/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs52" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs52" %}
 
 ## Maximum rows to retrieve
 
@@ -141,20 +141,20 @@ Below is an example of using the [`drillThrough`](https://ej2.syncfusion.com/rea
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs53/app/App.jsx %}
+{% include code-snippet/pivot-table/default-cs53/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs53/app/App.tsx %}
+{% include code-snippet/pivot-table/default-cs53/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs53/app/datasource.jsx %}
+{% include code-snippet/pivot-table/default-cs53/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs53/app/datasource.tsx %}
+{% include code-snippet/pivot-table/default-cs53/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs53" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs53" %}
 
 ### BeginDrillThrough
 
@@ -169,20 +169,20 @@ The following example demonstrates how to enable [`sorting`](https://ej2.syncfus
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs54/app/App.jsx %}
+{% include code-snippet/pivot-table/default-cs54/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs54/app/App.tsx %}
+{% include code-snippet/pivot-table/default-cs54/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs54/app/datasource.jsx %}
+{% include code-snippet/pivot-table/default-cs54/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs54/app/datasource.tsx %}
+{% include code-snippet/pivot-table/default-cs54/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs54" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs54" %}
 
 ## See Also
 

@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Pivot chart in TypeScript Pivot Table component | Syncfusion
-description: Learn here all about Pivot chart in Syncfusion TypeScript Pivot Table component of Syncfusion Essential JS 2 and more.
-platform: grid-sdk
-control: Pivot chart 
-publishingplatform: grid-sdk
+title: Pivot Chart in ##Platform_Name## Pivot Table | Syncfusion
+description: Learn how the ##Platform_Name## Pivot Table renders 15+ Pivot Chart types with drill down, axis options, and series, legend, export, and tooltip settings.
+platform: ej2-javascript
+control: Pivot chart
+publishingplatform: ##Platform_Name##
 documentation: ug
-domainurl: https://help.syncfusion.com/grid-sdk
+domainurl: ##DomainURL##
 ---
 
-# Pivot chart in TypeScript Pivot Table component
+# Pivot Chart in ##Platform_Name## Pivot Table
 
 The Pivot Chart in the Syncfusion Typescript Pivot Table component helps users visualize aggregated values in a clear and graphical format. It provides essential options like drill down and drill up operations, over 15 chart types, and various display settings for series, axes, legends, export, print, and tooltips. The main purpose of the Pivot Chart is to present Pivot Table data in a way that is easy to understand and interact with.
 
@@ -24,14 +24,14 @@ The following sample shows the pivot chart component based on the pivot report b
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs426/index.ts %}
+{% include code-snippet/pivot-table/pivot-table-cs426/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs426/index.html %}
+{% include code-snippet/pivot-table/pivot-table-cs426/index.html %}
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs426" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs426" %}
 
 ## Data Binding
 
@@ -69,14 +69,14 @@ For example, to display a **Bar** chart, set the chart type to 'Bar' within the 
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs427/index.ts %}
+{% include code-snippet/pivot-table/pivot-table-cs427/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs427/index.html %}
+{% include code-snippet/pivot-table/pivot-table-cs427/index.html %}
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs427" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs427" %}
 
 ## Accumulation Charts
 
@@ -93,14 +93,14 @@ In the code example below, the **Pie** chart is displayed by default. You can sw
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/accumulation-chart-cs10/index.ts %}
+{% include code-snippet/pivot-table/accumulation-chart-cs10/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/accumulation-chart-cs10/index.html %}
+{% include code-snippet/pivot-table/accumulation-chart-cs10/index.html %}
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/pivot-table/accumulation-chart-cs10" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/accumulation-chart-cs10" %}
 
 ### Drill down and up
 
@@ -114,14 +114,14 @@ In accumulation charts, you can use the drill down and drill up options to explo
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/accumulation-chart-cs11/index.ts %}
+{% include code-snippet/pivot-table/accumulation-chart-cs11/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/accumulation-chart-cs11/index.html %}
+{% include code-snippet/pivot-table/accumulation-chart-cs11/index.html %}
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/pivot-table/accumulation-chart-cs11" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/accumulation-chart-cs11" %}
 
 ![output](images/expand_collapse.png)
 
@@ -133,14 +133,14 @@ If the column has more than one header, enter all the headers separated by a del
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/accumulation-chart-cs12/index.ts %}
+{% include code-snippet/pivot-table/accumulation-chart-cs12/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/accumulation-chart-cs12/index.html %}
+{% include code-snippet/pivot-table/accumulation-chart-cs12/index.html %}
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/pivot-table/accumulation-chart-cs12" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/accumulation-chart-cs12" %}
 
 ### Label Customization
 
@@ -157,27 +157,27 @@ In the following code sample, the data labels are placed inside the chart points
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/accumulation-chart-cs13/index.ts %}
+{% include code-snippet/pivot-table/accumulation-chart-cs13/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/accumulation-chart-cs13/index.html %}
+{% include code-snippet/pivot-table/accumulation-chart-cs13/index.html %}
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/pivot-table/accumulation-chart-cs13" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/accumulation-chart-cs13" %}
 
 The **Connector Line** appears when data labels are positioned outside the chart. You can style this connector line using the [`connectorStyle`](https://ej2.syncfusion.com/documentation/api/pivotview/pivotChartDataLabelModel#connectorstyle) property in [`dataLabel`](https://ej2.syncfusion.com/documentation/api/pivotview/pivotSeriesModel#datalabel) to modify its color, length, width, and other properties. In the example below, the connector line appearance is changed to show a different style.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/accumulation-chart-cs14/index.ts %}
+{% include code-snippet/pivot-table/accumulation-chart-cs14/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/accumulation-chart-cs14/index.html %}
+{% include code-snippet/pivot-table/accumulation-chart-cs14/index.html %}
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/pivot-table/accumulation-chart-cs14" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/accumulation-chart-cs14" %}
 
 ### Pie and Doughnut Customization
 
@@ -185,14 +185,14 @@ You can draw pie and doughnut charts within a specific range by using the [`star
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/accumulation-chart-cs15/index.ts %}
+{% include code-snippet/pivot-table/accumulation-chart-cs15/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/accumulation-chart-cs15/index.html %}
+{% include code-snippet/pivot-table/accumulation-chart-cs15/index.html %}
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/pivot-table/accumulation-chart-cs15" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/accumulation-chart-cs15" %}
 
 You can convert a pie chart to a doughnut chart and vice-versa using the [`innerRadius`](https://ej2.syncfusion.com/documentation/api/pivotview/pivotSeriesModel#innerradius) property in the [`chartSeries`](https://ej2.syncfusion.com/documentation/api/pivotview/pivotSeriesModel) configuration. When this property is set to a value greater than **0** percent, the chart appears as a doughnut instead of a pie chart.
 
@@ -200,14 +200,14 @@ You can convert a pie chart to a doughnut chart and vice-versa using the [`inner
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/accumulation-chart-cs16/index.ts %}
+{% include code-snippet/pivot-table/accumulation-chart-cs16/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/accumulation-chart-cs16/index.html %}
+{% include code-snippet/pivot-table/accumulation-chart-cs16/index.html %}
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/pivot-table/accumulation-chart-cs16" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/accumulation-chart-cs16" %}
 
 ### Exploding Series Points
 
@@ -215,14 +215,14 @@ You can make an individual point in a pivot chart stand out by enabling the expl
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/accumulation-chart-cs17/index.ts %}
+{% include code-snippet/pivot-table/accumulation-chart-cs17/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/accumulation-chart-cs17/index.html %}
+{% include code-snippet/pivot-table/accumulation-chart-cs17/index.html %}
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/pivot-table/accumulation-chart-cs17" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/accumulation-chart-cs17" %}
 
 ## Field List
 
@@ -232,14 +232,14 @@ The sample below demonstrates the field list shown in `Popup` mode within the pi
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs428/index.ts %}
+{% include code-snippet/pivot-table/pivot-table-cs428/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs428/index.html %}
+{% include code-snippet/pivot-table/pivot-table-cs428/index.html %}
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs428" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs428" %}
 
 ## Grouping Bar
 
@@ -249,27 +249,27 @@ You can display the grouping bar in the Pivot Chart by setting the [`showGroupin
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs429/index.ts %}
+{% include code-snippet/pivot-table/pivot-table-cs429/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs429/index.html %}
+{% include code-snippet/pivot-table/pivot-table-cs429/index.html %}
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs429" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs429" %}
 
 When using accumulation charts, the drop-down list appears on the column axis. This list contains the column headers available in the Pivot Chart. Users can switch column headers using this drop-down, and the accumulation chart will update with the selected header.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/accumulation-chart-cs18/index.ts %}
+{% include code-snippet/pivot-table/accumulation-chart-cs18/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/accumulation-chart-cs18/index.html %}
+{% include code-snippet/pivot-table/accumulation-chart-cs18/index.html %}
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/pivot-table/accumulation-chart-cs18" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/accumulation-chart-cs18" %}
 
 ## Single Axis
 
@@ -277,14 +277,14 @@ By default, the pivot chart uses the first value field (measure) from your repor
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs430/index.ts %}
+{% include code-snippet/pivot-table/pivot-table-cs430/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs430/index.html %}
+{% include code-snippet/pivot-table/pivot-table-cs430/index.html %}
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs430" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs430" %}
 
 ## Multiple Axis
 
@@ -294,27 +294,27 @@ The pivot chart can be drawn with multiple value fields by setting the [`enableM
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs431/index.ts %}
+{% include code-snippet/pivot-table/pivot-table-cs431/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs431/index.html %}
+{% include code-snippet/pivot-table/pivot-table-cs431/index.html %}
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs431" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs431" %}
 
 When binding more value fields, the result displays multiple pivot charts, with each chart shrinking within the parent container height. To prevent this behavior, set the [`enableScrollOnMultiAxis`](https://ej2.syncfusion.com/documentation/api/pivotview/chartSettings#enablescrollonmultiaxis) property to **true** in the [`chartSettings`](https://ej2.syncfusion.com/documentation/api/pivotview/chartSettings). This ensures each pivot chart maintains a minimum height of "160px" to "180px" and displays a vertical scroll bar for better visibility.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs432/index.ts %}
+{% include code-snippet/pivot-table/pivot-table-cs432/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs432/index.html %}
+{% include code-snippet/pivot-table/pivot-table-cs432/index.html %}
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs432" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs432" %}
 
 Alternatively, you can display multiple values in a single chart. In this approach, the series from multiple values are grouped and displayed together. Based on the values, multiple Y-axis scales are created with different ranges. This can be achieved by setting [`enableMultipleAxis`](https://ej2.syncfusion.com/documentation/api/pivotview/chartSettings#enablemultipleaxis) to **true** and [`multipleAxisMode`](https://ej2.syncfusion.com/documentation/api/pivotview/chartSettings#multipleaxismode) to `Single` in the [`chartSettings`](https://ej2.syncfusion.com/documentation/api/pivotview/chartSettings).
 
@@ -322,14 +322,14 @@ In the following code sample, the pivot chart appears as a single chart with mul
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs433/index.ts %}
+{% include code-snippet/pivot-table/pivot-table-cs433/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs433/index.html %}
+{% include code-snippet/pivot-table/pivot-table-cs433/index.html %}
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs433" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs433" %}
 
 ### Show point color based on members
 
@@ -339,14 +339,14 @@ In addition, users can show or hide specific members from all measures in the ch
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs435/index.ts %}
+{% include code-snippet/pivot-table/pivot-table-cs435/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs435/index.html %}
+{% include code-snippet/pivot-table/pivot-table-cs435/index.html %}
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs435" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs435" %}
 
 ## Series customization
 
@@ -354,14 +354,14 @@ You can customize the series in the pivot chart by using the [`chartSeries`](htt
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs436/index.ts %}
+{% include code-snippet/pivot-table/pivot-table-cs436/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs436/index.html %}
+{% include code-snippet/pivot-table/pivot-table-cs436/index.html %}
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs436" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs436" %}
 
 If you want to change each series separately, use the [`chartSeriesCreated`](https://ej2.syncfusion.com/documentation/api/pivotview/pivotViewModel#chartseriescreated) event. This event happens after the pivot chart series are created, making it possible to work with each series one at a time.
 
@@ -369,14 +369,14 @@ The sample below shows how you can hide every even-numbered series in the pivot 
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs437/index.ts %}
+{% include code-snippet/pivot-table/pivot-table-cs437/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs437/index.html %}
+{% include code-snippet/pivot-table/pivot-table-cs437/index.html %}
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs437" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs437" %}
 
 ## Axis Customization
 
@@ -388,14 +388,14 @@ For example, in the sample below, the titles for the y-axis and x-axis are set t
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs438/index.ts %}
+{% include code-snippet/pivot-table/pivot-table-cs438/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs438/index.html %}
+{% include code-snippet/pivot-table/pivot-table-cs438/index.html %}
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs438" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs438" %}
 
 Users can also modify multi-level labels on the primary x-axis by using the [`multiLevelLabelRender`](https://ej2.syncfusion.com/documentation/api/pivotview/chartSettingsModel#multilevellabelrender) event in [`chartSettings`](https://ej2.syncfusion.com/documentation/api/pivotview/chartSettings). This event is triggered whenever a multi-level label is rendered on the chart. The event provides the following options:
 
@@ -408,14 +408,14 @@ The example below shows how to update the text and style for multi-level labels 
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs439/index.ts %}
+{% include code-snippet/pivot-table/pivot-table-cs439/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs439/index.html %}
+{% include code-snippet/pivot-table/pivot-table-cs439/index.html %}
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs439" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs439" %}
 
 ## Legend customization
 
@@ -451,14 +451,14 @@ In the following code example, you can see how to set a different legend shape a
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs440/index.ts %}
+{% include code-snippet/pivot-table/pivot-table-cs440/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs440/index.html %}
+{% include code-snippet/pivot-table/pivot-table-cs440/index.html %}
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs440" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs440" %}
 
 ## User interaction
 
@@ -474,14 +474,14 @@ In the following code sample, both marker and crosshair options are enabled and 
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs441/index.ts %}
+{% include code-snippet/pivot-table/pivot-table-cs441/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs441/index.html %}
+{% include code-snippet/pivot-table/pivot-table-cs441/index.html %}
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs441" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs441" %}
 
 ### Zooming and panning
 
@@ -506,14 +506,14 @@ In the code sample below, all four zooming types are enabled, along with the too
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs442/index.ts %}
+{% include code-snippet/pivot-table/pivot-table-cs442/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs442/index.html %}
+{% include code-snippet/pivot-table/pivot-table-cs442/index.html %}
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs442" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs442" %}
 
 ### Tooltip
 
@@ -525,14 +525,14 @@ The code below shows how to change the default tooltip appearance and settings i
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs443/index.ts %}
+{% include code-snippet/pivot-table/pivot-table-cs443/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs443/index.html %}
+{% include code-snippet/pivot-table/pivot-table-cs443/index.html %}
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs443" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs443" %}
 
 ## Export
 
@@ -554,14 +554,14 @@ The example below shows how to export the pivot chart using an external button l
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/chart-export-cs4/index.ts %}
+{% include code-snippet/pivot-table/chart-export-cs4/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/chart-export-cs4/index.html %}
+{% include code-snippet/pivot-table/chart-export-cs4/index.html %}
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/pivot-table/chart-export-cs4" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/chart-export-cs4" %}
 
 ## Print
 
@@ -571,11 +571,11 @@ In the example below, clicking an external button labeled "Print Chart" calls th
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/chart-print-cs3/index.ts %}
+{% include code-snippet/pivot-table/chart-print-cs3/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/chart-print-cs3/index.html %}
+{% include code-snippet/pivot-table/chart-print-cs3/index.html %}
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/pivot-table/chart-print-cs3" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/chart-print-cs3" %}

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Summary customization in React Pivotview component | Syncfusion
-description: Learn here all about Summary customization in Syncfusion React Pivotview component of Syncfusion Essential JS 2 and more.
-control: Summary customization 
-platform: grid-sdk
+title: Summary customization in React Pivot Table | Syncfusion
+description: Learn how the React Pivot Table customizes summary rows and columns to control the display and calculation of grand totals and subtotals.
+control: Pivot Table
+platform: ej2-react
 documentation: ug
-domainurl: https://help.syncfusion.com/grid-sdk
+domainurl: ##DomainURL##
 ---
 
-# Summary customization in React Pivotview component
+# Summary customization in React Pivot Table
 
 ## Show or hide grand totals
 
@@ -18,14 +18,14 @@ Allows to show or hide grand totals in rows and columns using the [`showGrandTot
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs288/app/App.jsx %}
+{% include code-snippet/pivot-table/default-cs288/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs288/app/App.tsx %}
+{% include code-snippet/pivot-table/default-cs288/app/App.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
- {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs288" %}
+ {% previewsample "page.domainurl/code-snippet/pivot-table/default-cs288" %}
 
 ## Show or hide sub-totals
 
@@ -35,14 +35,14 @@ Allows to show or hide sub-totals in rows and columns using the [`showSubTotals`
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs289/app/App.jsx %}
+{% include code-snippet/pivot-table/default-cs289/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs289/app/App.tsx %}
+{% include code-snippet/pivot-table/default-cs289/app/App.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
- {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs289" %}
+ {% previewsample "page.domainurl/code-snippet/pivot-table/default-cs289" %}
 
 ## Show/hide sub-totals for specific fields
 
@@ -52,14 +52,14 @@ Allows to show or hide sub-totals for specific fields in rows and columns using 
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs290/app/App.jsx %}
+{% include code-snippet/pivot-table/default-cs290/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs290/app/App.tsx %}
+{% include code-snippet/pivot-table/default-cs290/app/App.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
- {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs290" %}
+ {% previewsample "page.domainurl/code-snippet/pivot-table/default-cs290" %}
 
 ## Show sub-totals at top or bottom
 
@@ -69,27 +69,27 @@ To show sub-totals at top of the header group in rows and columns, set the [`sub
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs291/app/App.jsx %}
+{% include code-snippet/pivot-table/default-cs291/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs291/app/App.tsx %}
+{% include code-snippet/pivot-table/default-cs291/app/App.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
- {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs291" %}
+ {% previewsample "page.domainurl/code-snippet/pivot-table/default-cs291" %}
 
 To show sub-totals at bottom of the header group in rows and columns, set the [`subTotalsPosition`](https://ej2.syncfusion.com/react/documentation/api/pivotview/dataSourceSettings/#subtotalsposition) property in [`dataSourceSettings`](https://ej2.syncfusion.com/react/documentation/api/pivotview/datasourcesettings) to **Bottom**.
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs292/app/App.jsx %}
+{% include code-snippet/pivot-table/default-cs292/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs292/app/App.tsx %}
+{% include code-snippet/pivot-table/default-cs292/app/App.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
- {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs292" %}
+ {% previewsample "page.domainurl/code-snippet/pivot-table/default-cs292" %}
 
 ## Show or hide totals using toolbar
 
@@ -99,11 +99,11 @@ The grand totals and sub-totals can be dynamically displayed at the top or botto
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs293/app/App.jsx %}
+{% include code-snippet/pivot-table/default-cs293/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs293/app/App.tsx %}
+{% include code-snippet/pivot-table/default-cs293/app/App.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
- {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs293" %}
+ {% previewsample "page.domainurl/code-snippet/pivot-table/default-cs293" %}

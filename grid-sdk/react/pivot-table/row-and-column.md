@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Row and column in React Pivot Table component | Syncfusion
-description: Learn here all about Row and column in Syncfusion React Pivot Table component of Syncfusion Essential JS 2 and more.
-control: Row and column 
-platform: grid-sdk
+title: Row and column in React Pivot Table | Syncfusion
+description: Learn how the React Pivot Table configures row and column axes, including field placement, width, height, scrollbar behavior, and layout options.
+control: Pivot Table
+platform: ej2-react
 documentation: ug
-domainurl: https://help.syncfusion.com/grid-sdk
+domainurl: ##DomainURL##
 ---
 
-# Row and column in React Pivot Table component
+# Row and column in React Pivot Table
 
 To learn about how to use the row and column options effectively in the React Pivot Table, watch this video:
 
@@ -30,20 +30,20 @@ These dimension properties support multiple formats to accommodate various layou
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs250/app/App.jsx %}
+{% include code-snippet/pivot-table/default-cs250/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs250/app/App.tsx %}
+{% include code-snippet/pivot-table/default-cs250/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs250/app/datasource.jsx %}
+{% include code-snippet/pivot-table/default-cs250/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs250/app/datasource.tsx %}
+{% include code-snippet/pivot-table/default-cs250/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs250" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs250" %}
 
 ## Row Height
 
@@ -55,20 +55,20 @@ For example, in the sample code below, the [`rowHeight`](https://ej2.syncfusion.
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs251/app/App.jsx %}
+{% include code-snippet/pivot-table/default-cs251/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs251/app/App.tsx %}
+{% include code-snippet/pivot-table/default-cs251/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs251/app/datasource.jsx %}
+{% include code-snippet/pivot-table/default-cs251/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs251/app/datasource.tsx %}
+{% include code-snippet/pivot-table/default-cs251/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs251" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs251" %}
 
 ## Column Width
 
@@ -80,20 +80,20 @@ In the following example, the [`columnWidth`](https://ej2.syncfusion.com/react/d
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs252/app/App.jsx %}
+{% include code-snippet/pivot-table/default-cs252/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs252/app/App.tsx %}
+{% include code-snippet/pivot-table/default-cs252/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs252/app/datasource.jsx %}
+{% include code-snippet/pivot-table/default-cs252/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs252/app/datasource.tsx %}
+{% include code-snippet/pivot-table/default-cs252/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs252" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs252" %}
 
 ### Adjust width based on columns
 
@@ -101,20 +101,20 @@ By default, when the component width exceeds the total width of all columns, the
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs253/app/App.jsx %}
+{% include code-snippet/pivot-table/default-cs253/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs253/app/App.tsx %}
+{% include code-snippet/pivot-table/default-cs253/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs253/app/datasource.jsx %}
+{% include code-snippet/pivot-table/default-cs253/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs253/app/datasource.tsx %}
+{% include code-snippet/pivot-table/default-cs253/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs253" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs253" %}
 
 ## Reorder
 
@@ -124,20 +124,20 @@ To enable this option, set the [`allowReordering`](https://ej2.syncfusion.com/re
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs254/app/App.jsx %}
+{% include code-snippet/pivot-table/default-cs254/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs254/app/App.tsx %}
+{% include code-snippet/pivot-table/default-cs254/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs254/app/datasource.jsx %}
+{% include code-snippet/pivot-table/default-cs254/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs254/app/datasource.tsx %}
+{% include code-snippet/pivot-table/default-cs254/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs254" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs254" %}
 
 ## Column Resizing
 
@@ -149,20 +149,20 @@ This option is enabled by default. To control column resizing, set the [`allowRe
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs255/app/App.jsx %}
+{% include code-snippet/pivot-table/default-cs255/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs255/app/App.tsx %}
+{% include code-snippet/pivot-table/default-cs255/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs255/app/datasource.jsx %}
+{% include code-snippet/pivot-table/default-cs255/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs255/app/datasource.tsx %}
+{% include code-snippet/pivot-table/default-cs255/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs255" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs255" %}
 
 ## Text Wrap
 
@@ -170,20 +170,20 @@ The Pivot Table allows users to wrap cell content to the next line when the cont
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs256/app/App.jsx %}
+{% include code-snippet/pivot-table/default-cs256/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs256/app/App.tsx %}
+{% include code-snippet/pivot-table/default-cs256/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs256/app/datasource.jsx %}
+{% include code-snippet/pivot-table/default-cs256/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs256/app/datasource.tsx %}
+{% include code-snippet/pivot-table/default-cs256/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs256" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs256" %}
 
 ## Text Align
 
@@ -196,20 +196,20 @@ Text alignment provides flexibility in positioning content within cells, making 
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs257/app/App.jsx %}
+{% include code-snippet/pivot-table/default-cs257/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs257/app/App.tsx %}
+{% include code-snippet/pivot-table/default-cs257/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs257/app/datasource.jsx %}
+{% include code-snippet/pivot-table/default-cs257/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs257/app/datasource.tsx %}
+{% include code-snippet/pivot-table/default-cs257/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs257" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs257" %}
 
 ## AutoFit
 
@@ -217,39 +217,39 @@ The AutoFit option allows users to easily adjust Pivot Table columns so that eac
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs258/app/App.jsx %}
+{% include code-snippet/pivot-table/default-cs258/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs258/app/App.tsx %}
+{% include code-snippet/pivot-table/default-cs258/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs258/app/datasource.jsx %}
+{% include code-snippet/pivot-table/default-cs258/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs258/app/datasource.tsx %}
+{% include code-snippet/pivot-table/default-cs258/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs258" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs258" %}
 
 > When the grouping bar is enabled, the first column in the Pivot Table has a minimum width of **250** pixels, which cannot be decreased. In such cases, if you want to auto fit the remaining columns, you can call the [`autoFitColumns`](https://ej2.syncfusion.com/react/documentation/api/grid/#autofitcolumns) method from the grid instance, passing the field names of the Pivot Table columns except the first column.
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs259/app/App.jsx %}
+{% include code-snippet/pivot-table/default-cs259/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs259/app/App.tsx %}
+{% include code-snippet/pivot-table/default-cs259/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs259/app/datasource.jsx %}
+{% include code-snippet/pivot-table/default-cs259/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs259/app/datasource.tsx %}
+{% include code-snippet/pivot-table/default-cs259/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs259" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs259" %}
 
 ### Autofit Specific Columns
 
@@ -259,20 +259,20 @@ To implement this functionality during the initial rendering of the Pivot Table,
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs260/app/App.jsx %}
+{% include code-snippet/pivot-table/default-cs260/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs260/app/App.tsx %}
+{% include code-snippet/pivot-table/default-cs260/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs260/app/datasource.jsx %}
+{% include code-snippet/pivot-table/default-cs260/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs260/app/datasource.tsx %}
+{% include code-snippet/pivot-table/default-cs260/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs260" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs260" %}
 
 ## Grid Lines
 
@@ -292,20 +292,20 @@ The following grid line modes are available:
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs261/app/App.jsx %}
+{% include code-snippet/pivot-table/default-cs261/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs261/app/App.tsx %}
+{% include code-snippet/pivot-table/default-cs261/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs261/app/datasource.jsx %}
+{% include code-snippet/pivot-table/default-cs261/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs261/app/datasource.tsx %}
+{% include code-snippet/pivot-table/default-cs261/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs261" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs261" %}
 
 ## Selection
 
@@ -320,20 +320,20 @@ The Pivot Table provides two selection modes, controlled by the [`type`](https:/
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs262/app/App.jsx %}
+{% include code-snippet/pivot-table/default-cs262/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs262/app/App.tsx %}
+{% include code-snippet/pivot-table/default-cs262/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs262/app/datasource.jsx %}
+{% include code-snippet/pivot-table/default-cs262/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs262/app/datasource.tsx %}
+{% include code-snippet/pivot-table/default-cs262/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs262" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs262" %}
 
 ### Selection mode
 
@@ -348,20 +348,20 @@ By choosing the right selection mode, users can quickly highlight and review the
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs263/app/App.jsx %}
+{% include code-snippet/pivot-table/default-cs263/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs263/app/App.tsx %}
+{% include code-snippet/pivot-table/default-cs263/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs263/app/datasource.jsx %}
+{% include code-snippet/pivot-table/default-cs263/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs263/app/datasource.tsx %}
+{% include code-snippet/pivot-table/default-cs263/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs263" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs263" %}
 
 ### Cell Selection Mode
 
@@ -373,20 +373,20 @@ To set the cell selection mode, use the [`cellSelectionMode`](https://ej2.syncfu
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs264/app/App.jsx %}
+{% include code-snippet/pivot-table/default-cs264/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs264/app/App.tsx %}
+{% include code-snippet/pivot-table/default-cs264/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs264/app/datasource.jsx %}
+{% include code-snippet/pivot-table/default-cs264/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs264/app/datasource.tsx %}
+{% include code-snippet/pivot-table/default-cs264/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs264" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs264" %}
 
 > To use cell selection modes, ensure that the [`mode`](https://ej2.syncfusion.com/react/documentation/api/pivotview/pivotselectionsettings#mode) property in [`selectionSettings`](https://ej2.syncfusion.com/react/documentation/api/pivotview/gridsettingsmodel#selectionsettings) is set to **Cell** or **Both** and the [`type`](https://ej2.syncfusion.com/react/documentation/api/pivotview/pivotselectionsettings#type) property is set to **Multiple**. This allows users to select more than one cell at a time for better comparison and review.
 
@@ -398,23 +398,23 @@ In the example below, selected cells appear with a **green-yellow** background. 
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/selection-css-cs1/app/App.jsx %}
+{% include code-snippet/pivot-table/selection-css-cs1/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/selection-css-cs1/app/App.tsx %}
+{% include code-snippet/pivot-table/selection-css-cs1/app/App.tsx %}
 {% endhighlight %}
 {% highlight css tabtitle="App.css" %}
-{% include code-snippet/grid-sdk/react/pivot-table/selection-css-cs1/index.html %}
+{% include code-snippet/pivot-table/selection-css-cs1/index.html %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/selection-css-cs1/app/datasource.jsx %}
+{% include code-snippet/pivot-table/selection-css-cs1/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/selection-css-cs1/app/datasource.tsx %}
+{% include code-snippet/pivot-table/selection-css-cs1/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/selection-css-cs1" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/selection-css-cs1" %}
 
 ### Event
 
@@ -424,20 +424,20 @@ When a user finishes selecting cells, the [`cellSelected`](https://ej2.syncfusio
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs265/app/App.jsx %}
+{% include code-snippet/pivot-table/default-cs265/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs265/app/App.tsx %}
+{% include code-snippet/pivot-table/default-cs265/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs265/app/datasource.jsx %}
+{% include code-snippet/pivot-table/default-cs265/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs265/app/datasource.tsx %}
+{% include code-snippet/pivot-table/default-cs265/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs265" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs265" %}
 
 #### CellSelecting
 
@@ -451,20 +451,20 @@ You can use these parameters to decide whether or not the cell should be selecte
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs266/app/App.jsx %}
+{% include code-snippet/pivot-table/default-cs266/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs266/app/App.tsx %}
+{% include code-snippet/pivot-table/default-cs266/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs266/app/datasource.jsx %}
+{% include code-snippet/pivot-table/default-cs266/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs266/app/datasource.tsx %}
+{% include code-snippet/pivot-table/default-cs266/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs266" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs266" %}
 
 ### Limitations
 
@@ -482,20 +482,20 @@ The clip mode option in the Pivot Table determines how cell content is displayed
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs267/app/App.jsx %}
+{% include code-snippet/pivot-table/default-cs267/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs267/app/App.tsx %}
+{% include code-snippet/pivot-table/default-cs267/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs267/app/datasource.jsx %}
+{% include code-snippet/pivot-table/default-cs267/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs267/app/datasource.tsx %}
+{% include code-snippet/pivot-table/default-cs267/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs267" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs267" %}
 
 ## Cell Template
 
@@ -507,20 +507,20 @@ For example, in the following sample, each year's revenue cost is shown along wi
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs268/app/App.jsx %}
+{% include code-snippet/pivot-table/default-cs268/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs268/app/App.tsx %}
+{% include code-snippet/pivot-table/default-cs268/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs268/app/datasource.jsx %}
+{% include code-snippet/pivot-table/default-cs268/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs268/app/datasource.tsx %}
+{% include code-snippet/pivot-table/default-cs268/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs268" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs268" %}
 
 ## Events
 
@@ -541,20 +541,20 @@ By using these parameters in the event, users can highlight cells, format values
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs269/app/App.jsx %}
+{% include code-snippet/pivot-table/default-cs269/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs269/app/App.tsx %}
+{% include code-snippet/pivot-table/default-cs269/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs269/app/datasource.jsx %}
+{% include code-snippet/pivot-table/default-cs269/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs269/app/datasource.tsx %}
+{% include code-snippet/pivot-table/default-cs269/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs269" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs269" %}
 
 ### HeaderCellInfo
 
@@ -567,20 +567,20 @@ By using these parameters, users can update header cell styles, add tooltips, or
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs270/app/App.jsx %}
+{% include code-snippet/pivot-table/default-cs270/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs270/app/App.tsx %}
+{% include code-snippet/pivot-table/default-cs270/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs270/app/datasource.jsx %}
+{% include code-snippet/pivot-table/default-cs270/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs270/app/datasource.tsx %}
+{% include code-snippet/pivot-table/default-cs270/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs270" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs270" %}
 
 ### ColumnRender
 
@@ -594,20 +594,20 @@ The event provides the following parameters:
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs271/app/App.jsx %}
+{% include code-snippet/pivot-table/default-cs271/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs271/app/App.tsx %}
+{% include code-snippet/pivot-table/default-cs271/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs271/app/datasource.jsx %}
+{% include code-snippet/pivot-table/default-cs271/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs271/app/datasource.tsx %}
+{% include code-snippet/pivot-table/default-cs271/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs271" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs271" %}
 
 ### CellClick
 
@@ -618,20 +618,20 @@ The [`cellClick`](https://ej2.syncfusion.com/react/documentation/api/pivotview/#
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs272/app/App.jsx %}
+{% include code-snippet/pivot-table/default-cs272/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs272/app/App.tsx %}
+{% include code-snippet/pivot-table/default-cs272/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs272/app/datasource.jsx %}
+{% include code-snippet/pivot-table/default-cs272/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs272/app/datasource.tsx %}
+{% include code-snippet/pivot-table/default-cs272/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs272" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs272" %}
 
 ## See Also
 

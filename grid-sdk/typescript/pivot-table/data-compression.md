@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Data Compression in TypeScript Pivot Table component | Syncfusion
-description: Learn here all about data compression in Syncfusion TypeScript Pivot Table component of Syncfusion Essential JS 2 and more.
-platform: grid-sdk
-control: Data Compression 
-publishingplatform: grid-sdk
+title: Data Compression in ##Platform_Name## Pivot Table | Syncfusion
+description: Learn how the ##Platform_Name## Pivot Table compresses unique raw data via `allowDataCompression` to reduce loop complexity and speed up rendering on large datasets.
+platform: ej2-javascript
+control: Data Compression
+publishingplatform: ##Platform_Name##
 documentation: ug
-domainurl: https://help.syncfusion.com/grid-sdk
+domainurl: ##DomainURL##
 ---
 
-# Data Compression in TypeScript Pivot Table component
+# Data Compression in ##Platform_Name## Pivot Table
 
 > This property is applicable only for the relational data source.
 
@@ -17,14 +17,14 @@ When binding large volumes of raw data, the pivot table processes all raw data t
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs486/index.ts %}
+{% include code-snippet/pivot-table/pivot-table-cs486/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs486/index.html %}
+{% include code-snippet/pivot-table/pivot-table-cs486/index.html %}
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs486" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs486" %}
 
 **Limitations during data compression:**
 

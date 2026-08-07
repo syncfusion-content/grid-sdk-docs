@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Load desired report from the report list as default in ASP.NET MVC Pivot Table Component
-description: Learn here all about Load desired report from the report list as default in Syncfusion ASP.NET MVC Pivot Table component of Syncfusion Essential JS 2 and more.
-platform: grid-sdk
+title: How to Load Report as Default in ASP.NET MVC Pivot Table | Syncfusion
+description: Learn how to load a specific report from the ASP.NET MVC Pivot Table's saved report list as default via the DataBound event.
+platform: ej2-asp-core-mvc
 control: Load desired report from the report list as default 
 documentation: ug
-publishingplatform: grid-sdk
+publishingplatform: ##Platform_Name##
 ---
 
 <!-- markdownlint-disable MD009 -->
-# Load desired report from the report list as default in ASP.NET MVC Pivot Table Component
+# How to Load Report as Default in ASP.NET MVC Pivot Table
 
 By default, the Pivot Table displays with the report configuration defined in the component initialization. To load a specific report from a previously saved report collection during the initial rendering process, configure the desired report name within the [`DataBound`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_DataBound) event. This approach allows the Pivot Table to automatically apply the selected report's configuration, including field arrangements, filters, and formatting settings, as soon as the component completes its data binding process.
 
@@ -17,10 +17,10 @@ By default, the Pivot Table displays with the report configuration defined in th
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/load-pre-defined-report/tagHelper %}
+{% include code-snippet/pivot-table/load-pre-defined-report/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="LoadPreDefinedReport.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/load-pre-defined-report/LoadPreDefinedReport.cs %}
+{% include code-snippet/pivot-table/load-pre-defined-report/LoadPreDefinedReport.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -28,10 +28,10 @@ By default, the Pivot Table displays with the report configuration defined in th
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/load-pre-defined-report/razor %}
+{% include code-snippet/pivot-table/load-pre-defined-report/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="LoadPreDefinedReport.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/load-pre-defined-report/LoadPreDefinedReport.cs %}
+{% include code-snippet/pivot-table/load-pre-defined-report/LoadPreDefinedReport.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
