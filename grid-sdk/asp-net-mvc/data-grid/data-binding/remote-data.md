@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Remote Data in Syncfusion ASP.NET MVC Grid Component
-description: Learn here all about Remote Data in Syncfusion ASP.NET MVC Grid component of Syncfusion Essential JS 2 and more.
+title: ASP.NET MVC Grid Remote Data Binding | Syncfusion
+description: Learn how to bind remote data sources in ASP.NET MVC Data Grid using adaptors, configure server-side operations, and manage data efficiently.
 platform: grid-sdk
 control: Remote Data
 publishingplatform: grid-sdk
