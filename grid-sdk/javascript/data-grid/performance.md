@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Performance tips for JavaScript Grid control | Syncfusion
-description: Checkout and learn here all about how to improve the loading performance of JavaScript  Grid control even binding large data set.
+title: Javascript Grid Performance | Syncfusion
+description: Learn how to optimize Javascript Data Grid performance with virtualization, paging, efficient data operations, and best practices for large datasets.
 platform: grid-sdk
 control: Performance 
 publishingplatform: grid-sdk
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Performance tips for JavaScript Grid control
+# Performance Tips for Javascript Data Grid
 
 This article is a comprehensive guide on improving the loading performance of the JavaScript Grid, especially when dealing with large datasets along with large number of columns. It provides valuable insights into the steps that need to be followed to bind a large data source without experiencing any performance degradations. By offering detailed explanations and actionable tips, this resource aims to empower readers with the knowledge and best practices necessary to optimize the performance of the JavaScript Grid during data binding, ensuring a smooth and efficient user experience.
 

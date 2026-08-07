@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Sorting in JavaScript Grid control | Syncfusion
-description: Learn here all about Sorting in Syncfusion JavaScript Grid control of Syncfusion Essential JS 2 and more.
+title: Javascript Grid Sorting | Syncfusion
+description: Learn how to configure sorting in Javascript Data Grid with single and multi-column sorting, custom comparers, sorting indicators, and sorting behavior options.
 platform: grid-sdk
 control: Sorting 
 publishingplatform: grid-sdk
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Sorting in JavaScript Grid control
+# Sorting in Javascript Data Grid
 
 The Grid control provides built-in support for sorting data-bound columns in ascending or descending order. To enable sorting in the grid, set the [allowSorting](../api/grid/#allowsorting) property to **true**.
 

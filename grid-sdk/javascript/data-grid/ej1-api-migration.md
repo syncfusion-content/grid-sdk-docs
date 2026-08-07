@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Ej1 api migration in JavaScript Grid control | Syncfusion
-description: Learn here all about Ej1 api migration in Syncfusion JavaScript Grid control of Syncfusion Essential JS 2 and more.
+title: Javascript Grid EJ1 API Migration | Syncfusion
+description: Learn how to migrate from EJ1 to EJ2 Javascript Data Grid APIs, map legacy options to updated patterns, and handle common breaking changes effectively.
 platform: grid-sdk
 control: Ej1 api migration 
 publishingplatform: grid-sdk
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Ej1 api migration in JavaScript Grid control
+# EJ1 API Migration in Javascript Data Grid
 
 This article describes the API migration process of Grid component from Essential<sup style="font-size:70%">&reg;</sup> JS 1 to Essential<sup style="font-size:70%">&reg;</sup> JS 2.
 

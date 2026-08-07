@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Clipboard in TypeScript Grid control | Syncfusion
-description: Learn here all about Clipboard in Syncfusion TypeScript Grid control of Syncfusion Essential JS 2 and more.
+title: Typescript Grid Clipboard | Syncfusion
+description: Learn how to use clipboard features in Typescript Data Grid, including copy, paste, autofill, keyboard shortcuts, and clipboard data operations.
 platform: grid-sdk
 control: Clipboard 
 publishingplatform: grid-sdk
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Clipboard in TypeScript Grid control
+# Clipboard in Typescript Data Grid
 
 The clipboard feature in the TypeScript Grid provides an easy way to copy selected rows or cells data into the clipboard. You can use keyboard shortcuts to perform the copy operation. The following list of keyboard shortcuts is supported in the Grid to copy selected rows or cells data into clipboard.
 

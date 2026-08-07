@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Pdf export options in TypeScript Grid control | Syncfusion
-description: Learn here all about Pdf export options in Syncfusion TypeScript Grid control of Syncfusion Essential JS 2 and more.
+title: Typescript Grid PDF Export Options | Syncfusion
+description: Learn how to customize PDF export in Typescript Data Grid with page sizes, margins, styles, headers, footers, and advanced export settings.
 platform: grid-sdk
 control: Pdf export options 
 publishingplatform: grid-sdk
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Pdf Export Options in TypeScript Grid control
+# PDF Export Options in Typescript Data Grid
 
 The TypeScript Grid control allows you to customize the PDF export options functionality. This flexibility enables you to have greater control over the exported content and layout to meet your specific requirements.
 

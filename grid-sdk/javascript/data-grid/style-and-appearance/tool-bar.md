@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Tool bar in JavaScript Grid control | Syncfusion
-description: Learn here all about Tool bar in Syncfusion JavaScript Grid control of Syncfusion Essential JS 2 and more.
+title: Javascript Grid Toolbar Style | Syncfusion
+description: Learn how to customize toolbar styles in Javascript Data Grid with toolbar items, templates, layout options, and CSS-based styling.
 platform: grid-sdk
 control: Tool bar 
 publishingplatform: grid-sdk
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Toolbar in JavaScript Grid control
+# Toolbar Style in Javascript Data Grid
 
 You can customize the appearance of the toolbar in the JavaScript Grid control using CSS. Here are examples of how to customize the toolbar root element and toolbar button element.
 

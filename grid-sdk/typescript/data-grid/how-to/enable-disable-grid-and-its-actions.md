@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Enable disable grid and its actions in TypeScript Grid control | Syncfusion
-description: Learn here all about Enable disable grid and its actions in Syncfusion TypeScript Grid control of Syncfusion Essential JS 2 and more.
+title: Typescript Grid Enable or Disable Actions | Syncfusion
+description: Learn how to enable or disable Typescript Data Grid and its actions using CSS and event handling to control user interaction dynamically.
 platform: grid-sdk
 control: Enable disable grid and its actions 
 publishingplatform: grid-sdk
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Enable disable grid and its actions in TypeScript Grid control
+# Enable or Disable Grid Actions in Typescript Data Grid
 
 You can enable or disable the TypeScript Grid and its actions by applying or removing specific CSS styles. This functionality is particularly useful in scenarios where interactions need to be restricted. Follow the steps below to implement this feature.
 
