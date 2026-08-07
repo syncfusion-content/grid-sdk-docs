@@ -276,6 +276,7 @@ export class AppComponent implements OnInit {
     }
   }
 }
+
 {% endraw %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.ts" %}
