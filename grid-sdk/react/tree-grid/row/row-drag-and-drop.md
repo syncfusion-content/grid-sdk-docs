@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Row drag and drop in React TreeGrid component | Syncfusion
-description: Learn here all about Row drag and drop in Syncfusion React TreeGrid component of Syncfusion Essential JS 2 and more.
+title: React TreeGrid Row Drag and Drop | Syncfusion
+description: Learn here all about Row drag and drop in React TreeGrid of Essential JS 2 and more.
 control: Row drag and drop 
 platform: grid-sdk
 documentation: ug
