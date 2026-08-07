@@ -1,6 +1,6 @@
 ---
 layout: post
-title: React Grid - Dialog Editing | Syncfusion
+title: React Grid Dialog Editing | Syncfusion
 description: React Grid dialog editing opens record editors in modal dialogs, supports templates, enforces validation, and manages single-record save workflows.
 control: Dialog editing 
 platform: grid-sdk
@@ -8,7 +8,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Dialog Editing in React Grid Component
+# Dialog Editing in React Data Grid
 
 The React Data Grid Component dialog editing provides a powerful, efficient way to edit row data through a dedicated modal dialog window that focuses attention on the editing form. Instead of editing cells directly in the grid, multiple field values can be entered and modified at once in a clean, organized form. The grid automatically saves all changes to the data source without navigating away from the current page making data entry faster, more intuitive, and less error-prone, especially when dealing with complex records that span multiple columns.
 
