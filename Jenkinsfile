@@ -15,6 +15,7 @@ String platform='grid-sdk';
 	    { 
 	    dir('Spell-Checker') 
            {
+          deleteDir()
 		     checkout scm
 			 
 
