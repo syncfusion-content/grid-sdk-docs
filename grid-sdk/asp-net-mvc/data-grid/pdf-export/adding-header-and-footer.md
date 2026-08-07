@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Adding Header and Footer in ASP.NET MVC Grid Component
-description: Learn here all about Adding Header and Footer in Syncfusion ASP.NET MVC Grid component of Syncfusion Essential JS 2 and more.
+title: ##Platform_Name## Grid Adding Header and Footer | Syncfusion
+description: Learn how to add custom headers and footers in ##Platform_Name## Data Grid PDF export, customize content, apply templates, and format exported documents.
 platform: grid-sdk
 control: Adding Header and Footer
 publishingplatform: grid-sdk
 documentation: ug
 ---
 
-# Adding header and footer in ASP.NET MVC Grid component
+# Adding Header and Footer in ASP.NET MVC Data Grid
 
 The Syncfusion ASP.NET MVC Grid allows you to add customized header and footer sections in the exported PDF document. This feature enables you to include custom text, page numbers, lines, page size, and even change the orientation of the header and footer.
 

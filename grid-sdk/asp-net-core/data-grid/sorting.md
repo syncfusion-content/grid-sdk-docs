@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Sorting in Syncfusion ASP.NET Core Grid Component | Learn Sorting Features
-description: Learn here all about Sorting in Syncfusion ASP.NET Core Grid component of Syncfusion Essential JS 2 and more.
+title: ASP.NET Core Grid Sorting | Syncfusion
+description: Learn how to use Sorting in ASP.NET Core Data Grid to sort data by one or more columns, customize sorting behavior, and control sort indicators.
 platform: grid-sdk
 control: Sorting
 publishingplatform: grid-sdk
 documentation: ug
 ---
 
-# Sorting in ASP.NET Core Grid component
+# Sorting in ASP.NET Core Data Grid
 
 The Grid component provides built-in support for sorting data-bound columns in ascending or descending order. To enable sorting in the grid, set the [allowSorting](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.grids.grid.html#Syncfusion_EJ2_Grids_Grid_AllowSorting) property to **true**.
 

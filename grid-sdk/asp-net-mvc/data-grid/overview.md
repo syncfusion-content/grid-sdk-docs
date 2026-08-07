@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Overview in Syncfusion ASP.NET MVC DataGrid Component
-description: Learn here all about Overview in Syncfusion ASP.NET MVC DataGrid component of Syncfusion Essential JS 2 and more.
+title: ASP.NET MVC Grid Overview | Syncfusion
+description: Learn how to use ASP.NET MVC Data Grid to display and manage tabular data with data binding, paging, sorting, filtering, editing, and templates.
 platform: grid-sdk
 control: Index
 publishingplatform: grid-sdk
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Overview in ASP.NET MVC DataGrid Component
+# Overview of ASP.NET MVC Data Grid
 
 The DataGrid component is used to display and manipulate tabular data with configuration options to control the way the data is presented. It can pull data from data sources such as array of JavaScript objects, `OData web services`, or `DataManager` and binding data fields to columns. It also displays the column header to identify the field with support for grouped records.
 

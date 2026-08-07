@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Style And Appearance in Syncfusion ASP.NET Core Grid Component
-description: Learn here all about Style And Appearance in Syncfusion ASP.NET Core Grid component of Syncfusion Essential JS 2 and more.
+title: ASP.NET Core Grid Style and Appearance | Syncfusion
+description: Learn how to customize the style and appearance of ASP.NET Core Data Grid with built-in themes, CSS customization, theme packages, and design configuration.
 platform: grid-sdk
 control: Style And Appearance
 publishingplatform: grid-sdk
 documentation: ug
 ---
 
-# Style and appearance in ASP.NET Core Grid component
+# Style and Appearance in ASP.NET Core Data Grid
 
 The Grid component offers various ways to customize its appearance using both default CSS and custom themes. Let's go over some common approaches:
 

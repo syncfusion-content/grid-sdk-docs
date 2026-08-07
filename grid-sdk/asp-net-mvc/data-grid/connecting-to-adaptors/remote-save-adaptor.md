@@ -1,7 +1,7 @@
 ---
 layout: post
-title: RemoteSaveAdaptor in Syncfusion ASP.NET MVC Grid.
-description: Learn here all about how to bind data and perform CRUD action using RemoteSaveAdaptor in Syncfusion ASP.NET MVC Grid.
+title: ASP.NET MVC Grid Bind Data with RemoteSaveAdaptor | Syncfusion
+description: Learn how to use hybrid data binding in ASP.NET MVC Data Grid to perform data operations locally while handling CRUD actions on the server.
 platform: grid-sdk
 control: grid
 keywords: Adaptors, RemoteSaveAdaptor, remotesave adaptor, remotedata 
@@ -10,7 +10,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# RemoteSaveAdaptor in Syncfusion ASP.NET MVC Grid
+# Hybrid Data Binding in ASP.NET MVC Data Grid
 
 The `RemoteSaveAdaptor` in Syncfusion ASP.NET MVC Grid allows efficient handling of sorting, filtering, searching, and paging primarily on the client-side, while delegating CRUD operations (Create, Read, Update, Delete) to the server-side for data persistence. This approach reduces unnecessary server interactions, improving performance and user experience.
 
