@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Clipboard in Vue Treegrid component | Syncfusion
-description: Learn here all about Clipboard in Syncfusion Vue Treegrid component of Syncfusion Essential JS 2 and more.
+title: Vue TreeGrid Clipboard | Syncfusion
+description: Learn how to use clipboard operations in Vue TreeGrid, including copy, paste, hierarchy modes, and autofill for rows and cells.
 control: Clipboard 
 platform: grid-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Clipboard in Vue Treegrid component
+# Clipboard in Vue TreeGrid
 
 The clipboard provides an option to copy selected rows or cells data into the clipboard.
 

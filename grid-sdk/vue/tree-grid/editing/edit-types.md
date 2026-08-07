@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Edit types in Vue Treegrid component | Syncfusion
-description: Learn here all about Edit types in Syncfusion Vue Treegrid component of Syncfusion Essential JS 2 and more.
+title: Vue TreeGrid Edit Types | Syncfusion
+description: Learn how to use different edit types in Vue TreeGrid, including cell, row, batch, and dialog editing modes for managing data.
 control: Edit types 
 platform: grid-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Edit types in Vue Treegrid component
+# Edit Types in Vue TreeGrid
 
 ## Cell edit type and its params
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Context menu in Vue Treegrid component | Syncfusion
-description: Learn here all about Context menu in Syncfusion Vue Treegrid component of Syncfusion Essential JS 2 and more.
+title: Vue TreeGrid Context Menu | Syncfusion
+description: Learn how to customize the context menu in Vue TreeGrid, including custom items, dynamic enable/disable options, and API integration.
 control: Context menu 
 platform: grid-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Context menu in Vue Treegrid component
+# Context Menu in Vue TreeGrid
 
 The TreeGrid has options to show the context menu when right clicked on it. To enable this feature, you need to define either default or custom item in the [`contextMenuItems`](https://ej2.syncfusion.com/vue/documentation/api/treegrid/#contextmenuitems).
 

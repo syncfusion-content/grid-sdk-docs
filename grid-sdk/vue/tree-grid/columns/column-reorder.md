@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Column reorder in Vue Treegrid component | Syncfusion
-description: Learn here all about Column reorder in Syncfusion Vue Treegrid component of Syncfusion Essential JS 2 and more.
+title: Vue TreeGrid Column Reorder | Syncfusion
+description: Learn how to reorder columns in Vue TreeGrid using drag-and-drop functionality and customize column arrangement.
 control: Column reorder 
 platform: grid-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Column reorder in Vue Treegrid component
+# Column Reorder in Vue TreeGrid
 
 Reordering can be done by drag and drop of a particular column header from one index to another index within the treegrid. To enable reordering, set the [`allowReordering`](https://ej2.syncfusion.com/vue/documentation/api/treegrid/#allowreordering) to true.
 
