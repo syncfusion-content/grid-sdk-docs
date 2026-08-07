@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Compatibility for React components | Syncfusion
-description: Learn about React version compatibility and supported Syncfusion Essential JS 2 React DataGrid component versions across different React releases.
+title: React Grid Compatibility | Syncfusion
+description: Learn how to check React Data Grid compatibility across supported React versions and Syncfusion releases.
 control: Compatibility
 platform: grid-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# React Supported Versions
+# React Supported Versions in React Data Grid
 
 The following table lists React versions and the minimum Syncfusion React Data Grid versions that support them.
 
