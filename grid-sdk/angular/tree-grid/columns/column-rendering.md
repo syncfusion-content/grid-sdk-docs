@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Angular TreeGrid Column Rendering | Syncfusion
-description: Learn how to define columns manually and customize column rendering in Angular TreeGrid. Explore column configuration and rendering options.
+title: Column rendering in Angular TreeGrid component | Syncfusion
+description: Learn here all about column rendering in Syncfusion Angular TreeGrid component of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Columns 
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Column Rendering in Angular TreeGrid
+# Column Rendering
 
 In the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular TreeGrid, column rendering provides the ability to precisely control how data is presented. This allows manual column definition, automatic column generation, and dynamic customization of data presentation. With column rendering, data can be displayed exactly as needed, offering extensive possibilities for organizing and showcasing information within the TreeGrid.
 
