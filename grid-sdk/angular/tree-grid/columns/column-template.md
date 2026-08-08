@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Column template in Angular TreeGrid component | Syncfusion
-description: Learn here all about Column template in Syncfusion Angular TreeGrid component of Syncfusion Essential JS 2 and more.
+title: Angular TreeGrid Column Template | Syncfusion
+description: Learn how to use column templates in Angular TreeGrid to display custom content, images, buttons, and formatted data in cells.
 platform: grid-sdk
 control: Column template 
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Column template in Angular TreeGrid component
+# Column Template in Angular TreeGrid
 
 The TreeGrid component provides a [template](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column/#template) option that allows displaying custom elements in a column instead of the field value. This can be useful when displaying images, buttons, or other custom content within a column.
 

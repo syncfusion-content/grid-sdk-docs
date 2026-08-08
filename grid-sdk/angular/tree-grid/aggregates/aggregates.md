@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Aggregates in Angular TreeGrid component | Syncfusion
-description: Learn about configuring, displaying, and customizing aggregate values in the Syncfusion Angular TreeGrid component, including built-in and child aggregation options.
+title: Angular TreeGrid Accessibility | Syncfusion
+description: Learn how Angular TreeGrid supports accessibility with WAI-ARIA roles, keyboard navigation, and ADA, Section 508, and WCAG compliance
 platform: grid-sdk
 control: Aggregates 
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Aggregates in Angular TreeGrid component
+# Accessibility in Angular TreeGrid
 
 Aggregate values are displayed in the TreeGrid footer as well as in the parent row footer for child row aggregate values. Aggregates are configured using the `aggregates` property. The [`field`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/aggregateColumnModel/#field) and [`type`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/aggregateColumnModel/#type) properties are required to define an aggregate column.
 
