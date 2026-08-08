@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Auto fit columns in ASP.NET MVC Treegrid control | Syncfusion
-description: Learn here all about Auto fit columns in Syncfusion ASP.NET MVC Treegrid control of Syncfusion Essential JS 2 and more.
+title: Auto fit columns in ASP.NET MVC Treegrid | Syncfusion
+description: Learn how to use Auto Fit Columns in ASP.NET MVC TreeGrid to automatically resize columns based on content and improve data readability.
 platform: grid-sdk
 control: Auto Fit Columns
 publishingplatform: grid-sdk
 documentation: ug
 ---
 
-# Auto fit columns in ASP.NET MVC Treegrid control
+# Auto fit columns in ASP.NET MVC Treegrid
 
 The [`autoFitColumns`](https://ej2.syncfusion.com/documentation/api/grid/#autofitcolumns) method resizes the column to fit the widest cell's content without wrapping. You can autofit a specific column at initial rendering by invoking the [`autoFitColumns`](https://ej2.syncfusion.com/documentation/api/grid/#autofitcolumns) method in [`DataBound`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGrid.html#Syncfusion_EJ2_TreeGrid_TreeGrid_DataBound) event.
 

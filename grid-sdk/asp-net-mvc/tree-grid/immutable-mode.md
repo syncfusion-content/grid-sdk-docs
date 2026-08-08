@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Immutable mode in ASP.NET MVC Treegrid control | Syncfusion
+title: Immutable mode in ASP.NET MVC Treegrid | Syncfusion
 description: Learn here all about Immutable mode in Syncfusion ASP.NET MVC Treegrid control of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Immutable Mode
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Immutable mode in ASP.NET MVC Treegrid control
+# Immutable mode in ASP.NET MVC Treegrid
 
 The immutable mode optimizes the Tree Grid re-rendering performance by using the object reference and [`deep compare`](https://dmitripavlutin.com/how-to-compare-objects-in-javascript/#4-deep-equality) concept. When performing the Tree Grid actions, it will only re-render the modified or newly added rows and prevent the re-rendering of the unchanged rows.
 

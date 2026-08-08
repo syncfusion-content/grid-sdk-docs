@@ -1,7 +1,7 @@
 ---
 layout: post
-title: ##Platform_Name## TreeGrid Validation | Syncfusion
-description: Learn how to configure validation in ##Platform_Name## TreeGrid, including required fields, custom rules, and error handling during editing.
+title: ASP.NET MVC TreeGrid Validation | Syncfusion
+description: Learn how to configure validation in ASP.NET MVC TreeGrid, including required fields, custom rules, and error handling during editing.
 platform: grid-sdk
 control: Validation
 publishingplatform: grid-sdk
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Validation in ##Platform_Name## TreeGrid
+# Validation in ASP.NET MVC TreeGrid
 
 ## Column validation
 

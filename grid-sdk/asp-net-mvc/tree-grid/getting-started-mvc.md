@@ -8,9 +8,9 @@ publishingplatform: grid-sdk
 documentation: ug
 ---
 
-# Getting Started with ASP.NET MVC Tree Grid Control
+# Getting Started with ASP.NET MVC TreeGrid
 
-This section briefly explains how to include [ASP.NET MVC Tree Grid](https://www.syncfusion.com/aspnet-mvc-ui-controls/tree-grid) control in your ASP.NET MVC application using Visual Studio.
+This section briefly explains how to include [ASP.NET MVC TreeGrid](https://www.syncfusion.com/aspnet-mvc-ui-controls/tree-grid) control in your ASP.NET MVC application using Visual Studio.
 
 ## Prerequisites
 
