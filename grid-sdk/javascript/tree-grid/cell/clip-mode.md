@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Clip mode in JavaScript Treegrid control | Syncfusion
-description: Learn here all about Clip mode in Syncfusion JavaScript Treegrid control of Syncfusion Essential JS 2 and more.
+title: JavaScript TreeGrid Clip Mode | Syncfusion
+description: Learn how to configure clip mode in JavaScript TreeGrid to manage overflowing cell content using clipping, ellipsis, or ellipsis with tooltip display.
 platform: grid-sdk
 control: Clip mode 
 publishingplatform: grid-sdk
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Clip mode in JavaScript Treegrid control
+# Clip Mode in JavaScript TreeGrid
 
 The clip mode provides options to display its overflow cell content and it can be defined by the [`columns.clipMode`](../../api/treegrid/column/#clipmode) property.
 

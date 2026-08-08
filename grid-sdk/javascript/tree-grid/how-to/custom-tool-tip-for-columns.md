@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Custom tool tip for columns in JavaScript Treegrid control | Syncfusion
-description: Learn here all about Custom tool tip for columns in Syncfusion JavaScript Treegrid control of Syncfusion Essential JS 2 and more.
+title:  JavaScript TreeGrid Custom Column Tooltips | Syncfusion
+description: Learn how to add custom tooltips for columns in JavaScript TreeGrid using the Tooltip component and queryCellInfo event.
 platform: grid-sdk
 control: Custom tool tip for columns 
 publishingplatform: grid-sdk
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Custom tool tip for columns in JavaScript Treegrid control
+# Custom Tooltips for Columns in JavaScript TreeGrid
 
 You can show the tooltip content in Tree Grid using [`queryCellInfo`] event of Tree Grid.
 

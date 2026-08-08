@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Customize the icon for column menu in JavaScript Treegrid control | Syncfusion
-description: Learn here all about Customize the icon for column menu in Syncfusion JavaScript Treegrid control of Syncfusion Essential JS 2 and more.
+title: JavaScript TreeGrid Customize Column Menu Icon | Syncfusion
+description: Learn how to customize the column menu icon in JavaScript TreeGrid to enhance the user interface and align with application design requirements.
 platform: grid-sdk
 control: Customize the icon for column menu 
 publishingplatform: grid-sdk
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Customize the icon for column menu in JavaScript Treegrid control
+# Customize the Column Menu Icon in JavaScript TreeGrid
 
 You can customize the column menu icon by overriding the default Tree Grid class **.e-icons.e-columnmenu** with a custom property **content** as mentioned below,
 
