@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Excel export options in TypeScript Treegrid control | Syncfusion
-description: Learn here all about Excel export options in Syncfusion TypeScript Treegrid control of Syncfusion Essential JS 2 and more.
+title: ##Platform_Name## TreeGrid Excel Export Options | Syncfusion
+description: Learn about Excel export options in ##Platform_Name## TreeGrid, including export customization, hidden columns, selected records, and advanced export settings.
 platform: grid-sdk
 control: Excel export options 
 publishingplatform: grid-sdk
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Excel export options in TypeScript Treegrid control
+# Excel Export Options in ##Platform_Name## TreeGrid
 
 ## To customize excel export
 

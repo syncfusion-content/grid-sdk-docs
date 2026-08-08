@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Customize the edit dialog in JavaScript Treegrid control | Syncfusion
-description: Learn here all about Customize the edit dialog in Syncfusion JavaScript Treegrid control of Syncfusion Essential JS 2 and more.
+title: JavaScript TreeGrid Customize Edit Dialog | Syncfusion
+description: Learn how to customize the edit dialog in JavaScript TreeGrid to tailor editing interfaces and enhance user interaction.
 platform: grid-sdk
 control: Customize the edit dialog 
 publishingplatform: grid-sdk
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Customize the edit dialog in JavaScript Treegrid control
+# Customize the Edit Dialog in JavaScript TreeGrid
 
 You can customize the appearance of the edit dialog in the [`actionComplete`](../api/treegrid/#actioncomplete) event based on **requestType** as **beginEdit** or **add**.
 

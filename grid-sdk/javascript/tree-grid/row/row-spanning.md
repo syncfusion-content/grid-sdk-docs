@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Row spanning in JavaScript TreeGrid control | Syncfusion
-description: Learn here all about Row spanning in Syncfusion JavaScript TreeGrid control of Syncfusion Essential JS 2 and more.
+title: JavaScript TreeGrid Row Spanning | Syncfusion
+description: Learn how to use row spanning in JavaScript TreeGrid to merge cells across rows and create customized data layouts and presentations.
 platform: grid-sdk
 control: Row spanning 
 publishingplatform: grid-sdk
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Row spanning in JavaScript TreeGrid control
+# Row Spanning in JavaScript TreeGrid
 
 The row spanning feature in the Syncfusion<sup style="font-size:70%">&reg;</sup> TreeGrid allows merging cells in the same column vertically, creating a visually appealing and informative layout. By defining the `rowSpan` attribute in the [queryCellInfo](https://ej2.syncfusion.com/documentation/api/treegrid/index-default#querycellinfo) event, cells can be easily spanned and the appearance of the TreeGrid can be customized.
 

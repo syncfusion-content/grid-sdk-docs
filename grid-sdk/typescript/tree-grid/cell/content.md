@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Content in TypeScript Treegrid control | Syncfusion
-description: Learn here all about Content in Syncfusion TypeScript Treegrid control of Syncfusion Essential JS 2 and more.
+title: TypeScript TreeGrid Cell Content | Syncfusion
+description: Learn how to display HTML content in TypeScript TreeGrid headers and cells using disableHtmlEncode to render formatted content and custom markup.
 platform: grid-sdk
 control: Content 
 publishingplatform: grid-sdk
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Content in TypeScript Treegrid control
+# HTML Content in TypeScript TreeGrid
 
 The HTML tags can be displayed in the TreeGrid header and content by enabling the [`disableHtmlEncode`](../../api/treegrid/column/#disablehtmlencode) property.
 

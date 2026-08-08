@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Refresh the data source in JavaScript Treegrid control | Syncfusion
-description: Learn here all about Refresh the data source in Syncfusion JavaScript Treegrid control of Syncfusion Essential JS 2 and more.
+title: JavaScript TreeGrid Refresh Data Source | Syncfusion
+description: Learn how to refresh the data source in JavaScript TreeGrid to update records dynamically and keep displayed data synchronized with changes.
 platform: grid-sdk
 control: Refresh the data source 
 publishingplatform: grid-sdk
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Refresh the data source in JavaScript Treegrid control
+# Refresh the Data Source in JavaScript TreeGrid
 
 ## How to refresh the datasource
 

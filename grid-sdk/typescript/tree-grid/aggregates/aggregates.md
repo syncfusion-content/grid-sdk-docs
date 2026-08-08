@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Aggregates in TypeScript Treegrid control | Syncfusion
-description: Learn here all about Aggregates in Syncfusion TypeScript Treegrid control of Syncfusion Essential JS 2 and more.
+title: TypeScript TreeGrid Aggregates | Syncfusion
+description: Learn how to configure, display, and customize aggregate values in TypeScript TreeGrid, including built-in aggregate types and child aggregation.
 platform: grid-sdk
 control: Aggregates 
 publishingplatform: grid-sdk
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Aggregates in TypeScript Treegrid control
+# Aggregates in TypeScript TreeGrid
 
 Aggregate values are displayed in the TreeGrid footer and in parent row footer for child row aggregate values. It can be configured through `aggregates` property.
  [`field`](../../api/treegrid/aggregateColumnModel/#field) and [`type`](../../api/treegrid/aggregateColumnModel/#type) are the minimum properties required to represent an aggregate column.
