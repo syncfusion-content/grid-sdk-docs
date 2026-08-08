@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Local data in React TreeGrid component | Syncfusion
-description: Learn about local data binding in Syncfusion React TreeGrid component of Syncfusion Essential JS 2 and more.
+title: React TreeGrid Local Data | Syncfusion
+description: Learn to bind local data to React TreeGrid with support for hierarchical and self-referential (flat) data structures.
 control: Local data 
 platform: grid-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Local data in React TreeGrid 
+# Local Data in React TreeGrid
 
 In local data binding, the datasource used to render the TreeGrid is retrieved locally within the same application.
 
