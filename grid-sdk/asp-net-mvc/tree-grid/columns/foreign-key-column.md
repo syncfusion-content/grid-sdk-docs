@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Foreign Key Column in ASP.NET MVC Tree Grid Component | Syncfusion
-description: Learn here all about Foreign Key Column in Syncfusion ASP.NET MVC Tree Grid component of Syncfusion Essential JS 2 and more.
+title: ASP.NET MVC TreeGrid Foreign Key Column | Syncfusion
+description: Learn how to use foreign key columns in ASP.NET MVC TreeGrid to map related data, display associated values, and bind local or remote data sources.
 platform: grid-sdk
 control: Foreign Key Column
 publishingplatform: grid-sdk
 documentation: ug
 ---
 
-# Foreign Key Column in ASP.NET MVC Tree Grid Component
+# Foreign Key Column in ASP.NET MVC TreeGrid
 
 Since Tree Grid Databinding concept is based on hierarchy relationship, there is no in-built support for foreign key datasource. However, it is possible to display foreign key values in the Tree Grid at initial rendering as well as while Editing.
 

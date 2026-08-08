@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Row Height in ASP.NET MVC Tree Grid Component | Syncfusion
-description: Learn here all about Row Height in Syncfusion ASP.NET MVC Tree Grid component of Syncfusion Essential JS 2 and more.
+title: Row height in ASP.NET MVC Treegrid control | Syncfusion
+description: Learn here all about Row height in Syncfusion ASP.NET MVC Treegrid control of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Row Height
 publishingplatform: grid-sdk
 documentation: ug
 ---
 
-# Row Height in ASP.NET MVC Tree Grid Component
+# Row height in ASP.NET MVC Treegrid control
 
 You can customize the row height of treegrid rows through the [`RowHeight`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGrid~RowHeight.html) property. The [`RowHeight`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGrid~RowHeight.html) property is used to change the row height of entire treegrid rows.
 

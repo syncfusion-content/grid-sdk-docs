@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Accessibility in ASP.NET MVC Tree Grid Component
-description: Learn here all about Accessibility in Syncfusion ASP.NET MVC Tree Grid component of Syncfusion Essential JS 2 and more.
+title: ASP.NET MVC TreeGrid Accessibility | Syncfusion
+description: Learn how ASP.NET MVC TreeGrid supports accessibility with WAI-ARIA roles, keyboard navigation, and ADA, Section 508, and WCAG compliance.
 platform: grid-sdk
 control: Accessibility
 publishingplatform: grid-sdk

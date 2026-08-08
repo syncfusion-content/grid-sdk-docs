@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Edit Types in ASP.NET MVC Tree Grid Component | Syncfusion
-description: Learn here all about Edit Types in Syncfusion ASP.NET MVC Tree Grid component of Syncfusion Essential JS 2 and more.
+title: ASP.NET MVC TreeGrid Edit Types | Syncfusion
+description: Learn how to use different edit types in ASP.NET MVC TreeGrid, including cell, row, batch, and dialog editing modes for managing data.
 platform: grid-sdk
 control: Edit Types
 publishingplatform: grid-sdk
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Edit Types in ASP.NET MVC Tree Grid Component
+# Edit Types in ASP.NET MVC TreeGrid
 
 ## Cell edit type and its params
 

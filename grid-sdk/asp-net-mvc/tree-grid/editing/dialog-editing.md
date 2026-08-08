@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Dialog Editing in ASP.NET MVC Tree Grid Component | Syncfusion
-description: Learn here all about Dialog Editing in Syncfusion ASP.NET MVC Tree Grid component of Syncfusion Essential JS 2 and more.
+title: ASP.NET MVC TreeGrid Dialog Editing | Syncfusion
+description: Learn how to use dialog editing in ASP.NET MVC TreeGrid to edit records through customizable forms and perform CRUD operations.
 platform: grid-sdk
 control: Dialog Editing
 publishingplatform: grid-sdk
 documentation: ug
 ---
 
-
-# Dialog Editing in ASP.NET MVC Tree Grid Component
+# Dialog Editing in ASP.NET MVC TreeGrid
 
 In Dialog edit mode, when you start editing the currently selected row, data will be shown on a dialog.
 You can change the cell values and save edited data to the data source.
