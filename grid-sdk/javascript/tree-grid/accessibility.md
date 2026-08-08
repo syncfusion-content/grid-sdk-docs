@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Accessibility in JavaScript Treegrid control | Syncfusion
-description: Learn here all about Accessibility in Syncfusion JavaScript Treegrid control of Syncfusion Essential JS 2 and more.
+title:  JavaScript TreeGrid Adaptive UI | Syncfusion
+description: Learn how to enable adaptive UI in JavaScript TreeGrid for optimized mobile, tablet, and small-screen user experiences.
 platform: grid-sdk
 control: Accessibility 
 publishingplatform: grid-sdk
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Accessibility in JavaScript Treegrid control
+# Adaptive UI in JavaScript TreeGrid
 
 The Tree Grid component followed the accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) that are commonly used to evaluate accessibility.
 
