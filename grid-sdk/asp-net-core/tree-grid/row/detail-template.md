@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Detail Template in ASP.NET Core Tree Grid Component | Syncfusion
-description: Learn here all about Detail Template in Syncfusion ASP.NET Core Tree Grid component of Syncfusion Essential JS 2 and more.
+title: ASP.NET Core TreeGrid Detail Template | Syncfusion
+description: Learn how to use detail templates in ASP.NET Core TreeGrid to display expandable row content, nested data, and custom detail views.
 platform: grid-sdk
 control: Detail Template
 publishingplatform: grid-sdk
 documentation: ug
 ---
 
-# Detail Template in ASP.NET Core Tree Grid Component
+# Detail Template in ASP.NET Core TreeGrid
 
 The detail template provides additional information about a particular row. By expanding the parent row the child rows are expanded along with their detail template. The [`detailTemplate`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.TreeGrid.TreeGrid.html#Syncfusion_EJ2_TreeGrid_TreeGrid_DetailTemplate) property accepts either the template string or HTML element ID.
 

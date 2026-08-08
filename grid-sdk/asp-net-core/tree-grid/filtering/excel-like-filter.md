@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Excel Like Filter in ASP.NET Core Tree Grid Component | Syncfusion
-description: Learn here all about Excel Like Filter in Syncfusion ASP.NET Core Tree Grid component of Syncfusion Essential JS 2 and more.
+title: ASP.NET Core TreeGrid Excel-Like Filter | Syncfusion
+description: Learn how to use Excel-like filtering in ASP.NET Core TreeGrid, including filter menus, search, checkbox filtering, and custom filter options.
 platform: grid-sdk
 control: Excel Like Filter
 publishingplatform: grid-sdk
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Excel Like Filter in ASP.NET Core Tree Grid Component
+# Excel-Like Filter in ASP.NET Core TreeGrid
 
 You can enable Excel like filter by defining. The [`type`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridFilterSettings~Type.html) as **Excel** using [`e-treegrid-filterSettings`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridFilterSettings.html) tag helper .The excel menu contains an option such as Sorting, Clear filter, Sub menu for advanced filtering.
 

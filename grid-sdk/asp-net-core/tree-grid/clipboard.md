@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Clipboard in ASP.NET Core Tree Grid Component
-description: Learn here all about Clipboard in Syncfusion ASP.NET Core Tree Grid component of Syncfusion Essential JS 2 and more.
+title: ASP.NET Core TreeGrid Clipboard | Syncfusion
+description: Learn how to use clipboard operations in ASP.NET Core TreeGrid, including copy, paste, hierarchy modes, and autofill for rows and cells.
 platform: grid-sdk
 control: Clipboard
 publishingplatform: grid-sdk
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Clipboard
+# Clipboard in ASP.NET Core TreeGrid
 
 The clipboard provides an option to copy selected rows or cells data into the clipboard.
 

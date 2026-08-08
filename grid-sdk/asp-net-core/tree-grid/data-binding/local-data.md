@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Local Data in ASP.NET Core Tree Grid Component | Syncfusion
-description: Learn here all about Local Data in Syncfusion ASP.NET Core Tree Grid component of Syncfusion Essential JS 2 and more.
+title: ASP.NET Core TreeGrid Local Data | Syncfusion
+description: Learn to bind local data to ASP.NET Core TreeGrid with support for hierarchical and self-referential (flat) data structures.
 platform: grid-sdk
 control: Local Data
 publishingplatform: grid-sdk
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Local Data in ASP.NET Core Tree Grid Component
+# Local Data in ASP.NET Core TreeGrid
 
 In Local Data binding, data source for rendering the TreeGrid control is retrieved from the same application locally.
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Indent and Outdent Feature in ASP.NET Core Tree Grid Component | Syncfusion
-description: Learn here all about Indent and Outdent Feature in Syncfusion ASP.NET Core Tree Grid component and much more.
+title: ASP.NET Core TreeGrid Indent and Outdent | Syncfusion
+description: Learn how to indent and outdent rows in ASP.NET Core TreeGrid to modify hierarchical relationships and manage parent-child records.
 platform: grid-sdk
 control: Indent and Outdent
 publishingplatform: grid-sdk
 documentation: ug
 ---
 
-# Indent and Outdent in ASP.NET Core Tree Grid Component
+# Indent and Outdent in ASP.NET Core TreeGrid
 
 The Indent and Outdent feature will help to change the hierarchy level of rows in tree grid. The indent action moves the selected row as the last child of its previous row, whereas the outdent action moves the selected row as a sibling to its parent row.
 
