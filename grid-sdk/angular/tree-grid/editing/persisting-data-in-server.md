@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Persisting data in server in Angular TreeGrid component | Syncfusion
-description: Learn how to persist edited data in a database using RESTful services and DataManager in the Syncfusion Angular TreeGrid component.
+title: Angular TreeGrid Persisting Data in Server | Syncfusion
+description: Learn how to persist edited data in a database using RESTful services and DataManager in the Angular TreeGrid.
 platform: grid-sdk
 control: Persisting data in server 
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Persisting data in server in Angular TreeGrid component
+# Persisting data in Server in Angular TreeGrid
 
 Edited data in the TreeGrid component can be persisted to a database via RESTful web services.
 

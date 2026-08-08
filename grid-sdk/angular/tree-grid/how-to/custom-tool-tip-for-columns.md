@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Custom tool tip for columns in Angular TreeGrid component | Syncfusion
-description: Learn how to add custom tooltips for columns in the Syncfusion Angular TreeGrid component of Essential JS 2 by using the Tooltip and queryCellInfo event.
+title: Angular TreeGrid Custom Column Tooltips | Syncfusion
+description: Learn how to add custom tooltips for columns in Angular TreeGrid using the Tooltip component and queryCellInfo event.
 platform: grid-sdk
 control: Custom tool tip for columns 
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Custom tool tip for columns in Angular TreeGrid component
+# Custom Tooltips for Columns in Angular TreeGrid
 
 Custom tooltips can be added to columns in the TreeGrid component by using the [`EJ2 Tooltip`](https://ej2.syncfusion.com/angular/documentation/tooltip/getting-started) component in combination with the [`queryCellInfo`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#querycellinfo) event.
 
