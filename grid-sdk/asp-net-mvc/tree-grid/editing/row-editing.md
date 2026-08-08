@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Row Editing in ASP.NET MVC Tree Grid Component | Syncfusion
-description: Learn here all about Row Editing in Syncfusion ASP.NET MVC Tree Grid component of Syncfusion Essential JS 2 and more.
+title: ASP.NET MVC TreeGrid Row Editing | Syncfusion
+description: Learn how to use row editing in ASP.NET MVC TreeGrid, including editing rows, programmatic CRUD operations, and confirmation dialogs.
 platform: grid-sdk
 control: Row Editing
 publishingplatform: grid-sdk
 documentation: ug
 ---
 
-# Row Editing in ASP.NET MVC Tree Grid Component
+# Row Editing in ASP.NET MVC TreeGrid
 
 In Row edit mode, when you start editing the currently selected record, the entire row is changed to edit state.
 You can change the cell values of the row and save edited data to the data source.

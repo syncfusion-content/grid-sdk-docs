@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Row Selection in ASP.NET MVC Tree Grid Component | Syncfusion
-description: Learn here all about Row Selection in Syncfusion ASP.NET MVC Tree Grid component of Syncfusion Essential JS 2 and more.
+title: ASP.NET MVC TreeGrid Row Selection | Syncfusion
+description: Learn how to use row selection in ASP.NET MVC TreeGrid, including programmatic selection, selected records, row indexes, and persistent selection.
 platform: grid-sdk
 control: Row Selection
 publishingplatform: grid-sdk
 documentation: ug
 ---
 
-
-# Row Selection in ASP.NET MVC Tree Grid Component
+# Row Selection in ASP.NET MVC TreeGrid
 
 ## Toggle selection
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Validation in ASP.NET MVC Tree Grid Component | Syncfusion
-description: Learn here all about Validation in Syncfusion ASP.NET MVC Tree Grid component of Syncfusion Essential JS 2 and more.
+title: ASP.NET MVC TreeGrid Validation | Syncfusion
+description: Learn how to configure validation in ASP.NET MVC TreeGrid, including required fields, custom rules, and error handling during editing.
 platform: grid-sdk
 control: Validation
 publishingplatform: grid-sdk
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Validation in ASP.NET MVC Tree Grid Component
+# Validation in ASP.NET MVC TreeGrid
 
 ## Column validation
 

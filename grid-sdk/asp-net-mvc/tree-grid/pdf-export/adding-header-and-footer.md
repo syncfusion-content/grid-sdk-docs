@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Adding Header and Footer in ASP.NET MVC Tree Grid Component | Syncfusion
-description: Learn here all about Adding Header and Footer in Syncfusion ASP.NET MVC Tree Grid component of Syncfusion Essential JS 2 and more.
+title: ASP.NET MVC TreeGrid PDF Headers and Footers | Syncfusion
+description: Learn how to add and customize headers and footers in PDF exports for the ASP.NET MVC TreeGrid, including text, page numbers, lines, and images.
 platform: grid-sdk
 control: Adding Header and Footer
 publishingplatform: grid-sdk
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Adding Header and Footer
+# Adding Headers and Footers in ASP.NET MVC TreeGrid
 
 You can customize text, page number, line, page size and changing orientation in header and footer.
 

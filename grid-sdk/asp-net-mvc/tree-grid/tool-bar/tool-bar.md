@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Tool Bar in ASP.NET MVC Tree Grid Component | Syncfusion
-description: Learn here all about Tool Bar in Syncfusion ASP.NET MVC Tree Grid component of Syncfusion Essential JS 2 and more.
+title: ASP.NET MVC TreeGrid Toolbar | Syncfusion
+description: Learn how to customize the toolbar in ASP.NET MVC TreeGrid, including item control, toolbar placement, and toolbar templates.
 platform: grid-sdk
 control: Tool Bar
 publishingplatform: grid-sdk
 documentation: ug
 ---
 
-
-# ToolBar in ASP.NET MVC Tree Grid Component
+# Toolbar in ASP.NET MVC TreeGrid
 
 The TreeGrid provides ToolBar support to handle treegrid actions. The [`Toolbar`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGrid~Toolbar.html) property accepts either the collection of built-in toolbar items and [`ItemModel`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.Navigations.ToolbarItem_members.html) objects for custom toolbar items or HTML element ID for toolbar template.
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Sorting in ASP.NET MVC Tree Grid Component
-description: Learn here all about Sorting in Syncfusion ASP.NET MVC Tree Grid component of Syncfusion Essential JS 2 and more.
+title: ASP.NET MVC TreeGrid Sorting | Syncfusion
+description: Learn how to sort data in ASP.NET MVC TreeGrid, including single and multi-column sorting, custom sorting, and sort order configuration.
 platform: grid-sdk
 control: Sorting
 publishingplatform: grid-sdk
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Sorting
+# Sorting in ASP.NET MVC TreeGrid
 
 Sorting enables you to sort data in the **Ascending** or **Descending** order.
 To sort a column, click the column header.
