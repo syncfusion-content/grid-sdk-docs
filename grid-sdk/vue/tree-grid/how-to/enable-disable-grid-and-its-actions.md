@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Enable disable grid and its actions in Vue Treegrid component | Syncfusion
-description: Learn here all about Enable disable grid and its actions in Syncfusion Vue Treegrid component of Syncfusion Essential JS 2 and more.
+title: Vue TreeGrid Enable or Disable Actions | Syncfusion
+description: Learn how to enable or disable the Vue TreeGrid and its actions using custom CSS to control user interaction.
 control: Enable disable grid and its actions 
 platform: grid-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Enable disable grid and its actions in Vue Treegrid component
+# Enable or Disable TreeGrid Actions in Vue TreeGrid
 
 You can enable/disable the Tree Grid and its actions by applying/removing corresponding CSS styles.
 
