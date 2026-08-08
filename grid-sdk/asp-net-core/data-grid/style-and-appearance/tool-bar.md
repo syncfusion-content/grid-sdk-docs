@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Toolbar in ASP.NET Core Grid Component
-description: Learn here all about Toolbar in Syncfusion ASP.NET Core Grid component of Syncfusion Essential JS 2 and more.
+title: ASP.NET Core Grid Toolbar Style | Syncfusion
+description: Learn how to customize toolbar styles in ASP.NET Core Data Grid with toolbar items, templates, layout options, and CSS-based styling.
 platform: grid-sdk
 control: Toolbar
 publishingplatform: grid-sdk
 documentation: ug
 ---
 
-# Toolbar in ASP.NET Core Grid component
+# Toolbar in ASP.NET Core Data Grid
 
 You can customize the appearance of the toolbar in the Syncfusion ASP.NET Core Grid component using CSS. Here are examples of how to customize the toolbar root element and toolbar button element.
 

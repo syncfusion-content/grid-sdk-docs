@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Editing in Syncfusion ASP.NET Core Grid Component
-description: Learn here all about Editing in Syncfusion ASP.NET Core Grid component of Syncfusion Essential JS 2 and more.
+title: ASP.NET Core Grid Editing Customization | Syncfusion
+description: Learn how to customize editing styles in ASP.NET Core Data Grid with editor appearance, edit layouts, form elements, and editing UI customization.
 platform: grid-sdk
 control: Editing
 publishingplatform: grid-sdk
 documentation: ug
 ---
 
-# Editing in ASP.NET Core Grid component
+# Editing Style in ASP.NET Core Data Grid
 
 You can customize the appearance of editing-related elements in the Syncfusion ASP.NET Core Grid component using CSS. Below are examples of how to customize various editing-related elements.
 
