@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Edit in Vue Treegrid component | Syncfusion
-description: Learn here all about Edit in Syncfusion Vue Treegrid component of Syncfusion Essential JS 2 and more.
+title: Vue TreeGrid Edit | Syncfusion
+description: Learn how to edit data in Vue TreeGrid, including CRUD operations, editing modes, validation, and data update workflows.
 control: Edit 
 platform: grid-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Edit in Vue Treegrid component
+# Edit in Vue TreeGrid
 
 The TreeGrid component has options to dynamically insert, delete and update records. Editing feature is enabled by using [`editSettings`](https://ej2.syncfusion.com/vue/documentation/api/treegrid/#editsettings) property and it requires a primary key column for CRUD operations.
 

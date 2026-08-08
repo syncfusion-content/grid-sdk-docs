@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Column Chooser in Vue Treegrid component | Syncfusion
-description: Learn here all about Column Chooser in Syncfusion Vue Treegrid component of Syncfusion Essential JS 2 and more.
+title: Vue TreeGrid Column Chooser | Syncfusion
+description: Learn how to use the column chooser in Vue TreeGrid to show, hide, and manage column visibility dynamically.
 control: Column Chooser 
 platform: grid-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Column Chooser in Vue Treegrid component
+# Column Chooser in Vue TreeGrid
 
 ## Column Chooser Template in Syncfusion Vue TreeGrid component
 
