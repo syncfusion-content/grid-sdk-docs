@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Provide custom data source and enabling filtering to drop down list in TypeScript Treegrid control | Syncfusion
-description: Learn here all about Provide custom data source and enabling filtering to drop down list in Syncfusion TypeScript Treegrid control of Syncfusion Essential JS 2 and more.
+title: TypeScript TreeGrid DropDownList Data & Filtering | Syncfusion
+description: Learn how to provide a custom data source and enable filtering for DropDownList in the TypeScript TreeGrid with column edit parameters.
 platform: grid-sdk
 control: Provide custom data source and enabling filtering to drop down list 
 publishingplatform: grid-sdk
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Provide custom data source and enabling filtering to drop down list in TypeScript Treegrid control
+# Custom Data Source and Filtering for DropDownList in TypeScript TreeGrid
 
 You can provide data source to the DropDownList by using the **params** of [`columns.edit`](../api/treegrid/column/#edit) property.
 

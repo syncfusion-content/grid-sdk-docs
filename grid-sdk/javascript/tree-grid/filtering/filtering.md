@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Filtering in JavaScript Treegrid control | Syncfusion
-description: Learn here all about Filtering in Syncfusion JavaScript Treegrid control of Syncfusion Essential JS 2 and more.
+title: Filtering in JavaScript TreeGrid
+description: Learn how to use filtering in JavaScript TreeGrid, including filter bar, menu, Excel-like filtering, operators, and custom filter options.
 platform: grid-sdk
 control: Filtering 
 publishingplatform: grid-sdk
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Filtering in JavaScript Treegrid control
+# Filtering in JavaScript TreeGrid
 
 Filtering allows you to view specific or related records based on filter criteria. To enable filtering in the TreeGrid, set the [`allowFiltering`](../../api/treegrid/#allowfiltering) to true. Filtering options can be configured through [`filterSettings`](../../api/treegrid/#filtersettings).
 
