@@ -95,10 +95,6 @@ npm run dev
 {% endhighlight %}
 {% endtabs %}
 
-The output will appear as follows:
-
-![Grid Component](./images/cli-grid.png)
-
 {% endtabcontent %}
 
 {% tabcontent Using Vite CLI %}
