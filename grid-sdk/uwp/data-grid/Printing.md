@@ -785,7 +785,7 @@ dataGrid.PrintSettings.PrintManagerBase.Print();
 
 N> View sample in [GitHub](https://github.com/SyncfusionExamples/How-to-print-specific-pages-in-uwp-datagrid).
 
-N> Printing the specific pages in uwp datagrid support only for the uwp target build version as 17763 or above. For more information [click here](https://docs.microsoft.com/en-us/uwp/api/windows.graphics.printing.printpagerange?view=winrt-19041).
+N> Printing the specific pages in uwp datagrid support only for the uwp target build version as 17763 or above. For more information, refer to [PrintPageRange](https://docs.microsoft.com/en-us/uwp/api/windows.graphics.printing.printpagerange?view=winrt-19041).
 
 ### Disable print preview
 
