@@ -7,7 +7,7 @@ control: DataGrid
 documentation: ug
 ---
 
-# MVVM in WinUI DataGrid (SfDataGrid)
+# MVVM in WinUI DataGrid
 
 ## DataGrid SelectedItem binding
 

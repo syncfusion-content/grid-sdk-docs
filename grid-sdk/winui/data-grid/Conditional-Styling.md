@@ -7,7 +7,7 @@ control: SfDataGrid
 documentation: ug
 ---
 
-# Conditional styling in WinUI DataGrid (SfDataGrid)
+# Conditional Styling in WinUI DataGrid
 
 You can style the DataGrid and its inner elements (cells, rows and columns) conditionally based on data Using StyleSelector.
 
