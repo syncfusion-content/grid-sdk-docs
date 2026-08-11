@@ -62,9 +62,9 @@ Add router links to the component template using the `routerLink` attribute on a
 ```ts
 <nav>
   <ul>
-    <li><a routerLink="/">Home</a></li>
-    <li><a routerLink="/about">Grid 1</a></li>
-    <li><a routerLink="/contact">Grid 2</a></li>
+    <li><a routerLink="/" aria-label="Home">Home</a></li>
+    <li><a routerLink="/about" aria-label="Grid 1">Grid 1</a></li>
+    <li><a routerLink="/contact" aria-label="Grid 2">Grid 2</a></li>
   </ul>
 </nav>
 <router-outlet></router-outlet>

@@ -134,7 +134,7 @@ import { orderDetails } from './datasource';
                   <e-column field="OrderID" width="120" textAlign="Center">
                     <ng-template #headerTemplate let-data>
                       <div>
-                        <a href="#">OrderID</a>
+                        <a href="#" aria-label="View Order ID">OrderID</a>
                       </div>
                     </ng-template>
                   </e-column>

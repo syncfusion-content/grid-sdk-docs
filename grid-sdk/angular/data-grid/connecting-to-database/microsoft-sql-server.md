@@ -1438,7 +1438,7 @@ The following snippets assemble the final Angular Grid configuration used in the
     <e-column field="PublicTicketId" headerText="Ticket ID" width="130"
       textAlign="Right" [allowEditing]="false">
       <ng-template #template let-data>
-        <a class="status-text status-ticket-id">{{ data.PublicTicketId }}</a>
+        <a class="status-text status-ticket-id"  aria-label="Ticket ID {{ data.PublicTicketId }}">{{ data.PublicTicketId }}</a>
       </ng-template>
     </e-column>
     <e-column field="Title" headerText="Subject" width="280"

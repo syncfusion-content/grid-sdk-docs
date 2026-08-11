@@ -13,7 +13,7 @@ The following table lists Angular versions and the minimum Syncfusion Angular Da
 
 | Angular Version | Minimum Syncfusion<sup style="font-size:70%">&reg;</sup> Angular DataGrid Version |
 |-----------------|-----------------------------------------------|
-| [Angular v22](https://blog.angular.dev/announcing-angular-v22-c52bb83a4664) | 34.1.29 |
+| [Angular v22](https://angular.dev/reference/releases) | 34.1.29 |
 | [Angular v21](https://www.syncfusion.com/blogs/post/angular-21-updates-syncfusion-support) | 31.1.17 |
 | [Angular v20](https://www.syncfusion.com/blogs/post/whats-new-in-angular-20)| 29.2.8|
 | [Angular v19](https://blog.angular.dev/meet-angular-v19-7b29dfd05b84/)| 26.1.35 |

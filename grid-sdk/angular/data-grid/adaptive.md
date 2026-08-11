@@ -22,11 +22,11 @@ The following sample demonstrates to enable adaptive dialogs in the Syncfusion A
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid-sdk/angular/data-grid/angular/data-grid/angular/data-grid/adaptive-cs1/src/app.component.ts %}
+{% include code-snippet/grid-sdk/angular/grid/adaptive-cs1/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid-sdk/angular/data-grid/angular/data-grid/angular/data-grid/adaptive-cs1/src/main.ts %}
+{% include code-snippet/grid-sdk/angular/grid/adaptive-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -87,7 +87,7 @@ import { ChangeEventArgs } from '@syncfusion/ej2-dropdowns';
         </div>
         </div>
         <br />
-        <div class="datalink">Source: <a href="https://en.wikipedia.org/wiki/List_of_Android_smartphones"target="_blank">Wikipedia: List of Android smartphones</a></div>
+        <div class="datalink">Source: <a href="https://en.wikipedia.org/wiki/List_of_Android_smartphones"target="_blank" aria-label="Android smartphones on Wikipedia">Wikipedia: List of Android smartphones</a></div>
     </div>`
 })
 
@@ -135,7 +135,7 @@ export class AppComponent implements OnInit {
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid-sdk/angular/data-grid/angular/data-grid/angular/data-grid/adaptive-cs2/src/main.ts %}
+{% include code-snippet/grid-sdk/angular/grid/adaptive-cs2/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
@@ -245,7 +245,7 @@ export class AppComponent implements OnInit {
 {% endraw %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid-sdk/angular/data-grid/angular/data-grid/angular/data-grid/adaptive-cs3/src/main.ts %}
+{% include code-snippet/grid-sdk/angular/grid/adaptive-cs3/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

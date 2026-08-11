@@ -842,7 +842,7 @@ You can use corresponding exporting methods and exportComplete events to get the
 
 You can export the filtered data by defining the resulted data in [`exportProperties.dataSource`](https://ej2.syncfusion.com/angular/documentation/api/grid/excelExportProperties#datasource) before export.
 
-In the provided PDF exporting demo, filtered data is obtained by applying a filter query to the grid data, and the resulting data is defined in [`exportProperties.dataSource`](https://ej2.syncfusion.com/angular/documentation/api/grid/excelExportProperties/#datasource) and passed to the [`pdfExport`](https://ej2.syncfusion.com/angular/documentation/api/grid#pdfexport) method.
+In the provided PDF exporting demo, filtered data is obtained by applying a filter query to the grid data, and the resulting data is defined in [`exportProperties.dataSource`](https://ej2.syncfusion.com/angular/documentation/api/grid/excelExportProperties#datasource) and passed to the [`pdfExport`](https://ej2.syncfusion.com/angular/documentation/api/grid#pdfexport) method.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
