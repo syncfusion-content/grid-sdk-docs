@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Column Chooser in ASP.NET Core Tree Grid Component | Syncfusion
-description: Learn here all about Column Chooser in Syncfusion ASP.NET Core Tree Grid component of Syncfusion Essential JS 2 and more.
+title: ASP.NET Core TreeGrid Column Chooser | Syncfusion
+description: Learn how to use the column chooser in ASP.NET Core TreeGrid to show, hide, and manage column visibility dynamically.
 platform: grid-sdk
 control: Column Chooser
 publishingplatform: grid-sdk
 documentation: ug
 ---
 
-# Column Chooser in ASP.NET Core Tree Grid Component
+# Column Chooser in ASP.NET Core TreeGrid
 
 The column chooser has options to show or hide columns dynamically. It can be enabled by defining the `showColumnChooser` as true.
 

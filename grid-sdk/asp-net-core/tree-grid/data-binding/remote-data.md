@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Remote Data in ASP.NET Core Tree Grid Component | Syncfusion
-description: Learn here all about Remote Data in Syncfusion ASP.NET Core Tree Grid component of Syncfusion Essential JS 2 and more.
+title: ASP.NET Core TreeGrid Remote Data | Syncfusion
+description: Learn how to bind remote data in the ASP.NET Core TreeGrid, including load on demand, paging, virtualization, adaptors, and error handling.
 platform: grid-sdk
 control: Remote Data
 publishingplatform: grid-sdk
 documentation: ug
 ---
 
-# Remote Data in ASP.NET Core Tree Grid Component
+# Remote Data in ASP.NET Core TreeGrid
 
 To bind remote data to TreeGrid component, assign service data as an instance of **DataManager** to the [`dataSource`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGrid~DataSource.html) property. To interact with remote data source,  provide the endpoint **url** and define the [`hasChildMapping`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGrid~HasChildMapping.html) property of treegrid.
 
