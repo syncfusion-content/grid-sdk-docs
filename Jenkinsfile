@@ -2,12 +2,12 @@ node('content')
 { 
 timestamps
   {
-  
-  def Content=""; 
+   
+  def Content="";
 		env.PATH = "${ProgramFiles}"+"\\Git\\mingw64\\bin;${env.PATH}"
 
      timeout(time: 7200000, unit: 'MILLISECONDS') {
-	String platform='gird-sdk';
+String platform='grid-sdk';
    try
 	{   
 		//Clone scm repository in Workspace source directory
@@ -17,6 +17,7 @@ timestamps
            {
 		     checkout scm
 			 
+
 			 def page = 1
 			 while(true)
             {  
@@ -38,20 +39,21 @@ timestamps
            }
            page++
            }
-
-		    
+ 
 		      if (Content) {  
                  writeFile file: env.WORKSPACE+"/cireports/content.txt", text: Content
               }
               else  {
                 writeFile file: env.WORKSPACE+"/cireports/content.txt", text: "There are no filepaths found for this commit."
               }
+			  
 		    }
 			 
 		   //Checkout the ug_spellchecker from development Source
 	  checkout([$class: 'GitSCM', branches: [[name: '*/development']], doGenerateSubmoduleConfigurations: false, extensions: [[$class: 'RelativeTargetDirectory', relativeTargetDir: 'ug_spellchecker']], submoduleCfg: [], userRemoteConfigs: [[credentialsId: env.githubCredentialId, url: 'https://github.com/syncfusion-content/ug_spellchecker.git']]])
 		 
 	  }
+	  
 	}
 	
     catch(Exception e)
@@ -66,7 +68,7 @@ if(currentBuild.result != 'FAILURE')
 	{
 	    gitlabCommitStatus("Build")
 		{
-			bat 'powershell.exe -ExecutionPolicy ByPass -File '+env.WORKSPACE+"/ug_spellchecker/build.ps1 -Script "+env.WORKSPACE+"/ug_spellchecker/build.cake -Target build -Platform \""+platform+"\" -Targetbranch "+env.githubTargetBranch+" -Branch "+'"'+env.githubSourceBranch+'"'
+		bat 'powershell.exe -ExecutionPolicy ByPass -File '+env.WORKSPACE+"/ug_spellchecker/build.ps1 -Script "+env.WORKSPACE+"/ug_spellchecker/build.cake -Target build -Platform \""+platform+"\" -Targetbranch "+env.githubTargetBranch+" -Branch "+'"'+env.githubSourceBranch+'"'
 	 	}
 	 	
 	 	def files = findFiles(glob: '**/cireports/errorlogs/*.txt')
@@ -91,7 +93,6 @@ if(currentBuild.result != 'FAILURE')
     { 		
          archiveArtifacts artifacts: 'cireports/', excludes: null 	 
     }
-	    step([$class: 'WsCleanup'])	
-		}
+	    step([$class: 'WsCleanup'])	}
 	    }
 }
