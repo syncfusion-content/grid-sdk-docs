@@ -10,7 +10,7 @@ domainurl: https://help.syncfusion.com/grid-sdk
 
 # Render React Component in React TreeGrid Columns
 
-Render a React component inside TreeGrid cells by using the [queryCellInfo](https://ej2.syncfusion.com/react/documentation/api/treegrid/#querycellinfo) event.
+Render a React component inside TreeGrid cells by using the [queryCellInfo](https://ej2.syncfusion.com/react/documentation/api/treegrid#querycellinfo) event.
 
 In the following sample, a DropDownList is rendered in the **Priority** column.
 

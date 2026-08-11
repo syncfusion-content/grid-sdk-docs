@@ -12,7 +12,7 @@ domainurl: https://help.syncfusion.com/grid-sdk
 
 ## Column validation
 
-Column validation checks edited or newly added data and displays error messages for invalid fields before saving. TreeGrid uses the Form Validator component for column validation. Configure rules using the [columns.validationRules](https://ej2.syncfusion.com/react/documentation/api/treegrid/column/#validationrules) property.
+Column validation checks edited or newly added data and displays error messages for invalid fields before saving. TreeGrid uses the Form Validator component for column validation. Configure rules using the [columns.validationRules](https://ej2.syncfusion.com/react/documentation/api/treegrid/column#validationrules) property.
 
 {% tabs %}
 {% highlight js tabtitle="app.jsx" %}

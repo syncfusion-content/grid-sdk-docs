@@ -10,7 +10,7 @@ domainurl: https://help.syncfusion.com/grid-sdk
 
 # Customize Column Styles in React TreeGrid
 
-Customize the appearance of a specific column’s header and content using the [customAttributes](https://ej2.syncfusion.com/react/documentation/api/treegrid/column/#customattributes) property.
+Customize the appearance of a specific column’s header and content using the [customAttributes](https://ej2.syncfusion.com/react/documentation/api/treegrid/column#customattributes) property.
 
 To customize a TreeGrid column, follow these steps:
 
@@ -38,7 +38,7 @@ Create a CSS class with custom styles to override the default styles for row cel
 
 **Step 2**:
 
-Apply the custom CSS class to the target column using the [customAttributes](https://ej2.syncfusion.com/react/documentation/api/treegrid/column/#customattributes) property.
+Apply the custom CSS class to the target column using the [customAttributes](https://ej2.syncfusion.com/react/documentation/api/treegrid/column#customattributes) property.
 
 ```ts
 <ColumnDirective field='TaskName' headerText='Task Name' width='100' customAttributes={customAttributes}></ColumnDirective>

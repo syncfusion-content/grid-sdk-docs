@@ -12,7 +12,7 @@ domainurl: https://help.syncfusion.com/grid-sdk
 
 The column spanning feature in the Syncfusion<sup style="font-size:70%">&reg;</sup> React TreeGrid allows merging adjacent cells horizontally, creating a visually appealing and informative layout. By defining the `colSpan` attribute in the [queryCellInfo](https://ej2.syncfusion.com/react/documentation/api/treegrid/index-default#querycellinfo) event, cells can be easily spanned and the appearance of the TreeGrid can be customized.
 
-In the following example, Employee **Davolio** is scheduled for analysis from "9.00 AM" to "10.00 AM", so those cells have been spanned.
+In the following example, the cells corresponding to the scheduled time range from 9:00 AM to 10:00 AM are spanned.
 
 {% tabs %}
 {% highlight js tabtitle="app.jsx" %}

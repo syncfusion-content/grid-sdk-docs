@@ -10,7 +10,7 @@ domainurl: https://help.syncfusion.com/grid-sdk
 
 # Excel-Like Filter in React TreeGrid
 
-Enable the Excel like filter by setting [filterSettings.type](https://ej2.syncfusion.com/react/documentation/api/treegrid/filterSettingsModel/#type) to `Excel`. The Excel filter menu adapts to the column type and provides options such as sorting, clear filter, and an advanced filtering submenu.
+Enable the Excel like filter by setting [filterSettings.type](https://ej2.syncfusion.com/react/documentation/api/treegrid/filterSettingsModel#type) to `Excel`. The Excel filter menu adapts to the column type and provides options such as sorting, clear filter, and an advanced filtering submenu.
 
 {% tabs %}
 {% highlight js tabtitle="app.jsx" %}
@@ -25,7 +25,7 @@ Enable the Excel like filter by setting [filterSettings.type](https://ej2.syncfu
 
 ## Change default filter operator
 
-Change the default Excel filter operator during actions. For example, switch string columns from `startsWith` to `contains` in the [actionBegin](https://ej2.syncfusion.com/react/documentation/api/treegrid/#actionbegin) event.
+Change the default Excel filter operator during actions. For example, switch string columns from `startsWith` to `contains` in the [actionBegin](https://ej2.syncfusion.com/react/documentation/api/treegrid#actionbegin) event.
 
 {% tabs %}
 {% highlight js tabtitle="app.jsx" %}

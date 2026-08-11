@@ -10,7 +10,7 @@ domainurl: https://help.syncfusion.com/grid-sdk
 
 # Customize Pager Dropdown in React TreeGrid
 
-To customize the default pager dropdown values, define [pageSizes](https://ej2.syncfusion.com/react/documentation/api/treegrid/pageSettings/#pagesizes) as an array of strings.
+To customize the default pager dropdown values, define [pageSizes](https://ej2.syncfusion.com/react/documentation/api/treegrid/pageSettings#pagesizes) as an array of strings.
 
 {% tabs %}
 {% highlight js tabtitle="app.jsx" %}

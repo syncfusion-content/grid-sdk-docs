@@ -12,7 +12,7 @@ domainurl: https://help.syncfusion.com/grid-sdk
 
 ## Select row at initial rendering
 
-Select a row during initial render by setting the [selectedRowIndex](https://ej2.syncfusion.com/react/documentation/api/treegrid/#selectedrowindex) property.
+Select a row during initial render by setting the [selectedRowIndex](https://ej2.syncfusion.com/react/documentation/api/treegrid#selectedrowindex) property.
 
 {% tabs %}
 {% highlight js tabtitle="app.jsx" %}
@@ -27,7 +27,7 @@ Select a row during initial render by setting the [selectedRowIndex](https://ej2
 
 ## Get selected row indexes
 
-Retrieve the selected row indexes using the [getSelectedRowIndexes](https://ej2.syncfusion.com/react/documentation/api/treegrid/#getselectedrowindexes) method.
+Retrieve the selected row indexes using the [getSelectedRowIndexes](https://ej2.syncfusion.com/react/documentation/api/treegrid#getselectedrowindexes) method.
 
 {% tabs %}
 {% highlight js tabtitle="app.jsx" %}
@@ -42,7 +42,7 @@ Retrieve the selected row indexes using the [getSelectedRowIndexes](https://ej2.
 
 ## Multiple selection based on condition
 
-Select multiple TreeGrid rows based on a condition using the [selectRows](https://ej2.syncfusion.com/react/documentation/api/treegrid/#selectrows) method.
+Select multiple TreeGrid rows based on a condition using the [selectRows](https://ej2.syncfusion.com/react/documentation/api/treegrid#selectrows) method.
 
 In the following example, rows with a *taskID* value of *3* and *5* are selected during initial render.
 
@@ -59,7 +59,7 @@ In the following example, rows with a *taskID* value of *3* and *5* are selected
 
 ## Toggle selection
 
-Toggle selection enables selecting and unselecting a specific row or cell. Enable this behavior by setting [selectionSettings.enableToggle](https://ej2.syncfusion.com/react/documentation/api/treegrid/selectionSettings/#enabletoggle) to true. Clicking an already selected row or cell will unselect it, and clicking an unselected target will select it.
+Toggle selection enables selecting and unselecting a specific row or cell. Enable this behavior by setting [selectionSettings.enableToggle](https://ej2.syncfusion.com/react/documentation/api/treegrid/selectionSettings#enabletoggle) to true. Clicking an already selected row or cell will unselect it, and clicking an unselected target will select it.
 
 {% tabs %}
 {% highlight js tabtitle="app.jsx" %}

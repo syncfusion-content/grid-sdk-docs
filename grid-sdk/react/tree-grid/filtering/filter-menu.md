@@ -10,7 +10,7 @@ domainurl: https://help.syncfusion.com/grid-sdk
 
 # Filter Menu in React TreeGrid
 
-Enable the filter menu by setting [filterSettings.type](https://ej2.syncfusion.com/react/documentation/api/treegrid/filterSettingsModel/#type) to `Menu`. The menu UI adapts to the column type and provides operator-based filtering.
+Enable the filter menu by setting [filterSettings.type](https://ej2.syncfusion.com/react/documentation/api/treegrid/filterSettingsModel#type) to `Menu`. The menu UI adapts to the column type and provides operator-based filtering.
 
 {% tabs %}
 {% highlight js tabtitle="app.jsx" %}
@@ -23,8 +23,8 @@ Enable the filter menu by setting [filterSettings.type](https://ej2.syncfusion.c
 
  {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/treegrid/filtering-cs6" %}
 
-> * [allowFiltering](https://ej2.syncfusion.com/react/documentation/api/treegrid/#allowfiltering) must be set to true.
-> * Setting [columns.allowFiltering](https://ej2.syncfusion.com/react/documentation/api/treegrid/column/#allowfiltering) to false disables the filter menu for that column.
+> * [allowFiltering](https://ej2.syncfusion.com/react/documentation/api/treegrid#allowfiltering) must be set to true.
+> * Setting [columns.allowFiltering](https://ej2.syncfusion.com/react/documentation/api/treegrid/column#allowfiltering) to false disables the filter menu for that column.
 
 ## Custom component in filter menu
 
@@ -65,9 +65,9 @@ export default App;
 
 ## Enable different filter dialog for a column
 
-Both **Menu** and **Excel** filtering can be used in the same TreeGrid. Set [column.filter.type](https://ej2.syncfusion.com/react/documentation/api/treegrid/column/#filter) to **Menu** or **Excel** per column.
+Both **Menu** and **Excel** filtering can be used in the same TreeGrid. Set [column.filter.type](https://ej2.syncfusion.com/react/documentation/api/treegrid/column#filter) to **Menu** or **Excel** per column.
 
-In the following sample, Menu filtering is enabled globally, and Excel filtering is applied to the **Task Name** column using [column.filter.type](https://ej2.syncfusion.com/react/documentation/api/treegrid/column/#filter).
+In the following sample, Menu filtering is enabled globally, and Excel filtering is applied to the **Task Name** column using [column.filter.type](https://ej2.syncfusion.com/react/documentation/api/treegrid/column#filter).
 
 {% tabs %}
 {% highlight js tabtitle="app.jsx" %}

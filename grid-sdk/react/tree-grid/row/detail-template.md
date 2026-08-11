@@ -10,7 +10,7 @@ domainurl: https://help.syncfusion.com/grid-sdk
 
 # Detail Template in React TreeGrid 
 
-The detail template displays additional information for a row. When a parent row is expanded, its child rows expand along with their detail templates. The [detailTemplate](https://ej2.syncfusion.com/react/documentation/api/treegrid/#detailtemplate) property accepts either a template string or an HTML element ID.
+The detail template displays additional information for a row. When a parent row is expanded, its child rows expand along with their detail templates. The [detailTemplate](https://ej2.syncfusion.com/react/documentation/api/treegrid#detailtemplate) property accepts either a template string or an HTML element ID.
 
 To enable the detail template, inject the **DetailRow** module into the TreeGrid.
 

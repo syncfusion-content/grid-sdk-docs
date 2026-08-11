@@ -14,7 +14,7 @@ The TreeGrid interface (UI) is optimized for small screens to provide clear view
 
 ## Render adaptive dialogs
 
-When the [enableAdaptiveUI](https://ej2.syncfusion.com/react/documentation/api/treegrid/#enableadaptiveui) property is enabled, the TreeGrid renders filter, sort, and edit dialogs in full screen mode. The following demo demonstrates this behavior.
+When the [enableAdaptiveUI](https://ej2.syncfusion.com/react/documentation/api/treegrid#enableadaptiveui) property is enabled, the TreeGrid renders filter, sort, and edit dialogs in full screen mode. The following demo demonstrates this behavior.
 
 {% tabs %}
 {% highlight js tabtitle="app.jsx" %}

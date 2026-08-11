@@ -10,9 +10,9 @@ domainurl: https://help.syncfusion.com/grid-sdk
 
 # Row Cell Customization in React TreeGrid
 
-Customize rows and cells by using the TreeGrid events [queryCellInfo](https://ej2.syncfusion.com/react/documentation/api/treegrid/#querycellinfo) and [rowDataBound](https://ej2.syncfusion.com/react/documentation/api/treegrid/#rowdatabound).
+Customize rows and cells by using the TreeGrid events [queryCellInfo](https://ej2.syncfusion.com/react/documentation/api/treegrid#querycellinfo) and [rowDataBound](https://ej2.syncfusion.com/react/documentation/api/treegrid#rowdatabound).
 
-In the following demo, command buttons are customized to appear only for parent rows using the [queryCellInfo](https://ej2.syncfusion.com/react/documentation/api/treegrid/#querycellinfo) and [rowDataBound](https://ej2.syncfusion.com/react/documentation/api/treegrid/#rowdatabound) events.
+In the following demo, command buttons are customized to appear only for parent rows using the [queryCellInfo](https://ej2.syncfusion.com/react/documentation/api/treegrid#querycellinfo) and [rowDataBound](https://ej2.syncfusion.com/react/documentation/api/treegrid#rowdatabound) events.
 
 {% tabs %}
 {% highlight js tabtitle="app.jsx" %}

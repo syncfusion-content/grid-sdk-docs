@@ -12,7 +12,7 @@ domainurl: https://help.syncfusion.com/grid-sdk
 
 Cells can be selected using mouse drag or arrow keys (Up, Down, Left, Right).
 
-TreeGrid provides two cell selection modes configured through [selectionSettings.cellSelectionMode](https://ej2.syncfusion.com/react/documentation/api/treegrid/selectionSettings/#cellselectionmode):
+TreeGrid provides two cell selection modes configured through [selectionSettings.cellSelectionMode](https://ej2.syncfusion.com/react/documentation/api/treegrid/selectionSettings#cellselectionmode):
 
 
 * **Flow** (default): Select range of cells between the start index and end index which includes in between cells of rows.
