@@ -2,7 +2,7 @@
 layout: post
 title: Downloading Syncfusion Grid SDK Linux installer - Syncfusion
 description: Learn here about how to download the Syncfusion Grid SDK Linux installer from our Syncfusion website with license.
-platform: Grid SDK
+platform: grid-sdk
 control: Installation and Deployment
 documentation: ug
 
