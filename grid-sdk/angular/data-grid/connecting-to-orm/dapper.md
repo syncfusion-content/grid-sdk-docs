@@ -1655,7 +1655,7 @@ export class AppComponent {
             <e-column field="GuestEmail" headerText="Email" width="200" [validationRules]="requiredRule">
                 <ng-template #template let-data>
                     <div>
-                        <a href="mailto:{{data.GuestEmail}}" aria-label="Send email to {{data.GuestEmail}}>{{data.GuestEmail}}</a>
+                        <a href="mailto:{{data.GuestEmail}}" aria-label="Send email">{{data.GuestEmail}}</a>
                     </div>
                 </ng-template>
             </e-column>
