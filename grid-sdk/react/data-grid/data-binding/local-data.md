@@ -322,7 +322,7 @@ public ActionResult Delete(int key)
 
 The following screenshot represents loading data when the button is clicked and CRUD operations are performed:
 
-![Fetch](../../grid/images/fetch.gif)
+![Fetch](../images/fetch.gif)
 
 ### Display the loading indicator with local data
 
@@ -628,7 +628,7 @@ C. To delete a record using an AJAX request, follow these steps:
 
 The following screenshot represents loading data when the button is clicked and CRUD operations are performed:
 
-![Ajax](../../grid/images/Ajaxreq.gif)
+![Ajax](../images/Ajaxreq.gif)
 
 ### Display the loading indicator using AJAX
 

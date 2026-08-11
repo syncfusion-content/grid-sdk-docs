@@ -100,7 +100,7 @@ npm run dev
 
 The output will appear as follows:
 
-![Grid Component](./images/cli-grid.png)
+![Grid Component](../images/cli-grid.png)
 
 {% endtabcontent %}
 
