@@ -1455,7 +1455,7 @@ const getCategoryClass = (row: TicketRow): string => {
 };
 
 const publicTicketIdTemplate = (data: TicketRow) => (
-  <a className="status-text status-ticket-id" aria-label={`Ticket ID ${data.PublicTicketId}`}>{data.PublicTicketId}</a>
+  <a className="status-text status-ticket-id" aria-label="View ticket ID">{data.PublicTicketId}</a>
 );
 
 const statusTemplate = (data: TicketRow) => (

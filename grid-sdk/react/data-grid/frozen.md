@@ -12,7 +12,7 @@ domainurl: https://help.syncfusion.com/grid-sdk
 
 Frozen rows and columns provides an option to make rows and columns always visible in the top and left side of the grid while scrolling.
 
-In this demo, the [frozenColumns](https://ej2.syncfusion.com/react/documentation/api/grid/#frozencolumns) is set as **'2'** and the [frozenRows](https://ej2.syncfusion.com/react/documentation/api/grid#frozenrows)
+In this demo, the [frozenColumns](https://ej2.syncfusion.com/react/documentation/api/grid#frozencolumns) is set as **'2'** and the [frozenRows](https://ej2.syncfusion.com/react/documentation/api/grid#frozenrows)
 is set as **'3'**. Hence, the left two columns and top three rows are frozen.
 
 {% tabs %}
