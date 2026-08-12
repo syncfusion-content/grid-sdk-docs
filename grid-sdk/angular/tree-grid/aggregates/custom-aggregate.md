@@ -10,7 +10,7 @@ domainurl: https://help.syncfusion.com/grid-sdk
 
 # Custom Aggregate in Angular TreeGrid
 
-To calculate aggregate values using your own aggregation logic, use the custom aggregate feature in the TreeGrid. To enable custom aggregation, set the [`type`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/aggregateColumnModel/#type) property to `Custom` and assign your custom aggregation function to the [`customAggregate`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/aggregateColumnModel/#customaggregate) property.
+To calculate aggregate values using your own aggregation logic, use the custom aggregate feature in the TreeGrid. To enable custom aggregation, set the [`type`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/aggregateColumnModel/type) property to `Custom` and assign your custom aggregation function to the [`customAggregate`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/aggregateColumnModel/customaggregate) property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

@@ -10,7 +10,7 @@ domainurl: https://help.syncfusion.com/grid-sdk
 
 # State Persistence in Angular TreeGrid
 
-State persistence allows the TreeGrid component to maintain its state in the browser's [`localStorage`](https://www.w3schools.com/html/html5_webstorage.asp#) across browser refreshes or page navigation. When [`enablePersistence`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#enablepersistence) is set to `true`, the TreeGrid saves its model object to local storage automatically.
+State persistence allows the TreeGrid component to maintain its state in the browser's [`localStorage`](https://www.w3schools.com/html/html5_webstorage.asp#) across browser refreshes or page navigation. When [`enablePersistence`](https://ej2.syncfusion.com/angular/documentation/api/treegrid#enablepersistence) is set to `true`, the TreeGrid saves its model object to local storage automatically.
 
 State persistence in TreeGrid ensures that key properties such as column settings, sorting, filtering, expanded or collapsed states, and paging—are remembered and restored even after the page is reloaded or revisited.
 

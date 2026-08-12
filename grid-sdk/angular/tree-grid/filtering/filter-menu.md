@@ -12,7 +12,7 @@ domainurl: https://help.syncfusion.com/grid-sdk
 
 The filter menu in the Angular TreeGrid component allows enabling filtering and provides a user-friendly interface for filtering data based on column types and operators.
 
-To enable the filter menu, set the [filterSettings.type](https://ej2.syncfusion.com/angular/documentation/api/treegrid/filterSettings) property to **Menu** and ensure [allowFiltering](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#allowfiltering) is set to **true**. This property determines the type of filter UI that will be rendered. The filter menu UI allows applying filters using different operators.
+To enable the filter menu, set the [filterSettings.type](https://ej2.syncfusion.com/angular/documentation/api/treegrid/filterSettings) property to **Menu** and ensure [allowFiltering](https://ej2.syncfusion.com/angular/documentation/api/treegrid#allowfiltering) is set to **true**. This property determines the type of filter UI that will be rendered. The filter menu UI allows applying filters using different operators.
 
 Here is an example that demonstrates the usage of the filter menu in the TreeGrid:
 
@@ -30,14 +30,14 @@ Here is an example that demonstrates the usage of the filter menu in the TreeGri
   
 {% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/treegrid/filtering-cs6" %}
 
-> * [allowFiltering](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#allowfiltering) must be set as true to enable filter menu.
-> * By setting [columns.allowFiltering](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column/#allowfiltering) as false will prevent filter menu rendering for a particular column.
+> * [allowFiltering](https://ej2.syncfusion.com/angular/documentation/api/treegrid#allowfiltering) must be set as true to enable filter menu.
+> * By setting [columns.allowFiltering](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column#allowfiltering) as false will prevent filter menu rendering for a particular column.
 
 ## Custom component in filter menu
 
 The filtering experience in the TreeGrid component can be enhanced by customizing the filter menu with custom components. This allows replacing the default search box with custom components like dropdowns or textboxes. By default, the filter menu provides an autocomplete component for string type columns, a numeric textbox for number type columns, and a dropdown component for boolean type columns, making it easy to search for values.
 
-To customize the filter menu, use the [column.filter.ui](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column/#filter) property. This property allows integrating desired custom filter components into specific columns of the TreeGrid. To implement a custom filter UI, define the following functions:
+To customize the filter menu, use the [column.filter.ui](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column#filter) property. This property allows integrating desired custom filter components into specific columns of the TreeGrid. To implement a custom filter UI, define the following functions:
 
 * **create**: This function is responsible for creating the custom component for the filter.
 * **write**: The write function is used to wire events for the custom component. This allows handling changes in the custom filter UI.
@@ -63,9 +63,9 @@ Here is a sample code demonstrating how to render a dropdownlist component for t
 
 ## Show 24-hour time format in filter dialog
 
-The TreeGrid provides a feature to display the time in a 24-hour format in the date or datetime column filter dialog. By default, the filter dialog displays the time in a 12-hour format (AM/PM) for the date or datetime column. To enable the 24-hour time format in the filter dialog, handle the [actionComplete](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#actioncomplete) event with [requestType](https://ej2.syncfusion.com/angular/documentation/api/grid/filterEventArgs/#requesttype) as [filterafteropen](https://ej2.syncfusion.com/angular/documentation/api/grid/action/) and set the `timeFormat` of the `DateTimepicker` to **HH:mm**.
+The TreeGrid provides a feature to display the time in a 24-hour format in the date or datetime column filter dialog. By default, the filter dialog displays the time in a 12-hour format (AM/PM) for the date or datetime column. To enable the 24-hour time format in the filter dialog, handle the [actionComplete](https://ej2.syncfusion.com/angular/documentation/api/treegrid#actioncomplete) event with [requestType](https://ej2.syncfusion.com/angular/documentation/api/grid/filterEventArgs#requesttype) as [filterafteropen](https://ej2.syncfusion.com/angular/documentation/api/grid/action/) and set the `timeFormat` of the `DateTimepicker` to **HH:mm**.
 
-In TreeGrid column, the default format can be customized by setting the [type](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column/#type) as **dateTime** and the [format](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column/#format) as **M/d/y HH:mm**. 
+In TreeGrid column, the default format can be customized by setting the [type](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column#type) as **dateTime** and the [format](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column#format) as **M/d/y HH:mm**. 
 
 Here is an example that demonstrates how to show 24-hour time format in filter dialog:
 
@@ -85,7 +85,7 @@ Here is an example that demonstrates how to show 24-hour time format in filter d
 
 ## Customizing filter menu operators list
 
-The TreeGrid component enables customizing the default filter operator list by utilizing the [filterSettings.operators](https://ej2.syncfusion.com/angular/documentation/api/treegrid/filterSettings/#operators) property. This feature allows defining a custom set of operators that will be available in the filter menu. Operators can be customized for string, number, date, and boolean data types.
+The TreeGrid component enables customizing the default filter operator list by utilizing the [filterSettings.operators](https://ej2.syncfusion.com/angular/documentation/api/treegrid/filterSettings#operators) property. This feature allows defining a custom set of operators that will be available in the filter menu. Operators can be customized for string, number, date, and boolean data types.
 
 The available options for customization are:
 
@@ -112,7 +112,7 @@ Here is an example of how to customize the filter operators list in the TreeGrid
 
 ## Filter by multiple keywords using filter menu
 
-The TreeGrid component allows performing filtering actions based on multiple keywords, rather than a single keyword, using the filter menu dialog. To enable this feature, set [filterSettings.type](https://ej2.syncfusion.com/angular/documentation/api/treegrid/filterSettings/#type) as **Menu** and render the `MultiSelect` component as a custom component in the filter menu dialog.
+The TreeGrid component allows performing filtering actions based on multiple keywords, rather than a single keyword, using the filter menu dialog. To enable this feature, set [filterSettings.type](https://ej2.syncfusion.com/angular/documentation/api/treegrid/filterSettings#type) as **Menu** and render the `MultiSelect` component as a custom component in the filter menu dialog.
 
 Here is an example that demonstrates how to perform filtering by multiple keywords using the filter menu in the TreeGrid:
 
@@ -132,7 +132,7 @@ Here is an example that demonstrates how to perform filtering by multiple keywor
 
 ## Customize the default input component of filter menu dialog
 
-The default settings of input components within the menu filter can be customized by utilizing the `params` property within the column definition of the [filter](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column/#filter). This allows modifying the behavior of specific filter components to better suit specific needs.
+The default settings of input components within the menu filter can be customized by utilizing the `params` property within the column definition of the [filter](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column#filter). This allows modifying the behavior of specific filter components to better suit specific needs.
 
 | Column Type | Default component                                                                                 | Customization                            | API Reference                                                                                             |
 | ----------- | ------------------------------------------------------------------------------------------------- | ---------------------------------------- | --------------------------------------------------------------------------------------------------------- |
@@ -164,7 +164,7 @@ In the example provided below, the **Task ID** and **Duration** columns are nume
 
 By default, the [AutoComplete](https://ej2.syncfusion.com/angular/documentation/auto-complete/getting-started) component in the filter menu dialog is set to automatically fill suggestions during text input. However, there might be scenarios where this autofill behavior needs to be prevented to provide more precise control over the filtering experience.
 
-The autofill feature can be prevented by setting the [autofill](https://ej2.syncfusion.com/angular/documentation/api/auto-complete#autofill) parameter to **false** using the `params` property within the column definition of the [filter](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column/#filter). 
+The autofill feature can be prevented by setting the [autofill](https://ej2.syncfusion.com/angular/documentation/api/auto-complete#autofill) parameter to **false** using the `params` property within the column definition of the [filter](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column#filter). 
 
 Here's an example that demonstrates how to prevent autofill options in the autocomplete menu filter within the TreeGrid. In this example, autofill options have been prevented in the **Task Name** column.
 
@@ -283,7 +283,7 @@ export class AppComponent implements OnInit {
 
 When using the filter menu, the UI displays operators for all columns based on the data type of the first data it encounters. If the first data is empty or null, it may not work correctly. To overcome this issue, follow these steps to troubleshoot and resolve it:
 
-**1. Explicitly Define Data Type:** When defining columns in the Angular TreeGrid component, explicitly specify the data type for each column. This can be done using the [type](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column/#type) property within the columns configuration. For example:
+**1. Explicitly Define Data Type:** When defining columns in the Angular TreeGrid component, explicitly specify the data type for each column. This can be done using the [type](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column#type) property within the columns configuration. For example:
 
 ```ts
 <ejs-treegrid #treegrid [dataSource]='data' [treeColumnIndex]='1' childMapping='subtasks'>            

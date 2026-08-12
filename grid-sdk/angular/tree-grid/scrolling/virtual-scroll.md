@@ -18,7 +18,7 @@ To use virtualization in TreeGrid, inject the **VirtualScrollService**, which ha
 
 Row virtualization ensures only the rows currently visible in the viewport are loaded and rendered, resulting in fast scrolling and minimal resource use. It replaces traditional paging by dynamically loading data during vertical scrolling.
 
-Enable row virtualization by setting [enableVirtualization](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#enablevirtualization) to **true** and defining the [height](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#height) property on the TreeGrid.
+Enable row virtualization by setting [enableVirtualization](https://ej2.syncfusion.com/angular/documentation/api/treegrid#enablevirtualization) to **true** and defining the [height](https://ej2.syncfusion.com/angular/documentation/api/treegrid#height) property on the TreeGrid.
 
 The visible record count is determined by the TreeGrid’s height but can be explicitly set using the [pageSettings.pageSize](https://ej2.syncfusion.com/angular/documentation/api/treegrid/pageSettingsModel#pagesize) property. Loaded data is cached and reused as necessary.
 

@@ -56,7 +56,7 @@ Example:
 
 ## Automatically update a specific column based on another column's edited value
 
-Columns can be updated dynamically in response to editing another column by configuring [columns->edit->params](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column/#edit) and specifying [editType](https://ej2.syncfusion.com/angular/documentation/api/treegrid/columnModel/#edittype). This is useful for real-time calculations and value propagation.
+Columns can be updated dynamically in response to editing another column by configuring [columns->edit->params](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column#edit) and specifying [editType](https://ej2.syncfusion.com/angular/documentation/api/treegrid/columnModel#edittype). This is useful for real-time calculations and value propagation.
 
 Example:
 

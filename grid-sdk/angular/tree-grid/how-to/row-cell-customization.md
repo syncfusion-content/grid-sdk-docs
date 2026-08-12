@@ -10,9 +10,9 @@ domainurl: https://help.syncfusion.com/grid-sdk
 
 # Row Cell Customization in Angular TreeGrid
 
-Rows and cells in the TreeGrid can be customized using the [`queryCellInfo`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#querycellinfo) and [`rowDataBound`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#rowdatabound) events.
+Rows and cells in the TreeGrid can be customized using the [`queryCellInfo`](https://ej2.syncfusion.com/angular/documentation/api/treegrid#querycellinfo) and [`rowDataBound`](https://ej2.syncfusion.com/angular/documentation/api/treegrid#rowdatabound) events.
 
-In the demonstration below, command buttons are customized and shown only for parent rows, as configured in the [`queryCellInfo`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#querycellinfo) and [`rowDataBound`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#rowdatabound) events.
+In the demonstration below, command buttons are customized and shown only for parent rows, as configured in the [`queryCellInfo`](https://ej2.syncfusion.com/angular/documentation/api/treegrid#querycellinfo) and [`rowDataBound`](https://ej2.syncfusion.com/angular/documentation/api/treegrid#rowdatabound) events.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

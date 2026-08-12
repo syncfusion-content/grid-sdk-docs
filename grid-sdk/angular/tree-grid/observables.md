@@ -967,7 +967,7 @@ export class TaskService extends Subject<DataStateChangeEventArgs> {
 
 ## Perform CRUD operations
 
-The [`dataSourceChanged`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#datasourcechanged) event is triggered to update TreeGrid data during CRUD operations. The DataSourceChangedEventArgs object provides properties such as action (e.g., add, edit, delete), data (the modified record), and childData (for nested records). Perform the save operation based on these arguments, update the dataSource manually, and call the [`endEdit`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#endedit) method to complete the operation.
+The [`dataSourceChanged`](https://ej2.syncfusion.com/angular/documentation/api/treegrid#datasourcechanged) event is triggered to update TreeGrid data during CRUD operations. The DataSourceChangedEventArgs object provides properties such as action (e.g., add, edit, delete), data (the modified record), and childData (for nested records). Perform the save operation based on these arguments, update the dataSource manually, and call the [`endEdit`](https://ej2.syncfusion.com/angular/documentation/api/treegrid#endedit) method to complete the operation.
 
 ```
 import { Component, OnInit, ViewChild } from '@angular/core';
