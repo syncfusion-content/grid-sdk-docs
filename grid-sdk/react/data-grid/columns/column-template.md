@@ -55,7 +55,7 @@ function App() {
   let grid;
   const hyperLinkTemplate = ((props) => {
     return (
-      <div><a href='#' onClick={(e) => onClick(e, props.FirstName)}>{props.FirstName}</a></div>
+      <div ><a href='#' aria-label="Open details" onClick={(e) => onClick(e, props.FirstName)}>{props.FirstName}</a></div>
     )
   })
   const onClick = ((event, firstName) => {
@@ -88,7 +88,7 @@ function App() {
   let grid: Grid | null;
   const hyperLinkTemplate = ((props: any) => {
     return (
-      <div><a href='#' onClick={(e) => onClick(e, props.FirstName)}>{props.FirstName}</a></div>
+      <div><a href='#' aria-label="Open details" onClick={(e) => onClick(e, props.FirstName)}>{props.FirstName}</a></div>
     )
   })
   const onClick = ((event: any, firstName: any) => {

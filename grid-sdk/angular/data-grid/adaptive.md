@@ -87,7 +87,7 @@ import { ChangeEventArgs } from '@syncfusion/ej2-dropdowns';
         </div>
         </div>
         <br />
-        <div class="datalink">Source: <a href="https://en.wikipedia.org/wiki/List_of_Android_smartphones"target="_blank">Wikipedia: List of Android smartphones</a></div>
+        <div class="datalink">Source: <a href="https://en.wikipedia.org/wiki/List_of_Android_smartphones"target="_blank" aria-label="Android smartphones on Wikipedia">Wikipedia: List of Android smartphones</a></div>
     </div>`
 })
 

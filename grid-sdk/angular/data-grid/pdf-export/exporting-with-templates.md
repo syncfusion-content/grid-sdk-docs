@@ -56,7 +56,7 @@ interface ColumnDataType {
                         <e-column headerText="Email ID" width='180'>
                             <ng-template #template let-data>
                                 <div class="url">
-                                    <a href="mailto:{{ data.EmailID }}">{{ data.EmailID }}</a>
+                                    <a href="mailto:{{ data.EmailID }}" aria-label="Send email to {{ data.EmailID }}">{{ data.EmailID }}</a>
                                 </div>
                             </ng-template>
                         </e-column>
@@ -196,7 +196,7 @@ interface DataType {
                         <tr>
                             <td>
                                 <span class="link">
-                                Contact:<a href="mailto:{{ data.Contact }}">{{ data.Contact }}</a>
+                                Contact:<a href="mailto:{{ data.Contact }}" aria-label="Send email to {{ data.Contact }}">{{ data.Contact }}</a>
                                 </span>
                             </td>
                         </tr>

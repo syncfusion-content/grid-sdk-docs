@@ -250,11 +250,11 @@ Add further custom shortcuts and actions as required to enhance the capabilities
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid-sdk/angular/data-grid/edit-cs51/src/app.component.ts %}
+{% include code-snippet/grid-sdk/angular/grid/edit-cs51/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid-sdk/angular/data-grid/edit-cs51/src/main.ts %}
+{% include code-snippet/grid-sdk/angular/grid/edit-cs51/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   

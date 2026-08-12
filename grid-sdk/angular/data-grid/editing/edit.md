@@ -166,7 +166,7 @@ standalone: true,
                     editType= 'numericedit' width=120  [validationRules]='freightRules' format= 'C2'></e-column>
                     <e-column field='ShipCountry' headerText='Ship Country' editType= 'dropdownedit' width=150>
                         <ng-template #template let-data>
-                            <a href="#">{{data.ShipCountry}}</a>
+                            <a href="#" aria-label="View orders for {{data.ShipCountry}}">{{data.ShipCountry}}</a>
                         </ng-template>
                     </e-column>
                 </e-columns>
