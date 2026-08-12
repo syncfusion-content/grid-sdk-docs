@@ -164,7 +164,7 @@ When localizing TreeGrid, it's important to include dependent components like Da
 
 
 
-    Below is an example JSON snippet consolidating the localization keys for dependent components used in TreeGrid using  [load](https://ej2.syncfusion.com/documentation/api/base/l10n#load) function of the [L10n](https://ej2.syncfusion.com/documentation/api/base/l10n/) class and update the `locale` property of treegrid with the culture name used in the `load` function:
+    Below is an example JSON snippet consolidating the localization keys for dependent components used in TreeGrid using  [load](https://ej2.syncfusion.com/documentation/api/base/l10n#load) function of the [L10n](https://ej2.syncfusion.com/documentation/api/base/l10n) class and update the `locale` property of treegrid with the culture name used in the `load` function:
 
     ```json
     L10n.load({

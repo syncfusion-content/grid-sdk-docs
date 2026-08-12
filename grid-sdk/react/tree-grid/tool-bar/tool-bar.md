@@ -10,7 +10,7 @@ domainurl: https://help.syncfusion.com/grid-sdk
 
 # Toolbar in React TreeGrid
 
-The TreeGrid provides toolbar support to handle TreeGrid actions. The [toolbar](https://ej2.syncfusion.com/react/documentation/api/TreeGrid#toolbar) property accepts a collection of built-in toolbar items, [ItemModel](https://ej2.syncfusion.com/react/documentation/api/toolbar/itemModel/) objects for custom items, or an HTML element ID for a toolbar template.
+The TreeGrid provides toolbar support to handle TreeGrid actions. The [toolbar](https://ej2.syncfusion.com/react/documentation/api/TreeGrid#toolbar) property accepts a collection of built-in toolbar items, [ItemModel](https://ej2.syncfusion.com/react/documentation/api/toolbar/itemModel) objects for custom items, or an HTML element ID for a toolbar template.
 
 To use the toolbar, inject the **Toolbar** module into the TreeGrid.
 

@@ -14,7 +14,7 @@ Sorting arranges data in **Ascending** or **Descending** order. Click a column h
 
 For multi-column sorting, press and hold CTRL and then click additional column headers. To clear sorting for a specific column in a multi-sort state, press and hold SHIFT and click that column header.
 
-Enable sorting in the TreeGrid by setting [allowSorting](https://ej2.syncfusion.com/react/documentation/api/treegrid#allowsorting) to true. Sorting options are configured through [sortSettings](https://ej2.syncfusion.com/react/documentation/api/treegrid/sortSettings/).
+Enable sorting in the TreeGrid by setting [allowSorting](https://ej2.syncfusion.com/react/documentation/api/treegrid#allowsorting) to true. Sorting options are configured through [sortSettings](https://ej2.syncfusion.com/react/documentation/api/treegrid/sortSettings).
 
 To use sorting, inject the **Sort** module in the TreeGrid.
 

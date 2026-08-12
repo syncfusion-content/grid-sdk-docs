@@ -47,7 +47,7 @@ The default items are listed below.
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/treegrid/contextmenu-cs1" %}
 
 ## Custom context menu items
-Custom context menu items can be defined by setting [contextMenuItems](https://ej2.syncfusion.com/react/documentation/api/treegrid#contextmenuitems) as a collection of [contextMenuItemModel](https://ej2.syncfusion.com/react/documentation/api/grid/contextMenuItemModel/). Handle item actions in the [contextMenuClick](https://ej2.syncfusion.com/react/documentation/api/treegrid#contextmenuclick) event.
+Custom context menu items can be defined by setting [contextMenuItems](https://ej2.syncfusion.com/react/documentation/api/treegrid#contextmenuitems) as a collection of [contextMenuItemModel](https://ej2.syncfusion.com/react/documentation/api/grid/contextMenuItemModel). Handle item actions in the [contextMenuClick](https://ej2.syncfusion.com/react/documentation/api/treegrid#contextmenuclick) event.
 
 In the following sample, a context menu item is added for parent rows to expand or collapse child rows.
 

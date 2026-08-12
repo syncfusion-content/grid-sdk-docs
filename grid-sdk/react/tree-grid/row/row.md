@@ -17,7 +17,7 @@ The following video provides a quick start for row features:
 
 ## Customize rows
 
-Customize the appearance of a row using the [rowDataBound](https://ej2.syncfusion.com/react/documentation/api/treegrid#rowdatabound) event, which triggers for every row. In the event handler, [RowDataBoundEventArgs](https://ej2.syncfusion.com/react/documentation/api/grid/rowDataBoundEventArgs/) provides details of the row.
+Customize the appearance of a row using the [rowDataBound](https://ej2.syncfusion.com/react/documentation/api/treegrid#rowdatabound) event, which triggers for every row. In the event handler, [RowDataBoundEventArgs](https://ej2.syncfusion.com/react/documentation/api/grid/rowDataBoundEventArgs) provides details of the row.
 
 {% tabs %}
 {% highlight js tabtitle="app.jsx" %}

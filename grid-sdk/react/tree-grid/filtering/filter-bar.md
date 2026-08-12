@@ -61,7 +61,7 @@ The following example demonstrates the way to use filter template for a column w
 
 ### Change default filter bar operator
 
-Change the default filter operator by extending [filterModule.filterOperators](https://ej2.syncfusion.com/react/documentation/api/treegrid/filterSettings#operators) in the [dataBound](https://ej2.syncfusion.com/react/documentation/api/treegrid/#databound) event.
+Change the default filter operator by extending [filterModule.filterOperators](https://ej2.syncfusion.com/react/documentation/api/treegrid/filterSettings#operators) in the [dataBound](https://ej2.syncfusion.com/react/documentation/api/treegrid#databound) event.
 
 In the following sample, the default operator for string columns is changed from `startsWith` to `contains`.
 

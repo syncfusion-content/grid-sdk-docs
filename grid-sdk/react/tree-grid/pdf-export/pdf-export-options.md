@@ -14,7 +14,7 @@ domainurl: https://help.syncfusion.com/grid-sdk
 
 Exporting only the selected records from the Syncfusion React TreeGrid enables generating a PDF that includes only relevant data. This feature supports focused and targeted exports.
 
-Export selected records by setting the [exportProperties.dataSource](https://ej2.syncfusion.com/react/documentation/api/grid/pdfExportProperties/) property in the [toolbarClick](https://ej2.syncfusion.com/react/documentation/api/grid#toolbarclick) event.
+Export selected records by setting the [exportProperties.dataSource](https://ej2.syncfusion.com/react/documentation/api/grid/pdfExportProperties) property in the [toolbarClick](https://ej2.syncfusion.com/react/documentation/api/grid#toolbarclick) event.
 
 To export the selected records from the TreeGrid to a PDF document, follow these steps:
 
@@ -168,7 +168,6 @@ By default, TreeGrid uses the **Helvetica** font in the exported document. Chang
 * TimesRoman
 * Courier
 * Symbol
-* ZapfDingbats
 
 The code example for changing the default font:
 

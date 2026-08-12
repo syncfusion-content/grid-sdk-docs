@@ -10,7 +10,7 @@ domainurl: https://help.syncfusion.com/grid-sdk
 
 # Complex Data Binding in React TreeGrid
 
-Complex data binding can be configured by specifying a nested field path using the dot (.) operator in the [column.field](https://ej2.syncfusion.com/react/documentation/api/treegrid/column/#field). 
+Complex data binding can be configured by specifying a nested field path using the dot (.) operator in the [column.field](https://ej2.syncfusion.com/react/documentation/api/treegrid/column#field). 
 
 {% tabs %}
 {% highlight js tabtitle="app.jsx" %}

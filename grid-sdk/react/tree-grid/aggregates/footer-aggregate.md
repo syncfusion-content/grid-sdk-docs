@@ -23,7 +23,7 @@ Footer aggregate values are calculated across all rows and displayed in footer c
 {% endtabs %}
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/treegrid/aggregate-cs3" %}
 
-> Access aggregate values inside the template using their corresponding [type](https://ej2.syncfusion.com/react/documentation/api/treegrid/aggregateColumnModel/#type) name.
+> Access aggregate values inside the template using their corresponding [type](https://ej2.syncfusion.com/react/documentation/api/treegrid/aggregateColumnModel#type) name.
 
 ## How to format aggregate value
 

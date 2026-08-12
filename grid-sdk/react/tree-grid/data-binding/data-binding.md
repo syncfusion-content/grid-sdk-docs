@@ -10,7 +10,7 @@ domainurl: https://help.syncfusion.com/grid-sdk
 
 # Data Binding in React TreeGrid
 
-The TreeGrid uses the **DataManager**, which supports both RESTful JSON data service binding and local JavaScript object array binding. The [dataSource](https://ej2.syncfusion.com/react/documentation/api/treegrid#datasource/) property can be assigned an instance of [DataManager](https://ej2.syncfusion.com/documentation/data/data-binding/) or a JavaScript object array.
+The TreeGrid uses the **DataManager**, which supports both RESTful JSON data service binding and local JavaScript object array binding. The [dataSource](https://ej2.syncfusion.com/react/documentation/api/treegrid#datasource) property can be assigned an instance of [DataManager](https://ej2.syncfusion.com/documentation/data/data-binding) or a JavaScript object array.
 
 It supports two kinds of data binding methods:
 * Local data

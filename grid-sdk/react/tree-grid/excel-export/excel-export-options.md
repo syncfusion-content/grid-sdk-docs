@@ -18,7 +18,7 @@ Excel export supports customizing how TreeGrid content maps to the Excel documen
 
 Export only the selected records to generate an Excel or CSV document that includes the intended subset of data. This enables focused and targeted exports.
 
-Export selected records by setting the [exportProperties.dataSource](https://ej2.syncfusion.com/react/documentation/api/grid/excelExportProperties/) property in the [toolbarClick](https://ej2.syncfusion.com/react/documentation/api/grid#toolbarclick) event.
+Export selected records by setting the [exportProperties.dataSource](https://ej2.syncfusion.com/react/documentation/api/grid/excelExportProperties) property in the [toolbarClick](https://ej2.syncfusion.com/react/documentation/api/grid#toolbarclick) event.
 
 To export the selected records from the TreeGrid to an Excel or CSV file, follow these steps:
 
@@ -66,7 +66,7 @@ Export hidden columns by setting `includeHiddenColumn` to **true**.
 
 ### Show or hide columns on exported excel
 
-Show a hidden column or hide a visible column during export using the [toolbarClick](https://ej2.syncfusion.com/react/documentation/api/treegrid#toolbarclick) and [excelExportComplete](https://ej2.syncfusion.com/react/documentation/api/grid/excelExportProperties/) events.
+Show a hidden column or hide a visible column during export using the [toolbarClick](https://ej2.syncfusion.com/react/documentation/api/treegrid#toolbarclick) and [excelExportComplete](https://ej2.syncfusion.com/react/documentation/api/grid/excelExportProperties) events.
 
 In the [toolbarClick](https://ej2.syncfusion.com/react/documentation/api/treegrid#toolbarclick) event, when **args.item.text** is **Excel Export**, control visibility by setting the [column.visible](https://ej2.syncfusion.com/react/documentation/api/treegrid/column#visible) property to **true** or **false**.
 
