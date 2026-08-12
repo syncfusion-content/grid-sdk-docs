@@ -3,21 +3,20 @@ layout: post
 title: JavaScript TreeGrid Change Header Text Dynamically | Syncfusion
 description: Learn how to dynamically change header text in JavaScript TreeGrid to customize column headers and improve user experience.
 platform: grid-sdk
-control: Change header text dynamically 
-publishingplatform: grid-sdk
+control: Change header text dynamically
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
 # Change Header Text Dynamically in JavaScript TreeGrid
 
-You can change the column [`headerText`](../../api/treegrid/column/#headertext) dynamically through an external button.
+You can change the column [`headerText`](../../api/treegrid/column#headertext) dynamically through an external button.
 
 Follow the given steps to change the header text dynamically:
 
 **Step 1**:
 
-Get the column object corresponding to the field name by using the [`getColumnByField`](../../api/treegrid/#getcolumnbyfield) method. Then, change the header text value.
+Get the column object corresponding to the field name by using the [`getColumnByField`](../../api/treegrid#getcolumnbyfield) method. Then, change the header text value.
 
 ```ts
 let column = treegrid.getColumnByField("taskName"); // Get column object.
@@ -27,7 +26,7 @@ column.headerText = 'Changed Text';
 
 **Step 2**:
 
-To reflect the changes in the treegrid header, invoke the [`refreshColumns`](../../api/treegrid/#refreshcolumns) method.
+To reflect the changes in the treegrid header, invoke the [`refreshColumns`](../../api/treegrid#refreshcolumns) method.
 
 ```ts
 

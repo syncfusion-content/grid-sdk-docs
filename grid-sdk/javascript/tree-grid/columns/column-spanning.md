@@ -3,8 +3,7 @@ layout: post
 title: JavaScript TreeGrid Column Spanning | Syncfusion
 description: Learn how to configure column spanning in JavaScript TreeGrid, including merging cells and customizing column layouts.
 platform: grid-sdk
-control: Column spanning 
-publishingplatform: grid-sdk
+control: Column spanning
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---

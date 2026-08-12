@@ -3,15 +3,14 @@ layout: post
 title: JavaScript TreeGrid Context Menu | Syncfusion
 description: Learn how to customize the context menu in JavaScript TreeGrid, including custom items, dynamic enable/disable options, and API integration.
 platform: grid-sdk
-control: Context menu 
-publishingplatform: grid-sdk
+control: Context menu
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
 # Context Menu in JavaScript TreeGrid
 
-The TreeGrid has options to show the context menu when right clicked on it. To enable this feature, you need to define either default or custom item in the [`contextMenuItems`](../api/treegrid/#contextmenuitems).
+The TreeGrid has options to show the context menu when right clicked on it. To enable this feature, you need to define either default or custom item in the [`contextMenuItems`](../api/treegrid#contextmenuitems).
 
 To use the context menu, inject the `ContextMenu` module in the treegrid.
 
@@ -67,9 +66,9 @@ Items| Description
 
 ## Custom context menu items
 
-The custom context menu items can be added by defining the [`contextMenuItems`](../api/treegrid/#contextmenuitems) as a collection of
+The custom context menu items can be added by defining the [`contextMenuItems`](../api/treegrid#contextmenuitems) as a collection of
 [`contextMenuItemModel`](../api/grid/contextMenuItemModel/).
-Actions for this customized items can be defined in the [`contextMenuClick`](../api/treegrid/#contextmenuclick) event.
+Actions for this customized items can be defined in the [`contextMenuClick`](../api/treegrid#contextmenuclick) event.
 
 In the below sample, we have shown context menu item for parent rows to expand or collapse child rows.
 
@@ -102,7 +101,7 @@ In the below sample, we have shown context menu item for parent rows to expand o
 
 ## Enable and disable context menu items dynamically
 
-You can enable and disable the context menu items using the [`enableItems`](https://ej2.syncfusion.com/documentation/api/menu/#enableitems) method in [`contextMenuOpen`](https://ej2.syncfusion.com/documentation/api/treegrid/#contextmenuopen) event.
+You can enable and disable the context menu items using the [`enableItems`](https://ej2.syncfusion.com/documentation/api/menu#enableitems) method in [`contextMenuOpen`](https://ej2.syncfusion.com/documentation/api/treegrid#contextmenuopen) event.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -131,5 +130,5 @@ You can enable and disable the context menu items using the [`enableItems`](http
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/treegrid/contextmenu-cs3" %}
 {% endif %}
 
-> You can hide or show an item in context menu for specific area inside of treegrid by defining the [`target`](../api/grid/contextMenuItemModel/#target) property.
+> You can hide or show an item in context menu for specific area inside of treegrid by defining the [`target`](../api/grid/contextMenuItemModel#target) property.
 > You can refer to our [`JavaScript Tree Grid`](https://www.syncfusion.com/javascript-ui-controls/js-tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our JavaScript Tree Grid example [`JavaScript Tree Grid example`](https://ej2.syncfusion.com/demos/#/material/tree-grid/treegrid-overview.html) to knows how to present and manipulate data.

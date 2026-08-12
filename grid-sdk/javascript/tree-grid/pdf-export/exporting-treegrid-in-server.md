@@ -4,7 +4,6 @@ title: JavaScript TreeGrid PDF Server-Side Export | Syncfusion
 description: Learn how to export the JavaScript TreeGrid to PDF on the server side using server export libraries and configuration with Essential JS 2.
 platform: grid-sdk
 control: Exporting Tree Grid in Server
-publishingplatform: grid-sdk
 documentation: ug
 ---
 
@@ -24,7 +23,7 @@ The Server side export functionality is shipped in the Syncfusion.EJ2.TreeGridEx
 
 The following code snippet shows server configuration using ASP.NET MVC Controller Action.
 
-To Export the tree grid in server side, You need to call the [`serverPdfExport`](https://ej2.syncfusion.com/documentation/api/treegrid/#serverpdfexport) method for passing the tree grid properties to server exporting action.
+To Export the tree grid in server side, You need to call the [`serverPdfExport`](https://ej2.syncfusion.com/documentation/api/treegrid#serverpdfexport) method for passing the tree grid properties to server exporting action.
 
 ```ts
 public IActionResult ServerSideExporting()

@@ -3,8 +3,7 @@ layout: post
 title: JavaScript TreeGrid Accessibility | Syncfusion
 description: Learn how JavaScript TreeGrid supports accessibility with WAI-ARIA roles, keyboard navigation, and ADA, Section 508, and WCAG compliance.
 platform: grid-sdk
-control: Accessibility 
-publishingplatform: grid-sdk
+control: Accessibility
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---

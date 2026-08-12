@@ -3,15 +3,14 @@ layout: post
 title: JavaScript TreeGrid Row Template | Syncfusion
 description: Learn how to use row templates in JavaScript TreeGrid to customize row layouts, display custom content, and enhance data presentation.
 platform: grid-sdk
-control: Row template 
-publishingplatform: grid-sdk
+control: Row template
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
 # Row Template in JavaScript TreeGrid
 
-The [`rowTemplate`](../../api/treegrid/#rowtemplate) has an option to customise the look and behavior of the treegrid rows. The [`rowTemplate`](../../api/treegrid/#rowtemplate) property accepts either the template string or HTML element ID.
+The [`rowTemplate`](../../api/treegrid#rowtemplate) has an option to customise the look and behavior of the treegrid rows. The [`rowTemplate`](../../api/treegrid#rowtemplate) property accepts either the template string or HTML element ID.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -40,11 +39,11 @@ The [`rowTemplate`](../../api/treegrid/#rowtemplate) has an option to customise 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/treegrid/row-template-cs1" %}
 {% endif %}
 
-The [`rowTemplate`](../../api/treegrid/#rowtemplate) property accepts only the TR element.
+The [`rowTemplate`](../../api/treegrid#rowtemplate) property accepts only the TR element.
 
 ## Row template with formatting
 
-If the [`rowTemplate`](../../api/treegrid/#rowtemplate) is used, the value cannot be  formatted  inside the template using the [`columns.format`](../../api/treegrid/column/#format) property. In that case, a function should be defined globally to format the value and invoke it inside the template.
+If the [`rowTemplate`](../../api/treegrid#rowtemplate) is used, the value cannot be  formatted  inside the template using the [`columns.format`](../../api/treegrid/column#format) property. In that case, a function should be defined globally to format the value and invoke it inside the template.
 
 {% if page.publishingplatform == "typescript" %}
 

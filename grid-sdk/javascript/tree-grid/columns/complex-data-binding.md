@@ -3,15 +3,14 @@ layout: post
 title: JavaScript TreeGrid Complex Data Binding | Syncfusion
 description: Learn how to use complex data binding in JavaScript TreeGrid with nested field mapping, dot notation, and hierarchical data display.
 platform: grid-sdk
-control: Complex data binding 
-publishingplatform: grid-sdk
+control: Complex data binding
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
 # Complex Data Binding in JavaScript TreeGrid
 
-You can achieve complex data binding in the treegrid by using the dot(.) operator in the [`column.field`](../../api/treegrid/column/#field).
+You can achieve complex data binding in the treegrid by using the dot(.) operator in the [`column.field`](../../api/treegrid/column#field).
 
 {% if page.publishingplatform == "typescript" %}
 
