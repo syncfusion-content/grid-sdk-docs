@@ -12,7 +12,7 @@ domainurl: https://help.syncfusion.com/grid-sdk
 
 ## Conditional cell formatting
 
-TreeGrid cells in the exported Excel can be customized or formatted using [`excelQueryCellInfo`](https://ej2.syncfusion.com/vue/documentation/api/treegrid/#excelQueryCellInfo) event. In this event, we can format the treegrid cells of exported PDF document based on the column cell value.
+TreeGrid cells in the exported Excel can be customized or formatted using [`excelQueryCellInfo`](https://ej2.syncfusion.com/vue/documentation/api/treegrid#excelQueryCellInfo) event. In this event, we can format the treegrid cells of exported PDF document based on the column cell value.
 
 In the below sample, we have set the background color for `Duration` column in the exported excel by `args.cell` and `backgroundColor` property.
 
@@ -44,4 +44,4 @@ To apply theme in exported Excel, define the `theme` in `exportProperties`.
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/treegrid/excel/default-cs3" %}
 
->By default, material theme is applied to exported excel document.
+> By default, material theme is applied to exported excel document.

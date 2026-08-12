@@ -14,8 +14,8 @@ The row represents record details fetched from data source.
 
 ## Customize rows
 
-You can customize the appearance of a row by using the [`rowDataBound`](https://ej2.syncfusion.com/vue/documentation/api/treegrid/#rowdatabound) event.
-The [`rowDataBound`](https://ej2.syncfusion.com/vue/documentation/api/treegrid/#rowdatabound) event triggers for every row. In the event handler, you can get the
+You can customize the appearance of a row by using the [`rowDataBound`](https://ej2.syncfusion.com/vue/documentation/api/treegrid#rowdatabound) event.
+The [`rowDataBound`](https://ej2.syncfusion.com/vue/documentation/api/treegrid#rowdatabound) event triggers for every row. In the event handler, you can get the
 `RowDataBoundEventArgs` that contains details of the row.
 
 {% tabs %}

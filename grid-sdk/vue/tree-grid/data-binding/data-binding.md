@@ -10,7 +10,7 @@ domainurl: https://help.syncfusion.com/grid-sdk
 
 # Data Binding in Vue TreeGrid
 
-The TreeGrid uses `DataManager`, which supports both RESTful JSON data services binding and local JavaScript object array binding. The [`dataSource`](https://ej2.syncfusion.com/vue/documentation/api/treegrid/#dataSource) property can be assigned either with the instance of `DataManager` or JavaScript object array collection.
+The TreeGrid uses `DataManager`, which supports both RESTful JSON data services binding and local JavaScript object array binding. The [`dataSource`](https://ej2.syncfusion.com/vue/documentation/api/treegrid#dataSource) property can be assigned either with the instance of `DataManager` or JavaScript object array collection.
 It supports two kinds of data binding method:
 * Local data
 * Remote data
@@ -37,7 +37,7 @@ You can use TreeGrid [`dataSource`](https://ej2.syncfusion.com/vue/documentation
 
 ## Handling expandStateMapping
 
-To denotes the expand status of parent row, define the [`expandStateMapping`](https://ej2.syncfusion.com/vue/documentation/api/treegrid/#expandstatemapping) property of tree grid. The `expandStateMapping` property maps the field name in data source, that denotes whether parent record is in expanded or collapsed state and this is useful to renders parent row in expanded or collapsed state based on this mapping property value in data source.
+To denotes the expand status of parent row, define the [`expandStateMapping`](https://ej2.syncfusion.com/vue/documentation/api/treegrid#expandstatemapping) property of tree grid. The `expandStateMapping` property maps the field name in data source, that denotes whether parent record is in expanded or collapsed state and this is useful to renders parent row in expanded or collapsed state based on this mapping property value in data source.
 
 ```
 <template>
@@ -258,11 +258,11 @@ export default defineComponent({
 
 ### Handling child data
 
-Using the custom binding feature you can bind the child data for a parent record as per your custom logic. When a parent record is expanded, [`dataStateChange`](../../api/treegrid/#datastatechange) event is triggered in which you can assign your custom data to the `childData` property of the [`dataStateChange`](../../api/treegrid/#datastatechange) event arguments.
+Using the custom binding feature you can bind the child data for a parent record as per your custom logic. When a parent record is expanded, [`dataStateChange`](../../api/treegrid#datastatechange) event is triggered in which you can assign your custom data to the `childData` property of the [`dataStateChange`](../../api/treegrid#datastatechange) event arguments.
 After assigning the child data, `childDataBind` method should be called from the
-[`dataStateChange`](../../api/treegrid/#datastatechange) event arguments to indicate that the data is bound.
+[`dataStateChange`](../../api/treegrid#datastatechange) event arguments to indicate that the data is bound.
 
-> In this context, initially we have assigned only the parent records to the treegrid dataSource and fetched the required child records in the [`dataStateChange`](../../api/treegrid/#datastatechange) event.
+> In this context, initially we have assigned only the parent records to the treegrid dataSource and fetched the required child records in the [`dataStateChange`](../../api/treegrid#datastatechange) event.
 
 <template>
   <div class="App">
@@ -491,7 +491,7 @@ export default defineComponent({
 
 ### Performing CRUD actions
 
-The [`dataSourceChanged`](../../api/treegrid/#datasourcechanged) event will be triggered for updating the treegrid data. You can perform the save operation based on the event arguments and call the endEdit method to indicate the completion of save operation.
+The [`dataSourceChanged`](../../api/treegrid#datasourcechanged) event will be triggered for updating the treegrid data. You can perform the save operation based on the event arguments and call the endEdit method to indicate the completion of save operation.
 
 <template>
   <div class="App">
@@ -660,7 +660,7 @@ The footer aggregate values  should be calculated and sent along with the **data
 
 ### Provide excel filter data source
 
-The [`dataStateChange`](../../api/treegrid/#datastatechange) event will be triggered with appropriate arguments when the excel filter requests the filter choice data source. You need to resolve the excel filter data source using the **dataSource** resolver function from the state argument as follows.
+The [`dataStateChange`](../../api/treegrid#datastatechange) event will be triggered with appropriate arguments when the excel filter requests the filter choice data source. You need to resolve the excel filter data source using the **dataSource** resolver function from the state argument as follows.
 
 <template>
   <div class="App">

@@ -10,9 +10,9 @@ domainurl: https://help.syncfusion.com/grid-sdk
 
 # Searching in Vue TreeGrid
 
-You can search records in a TreeGrid, by using the [`search`](https://ej2.syncfusion.com/vue/documentation/api/treegrid/#search) method with search key as a parameter. This also provides an option to integrate search text box in treegrid's toolbar by adding `search` item to the [`toolbar`](https://ej2.syncfusion.com/vue/documentation/api/treegrid/#toolbar).
+You can search records in a TreeGrid, by using the [`search`](https://ej2.syncfusion.com/vue/documentation/api/treegrid#search) method with search key as a parameter. This also provides an option to integrate search text box in treegrid's toolbar by adding `search` item to the [`toolbar`](https://ej2.syncfusion.com/vue/documentation/api/treegrid#toolbar).
 
-To search records, inject the [`Filter`](https://ej2.syncfusion.com/vue/documentation/api/treegrid/#fitermodule) module in the treegrid.
+To search records, inject the [`Filter`](https://ej2.syncfusion.com/vue/documentation/api/treegrid#fitermodule) module in the treegrid.
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
@@ -27,7 +27,7 @@ To search records, inject the [`Filter`](https://ej2.syncfusion.com/vue/document
 
 ## Initial search
 
-To apply search at initial rendering, set the fields, operator, key, and ignoreCase in the [`searchSettings`](https://ej2.syncfusion.com/vue/documentation/api/treegrid/#searchsettings).
+To apply search at initial rendering, set the fields, operator, key, and ignoreCase in the [`searchSettings`](https://ej2.syncfusion.com/vue/documentation/api/treegrid#searchsettings).
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
@@ -40,11 +40,11 @@ To apply search at initial rendering, set the fields, operator, key, and ignoreC
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/treegrid/searching/default-cs2" %}
 
-> By default, treegrid searches all the bound column values. To customize this behavior define the [`searchSettings.fields`](https://ej2.syncfusion.com/vue/documentation/api/treegrid/searchSettingsModel/#fields) property.
+> By default, treegrid searches all the bound column values. To customize this behavior define the [`searchSettings.fields`](https://ej2.syncfusion.com/vue/documentation/api/treegrid/searchSettingsModel#fields) property.
 
 ## Search operators
 
-The search operator can be defined in the [`searchSettings.operator`](https://ej2.syncfusion.com/vue/documentation/api/treegrid/searchSettingsModel/#operator) property to configure specific searching.
+The search operator can be defined in the [`searchSettings.operator`](https://ej2.syncfusion.com/vue/documentation/api/treegrid/searchSettingsModel#operator) property to configure specific searching.
 
 The following operators are supported in searching:
 
@@ -56,11 +56,11 @@ contains |Checks whether a value contains the specified value.
 equal |Checks whether a value is equal to the specified value.
 notEqual |Checks for values not equal to the specified value.
 
-> By default, the [`searchSettings.operator`](https://ej2.syncfusion.com/vue/documentation/api/treegrid/searchSettingsModel/#operator) value is `contains`.
+> By default, the [`searchSettings.operator`](https://ej2.syncfusion.com/vue/documentation/api/treegrid/searchSettingsModel#operator) value is `contains`.
 
 ## Search by external button
 
-To search treegrid records from an external button, invoke the [`search`](https://ej2.syncfusion.com/vue/documentation/api/treegrid/#search) method.
+To search treegrid records from an external button, invoke the [`search`](https://ej2.syncfusion.com/vue/documentation/api/treegrid#search) method.
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
@@ -75,7 +75,7 @@ To search treegrid records from an external button, invoke the [`search`](https:
 
 ## Search specific columns
 
-By default, treegrid searches all visible columns. You can search specific columns by defining the specific column's field names in the [`searchSettings.fields`](https://ej2.syncfusion.com/vue/documentation/api/treegrid/searchSettingsModel/#fields) property.
+By default, treegrid searches all visible columns. You can search specific columns by defining the specific column's field names in the [`searchSettings.fields`](https://ej2.syncfusion.com/vue/documentation/api/treegrid/searchSettingsModel#fields) property.
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}

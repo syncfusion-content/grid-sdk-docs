@@ -10,7 +10,7 @@ domainurl: https://help.syncfusion.com/grid-sdk
 
 # Customize the Edit Dialog in Vue TreeGrid
 
-You can customize the appearance of the edit dialog in the [`actionComplete`](https://ej2.syncfusion.com/vue/documentation/api/treegrid/#actioncomplete) event based on **requestType** as **beginEdit** or **add**.
+You can customize the appearance of the edit dialog in the [`actionComplete`](https://ej2.syncfusion.com/vue/documentation/api/treegrid#actioncomplete) event based on **requestType** as **beginEdit** or **add**.
 
 In the below example, we have changed the dialog's header text for editing and adding records.
 

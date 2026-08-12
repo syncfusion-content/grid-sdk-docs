@@ -10,9 +10,9 @@ domainurl: https://help.syncfusion.com/grid-sdk
 
 # Clip Mode in Vue TreeGrid
 
-The clip mode provides options to display its overflow cell content and it can be defined by the [`columns.clipMode`](https://ej2.syncfusion.com/vue/documentation/api/treegrid/column/#clipmode) property.
+The clip mode provides options to display its overflow cell content and it can be defined by the [`columns.clipMode`](https://ej2.syncfusion.com/vue/documentation/api/treegrid/column#clipmode) property.
 
-There are three types of [`clipMode`](https://ej2.syncfusion.com/vue/documentation/api/treegrid/column/#clipmode). They are:
+There are three types of [`clipMode`](https://ej2.syncfusion.com/vue/documentation/api/treegrid/column#clipmode). They are:
 
 * **`Clip`**: Truncates the cell content when it overflows its area.
 * **`Ellipsis`**: Displays ellipsis when the cell content overflows its area.
@@ -29,4 +29,4 @@ There are three types of [`clipMode`](https://ej2.syncfusion.com/vue/documentati
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/treegrid/cell/default-cs5" %}
 
->By default, [`columns.clipMode`](https://ej2.syncfusion.com/vue/documentation/api/treegrid/column/#clipmode) value is `Ellipsis`.
+> By default, [`columns.clipMode`](https://ej2.syncfusion.com/vue/documentation/api/treegrid/column#clipmode) value is `Ellipsis`.

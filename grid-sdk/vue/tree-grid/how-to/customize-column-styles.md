@@ -10,7 +10,7 @@ domainurl: https://help.syncfusion.com/grid-sdk
 
 # Customize Column Styles in Vue TreeGrid
 
-You can customise the appearance of header and content of the particular column using the [`customAttributes`](https://ej2.syncfusion.com/vue/documentation/api/treegrid/column/#customattributes) property.
+You can customise the appearance of header and content of the particular column using the [`customAttributes`](https://ej2.syncfusion.com/vue/documentation/api/treegrid/column#customattributes) property.
 
 To customize the Tree Grid column, follow the given steps:
 
@@ -38,7 +38,7 @@ Create a css class with custom style to override the default style for rowcell a
 
 **Step 2**:
 
-Add the custom css class to particular column by using [`customAttributes`](https://ej2.syncfusion.com/vue/documentation/api/treegrid/column/#customattributes) property.
+Add the custom css class to particular column by using [`customAttributes`](https://ej2.syncfusion.com/vue/documentation/api/treegrid/column#customattributes) property.
 
 ```ts
 

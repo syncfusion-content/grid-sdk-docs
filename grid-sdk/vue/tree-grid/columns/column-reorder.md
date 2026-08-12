@@ -10,9 +10,9 @@ domainurl: https://help.syncfusion.com/grid-sdk
 
 # Column Reorder in Vue TreeGrid
 
-Reordering can be done by drag and drop of a particular column header from one index to another index within the treegrid. To enable reordering, set the [`allowReordering`](https://ej2.syncfusion.com/vue/documentation/api/treegrid/#allowreordering) to true.
+Reordering can be done by drag and drop of a particular column header from one index to another index within the treegrid. To enable reordering, set the [`allowReordering`](https://ej2.syncfusion.com/vue/documentation/api/treegrid#allowreordering) to true.
 
-To use reordering, inject the [`Reorder`](https://ej2.syncfusion.com/vue/documentation/api/treegrid/#reordermodule) module in the treegrid.
+To use reordering, inject the [`Reorder`](https://ej2.syncfusion.com/vue/documentation/api/treegrid#reordermodule) module in the treegrid.
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
@@ -25,7 +25,7 @@ To use reordering, inject the [`Reorder`](https://ej2.syncfusion.com/vue/documen
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/treegrid/columns/default-cs4" %}
 
-> You can disable reordering a particular column by setting the [`columns.allowReordering`](https://ej2.syncfusion.com/vue/documentation/api/treegrid/column/#reordermodule) to false.
+> You can disable reordering a particular column by setting the [`columns.allowReordering`](https://ej2.syncfusion.com/vue/documentation/api/treegrid/column#reordermodule) to false.
 
 ## Reorder multiple columns
 

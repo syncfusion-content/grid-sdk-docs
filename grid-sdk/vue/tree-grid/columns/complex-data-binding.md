@@ -10,7 +10,7 @@ domainurl: https://help.syncfusion.com/grid-sdk
 
 # Complex Data Binding in Vue TreeGrid
 
-You can achieve complex data binding in the treegrid by using the dot(.) operator in the [`column.field`](https://ej2.syncfusion.com/vue/documentation/api/treegrid/column/#field).
+You can achieve complex data binding in the treegrid by using the dot(.) operator in the [`column.field`](https://ej2.syncfusion.com/vue/documentation/api/treegrid/column#field).
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}

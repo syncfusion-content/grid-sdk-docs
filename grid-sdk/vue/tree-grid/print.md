@@ -10,7 +10,7 @@ domainurl: https://help.syncfusion.com/grid-sdk
 
 # Print in Vue TreeGrid
 
-To print the TreeGrid, use the [`print`](https://ej2.syncfusion.com/vue/documentation/api/treegrid/#print) method from treegrid instance. The print option can be displayed on the [`toolbar`](https://ej2.syncfusion.com/vue/documentation/api/treegrid/#toolbar) by adding the `print` toolbar item.
+To print the TreeGrid, use the [`print`](https://ej2.syncfusion.com/vue/documentation/api/treegrid#print) method from treegrid instance. The print option can be displayed on the [`toolbar`](https://ej2.syncfusion.com/vue/documentation/api/treegrid#toolbar) by adding the `print` toolbar item.
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
@@ -34,7 +34,7 @@ Some of the print options cannot be configured through JavaScript code. So, you 
 
 ## Print using an external button
 
-To print the treegrid from an external button, invoke the [`print`](https://ej2.syncfusion.com/vue/documentation/api/treegrid/#print) method.
+To print the treegrid from an external button, invoke the [`print`](https://ej2.syncfusion.com/vue/documentation/api/treegrid#print) method.
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
@@ -49,7 +49,7 @@ To print the treegrid from an external button, invoke the [`print`](https://ej2.
 
 ## Print visible Page
 
-By default, the grid prints all the pages. To print the current page alone, set the [`printMode`](https://ej2.syncfusion.com/vue/documentation/api/grid/#printmode) to `CurrentPage`.
+By default, the grid prints all the pages. To print the current page alone, set the [`printMode`](https://ej2.syncfusion.com/vue/documentation/api/grid#printmode) to `CurrentPage`.
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
@@ -72,7 +72,7 @@ To show large number of columns when printing, adjust the scale option from prin
 
 ## Show or Hide columns while Printing
 
-You can show a hidden column or hide a visible column while printing the treegrid using [`toolbarClick`](https://ej2.syncfusion.com/vue/documentation/api/treegrid/#toolbarclick) and [`printComplete`](https://ej2.syncfusion.com/vue/documentation/api/treegrid/#printcomplete) events.
+You can show a hidden column or hide a visible column while printing the treegrid using [`toolbarClick`](https://ej2.syncfusion.com/vue/documentation/api/treegrid#toolbarclick) and [`printComplete`](https://ej2.syncfusion.com/vue/documentation/api/treegrid#printcomplete) events.
 
 In the `toolbarClick` event, based on `args.item.text` as `Print`. We can show or hide columns by setting `column.visible` property to `true` or `false` respectively.
 

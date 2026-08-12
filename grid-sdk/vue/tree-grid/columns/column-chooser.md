@@ -12,7 +12,7 @@ domainurl: https://help.syncfusion.com/grid-sdk
 
 ## Column Chooser Template in Syncfusion Vue TreeGrid component
 
-The Column Chooser Template feature allows full customization of the column chooser’s header, content, and footer, making it easier to manage column visibility. To enable the column chooser, set [showColumnChooser](https://ej2.syncfusion.com/vue/documentation/api/treegrid/#showcolumnchooser) to **true** and add **ColumnChooser** to the [toolbar](https://ej2.syncfusion.com/vue/documentation/api/treegrid#toolbar) property.
+The Column Chooser Template feature allows full customization of the column chooser’s header, content, and footer, making it easier to manage column visibility. To enable the column chooser, set [showColumnChooser](https://ej2.syncfusion.com/vue/documentation/api/treegrid#showcolumnchooser) to **true** and add **ColumnChooser** to the [toolbar](https://ej2.syncfusion.com/vue/documentation/api/treegrid#toolbar) property.
 
 To implement a custom column chooser template in the TreeGrid, use the following properties:
 

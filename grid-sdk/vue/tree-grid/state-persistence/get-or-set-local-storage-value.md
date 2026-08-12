@@ -10,7 +10,7 @@ domainurl: https://help.syncfusion.com/grid-sdk
 
 # Get or Set Local Storage Values in Vue TreeGrid
 
-If the [`enablePersistence`](https://ej2.syncfusion.com/vue/documentation/api/treegrid/#enablepersistence) property is set to true, the treegrid property value is saved in the `window.localStorage` for reference. You can get/set the localStorage value by using the `getItem`/`setItem` method in the `window.localStorage`.
+If the [`enablePersistence`](https://ej2.syncfusion.com/vue/documentation/api/treegrid#enablepersistence) property is set to true, the treegrid property value is saved in the `window.localStorage` for reference. You can get/set the localStorage value by using the `getItem`/`setItem` method in the `window.localStorage`.
 
 ```ts
 //get the TreeGrid model.

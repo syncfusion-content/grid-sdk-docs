@@ -31,7 +31,7 @@ The excel export provides an option to export hidden columns of treegrid by defi
 
 ### Show or hide columns on exported excel
 
-You can show a hidden column or hide a visible column while printing the treegrid using [`toolbarClick`](https://ej2.syncfusion.com/vue/documentation/api/treegrid#toolbarclick) and [`excelExportComplete`](https://ej2.syncfusion.com/vue/documentation/api/treegrid/#excelExportComplete) events.
+You can show a hidden column or hide a visible column while printing the treegrid using [`toolbarClick`](https://ej2.syncfusion.com/vue/documentation/api/treegrid#toolbarclick) and [`excelExportComplete`](https://ej2.syncfusion.com/vue/documentation/api/treegrid#excelExportComplete) events.
 
 In the `toolbarClick` event, based on `args.item.text` as `Excel Export`. We can show or hide columns by setting `column.visible` property to `true` or `false` respectively.
 
@@ -52,7 +52,7 @@ In the below example, we have `Duration` as a hidden column in the treegrid. Whi
 
 ### File name for exported document
 
-You can assign the file name for the exported document by defining `fileName` property in [`ExcelExportProperties`](https://ej2.syncfusion.com/vue/documentation/api/treegrid/#excelExportProperties).
+You can assign the file name for the exported document by defining `fileName` property in [`ExcelExportProperties`](https://ej2.syncfusion.com/vue/documentation/api/treegrid#excelExportProperties).
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
@@ -67,7 +67,7 @@ You can assign the file name for the exported document by defining `fileName` pr
 
 ### Persist collapsed state
 
-You can persist the collapsed state in the exported document by defining `isCollapsedStatePersist` property as true in `TreeGridExcelExportProperties` parameter of [`excelExport`](https://ej2.syncfusion.com/vue/documentation/api/treegrid/#excelexport) method.
+You can persist the collapsed state in the exported document by defining `isCollapsedStatePersist` property as true in `TreeGridExcelExportProperties` parameter of [`excelExport`](https://ej2.syncfusion.com/vue/documentation/api/treegrid#excelexport) method.
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}

@@ -10,9 +10,9 @@ domainurl: https://help.syncfusion.com/grid-sdk
 
 # Paging in Vue TreeGrid
 
-Paging provides an option to display TreeGrid data in page segments. To enable paging, set the [`allowPaging`](https://ej2.syncfusion.com/vue/documentation/api/treegrid/#allowpaging) to true. When paging is enabled, pager component renders at the bottom of the treegrid. Paging options can be configured through the [`pageSettings`](https://ej2.syncfusion.com/vue/documentation/api/treegrid/#pagesettings).
+Paging provides an option to display TreeGrid data in page segments. To enable paging, set the [`allowPaging`](https://ej2.syncfusion.com/vue/documentation/api/treegrid#allowpaging) to true. When paging is enabled, pager component renders at the bottom of the treegrid. Paging options can be configured through the [`pageSettings`](https://ej2.syncfusion.com/vue/documentation/api/treegrid#pagesettings).
 
-To use paging, inject the [`Page`](https://ej2.syncfusion.com/vue/documentation/api/treegrid/#pagermodule) module in the grid.
+To use paging, inject the [`Page`](https://ej2.syncfusion.com/vue/documentation/api/treegrid#pagermodule) module in the grid.
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
@@ -29,12 +29,12 @@ To use paging, inject the [`Page`](https://ej2.syncfusion.com/vue/documentation/
 
 ## Page Size Mode
 
-Two behaviors are available in TreeGrid paging to display certain number of records in a current page. Following are the two types of [`pageSizeMode`](https://ej2.syncfusion.com/vue/documentation/api/treegrid/pageSettingsModel/#pagesizemode).
+Two behaviors are available in TreeGrid paging to display certain number of records in a current page. Following are the two types of [`pageSizeMode`](https://ej2.syncfusion.com/vue/documentation/api/treegrid/pageSettingsModel#pagesizemode).
 
-* **All** : This is the default mode. The number of records in a page is based on [`pageSize`](https://ej2.syncfusion.com/vue/documentation/api/treegrid/pageSettingsModel/#pagesize) property.
-* **Root** : The number of root nodes or the 0th level records to be displayed per page is based on [`pageSize`](https://ej2.syncfusion.com/vue/documentation/api/treegrid/pageSettingsModel/#pagesize) property.
+* **All** : This is the default mode. The number of records in a page is based on [`pageSize`](https://ej2.syncfusion.com/vue/documentation/api/treegrid/pageSettingsModel#pagesize) property.
+* **Root** : The number of root nodes or the 0th level records to be displayed per page is based on [`pageSize`](https://ej2.syncfusion.com/vue/documentation/api/treegrid/pageSettingsModel#pagesize) property.
 
-With [`pageSizeMode`](https://ej2.syncfusion.com/vue/documentation/api/treegrid/pageSettingsModel/#pagesizemode) property as `Root`, only the root level or the 0th level records are considered in records count.
+With [`pageSizeMode`](https://ej2.syncfusion.com/vue/documentation/api/treegrid/pageSettingsModel#pagesizemode) property as `Root`, only the root level or the 0th level records are considered in records count.
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
@@ -51,7 +51,7 @@ With [`pageSizeMode`](https://ej2.syncfusion.com/vue/documentation/api/treegrid/
 
 The pager template in the TreeGrid component allows you to customize the appearance and behavior of the pager element, which is used for navigation through different pages of tree grid data. This feature is particularly useful when you want to use custom elements inside the pager instead of the default elements.
 
-To use the pager template, you need to specify the [pagerTemplate](https://ej2.syncfusion.com/vue/documentation/api/treegrid/pageSettings/#template) property in your Tree Grid configuration. The `pagerTemplate` property allows you to define a custom template for the pager. Within the template, you can access the [currentPage](https://ej2.syncfusion.com/vue/documentation/api/treegrid/pageSettings/#currentpage), [pageSize](https://ej2.syncfusion.com/vue/documentation/api/treegrid/pageSettings/#pagesize), [pageCount](https://ej2.syncfusion.com/vue/documentation/api/treegrid/pageSettings/#pagecount), **totalPage** and **totalRecordCount** values.
+To use the pager template, you need to specify the [pagerTemplate](https://ej2.syncfusion.com/vue/documentation/api/treegrid/pageSettings#template) property in your Tree Grid configuration. The `pagerTemplate` property allows you to define a custom template for the pager. Within the template, you can access the [currentPage](https://ej2.syncfusion.com/vue/documentation/api/treegrid/pageSettings#currentpage), [pageSize](https://ej2.syncfusion.com/vue/documentation/api/treegrid/pageSettings#pagesize), [pageCount](https://ej2.syncfusion.com/vue/documentation/api/treegrid/pageSettings#pagecount), **totalPage** and **totalRecordCount** values.
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
@@ -66,7 +66,7 @@ To use the pager template, you need to specify the [pagerTemplate](https://ej2.s
 
 ## Pager with Page Size Dropdown
 
-The pager Dropdown allows you to change the number of records in the TreeGrid dynamically. It can be enabled by defining the [`pageSettings.pageSizes`](https://ej2.syncfusion.com/vue/documentation/api/treegrid/pageSettingsModel/#pagesizes) property as true.
+The pager Dropdown allows you to change the number of records in the TreeGrid dynamically. It can be enabled by defining the [`pageSettings.pageSizes`](https://ej2.syncfusion.com/vue/documentation/api/treegrid/pageSettingsModel#pagesizes) property as true.
 
 ```
 pageSettings: {pageSize: 7, pageSizes: true},

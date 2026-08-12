@@ -10,7 +10,7 @@ domainurl: https://help.syncfusion.com/grid-sdk
 
 # Column Resizing in Vue TreeGrid
 
-Column width can be resized by clicking and dragging the right edge of the column header. While dragging, the width of the respective column will be resized immediately. Each column can be auto resized by double-clicking the right edge of the column header to fit the width of that column based on the widest cell content. To enable column resize, set the [`allowResizing`](https://ej2.syncfusion.com/vue/documentation/api/treegrid/#allowresizing) property to true.
+Column width can be resized by clicking and dragging the right edge of the column header. While dragging, the width of the respective column will be resized immediately. Each column can be auto resized by double-clicking the right edge of the column header to fit the width of that column based on the widest cell content. To enable column resize, set the [`allowResizing`](https://ej2.syncfusion.com/vue/documentation/api/treegrid#allowresizing) property to true.
 
 To use the column resize, inject `Resize` module in the treegrid.
 
@@ -25,12 +25,12 @@ To use the column resize, inject `Resize` module in the treegrid.
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/treegrid/columns/default-cs6" %}
 
-> * You can disable resizing for a particular column by setting the [`columns.allowResizing`](https://ej2.syncfusion.com/vue/documentation/api/treegrid/column/#allowresizing) to false.
+> * You can disable resizing for a particular column by setting the [`columns.allowResizing`](https://ej2.syncfusion.com/vue/documentation/api/treegrid/column#allowresizing) to false.
 > * In RTL mode, you can click and drag the left edge of the header cell to resize the column.
 
 ## Min and max width
 
-Column resize can be restricted between minimum and maximum width by defining the [`columns->minWidth`](https://ej2.syncfusion.com/vue/documentation/api/treegrid/column/#minwidth) and [`columns->maxWidth`](https://ej2.syncfusion.com/vue/documentation/api/treegrid/column/#maxwidth).
+Column resize can be restricted between minimum and maximum width by defining the [`columns->minWidth`](https://ej2.syncfusion.com/vue/documentation/api/treegrid/column#minwidth) and [`columns->maxWidth`](https://ej2.syncfusion.com/vue/documentation/api/treegrid/column#maxwidth).
 
 In the following sample, minimum and maximum width are defined for `Duration`, and `Task Name` columns.
 

@@ -11,8 +11,8 @@ domainurl: https://help.syncfusion.com/grid-sdk
 # Responsive Columns in Vue TreeGrid
 
 You can toggle column visibility based on media queries which are defined
-at the [`hideAtMedia`](https://ej2.syncfusion.com/vue/documentation/api/treegrid/column/#hideatmedia).
-The [`hideAtMedia`](https://ej2.syncfusion.com/vue/documentation/api/treegrid/column/#hideatmedia) accepts valid
+at the [`hideAtMedia`](https://ej2.syncfusion.com/vue/documentation/api/treegrid/column#hideatmedia).
+The [`hideAtMedia`](https://ej2.syncfusion.com/vue/documentation/api/treegrid/column#hideatmedia) accepts valid
 [Media Queries]( http://cssmediaqueries.com/what-are-css-media-queries.html ).
 
 {% tabs %}

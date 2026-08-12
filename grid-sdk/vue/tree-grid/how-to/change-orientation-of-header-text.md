@@ -10,7 +10,7 @@ domainurl: https://help.syncfusion.com/grid-sdk
 
 # Change Header Text Orientation in Vue TreeGrid
 
-You can change the orientation of the header text by using the [`customAttributes`](https://ej2.syncfusion.com/vue/documentation/api/treegrid/column/#customattributes) property.
+You can change the orientation of the header text by using the [`customAttributes`](https://ej2.syncfusion.com/vue/documentation/api/treegrid/column#customattributes) property.
 
 Ensure the following steps:
 
@@ -27,7 +27,7 @@ Create a css class with orientation style for treegrid header cell.
 
 **Step 2**:
 
-Add the custom css class to particular column by using [`customAttributes`](https://ej2.syncfusion.com/vue/documentation/api/treegrid/column/#customattributes) property.
+Add the custom css class to particular column by using [`customAttributes`](https://ej2.syncfusion.com/vue/documentation/api/treegrid/column#customattributes) property.
 
 ```ts
     <e-column field='endDate' headerText='End Date' width='90' format="yMd" :customAttributes= "{class: 'orientationcss'}" textAlign='Center'></e-column>
@@ -36,7 +36,7 @@ Add the custom css class to particular column by using [`customAttributes`](http
 
 **Step 3**:
 
-Resize the header cell height in [`create`](https://ej2.syncfusion.com/vue/documentation/api/treegrid/#create) event by using the following code.
+Resize the header cell height in [`create`](https://ej2.syncfusion.com/vue/documentation/api/treegrid#create) event by using the following code.
 
 ```ts
   setHeaderHeight: function(args) {

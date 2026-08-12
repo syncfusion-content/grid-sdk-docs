@@ -10,7 +10,7 @@ domainurl: https://help.syncfusion.com/grid-sdk
 
 # Change Header Text Dynamically in Vue TreeGrid
 
-You can change the column [`headerText`](https://ej2.syncfusion.com/vue/documentation/api/treegrid/column/#headertext) dynamically through an external button.
+You can change the column [`headerText`](https://ej2.syncfusion.com/vue/documentation/api/treegrid/column#headertext) dynamically through an external button.
 
 Follow the given steps to change the header text dynamically:
 

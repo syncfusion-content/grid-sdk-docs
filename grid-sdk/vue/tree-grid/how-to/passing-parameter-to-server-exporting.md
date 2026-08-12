@@ -10,9 +10,9 @@ domainurl: https://help.syncfusion.com/grid-sdk
 
 # Pass Parameters to Server Exporting in Vue TreeGrid
 
-You can pass the additional parameter in the [`query`](https://ej2.syncfusion.com/vue/documentation/api/treegrid/#query) property by invoking [`addParams`](https://ej2.syncfusion.com/documentation/api/data/query/#addparams) method. In the [`toolbarClick`](https://ej2.syncfusion.com/vue/documentation/api/treegrid/#toolbarclick) event, you can define params as key and value pair so it will receive at the server side when exporting.
+You can pass the additional parameter in the [`query`](https://ej2.syncfusion.com/vue/documentation/api/treegrid#query) property by invoking [`addParams`](https://ej2.syncfusion.com/documentation/api/data/query#addparams) method. In the [`toolbarClick`](https://ej2.syncfusion.com/vue/documentation/api/treegrid#toolbarclick) event, you can define params as key and value pair so it will receive at the server side when exporting.
 
-In the below example, we have passed *recordcount* as *12* using [`addParams`](https://ej2.syncfusion.com/documentation/api/data/query/#addparams) method.
+In the below example, we have passed *recordcount* as *12* using [`addParams`](https://ej2.syncfusion.com/documentation/api/data/query#addparams) method.
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}

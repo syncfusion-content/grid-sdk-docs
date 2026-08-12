@@ -11,7 +11,7 @@ domainurl: https://help.syncfusion.com/grid-sdk
 # Cell Editing in Vue TreeGrid
 
 In Cell edit mode, when you double click on a cell, it is changed to edit state. You can change the cell value and save to the data source.
-To enable Cell edit, set the [`editSettings.mode`](https://ej2.syncfusion.com/vue/documentation/api/treegrid/editSettingsModel/#mode) as `Cell`.
+To enable Cell edit, set the [`editSettings.mode`](https://ej2.syncfusion.com/vue/documentation/api/treegrid/editSettingsModel#mode) as `Cell`.
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}

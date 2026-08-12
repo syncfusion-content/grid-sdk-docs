@@ -10,7 +10,7 @@ domainurl: https://help.syncfusion.com/grid-sdk
 
 # Row Template in Vue TreeGrid
 
-The [`rowTemplate`](https://ej2.syncfusion.com/vue/documentation/api/treegrid/#rowtemplate) has an option to customise the look and behavior of the treegrid rows. The [`rowTemplate`](https://ej2.syncfusion.com/vue/documentation/api/treegrid/#rowtemplate) property accepts either the template string or HTML element ID.
+The [`rowTemplate`](https://ej2.syncfusion.com/vue/documentation/api/treegrid#rowtemplate) has an option to customise the look and behavior of the treegrid rows. The [`rowTemplate`](https://ej2.syncfusion.com/vue/documentation/api/treegrid#rowtemplate) property accepts either the template string or HTML element ID.
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
@@ -23,11 +23,11 @@ The [`rowTemplate`](https://ej2.syncfusion.com/vue/documentation/api/treegrid/#r
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/treegrid/row/rowtemplate-cs1" %}
 
-The [`rowTemplate`](https://ej2.syncfusion.com/vue/documentation/api/treegrid/#rowtemplate) property accepts only the TR element.
+The [`rowTemplate`](https://ej2.syncfusion.com/vue/documentation/api/treegrid#rowtemplate) property accepts only the TR element.
 
 ## Row template with formatting
 
-If the [`rowTemplate`](https://ej2.syncfusion.com/vue/documentation/api/treegrid/#rowtemplate) is used, the value cannot be  formatted  inside the template using the [`columns.format`](https://ej2.syncfusion.com/vue/documentation/api/treegrid/column/#format) property. In that case, a function should be defined globally to format the value and invoke it inside the template.
+If the [`rowTemplate`](https://ej2.syncfusion.com/vue/documentation/api/treegrid#rowtemplate) is used, the value cannot be  formatted  inside the template using the [`columns.format`](https://ej2.syncfusion.com/vue/documentation/api/treegrid/column#format) property. In that case, a function should be defined globally to format the value and invoke it inside the template.
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}

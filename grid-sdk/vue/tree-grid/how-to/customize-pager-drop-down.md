@@ -10,7 +10,7 @@ domainurl: https://help.syncfusion.com/grid-sdk
 
 # Customize Pager Dropdown in Vue TreeGrid
 
-To customize default values of pager dropdown, you need to define [`pageSizes`](https://ej2.syncfusion.com/vue/documentation/api/treegrid/pageSettings/#pagesizes) as array of strings.
+To customize default values of pager dropdown, you need to define [`pageSizes`](https://ej2.syncfusion.com/vue/documentation/api/treegrid/pageSettings#pagesizes) as array of strings.
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
