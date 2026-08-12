@@ -524,7 +524,7 @@ namespace SignalR.Server.Models
 
 The following screenshot represents the addition, editing, and deletion operations performed, reflecting changes across all client sides.
 
-![signalR](../../grid/images/signalR.gif)
+![signalR](../images/signalR.gif)
 
 > A complete SignalR sample is available on [GitHub](https://github.com/SyncfusionExamples/Binding-data-with-SignalR-in-ej2-vue-grid).
 
@@ -1270,7 +1270,7 @@ namespace FetchProject.Server.Models
         
 The following screenshot represents loading data when the button is clicked and CRUD operations are performed:
 
-![Fetch](../../grid/images/fetch.gif)
+![Fetch](../images/fetch.gif)
 
 > A complete sample for binding data and performing CRUD actions through Fetch requests is available on [GitHub](https://github.com/SyncfusionExamples/Binding-data-and-perform-action-in-ej2-vue-grid-using-Fetch-request).
 
@@ -2059,7 +2059,7 @@ app.Run();
 
 The following screenshot represents loading data when the button is clicked and CRUD operations are performed:
 
-![Ajax](../../grid/images/Ajaxreq.gif)
+![Ajax](../images/Ajaxreq.gif)
 
 A complete sample for binding data and performing CRUD actions using AJAX requests is available on [GitHub](https://github.com/SyncfusionExamples/Binding-data-and-perform-action-in-ej2-vue-grid-using-Ajax-request).
 
