@@ -3,8 +3,7 @@ layout: post
 title: Javascript Grid Aggregates | Syncfusion
 description: Learn how to use aggregates in Javascript Data Grid to display column summaries, footer and group aggregates, and create custom aggregate calculations.
 platform: grid-sdk
-control: Aggregates 
-publishingplatform: grid-sdk
+control: Aggregates
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---

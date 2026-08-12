@@ -3,8 +3,7 @@ layout: post
 title: Javascript Grid Column Menu | Syncfusion
 description: Learn how to configure and customize the column menu in Javascript Data Grid, including sorting, filtering, menu items, and column-specific actions.
 platform: grid-sdk
-control: Column menu 
-publishingplatform: grid-sdk
+control: Column menu
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---

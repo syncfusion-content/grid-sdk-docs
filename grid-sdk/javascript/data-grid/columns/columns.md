@@ -3,8 +3,7 @@ layout: post
 title: Javascript Grid Columns | Syncfusion
 description: Learn how to define and configure columns in Javascript Data Grid, including column types, widths, templates, and behaviors for effective data presentation.
 platform: grid-sdk
-control: Columns 
-publishingplatform: grid-sdk
+control: Columns
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---

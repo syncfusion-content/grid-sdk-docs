@@ -3,8 +3,7 @@ layout: post
 title: Javascript Grid Remote Data Binding | Syncfusion
 description: Learn how to bind remote data sources in Javascript Data Grid using adaptors, configure server-side operations, and manage data efficiently.
 platform: grid-sdk
-control: Remote data 
-publishingplatform: grid-sdk
+control: Remote data
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---

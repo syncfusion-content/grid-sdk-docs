@@ -3,8 +3,7 @@ layout: post
 title: Javascript Grid Data Binding | Syncfusion
 description: Learn how to bind local and remote data sources in Javascript Data Grid, enable dynamic updates, and manage data flow efficiently.
 platform: grid-sdk
-control: Data binding 
-publishingplatform: grid-sdk
+control: Data binding
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---

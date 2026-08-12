@@ -3,8 +3,7 @@ layout: post
 title:  Javascript Grid Column Chooser | Syncfusion
 description: Learn how to show, hide, and manage column visibility in Javascript Data Grid using the Column Chooser for a customizable view.
 platform: grid-sdk
-control: Column chooser 
-publishingplatform: grid-sdk
+control: Column chooser
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---

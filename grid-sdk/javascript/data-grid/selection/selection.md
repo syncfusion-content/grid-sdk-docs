@@ -13,9 +13,9 @@ domainurl: https://help.syncfusion.com/grid-sdk
 
 Selection in the Grid control allows you to interactively select specific cells, rows, or columns within the grid. This selection can be done through mouse clicks or arrow keys (up, down, left, and right) or touch. This feature is useful when you want to highlight, manipulate, or perform actions on specific cells, rows, or columns within the Grid.
 
-To disable selection in the Grid, set the [allowSelection](../../api/grid/#allowselection) to false.
+To disable selection in the Grid, set the [allowSelection](../../api/grid#allowselection) to false.
 
-The grid supports two types of selection that can be set by using the [selectionSettings->type](../../api/grid/selectionSettings/#type).They are:
+The grid supports two types of selection that can be set by using the [selectionSettings->type](../../api/grid/selectionSettings#type).They are:
 
 * **Single** - The **Single** value is set by default. Allows you to select only a single row or cell or column.
 * **Multiple** - Allows you to select multiple rows or cells or columns.
@@ -57,7 +57,7 @@ To select range of rows or cells or columns, press and hold the SHIFT key and cl
 
 The selection mode feature allows you to choose between different modes for selecting rows or cells or both within the Grid based on your specific requirements. This feature is particularly useful when you want to highlight and manipulate specific rows or cells in the Grid.
 
-To enable selection mode, you can set the [selectionSettings->mode](../../api/grid/selectionSettings/#mode) property. The Grid control supports three types of selection modes:
+To enable selection mode, you can set the [selectionSettings->mode](../../api/grid/selectionSettings#mode) property. The Grid control supports three types of selection modes:
 
 * **Row** - The row value is set by default. Allows you to select rows only.
 
@@ -114,7 +114,7 @@ In addition to selecting multiple rows, you can also perform multi-row or cell s
 
 ![Multi Row or Cells](../images/mselection.jpg)
 
-> For multi-selection, it requires the selection [type](../../api/grid/selectionSettings/#type) to be **Multiple**.
+> For multi-selection, it requires the selection [type](../../api/grid/selectionSettings#type) to be **Multiple**.
 
 The following screenshot represents a Grid touch selection in the device.
 
@@ -124,7 +124,7 @@ The following screenshot represents a Grid touch selection in the device.
 
 The toggle selection feature in the Grid control allows you to easily select and unselect specific rows, cells, or columns. With toggle selection enabled, you can easily switch the selection state of an item by clicking on it. This means that if you click on a selected row, cell, or column, it will become unselected, and vice versa.
 
-To enable the toggle selection feature, you need to set the [selectionSettings->enableToggle](../../api/grid/selectionSettings/#enabletoggle) property to **true**.
+To enable the toggle selection feature, you need to set the [selectionSettings->enableToggle](../../api/grid/selectionSettings#enabletoggle) property to **true**.
 
 The following example demonstrates how to enable the toggle selection for both cells and rows in a Grid using the `selectionSettings.enableToggle` property.
 
@@ -162,9 +162,9 @@ The following example demonstrates how to enable the toggle selection for both c
 
 The clear selection programmatically feature is particularly useful when you need to remove the selected rows or cells or columns from the Grid control.
 
-To clear the selection in the control programmatically, you can use the [clearSelection](../../api/grid/#clearselection)  method. 
+To clear the selection in the control programmatically, you can use the [clearSelection](../../api/grid#clearselection)  method. 
 
-In the following example, it demonstrates how to clear all selection by calling the [clearSelection](../../api/grid/#clearselection) method in the button click event.
+In the following example, it demonstrates how to clear all selection by calling the [clearSelection](../../api/grid#clearselection) method in the button click event.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -193,14 +193,14 @@ In the following example, it demonstrates how to clear all selection by calling 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grid-cs180" %}
 {% endif %}
 
-> In **Both** mode, if you call [clearCellSelection](../../api/grid/#clearcellselection) first, it will clear cell selections, and then if you call [clearRowSelection](../../api/grid/#clearrowselection), it will clear row selections. The order of method calls determines which type of selection is cleared first.
+> In **Both** mode, if you call [clearCellSelection](../../api/grid#clearcellselection) first, it will clear cell selections, and then if you call [clearRowSelection](../../api/grid#clearrowselection), it will clear row selections. The order of method calls determines which type of selection is cleared first.
 > To remove a specific selection in a row, cell, or column, utilize the following methods: `clearRowSelection` for clearing row selections, `clearCellSelection` for clearing cell selections, and `clearColumnSelection` for clearing column selections.
 
 ## Persist selection 
 
 Persist selection feature in the Grid allows you to retain the selected items even after data manipulation or refreshing the grid. This feature is useful when you want to keep track of the selected items across different grid operations.
 
-To enable persist selection, set the [selectionSettings->persistSelection](../../api/grid/selectionSettings/#persistselection) property to **true**.
+To enable persist selection, set the [selectionSettings->persistSelection](../../api/grid/selectionSettings#persistselection) property to **true**.
 
 > * While using persist selection feature, at least one column in your grid should be enabled as a primary key. This ensures that the grid can identify and persist the selected items correctly.
 >* The `persistSelection` feature is not supported for cell selections in the JavaScript Grid control.

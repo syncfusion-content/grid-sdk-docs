@@ -3,8 +3,7 @@ layout: post
 title: Javascript Grid Editing | Syncfusion
 description: Learn how to configure editing in Javascript Data Grid, customize edit modes, apply validation rules, use templates, and manage CRUD workflows efficiently.
 platform: grid-sdk
-control: Edit 
-publishingplatform: grid-sdk
+control: Edit
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---

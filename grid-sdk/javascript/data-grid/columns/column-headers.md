@@ -3,8 +3,7 @@ layout: post
 title: Javascript Grid Column Headers | Syncfusion
 description: Learn how to customize column headers in Javascript Data Grid with header text, templates, tooltips, and multi-line layouts.
 platform: grid-sdk
-control: Headers 
-publishingplatform: grid-sdk
+control: Headers
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---

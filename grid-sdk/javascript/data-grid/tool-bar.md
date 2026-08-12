@@ -11,13 +11,13 @@ domainurl: https://help.syncfusion.com/grid-sdk
 
 # Toolbar in Javascript Data Grid
 
-The Grid provides ToolBar support to handle grid actions. The [`toolbar`](../api/grid/#toolbar) property accepts either the collection of built-in toolbar items and [`ItemModel`](../api/toolbar/itemModel/) objects for custom toolbar items or HTML element ID for toolbar template.
+The Grid provides ToolBar support to handle grid actions. The [`toolbar`](../api/grid#toolbar) property accepts either the collection of built-in toolbar items and [`ItemModel`](../api/toolbar/itemModel/) objects for custom toolbar items or HTML element ID for toolbar template.
 
 To use ToolBar, inject `Toolbar` module in the grid.
 
 ## Built-in toolbar items
 
-Built-in toolbar items execute standard actions of the grid, and it can be added by defining the [`toolbar`](../api/grid/#toolbar) as a collection of built-in items. It renders the button with icon and text.
+Built-in toolbar items execute standard actions of the grid, and it can be added by defining the [`toolbar`](../api/grid#toolbar) as a collection of built-in items. It renders the button with icon and text.
 
 The following table shows built-in toolbar items and its actions.
 
@@ -61,12 +61,12 @@ The following table shows built-in toolbar items and its actions.
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grid-cs169" %}
 {% endif %}
 
-> * The [`toolbar`](../api/grid/#toolbar) has options to define both built-in and custom toolbar items.
+> * The [`toolbar`](../api/grid#toolbar) has options to define both built-in and custom toolbar items.
 
 ## Custom toolbar items
 
-Custom toolbar items can be added by defining the [`toolbar`](../api/grid/#toolbar) as a collection of [`ItemModels`](../api/toolbar/itemModel/).
-Actions for this customized toolbar items are defined in the [`toolbarClick`](../api/grid/#toolbarclick) event.
+Custom toolbar items can be added by defining the [`toolbar`](../api/grid#toolbar) as a collection of [`ItemModels`](../api/toolbar/itemModel/).
+Actions for this customized toolbar items are defined in the [`toolbarClick`](../api/grid#toolbarclick) event.
 
 By default, Custom toolbar items are in position `Left`. You can change the position by using the [`align`](../api/toolbar/itemModel/) property. In the below sample, we have applied position `Right` for the `Collapse All` toolbar item.
 
@@ -97,7 +97,7 @@ By default, Custom toolbar items are in position `Left`. You can change the posi
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/custom-toolbar-cs1" %}
 {% endif %}
 
-> * The [`toolbar`](../api/grid/#toolbar) has options to define both built-in and custom toolbar items.
+> * The [`toolbar`](../api/grid#toolbar) has options to define both built-in and custom toolbar items.
 > * If a toolbar item does not match the built-in items, it will be treated as a custom toolbar item.
 
 ## Built-in and custom items in toolbar
@@ -136,7 +136,7 @@ In the below example, `Add`, `Edit`, `Delete`, `Update`, `Cancel` are built-in t
 ## Custom toolbar
 
 Custom toolbar is used to customize the whole toolbar. It can be added by defining `toolbarTemplate` as an HTML element ID.
-Actions for this toolbar template items are defined in the [`toolbarClick`](../api/grid/#toolbarclick) event.
+Actions for this toolbar template items are defined in the [`toolbarClick`](../api/grid#toolbarclick) event.
 
 {% if page.publishingplatform == "typescript" %}
 

@@ -3,8 +3,7 @@ layout: post
 title: Javascript Grid Filtering | Syncfusion
 description: Learn how to use filtering in Javascript Data Grid with filter types, server filtering, expression operators, and UI options for refined data results.
 platform: grid-sdk
-control: Filtering 
-publishingplatform: grid-sdk
+control: Filtering
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---

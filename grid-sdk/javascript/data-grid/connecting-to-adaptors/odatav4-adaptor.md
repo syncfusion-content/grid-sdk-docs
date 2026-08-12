@@ -4,8 +4,7 @@ title: Javascript Grid Bind Data with ODataV4Adaptor | Syncfusion
 description: Learn how to use ODataV4Adaptor in Javascript Data Grid to bind OData services, perform CRUD operations, and manage remote data efficiently.
 platform: grid-sdk
 control: grid
-keywords: Adaptors, ODataV4Adaptor, odatav4 adaptor, remotedata 
-publishingplatform: grid-sdk
+keywords: Adaptors, ODataV4Adaptor, odatav4 adaptor, remotedata
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---

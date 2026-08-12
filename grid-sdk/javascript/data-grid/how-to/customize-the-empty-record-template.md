@@ -3,8 +3,7 @@ layout: post
 title: Javascript Grid Empty Record Template | Syncfusion
 description: Learn how to customize the empty record template in Javascript Data Grid to display custom messages, images, or actions when no data is available.
 platform: grid-sdk
-control: Customize the Empty Record Template 
-publishingplatform: grid-sdk
+control: Customize the Empty Record Template
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---

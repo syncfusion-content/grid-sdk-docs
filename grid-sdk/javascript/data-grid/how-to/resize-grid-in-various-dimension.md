@@ -3,8 +3,7 @@ layout: post
 title: Javascript Grid Adding Header and Footer | Syncfusion
 description: Learn how to add custom headers and footers in Javascript Data Grid PDF export, customize content, apply templates, and format exported documents.
 platform: grid-sdk
-control: Resize grid in various dimension 
-publishingplatform: grid-sdk
+control: Resize grid in various dimension
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---

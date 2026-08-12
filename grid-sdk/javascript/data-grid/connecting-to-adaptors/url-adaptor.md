@@ -4,8 +4,7 @@ title: Javascript Grid Bind Data with UrlAdaptor | Syncfusion
 description: Learn how to bind remote data from custom REST APIs in Javascript Data Grid and perform data operations and CRUD actions.
 platform: grid-sdk
 control: grid
-keywords: Adaptors, UrlAdaptor, url method adaptor, remotedata 
-publishingplatform: grid-sdk
+keywords: Adaptors, UrlAdaptor, url method adaptor, remotedata
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---

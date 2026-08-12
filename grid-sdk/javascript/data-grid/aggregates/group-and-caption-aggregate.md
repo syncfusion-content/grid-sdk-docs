@@ -3,8 +3,7 @@ layout: post
 title: Javascript Grid Group and Caption Aggregates | Syncfusion
 description: Learn how to compute and display group and caption aggregates in Javascript Data Grid, including group summaries, captions, and aggregate formatting.
 platform: grid-sdk
-control: Group and caption aggregate 
-publishingplatform: grid-sdk
+control: Group and caption aggregate
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---

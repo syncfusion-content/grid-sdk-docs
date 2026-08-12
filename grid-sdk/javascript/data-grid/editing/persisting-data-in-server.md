@@ -3,8 +3,7 @@ layout: post
 title: Javascript Grid Server Data Persistence | Syncfusion
 description: Learn how to persist Javascript Data Grid changes to a server, send CRUD requests, handle server responses, and synchronize data using adaptors.
 platform: grid-sdk
-control: Persisting data in server 
-publishingplatform: grid-sdk
+control: Persisting data in server
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---

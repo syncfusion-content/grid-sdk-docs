@@ -3,8 +3,7 @@ layout: post
 title: Javascript Grid Column Rendering | Syncfusion
 description: Learn how to customize column rendering in Javascript Data Grid using cell templates, header templates, and flexible layouts for rich data presentation.
 platform: grid-sdk
-control: Column rendering 
-publishingplatform: grid-sdk
+control: Column rendering
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---

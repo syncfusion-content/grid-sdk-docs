@@ -3,8 +3,7 @@ layout: post
 title: Javascript Grid Reactive Aggregate | Syncfusion
 description: Learn how to use reactive aggregates in Javascript Data Grid to automatically update summary values when data is edited, added, or removed.
 platform: grid-sdk
-control: Reactive aggregate 
-publishingplatform: grid-sdk
+control: Reactive aggregate
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---

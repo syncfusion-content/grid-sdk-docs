@@ -4,8 +4,7 @@ title: Javascript Grid Bind Data with RemoteSaveAdaptor | Syncfusion
 description: Learn how to use hybrid data binding in Javascript Data Grid to perform data operations locally while handling CRUD actions on the server.
 platform: grid-sdk
 control: grid
-keywords: Adaptors, RemoteSaveAdaptor, remotesave adaptor, remotedata 
-publishingplatform: grid-sdk
+keywords: Adaptors, RemoteSaveAdaptor, remotesave adaptor, remotedata
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---

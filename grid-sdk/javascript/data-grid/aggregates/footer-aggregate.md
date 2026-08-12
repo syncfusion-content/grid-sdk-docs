@@ -3,8 +3,7 @@ layout: post
 title: Javascript Grid Footer Aggregate | Syncfusion
 description: Learn how to display and format footer aggregate values in Javascript Data Grid, apply summary calculations, and combine multiple aggregates.
 platform: grid-sdk
-control: Footer aggregate 
-publishingplatform: grid-sdk
+control: Footer aggregate
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---

@@ -3,8 +3,7 @@ layout: post
 title: Javascript Grid Local Data Binding | Syncfusion
 description: Learn how to bind local data sources and in-memory datasets in Javascript Data Grid, enable dynamic updates, and efficiently manage displayed data.
 platform: grid-sdk
-control: Local data 
-publishingplatform: grid-sdk
+control: Local data
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---

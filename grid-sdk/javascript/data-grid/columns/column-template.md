@@ -3,8 +3,7 @@ layout: post
 title: Javascript Grid Column Template| Syncfusion
 description: Learn how to create custom column templates in Javascript Data Grid to render rich cell content, editors, formatting, and interactive UI elements.
 platform: grid-sdk
-control: Column template 
-publishingplatform: grid-sdk
+control: Column template
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---

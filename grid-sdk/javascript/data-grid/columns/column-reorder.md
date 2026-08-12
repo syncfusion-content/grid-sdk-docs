@@ -3,8 +3,7 @@ layout: post
 title: Javascript Grid Column Reorder | Syncfusion
 description: Learn how to reorder columns in Javascript Data Grid using drag-and-drop, configure reorder restrictions, handle reorder events, and persist column order.
 platform: grid-sdk
-control: Column reorder 
-publishingplatform: grid-sdk
+control: Column reorder
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---

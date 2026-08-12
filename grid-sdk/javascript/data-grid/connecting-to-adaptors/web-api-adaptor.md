@@ -4,8 +4,7 @@ title: Javascript Grid Bind Data with WebApiAdaptor | Syncfusion
 description: Learn how to use WebApiAdaptor in Javascript Data Grid to connect Web APIs, bind remote data, and perform CRUD operations efficiently.
 platform: grid-sdk
 control: grid
-keywords: Adaptors, WebApiAdaptor, web api adaptor, remotedata 
-publishingplatform: grid-sdk
+keywords: Adaptors, WebApiAdaptor, web api adaptor, remotedata
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---

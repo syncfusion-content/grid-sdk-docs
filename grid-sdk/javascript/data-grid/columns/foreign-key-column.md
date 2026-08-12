@@ -3,8 +3,7 @@ layout: post
 title: Javascript Grid Foreign Key Column | Syncfusion
 description: Learn how to use foreign key columns in Javascript Data Grid to map related data, display associated values, and bind local or remote data sources.
 platform: grid-sdk
-control: Foreign key column 
-publishingplatform: grid-sdk
+control: Foreign key column
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---

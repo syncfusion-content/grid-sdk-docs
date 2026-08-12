@@ -3,8 +3,7 @@ layout: post
 title: Javascript Grid Excel Export | Syncfusion
 description: Learn how to export Javascript Data Grid data to Excel, create downloadable workbooks, and customize export settings for spreadsheets.
 platform: grid-sdk
-control: Excel exporting 
-publishingplatform: grid-sdk
+control: Excel exporting
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---

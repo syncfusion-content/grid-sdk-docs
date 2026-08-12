@@ -4,8 +4,7 @@ title: Javascript Grid Bind Data with WebMethodAdaptor | Syncfusion
 description: Learn how to use WebMethodAdaptor in Javascript Data Grid to bind remote data, execute CRUD operations, and integrate web methods efficiently.
 platform: grid-sdk
 control: grid
-keywords: Adaptors, webmethodadaptor, web method adaptor, remotedata 
-publishingplatform: grid-sdk
+keywords: Adaptors, webmethodadaptor, web method adaptor, remotedata
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---

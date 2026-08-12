@@ -4,8 +4,7 @@ title: Javascript Grid Custom Remote Data Binding| Syncfusion
 description: Learn how to bind remote data with custom rules in Javascript Data Grid, customize data operations, and manage CRUD actions.
 platform: grid-sdk
 control: grid
-keywords: adaptors, custom adaptor, remotedata
-publishingplatform: grid-sdk
+keywords: adaptors, custom adaptor, remotedatak
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
@@ -20,7 +19,7 @@ There are three types of methods in custom adaptors.
 
 ### ProcessQuery
 
-The `ProcessQuery` method handles the execution of a query sent to a [dataSource](../../api/grid/#datasource), such as a database or custom data service. This query is responsible for performing operations like data retrieval, insertion, updating, or deletion. The `ProcessQuery` method accepts two arguments: 
+The `ProcessQuery` method handles the execution of a query sent to a [dataSource](../../api/grid#datasource), such as a database or custom data service. This query is responsible for performing operations like data retrieval, insertion, updating, or deletion. The `ProcessQuery` method accepts two arguments: 
 
 * `DataManager`: Used to modify the URL dynamically.
 
@@ -60,7 +59,7 @@ public override processQuery(dm, query) {
 
 The `beforeSend` method is executed before a request is sent to the server. This function allows modifying parameters, request headers, and data, or performing validation before the request is processed. It accepts three arguments:
 
-* `DataManager`: Provides the [dataSource](../../api/grid/#datasource) and `adaptor` value.
+* `DataManager`: Provides the [dataSource](../../api/grid#datasource) and `adaptor` value.
 
 * `Request`: Used to send custom headers, such as setting the `Authorization` header.
 
@@ -1257,7 +1256,7 @@ grid.appendTo('#Grid');
 {% endif %}
 {% endtabs %}
 
-> Normal/Inline editing is the default edit [mode](../../api/grid/editSettings/#mode) for the Syncfusion JavaScript Grid. To enable CRUD operations, ensure that the [isPrimaryKey](../../api/grid/column/#isprimarykey) property is set to **true** for a specific Grid column, ensuring that its value is unique.
+> Normal/Inline editing is the default edit [mode](../../api/grid/editSettings#mode) for the Syncfusion JavaScript Grid. To enable CRUD operations, ensure that the [isPrimaryKey](../../api/grid/column#isprimarykey) property is set to **true** for a specific Grid column, ensuring that its value is unique.
 
 **Insert Record**
 

@@ -3,8 +3,7 @@ layout: post
 title: Javascript Grid Grouping | Syncfusion
 description: Learn how to use grouping in Javascript Data Grid with configurable settings, aggregates, drop area control, reorderable columns, and expand or collapse options.
 platform: grid-sdk
-control: Grouping 
-publishingplatform: grid-sdk
+control: Grouping
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
