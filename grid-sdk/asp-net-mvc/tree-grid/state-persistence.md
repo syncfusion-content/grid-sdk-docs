@@ -4,7 +4,6 @@ title: ASP.NET MVC TreeGrid State Persistence | Syncfusion
 description: Learn how to use state persistence in the ASP.NET MVC TreeGrid component, including configuration with enablePersistence and localStorage usage.
 platform: grid-sdk
 control: State Persistence
-publishingplatform: grid-sdk
 documentation: ug
 ---
 

@@ -4,7 +4,6 @@ title: ASP.NET MVC TreeGrid Excel-Like Filter | Syncfusion
 description: Learn how to use Excel-like filtering in ASP.NET MVC TreeGrid, including filter menus, search, checkbox filtering, and custom filter options.
 platform: grid-sdk
 control: Excel Like Filter
-publishingplatform: grid-sdk
 documentation: ug
 ---
 

@@ -4,7 +4,6 @@ title: ASP.NET MVC TreeGrid Rows | Syncfusion
 description: Learn how to work with rows in ASP.NET MVC TreeGrid, including row customization, selection, styling, rendering, and row-level operations.
 platform: grid-sdk
 control: Row
-publishingplatform: grid-sdk
 documentation: ug
 ---
 

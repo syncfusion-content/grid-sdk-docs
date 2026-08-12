@@ -4,7 +4,6 @@ title: ASP.NET MVC TreeGrid Persisting Data in Server | Syncfusion
 description: Learn how to persist edited data in a database using RESTful services and DataManager in the ASP.NET MVC TreeGrid.
 platform: grid-sdk
 control: Persisting Data in Server
-publishingplatform: grid-sdk
 documentation: ug
 ---
 

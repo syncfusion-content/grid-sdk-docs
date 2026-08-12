@@ -4,7 +4,6 @@ title: ASP.NET MVC TreeGrid Cell Selection | Syncfusion
 description: Learn how to perform cell selection in the ASP.NET MVC TreeGrid, including selection modes, programmatic APIs, and retrieving selected cell indexes.
 platform: grid-sdk
 control: Cell Selection
-publishingplatform: grid-sdk
 documentation: ug
 ---
 

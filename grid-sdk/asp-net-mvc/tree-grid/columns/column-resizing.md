@@ -4,7 +4,6 @@ title: ASP.NET MVC TreeGrid Column Resizing | Syncfusion
 description: Learn how to resize columns in ASP.NET MVC TreeGrid, including column width adjustment, resizing modes, and auto-fit options.
 platform: grid-sdk
 control: Column Resizing
-publishingplatform: grid-sdk
 documentation: ug
 ---
 

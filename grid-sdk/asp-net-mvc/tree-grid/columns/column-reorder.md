@@ -4,7 +4,6 @@ title: ASP.NET MVC TreeGrid Column Reorder | Syncfusion
 description: Learn how to reorder columns in ASP.NET MVC TreeGrid using drag-and-drop functionality and customize column arrangement.
 platform: grid-sdk
 control: Column Reorder
-publishingplatform: grid-sdk
 documentation: ug
 ---
 
@@ -38,7 +37,7 @@ N> You can disable reordering a particular column by setting the [`AllowReorderi
 
 ## Reorder multiple columns
 
-Multiple columns can be reordered at a time by using the [`reorderColumns`](https://ej2.syncfusion.com/documentation/api/grid/#reordercolumns) method.
+Multiple columns can be reordered at a time by using the [`reorderColumns`](https://ej2.syncfusion.com/documentation/api/grid#reordercolumns) method.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

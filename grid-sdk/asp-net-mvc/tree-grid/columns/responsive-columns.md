@@ -4,7 +4,6 @@ title: ASP.NET MVC TreeGrid Responsive Columns | Syncfusion
 description: Learn how to create responsive columns in ASP.NET MVC TreeGrid using media queries to control column visibility and optimize layouts across devices.
 platform: grid-sdk
 control: Responsive Columns
-publishingplatform: grid-sdk
 documentation: ug
 ---
 

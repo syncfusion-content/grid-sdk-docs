@@ -4,7 +4,6 @@ title: ASP.NET MVC TreeGrid Local Data | Syncfusion
 description: Learn to bind local data to ASP.NET MVC TreeGrid with support for hierarchical and self-referential (flat) data structures.
 platform: grid-sdk
 control: Local Data
-publishingplatform: grid-sdk
 documentation: ug
 ---
 

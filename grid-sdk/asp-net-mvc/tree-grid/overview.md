@@ -4,7 +4,6 @@ title: ASP.NET MVC TreeGrid Key Features | Syncfusion
 description: Explore the key features of ASP.NET MVC TreeGrid, including hierarchical data binding, editing, filtering, sorting, virtualization, and exporting.
 platform: grid-sdk
 control: Index
-publishingplatform: grid-sdk
 documentation: ug
 ---
 

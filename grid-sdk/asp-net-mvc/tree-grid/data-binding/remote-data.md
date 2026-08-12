@@ -4,7 +4,6 @@ title: ASP.NET MVC TreeGrid Remote Data | Syncfusion
 description: Learn how to bind remote data in the ASP.NET MVC TreeGrid, including load on demand, paging, virtualization, adaptors, and error handling
 platform: grid-sdk
 control: Remote Data
-publishingplatform: grid-sdk
 documentation: ug
 ---
 

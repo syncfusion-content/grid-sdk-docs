@@ -4,7 +4,6 @@ title: ASP.NET MVC TreeGrid Columns | Syncfusion
 description: Learn how to configure and customize columns in ASP.NET MVC TreeGrid, including column types, visibility, templates, and formatting options.
 platform: grid-sdk
 control: Columns Mvc
-publishingplatform: grid-sdk
 documentation: ug
 ---
 

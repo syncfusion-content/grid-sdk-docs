@@ -4,7 +4,6 @@ title: ASP.NET MVC TreeGrid Getting Started | Syncfusion
 description: Learn how to get started with ASP.NET MVC TreeGrid, including installation, configuration, data binding, and basic setup.
 platform: grid-sdk
 control: Getting Started Mvc
-publishingplatform: grid-sdk
 documentation: ug
 ---
 

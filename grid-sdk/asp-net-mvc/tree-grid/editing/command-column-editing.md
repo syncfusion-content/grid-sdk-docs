@@ -4,7 +4,6 @@ title: ASP.NET MVC TreeGrid Command Column Editing | Syncfusion
 description: Learn how to use command column editing in the ASP.NET MVC TreeGrid to add CRUD and custom action buttons for row-level operations.
 platform: grid-sdk
 control: Command Column Editing
-publishingplatform: grid-sdk
 documentation: ug
 ---
 

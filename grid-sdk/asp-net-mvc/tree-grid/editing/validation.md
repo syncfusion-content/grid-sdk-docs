@@ -4,7 +4,6 @@ title: ASP.NET MVC TreeGrid Validation | Syncfusion
 description: Learn how to configure validation in ASP.NET MVC TreeGrid, including required fields, custom rules, and error handling during editing.
 platform: grid-sdk
 control: Validation
-publishingplatform: grid-sdk
 documentation: ug
 ---
 

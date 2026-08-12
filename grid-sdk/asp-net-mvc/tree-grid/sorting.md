@@ -4,7 +4,6 @@ title: ASP.NET MVC TreeGrid Sorting | Syncfusion
 description: Learn how to sort data in ASP.NET MVC TreeGrid, including single and multi-column sorting, custom sorting, and sort order configuration.
 platform: grid-sdk
 control: Sorting
-publishingplatform: grid-sdk
 documentation: ug
 ---
 
@@ -44,7 +43,7 @@ To enable sorting in the TreeGrid, set the [`AllowSorting`](https://help.syncfus
 
 
 N> TreeGrid columns are sorted in the **Ascending** order. If you click the already sorted column, the sort direction toggles.
-<br/> You can apply and clear sorting by invoking [`sortByColumn`](https://ej2.syncfusion.com/documentation/api/treegrid/#sortbycolumn) and [`clearSorting`](https://ej2.syncfusion.com/documentation/api/treegrid/#clearsorting) methods.
+<br/> You can apply and clear sorting by invoking [`sortByColumn`](https://ej2.syncfusion.com/documentation/api/treegrid#sortbycolumn) and [`clearSorting`](https://ej2.syncfusion.com/documentation/api/treegrid#clearsorting) methods.
 <br/> To disable sorting for a particular column, set the [`AllowSorting`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridColumn~AllowSorting.html) property of [`Column`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridColumn.html) to **false**.
 
 ## Initial sort
@@ -105,7 +104,7 @@ During the sort action, the treegrid component triggers two events. The [`Action
 
 
 
-N> The **args.requestType** is the current action name. For example, in sorting the **args.requestType** value is 'sorting'.
+* > The **args.requestType** is the current action name. For example, in sorting the **args.requestType** value is 'sorting'.
 
 <!--  Custom sort comparer
 

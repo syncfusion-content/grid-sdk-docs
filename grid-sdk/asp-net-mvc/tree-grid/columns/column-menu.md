@@ -4,7 +4,6 @@ title: ASP.NET MVC TreeGrid Column Menu | Syncfusion
 description: Learn how to use the column menu in ASP.NET MVC TreeGrid for sorting, filtering, column visibility, and other column actions.
 platform: grid-sdk
 control: Column Menu
-publishingplatform: grid-sdk
 documentation: ug
 ---
 

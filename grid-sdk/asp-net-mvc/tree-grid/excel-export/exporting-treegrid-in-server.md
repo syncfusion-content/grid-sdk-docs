@@ -52,7 +52,7 @@ To Export the tree grid in server side, You need to call the [`serverExcelExport
 
 You can export the tree grid to CSV format by using the [`serverCsvExport`](https://ej2.syncfusion.com/documentation/api/treegrid/#servercsvexport) method which will pass the tree grid properties to server.
 
-In the below demo, we have invoked the above method inside the [`toolbarClick`](https://ej2.syncfusion.com/documentation/api/treegrid#toolbarclick) event. In server side, we have deserialized the tree grid properties and passed to the [`EXportToCsv`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGridExport.TreeGridExcelExport.html#Syncfusion_EJ2_TreeGridExport_TreeGridExcelExport_ExportToCsv__1_Syncfusion_EJ2_TreeGrid_TreeGrid_System_Collections_IEnumerable_Syncfusion_EJ2_TreeGridExport_ExcelExportProperties_) method which will export the properties to CSV format.
+In the below demo, we have invoked the above method inside the [`toolbarClick`](https://ej2.syncfusion.com/documentation/api/treegrid#toolbarclick) event. In server side, we have deserialized the tree grid properties and passed to the [`ExportToCsv`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGridExport.TreeGridExcelExport.html#Syncfusion_EJ2_TreeGridExport_TreeGridExcelExport_ExportToCsv__1_Syncfusion_EJ2_TreeGrid_TreeGrid_System_Collections_IEnumerable_Syncfusion_EJ2_TreeGridExport_ExcelExportProperties_) method which will export the properties to CSV format.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

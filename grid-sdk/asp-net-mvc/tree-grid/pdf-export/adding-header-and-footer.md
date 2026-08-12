@@ -4,7 +4,6 @@ title: ASP.NET MVC TreeGrid PDF Headers and Footers | Syncfusion
 description: Learn how to add and customize headers and footers in PDF exports for the ASP.NET MVC TreeGrid, including text, page numbers, lines, and images.
 platform: grid-sdk
 control: Adding Header and Footer
-publishingplatform: grid-sdk
 documentation: ug
 ---
 
@@ -101,7 +100,7 @@ Supported page number types:
 
 ## Insert an image in header or footer
 
-Image (Base64 string) can be added in the exported document in header/footer using the [`PdfExportProperties`](https://ej2.syncfusion.com/documentation/api/grid/pdfExportProperties/#properties).
+Image (Base64 string) can be added in the exported document in header/footer using the [`PdfExportProperties`](https://ej2.syncfusion.com/documentation/api/grid/pdfExportProperties#properties).
 
 ```typescript
 

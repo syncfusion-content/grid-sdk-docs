@@ -4,7 +4,6 @@ title:  ASP.NET MVC TreeGrid Adaptive UI | Syncfusion
 description: Learn how to enable adaptive UI in ASP.NET MVC TreeGrid for optimized mobile, tablet, and small-screen user experiences.
 platform: grid-sdk
 control: Adaptive
-publishingplatform: grid-sdk
 documentation: ug
 ---
 

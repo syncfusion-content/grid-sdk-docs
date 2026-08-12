@@ -4,7 +4,6 @@ title: ASP.NET MVC TreeGrid Custom Aggregate | Syncfusion
 description: Learn about implementing custom aggregates in the ASP.NET MVC TreeGrid, including configuration and usage of custom aggregation functions.
 platform: grid-sdk
 control: Custom Aggregate
-publishingplatform: grid-sdk
 documentation: ug
 ---
 

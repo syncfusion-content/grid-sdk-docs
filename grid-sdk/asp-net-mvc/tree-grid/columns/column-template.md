@@ -4,7 +4,6 @@ title: ASP.NET MVC TreeGrid Column Template | Syncfusion
 description: Learn how to use column templates in ASP.NET MVC TreeGrid to display custom content, images, buttons, and formatted data in cells.
 platform: grid-sdk
 control: Column Template
-publishingplatform: grid-sdk
 documentation: ug
 ---
 

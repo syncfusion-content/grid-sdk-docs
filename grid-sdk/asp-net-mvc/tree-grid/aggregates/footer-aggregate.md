@@ -4,7 +4,6 @@ title: ASP.NET MVC TreeGrid Footer Aggregate | Syncfusion
 description: Learn how to configure and display footer aggregate values in ASP.NET MVC TreeGrid, including API usage, templates, and formatting options.
 platform: grid-sdk
 control: Footer Aggregate
-publishingplatform: grid-sdk
 documentation: ug
 ---
 

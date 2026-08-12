@@ -4,7 +4,6 @@ title:  ASP.NET MVC TreeGrid Virtual Scrolling | Syncfusion
 description: Learn how to use virtual scrolling in ASP.NET MVC TreeGrid for large datasets, including row and column virtualization and performance optimization.
 platform: grid-sdk
 control: Virtual
-publishingplatform: grid-sdk
 documentation: ug
 ---
 

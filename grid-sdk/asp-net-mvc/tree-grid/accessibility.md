@@ -4,7 +4,6 @@ title: ASP.NET MVC TreeGrid Accessibility | Syncfusion
 description: Learn how ASP.NET MVC TreeGrid supports accessibility with WAI-ARIA roles, keyboard navigation, and ADA, Section 508, and WCAG compliance.
 platform: grid-sdk
 control: Accessibility
-publishingplatform: grid-sdk
 documentation: ug
 ---
 

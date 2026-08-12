@@ -4,7 +4,6 @@ title: Row height in ASP.NET MVC Treegrid | Syncfusion
 description: Learn how to use Row Height in ASP.NET MVC TreeGrid to customize row size, improve data readability, and adjust grid layout based on content.
 platform: grid-sdk
 control: Row Height
-publishingplatform: grid-sdk
 documentation: ug
 ---
 

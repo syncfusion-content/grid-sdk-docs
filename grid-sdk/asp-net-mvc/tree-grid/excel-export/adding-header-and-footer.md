@@ -4,7 +4,6 @@ title: ASP.NET MVC TreeGrid Excel Export Header & Footer | Syncfusion
 description: Learn how to add headers and footers to Excel exports in ASP.NET MVC TreeGrid, including configuration, customization, and export options.
 platform: grid-sdk
 control: Adding Header and Footer
-publishingplatform: grid-sdk
 documentation: ug
 ---
 

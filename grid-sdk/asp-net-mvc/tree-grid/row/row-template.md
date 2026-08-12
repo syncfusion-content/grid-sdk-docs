@@ -4,7 +4,6 @@ title: ASP.NET MVC TreeGrid Row Template | Syncfusion
 description: Learn how to use row templates in ASP.NET MVC TreeGrid to customize row layouts, display custom content, and enhance data presentation.
 platform: grid-sdk
 control: Row Template
-publishingplatform: grid-sdk
 documentation: ug
 ---
 

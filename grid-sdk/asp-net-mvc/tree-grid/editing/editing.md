@@ -4,7 +4,6 @@ title: ASP.NET MVC TreeGrid Edit | Syncfusion
 description: Learn how to edit data in ASP.NET MVC TreeGrid, including CRUD operations, editing modes, validation, and data update workflows.
 platform: grid-sdk
 control: Editing
-publishingplatform: grid-sdk
 documentation: ug
 ---
 

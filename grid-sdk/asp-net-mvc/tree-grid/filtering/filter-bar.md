@@ -4,7 +4,6 @@ title: ASP.NET MVC TreeGrid Filter Bar | Syncfusion
 description: Learn how to use the filter bar in ASP.NET MVC TreeGrid, including column filtering, filter operators, and custom filter behavior.
 platform: grid-sdk
 control: Filter Bar
-publishingplatform: grid-sdk
 documentation: ug
 ---
 

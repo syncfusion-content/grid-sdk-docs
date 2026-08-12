@@ -4,7 +4,6 @@ title: ASP.NET MVC TreeGrid Filtering | Syncfusion
 description: Learn how to use filtering in ASP.NET MVC TreeGrid, including filter bar, menu, Excel-like filtering, operators, and custom filter options.
 platform: grid-sdk
 control: Filtering
-publishingplatform: grid-sdk
 documentation: ug
 ---
 
@@ -37,7 +36,7 @@ Filtering allows you to view specific or related records based on filter criteri
 
 
 
-N> You can apply and clear filtering by using [`filterByColumn`](https://ej2.syncfusion.com/documentation/api/treegrid/#filterbycolumn) and [`clearFiltering`](https://ej2.syncfusion.com/documentation/api/treegrid/#clearfiltering) methods.
+N> You can apply and clear filtering by using [`filterByColumn`](https://ej2.syncfusion.com/documentation/api/treegrid#filterbycolumn) and [`clearFiltering`](https://ej2.syncfusion.com/documentation/api/treegrid#clearfiltering) methods.
 <br/> To disable filtering for a particular column, set [`AllowFiltering`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridColumn~AllowFiltering.html) property of [`Column`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridColumn.html) to false.
 
 ## Filter hierarchy modes

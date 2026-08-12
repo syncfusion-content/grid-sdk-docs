@@ -4,7 +4,6 @@ title: ASP.NET MVC Grid Aggregates | Syncfusion
 description: Learn how to configure, display, and customize aggregate values in ASP.NET MVC TreeGrid, including built-in aggregate types and child aggregation.
 platform: grid-sdk
 control: Aggregates
-publishingplatform: grid-sdk
 documentation: ug
 ---
 

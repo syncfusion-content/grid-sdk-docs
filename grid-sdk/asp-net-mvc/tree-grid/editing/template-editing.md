@@ -4,7 +4,6 @@ title: ASP.NET MVC TreeGrid Template Editing | Syncfusion
 description: Learn how to use template editing in ASP.NET MVC TreeGrid to create custom edit forms with tailored layouts and controls.
 platform: grid-sdk
 control: Template Editing
-publishingplatform: grid-sdk
 documentation: ug
 ---
 

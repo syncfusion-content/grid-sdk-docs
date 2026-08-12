@@ -4,13 +4,12 @@ title: ASP.NET MVC TreeGrid Excel Export | Syncfusion
 description: Learn how to export data from ASP.NET MVC TreeGrid to Excel, including export customization, selected records, and advanced export options.
 platform: grid-sdk
 control: Excel Export
-publishingplatform: grid-sdk
 documentation: ug
 ---
 
 # Excel Export in ASP.NET MVC TreeGrid
 
-The excel export allows exporting TreeGrid data to Excel document. You need to use the [`excelExport`](https://ej2.syncfusion.com/documentation/api/grid/#excelexport) method for exporting. To enable Excel export in the treegrid, set the [`AllowExcelExport`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGrid~AllowExcelExport.html) as true.
+The excel export allows exporting TreeGrid data to Excel document. You need to use the [`excelExport`](https://ej2.syncfusion.com/documentation/api/grid#excelexport) method for exporting. To enable Excel export in the treegrid, set the [`AllowExcelExport`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGrid~AllowExcelExport.html) as true.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -39,7 +38,7 @@ The excel export allows exporting TreeGrid data to Excel document. You need to u
 
 ## Persist collapsed state
 
-You can persist the collapsed state in the exported document by defining `isCollapsedStatePersist` property as true in `TreeGridExcelExportProperties` parameter of [`excelExport`](https://ej2.syncfusion.com/documentation/api/grid/#excelexport) method.
+You can persist the collapsed state in the exported document by defining `isCollapsedStatePersist` property as true in `TreeGridExcelExportProperties` parameter of [`excelExport`](https://ej2.syncfusion.com/documentation/api/grid#excelexport) method.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

@@ -1,10 +1,9 @@
 ---
 layout: post
 title: ASP.NET MVC TreeGrid Cell Editing | Syncfusion
-description: Learn how to use cell editing in the ASP.NET MVC TreeGrid, including enabling, editing, and handling cell edit events.NET MVC Tree Grid component of Syncfusion Essential JS 2 and more.
+description: Learn how to enable and customize cell editing in the ASP.NET MVC TreeGrid, including edit modes, validation, and cell edit events.
 platform: grid-sdk
 control: Cell Editing
-publishingplatform: grid-sdk
 documentation: ug
 ---
 
