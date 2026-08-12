@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Filtering in UWP TreeGrid control | Syncfusion®
-description: Learn here all about Filtering support in Syncfusion® Essential UWP TreeGrid (SfTreeGrid) control, its elements, and more.
+title: Filtering in UWP SfTreeGrid | Syncfusion®
+description: Filter data in the Syncfusion® UWP SfTreeGrid control. Supports built‑in filter options and customization to refine and display hierarchical data effectively.
 platform: grid-sdk
 control: SfTreeGrid
 documentation: ug
 ---
 
-# Filtering in UWP TreeGrid (SfTreeGrid)
+# Filtering in UWP SfTreeGrid
 
 ## Overview
 
@@ -16,7 +16,7 @@ SfTreeGrid provides support for programmatic filtering. It can be achieved by se
 {% tabs %}
 {% highlight c# %}
 
-public bool FilerNodes(object o)
+public bool FilterNodes(object o)
 {
     var data = o as Employee;
 
@@ -27,7 +27,7 @@ public bool FilerNodes(object o)
 
 private void Button_Click(object sender, RoutedEventArgs e)
 {
-    treeGrid.View.Filter = FilerNodes;
+    treeGrid.View.Filter = FilterNodes;
     treeGrid.View.RefreshFilter();
 }
 
