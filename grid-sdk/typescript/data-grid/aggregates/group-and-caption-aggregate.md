@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Group and caption aggregate in TypeScript Grid | Syncfusion
-description: Learn here all about Group and caption aggregate in Syncfusion TypeScript Grid control of Syncfusion Essential JS 2 and more.
+title: Typescript Grid Group and Caption Aggregates | Syncfusion
+description: Learn how to compute and display group and caption aggregates in Typescript Data Grid, including group summaries, captions, and aggregate formatting.
 platform: grid-sdk
 control: Group and caption aggregate 
 publishingplatform: grid-sdk
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Group and caption aggregate in TypeScript Grid control
+# Group and Caption Aggregates in Typescript Data Grid
 
 Group footer and caption aggregates in the TypeScript Grid control allow you to calculate aggregate values based on the current group items. These aggregate values can be displayed in the group footer cells and group caption cells, respectively. To achieve this, you can use the [groupFooterTemplate](../../api/grid/aggregateColumn#groupfootertemplate) and [groupCaptionTemplate](../../api/grid/aggregateColumn#groupcaptiontemplate) properties of the [AggregateColumn](../../api/grid/aggregateColumn).
 

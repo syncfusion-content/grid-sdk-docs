@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Toolbar Items in Syncfusion ASP.NET MVC Grid Component
-description: Learn here all about Toolbar Items in Syncfusion ASP.NET MVC Grid component of Syncfusion Essential JS 2 and more.
+title: ASP.NET MVC Grid Toolbar Items | Syncfusion
+description: Learn how to use toolbar items in ASP.NET MVC Data Grid with built-in actions, custom toolbar items, templates, export options, and search functionality.
 platform: grid-sdk
 control: Toolbar Items
 publishingplatform: grid-sdk
 documentation: ug
 ---
 
-# Toolbar items in ASP.NET MVC Grid component
+# Toolbar Items in ASP.NET MVC Data Grid
 
 The Syncfusion ASP.NET MVC Grid offers a flexible toolbar that enables the addition of custom toolbar items or modification of existing ones. This customizable toolbar is positioned above the grid, providing a convenient way to access various actions and functionalities
 

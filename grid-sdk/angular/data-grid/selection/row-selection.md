@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Angular Grid - Row selection | Syncfusion
-description: Angular Grid row selection explains single and multi-row selection modes, keyboard behaviors, and events to handle selection changes.
+title:  Angular Grid Row Selection | Syncfusion
+description: Learn how to select single or multiple rows in Angular Data Grid with selection modes, keyboard interactions, selection APIs, and row selection events.
 platform: grid-sdk
 control: Row selection 
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Row Selection in Angular Grid Component
+# Row Selection in Angular Data Grid
 
 Row selection in the Grid component provides interactive selection of specific rows or ranges of rows within the grid. Row selection can be performed effortlessly through mouse clicks or arrow keys (up, down, left, and right). This feature is useful when highlighting, manipulating, or performing actions on specific rows within the grid.
 
@@ -805,7 +805,7 @@ app.Run();
 
 The following screenshot shows passing of selected records to the server:
 
-![Pass selected records to server using ajax](../../grid/images/row-selected-record.png)
+![Pass selected records to server using ajax](../images/row-selected-record.png)
 
 ## Pass selected records to server using FETCH
 
@@ -1057,4 +1057,4 @@ app.Run();
 
 The following screenshot shows passing selected records to the server:
 
-![Pass selected records to server using fetch](../../grid/images/row-selected-record.png)
+![Pass selected records to server using fetch](../images/row-selected-record.png)

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Filtering in TypeScript Grid control | Syncfusion
-description: Learn here all about Filtering in Syncfusion TypeScript Grid control of Syncfusion Essential JS 2 and more.
+title: Typescript Grid Filtering | Syncfusion
+description: Learn how to use filtering in Typescript Data Grid with filter types, server filtering, expression operators, and UI options for refined data results.
 platform: grid-sdk
 control: Filtering 
 publishingplatform: grid-sdk
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Filtering in TypeScript Grid control
+# Filtering in Typescript Data Grid
 
 Filtering is a powerful feature in the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid control that enables you to selectively view data based on specific criteria. It allows you to narrow down large datasets and focus on the information you need, thereby enhancing data analysis and decision-making.
 

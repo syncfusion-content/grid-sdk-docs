@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Change orientation of header text in JavaScript Treegrid control | Syncfusion
-description: Learn here all about Change orientation of header text in Syncfusion JavaScript Treegrid control of Syncfusion Essential JS 2 and more.
+title: JavaScript TreeGrid Change Header Text Orientation | Syncfusion
+description: Learn how to change header text orientation in JavaScript TreeGrid to optimize column header display and improve readability.
 platform: grid-sdk
 control: Change orientation of header text 
 publishingplatform: grid-sdk
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Change orientation of header text in JavaScript Treegrid control
+# Change Header Text Orientation in JavaScript TreeGrid
 
 You can change the orientation of the header text by using the [`customAttributes`](../../api/treegrid/column/#customattributes) property.
 

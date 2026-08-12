@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Paging in TypeScript Treegrid control | Syncfusion
-description: Learn here all about Paging in Syncfusion TypeScript Treegrid control of Syncfusion Essential JS 2 and more.
+title: TypeScript TreeGrid Paging | Syncfusion
+description: Learn how to use paging in TypeScript TreeGrid, including pagination configuration, customization, and advanced features for managing large datasets.
 platform: grid-sdk
 control: Paging 
 publishingplatform: grid-sdk
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Paging in TypeScript Treegrid control
+# Paging in TypeScript TreeGrid
 
 Paging provides an option to display TreeGrid data in page segments. To enable paging, set the [`allowPaging`](../api/treegrid/#allowpaging) to true. When paging is enabled, pager component renders at the bottom of the treegrid.
 Paging options can be configured through the [`pageSettings`](../api/treegrid/#pagesettings).

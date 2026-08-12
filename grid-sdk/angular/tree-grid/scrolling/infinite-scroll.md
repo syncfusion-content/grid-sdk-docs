@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Infinite scroll in Angular TreeGrid component | Syncfusion
-description: Learn how to enable and configure infinite scroll in the Syncfusion Angular TreeGrid component for efficient large data handling, cache management, and best practices.
+title: Angular TreeGrid Infinite Scroll | Syncfusion
+description: Learn how to enable and configure infinite scroll in the Angular TreeGrid for efficient large data handling, cache management, and best practices.
 platform: grid-sdk
 control: Infinite scroll
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Infinite scroll in Angular TreeGrid component
+# Infinite Scroll in Angular TreeGrid
 
 The infinite scrolling feature in the TreeGrid offers seamless handling of large datasets while maintaining high performance. Infinite scroll operates on a "load-on-demand" concept, where data is fetched only as needed. In default infinite scrolling mode, a new block of data is loaded each time the scrollbar reaches the end of the TreeGrid's vertical scroller. This approach delivers enhanced performance and responsiveness when working with extensive data collections.
 

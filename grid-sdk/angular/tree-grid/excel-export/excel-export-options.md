@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Excel export options in Angular TreeGrid component | Syncfusion
-description: Learn about customizing Excel export options in the Syncfusion Angular TreeGrid component of Essential JS 2.
+title: Angular TreeGrid Excel Export Options | Syncfusion
+description: Learn about Excel export options in Angular TreeGrid, including export customization, hidden columns, selected records, and advanced export settings.
 platform: grid-sdk
 control: Excel export options 
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Excel export options in Angular TreeGrid component
+# Excel Export Options in Angular TreeGrid
 
 ## Customizing Excel export
 

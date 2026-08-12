@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Template editing in JavaScript Grid control | Syncfusion
-description: Learn here all about Template editing in Syncfusion JavaScript Grid control of Syncfusion Essential JS 2 and more.
+title: Javascript Grid Custom Template Editing | Syncfusion
+description: Learn how to use inline and dialog template editing in Javascript Data Grid to customize edit forms, capture user input, and manage CRUD operations efficiently.
 platform: grid-sdk
 control: Template editing 
 publishingplatform: grid-sdk
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Template editing in JavaScript Grid control
+# Custom Template Editing in Javascript Data Grid
 
 ## Inline or dialog template editing
 

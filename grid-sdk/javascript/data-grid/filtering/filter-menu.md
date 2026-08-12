@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Filter menu in JavaScript Grid control | Syncfusion
-description: Learn here all about Filter menu in Syncfusion JavaScript Grid control of Syncfusion Essential JS 2 and more.
+title: Javascript Grid Filter Menu | Syncfusion
+description: Learn how to use Filter Menu in Javascript Data Grid with configurable dialogs, custom components, operator options, and multi-value filtering.
 platform: grid-sdk
 control: Filter menu 
 publishingplatform: grid-sdk
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Filter menu in JavaScript Grid control
+# Filter Menu in Javascript Data Grid
 
 The filter menu in the JavaScript Grid control allows you to enable filtering and provides a user-friendly interface for filtering data based on column types and operators.
 

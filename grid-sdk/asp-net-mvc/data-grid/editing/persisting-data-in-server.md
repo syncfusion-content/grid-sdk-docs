@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Persisting Data in Server in ASP.NET MVC Grid Control | Syncfusion
-description: Learn here all about Persisting Data in Server in Syncfusion ASP.NET MVC Grid component of Syncfusion Essential JS 2 and more.
+title: ASP.NET MVC Grid Server Data Persistence | Syncfusion
+description: Learn how to persist ASP.NET MVC Data Grid changes to a server, send CRUD requests, handle server responses, and synchronize data using adaptors.
 platform: grid-sdk
 control: Persisting Data in Server
 publishingplatform: grid-sdk
 documentation: ug
 ---
 
-# Persisting data in server in ASP.NET MVC Grid
+# Server Data Persistence in ASP.NET MVC Data Grid
 
 The Syncfusion ASP.NET MVC Grid allows data edited within the Grid to be persisted in a database using RESTful web services. All CRUD (Create, Read, Update, and Delete) operations within the Grid are handled by the `DataManager`, which can bind server-side data and send updates to the server. This capability is essential for maintaining data integrity and ensuring that changes made in the UI are reflected in the backend.
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Column resizing in Angular TreeGrid component | Syncfusion
-description: Learn here all about Column resizing in Syncfusion Angular TreeGrid component of Syncfusion Essential JS 2 and more.
+title: Angular TreeGrid Column Resizing | Syncfusion
+description: Learn how to resize columns in Angular TreeGrid, including column width adjustment, resizing modes, and auto-fit options.
 platform: grid-sdk
 control: Column resizing 
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Column resizing in Angular TreeGrid component
+# Column Resizing in Angular TreeGrid
 
 The TreeGrid component provides an intuitive user interface for resizing columns to fit their content. This feature enables easy adjustment of column width to improve readability and aesthetics of the presented data. To enable column resizing, set the [allowResizing](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#allowresizing) property of the TreeGrid to **true**.
 
