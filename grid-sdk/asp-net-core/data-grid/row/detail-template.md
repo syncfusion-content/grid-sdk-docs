@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Detail Template in Syncfusion ASP.NET Core Grid Component
-description: Learn here all about Detail Template in Syncfusion ASP.NET Core Grid component of Syncfusion Essential JS 2 and more.
+title: ASP.NET Core Grid Detail Template | Syncfusion
+description: Learn how to use Detail Templates in ASP.NET Core Data Grid to display expandable row details, embed custom components, and customize data layouts.
 platform: grid-sdk
 control: Detail Template
 publishingplatform: grid-sdk
 documentation: ug
 ---
 
-# Detail template in ASP.NET Core Grid component
+# Detail Template in ASP.NET Core Data Grid
 
 The detail template in the Grid component allows you to display additional information about a specific row in the grid by expanding or collapsing detail content. This feature is useful when you need to show additional data or custom content that is specific to each row in the grid. You can use the [detailTemplate](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_DetailTemplate) property to define an HTML template for the detail row. This template can include any HTML element or ASP.NET Core component that you want to display as detail content.
 

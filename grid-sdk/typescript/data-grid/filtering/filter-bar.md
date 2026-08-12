@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Filter bar in TypeScript Grid control | Syncfusion
-description: Learn here all about Filter bar in Syncfusion TypeScript Grid control of Syncfusion Essential JS 2 and more.
+title: Typescript Grid Filter Bar | Syncfusion
+description: Learn how to use Filter Bar in Typescript Data Grid with expression operators, configurable modes, column settings, custom templates, and filter status display.
 platform: grid-sdk
 control: Filter bar 
 publishingplatform: grid-sdk
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Filter bar in TypeScript Grid control
+# Filter Bar in Typescript Data Grid
 
 The filter bar feature provides a user-friendly way to filter data in the Syncfusion<sup style="font-size:70%">&reg;</sup> TypeScript  Grid. It displays an input field for each column, allowing you to enter filter criteria and instantly see the filtered results.
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: TreeGrid styling in React TreeGrid | Syncfusion
-description: Learn here all about TreeGrid styling in Syncfusion React TreeGrid of Syncfusion Essential JS 2 and more.
+title: React TreeGrid Styling | Syncfusion
+description: Learn how to customize the appearance of React TreeGrid using CSS classes, Theme Studio, and advanced styling techniques.
 control: TreeGrid styling
 platform: grid-sdk
 documentation: ug

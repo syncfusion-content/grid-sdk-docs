@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Group and Caption Aggregate in ASP.NET Core Grid Component
-description: Learn here all about Group and Caption Aggregate in Syncfusion ASP.NET Core Grid component of Syncfusion Essential JS 2 and more.
+title: ASP.NET Core Grid Group and Caption Aggregates | Syncfusion
+description: Learn how to compute and display group and caption aggregates in ASP.NET Core Data Grid, including group summaries, captions, and aggregate formatting.
 platform: grid-sdk
 control: Group and Caption Aggregate
 publishingplatform: grid-sdk
 documentation: ug
 ---
 
-# Group and caption aggregate in ASP.NET Core Grid component
+# Group and Caption Aggregates in ASP.NET Core Data Grid
 
 Group footer and caption aggregates in the [ASP.NET Core DataGrid](https://www.syncfusion.com/aspnet-core-ui-controls/grid) component allow you to calculate aggregate values based on the current group items. These aggregate values can be displayed in the group footer cells and group caption cells, respectively. To achieve this, you can use the `groupFooterTemplate` and `groupCaptionTemplate` properties of the `aggregateColumn`.
 

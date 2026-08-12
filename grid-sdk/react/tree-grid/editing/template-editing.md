@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Template editing in React TreeGrid component | Syncfusion
-description: Learn here all about Template editing in Syncfusion React TreeGrid component of Syncfusion Essential JS 2 and more.
+title: React TreeGrid Template Editing | Syncfusion
+description: Learn how to use template editing in React TreeGrid to create custom edit forms with tailored layouts and controls.
 control: Template editing 
 platform: grid-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Template editing in React TreeGrid component
+# Template Editing in React TreeGrid
 
 ## Dialog template
 

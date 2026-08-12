@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Paging in ASP.NET MVC Grid Component | Syncfusion
-description: Learn here all about Paging in Syncfusion ASP.NET MVC Grid component of Syncfusion Essential JS 2 and more.
+title: ASP.NET MVC Grid Paging | Syncfusion
+description: Learn how to configure paging in ASP.NET MVC Data Grid with client and server paging, page size options, pager templates, and navigation controls.
 platform: grid-sdk
 control: Paging
 publishingplatform: grid-sdk
 documentation: ug
 ---
 
-# Paging in ASP.NET MVC Grid component
+# Paging in ASP.NET MVC Data Grid
 
 Paging provides an option to display grid data in segmented pages, making it easier to navigate through large datasets. This feature is particularly useful when dealing with extensive data sets. 
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Row in JavaScript Grid control | Syncfusion
-description: Learn here all about Row in Syncfusion JavaScript Grid control of Syncfusion Essential JS 2 and more.
+title: Javascript Grid Row | Syncfusion
+description: Learn how to configure and customize rows in Javascript Data Grid using Syncfusion. Manage row events, selection, styling, and interaction capabilities.
 platform: grid-sdk
 control: Row 
 publishingplatform: grid-sdk
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Row in JavaScript Grid control
+# Row in Javascript Data Grid
 
 Each row typically represents a single record or item from a data source. Rows in a grid are used to present data in a tabular format. Each row displays a set of values representing the fields of an individual data record. Rows allow users to interact with the data in the grid. Users can select rows, edit cell values, perform sorting or filtering operations, and trigger events based on actions.
 

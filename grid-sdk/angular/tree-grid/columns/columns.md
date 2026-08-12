@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Columns in Angular TreeGrid component | Syncfusion
-description: Learn here all about Columns in Syncfusion Angular TreeGrid component of Syncfusion Essential JS 2 and more.
+title:  Angular TreeGrid Columns | Syncfusion
+description: Learn how to configure and customize columns in Angular TreeGrid, including column types, visibility, templates, and formatting options.
 platform: grid-sdk
 control: Columns 
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Columns in Angular TreeGrid component
+# Columns in Angular TreeGrid
 
 In the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular TreeGrid component, columns are fundamental elements that play a pivotal role in organizing and displaying data within applications. They serve as the building blocks for data presentation, allowing specification of what data fields to show, how to format and style them, and how to enable various interactions within the TreeGrid.
 

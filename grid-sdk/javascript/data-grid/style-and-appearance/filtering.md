@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Filter customization in JavaScript Grid control | Syncfusion
-description: Learn here all about Filter customization in Syncfusion JavaScript Grid control of Syncfusion Essential JS 2 and more.
+title: Javascript Grid Filtering Customization | Syncfusion
+description: Learn how to customize filtering styles in Javascript Data Grid with filter bars, filter menus, Excel-like filtering, templates, and filter UI appearance.
 platform: grid-sdk
 control: Filtering 
 publishingplatform: grid-sdk
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Filter customization in JavaScript Grid control
+# Filtering Style in Javascript Data Grid
 
 You can customize the appearance of filtering elements in the JavaScript Grid control using CSS. Below are examples of how to customize various filtering elements, including filter bar cell elements, filter bar input elements, focus styles, clear icons, filter icons, filter dialog content, filter dialog footer, filter dialog input elements, filter dialog button elements, and Excel filter dialog number filters.
 

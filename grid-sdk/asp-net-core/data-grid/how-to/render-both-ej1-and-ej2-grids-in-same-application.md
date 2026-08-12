@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Render Both Ej1 And Ej2 Grids In Same Application in ASP.NET Core Grid Component
-description: Learn here all about Render Both Ej1 And Ej2 Grids In Same Application in Syncfusion ASP.NET Core Grid component of syncfusion and more.
+title: ASP.NET Core Grid EJ1 and EJ2 Integration | Syncfusion
+description: Learn how to run EJ1 and EJ2 Grids in the same ASP.NET Core application by resolving library conflicts and configuring compatibility.
 platform: grid-sdk
 control: Render Both Ej1 And Ej2 Grids In Same Application
 publishingplatform: grid-sdk
 documentation: ug
 ---
 
-# Render both EJ1 and EJ2 Grids in same application
+# Render EJ1 and EJ2 Grids in ASP.NET Core Data Grid
 
 To achieve this requirement, you need to use the below code in **_Layout.cshtml** page. Because EJ1 and EJ2 has same library names to perform the different actions. So conflicts may occur when we refer this both controls in same application. To overcome this we need to extend this libraries in ej namespace.
 

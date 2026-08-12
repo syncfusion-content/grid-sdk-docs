@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Excel Like Filter in Syncfusion ASP.NET Core Grid 
-description: Learn here all about Excel Like Filter in Syncfusion ASP.NET Core Grid of Syncfusion Essential JS 2 and more.
+title: ASP.NET Core Grid Excel Like Filter | Syncfusion
+description: Learn how to use Excel Like Filter in ASP.NET Core Data Grid with checkbox filters, search, remote data binding, and customizable filter templates.
 platform: grid-sdk
 control: Excel Like Filter
 publishingplatform: grid-sdk
 documentation: ug
 ---
 
-# Excel like filter in ASP.NET Core Grid component
+# Excel Like Filter in ASP.NET Core Data Grid
 
 The Syncfusion<sup style="font-size:70%">&reg;</sup> Grid component offers an Excel-like filter feature, providing a familiar and user-friendly interface for filtering data within the grid. This feature simplifies complex filtering operations on specific columns, allowing for quick data location and manipulation, similar to Microsoft Excel. Excel like filtering is especially useful when dealing with large datasets and complex filtering requirements.
 

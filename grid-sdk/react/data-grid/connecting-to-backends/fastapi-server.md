@@ -1,6 +1,6 @@
 ---
 layout: post
-title: React Grid Data Bind with Python FastAPI REST Backend | Syncfusion
+title:React Grid Data Bind with Python FastAPI REST Backend | Syncfusion
 description: Learn how to integrate React Data Grid with a Python FastAPI REST backend to handle remote data operations and CRUD requests efficiently.
 control: UrlAdaptor
 platform: grid-sdk

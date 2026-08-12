@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Edit in TypeScript Grid control | Syncfusion
-description: Learn here all about Edit in Syncfusion TypeScript Grid control of Syncfusion Essential JS 2 and more.
+title: Typescript Grid Editing | Syncfusion
+description: Learn how to configure editing in Typescript Data Grid, customize edit modes, apply validation rules, use templates, and manage CRUD workflows efficiently.
 platform: grid-sdk
 control: Edit 
 publishingplatform: grid-sdk
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Edit in TypeScript Grid control
+# Editing in Typescript Data Grid
 
 The Grid control provides powerful options for dynamically inserting, deleting, and updating records, enabling you to modify data directly within the grid. This feature is useful when you want to seamlessly perform CRUD (Create, Read, Update, Delete) operations.
 

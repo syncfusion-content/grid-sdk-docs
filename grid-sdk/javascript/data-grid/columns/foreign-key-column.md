@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Foreign key column in JavaScript Grid control | Syncfusion
-description: Learn here all about Foreign key column in Syncfusion JavaScript Grid control of Syncfusion Essential JS 2 and more.
+title: Javascript Grid Foreign Key Column | Syncfusion
+description: Learn how to use foreign key columns in Javascript Data Grid to map related data, display associated values, and bind local or remote data sources.
 platform: grid-sdk
 control: Foreign key column 
 publishingplatform: grid-sdk
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Foreign key column in JavaScript Grid control
+# Foreign Key Column in Javascript Data Grid
 
 The Foreign key column in the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid control allows you to display related data from a foreign key data source in a column within the grid. This feature is particularly useful when you have a column in the grid that represents a foreign key relationship with another data source.
 

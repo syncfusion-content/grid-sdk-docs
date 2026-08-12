@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Caption Template in ASP.NET MVC Grid Component
-description: Learn here all about Caption Template in Syncfusion ASP.NET MVC Grid component of Syncfusion Essential JS 2 and more.
+title: ASP.NET MVC Grid Caption Template | Syncfusion
+description: Learn how to customize group captions in ASP.NET MVC Data Grid using Caption Template, apply custom content, formatting, and display group information effectively.
 platform: grid-sdk
 control: Caption Template
 publishingplatform: grid-sdk
 documentation: ug
 ---
 
-# Caption template in ASP.NET MVC Grid component
+# Caption Template in ASP.NET MVC Data Grid
 
 The caption template feature in the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Grid allows you to customize and enhance the appearance of group caption row. It provides a flexible way to display additional information about grouped data, such as counts or grouped value, and enables you to incorporate custom content like images, icons, or other HTML elements. This feature empowers you to create visually appealing and informative group captions in the grid component.
 

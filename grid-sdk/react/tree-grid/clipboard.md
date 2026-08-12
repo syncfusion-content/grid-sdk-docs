@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Clipboard in React TreeGrid | Syncfusion
-description: Learn here all about Clipboard in Syncfusion React TreeGrid component of Syncfusion Essential JS 2 and more.
+title: React TreeGrid Clipboard | Syncfusion
+description: Learn how to use clipboard operations in React TreeGrid, including copy, paste, hierarchy modes, and autofill for rows and cells.
 control: Clipboard
 platform: grid-sdk
 documentation: ug

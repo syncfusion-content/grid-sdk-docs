@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Resize grid in various dimension in JavaScript Grid control | Syncfusion
-description: Learn here all about Resize grid in various dimension in Syncfusion JavaScript Grid control of Syncfusion Essential JS 2 and more.
+title: Javascript Grid Adding Header and Footer | Syncfusion
+description: Learn how to add custom headers and footers in Javascript Data Grid PDF export, customize content, apply templates, and format exported documents.
 platform: grid-sdk
 control: Resize grid in various dimension 
 publishingplatform: grid-sdk
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Resize the grid in various dimension in JavaScript Grid control
+# Adding Header and Footer in Javascript Data Grid
 
 The JavaScript Grid control offers a friendly way to resize the grid, allowing you to adjust its width and height for improved data visualization.
 

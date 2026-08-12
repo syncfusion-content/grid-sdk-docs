@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Sorting in ASP.NET MVC Grid Component
-description: Learn here all about Sorting in Syncfusion ASP.NET MVC Grid component of Syncfusion Essential JS 2 and more.
+title: ASP.NET MVC Grid Sorting Customization | Syncfusion
+description: Learn how to customize sorting icons and multi-sort indicators in ASP.NET MVC Data Grid using CSS and built-in Syncfusion icons for different themes.
 platform: grid-sdk
 control: Sorting
 publishingplatform: grid-sdk
 documentation: ug
 ---
 
-# Sorting in ASP.NET MVC Grid component
+# Sorting Style in ASP.NET MVC Data Grid
 
 You can customize the appearance of the sorting icons and multi sorting icons in the Syncfusion ASP.NET MVC Grid component using CSS. You can use the available Syncfusion [icons](../../appearance/icons/#material) based on your theme. Here's how to do it:
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Headers in JavaScript Grid control | Syncfusion
-description: Learn here all about Headers in Syncfusion JavaScript Grid control of Syncfusion Essential JS 2 and more.
+title: Javascript Grid Column Headers | Syncfusion
+description: Learn how to customize column headers in Javascript Data Grid with header text, templates, tooltips, and multi-line layouts.
 platform: grid-sdk
 control: Headers 
 publishingplatform: grid-sdk
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Headers in JavaScript Grid control
+# Column Headers in Javascript Data Grid
 
 The JavaScript Grid control provides a comprehensive set of options to customize and manage headers efficiently. Headers play a crucial role in organizing and presenting data effectively in the grid.
 

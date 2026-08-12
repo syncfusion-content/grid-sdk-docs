@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Cell editing in React TreeGrid component | Syncfusion
-description: Learn here all about Cell editing in Syncfusion React TreeGrid component of Syncfusion Essential JS 2 and more.
+title: React TreeGrid Cell Editing | Syncfusion
+description: Learn how to use cell editing in the React TreeGrid, including enabling, editing, and handling cell edit events.
 control: Cell editing 
 platform: grid-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Cell editing in React TreeGrid
+# Cell Editing in React TreeGrid
 
 In cell edit mode, double-clicking a cell switches it to edit state. Modify the value and save it to the datasource. Enable cell editing by setting [editSettings.mode](https://ej2.syncfusion.com/react/documentation/api/treegrid/editSettingsModel/#mode) to **Cell**.
 

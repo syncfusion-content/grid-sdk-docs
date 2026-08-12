@@ -8,7 +8,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# GraphQL Backend Integration in React Data Grid
+#GraphQL Backend Integration in React Data Grid
 
 [GraphQL](https://graphql.org/learn/) is a query language that allows applications to request exactly the data needed, nothing more and nothing less. Unlike traditional REST APIs that return fixed data structures, GraphQL enables the client to specify the shape and content of the response.
 
