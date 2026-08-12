@@ -381,4 +381,4 @@ namespace UrlAdaptor.Server.Models
 
 The following screenshot demonstrates displaying error messages when CRUD operations fail:
 
-![custom error message](../../grid/images/custom-error-message.png)
+![custom error message](../images/custom-error-message.png)

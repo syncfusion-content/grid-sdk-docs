@@ -26,7 +26,7 @@ Customizing the styles of rows in a [Angular Data Grid](https://www.syncfusion.c
 
 ### Using event
 
-The [rowDataBound](https://ej2.syncfusion.com/angular/documentation/api/grid#rowdatabound) event provides the most flexible approach for row styling, triggering for every row during data binding. This event handler receives [RowDataBoundEventArgs](https://ej2.syncfusion.com/angular/documentation/api/grid/rowDataBoundEventArgs/) containing row details, enabling conditional styling based on data values.
+The [rowDataBound](https://ej2.syncfusion.com/angular/documentation/api/grid#rowdatabound) event provides the most flexible approach for row styling, triggering for every row during data binding. This event handler receives [RowDataBoundEventArgs](https://ej2.syncfusion.com/angular/documentation/api/grid/rowDataBoundEventArgs) containing row details, enabling conditional styling based on data values.
 
 Here's an example of customizing the rows styles based on the value of the "Freight" column using the `rowDataBound` event. This example involves checking the value of the "Freight" column for each row and adding a CSS class to the row based on the value. The CSS classes "below-30", "below-80", and "above-80" can be defined in the stylesheet to apply the desired styles to the rows.
 

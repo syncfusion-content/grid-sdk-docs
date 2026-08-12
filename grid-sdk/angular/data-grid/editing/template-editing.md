@@ -16,7 +16,7 @@ The [Angular Data Grid](https://www.syncfusion.com/angular-components/angular-da
 
 ## Inline or dialog template editing
 
-The Syncfusion Grid provides support for inline and dialog template editing, enabling customization of the editing experience using either [Reactive](https://v17.angular.io/guide/reactive-forms) or [Template-driven](https://v17.angular.io/guide/forms#template-driven-forms) Forms. These forms can be used to add and update grid records.
+The Syncfusion Grid provides support for inline and dialog template editing, enabling customization of the editing experience using either [Reactive](https://v17.angular.io/guide/reactive-forms) or `Template-driven` Forms. These forms can be used to add and update grid records.
 
 To enable this feature, set the [editSettings.mode](https://ej2.syncfusion.com/angular/documentation/api/grid/editSettings#mode) property to either `Normal` or `Dialog` and define grid editors using the `editSettings.template` template variable of `ngTemplate`.
 

@@ -111,7 +111,7 @@ function App() {
           <tr>
             <td>
               <span className="link">
-                Contact: <a href={'mailto:' + props.Contact}>{props.Contact}</a>
+                Contact: <a href={'mailto:' + props.Contact} aria-label="Send email">{props.Contact}</a>
               </span>
             </td>
           </tr>
@@ -343,7 +343,7 @@ function App() {
           <tr>
             <td>
               <span className="link">
-                Contact: <a href={'mailto:' + props.Contact}>{props.Contact}</a>
+                Contact: <a href={'mailto:' + props.Contact} aria-label="Send email">{props.Contact}</a>
               </span>
             </td>
           </tr>

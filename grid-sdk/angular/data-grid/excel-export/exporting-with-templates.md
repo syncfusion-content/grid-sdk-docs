@@ -100,7 +100,7 @@ import { ClickEventArgs } from '@syncfusion/ej2-navigations';
                         <tr>
                             <td>
                                 <span class="link">
-                                Contact:<a href="mailto:{{ data.Contact }}">{{ data.Contact }}</a>
+                                Contact:<a href="mailto:{{ data.Contact }}" aria-label="Send email to {{ data.Contact }}">{{ data.Contact }}</a>
                                 </span>
                             </td>
                         </tr>
