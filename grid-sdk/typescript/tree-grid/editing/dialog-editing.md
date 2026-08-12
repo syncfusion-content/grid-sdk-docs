@@ -4,7 +4,6 @@ title: Dialog editing in TypeScript Treegrid control | Syncfusion
 description: Learn here all about Dialog editing in Syncfusion TypeScript Treegrid control of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Dialog editing 
-publishingplatform: grid-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
@@ -13,7 +12,7 @@ domainurl: https://help.syncfusion.com/grid-sdk
 
 In Dialog edit mode, when you start editing the currently selected row, data will be shown on a dialog.
 You can change the cell values and save edited data to the data source.
-To enable Dialog edit, set the [`editSettings.mode`](../../api/treegrid/editSettingsModel/#mode) as `Dialog`.
+To enable Dialog edit, set the [`editSettings.mode`](../../api/treegrid/editSettingsModel#mode) as `Dialog`.
 
 {% if page.publishingplatform == "typescript" %}
 

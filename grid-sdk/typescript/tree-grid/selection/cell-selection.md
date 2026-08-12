@@ -4,7 +4,6 @@ title: Cell selection in TypeScript Treegrid control | Syncfusion
 description: Learn here all about Cell selection in Syncfusion TypeScript Treegrid control of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Cell selection 
-publishingplatform: grid-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---

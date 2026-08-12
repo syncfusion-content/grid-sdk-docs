@@ -4,14 +4,13 @@ title: Filter bar in TypeScript Treegrid control | Syncfusion
 description: Learn here all about Filter bar in Syncfusion TypeScript Treegrid control of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Filter bar 
-publishingplatform: grid-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
 # Filter bar in TypeScript Treegrid control
 
-By setting the [`allowFiltering`](../../api/treegrid/#allowfiltering) to true, the filter bar row will render next to the header, which allows you to filter data. You can filter the records with different expressions depending upon the column type.
+By setting the [`allowFiltering`](../../api/treegrid#allowfiltering) to true, the filter bar row will render next to the header, which allows you to filter data. You can filter the records with different expressions depending upon the column type.
 
  **Filter bar expressions:**
 
@@ -59,7 +58,7 @@ N/A |N/A |`Equal` operator will always be used for Boolean filter. |Boolean
 
 ## Filter bar template with custom component
 
-The [`filterBarTemplate`](../../api/treegrid/column/#filterbartemplate) is used to add custom components to a particular column, and does the following functions:
+The [`filterBarTemplate`](../../api/treegrid/column#filterbartemplate) is used to add custom components to a particular column, and does the following functions:
   * `create`: Creates custom components.
   * `write`: Wires events for custom components.
 
@@ -94,7 +93,7 @@ In the following sample, the dropdown is used as a custom component in the Durat
 
 ## Change default filter bar operator
 
-You can change the default filter operator by extending [`filterModule.filterOperators`](../../api/treegrid/filterSettings/#operators) property in [`dataBound`](../../api/treegrid/#databound) event.
+You can change the default filter operator by extending [`filterModule.filterOperators`](../../api/treegrid/filterSettings#operators) property in [`dataBound`](../../api/treegrid#databound) event.
 
 In the following sample, we have changed the default operator for string typed columns as `contains` from `startsWith`.
 

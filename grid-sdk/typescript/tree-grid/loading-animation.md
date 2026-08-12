@@ -4,7 +4,6 @@ title: Loading animation in TypeScript Treegrid control | Syncfusion
 description: Learn here all about Loading animation in Syncfusion TypeScript Treegrid control of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Loading animation 
-publishingplatform: grid-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---

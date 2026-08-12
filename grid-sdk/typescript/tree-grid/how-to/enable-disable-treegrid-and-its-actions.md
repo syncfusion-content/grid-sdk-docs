@@ -4,7 +4,6 @@ title: Enable disable treegrid and its actions in TypeScript Treegrid control | 
 description: Learn here all about Enable disable treegrid and its actions in Syncfusion TypeScript Treegrid control of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Enable disable treegrid and its actions 
-publishingplatform: grid-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---

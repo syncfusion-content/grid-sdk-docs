@@ -4,7 +4,6 @@ title: Render other component in column in TypeScript Treegrid control | Syncfus
 description: Learn here all about Render other component in column in Syncfusion TypeScript Treegrid control of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Render other component in column 
-publishingplatform: grid-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---

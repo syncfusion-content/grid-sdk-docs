@@ -4,16 +4,15 @@ title: Clip mode in TypeScript Treegrid control | Syncfusion
 description: Learn here all about Clip mode in Syncfusion TypeScript Treegrid control of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Clip mode 
-publishingplatform: grid-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
 # Clip mode in TypeScript Treegrid control
 
-The clip mode provides options to display its overflow cell content and it can be defined by the [`columns.clipMode`](../../api/treegrid/column/#clipmode) property.
+The clip mode provides options to display its overflow cell content and it can be defined by the [`columns.clipMode`](../../api/treegrid/column#clipmode) property.
 
-There are three types of [`clipMode`](../../api/treegrid/column/#clipmode). They are:
+There are three types of [`clipMode`](../../api/treegrid/column#clipmode). They are:
 
 * **`Clip`**: Truncates the cell content when it overflows its area.
 * **`Ellipsis`**: Displays ellipsis when the cell content overflows its area.
@@ -46,4 +45,4 @@ There are three types of [`clipMode`](../../api/treegrid/column/#clipmode). They
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/treegrid/cell-cs4" %}
 {% endif %}
 
->By default, [`columns.clipMode`](../../api/treegrid/column/#clipmode) value is `Ellipsis`.
+>By default, [`columns.clipMode`](../../api/treegrid/column#clipmode) value is `Ellipsis`.

@@ -4,7 +4,6 @@ title: Validation in TypeScript Treegrid control | Syncfusion
 description: Learn here all about Validation in Syncfusion TypeScript Treegrid control of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Validation 
-publishingplatform: grid-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
@@ -15,7 +14,7 @@ domainurl: https://help.syncfusion.com/grid-sdk
 
 Column validation allows you to validate the edited or added row data and it display errors for invalid fields before saving data.
 TreeGrid uses `Form Validator` component for column validation.
-You can set validation rules by defining the [`columns.validationRules`](../../api/treegrid/column/#validationrules).
+You can set validation rules by defining the [`columns.validationRules`](../../api/treegrid/column#validationrules).
 
 {% if page.publishingplatform == "typescript" %}
 

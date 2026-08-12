@@ -4,14 +4,13 @@ title: Change orientation of header text in TypeScript Treegrid control | Syncfu
 description: Learn here all about Change orientation of header text in Syncfusion TypeScript Treegrid control of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Change orientation of header text 
-publishingplatform: grid-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
 # Change orientation of header text in TypeScript Treegrid control
 
-You can change the orientation of the header text by using the [`customAttributes`](../../api/treegrid/column/#customattributes) property.
+You can change the orientation of the header text by using the [`customAttributes`](../../api/treegrid/column#customattributes) property.
 
 Ensure the following steps:
 
@@ -28,7 +27,7 @@ Create a CSS class with orientation style for the treegrid header cell.
 
 **Step 2**:
 
-Add the custom CSS class to a particular column by using the [`customAttributes`](../../api/treegrid/column/#customattributes) property.
+Add the custom CSS class to a particular column by using the [`customAttributes`](../../api/treegrid/column#customattributes) property.
 
 ```ts
     { field: 'taskName', headerText: 'Task Name', textAlign: 'Center', customAttributes: {class: 'orientationcss'}, width: 80 }

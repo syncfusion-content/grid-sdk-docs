@@ -4,14 +4,13 @@ title: Provide custom data source and enabling filtering to drop down list in Ty
 description: Learn here all about Provide custom data source and enabling filtering to drop down list in Syncfusion TypeScript Treegrid control of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Provide custom data source and enabling filtering to drop down list 
-publishingplatform: grid-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
 # Provide custom data source and enabling filtering to drop down list in TypeScript Treegrid control
 
-You can provide data source to the DropDownList by using the **params** of [`columns.edit`](../api/treegrid/column/#edit) property.
+You can provide data source to the DropDownList by using the **params** of [`columns.edit`](../api/treegrid/column#edit) property.
 
 While setting new data source using edit params, you must specify a new **query** property for the DropDownList as follows,
 
@@ -27,9 +26,9 @@ While setting new data source using edit params, you must specify a new **query*
       }
 ```
 
-You can also enable filtering for the DropDownList by passing the [`allowFiltering`](../../api/drop-down-list/#allowfiltering) as **true** to the edit params.
+You can also enable filtering for the DropDownList by passing the [`allowFiltering`](../../api/drop-down-list#allowfiltering) as **true** to the edit params.
 
-In the below demo, DropDownList is rendered with custom [`dataSource`](../../api/drop-down-list/#datasource) for the *Priority* column and enabled filtering to search DropDownList items.
+In the below demo, DropDownList is rendered with custom [`dataSource`](../../api/drop-down-list#datasource) for the *Priority* column and enabled filtering to search DropDownList items.
 
 {% if page.publishingplatform == "typescript" %}
 

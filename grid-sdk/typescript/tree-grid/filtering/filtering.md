@@ -4,14 +4,13 @@ title: Filtering in TypeScript Treegrid control | Syncfusion
 description: Learn here all about Filtering in Syncfusion TypeScript Treegrid control of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Filtering 
-publishingplatform: grid-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
 # Filtering in TypeScript Treegrid control
 
-Filtering allows you to view specific or related records based on filter criteria. To enable filtering in the TreeGrid, set the [`allowFiltering`](../../api/treegrid/#allowfiltering) to true. Filtering options can be configured through [`filterSettings`](../../api/treegrid/#filtersettings).
+Filtering allows you to view specific or related records based on filter criteria. To enable filtering in the TreeGrid, set the [`allowFiltering`](../../api/treegrid#allowfiltering) to true. Filtering options can be configured through [`filterSettings`](../../api/treegrid#filtersettings).
 
 To use filter, inject the `Filter` module in the treegrid.
 
@@ -42,13 +41,13 @@ To use filter, inject the `Filter` module in the treegrid.
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/treegrid/filtering-cs9" %}
 {% endif %}
 
-> * You can apply and clear filtering by using [`filterByColumn`](../../api/treegrid/#filterbycolumn) and [`clearFiltering`](../../api/treegrid/#clearfiltering) methods.
+> * You can apply and clear filtering by using [`filterByColumn`](../../api/treegrid#filterbycolumn) and [`clearFiltering`](../../api/treegrid#clearfiltering) methods.
 > * To disable filtering for a particular column, set
-[`columns.allowFiltering`](../../api/treegrid/column/#allowfiltering) to false.
+[`columns.allowFiltering`](../../api/treegrid/column#allowfiltering) to false.
 
 ## Filter hierarchy modes
 
-TreeGrid provides support for a set of filtering modes with [`filterSettings.filterHierarchyMode`](../../api/treegrid/filterSettingsModel/#hierarchymode) property.
+TreeGrid provides support for a set of filtering modes with [`filterSettings.filterHierarchyMode`](../../api/treegrid/filterSettingsModel#hierarchymode) property.
 The below are the type of filter mode available in TreeGrid.
 
 * **Parent** : This is the default filter hierarchy mode in TreeGrid. The filtered records are displayed with its parent records, if the filtered records not have any parent record then the filtered records only displayed.
@@ -89,7 +88,7 @@ The below are the type of filter mode available in TreeGrid.
 ## Initial filter
 
 To apply the filter at initial rendering, set the filter `predicate` object in
-[`filterSettings.columns`](../../api/treegrid/filterSettingsModel/#columns).
+[`filterSettings.columns`](../../api/treegrid/filterSettingsModel#columns).
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -140,7 +139,7 @@ lessthanorequal |Checks whether the value is less than or equal to the specifie
 
 ## Diacritics
 
-By default, treegrid ignores diacritic characters while filtering. To include diacritic characters, set the [`filterSettings.ignoreAccent`](../../api/treegrid/filterSettingsModel/#ignoreaccent) as `true`.
+By default, treegrid ignores diacritic characters while filtering. To include diacritic characters, set the [`filterSettings.ignoreAccent`](../../api/treegrid/filterSettingsModel#ignoreaccent) as `true`.
 
 In the following sample, type **aero** in `Name` column to filter diacritic characters.
 
@@ -171,4 +170,4 @@ In the following sample, type **aero** in `Name` column to filter diacritic char
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/treegrid/filtering-cs11" %}
 {% endif %}
 
-> You can refer to our [`JavaScript Tree Grid`](https://www.syncfusion.com/javascript-ui-controls/js-tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our JavaScript Tree Grid example [`JavaScript Tree Grid example`](https://ej2.syncfusion.com/demos/#/material/tree-grid/treegrid-overview.html) to knows how to present and manipulate data.
+> You can refer to our [`JavaScript Tree Grid`](https://www.syncfusion.com/javascript-ui-controls/js-tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our JavaScript Tree Grid example [`JavaScript Tree Grid example`](https://ej2.syncfusion.com/demos#/material/tree-grid/treegrid-overview.html) to knows how to present and manipulate data.

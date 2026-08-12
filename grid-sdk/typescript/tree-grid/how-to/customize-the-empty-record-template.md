@@ -4,7 +4,6 @@ title: Empty Record Template in TypeScript TreeGrid | Syncfusion
 description: Learn here all about Customize the Empty Record Template in Syncfusion TypeScript TreeGrid of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Customize the Empty Record Template 
-publishingplatform: grid-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---

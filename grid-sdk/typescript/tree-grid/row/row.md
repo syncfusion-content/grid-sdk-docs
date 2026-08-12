@@ -4,7 +4,6 @@ title: Row in TypeScript Treegrid control | Syncfusion
 description: Learn here all about Row in Syncfusion TypeScript Treegrid control of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Row 
-publishingplatform: grid-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
@@ -15,8 +14,8 @@ The row represents record details fetched from data source.
 
 ## Customize rows
 
-You can customize the appearance of a row by using the [`rowDataBound`](../../api/treegrid/#rowdatabound) event.
-The [`rowDataBound`](../../api/treegrid/#rowdatabound) event triggers for every row. In the event handler, you can get the `RowDataBoundEventArgs` that contains details of the row.
+You can customize the appearance of a row by using the [`rowDataBound`](../../api/treegrid#rowdatabound) event.
+The [`rowDataBound`](../../api/treegrid#rowdatabound) event triggers for every row. In the event handler, you can get the `RowDataBoundEventArgs` that contains details of the row.
 
 {% if page.publishingplatform == "typescript" %}
 

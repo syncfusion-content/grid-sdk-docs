@@ -4,7 +4,6 @@ title: Excel export options in TypeScript Treegrid control | Syncfusion
 description: Learn here all about Excel export options in Syncfusion TypeScript Treegrid control of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Excel export options 
-publishingplatform: grid-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
@@ -48,7 +47,7 @@ The excel export provides an option to export hidden columns of treegrid by defi
 
 ### Show or hide columns on exported excel
 
-You can show a hidden column or hide a visible column while printing the treegrid using [`toolbarClick`](../../api/treegrid#toolbarclick) and [`excelExportComplete`](../../api/treegrid/#excelExportComplete) events.
+You can show a hidden column or hide a visible column while printing the treegrid using [`toolbarClick`](../../api/treegrid#toolbarclick) and [`excelExportComplete`](../../api/treegrid#excelExportComplete) events.
 
 In the `toolbarClick` event, based on `args.item.text` as `Excel Export`. We can show or hide columns by setting `column.visible` property to `true` or `false` respectively.
 
@@ -85,7 +84,7 @@ In the below example, we have `Duration` as a hidden column in the treegrid. Whi
 
 ### File name for exported document
 
-You can assign the file name for the exported document by defining `fileName` property in [`ExcelExportProperties`](../../api/treegrid/#excelExportProperties).
+You can assign the file name for the exported document by defining `fileName` property in [`ExcelExportProperties`](../../api/treegrid#excelExportProperties).
 
 {% if page.publishingplatform == "typescript" %}
 

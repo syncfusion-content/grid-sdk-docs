@@ -4,7 +4,6 @@ title: Excel cell style customization in TypeScript Treegrid control | Syncfusio
 description: Learn here all about Excel cell style customization in Syncfusion TypeScript Treegrid control of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Excel cell style customization 
-publishingplatform: grid-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
@@ -13,7 +12,7 @@ domainurl: https://help.syncfusion.com/grid-sdk
 
 ## Conditional cell formatting
 
-TreeGrid cells in the exported Excel can be customized or formatted using [`excelQueryCellInfo`](../../api/treegrid/#excelQueryCellInfo) event. In this event, we can format the treegrid cells of exported PDF document based on the column cell value.
+TreeGrid cells in the exported Excel can be customized or formatted using [`excelQueryCellInfo`](../../api/treegrid#excelQueryCellInfo) event. In this event, we can format the treegrid cells of exported PDF document based on the column cell value.
 
 In the below sample, we have set the background color for `Duration` column in the exported excel by `args.cell` and `backgroundColor` property.
 

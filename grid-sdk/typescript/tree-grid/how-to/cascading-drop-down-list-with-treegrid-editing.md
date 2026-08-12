@@ -2,7 +2,6 @@
 layout: post
 title: Cascading drop down list with treegrid editing in TypeScript Treegrid control | Syncfusion
 description: Learn here all about Cascading drop down list with treegrid editing in Syncfusion TypeScript Treegrid control of Syncfusion Essential JS 2 and more.
-platform: grid-sdk
 control: Cascading drop down list with treegrid editing 
 publishingplatform: grid-sdk
 documentation: ug

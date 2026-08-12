@@ -4,17 +4,16 @@ title: Paging in TypeScript Treegrid control | Syncfusion
 description: Learn here all about Paging in Syncfusion TypeScript Treegrid control of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Paging 
-publishingplatform: grid-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
 # Paging in TypeScript Treegrid control
 
-Paging provides an option to display TreeGrid data in page segments. To enable paging, set the [`allowPaging`](../api/treegrid/#allowpaging) to true. When paging is enabled, pager component renders at the bottom of the treegrid.
-Paging options can be configured through the [`pageSettings`](../api/treegrid/#pagesettings).
+Paging provides an option to display TreeGrid data in page segments. To enable paging, set the [`allowPaging`](../api/treegrid#allowpaging) to true. When paging is enabled, pager component renders at the bottom of the treegrid.
+Paging options can be configured through the [`pageSettings`](../api/treegrid#pagesettings).
 
-To use paging, inject the [`Page`](../api/treegrid/#pagermodule) module in the treegrid.
+To use paging, inject the [`Page`](../api/treegrid#pagermodule) module in the treegrid.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -47,12 +46,12 @@ To use paging, inject the [`Page`](../api/treegrid/#pagermodule) module in the t
 
 ## Page Size Mode
 
-Two behaviors are available in TreeGrid paging to display certain number of records in a current page. Following are the two types of [`pageSizeMode`](../api/treegrid/pageSettingsModel/#pagesizemode).
+Two behaviors are available in TreeGrid paging to display certain number of records in a current page. Following are the two types of [`pageSizeMode`](../api/treegrid/pageSettingsModel#pagesizemode).
 
-* **All** : This is the default mode. The number of records in a page is based on [`pageSize`](../api/treegrid/pageSettingsModel/#pagesize) property.
-* **Root** : The number of root nodes or the 0th level records to be displayed per page is based on [`pageSize`](../api/treegrid/pageSettingsModel/#pagesize) property.
+* **All** : This is the default mode. The number of records in a page is based on [`pageSize`](../api/treegrid/pageSettingsModel#pagesize) property.
+* **Root** : The number of root nodes or the 0th level records to be displayed per page is based on [`pageSize`](../api/treegrid/pageSettingsModel#pagesize) property.
 
-With [`pageSizeMode`](../api/treegrid/pageSettingsModel/#pagesizemode) property as `Root`, only the root level or the 0th level records are considered in records count.
+With [`pageSizeMode`](../api/treegrid/pageSettingsModel#pagesizemode) property as `Root`, only the root level or the 0th level records are considered in records count.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -84,8 +83,8 @@ With [`pageSizeMode`](../api/treegrid/pageSettingsModel/#pagesizemode) property 
 ## Template
 
 You can use custom elements inside the pager instead of default elements.
-The custom elements can be defined by using the [`template`](../api/treegrid/pageSettingsModel/#template) property.
-Inside this template, you can access the [`currentPage`](../api/treegrid/pageSettingsModel/#currentpage), [`pageSize`](../api/treegrid/pageSettingsModel/#pagesize), [`pageCount`](../api/treegrid/pageSettingsModel/#pagecount), `totalPage` and `totalRecordCount` values.
+The custom elements can be defined by using the [`template`](../api/treegrid/pageSettingsModel#template) property.
+Inside this template, you can access the [`currentPage`](../api/treegrid/pageSettingsModel#currentpage), [`pageSize`](../api/treegrid/pageSettingsModel#pagesize), [`pageCount`](../api/treegrid/pageSettingsModel#pagecount), `totalPage` and `totalRecordCount` values.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -116,7 +115,7 @@ Inside this template, you can access the [`currentPage`](../api/treegrid/pageSet
 
 ## Pager with Page Size Dropdown
 
-The pager Dropdown allows you to change the number of records in the TreeGrid dynamically. It can be enabled by defining the [`pageSettings.pageSizes`](../api/treegrid/pageSettingsModel/#pagesizes) property as true.
+The pager Dropdown allows you to change the number of records in the TreeGrid dynamically. It can be enabled by defining the [`pageSettings.pageSizes`](../api/treegrid/pageSettingsModel#pagesizes) property as true.
 
 ```ts
 pageSettings: {pageSize: 7, pageSizes: true},

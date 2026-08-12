@@ -4,7 +4,6 @@ title: Customize the icon for column menu in TypeScript Treegrid control | Syncf
 description: Learn here all about Customize the icon for column menu in Syncfusion TypeScript Treegrid control of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Customize the icon for column menu 
-publishingplatform: grid-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---

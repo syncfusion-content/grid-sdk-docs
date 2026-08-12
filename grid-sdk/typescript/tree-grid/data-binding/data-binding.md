@@ -4,14 +4,13 @@ title: Data binding in TypeScript Treegrid control | Syncfusion
 description: Learn here all about Data binding in Syncfusion TypeScript Treegrid control of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Data binding 
-publishingplatform: grid-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
 # Data binding in TypeScript Treegrid control
 
-The TreeGrid uses `DataManager`, which supports both RESTful JSON data services binding and local JavaScript object array binding. The [`dataSource`](../../api/treegrid/#dataSource) property can be assigned either with the instance of `DataManager` or JavaScript object array collection.
+The TreeGrid uses `DataManager`, which supports both RESTful JSON data services binding and local JavaScript object array binding. The [`dataSource`](../../api/treegrid#dataSource) property can be assigned either with the instance of `DataManager` or JavaScript object array collection.
 It supports two kinds of data binding method:
 
 * Local data
@@ -19,7 +18,7 @@ It supports two kinds of data binding method:
 
 ## Binding with ajax
 
-You can use TreeGrid [`dataSource`](../../api/treegrid/#datasource) property to bind the data source to TreeGrid from external Fetch request. In the below code we have fetched the data source from the server with the help of Ajax request and provided that to [`dataSource`](../../api/treegrid/#datasource) property by using `onSuccess` event of the Fetch.
+You can use TreeGrid [`dataSource`](../../api/treegrid#datasource) property to bind the data source to TreeGrid from external Fetch request. In the below code we have fetched the data source from the server with the help of Ajax request and provided that to [`dataSource`](../../api/treegrid#datasource) property by using `onSuccess` event of the Fetch.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -58,7 +57,7 @@ You can use TreeGrid [`dataSource`](../../api/treegrid/#datasource) property to 
 
 ## Handling expandStateMapping
 
-To denotes the expand status of parent row, define the [`expandStateMapping`](https://ej2.syncfusion.com/documentation/api/treegrid/#expandstatemapping) property of tree grid.
+To denotes the expand status of parent row, define the [`expandStateMapping`](https://ej2.syncfusion.com/documentation/api/treegrid#expandstatemapping) property of tree grid.
 
 The `expandStateMapping` property maps the field name in data source, that denotes whether parent record is in expanded or collapsed state and this is useful to renders parent row in expanded or collapsed state based on this mapping property value in data source.
 
@@ -210,11 +209,11 @@ data.executeQuery(new Query().where('ParentId', 'equal', null).take(3).skip(0).r
 
 ### Handling child data
 
-Using the custom binding feature you can bind the child data for a parent record as per your custom logic. When a parent record is expanded, [`dataStateChange`](../../api/treegrid/#datastatechange) event is triggered in which you can assign your custom data to the `childData` property of the [`dataStateChange`](../../api/treegrid/#datastatechange) event arguments.
+Using the custom binding feature you can bind the child data for a parent record as per your custom logic. When a parent record is expanded, [`dataStateChange`](../../api/treegrid#datastatechange) event is triggered in which you can assign your custom data to the `childData` property of the [`dataStateChange`](../../api/treegrid#datastatechange) event arguments.
 After assigning the child data, `childDataBind` method should be called from the
-[`dataStateChange`](../../api/treegrid/#datastatechange) event arguments to indicate that the data is bound.
+[`dataStateChange`](../../api/treegrid#datastatechange) event arguments to indicate that the data is bound.
 
-> In this context, initially we have assigned only the parent records to the treegrid dataSource and fetched the required child records in the [`dataStateChange`](../../api/treegrid/#datastatechange) event.
+> In this context, initially we have assigned only the parent records to the treegrid dataSource and fetched the required child records in the [`dataStateChange`](../../api/treegrid#datastatechange) event.
 
 ````ts
 
@@ -340,7 +339,7 @@ data.executeQuery(new Query().where('ParentId', 'equal', null).take(3).skip(0).r
 
 ### Performing CRUD actions
 
-The [`dataSourceChanged`](../../api/treegrid/#datasourcechanged) event will be triggered for updating the treegrid data. You can perform the save operation based on the event arguments and call the endEdit method to indicate the completion of save operation.
+The [`dataSourceChanged`](../../api/treegrid#datasourcechanged) event will be triggered for updating the treegrid data. You can perform the save operation based on the event arguments and call the endEdit method to indicate the completion of save operation.
 
 ````ts
 
@@ -418,7 +417,7 @@ The footer aggregate values  should be calculated and sent along with the **data
 
 ### Provide excel filter data source
 
-The [`dataStateChange`](../../api/treegrid/#datastatechange) event will be triggered with appropriate arguments when the excel filter requests the filter choice data source. You need to resolve the excel filter data source using the **dataSource** resolver function from the state argument as follows.
+The [`dataStateChange`](../../api/treegrid#datastatechange) event will be triggered with appropriate arguments when the excel filter requests the filter choice data source. You need to resolve the excel filter data source using the **dataSource** resolver function from the state argument as follows.
 
 ```ts
 

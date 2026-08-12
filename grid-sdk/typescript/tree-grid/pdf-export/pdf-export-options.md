@@ -4,7 +4,6 @@ title: Pdf export options in TypeScript Treegrid control | Syncfusion
 description: Learn here all about Pdf export options in Syncfusion TypeScript Treegrid control of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Pdf export options 
-publishingplatform: grid-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---

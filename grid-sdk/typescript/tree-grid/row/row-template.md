@@ -4,14 +4,13 @@ title: Row template in TypeScript Treegrid control | Syncfusion
 description: Learn here all about Row template in Syncfusion TypeScript Treegrid control of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Row template 
-publishingplatform: grid-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
 # Row template in TypeScript Treegrid control
 
-The [`rowTemplate`](../../api/treegrid/#rowtemplate) has an option to customise the look and behavior of the treegrid rows. The [`rowTemplate`](../../api/treegrid/#rowtemplate) property accepts either the template string or HTML element ID.
+The [`rowTemplate`](../../api/treegrid#rowtemplate) has an option to customise the look and behavior of the treegrid rows. The [`rowTemplate`](../../api/treegrid#rowtemplate) property accepts either the template string or HTML element ID.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -40,11 +39,11 @@ The [`rowTemplate`](../../api/treegrid/#rowtemplate) has an option to customise 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/treegrid/row-template-cs1" %}
 {% endif %}
 
-The [`rowTemplate`](../../api/treegrid/#rowtemplate) property accepts only the TR element.
+The [`rowTemplate`](../../api/treegrid#rowtemplate) property accepts only the TR element.
 
 ## Row template with formatting
 
-If the [`rowTemplate`](../../api/treegrid/#rowtemplate) is used, the value cannot be  formatted  inside the template using the [`columns.format`](../../api/treegrid/column/#format) property. In that case, a function should be defined globally to format the value and invoke it inside the template.
+If the [`rowTemplate`](../../api/treegrid#rowtemplate) is used, the value cannot be  formatted  inside the template using the [`columns.format`](../../api/treegrid/column#format) property. In that case, a function should be defined globally to format the value and invoke it inside the template.
 
 {% if page.publishingplatform == "typescript" %}
 

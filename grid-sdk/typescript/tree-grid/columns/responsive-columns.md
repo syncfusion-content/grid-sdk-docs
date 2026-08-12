@@ -4,7 +4,6 @@ title: Responsive columns in TypeScript Treegrid control | Syncfusion
 description: Learn here all about Responsive columns in Syncfusion TypeScript Treegrid control of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Responsive columns 
-publishingplatform: grid-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
@@ -12,8 +11,8 @@ domainurl: https://help.syncfusion.com/grid-sdk
 # Responsive columns in TypeScript Treegrid control
 
 You can toggle column visibility based on media queries which are defined
-at the [`hideAtMedia`](../../api/treegrid/column/#hideatmedia).
-The [`hideAtMedia`](../../api/treegrid/column/#hideatmedia) accepts valid
+at the [`hideAtMedia`](../../api/treegrid/column#hideatmedia).
+The [`hideAtMedia`](../../api/treegrid/column#hideatmedia) accepts valid
 [Media Queries]( http://cssmediaqueries.com/what-are-css-media-queries.html ).
 
 {% if page.publishingplatform == "typescript" %}

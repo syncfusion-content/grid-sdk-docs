@@ -4,7 +4,6 @@ title: Row spanning in TypeScript TreeGrid control | Syncfusion
 description: Learn here all about Row spanning in Syncfusion TypeScript TreeGrid control of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Row spanning 
-publishingplatform: grid-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---

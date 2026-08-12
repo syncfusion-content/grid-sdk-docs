@@ -4,7 +4,6 @@ title: Pdf export in TypeScript Treegrid control | Syncfusion
 description: Learn here all about Pdf export in Syncfusion TypeScript Treegrid control of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Pdf export 
-publishingplatform: grid-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
@@ -12,7 +11,7 @@ domainurl: https://help.syncfusion.com/grid-sdk
 # Pdf export in TypeScript Treegrid control
 
 PDF export allows exporting TreeGrid data to PDF document. You need to use the
- [`pdfExport`](../../api/treegrid/#pdfexport) method for exporting. To enable PDF export in the treegrid, set the [`allowPdfExport`](../../api/treegrid/#allowpdfexport) as true.
+ [`pdfExport`](../../api/treegrid#pdfexport) method for exporting. To enable PDF export in the treegrid, set the [`allowPdfExport`](../../api/treegrid#allowpdfexport) as true.
 
 To use PDF export, inject the `PdfExport` module in treegrid.
 

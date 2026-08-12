@@ -4,7 +4,6 @@ title: Display foreign key values in treegrid in TypeScript Treegrid control | S
 description: Learn here all about Display foreign key values in treegrid in Syncfusion TypeScript Treegrid control of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Display foreign key values in treegrid 
-publishingplatform: grid-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
@@ -13,7 +12,7 @@ domainurl: https://help.syncfusion.com/grid-sdk
 
 Since Tree Grid Databinding concept is of hierarchy relationship, we do not provide in-built support for foreignKey datasource.
 
-To display the foreignKey value at initial rendering, we can use the [`queryCellInfo`](../api/treegrid/#querycellinfo) event of the Tree Grid and also by using the [`editType`](../api/treegrid/column/#edittype) and [`columns.edit`](../api/treegrid/column/#edit) properties of Tree Grid Column, we can render Dropdownlist with external or foreign dataSource.
+To display the foreignKey value at initial rendering, we can use the [`queryCellInfo`](../api/treegrid#querycellinfo) event of the Tree Grid and also by using the [`editType`](../api/treegrid/column#edittype) and [`columns.edit`](../api/treegrid/column#edit) properties of Tree Grid Column, we can render Dropdownlist with external or foreign dataSource.
 
 {% if page.publishingplatform == "typescript" %}
 

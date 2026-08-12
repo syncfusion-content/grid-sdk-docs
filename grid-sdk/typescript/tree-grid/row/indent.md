@@ -4,7 +4,6 @@ title: Indent in TypeScript Treegrid control | Syncfusion
 description: Learn here all about Indent in Syncfusion TypeScript Treegrid control of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Indent 
-publishingplatform: grid-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
@@ -44,7 +43,7 @@ To use the indent and outdent feature, inject the `RowDD` module in the Tree Gri
 
 ## Indent/Outdent a row programmatically
 
-You can change the hierarchy level of record programmatically using [indent](https://ej2.syncfusion.com/javascript/documentation/api/treegrid/#indent) and [outdent](https://ej2.syncfusion.com/javascript/documentation/api/treegrid/#outdent) methods.
+You can change the hierarchy level of record programmatically using [indent](https://ej2.syncfusion.com/javascript/documentation/api/treegrid#indent) and [outdent](https://ej2.syncfusion.com/javascript/documentation/api/treegrid#outdent) methods.
 
 {% if page.publishingplatform == "typescript" %}
 

@@ -4,14 +4,13 @@ title: Print in TypeScript Treegrid control | Syncfusion
 description: Learn here all about Print in Syncfusion TypeScript Treegrid control of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Print 
-publishingplatform: grid-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
 # Print in TypeScript Treegrid control
 
-To print the TreeGrid, use the [`print`](../api/treegrid/#print) method from treegrid instance. The print option can be displayed on the [`toolbar`](../api/treegrid/#toolbar) by adding the `print` toolbar item.
+To print the TreeGrid, use the [`print`](../api/treegrid#print) method from treegrid instance. The print option can be displayed on the [`toolbar`](../api/treegrid#toolbar) by adding the `print` toolbar item.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -51,7 +50,7 @@ Some of the print options cannot be configured through JavaScript code. So, you 
 
 ## Print using an external button
 
-To print the treegrid from an external button, invoke the [`print`](../api/treegrid/#print) method.
+To print the treegrid from an external button, invoke the [`print`](../api/treegrid#print) method.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -82,7 +81,7 @@ To print the treegrid from an external button, invoke the [`print`](../api/treeg
 
 ## Print the visible page
 
-By default, the treegrid prints all the pages. To print the current page alone, set the [`printMode`](../api/treegrid/#printmode) to `CurrentPage`.
+By default, the treegrid prints all the pages. To print the current page alone, set the [`printMode`](../api/treegrid#printmode) to `CurrentPage`.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -121,7 +120,7 @@ To show large number of columns when printing, adjust the scale option from prin
 
 ## Show or Hide columns while Printing
 
-You can show a hidden column or hide a visible column while printing the treegrid using [`toolbarClick`](../api/treegrid/#toolbarclick) and [`printComplete`](../api/treegrid/#printcomplete) events.
+You can show a hidden column or hide a visible column while printing the treegrid using [`toolbarClick`](../api/treegrid#toolbarclick) and [`printComplete`](../api/treegrid#printcomplete) events.
 
 In the `toolbarClick` event, based on `args.item.text` as `Print`. We can show or hide columns by setting `column.visible` property to `true` or `false` respectively.
 

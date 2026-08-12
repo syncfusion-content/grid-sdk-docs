@@ -4,14 +4,13 @@ title: Get or set local storage value in TypeScript Treegrid control | Syncfusio
 description: Learn here all about Get or set local storage value in Syncfusion TypeScript Treegrid control of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Get or set local storage value 
-publishingplatform: grid-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
 # Get or set local storage value in TypeScript Treegrid control
 
-If the [`enablePersistence`](../../api/treegrid/#enablepersistence) property is set to true, the treegrid property value is saved in the `window.localStorage` for reference. You can get/set the localStorage value by using the `getItem`/`setItem` method in the `window.localStorage`.
+If the [`enablePersistence`](../../api/treegrid#enablepersistence) property is set to true, the treegrid property value is saved in the `window.localStorage` for reference. You can get/set the localStorage value by using the `getItem`/`setItem` method in the `window.localStorage`.
 
 ```ts
 //get the TreeGrid model.

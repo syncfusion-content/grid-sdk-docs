@@ -4,7 +4,6 @@ title: Persisting data in server in TypeScript Treegrid control | Syncfusion
 description: Learn here all about Persisting data in server in Syncfusion TypeScript Treegrid control of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Persisting data in server 
-publishingplatform: grid-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---

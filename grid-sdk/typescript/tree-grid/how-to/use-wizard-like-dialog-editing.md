@@ -4,14 +4,13 @@ title: Use wizard like dialog editing in TypeScript Treegrid control | Syncfusio
 description: Learn here all about Use wizard like dialog editing in Syncfusion TypeScript Treegrid control of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Use wizard like dialog editing 
-publishingplatform: grid-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
 # Use wizard like dialog editing in TypeScript Treegrid control
 
-Wizard helps you create intuitive step-by-step forms to fill. You can achieve the wizard like editing by using the dialog template feature. It support your own editing template by defining [`editSettings.mode`](../api/treegrid/editSettings/#mode) as **Dialog** and [`editSetting.template`](../api/treegrid/editSettings/#template) as SCRIPT element ID or HTML string which holds the template.
+Wizard helps you create intuitive step-by-step forms to fill. You can achieve the wizard like editing by using the dialog template feature. It support your own editing template by defining [`editSettings.mode`](../api/treegrid/editSettings#mode) as **Dialog** and [`editSetting.template`](../api/treegrid/editSettings#template) as SCRIPT element ID or HTML string which holds the template.
 
 The following example demonstrate the wizard like editing in the Tree Grid with the obtrusive Validation.
 

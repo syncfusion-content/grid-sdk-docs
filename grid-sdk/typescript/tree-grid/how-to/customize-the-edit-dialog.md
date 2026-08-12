@@ -4,14 +4,13 @@ title: Customize the edit dialog in TypeScript Treegrid control | Syncfusion
 description: Learn here all about Customize the edit dialog in Syncfusion TypeScript Treegrid control of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Customize the edit dialog 
-publishingplatform: grid-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
 # Customize the edit dialog in TypeScript Treegrid control
 
-You can customize the appearance of the edit dialog in the [`actionComplete`](../api/treegrid/#actioncomplete) event based on **requestType** as **beginEdit** or **add**.
+You can customize the appearance of the edit dialog in the [`actionComplete`](../api/treegrid#actioncomplete) event based on **requestType** as **beginEdit** or **add**.
 
 In the below example, we have changed the dialog's header text for editing and adding records.
 

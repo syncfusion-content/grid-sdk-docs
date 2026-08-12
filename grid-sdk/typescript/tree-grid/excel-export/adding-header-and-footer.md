@@ -4,7 +4,6 @@ title: Adding header and footer in TypeScript Treegrid control | Syncfusion
 description: Learn here all about Adding header and footer in Syncfusion TypeScript Treegrid control of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Adding header and footer 
-publishingplatform: grid-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
