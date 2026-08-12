@@ -3,8 +3,7 @@ layout: post
 title: TypeScript TreeGrid Row Spanning | Syncfusion
 description: Learn how to use row spanning in TypeScript TreeGrid to merge cells across rows and create customized data layouts and presentations.
 platform: grid-sdk
-control: Row spanning 
-publishingplatform: grid-sdk
+control: Row spanning
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---

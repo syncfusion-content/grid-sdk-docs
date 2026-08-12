@@ -3,8 +3,7 @@ layout: post
 title: TypeScript TreeGrid Filtered Data Export | Syncfusion
 description: Learn how to export filtered data in the TypeScript TreeGrid, including specifying filtered results using PdfExportProperties for exporting.
 platform: grid-sdk
-control: Exporting filtered data 
-publishingplatform: grid-sdk
+control: Exporting filtered data
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---

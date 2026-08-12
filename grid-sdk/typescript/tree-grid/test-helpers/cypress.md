@@ -3,8 +3,7 @@ layout: post
 title: TypeScript TreeGrid Cypress Testing | Syncfusion
 description: Learn how to test TypeScript TreeGrid using Cypress with practical examples for end-to-end testing and application quality assurance.
 platform: grid-sdk
-control: Cypress 
-publishingplatform: grid-sdk
+control: Cypress
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
