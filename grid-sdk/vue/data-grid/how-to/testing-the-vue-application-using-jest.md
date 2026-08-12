@@ -124,7 +124,7 @@ The DOM testing involves testing the behavior and interact of Vue component. Thi
 
 **Example:**
 
-The `it` block is used to define a test case for the "Length of the record". Within the test case, the `shallowMount` function from the **@vue/test-utils** package is used to create a shallow wrapper for the **App** component. After, you need to create the instance of grid component. We check that the data grid in the data source has the appropriate number of data records. The [dataSource](https://ej2.syncfusion.com/vue/documentation/api/grid/#datasource) property is employed to retrieve the record of the data. By utilizing this property, we can verify the accurate population of data in the grid component.
+The `it` block is used to define a test case for the "Length of the record". Within the test case, the `shallowMount` function from the **@vue/test-utils** package is used to create a shallow wrapper for the **App** component. After, you need to create the instance of grid component. We check that the data grid in the data source has the appropriate number of data records. The [dataSource](https://ej2.syncfusion.com/vue/documentation/api/grid#datasource) property is employed to retrieve the record of the data. By utilizing this property, we can verify the accurate population of data in the grid component.
 
 ```typescript
 it('Length of the record', () => {
@@ -166,5 +166,5 @@ Run the following command to execute the Jest test case.
 npm run test
 ```
 
-> * This is only for local data. You can use the [currentViewData](https://ej2.syncfusion.com/vue/documentation/api/grid/#currentviewdata) property by rendering the remote data.
+> * This is only for local data. You can use the [currentViewData](https://ej2.syncfusion.com/vue/documentation/api/grid#currentviewdata) property by rendering the remote data.
 > * You can find the sample of the Unit Jest testing in DataGrid [here](https://github.com/SyncfusionExamples/DataGrid-Vue-test-case/tree/master)

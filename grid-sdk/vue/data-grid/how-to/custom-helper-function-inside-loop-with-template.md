@@ -10,7 +10,7 @@ domainurl: https://help.syncfusion.com/grid-sdk
 
 # Custom Column Templates in Vue Data Grid
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Vue Grid allows you to use custom helpers inside the loop with [template](https://ej2.syncfusion.com/vue/documentation/api/grid/column/#template) directive of a column. This feature enables you to create complex templates that can incorporate additional helper functions.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Vue Grid allows you to use custom helpers inside the loop with [template](https://ej2.syncfusion.com/vue/documentation/api/grid/column#template) directive of a column. This feature enables you to create complex templates that can incorporate additional helper functions.
 
 To achieve this, you can use the `v-for` directive inside the template column to iterate through the array and the `v-bind:class` directive to define dynamic function.
 

@@ -122,7 +122,7 @@ The following example demonstrates configuring lazy load grouping with infinite 
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/grid/group/lazy-load-group-cs2" %}
 
-> * The [enableInfiniteScrolling](https://ej2.syncfusion.com/vue/documentation/api/grid/#enableinfinitescrolling) property is optional and can be set to `true` or `false` based on the requirement.
+> * The [enableInfiniteScrolling](https://ej2.syncfusion.com/vue/documentation/api/grid#enableinfinitescrolling) property is optional and can be set to `true` or `false` based on the requirement.
 > * When enabling the `enableInfiniteScrolling` feature, it is necessary to define the [height](https://ej2.syncfusion.com/vue/documentation/api/grid#height) property.
 
 ## Lazy load grouping with virtual scrolling

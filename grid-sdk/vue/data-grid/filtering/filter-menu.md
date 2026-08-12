@@ -27,14 +27,14 @@ Here is an example that demonstrates the usage of the filter menu in the Vue Dat
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/grid/filter/filter-menu-cs1" %}
 
-> * [allowFiltering](https://ej2.syncfusion.com/vue/documentation/api/grid/#allowfiltering) must be set as true to enable filter menu.
-> * By setting [columns.allowFiltering](https://ej2.syncfusion.com/vue/documentation/api/grid/column/#allowfiltering) as false will prevent filter menu rendering for a particular column.
+> * [allowFiltering](https://ej2.syncfusion.com/vue/documentation/api/grid#allowfiltering) must be set as true to enable filter menu.
+> * By setting [columns.allowFiltering](https://ej2.syncfusion.com/vue/documentation/api/grid/column#allowfiltering) as false will prevent filter menu rendering for a particular column.
 
 ## Custom component in filter menu
 
 You can enhance the filtering experience in the Vue Data Grid component by customizing the filter menu with custom components. This allows you to replace the default search box with custom components like dropdowns or textboxes. By default, the filter menu provides an autocomplete component for string type columns, a numeric textbox for number type columns, and a dropdown component for boolean type columns, making it easy to search for values.
 
-To customize the filter menu, you can make use of the [column.filter.ui](https://ej2.syncfusion.com/vue/documentation/api/grid/column/#filter) property. This property allows you to integrate your desired custom filter component into a specific column of the Grid. To implement a custom filter UI, you need to define the following functions:
+To customize the filter menu, you can make use of the [column.filter.ui](https://ej2.syncfusion.com/vue/documentation/api/grid/column#filter) property. This property allows you to integrate your desired custom filter component into a specific column of the Grid. To implement a custom filter UI, you need to define the following functions:
 
 * **create**: This function is responsible for creating the custom component for the filter.
 * **write**: The write function is used to wire events for the custom component. This allows you to handle changes in the custom filter UI.
@@ -62,7 +62,7 @@ Here is a sample code demonstrating how to render a dropdownlist component for t
 
 ## Show 24 hours time format in filter dialog
 
-The Vue Data Grid provides a feature to display the time in a 24-hour format in the date or datetime column filter dialog. By default, the filter dialog displays the time in a 12-hour format (AM/PM) for the date or datetime column. However, you can customize the default format by setting the type as **dateTime** and the format as **M/d/y HH:mm**. To enable the 24-hour time format in the filter dialog, you need to handle the [actionComplete](https://ej2.syncfusion.com/vue/documentation/api/grid/#actioncomplete) event with [requestType](https://ej2.syncfusion.com/vue/documentation/api/grid/filterEventArgs/#requesttype) as [filterAfterOpen](https://ej2.syncfusion.com/vue/documentation/api/grid/action/) and set the `timeFormat` of the `DateTimepicker` to **HH:mm**.
+The Vue Data Grid provides a feature to display the time in a 24-hour format in the date or datetime column filter dialog. By default, the filter dialog displays the time in a 12-hour format (AM/PM) for the date or datetime column. However, you can customize the default format by setting the type as **dateTime** and the format as **M/d/y HH:mm**. To enable the 24-hour time format in the filter dialog, you need to handle the [actionComplete](https://ej2.syncfusion.com/vue/documentation/api/grid#actioncomplete) event with [requestType](https://ej2.syncfusion.com/vue/documentation/api/grid/filterEventArgs#requesttype) as [filterAfterOpen](https://ej2.syncfusion.com/vue/documentation/api/grid/action/) and set the `timeFormat` of the `DateTimepicker` to **HH:mm**.
 
 Here is an example that demonstrates how to show 24 hours time format in filter dialog:
 
@@ -79,7 +79,7 @@ Here is an example that demonstrates how to show 24 hours time format in filter 
 
 ## Customizing filter menu operators list
 
-The Vue Data Grid enables you to customize the default filter operator list by utilizing the [filterSettings.operators](https://ej2.syncfusion.com/vue/documentation/api/grid/filterSettings/#operators) property. This feature allows you to define your own set of operators that will be available in the filter menu. You can customize operators for string, number, date, and boolean data types.
+The Vue Data Grid enables you to customize the default filter operator list by utilizing the [filterSettings.operators](https://ej2.syncfusion.com/vue/documentation/api/grid/filterSettings#operators) property. This feature allows you to define your own set of operators that will be available in the filter menu. You can customize operators for string, number, date, and boolean data types.
 
 The available options for customization are:
 
@@ -103,7 +103,7 @@ Here is an example of how to customize the filter operators list in Vue Data Gri
 
 ## Filter by multiple keywords using filter menu
 
-The Vue Data Grid allows you to perform filtering actions based on multiple keywords, rather than a single keyword, using the filter menu dialog. To enable this feature, you can set [filterSettings.type](https://ej2.syncfusion.com/vue/documentation/api/grid/filterSettings/#type) as **Menu** and render the `MultiSelect` component as a custom component in the filter menu dialog.
+The Vue Data Grid allows you to perform filtering actions based on multiple keywords, rather than a single keyword, using the filter menu dialog. To enable this feature, you can set [filterSettings.type](https://ej2.syncfusion.com/vue/documentation/api/grid/filterSettings#type) as **Menu** and render the `MultiSelect` component as a custom component in the filter menu dialog.
 
 Here is an example that demonstrates how to perform filtering by multiple keywords using the filter menu in the Vue Data Grid:
 
@@ -120,7 +120,7 @@ Here is an example that demonstrates how to perform filtering by multiple keywor
 
 ## Customize the default input component of filter menu dialog
 
-You have the flexibility to customize the default settings of input components within the menu filter by utilizing the `params` property within the column definition of [filter](https://ej2.syncfusion.com/vue/documentation/api/grid/column/#filter). This allows you to modify the behavior of specific filter components to better suit your needs.
+You have the flexibility to customize the default settings of input components within the menu filter by utilizing the `params` property within the column definition of [filter](https://ej2.syncfusion.com/vue/documentation/api/grid/column#filter). This allows you to modify the behavior of specific filter components to better suit your needs.
 
 | Column Type | Default component                                                                                 | Customization                            | API Reference                                                                                             |
 | ----------- | ------------------------------------------------------------------------------------------------- | ---------------------------------------- | --------------------------------------------------------------------------------------------------------- |
@@ -149,7 +149,7 @@ In the example provided below, the **OrderID** and **Freight** columns are numer
 
 By default, the [AutoComplete](https://ej2.syncfusion.com/vue/documentation/auto-complete/getting-started) component in the filter menu dialog is set to automatically fill suggestions as you type. However, there might be scenarios where you want to prevent this autofill behavior to provide a more customized and controlled user experience.
 
-You can prevent autofill feature by setting the [autofill](https://ej2.syncfusion.com/vue/documentation/api/auto-complete#autofill) parameter to **false** using the `params` property within the column definition of the [filter](https://ej2.syncfusion.com/vue/documentation/api/grid/column/#filter). 
+You can prevent autofill feature by setting the [autofill](https://ej2.syncfusion.com/vue/documentation/api/auto-complete#autofill) parameter to **false** using the `params` property within the column definition of the [filter](https://ej2.syncfusion.com/vue/documentation/api/grid/column#filter). 
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
@@ -397,4 +397,4 @@ When using the filter menu, the UI displays operators for all columns based on t
 
 ## See also
 
-* [How to perform filter by using Wildcard and LIKE operator filter](./filtering/#wildcard-and-like-operator-filter)
+* [How to perform filter by using Wildcard and LIKE operator filter](./filtering#wildcard-and-like-operator-filter)

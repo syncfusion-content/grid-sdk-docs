@@ -18,7 +18,7 @@ The PDF export action can be customized based on your requirements using the [pd
 
 Exporting the current page in Vue Data Grid to a PDF document provides the ability to export the currently displayed page records. This feature allows for generating PDF documents that specifically include the content from the current page of the grid.
 
-To export the current page of the grid to a PDF document, you need to specify the [exportType](https://ej2.syncfusion.com/vue/documentation/api/grid/pdfExportProperties/#exporttype) property as **CurrentPage**.
+To export the current page of the grid to a PDF document, you need to specify the [exportType](https://ej2.syncfusion.com/vue/documentation/api/grid/pdfExportProperties#exporttype) property as **CurrentPage**.
 
 The following example demonstrates how to export current page to a PDF document when a toolbar item is clicked.
 
@@ -37,17 +37,17 @@ The following example demonstrates how to export current page to a PDF document 
 
 Exporting only the selected records from the Vue Data Grid allows generating PDF document that include only the desired data from the Grid. This feature provides the flexibility to export specific records that are relevant to the needs, enabling more focused and targeted PDF exports.
 
-To export only the selected records by utilizing the [exportProperties.dataSource](https://ej2.syncfusion.com/vue/documentation/api/grid/pdfExportProperties/#datasource) property in the [toolbarClick](https://ej2.syncfusion.com/vue/documentation/api/grid/#toolbarclick) event. 
+To export only the selected records by utilizing the [exportProperties.dataSource](https://ej2.syncfusion.com/vue/documentation/api/grid/pdfExportProperties#datasource) property in the [toolbarClick](https://ej2.syncfusion.com/vue/documentation/api/grid#toolbarclick) event. 
 
 To export the selected records from the grid to a PDF file, you can follow these steps:
 
 1. Handle the `toolbarClick` event of the Grid.
 
-2. Retrieve the selected records using the [getSelectedRecords](https://ej2.syncfusion.com/vue/documentation/api/grid/#getselectedrecords) method.
+2. Retrieve the selected records using the [getSelectedRecords](https://ej2.syncfusion.com/vue/documentation/api/grid#getselectedrecords) method.
 
 3. Assign the selected data to the `exportProperties.dataSource `property.
 
-4. Trigger the export operation using the [pdfExport](https://ej2.syncfusion.com/vue/documentation/api/grid/#pdfexport) method.
+4. Trigger the export operation using the [pdfExport](https://ej2.syncfusion.com/vue/documentation/api/grid#pdfexport) method.
 
 The following example demonstrates how to export the selected records to a PDF document.
 
@@ -66,17 +66,17 @@ The following example demonstrates how to export the selected records to a PDF d
 
 Exporting only the filtered records from the Vue Data Grid allows you to generate PDF document that include only the data that matches your applied filters. This feature is useful when you want to export a subset of data based on specific criteria.
 
-This can be achieved by defining the filtered data in the [exportProperties.dataSource](https://ej2.syncfusion.com/vue/documentation/api/grid/excelExportProperties/#datasource) property before initiating the export.
+This can be achieved by defining the filtered data in the [exportProperties.dataSource](https://ej2.syncfusion.com/vue/documentation/api/grid/excelExportProperties#datasource) property before initiating the export.
 
 To export only the filtered data from the grid to a PDF file, you can follow these steps:
 
 1. Apply the desired filter to the grid data.
 
-2. Get the filtered data using the [getFilteredRecords](https://ej2.syncfusion.com/documentation/api/grid/#getfilteredrecords) method.
+2. Get the filtered data using the [getFilteredRecords](https://ej2.syncfusion.com/documentation/api/grid#getfilteredrecords) method.
 
 3. Assign the filtered data to the `exportProperties.dataSource` property.
 
-4. Trigger the export operation using the [pdfExport](https://ej2.syncfusion.com/vue/documentation/api/grid/#pdfexport) method.
+4. Trigger the export operation using the [pdfExport](https://ej2.syncfusion.com/vue/documentation/api/grid#pdfexport) method.
 
 The following example demonstrates how to export the filtered records to a PDF document.
 
@@ -95,9 +95,9 @@ The following example demonstrates how to export the filtered records to a PDF d
 
 Exporting hidden columns in the Vue Data Grid allows you to include hidden columns in the exported PDF document. This feature is useful when you have columns that are hidden in the UI but still need to be included in the exported document.
 
-To export hidden columns of the grid to a PDF file, you need to set the [includeHiddenColumn](https://ej2.syncfusion.com/vue/documentation/api/grid/pdfExportProperties/#includehiddencolumn) property as **true** in the [pdfExportProperties](https://ej2.syncfusion.com/vue/documentation/api/grid/pdfExportProperties/) property.
+To export hidden columns of the grid to a PDF file, you need to set the [includeHiddenColumn](https://ej2.syncfusion.com/vue/documentation/api/grid/pdfExportProperties#includehiddencolumn) property as **true** in the [pdfExportProperties](https://ej2.syncfusion.com/vue/documentation/api/grid/pdfExportProperties/) property.
 
-The following example demonstrates how to export hidden columns to a PDF file. In this example, the **ShipCity** column, which is not visible in the UI, is exported to the PDF document. You can also export the grid by changing the `pdfExportProperties.includeHiddenColumn` property based on the switch toggle using the [checked](https://ej2.syncfusion.com/vue/documentation/api/switch/#checked) property of the [EJ2 Toggle Switch Button](https://ej2.syncfusion.com/vue/documentation/switch/getting-started) component.
+The following example demonstrates how to export hidden columns to a PDF file. In this example, the **ShipCity** column, which is not visible in the UI, is exported to the PDF document. You can also export the grid by changing the `pdfExportProperties.includeHiddenColumn` property based on the switch toggle using the [checked](https://ej2.syncfusion.com/vue/documentation/api/switch#checked) property of the [EJ2 Toggle Switch Button](https://ej2.syncfusion.com/vue/documentation/switch/getting-started) component.
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
@@ -116,13 +116,13 @@ The Vue Data Grid component provides the functionality to show or hide columns d
 
 To show or hide columns based on user interaction during the export process, you can follow these steps:
 
-1. Handle the [toolbarClick](https://ej2.syncfusion.com/vue/documentation/api/grid/#toolbarclick) event of the Grid component.
+1. Handle the [toolbarClick](https://ej2.syncfusion.com/vue/documentation/api/grid#toolbarclick) event of the Grid component.
 
-2. Update the visibility of the desired columns by setting the [visible](https://ej2.syncfusion.com/vue/documentation/api/grid/column/#visible) property of the column to **true** or **false**.
+2. Update the visibility of the desired columns by setting the [visible](https://ej2.syncfusion.com/vue/documentation/api/grid/column#visible) property of the column to **true** or **false**.
 
 3. Export the grid to PDF.
 
-4. Handle the [pdfExportComplete](https://ej2.syncfusion.com/vue/documentation/api/grid/#pdfexportcomplete) event to restore the column visibility to its original state.
+4. Handle the [pdfExportComplete](https://ej2.syncfusion.com/vue/documentation/api/grid#pdfexportcomplete) event to restore the column visibility to its original state.
 
 In the following example, the **CustomerID** is initially a hidden column in the grid. However, during the export process, the **CustomerID** column is made visible, while the **ShipCity** column is hidden.
 
@@ -143,13 +143,13 @@ The Vue Data Grid allows you to control the visibility of columns during export 
 
 To implement the show or hide columns feature during Excel export in the Grid, follow these steps:
 
-1. Handle the [toolbarClick](https://ej2.syncfusion.com/vue/documentation/api/grid/#toolbarclick) event of the Grid.
+1. Handle the [toolbarClick](https://ej2.syncfusion.com/vue/documentation/api/grid#toolbarclick) event of the Grid.
 
-2. Update the visibility of the desired columns by setting the [visible](https://ej2.syncfusion.com/vue/documentation/api/grid/column/#visible) property of the column to **true** or **false**.
+2. Update the visibility of the desired columns by setting the [visible](https://ej2.syncfusion.com/vue/documentation/api/grid/column#visible) property of the column to **true** or **false**.
 
-3. Export the Grid to PDF document using [pdfExport](https://ej2.syncfusion.com/vue/documentation/api/grid/#pdfexport) method.
+3. Export the Grid to PDF document using [pdfExport](https://ej2.syncfusion.com/vue/documentation/api/grid#pdfexport) method.
 
-4. Handle the [pdfExportComplete](https://ej2.syncfusion.com/vue/documentation/api/grid/#pdfexportcomplete) event to restore the column visibility to its original state.
+4. Handle the [pdfExportComplete](https://ej2.syncfusion.com/vue/documentation/api/grid#pdfexportcomplete) event to restore the column visibility to its original state.
 
 In the following example, the **ShipName** is initially a hidden column in the Grid. However, during the PDF export process, the **ShipName** column is made visible, while the **OrderDate** column is hidden:
 
@@ -168,7 +168,7 @@ In the following example, the **ShipName** is initially a hidden column in the G
 
 The Vue Data Grid component allows you to change the page orientation of the exported PDF document from the default portrait mode to landscape mode. This feature provides the flexibility to adjust the layout and presentation of the exported PDF according to your needs.
 
-To change the page orientation to landscape for the exported document, you can set the [pageOrientation](https://ej2.syncfusion.com/vue/documentation/api/grid/pdfExportProperties/#pageorientation) property of the [pdfExportProperties](https://ej2.syncfusion.com/vue/documentation/api/grid/pdfExportProperties/) property. 
+To change the page orientation to landscape for the exported document, you can set the [pageOrientation](https://ej2.syncfusion.com/vue/documentation/api/grid/pdfExportProperties#pageorientation) property of the [pdfExportProperties](https://ej2.syncfusion.com/vue/documentation/api/grid/pdfExportProperties/) property. 
 
 The supported `pageOrientation` options are:
 
@@ -176,7 +176,7 @@ The supported `pageOrientation` options are:
 
 2. **Portrait**: Exports the grid with a portrait PDF page orientation.
 
-The following example demonstrates how to export the grid into PDF document by setting the `pdfExportProperties.pageOrientation` property using the [value](https://ej2.syncfusion.com/vue/documentation/api/drop-down-list/#value) property of the `DropDownList` component.
+The following example demonstrates how to export the grid into PDF document by setting the `pdfExportProperties.pageOrientation` property using the [value](https://ej2.syncfusion.com/vue/documentation/api/drop-down-list#value) property of the `DropDownList` component.
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
@@ -193,7 +193,7 @@ The following example demonstrates how to export the grid into PDF document by s
 
 The Vue Data Grid component allows you to customize the page size of the exported PDF document according to your requirements. This feature provides the flexibility to adjust the layout and dimensions of the exported PDF to fit different paper sizes or printing needs. 
 
-To customize the page size for the exported document, you can set the [pageSize](https://ej2.syncfusion.com/vue/documentation/api/grid/pdfExportProperties/#pagesize) property of the [pdfExportProperties](https://ej2.syncfusion.com/vue/documentation/api/grid/pdfExportProperties/) property to the desired page size. 
+To customize the page size for the exported document, you can set the [pageSize](https://ej2.syncfusion.com/vue/documentation/api/grid/pdfExportProperties#pagesize) property of the [pdfExportProperties](https://ej2.syncfusion.com/vue/documentation/api/grid/pdfExportProperties/) property to the desired page size. 
 
 Supported `pdfPageSize` are:
 * Letter
@@ -225,7 +225,7 @@ Supported `pdfPageSize` are:
 * Letter11x17
 * Ledger
 
-The following example demonstrates how to export the grid into PDF document by setting the `pdfExportProperties.pageSize` property by using [value](https://ej2.syncfusion.com/vue/documentation/api/drop-down-list/#value) property of the `DropDownList` component.
+The following example demonstrates how to export the grid into PDF document by setting the `pdfExportProperties.pageSize` property by using [value](https://ej2.syncfusion.com/vue/documentation/api/drop-down-list#value) property of the `DropDownList` component.
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
@@ -242,7 +242,7 @@ The following example demonstrates how to export the grid into PDF document by s
 
 The Vue Data Grid component allows you to specify a custom file name for the exported PDF document. This feature enables you to provide a meaningful and descriptive name for the exported file, making it easier to identify and manage the exported data.
 
-To assign a custom file name for the exported document, you can set the [fileName](https://ej2.syncfusion.com/vue/documentation/api/grid/pdfExportProperties/#filename) property of the [pdfExportProperties](https://ej2.syncfusion.com/vue/documentation/api/grid/pdfExportProperties/) property to the desired file name.
+To assign a custom file name for the exported document, you can set the [fileName](https://ej2.syncfusion.com/vue/documentation/api/grid/pdfExportProperties#filename) property of the [pdfExportProperties](https://ej2.syncfusion.com/vue/documentation/api/grid/pdfExportProperties/) property to the desired file name.
 
 The following example demonstrates how to define a file name using `pdfExportProperties.fileName` property when exporting to PDF, based on the entered value as the file name.
 
@@ -261,9 +261,9 @@ The following example demonstrates how to define a file name using `pdfExportPro
 
 The Vue Data Grid component allows you to display all defined grid columns on a single page even when the number of columns exceeds the maximum limits for columns in the exported PDF document. This ensures that your exported PDF maintains its readability and comprehensiveness.
 
-You can achieve this by utilizing the [pdfExportProperties.allowHorizontalOverflow](https://ej2.syncfusion.com/vue/documentation/api/grid/pdfExportProperties/#allowhorizontaloverflow) property of the grid.
+You can achieve this by utilizing the [pdfExportProperties.allowHorizontalOverflow](https://ej2.syncfusion.com/vue/documentation/api/grid/pdfExportProperties#allowhorizontaloverflow) property of the grid.
 
-In the following example, the [EJ2 Toggle Switch Button](https://ej2.syncfusion.com/vue/documentation/switch/getting-started) component is added to enable and disable the `pdfExportProperties.allowHorizontalOverflow` property. Based on the switch toggle, the `pdfExportProperties.allowHorizontalOverflow` property is updated using the [checked](https://ej2.syncfusion.com/vue/documentation/api/switch/#checked) property, and the export action is performed accordingly when the toolbar is clicked.
+In the following example, the [EJ2 Toggle Switch Button](https://ej2.syncfusion.com/vue/documentation/switch/getting-started) component is added to enable and disable the `pdfExportProperties.allowHorizontalOverflow` property. Based on the switch toggle, the `pdfExportProperties.allowHorizontalOverflow` property is updated using the [checked](https://ej2.syncfusion.com/vue/documentation/api/switch#checked) property, and the export action is performed accordingly when the toolbar is clicked.
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
@@ -282,7 +282,7 @@ The Vue Data Grid component allows you to customize the appearance of grid colum
 
 To customize the grid columns, you can follow these steps:
 
-1. Access the [pdfExportProperties.column](https://ej2.syncfusion.com/vue/documentation/api/grid/pdfExportProperties/#columns) of the Grid component.
+1. Access the [pdfExportProperties.column](https://ej2.syncfusion.com/vue/documentation/api/grid/pdfExportProperties#columns) of the Grid component.
 
 2. Set the `column` object with attributes such as `field`, `headerText`, and `textAlign` to define the desired format.
 
@@ -307,7 +307,7 @@ The Vue Data Grid component provides the ability to customize the font in the ex
 
 ### Default fonts
 
-By default, the Grid uses the **Helvetica** font in the exported document. However, you can change the default font by utilizing the [pdfExportProperties.theme](https://ej2.syncfusion.com/vue/documentation/api/grid/pdfExportProperties/#theme) property. The available default fonts that you can choose from are:
+By default, the Grid uses the **Helvetica** font in the exported document. However, you can change the default font by utilizing the [pdfExportProperties.theme](https://ej2.syncfusion.com/vue/documentation/api/grid/pdfExportProperties#theme) property. The available default fonts that you can choose from are:
 
 * Helvetica
 * TimesRoman
@@ -338,7 +338,7 @@ The following example demonstrates, how to change the default font when exportin
 
 ### Add custom font
 
-In addition to changing the default font, the Vue Data Grid allows you to use a custom font for the Grid header, content, and caption cells in the exported document. This can be achieved by utilizing the [pdfExportProperties.theme](https://ej2.syncfusion.com/vue/documentation/api/grid/pdfExportProperties/#theme) property.
+In addition to changing the default font, the Vue Data Grid allows you to use a custom font for the Grid header, content, and caption cells in the exported document. This can be achieved by utilizing the [pdfExportProperties.theme](https://ej2.syncfusion.com/vue/documentation/api/grid/pdfExportProperties#theme) property.
 
 When using a custom font, it's important to provide the font in a format that can be easily embedded in the exported document. This is typically done by encoding the font file into a base64 string. This base64 encoded font data can then be used within the export settings to ensure the custom font is applied to the exported PDF.
 
@@ -361,7 +361,7 @@ The following example demonstrates how to use the custom **Algeria** font for ex
 
 When exporting data from the Vue Data Grid, you have an option to conditionally format the cells in the exported PDF document. This allows you to customize the appearance of specific cells based on their values or other criteria.
 
-To implement conditional cell formatting, you can utilize the [pdfQueryCellInfo](https://ej2.syncfusion.com/vue/documentation/api/grid/#pdfquerycellinfo) event of the Grid. Within this event, you can access the cell object using the `args.cell` property and modify its properties, such as the background color, based on your desired conditions.
+To implement conditional cell formatting, you can utilize the [pdfQueryCellInfo](https://ej2.syncfusion.com/vue/documentation/api/grid#pdfquerycellinfo) event of the Grid. Within this event, you can access the cell object using the `args.cell` property and modify its properties, such as the background color, based on your desired conditions.
 
 The following example demonstrate how to customize the background color of the **Freight** column in the exported PDF document using the **args.cell** and **backgroundColor** properties of the `pdfQueryCellInfo` event.
 
@@ -378,7 +378,7 @@ The following example demonstrate how to customize the background color of the *
 
 ## Export grid as blob
 
-The Grid offers an option to export the data as a `Blob` instead of downloading it as a file in the browser. To export the grid as a Blob, set the `isBlob` parameter to **true** in the [pdfExport](https://ej2.syncfusion.com/vue/documentation/api/grid/#pdfexport) method. The grid returns the promise of a blob in the [pdfExportComplete](https://ej2.syncfusion.com/vue/documentation/api/grid/#pdfexportcomplete) event.
+The Grid offers an option to export the data as a `Blob` instead of downloading it as a file in the browser. To export the grid as a Blob, set the `isBlob` parameter to **true** in the [pdfExport](https://ej2.syncfusion.com/vue/documentation/api/grid#pdfexport) method. The grid returns the promise of a blob in the [pdfExportComplete](https://ej2.syncfusion.com/vue/documentation/api/grid#pdfexportcomplete) event.
 
 The following example demonstrates how to obtain the blob data of the exported grid by executing the promise in the `pdfExportComplete` event.
 

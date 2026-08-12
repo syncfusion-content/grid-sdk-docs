@@ -42,7 +42,7 @@ The following example demonstrates how to define the `editType` for grid columns
 
 ## Customize TextBox component of stringedit type 
 
-You can customize the default TextBox component in Grid edit form using its property. This customization allows you to configure various properties of the TexBox, tailoring its behavior and appearance to match your specific requirements within the Grid. The behavior of the editor component can be fine-tuned through the [columns->edit->params](https://ej2.syncfusion.com/vue/documentation/api/grid/column/#edit) property.
+You can customize the default TextBox component in Grid edit form using its property. This customization allows you to configure various properties of the TexBox, tailoring its behavior and appearance to match your specific requirements within the Grid. The behavior of the editor component can be fine-tuned through the [columns->edit->params](https://ej2.syncfusion.com/vue/documentation/api/grid/column#edit) property.
 
 Component|Edit Type |Description|Example Customized edit params
 -----|---|-----|-----|
@@ -63,7 +63,7 @@ The following sample code demonstrates the customization applied to TextBox comp
 
 ## Customize NumericTextBox component of numericedit type 
 
-You can customize the `NumericTextBox` component in Grid edit form using its property. This customization allows you to configure various properties of the NumericTextBox, tailoring its behavior and appearance to match your specific requirements within the Grid. The behavior of the editor component can be fine-tuned through the [columns->edit->params](https://ej2.syncfusion.com/vue/documentation/api/grid/column/#edit) property.
+You can customize the `NumericTextBox` component in Grid edit form using its property. This customization allows you to configure various properties of the NumericTextBox, tailoring its behavior and appearance to match your specific requirements within the Grid. The behavior of the editor component can be fine-tuned through the [columns->edit->params](https://ej2.syncfusion.com/vue/documentation/api/grid/column#edit) property.
 
 Component| Edit Type |Description |Example Customized edit params
 -----|-----|-----|----|
@@ -84,7 +84,7 @@ The following sample code demonstrates the customization applied to NumericTextB
 
 ### Restrict to type decimal points in a NumericTextBox while editing the numeric column
 
-By default, the `NumericTextBox` component allows entering decimal values with up to two decimal places when editing a numeric column. However, there might be cases where you want to restrict input to whole numbers only, without any decimal points. In such scenarios, you can make use of the [validateDecimalOnType](https://ej2.syncfusion.com/vue/documentation/api/numerictextbox/#validatedecimalontype) and [decimals](https://ej2.syncfusion.com/vue/documentation/api/numerictextbox/#decimals) properties provided by Syncfusion's<sup style="font-size:70%">&reg;</sup> `NumericTextBox` component.
+By default, the `NumericTextBox` component allows entering decimal values with up to two decimal places when editing a numeric column. However, there might be cases where you want to restrict input to whole numbers only, without any decimal points. In such scenarios, you can make use of the [validateDecimalOnType](https://ej2.syncfusion.com/vue/documentation/api/numerictextbox#validatedecimalontype) and [decimals](https://ej2.syncfusion.com/vue/documentation/api/numerictextbox#decimals) properties provided by Syncfusion's<sup style="font-size:70%">&reg;</sup> `NumericTextBox` component.
 
 The `validateDecimalOnType` property is used to control whether decimal points are allowed during input in the NumericTextBox. By default, it is set to **false**, allowing decimal points to be entered. However, when set to **true**, decimal points will be restricted, and only whole numbers can be entered.
 
@@ -105,7 +105,7 @@ In the below demo, while editing the row the decimal point value is restricted t
 
 ## Customize DropDownList component of DropDownEdit type 
 
-You can customize the `DropDownList` component in Grid edit form using its property. This customization allows you to configure various properties of the DropDownList, tailoring its behavior and appearance to match your specific requirements within the Grid. The behavior of the editor component can be fine-tuned through the [columns->edit->params](https://ej2.syncfusion.com/vue/documentation/api/grid/column/#edit) property. 
+You can customize the `DropDownList` component in Grid edit form using its property. This customization allows you to configure various properties of the DropDownList, tailoring its behavior and appearance to match your specific requirements within the Grid. The behavior of the editor component can be fine-tuned through the [columns->edit->params](https://ej2.syncfusion.com/vue/documentation/api/grid/column#edit) property. 
 
 Component|Edit Type |Description| Example Customized edit params
 -----|-----|-----|----|
@@ -128,9 +128,9 @@ The following sample code demonstrates the customization applied to DropDownList
 
 In Syncfusion's<sup style="font-size:70%">&reg;</sup> Grid component, you have an option to provide a custom data source for the `DropDownList` component in the edit form. This feature allows you to define a specific set of values for the DropDownList.
 
-To achieve this, you can utilize the [columns->edit->params](https://ej2.syncfusion.com/vue/documentation/api/grid/column/#edit) property. This property allows you to define the edit params for the column within the grid.
+To achieve this, you can utilize the [columns->edit->params](https://ej2.syncfusion.com/vue/documentation/api/grid/column#edit) property. This property allows you to define the edit params for the column within the grid.
 
-When setting a new data source using the edit params, you need to specify a new [query](https://ej2.syncfusion.com/vue/documentation/api/drop-down-list/#query) property for the DropDownList. The `query` property allows you to define custom queries for data retrieval and filtering.
+When setting a new data source using the edit params, you need to specify a new [query](https://ej2.syncfusion.com/vue/documentation/api/drop-down-list#query) property for the DropDownList. The `query` property allows you to define custom queries for data retrieval and filtering.
 
 In the below demo, DropDownList is rendered with custom data source for the **ShipCountry** column :
 
@@ -149,7 +149,7 @@ In the below demo, DropDownList is rendered with custom data source for the **Sh
 
 The Vue Data Grid component provides filtering for the DropDownList within the edit form. This feature allows to select options from a predefined list and easily search for specific items using the built-in filtering feature.  
 
-To enable filtering, set the [allowFiltering](https://ej2.syncfusion.com/vue/documentation/api/drop-down-list/#allowfiltering) property to **true** within the edit params. This will enable the filtering feature in the DropDownList.
+To enable filtering, set the [allowFiltering](https://ej2.syncfusion.com/vue/documentation/api/drop-down-list#allowfiltering) property to **true** within the edit params. This will enable the filtering feature in the DropDownList.
 
 In the following demo, filtering is enabled for the **ShipCountry** column:
 
@@ -168,7 +168,7 @@ In the following demo, filtering is enabled for the **ShipCountry** column:
 
 You can open the dropdown edit popup with a single click by focusing the dropdown element. This feature allows you to quickly access and interact with the dropdown options without the need for an additional click.
 
-To achieve this, you can utilize the [showPopup](https://ej2.syncfusion.com/vue/documentation/api/drop-down-list/#showpopup) method provided by the EJ2 DropDownList component. This method can be invoked within the [actionComplete](https://ej2.syncfusion.com/vue/documentation/api/grid/#actioncomplete) event of the Grid, which triggers when an action, such as editing, is completed. By calling the `showPopup` method in this event, you can open the popup for the dropdown edit.
+To achieve this, you can utilize the [showPopup](https://ej2.syncfusion.com/vue/documentation/api/drop-down-list#showpopup) method provided by the EJ2 DropDownList component. This method can be invoked within the [actionComplete](https://ej2.syncfusion.com/vue/documentation/api/grid#actioncomplete) event of the Grid, which triggers when an action, such as editing, is completed. By calling the `showPopup` method in this event, you can open the popup for the dropdown edit.
 
 To ensure that the dropdown column is the clicked edit target, you need to set a global flag variable in the **mouseup** event along with `load` event. This flag variable will be used to determine if the clicked element corresponds to the dropdown column.
 
@@ -187,7 +187,7 @@ The following sample demonstrates how to open the popup when focusing on the edi
 
 ## Customize CheckBox component of booleanedit type 
 
-You can customize the CheckBox component in Grid edit form using its property. This customization allows you to configure various properties of the CheckBox, tailoring its behavior and appearance to match your specific requirements within the Grid. The behavior of the editor component can be fine-tuned through the [columns->edit->params](https://ej2.syncfusion.com/vue/documentation/api/grid/column/#edit) property.
+You can customize the CheckBox component in Grid edit form using its property. This customization allows you to configure various properties of the CheckBox, tailoring its behavior and appearance to match your specific requirements within the Grid. The behavior of the editor component can be fine-tuned through the [columns->edit->params](https://ej2.syncfusion.com/vue/documentation/api/grid/column#edit) property.
 
 Component| Edit Type |Description |Example Customized edit params
 -----|-----|-----|----|
@@ -208,7 +208,7 @@ The following sample code demonstrates the customization applied to CheckBox com
 
 ## Customize DatePicker component of datepickeredit type 
 
-You can customize the DatePicker component in Grid edit form using its property. This customization allows you to configure various properties of the DatePicker, tailoring its behavior and appearance to match your specific requirements within the Grid. The behavior of the editor component can be fine-tuned through the [columns->edit->params](https://ej2.syncfusion.com/vue/documentation/api/grid/column/#edit) property.
+You can customize the DatePicker component in Grid edit form using its property. This customization allows you to configure various properties of the DatePicker, tailoring its behavior and appearance to match your specific requirements within the Grid. The behavior of the editor component can be fine-tuned through the [columns->edit->params](https://ej2.syncfusion.com/vue/documentation/api/grid/column#edit) property.
 
 Component| Edit Type |Description|Example Customized edit params
 -----|-----|-----|----|
@@ -246,7 +246,7 @@ The following example demonstrates how to configure the `DatePicker` within the 
 
 ## Customize DateTimePicker component of datetimepickeredit type 
 
-You can customize the DateTimePicker component in Grid edit form using its property. This customization allows you to configure various properties of the DateTimePicker, tailoring its behavior and appearance to match your specific requirements within the Grid. The behavior of the editor component can be fine-tuned through the [columns->edit->params](https://ej2.syncfusion.com/vue/documentation/api/grid/column/#edit) property.
+You can customize the DateTimePicker component in Grid edit form using its property. This customization allows you to configure various properties of the DateTimePicker, tailoring its behavior and appearance to match your specific requirements within the Grid. The behavior of the editor component can be fine-tuned through the [columns->edit->params](https://ej2.syncfusion.com/vue/documentation/api/grid/column#edit) property.
 
 Component|Edit Type |Description |Example Customized edit params
 -----|-----|-----|----|
@@ -286,7 +286,7 @@ In the below demo, you can access the editor component instance while adding or 
 
 ## Render custom cell editors
 
-The Vue Data Grid allows you to render custom cell editors for particular columns. This feature is particularly useful when you need to use custom components to edit the data within a grid column. To achieve this, you can make use of the [editTemplate](https://ej2.syncfusion.com/vue/documentation/api/grid/column/#edittemplate) of the Grid Column component.
+The Vue Data Grid allows you to render custom cell editors for particular columns. This feature is particularly useful when you need to use custom components to edit the data within a grid column. To achieve this, you can make use of the [editTemplate](https://ej2.syncfusion.com/vue/documentation/api/grid/column#edittemplate) of the Grid Column component.
 
 >Custom components inside the `editTemplate` must be specified with two-way (@bind-Value) binding to reflect the changes in Grid.
 
@@ -294,7 +294,7 @@ The Vue Data Grid allows you to render custom cell editors for particular column
 
 The Vue Data Grid allows you to render a TextArea within the Grid's edit form for a specific column. This feature is especially valuable when you need to edit and display multi-line text content, providing an efficient way to manage extensive text data within the Grid's columns.
 
-To render a TextArea in the edit form, you need to define an [editTemplate](https://ej2.syncfusion.com/vue/documentation/api/grid/column/#edittemplate) for the column using **template**. The `editTemplate` property specifies the cell edit template that used as an editor for a particular column. It can accept either a template string or an HTML element ID.
+To render a TextArea in the edit form, you need to define an [editTemplate](https://ej2.syncfusion.com/vue/documentation/api/grid/column#edittemplate) for the column using **template**. The `editTemplate` property specifies the cell edit template that used as an editor for a particular column. It can accept either a template string or an HTML element ID.
 
 > When using a text area, please use **Shift+Enter** to move to the next line. By default, pressing **Enter** will trigger a record update while you are in edit mode.
 
@@ -315,7 +315,7 @@ The following example demonstrates how to render a TextArea component in the **S
 
 While editing a particular row in normal or dialog edit mode, pressing the **ENTER** key will save the changes made in the specific cell or edit form. Similarly, pressing the **ENTER** key while performing editing with the multiline textbox will save the changes.  However, in a multiline textbox, it is often desired that pressing the **ENTER** key adds a new line break in the text content, rather than triggering the save action.
 
-To achieve this behavior, you can utilize the `stopPropagation` method along with the [focus](https://ej2.syncfusion.com/vue/documentation/api/textbox/textBoxModel/#focus) event of the textBox component. This prevents the default behavior of the **ENTER** key, allowing you to manually handle the newline behavior.
+To achieve this behavior, you can utilize the `stopPropagation` method along with the [focus](https://ej2.syncfusion.com/vue/documentation/api/textbox/textBoxModel#focus) event of the textBox component. This prevents the default behavior of the **ENTER** key, allowing you to manually handle the newline behavior.
 
 The following example demonstrates how to prevent the enter key functionality in multiline textbox during editing by utilizing the `focus` event:
 
@@ -334,9 +334,9 @@ The following example demonstrates how to prevent the enter key functionality in
 
 The Vue Data Grid allows you to render a AutoComplete component within the Grid's edit form for a specific column. This feature is especially valuable when you need to provide a dropdown-like auto-suggestion and input assistance for data entry in the Grid's columns.
 
-To render a AutoComplete component in the edit form, you need to define an [editTemplate](https://ej2.syncfusion.com/vue/documentation/api/grid/column/#edittemplate) for the column using **template**. The `editTemplate` property specifies the cell edit template that used as an editor for a particular column. It can accept either a template string or an HTML element ID.
+To render a AutoComplete component in the edit form, you need to define an [editTemplate](https://ej2.syncfusion.com/vue/documentation/api/grid/column#edittemplate) for the column using **template**. The `editTemplate` property specifies the cell edit template that used as an editor for a particular column. It can accept either a template string or an HTML element ID.
 
-The following example demonstrates how to render an AutoComplete component in the **CustomerID** column of the Vue Data Grid. The [actionBegin](https://ej2.syncfusion.com/vue/documentation/api/grid/#actionbegin) event is handled to update the edited value in the grid when the save button is clicked:
+The following example demonstrates how to render an AutoComplete component in the **CustomerID** column of the Vue Data Grid. The [actionBegin](https://ej2.syncfusion.com/vue/documentation/api/grid#actionbegin) event is handled to update the edited value in the grid when the save button is clicked:
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
@@ -353,9 +353,9 @@ The following example demonstrates how to render an AutoComplete component in th
 
 The Vue Data Grid allows you to render a MaskedTextBox component within the Grid's edit form for a specific column. This feature is especially useful when you need to provide masked input fields that require a specific format, such as phone numbers or postal codes.
 
-To render a MaskedTextBox component in the edit form, you need to define an [editTemplate](https://ej2.syncfusion.com/vue/documentation/api/grid/column/#edittemplate) for the column using **template**. The `editTemplate` property specifies the cell edit template that used as an editor for a particular column. It can accept either a template string or an HTML element ID.
+To render a MaskedTextBox component in the edit form, you need to define an [editTemplate](https://ej2.syncfusion.com/vue/documentation/api/grid/column#edittemplate) for the column using **template**. The `editTemplate` property specifies the cell edit template that used as an editor for a particular column. It can accept either a template string or an HTML element ID.
 
-Here's an example of how to render a MaskedTextBox component in the **CustomerNumber** column of the Vue Data Grid. The [actionBegin](https://ej2.syncfusion.com/vue/documentation/api/grid/#actionbegin) event is handled to update the edited value in the grid when the save button is clicked:
+Here's an example of how to render a MaskedTextBox component in the **CustomerNumber** column of the Vue Data Grid. The [actionBegin](https://ej2.syncfusion.com/vue/documentation/api/grid#actionbegin) event is handled to update the edited value in the grid when the save button is clicked:
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
@@ -372,9 +372,9 @@ Here's an example of how to render a MaskedTextBox component in the **CustomerNu
 
 The Vue Data Grid allows you to render a DropDownList component within the Grid's edit form for a specific column. This feature is valuable when you need to provide a convenient way to select options from a predefined list while editing data in the Grid's edit form.
 
-To render a DropDownList component in the edit form, you need to define an [editTemplate](https://ej2.syncfusion.com/vue/documentation/api/grid/column/#edittemplate) for the column using **template**. The `editTemplate` property specifies the cell edit template that used as an editor for a particular column. It can accept either a template string or an HTML element ID.
+To render a DropDownList component in the edit form, you need to define an [editTemplate](https://ej2.syncfusion.com/vue/documentation/api/grid/column#edittemplate) for the column using **template**. The `editTemplate` property specifies the cell edit template that used as an editor for a particular column. It can accept either a template string or an HTML element ID.
 
-The following example demonstrates how to render a DropDownList component in the **ShipCountry** column of the Vue Data Grid .The [actionBegin](https://ej2.syncfusion.com/vue/documentation/api/grid/#actionbegin) event is handled to update the edited value in the grid when the save button is clicked:
+The following example demonstrates how to render a DropDownList component in the **ShipCountry** column of the Vue Data Grid .The [actionBegin](https://ej2.syncfusion.com/vue/documentation/api/grid#actionbegin) event is handled to update the edited value in the grid when the save button is clicked:
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
@@ -391,11 +391,11 @@ The following example demonstrates how to render a DropDownList component in the
 
 The Vue Data Grid allows you to render images in the DropDownList editor component. This feature is valuable when you want to display images for each item in the dropdown list of a particular column, enhancing the visual representation of your data.
 
-To render a DropDownList in the edit form, you need to define an [editTemplate](https://ej2.syncfusion.com/vue/documentation/api/grid/column/#edittemplate) for the column using **template**. The `editTemplate` property specifies the cell edit template that used as an editor for a particular column. It can accept either a template string or an HTML element ID.
+To render a DropDownList in the edit form, you need to define an [editTemplate](https://ej2.syncfusion.com/vue/documentation/api/grid/column#edittemplate) for the column using **template**. The `editTemplate` property specifies the cell edit template that used as an editor for a particular column. It can accept either a template string or an HTML element ID.
 
-To display an image in the DropDownList editor component, you can utilize the [itemTemplate](https://ej2.syncfusion.com/vue/documentation/api/drop-down-list/#itemtemplate) property. This property allows you to customize the content of each item in the dropdown list.
+To display an image in the DropDownList editor component, you can utilize the [itemTemplate](https://ej2.syncfusion.com/vue/documentation/api/drop-down-list#itemtemplate) property. This property allows you to customize the content of each item in the dropdown list.
 
-The following example demonstrates how to render images in the DropDownList editor component using the `itemTemplate` within the **EmployeeName** column of the Vue Data Grid. Additionally, the [actionBegin](https://ej2.syncfusion.com/vue/documentation/api/grid/#actionbegin) event is handled to update the edited value in the grid when the save button is clicked:
+The following example demonstrates how to render images in the DropDownList editor component using the `itemTemplate` within the **EmployeeName** column of the Vue Data Grid. Additionally, the [actionBegin](https://ej2.syncfusion.com/vue/documentation/api/grid#actionbegin) event is handled to update the edited value in the grid when the save button is clicked:
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
@@ -412,11 +412,11 @@ The following example demonstrates how to render images in the DropDownList edit
 
 The Vue Data Grid allows you to render a DropDownList component within the Grid's edit form for a specific column. This feature is particularly useful when you want to display more detailed information for each item in the dropdown list during editing a specific column.
 
-To render a DropDownList in the edit form, you need to define an [editTemplate](https://ej2.syncfusion.com/vue/documentation/api/grid/column/#edittemplate) for the column using **template**. The `editTemplate` property specifies the cell edit template that used as an editor for a particular column. It can accept either a template string or an HTML element ID.
+To render a DropDownList in the edit form, you need to define an [editTemplate](https://ej2.syncfusion.com/vue/documentation/api/grid/column#edittemplate) for the column using **template**. The `editTemplate` property specifies the cell edit template that used as an editor for a particular column. It can accept either a template string or an HTML element ID.
 
-The DropDownList has been provided with several options to customize each list item, group title, selected value, header, and footer element. By default, list items can be rendered as a single column in the DropDownList component. Instead of this, multiple columns can be rendered. This can be achieved by using the [headerTemplate](https://ej2.syncfusion.com/vue/documentation/api/drop-down-list/#headertemplate) and [itemTemplate](https://ej2.syncfusion.com/vue/documentation/api/drop-down-list/#itemtemplate) properties of the DropDownList component.
+The DropDownList has been provided with several options to customize each list item, group title, selected value, header, and footer element. By default, list items can be rendered as a single column in the DropDownList component. Instead of this, multiple columns can be rendered. This can be achieved by using the [headerTemplate](https://ej2.syncfusion.com/vue/documentation/api/drop-down-list#headertemplate) and [itemTemplate](https://ej2.syncfusion.com/vue/documentation/api/drop-down-list#itemtemplate) properties of the DropDownList component.
 
-The following example demonstrates how to render a DropDownList component with multiple columns within in the **ShipCountry** column. The [actionBegin](https://ej2.syncfusion.com/vue/documentation/api/grid/#actionbegin) event is handled to update the edited value in the grid when the save button is clicked:
+The following example demonstrates how to render a DropDownList component with multiple columns within in the **ShipCountry** column. The [actionBegin](https://ej2.syncfusion.com/vue/documentation/api/grid#actionbegin) event is handled to update the edited value in the grid when the save button is clicked:
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
@@ -433,9 +433,9 @@ The following example demonstrates how to render a DropDownList component with m
 
 The Vue Data Grid allows you to render a ComboBox component within the Grid's edit form for a specific column. This feature is especially valuable when you need to provide a drop-down selection with auto-suggestions for data entry.
 
-To render a ComboBox component in the edit form, you need to define an [editTemplate](https://ej2.syncfusion.com/vue/documentation/api/grid/column/#edittemplate) for the column using **template**. The `editTemplate` property specifies the cell edit template that used as an editor for a particular column. It can accept either a template string or an HTML element ID.
+To render a ComboBox component in the edit form, you need to define an [editTemplate](https://ej2.syncfusion.com/vue/documentation/api/grid/column#edittemplate) for the column using **template**. The `editTemplate` property specifies the cell edit template that used as an editor for a particular column. It can accept either a template string or an HTML element ID.
 
-The following example demonstrates how to render a ComboBox component in the **ShipCountry** column of the Vue Data Grid. The [actionBegin](https://ej2.syncfusion.com/vue/documentation/api/grid/#actionbegin) event is handled to update the edited value in the grid when the save button is clicked:
+The following example demonstrates how to render a ComboBox component in the **ShipCountry** column of the Vue Data Grid. The [actionBegin](https://ej2.syncfusion.com/vue/documentation/api/grid#actionbegin) event is handled to update the edited value in the grid when the save button is clicked:
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
@@ -452,9 +452,9 @@ The following example demonstrates how to render a ComboBox component in the **S
 
 The Vue Data Grid allows you to render a TimePicker component within the Grid's edit form for a specific column. This feature is especially valuable when you need to provide a time input, such as appointment times, event schedules, or any other time-related data for editing in the Grid.
 
-To render a TimePicker component in the edit form, you need to define an [editTemplate](https://ej2.syncfusion.com/vue/documentation/api/grid/column/#edittemplate) for the column using **template**. The `editTemplate` property specifies the cell edit template that used as an editor for a particular column. It can accept either a template string or an HTML element ID.
+To render a TimePicker component in the edit form, you need to define an [editTemplate](https://ej2.syncfusion.com/vue/documentation/api/grid/column#edittemplate) for the column using **template**. The `editTemplate` property specifies the cell edit template that used as an editor for a particular column. It can accept either a template string or an HTML element ID.
 
-The following example demonstrates how to render a TimePicker component in the **Order Time** column of the Vue Data Grid. The [actionBegin](https://ej2.syncfusion.com/vue/documentation/api/grid/#actionbegin) event is handled to update the edited value in the grid when the save button is clicked:
+The following example demonstrates how to render a TimePicker component in the **Order Time** column of the Vue Data Grid. The [actionBegin](https://ej2.syncfusion.com/vue/documentation/api/grid#actionbegin) event is handled to update the edited value in the grid when the save button is clicked:
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
@@ -471,9 +471,9 @@ The following example demonstrates how to render a TimePicker component in the *
 
 The Vue Data Grid allows you to render a MultiSelect component within the Grid's edit form, enabling you to select multiple values from a dropdown list when editing a specific column. This feature is particularly useful when you need to handle situations where multiple selections are required for a column.
 
-To render a MultiSelect component in the edit form, you need to define an [editTemplate](https://ej2.syncfusion.com/vue/documentation/api/grid/column/#edittemplate) for the column using **template**. The `editTemplate` property specifies the cell edit template that used as an editor for a particular column. It can accept either a template string or an HTML element ID.
+To render a MultiSelect component in the edit form, you need to define an [editTemplate](https://ej2.syncfusion.com/vue/documentation/api/grid/column#edittemplate) for the column using **template**. The `editTemplate` property specifies the cell edit template that used as an editor for a particular column. It can accept either a template string or an HTML element ID.
 
-The following example demonstrates how to render a MultiSelect component in the **ShipCity** column of the Vue Data Grid. The [actionBegin](https://ej2.syncfusion.com/vue/documentation/api/grid/#actionbegin) event is handled to update the edited value in the grid when the save button is clicked:
+The following example demonstrates how to render a MultiSelect component in the **ShipCity** column of the Vue Data Grid. The [actionBegin](https://ej2.syncfusion.com/vue/documentation/api/grid#actionbegin) event is handled to update the edited value in the grid when the save button is clicked:
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
@@ -490,11 +490,11 @@ The following example demonstrates how to render a MultiSelect component in the 
 
 The Vue Data Grid allows you to render the RichTextEditor component within the edit form. This feature is valuable when you need to format and style text content using various formatting options such as bold, italic, underline, bullet lists, numbered lists, and more during editing a specific column.
 
-To render RichTextEditor component in edit form, you need to define an [editTemplate](https://ej2.syncfusion.com/vue/documentation/api/grid/column/#edittemplate) for the column using **template**. The `editTemplate` property specifies the cell edit template that used as an editor for a particular column. It can accept either a template string or an HTML element ID.
+To render RichTextEditor component in edit form, you need to define an [editTemplate](https://ej2.syncfusion.com/vue/documentation/api/grid/column#edittemplate) for the column using **template**. The `editTemplate` property specifies the cell edit template that used as an editor for a particular column. It can accept either a template string or an HTML element ID.
 
-Additionally, you need set the [allowTextWrap](https://ej2.syncfusion.com/vue/documentation/api/grid/#allowtextwrap) property of the corresponding grid column to **true**. By enabling this property, the rich text editor component will automatically adjust its width and wrap the text content to fit within the boundaries of the column.
+Additionally, you need set the [allowTextWrap](https://ej2.syncfusion.com/vue/documentation/api/grid#allowtextwrap) property of the corresponding grid column to **true**. By enabling this property, the rich text editor component will automatically adjust its width and wrap the text content to fit within the boundaries of the column.
 
-The following example demonstrates how to render a RichTextEditor component in the **ShipAddress** column of the Vue Data Grid. The [actionBegin](https://ej2.syncfusion.com/vue/documentation/api/grid/#actionbegin) event is handled to update the edited value in the grid when the save button is clicked:
+The following example demonstrates how to render a RichTextEditor component in the **ShipAddress** column of the Vue Data Grid. The [actionBegin](https://ej2.syncfusion.com/vue/documentation/api/grid#actionbegin) event is handled to update the edited value in the grid when the save button is clicked:
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
@@ -511,9 +511,9 @@ The following example demonstrates how to render a RichTextEditor component in t
 
 The Vue Data Grid allows you to render an Upload component within the Grid's edit form. This feature is especially valuable when you need to upload and manage files or images in a specific column during data editing.
 
-To render Upload component in edit form, you need to define an [editTemplate](https://ej2.syncfusion.com/vue/documentation/api/grid/column/#edittemplate) for the column using **template**. The `editTemplate` property specifies the cell edit template that used as an editor for a particular column. It can accept either a template string or an HTML element ID.
+To render Upload component in edit form, you need to define an [editTemplate](https://ej2.syncfusion.com/vue/documentation/api/grid/column#edittemplate) for the column using **template**. The `editTemplate` property specifies the cell edit template that used as an editor for a particular column. It can accept either a template string or an HTML element ID.
 
-The following example demonstrates how to render a Upload component in the **Employee Image** column of the Vue Data Grid. The [actionBegin](https://ej2.syncfusion.com/vue/documentation/api/grid/#actionbegin) event is handled to update the edited value in the grid when the save button is clicked:
+The following example demonstrates how to render a Upload component in the **Employee Image** column of the Vue Data Grid. The [actionBegin](https://ej2.syncfusion.com/vue/documentation/api/grid#actionbegin) event is handled to update the edited value in the grid when the save button is clicked:
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
@@ -546,7 +546,7 @@ To utilize the custom cell editor template feature, you need to implement the fo
 
 The Vue Data Grid allows you to render the AutoComplete within the edit form by using the cell edit template feature.This feature enables you to select values from a predefined list during the editing of a specific column. It is especially valuable when you need to provide a dropdown-like auto-suggestion and input assistance for data entry in the Grid's columns.
 
-To achieve this, you need to define the cell edit template for the column using the [edit](https://ej2.syncfusion.com/vue/documentation/api/grid/column/#edit) property. This property specifies the necessary functions for creating, reading, and writing the AutoComplete into the specific column.
+To achieve this, you need to define the cell edit template for the column using the [edit](https://ej2.syncfusion.com/vue/documentation/api/grid/column#edit) property. This property specifies the necessary functions for creating, reading, and writing the AutoComplete into the specific column.
 
 The following example demonstrates how to render a Autocomplete in the **CustomerID** column:
 
@@ -568,7 +568,7 @@ The following example demonstrates how to render a Autocomplete in the **Custome
 
 The Vue Data Grid allows you to render the cascading DropDownList within the edit form by using the cell edit template feature.This feature is especially useful when you need to establish a hierarchy of options, such as choosing a country and then selecting a state based on the chosen country.
 
-To achieve this, you need to define the cell edit template for the column using the [edit](https://ej2.syncfusion.com/vue/documentation/api/grid/column/#edit) property. This property specifies the necessary functions for creating, reading, and writing the cascading DropDownList.
+To achieve this, you need to define the cell edit template for the column using the [edit](https://ej2.syncfusion.com/vue/documentation/api/grid/column#edit) property. This property specifies the necessary functions for creating, reading, and writing the cascading DropDownList.
 
 In the below demo, cascading DropDownList rendered for **ShipCountry** and **ShipState** column.
 

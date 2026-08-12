@@ -14,7 +14,7 @@ Validation is a crucial aspect of data integrity in any application. The [Vue Da
 
 ## Column validation
 
-Column validation allows you to validate the edited or added row data before saving it. This feature is particularly useful when you need to enforce specific rules or constraints on individual columns to ensure data integrity. By applying validation rules to columns, you can display error messages for invalid fields and prevent the saving of erroneous data. This feature leverages the **Form Validator** component to perform the validation. You can define validation rules using the [columns.validationRules](https://ej2.syncfusion.com/vue/documentation/api/grid/column/#validationrules) property to specify the criteria for validating column values.
+Column validation allows you to validate the edited or added row data before saving it. This feature is particularly useful when you need to enforce specific rules or constraints on individual columns to ensure data integrity. By applying validation rules to columns, you can display error messages for invalid fields and prevent the saving of erroneous data. This feature leverages the **Form Validator** component to perform the validation. You can define validation rules using the [columns.validationRules](https://ej2.syncfusion.com/vue/documentation/api/grid/column#validationrules) property to specify the criteria for validating column values.
 
 The following code example demonstrates how to define a validation rule for grid column:
 
@@ -68,7 +68,7 @@ In the following sample, dropDownList edit type is used for the **Role** and **S
 
 Custom validation for a numeric column Grid is useful when you want to enforce specific validation rules on numeric values in a column. This allows you to define your own validation logic and display custom error messages when the you enters invalid data.
 
-In the following example, custom validation functions, namely **customFn** and **customFn1**, are defined to check the entered numeric value against your validation criteria. Then, the grid column is configured with the appropriate validation settings using the **freightRules** object, specifying the custom validation functions along with corresponding error messages. Additionally, the `change` event of the numeric column is bound to the [validate](https://ej2.syncfusion.com/vue/documentation/api/form-validator/#validate) method of the form element through the edit params. This enables you to trigger validation and display error messages whenever the you modifies the value in the **NumericTextBox**.
+In the following example, custom validation functions, namely **customFn** and **customFn1**, are defined to check the entered numeric value against your validation criteria. Then, the grid column is configured with the appropriate validation settings using the **freightRules** object, specifying the custom validation functions along with corresponding error messages. Additionally, the `change` event of the numeric column is bound to the [validate](https://ej2.syncfusion.com/vue/documentation/api/form-validator#validate) method of the form element through the edit params. This enables you to trigger validation and display error messages whenever the you modifies the value in the **NumericTextBox**.
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
@@ -85,7 +85,7 @@ In the following example, custom validation functions, namely **customFn** and *
 
 You can dynamically add or remove validation rules from input elements within a form. This feature is particularly useful when you need to adjust the validation rules based on different scenarios or dynamically changing data.
 
-To add validation rules dynamically to an input element, you can use the [addRules](https://ej2.syncfusion.com/vue/documentation/api/form-validator/#addrules) method. This method enables you to add validation rules to the corresponding input element based on the name attribute.
+To add validation rules dynamically to an input element, you can use the [addRules](https://ej2.syncfusion.com/vue/documentation/api/form-validator#addrules) method. This method enables you to add validation rules to the corresponding input element based on the name attribute.
 
 The following example to demonstrates how to dynamically add or remove a required validation rule for an input field based on a **CheckBox** selection:
 
@@ -100,13 +100,13 @@ The following example to demonstrates how to dynamically add or remove a require
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/grid/edit/default-remove" %}
 
->To remove an existing validation rule from an input element, you can use the [removeRules](https://ej2.syncfusion.com/vue/documentation/api/form-validator/#removerules) method. 
+>To remove an existing validation rule from an input element, you can use the [removeRules](https://ej2.syncfusion.com/vue/documentation/api/form-validator#removerules) method. 
 
 ## Change the position of validation error message
 
 By default, the validation error message in Grid is displayed below the input field. However, you have an option to customize its position and display it in a different location. This feature is particularly useful when you want to align the error message according to your application's design and layout.
 
-To change the position of the validation error message in Grid, you can utilize the [customPlacement](https://ej2.syncfusion.com/vue/documentation/api/form-validator/#customplacement) event. This event allows you to define a custom logic to position the error message at the desired location.
+To change the position of the validation error message in Grid, you can utilize the [customPlacement](https://ej2.syncfusion.com/vue/documentation/api/form-validator#customplacement) event. This event allows you to define a custom logic to position the error message at the desired location.
 
 Here's an example that demonstrates how to change the position of the validation error message to the top of the input field:
 
@@ -125,7 +125,7 @@ Here's an example that demonstrates how to change the position of the validation
 
 While performing CRUD actions in the Vue Data Grid, errors may occur due to various reasons such as validation failures, network issues, or server-side exceptions. Handling these errors effectively is Essential<sup style="font-size:70%">&reg;</sup> for providing meaningful error messages when an operation fails.
 
-To achieve this, you can use the [actionFailure](https://ej2.syncfusion.com/vue/documentation/api/grid/#actionfailure) event. This event is triggered when an action (like update, delete, or insert) fails, allowing you to retrieve the error message from the server response and display it in the UI.  
+To achieve this, you can use the [actionFailure](https://ej2.syncfusion.com/vue/documentation/api/grid#actionfailure) event. This event is triggered when an action (like update, delete, or insert) fails, allowing you to retrieve the error message from the server response and display it in the UI.  
 
 The following sample demonstrates how to retrieve and display error messages in the Vue Data Grid:  
 
@@ -461,11 +461,11 @@ The Syncfusion Vue Grid allows you to enforce constraints to prevent duplicate r
 
 To prevent adding duplicate rows in the Grid, follow these steps:
 
-1. Implement Custom Validation: Define the `orderIdCustomValidation` function to check whether the entered **OrderID** already exists in the [dataSource](https://ej2.syncfusion.com/vue/documentation/api/grid/#datasource). This allows editing an existing row without triggering a duplicate error.
+1. Implement Custom Validation: Define the `orderIdCustomValidation` function to check whether the entered **OrderID** already exists in the [dataSource](https://ej2.syncfusion.com/vue/documentation/api/grid#datasource). This allows editing an existing row without triggering a duplicate error.
 
 2. Add Dynamic Validation Rules: Create the `orderIDRules` object to enforce unique **OrderID** values. Dynamically add this rule to the form during the **save** action.
 
-3. Handle Validation in the [actionBegin](https://ej2.syncfusion.com/vue/documentation/api/grid/#actionbegin) event: In the `actionBegin` event, check if the **requestType** is **save**. Apply the validation rule before saving and cancel the action `args.cancel = true` if the validation fails.
+3. Handle Validation in the [actionBegin](https://ej2.syncfusion.com/vue/documentation/api/grid#actionbegin) event: In the `actionBegin` event, check if the **requestType** is **save**. Apply the validation rule before saving and cancel the action `args.cancel = true` if the validation fails.
 
 For server-side validation to prevent adding duplicate rows, you can refer to the detailed guidance provided in our [knowledge base](https://support.syncfusion.com/kb/article/11608/how-to-do-server-side-validation-for-grid-in-asp-net-mvc-application). If you want to display the Grid's validation tooltip instead of the alert used in our knowledge base, you can call the `grid.editModule.formObj.validate()` method in the `Ajax/Fetch` success function to display the Grid's tooltip validation for the server side.
 
