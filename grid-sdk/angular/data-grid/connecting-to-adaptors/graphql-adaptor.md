@@ -365,7 +365,7 @@ You can find the complete `GraphQLAdaptor` sample in the [GitHub](https://github
 
 ## Handling searching operation
 
-To handle search operation in the Syncfusion Grid using the GraphQLAdaptor, utilize the `datamanager.search` parameters and execute the search operation with the [search](https://ej2.syncfusion.com/documentation/api/data/query/#search) method. This feature allows users to efficiently search through the grid's data and retrieve relevant information based on specified criteria.
+To handle search operation in the Syncfusion Grid using the GraphQLAdaptor, utilize the `datamanager.search` parameters and execute the search operation with the [search](https://ej2.syncfusion.com/documentation/api/data/query#search) method. This feature allows users to efficiently search through the grid's data and retrieve relevant information based on specified criteria.
 
 In the image below, you can see the values of `datamanager.search` parameters:
 
@@ -462,7 +462,7 @@ export class AppModule { }
 
 ## Handling filtering operation
 
-To handle filter operation in the Syncfusion Grid using the GraphQLAdaptor, utilize the `datamanager.where` parameters and execute the filter operation with the [where](https://ej2.syncfusion.com/documentation/api/data/query/#where) method. This feature allows efficient filtering through the grid's data and retrieval of relevant information based on specified criteria.
+To handle filter operation in the Syncfusion Grid using the GraphQLAdaptor, utilize the `datamanager.where` parameters and execute the filter operation with the [where](https://ej2.syncfusion.com/documentation/api/data/query#where) method. This feature allows efficient filtering through the grid's data and retrieval of relevant information based on specified criteria.
 
 In the image below, you can see the values of `datamanager.where` parameters:
 
@@ -564,7 +564,7 @@ export class AppModule { }
 
 ## Handling sorting operation
 
-To handle sort operation in the Syncfusion Grid using the GraphQLAdaptor, utilize the `datamanager.sorted` parameters and execute the sort operation with the [sortBy](https://ej2.syncfusion.com/documentation/api/data/query/#sortBy) method. This feature allows users to efficiently sort grid data based on specified criteria.
+To handle sort operation in the Syncfusion Grid using the GraphQLAdaptor, utilize the `datamanager.sorted` parameters and execute the sort operation with the [sortBy](https://ej2.syncfusion.com/documentation/api/data/query#sortBy) method. This feature allows users to efficiently sort grid data based on specified criteria.
 
 In the image below, you can see the values of `datamanager.sorted` parameters:
 
@@ -664,7 +664,7 @@ export class AppModule { }
 
 ## Handling paging operation
 
-To handle page operation in the Syncfusion Grid using the GraphQLAdaptor, utilize the `datamanager.skip` and `datamanager.take` parameters and execute the paging with the [page](https://ej2.syncfusion.com/documentation/api/data/query/#page) method. This feature allows users to navigate through large datasets efficiently by dividing them into pages.
+To handle page operation in the Syncfusion Grid using the GraphQLAdaptor, utilize the `datamanager.skip` and `datamanager.take` parameters and execute the paging with the [page](https://ej2.syncfusion.com/documentation/api/data/query#page) method. This feature allows users to navigate through large datasets efficiently by dividing them into pages.
 
 In the image below, you can see the value of `datamanager.skip` and `datamanager.take` parameters:
 
@@ -936,7 +936,7 @@ Deleting a record from the database involves the following steps:
   
   ```
 
-> Normal/Inline editing is the default edit [mode](https://ej2.syncfusion.com/angular/documentation/api/grid/editSettings/#mode) for the Grid component. To enable CRUD operations, ensure that the [isPrimaryKey](https://ej2.syncfusion.com/angular/documentation/api/grid/column/#isprimarykey) property is set to **true** for a specific grid column, ensuring that its value is unique.
+> Normal/Inline editing is the default edit [mode](https://ej2.syncfusion.com/angular/documentation/api/grid/editSettings#mode) for the Grid component. To enable CRUD operations, ensure that the [isPrimaryKey](https://ej2.syncfusion.com/angular/documentation/api/grid/column#isprimarykey) property is set to **true** for a specific grid column, ensuring that its value is unique.
 
 {% tabs %}
 {% highlight js tabtitle="resolver.js" %}

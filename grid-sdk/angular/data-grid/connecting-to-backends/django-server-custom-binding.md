@@ -64,7 +64,7 @@ The DRF backend exposes REST endpoints the Grid calls from client-side event han
     pip install django djangorestframework django-filter django-cors-headers mssql-django pyodbc
     ```
     - `mssql-django` enables Django to connect to SQL Server through `pyodbc`.
-    - For Django settings reference, see [databases](https://docs.djangoproject.com/en/6.0/ref/settings/#databases).
+    - For Django settings reference, see [databases](https://docs.djangoproject.com/en/6.0/ref/settings#databases).
 
 4. Initialize the Django project and application:
 
