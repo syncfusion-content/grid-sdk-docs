@@ -12,7 +12,7 @@ domainurl: https://help.syncfusion.com/grid-sdk
 
 You can export the filtered data by defining the resulted data in [`PdfExportProperties.dataSource`](../../api/grid/pdfExportProperties#datasource) before export.
 
-In the below Pdf exporting demo, We have gotten the filtered data from the filteredResult of Tree Grid filterModule and then defines the resulted data in [`PdfExportProperties.dataSource`](../../api/grid/pdfExportProperties#datasource) and pass it to [`pdfExport`](../api/treegrid#pdfexport) method.
+In the below PDF exporting demo, We have gotten the filtered data from the filteredResult of Tree Grid filterModule and then defines the resulted data in [`PdfExportProperties.dataSource`](../../api/grid/pdfExportProperties#datasource) and pass it to [`pdfExport`](../api/treegrid#pdfexport) method.
 
 {% if page.publishingplatform == "typescript" %}
 

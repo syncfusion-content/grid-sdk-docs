@@ -10,7 +10,7 @@ domainurl: https://help.syncfusion.com/grid-sdk
 
 # Row Template in TypeScript TreeGrid
 
-The [`rowTemplate`](../../api/treegrid#rowtemplate) has an option to customise the look and behavior of the treegrid rows. The [`rowTemplate`](../../api/treegrid#rowtemplate) property accepts either the template string or HTML element ID.
+The [`rowTemplate`](../../api/treegrid#rowtemplate) has an option to customize the look and behavior of the treegrid rows. The [`rowTemplate`](../../api/treegrid#rowtemplate) property accepts either the template string or HTML element ID.
 
 {% if page.publishingplatform == "typescript" %}
 

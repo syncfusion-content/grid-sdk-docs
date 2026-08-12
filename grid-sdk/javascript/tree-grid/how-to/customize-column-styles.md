@@ -10,13 +10,13 @@ domainurl: https://help.syncfusion.com/grid-sdk
 
 # Customize Column Styles in JavaScript TreeGrid
 
-You can customise the appearance of the header and content of a particular column using the [`customAttributes`](../../api/treegrid/column#customattributes) property.
+You can customize the appearance of the header and content of a particular column using the [`customAttributes`](../../api/treegrid/column#customattributes) property.
 
 To customize the Tree Grid column, follow the given steps:
 
 **Step 1**:
 
-Create a CSS class with custom style to override the default style for rowcell and header cell.
+Create a CSS class with custom style to override the default style for row cell and header cell.
 
 ```
 .e-treegrid .e-rowcell.customcss{
