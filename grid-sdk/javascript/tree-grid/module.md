@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Module in JavaScript Treegrid control | Syncfusion
-description: Learn here all about Module in Syncfusion JavaScript Treegrid control of Syncfusion Essential JS 2 and more.
+title: JavaScript TreeGrid Modules | Syncfusion
+description: Learn about module injection in JavaScript TreeGrid, including available feature modules, dependencies, and their purposes.
 platform: grid-sdk
 control: Module 
 publishingplatform: grid-sdk
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Module in JavaScript Treegrid control
+# Modules in JavaScript TreeGrid
 
 The available TreeGrid modules are:
 

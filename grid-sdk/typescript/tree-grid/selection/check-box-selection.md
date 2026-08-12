@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Check box selection in TypeScript Treegrid control | Syncfusion
-description: Learn here all about Check box selection in Syncfusion TypeScript Treegrid control of Syncfusion Essential JS 2 and more.
+title: TypeScript TreeGrid Checkbox Selection | Syncfusion
+description: Learn how to enable and configure checkbox selection in TypeScript TreeGrid, including selection modes, persist selection, and checkbox behavior.
 platform: grid-sdk
 control: Check box selection 
 publishingplatform: grid-sdk
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Check box selection in TypeScript Treegrid control
+# Checkbox Selection in TypeScript TreeGrid
 
 Checkbox selection provides an option to select multiple treegrid records with help of checkbox in each row.
 

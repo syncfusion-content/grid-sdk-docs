@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Cell in JavaScript Treegrid control | Syncfusion
-description: Learn here all about Cell in Syncfusion JavaScript Treegrid control of Syncfusion Essential JS 2 and more.
+title: JavaScript TreeGrid Cells | Syncfusion
+description: Learn how to customize and format cells in JavaScript TreeGrid, including tooltips, styling, clip mode, autowrap, and cell templates.
 platform: grid-sdk
 control: Cell 
 publishingplatform: grid-sdk
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Cell in JavaScript Treegrid control
+# Cells in JavaScript TreeGrid
 
 ## Customize cell styles
 

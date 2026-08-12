@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Template editing in JavaScript Treegrid control | Syncfusion
-description: Learn here all about Template editing in Syncfusion JavaScript Treegrid control of Syncfusion Essential JS 2 and more.
+title: JavaScript TreeGrid Template Editing | Syncfusion
+description: Learn how to use template editing in JavaScript TreeGrid to create custom edit forms with tailored layouts and controls.
 platform: grid-sdk
 control: Template editing 
 publishingplatform: grid-sdk
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Template editing in JavaScript Treegrid control
+# Template Editing in JavaScript TreeGrid
 
 ## Dialog template
 

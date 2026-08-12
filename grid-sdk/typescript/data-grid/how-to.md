@@ -1,7 +1,7 @@
 ---
 layout: post
-title: How to in TypeScript Grid control | Syncfusion
-description: Learn here all about How to in Syncfusion TypeScript Grid control of Syncfusion Essential JS 2 and more.
+title: Typescript Grid How-To Guide | Syncfusion
+description: Learn how to customize and extend Typescript Data Grid with practical examples for editing, sorting, exporting, data binding, column customization, and more.
 platform: grid-sdk
 control: How to 
 publishingplatform: grid-sdk
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# How to in TypeScript Grid control
+# How-To Examples in Typescript Data Grid
 
 ## Refresh the data source
 

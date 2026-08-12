@@ -1,18 +1,18 @@
 ---
 layout: post
-title: Enable editing in single click in Angular Grid component | Syncfusion
-description: Learn how to enable single-click editing in the Syncfusion Angular Grid for a faster data entry experience, including normal editing and dropdown popup activation.
+title: Angular Grid Single-Click Editing | Syncfusion
+description: Learn how to enable single-click editing in Angular Data Grid, including row editing and automatic dropdown popup activation for faster data entry.
 platform: grid-sdk
 control: Enable editing in single click 
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Enable editing in single click in Angular Grid component
+# Single-Click Editing in Angular Data Grid
 
 ## Normal Editing
 
-You can enable editing of a row with a single mouse click in the Syncfusion Angular Grid using the **Normal** editing mode. Invoke the [`startEdit`](https://ej2.syncfusion.com/angular/documentation/api/grid/#startedit) and [`endEdit`](https://ej2.syncfusion.com/angular/documentation/api/grid/#endedit) methods within an event handler for the Grid's **mouseup** event. Depending on the clicked target, start or end the row editing mode immediately, facilitating quick data entry and updates.
+You can enable editing of a row with a single mouse click in the Syncfusion Angular Grid using the **Normal** editing mode. Invoke the [`startEdit`](https://ej2.syncfusion.com/angular/documentation/api/grid#startedit) and [`endEdit`](https://ej2.syncfusion.com/angular/documentation/api/grid#endedit) methods within an event handler for the Grid's **mouseup** event. Depending on the clicked target, start or end the row editing mode immediately, facilitating quick data entry and updates.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -28,7 +28,7 @@ You can enable editing of a row with a single mouse click in the Syncfusion Angu
 
 ### Open dropdown edit popup on single click
 
-You can also open the dropdown edit popup with a single click for dropdown-type columns. To do this, focus the element and invoke the EJ2 DropDownList [`showPopup`](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list/#showpopup) method within the Grid's [`actionComplete`](https://ej2.syncfusion.com/angular/documentation/api/grid/#actioncomplete) event. In this workflow, a global flag variable in the **mouseup** event ensures activation for the correct dropdown target column.
+You can also open the dropdown edit popup with a single click for dropdown-type columns. To do this, focus the element and invoke the EJ2 DropDownList [`showPopup`](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list#showpopup) method within the Grid's [`actionComplete`](https://ej2.syncfusion.com/angular/documentation/api/grid#actioncomplete) event. In this workflow, a global flag variable in the **mouseup** event ensures activation for the correct dropdown target column.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

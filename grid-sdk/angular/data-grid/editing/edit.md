@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Angular Grid - Editing | Syncfusion
-description: Angular Grid editing enables features, actions, modes, toolbar configs, column rules, templates, confirmations, and external CRUD workflows.
+title: Angular Grid Editing | Syncfusion
+description: Learn how to configure editing in Angular Data Grid, customize edit modes, apply validation rules, use templates, and manage CRUD workflows efficiently.
 platform: grid-sdk
 control: Edit 
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Edit in Angular Grid Component
+# Editing in Angular Data Grid
 
 The [Angular Data Grid](https://www.syncfusion.com/angular-components/angular-data-grid) component includes built-in editing features for creating, reading, updating, and deleting data directly in the grid. This eliminates the need for separate forms and allows data modification within a single interface. The grid editing provides powerful options through multiple edit modes, customizable triggers, and flexible data handling.
 
@@ -166,7 +166,7 @@ standalone: true,
                     editType= 'numericedit' width=120  [validationRules]='freightRules' format= 'C2'></e-column>
                     <e-column field='ShipCountry' headerText='Ship Country' editType= 'dropdownedit' width=150>
                         <ng-template #template let-data>
-                            <a href="#">{{data.ShipCountry}}</a>
+                            <a href="#" aria-label="View orders for {{data.ShipCountry}}">{{data.ShipCountry}}</a>
                         </ng-template>
                     </e-column>
                 </e-columns>

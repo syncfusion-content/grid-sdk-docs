@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Use custom helper inside the loop with templates ASP.NET Core Grid Component
-description: Use custom helper inside the loop with templates in Syncfusion ASP.NET Core Grid component of Syncfusion Essential JS 2 and more.
+title: ASP.NET Core Grid Custom Column Templates | Syncfusion
+description: Learn how to create custom column templates in ASP.NET Core Data Grid using helper functions, template loops, and dynamic rendering for customized cell content.
 platform: grid-sdk
 control: Use custom helper inside the loop with templates 
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Use custom helper inside the loop with templates in ASP.NET Core Grid
+# Custom Column Templates in ASP.NET Core Data Grid
 
 The Syncfusion ASP.NET Core Grid allows you to use custom helpers inside the loop with `template` property of a column. This feature enables you to create complex templates that can incorporate additional helper functions.
 

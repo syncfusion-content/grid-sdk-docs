@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Module in JavaScript Grid control | Syncfusion
-description: Learn here all about Module in Syncfusion JavaScript Grid control of Syncfusion Essential JS 2 and more.
+title: ##Platform_Name## Grid Modules and Feature Injection | Syncfusion
+description: Learn how to configure ##Platform_Name## Data Grid modules and services for paging, sorting, filtering, grouping, editing, and export features.
 platform: grid-sdk
 control: Module 
 publishingplatform: grid-sdk
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Module in JavaScript Grid control
+# Modules in ##Platform_Name## Data Grid
 
 The available Grid modules are:
 

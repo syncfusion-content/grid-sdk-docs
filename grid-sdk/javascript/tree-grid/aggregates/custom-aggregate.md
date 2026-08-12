@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Custom aggregate in JavaScript Treegrid control | Syncfusion
-description: Learn here all about Custom aggregate in Syncfusion JavaScript Treegrid control of Syncfusion Essential JS 2 and more.
+title: JavaScript TreeGrid Custom Aggregate | Syncfusion
+description: Learn about implementing custom aggregates in the JavaScript TreeGrid, including configuration and usage of custom aggregation functions.
 platform: grid-sdk
 control: Custom aggregate 
 publishingplatform: grid-sdk
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Custom aggregate in JavaScript Treegrid control
+# Custom Aggregate in JavaScript TreeGrid
 
 To calculate the aggregate value with your own aggregate functions, use the custom aggregate option. To use custom aggregation, specify the [`type`](../../api/treegrid/aggregateColumnModel/#type) as `Custom`, and provide the custom aggregate function in the [`customAggregate`](../../api/treegrid/aggregateColumnModel/#customaggregate) property.
 

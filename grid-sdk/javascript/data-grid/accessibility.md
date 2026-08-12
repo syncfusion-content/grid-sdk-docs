@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Accessibility in JavaScript Grid control | Syncfusion
-description: Learn here all about Accessibility in Syncfusion JavaScript Grid control of Syncfusion Essential JS 2 and more.
+title: Javascript Grid Accessibility | Syncfusion
+description: Learn how to use accessibility features in Javascript Data Grid with keyboard navigation, ARIA support, screen readers, and WCAG standards.
 platform: grid-sdk
 control: Accessibility 
 publishingplatform: grid-sdk
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Accessibility in JavaScript Grid control
+# Accessibility in Javascript Data Grid
 
 The Grid control followed the accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) that are commonly used to evaluate accessibility.
 

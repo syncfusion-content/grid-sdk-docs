@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Connecting Laravel data to Syncfusion Grid
-description: Connect Laravel with PHP Syncfusion Grid for CRUD, filtering, sorting, paging, and RESTful API integration.
+title: Javascript Grid Laravel Integration | Syncfusion
+description: Learn how to connect Laravel data to Javascript Data Grid using REST APIs for CRUD operations, filtering, sorting, paging, and data management.
 platform: grid-sdk
 control: grid
 keywords: adaptors, urladaptor, laravel, php, remotedata, restful-api
@@ -10,7 +10,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Connecting PHP Laravel data to Syncfusion Grid with PHP
+# Connecting PHP Laravel Data to Javascript Data Grid
 
 [Laravel](https://laravel.com/docs/12.x) is a modern PHP framework that provides a clean, elegant syntax and powerful features for building web applications. The Syncfusion JavaScript Grid component seamlessly integrates with the Laravel framework and MySQL Server, providing strong support for RESTful APIs. By combining Laravel’s robust backend with the Grid’s rich frontend features enables the creation of interactive, responsive data management interfaces with minimal custom code.
 

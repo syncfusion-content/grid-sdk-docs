@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Reactive Aggregate in ASP.NET Core Grid Component
-description: Learn here all about Reactive Aggregate in Syncfusion ASP.NET Core Grid component of Syncfusion Essential JS 2 and more.
+title: ASP.NET Core Grid Reactive Aggregate | Syncfusion
+description: Learn how to use reactive aggregates in ASP.NET Core Data Grid to automatically update summary values when data is edited, added, or removed.
 platform: grid-sdk
 control: Reactive Aggregate
 publishingplatform: grid-sdk
 documentation: ug
 ---
 
-# Reactive aggregate in ASP.NET Core Grid component
+# Reactive Aggregate in ASP.NET Core Data Grid
 
 The [ASP.NET Core DataGrid](https://www.syncfusion.com/aspnet-core-ui-controls/grid) component provides support for reactive aggregates, which allow you to update the aggregate values dynamically as the data changes. Reactive aggregates automatically recalculate their values when there are changes in the underlying data, providing real-time updates to the aggregate values in the grid.
 

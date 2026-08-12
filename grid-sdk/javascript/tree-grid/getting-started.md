@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting started with JavaScript Tree Grid control | Syncfusion
-description: Checkout and learn about Getting started with JavaScript Tree Grid control of Syncfusion Essential JS 2 and more details.
+title: JavaScript TreeGrid Getting Started | Syncfusion
+description: Learn how to get started with JavaScript TreeGrid, including installation, configuration, data binding, and basic setup.
 platform: grid-sdk
 control: Getting started 
 publishingplatform: grid-sdk
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Getting started in JavaScript Tree Grid control
+# Getting Started with JavaScript TreeGrid
 
 This section explains the steps required to create a simple Essential<sup style="font-size:70%">&reg;</sup> JS 2 Tree Grid and demonstrates the basic usage of the Tree Grid control in a JavaScript application.
 

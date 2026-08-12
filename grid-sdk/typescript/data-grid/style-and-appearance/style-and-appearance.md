@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Style and appearance in TypeScript Grid control | Syncfusion
-description: Learn here all about Style and appearance in Syncfusion TypeScript Grid control of Syncfusion Essential JS 2 and more.
+title: Typescript Grid Style and Appearance | Syncfusion
+description: Learn how to customize the style and appearance of Typescript Data Grid with built-in themes, CSS customization, theme packages, and design configuration.
 platform: grid-sdk
 control: Style and appearance 
 publishingplatform: grid-sdk
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Style and appearance in TypeScript Grid control
+# Style and Appearance in Typescript Data Grid
 
 The Grid control offers various ways to customize its appearance using both default CSS and custom themes. Let's go over some common approaches:
 

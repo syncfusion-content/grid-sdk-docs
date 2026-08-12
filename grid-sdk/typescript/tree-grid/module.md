@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Module in TypeScript Treegrid control | Syncfusion
-description: Learn here all about Module in Syncfusion TypeScript Treegrid control of Syncfusion Essential JS 2 and more.
+title: TypeScript TreeGrid Modules | Syncfusion
+description: Learn about module injection in TypeScript TreeGrid, including available feature modules, dependencies, and their purposes.
 platform: grid-sdk
 control: Module 
 publishingplatform: grid-sdk
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Module in TypeScript Treegrid control
+# Modules in TypeScript TreeGrid
 
 Syncfusion TypeScript TreeGrid modules help optimize your application’s bundle size by including only the features you need. To enable a specific TreeGrid feature, import and inject the corresponding Feature Module into your TreeGrid configuration.
 

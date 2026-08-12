@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Row cell customization in JavaScript Treegrid control | Syncfusion
-description: Learn here all about Row cell customization in Syncfusion JavaScript Treegrid control of Syncfusion Essential JS 2 and more.
+title: JavaScript TreeGrid Row Cell Customization | Syncfusion
+description: Learn how to customize rows and cells in the JavaScript TreeGrid using queryCellInfo and rowDataBound events.
 platform: grid-sdk
 control: Row cell customization 
 publishingplatform: grid-sdk
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Row cell customization in JavaScript Treegrid control
+# Row Cell Customization in JavaScript TreeGrid
 
 In Tree Grid we can customize the row and cell using [`queryCellInfo`](../api/treegrid/#querycellinfo) and [`rowDataBound`](../api/treegrid/#rowdatabound) events of Tree Grid.
 

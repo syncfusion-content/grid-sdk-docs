@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Browser support for React Data Grid | Syncfusion
-description: Learn about browser support and compatibility details for the Syncfusion Essential JS 2 React DataGrid component across modern desktop and mobile browsers.
+title: React Grid Browser Support | Syncfusion
+description: Learn how to check browser support and compatibility for React Data Grid across modern desktop and mobile browsers
 control: Browser Support 
 platform: grid-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Browser Support for Syncfusion® React DataGrid
+# Browser Support in React Data Grid
 
 Syncfusion® React Data Grid component support modern browsers and rely on current web platform features.
 The Data Grid is compatible with all common desktop and mobile browsers.

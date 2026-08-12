@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Edit types in JavaScript Treegrid control | Syncfusion
-description: Learn here all about Edit types in Syncfusion JavaScript Treegrid control of Syncfusion Essential JS 2 and more.
+title: JavaScript TreeGrid Edit Types | Syncfusion
+description: Learn how to use different edit types in JavaScript TreeGrid, including cell, row, batch, and dialog editing modes for managing data.
 platform: grid-sdk
 control: Edit types 
 publishingplatform: grid-sdk
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Edit types in JavaScript Treegrid control
+# Edit Types in JavaScript TreeGrid
 
 ## Cell edit type and its params
 

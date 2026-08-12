@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Row height in JavaScript Treegrid control | Syncfusion
-description: Learn here all about Row height in Syncfusion JavaScript Treegrid control of Syncfusion Essential JS 2 and more.
+title: JavaScript TreeGrid Row Height | Syncfusion
+description: Learn how to customize row height in JavaScript TreeGrid to improve readability and optimize data presentation.
 platform: grid-sdk
 control: Row height 
 publishingplatform: grid-sdk
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Row height in JavaScript Treegrid control
+# Row Height in JavaScript TreeGrid
 
 You can customize the row height of treegrid rows through the [`rowHeight`](../../api/treegrid/#rowheight) property. The `rowHeight` property is used to change the row height of entire treegrid rows.
 

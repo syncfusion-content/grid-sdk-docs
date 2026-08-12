@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Row in JavaScript Treegrid control | Syncfusion
-description: Learn here all about Row in Syncfusion JavaScript Treegrid control of Syncfusion Essential JS 2 and more.
+title: JavaScript TreeGrid Rows | Syncfusion
+description: Learn how to work with rows in JavaScript TreeGrid, including row customization, selection, styling, rendering, and row-level operations.
 platform: grid-sdk
 control: Row 
 publishingplatform: grid-sdk
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Row in JavaScript Treegrid control
+# Rows in JavaScript TreeGrid
 
 The row represents record details fetched from data source.
 

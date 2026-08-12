@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with TreeGrid in Blazor MAUI App | Syncfusion®
-description: Checkout and learn about the documentation for getting started with Blazor TreeGrid Component in Blazor MAUI App.
+title: Blazor TreeGrid Getting Started with MAUI App | Syncfusion
+description: Learn how to get started with Blazor TreeGrid in a .NET MAUI Blazor Hybrid app using Visual Studio, setup tools, and configuration steps.
 platform: grid-sdk
 control: TreeGrid
 documentation: ug

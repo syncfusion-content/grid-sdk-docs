@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Column menu in TypeScript Treegrid control | Syncfusion
-description: Learn here all about Column menu in Syncfusion TypeScript Treegrid control of Syncfusion Essential JS 2 and more.
+title: TypeScript TreeGrid Column Menu | Syncfusion
+description: Learn how to use the column menu in TypeScript TreeGrid for sorting, filtering, column visibility, and other column actions.
 platform: grid-sdk
 control: Column menu 
 publishingplatform: grid-sdk
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Column menu in TypeScript Treegrid control
+# Column Menu in TypeScript TreeGrid
 
 The column menu has options to integrate features like sorting, filtering, and autofit. It will show a menu with the integrated feature when users click on multiple icon of the column. To enable column menu, you need to define the [`showColumnMenu`](../../api/treegrid/#showcolumnmenu) property as true.
 
