@@ -4,7 +4,6 @@ title: ASP.NET Core TreeGrid PDF Export | Syncfusion
 description: Learn how to enable and use PDF export in the ASP.NET Core TreeGrid, including showing a spinner and providing a custom data source.
 platform: grid-sdk
 control: Pdf Export
-publishingplatform: grid-sdk
 documentation: ug
 ---
 

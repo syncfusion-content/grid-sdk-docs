@@ -4,7 +4,6 @@ title: ASP.NET Core TreeGrid Excel Export Options | Syncfusion
 description: Learn about Excel export options in ASP.NET Core TreeGrid, including export customization, hidden columns, selected records, and advanced export settings.
 platform: grid-sdk
 control: Excel Export Options
-publishingplatform: grid-sdk
 documentation: ug
 ---
 

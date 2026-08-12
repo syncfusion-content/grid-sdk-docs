@@ -4,7 +4,6 @@ title: ASP.NET Core TreeGrid Excel Export | Syncfusion
 description: Learn how to export data from ASP.NET Core TreeGrid to Excel, including export customization, selected records, and advanced export options.
 platform: grid-sdk
 control: Excel Export
-publishingplatform: grid-sdk
 documentation: ug
 ---
 

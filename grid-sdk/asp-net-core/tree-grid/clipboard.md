@@ -4,7 +4,6 @@ title: ASP.NET Core TreeGrid Clipboard | Syncfusion
 description: Learn how to use clipboard operations in ASP.NET Core TreeGrid, including copy, paste, hierarchy modes, and autofill for rows and cells.
 platform: grid-sdk
 control: Clipboard
-publishingplatform: grid-sdk
 documentation: ug
 ---
 

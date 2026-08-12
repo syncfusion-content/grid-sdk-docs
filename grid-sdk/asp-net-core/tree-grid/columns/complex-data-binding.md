@@ -4,7 +4,6 @@ title: ASP.NET Core TreeGrid Complex Data Binding | Syncfusion
 description: Learn how to use complex data binding in ASP.NET Core TreeGrid with nested field mapping, dot notation, and hierarchical data display.
 platform: grid-sdk
 control: Complex Data Binding
-publishingplatform: grid-sdk
 documentation: ug
 ---
 

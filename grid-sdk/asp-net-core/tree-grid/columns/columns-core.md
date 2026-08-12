@@ -4,7 +4,6 @@ title: ASP.NET Core TreeGrid Columns | Syncfusion
 description: Learn how to configure and customize columns in ASP.NET Core TreeGrid, including column types, visibility, templates, and formatting options.
 platform: grid-sdk
 control: Columns Core
-publishingplatform: grid-sdk
 documentation: ug
 ---
 

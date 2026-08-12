@@ -4,7 +4,6 @@ title: ASP.NET Core TreeGrid Edit Types | Syncfusion
 description: Learn how to use different edit types in ASP.NET Core TreeGrid, including cell, row, batch, and dialog editing modes for managing data.
 platform: grid-sdk
 control: Edit Types
-publishingplatform: grid-sdk
 documentation: ug
 ---
 

@@ -4,7 +4,6 @@ title: ASP.NET Core TreeGrid Row Spanning | Syncfusion
 description: Learn how to use row spanning in ASP.NET Core TreeGrid to merge cells across rows and create customized data layouts and presentations.
 platform: grid-sdk
 control: Row Spanning
-publishingplatform: grid-sdk
 documentation: ug
 ---
 

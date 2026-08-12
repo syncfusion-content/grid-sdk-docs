@@ -4,7 +4,6 @@ title: ASP.NET Core TreeGrid Scrolling | Syncfusion
 description: Learn how to configure scrolling in ASP.NET Core TreeGrid, including responsive sizing, sticky headers, scroll-to-row, and scrollbar options.
 platform: grid-sdk
 control: Scrolling
-publishingplatform: grid-sdk
 documentation: ug
 ---
 

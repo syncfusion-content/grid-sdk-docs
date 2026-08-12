@@ -4,7 +4,6 @@ title: ASP.NET Core TreeGrid Loading Animation | Syncfusion
 description: Learn how to use loading animations in ASP.NET Core TreeGrid, including spinner and shimmer indicators for improved loading experiences.
 platform: grid-sdk
 control: Loading Animation
-publishingplatform: grid-sdk
 documentation: ug
 ---
 

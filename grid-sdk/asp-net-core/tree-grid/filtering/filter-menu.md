@@ -4,7 +4,6 @@ title: ASP.NET Core TreeGrid Filter Menu | Syncfusion
 description: Learn how to use the filter menu in ASP.NET Core TreeGrid, including column filtering, filter operators, and custom filter options.
 platform: grid-sdk
 control: Filter Menu
-publishingplatform: grid-sdk
 documentation: ug
 ---
 

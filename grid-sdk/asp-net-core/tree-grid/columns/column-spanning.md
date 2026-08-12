@@ -4,7 +4,6 @@ title: ASP.NET Core TreeGrid Column Spanning | Syncfusion
 description: Learn how to configure column spanning in ASP.NET Core TreeGrid, including merging cells and customizing column layouts.
 platform: grid-sdk
 control: Column Spanning
-publishingplatform: grid-sdk
 documentation: ug
 ---
 

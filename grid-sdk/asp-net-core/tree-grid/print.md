@@ -4,7 +4,6 @@ title: ASP.NET Core TreeGrid Print | Syncfusion
 description: Learn how to print ASP.NET Core TreeGrid, including toolbar integration, page setup, column visibility settings, and print customization options.
 platform: grid-sdk
 control: Print
-publishingplatform: grid-sdk
 documentation: ug
 ---
 

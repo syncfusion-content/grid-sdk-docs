@@ -4,7 +4,6 @@ title: ASP.NET Core TreeGrid Dialog Editing | Syncfusion
 description: Learn how to use dialog editing in ASP.NET Core TreeGrid to edit records through customizable forms and perform CRUD operations.
 platform: grid-sdk
 control: Dialog Editing
-publishingplatform: grid-sdk
 documentation: ug
 ---
 

@@ -4,7 +4,6 @@ title: ASP.NET Core TreeGrid Excel Cell Style Customization | Syncfusion
 description:  Learn how to customize Excel cell styles in the ASP.NET Core TreeGrid of Essential JS 2, including conditional formatting and theming options.
 platform: grid-sdk
 control: Excel Cell Style Customization
-publishingplatform: grid-sdk
 documentation: ug
 ---
 

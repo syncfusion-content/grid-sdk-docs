@@ -4,7 +4,6 @@ title: ASP.NET Core TreeGrid Paging | Syncfusion
 description: Learn how to use Paging in ASP.NET Core TreeGrid to navigate large datasets, configure paging options, customize page navigation, and improve data browsing.
 platform: grid-sdk
 control: Paging
-publishingplatform: grid-sdk
 documentation: ug
 ---
 

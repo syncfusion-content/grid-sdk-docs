@@ -4,7 +4,6 @@ title:  ASP.NET Core TreeGrid PDF Export Options | Syncfusion
 description: Learn about PDF export options in ASP.NET Core TreeGrid, including exporting selected records, hidden columns, custom fonts, and advanced settings.
 platform: grid-sdk
 control: PDF Export Options
-publishingplatform: grid-sdk
 documentation: ug
 ---
 

@@ -4,7 +4,6 @@ title: ASP.NET Core TreeGrid Overview | Syncfusion
 description: Learn how to use ASP.NET Core TreeGrid to display and manage hierarchical data with data binding, sorting, filtering, editing, and virtualization.
 platform: grid-sdk
 control: Index
-publishingplatform: grid-sdk
 documentation: ug
 ---
 

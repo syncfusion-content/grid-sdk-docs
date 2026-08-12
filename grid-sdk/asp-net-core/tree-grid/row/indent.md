@@ -4,7 +4,6 @@ title: ASP.NET Core TreeGrid Indent and Outdent | Syncfusion
 description: Learn how to indent and outdent rows in ASP.NET Core TreeGrid to modify hierarchical relationships and manage parent-child records.
 platform: grid-sdk
 control: Indent and Outdent
-publishingplatform: grid-sdk
 documentation: ug
 ---
 

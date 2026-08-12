@@ -4,7 +4,6 @@ title: ASP.NET Core TreeGrid Cell Editing | Syncfusion
 description: Learn how to use cell editing in the ASP.NET Core TreeGrid, including enabling, editing, and handling cell edit events.
 platform: grid-sdk
 control: Cell Editing
-publishingplatform: grid-sdk
 documentation: ug
 ---
 

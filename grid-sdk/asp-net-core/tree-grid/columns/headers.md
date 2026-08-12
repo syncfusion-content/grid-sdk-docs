@@ -4,7 +4,6 @@ title: ASP.NET Core TreeGrid Headers | Syncfusion
 description: Learn how to configure and customize column headers in ASP.NET Core TreeGrid, including header text and template options.
 platform: grid-sdk
 control: Headers
-publishingplatform: grid-sdk
 documentation: ug
 ---
 

@@ -4,7 +4,6 @@ title: ASP.NET Core TreeGrid Row Editing | Syncfusion
 description: Learn how to use row editing in ASP.NET Core TreeGrid, including editing rows, programmatic CRUD operations, and confirmation dialogs.
 platform: grid-sdk
 control: Row Editing
-publishingplatform: grid-sdk
 documentation: ug
 ---
 

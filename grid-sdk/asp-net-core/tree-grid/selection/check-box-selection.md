@@ -4,7 +4,6 @@ title: ASP.NET Core TreeGrid Checkbox Selection | Syncfusion
 description: Learn how to enable and configure checkbox selection in ASP.NET Core TreeGrid, including selection modes, persist selection, and checkbox behavior.
 platform: grid-sdk
 control: Checkbox Selection
-publishingplatform: grid-sdk
 documentation: ug
 ---
 

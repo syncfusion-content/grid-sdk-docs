@@ -4,7 +4,6 @@ title: ASP.NET Core TreeGrid Cell Content | Syncfusion
 description: Learn how to display HTML content in ASP.NET Core TreeGrid headers and cells using disableHtmlEncode to render formatted content and custom markup.
 platform: grid-sdk
 control: Content
-publishingplatform: grid-sdk
 documentation: ug
 ---
 

@@ -4,7 +4,6 @@ title: ##Platform_Name## TreeGrid Filtering | Syncfusion
 description: Learn how to use filtering in ##Platform_Name## TreeGrid, including filter bar, menu, Excel-like filtering, operators, and custom filter options.
 platform: grid-sdk
 control: Filtering
-publishingplatform: grid-sdk
 documentation: ug
 ---
 

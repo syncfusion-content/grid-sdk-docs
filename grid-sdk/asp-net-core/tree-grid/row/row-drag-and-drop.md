@@ -4,7 +4,6 @@ title: ASP.NET Core TreeGrid Row Drag and Drop | Syncfusion
 description: Learn how to use Row Drag and Drop in ASP.NET Core TreeGrid to reorder rows, configure drag-and-drop behavior, and update hierarchical data.
 platform: grid-sdk
 control: Row Drag And Drop
-publishingplatform: grid-sdk
 documentation: ug
 ---
 

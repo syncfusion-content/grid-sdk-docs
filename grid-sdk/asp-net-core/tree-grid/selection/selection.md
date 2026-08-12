@@ -4,7 +4,6 @@ title: ASP.NET Core TreeGrid Selection | Syncfusion
 description: Learn all about selection in the ASP.NET Core TreeGrid, including single/multiple selection, selection modes, toggle selection, and touch interactions.
 platform: grid-sdk
 control: Selection
-publishingplatform: grid-sdk
 documentation: ug
 ---
 

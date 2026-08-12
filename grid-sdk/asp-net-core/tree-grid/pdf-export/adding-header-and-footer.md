@@ -4,7 +4,6 @@ title: ASP.NET Core TreeGrid PDF Headers and Footers | Syncfusion
 description: Learn how to add and customize headers and footers in PDF exports for the ASP.NET Core TreeGrid, including text, page numbers, lines, and images.
 platform: grid-sdk
 control: Adding Header and Footer
-publishingplatform: grid-sdk
 documentation: ug
 ---
 

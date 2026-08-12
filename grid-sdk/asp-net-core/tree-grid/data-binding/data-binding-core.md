@@ -4,7 +4,6 @@ title: ASP.NET Core TreeGrid Data Binding | Syncfusion
 description: Learn about data binding in the ASP.NET Core TreeGrid, covering local and remote data integration, expand state mapping, and best practices.
 platform: grid-sdk
 control: Data Binding Core
-publishingplatform: grid-sdk
 documentation: ug
 ---
 

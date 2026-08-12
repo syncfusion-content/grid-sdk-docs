@@ -4,7 +4,6 @@ title: ASP.NET Core TreeGrid Getting Started | Syncfusion
 description: Learn how to get started with ASP.NET Core TreeGrid, including installation, configuration, data binding, and basic setup.
 platform: grid-sdk
 control: Getting Started Core
-publishingplatform: grid-sdk
 documentation: ug
 ---
 

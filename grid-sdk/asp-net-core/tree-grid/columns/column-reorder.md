@@ -4,7 +4,6 @@ title: ASP.NET Core TreeGrid Column Reorder | Syncfusion
 description: Learn how to reorder columns in ASP.NET Core TreeGrid using drag-and-drop functionality and customize column arrangement.
 platform: grid-sdk
 control: Column Reorder
-publishingplatform: grid-sdk
 documentation: ug
 ---
 

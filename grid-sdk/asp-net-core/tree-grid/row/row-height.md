@@ -4,7 +4,6 @@ title: ##Platform_Name## TreeGrid Row Height | Syncfusion
 description: Learn how to use Row Height in ##Platform_Name## TreeGrid to customize row size, improve data readability, and adjust grid layout based on content.
 platform: grid-sdk
 control: Row Height
-publishingplatform: grid-sdk
 documentation: ug
 ---
 

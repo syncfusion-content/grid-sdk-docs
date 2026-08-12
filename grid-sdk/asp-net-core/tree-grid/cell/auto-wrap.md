@@ -4,7 +4,6 @@ title: ASP.NET Core TreeGrid Auto Wrap | Syncfusion
 description: Learn how to enable auto wrap in ASP.NET Core TreeGrid to display header and cell content across multiple lines using flexible text wrapping modes.
 platform: grid-sdk
 control: Auto Wrap
-publishingplatform: grid-sdk
 documentation: ug
 ---
 

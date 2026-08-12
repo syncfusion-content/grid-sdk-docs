@@ -4,7 +4,6 @@ title: ASP.NET Core TreeGrid Detail Template | Syncfusion
 description: Learn how to use detail templates in ASP.NET Core TreeGrid to display expandable row content, nested data, and custom detail views.
 platform: grid-sdk
 control: Detail Template
-publishingplatform: grid-sdk
 documentation: ug
 ---
 

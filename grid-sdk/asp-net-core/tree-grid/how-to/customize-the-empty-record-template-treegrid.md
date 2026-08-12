@@ -4,7 +4,6 @@ title: ASP.NET Core TreeGrid Empty Record Template | Syncfusion
 description: Learn how to customize the empty record template in ASP.NET Core TreeGrid to display custom messages, images, and content when no records are available.
 platform: grid-sdk
 control: Customize the Empty Record Template
-publishingplatform: grid-sdk
 documentation: ug
 ---
 

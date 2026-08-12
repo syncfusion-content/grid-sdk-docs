@@ -4,7 +4,6 @@ title: ASP.NET Core TreeGrid Aggregates | Syncfusion
 description: Learn how to configure, display, and customize aggregate values in ASP.NET Core TreeGrid, including built-in aggregate types and child aggregation.
 platform: grid-sdk
 control: Aggregates
-publishingplatform: grid-sdk
 documentation: ug
 ---
 

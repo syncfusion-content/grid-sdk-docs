@@ -3,7 +3,6 @@ layout: post
 title: ASP.NET Core TreeGrid Edit | Syncfusion
 description: Learn how to edit data in ASP.NET Core TreeGrid, including CRUD operations, editing modes, validation, and data update workflows.
 control: Editing
-publishingplatform: grid-sdk
 documentation: ug
 ---
 

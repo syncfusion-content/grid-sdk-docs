@@ -4,7 +4,6 @@ title: ASP.NET Core TreeGrid Sorting | Syncfusion
 description: Learn how to sort data in ASP.NET Core TreeGrid, including single and multi-column sorting, custom sorting, and sort order configuration.
 platform: grid-sdk
 control: Sorting
-publishingplatform: grid-sdk
 documentation: ug
 ---
 
@@ -108,7 +107,7 @@ N> The **args.requestType** is the current action name. For example, in sorting 
 
 <!--  Custom sort comparer
 
-You can customize the default sort action for a column by defining the [`column.sortComparer`](../../api/treegrid/column/#sortcomparer) property. The sort comparer function has the same functionality like [`Array.sort`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort) sort comparer.
+You can customize the default sort action for a column by defining the [`column.sortComparer`](../../api/treegrid/column#sortcomparer) property. The sort comparer function has the same functionality like [`Array.sort`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort) sort comparer.
 
 In the following example, custom sort comparer function was defined in the `Category` column.
 
@@ -157,6 +156,6 @@ When you tap the treegrid header on touchscreen devices, the selected column hea
 
 The following screenshot shows treegrid touch sorting.
 
-![Touch interaction](images/touch-sorting.jpg)
+![Touch interaction](images/touch-sorting.png)
 
 N> You can refer to our  [`ASP.NET Core Tree Grid`](https://www.syncfusion.com/aspnet-core-ui-controls/tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our ASP.NET Core Tree Grid example [`ASP.NET Core Tree Grid example`](https://ej2.syncfusion.com/aspnetcore/TreeGrid/Overview#/material) to knows how to present and manipulate data.
