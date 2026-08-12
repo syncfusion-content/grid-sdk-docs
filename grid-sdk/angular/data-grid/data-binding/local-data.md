@@ -370,7 +370,7 @@ namespace AngularwithASPCore.Models
 
 The following screenshot demonstrates addition, editing, and deletion operations with changes reflected across all connected clients:
 
-![SignalR real-time data synchronization across multiple clients](../images/signalR.gif)
+![SignalR real-time data synchronization across multiple clients](../../grid/images/signalR.gif)
 
 ## Binding data from Excel file
 
@@ -664,7 +664,7 @@ actionComplete(e: EditEventArgs) {
 
 The following screenshot demonstrates data loading when the button is clicked and CRUD operations performance:
 
-![Fetch API data loading and CRUD operations demonstration](../images/fetch.gif)
+![Fetch API data loading and CRUD operations demonstration](../../grid/images/fetch.gif)
 
 ### Display loading indicator with local data
 
@@ -971,7 +971,7 @@ actionComplete(e: EditEventArgs) {
 
 The following screenshot demonstrates data loading when the button is clicked and CRUD operations performance:
 
-![AJAX request data loading and CRUD operations demonstration](../images/Ajaxreq.gif)
+![AJAX request data loading and CRUD operations demonstration](../../grid/images/Ajaxreq.gif)
 
 ### Display loading indicator using AJAX
 

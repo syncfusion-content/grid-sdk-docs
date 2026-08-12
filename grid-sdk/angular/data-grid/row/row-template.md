@@ -19,7 +19,7 @@ The row template feature in Grid allows customization of the appearance and layo
 - Chart and visualization embedding within rows.
 - Complete control over row styling and behavior.
 
-Enable the row template feature by setting the [rowTemplate](https://ej2.syncfusion.com/angular/documentation/api/grid#rowtemplate) property of the Grid component. This property accepts an Angular template that defines the custom layout for each row, providing access to row data through template context.
+Enable the row template feature by setting the [rowTemplate](https://ej2.syncfusion.com/angular/documentation/api/grid/#rowtemplate) property of the Grid component. This property accepts an Angular template that defines the custom layout for each row, providing access to row data through template context.
 
 ## Basic row template implementation
 
@@ -185,7 +185,7 @@ export interface DateFormat extends Window {
 
 Row templates support embedding interactive Syncfusion controls, transforming static grid content into dynamic, interactive interfaces. This capability enables creation of inline editors, dashboard-like interfaces, and complex data input scenarios within grid rows.
 
-To integrate Syncfusion controls, configure the [rowTemplate](https://ej2.syncfusion.com/angular/documentation/api/grid#rowtemplate) property with Angular templates containing the desired controls. Ensure proper module imports and component initialization for each integrated control.
+To integrate Syncfusion controls, configure the [rowTemplate](https://ej2.syncfusion.com/angular/documentation/api/grid/#rowtemplate) property with Angular templates containing the desired controls. Ensure proper module imports and component initialization for each integrated control.
 
 The following example demonstrates various Syncfusion controls integrated within a row template:
 
@@ -273,7 +273,7 @@ export class AppComponent {
 
 The Angular Data Grid component provides flexibility to include custom controls such as Chart within the rows of the Grid. This feature enhances Grid interactivity by displaying graphical representations of data instead of plain text.
 
-Chart integration requires proper module imports and data preparation for each chart instance. The [rowTemplate](https://ej2.syncfusion.com/angular/documentation/api/grid#rowtemplate) property accepts chart components with appropriate data binding and configuration.
+Chart integration requires proper module imports and data preparation for each chart instance. The [rowTemplate](https://ej2.syncfusion.com/angular/documentation/api/grid/#rowtemplate) property accepts chart components with appropriate data binding and configuration.
 
 The following example demonstrates performance charts embedded within employee data rows:
 

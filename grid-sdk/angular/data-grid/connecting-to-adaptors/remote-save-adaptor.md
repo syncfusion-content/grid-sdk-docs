@@ -277,7 +277,7 @@ Include the necessary CSS files in your `styles.css` file to style the Syncfusio
 
 In your component file (e.g., app.component.ts), import `DataManager` and `RemoteSaveAdaptor` from `@syncfusion/ej2-data`. Create a `DataManager` instance by following these steps:
 
-  * **Assign RemoteSaveAdaptor:** Set the `adaptor` property within the [dataSource](https://ej2.syncfusion.com/angular/documentation/api/grid#datasource) configuration to new RemoteSaveAdaptor(). This enables server-side CRUD operations for the grid.
+  * **Assign RemoteSaveAdaptor:** Set the `adaptor` property within the [dataSource](https://ej2.syncfusion.com/angular/documentation/api/grid/#datasource) configuration to new RemoteSaveAdaptor(). This enables server-side CRUD operations for the grid.
 
   * **Set DataSource Property:** Configure the `dataSource` property of the Syncfusion Angular Grid with a JSON object.
 
