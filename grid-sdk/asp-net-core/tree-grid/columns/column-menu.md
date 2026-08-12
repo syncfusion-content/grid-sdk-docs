@@ -3,7 +3,6 @@ layout: post
 title: ASP.NET Core TreeGrid Column Menu | Syncfusion
 description: Learn how to use the column menu in ASP.NET Core TreeGrid for sorting, filtering, column visibility, and other column actions.
 platform: grid-sdk
-publishingplatform: grid-sdk
 documentation: ug
 ---
 
