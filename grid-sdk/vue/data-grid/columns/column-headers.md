@@ -233,7 +233,7 @@ Here's an example of how to use stacked headers with a custom `headerTemplate` i
       </e-columns>
       <template v-slot:orderIDTemplate>
         <div>
-          <a href="#">OrderID</a>
+         <a href="#" aria-label="View order details">OrderID</a>
         </div>
       </template>
       <template v-slot:orderDetailsTemplate>
@@ -342,7 +342,7 @@ const dropdownData = ["Order Details", "Order Information"];
       </e-columns>
       <template v-slot:orderIDTemplate>
         <div>
-          <a href="#">OrderID</a>
+          <a href="#" aria-label="View order Id">OrderID</a>
         </div>
       </template>
       <template v-slot:orderDetailsTemplate>

@@ -39,7 +39,7 @@ In the following sample, the hyperlinks and images are exported to Excel using [
         </template>
         <template v-slot:mailTemplate="{data}">
             <div class="link">
-                <a :href="'mailto:'+data.EmailID">{{data.EmailID}}</a>
+                <a :href="'mailto:'+data.EmailID" aria-label="Send email">{{data.EmailID}}</a>
             </div>
         </template>
     </ejs-grid>
@@ -113,7 +113,7 @@ const excelQueryCellInfo = function(args) {
         </template>
         <template v-slot:mailTemplate="{data}">
             <div class="link">
-                <a :href="'mailto:'+data.EmailID">{{data.EmailID}}</a>
+                <a :href="'mailto:'+data.EmailID" aria-label="Send email">{{data.EmailID}}</a>
             </div>
         </template>
     </ejs-grid>
@@ -247,7 +247,7 @@ In the following sample, the detail row content is formatted by specifying the [
                 <tr>
                     <td>
                         <span class="link">
-                            Contact: <a :href="'mailto:'+data.Contact">{{data.Contact}}</a>
+                            Contact: <a :href="'mailto:'+data.Contact" aria-label="Send email to contact">{{data.Contact}}</a>
                         </span>
                     </td>
                 </tr>
@@ -469,7 +469,7 @@ const grid = ref(null);
                     <tr>
                         <td>
                             <span class="link">
-                                Contact: <a :href="'mailto:'+data.Contact">{{data.Contact}}</a>
+                                Contact: <a :href="'mailto:'+data.Contact" aria-label="Send email to contact">{{data.Contact}}</a>
                             </span>
                         </td>
                     </tr>

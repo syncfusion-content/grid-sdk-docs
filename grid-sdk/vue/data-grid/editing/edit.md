@@ -18,7 +18,7 @@ Editing feature requires a primary key column for CRUD operations. To define the
 
 You can start the edit action either by double clicking the particular row or by selecting the required row and click on **Edit** button in the toolbar. Similarly, you can add a new record to grid either by clicking on **Add** button in the toolbar or on an external button which is bound to invoke the [addRecord](https://ej2.syncfusion.com/vue/documentation/api/grid/edit#addrecord) method of the grid, **Save** and **Cancel** while in edit mode is possible using respective toolbar icon in grid. Deletion of the record is possible by selecting the required row and click on **Delete** button in the toolbar.
 
-To use CRUD, inject the [Edit](https://ej2.syncfusion.com/vue/documentation/api/grid/edit/) module in the **provide** section.
+To use CRUD, inject the [Edit](https://ej2.syncfusion.com/vue/documentation/api/grid/edit) module in the **provide** section.
 
 To learn about what are all the edit modes and edit types are available in Vue Grid, you can check on this video
 
@@ -102,7 +102,7 @@ In the below demo, the **ShipCountry** column is rendered with the template.
             <e-column field='ShipCountry' headerText='Ship Country' :template="'editTemplate'" editType='dropdownedit'  width=120></e-column>
         </e-columns>
         <template v-slot:editTemplate="{data}">
-            <a href="#">{{data.ShipCountry}}</a>
+            <a href="#" aria-label="View shipping country">{{data.ShipCountry}}</a>
         </template>
     </ejs-grid>
   </div>
@@ -141,7 +141,7 @@ provide('grid', [Edit, Toolbar]);
               <e-column field='ShipCountry' headerText='Ship Country' :template="'editTemplate'" editType='dropdownedit'  width=120></e-column>
             </e-columns>
             <template v-slot:editTemplate="{data}">
-              <a href="#">{{data.ShipCountry}}</a>
+              <a href="#" aria-label="View shipping country">{{data.ShipCountry}}</a>
           </template>
         </ejs-grid>
     </div>

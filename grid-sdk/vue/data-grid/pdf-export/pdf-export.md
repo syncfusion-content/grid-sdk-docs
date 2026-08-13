@@ -56,7 +56,7 @@ The following example demonstrates how to show and hide the spinner during PDF e
 
 The Vue Data Grid component provides a convenient way to export data to a PDF format. With the PDF export feature, you can define a custom data source while exporting. This allows you to export data that is not necessarily bind to the grid, which can be generated or retrieved based on your application logic.
 
-To export data, you need to define the [dataSource](https://ej2.syncfusion.com/vue/documentation/api/grid/pdfExportProperties#datasource) property within the [pdfExportProperties](https://ej2.syncfusion.com/vue/documentation/api/grid/pdfExportProperties/) object. This property represents the data source that will be used for the PDF export.
+To export data, you need to define the [dataSource](https://ej2.syncfusion.com/vue/documentation/api/grid/pdfExportProperties#datasource) property within the [pdfExportProperties](https://ej2.syncfusion.com/vue/documentation/api/grid/pdfExportProperties) object. This property represents the data source that will be used for the PDF export.
 
 The following example demonstrates how to render custom data source during PDF export. By utilizing the [pdfExport](https://ej2.syncfusion.com/vue/documentation/api/grid#pdfexport) method and passing the `pdfExportProperties` object through the grid instance, the grid data will be exported to a PDF using the dynamically defined data source.
 

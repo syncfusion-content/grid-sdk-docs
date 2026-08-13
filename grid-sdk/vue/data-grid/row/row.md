@@ -18,7 +18,7 @@ Customizing the styles of rows in a Vue [Vue Data Grid](https://www.syncfusion.c
 
 ### Using event
 
-You can customize the appearance of the rows by using the [rowDataBound](https://ej2.syncfusion.com/vue/documentation/api/grid#rowdatabound) event. This event triggers for every row when it is bound to the data source. In the event handler, you can get the [RowDataBoundEventArgs](https://ej2.syncfusion.com/vue/documentation/api/grid/rowDataBoundEventArgs/) object, which contains details of the row. You can use this object to modify the row's appearance, add custom elements, or perform any other customization.
+You can customize the appearance of the rows by using the [rowDataBound](https://ej2.syncfusion.com/vue/documentation/api/grid#rowdatabound) event. This event triggers for every row when it is bound to the data source. In the event handler, you can get the [RowDataBoundEventArgs](https://ej2.syncfusion.com/vue/documentation/api/grid/rowDataBoundEventArgs) object, which contains details of the row. You can use this object to modify the row's appearance, add custom elements, or perform any other customization.
  
 Here's an example of how you can use the `rowDataBound` event to customize the styles of rows based on the value of the **Freight** column. This example involves checking the value of the Freight column for each row and adding a CSS class to the row based on the value. The CSS classes **below-30**, **below-80**, and **above-80** can then be defined in your stylesheet to apply the desired styles to the rows.
 

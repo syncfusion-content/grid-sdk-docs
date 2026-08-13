@@ -12,7 +12,7 @@ domainurl: https://help.syncfusion.com/grid-sdk
 
 The toolbar in the [Vue Data Grid](https://www.syncfusion.com/vue-components/vue-grid) component offers several general use cases to enhance data manipulation and overall experience. Actions such as adding, editing, and deleting records within the grid can be performed, providing efficient data manipulation capabilities. The toolbar also facilitates data export and import functionality, allowing you to generate downloadable files in formats like Excel, CSV, or PDF. 
 
-To enable the toolbar functionality, you need to inject the **Toolbar** module in the **provide** section. This service provides the necessary methods to interact with the toolbar items. The toolbar can be customized with built-in toolbar items or custom toolbar items using the [toolbar](https://ej2.syncfusion.com/vue/documentation/api/grid#toolbar) property. The `toolbar` property accepts an array of strings representing the built-in toolbar items or an array of [ItemModel](https://ej2.syncfusion.com/vue/documentation/api/toolbar/itemModel/) objects for custom toolbar items.
+To enable the toolbar functionality, you need to inject the **Toolbar** module in the **provide** section. This service provides the necessary methods to interact with the toolbar items. The toolbar can be customized with built-in toolbar items or custom toolbar items using the [toolbar](https://ej2.syncfusion.com/vue/documentation/api/grid#toolbar) property. The `toolbar` property accepts an array of strings representing the built-in toolbar items or an array of [ItemModel](https://ej2.syncfusion.com/vue/documentation/api/toolbar/itemModel) objects for custom toolbar items.
 
 The following example demonstrates how to enable toolbar items in the grid.
 
@@ -94,6 +94,6 @@ The following example demonstrates how to change the background color of the `Ad
 
 ## See Also
 
-* [Toolbar Component](../../toolbar/getting-started/)
+* [Toolbar Component](../../toolbar/getting-started)
 * [How to apply overflowMode to grid toolbar in Vue Grid](https://www.syncfusion.com/forums/157193/how-to-apply-overflowmode-to-grid-toolbar-in-vue-grid)
 * [How to show the  toolbar in both top and bottom of the Vue Grid](https://www.syncfusion.com/forums/163079/how-to-show-the-toolbar-in-both-top-and-bottom-of-the-vue-grid)

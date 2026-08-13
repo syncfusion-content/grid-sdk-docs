@@ -74,7 +74,7 @@ In the below example, the selected grid row is dragged and dropped in to the Tre
 
 ## Drag and drop rows without drag icons
 
-By default, when performing a drag and drop operation in the Vue Data Grid, drag icons are displayed. However, in some cases, you may want to hide these drag icons. This can be achieved by setting the [targetID](https://ej2.syncfusion.com/vue/documentation/api/grid/rowDropSettings#targetid) property of the [rowDropSettings](https://ej2.syncfusion.com/vue/documentation/api/grid/rowDropSettings/) object to the current Grid's ID.
+By default, when performing a drag and drop operation in the Vue Data Grid, drag icons are displayed. However, in some cases, you may want to hide these drag icons. This can be achieved by setting the [targetID](https://ej2.syncfusion.com/vue/documentation/api/grid/rowDropSettings#targetid) property of the [rowDropSettings](https://ej2.syncfusion.com/vue/documentation/api/grid/rowDropSettings) object to the current Grid's ID.
 
 By setting the `targetID`, the Grid will render without a helper icon for row dragging. You can then customize the drag and drop action by binding to the [rowDrop](https://ej2.syncfusion.com/vue/documentation/api/grid#rowdrop) event of the Grid. In the `rowDrop` event, you can prevent the default action by setting `args.cancel` to **true**, and reorder the rows using the [reorderRows](https://ej2.syncfusion.com/vue/documentation/api/grid#reorderrows) method of the Grid.
 

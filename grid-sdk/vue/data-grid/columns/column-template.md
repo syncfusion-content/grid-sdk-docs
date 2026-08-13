@@ -49,7 +49,7 @@ The following example demonstrates, how to render hyperlink column in the Grid u
         <e-column field='FirstName' headerText='FirstName' width='120' :template="'columnTemplate'"></e-column>
       </e-columns>
       <template v-slot:columnTemplate="{ data }">
-        <a href="#" @click="onClick(data.FirstName)">{{ data.FirstName }}</a>
+        <a href="#" @click="onClick(data.FirstName)" aria-label="View FirstName">{{ data.FirstName }}</a>
       </template>
     </ejs-grid>
   </div>
@@ -90,7 +90,7 @@ const onClick = (firstName) => {
         <e-column field='FirstName' headerText='FirstName' width='120' :template="'columnTemplate'"></e-column>
       </e-columns>
       <template v-slot:columnTemplate="{data}">
-        <a href="#" @click="onClick(data.FirstName)">{{data.FirstName}}</a>
+        <a href="#" @click="onClick(data.FirstName)"  aria-label="View FirstName">{{data.FirstName}}</a>
       </template>
     </ejs-grid>
   </div>

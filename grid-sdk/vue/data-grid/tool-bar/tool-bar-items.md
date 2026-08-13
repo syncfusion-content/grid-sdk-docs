@@ -96,7 +96,7 @@ The following example demonstrate how to customize the toolbar by disabling and 
 
 Adding custom toolbar items to the Vue Data Grid involves incorporating personalized functionality into the toolbar.
 
-Custom toolbar items can be added to the Grid component by defining the [toolbar](https://ej2.syncfusion.com/vue/documentation/api/grid#toolbar) property as a collection of [ItemModel](https://ej2.syncfusion.com/vue/documentation/api/toolbar/itemModel/) objects. These objects define the custom items and their corresponding actions. The actions for the customized toolbar items are defined in the [toolbarClick](https://ej2.syncfusion.com/vue/documentation/api/grid#toolbarclick) event.
+Custom toolbar items can be added to the Grid component by defining the [toolbar](https://ej2.syncfusion.com/vue/documentation/api/grid#toolbar) property as a collection of [ItemModel](https://ej2.syncfusion.com/vue/documentation/api/toolbar/itemModel) objects. These objects define the custom items and their corresponding actions. The actions for the customized toolbar items are defined in the [toolbarClick](https://ej2.syncfusion.com/vue/documentation/api/grid#toolbarclick) event.
 
 By default, custom toolbar items are positioned on the **left** side of the toolbar. However, you can change the position by using the [align](https://ej2.syncfusion.com/vue/documentation/api/toolbar/itemModel#align) property of the `ItemModel`. The following example demonstrates how to apply the `align` property with the value **Right** for the **Collapse All** toolbar item.
 
@@ -242,7 +242,7 @@ components: {
 
 ## Add custom components to the Grid toolbar using template
 
-The Syncfusion Vue Grid provides the flexibility to customize its toolbar by embedding custom components using the [template](https://ej2.syncfusion.com/vue/documentation/api/toolbar/itemModel#template) property of the [ItemModel](https://ej2.syncfusion.com/vue/documentation/api/toolbar/itemModel/). This feature allows developers to add UI elements such as buttons, dropdowns, or input controls directly into the toolbar, alongside built-in actions like **Add**, **Edit**, and **Delete**.
+The Syncfusion Vue Grid provides the flexibility to customize its toolbar by embedding custom components using the [template](https://ej2.syncfusion.com/vue/documentation/api/toolbar/itemModel#template) property of the [ItemModel](https://ej2.syncfusion.com/vue/documentation/api/toolbar/itemModel). This feature allows developers to add UI elements such as buttons, dropdowns, or input controls directly into the toolbar, alongside built-in actions like **Add**, **Edit**, and **Delete**.
 
 In the following example, an [AutoComplete](https://ej2.syncfusion.com/vue/documentation/auto-complete/getting-started) is defined in the **App.vue** page as a custom toolbar item using the `template` property. The `AutoComplete` is populated with unique values from the `ShipCity` field of the Grid data. When you select a value from the `AutoComplete`, the Grid is filtered to show only the records that match the selected city. Once the Grid is rendered, the custom `AutoComplete` appears as part of the toolbar, allowing you to interact with both standard and custom toolbar elements.
 
@@ -426,7 +426,7 @@ Additionally, the [change](https://ej2.syncfusion.com/vue/documentation/api/auto
 
 Customizing the position of a custom toolbar within the Vue Data Grid involves modifying the default placement of the custom toolbar items. This enables you to precisely control the positioning of each custom toolbar item according to your specific requirements and desired layout within the Grid.
 
-By default, custom toolbar items in Grid component are aligned on the left side of the toolbar. However, you have the ability to modify the position of the custom toolbar items by utilizing the [align](https://ej2.syncfusion.com/vue/documentation/api/toolbar/itemModel#align) property of the [ItemModel](https://ej2.syncfusion.com/vue/documentation/api/toolbar/itemModel/).
+By default, custom toolbar items in Grid component are aligned on the left side of the toolbar. However, you have the ability to modify the position of the custom toolbar items by utilizing the [align](https://ej2.syncfusion.com/vue/documentation/api/toolbar/itemModel#align) property of the [ItemModel](https://ej2.syncfusion.com/vue/documentation/api/toolbar/itemModel).
 
 In the following sample, the **Collapse All** toolbar item is positioned on the **Right**, the **Expand All** toolbar item is positioned on the **Left**, and the **Search** toolbar item is positioned at the **Center**.
 

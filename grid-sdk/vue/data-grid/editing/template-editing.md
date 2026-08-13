@@ -15,7 +15,7 @@ The [Vue Data Grid](https://www.syncfusion.com/vue-components/vue-grid) componen
 
 ## Inline or dialog template editing 
 
-The Vue Data Grid provides support for inline and dialog template editing, allowing you to customize the editing using [Forms](https://legacy.vuejs.org/docs/forms.html). These forms can be utilized to add and update grid records.
+The Vue Data Grid provides support for inline and dialog template editing, allowing you to customize the editing using Forms. These forms can be utilized to add and update grid records.
 
 To enable this feature, you need to set the [editSettings.mode](https://ej2.syncfusion.com/vue/documentation/api/grid/editSettings#mode) property of the Grid to either **Normal** or **Dialog** and define the grid editors using [editSetting.template](https://ej2.syncfusion.com/vue/documentation/api/grid/editsettings#template).
 
@@ -44,7 +44,7 @@ In the following sample, grid enabled with dialog template editing.
 
 You can enhance the customization of your grid's edit forms by utilizing template contexts, such as accessing row details inside template, rendering editors as components, getting values from editors, setting focus to editors, and disabling default form validation, and adding custom validation. These features are applicable in both **inline** and **dialog** editing modes.
 
-The following template context topics are demonstrated through a practical example in the [Render tab component inside the dialog template](https://ej2.syncfusion.com/vue/documentation/grid/editingtemplate-editing#render-tab-component-inside-the-dialog-template) topic.
+The following template context topics are demonstrated through a practical example in the [Render tab component inside the dialog template](#render-tab-component-inside-the-dialog-template) topic.
 
 ### Access row details inside template using template context
 
@@ -117,7 +117,7 @@ In the following code example, the CustomerID column focused.
 
 ## Disable default form validation
 
-The Vue Data Grid provides built-in support for [vue form validation](https://vue-bootstrap.netlify.app/docs/forms/validation/) to ensure data integrity and accuracy during editing. However, there might be scenarios where you want to disable the default form validation rules. This can be achieved using the [removeRules](https://ej2.syncfusion.com/documentation/api/form-validator#removerules) method within the [actionComplete](https://ej2.syncfusion.com/vue/documentation/api/grid#actioncomplete) event of the Grid.
+The Vue Data Grid provides built-in support for [vue form validation](https://bootstrap-vue.org/docs/reference/validation/) to ensure data integrity and accuracy during editing. However, there might be scenarios where you want to disable the default form validation rules. This can be achieved using the [removeRules](https://ej2.syncfusion.com/documentation/api/form-validator#removerules) method within the [actionComplete](https://ej2.syncfusion.com/vue/documentation/api/grid#actioncomplete) event of the Grid.
 
 To disable default form validation rules in the Grid, follow these steps:
 

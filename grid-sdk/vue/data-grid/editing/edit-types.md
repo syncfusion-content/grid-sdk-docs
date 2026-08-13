@@ -14,7 +14,7 @@ The [Vue Data Grid](https://www.syncfusion.com/vue-components/vue-grid) componen
 
 ## Default cell edit type editor
 
-The Vue Data Grid provides pre-built default editors that enhance data editing and input handling within the grid. These default editors are designed to simplify the process of defining the editor component for specific columns based on the data type of the column within the grid. To configure default editors for grid columns, leverage the [editType](https://ej2.syncfusion.com/vue/documentation/api/grid/editType/) property.
+The Vue Data Grid provides pre-built default editors that enhance data editing and input handling within the grid. These default editors are designed to simplify the process of defining the editor component for specific columns based on the data type of the column within the grid. To configure default editors for grid columns, leverage the [editType](https://ej2.syncfusion.com/vue/documentation/api/grid/editType) property.
 
 The available default edit types are as follows:
 
@@ -46,7 +46,7 @@ You can customize the default TextBox component in Grid edit form using its prop
 
 Component|Edit Type |Description|Example Customized edit params
 -----|---|-----|-----|
-[TextBox](../../textbox/getting-started) |stringedit| The `stringedit` type renders a TextBox component for string data type columns. To customize the `TextBox` component, refer to the [TextBox API documentation](https://ej2.syncfusion.com/vue/documentation/api/textbox/) for detailed information on available properties | params: { showClearButton : true}
+[TextBox](../../textbox/getting-started) |stringedit| The `stringedit` type renders a TextBox component for string data type columns. To customize the `TextBox` component, refer to the [TextBox API documentation](https://ej2.syncfusion.com/vue/documentation/api/textbox) for detailed information on available properties | params: { showClearButton : true}
 
 The following sample code demonstrates the customization applied to TextBox component of **CustomerID** Grid column:
 
@@ -67,7 +67,7 @@ You can customize the `NumericTextBox` component in Grid edit form using its pro
 
 Component| Edit Type |Description |Example Customized edit params
 -----|-----|-----|----|
-[NumericTextBox](../../numerictextbox/getting-started)|numericedit| TThe `numericedit` type renders a NumericTextBox component for integers, double, float, short, byte, long, long double and decimal data types columns. To customize the **NumericTextBox** component, refer to the [NumericTextBox API documentation](https://ej2.syncfusion.com/vue/documentation/api/numerictextbox/) for detailed information on available properties. | params: { decimals: 2, value: 5 }
+[NumericTextBox](../../numerictextbox/getting-started)|numericedit| TThe `numericedit` type renders a NumericTextBox component for integers, double, float, short, byte, long, long double and decimal data types columns. To customize the **NumericTextBox** component, refer to the [NumericTextBox API documentation](https://ej2.syncfusion.com/vue/documentation/api/numerictextbox) for detailed information on available properties. | params: { decimals: 2, value: 5 }
 
 The following sample code demonstrates the customization applied to NumericTextBox component of **Frieght** Grid column:
 
@@ -109,7 +109,7 @@ You can customize the `DropDownList` component in Grid edit form using its prope
 
 Component|Edit Type |Description| Example Customized edit params
 -----|-----|-----|----|
-[DropDownList](../../drop-down-list/getting-started)-|DropDownEdit|  The `dropdownedit` type renders a DropDownList component for string data type columns. To customize the DropDownList component, refer to the [DropDownList API documentation](https://ej2.syncfusion.com/vue/documentation/api/drop-down-list/) for detailed information on available properties.  | params: { value: ‘Germany’ }
+[DropDownList](../../drop-down-list/getting-started)-|DropDownEdit|  The `dropdownedit` type renders a DropDownList component for string data type columns. To customize the DropDownList component, refer to the [DropDownList API documentation](https://ej2.syncfusion.com/vue/documentation/api/drop-down-list) for detailed information on available properties.  | params: { value: ‘Germany’ }
 
 The following sample code demonstrates the customization applied to DropDownList component  of **ShipCity** Grid column:
 
@@ -191,7 +191,7 @@ You can customize the CheckBox component in Grid edit form using its property. T
 
 Component| Edit Type |Description |Example Customized edit params
 -----|-----|-----|----|
-[CheckBox](../../check-box/getting-started)| booleanedit | The `booleanedit` type renders a **CheckBox** component for boolean data type. To customize the CheckBox component, refer to the [CheckBox API documentation](https://ej2.syncfusion.com/vue/documentation/api/check-box/) for detailed information on available properties. | params: { checked: true}
+[CheckBox](../../check-box/getting-started)| booleanedit | The `booleanedit` type renders a **CheckBox** component for boolean data type. To customize the CheckBox component, refer to the [CheckBox API documentation](https://ej2.syncfusion.com/vue/documentation/api/check-box) for detailed information on available properties. | params: { checked: true}
 
 The following sample code demonstrates the customization applied to CheckBox component of **Verified** Grid column:
 
@@ -212,7 +212,7 @@ You can customize the DatePicker component in Grid edit form using its property.
 
 Component| Edit Type |Description|Example Customized edit params
 -----|-----|-----|----|
-[DatePicker](../../datepicker/getting-started)| datepickeredit | The `datepickeredit` type renders a **DatePicker** component for date data type columns. To customize the DatePicker component, refer to the [DatePicker API documentation](https://ej2.syncfusion.com/vue/documentation/api/datepicker/) for detailed information on available properties. | params: { format:'dd.MM.yyyy' }
+[DatePicker](../../datepicker/getting-started)| datepickeredit | The `datepickeredit` type renders a **DatePicker** component for date data type columns. To customize the DatePicker component, refer to the [DatePicker API documentation](https://ej2.syncfusion.com/vue/documentation/api/datepicker) for detailed information on available properties. | params: { format:'dd.MM.yyyy' }
  
 The following sample code demonstrates the customization applied to DatePicker component of **OrderDate** Grid column:
 
@@ -250,7 +250,7 @@ You can customize the DateTimePicker component in Grid edit form using its prope
 
 Component|Edit Type |Description |Example Customized edit params
 -----|-----|-----|----|
-[DateTimePicker](../../datetimepicker/getting-started)| datetimepickeredit | The `datetimepickeredit` type renders a **DateTimePicker** component for date time data type columns. You can customize the DateTimePicker component, refer to the [DateTimePicker API documentation](https://ej2.syncfusion.com/vue/documentation/api/datetimepicker/) for detailed information on available properties. | params: { value: new Date() }
+[DateTimePicker](../../datetimepicker/getting-started)| datetimepickeredit | The `datetimepickeredit` type renders a **DateTimePicker** component for date time data type columns. You can customize the DateTimePicker component, refer to the [DateTimePicker API documentation](https://ej2.syncfusion.com/vue/documentation/api/datetimepicker) for detailed information on available properties. | params: { value: new Date() }
  
 The following sample code demonstrates the customization applied to DatePicker component of **OrderDate** Grid column:
 
@@ -298,7 +298,7 @@ To render a TextArea in the edit form, you need to define an [editTemplate](http
 
 > When using a text area, please use **Shift+Enter** to move to the next line. By default, pressing **Enter** will trigger a record update while you are in edit mode.
 
-The following example demonstrates how to render a TextArea component in the **ShipAdress** column of the Vue Data Grid. The [valueAccessor](https://ej2.syncfusion.com/vue/documentation/api/grid/valueAccessor/) property is utilized to split the text into multiple lines within the grid column:
+The following example demonstrates how to render a TextArea component in the **ShipAdress** column of the Vue Data Grid. The [valueAccessor](https://ej2.syncfusion.com/vue/documentation/api/grid/valueAccessor) property is utilized to split the text into multiple lines within the grid column:
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}

@@ -33,7 +33,7 @@ The edit dialog in the Grid component allows you to customize its appearance and
 
 To customize the edit dialog, you need to handle the [actionComplete](https://ej2.syncfusion.com/vue/documentation/api/grid#actioncomplete) event of the Grid component and perform the necessary modifications based on the **requestType** parameter. The **requestType** parameter identifies the type of action being performed, such as **beginEdit** for editing a record or **add** for adding a new record.
 
->You can refer the Grid [Default text](../global-local/) list for more localization.
+>You can refer the Grid [Default text](../global-local) list for more localization.
 
 The following example that demonstrates how to customize the edit dialog using the `actionComplete` event:
 

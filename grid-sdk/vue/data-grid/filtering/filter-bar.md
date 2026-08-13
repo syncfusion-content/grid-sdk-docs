@@ -71,7 +71,7 @@ By settings [filterSettings.mode](https://ej2.syncfusion.com/vue/documentation/a
 
 The Vue Data Grid component provides an option to display filter text within the pager, indicating the current filtering status. Enabling this feature provides you with a clear understanding of the applied filters and the criteria used for filtering.
 
-To enable the display of filter text within the pager, you should set the [showFilterBarStatus](https://ej2.syncfusion.com/vue/documentation/api/grid/filterSettings#showfilterbarstatus) property within the [filterSettings](https://ej2.syncfusion.com/vue/documentation/api/grid/filterSettings/) configuration.
+To enable the display of filter text within the pager, you should set the [showFilterBarStatus](https://ej2.syncfusion.com/vue/documentation/api/grid/filterSettings#showfilterbarstatus) property within the [filterSettings](https://ej2.syncfusion.com/vue/documentation/api/grid/filterSettings) configuration.
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
@@ -88,7 +88,7 @@ To enable the display of filter text within the pager, you should set the [showF
 
 In the Vue Data Grid component, you have the ability to modify the filter operator for a column directly within the user interface during the filtering process through the filter bar cell. For instance, the default operator for filtering string-type columns in the filter bar is "startswith". Now, you can customize the default operator for a specific column using the filter operator feature.
 
-To achieve this functionality, you can enable the  [showFilterBarOperator](https://ej2.syncfusion.com/vue/documentation/api/grid/filterSettings#showfilterbaroperator) property within the [filterSettings](https://ej2.syncfusion.com/vue/documentation/api/grid/filterSettings/).
+To achieve this functionality, you can enable the  [showFilterBarOperator](https://ej2.syncfusion.com/vue/documentation/api/grid/filterSettings#showfilterbaroperator) property within the [filterSettings](https://ej2.syncfusion.com/vue/documentation/api/grid/filterSettings).
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
@@ -103,7 +103,7 @@ To achieve this functionality, you can enable the  [showFilterBarOperator](https
 
 ## Prevent filtering for particular column
 
-In the Vue Data Grid, you can prevent filtering for a specific column by utilizing the [allowFiltering](https://ej2.syncfusion.com/vue/documentation/api/grid#allowfiltering) property of the [column](https://ej2.syncfusion.com/vue/documentation/api/grid/column/) object and setting it to **false**. This feature is useful when you want to disable filtering options for a particular column.
+In the Vue Data Grid, you can prevent filtering for a specific column by utilizing the [allowFiltering](https://ej2.syncfusion.com/vue/documentation/api/grid#allowfiltering) property of the [column](https://ej2.syncfusion.com/vue/documentation/api/grid/column) object and setting it to **false**. This feature is useful when you want to disable filtering options for a particular column.
 
 Here's an example that demonstrates how to remove the filter bar for the **CustomerID** column in Vue Data Grid:
 
@@ -122,7 +122,7 @@ Here's an example that demonstrates how to remove the filter bar for the **Custo
 
 By default, the filter bar is set to a disabled mode for template columns in the grid. However, in certain cases, you may want to hide the filter bar for a template column to provide a customized filtering experience.
 
-To hide the filter bar for a template column, you can use the [filterTemplate](https://ej2.syncfusion.com/vue/documentation/api/grid/column#filtertemplate) property of the [column](https://ej2.syncfusion.com/vue/documentation/api/grid/column/). This property allows you to define a custom template for the filter bar of a column.
+To hide the filter bar for a template column, you can use the [filterTemplate](https://ej2.syncfusion.com/vue/documentation/api/grid/column#filtertemplate) property of the [column](https://ej2.syncfusion.com/vue/documentation/api/grid/column). This property allows you to define a custom template for the filter bar of a column.
 
 Here's an example that demonstrates how to hide the filter bar for a template column in the Vue Data Grid:
 

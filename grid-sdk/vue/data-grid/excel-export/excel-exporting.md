@@ -297,7 +297,7 @@ Exporting multiple grids in the Vue Data Grid component allows you to export dif
 
 Excel exporting provides support for exporting multiple grids on the same page. This feature is particularly useful when you want to combine and organize data from different grids for a unified view in the exported Excel file.
 
-To achieve this, you need to define the [multipleExport.type](https://ej2.syncfusion.com/vue/documentation/api/grid/excelExportProperties#multipleexport) property as **AppendToSheet** in the [excelExportProperties](https://ej2.syncfusion.com/vue/documentation/api/grid/excelExportProperties/) object. This setting ensures that the data from each grid will be appended to the same Excel sheet.
+To achieve this, you need to define the [multipleExport.type](https://ej2.syncfusion.com/vue/documentation/api/grid/excelExportProperties#multipleexport) property as **AppendToSheet** in the [excelExportProperties](https://ej2.syncfusion.com/vue/documentation/api/grid/excelExportProperties) object. This setting ensures that the data from each grid will be appended to the same Excel sheet.
 
 Additionally, you have an option to include blank rows between the data of each grid to visually separate them in the exported Excel sheet. The number of blank rows to be inserted can be defined using the [multipleExport.blankRows](https://ej2.syncfusion.com/vue/documentation/api/grid/multipleExport#blankrows) property.
 
@@ -322,7 +322,7 @@ Excel export functionality enables the exporting of multiple grids into separate
 
 To achieve this, you can follow these steps:
 
-1. Access the [excelExportProperties](https://ej2.syncfusion.com/vue/documentation/api/grid/excelExportProperties/) of the Grid component.
+1. Access the [excelExportProperties](https://ej2.syncfusion.com/vue/documentation/api/grid/excelExportProperties) of the Grid component.
 
 2. Set the [multipleExport.type](https://ej2.syncfusion.com/vue/documentation/api/grid/excelExportProperties#multipleexport) to **NewPage**.
 
@@ -413,9 +413,9 @@ The following example demonstrates how to perform an export without the header b
 
 The Grid component provides a convenient way to add formulas to cells during the export process. This feature allows you to perform calculations and apply formulas to specific cells in the exported Excel document. This can be particularly useful when you need to include calculated values or perform complex calculations.
 
-To add formulas to cells during the export process, you can utilize the [valueAccessor](https://ej2.syncfusion.com/vue/documentation/api/grid/valueAccessor/) method along with the [excelQueryCellInfo](https://ej2.syncfusion.com/vue/documentation/api/grid#excelquerycellinfo) event. 
+To add formulas to cells during the export process, you can utilize the [valueAccessor](https://ej2.syncfusion.com/vue/documentation/api/grid/valueAccessor) method along with the [excelQueryCellInfo](https://ej2.syncfusion.com/vue/documentation/api/grid#excelquerycellinfo) event. 
 
-In the following example, the [toolbarClick](https://ej2.syncfusion.com/vue/documentation/api/grid#toolbarclick) function handles a toolbar button click event. When the Excel Export button is clicked, it triggers the Excel export process. Inside this function, an [excelExportProperties](https://ej2.syncfusion.com/vue/documentation/api/grid/excelExportProperties/) object is defined, specifying that hidden columns should be included in the export. Inside the `excelQueryCellInfo` event, the `valueAccessor` method generates formulas for the desired cells and assigns these formulas to the cell's formula property, ensuring that the calculated values are exported to the Excel document:
+In the following example, the [toolbarClick](https://ej2.syncfusion.com/vue/documentation/api/grid#toolbarclick) function handles a toolbar button click event. When the Excel Export button is clicked, it triggers the Excel export process. Inside this function, an [excelExportProperties](https://ej2.syncfusion.com/vue/documentation/api/grid/excelExportProperties) object is defined, specifying that hidden columns should be included in the export. Inside the `excelQueryCellInfo` event, the `valueAccessor` method generates formulas for the desired cells and assigns these formulas to the cell's formula property, ensuring that the calculated values are exported to the Excel document:
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}

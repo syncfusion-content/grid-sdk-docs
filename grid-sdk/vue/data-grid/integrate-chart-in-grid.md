@@ -383,13 +383,13 @@ When enabled, the property panel appears alongside the Chart popup and offers th
 
   * **Chart Style:** 
 
-    * **Margin :** Adjust the [margins](https://ej2.syncfusion.com/vue/documentation/api/chart/margin/) around the chart (top, bottom, left, right) for better layout spacing.
+    * **Margin :** Adjust the [margins](https://ej2.syncfusion.com/vue/documentation/api/chart/margin) around the chart (top, bottom, left, right) for better layout spacing.
     * **Color**: Set distinct colors for different chart elements to improve visual clarity.
 
   * **Title Style** 
 
     * **Legend** - Toggle the visibility of the legend and customize its font, size, color, and position.
-    * **Series** - Enable/disable tooltips and customize [Series](https://ej2.syncfusion.com/vue/documentation/api/chart/series/) color and data labels based on categories such as online, retail, or revenue.
+    * **Series** - Enable/disable tooltips and customize [Series](https://ej2.syncfusion.com/vue/documentation/api/chart/series) color and data labels based on categories such as online, retail, or revenue.
 
   * **Axes:** - Select axes as either category or value type, and customize:
 
