@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Sorting in TypeScript Grid control | Syncfusion
-description: Learn here all about Sorting in Syncfusion TypeScript Grid control of Syncfusion Essential JS 2 and more.
+title: Typescript Grid Sorting | Syncfusion
+description: Learn how to configure sorting in Typescript Data Grid with single and multi-column sorting, custom comparers, sorting indicators, and sorting behavior options.
 platform: grid-sdk
 control: Sorting 
 publishingplatform: grid-sdk
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Sorting in TypeScript Grid control
+# Sorting in Typescript Data Grid
 
 The Grid control provides built-in support for sorting data-bound columns in ascending or descending order. To enable sorting in the grid, set the [allowSorting](../api/grid/#allowsorting) property to **true**.
 

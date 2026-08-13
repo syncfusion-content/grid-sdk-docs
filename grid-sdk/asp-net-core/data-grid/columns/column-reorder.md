@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Column Reorder in Syncfusion ASP.NET Core Grid Component
-description: Learn here all about Column Reorder in Syncfusion ASP.NET Core Grid component of Syncfusion Essential JS 2 and more.
+title: ASP.NET Core Grid Column Reorder | Syncfusion
+description: Learn how to reorder columns in ASP.NET Core Data Grid using drag-and-drop, configure reorder restrictions, handle reorder events, and persist column order.
 platform: grid-sdk
 control: Column Reorder
 publishingplatform: grid-sdk
 documentation: ug
 ---
 
-# Column reorder in ASP.NET Core Grid component
+# Column Reorder in ASP.NET Core Data Grid
 
 The [ASP.NET Core DataGrid](https://www.syncfusion.com/aspnet-core-ui-controls/grid) component allows to reorder columns by drag and drop of a particular column header from one index to another index within the grid.
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Filter menu in JavaScript Treegrid control | Syncfusion
-description: Learn here all about Filter menu in Syncfusion JavaScript Treegrid control of Syncfusion Essential JS 2 and more.
+title: JavaScript TreeGrid Filter Menu | Syncfusion
+description: Learn how to use the filter menu in JavaScript TreeGrid, including column filtering, filter operators, and custom filter options.
 platform: grid-sdk
 control: Filter menu 
 publishingplatform: grid-sdk
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Filter menu in JavaScript Treegrid control
+# Filter Menu in JavaScript TreeGrid
 
 You can enable filter menu by setting the [`filterSettings.type`](../../api/treegrid/filterSettingsModel/#type) as `Menu`. The filter menu UI will be rendered based on its column type, which allows you to filter data.
 You can filter the records with different operators.

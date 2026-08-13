@@ -1,14 +1,14 @@
 ---
 layout: post
-title: React Grid - Column Template | Syncfusion
-description: React Grid column template supports creating custom cell content, editors, and formatting to render complex UI elements within grid columns.
+title: React Grid Column Template| Syncfusion
+description: Learn how to create custom column templates in React Data Grid to render rich cell content, editors, formatting, and interactive UI elements.
 control: Column template 
 platform: grid-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Column template in React Grid component
+# Column Template in React Data Grid
 
 The React Data Grid provides a [template](https://ej2.syncfusion.com/react/documentation/api/grid/column#template) option for displaying custom elements in a column instead of the field value. This is useful for displaying images, buttons, or other custom content within a column.
 
@@ -55,7 +55,7 @@ function App() {
   let grid;
   const hyperLinkTemplate = ((props) => {
     return (
-      <div><a href='#' onClick={(e) => onClick(e, props.FirstName)}>{props.FirstName}</a></div>
+      <div ><a href='#' aria-label="Open details" onClick={(e) => onClick(e, props.FirstName)}>{props.FirstName}</a></div>
     )
   })
   const onClick = ((event, firstName) => {
@@ -88,7 +88,7 @@ function App() {
   let grid: Grid | null;
   const hyperLinkTemplate = ((props: any) => {
     return (
-      <div><a href='#' onClick={(e) => onClick(e, props.FirstName)}>{props.FirstName}</a></div>
+      <div><a href='#' aria-label="Open details" onClick={(e) => onClick(e, props.FirstName)}>{props.FirstName}</a></div>
     )
   })
   const onClick = ((event: any, firstName: any) => {

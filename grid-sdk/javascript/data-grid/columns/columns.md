@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Columns in JavaScript Grid control | Syncfusion
-description: Learn here all about Columns in Syncfusion JavaScript Grid control of Syncfusion Essential JS 2 and more.
+title: Javascript Grid Columns | Syncfusion
+description: Learn how to define and configure columns in Javascript Data Grid, including column types, widths, templates, and behaviors for effective data presentation.
 platform: grid-sdk
 control: Columns 
 publishingplatform: grid-sdk
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Columns in JavaScript Grid control
+# Columns in Javascript Data Grid
 
 In JavaScript Grid, Columns are fundamental elements that play a pivotal role in organizing and displaying data within your application. They serve as the building blocks for data presentation, allowing you to specify what data fields to show, how to format and style them, and how to enable various interactions within the grid.
 

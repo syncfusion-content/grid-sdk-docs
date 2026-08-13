@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Column Chooser in React TreeGrid | Syncfusion
-description: Learn about configuring and customizing the Column Chooser in the Syncfusion React TreeGrid, including header, content, and footer templates.
+title: React TreeGrid Column Chooser | Syncfusion
+description: Learn how to use the column chooser in React TreeGrid to show, hide, and manage column visibility dynamically.
 control: Column Chooser 
 platform: grid-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Column Chooser in React Treegrid component
+# Column Chooser in React TreeGrid
 
 ## Column Chooser Template in Syncfusion React TreeGrid
 

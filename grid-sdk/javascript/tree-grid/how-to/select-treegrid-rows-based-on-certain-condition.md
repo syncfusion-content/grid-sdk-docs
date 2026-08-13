@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Select treegrid rows based on certain condition in JavaScript Treegrid control | Syncfusion
-description: Learn here all about Select treegrid rows based on certain condition in Syncfusion JavaScript Treegrid control of Syncfusion Essential JS 2 and more.
+title: JavaScript TreeGrid Conditional Row Selection | Syncfusion
+description: Learn how to select TreeGrid rows based on specific conditions using the selectRows method in the JavaScript TreeGrid component.
 platform: grid-sdk
 control: Select treegrid rows based on certain condition 
 publishingplatform: grid-sdk
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Select treegrid rows based on certain condition in JavaScript Treegrid control
+# Select Rows Based on Conditions in JavaScript TreeGrid
 
 You can select the specific row in the Tree Grid based on a certain condition by using the [`selectRows`](../api/treegrid/#selectrows) method in the [`dataBound`](../api/treegrid/#databound) event of Tree Grid.
 

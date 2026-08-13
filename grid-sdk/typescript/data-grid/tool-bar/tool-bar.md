@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Tool bar in TypeScript Grid control | Syncfusion
-description: Learn here all about Tool bar in Syncfusion TypeScript Grid control of Syncfusion Essential JS 2 and more.
+title: Typescript Grid Toolbar | Syncfusion
+description: Learn how to use the toolbar in Typescript Data Grid with built-in actions, custom toolbar items, data export, search, and editing operations.
 platform: grid-sdk
 control: Tool bar 
 publishingplatform: grid-sdk
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Toolbar in TypeScript Grid control
+# Toolbar in Typescript Data Grid
 
 The toolbar in the TypeScript Grid control offers several general use cases to enhance data manipulation and overall experience. Actions such as adding, editing, and deleting records within the grid can be performed, providing efficient data manipulation capabilities. The toolbar also facilitates data export and import functionality, allowing you to generate downloadable files in formats like Excel, CSV, or PDF. 
 

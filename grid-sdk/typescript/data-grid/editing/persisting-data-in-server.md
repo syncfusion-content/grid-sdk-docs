@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Persisting data in server in TypeScript Grid control | Syncfusion
-description: Learn here all about Persisting data in server in Syncfusion TypeScript Grid control of Syncfusion Essential JS 2 and more.
+title: Typescript Grid Server Data Persistence | Syncfusion
+description: Learn how to persist Typescript Data Grid changes to a server, send CRUD requests, handle server responses, and synchronize data using adaptors.
 platform: grid-sdk
 control: Persisting data in server 
 publishingplatform: grid-sdk
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Persisting data in server in TypeScript Grid component
+# Server Data Persistence in Typescript Data Grid
 
 The Syncfusion<sup style="font-size:70%">&reg;</sup> TypeScript  Grid component allows data edited within the grid to be persisted in a database using RESTful web services. All CRUD (Create, Read, Update, Delete) operations within the grid are handled by the [DataManager](../../data), which can bind server-side data and send updates to the server. This capability is Essential<sup style="font-size:70%">&reg;</sup> for maintaining data integrity and ensuring that changes made in the UI are reflected in the backend.
 

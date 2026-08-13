@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Bind SQL Server Data in Syncfusion TypeScript Grid using Entity Framework
-description: Learn about consume data using Entity Framework from Microsoft SQL Server, bind it to Syncfusion TypeScript Grid, and performing CRUD operations.
+title: ##Platform_Name## Grid Bind Data with Entity Framework Core | Syncfusion
+description: Learn how to bind SQL Server data to ##Platform_Name## Data Grid using Entity Framework Core, perform CRUD operations, and implement adaptor patterns.
 platform: grid-sdk
 control: grid
 keywords: adaptors, customadaptor, urladaptor, entityframework, remotedata
@@ -10,7 +10,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Connecting SQL Server data to Syncfusion TypeScript Grid using Entity Framework
+# SQL Server Entity Framework Core Integration in Data Grid
 
 This section describes how to connect and retrieve data from a Microsoft SQL Server database using [Entity Framework](https://learn.microsoft.com/en-us/ef/core/) and bind it to the Syncfusion TypeScript Grid.
 

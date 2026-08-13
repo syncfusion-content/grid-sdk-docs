@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Scrolling in Syncfusion ASP.NET MVC Grid Component
-description: Learn here all about Scrolling in Syncfusion ASP.NET MVC Grid component of Syncfusion Essential JS 2 and more.
+title: ASP.NET MVC Grid Scrolling | Syncfusion
+description: Learn how to use Scrolling in ASP.NET MVC Data Grid to configure scroll behavior, enable sticky headers, and customize scrolling options.
 platform: grid-sdk
 control: Scrolling
 publishingplatform: grid-sdk
 documentation: ug
 ---
 
-# Scrolling in ASP.NET MVC Grid component
+# Scrolling in ASP.NET MVC Data Grid
 
 The scrolling feature in the ASP.NET MVC Grid component allows you to navigate through the content that extends beyond the visible area of the grid . It provides scrollbars that are automatically displayed when the content exceeds the specified `Width` or `Height` of the grid element. This feature is useful when you have a large amount of data or when the content needs to be displayed within a limited space. The vertical and horizontal scrollbars will be displayed based on the following criteria:
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Cell editing in JavaScript Treegrid control | Syncfusion
-description: Learn here all about Cell editing in Syncfusion JavaScript Treegrid control of Syncfusion Essential JS 2 and more.
+title: JavaScript TreeGrid Cell Editing | Syncfusion
+description: Learn how to use cell editing in the JavaScript TreeGrid, including enabling, editing, and handling cell edit events.
 platform: grid-sdk
 control: Cell editing 
 publishingplatform: grid-sdk
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Cell editing in JavaScript Treegrid control
+# Cell Editing in JavaScript TreeGrid
 
 In Cell edit mode, when you double click on a cell, it is changed to edit state.
 You can change the cell value and save to the data source.

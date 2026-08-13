@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Header in ASP.NET Core Grid Component
-description: Learn here all about Header in Syncfusion ASP.NET Core Grid component of Syncfusion Essential JS 2 and more.
+title: ASP.NET Core Grid Header Customization | Syncfusion
+description: Learn how to customize header styles in ASP.NET Core Data Grid with header templates, icons, and interactive header elements.
 platform: grid-sdk
 control: Header
 publishingplatform: grid-sdk
 documentation: ug
 ---
 
-# Header in ASP.NET Core Grid component
+# Header Style in ASP.NET Core Data Grid
 
 You can customize the appearance of the header elements in the Syncfusion ASP.NET Core Grid component using CSS. Here are examples of how to customize the Grid header, header cell, and header cell div element.
 

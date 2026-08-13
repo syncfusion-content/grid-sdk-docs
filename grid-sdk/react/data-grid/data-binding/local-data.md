@@ -1,14 +1,14 @@
 ---
 layout: post
-title: React Grid - Local Data Binding | Syncfusion
-description: Local data binding enables the React Grid to work with in-memory datasets, as well as fetch and display data from remote services through external requests.
+title: React Grid Local Data Binding | Syncfusion
+description: Learn how to bind local data sources and in-memory datasets in React Data Grid, enable dynamic updates, and efficiently manage displayed data.
 control: Local data 
 platform: grid-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Local data in React Grid component
+# Local Data Binding in React Data Grid
 
 The React Data Grid provides a straightforward way to bind local data, such as arrays or JSON objects, to the grid component. This feature allows data to be displayed and manipulated within the grid without the need for external server calls, making it particularly useful for scenarios involving static or locally stored data.
 
@@ -322,7 +322,7 @@ public ActionResult Delete(int key)
 
 The following screenshot represents loading data when the button is clicked and CRUD operations are performed:
 
-![Fetch](../../grid/images/fetch.gif)
+![Fetch](../images/fetch.gif)
 
 ### Display the loading indicator with local data
 
@@ -628,7 +628,7 @@ C. To delete a record using an AJAX request, follow these steps:
 
 The following screenshot represents loading data when the button is clicked and CRUD operations are performed:
 
-![Ajax](../../grid/images/Ajaxreq.gif)
+![Ajax](../images/Ajaxreq.gif)
 
 ### Display the loading indicator using AJAX
 

@@ -1,6 +1,6 @@
 ---
-layout: post
-title: Angular Grid - Dialog Editing | Syncfusion
+layout: post 
+title: Angular Grid Dialog Editing | Syncfusion
 description: Angular Grid dialog editing opens record editors in modal dialogs, supports templates, enforces validation, and manages single-record save workflows.
 platform: grid-sdk
 control: Dialog editing 
@@ -8,7 +8,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Dialog Editing in Angular Grid Component
+# Dialog Editing in Angular Data Grid
 
 The [Angular Data Grid](https://www.syncfusion.com/angular-components/angular-data-grid) Component dialog editing provides a powerful, efficient way to edit row data through a dedicated modal dialog window that focuses attention on the editing form. Instead of editing cells directly in the grid, multiple field values can be entered and modified at once in a clean, organized form. The grid automatically saves all changes to the data source without navigating away from the current page making data entry faster, more intuitive, and less error-prone, especially when dealing with complex records that span multiple columns.
 

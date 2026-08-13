@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Exporting filtered data in JavaScript Treegrid control | Syncfusion
-description: Learn here all about Exporting filtered data in Syncfusion JavaScript Treegrid control of Syncfusion Essential JS 2 and more.
+title: JavaScript TreeGrid Filtered Data Export | Syncfusion
+description: Learn how to export filtered data in the JavaScript TreeGrid, including specifying filtered results using PdfExportProperties for exporting.
 platform: grid-sdk
 control: Exporting filtered data 
 publishingplatform: grid-sdk
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Exporting filtered data in JavaScript Treegrid control
+# Exporting Filtered Data in JavaScript TreeGrid
 
 You can export the filtered data by defining the resulted data in [`PdfExportProperties.dataSource`](../../api/grid/pdfExportProperties/#datasource) before export.
 
