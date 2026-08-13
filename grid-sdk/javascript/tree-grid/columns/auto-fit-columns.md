@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Auto fit columns in JavaScript Treegrid control | Syncfusion
-description: Learn here all about Auto fit columns in Syncfusion JavaScript Treegrid control of Syncfusion Essential JS 2 and more.
+title: JavaScript TreeGrid Auto Fit Columns | Syncfusion
+description: Learn how to automatically adjust column widths in JavaScript TreeGrid to fit content and improve data presentation.
 platform: grid-sdk
 control: Auto fit columns 
 publishingplatform: grid-sdk
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Auto fit columns in JavaScript Treegrid control
+# Auto Fit Columns in JavaScript TreeGrid
 
 The [`autoFitColumns`](../../api/treegrid/#autofitcolumns) method resizes the column to fit the widest cell's content without wrapping. You can autofit a specific column at initial rendering by invoking the [`autoFitColumns`](../../api/treegrid/#autofitcolumns) method in [`dataBound`](../../api/treegrid/#databound) event.
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Row template in JavaScript Treegrid control | Syncfusion
-description: Learn here all about Row template in Syncfusion JavaScript Treegrid control of Syncfusion Essential JS 2 and more.
+title: JavaScript TreeGrid Row Template | Syncfusion
+description: Learn how to use row templates in JavaScript TreeGrid to customize row layouts, display custom content, and enhance data presentation.
 platform: grid-sdk
 control: Row template 
 publishingplatform: grid-sdk
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Row template in JavaScript Treegrid control
+# Row Template in JavaScript TreeGrid
 
 The [`rowTemplate`](../../api/treegrid/#rowtemplate) has an option to customise the look and behavior of the treegrid rows. The [`rowTemplate`](../../api/treegrid/#rowtemplate) property accepts either the template string or HTML element ID.
 

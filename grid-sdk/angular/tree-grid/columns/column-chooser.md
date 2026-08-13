@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Column chooser in Angular TreeGrid component | Syncfusion
-description: Learn here all about Column chooser in Syncfusion Angular TreeGrid component of Syncfusion Essential JS 2 and more.
+title: Angular TreeGrid Column Chooser | Syncfusion
+description: Learn how to use the column chooser in Angular TreeGrid to show, hide, and manage column visibility dynamically.
 platform: grid-sdk
 control: Column chooser 
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Column chooser in Angular TreeGrid component
+# Column Chooser in Angular TreeGrid
 
 The column chooser feature in the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular TreeGrid component allows dynamic showing or hiding of columns. This feature can be enabled by setting the [showColumnChooser](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#showcolumnchooser) property to **true**.
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Grouping in ASP.NET Core Grid Component
-description: Learn here all about Grouping in Syncfusion ASP.NET Core Grid component of Syncfusion Essential JS 2 and more.
+title: ASP.NET Core Grid Grouping Customization | Syncfusion
+description: Learn how to customize grouping styles in ASP.NET Core Data Grid with group headers, captions, aggregates, and group area appearance.
 platform: grid-sdk
 control: Grouping
 publishingplatform: grid-sdk
 documentation: ug
 ---
 
-# Grouping in ASP.NET Core Grid component
+# Grouping Style in ASP.NET Core Data Grid
 
 You can customize the appearance of grouping elements in the Syncfusion ASP.NET Core Grid component using CSS. Here are examples of how to customize the group header, group expand/collapse icons, group caption row, and grouping indent cell.
 

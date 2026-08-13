@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Remote data in JavaScript Grid control | Syncfusion
-description: Learn here all about Remote data in Syncfusion JavaScript Grid control of Syncfusion Essential JS 2 and more.
+title: Javascript Grid Remote Data Binding | Syncfusion
+description: Learn how to bind remote data sources in Javascript Data Grid using adaptors, configure server-side operations, and manage data efficiently.
 platform: grid-sdk
 control: Remote data 
 publishingplatform: grid-sdk
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Remote data in JavaScript Grid control
+# Remote Data Binding in Javascript Data Grid
 
 In JavaScript Grid component, binding remote data is a fundamental aspect that enhances the efficiency of data interaction. This process involves assigning the service data, represented as an instance of `DataManager`, to the [dataSource](../../api/grid#datasource) property of the JavaScript Grid component. By doing so, you enable seamless interaction with a remote data source, and this is achieved by specifying the endpoint URL where the data is hosted.
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Bind data & perform CRUD action with CustomAdaptor in Syncfusion Grid
-description: Learn here all about Bind data and perform CRUD action with CustomAdaptor in Syncfusion ASP.NET MVC Grid of Syncfusion Essential JS 2 and more.
+title: ASP.NET MVC Grid Custom Remote Data Binding | Syncfusion
+description: Learn how to bind remote data with custom rules in ASP.NET MVC Data Grid, customize data operations, and manage CRUD actions.
 control: Custom Adaptor
 platform: grid-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# CustomAdaptor in Syncfusion ASP.NET MVC Grid
+# Custom Remote Data Binding in ASP.NET MVC Data Grid
 
 The `CustomAdaptor` in the Syncfusion ASP.NET MVC Grid allows to create their own custom adaptors by extending the built-in adaptors. The custom adaptor involves handling the query process, requests, and responses of the built-in adaptor. The `CustomAdaptor` can be used to extend OData V4 services, enabling efficient data fetching and manipulation. By default, there are three built-in methods available for `CustomAdaptor`.
 

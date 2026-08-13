@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Tool bar in TypeScript Grid control | Syncfusion
-description: Learn here all about Tool bar in Syncfusion TypeScript Grid control of Syncfusion Essential JS 2 and more.
+title: Typescript Grid Toolbar Style | Syncfusion
+description: Learn how to customize toolbar styles in Typescript Data Grid with toolbar items, templates, layout options, and CSS-based styling.
 platform: grid-sdk
 control: Tool bar 
 publishingplatform: grid-sdk
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Toolbar in TypeScript Grid control
+# Toolbar Style in Typescript Data Grid
 
 You can customize the appearance of the toolbar in the TypeScript Grid control using CSS. Here are examples of how to customize the toolbar root element and toolbar button element.
 

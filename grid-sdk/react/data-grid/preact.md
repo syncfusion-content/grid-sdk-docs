@@ -1,14 +1,14 @@
 ---
 layout: post
-title: React DataGrid - Preact | Syncfusion
-description: React DataGrid Preact guide explains notes, setup steps, and adjustments needed to use the DataGrid with Preact while preserving key features and performance.
+title: React Data Grid Preact | Syncfusion
+description: Learn how to use React Data Grid in Preact applications with setup instructions, required configuration, and full grid feature support.
 control: Preact
 platform: grid-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Getting Started with React DataGrid Component in Preact Framework
+# Getting Started with React Data Grid in Preact Framework
 
 This article provides a step-by-step guide for setting up a [Preact](https://preactjs.com) project and integrating the React Data Grid component.
 

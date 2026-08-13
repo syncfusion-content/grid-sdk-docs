@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Columns in Syncfusion ASP.NET Core Grid Component
-description: Learn here all about Columns in Syncfusion ASP.NET Core Grid component of Syncfusion Essential JS 2 and more.
+title: ASP.NET Core Grid Columns | Syncfusion
+description: Learn how to define and configure columns in ASP.NET Core Data Grid, including column types, widths, templates, and behaviors for effective data presentation.
 platform: grid-sdk
 control: Columns
 publishingplatform: grid-sdk
 documentation: ug
 ---
 
-# Columns in ASP.NET Core Grid Component
+# Columns in ASP.NET Core Data Grid
 
 In [ASP.NET Core DataGrid](https://www.syncfusion.com/aspnet-core-ui-controls/grid), Columns are fundamental elements that play a pivotal role in organizing and displaying data within your application. They serve as the building blocks for data presentation, allowing you to specify what data fields to show, how to format and style them, and how to enable various interactions within the grid.
 

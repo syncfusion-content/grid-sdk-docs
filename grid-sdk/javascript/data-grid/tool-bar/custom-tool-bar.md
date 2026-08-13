@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Custom tool bar in JavaScript Grid control | Syncfusion
-description: Learn here all about Custom tool bar in Syncfusion JavaScript Grid control of Syncfusion Essential JS 2 and more.
+title: ##Platform_Name## Grid Custom Toolbar | Syncfusion
+description: Learn how to create a custom toolbar in ##Platform_Name## Data Grid with templates, custom components, interactive controls, and custom toolbar actions.
 platform: grid-sdk
 control: Custom tool bar 
 publishingplatform: grid-sdk
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Custom tool bar in JavaScript Grid control
+# Custom Toolbar in ##Platform_Name## Data Grid
 
 Custom toolbar in JavaScript Grid allows you to create a distinctive toolbar layout, style, and functionality that aligns with the specific needs of your application, providing a personalized experience within the Grid control.
 
