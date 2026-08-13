@@ -21,7 +21,7 @@ is necessary to map the data source values in TreeGrid columns.
 
 ## Format
 
-To format cell values based on specific culture, use the [`columns.format`](../../api/treegrid/column#format) property. The TreeGrid uses [Internalization](../../common/internationalization/) library to format [`number`](../../common/internationalization#number-formatting) and [`date`](../../common/internationalization#manipulating-datetime)
+To format cell values based on specific culture, use the [`columns.format`](../../api/treegrid/column#format) property. The TreeGrid uses [Internalization](../../common/internationalization) library to format [`number`](../../common/internationalization#number-formatting) and [`date`](../../common/internationalization#manipulating-datetime)
 values.
 
 {% if page.publishingplatform == "typescript" %}
