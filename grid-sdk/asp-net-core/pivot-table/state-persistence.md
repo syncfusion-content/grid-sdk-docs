@@ -17,10 +17,10 @@ State persistence enables users to automatically retain the entire configuration
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/state-persistence/persistence/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/state-persistence/persistence/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Persistence.cs" %}
-{% include code-snippet/pivot-table/state-persistence/persistence/Persistence.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/state-persistence/persistence/Persistence.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -28,10 +28,10 @@ State persistence enables users to automatically retain the entire configuration
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/state-persistence/persistence/razor %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/state-persistence/persistence/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Persistence.cs" %}
-{% include code-snippet/pivot-table/state-persistence/persistence/Persistence.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/state-persistence/persistence/Persistence.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -46,10 +46,10 @@ In addition to automatic state persistence, the Pivot Table component allows you
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/state-persistence/save-load/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/state-persistence/save-load/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Save.cs" %}
-{% include code-snippet/pivot-table/state-persistence/save-load/Save.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/state-persistence/save-load/Save.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -57,10 +57,10 @@ In addition to automatic state persistence, the Pivot Table component allows you
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/state-persistence/save-load/razor %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/state-persistence/save-load/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Save.cs" %}
-{% include code-snippet/pivot-table/state-persistence/save-load/Save.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/state-persistence/save-load/Save.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

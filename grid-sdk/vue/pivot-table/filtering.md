@@ -50,14 +50,14 @@ You can also configure filtering programmatically using the [`filterSettings`](h
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/default-cs78/app-composition.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/default-cs78/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/default-cs78/app.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/default-cs78/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/pivot-grid/default-cs78" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/default-cs78" %}
 
 ### Option to select and unselect all members
 
@@ -95,14 +95,14 @@ You can control how many members are displayed in the member filter dialog using
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/common-cs7/app-composition.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/common-cs7/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/common-cs7/app.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/common-cs7/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/pivot-grid/common-cs7" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/common-cs7" %}
 
 When the member count exceeds your set limit, you can use the search option to find specific members beyond the displayed range. For example, if your data contains 5000 members named "Node 1", "Node 2", "Node 3", and so on, and you set the [`maxNodeLimitInMemberEditor`](https://ej2.syncfusion.com/vue/documentation/api/pivotview/index-default#maxnodelimitinmembereditor) property to **500**, only the first 500 members will appear by default. The dialog will show a message like "4500 more items. Search to refine further." To access members 501 to 5000, type the starting characters in the search box to locate the desired members. Once the members appear in the list, you can select or deselect them to apply your filtering preferences.
 
@@ -121,14 +121,14 @@ This approach prevents performance issues when working with hierarchies that con
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/common-cs8/app-composition.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/common-cs8/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/common-cs8/app.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/common-cs8/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/pivot-grid/common-cs8" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/common-cs8" %}
 
 ![Loading members on-demand](images/ondemand_member.png)
 
@@ -153,14 +153,14 @@ The [`levelCount`](https://ej2.syncfusion.com/vue/documentation/api/pivotview/if
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/common-cs9/app-composition.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/common-cs9/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/common-cs9/app.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/common-cs9/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/pivot-grid/common-cs9" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/common-cs9" %}
 
 ![Loading members based on level number](images/level-count.png)
 
@@ -192,14 +192,14 @@ To enable label filtering, set the [`allowLabelFilter`](https://ej2.syncfusion.c
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/default-cs285/app-composition.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/default-cs285/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/default-cs285/app.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/default-cs285/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/pivot-grid/default-cs285" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/default-cs285" %}
 
 ![Filter icon in field list](images/labelfiltering_fl_icon.png)
 <br/>
@@ -250,14 +250,14 @@ The following table shows all available **operators** for label filtering:
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/default-cs79/app-composition.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/default-cs79/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/default-cs79/app.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/default-cs79/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/pivot-grid/default-cs79" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/default-cs79" %}
 
 ### Filtering number data type through code
 
@@ -277,14 +277,14 @@ For example, to display only sales data where the "Sold" field values are less t
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/default-cs80/app-composition.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/default-cs80/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/default-cs80/app.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/default-cs80/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/pivot-grid/default-cs80" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/default-cs80" %}
 
 ### Filtering date data type through code
 
@@ -298,14 +298,14 @@ To apply date filtering, specify your filtering criteria using the [`value1`](ht
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/default-cs81/app-composition.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/default-cs81/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/default-cs81/app.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/default-cs81/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/pivot-grid/default-cs81" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/default-cs81" %}
 
 ### Clearing the existing label filter
 
@@ -321,14 +321,14 @@ You can enable value filtering by setting the [`allowValueFilter`](https://ej2.s
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/default-cs286/app-composition.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/default-cs286/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/default-cs286/app.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/default-cs286/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/pivot-grid/default-cs286" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/default-cs286" %}
 
 ![Filter icon in field list](images/labelfiltering_fl_icon.png)
 <br/>
@@ -370,14 +370,14 @@ The following table shows the available operators for value filtering:
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/default-cs82/app-composition.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/default-cs82/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/default-cs82/app.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/default-cs82/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/pivot-grid/default-cs82" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/default-cs82" %}
 
 ### Clearing the existing value filter
 
@@ -403,14 +403,14 @@ For example, you can use the [`memberFiltering`](https://ej2.syncfusion.com/vue/
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/default-cs83/app-composition.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/default-cs83/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/default-cs83/app.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/default-cs83/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/pivot-grid/default-cs83" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/default-cs83" %}
 
 ### MemberEditorOpen
 
@@ -425,14 +425,14 @@ Here’s an example. In the Pivot Table below, only the selected member for the 
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/default-cs84/app-composition.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/default-cs84/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/default-cs84/app.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/default-cs84/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/pivot-grid/default-cs84" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/default-cs84" %}
 
 ### ActionBegin
 
@@ -450,14 +450,14 @@ In the example below, you can prevent a filter action by setting **args.cancel**
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/default-cs85/app-composition.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/default-cs85/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/default-cs85/app.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/default-cs85/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/pivot-grid/default-cs85" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/default-cs85" %}
 
 ### ActionComplete
 
@@ -477,14 +477,14 @@ The event provides the following parameters:
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/default-cs86/app-composition.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/default-cs86/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/default-cs86/app.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/default-cs86/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/pivot-grid/default-cs86" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/default-cs86" %}
 
 ### ActionFailure
 
@@ -496,11 +496,11 @@ The [`actionFailure`](https://ej2.syncfusion.com/vue/documentation/api/pivotview
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/default-cs87/app-composition.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/default-cs87/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/default-cs87/app.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/default-cs87/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/pivot-grid/default-cs87" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/default-cs87" %}

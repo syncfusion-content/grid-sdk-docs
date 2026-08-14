@@ -22,10 +22,10 @@ For row header tooltips, the formatted text and field name of the current row he
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/custom-tooltip/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/custom-tooltip/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="CustomTooltip.cs" %}
-{% include code-snippet/pivot-table/custom-tooltip/CustomTooltip.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/custom-tooltip/CustomTooltip.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -33,10 +33,10 @@ For row header tooltips, the formatted text and field name of the current row he
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/custom-tooltip/razor %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/custom-tooltip/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="CustomTooltip.cs" %}
-{% include code-snippet/pivot-table/custom-tooltip/CustomTooltip.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/custom-tooltip/CustomTooltip.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

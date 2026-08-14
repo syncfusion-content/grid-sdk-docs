@@ -31,25 +31,25 @@ The following example demonstrates how to restrict the built-in export action by
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/pivot-table/pivot-table-cs493/index.ts %}
+{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs493/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/pivot-table/pivot-table-cs493/index.html %}
+{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs493/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs493" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs493" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/pivot-table/pivot-table-cs493/index.js %}
+{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs493/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/pivot-table/pivot-table-cs493/index.html %}
+{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs493/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs493" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs493" %}
 {% endif %}

@@ -1014,10 +1014,10 @@ Use a trusted token issued by the authentication flow after sign‑in. Keep toke
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/paging/template/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/paging/template/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Paging.cs" %}
-{% include code-snippet/pivot-table/paging/template/Paging.cs %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/paging/template/Paging.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -1025,10 +1025,10 @@ Use a trusted token issued by the authentication flow after sign‑in. Keep toke
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/paging/template/razor %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/paging/template/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Paging.cs" %}
-{% include code-snippet/pivot-table/paging/template/Paging.cs %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/paging/template/Paging.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

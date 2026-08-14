@@ -24,10 +24,10 @@ The following example demonstrates how to configure custom text for empty value 
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/custom-cell-text/custom-cell-text/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/custom-cell-text/custom-cell-text/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="CustomText.cs" %}
-{% include code-snippet/pivot-table/custom-cell-text/custom-cell-text/CustomText.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/custom-cell-text/custom-cell-text/CustomText.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -35,10 +35,10 @@ The following example demonstrates how to configure custom text for empty value 
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/custom-cell-text/custom-cell-text/razor %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/custom-cell-text/custom-cell-text/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="CustomText.cs" %}
-{% include code-snippet/pivot-table/custom-cell-text/custom-cell-text/CustomText.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/custom-cell-text/custom-cell-text/CustomText.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

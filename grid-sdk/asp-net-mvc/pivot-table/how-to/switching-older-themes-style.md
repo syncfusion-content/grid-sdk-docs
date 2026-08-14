@@ -62,10 +62,10 @@ The following code sample demonstrates how to replicate the older theme style:
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/switch-theme/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/switch-theme/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="SwitchTheme.cs" %}
-{% include code-snippet/pivot-table/switch-theme/SwitchTheme.cs %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/switch-theme/SwitchTheme.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -73,10 +73,10 @@ The following code sample demonstrates how to replicate the older theme style:
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/switch-theme/razor %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/switch-theme/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="SwitchTheme.cs" %}
-{% include code-snippet/pivot-table/switch-theme/SwitchTheme.cs %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/switch-theme/SwitchTheme.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

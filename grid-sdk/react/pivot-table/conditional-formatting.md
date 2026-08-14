@@ -14,7 +14,7 @@ The conditional formatting feature enables users to customize the appearance of 
 
 The conditional formatting can be applied at runtime through the built-in dialog, invoked from the toolbar. To enable this functionality, set the [allowConditionalFormatting](https://ej2.syncfusion.com/react/documentation/api/pivotview/index-default#allowconditionalformatting) and [showToolbar](https://ej2.syncfusion.com/react/documentation/api/pivotview/index-default#showtoolbar) properties to **true**. Additionally, include the **ConditionalFormatting** item within the [toolbar](https://ej2.syncfusion.com/react/documentation/api/pivotview/index-default#toolbar) property. Users will see the "Conditional Formatting" icon in the toolbar UI automatically, which opens the formatting dialog when clicked.
 
-> To use the conditional formatting feature, you need to inject the `ConditionalFormatting` module in Pivot Table.
+> To use the conditional formatting feature, you need to inject the `ConditionalFormatting` module in Pivot Table. Add `ConditionalFormatting` to the `services` array of the `Inject` component (see the code sample for the full setup).
 
 To learn how to work with conditional formatting options, you can check out this video on React Pivot Table.
 
@@ -22,26 +22,26 @@ To learn how to work with conditional formatting options, you can check out this
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/pivot-table/default-cs16/app/App.jsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/default-cs16/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/pivot-table/default-cs16/app/App.tsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/default-cs16/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/pivot-table/default-cs16/app/datasource.jsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/default-cs16/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/pivot-table/default-cs16/app/datasource.tsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/default-cs16/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs16" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs16" %}
 
 ## Configure conditional formatting through code-behind
 
-Conditional formatting can also be applied programmatically during component initialization using the [conditionalFormatSettings](https://ej2.syncfusion.com/react/documentation/api/pivotview/datasourcesettings#conditionalformatsettings) property in the [dataSourceSettings](https://ej2.syncfusion.com/react/documentation/api/pivotview/datasourcesettings). This approach allows you to define formatting rules directly in the code-behind, ensuring that specific styling conditions are automatically applied when the Pivot Table loads. The required properties to apply a new conditional formatting are,
+Conditional formatting can also be applied programmatically during component initialization using the [conditionalFormatSettings](https://ej2.syncfusion.com/react/documentation/api/pivotview/datasourcesettings#conditionalformatsettings) property in the [dataSourceSettings](https://ej2.syncfusion.com/react/documentation/api/pivotview/datasourcesettings). This approach allows you to define formatting rules directly in the code-behind, ensuring that specific styling conditions are automatically applied when the Pivot Table loads. The required properties to apply a new conditional formatting are:
 
-* [applyGrandTotals](https://ej2.syncfusion.com/react/documentation/api/pivotview/conditionalformatsettings#applygrandtotals): This boolean property allows you to restrict conditional formatting for grand totals in the row and column axes. By default, this property is set to **true**.
+* [applyGrandTotals](https://ej2.syncfusion.com/react/documentation/api/pivotview/conditionalformatsettings#applygrandtotals): This Boolean property allows you to restrict conditional formatting for grand totals in the row and column axes. By default, this property is set to **true**.
 * [measure](https://ej2.syncfusion.com/react/documentation/api/pivotview/conditionalformatsettings#measure): Specifies the value field name for which style will be applied.
 * [conditions](https://ej2.syncfusion.com/react/documentation/api/pivotview/conditionalformatsettings#conditions): Defines the operator type used for conditional formatting, such as equals, greater than, less than, etc.
 * [value1](https://ej2.syncfusion.com/react/documentation/api/pivotview/conditionalformatsettings#value1): Specifies the starting value for the conditional formatting.
@@ -50,10 +50,10 @@ Conditional formatting can also be applied programmatically during component ini
 
 The [style](https://ej2.syncfusion.com/react/documentation/api/pivotview/style) object includes the following properties, which you can use to customize the appearance of value cells:
 
-* [backgroundColor](https://ej2.syncfusion.com/react/documentation/api/pivotview/style#backgroundcolor): It allows to set the background color to the value cell in the Pivot Table.
-* [color](https://ej2.syncfusion.com/react/documentation/api/pivotview/style#color): It allows to set the font color to the value cell in the Pivot Table.
-* [fontFamily](https://ej2.syncfusion.com/react/documentation/api/pivotview/style#fontfamily): It allows to set the font family to the value cell in the Pivot Table.
-* [fontSize](https://ej2.syncfusion.com/react/documentation/api/pivotview/style#fontsize): It allows to set the font size to the value cell in the Pivot Table.
+* [backgroundColor](https://ej2.syncfusion.com/react/documentation/api/pivotview/style#backgroundcolor): It allows you to set the background color of the value cell in the Pivot Table.
+* [color](https://ej2.syncfusion.com/react/documentation/api/pivotview/style#color): It allows you to set the font color of the value cell in the Pivot Table.
+* [fontFamily](https://ej2.syncfusion.com/react/documentation/api/pivotview/style#fontfamily): It allows you to set the font family of the value cell in the Pivot Table.
+* [fontSize](https://ej2.syncfusion.com/react/documentation/api/pivotview/style#fontsize): It allows you to set the font size of the value cell in the Pivot Table.
 
 ## Opening conditional formatting dialog programmatically
 
@@ -61,20 +61,20 @@ Users can also access the conditional formatting dialog through external UI elem
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/pivot-table/default-cs17/app/App.jsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/default-cs17/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/pivot-table/default-cs17/app/App.tsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/default-cs17/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/pivot-table/default-cs17/app/datasource.jsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/default-cs17/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/pivot-table/default-cs17/app/datasource.tsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/default-cs17/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs17" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs17" %}
 
 ## Conditional formatting for all fields
 
@@ -84,78 +84,80 @@ To format all value fields together, use the [conditionalFormatSettings](https:/
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/pivot-table/default-cs18/app/App.jsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/default-cs18/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/pivot-table/default-cs18/app/App.tsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/default-cs18/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/pivot-table/default-cs18/app/datasource.jsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/default-cs18/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/pivot-table/default-cs18/app/datasource.tsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/default-cs18/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs18" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs18" %}
 
 ## Conditional formatting for specific value field
 
-To apply conditional formatting exclusively to a particular value field, set the [measure](https://ej2.syncfusion.com/react/documentation/api/pivotview/conditionalformatsettings#measure) property with the specific value field name in [conditionalFormatSettings](https://ej2.syncfusion.com/react/documentation/api/pivotview/datasourcesettings#conditionalformatsettings).
+To apply conditional formatting exclusively to a particular value field, set the [measure](https://ej2.syncfusion.com/react/documentation/api/pivotview/conditionalformatsettings#measure) property to the specific value field name in [conditionalFormatSettings](https://ej2.syncfusion.com/react/documentation/api/pivotview/datasourcesettings#conditionalformatsettings).
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/pivot-table/default-cs19/app/App.jsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/default-cs19/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/pivot-table/default-cs19/app/App.tsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/default-cs19/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/pivot-table/default-cs19/app/datasource.jsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/default-cs19/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/pivot-table/default-cs19/app/datasource.tsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/default-cs19/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs19" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs19" %}
 
 ## Editing and removing existing conditional format
 
-Editing and removing existing conditional format can be done through the UI at runtime. To do so, open the conditional formatting dialog and edit the "Value", "Condition" and "Format" options based on user requirement and click "OK". To remove a conditional format, click the "Delete" icon besides the respective condition.
+Editing and removing existing conditional format can be done through the UI at runtime. To do so, open the conditional formatting dialog and edit the **Value**, **Condition**, and **Format** options based on the user's requirements, and click **OK**. To remove a conditional format, click the **Delete** icon next to the respective condition.
 
 ![output](images/cformatting_remove.png)
 
 ## Event
 
+The Pivot Table provides the following event to monitor conditional formatting operations. Use it to customize the conditions or styles applied at runtime.
+
 ### ConditionalFormatting
 
-The [conditionalFormatting](https://ej2.syncfusion.com/react/documentation/api/pivotview/index-default#conditionalformatting) event is triggered when the “ADD CONDITION” button is clicked in the conditional formatting dialog, enabling users to define custom conditions instead of default conditions at runtime. To utilize this event, the [allowConditionalFormatting](https://ej2.syncfusion.com/react/documentation/api/pivotview/index-default#allowconditionalformatting) property of the Pivot Table component must be set to **true**. This event provides the following parameters:
+The [conditionalFormatting](https://ej2.syncfusion.com/react/documentation/api/pivotview/index-default#conditionalformatting) event is triggered when the “ADD CONDITION” button is clicked in the conditional formatting dialog, enabling users to define custom conditions instead of the default conditions at runtime. To use this event, the [allowConditionalFormatting](https://ej2.syncfusion.com/react/documentation/api/pivotview/index-default#allowconditionalformatting) property of the Pivot Table component must be set to **true**. This event provides the following parameters:
 
-* `applyGrandTotals` - Allows to apply conditional formatting to the grand totals of row and column axis in the Pivot Table.
+* `applyGrandTotals` - Allows you to apply conditional formatting to the grand totals of the row and column axes in the Pivot Table.
 * `conditions` - Allows you to choose the operator type such as equals, greater than, less than, etc. for conditional formatting.
-* `label` - Allows to set the header text of a specific row/column field to apply conditional formatting.
-* `measure` - Allows to set the value field name to apply conditional formatting.
-* `style` - Allows to set the custom styles for the formatting applied values in the Pivot Table.
-* `value1` - Allows to set the start value for applying conditional formatting.
-* `value2` - Allows to set the end value for applying conditional formatting. This property is applicable only for conditions like **Between** and **NotBetween**.
+* `label` - Allows you to set the header text of a specific row/column field to apply conditional formatting.
+* `measure` - Allows you to set the value field name to apply conditional formatting.
+* `style` - Allows you to set the custom styles for the formatted values in the Pivot Table.
+* `value1` - Allows you to set the start value for applying conditional formatting.
+* `value2` - Allows you to set the end value for applying conditional formatting. This property is applicable only for conditions like **Between** and **NotBetween**.
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/pivot-table/default-cs20/app/App.jsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/default-cs20/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/pivot-table/default-cs20/app/App.tsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/default-cs20/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/pivot-table/default-cs20/app/datasource.jsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/default-cs20/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/pivot-table/default-cs20/app/datasource.tsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/default-cs20/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs20" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs20" %}
 
 ## See Also
 

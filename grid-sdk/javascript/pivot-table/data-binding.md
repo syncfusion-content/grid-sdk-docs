@@ -21,27 +21,27 @@ You can bind local JSON data to the Pivot Table by assigning a local variable co
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/pivot-table/pivot-table-cs103/index.js %}
+{% include code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs103/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/pivot-table/pivot-table-cs103/index.html %}
+{% include code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs103/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs103" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs103" %}
 
 You can also bind JSON data using the [`DataManager`](https://ej2.syncfusion.com/documentation/api/data/dataManager) with `JsonAdaptor`. In this approach, assign the [`DataManager`](https://ej2.syncfusion.com/documentation/api/data/dataManager) instance containing JSON data to the [`dataSource`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/dataSourceSettings#datasource) property under [`dataSourceSettings`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview#datasourcesettings). Using [`DataManager`](https://ej2.syncfusion.com/documentation/api/data/dataManager) is optional for local JSON data binding.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/pivot-table/pivot-table-cs104/index.js %}
+{% include code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs104/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/pivot-table/pivot-table-cs104/index.html %}
+{% include code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs104/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs104" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs104" %}
 
 You can also load JSON data from a local *.json file using the file uploader option. After uploading the file, convert the resulting string to JSON data and assign it to the [`dataSource`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/dataSourceSettings#datasource) property under [`dataSourceSettings`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview#datasourcesettings). The following code example demonstrates this approach.
 
@@ -81,14 +81,14 @@ To bind remote JSON data to the Pivot Table, set the endpoint [`URL`](https://ej
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/pivot-table/pivot-table-cs105/index.js %}
+{% include code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs105/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/pivot-table/pivot-table-cs105/index.html %}
+{% include code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs105/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs105" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs105" %}
 
 ## CSV
 
@@ -102,14 +102,14 @@ To bind local CSV data to the Pivot Table, convert the data into a string array 
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/pivot-table/pivot-table-cs106/index.js %}
+{% include code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs106/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/pivot-table/pivot-table-cs106/index.html %}
+{% include code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs106/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs106" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs106" %}
 
 You can also connect CSV data from a local *.csv file to the Pivot Table using the file uploader option. After uploading the file, convert the resulting string to a string array and assign it to the [`dataSource`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/dataSourceSettings#datasource) property under [`dataSourceSettings`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview#datasourcesettings). The following code example shows how to implement this:
 
@@ -154,14 +154,14 @@ To bind remote CSV data, set the [`URL`](https://ej2.syncfusion.com/javascript/d
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/pivot-table/pivot-table-cs107/index.js %}
+{% include code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs107/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/pivot-table/pivot-table-cs107/index.html %}
+{% include code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs107/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs107" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs107" %}
 
 ## Remote Data Binding
 
@@ -171,14 +171,14 @@ To bind remote data, specify the endpoint `url` within [`DataManager`](https://e
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/pivot-table/pivot-table-cs108/index.js %}
+{% include code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs108/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/pivot-table/pivot-table-cs108/index.html %}
+{% include code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs108/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs108" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs108" %}
 
 ### Binding with OData services
 
@@ -188,14 +188,14 @@ The following example demonstrates how to bind the Pivot Table to an OData servi
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/pivot-table/pivot-table-cs109/index.js %}
+{% include code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs109/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/pivot-table/pivot-table-cs109/index.html %}
+{% include code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs109/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs109" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs109" %}
 
 ### Binding with OData V4 services
 
@@ -203,14 +203,14 @@ OData V4 services provide enhanced query capabilities and improved performance f
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/pivot-table/pivot-table-cs110/index.js %}
+{% include code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs110/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/pivot-table/pivot-table-cs110/index.html %}
+{% include code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs110/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs110" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs110" %}
 
 ### Web API
 
@@ -250,14 +250,14 @@ The query can include operations such as filtering records based on specific con
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/pivot-table/pivot-table-cs111/index.js %}
+{% include code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs111/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/pivot-table/pivot-table-cs111/index.html %}
+{% include code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs111/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs111" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs111" %}
 
 ## Mapping
 
@@ -307,14 +307,14 @@ The following code sample demonstrates how to configure the visibility of field 
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/pivot-table/pivot-table-cs112/index.js %}
+{% include code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs112/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/pivot-table/pivot-table-cs112/index.html %}
+{% include code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs112/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs112" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs112" %}
 
 ## Values in row axis
 
@@ -322,14 +322,14 @@ You can display value fields in the row axis of the Pivot Table to make your dat
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/pivot-table/pivot-table-cs113/index.js %}
+{% include code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs113/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/pivot-table/pivot-table-cs113/index.html %}
+{% include code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs113/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs113" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs113" %}
 
 ## Values at different positions
 
@@ -339,14 +339,14 @@ Positioning value fields at specific locations helps create more meaningful data
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/pivot-table/pivot-table-cs114/index.js %}
+{% include code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs114/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/pivot-table/pivot-table-cs114/index.html %}
+{% include code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs114/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs114" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs114" %}
 
 ## Show 'no data' items
 
@@ -356,14 +356,14 @@ In the following example, the "Country" and "State" field rows are displayed eve
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/pivot-table/pivot-table-cs115/index.js %}
+{% include code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs115/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/pivot-table/pivot-table-cs115/index.html %}
+{% include code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs115/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs115" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs115" %}
 
 ## Show value headers always
 
@@ -371,14 +371,14 @@ Ensure value headers remain visible in your Pivot Table at all times, providing 
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/pivot-table/pivot-table-cs116/index.js %}
+{% include code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs116/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/pivot-table/pivot-table-cs116/index.html %}
+{% include code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs116/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs116" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs116" %}
 
 ## Customize empty value cells
 
@@ -386,14 +386,14 @@ Show custom text in cells that contain no data to make your Pivot Table more inf
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/pivot-table/pivot-table-cs117/index.js %}
+{% include code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs117/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/pivot-table/pivot-table-cs117/index.html %}
+{% include code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs117/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs117" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs117" %}
 
 ## Event
 
@@ -414,14 +414,14 @@ The load event provides the following parameters:
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/pivot-table/pivot-table-cs118/index.js %}
+{% include code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs118/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/pivot-table/pivot-table-cs118/index.html %}
+{% include code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs118/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs118" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs118" %}
 
 ### EnginePopulated
 
@@ -437,14 +437,14 @@ Below is an example showing how the [`enginePopulated`](https://ej2.syncfusion.c
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/pivot-table/pivot-table-cs119/index.js %}
+{% include code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs119/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/pivot-table/pivot-table-cs119/index.html %}
+{% include code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs119/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs119" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs119" %}
 
 ### EnginePopulating
 
@@ -454,14 +454,14 @@ The [`enginePopulating`](https://ej2.syncfusion.com/javascript/documentation/api
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/pivot-table/pivot-table-cs120/index.js %}
+{% include code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs120/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/pivot-table/pivot-table-cs120/index.html %}
+{% include code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs120/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs120" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs120" %}
 
 ## See Also
 

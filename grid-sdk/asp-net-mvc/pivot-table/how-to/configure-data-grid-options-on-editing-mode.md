@@ -22,10 +22,10 @@ The [`BeginDrillThrough`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusio
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/custom-editing/custom-editing/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/custom-editing/custom-editing/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="CustomEditing.cs" %}
-{% include code-snippet/pivot-table/custom-editing/custom-editing/CustomEditing.cs %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/custom-editing/custom-editing/CustomEditing.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -33,10 +33,10 @@ The [`BeginDrillThrough`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusio
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/custom-editing/custom-editing/razor %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/custom-editing/custom-editing/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="CustomEditing.cs" %}
-{% include code-snippet/pivot-table/custom-editing/custom-editing/CustomEditing.cs %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/custom-editing/custom-editing/CustomEditing.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

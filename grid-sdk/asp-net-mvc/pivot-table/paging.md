@@ -35,10 +35,10 @@ You can also change the position, visibility, compact view, and template of the 
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/paging/default/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/paging/default/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Paging.cs" %}
-{% include code-snippet/pivot-table/paging/default/Paging.cs %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/paging/default/Paging.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -46,10 +46,10 @@ You can also change the position, visibility, compact view, and template of the 
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/paging/default/razor %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/paging/default/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Paging.cs" %}
-{% include code-snippet/pivot-table/paging/default/Paging.cs %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/paging/default/Paging.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -66,10 +66,10 @@ The following code demonstrates how to configure the pager UI to appear at the t
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/paging/position/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/paging/position/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Paging.cs" %}
-{% include code-snippet/pivot-table/paging/position/Paging.cs %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/paging/position/Paging.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -77,10 +77,10 @@ The following code demonstrates how to configure the pager UI to appear at the t
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/paging/position/razor %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/paging/position/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Paging.cs" %}
-{% include code-snippet/pivot-table/paging/position/Paging.cs %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/paging/position/Paging.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -95,10 +95,10 @@ The Pivot Table allows you to toggle the positions of the row and column pagers 
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/paging/inverse-pager/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/paging/inverse-pager/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Paging.cs" %}
-{% include code-snippet/pivot-table/paging/inverse-pager/Paging.cs %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/paging/inverse-pager/Paging.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -106,10 +106,10 @@ The Pivot Table allows you to toggle the positions of the row and column pagers 
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/paging/inverse-pager/razor %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/paging/inverse-pager/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Paging.cs" %}
-{% include code-snippet/pivot-table/paging/inverse-pager/Paging.cs %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/paging/inverse-pager/Paging.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -124,10 +124,10 @@ The Pivot Table provides a compact view for the pager UI, displaying only the pr
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/paging/compact-view/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/paging/compact-view/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Paging.cs" %}
-{% include code-snippet/pivot-table/paging/compact-view/Paging.cs %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/paging/compact-view/Paging.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -135,10 +135,10 @@ The Pivot Table provides a compact view for the pager UI, displaying only the pr
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/paging/compact-view/razor %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/paging/compact-view/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Paging.cs" %}
-{% include code-snippet/pivot-table/paging/compact-view/Paging.cs %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/paging/compact-view/Paging.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -156,10 +156,10 @@ The following code demonstrates how to hide the row pager by setting the [`ShowR
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/paging/show-hide-pager/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/paging/show-hide-pager/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Paging.cs" %}
-{% include code-snippet/pivot-table/paging/show-hide-pager/Paging.cs %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/paging/show-hide-pager/Paging.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -167,10 +167,10 @@ The following code demonstrates how to hide the row pager by setting the [`ShowR
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/paging/show-hide-pager/razor %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/paging/show-hide-pager/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Paging.cs" %}
-{% include code-snippet/pivot-table/paging/show-hide-pager/Paging.cs %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/paging/show-hide-pager/Paging.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -185,10 +185,10 @@ The Pivot Table allows you to control the visibility of the "Rows per page" and 
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/paging/show-hide-page-size/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/paging/show-hide-page-size/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Paging.cs" %}
-{% include code-snippet/pivot-table/paging/show-hide-page-size/Paging.cs %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/paging/show-hide-page-size/Paging.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -196,10 +196,10 @@ The Pivot Table allows you to control the visibility of the "Rows per page" and 
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/paging/show-hide-page-size/razor %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/paging/show-hide-page-size/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Paging.cs" %}
-{% include code-snippet/pivot-table/paging/show-hide-page-size/Paging.cs %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/paging/show-hide-page-size/Paging.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -216,10 +216,10 @@ The following example sets the "Rows per page" dropdown with page sizes of 10, 2
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/paging/page-size/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/paging/page-size/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Paging.cs" %}
-{% include code-snippet/pivot-table/paging/page-size/Paging.cs %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/paging/page-size/Paging.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -227,10 +227,10 @@ The following example sets the "Rows per page" dropdown with page sizes of 10, 2
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/paging/page-size/razor %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/paging/page-size/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Paging.cs" %}
-{% include code-snippet/pivot-table/paging/page-size/Paging.cs %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/paging/page-size/Paging.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -247,10 +247,10 @@ This following example shows how to create a custom template for both row and co
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/paging/template/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/paging/template/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Paging.cs" %}
-{% include code-snippet/pivot-table/paging/template/Paging.cs %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/paging/template/Paging.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -258,10 +258,10 @@ This following example shows how to create a custom template for both row and co
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/paging/template/razor %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/paging/template/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Paging.cs" %}
-{% include code-snippet/pivot-table/paging/template/Paging.cs %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/paging/template/Paging.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

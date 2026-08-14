@@ -30,14 +30,14 @@ The styling is applied by adding a custom CSS class **"e-custom"** to the cell e
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs310/src/app.component.ts %}
+{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs310/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs310/src/main.ts %}
+{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs310/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs310" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs310" %}
 
 N> The **dot(.)** character in **FY 2016.Sold Amount** is used by default to identify the header levels in the pivot table's row and column. It can be changed by setting the [headerDelimiter](https://helpej2.syncfusion.com/angular/documentation/api/pivotview/valueSortSettingsModel#headerdelimiter) in the [valueSortSettings](https://helpej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings#valuesortsettings) property to any other delimiter instead of the default separator.

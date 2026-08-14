@@ -41,10 +41,10 @@ The following table lists the built-in toolbar options and their actions:
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/toolbar/toolbar/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/toolbar/toolbar/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Toolbar.cs" %}
-{% include code-snippet/pivot-table/toolbar/toolbar/Toolbar.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/toolbar/toolbar/Toolbar.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -52,10 +52,10 @@ The following table lists the built-in toolbar options and their actions:
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/toolbar/toolbar/razor %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/toolbar/toolbar/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Toolbar.cs" %}
-{% include code-snippet/pivot-table/toolbar/toolbar/Toolbar.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/toolbar/toolbar/Toolbar.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -76,10 +76,10 @@ To learn more about the supported chart types, see the [Pivot Chart documentatio
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/toolbar/toolbar-charttypes/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/toolbar/toolbar-charttypes/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Toolbar.cs" %}
-{% include code-snippet/pivot-table/toolbar/toolbar-charttypes/Toolbar.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/toolbar/toolbar-charttypes/Toolbar.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -87,10 +87,10 @@ To learn more about the supported chart types, see the [Pivot Chart documentatio
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/toolbar/toolbar-charttypes/razor %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/toolbar/toolbar-charttypes/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Toolbar.cs" %}
-{% include code-snippet/pivot-table/toolbar/toolbar-charttypes/Toolbar.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/toolbar/toolbar-charttypes/Toolbar.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -125,10 +125,10 @@ Here’s an example of how to add a custom toolbar item:
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/toolbar/toolbar-customize/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/toolbar/toolbar-customize/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="ToolbarCustomize.cs" %}
-{% include code-snippet/pivot-table/toolbar/toolbar-customize/ToolbarCustomize.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/toolbar/toolbar-customize/ToolbarCustomize.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -136,10 +136,10 @@ Here’s an example of how to add a custom toolbar item:
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/toolbar/toolbar-customize/razor %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/toolbar/toolbar-customize/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="ToolbarCustomize.cs" %}
-{% include code-snippet/pivot-table/toolbar/toolbar-customize/ToolbarCustomize.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/toolbar/toolbar-customize/ToolbarCustomize.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -158,10 +158,10 @@ Below is an example of a custom toolbar with buttons to expand or collapse all r
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/toolbar/toolbar-template/tool-temp/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/toolbar/toolbar-template/tool-temp/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="ToolbarCustomize.cs" %}
-{% include code-snippet/pivot-table/toolbar/toolbar-template/tool-temp/ToolbarCustomize.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/toolbar/toolbar-template/tool-temp/ToolbarCustomize.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -169,10 +169,10 @@ Below is an example of a custom toolbar with buttons to expand or collapse all r
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/toolbar/toolbar-template/tool-temp/razor %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/toolbar/toolbar-template/tool-temp/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="ToolbarCustomize.cs" %}
-{% include code-snippet/pivot-table/toolbar/toolbar-template/tool-temp/ToolbarCustomize.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/toolbar/toolbar-template/tool-temp/ToolbarCustomize.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -187,10 +187,10 @@ Another option allows framing a custom toolbar item using HTML elements and incl
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/toolbar/toolbar-template/tool-temp-rtl/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/toolbar/toolbar-template/tool-temp-rtl/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="ToolbarCustomize.cs" %}
-{% include code-snippet/pivot-table/toolbar/toolbar-template/tool-temp-rtl/ToolbarCustomize.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/toolbar/toolbar-template/tool-temp-rtl/ToolbarCustomize.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -198,10 +198,10 @@ Another option allows framing a custom toolbar item using HTML elements and incl
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/toolbar/toolbar-template/tool-temp-rtl/razor %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/toolbar/toolbar-template/tool-temp-rtl/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="ToolbarCustomize.cs" %}
-{% include code-snippet/pivot-table/toolbar/toolbar-template/tool-temp-rtl/ToolbarCustomize.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/toolbar/toolbar-template/tool-temp-rtl/ToolbarCustomize.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -224,10 +224,10 @@ The following code example shows how to save and load a Pivot Table report as a 
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/toolbar/save-load-json/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/toolbar/save-load-json/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Save-load-json.cs" %}
-{% include code-snippet/pivot-table/toolbar/save-load-json/save-load-json.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/toolbar/save-load-json/save-load-json.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -235,10 +235,10 @@ The following code example shows how to save and load a Pivot Table report as a 
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/toolbar/save-load-json/razor %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/toolbar/save-load-json/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Save-load-json.cs" %}
-{% include code-snippet/pivot-table/toolbar/save-load-json/save-load-json.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/toolbar/save-load-json/save-load-json.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -987,10 +987,10 @@ The [`saveReport`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/toolbar/toolbar/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/toolbar/toolbar/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Toolbar.cs" %}
-{% include code-snippet/pivot-table/toolbar/toolbar/Toolbar.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/toolbar/toolbar/Toolbar.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -998,10 +998,10 @@ The [`saveReport`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/toolbar/toolbar/razor %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/toolbar/toolbar/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Toolbar.cs" %}
-{% include code-snippet/pivot-table/toolbar/toolbar/Toolbar.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/toolbar/toolbar/Toolbar.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -1018,10 +1018,10 @@ The [`toolbarRender`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.E
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/toolbar/toolbar-customize-inbuilt/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/toolbar/toolbar-customize-inbuilt/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="ToolbarCustomize.cs" %}
-{% include code-snippet/pivot-table/toolbar/toolbar-customize-inbuilt/ToolbarCustomize.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/toolbar/toolbar-customize-inbuilt/ToolbarCustomize.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -1029,10 +1029,10 @@ The [`toolbarRender`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.E
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/toolbar/toolbar-customize-inbuilt/razor %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/toolbar/toolbar-customize-inbuilt/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="ToolbarCustomize.cs" %}
-{% include code-snippet/pivot-table/toolbar/toolbar-customize-inbuilt/ToolbarCustomize.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/toolbar/toolbar-customize-inbuilt/ToolbarCustomize.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -1051,10 +1051,10 @@ Here’s an example of how to use the `beforeExport` event to customize headers 
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/toolbar/toolbar-export/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/toolbar/toolbar-export/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="ToolbarExport.cs" %}
-{% include code-snippet/pivot-table/toolbar/toolbar-export/ToolbarExport.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/toolbar/toolbar-export/ToolbarExport.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -1062,10 +1062,10 @@ Here’s an example of how to use the `beforeExport` event to customize headers 
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/toolbar/toolbar-export/razor %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/toolbar/toolbar-export/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="ToolbarExport.cs" %}
-{% include code-snippet/pivot-table/toolbar/toolbar-export/ToolbarExport.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/toolbar/toolbar-export/ToolbarExport.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -1106,10 +1106,10 @@ In the example below, the [`actionBegin`](https://help.syncfusion.com/cr/aspnetc
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/action-event/actionBegin-toolbar/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/action-event/actionBegin-toolbar/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="ActionBegin-aggregation.cs" %}
-{% include code-snippet/pivot-table/action-event/actionBegin-toolbar/actionBegin-aggregation.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/action-event/actionBegin-toolbar/actionBegin-aggregation.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -1117,10 +1117,10 @@ In the example below, the [`actionBegin`](https://help.syncfusion.com/cr/aspnetc
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/action-event/actionBegin-toolbar/razor %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/action-event/actionBegin-toolbar/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="ActionBegin-aggregation.cs" %}
-{% include code-snippet/pivot-table/action-event/actionBegin-toolbar/actionBegin-aggregation.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/action-event/actionBegin-toolbar/actionBegin-aggregation.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -1154,10 +1154,10 @@ The [`actionComplete`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/action-event/actionComplete-toolbar/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/action-event/actionComplete-toolbar/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="ActionComplete-aggregation.cs" %}
-{% include code-snippet/pivot-table/action-event/actionComplete-toolbar/actionComplete-aggregation.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/action-event/actionComplete-toolbar/actionComplete-aggregation.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -1165,10 +1165,10 @@ The [`actionComplete`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/action-event/actionComplete-toolbar/razor %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/action-event/actionComplete-toolbar/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="ActionComplete-aggregation.cs" %}
-{% include code-snippet/pivot-table/action-event/actionComplete-toolbar/actionComplete-aggregation.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/action-event/actionComplete-toolbar/actionComplete-aggregation.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -1202,10 +1202,10 @@ The [`actionFailure`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.E
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/action-event/actionFailure-toolbar/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/action-event/actionFailure-toolbar/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="ActionFailure-aggregation.cs" %}
-{% include code-snippet/pivot-table/action-event/actionFailure-toolbar/actionFailure-aggregation.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/action-event/actionFailure-toolbar/actionFailure-aggregation.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -1213,10 +1213,10 @@ The [`actionFailure`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.E
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/action-event/actionFailure-toolbar/razor %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/action-event/actionFailure-toolbar/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="ActionFailure-aggregation.cs" %}
-{% include code-snippet/pivot-table/action-event/actionFailure-toolbar/actionFailure-aggregation.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/action-event/actionFailure-toolbar/actionFailure-aggregation.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

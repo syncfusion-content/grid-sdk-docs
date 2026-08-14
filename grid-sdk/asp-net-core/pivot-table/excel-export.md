@@ -23,10 +23,10 @@ Pivot Table data can be exported to an Excel file (.xlsx format) while preservin
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/excel-export/export/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/excel-export/export/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Export.cs" %}
-{% include code-snippet/pivot-table/excel-export/export/Export.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/excel-export/export/Export.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -34,10 +34,10 @@ Pivot Table data can be exported to an Excel file (.xlsx format) while preservin
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/excel-export/export/razor %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/excel-export/export/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Export.cs" %}
-{% include code-snippet/pivot-table/excel-export/export/Export.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/excel-export/export/Export.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -54,10 +54,10 @@ Pivot Table data can be exported to a plain text CSV file. The CSV format is lig
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/excel-export/csv-export/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/excel-export/csv-export/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="CSVExport.cs" %}
-{% include code-snippet/pivot-table/excel-export/csv-export/CSVExport.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/excel-export/csv-export/CSVExport.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -65,10 +65,10 @@ Pivot Table data can be exported to a plain text CSV file. The CSV format is lig
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/excel-export/csv-export/razor %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/excel-export/csv-export/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="CSVExport.cs" %}
-{% include code-snippet/pivot-table/excel-export/csv-export/CSVExport.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/excel-export/csv-export/CSVExport.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -91,10 +91,10 @@ To add visual separation between Pivot Tables, use the **multipleExport.blankRow
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/excel-export/samesheet-export/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/excel-export/samesheet-export/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="SameSheetExport.cs" %}
-{% include code-snippet/pivot-table/excel-export/samesheet-export/SameSheetExport.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/excel-export/samesheet-export/SameSheetExport.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -102,10 +102,10 @@ To add visual separation between Pivot Tables, use the **multipleExport.blankRow
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/excel-export/samesheet-export/razor %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/excel-export/samesheet-export/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="SameSheetExport.cs" %}
-{% include code-snippet/pivot-table/excel-export/samesheet-export/SameSheetExport.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/excel-export/samesheet-export/SameSheetExport.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -120,10 +120,10 @@ Multiple Pivot Tables can be organized into separate worksheets within a single 
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/excel-export/newsheet-export/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/excel-export/newsheet-export/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="NewSheetExport.cs" %}
-{% include code-snippet/pivot-table/excel-export/newsheet-export/NewSheetExport.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/excel-export/newsheet-export/NewSheetExport.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -131,10 +131,10 @@ Multiple Pivot Tables can be organized into separate worksheets within a single 
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/excel-export/newsheet-export/razor %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/excel-export/newsheet-export/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="NewSheetExport.cs" %}
-{% include code-snippet/pivot-table/excel-export/newsheet-export/NewSheetExport.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/excel-export/newsheet-export/NewSheetExport.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -151,10 +151,10 @@ In the following example, the [`beforeExport`](https://help.syncfusion.com/cr/as
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/excel-export/customizing-pivot-report/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/excel-export/customizing-pivot-report/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="CustomizingPivotReport.cs" %}
-{% include code-snippet/pivot-table/excel-export/customizing-pivot-report/CustomizingPivotReport.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/excel-export/customizing-pivot-report/CustomizingPivotReport.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -162,10 +162,10 @@ In the following example, the [`beforeExport`](https://help.syncfusion.com/cr/as
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/excel-export/customizing-pivot-report/razor %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/excel-export/customizing-pivot-report/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="CustomizingPivotReport.cs" %}
-{% include code-snippet/pivot-table/excel-export/customizing-pivot-report/CustomizingPivotReport.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/excel-export/customizing-pivot-report/CustomizingPivotReport.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -191,10 +191,10 @@ The following example demonstrates how to add two custom aggregate types to the 
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/excel-export/custom-aggregate-export/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/excel-export/custom-aggregate-export/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="CustomAggregateExport.cs" %}
-{% include code-snippet/pivot-table/excel-export/custom-aggregate-export/CustomAggregateExport.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/excel-export/custom-aggregate-export/CustomAggregateExport.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -202,10 +202,10 @@ The following example demonstrates how to add two custom aggregate types to the 
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/excel-export/custom-aggregate-export/razor %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/excel-export/custom-aggregate-export/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="CustomAggregateExport.cs" %}
-{% include code-snippet/pivot-table/excel-export/custom-aggregate-export/CustomAggregateExport.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/excel-export/custom-aggregate-export/CustomAggregateExport.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -228,10 +228,10 @@ The following example demonstrates exporting a Pivot Table with a custom date fo
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/excel-export/custom-date-export/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/excel-export/custom-date-export/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="CustomDateExport.cs" %}
-{% include code-snippet/pivot-table/excel-export/custom-date-export/CustomDateExport.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/excel-export/custom-date-export/CustomDateExport.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -239,10 +239,10 @@ The following example demonstrates exporting a Pivot Table with a custom date fo
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/excel-export/custom-date-export/razor %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/excel-export/custom-date-export/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="CustomDateExport.cs" %}
-{% include code-snippet/pivot-table/excel-export/custom-date-export/CustomDateExport.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/excel-export/custom-date-export/CustomDateExport.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -257,10 +257,10 @@ Row headers can be excluded from the exported Excel file when only values and co
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/excel-export/export-without-row-header/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/excel-export/export-without-row-header/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="ExportWithoutRowHeaders.cs" %}
-{% include code-snippet/pivot-table/excel-export/export-without-row-header/ExportWithoutRowHeaders.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/excel-export/export-without-row-header/ExportWithoutRowHeaders.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -268,10 +268,10 @@ Row headers can be excluded from the exported Excel file when only values and co
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/excel-export/export-without-row-header/razor %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/excel-export/export-without-row-header/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="ExportWithoutRowHeaders.cs" %}
-{% include code-snippet/pivot-table/excel-export/export-without-row-header/ExportWithoutRowHeaders.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/excel-export/export-without-row-header/ExportWithoutRowHeaders.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -290,10 +290,10 @@ After hiding the columns, set `includeHiddenColumn` to **false** in `excelExport
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/excel-export/exclude-hidden-columns/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/excel-export/exclude-hidden-columns/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="ExcludeHiddenColumns.cs" %}
-{% include code-snippet/pivot-table/excel-export/exclude-hidden-columns/ExcludeHiddenColumns.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/excel-export/exclude-hidden-columns/ExcludeHiddenColumns.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -301,10 +301,10 @@ After hiding the columns, set `includeHiddenColumn` to **false** in `excelExport
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/excel-export/exclude-hidden-columns/razor %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/excel-export/exclude-hidden-columns/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="ExcludeHiddenColumns.cs" %}
-{% include code-snippet/pivot-table/excel-export/exclude-hidden-columns/ExcludeHiddenColumns.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/excel-export/exclude-hidden-columns/ExcludeHiddenColumns.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -324,10 +324,10 @@ Within these events, set the `rotation` property in the `style` argument to rota
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/excel-export/rotate-cell-text/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/excel-export/rotate-cell-text/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="RotateCellText.cs" %}
-{% include code-snippet/pivot-table/excel-export/rotate-cell-text/RotateCellText.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/excel-export/rotate-cell-text/RotateCellText.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -335,10 +335,10 @@ Within these events, set the `rotation` property in the `style` argument to rota
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/excel-export/rotate-cell-text/razor %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/excel-export/rotate-cell-text/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="RotateCellText.cs" %}
-{% include code-snippet/pivot-table/excel-export/rotate-cell-text/RotateCellText.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/excel-export/rotate-cell-text/RotateCellText.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -353,10 +353,10 @@ The following example demonstrates how to apply conditional formatting to the **
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/excel-export/apply-custom-styles/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/excel-export/apply-custom-styles/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="ApplyCustomStyles.cs" %}
-{% include code-snippet/pivot-table/excel-export/apply-custom-styles/ApplyCustomStyles.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/excel-export/apply-custom-styles/ApplyCustomStyles.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -364,10 +364,10 @@ The following example demonstrates how to apply conditional formatting to the **
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/excel-export/apply-custom-styles/razor %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/excel-export/apply-custom-styles/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="ApplyCustomStyles.cs" %}
-{% include code-snippet/pivot-table/excel-export/apply-custom-styles/ApplyCustomStyles.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/excel-export/apply-custom-styles/ApplyCustomStyles.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -384,10 +384,10 @@ The Excel export provides an option to change colors for headers, caption, and r
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/excel-export/theme-export/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/excel-export/theme-export/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="ThemeExport.cs" %}
-{% include code-snippet/pivot-table/excel-export/theme-export/ThemeExport.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/excel-export/theme-export/ThemeExport.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -395,10 +395,10 @@ The Excel export provides an option to change colors for headers, caption, and r
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/excel-export/theme-export/razor %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/excel-export/theme-export/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="ThemeExport.cs" %}
-{% include code-snippet/pivot-table/excel-export/theme-export/ThemeExport.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/excel-export/theme-export/ThemeExport.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -413,10 +413,10 @@ The Excel export provides an option to include header and footer content for the
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/excel-export/header-footer/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/excel-export/header-footer/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="ThemeExport.cs" %}
-{% include code-snippet/pivot-table/excel-export/header-footer/ThemeExport.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/excel-export/header-footer/ThemeExport.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -424,10 +424,10 @@ The Excel export provides an option to include header and footer content for the
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/excel-export/header-footer/razor %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/excel-export/header-footer/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="ThemeExport.cs" %}
-{% include code-snippet/pivot-table/excel-export/header-footer/ThemeExport.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/excel-export/header-footer/ThemeExport.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -442,10 +442,10 @@ This option provides flexibility to specify a custom file name for your exported
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/excel-export/file-name/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/excel-export/file-name/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="FileName.cs" %}
-{% include code-snippet/pivot-table/excel-export/file-name/FileName.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/excel-export/file-name/FileName.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -453,10 +453,10 @@ This option provides flexibility to specify a custom file name for your exported
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/excel-export/file-name/razor %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/excel-export/file-name/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="FileName.cs" %}
-{% include code-snippet/pivot-table/excel-export/file-name/FileName.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/excel-export/file-name/FileName.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -471,10 +471,10 @@ When exporting data, displaying a spinner provides visual feedback to end users 
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/excel-export/show-spinner/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/excel-export/show-spinner/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="ShowSpinner.cs" %}
-{% include code-snippet/pivot-table/excel-export/show-spinner/ShowSpinner.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/excel-export/show-spinner/ShowSpinner.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -482,10 +482,10 @@ When exporting data, displaying a spinner provides visual feedback to end users 
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/excel-export/show-spinner/razor %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/excel-export/show-spinner/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="ShowSpinner.cs" %}
-{% include code-snippet/pivot-table/excel-export/show-spinner/ShowSpinner.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/excel-export/show-spinner/ShowSpinner.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -502,10 +502,10 @@ By default, the Pivot Table exports all data records, which can result in larger
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/excel-export/exportallpages/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/excel-export/exportallpages/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Exportallpages.cs" %}
-{% include code-snippet/pivot-table/excel-export/exportallpages/exportallpages.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/excel-export/exportallpages/exportallpages.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -513,10 +513,10 @@ By default, the Pivot Table exports all data records, which can result in larger
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/excel-export/exportallpages/razor %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/excel-export/exportallpages/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Exportallpages.cs" %}
-{% include code-snippet/pivot-table/excel-export/exportallpages/exportallpages.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/excel-export/exportallpages/exportallpages.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -538,10 +538,10 @@ The event provides the following arguments:
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/grid-customization/excel-querycell/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grid-customization/excel-querycell/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="ExcelQueryCell.cs" %}
-{% include code-snippet/pivot-table/grid-customization/excel-querycell/ExcelQueryCell.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grid-customization/excel-querycell/ExcelQueryCell.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -549,10 +549,10 @@ The event provides the following arguments:
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/grid-customization/excel-querycell/razor %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grid-customization/excel-querycell/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="ExcelQueryCell.cs" %}
-{% include code-snippet/pivot-table/grid-customization/excel-querycell/ExcelQueryCell.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grid-customization/excel-querycell/ExcelQueryCell.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -568,10 +568,10 @@ The  [`excelHeaderQueryCellInfo`](https://help.syncfusion.com/cr/aspnetcore-js2/
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/grid-customization/excel-headercell/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grid-customization/excel-headercell/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="ExcelHeader.cs" %}
-{% include code-snippet/pivot-table/grid-customization/excel-headercell/ExcelHeader.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grid-customization/excel-headercell/ExcelHeader.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -579,10 +579,10 @@ The  [`excelHeaderQueryCellInfo`](https://help.syncfusion.com/cr/aspnetcore-js2/
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/grid-customization/excel-headercell/razor %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grid-customization/excel-headercell/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="ExcelHeader.cs" %}
-{% include code-snippet/pivot-table/grid-customization/excel-headercell/ExcelHeader.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grid-customization/excel-headercell/ExcelHeader.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -598,10 +598,10 @@ The [`exportComplete`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/excel-export/blob-export/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/excel-export/blob-export/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Blob-export.cs" %}
-{% include code-snippet/pivot-table/excel-export/blob-export/blob-export.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/excel-export/blob-export/blob-export.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -609,10 +609,10 @@ The [`exportComplete`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/excel-export/blob-export/razor %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/excel-export/blob-export/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Blob-export.cs" %}
-{% include code-snippet/pivot-table/excel-export/blob-export/blob-export.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/excel-export/blob-export/blob-export.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

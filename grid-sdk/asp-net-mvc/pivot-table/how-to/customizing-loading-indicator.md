@@ -18,10 +18,10 @@ The [`SpinnerTemplate`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/loading-indicator/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/loading-indicator/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Fieldlist.cs" %}
-{% include code-snippet/pivot-table/loading-indicator/fieldlist.cs %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/loading-indicator/fieldlist.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -29,10 +29,10 @@ The [`SpinnerTemplate`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/loading-indicator/razor %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/loading-indicator/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Fieldlist.cs" %}
-{% include code-snippet/pivot-table/loading-indicator/fieldlist.cs %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/loading-indicator/fieldlist.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

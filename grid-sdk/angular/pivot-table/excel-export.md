@@ -18,15 +18,15 @@ Pivot Table data can be exported to an Excel file (.xlsx format) while preservin
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs63/src/app.component.ts %}
+{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs63/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs63/src/main.ts %}
+{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs63/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs63" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs63" %}
 
 ## Export data to a CSV file
 
@@ -34,15 +34,15 @@ Pivot Table data can be exported to a plain text CSV file. The CSV format is lig
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs69/src/app.component.ts %}
+{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs69/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs69/src/main.ts %}
+{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs69/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs69" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs69" %}
 
 ## Exporting multiple pivot tables
 
@@ -58,15 +58,15 @@ To add visual separation between Pivot Tables, use the **multipleExport.blankRow
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs64/src/app.component.ts %}
+{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs64/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs64/src/main.ts %}
+{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs64/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs64" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs64" %}
 
 ### Exporting to a new worksheet
 
@@ -74,15 +74,15 @@ Multiple Pivot Tables can be organized into separate worksheets within a single 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs65/src/app.component.ts %}
+{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs65/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs65/src/main.ts %}
+{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs65/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs65" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs65" %}
 
 ## Customize the pivot report during export
 
@@ -92,15 +92,15 @@ In the following example, the [`beforeExport`](https://ej2.syncfusion.com/angula
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs325/src/app.component.ts %}
+{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs325/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs325/src/main.ts %}
+{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs325/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs325" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs325" %}
 
 ## Export with custom aggregates
 
@@ -119,15 +119,15 @@ The following example demonstrates how to add two custom aggregate types to the 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs326/src/app.component.ts %}
+{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs326/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs326/src/main.ts %}
+{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs326/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs326" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs326" %}
 
 ## Export with custom date format
 
@@ -143,15 +143,15 @@ The following example demonstrates exporting a Pivot Table with a custom date fo
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs327/src/app.component.ts %}
+{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs327/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs327/src/main.ts %}
+{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs327/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs327" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs327" %}
 
 ## Remove row header during export
 
@@ -159,15 +159,15 @@ Row headers can be excluded from the exported Excel file when only values and co
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs328/src/app.component.ts %}
+{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs328/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs328/src/main.ts %}
+{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs328/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs328" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs328" %}
 
 ## Exclude hidden columns during export
 
@@ -179,15 +179,15 @@ After hiding the columns, set `includeHiddenColumn` to **false** in `excelExport
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs329/src/app.component.ts %}
+{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs329/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs329/src/main.ts %}
+{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs329/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs329" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs329" %}
 
 ## Rotate cell text during export
 
@@ -202,15 +202,15 @@ Within these events, set the [`rotation`](https://ej2.syncfusion.com/angular/doc
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs330/src/app.component.ts %}
+{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs330/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs330/src/main.ts %}
+{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs330/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs330" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs330" %}
 
 ## Apply custom styles based on specific conditions
 
@@ -220,15 +220,15 @@ The following example demonstrates how to apply conditional formatting to the **
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs331/src/app.component.ts %}
+{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs331/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs331/src/main.ts %}
+{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs331/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs331" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs331" %}
 
 ## Changing the pivot table style while exporting
 
@@ -238,15 +238,15 @@ The Excel export provides an option to change colors for headers, caption and re
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs66/src/app.component.ts %}
+{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs66/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs66/src/main.ts %}
+{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs66/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs66" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs66" %}
 
 ## Add header and footer while exporting
 
@@ -254,15 +254,15 @@ The Excel export provides an option to include header and footer content for the
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs67/src/app.component.ts %}
+{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs67/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs67/src/main.ts %}
+{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs67/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs67" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs67" %}
 
 ## Changing the file name while exporting
 
@@ -270,15 +270,15 @@ This option provides flexibility to specify a custom file name for your exported
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs68/src/app.component.ts %}
+{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs68/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs68/src/main.ts %}
+{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs68/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs68" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs68" %}
 
 ## Show spinner during export
 
@@ -286,15 +286,15 @@ When exporting data, displaying a spinner provides visual feedback to end users 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs332/src/app.component.ts %}
+{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs332/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs332/src/main.ts %}
+{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs332/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs332" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs332" %}
 
 ## Export only the current page
 
@@ -304,15 +304,15 @@ By default, the Pivot Table exports all data records, which can result in larger
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs72/src/app.component.ts %}
+{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs72/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs72/src/main.ts %}
+{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs72/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs72" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs72" %}
 
 ## Events
 
@@ -329,15 +329,15 @@ The event provides the following arguments:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs73/src/app.component.ts %}
+{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs73/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs73/src/main.ts %}
+{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs73/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs73" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs73" %}
 
 ### ExcelHeaderQueryCellInfo
 
@@ -348,15 +348,15 @@ The [`excelHeaderQueryCellInfo`](https://ej2.syncfusion.com/angular/documentatio
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs74/src/app.component.ts %}
+{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs74/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs74/src/main.ts %}
+{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs74/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs74" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs74" %}
 
 ### ExportComplete
 
@@ -367,15 +367,15 @@ The [`exportComplete`](https://ej2.syncfusion.com/angular/documentation/api/pivo
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs75/src/app.component.ts %}
+{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs75/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs75/src/main.ts %}
+{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs75/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs75" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs75" %}
 
 ## Limitation when exporting millions of records to Excel format
 

@@ -27,10 +27,10 @@ To customize the minimum width according to specific layout requirements, config
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/min-width/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/min-width/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="MinWidth.cs" %}
-{% include code-snippet/pivot-table/min-width/MinWidth.cs %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/min-width/MinWidth.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -38,10 +38,10 @@ To customize the minimum width according to specific layout requirements, config
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/min-width/razor %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/min-width/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="MinWidth.cs" %}
-{% include code-snippet/pivot-table/min-width/MinWidth.cs %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/min-width/MinWidth.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

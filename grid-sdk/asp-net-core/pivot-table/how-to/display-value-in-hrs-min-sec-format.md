@@ -20,10 +20,10 @@ The following example demonstrates how to convert numeric values in the **Sold**
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/display-string-value/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/display-string-value/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="DisplayStringValue.cs" %}
-{% include code-snippet/pivot-table/display-string-value/DisplayStringValue.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/display-string-value/DisplayStringValue.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -31,10 +31,10 @@ The following example demonstrates how to convert numeric values in the **Sold**
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/display-string-value/razor %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/display-string-value/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="DisplayStringValue.cs" %}
-{% include code-snippet/pivot-table/display-string-value/DisplayStringValue.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/display-string-value/DisplayStringValue.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

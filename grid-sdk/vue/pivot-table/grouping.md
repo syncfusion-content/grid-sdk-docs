@@ -32,14 +32,14 @@ To have a quick glance on how to group row and column field items in the Vue Piv
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/group_data-cs1/app-composition.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/group_data-cs1/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/group_data-cs1/app.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/group_data-cs1/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/pivot-grid/group_data-cs1" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/group_data-cs1" %}
 
 ## Number Grouping
 
@@ -47,14 +47,14 @@ Number grouping allows users to organize numerical data into different ranges, s
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/group_data-cs2/app-composition.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/group_data-cs2/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/group_data-cs2/app.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/group_data-cs2/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/pivot-grid/group_data-cs2" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/group_data-cs2" %}
 
 ![Context-menu options for number grouping](images/number-group-option.png)
 
@@ -87,14 +87,14 @@ You can configure number grouping through code-behind using the [`groupSettings`
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/group_data-cs3/app-composition.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/group_data-cs3/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/group_data-cs3/app.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/group_data-cs3/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/pivot-grid/group_data-cs3" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/group_data-cs3" %}
 
 ![Applied grouping settings updated in Pivot Table for number grouping](images/number-group-updated.png)
 
@@ -110,14 +110,14 @@ Date grouping organizes date and time data into hierarchical segments, such as y
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/group_data-cs4/app-composition.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/group_data-cs4/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/group_data-cs4/app.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/group_data-cs4/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/pivot-grid/group_data-cs4" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/group_data-cs4" %}
 
 ![Context-menu options for date grouping](images/date-group-option.jpeg)
 
@@ -155,14 +155,14 @@ You can configure date grouping programmatically using the [`groupSettings`](htt
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/group_data-cs5/app-composition.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/group_data-cs5/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/group_data-cs5/app.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/group_data-cs5/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/pivot-grid/group_data-cs5" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/group_data-cs5" %}
 
 Furthermore, in the field list UI, these date group fields **Years (Date)**, **Quarters (Date)**, **Months (Date)**, etc... will be automatically grouped and displayed under the **Date** folder name.
 
@@ -180,14 +180,14 @@ Custom grouping is an option that enables users to group data types (date, time,
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/group_data-cs6/app-composition.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/group_data-cs6/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/group_data-cs6/app.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/group_data-cs6/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/pivot-grid/group_data-cs6" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/group_data-cs6" %}
 
 ### Creating a Custom Group
 
@@ -241,14 +241,14 @@ Here’s an example of configuring custom grouping programmatically:
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/group_data-cs7/app-composition.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/group_data-cs7/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/group_data-cs7/app.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/group_data-cs7/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/pivot-grid/group_data-cs7" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/group_data-cs7" %}
 
 ![Applied grouping settings updated in Pivot Table for custom grouping](images/custom-group-updated.png)
 

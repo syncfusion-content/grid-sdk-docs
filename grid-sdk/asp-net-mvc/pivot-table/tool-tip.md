@@ -17,10 +17,10 @@ The tooltip displays contextual information when users hover over value cells in
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/pivot-tooltip/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/pivot-tooltip/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="ToolTip.cs" %}
-{% include code-snippet/pivot-table/pivot-tooltip/ToolTip.cs %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/pivot-tooltip/ToolTip.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -28,10 +28,10 @@ The tooltip displays contextual information when users hover over value cells in
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/pivot-tooltip/razor %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/pivot-tooltip/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="ToolTip.cs" %}
-{% include code-snippet/pivot-table/pivot-tooltip/ToolTip.cs %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/pivot-tooltip/ToolTip.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -56,10 +56,10 @@ The example below shows how to define the Pivot Table tooltip template in `index
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/tooltip-template/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/tooltip-template/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Tooltip-template.cs" %}
-{% include code-snippet/pivot-table/tooltip-template/tooltip-template.cs %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/tooltip-template/tooltip-template.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -67,10 +67,10 @@ The example below shows how to define the Pivot Table tooltip template in `index
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/tooltip-template/razor %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/tooltip-template/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Tooltip-template.cs" %}
-{% include code-snippet/pivot-table/tooltip-template/tooltip-template.cs %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/tooltip-template/tooltip-template.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

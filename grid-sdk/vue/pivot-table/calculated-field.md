@@ -34,14 +34,14 @@ To use the calculated field feature, you must inject the `CalculatedField` modul
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/default-cs9/app-composition.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/default-cs9/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/default-cs9/app.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/default-cs9/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/pivot-grid/default-cs9" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/default-cs9" %}
 
 ## Opening the calculated field dialog programmatically
 
@@ -49,14 +49,14 @@ You can display the calculated field dialog by calling the [`createCalculatedFie
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/default-cs10/app-composition.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/default-cs10/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/default-cs10/app.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/default-cs10/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/pivot-grid/default-cs10" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/default-cs10" %}
 
 ## Editing through the field list and grouping bar
 
@@ -282,14 +282,14 @@ Below is a list of operators and functions that can be used in the formula to cr
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/default-cs11/app-composition.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/default-cs11/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/default-cs11/app.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/default-cs11/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/pivot-grid/default-cs11" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/default-cs11" %}
 
 ## Event
 
@@ -317,14 +317,14 @@ The following example shows how to prevent users from creating calculated fields
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/default-cs12/app-composition.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/default-cs12/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/default-cs12/app.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/default-cs12/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/pivot-grid/default-cs12" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/default-cs12" %}
 
 ### ActionBegin
 
@@ -361,14 +361,14 @@ The example below illustrates how to prevent access to the calculated field dial
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/default-cs13/app-composition.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/default-cs13/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/default-cs13/app.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/default-cs13/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/pivot-grid/default-cs13" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/default-cs13" %}
 
 ### ActionComplete
 
@@ -399,14 +399,14 @@ The example below demonstrates how to use the [`actionComplete`](https://ej2.syn
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/default-cs14/app-composition.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/default-cs14/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/default-cs14/app.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/default-cs14/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/pivot-grid/default-cs14" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/default-cs14" %}
 
 ### ActionFailure
 
@@ -424,11 +424,11 @@ The [`actionFailure`](https://ej2.syncfusion.com/vue/documentation/api/pivotview
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/default-cs15/app-composition.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/default-cs15/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/default-cs15/app.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/default-cs15/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/pivot-grid/default-cs15" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/default-cs15" %}

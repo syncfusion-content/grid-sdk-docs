@@ -32,27 +32,27 @@ The following example shows how to apply styles to:
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/pivot-table/pivot-table-cs492/index.ts %}
+{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs492/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/pivot-table/pivot-table-cs492/index.html %}
+{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs492/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs492" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs492" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/pivot-table/pivot-table-cs492/index.js %}
+{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs492/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/pivot-table/pivot-table-cs492/index.html %}
+{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs492/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs492" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs492" %}
 {% endif %}
 
 N> The **dot(.)** character in **FY 2016.Sold Amount** is used by default to identify the header levels in the pivot table's row and column. It can be changed by setting the [`headerDelimiter`](https://helpej2.syncfusion.com/documentation/api/pivotview/valueSortSettingsModel#headerdelimiter) in the [`valueSortSettings`](https://helpej2.syncfusion.com/documentation/api/pivotview/dataSourceSettings#valuesortsettings) property to any other delimiter instead of the default separator.

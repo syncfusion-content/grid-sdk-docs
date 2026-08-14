@@ -22,14 +22,14 @@ To learn how to work with conditional formatting options, you can check out this
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/pivot_data-cs1/app-composition.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/pivot_data-cs1/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/pivot_data-cs1/app.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/pivot_data-cs1/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/pivot-grid/pivot_data-cs1" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/pivot_data-cs1" %}
 
 ## Configure conditional formatting through code-behind
 
@@ -55,14 +55,14 @@ Users can also access the conditional formatting dialog through external UI elem
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/pivot_data-cs2/app-composition.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/pivot_data-cs2/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/pivot_data-cs2/app.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/pivot_data-cs2/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/pivot-grid/pivot_data-cs2" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/pivot_data-cs2" %}
 
 ## Conditional formatting for all fields
 
@@ -72,14 +72,14 @@ To format all value fields together, use the [conditionalFormatSettings](https:/
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/pivot_data-cs3/app-composition.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/pivot_data-cs3/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/pivot_data-cs3/app.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/pivot_data-cs3/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/pivot-grid/pivot_data-cs3" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/pivot_data-cs3" %}
 
 ## Conditional formatting for specific value field
 
@@ -87,14 +87,14 @@ To apply conditional formatting exclusively to a particular value field, set the
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/pivot_data-cs4/app-composition.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/pivot_data-cs4/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/pivot_data-cs4/app.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/pivot_data-cs4/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/pivot-grid/pivot_data-cs4" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/pivot_data-cs4" %}
 
 ## Editing and removing existing conditional format
 
@@ -118,14 +118,14 @@ The [conditionalFormatting](https://ej2.syncfusion.com/vue/documentation/api/piv
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/pivot_data-cs5/app-composition.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/pivot_data-cs5/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/pivot_data-cs5/app.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/pivot_data-cs5/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/pivot-grid/pivot_data-cs5" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/pivot_data-cs5" %}
 
 ## See Also
 

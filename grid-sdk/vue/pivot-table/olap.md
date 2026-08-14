@@ -198,14 +198,14 @@ In this sample, "Product Categories" is added in column, "Customer Geography" in
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/common-cs13/app-composition.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/common-cs13/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/common-cs13/app.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/common-cs13/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/pivot-grid/common-cs13" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/common-cs13" %}
 
 ### Applying formatting to measures
 
@@ -217,14 +217,14 @@ In the following example, the [`formatSettings`](https://ej2.syncfusion.com/vue/
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/common-cs14/app-composition.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/common-cs14/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/common-cs14/app.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/common-cs14/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/pivot-grid/common-cs14" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/common-cs14" %}
 
 ### Enable grouping bar
 
@@ -234,14 +234,14 @@ The Grouping Bar feature automatically populates [OLAP cube elements](#olap-cube
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/common-cs15/app-composition.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/common-cs15/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/common-cs15/app.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/common-cs15/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/pivot-grid/common-cs15" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/common-cs15" %}
 
 ### Enable pivot field list
 
@@ -253,14 +253,14 @@ To display the Field List, set the [`showFieldList`](https://ej2.syncfusion.com/
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/common-cs16/app-composition.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/common-cs16/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/common-cs16/app.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/common-cs16/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/pivot-grid/common-cs16" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/common-cs16" %}
 
 ### Exploring filter axis
 
@@ -270,14 +270,14 @@ Users can add [OLAP cube elements](#olap-cube-elements) and filter members to th
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/common-cs17/app-composition.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/common-cs17/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/common-cs17/app.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/common-cs17/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/pivot-grid/common-cs17" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/common-cs17" %}
 
 ### Calculated field
 
@@ -302,14 +302,14 @@ Also calculated fields can be added at run time through the built-in dialog. The
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/common-cs18/app-composition.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/common-cs18/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/common-cs18/app.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/common-cs18/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/pivot-grid/common-cs18" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/common-cs18" %}
 
 Users can add a calculated field at runtime using the built-in dialog by following these steps:
 
@@ -434,14 +434,14 @@ To enable virtual scrolling, set the [`enableVirtualization`](https://ej2.syncfu
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/common-cs19/app-composition.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/common-cs19/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/common-cs19/app.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/common-cs19/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/pivot-grid/common-cs19" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/common-cs19" %}
 
 #### Limitations for virtual scrolling
 
@@ -462,14 +462,14 @@ Output will be displayed as follows.
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/common-cs20/app-composition.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/common-cs20/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/common-cs20/app.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/common-cs20/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/pivot-grid/common-cs20" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/common-cs20" %}
 
 ## Data Binding
 
@@ -484,14 +484,14 @@ To bind OLAP datasource to the pivot table, you need to specify following proper
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/common-cs21/app-composition.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/common-cs21/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/common-cs21/app.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/common-cs21/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/pivot-grid/common-cs21" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/common-cs21" %}
 
 ### Fields
 
@@ -503,14 +503,14 @@ Alternatively, you can set up the measure directly in your code by configuring t
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/common-cs22/app-composition.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/common-cs22/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/common-cs22/app.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/common-cs22/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/pivot-grid/common-cs22" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/common-cs22" %}
 
 #### Measures in different position
 
@@ -518,14 +518,14 @@ You can choose where to place measures on either the row or column axis through 
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/common-cs23/app-composition.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/common-cs23/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/common-cs23/app.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/common-cs23/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/pivot-grid/common-cs23" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/common-cs23" %}
 
 ### Named set
 
@@ -535,14 +535,14 @@ To display a named set in the Pivot Table, set its unique name using the [`name`
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/common-cs24/app-composition.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/common-cs24/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/common-cs24/app.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/common-cs24/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/pivot-grid/common-cs24" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/common-cs24" %}
 
 ### Configuring authentication
 
@@ -760,14 +760,14 @@ When the [`beforeServiceInvoke`](https://ej2.syncfusion.com/vue/documentation/ap
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/olap-beforeServiceInvoke/app-composition.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/olap-beforeServiceInvoke/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/olap-beforeServiceInvoke/app.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/olap-beforeServiceInvoke/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/pivot-grid/olap-beforeServiceInvoke" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/olap-beforeServiceInvoke" %}
 
 ### AfterServiceInvoke
 
@@ -781,11 +781,11 @@ When the [`afterServiceInvoke`](https://ej2.syncfusion.com/vue/documentation/api
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/olap-afterServiceInvoke/app-composition.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/olap-afterServiceInvoke/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/olap-afterServiceInvoke/app.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/olap-afterServiceInvoke/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/pivot-grid/olap-afterServiceInvoke" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/olap-afterServiceInvoke" %}

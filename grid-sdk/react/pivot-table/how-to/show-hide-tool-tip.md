@@ -18,11 +18,11 @@ The following example demonstrates how to configure the Pivot Table to hide the 
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/pivot-table/default-cs169/app/App.jsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/default-cs169/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/pivot-table/default-cs169/app/App.tsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/default-cs169/app/App.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs169" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs169" %}

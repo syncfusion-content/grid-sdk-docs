@@ -69,10 +69,10 @@ In the following example, the **complexToFlatJson()** method is used to convert 
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/complex-to-flat-json/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/complex-to-flat-json/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="ComplexToFlatJson.cs" %}
-{% include code-snippet/pivot-table/complex-to-flat-json/ComplexToFlatJson.cs %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/complex-to-flat-json/ComplexToFlatJson.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -80,10 +80,10 @@ In the following example, the **complexToFlatJson()** method is used to convert 
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/complex-to-flat-json/razor %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/complex-to-flat-json/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="ComplexToFlatJson.cs" %}
-{% include code-snippet/pivot-table/complex-to-flat-json/ComplexToFlatJson.cs %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/complex-to-flat-json/ComplexToFlatJson.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

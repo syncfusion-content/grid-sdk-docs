@@ -18,17 +18,17 @@ For example, when the raw data contains **"United Kingdom"** for the 'Country' f
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/pivot-table/default-cs165/app/App.jsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/default-cs165/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/pivot-table/default-cs165/app/App.tsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/default-cs165/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/pivot-table/default-cs165/app/datasource.jsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/default-cs165/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/pivot-table/default-cs165/app/datasource.tsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/default-cs165/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs165" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs165" %}

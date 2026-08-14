@@ -18,25 +18,25 @@ By default, the Pivot Table displays with the report configuration defined in th
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/pivot-table/pivot-table-cs500/index.ts %}
+{% include code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs500/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/pivot-table/pivot-table-cs500/index.html %}
+{% include code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs500/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs500" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs500" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/pivot-table/pivot-table-cs500/index.js %}
+{% include code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs500/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/pivot-table/pivot-table-cs500/index.html %}
+{% include code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs500/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs500" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs500" %}
 {% endif %}

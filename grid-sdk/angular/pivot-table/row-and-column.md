@@ -32,15 +32,15 @@ These dimension properties support multiple formats to accommodate various layou
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs250/src/app.component.ts %}
+{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs250/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs250/src/main.ts %}
+{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs250/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs250" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs250" %}
 
 ## Row Height
 
@@ -52,15 +52,15 @@ For example, in the sample code below, the [`rowHeight`](https://ej2.syncfusion.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs251/src/app.component.ts %}
+{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs251/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs251/src/main.ts %}
+{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs251/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs251" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs251" %}
 
 ## Column Width
 
@@ -72,15 +72,15 @@ In the following example, the [`columnWidth`](https://ej2.syncfusion.com/angular
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs252/src/app.component.ts %}
+{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs252/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs252/src/main.ts %}
+{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs252/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs252" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs252" %}
 
 ### Adjust width based on columns
 
@@ -88,15 +88,15 @@ By default, when the component width exceeds the total width of all columns, the
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs253/src/app.component.ts %}
+{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs253/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs253/src/main.ts %}
+{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs253/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs253" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs253" %}
 
 ## Reorder
 
@@ -106,15 +106,15 @@ To enable this option, set the [`allowReordering`](https://ej2.syncfusion.com/an
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs254/src/app.component.ts %}
+{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs254/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs254/src/main.ts %}
+{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs254/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs254" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs254" %}
 
 ## Column Resizing
 
@@ -126,15 +126,15 @@ This option is enabled by default. To control column resizing, set the [`allowRe
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs255/src/app.component.ts %}
+{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs255/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs255/src/main.ts %}
+{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs255/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs255" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs255" %}
 
 ## Text Wrap
 
@@ -142,15 +142,15 @@ The Pivot Table allows users to wrap cell content to the next line when the cont
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs256/src/app.component.ts %}
+{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs256/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs256/src/main.ts %}
+{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs256/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs256" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs256" %}
 
 ## Text Align
 
@@ -163,15 +163,15 @@ Text alignment provides flexibility in positioning content within cells, making 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs257/src/app.component.ts %}
+{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs257/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs257/src/main.ts %}
+{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs257/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs257" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs257" %}
 
 ## AutoFit
 
@@ -179,29 +179,29 @@ The AutoFit option allows users to easily adjust Pivot Table columns so that eac
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs258/src/app.component.ts %}
+{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs258/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs258/src/main.ts %}
+{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs258/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs258" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs258" %}
 
 > When the grouping bar is enabled, the first column in the Pivot Table has a minimum width of **250** pixels, which cannot be decreased. In such cases, if you want to auto fit the remaining columns, you can call the [`autoFitColumns`](https://ej2.syncfusion.com/angular/documentation/api/grid/#autofitcolumns) method from the grid instance, passing the field names of the Pivot Table columns except the first column.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs259/src/app.component.ts %}
+{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs259/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs259/src/main.ts %}
+{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs259/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs259" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs259" %}
 
 ### Autofit Specific Columns
 
@@ -211,15 +211,15 @@ To implement this functionality during the initial rendering of the Pivot Table,
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs260/src/app.component.ts %}
+{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs260/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs260/src/main.ts %}
+{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs260/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs260" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs260" %}
 
 ## Grid Lines
 
@@ -239,15 +239,15 @@ The following grid line modes are available:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs261/src/app.component.ts %}
+{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs261/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs261/src/main.ts %}
+{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs261/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs261" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs261" %}
 
 ## Selection
 
@@ -262,15 +262,15 @@ The Pivot Table provides two selection modes, controlled by the [`type`](https:/
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs262/src/app.component.ts %}
+{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs262/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs262/src/main.ts %}
+{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs262/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs262" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs262" %}
 
 ### Selection mode
 
@@ -285,15 +285,15 @@ By choosing the right selection mode, users can quickly highlight and review the
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs263/src/app.component.ts %}
+{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs263/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs263/src/main.ts %}
+{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs263/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs263" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs263" %}
 
 ### Cell Selection Mode
 
@@ -304,15 +304,15 @@ To set the cell selection mode, use the [`cellSelectionMode`](https://ej2.syncfu
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs264/src/app.component.ts %}
+{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs264/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs264/src/main.ts %}
+{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs264/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs264" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs264" %}
 
 > To use cell selection modes, ensure that the [`mode`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/pivotSelectionSettings/#mode) property in [`selectionSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/pivotSelectionSettings/) is set to **Cell** or **Both** and the [`type`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/pivotSelectionSettings/#type) property is set to **Multiple**. This allows users to select more than one cell at a time for better comparison and review.
 
@@ -324,19 +324,19 @@ In the example below, selected cells appear with a **green-yellow** background. 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/background-css-cs1/src/app.component.ts %}
+{% include code-snippet/grid-sdk/angular/pivot-table/background-css-cs1/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight css tabtitle="app.component.css" %}
-{% include code-snippet/pivot-grid/background-css-cs1/src/app.component.css %}
+{% include code-snippet/grid-sdk/angular/pivot-table/background-css-cs1/src/app.component.css %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/background-css-cs1/src/main.ts %}
+{% include code-snippet/grid-sdk/angular/pivot-table/background-css-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/samples/pivot-grid/background-css-cs1" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/background-css-cs1" %}
 
 ### Event
 
@@ -346,15 +346,15 @@ When a user finishes selecting cells, the [`cellSelected`](https://ej2.syncfusio
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs265/src/app.component.ts %}
+{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs265/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs265/src/main.ts %}
+{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs265/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs265" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs265" %}
 
 #### CellSelecting
 
@@ -368,15 +368,15 @@ You can use these parameters to decide whether or not the cell should be selecte
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs266/src/app.component.ts %} 
+{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs266/src/app.component.ts %} 
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs266/src/main.ts %}
+{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs266/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs266" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs266" %}
 
 ## Clip Mode
 
@@ -390,15 +390,15 @@ The clip mode option in the Pivot Table determines how cell content is displayed
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs267/src/app.component.ts %}
+{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs267/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs267/src/main.ts %}
+{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs267/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs267" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs267" %}
 
 ## Cell Template
 
@@ -408,15 +408,15 @@ For example, in the following sample, each year's revenue cost is shown along wi
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs268/src/app.component.ts %}
+{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs268/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs268/src/main.ts %}
+{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs268/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs268" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs268" %}
 
 ## Events
 
@@ -437,15 +437,15 @@ By using these parameters in the event, users can highlight cells, format values
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs269/src/app.component.ts %}
+{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs269/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs269/src/main.ts %}
+{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs269/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs269" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs269" %}
 
 ### HeaderCellInfo
 
@@ -458,15 +458,15 @@ By using these parameters, users can update header cell styles, add tooltips, or
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs270/src/app.component.ts %}
+{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs270/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs270/src/main.ts %}
+{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs270/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs270" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs270" %}
 
 ### ColumnRender
 
@@ -480,15 +480,15 @@ The event provides the following parameters:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs271/src/app.component.ts %}
+{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs271/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs271/src/main.ts %}
+{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs271/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs271" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs271" %}
 
 ### CellClick
 
@@ -499,12 +499,12 @@ The [`cellClick`](https://ej2.syncfusion.com/angular/documentation/api/pivotview
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs272/src/app.component.ts %}
+{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs272/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs272/src/main.ts %}
+{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs272/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs272" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs272" %}

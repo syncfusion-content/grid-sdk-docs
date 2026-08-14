@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Toolbar in React Pivot Table
 
-The toolbar in the React Pivot Table component provides easy access to commonly used features, such as switching between a pivot table and a pivot chart, changing chart types, applying conditional formatting, exporting data, and more. To enable the toolbar, set the [`showToolbar`](https://ej2.syncfusion.com/react/documentation/api/pivotview/index-default#showtoolbar) property to **true**. Additionally, the [`toolbar`](https://ej2.syncfusion.com/react/documentation/api/pivotview/index-default#toolbar) property accepts a collection of built-in toolbar options, allowing users to interact with the Pivot Table efficiently at runtime.
+The toolbar in the React Pivot Table component provides easy access to commonly used features, such as switching between a pivot table and a pivot chart, changing chart types, applying conditional formatting, exporting data, and more. To enable the toolbar, set the [`showToolbar`](https://ej2.syncfusion.com/react/documentation/api/pivotview/index-default#showtoolbar) property to **true**. The [`toolbar`](https://ej2.syncfusion.com/react/documentation/api/pivotview/index-default#toolbar) property accepts a collection of built-in toolbar options, letting users perform common operations at runtime.
 
 > To use the toolbar, inject the `Toolbar` module into the Pivot Table.
 
@@ -34,26 +34,26 @@ The following table lists the built-in toolbar options and their actions:
 | Field List | Opens the field list pop-up to configure the [`dataSourceSettings`](https://ej2.syncfusion.com/react/documentation/api/pivotview/datasourcesettings) |
 | MDX | Displays the MDX query used to retrieve data from an OLAP data source. **Note**: This option applies only to OLAP data sources. |
 
-> The order of toolbar options can be changed by simply moving the position of items in the **ToolbarItems** collection. Also if end user wants to remove any toolbar option from getting displayed, it can be simply ignored from adding into the **ToolbarItems** collection.
+> The order of toolbar options can be changed by reordering items in the **ToolbarItems** collection. To remove a built-in option, simply omit it from the collection.
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/pivot-table/default-cs294/app/App.jsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/default-cs294/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/pivot-table/default-cs294/app/App.tsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/default-cs294/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/pivot-table/default-cs294/app/datasource.jsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/default-cs294/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/pivot-table/default-cs294/app/datasource.tsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/default-cs294/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs294" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs294" %}
 
-## Show desired chart types in the dropdown menu
+## Show specific chart types in the dropdown menu
 
 By default, the dropdown menu in the toolbar displays all available chart types. However, you may want to show only specific chart types in the dropdown menu based on your application’s needs. To do this, use the [`chartTypes`](https://ej2.syncfusion.com/react/documentation/api/pivotview/#charttypes) property. This property allows you to define a list of chart types that will appear in the dropdown menu, ensuring users see only the options you select.
 
@@ -63,20 +63,20 @@ To learn more about the supported chart types, see the [Pivot Chart documentatio
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/pivot-table/default-cs295/app/App.jsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/default-cs295/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/pivot-table/default-cs295/app/App.tsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/default-cs295/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/pivot-table/default-cs295/app/datasource.jsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/default-cs295/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/pivot-table/default-cs295/app/datasource.tsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/default-cs295/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs295" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs295" %}
 
 ## Switch the chart to multiple axes
 
@@ -94,70 +94,70 @@ In the pivot chart, you can show or hide the legend dynamically using an option 
 
 ![Chart legend](images/chart-legend.png)
 
-## Adding custom option to the toolbar
+## Adding a custom option to the toolbar
 
-You can add new items to the toolbar in the React Pivot Table component beyond the built-in options. This is done using the [`toolbarRender`](https://ej2.syncfusion.com/react/documentation/api/pivotview/#toolbarrender) event. Within this event, you can define the new toolbar item and specify what action it performs when clicked. Additionally, you can place the new item at a specific position in the toolbar using the `splice` method.
+You can add new items to the toolbar in the React Pivot Table component beyond the built-in options. This is done using the [`toolbarRender`](https://ej2.syncfusion.com/react/documentation/api/pivotview/#toolbarrender) event. Within this event, you can define the new toolbar item and specify what action it performs when clicked. The `customToolbar` parameter exposes the existing toolbar items; you can use the `splice` method to insert your custom item at a specific position.
 
 Here’s an example of how to add a custom toolbar item:
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/pivot-table/default-cs296/app/App.jsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/default-cs296/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/pivot-table/default-cs296/app/App.tsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/default-cs296/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/pivot-table/default-cs296/app/datasource.jsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/default-cs296/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/pivot-table/default-cs296/app/datasource.tsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/default-cs296/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs296" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs296" %}
 
-### Toolbar Template
+### Toolbar template
 
-You can customize the entire toolbar panel by using the [`toolbarTemplate`](https://ej2.syncfusion.com/react/documentation/api/pivotview/#toolbartemplate) property. This allows you to design the toolbar with HTML elements and include any custom control, such as buttons or dropdowns, as toolbar items. The HTML structure for the toolbar is defined separately and linked to the Pivot Table by setting the `id` of the HTML element in the [`toolbarTemplate`](https://ej2.syncfusion.com/react/documentation/api/pivotview/#toolbartemplate) property.
+You can customize the entire toolbar panel by using the [`toolbarTemplate`](https://ej2.syncfusion.com/react/documentation/api/pivotview/#toolbartemplate) property. This allows you to design the toolbar with HTML elements and include any custom control, such as buttons or dropdowns, as toolbar items. The HTML structure for the toolbar is defined separately and linked to the Pivot Table by setting the `id` of the HTML element in the [`toolbarTemplate`](https://ej2.syncfusion.com/react/documentation/api/pivotview/#toolbartemplate) property. The `toolbarClick` event fires when any toolbar item (built-in or custom) is clicked, and `args.item.id` identifies the source element so you can dispatch actions accordingly.
 
 Below is an example of a custom toolbar with buttons to expand or collapse all rows in the Pivot Table:
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/pivot-table/default-cs297/app/App.jsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/default-cs297/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/pivot-table/default-cs297/app/App.tsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/default-cs297/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/pivot-table/default-cs297/app/datasource.jsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/default-cs297/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/pivot-table/default-cs297/app/datasource.tsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/default-cs297/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs297" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs297" %}
 
 Another option allows framing a custom toolbar item using HTML elements and including it in the toolbar panel at the desired position. Custom toolbar items can be declared as a control **instance** or element **ID** in the [`toolbar`](https://ej2.syncfusion.com/react/documentation/api/pivotview/index-default#toolbar) property in the pivot table.
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/pivot-table/default-cs298/app/App.jsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/default-cs298/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/pivot-table/default-cs298/app/App.tsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/default-cs298/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/pivot-table/default-cs298/app/datasource.jsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/default-cs298/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/pivot-table/default-cs298/app/datasource.tsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/default-cs298/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs298" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs298" %}
 
 > Note: For both options, the actions for the toolbar template items can be defined in the [`toolbarClick`](https://ej2.syncfusion.com/react/documentation/api/pivotview/#toolbarclick) event. Additionally, if the toolbar item is a custom control, its built-in events can also be accessed.
 
@@ -171,20 +171,20 @@ The following code example shows how to save and load a Pivot Table report as a 
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/pivot-table/default-cs299/app/App.jsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/default-cs299/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/pivot-table/default-cs299/app/App.tsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/default-cs299/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/pivot-table/default-cs299/app/datasource.jsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/default-cs299/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/pivot-table/default-cs299/app/datasource.tsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/default-cs299/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs299" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs299" %}
 
 ## Save and load reports to a SQL database
 
@@ -200,9 +200,21 @@ SQL Server is a relational database management system (RDBMS) that can be used t
 
 ![Add the NuGet package Microsoft.Data.SqlClient to the project](images/ms-data-sqlclient-nuget-package-install.png)
 
-**3.** Under the **Controllers** folder, create a Web API controller (aka, PivotController.cs) file that aids in data communication with the Pivot Table.
+**3.** Create the table that will hold the saved reports. The PivotController code below uses a table named `ReportTable` with two columns: `ReportName` (the report's display name) and `Report` (the JSON-encoded report body). Run the following script in your SQL Server database before starting the Web API:
 
-**4.** In the Web API Controller (aka, PivotController), the **OpenConnection** method is used to connect to the SQL database. The **GetDataTable** method then processes the specified SQL query string, retrieves data from the database, and converts it into a **DataTable** using **SqlCommand** and **SqlDataAdapter**. This **DataTable** can be used to retrieve saved reports and modify them further as shown in the code block below.
+```sql
+CREATE TABLE ReportTable (
+    Id INT IDENTITY(1, 1) PRIMARY KEY,
+    ReportName NVARCHAR(255) NOT NULL UNIQUE,
+    Report NVARCHAR(MAX) NOT NULL
+);
+```
+
+**4.** Under the **Controllers** folder, create a Web API controller (aka, PivotController.cs) file that aids in data communication with the Pivot Table.
+
+**5.** In the Web API Controller (aka, PivotController), the **OpenConnection** method is used to connect to the SQL database. The **GetDataTable** method then processes the specified SQL query string, retrieves data from the database, and converts it into a **DataTable** using **SqlCommand** and **SqlDataAdapter**. This **DataTable** can be used to retrieve saved reports and modify them further as shown in the code block below.
+
+> **CORS:** The React app runs on a different origin (e.g., `http://localhost:3000`) than the Web API (`https://localhost:44313`). Enable CORS in `Program.cs` by calling `builder.Services.AddCors(...)` and `app.UseCors(...)` and allowing the React origin.
 
 [PivotController.cs]
 
@@ -380,7 +392,7 @@ namespace MyWebService.Controllers
 }
 ```
 
-**5.** When you run the app, it will be hosted at `https://localhost:44313`. You can use the hosted URL to save and load reports in the SQL database from the Pivot Table.
+**6.** When you run the app, it will be hosted at `https://localhost:44313`. You can use the hosted URL to save and load reports in the SQL database from the Pivot Table.
 
 Further, let us explore more on how to save, load, rename, delete, and add reports using the built-in toolbar options via Web API controller (aka, PivotController) one-by-one.
 
@@ -890,9 +902,9 @@ When you select the **"Create a new report"** option from the toolbar, the [newR
 
 ![Adding a report in the SQL database](images/output_new_report.png)
 
-### Limitations with respect to report manipulation
+### Report manipulation limitations
 
-Below points need to be considered when saving the report to SQL Server database.
+The following points apply when saving reports to a SQL Server database:
 
 * **Data source**: Both raw data and aggregated data won't be saved and loaded from the database.
 * **Hyperlinks**: Option to link external facts via pivot table cells won't be saved and loaded from the database.
@@ -932,20 +944,20 @@ The [`toolbarRender`](https://ej2.syncfusion.com/react/documentation/api/pivotvi
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/pivot-table/default-cs300/app/App.jsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/default-cs300/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/pivot-table/default-cs300/app/App.tsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/default-cs300/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/pivot-table/default-cs300/app/datasource.jsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/default-cs300/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/pivot-table/default-cs300/app/datasource.tsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/default-cs300/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs300" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs300" %}
 
 ### BeforeExport
 
@@ -955,20 +967,20 @@ Here’s an example of how to use the `beforeExport` event to customize headers 
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/pivot-table/default-cs301/app/App.jsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/default-cs301/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/pivot-table/default-cs301/app/App.tsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/default-cs301/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/pivot-table/default-cs301/app/datasource.jsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/default-cs301/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/pivot-table/default-cs301/app/datasource.tsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/default-cs301/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs301" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs301" %}
 
 ### ActionBegin
 
@@ -1000,20 +1012,20 @@ In the example below, the [`actionBegin`](https://ej2.syncfusion.com/react/docum
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/pivot-table/default-cs302/app/App.jsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/default-cs302/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/pivot-table/default-cs302/app/App.tsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/default-cs302/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/pivot-table/default-cs302/app/datasource.jsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/default-cs302/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/pivot-table/default-cs302/app/datasource.tsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/default-cs302/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs302" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs302" %}
 
 ### ActionComplete
 
@@ -1042,20 +1054,20 @@ The [`actionComplete`](https://ej2.syncfusion.com/react/documentation/api/pivotv
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/pivot-table/default-cs303/app/App.jsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/default-cs303/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/pivot-table/default-cs303/app/App.tsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/default-cs303/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/pivot-table/default-cs303/app/datasource.jsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/default-cs303/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/pivot-table/default-cs303/app/datasource.tsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/default-cs303/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs303" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs303" %}
 
 ### ActionFailure
 
@@ -1084,22 +1096,23 @@ The [`actionFailure`](https://ej2.syncfusion.com/react/documentation/api/pivotvi
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/pivot-table/default-cs304/app/App.jsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/default-cs304/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/pivot-table/default-cs304/app/App.tsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/default-cs304/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/pivot-table/default-cs304/app/datasource.jsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/default-cs304/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/pivot-table/default-cs304/app/datasource.tsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/default-cs304/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs304" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs304" %}
 
 ## See Also
 
 * [Toolbar Component](https://ej2.syncfusion.com/react/documentation/toolbar/getting-started)
+* [Save and Load](./save-and-load)
 * [How to programmatically save and load a React Pivot Table report using external buttons?](https://support.syncfusion.com/kb/article/15829/how-to-programmatically-save-and-load-a-react-pivot-table-report-using-external-buttons)

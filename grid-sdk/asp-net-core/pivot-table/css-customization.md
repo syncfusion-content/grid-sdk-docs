@@ -23,10 +23,10 @@ The following code example demonstrates how to hide the column axis in both the 
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/css-axis/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/css-axis/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Axis.cs" %}
-{% include code-snippet/pivot-table/css-axis/axis.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/css-axis/axis.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -34,10 +34,10 @@ The following code example demonstrates how to hide the column axis in both the 
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/css-axis/razor %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/css-axis/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Axis.cs" %}
-{% include code-snippet/pivot-table/css-axis/axis.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/css-axis/axis.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -58,10 +58,10 @@ The alignment of text inside row headers, column headers, value cells, and summa
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/css-align/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/css-align/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Text-align.cs" %}
-{% include code-snippet/pivot-table/css-align/text-align.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/css-align/text-align.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -69,10 +69,10 @@ The alignment of text inside row headers, column headers, value cells, and summa
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/css-align/razor %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/css-align/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Text-align.cs" %}
-{% include code-snippet/pivot-table/css-align/text-align.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/css-align/text-align.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -87,10 +87,10 @@ The following code sample demonstrates how to apply custom background colors to 
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/css-pivot/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/css-pivot/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Axis.cs" %}
-{% include code-snippet/pivot-table/css-pivot/axis.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/css-pivot/axis.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -98,10 +98,10 @@ The following code sample demonstrates how to apply custom background colors to 
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/css-pivot/razor %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/css-pivot/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Axis.cs" %}
-{% include code-snippet/pivot-table/css-pivot/axis.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/css-pivot/axis.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

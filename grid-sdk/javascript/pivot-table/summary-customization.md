@@ -19,14 +19,14 @@ Allows to show or hide grand totals in rows and columns using the [`showGrandTot
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/pivot-table/pivot-table-cs253/index.js %}
+{% include code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs253/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/pivot-table/pivot-table-cs253/index.html %}
+{% include code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs253/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs253" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs253" %}
 
 ## Show or hide sub-totals
 
@@ -36,14 +36,14 @@ Allows to show or hide sub-totals in rows and columns using the [`showSubTotals`
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/pivot-table/pivot-table-cs255/index.js %}
+{% include code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs255/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/pivot-table/pivot-table-cs255/index.html %}
+{% include code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs255/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs255" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs255" %}
 
 ## Show/hide sub-totals for specific fields
 
@@ -53,14 +53,14 @@ Allows to show or hide sub-totals for specific fields in rows and columns using 
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/pivot-table/pivot-table-cs256/index.js %}
+{% include code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs256/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/pivot-table/pivot-table-cs256/index.html %}
+{% include code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs256/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs256" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs256" %}
 
 ## Show sub-totals at top or bottom
 
@@ -70,27 +70,27 @@ To show sub-totals at top of the header group in rows and columns, set the [`sub
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/pivot-table/pivot-table-cs257/index.js %}
+{% include code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs257/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/pivot-table/pivot-table-cs257/index.html %}
+{% include code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs257/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs257" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs257" %}
 
 To show sub-totals at bottom of the header group in rows and columns, set the [`subTotalsPosition`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/dataSourceSettings#subtotalsposition) property in [`dataSourceSettings`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/dataSourceSettings) to **Bottom**.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/pivot-table/pivot-table-cs258/index.js %}
+{% include code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs258/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/pivot-table/pivot-table-cs258/index.html %}
+{% include code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs258/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs258" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs258" %}
 
 ## Show or hide totals using toolbar
 
@@ -100,11 +100,11 @@ The grand totals and sub-totals can be dynamically displayed at the top or botto
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/pivot-table/pivot-table-cs259/index.js %}
+{% include code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs259/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/pivot-table/pivot-table-cs259/index.html %}
+{% include code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs259/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs259" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs259" %}

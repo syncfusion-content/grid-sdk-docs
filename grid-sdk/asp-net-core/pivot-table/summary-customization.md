@@ -20,10 +20,10 @@ Allows to show or hide grand totals in rows and columns using the [`showGrandTot
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/summary-customization/grand-total/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/summary-customization/grand-total/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="GrandTotal.cs" %}
-{% include code-snippet/pivot-table/summary-customization/grand-total/GrandTotal.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/summary-customization/grand-total/GrandTotal.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -31,10 +31,10 @@ Allows to show or hide grand totals in rows and columns using the [`showGrandTot
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/summary-customization/grand-total/razor %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/summary-customization/grand-total/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="GrandTotal.cs" %}
-{% include code-snippet/pivot-table/summary-customization/grand-total/GrandTotal.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/summary-customization/grand-total/GrandTotal.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -49,10 +49,10 @@ Allows to show grand totals either at top or bottom in rows and columns using th
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/summary-customization/grand-total-top/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/summary-customization/grand-total-top/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="GrandTotal.cs" %}
-{% include code-snippet/pivot-table/summary-customization/grand-total-top/GrandTotalTop.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/summary-customization/grand-total-top/GrandTotalTop.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -60,10 +60,10 @@ Allows to show grand totals either at top or bottom in rows and columns using th
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/summary-customization/grand-total-top/razor %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/summary-customization/grand-total-top/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="GrandTotal.cs" %}
-{% include code-snippet/pivot-table/summary-customization/grand-total-top/GrandTotalTop.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/summary-customization/grand-total-top/GrandTotalTop.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -79,10 +79,10 @@ Allows to show or hide sub-totals in rows and columns using the [`showSubTotals`
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/summary-customization/sub-total/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/summary-customization/sub-total/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="SubTotal.cs" %}
-{% include code-snippet/pivot-table/summary-customization/sub-total/SubTotal.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/summary-customization/sub-total/SubTotal.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -90,10 +90,10 @@ Allows to show or hide sub-totals in rows and columns using the [`showSubTotals`
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/summary-customization/sub-total/razor %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/summary-customization/sub-total/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="SubTotal.cs" %}
-{% include code-snippet/pivot-table/summary-customization/sub-total/SubTotal.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/summary-customization/sub-total/SubTotal.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -110,10 +110,10 @@ Allows to show or hide sub-totals for specific fields in rows and columns using 
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/summary-customization/sub-total-specific/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/summary-customization/sub-total-specific/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="SubTotalSpecific.cs" %}
-{% include code-snippet/pivot-table/summary-customization/sub-total-specific/SubTotalSpecific.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/summary-customization/sub-total-specific/SubTotalSpecific.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -121,10 +121,10 @@ Allows to show or hide sub-totals for specific fields in rows and columns using 
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/summary-customization/sub-total-specific/razor %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/summary-customization/sub-total-specific/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="SubTotalSpecific.cs" %}
-{% include code-snippet/pivot-table/summary-customization/sub-total-specific/SubTotalSpecific.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/summary-customization/sub-total-specific/SubTotalSpecific.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -141,10 +141,10 @@ To show sub-totals at top of the header group in rows and columns, set the [`sub
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/summary-customization/subtotal-top/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/summary-customization/subtotal-top/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="GrandTotal.cs" %}
-{% include code-snippet/pivot-table/summary-customization/subtotal-top/subtotal-top.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/summary-customization/subtotal-top/subtotal-top.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -152,10 +152,10 @@ To show sub-totals at top of the header group in rows and columns, set the [`sub
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/summary-customization/subtotal-top/razor %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/summary-customization/subtotal-top/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="GrandTotal.cs" %}
-{% include code-snippet/pivot-table/summary-customization/subtotal-top/subtotal-top.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/summary-customization/subtotal-top/subtotal-top.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -168,10 +168,10 @@ To show sub-totals at bottom of the header group in rows and columns, set the [`
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/summary-customization/subtotal-bottom/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/summary-customization/subtotal-bottom/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="GrandTotal.cs" %}
-{% include code-snippet/pivot-table/summary-customization/subtotal-bottom/subtotal-bottom.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/summary-customization/subtotal-bottom/subtotal-bottom.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -179,10 +179,10 @@ To show sub-totals at bottom of the header group in rows and columns, set the [`
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/summary-customization/subtotal-bottom/razor %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/summary-customization/subtotal-bottom/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="GrandTotal.cs" %}
-{% include code-snippet/pivot-table/summary-customization/subtotal-bottom/subtotal-bottom.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/summary-customization/subtotal-bottom/subtotal-bottom.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -199,10 +199,10 @@ The grand totals and sub-totals can be dynamically displayed at the top or botto
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/summary-customization/toolbar/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/summary-customization/toolbar/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Toolbar.cs" %}
-{% include code-snippet/pivot-table/summary-customization/toolbar/Toolbar.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/summary-customization/toolbar/Toolbar.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -210,10 +210,10 @@ The grand totals and sub-totals can be dynamically displayed at the top or botto
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/summary-customization/toolbar/razor %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/summary-customization/toolbar/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Toolbar.cs" %}
-{% include code-snippet/pivot-table/summary-customization/toolbar/Toolbar.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/summary-customization/toolbar/Toolbar.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

@@ -20,10 +20,10 @@ The rendered pivot table can be printed by invoking the `print` method from the 
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/print/print-table/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/print/print-table/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="PrintTable.cs" %}
-{% include code-snippet/pivot-table/print/print-table/PrintTable.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/print/print-table/PrintTable.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -31,10 +31,10 @@ The rendered pivot table can be printed by invoking the `print` method from the 
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/print/print-table/razor %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/print/print-table/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="PrintTable.cs" %}
-{% include code-snippet/pivot-table/print/print-table/PrintTable.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/print/print-table/PrintTable.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -53,10 +53,10 @@ The sample code below illustrates how to print the pivot chart through an extern
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/print/print-chart/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/print/print-chart/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="PrintChart.cs" %}
-{% include code-snippet/pivot-table/print/print-chart/PrintChart.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/print/print-chart/PrintChart.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -64,10 +64,10 @@ The sample code below illustrates how to print the pivot chart through an extern
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/print/print-chart/razor %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/print/print-chart/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="PrintChart.cs" %}
-{% include code-snippet/pivot-table/print/print-chart/PrintChart.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/print/print-chart/PrintChart.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

@@ -53,14 +53,14 @@ For each value field, the aggregation type can be set using the property [`type`
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/default-cs1/app-composition.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/default-cs1/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/default-cs1/app.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/default-cs1/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/pivot-grid/default-cs1" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/default-cs1" %}
 
 > By default, the aggregation will be considered as **Sum** to the value fields which had number type and for the value fields which had non-number type values such as string, date, datetime, boolean, etc., the aggregation type will be considered as **Count**.
 
@@ -82,14 +82,14 @@ The following code demonstrates how to configure the pivot table component to di
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/default-cs2/app-composition.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/default-cs2/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/default-cs2/app.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/default-cs2/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/pivot-grid/default-cs2" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/default-cs2" %}
 
 ## Hiding aggregation type from button text
 
@@ -99,14 +99,14 @@ This customization enhances the clarity of the pivot table’s interface by simp
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/default-cs3/app-composition.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/default-cs3/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/default-cs3/app.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/default-cs3/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/pivot-grid/default-cs3" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/default-cs3" %}
 
 ## Hiding aggregation type icon from UI
 
@@ -116,14 +116,14 @@ By default, the dropdown icon to change the aggregation type is visible in the g
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/default-cs4/app-composition.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/default-cs4/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/default-cs4/app.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/default-cs4/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/pivot-grid/default-cs4" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/default-cs4" %}
 
 ## Event
 
@@ -143,14 +143,14 @@ The [`aggregateCellInfo`](https://ej2.syncfusion.com/vue/documentation/api/pivot
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/default-cs5/app-composition.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/default-cs5/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/default-cs5/app.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/default-cs5/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/pivot-grid/default-cs5" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/default-cs5" %}
 
 ### ActionBegin
 
@@ -170,14 +170,14 @@ In the following example, an action taken during aggregation type selection via 
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/default-cs6/app-composition.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/default-cs6/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/default-cs6/app.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/default-cs6/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/pivot-grid/default-cs6" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/default-cs6" %}
 
 ### ActionComplete
 
@@ -192,14 +192,14 @@ The [`actionComplete`](https://ej2.syncfusion.com/vue/documentation/api/pivotvie
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/default-cs7/app-composition.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/default-cs7/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/default-cs7/app.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/default-cs7/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/pivot-grid/default-cs7" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/default-cs7" %}
 
 ### ActionFailure
 
@@ -210,11 +210,11 @@ The [`actionFailure`](https://ej2.syncfusion.com/vue/documentation/api/pivotview
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/default-cs8/app-composition.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/default-cs8/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/default-cs8/app.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/default-cs8/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/pivot-grid/default-cs8" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/default-cs8" %}

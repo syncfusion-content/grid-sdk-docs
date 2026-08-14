@@ -19,14 +19,14 @@ The rendered pivot table can be printed by invoking the [print](https://ej2.sync
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/pivot-table/pivot-table-cs495/index.ts %}
+{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs495/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/pivot-table/pivot-table-cs495/index.html %}
+{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs495/index.html %}
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs495" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs495" %}
 
 ## Print pivot chart
 
@@ -40,11 +40,11 @@ The sample code below illustrates how to print the pivot chart through an extern
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/pivot-table/pivot-table-cs496/index.ts %}
+{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs496/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/pivot-table/pivot-table-cs496/index.html %}
+{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs496/index.html %}
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs496" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs496" %}

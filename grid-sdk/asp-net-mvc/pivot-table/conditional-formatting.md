@@ -22,10 +22,10 @@ The conditional formatting can be applied at runtime through the built-in dialog
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/conditional-formatting/tool-bar/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/conditional-formatting/tool-bar/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Formatting.cs" %}
-{% include code-snippet/pivot-table/conditional-formatting/tool-bar/Formatting.cs %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/conditional-formatting/tool-bar/Formatting.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -33,10 +33,10 @@ The conditional formatting can be applied at runtime through the built-in dialog
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/conditional-formatting/tool-bar/razor %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/conditional-formatting/tool-bar/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Formatting.cs" %}
-{% include code-snippet/pivot-table/conditional-formatting/tool-bar/Formatting.cs %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/conditional-formatting/tool-bar/Formatting.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -81,10 +81,10 @@ Users can also access the conditional formatting dialog through external UI elem
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/conditional-formatting/ui/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/conditional-formatting/ui/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Formatting.cs" %}
-{% include code-snippet/pivot-table/conditional-formatting/ui/Formatting.cs %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/conditional-formatting/ui/Formatting.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -92,10 +92,10 @@ Users can also access the conditional formatting dialog through external UI elem
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/conditional-formatting/ui/razor %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/conditional-formatting/ui/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Formatting.cs" %}
-{% include code-snippet/pivot-table/conditional-formatting/ui/Formatting.cs %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/conditional-formatting/ui/Formatting.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -116,10 +116,10 @@ To format all value fields together, use the [`PivotViewConditionalFormatSetting
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/conditional-formatting/code-behind/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/conditional-formatting/code-behind/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Formatting.cs" %}
-{% include code-snippet/pivot-table/conditional-formatting/code-behind/Formatting.cs %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/conditional-formatting/code-behind/Formatting.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -127,10 +127,10 @@ To format all value fields together, use the [`PivotViewConditionalFormatSetting
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/conditional-formatting/code-behind/razor %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/conditional-formatting/code-behind/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Formatting.cs" %}
-{% include code-snippet/pivot-table/conditional-formatting/code-behind/Formatting.cs %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/conditional-formatting/code-behind/Formatting.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -147,10 +147,10 @@ To apply conditional formatting exclusively to a particular value field, set the
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/conditional-formatting/code-behind-specific/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/conditional-formatting/code-behind-specific/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Formatting.cs" %}
-{% include code-snippet/pivot-table/conditional-formatting/code-behind-specific/Formatting.cs %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/conditional-formatting/code-behind-specific/Formatting.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -158,10 +158,10 @@ To apply conditional formatting exclusively to a particular value field, set the
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/conditional-formatting/code-behind-specific/razor %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/conditional-formatting/code-behind-specific/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Formatting.cs" %}
-{% include code-snippet/pivot-table/conditional-formatting/code-behind-specific/Formatting.cs %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/conditional-formatting/code-behind-specific/Formatting.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -184,10 +184,10 @@ You can apply conditional formatting for specific row or column using [`Label`](
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/conditional-formatting/label/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/conditional-formatting/label/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="LabelFormatting.cs" %}
-{% include code-snippet/pivot-table/conditional-formatting/label/LabelFormatting.cs %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/conditional-formatting/label/LabelFormatting.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -195,10 +195,10 @@ You can apply conditional formatting for specific row or column using [`Label`](
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/conditional-formatting/label/razor %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/conditional-formatting/label/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="LabelFormatting.cs" %}
-{% include code-snippet/pivot-table/conditional-formatting/label/LabelFormatting.cs %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/conditional-formatting/label/LabelFormatting.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -229,10 +229,10 @@ The `ConditionalFormatting` event is triggered when the “ADD CONDITION” butt
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/conditional-formatting/event/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/conditional-formatting/event/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Formatting.cs" %}
-{% include code-snippet/pivot-table/conditional-formatting/event/Formatting.cs %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/conditional-formatting/event/Formatting.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -240,10 +240,10 @@ The `ConditionalFormatting` event is triggered when the “ADD CONDITION” butt
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/conditional-formatting/event/razor %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/conditional-formatting/event/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Formatting.cs" %}
-{% include code-snippet/pivot-table/conditional-formatting/event/Formatting.cs %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/conditional-formatting/event/Formatting.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

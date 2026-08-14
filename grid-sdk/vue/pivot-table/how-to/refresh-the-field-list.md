@@ -18,11 +18,11 @@ The following code example demonstrates how to refresh the Pivot Table and field
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/common-cs12/app-composition.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/common-cs12/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/common-cs12/app.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/common-cs12/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/pivot-grid/common-cs12" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/common-cs12" %}

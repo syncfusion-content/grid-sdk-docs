@@ -116,10 +116,10 @@ Add the below code to your `Index.cshtml` view page which is present under `V
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/getting-start-mvc/olap-pivot-table/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/getting-start-mvc/olap-pivot-table/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Pivottable.cs" %}
-{% include code-snippet/pivot-table/getting-start-mvc/olap-pivot-table/pivottable.cs %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/getting-start-mvc/olap-pivot-table/pivottable.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -127,10 +127,10 @@ Add the below code to your `Index.cshtml` view page which is present under `V
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/getting-start-mvc/olap-pivot-table/razor %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/getting-start-mvc/olap-pivot-table/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Pivottable.cs" %}
-{% include code-snippet/pivot-table/getting-start-mvc/olap-pivot-table/pivottable.cs %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/getting-start-mvc/olap-pivot-table/pivottable.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -159,10 +159,10 @@ For example, in the sample below, the element "Product Categories" is assigned t
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/getting-start-mvc/olap-fields/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/getting-start-mvc/olap-fields/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Fields.cs" %}
-{% include code-snippet/pivot-table/getting-start-mvc/olap-fields/fields.cs %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/getting-start-mvc/olap-fields/fields.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -170,10 +170,10 @@ For example, in the sample below, the element "Product Categories" is assigned t
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/getting-start-mvc/olap-fields/razor %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/getting-start-mvc/olap-fields/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Fields.cs" %}
-{% include code-snippet/pivot-table/getting-start-mvc/olap-fields/fields.cs %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/getting-start-mvc/olap-fields/fields.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -190,10 +190,10 @@ In the following example, the [`PivotViewFormatSetting`](https://help.syncfusion
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/getting-start-mvc/olap-formatting/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/getting-start-mvc/olap-formatting/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Formatting.cs" %}
-{% include code-snippet/pivot-table/getting-start-mvc/olap-formatting/formatting.cs %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/getting-start-mvc/olap-formatting/formatting.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -201,10 +201,10 @@ In the following example, the [`PivotViewFormatSetting`](https://help.syncfusion
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/getting-start-mvc/olap-formatting/razor %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/getting-start-mvc/olap-formatting/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Formatting.cs" %}
-{% include code-snippet/pivot-table/getting-start-mvc/olap-formatting/formatting.cs %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/getting-start-mvc/olap-formatting/formatting.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -221,10 +221,10 @@ To display the grouping bar, set the [`ShowGroupingBar`](https://help.syncfusion
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/getting-start-mvc/olap-grouping-bar/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/getting-start-mvc/olap-grouping-bar/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Grouping-bar.cs" %}
-{% include code-snippet/pivot-table/getting-start-mvc/olap-grouping-bar/grouping-bar.cs %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/getting-start-mvc/olap-grouping-bar/grouping-bar.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -232,10 +232,10 @@ To display the grouping bar, set the [`ShowGroupingBar`](https://help.syncfusion
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/getting-start-mvc/olap-grouping-bar/razor %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/getting-start-mvc/olap-grouping-bar/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Grouping-bar.cs" %}
-{% include code-snippet/pivot-table/getting-start-mvc/olap-grouping-bar/grouping-bar.cs %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/getting-start-mvc/olap-grouping-bar/grouping-bar.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -252,10 +252,10 @@ To display the Field List, set the [`ShowFieldList`](https://help.syncfusion.com
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/getting-start-mvc/olap-field-list/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/getting-start-mvc/olap-field-list/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Field-list.cs" %}
-{% include code-snippet/pivot-table/getting-start-mvc/olap-field-list/field-list.cs %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/getting-start-mvc/olap-field-list/field-list.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -263,10 +263,10 @@ To display the Field List, set the [`ShowFieldList`](https://help.syncfusion.com
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/getting-start-mvc/olap-field-list/razor %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/getting-start-mvc/olap-field-list/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Field-list.cs" %}
-{% include code-snippet/pivot-table/getting-start-mvc/olap-field-list/field-list.cs %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/getting-start-mvc/olap-field-list/field-list.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -281,10 +281,10 @@ Users can add [OLAP cube elements](#olap-cube-elements) and filter members to th
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/getting-start-mvc/olap-explore-filter/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/getting-start-mvc/olap-explore-filter/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Explore-filter.cs" %}
-{% include code-snippet/pivot-table/getting-start-mvc/olap-explore-filter/explore-filter.cs %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/getting-start-mvc/olap-explore-filter/explore-filter.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -292,10 +292,10 @@ Users can add [OLAP cube elements](#olap-cube-elements) and filter members to th
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/getting-start-mvc/olap-explore-filter/razor %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/getting-start-mvc/olap-explore-filter/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Explore-filter.cs" %}
-{% include code-snippet/pivot-table/getting-start-mvc/olap-explore-filter/explore-filter.cs %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/getting-start-mvc/olap-explore-filter/explore-filter.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -326,10 +326,10 @@ You can also add calculated fields at runtime through the built-in dialog. To en
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/getting-start-mvc/olap-calculated-field/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/getting-start-mvc/olap-calculated-field/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Calculated-field.cs" %}
-{% include code-snippet/pivot-table/getting-start-mvc/olap-calculated-field/calculated-field.cs %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/getting-start-mvc/olap-calculated-field/calculated-field.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -337,10 +337,10 @@ You can also add calculated fields at runtime through the built-in dialog. To en
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/getting-start-mvc/olap-calculated-field/razor %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/getting-start-mvc/olap-calculated-field/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Calculated-field.cs" %}
-{% include code-snippet/pivot-table/getting-start-mvc/olap-calculated-field/calculated-field.cs %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/getting-start-mvc/olap-calculated-field/calculated-field.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -469,10 +469,10 @@ To enable virtual scrolling, set the [`EnableVirtualization`](https://help.syncf
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/getting-start-mvc/olap-virtual/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/getting-start-mvc/olap-virtual/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Virtual.cs" %}
-{% include code-snippet/pivot-table/getting-start-mvc/olap-virtual/virtual.cs %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/getting-start-mvc/olap-virtual/virtual.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -480,10 +480,10 @@ To enable virtual scrolling, set the [`EnableVirtualization`](https://help.syncf
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/getting-start-mvc/olap-virtual/razor %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/getting-start-mvc/olap-virtual/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Virtual.cs" %}
-{% include code-snippet/pivot-table/getting-start-mvc/olap-virtual/virtual.cs %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/getting-start-mvc/olap-virtual/virtual.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -514,10 +514,10 @@ Below are sample code files showing how to bind an OLAP data source in ASP.NET M
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/getting-start-mvc/olap-data-binding/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/getting-start-mvc/olap-data-binding/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Data-binding.cs" %}
-{% include code-snippet/pivot-table/getting-start-mvc/olap-data-binding/data-binding.cs %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/getting-start-mvc/olap-data-binding/data-binding.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -525,10 +525,10 @@ Below are sample code files showing how to bind an OLAP data source in ASP.NET M
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/getting-start-mvc/olap-data-binding/razor %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/getting-start-mvc/olap-data-binding/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Data-binding.cs" %}
-{% include code-snippet/pivot-table/getting-start-mvc/olap-data-binding/data-binding.cs %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/getting-start-mvc/olap-data-binding/data-binding.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -545,10 +545,10 @@ Alternatively, you can set up the measure directly in your code by configuring t
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/getting-start-mvc/olap-measures-in-row/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/getting-start-mvc/olap-measures-in-row/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Measures-in-row.cs" %}
-{% include code-snippet/pivot-table/getting-start-mvc/olap-measures-in-row/measures-in-row.cs %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/getting-start-mvc/olap-measures-in-row/measures-in-row.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -556,10 +556,10 @@ Alternatively, you can set up the measure directly in your code by configuring t
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/getting-start-mvc/olap-measures-in-row/razor %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/getting-start-mvc/olap-measures-in-row/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Measures-in-row.cs" %}
-{% include code-snippet/pivot-table/getting-start-mvc/olap-measures-in-row/measures-in-row.cs %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/getting-start-mvc/olap-measures-in-row/measures-in-row.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -572,10 +572,10 @@ You can choose where to place measures on either the row or column axis through 
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/getting-start-mvc/olap-measures-position/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/getting-start-mvc/olap-measures-position/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Measures-position.cs" %}
-{% include code-snippet/pivot-table/getting-start-mvc/olap-measures-position/measures-position.cs %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/getting-start-mvc/olap-measures-position/measures-position.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -583,10 +583,10 @@ You can choose where to place measures on either the row or column axis through 
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/getting-start-mvc/olap-measures-position/razor %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/getting-start-mvc/olap-measures-position/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Measures-position.cs" %}
-{% include code-snippet/pivot-table/getting-start-mvc/olap-measures-position/measures-position.cs %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/getting-start-mvc/olap-measures-position/measures-position.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -601,10 +601,10 @@ To display a named set in the Pivot Table, set its unique name using the [`Name`
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/getting-start-mvc/olap-named-set/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/getting-start-mvc/olap-named-set/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Named-set.cs" %}
-{% include code-snippet/pivot-table/getting-start-mvc/olap-named-set/named-set.cs %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/getting-start-mvc/olap-named-set/named-set.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -612,10 +612,10 @@ To display a named set in the Pivot Table, set its unique name using the [`Name`
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/getting-start-mvc/olap-named-set/razor %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/getting-start-mvc/olap-named-set/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Named-set.cs" %}
-{% include code-snippet/pivot-table/getting-start-mvc/olap-named-set/named-set.cs %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/getting-start-mvc/olap-named-set/named-set.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -635,10 +635,10 @@ Below is an example of how to configure authentication settings in the Pivot Tab
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/getting-start-mvc/olap-authentication/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/getting-start-mvc/olap-authentication/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Authentication.cs" %}
-{% include code-snippet/pivot-table/getting-start-mvc/olap-authentication/Authentication.cs %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/getting-start-mvc/olap-authentication/Authentication.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -646,10 +646,10 @@ Below is an example of how to configure authentication settings in the Pivot Tab
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/getting-start-mvc/olap-authentication/razor %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/getting-start-mvc/olap-authentication/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Authentication.cs" %}
-{% include code-snippet/pivot-table/getting-start-mvc/olap-authentication/Authentication.cs %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/getting-start-mvc/olap-authentication/Authentication.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -664,10 +664,10 @@ In the Syncfusion ASP.NET MVC Pivot Table, you can specify roles using the [`rol
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/getting-start-mvc/olap-roles/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/getting-start-mvc/olap-roles/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Roles.cs" %}
-{% include code-snippet/pivot-table/getting-start-mvc/olap-roles/roles.cs %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/getting-start-mvc/olap-roles/roles.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -675,10 +675,10 @@ In the Syncfusion ASP.NET MVC Pivot Table, you can specify roles using the [`rol
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/getting-start-mvc/olap-roles/razor %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/getting-start-mvc/olap-roles/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Roles.cs" %}
-{% include code-snippet/pivot-table/getting-start-mvc/olap-roles/roles.cs %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/getting-start-mvc/olap-roles/roles.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -777,10 +777,10 @@ When the [`BeforeServiceInvoke`](https://help.syncfusion.com/cr/aspnetmvc-js2/Sy
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/getting-start-mvc/olap-beforeserviceinvoke/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/getting-start-mvc/olap-beforeserviceinvoke/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="BeforeServiceInvoke.cs" %}
-{% include code-snippet/pivot-table/getting-start-mvc/olap-beforeserviceinvoke/olap-beforeServiceInvoke.cs %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/getting-start-mvc/olap-beforeserviceinvoke/olap-beforeServiceInvoke.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -788,10 +788,10 @@ When the [`BeforeServiceInvoke`](https://help.syncfusion.com/cr/aspnetmvc-js2/Sy
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/getting-start-mvc/olap-beforeserviceinvoke/razor %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/getting-start-mvc/olap-beforeserviceinvoke/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="BeforeServiceInvoke.cs" %}
-{% include code-snippet/pivot-table/getting-start-mvc/olap-beforeserviceinvoke/olap-beforeServiceInvoke.cs %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/getting-start-mvc/olap-beforeserviceinvoke/olap-beforeServiceInvoke.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -810,10 +810,10 @@ When the [`AfterServiceInvoke`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syn
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/getting-start-mvc/olap-afterServiceInvoke/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/getting-start-mvc/olap-afterServiceInvoke/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="AfterServiceInvoke.cs" %}
-{% include code-snippet/pivot-table/getting-start-mvc/olap-afterServiceInvoke/olap-afterServiceInvoke.cs %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/getting-start-mvc/olap-afterServiceInvoke/olap-afterServiceInvoke.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -821,10 +821,10 @@ When the [`AfterServiceInvoke`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syn
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/getting-start-mvc/olap-afterServiceInvoke/razor %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/getting-start-mvc/olap-afterServiceInvoke/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="AfterServiceInvoke.cs" %}
-{% include code-snippet/pivot-table/getting-start-mvc/olap-afterServiceInvoke/olap-afterServiceInvoke.cs %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/getting-start-mvc/olap-afterServiceInvoke/olap-afterServiceInvoke.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

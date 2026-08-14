@@ -26,22 +26,22 @@ The drill-down and drill-up features allow you to expand or collapse data for a 
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/pivot-table/default-cs330/app/App.jsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/default-cs330/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/pivot-table/default-cs330/app/App.tsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/default-cs330/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/pivot-table/default-cs330/app/datasource.jsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/default-cs330/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/pivot-table/default-cs330/app/datasource.tsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/default-cs330/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs330" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs330" %}
 
-## Expand All
+## Expand all
 
 > This property is applicable only for the relational data source.
 
@@ -49,20 +49,20 @@ The Pivot Table component allows users to interactively expand or collapse all f
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/pivot-table/default-cs43/app/App.jsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/default-cs43/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/pivot-table/default-cs43/app/App.tsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/default-cs43/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/pivot-table/default-cs43/app/datasource.jsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/default-cs43/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/pivot-table/default-cs43/app/datasource.tsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/default-cs43/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs43" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs43" %}
 
 ## Expand all headers for specific fields
 
@@ -74,20 +74,20 @@ The following code demonstrates how to configure a Pivot Table with the [`expand
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/pivot-table/default-cs44/app/App.jsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/default-cs44/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/pivot-table/default-cs44/app/App.tsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/default-cs44/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/pivot-table/default-cs44/app/datasource.jsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/default-cs44/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/pivot-table/default-cs44/app/datasource.tsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/default-cs44/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs44" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs44" %}
 
 ## Expand all except specific member(s)
 
@@ -102,22 +102,22 @@ The following example demonstrates how to configure a Pivot Table where all head
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/pivot-table/default-cs45/app/App.jsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/default-cs45/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/pivot-table/default-cs45/app/App.tsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/default-cs45/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/pivot-table/default-cs45/app/datasource.jsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/default-cs45/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/pivot-table/default-cs45/app/datasource.tsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/default-cs45/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs45" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs45" %}
 
-## Expand or Collapse Specific Members
+## Expand or collapse specific members
 
 The Pivot Table component enables users to programmatically expand or collapse specific members in any field placed under the row or column axes. This can be achieved using the [`drilledMembers`](https://ej2.syncfusion.com/react/documentation/api/pivotview/datasourcesettingsmodel#drilledmembers) property. The following properties of [`drilledMembers`](https://ej2.syncfusion.com/react/documentation/api/pivotview/datasourcesettingsmodel#drilledmembers) are described below:
 
@@ -129,22 +129,24 @@ The following code demonstrates how to configure the Pivot Table to expand speci
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/pivot-table/default-cs46/app/App.jsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/default-cs46/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/pivot-table/default-cs46/app/App.tsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/default-cs46/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/pivot-table/default-cs46/app/datasource.jsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/default-cs46/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/pivot-table/default-cs46/app/datasource.tsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/default-cs46/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs46" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs46" %}
 
 ## Event
+
+The Pivot Table provides the following events to monitor drill down and drill up operations. Use them to track, customize, or intercept a specific stage of the user interaction lifecycle.
 
 ### Drill
 
@@ -152,24 +154,24 @@ The [`drill`](https://ej2.syncfusion.com/react/documentation/api/pivotview/index
 
 * [`drillInfo`](https://ej2.syncfusion.com/react/documentation/api/pivotview/drillargs#drillinfo): Contains information about the currently drilled field member.
 * [`pivotview`](https://ej2.syncfusion.com/react/documentation/api/pivotview/drillargs#pivotview): A reference to the Pivot Table component instance.
-* [`cancel`](https://ej2.syncfusion.com/react/documentation/api/pivotview/drillargs#cancel): Specifies whether to prevent the current drill operation. Set this property to true in the event handler to cancel the action.
+* [`cancel`](https://ej2.syncfusion.com/react/documentation/api/pivotview/drillargs#cancel): Specifies whether to prevent the current drill operation. Set this property to `true` in the event handler to cancel the action.
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/pivot-table/default-cs47/app/App.jsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/default-cs47/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/pivot-table/default-cs47/app/App.tsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/default-cs47/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/pivot-table/default-cs47/app/datasource.jsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/default-cs47/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/pivot-table/default-cs47/app/datasource.tsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/default-cs47/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs47" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs47" %}
 
 ### ActionBegin
 
@@ -185,32 +187,32 @@ The [`actionBegin`](https://ej2.syncfusion.com/react/documentation/api/pivotview
 
 - [`cancel`](https://ej2.syncfusion.com/react/documentation/api/pivotview/pivotactionbegineventargs#cancel): Allows you to block the current action by setting it to `true`.
 
-In the below sample, drill down and drill up action can be restricted by setting the **args.cancel** option to **true** in the [`actionBegin`](https://ej2.syncfusion.com/react/documentation/api/pivotview/index-default#actionbegin) event.
+In the following sample, the drill down and drill up actions can be restricted by setting the `args.cancel` option to `true` in the [`actionBegin`](https://ej2.syncfusion.com/react/documentation/api/pivotview/index-default#actionbegin) event.
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/pivot-table/default-cs48/app/App.jsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/default-cs48/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/pivot-table/default-cs48/app/App.tsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/default-cs48/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/pivot-table/default-cs48/app/datasource.jsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/default-cs48/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/pivot-table/default-cs48/app/datasource.tsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/default-cs48/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs48" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs48" %}
 
 ### ActionComplete
 
-The event [`actionComplete`](https://ej2.syncfusion.com/react/documentation/api/pivotview/index-default#actioncomplete) triggers when a UI action such as drill down or drill up, is completed. This allows user to identify the current UI actions being completed at runtime. It has the following parameters:
+The event [`actionComplete`](https://ej2.syncfusion.com/react/documentation/api/pivotview/index-default#actioncomplete) triggers when a UI action such as drill down or drill up is completed. This allows users to identify the UI actions being completed at runtime. It has the following parameters:
 
 * [`dataSourceSettings`](https://ej2.syncfusion.com/react/documentation/api/pivotview/pivotactioncompleteeventargs#datasourcesettings): It holds the current data source settings such as input data source, rows, columns, values, filters, format settings and so on.
 
-* [`actionName`](https://ej2.syncfusion.com/react/documentation/api/pivotview/pivotactioncompleteeventargs#actionname): It holds the name of the current action completed. The following are the UI actions and their names:
+* [`actionName`](https://ej2.syncfusion.com/react/documentation/api/pivotview/pivotactioncompleteeventargs#actionname): It holds the name of the completed action. The following are the UI actions and their names:
 
 | Action | Action Name|
 |------|-------------|
@@ -221,20 +223,20 @@ The event [`actionComplete`](https://ej2.syncfusion.com/react/documentation/api/
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/pivot-table/default-cs49/app/App.jsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/default-cs49/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/pivot-table/default-cs49/app/App.tsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/default-cs49/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/pivot-table/default-cs49/app/datasource.jsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/default-cs49/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/pivot-table/default-cs49/app/datasource.tsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/default-cs49/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs49" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs49" %}
 
 ### ActionFailure
 
@@ -251,17 +253,23 @@ The [`actionFailure`](https://ej2.syncfusion.com/react/documentation/api/pivotvi
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/pivot-table/default-cs50/app/App.jsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/default-cs50/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/pivot-table/default-cs50/app/App.tsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/default-cs50/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/pivot-table/default-cs50/app/datasource.jsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/default-cs50/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/pivot-table/default-cs50/app/datasource.tsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/default-cs50/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs50" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs50" %}
+
+## See Also
+
+* [Drill through](./drill-through)
+* [Row and column](./row-and-column)
+* [Aggregation](./aggregation)

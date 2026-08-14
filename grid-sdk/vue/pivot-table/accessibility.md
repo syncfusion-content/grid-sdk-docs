@@ -235,14 +235,14 @@ The accessibility compliance of the pivot table component is shown in the follow
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/accessibility/app-composition.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/accessibility/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/accessibility/app.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/accessibility/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/pivot-grid/accessibility" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/accessibility" %}
 
 ## See also
 

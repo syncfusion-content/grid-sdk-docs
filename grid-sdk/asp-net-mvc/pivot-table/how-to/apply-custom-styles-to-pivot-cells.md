@@ -31,10 +31,10 @@ The following example shows how to apply styles to:
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/apply-custom-styles/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/apply-custom-styles/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="CustomStyles.cs" %}
-{% include code-snippet/pivot-table/apply-custom-styles/CustomStyles.cs %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/apply-custom-styles/CustomStyles.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -42,10 +42,10 @@ The following example shows how to apply styles to:
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/apply-custom-styles/razor %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/apply-custom-styles/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="CustomStyles.cs" %}
-{% include code-snippet/pivot-table/apply-custom-styles/CustomStyles.cs %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/apply-custom-styles/CustomStyles.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

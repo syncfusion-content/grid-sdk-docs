@@ -19,25 +19,25 @@ N> The **dot(.)** character in **FY 2016.Units Sold** is used by default to iden
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/pivot-table/pivot-table-cs494/index.ts %}
+{% include code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs494/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/pivot-table/pivot-table-cs494/index.html %}
+{% include code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs494/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs494" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs494" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/pivot-table/pivot-table-cs494/index.js %}
+{% include code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs494/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/pivot-table/pivot-table-cs494/index.html %}
+{% include code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs494/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs494" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs494" %}
 {% endif %}

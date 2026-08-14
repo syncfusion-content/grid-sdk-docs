@@ -46,14 +46,14 @@ Once enabled, hyperlinks will be shown consistently in row headers, column heade
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/pivot-table/pivot-table-cs179/index.js %}
+{% include code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs179/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/pivot-table/pivot-table-cs179/index.html %}
+{% include code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs179/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs179" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs179" %}
 
 ## Hyperlink for row headers
 
@@ -61,14 +61,14 @@ The pivot table provides a way to display hyperlinks specifically in **row heade
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/pivot-table/pivot-table-cs180/index.js %}
+{% include code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs180/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/pivot-table/pivot-table-cs180/index.html %}
+{% include code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs180/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs180" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs180" %}
 
 ## Hyperlink for column headers
 
@@ -76,14 +76,14 @@ The pivot table provides an option to display hyperlinks specifically in column 
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/pivot-table/pivot-table-cs181/index.js %}
+{% include code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs181/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/pivot-table/pivot-table-cs181/index.html %}
+{% include code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs181/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs181" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs181" %}
 
 ## Hyperlink for value cells
 
@@ -91,14 +91,14 @@ The pivot table provides support for displaying hyperlinks specifically in value
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/pivot-table/pivot-table-cs182/index.js %}
+{% include code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs182/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/pivot-table/pivot-table-cs182/index.html %}
+{% include code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs182/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs182" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs182" %}
 
 ## Hyperlink for summary cells
 
@@ -106,14 +106,14 @@ The pivot table provides support for displaying hyperlinks specifically in summa
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/pivot-table/pivot-table-cs183/index.js %}
+{% include code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs183/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/pivot-table/pivot-table-cs183/index.html %}
+{% include code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs183/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs183" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs183" %}
 
 ## Condition based hyperlink
 
@@ -128,14 +128,14 @@ In the example below, the pivot table is configured to display hyperlinks only i
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/pivot-table/pivot-table-cs184/index.js %}
+{% include code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs184/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/pivot-table/pivot-table-cs184/index.html %}
+{% include code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs184/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs184" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs184" %}
 
 ## Header based hyperlink
 
@@ -147,14 +147,14 @@ N> The **dot(.)** character in **FY 2015.Q1.Units Sold** is used by default to i
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/pivot-table/pivot-table-cs185/index.js %}
+{% include code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs185/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/pivot-table/pivot-table-cs185/index.html %}
+{% include code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs185/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs185" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs185" %}
 
 ## Event
 
@@ -171,14 +171,14 @@ In the example below, when a hyperlink cell is clicked, a custom attribute (**da
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/pivot-table/pivot-table-cs186/index.js %}
+{% include code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs186/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/pivot-table/pivot-table-cs186/index.html %}
+{% include code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs186/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs186" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs186" %}
 
 ## See Also
 

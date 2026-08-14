@@ -27,10 +27,10 @@ To use the grouping bar, you need to inject the `GroupingBar` module in the Pivo
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/getting-start-mvc/groupingbar/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/getting-start-mvc/groupingbar/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Groupingbar.cs" %}
-{% include code-snippet/pivot-table/getting-start-mvc/groupingbar/groupingbar.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/getting-start-mvc/groupingbar/groupingbar.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -38,10 +38,10 @@ To use the grouping bar, you need to inject the `GroupingBar` module in the Pivo
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/getting-start-mvc/groupingbar/razor %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/getting-start-mvc/groupingbar/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Groupingbar.cs" %}
-{% include code-snippet/pivot-table/getting-start-mvc/groupingbar/groupingbar.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/getting-start-mvc/groupingbar/groupingbar.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -62,10 +62,10 @@ To display the fields panel, set the [`showFieldsPanel`](https://help.syncfusion
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/grouping-bar/showFieldsPanel/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grouping-bar/showFieldsPanel/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="ShowFieldsPanel.cs" %}
-{% include code-snippet/pivot-table/grouping-bar/showFieldsPanel/showFieldsPanel.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grouping-bar/showFieldsPanel/showFieldsPanel.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -73,10 +73,10 @@ To display the fields panel, set the [`showFieldsPanel`](https://help.syncfusion
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/grouping-bar/showFieldsPanel/razor %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grouping-bar/showFieldsPanel/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="ShowFieldsPanel.cs" %}
-{% include code-snippet/pivot-table/grouping-bar/showFieldsPanel/showFieldsPanel.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grouping-bar/showFieldsPanel/showFieldsPanel.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -97,10 +97,10 @@ By default, the filter icon appears next to each field in the grouping bar. If y
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/grouping-bar/show-filter/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grouping-bar/show-filter/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="ShowFilter.cs" %}
-{% include code-snippet/pivot-table/grouping-bar/show-filter/ShowFilter.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grouping-bar/show-filter/ShowFilter.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -108,10 +108,10 @@ By default, the filter icon appears next to each field in the grouping bar. If y
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/grouping-bar/show-filter/razor %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grouping-bar/show-filter/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="ShowFilter.cs" %}
-{% include code-snippet/pivot-table/grouping-bar/show-filter/ShowFilter.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grouping-bar/show-filter/ShowFilter.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -130,10 +130,10 @@ In the sample below, the filter icons for the "Quarter" and "Products" fields ar
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/grouping-bar/show-filter-specific/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grouping-bar/show-filter-specific/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="ShowFilter.cs" %}
-{% include code-snippet/pivot-table/grouping-bar/show-filter-specific/ShowFilter.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grouping-bar/show-filter-specific/ShowFilter.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -141,10 +141,10 @@ In the sample below, the filter icons for the "Quarter" and "Products" fields ar
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/grouping-bar/show-filter-specific/razor %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grouping-bar/show-filter-specific/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="ShowFilter.cs" %}
-{% include code-snippet/pivot-table/grouping-bar/show-filter-specific/ShowFilter.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grouping-bar/show-filter-specific/ShowFilter.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -165,10 +165,10 @@ To disable the sort option, set the [`showSortIcon`](https://help.syncfusion.com
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/grouping-bar/show-sort/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grouping-bar/show-sort/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="ShowSort.cs" %}
-{% include code-snippet/pivot-table/grouping-bar/show-sort/ShowSort.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grouping-bar/show-sort/ShowSort.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -176,10 +176,10 @@ To disable the sort option, set the [`showSortIcon`](https://help.syncfusion.com
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/grouping-bar/show-sort/razor %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grouping-bar/show-sort/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="ShowSort.cs" %}
-{% include code-snippet/pivot-table/grouping-bar/show-sort/ShowSort.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grouping-bar/show-sort/ShowSort.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -198,10 +198,10 @@ In the example below, the sort icons for the "Quarter" and "Country" fields are 
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/grouping-bar/show-sort-specific/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grouping-bar/show-sort-specific/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="ShowSort.cs" %}
-{% include code-snippet/pivot-table/grouping-bar/show-sort-specific/ShowSort.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grouping-bar/show-sort-specific/ShowSort.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -209,10 +209,10 @@ In the example below, the sort icons for the "Quarter" and "Country" fields are 
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/grouping-bar/show-sort-specific/razor %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grouping-bar/show-sort-specific/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="ShowSort.cs" %}
-{% include code-snippet/pivot-table/grouping-bar/show-sort-specific/ShowSort.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grouping-bar/show-sort-specific/ShowSort.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -233,10 +233,10 @@ If you want to hide the remove icon, set the [`showRemoveIcon`](https://help.syn
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/grouping-bar/show-remove/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grouping-bar/show-remove/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="ShowRemove.cs" %}
-{% include code-snippet/pivot-table/grouping-bar/show-remove/ShowRemove.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grouping-bar/show-remove/ShowRemove.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -244,10 +244,10 @@ If you want to hide the remove icon, set the [`showRemoveIcon`](https://help.syn
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/grouping-bar/show-remove/razor %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grouping-bar/show-remove/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="ShowRemove.cs" %}
-{% include code-snippet/pivot-table/grouping-bar/show-remove/ShowRemove.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grouping-bar/show-remove/ShowRemove.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -266,10 +266,10 @@ In the example below, the remove icon for the "Year", "Sold", and "Products" fie
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/grouping-bar/show-remove-specific/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grouping-bar/show-remove-specific/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="ShowRemove.cs" %}
-{% include code-snippet/pivot-table/grouping-bar/show-remove-specific/ShowRemove.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grouping-bar/show-remove-specific/ShowRemove.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -277,10 +277,10 @@ In the example below, the remove icon for the "Year", "Sold", and "Products" fie
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/grouping-bar/show-remove-specific/razor %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grouping-bar/show-remove-specific/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="ShowRemove.cs" %}
-{% include code-snippet/pivot-table/grouping-bar/show-remove-specific/ShowRemove.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grouping-bar/show-remove-specific/ShowRemove.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -297,10 +297,10 @@ In the Pivot Table, the grouping bar lets users move fields between the row, col
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/grouping-bar/drag/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grouping-bar/drag/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Drag.cs" %}
-{% include code-snippet/pivot-table/grouping-bar/drag/drag.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grouping-bar/drag/drag.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -308,10 +308,10 @@ In the Pivot Table, the grouping bar lets users move fields between the row, col
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/grouping-bar/drag/razor %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grouping-bar/drag/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Drag.cs" %}
-{% include code-snippet/pivot-table/grouping-bar/drag/drag.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grouping-bar/drag/drag.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -330,10 +330,10 @@ In the example below, users cannot drag the "Year" and "Products" fields. This s
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/grouping-bar/drag-specific/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grouping-bar/drag-specific/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Drag.cs" %}
-{% include code-snippet/pivot-table/grouping-bar/drag-specific/drag.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grouping-bar/drag-specific/drag.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -341,10 +341,10 @@ In the example below, users cannot drag the "Year" and "Products" fields. This s
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/grouping-bar/drag-specific/razor %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grouping-bar/drag-specific/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Drag.cs" %}
-{% include code-snippet/pivot-table/grouping-bar/drag-specific/drag.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grouping-bar/drag-specific/drag.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -361,10 +361,10 @@ To exclude specific fields, add the field names to the [`excludeFields`](https:/
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/grouping-bar/removespecific/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grouping-bar/removespecific/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Removespecific.cs" %}
-{% include code-snippet/pivot-table/grouping-bar/removespecific/removespecific.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grouping-bar/removespecific/removespecific.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -372,10 +372,10 @@ To exclude specific fields, add the field names to the [`excludeFields`](https:/
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/grouping-bar/removespecific/razor %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grouping-bar/removespecific/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Removespecific.cs" %}
-{% include code-snippet/pivot-table/grouping-bar/removespecific/removespecific.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grouping-bar/removespecific/removespecific.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -394,10 +394,10 @@ By default, the icon for setting the aggregation type is visible in the grouping
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/grouping-bar/aggregation/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grouping-bar/aggregation/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Aggregation.cs" %}
-{% include code-snippet/pivot-table/grouping-bar/aggregation/aggregation.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grouping-bar/aggregation/aggregation.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -405,10 +405,10 @@ By default, the icon for setting the aggregation type is visible in the grouping
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/grouping-bar/aggregation/razor %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grouping-bar/aggregation/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Aggregation.cs" %}
-{% include code-snippet/pivot-table/grouping-bar/aggregation/aggregation.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grouping-bar/aggregation/aggregation.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -432,10 +432,10 @@ In the following example, the dropdown icon for the "Sold" field is hidden:
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/grouping-bar/aggregation-specific/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grouping-bar/aggregation-specific/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Aggregation-specific.cs" %}
-{% include code-snippet/pivot-table/grouping-bar/aggregation-specific/aggregation-specific.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grouping-bar/aggregation-specific/aggregation-specific.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -443,10 +443,10 @@ In the following example, the dropdown icon for the "Sold" field is hidden:
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/grouping-bar/aggregation-specific/razor %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grouping-bar/aggregation-specific/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Aggregation-specific.cs" %}
-{% include code-snippet/pivot-table/grouping-bar/aggregation-specific/aggregation-specific.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grouping-bar/aggregation-specific/aggregation-specific.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -469,10 +469,10 @@ The **Values** button appears in the grouping bar when the [`showValuesButton`](
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/grouping-bar/groupingbar-valuesbutton/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grouping-bar/groupingbar-valuesbutton/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Groupingbar-valuesbutton.cs" %}
-{% include code-snippet/pivot-table/grouping-bar/groupingbar-valuesbutton/groupingbar-valuesbutton.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grouping-bar/groupingbar-valuesbutton/groupingbar-valuesbutton.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -480,10 +480,10 @@ The **Values** button appears in the grouping bar when the [`showValuesButton`](
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/grouping-bar/groupingbar-valuesbutton/razor %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grouping-bar/groupingbar-valuesbutton/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Groupingbar-valuesbutton.cs" %}
-{% include code-snippet/pivot-table/grouping-bar/groupingbar-valuesbutton/groupingbar-valuesbutton.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grouping-bar/groupingbar-valuesbutton/groupingbar-valuesbutton.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -509,10 +509,10 @@ For example, you can use this event to change the caption of the `droppedField` 
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/grouping-bar/field-dropped/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grouping-bar/field-dropped/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Field-dropped.cs" %}
-{% include code-snippet/pivot-table/grouping-bar/field-dropped/field-dropped.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grouping-bar/field-dropped/field-dropped.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -520,10 +520,10 @@ For example, you can use this event to change the caption of the `droppedField` 
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/grouping-bar/field-dropped/razor %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grouping-bar/field-dropped/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Field-dropped.cs" %}
-{% include code-snippet/pivot-table/grouping-bar/field-dropped/field-dropped.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grouping-bar/field-dropped/field-dropped.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -544,10 +544,10 @@ In the following example, the drag action is prevented only for fields placed in
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/grouping-bar/field-drag-start/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grouping-bar/field-drag-start/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Field-drag-start.cs" %}
-{% include code-snippet/pivot-table/grouping-bar/field-drag-start/field-drag-start.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grouping-bar/field-drag-start/field-drag-start.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -555,10 +555,10 @@ In the following example, the drag action is prevented only for fields placed in
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/grouping-bar/field-drag-start/razor %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grouping-bar/field-drag-start/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Field-drag-start.cs" %}
-{% include code-snippet/pivot-table/grouping-bar/field-drag-start/field-drag-start.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grouping-bar/field-drag-start/field-drag-start.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -581,10 +581,10 @@ In the example below, dropping any field into the "Values" axis is prevented. Th
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/grouping-bar/field-drop/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grouping-bar/field-drop/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Field-drop.cs" %}
-{% include code-snippet/pivot-table/grouping-bar/field-drop/field-drop.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grouping-bar/field-drop/field-drop.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -592,10 +592,10 @@ In the example below, dropping any field into the "Values" axis is prevented. Th
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/grouping-bar/field-drop/razor %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grouping-bar/field-drop/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Field-drop.cs" %}
-{% include code-snippet/pivot-table/grouping-bar/field-drop/field-drop.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grouping-bar/field-drop/field-drop.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -618,10 +618,10 @@ In the following example, the field "Country" cannot be removed from the report 
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/grouping-bar/field-remove/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grouping-bar/field-remove/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Field-remove.cs" %}
-{% include code-snippet/pivot-table/grouping-bar/field-remove/field-remove.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grouping-bar/field-remove/field-remove.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -629,10 +629,10 @@ In the following example, the field "Country" cannot be removed from the report 
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/grouping-bar/field-remove/razor %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grouping-bar/field-remove/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Field-remove.cs" %}
-{% include code-snippet/pivot-table/grouping-bar/field-remove/field-remove.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grouping-bar/field-remove/field-remove.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -654,10 +654,10 @@ In the following sample, the dropdown menu for the "Amount" field is customized 
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/grouping-bar/aggregation-menu-open/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grouping-bar/aggregation-menu-open/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Aggregation-menu-open.cs" %}
-{% include code-snippet/pivot-table/grouping-bar/aggregation-menu-open/aggregation-menu-open.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grouping-bar/aggregation-menu-open/aggregation-menu-open.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -665,10 +665,10 @@ In the following sample, the dropdown menu for the "Amount" field is customized 
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/grouping-bar/aggregation-menu-open/razor %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grouping-bar/aggregation-menu-open/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Aggregation-menu-open.cs" %}
-{% include code-snippet/pivot-table/grouping-bar/aggregation-menu-open/aggregation-menu-open.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grouping-bar/aggregation-menu-open/aggregation-menu-open.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -706,10 +706,10 @@ For example, in the sample below, users can restrict actions like sorting or fil
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/action-event/actionBegin-groupingBar/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/action-event/actionBegin-groupingBar/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="ActionBegin-aggregation.cs" %}
-{% include code-snippet/pivot-table/action-event/actionBegin-groupingBar/actionBegin-aggregation.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/action-event/actionBegin-groupingBar/actionBegin-aggregation.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -717,10 +717,10 @@ For example, in the sample below, users can restrict actions like sorting or fil
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/action-event/actionBegin-groupingBar/razor %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/action-event/actionBegin-groupingBar/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="ActionBegin-aggregation.cs" %}
-{% include code-snippet/pivot-table/action-event/actionBegin-groupingBar/actionBegin-aggregation.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/action-event/actionBegin-groupingBar/actionBegin-aggregation.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -753,10 +753,10 @@ The event provides the following parameters:
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/action-event/actionComplete-groupingBar/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/action-event/actionComplete-groupingBar/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="ActionComplete-aggregation.cs" %}
-{% include code-snippet/pivot-table/action-event/actionComplete-groupingBar/actionComplete-aggregation.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/action-event/actionComplete-groupingBar/actionComplete-aggregation.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -764,10 +764,10 @@ The event provides the following parameters:
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/action-event/actionComplete-groupingBar/razor %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/action-event/actionComplete-groupingBar/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="ActionComplete-aggregation.cs" %}
-{% include code-snippet/pivot-table/action-event/actionComplete-groupingBar/actionComplete-aggregation.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/action-event/actionComplete-groupingBar/actionComplete-aggregation.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -796,10 +796,10 @@ When this event is triggered, users can refer to the information in these parame
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/action-event/actionFailure-groupingBar/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/action-event/actionFailure-groupingBar/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="ActionFailure-aggregation.cs" %}
-{% include code-snippet/pivot-table/action-event/actionFailure-groupingBar/actionFailure-aggregation.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/action-event/actionFailure-groupingBar/actionFailure-aggregation.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -807,10 +807,10 @@ When this event is triggered, users can refer to the information in these parame
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/action-event/actionFailure-groupingBar/razor %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/action-event/actionFailure-groupingBar/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="ActionFailure-aggregation.cs" %}
-{% include code-snippet/pivot-table/action-event/actionFailure-groupingBar/actionFailure-aggregation.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/action-event/actionFailure-groupingBar/actionFailure-aggregation.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

@@ -26,10 +26,10 @@ To enable deferred updates in the pivot table, set the [`AllowDeferLayoutUpdate`
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/defer-update/popup/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/defer-update/popup/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="DeferUpdate.cs" %}
-{% include code-snippet/pivot-table/defer-update/popup/DeferUpdate.cs %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/defer-update/popup/DeferUpdate.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -37,10 +37,10 @@ To enable deferred updates in the pivot table, set the [`AllowDeferLayoutUpdate`
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/defer-update/popup/razor %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/defer-update/popup/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="DeferUpdate.cs" %}
-{% include code-snippet/pivot-table/defer-update/popup/DeferUpdate.cs %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/defer-update/popup/DeferUpdate.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -61,10 +61,10 @@ To enable deferred updates in the static fieldlist, set the [`AllowDeferLayoutUp
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/defer-update/static/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/defer-update/static/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Static.cs" %}
-{% include code-snippet/pivot-table/defer-update/static/Static.cs %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/defer-update/static/Static.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -72,10 +72,10 @@ To enable deferred updates in the static fieldlist, set the [`AllowDeferLayoutUp
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/defer-update/static/razor %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/defer-update/static/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Static.cs" %}
-{% include code-snippet/pivot-table/defer-update/static/Static.cs %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/defer-update/static/Static.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

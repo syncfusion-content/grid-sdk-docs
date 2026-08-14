@@ -1020,10 +1020,10 @@ Use a trusted token issued by the authentication flow after sign‑in. Keep toke
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/server-side/Authentication/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/server-side/Authentication/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Authentication.cs" %}
-{% include code-snippet/pivot-table/server-side/Authentication/Authentication.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/server-side/Authentication/Authentication.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -1031,10 +1031,10 @@ Use a trusted token issued by the authentication flow after sign‑in. Keep toke
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/server-side/Authentication/razor %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/server-side/Authentication/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Authentication.cs" %}
-{% include code-snippet/pivot-table/server-side/Authentication/Authentication.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/server-side/Authentication/Authentication.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

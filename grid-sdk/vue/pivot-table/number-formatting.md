@@ -47,14 +47,14 @@ Use these standard format codes to specify the formatting type:
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/default-cs155/app-composition.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/default-cs155/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/default-cs155/app.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/default-cs155/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/pivot-grid/default-cs155" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/default-cs155" %}
 
 You can also format the values at runtime using the formatting dialog. This option can be enabled by setting the [`allowNumberFormatting`](https://ej2.syncfusion.com/vue/documentation/api/pivotview/index-default#allownumberformatting) property to **true**. The same has been discussed in some of the upcoming topics.
 
@@ -78,14 +78,14 @@ Custom format lets you display numbers in your preferred pattern by setting the 
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/default-cs156/app-composition.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/default-cs156/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/default-cs156/app.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/default-cs156/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/pivot-grid/default-cs156" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/default-cs156" %}
 
 ## Toolbar
 
@@ -93,14 +93,14 @@ Number formatting can be applied instantly at runtime through the built-in dialo
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/default-cs157/app-composition.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/default-cs157/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/default-cs157/app.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/default-cs157/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/pivot-grid/default-cs157" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/default-cs157" %}
 
 ## Invoking formatting dialog through external button
 
@@ -108,14 +108,14 @@ The number formatting dialog can be opened programmatically by clicking an exter
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/default-cs158/app-composition.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/default-cs158/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/default-cs158/app.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/default-cs158/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/pivot-grid/default-cs158" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/default-cs158" %}
 
 ## Events
 
@@ -133,14 +133,14 @@ The following sample demonstrates how to prevent number formatting changes for t
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/default-cs159/app-composition.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/default-cs159/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/default-cs159/app.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/default-cs159/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/pivot-grid/default-cs159" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/default-cs159" %}
 
 ## See Also
 

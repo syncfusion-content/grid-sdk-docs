@@ -18,14 +18,14 @@ When binding large volumes of raw data, the pivot table processes all raw data t
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/common-cs34/app-composition.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/common-cs34/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/common-cs34/app.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/common-cs34/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/pivot-grid/common-cs34" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/common-cs34" %}
 
 **Limitations during data compression:**
 

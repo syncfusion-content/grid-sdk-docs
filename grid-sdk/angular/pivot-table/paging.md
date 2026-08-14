@@ -29,15 +29,15 @@ You can also change the position, visibility, compact view, and template of the 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs201/src/app.component.ts %}
+{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs201/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs201/src/main.ts %}
+{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs201/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs201" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs201" %}
 
 ### Show pager UI at top or bottom
 
@@ -47,15 +47,15 @@ The following code demonstrates how to configure the pager UI to appear at the t
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs202/src/app.component.ts %}
+{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs202/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs202/src/main.ts %}
+{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs202/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs202" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs202" %}
 
 ### Inverse pager
 
@@ -63,15 +63,15 @@ The Pivot Table allows you to toggle the positions of the row and column pagers 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs203/src/app.component.ts %}
+{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs203/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs203/src/main.ts %}
+{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs203/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs203" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs203" %}
 
 ### Compact view
 
@@ -79,15 +79,15 @@ The Pivot Table provides a compact view for the pager UI, displaying only the pr
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs204/src/app.component.ts %}
+{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs204/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs204/src/main.ts %}
+{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs204/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs204" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs204" %}
 
 ### Show or hide paging option
 
@@ -97,15 +97,15 @@ The following code demonstrates how to hide the row pager by setting the [`showR
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs205/src/app.component.ts %}
+{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs205/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs205/src/main.ts %}
+{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs205/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs205" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs205" %}
 
 ### Show or hide page size
 
@@ -113,15 +113,15 @@ The Pivot Table allows you to control the visibility of the "Rows per page" and 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs206/src/app.component.ts %}
+{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs206/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs206/src/main.ts %}
+{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs206/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs206" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs206" %}
 
 ### Customize page size
 
@@ -131,15 +131,15 @@ The following example sets the "Rows per page" dropdown with page sizes of 10, 2
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs207/src/app.component.ts %}
+{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs207/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs207/src/main.ts %}
+{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs207/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs207" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs207" %}
 
 ### Template
 
@@ -149,16 +149,16 @@ This following example shows how to create a custom template for both row and co
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/pagingTemplate-cs1/src/app.component.ts %}
+{% include code-snippet/grid-sdk/angular/pivot-table/pagingTemplate-cs1/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/pivot-grid/pagingTemplate-cs1/index.html %}
+{% include code-snippet/grid-sdk/angular/pivot-table/pagingTemplate-cs1/index.html %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/pagingTemplate-cs1/src/main.ts %}
+{% include code-snippet/grid-sdk/angular/pivot-table/pagingTemplate-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/samples/pivot-grid/pagingTemplate-cs1" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/pagingTemplate-cs1" %}

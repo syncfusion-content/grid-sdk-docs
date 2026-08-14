@@ -36,25 +36,25 @@ The following example demonstrates how to set the **Country** column to use a `D
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/pivot-table/pivot-table-cs79/index.ts %}
+{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs79/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/pivot-table/pivot-table-cs79/index.html %}
+{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs79/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs79" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs79" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/pivot-table/pivot-table-cs79/index.js %}
+{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs79/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/pivot-table/pivot-table-cs79/index.html %}
+{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs79/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs79" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs79" %}
 {% endif %}

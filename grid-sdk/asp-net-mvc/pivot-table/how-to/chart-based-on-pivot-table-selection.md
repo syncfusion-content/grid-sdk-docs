@@ -24,10 +24,10 @@ The [`CellSelected`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/field-list/chart/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/field-list/chart/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Popup.cs" %}
-{% include code-snippet/pivot-table/field-list/chart/Popup.cs %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/field-list/chart/Popup.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -35,10 +35,10 @@ The [`CellSelected`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/field-list/chart/razor %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/field-list/chart/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Popup.cs" %}
-{% include code-snippet/pivot-table/field-list/chart/Popup.cs %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/field-list/chart/Popup.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

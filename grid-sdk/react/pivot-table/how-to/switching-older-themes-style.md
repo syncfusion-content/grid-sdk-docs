@@ -68,11 +68,11 @@ The following code sample demonstrates how to replicate the older theme style:
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/pivot-table/switch-theme-cs1/app/App.jsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/switch-theme-cs1/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/pivot-table/switch-theme-cs1/app/App.tsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/switch-theme-cs1/app/App.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/pivot-table/switch-theme-cs1" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/switch-theme-cs1" %}

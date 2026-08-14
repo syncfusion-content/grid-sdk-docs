@@ -45,14 +45,14 @@ Once enabled, hyperlinks will be shown consistently in row headers, column heade
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/default-cs143/app-composition.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/default-cs143/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/default-cs143/app.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/default-cs143/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/pivot-grid/default-cs143" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/default-cs143" %}
 
 ## Hyperlink for row headers
 
@@ -60,14 +60,14 @@ The pivot table provides a way to display hyperlinks specifically in **row heade
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/default-cs144/app-composition.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/default-cs144/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/default-cs144/app.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/default-cs144/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/pivot-grid/default-cs144" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/default-cs144" %}
 
 ## Hyperlink for column headers
 
@@ -75,14 +75,14 @@ The pivot table provides an option to display hyperlinks specifically in column 
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/default-cs145/app-composition.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/default-cs145/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/default-cs145/app.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/default-cs145/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/pivot-grid/default-cs145" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/default-cs145" %}
 
 ## Hyperlink for value cells
 
@@ -90,14 +90,14 @@ The pivot table provides support for displaying hyperlinks specifically in value
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/default-cs146/app-composition.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/default-cs146/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/default-cs146/app.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/default-cs146/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/pivot-grid/default-cs146" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/default-cs146" %}
 
 ## Hyperlink for summary cells
 
@@ -105,14 +105,14 @@ The pivot table provides support for displaying hyperlinks specifically in summa
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/default-cs147/app-composition.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/default-cs147/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/default-cs147/app.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/default-cs147/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/pivot-grid/default-cs147" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/default-cs147" %}
 
 ## Condition based hyperlink
 
@@ -127,14 +127,14 @@ In the example below, the pivot table is configured to display hyperlinks only i
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/default-cs148/app-composition.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/default-cs148/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/default-cs148/app.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/default-cs148/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/pivot-grid/default-cs148" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/default-cs148" %}
 
 ## Header based hyperlink
 
@@ -146,14 +146,14 @@ N> The **dot(.)** character in **FY 2015.Q1.Units Sold** is used by default to i
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/default-cs149/app-composition.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/default-cs149/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/default-cs149/app.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/default-cs149/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/pivot-grid/default-cs149" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/default-cs149" %}
 
 ## Event
 
@@ -170,14 +170,14 @@ In the example below, when a hyperlink cell is clicked, a custom attribute (**da
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/default-cs150/app-composition.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/default-cs150/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/default-cs150/app.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/default-cs150/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/pivot-grid/default-cs150" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/default-cs150" %}
 
 ## See Also
 

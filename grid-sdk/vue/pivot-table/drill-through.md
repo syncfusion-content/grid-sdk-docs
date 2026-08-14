@@ -18,14 +18,14 @@ Below is an example of enabling drill-through in a Pivot Table:
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/default-cs35/app-composition.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/default-cs35/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/default-cs35/app.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/default-cs35/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/pivot-grid/default-cs35" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/default-cs35" %}
 
 Users can also access drill-through data through the pivot chart. By clicking on any data point in the pivot chart, they can view the raw data in a data grid displayed in a new window.
 
@@ -33,14 +33,14 @@ Below is an example of enabling drill-through with a pivot chart:
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/default-cs36/app-composition.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/default-cs36/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/default-cs36/app.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/default-cs36/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/pivot-grid/default-cs36" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/default-cs36" %}
 
 ## Maximum rows to retrieve
 
@@ -145,14 +145,14 @@ Below is an example of using the [`drillThrough`](https://ej2.syncfusion.com/vue
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/default-cs37/app-composition.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/default-cs37/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/default-cs37/app.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/default-cs37/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/pivot-grid/default-cs37" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/default-cs37" %}
 
 ### BeginDrillThrough
 
@@ -169,11 +169,11 @@ event.
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/default-cs38/app-composition.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/default-cs38/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/default-cs38/app.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/default-cs38/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/pivot-grid/default-cs38" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/default-cs38" %}

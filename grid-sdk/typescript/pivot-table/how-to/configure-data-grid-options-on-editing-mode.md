@@ -23,25 +23,25 @@ The [`beginDrillThrough`](https://ej2.syncfusion.com/documentation/api/pivotview
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/pivot-table/pivot-table-cs73/index.ts %}
+{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs73/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/pivot-table/pivot-table-cs73/index.html %}
+{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs73/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs73" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs73" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/pivot-table/pivot-table-cs73/index.js %}
+{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs73/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/pivot-table/pivot-table-cs73/index.html %}
+{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs73/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs73" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs73" %}
 {% endif %}

@@ -14,14 +14,14 @@ The tooltip displays contextual information when users hover over value cells in
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/default-cs256/app-composition.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/default-cs256/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/default-cs256/app.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/default-cs256/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/pivot-grid/default-cs256" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/default-cs256" %}
 
 ## Tooltip Template
 
@@ -41,11 +41,11 @@ The example below shows how to define the Pivot Table tooltip template in `index
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/default-cs257/app-composition.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/default-cs257/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/default-cs257/app.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/default-cs257/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/pivot-grid/default-cs257" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/default-cs257" %}

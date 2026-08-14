@@ -15,14 +15,14 @@ State persistence enables users to automatically retain the entire configuration
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/pivot-table/state-persistence-cs1/index.js %}
+{% include code-snippet/grid-sdk/javascript/pivot-table/state-persistence-cs1/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/pivot-table/state-persistence-cs1/index.html %}
+{% include code-snippet/grid-sdk/javascript/pivot-table/state-persistence-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/pivot-table/state-persistence-cs1" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/pivot-table/state-persistence-cs1" %}
 
 ## Save and Load Pivot Layout
 
@@ -30,11 +30,11 @@ In addition to automatic state persistence, the Pivot Table component allows you
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/pivot-table/state-persistence-cs2/index.js %}
+{% include code-snippet/grid-sdk/javascript/pivot-table/state-persistence-cs2/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/pivot-table/state-persistence-cs2/index.html %}
+{% include code-snippet/grid-sdk/javascript/pivot-table/state-persistence-cs2/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/pivot-table/state-persistence-cs2" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/pivot-table/state-persistence-cs2" %}

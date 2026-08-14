@@ -56,10 +56,10 @@ For each value field, the aggregation type can be set using the property [`type`
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/aggregation/aggregation/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/aggregation/aggregation/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Aggregation.cs" %}
-{% include code-snippet/pivot-table/aggregation/aggregation/aggregation.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/aggregation/aggregation/aggregation.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -67,10 +67,10 @@ For each value field, the aggregation type can be set using the property [`type`
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/aggregation/aggregation/razor %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/aggregation/aggregation/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Aggregation.cs" %}
-{% include code-snippet/pivot-table/aggregation/aggregation/aggregation.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/aggregation/aggregation/aggregation.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -101,10 +101,10 @@ The following code demonstrates how to configure the pivot table component to di
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/aggregation/aggregationTypes/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/aggregation/aggregationTypes/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Aggregation.cs" %}
-{% include code-snippet/pivot-table/aggregation/aggregationTypes/aggregation.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/aggregation/aggregationTypes/aggregation.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -112,10 +112,10 @@ The following code demonstrates how to configure the pivot table component to di
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/aggregation/aggregationTypes/razor %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/aggregation/aggregationTypes/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Aggregation.cs" %}
-{% include code-snippet/pivot-table/aggregation/aggregationTypes/aggregation.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/aggregation/aggregationTypes/aggregation.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -134,10 +134,10 @@ This customization enhances the clarity of the pivot table’s interface by simp
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/aggregation/aggregation-button/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/aggregation/aggregation-button/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Aggregation.cs" %}
-{% include code-snippet/pivot-table/aggregation/aggregation-button/aggregation.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/aggregation/aggregation-button/aggregation.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -145,10 +145,10 @@ This customization enhances the clarity of the pivot table’s interface by simp
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/aggregation/aggregation-button/razor %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/aggregation/aggregation-button/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Aggregation.cs" %}
-{% include code-snippet/pivot-table/aggregation/aggregation-button/aggregation.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/aggregation/aggregation-button/aggregation.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -170,10 +170,10 @@ By default, the dropdown icon to change the aggregation type is visible in the g
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/aggregation/aggregation-icon/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/aggregation/aggregation-icon/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Aggregation.cs" %}
-{% include code-snippet/pivot-table/aggregation/aggregation-icon/aggregation.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/aggregation/aggregation-icon/aggregation.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -181,10 +181,10 @@ By default, the dropdown icon to change the aggregation type is visible in the g
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/aggregation/aggregation-icon/razor %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/aggregation/aggregation-icon/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Aggregation.cs" %}
-{% include code-snippet/pivot-table/aggregation/aggregation-icon/aggregation.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/aggregation/aggregation-icon/aggregation.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -213,10 +213,10 @@ The [`aggregateCellInfo`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusi
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/aggregation/aggregation-icon/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/aggregation/aggregation-icon/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Aggregation.cs" %}
-{% include code-snippet/pivot-table/aggregation/aggregation-icon/aggregation.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/aggregation/aggregation-icon/aggregation.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -224,10 +224,10 @@ The [`aggregateCellInfo`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusi
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/aggregation/aggregation-icon/razor %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/aggregation/aggregation-icon/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Aggregation.cs" %}
-{% include code-snippet/pivot-table/aggregation/aggregation-icon/aggregation.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/aggregation/aggregation-icon/aggregation.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -252,10 +252,10 @@ In the following example, an action taken during aggregation type selection via 
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/action-event/actionBegin-aggregation/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/action-event/actionBegin-aggregation/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="ActionBegin-aggregation.cs" %}
-{% include code-snippet/pivot-table/action-event/actionBegin-aggregation/actionBegin-aggregation.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/action-event/actionBegin-aggregation/actionBegin-aggregation.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -263,10 +263,10 @@ In the following example, an action taken during aggregation type selection via 
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/action-event/actionBegin-aggregation/razor %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/action-event/actionBegin-aggregation/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="ActionBegin-aggregation.cs" %}
-{% include code-snippet/pivot-table/action-event/actionBegin-aggregation/actionBegin-aggregation.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/action-event/actionBegin-aggregation/actionBegin-aggregation.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -286,10 +286,10 @@ The [`actionComplete`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/action-event/actionComplete-aggregation/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/action-event/actionComplete-aggregation/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="ActionComplete-aggregation.cs" %}
-{% include code-snippet/pivot-table/action-event/actionComplete-aggregation/actionComplete-aggregation.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/action-event/actionComplete-aggregation/actionComplete-aggregation.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -297,10 +297,10 @@ The [`actionComplete`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/action-event/actionComplete-aggregation/razor %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/action-event/actionComplete-aggregation/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="ActionComplete-aggregation.cs" %}
-{% include code-snippet/pivot-table/action-event/actionComplete-aggregation/actionComplete-aggregation.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/action-event/actionComplete-aggregation/actionComplete-aggregation.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -316,10 +316,10 @@ The [`actionFailure`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.E
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/action-event/actionFailure-aggregation/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/action-event/actionFailure-aggregation/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="ActionFailure-aggregation.cs" %}
-{% include code-snippet/pivot-table/action-event/actionFailure-aggregation/actionFailure-aggregation.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/action-event/actionFailure-aggregation/actionFailure-aggregation.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -327,10 +327,10 @@ The [`actionFailure`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.E
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/action-event/actionFailure-aggregation/razor %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/action-event/actionFailure-aggregation/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="ActionFailure-aggregation.cs" %}
-{% include code-snippet/pivot-table/action-event/actionFailure-aggregation/actionFailure-aggregation.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/action-event/actionFailure-aggregation/actionFailure-aggregation.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

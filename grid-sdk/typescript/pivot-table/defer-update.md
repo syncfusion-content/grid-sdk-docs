@@ -24,14 +24,14 @@ To enable deferred updates in the pivot table, set the [`allowDeferLayoutUpdate`
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/pivot-table/pivot-table-cs336/index.ts %}
+{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs336/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/pivot-table/pivot-table-cs336/index.html %}
+{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs336/index.html %}
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs336" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs336" %}
 
 ## Stand-alone Field List (Fixed)
 
@@ -43,11 +43,11 @@ To enable deferred updates in the static fieldlist, set the [`allowDeferLayoutUp
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/pivot-table/field-list-cs10/index.ts %}
+{% include code-snippet/grid-sdk/typescript/pivot-table/field-list-cs10/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/pivot-table/field-list-cs10/index.html %}
+{% include code-snippet/grid-sdk/typescript/pivot-table/field-list-cs10/index.html %}
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "page.domainurl/code-snippet/pivot-table/field-list-cs10" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/pivot-table/field-list-cs10" %}

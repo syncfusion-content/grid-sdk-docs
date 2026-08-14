@@ -80,10 +80,10 @@ In ASP.NET MVC refer the culture files directly from `/scripts/cldr-data` locati
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/globalization/internationalization/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/globalization/internationalization/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Internationalization.cs" %}
-{% include code-snippet/pivot-table/globalization/internationalization/Internationalization.cs %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/globalization/internationalization/Internationalization.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -91,10 +91,10 @@ In ASP.NET MVC refer the culture files directly from `/scripts/cldr-data` locati
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/globalization/internationalization/razor %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/globalization/internationalization/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Internationalization.cs" %}
-{% include code-snippet/pivot-table/globalization/internationalization/Internationalization.cs %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/globalization/internationalization/Internationalization.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -115,10 +115,10 @@ The following example demonstrates the decimal separators in `Deutsch` culture.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/globalization/locale/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/globalization/locale/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Locale.cs" %}
-{% include code-snippet/pivot-table/globalization/locale/Locale.cs %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/globalization/locale/Locale.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -126,10 +126,10 @@ The following example demonstrates the decimal separators in `Deutsch` culture.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/globalization/locale/razor %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/globalization/locale/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Locale.cs" %}
-{% include code-snippet/pivot-table/globalization/locale/Locale.cs %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/globalization/locale/Locale.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -602,10 +602,10 @@ The following example demonstrates the Pivot Table in `Deutsch` culture.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/globalization/localization/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/globalization/localization/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Localization.cs" %}
-{% include code-snippet/pivot-table/globalization/localization/Localization.cs %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/globalization/localization/Localization.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -613,10 +613,10 @@ The following example demonstrates the Pivot Table in `Deutsch` culture.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/globalization/localization/razor %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/globalization/localization/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Localization.cs" %}
-{% include code-snippet/pivot-table/globalization/localization/Localization.cs %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/globalization/localization/Localization.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -631,10 +631,10 @@ RTL provides an option to switch the text direction and layout of the Pivot Tabl
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/globalization/rtl/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/globalization/rtl/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="RTL.cs" %}
-{% include code-snippet/pivot-table/globalization/rtl/RTL.cs %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/globalization/rtl/RTL.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -642,10 +642,10 @@ RTL provides an option to switch the text direction and layout of the Pivot Tabl
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/globalization/rtl/razor %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/globalization/rtl/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="RTL.cs" %}
-{% include code-snippet/pivot-table/globalization/rtl/RTL.cs %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/globalization/rtl/RTL.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

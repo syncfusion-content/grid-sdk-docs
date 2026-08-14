@@ -29,14 +29,14 @@ To use the grouping feature, you need to inject the `Grouping` module in the Piv
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/pivot-table/grouping-cs1/index.js %}
+{% include code-snippet/grid-sdk/javascript/pivot-table/grouping-cs1/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/pivot-table/grouping-cs1/index.html %}
+{% include code-snippet/grid-sdk/javascript/pivot-table/grouping-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/pivot-table/grouping-cs1" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/pivot-table/grouping-cs1" %}
 
 ## Number Grouping
 
@@ -44,14 +44,14 @@ Number grouping allows users to organize numerical data into different ranges, s
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/pivot-table/grouping-cs2/index.js %}
+{% include code-snippet/grid-sdk/javascript/pivot-table/grouping-cs2/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/pivot-table/grouping-cs2/index.html %}
+{% include code-snippet/grid-sdk/javascript/pivot-table/grouping-cs2/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/pivot-table/grouping-cs2" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/pivot-table/grouping-cs2" %}
 
 ![Context-menu options for number grouping](images/number-group-option.png)
 
@@ -84,14 +84,14 @@ You can configure number grouping through code-behind using the [`groupSettings`
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/pivot-table/grouping-cs3/index.js %}
+{% include code-snippet/grid-sdk/javascript/pivot-table/grouping-cs3/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/pivot-table/grouping-cs3/index.html %}
+{% include code-snippet/grid-sdk/javascript/pivot-table/grouping-cs3/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/pivot-table/grouping-cs3" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/pivot-table/grouping-cs3" %}
 
 ![Applied grouping settings updated in Pivot Table for number grouping](images/number-group-updated.png)
 
@@ -107,14 +107,14 @@ Date grouping organizes date and time data into hierarchical segments, such as y
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/pivot-table/grouping-cs4/index.js %}
+{% include code-snippet/grid-sdk/javascript/pivot-table/grouping-cs4/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/pivot-table/grouping-cs4/index.html %}
+{% include code-snippet/grid-sdk/javascript/pivot-table/grouping-cs4/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/pivot-table/grouping-cs4" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/pivot-table/grouping-cs4" %}
 
 ![Context-menu options for date grouping](images/date-group-option.png)
 
@@ -152,14 +152,14 @@ You can configure date grouping programmatically using the [`groupSettings`](htt
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/pivot-table/grouping-cs5/index.js %}
+{% include code-snippet/grid-sdk/javascript/pivot-table/grouping-cs5/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/pivot-table/grouping-cs5/index.html %}
+{% include code-snippet/grid-sdk/javascript/pivot-table/grouping-cs5/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/pivot-table/grouping-cs5" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/pivot-table/grouping-cs5" %}
 
 Furthermore, in the field list UI, these date group fields **Years (Date)**, **Quarters (Date)**, **Months (Date)**, etc... will be automatically grouped and displayed under the **Date** folder name.
 
@@ -177,14 +177,14 @@ Custom grouping is an option that enables users to group data types (date, time,
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/pivot-table/grouping-cs6/index.js %}
+{% include code-snippet/grid-sdk/javascript/pivot-table/grouping-cs6/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/pivot-table/grouping-cs6/index.html %}
+{% include code-snippet/grid-sdk/javascript/pivot-table/grouping-cs6/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/pivot-table/grouping-cs6" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/pivot-table/grouping-cs6" %}
 
 ### Creating a Custom Group
 
@@ -238,14 +238,14 @@ Here’s an example of configuring custom grouping programmatically:
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/pivot-table/grouping-cs7/index.js %}
+{% include code-snippet/grid-sdk/javascript/pivot-table/grouping-cs7/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/pivot-table/grouping-cs7/index.html %}
+{% include code-snippet/grid-sdk/javascript/pivot-table/grouping-cs7/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/pivot-table/grouping-cs7" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/pivot-table/grouping-cs7" %}
 
 ![Applied grouping settings updated in Pivot Table for custom grouping](images/custom-group-updated.png)
 

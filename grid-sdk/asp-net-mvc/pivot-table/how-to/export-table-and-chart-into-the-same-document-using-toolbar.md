@@ -30,10 +30,10 @@ The following example demonstrates how to restrict the built-in export action by
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/export-table-and-chart/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/export-table-and-chart/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="ExportTableAndChart.cs" %}
-{% include code-snippet/pivot-table/export-table-and-chart/ExportTableAndChart.cs %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/export-table-and-chart/ExportTableAndChart.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -41,10 +41,10 @@ The following example demonstrates how to restrict the built-in export action by
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/export-table-and-chart/razor %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/export-table-and-chart/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="ExportTableAndChart.cs" %}
-{% include code-snippet/pivot-table/export-table-and-chart/ExportTableAndChart.cs %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/export-table-and-chart/ExportTableAndChart.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

@@ -17,25 +17,25 @@ When there are no fields configured in a pivot table's row, column, value, and f
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/pivot-table/pivot-table-cs83/index.ts %}
+{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs83/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/pivot-table/pivot-table-cs83/index.html %}
+{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs83/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs83" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs83" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/pivot-table/pivot-table-cs83/index.js %}
+{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs83/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/pivot-table/pivot-table-cs83/index.html %}
+{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs83/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs83" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs83" %}
 {% endif %}

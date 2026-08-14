@@ -20,17 +20,17 @@ For row header tooltips, the formatted text and field name of the current row he
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/pivot-table/default-cs313/app/App.jsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/default-cs313/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/pivot-table/default-cs313/app/App.tsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/default-cs313/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/pivot-table/default-cs313/app/datasource.jsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/default-cs313/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/pivot-table/default-cs313/app/datasource.tsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/default-cs313/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs313" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs313" %}

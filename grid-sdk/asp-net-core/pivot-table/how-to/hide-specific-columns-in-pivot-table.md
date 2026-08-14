@@ -18,10 +18,10 @@ N> The **dot(.)** character in **FY 2016.Units Sold** is used by default to iden
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/hide-specific-column/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/hide-specific-column/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="HideSpecificColumn.cs" %}
-{% include code-snippet/pivot-table/hide-specific-column/HideSpecificColumn.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/hide-specific-column/HideSpecificColumn.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -29,10 +29,10 @@ N> The **dot(.)** character in **FY 2016.Units Sold** is used by default to iden
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/hide-specific-column/razor %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/hide-specific-column/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="HideSpecificColumn.cs" %}
-{% include code-snippet/pivot-table/hide-specific-column/HideSpecificColumn.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/hide-specific-column/HideSpecificColumn.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

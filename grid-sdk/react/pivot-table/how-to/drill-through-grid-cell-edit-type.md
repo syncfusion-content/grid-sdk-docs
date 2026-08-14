@@ -33,17 +33,17 @@ The following example demonstrates how to set the **Country** column to use a `D
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/pivot-table/default-cs164/app/App.jsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/default-cs164/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/pivot-table/default-cs164/app/App.tsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/default-cs164/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/pivot-table/default-cs164/app/datasource.jsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/default-cs164/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/pivot-table/default-cs164/app/datasource.tsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/default-cs164/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs164" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs164" %}

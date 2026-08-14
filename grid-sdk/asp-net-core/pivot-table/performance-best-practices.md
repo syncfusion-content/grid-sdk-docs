@@ -85,10 +85,10 @@ It obviously impacts the overall performance during Pivot Table rendering becaus
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/performance-best-practices/performance-best-practices-cs1/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/performance-best-practices/performance-best-practices-cs1/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Performance-best-practices1.cs" %}
-{% include code-snippet/pivot-table/performance-best-practices/performance-best-practices-cs1/Performance-best-practices1.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/performance-best-practices/performance-best-practices-cs1/Performance-best-practices1.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -96,10 +96,10 @@ It obviously impacts the overall performance during Pivot Table rendering becaus
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/performance-best-practices/performance-best-practices-cs1/razor %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/performance-best-practices/performance-best-practices-cs1/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Performance-best-practices1.cs" %}
-{% include code-snippet/pivot-table/performance-best-practices/performance-best-practices-cs1/Performance-best-practices1.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/performance-best-practices/performance-best-practices-cs1/Performance-best-practices1.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -112,10 +112,10 @@ Here's an example below of configuring grouping in your input raw data and assig
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/performance-best-practices/performance-best-practices-cs2/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/performance-best-practices/performance-best-practices-cs2/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Performance-best-practices2.cs" %}
-{% include code-snippet/pivot-table/performance-best-practices/performance-best-practices-cs2/Performance-best-practices2.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/performance-best-practices/performance-best-practices-cs2/Performance-best-practices2.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -123,10 +123,10 @@ Here's an example below of configuring grouping in your input raw data and assig
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/performance-best-practices/performance-best-practices-cs2/razor %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/performance-best-practices/performance-best-practices-cs2/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Performance-best-practices2.cs" %}
-{% include code-snippet/pivot-table/performance-best-practices/performance-best-practices-cs2/Performance-best-practices2.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/performance-best-practices/performance-best-practices-cs2/Performance-best-practices2.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

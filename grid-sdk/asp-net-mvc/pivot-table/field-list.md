@@ -30,10 +30,10 @@ To use the field list, you need to inject the `FieldList` module in the Pivot Ta
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/getting-start-mvc/fieldlist/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/getting-start-mvc/fieldlist/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Fieldlist.cs" %}
-{% include code-snippet/pivot-table/getting-start-mvc/fieldlist/fieldlist.cs %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/getting-start-mvc/fieldlist/fieldlist.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -41,10 +41,10 @@ To use the field list, you need to inject the `FieldList` module in the Pivot Ta
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/getting-start-mvc/fieldlist/razor %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/getting-start-mvc/fieldlist/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Fieldlist.cs" %}
-{% include code-snippet/pivot-table/getting-start-mvc/fieldlist/fieldlist.cs %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/getting-start-mvc/fieldlist/fieldlist.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -67,10 +67,10 @@ The stand-alone Field List allows users to keep the Field List visible at a spec
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/field-list/static/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/field-list/static/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Static.cs" %}
-{% include code-snippet/pivot-table/field-list/static/Static.cs %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/field-list/static/Static.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -78,10 +78,10 @@ The stand-alone Field List allows users to keep the Field List visible at a spec
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/field-list/static/razor %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/field-list/static/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Static.cs" %}
-{% include code-snippet/pivot-table/field-list/static/Static.cs %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/field-list/static/Static.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -104,10 +104,10 @@ The sample code below shows how to open the Field List dialog using an external 
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/field-list/popup/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/field-list/popup/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Popup.cs" %}
-{% include code-snippet/pivot-table/field-list/popup/Popup.cs %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/field-list/popup/Popup.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -115,10 +115,10 @@ The sample code below shows how to open the Field List dialog using an external 
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/field-list/popup/razor %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/field-list/popup/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Popup.cs" %}
-{% include code-snippet/pivot-table/field-list/popup/Popup.cs %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/field-list/popup/Popup.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -144,10 +144,10 @@ To enable the search box in the stand-alone Field List UI, set the [`EnableField
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/field-list/Search-desired-field-static/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/field-list/Search-desired-field-static/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Search.cs" %}
-{% include code-snippet/pivot-table/field-list/Search-desired-field-static/Search-desired-field-static.cs %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/field-list/Search-desired-field-static/Search-desired-field-static.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -155,10 +155,10 @@ To enable the search box in the stand-alone Field List UI, set the [`EnableField
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/field-list/Search-desired-field-static/razor %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/field-list/Search-desired-field-static/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Search.cs" %}
-{% include code-snippet/pivot-table/field-list/Search-desired-field-static/Search-desired-field-static.cs %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/field-list/Search-desired-field-static/Search-desired-field-static.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -175,10 +175,10 @@ To enable the search box in the Pivot Table's built-in popup Field List UI, set 
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/field-list/Search-desired-field-popup/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/field-list/Search-desired-field-popup/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Search.cs" %}
-{% include code-snippet/pivot-table/field-list/Search-desired-field-popup/Search-desired-field-popup.cs %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/field-list/Search-desired-field-popup/Search-desired-field-popup.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -186,10 +186,10 @@ To enable the search box in the Pivot Table's built-in popup Field List UI, set 
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/field-list/Search-desired-field-popup/razor %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/field-list/Search-desired-field-popup/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Search.cs" %}
-{% include code-snippet/pivot-table/field-list/Search-desired-field-popup/Search-desired-field-popup.cs %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/field-list/Search-desired-field-popup/Search-desired-field-popup.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -214,10 +214,10 @@ Below is an example showing how to set up this option when initializing the Pivo
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/field-list/sort/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/field-list/sort/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="fieldSort.cs" %}
-{% include code-snippet/pivot-table/field-list/sort/fieldSort.cs %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/field-list/sort/fieldSort.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -225,10 +225,10 @@ Below is an example showing how to set up this option when initializing the Pivo
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/field-list/sort/razor %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/field-list/sort/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="fieldSort.cs" %}
-{% include code-snippet/pivot-table/field-list/sort/fieldSort.cs %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/field-list/sort/fieldSort.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -247,10 +247,10 @@ Organizing fields into custom folders in the Field List helps users manage and l
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/field-list/group-name-folder/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/field-list/group-name-folder/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="GroupName.cs" %}
-{% include code-snippet/pivot-table/field-list/group-name-folder/GroupName.cs %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/field-list/group-name-folder/GroupName.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -258,10 +258,10 @@ Organizing fields into custom folders in the Field List helps users manage and l
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/field-list/group-name-folder/razor %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/field-list/group-name-folder/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="GroupName.cs" %}
-{% include code-snippet/pivot-table/field-list/group-name-folder/GroupName.cs %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/field-list/group-name-folder/GroupName.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -284,10 +284,10 @@ When you connect a data source to the Pivot Table, all available fields from the
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/field-list/exclude-fields/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/field-list/exclude-fields/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Fieldlist.cs" %}
-{% include code-snippet/pivot-table/field-list/exclude-fields/fieldlist.cs %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/field-list/exclude-fields/fieldlist.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -295,10 +295,10 @@ When you connect a data source to the Pivot Table, all available fields from the
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/field-list/exclude-fields/razor %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/field-list/exclude-fields/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Fieldlist.cs" %}
-{% include code-snippet/pivot-table/field-list/exclude-fields/fieldlist.cs %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/field-list/exclude-fields/fieldlist.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -367,10 +367,10 @@ The sample code below demonstrates how to display the built-in Field List dialog
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/field-list/fieldlist-on-specifictarget/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/field-list/fieldlist-on-specifictarget/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Fieldlist-on-specifictarget.cs" %}
-{% include code-snippet/pivot-table/field-list/fieldlist-on-specifictarget/fieldlist-on-specifictarget.cs %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/field-list/fieldlist-on-specifictarget/fieldlist-on-specifictarget.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -378,10 +378,10 @@ The sample code below demonstrates how to display the built-in Field List dialog
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/field-list/fieldlist-on-specifictarget/razor %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/field-list/fieldlist-on-specifictarget/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Fieldlist-on-specifictarget.cs" %}
-{% include code-snippet/pivot-table/field-list/fieldlist-on-specifictarget/fieldlist-on-specifictarget.cs %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/field-list/fieldlist-on-specifictarget/fieldlist-on-specifictarget.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -398,10 +398,10 @@ The Field List can be displayed in the toolbar by enabling specific options in t
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/field-list/toolbar/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/field-list/toolbar/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Fieldlist.cs" %}
-{% include code-snippet/pivot-table/field-list/toolbar/fieldlist.cs %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/field-list/toolbar/fieldlist.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -409,10 +409,10 @@ The Field List can be displayed in the toolbar by enabling specific options in t
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/field-list/toolbar/razor %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/field-list/toolbar/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Fieldlist.cs" %}
-{% include code-snippet/pivot-table/field-list/toolbar/fieldlist.cs %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/field-list/toolbar/fieldlist.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -431,10 +431,10 @@ In the example below, captions are set for the `Year` and `Quarter` fields dynam
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/field-list/fieldlist-caption/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/field-list/fieldlist-caption/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Fieldlist.cs" %}
-{% include code-snippet/pivot-table/field-list/fieldlist-caption/fieldlist.cs %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/field-list/fieldlist-caption/fieldlist.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -442,10 +442,10 @@ In the example below, captions are set for the `Year` and `Quarter` fields dynam
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/field-list/fieldlist-caption/razor %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/field-list/fieldlist-caption/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Fieldlist.cs" %}
-{% include code-snippet/pivot-table/field-list/fieldlist-caption/fieldlist.cs %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/field-list/fieldlist-caption/fieldlist.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -466,10 +466,10 @@ At runtime, the **Values** button in the field list allows users to move the val
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/field-list/fieldlist-valuesbutton/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/field-list/fieldlist-valuesbutton/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Fieldlist-valuesbutton.cs" %}
-{% include code-snippet/pivot-table/field-list/fieldlist-valuesbutton/fieldlist-valuesbutton.cs %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/field-list/fieldlist-valuesbutton/fieldlist-valuesbutton.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -477,10 +477,10 @@ At runtime, the **Values** button in the field list allows users to move the val
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/field-list/fieldlist-valuesbutton/razor %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/field-list/fieldlist-valuesbutton/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Fieldlist-valuesbutton.cs" %}
-{% include code-snippet/pivot-table/field-list/fieldlist-valuesbutton/fieldlist-valuesbutton.cs %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/field-list/fieldlist-valuesbutton/fieldlist-valuesbutton.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -506,10 +506,10 @@ This event includes the following parameters: [`PivotViewDataSourceSettings`](ht
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/field-list/static/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/field-list/static/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Static.cs" %}
-{% include code-snippet/pivot-table/field-list/static/Static.cs %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/field-list/static/Static.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -517,10 +517,10 @@ This event includes the following parameters: [`PivotViewDataSourceSettings`](ht
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/field-list/static/razor %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/field-list/static/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Static.cs" %}
-{% include code-snippet/pivot-table/field-list/static/Static.cs %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/field-list/static/Static.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -535,10 +535,10 @@ For example, when a user sorts a field in the field list, the field list updates
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/field-list/refresh-event/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/field-list/refresh-event/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Popup.cs" %}
-{% include code-snippet/pivot-table/field-list/refresh-event/Popup.cs %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/field-list/refresh-event/Popup.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -546,10 +546,10 @@ For example, when a user sorts a field in the field list, the field list updates
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/field-list/refresh-event/razor %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/field-list/refresh-event/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Popup.cs" %}
-{% include code-snippet/pivot-table/field-list/refresh-event/Popup.cs %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/field-list/refresh-event/Popup.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -570,10 +570,10 @@ In the following code example, we changed the caption of the dropped field using
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/field-list/field-dropped/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/field-list/field-dropped/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Dropped.cs" %}
-{% include code-snippet/pivot-table/field-list/field-dropped/dropped.cs %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/field-list/field-dropped/dropped.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -581,10 +581,10 @@ In the following code example, we changed the caption of the dropped field using
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/field-list/field-dropped/razor %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/field-list/field-dropped/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Dropped.cs" %}
-{% include code-snippet/pivot-table/field-list/field-dropped/dropped.cs %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/field-list/field-dropped/dropped.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -623,10 +623,10 @@ In the following sample, you can restrict opening the popup field list by settin
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/action-event/actionBegin-fieldList/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/action-event/actionBegin-fieldList/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="ActionBegin-fieldList.cs" %}
-{% include code-snippet/pivot-table/action-event/actionBegin-fieldList/actionBegin-fieldList.cs %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/action-event/actionBegin-fieldList/actionBegin-fieldList.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -634,10 +634,10 @@ In the following sample, you can restrict opening the popup field list by settin
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/action-event/actionBegin-fieldList/razor %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/action-event/actionBegin-fieldList/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="ActionBegin-fieldList.cs" %}
-{% include code-snippet/pivot-table/action-event/actionBegin-fieldList/actionBegin-fieldList.cs %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/action-event/actionBegin-fieldList/actionBegin-fieldList.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -670,10 +670,10 @@ The [`ActionComplete`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/action-event/actionComplete-fieldList/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/action-event/actionComplete-fieldList/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="ActionComplete-fieldList.cs" %}
-{% include code-snippet/pivot-table/action-event/actionComplete-fieldList/actionComplete-fieldList.cs %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/action-event/actionComplete-fieldList/actionComplete-fieldList.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -681,10 +681,10 @@ The [`ActionComplete`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/action-event/actionComplete-fieldList/razor %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/action-event/actionComplete-fieldList/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="ActionComplete-fieldList.cs" %}
-{% include code-snippet/pivot-table/action-event/actionComplete-fieldList/actionComplete-fieldList.cs %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/action-event/actionComplete-fieldList/actionComplete-fieldList.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -711,10 +711,10 @@ The [`ActionFailure`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.E
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/action-event/actionFailure-fieldList/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/action-event/actionFailure-fieldList/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="ActionFailure-fieldList.cs" %}
-{% include code-snippet/pivot-table/action-event/actionFailure-fieldList/actionFailure-fieldList.cs %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/action-event/actionFailure-fieldList/actionFailure-fieldList.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -722,10 +722,10 @@ The [`ActionFailure`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.E
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/action-event/actionFailure-fieldList/razor %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/action-event/actionFailure-fieldList/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="ActionFailure-fieldList.cs" %}
-{% include code-snippet/pivot-table/action-event/actionFailure-fieldList/actionFailure-fieldList.cs %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/action-event/actionFailure-fieldList/actionFailure-fieldList.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

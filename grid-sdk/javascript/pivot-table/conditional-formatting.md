@@ -21,14 +21,14 @@ To learn how to work with conditional formatting options, you can check out this
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/pivot-table/conditional-formatting-cs4/index.js %}
+{% include code-snippet/grid-sdk/javascript/pivot-table/conditional-formatting-cs4/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/pivot-table/conditional-formatting-cs4/index.html %}
+{% include code-snippet/grid-sdk/javascript/pivot-table/conditional-formatting-cs4/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/pivot-table/conditional-formatting-cs4" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/pivot-table/conditional-formatting-cs4" %}
 
 ## Configure conditional formatting through code-behind
 
@@ -50,14 +50,14 @@ The [style](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/st
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/pivot-table/pivot-table-cs101/index.js %}
+{% include code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs101/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/pivot-table/pivot-table-cs101/index.html %}
+{% include code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs101/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs101" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs101" %}
 
 ## Opening conditional formatting dialog programmatically
 
@@ -65,14 +65,14 @@ Users can also access the conditional formatting dialog through external UI elem
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/pivot-table/conditional-formatting-cs5/index.js %}
+{% include code-snippet/grid-sdk/javascript/pivot-table/conditional-formatting-cs5/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/pivot-table/conditional-formatting-cs5/index.html %}
+{% include code-snippet/grid-sdk/javascript/pivot-table/conditional-formatting-cs5/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/pivot-table/conditional-formatting-cs5" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/pivot-table/conditional-formatting-cs5" %}
 
 ## Conditional formatting for all fields
 
@@ -82,14 +82,14 @@ To format all value fields together, use the [conditionalFormatSettings](https:/
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/pivot-table/conditional-formatting-cs6/index.js %}
+{% include code-snippet/grid-sdk/javascript/pivot-table/conditional-formatting-cs6/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/pivot-table/conditional-formatting-cs6/index.html %}
+{% include code-snippet/grid-sdk/javascript/pivot-table/conditional-formatting-cs6/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/pivot-table/conditional-formatting-cs6" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/pivot-table/conditional-formatting-cs6" %}
 
 ## Conditional formatting for specific value field
 
@@ -97,14 +97,14 @@ To apply conditional formatting exclusively to a particular value field, set the
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/pivot-table/pivot-table-cs102/index.js %}
+{% include code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs102/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/pivot-table/pivot-table-cs102/index.html %}
+{% include code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs102/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs102" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs102" %}
 
 ## Editing and removing existing conditional format
 
@@ -128,12 +128,12 @@ The [conditionalFormatting](https://ej2.syncfusion.com/javascript/documentation/
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/pivot-table/conditional-formatting-cs7/index.js %}
+{% include code-snippet/grid-sdk/javascript/pivot-table/conditional-formatting-cs7/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/pivot-table/conditional-formatting-cs7/index.html %}
+{% include code-snippet/grid-sdk/javascript/pivot-table/conditional-formatting-cs7/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/pivot-table/conditional-formatting-cs7" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/pivot-table/conditional-formatting-cs7" %}
 

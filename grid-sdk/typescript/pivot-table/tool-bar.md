@@ -39,14 +39,14 @@ The following table lists the built-in toolbar options and their actions:
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/pivot-table/pivot-table-cs479/index.ts %}
+{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs479/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/pivot-table/pivot-table-cs479/index.html %}
+{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs479/index.html %}
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs479" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs479" %}
 
 ## Show desired chart types in the dropdown menu
 
@@ -58,14 +58,14 @@ To learn more about the supported chart types, see the [Pivot Chart documentatio
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/pivot-table/pivot-table-cs480/index.ts %}
+{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs480/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/pivot-table/pivot-table-cs480/index.html %}
+{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs480/index.html %}
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs480" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs480" %}
 
 ## Switch the chart to multiple axes
 
@@ -91,14 +91,14 @@ Here’s an example of how to add a custom toolbar item:
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/pivot-table/pivot-table-cs481/index.ts %}
+{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs481/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/pivot-table/pivot-table-cs481/index.html %}
+{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs481/index.html %}
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs481" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs481" %}
 
 ### Toolbar Template
 
@@ -108,27 +108,27 @@ Below is an example of a custom toolbar with buttons to expand or collapse all r
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/pivot-table/toolbar-template-cs2/index.ts %}
+{% include code-snippet/grid-sdk/typescript/pivot-table/toolbar-template-cs2/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/pivot-table/toolbar-template-cs2/index.html %}
+{% include code-snippet/grid-sdk/typescript/pivot-table/toolbar-template-cs2/index.html %}
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "page.domainurl/code-snippet/pivot-table/toolbar-template-cs2" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/pivot-table/toolbar-template-cs2" %}
 
 Another option allows framing a custom toolbar item using HTML elements and including it in the toolbar panel at the desired position. Custom toolbar items can be declared as a control **instance** or element **ID** in the [`toolbar`](https://ej2.syncfusion.com/documentation/api/pivotview/index-default#toolbar) property in the pivot table.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/pivot-table/toolbar-template-rtl-cs2/index.ts %}
+{% include code-snippet/grid-sdk/typescript/pivot-table/toolbar-template-rtl-cs2/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/pivot-table/toolbar-template-rtl-cs2/index.html %}
+{% include code-snippet/grid-sdk/typescript/pivot-table/toolbar-template-rtl-cs2/index.html %}
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "page.domainurl/code-snippet/pivot-table/toolbar-template-rtl-cs2" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/pivot-table/toolbar-template-rtl-cs2" %}
 
 > Note: For both options, the actions for the toolbar template items can be defined in the [`toolbarClick`](https://ej2.syncfusion.com/documentation/api/pivotview/index-default#toolbarclick) event. Additionally, if the toolbar item is a custom control, its built-in events can also be accessed.
 
@@ -142,14 +142,14 @@ The following code example shows how to save and load a Pivot Table report as a 
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/pivot-table/json-file-cs2/index.ts %}
+{% include code-snippet/grid-sdk/typescript/pivot-table/json-file-cs2/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/pivot-table/json-file-cs2/index.html %}
+{% include code-snippet/grid-sdk/typescript/pivot-table/json-file-cs2/index.html %}
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "page.domainurl/code-snippet/pivot-table/json-file-cs2" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/pivot-table/json-file-cs2" %}
 
 ## Save and load reports to a SQL database
 
@@ -865,14 +865,14 @@ The [`toolbarRender`](https://ej2.syncfusion.com/documentation/api/pivotview/ind
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/pivot-table/pivot-table-cs482/index.ts %}
+{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs482/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/pivot-table/pivot-table-cs482/index.html %}
+{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs482/index.html %}
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs482" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs482" %}
 
 ### BeforeExport
 
@@ -882,14 +882,14 @@ Here’s an example of how to use the `beforeExport` event to customize headers 
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/pivot-table/pivot-table-cs483/index.ts %}
+{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs483/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/pivot-table/pivot-table-cs483/index.html %}
+{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs483/index.html %}
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs483" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs483" %}
 
 ### ActionBegin
 
@@ -921,14 +921,14 @@ In the example below, the [`actionBegin`](https://ej2.syncfusion.com/documentati
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/pivot-table/action-events-cs52/index.ts %}
+{% include code-snippet/grid-sdk/typescript/pivot-table/action-events-cs52/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/pivot-table/action-events-cs52/index.html %}
+{% include code-snippet/grid-sdk/typescript/pivot-table/action-events-cs52/index.html %}
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "page.domainurl/code-snippet/pivot-table/action-events-cs52" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/pivot-table/action-events-cs52" %}
 
 ### ActionComplete
 
@@ -957,14 +957,14 @@ The [`actionComplete`](https://ej2.syncfusion.com/documentation/api/pivotview/in
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/pivot-table/action-events-cs53/index.ts %}
+{% include code-snippet/grid-sdk/typescript/pivot-table/action-events-cs53/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/pivot-table/action-events-cs53/index.html %}
+{% include code-snippet/grid-sdk/typescript/pivot-table/action-events-cs53/index.html %}
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "page.domainurl/code-snippet/pivot-table/action-events-cs53" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/pivot-table/action-events-cs53" %}
 
 ### ActionFailure
 
@@ -993,14 +993,14 @@ The [`actionFailure`](https://ej2.syncfusion.com/documentation/api/pivotview/ind
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/pivot-table/action-events-cs54/index.ts %}
+{% include code-snippet/grid-sdk/typescript/pivot-table/action-events-cs54/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/pivot-table/action-events-cs54/index.html %}
+{% include code-snippet/grid-sdk/typescript/pivot-table/action-events-cs54/index.html %}
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "page.domainurl/code-snippet/pivot-table/action-events-cs54" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/pivot-table/action-events-cs54" %}
 
 ## See Also
 

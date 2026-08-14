@@ -93,10 +93,10 @@ Also, register the script manager `EJS().ScriptManager()` at the end of `<body>`
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/getting-start-mvc/pivot-table/razor %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/getting-start-mvc/pivot-table/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="HomeController.cs" %}
-{% include code-snippet/pivot-table/getting-start-mvc/pivot-table/pivottable.cs %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/getting-start-mvc/pivot-table/pivottable.cs %}
 {% endhighlight %}
 {% endtabs %}
 

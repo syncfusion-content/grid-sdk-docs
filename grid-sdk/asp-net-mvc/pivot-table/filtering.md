@@ -51,10 +51,10 @@ You can also configure filtering programmatically using the [`PivotViewFilterSet
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/filtering/member-filtering/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/filtering/member-filtering/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Filtering.cs" %}
-{% include code-snippet/pivot-table/filtering/member-filtering/Filtering.cs %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/filtering/member-filtering/Filtering.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -62,10 +62,10 @@ You can also configure filtering programmatically using the [`PivotViewFilterSet
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/filtering/member-filtering/razor %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/filtering/member-filtering/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Filtering.cs" %}
-{% include code-snippet/pivot-table/filtering/member-filtering/Filtering.cs %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/filtering/member-filtering/Filtering.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -112,10 +112,10 @@ You can control how many members are displayed in the member filter dialog using
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/filtering/max-node/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/filtering/max-node/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Filtering.cs" %}
-{% include code-snippet/pivot-table/filtering/max-node/Filtering.cs %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/filtering/max-node/Filtering.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -123,10 +123,10 @@ You can control how many members are displayed in the member filter dialog using
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/filtering/max-node/razor %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/filtering/max-node/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Filtering.cs" %}
-{% include code-snippet/pivot-table/filtering/max-node/Filtering.cs %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/filtering/max-node/Filtering.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -154,10 +154,10 @@ This approach prevents performance issues when working with hierarchies that con
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/getting-start-mvc/olap-member-load/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/getting-start-mvc/olap-member-load/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Filtering.cs" %}
-{% include code-snippet/pivot-table/getting-start-mvc/olap-member-load/filtering.cs %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/getting-start-mvc/olap-member-load/filtering.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -165,10 +165,10 @@ This approach prevents performance issues when working with hierarchies that con
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/getting-start-mvc/olap-member-load/razor %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/getting-start-mvc/olap-member-load/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Filtering.cs" %}
-{% include code-snippet/pivot-table/getting-start-mvc/olap-member-load/filtering.cs %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/getting-start-mvc/olap-member-load/filtering.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -199,10 +199,10 @@ The [`LevelCount`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/getting-start-mvc/olap-level-count/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/getting-start-mvc/olap-level-count/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Filtering.cs" %}
-{% include code-snippet/pivot-table/getting-start-mvc/olap-level-count/filtering.cs %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/getting-start-mvc/olap-level-count/filtering.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -210,10 +210,10 @@ The [`LevelCount`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/getting-start-mvc/olap-level-count/razor %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/getting-start-mvc/olap-level-count/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Filtering.cs" %}
-{% include code-snippet/pivot-table/getting-start-mvc/olap-level-count/filtering.cs %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/getting-start-mvc/olap-level-count/filtering.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -250,10 +250,10 @@ To enable label filtering, set the [`AllowLabelFilter`](https://help.syncfusion.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/filtering/label-filtering/filtering-ui/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/filtering/label-filtering/filtering-ui/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Filtering.cs" %}
-{% include code-snippet/pivot-table/filtering/label-filtering/filtering-ui/Filtering.cs %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/filtering/label-filtering/filtering-ui/Filtering.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -261,10 +261,10 @@ To enable label filtering, set the [`AllowLabelFilter`](https://help.syncfusion.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/filtering/label-filtering/filtering-ui/razor %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/filtering/label-filtering/filtering-ui/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Filtering.cs" %}
-{% include code-snippet/pivot-table/filtering/label-filtering/filtering-ui/Filtering.cs %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/filtering/label-filtering/filtering-ui/Filtering.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -320,10 +320,10 @@ The following table shows all available [**Operators**](https://help.syncfusion.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/filtering/label-filtering/text-filtering/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/filtering/label-filtering/text-filtering/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Filtering.cs" %}
-{% include code-snippet/pivot-table/filtering/label-filtering/text-filtering/Filtering.cs %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/filtering/label-filtering/text-filtering/Filtering.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -331,10 +331,10 @@ The following table shows all available [**Operators**](https://help.syncfusion.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/filtering/label-filtering/text-filtering/razor %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/filtering/label-filtering/text-filtering/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Filtering.cs" %}
-{% include code-snippet/pivot-table/filtering/label-filtering/text-filtering/Filtering.cs %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/filtering/label-filtering/text-filtering/Filtering.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -363,10 +363,10 @@ For example, to display only sales data where the "Sold" field values are less t
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/filtering/label-filtering/number-filtering/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/filtering/label-filtering/number-filtering/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Filtering.cs" %}
-{% include code-snippet/pivot-table/filtering/label-filtering/number-filtering/Filtering.cs %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/filtering/label-filtering/number-filtering/Filtering.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -374,10 +374,10 @@ For example, to display only sales data where the "Sold" field values are less t
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/filtering/label-filtering/number-filtering/razor %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/filtering/label-filtering/number-filtering/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Filtering.cs" %}
-{% include code-snippet/pivot-table/filtering/label-filtering/number-filtering/Filtering.cs %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/filtering/label-filtering/number-filtering/Filtering.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -400,10 +400,10 @@ To apply date filtering, specify your filtering criteria using the [`Value1`](ht
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/filtering/label-filtering/date-filtering/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/filtering/label-filtering/date-filtering/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Filtering.cs" %}
-{% include code-snippet/pivot-table/filtering/label-filtering/date-filtering/Filtering.cs %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/filtering/label-filtering/date-filtering/Filtering.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -411,10 +411,10 @@ To apply date filtering, specify your filtering criteria using the [`Value1`](ht
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/filtering/label-filtering/date-filtering/razor %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/filtering/label-filtering/date-filtering/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Filtering.cs" %}
-{% include code-snippet/pivot-table/filtering/label-filtering/date-filtering/Filtering.cs %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/filtering/label-filtering/date-filtering/Filtering.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -439,10 +439,10 @@ You can enable value filtering by setting the [`AllowValueFilter`](https://help.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/filtering/value-filtering-ui/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/filtering/value-filtering-ui/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Filtering.cs" %}
-{% include code-snippet/pivot-table/filtering/value-filtering-ui/Filtering.cs %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/filtering/value-filtering-ui/Filtering.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -450,10 +450,10 @@ You can enable value filtering by setting the [`AllowValueFilter`](https://help.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/filtering/value-filtering-ui/razor %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/filtering/value-filtering-ui/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Filtering.cs" %}
-{% include code-snippet/pivot-table/filtering/value-filtering-ui/Filtering.cs %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/filtering/value-filtering-ui/Filtering.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -502,10 +502,10 @@ The following table shows the available operators for value filtering:
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/filtering/value-filtering/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/filtering/value-filtering/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Filtering.cs" %}
-{% include code-snippet/pivot-table/filtering/value-filtering/Filtering.cs %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/filtering/value-filtering/Filtering.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -513,10 +513,10 @@ The following table shows the available operators for value filtering:
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/filtering/value-filtering/razor %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/filtering/value-filtering/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Filtering.cs" %}
-{% include code-snippet/pivot-table/filtering/value-filtering/Filtering.cs %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/filtering/value-filtering/Filtering.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -551,10 +551,10 @@ For example, you can use the [`MemberFiltering`](https://help.syncfusion.com/cr/
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/filtering/member-filtering-event/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/filtering/member-filtering-event/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Filtering.cs" %}
-{% include code-snippet/pivot-table/filtering/member-filtering-event/Filtering.cs %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/filtering/member-filtering-event/Filtering.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -562,10 +562,10 @@ For example, you can use the [`MemberFiltering`](https://help.syncfusion.com/cr/
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/filtering/member-filtering-event/razor %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/filtering/member-filtering-event/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Filtering.cs" %}
-{% include code-snippet/pivot-table/filtering/member-filtering-event/Filtering.cs %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/filtering/member-filtering-event/Filtering.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -585,10 +585,10 @@ Here’s an example. In the Pivot Table below, only the selected member for the 
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/filtering/memberEditorOpen-event/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/filtering/memberEditorOpen-event/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Filtering.cs" %}
-{% include code-snippet/pivot-table/filtering/memberEditorOpen-event/Filtering.cs %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/filtering/memberEditorOpen-event/Filtering.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -596,10 +596,10 @@ Here’s an example. In the Pivot Table below, only the selected member for the 
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/filtering/memberEditorOpen-event/razor %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/filtering/memberEditorOpen-event/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Filtering.cs" %}
-{% include code-snippet/pivot-table/filtering/memberEditorOpen-event/Filtering.cs %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/filtering/memberEditorOpen-event/Filtering.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -622,10 +622,10 @@ In the example below, you can prevent a filter action by setting **args.cancel**
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/action-event/actionBegin-filter/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/action-event/actionBegin-filter/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="ActionBegin-aggregation.cs" %}
-{% include code-snippet/pivot-table/action-event/actionBegin-filter/actionBegin-aggregation.cs %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/action-event/actionBegin-filter/actionBegin-aggregation.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -633,10 +633,10 @@ In the example below, you can prevent a filter action by setting **args.cancel**
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/action-event/actionBegin-filter/razor %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/action-event/actionBegin-filter/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="ActionBegin-aggregation.cs" %}
-{% include code-snippet/pivot-table/action-event/actionBegin-filter/actionBegin-aggregation.cs %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/action-event/actionBegin-filter/actionBegin-aggregation.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -661,10 +661,10 @@ The event provides the following parameters:
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/action-event/actionComplete-filter/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/action-event/actionComplete-filter/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="ActionComplete-aggregation.cs" %}
-{% include code-snippet/pivot-table/action-event/actionComplete-filter/actionComplete-aggregation.cs %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/action-event/actionComplete-filter/actionComplete-aggregation.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -672,10 +672,10 @@ The event provides the following parameters:
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/action-event/actionComplete-filter/razor %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/action-event/actionComplete-filter/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="ActionComplete-aggregation.cs" %}
-{% include code-snippet/pivot-table/action-event/actionComplete-filter/actionComplete-aggregation.cs %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/action-event/actionComplete-filter/actionComplete-aggregation.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -692,10 +692,10 @@ The [`ActionFailure`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.E
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/action-event/actionFailure-filter/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/action-event/actionFailure-filter/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="ActionFailure-aggregation.cs" %}
-{% include code-snippet/pivot-table/action-event/actionFailure-filter/actionFailure-aggregation.cs %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/action-event/actionFailure-filter/actionFailure-aggregation.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -703,10 +703,10 @@ The [`ActionFailure`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.E
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/action-event/actionFailure-filter/razor %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/action-event/actionFailure-filter/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="ActionFailure-aggregation.cs" %}
-{% include code-snippet/pivot-table/action-event/actionFailure-filter/actionFailure-aggregation.cs %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/action-event/actionFailure-filter/actionFailure-aggregation.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

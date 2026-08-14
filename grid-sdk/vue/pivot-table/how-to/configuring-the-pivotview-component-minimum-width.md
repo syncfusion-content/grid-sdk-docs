@@ -27,11 +27,11 @@ To customize the minimum width according to specific layout requirements, config
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/default-cs275/app-composition.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/default-cs275/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/default-cs275/app.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/default-cs275/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/pivot-grid/default-cs275" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/default-cs275" %}

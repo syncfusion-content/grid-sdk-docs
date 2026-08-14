@@ -21,25 +21,25 @@ For example, when the raw data contains **"United Kingdom"** for the 'Country' f
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/pivot-table/pivot-table-cs80/index.ts %}
+{% include code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs80/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/pivot-table/pivot-table-cs80/index.html %}
+{% include code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs80/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs80" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs80" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/pivot-table/pivot-table-cs80/index.js %}
+{% include code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs80/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/pivot-table/pivot-table-cs80/index.html %}
+{% include code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs80/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs80" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs80" %}
 {% endif %}

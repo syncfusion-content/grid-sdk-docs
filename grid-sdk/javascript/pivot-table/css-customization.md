@@ -21,14 +21,14 @@ The following code example demonstrates how to hide the column axis in both the 
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/pivot-table/css-cs1/index.js %}
+{% include code-snippet/grid-sdk/javascript/pivot-table/css-cs1/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/pivot-table/css-cs1/index.html %}
+{% include code-snippet/grid-sdk/javascript/pivot-table/css-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/pivot-table/css-cs1" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/pivot-table/css-cs1" %}
 
 **Note:** The CSS selectors above assume the Pivot Table component has the ID **PivotView**. Replace this with your actual component ID or use appropriate class-based selectors for your implementation.
 
@@ -44,14 +44,14 @@ The alignment of text inside row headers, column headers, value cells, and summa
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/pivot-table/css-cs2/index.js %}
+{% include code-snippet/grid-sdk/javascript/pivot-table/css-cs2/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/pivot-table/css-cs2/index.html %}
+{% include code-snippet/grid-sdk/javascript/pivot-table/css-cs2/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/pivot-table/css-cs2" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/pivot-table/css-cs2" %}
 
 ## Customize header, value and summary cell styles
 
@@ -61,14 +61,14 @@ The following code sample demonstrates how to apply custom background colors to 
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/pivot-table/pivottable-css-cs1/index.js %}
+{% include code-snippet/grid-sdk/javascript/pivot-table/pivottable-css-cs1/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/pivot-table/pivottable-css-cs1/index.html %}
+{% include code-snippet/grid-sdk/javascript/pivot-table/pivottable-css-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/pivot-table/pivottable-css-cs1" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/pivot-table/pivottable-css-cs1" %}
 
 The CSS classes target the following Pivot Table elements:
 - `.e-headercell`: Styles column header cells

@@ -37,17 +37,17 @@ The following sample demonstrates a pivot table rendered with customized field l
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/pivot-table/icon-customization-cs1/app/App.jsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/icon-customization-cs1/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/pivot-table/icon-customization-cs1/app/App.tsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/icon-customization-cs1/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/pivot-table/icon-customization-cs1/app/datasource.jsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/icon-customization-cs1/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/pivot-table/icon-customization-cs1/app/datasource.tsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/icon-customization-cs1/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/pivot-table/icon-customization-cs1" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/icon-customization-cs1" %}

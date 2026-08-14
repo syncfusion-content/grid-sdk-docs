@@ -17,10 +17,10 @@ By default, the Pivot Table displays with the report configuration defined in th
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/load-pre-defined-report/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/load-pre-defined-report/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="LoadPreDefinedReport.cs" %}
-{% include code-snippet/pivot-table/load-pre-defined-report/LoadPreDefinedReport.cs %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/load-pre-defined-report/LoadPreDefinedReport.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -28,10 +28,10 @@ By default, the Pivot Table displays with the report configuration defined in th
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/load-pre-defined-report/razor %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/load-pre-defined-report/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="LoadPreDefinedReport.cs" %}
-{% include code-snippet/pivot-table/load-pre-defined-report/LoadPreDefinedReport.cs %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/load-pre-defined-report/LoadPreDefinedReport.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

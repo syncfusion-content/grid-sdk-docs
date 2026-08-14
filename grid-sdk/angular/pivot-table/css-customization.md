@@ -3,7 +3,7 @@ layout: post
 title: Style and Appearance in Angular Pivot Table | Syncfusion
 description: Learn how the Angular Pivot Table styles row headers, column headers, value cells, and the field list with theme CSS overrides.
 platform: ej2-angular
-control: CSS customization 
+control: Pivot Table 
 documentation: ug
 domainurl: ##DomainURL##
 ---
@@ -12,7 +12,7 @@ domainurl: ##DomainURL##
 
 The Angular Pivot Table component provides extensive CSS customization options, allowing users to modify the visual appearance and layout of various pivot table elements. This includes styling row headers, column headers, value cells, summary cells, Field List components, and Grouping Bar areas to match application themes and design requirements.
 
-## Hiding Axis
+## Hiding axis
 
 The visibility of the row, column, value, and filter axis areas in both the Field List dialog and Grouping Bar can be controlled using custom CSS styling. Each axis area has specific CSS classes that allow precise targeting for customization.
 
@@ -40,23 +40,23 @@ The CSS selectors target the following Pivot Table elements:
 - `.e-group-columns`: Hides the column axis in the Grouping Bar.
 - `.e-group-filters`: Adjusts the height of the filter axis to compensate for the hidden column axis in the Grouping Bar.
 - `.e-field-list-columns`: Hides the column axis in the Field List dialog.
-- `.e-field-list-values`: Adjusts the layout of the values axis when the column section is hidden in the Field List dialog.
+- `.e-field-list-values`: Adjusts the layout of the value axis when the column section is hidden in the Field List dialog.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/css-custom-cs1/src/app.component.ts %}
+{% include code-snippet/grid-sdk/angular/pivot-table/css-custom-cs1/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/css-custom-cs1/src/main.ts %}
+{% include code-snippet/grid-sdk/angular/pivot-table/css-custom-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/samples/pivot-grid/css-custom-cs1" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/css-custom-cs1" %}
 
-## Text Alignment
+## Text alignment
 
-The alignment of text inside row headers, column headers, value cells, and summary cells can be customized using CSS styling. The following example demonstrates how to center-align text in value cells:
+The alignment of text inside row headers, column headers, value cells, and summary cells can be customized using CSS styling. The following example demonstrates how to center-align text in value cells (additional selectors for column headers, row headers, and summary cells are included as commented CSS in the sample):
 
 ```css
 .e-pivotview .e-valuecontent {
@@ -66,19 +66,19 @@ The alignment of text inside row headers, column headers, value cells, and summa
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/text-align-cs1/src/app.component.ts %}
+{% include code-snippet/grid-sdk/angular/pivot-table/text-align-cs1/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/text-align-cs1/src/main.ts %}
+{% include code-snippet/grid-sdk/angular/pivot-table/text-align-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/samples/pivot-grid/text-align-cs1" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/text-align-cs1" %}
 
-## Customize header, value and summary cell styles
+## Customize header, value, and summary cell styles
 
-The Pivot Table component elements including header cells, value cells, and summary cells can be styled using built-in CSS class names. This enables comprehensive visual customization of the component's appearance to match application themes and design requirements.
+Pivot Table elements such as header cells, value cells, and summary cells can be styled using built-in CSS class names. This enables comprehensive visual customization of the component's appearance to match application themes and design requirements.
 
 The following code sample demonstrates how to apply custom background colors to different cell types:
 
@@ -96,20 +96,20 @@ The following code sample demonstrates how to apply custom background colors to 
     background-color: greenyellow !important; 
 }
 ```
-The CSS classes target the following PivotView elements:
-- `.e-headercell`: Styles column header cells
-- `.e-rowsheader`: Styles row header cells  
-- `.e-summary:not(.e-gtot)`: Styles subtotal summary cells (excluding grand totals)
-- `.e-gtot`: Styles grand total cells
+The CSS classes target the following Pivot Table elements:
+- `.e-headercell`: Styles column header cells.
+- `.e-rowsheader`: Styles row header cells.
+- `.e-summary:not(.e-gtot)`: Styles subtotal summary cells (excluding grand totals).
+- `.e-gtot`: Styles grand total cells.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/summary-cell-cs1/src/app.component.ts %}
+{% include code-snippet/grid-sdk/angular/pivot-table/summary-cell-cs1/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/summary-cell-cs1/src/main.ts %}
+{% include code-snippet/grid-sdk/angular/pivot-table/summary-cell-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/samples/pivot-grid/summary-cell-cs1" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/summary-cell-cs1" %}

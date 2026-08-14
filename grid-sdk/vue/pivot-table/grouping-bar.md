@@ -28,14 +28,14 @@ To use the grouping bar, you need to inject the `GroupingBar` module in the Pivo
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/default-cs110/app-composition.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/default-cs110/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/default-cs110/app.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/default-cs110/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/pivot-grid/default-cs110" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/default-cs110" %}
 
 The grouping bar offers additional options to modify its appearance and behavior using the [`groupingBarSettings`](https://ej2.syncfusion.com/vue/documentation/api/pivotview/index-default#groupingbarsettings) property.
 
@@ -47,14 +47,14 @@ To display the fields panel, set the [`showFieldsPanel`](https://ej2.syncfusion.
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/default-cs287/app-composition.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/default-cs287/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/default-cs287/app.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/default-cs287/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/pivot-grid/default-cs287" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/default-cs287" %}
 
 ## Show or hide all filter icon
 
@@ -66,14 +66,14 @@ By default, the filter icon appears next to each field in the grouping bar. If y
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/default-cs111/app-composition.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/default-cs111/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/default-cs111/app.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/default-cs111/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/pivot-grid/default-cs111" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/default-cs111" %}
 
 ## Show or hide specific filter icon
 
@@ -83,14 +83,14 @@ In the sample below, the filter icons for the "Quarter" and "Products" fields ar
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/default-cs112/app-composition.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/default-cs112/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/default-cs112/app.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/default-cs112/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/pivot-grid/default-cs112" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/default-cs112" %}
 
 ## Show or hide all sort icon
 
@@ -102,14 +102,14 @@ To disable the sort option, set the [`showSortIcon`](https://ej2.syncfusion.com/
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/default-cs113/app-composition.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/default-cs113/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/default-cs113/app.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/default-cs113/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/pivot-grid/default-cs113" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/default-cs113" %}
 
 ## Show or hide specific sort icon
 
@@ -119,14 +119,14 @@ In the example below, the sort icons for the "Quarter" and "Country" fields are 
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/default-cs114/app-composition.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/default-cs114/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/default-cs114/app.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/default-cs114/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/pivot-grid/default-cs114" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/default-cs114" %}
 
 ## Show or hide all remove icon
 
@@ -138,14 +138,14 @@ If you want to hide the remove icon, set the [`showRemoveIcon`](https://ej2.sync
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/default-cs115/app-composition.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/default-cs115/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/default-cs115/app.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/default-cs115/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/pivot-grid/default-cs115" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/default-cs115" %}
 
 ## Show or hide a specific remove icon
 
@@ -155,14 +155,14 @@ In the example below, the remove icon for the "Year", "Sold", and "Products" fie
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/default-cs116/app-composition.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/default-cs116/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/default-cs116/app.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/default-cs116/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/pivot-grid/default-cs116" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/default-cs116" %}
 
 ## Disable all fields from dragging
 
@@ -170,14 +170,14 @@ In the Pivot Table, the grouping bar lets users move fields between the row, col
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/default-cs117/app-composition.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/default-cs117/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/default-cs117/app.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/default-cs117/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/pivot-grid/default-cs117" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/default-cs117" %}
 
 ## Disable specific field from dragging
 
@@ -187,14 +187,14 @@ In the example below, users cannot drag the "Year" and "Products" fields. This s
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/default-cs118/app-composition.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/default-cs118/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/default-cs118/app.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/default-cs118/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/pivot-grid/default-cs118" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/default-cs118" %}
 
 ## Remove specific field(s) from displaying
 
@@ -206,14 +206,14 @@ To exclude specific fields, add the field names to the [`excludeFields`](https:/
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/default-cs119/app-composition.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/default-cs119/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/default-cs119/app.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/default-cs119/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/pivot-grid/default-cs119" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/default-cs119" %}
 
 ## Changing aggregation type of value fields at runtime
 
@@ -223,14 +223,14 @@ By default, the icon for setting the aggregation type is visible in the grouping
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/default-cs120/app-composition.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/default-cs120/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/default-cs120/app.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/default-cs120/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/pivot-grid/default-cs120" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/default-cs120" %}
 
 ## Show or hide specific dropdown icon
 
@@ -240,14 +240,14 @@ In the following example, the dropdown icon for the "Sold" field is hidden:
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/default-cs121/app-composition.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/default-cs121/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/default-cs121/app.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/default-cs121/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/pivot-grid/default-cs121" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/default-cs121" %}
 
 > The following properties—[`showFilterIcon`](https://ej2.syncfusion.com/vue/documentation/api/pivotview/iFieldOptions#showfiltericon), [`showSortIcon`](https://ej2.syncfusion.com/vue/documentation/api/pivotview/iFieldOptions#showsorticon), [`showValueTypeIcon`](https://ej2.syncfusion.com/vue/documentation/api/pivotview/iFieldOptions#showvaluetypeicon), and [`allowDragAndDrop`](https://ej2.syncfusion.com/vue/documentation/api/pivotview/iFieldOptions#allowdraganddrop)—in the fields of [`dataSourceSettings`](https://ej2.syncfusion.com/vue/documentation/api/pivotview/dataSourceSettings) apply to both the grouping bar and field list.
 
@@ -261,14 +261,14 @@ The **Values** button appears in the grouping bar when the [`showValuesButton`](
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/default-cs122/app-composition.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/default-cs122/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/default-cs122/app.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/default-cs122/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/pivot-grid/default-cs122" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/default-cs122" %}
 
 ## Event
 
@@ -285,14 +285,14 @@ For example, you can use this event to change the caption of the [`droppedField`
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/default-cs123/app-composition.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/default-cs123/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/default-cs123/app.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/default-cs123/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/pivot-grid/default-cs123" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/default-cs123" %}
 
 ### FieldDragStart
 
@@ -308,14 +308,14 @@ In the following example, the drag action is prevented only for fields placed in
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/default-cs124/app-composition.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/default-cs124/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/default-cs124/app.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/default-cs124/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/pivot-grid/default-cs124" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/default-cs124" %}
 
 ### FieldDrop
 
@@ -333,14 +333,14 @@ In the example below, dropping any field into the "Values" axis is prevented. Th
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/default-cs125/app-composition.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/default-cs125/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/default-cs125/app.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/default-cs125/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/pivot-grid/default-cs125" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/default-cs125" %}
 
 ### FieldRemove
 
@@ -358,14 +358,14 @@ In the following example, the field "Country" cannot be removed from the report 
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/default-cs126/app-composition.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/default-cs126/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/default-cs126/app.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/default-cs126/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/pivot-grid/default-cs126" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/default-cs126" %}
 
 ### AggregateMenuOpen
 
@@ -382,14 +382,14 @@ In the following sample, the dropdown menu for the "Amount" field is customized 
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/default-cs127/app-composition.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/default-cs127/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/default-cs127/app.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/default-cs127/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/pivot-grid/default-cs127" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/default-cs127" %}
 
 > The [`aggregateMenuOpen`](https://ej2.syncfusion.com/vue/documentation/api/pivotview/index-default#aggregatemenuopen), [`fieldRemove`](https://ej2.syncfusion.com/vue/documentation/api/pivotview/index-default#fieldremove), [`fieldDrop`](https://ej2.syncfusion.com/vue/documentation/api/pivotview/index-default#fielddrop), [`fieldDragStart`](https://ej2.syncfusion.com/vue/documentation/api/pivotview/index-default#fielddragstart), and [`onFieldDropped`](https://ej2.syncfusion.com/vue/documentation/api/pivotview/index-default#onfielddropped) events are available for both the grouping bar and field list.
 
@@ -418,14 +418,14 @@ For example, in the sample below, users can restrict actions like sorting or fil
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/default-cs128/app-composition.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/default-cs128/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/default-cs128/app.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/default-cs128/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/pivot-grid/default-cs128" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/default-cs128" %}
 
 ### ActionComplete
 
@@ -453,14 +453,14 @@ The event provides the following parameters:
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/default-cs129/app-composition.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/default-cs129/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/default-cs129/app.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/default-cs129/app.vue %}
 {% endhighlight %}
 {% endtabs %}
             
-{% previewsample "page.domainurl/code-snippet/pivot-grid/default-cs129" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/default-cs129" %}
 
 ### ActionFailure
 
@@ -484,14 +484,14 @@ When this event is triggered, users can refer to the information in these parame
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/default-cs130/app-composition.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/default-cs130/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/default-cs130/app.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/default-cs130/app.vue %}
 {% endhighlight %}
 {% endtabs %}
             
-{% previewsample "page.domainurl/code-snippet/pivot-grid/default-cs130" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/default-cs130" %}
 
 ## See Also
 

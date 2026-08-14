@@ -19,14 +19,14 @@ To enable the classic layout, set the [layout](https://ej2.syncfusion.com/javasc
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/pivot-table/classic-layout-cs2/index.js %}
+{% include code-snippet/grid-sdk/javascript/pivot-table/classic-layout-cs2/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/pivot-table/classic-layout-cs2/index.html %}
+{% include code-snippet/grid-sdk/javascript/pivot-table/classic-layout-cs2/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/pivot-table/classic-layout-cs2" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/pivot-table/classic-layout-cs2" %}
 
 **Limitations**
 

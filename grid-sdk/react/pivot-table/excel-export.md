@@ -16,47 +16,47 @@ The Pivot Table component supports exporting pivot data to **Excel** and **CSV**
 
 Pivot Table data can be exported to an Excel file (.xlsx format) while preserving all formatting and structure. This format is compatible with Microsoft Excel and other spreadsheet applications. To export the data to Excel, invoke the [`excelExport`](https://ej2.syncfusion.com/react/documentation/api/pivotview/index-default#excelexport) method.
 
-> The Pivot Table component can be exported to Excel format using options available in the toolbar. For more details, [`refer`](./tool-bar) here.
+> The Pivot Table component can be exported to Excel format using options available in the toolbar. For more details, see the [Toolbar](./tool-bar) documentation.
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/pivot-table/default-cs65/app/App.jsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/default-cs65/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/pivot-table/default-cs65/app/App.tsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/default-cs65/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/pivot-table/default-cs65/app/datasource.jsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/default-cs65/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/pivot-table/default-cs65/app/datasource.tsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/default-cs65/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs65" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs65" %}
 
 ## Export data to a CSV file
 
 Pivot Table data can be exported to a plain text CSV file. The CSV format is lightweight and compatible with most spreadsheet and data analysis applications. To export the data to CSV, invoke the [`csvExport`](https://ej2.syncfusion.com/react/documentation/api/pivotview/index-default#csvexport) method.
 
-> The Pivot Table component can be exported to CSV format using options available in the toolbar. For more details, [`refer`](./tool-bar) here.
+> The Pivot Table component can be exported to CSV format using options available in the toolbar. For more details, see the [Toolbar](./tool-bar) documentation.
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/pivot-table/default-cs71/app/App.jsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/default-cs71/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/pivot-table/default-cs71/app/App.tsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/default-cs71/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/pivot-table/default-cs71/app/datasource.jsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/default-cs71/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/pivot-table/default-cs71/app/datasource.tsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/default-cs71/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs71" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs71" %}
 
 ## Exporting multiple pivot tables
 
@@ -72,20 +72,20 @@ To add visual separation between Pivot Tables, use the **multipleExport.blankRow
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/pivot-table/default-cs66/app/App.jsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/default-cs66/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/pivot-table/default-cs66/app/App.tsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/default-cs66/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/pivot-table/default-cs66/app/datasource.jsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/default-cs66/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/pivot-table/default-cs66/app/datasource.tsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/default-cs66/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs66" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs66" %}
 
 ### Exporting to a new worksheet
 
@@ -93,20 +93,20 @@ Multiple Pivot Tables can be organized into separate worksheets within a single 
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/pivot-table/default-cs67/app/App.jsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/default-cs67/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/pivot-table/default-cs67/app/App.tsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/default-cs67/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/pivot-table/default-cs67/app/datasource.jsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/default-cs67/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/pivot-table/default-cs67/app/datasource.tsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/default-cs67/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs67" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs67" %}
 
 ## Customize the pivot report during export
 
@@ -116,20 +116,20 @@ In the following example, the [`beforeExport`](https://ej2.syncfusion.com/react/
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/pivot-table/default-cs332/app/App.jsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/default-cs332/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/pivot-table/default-cs332/app/App.tsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/default-cs332/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/pivot-table/default-cs332/app/datasource.jsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/default-cs332/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/pivot-table/default-cs332/app/datasource.tsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/default-cs332/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs332" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs332" %}
 
 ## Export with custom aggregates
 
@@ -148,20 +148,20 @@ The following example demonstrates how to add two custom aggregate types to the 
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/pivot-table/default-cs333/app/App.jsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/default-cs333/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/pivot-table/default-cs333/app/App.tsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/default-cs333/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/pivot-table/default-cs333/app/datasource.jsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/default-cs333/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/pivot-table/default-cs333/app/datasource.tsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/default-cs333/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs333" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs333" %}
 
 ## Export with custom date format
 
@@ -177,20 +177,20 @@ The following example demonstrates exporting a Pivot Table with a custom date fo
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/pivot-table/default-cs334/app/App.jsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/default-cs334/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/pivot-table/default-cs334/app/App.tsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/default-cs334/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/pivot-table/default-cs334/app/datasource.jsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/default-cs334/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/pivot-table/default-cs334/app/datasource.tsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/default-cs334/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs334" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs334" %}
 
 ## Remove row header during export
 
@@ -198,45 +198,45 @@ Row headers can be excluded from the exported Excel file when only values and co
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/pivot-table/default-cs335/app/App.jsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/default-cs335/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/pivot-table/default-cs335/app/App.tsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/default-cs335/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/pivot-table/default-cs335/app/datasource.jsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/default-cs335/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/pivot-table/default-cs335/app/datasource.tsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/default-cs335/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs335" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs335" %}
 
 ## Exclude hidden columns during export
 
-By default, all columns in the Pivot Table, including hidden ones, are exported. To exclude hidden columns, set the `includeHiddenColumn` property to **false** in `excelExportProperties`.
+By default, all columns in the Pivot Table, including hidden ones, are exported. To exclude hidden columns, set the `includeHiddenColumn` property to `false` in `excelExportProperties`.
 
 To hide a column, use the [`columnRender`](https://ej2.syncfusion.com/react/documentation/api/pivotview/gridsettings#columnrender) event in [`gridSettings`](https://ej2.syncfusion.com/react/documentation/api/pivotview/index-default#gridsettings) to set the `visible` property of the target column to **false**. For more information, see the [Hide Specific Columns in Pivot Table](https://ej2.syncfusion.com/react/documentation/pivotview/how-to/hide-specific-columns-in-pivot-table) documentation.
 
-After hiding the columns, set `includeHiddenColumn` to **false** in `excelExportProperties` to exclude them from the exported file. The exported file will then match the column structure shown in the Pivot Table UI.
+After hiding the columns, set `includeHiddenColumn` to `false` in `excelExportProperties` to exclude them from the exported file. The exported file will then match the column structure shown in the Pivot Table UI.
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/pivot-table/default-cs336/app/App.jsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/default-cs336/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/pivot-table/default-cs336/app/App.tsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/default-cs336/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/pivot-table/default-cs336/app/datasource.jsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/default-cs336/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/pivot-table/default-cs336/app/datasource.tsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/default-cs336/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs336" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs336" %}
 
 ## Rotate cell text during export
 
@@ -251,20 +251,20 @@ Within these events, set the [`rotation`](https://ej2.syncfusion.com/react/docum
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/pivot-table/default-cs337/app/App.jsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/default-cs337/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/pivot-table/default-cs337/app/App.tsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/default-cs337/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/pivot-table/default-cs337/app/datasource.jsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/default-cs337/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/pivot-table/default-cs337/app/datasource.tsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/default-cs337/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs337" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs337" %}
 
 ## Apply custom styles based on specific conditions
 
@@ -274,20 +274,20 @@ The following example demonstrates how to apply conditional formatting to the **
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/pivot-table/default-cs338/app/App.jsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/default-cs338/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/pivot-table/default-cs338/app/App.tsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/default-cs338/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/pivot-table/default-cs338/app/datasource.jsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/default-cs338/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/pivot-table/default-cs338/app/datasource.tsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/default-cs338/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs338" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs338" %}
 
 ## Changing the Pivot Table style while exporting
 
@@ -297,20 +297,20 @@ The Excel export provides an option to change colors for headers, caption, and r
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/pivot-table/default-cs68/app/App.jsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/default-cs68/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/pivot-table/default-cs68/app/App.tsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/default-cs68/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/pivot-table/default-cs68/app/datasource.jsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/default-cs68/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/pivot-table/default-cs68/app/datasource.tsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/default-cs68/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs68" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs68" %}
 
 ## Add header and footer while exporting
 
@@ -318,20 +318,20 @@ The Excel export provides an option to include header and footer content for the
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/pivot-table/default-cs69/app/App.jsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/default-cs69/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/pivot-table/default-cs69/app/App.tsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/default-cs69/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/pivot-table/default-cs69/app/datasource.jsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/default-cs69/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/pivot-table/default-cs69/app/datasource.tsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/default-cs69/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs69" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs69" %}
 
 ## Changing the file name while exporting
 
@@ -339,20 +339,20 @@ This option provides flexibility to specify a custom file name for your exported
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/pivot-table/default-cs70/app/App.jsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/default-cs70/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/pivot-table/default-cs70/app/App.tsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/default-cs70/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/pivot-table/default-cs70/app/datasource.jsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/default-cs70/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/pivot-table/default-cs70/app/datasource.tsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/default-cs70/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs70" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs70" %}
 
 ## Show spinner during export
 
@@ -360,14 +360,14 @@ When exporting data, displaying a spinner provides visual feedback to end users 
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/pivot-table/default-cs339/app/App.jsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/default-cs339/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/pivot-table/default-cs339/app/App.tsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/default-cs339/app/App.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs339" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs339" %}
 
 ## Export only the current page
 
@@ -377,22 +377,24 @@ By default, the Pivot Table exports all data records, which can result in larger
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/pivot-table/default-cs74/app/App.jsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/default-cs74/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/pivot-table/default-cs74/app/App.tsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/default-cs74/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/pivot-table/default-cs74/app/datasource.jsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/default-cs74/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/pivot-table/default-cs74/app/datasource.tsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/default-cs74/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs74" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs74" %}
 
 ## Events
+
+The Pivot Table provides the following events to monitor and customize the Excel export process. Use them to alter cell content, style, or capture export completion.
 
 ### ExcelQueryCellInfo
 
@@ -407,20 +409,20 @@ The event provides the following arguments:
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/pivot-table/default-cs75/app/App.jsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/default-cs75/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/pivot-table/default-cs75/app/App.tsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/default-cs75/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/pivot-table/default-cs75/app/datasource.jsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/default-cs75/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/pivot-table/default-cs75/app/datasource.tsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/default-cs75/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs75" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs75" %}
 
 ### ExcelHeaderQueryCellInfo
 
@@ -431,20 +433,20 @@ The [`excelHeaderQueryCellInfo`](https://ej2.syncfusion.com/react/documentation/
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/pivot-table/default-cs76/app/App.jsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/default-cs76/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/pivot-table/default-cs76/app/App.tsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/default-cs76/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/pivot-table/default-cs76/app/datasource.jsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/default-cs76/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/pivot-table/default-cs76/app/datasource.tsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/default-cs76/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs76" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs76" %}
 
 ### ExportComplete
 
@@ -455,20 +457,20 @@ The [`exportComplete`](https://ej2.syncfusion.com/react/documentation/api/pivotv
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/pivot-table/default-cs77/app/App.jsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/default-cs77/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/pivot-table/default-cs77/app/App.tsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/default-cs77/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/pivot-table/default-cs77/app/datasource.jsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/default-cs77/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/pivot-table/default-cs77/app/datasource.tsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/default-cs77/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs77" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs77" %}
 
 ## Limitation when exporting millions of records to Excel format
 

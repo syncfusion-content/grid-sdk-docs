@@ -31,10 +31,10 @@ To use the grouping feature, you need to inject the `Grouping` module in the Piv
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/grouping/group-ui/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/grouping/group-ui/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Grouping.cs" %}
-{% include code-snippet/pivot-table/grouping/group-ui/Grouping.cs %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/grouping/group-ui/Grouping.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -42,10 +42,10 @@ To use the grouping feature, you need to inject the `Grouping` module in the Piv
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/grouping/group-ui/razor %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/grouping/group-ui/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Grouping.cs" %}
-{% include code-snippet/pivot-table/grouping/group-ui/Grouping.cs %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/grouping/group-ui/Grouping.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -58,10 +58,10 @@ Number grouping allows users to organize numerical data into different ranges, s
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/grouping/number-group-ui/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/grouping/number-group-ui/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Grouping.cs" %}
-{% include code-snippet/pivot-table/grouping/number-group-ui/Grouping.cs %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/grouping/number-group-ui/Grouping.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -69,10 +69,10 @@ Number grouping allows users to organize numerical data into different ranges, s
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/grouping/number-group-ui/razor %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/grouping/number-group-ui/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Grouping.cs" %}
-{% include code-snippet/pivot-table/grouping/number-group-ui/Grouping.cs %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/grouping/number-group-ui/Grouping.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -113,10 +113,10 @@ You can configure number grouping through code-behind using the [`PivotViewGroup
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/grouping/number-group/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/grouping/number-group/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Grouping.cs" %}
-{% include code-snippet/pivot-table/grouping/number-group/Grouping.cs %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/grouping/number-group/Grouping.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -124,10 +124,10 @@ You can configure number grouping through code-behind using the [`PivotViewGroup
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/grouping/number-group/razor %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/grouping/number-group/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Grouping.cs" %}
-{% include code-snippet/pivot-table/grouping/number-group/Grouping.cs %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/grouping/number-group/Grouping.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -148,10 +148,10 @@ Date grouping organizes date and time data into hierarchical segments, such as y
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/grouping/date-group-ui/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/grouping/date-group-ui/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Grouping.cs" %}
-{% include code-snippet/pivot-table/grouping/date-group-ui/Grouping.cs %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/grouping/date-group-ui/Grouping.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -159,10 +159,10 @@ Date grouping organizes date and time data into hierarchical segments, such as y
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/grouping/date-group-ui/razor %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/grouping/date-group-ui/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Grouping.cs" %}
-{% include code-snippet/pivot-table/grouping/date-group-ui/Grouping.cs %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/grouping/date-group-ui/Grouping.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -205,10 +205,10 @@ You can configure date grouping programmatically using the [`PivotViewGroupSetti
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/grouping/date-group/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/grouping/date-group/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Grouping.cs" %}
-{% include code-snippet/pivot-table/grouping/date-group/Grouping.cs %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/grouping/date-group/Grouping.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -216,10 +216,10 @@ You can configure date grouping programmatically using the [`PivotViewGroupSetti
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/grouping/date-group/razor %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/grouping/date-group/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Grouping.cs" %}
-{% include code-snippet/pivot-table/grouping/date-group/Grouping.cs %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/grouping/date-group/Grouping.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -242,10 +242,10 @@ Custom grouping is an option that enables users to group data types (date, time,
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/grouping/custom-group-ui/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/grouping/custom-group-ui/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Grouping.cs" %}
-{% include code-snippet/pivot-table/grouping/custom-group-ui/Grouping.cs %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/grouping/custom-group-ui/Grouping.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -253,10 +253,10 @@ Custom grouping is an option that enables users to group data types (date, time,
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/grouping/custom-group-ui/razor %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/grouping/custom-group-ui/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Grouping.cs" %}
-{% include code-snippet/pivot-table/grouping/custom-group-ui/Grouping.cs %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/grouping/custom-group-ui/Grouping.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -315,10 +315,10 @@ Here’s an example of configuring custom grouping programmatically:
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/grouping/custom-group/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/grouping/custom-group/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Grouping.cs" %}
-{% include code-snippet/pivot-table/grouping/custom-group/Grouping.cs %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/grouping/custom-group/Grouping.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -326,10 +326,10 @@ Here’s an example of configuring custom grouping programmatically:
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/grouping/custom-group/razor %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/grouping/custom-group/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Grouping.cs" %}
-{% include code-snippet/pivot-table/grouping/custom-group/Grouping.cs %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/grouping/custom-group/Grouping.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

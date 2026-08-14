@@ -1101,15 +1101,15 @@ Use a trusted token issued by the authentication flow after sign‑in. Keep toke
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/server-side-cs1/src/app.component.ts %}
+{% include code-snippet/grid-sdk/angular/pivot-table/server-side-cs1/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/server-side-cs1/src/main.ts %}
+{% include code-snippet/grid-sdk/angular/pivot-table/server-side-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/samples/pivot-grid/server-side-cs1" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/server-side-cs1" %}
 
 **Production tips**
 - Load tokens on demand and rotate them regularly; never hard-code secrets in source control.

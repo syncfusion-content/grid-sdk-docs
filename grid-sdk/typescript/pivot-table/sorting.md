@@ -45,14 +45,14 @@ The following example demonstrates how to configure the Pivot Table to enable me
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/pivot-table/pivot-table-cs467/index.ts %}
+{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs467/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/pivot-table/pivot-table-cs467/index.html %}
+{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs467/index.html %}
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs467" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs467" %}
 
 ### Alphanumeric Sorting
 
@@ -62,14 +62,14 @@ When [`dataType`](https://ej2.syncfusion.com/documentation/api/pivotview/fieldOp
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/pivot-table/pivot-table-cs468/index.ts %}
+{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs468/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/pivot-table/pivot-table-cs468/index.html %}
+{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs468/index.html %}
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs468" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs468" %}
 
 ### Custom Sorting
 
@@ -83,14 +83,14 @@ To set up custom sorting, use the following properties:
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/pivot-table/pivot-table-cs469/index.ts %}
+{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs469/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/pivot-table/pivot-table-cs469/index.html %}
+{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs469/index.html %}
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs469" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs469" %}
 
 ## Value Sorting
 
@@ -106,14 +106,14 @@ You can also configure value sorting programmatically using the [`valueSortSetti
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/pivot-table/pivot-table-cs470/index.ts %}
+{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs470/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/pivot-table/pivot-table-cs470/index.html %}
+{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs470/index.html %}
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs470" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs470" %}
 
 ### Multiple Axis Sorting
 
@@ -129,14 +129,14 @@ Multiple axis sorting allows simultaneous sorting of value fields in both row an
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/pivot-table/pivot-table-cs504/index.ts %}
+{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs504/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/pivot-table/pivot-table-cs504/index.html %}
+{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs504/index.html %}
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs504" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs504" %}
 
 ## Event
 
@@ -158,14 +158,14 @@ The example below demonstrates how to use the [`onHeadersSort`](https://ej2.sync
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/pivot-table/pivot-table-cs471/index.ts %}
+{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs471/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/pivot-table/pivot-table-cs471/index.html %}
+{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs471/index.html %}
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs471" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs471" %}
 
 ### ActionBegin
 
@@ -188,14 +188,14 @@ In the sample below, the sort action is restricted by setting the **args.cancel*
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/pivot-table/action-events-cs49/index.ts %}
+{% include code-snippet/grid-sdk/typescript/pivot-table/action-events-cs49/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/pivot-table/action-events-cs49/index.html %}
+{% include code-snippet/grid-sdk/typescript/pivot-table/action-events-cs49/index.html %}
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "page.domainurl/code-snippet/pivot-table/action-events-cs49" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/pivot-table/action-events-cs49" %}
 
 ### ActionComplete
 
@@ -216,14 +216,14 @@ The event [`actionComplete`](https://ej2.syncfusion.com/documentation/api/pivotv
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/pivot-table/action-events-cs50/index.ts %}
+{% include code-snippet/grid-sdk/typescript/pivot-table/action-events-cs50/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/pivot-table/action-events-cs50/index.html %}
+{% include code-snippet/grid-sdk/typescript/pivot-table/action-events-cs50/index.html %}
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "page.domainurl/code-snippet/pivot-table/action-events-cs50" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/pivot-table/action-events-cs50" %}
 
 ### ActionFailure
 
@@ -240,11 +240,11 @@ The [`actionFailure`](https://ej2.syncfusion.com/documentation/api/pivotview/ind
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/pivot-table/action-events-cs51/index.ts %}
+{% include code-snippet/grid-sdk/typescript/pivot-table/action-events-cs51/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/pivot-table/action-events-cs51/index.html %}
+{% include code-snippet/grid-sdk/typescript/pivot-table/action-events-cs51/index.html %}
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "page.domainurl/code-snippet/pivot-table/action-events-cs51" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/pivot-table/action-events-cs51" %}

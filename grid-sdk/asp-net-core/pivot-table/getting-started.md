@@ -139,10 +139,10 @@ To bind data for the Pivot Table control, you can assign a collection of data ob
 
 {% tabs %}
 {% highlight cshtml tabtitle="Index.cshtml" %}
-{% include code-snippet/pivot-table/getting-start-core/pivot-table/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/getting-start-core/pivot-table/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Index.cshtml.cs" %}
-{% include code-snippet/pivot-table/getting-start-core/pivot-table/pivottable.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/getting-start-core/pivot-table/pivottable.cs %}
 {% endhighlight %}
 {% endtabs %}
 

@@ -72,12 +72,12 @@ The following code sample demonstrates how to replicate the older theme style:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/switch-theme-cs1/src/app.component.ts %}
+{% include code-snippet/grid-sdk/angular/pivot-table/switch-theme-cs1/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/switch-theme-cs1/src/main.ts %}
+{% include code-snippet/grid-sdk/angular/pivot-table/switch-theme-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/samples/pivot-grid/switch-theme-cs1" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/switch-theme-cs1" %}

@@ -23,14 +23,14 @@ To use the virtual scrolling feature, inject the `VirtualScroll` module into the
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/pivot-table/pivot-table-cs265/index.js %}
+{% include code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs265/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/pivot-table/pivot-table-cs265/index.html %}
+{% include code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs265/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs265" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs265" %}
 
 > The `height` and `width` properties should be set for virtual scrolling. If it is not defined, then the Pivot Table will consider its value as `300px` and `800px` respectively.
 
@@ -42,14 +42,14 @@ To optimize performance, set the [allowSinglePage](https://ej2.syncfusion.com/ja
 
 {% tabs %}
 {% highlight ts tabtitle="index.js" %}
-{% include code-snippet/pivot-table/single-page-mode/index.js %}
+{% include code-snippet/grid-sdk/javascript/pivot-table/single-page-mode/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/pivot-table/single-page-mode/index.html %}
+{% include code-snippet/grid-sdk/javascript/pivot-table/single-page-mode/index.html %}
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "page.domainurl/code-snippet/pivot-table/single-page-mode" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/pivot-table/single-page-mode" %}
 
 ## Limitations for Virtual Scrolling
 
@@ -73,14 +73,14 @@ Here's how to make virtual scrolling work with a static field list:
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/pivot-table/field-list-cs9/index.js %}
+{% include code-snippet/grid-sdk/javascript/pivot-table/field-list-cs9/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/pivot-table/field-list-cs9/index.html %}
+{% include code-snippet/grid-sdk/javascript/pivot-table/field-list-cs9/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/pivot-table/field-list-cs9" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/pivot-table/field-list-cs9" %}
 
 ## See also
 

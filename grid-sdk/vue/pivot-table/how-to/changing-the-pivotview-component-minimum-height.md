@@ -16,11 +16,11 @@ When the content exceeds the minimum height, the component automatically adjusts
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/default-cs132/app-composition.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/default-cs132/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/default-cs132/app.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/default-cs132/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/pivot-grid/default-cs132" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/default-cs132" %}

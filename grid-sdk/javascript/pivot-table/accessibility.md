@@ -230,11 +230,11 @@ The accessibility compliance of the pivot table component is shown in the follow
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/pivot-table/accessibility/index.js %}
+{% include code-snippet/grid-sdk/javascript/pivot-table/accessibility/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/pivot-table/accessibility/index.html %}
+{% include code-snippet/grid-sdk/javascript/pivot-table/accessibility/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/pivot-table/accessibility" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/pivot-table/accessibility" %}

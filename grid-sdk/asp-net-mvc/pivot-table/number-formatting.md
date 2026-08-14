@@ -50,10 +50,10 @@ Use these standard format codes to specify the formatting type:
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/number-formatting/code-behind/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/number-formatting/code-behind/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Formatting.cs" %}
-{% include code-snippet/pivot-table/number-formatting/code-behind/Formatting.cs %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/number-formatting/code-behind/Formatting.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -61,10 +61,10 @@ Use these standard format codes to specify the formatting type:
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/number-formatting/code-behind/razor %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/number-formatting/code-behind/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Formatting.cs" %}
-{% include code-snippet/pivot-table/number-formatting/code-behind/Formatting.cs %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/number-formatting/code-behind/Formatting.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -97,10 +97,10 @@ Custom format lets you display numbers in your preferred pattern by setting the 
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/number-formatting/custom/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/number-formatting/custom/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Formatting.cs" %}
-{% include code-snippet/pivot-table/number-formatting/custom/Formatting.cs %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/number-formatting/custom/Formatting.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -108,10 +108,10 @@ Custom format lets you display numbers in your preferred pattern by setting the 
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/number-formatting/custom/razor %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/number-formatting/custom/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Formatting.cs" %}
-{% include code-snippet/pivot-table/number-formatting/custom/Formatting.cs %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/number-formatting/custom/Formatting.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -128,10 +128,10 @@ Number formatting can be applied instantly at runtime through the built-in dialo
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/number-formatting/toolbar/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/number-formatting/toolbar/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Formatting.cs" %}
-{% include code-snippet/pivot-table/number-formatting/toolbar/Formatting.cs %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/number-formatting/toolbar/Formatting.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -139,10 +139,10 @@ Number formatting can be applied instantly at runtime through the built-in dialo
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/number-formatting/toolbar/razor %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/number-formatting/toolbar/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Formatting.cs" %}
-{% include code-snippet/pivot-table/number-formatting/toolbar/Formatting.cs %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/number-formatting/toolbar/Formatting.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -159,10 +159,10 @@ The number formatting dialog can be opened programmatically by clicking an exter
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/number-formatting/button/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/number-formatting/button/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Formatting.cs" %}
-{% include code-snippet/pivot-table/number-formatting/button/Formatting.cs %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/number-formatting/button/Formatting.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -170,10 +170,10 @@ The number formatting dialog can be opened programmatically by clicking an exter
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/number-formatting/button/razor %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/number-formatting/button/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Formatting.cs" %}
-{% include code-snippet/pivot-table/number-formatting/button/Formatting.cs %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/number-formatting/button/Formatting.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -200,10 +200,10 @@ The following sample demonstrates how to prevent number formatting changes for t
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/number-formatting/numberformatting-event/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/number-formatting/numberformatting-event/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Formatting.cs" %}
-{% include code-snippet/pivot-table/number-formatting/numberformatting-event/Formatting.cs %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/number-formatting/numberformatting-event/Formatting.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -211,10 +211,10 @@ The following sample demonstrates how to prevent number formatting changes for t
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/number-formatting/numberformatting-event/razor %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/number-formatting/numberformatting-event/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Formatting.cs" %}
-{% include code-snippet/pivot-table/number-formatting/numberformatting-event/Formatting.cs %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/number-formatting/numberformatting-event/Formatting.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

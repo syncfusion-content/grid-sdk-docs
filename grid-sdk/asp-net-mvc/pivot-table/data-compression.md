@@ -20,10 +20,10 @@ When binding large volumes of raw data, the pivot table processes all raw data t
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/virtual-scrolling-compression/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/virtual-scrolling-compression/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="VirtualScrolling.cs" %}
-{% include code-snippet/pivot-table/virtual-scrolling-compression/VirtualScrolling.cs %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/virtual-scrolling-compression/VirtualScrolling.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -31,10 +31,10 @@ When binding large volumes of raw data, the pivot table processes all raw data t
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/virtual-scrolling-compression/razor %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/virtual-scrolling-compression/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="VirtualScrolling.cs" %}
-{% include code-snippet/pivot-table/virtual-scrolling-compression/VirtualScrolling.cs %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/virtual-scrolling-compression/VirtualScrolling.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

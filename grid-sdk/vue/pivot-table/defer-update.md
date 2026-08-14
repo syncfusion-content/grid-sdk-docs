@@ -23,14 +23,14 @@ To enable deferred updates in the pivot table, set the [`allowDeferLayoutUpdate`
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/default-cs25/app-composition.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/default-cs25/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/default-cs25/app.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/default-cs25/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/pivot-grid/default-cs25" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/default-cs25" %}
 
 ## Stand-alone Field List (Fixed)
 
@@ -42,11 +42,11 @@ To enable deferred updates in the static fieldlist, set the [`allowDeferLayoutUp
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/default-cs26/app-composition.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/default-cs26/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/default-cs26/app.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/default-cs26/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/pivot-grid/default-cs26" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/default-cs26" %}

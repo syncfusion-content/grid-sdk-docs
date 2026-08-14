@@ -15,14 +15,14 @@ The tooltip displays contextual information when users hover over value cells in
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/pivot-table/pivot-table-cs264/index.js %}
+{% include code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs264/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/pivot-table/pivot-table-cs264/index.html %}
+{% include code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs264/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs264" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs264" %}
 
 ## Tooltip Template
 
@@ -42,11 +42,11 @@ The example below shows how to define the Pivot Table tooltip template in `index
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/pivot-table/tooltip-template-cs1/index.js %}
+{% include code-snippet/grid-sdk/javascript/pivot-table/tooltip-template-cs1/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/pivot-table/tooltip-template-cs1/index.html %}
+{% include code-snippet/grid-sdk/javascript/pivot-table/tooltip-template-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/pivot-table/tooltip-template-cs1" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/pivot-table/tooltip-template-cs1" %}

@@ -22,10 +22,10 @@ Below is an example of enabling drill-through in a Pivot Table:
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/drill-through/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/drill-through/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="DrillThrough.cs" %}
-{% include code-snippet/pivot-table/drill-through/DrillThrough.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/drill-through/DrillThrough.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -33,10 +33,10 @@ Below is an example of enabling drill-through in a Pivot Table:
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/drill-through/razor %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/drill-through/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="DrillThrough.cs" %}
-{% include code-snippet/pivot-table/drill-through/DrillThrough.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/drill-through/DrillThrough.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -56,10 +56,10 @@ Below is an example of enabling drill-through with a pivot chart:
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/drill-through-chart/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/drill-through-chart/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="DrillThroughChart.cs" %}
-{% include code-snippet/pivot-table/drill-through-chart/DrillThroughChart.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/drill-through-chart/DrillThroughChart.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -67,10 +67,10 @@ Below is an example of enabling drill-through with a pivot chart:
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/drill-through-chart/razor %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/drill-through-chart/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="DrillThroughChart.cs" %}
-{% include code-snippet/pivot-table/drill-through-chart/DrillThroughChart.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/drill-through-chart/DrillThroughChart.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -93,10 +93,10 @@ The [`maxRowsInDrillThrough`](https://help.syncfusion.com/cr/aspnetcore-js2/Sync
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/getting-start-mvc/olap-drill-through/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/getting-start-mvc/olap-drill-through/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Drill-through.cs" %}
-{% include code-snippet/pivot-table/getting-start-mvc/olap-drill-through/drill-through.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/getting-start-mvc/olap-drill-through/drill-through.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -104,10 +104,10 @@ The [`maxRowsInDrillThrough`](https://help.syncfusion.com/cr/aspnetcore-js2/Sync
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/getting-start-mvc/olap-drill-through/razor %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/getting-start-mvc/olap-drill-through/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Drill-through.cs" %}
-{% include code-snippet/pivot-table/getting-start-mvc/olap-drill-through/drill-through.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/getting-start-mvc/olap-drill-through/drill-through.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -137,10 +137,10 @@ Below is an example of using the [`drillThrough`](https://help.syncfusion.com/cr
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/drill-through-event/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/drill-through-event/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="DrillThroughEvent.cs" %}
-{% include code-snippet/pivot-table/drill-through-event/DrillThroughEvent.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/drill-through-event/DrillThroughEvent.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -148,10 +148,10 @@ Below is an example of using the [`drillThrough`](https://help.syncfusion.com/cr
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/drill-through-event/razor %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/drill-through-event/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="DrillThroughEvent.cs" %}
-{% include code-snippet/pivot-table/drill-through-event/DrillThroughEvent.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/drill-through-event/DrillThroughEvent.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -171,10 +171,10 @@ The following example demonstrates how to enable `sorting`, `filtering`, and `gr
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/custom-editing/custom-editing/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/custom-editing/custom-editing/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="CustomEditing.cs" %}
-{% include code-snippet/pivot-table/custom-editing/custom-editing/CustomEditing.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/custom-editing/custom-editing/CustomEditing.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -182,10 +182,10 @@ The following example demonstrates how to enable `sorting`, `filtering`, and `gr
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/custom-editing/custom-editing/razor %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/custom-editing/custom-editing/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="CustomEditing.cs" %}
-{% include code-snippet/pivot-table/custom-editing/custom-editing/CustomEditing.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/custom-editing/custom-editing/CustomEditing.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

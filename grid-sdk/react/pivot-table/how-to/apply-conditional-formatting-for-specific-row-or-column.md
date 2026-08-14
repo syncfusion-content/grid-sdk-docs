@@ -30,11 +30,11 @@ The code example below shows how to apply conditional formatting to the **German
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/pivot-table/default-cs154/app/App.jsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/default-cs154/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/pivot-table/default-cs154/app/App.tsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/default-cs154/app/App.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs154" %} 
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs154" %} 

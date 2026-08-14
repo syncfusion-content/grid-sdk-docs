@@ -25,10 +25,10 @@ For numeric fields, the formatting settings include the following properties:
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/formatting/number/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/formatting/number/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Number.cs" %}
-{% include code-snippet/pivot-table/formatting/number/Number.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/formatting/number/Number.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -36,10 +36,10 @@ For numeric fields, the formatting settings include the following properties:
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/formatting/number/razor %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/formatting/number/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Number.cs" %}
-{% include code-snippet/pivot-table/formatting/number/Number.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/formatting/number/Number.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -60,10 +60,10 @@ For date and time fields, the formatting settings include these properties:
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/formatting/date/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/formatting/date/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Date.cs" %}
-{% include code-snippet/pivot-table/formatting/date/Date.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/formatting/date/Date.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -71,10 +71,10 @@ For date and time fields, the formatting settings include these properties:
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/formatting/date/razor %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/formatting/date/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Date.cs" %}
-{% include code-snippet/pivot-table/formatting/date/Date.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/formatting/date/Date.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

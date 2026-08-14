@@ -38,14 +38,14 @@ The following table lists the built-in toolbar options and their actions:
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/default-cs245/app-composition.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/default-cs245/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/default-cs245/app.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/default-cs245/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/pivot-grid/default-cs245" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/default-cs245" %}
 
 ## Show desired chart types in the dropdown menu
 
@@ -57,14 +57,14 @@ To learn more about the supported chart types, see the [Pivot Chart documentatio
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/default-cs246/app-composition.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/default-cs246/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/default-cs246/app.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/default-cs246/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/pivot-grid/default-cs246" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/default-cs246" %}
 
 ## Switch the chart to multiple axes
 
@@ -90,14 +90,14 @@ Here’s an example of how to add a custom toolbar item:
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/default-cs247/app-composition.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/default-cs247/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/default-cs247/app.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/default-cs247/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/pivot-grid/default-cs247" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/default-cs247" %}
 
 ### Toolbar Template
 
@@ -107,27 +107,27 @@ Below is an example of a custom toolbar with buttons to expand or collapse all r
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/default-cs248/app-composition.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/default-cs248/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/default-cs248/app.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/default-cs248/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/pivot-grid/default-cs248" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/default-cs248" %}
 
 Another option allows framing a custom toolbar item using HTML elements and including it in the toolbar panel at the desired position. Custom toolbar items can be declared as a control **instance** or element **ID** in the [`toolbar`](https://ej2.syncfusion.com/vue/documentation/api/pivotview/index-default#toolbar) property in the pivot table.
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/default-cs249/app-composition.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/default-cs249/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/default-cs249/app.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/default-cs249/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/pivot-grid/default-cs249" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/default-cs249" %}
 
 > Note: For both options, the actions for the toolbar template items can be defined in the [`toolbarClick`](https://ej2.syncfusion.com/vue/documentation/api/pivotview/index-default#toolbarclick) event. Additionally, if the toolbar item is a custom control, its built-in events can also be accessed.
 
@@ -141,14 +141,14 @@ The following code example shows how to save and load a Pivot Table report as a 
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/default-cs250/app-composition.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/default-cs250/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/default-cs250/app.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/default-cs250/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/pivot-grid/default-cs250" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/default-cs250" %}
 
 ## Save and load reports to a SQL database
 
@@ -1040,14 +1040,14 @@ The [`toolbarRender`](https://ej2.syncfusion.com/vue/documentation/api/pivotview
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/default-cs251/app-composition.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/default-cs251/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/default-cs251/app.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/default-cs251/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/pivot-grid/default-cs251" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/default-cs251" %}
 
 ### BeforeExport
 
@@ -1057,14 +1057,14 @@ Here’s an example of how to use the `beforeExport` event to customize headers 
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/default-cs252/app-composition.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/default-cs252/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/default-cs252/app.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/default-cs252/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/pivot-grid/default-cs252" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/default-cs252" %}
 
 ### ActionBegin
 
@@ -1096,14 +1096,14 @@ In the example below, the [`actionBegin`](https://ej2.syncfusion.com/vue/documen
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/default-cs253/app-composition.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/default-cs253/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/default-cs253/app.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/default-cs253/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/pivot-grid/default-cs253" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/default-cs253" %}
 
 ### ActionComplete
 
@@ -1132,14 +1132,14 @@ The [`actionComplete`](https://ej2.syncfusion.com/vue/documentation/api/pivotvie
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/default-cs254/app-composition.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/default-cs254/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/default-cs254/app.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/default-cs254/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/pivot-grid/default-cs254" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/default-cs254" %}
 
 ### ActionFailure
 
@@ -1168,14 +1168,14 @@ The [`actionFailure`](https://ej2.syncfusion.com/vue/documentation/api/pivotview
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/default-cs255/app-composition.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/default-cs255/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/default-cs255/app.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/default-cs255/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/pivot-grid/default-cs255" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/default-cs255" %}
 
 ## See Also
 

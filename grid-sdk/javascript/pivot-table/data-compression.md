@@ -19,14 +19,14 @@ When binding large volumes of raw data, the pivot table processes all raw data t
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/pivot-table/pivot-table-cs266/index.js %}
+{% include code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs266/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/pivot-table/pivot-table-cs266/index.html %}
+{% include code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs266/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs266" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs266" %}
 
 **Limitations during data compression:**
 

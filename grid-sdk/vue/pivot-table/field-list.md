@@ -27,14 +27,14 @@ To use the field list, you need to inject the `FieldList` module in the Pivot Ta
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/default-cs61/app-composition.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/default-cs61/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/default-cs61/app.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/default-cs61/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/pivot-grid/default-cs61" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/default-cs61" %}
 
 ## Stand-alone Field List (Fixed)
 
@@ -44,14 +44,14 @@ The stand-alone Field List allows users to keep the Field List visible at a spec
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/default-cs62/app-composition.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/default-cs62/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/default-cs62/app.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/default-cs62/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/pivot-grid/default-cs62" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/default-cs62" %}
 
 ## Invoking dynamic Field List (Customized)
 
@@ -65,14 +65,14 @@ The sample code below shows how to open the Field List dialog using an external 
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/default-cs69/app-composition.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/default-cs69/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/default-cs69/app.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/default-cs69/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/pivot-grid/default-cs69" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/default-cs69" %}
 
 ## Search desired field
 
@@ -88,14 +88,14 @@ To enable the search box in the stand-alone Field List UI, set the [`enableField
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/default-cs63/app-composition.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/default-cs63/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/default-cs63/app.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/default-cs63/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/pivot-grid/default-cs63" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/default-cs63" %}
 
 **Pivot Table's Built-in Popup Field List**
 
@@ -103,14 +103,14 @@ To enable the search box in the Pivot Table's built-in popup Field List UI, set 
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/default-cs64/app-composition.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/default-cs64/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/default-cs64/app.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/default-cs64/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/pivot-grid/default-cs64" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/default-cs64" %}
 
 ## Option to sort fields
 
@@ -128,14 +128,14 @@ Below is an example showing how to set up this option when initializing the Pivo
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/default-cs261/app-composition.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/default-cs261/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/default-cs261/app.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/default-cs261/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/pivot-grid/default-cs261" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/default-cs261" %}
 
 ## Group fields under desired folder name
 
@@ -145,14 +145,14 @@ Organizing fields into custom folders in the Field List helps users manage and l
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/default-cs65/app-composition.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/default-cs65/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/default-cs65/app.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/default-cs65/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/pivot-grid/default-cs65" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/default-cs65" %}
 
 ## Add or remove fields
 
@@ -166,14 +166,14 @@ When you connect a data source to the Pivot Table, all available fields from the
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/default-cs66/app-composition.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/default-cs66/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/default-cs66/app.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/default-cs66/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/pivot-grid/default-cs66" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/default-cs66" %}
 
 ## Re-arranging fields
 
@@ -233,14 +233,14 @@ The sample code below demonstrates how to display the built-in Field List dialog
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/default-cs67/app-composition.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/default-cs67/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/default-cs67/app.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/default-cs67/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/pivot-grid/default-cs67" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/default-cs67" %}
 
 ## Show field list using toolbar
 
@@ -248,14 +248,14 @@ The Field List can be displayed in the toolbar by enabling specific options in t
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/default-cs68/app-composition.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/default-cs68/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/default-cs68/app.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/default-cs68/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/pivot-grid/default-cs68" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/default-cs68" %}
 
 ## Set caption to fields which isn’t bound to the report
 
@@ -265,14 +265,14 @@ In the example below, captions are set for the `Year` and `Quarter` fields dynam
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/default-cs70/app-composition.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/default-cs70/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/default-cs70/app.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/default-cs70/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/pivot-grid/default-cs70" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/default-cs70" %}
 
 ## Show values button
 
@@ -284,14 +284,14 @@ At runtime, the **Values** button in the field list allows users to move the val
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/default-cs71/app-composition.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/default-cs71/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/default-cs71/app.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/default-cs71/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/pivot-grid/default-cs71" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/default-cs71" %}
 
 ## Events
 
@@ -308,14 +308,14 @@ This event includes the following parameters: [`dataSourceSettings`](https://ej2
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/default-cs72/app-composition.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/default-cs72/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/default-cs72/app.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/default-cs72/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/pivot-grid/default-cs72" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/default-cs72" %}
 
 ### FieldListRefreshed
 
@@ -325,14 +325,14 @@ For example, when a user sorts a field in the field list, the field list updates
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/default-cs73/app-composition.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/default-cs73/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/default-cs73/app.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/default-cs73/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/pivot-grid/default-cs73" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/default-cs73" %}
 
 ### OnFieldDropped
 
@@ -348,14 +348,14 @@ In the following code example, we changed the caption of the dropped field using
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/default-cs74/app-composition.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/default-cs74/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/default-cs74/app.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/default-cs74/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/pivot-grid/default-cs74" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/default-cs74" %}
 
 ### ActionBegin
 
@@ -385,14 +385,14 @@ In the following sample, you can restrict opening the popup field list by settin
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/default-cs75/app-composition.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/default-cs75/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/default-cs75/app.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/default-cs75/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/pivot-grid/default-cs75" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/default-cs75" %}
 
 ### ActionComplete
 
@@ -420,14 +420,14 @@ The [`actionComplete`](https://ej2.syncfusion.com/vue/documentation/api/pivotvie
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/default-cs76/app-composition.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/default-cs76/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/default-cs76/app.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/default-cs76/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/pivot-grid/default-cs76" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/default-cs76" %}
 
 ### ActionFailure
 
@@ -449,14 +449,14 @@ The [`actionFailure`](https://ej2.syncfusion.com/vue/documentation/api/pivotview
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/default-cs77/app-composition.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/default-cs77/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/default-cs77/app.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/default-cs77/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/pivot-grid/default-cs77" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/default-cs77" %}
 
 ## See Also
 

@@ -46,14 +46,14 @@ Once enabled, hyperlinks will be shown consistently in row headers, column heade
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/pivot-table/pivot-table-cs395/index.ts %}
+{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs395/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/pivot-table/pivot-table-cs395/index.html %}
+{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs395/index.html %}
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs395" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs395" %}
 
 ## Hyperlink for row headers
 
@@ -61,14 +61,14 @@ The pivot table provides a way to display hyperlinks specifically in **row heade
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/pivot-table/pivot-table-cs396/index.ts %}
+{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs396/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/pivot-table/pivot-table-cs396/index.html %}
+{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs396/index.html %}
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs396" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs396" %}
 
 ## Hyperlink for column headers
 
@@ -76,14 +76,14 @@ The pivot table provides an option to display hyperlinks specifically in column 
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/pivot-table/pivot-table-cs397/index.ts %}
+{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs397/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/pivot-table/pivot-table-cs397/index.html %}
+{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs397/index.html %}
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs397" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs397" %}
 
 ## Hyperlink for value cells
 
@@ -91,14 +91,14 @@ The pivot table provides support for displaying hyperlinks specifically in value
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/pivot-table/pivot-table-cs398/index.ts %}
+{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs398/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/pivot-table/pivot-table-cs398/index.html %}
+{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs398/index.html %}
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs398" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs398" %}
 
 ## Hyperlink for summary cells
 
@@ -106,14 +106,14 @@ The pivot table provides support for displaying hyperlinks specifically in summa
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/pivot-table/pivot-table-cs399/index.ts %}
+{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs399/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/pivot-table/pivot-table-cs399/index.html %}
+{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs399/index.html %}
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs399" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs399" %}
 
 ## Condition based hyperlink
 
@@ -128,14 +128,14 @@ In the example below, the pivot table is configured to display hyperlinks only i
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/pivot-table/pivot-table-cs400/index.ts %}
+{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs400/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/pivot-table/pivot-table-cs400/index.html %}
+{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs400/index.html %}
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs400" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs400" %}
 
 ## Header based hyperlink
 
@@ -147,14 +147,14 @@ N> The **dot(.)** character in **FY 2015.Q1.Units Sold** is used by default to i
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/pivot-table/pivot-table-cs401/index.ts %}
+{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs401/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/pivot-table/pivot-table-cs401/index.html %}
+{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs401/index.html %}
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs401" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs401" %}
 
 ## Event
 
@@ -171,14 +171,14 @@ In the example below, when a hyperlink cell is clicked, a custom attribute (**da
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/pivot-table/pivot-table-cs402/index.ts %}
+{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs402/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/pivot-table/pivot-table-cs402/index.html %}
+{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs402/index.html %}
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs402" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs402" %}
 
 ## See Also
 

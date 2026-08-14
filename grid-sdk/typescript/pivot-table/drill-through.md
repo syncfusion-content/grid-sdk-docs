@@ -19,14 +19,14 @@ Below is an example of enabling drill-through in a Pivot Table:
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/pivot-table/pivot-table-cs342/index.ts %}
+{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs342/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/pivot-table/pivot-table-cs342/index.html %}
+{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs342/index.html %}
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs342" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs342" %}
 
 Users can also access drill-through data through the pivot chart. By clicking on any data point in the pivot chart, they can view the raw data in a data grid displayed in a new window.
 
@@ -34,14 +34,14 @@ Below is an example of enabling drill-through with a pivot chart:
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/pivot-table/pivot-table-cs343/index.ts %}
+{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs343/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/pivot-table/pivot-table-cs343/index.html %}
+{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs343/index.html %}
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs343" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs343" %}
 
 ## Maximum rows to retrieve
 
@@ -126,14 +126,14 @@ Below is an example of using the [`drillThrough`](https://ej2.syncfusion.com/doc
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/pivot-table/pivot-table-cs344/index.ts %}
+{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs344/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/pivot-table/pivot-table-cs344/index.html %}
+{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs344/index.html %}
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs344" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs344" %}
 
 ### BeginDrillThrough
 
@@ -148,11 +148,11 @@ The following example demonstrates how to enable [`sorting`](https://ej2.syncfus
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/pivot-table/pivot-table-cs345/index.ts %}
+{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs345/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/pivot-table/pivot-table-cs345/index.html %}
+{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs345/index.html %}
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs345" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs345" %}

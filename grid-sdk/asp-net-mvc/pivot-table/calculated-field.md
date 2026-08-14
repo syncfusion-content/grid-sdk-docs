@@ -37,10 +37,10 @@ To use the calculated field feature, you must inject the `CalculatedField` modul
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/calculatedfield/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/calculatedfield/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Calculatedfield.cs" %}
-{% include code-snippet/pivot-table/calculatedfield/calculatedfield.cs %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/calculatedfield/calculatedfield.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -48,10 +48,10 @@ To use the calculated field feature, you must inject the `CalculatedField` modul
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/calculatedfield/razor %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/calculatedfield/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Calculatedfield.cs" %}
-{% include code-snippet/pivot-table/calculatedfield/calculatedfield.cs %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/calculatedfield/calculatedfield.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -68,10 +68,10 @@ You can display the calculated field dialog by calling the `CreateCalculatedFiel
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/getting-start-core/calculatedfield/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/getting-start-core/calculatedfield/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Calculatedfield.cs" %}
-{% include code-snippet/pivot-table/getting-start-core/calculatedfield/calculatedfield.cs %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/getting-start-core/calculatedfield/calculatedfield.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -79,10 +79,10 @@ You can display the calculated field dialog by calling the `CreateCalculatedFiel
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/getting-start-core/calculatedfield/razor %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/getting-start-core/calculatedfield/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Calculatedfield.cs" %}
-{% include code-snippet/pivot-table/getting-start-core/calculatedfield/calculatedfield.cs %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/getting-start-core/calculatedfield/calculatedfield.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -319,10 +319,10 @@ Below is a list of operators and functions that can be used in the formula to cr
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/calculatedfield-condition/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/calculatedfield-condition/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Calculatedfield.cs" %}
-{% include code-snippet/pivot-table/calculatedfield-condition/calculatedfield.cs %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/calculatedfield-condition/calculatedfield.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -330,10 +330,10 @@ Below is a list of operators and functions that can be used in the formula to cr
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/calculatedfield-condition/razor %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/calculatedfield-condition/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Calculatedfield.cs" %}
-{% include code-snippet/pivot-table/calculatedfield-condition/calculatedfield.cs %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/calculatedfield-condition/calculatedfield.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -370,10 +370,10 @@ The following example shows how to prevent users from creating calculated fields
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/calculatedfieldCreate/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/calculatedfieldCreate/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="CalculatedfieldCreate.cs" %}
-{% include code-snippet/pivot-table/calculatedfieldCreate/calculatedfieldCreate.cs %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/calculatedfieldCreate/calculatedfieldCreate.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -381,10 +381,10 @@ The following example shows how to prevent users from creating calculated fields
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/calculatedfieldCreate/razor %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/calculatedfieldCreate/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="CalculatedfieldCreate.cs" %}
-{% include code-snippet/pivot-table/calculatedfieldCreate/calculatedfieldCreate.cs %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/calculatedfieldCreate/calculatedfieldCreate.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -426,10 +426,10 @@ The example below illustrates how to prevent access to the calculated field dial
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/action-event/actionBegin-calculatedField/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/action-event/actionBegin-calculatedField/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="ActionBegin-calculatedField.cs" %}
-{% include code-snippet/pivot-table/action-event/actionBegin-calculatedField/actionBegin-calculatedField.cs %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/action-event/actionBegin-calculatedField/actionBegin-calculatedField.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -437,10 +437,10 @@ The example below illustrates how to prevent access to the calculated field dial
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/action-event/actionBegin-calculatedField/razor %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/action-event/actionBegin-calculatedField/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="ActionBegin-calculatedField.cs" %}
-{% include code-snippet/pivot-table/action-event/actionBegin-calculatedField/actionBegin-calculatedField.cs %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/action-event/actionBegin-calculatedField/actionBegin-calculatedField.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -476,10 +476,10 @@ The example below demonstrates how to use the [`ActionComplete`](https://help.sy
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/action-event/actionComplete-calculatedField/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/action-event/actionComplete-calculatedField/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="ActionComplete-calculatedField.cs" %}
-{% include code-snippet/pivot-table/action-event/actionComplete-calculatedField/actionComplete-calculatedField.cs %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/action-event/actionComplete-calculatedField/actionComplete-calculatedField.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -487,10 +487,10 @@ The example below demonstrates how to use the [`ActionComplete`](https://help.sy
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/action-event/actionComplete-calculatedField/razor %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/action-event/actionComplete-calculatedField/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="ActionComplete-calculatedField.cs" %}
-{% include code-snippet/pivot-table/action-event/actionComplete-calculatedField/actionComplete-calculatedField.cs %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/action-event/actionComplete-calculatedField/actionComplete-calculatedField.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -513,10 +513,10 @@ The [`ActionFailure`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.E
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/action-event/actionFailure-calculatedField/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/action-event/actionFailure-calculatedField/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="ActionFailure-calculatedField.cs" %}
-{% include code-snippet/pivot-table/action-event/actionFailure-calculatedField/actionFailure-calculatedField.cs %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/action-event/actionFailure-calculatedField/actionFailure-calculatedField.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -524,10 +524,10 @@ The [`ActionFailure`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.E
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/action-event/actionFailure-calculatedField/razor %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/action-event/actionFailure-calculatedField/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="ActionFailure-calculatedField.cs" %}
-{% include code-snippet/pivot-table/action-event/actionFailure-calculatedField/actionFailure-calculatedField.cs %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/action-event/actionFailure-calculatedField/actionFailure-calculatedField.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

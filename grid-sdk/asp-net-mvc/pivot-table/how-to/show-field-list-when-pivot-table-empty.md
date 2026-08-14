@@ -16,10 +16,10 @@ When there are no fields configured in a pivot table's row, column, value, and f
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/summary-customization/edit-type/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/summary-customization/edit-type/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="EditType.cs" %}
-{% include code-snippet/pivot-table/summary-customization/edit-type/EditType.cs %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/summary-customization/edit-type/EditType.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -27,10 +27,10 @@ When there are no fields configured in a pivot table's row, column, value, and f
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/summary-customization/edit-type/razor %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/summary-customization/edit-type/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="EditType.cs" %}
-{% include code-snippet/pivot-table/summary-customization/edit-type/EditType.cs %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/summary-customization/edit-type/EditType.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

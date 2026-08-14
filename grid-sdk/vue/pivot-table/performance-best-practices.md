@@ -83,14 +83,14 @@ It obviously impacts the overall performance during Pivot Table rendering becaus
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/performance-best-practices-cs1/app-composition.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/performance-best-practices-cs1/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/performance-best-practices-cs1/app.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/performance-best-practices-cs1/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/pivot-grid/performance-best-practices-cs1" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/performance-best-practices-cs1" %}
 
 To avoid this performance constraint, we recommend passing the input raw data along with pre-processed group field sets based on your grouping needs. For example, if your input raw data has a date field "Date" with the value "15/AUG/2019 03:41 PM" and you want to display it as the year and month alone, split out the date field as "Date_Year" = "15/AUG/2019" for the year and "Date_Month" = "15/AUG/2019" for the month. Further use the [formatSettings](https://ej2.syncfusion.com/vue/documentation/api/pivotview/dataSourceSettings#formatsettings) property to show these date fields with the chosen date format. Similarly, to group a number field, just alter its value based on your requirements (e.g., 1–5, 6–10).
 
@@ -98,14 +98,14 @@ Here's an example below of configuring grouping in your input raw data and assig
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/performance-best-practices-cs2/app-composition.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/performance-best-practices-cs2/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/performance-best-practices-cs2/app.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/performance-best-practices-cs2/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/pivot-grid/performance-best-practices-cs2" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/performance-best-practices-cs2" %}
 
 ### Value filtering
 

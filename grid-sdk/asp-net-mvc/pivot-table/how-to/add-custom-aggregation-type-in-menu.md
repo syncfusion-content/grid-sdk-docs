@@ -24,10 +24,10 @@ In the following example, we have added two custom aggregation types **CustomAgg
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/add-custom-aggregation/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/add-custom-aggregation/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="CustomAggregation.cs" %}
-{% include code-snippet/pivot-table/add-custom-aggregation/CustomAggregation.cs %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/add-custom-aggregation/CustomAggregation.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -35,10 +35,10 @@ In the following example, we have added two custom aggregation types **CustomAgg
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/add-custom-aggregation/razor %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/add-custom-aggregation/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="CustomAggregation.cs" %}
-{% include code-snippet/pivot-table/add-custom-aggregation/CustomAggregation.cs %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/add-custom-aggregation/CustomAggregation.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

@@ -23,25 +23,25 @@ The following example demonstrates how to convert numeric values in the **Sold**
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/pivot-table/pivot-table-cs501/index.ts %}
+{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs501/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/pivot-table/pivot-table-cs501/index.html %}
+{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs501/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs501" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs501" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/pivot-table/pivot-table-cs501/index.js %}
+{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs501/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/pivot-table/pivot-table-cs501/index.html %}
+{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs501/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs501" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs501" %}
 {% endif %}

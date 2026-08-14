@@ -47,10 +47,10 @@ The following example demonstrates how to configure the Pivot Table to enable me
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/sorting/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/sorting/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Sorting.cs" %}
-{% include code-snippet/pivot-table/sorting/Sorting.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/sorting/Sorting.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -58,10 +58,10 @@ The following example demonstrates how to configure the Pivot Table to enable me
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/sorting/razor %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/sorting/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Sorting.cs" %}
-{% include code-snippet/pivot-table/sorting/Sorting.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/sorting/Sorting.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -76,10 +76,10 @@ When [`dataType`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.P
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/sorting/alpha-numeric-headers/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/sorting/alpha-numeric-headers/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="AlphaHeader.cs" %}
-{% include code-snippet/pivot-table/sorting/alpha-numeric-headers/AlphaHeader.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/sorting/alpha-numeric-headers/AlphaHeader.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -87,10 +87,10 @@ When [`dataType`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.P
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/sorting/alpha-numeric-headers/razor %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/sorting/alpha-numeric-headers/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="AlphaHeader.cs" %}
-{% include code-snippet/pivot-table/sorting/alpha-numeric-headers/AlphaHeader.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/sorting/alpha-numeric-headers/AlphaHeader.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -113,10 +113,10 @@ To set up custom sorting, use the following properties:
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/sorting/custom-sorting/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/sorting/custom-sorting/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Custom-sorting.cs" %}
-{% include code-snippet/pivot-table/sorting/custom-sorting/Custom-sorting.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/sorting/custom-sorting/Custom-sorting.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -124,10 +124,10 @@ To set up custom sorting, use the following properties:
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/sorting/custom-sorting/razor %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/sorting/custom-sorting/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Custom-sorting.cs" %}
-{% include code-snippet/pivot-table/sorting/custom-sorting/Custom-sorting.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/sorting/custom-sorting/Custom-sorting.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -152,10 +152,10 @@ You can also configure value sorting programmatically using the [`e-valuesortset
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/value-sorting/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/value-sorting/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="ValueSorting.cs" %}
-{% include code-snippet/pivot-table/value-sorting/ValueSorting.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/value-sorting/ValueSorting.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -163,10 +163,10 @@ You can also configure value sorting programmatically using the [`e-valuesortset
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/value-sorting/razor %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/value-sorting/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="ValueSorting.cs" %}
-{% include code-snippet/pivot-table/value-sorting/ValueSorting.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/value-sorting/ValueSorting.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -191,10 +191,10 @@ Multiple axis sorting allows simultaneous sorting of value fields in both row an
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/multiple-axis-sorting/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/multiple-axis-sorting/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="MultipleAxisSorting.cs" %}
-{% include code-snippet/pivot-table/multiple-axis-sorting/MultipleAxisSorting.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/multiple-axis-sorting/MultipleAxisSorting.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -202,10 +202,10 @@ Multiple axis sorting allows simultaneous sorting of value fields in both row an
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/multiple-axis-sorting/razor %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/multiple-axis-sorting/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="MultipleAxisSorting.cs" %}
-{% include code-snippet/pivot-table/multiple-axis-sorting/MultipleAxisSorting.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/multiple-axis-sorting/MultipleAxisSorting.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -234,10 +234,10 @@ The example below demonstrates how to use the [`OnHeadersSort`](https://help.syn
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/onHeaderSort/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/onHeaderSort/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="OnHeaderSort.cs" %}
-{% include code-snippet/pivot-table/onHeaderSort/OnHeaderSort.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/onHeaderSort/OnHeaderSort.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -245,10 +245,10 @@ The example below demonstrates how to use the [`OnHeadersSort`](https://help.syn
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/onHeaderSort/razor %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/onHeaderSort/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="OnHeaderSort.cs" %}
-{% include code-snippet/pivot-table/onHeaderSort/OnHeaderSort.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/onHeaderSort/OnHeaderSort.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -280,10 +280,10 @@ In the sample below, the sort action is restricted by setting the **args.cancel*
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/action-event/actionBegin-sort/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/action-event/actionBegin-sort/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="ActionBegin-aggregation.cs" %}
-{% include code-snippet/pivot-table/action-event/actionBegin-sort/actionBegin-aggregation.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/action-event/actionBegin-sort/actionBegin-aggregation.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -291,10 +291,10 @@ In the sample below, the sort action is restricted by setting the **args.cancel*
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/action-event/actionBegin-sort/razor %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/action-event/actionBegin-sort/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="ActionBegin-aggregation.cs" %}
-{% include code-snippet/pivot-table/action-event/actionBegin-sort/actionBegin-aggregation.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/action-event/actionBegin-sort/actionBegin-aggregation.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -320,10 +320,10 @@ The event [`actionComplete`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncf
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/action-event/actionComplete-sort/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/action-event/actionComplete-sort/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="ActionComplete-aggregation.cs" %}
-{% include code-snippet/pivot-table/action-event/actionComplete-sort/actionComplete-aggregation.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/action-event/actionComplete-sort/actionComplete-aggregation.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -331,10 +331,10 @@ The event [`actionComplete`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncf
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/action-event/actionComplete-sort/razor %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/action-event/actionComplete-sort/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="ActionComplete-aggregation.cs" %}
-{% include code-snippet/pivot-table/action-event/actionComplete-sort/actionComplete-aggregation.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/action-event/actionComplete-sort/actionComplete-aggregation.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -356,10 +356,10 @@ The [`actionFailure`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.E
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/action-event/actionFailure-sort/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/action-event/actionFailure-sort/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="ActionFailure-aggregation.cs" %}
-{% include code-snippet/pivot-table/action-event/actionFailure-sort/actionFailure-aggregation.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/action-event/actionFailure-sort/actionFailure-aggregation.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -367,10 +367,10 @@ The [`actionFailure`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.E
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/action-event/actionFailure-sort/razor %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/action-event/actionFailure-sort/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="ActionFailure-aggregation.cs" %}
-{% include code-snippet/pivot-table/action-event/actionFailure-sort/actionFailure-aggregation.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/action-event/actionFailure-sort/actionFailure-aggregation.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

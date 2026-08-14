@@ -20,14 +20,14 @@ The following code example demonstrates how to hide the column axis in both the 
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/default-cs16/app-composition.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/default-cs16/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/default-cs16/app.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/default-cs16/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/pivot-grid/default-cs16" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/default-cs16" %}
 
 **Note:** The CSS selectors above assume the Pivot Table component has the ID **PivotView**. Replace this with your actual component ID or use appropriate class-based selectors for your implementation.
 
@@ -43,14 +43,14 @@ The alignment of text inside row headers, column headers, value cells, and summa
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/default-cs17/app-composition.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/default-cs17/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/default-cs17/app.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/default-cs17/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/pivot-grid/default-cs17" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/default-cs17" %}
 
 ## Customize header, value and summary cell styles
 
@@ -60,14 +60,14 @@ The following code sample demonstrates how to apply custom background colors to 
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/default-cs18/app-composition.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/default-cs18/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/default-cs18/app.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/default-cs18/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/pivot-grid/default-cs18" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/default-cs18" %}
 
 The CSS classes target the following Pivot Table elements:
 - `.e-headercell`: Styles column header cells

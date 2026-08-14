@@ -54,14 +54,14 @@ For each value field, the aggregation type can be set using the property [`type`
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/pivot-table/pivot-table-cs308/index.ts %}
+{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs308/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/pivot-table/pivot-table-cs308/index.html %}
+{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs308/index.html %}
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs308" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs308" %}
 
 > By default, the aggregation will be considered as **Sum** to the value fields which had number type and for the value fields which had non-number type values such as string, date, datetime, boolean, etc., the aggregation type will be considered as **Count**.
 
@@ -83,14 +83,14 @@ The following code demonstrates how to configure the pivot table component to di
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/pivot-table/pivot-table-cs309/index.ts %}
+{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs309/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/pivot-table/pivot-table-cs309/index.html %}
+{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs309/index.html %}
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs309" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs309" %}
 
 ## Hiding aggregation type from button text
 
@@ -100,14 +100,14 @@ This customization enhances the clarity of the pivot table’s interface by simp
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/pivot-table/pivot-table-cs310/index.ts %}
+{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs310/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/pivot-table/pivot-table-cs310/index.html %}
+{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs310/index.html %}
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs310" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs310" %}
 
 ## Hiding aggregation type icon from UI
 
@@ -117,14 +117,14 @@ By default, the dropdown icon to change the aggregation type is visible in the g
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/pivot-table/pivot-table-cs311/index.ts %}
+{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs311/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/pivot-table/pivot-table-cs311/index.html %}
+{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs311/index.html %}
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs311" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs311" %}
 
 ## Event
 
@@ -144,14 +144,14 @@ The [`aggregateCellInfo`](https://ej2.syncfusion.com/documentation/api/pivotview
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/pivot-table/pivot-table-cs312/index.ts %}
+{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs312/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/pivot-table/pivot-table-cs312/index.html %}
+{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs312/index.html %}
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs312" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs312" %}
 
 ### ActionBegin
 
@@ -171,14 +171,14 @@ In the following example, an action taken during aggregation type selection via 
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/pivot-table/action-events-cs28/index.ts %}
+{% include code-snippet/grid-sdk/typescript/pivot-table/action-events-cs28/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/pivot-table/action-events-cs28/index.html %}
+{% include code-snippet/grid-sdk/typescript/pivot-table/action-events-cs28/index.html %}
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "page.domainurl/code-snippet/pivot-table/action-events-cs28" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/pivot-table/action-events-cs28" %}
 
 ### ActionComplete
 
@@ -196,14 +196,14 @@ The [`actionComplete`](https://ej2.syncfusion.com/documentation/api/pivotview/in
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/pivot-table/action-events-cs29/index.ts %}
+{% include code-snippet/grid-sdk/typescript/pivot-table/action-events-cs29/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/pivot-table/action-events-cs29/index.html %}
+{% include code-snippet/grid-sdk/typescript/pivot-table/action-events-cs29/index.html %}
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "page.domainurl/code-snippet/pivot-table/action-events-cs29" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/pivot-table/action-events-cs29" %}
 
 ### ActionFailure
 
@@ -215,12 +215,12 @@ The [`actionFailure`](https://ej2.syncfusion.com/documentation/api/pivotview/ind
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/pivot-table/action-events-cs30/index.ts %}
+{% include code-snippet/grid-sdk/typescript/pivot-table/action-events-cs30/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/pivot-table/action-events-cs30/index.html %}
+{% include code-snippet/grid-sdk/typescript/pivot-table/action-events-cs30/index.html %}
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "page.domainurl/code-snippet/pivot-table/action-events-cs30" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/pivot-table/action-events-cs30" %}
 

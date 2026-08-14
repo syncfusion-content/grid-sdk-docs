@@ -21,10 +21,10 @@ To enable the classic layout, set the [Layout](https://help.syncfusion.com/cr/as
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/classic-layout/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/classic-layout/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="ClassicLayout.cs" %}
-{% include code-snippet/pivot-table/classic-layout/ClassicLayout.cs %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/classic-layout/ClassicLayout.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -32,10 +32,10 @@ To enable the classic layout, set the [Layout](https://help.syncfusion.com/cr/as
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/classic-layout/razor %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/classic-layout/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="ClassicLayout.cs" %}
-{% include code-snippet/pivot-table/classic-layout/ClassicLayout.cs %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/classic-layout/ClassicLayout.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

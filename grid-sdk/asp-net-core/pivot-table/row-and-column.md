@@ -31,10 +31,10 @@ These dimension properties support multiple formats to accommodate various layou
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/grid-customization/size/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grid-customization/size/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Size.cs" %}
-{% include code-snippet/pivot-table/grid-customization/size/Size.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grid-customization/size/Size.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -42,10 +42,10 @@ These dimension properties support multiple formats to accommodate various layou
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/grid-customization/size/razor %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grid-customization/size/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Size.cs" %}
-{% include code-snippet/pivot-table/grid-customization/size/Size.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grid-customization/size/Size.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -66,10 +66,10 @@ For example, in the sample code below, the [`rowHeight`](https://help.syncfusion
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/grid-customization/row-height/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grid-customization/row-height/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="RowHeight.cs" %}
-{% include code-snippet/pivot-table/grid-customization/row-height/RowHeight.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grid-customization/row-height/RowHeight.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -77,10 +77,10 @@ For example, in the sample code below, the [`rowHeight`](https://help.syncfusion
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/grid-customization/row-height/razor %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grid-customization/row-height/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="RowHeight.cs" %}
-{% include code-snippet/pivot-table/grid-customization/row-height/RowHeight.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grid-customization/row-height/RowHeight.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -101,10 +101,10 @@ In the following example, the [`columnWidth`](https://help.syncfusion.com/cr/asp
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/grid-customization/column-width/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grid-customization/column-width/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="ColumnWidth.cs" %}
-{% include code-snippet/pivot-table/grid-customization/column-width/ColumnWidth.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grid-customization/column-width/ColumnWidth.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -112,10 +112,10 @@ In the following example, the [`columnWidth`](https://help.syncfusion.com/cr/asp
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/grid-customization/column-width/razor %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grid-customization/column-width/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="ColumnWidth.cs" %}
-{% include code-snippet/pivot-table/grid-customization/column-width/ColumnWidth.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grid-customization/column-width/ColumnWidth.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -132,10 +132,10 @@ By default, when the component width exceeds the total width of all columns, the
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/grid-customization/allowAutoResizing/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grid-customization/allowAutoResizing/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="AllowAutoResizing.cs" %}
-{% include code-snippet/pivot-table/grid-customization/allowAutoResizing/allowAutoResizing.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grid-customization/allowAutoResizing/allowAutoResizing.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -143,10 +143,10 @@ By default, when the component width exceeds the total width of all columns, the
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/grid-customization/allowAutoResizing/razor %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grid-customization/allowAutoResizing/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="AllowAutoResizing.cs" %}
-{% include code-snippet/pivot-table/grid-customization/allowAutoResizing/allowAutoResizing.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grid-customization/allowAutoResizing/allowAutoResizing.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -165,10 +165,10 @@ To enable this option, set the [`allowReordering`](https://help.syncfusion.com/c
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/grid-customization/re-order/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grid-customization/re-order/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="ReOrder.cs" %}
-{% include code-snippet/pivot-table/grid-customization/re-order/ReOrder.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grid-customization/re-order/ReOrder.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -176,10 +176,10 @@ To enable this option, set the [`allowReordering`](https://help.syncfusion.com/c
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/grid-customization/re-order/razor %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grid-customization/re-order/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="ReOrder.cs" %}
-{% include code-snippet/pivot-table/grid-customization/re-order/ReOrder.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grid-customization/re-order/ReOrder.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -200,10 +200,10 @@ This option is enabled by default. To control column resizing, set the [`allowRe
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/grid-customization/column-resizing/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grid-customization/column-resizing/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="ColumnResizing.cs" %}
-{% include code-snippet/pivot-table/grid-customization/column-resizing/ColumnResizing.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grid-customization/column-resizing/ColumnResizing.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -211,10 +211,10 @@ This option is enabled by default. To control column resizing, set the [`allowRe
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/grid-customization/column-resizing/razor %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grid-customization/column-resizing/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="ColumnResizing.cs" %}
-{% include code-snippet/pivot-table/grid-customization/column-resizing/ColumnResizing.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grid-customization/column-resizing/ColumnResizing.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -231,10 +231,10 @@ The Pivot Table allows users to wrap cell content to the next line when the cont
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/grid-customization/text-wrap/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grid-customization/text-wrap/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="TextWrap.cs" %}
-{% include code-snippet/pivot-table/grid-customization/text-wrap/TextWrap.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grid-customization/text-wrap/TextWrap.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -242,10 +242,10 @@ The Pivot Table allows users to wrap cell content to the next line when the cont
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/grid-customization/text-wrap/razor %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grid-customization/text-wrap/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="TextWrap.cs" %}
-{% include code-snippet/pivot-table/grid-customization/text-wrap/TextWrap.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grid-customization/text-wrap/TextWrap.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -267,10 +267,10 @@ Text alignment provides flexibility in positioning content within cells, making 
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/grid-customization/text-align/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grid-customization/text-align/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="TextWrap.cs" %}
-{% include code-snippet/pivot-table/grid-customization/text-align/TextAlign.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grid-customization/text-align/TextAlign.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -278,10 +278,10 @@ Text alignment provides flexibility in positioning content within cells, making 
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/grid-customization/text-align/razor %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grid-customization/text-align/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="TextWrap.cs" %}
-{% include code-snippet/pivot-table/grid-customization/text-align/TextAlign.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grid-customization/text-align/TextAlign.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -298,10 +298,10 @@ The AutoFit option allows users to easily adjust Pivot Table columns so that eac
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/grid-customization/autofit-method/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grid-customization/autofit-method/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Autofitmethod.cs" %}
-{% include code-snippet/pivot-table/grid-customization/autofit-method/autofitmethod.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grid-customization/autofit-method/autofitmethod.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -309,10 +309,10 @@ The AutoFit option allows users to easily adjust Pivot Table columns so that eac
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/grid-customization/autofit-method/razor %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grid-customization/autofit-method/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Autofitmethod.cs" %}
-{% include code-snippet/pivot-table/grid-customization/autofit-method/autofitmethod.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grid-customization/autofit-method/autofitmethod.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -327,10 +327,10 @@ The AutoFit option allows users to easily adjust Pivot Table columns so that eac
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/grid-customization/autofit-groupingbar/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grid-customization/autofit-groupingbar/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Autofit-groupingbar.cs" %}
-{% include code-snippet/pivot-table/grid-customization/autofit-groupingbar/autofit-groupingbar.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grid-customization/autofit-groupingbar/autofit-groupingbar.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -338,10 +338,10 @@ The AutoFit option allows users to easily adjust Pivot Table columns so that eac
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/grid-customization/autofit-groupingbar/razor %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grid-customization/autofit-groupingbar/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Autofit-groupingbar.cs" %}
-{% include code-snippet/pivot-table/grid-customization/autofit-groupingbar/autofit-groupingbar.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grid-customization/autofit-groupingbar/autofit-groupingbar.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -360,10 +360,10 @@ To implement this functionality during the initial rendering of the Pivot Table,
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/grid-customization/autofit-event/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grid-customization/autofit-event/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Autofit-event.cs" %}
-{% include code-snippet/pivot-table/grid-customization/autofit-event/autofit-event.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grid-customization/autofit-event/autofit-event.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -371,10 +371,10 @@ To implement this functionality during the initial rendering of the Pivot Table,
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/grid-customization/autofit-event/razor %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grid-customization/autofit-event/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Autofit-event.cs" %}
-{% include code-snippet/pivot-table/grid-customization/autofit-event/autofit-event.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grid-customization/autofit-event/autofit-event.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -403,10 +403,10 @@ The following grid line modes are available:
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/grid-customization/grid-lines/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grid-customization/grid-lines/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="GridLines.cs" %}
-{% include code-snippet/pivot-table/grid-customization/grid-lines/GridLines.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grid-customization/grid-lines/GridLines.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -414,10 +414,10 @@ The following grid line modes are available:
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/grid-customization/grid-lines/razor %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grid-customization/grid-lines/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="GridLines.cs" %}
-{% include code-snippet/pivot-table/grid-customization/grid-lines/GridLines.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grid-customization/grid-lines/GridLines.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -441,10 +441,10 @@ The Pivot Table provides two selection modes, controlled by the [`type`](https:/
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/grid-customization/selection/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grid-customization/selection/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Selection.cs" %}
-{% include code-snippet/pivot-table/grid-customization/selection/Selection.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grid-customization/selection/Selection.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -452,10 +452,10 @@ The Pivot Table provides two selection modes, controlled by the [`type`](https:/
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/grid-customization/selection/razor %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grid-customization/selection/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Selection.cs" %}
-{% include code-snippet/pivot-table/grid-customization/selection/Selection.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grid-customization/selection/Selection.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -479,10 +479,10 @@ By choosing the right selection mode, users can quickly highlight and review the
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/grid-customization/selection-mode/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grid-customization/selection-mode/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="SelectionMode.cs" %}
-{% include code-snippet/pivot-table/grid-customization/selection-mode/SelectionMode.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grid-customization/selection-mode/SelectionMode.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -490,10 +490,10 @@ By choosing the right selection mode, users can quickly highlight and review the
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/grid-customization/selection-mode/razor %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grid-customization/selection-mode/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="SelectionMode.cs" %}
-{% include code-snippet/pivot-table/grid-customization/selection-mode/SelectionMode.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grid-customization/selection-mode/SelectionMode.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -514,10 +514,10 @@ To set the cell selection mode, use the [`cellSelectionMode`](https://help.syncf
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/grid-customization/cell-selection/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grid-customization/cell-selection/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="CellSelection.cs" %}
-{% include code-snippet/pivot-table/grid-customization/cell-selection/CellSelection.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grid-customization/cell-selection/CellSelection.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -525,10 +525,10 @@ To set the cell selection mode, use the [`cellSelectionMode`](https://help.syncf
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/grid-customization/cell-selection/razor %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grid-customization/cell-selection/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="CellSelection.cs" %}
-{% include code-snippet/pivot-table/grid-customization/cell-selection/CellSelection.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grid-customization/cell-selection/CellSelection.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -547,10 +547,10 @@ In the example below, selected cells appear with a **green-yellow** background. 
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/grid-customization/cell-selection-color/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grid-customization/cell-selection-color/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="CellSelection.cs" %}
-{% include code-snippet/pivot-table/grid-customization/cell-selection-color/CellSelection.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grid-customization/cell-selection-color/CellSelection.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -558,10 +558,10 @@ In the example below, selected cells appear with a **green-yellow** background. 
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/grid-customization/cell-selection-color/razor %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grid-customization/cell-selection-color/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="CellSelection.cs" %}
-{% include code-snippet/pivot-table/grid-customization/cell-selection-color/CellSelection.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grid-customization/cell-selection-color/CellSelection.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -580,10 +580,10 @@ When a user finishes selecting cells, the [`cellSelected`](https://help.syncfusi
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/grid-customization/cell-event/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grid-customization/cell-event/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="CellSelection.cs" %}
-{% include code-snippet/pivot-table/grid-customization/cell-event/CellSelection.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grid-customization/cell-event/CellSelection.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -591,10 +591,10 @@ When a user finishes selecting cells, the [`cellSelected`](https://help.syncfusi
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/grid-customization/cell-event/razor %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grid-customization/cell-event/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="CellSelection.cs" %}
-{% include code-snippet/pivot-table/grid-customization/cell-event/CellSelection.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grid-customization/cell-event/CellSelection.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -617,10 +617,10 @@ You can use these parameters to decide whether or not the cell should be selecte
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/grid-customization/cell-selecting-event/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grid-customization/cell-selecting-event/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="CellSelection.cs" %}
-{% include code-snippet/pivot-table/grid-customization/cell-selecting-event/CellSelection.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grid-customization/cell-selecting-event/CellSelection.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -628,10 +628,10 @@ You can use these parameters to decide whether or not the cell should be selecte
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/grid-customization/cell-selecting-event/razor %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grid-customization/cell-selecting-event/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="CellSelection.cs" %}
-{% include code-snippet/pivot-table/grid-customization/cell-selecting-event/CellSelection.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grid-customization/cell-selecting-event/CellSelection.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -654,10 +654,10 @@ The clip mode option in the Pivot Table determines how cell content is displayed
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/grid-customization/clip-mode/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grid-customization/clip-mode/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="ClipMode.cs" %}
-{% include code-snippet/pivot-table/grid-customization/clip-mode/ClipMode.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grid-customization/clip-mode/ClipMode.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -665,10 +665,10 @@ The clip mode option in the Pivot Table determines how cell content is displayed
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/grid-customization/clip-mode/razor %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grid-customization/clip-mode/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="ClipMode.cs" %}
-{% include code-snippet/pivot-table/grid-customization/clip-mode/ClipMode.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grid-customization/clip-mode/ClipMode.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -689,10 +689,10 @@ For example, in the following sample, each year's revenue cost is shown along wi
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/grid-customization/cell-template/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grid-customization/cell-template/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Cell-template.cs" %}
-{% include code-snippet/pivot-table/grid-customization/cell-template/cell-template.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grid-customization/cell-template/cell-template.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -700,10 +700,10 @@ For example, in the following sample, each year's revenue cost is shown along wi
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/grid-customization/cell-template/razor %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grid-customization/cell-template/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Cell-template.cs" %}
-{% include code-snippet/pivot-table/grid-customization/cell-template/cell-template.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grid-customization/cell-template/cell-template.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -733,10 +733,10 @@ By using these parameters in the event, users can highlight cells, format values
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/grid-customization/querycell/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grid-customization/querycell/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="QueryCell.cs" %}
-{% include code-snippet/pivot-table/grid-customization/querycell/QueryCell.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grid-customization/querycell/QueryCell.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -744,10 +744,10 @@ By using these parameters in the event, users can highlight cells, format values
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/grid-customization/querycell/razor %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grid-customization/querycell/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="QueryCell.cs" %}
-{% include code-snippet/pivot-table/grid-customization/querycell/QueryCell.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grid-customization/querycell/QueryCell.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -765,10 +765,10 @@ By using these parameters, users can update header cell styles, add tooltips, or
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/grid-customization/headercell/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grid-customization/headercell/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="HeaderCell.cs" %}
-{% include code-snippet/pivot-table/grid-customization/headercell/HeaderCell.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grid-customization/headercell/HeaderCell.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -776,10 +776,10 @@ By using these parameters, users can update header cell styles, add tooltips, or
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/grid-customization/headercell/razor %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grid-customization/headercell/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="HeaderCell.cs" %}
-{% include code-snippet/pivot-table/grid-customization/headercell/HeaderCell.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grid-customization/headercell/HeaderCell.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -798,10 +798,10 @@ The event provides the following parameters:
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/grid-customization/columnRender/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grid-customization/columnRender/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="TextWrap.cs" %}
-{% include code-snippet/pivot-table/grid-customization/columnRender/ColumnRender.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grid-customization/columnRender/ColumnRender.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -809,10 +809,10 @@ The event provides the following parameters:
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/grid-customization/columnRender/razor %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grid-customization/columnRender/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="TextWrap.cs" %}
-{% include code-snippet/pivot-table/grid-customization/columnRender/ColumnRender.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grid-customization/columnRender/ColumnRender.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -828,10 +828,10 @@ The `cellClick` event occurs when a user clicks a cell in the Pivot Table. With 
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/grid-customization/cell-click/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grid-customization/cell-click/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="CellClick.cs" %}
-{% include code-snippet/pivot-table/grid-customization/cell-click/CellClick.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grid-customization/cell-click/CellClick.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -839,10 +839,10 @@ The `cellClick` event occurs when a user clicks a cell in the Pivot Table. With 
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/grid-customization/cell-click/razor %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grid-customization/cell-click/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="CellClick.cs" %}
-{% include code-snippet/pivot-table/grid-customization/cell-click/CellClick.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grid-customization/cell-click/CellClick.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

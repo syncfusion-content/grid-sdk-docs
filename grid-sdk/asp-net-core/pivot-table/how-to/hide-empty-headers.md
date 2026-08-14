@@ -20,10 +20,10 @@ For example, when the raw data contains **"United Kingdom"** for the 'Country' f
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/hide-headers/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/hide-headers/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Fieldlist.cs" %}
-{% include code-snippet/pivot-table/hide-headers/fieldlist.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/hide-headers/fieldlist.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -31,10 +31,10 @@ For example, when the raw data contains **"United Kingdom"** for the 'Country' f
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/pivot-table/hide-headers/razor %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/hide-headers/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Fieldlist.cs" %}
-{% include code-snippet/pivot-table/hide-headers/fieldlist.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/hide-headers/fieldlist.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

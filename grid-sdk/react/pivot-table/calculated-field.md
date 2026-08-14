@@ -28,26 +28,26 @@ You can define calculated fields programmatically using the [`calculatedFieldSet
 - [`formula`](https://ej2.syncfusion.com/react/documentation/api/pivotview/calculatedfieldsettingsmodel#formula): Defines the mathematical expression using existing field names and arithmetic operators.
 - [`formatSettings`](https://ej2.syncfusion.com/react/documentation/api/pivotview/formatsettings): Configures the number format for displaying calculated results.
 
-To use the calculated field feature, you must inject the `CalculatedField` module into the pivot table.
+To use the calculated field feature, you must inject the `CalculatedField` module into the pivot table. In the `App.tsx` file, include `Inject services={[CalculatedField, ...]}` inside the `PivotViewComponent` (see the code sample below for the full setup).
 
 > **Note**: The calculated field feature applies only to value fields. By default, calculated fields created programmatically are added to the field list and calculated field dialog UI. To display a calculated field in the pivot table UI, it must be added to the [`values`](https://ej2.syncfusion.com/react/documentation/api/pivotview/datasourcesettings#values) property, as shown in the code below.
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/pivot-table/default-cs9/app/App.jsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/default-cs9/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/pivot-table/default-cs9/app/App.tsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/default-cs9/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/pivot-table/default-cs9/app/datasource.jsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/default-cs9/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/pivot-table/default-cs9/app/datasource.tsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/default-cs9/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs9" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs9" %}
 
 ## Opening the calculated field dialog programmatically
 
@@ -55,20 +55,20 @@ You can display the calculated field dialog by calling the [`createCalculatedFie
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/pivot-table/default-cs10/app/App.jsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/default-cs10/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/pivot-table/default-cs10/app/App.tsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/default-cs10/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/pivot-table/default-cs10/app/datasource.jsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/default-cs10/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/pivot-table/default-cs10/app/datasource.tsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/default-cs10/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs10" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs10" %}
 
 ## Editing through the field list and grouping bar
 
@@ -99,10 +99,10 @@ To rename a calculated field:
 4. Replace the existing name with your preferred name.
 5. Click **OK** to save the new name.
 
-![Editing the calculated field](images/calculatdfield-renaming1.png)
+![Renaming the calculated field - dialog open](images/calculatdfield-renaming1.png)
 <br/>
 
-![Renaming the calculated field](images/calculatdfield-renaming2.png)
+![Renaming the calculated field - saved](images/calculatdfield-renaming2.png)
 
 ## Editing an existing calculated field formula
 
@@ -119,10 +119,10 @@ To edit an existing calculated field formula:
 
 The pivot table will automatically refresh to reflect the updated calculations.
 
-![Editing the calculated field](images/calculatdfield-field-edit1.png)
+![Editing a calculated field - dialog open](images/calculatdfield-field-edit1.png)
 <br/>
 
-![Editing the calculated field formula](images/calculatdfield-field-edit2.png)
+![Editing a calculated field - formula updated](images/calculatdfield-field-edit2.png)
 
 ## Reusing an existing formula in a new calculated field
 
@@ -156,7 +156,7 @@ To format calculated field values in your code, use the [`formatSettings`](https
 
 To apply formatting to calculated field values via the user interface, use the built-in "Format" dropdown available in the calculated field dialog. This dropdown provides the following predefined format options:
 
-* **Standard** - Displays numbers in their basic numeric form.
+* **Standard** - Displays numbers using the default numeric format (equivalent to the `N` format).
 * **Currency** - Displays numbers as currency values.
 * **Percent** - Displays numbers as percentage values.
 * **Custom** - Allows you to specify a custom format pattern.
@@ -203,10 +203,10 @@ Below is a list of operators and functions that can be used in the formula to cr
 * `^` – power operator.
 
     ```typescript
-     Syntax: X^2
+     Syntax: X^Y
     ```
 
-* `<` - less than operator.
+* `<` – less than operator.
 
     ```typescript
       Syntax: X < Y
@@ -257,19 +257,19 @@ Below is a list of operators and functions that can be used in the formula to cr
 * `?` – conditional operator.
 
     ```typescript
-     Syntax: condition ? then : else
+     Syntax: condition ? valueIfTrue : valueIfFalse
    ```
 
-* `isNaN` – function that checks if the value is not a number.
+* `isNaN` – function that checks if the value is not a number (returns `true` for `NaN`).
 
     ```typescript
     Syntax: isNaN(value)
    ```
 
-* `!isNaN` – function that checks if the value is a number.
+* `!isNaN` – function that checks if the value is a number (returns `true` for any number).
 
     ```typescript
-      Syntax: isNaN(value)
+      Syntax: !isNaN(value)
     ```
 
 * `abs` – function that returns the absolute value of a number.
@@ -294,22 +294,24 @@ Below is a list of operators and functions that can be used in the formula to cr
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/pivot-table/default-cs11/app/App.jsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/default-cs11/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/pivot-table/default-cs11/app/App.tsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/default-cs11/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/pivot-table/default-cs11/app/datasource.jsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/default-cs11/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/pivot-table/default-cs11/app/datasource.tsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/default-cs11/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs11" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs11" %}
 
 ## Event
+
+The Pivot Table provides the following events to monitor calculated field operations. Each event lets you track, validate, or intercept a specific stage of the user interaction lifecycle.
 
 ### CalculatedFieldCreate
 
@@ -335,20 +337,20 @@ The following example shows how to prevent users from creating calculated fields
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/pivot-table/default-cs12/app/App.jsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/default-cs12/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/pivot-table/default-cs12/app/App.tsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/default-cs12/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/pivot-table/default-cs12/app/datasource.jsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/default-cs12/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/pivot-table/default-cs12/app/datasource.tsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/default-cs12/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs12" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs12" %}
 
 ### ActionBegin
 
@@ -369,9 +371,9 @@ The event provides the following parameters to help you handle these interaction
 
 | User Action | Action Name |
 |-------------|-------------|
-| [Calculated field button click](./calculated-field#Calculated-Field) | Open calculated field dialog |
-| [Edit icon click for calculated field](./calculated-field#Editing-through-the-field-list-and-the-grouping-bar) | Edit calculated field |
-| [Context menu in calculated field dialog tree view](./calculated-field#Calculated-Field) | Calculated field context menu |
+| [Calculated field button click](./calculated-field#creating-calculated-fields) | Open calculated field dialog |
+| [Edit icon click for calculated field](./calculated-field#editing-through-the-field-list-and-grouping-bar) | Edit calculated field |
+| [Context menu in calculated field dialog tree view](./calculated-field#creating-calculated-fields) | Calculated field context menu |
 
 - [`fieldInfo`](https://ej2.syncfusion.com/react/documentation/api/pivotview/pivotactionbegineventargs#fieldinfo): Provides information about the selected field when the action involves a specific field.
 
@@ -385,20 +387,20 @@ The example below illustrates how to prevent access to the calculated field dial
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/pivot-table/default-cs13/app/App.jsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/default-cs13/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/pivot-table/default-cs13/app/App.tsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/default-cs13/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/pivot-table/default-cs13/app/datasource.jsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/default-cs13/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/pivot-table/default-cs13/app/datasource.tsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/default-cs13/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs13" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs13" %}
 
 ### ActionComplete
 
@@ -414,8 +416,8 @@ The event provides the following parameters to help you handle completed operati
 
 | User Action | Action Name |
 |-------------|-------------|
-| [Creating calculated field](./calculated-field#calculated-field) | Calculated field applied |
-| [Editing calculated field](./calculated-field#editing-through-the-field-list-and-the-grouping-bar) | Calculated field edited |
+| [Creating calculated field](./calculated-field#creating-calculated-fields) | Calculated field applied |
+| [Editing calculated field](./calculated-field#editing-through-the-field-list-and-grouping-bar) | Calculated field edited |
 
 - [`fieldInfo`](https://ej2.syncfusion.com/react/documentation/api/pivotview/pivotactioncompleteeventargs#fieldinfo): Provides information about the selected field when the action involves a specific field.
 
@@ -429,48 +431,48 @@ The example below demonstrates how to use the [`actionComplete`](https://ej2.syn
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/pivot-table/default-cs14/app/App.jsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/default-cs14/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/pivot-table/default-cs14/app/App.tsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/default-cs14/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/pivot-table/default-cs14/app/datasource.jsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/default-cs14/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/pivot-table/default-cs14/app/datasource.tsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/default-cs14/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs14" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs14" %}
 
 ### ActionFailure
 
 The [`actionFailure`](https://ej2.syncfusion.com/react/documentation/api/pivotview/index-default#actionfailure) event is triggered when a UI action fails to produce the expected result. This event provides detailed information about the failure through the following parameters:
 
-* [`actionName`](https://ej2.syncfusion.com/react/documentation/api/pivotview/pivotactionfailureeventargs#actionname): It holds the name of the current action failed. The following are the UI actions and their names:
+* [`actionName`](https://ej2.syncfusion.com/react/documentation/api/pivotview/pivotactionfailureeventargs#actionname): It holds the name of the current action that failed. The following are the UI actions and their names:
 
    | Action | Action Name |
    |------|-------------|
-   | [`Calculated field button`](./calculated-field#Calculated-Field)| Open calculated field dialog|
-   | [`Edit icon in calculated field`](./calculated-field#Editing-through-the-field-list-and-the-grouping-bar)| Edit calculated field|
-   | [`Context menu in the tree view inside the calculated field dialog`](./calculated-field#Calculated-Field)| Calculated field context menu|
+   | [`Calculated field button`](./calculated-field#creating-calculated-fields)| Open calculated field dialog|
+   | [`Edit icon in calculated field`](./calculated-field#editing-through-the-field-list-and-grouping-bar)| Edit calculated field|
+   | [`Context menu in the tree view inside the calculated field dialog`](./calculated-field#creating-calculated-fields)| Calculated field context menu|
 
 * [`errorInfo`](https://ej2.syncfusion.com/react/documentation/api/pivotview/pivotactionfailureeventargs#errorinfo): It holds the error information of the current UI action.
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/pivot-table/default-cs15/app/App.jsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/default-cs15/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/pivot-table/default-cs15/app/App.tsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/default-cs15/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/pivot-table/default-cs15/app/datasource.jsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/default-cs15/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/pivot-table/default-cs15/app/datasource.tsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/default-cs15/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs15" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs15" %}

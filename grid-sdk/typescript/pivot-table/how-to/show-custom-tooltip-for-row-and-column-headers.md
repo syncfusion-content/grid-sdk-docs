@@ -23,25 +23,25 @@ For row header tooltips, the formatted text and field name of the current row he
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/pivot-table/pivot-table-cs497/index.ts %}
+{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs497/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/pivot-table/pivot-table-cs497/index.html %}
+{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs497/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs497" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs497" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/pivot-table/pivot-table-cs497/index.js %}
+{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs497/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/pivot-table/pivot-table-cs497/index.html %}
+{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs497/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs497" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs497" %}
 {% endif %}

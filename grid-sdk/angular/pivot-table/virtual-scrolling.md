@@ -20,15 +20,15 @@ To use the virtual scrolling feature, inject the `VirtualScrollService` module i
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs300/src/app.component.ts %}
+{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs300/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs300/src/main.ts %}
+{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs300/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs300" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs300" %}
 
 ## Virtual scrolling with single page mode
 
@@ -38,15 +38,15 @@ To optimize performance, set the [allowSinglePage](https://ej2.syncfusion.com/an
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/single-page-mode/src/app.component.ts %}
+{% include code-snippet/grid-sdk/angular/pivot-table/single-page-mode/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/single-page-mode/src/main.ts %}
+{% include code-snippet/grid-sdk/angular/pivot-table/single-page-mode/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/samples/pivot-grid/single-page-mode" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/single-page-mode" %}
 
 **Limitations for virtual scrolling**
 
@@ -70,15 +70,15 @@ Here's how to make virtual scrolling work with a static field list:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs302/src/app.component.ts %}
+{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs302/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/getting-started-cs302/src/main.ts %}
+{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs302/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs302" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs302" %}
 
 ## See also
 

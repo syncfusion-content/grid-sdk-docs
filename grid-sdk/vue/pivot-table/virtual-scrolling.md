@@ -22,14 +22,14 @@ To use the virtual scrolling feature, inject the `VirtualScroll` module into the
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/common-cs33/app-composition.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/common-cs33/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/common-cs33/app.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/common-cs33/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/pivot-grid/common-cs33" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/common-cs33" %}
 
 > The `height` and `width` properties should be set for virtual scrolling. If it is not defined, then the Pivot Table will consider its value as `300px` and `800px` respectively.
 
@@ -41,14 +41,14 @@ To optimize performance, set the [allowSinglePage](https://ej2.syncfusion.com/vu
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/single-page-mode/app-composition.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/single-page-mode/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/single-page-mode/app.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/single-page-mode/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/pivot-grid/single-page-mode" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/single-page-mode" %}
 
 ## Limitations for Virtual Scrolling
 
@@ -72,14 +72,14 @@ Here's how to make virtual scrolling work with a static field list:
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/default-cs260/app-composition.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/default-cs260/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/pivot-grid/default-cs260/app.vue %}
+{% include code-snippet/grid-sdk/vue/pivot-table/default-cs260/app.vue %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/pivot-grid/default-cs260" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/default-cs260" %}
 
 ## See Also
 
