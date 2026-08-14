@@ -2,7 +2,7 @@
 layout: post
 title: Migrate from Xamarin DataGrid to .NET MAUI Data Grid | Syncfusion®
 description: Learn how to migrate from Syncfusion® Xamarin DataGrid to Syncfusion® .NET MAUI Data Grid, including API changes, feature mapping, and migration guidance.
-platform: MAUI
+platform: grid-sdk
 control: SfDataGrid
 documentation: ug
 keywords : maui data grid, maui datagrid, maui grid, grid maui, maui gridview, grid in maui, .net maui datagrid, .net maui grid, .net grid maui

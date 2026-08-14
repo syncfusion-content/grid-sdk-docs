@@ -2,7 +2,7 @@
 layout: post
 title: Column Sizing in .NET MAUI Data Grid | Syncfusion®
 description: Learn all about column sizing support in Syncfusion® .NET MAUI Data Grid, including auto-sizing modes, customization options, and usage examples.
-platform: maui
+platform: grid-sdk
 control: SfDataGrid
 documentation: ug
 keywords : maui data grid, maui datagrid, maui grid, grid maui, maui gridview, grid in maui, .net maui datagrid, .net maui grid, .net grid maui, .net maui sizing, maui column sizing

@@ -2,7 +2,7 @@
 layout: post
 title: Row Height Customization in .NET MAUI Data Grid | Syncfusion®
 description: Learn how to customize row heights in Syncfusion® .NET MAUI Data Grid, including fixed, dynamic, and content-based row sizing options.
-platform: MAUI
+platform: grid-sdk
 control: SfDataGrid
 documentation: ug
 keywords : maui data grid, maui datagrid, maui grid, grid maui, maui gridview, grid in maui, .net maui datagrid, .net maui grid, .net grid maui, .net maui row height customization, maui row height customization
