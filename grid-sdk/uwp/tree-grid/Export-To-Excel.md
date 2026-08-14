@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Export to Excel in UWP SfTreeGrid | Syncfusion®
-description: Export data from the Syncfusion® UWP SfTreeGrid control to Excel. Supports exporting hierarchical data with options for customization.
+title: Export to Excel in UWP TreeGrid | Syncfusion®
+description: Export data from the Syncfusion® UWP TreeGrid control to Excel. Supports exporting hierarchical data with options for customization.
 platform: grid-sdk
 control: SfTreeGrid
 documentation: ug
 ---
 
-# Export to Excel in UWP SfTreeGrid
+# Export to Excel in UWP TreeGrid
 
 SfTreeGrid provides support to export the data to Excel file. This also provides support to export the headers and stacked headers. This maintains the sorting and filtering process when exporting.
 

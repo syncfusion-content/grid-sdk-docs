@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Data Validation in WPF SfTreeGrid | Syncfusion®
-description: Learn about Data Validation in the Syncfusion® WPF SfTreeGrid control. Validate user input and ensure data accuracy with built-in rules.
+title: Data Validation in WPF TreeGrid | Syncfusion®
+description: Learn about Data Validation in the Syncfusion® WPF TreeGrid control. Validate user input and ensure data accuracy with built-in rules.
 platform: grid-sdk
 control: SfTreeGrid
 documentation: ug
 ---
 
 
-# Data Validation in WPF SfTreeGrid
+# Data Validation in WPF TreeGrid
 
 SfTreeGrid allows you to validate the data and display hints in case of validation is not passed. In case of invalid data, error icon is displayed at the top right corner of [TreeGridCell](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridCell.html). When mouse over the error icon, error information will be displayed in tooltip.
 

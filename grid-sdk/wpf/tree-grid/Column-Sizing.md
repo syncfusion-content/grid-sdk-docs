@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Column Sizing in WPF SfTreeGrid | Syncfusion®
-description: Learn about Column Sizing in the Syncfusion® WPF SfTreeGrid control. Adjust, resize, and manage columns with flexible sizing options.
+title: Column Sizing in WPF TreeGrid | Syncfusion®
+description: Learn about Column Sizing in the Syncfusion® WPF TreeGrid control. Adjust, resize, and manage columns with flexible sizing options.
 platform: grid-sdk
 control: SfTreeGrid
 documentation: ug
 ---
 
-# Column Sizing in WPF SfTreeGrid
+# Column Sizing in WPF TreeGrid
 
 SfTreeGrid allows you to set the column widths based on certain logic using [SfTreeGrid.ColumnSizer](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_ColumnSizer) or [TreeGridColumn.ColumnSizer](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.TreeGridColumn.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridColumn_ColumnSizer) property. 
 

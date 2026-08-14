@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started with WPF SfTreeGrid | Syncfusion®
-description: Learn how to get started with the Syncfusion WPF SfTreeGrid control. Explore setup, features, examples, and customization options.
+title: Getting Started with WPF TreeGrid | Syncfusion®
+description: Learn how to get started with the Syncfusion WPF TreeGrid control. Explore setup, features, examples, and customization options.
 platform: grid-sdk
 control: SfTreeGrid
 documentation: ug
 ---
 
-# Getting Started with WPF SfTreeGrid
+# Getting Started with WPF TreeGrid
 
 The [WPF TreeGrid](https://www.syncfusion.com/wpf-controls/treegrid) (SfTreeGrid) is a data oriented control that displays the self-relational and hierarchical data in tree structure with columns. The data can be loaded on-demand also.
 

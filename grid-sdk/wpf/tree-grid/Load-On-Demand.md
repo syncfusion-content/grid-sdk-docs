@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Load On Demand in WPF SfTreeGrid | Syncfusion®
-description: Learn about Load On Demand in the Syncfusion® WPF SfTreeGrid control. Load records dynamically to improve performance and memory usage.
+title: Load On Demand in WPF TreeGrid | Syncfusion®
+description: Learn about Load On Demand in the Syncfusion® WPF TreeGrid control. Load records dynamically to improve performance and memory usage.
 platform: grid-sdk
 control: SfTreeGrid
 documentation: ug
 ---
 
-# Load On Demand in WPF SfTreeGrid
+# Load On Demand in WPF TreeGrid
 
 SfTreeGrid supports to load the data in on-demand. It helps to load the child items from services when end-user expands the node. This can be achieved by using the [SfTreeGrid.LoadOnDemandCommand](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_LoadOnDemandCommand) command or [SfTreeGrid.RequestTreeItems](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html) event as follows.                                                                                          
 

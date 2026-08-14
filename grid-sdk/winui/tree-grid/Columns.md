@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Columns in WinUI SfTreeGrid | Syncfusion®
-description: Learn about Columns in the Syncfusion® WinUI SfTreeGrid control. Automatically generate and customize columns to display data effectively.
+title: Columns in WinUI TreeGrid | Syncfusion®
+description: Learn about Columns in the Syncfusion® WinUI TreeGrid control. Automatically generate and customize columns to display data effectively.
 platform: grid-sdk
 control: SfTreeGrid
 documentation: ug
 ---
 
-# Columns in WinUI SfTreeGrid
+# Columns in WinUI TreeGrid
 
 SfTreeGrid allows you to add or remove columns using [SfTreeGrid.Columns](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_ColumnsProperty) property. You can choose the columns to be added from built-in column types or you can create your own column and add to the `SfTreeGrid.Columns`.
 

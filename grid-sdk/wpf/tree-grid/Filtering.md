@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Filtering in WPF SfTreeGrid | Syncfusion®
-description: Learn about Filtering in the Syncfusion® WPF SfTreeGrid control. Apply filter conditions to display relevant data quickly and efficiently.
+title: Filtering in WPF TreeGrid | Syncfusion®
+description: Learn about Filtering in the Syncfusion® WPF TreeGrid control. Apply filter conditions to display relevant data quickly and efficiently.
 platform: grid-sdk
 control: SfTreeGrid
 documentation: ug
 ---
 
-# Filtering in WPF SfTreeGrid
+# Filtering in WPF TreeGrid
 
 Filtering is the process of retrieving the values from a collection that satisfies the specified condition. In SfTreeGrid, filtering can be applied through the UI as well as the programmatic filters.
 

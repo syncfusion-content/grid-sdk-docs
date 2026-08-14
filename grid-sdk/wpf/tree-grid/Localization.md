@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Localization in WPF SfTreeGrid | Syncfusion®
-description: Learn about Localization in the Syncfusion® WPF SfTreeGrid control. Customize culture, language, and resources for global applications.
+title: Localization in WPF TreeGrid | Syncfusion®
+description: Learn about Localization in the Syncfusion® WPF TreeGrid control. Customize culture, language, and resources for global applications.
 platform: grid-sdk
 control: SfTreeGrid
 documentation: ug
 ---
-# Localization in WPF SfTreeGrid
+# Localization in WPF TreeGrid
 
 Localization is the process of translating the application resources into different language for the specific cultures. You can localize the treegrid by [adding resource file](https://learn.microsoft.com/en-us/previous-versions/visualstudio/visual-studio-2010/aa992030(v=vs.100)). Application culture can be changed by setting `CurrentUICulture` before InitializeComponent method.
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Columns in UWP SfTreeGrid | Syncfusion®
-description: Manage columns in the Syncfusion® UWP SfTreeGrid control. Automatically generate columns from data or manually define them to customize display and binding.
+title: Columns in UWP TreeGrid | Syncfusion®
+description: Manage columns in the Syncfusion® UWP TreeGrid control. Automatically generate columns from data or manually define them to customize display and binding.
 platform: grid-sdk
 control: SfTreeGrid
 documentation: ug
 ---
 
-# Columns in UWP SfTreeGrid
+# Columns in UWP TreeGrid
 
 SfTreeGrid allows you to add or remove columns using [SfTreeGrid.Columns](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_Columns) property. You can choose the columns to be added from built-in column types or you can create your own column and add to the `SfTreeGrid.Columns`.
 

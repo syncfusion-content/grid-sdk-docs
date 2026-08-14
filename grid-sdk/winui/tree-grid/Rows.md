@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Rows in WinUI SfTreeGrid | Syncfusion®
-description: Manage rows in the Syncfusion® WinUI SfTreeGrid control. Customize row appearance to improve layout and readability.
+title: Rows in WinUI TreeGrid | Syncfusion®
+description: Manage rows in the Syncfusion® WinUI TreeGrid control. Customize row appearance to improve layout and readability.
 platform: grid-sdk
 control: SfTreeGrid
 documentation: ug
 ---
 
-# Rows in WinUI SfTreeGrid
+# Rows in WinUI TreeGrid
 
 This section explains about various row types in treegrid and its customization.
 

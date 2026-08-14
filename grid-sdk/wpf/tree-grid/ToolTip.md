@@ -1,7 +1,7 @@
 ---
 layout: post
-title: ToolTip in WPF SfTreeGrid | Syncfusion®
-description: Learn about ToolTip in the Syncfusion® WPF SfTreeGrid control. Show helpful info when hovering over cells or header cells for better context.
+title: ToolTip in WPF TreeGrid | Syncfusion®
+description: Learn about ToolTip in the Syncfusion® WPF TreeGrid control. Show helpful info when hovering over cells or header cells for better context.
 platform: grid-sdk
 control: SfTreeGrid
 documentation: ug

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Selection in UWP SfTreeGrid | Syncfusion®
-description: Enable row and cell selection in the Syncfusion® UWP SfTreeGrid control with support for single, multiple, and extended selection modes.
+title: Selection in UWP TreeGrid | Syncfusion®
+description: Enable row and cell selection in the Syncfusion® UWP TreeGrid control with support for single, multiple, and extended selection modes.
 platform: grid-sdk
 control: SfTreeGrid
 documentation: ug
 ---
 
-# Selection in UWP SfTreeGrid
+# Selection in UWP TreeGrid
 
 SfTreeGrid allows you select one or more rows.
 

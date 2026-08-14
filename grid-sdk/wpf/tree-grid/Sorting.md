@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Sorting in WPF SfTreeGrid | Syncfusion®
-description: Learn about Sorting in the Syncfusion® WPF SfTreeGrid control. Organize records by columns with ascending, descending, and custom sort options.
+title: Sorting in WPF TreeGrid | Syncfusion®
+description: Learn about Sorting in the Syncfusion® WPF TreeGrid control. Organize records by columns with ascending, descending, and custom sort options.
 platform: grid-sdk
 control: SfTreeGrid
 documentation: ug
 ---
 
 
-# Sorting in WPF SfTreeGrid
+# Sorting in WPF TreeGrid
 
 SfTreeGrid allows you to sort the data against one or more columns either in ascending or descending order. When sorting is applied, the rows are rearranged based on sort criteria. You can allow users to sort the data by touching or clicking the column header using [SfTreeGrid.AllowSorting](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_AllowSorting) property to `true`.
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Columns in WPF SfTreeGrid | Syncfusion®
-description: Learn about Columns in the Syncfusion® WPF SfTreeGrid control. Configure, customize, and manage column types and behaviors effectively.
+title: Columns in WPF TreeGrid | Syncfusion®
+description: Learn about Columns in the Syncfusion® WPF TreeGrid control. Configure, customize, and manage column types and behaviors effectively.
 platform: grid-sdk
 control: SfTreeGrid
 documentation: ug
 ---
 
-# Columns in WPF SfTreeGrid
+# Columns in WPF TreeGrid
 
 SfTreeGrid allows you to add or remove columns using [SfTreeGrid.Columns](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_Columns) property. You can choose the columns to be added from built-in column types or you can create your own column and add to the `SfTreeGrid.Columns`.
 

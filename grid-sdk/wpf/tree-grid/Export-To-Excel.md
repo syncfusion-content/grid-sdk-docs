@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Export To Excel in WPF SfTreeGrid | Syncfusion®
-description: Learn about Export To Excel in the Syncfusion® WPF SfTreeGrid control. Export grid data to Excel for easy sharing and reporting.
+title: Export To Excel in WPF TreeGrid | Syncfusion®
+description: Learn about Export To Excel in the Syncfusion® WPF TreeGrid control. Export grid data to Excel for easy sharing and reporting.
 platform: grid-sdk
 control: SfTreeGrid
 documentation: ug
 ---
 
-# Export To Excel in WPF SfTreeGrid
+# Export To Excel in WPF TreeGrid
 
 SfTreeGrid provides support to export the data to Excel file. This also provides support to export the headers and stacked headers. This maintains the sorting and filtering processes when exporting.
 

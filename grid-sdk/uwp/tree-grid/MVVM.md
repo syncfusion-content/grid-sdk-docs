@@ -1,13 +1,13 @@
 ---
 layout: post
-title: MVVM in UWP SfTreeGrid | Syncfusion®
-description: Apply the MVVM pattern in the Syncfusion® UWP SfTreeGrid control with support for data binding, commands, and structured application development.
+title: MVVM in UWP TreeGrid | Syncfusion®
+description: Apply the MVVM pattern in the Syncfusion® UWP TreeGrid control with support for data binding, commands, and structured application development.
 platform: grid-sdk
 control: SfTreeGrid
 documentation: ug
 ---
 
-# MVVM in UWP SfTreeGrid
+# MVVM in UWP TreeGrid
 
 This section explains various MVVM requirements using SfTreeGrid.
 

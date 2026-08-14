@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Editing in UWP SfTreeGrid | Syncfusion®
-description: Edit data in the Syncfusion® UWP SfTreeGrid control. Enter edit mode with keys or taps and control cursor placement using selection behaviors.
+title: Editing in UWP TreeGrid | Syncfusion®
+description: Edit data in the Syncfusion® UWP TreeGrid control. Enter edit mode with keys or taps and control cursor placement using selection behaviors.
 platform: grid-sdk
 control: SfTreeGrid
 documentation: ug
@@ -9,7 +9,7 @@ documentation: ug
 
 
 
-# Editing in UWP SfTreeGrid
+# Editing in UWP TreeGrid
 
 SfTreeGrid provides support for editing and it can be enabled or disabled by setting [SfTreeGrid.AllowEditing](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_AllowEditing) property.
 

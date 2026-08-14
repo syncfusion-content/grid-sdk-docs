@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Grid Lines in WPF SfTreeGrid | Syncfusion®
-description: Learn about customizing grid lines for cells and headers in the Syncfusion® WPF SfTreeGrid control with flexible styling options.
+title: Grid Lines in WPF TreeGrid | Syncfusion®
+description: Learn about customizing grid lines for cells and headers in the Syncfusion® WPF TreeGrid control with flexible styling options.
 platform: grid-sdk
 control: TreeGrid
 documentation: ug
 ---
 
-# Grid Lines in WPF SfTreeGrid
+# Grid Lines in WPF TreeGrid
 
 SfTreeGrid allows you to customize the grid lines visibility to vertical, horizontal, both or none. To achieve this, use the following properties.
 

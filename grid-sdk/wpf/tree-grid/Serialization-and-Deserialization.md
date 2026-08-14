@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Serialization in WPF SfTreeGrid | Syncfusion®
-description: Learn about Serialization and Deserialization in the Syncfusion® WPF SfTreeGrid control. Save and restore grid state.
+title: Serialization in WPF TreeGrid | Syncfusion®
+description: Learn about Serialization and Deserialization in the Syncfusion® WPF TreeGrid control. Save and restore grid state.
 platform: grid-sdk
 control: SfTreeGrid
 documentation: ug
 ---
 
-# Serialization and Deserialization in WPF SfTreeGrid
+# Serialization and Deserialization in WPF TreeGrid
 
 SfTreeGrid allows you to serialize and deserialize the SfTreeGrid settings using [DataContractSerializer](https://learn.microsoft.com/en-us/dotnet/api/system.runtime.serialization.datacontractserializer?view=net-8.0).
  

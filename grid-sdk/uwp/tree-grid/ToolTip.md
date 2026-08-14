@@ -1,13 +1,13 @@
 ---
 layout: post
-title: ToolTip in UWP SfTreeGrid | Syncfusion®
-description: Add ToolTip support in Syncfusion® UWP SfTreeGrid. Show helpful information on hover cells and customize tooltip content and style.
+title: ToolTip in UWP TreeGrid | Syncfusion®
+description: Add ToolTip support in Syncfusion® UWP TreeGrid. Show helpful information on hover cells and customize tooltip content and style.
 platform: grid-sdk
 control: SfTreeGrid
 documentation: ug
 ---
 
-# ToolTip in UWP SfTreeGrid
+# ToolTip in UWP TreeGrid
 
 ## Tooltip
 

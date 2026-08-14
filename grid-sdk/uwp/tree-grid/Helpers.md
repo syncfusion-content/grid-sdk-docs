@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Helpers in UWP SfTreeGrid | Syncfusion®
-description: Learn about helpers in the Syncfusion® UWP SfTreeGrid control. Use index resolver to get  node indexes and manage disposal.
+title: Helpers in UWP TreeGrid | Syncfusion®
+description: Learn about helpers in the Syncfusion® UWP TreeGrid control. Use index resolver to get  node indexes and manage disposal.
 platform: grid-sdk
 control: SfTreeGrid
 documentation: ug
 ---
 
-# Helpers in UWP SfTreeGrid
+# Helpers in UWP TreeGrid
 
 ## IndexResolver
 

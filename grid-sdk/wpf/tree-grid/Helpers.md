@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Helpers in WPF SfTreeGrid | Syncfusion®
-description: Learn about Helpers in the Syncfusion® WPF SfTreeGrid control. Use helper classes and methods to simplify customization and data handling.
+title: Helpers in WPF TreeGrid | Syncfusion®
+description: Learn about Helpers in the Syncfusion® WPF TreeGrid control. Use helper classes and methods to simplify customization and data handling.
 platform: grid-sdk
 control: SfTreeGrid
 documentation: ug
 ---
 
-# Helpers in WPF SfTreeGrid
+# Helpers in WPF TreeGrid
 
 ## IndexResolver
 

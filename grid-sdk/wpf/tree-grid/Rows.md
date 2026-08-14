@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Rows in WPF SfTreeGrid | Syncfusion®
-description: Learn about Rows in the Syncfusion® WPF SfTreeGrid control. Customize row appearance and manage data presentation effectively.
+title: Rows in WPF TreeGrid | Syncfusion®
+description: Learn about Rows in the Syncfusion® WPF TreeGrid control. Customize row appearance and manage data presentation effectively.
 platform: grid-sdk
 control: SfTreeGrid
 documentation: ug
 ---
 
-# Rows in WPF SfTreeGrid
+# Rows in WPF TreeGrid
 
 This section explains about various row types in treegrid and its customization.
 
