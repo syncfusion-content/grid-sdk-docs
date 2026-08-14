@@ -2,7 +2,7 @@
 layout: post
 title: AI-Driven anomaly detection in .NET MAUI Data Grid | Syncfusion
 description: Learn all about the AI-driven anomaly detection feature in Syncfusion® .NET MAUI Data Grid, including its capabilities, configuration, and usage.
-platform: MAUI
+platform: grid-sdk
 control: SfDataGrid
 documentation: ug
 ---

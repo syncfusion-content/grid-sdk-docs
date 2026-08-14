@@ -2,7 +2,7 @@
 layout: post
 title: About Syncfusion .NET MAUI Smart Data Grid Control | Syncfusion®
 description: Learn about introduction of Syncfusion® Essential Studio .NET MAUI Smart Data Grid control and more details.
-platform: MAUI
+platform: grid-sdk
 control: SfSmartDataGrid
 documentation: ug
 keywords: maui smart datagrid, ai datagrid maui, smart grid maui, ai gridview maui, .net maui smart datagrid, .net maui ai grid

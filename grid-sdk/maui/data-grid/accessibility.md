@@ -2,7 +2,7 @@
 layout: post
 title: Accessibility in .NET MAUI Data Grid | Syncfusion®
 description: Learn about the accessibility support available in Syncfusion® .NET MAUI Data Grid. Explore features designed to improve usability for all users.
-platform: MAUI
+platform: grid-sdk
 control: SfDataGrid
 documentation: UG
 keywords : maui data grid, maui datagrid, maui grid, grid maui, maui gridview, grid in maui, .net maui datagrid, .net maui grid, .net grid maui, .net maui accessibility, maui accessibility

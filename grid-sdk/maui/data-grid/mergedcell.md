@@ -2,7 +2,7 @@
 layout: post
 title: Merged Cells in .NET MAUI Data Grid | Syncfusion®
 description: Learn how to merge cells in Syncfusion® .NET MAUI Data Grid to improve data presentation and create visually organized DataGrid layouts.
-platform: maui
+platform: grid-sdk
 control: SfDataGrid
 documentation: ug
 keywords : maui data grid, maui datagrid, maui grid, grid maui, maui gridview, grid in maui, .net maui datagrid, .net maui grid, .net grid maui, .net maui merged cells, maui merge cells, maui cell merging

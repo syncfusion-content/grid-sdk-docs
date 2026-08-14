@@ -2,7 +2,7 @@
 layout: post
 title: Row Drag and Drop in .NET MAUI Data Grid | Syncfusion®
 description: Learn how to enable and customize row drag-and-drop in Syncfusion® .NET MAUI Data Grid to reorder and move records interactively.
-platform: MAUI
+platform: grid-sdk
 control: SfDataGrid
 documentation: ug
 keywords : maui data grid, maui datagrid, maui grid, grid maui, maui gridview, grid in maui, .net maui datagrid, .net maui grid, .net grid maui, .net maui row drag and drop, maui row drag and drop
