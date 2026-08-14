@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Css Customization in ASP.NET Core Syncfusion Pivot Table
-description: Learn here all about Css Customization in Syncfusion ASP.NET Core Pivot Table component of Syncfusion Essential JS 2 and more.
-platform: grid-sdk
+title: CSS Customization in ASP.NET Core Pivot Table | Syncfusion
+description: Learn how the ASP.NET Core Pivot Table uses CSS to hide axes, align text in headers and value cells, and style the Field List and Grouping Bar UI elements.
+platform: ej2-asp-core-mvc
 control: Css Customization
-publishingplatform: grid-sdk
+publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
 
-# CSS customization in ASP.NET Core Pivot Table component
+# CSS Customization in ASP.NET Core Pivot Table
 
 The ASP.NET Core Pivot Table component provides extensive CSS customization options, allowing users to modify the visual appearance and layout of various pivot table elements. This includes styling row headers, column headers, value cells, summary cells, Field List components, and Grouping Bar areas to match application themes and design requirements.
 
@@ -23,10 +23,10 @@ The following code example demonstrates how to hide the column axis in both the 
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/css-axis/tagHelper %}
+{% include code-snippet/pivot-table/css-axis/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Axis.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/css-axis/axis.cs %}
+{% include code-snippet/pivot-table/css-axis/axis.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -34,10 +34,10 @@ The following code example demonstrates how to hide the column axis in both the 
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/css-axis/razor %}
+{% include code-snippet/pivot-table/css-axis/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Axis.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/css-axis/axis.cs %}
+{% include code-snippet/pivot-table/css-axis/axis.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -58,10 +58,10 @@ The alignment of text inside row headers, column headers, value cells, and summa
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/css-align/tagHelper %}
+{% include code-snippet/pivot-table/css-align/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Text-align.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/css-align/text-align.cs %}
+{% include code-snippet/pivot-table/css-align/text-align.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -69,10 +69,10 @@ The alignment of text inside row headers, column headers, value cells, and summa
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/css-align/razor %}
+{% include code-snippet/pivot-table/css-align/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Text-align.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/css-align/text-align.cs %}
+{% include code-snippet/pivot-table/css-align/text-align.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -87,10 +87,10 @@ The following code sample demonstrates how to apply custom background colors to 
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/css-pivot/tagHelper %}
+{% include code-snippet/pivot-table/css-pivot/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Axis.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/css-pivot/axis.cs %}
+{% include code-snippet/pivot-table/css-pivot/axis.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -98,10 +98,10 @@ The following code sample demonstrates how to apply custom background colors to 
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/css-pivot/razor %}
+{% include code-snippet/pivot-table/css-pivot/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Axis.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/css-pivot/axis.cs %}
+{% include code-snippet/pivot-table/css-pivot/axis.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

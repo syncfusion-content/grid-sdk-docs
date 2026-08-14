@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Editing in ASP.NET MVC Syncfusion Pivot Table Component
-description: Learn here all about Editing in Syncfusion ASP.NET MVC Pivot Table component of Syncfusion Essential JS 2 and more.
-platform: grid-sdk
+title: Editing in ASP.NET MVC Pivot Table | Syncfusion
+description: Learn how the ASP.NET MVC Pivot Table enables CRUD editing of raw data in value cells through Normal, Dialog, Batch, and Command Column edit modes.
+platform: ej2-asp-core-mvc
 control: Editing
-publishingplatform: grid-sdk
+publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
 
-# Editing in ASP.NET MVC Pivot Table component
+# Editing in ASP.NET MVC Pivot Table
 
 > This feature is applicable only for the relational data source.
 
@@ -54,10 +54,10 @@ Normal edit mode allows users to edit one row at a time in the editing dialog wi
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/editing/normal/tagHelper %}
+{% include code-snippet/pivot-table/editing/normal/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Normal.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/editing/normal/Normal.cs %}
+{% include code-snippet/pivot-table/editing/normal/Normal.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -65,10 +65,10 @@ Normal edit mode allows users to edit one row at a time in the editing dialog wi
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/editing/normal/razor %}
+{% include code-snippet/pivot-table/editing/normal/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Normal.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/editing/normal/Normal.cs %}
+{% include code-snippet/pivot-table/editing/normal/Normal.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -85,10 +85,10 @@ The dialog edit mode provides a focused editing environment by displaying the se
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/editing/dialog/tagHelper %}
+{% include code-snippet/pivot-table/editing/dialog/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Dialog.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/editing/dialog/Dialog.cs %}
+{% include code-snippet/pivot-table/editing/dialog/Dialog.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -96,10 +96,10 @@ The dialog edit mode provides a focused editing environment by displaying the se
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/editing/dialog/razor %}
+{% include code-snippet/pivot-table/editing/dialog/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Dialog.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/editing/dialog/Dialog.cs %}
+{% include code-snippet/pivot-table/editing/dialog/Dialog.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -116,10 +116,10 @@ Batch editing enables users to make multiple changes to data grid cells and save
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/editing/batch/tagHelper %}
+{% include code-snippet/pivot-table/editing/batch/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Batch.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/editing/batch/Batch.cs %}
+{% include code-snippet/pivot-table/editing/batch/Batch.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -127,10 +127,10 @@ Batch editing enables users to make multiple changes to data grid cells and save
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/editing/batch/razor %}
+{% include code-snippet/pivot-table/editing/batch/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Batch.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/editing/batch/Batch.cs %}
+{% include code-snippet/pivot-table/editing/batch/Batch.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -160,10 +160,10 @@ N>
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/editing/cc/tagHelper %}
+{% include code-snippet/pivot-table/editing/cc/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="CC.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/editing/cc/CC.cs %}
+{% include code-snippet/pivot-table/editing/cc/CC.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -171,10 +171,10 @@ N>
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/editing/cc/razor %}
+{% include code-snippet/pivot-table/editing/cc/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="CC.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/editing/cc/CC.cs %}
+{% include code-snippet/pivot-table/editing/cc/CC.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -191,10 +191,10 @@ The inline editing option provides streamlined data modification by allowing dir
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/editing/Inline-editing/tagHelper %}
+{% include code-snippet/pivot-table/editing/Inline-editing/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Inline.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/editing/Inline-editing/Inline.cs %}
+{% include code-snippet/pivot-table/editing/Inline-editing/Inline.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -202,10 +202,10 @@ The inline editing option provides streamlined data modification by allowing dir
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/editing/Inline-editing/razor %}
+{% include code-snippet/pivot-table/editing/Inline-editing/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Inline.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/editing/Inline-editing/Inline.cs %}
+{% include code-snippet/pivot-table/editing/Inline-editing/Inline.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -224,10 +224,10 @@ Clicking a data point in the pivot chart displays the underlying raw items in a 
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/editing/chart/tagHelper %}
+{% include code-snippet/pivot-table/editing/chart/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Chart.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/editing/chart/Chart.cs %}
+{% include code-snippet/pivot-table/editing/chart/Chart.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -235,10 +235,10 @@ Clicking a data point in the pivot chart displays the underlying raw items in a 
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/editing/chart/razor %}
+{% include code-snippet/pivot-table/editing/chart/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Chart.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/editing/chart/Chart.cs %}
+{% include code-snippet/pivot-table/editing/chart/Chart.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -265,10 +265,10 @@ The event [`EditCompleted`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfus
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/editCompleted-event/tagHelper %}
+{% include code-snippet/pivot-table/editCompleted-event/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="EditCompleted.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/editCompleted-event/EditCompleted.cs %}
+{% include code-snippet/pivot-table/editCompleted-event/EditCompleted.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -276,10 +276,10 @@ The event [`EditCompleted`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfus
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/editCompleted-event/razor %}
+{% include code-snippet/pivot-table/editCompleted-event/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="EditCompleted.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/editCompleted-event/EditCompleted.cs %}
+{% include code-snippet/pivot-table/editCompleted-event/EditCompleted.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -315,10 +315,10 @@ For example, you can restrict add and save actions by setting **args.cancel** to
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/action-event/actionBegin-editing/tagHelper %}
+{% include code-snippet/pivot-table/action-event/actionBegin-editing/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="ActionBegin-editing.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/action-event/actionBegin-editing/actionBegin-editing.cs %}
+{% include code-snippet/pivot-table/action-event/actionBegin-editing/actionBegin-editing.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -326,10 +326,10 @@ For example, you can restrict add and save actions by setting **args.cancel** to
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/action-event/actionBegin-editing/razor %}
+{% include code-snippet/pivot-table/action-event/actionBegin-editing/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="ActionBegin-editing.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/action-event/actionBegin-editing/actionBegin-editing.cs %}
+{% include code-snippet/pivot-table/action-event/actionBegin-editing/actionBegin-editing.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -354,10 +354,10 @@ The [`ActionComplete`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/action-event/actionComplete-editing/tagHelper %}
+{% include code-snippet/pivot-table/action-event/actionComplete-editing/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="ActionComplete-editing.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/action-event/actionComplete-editing/actionComplete-editing.cs %}
+{% include code-snippet/pivot-table/action-event/actionComplete-editing/actionComplete-editing.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -365,10 +365,10 @@ The [`ActionComplete`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/action-event/actionComplete-editing/razor %}
+{% include code-snippet/pivot-table/action-event/actionComplete-editing/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="ActionComplete-editing.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/action-event/actionComplete-editing/actionComplete-editing.cs %}
+{% include code-snippet/pivot-table/action-event/actionComplete-editing/actionComplete-editing.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -392,10 +392,10 @@ The [`ActionFailure`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.E
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/action-event/actionFailure-editing/tagHelper %}
+{% include code-snippet/pivot-table/action-event/actionFailure-editing/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="ActionFailure-editing.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/action-event/actionFailure-editing/actionFailure-editing.cs %}
+{% include code-snippet/pivot-table/action-event/actionFailure-editing/actionFailure-editing.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -403,10 +403,10 @@ The [`ActionFailure`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.E
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/action-event/actionFailure-editing/razor %}
+{% include code-snippet/pivot-table/action-event/actionFailure-editing/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="ActionFailure-editing.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/action-event/actionFailure-editing/actionFailure-editing.cs %}
+{% include code-snippet/pivot-table/action-event/actionFailure-editing/actionFailure-editing.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

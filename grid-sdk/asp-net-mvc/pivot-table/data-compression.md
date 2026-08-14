@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Data Compression in ASP.NET MVC Syncfusion Pivot Table
-description: Learn here all about data compression in Syncfusion ASP.NET MVC Pivot Table component of Syncfusion Essential JS 2 and more.
-platform: grid-sdk
+title: Data Compression in ASP.NET MVC Pivot Table | Syncfusion
+description: Learn how the ASP.NET MVC Pivot Table uses AllowDataCompression with virtual scrolling to dedupe raw input data and speed up rendering on large datasets.
+platform: ej2-asp-core-mvc
 control: Data Compression
-publishingplatform: grid-sdk
+publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
 <!-- markdownlint-disable MD036 -->
 
-# Data Compression in ASP.NET MVC PivotView component
+# Data Compression in ASP.NET MVC Pivot Table
 
 > This property is applicable only for the relational data source.
 
@@ -20,10 +20,10 @@ When binding large volumes of raw data, the pivot table processes all raw data t
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/virtual-scrolling-compression/tagHelper %}
+{% include code-snippet/pivot-table/virtual-scrolling-compression/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="VirtualScrolling.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/virtual-scrolling-compression/VirtualScrolling.cs %}
+{% include code-snippet/pivot-table/virtual-scrolling-compression/VirtualScrolling.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -31,10 +31,10 @@ When binding large volumes of raw data, the pivot table processes all raw data t
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/virtual-scrolling-compression/razor %}
+{% include code-snippet/pivot-table/virtual-scrolling-compression/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="VirtualScrolling.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/virtual-scrolling-compression/VirtualScrolling.cs %}
+{% include code-snippet/pivot-table/virtual-scrolling-compression/VirtualScrolling.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Defer update in Angular Pivotview component | Syncfusion
-description: Learn here all about Defer update in Syncfusion Angular Pivotview component of Syncfusion Essential JS 2 and more.
-platform: grid-sdk
+title: Defer Update in Angular Pivot Table | Syncfusion
+description: Learn how the Angular Pivot Table defers layout updates so users configure rows, columns, and filters before the report is applied.
+platform: ej2-angular
 control: Defer update 
 documentation: ug
-domainurl: https://help.syncfusion.com/grid-sdk
+domainurl: ##DomainURL##
 ---
 
-# Defer update in Angular Pivotview component
+# Defer Update in Angular Pivot Table
 
 Defer layout update support allows updating the pivot table component only on demand, significantly improving performance for complex data operations. When this feature is enabled, users can drag-and-drop fields between row, column, value and filter axes, apply sorting and filtering inside the Field List, resulting in changes to the pivot report configuration without immediately updating the pivot table values. Once all operations are performed and the "Apply" button is clicked in the Field List, the pivot table will update with the final modified report. This approach reduces multiple unnecessary renders and brings better performance, especially when working with large datasets or performing multiple field operations.
 
@@ -23,15 +23,15 @@ To enable deferred updates in the pivot table, set the [`allowDeferLayoutUpdate`
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs39/src/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs39/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs39/src/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs39/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs39" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs39" %}
 
 ## Stand-alone Field List (Fixed)
 
@@ -43,12 +43,12 @@ To enable deferred updates in the static fieldlist, set the [`allowDeferLayoutUp
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs40/src/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs40/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs40/src/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs40/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs40" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs40" %}

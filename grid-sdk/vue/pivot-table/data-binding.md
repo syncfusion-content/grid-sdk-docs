@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Data binding in Vue Pivot Table component | Syncfusion
-description: Learn here all about Data binding in Syncfusion Vue Pivot Table component of Syncfusion Essential JS 2 and more.
+title: Data Binding in Vue Pivot Table | Syncfusion
+description: Learn how the Vue Pivot Table binds JSON, CSV, OData, and Web API sources via DataManager, and configures field mapping for display and aggregation.
 control: Data binding 
-platform: grid-sdk
+platform: ej2-vue
 documentation: ug
-domainurl: https://help.syncfusion.com/grid-sdk
+domainurl: ##DomainURL##
 ---
-# Data binding in Vue Pivot Table component
+# Data Binding in Vue Pivot Table
 
 ## JSON
 
@@ -19,27 +19,27 @@ You can bind local JSON data to the Pivot Table by assigning a local variable co
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/default-cs19/app-composition.vue %}
+{% include code-snippet/pivot-grid/default-cs19/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/default-cs19/app.vue %}
+{% include code-snippet/pivot-grid/default-cs19/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/default-cs19" %}
+{% previewsample "page.domainurl/code-snippet/pivot-grid/default-cs19" %}
 
 You can also bind JSON data using the [`DataManager`](https://ej2.syncfusion.com/documentation/data/adaptors#data-adaptors) with `JsonAdaptor`. In this approach, assign the [`DataManager`](https://ej2.syncfusion.com/documentation/data/adaptors#data-adaptors) instance containing JSON data to the [`dataSource`](https://ej2.syncfusion.com/vue/documentation/api/pivotview/iDataOptions#datasource) property under [`dataSourceSettings`](https://ej2.syncfusion.com/vue/documentation/api/pivotview/index-default#datasourcesettings). Using [`DataManager`](https://ej2.syncfusion.com/documentation/data/adaptors#data-adaptors) is optional for local JSON data binding.
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/default-cs20/app-composition.vue %}
+{% include code-snippet/pivot-grid/default-cs20/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/default-cs20/app.vue %}
+{% include code-snippet/pivot-grid/default-cs20/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/default-cs20" %}
+{% previewsample "page.domainurl/code-snippet/pivot-grid/default-cs20" %}
 
 You can also load JSON data from a local *.json file using the file upload option. After uploading the file, convert the resulting string to JSON data and assign it to the [`dataSource`](https://ej2.syncfusion.com/vue/documentation/api/pivotview/iDataOptions#datasource) property under [`dataSourceSettings`](https://ej2.syncfusion.com/vue/documentation/api/pivotview/index-default#datasourcesettings). The following code example demonstrates this approach.
 
@@ -90,14 +90,14 @@ To bind remote JSON data to the Pivot Table, set the endpoint [`URL`](https://ej
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/common-cs1/app-composition.vue %}
+{% include code-snippet/pivot-grid/common-cs1/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/common-cs1/app.vue %}
+{% include code-snippet/pivot-grid/common-cs1/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/common-cs1" %}
+{% previewsample "page.domainurl/code-snippet/pivot-grid/common-cs1" %}
 
 ## CSV
 
@@ -111,14 +111,14 @@ To bind local CSV data to the Pivot Table, convert the data into a string array 
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/csvdata-cs1/app-composition.vue %}
+{% include code-snippet/pivot-grid/csvdata-cs1/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/csvdata-cs1/app.vue %}
+{% include code-snippet/pivot-grid/csvdata-cs1/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/csvdata-cs1" %}
+{% previewsample "page.domainurl/code-snippet/pivot-grid/csvdata-cs1" %}
 
 You can also connect CSV data from a local *.csv file to the Pivot Table using the file upload option. After uploading the file, convert the resulting string to a string array and assign it to the [`dataSource`](https://ej2.syncfusion.com/vue/documentation/api/pivotview/iDataOptions#datasource) property under [`dataSourceSettings`](https://ej2.syncfusion.com/vue/documentation/api/pivotview/index-default#datasourcesettings). The following code example shows how to implement this:
 
@@ -174,14 +174,14 @@ To bind remote CSV data, set the [`URL`](https://ej2.syncfusion.com/vue/document
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/common-cs2/app-composition.vue %}
+{% include code-snippet/pivot-grid/common-cs2/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/common-cs2/app.vue %}
+{% include code-snippet/pivot-grid/common-cs2/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/common-cs2" %}
+{% previewsample "page.domainurl/code-snippet/pivot-grid/common-cs2" %}
 
 ## Remote Data Binding
 
@@ -197,14 +197,14 @@ The following example demonstrates how to bind the Pivot Table to an OData servi
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/common-cs3/app-composition.vue %}
+{% include code-snippet/pivot-grid/common-cs3/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/common-cs3/app.vue %}
+{% include code-snippet/pivot-grid/common-cs3/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/common-cs3" %}
+{% previewsample "page.domainurl/code-snippet/pivot-grid/common-cs3" %}
 
 ### Binding with OData V4 services
 
@@ -212,14 +212,14 @@ OData V4 services provide enhanced query capabilities and improved performance f
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/common-cs4/app-composition.vue %}
+{% include code-snippet/pivot-grid/common-cs4/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/common-cs4/app.vue %}
+{% include code-snippet/pivot-grid/common-cs4/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/common-cs4" %}
+{% previewsample "page.domainurl/code-snippet/pivot-grid/common-cs4" %}
 
 ### Web API
 
@@ -227,14 +227,14 @@ Web API binding allows you to connect the Pivot Table directly to RESTful web se
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/common-cs5/app-composition.vue %}
+{% include code-snippet/pivot-grid/common-cs5/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/common-cs5/app.vue %}
+{% include code-snippet/pivot-grid/common-cs5/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/common-cs5" %}
+{% previewsample "page.domainurl/code-snippet/pivot-grid/common-cs5" %}
 
 ### Querying in Data Manager
 
@@ -244,14 +244,14 @@ The query can include operations such as filtering records based on specific con
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/common-cs6/app-composition.vue %}
+{% include code-snippet/pivot-grid/common-cs6/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/common-cs6/app.vue %}
+{% include code-snippet/pivot-grid/common-cs6/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/common-cs6" %}
+{% previewsample "page.domainurl/code-snippet/pivot-grid/common-cs6" %}
 
 ## Mapping
 
@@ -301,14 +301,14 @@ The following code sample demonstrates how to configure the visibility of field 
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/default-cs21/app-composition.vue %}
+{% include code-snippet/pivot-grid/default-cs21/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/default-cs21/app.vue %}
+{% include code-snippet/pivot-grid/default-cs21/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/default-cs21" %}
+{% previewsample "page.domainurl/code-snippet/pivot-grid/default-cs21" %}
 
 ## Values in row axis
 
@@ -316,14 +316,14 @@ You can display value fields in the row axis of the Pivot Table to make your dat
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/default-cs22/app-composition.vue %}
+{% include code-snippet/pivot-grid/default-cs22/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/default-cs22/app.vue %}
+{% include code-snippet/pivot-grid/default-cs22/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/default-cs22" %}
+{% previewsample "page.domainurl/code-snippet/pivot-grid/default-cs22" %}
 
 ## Values at different positions
 
@@ -333,14 +333,14 @@ Positioning value fields at specific locations helps create more meaningful data
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/default-cs23/app-composition.vue %}
+{% include code-snippet/pivot-grid/default-cs23/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/default-cs23/app.vue %}
+{% include code-snippet/pivot-grid/default-cs23/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/default-cs23" %}
+{% previewsample "page.domainurl/code-snippet/pivot-grid/default-cs23" %}
 
 ## Show 'no data' items
 
@@ -350,14 +350,14 @@ In the following example, the "Country" and "State" field rows are displayed eve
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/noData-cs1/app-composition.vue %}
+{% include code-snippet/pivot-grid/noData-cs1/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/noData-cs1/app.vue %}
+{% include code-snippet/pivot-grid/noData-cs1/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/noData-cs1" %}
+{% previewsample "page.domainurl/code-snippet/pivot-grid/noData-cs1" %}
 
 ## Show value headers always
 
@@ -365,14 +365,14 @@ Ensure value headers remain visible in your Pivot Table at all times, providing 
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/default-cs24/app-composition.vue %}
+{% include code-snippet/pivot-grid/default-cs24/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/default-cs24/app.vue %}
+{% include code-snippet/pivot-grid/default-cs24/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/default-cs24" %}
+{% previewsample "page.domainurl/code-snippet/pivot-grid/default-cs24" %}
 
 ## Customize empty value cells
 
@@ -380,14 +380,14 @@ Show custom text in cells that contain no data to make your Pivot Table more inf
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/noData-cs2/app-composition.vue %}
+{% include code-snippet/pivot-grid/noData-cs2/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/noData-cs2/app.vue %}
+{% include code-snippet/pivot-grid/noData-cs2/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/noData-cs2" %}
+{% previewsample "page.domainurl/code-snippet/pivot-grid/noData-cs2" %}
 
 ## Event
 
@@ -408,14 +408,14 @@ The load event provides the following parameters:
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/noData-cs3/app-composition.vue %}
+{% include code-snippet/pivot-grid/noData-cs3/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/noData-cs3/app.vue %}
+{% include code-snippet/pivot-grid/noData-cs3/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/noData-cs3" %}
+{% previewsample "page.domainurl/code-snippet/pivot-grid/noData-cs3" %}
 
 ### EnginePopulated
 
@@ -431,14 +431,14 @@ Below is an example showing how the [`enginePopulated`](https://ej2.syncfusion.c
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/noData-cs4/app-composition.vue %}
+{% include code-snippet/pivot-grid/noData-cs4/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/noData-cs4/app.vue %}
+{% include code-snippet/pivot-grid/noData-cs4/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/noData-cs4" %}
+{% previewsample "page.domainurl/code-snippet/pivot-grid/noData-cs4" %}
 
 ### EnginePopulating
 
@@ -448,14 +448,14 @@ The [`enginePopulating`](https://ej2.syncfusion.com/vue/documentation/api/pivotv
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/noData-cs5/app-composition.vue %}
+{% include code-snippet/pivot-grid/noData-cs5/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/noData-cs5/app.vue %}
+{% include code-snippet/pivot-grid/noData-cs5/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/noData-cs5" %}
+{% previewsample "page.domainurl/code-snippet/pivot-grid/noData-cs5" %}
 
 ## See Also
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Getting Started with ASP.NET Core Pivot Table Control | Syncfusion
-description: Checkout and learn about getting started with ASP.NET Core Pivot Table control of Syncfusion Essential JS 2 and more details.
-platform: grid-sdk
-control: Getting Started
-publishingplatform: grid-sdk
+title: Getting Started with ASP.NET Core Pivot Table | Syncfusion
+description: Learn how to create a new ASP.NET Core Web App in Visual Studio and install the Syncfusion.AspNetCore.PivotView NuGet package to render the Pivot Table.
+platform: ej2-asp-core-mvc
+control: Pivot Table
+publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Getting Started with ASP.NET Core Pivot Table Control
+# Getting Started with ASP.NET Core Pivot Table
 
 This section briefly explains how to include the [ASP.NET Core Pivot Table](https://www.syncfusion.com/aspnet-core-ui-controls/pivot-table) control in your ASP.NET Core application using [Visual Studio](https://visualstudio.microsoft.com/vs/), and [Visual Studio Code](https://code.visualstudio.com/).
 
@@ -20,7 +20,7 @@ This section briefly explains how to include the [ASP.NET Core Pivot Table](http
 
 {% tabcontent Visual Studio %}
 
-Create an **ASP.NET Core Web App** using Visual Studio via [Microsoft Templates](https://learn.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/razor-pages-start?view=aspnetcore-8.0&tabs=visual-studio#create-a-razor-pages-web-app) or the [ASP.NET Core Extension](https://ej2.syncfusion.com/aspnetcore/documentation/visual-studio-integration/create-project). For detailed instructions, refer to the [ASP.NET Core Web App Getting Started](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/razor-pages) documentation.
+Create an **ASP.NET Core Web App** using Visual Studio via [Microsoft Templates](https://learn.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/razor-pages-start?view=aspnetcore-8.0&tabs=visual-studio#create-a-razor-pages-web-app) or the [Syncfusion® ASP.NET Core Extension](https://ej2.syncfusion.com/aspnetcore/documentation/visual-studio-integration/create-project). For detailed instructions, refer to the [ASP.NET Core Web App Getting Started](https://ej2.syncfusion.com/aspnetcore/documentation/getting-started/razor-pages) documentation.
 
 {% endtabcontent %}
 
@@ -37,7 +37,7 @@ code -r RazorPagesMovie
 {% endhighlight %}
 {% endtabs %}
 
-Alternatively, create an **ASP.NET Core Web App** using Visual Studio Code via [Microsoft Templates](https://learn.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/razor-pages-start?view=aspnetcore-8.0&tabs=visual-studio-code#create-a-razor-pages-web-app), or the [ASP.NET Core Extension](https://ej2.syncfusion.com/aspnetcore/documentation/visual-studio-code-integration/create-project), or the [C# Dev Kit](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csdevkit) extension.
+Alternatively, create an **ASP.NET Core Web App** using Visual Studio Code via [Microsoft Templates](https://learn.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/razor-pages-start?view=aspnetcore-8.0&tabs=visual-studio-code#create-a-razor-pages-web-app), or the [Syncfusion® ASP.NET Core Extension](https://ej2.syncfusion.com/aspnetcore/documentation/visual-studio-code-integration/create-project), or the [C# Dev Kit](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csdevkit) extension.
 
 {% endtabcontent %}
 
@@ -138,11 +138,11 @@ Add the [ASP.NET Core Pivot Table](https://www.syncfusion.com/aspnet-core-ui-con
 To bind data for the Pivot Table control, you can assign a collection of data objects to the [`dataSource`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html#Syncfusion_EJ2_PivotView_PivotViewDataSourceSettings_DataSource) property. The data source can be provided as an IEnumerable collection or as an instance of the `DataManager`.
 
 {% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/getting-start-core/pivot-table/tagHelper %}
+{% highlight cshtml tabtitle="Index.cshtml" %}
+{% include code-snippet/pivot-table/getting-start-core/pivot-table/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="CSHTML.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/getting-start-core/pivot-table/pivottable.cs %}
+{% highlight c# tabtitle="Index.cshtml.cs" %}
+{% include code-snippet/pivot-table/getting-start-core/pivot-table/pivottable.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -172,7 +172,7 @@ dotnet run
 
 {% endtabcontents %}
 
-![ASP.NET Core Pivot Table Control](images/pivottable-fields.png)
+![ASP.NET Core Pivot Table Control](images/pivottable-fields.webp)
 
 ## See also
 

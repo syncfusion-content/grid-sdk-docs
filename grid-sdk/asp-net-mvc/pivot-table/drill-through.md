@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Drill Through in ASP.NET MVC Syncfusion Pivot Table
-description: Learn here all about Drill Through in Syncfusion ASP.NET MVC Pivot Table component of Syncfusion Essential JS 2 and more.
-platform: grid-sdk
+title: Drill Through in ASP.NET MVC Pivot Table | Syncfusion
+description: Learn how the ASP.NET MVC Pivot Table opens a raw-data grid in a new window on double-click via the AllowDrillThrough property and DrillThrough module.
+platform: ej2-asp-core-mvc
 control: Drill Through
-publishingplatform: grid-sdk
+publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
 <!-- markdownlint-disable MD012 -->
 
-# Drill through in ASP.NET MVC Pivot Table component
+# Drill Through in ASP.NET MVC Pivot Table
 
 The drill-through feature in the Pivot Table component allows users to view the raw, unaggregated data behind any aggregated cell in the Pivot Table. To enable this feature, set the [`AllowDrillThrough`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_AllowDrillThrough) property to **true**. By double-clicking an aggregated cell, users can view its detailed raw data in a data grid displayed in a new window. The new window shows the row header, column header, and measure name of the selected cell at the top. Additionally, users can include or exclude fields available in the data grid using the column chooser option.
 
@@ -22,10 +22,10 @@ Below is an example of enabling drill-through in a Pivot Table:
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/drill-through/tagHelper %}
+{% include code-snippet/pivot-table/drill-through/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="DrillThrough.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/drill-through/DrillThrough.cs %}
+{% include code-snippet/pivot-table/drill-through/DrillThrough.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -33,10 +33,10 @@ Below is an example of enabling drill-through in a Pivot Table:
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/drill-through/razor %}
+{% include code-snippet/pivot-table/drill-through/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="DrillThrough.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/drill-through/DrillThrough.cs %}
+{% include code-snippet/pivot-table/drill-through/DrillThrough.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -56,10 +56,10 @@ Below is an example of enabling drill-through with a pivot chart:
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/drill-through-chart/tagHelper %}
+{% include code-snippet/pivot-table/drill-through-chart/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="DrillThroughChart.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/drill-through-chart/DrillThroughChart.cs %}
+{% include code-snippet/pivot-table/drill-through-chart/DrillThroughChart.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -67,10 +67,10 @@ Below is an example of enabling drill-through with a pivot chart:
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/drill-through-chart/razor %}
+{% include code-snippet/pivot-table/drill-through-chart/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="DrillThroughChart.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/drill-through-chart/DrillThroughChart.cs %}
+{% include code-snippet/pivot-table/drill-through-chart/DrillThroughChart.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -92,10 +92,10 @@ The [`MaxRowsInDrillThrough`](https://help.syncfusion.com/cr/aspnetcore-js2/Sync
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/getting-start-mvc/olap-drill-through/tagHelper %}
+{% include code-snippet/pivot-table/getting-start-mvc/olap-drill-through/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Drill-through.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/getting-start-mvc/olap-drill-through/drill-through.cs %}
+{% include code-snippet/pivot-table/getting-start-mvc/olap-drill-through/drill-through.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -103,10 +103,10 @@ The [`MaxRowsInDrillThrough`](https://help.syncfusion.com/cr/aspnetcore-js2/Sync
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/getting-start-mvc/olap-drill-through/razor %}
+{% include code-snippet/pivot-table/getting-start-mvc/olap-drill-through/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Drill-through.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/getting-start-mvc/olap-drill-through/drill-through.cs %}
+{% include code-snippet/pivot-table/getting-start-mvc/olap-drill-through/drill-through.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -136,10 +136,10 @@ Below is an example of using the [`DrillThrough`](https://help.syncfusion.com/cr
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/drill-through-event/tagHelper %}
+{% include code-snippet/pivot-table/drill-through-event/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="DrillThroughEvent.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/drill-through-event/DrillThroughEvent.cs %}
+{% include code-snippet/pivot-table/drill-through-event/DrillThroughEvent.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -147,10 +147,10 @@ Below is an example of using the [`DrillThrough`](https://help.syncfusion.com/cr
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/drill-through-event/razor %}
+{% include code-snippet/pivot-table/drill-through-event/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="DrillThroughEvent.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/drill-through-event/DrillThroughEvent.cs %}
+{% include code-snippet/pivot-table/drill-through-event/DrillThroughEvent.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -170,10 +170,10 @@ The following example demonstrates how to enable `sorting`, `filtering`, and `gr
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/custom-editing/custom-editing/tagHelper %}
+{% include code-snippet/pivot-table/custom-editing/custom-editing/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="CustomEditing.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/custom-editing/custom-editing/CustomEditing.cs %}
+{% include code-snippet/pivot-table/custom-editing/custom-editing/CustomEditing.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -181,10 +181,10 @@ The following example demonstrates how to enable `sorting`, `filtering`, and `gr
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/custom-editing/custom-editing/razor %}
+{% include code-snippet/pivot-table/custom-editing/custom-editing/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="CustomEditing.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/custom-editing/custom-editing/CustomEditing.cs %}
+{% include code-snippet/pivot-table/custom-editing/custom-editing/CustomEditing.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

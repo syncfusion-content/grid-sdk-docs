@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Tool bar in Angular Pivotview component | Syncfusion
-description: Learn here all about Tool bar in Syncfusion Angular Pivotview component of Syncfusion Essential JS 2 and more.
-platform: grid-sdk
+title: Toolbar in Angular Pivot Table | Syncfusion
+description: Learn how the Angular Pivot Table shows a built-in toolbar for switching between grid and chart, conditional formatting, and exports.
+platform: ej2-angular
 control: Tool bar 
 documentation: ug
-domainurl: https://help.syncfusion.com/grid-sdk
+domainurl: ##DomainURL##
 ---
 
-# Tool bar in Angular Pivotview component
+# Toolbar in Angular Pivot Table
 
 The toolbar in the Angular Pivot Table component provides easy access to commonly used features, such as switching between a pivot table and a pivot chart, changing chart types, applying conditional formatting, exporting data, and more. To enable the toolbar, set the [`showToolbar`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/index-default#showtoolbar) property to **true**. Additionally, the [`toolbar`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/index-default#toolbar) property accepts a collection of built-in toolbar options, allowing users to interact with the Pivot Table efficiently at runtime.
 
@@ -36,15 +36,15 @@ The following table lists the built-in toolbar options and their actions:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs288/src/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs288/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs288/src/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs288/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs288" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs288" %}
 
 ## Show desired chart types in the dropdown menu
 
@@ -56,15 +56,15 @@ To learn more about the supported chart types, see the [Pivot Chart documentatio
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs289/src/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs289/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs289/src/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs289/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs289" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs289" %}
 
 ## Switch the chart to multiple axes
 
@@ -90,15 +90,15 @@ Here’s an example of how to add a custom toolbar item:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs290/src/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs290/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs290/src/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs290/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs290" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs290" %}
 
 In this example, a custom icon is added to the toolbar. The [`toolbarRender`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#toolbarrender) event helps position and define the action for the new item. Next, we will explore how to fully customize the toolbar panel using a template and include custom controls.
 
@@ -110,29 +110,29 @@ Below is an example of a custom toolbar with buttons to expand or collapse all r
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/toolbarTemplate-cs1/src/app.component.ts %}
+{% include code-snippet/pivot-grid/toolbarTemplate-cs1/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/toolbarTemplate-cs1/src/main.ts %}
+{% include code-snippet/pivot-grid/toolbarTemplate-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/toolbarTemplate-cs1" %}
+{% previewsample "page.domainurl/samples/pivot-grid/toolbarTemplate-cs1" %}
 
 Another option allows framing a custom toolbar item using HTML elements and including it in the toolbar panel at the desired position. Custom toolbar items can be declared as a control **instance** or element **ID** in the [`toolbar`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/index-default#toolbar) property in the pivot table.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/toolbarTemplate-cs2/src/app.component.ts %}
+{% include code-snippet/pivot-grid/toolbarTemplate-cs2/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/toolbarTemplate-cs2/src/main.ts %}
+{% include code-snippet/pivot-grid/toolbarTemplate-cs2/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/toolbarTemplate-cs2" %}
+{% previewsample "page.domainurl/samples/pivot-grid/toolbarTemplate-cs2" %}
 
 > Note: For both options, the actions for the toolbar template items can be defined in the [`toolbarClick`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#toolbarclick) event. Additionally, if the toolbar item is a custom control, its built-in events can also be accessed.
 
@@ -146,15 +146,15 @@ The following code example shows how to save and load a Pivot Table report as a 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs291/src/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs291/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs291/src/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs291/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs291" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs291" %}
 
 ## Save and load reports to a SQL database
 
@@ -1025,15 +1025,15 @@ The [`toolbarRender`](https://ej2.syncfusion.com/angular/documentation/api/pivot
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs292/src/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs292/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs292/src/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs292/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs292" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs292" %}
 
 ### BeforeExport
 
@@ -1043,15 +1043,15 @@ Here’s an example of how to use the `beforeExport` event to customize headers 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs293/src/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs293/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs293/src/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs293/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs293" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs293" %}
 
 ### ActionBegin
 
@@ -1083,15 +1083,15 @@ In the example below, the [`actionBegin`](https://ej2.syncfusion.com/angular/doc
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs294/src/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs294/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs294/src/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs294/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs294" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs294" %}
 
 ### ActionComplete
 
@@ -1120,15 +1120,15 @@ The [`actionComplete`](https://ej2.syncfusion.com/angular/documentation/api/pivo
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs295/src/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs295/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs295/src/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs295/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs295" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs295" %}
 
 ### ActionFailure
 
@@ -1157,15 +1157,15 @@ The [`actionFailure`](https://ej2.syncfusion.com/angular/documentation/api/pivot
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs296/src/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs296/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs296/src/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs296/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs296" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs296" %}
 
 ## See Also
 

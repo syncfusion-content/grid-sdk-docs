@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Switching older themes style in Vue | Syncfusion
-description: Learn here all about Switching older themes style in Syncfusion Vue Pivotview component of Syncfusion Essential JS 2 and more.
+title: How to switch to older themes style in Vue Pivot Table | Syncfusion
+description: Step-by-step example showing how to switch the Vue Pivot Table to the older theme style, with CSS overrides for cell backgrounds and a rowHeight reset to the pre-2020 layout.
 control: Switching older themes style 
-platform: grid-sdk
+platform: ej2-vue
 documentation: ug
-domainurl: https://help.syncfusion.com/grid-sdk
+domainurl: ##DomainURL##
 ---
 
 <!-- markdownlint-disable MD009 -->
 
-# Switching older themes style in Vue Pivot Table component
+# How to switch to older themes style in Vue Pivot Table
 
 Since Volume 1, 2020, Syncfusion<sup style="font-size:70%">&reg;</sup> has revised the theming and layout of the Pivot Table. If you prefer the appearance of the earlier theme, you can revert to it by making specific changes. This guide explains how to restore the older theme's style by modifying the CSS to adjust cell background colors and set the row height to match the previous layout.
 
@@ -70,11 +70,11 @@ The following code sample demonstrates how to replicate the older theme style:
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/default-cs142/app-composition.vue %}
+{% include code-snippet/pivot-grid/default-cs142/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/default-cs142/app.vue %}
+{% include code-snippet/pivot-grid/default-cs142/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/default-cs142" %}
+{% previewsample "page.domainurl/code-snippet/pivot-grid/default-cs142" %}

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Globalization and localization in Vue Pivotview component | Syncfusion
-description: Learn here all about Globalization and localization in Syncfusion Vue Pivotview component of Syncfusion Essential JS 2 and more.
+title: Globalization in Vue Pivot Table | Syncfusion
+description: Learn how the Vue Pivot Table supports internationalization with CLDR data for number, date, and time formatting and culture-specific localization.
 control: Globalization and localization 
-platform: grid-sdk
+platform: ej2-vue
 documentation: ug
-domainurl: https://help.syncfusion.com/grid-sdk
+domainurl: ##DomainURL##
 ---
 
-# Globalization and localization in Vue Pivotview component
+# Globalization in Vue Pivot Table
 
 Globalization is the combination of Internationalization and localization. You can adapt the component to various languages by parsing and formatting the date or number ([`Internationalization`](https://ej2.syncfusion.com/documentation/common/intl.html?lang=typescript)) & adding culture specific customization and translation to the text ([`Localization`](https://ej2.syncfusion.com/documentation/common/localization.html?lang=typescript)).
 
@@ -96,14 +96,14 @@ The Internationalization library is used to globalize number, date, and time val
 
     {% tabs %}
     {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-    {% include code-snippet/grid-sdk/vue/pivot-table/default-cs95/app-composition.vue %}
+    {% include code-snippet/pivot-grid/default-cs95/app-composition.vue %}
     {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-    {% include code-snippet/grid-sdk/vue/pivot-table/default-cs95/app.vue %}
+    {% include code-snippet/pivot-grid/default-cs95/app.vue %}
     {% endhighlight %}
     {% endtabs %}
             
-    {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/default-cs95" %}
+    {% previewsample "page.domainurl/code-snippet/pivot-grid/default-cs95" %}
 
 > * In the above sample, `Amount` field is formatted by [`NumberFormatOptions`](https://ej2.syncfusion.com/documentation/common/intl.html?lang=typescript#manipulating-numbers). For date formats, the value strings are formatted by [`DateFormatOptions`](https://ej2.syncfusion.com/documentation/common/intl.html?lang=typescript#manipulating-datetime).
 > * By default, `locale` value is `en-US`. If you want to change the `en-US` culture to a different culture, you have to change  the `locale` accordingly.
@@ -113,20 +113,20 @@ The Internationalization library is used to globalize number, date, and time val
 
 ### Decimal separators 
 
-The decimal separators of pivot table values varies based on the culture applied to the component. The culture can be set by calling the method [`setCulture`](https://ej2.syncfusion.com/vue/documentation/common/internationalization/#setting-global-culture) with appropriate culture string as its parameter. 
+The decimal separators of pivot table values varies based on the culture applied to the component. The culture can be set by calling the method [`setCulture`](https://ej2.syncfusion.com/vue/documentation/common/internationalization#setting-global-culture) with appropriate culture string as its parameter. 
 
 The following example demonstrates the decimal separators in `Deutsch` culture.
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/default-cs96/app-composition.vue %}
+{% include code-snippet/pivot-grid/default-cs96/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/default-cs96/app.vue %}
+{% include code-snippet/pivot-grid/default-cs96/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/default-cs96" %}
+{% previewsample "page.domainurl/code-snippet/pivot-grid/default-cs96" %}
 
 ## Localization
 
@@ -585,14 +585,14 @@ The following example demonstrates the pivot table in `Deutsch` culture.
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/default-cs97/app-composition.vue %}
+{% include code-snippet/pivot-grid/default-cs97/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/default-cs97/app.vue %}
+{% include code-snippet/pivot-grid/default-cs97/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/default-cs97" %}
+{% previewsample "page.domainurl/code-snippet/pivot-grid/default-cs97" %}
 
 ## Right-to-left (RTL)
 
@@ -600,14 +600,14 @@ RTL provides an option to switch the text direction and layout of the pivot tabl
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/default-cs98/app-composition.vue %}
+{% include code-snippet/pivot-grid/default-cs98/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/default-cs98/app.vue %}
+{% include code-snippet/pivot-grid/default-cs98/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/default-cs98" %}
+{% previewsample "page.domainurl/code-snippet/pivot-grid/default-cs98" %}
 
 ## See Also
 

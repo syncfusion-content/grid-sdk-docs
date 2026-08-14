@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Virtual Scrolling in ASP.NET Core Pivot Table component | Syncfusion
-description: Learn here all about Virtual Scrolling in Syncfusion ASP.NET Core Pivot Table component of Syncfusion Essential JS 2 and more.
-platform: grid-sdk
+title: Virtual Scrolling in ASP.NET Core Pivot Table | Syncfusion
+description: Learn how the ASP.NET Core Pivot Table renders only visible rows and columns via enableVirtualization and the VirtualScroll module for smooth scrolling.
+platform: ej2-asp-core-mvc
 control: Virtual Scrolling
-publishingplatform: grid-sdk
+publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
 <!-- markdownlint-disable MD036 -->
 
-# Virtual Scrolling in ASP.NET Core Pivot Table component
+# Virtual Scrolling in ASP.NET Core Pivot Table
 
 ## Virtual Scrolling
 
@@ -24,10 +24,10 @@ To use the virtual scrolling feature, inject the `VirtualScroll` module into the
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/virtual-scrolling/tagHelper %}
+{% include code-snippet/pivot-table/virtual-scrolling/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="VirtualScrolling.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/virtual-scrolling/VirtualScrolling.cs %}
+{% include code-snippet/pivot-table/virtual-scrolling/VirtualScrolling.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -35,10 +35,10 @@ To use the virtual scrolling feature, inject the `VirtualScroll` module into the
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/virtual-scrolling/razor %}
+{% include code-snippet/pivot-table/virtual-scrolling/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="VirtualScrolling.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/virtual-scrolling/VirtualScrolling.cs %}
+{% include code-snippet/pivot-table/virtual-scrolling/VirtualScrolling.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -57,10 +57,10 @@ To optimize performance, set the [allowSinglePage](https://help.syncfusion.com/c
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/single-page-mode/tagHelper %}
+{% include code-snippet/pivot-table/single-page-mode/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="SinglePageMode.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/single-page-mode/SinglePageMode.cs %}
+{% include code-snippet/pivot-table/single-page-mode/SinglePageMode.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -68,10 +68,10 @@ To optimize performance, set the [allowSinglePage](https://help.syncfusion.com/c
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/single-page-mode/razor %}
+{% include code-snippet/pivot-table/single-page-mode/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="SinglePageMode.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/single-page-mode/SinglePageMode.cs %}
+{% include code-snippet/pivot-table/single-page-mode/SinglePageMode.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -100,10 +100,10 @@ Here's how to make virtual scrolling work with a static field list:
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/field-list/static-fieldlist-virtualization/tagHelper %}
+{% include code-snippet/pivot-table/field-list/static-fieldlist-virtualization/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Virtualization.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/field-list/static-fieldlist-virtualization/virtualization.cs %}
+{% include code-snippet/pivot-table/field-list/static-fieldlist-virtualization/virtualization.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -111,10 +111,10 @@ Here's how to make virtual scrolling work with a static field list:
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/field-list/static-fieldlist-virtualization/razor %}
+{% include code-snippet/pivot-table/field-list/static-fieldlist-virtualization/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Virtualization.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/field-list/static-fieldlist-virtualization/virtualization.cs %}
+{% include code-snippet/pivot-table/field-list/static-fieldlist-virtualization/virtualization.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

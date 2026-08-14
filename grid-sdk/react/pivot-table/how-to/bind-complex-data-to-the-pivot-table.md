@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Complex JSON to flat JSON in React Pivotview component | Syncfusion
-description: Learn here all about how to convert complex JSON to flat JSON and assign it to the pivot table in Syncfusion React of Syncfusion Essential JS 2 and more.
-platform: grid-sdk
-control: Convert complex JSON to flat JSON and assign it to the pivot table 
+title: How to convert complex JSON to flat JSON for Pivot Table | Syncfusion
+description: Step-by-step example showing how to convert complex JSON to flat JSON in the React Pivot Table and assign it as the data source.
+platform: ej2-react
+control: Pivot Table
 documentation: ug
-domainurl: https://help.syncfusion.com/grid-sdk
+domainurl: ##DomainURL##
 ---
 
 <!-- markdownlint-disable MD009 -->
 
-# Complex JSON to flat JSON in React Pivotview component
+# How to convert complex JSON to flat JSON for Pivot Table
 
 ## Overview
 
@@ -43,7 +43,7 @@ Complex JSON contains nested objects and arrays, making it difficult to directly
 }
 ```
 
-Flat JSON has a simple key-value structure without nesting, which is suitable for pivot table binding:
+Flat JSON has a simple key-value structure without nesting, which is suitable for pivot table binding. The `complexToFlatJson` helper iterates the nested arrays (such as `OrderDetails` and `ShipDetails`) and flattens each combination into a single record, then the converted data is assigned to the Pivot Table's [`dataSource`](https://ej2.syncfusion.com/react/documentation/api/pivotview/datasourcesettings#datasource).
 
 ```json
 {
@@ -64,15 +64,15 @@ Flat JSON has a simple key-value structure without nesting, which is suitable fo
 
 You can convert complex JSON to flat JSON programmatically and bind it to the pivot table using the [`dataSource`](https://ej2.syncfusion.com/react/documentation/api/pivotview/datasourcesettings#datasource) property in the [`load`](https://ej2.syncfusion.com/react/documentation/api/pivotview/index-default#load) event.
 
-In the following example, the **complexToFlatJson()** method is used to convert complex JSON to flat JSON and bind it to the pivot table using the [`dataSource`](https://ej2.syncfusion.com/react/documentation/api/pivotview/datasourcesettings#datasource) property, then modifying the field names in the [`rows`](https://ej2.syncfusion.com/react/documentation/api/pivotview/datasourcesettingsmodel#rows) and [`columns`](https://ej2.syncfusion.com/react/documentation/api/pivotview/datasourcesettingsmodel#columns) based on the converted flat JSON under [`dataSourceSettings`](https://ej2.syncfusion.com/react/documentation/api/pivotview/index-default#datasourcesettings) in the [`load`](https://ej2.syncfusion.com/react/documentation/api/pivotview/index-default#load) event.
+In the following example, the **complexToFlatJson()** method is used to convert complex JSON to flat JSON and bind it to the pivot table using the [`dataSource`](https://ej2.syncfusion.com/react/documentation/api/pivotview/datasourcesettings#datasource) property. The field names in the [`rows`](https://ej2.syncfusion.com/react/documentation/api/pivotview/datasourcesettingsmodel#rows) and [`columns`](https://ej2.syncfusion.com/react/documentation/api/pivotview/datasourcesettingsmodel#columns) are then updated under [`dataSourceSettings`](https://ej2.syncfusion.com/react/documentation/api/pivotview/index-default#datasourcesettings) inside the [`load`](https://ej2.syncfusion.com/react/documentation/api/pivotview/index-default#load) event.
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs318/app/App.jsx %}
+{% include code-snippet/pivot-table/default-cs318/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs318/app/App.tsx %}
+{% include code-snippet/pivot-table/default-cs318/app/App.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs318" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs318" %}

@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Grouping bar in TypeScript Pivot Table component | Syncfusion
-description: Learn here all about Grouping bar in Syncfusion TypeScript Pivot Table component of Syncfusion Essential JS 2 and more.
-platform: grid-sdk
-control: Grouping bar 
-publishingplatform: grid-sdk
+title: Grouping Bar in ##Platform_Name## Pivot Table | Syncfusion
+description: Learn how the ##Platform_Name## Pivot Table shows a Grouping Bar for drag-and-drop field manipulation, with `showGroupingBar` and field-panel options.
+platform: ej2-javascript
+control: Grouping bar
+publishingplatform: ##Platform_Name##
 documentation: ug
-domainurl: https://help.syncfusion.com/grid-sdk
+domainurl: ##DomainURL##
 ---
 
-# Grouping bar in TypeScript Pivot Table component
+# Grouping Bar in ##Platform_Name## Pivot Table
 
 The Grouping Bar option in the Pivot Table automatically displays fields from the bound data source. It allows users to drag and drop fields between different axes such as columns, rows, values, and filters to create a pivot table at runtime. You can enable it by setting the [`showGroupingBar`](https://ej2.syncfusion.com/documentation/api/pivotview/index-default#showgroupingbar) property to **true**.
 
@@ -25,14 +25,14 @@ To use the grouping bar, you need to inject the `GroupingBar` module in the Pivo
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs376/index.ts %}
+{% include code-snippet/pivot-table/pivot-table-cs376/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs376/index.html %}
+{% include code-snippet/pivot-table/pivot-table-cs376/index.html %}
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs376" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs376" %}
 
 The grouping bar offers additional options to modify its appearance and behavior using the [`groupingBarSettings`](https://ej2.syncfusion.com/documentation/api/pivotview/index-default#groupingbarsettings) property.
 
@@ -44,14 +44,14 @@ To display the fields panel, set the [`showFieldsPanel`](https://ej2.syncfusion.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs377/index.ts %}
+{% include code-snippet/pivot-table/pivot-table-cs377/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs377/index.html %}
+{% include code-snippet/pivot-table/pivot-table-cs377/index.html %}
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs377" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs377" %}
 
 ## Show or hide all filter icon
 
@@ -63,14 +63,14 @@ By default, the filter icon appears next to each field in the grouping bar. If y
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs378/index.ts %}
+{% include code-snippet/pivot-table/pivot-table-cs378/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs378/index.html %}
+{% include code-snippet/pivot-table/pivot-table-cs378/index.html %}
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs378" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs378" %}
 
 ## Show or hide specific filter icon
 
@@ -80,14 +80,14 @@ In the sample below, the filter icons for the "Quarter" and "Products" fields ar
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs379/index.ts %}
+{% include code-snippet/pivot-table/pivot-table-cs379/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs379/index.html %}
+{% include code-snippet/pivot-table/pivot-table-cs379/index.html %}
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs379" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs379" %}
 
 ## Show or hide all sort icon
 
@@ -99,14 +99,14 @@ To disable the sort option, set the [`showSortIcon`](https://ej2.syncfusion.com/
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs380/index.ts %}
+{% include code-snippet/pivot-table/pivot-table-cs380/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs380/index.html %}
+{% include code-snippet/pivot-table/pivot-table-cs380/index.html %}
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs380" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs380" %}
 
 ## Show or hide specific sort icon
 
@@ -116,14 +116,14 @@ In the example below, the sort icons for the "Quarter" and "Country" fields are 
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs381/index.ts %}
+{% include code-snippet/pivot-table/pivot-table-cs381/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs381/index.html %}
+{% include code-snippet/pivot-table/pivot-table-cs381/index.html %}
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs381" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs381" %}
 
 ## Show or hide all remove icon
 
@@ -135,14 +135,14 @@ If you want to hide the remove icon, set the [`showRemoveIcon`](https://ej2.sync
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs382/index.ts %}
+{% include code-snippet/pivot-table/pivot-table-cs382/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs382/index.html %}
+{% include code-snippet/pivot-table/pivot-table-cs382/index.html %}
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs382" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs382" %}
 
 ## Show or hide a specific remove icon
 
@@ -152,14 +152,14 @@ In the example below, the remove icon for the "Year", "Sold", and "Products" fie
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs383/index.ts %}
+{% include code-snippet/pivot-table/pivot-table-cs383/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs383/index.html %}
+{% include code-snippet/pivot-table/pivot-table-cs383/index.html %}
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs383" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs383" %}
 
 ## Disable all fields from dragging
 
@@ -167,14 +167,14 @@ In the Pivot Table, the grouping bar lets users move fields between the row, col
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs384/index.ts %}
+{% include code-snippet/pivot-table/pivot-table-cs384/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs384/index.html %}
+{% include code-snippet/pivot-table/pivot-table-cs384/index.html %}
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs384" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs384" %}
 
 ## Disable specific field from dragging
 
@@ -184,14 +184,14 @@ In the example below, users cannot drag the "Year" and "Products" fields. This s
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs385/index.ts %}
+{% include code-snippet/pivot-table/pivot-table-cs385/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs385/index.html %}
+{% include code-snippet/pivot-table/pivot-table-cs385/index.html %}
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs385" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs385" %}
 
 ## Remove specific field(s) from displaying
 
@@ -203,14 +203,14 @@ To exclude specific fields, add the field names to the [`excludeFields`](https:/
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs386/index.ts %}
+{% include code-snippet/pivot-table/pivot-table-cs386/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs386/index.html %}
+{% include code-snippet/pivot-table/pivot-table-cs386/index.html %}
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs386" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs386" %}
 
 ## Changing aggregation type of value fields at runtime
 
@@ -220,14 +220,14 @@ By default, the icon for setting the aggregation type is visible in the grouping
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs387/index.ts %}
+{% include code-snippet/pivot-table/pivot-table-cs387/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs387/index.html %}
+{% include code-snippet/pivot-table/pivot-table-cs387/index.html %}
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs387" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs387" %}
 
 ## Show or hide specific dropdown icon
 
@@ -237,14 +237,14 @@ In the following example, the dropdown icon for the "Sold" field is hidden:
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs388/index.ts %}
+{% include code-snippet/pivot-table/pivot-table-cs388/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs388/index.html %}
+{% include code-snippet/pivot-table/pivot-table-cs388/index.html %}
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs388" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs388" %}
 
 > The following properties—[`showFilterIcon`](https://ej2.syncfusion.com/documentation/api/pivotview/fieldOptionsModel#showfiltericon), [`showSortIcon`](https://ej2.syncfusion.com/documentation/api/pivotview/fieldOptionsModel#showsorticon), [`showValueTypeIcon`](https://ej2.syncfusion.com/documentation/api/pivotview/fieldOptionsModel#showvaluetypeicon), and [`allowDragAndDrop`](https://ej2.syncfusion.com/documentation/api/pivotview/fieldOptionsModel#allowdraganddrop)—in the fields of [`dataSourceSettings`](https://ej2.syncfusion.com/documentation/api/pivotview/dataSourceSettings) apply to both the grouping bar and field list.
 
@@ -258,14 +258,14 @@ The **Values** button appears in the grouping bar when the [`showValuesButton`](
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs389/index.ts %}
+{% include code-snippet/pivot-table/pivot-table-cs389/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs389/index.html %}
+{% include code-snippet/pivot-table/pivot-table-cs389/index.html %}
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs389" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs389" %}
 
 ## Event
 
@@ -282,14 +282,14 @@ For example, you can use this event to change the caption of the [`droppedField`
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs390/index.ts %}
+{% include code-snippet/pivot-table/pivot-table-cs390/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs390/index.html %}
+{% include code-snippet/pivot-table/pivot-table-cs390/index.html %}
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs390" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs390" %}
 
 ### FieldDragStart
 
@@ -305,14 +305,14 @@ In the following example, the drag action is prevented only for fields placed in
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs391/index.ts %}
+{% include code-snippet/pivot-table/pivot-table-cs391/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs391/index.html %}
+{% include code-snippet/pivot-table/pivot-table-cs391/index.html %}
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs391" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs391" %}
 
 ### FieldDrop
 
@@ -330,14 +330,14 @@ In the example below, dropping any field into the "Values" axis is prevented. Th
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs392/index.ts %}
+{% include code-snippet/pivot-table/pivot-table-cs392/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs392/index.html %}
+{% include code-snippet/pivot-table/pivot-table-cs392/index.html %}
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs392" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs392" %}
 
 ### FieldRemove
 
@@ -355,14 +355,14 @@ In the following example, the field "Country" cannot be removed from the report 
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs393/index.ts %}
+{% include code-snippet/pivot-table/pivot-table-cs393/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs393/index.html %}
+{% include code-snippet/pivot-table/pivot-table-cs393/index.html %}
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs393" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs393" %}
 
 ### AggregateMenuOpen
 
@@ -379,14 +379,14 @@ In the following sample, the dropdown menu for the "Amount" field is customized 
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs394/index.ts %}
+{% include code-snippet/pivot-table/pivot-table-cs394/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs394/index.html %}
+{% include code-snippet/pivot-table/pivot-table-cs394/index.html %}
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs394" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs394" %}
 
 > The [`aggregateMenuOpen`](https://ej2.syncfusion.com/documentation/api/pivotview/index-default#aggregatemenuopen), [`fieldRemove`](https://ej2.syncfusion.com/documentation/api/pivotview/index-default#fieldremove), [`fieldDrop`](https://ej2.syncfusion.com/documentation/api/pivotview/index-default#fielddrop), [`fieldDragStart`](https://ej2.syncfusion.com/documentation/api/pivotview/index-default#fielddragstart), and [`onFieldDropped`](https://ej2.syncfusion.com/documentation/api/pivotview/index-default#onfielddropped) events are available for both the grouping bar and field list.
 
@@ -415,14 +415,14 @@ For example, in the sample below, users can restrict actions like sorting or fil
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/action-events-cs46/index.ts %}
+{% include code-snippet/pivot-table/action-events-cs46/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/action-events-cs46/index.html %}
+{% include code-snippet/pivot-table/action-events-cs46/index.html %}
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/pivot-table/action-events-cs46" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/action-events-cs46" %}
 
 ### ActionComplete
 
@@ -450,14 +450,14 @@ The event provides the following parameters:
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/action-events-cs47/index.ts %}
+{% include code-snippet/pivot-table/action-events-cs47/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/action-events-cs47/index.html %}
+{% include code-snippet/pivot-table/action-events-cs47/index.html %}
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/pivot-table/action-events-cs47" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/action-events-cs47" %}
 
 ### ActionFailure
 
@@ -481,14 +481,14 @@ When this event is triggered, users can refer to the information in these parame
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/action-events-cs48/index.ts %}
+{% include code-snippet/pivot-table/action-events-cs48/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/action-events-cs48/index.html %}
+{% include code-snippet/pivot-table/action-events-cs48/index.html %}
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/pivot-table/action-events-cs48" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/action-events-cs48" %}
 
 ## See Also
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: How to in React Pivotview component | Syncfusion
-description: Learn here all about How to in Syncfusion React Pivotview component of Syncfusion Essential JS 2 and more.
-control: How to 
-platform: grid-sdk
+title: How to in React Pivot Table | Syncfusion
+description: Explore how-to guides for the React Pivot Table covering common customization, integration, and configuration scenarios with code examples.
+control: Pivot Table
+platform: ej2-react
 documentation: ug
-domainurl: https://help.syncfusion.com/grid-sdk
+domainurl: ##DomainURL##
 ---
 
-# How to in React Pivotview component
+# How to in React Pivot Table
 
 ## Member Editor
 
@@ -24,11 +24,11 @@ In the below example, the data in the member editor limits to 100. So, the membe
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs1/app/App.jsx %}
+{% include code-snippet/pivot-table/default-cs1/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs1/app/App.tsx %}
+{% include code-snippet/pivot-table/default-cs1/app/App.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
- {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs1" %}
+ {% previewsample "page.domainurl/code-snippet/pivot-table/default-cs1" %}

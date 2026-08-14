@@ -1,12 +1,12 @@
 ---
 layout: post
 title: Chart based on pivot table selection in Javascript | Syncfusion
-description: Learn here all about Chart based on pivot table selection in Syncfusion TypeScript Pivot Table component of Syncfusion Essential JS 2 and more.
-platform: grid-sdk
+description: Learn here all about Chart based on pivot table selection in Syncfusion ##Platform_Name## Pivot Table component of Syncfusion Essential JS 2 and more.
+platform: ej2-javascript
 control: Chart based on pivot table selection 
-publishingplatform: grid-sdk
+publishingplatform: ##Platform_Name##
 documentation: ug
-domainurl: https://help.syncfusion.com/grid-sdk
+domainurl: ##DomainURL##
 ---
 
 # Chart based on pivot table selection in JavaScript Pivotview component
@@ -25,25 +25,25 @@ The [`cellSelected`](https://ej2.syncfusion.com/documentation/api/pivotview/inde
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/chart-cs1/index.ts %}
+{% include code-snippet/pivot-table/chart-cs1/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/chart-cs1/index.html %}
+{% include code-snippet/pivot-table/chart-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/pivot-table/chart-cs1" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/chart-cs1" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/chart-cs1/index.js %}
+{% include code-snippet/pivot-table/chart-cs1/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/chart-cs1/index.html %}
+{% include code-snippet/pivot-table/chart-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/pivot-table/chart-cs1" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/chart-cs1" %}
 {% endif %}

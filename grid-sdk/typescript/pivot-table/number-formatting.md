@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Number formatting in TypeScript Pivot Table component | Syncfusion
-description: Learn here all about Number formatting in Syncfusion TypeScript Pivot Table component of Syncfusion Essential JS 2 and more.
-platform: grid-sdk
-control: Number formatting 
-publishingplatform: grid-sdk
+title: Number Formatting in ##Platform_Name## Pivot Table | Syncfusion
+description: Learn how the ##Platform_Name## Pivot Table formats numeric values as Number, Currency, Percentage, or custom patterns via `formatSettings` with N, C, P codes.
+platform: ej2-javascript
+control: Number formatting
+publishingplatform: ##Platform_Name##
 documentation: ug
-domainurl: https://help.syncfusion.com/grid-sdk
+domainurl: ##DomainURL##
 ---
 
-# Number formatting in TypeScript Pivot Table component
+# Number Formatting in ##Platform_Name## Pivot Table
 
 The Pivot Table component provides comprehensive number formatting capabilities, allowing you to display numeric values in various formats. This enhances data readability and ensures values are displayed accurately to meet your specific needs.
 
@@ -48,14 +48,14 @@ Use these standard format codes to specify the formatting type:
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs403/index.ts %}
+{% include code-snippet/pivot-table/pivot-table-cs403/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs403/index.html %}
+{% include code-snippet/pivot-table/pivot-table-cs403/index.html %}
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs403" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs403" %}
 
 You can also format the values at runtime using the formatting dialog. This option can be enabled by setting the [`allowNumberFormatting`](https://ej2.syncfusion.com/documentation/api/pivotview/index-default#allownumberformatting) property to **true**. The same has been discussed in some of the upcoming topics.
 
@@ -79,14 +79,14 @@ Custom format lets you display numbers in your preferred pattern by setting the 
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs404/index.ts %}
+{% include code-snippet/pivot-table/pivot-table-cs404/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs404/index.html %}
+{% include code-snippet/pivot-table/pivot-table-cs404/index.html %}
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs404" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs404" %}
 
 ## Toolbar
 
@@ -94,14 +94,14 @@ Number formatting can be applied instantly at runtime through the built-in dialo
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs405/index.ts %}
+{% include code-snippet/pivot-table/pivot-table-cs405/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs405/index.html %}
+{% include code-snippet/pivot-table/pivot-table-cs405/index.html %}
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs405" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs405" %}
 
 ## Invoking formatting dialog through external button
 
@@ -109,14 +109,14 @@ The number formatting dialog can be opened programmatically by clicking an exter
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/number-formatting-cs3/index.ts %}
+{% include code-snippet/pivot-table/number-formatting-cs3/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/number-formatting-cs3/index.html %}
+{% include code-snippet/pivot-table/number-formatting-cs3/index.html %}
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/pivot-table/number-formatting-cs3" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/number-formatting-cs3" %}
 
 ## Events
 
@@ -134,14 +134,14 @@ The following sample demonstrates how to prevent number formatting changes for t
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/number-formatting-cs4/index.ts %}
+{% include code-snippet/pivot-table/number-formatting-cs4/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/number-formatting-cs4/index.html %}
+{% include code-snippet/pivot-table/number-formatting-cs4/index.html %}
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/pivot-table/number-formatting-cs4" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/number-formatting-cs4" %}
 
 ## See Also
 

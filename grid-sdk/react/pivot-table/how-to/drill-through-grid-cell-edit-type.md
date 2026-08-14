@@ -1,18 +1,18 @@
 ---
 layout: post
-title: Drill through grid cell edit type in React | Syncfusion
-description: Learn here all about Drill through grid cell edit type in Syncfusion React Pivotview component of Syncfusion Essential JS 2 and more.
-control: Drill through grid cell edit type 
-platform: grid-sdk
+title: How to set the drill-through edit type in Pivot Table | Syncfusion
+description: Step-by-step example showing how to set the drill-through cell edit type in the React Pivot Table using the drillThrough event.
+control: Pivot Table
+platform: ej2-react
 documentation: ug
-domainurl: https://help.syncfusion.com/grid-sdk
+domainurl: ##DomainURL##
 ---
 
-# Drill-through grid cell edit type in the React Pivot Table component
+# How to set the drill-through edit type in Pivot Table
 
 The drill-through feature in the Pivot Table allows users to view the raw data behind aggregated values by opening a detailed grid dialog. When this dialog appears, you can customize the edit behavior of specific columns to provide appropriate input controls based on their data types.
 
-Using the [`drillThrough`](https://ej2.syncfusion.com/react/documentation/api/pivotview/index-default#drillthrough) event in the Pivot Table, you can define the edit type for any column in the drill-through grid. This is accomplished by checking the column name within the event handler and setting the appropriate edit type using the [`gridColumns.editType`](https://ej2.syncfusion.com/react/documentation/api/grid/column#edittype) event argument.
+Using the [`drillThrough`](https://ej2.syncfusion.com/react/documentation/api/pivotview/index-default#drillthrough) event in the Pivot Table, you can define the edit type for any column in the drill-through grid. This is accomplished by checking the column name within the event handler and assigning the appropriate value to [`gridColumns.editType`](https://ej2.syncfusion.com/react/documentation/api/grid/column#edittype) on the column object exposed by the event arguments.
 
 ## Edit type options
 
@@ -33,17 +33,17 @@ The following example demonstrates how to set the **Country** column to use a `D
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs164/app/App.jsx %}
+{% include code-snippet/pivot-table/default-cs164/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs164/app/App.tsx %}
+{% include code-snippet/pivot-table/default-cs164/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs164/app/datasource.jsx %}
+{% include code-snippet/pivot-table/default-cs164/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs164/app/datasource.tsx %}
+{% include code-snippet/pivot-table/default-cs164/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs164" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs164" %}

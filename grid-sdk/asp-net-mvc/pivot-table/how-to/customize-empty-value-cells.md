@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Customize Empty Value Cells in ASP.NET MVC Pivot Table Component
-description: Learn here all about Customize Empty Value Cells in Syncfusion ASP.NET MVC Pivot Table component of Syncfusion Essential JS 2 and more.
-platform: grid-sdk
+title: How to Customize Empty Cells in ASP.NET MVC Pivot Table | Syncfusion
+description: Learn how to set custom text in empty ASP.NET MVC Pivot Table value cells via the EmptyCellsTextContent property under DataSourceSettings.
+platform: ej2-asp-core-mvc
 control: Customize Empty Value Cells
-publishingplatform: grid-sdk
+publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Customize empty value cells
+# How to Customize Empty Value Cells in ASP.NET MVC Pivot Table
 
 When working with pivot table, certain combinations of row and column headers may not have corresponding data values, resulting in empty cells. The ASP.NET MVC Pivot Table component allows you to display custom text in these empty cells instead of leaving them blank, thereby improving the visual presentation and enhancing the user experience of your pivot table.
 
@@ -24,10 +24,10 @@ The following example demonstrates how to configure custom text for empty value 
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/custom-cell-text/custom-cell-text/tagHelper %}
+{% include code-snippet/pivot-table/custom-cell-text/custom-cell-text/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="CustomText.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/custom-cell-text/custom-cell-text/CustomText.cs %}
+{% include code-snippet/pivot-table/custom-cell-text/custom-cell-text/CustomText.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -35,10 +35,10 @@ The following example demonstrates how to configure custom text for empty value 
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/custom-cell-text/custom-cell-text/razor %}
+{% include code-snippet/pivot-table/custom-cell-text/custom-cell-text/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="CustomText.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/custom-cell-text/custom-cell-text/CustomText.cs %}
+{% include code-snippet/pivot-table/custom-cell-text/custom-cell-text/CustomText.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

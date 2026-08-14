@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Customize empty value cells in React Pivotview component | Syncfusion
-description: Learn here all about Customize empty value cells in Syncfusion React Pivotview component of Syncfusion Essential JS 2 and more.
-control: Customize empty value cells 
-platform: grid-sdk
+title: How to customize empty value cells in React Pivot Table | Syncfusion
+description: Step-by-step example showing how to customize empty value cells in the React Pivot Table with custom text and styling.
+control: Pivot Table
+platform: ej2-react
 documentation: ug
-domainurl: https://help.syncfusion.com/grid-sdk
+domainurl: ##DomainURL##
 ---
 
-# Customize empty value cells in React Pivotview component
+# How to customize empty value cells in React Pivot Table
 
-When working with pivot table, certain combinations of row and column headers may not have corresponding data values, resulting in empty cells. The React Pivot Table component allows you to display custom text in these empty cells instead of leaving them blank, thereby improving the visual presentation and enhancing the user experience of your pivot table.
+When working with the pivot table, certain combinations of row and column headers may not have corresponding data values, resulting in empty cells. The React Pivot Table component allows you to display custom text in these empty cells instead of leaving them blank, thereby improving the visual presentation and enhancing the user experience of your pivot table.
 
 ## Configuration
 
@@ -22,11 +22,11 @@ The following example demonstrates how to configure custom text for empty value 
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs160/app/App.jsx %}
+{% include code-snippet/pivot-table/default-cs160/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs160/app/App.tsx %}
+{% include code-snippet/pivot-table/default-cs160/app/App.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs160" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs160" %}

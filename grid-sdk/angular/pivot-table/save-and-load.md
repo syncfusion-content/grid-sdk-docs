@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Save and Load Report through the Toolbar in Angular | Syncfusion
-description: Learn how to save and load reports through custom toolbar options in the Syncfusion Angular Pivotview component.
+title: Save and Load in Angular Pivot Table | Syncfusion
+description: Learn how the Angular Pivot Table saves and restores the dataSourceSettings report through custom toolbar export and import actions.
 control: Tool bar
-platform: grid-sdk
+platform: ej2-angular
 documentation: ug
-domainurl: https://help.syncfusion.com/grid-sdk
+domainurl: ##DomainURL##
 ---
 
-# Export and import reports as JSON through custom toolbar options
+# Save and Load in Angular Pivot Table
 
 The Syncfusion<sup style="font-size:70%">&reg;</sup> Pivot Table component allows users to save and restore report settings (also known as [dataSourceSettings](https://ej2.syncfusion.com/angular/documentation/api/pivotview/index-default#datasourcesettings)) through custom toolbar options. This functionality simplifies report management by allowing users to export settings as a JSON file and import them later to restore the Pivot Table configuration.
 
@@ -28,15 +28,15 @@ Here is an example demonstrating how to add **Save** and **Open** buttons to the
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/save-and-load/src/app.component.ts %}
+{% include code-snippet/pivot-grid/save-and-load/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/save-and-load/src/main.ts %}
+{% include code-snippet/pivot-grid/save-and-load/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/save-and-load" %}
+{% previewsample "page.domainurl/samples/pivot-grid/save-and-load" %}
 
  For more information and to access the quick start project, visit: [GitHub Repository](https://github.com/SyncfusionExamples/save-and-load-report-through-the-toolbar-in-angular-pivotview-component)
 

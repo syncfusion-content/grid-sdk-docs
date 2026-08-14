@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Customize Number Date And Time Values in ASP.NET Core | Syncfusion
-description: Learn here all about Customize Number Date And Time Values in Syncfusion ASP.NET Core Pivot Table component of syncfusion and more.
-platform: grid-sdk
+title: Format Number, Date, Time in ASP.NET Core Pivot Table | Syncfusion
+description: Learn how to apply number, date, and time formats to ASP.NET Core Pivot Table fields via e-formatsettings, including Intl numberFormatOptions.
+platform: ej2-asp-core-mvc
 control: Customize Number Date And Time Values
-publishingplatform: grid-sdk
+publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Customize number, date, and time values
+# How to Format Number, Date, Time in ASP.NET Core Pivot Table
 
 You can format the number, date, and time values for each field using the [`e-formatsettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewFormatSettings.html) option under [`e-datasourcesettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettingsBuilder.html). This configuration is applied during component initialization to ensure consistent data presentation across the pivot table.
 
@@ -25,10 +25,10 @@ For numeric fields, the formatting settings include the following properties:
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/formatting/number/tagHelper %}
+{% include code-snippet/pivot-table/formatting/number/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Number.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/formatting/number/Number.cs %}
+{% include code-snippet/pivot-table/formatting/number/Number.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -36,10 +36,10 @@ For numeric fields, the formatting settings include the following properties:
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/formatting/number/razor %}
+{% include code-snippet/pivot-table/formatting/number/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Number.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/formatting/number/Number.cs %}
+{% include code-snippet/pivot-table/formatting/number/Number.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -60,10 +60,10 @@ For date and time fields, the formatting settings include these properties:
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/formatting/date/tagHelper %}
+{% include code-snippet/pivot-table/formatting/date/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Date.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/formatting/date/Date.cs %}
+{% include code-snippet/pivot-table/formatting/date/Date.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -71,10 +71,10 @@ For date and time fields, the formatting settings include these properties:
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/formatting/date/razor %}
+{% include code-snippet/pivot-table/formatting/date/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Date.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/formatting/date/Date.cs %}
+{% include code-snippet/pivot-table/formatting/date/Date.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

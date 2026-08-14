@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Configuring minimum width in the ASP.NET Core | Syncfusion
-description: Learn all about configuring the minimum width in the Syncfusion ASP.NET Core Pivot Table control of syncfusion and more.
-platform: grid-sdk
+title: How to Set Minimum Width in ASP.NET Core Pivot Table | Syncfusion
+description: Learn how to set a custom minimum width on the ASP.NET Core Pivot Table via the minWidth property, with 400px default when Grouping Bar is enabled.
+platform: ej2-asp-core-mvc
 control: Configuring the minimum width in the Pivot Table control.
 documentation: ug
-publishingplatform: grid-sdk 
+publishingplatform: ##Platform_Name## 
 ---
-# Configuring minimum width in the ASP.NET Core Pivot Table control
+# How to Configure the Minimum Width in ASP.NET Core Pivot Table
 
 The ASP.NET Core Pivot Table component provides the `minWidth` property to define the minimum width threshold for the component. This configuration ensures the pivot table maintains optimal usability and prevents layout issues when the container size decreases below the specified minimum width value.
 
@@ -28,10 +28,10 @@ To customize the minimum width according to specific layout requirements, config
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/min-width/tagHelper %}
+{% include code-snippet/pivot-table/min-width/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="MinWidth.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/min-width/MinWidth.cs %}
+{% include code-snippet/pivot-table/min-width/MinWidth.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -39,10 +39,10 @@ To customize the minimum width according to specific layout requirements, config
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/min-width/razor %}
+{% include code-snippet/pivot-table/min-width/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="MinWidth.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/min-width/MinWidth.cs %}
+{% include code-snippet/pivot-table/min-width/MinWidth.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

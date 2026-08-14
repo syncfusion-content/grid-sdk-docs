@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Show Field List When Pivot Table Empty in ASP.NET MVC Pivot Table Component
-description: Learn here all about Show Field List When Pivot Table Empty in Syncfusion ASP.NET MVC Pivot Table component of syncfusion and more.
-platform: grid-sdk
+title: Show Field List when Empty in ASP.NET MVC Pivot Table | Syncfusion
+description: Learn how to auto-open the ASP.NET MVC Pivot Table's Field List when no fields are configured, via the DataBound event and the OnShowFieldList method.
+platform: ej2-asp-core-mvc
 control: Show Field List When Pivot Table Empty
-publishingplatform: grid-sdk
+publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Show field list when pivot table is empty
+# How to Show Field List when Empty in ASP.NET MVC Pivot Table
 
 When there are no fields configured in a pivot table's row, column, value, and filter axes, the field list can be automatically displayed to help users configure the pivot table. This is particularly useful in scenarios where users start with an empty pivot configuration and need immediate access to available fields for setup. To achieve this functionality, use the [`DataBound`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_DataBound) event and call the `onShowFieldList` method as demonstrated below.
 
@@ -16,10 +16,10 @@ When there are no fields configured in a pivot table's row, column, value, and f
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/summary-customization/edit-type/tagHelper %}
+{% include code-snippet/pivot-table/summary-customization/edit-type/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="EditType.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/summary-customization/edit-type/EditType.cs %}
+{% include code-snippet/pivot-table/summary-customization/edit-type/EditType.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -27,10 +27,10 @@ When there are no fields configured in a pivot table's row, column, value, and f
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/summary-customization/edit-type/razor %}
+{% include code-snippet/pivot-table/summary-customization/edit-type/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="EditType.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/summary-customization/edit-type/EditType.cs %}
+{% include code-snippet/pivot-table/summary-customization/edit-type/EditType.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

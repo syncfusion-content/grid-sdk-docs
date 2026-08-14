@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Export table and chart to PDF using toolbar in Angular | Syncfusion
-description: Learn how to export both table and chart into the same PDF document using toolbar in Syncfusion Angular Pivotview component of Essential JS 2 and more.
-platform: grid-sdk
+title: How to Export Table and Chart into the Same Document in Angular Pivot Table | Syncfusion
+description: Step-by-step example showing how to export table and chart into the same document in the Angular Pivot Table, with code snippets and property references.
+platform: ej2-angular
 control: Export table and chart into the same PDF document using toolbar.
 documentation: ug
-domainurl: https://help.syncfusion.com/grid-sdk
+domainurl: ##DomainURL##
 ---
 
-# Export table and chart into the same PDF document using toolbar
+# How to Export Table and Chart into the Same Document in Angular Pivot Table
 
 By default, when the [displayOption.view](https://ej2.syncfusion.com/angular/documentation/api/pivotview/displayoptionmodel#view) property is set to **Both** in the pivot table, the export functionality exports either the table or the chart to the PDF document based on the current value of the [displayOption.primary](https://ej2.syncfusion.com/angular/documentation/api/pivotview/displayoptionmodel#primary) property. However, to export both the table and the chart into the same PDF document simultaneously, use the [pdfExport](https://ej2.syncfusion.com/angular/documentation/api/pivotview/index-default#pdfexport) method during the [actionBegin](https://ej2.syncfusion.com/angular/documentation/api/pivotview/index-default#actionbegin) event.
 
@@ -28,12 +28,12 @@ The following example demonstrates how to restrict the built-in export action by
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs313/src/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs313/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs313/src/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs313/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs313" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs313" %}

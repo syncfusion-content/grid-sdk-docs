@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Data Binding in ASP.NET MVC Syncfusion Pivot Table
-description: Learn here all about Data Binding in Syncfusion ASP.NET MVC Pivot Table component of Syncfusion Essential JS 2 and more.
-platform: grid-sdk
+title: Data Binding in ASP.NET MVC Pivot Table | Syncfusion
+description: Learn how the ASP.NET MVC Pivot Table binds JSON, REST, CSV, and remote data sources via the DataSource property, DataManager, or a Web API controller.
+platform: ej2-asp-core-mvc
 control: Data Binding
-publishingplatform: grid-sdk
+publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Data Binding in ASP.NET MVC PivotView Component
+# Data Binding in ASP.NET MVC Pivot Table
 
 ## JSON
 
@@ -22,10 +22,10 @@ You can bind local JSON data to the Pivot Table by assigning a local variable co
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/data-binding/local-data/tagHelper %}
+{% include code-snippet/pivot-table/data-binding/local-data/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Localdata.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/data-binding/local-data/localdata.cs %}
+{% include code-snippet/pivot-table/data-binding/local-data/localdata.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -33,10 +33,10 @@ You can bind local JSON data to the Pivot Table by assigning a local variable co
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/data-binding/local-data/razor %}
+{% include code-snippet/pivot-table/data-binding/local-data/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Localdata.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/data-binding/local-data/localdata.cs %}
+{% include code-snippet/pivot-table/data-binding/local-data/localdata.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -47,10 +47,10 @@ You can also bind JSON data using the [`DataManager`](https://ej2.syncfusion.com
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/data-binding/local-json-datamanager/tagHelper %}
+{% include code-snippet/pivot-table/data-binding/local-json-datamanager/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Localjsondatamanager.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/data-binding/local-json-datamanager/localjsondatamanager.cs %}
+{% include code-snippet/pivot-table/data-binding/local-json-datamanager/localjsondatamanager.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -58,10 +58,10 @@ You can also bind JSON data using the [`DataManager`](https://ej2.syncfusion.com
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/data-binding/local-json-datamanager/razor %}
+{% include code-snippet/pivot-table/data-binding/local-json-datamanager/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Localjsondatamanager.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/data-binding/local-json-datamanager/localjsondatamanager.cs %}
+{% include code-snippet/pivot-table/data-binding/local-json-datamanager/localjsondatamanager.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -110,10 +110,10 @@ To bind remote JSON data to the Pivot Table, set the endpoint [`URL`](https://he
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/data-binding/remote-json-data/tagHelper %}
+{% include code-snippet/pivot-table/data-binding/remote-json-data/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Remotejsondata.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/data-binding/remote-json-data/remotejsondata.cs %}
+{% include code-snippet/pivot-table/data-binding/remote-json-data/remotejsondata.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -121,10 +121,10 @@ To bind remote JSON data to the Pivot Table, set the endpoint [`URL`](https://he
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/data-binding/remote-json-data/razor %}
+{% include code-snippet/pivot-table/data-binding/remote-json-data/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Remotejsondata.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/data-binding/remote-json-data/remotejsondata.cs %}
+{% include code-snippet/pivot-table/data-binding/remote-json-data/remotejsondata.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -147,10 +147,10 @@ To bind local CSV data to the Pivot Table, convert the data into a string array 
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/data-binding/local-csv-data/tagHelper %}
+{% include code-snippet/pivot-table/data-binding/local-csv-data/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Localcsvdata.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/data-binding/local-csv-data/localcsvdata.cs %}
+{% include code-snippet/pivot-table/data-binding/local-csv-data/localcsvdata.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -158,10 +158,10 @@ To bind local CSV data to the Pivot Table, convert the data into a string array 
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/data-binding/local-csv-data/razor %}
+{% include code-snippet/pivot-table/data-binding/local-csv-data/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Localcsvdata.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/data-binding/local-csv-data/localcsvdata.cs %}
+{% include code-snippet/pivot-table/data-binding/local-csv-data/localcsvdata.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -215,10 +215,10 @@ To bind remote CSV data, set the [`URL`](https://help.syncfusion.com/cr/aspnetco
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/data-binding/remote-csv-data/tagHelper %}
+{% include code-snippet/pivot-table/data-binding/remote-csv-data/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Remotecsvdata.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/data-binding/remote-csv-data/remotecsvdata.cs %}
+{% include code-snippet/pivot-table/data-binding/remote-csv-data/remotecsvdata.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -226,10 +226,10 @@ To bind remote CSV data, set the [`URL`](https://help.syncfusion.com/cr/aspnetco
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/data-binding/remote-csv-data/razor %}
+{% include code-snippet/pivot-table/data-binding/remote-csv-data/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Remotecsvdata.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/data-binding/remote-csv-data/remotecsvdata.cs %}
+{% include code-snippet/pivot-table/data-binding/remote-csv-data/remotecsvdata.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -248,10 +248,10 @@ To bind remote data, specify the endpoint `url` within [`DataManager`](https://e
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/data-binding/remote-data/tagHelper %}
+{% include code-snippet/pivot-table/data-binding/remote-data/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Remotedata.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/data-binding/remote-data/remotedata.cs %}
+{% include code-snippet/pivot-table/data-binding/remote-data/remotedata.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -259,10 +259,10 @@ To bind remote data, specify the endpoint `url` within [`DataManager`](https://e
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/data-binding/remote-data/razor %}
+{% include code-snippet/pivot-table/data-binding/remote-data/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Remotedata.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/data-binding/remote-data/remotedata.cs %}
+{% include code-snippet/pivot-table/data-binding/remote-data/remotedata.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -277,10 +277,10 @@ The following example demonstrates how to bind the Pivot Table to an OData servi
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/data-binding/odata/tagHelper %}
+{% include code-snippet/pivot-table/data-binding/odata/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Odata.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/data-binding/odata/odata.cs %}
+{% include code-snippet/pivot-table/data-binding/odata/odata.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -288,10 +288,10 @@ The following example demonstrates how to bind the Pivot Table to an OData servi
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/data-binding/odata/razor %}
+{% include code-snippet/pivot-table/data-binding/odata/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Odata.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/data-binding/odata/odata.cs %}
+{% include code-snippet/pivot-table/data-binding/odata/odata.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -304,10 +304,10 @@ OData V4 services provide enhanced query capabilities and improved performance f
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/data-binding/odatav4/tagHelper %}
+{% include code-snippet/pivot-table/data-binding/odatav4/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Odatav4.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/data-binding/odatav4/odatav4.cs %}
+{% include code-snippet/pivot-table/data-binding/odatav4/odatav4.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -315,10 +315,10 @@ OData V4 services provide enhanced query capabilities and improved performance f
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/data-binding/odatav4/razor %}
+{% include code-snippet/pivot-table/data-binding/odatav4/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Odatav4.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/data-binding/odatav4/odatav4.cs %}
+{% include code-snippet/pivot-table/data-binding/odatav4/odatav4.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -331,10 +331,10 @@ Web API binding allows you to connect the Pivot Table directly to RESTful web se
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/data-binding/webapi/tagHelper %}
+{% include code-snippet/pivot-table/data-binding/webapi/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Web-api.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/data-binding/webapi/web-api.cs %}
+{% include code-snippet/pivot-table/data-binding/webapi/web-api.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -342,10 +342,10 @@ Web API binding allows you to connect the Pivot Table directly to RESTful web se
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/data-binding/webapi/razor %}
+{% include code-snippet/pivot-table/data-binding/webapi/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Web-api.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/data-binding/webapi/web-api.cs %}
+{% include code-snippet/pivot-table/data-binding/webapi/web-api.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -360,10 +360,10 @@ The query can include operations such as filtering records based on specific con
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/data-binding/ODataAdaptor/tagHelper %}
+{% include code-snippet/pivot-table/data-binding/ODataAdaptor/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="ODataAdaptor.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/data-binding/ODataAdaptor/ODataAdaptor.cs %}
+{% include code-snippet/pivot-table/data-binding/ODataAdaptor/ODataAdaptor.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -371,10 +371,10 @@ The query can include operations such as filtering records based on specific con
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/data-binding/ODataAdaptor/razor %}
+{% include code-snippet/pivot-table/data-binding/ODataAdaptor/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="ODataAdaptor.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/data-binding/ODataAdaptor/ODataAdaptor.cs %}
+{% include code-snippet/pivot-table/data-binding/ODataAdaptor/ODataAdaptor.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -429,10 +429,10 @@ The following code sample demonstrates how to configure the visibility of field 
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/getting-start-mvc/field-mapping/tagHelper %}
+{% include code-snippet/pivot-table/getting-start-mvc/field-mapping/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Fieldmapping.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/getting-start-mvc/field-mapping/fieldmapping.cs %}
+{% include code-snippet/pivot-table/getting-start-mvc/field-mapping/fieldmapping.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -440,10 +440,10 @@ The following code sample demonstrates how to configure the visibility of field 
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/getting-start-mvc/field-mapping/razor %}
+{% include code-snippet/pivot-table/getting-start-mvc/field-mapping/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Fieldmapping.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/getting-start-mvc/field-mapping/fieldmapping.cs %}
+{% include code-snippet/pivot-table/getting-start-mvc/field-mapping/fieldmapping.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -460,10 +460,10 @@ You can display value fields in the row axis of the Pivot Table to make your dat
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/data-binding/values-in-row/tagHelper %}
+{% include code-snippet/pivot-table/data-binding/values-in-row/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Valuesinrow.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/data-binding/values-in-row/valuesinrow.cs %}
+{% include code-snippet/pivot-table/data-binding/values-in-row/valuesinrow.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -471,10 +471,10 @@ You can display value fields in the row axis of the Pivot Table to make your dat
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/data-binding/values-in-row/razor %}
+{% include code-snippet/pivot-table/data-binding/values-in-row/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Valuesinrow.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/data-binding/values-in-row/valuesinrow.cs %}
+{% include code-snippet/pivot-table/data-binding/values-in-row/valuesinrow.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -493,10 +493,10 @@ Positioning value fields at specific locations helps create more meaningful data
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/data-binding/measureatdifferentposition/tagHelper %}
+{% include code-snippet/pivot-table/data-binding/measureatdifferentposition/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Measureatdifferentposition.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/data-binding/measureatdifferentposition/measureatdifferentposition.cs %}
+{% include code-snippet/pivot-table/data-binding/measureatdifferentposition/measureatdifferentposition.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -504,10 +504,10 @@ Positioning value fields at specific locations helps create more meaningful data
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/data-binding/measureatdifferentposition/razor %}
+{% include code-snippet/pivot-table/data-binding/measureatdifferentposition/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Measureatdifferentposition.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/data-binding/measureatdifferentposition/measureatdifferentposition.cs %}
+{% include code-snippet/pivot-table/data-binding/measureatdifferentposition/measureatdifferentposition.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -525,10 +525,10 @@ In the following example, the "Country" and "State" field rows are displayed eve
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/data-binding/no-data/tagHelper %}
+{% include code-snippet/pivot-table/data-binding/no-data/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Nodata.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/data-binding/no-data/nodata.cs %}
+{% include code-snippet/pivot-table/data-binding/no-data/nodata.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -536,10 +536,10 @@ In the following example, the "Country" and "State" field rows are displayed eve
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/data-binding/no-data/razor %}
+{% include code-snippet/pivot-table/data-binding/no-data/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Nodata.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/data-binding/no-data/nodata.cs %}
+{% include code-snippet/pivot-table/data-binding/no-data/nodata.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -556,10 +556,10 @@ Ensure value headers remain visible in your Pivot Table at all times, providing 
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/data-binding/single-calculation-header/tagHelper %}
+{% include code-snippet/pivot-table/data-binding/single-calculation-header/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Single-calculation-header.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/data-binding/single-calculation-header/single-calculation-header.cs %}
+{% include code-snippet/pivot-table/data-binding/single-calculation-header/single-calculation-header.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -567,10 +567,10 @@ Ensure value headers remain visible in your Pivot Table at all times, providing 
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/data-binding/single-calculation-header/razor %}
+{% include code-snippet/pivot-table/data-binding/single-calculation-header/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Single-calculation-header.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/data-binding/single-calculation-header/single-calculation-header.cs %}
+{% include code-snippet/pivot-table/data-binding/single-calculation-header/single-calculation-header.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -587,10 +587,10 @@ Show custom text in cells that contain no data to make your Pivot Table more inf
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/data-binding/empty-cells/tagHelper %}
+{% include code-snippet/pivot-table/data-binding/empty-cells/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Empty-cells.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/data-binding/empty-cells/empty-cells.cs %}
+{% include code-snippet/pivot-table/data-binding/empty-cells/empty-cells.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -598,10 +598,10 @@ Show custom text in cells that contain no data to make your Pivot Table more inf
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/data-binding/empty-cells/razor %}
+{% include code-snippet/pivot-table/data-binding/empty-cells/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Empty-cells.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/data-binding/empty-cells/empty-cells.cs %}
+{% include code-snippet/pivot-table/data-binding/empty-cells/empty-cells.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -631,10 +631,10 @@ The load event provides the following parameters:
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/data-binding/load/tagHelper %}
+{% include code-snippet/pivot-table/data-binding/load/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Load.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/data-binding/load/load.cs %}
+{% include code-snippet/pivot-table/data-binding/load/load.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -642,10 +642,10 @@ The load event provides the following parameters:
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/data-binding/load/razor %}
+{% include code-snippet/pivot-table/data-binding/load/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Load.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/data-binding/load/load.cs %}
+{% include code-snippet/pivot-table/data-binding/load/load.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -666,10 +666,10 @@ Below is an example showing how the [`EnginePopulated`](https://help.syncfusion.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/data-binding/engine-populated/tagHelper %}
+{% include code-snippet/pivot-table/data-binding/engine-populated/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Enginepopulated.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/data-binding/engine-populated/enginepopulated.cs %}
+{% include code-snippet/pivot-table/data-binding/engine-populated/enginepopulated.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -677,10 +677,10 @@ Below is an example showing how the [`EnginePopulated`](https://help.syncfusion.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/data-binding/engine-populated/razor %}
+{% include code-snippet/pivot-table/data-binding/engine-populated/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Enginepopulated.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/data-binding/engine-populated/enginepopulated.cs %}
+{% include code-snippet/pivot-table/data-binding/engine-populated/enginepopulated.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -695,10 +695,10 @@ The [`EnginePopulating`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/data-binding/engine-populating/tagHelper %}
+{% include code-snippet/pivot-table/data-binding/engine-populating/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Enginepopulating.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/data-binding/engine-populating/enginepopulating.cs %}
+{% include code-snippet/pivot-table/data-binding/engine-populating/enginepopulating.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -706,10 +706,10 @@ The [`EnginePopulating`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/data-binding/engine-populating/razor %}
+{% include code-snippet/pivot-table/data-binding/engine-populating/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Enginepopulating.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/data-binding/engine-populating/enginepopulating.cs %}
+{% include code-snippet/pivot-table/data-binding/engine-populating/enginepopulating.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

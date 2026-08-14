@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Show tooltips for row/column headers in Angular Pivotview | Syncfusion
-description: Learn here all about Show tooltip for row and column headers in Syncfusion Angular Pivotview component of Syncfusion Essential JS 2 and more.
-platform: grid-sdk
+title: How to Show Custom Tooltip for Row/Column Headers in Angular Pivot Table | Syncfusion
+description: Step-by-step example showing how to show custom tooltip for row and column headers in the Angular Pivot Table, with code snippets and property references.
+platform: ej2-angular
 control: Show tooltip for row and column headers 
 documentation: ug
-domainurl: https://help.syncfusion.com/grid-sdk
+domainurl: ##DomainURL##
 ---
 
-# Show tooltip for row and column headers in Angular Pivotview component
+# How to Show Custom Tooltip for Row/Column Headers in Angular Pivot Table
 
 You can display custom tooltips for row and column headers to provide additional context and information. This approach enhances the user experience by showing detailed field information when hovering over header cells in the pivot table.
 
@@ -20,12 +20,12 @@ For row header tooltips, the formatted text and field name of the current row he
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs311/src/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs311/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs311/src/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs311/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs311" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs311" %}

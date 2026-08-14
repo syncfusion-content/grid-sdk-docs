@@ -1,12 +1,12 @@
 ---
 layout: post
 title: Customize number date and time values in Javascript | Syncfusion
-description: Learn here all about Customize number date and time values in Syncfusion TypeScript Pivot Table component of Syncfusion Essential JS 2 and more.
-platform: grid-sdk
+description: Learn here all about Customize number date and time values in Syncfusion ##Platform_Name## Pivot Table component of Syncfusion Essential JS 2 and more.
+platform: ej2-javascript
 control: Customize number date and time values 
-publishingplatform: grid-sdk
+publishingplatform: ##Platform_Name##
 documentation: ug
-domainurl: https://help.syncfusion.com/grid-sdk
+domainurl: ##DomainURL##
 ---
 
 # Customize number, date, and time values in JavaScript Pivot Table
@@ -26,27 +26,27 @@ For numeric fields, the formatting settings include the following properties:
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs75/index.ts %}
+{% include code-snippet/pivot-table/pivot-table-cs75/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs75/index.html %}
+{% include code-snippet/pivot-table/pivot-table-cs75/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs75" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs75" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs75/index.js %}
+{% include code-snippet/pivot-table/pivot-table-cs75/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs75/index.html %}
+{% include code-snippet/pivot-table/pivot-table-cs75/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs75" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs75" %}
 {% endif %}
 
 ## Date and Time formatting
@@ -63,27 +63,27 @@ For date and time fields, the formatting settings include these properties:
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs76/index.ts %}
+{% include code-snippet/pivot-table/pivot-table-cs76/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs76/index.html %}
+{% include code-snippet/pivot-table/pivot-table-cs76/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs76" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs76" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs76/index.js %}
+{% include code-snippet/pivot-table/pivot-table-cs76/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs76/index.html %}
+{% include code-snippet/pivot-table/pivot-table-cs76/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs76" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs76" %}
 {% endif %}
 
 ## Limitations of date formatting

@@ -1,33 +1,33 @@
 ---
 layout: post
-title: Tool tip in React Pivotview component | Syncfusion
-description: Learn here all about Tool tip in Syncfusion React Pivotview component of Syncfusion Essential JS 2 and more.
-control: Tool tip 
-platform: grid-sdk
+title: Tooltip in React Pivot Table | Syncfusion
+description: Learn how the React Pivot Table shows contextual tooltips on value cells and headers, with the showTooltip property to enable or disable them.
+control: Pivot Table
+platform: ej2-react
 documentation: ug
-domainurl: https://help.syncfusion.com/grid-sdk
+domainurl: ##DomainURL##
 ---
 
-# Tooltip in React Pivot Table Component
+# Tooltip in React Pivot Table
 
 The tooltip displays contextual information when users hover over value cells in the pivot table. It can be enabled or disabled by setting the [`showTooltip`](https://ej2.syncfusion.com/react/documentation/api/pivotview/#showtooltip) property to **true** or **false**. By default, tooltip is enabled in the pivot table and shows the cell value along with row and column header information.
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs305/app/App.jsx %}
+{% include code-snippet/pivot-table/default-cs305/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs305/app/App.tsx %}
+{% include code-snippet/pivot-table/default-cs305/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs305/app/datasource.jsx %}
+{% include code-snippet/pivot-table/default-cs305/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs305/app/datasource.tsx %}
+{% include code-snippet/pivot-table/default-cs305/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs305" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs305" %}
 
 ## Tooltip Template
 
@@ -47,20 +47,20 @@ The example below shows how to define the Pivot Table tooltip template in `index
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/tooltipTemplate-cs1/app/App.jsx %}
+{% include code-snippet/pivot-table/tooltipTemplate-cs1/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/tooltipTemplate-cs1/app/App.tsx %}
+{% include code-snippet/pivot-table/tooltipTemplate-cs1/app/App.tsx %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/react/pivot-table/tooltipTemplate-cs1/index.html %}
+{% include code-snippet/pivot-table/tooltipTemplate-cs1/index.html %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/tooltipTemplate-cs1/app/datasource.jsx %}
+{% include code-snippet/pivot-table/tooltipTemplate-cs1/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/tooltipTemplate-cs1/app/datasource.tsx %}
+{% include code-snippet/pivot-table/tooltipTemplate-cs1/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/tooltipTemplate-cs1" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/tooltipTemplate-cs1" %}

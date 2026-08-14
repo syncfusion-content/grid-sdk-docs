@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Accessibility in React Pivotview component | Syncfusion
-description: Learn here all about Accessibility in Syncfusion React Pivotview component of Syncfusion Essential JS 2 and more.
-control: Accessibility 
-platform: grid-sdk
+title: Accessibility in React Pivot Table | Syncfusion
+description: Learn how the React Pivot Table supports WAI-ARIA roles, keyboard navigation, and screen reader support that align with WCAG 2.2 and Section 508 guidelines.
+control: Pivot Table
+platform: ej2-react
 documentation: ug
-domainurl: https://help.syncfusion.com/grid-sdk
+domainurl: ##DomainURL##
 ---
 
-# Accessibility in React Pivotview component
+# Accessibility in React Pivot Table
 
 The pivot table component followed the accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) that are commonly used to evaluate accessibility.
 
@@ -257,14 +257,14 @@ The accessibility compliance of the pivot table component is shown in the follow
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/accessibility/app/App.jsx %}
+{% include code-snippet/pivot-table/accessibility/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/accessibility/app/App.tsx %}
+{% include code-snippet/pivot-table/accessibility/app/App.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/accessibility" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/accessibility" %}
 
 ## See Also
 

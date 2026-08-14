@@ -1,28 +1,28 @@
 ---
 layout: post
-title: Tool tip in TypeScript Pivot Table component | Syncfusion
-description: Learn here all about Tool tip in Syncfusion TypeScript Pivot Table component of Syncfusion Essential JS 2 and more.
-platform: grid-sdk
-control: Tool tip 
-publishingplatform: grid-sdk
+title: Tool Tip in ##Platform_Name## Pivot Table | Syncfusion
+description: Learn how the ##Platform_Name## Pivot Table shows contextual cell tooltips on hover via `showTooltip`, with `tooltipTemplate` for custom HTML using placeholders.
+platform: ej2-javascript
+control: Tool tip
+publishingplatform: ##Platform_Name##
 documentation: ug
-domainurl: https://help.syncfusion.com/grid-sdk
+domainurl: ##DomainURL##
 ---
 
-# Tool tip in TypeScript Pivot Table component
+# Tool Tip in ##Platform_Name## Pivot Table
 
 The tooltip displays contextual information when users hover over value cells in the pivot table. It can be enabled or disabled by setting the [`showTooltip`](https://ej2.syncfusion.com/documentation/api/pivotview/index-default#showtooltip) property to **true** or **false**. By default, tooltip is enabled in the pivot table and shows the cell value along with row and column header information.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs484/index.ts %}
+{% include code-snippet/pivot-table/pivot-table-cs484/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs484/index.html %}
+{% include code-snippet/pivot-table/pivot-table-cs484/index.html %}
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs484" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs484" %}
 
 ## Tooltip Template
 
@@ -42,11 +42,11 @@ The example below shows how to define the Pivot Table tooltip template in `index
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/tooltip-template-cs2/index.ts %}
+{% include code-snippet/pivot-table/tooltip-template-cs2/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/tooltip-template-cs2/index.html %}
+{% include code-snippet/pivot-table/tooltip-template-cs2/index.html %}
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/pivot-table/tooltip-template-cs2" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/tooltip-template-cs2" %}

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Print in React Pivotview component | Syncfusion
-description: Learn here all about Print in Syncfusion React Pivotview component of Syncfusion Essential JS 2 and more.
-platform: grid-sdk
-control: Print 
+title: Print in React Pivot Table | Syncfusion
+description: Learn how the React Pivot Table prints pivot table and pivot chart content directly from the browser with options to control the print layout.
+platform: ej2-react
+control: Pivot Table
 documentation: ug
-domainurl: https://help.syncfusion.com/grid-sdk
+domainurl: ##DomainURL##
 ---
 
-# Print in React Pivotview component
+# Print in React Pivot Table
 
 The React Pivot Table component supports print functionality, allowing users to print the current state of the pivot table or pivot chart. This feature enables users to generate hard copies of pivot table reports for convenient review and data sharing.
 
@@ -18,20 +18,20 @@ The rendered pivot table can be printed by invoking the [print](https://ej2.sync
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs320/app/App.jsx %}
+{% include code-snippet/pivot-table/default-cs320/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs320/app/App.tsx %}
+{% include code-snippet/pivot-table/default-cs320/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs320/app/datasource.jsx %}
+{% include code-snippet/pivot-table/default-cs320/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs320/app/datasource.tsx %}
+{% include code-snippet/pivot-table/default-cs320/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs320" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs320" %}
 
 ## Print pivot chart
 
@@ -45,20 +45,20 @@ The sample code below illustrates how to print the pivot chart through an extern
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs321/app/App.jsx %}
+{% include code-snippet/pivot-table/default-cs321/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs321/app/App.tsx %}
+{% include code-snippet/pivot-table/default-cs321/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs321/app/datasource.jsx %}
+{% include code-snippet/pivot-table/default-cs321/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs321/app/datasource.tsx %}
+{% include code-snippet/pivot-table/default-cs321/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs321" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs321" %}
 
 ## See Also
 

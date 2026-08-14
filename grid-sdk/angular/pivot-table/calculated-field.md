@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Calculated field in Angular Pivotview component | Syncfusion
-description: Learn here all about Calculated field in Syncfusion Angular Pivotview component of Syncfusion Essential JS 2 and more.
-platform: grid-sdk
+title: Calculated Field in Angular Pivot Table | Syncfusion
+description: Learn how the Angular Pivot Table creates calculated fields using arithmetic operators, the calculatedFieldSettings dialog, and the onClick event.
+platform: ej2-angular
 control: Calculated field 
 documentation: ug
-domainurl: https://help.syncfusion.com/grid-sdk
+domainurl: ##DomainURL##
 ---
 
-# Calculated field in Angular Pivotview component
+# Calculated Field in Angular Pivot Table
 
 The calculated field feature enables users to create custom value fields using mathematical formulas and existing fields from their data source. Users can perform complex calculations with basic arithmetic operators and seamlessly integrate these custom fields into their pivot table for enhanced data visualization and reporting.
 
@@ -34,15 +34,15 @@ To use the calculated field feature, you must inject the `CalculatedFieldService
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs9/src/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs9/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs9/src/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs9/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs9" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs9" %}
 
 ## Opening the calculated field dialog programmatically
 
@@ -50,15 +50,15 @@ You can display the calculated field dialog by calling the `createCalculatedFiel
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs10/src/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs10/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs10/src/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs10/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs10" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs10" %}
 
 ## Editing through the field list and grouping bar
 
@@ -72,10 +72,10 @@ To edit an existing calculated field:
 4. Make changes to the field name, formula, or format as needed.
 5. Click **OK** to apply the changes.
 
-![Editing the calculated field](images/calculatdfield-grouping-edit1.png)
+![Editing the calculated field](../images/calculatdfield-grouping-edit1.png)
 <br/>
 
-![Editing the calculated field formula](images/calculatdfield-grouping-edit2.png)
+![Editing the calculated field formula](../images/calculatdfield-grouping-edit2.png)
 
 ## Renaming an existing calculated field
 
@@ -89,10 +89,10 @@ To rename a calculated field:
 4. Replace the existing name with your preferred name.
 5. Click **OK** to save the new name.
 
-![Editing the calculated field](images/calculatdfield-renaming1.png)
+![Editing the calculated field](../images/calculatdfield-renaming1.png)
 <br/>
 
-![Renaming the calculated field](images/calculatdfield-renaming2.png)
+![Renaming the calculated field](../images/calculatdfield-renaming2.png)
 
 ## Editing an existing calculated field formula
 
@@ -109,10 +109,10 @@ To edit an existing calculated field formula:
 
 The pivot table will automatically refresh to reflect the updated calculations.
 
-![Editing the calculated field](images/calculatdfield-field-edit1.png)
+![Editing the calculated field](../images/calculatdfield-field-edit1.png)
 <br/>
 
-![Editing the calculated field formula](images/calculatdfield-field-edit2.png)
+![Editing the calculated field formula](../images/calculatdfield-field-edit2.png)
 
 ## Reusing an existing formula in a new calculated field
 
@@ -128,13 +128,13 @@ To reuse an existing formula:
 6. Modify the formula further if needed, or use it as is.
 7. Click **OK** to create the new calculated field.
 
-![Dragging the existing calculated field](images/calculatdfield-reusing1.png)
+![Dragging the existing calculated field](../images/calculatdfield-reusing1.png)
 <br/>
 
-![Dragging field to formula](images/calculatdfield-reusing2.png)
+![Dragging field to formula](../images/calculatdfield-reusing2.png)
 <br/>
 
-![Reusing the existing calculated field formula](images/calculatdfield-reusing3.png)
+![Reusing the existing calculated field formula](../images/calculatdfield-reusing3.png)
 
 ## Applying formatting to calculated field values
 
@@ -154,13 +154,13 @@ To apply formatting to calculated field values via the user interface, use the b
 
 > **Note:** By default, **None** is selected in the dropdown.
 
-![Applying format through calculated field dialog UI](images/calculatdfield-formatstring.png)
+![Applying format through calculated field dialog UI](../images/calculatdfield-formatstring.png)
 
 ### Applying custom formatting
 
 For specific formatting requirements, select the **Custom** option from the "Format" dropdown. This allows you to enter custom format patterns that meet your exact display needs.
 
-![Applying custom format through calculated field dialog UI](images/calculatdfield-applyFormate.png)
+![Applying custom format through calculated field dialog UI](../images/calculatdfield-applyFormate.png)
 
 ## Supported operators and functions for the calculated field formula
 
@@ -284,15 +284,15 @@ Below is a list of operators and functions that can be used in the formula to cr
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs11/src/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs11/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs11/src/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs11/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs11" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs11" %}
 
 ## Event
 
@@ -320,15 +320,15 @@ The following example shows how to prevent users from creating calculated fields
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs12/src/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs12/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs12/src/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs12/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs12" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs12" %}
 
 ### ActionBegin
 
@@ -365,15 +365,15 @@ The example below illustrates how to prevent access to the calculated field dial
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs13/src/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs13/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs13/src/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs13/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs13" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs13" %}
 
 ### ActionComplete
 
@@ -404,15 +404,15 @@ The example below demonstrates how to use the [`actionComplete`](https://ej2.syn
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs14/src/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs14/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs14/src/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs14/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs14" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs14" %}
 
 ### ActionFailure
 
@@ -430,12 +430,12 @@ The [`actionFailure`](https://ej2.syncfusion.com/angular/documentation/api/pivot
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs15/src/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs15/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs15/src/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs15/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs15" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs15" %}

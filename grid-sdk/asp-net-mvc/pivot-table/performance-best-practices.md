@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Performance tips for ASP.NET MVC Pivot Table component | Syncfusion
-description: Checkout and learn here all about best practices to improve the performance of the Syncfusion ASP.NET MVC Pivot Table component and much more.
-platform: grid-sdk
+title: Performance Best Practices in ASP.NET MVC Pivot Table | Syncfusion
+description: Learn how to improve the ASP.NET MVC Pivot Table's loading performance with virtual scrolling, paging, server-side engine, and data compression.
+platform: ej2-asp-core-mvc
 control: Performance best practices
-publishingplatform: grid-sdk
+publishingplatform: ##Platform_Name##
 documentation: ug
-domainurl: https://help.syncfusion.com/grid-sdk
+domainurl: ##DomainURL##
 ---
 
-# Best practices to improve the performance of the Pivot Table
+# Performance Best Practices in ASP.NET MVC Pivot Table
 
 Performance optimization is crucial when working with large datasets in the [ASP.NET MVC Pivot Table](https://www.syncfusion.com/aspnet-mvc-ui-controls/pivot-table). This documentation provides some best practices to empower your data analysis and enhance the user experience.
 
@@ -85,10 +85,10 @@ It obviously impacts the overall performance during Pivot Table rendering becaus
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/performance-best-practices/performance-best-practices-cs1/tagHelper %}
+{% include code-snippet/pivot-table/performance-best-practices/performance-best-practices-cs1/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Performance-best-practices1.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/performance-best-practices/performance-best-practices-cs1/Performance-best-practices1.cs %}
+{% include code-snippet/pivot-table/performance-best-practices/performance-best-practices-cs1/Performance-best-practices1.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -96,10 +96,10 @@ It obviously impacts the overall performance during Pivot Table rendering becaus
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/performance-best-practices/performance-best-practices-cs1/razor %}
+{% include code-snippet/pivot-table/performance-best-practices/performance-best-practices-cs1/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Performance-best-practices1.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/performance-best-practices/performance-best-practices-cs1/Performance-best-practices1.cs %}
+{% include code-snippet/pivot-table/performance-best-practices/performance-best-practices-cs1/Performance-best-practices1.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -112,10 +112,10 @@ Here's an example below of configuring grouping in your input raw data and assig
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/performance-best-practices/performance-best-practices-cs2/tagHelper %}
+{% include code-snippet/pivot-table/performance-best-practices/performance-best-practices-cs2/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Performance-best-practices2.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/performance-best-practices/performance-best-practices-cs2/Performance-best-practices2.cs %}
+{% include code-snippet/pivot-table/performance-best-practices/performance-best-practices-cs2/Performance-best-practices2.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -123,10 +123,10 @@ Here's an example below of configuring grouping in your input raw data and assig
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/performance-best-practices/performance-best-practices-cs2/razor %}
+{% include code-snippet/pivot-table/performance-best-practices/performance-best-practices-cs2/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Performance-best-practices2.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/performance-best-practices/performance-best-practices-cs2/Performance-best-practices2.cs %}
+{% include code-snippet/pivot-table/performance-best-practices/performance-best-practices-cs2/Performance-best-practices2.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

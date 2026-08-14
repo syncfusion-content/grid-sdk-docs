@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Pivot Chart in React Pivot Table Component | Syncfusion
-description: Learn here all about Pivot Chart in Syncfusion React Pivot Table component of Syncfusion Essential JS 2 and more.
-platform: grid-sdk
-control: Pivot Chart
+title: Pivot Chart in React Pivot Table | Syncfusion
+description: Learn how the React Pivot Table visualizes aggregated values with a Pivot Chart that supports bar, line, pie, and other chart types, with drill and export.
+platform: ej2-react
+control: Pivot Table
 documentation: ug
-domainurl: https://help.syncfusion.com/grid-sdk
+domainurl: ##DomainURL##
 ---
 
-# Pivot Chart in React Pivot Table Component
+# Pivot Chart in React Pivot Table
 
 The Pivot Chart in the Syncfusion React Pivot Table component helps users visualize aggregated values in a clear and graphical format. It provides essential options like drill down and drill up operations, over 15 chart types, and various display settings for series, axes, legends, export, print, and tooltips. The main purpose of the Pivot Chart is to present Pivot Table data in a way that is easy to understand and interact with.
 
@@ -23,20 +23,20 @@ The following sample shows the pivot chart component based on the pivot report b
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs222/app/App.jsx %}
+{% include code-snippet/pivot-table/default-cs222/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs222/app/App.tsx %}
+{% include code-snippet/pivot-table/default-cs222/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs222/app/datasource.jsx %}
+{% include code-snippet/pivot-table/default-cs222/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs222/app/datasource.tsx %}
+{% include code-snippet/pivot-table/default-cs222/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs222" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs222" %}
 
 ## Data Binding
 
@@ -74,20 +74,20 @@ For example, to display a **Bar** chart, set the chart type to 'Bar' within the 
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs223/app/App.jsx %}
+{% include code-snippet/pivot-table/default-cs223/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs223/app/App.tsx %}
+{% include code-snippet/pivot-table/default-cs223/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs223/app/datasource.jsx %}
+{% include code-snippet/pivot-table/default-cs223/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs223/app/datasource.tsx %}
+{% include code-snippet/pivot-table/default-cs223/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs223" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs223" %}
 
 ## Accumulation Charts
 
@@ -104,20 +104,20 @@ In the code example below, the **Pie** chart is displayed by default. You can sw
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs224/app/App.jsx %}
+{% include code-snippet/pivot-table/default-cs224/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs224/app/App.tsx %}
+{% include code-snippet/pivot-table/default-cs224/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs224/app/datasource.jsx %}
+{% include code-snippet/pivot-table/default-cs224/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs224/app/datasource.tsx %}
+{% include code-snippet/pivot-table/default-cs224/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs224" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs224" %}
 
 ### Drill down and up
 
@@ -131,20 +131,20 @@ In accumulation charts, you can use the drill down and drill up options to explo
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs225/app/App.jsx %}
+{% include code-snippet/pivot-table/default-cs225/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs225/app/App.tsx %}
+{% include code-snippet/pivot-table/default-cs225/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs225/app/datasource.jsx %}
+{% include code-snippet/pivot-table/default-cs225/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs225/app/datasource.tsx %}
+{% include code-snippet/pivot-table/default-cs225/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs225" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs225" %}
 
 ![output](images/expand_collapse.png)
 
@@ -156,20 +156,20 @@ If the column has more than one header, enter all the headers separated by a del
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs226/app/App.jsx %}
+{% include code-snippet/pivot-table/default-cs226/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs226/app/App.tsx %}
+{% include code-snippet/pivot-table/default-cs226/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs226/app/datasource.jsx %}
+{% include code-snippet/pivot-table/default-cs226/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs226/app/datasource.tsx %}
+{% include code-snippet/pivot-table/default-cs226/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs226" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs226" %}
 
 ### Label Customization
 
@@ -186,39 +186,39 @@ In the following code sample, the data labels are placed inside the chart points
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs227/app/App.jsx %}
+{% include code-snippet/pivot-table/default-cs227/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs227/app/App.tsx %}
+{% include code-snippet/pivot-table/default-cs227/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs227/app/datasource.jsx %}
+{% include code-snippet/pivot-table/default-cs227/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs227/app/datasource.tsx %}
+{% include code-snippet/pivot-table/default-cs227/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs227" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs227" %}
 
 The **Connector Line** appears when data labels are positioned outside the chart. You can style this connector line using the [`connectorStyle`](https://ej2.syncfusion.com/react/documentation/api/pivotview/pivotChartDataLabelModel/#connectorstyle) property in [`dataLabel`](https://ej2.syncfusion.com/react/documentation/api/pivotview/pivotSeriesModel/#datalabel) to modify its color, length, width, and other properties. In the example below, the connector line appearance is changed to show a different style.
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs228/app/App.jsx %}
+{% include code-snippet/pivot-table/default-cs228/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs228/app/App.tsx %}
+{% include code-snippet/pivot-table/default-cs228/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs228/app/datasource.jsx %}
+{% include code-snippet/pivot-table/default-cs228/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs228/app/datasource.tsx %}
+{% include code-snippet/pivot-table/default-cs228/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs228" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs228" %}
 
 ### Pie and Doughnut Customization
 
@@ -226,20 +226,20 @@ You can draw pie and doughnut charts within a specific range by using the [`star
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs229/app/App.jsx %}
+{% include code-snippet/pivot-table/default-cs229/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs229/app/App.tsx %}
+{% include code-snippet/pivot-table/default-cs229/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs229/app/datasource.jsx %}
+{% include code-snippet/pivot-table/default-cs229/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs229/app/datasource.tsx %}
+{% include code-snippet/pivot-table/default-cs229/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs229" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs229" %}
 
 You can convert a pie chart to a doughnut chart and vice-versa using the [`innerRadius`](https://ej2.syncfusion.com/react/documentation/api/pivotview/pivotSeriesModel/#innerradius) property in the [`chartSeries`](https://ej2.syncfusion.com/react/documentation/api/pivotview/pivotSeriesModel/) configuration. When this property is set to a value greater than **0** percent, the chart appears as a doughnut instead of a pie chart.
 
@@ -247,20 +247,20 @@ You can convert a pie chart to a doughnut chart and vice-versa using the [`inner
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs230/app/App.jsx %}
+{% include code-snippet/pivot-table/default-cs230/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs230/app/App.tsx %}
+{% include code-snippet/pivot-table/default-cs230/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs230/app/datasource.jsx %}
+{% include code-snippet/pivot-table/default-cs230/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs230/app/datasource.tsx %}
+{% include code-snippet/pivot-table/default-cs230/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs230" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs230" %}
 
 ### Exploding Series Points
 
@@ -268,20 +268,20 @@ You can make an individual point in a pivot chart stand out by enabling the expl
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs231/app/App.jsx %}
+{% include code-snippet/pivot-table/default-cs231/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs231/app/App.tsx %}
+{% include code-snippet/pivot-table/default-cs231/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs231/app/datasource.jsx %}
+{% include code-snippet/pivot-table/default-cs231/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs231/app/datasource.tsx %}
+{% include code-snippet/pivot-table/default-cs231/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs231" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs231" %}
 
 ## Field List
 
@@ -291,20 +291,20 @@ The sample below demonstrates the field list shown in `Popup` mode within the pi
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs232/app/App.jsx %}
+{% include code-snippet/pivot-table/default-cs232/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs232/app/App.tsx %}
+{% include code-snippet/pivot-table/default-cs232/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs232/app/datasource.jsx %}
+{% include code-snippet/pivot-table/default-cs232/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs232/app/datasource.tsx %}
+{% include code-snippet/pivot-table/default-cs232/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs232" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs232" %}
 
 ## Grouping Bar
 
@@ -314,39 +314,39 @@ You can display the grouping bar in the Pivot Chart by setting the [`showGroupin
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs233/app/App.jsx %}
+{% include code-snippet/pivot-table/default-cs233/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs233/app/App.tsx %}
+{% include code-snippet/pivot-table/default-cs233/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs233/app/datasource.jsx %}
+{% include code-snippet/pivot-table/default-cs233/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs233/app/datasource.tsx %}
+{% include code-snippet/pivot-table/default-cs233/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs233" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs233" %}
 
 When using accumulation charts, the drop-down list appears on the column axis. This list contains the column headers available in the Pivot Chart. Users can switch column headers using this drop-down, and the accumulation chart will update with the selected header.
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs234/app/App.jsx %}
+{% include code-snippet/pivot-table/default-cs234/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs234/app/App.tsx %}
+{% include code-snippet/pivot-table/default-cs234/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs234/app/datasource.jsx %}
+{% include code-snippet/pivot-table/default-cs234/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs234/app/datasource.tsx %}
+{% include code-snippet/pivot-table/default-cs234/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs234" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs234" %}
 
 ## Single Axis
 
@@ -354,20 +354,20 @@ By default, the pivot chart uses the first value field (measure) from your repor
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs235/app/App.jsx %}
+{% include code-snippet/pivot-table/default-cs235/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs235/app/App.tsx %}
+{% include code-snippet/pivot-table/default-cs235/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs235/app/datasource.jsx %}
+{% include code-snippet/pivot-table/default-cs235/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs235/app/datasource.tsx %}
+{% include code-snippet/pivot-table/default-cs235/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs235" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs235" %}
 
 ## Multiple Axis
 
@@ -377,39 +377,39 @@ The pivot chart can be drawn with multiple value fields by setting the [`enableM
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs236/app/App.jsx %}
+{% include code-snippet/pivot-table/default-cs236/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs236/app/App.tsx %}
+{% include code-snippet/pivot-table/default-cs236/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs236/app/datasource.jsx %}
+{% include code-snippet/pivot-table/default-cs236/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs236/app/datasource.tsx %}
+{% include code-snippet/pivot-table/default-cs236/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs236" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs236" %}
 
 When binding more value fields, the result displays multiple pivot charts, with each chart shrinking within the parent container height. To prevent this behavior, set the [`enableScrollOnMultiAxis`](https://ej2.syncfusion.com/react/documentation/api/pivotview/chartSettings/#enablescrollonmultiaxis) property to **true** in the [`chartSettings`](https://ej2.syncfusion.com/react/documentation/api/pivotview/chartSettings/). This ensures each pivot chart maintains a minimum height of "160px" to "180px" and displays a vertical scroll bar for better visibility.
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs237/app/App.jsx %}
+{% include code-snippet/pivot-table/default-cs237/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs237/app/App.tsx %}
+{% include code-snippet/pivot-table/default-cs237/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs237/app/datasource.jsx %}
+{% include code-snippet/pivot-table/default-cs237/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs237/app/datasource.tsx %}
+{% include code-snippet/pivot-table/default-cs237/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs237" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs237" %}
 
 Alternatively, you can display multiple values in a single chart. In this approach, the series from multiple values are grouped and displayed together. Based on the values, multiple Y-axis scales are created with different ranges. This can be achieved by setting [`enableMultipleAxis`](https://ej2.syncfusion.com/react/documentation/api/pivotview/chartSettings/#enablemultipleaxis) to **true** and [`multipleAxisMode`](https://ej2.syncfusion.com/react/documentation/api/pivotview/chartSettings/#multipleaxismode) to `Single` in the [`chartSettings`](https://ej2.syncfusion.com/react/documentation/api/pivotview/chartSettings/).
 
@@ -417,20 +417,20 @@ In the following code sample, the pivot chart appears as a single chart with mul
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs238/app/App.jsx %}
+{% include code-snippet/pivot-table/default-cs238/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs238/app/App.tsx %}
+{% include code-snippet/pivot-table/default-cs238/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs238/app/datasource.jsx %}
+{% include code-snippet/pivot-table/default-cs238/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs238/app/datasource.tsx %}
+{% include code-snippet/pivot-table/default-cs238/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs238" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs238" %}
 
 ### Show point color based on members
 
@@ -440,20 +440,20 @@ In addition, users can show or hide specific members from all measures in the ch
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs239/app/App.jsx %}
+{% include code-snippet/pivot-table/default-cs239/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs239/app/App.tsx %}
+{% include code-snippet/pivot-table/default-cs239/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs239/app/datasource.jsx %}
+{% include code-snippet/pivot-table/default-cs239/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs239/app/datasource.tsx %}
+{% include code-snippet/pivot-table/default-cs239/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs239" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs239" %}
 
 ## Series customization
 
@@ -461,20 +461,20 @@ You can customize the series in the pivot chart by using the [`chartSeries`](htt
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs240/app/App.jsx %}
+{% include code-snippet/pivot-table/default-cs240/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs240/app/App.tsx %}
+{% include code-snippet/pivot-table/default-cs240/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs240/app/datasource.jsx %}
+{% include code-snippet/pivot-table/default-cs240/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs240/app/datasource.tsx %}
+{% include code-snippet/pivot-table/default-cs240/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs240" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs240" %}
 
 If you want to change each series separately, use the [`chartSeriesCreated`](https://ej2.syncfusion.com/react/documentation/api/pivotview/pivotViewModel/#chartseriescreated) event. This event happens after the pivot chart series are created, making it possible to work with each series one at a time.
 
@@ -482,20 +482,20 @@ The sample below shows how you can hide every even-numbered series in the pivot 
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs241/app/App.jsx %}
+{% include code-snippet/pivot-table/default-cs241/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs241/app/App.tsx %}
+{% include code-snippet/pivot-table/default-cs241/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs241/app/datasource.jsx %}
+{% include code-snippet/pivot-table/default-cs241/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs241/app/datasource.tsx %}
+{% include code-snippet/pivot-table/default-cs241/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs241" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs241" %}
 
 ## Axis Customization
 
@@ -507,20 +507,20 @@ For example, in the sample below, the titles for the y-axis and x-axis are set t
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs242/app/App.jsx %}
+{% include code-snippet/pivot-table/default-cs242/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs242/app/App.tsx %}
+{% include code-snippet/pivot-table/default-cs242/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs242/app/datasource.jsx %}
+{% include code-snippet/pivot-table/default-cs242/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs242/app/datasource.tsx %}
+{% include code-snippet/pivot-table/default-cs242/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs242" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs242" %}
 
 Users can also modify multi-level labels on the primary x-axis by using the [`multiLevelLabelRender`](https://ej2.syncfusion.com/react/documentation/api/pivotview/chartSettingsModel/#multilevellabelrender) event in [`chartSettings`](https://ej2.syncfusion.com/react/documentation/api/pivotview/chartSettings/). This event is triggered whenever a multi-level label is rendered on the chart. The event provides the following options:
 
@@ -533,20 +533,20 @@ The example below shows how to update the text and style for multi-level labels 
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs243/app/App.jsx %}
+{% include code-snippet/pivot-table/default-cs243/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs243/app/App.tsx %}
+{% include code-snippet/pivot-table/default-cs243/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs243/app/datasource.jsx %}
+{% include code-snippet/pivot-table/default-cs243/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs243/app/datasource.tsx %}
+{% include code-snippet/pivot-table/default-cs243/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs243" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs243" %}
 
 ## Legend customization
 
@@ -582,20 +582,20 @@ In the following code example, you can see how to set a different legend shape a
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs244/app/App.jsx %}
+{% include code-snippet/pivot-table/default-cs244/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs244/app/App.tsx %}
+{% include code-snippet/pivot-table/default-cs244/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs244/app/datasource.jsx %}
+{% include code-snippet/pivot-table/default-cs244/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs244/app/datasource.tsx %}
+{% include code-snippet/pivot-table/default-cs244/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs244" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs244" %}
 
 ## User interaction
 
@@ -611,20 +611,20 @@ In the following code sample, both marker and crosshair options are enabled and 
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs245/app/App.jsx %}
+{% include code-snippet/pivot-table/default-cs245/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs245/app/App.tsx %}
+{% include code-snippet/pivot-table/default-cs245/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs245/app/datasource.jsx %}
+{% include code-snippet/pivot-table/default-cs245/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs245/app/datasource.tsx %}
+{% include code-snippet/pivot-table/default-cs245/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs245" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs245" %}
 
 ### Zooming and panning
 
@@ -649,20 +649,20 @@ In the code sample below, all four zooming types are enabled, along with the too
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs246/app/App.jsx %}
+{% include code-snippet/pivot-table/default-cs246/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs246/app/App.tsx %}
+{% include code-snippet/pivot-table/default-cs246/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs246/app/datasource.jsx %}
+{% include code-snippet/pivot-table/default-cs246/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs246/app/datasource.tsx %}
+{% include code-snippet/pivot-table/default-cs246/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs246" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs246" %}
 
 ### Tooltip
 
@@ -674,20 +674,20 @@ The code below shows how to change the default tooltip appearance and settings i
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs247/app/App.jsx %}
+{% include code-snippet/pivot-table/default-cs247/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs247/app/App.tsx %}
+{% include code-snippet/pivot-table/default-cs247/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs247/app/datasource.jsx %}
+{% include code-snippet/pivot-table/default-cs247/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs247/app/datasource.tsx %}
+{% include code-snippet/pivot-table/default-cs247/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs247" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs247" %}
 
 ## Export
 
@@ -709,20 +709,20 @@ The example below shows how to export the pivot chart using an external button l
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs248/app/App.jsx %}
+{% include code-snippet/pivot-table/default-cs248/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs248/app/App.tsx %}
+{% include code-snippet/pivot-table/default-cs248/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs248/app/datasource.jsx %}
+{% include code-snippet/pivot-table/default-cs248/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs248/app/datasource.tsx %}
+{% include code-snippet/pivot-table/default-cs248/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs248" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs248" %}
 
 ## Print
 
@@ -732,20 +732,20 @@ In the example below, clicking an external button labeled "Print Chart" calls th
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs249/app/App.jsx %}
+{% include code-snippet/pivot-table/default-cs249/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs249/app/App.tsx %}
+{% include code-snippet/pivot-table/default-cs249/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs249/app/datasource.jsx %}
+{% include code-snippet/pivot-table/default-cs249/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs249/app/datasource.tsx %}
+{% include code-snippet/pivot-table/default-cs249/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs249" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs249" %}
 
 ## See Also
 

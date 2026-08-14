@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Defer update in React Pivotview component | Syncfusion
-description: Learn here all about Defer update in Syncfusion React Pivotview component of Syncfusion Essential JS 2 and more.
-control: Defer update 
-platform: grid-sdk
+title: Defer update in React Pivot Table | Syncfusion
+description: Learn how the React Pivot Table defers layout recalculation in the field list until the user clicks Apply, improving performance on large reports.
+control: Pivot Table
+platform: ej2-react
 documentation: ug
-domainurl: https://help.syncfusion.com/grid-sdk
+domainurl: ##DomainURL##
 ---
 
-# Defer update in React Pivot Table component
+# Defer update in React Pivot Table
 
 Defer layout update support allows updating the pivot table component only on demand, significantly improving performance for complex data operations. When this feature is enabled, users can drag-and-drop fields between row, column, value, and filter axes, apply sorting and filtering inside the Field List, resulting in changes to the pivot report configuration without immediately updating the pivot table values. Once all operations are performed and the "Apply" button is clicked in the Field List, the pivot table will update with the final modified report. This approach reduces multiple unnecessary renders and brings better performance, especially when working with large datasets or performing multiple field operations.
 
@@ -23,20 +23,20 @@ To enable deferred updates in the pivot table, set the [`allowDeferLayoutUpdate`
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs41/app/App.jsx %}
+{% include code-snippet/pivot-table/default-cs41/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs41/app/App.tsx %}
+{% include code-snippet/pivot-table/default-cs41/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs41/app/datasource.jsx %}
+{% include code-snippet/pivot-table/default-cs41/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs41/app/datasource.tsx %}
+{% include code-snippet/pivot-table/default-cs41/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs41" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs41" %}
 
 ## Stand-alone Field List (Fixed)
 
@@ -48,17 +48,17 @@ To enable deferred updates in the static fieldlist, set the [`allowDeferLayoutUp
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs42/app/App.jsx %}
+{% include code-snippet/pivot-table/default-cs42/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs42/app/App.tsx %}
+{% include code-snippet/pivot-table/default-cs42/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs42/app/datasource.jsx %}
+{% include code-snippet/pivot-table/default-cs42/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs42/app/datasource.tsx %}
+{% include code-snippet/pivot-table/default-cs42/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs42" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs42" %}

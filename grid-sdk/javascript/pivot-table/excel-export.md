@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Excel export in JavaScript Pivot Table component | Syncfusion
-description: Learn here all about Excel export in Syncfusion JavaScript Pivot Table component of Syncfusion Essential JS 2 and more.
-platform: grid-sdk
-control: Excel export 
-publishingplatform: grid-sdk
+title: Excel Export in ##Platform_Name## Pivot Table | Syncfusion
+description: Learn how the ##Platform_Name## Pivot Table exports pivot data to .xlsx and .csv files via `excelExport` and `csvExport`, preserving formatting and structure.
+platform: ej2-javascript
+control: Excel export
+publishingplatform: ##Platform_Name##
 documentation: ug
-domainurl: https://help.syncfusion.com/grid-sdk
+domainurl: ##DomainURL##
 ---
 
-# Excel export in JavaScript Pivot Table component
+# Excel Export in ##Platform_Name## Pivot Table
 
 The Pivot Table component supports exporting pivot data to **Excel** and **CSV** file formats. This enables data sharing and analysis in spreadsheet applications such as Microsoft Excel, Google Sheets, and more. To enable the export functionality, inject the `ExcelExport` module into the Pivot Table and set the [`allowExcelExport`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/index-default#allowexcelexport) property to **true**.
 
@@ -21,14 +21,14 @@ Pivot Table data can be exported to an Excel file (.xlsx format) while preservin
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/excel-export-cs9/index.js %}
+{% include code-snippet/pivot-table/excel-export-cs9/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/excel-export-cs9/index.html %}
+{% include code-snippet/pivot-table/excel-export-cs9/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/pivot-table/excel-export-cs9" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/excel-export-cs9" %}
 
 ## Export data to a CSV file
 
@@ -38,14 +38,14 @@ Pivot Table data can be exported to a plain text CSV file. The CSV format is lig
 
 {% tabs %}
 {% highlight ts tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/excel-export-cs26/index.js %}
+{% include code-snippet/pivot-table/excel-export-cs26/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/excel-export-cs26/index.html %}
+{% include code-snippet/pivot-table/excel-export-cs26/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/pivot-table/excel-export-cs26" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/excel-export-cs26" %}
 
 ## Exporting multiple pivot tables
 
@@ -61,14 +61,14 @@ To add visual separation between Pivot Tables, use the **multipleExport.blankRow
 
 {% tabs %}
 {% highlight ts tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/excel-export-cs21/index.js %}
+{% include code-snippet/pivot-table/excel-export-cs21/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/excel-export-cs21/index.html %}
+{% include code-snippet/pivot-table/excel-export-cs21/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/pivot-table/excel-export-cs21" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/excel-export-cs21" %}
 
 ### Exporting to a new worksheet
 
@@ -76,14 +76,14 @@ Multiple Pivot Tables can be organized into separate worksheets within a single 
 
 {% tabs %}
 {% highlight ts tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/excel-export-cs22/index.js %}
+{% include code-snippet/pivot-table/excel-export-cs22/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/excel-export-cs22/index.html %}
+{% include code-snippet/pivot-table/excel-export-cs22/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/pivot-table/excel-export-cs22" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/excel-export-cs22" %}
 
 ## Customize the pivot report during export
 
@@ -93,14 +93,14 @@ In the following example, the [`beforeExport`](https://ej2.syncfusion.com/javasc
 
 {% tabs %}
 {% highlight ts tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/excel-export-cs31/index.js %}
+{% include code-snippet/pivot-table/excel-export-cs31/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/excel-export-cs31/index.html %}
+{% include code-snippet/pivot-table/excel-export-cs31/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/pivot-table/excel-export-cs31" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/excel-export-cs31" %}
 
 ## Export with custom aggregates
 
@@ -119,14 +119,14 @@ The following example demonstrates how to add two custom aggregate types to the 
 
 {% tabs %}
 {% highlight ts tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/excel-export-cs32/index.js %}
+{% include code-snippet/pivot-table/excel-export-cs32/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/excel-export-cs32/index.html %}
+{% include code-snippet/pivot-table/excel-export-cs32/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/pivot-table/excel-export-cs32" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/excel-export-cs32" %}
 
 ## Export with custom date format
 
@@ -142,14 +142,14 @@ The following example demonstrates exporting a Pivot Table with a custom date fo
 
 {% tabs %}
 {% highlight ts tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/excel-export-cs33/index.js %}
+{% include code-snippet/pivot-table/excel-export-cs33/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/excel-export-cs33/index.html %}
+{% include code-snippet/pivot-table/excel-export-cs33/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/pivot-table/excel-export-cs33" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/excel-export-cs33" %}
 
 ## Remove row header during export
 
@@ -157,14 +157,14 @@ Row headers can be excluded from the exported Excel file when only values and co
 
 {% tabs %}
 {% highlight ts tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/excel-export-cs34/index.js %}
+{% include code-snippet/pivot-table/excel-export-cs34/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/excel-export-cs34/index.html %}
+{% include code-snippet/pivot-table/excel-export-cs34/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/pivot-table/excel-export-cs34" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/excel-export-cs34" %}
 
 ## Rotate cell text during export
 
@@ -179,14 +179,14 @@ Within these events, set the [`rotation`](https://ej2.syncfusion.com/javascript/
 
 {% tabs %}
 {% highlight ts tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/excel-export-cs36/index.js %}
+{% include code-snippet/pivot-table/excel-export-cs36/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/excel-export-cs36/index.html %}
+{% include code-snippet/pivot-table/excel-export-cs36/index.html %}
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/pivot-table/excel-export-cs36" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/excel-export-cs36" %}
 
 ## Apply custom styles based on specific conditions
 
@@ -196,14 +196,14 @@ The following example demonstrates how to apply conditional formatting to the **
 
 {% tabs %}
 {% highlight ts tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/excel-export-cs37/index.js %}
+{% include code-snippet/pivot-table/excel-export-cs37/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/excel-export-cs37/index.html %}
+{% include code-snippet/pivot-table/excel-export-cs37/index.html %}
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/pivot-table/excel-export-cs37" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/excel-export-cs37" %}
 
 ## Changing the Pivot Table style while exporting
 
@@ -213,14 +213,14 @@ The Excel export provides an option to change colors for headers, caption, and r
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/excel-export-cs12/index.js %}
+{% include code-snippet/pivot-table/excel-export-cs12/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/excel-export-cs12/index.html %}
+{% include code-snippet/pivot-table/excel-export-cs12/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/pivot-table/excel-export-cs12" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/excel-export-cs12" %}
 
 ## Add header and footer while exporting
 
@@ -228,14 +228,14 @@ The Excel export provides an option to include header and footer content for the
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/excel-export-cs13/index.js %}
+{% include code-snippet/pivot-table/excel-export-cs13/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/excel-export-cs13/index.html %}
+{% include code-snippet/pivot-table/excel-export-cs13/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/pivot-table/excel-export-cs13" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/excel-export-cs13" %}
 
 ## Changing the file name while exporting
 
@@ -243,14 +243,14 @@ This option provides flexibility to specify a custom file name for your exported
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/excel-export-cs14/index.js %}
+{% include code-snippet/pivot-table/excel-export-cs14/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/excel-export-cs14/index.html %}
+{% include code-snippet/pivot-table/excel-export-cs14/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/pivot-table/excel-export-cs14" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/excel-export-cs14" %}
 
 ## Show spinner during export
 
@@ -258,14 +258,14 @@ When exporting data, displaying a spinner provides visual feedback to end users 
 
 {% tabs %}
 {% highlight ts tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/excel-export-cs38/index.js %}
+{% include code-snippet/pivot-table/excel-export-cs38/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/excel-export-cs38/index.html %}
+{% include code-snippet/pivot-table/excel-export-cs38/index.html %}
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/pivot-table/excel-export-cs38" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/excel-export-cs38" %}
 
 ## Export only the current page
 
@@ -275,14 +275,14 @@ By default, the Pivot Table exports all data records, which can result in larger
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/excel-export-cs18/index.js %}
+{% include code-snippet/pivot-table/excel-export-cs18/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/excel-export-cs18/index.html %}
+{% include code-snippet/pivot-table/excel-export-cs18/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/pivot-table/excel-export-cs18" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/excel-export-cs18" %}
 
 ## Events
 
@@ -299,14 +299,14 @@ The event provides the following arguments:
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs138/index.js %}
+{% include code-snippet/pivot-table/pivot-table-cs138/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs138/index.html %}
+{% include code-snippet/pivot-table/pivot-table-cs138/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs138" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs138" %}
 
 ### ExcelHeaderQueryCellInfo
 
@@ -317,14 +317,14 @@ The [`excelHeaderQueryCellInfo`](https://ej2.syncfusion.com/javascript/documenta
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs139/index.js %}
+{% include code-snippet/pivot-table/pivot-table-cs139/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs139/index.html %}
+{% include code-snippet/pivot-table/pivot-table-cs139/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs139" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs139" %}
 
 ### ExportComplete
 
@@ -335,14 +335,14 @@ The [`exportComplete`](https://ej2.syncfusion.com/javascript/documentation/api/p
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/excel-export-cs19/index.js %}
+{% include code-snippet/pivot-table/excel-export-cs19/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/excel-export-cs19/index.html %}
+{% include code-snippet/pivot-table/excel-export-cs19/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/pivot-table/excel-export-cs19" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/excel-export-cs19" %}
 
 ## Limitation when exporting millions of records to Excel format
 

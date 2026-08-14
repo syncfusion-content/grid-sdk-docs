@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Aggregation in Angular Pivotview component | Syncfusion
-description: Learn here all about Aggregation in Syncfusion Angular Pivotview component of Syncfusion Essential JS 2 and more.
-platform: grid-sdk
+title: Aggregation in Angular Pivot Table | Syncfusion
+description: Learn how the Angular Pivot Table applies aggregation types like Sum, Average, Count, Median, and PercentageOfParentTotal to value fields.
+platform: ej2-angular
 control: Aggregation 
 documentation: ug
-domainurl: https://help.syncfusion.com/grid-sdk
+domainurl: ##DomainURL##
 ---
 
-# Aggregation in Angular Pivotview component
+# Aggregation in Angular Pivot Table
 
 > This feature is applicable only for the relational data source.
 
@@ -53,15 +53,15 @@ For each value field, the aggregation type can be set using the property [`type`
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs1/src/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs1/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs1/src/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs1" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs1" %}
 
 > By default, the aggregation will be considered as **Sum** to the value fields which had number type and for the value fields which had non-number type values such as string, date, datetime, boolean, etc., the aggregation type will be considered as **Count**.
 
@@ -83,15 +83,15 @@ The following code demonstrates how to configure the pivot table component to di
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs2/src/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs2/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs2/src/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs2/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs2" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs2" %}
 
 ## Hiding aggregation type from button text
 
@@ -101,15 +101,15 @@ This customization enhances the clarity of the pivot table’s interface by simp
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs3/src/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs3/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs3/src/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs3/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs3" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs3" %}
 
 ## Hiding aggregation type icon from UI
 
@@ -119,15 +119,15 @@ By default, the dropdown icon to change the aggregation type is visible in the g
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs4/src/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs4/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs4/src/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs4/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs4" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs4" %}
 
 ## Event
 
@@ -147,15 +147,15 @@ The [`aggregateCellInfo`](https://ej2.syncfusion.com/angular/documentation/api/p
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs5/src/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs5/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs5/src/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs5/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs5" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs5" %}
 
 ### ActionBegin
 
@@ -175,15 +175,15 @@ In the following example, an action taken during aggregation type selection via 
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs6/src/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs6/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs6/src/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs6/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs6" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs6" %}
 
 ### ActionComplete
 
@@ -198,15 +198,15 @@ The [`actionComplete`](https://ej2.syncfusion.com/angular/documentation/api/pivo
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs7/src/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs7/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs7/src/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs7/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs7" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs7" %}
 
 ### ActionFailure
 
@@ -217,12 +217,12 @@ The [`actionFailure`](https://ej2.syncfusion.com/angular/documentation/api/pivot
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs8/src/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs8/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs8/src/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs8/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs8" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs8" %}

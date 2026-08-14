@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Data binding in React Pivot Table component | Syncfusion
-description: Learn here all about Data binding in Syncfusion React Pivot Table component of Syncfusion Essential JS 2 and more.
-control: Data binding 
-platform: grid-sdk
+title: Data binding in React Pivot Table | Syncfusion
+description: Learn how the React Pivot Table binds local JSON arrays, remote services, and OLAP cubes for data visualization and analysis.
+control: Pivot Table
+platform: ej2-react
 documentation: ug
-domainurl: https://help.syncfusion.com/grid-sdk
+domainurl: ##DomainURL##
 ---
 
-# Data binding in React Pivot Table component
+# Data binding in React Pivot Table
 
 To get start quickly with Data Binding, you can check on this video:
 
@@ -24,39 +24,39 @@ You can bind local JSON data to the Pivot Table by assigning a local variable co
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs23/app/App.jsx %}
+{% include code-snippet/pivot-table/default-cs23/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs23/app/App.tsx %}
+{% include code-snippet/pivot-table/default-cs23/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs23/app/datasource.jsx %}
+{% include code-snippet/pivot-table/default-cs23/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs23/app/datasource.tsx %}
+{% include code-snippet/pivot-table/default-cs23/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs23" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs23" %}
 
 You can also bind JSON data using the [`DataManager`](https://ej2.syncfusion.com/documentation/api/data/datamanager) with `JsonAdaptor`. In this approach, assign the [`DataManager`](https://ej2.syncfusion.com/documentation/api/data/datamanager) instance containing JSON data to the [`dataSource`](https://ej2.syncfusion.com/react/documentation/api/pivotview/datasourcesettings#datasource) property under [`dataSourceSettings`](https://ej2.syncfusion.com/react/documentation/api/pivotview/index-default#datasourcesettings). Using [`DataManager`](https://ej2.syncfusion.com/documentation/api/data/datamanager) is optional for local JSON data binding.
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs24/app/App.jsx %}
+{% include code-snippet/pivot-table/default-cs24/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs24/app/App.tsx %}
+{% include code-snippet/pivot-table/default-cs24/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs24/app/datasource.jsx %}
+{% include code-snippet/pivot-table/default-cs24/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs24/app/datasource.tsx %}
+{% include code-snippet/pivot-table/default-cs24/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs24" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs24" %}
 
 You can also load JSON data from a local *.json file using the file uploader option. After uploading the file, convert the resulting string to JSON data and assign it to the [`dataSource`](https://ej2.syncfusion.com/react/documentation/api/pivotview/datasourcesettings#datasource) property under [`dataSourceSettings`](https://ej2.syncfusion.com/react/documentation/api/pivotview/index-default#datasourcesettings). The following code example demonstrates this approach.
 
@@ -104,14 +104,14 @@ To bind remote JSON data to the Pivot Table, set the endpoint [`URL`](https://ej
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs25/app/App.jsx %}
+{% include code-snippet/pivot-table/default-cs25/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs25/app/App.tsx %}
+{% include code-snippet/pivot-table/default-cs25/app/App.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs25" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs25" %}
 
 ## CSV
 
@@ -125,14 +125,14 @@ To bind local CSV data to the Pivot Table, convert the data into a string array 
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs26/app/App.jsx %}
+{% include code-snippet/pivot-table/default-cs26/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs26/app/App.tsx %}
+{% include code-snippet/pivot-table/default-cs26/app/App.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs26" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs26" %}
 
 You can also connect CSV data from a local *.csv file to the Pivot Table using the file uploader option. After uploading the file, convert the resulting string to a string array and assign it to the [`dataSource`](https://ej2.syncfusion.com/react/documentation/api/pivotview/datasourcesettings#datasource) property under [`dataSourceSettings`](https://ej2.syncfusion.com/react/documentation/api/pivotview/index-default#datasourcesettings). The following code example shows how to implement this:
 
@@ -206,14 +206,14 @@ To bind remote CSV data, set the [`URL`](https://ej2.syncfusion.com/react/docume
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs27/app/App.jsx %}
+{% include code-snippet/pivot-table/default-cs27/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs27/app/App.tsx %}
+{% include code-snippet/pivot-table/default-cs27/app/App.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs27" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs27" %}
 
 ## Remote Data Binding
 
@@ -229,14 +229,14 @@ The following example demonstrates how to bind the Pivot Table to an OData servi
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs28/app/App.jsx %}
+{% include code-snippet/pivot-table/default-cs28/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs28/app/App.tsx %}
+{% include code-snippet/pivot-table/default-cs28/app/App.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs28" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs28" %}
 
 ### Binding with OData V4 services
 
@@ -244,14 +244,14 @@ OData V4 services provide enhanced query capabilities and improved performance f
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs29/app/App.jsx %}
+{% include code-snippet/pivot-table/default-cs29/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs29/app/App.tsx %}
+{% include code-snippet/pivot-table/default-cs29/app/App.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs29" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs29" %}
 
 ### Web API
 
@@ -259,14 +259,14 @@ Web API binding allows you to connect the Pivot Table directly to RESTful web se
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs30/app/App.jsx %}
+{% include code-snippet/pivot-table/default-cs30/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs30/app/App.tsx %}
+{% include code-snippet/pivot-table/default-cs30/app/App.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs30" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs30" %}
 
 ### Querying in Data Manager
 
@@ -276,14 +276,14 @@ The query can include operations such as filtering records based on specific con
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs31/app/App.jsx %}
+{% include code-snippet/pivot-table/default-cs31/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs31/app/App.tsx %}
+{% include code-snippet/pivot-table/default-cs31/app/App.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs31" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs31" %}
 
 ## Mapping
 
@@ -333,20 +333,20 @@ The following code sample demonstrates how to configure the visibility of field 
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs32/app/App.jsx %}
+{% include code-snippet/pivot-table/default-cs32/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs32/app/App.tsx %}
+{% include code-snippet/pivot-table/default-cs32/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs32/app/datasource.jsx %}
+{% include code-snippet/pivot-table/default-cs32/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs32/app/datasource.tsx %}
+{% include code-snippet/pivot-table/default-cs32/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs32" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs32" %}
 
 ## Values in row axis
 
@@ -354,20 +354,20 @@ You can display value fields in the row axis of the Pivot Table to make your dat
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs33/app/App.jsx %}
+{% include code-snippet/pivot-table/default-cs33/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs33/app/App.tsx %}
+{% include code-snippet/pivot-table/default-cs33/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs33/app/datasource.jsx %}
+{% include code-snippet/pivot-table/default-cs33/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs33/app/datasource.tsx %}
+{% include code-snippet/pivot-table/default-cs33/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs33" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs33" %}
 
 ## Values at different positions
 
@@ -377,20 +377,20 @@ Positioning value fields at specific locations helps create more meaningful data
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs34/app/App.jsx %}
+{% include code-snippet/pivot-table/default-cs34/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs34/app/App.tsx %}
+{% include code-snippet/pivot-table/default-cs34/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs34/app/datasource.jsx %}
+{% include code-snippet/pivot-table/default-cs34/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs34/app/datasource.tsx %}
+{% include code-snippet/pivot-table/default-cs34/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs34" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs34" %}
 
 ## Show 'no data' items
 
@@ -400,14 +400,14 @@ In the following example, the "Country" and "State" field rows are displayed eve
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs35/app/App.jsx %}
+{% include code-snippet/pivot-table/default-cs35/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs35/app/App.tsx %}
+{% include code-snippet/pivot-table/default-cs35/app/App.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs35" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs35" %}
 
 ## Show value headers always
 
@@ -415,20 +415,20 @@ Ensure value headers remain visible in your Pivot Table at all times, providing 
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs36/app/App.jsx %}
+{% include code-snippet/pivot-table/default-cs36/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs36/app/App.tsx %}
+{% include code-snippet/pivot-table/default-cs36/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs36/app/datasource.jsx %}
+{% include code-snippet/pivot-table/default-cs36/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs36/app/datasource.tsx %}
+{% include code-snippet/pivot-table/default-cs36/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs36" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs36" %}
 
 ## Customize empty value cells
 
@@ -436,20 +436,20 @@ Show custom text in cells that contain no data to make your Pivot Table more inf
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs37/app/App.jsx %}
+{% include code-snippet/pivot-table/default-cs37/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs37/app/App.tsx %}
+{% include code-snippet/pivot-table/default-cs37/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs37/app/datasource.jsx %}
+{% include code-snippet/pivot-table/default-cs37/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs37/app/datasource.tsx %}
+{% include code-snippet/pivot-table/default-cs37/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs37" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs37" %}
 
 ## Event
 
@@ -470,20 +470,20 @@ The load event provides the following parameters:
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs38/app/App.jsx %}
+{% include code-snippet/pivot-table/default-cs38/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs38/app/App.tsx %}
+{% include code-snippet/pivot-table/default-cs38/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs38/app/datasource.jsx %}
+{% include code-snippet/pivot-table/default-cs38/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs38/app/datasource.tsx %}
+{% include code-snippet/pivot-table/default-cs38/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs38" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs38" %}
 
 ### EnginePopulated
 
@@ -499,20 +499,20 @@ Below is an example showing how the [`enginePopulated`](https://ej2.syncfusion.c
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs39/app/App.jsx %}
+{% include code-snippet/pivot-table/default-cs39/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs39/app/App.tsx %}
+{% include code-snippet/pivot-table/default-cs39/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs39/app/datasource.jsx %}
+{% include code-snippet/pivot-table/default-cs39/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs39/app/datasource.tsx %}
+{% include code-snippet/pivot-table/default-cs39/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs39" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs39" %}
 
 ### EnginePopulating
 
@@ -522,20 +522,20 @@ The [`enginePopulating`](https://ej2.syncfusion.com/react/documentation/api/pivo
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs40/app/App.jsx %}
+{% include code-snippet/pivot-table/default-cs40/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs40/app/App.tsx %}
+{% include code-snippet/pivot-table/default-cs40/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs40/app/datasource.jsx %}
+{% include code-snippet/pivot-table/default-cs40/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs40/app/datasource.tsx %}
+{% include code-snippet/pivot-table/default-cs40/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs40" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs40" %}
 
 ## See Also
 

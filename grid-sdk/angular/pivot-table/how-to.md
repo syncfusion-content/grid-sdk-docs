@@ -2,10 +2,10 @@
 layout: post
 title: How to in Angular Pivotview component | Syncfusion
 description: Learn here all about How to in Syncfusion Angular Pivotview component of Syncfusion Essential JS 2 and more.
-platform: grid-sdk
+platform: ej2-angular
 control: How to 
 documentation: ug
-domainurl: https://help.syncfusion.com/grid-sdk
+domainurl: ##DomainURL##
 ---
 
 # How to in Angular Pivotview component
@@ -24,12 +24,12 @@ In the below example, the data in the member editor limits to 100. So, the membe
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs154/src/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs154/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs154/src/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs154/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs154" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs154" %}

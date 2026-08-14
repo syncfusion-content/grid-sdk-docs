@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Editing in JavaScript Pivot Table component | Syncfusion
-description: Learn here all about Editing in Syncfusion JavaScript Pivot Table component of Syncfusion Essential JS 2 and more.
-platform: grid-sdk
-control: Editing 
-publishingplatform: grid-sdk
+title: Editing in ##Platform_Name## Pivot Table | Syncfusion
+description: Learn how the ##Platform_Name## Pivot Table edits underlying values via `editSettings`, with add, update, delete, inline edit, and command column support.
+platform: ej2-javascript
+control: Editing
+publishingplatform: ##Platform_Name##
 documentation: ug
-domainurl: https://help.syncfusion.com/grid-sdk
+domainurl: ##DomainURL##
 ---
 
-# Editing in JavaScript Pivot Table component
+# Editing in ##Platform_Name## Pivot Table
 
 > This feature is applicable only for the relational data source.
 
@@ -52,14 +52,14 @@ Normal edit mode allows users to edit one row at a time in the editing dialog wi
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs131/index.js %}
+{% include code-snippet/pivot-table/pivot-table-cs131/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs131/index.html %}
+{% include code-snippet/pivot-table/pivot-table-cs131/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs131" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs131" %}
 
 ## Dialog
 
@@ -67,14 +67,14 @@ The dialog edit mode provides a focused editing environment by displaying the se
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs132/index.js %}
+{% include code-snippet/pivot-table/pivot-table-cs132/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs132/index.html %}
+{% include code-snippet/pivot-table/pivot-table-cs132/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs132" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs132" %}
 
 ## Batch
 
@@ -82,14 +82,14 @@ Batch editing enables users to make multiple changes to data grid cells and save
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs133/index.js %}
+{% include code-snippet/pivot-table/pivot-table-cs133/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs133/index.html %}
+{% include code-snippet/pivot-table/pivot-table-cs133/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs133" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs133" %}
 
 ## Command column
 
@@ -110,14 +110,14 @@ N>
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs134/index.js %}
+{% include code-snippet/pivot-table/pivot-table-cs134/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs134/index.html %}
+{% include code-snippet/pivot-table/pivot-table-cs134/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs134" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs134" %}
 
 ## Inline Editing
 
@@ -125,14 +125,14 @@ The inline editing option provides streamlined data modification by allowing dir
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs135/index.js %}
+{% include code-snippet/pivot-table/pivot-table-cs135/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs135/index.html %}
+{% include code-snippet/pivot-table/pivot-table-cs135/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs135" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs135" %}
 
 ## Editing using the pivot chart
 
@@ -142,14 +142,14 @@ Clicking a data point in the pivot chart displays the underlying raw items in a 
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs136/index.js %}
+{% include code-snippet/pivot-table/pivot-table-cs136/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs136/index.html %}
+{% include code-snippet/pivot-table/pivot-table-cs136/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs136" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs136" %}
 
 ## Events
 
@@ -164,14 +164,14 @@ The event [`editCompleted`](https://ej2.syncfusion.com/javascript/documentation/
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs137/index.js %}
+{% include code-snippet/pivot-table/pivot-table-cs137/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs137/index.html %}
+{% include code-snippet/pivot-table/pivot-table-cs137/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs137" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs137" %}
 
 ### DrillThrough
 
@@ -201,14 +201,14 @@ For example, you can restrict add and save actions by setting **args.cancel** to
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/action-events-cs10/index.js %}
+{% include code-snippet/pivot-table/action-events-cs10/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/action-events-cs10/index.html %}
+{% include code-snippet/pivot-table/action-events-cs10/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/pivot-table/action-events-cs10" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/action-events-cs10" %}
 
 ### ActionComplete
 
@@ -228,14 +228,14 @@ The [`actionComplete`](https://ej2.syncfusion.com/javascript/documentation/api/p
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/action-events-cs11/index.js %}
+{% include code-snippet/pivot-table/action-events-cs11/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/action-events-cs11/index.html %}
+{% include code-snippet/pivot-table/action-events-cs11/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/pivot-table/action-events-cs11" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/action-events-cs11" %}
 
 ### ActionFailure
 
@@ -254,14 +254,14 @@ The [`actionFailure`](https://ej2.syncfusion.com/javascript/documentation/api/pi
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/action-events-cs12/index.js %}
+{% include code-snippet/pivot-table/action-events-cs12/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/action-events-cs12/index.html %}
+{% include code-snippet/pivot-table/action-events-cs12/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/pivot-table/action-events-cs12" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/action-events-cs12" %}
 
 ## See Also
 

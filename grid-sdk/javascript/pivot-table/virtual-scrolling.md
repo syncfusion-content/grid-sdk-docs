@@ -1,17 +1,17 @@
 ---
 layout: post
-title: Virtual scrolling in JavaScript Pivot Table component | Syncfusion
-description: Learn here all about Virtual scrolling in Syncfusion JavaScript Pivot Table component of Syncfusion Essential JS 2 and more.
-platform: grid-sdk
-control: Virtual scrolling 
-publishingplatform: grid-sdk
+title: Virtual Scrolling in ##Platform_Name## Pivot Table | Syncfusion
+description: Learn how the ##Platform_Name## Pivot Table renders only visible rows and columns for large datasets via `enableVirtualization`, with required `height` and `width` settings.
+platform: ej2-javascript
+control: Virtual scrolling
+publishingplatform: ##Platform_Name##
 documentation: ug
-domainurl: https://help.syncfusion.com/grid-sdk
+domainurl: ##DomainURL##
 ---
 
 <!-- markdownlint-disable MD036 -->
 
-# Virtual scrolling in JavaScript Pivot Table component
+# Virtual Scrolling in ##Platform_Name## Pivot Table
 
 ## Virtual Scrolling
 
@@ -23,14 +23,14 @@ To use the virtual scrolling feature, inject the `VirtualScroll` module into the
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs265/index.js %}
+{% include code-snippet/pivot-table/pivot-table-cs265/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs265/index.html %}
+{% include code-snippet/pivot-table/pivot-table-cs265/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs265" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs265" %}
 
 > The `height` and `width` properties should be set for virtual scrolling. If it is not defined, then the Pivot Table will consider its value as `300px` and `800px` respectively.
 
@@ -42,14 +42,14 @@ To optimize performance, set the [allowSinglePage](https://ej2.syncfusion.com/ja
 
 {% tabs %}
 {% highlight ts tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/single-page-mode/index.js %}
+{% include code-snippet/pivot-table/single-page-mode/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/single-page-mode/index.html %}
+{% include code-snippet/pivot-table/single-page-mode/index.html %}
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/pivot-table/single-page-mode" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/single-page-mode" %}
 
 ## Limitations for Virtual Scrolling
 
@@ -73,14 +73,14 @@ Here's how to make virtual scrolling work with a static field list:
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/field-list-cs9/index.js %}
+{% include code-snippet/pivot-table/field-list-cs9/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/field-list-cs9/index.html %}
+{% include code-snippet/pivot-table/field-list-cs9/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/pivot-table/field-list-cs9" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/field-list-cs9" %}
 
 ## See also
 

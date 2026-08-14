@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Pivot Chart in ASP.NET MVC Syncfusion Pivot Table Component
-description: Learn here all about Pivot Chart in Syncfusion ASP.NET MVC Pivot Table component of Syncfusion Essential JS 2 and more.
-platform: grid-sdk
+title: Pivot Chart in ASP.NET MVC Pivot Table | Syncfusion
+description: Learn how the ASP.NET MVC Pivot Table pairs with a Pivot Chart that supports 15+ chart types, drill down/up, and grid-or-chart display via DisplayOption.
+platform: ej2-asp-core-mvc
 control: Pivot Chart
-publishingplatform: grid-sdk
+publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
 
-# Pivot Chart in ASP.NET MVC Pivot Table Component
+# Pivot Chart in ASP.NET MVC Pivot Table
 
 The Pivot Chart in the Syncfusion ASP.NET MVC Pivot Table component helps users visualize aggregated values in a clear and graphical format. It provides essential options like drill down and drill up operations, over 15 chart types, and various display settings for series, axes, legends, export, print, and tooltips. The main purpose of the Pivot Chart is to present Pivot Table data in a way that is easy to understand and interact with.
 
@@ -26,10 +26,10 @@ The following sample shows the pivot chart component based on the pivot report b
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/pivot-chart/display-view/tagHelper %}
+{% include code-snippet/pivot-table/pivot-chart/display-view/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="DisplayView.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/pivot-chart/display-view/DisplayView.cs %}
+{% include code-snippet/pivot-table/pivot-chart/display-view/DisplayView.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -37,10 +37,10 @@ The following sample shows the pivot chart component based on the pivot report b
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/pivot-chart/display-view/razor %}
+{% include code-snippet/pivot-table/pivot-chart/display-view/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="DisplayView.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/pivot-chart/display-view/DisplayView.cs %}
+{% include code-snippet/pivot-table/pivot-chart/display-view/DisplayView.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -83,10 +83,10 @@ For example, to display a [**ChartSeriesType.Bar**](https://help.syncfusion.com/
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/pivot-chart/chart-type/tagHelper %}
+{% include code-snippet/pivot-table/pivot-chart/chart-type/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="ChartType.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/pivot-chart/chart-type/ChartType.cs %}
+{% include code-snippet/pivot-table/pivot-chart/chart-type/ChartType.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -94,10 +94,10 @@ For example, to display a [**ChartSeriesType.Bar**](https://help.syncfusion.com/
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/pivot-chart/chart-type/razor %}
+{% include code-snippet/pivot-table/pivot-chart/chart-type/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="ChartType.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/pivot-chart/chart-type/ChartType.cs %}
+{% include code-snippet/pivot-table/pivot-chart/chart-type/ChartType.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -123,10 +123,10 @@ In the code example below, the **Pie** chart is displayed by default. You can sw
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/pivot-chart/chart-accumulation/tagHelper %}
+{% include code-snippet/pivot-table/pivot-chart/chart-accumulation/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Accumulation.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/pivot-chart/chart-accumulation/Accumulation.cs %}
+{% include code-snippet/pivot-table/pivot-chart/chart-accumulation/Accumulation.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -134,10 +134,10 @@ In the code example below, the **Pie** chart is displayed by default. You can sw
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/pivot-chart/chart-accumulation/razor %}
+{% include code-snippet/pivot-table/pivot-chart/chart-accumulation/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Accumulation.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/pivot-chart/chart-accumulation/Accumulation.cs %}
+{% include code-snippet/pivot-table/pivot-chart/chart-accumulation/Accumulation.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -160,10 +160,10 @@ In accumulation charts, you can use the drill down and drill up options to explo
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/pivot-chart/chart-drill/tagHelper %}
+{% include code-snippet/pivot-table/pivot-chart/chart-drill/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Drill.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/pivot-chart/chart-drill/Drill.cs %}
+{% include code-snippet/pivot-table/pivot-chart/chart-drill/Drill.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -171,10 +171,10 @@ In accumulation charts, you can use the drill down and drill up options to explo
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/pivot-chart/chart-drill/razor %}
+{% include code-snippet/pivot-table/pivot-chart/chart-drill/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Drill.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/pivot-chart/chart-drill/Drill.cs %}
+{% include code-snippet/pivot-table/pivot-chart/chart-drill/Drill.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -193,10 +193,10 @@ If the column has more than one header, enter all the headers separated by a del
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/pivot-chart/chart-column/tagHelper %}
+{% include code-snippet/pivot-table/pivot-chart/chart-column/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Column.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/pivot-chart/chart-column/Column.cs %}
+{% include code-snippet/pivot-table/pivot-chart/chart-column/Column.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -204,10 +204,10 @@ If the column has more than one header, enter all the headers separated by a del
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/pivot-chart/chart-column/razor %}
+{% include code-snippet/pivot-table/pivot-chart/chart-column/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Column.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/pivot-chart/chart-column/Column.cs %}
+{% include code-snippet/pivot-table/pivot-chart/chart-column/Column.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -231,10 +231,10 @@ In the following code sample, the data labels are placed inside the chart points
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/pivot-chart/chart-datalabel/tagHelper %}
+{% include code-snippet/pivot-table/pivot-chart/chart-datalabel/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="DataLabel.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/pivot-chart/chart-datalabel/DataLabel.cs %}
+{% include code-snippet/pivot-table/pivot-chart/chart-datalabel/DataLabel.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -242,10 +242,10 @@ In the following code sample, the data labels are placed inside the chart points
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/pivot-chart/chart-datalabel/razor %}
+{% include code-snippet/pivot-table/pivot-chart/chart-datalabel/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="DataLabel.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/pivot-chart/chart-datalabel/DataLabel.cs %}
+{% include code-snippet/pivot-table/pivot-chart/chart-datalabel/DataLabel.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -260,10 +260,10 @@ The **Connector Line** appears when data labels are positioned outside the chart
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/pivot-chart/chart-connector/tagHelper %}
+{% include code-snippet/pivot-table/pivot-chart/chart-connector/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Connector.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/pivot-chart/chart-connector/Connector.cs %}
+{% include code-snippet/pivot-table/pivot-chart/chart-connector/Connector.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -271,10 +271,10 @@ The **Connector Line** appears when data labels are positioned outside the chart
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/pivot-chart/chart-connector/razor %}
+{% include code-snippet/pivot-table/pivot-chart/chart-connector/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Connector.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/pivot-chart/chart-connector/Connector.cs %}
+{% include code-snippet/pivot-table/pivot-chart/chart-connector/Connector.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -291,10 +291,10 @@ You can draw pie and doughnut charts within a specific range by using the `start
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/pivot-chart/chart-angle/tagHelper %}
+{% include code-snippet/pivot-table/pivot-chart/chart-angle/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Angle.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/pivot-chart/chart-angle/Angle.cs %}
+{% include code-snippet/pivot-table/pivot-chart/chart-angle/Angle.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -302,10 +302,10 @@ You can draw pie and doughnut charts within a specific range by using the `start
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/pivot-chart/chart-angle/razor %}
+{% include code-snippet/pivot-table/pivot-chart/chart-angle/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Angle.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/pivot-chart/chart-angle/Angle.cs %}
+{% include code-snippet/pivot-table/pivot-chart/chart-angle/Angle.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -322,10 +322,10 @@ You can convert a pie chart to a doughnut chart and vice-versa using the `innerR
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/pivot-chart/chart-radius/tagHelper %}
+{% include code-snippet/pivot-table/pivot-chart/chart-radius/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Radius.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/pivot-chart/chart-radius/Radius.cs %}
+{% include code-snippet/pivot-table/pivot-chart/chart-radius/Radius.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -333,10 +333,10 @@ You can convert a pie chart to a doughnut chart and vice-versa using the `innerR
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/pivot-chart/chart-radius/razor %}
+{% include code-snippet/pivot-table/pivot-chart/chart-radius/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Radius.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/pivot-chart/chart-radius/Radius.cs %}
+{% include code-snippet/pivot-table/pivot-chart/chart-radius/Radius.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -353,10 +353,10 @@ You can make an individual point in a pivot chart stand out by enabling the expl
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/pivot-chart/chart-explode/tagHelper %}
+{% include code-snippet/pivot-table/pivot-chart/chart-explode/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Explode.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/pivot-chart/chart-explode/Explode.cs %}
+{% include code-snippet/pivot-table/pivot-chart/chart-explode/Explode.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -364,10 +364,10 @@ You can make an individual point in a pivot chart stand out by enabling the expl
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/pivot-chart/chart-explode/razor %}
+{% include code-snippet/pivot-table/pivot-chart/chart-explode/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Explode.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/pivot-chart/chart-explode/Explode.cs %}
+{% include code-snippet/pivot-table/pivot-chart/chart-explode/Explode.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -386,10 +386,10 @@ The sample below demonstrates the field list shown in `Popup` mode within the pi
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/pivot-chart/chart-fieldlist/tagHelper %}
+{% include code-snippet/pivot-table/pivot-chart/chart-fieldlist/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="ChartFieldList.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/pivot-chart/chart-fieldlist/ChartFieldList.cs %}
+{% include code-snippet/pivot-table/pivot-chart/chart-fieldlist/ChartFieldList.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -397,10 +397,10 @@ The sample below demonstrates the field list shown in `Popup` mode within the pi
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/pivot-chart/chart-fieldlist/razor %}
+{% include code-snippet/pivot-table/pivot-chart/chart-fieldlist/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="ChartFieldList.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/pivot-chart/chart-fieldlist/ChartFieldList.cs %}
+{% include code-snippet/pivot-table/pivot-chart/chart-fieldlist/ChartFieldList.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -419,10 +419,10 @@ You can display the grouping bar in the Pivot Chart by setting the [`ShowGroupin
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/pivot-chart/chart-groupingbar/tagHelper %}
+{% include code-snippet/pivot-table/pivot-chart/chart-groupingbar/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="ChartGroupingBar.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/pivot-chart/chart-groupingbar/ChartGroupingBar.cs %}
+{% include code-snippet/pivot-table/pivot-chart/chart-groupingbar/ChartGroupingBar.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -430,10 +430,10 @@ You can display the grouping bar in the Pivot Chart by setting the [`ShowGroupin
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/pivot-chart/chart-groupingbar/razor %}
+{% include code-snippet/pivot-table/pivot-chart/chart-groupingbar/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="ChartGroupingBar.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/pivot-chart/chart-groupingbar/ChartGroupingBar.cs %}
+{% include code-snippet/pivot-table/pivot-chart/chart-groupingbar/ChartGroupingBar.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -448,10 +448,10 @@ When using accumulation charts, the drop-down list appears on the column axis. T
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/pivot-chart/chart-group/tagHelper %}
+{% include code-snippet/pivot-table/pivot-chart/chart-group/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Group.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/pivot-chart/chart-group/Group.cs %}
+{% include code-snippet/pivot-table/pivot-chart/chart-group/Group.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -459,10 +459,10 @@ When using accumulation charts, the drop-down list appears on the column axis. T
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/pivot-chart/chart-group/razor %}
+{% include code-snippet/pivot-table/pivot-chart/chart-group/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Group.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/pivot-chart/chart-group/Group.cs %}
+{% include code-snippet/pivot-table/pivot-chart/chart-group/Group.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -479,10 +479,10 @@ By default, the pivot chart uses the first value field (measure) from your repor
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/pivot-chart/chart-single/tagHelper %}
+{% include code-snippet/pivot-table/pivot-chart/chart-single/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="ChartSingle.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/pivot-chart/chart-single/ChartSingle.cs %}
+{% include code-snippet/pivot-table/pivot-chart/chart-single/ChartSingle.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -490,10 +490,10 @@ By default, the pivot chart uses the first value field (measure) from your repor
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/pivot-chart/chart-single/razor %}
+{% include code-snippet/pivot-table/pivot-chart/chart-single/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="ChartSingle.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/pivot-chart/chart-single/ChartSingle.cs %}
+{% include code-snippet/pivot-table/pivot-chart/chart-single/ChartSingle.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -512,10 +512,10 @@ The pivot chart can be drawn with multiple value fields by setting the [`EnableM
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/pivot-chart/chart-multivalue/tagHelper %}
+{% include code-snippet/pivot-table/pivot-chart/chart-multivalue/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="ChartMultiValue.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/pivot-chart/chart-multivalue/ChartMultiValue.cs %}
+{% include code-snippet/pivot-table/pivot-chart/chart-multivalue/ChartMultiValue.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -523,10 +523,10 @@ The pivot chart can be drawn with multiple value fields by setting the [`EnableM
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/pivot-chart/chart-multivalue/razor %}
+{% include code-snippet/pivot-table/pivot-chart/chart-multivalue/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="ChartMultiValue.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/pivot-chart/chart-multivalue/ChartMultiValue.cs %}
+{% include code-snippet/pivot-table/pivot-chart/chart-multivalue/ChartMultiValue.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -541,10 +541,10 @@ When binding more value fields, the result displays multiple pivot charts, with 
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/pivot-chart/chart-multiaxisscrollbar/tagHelper %}
+{% include code-snippet/pivot-table/pivot-chart/chart-multiaxisscrollbar/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="ChartScrollBar.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/pivot-chart/chart-multiaxisscrollbar/ChartScrollBar.cs %}
+{% include code-snippet/pivot-table/pivot-chart/chart-multiaxisscrollbar/ChartScrollBar.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -552,10 +552,10 @@ When binding more value fields, the result displays multiple pivot charts, with 
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/pivot-chart/chart-multiaxisscrollbar/razor %}
+{% include code-snippet/pivot-table/pivot-chart/chart-multiaxisscrollbar/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="ChartScrollBar.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/pivot-chart/chart-multiaxisscrollbar/ChartScrollBar.cs %}
+{% include code-snippet/pivot-table/pivot-chart/chart-multiaxisscrollbar/ChartScrollBar.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -572,10 +572,10 @@ In the following code sample, the pivot chart can be seen as a single chart with
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/pivot-chart/chart-multipleaxismode/tagHelper %}
+{% include code-snippet/pivot-table/pivot-chart/chart-multipleaxismode/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="ChartMultipleAxisMode.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/pivot-chart/chart-multipleaxismode/ChartMultipleAxisMode.cs %}
+{% include code-snippet/pivot-table/pivot-chart/chart-multipleaxismode/ChartMultipleAxisMode.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -583,10 +583,10 @@ In the following code sample, the pivot chart can be seen as a single chart with
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/pivot-chart/chart-multipleaxismode/razor %}
+{% include code-snippet/pivot-table/pivot-chart/chart-multipleaxismode/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="ChartMultipleAxisMode.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/pivot-chart/chart-multipleaxismode/ChartMultipleAxisMode.cs %}
+{% include code-snippet/pivot-table/pivot-chart/chart-multipleaxismode/ChartMultipleAxisMode.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -603,10 +603,10 @@ The pivot chart in the following code sample can be seen as a single chart with 
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/pivot-chart/single-combined-y-axis/tagHelper %}
+{% include code-snippet/pivot-table/pivot-chart/single-combined-y-axis/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="combinedYAxis.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/pivot-chart/single-combined-y-axis/combinedYAxis.cs %}
+{% include code-snippet/pivot-table/pivot-chart/single-combined-y-axis/combinedYAxis.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -614,10 +614,10 @@ The pivot chart in the following code sample can be seen as a single chart with 
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/pivot-chart/single-combined-y-axis/razor %}
+{% include code-snippet/pivot-table/pivot-chart/single-combined-y-axis/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="combinedYAxis.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/pivot-chart/single-combined-y-axis/combinedYAxis.cs %}
+{% include code-snippet/pivot-table/pivot-chart/single-combined-y-axis/combinedYAxis.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -636,10 +636,10 @@ In addition, users can show or hide specific members from all measures in the ch
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/pivot-chart/show-member-series/tagHelper %}
+{% include code-snippet/pivot-table/pivot-chart/show-member-series/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="ShowMemberSeries.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/pivot-chart/show-member-series/ShowMemberSeries.cs %}
+{% include code-snippet/pivot-table/pivot-chart/show-member-series/ShowMemberSeries.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -647,10 +647,10 @@ In addition, users can show or hide specific members from all measures in the ch
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/pivot-chart/show-member-series/razor %}
+{% include code-snippet/pivot-table/pivot-chart/show-member-series/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="ShowMemberSeries.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/pivot-chart/show-member-series/ShowMemberSeries.cs %}
+{% include code-snippet/pivot-table/pivot-chart/show-member-series/ShowMemberSeries.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -667,10 +667,10 @@ You can customize the series in the pivot chart by using the [`ChartSeries`](htt
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/pivot-chart/chartseries/tagHelper %}
+{% include code-snippet/pivot-table/pivot-chart/chartseries/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="ChartSeries.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/pivot-chart/chartseries/ChartSeries.cs %}
+{% include code-snippet/pivot-table/pivot-chart/chartseries/ChartSeries.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -678,10 +678,10 @@ You can customize the series in the pivot chart by using the [`ChartSeries`](htt
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/pivot-chart/chartseries/razor %}
+{% include code-snippet/pivot-table/pivot-chart/chartseries/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="ChartSeries.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/pivot-chart/chartseries/ChartSeries.cs %}
+{% include code-snippet/pivot-table/pivot-chart/chartseries/ChartSeries.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -698,10 +698,10 @@ The sample below shows how you can hide every even-numbered series in the pivot 
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/pivot-chart/chartseries-event/tagHelper %}
+{% include code-snippet/pivot-table/pivot-chart/chartseries-event/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="ChartSeriesEvent.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/pivot-chart/chartseries-event/ChartSeriesEvent.cs %}
+{% include code-snippet/pivot-table/pivot-chart/chartseries-event/ChartSeriesEvent.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -709,10 +709,10 @@ The sample below shows how you can hide every even-numbered series in the pivot 
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/pivot-chart/chartseries-event/razor %}
+{% include code-snippet/pivot-table/pivot-chart/chartseries-event/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="ChartSeriesEvent.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/pivot-chart/chartseries-event/ChartSeriesEvent.cs %}
+{% include code-snippet/pivot-table/pivot-chart/chartseries-event/ChartSeriesEvent.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -733,10 +733,10 @@ For example, in the sample below, the titles for the y-axis and x-axis are set t
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/pivot-chart/chart-axis/tagHelper %}
+{% include code-snippet/pivot-table/pivot-chart/chart-axis/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="ChartAxis.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/pivot-chart/chart-axis/ChartAxis.cs %}
+{% include code-snippet/pivot-table/pivot-chart/chart-axis/ChartAxis.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -744,10 +744,10 @@ For example, in the sample below, the titles for the y-axis and x-axis are set t
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/pivot-chart/chart-axis/razor %}
+{% include code-snippet/pivot-table/pivot-chart/chart-axis/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="ChartAxis.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/pivot-chart/chart-axis/ChartAxis.cs %}
+{% include code-snippet/pivot-table/pivot-chart/chart-axis/ChartAxis.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -769,10 +769,10 @@ The example below shows how to update the text and style for multi-level labels 
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/pivot-chart/chart-multiLevelLabelRender/tagHelper %}
+{% include code-snippet/pivot-table/pivot-chart/chart-multiLevelLabelRender/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Chart-multiLevelLabelRender.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/pivot-chart/chart-multiLevelLabelRender/chart-multiLevelLabelRender.cs %}
+{% include code-snippet/pivot-table/pivot-chart/chart-multiLevelLabelRender/chart-multiLevelLabelRender.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -780,10 +780,10 @@ The example below shows how to update the text and style for multi-level labels 
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/pivot-chart/chart-multiLevelLabelRender/razor %}
+{% include code-snippet/pivot-table/pivot-chart/chart-multiLevelLabelRender/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Chart-multiLevelLabelRender.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/pivot-chart/chart-multiLevelLabelRender/chart-multiLevelLabelRender.cs %}
+{% include code-snippet/pivot-table/pivot-chart/chart-multiLevelLabelRender/chart-multiLevelLabelRender.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -828,10 +828,10 @@ In the following code example, you can see how to set a different legend shape a
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/pivot-chart/legend/tagHelper %}
+{% include code-snippet/pivot-table/pivot-chart/legend/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Legend.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/pivot-chart/legend/Legend.cs %}
+{% include code-snippet/pivot-table/pivot-chart/legend/Legend.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -839,10 +839,10 @@ In the following code example, you can see how to set a different legend shape a
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/pivot-chart/legend/razor %}
+{% include code-snippet/pivot-table/pivot-chart/legend/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Legend.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/pivot-chart/legend/Legend.cs %}
+{% include code-snippet/pivot-table/pivot-chart/legend/Legend.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -867,10 +867,10 @@ In the following code sample, both marker and crosshair options are enabled and 
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/pivot-chart/marker/tagHelper %}
+{% include code-snippet/pivot-table/pivot-chart/marker/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Marker.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/pivot-chart/marker/Marker.cs %}
+{% include code-snippet/pivot-table/pivot-chart/marker/Marker.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -878,10 +878,10 @@ In the following code sample, both marker and crosshair options are enabled and 
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/pivot-chart/marker/razor %}
+{% include code-snippet/pivot-table/pivot-chart/marker/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Marker.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/pivot-chart/marker/Marker.cs %}
+{% include code-snippet/pivot-table/pivot-chart/marker/Marker.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -915,10 +915,10 @@ In the code sample below, all four zooming types are enabled, along with the too
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/pivot-chart/zooming/tagHelper %}
+{% include code-snippet/pivot-table/pivot-chart/zooming/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Zooming.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/pivot-chart/zooming/Zooming.cs %}
+{% include code-snippet/pivot-table/pivot-chart/zooming/Zooming.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -926,10 +926,10 @@ In the code sample below, all four zooming types are enabled, along with the too
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/pivot-chart/zooming/razor %}
+{% include code-snippet/pivot-table/pivot-chart/zooming/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Zooming.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/pivot-chart/zooming/Zooming.cs %}
+{% include code-snippet/pivot-table/pivot-chart/zooming/Zooming.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -950,10 +950,10 @@ The code below shows how to change the default tooltip appearance and settings i
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/pivot-chart/chart-tooltip/tagHelper %}
+{% include code-snippet/pivot-table/pivot-chart/chart-tooltip/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="ChartTooltip.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/pivot-chart/chart-tooltip/ChartTooltip.cs %}
+{% include code-snippet/pivot-table/pivot-chart/chart-tooltip/ChartTooltip.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -961,10 +961,10 @@ The code below shows how to change the default tooltip appearance and settings i
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/pivot-chart/chart-tooltip/razor %}
+{% include code-snippet/pivot-table/pivot-chart/chart-tooltip/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="ChartTooltip.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/pivot-chart/chart-tooltip/ChartTooltip.cs %}
+{% include code-snippet/pivot-table/pivot-chart/chart-tooltip/ChartTooltip.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -995,10 +995,10 @@ The example below shows how to export the pivot chart using an external button l
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/pivot-chart/export/tagHelper %}
+{% include code-snippet/pivot-table/pivot-chart/export/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Export.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/pivot-chart/export/Export.cs %}
+{% include code-snippet/pivot-table/pivot-chart/export/Export.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -1006,10 +1006,10 @@ The example below shows how to export the pivot chart using an external button l
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/pivot-chart/export/razor %}
+{% include code-snippet/pivot-table/pivot-chart/export/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Export.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/pivot-chart/export/Export.cs %}
+{% include code-snippet/pivot-table/pivot-chart/export/Export.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -1028,10 +1028,10 @@ In the example below, clicking an external button labeled "Print Chart" calls th
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/pivot-chart/print/tagHelper %}
+{% include code-snippet/pivot-table/pivot-chart/print/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Print.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/pivot-chart/print/Print.cs %}
+{% include code-snippet/pivot-table/pivot-chart/print/Print.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -1039,10 +1039,10 @@ In the example below, clicking an external button labeled "Print Chart" calls th
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/pivot-chart/print/razor %}
+{% include code-snippet/pivot-table/pivot-chart/print/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Print.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/pivot-chart/print/Print.cs %}
+{% include code-snippet/pivot-table/pivot-chart/print/Print.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

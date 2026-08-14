@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Label filtering in Vue Pivotview component | Syncfusion
-description: Learn here all about Label filtering in Syncfusion Vue Pivotview component of Syncfusion Essential JS 2 and more.
+title: Label Filtering in Vue Pivot Table | Syncfusion
+description: Learn how the Vue Pivot Table applies label filtering to keep specific text, date, or number header values, available in the UI and via the filterSettings code-behind option.
 control: Label filtering 
-platform: grid-sdk
+platform: ej2-vue
 documentation: ug
-domainurl: https://help.syncfusion.com/grid-sdk
+domainurl: ##DomainURL##
 ---
 
-# Label filtering in Vue Pivotview component
+# Label Filtering in Vue Pivot Table
 
 Label filtering allows you to view the pivot table with particular records of a field based on headers. Label filtering can be enabled by setting the `allowLabelFilter` property to **true**. The following are the three different types of available label filtering:
 
@@ -53,14 +53,14 @@ Operators that can be used in label filtering are:
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/default-cs151/app-composition.vue %}
+{% include code-snippet/pivot-grid/default-cs151/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/default-cs151/app.vue %}
+{% include code-snippet/pivot-grid/default-cs151/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/default-cs151" %}
+{% previewsample "page.domainurl/code-snippet/pivot-grid/default-cs151" %}
 
 ## Date filtering through code
 
@@ -91,14 +91,14 @@ Operators that can be used in date filtering are:
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/default-cs152/app-composition.vue %}
+{% include code-snippet/pivot-grid/default-cs152/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/default-cs152/app.vue %}
+{% include code-snippet/pivot-grid/default-cs152/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/default-cs152" %}
+{% previewsample "page.domainurl/code-snippet/pivot-grid/default-cs152" %}
 
 ## Number filtering through code
 
@@ -129,14 +129,14 @@ Operators that can be used in date filtering are:
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/default-cs153/app-composition.vue %}
+{% include code-snippet/pivot-grid/default-cs153/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/pivot-table/default-cs153/app.vue %}
+{% include code-snippet/pivot-grid/default-cs153/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/default-cs153" %}
+{% previewsample "page.domainurl/code-snippet/pivot-grid/default-cs153" %}
 
 ## See Also
 

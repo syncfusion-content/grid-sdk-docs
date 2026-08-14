@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Virtual scrolling in Angular Pivot Table component | Syncfusion
-description: Learn here all about Virtual scrolling in Syncfusion Angular Pivot Table component of Syncfusion Essential JS 2 and more.
-platform: grid-sdk
+title: Virtual Scrolling in Angular Pivot Table | Syncfusion
+description: Learn how the Angular Pivot Table loads large datasets on demand using virtual scrolling for rows and columns.
+platform: ej2-angular
 control: Virtual scrolling 
 documentation: ug
-domainurl: https://help.syncfusion.com/grid-sdk
+domainurl: ##DomainURL##
 ---
 
 <!-- markdownlint-disable MD036 -->
 
-# Virtual scrolling in Angular Pivot Table component
+# Virtual Scrolling in Angular Pivot Table
 
 ## Virtual Scrolling
 
@@ -20,15 +20,15 @@ To use the virtual scrolling feature, inject the `VirtualScrollService` module i
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs300/src/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs300/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs300/src/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs300/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs300" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs300" %}
 
 ## Virtual scrolling with single page mode
 
@@ -38,15 +38,15 @@ To optimize performance, set the [allowSinglePage](https://ej2.syncfusion.com/an
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/single-page-mode/src/app.component.ts %}
+{% include code-snippet/pivot-grid/single-page-mode/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/single-page-mode/src/main.ts %}
+{% include code-snippet/pivot-grid/single-page-mode/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/single-page-mode" %}
+{% previewsample "page.domainurl/samples/pivot-grid/single-page-mode" %}
 
 **Limitations for virtual scrolling**
 
@@ -70,15 +70,15 @@ Here's how to make virtual scrolling work with a static field list:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs302/src/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs302/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs302/src/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs302/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs302" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs302" %}
 
 ## See also
 

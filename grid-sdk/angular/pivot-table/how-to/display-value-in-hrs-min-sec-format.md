@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Display string values in pivot cells in Angular Pivotview | Syncfusion
-description: Learn how to display custom string values in pivot table value cells using aggregateCellInfo event in Syncfusion Angular Pivotview component.
-platform: grid-sdk
+title: How to Display String Values in Pivot Table Cells in Angular Pivot Table | Syncfusion
+description: Step-by-step example showing how to display string values in pivot table cells in the Angular Pivot Table, with code snippets and property references.
+platform: ej2-angular
 control: Display string value to pivot table values
 documentation: ug
-domainurl: https://help.syncfusion.com/grid-sdk
+domainurl: ##DomainURL##
 ---
 
-# Display string values in pivot table cells
+# How to Display String Values in Pivot Table Cells in Angular Pivot Table
 
 The pivot table allows users to display custom string values in value cells by using the [aggregateCellInfo](https://ej2.syncfusion.com/angular/documentation/api/pivotview/index-default#aggregatecellinfo) event. This is useful when you need to format numeric values into readable strings, such as converting seconds to time format or applying custom formatting rules.
 
@@ -18,12 +18,12 @@ The following example demonstrates how to convert numeric values in the **Sold**
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs314/src/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs314/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs314/src/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs314/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs314" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs314" %}

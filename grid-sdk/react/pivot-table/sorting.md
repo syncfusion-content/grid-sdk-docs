@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Sorting in React Pivot Table component | Syncfusion
-description: Learn here all about Sorting in Syncfusion React Pivot Table component of Syncfusion Essential JS 2 and more.
-platform: grid-sdk
-control: Sorting 
+title: Sorting in React Pivot Table | Syncfusion
+description: Learn how the React Pivot Table sorts row and column members in ascending, descending, or custom order using the sortSettings property.
+platform: ej2-react
+control: Pivot Table
 documentation: ug
-domainurl: https://help.syncfusion.com/grid-sdk
+domainurl: ##DomainURL##
 ---
 
-# Sorting in React Pivot Table Component
+# Sorting in React Pivot Table
 
 To have a quick glance on how to sort data in the React Pivot Table, watch this video:
 
@@ -48,20 +48,20 @@ The following example demonstrates how to configure the Pivot Table to enable me
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs278/app/App.jsx %}
+{% include code-snippet/pivot-table/default-cs278/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs278/app/App.tsx %}
+{% include code-snippet/pivot-table/default-cs278/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs278/app/datasource.jsx %}
+{% include code-snippet/pivot-table/default-cs278/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs278/app/datasource.tsx %}
+{% include code-snippet/pivot-table/default-cs278/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs278" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs278" %}
 
 ### Alphanumeric Sorting
 
@@ -71,20 +71,20 @@ When [`dataType`](https://ej2.syncfusion.com/react/documentation/api/pivotview/f
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs279/app/App.jsx %}
+{% include code-snippet/pivot-table/default-cs279/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs279/app/App.tsx %}
+{% include code-snippet/pivot-table/default-cs279/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs279/app/datasource.jsx %}
+{% include code-snippet/pivot-table/default-cs279/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs279/app/datasource.tsx %}
+{% include code-snippet/pivot-table/default-cs279/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs279" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs279" %}
 
 ### Custom Sorting
 
@@ -98,20 +98,20 @@ To set up custom sorting, use the following properties:
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs280/app/App.jsx %}
+{% include code-snippet/pivot-table/default-cs280/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs280/app/App.tsx %}
+{% include code-snippet/pivot-table/default-cs280/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs280/app/datasource.jsx %}
+{% include code-snippet/pivot-table/default-cs280/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs280/app/datasource.tsx %}
+{% include code-snippet/pivot-table/default-cs280/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs280" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs280" %}
 
 ## Value Sorting
 
@@ -127,20 +127,20 @@ You can also configure value sorting programmatically using the [`valueSortSetti
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs281/app/App.jsx %}
+{% include code-snippet/pivot-table/default-cs281/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs281/app/App.tsx %}
+{% include code-snippet/pivot-table/default-cs281/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs281/app/datasource.jsx %}
+{% include code-snippet/pivot-table/default-cs281/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs281/app/datasource.tsx %}
+{% include code-snippet/pivot-table/default-cs281/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs281" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs281" %}
 
 ### Multiple Axis Sorting
 
@@ -156,20 +156,20 @@ Multiple axis sorting allows simultaneous sorting of value fields in both row an
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs331/app/App.jsx %}
+{% include code-snippet/pivot-table/default-cs331/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs331/app/App.tsx %}
+{% include code-snippet/pivot-table/default-cs331/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs331/app/datasource.jsx %}
+{% include code-snippet/pivot-table/default-cs331/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs331/app/datasource.tsx %}
+{% include code-snippet/pivot-table/default-cs331/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs331" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs331" %}
 
 ## Event
 
@@ -191,20 +191,20 @@ The example below demonstrates how to use the [`onHeadersSort`](https://ej2.sync
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs282/app/App.jsx %}
+{% include code-snippet/pivot-table/default-cs282/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs282/app/App.tsx %}
+{% include code-snippet/pivot-table/default-cs282/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs282/app/datasource.jsx %}
+{% include code-snippet/pivot-table/default-cs282/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs282/app/datasource.tsx %}
+{% include code-snippet/pivot-table/default-cs282/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs282" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs282" %}
 
 ### ActionBegin
 
@@ -227,20 +227,20 @@ In the sample below, the sort action is restricted by setting the **args.cancel*
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs283/app/App.jsx %}
+{% include code-snippet/pivot-table/default-cs283/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs283/app/App.tsx %}
+{% include code-snippet/pivot-table/default-cs283/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs283/app/datasource.jsx %}
+{% include code-snippet/pivot-table/default-cs283/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs283/app/datasource.tsx %}
+{% include code-snippet/pivot-table/default-cs283/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs283" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs283" %}
 
 ### ActionComplete
 
@@ -261,20 +261,20 @@ The event [`actionComplete`](https://ej2.syncfusion.com/react/documentation/api/
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs284/app/App.jsx %}
+{% include code-snippet/pivot-table/default-cs284/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs284/app/App.tsx %}
+{% include code-snippet/pivot-table/default-cs284/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs284/app/datasource.jsx %}
+{% include code-snippet/pivot-table/default-cs284/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs284/app/datasource.tsx %}
+{% include code-snippet/pivot-table/default-cs284/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs284" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs284" %}
 
 ### ActionFailure
 
@@ -291,17 +291,17 @@ The [`actionFailure`](https://ej2.syncfusion.com/react/documentation/api/pivotvi
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs285/app/App.jsx %}
+{% include code-snippet/pivot-table/default-cs285/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs285/app/App.tsx %}
+{% include code-snippet/pivot-table/default-cs285/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs285/app/datasource.jsx %}
+{% include code-snippet/pivot-table/default-cs285/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs285/app/datasource.tsx %}
+{% include code-snippet/pivot-table/default-cs285/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs285" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs285" %}

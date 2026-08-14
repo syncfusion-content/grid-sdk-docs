@@ -1,14 +1,15 @@
 ---
 layout: post
-title: Getting Started with ASP.NET MVC Pivot Table Control | Syncfusion
-description: Checkout and learn about getting started with ASP.NET MVC Pivot Table control of Syncfusion Essential JS 2 and more details.
-platform: grid-sdk
+title: Getting Started with ASP.NET MVC Pivot Table | Syncfusion
+description: Learn how to create a new ASP.NET MVC Web App in Visual Studio and install Syncfusion.EJ2.AspNet.MVC plus Themes NuGet packages to render the Pivot Table.
+platform: ej2-asp-core-mvc
 control: Getting Started
-publishingplatform: grid-sdk
+publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# Getting Started with ASP.NET MVC Pivot Table Control
+
+# Getting Started with ASP.NET MVC Pivot Table
 
 This section briefly explains how to include the [ASP.NET MVC Pivot Table](https://www.syncfusion.com/aspnet-mvc-ui-controls/pivot-table) control in your ASP.NET MVC application using Visual Studio.
 
@@ -92,10 +93,10 @@ Also, register the script manager `EJS().ScriptManager()` at the end of `<body>`
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/getting-start-mvc/pivot-table/razor %}
+{% include code-snippet/pivot-table/getting-start-mvc/pivot-table/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="HomeController.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/getting-start-mvc/pivot-table/pivottable.cs %}
+{% include code-snippet/pivot-table/getting-start-mvc/pivot-table/pivottable.cs %}
 {% endhighlight %}
 {% endtabs %}
 

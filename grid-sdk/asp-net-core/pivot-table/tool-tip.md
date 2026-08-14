@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Tool Tip in ASP.NET Core Pivot Table Component
-description: Learn here all about Tool Tip in Syncfusion ASP.NET Core Pivot Table component of Syncfusion Essential JS 2 and more.
-platform: grid-sdk
+title: Tooltip in ASP.NET Core Pivot Table | Syncfusion
+description: Learn how the ASP.NET Core Pivot Table displays contextual tooltips on value cells via the showTooltip property, including row and column header info on hover.
+platform: ej2-asp-core-mvc
 control: Tool Tip
-publishingplatform: grid-sdk
+publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
 
-# Tooltip in React Pivot Table Component
+# Tooltip in ASP.NET Core Pivot Table
 
 The tooltip displays contextual information when users hover over value cells in the pivot table. It can be enabled or disabled by setting the [`showTooltip`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_ShowTooltip) property to **true** or **false**. By default, tooltip is enabled in the pivot table and shows the cell value along with row and column header information.
 
@@ -17,10 +17,10 @@ The tooltip displays contextual information when users hover over value cells in
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pivot-tooltip/tagHelper %}
+{% include code-snippet/pivot-table/pivot-tooltip/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="ToolTip.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pivot-tooltip/ToolTip.cs %}
+{% include code-snippet/pivot-table/pivot-tooltip/ToolTip.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -28,10 +28,10 @@ The tooltip displays contextual information when users hover over value cells in
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pivot-tooltip/razor %}
+{% include code-snippet/pivot-table/pivot-tooltip/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="ToolTip.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pivot-tooltip/ToolTip.cs %}
+{% include code-snippet/pivot-table/pivot-tooltip/ToolTip.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -56,10 +56,10 @@ The example below shows how to define the Pivot Table tooltip template in `index
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/tooltip-template/tagHelper %}
+{% include code-snippet/pivot-table/tooltip-template/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Tooltip-template.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/tooltip-template/tooltip-template.cs %}
+{% include code-snippet/pivot-table/tooltip-template/tooltip-template.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -67,10 +67,10 @@ The example below shows how to define the Pivot Table tooltip template in `index
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/tooltip-template/razor %}
+{% include code-snippet/pivot-table/tooltip-template/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Tooltip-template.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/tooltip-template/tooltip-template.cs %}
+{% include code-snippet/pivot-table/tooltip-template/tooltip-template.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

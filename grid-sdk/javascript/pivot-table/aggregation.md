@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Aggregation in JavaScript Pivot Table component | Syncfusion
-description: Learn here all about Aggregation in Syncfusion JavaScript Pivot Table component of Syncfusion Essential JS 2 and more.
-platform: grid-sdk
-control: Aggregation 
-publishingplatform: grid-sdk
+title: Aggregation in ##Platform_Name## Pivot Table | Syncfusion
+description: Learn how the ##Platform_Name## Pivot Table applies aggregation types like Sum, Count, and Average to value fields, with custom aggregations at runtime.
+platform: ej2-javascript
+control: Aggregation
+publishingplatform: ##Platform_Name##
 documentation: ug
-domainurl: https://help.syncfusion.com/grid-sdk
+domainurl: ##DomainURL##
 ---
 
-# Aggregation in JavaScript Pivot Table component
+# Aggregation in ##Platform_Name## Pivot Table
 
 > This feature is applicable only for the relational data source.
 
@@ -54,14 +54,14 @@ For each value field, the aggregation type can be set using the property [`type`
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs93/index.js %}
+{% include code-snippet/pivot-table/pivot-table-cs93/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs93/index.html %}
+{% include code-snippet/pivot-table/pivot-table-cs93/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs93" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs93" %}
 
 > By default, the aggregation will be considered as **Sum** to the value fields which had number type and for the value fields which had non-number type values such as string, date, datetime, boolean, etc., the aggregation type will be considered as **Count**.
 
@@ -83,14 +83,14 @@ The following code demonstrates how to configure the pivot table component to di
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs94/index.js %}
+{% include code-snippet/pivot-table/pivot-table-cs94/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs94/index.html %}
+{% include code-snippet/pivot-table/pivot-table-cs94/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs94" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs94" %}
 
 ## Hiding aggregation type from button text
 
@@ -100,14 +100,14 @@ This customization enhances the clarity of the pivot table’s interface by simp
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs95/index.js %}
+{% include code-snippet/pivot-table/pivot-table-cs95/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs95/index.html %}
+{% include code-snippet/pivot-table/pivot-table-cs95/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs95" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs95" %}
 
 ## Hiding aggregation type icon from UI
 
@@ -117,14 +117,14 @@ By default, the dropdown icon to change the aggregation type is visible in the g
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs96/index.js %}
+{% include code-snippet/pivot-table/pivot-table-cs96/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs96/index.html %}
+{% include code-snippet/pivot-table/pivot-table-cs96/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs96" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs96" %}
 
 ## Event
 
@@ -144,14 +144,14 @@ The [`aggregateCellInfo`](https://ej2.syncfusion.com/javascript/documentation/ap
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs97/index.js %}
+{% include code-snippet/pivot-table/pivot-table-cs97/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs97/index.html %}
+{% include code-snippet/pivot-table/pivot-table-cs97/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs97" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs97" %}
 
 ### ActionBegin
 
@@ -171,14 +171,14 @@ In the following example, an action taken during aggregation type selection via 
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/action-events-cs1/index.js %}
+{% include code-snippet/pivot-table/action-events-cs1/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/action-events-cs1/index.html %}
+{% include code-snippet/pivot-table/action-events-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/pivot-table/action-events-cs1" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/action-events-cs1" %}
 
 ### ActionComplete
 
@@ -196,14 +196,14 @@ The [`actionComplete`](https://ej2.syncfusion.com/javascript/documentation/api/p
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/action-events-cs2/index.js %}
+{% include code-snippet/pivot-table/action-events-cs2/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/action-events-cs2/index.html %}
+{% include code-snippet/pivot-table/action-events-cs2/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/pivot-table/action-events-cs2" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/action-events-cs2" %}
 
 ### ActionFailure
 
@@ -215,12 +215,12 @@ The [`actionFailure`](https://ej2.syncfusion.com/javascript/documentation/api/pi
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/action-events-cs3/index.js %}
+{% include code-snippet/pivot-table/action-events-cs3/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/action-events-cs3/index.html %}
+{% include code-snippet/pivot-table/action-events-cs3/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/pivot-table/action-events-cs3" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/action-events-cs3" %}
 

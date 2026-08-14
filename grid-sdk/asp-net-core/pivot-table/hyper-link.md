@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Hyper Link in ASP.NET Core Pivot Table Component
-description: Learn here all about Hyper Link in Syncfusion ASP.NET Core Pivot Table component of Syncfusion Essential JS 2 and more.
-platform: grid-sdk
+title: Hyperlink in ASP.NET Core Pivot Table | Syncfusion
+description: Learn how the ASP.NET Core Pivot Table shows hyperlinks in row, column, and value cells via e-hyperlinkSettings and conditionalSettings.
+platform: ej2-asp-core-mvc
 control: Hyper Link
-publishingplatform: grid-sdk
+publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
 
-# Hyper link in ASP.NET Core Pivot Table component
+# Hyperlink in ASP.NET Core Pivot Table
 
 The Pivot Table component provides built-in support for displaying hyperlinks within individual cells. This feature allows users to link data in specific cells, enhancing interactivity and navigation.
 
@@ -48,10 +48,10 @@ Once enabled, hyperlinks will be shown consistently in row headers, column heade
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/hyper-link/all-cells/tagHelper %}
+{% include code-snippet/pivot-table/hyper-link/all-cells/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="AllCells.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/hyper-link/all-cells/AllCells.cs %}
+{% include code-snippet/pivot-table/hyper-link/all-cells/AllCells.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -59,10 +59,10 @@ Once enabled, hyperlinks will be shown consistently in row headers, column heade
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/hyper-link/all-cells/razor %}
+{% include code-snippet/pivot-table/hyper-link/all-cells/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="AllCells.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/hyper-link/all-cells/AllCells.cs %}
+{% include code-snippet/pivot-table/hyper-link/all-cells/AllCells.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -79,10 +79,10 @@ The pivot table provides a way to display hyperlinks specifically in **row heade
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/hyper-link/row-header/tagHelper %}
+{% include code-snippet/pivot-table/hyper-link/row-header/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="RowHeader.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/hyper-link/row-header/RowHeader.cs %}
+{% include code-snippet/pivot-table/hyper-link/row-header/RowHeader.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -90,10 +90,10 @@ The pivot table provides a way to display hyperlinks specifically in **row heade
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/hyper-link/row-header/razor %}
+{% include code-snippet/pivot-table/hyper-link/row-header/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="RowHeader.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/hyper-link/row-header/RowHeader.cs %}
+{% include code-snippet/pivot-table/hyper-link/row-header/RowHeader.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -110,10 +110,10 @@ The pivot table provides an option to display hyperlinks specifically in column 
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/hyper-link/column-header/tagHelper %}
+{% include code-snippet/pivot-table/hyper-link/column-header/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="ColumnHeader.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/hyper-link/column-header/ColumnHeader.cs %}
+{% include code-snippet/pivot-table/hyper-link/column-header/ColumnHeader.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -121,10 +121,10 @@ The pivot table provides an option to display hyperlinks specifically in column 
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/hyper-link/column-header/razor %}
+{% include code-snippet/pivot-table/hyper-link/column-header/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="ColumnHeader.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/hyper-link/column-header/ColumnHeader.cs %}
+{% include code-snippet/pivot-table/hyper-link/column-header/ColumnHeader.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -141,10 +141,10 @@ The pivot table provides support for displaying hyperlinks specifically in value
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/hyper-link/value-cells/tagHelper %}
+{% include code-snippet/pivot-table/hyper-link/value-cells/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="ValueCells.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/hyper-link/value-cells/ValueCells.cs %}
+{% include code-snippet/pivot-table/hyper-link/value-cells/ValueCells.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -152,10 +152,10 @@ The pivot table provides support for displaying hyperlinks specifically in value
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/hyper-link/value-cells/razor %}
+{% include code-snippet/pivot-table/hyper-link/value-cells/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="ValueCells.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/hyper-link/value-cells/ValueCells.cs %}
+{% include code-snippet/pivot-table/hyper-link/value-cells/ValueCells.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -172,10 +172,10 @@ The pivot table provides support for displaying hyperlinks specifically in summa
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/hyper-link/summary-cells/tagHelper %}
+{% include code-snippet/pivot-table/hyper-link/summary-cells/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="SummaryCells.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/hyper-link/summary-cells/SummaryCells.cs %}
+{% include code-snippet/pivot-table/hyper-link/summary-cells/SummaryCells.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -183,10 +183,10 @@ The pivot table provides support for displaying hyperlinks specifically in summa
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/hyper-link/summary-cells/razor %}
+{% include code-snippet/pivot-table/hyper-link/summary-cells/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="SummaryCells.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/hyper-link/summary-cells/SummaryCells.cs %}
+{% include code-snippet/pivot-table/hyper-link/summary-cells/SummaryCells.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -210,10 +210,10 @@ In the example below, the pivot table is configured to display hyperlinks only i
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/hyper-link/conditions/tagHelper %}
+{% include code-snippet/pivot-table/hyper-link/conditions/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Conditions.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/hyper-link/conditions/Conditions.cs %}
+{% include code-snippet/pivot-table/hyper-link/conditions/Conditions.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -221,10 +221,10 @@ In the example below, the pivot table is configured to display hyperlinks only i
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/hyper-link/conditions/razor %}
+{% include code-snippet/pivot-table/hyper-link/conditions/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Conditions.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/hyper-link/conditions/Conditions.cs %}
+{% include code-snippet/pivot-table/hyper-link/conditions/Conditions.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -246,10 +246,10 @@ You can apply conditions for specific row or column using [`label`](https://help
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/hyper-link/label-conditions/tagHelper %}
+{% include code-snippet/pivot-table/hyper-link/label-conditions/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="LabelConditions.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/hyper-link/label-conditions/LabelConditions.cs %}
+{% include code-snippet/pivot-table/hyper-link/label-conditions/LabelConditions.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -257,10 +257,10 @@ You can apply conditions for specific row or column using [`label`](https://help
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/hyper-link/label-conditions/razor %}
+{% include code-snippet/pivot-table/hyper-link/label-conditions/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="LabelConditions.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/hyper-link/label-conditions/LabelConditions.cs %}
+{% include code-snippet/pivot-table/hyper-link/label-conditions/LabelConditions.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -278,10 +278,10 @@ N> The **dot(.)** character in **FY 2015.Q1.Units Sold** is used by default to i
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/hyper-link/headers/tagHelper %}
+{% include code-snippet/pivot-table/hyper-link/headers/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Headers.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/hyper-link/headers/Headers.cs %}
+{% include code-snippet/pivot-table/hyper-link/headers/Headers.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -289,10 +289,10 @@ N> The **dot(.)** character in **FY 2015.Q1.Units Sold** is used by default to i
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/hyper-link/headers/razor %}
+{% include code-snippet/pivot-table/hyper-link/headers/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Headers.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/hyper-link/headers/Headers.cs %}
+{% include code-snippet/pivot-table/hyper-link/headers/Headers.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}
@@ -318,10 +318,10 @@ In the example below, when a hyperlink cell is clicked, a custom attribute (**da
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/hyper-link/event/tagHelper %}
+{% include code-snippet/pivot-table/hyper-link/event/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Event.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/hyper-link/event/Event.cs %}
+{% include code-snippet/pivot-table/hyper-link/event/Event.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -329,10 +329,10 @@ In the example below, when a hyperlink cell is clicked, a custom attribute (**da
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/hyper-link/event/razor %}
+{% include code-snippet/pivot-table/hyper-link/event/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="Event.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/hyper-link/event/Event.cs %}
+{% include code-snippet/pivot-table/hyper-link/event/Event.cs %}
 {% endhighlight %}
 {% endtabs %}
 {% endif %}

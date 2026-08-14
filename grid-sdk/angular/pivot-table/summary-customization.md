@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Summary customization in Angular Pivotview component | Syncfusion
-description: Learn here all about Summary customization in Syncfusion Angular Pivotview component of Syncfusion Essential JS 2 and more.
-platform: grid-sdk
+title: Summary Customization in Angular Pivot Table | Syncfusion
+description: Learn how the Angular Pivot Table shows, hides, and positions grand totals and sub-totals for rows and columns.
+platform: ej2-angular
 control: Summary customization 
 documentation: ug
-domainurl: https://help.syncfusion.com/grid-sdk
+domainurl: ##DomainURL##
 ---
 
-# Summary customization in Angular Pivotview component
+# Summary Customization in Angular Pivot Table
 
 The Pivot Table component allows users to easily customize the display of grand totals and sub-totals. This documentation explains how to control their visibility and positioning to suit your data analysis needs.
 
@@ -24,15 +24,15 @@ The Pivot Table component provides options to display or hide grand totals for r
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs283/src/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs283/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs283/src/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs283/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs283" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs283" %}
 
 ## Set grand totals position
 
@@ -42,15 +42,15 @@ To display grand totals at the top of both rows and columns, set the [`grandTota
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs284/src/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs284/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs284/src/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs284/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs284" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs284" %}
 
 ## Show or hide sub-totals
 
@@ -64,15 +64,15 @@ The PivotTable component enables showing or hiding sub-totals for rows, columns,
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs285/src/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs285/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs285/src/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs285/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs285" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs285" %}
 
 ## Show or hide sub-totals for specific fields
 
@@ -82,15 +82,15 @@ The Pivot Table component allows users to show or hide sub-totals for specific f
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs286/src/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs286/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs286/src/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs286/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs286" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs286" %}
 
 ## Show sub-totals at top or bottom
 
@@ -100,29 +100,29 @@ To display sub-totals at the top of header groups for both rows and columns, set
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs303/src/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs303/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs303/src/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs303/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs303" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs303" %}
 
 To display sub-totals at the bottom of header groups for both rows and columns, set the [`subTotalsPosition`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#subtotalsposition) property in [`dataSourceSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/datasourcesettings) to **Bottom**.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs304/src/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs304/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs304/src/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs304/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs304" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs304" %}
 
 ## Show or hide totals using toolbar
 
@@ -132,12 +132,12 @@ The toolbar also includes options for "Grand Totals Position" and "Subtotals Pos
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs287/src/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs287/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs287/src/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs287/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs287" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs287" %}

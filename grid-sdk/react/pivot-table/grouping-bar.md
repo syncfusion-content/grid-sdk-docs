@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Grouping bar in React Pivot Table component | Syncfusion
-description: Learn here all about Grouping bar in Syncfusion React Pivot Table component of Syncfusion Essential JS 2 and more.
-control: Grouping bar
-platform: grid-sdk
+title: Grouping bar in React Pivot Table | Syncfusion
+description: Learn how the React Pivot Table exposes a grouping bar for dragging, dropping, filtering, and sorting fields interactively at runtime.
+control: Pivot Table
+platform: ej2-react
 documentation: ug
-domainurl: https://help.syncfusion.com/grid-sdk
+domainurl: ##DomainURL##
 ---
 
-# Grouping bar in React Pivot Table component
+# Grouping bar in React Pivot Table
 
 To have a quick glance on how to enable grouping bar in the React Pivot Table, watch this video:
 
@@ -28,20 +28,20 @@ To use the grouping bar, you need to inject the `GroupingBar` module in the Pivo
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs124/app/App.jsx %}
+{% include code-snippet/pivot-table/default-cs124/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs124/app/App.tsx %}
+{% include code-snippet/pivot-table/default-cs124/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs124/app/datasource.jsx %}
+{% include code-snippet/pivot-table/default-cs124/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs124/app/datasource.tsx %}
+{% include code-snippet/pivot-table/default-cs124/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs124" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs124" %}
 
 The grouping bar offers additional options to modify its appearance and behavior using the [`groupingBarSettings`](https://ej2.syncfusion.com/react/documentation/api/pivotview/index-default#groupingbarsettings) property.
 
@@ -53,20 +53,20 @@ To display the fields panel, set the [`showFieldsPanel`](https://ej2.syncfusion.
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs125/app/App.jsx %}
+{% include code-snippet/pivot-table/default-cs125/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs125/app/App.tsx %}
+{% include code-snippet/pivot-table/default-cs125/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs125/app/datasource.jsx %}
+{% include code-snippet/pivot-table/default-cs125/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs125/app/datasource.tsx %}
+{% include code-snippet/pivot-table/default-cs125/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs125" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs125" %}
 
 ## Show or hide all filter icon
 
@@ -78,20 +78,20 @@ By default, the filter icon appears next to each field in the grouping bar. If y
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs126/app/App.jsx %}
+{% include code-snippet/pivot-table/default-cs126/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs126/app/App.tsx %}
+{% include code-snippet/pivot-table/default-cs126/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs126/app/datasource.jsx %}
+{% include code-snippet/pivot-table/default-cs126/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs126/app/datasource.tsx %}
+{% include code-snippet/pivot-table/default-cs126/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs126" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs126" %}
 
 ## Show or hide specific filter icon
 
@@ -101,20 +101,20 @@ In the sample below, the filter icons for the "Quarter" and "Products" fields ar
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs127/app/App.jsx %}
+{% include code-snippet/pivot-table/default-cs127/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs127/app/App.tsx %}
+{% include code-snippet/pivot-table/default-cs127/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs127/app/datasource.jsx %}
+{% include code-snippet/pivot-table/default-cs127/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs127/app/datasource.tsx %}
+{% include code-snippet/pivot-table/default-cs127/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs127" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs127" %}
 
 ## Show or hide all sort icon
 
@@ -126,20 +126,20 @@ To disable the sort option, set the [`showSortIcon`](https://ej2.syncfusion.com/
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs128/app/App.jsx %}
+{% include code-snippet/pivot-table/default-cs128/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs128/app/App.tsx %}
+{% include code-snippet/pivot-table/default-cs128/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs128/app/datasource.jsx %}
+{% include code-snippet/pivot-table/default-cs128/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs128/app/datasource.tsx %}
+{% include code-snippet/pivot-table/default-cs128/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs128" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs128" %}
 
 ## Show or hide specific sort icon
 
@@ -149,20 +149,20 @@ In the example below, the sort icons for the "Quarter" and "Country" fields are 
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs129/app/App.jsx %}
+{% include code-snippet/pivot-table/default-cs129/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs129/app/App.tsx %}
+{% include code-snippet/pivot-table/default-cs129/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs129/app/datasource.jsx %}
+{% include code-snippet/pivot-table/default-cs129/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs129/app/datasource.tsx %}
+{% include code-snippet/pivot-table/default-cs129/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs129" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs129" %}
 
 ## Show or hide all remove icon
 
@@ -174,20 +174,20 @@ If you want to hide the remove icon, set the [`showRemoveIcon`](https://ej2.sync
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs130/app/App.jsx %}
+{% include code-snippet/pivot-table/default-cs130/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs130/app/App.tsx %}
+{% include code-snippet/pivot-table/default-cs130/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs130/app/datasource.jsx %}
+{% include code-snippet/pivot-table/default-cs130/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs130/app/datasource.tsx %}
+{% include code-snippet/pivot-table/default-cs130/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs130" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs130" %}
 
 ## Show or hide a specific remove icon
 
@@ -197,20 +197,20 @@ In the example below, the remove icon for the "Year", "Sold", and "Products" fie
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs131/app/App.jsx %}
+{% include code-snippet/pivot-table/default-cs131/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs131/app/App.tsx %}
+{% include code-snippet/pivot-table/default-cs131/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs131/app/datasource.jsx %}
+{% include code-snippet/pivot-table/default-cs131/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs131/app/datasource.tsx %}
+{% include code-snippet/pivot-table/default-cs131/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs131" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs131" %}
 
 ## Disable all fields from dragging
 
@@ -218,20 +218,20 @@ In the Pivot Table, the grouping bar lets users move fields between the row, col
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs132/app/App.jsx %}
+{% include code-snippet/pivot-table/default-cs132/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs132/app/App.tsx %}
+{% include code-snippet/pivot-table/default-cs132/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs132/app/datasource.jsx %}
+{% include code-snippet/pivot-table/default-cs132/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs132/app/datasource.tsx %}
+{% include code-snippet/pivot-table/default-cs132/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs132" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs132" %}
 
 ## Disable specific field from dragging
 
@@ -241,20 +241,20 @@ In the example below, users cannot drag the "Year" and "Products" fields. This s
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs133/app/App.jsx %}
+{% include code-snippet/pivot-table/default-cs133/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs133/app/App.tsx %}
+{% include code-snippet/pivot-table/default-cs133/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs133/app/datasource.jsx %}
+{% include code-snippet/pivot-table/default-cs133/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs133/app/datasource.tsx %}
+{% include code-snippet/pivot-table/default-cs133/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs133" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs133" %}
 
 ## Remove specific field(s) from displaying
 
@@ -266,20 +266,20 @@ To exclude specific fields, add the field names to the [`excludeFields`](https:/
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs134/app/App.jsx %}
+{% include code-snippet/pivot-table/default-cs134/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs134/app/App.tsx %}
+{% include code-snippet/pivot-table/default-cs134/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs134/app/datasource.jsx %}
+{% include code-snippet/pivot-table/default-cs134/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs134/app/datasource.tsx %}
+{% include code-snippet/pivot-table/default-cs134/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs134" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs134" %}
 
 ## Changing aggregation type of value fields at runtime
 
@@ -289,20 +289,20 @@ By default, the icon for setting the aggregation type is visible in the grouping
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs135/app/App.jsx %}
+{% include code-snippet/pivot-table/default-cs135/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs135/app/App.tsx %}
+{% include code-snippet/pivot-table/default-cs135/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs135/app/datasource.jsx %}
+{% include code-snippet/pivot-table/default-cs135/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs135/app/datasource.tsx %}
+{% include code-snippet/pivot-table/default-cs135/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs135" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs135" %}
 
 ## Show or hide specific dropdown icon
 
@@ -312,20 +312,20 @@ In the following example, the dropdown icon for the "Sold" field is hidden:
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs136/app/App.jsx %}
+{% include code-snippet/pivot-table/default-cs136/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs136/app/App.tsx %}
+{% include code-snippet/pivot-table/default-cs136/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs136/app/datasource.jsx %}
+{% include code-snippet/pivot-table/default-cs136/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs136/app/datasource.tsx %}
+{% include code-snippet/pivot-table/default-cs136/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs136" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs136" %}
 
 > The following properties—[`showFilterIcon`](https://ej2.syncfusion.com/react/documentation/api/pivotview/fieldoptionsmodel#showfiltericon), [`showSortIcon`](https://ej2.syncfusion.com/react/documentation/api/pivotview/fieldoptionsmodel#showsorticon), [`showValueTypeIcon`](https://ej2.syncfusion.com/react/documentation/api/pivotview/fieldoptionsmodel#showvaluetypeicon), and [`allowDragAndDrop`](https://ej2.syncfusion.com/react/documentation/api/pivotview/fieldoptionsmodel#allowdraganddrop)—in the fields of [`dataSourceSettings`](https://ej2.syncfusion.com/react/documentation/api/pivotview/datasourcesettings) apply to both the grouping bar and field list.
 
@@ -339,20 +339,20 @@ The **Values** button appears in the grouping bar when the [`showValuesButton`](
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs137/app/App.jsx %}
+{% include code-snippet/pivot-table/default-cs137/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs137/app/App.tsx %}
+{% include code-snippet/pivot-table/default-cs137/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs137/app/datasource.jsx %}
+{% include code-snippet/pivot-table/default-cs137/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs137/app/datasource.tsx %}
+{% include code-snippet/pivot-table/default-cs137/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs137" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs137" %}
 
 ## Event
 
@@ -369,20 +369,20 @@ For example, you can use this event to change the caption of the [`droppedField`
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs138/app/App.jsx %}
+{% include code-snippet/pivot-table/default-cs138/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs138/app/App.tsx %}
+{% include code-snippet/pivot-table/default-cs138/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs138/app/datasource.jsx %}
+{% include code-snippet/pivot-table/default-cs138/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs138/app/datasource.tsx %}
+{% include code-snippet/pivot-table/default-cs138/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs138" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs138" %}
 
 ### FieldDragStart
 
@@ -398,20 +398,20 @@ In the following example, the drag action is prevented only for fields placed in
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs139/app/App.jsx %}
+{% include code-snippet/pivot-table/default-cs139/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs139/app/App.tsx %}
+{% include code-snippet/pivot-table/default-cs139/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs139/app/datasource.jsx %}
+{% include code-snippet/pivot-table/default-cs139/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs139/app/datasource.tsx %}
+{% include code-snippet/pivot-table/default-cs139/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs139" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs139" %}
 
 ### FieldDrop
 
@@ -429,20 +429,20 @@ In the example below, dropping any field into the "Values" axis is prevented. Th
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs140/app/App.jsx %}
+{% include code-snippet/pivot-table/default-cs140/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs140/app/App.tsx %}
+{% include code-snippet/pivot-table/default-cs140/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs140/app/datasource.jsx %}
+{% include code-snippet/pivot-table/default-cs140/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs140/app/datasource.tsx %}
+{% include code-snippet/pivot-table/default-cs140/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs140" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs140" %}
 
 ### FieldRemove
 
@@ -460,20 +460,20 @@ In the following example, the field "Country" cannot be removed from the report 
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs141/app/App.jsx %}
+{% include code-snippet/pivot-table/default-cs141/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs141/app/App.tsx %}
+{% include code-snippet/pivot-table/default-cs141/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs141/app/datasource.jsx %}
+{% include code-snippet/pivot-table/default-cs141/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs141/app/datasource.tsx %}
+{% include code-snippet/pivot-table/default-cs141/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs141" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs141" %}
 
 ### AggregateMenuOpen
 
@@ -490,20 +490,20 @@ In the following sample, the dropdown menu for the "Amount" field is customized 
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs142/app/App.jsx %}
+{% include code-snippet/pivot-table/default-cs142/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs142/app/App.tsx %}
+{% include code-snippet/pivot-table/default-cs142/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs142/app/datasource.jsx %}
+{% include code-snippet/pivot-table/default-cs142/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs142/app/datasource.tsx %}
+{% include code-snippet/pivot-table/default-cs142/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs142" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs142" %}
 
 > The [`aggregateMenuOpen`](https://ej2.syncfusion.com/react/documentation/api/pivotview/index-default#aggregatemenuopen), [`fieldRemove`](https://ej2.syncfusion.com/react/documentation/api/pivotview/index-default#fieldremove), [`fieldDrop`](https://ej2.syncfusion.com/react/documentation/api/pivotview/index-default#fielddrop), [`fieldDragStart`](https://ej2.syncfusion.com/react/documentation/api/pivotview/index-default#fielddragstart), and [`onFieldDropped`](https://ej2.syncfusion.com/react/documentation/api/pivotview/index-default#onfielddropped) events are available for both the grouping bar and field list.
 
@@ -532,20 +532,20 @@ For example, in the sample below, users can restrict actions like sorting or fil
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs143/app/App.jsx %}
+{% include code-snippet/pivot-table/default-cs143/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs143/app/App.tsx %}
+{% include code-snippet/pivot-table/default-cs143/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs143/app/datasource.jsx %}
+{% include code-snippet/pivot-table/default-cs143/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs143/app/datasource.tsx %}
+{% include code-snippet/pivot-table/default-cs143/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs143" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs143" %}
 
 ### ActionComplete
 
@@ -573,20 +573,20 @@ The event provides the following parameters:
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs144/app/App.jsx %}
+{% include code-snippet/pivot-table/default-cs144/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs144/app/App.tsx %}
+{% include code-snippet/pivot-table/default-cs144/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs144/app/datasource.jsx %}
+{% include code-snippet/pivot-table/default-cs144/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs144/app/datasource.tsx %}
+{% include code-snippet/pivot-table/default-cs144/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs144" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs144" %}
 
 ### ActionFailure
 
@@ -610,20 +610,20 @@ When this event is triggered, users can refer to the information in these parame
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs145/app/App.jsx %}
+{% include code-snippet/pivot-table/default-cs145/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs145/app/App.tsx %}
+{% include code-snippet/pivot-table/default-cs145/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs145/app/datasource.jsx %}
+{% include code-snippet/pivot-table/default-cs145/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs145/app/datasource.tsx %}
+{% include code-snippet/pivot-table/default-cs145/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs145" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/default-cs145" %}
 
 ## See Also
 

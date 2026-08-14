@@ -2,10 +2,10 @@
 layout: post
 title: Conditional Hyperlink in Angular Pivot Table | Syncfusion
 description: Apply conditional hyperlinks to rows or columns in the Syncfusion EJ2 Angular Pivot Table. Dynamically create unique cell links based on values.
-platform: grid-sdk
+platform: ej2-angular
 control: Apply condition based hyper link for specific row or column 
 documentation: ug
-domainurl: https://help.syncfusion.com/grid-sdk
+domainurl: ##DomainURL##
 ---
 
 # Conditional Hyperlinks for Specific Rows or Columns
@@ -19,12 +19,12 @@ You can apply conditions for specific row or column using `label` option to show
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs155/src/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs155/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs155/src/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs155/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs155" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs155" %}

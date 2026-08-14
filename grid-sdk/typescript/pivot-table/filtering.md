@@ -1,17 +1,17 @@
 ---
 layout: post
-title: Filtering in TypeScript Pivot Table component | Syncfusion
-description: Learn here all about Filtering in Syncfusion TypeScript Pivot Table component of Syncfusion Essential JS 2 and more.
-platform: grid-sdk
-control: Filtering 
-publishingplatform: grid-sdk
+title: Filtering in ##Platform_Name## Pivot Table | Syncfusion
+description: Learn how the ##Platform_Name## Pivot Table filters data using member, label, and value filters applied through the Field List, Grouping Bar, or code-behind.
+platform: ej2-javascript
+control: Filtering
+publishingplatform: ##Platform_Name##
 documentation: ug
-domainurl: https://help.syncfusion.com/grid-sdk
+domainurl: ##DomainURL##
 ---
 
 <!-- markdownlint-disable MD012 -->
 
-# Filtering in TypeScript Pivot Table component
+# Filtering in ##Platform_Name## Pivot Table
 
 Filtering helps you focus on specific data by showing only the records you need in the Pivot Table. This allows you to analyze relevant information more effectively by including or excluding specific members through the user interface or programmatically.
 
@@ -51,14 +51,14 @@ You can also configure filtering programmatically using the [`filterSettings`](h
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs362/index.ts %}
+{% include code-snippet/pivot-table/pivot-table-cs362/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs362/index.html %}
+{% include code-snippet/pivot-table/pivot-table-cs362/index.html %}
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs362" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs362" %}
 
 ### Option to select and unselect all members
 
@@ -96,14 +96,14 @@ You can control how many members are displayed in the member filter dialog using
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs363/index.ts %}
+{% include code-snippet/pivot-table/pivot-table-cs363/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs363/index.html %}
+{% include code-snippet/pivot-table/pivot-table-cs363/index.html %}
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs363" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs363" %}
 
 When the member count exceeds your set limit, you can use the search option to find specific members beyond the displayed range. For example, if your data contains 5000 members named "Node 1", "Node 2", "Node 3", and so on, and you set the [`maxNodeLimitInMemberEditor`](https://ej2.syncfusion.com/documentation/api/pivotview/index-default#maxnodelimitinmembereditor) property to **500**, only the first 500 members will appear by default. The dialog will show a message like "4500 more items. Search to refine further." To access members 501 to 5000, type the starting characters in the search box to locate the desired members. Once the members appear in the list, you can select or deselect them to apply your filtering preferences.
 
@@ -122,14 +122,14 @@ This approach prevents performance issues when working with hierarchies that con
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs364/index.ts %}
+{% include code-snippet/pivot-table/pivot-table-cs364/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs364/index.html %}
+{% include code-snippet/pivot-table/pivot-table-cs364/index.html %}
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs364" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs364" %}
 
 ![Loading members on-demand](images/ondemand_member.png)
 
@@ -154,14 +154,14 @@ The [`levelCount`](https://ej2.syncfusion.com/documentation/api/pivotview/filter
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs365/index.ts %}
+{% include code-snippet/pivot-table/pivot-table-cs365/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs365/index.html %}
+{% include code-snippet/pivot-table/pivot-table-cs365/index.html %}
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs365" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs365" %}
 
 ![Loading members based on level number](images/level-count.png)
 
@@ -193,14 +193,14 @@ To enable label filtering, set the [`allowLabelFilter`](https://ej2.syncfusion.c
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs506/index.ts %}
+{% include code-snippet/pivot-table/pivot-table-cs506/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs506/index.html %}
+{% include code-snippet/pivot-table/pivot-table-cs506/index.html %}
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs506" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs506" %}
 
 ![Filter icon in field list](images/labelfiltering_fl_icon.png)
 <br/>
@@ -251,14 +251,14 @@ The following table shows all available **operators** for label filtering:
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs366/index.ts %}
+{% include code-snippet/pivot-table/pivot-table-cs366/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs366/index.html %}
+{% include code-snippet/pivot-table/pivot-table-cs366/index.html %}
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs366" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs366" %}
 
 ### Filtering number data type through code
 
@@ -278,14 +278,14 @@ For example, to display only sales data where the "Sold" field values are less t
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs367/index.ts %}
+{% include code-snippet/pivot-table/pivot-table-cs367/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs367/index.html %}
+{% include code-snippet/pivot-table/pivot-table-cs367/index.html %}
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs367" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs367" %}
 
 ### Filtering date data type through code
 
@@ -299,14 +299,14 @@ To apply date filtering, specify your filtering criteria using the [`value1`](ht
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs368/index.ts %}
+{% include code-snippet/pivot-table/pivot-table-cs368/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs368/index.html %}
+{% include code-snippet/pivot-table/pivot-table-cs368/index.html %}
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs368" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs368" %}
 
 ### Clearing the existing label filter
 
@@ -349,14 +349,14 @@ The following table shows the available operators for value filtering:
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs369/index.ts %}
+{% include code-snippet/pivot-table/pivot-table-cs369/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs369/index.html %}
+{% include code-snippet/pivot-table/pivot-table-cs369/index.html %}
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs369" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs369" %}
 
 ![Filter icon in field list](images/labelfiltering_fl_icon.png)
 <br/>
@@ -393,14 +393,14 @@ For example, you can use the [`memberFiltering`](https://ej2.syncfusion.com/docu
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs370/index.ts %}
+{% include code-snippet/pivot-table/pivot-table-cs370/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs370/index.html %}
+{% include code-snippet/pivot-table/pivot-table-cs370/index.html %}
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs370" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs370" %}
 
 ### MemberEditorOpen
 
@@ -415,14 +415,14 @@ Here’s an example. In the Pivot Table below, only the selected member for the 
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs371/index.ts %}
+{% include code-snippet/pivot-table/pivot-table-cs371/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs371/index.html %}
+{% include code-snippet/pivot-table/pivot-table-cs371/index.html %}
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs371" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs371" %}
 
 ### ActionBegin
 
@@ -440,14 +440,14 @@ In the example below, you can prevent a filter action by setting **args.cancel**
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/action-events-cs43/index.ts %}
+{% include code-snippet/pivot-table/action-events-cs43/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/action-events-cs43/index.html %}
+{% include code-snippet/pivot-table/action-events-cs43/index.html %}
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/pivot-table/action-events-cs43" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/action-events-cs43" %}
 
 ### ActionComplete
 
@@ -467,14 +467,14 @@ The event provides the following parameters:
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/action-events-cs44/index.ts %}
+{% include code-snippet/pivot-table/action-events-cs44/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/action-events-cs44/index.html %}
+{% include code-snippet/pivot-table/action-events-cs44/index.html %}
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/pivot-table/action-events-cs44" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/action-events-cs44" %}
 
 ### ActionFailure
 
@@ -486,11 +486,11 @@ The [`actionFailure`](https://ej2.syncfusion.com/documentation/api/pivotview/ind
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/action-events-cs45/index.ts %}
+{% include code-snippet/pivot-table/action-events-cs45/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/action-events-cs45/index.html %}
+{% include code-snippet/pivot-table/action-events-cs45/index.html %}
 {% endhighlight %}
 {% endtabs %}
           
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/pivot-table/action-events-cs45" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/action-events-cs45" %}

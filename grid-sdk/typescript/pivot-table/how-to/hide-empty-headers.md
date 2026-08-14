@@ -1,12 +1,12 @@
 ---
 layout: post
 title: Hide empty headers in Javascript Pivotview component | Syncfusion
-description: Learn here all about Hide empty headers in Syncfusion TypeScript Pivot Table component of Syncfusion Essential JS 2 and more.
-platform: grid-sdk
+description: Learn here all about Hide empty headers in Syncfusion ##Platform_Name## Pivot Table component of Syncfusion Essential JS 2 and more.
+platform: ej2-javascript
 control: Hide empty headers 
-publishingplatform: grid-sdk
+publishingplatform: ##Platform_Name##
 documentation: ug
-domainurl: https://help.syncfusion.com/grid-sdk
+domainurl: ##DomainURL##
 ---
 
 # Hide empty headers in the JavaScript Pivot Table component
@@ -21,25 +21,25 @@ For example, when the raw data contains **"United Kingdom"** for the 'Country' f
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs80/index.ts %}
+{% include code-snippet/pivot-table/pivot-table-cs80/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs80/index.html %}
+{% include code-snippet/pivot-table/pivot-table-cs80/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs80" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs80" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs80/index.js %}
+{% include code-snippet/pivot-table/pivot-table-cs80/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs80/index.html %}
+{% include code-snippet/pivot-table/pivot-table-cs80/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs80" %}
+{% previewsample "page.domainurl/code-snippet/pivot-table/pivot-table-cs80" %}
 {% endif %}

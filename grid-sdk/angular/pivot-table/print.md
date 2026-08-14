@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Print in Angular Pivotview component | Syncfusion
-description: Learn here all about Print in Syncfusion Angular Pivotview component of Syncfusion Essential JS 2 and more.
-platform: grid-sdk
+title: Printing in Angular Pivot Table | Syncfusion
+description: Learn how the Angular Pivot Table prints the current grid or pivot chart view to a hard copy via the print method.
+platform: ej2-angular
 control: Print 
 documentation: ug
-domainurl: https://help.syncfusion.com/grid-sdk
+domainurl: ##DomainURL##
 ---
 
-# Print in Angular Pivotview component
+# Printing in Angular Pivot Table
 
 The Angular PivotView component supports print functionality, allowing users to print the current state of the pivot table or pivot chart. This feature enables users to generate hard copies of pivot table reports for convenient review and data sharing.
 
@@ -18,15 +18,15 @@ The rendered pivot table can be printed by invoking the [print](https://ej2.sync
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs318/src/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs318/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs318/src/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs318/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs318" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs318" %}
 
 ## Print pivot chart
 
@@ -40,12 +40,12 @@ The sample code below illustrates how to print the pivot chart through an extern
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs319/src/app.component.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs319/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs319/src/main.ts %}
+{% include code-snippet/pivot-grid/getting-started-cs319/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs319" %}
+{% previewsample "page.domainurl/samples/pivot-grid/getting-started-cs319" %}
