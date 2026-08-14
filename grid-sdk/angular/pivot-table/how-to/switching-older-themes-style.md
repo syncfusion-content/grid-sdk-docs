@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: How to Switch to Older Themes Style in Angular Pivot Table | Syncfusion
 description: Step-by-step example showing how to switch to older themes style in the Angular Pivot Table, with code snippets and property references.
@@ -66,7 +66,7 @@ For the High Contrast theme, the following CSS is required:
 
 ## Adjusting Row Height
 
-In the current theme, the height of each Pivot Table row has been reduced to make the component more compact. Users can reset the height of the Pivot Table rows using the [`rowHeight`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/gridSettings/#rowheight) property within [`gridSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/gridSettings/). In the older theme, this property was typically set to 36 pixels for desktop layouts and 48 pixels for mobile layouts. To replicate the older theme style, reset the [`rowHeight`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/gridSettings/#rowheight) accordingly.
+In the current theme, the height of each Pivot Table row has been reduced to make the component more compact. Users can reset the height of the Pivot Table rows using the [`rowHeight`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/gridSettings#rowheight) property within [`gridSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/gridSettings). In the older theme, this property was typically set to 36 pixels for desktop layouts and 48 pixels for mobile layouts. To replicate the older theme style, reset the [`rowHeight`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/gridSettings#rowheight) accordingly.
 
 The following code sample demonstrates how to replicate the older theme style:
 

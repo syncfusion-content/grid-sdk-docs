@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: OLAP in Angular Pivot Table | Syncfusion
 description: Learn how the Angular Pivot Table connects to OLAP cube sources like SSAS with providerType, catalog, cube, and axes configuration.
@@ -174,7 +174,7 @@ export class AppComponent {
 
 ```
 
-Once the Pivot Table is added, you need to bind it to an OLAP data source. Update the `src/app/app.component.ts` file by defining the [`dataSourceSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettingsModel/) property and setting it as an input to the Pivot Table component. For more details about OLAP data binding, refer to [this section](#data-binding).
+Once the Pivot Table is added, you need to bind it to an OLAP data source. Update the `src/app/app.component.ts` file by defining the [`dataSourceSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettingsModel) property and setting it as an input to the Pivot Table component. For more details about OLAP data binding, refer to [this section](#data-binding).
 
 ```typescript
 import { Component, OnInit } from '@angular/core';
@@ -205,7 +205,7 @@ export class AppComponent implements OnInit {
 
 ### Adding OLAP cube elements to row, column, value and filter axes
 
-After initializing the Pivot Table and assigning a sample OLAP data source, you can organize the [OLAP cube elements](#olap-cube-elements) to define how your data is displayed using the [`rows`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/datasourcesettings#row), [`columns`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/datasourcesettings#columns), [`values`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/datasourcesettings#values), and [`filters`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/datasourcesettings#filters) properties in the [`dataSourceSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#datasourcesettings) option.
+After initializing the Pivot Table and assigning a sample OLAP data source, you can organize the [OLAP cube elements](#olap-cube-elements) to define how your data is displayed using the [`rows`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/datasourcesettings#row), [`columns`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/datasourcesettings#columns), [`values`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/datasourcesettings#values), and [`filters`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/datasourcesettings#filters) properties in the [`dataSourceSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings#datasourcesettings) option.
 
 You can use these four main axes to arrange OLAP cube elements from your data source and control how the Pivot Table displays the information.
 
@@ -216,8 +216,8 @@ You can use these four main axes to arrange OLAP cube elements from your data so
 
 To specify each [OLAP cube element](#olap-cube-elements) in the required axis, set the following options:
 
-- [`name`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/fieldOptions/#name): Specifies the unique name of the hierarchy, named set, measure, or calculated member from the OLAP data source. The name must be entered exactly as it appears in the data source. If the name is not matched, the Pivot Table will be empty.
-- [`caption`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/fieldOptions/#caption): Specifies a caption or display name for the item in the Pivot Table. If a caption is not set, the unique name appears by default.
+- [`name`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/fieldOptions#name): Specifies the unique name of the hierarchy, named set, measure, or calculated member from the OLAP data source. The name must be entered exactly as it appears in the data source. If the name is not matched, the Pivot Table will be empty.
+- [`caption`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/fieldOptions#caption): Specifies a caption or display name for the item in the Pivot Table. If a caption is not set, the unique name appears by default.
 
 For example, in the sample below, the element "Product Categories" is assigned to the columns axis, "Customer Geography" is assigned to the rows axis, and both "Customer Count" and "Internet Sales Amount" are set in the values axis.
 
@@ -235,9 +235,9 @@ For example, in the sample below, the element "Product Categories" is assigned t
 
 ### Applying formatting to a value field
 
-You can change how values in the Pivot Table are displayed by applying formatting. For example, you can display values as currency by using the **C** format string. To apply formatting, use the [`formatSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/formatSettings/#formatsettings) property within [`dataSourceSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/datasourcesettings), and define both the [`name`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/formatSettings/#name) (the value field to format) and the [`format`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/formatSettings/#format) (the format to apply).
+You can change how values in the Pivot Table are displayed by applying formatting. For example, you can display values as currency by using the **C** format string. To apply formatting, use the [`formatSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/formatSettings#formatsettings) property within [`dataSourceSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/datasourcesettings), and define both the [`name`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/formatSettings#name) (the value field to format) and the [`format`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/formatSettings#format) (the format to apply).
 
-In the following example, the [`formatSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/formatsettings) property is used to apply the **C0** format to the **[Measures].[Internet Sales Amount]** field. This causes its values to be displayed as currency, showing the currency symbol without any decimal places. You can add formatting for other value fields in a similar way by including them in the [`formatSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/formatSettings/#formatsettings) array.
+In the following example, the [`formatSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/formatsettings) property is used to apply the **C0** format to the **[Measures].[Internet Sales Amount]** field. This causes its values to be displayed as currency, showing the currency symbol without any decimal places. You can add formatting for other value fields in a similar way by including them in the [`formatSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/formatSettings#formatsettings) array.
 
 > Only fields from the value section containing numeric data can be formatted.
 
@@ -257,7 +257,7 @@ In the following example, the [`formatSettings`](https://ej2.syncfusion.com/angu
 
 The grouping bar lets users easily organize [OLAP cube elements](#olap-cube-elements) from the connected data source. Users can drag these cube elements between different axes, such as [rows](https://ej2.syncfusion.com/angular/documentation/api/pivotview/datasourcesettings#row), [columns](https://ej2.syncfusion.com/angular/documentation/api/pivotview/datasourcesettings#columns), [values](https://ej2.syncfusion.com/angular/documentation/api/pivotview/datasourcesettings#values), and [filters](https://ej2.syncfusion.com/angular/documentation/api/pivotview/datasourcesettings#filters), to quickly change how data is shown in the Pivot Table. It also allows sorting, filtering, and removing of elements directly from the grouping bar, making it simple to customize the Pivot Table layout at runtime.
 
-To display the grouping bar, set the [`showGroupingBar`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/pivotViewModel/#showgroupingbar) property to **true** in the [Pivot Table](https://ej2.syncfusion.com/angular/documentation/api/pivotview/index-default) component, and make sure to inject the **GroupingBarService** module as shown below.
+To display the grouping bar, set the [`showGroupingBar`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/pivotViewModel#showgroupingbar) property to **true** in the [Pivot Table](https://ej2.syncfusion.com/angular/documentation/api/pivotview/index-default) component, and make sure to inject the **GroupingBarService** module as shown below.
 
 > Note: If the **GroupingBarService** module is not injected, the grouping bar will not appear in the Pivot Table component.
 
@@ -277,9 +277,9 @@ To display the grouping bar, set the [`showGroupingBar`](https://ej2.syncfusion.
 
 The Pivot Table control includes a built-in Field List, similar to the one in Microsoft Excel. This Field List allows users to add or remove [OLAP cube elements](#olap-cube-elements), and to move them between different axes: [rows](https://ej2.syncfusion.com/angular/documentation/api/pivotview/datasourcesettings#row), [columns](https://ej2.syncfusion.com/angular/documentation/api/pivotview/datasourcesettings#columns), [values](https://ej2.syncfusion.com/angular/documentation/api/pivotview/datasourcesettings#values), and [filters](https://ej2.syncfusion.com/angular/documentation/api/pivotview/datasourcesettings#filters). Users can also filter and sort these elements as needed, all during runtime.
 
-To display the Field List, set the [`showFieldList`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/pivotViewModel/#showfieldlist) property to **true** on the Pivot Table. It is also necessary to inject the [`FieldListService`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/FieldListService/) module.
+To display the Field List, set the [`showFieldList`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/pivotViewModel#showfieldlist) property to **true** on the Pivot Table. It is also necessary to inject the [`FieldListService`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/FieldListService) module.
 
-> Note: If the [`FieldListService`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/FieldListService/) module is not injected, the Field List will not appear in the Pivot Table.
+> Note: If the [`FieldListService`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/FieldListService) module is not injected, the Field List will not appear in the Pivot Table.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -320,16 +320,16 @@ There are two types of calculated fields:
 - **Calculated Measure** – Creates a new measure by using a custom expression.
 - **Calculated Dimension** – Creates a new dimension by using a custom expression.
 
-You can define calculated fields in your code by using the [`calculatedFieldsSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/calculatedFieldSettings/#calculatedfieldsettings) property in the [dataSourceSettings](https://ej2.syncfusion.com/angular/documentation/api/pivotview/datasourcesettings) configuration. The available options for calculated fields are:
+You can define calculated fields in your code by using the [`calculatedFieldsSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/calculatedFieldSettings#calculatedfieldsettings) property in the [dataSourceSettings](https://ej2.syncfusion.com/angular/documentation/api/pivotview/datasourcesettings) configuration. The available options for calculated fields are:
 
 - [`name`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/calculatedfieldsettings#name): Sets a unique name for the new calculated field.
 - [`formula`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/calculatedfieldsettings#formula): Allows you to set the expression for the calculated field.
-- [`hierarchyUniqueName`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/calculatedFieldSettings/#hierarchyuniquename): Specifies the dimension’s unique name, so that only hierarchies within that dimension are used in the expression. This option applies only to calculated dimensions.
-- [`formatString`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/calculatedFieldSettings/#formatstring): Sets the format for the calculated field result.
+- [`hierarchyUniqueName`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/calculatedFieldSettings#hierarchyuniquename): Specifies the dimension’s unique name, so that only hierarchies within that dimension are used in the expression. This option applies only to calculated dimensions.
+- [`formatString`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/calculatedFieldSettings#formatstring): Sets the format for the calculated field result.
 
-When adding calculated fields to an axis in your code, set the [`isCalculatedField`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/fieldOptions/#iscalculatedfield) property to **true**.
+When adding calculated fields to an axis in your code, set the [`isCalculatedField`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/fieldOptions#iscalculatedfield) property to **true**.
 
-You can also add calculated fields at runtime through the built-in dialog. To enable this dialog, set the [`allowCalculatedField`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/pivotViewModel/#allowcalculatedfield) property to **true** and add the **CalculatedFieldService** module. This will display a button in the Field List UI, letting users open the calculated field dialog and create or edit calculated fields as needed.
+You can also add calculated fields at runtime through the built-in dialog. To enable this dialog, set the [`allowCalculatedField`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/pivotViewModel#allowcalculatedfield) property to **true** and add the **CalculatedFieldService** module. This will display a button in the Field List UI, letting users open the calculated field dialog and create or edit calculated fields as needed.
 
 > If the **CalculatedFieldService** module is not added, the calculated field dialog will not be shown with the Pivot Table component. Also, calculated measures can be added only to the value axis.
 
@@ -479,7 +479,7 @@ If you make edits while creating or modifying a calculated field, you can easily
 
 Virtual scrolling helps you view large amounts of data smoothly in the Pivot Table. It loads and displays only the rows and columns currently visible in the viewport. As you scroll vertically or horizontally, new data is brought into view automatically, ensuring good performance even with a large data source.
 
-To enable virtual scrolling, set the [`enableVirtualization`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#enablevirtualization) option to **true**. Also, be sure to inject the [`VirtualScrollService`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/#virtualscrollservice) into the Pivot Table.
+To enable virtual scrolling, set the [`enableVirtualization`](https://ej2.syncfusion.com/angular/documentation/api/pivotview#enablevirtualization) option to **true**. Also, be sure to inject the [`VirtualScrollService`](https://ej2.syncfusion.com/angular/documentation/api/pivotview#virtualscrollservice) into the Pivot Table.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -495,7 +495,7 @@ To enable virtual scrolling, set the [`enableVirtualization`](https://ej2.syncfu
 
 #### Limitations for virtual scrolling
 
-- When using virtual scrolling, the [`columnWidth`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/gridSettings/#columnwidth) property under [`gridSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/gridSettings/) must be set in pixels; percentage values are not supported.
+- When using virtual scrolling, the [`columnWidth`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/gridSettings#columnwidth) property under [`gridSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/gridSettings) must be set in pixels; percentage values are not supported.
 - Resizing columns or setting width to individual columns affects the calculation used to pick the correct page on scrolling.
 - With OLAP data, subtotals and grand totals are shown only when measures are placed at the end of the [`rows`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/datasourcesettings#row) or [`columns`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/datasourcesettings#columns) axes within [`dataSourceSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/datasourcesettings). If measures appear elsewhere, data will display without summary totals.
 - If the width and height of the Pivot Table are set to large values, the amount of data loaded in the current, previous, and next pages increases. This may impact loading performance during scrolling.
@@ -524,14 +524,14 @@ ng serve --open
 
 ## Data Binding
 
-To connect an OLAP data source to the Pivot Table, use the [`dataSourceSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#datasourcesettings) property. Several options within `dataSourceSettings` must be specified to bind data correctly:
+To connect an OLAP data source to the Pivot Table, use the [`dataSourceSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings#datasourcesettings) property. Several options within `dataSourceSettings` must be specified to bind data correctly:
 
 | Property | Description |
 |----------|-------------|
-| [`cube`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#cube "cube") | Specifies the name of the OLAP cube to use from the database. |
-| [`providerType`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#providertype "providerType") | Indicates the type of provider, helping the Pivot Table determine how to connect to the data source. |
+| [`cube`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings#cube "cube") | Specifies the name of the OLAP cube to use from the database. |
+| [`providerType`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings#providertype "providerType") | Indicates the type of provider, helping the Pivot Table determine how to connect to the data source. |
 | [`url`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/datasourcesettings#url "url") | The URL of the OLAP service. Use this to establish an online connection to the cube. |
-| [`catalog`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#catalog "catalog") | The database or catalog name containing the cube data. |
+| [`catalog`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings#catalog "catalog") | The database or catalog name containing the cube data. |
 
 Below are sample code files showing how to bind an OLAP data source in Angular:
 
@@ -551,7 +551,7 @@ Below are sample code files showing how to bind an OLAP data source in Angular:
 
 #### Measures in the row axis
 
-By default, measures are shown on the columns axis in the Pivot Table. If you would like to display measures on the rows axis instead, you can do this using the [grouping bar](https://ej2.syncfusion.com/angular/documentation/api/pivotview/index-default#showgroupingbar) or the [field list](https://ej2.syncfusion.com/angular/documentation/api/pivotfieldlist/) UI. Simply drag the "Measures" button and drop it onto the rows axis.
+By default, measures are shown on the columns axis in the Pivot Table. If you would like to display measures on the rows axis instead, you can do this using the [grouping bar](https://ej2.syncfusion.com/angular/documentation/api/pivotview/index-default#showgroupingbar) or the [field list](https://ej2.syncfusion.com/angular/documentation/api/pivotfieldlist) UI. Simply drag the "Measures" button and drop it onto the rows axis.
 
 Alternatively, you can set up the measure directly in your code by configuring the [`dataSourceSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/datasourcesettings) option, as shown in the code below:
 
@@ -569,7 +569,7 @@ Alternatively, you can set up the measure directly in your code by configuring t
 
 #### Measures in different positions
 
-You can choose where to place measures on either the row or column axis thorough code behind or the user interface. In this example, the **measures** are set before the dimension field on the column axis. To achieve this, specify the order of the fields within the [`dataSourceSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#datasourcesettings) property.
+You can choose where to place measures on either the row or column axis thorough code behind or the user interface. In this example, the **measures** are set before the dimension field on the column axis. To achieve this, specify the order of the fields within the [`dataSourceSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings#datasourcesettings) property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -587,7 +587,7 @@ You can choose where to place measures on either the row or column axis thorough
 
 A named set is a multidimensional expression (MDX) that provides a predefined group of members from a dimension. It is created by combining cube data with arithmetic operators, numbers, or functions.
 
-To display a named set in the Pivot Table, set its unique name using the [`name`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/fieldOptions/#name) property within either the row or column axis in [`dataSourceSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#datasourcesettings). Additionally, set the [`isNamedSet`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/fieldOptions/#isnamedset) property to **true**. In the example below, the "Core Product Group" named set is added to the column axis.
+To display a named set in the Pivot Table, set its unique name using the [`name`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/fieldOptions#name) property within either the row or column axis in [`dataSourceSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings#datasourcesettings). Additionally, set the [`isNamedSet`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/fieldOptions#isnamedset) property to **true**. In the example below, the "Core Product Group" named set is added to the column axis.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -603,10 +603,10 @@ To display a named set in the Pivot Table, set its unique name using the [`name`
 
 ### Configuring authentication
 
-To connect to an OLAP data source that requires authentication, users can provide basic authentication details through the [`authentication`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#authentication) property within the [`dataSourceSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#datasourcesettings) option of the Pivot Table. The authentication options include:
+To connect to an OLAP data source that requires authentication, users can provide basic authentication details through the [`authentication`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings#authentication) property within the [`dataSourceSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings#datasourcesettings) option of the Pivot Table. The authentication options include:
 
-- [`userName`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/authenticationModel/#username): Enter the username required for access to the OLAP server.
-- [`password`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/authenticationModel/#password): Enter the password associated with the username.
+- [`userName`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/authenticationModel#username): Enter the username required for access to the OLAP server.
+- [`password`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/authenticationModel#password): Enter the password associated with the username.
 
 > If authentication details are not provided, the browser will display a default pop-up window prompting users to enter the required information.
 
@@ -669,7 +669,7 @@ export class AppComponent {
 
 SQL Server Analysis Services (SSAS) uses [roles](https://learn.microsoft.com/en-us/analysis-services/multidimensional-models/roles-and-permissions-analysis-services?view=asallproducts-allversions) to control user access to the data inside an OLAP cube. Each role is defined with a set of permissions that can be assigned to individual users or groups. By assigning roles, you can restrict access to sensitive data and also determine who can view or modify information in the cube.
 
-In the Syncfusion Angular Pivot Table, you can specify roles using the [`roles`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#roles) property within the [`dataSourceSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings/#datasourcesettings) object. This allows you to provide one or more role names for connecting to an OLAP cube. If you want to use multiple roles, list them as a comma-separated string.
+In the Syncfusion Angular Pivot Table, you can specify roles using the [`roles`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings#roles) property within the [`dataSourceSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings#datasourcesettings) object. This allows you to provide one or more role names for connecting to an OLAP cube. If you want to use multiple roles, list them as a comma-separated string.
 
 ```typescript
 import { Component } from '@angular/core';
@@ -793,12 +793,12 @@ In the field list, each node uses a specific icon to help users quickly identify
 
 ### BeforeServiceInvoke
 
-The [`beforeServiceInvoke`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/pivotViewModel/#beforeserviceinvoke) event is triggered before initiating any service communication with the OLAP server in the Pivot Table and Field List components.
+The [`beforeServiceInvoke`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/pivotViewModel#beforeserviceinvoke) event is triggered before initiating any service communication with the OLAP server in the Pivot Table and Field List components.
 
 * This event allows you to inject custom properties or additional parameters dynamically before a request is made to the OLAP server.
 * It is particularly useful for passing contextual data such as user tokens, custom filters, or localization information along with the original server request.
 
-When the [`beforeServiceInvoke`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/pivotViewModel/#beforeserviceinvoke) event is triggered, the event argument provides access to the request details and includes a [`customProperties`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/beforeServiceInvokeEventArgs/#customproperties) field.
+When the [`beforeServiceInvoke`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/pivotViewModel#beforeserviceinvoke) event is triggered, the event argument provides access to the request details and includes a [`customProperties`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/beforeServiceInvokeEventArgs#customproperties) field.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -814,12 +814,12 @@ When the [`beforeServiceInvoke`](https://ej2.syncfusion.com/angular/documentatio
 
 ### AfterServiceInvoke
 
-The [`afterServiceInvoke`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/pivotViewModel/#afterserviceinvoke) event is triggered in the Pivot Table and Field List components during the onSuccess phase of every OLAP service request.
+The [`afterServiceInvoke`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/pivotViewModel#afterserviceinvoke) event is triggered in the Pivot Table and Field List components during the onSuccess phase of every OLAP service request.
 
 * This event is useful for performing post-processing, logging actions, or updating the UI after receiving a successful response from the OLAP server.
 * You may use it to audit data, trigger notifications, or handle custom response-handling logic.
 
-When the [`afterServiceInvoke`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/pivotViewModel/#afterserviceinvoke) event is triggered, the event argument provides access to the server response details, including properties such as the action performed and the result data returned from the OLAP server.
+When the [`afterServiceInvoke`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/pivotViewModel#afterserviceinvoke) event is triggered, the event argument provides access to the server response details, including properties such as the action performed and the result data returned from the OLAP server.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

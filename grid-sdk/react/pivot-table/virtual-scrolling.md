@@ -12,7 +12,7 @@ domainurl: ##DomainURL##
 
 ## Virtual scrolling
 
-Virtual scrolling enables efficient handling of large datasets by rendering only the rows and columns visible in the current viewport. Content refreshes dynamically as the user scrolls vertically or horizontally. This feature is enabled by setting the [`enableVirtualization`](https://ej2.syncfusion.com/react/documentation/api/pivotview/#enableVirtualization) property to **true** (default `false`).
+Virtual scrolling enables efficient handling of large datasets by rendering only the rows and columns visible in the current viewport. Content refreshes dynamically as the user scrolls vertically or horizontally. This feature is enabled by setting the [`enableVirtualization`](https://ej2.syncfusion.com/react/documentation/api/pivotview#enableVirtualization) property to **true** (default `false`).
 
 > Virtualization and [Paging](./paging) cannot be enabled at the same time. Use one or the other; they are designed to handle data rendering differently and may conflict when combined.
 
@@ -35,7 +35,7 @@ To use the virtual scrolling feature, inject the `VirtualScroll` module into the
 
 When virtual scrolling is enabled, the Pivot Table renders not only the current view page but also the adjacent previous and next pages by default. While this approach supports smooth navigation, it can increase computational load and reduce performance when working with extensive datasets, as additional rows and columns from surrounding pages are processed.
 
-To optimize performance, set the [`allowSinglePage`](https://ej2.syncfusion.com/react/documentation/api/pivotview/virtualScrollSettings/#allowSinglePage) property to **true** within the [`virtualScrollSettings`](https://ej2.syncfusion.com/react/documentation/api/pivotview/virtualScrollSettings). Enabling this property ensures that only the rows and columns for the current view page are rendered during virtual scrolling. This significantly enhances the performance of the Pivot Table, especially during initial rendering and user actions such as drilling up, drilling down, sorting, and filtering.
+To optimize performance, set the [`allowSinglePage`](https://ej2.syncfusion.com/react/documentation/api/pivotview/virtualScrollSettings#allowSinglePage) property to **true** within the [`virtualScrollSettings`](https://ej2.syncfusion.com/react/documentation/api/pivotview/virtualScrollSettings). Enabling this property ensures that only the rows and columns for the current view page are rendered during virtual scrolling. This significantly enhances the performance of the Pivot Table, especially during initial rendering and user actions such as drilling up, drilling down, sorting, and filtering.
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
@@ -50,11 +50,11 @@ To optimize performance, set the [`allowSinglePage`](https://ej2.syncfusion.com/
 
 ### Static field list
 
-Virtual scrolling works automatically with **Popup** field lists when you set the [`enableVirtualization`](https://ej2.syncfusion.com/react/documentation/api/pivotview/#enableVirtualization) property in the Pivot Table to **true**. However, when using a static field list (displayed as a separate component), you need to connect both components manually.
+Virtual scrolling works automatically with **Popup** field lists when you set the [`enableVirtualization`](https://ej2.syncfusion.com/react/documentation/api/pivotview#enableVirtualization) property in the Pivot Table to **true**. However, when using a static field list (displayed as a separate component), you need to connect both components manually.
 
 To make virtual scrolling work with a static field list:
 
-1. Enable virtual scrolling in the Pivot Table component by setting the [`enableVirtualization`](https://ej2.syncfusion.com/react/documentation/api/pivotview/#enableVirtualization) property to **true**.
+1. Enable virtual scrolling in the Pivot Table component by setting the [`enableVirtualization`](https://ej2.syncfusion.com/react/documentation/api/pivotview#enableVirtualization) property to **true**.
 2. Connect the PivotFieldList component to the Pivot Table component using the [`load`](https://ej2.syncfusion.com/react/documentation/api/pivotview/index-default#load) event.
 3. Synchronize the Pivot Table and field list by updating the Pivot Table's report configuration with the field list's report configuration inside the `load` event.
 
