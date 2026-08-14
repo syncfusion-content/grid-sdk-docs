@@ -2,7 +2,7 @@
 layout: post
 title: AI-Driven predictive data entry in .NET MAUI Data Grid | Syncfusion
 description: Learn all about the AI-driven predictive data entry feature in Syncfusion® .NET MAUI Data Grid, including setup, capabilities, and usage examples.
-platform: MAUI
+platform: grid-sdk
 control: SfDataGrid
 documentation: ug
 ---

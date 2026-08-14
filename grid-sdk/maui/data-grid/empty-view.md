@@ -2,7 +2,7 @@
 layout: post
 title: Empty View in .NET MAUI Data Grid | Syncfusion®
 description: Learn how to display and customize an empty view in Syncfusion® .NET MAUI Data Grid when no data is available.
-platform: MAUI
+platform: grid-sdk
 control: SfDataGrid
 documentation: UG
 ---

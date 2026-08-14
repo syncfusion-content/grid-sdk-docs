@@ -2,7 +2,7 @@
 layout: post
 title: Export to Excel in .NET MAUI Data Grid | Syncfusion®
 description: Learn how to export data from Syncfusion® .NET MAUI Data Grid to Excel, including customization options, formatting, and export configurations.
-platform: MAUI
+platform: grid-sdk
 control: SfDataGrid
 documentation: UG
 keywords : maui data grid, maui datagrid, maui grid, grid maui, maui gridview, grid in maui, .net maui datagrid, .net maui grid, .net grid maui, .net maui export to excel, maui export to excel
