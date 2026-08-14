@@ -3,8 +3,7 @@ layout: post
 title: TypeScript TreeGrid Frozen Columns | Syncfusion
 description: Learn how to pin or freeze columns in TypeScript TreeGrid to keep important columns visible while scrolling horizontally.
 platform: grid-sdk
-control: Frozen 
-publishingplatform: grid-sdk
+control: Frozen
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
@@ -17,7 +16,7 @@ Frozen rows and columns provides an option to make rows and columns always visib
 
 To use frozen rows and columns support, inject the `Freeze` module in the tree grid.
 
-In this demo, the [`frozenColumns`](../api/treegrid/#frozencolumns) is set as '2' and the [`frozenRows`](../api/treegrid/#frozenrows)
+In this demo, the [`frozenColumns`](../api/treegrid#frozencolumns) is set as '2' and the [`frozenRows`](../api/treegrid#frozenrows)
 is set as '3'. Hence, the left two columns and top three rows are frozen.
 
 {% if page.publishingplatform == "typescript" %}
@@ -49,7 +48,7 @@ is set as '3'. Hence, the left two columns and top three rows are frozen.
 
 ### Freeze particular columns
 
-You can use [`isFrozen`](../api/treegrid/column/#isfrozen) property to freeze selected columns in tree grid.
+You can use [`isFrozen`](../api/treegrid/column#isfrozen) property to freeze selected columns in tree grid.
 
 In this demo, the columns with field name `taskName` and `startDate` is frozen using
 the `isFrozen` property.
@@ -83,9 +82,9 @@ the `isFrozen` property.
 
 ### Freeze direction
 
-You can freeze the tree grid columns on the left or right side by using the [`column.freeze`](../api/treegrid/column/#freeze) property and the remaining columns will be movable. The tree grid will automatically move the columns to the left or right position based on the [`column.freeze`](../api/treegrid/column/#freeze) value.
+You can freeze the tree grid columns on the left or right side by using the [`column.freeze`](../api/treegrid/column#freeze) property and the remaining columns will be movable. The tree grid will automatically move the columns to the left or right position based on the [`column.freeze`](../api/treegrid/column#freeze) value.
 
-Types of the [`column.freeze`](../api/treegrid/column/#freeze) directions:
+Types of the [`column.freeze`](../api/treegrid/column#freeze) directions:
 
 * **`Left`**: Allows you to freeze the columns at the left.
 * **`Right`**: Allows you to freeze the columns at the right.
@@ -119,7 +118,7 @@ In this demo, the **Task Name** column is frozen at the left and the **Priority*
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/treegrid/freezedirections-cs1" %}
 {% endif %}
 
-> * Freeze Direction is not compatible with the [`isFrozen`](../api/treegrid/column/#isfrozen) and [`frozenColumns`](../api/treegrid/#frozencolumns) properties.
+> * Freeze Direction is not compatible with the [`isFrozen`](../api/treegrid/column#isfrozen) and [`frozenColumns`](../api/treegrid#frozencolumns) properties.
 
 ### Limitations of frozen tree grid
 

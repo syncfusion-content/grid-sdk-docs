@@ -3,15 +3,14 @@ layout: post
 title: JavaScript TreeGrid Cell Content | Syncfusion
 description: Learn how to display HTML content in JavaScript TreeGrid headers and cells using disableHtmlEncode to render formatted content and custom markup.
 platform: grid-sdk
-control: Content 
-publishingplatform: grid-sdk
+control: Content
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
 # HTML Content in JavaScript TreeGrid
 
-The HTML tags can be displayed in the TreeGrid header and content by enabling the [`disableHtmlEncode`](../../api/treegrid/column/#disablehtmlencode) property.
+The HTML tags can be displayed in the TreeGrid header and content by enabling the [`disableHtmlEncode`](../../api/treegrid/column#disablehtmlencode) property.
 
 {% if page.publishingplatform == "typescript" %}
 

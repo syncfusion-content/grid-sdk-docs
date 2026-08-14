@@ -3,8 +3,7 @@ layout: post
 title:  TypeScript TreeGrid PDF Export Options | Syncfusion
 description: Learn about PDF export options in TypeScript TreeGrid, including exporting selected records, hidden columns, custom fonts, and advanced settings.
 platform: grid-sdk
-control: Pdf export options 
-publishingplatform: grid-sdk
+control: Pdf export options
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
@@ -215,7 +214,6 @@ By default, treegrid uses `Helvetica` font in the exported document. You can cha
 * TimesRoman
 * Courier
 * Symbol
-* ZapfDingbats
 
 The code example for changing default font,
 

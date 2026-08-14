@@ -3,15 +3,14 @@ layout: post
 title: TypeScript TreeGrid Custom Aggregate | Syncfusion
 description: Learn about implementing custom aggregates in the TypeScript TreeGrid, including configuration and usage of custom aggregation functions.
 platform: grid-sdk
-control: Custom aggregate 
-publishingplatform: grid-sdk
+control: Custom aggregate
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
 # Custom Aggregate in TypeScript TreeGrid
 
-To calculate the aggregate value with your own aggregate functions, use the custom aggregate option. To use custom aggregation, specify the [`type`](../../api/treegrid/aggregateColumnModel/#type) as `Custom`, and provide the custom aggregate function in the [`customAggregate`](../../api/treegrid/aggregateColumnModel/#customaggregate) property.
+To calculate the aggregate value with your own aggregate functions, use the custom aggregate option. To use custom aggregation, specify the [`type`](../../api/treegrid/aggregateColumnModel#type) as `Custom`, and provide the custom aggregate function in the [`customAggregate`](../../api/treegrid/aggregateColumnModel#customaggregate) property.
 
 {% if page.publishingplatform == "typescript" %}
 

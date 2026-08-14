@@ -3,8 +3,7 @@ layout: post
 title: TypeScript TreeGrid Global Localization | Syncfusion
 description: Learn how to implement global localization in TypeScript TreeGrid, including internationalization, localization, and RTL language support.
 platform: grid-sdk
-control: Global local 
-publishingplatform: grid-sdk
+control: Global local
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
@@ -14,7 +13,7 @@ domainurl: https://help.syncfusion.com/grid-sdk
 ## Localization
 
 The [`Localization`](../common/localization) library allows you to localize default text content of the TreeGrid. The treegrid component has static text on some features (like toolbar area text, filter menu text, pager information text, etc.) that can be changed to other cultures (Arabic, Deutsch, French, etc.) by defining the
-[`locale`](../api/treegrid/#locale) value and translation object.
+[`locale`](../api/treegrid#locale) value and translation object.
 
 The following list of properties and its values are used in the treegrid.
 
@@ -110,7 +109,7 @@ All | All
 
 ### Loading translations
 
-To load translation object in an application, use [`load`](../api/base/l10n/#load) function of the `L10n` class.
+To load translation object in an application, use [`load`](../api/base/l10n#load) function of the `L10n` class.
 
 The following example demonstrates the TreeGrid in `Deutsch` culture.
 
@@ -181,7 +180,7 @@ When localizing TreeGrid, it's important to include dependent components like Da
 
 
 
-    Below is an example JSON snippet consolidating the localization keys for dependent components used in TreeGrid using  [`load`](../api/base/l10n/#load) function of the `L10n` class and update the `locale` property of treegrid with the culture name used in the `load` function:
+    Below is an example JSON snippet consolidating the localization keys for dependent components used in TreeGrid using  [`load`](../api/base/l10n#load) function of the `L10n` class and update the `locale` property of treegrid with the culture name used in the `load` function:
 
     ```json
     L10n.load({
@@ -212,7 +211,7 @@ When localizing TreeGrid, it's important to include dependent components like Da
 
 ## Internationalization
 
-The [`Internationalization`](../common/internationalization) library is used to globalize number, date, and time values in treegrid component using format strings in the [`columns.format`](../api/treegrid/column/#format).
+The [`Internationalization`](../common/internationalization) library is used to globalize number, date, and time values in treegrid component using format strings in the [`columns.format`](../api/treegrid/column#format).
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -242,11 +241,11 @@ The [`Internationalization`](../common/internationalization) library is used to 
 {% endif %}
 
 > * In the above sample, `Price` column is formatted by `NumberFormatOptions`.
-> * By default, [`locale`](../api/treegrid/#locale) value is `en-US`. If you want to change the `en-US` culture to a different culture, you have to change  the [`locale`](../api/treegrid/#locale) accordingly.
+> * By default, [`locale`](../api/treegrid#locale) value is `en-US`. If you want to change the `en-US` culture to a different culture, you have to change  the [`locale`](../api/treegrid#locale) accordingly.
 
 ## Right to left (RTL)
 
-RTL provides an option to switch the text direction and layout of the TreeGrid component from right to left. It improves the user experiences and accessibility for users who use right-to-left languages (Arabic, Farsi, Urdu, etc.). To enable RTL Grid, set the [`enableRtl`](../api/treegrid/#enablertl) to true.
+RTL provides an option to switch the text direction and layout of the TreeGrid component from right to left. It improves the user experiences and accessibility for users who use right-to-left languages (Arabic, Farsi, Urdu, etc.). To enable RTL Grid, set the [`enableRtl`](../api/treegrid#enablertl) to true.
 
 {% if page.publishingplatform == "typescript" %}
 

@@ -3,8 +3,7 @@ layout: post
 title: ##Platform_Name## TreeGrid Persisting Data in Server | Syncfusion
 description: Learn how to persist edited data in a database using RESTful services and DataManager in the ##Platform_Name## TreeGrid.
 platform: grid-sdk
-control: Persisting data in server 
-publishingplatform: grid-sdk
+control: Persisting data in server
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---

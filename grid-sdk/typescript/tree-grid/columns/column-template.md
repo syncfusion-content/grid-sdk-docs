@@ -3,15 +3,14 @@ layout: post
 title: TypeScript TreeGrid Column Template | Syncfusion
 description: Learn how to use column templates in TypeScript TreeGrid to display custom content, images, buttons, and formatted data in cells.
 platform: grid-sdk
-control: Column template 
-publishingplatform: grid-sdk
+control: Column template
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
 # Column Template in TypeScript TreeGrid
 
-The column [`template`](../../api/treegrid/column/#template) has options to display custom element instead of a field value in the column.
+The column [`template`](../../api/treegrid/column#template) has options to display custom element instead of a field value in the column.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -39,7 +38,7 @@ The column [`template`](../../api/treegrid/column/#template) has options to disp
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/treegrid/column-template-cs1" %}
 {% endif %}
-> TreeGrid actions such as editing, filtering and sorting etc. will depend upon the column [`field`](../../api/treegrid/column/#field). If the [`field`](../../api/treegrid/column/#field) is not specified in the template column, the treegrid actions cannot be performed.
+> TreeGrid actions such as editing, filtering and sorting etc. will depend upon the column [`field`](../../api/treegrid/column#field). If the [`field`](../../api/treegrid/column#field) is not specified in the template column, the treegrid actions cannot be performed.
 
 ## Using condition template
 
