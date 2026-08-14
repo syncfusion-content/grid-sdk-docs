@@ -16,15 +16,11 @@ To display the “All” level type member, set the `ShowLevelTypeAll` property 
 {% tabs %}
 
 {% highlight c# %}
-
 pivotGrid1.OlapDataManager.ShowLevelTypeAll = true;
-
 {% endhighlight %}
 
 {% highlight vb %}
-
 pivotGrid1.OlapDataManager.ShowLevelTypeAll = True
-
 {% endhighlight %}
 
 {% endtabs %}
