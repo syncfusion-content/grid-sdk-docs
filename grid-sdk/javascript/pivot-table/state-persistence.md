@@ -1,7 +1,7 @@
 ---
 layout: post
 title: State Persistence in ##Platform_Name## Pivot Table | Syncfusion
-description: Learn how the ##Platform_Name## Pivot Table retains layout, fields, and filters across refreshes via `enablePersistence`, with `getPersistData` and `loadPersistData` for save and load.
+description: Learn how the ##Platform_Name## Pivot Table retains layout, fields, and filters across refreshes via `enablePersistence`.
 platform: ej2-javascript
 control: State persistence
 publishingplatform: ##Platform_Name##

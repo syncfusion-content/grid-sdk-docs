@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Calculated Field in ##Platform_Name## Pivot Table | Syncfusion
-description: Learn how the ##Platform_Name## Pivot Table creates calculated fields via the dialog or `calculatedFieldSettings`, then adds them to the values axis for custom formulas.
+description: Learn how the ##Platform_Name## Pivot Table creates calculated fields via the dialog or `calculatedFieldSettings`.
 platform: ej2-javascript
 control: Calculated field
 publishingplatform: ##Platform_Name##

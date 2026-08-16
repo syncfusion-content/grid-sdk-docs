@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to configure grid options in edit mode in Angular Pivot Table | Syncfusion
+title: Configure grid options in Angular Pivot Table edit mode | Syncfusion
 description: Step-by-step example showing how to configure data grid options in editing mode in the Angular Pivot Table, with code snippets and property references.
 platform: ej2-angular
 control: Configure data grid options on editing mode 

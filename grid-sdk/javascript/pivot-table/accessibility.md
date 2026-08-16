@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Accessibility in JavaScript Pivot Table | Syncfusion
-description: Learn how the JavaScript Pivot Table supports accessibility with WAI-ARIA roles, keyboard navigation, and screen reader support for WCAG 2.2.
+description: Learn how the ##Platform_Name## Pivot Table supports WAI-ARIA roles, full keyboard navigation, and screen reader support that comply with WCAG 2.2.
 control: Accessibility
 platform: ej2-javascript
 documentation: ug

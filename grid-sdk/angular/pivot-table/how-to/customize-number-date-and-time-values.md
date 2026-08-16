@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to customize number, date, time values in Angular Pivot Table | Syncfusion
+title: Customize number, date, and time in Angular Pivot Table | Syncfusion
 description: Step-by-step example showing how to customize number, date, and time values in the Angular Pivot Table, with code snippets and property references.
 platform: ej2-angular
 control: Customize number date and time values 

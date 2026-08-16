@@ -186,7 +186,7 @@ It provides two parameters:
 * [`nativeEvent`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/hyperCellClickEventArgs#nativeevent): Represents the original browser event triggered by the click, useful for advanced event handling.
 
 <!-- markdownlint-disable-next-line MD034 -->
-In the example below, when a hyperlink cell is clicked, a custom attribute (**data-url**) is added to the cell to redirect users to the Syncfusion Angular Pivot Table Hyperlink [Demo](https://ej2.syncfusion.com/demos#/tailwind3/pivot-table/hyper-link.html). The [`cancel`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/hyperCellClickEventArgs#cancel) property is set to **false** to enable this interaction.
+In the example below, when a hyperlink cell is clicked, a custom attribute (**data-url**) is added to the cell to redirect users to the Syncfusion Angular Pivot Table Hyperlink [Demo](https://ej2.syncfusion.com/angular/demos/#/tailwind3/pivot-table/hyper-link). The [`cancel`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/hyperCellClickEventArgs#cancel) property is set to **false** to enable this interaction.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

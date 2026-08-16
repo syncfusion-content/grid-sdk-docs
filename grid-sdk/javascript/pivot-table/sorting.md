@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Sorting in ##Platform_Name## Pivot Table | Syncfusion
-description: Learn how the ##Platform_Name## Pivot Table sorts field members in ascending or descending order via `enableSorting` and `sortSettings` for member and value sort.
+description: Learn how the ##Platform_Name## Pivot Table sorts field members in ascending or descending order via `enableSorting` and `sortSettings`.
 platform: ej2-javascript
 control: Sorting
 publishingplatform: ##Platform_Name##

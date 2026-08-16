@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Conditional Formatting in ##Platform_Name## Pivot Table | Syncfusion
-description: Learn how the ##Platform_Name## Pivot Table applies conditional formatting to value cells via the toolbar dialog or `conditionalFormatSettings`, with custom style rules.
+description: Learn how the ##Platform_Name## Pivot Table applies conditional formatting to value cells via the toolbar dialog or `conditionalFormatSettings`.
 platform: ej2-javascript
 control: Conditional formatting
 publishingplatform: ##Platform_Name##

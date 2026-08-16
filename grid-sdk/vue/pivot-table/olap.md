@@ -209,9 +209,9 @@ In this sample, "Product Categories" is added in column, "Customer Geography" in
 
 ### Applying formatting to measures
 
-You can change how values in the Pivot Table are displayed by applying formatting. For example, you can display values as currency by using the **C** format string. To apply formatting, use the [`formatSettings`](https://ej2.syncfusion.com/vue/documentation/api/pivotview/iFormatSettings#iformatsettings) property within [`dataSourceSettings`](https://ej2.syncfusion.com/vue/documentation/api/pivotview/dataSourceSettings/), and define both the [`name`](https://ej2.syncfusion.com/vue/documentation/api/pivotview/iFormatSettings#name) (the value field to format) and the [`format`](https://ej2.syncfusion.com/vue/documentation/api/pivotview/iFormatSettings#format) (the format to apply).
+You can change how values in the Pivot Table are displayed by applying formatting. For example, you can display values as currency by using the **C** format string. To apply formatting, use the [`formatSettings`](https://ej2.syncfusion.com/vue/documentation/api/pivotview/iFormatSettings#iformatsettings) property within [`dataSourceSettings`](https://ej2.syncfusion.com/vue/documentation/api/pivotview/dataSourceSettings), and define both the [`name`](https://ej2.syncfusion.com/vue/documentation/api/pivotview/iFormatSettings#name) (the value field to format) and the [`format`](https://ej2.syncfusion.com/vue/documentation/api/pivotview/iFormatSettings#format) (the format to apply).
 
-In the following example, the [`formatSettings`](https://ej2.syncfusion.com/vue/documentation/api/pivotview/formatSettings/) property is used to apply the **C0** format to the **[Measures].[Internet Sales Amount]** field. This causes its values to be displayed as currency, showing the currency symbol without any decimal places. You can add formatting for other value fields in a similar way by including them in the [`formatSettings`](https://ej2.syncfusion.com/vue/documentation/api/pivotview/iFormatSettings#iformatsettings) array.
+In the following example, the [`formatSettings`](https://ej2.syncfusion.com/vue/documentation/api/pivotview/formatSettings) property is used to apply the **C0** format to the **[Measures].[Internet Sales Amount]** field. This causes its values to be displayed as currency, showing the currency symbol without any decimal places. You can add formatting for other value fields in a similar way by including them in the [`formatSettings`](https://ej2.syncfusion.com/vue/documentation/api/pivotview/iFormatSettings#iformatsettings) array.
 
 > Only fields from the value section containing numeric data can be formatted.
 
@@ -247,7 +247,7 @@ The Grouping Bar feature automatically populates [OLAP cube elements](#olap-cube
 
 The Pivot Table control includes a built-in Field List, similar to the one in Microsoft Excel. This Field List allows users to add or remove [OLAP cube elements](#olap-cube-elements), and to move them between different axes: [`rows`](https://ej2.syncfusion.com/vue/documentation/api/pivotview/iDataOptions#rows), [`columns`](https://ej2.syncfusion.com/vue/documentation/api/pivotview/iDataOptions#columns), [`values`](https://ej2.syncfusion.com/vue/documentation/api/pivotview/iDataOptions#values), and [`filters`](https://ej2.syncfusion.com/vue/documentation/api/pivotview/iDataOptions#filters). Users can also filter and sort these elements as needed, all during runtime.
 
-To display the Field List, set the [`showFieldList`](https://ej2.syncfusion.com/vue/documentation/api/pivotview#showfieldlist) property to **true** on the Pivot Table. It is also necessary to inject the [`FieldList`](https://ej2.syncfusion.com/vue/documentation/api/pivotview/FieldList/) module.
+To display the Field List, set the [`showFieldList`](https://ej2.syncfusion.com/vue/documentation/api/pivotview#showfieldlist) property to **true** on the Pivot Table. It is also necessary to inject the [`FieldList`](https://ej2.syncfusion.com/vue/documentation/api/pivotview/FieldList) module.
 
 > Note: If the **FieldList** module is not injected, the Field List will not appear in the Pivot Table.
 
@@ -342,7 +342,7 @@ For more information about supported [`operators`](https://docs.microsoft.com/en
 
 #### Format String
 
-When creating a calculated field in the [Pivot Table](https://ej2.syncfusion.com/vue/documentation/api/pivotview/), you can choose the format for displaying values by selecting a format string. The available options are:
+When creating a calculated field in the [Pivot Table](https://ej2.syncfusion.com/vue/documentation/api/pivotview), you can choose the format for displaying values by selecting a format string. The available options are:
 
 * **Standard** – Displays values as standard numbers.
 * **Currency** – Displays values in currency format.
@@ -388,7 +388,7 @@ The Pivot Table will automatically update to show the changes in the calculated 
 
 #### Reusing an Existing Formula in a New Calculated Field
 
-This option allows you to easily create a new calculated field in the [Pivot Table](https://ej2.syncfusion.com/vue/documentation/api/pivotview/) by reusing a formula from an existing calculated field. This saves time and helps keep your calculations consistent.
+This option allows you to easily create a new calculated field in the [Pivot Table](https://ej2.syncfusion.com/vue/documentation/api/pivotview) by reusing a formula from an existing calculated field. This saves time and helps keep your calculations consistent.
 
 To reuse an existing formula when working with the OLAP data source:
 
@@ -445,7 +445,7 @@ To enable virtual scrolling, set the [`enableVirtualization`](https://ej2.syncfu
 
 #### Limitations for virtual scrolling
 
-* In virtual scrolling, the [columnWidth](https://ej2.syncfusion.com/vue/documentation/api/pivotview/gridSettings#columnwidth) property in [gridSettings](https://ej2.syncfusion.com/vue/documentation/api/pivotview/gridSettings/) should be in pixels, and percentage values are not accepted.
+* In virtual scrolling, the [columnWidth](https://ej2.syncfusion.com/vue/documentation/api/pivotview/gridSettings#columnwidth) property in [gridSettings](https://ej2.syncfusion.com/vue/documentation/api/pivotview/gridSettings) should be in pixels, and percentage values are not accepted.
 * Resizing columns or setting width to individual columns affects the calculation used to pick the correct page on scrolling.
 * When using OLAP data, subtotals and grand totals are only displayed when measures are bound at the last position in the [rows](https://ej2.syncfusion.com/vue/documentation/api/pivotview/dataSourceSettings#rows) or [columns](https://ej2.syncfusion.com/vue/documentation/api/pivotview/dataSourceSettings#columns) axis. Otherwise, the data from the pivot table will be shown without summary totals.
 * When the pivot table's width and height are large, the loading data count in the current, previous, and next viewports (pages) will also increase, affecting performance.
@@ -499,7 +499,7 @@ To bind OLAP datasource to the pivot table, you need to specify following proper
 
 By default, measures are shown on the columns axis in the Pivot Table. If you would like to display measures on the rows axis instead, you can do this using the [grouping bar](https://ej2.syncfusion.com/vue/documentation/api/pivotview#showgroupingbar) or the [field list](https://ej2.syncfusion.com/vue/documentation/api/pivotview#showfieldlist) UI. Simply drag the "Measures" button and drop it onto the rows axis.
 
-Alternatively, you can set up the measure directly in your code by configuring the [`dataSourceSettings`](https://ej2.syncfusion.com/vue/documentation/api/pivotview/dataSourceSettings/) option, as shown in the code below:
+Alternatively, you can set up the measure directly in your code by configuring the [`dataSourceSettings`](https://ej2.syncfusion.com/vue/documentation/api/pivotview/dataSourceSettings) option, as shown in the code below:
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
@@ -688,7 +688,7 @@ The field list, also called the cube dimension browser, displays the cube elemen
 
 #### Measure
 
-A measure in a cube refers to a numeric value that comes from a column in the cube’s fact table. Measures are the main values analyzed in the Pivot Table. They help users investigate metrics such as sales, costs, expenditures, or production counts. Users can select measures based on their analysis needs. In the field list, all available measures are grouped separately, making it easy to select or remove measures as required. When a user chooses a measure, it is displayed in the desired area of the [Pivot Table](https://ej2.syncfusion.com/vue/documentation/api/pivotview/) and participates in calculations and summary values.
+A measure in a cube refers to a numeric value that comes from a column in the cube’s fact table. Measures are the main values analyzed in the Pivot Table. They help users investigate metrics such as sales, costs, expenditures, or production counts. Users can select measures based on their analysis needs. In the field list, all available measures are grouped separately, making it easy to select or remove measures as required. When a user chooses a measure, it is displayed in the desired area of the [Pivot Table](https://ej2.syncfusion.com/vue/documentation/api/pivotview) and participates in calculations and summary values.
 
 #### Dimension
 

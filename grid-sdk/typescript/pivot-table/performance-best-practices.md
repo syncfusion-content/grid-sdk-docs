@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Performance Best Practices in ##Platform_Name## Pivot Table | Syncfusion
-description: Learn how the ##Platform_Name## Pivot Table improves loading on large datasets with virtual scrolling, paging, server-side engine, and data compression techniques.
+title: Performance Tips in ##Platform_Name## Pivot Table | Syncfusion
+description: Learn how the ##Platform_Name## Pivot Table improves loading on large datasets with virtual scrolling, paging, server-side engine and data compression.
 platform: ej2-javascript
 control: Performance best practices
 publishingplatform: ##Platform_Name##

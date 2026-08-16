@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Tool Bar in ##Platform_Name## Pivot Table | Syncfusion
-description: Learn how the ##Platform_Name## Pivot Table shows a built-in toolbar for new, save, export, chart switch, conditional formatting, and field list via `showToolbar`.
+description: Learn how the ##Platform_Name## Pivot Table shows a built-in toolbar for new, save, export, and field list via `showToolbar`.
 platform: ej2-javascript
 control: Tool bar
 publishingplatform: ##Platform_Name##

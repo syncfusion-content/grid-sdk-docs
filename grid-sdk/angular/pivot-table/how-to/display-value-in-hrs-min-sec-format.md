@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to display string value in pivot cells in Angular Pivot Table | Syncfusion
+title: Display string values in Angular Pivot Table cells | Syncfusion
 description: Step-by-step example showing how to display string values in pivot table cells in the Angular Pivot Table, with code snippets and property references.
 platform: ej2-angular
 control: Display string value to pivot table values

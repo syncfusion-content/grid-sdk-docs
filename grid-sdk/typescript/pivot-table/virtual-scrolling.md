@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Virtual Scrolling in ##Platform_Name## Pivot Table | Syncfusion
-description: Learn how the ##Platform_Name## Pivot Table renders only visible rows and columns for large datasets via `enableVirtualization`, with required `height` and `width` settings.
+description: Learn how the ##Platform_Name## Pivot Table renders only visible rows and columns for large datasets via `enableVirtualization`.
 platform: ej2-javascript
 control: Virtual scrolling
 publishingplatform: ##Platform_Name##
@@ -38,7 +38,7 @@ To use the virtual scrolling feature, inject the `VirtualScroll` module into the
 
 When virtual scrolling is enabled, the Pivot Table renders not only the current view page but also the adjacent previous and next pages by default. While this approach supports smooth navigation, it can increase computational load and reduce performance when working with extensive datasets, as additional rows and columns from surrounding pages are processed.
 
-To optimize performance, set the [allowSinglePage](https://ej2.syncfusion.com/documentation/api/pivotview/virtualScrollSettings/#allowSinglePage) property to **true** within the [virtualScrollSettings](https://ej2.syncfusion.com/documentation/api/pivotview/virtualScrollSettings). Enabling this property ensures that only the rows and columns for the current view page are rendered during virtual scrolling. This significantly enhances the performance of the Pivot Table, especially during initial rendering and user actions such as drilling up, drilling down, sorting, filtering, and more.
+To optimize performance, set the [allowSinglePage](https://ej2.syncfusion.com/documentation/api/pivotview/virtualScrollSettings#allowSinglePage) property to **true** within the [virtualScrollSettings](https://ej2.syncfusion.com/documentation/api/pivotview/virtualScrollSettings). Enabling this property ensures that only the rows and columns for the current view page are rendered during virtual scrolling. This significantly enhances the performance of the Pivot Table, especially during initial rendering and user actions such as drilling up, drilling down, sorting, filtering, and more.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -53,12 +53,12 @@ To optimize performance, set the [allowSinglePage](https://ej2.syncfusion.com/do
 
 ## Limitations for Virtual Scrolling
 
-* In virtual scrolling, the [columnWidth](https://ej2.syncfusion.com/documentation/api/pivotview/gridSettings/#columnwidth) property in [gridSettings](https://ej2.syncfusion.com/documentation/api/pivotview/gridSettings) should be in pixels, and percentage values are not accepted.
+* In virtual scrolling, the [columnWidth](https://ej2.syncfusion.com/documentation/api/pivotview/gridSettings#columnwidth) property in [gridSettings](https://ej2.syncfusion.com/documentation/api/pivotview/gridSettings) should be in pixels, and percentage values are not accepted.
 * Features such as auto fit, column resizing, text wrapping, and setting specific column widths through events can dynamically affect the row height and column width in the Pivot Table at runtime. However, these changes are not considered in the scroller calculations, particularly with large datasets. This can lead to performance issues and problems with UI functionality during scrolling. Therefore, it is not recommended to use these features alongside virtualization in the Pivot Table.
 * Grouping, which takes additional time to split the raw items into the provided format.
 * Date Formatting, which takes additional time to convert date format.
 * Date Formatting with sorting, here additionally full date time format should be framed to perform sorting along with the provided date format, which lags the performance.
-* When using OLAP data, subtotals and grand totals are only displayed when measures are bound at the last position in the [rows](https://ej2.syncfusion.com/documentation/api/pivotview/#rows) or [columns](https://ej2.syncfusion.com/documentation/api/pivotview/#columns) axis. Otherwise, the data from the Pivot Table will be shown without summary totals.
+* When using OLAP data, subtotals and grand totals are only displayed when measures are bound at the last position in the [rows](https://ej2.syncfusion.com/documentation/api/pivotview#rows) or [columns](https://ej2.syncfusion.com/documentation/api/pivotview#columns) axis. Otherwise, the data from the Pivot Table will be shown without summary totals.
 * Even if virtual scrolling is enabled, not only is the current viewport data retrieved, but also the data for the immediate previous page and the immediate next page. As a result, when the end user scrolls slightly ahead or behind, the next or previous page data is displayed immediately without requiring a refresh. **Note:** If the Pivot Table's width and height are large, the loading data count in the current, previous, and next viewport (pages) will also increase, affecting performance.
 
 ## Virtual Scrolling for Static Field List

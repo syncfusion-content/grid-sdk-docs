@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Drill Down in ##Platform_Name## Pivot Table | Syncfusion
-description: Learn how the ##Platform_Name## Pivot Table expands or collapses hierarchical data with drill down, drill position, and `expandAll` for one-click full expansion.
+description: Learn how the ##Platform_Name## Pivot Table expands or collapses hierarchical data with drill down, drill position, and `expandAll`.
 platform: ej2-javascript
 control: Drill down
 publishingplatform: ##Platform_Name##

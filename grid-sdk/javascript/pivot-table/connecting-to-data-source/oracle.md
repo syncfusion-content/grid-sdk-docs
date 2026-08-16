@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Oracle in ##Platform_Name## Pivot Table | Syncfusion
-description: Learn how the ##Platform_Name## Pivot Table connects to Oracle via the Oracle.ManagedDataAccess library and a Web API controller to fetch and bind data at runtime.
+description: Learn how the ##Platform_Name## Pivot Table connects to Oracle via the Oracle.ManagedDataAccess library and a Web API controller.
 platform: ej2-javascript
 control: Oracle
 publishingplatform: ##Platform_Name##

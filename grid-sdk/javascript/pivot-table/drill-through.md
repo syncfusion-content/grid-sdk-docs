@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Drill Through in ##Platform_Name## Pivot Table | Syncfusion
-description: Learn how the ##Platform_Name## Pivot Table shows raw data behind aggregated cells via `allowDrillThrough`, with `maxRowsInDrillThrough` to cap rows.
+description: Learn how the ##Platform_Name## Pivot Table shows raw data behind any aggregated cell via `allowDrillThrough`, with `maxRowsInDrillThrough` to cap rows.
 platform: ej2-javascript
 control: Drill through
 publishingplatform: ##Platform_Name##

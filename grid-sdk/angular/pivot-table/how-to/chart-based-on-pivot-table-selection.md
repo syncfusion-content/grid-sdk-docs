@@ -1,6 +1,6 @@
 ﻿---
 layout: post
-title: How to render a chart on cell selection in Angular Pivot Table | Syncfusion
+title: Render a chart on cell selection in Angular Pivot Table | Syncfusion
 description: Step-by-step example showing how to render a chart on pivot table cell selection in the Angular Pivot Table, with code snippets and property references.
 platform: ej2-angular
 control: Chart based on pivot table selection 

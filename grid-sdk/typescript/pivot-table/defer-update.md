@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Defer Update in ##Platform_Name## Pivot Table | Syncfusion
-description: Learn how the ##Platform_Name## Pivot Table defers layout updates until the user clicks Apply in the Field List, by setting `allowDeferLayoutUpdate` for better performance.
+description: Learn how the ##Platform_Name## Pivot Table defers layout updates until Apply is clicked in the Field List via `allowDeferLayoutUpdate` for better performance.
 platform: ej2-javascript
 control: Defer update
 publishingplatform: ##Platform_Name##

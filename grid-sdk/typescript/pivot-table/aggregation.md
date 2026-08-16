@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Aggregation in ##Platform_Name## Pivot Table | Syncfusion
-description: Learn how the ##Platform_Name## Pivot Table applies aggregation types like Sum, Count, Average, and PercentageOfParentTotal to value fields, with custom aggregations supported at runtime.
+description: Learn how the ##Platform_Name## Pivot Table applies aggregation types like Sum, Count, and Average to value fields, with custom aggregations at runtime.
 platform: ej2-javascript
 control: Aggregation
 publishingplatform: ##Platform_Name##

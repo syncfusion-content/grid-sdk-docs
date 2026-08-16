@@ -1,7 +1,7 @@
 ---
 layout: post
 title: CSS Customization in ##Platform_Name## Pivot Table | Syncfusion
-description: Learn how the ##Platform_Name## Pivot Table uses CSS classes like `e-rowsheader` and `e-fieldlist-columns` to style row headers, column axes, and Field List areas.
+description: Learn how the ##Platform_Name## Pivot Table uses CSS classes to style row headers, axes, and Field List areas.
 platform: ej2-javascript
 control: CSS customization
 publishingplatform: ##Platform_Name##

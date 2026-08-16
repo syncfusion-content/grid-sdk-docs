@@ -30,7 +30,7 @@ The rendered pivot table can be printed by invoking the [print](https://ej2.sync
 
 ## Print pivot chart
 
-To print the pivot chart, use the [print](https://ej2.syncfusion.com/javascript/documentation/api/chart#print) method from the underlying [`Chart`](https://ej2.syncfusion.com/javascript/documentation/chart/getting-started) component instance. The [`Chart`](https://ej2.syncfusion.com/javascript/documentation/chart/getting-started) control manages the print functionality and preserves all visual elements, including colors, legends, and data labels, in the printed output.
+To print the pivot chart, use the [print](https://ej2.syncfusion.com/javascript/documentation/api/chart#print) method from the underlying [`Chart`](https://ej2.syncfusion.com/javascript/documentation/chart/es5-getting-started) component instance. The [`Chart`](https://ej2.syncfusion.com/javascript/documentation/chart/es5-getting-started) control manages the print functionality and preserves all visual elements, including colors, legends, and data labels, in the printed output.
 
 > To use pivot chart functionality, inject the `PivotChart` module into the pivot table.
 

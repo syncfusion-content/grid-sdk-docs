@@ -126,7 +126,7 @@ In accumulation charts, you can use the drill down and drill up options to explo
   
 {% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs225" %}
 
-![output](images/expand_collapse.png)
+![output](../images/expand_collapse.png)
 
 ### Column Headers and Delimiters
 

@@ -41,7 +41,7 @@ vue create quickstart
 
 When creating a new project, choose the option `Default ([Vue 2] babel, eslint)` from the menu.
 
-![Vue 2 project](../pivotview/images/vue2-terminal.png)
+![Vue 2 project](images/vue2-terminal.png)
 
 Once the project is created, move into the project folder and start the development server:
 

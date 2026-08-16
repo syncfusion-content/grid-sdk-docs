@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Server-Side Pivot Engine in ##Platform_Name## Pivot Table | Syncfusion
-description: Learn how the ##Platform_Name## Pivot Table uses `Syncfusion.Pivot.Engine` server-side to offload aggregation, filtering, and sorting, with `mode: 'Server'` and `url`.
+description: Learn how the ##Platform_Name## Pivot Table uses `Syncfusion.Pivot.Engine` server-side for aggregation, filtering, and sorting.
 platform: ej2-javascript
 control: Server side pivot engine
 publishingplatform: ##Platform_Name##

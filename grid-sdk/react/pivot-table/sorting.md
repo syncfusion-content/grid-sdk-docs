@@ -88,7 +88,7 @@ When [`dataType`](https://ej2.syncfusion.com/react/documentation/api/pivotview/f
 
 ### Custom Sorting
 
-Custom sorting allows you to sort field members (also referred to as headers) in rows and columns based on a user-defined order rather than an alphabetical or numerical sequence. This functionality is configured using the [`membersOrder`](https://ej2.syncfusion.com/react/documentation/api/pivotview/sortModel#membersorder) property within the [`sortSettings`](https://ej2.syncfusion.com/react/documentation/api/pivotview/sortModel/) during component initialization.
+Custom sorting allows you to sort field members (also referred to as headers) in rows and columns based on a user-defined order rather than an alphabetical or numerical sequence. This functionality is configured using the [`membersOrder`](https://ej2.syncfusion.com/react/documentation/api/pivotview/sortModel#membersorder) property within the [`sortSettings`](https://ej2.syncfusion.com/react/documentation/api/pivotview/sortModel) during component initialization.
 
 To set up custom sorting, use the following properties:
 
@@ -144,7 +144,7 @@ You can also configure value sorting programmatically using the [`valueSortSetti
 
 ### Multiple Axis Sorting
 
-Multiple axis sorting allows simultaneous sorting of value fields in both row and column axes for more flexible and precise data analysis. Apply this functionality using the following settings in [`valueSortSettings`](https://ej2.syncfusion.com/react/documentation/api/pivotview/valueSortSettingsModel/):
+Multiple axis sorting allows simultaneous sorting of value fields in both row and column axes for more flexible and precise data analysis. Apply this functionality using the following settings in [`valueSortSettings`](https://ej2.syncfusion.com/react/documentation/api/pivotview/valueSortSettingsModel):
 
 * [`columnHeaderText`](https://ej2.syncfusion.com/react/documentation/api/pivotview/valueSortSettingsModel#columnheadertext): Specifies the column header hierarchy for value sorting. Header levels are defined from Level 1 to N using a delimiter for clarity.
 * [`headerDelimiter`](https://ej2.syncfusion.com/react/documentation/api/pivotview/valueSortSettingsModel#headerdelimiter): It allows to set the delimiters string to separate the header text between levels.

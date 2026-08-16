@@ -1,7 +1,7 @@
 ---
 layout: post
 title: MongoDB in ##Platform_Name## Pivot Table | Syncfusion
-description: Learn how the ##Platform_Name## Pivot Table connects to MongoDB via the MongoDB.Driver and MongoDB.Bson libraries and a Web API controller to fetch and bind data.
+description: Learn how the ##Platform_Name## Pivot Table connects to MongoDB via the MongoDB.Driver library and a Web API controller.
 platform: ej2-javascript
 control: MongoDB
 publishingplatform: ##Platform_Name##

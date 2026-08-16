@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Virtual Scrolling in ##Platform_Name## Pivot Table | Syncfusion
-description: Learn how the ##Platform_Name## Pivot Table renders only visible rows and columns for large datasets via `enableVirtualization`, with required `height` and `width` settings.
+description: Learn how the ##Platform_Name## Pivot Table renders only visible rows and columns for large datasets via `enableVirtualization`.
 platform: ej2-javascript
 control: Virtual scrolling
 publishingplatform: ##Platform_Name##
