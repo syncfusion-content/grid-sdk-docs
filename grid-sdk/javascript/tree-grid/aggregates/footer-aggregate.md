@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Footer aggregate in JavaScript Treegrid control | Syncfusion
-description: Learn here all about Footer aggregate in Syncfusion JavaScript Treegrid control of Syncfusion Essential JS 2 and more.
+title: JavaScript TreeGrid Footer Aggregate | Syncfusion
+description: Learn how to configure and display footer aggregate values in JavaScript TreeGrid, including API usage, templates, and formatting options.
 platform: grid-sdk
 control: Footer aggregate 
 publishingplatform: grid-sdk
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Footer aggregate in JavaScript Treegrid control
+# Footer Aggregate in JavaScript TreeGrid
 
 Footer aggregate value is calculated for all the rows, and it is displayed in the footer cells. Use the [`footerTemplate`](../../api/treegrid/aggregateColumnModel/#footertemplate) property to render the aggregate value in footer cells.
 

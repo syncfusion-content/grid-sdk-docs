@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Exporting Templates in Syncfusion ASP.NET Core Grid Component
-description: Learn here all about Exporting grids with templates in Syncfusion ASP.NET Core Grid component of Syncfusion Essential JS 2 and more.
+title: ASP.NET Core Grid Excel Export Templates | Syncfusion
+description: Learn how to use Excel Exporting Templates in ASP.NET Core Data Grid to customize exported content with templates, images, links, and formatting.
 platform: grid-sdk
 control: Exporting grid with templates
 publishingplatform: grid-sdk
 documentation: ug
 ---
 
-# Exporting grid with templates in ASP.NET Core Grid control
+# Excel Export Templates in ASP.NET Core Data Grid
 
 The grid offers the option to export the column, detail, and caption templates to an Excel document. The template contains images, hyperlinks, and customized text.
 

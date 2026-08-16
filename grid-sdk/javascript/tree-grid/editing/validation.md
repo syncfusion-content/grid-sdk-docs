@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Validation in JavaScript Treegrid control | Syncfusion
-description: Learn here all about Validation in Syncfusion JavaScript Treegrid control of Syncfusion Essential JS 2 and more.
+title: JavaScript TreeGrid Validation | Syncfusion
+description: Learn how to configure validation in JavaScript TreeGrid, including required fields, custom rules, and error handling during editing.
 platform: grid-sdk
 control: Validation 
 publishingplatform: grid-sdk
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Validation in JavaScript Treegrid control
+# Validation in JavaScript TreeGrid
 
 ## Column validation
 

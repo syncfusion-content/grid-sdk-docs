@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Custom tool bar in JavaScript Treegrid control | Syncfusion
-description: Learn here all about Custom tool bar in Syncfusion JavaScript Treegrid control of Syncfusion Essential JS 2 and more.
+title: JavaScript TreeGrid Custom Toolbar | Syncfusion
+description: Learn how to add and configure custom toolbars in the JavaScript TreeGrid, including event handling, alignment, and mixing with built-in items.
 platform: grid-sdk
 control: Custom tool bar 
 publishingplatform: grid-sdk
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Custom tool bar in JavaScript Treegrid control
+# Custom Toolbar in JavaScript TreeGrid
 
 Custom toolbar items can be added by defining the [`toolbar`](../../api/treegrid/#toolbar) as a collection of [`ItemModels`](../../api/toolbar/#item).
 Actions for this customized toolbar items are defined in the [`toolbarClick`](../../api/treegrid/#toolbarclick) event.

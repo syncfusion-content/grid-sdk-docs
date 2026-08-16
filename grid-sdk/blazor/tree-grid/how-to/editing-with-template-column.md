@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Editing with template column in Blazor TreeGrid | Syncfusion®
-description: Checkout and learn here all about editing with template column in Blazor TreeGrid component and much more details.
+title: Blazor TreeGrid Template Column Editing | Syncfusion
+description: Learn how to edit data using template columns in Blazor TreeGrid with custom editors, input controls, and flexible editing workflows.
 platform: grid-sdk
 control: Tree Grid
 documentation: ug
 ---
 
-# Editing with template column in Blazor TreeGrid Component
+# Template Column Editing in Blazor TreeGrid
 
 A template column value can be edited by defining the [Field](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.TreeGrid.TreeGridColumn.html#Syncfusion_Blazor_TreeGrid_TreeGridColumn_Field) property for that particular [TreeGridColumn](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.TreeGrid.TreeGridColumn.html) component.
 
@@ -28,14 +28,13 @@ A template column value can be edited by defining the [Field](https://help.syncf
                 <Template>
                     @{
                         var data = context as TreeData;
-                        <a href="#">@data.TaskName</a>
+                       <a href="#" aria-label="Task link for @data.TaskName">@data.TaskName</a>
                     }
                 </Template>
             </TreeGridColumn>
             <TreeGridColumn Field="Priority" HeaderText="Priority" Width="60"></TreeGridColumn>
             <TreeGridColumn Field="Duration" HeaderText="Duration" Width="70" Format="C2" TextAlign="TextAlign.Right"></TreeGridColumn>
             <TreeGridColumn Field="Progress" HeaderText="Progress" Width="70" Format="C2" TextAlign="TextAlign.Right"></TreeGridColumn>
-
         </TreeGridColumns>
     </SfTreeGrid>
 

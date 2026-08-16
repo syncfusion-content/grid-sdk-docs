@@ -1,7 +1,7 @@
 ---
 layout: post
-title: State persistence in JavaScript Treegrid control | Syncfusion
-description: Learn here all about State persistence in Syncfusion JavaScript Treegrid control of Syncfusion Essential JS 2 and more.
+title: JavaScript TreeGrid State Persistence | Syncfusion
+description: Learn how to use state persistence in the JavaScript TreeGrid component, including configuration with enablePersistence and localStorage usage.
 platform: grid-sdk
 control: State persistence 
 publishingplatform: grid-sdk
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# State persistence in JavaScript Treegrid control
+# State Persistence in JavaScript TreeGrid
 
 State persistence refers to the TreeGrid's state maintained in the browser's [`localStorage`](https://www.w3schools.com/html/html5_webstorage.asp#) even if the browser is refreshed or if you move to the next page within the browser.
 State persistence stores treegrid’s model object in the local storage when the [`enablePersistence`](../../api/treegrid/#enablepersistence) is defined as true.

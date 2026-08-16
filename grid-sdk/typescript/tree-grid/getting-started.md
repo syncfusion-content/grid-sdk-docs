@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting started with TypeScript Tree Grid control | Syncfusion
-description:  Checkout and learn about Getting started with TypeScript Tree Grid control of Syncfusion Essential JS 2 and more details.
+title: TypeScript TreeGrid Getting Started | Syncfusion
+description: Learn how to get started with TypeScript TreeGrid, including installation, configuration, data binding, and basic setup.
 platform: grid-sdk
 control: Getting started 
 publishingplatform: grid-sdk
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-#  Getting started in TypeScript Tree Grid control
+# Getting Started with TypeScript TreeGrid
 
 The Tree Grid component is essential for displaying hierarchical data in a tabular format. It is commonly used for project management (displaying tasks and subtasks), organizational structures (displaying company hierarchies), file systems, and any scenario where data has parent-child relationships.
 

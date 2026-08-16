@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Angular Grid - Local Data Binding | Syncfusion
-description: Local data binding enables the Angular Grid to work with in-memory datasets, as well as fetch and display data from remote services through external requests.
+title: Angular Grid Local Data Binding | Syncfusion
+description: Learn how to bind local data sources and in-memory datasets in Angular Data Grid, enable dynamic updates, and efficiently manage displayed data.
 platform: grid-sdk
 control: Local data 
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Local Data in Angular Grid Component
+# Local Data Binding in Angular Data Grid
 
 The [Angular Data Grid](https://www.syncfusion.com/angular-components/angular-data-grid) provides a straightforward way to bind local data, such as arrays or JSON objects, to the grid component. This feature allows data to be displayed and manipulated within the grid without the need for external server calls, making it particularly useful for scenarios involving static or locally stored data.
 
@@ -370,7 +370,7 @@ namespace AngularwithASPCore.Models
 
 The following screenshot demonstrates addition, editing, and deletion operations with changes reflected across all connected clients:
 
-![SignalR real-time data synchronization across multiple clients](../../grid/images/signalR.gif)
+![SignalR real-time data synchronization across multiple clients](../images/signalR.gif)
 
 ## Binding data from Excel file
 
@@ -664,7 +664,7 @@ actionComplete(e: EditEventArgs) {
 
 The following screenshot demonstrates data loading when the button is clicked and CRUD operations performance:
 
-![Fetch API data loading and CRUD operations demonstration](../../grid/images/fetch.gif)
+![Fetch API data loading and CRUD operations demonstration](../images/fetch.gif)
 
 ### Display loading indicator with local data
 
@@ -971,7 +971,7 @@ actionComplete(e: EditEventArgs) {
 
 The following screenshot demonstrates data loading when the button is clicked and CRUD operations performance:
 
-![AJAX request data loading and CRUD operations demonstration](../../grid/images/Ajaxreq.gif)
+![AJAX request data loading and CRUD operations demonstration](../images/Ajaxreq.gif)
 
 ### Display loading indicator using AJAX
 

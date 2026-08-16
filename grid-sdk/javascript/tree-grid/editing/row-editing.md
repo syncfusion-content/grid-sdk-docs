@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Row editing in JavaScript Treegrid control | Syncfusion
-description: Learn here all about Row editing in Syncfusion JavaScript Treegrid control of Syncfusion Essential JS 2 and more.
+title: JavaScript TreeGrid Row Editing | Syncfusion
+description: Learn how to use row editing in JavaScript TreeGrid, including editing rows, programmatic CRUD operations, and confirmation dialogs.
 platform: grid-sdk
 control: Row editing 
 publishingplatform: grid-sdk
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Row editing in JavaScript Treegrid control
+# Row Editing in JavaScript TreeGrid
 
 In Row edit mode, when you start editing the currently selected record, the entire row is changed to edit state.
 You can change the cell values of the row and save edited data to the data source.

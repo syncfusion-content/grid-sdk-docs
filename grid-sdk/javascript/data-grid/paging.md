@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Paging in JavaScript Grid control | Syncfusion
-description: Learn here all about Paging in Syncfusion JavaScript Grid control of Syncfusion Essential JS 2 and more.
+title: Javascript Grid Paging | Syncfusion
+description: Learn how to configure paging in Javascript Data Grid with client and server paging, page size options, pager templates, and navigation controls.
 platform: grid-sdk
 control: Paging 
 publishingplatform: grid-sdk
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Paging in JavaScript Grid control
+# Paging in Javascript Data Grid
 
 Paging provides an option to display grid data in segmented pages, making it easier to navigate through large datasets. This feature is particularly useful when dealing with extensive data sets. 
 

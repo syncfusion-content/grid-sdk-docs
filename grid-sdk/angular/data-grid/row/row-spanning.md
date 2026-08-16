@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Angular Grid - Row Spanning | Syncfusion
-description: Angular Grid row spanning describes merging cells across rows, configuration for rowspan behavior, and templates for multi-row presentations.
+title: Angular Grid Row Spanning | Syncfusion
+description: Learn how to implement row spanning in Angular Data Grid using Syncfusion. Merge cells across rows, configure rowspan behavior, and create rich data layouts.
 platform: grid-sdk
 control: Row spanning 
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Row Spanning in Angular Grid Component
+# Row Spanning in Angular Data Grid
 
 The Grid provides row spanning capabilities to merge two or more cells in a row into a single cell, reducing information repetition across multiple rows and enhancing readability.
 

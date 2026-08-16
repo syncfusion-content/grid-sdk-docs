@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Angular Grid - Adaptive | Syncfusion
-description: Angular Grid adaptive explains responsive behavior, layout adjustments, and configuration to optimize grid usability on mobile and small screens with examples.
+title: Angular Grid Adaptive UI Customization | Syncfusion
+description: Learn how to customize adaptive UI in Angular Data Grid with responsive dialogs, vertical row rendering, mobile-friendly layouts, and small-screen optimization.
 platform: grid-sdk
 control: Adaptive 
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Adaptive in Angular Grid Component
+# Adaptive UI in Angular Data Grid
 
 The Grid user interface (UI) was redesigned to provide an optimal viewing experience and improve usability on small screens. This interface will render the filter, sort, column chooser, column menu(supports only when the `rowRenderingMode` as Horizontal) and edit dialogs adaptively and have an option to render the grid row elements in the vertical direction.
 
@@ -87,7 +87,7 @@ import { ChangeEventArgs } from '@syncfusion/ej2-dropdowns';
         </div>
         </div>
         <br />
-        <div class="datalink">Source: <a href="https://en.wikipedia.org/wiki/List_of_Android_smartphones"target="_blank">Wikipedia: List of Android smartphones</a></div>
+        <div class="datalink">Source: <a href="https://en.wikipedia.org/wiki/List_of_Android_smartphones"target="_blank" aria-label="Android smartphones on Wikipedia">Wikipedia: List of Android smartphones</a></div>
     </div>`
 })
 

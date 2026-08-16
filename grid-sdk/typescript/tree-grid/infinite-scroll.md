@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Infinite scroll in TypeScript Treegrid control | Syncfusion
-description: Learn here all about Infinite scroll in Syncfusion TypeScript Treegrid control of Syncfusion Essential JS 2 and more.
+title: TypeScript TreeGrid Infinite Scroll | Syncfusion
+description: Learn how to enable and configure infinite scroll in the TypeScript TreeGrid for efficient large data handling, cache management, and best practices.
 platform: grid-sdk
 control: Infinite scroll 
 publishingplatform: grid-sdk
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Infinite scroll in TypeScript Treegrid control
+# Infinite Scroll in TypeScript TreeGrid
 
 Infinite scrolling is used to load a huge amount of data without degrading the Tree Grid performance. This feature works like the lazy loading concept, which means the buffer data is loaded only when the scrollbar reaches the end of the scroller.
 
