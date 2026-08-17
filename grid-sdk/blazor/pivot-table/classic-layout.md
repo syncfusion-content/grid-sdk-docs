@@ -1,14 +1,16 @@
 ---
 layout: post
-title: Classic Layout in Blazor Pivot Table Component | Syncfusion®
-description: Learn about Classic Layout in Blazor Pivot Table component for tabular data presentation and much more details.
-platform: grid-sdk
+title: Classic Layout in Blazor Pivot Table | Syncfusion
+description: Learn how the Blazor Pivot Table renders row fields side by side in a tabular layout with subtotals beneath each group and grand totals at the end.
+platform: Blazor
 control: Classic Layout
 control: Pivot Table
 documentation: ug
 ---
 
-# Classic Layout in Blazor Pivot Table Component
+# Classic Layout in Blazor Pivot Table
+
+N> The classic layout applies only to relational data sources and operates in both client-side and server-side engines.
 
 The classic layout, also known as the *tabular layout*, in the Pivot Table provides a structured, tabular presentation of data that enhances readability and usability. In this layout, fields placed on the row axis are displayed side by side in separate columns, making data interpretation and analysis more easier.
 
@@ -86,3 +88,9 @@ To enable the classic layout, set the `Layout` property in the [PivotViewGridSet
     2.  Auto-fit
     3.  Column reordering when the grouping bar feature is enabled
     4.  Clip mode
+
+## See also
+
+* [Row and column](https://blazor.syncfusion.com/documentation/pivot-table/row-and-column)
+* [Show/Hide Totals](https://blazor.syncfusion.com/documentation/pivot-table/show-hide-totals)
+* [Grouping bar](https://blazor.syncfusion.com/documentation/pivot-table/grouping-bar)

@@ -1,12 +1,12 @@
 ---
 layout: post
 title: Hide empty headers in Javascript Pivotview component | Syncfusion
-description: Learn here all about Hide empty headers in Syncfusion TypeScript Pivot Table component of Syncfusion Essential JS 2 and more.
-platform: grid-sdk
+description: Learn here all about Hide empty headers in Syncfusion ##Platform_Name## Pivot Table component of Syncfusion Essential JS 2 and more.
+platform: ej2-javascript
 control: Hide empty headers 
-publishingplatform: grid-sdk
+publishingplatform: ##Platform_Name##
 documentation: ug
-domainurl: https://help.syncfusion.com/grid-sdk
+domainurl: ##DomainURL##
 ---
 
 # Hide empty headers in the JavaScript Pivot Table component

@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Drill Down in ASP.NET Core Pivot Table Control | Syncfusion
-description: Learn here all about Drill Down in Syncfusion ASP.NET Core Pivot Table component of Syncfusion Essential JS 2 and more.
-platform: grid-sdk
+title: Drill Down in ASP.NET Core Pivot Table | Syncfusion
+description: Learn how the ASP.NET Core Pivot Table expands or collapses hierarchical row and column members on demand for relational data sources.
+platform: ej2-asp-core-mvc
 control: Drill Down
-publishingplatform: grid-sdk
+publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
 
-# Drill down in ASP.NET Core Pivot Table component
+# Drill Down in ASP.NET Core Pivot Table
 
 ## Drill down and drill up
 

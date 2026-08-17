@@ -1,14 +1,14 @@
 ---
 layout: post
-title: AI-Powered Smart Pivot Table in Blazor | Syncfusion®
-description: Learn how to use Blazor Pivot Table with AI services for smart data aggregation and predictive modeling.
-platform: grid-sdk
+title: AI-Powered Smart Pivot Table in Blazor Pivot Table | Syncfusion
+description: Learn how to add AI-driven Smart Data Aggregation, Predictive Modeling, and Adaptive Filtering to the Blazor Pivot Table using OpenAI, Azure OpenAI, or Ollama.
+platform: Blazor
 control: AI Integration
 documentation: ug
 keywords: Blazor Pivot Table, Blazor AI, Smart Data Aggregation, Predictive Modeling and Adaptive Filtering
 ---
 
-# Building an AI-Powered Smart Pivot Table in Blazor
+# AI-Powered Smart Pivot Table in Blazor Pivot Table
 
 The Blazor Pivot Table can be enhanced with AI-driven features by using the [**Syncfusion.Blazor.AI**](https://www.nuget.org/packages/Syncfusion.Blazor.AI) NuGet package. This guide helps you add AI features to your Pivot Table, including Smart Data Aggregation, Predictive Modeling, and Adaptive Filtering. You can use different AI services such as OpenAI, Azure OpenAI, or Ollama. With these features, you can interact with the Pivot Table in a smarter way to understand your data better.
 
@@ -273,7 +273,7 @@ The following example shows how to set up these features in your Blazor applicat
     <Description>
         <p>
             The <b>Pivot</b>, enhanced with AI, offers features such as <b>Smart Data Aggregation</b>, <b>Predictive Modeling</b>, and <b>Adaptive Filtering</b>. Click the <mark><b>AI Assist</b></mark> option to explore these AI-powered capabilities.
-            Know more <a target="_blank" href="https://github.com/syncfusion/smart-ai-samples/blob/master/blazor/SyncfusionAISamples/Components/Pages/PivotTable/Readme.md">here</a>.
+            Know more <a target="_blank" aria-label="View Smart Pivot Table AI sample on GitHub" href="https://github.com/syncfusion/smart-ai-samples/blob/master/blazor/SyncfusionAISamples/Components/Pages/PivotTable/Readme.md">here</a>.
         </p>
     </Description>
     <div class="pivot-toast">

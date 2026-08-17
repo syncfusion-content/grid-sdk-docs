@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Grouping in JavaScript Pivot Table component | Syncfusion
-description: Learn here all about Grouping in Syncfusion JavaScript Pivot Table component of Syncfusion Essential JS 2 and more.
-platform: grid-sdk
-control: Grouping 
-publishingplatform: grid-sdk
+title: Grouping in ##Platform_Name## Pivot Table | Syncfusion
+description: Learn how the ##Platform_Name## Pivot Table groups date, number, and string fields into ranges, with date, number, and custom grouping via `allowGrouping`.
+platform: ej2-javascript
+control: Grouping
+publishingplatform: ##Platform_Name##
 documentation: ug
-domainurl: https://help.syncfusion.com/grid-sdk
+domainurl: ##DomainURL##
 ---
 
-# Grouping in JavaScript Pivot Table component
+# Grouping in ##Platform_Name## Pivot Table
 
 > This feature is applicable only for the relational data source.
 
