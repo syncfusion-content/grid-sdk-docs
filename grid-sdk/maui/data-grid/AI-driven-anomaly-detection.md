@@ -9,7 +9,7 @@ documentation: ug
 
 # AI-Driven Anomaly Detection in .NET MAUI Data Grid
 
-This document provides a comprehensive guide to implementing AI-driven anomaly detection with the Syncfusion [.NET MAUI Data Grid](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.DataGrid.SfDataGrid.html). It demonstrates how to integrate Azure OpenAI services to analyze dataset patterns and automatically highlight anomalies in real-time.
+This document provides a comprehensive guide to implementing AI-driven anomaly detection with the Syncfusion [.NET MAUI Data Grid](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.DataGrid.SfDataGrid.html). It demonstrates how to integrate Azure OpenAI services to analyze dataset patterns and automatically point out anomalies in real-time.
 
 ## Integrating Azure OpenAI with the .NET MAUI App
 
