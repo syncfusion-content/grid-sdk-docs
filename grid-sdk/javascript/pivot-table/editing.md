@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Editing in JavaScript Pivot Table component | Syncfusion
-description: Learn here all about Editing in Syncfusion JavaScript Pivot Table component of Syncfusion Essential JS 2 and more.
-platform: grid-sdk
-control: Editing 
-publishingplatform: grid-sdk
+title: Editing in ##Platform_Name## Pivot Table | Syncfusion
+description: Learn how the ##Platform_Name## Pivot Table edits underlying values via `editSettings`, with add, update, delete, inline edit, and command column support.
+platform: ej2-javascript
+control: Editing
+publishingplatform: ##Platform_Name##
 documentation: ug
-domainurl: https://help.syncfusion.com/grid-sdk
+domainurl: ##DomainURL##
 ---
 
-# Editing in JavaScript Pivot Table component
+# Editing in ##Platform_Name## Pivot Table
 
 > This feature is applicable only for the relational data source.
 

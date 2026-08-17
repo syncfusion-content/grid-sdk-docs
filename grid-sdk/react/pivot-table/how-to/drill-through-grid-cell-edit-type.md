@@ -1,18 +1,18 @@
 ---
 layout: post
-title: Drill through grid cell edit type in React | Syncfusion
-description: Learn here all about Drill through grid cell edit type in Syncfusion React Pivotview component of Syncfusion Essential JS 2 and more.
-control: Drill through grid cell edit type 
-platform: grid-sdk
+title: How to set the drill-through edit type in Pivot Table | Syncfusion
+description: Step-by-step example showing how to set the drill-through cell edit type in the React Pivot Table using the drillThrough event.
+control: Pivot Table
+platform: ej2-react
 documentation: ug
-domainurl: https://help.syncfusion.com/grid-sdk
+domainurl: ##DomainURL##
 ---
 
-# Drill-through grid cell edit type in the React Pivot Table component
+# How to set the drill-through edit type in Pivot Table
 
 The drill-through feature in the Pivot Table allows users to view the raw data behind aggregated values by opening a detailed grid dialog. When this dialog appears, you can customize the edit behavior of specific columns to provide appropriate input controls based on their data types.
 
-Using the [`drillThrough`](https://ej2.syncfusion.com/react/documentation/api/pivotview/index-default#drillthrough) event in the Pivot Table, you can define the edit type for any column in the drill-through grid. This is accomplished by checking the column name within the event handler and setting the appropriate edit type using the [`gridColumns.editType`](https://ej2.syncfusion.com/react/documentation/api/grid/column#edittype) event argument.
+Using the [`drillThrough`](https://ej2.syncfusion.com/react/documentation/api/pivotview/index-default#drillthrough) event in the Pivot Table, you can define the edit type for any column in the drill-through grid. This is accomplished by checking the column name within the event handler and assigning the appropriate value to [`gridColumns.editType`](https://ej2.syncfusion.com/react/documentation/api/grid/column#edittype) on the column object exposed by the event arguments.
 
 ## Edit type options
 

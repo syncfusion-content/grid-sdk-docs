@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Performance tips for ASP.NET MVC Pivot Table component | Syncfusion
-description: Checkout and learn here all about best practices to improve the performance of the Syncfusion ASP.NET MVC Pivot Table component and much more.
-platform: grid-sdk
+title: Performance Best Practices in ASP.NET MVC Pivot Table | Syncfusion
+description: Learn how to improve the ASP.NET MVC Pivot Table's loading performance with virtual scrolling, paging, server-side engine, and data compression.
+platform: ej2-asp-core-mvc
 control: Performance best practices
-publishingplatform: grid-sdk
+publishingplatform: ##Platform_Name##
 documentation: ug
-domainurl: https://help.syncfusion.com/grid-sdk
+domainurl: ##DomainURL##
 ---
 
-# Best practices to improve the performance of the Pivot Table
+# Performance Best Practices in ASP.NET MVC Pivot Table
 
 Performance optimization is crucial when working with large datasets in the [ASP.NET MVC Pivot Table](https://www.syncfusion.com/aspnet-mvc-ui-controls/pivot-table). This documentation provides some best practices to empower your data analysis and enhance the user experience.
 
