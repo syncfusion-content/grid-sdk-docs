@@ -84,7 +84,7 @@ The TreeGrid component provides a powerful feature that allows rendering custom 
 
 To render a custom component inside the detail row, define a template using the [detailTemplate](https://ej2.syncfusion.com/angular/documentation/api/treegrid#detailtemplate) property and handle the [detailDataBound](https://ej2.syncfusion.com/angular/documentation/api/treegrid#detaildatabound) event. This template can include any HTML element or Angular component that needs to be displayed as the detail content.
 
-The `detailDataBound` event is triggered after a detail row is bound to data. This event provides an object of type [DetailDataBoundEventArgs](https://ej2.syncfusion.com/angular/documentation/api/grid/detaildataboundeventargs/) as a parameter.
+The `detailDataBound` event is triggered after a detail row is bound to data. This event provides an object of type [DetailDataBoundEventArgs](https://ej2.syncfusion.com/angular/documentation/api/grid/detaildataboundeventargs) as a parameter.
 
 For example, to render grid inside the detail row, place an HTML div element as the `detailTemplate` and render the DIV element as Grid component in the `detailDataBound` event.
 

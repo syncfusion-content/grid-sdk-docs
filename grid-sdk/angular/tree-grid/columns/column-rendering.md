@@ -171,7 +171,7 @@ This displays the concatenated value of **FirstName** and **LastName** in the **
 
 An expression column can be achieved in the TreeGrid by using the [valueAccessor](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column#valueaccessor) property. The `valueAccessor` property allows definition of a function that calculates the value for the expression column based on the values of other columns.
 
-In this example, the TreeGrid has columns **orderID**, **orderName**, **units**, and **unitprice**. An expression column called **Total price** is added that calculates the total prices for each row based on the values of **units** and **unitprice** columns.
+In this example, the TreeGrid has columns **orderID**, **orderName**, **units**, and **unit price**. An expression column called **Total price** is added that calculates the total prices for each row based on the values of **units** and **unit price** columns.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -190,7 +190,7 @@ In this example, the TreeGrid has columns **orderID**, **orderName**, **units**,
 
 To display serial numbers in the TreeGrid for every row, the [rowDataBound](https://ej2.syncfusion.com/angular/documentation/api/treegrid#rowdatabound) event can be used. The `rowDataBound` event is triggered for each row in the TreeGrid when the data is bound to the TreeGrid.
 
-Within the event handler, the [pagesize](https://ej2.syncfusion.com/angular/documentation/api/treegrid/pageSettingsModel#pagesize) and [currentPage](https://ej2.syncfusion.com/angular/documentation/api/treegrid/pageSettingsModel#currentpage) index can be obtained from the TreeGrid's [pageSettings](https://ej2.syncfusion.com/angular/documentation/api/treegrid#pagesettings) property. Using these values, the serial number can be calculated based on the page size, current page, and row index. Finally, the calculated serial number can be set as the innerHTML of the corresponding row cell.
+Within the event handler, the [pageSize](https://ej2.syncfusion.com/angular/documentation/api/treegrid/pageSettingsModel#pagesize) and [currentPage](https://ej2.syncfusion.com/angular/documentation/api/treegrid/pageSettingsModel#currentpage) index can be obtained from the TreeGrid's [pageSettings](https://ej2.syncfusion.com/angular/documentation/api/treegrid#pagesettings) property. Using these values, the serial number can be calculated based on the page size, current page, and row index. Finally, the calculated serial number can be set as the innerHTML of the corresponding row cell.
 
 The following example demonstrates how to display serial numbers in a TreeGrid using the `rowDataBound` event:
 

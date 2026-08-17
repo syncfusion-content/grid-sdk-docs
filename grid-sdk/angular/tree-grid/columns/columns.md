@@ -66,7 +66,7 @@ To adjust the column width in a TreeGrid, the [width](https://ej2.syncfusion.com
 
 > To learn more about resizing, refer to the resizing section [here](https://ej2.syncfusion.com/angular/documentation/treegrid/columns/column-resizing)
 
-#### Supported types for column width:
+### Supported types for column width:
 
 The Syncfusion<sup style="font-size:70%">&reg;</sup> TreeGrid supports the following three types of column width:
 
@@ -297,7 +297,7 @@ The following example demonstrates using the `textAlign` property to align the t
 
 ## Render boolean values as checkbox
 
-The TreeGrid component allows rendering boolean values as checkboxes in columns. This can be achieved by using the [displayAsCheckBox](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column#displayascheckbox) property, which is available in the [column](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column/). This property is useful when there is a boolean column in the TreeGrid and the values need to be displayed as checkboxes instead of the default text representation of **true** or **false**.
+The TreeGrid component allows rendering boolean values as checkboxes in columns. This can be achieved by using the [displayAsCheckBox](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column#displayascheckbox) property, which is available in the [column](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column). This property is useful when there is a boolean column in the TreeGrid and the values need to be displayed as checkboxes instead of the default text representation of **true** or **false**.
 
 To enable the rendering of boolean values as checkboxes, set the `displayAsCheckBox` property of the `columns` to **true**.
 
@@ -342,7 +342,7 @@ The following screenshot represents the resizing the column using resizer symbol
 
 ### Resizing a column to fit its content using method support
 
-The [autoFitColumns](https://ej2.syncfusion.com/angular/documentation/api/treegrid#autofitcolumns) method resizes the column to fit the widest cell's content without wrapping. Specific columns can be autofitted at initial rendering by invoking the `autoFitColumns` method in [dataBound](https://ej2.syncfusion.com/angular/documentation/api/treegrid#databound) event.
+The [autoFitColumns](https://ej2.syncfusion.com/angular/documentation/api/treegrid#autofitcolumns) method resizes the column to fit the widest cell's content without wrapping. Specific columns can be automatically resized at initial rendering by invoking the `autoFitColumns` method in [dataBound](https://ej2.syncfusion.com/angular/documentation/api/treegrid#databound) event.
 
 To use `autoFitColumns` method, inject **ResizeService** in the provider section of **AppModule**.
 
@@ -357,7 +357,7 @@ To use `autoFitColumns` method, inject **ResizeService** in the provider section
   
 {% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/treegrid/resize-cs1" %}
 
-> All the columns can be autofitted by invoking the `autoFitColumns` method without specifying column names.
+> All the columns can be automatically resized by invoking the `autoFitColumns` method without specifying column names.
 
 ### AutoFit columns with empty space
 
@@ -556,7 +556,7 @@ This method returns an array of field names of all the columns in the TreeGrid.
 let fieldNames = this.treegrid.getColumnFieldNames()
 ```
 
-> For a complete list of column properties, refer to this [section](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column/).
+> For a complete list of column properties, refer to this [section](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column).
 
 ### Updating column definitions
 
@@ -575,7 +575,7 @@ The column definitions in the TreeGrid can be updated using the [column](https:/
 
 ### Adding/removing columns
 
-The TreeGrid component allows dynamically adding or removing columns to and from the TreeGrid using the [columns](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column/) property, which can be accessed through the instance of the TreeGrid.
+The TreeGrid component allows dynamically adding or removing columns to and from the TreeGrid using the [columns](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column) property, which can be accessed through the instance of the TreeGrid.
 
 To add a new column to the TreeGrid, the new column object can be directly **pushed** to the columns property. To remove a column from the TreeGrid, the **pop** method can be used, which removes the last element from the columns array of the TreeGrid. Alternatively, the splice method can be used to remove a specific column from the columns array.
 

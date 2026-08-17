@@ -1,7 +1,7 @@
 ---
 layout: post
 title: React TreeGrid Custom Aggregate | Syncfusion
-description: Learn about implementing custom aggregates in the Angular TreeGrid, including configuration and usage of custom aggregation functions.
+description: Learn about implementing custom aggregates in the React TreeGrid, including configuration and usage of custom aggregation functions.
 control: Custom aggregate
 platform: grid-sdk
 documentation: ug

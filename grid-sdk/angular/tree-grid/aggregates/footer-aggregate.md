@@ -30,7 +30,7 @@ Footer aggregate values are calculated for all rows and displayed in the footer 
 
 ## How to format aggregate value
 
-Format the aggregate value result by using the [`format`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/aggregateColumnModel/#format) property. The `format` property can be set to standard numeric or date formats according to your requirements.
+Format the aggregate value result by using the [`format`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/aggregateColumnModel#format) property. The `format` property can be set to standard numeric or date formats according to your requirements.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

@@ -47,7 +47,7 @@ change(args) {
 }
 ```
 
-## Autowrap the TreeGrid content
+## Auto wrap the TreeGrid content
 
 The auto wrap feature ensures that cell content wraps to the next line when exceeding the defined cell width. Wrapping behavior is determined by available whitespace and column width settings.
 

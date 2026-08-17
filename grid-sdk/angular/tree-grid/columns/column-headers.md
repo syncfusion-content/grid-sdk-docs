@@ -190,11 +190,11 @@ The following example demonstrates using the `headerTextAlign` property to align
 >* The `headerTextAlign` property only changes the alignment of the text in the column header, not the content of the column. To align both the column header and content, use the [textAlign](https://ej2.syncfusion.com/documentation/api/treegrid/column#textalign) property.
 >* The `headerTextAlign` property can also be used with the stacked header feature in the Syncfusion<sup style="font-size:70%">&reg;</sup> TreeGrid. The property will align the header text in the sub-headers as well.
 
-## Autowrap the header text
+## Auto wrap the header text
 
-The autowrap feature allows the cell content of the TreeGrid to wrap to the next line when it exceeds the boundary of the specified cell width. The cell content wrapping works based on the position of white space between words. To support the Autowrap functionality in the Syncfusion<sup style="font-size:70%">&reg;</sup> TreeGrid, set the appropriate [width](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column#width) for the columns. The column width defines the maximum width of a column and helps to wrap the content automatically.
+The auto wrap feature allows the cell content of the TreeGrid to wrap to the next line when it exceeds the boundary of the specified cell width. The cell content wrapping works based on the position of white space between words. To support the Auto wrap functionality in the Syncfusion<sup style="font-size:70%">&reg;</sup> TreeGrid, set the appropriate [width](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column#width) for the columns. The column width defines the maximum width of a column and helps to wrap the content automatically.
 
-To enable autowrap, set the `allowTextWrap` property to **true**. The auto wrap mode can also be configured by setting the [textWrapSettings.wrapMode](https://ej2.syncfusion.com/angular/documentation/api/treegrid/textWrapSettings#wrapmode) property.
+To enable auto wrap, set the `allowTextWrap` property to **true**. The auto wrap mode can also be configured by setting the [textWrapSettings.wrapMode](https://ej2.syncfusion.com/angular/documentation/api/treegrid/textWrapSettings#wrapmode) property.
 
 The TreeGrid provides three options for configuring:
 
@@ -202,9 +202,9 @@ The TreeGrid provides three options for configuring:
 * **Header**: With this option, only the TreeGrid header text is wrapped.
 * **Content**: With this option, only the TreeGrid content is wrapped.
 
->* If a column width is not specified, then the Autowrap of columns will be adjusted with respect to the TreeGrid's width.
+>* If a column width is not specified, then the Auto wrap of columns will be adjusted with respect to the TreeGrid's width.
 >* If a column's header text contains no white space, the text may not be wrapped.
->* If the content of a cell contains HTML tags, the Autowrap functionality may not work as expected. In such cases, the [headerTemplate](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column#headertemplate) and [template](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column#template) properties of the column can be used to customize the appearance of the header and cell content.
+>* If the content of a cell contains HTML tags, the Auto wrap functionality may not work as expected. In such cases, the [headerTemplate](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column#headertemplate) and [template](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column#template) properties of the column can be used to customize the appearance of the header and cell content.
 
 In the following example, the `textWrapSettings.wrapMode` property is set to **Header**; only the TreeGrid header text wraps to the next line.
 

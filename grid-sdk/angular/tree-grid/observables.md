@@ -8,7 +8,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-## Observables in Angular Treegrid
+# Observables in Angular Treegrid
 
 An `Observable` is used extensively by Angular since it provides significant benefits over techniques for event handling, asynchronous programming, and handling multiple values.
 
@@ -556,7 +556,7 @@ export class DataService extends Subject<Object> {
 
 ## Observable binding using without Async pipe
 
-In Angular, [Observables](https://angular.io/guide/observables) data can be bound to UI elements using the [AsyncPipe](https://angular.io/api/common/AsyncPipe), which simplifies the process of subscribing to observables and managing the subscription life cycle. However, there are scenarios where you need to bind observable data to components without utilizing the async pipe. This approach offers more control over the subscription and data manipulation processes.
+In Angular, Observables data can be bound to UI elements using the AsyncPipe, which simplifies the process of subscribing to observables and managing the subscription life cycle. However, there are scenarios where you need to bind observable data to components without utilizing the async pipe. This approach offers more control over the subscription and data manipulation processes.
 
 To bind observable data without using the async pipe in the TreeGrid, follow these steps:
 

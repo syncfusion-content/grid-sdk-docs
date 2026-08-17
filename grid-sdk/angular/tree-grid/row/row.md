@@ -18,7 +18,7 @@ Customizing row styles in the Syncfusion<sup style="font-size:70%">&reg;</sup> T
 
 ### Using event
 
-You can customize row appearance using the [rowDataBound](https://ej2.syncfusion.com/angular/documentation/api/treegrid#rowdatabound) event. This event triggers for every row when bound to the data source. In the event handler, you receive the [RowDataBoundEventArgs](https://ej2.syncfusion.com/angular/documentation/api/grid/rowDataBoundEventArgs/) object containing row details. Use this object to modify row appearance, add custom elements, or perform other customizations.
+You can customize row appearance using the [rowDataBound](https://ej2.syncfusion.com/angular/documentation/api/treegrid#rowdatabound) event. This event triggers for every row when bound to the data source. In the event handler, you receive the [RowDataBoundEventArgs](https://ej2.syncfusion.com/angular/documentation/api/grid/rowDataBoundEventArgs) object containing row details. Use this object to modify row appearance, add custom elements, or perform other customizations.
 
 The following example demonstrates how to utilize the `rowDataBound` event to customize row styles based on the **duration** column value. This example inspects the Duration column value for each row and adjusts the row style accordingly.
 

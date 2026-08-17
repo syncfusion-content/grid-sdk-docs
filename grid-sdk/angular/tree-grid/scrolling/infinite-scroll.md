@@ -55,7 +55,7 @@ The following an example of how you can use the `initialBlocks` property to set 
 
 In TreeGrid cache mode, previously loaded blocks are reused when revisiting, minimizing data requests as you scroll back and forth. The maximum number of cached blocks is controlled by the [infiniteScrollSettings.maxBlocks](https://ej2.syncfusion.com/angular/documentation/api/treegrid/infiniteScrollSettings#maxblocks) property (default is 3). When this limit is exceeded, the oldest block of row elements is removed from the cache to accommodate new rows.
 
-To enable cache mode, set [enableCache](https://ej2.syncfusion.com/angular/documentation/api/treegrid/infiniteScrollSettings#enablecache) to **true** in [infiniteScrollSettings](https://ej2.syncfusion.com/angular/documentation/api/treegrid/infinitescrollsettings/). Set the maximum block count using `maxBlocks` as needed.
+To enable cache mode, set [enableCache](https://ej2.syncfusion.com/angular/documentation/api/treegrid/infiniteScrollSettings#enablecache) to **true** in [infiniteScrollSettings](https://ej2.syncfusion.com/angular/documentation/api/treegrid/infinitescrollsettings). Set the maximum block count using `maxBlocks` as needed.
 
 The following example demonstrates enabling or disabling cache mode using a [Switch](https://ej2.syncfusion.com/angular/documentation/switch/getting-started) component's [change](https://ej2.syncfusion.com/angular/documentation/api/switch#change) event:
 

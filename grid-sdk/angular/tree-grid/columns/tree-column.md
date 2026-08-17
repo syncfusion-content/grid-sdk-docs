@@ -203,11 +203,11 @@ In the TreeGrid, the behavior can be customized and specific actions can be perf
 
 The following events are available for handling expand and collapse actions:
 
-* [expanding](https://ej2.syncfusion.com/angular/documentation/api/treegrid#expanding): This event is triggered before a row is expanded. Custom actions can be performed or the row expansion can be cancelled based on certain conditions.
+* [expanding](https://ej2.syncfusion.com/angular/documentation/api/treegrid#expanding): This event is triggered before a row is expanded. Custom actions can be performed or the row expansion can be canceled based on certain conditions.
 
 * [expanded](https://ej2.syncfusion.com/angular/documentation/api/treegrid#expanded): This event is triggered after a row is expanded. Additional actions or updates can be performed after the row expansion is completed.
 
-* [collapsing](https://ej2.syncfusion.com/angular/documentation/api/treegrid#collapsing): This event is triggered before a row is collapsed. Custom actions can be performed or the row collapse can be cancelled based on certain conditions.
+* [collapsing](https://ej2.syncfusion.com/angular/documentation/api/treegrid#collapsing): This event is triggered before a row is collapsed. Custom actions can be performed or the row collapse can be canceled based on certain conditions.
 
 * [collapsed](https://ej2.syncfusion.com/angular/documentation/api/treegrid#collapsed): This event is triggered after a row is collapsed. Additional actions or updates can be performed after the row collapse is completed.
 

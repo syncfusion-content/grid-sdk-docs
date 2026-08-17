@@ -79,7 +79,7 @@ The following example illustrates how to enable different filter bar modes in th
 
 The TreeGrid component provides an option to display filter text within the pager, indicating the current filtering status. Enabling this feature provides a clear understanding of the applied filters and the criteria used for filtering.
 
-To enable the display of filter text within the pager, set the [showFilterBarStatus](https://ej2.syncfusion.com/angular/documentation/api/treegrid/filterSettings#showfilterbarstatus) property within the [filterSettings](https://ej2.syncfusion.com/angular/documentation/api/treegrid/filterSettings/) configuration.
+To enable the display of filter text within the pager, set the [showFilterBarStatus](https://ej2.syncfusion.com/angular/documentation/api/treegrid/filterSettings#showfilterbarstatus) property within the [filterSettings](https://ej2.syncfusion.com/angular/documentation/api/treegrid/filterSettings) configuration.
 
 The following example demonstrates how to display the filter text in the pager of the TreeGrid by using the `showFilterBarStatus` property:
 

@@ -14,7 +14,7 @@ domainurl: https://help.syncfusion.com/grid-sdk
 
 [Reactive](https://angular.io/guide/reactive-forms) Forms is a model-driven approach to create and manipulate form controls. You can use reactive forms to add and update TreeGrid records. To use reactive forms for editing operations, you can leverage the template support of dialog or row edit mode. Setting the [editSettings.mode](https://ej2.syncfusion.com/angular/documentation/api/treegrid/editSettings#mode) as **Row/Dialog** and **editSettingsTemplate** as template variable of NgTemplate to define the TreeGrid editors.
 
-In the following sample, the **FormGroup** with **FormControls** is created for each column in the [actionBegin](https://ej2.syncfusion.com/angular/documentation/api/treegrid#actionbegin) event. While saving, the formgroup is validated and the TreeGrid is updated with the edited data from the FormGroup object:
+In the following sample, the **FormGroup** with **FormControls** is created for each column in the [actionBegin](https://ej2.syncfusion.com/angular/documentation/api/treegrid#actionbegin) event. While saving, the FormGroup is validated and the TreeGrid is updated with the edited data from the FormGroup object:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -29,7 +29,7 @@ In the following sample, the **FormGroup** with **FormControls** is created for 
 
 ## Template-driven forms
 
-[Template-driven](https://angular.io/guide/forms#template-driven-forms) forms is a template-driven approach to create and manipulate form controls. You can use template-driven forms to add and update TreeGrid records. To use template-driven forms for editing operations, you can leverage the template support of dialog or row edit mode. Setting the [editSettings.mode](https://ej2.syncfusion.com/angular/documentation/api/treegrid/editSettingsModel#mode) as `Row/Dialog` and `editSettingsTemplate` as template variable of NgTemplate to define the TreeGrid editors.
+Template-driven forms is a template-driven approach to create and manipulate form controls. You can use template-driven forms to add and update TreeGrid records. To use template-driven forms for editing operations, you can leverage the template support of dialog or row edit mode. Setting the [editSettings.mode](https://ej2.syncfusion.com/angular/documentation/api/treegrid/editSettingsModel#mode) as `Row/Dialog` and `editSettingsTemplate` as template variable of NgTemplate to define the TreeGrid editors.
 
 In some cases, you need to add new field editors in the dialog which are not present in the column model. In that situation, the dialog template will help you customize the default edit dialog.
 
@@ -101,7 +101,7 @@ By default, the first input element in the dialog will be focused while opening 
 
 ## Disable form validation
 
-If you are interested in using [angular form validation](https://angular.io/guide/form-validation) then you need to disable the default validation rules in the [actionComplete](https://ej2.syncfusion.com/angular/documentation/api/treegrid#actioncomplete) event.
+If you are interested in using angular form validation then you need to disable the default validation rules in the [actionComplete](https://ej2.syncfusion.com/angular/documentation/api/treegrid#actioncomplete) event.
 
 ```typescript
 

@@ -63,7 +63,7 @@ Here is a sample code demonstrating how to render a dropdownlist component for t
 
 ## Show 24-hour time format in filter dialog
 
-The TreeGrid provides a feature to display the time in a 24-hour format in the date or datetime column filter dialog. By default, the filter dialog displays the time in a 12-hour format (AM/PM) for the date or datetime column. To enable the 24-hour time format in the filter dialog, handle the [actionComplete](https://ej2.syncfusion.com/angular/documentation/api/treegrid#actioncomplete) event with [requestType](https://ej2.syncfusion.com/angular/documentation/api/grid/filterEventArgs#requesttype) as [filterafteropen](https://ej2.syncfusion.com/angular/documentation/api/grid/action/) and set the `timeFormat` of the `DateTimepicker` to **HH:mm**.
+The TreeGrid provides a feature to display the time in a 24-hour format in the date or datetime column filter dialog. By default, the filter dialog displays the time in a 12-hour format (AM/PM) for the date or datetime column. To enable the 24-hour time format in the filter dialog, handle the [actionComplete](https://ej2.syncfusion.com/angular/documentation/api/treegrid#actioncomplete) event with [requestType](https://ej2.syncfusion.com/angular/documentation/api/grid/filterEventArgs#requesttype) as [filterafteropen](https://ej2.syncfusion.com/angular/documentation/api/grid/action) and set the `timeFormat` of the `DateTimepicker` to **HH:mm**.
 
 In TreeGrid column, the default format can be customized by setting the [type](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column#type) as **dateTime** and the [format](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column#format) as **M/d/y HH:mm**. 
 
@@ -136,7 +136,7 @@ The default settings of input components within the menu filter can be customize
 
 | Column Type | Default component                                                                                 | Customization                            | API Reference                                                                                             |
 | ----------- | ------------------------------------------------------------------------------------------------- | ---------------------------------------- | --------------------------------------------------------------------------------------------------------- |
-| String      | [AutoComplete](https://ej2.syncfusion.com/angular/documentation/auto-complete/getting-started)    | Eg: { params: { autofill: false }}       | [AutoComplete API](https://ej2.syncfusion.com/angular/documentation/api/auto-complete/autoCompleteModel/) |
+| String      | [AutoComplete](https://ej2.syncfusion.com/angular/documentation/auto-complete/getting-started)    | Eg: { params: { autofill: false }}       | [AutoComplete API](https://ej2.syncfusion.com/angular/documentation/api/auto-complete/autoCompleteModel) |
 | Number      | [NumericTextBox](https://ej2.syncfusion.com/angular/documentation/numerictextbox/getting-started) | Eg: { params: { showSpinButton: false }} | [NumericTextBox API](https://ej2.syncfusion.com/angular/documentation/api/numerictextbox)                 |
 | Boolean     | [DropDownList](https://ej2.syncfusion.com/angular/documentation/drop-down-list/getting-started)   | Eg: { params: { sortOrder:'Ascending'}}  | [DropDownList API](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list)                   |
 | Date        | [DatePicker](https://ej2.syncfusion.com/angular/documentation/datepicker/getting-started)         | Eg: { params: { weekNumber: true }}      | [DatePicker API](https://ej2.syncfusion.com/angular/documentation/api/datepicker)                         |
@@ -184,11 +184,11 @@ Here's an example that demonstrates how to prevent autofill options in the autoc
 
 ## Filter menu events
 
-The TreeGrid offers the [actionBegin](https://ej2.syncfusion.com/angular/documentation/api/treegrid#actionbegin) and [actionComplete](https://ej2.syncfusion.com/angular/documentation/api/treegrid#actioncomplete) events, which provide information about the actions being performed. Within the event handlers, an argument named `requestType` is received. This argument specifies the [action](https://ej2.syncfusion.com/angular/documentation/api/grid/action/) that is being executed, such as `filterbeforeopen`, `filterafteropen`, or `filtering`. By analyzing this action type, custom logic can be implemented or messages can be displayed.
+The TreeGrid offers the [actionBegin](https://ej2.syncfusion.com/angular/documentation/api/treegrid#actionbegin) and [actionComplete](https://ej2.syncfusion.com/angular/documentation/api/treegrid#actioncomplete) events, which provide information about the actions being performed. Within the event handlers, an argument named `requestType` is received. This argument specifies the [action](https://ej2.syncfusion.com/angular/documentation/api/grid/action) that is being executed, such as `filterbeforeopen`, `filterafteropen`, or `filtering`. By analyzing this action type, custom logic can be implemented or messages can be displayed.
 
 **filtering** - Defines current action as filtering.
-**filterbeforeopen** - Defines current action as filter dialog before open.
-**filterafteropen** - Defines current action as filter dialog after open.
+**filterBeforeOpen** - Defines current action as filter dialog before open.
+**filterAfterOpen** - Defines current action as filter dialog after open.
 
 Here's an example of how to use these events to handle filter menu action in the TreeGrid:
 

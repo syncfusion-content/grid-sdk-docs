@@ -10,7 +10,7 @@ domainurl: https://help.syncfusion.com/grid-sdk
 
 # Toolbar in Angular TreeGrid
 
-The TreeGrid provides toolbar support to handle various actions. The [`toolbar`](https://ej2.syncfusion.com/angular/documentation/api/treegrid#toolbar) property accepts a collection of built-in toolbar items, [`ItemModel`](https://ej2.syncfusion.com/angular/documentation/api/toolbar/itemModel/) objects for custom items, or the HTML element ID for a toolbar template.
+The TreeGrid provides toolbar support to handle various actions. The [`toolbar`](https://ej2.syncfusion.com/angular/documentation/api/treegrid#toolbar) property accepts a collection of built-in toolbar items, [`ItemModel`](https://ej2.syncfusion.com/angular/documentation/api/toolbar/itemModel) objects for custom items, or the HTML element ID for a toolbar template.
 
 To use the toolbar, inject the `Toolbar` module in the TreeGrid.
 

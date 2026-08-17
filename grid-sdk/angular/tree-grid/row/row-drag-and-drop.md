@@ -1,7 +1,7 @@
 ---
 layout: post
-title: React TreeGrid Row Drag and Drop | Syncfusion
-description: Learn here all about Row drag and drop in Angular TreeGrid of Essential JS 2 and more.
+title: Angular TreeGrid Row Drag and Drop | Syncfusion
+description: Learn about row drag-and-drop in Angular TreeGrid, including configuration, customization, and responsive interaction features.
 platform: grid-sdk
 control: Row drag and drop 
 documentation: ug
@@ -35,7 +35,7 @@ Here's an example of how to enable drag and drop within the TreeGrid:
 
 ### Drag and drop rows without drag icons 
 
-By default, when performing a drag and drop operation in the TreeGrid, drag icons are displayed. However, in some cases, these drag icons may need to be hidden. This can be achieved by setting the [targetID](https://ej2.syncfusion.com/angular/documentation/api/treegrid/rowDropSettings#targetid) property of the [rowDropSettings](https://ej2.syncfusion.com/angular/documentation/api/treegrid/rowDropSettings/) object to the current TreeGrid's ID.
+By default, when performing a drag and drop operation in the TreeGrid, drag icons are displayed. However, in some cases, these drag icons may need to be hidden. This can be achieved by setting the [targetID](https://ej2.syncfusion.com/angular/documentation/api/treegrid/rowDropSettings#targetid) property of the [rowDropSettings](https://ej2.syncfusion.com/angular/documentation/api/treegrid/rowDropSettings) object to the current TreeGrid's ID.
 
 By setting the `targetID`, the TreeGrid will render without a helper icon for row dragging. The drag and drop can be performed by directly using the row.
 
@@ -85,7 +85,7 @@ If the border line appears at both top and bottom of the target row, which is **
 
 The TreeGrid row drag and drop allows dragging TreeGrid rows and dropping to another TreeGrid. This feature can be enabled by setting the [allowRowDragAndDrop](https://ej2.syncfusion.com/angular/documentation/api/treegrid#allowrowdraganddrop) property to **true** in the TreeGrid component. This property specifies whether to enable or disable the row drag and drop feature in the TreeGrid. By default, this property is set to **false**, which means that row drag and drop functionality is not enabled.
 
-To specify the target component where the TreeGrid rows should be dropped, use the [targetID](https://ej2.syncfusion.com/angular/documentation/api/treegrid/rowDropSettings#targetid) property of the [rowDropSettings](https://ej2.syncfusion.com/angular/documentation/api/treegrid/rowDropSettings/) object. The `targetID` property takes the ID of the target component as its value.
+To specify the target component where the TreeGrid rows should be dropped, use the [targetID](https://ej2.syncfusion.com/angular/documentation/api/treegrid/rowDropSettings#targetid) property of the [rowDropSettings](https://ej2.syncfusion.com/angular/documentation/api/treegrid/rowDropSettings) object. The `targetID` property takes the ID of the target component as its value.
 
 Here's an example code snippet that demonstrates how to enable row drag and drop another TreeGrid:
 
@@ -486,7 +486,7 @@ In the following example, using `click` event of an external button, row at inde
 
 To prevent the default behavior of dropping rows onto the target by setting the `cancel` property to `true` in [rowDrop](https://ej2.syncfusion.com/angular/documentation/api/treegrid#rowdrop) event argument.
 
-In the following example, the drop action is cancelled using the `rowDrop` event of the TreeGrid.
+In the following example, the drop action is canceled using the `rowDrop` event of the TreeGrid.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -501,7 +501,7 @@ In the following example, the drop action is cancelled using the `rowDrop` event
 
 ### Prevent reordering a row as child to another row
 
-To prevent the default behavior of dropping rows as children onto the target, set the `cancel` property to `true` in the [rowDrop](https://ej2.syncfusion.com/angular/documentation/api/treegrid#rowdrop) event argument. Additionally, the drop position can be adjusted after cancelling using the [reorderRows](https://ej2.syncfusion.com/angular/documentation/api/treegrid#reorderrows) method.
+To prevent the default behavior of dropping rows as children onto the target, set the `cancel` property to `true` in the [rowDrop](https://ej2.syncfusion.com/angular/documentation/api/treegrid#rowdrop) event argument. Additionally, the drop position can be adjusted after canceling using the [reorderRows](https://ej2.syncfusion.com/angular/documentation/api/treegrid#reorderrows) method.
 
 In the following example, the drop action of the **Child** position is prevented, and the row is dropped **Above** the target row's position by using the `reorderRows` method.
 
