@@ -30,7 +30,7 @@ To add text in the header or footer of the exported PDF document, follow these s
 2. Set the [header](https://ej2.syncfusion.com/vue/documentation/api/grid/pdfExportProperties#header) or [footer](https://ej2.syncfusion.com/vue/documentation/api/grid/pdfExportProperties#footer) property to a string value representing the desired text.
 3. Trigger the PDF export operation.
 
-The following code example demostrates how to add the header in the exported PDF document. 
+The following code example demonstrates how to add the header in the exported PDF document. 
 
 ```typescript
 let pdfExportProperties = {
@@ -63,7 +63,7 @@ This can be achieved using the [pdfExportProperties](https://ej2.syncfusion.com/
 
 To add a line in the header or footer of the exported PDF document, you can access the `header.contents` or `footer.contents` property of the [header](https://ej2.syncfusion.com/vue/documentation/api/grid/pdfExportProperties#header) or [footer](https://ej2.syncfusion.com/vue/documentation/api/grid/pdfExportProperties#footer) in the `pdfExportProperties` property of the grid. 
 
-The following code example demostrates how to draw a line in the header of the exported PDF document. 
+The following code example demonstrates how to draw a line in the header of the exported PDF document. 
 
 ```typescript
 let pdfExportProperties = {

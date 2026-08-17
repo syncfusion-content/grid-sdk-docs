@@ -137,14 +137,14 @@ In the below demo, the button click will enable/disable the Grid and its actions
 
 ### Customize Column Styles
 
-You can customise the appearance of header and content of the particular column using the
+You can customize the appearance of header and content of the particular column using the
 [`customAttributes`](https://ej2.syncfusion.com/vue/documentation/api/grid/column#customattributes) property.
 
 To customize the grid column, follow the given steps:
 
 **Step 1**:
 
-Create a css class with custom style to override the default style for rowcell and headercell.
+Create a css class with custom style to override the default style for row cell and header cell.
 
 ```
 .e-grid .e-rowcell.customcss{
@@ -677,7 +677,7 @@ Cordova application does not support direct file download. So we have to use the
 
 You can export the filtered data by defining the resulted data in `exportProperties.dataSource` before export.
 
-In the below Pdf exporting demo, We have gotten the filtered data by applying filter query to the grid data and then defines the resulted data in `exportProperties.dataSource` and pass it to `pdfExport` method.
+In the below PDF exporting demo, We have gotten the filtered data by applying filter query to the grid data and then defines the resulted data in `exportProperties.dataSource` and pass it to `pdfExport` method.
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}

@@ -156,7 +156,7 @@ To delete multiple selected records in the grid, first you need to select multip
 
 You can delete multiple rows programmatically by using following method.
 
-1. [deleteRecord](https://ej2.syncfusion.com/vue/documentation/api/grid#deleterecord) -This method allows you to delete a record with the given options. If the **fieldname** (field name of the primary key column) and **data** parameters are not provided, the grid will delete the selected records.
+1. [deleteRecord](https://ej2.syncfusion.com/vue/documentation/api/grid#deleterecord) -This method allows you to delete a record with the given options. If the **field name** (field name of the primary key column) and **data** parameters are not provided, the grid will delete the selected records.
 
     ```ts
         this.$refs.grid.$el.ej2_instances['0'].deleteRecord();
@@ -204,7 +204,7 @@ Here's an example of how to enable adding new rows at the bottom of the grid:
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/grid/edit/default-cs32" %}
 
->* Add `newRowPostion` is supported for **Normal** and **Batch** editing modes.
+>* Add `newRowPosition` is supported for **Normal** and **Batch** editing modes.
 >* If you set `newRowPosition` as **Bottom**, the grid will display a blank row form at the bottom by default, allowing you to enter data for the new record. However, when the data is saved or updated, it will be inserted at the top of the grid. 
 
 ## Show add new row always in grid

@@ -35,7 +35,7 @@ Here's an example of how to enable drag and drop within the Grid:
 
 The grid row drag and drop allows you to drag grid rows and drop to another grid. This feature can be enabled by setting the [allowRowDragAndDrop](https://ej2.syncfusion.com/vue/documentation/api/grid#allowrowdraganddrop) property to **true** in the Grid component. This property specifies whether to enable or disable the row drag and drop feature in the Grid. By default, this property is set to **false**, which means that row drag and drop functionality is not enabled.
 
-To specify the target component where the grid rows should be dropped, use the [targetID](https://ej2.syncfusion.com/vue/documentation/api/grid/rowDropSettings#targetid) property of the [rowDropSettings](https://ej2.syncfusion.com/vue/documentation/api/grid/rowDropSettings/) object. The `targetID` property takes the ID of the target component as its value.
+To specify the target component where the grid rows should be dropped, use the [targetID](https://ej2.syncfusion.com/vue/documentation/api/grid/rowDropSettings#targetid) property of the [rowDropSettings](https://ej2.syncfusion.com/vue/documentation/api/grid/rowDropSettings) object. The `targetID` property takes the ID of the target component as its value.
 
 Here's an example code snippet that demonstrates how to enable Row drag and drop another Grid component:
 

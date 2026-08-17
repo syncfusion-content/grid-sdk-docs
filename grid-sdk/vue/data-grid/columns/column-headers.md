@@ -481,7 +481,7 @@ The following example demonstrates how to dynamically change the alignment of th
 >* The `headerTextAlign` property only changes the alignment of the text in the column header, and not the content of the column. If you want to align both the column header and content, you can use the [textAlign](https://ej2.syncfusion.com/documentation/api/grid/column#textalign) property.
 >* You can also use the `headerTextAlign` property with the stacked header feature in Vue Data Grid. The property will align the header text in the sub-headers as well.
 
-## Autowrap the header text
+## Auto wrap the header text
 
 The Autowrap allows the cell content of the grid to wrap to the next line when it exceeds the boundary of the specified cell width. The cell content wrapping works based on the position of white space between words. To support the Autowrap functionality in Vue Data Grid, you should set the appropriate [width](https://ej2.syncfusion.com/vue/documentation/api/grid/column#width) for the columns. The column width defines the maximum width of a column and helps to wrap the content automatically.
 

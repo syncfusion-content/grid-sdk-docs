@@ -60,7 +60,7 @@ The following example demonstrates how to show and hide the spinner during Excel
 
 The Grid component provides a convenient way to export data to a Excel or CSV format. With the Excel or CSV export feature, you can define a custom data source while exporting. This allows you to export data that is not necessarily bind to the grid, which can be generated or retrieved based on your application logic.
 
-To export data, you need to define the [dataSource](https://ej2.syncfusion.com/vue/documentation/api/grid/excelExportProperties#datasource) property within the [excelExportProperties](https://ej2.syncfusion.com/vue/documentation/api/grid/excelExportProperties/) object. This property represents the data source that will be used for the Excel or CSV export.
+To export data, you need to define the [dataSource](https://ej2.syncfusion.com/vue/documentation/api/grid/excelExportProperties#datasource) property within the [excelExportProperties](https://ej2.syncfusion.com/vue/documentation/api/grid/excelExportProperties) object. This property represents the data source that will be used for the Excel or CSV export.
 
 The following example demonstrates how to render custom dataSource during Excel export. By calling the [excelExport](https://ej2.syncfusion.com/vue/documentation/api/grid#excelexport) method and passing the `excelExportProperties` object through the grid instance, the grid data will be exported to a Excel using the dynamically defined data source.
 

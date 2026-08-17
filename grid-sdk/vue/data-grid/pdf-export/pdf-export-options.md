@@ -313,7 +313,6 @@ By default, the Grid uses the **Helvetica** font in the exported document. Howev
 * TimesRoman
 * Courier
 * Symbol
-* ZapfDingbats
 
 To change the default font, you can follow these steps:
 

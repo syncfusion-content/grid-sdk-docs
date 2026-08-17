@@ -52,7 +52,7 @@ By adding the toolbar at the bottom of the Vue Data Grid, important actions and 
 
 To add the toolbar at the bottom of the Grid, you can utilize the [created](https://ej2.syncfusion.com/vue/documentation/api/grid#created) event. By handling this event, you can dynamically insert the toolbar items at the desired position in the grid layout.
 
-The following example shows how to add the toolbar items at the bootom using `created` event of the grid.
+The following example shows how to add the toolbar items at the bottom using `created` event of the grid.
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}

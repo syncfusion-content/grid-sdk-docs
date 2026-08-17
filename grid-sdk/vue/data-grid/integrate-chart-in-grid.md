@@ -54,7 +54,7 @@ Refer to the [Vue 2 Getting Started](https://ej2.syncfusion.com/vue/documentatio
 
 ### Add Syncfusion Vue packages
 
-Syncfusion Vue component packages are available at [npmjs.com](https://www.npmjs.com/~syncfusionorg). To use Syncfusion Vue components in your project, install the corresponding npm packages.
+Syncfusion Vue component packages are available at [npm js.com](https://www.npmjs.com/~syncfusionorg). To use Syncfusion Vue components in your project, install the corresponding npm packages.
 
 To install the `Grid-Chart` package, use the following command:
 
@@ -235,7 +235,7 @@ Use the [contextMenuClick](https://ej2.syncfusion.com/vue/documentation/api/grid
 
   * `chartArgs`: Contains Grid instance, [Chart type](.https://ej2.syncfusion.com/vue/documentation/chart/chart-types), and selected records.
 
-  * `chartModel:` This specifies various Chart configurations related to the appearance and behavior of the Chart. The model allows you to configure axes, labels, legends, tooltips, and other Chart attributes. Refer to Syncfusion's [Chart Model](https://ej2.syncfusion.com/vue/documentation/api/chart/chartmodel/) for detailed configurations, options, and customization possibilities.
+  * `chartModel:` This specifies various Chart configurations related to the appearance and behavior of the Chart. The model allows you to configure axes, labels, legends, tooltips, and other Chart attributes. Refer to Syncfusion's [Chart Model](https://ej2.syncfusion.com/vue/documentation/api/chart/chartmodel) for detailed configurations, options, and customization possibilities.
 
   * `categorySeries:` This specifies the fields in your data used for [categories](https://ej2.syncfusion.com/vue/documentation/chart/category-axis) and [series](https://ej2.syncfusion.com/vue/documentation/chart/chart-series) in the Chart.
 
