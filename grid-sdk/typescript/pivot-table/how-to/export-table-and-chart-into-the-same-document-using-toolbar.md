@@ -2,11 +2,11 @@
 layout: post
 title: Export table, chart to same document in Javascript | Syncfusion
 description: Learn here all about how to export table and chart into the same document using toolbar in Syncfusion Javascript of Syncfusion Essential JS 2 and more.
-platform: grid-sdk
+platform: ej2-javascript
 control: Export table and chart into the same document using toolbar 
-publishingplatform: grid-sdk
+publishingplatform: ##Platform_Name##
 documentation: ug
-domainurl: https://help.syncfusion.com/grid-sdk
+domainurl: ##DomainURL##
 ---
 
 # Export table and chart to the same document in JavaScript

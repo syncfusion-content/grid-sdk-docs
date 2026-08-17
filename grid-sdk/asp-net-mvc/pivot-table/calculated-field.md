@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Calculated Field in  ASP.NET MVC Syncfusion Pivot Table
-description: Learn here all about Calculated Field in Syncfusion ASP.NET MVC Pivot Table component of Syncfusion Essential JS 2 and more.
-platform: grid-sdk
+title: Calculated Field in ASP.NET MVC Pivot Table | Syncfusion
+description: Learn how the ASP.NET MVC Pivot Table creates custom value fields using math formulas via the Field List dialog or CalculatedFieldSettings collection.
+platform: ej2-asp-core-mvc
 control: Calculated Field
-publishingplatform: grid-sdk
+publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
 
-# CalculatedField in ASP.NET MVC Pivot Table Component
+# Calculated Field in ASP.NET MVC Pivot Table
 
 The calculated field feature enables users to create custom value fields using mathematical formulas and existing fields from their data source. Users can perform complex calculations with basic arithmetic operators and seamlessly integrate these custom fields into their pivot table for enhanced data visualization and reporting.
 

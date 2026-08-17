@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Classic layout in JavaScript Pivot Table component | Syncfusion
-description: Learn here all about Classic layout in Syncfusion JavaScript Pivot Table component of Syncfusion Essential JS 2 and more.
-platform: grid-sdk
-control: Classic Layout 
-publishingplatform: grid-sdk
+title: Classic Layout in ##Platform_Name## Pivot Table | Syncfusion
+description: Learn how the ##Platform_Name## Pivot Table renders the classic (tabular) layout by setting `gridSettings.layout` to Tabular.
+platform: ej2-javascript
+control: Classic Layout
+publishingplatform: ##Platform_Name##
 documentation: ug
-domainurl: https://help.syncfusion.com/grid-sdk
+domainurl: ##DomainURL##
 ---
 
-# Classic Layout in JavaScript Pivot Table component
+# Classic Layout in ##Platform_Name## Pivot Table
 
 N> The classic layout is compatible only with relational data sources and operates in both client-side and server-side engines.
 

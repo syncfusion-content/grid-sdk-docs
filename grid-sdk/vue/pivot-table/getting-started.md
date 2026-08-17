@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Getting started with Vue Pivotview component | Syncfusion
-description:  Checkout and learn about Getting started with Vue Pivotview component of Syncfusion Essential JS 2 and more details.
-control: Getting started 
-platform: grid-sdk
+title: Getting Started with Vue 2 Pivot Table | Syncfusion
+description: Learn how to get started with the Syncfusion Vue 2 Pivot Table control. Set up a Vue-CLI project, install the package, and render your first pivot report.
+control: Getting started
+platform: ej2-vue
 documentation: ug
-domainurl: https://help.syncfusion.com/grid-sdk
+domainurl: ##DomainURL##
 ---
 
-# Getting Started with the Vue Pivotview Component in Vue 2
+# Getting Started with Vue 2 Pivot Table
 
 This article provides a step-by-step guide for setting up a Vue 2 project using [Vue-CLI](https://cli.vuejs.org) and integrating the Syncfusion<sup style="font-size:70%">&reg;</sup> Vue Pivot Table component.
 
@@ -41,7 +41,7 @@ vue create quickstart
 
 When creating a new project, choose the option `Default ([Vue 2] babel, eslint)` from the menu.
 
-![Vue 2 project](../pivotview/images/vue2-terminal.png)
+![Vue 2 project](images/vue2-terminal.png)
 
 Once the project is created, move into the project folder and start the development server:
 

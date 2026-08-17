@@ -1,12 +1,12 @@
 ---
 layout: post
 title: Apply custom style to pivot cells in Javascript | Syncfusion
-description: Learn here all about Apply custom style to pivot cells in Syncfusion JavaScript Pivot Table component of Syncfusion Essential JS 2 and more.
-platform: grid-sdk
+description: Learn here all about Apply custom style to pivot cells in Syncfusion ##Platform_Name## Pivot Table component of Syncfusion Essential JS 2 and more.
+platform: ej2-javascript
 control: Apply custom style to pivot cells 
-publishingplatform: grid-sdk
+publishingplatform: ##Platform_Name##
 documentation: ug
-domainurl: https://help.syncfusion.com/grid-sdk
+domainurl: ##DomainURL##
 ---
 
 # Apply custom style to pivot cells in JavaScript Pivotview component
