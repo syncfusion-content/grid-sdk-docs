@@ -3,7 +3,7 @@ layout: post
 title: About Syncfusion .NET MAUI Data Grid control | Syncfusion®
 canonical_url: "https://www.syncfusion.com/maui-controls/maui-datagrid"
 description: Learn about introduction of Syncfusion® Essential Studio .NET MAUI Data Grid control and more details.
-platform: MAUI
+platform: grid-sdk
 control: SfDataGrid
 documentation: ug
 keywords : maui data grid, maui datagrid, maui grid, grid maui, maui gridview, grid in maui, .net maui datagrid, .net maui grid, .net grid maui
@@ -73,7 +73,7 @@ The following table summarizes the globalization support available in this contr
 <th align="center">Keyboard navigation</th>
 </tr>
 <tr>
-<td><a href="/maui/datagrid/overview">DataGrid</a></td>
+<td><a href="/maui/datagrid/overview" aria-label="View SfDataGrid Documentation">DataGrid</a></td>
 <td align="center"><img src="../Images/full-support.svg" alt="full-support" width="16" /></td>
 <td align="center"><img src="../Images/full-support.svg" alt="full-support" width="16" /></td>
 <td align="center"><img src="../Images/not-applicable.svg" alt="not-applicable" width="16" /></td>

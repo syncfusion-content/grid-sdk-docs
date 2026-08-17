@@ -2,7 +2,7 @@
 layout: post
 title: Unbound Row in .NET MAUI Data Grid | Syncfusion®
 description: Learn how to use unbound rows in Syncfusion® .NET MAUI Data Grid to display custom information, summaries, and additional data independent of the data source.
-platform: MAUI
+platform: grid-sdk
 control: SfDataGrid
 documentation: ug
 keywords : maui data grid, maui datagrid, maui grid, grid maui, maui gridview, grid in maui, .net maui datagrid, .net maui grid, .net grid maui, .net maui unbound row, maui unbound row

@@ -2,7 +2,7 @@
 layout: post
 title: Columns in .NET MAUI Data Grid | Syncfusion®
 description: Learn all about columns in Syncfusion® .NET MAUI Data Grid, including column configuration, customization options, supported types, and key features.
-platform: MAUI
+platform: grid-sdk
 control: SfDataGrid
 documentation: UG
 keywords : maui data grid, maui datagrid, maui grid, grid maui, maui gridview, grid in maui, .net maui datagrid, .net maui grid, .net grid maui, .net maui column, maui column

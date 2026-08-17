@@ -2,7 +2,7 @@
 layout: post
 title: Editing in .NET MAUI Data Grid | Syncfusion®
 description: Learn how to configure and manage data editing in Syncfusion® .NET MAUI Data Grid with flexible edit modes, events, and validation support.
-platform: MAUI
+platform: grid-sdk
 control: SfDataGrid
 documentation: UG
 keywords : maui data grid, maui datagrid, maui grid, grid maui, maui gridview, grid in maui, .net maui datagrid, .net maui grid, .net grid maui, .net maui editing, maui editing
