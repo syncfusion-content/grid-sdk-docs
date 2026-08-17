@@ -10,7 +10,7 @@ domainurl: https://help.syncfusion.com/grid-sdk
 
 # Customize Pager Dropdown in Angular TreeGrid
 
-To customize the default values in the pager dropdown, define the [`pageSizes`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/pageSettings/#pagesizes) property as an array of strings within the TreeGrid's page settings.
+To customize the default values in the pager dropdown, define the [`pageSizes`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/pageSettings#pagesizes) property as an array of strings within the TreeGrid's page settings.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

@@ -32,7 +32,7 @@ Excel export enables the inclusion of hidden columns from the TreeGrid in the ex
 
 ### Show or hide columns in exported Excel
 
-You can control the visibility of columns during the Excel export process using the [`toolbarClick`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#toolbarclick) and [`excelExportComplete`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#excelExportComplete) events.
+You can control the visibility of columns during the Excel export process using the [`toolbarClick`](https://ej2.syncfusion.com/angular/documentation/api/treegrid#toolbarclick) and [`excelExportComplete`](https://ej2.syncfusion.com/angular/documentation/api/treegrid#excelExportComplete) events.
 
 In the `toolbarClick` event, you can toggle the visibility of columns for export based on `args.item.text` being `Excel Export` by setting the `column.visible` property to `true` or `false` as needed.
 
@@ -54,7 +54,7 @@ In the following example, the `Duration` column is hidden in the TreeGrid. While
 
 ### File name for the exported document
 
-Assign a specific file name to the exported document by defining the `fileName` property in the [`ExcelExportProperties`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#excelExportProperties) configuration.
+Assign a specific file name to the exported document by defining the `fileName` property in the [`ExcelExportProperties`](https://ej2.syncfusion.com/angular/documentation/api/treegrid#excelExportProperties) configuration.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -78,11 +78,11 @@ To export the selected records from the grid to a Excel file, you can follow the
 
 1. Handle the toolbarClick event of the TreeGrid.
 
-2. Retrieve the selected records using the [getSelectedRecords](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#getselectedrecords) method.
+2. Retrieve the selected records using the [getSelectedRecords](https://ej2.syncfusion.com/angular/documentation/api/treegrid#getselectedrecords) method.
 
 3. Assign the selected data to the `getSelectedRecords` property.
 
-4. Trigger the export operation using the [excelExport](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#excelExport) method.
+4. Trigger the export operation using the [excelExport](https://ej2.syncfusion.com/angular/documentation/api/treegrid#excelExport) method.
 
 The following example demonstrates how to export the selected records to a Excel document when a toolbar item is clicked.
 

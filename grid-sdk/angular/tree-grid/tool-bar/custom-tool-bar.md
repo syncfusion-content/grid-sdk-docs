@@ -10,10 +10,10 @@ domainurl: https://help.syncfusion.com/grid-sdk
 
 # Custom Toolbar in Angular TreeGrid
 
-Custom toolbar items can be added to the TreeGrid by defining the [`toolbar`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#toolbar) property as a collection of [`ItemModels`](https://ej2.syncfusion.com/angular/documentation/api/toolbar/itemModel/).
-Actions for these custom toolbar items are defined in the [`toolbarClick`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#toolbarclick) event.
+Custom toolbar items can be added to the TreeGrid by defining the [`toolbar`](https://ej2.syncfusion.com/angular/documentation/api/treegrid#toolbar) property as a collection of [`ItemModels`](https://ej2.syncfusion.com/angular/documentation/api/toolbar/itemModel).
+Actions for these custom toolbar items are defined in the [`toolbarClick`](https://ej2.syncfusion.com/angular/documentation/api/treegrid#toolbarclick) event.
 
-By default, custom toolbar items are positioned on the `left`. You can change the position of a toolbar item using the [`align`](https://ej2.syncfusion.com/angular/documentation/api/toolbar/itemModel/#align) property. In the sample below, the `Quick Filter` toolbar item is positioned on the `right`.
+By default, custom toolbar items are positioned on the `left`. You can change the position of a toolbar item using the [`align`](https://ej2.syncfusion.com/angular/documentation/api/toolbar/itemModel#align) property. In the sample below, the `Quick Filter` toolbar item is positioned on the `right`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -27,7 +27,7 @@ By default, custom toolbar items are positioned on the `left`. You can change th
 
 {% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/treegrid/edit-toolbar-cs36" %}
 
-> * The [`toolbar`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#toolbar) property can include both built-in and custom items.
+> * The [`toolbar`](https://ej2.syncfusion.com/angular/documentation/api/treegrid#toolbar) property can include both built-in and custom items.
 > * If a toolbar item does not match a built-in item, it is treated as a custom toolbar item.
 
 ## Built-in and custom items in toolbar

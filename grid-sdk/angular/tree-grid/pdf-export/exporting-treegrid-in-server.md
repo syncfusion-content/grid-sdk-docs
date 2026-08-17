@@ -23,7 +23,7 @@ The server-side export functionality is available in the `Syncfusion.EJ2.TreeGri
 
 The following code snippet demonstrates server configuration using an ASP.NET Core Controller Action.
 
-To export the TreeGrid on the server side, call the [`serverPdfExport`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#serverpdfexport) method, which sends the TreeGrid properties to the server-side exporting action.
+To export the TreeGrid on the server side, call the [`serverPdfExport`](https://ej2.syncfusion.com/angular/documentation/api/treegrid#serverpdfexport) method, which sends the TreeGrid properties to the server-side exporting action.
 
 ```typescript
 
@@ -162,7 +162,7 @@ private void PdfHeaderQueryCellInfo(object pdf)
 
 Passing additional parameters to the server when exporting data in the Syncfusion Angular TreeGrid involves providing flexibility to include extra information or customize the export process based on specific requirements.
 
-You can achieve this by utilizing the [query](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#query) property and the [toolbarClick](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#toolbarclick) event. Within the `query` property, you can invoke the [addParams](https://ej2.syncfusion.com/documentation/api/data/query/#addparams) method to add parameters to the request.
+You can achieve this by utilizing the [query](https://ej2.syncfusion.com/angular/documentation/api/treegrid#query) property and the [toolbarClick](https://ej2.syncfusion.com/angular/documentation/api/treegrid#toolbarclick) event. Within the `query` property, you can invoke the [addParams](https://ej2.syncfusion.com/documentation/api/data/query#addparams) method to add parameters to the request.
 
 The following example demonstrates how to pass additional parameters to the server when Excel exporting within the `toolbarClick` event. Within the event, the additional parameters, specifically **recordcount** as **12**, are passed using the `addParams` method and displayed as a message.
 

@@ -8,7 +8,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-## Observables in Angular Treegrid
+# Observables in Angular Treegrid
 
 An `Observable` is used extensively by Angular since it provides significant benefits over techniques for event handling, asynchronous programming, and handling multiple values.
 
@@ -556,7 +556,7 @@ export class DataService extends Subject<Object> {
 
 ## Observable binding using without Async pipe
 
-In Angular, [Observables](https://angular.io/guide/observables) data can be bound to UI elements using the [AsyncPipe](https://angular.io/api/common/AsyncPipe), which simplifies the process of subscribing to observables and managing the subscription life cycle. However, there are scenarios where you need to bind observable data to components without utilizing the async pipe. This approach offers more control over the subscription and data manipulation processes.
+In Angular, Observables data can be bound to UI elements using the AsyncPipe, which simplifies the process of subscribing to observables and managing the subscription life cycle. However, there are scenarios where you need to bind observable data to components without utilizing the async pipe. This approach offers more control over the subscription and data manipulation processes.
 
 To bind observable data without using the async pipe in the TreeGrid, follow these steps:
 
@@ -967,7 +967,7 @@ export class TaskService extends Subject<DataStateChangeEventArgs> {
 
 ## Perform CRUD operations
 
-The [`dataSourceChanged`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#datasourcechanged) event is triggered to update TreeGrid data during CRUD operations. The DataSourceChangedEventArgs object provides properties such as action (e.g., add, edit, delete), data (the modified record), and childData (for nested records). Perform the save operation based on these arguments, update the dataSource manually, and call the [`endEdit`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#endedit) method to complete the operation.
+The [`dataSourceChanged`](https://ej2.syncfusion.com/angular/documentation/api/treegrid#datasourcechanged) event is triggered to update TreeGrid data during CRUD operations. The DataSourceChangedEventArgs object provides properties such as action (e.g., add, edit, delete), data (the modified record), and childData (for nested records). Perform the save operation based on these arguments, update the dataSource manually, and call the [`endEdit`](https://ej2.syncfusion.com/angular/documentation/api/treegrid#endedit) method to complete the operation.
 
 ```
 import { Component, OnInit, ViewChild } from '@angular/core';

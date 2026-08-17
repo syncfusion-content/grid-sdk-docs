@@ -10,7 +10,7 @@ domainurl: https://help.syncfusion.com/grid-sdk
 
 # Data Binding in Angular TreeGrid
 
-The TreeGrid supports flexible data binding options, allowing integration with both local object arrays and remote RESTful JSON data services. Assign the [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#datasource) property with either a JavaScript object array or a `DataManager` instance.
+The TreeGrid supports flexible data binding options, allowing integration with both local object arrays and remote RESTful JSON data services. Assign the [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/treegrid#datasource) property with either a JavaScript object array or a `DataManager` instance.
 
 TreeGrid provides two primary data binding methods:
 * Local data
@@ -22,7 +22,7 @@ To learn how to bind both local and remote data to the TreeGrid, watch this vide
 
 ## Binding with Ajax
 
-You can use TreeGrid [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#datasource) property to bind the data source to TreeGrid from external fetch request. The following code demonstrates fetching the data source from the server using a fetch request and binding it to the [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#datasource) property through the `onSuccess` event.
+You can use TreeGrid [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/treegrid#datasource) property to bind the data source to TreeGrid from external fetch request. The following code demonstrates fetching the data source from the server using a fetch request and binding it to the [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/treegrid#datasource) property through the `onSuccess` event.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -42,7 +42,7 @@ You can use TreeGrid [`dataSource`](https://ej2.syncfusion.com/angular/documenta
 
 ## Handling expandStateMapping
 
-To control the expanded or collapsed state of parent rows, assign the [`expandStateMapping`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#expandstatemapping) property to the field in your data source that indicates the expansion state.
+To control the expanded or collapsed state of parent rows, assign the [`expandStateMapping`](https://ej2.syncfusion.com/angular/documentation/api/treegrid#expandstatemapping) property to the field in your data source that indicates the expansion state.
 
 The `expandStateMapping` property should map to a boolean field (e.g., `true` for expanded, `false` for collapsed) in your data source, enabling the TreeGrid to render parent records in the appropriate state based on data values.
 
