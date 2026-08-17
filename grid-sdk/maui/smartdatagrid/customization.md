@@ -2,7 +2,7 @@
 layout: post
 title: Customization in .NET MAUI Smart Data Grid control | Syncfusion®
 description: Learn how to customize the behavior and features of Syncfusion® .NET MAUI Smart Data Grid including interactions, data operations, and configuration options.
-platform: MAUI
+platform: grid-sdk
 control: SfSmartDataGrid
 documentation: UG
 keywords : maui datagrid, customization, assistview, prompts, smart actions

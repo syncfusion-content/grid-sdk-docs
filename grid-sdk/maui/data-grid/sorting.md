@@ -2,7 +2,7 @@
 layout: post
 title: Sorting in .NET MAUI Data Grid | Syncfusion®
 description: Learn how to sort data in Syncfusion® .NET MAUI Data Grid including single-column, multi-column, and custom sorting options.
-platform: MAUI
+platform: grid-sdk
 control: SfDataGrid
 documentation: UG
 keywords : maui data grid, maui datagrid, maui grid, grid maui, maui gridview, grid in maui, .net maui datagrid, .net maui grid, .net grid maui, .net maui sorting, maui sorting

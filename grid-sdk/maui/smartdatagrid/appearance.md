@@ -2,7 +2,7 @@
 layout: post
 title: Appearance in .NET MAUI Smart Data Grid control | Syncfusion®
 description: Learn how to customize the appearance of Syncfusion® .NET MAUI Smart Data Grid including styling options, themes, colors, and visual enhancements.
-platform: MAUI
+platform: grid-sdk
 control: SfSmartDataGrid
 documentation: UG
 keywords : maui datagrid, appearance, styling, assistview, toolbar, templates

@@ -2,7 +2,7 @@
 layout: post
 title: Record Template View in .NET MAUI Data Grid | Syncfusion®
 description: Learn how to use Record Template View in Syncfusion® .NET MAUI DataGrid to create fully customized row layouts and enhance data presentation.
-platform: MAUI
+platform: grid-sdk
 control: SfDataGrid
 documentation: UG
 ---

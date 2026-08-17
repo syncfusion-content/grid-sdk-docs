@@ -3,7 +3,7 @@ layout: post
 title: Getting Started with .NET MAUI Data Grid | Syncfusion®
 canonical_url: "https://www.syncfusion.com/maui-controls/maui-datagrid"
 description: Learn how to get started with the Syncfusion® .NET MAUI Data Grid control. Explore setup, features, examples, and customization options
-platform: MAUI
+platform: grid-sdk
 control: SfDataGrid
 documentation: ug
 keywords : maui data grid, maui datagrid, maui grid, grid maui, maui gridview, grid in maui, .net maui datagrid, .net maui grid, .net grid maui
