@@ -1,13 +1,9 @@
-node('Maui')
+node('content')
 { 
 timestamps
   {
-   
-  def Content="";
-		env.PATH = "${ProgramFiles}"+"\\Git\\mingw64\\bin;${env.PATH}"
-
-     timeout(time: 9000000, unit: 'MILLISECONDS') {
-String platform='grid-sdk';
+     timeout(time: 7200000, unit: 'MILLISECONDS') {
+String platform='file-formats';
    try
 	{   
 	
