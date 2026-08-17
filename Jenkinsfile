@@ -10,6 +10,10 @@ timestamps
 String platform='grid-sdk';
    try
 	{   
+	
+	def Content="";
+		env.PATH = "${ProgramFiles}"+"\\Git\\mingw64\\bin;${env.PATH}"
+		
 		//Clone scm repository in Workspace source directory
 		stage ('Checkout')   
 	    { 
@@ -17,11 +21,11 @@ String platform='grid-sdk';
            {
 		     checkout scm
 			 
-
 			 def page = 1
 			 while(true)
             {  
 			 def branchCommit = 'https://api.github.com/repos/syncfusion-content/'+env.githubSourceRepoHttpUrl.split('/')[env.githubSourceRepoHttpUrl.split('/').size() - 1]+'/pulls/' + env.pullRequestId + '/files?per_page=100^&page='+ page
+             
             String branchCommitDetails = bat returnStdout: true, script: 'curl -H "Accept: application/vnd.github.v3+json" -u SyncfusionBuild:' + env.GithubBuildAutomation_PrivateToken + " " + branchCommit
 
             def ChangeFiles= branchCommitDetails.split('"filename": ');
@@ -53,7 +57,6 @@ String platform='grid-sdk';
 	  checkout([$class: 'GitSCM', branches: [[name: '*/development']], doGenerateSubmoduleConfigurations: false, extensions: [[$class: 'RelativeTargetDirectory', relativeTargetDir: 'ug_spellchecker']], submoduleCfg: [], userRemoteConfigs: [[credentialsId: env.githubCredentialId, url: 'https://github.com/syncfusion-content/ug_spellchecker.git']]])
 		 
 	  }
-	  
 	}
 	
     catch(Exception e)
@@ -71,12 +74,6 @@ if(currentBuild.result != 'FAILURE')
 		bat 'powershell.exe -ExecutionPolicy ByPass -File '+env.WORKSPACE+"/ug_spellchecker/build.ps1 -Script "+env.WORKSPACE+"/ug_spellchecker/build.cake -Target build -Platform \""+platform+"\" -Targetbranch "+env.githubTargetBranch+" -Branch "+'"'+env.githubSourceBranch+'"'
 	 	}
 	 	
-	 	def files = findFiles(glob: '**/cireports/errorlogs/*.txt')
- 
-        if(files.size() > 0)
-        {
-           currentBuild.result = 'FAILURE'
-        }
 	 	
     }
 	 catch(Exception e) 

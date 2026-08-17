@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Tool Tip in ASP.NET MVC Pivot Table Component
-description: Learn here all about Tool Tip in Syncfusion ASP.NET MVC Pivot Table component of Syncfusion Essential JS 2 and more.
-platform: grid-sdk
+title: Tooltip in ASP.NET MVC Pivot Table | Syncfusion
+description: Learn how the ASP.NET MVC Pivot Table displays contextual tooltips on value cells via the ShowTooltip property, including row and column header info on hover.
+platform: ej2-asp-core-mvc
 control: Tool Tip
-publishingplatform: grid-sdk
+publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
 
-# Tooltip in ASP.NET MVC Pivot Table Component
+# Tooltip in ASP.NET MVC Pivot Table
 
 The tooltip displays contextual information when users hover over value cells in the pivot table. It can be enabled or disabled by setting the [`ShowTooltip`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_ShowTooltip) property to **true** or **false**. By default, tooltip is enabled in the pivot table and shows the cell value along with row and column header information.
 

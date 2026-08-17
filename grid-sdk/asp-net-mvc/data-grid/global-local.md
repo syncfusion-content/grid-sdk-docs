@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Global Local in Syncfusion ASP.NET MVC Grid Component
-description: Learn here all about Global Local in Syncfusion ASP.NET MVC Grid component of Syncfusion Essential JS 2 and more.
+title: ASP.NET MVC Grid Globalization and Localization | Syncfusion
+description: Learn how to use globalization in ASP.NET MVC Data Grid with localization, internationalization, culture switching, RTL support, and locale-specific formatting.
 platform: grid-sdk
 control: Global Local
 publishingplatform: grid-sdk
 documentation: ug
 ---
 
-# Global local in ASP.NET MVC Grid component
+# Globalization in ASP.NET MVC Data Grid
 
 The Syncfusion ASP.NET MVC Grid component provides a feature known as Globalization (global and local), which makes the application more accessible and useful for individuals from different regions and language backgrounds. You have the ability to view data in your preferred language and format, resulting in an enhanced overall experience.
 

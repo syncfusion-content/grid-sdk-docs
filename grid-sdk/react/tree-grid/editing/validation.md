@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Validation in React TreeGrid component | Syncfusion
-description: Learn here all about Validation in Syncfusion React TreeGrid component of Syncfusion Essential JS 2 and more.
+title: React TreeGrid Validation | Syncfusion
+description: Learn how to configure validation in React TreeGrid, including required fields, custom rules, and error handling during editing.
 control: Validation 
 platform: grid-sdk
 documentation: ug

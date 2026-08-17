@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Context Menu in Syncfusion ASP.NET MVC Grid Component
-description: Learn here all about Context Menu in Syncfusion ASP.NET MVC Grid component of Syncfusion Essential JS 2 and more.
+title: ASP.NET MVC Grid Context Menu | Syncfusion
+description: Learn how to use Context Menu in ASP.NET MVC Data Grid with default items, custom actions, event handling, and options to prevent menu items.
 platform: grid-sdk
 control: Context Menu
 publishingplatform: grid-sdk
 documentation: ug
 ---
 
-# Context menu in ASP.NET MVC Grid component
+# Context Menu in ASP.NET MVC Data Grid
 
 The Syncfusion ASP.NET MVC Grid component comes equipped with a context menu feature, which is triggered when a user right-clicks anywhere within the grid. This feature serves to enrich the user experience by offering immediate access to a variety of supplementary actions and operations that can be executed on the data displayed in the grid.
 

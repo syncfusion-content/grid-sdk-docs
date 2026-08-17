@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Aggregates in JavaScript Grid control | Syncfusion
-description: Learn here all about Aggregates in Syncfusion JavaScript Grid control of Syncfusion Essential JS 2 and more.
+title: Javascript Grid Aggregates | Syncfusion
+description: Learn how to use aggregates in Javascript Data Grid to display column summaries, footer and group aggregates, and create custom aggregate calculations.
 platform: grid-sdk
 control: Aggregates 
 publishingplatform: grid-sdk
@@ -9,7 +9,8 @@ documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Aggregates in JavaScript Grid control
+# Aggregates in Javascript Data Grid
+
 
 The Aggregates feature in the JavaScript Grid control allows you to display aggregate values in the footer, group footer, and group caption of the grid. With this feature, you can easily perform calculations on specific columns and show summary information. This feature can be configured using the `aggregates` property. To represent an aggregate column, you need to specify the minimum required properties, such as [field](../../api/grid/aggregateColumn#field) and [type](../../api/grid/aggregateColumn#type).
 

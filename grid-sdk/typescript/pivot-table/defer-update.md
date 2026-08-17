@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Defer update in TypeScript Pivot Table component | Syncfusion
-description: Learn here all about Defer update in Syncfusion TypeScript Pivot Table component of Syncfusion Essential JS 2 and more.
-platform: grid-sdk
-control: Defer update 
-publishingplatform: grid-sdk
+title: Defer Update in ##Platform_Name## Pivot Table | Syncfusion
+description: Learn how the ##Platform_Name## Pivot Table defers layout updates until Apply is clicked in the Field List via `allowDeferLayoutUpdate` for better performance.
+platform: ej2-javascript
+control: Defer update
+publishingplatform: ##Platform_Name##
 documentation: ug
-domainurl: https://help.syncfusion.com/grid-sdk
+domainurl: ##DomainURL##
 ---
 
-# Defer update in TypeScript Pivot Table component
+# Defer Update in ##Platform_Name## Pivot Table
 
 Defer layout update support allows updating the pivot table component only on demand, significantly improving performance for complex data operations. When this feature is enabled, users can drag-and-drop fields between row, column, value, and filter axes, apply sorting and filtering inside the Field List, resulting in changes to the pivot report configuration without immediately updating the pivot table values. Once all operations are performed and the "Apply" button is clicked in the Field List, the pivot table will update with the final modified report. This approach reduces multiple unnecessary renders and brings better performance, especially when working with large datasets or performing multiple field operations.
 

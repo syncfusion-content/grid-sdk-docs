@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Selection in TypeScript Treegrid control | Syncfusion
-description: Learn here all about Selection in Syncfusion TypeScript Treegrid control of Syncfusion Essential JS 2 and more.
+title: TypeScript TreeGrid Selection | Syncfusion
+description: Learn all about selection in the TypeScript TreeGrid, including single/multiple selection, selection modes, toggle selection, and touch interactions.
 platform: grid-sdk
 control: Selection 
 publishingplatform: grid-sdk
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Selection in TypeScript Treegrid control
+# Selection in TypeScript TreeGrid
 
 Selection provides an option to highlight a row or a cell. It can be done through simple mouse down or arrow keys. To disable selection in TreeGrid, set the [`allowSelection`](../../api/treegrid/#allowselection) to false.
 

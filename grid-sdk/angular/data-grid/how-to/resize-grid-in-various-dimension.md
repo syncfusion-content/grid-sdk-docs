@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Angular Grid - Resize Various Dimensions | Syncfusion
-description: Angular Grid resize guide explains resizing behavior, responsive sizing strategies, and examples to adjust grid dimensions dynamically.
+title: Angular Grid Dynamic Resizing | Syncfusion
+description: Learn how to resize Angular Data Grid dynamically by adjusting parent container dimensions and managing grid width and height responsively.
 platform: grid-sdk
 control: Resize the grid in various dimension 
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Resize the Grid in Various Dimension in Angular Grid Component
+# Grid Resizing in Angular Data Grid
 
 The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Grid component supports flexible resizing, allowing dynamic adjustment of both the grid's width and height to enhance data presentation and usability.
 

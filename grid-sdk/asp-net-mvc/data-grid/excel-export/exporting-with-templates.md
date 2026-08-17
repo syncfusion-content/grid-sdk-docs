@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Exporting Templates in Syncfusion ASP.NET MVC Grid Component
-description: Learn here all about Exporting grids with templates in Syncfusion ASP.NET MVC Grid component of Syncfusion Essential JS 2 and more.
+title: ASP.NET MVC Grid Excel Export Templates | Syncfusion
+description: Learn how to export ASP.NET MVC Data Grid into Excel using templates, including column, detail, and caption templates with custom formatting, images, and links.
 platform: grid-sdk
 control: Exporting grid with templates
 publishingplatform: grid-sdk
 documentation: ug
 ---
 
-# Exporting grid with templates in ASP.NET MVC Grid control
+# Excel Export Templates in ASP.NET MVC Data Grid
 
 The grid offers the option to export the column, detail, and caption templates to an Excel document. The template contains images, hyperlinks, and customized text.
 

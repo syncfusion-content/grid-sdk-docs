@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Column rendering in JavaScript Grid control | Syncfusion
-description: Learn here all about Column rendering in Syncfusion JavaScript Grid control of Syncfusion Essential JS 2 and more.
+title: Javascript Grid Column Rendering | Syncfusion
+description: Learn how to customize column rendering in Javascript Data Grid using cell templates, header templates, and flexible layouts for rich data presentation.
 platform: grid-sdk
 control: Column rendering 
 publishingplatform: grid-sdk
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Column Rendering in JavaScript Grid control
+# Column Rendering in Javascript Data Grid
 
 In JavaScript Grid, column rendering provides you with the ability to finely control how data is presented. This allows you to manually define columns, automatically generate them, and dynamically customize data presentation. With column rendering, you can ensure that your data is displayed exactly as needed, offering a wide range of possibilities for organizing and showcasing information within the grid.
 

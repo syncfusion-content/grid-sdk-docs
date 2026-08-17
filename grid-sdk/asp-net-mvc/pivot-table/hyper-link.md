@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Hyper Link in ASP.NET MVC Pivot Table Component
-description: Learn here all about Hyper Link in Syncfusion ASP.NET MVC Pivot Table component of Syncfusion Essential JS 2 and more.
-platform: grid-sdk
+title: Hyperlink in ASP.NET MVC Pivot Table | Syncfusion
+description: Learn how the ASP.NET MVC Pivot Table shows hyperlinks in row, column, and value cells via HyperlinkSettings and conditionalSettings.
+platform: ej2-asp-core-mvc
 control: Hyper Link
-publishingplatform: grid-sdk
+publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
 
-# Hyper link in ASP.NET MVC Pivot Table component
+# Hyperlink in ASP.NET MVC Pivot Table
 
 The Pivot Table component provides built-in support for displaying hyperlinks within individual cells. This feature allows users to link data in specific cells, enhancing interactivity and navigation.
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Inline Editing in ASP.NET Core Grid Control | Syncfusion
-description: Learn here all about Inline Editing in Syncfusion ASP.NET Core Grid component of Syncfusion Essential JS 2 and more.
+title: ASP.NET Core Grid Inline Editing | Syncfusion
+description: Learn how to perform inline editing in ASP.NET Core Data Grid, update records directly, customize editing behavior, and manage CRUD operations efficiently.
 platform: grid-sdk
 control: Inline Editing
 publishingplatform: grid-sdk
 documentation: ug
 ---
 
-# Inline editing in ASP.NET Core grid component
+# Inline Editing in ASP.NET Core Data Grid
 
 The ASP.NET Core Grid component provides a powerful in-line editing feature that allows you to edit cell values of row directly within the grid. This feature is especially useful when you want to quickly modify data without the need for a separate edit form. In normal edit mode, the selected record is changed to an edit state, and you can modify the cell values and save the edited data to the data source.
 

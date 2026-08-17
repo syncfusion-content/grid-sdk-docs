@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Exporting Grid with Templates in TypeScript Grid control | Syncfusion
-description: Learn here all about Exporting grids with templates in Syncfusion TypeScript Grid control of Syncfusion Essential JS 2 and more.
+title: Typescript Grid Excel Export Templates | Syncfusion
+description: Learn how to export Typescript Data Grid into Excel using templates, including column, detail, and caption templates with custom formatting, images, and links.
 platform: grid-sdk
 control: Exporting grid with templates
 publishingplatform: grid-sdk
@@ -9,7 +9,7 @@ documentation: ugs
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Exporting grid with templates in TypeScript Grid control
+# Excel Export Templates in Typescript Data Grid
 
 The grid offers the option to export the column, detail, and caption templates to an Excel document. The template contains images, hyperlinks, and customized text.
 

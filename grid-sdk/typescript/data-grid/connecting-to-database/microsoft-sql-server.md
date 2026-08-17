@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Microsoft SQL Server Data Binding in Syncfusion Grid
-description: Learn how to consume data from SQL Server using Microsoft SQL Client, bind it to Syncfusion Grid, and perform CRUD operations.
+title: Typescript Grid Microsoft SQL Server Integration | Syncfusion
+description: Learn how to connect Typescript Data Grid to Microsoft SQL Server using ASP.NET Core Web API, execute SQL queries, and manage data efficiently.
 platform: grid-sdk
 control: Grid
 keywords: adaptors, customadaptor, urladaptor, microsoftsql, remotedata
@@ -10,7 +10,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Connecting Microsoft SQL Server data to Syncfusion TypeScript Grid
+# Microsoft SQL Server Integration in Typescript Data Grid
 
 This section describes how to connect and retrieve data from a Microsoft SQL Server database using [Microsoft.Data.SqlClient](https://www.nuget.org/packages/Microsoft.Data.SqlClient) and bind it to the Syncfusion TypeScript Grid.
 

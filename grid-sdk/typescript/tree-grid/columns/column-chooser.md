@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Column chooser in TypeScript Treegrid control | Syncfusion
-description: Learn here all about Column chooser in Syncfusion TypeScript Treegrid control of Syncfusion Essential JS 2 and more.
+title: TypeScript TreeGrid Column Chooser | Syncfusion
+description: Learn how to use the column chooser in TypeScript TreeGrid to show, hide, and manage column visibility dynamically.
 platform: grid-sdk
 control: Column chooser 
 publishingplatform: grid-sdk
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Column chooser in TypeScript Treegrid control
+# Column Chooser in TypeScript TreeGrid
 
 The column chooser has options to show or hide columns dynamically. It can be enabled by defining the [`showColumnChooser`](../../api/treegrid/#showcolumnchooser) as true.
 

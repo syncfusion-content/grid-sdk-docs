@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Foreign key column in React TreeGrid | Syncfusion
-description: Learn here all about Foreign key column in Syncfusion React TreeGrid of Syncfusion Essential JS 2 and more.
+title: React TreeGrid Display Foreign Key Values | Syncfusion
+description: Learn to display foreign key values and render dropdowns in React TreeGrid using external data for hierarchical structures.
 control: Foreign key column 
 platform: grid-sdk
 documentation: ug

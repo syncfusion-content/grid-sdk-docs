@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Getting started with TypeScript Pivot Table control | Syncfusion
-description:  Checkout and learn about Getting started with TypeScript Pivot Table control of Syncfusion Essential JS 2 and more details.
-platform: grid-sdk
-control: Getting started 
-publishingplatform: grid-sdk
+title: Getting Started with TypeScript Pivot Table | Syncfusion
+description: Learn how to get started with the TypeScript Pivot Table. Explore setup, features, examples, and customization options.
+platform: ej2-javascript
+control: Getting started
+publishingplatform: ##Platform_Name##
 documentation: ug
-domainurl: https://help.syncfusion.com/grid-sdk
+domainurl: ##DomainURL##
 ---
 
-# Getting started in TypeScript Pivot Table control
+# Getting Started with TypeScript Pivot Table
 
 This section explains the steps to create a simple **Pivot Table** and demonstrates the basic usage of the Pivot Table component using the Essential<sup style="font-size:70%">&reg;</sup> JS 2 [quickstart](https://github.com/SyncfusionExamples/ej2-quickstart-webpack-) seed repository. This seed repository is pre-configured with the Essential<sup style="font-size:70%">&reg;</sup> JS 2 package.
 

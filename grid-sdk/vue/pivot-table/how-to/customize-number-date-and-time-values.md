@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Customize number date and time values in Vue | Syncfusion
-description: Learn here all about Customize number date and time values in Syncfusion Vue Pivotview component of Syncfusion Essential JS 2 and more.
+title: Format number, date, and time values in Vue Pivot Table | Syncfusion
+description: Step-by-step example showing how to format number, date, and time values in the Vue Pivot Table with the formatSettings property and DateFormat options.
 control: Customize number date and time values 
-platform: grid-sdk
+platform: ej2-vue
 documentation: ug
-domainurl: https://help.syncfusion.com/grid-sdk
+domainurl: ##DomainURL##
 ---
 
-# Customize number, date, and time values in Vue Pivot Table component
+# How to customize number date and time values in Vue Pivot Table
 
 You can format the number, date, and time values for each field using the [`formatSettings`](https://ej2.syncfusion.com/vue/documentation/api/pivotview/dataSourceSettings#formatsettings) option under [`dataSourceSettings`](https://ej2.syncfusion.com/vue/documentation/api/pivotview/dataSourceSettings). This configuration is applied during component initialization to ensure consistent data presentation across the pivot table.
 

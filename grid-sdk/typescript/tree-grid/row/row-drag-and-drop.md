@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Row drag and drop in TypeScript Treegrid control | Syncfusion
-description: Learn here all about Row drag and drop in Syncfusion TypeScript Treegrid control of Syncfusion Essential JS 2 and more.
+title: Row drag and drop in TypeScript TreeGrid component | Syncfusion
+description: Learn here all about Row drag and drop in TypeScript TreeGrid of Essential JS 2 and more.
 platform: grid-sdk
 control: Row drag and drop 
 publishingplatform: grid-sdk
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Row drag and drop in TypeScript Treegrid control
+# Row Drag and Drop in TypeScript TreeGrid
 
 The TreeGrid rows can be reordered, dropped to another TreeGrid or custom control by enabling the [`allowRowDragAndDrop`](../../api/treegrid/#allowrowdraganddrop) to true.
 

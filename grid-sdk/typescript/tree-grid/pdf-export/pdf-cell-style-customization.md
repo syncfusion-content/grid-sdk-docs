@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Pdf cell style customization in TypeScript Treegrid control | Syncfusion
-description: Learn here all about Pdf cell style customization in Syncfusion TypeScript Treegrid control of Syncfusion Essential JS 2 and more.
+title:  TypeScript TreeGrid PDF Cell Style Customization | Syncfusion
+description: Learn how to customize PDF cell styles in the TypeScript TreeGrid, including conditional formatting and theme options for PDF export.
 platform: grid-sdk
 control: Pdf cell style customization 
 publishingplatform: grid-sdk
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Pdf cell style customization in TypeScript Treegrid control
+# PDF Cell Style Customization in TypeScript TreeGrid
 
 ## Conditional cell formatting
 

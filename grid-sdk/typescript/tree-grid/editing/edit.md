@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Edit in TypeScript Treegrid control | Syncfusion
-description: Learn here all about Edit in Syncfusion TypeScript Treegrid control of Syncfusion Essential JS 2 and more.
+title: TypeScript TreeGrid Edit | Syncfusion
+description: Learn how to edit data in TypeScript TreeGrid, including CRUD operations, editing modes, validation, and data update workflows.
 platform: grid-sdk
 control: Edit 
 publishingplatform: grid-sdk
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Edit in TypeScript Treegrid control
+# Edit in TypeScript TreeGrid
 
 The TreeGrid component has options to dynamically insert, delete and update records.
 Editing feature is enabled by using [`editSettings`](../../api/treegrid/#editsettings) property and it requires a primary key column for CRUD operations.

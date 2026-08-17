@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Drill through in TypeScript Pivot Table component | Syncfusion
-description: Learn here all about Drill through in Syncfusion TypeScript Pivot Table component of Syncfusion Essential JS 2 and more.
-platform: grid-sdk
-control: Drill through 
-publishingplatform: grid-sdk
+title: Drill Through in ##Platform_Name## Pivot Table | Syncfusion
+description: Learn how the ##Platform_Name## Pivot Table shows raw data behind any aggregated cell via `allowDrillThrough`, with `maxRowsInDrillThrough` to cap rows.
+platform: ej2-javascript
+control: Drill through
+publishingplatform: ##Platform_Name##
 documentation: ug
-domainurl: https://help.syncfusion.com/grid-sdk
+domainurl: ##DomainURL##
 ---
 
-# Drill through in TypeScript Pivot Table component
+# Drill Through in ##Platform_Name## Pivot Table
 
 The drill-through feature in the Pivot Table component allows users to view the raw, unaggregated data behind any aggregated cell in the Pivot Table. To enable this feature, set the [`allowDrillThrough`](https://ej2.syncfusion.com/documentation/api/pivotview/index-default#allowdrillthrough) property to **true**. By double-clicking an aggregated cell, users can view its detailed raw data in a data grid displayed in a new window. The new window shows the row header, column header, and measure name of the selected cell at the top. Additionally, users can include or exclude fields available in the data grid using the column chooser option.
 

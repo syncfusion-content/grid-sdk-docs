@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Display foreign key values in treegrid in TypeScript Treegrid control | Syncfusion
-description: Learn here all about Display foreign key values in treegrid in Syncfusion TypeScript Treegrid control of Syncfusion Essential JS 2 and more.
+title: TypeScript TreeGrid Display Foreign Key Values | Syncfusion
+description: Learn how to display foreign key values in TypeScript TreeGrid by mapping related data sources and showing meaningful values instead of key identifiers.
 platform: grid-sdk
 control: Display foreign key values in treegrid 
 publishingplatform: grid-sdk
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Display foreign key values in treegrid in TypeScript Treegrid control
+# Display Foreign Key Values in TypeScript TreeGrid
 
 Since Tree Grid Databinding concept is of hierarchy relationship, we do not provide in-built support for foreignKey datasource.
 

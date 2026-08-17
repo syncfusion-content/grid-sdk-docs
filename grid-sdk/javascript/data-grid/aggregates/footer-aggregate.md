@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Footer aggregate in JavaScript Grid control | Syncfusion
-description: Learn here all about Footer aggregate in Syncfusion JavaScript Grid control of Syncfusion Essential JS 2 and more.
+title: Javascript Grid Footer Aggregate | Syncfusion
+description: Learn how to display and format footer aggregate values in Javascript Data Grid, apply summary calculations, and combine multiple aggregates.
 platform: grid-sdk
 control: Footer aggregate 
 publishingplatform: grid-sdk
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Footer aggregate in JavaScript Grid control
+# Footer Aggregate in Javascript Data Grid
 
 The JavaScript Grid control allows you to calculate and display aggregate values in the footer cells. The footer aggregate value is calculated from all the rows in the grid. You can use the [footerTemplate](../../api/grid/aggregateColumn#footertemplate) property to render the aggregate value in the footer cells.
 

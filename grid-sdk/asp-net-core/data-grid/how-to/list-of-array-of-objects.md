@@ -1,7 +1,7 @@
 ---
 layout: post
-title: List Of Array Of Objects in ASP.NET Core Grid Component
-description: Learn here all about List Of Array Of Objects in Syncfusion ASP.NET Core Grid component of Syncfusion Essential JS 2 and more.
+title: ASP.NET Core Grid Array of Objects Binding | Syncfusion
+description: Learn how to bind arrays of objects and complex fields in ASP.NET Core Data Grid to display and manage nested data structures effectively.
 platform: grid-sdk
 control: List Of Array Of Objects
 publishingplatform: grid-sdk
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Complex Data Binding with list of Array Of Objects
+# Bind Array of Objects in ASP.NET Core Data Grid
 
 The following example shows how to set Complex field for datasource having Array Of Objects.
 

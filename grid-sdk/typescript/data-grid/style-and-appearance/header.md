@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Header in TypeScript Grid control | Syncfusion
-description: Learn here all about Header in Syncfusion TypeScript Grid control of Syncfusion Essential JS 2 and more.
+title: Typescript Grid Header Customization | Syncfusion
+description: Learn how to customize header styles in Typescript Data Grid with header templates, icons, and interactive header elements.
 platform: grid-sdk
 control: Header 
 publishingplatform: grid-sdk
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Header in TypeScript Grid control
+# Header Style in Typescript Data Grid
 
 You can customize the appearance of the header elements in the TypeScript Grid control using CSS. Here are examples of how to customize the Grid header, header cell, and header cell div element.
 

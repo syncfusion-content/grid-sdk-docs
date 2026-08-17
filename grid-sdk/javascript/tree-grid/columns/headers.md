@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Headers in JavaScript Treegrid control | Syncfusion
-description: Learn here all about Headers in Syncfusion JavaScript Treegrid control of Syncfusion Essential JS 2 and more.
+title: JavaScript TreeGrid Headers | Syncfusion
+description: Learn how to configure and customize column headers in JavaScript TreeGrid, including header text and template options.
 platform: grid-sdk
 control: Headers 
 publishingplatform: grid-sdk
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Headers in JavaScript Treegrid control
+# Headers in JavaScript TreeGrid
 
 ## Header text
 

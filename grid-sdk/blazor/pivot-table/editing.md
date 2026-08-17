@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Editing in Blazor Pivot Table Component | Syncfusion®
-description: Learn about editing features in Blazor Pivot Table component for CRUD operations with examples and much more details.
-platform: grid-sdk
+title: Editing in Blazor Pivot Table | Syncfusion
+description: Learn how the Blazor Pivot Table enables CRUD editing of value cells in a data grid popup with add, edit, delete, dialog, batch, and inline modes.
+platform: Blazor
 control: Pivot Table
 documentation: ug
 ---
 
-# Editing in Blazor Pivot Table Component
+# Editing in Blazor Pivot Table
 
 N> This feature is applicable only for the relational data source.
 
@@ -179,7 +179,7 @@ The available built-in command buttons are:
 | Cancel | Cancel the edited state. |
 
 N>
-- When the command column option is enabled, the Edit, Delete, Update, and Cancel buttons are not shown in the Data Grid's toolbar. Instead, these action buttons appear in the last column of each row within the Data Grid.
+- When the command column option is enabled, the **Edit**, **Delete**, **Update**, and **Cancel** buttons are not shown in the Data Grid's toolbar. Instead, these action buttons appear in the last column of each row within the Data Grid.
 - To delete a record directly from the data grid using the **Delete** action button in the command column, you need to set the [AllowDeleting](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.PivotView.PivotViewCellEditSettings.html#Syncfusion_Blazor_PivotView_PivotViewCellEditSettings_AllowDeleting) property to **true**.
 
 ```cshtml
@@ -306,6 +306,8 @@ Clicking a data point in the pivot chart displays the underlying raw items in a 
 ![Dialog Editing in Blazor PivotChart](images/blazor-pivotchart-editing-dialog.webp)
 
 ## Events
+
+The Pivot Table provides the following events to monitor editing operations. Use them to track, customize, or intercept a specific stage of the editing workflow.
 
 ### EditCompleted
 
@@ -550,4 +552,4 @@ The event [OnActionFailure](https://help.syncfusion.com/cr/blazor/Syncfusion.Bla
 }
 ```
 
-N> You can refer to the [Blazor Pivot Table](https://www.syncfusion.com/blazor-components/blazor-pivot-table) feature tour page for its groundbreaking feature representations. You can also explore the [Blazor Pivot Table example](https://blazor.syncfusion.com/demos/pivot-table/default-functionalities?theme=bootstrap5) to know how to render and configure the pivot table.
+N> You can refer to the [Blazor Pivot Table](https://www.syncfusion.com/blazor-components/blazor-pivot-table) feature tour page for its groundbreaking feature representations. You can also explore the [Blazor Pivot Table example](https://blazor.syncfusion.com/demos/pivot-table/default-functionalities?theme=fluent2) to know how to render and configure the pivot table.

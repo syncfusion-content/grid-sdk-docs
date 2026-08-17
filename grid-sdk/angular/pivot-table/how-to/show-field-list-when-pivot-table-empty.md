@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Show field list when Angular Pivot Table is empty | Syncfusion
-description: Learn here all about Show field list when pivot table empty in Syncfusion Angular Pivotview component of Syncfusion Essential JS 2 and more.
-platform: grid-sdk
+title: Show the field list for an empty Angular Pivot Table | Syncfusion
+description: Step-by-step example showing how to show the field list when the pivot table is empty in the Angular Pivot Table, with code snippets and property references.
+platform: ej2-angular
 control: Show field list when pivot table empty 
 documentation: ug
-domainurl: https://help.syncfusion.com/grid-sdk
+domainurl: ##DomainURL##
 ---
 
-# Show field list for empty Angular Pivot Table component
+# How to show field list when pivot is empty in Angular Pivot Table
 
-When there are no fields configured in a pivot table's row, column, value, and filter axes, the field list can be automatically displayed to help users configure the pivot table. This is particularly useful in scenarios where users start with an empty pivot configuration and need immediate access to available fields for setup. To achieve this functionality, use the [`dataBound`](https://ej2.syncfusion.com/documentation/api/pivotview/#databound) event and call the `onShowFieldList` method as demonstrated below.
+When there are no fields configured in a pivot table's row, column, value, and filter axes, the field list can be automatically displayed to help users configure the pivot table. This is particularly useful in scenarios where users start with an empty pivot configuration and need immediate access to available fields for setup. To achieve this functionality, use the [`dataBound`](https://ej2.syncfusion.com/documentation/api/pivotview#databound) event and call the `onShowFieldList` method as demonstrated below.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
