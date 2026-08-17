@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Column resizing in JavaScript Treegrid control | Syncfusion
-description: Learn here all about Column resizing in Syncfusion JavaScript Treegrid control of Syncfusion Essential JS 2 and more.
+title: JavaScript TreeGrid Column Resizing | Syncfusion
+description: Learn how to resize columns in JavaScript TreeGrid, including column width adjustment, resizing modes, and auto-fit options.
 platform: grid-sdk
 control: Column resizing 
 publishingplatform: grid-sdk
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Column resizing in JavaScript Treegrid control
+# Column Resizing in JavaScript TreeGrid
 
 Column width can be resized by clicking and dragging the right edge of the column header. While dragging, the width of the respective column will be resized immediately. Each column can be auto resized by double-clicking the right edge of the column header to fit the width of that column based on the widest cell content. To enable column resize, set the [`allowResizing`](../../api/treegrid/#allowresizing) property to true.
 

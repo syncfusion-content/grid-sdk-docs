@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Customize column styles in JavaScript Treegrid control | Syncfusion
-description: Learn here all about Customize column styles in Syncfusion JavaScript Treegrid control of Syncfusion Essential JS 2 and more.
+title:  JavaScript TreeGrid Column Style Customization | Syncfusion
+description: Learn how to customize column styles in JavaScript TreeGrid using customAttributes, including applying custom CSS to header and content cells.
 platform: grid-sdk
 control: Customize column styles 
 publishingplatform: grid-sdk
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Customize column styles in JavaScript Treegrid control
+# Customize Column Styles in JavaScript TreeGrid
 
 You can customise the appearance of the header and content of a particular column using the [`customAttributes`](../../api/treegrid/column/#customattributes) property.
 

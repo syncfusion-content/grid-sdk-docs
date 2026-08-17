@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Exporting Tree Grid in Server in Syncfusion TypeScript Tree Grid Component
-description: Learn here all about Exporting Tree Grid in Server in Syncfusion TypeScript Tree Grid Component of Syncfusion Essential JS 2 and more.
+title: TypeScript TreeGrid PDF Server-Side Export | Syncfusion
+description: Learn how to export the TypeScript TreeGrid to PDF on the server side using server export libraries and configuration with Essential JS 2.
 platform: grid-sdk
 control: Exporting Tree Grid in Server
 documentation: ug
 ---
 
 
-# Exporting Tree Grid in Server
+# PDF Server-Side Export in TypeScript TreeGrid
 
 The Tree Grid have an option to export the data to PDF in server side using tree grid server export library.
 

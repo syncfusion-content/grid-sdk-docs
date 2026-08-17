@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Excel like filter in TypeScript Treegrid control | Syncfusion
-description: Learn here all about Excel like filter in Syncfusion TypeScript Treegrid control of Syncfusion Essential JS 2 and more.
+title: TypeScript TreeGrid Excel-Like Filter | Syncfusion
+description: Learn how to use Excel-like filtering in TypeScript TreeGrid, including filter menus, search, checkbox filtering, and custom filter options.
 platform: grid-sdk
 control: Excel like filter 
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Excel like filter in TypeScript Treegrid control
+# Excel-Like Filter in TypeScript TreeGrid
 
 You can enable Excel like filter by defining.[`filterSettings.type`](../../api/treegrid/filterSettingsModel#type) as `Excel`.The excel menu contains an option such as Sorting, Clear filter, Sub menu for advanced filtering.
 

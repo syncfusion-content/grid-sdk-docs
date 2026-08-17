@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Remote data in TypeScript Treegrid control | Syncfusion
-description: Learn here all about Remote data in Syncfusion TypeScript Treegrid control of Syncfusion Essential JS 2 and more.
+title: TypeScript TreeGrid Remote Data | Syncfusion
+description: Learn how to bind remote data in the TypeScript TreeGrid, including load on demand, paging, virtualization, adaptors, and error handling.
 platform: grid-sdk
 control: Remote data 
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Remote data in TypeScript Treegrid control
+# Remote Data in TypeScript TreeGrid
 
 To bind remote data to TreeGrid component, assign service data as an instance of `DataManager` to the [`dataSource`](../../api/treegrid#datasource) property. To interact with remote data source,  provide the endpoint `url` and define the [`hasChildMapping`](../../api/treegrid#hasChildMapping) property of treegrid.
 

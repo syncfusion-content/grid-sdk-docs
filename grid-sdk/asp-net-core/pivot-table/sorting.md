@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Sorting in ASP.NET Core Syncfusion Pivot Table Component
-description: Learn here all about Sorting in Syncfusion ASP.NET Core Pivot Table component of Syncfusion Essential JS 2 and more.
-platform: grid-sdk
+title: Sorting in ASP.NET Core Pivot Table | Syncfusion
+description: Learn how the ASP.NET Core Pivot Table sorts field members and aggregated values via enableSorting, the e-sortsettings property, or sort icons in the UI.
+platform: ej2-asp-core-mvc
 control: Sorting
-publishingplatform: grid-sdk
+publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
 
-# Sorting in ASP.NET Core Pivot Table Component
+# Sorting in ASP.NET Core Pivot Table
 
 ## Member Sorting
 

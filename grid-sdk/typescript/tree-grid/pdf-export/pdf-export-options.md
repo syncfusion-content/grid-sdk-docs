@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Pdf export options in TypeScript Treegrid control | Syncfusion
-description: Learn here all about Pdf export options in Syncfusion TypeScript Treegrid control of Syncfusion Essential JS 2 and more.
+title:  TypeScript TreeGrid PDF Export Options | Syncfusion
+description: Learn about PDF export options in TypeScript TreeGrid, including exporting selected records, hidden columns, custom fonts, and advanced settings.
 platform: grid-sdk
 control: Pdf export options 
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Pdf export options in TypeScript Treegrid control
+# PDF Export Options in TypeScript TreeGrid
 
 ## Export hidden columns
 

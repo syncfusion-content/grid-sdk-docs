@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Adaptive in React TreeGrid | Syncfusion
-description: Learn here all about Adaptive in Syncfusion React TreeGrid component of Syncfusion Essential JS 2 and more.
+title: React TreeGrid Adaptive UI | Syncfusion
+description: Learn how to enable adaptive UI in React TreeGrid for optimized mobile, tablet, and small-screen user experiences.
 control: Adaptive
 platform: grid-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Adaptive in React TreeGrid
+# Adaptive UI in React TreeGrid
 
 The TreeGrid interface (UI) is optimized for small screens to provide clear viewing and efficient interactions. When adaptive UI is enabled, the component renders filter, sort, and edit dialogs in a full-screen layout and offers an option to render TreeGrid rows horizontally to improve readability on compact layouts.
 

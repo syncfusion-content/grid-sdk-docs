@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Render other component in column in JavaScript Treegrid control | Syncfusion
-description: Learn here all about Render other component in column in Syncfusion JavaScript Treegrid control of Syncfusion Essential JS 2 and more.
+title: JavaScript TreeGrid Custom Component Rendering | Syncfusion
+description: Learn how to render custom components in columns using the template property of the JavaScript TreeGrid.
 platform: grid-sdk
 control: Render other component in column 
 publishingplatform: grid-sdk
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Render other component in column in JavaScript Treegrid control
+# Render Custom Components in JavaScript TreeGrid Columns
 
 You can render any components in a Tree Grid column using the template property.
 

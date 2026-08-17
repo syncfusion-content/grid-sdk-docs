@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Change header text dynamically in TypeScript Treegrid control | Syncfusion
-description: Learn here all about Change header text dynamically in Syncfusion TypeScript Treegrid control of Syncfusion Essential JS 2 and more.
+title: TypeScript TreeGrid Change Header Text Dynamically | Syncfusion
+description: Learn how to dynamically change header text in TypeScript TreeGrid to customize column headers and improve user experience.
 platform: grid-sdk
 control: Change header text dynamically 
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Change header text dynamically in TypeScript Treegrid control
+# Change Header Text Dynamically in TypeScript TreeGrid
 
 You can change the column [`headerText`](../../api/treegrid/column#headertext) dynamically through an external button.
 

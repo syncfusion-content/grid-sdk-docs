@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Exporting selected data in TypeScript Treegrid control | Syncfusion
-description: Learn here all about Exporting selected data in Syncfusion TypeScript Treegrid control of Syncfusion Essential JS 2 and more.
+title: TypeScript TreeGrid Export Selected Data | Syncfusion
+description: Learn how to export selected records from TypeScript TreeGrid to Excel, PDF, and other formats for efficient data sharing and reporting.
 platform: grid-sdk
 control: Exporting selected data 
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Exporting selected data in TypeScript Treegrid control
+# Export Selected Data in TypeScript TreeGrid
 
 You can export the selected records data by passing it to [`PdfExportProperties.dataSource`](../../api/grid/pdfExportProperties/) or [`ExcelExportProperties.dataSource`](../../api/grid/excelExportProperties/) property in the [`toolbarClick`](../../api/grid#toolbarclick) event.
 

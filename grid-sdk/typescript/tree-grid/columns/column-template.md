@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Column template in TypeScript Treegrid control | Syncfusion
-description: Learn here all about Column template in Syncfusion TypeScript Treegrid control of Syncfusion Essential JS 2 and more.
+title: TypeScript TreeGrid Column Template | Syncfusion
+description: Learn how to use column templates in TypeScript TreeGrid to display custom content, images, buttons, and formatted data in cells.
 platform: grid-sdk
 control: Column template 
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Column template in TypeScript Treegrid control
+# Column Template in TypeScript TreeGrid
 
 The column [`template`](../../api/treegrid/column#template) has options to display custom element instead of a field value in the column.
 

@@ -1,12 +1,12 @@
 ---
 layout: post
 title: Configure data grid options on editing mode in Javascript | Syncfusion
-description: Learn here all about Configure data grid options on editing mode in Syncfusion TypeScript Pivotview control of Syncfusion Essential JS 2 and more.
-platform: grid-sdk
+description: Learn here all about Configure data grid options on editing mode in Syncfusion ##Platform_Name## Pivotview control of Syncfusion Essential JS 2 and more.
+platform: ej2-javascript
 control: Configure data grid options on editing mode 
-publishingplatform: grid-sdk
+publishingplatform: ##Platform_Name##
 documentation: ug
-domainurl: https://help.syncfusion.com/grid-sdk
+domainurl: ##DomainURL##
 ---
 
 # Configure data grid editing mode in the JavaScript Pivot Table

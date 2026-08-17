@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Sorting in TypeScript Treegrid control | Syncfusion
-description: Learn here all about Sorting in Syncfusion TypeScript Treegrid control of Syncfusion Essential JS 2 and more.
+title: TypeScript TreeGrid Sorting | Syncfusion
+description: Learn how to sort data in TypeScript TreeGrid, including single and multi-column sorting, custom sorting, and sort order configuration.
 platform: grid-sdk
 control: Sorting 
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Sorting in TypeScript Treegrid control
+# Sorting in TypeScript TreeGrid
 
 Sorting enables you to sort data in the `Ascending` or `Descending` order.
 To sort a column, click the column header.

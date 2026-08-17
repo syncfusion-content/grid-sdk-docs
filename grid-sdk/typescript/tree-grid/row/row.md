@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Row in TypeScript Treegrid control | Syncfusion
-description: Learn here all about Row in Syncfusion TypeScript Treegrid control of Syncfusion Essential JS 2 and more.
+title: TypeScript TreeGrid Rows | Syncfusion
+description: Learn how to work with rows in TypeScript TreeGrid, including row customization, selection, styling, rendering, and row-level operations.
 platform: grid-sdk
 control: Row 
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Row in TypeScript Treegrid control
+# Rows in TypeScript TreeGrid
 
 The row represents record details fetched from data source.
 

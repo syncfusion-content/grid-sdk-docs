@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Cypress in TypeScript Treegrid control | Syncfusion
-description: Learn here all about Cypress in Syncfusion TypeScript Treegrid control of Syncfusion Essential JS 2 and more.
+title: TypeScript TreeGrid Cypress Testing | Syncfusion
+description: Learn how to test TypeScript TreeGrid using Cypress with practical examples for end-to-end testing and application quality assurance.
 platform: grid-sdk
 control: Cypress 
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Cypress in TypeScript Treegrid control
+# Cypress in TypeScript TreeGrid
 
 This section describes how to create a Cypress project and test the Tree Grid component using the Tree Grid Test Helper.
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Auto wrap in TypeScript Treegrid control | Syncfusion
-description: Learn here all about Auto wrap in Syncfusion TypeScript Treegrid control of Syncfusion Essential JS 2 and more.
+title: TypeScript TreeGrid Auto Wrap | Syncfusion
+description: Learn how to enable auto wrap in TypeScript TreeGrid to display header and cell content across multiple lines using flexible text wrapping modes.
 platform: grid-sdk
 control: Auto wrap 
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Auto wrap in TypeScript Treegrid control
+# Auto Wrap in TypeScript TreeGrid
 
 The auto wrap allows the cell content of the treegrid to wrap to the next line when it exceeds the boundary of the cell width. The Cell Content wrapping works based on the position of white space between words.
 To enable auto wrap, set the [`allowTextWrap`](../../api/treegrid#allowtextwrap) property to `true`.

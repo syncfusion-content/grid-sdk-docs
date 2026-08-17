@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Row editing in TypeScript Treegrid control | Syncfusion
-description: Learn here all about Row editing in Syncfusion TypeScript Treegrid control of Syncfusion Essential JS 2 and more.
+title: TypeScript TreeGrid Row Editing | Syncfusion
+description: Learn how to use row editing in TypeScript TreeGrid, including editing rows, programmatic CRUD operations, and confirmation dialogs.
 platform: grid-sdk
 control: Row editing 
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Row editing in TypeScript Treegrid control
+# Row Editing in TypeScript TreeGrid
 
 In Row edit mode, when you start editing the currently selected record, the entire row is changed to edit state.
 You can change the cell values of the row and save edited data to the data source.

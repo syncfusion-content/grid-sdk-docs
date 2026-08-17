@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Clipboard in TypeScript Treegrid control | Syncfusion
-description: Learn here all about Clipboard in Syncfusion TypeScript Treegrid control of Syncfusion Essential JS 2 and more.
+title: TypeScript TreeGrid Clipboard | Syncfusion
+description: Learn how to use clipboard operations in TypeScript TreeGrid, including copy, paste, hierarchy modes, and autofill for rows and cells.
 platform: grid-sdk
 control: Clipboard 
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Clipboard in TypeScript Treegrid control
+# Clipboard in TypeScript TreeGrid
 
 The clipboard provides an option to copy selected rows or cells data into the clipboard.
 

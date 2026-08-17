@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Aggregates in React TreeGrid | Syncfusion
-description: Learn here all about Aggregates in Syncfusion React TreeGrid component of Syncfusion Essential JS 2 and more.
+title: React TreeGrid Aggregates | Syncfusion
+description: Learn how to configure, display, and customize aggregate values in React TreeGrid, including built-in aggregate types and child aggregation.
 control: Aggregates
 platform: grid-sdk
 documentation: ug

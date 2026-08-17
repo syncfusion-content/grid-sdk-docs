@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Columns in TypeScript Treegrid control | Syncfusion
-description: Learn here all about Columns in Syncfusion TypeScript Treegrid control of Syncfusion Essential JS 2 and more.
+title: TypeScript TreeGrid Columns | Syncfusion
+description: Learn how to configure and customize columns in TypeScript TreeGrid, including column types, visibility, templates, and formatting options.
 platform: grid-sdk
 control: Columns 
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Columns in TypeScript Treegrid control
+# Columns in TypeScript TreeGrid
 
 The column definitions are used as the [`dataSource`](../../api/treegrid#dataSource) schema in the TreeGrid. This plays a vital role in rendering column values in the required format.
 The treegrid operations such as sorting, filtering and searching etc. are performed based on column definitions. The [`field`](../../api/treegrid/column#field) property of the [`columns`](../../api/treegrid#column)

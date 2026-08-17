@@ -1,14 +1,14 @@
----
+﻿---
 layout: post
-title: Globalization in Angular Pivotview component | Syncfusion
-description: Learn here all about Globalization and localization in Syncfusion Angular Pivotview component of Syncfusion Essential JS 2 and more.
-platform: grid-sdk
-control: Globalization and localization 
+title: Globalization and Localization in Angular Pivot Table | Syncfusion
+description: Learn how the Angular Pivot Table localizes culture, date, number, and currency formats with locale and L10n resources.
+platform: ej2-angular
+control: Pivot Table 
 documentation: ug
-domainurl: https://help.syncfusion.com/grid-sdk
+domainurl: ##DomainURL##
 ---
 
-# Globalization and localization in Angular Pivotview component
+# Globalization and Localization in Angular Pivot Table
 
 The Pivot Table helps users view and interact with data in their own language and regional format. This means users from different countries can easily read and understand the data because dates, numbers, and words are shown in a way that feels familiar to them.
 
@@ -28,7 +28,7 @@ For more details:
 
 Internationalization helps you display dates and numbers in the Pivot Table according to different cultural formats. This means users from various countries can view data in their familiar regional formats, making the component more user-friendly and accessible.
 
-The internationalization library uses official [`Unicode CLDR`](http://cldr.unicode.org/) JSON data to format and parse numbers, dates, and times. It also provides the `loadCldr` method to load culture-specific CLDR JSON data for your application.
+The internationalization library uses official [`Unicode CLDR`](http://cldr.unicode.org) JSON data to format and parse numbers, dates, and times. It also provides the `loadCldr` method to load culture-specific CLDR JSON data for your application.
 
 By default, all Syncfusion components use English culture ('en-US'). To use a different culture, follow these steps:
 

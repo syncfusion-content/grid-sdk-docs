@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Scrolling in TypeScript Treegrid control | Syncfusion
-description: Learn here all about Scrolling in Syncfusion TypeScript Treegrid control of Syncfusion Essential JS 2 and more.
+title: TypeScript TreeGrid Scrolling | Syncfusion
+description: Learn how to configure scrolling in TypeScript TreeGrid, including responsive sizing, sticky headers, scroll-to-row, and scrollbar options.
 platform: grid-sdk
 control: Scrolling 
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Scrolling in TypeScript Treegrid control
+# Scrolling in TypeScript TreeGrid
 
 The scrollbar will be displayed in the treegrid when content exceeds the element [`width`](../api/treegrid#width) or [`height`](../api/treegrid#height). The vertical and horizontal scrollbars will be displayed based on the following criteria:
 

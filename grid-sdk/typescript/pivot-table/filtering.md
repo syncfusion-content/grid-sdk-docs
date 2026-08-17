@@ -1,17 +1,17 @@
 ---
 layout: post
-title: Filtering in TypeScript Pivot Table component | Syncfusion
-description: Learn here all about Filtering in Syncfusion TypeScript Pivot Table component of Syncfusion Essential JS 2 and more.
-platform: grid-sdk
-control: Filtering 
-publishingplatform: grid-sdk
+title: Filtering in ##Platform_Name## Pivot Table | Syncfusion
+description: Learn how the ##Platform_Name## Pivot Table filters data using member, label, and value filters applied through the Field List, Grouping Bar, or code-behind.
+platform: ej2-javascript
+control: Filtering
+publishingplatform: ##Platform_Name##
 documentation: ug
-domainurl: https://help.syncfusion.com/grid-sdk
+domainurl: ##DomainURL##
 ---
 
 <!-- markdownlint-disable MD012 -->
 
-# Filtering in TypeScript Pivot Table component
+# Filtering in ##Platform_Name## Pivot Table
 
 Filtering helps you focus on specific data by showing only the records you need in the Pivot Table. This allows you to analyze relevant information more effectively by including or excluding specific members through the user interface or programmatically.
 

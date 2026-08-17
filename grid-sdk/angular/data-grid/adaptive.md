@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Angular Grid - Adaptive | Syncfusion
-description: Angular Grid adaptive explains responsive behavior, layout adjustments, and configuration to optimize grid usability on mobile and small screens with examples.
+title: Angular Grid Adaptive UI Customization | Syncfusion
+description: Learn how to customize adaptive UI in Angular Data Grid with responsive dialogs, vertical row rendering, mobile-friendly layouts, and small-screen optimization.
 platform: grid-sdk
 control: Adaptive 
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Adaptive in Angular Grid Component
+# Adaptive UI in Angular Data Grid
 
 The Grid user interface (UI) was redesigned to provide an optimal viewing experience and improve usability on small screens. This interface will render the filter, sort, column chooser, column menu(supports only when the `rowRenderingMode` as Horizontal) and edit dialogs adaptively and have an option to render the grid row elements in the vertical direction.
 
@@ -22,15 +22,15 @@ The following sample demonstrates to enable adaptive dialogs in the Syncfusion A
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid-sdk/angular/data-grid/angular/data-grid/angular/data-grid/adaptive-cs1/src/app.component.ts %}
+{% include code-snippet/grid-sdk/angular/grid/adaptive-cs1/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid-sdk/angular/data-grid/angular/data-grid/angular/data-grid/adaptive-cs1/src/main.ts %}
+{% include code-snippet/grid-sdk/angular/grid/adaptive-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/help.syncfusion.com/samples/grid-sdk/angular/data-grid/help.syncfusion.com/samples/grid-sdk/angular/data-grid/adaptive-cs1" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/adaptive-cs1" %}
 
 ## Vertical row rendering
 
@@ -87,7 +87,7 @@ import { ChangeEventArgs } from '@syncfusion/ej2-dropdowns';
         </div>
         </div>
         <br />
-        <div class="datalink">Source: <a href="https://en.wikipedia.org/wiki/List_of_Android_smartphones"target="_blank">Wikipedia: List of Android smartphones</a></div>
+        <div class="datalink">Source: <a href="https://en.wikipedia.org/wiki/List_of_Android_smartphones"target="_blank" aria-label="Android smartphones on Wikipedia">Wikipedia: List of Android smartphones</a></div>
     </div>`
 })
 
@@ -135,11 +135,11 @@ export class AppComponent implements OnInit {
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid-sdk/angular/data-grid/angular/data-grid/angular/data-grid/adaptive-cs2/src/main.ts %}
+{% include code-snippet/grid-sdk/angular/grid/adaptive-cs2/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/help.syncfusion.com/samples/grid-sdk/angular/data-grid/help.syncfusion.com/samples/grid-sdk/angular/data-grid/adaptive-cs2" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/adaptive-cs2" %}
 
 > The [enableAdaptiveUI](https://ej2.syncfusion.com/angular/documentation/api/grid#enableadaptiveui) property must be enabled for vertical row rendering to function properly.
 
@@ -245,11 +245,11 @@ export class AppComponent implements OnInit {
 {% endraw %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid-sdk/angular/data-grid/angular/data-grid/angular/data-grid/adaptive-cs3/src/main.ts %}
+{% include code-snippet/grid-sdk/angular/grid/adaptive-cs3/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/help.syncfusion.com/samples/grid-sdk/angular/data-grid/help.syncfusion.com/samples/grid-sdk/angular/data-grid/adaptive-cs3" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/adaptive-cs3" %}
 
 
 ## See Also

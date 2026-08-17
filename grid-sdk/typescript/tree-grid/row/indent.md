@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Indent in TypeScript Treegrid control | Syncfusion
-description: Learn here all about Indent in Syncfusion TypeScript Treegrid control of Syncfusion Essential JS 2 and more.
+title: TypeScript TreeGrid Indent and Outdent | Syncfusion
+description: Learn how to indent and outdent rows in TypeScript TreeGrid to modify hierarchical relationships and manage parent-child records.
 platform: grid-sdk
 control: Indent 
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Indent in TypeScript Treegrid control
+# Indent and Outdent in TypeScript TreeGrid
 
 The Indent and Outdent feature will help to change the hierarchy level of rows in tree grid. The indent action moves the selected row as the last child of its previous row, whereas the outdent action moves the selected row as a sibling to its parent row.
 

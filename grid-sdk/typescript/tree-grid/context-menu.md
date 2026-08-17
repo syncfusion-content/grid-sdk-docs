@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Context menu in TypeScript Treegrid control | Syncfusion
-description: Learn here all about Context menu in Syncfusion TypeScript Treegrid control of Syncfusion Essential JS 2 and more.
+title: TypeScript TreeGrid Context Menu | Syncfusion
+description: Learn how to customize the context menu in TypeScript TreeGrid, including custom items, dynamic enable/disable options, and API integration.
 platform: grid-sdk
 control: Context menu 
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Context menu in TypeScript Treegrid control
+# Context Menu in TypeScript TreeGrid
 
 The TreeGrid has options to show the context menu when right clicked on it. To enable this feature, you need to define either default or custom item in the [`contextMenuItems`](../api/treegrid#contextmenuitems).
 

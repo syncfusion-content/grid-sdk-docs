@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Exporting Tree Grid in Server in Syncfusion TypeScript Tree Grid Component
-description: Learn here all about Exporting Tree Grid in Server in Syncfusion TypeScript Tree Grid Component of Syncfusion Essential JS 2 and more.
+title: TypeScript TreeGrid Server-Side Export | Syncfusion
+description: Learn how to perform server-side exports in TypeScript TreeGrid, including Excel and CSV export, server configuration, and header rotation.
 platform: grid-sdk
 control: Exporting TreeGrid in Server
 documentation: ug
 ---
 
 
-# Exporting Tree Grid in Server
+# Server-Side Export in TypeScript TreeGrid
 
 The Tree Grid have an option to export the data to Excel in server side using tree grid server export library.
 

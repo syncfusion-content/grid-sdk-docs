@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Global local in JavaScript Treegrid control | Syncfusion
-description: Learn here all about Global local in Syncfusion JavaScript Treegrid control of Syncfusion Essential JS 2 and more.
+title: JavaScript TreeGrid Global Localization | Syncfusion
+description: Learn how to implement global localization in JavaScript TreeGrid, including internationalization, localization, and RTL language support.
 platform: grid-sdk
 control: Global local 
 publishingplatform: grid-sdk
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Global local in JavaScript Treegrid control
+# Global Localization in JavaScript TreeGrid
 
 ## Localization
 

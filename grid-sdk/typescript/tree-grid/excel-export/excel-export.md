@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Excel export in TypeScript Treegrid control | Syncfusion
-description: Learn here all about Excel export in Syncfusion TypeScript Treegrid control of Syncfusion Essential JS 2 and more.
+title: TypeScript TreeGrid Excel Export | Syncfusion
+description: Learn how to export data from TypeScript TreeGrid to Excel, including export customization, selected records, and advanced export options.
 platform: grid-sdk
 control: Excel export 
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Excel export in TypeScript Treegrid control
+# Excel Export in TypeScript TreeGrid
 
 The excel export allows exporting TreeGrid data to Excel document. You need to use the [`excelExport`](../../api/treegrid#excelexport) method for exporting. To enable Excel export in the treegrid, set the [`allowExcelExport`](../../api/treegrid#allowexcelexport-boolean) as true.
 

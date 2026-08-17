@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Custom tool bar in Vue Grid component | Syncfusion
-description: Learn here all about Custom tool bar in Syncfusion Vue Grid component of Syncfusion Essential JS 2 and more.
+title: Vue Grid Custom Toolbar | Syncfusion
+description: Learn how to create a custom toolbar in Vue Data Grid with templates, custom components, interactive controls, and custom toolbar actions.
 control: Custom tool bar 
 platform: grid-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Custom toolbar in Vue Grid component
+# Custom Toolbar in Vue Data Grid
 
 Custom toolbar in [Vue Data Grid](https://www.syncfusion.com/vue-components/vue-grid) allows you to create a distinctive toolbar layout, style, and functionality that aligns with the specific needs of your application, providing a personalized experience within the Grid component.
 

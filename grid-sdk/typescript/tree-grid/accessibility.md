@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Accessibility in TypeScript Treegrid control | Syncfusion
-description: Learn here all about Accessibility in Syncfusion TypeScript Treegrid control of Syncfusion Essential JS 2 and more.
+title: TypeScript TreeGrid Accessibility | Syncfusion
+description: Learn how TypeScript TreeGrid supports accessibility with WAI-ARIA roles, keyboard navigation, and ADA, Section 508, and WCAG compliance.
 platform: grid-sdk
 control: Accessibility 
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Accessibility in TypeScript Treegrid control
+# Accessibility in TypeScript TreeGrid
 
 The Tree Grid component followed the accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria#roles) that are commonly used to evaluate accessibility.
 

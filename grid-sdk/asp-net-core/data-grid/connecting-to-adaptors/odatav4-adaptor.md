@@ -1,7 +1,7 @@
 ---
 layout: post
-title: ODataV4Adaptor in Syncfusion ASP.NET Core Grid
-description: Learn here all about Bind data and perform CRUD action with ODataV4Adaptor in Syncfusion ASP.NET Core Grid of Syncfusion Essential JS 2 and more.
+title: ASP.NET Core Grid Bind Data with ODataV4Adaptor | Syncfusion
+description: Learn how to use ODataV4Adaptor in ASP.NET Core Data Grid to bind OData services, perform CRUD operations, and manage remote data efficiently.
 platform: grid-sdk
 control: Grid
 keywords: Adaptors, ODataV4Adaptor, ODataV4 adaptor, remotedata 
@@ -9,7 +9,7 @@ publishingplatform: grid-sdk
 documentation: ug
 ---
 
-# ODataV4Adaptor in Syncfusion ASP.NET Core Grid 
+# Connect ASP.NET Core Data Grid to OData V4 Services
 
 The `ODataV4Adaptor` in the Syncfusion ASP.NET Core Grid allows seamless integration of the Grid with OData v4 services, enabling efficient data fetching and manipulation. This guide provides detailed instructions on binding data and performing CRUD (Create, Read, Update, Delete) actions using the `ODataV4Adaptor` in your Grid.
 

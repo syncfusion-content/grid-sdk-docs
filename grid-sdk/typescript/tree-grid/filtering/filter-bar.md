@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Filter bar in TypeScript Treegrid control | Syncfusion
-description: Learn here all about Filter bar in Syncfusion TypeScript Treegrid control of Syncfusion Essential JS 2 and more.
+title: TypeScript TreeGrid Filter Bar | Syncfusion
+description: Learn how to use the filter bar in TypeScript TreeGrid, including column filtering, filter operators, and custom filter behavior.
 platform: grid-sdk
 control: Filter bar 
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Filter bar in TypeScript Treegrid control
+# Filter Bar in TypeScript TreeGrid
 
 By setting the [`allowFiltering`](../../api/treegrid#allowfiltering) to true, the filter bar row will render next to the header, which allows you to filter data. You can filter the records with different expressions depending upon the column type.
 

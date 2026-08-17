@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Dialog Editing in Syncfusion ASP.NET Core Grid Component
-description: Learn here all about Dialog Editing in Syncfusion ASP.NET Core Grid component of Syncfusion Essential JS 2 and more.
+title: ASP.NET Core Grid Dialog Editing | Syncfusion
+description: ASP.NET Core Grid dialog editing opens record editors in modal dialogs, supports templates, enforces validation, and manages single-record save workflows.
 platform: grid-sdk
 control: Dialog Editing
 publishingplatform: grid-sdk
 documentation: ug
 ---
 
-# Dialog editing in ASP.NET Core Grid component
+# Dialog Editing in ASP.NET Core Data Grid
 
 Dialog editing is a feature in the Grid component that allows you to edit the data of the currently selected row using a dialog window. With dialog editing, you can easily modify cell values and save the changes back to the data source.This feature is particularly beneficial in scenarios where you need to quickly modify data without navigating to a separate page or view, and it streamlines the process of editing multiple cells.
 

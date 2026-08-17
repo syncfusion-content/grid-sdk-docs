@@ -1,14 +1,13 @@
 ---
 layout: post
-title: Angular Grid - Excel Export Options | Syncfusion
-description: Angular Grid Excel export supports custom content, record/column selection, styles, themes, grouping, and advanced Excel output customization.
-control: Excel export options 
+title: Angular Grid Excel Export Options | Syncfusion
+description: Learn how to export Angular Data Grid into Excel with custom content, record and column selection, styles, themes, grouping, and advanced export options. 
 platform: grid-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Excel Export Options in Angular Grid Component
+# Excel Export Options in Angular Data Grid
 
 The [Angular Data Grid](https://www.syncfusion.com/angular-components/angular-data-grid) component provides powerful Excel and CSV export customization options. This flexibility enables precise control over exported content and layout, ensuring the output meets specific business requirements and presentation standards.
 

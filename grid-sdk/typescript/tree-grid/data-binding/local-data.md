@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Local data in TypeScript Treegrid control | Syncfusion
-description: Learn here all about Local data in Syncfusion TypeScript Treegrid control of Syncfusion Essential JS 2 and more.
+title: TypeScript TreeGrid Local Data | Syncfusion
+description: Learn to bind local data to TypeScript TreeGrid with support for hierarchical and self-referential (flat) data structures.
 platform: grid-sdk
 control: Local data 
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Local data in TypeScript Treegrid control
+# Local Data in TypeScript TreeGrid
 
 In Local Data binding, data source for rendering the TreeGrid control is retrieved from the same application locally.
 

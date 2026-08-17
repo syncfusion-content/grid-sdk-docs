@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Remote data in Angular TreeGrid component | Syncfusion
-description: Learn how to bind remote data in the Syncfusion Angular TreeGrid component, including load on demand, paging, virtualization, adaptors, and error handling.
+title: Angular TreeGrid Remote Data | Syncfusion
+description: Learn how to bind remote data in the Angular TreeGrid, including load on demand, paging, virtualization, adaptors, and error handling.
 platform: grid-sdk
 control: Remote data
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Remote data in Angular TreeGrid component
+# Remote Data in Angular TreeGrid
 
 To bind remote data to the TreeGrid component, assign a `DataManager` instance as the [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#datasource) property. To interact with a remote data source, provide the service endpoint `url` and define the [`hasChildMapping`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#haschildmapping) property of the TreeGrid.
 

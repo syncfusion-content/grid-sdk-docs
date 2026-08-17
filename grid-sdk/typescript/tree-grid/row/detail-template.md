@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Detail template in TypeScript Treegrid control | Syncfusion
-description: Learn here all about Detail template in Syncfusion TypeScript Treegrid control of Syncfusion Essential JS 2 and more.
+title: TypeScript TreeGrid Detail Template | Syncfusion
+description: Learn how to use detail templates in TypeScript TreeGrid to display expandable row content, nested data, and custom detail views.
 platform: grid-sdk
 control: Detail template 
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Detail template in TypeScript Treegrid control
+# Detail Template in TypeScript TreeGrid
 
 The detail template provides additional information about a particular row. By expanding the parent row the child rows are expanded along with their detail template. The [`detailTemplate`](../../api/treegrid#detailtemplate) property accepts either the template string or HTML element ID.
 

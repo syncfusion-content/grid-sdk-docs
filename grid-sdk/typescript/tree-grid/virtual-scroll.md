@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Virtual scroll in TypeScript Treegrid control | Syncfusion
-description: Learn here all about Virtual scroll in Syncfusion TypeScript Treegrid control of Syncfusion Essential JS 2 and more.
+title:  TypeScript TreeGrid Virtual Scrolling | Syncfusion
+description: Learn how to use virtual scrolling in TypeScript TreeGrid for large datasets, including row and column virtualization and performance optimization.
 platform: grid-sdk
 control: Virtual scroll 
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Virtual scroll in TypeScript Treegrid control
+# Virtual Scrolling in TypeScript TreeGrid
 
 TreeGrid allows you to load large amount of data without performance degradation.
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Print in TypeScript Treegrid control | Syncfusion
-description: Learn here all about Print in Syncfusion TypeScript Treegrid control of Syncfusion Essential JS 2 and more.
+title: TypeScript TreeGrid Print | Syncfusion
+description: Learn how to print TypeScript TreeGrid, including toolbar integration, page setup, column visibility settings, and print customization options.
 platform: grid-sdk
 control: Print 
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Print in TypeScript Treegrid control
+# Print in TypeScript TreeGrid
 
 To print the TreeGrid, use the [`print`](../api/treegrid#print) method from treegrid instance. The print option can be displayed on the [`toolbar`](../api/treegrid#toolbar) by adding the `print` toolbar item.
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Drill through in Angular Pivotview component | Syncfusion
-description: Learn here all about Drill through in Syncfusion Angular Pivotview component of Syncfusion Essential JS 2 and more.
-platform: grid-sdk
-control: Drill through 
+title: Drill Through in Angular Pivot Table | Syncfusion
+description: Learn how the Angular Pivot Table drill-through shows the raw, unaggregated rows behind any aggregated cell in a popup data grid.
+platform: ej2-angular
+control: Pivot Table
 documentation: ug
-domainurl: https://help.syncfusion.com/grid-sdk
+domainurl: ##DomainURL##
 ---
 
-# Drill through in Angular Pivotview component
+# Drill Through in Angular Pivot Table
 
 The drill-through feature in the Pivot Table component allows users to view the raw, unaggregated data behind any aggregated cell in the pivot table. To enable this feature, set the [`allowDrillThrough`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/index-default#allowdrillthrough) property to **true**. By double-clicking an aggregated cell, users can view its detailed raw data in a data grid displayed in a new window. The new window shows the row header, column header, and measure name of the selected cell at the top. Additionally, users can include or exclude fields available in the data grid using the column chooser option.
 
@@ -48,7 +48,7 @@ Below is an example of enabling drill-through with a pivot chart:
 
 > This property is applicable only for the OLAP data source.
 
-The [`maxRowsInDrillThrough`](https://ej2.syncfusion.com/react/documentation/api/pivotview/index-default#maxrowsindrillthrough) property specifies the maximum number of rows to be returned during a drill-through operation. By default, this property is set to **"10000"**, meaning that if it is not explicitly defined, up to 10,000 rows will be returned.
+The [`maxRowsInDrillThrough`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/index-default#maxrowsindrillthrough) property specifies the maximum number of rows to be returned during a drill-through operation. By default, this property is set to **10000**, meaning that if it is not explicitly defined, up to 10,000 rows will be returned.
 
 ```typescript
 import { Component } from '@angular/core';
@@ -112,7 +112,7 @@ export class AppComponent {
 }
 ```
 
-![output](images/maxrows.png)
+![output](../images/maxrows.png)
 
 ## Events
 
@@ -123,11 +123,11 @@ The [`drillThrough`](https://ej2.syncfusion.com/angular/documentation/api/pivotv
 - [`columnHeaders`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/drillthrougheventargs#columnheaders): Contains the column header of the clicked cell.
 - [`currentCell`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/drillthrougheventargs#currentcell): Contains details about the clicked cell.
 - [`currentTarget`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/drillthrougheventargs#currenttarget): Contains the HTML element of the clicked cell.
-- [`gridColumns`]https://ej2.syncfusion.com/angular/documentation/api/pivotview/drillthrougheventargs#gridcolumns): Specifies the data grid columns to be displayed in the drill-through popup.
+- [`gridColumns`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/drillthrougheventargs#gridcolumns): Specifies the data grid columns to be displayed in the drill-through popup.
 - [`rawData`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/drillthrougheventargs#rawdata): Contains the raw, unaggregated data for the clicked cell.
 - [`rowHeaders`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/drillthrougheventargs#rowheaders): Contains the row header of the clicked cell.
 - [`value`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/drillthrougheventargs#value): Contains the value of the clicked cell.
-- [`cancel`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/drillthrougheventargs#cancel): It is a boolean property and by setting this to **true**, dialog won’t be created.
+- [`cancel`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/drillthrougheventargs#cancel): A Boolean property. When set to `true`, the drill-through dialog is not created.
 
 Below is an example of using the [`drillThrough`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/index-default#drillthrough) event in a pivot table:
 
@@ -148,7 +148,7 @@ Below is an example of using the [`drillThrough`](https://ej2.syncfusion.com/ang
 The event [`beginDrillThrough`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/index-default#begindrillthrough) triggers after a double-click on a value cell in the pivot table and fires right after the data grid is initialized in the drill-through popup. This event allows users to interact with the data grid, which displays the raw data behind the aggregated value cell. Users can perform operations such as [`sorting`](https://ej2.syncfusion.com/angular/documentation/grid/sorting), [`grouping`](https://ej2.syncfusion.com/angular/documentation/grid/grouping/grouping), and [`filtering`](https://ej2.syncfusion.com/angular/documentation/grid/filtering/filtering) within the data grid according to their specific needs. The event includes the following parameters:
 
 * [`gridObj`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/begindrillthrougheventargs#gridobj) - It holds the data grid instance to be rendered inside the drill-through popup.
-* [`cellInfo`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/begindrillthrougheventargs#cellinfo) - Gives details about the clicked cell, including rawData (unaggregated data), rowHeaders, columnHeaders, and value.
+* [`cellInfo`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/begindrillthrougheventargs#cellinfo) - Gives details about the clicked cell, including `rawData` (unaggregated data), `rowHeaders`, `columnHeaders`, and `value`.
 
 The following example demonstrates how to enable [`sorting`](https://ej2.syncfusion.com/angular/documentation/grid/sorting), [`filtering`](https://ej2.syncfusion.com/angular/documentation/grid/filtering/filtering), and [`grouping`](https://ej2.syncfusion.com/angular/documentation/grid/grouping/grouping) in the data grid displayed within the drill-through popup. This is achieved by configuring the [`gridObj`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/begindrillthrougheventargs#gridobj) in the [`beginDrillThrough`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/index-default#begindrillthrough) event.
 

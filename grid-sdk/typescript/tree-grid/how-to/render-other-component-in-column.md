@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Render other component in column in TypeScript Treegrid control | Syncfusion
-description: Learn here all about Render other component in column in Syncfusion TypeScript Treegrid control of Syncfusion Essential JS 2 and more.
+title: TypeScript TreeGrid Custom Component Rendering | Syncfusion
+description: Learn how to render custom components in columns using the template property of the TypeScript TreeGrid.
 platform: grid-sdk
 control: Render other component in column 
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Render other component in column in TypeScript Treegrid control
+# Render Custom Components in TypeScript TreeGrid Columns
 
 You can render any components in a Tree Grid column using the template property.
 

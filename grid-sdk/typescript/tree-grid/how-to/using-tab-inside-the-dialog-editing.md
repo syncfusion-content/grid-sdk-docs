@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Using tab inside the dialog editing in TypeScript Treegrid control | Syncfusion
-description: Learn here all about Using tab inside the dialog editing in Syncfusion TypeScript Treegrid control of Syncfusion Essential JS 2 and more.
+title: TypeScript TreeGrid Tabs in Dialog Editing | Syncfusion
+description: Learn how to use tabs within dialog editing in TypeScript TreeGrid to organize form fields and create a streamlined editing experience.
 platform: grid-sdk
 control: Using tab inside the dialog editing 
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Using tab inside the dialog editing in TypeScript Treegrid control
+# Using Tabs Inside Dialog Editing in TypeScript TreeGrid
 
 You can use [`tab`](../../../tab) component inside dialog edit UI using dialog template feature. The dialog template feature can be enabled by defining [`editSettings.mode`](../api/treegrid/editSettings#mode) as `Dialog` and [`editSetting.template`](../api/treegrid/editSettings#template) as SCRIPT element ID or HTML string which holds the template.
 

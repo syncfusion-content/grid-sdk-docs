@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Column spanning in TypeScript TreeGrid control | Syncfusion
-description: Learn here all about Column spanning in Syncfusion TypeScript TreeGrid control of Syncfusion Essential JS 2 and more.
+title: TypeScript TreeGrid Column Spanning | Syncfusion
+description: Learn how to configure column spanning in TypeScript TreeGrid, including merging cells and customizing column layouts.
 platform: grid-sdk
 control: Column spanning 
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Column spanning in TypeScript TreeGrid control
+# Column Spanning in TypeScript TreeGrid
 
 The column spanning feature in the Syncfusion<sup style="font-size:70%">&reg;</sup> TreeGrid allows merging adjacent cells horizontally, creating a visually appealing and informative layout. By defining the `colSpan` attribute in the [queryCellInfo](https://ej2.syncfusion.com/documentation/api/treegrid/index-default#querycellinfo) event, cells can be easily spanned and the appearance of the TreeGrid can be customized.
 

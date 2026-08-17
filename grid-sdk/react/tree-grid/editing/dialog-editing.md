@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Dialog editing in React TreeGrid component | Syncfusion
-description: Learn here all about Dialog editing in Syncfusion React TreeGrid component of Syncfusion Essential JS 2 and more.
+title: React TreeGrid Dialog Editing | Syncfusion
+description: Learn how to use dialog editing in React TreeGrid to edit records through customizable forms and perform CRUD operations.
 control: Dialog editing 
 platform: grid-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Dialog editing in React TreeGrid
+# Dialog Editing in React TreeGrid
 
 In dialog edit mode, starting an edit on the selected row displays the row data in a dialog. Modify the values and save the changes to the data source. Enable dialog edit by setting [editSettings.mode](https://ej2.syncfusion.com/react/documentation/api/treegrid/editSettingsModel/#mode) to **Dialog**.
 

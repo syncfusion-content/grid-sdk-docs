@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with ASP.NET MVC DataGrid Control | Syncfusion
-description: Checkout and learn about getting started with ASP.NET MVC DataGrid control of Syncfusion Essential JS 2 and more details.
+title: ASP.NET MVC Data Grid Getting Started (Quick Setup Guide) | Syncfusion
+description: Learn how to install and configure the ASP.NET MVC Data Grid. Set up a new ASP.NET MVC app and enable paging, sorting, filtering, and grouping.
 platform: grid-sdk
 control: Getting Started Mvc
 publishingplatform: grid-sdk
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Getting Started with ASP.NET MVC DataGrid Control
+# Getting Started with ASP.NET MVC Data Grid Control
 
 This section briefly explains about how to include [ASP.NET MVC DataGrid](https://www.syncfusion.com/aspnet-mvc-ui-controls/grid) control in your ASP.NET MVC application using Visual Studio.
 
