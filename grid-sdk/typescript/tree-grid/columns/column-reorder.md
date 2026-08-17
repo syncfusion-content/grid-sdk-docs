@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Column reorder in TypeScript Treegrid control | Syncfusion
-description: Learn here all about Column reorder in Syncfusion TypeScript Treegrid control of Syncfusion Essential JS 2 and more.
+title: TypeScript TreeGrid Column Reorder | Syncfusion
+description: Learn how to reorder columns in TypeScript TreeGrid using drag-and-drop functionality and customize column arrangement.
 platform: grid-sdk
 control: Column reorder 
 publishingplatform: grid-sdk
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Column reorder in TypeScript Treegrid control
+# Column Reorder in TypeScript TreeGrid
 
 Reordering can be done by drag and drop of a particular column header from one index to another index within the treegrid. To enable reordering, set the [`allowReordering`](../../api/treegrid/#allowreordering) to true.
 

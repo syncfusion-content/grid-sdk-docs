@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Sorting in JavaScript Treegrid control | Syncfusion
-description: Learn here all about Sorting in Syncfusion JavaScript Treegrid control of Syncfusion Essential JS 2 and more.
+title: JavaScript TreeGrid Sorting | Syncfusion
+description: Learn how to sort data in JavaScript TreeGrid, including single and multi-column sorting, custom sorting, and sort order configuration.
 platform: grid-sdk
 control: Sorting 
 publishingplatform: grid-sdk
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Sorting in JavaScript Treegrid control
+# Sorting in JavaScript TreeGrid
 
 Sorting enables you to sort data in the `Ascending` or `Descending` order.
 To sort a column, click the column header.

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Angular Grid - Microsoft SQL Server | Syncfusion
-description: Angular Grid Microsoft SQL Server integration supports using SQL Server queries and backend patterns to supply, manage, and update grid data.
+title: Angular Grid Microsoft SQL Server Integration | Syncfusion
+description: Learn how to connect Angular Data Grid to Microsoft SQL Server using ASP.NET Core Web API, execute SQL queries, and manage data efficiently.
 control: grid
 keywords: adaptors, customadaptor, microsoftSQL, remotedata  
 platform: grid-sdk
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Connecting SQL Server to Angular Grid Using ASP.NET Core Web API
+# Microsoft SQL Server Integration in Angular Data Grid
 
 The [Angular Data Grid](https://www.syncfusion.com/angular-components/angular-data-grid) supports binding data from a Microsoft SQL Server database through an ASP.NET Core Web API using ADO.NET SqlClient. This modern architecture provides a secure and scalable alternative to accessing the database directly from the client, while enabling efficient server‑side processing for paging, sorting, and filtering. By leveraging Angular for the UI and ASP.NET Core with SqlClient for data access, applications maintain a clear separation between presentation and data layers and retain full control over SQL Server interactions.
 
@@ -1438,7 +1438,7 @@ The following snippets assemble the final Angular Grid configuration used in the
     <e-column field="PublicTicketId" headerText="Ticket ID" width="130"
       textAlign="Right" [allowEditing]="false">
       <ng-template #template let-data>
-        <a class="status-text status-ticket-id">{{ data.PublicTicketId }}</a>
+        <a class="status-text status-ticket-id"  aria-label="Ticket ID {{ data.PublicTicketId }}">{{ data.PublicTicketId }}</a>
       </ng-template>
     </e-column>
     <e-column field="Title" headerText="Subject" width="280"

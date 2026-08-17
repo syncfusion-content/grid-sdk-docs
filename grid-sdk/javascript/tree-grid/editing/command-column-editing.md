@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Command column editing in JavaScript Treegrid control | Syncfusion
-description: Learn here all about Command column editing in Syncfusion JavaScript Treegrid control of Syncfusion Essential JS 2 and more.
+title: JavaScript TreeGrid Command Column Editing | Syncfusion
+description: Learn how to use command column editing in the JavaScript TreeGrid to add CRUD and custom action buttons for row-level operations.
 platform: grid-sdk
 control: Command column editing 
 publishingplatform: grid-sdk
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Command column editing in JavaScript Treegrid control
+# Command Column Editing in JavaScript TreeGrid
 
 The command column provides an option to add CRUD action buttons in a column. This can be defined by the [`column.commands`](../../api/treegrid/column/#commands) property.
 

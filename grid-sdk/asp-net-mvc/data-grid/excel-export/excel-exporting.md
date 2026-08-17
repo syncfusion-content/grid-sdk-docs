@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Excel Exporting in Syncfusion ASP.NET MVC Grid Component
-description: Learn here all about Excel Exporting in Syncfusion ASP.NET MVC Grid component of Syncfusion Essential JS 2 and more.
+title: ASP.NET MVC Grid Excel Export | Syncfusion
+description: Learn how to export ASP.NET MVC Data Grid data to Excel, create downloadable workbooks, and customize export settings for spreadsheets.
 platform: grid-sdk
 control: Excel Exporting
 publishingplatform: grid-sdk
 documentation: ug
 ---
 
-# Excel exporting in ASP.NET MVC Grid component 
+# Excel Export in ASP.NET MVC Data Grid
 
 The Excel or CSV exporting feature in the ASP.NET MVC Grid component allows you to export the Grid data to an Excel or CSV document. This can be useful when you need to share or analyze the data in a spreadsheet format.
 

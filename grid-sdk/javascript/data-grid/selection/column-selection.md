@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Column selection in JavaScript Grid control | Syncfusion
-description: Learn here all about Column selection in Syncfusion JavaScript Grid control of Syncfusion Essential JS 2 and more.
+title: Javascript Grid Column Selection | Syncfusion
+description: Learn how to select columns in Javascript Data Grid with selection APIs, column-level selection, keyboard interactions, and advanced column selection options.
 platform: grid-sdk
 control: Column selection 
 publishingplatform: grid-sdk
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Column selection in JavaScript Grid control
+# Column Selection in Javascript Data Grid
 
 Column selection in grid control allows you to select one or more columns using mouse interactions or arrow keys. This feature is useful when you want to highlight, manipulate, or perform actions on specific columns within the Grid.
 

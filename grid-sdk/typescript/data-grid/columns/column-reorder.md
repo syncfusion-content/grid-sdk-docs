@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Column reorder in TypeScript Grid control | Syncfusion
-description: Learn here all about Column reorder in Syncfusion TypeScript Grid control of Syncfusion Essential JS 2 and more.
+title: Typescript Grid Column Reorder | Syncfusion
+description: Learn how to reorder columns in Typescript Data Grid using drag-and-drop, configure reorder restrictions, handle reorder events, and persist column order.
 platform: grid-sdk
 control: Column reorder 
 publishingplatform: grid-sdk
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Column reorder in TypeScript Grid control
+# Column Reorder in Typescript Data Grid
 
 The TypeScript Grid control allows to reorder columns by drag and drop of a particular column header from one index to another index within the grid. This feature can be enabled by injecting the [Reorder](../../api/grid/reorder) module in the grid.
 

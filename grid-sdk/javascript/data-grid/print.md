@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Print in JavaScript Grid control | Syncfusion
-description: Learn here all about Print in Syncfusion JavaScript Grid control of Syncfusion Essential JS 2 and more.
+title: Javascript Grid Print | Syncfusion
+description: Learn how to print Javascript Data Grid content with print customization options, formatted layouts, and print-ready output for grid data.
 platform: grid-sdk
 control: Print 
 publishingplatform: grid-sdk
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Print in JavaScript Grid control
+# Print in Javascript Data Grid
 
 The printing feature in Syncfusion<sup style="font-size:70%">&reg;</sup> Grid allows you to easily generate and print a representation of the grid's content for better offline accessibility and documentation. You can enable this feature using either the grid's toolbar or the programmatically available `print` method.
 

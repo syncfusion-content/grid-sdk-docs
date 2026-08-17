@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Selection in TypeScript Grid control | Syncfusion
-description: Learn here all about Selection in Syncfusion TypeScript Grid control of Syncfusion Essential JS 2 and more.
+title: Typescript Grid Selection | Syncfusion
+description: Learn how to use selection in Typescript Data Grid with row, cell, and column selection modes, selection APIs, keyboard interactions, and selection events.
 platform: grid-sdk
 control: Selection 
 publishingplatform: grid-sdk
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Selection in TypeScript Grid control
+# Selection in Typescript Data Grid
 
 Selection in the Grid control allows you to interactively select specific cells, rows, or columns within the grid. This selection can be done through mouse clicks or arrow keys (up, down, left, and right) or touch. This feature is useful when you want to highlight, manipulate, or perform actions on specific cells, rows, or columns within the Grid.
 

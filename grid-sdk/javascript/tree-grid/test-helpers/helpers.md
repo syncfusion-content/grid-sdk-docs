@@ -1,14 +1,15 @@
 ---
 layout: post
-title: Helpers in JavaScript Treegrid control | Syncfusion
-description: Learn here all about Helpers in Syncfusion JavaScript Treegrid control of Syncfusion Essential JS 2 and more.
+title: JavaScript TreeGrid Helpers | Syncfusion
+description: Learn how to use helpers in JavaScript TreeGrid with practical examples and implementation guidance for common development scenarios.
 platform: grid-sdk
 control: Helpers 
 publishingplatform: grid-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
-# Helpers in JavaScript Treegrid control
+
+# Helpers in JavaScript TreeGrid
 
 Essential<sup style="font-size:70%">&reg;</sup> JS 2 components packages provide the testing helper APIs for testing the Essential<sup style="font-size:70%">&reg;</sup> JS 2 components. The following helper APIs are available for the Tree Grid component’s testing helpers in Essential<sup style="font-size:70%">&reg;</sup> JS 2.
 

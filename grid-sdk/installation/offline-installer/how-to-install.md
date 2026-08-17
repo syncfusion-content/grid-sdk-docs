@@ -2,7 +2,7 @@
 layout: post
 title: Installing Syncfusion Grid SDK Offline Installer - Syncfusion
 description: Learn how to install the Syncfusion Grid SDK offline installer after downloading it from the Syncfusion website.
-platform: Grid SDK
+platform: grid-sdk
 control: Installation and Deployment
 documentation: ug
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Edit in React TreeGrid component | Syncfusion
-description: Learn here all about Edit in Syncfusion React TreeGrid component of Syncfusion Essential JS 2 and more.
+title: React TreeGrid Edit | Syncfusion
+description: Learn how to edit data in React TreeGrid, including CRUD operations, editing modes, validation, and data update workflows.
 control: Edit 
 platform: grid-sdk
 documentation: ug

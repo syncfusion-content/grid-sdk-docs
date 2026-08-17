@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Loading animation in TypeScript Treegrid control | Syncfusion
-description: Learn here all about Loading animation in Syncfusion TypeScript Treegrid control of Syncfusion Essential JS 2 and more.
+title: TypeScript TreeGrid Loading Animation | Syncfusion
+description: Learn how to use loading animations in TypeScript TreeGrid, including spinner and shimmer indicators for improved loading experiences.
 platform: grid-sdk
 control: Loading animation 
 publishingplatform: grid-sdk
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Loading animation in TypeScript Treegrid control
+# Loading Animation in TypeScript TreeGrid
 
 The Tree Grid displays a loading indicator while the data is being fetched and bound to the tree grid during initial rendering, refreshing, and after performing any tree grid actions like sorting, paging and more.
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Data binding in TypeScript Treegrid control | Syncfusion
-description: Learn here all about Data binding in Syncfusion TypeScript Treegrid control of Syncfusion Essential JS 2 and more.
+title: TypeScript TreeGrid Data Binding | Syncfusion
+description: Learn about data binding in the TypeScript TreeGrid, covering local and remote data integration, expand state mapping, and best practices.
 platform: grid-sdk
 control: Data binding 
 publishingplatform: grid-sdk
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Data binding in TypeScript Treegrid control
+# Data Binding in TypeScript TreeGrid
 
 The TreeGrid uses `DataManager`, which supports both RESTful JSON data services binding and local JavaScript object array binding. The [`dataSource`](../../api/treegrid/#dataSource) property can be assigned either with the instance of `DataManager` or JavaScript object array collection.
 It supports two kinds of data binding method:

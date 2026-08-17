@@ -2,7 +2,7 @@
 layout: post
 title: Downloading Syncfusion Grid SDK Mac Installer - Syncfusion
 description: Learn how to download the Syncfusion Grid SDK Mac installer from the Syncfusion website with a license.
-platform: Grid SDK
+platform: grid-sdk
 control: Installation and Deployment
 documentation: ug
 --- 

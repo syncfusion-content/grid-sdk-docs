@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Custom aggregate in JavaScript Grid control | Syncfusion
-description: Learn here all about Custom aggregate in Syncfusion JavaScript Grid control of Syncfusion Essential JS 2 and more.
+title: Javascript Grid Custom Aggregate | Syncfusion
+description: Learn how to create custom aggregate functions in Javascript Data Grid to calculate and display custom summary values in aggregate rows.
 platform: grid-sdk
 control: Custom aggregate 
 publishingplatform: grid-sdk
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Custom aggregate in JavaScript Grid control
+# Custom Aggregate in Javascript Data Grid
 
 The custom aggregate feature in JavaScript Grid control allows you to calculate aggregate values using your own aggregate function. This feature can be useful in scenarios where the built-in aggregate functions do not meet your specific requirements. To use the custom aggregate option, follow the steps below:
 
