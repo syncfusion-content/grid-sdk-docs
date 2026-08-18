@@ -125,7 +125,7 @@ The following code demonstrates updating the data source and columns defined abo
 
 **2. Modify only the existing columns:**
 
-To modify existing columns in a grid, add or remove columns or replace the entire set of columns using the [changeDataSource](https://ej2.syncfusion.com/vue/documentation/api/grid/#changedatasource) method. To use this method, set the first parameter to "null" and provide the new columns as the second parameter. Note that if a column field is not specified in the `dataSource`, its corresponding column values will be empty. The following example illustrates modifying existing columns.
+To modify existing columns in a grid, add or remove columns or replace the entire set of columns using the [changeDataSource](https://ej2.syncfusion.com/vue/documentation/api/grid#changedatasource) method. To use this method, set the first parameter to "null" and provide the new columns as the second parameter. Note that if a column field is not specified in the `dataSource`, its corresponding column values will be empty. The following example illustrates modifying existing columns.
 
 The following code demonstrates adding new columns to existing grid columns "newColumn" by using the `changeDataSource` method.
 

@@ -49,7 +49,7 @@ The following example demonstrates, how to render hyperlink column in the Grid u
         <e-column field='FirstName' headerText='FirstName' width='120' :template="'columnTemplate'"></e-column>
       </e-columns>
       <template v-slot:columnTemplate="{ data }">
-        <a href="#" @click="onClick(data.FirstName)">{{ data.FirstName }}</a>
+        <a href="#" @click="onClick(data.FirstName)" aria-label="View FirstName">{{ data.FirstName }}</a>
       </template>
     </ejs-grid>
   </div>
@@ -90,7 +90,7 @@ const onClick = (firstName) => {
         <e-column field='FirstName' headerText='FirstName' width='120' :template="'columnTemplate'"></e-column>
       </e-columns>
       <template v-slot:columnTemplate="{data}">
-        <a href="#" @click="onClick(data.FirstName)">{{data.FirstName}}</a>
+        <a href="#" @click="onClick(data.FirstName)"  aria-label="View FirstName">{{data.FirstName}}</a>
       </template>
     </ejs-grid>
   </div>
@@ -435,7 +435,7 @@ The Vue Data Grid component allows you to dynamically add template columns at ru
 
 Dynamically adding template columns involves creating and inserting columns with custom templates after the grid has been initialized. This approach provides flexibility in presenting data in a highly customizable manner.
 
-The following example demonstrates how to add template column using external button click. In this example, the **ShipCountry** column with a [Dropdownlist](https://ej2.syncfusion.com/vue/documentation/drop-down-list/getting-started) is added in column [template](https://ej2.syncfusion.com/vue/documentation/api/grid/column#template), and an icon is displayed using the [headerTemplate](https://ej2.syncfusion.com/vue/documentation/api/grid/column#headertemplate) for the **ShipCountry** column. 
+The following example demonstrates how to add template column using external button click. In this example, the **ShipCountry** column with a [DropDownList](https://ej2.syncfusion.com/vue/documentation/drop-down-list/getting-started) is added in column [template](https://ej2.syncfusion.com/vue/documentation/api/grid/column#template), and an icon is displayed using the [headerTemplate](https://ej2.syncfusion.com/vue/documentation/api/grid/column#headertemplate) for the **ShipCountry** column. 
 
 
 {% tabs %}

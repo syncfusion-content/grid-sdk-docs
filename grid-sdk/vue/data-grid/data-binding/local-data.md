@@ -524,7 +524,7 @@ namespace SignalR.Server.Models
 
 The following screenshot represents the addition, editing, and deletion operations performed, reflecting changes across all client sides.
 
-![signalR](../../grid/images/signalR.gif)
+![signalR](../images/signalR.gif)
 
 > A complete SignalR sample is available on [GitHub](https://github.com/SyncfusionExamples/Binding-data-with-SignalR-in-ej2-vue-grid).
 
@@ -577,7 +577,7 @@ To achieve data binding and perform CRUD actions using Ajax requests in the Vue 
 </div>
 ```
 
-**Step 3:** To bind data from an external Fetch request, utilize the [dataSource](https://ej2.syncfusion.com/vue/documentation/api/grid/#datasource) property of the Grid. Fetch data from the server and provide it to the `dataSource` property using the `onSuccess` event of the Fetch request.
+**Step 3:** To bind data from an external Fetch request, utilize the [dataSource](https://ej2.syncfusion.com/vue/documentation/api/grid#datasource) property of the Grid. Fetch data from the server and provide it to the `dataSource` property using the `onSuccess` event of the Fetch request.
 
 ```ts
 click: function () {
@@ -1270,7 +1270,7 @@ namespace FetchProject.Server.Models
         
 The following screenshot represents loading data when the button is clicked and CRUD operations are performed:
 
-![Fetch](../../grid/images/fetch.gif)
+![Fetch](../images/fetch.gif)
 
 > A complete sample for binding data and performing CRUD actions through Fetch requests is available on [GitHub](https://github.com/SyncfusionExamples/Binding-data-and-perform-action-in-ej2-vue-grid-using-Fetch-request).
 
@@ -2059,7 +2059,7 @@ app.Run();
 
 The following screenshot represents loading data when the button is clicked and CRUD operations are performed:
 
-![Ajax](../../grid/images/Ajaxreq.gif)
+![Ajax](../images/Ajaxreq.gif)
 
 A complete sample for binding data and performing CRUD actions using AJAX requests is available on [GitHub](https://github.com/SyncfusionExamples/Binding-data-and-perform-action-in-ej2-vue-grid-using-Ajax-request).
 
@@ -2168,7 +2168,7 @@ Immutable mode in the Vue Data Grid is designed to optimize re-rendering perform
 
 Enable immutable mode by setting [enableImmutableMode](https://ej2.syncfusion.com/vue/documentation/api/grid/index-default#enableImmutableMode) to `true`.
 
-If immutable mode is enabled, when the datasource changes, only newly added rows are regenerated or reused. Consequently, the grid's [queryCellInfo](https://ej2.syncfusion.com/vue/documentation/api/grid/#querycellinfo) and [rowDataBound](https://ej2.syncfusion.com/vue/documentation/api/grid/#rowdatabound) events trigger only for newly generated rows, not for existing rows. 
+If immutable mode is enabled, when the datasource changes, only newly added rows are regenerated or reused. Consequently, the grid's [queryCellInfo](https://ej2.syncfusion.com/vue/documentation/api/grid#querycellinfo) and [rowDataBound](https://ej2.syncfusion.com/vue/documentation/api/grid#rowdatabound) events trigger only for newly generated rows, not for existing rows. 
 
 If immutable mode is not enabled, both newly added rows and existing rows are regenerated or reused when the datasource changes. As a result, the `rowDataBound` and `queryCellInfo` events trigger for both newly added and existing rows. 
 

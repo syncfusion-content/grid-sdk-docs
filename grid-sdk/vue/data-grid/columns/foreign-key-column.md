@@ -308,7 +308,7 @@ The following example demonstrates how to render foreign key values in a column 
         <e-column field="OrderDate" headerText="Order Date" textAlign="Right" type="date" format="yMd" width="120"></e-column>    
       </e-columns>
       <template v-slot:radioTemplate="{ data }">
-        <a href="javascript:void(0)" @click="navToAccount(data.OrderID,$event)">{{ data.foreignKeyData.ContactName }}</a>
+        <a href="javascript:void(0)" @click="navToAccount(data.OrderID,$event)" aria-label="View customer account details" >{{ data.foreignKeyData.ContactName }}</a>
       </template>
     </ejs-grid>
   </div>
@@ -354,7 +354,7 @@ provide('grid',  [ForeignKey]);
         <e-column field="OrderDate" headerText="Order Date" textAlign="Right" type="date" format="yMd" width="120"></e-column>    
       </e-columns>
       <template v-slot:radioTemplate="{ data }">
-        <a href="javascript:void(0)" @click="navToAccount(data.OrderID,$event)">{{ data.foreignKeyData.ContactName }}</a>
+        <a href="javascript:void(0)" @click="navToAccount(data.OrderID,$event)" aria-label="View customer account details">{{ data.foreignKeyData.ContactName }}</a>
       </template>
     </ejs-grid>
   </div>
