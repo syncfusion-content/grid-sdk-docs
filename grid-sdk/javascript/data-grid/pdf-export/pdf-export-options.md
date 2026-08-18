@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Javascript Grid PDF Export Options | Syncfusion
-description: Learn how to customize PDF export in Javascript Data Grid with page sizes, margins, styles, headers, footers, and advanced export settings.
+title: Pdf export options in JavaScript Grid control | Syncfusion
+description: Learn here all about Pdf export options in Syncfusion JavaScript Grid control of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Pdf export options 
 publishingplatform: grid-sdk
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# PDF Export Options in Javascript Data Grid
+# Pdf Export Options in JavaScript Grid control
 
 The JavaScript Grid control allows you to customize the PDF export options functionality. This flexibility enables you to have greater control over the exported content and layout to meet your specific requirements.
 

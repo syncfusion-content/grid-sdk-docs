@@ -1,14 +1,14 @@
 ---
 layout: post
-title: React TreeGrid Cells | Syncfusion
-description: Learn how to customize and format cells in React TreeGrid, including tooltips, styling, clip mode, autowrap, and cell templates.
+title: Cell in React TreeGrid component | Syncfusion
+description: Learn here all about Cell in Syncfusion React TreeGrid component of Syncfusion Essential JS 2 and more.
 control: Cell 
 platform: grid-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Cells in React TreeGrid
+# Cell in React TreeGrid 
 
 In the Syncfusion React TreeGrid, a cell represents the intersection of a row and column, displaying specific data values. Each cell can contain text, numbers, HTML content, or custom templates. The TreeGrid provides comprehensive options to customize cell appearance, behavior, and content rendering to create interactive and visually clear data presentations.
 

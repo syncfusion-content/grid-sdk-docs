@@ -1,7 +1,7 @@
 ---
 layout: post
-title: ASP.NET Core Grid Column Selection | Syncfusion
-description: Learn how to select columns in ASP.NET Core Data Grid with selection APIs, column-level selection, keyboard interactions, and advanced column selection options.
+title: Column Selection in ASP.NET Core Grid Component
+description: Learn here all about Column Selection in Syncfusion ASP.NET Core Grid component of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Column Selection
 publishingplatform: grid-sdk
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Column Selection in ASP.NET Core Data Grid
+# Column Selection in ASP.NET Core Grid component
 
 Column selection in grid component allows you to select one or more columns using mouse interactions or arrow keys. This feature is useful when you want to highlight, manipulate, or perform actions on specific columns within the Grid.
 

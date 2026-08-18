@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Blazor TreeGrid Column Template | Syncfusion
-description: Learn how to use column templates in Blazor TreeGrid to display custom content, apply conditional rendering, and enhance data presentation.
+title: Column Template in Blazor Tree Grid Component | Syncfusion®
+description: Checkout and learn here all about column template in the Blazor Tree Grid component and much more details.
 platform: grid-sdk
 control: Tree Grid
 documentation: ug
 ---
 
-# Column Template in Blazor TreeGrid
+# Column Template in Blazor Tree Grid
 
 N> Before adding column template to the tree grid, it is recommended to go through the [template](../templates) section topic to configure the template.
 

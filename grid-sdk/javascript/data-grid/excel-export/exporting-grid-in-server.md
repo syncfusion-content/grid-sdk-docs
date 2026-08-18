@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Javascript Grid Server-Side Excel Export | Syncfusion
-description: Learn how to export Javascript Data Grid data on the server, generate Excel workbooks in the backend, and handle large-scale exports efficiently.
+title: Exporting grid in server in JavaScript Grid control | Syncfusion
+description: Learn here all about Exporting grid in server in Syncfusion JavaScript Grid control of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Exporting grid in server 
 publishingplatform: grid-sdk
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Server-Side Excel Export in Javascript Data Grid
+# Exporting grid in server in JavaScript Grid control
 
 The Syncfusion<sup style="font-size:70%">&reg;</sup> Grid control in JavaScript provides a powerful option to export data to Excel on the server side using the Grid server export library. This allows you to perform Excel export operations on the server, providing additional security and flexibility. To enable server-side Excel exporting, you need to configure the server dependencies and implement the necessary server configuration.
 

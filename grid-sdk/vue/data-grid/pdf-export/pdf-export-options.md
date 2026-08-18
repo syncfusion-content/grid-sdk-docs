@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Vue Grid PDF Export Options | Syncfusion
-description: Learn how to customize PDF export in Vue Data Grid with page sizes, margins, styles, headers, footers, and advanced export settings.
+title: Pdf export options in Vue Grid component | Syncfusion
+description: Learn here all about Pdf export options in Syncfusion Vue Grid component of Syncfusion Essential JS 2 and more.
 control: Pdf export options 
 platform: grid-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# PDF Export Options in Vue Data Grid
+# Pdf export options in Vue Grid component
 
 The [Vue Data Grid](https://www.syncfusion.com/vue-components/vue-grid) component allows you to customize the PDF export options functionality. This flexibility enables you to have greater control over the exported content and layout to meet your specific requirements.
 

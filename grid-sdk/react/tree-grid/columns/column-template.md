@@ -1,14 +1,14 @@
 ---
 layout: post
-title: React TreeGrid Column Template | Syncfusion
-description: Learn how to use column templates in React TreeGrid to display custom content, images, buttons, and formatted data in cells.
+title: Column template in React TreeGrid component | Syncfusion
+description: Learn here all about Column template in Syncfusion React TreeGrid component of Syncfusion Essential JS 2 and more.
 control: Column template 
 platform: grid-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Column Template in React TreeGrid
+# Column template in React TreeGrid component
 
 The column [template](https://ej2.syncfusion.com/react/documentation/api/treegrid/column/#template) option renders custom content in place of a field value within a column.
 

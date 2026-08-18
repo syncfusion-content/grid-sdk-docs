@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Vue Grid Reactive Aggregate | Syncfusion
-description: Learn how to use reactive aggregates in Vue Data Grid to automatically update summary values when data is edited, added, or removed.
+title: Reactive aggregate in Vue Grid component | Syncfusion
+description: Learn here all about Reactive aggregate in Syncfusion Vue Grid component of Syncfusion Essential JS 2 and more.
 control: Reactive aggregate 
 platform: grid-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Reactive Aggregate in Vue Data Grid
+# Reactive aggregate in Vue Grid component
 
 The [Vue Data Grid](https://www.syncfusion.com/vue-components/vue-grid) component provides support for reactive aggregates, which allow you to update the aggregate values dynamically as the data changes. Reactive aggregates automatically recalculate their values when there are changes in the underlying data, providing real-time updates to the aggregate values in the grid.
 

@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Sorting in JavaScript Pivot Table component | Syncfusion
-description: Learn here all about Sorting in Syncfusion JavaScript Pivot Table component of Syncfusion Essential JS 2 and more.
-platform: grid-sdk
-control: Sorting 
-publishingplatform: grid-sdk
+title: Sorting in ##Platform_Name## Pivot Table | Syncfusion
+description: Learn how the ##Platform_Name## Pivot Table sorts field members in ascending or descending order via `enableSorting` and `sortSettings`.
+platform: ej2-javascript
+control: Sorting
+publishingplatform: ##Platform_Name##
 documentation: ug
-domainurl: https://help.syncfusion.com/grid-sdk
+domainurl: ##DomainURL##
 ---
 
-# Sorting in JavaScript Pivot Table component
+# Sorting in ##Platform_Name## Pivot Table
 
 ## Member Sorting
 

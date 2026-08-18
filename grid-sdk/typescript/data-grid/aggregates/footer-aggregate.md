@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Typescript Grid Footer Aggregate | Syncfusion
-description: Learn how to display and format footer aggregate values in Typescript Data Grid, apply summary calculations, and combine multiple aggregates.
+title: Footer aggregate in TypeScript Grid control | Syncfusion
+description: Learn here all about Footer aggregate in Syncfusion TypeScript Grid control of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Footer aggregate 
 publishingplatform: grid-sdk
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Footer Aggregate in Typescript Data Grid
+# Footer aggregate in TypeScript Grid control
 
 The TypeScript Grid control allows you to calculate and display aggregate values in the footer cells. The footer aggregate value is calculated from all the rows in the grid. You can use the [footerTemplate](../../api/grid/aggregateColumn#footertemplate) property to render the aggregate value in the footer cells.
 

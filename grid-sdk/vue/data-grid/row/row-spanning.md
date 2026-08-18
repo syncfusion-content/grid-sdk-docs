@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Vue Grid Row Spanning | Syncfusion
-description: Learn how to implement row spanning in Vue Data Grid using Syncfusion. Merge cells across rows, configure rowspan behavior, and create rich data layouts.
+title: Row spanning in Vue Grid component | Syncfusion
+description: Learn here all about Row spanning in Syncfusion Vue Grid component of Syncfusion Essential JS 2 and more.
 control: Row spanning 
 platform: grid-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Row Spanning in Vue Data Grid
+# Row spanning in Vue Grid component
 
 The [Vue Data Grid](https://www.syncfusion.com/vue-components/vue-grid) provides an option to span row cells, allowing you to merge two or more cells in a row into a single cell. This feature can be useful in scenarios where you want to display information that spans across multiple rows, but want to avoid repeating the same information in each row.
 

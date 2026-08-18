@@ -1,18 +1,18 @@
 ---
 layout: post
-title: CSS customization in Angular Pivot Table component | Syncfusion
-description: Learn here all about CSS customization in Syncfusion Angular Pivot Table component of Syncfusion Essential JS 2 and more.
-platform: grid-sdk
-control: CSS customization 
+title: Style and Appearance in Angular Pivot Table | Syncfusion
+description: Learn how the Angular Pivot Table styles row headers, column headers, value cells, and the field list with theme CSS overrides.
+platform: ej2-angular
+control: Pivot Table 
 documentation: ug
-domainurl: https://help.syncfusion.com/grid-sdk
+domainurl: ##DomainURL##
 ---
 
-# CSS customization in Angular Pivot Table component
+# Style and Appearance in Angular Pivot Table
 
 The Angular Pivot Table component provides extensive CSS customization options, allowing users to modify the visual appearance and layout of various pivot table elements. This includes styling row headers, column headers, value cells, summary cells, Field List components, and Grouping Bar areas to match application themes and design requirements.
 
-## Hiding Axis
+## Hiding axis
 
 The visibility of the row, column, value, and filter axis areas in both the Field List dialog and Grouping Bar can be controlled using custom CSS styling. Each axis area has specific CSS classes that allow precise targeting for customization.
 
@@ -40,7 +40,7 @@ The CSS selectors target the following Pivot Table elements:
 - `.e-group-columns`: Hides the column axis in the Grouping Bar.
 - `.e-group-filters`: Adjusts the height of the filter axis to compensate for the hidden column axis in the Grouping Bar.
 - `.e-field-list-columns`: Hides the column axis in the Field List dialog.
-- `.e-field-list-values`: Adjusts the layout of the values axis when the column section is hidden in the Field List dialog.
+- `.e-field-list-values`: Adjusts the layout of the value axis when the column section is hidden in the Field List dialog.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -54,9 +54,9 @@ The CSS selectors target the following Pivot Table elements:
   
 {% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/css-custom-cs1" %}
 
-## Text Alignment
+## Text alignment
 
-The alignment of text inside row headers, column headers, value cells, and summary cells can be customized using CSS styling. The following example demonstrates how to center-align text in value cells:
+The alignment of text inside row headers, column headers, value cells, and summary cells can be customized using CSS styling. The following example demonstrates how to center-align text in value cells (additional selectors for column headers, row headers, and summary cells are included as commented CSS in the sample):
 
 ```css
 .e-pivotview .e-valuecontent {
@@ -76,9 +76,9 @@ The alignment of text inside row headers, column headers, value cells, and summa
   
 {% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/text-align-cs1" %}
 
-## Customize header, value and summary cell styles
+## Customize header, value, and summary cell styles
 
-The Pivot Table component elements including header cells, value cells, and summary cells can be styled using built-in CSS class names. This enables comprehensive visual customization of the component's appearance to match application themes and design requirements.
+Pivot Table elements such as header cells, value cells, and summary cells can be styled using built-in CSS class names. This enables comprehensive visual customization of the component's appearance to match application themes and design requirements.
 
 The following code sample demonstrates how to apply custom background colors to different cell types:
 
@@ -96,11 +96,11 @@ The following code sample demonstrates how to apply custom background colors to 
     background-color: greenyellow !important; 
 }
 ```
-The CSS classes target the following PivotView elements:
-- `.e-headercell`: Styles column header cells
-- `.e-rowsheader`: Styles row header cells  
-- `.e-summary:not(.e-gtot)`: Styles subtotal summary cells (excluding grand totals)
-- `.e-gtot`: Styles grand total cells
+The CSS classes target the following Pivot Table elements:
+- `.e-headercell`: Styles column header cells.
+- `.e-rowsheader`: Styles row header cells.
+- `.e-summary:not(.e-gtot)`: Styles subtotal summary cells (excluding grand totals).
+- `.e-gtot`: Styles grand total cells.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

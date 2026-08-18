@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Vue Grid Selection | Syncfusion
-description: Learn how to use selection in Vue Data Grid with row, cell, and column selection modes, selection APIs, keyboard interactions, and selection events.
+title: Selection in Vue Grid component | Syncfusion
+description: Learn here all about Selection in Syncfusion Vue Grid component of Syncfusion Essential JS 2 and more.
 control: Selection 
 platform: grid-sdk
 documentation: ug

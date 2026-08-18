@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Javascript Grid Server Data Persistence | Syncfusion
-description: Learn how to persist Javascript Data Grid changes to a server, send CRUD requests, handle server responses, and synchronize data using adaptors.
+title: Persisting data in server in JavaScript Grid control | Syncfusion
+description: Learn here all about Persisting data in server in Syncfusion JavaScript Grid control of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Persisting data in server 
 publishingplatform: grid-sdk
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Server Data Persistence in Javascript Data Grid
+# Persisting data in server in JavaScript Grid component
 
 The Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript  Grid component allows data edited within the grid to be persisted in a database using RESTful web services. All CRUD (Create, Read, Update, Delete) operations within the grid are handled by the [DataManager](../../data), which can bind server-side data and send updates to the server. This capability is Essential<sup style="font-size:70%">&reg;</sup> for maintaining data integrity and ensuring that changes made in the UI are reflected in the backend.
 

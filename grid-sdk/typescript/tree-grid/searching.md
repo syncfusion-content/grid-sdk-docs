@@ -3,17 +3,16 @@ layout: post
 title: TypeScript TreeGrid Searching | Syncfusion
 description: Learn how to enable and customize searching in TypeScript TreeGrid, including search settings, operators, column-specific search, and advanced options.
 platform: grid-sdk
-control: Searching 
-publishingplatform: grid-sdk
+control: Searching
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
 # Searching in TypeScript TreeGrid
 
-You can search records in a TreeGrid, by using the [`search`](../api/treegrid/#search) method with search key as a parameter. This also provides an option to integrate search text box in treegrid's toolbar by adding `search` item to the [`toolbar`](../api/treegrid/#toolbar).
+You can search records in a TreeGrid, by using the [`search`](../api/treegrid#search) method with search key as a parameter. This also provides an option to integrate search text box in treegrid's toolbar by adding `search` item to the [`toolbar`](../api/treegrid#toolbar).
 
-To search records, inject the [`Filter`](../api/treegrid/#fitermodule) module in the treegrid.
+To search records, inject the [`Filter`](../api/treegrid#fitermodule) module in the treegrid.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -44,7 +43,7 @@ To search records, inject the [`Filter`](../api/treegrid/#fitermodule) module in
 
 ## Initial search
 
-To apply search at initial rendering, set the fields, operator, key, and ignoreCase in the [`searchSettings`](../api/treegrid/#searchsettings).
+To apply search at initial rendering, set the fields, operator, key, and ignoreCase in the [`searchSettings`](../api/treegrid#searchsettings).
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -73,11 +72,11 @@ To apply search at initial rendering, set the fields, operator, key, and ignoreC
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/treegrid/searching-cs2" %}
 {% endif %}
 
-> By default, treegrid searches all the bound column values. To customize this behavior define the [`searchSettings.fields`](../api/treegrid/searchSettingsModel/#fields) property.
+> By default, treegrid searches all the bound column values. To customize this behavior define the [`searchSettings.fields`](../api/treegrid/searchSettingsModel#fields) property.
 
 ## Search operators
 
-The search operator can be defined in the [`searchSettings.operator`](../api/treegrid/searchSettingsModel/#operator) property to configure specific searching.
+The search operator can be defined in the [`searchSettings.operator`](../api/treegrid/searchSettingsModel#operator) property to configure specific searching.
 
 The following operators are supported in searching:
 
@@ -89,11 +88,11 @@ contains |Checks whether a value contains the specified value.
 equal |Checks whether a value is equal to the specified value.
 notEqual |Checks for values not equal to the specified value.
 
-> By default, the [`searchSettings.operator`](../api/treegrid/searchSettingsModel/#operator) value is `contains`.
+> By default, the [`searchSettings.operator`](../api/treegrid/searchSettingsModel#operator) value is `contains`.
 
 ## Search by external button
 
-To search treegrid records from an external button, invoke the [`search`](../api/treegrid/#search) method.
+To search treegrid records from an external button, invoke the [`search`](../api/treegrid#search) method.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -124,7 +123,7 @@ To search treegrid records from an external button, invoke the [`search`](../api
 
 ## Search specific columns
 
-By default, treegrid searches all visible columns. You can search specific columns by defining the specific column's field names in the [`searchSettings.fields`](../api/treegrid/searchSettingsModel/#fields) property.
+By default, treegrid searches all visible columns. You can search specific columns by defining the specific column's field names in the [`searchSettings.fields`](../api/treegrid/searchSettingsModel#fields) property.
 
 {% if page.publishingplatform == "typescript" %}
 

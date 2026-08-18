@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Vue Grid Toolbar | Syncfusion
-description: Learn how to use the toolbar in Vue Data Grid with built-in actions, custom toolbar items, data export, search, and editing operations.
+title: Tool bar in Vue Grid component | Syncfusion
+description: Learn here all about Tool bar in Syncfusion Vue Grid component of Syncfusion Essential JS 2 and more.
 control: Tool bar 
 platform: grid-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Toolbar in Vue Data Grid
+# Tool bar in Vue Grid component
 
 The toolbar in the [Vue Data Grid](https://www.syncfusion.com/vue-components/vue-grid) component offers several general use cases to enhance data manipulation and overall experience. Actions such as adding, editing, and deleting records within the grid can be performed, providing efficient data manipulation capabilities. The toolbar also facilitates data export and import functionality, allowing you to generate downloadable files in formats like Excel, CSV, or PDF. 
 

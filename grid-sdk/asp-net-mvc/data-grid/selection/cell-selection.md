@@ -1,14 +1,14 @@
 ---
 layout: post
-title: ##Platform_Name## Grid Cell Selection | Syncfusion
-description: Learn how to select single or multiple cells in ##Platform_Name## Data Grid using selection APIs, keyboard interactions, and advanced cell selection options.
+title: Cell Selection in ASP.NET MVC Grid Component
+description: Learn here all about Cell Selection in Syncfusion ASP.NET MVC Grid component of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Cell Selection
 publishingplatform: grid-sdk
 documentation: ug
 ---
  
-# Cell Selection in ASP.NET MVC Data Grid
+# Cell Selection in ASP.NET MVC Grid component 
 
 Cell selection in the Grid component allows you to interactively select specific cells or ranges of cells within the grid. This selection can be done effortlessly through mouse clicks or arrow keys (up, down, left, and right). This feature is useful when you want to highlight, manipulate, or perform actions on specific cell within the Grid.
 

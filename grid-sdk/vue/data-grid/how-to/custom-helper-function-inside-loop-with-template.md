@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Vue Grid Custom Column Templates | Syncfusion
-description: Learn how to create custom column templates in Vue Data Grid using helper functions, template loops, and dynamic rendering for customized cell content.
+title: Use custom helper inside the loop with templates in Vue Grid component | Syncfusion
+description: Learn here all about Place cancel icon in search bar in Syncfusion Vue Grid component of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Use custom helper inside the loop with templates 
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Custom Column Templates in Vue Data Grid
+# Use custom helper inside the loop with templates in Vue Grid component
 
 The Syncfusion<sup style="font-size:70%">&reg;</sup> Vue Grid allows you to use custom helpers inside the loop with [template](https://ej2.syncfusion.com/vue/documentation/api/grid/column#template) directive of a column. This feature enables you to create complex templates that can incorporate additional helper functions.
 

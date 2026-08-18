@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Postgresql in JavaScript Pivot Table control | Syncfusion
-description: Learn here all about Postgresql in Syncfusion JavaScript Pivot Table control of Syncfusion Essential JS 2 and more.
-platform: grid-sdk
-control: Postgresql 
-publishingplatform: grid-sdk
+title: PostgreSQL in ##Platform_Name## Pivot Table | Syncfusion
+description: Learn how the ##Platform_Name## Pivot Table connects to PostgreSQL via Npgsql.EntityFrameworkCore.PostgreSQL and a Web API controller to fetch data.
+platform: ej2-javascript
+control: PostgreSQL
+publishingplatform: ##Platform_Name##
 documentation: ug
-domainurl: https://help.syncfusion.com/grid-sdk
+domainurl: ##DomainURL##
 ---
 
-# PostgreSQL in JavaScript Pivot Table Component
+# PostgreSQL in ##Platform_Name## Pivot Table
 
 This guide explains how to retrieve data from a PostgreSQL database using the [Microsoft Npgsql](https://www.npgsql.org/doc/index.html) library and bind it to the Pivot Table through a Web API controller.
 

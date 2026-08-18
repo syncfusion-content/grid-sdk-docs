@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Css customization in JavaScript Pivot Table component | Syncfusion
-description: Learn here all about Css customization in Syncfusion JavaScript Pivot Table component of Syncfusion Essential JS 2 and more.
-platform: grid-sdk
-control: Css customization 
-publishingplatform: grid-sdk
+title: CSS Customization in ##Platform_Name## Pivot Table | Syncfusion
+description: Learn how the ##Platform_Name## Pivot Table uses CSS classes to style row headers, axes, and Field List areas.
+platform: ej2-javascript
+control: CSS customization
+publishingplatform: ##Platform_Name##
 documentation: ug
-domainurl: https://help.syncfusion.com/grid-sdk
+domainurl: ##DomainURL##
 ---
 
-# CSS customization in JavaScript Pivot Table component
+# CSS Customization in ##Platform_Name## Pivot Table
 
 The JavaScript Pivot Table component provides extensive CSS customization options, allowing users to modify the visual appearance and layout of various pivot table elements. This includes styling row headers, column headers, value cells, summary cells, Field List components, and Grouping Bar areas to match application themes and design requirements.
 

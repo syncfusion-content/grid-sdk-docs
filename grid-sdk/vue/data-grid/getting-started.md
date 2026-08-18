@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Vue Data Grid Getting Started (Quick Setup Guide) | Syncfusion
-description: Learn how to install and configure the Vue Data Grid. Set up a new Vue app and enable paging, sorting, filtering, and grouping.
+title: Getting started with Vue DataGrid component | Syncfusion
+description:  Checkout and learn about Getting started with Vue DataGrid component of Syncfusion Essential JS 2 and more details.
 control: Getting started 
 platform: grid-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Getting Started with Data Grid Component in Vue 2
+# Getting Started with the Vue DataGrid Component in Vue 2
 
 This article provides a step-by-step guide for setting up a Vue 2 project using [Vue-CLI](https://cli.vuejs.org) and integrating the [Vue Data Grid](https://www.syncfusion.com/vue-components/vue-grid) component.
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: ASP.NET MVC Grid Row Drag and Drop | Syncfusion
-description: Learn how to implement row drag and drop in ASP.NET MVC Data Grid using Syncfusion. Reorder rows, configure drop targets, and handle drag events efficiently.
+title: Row Drag And Drop in Syncfusion ASP.NET MVC Grid Component
+description: Learn here all about Row Drag And Drop in Syncfusion ASP.NET MVC Grid component of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Row Drag And Drop
 publishingplatform: grid-sdk
 documentation: ug
 ---
 
-# Row Drag and Drop in ASP.NET MVC Data Grid
+# Drag and drop in ASP.NET MVC Grid component
 
 The Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Grid component provides built-in support for row drag and drop functionality. This feature allows you to easily rearrange rows within the grid by dragging and dropping them to new positions. Additionally, you can also drag and drop rows from one grid to another grid, as well as drag and drop rows to custom components.
 

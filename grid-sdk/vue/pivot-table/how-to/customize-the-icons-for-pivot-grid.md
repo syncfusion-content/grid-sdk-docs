@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Customize the icons for pivot grid in Vue | Syncfusion
-description: Learn here all about Customize the icons for pivot grid in Syncfusion Vue Pivotview component of Syncfusion Essential JS 2 and more.
+title: How to customize the pivot table icons in Vue Pivot Table | Syncfusion
+description: Step-by-step example showing how to customize the field-list toggle icon in the Vue Pivot Table by overriding the .pivot-button CSS class with custom content.
 control: Customize the icons for pivot grid 
-platform: grid-sdk
+platform: ej2-vue
 documentation: ug
-domainurl: https://help.syncfusion.com/grid-sdk
+domainurl: ##DomainURL##
 ---
 
-# Customize the icons for pivot grid in Vue Pivotview component
+# How to customize the pivot table icons in Vue Pivot Table
 
 You can customize the pivot button icons in the pivot grid by overriding the class **.pivot-button** with a custom property content as mentioned below.
 

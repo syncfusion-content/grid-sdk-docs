@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Vue Grid Bind Data using SQL Dapper Server | Syncfusion
-description: Learn how to bind SQL Server data to the Vue Data Grid using SQL Dapper, perform CRUD operations, and implement adaptor patterns.
+title: Bind SQL Server Data in Syncfusion Vue Grid using Dapper
+description: Learn how to consume data from SQL Server using Dapper and Microsoft SQL Client, bind it to Syncfusion Grid, and perform CRUD operations.
 platform: grid-sdk
 control: Grid
 keywords: adaptors, customadaptor, urladaptor, dapper, remotedata
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# SQL Server Dapper Integration in Vue Data Grid
+# Connecting SQL data to Vue Data Grid using Dapper
 
 This section describes how to connect and retrieve data from a Microsoft SQL Server database using [Dapper](https://github.com/DapperLib/Dapper) and [Microsoft.Data.SqlClient](https://www.nuget.org/packages/Microsoft.Data.SqlClient) and bind it to [Vue Data Grid](https://www.syncfusion.com/vue-components/vue-grid).
 

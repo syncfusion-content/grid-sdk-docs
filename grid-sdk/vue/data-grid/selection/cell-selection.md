@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Vue Grid Cell Selection | Syncfusion
-description: Learn how to select single or multiple cells in Vue Data Grid using selection APIs, keyboard interactions, and advanced cell selection options.
+title: Cell selection in Vue Grid component | Syncfusion
+description: Learn here all about Cell selection in Syncfusion Vue Grid component of Syncfusion Essential JS 2 and more.
 control: Cell selection 
 platform: grid-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Cell Selection in Vue Data Grid 
+# Cell Selection in Vue Grid component 
 
 Cell selection in the [Vue Data Grid](https://www.syncfusion.com/vue-components/vue-grid) component allows you to interactively select specific cells or ranges of cells within the grid. This selection can be done effortlessly through mouse clicks or arrow keys (up, down, left, and right). This feature is useful when you want to highlight, manipulate, or perform actions on specific cell within the Grid.
 

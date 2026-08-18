@@ -1,14 +1,14 @@
 ---
 layout: post
-title: React TreeGrid Server-Side Export | Syncfusion
-description: Learn how to perform server-side exports in React TreeGrid, including Excel and CSV export, server configuration, and header rotation.
+title: Exporting TreeGrid in Server in React TreeGrid | Syncfusion
+description: Learn here all about Exporting TreeGrid in Server in Syncfusion React TreeGrid Component of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Exporting TreeGrid in Server
 domainurl: https://help.syncfusion.com/grid-sdk
 documentation: ug
 ---
 
-# Server-Side Export in React TreeGrid
+# Exporting tree grid in Server in React TreeGrid
 
 TreeGrid supports exporting data to Excel on the server side using the TreeGrid server export library.
 

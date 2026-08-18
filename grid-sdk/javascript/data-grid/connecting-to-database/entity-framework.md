@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Javascript Grid Bind Data with Entity Framework Core | Syncfusion
-description: Learn how to bind SQL Server data to Javascript Data Grid using Entity Framework Core, perform CRUD operations, and implement adaptor patterns.
+title: Bind SQL Server Data in Syncfusion JavaScript Grid using Entity Framework
+description: Learn about consume data using Entity Framework from Microsoft SQL Server, bind it to Syncfusion JavaScript Grid, and performing CRUD operations.
 platform: grid-sdk
 control: grid
 keywords: adaptors, customadaptor, urladaptor, entityframework, remotedata
@@ -10,7 +10,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# SQL Server Entity Framework Core Integration in Data Grid
+# Connecting SQL Server data to Syncfusion JavaScript Grid using Entity Framework
 
 This section describes how to connect and retrieve data from a Microsoft SQL Server database using [Entity Framework](https://learn.microsoft.com/en-us/ef/core/) and bind it to the Syncfusion JavaScript Grid.
 

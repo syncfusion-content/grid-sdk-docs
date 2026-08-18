@@ -3,8 +3,7 @@ layout: post
 title: JavaScript TreeGrid Loading Animation | Syncfusion
 description: Learn how to use loading animations in JavaScript TreeGrid, including spinner and shimmer indicators for improved loading experiences.
 platform: grid-sdk
-control: Loading animation 
-publishingplatform: grid-sdk
+control: Loading animation
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---

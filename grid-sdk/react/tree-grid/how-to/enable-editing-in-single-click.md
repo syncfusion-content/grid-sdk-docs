@@ -1,14 +1,14 @@
 ---
 layout: post
-title: React TreeGrid Single-Click Editing | Syncfusion
-description: Learn how to enable single-click row and cell editing in React TreeGrid for faster data entry, streamlined updates, and improved editing workflows.
+title: Enable editing in single click in React TreeGrid | Syncfusion
+description: Learn here all about Enable editing in single click in Syncfusion React TreeGrid component of Syncfusion Essential JS 2 and more.
 control: Enable editing in single click 
 platform: grid-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Enable Single-Click Editing in React TreeGrid
+# Enable editing in single click in React TreeGrid
 
 ## Row Editing
 

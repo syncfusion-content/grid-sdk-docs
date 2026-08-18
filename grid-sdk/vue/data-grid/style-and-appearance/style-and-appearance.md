@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Vue Grid Style and Appearance | Syncfusion
-description: Learn how to customize the style and appearance of Vue Data Grid with built-in themes, CSS customization, theme packages, and design configuration.
+title: Style and appearance in Vue Grid component | Syncfusion
+description: Learn here all about Style and appearance in Syncfusion Vue Grid component of Syncfusion Essential JS 2 and more.
 control: Style and appearance 
 platform: grid-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Style and Appearance in Vue Data Grid
+# Style and appearance in Vue Grid component
 
 The [Vue Data Grid](https://www.syncfusion.com/vue-components/vue-grid) component offers various ways to customize its appearance using both default CSS and custom themes. Let's go over some common approaches:
 

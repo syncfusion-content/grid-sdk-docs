@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Data binding in JavaScript Pivot Table control | Syncfusion
-description: Learn here all about Data binding in Syncfusion ##Platform_Name Table control of Syncfusion Essential JS 2 and more.
-platform: grid-sdk
-control: Data binding 
-publishingplatform: grid-sdk
+title: Data Binding in ##Platform_Name## Pivot Table | Syncfusion
+description: Learn how the ##Platform_Name## Pivot Table binds JSON, CSV, and remote data via `dataSourceSettings.dataSource`, with `DataManager` and `CsvAdaptor` support.
+platform: ej2-javascript
+control: Data binding
+publishingplatform: ##Platform_Name##
 documentation: ug
-domainurl: https://help.syncfusion.com/grid-sdk
+domainurl: ##DomainURL##
 ---
 
-# Data binding in JavaScript Pivot Table component
+# Data Binding in ##Platform_Name## Pivot Table
 
 ## JSON
 

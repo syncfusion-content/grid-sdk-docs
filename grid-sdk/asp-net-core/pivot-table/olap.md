@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Olap in ASP.NET Core Pivot Table component | Syncfusion
-description: Learn here all about Olap in Syncfusion ASP.NET Core Pivot Table component of Syncfusion Essential JS 2 and more.
-platform: grid-sdk
+title: OLAP in ASP.NET Core Pivot Table | Syncfusion
+description: Learn how to configure the ASP.NET Core Pivot Table with OLAP cube data sources, including license registration and project setup in Visual Studio.
+platform: ej2-asp-core-mvc
 control: Olap
-publishingplatform: grid-sdk
+publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
-# OLAP in ASP.NET CORE Pivot Table component
+# OLAP in ASP.NET Core Pivot Table
 
 ## Getting Started with ASP.NET Core
 

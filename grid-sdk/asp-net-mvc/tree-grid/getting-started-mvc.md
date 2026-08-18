@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Getting Started with ASP.NET MVC Tree Grid Control | Syncfusion
-description: Checkout and learn about getting started with ASP.NET MVC Tree Grid control of Syncfusion Essential JS 2 and more details.
+title: ASP.NET MVC TreeGrid Getting Started | Syncfusion
+description: Learn how to get started with ASP.NET MVC TreeGrid, including installation, configuration, data binding, and basic setup.
 platform: grid-sdk
 control: Getting Started Mvc
 publishingplatform: grid-sdk
 documentation: ug
 ---
 
-# Getting Started with ASP.NET MVC Tree Grid Control
+# Getting Started with ASP.NET MVC TreeGrid
 
-This section briefly explains how to include [ASP.NET MVC Tree Grid](https://www.syncfusion.com/aspnet-mvc-ui-controls/tree-grid) control in your ASP.NET MVC application using Visual Studio.
+This section briefly explains how to include [ASP.NET MVC TreeGrid](https://www.syncfusion.com/aspnet-mvc-ui-controls/tree-grid) control in your ASP.NET MVC application using Visual Studio.
 
 ## Prerequisites
 

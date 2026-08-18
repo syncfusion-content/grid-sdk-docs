@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Vue Grid Infinite Scrolling | Syncfusion
-description: Learn how to implement infinite scrolling in Vue Data Grid with incremental data loading, optimized retrieval, and smooth performance for large datasets.
+title: Infinite scroll in Vue Grid component | Syncfusion
+description: Learn here all about Infinite scroll in Syncfusion Vue Grid component of Syncfusion Essential JS 2 and more.
 control: Infinite scroll 
 platform: grid-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Infinite Scrolling in Vue Data Grid
+# Infinite scrolling in Vue Grid component
 
 The infinite scrolling feature in the Grid is a powerful tool for seamlessly handling extensive data sets without compromising grid performance. It operates on a “load-on-demand” concept, ensuring that data is fetched only when needed. In the default infinite scrolling mode, a new block of data is loaded each time the scrollbar reaches the end of the vertical scroller. This approach significantly enhances the user experience when working with large data collections in the [Vue Data Grid](https://www.syncfusion.com/vue-components/vue-grid).
 

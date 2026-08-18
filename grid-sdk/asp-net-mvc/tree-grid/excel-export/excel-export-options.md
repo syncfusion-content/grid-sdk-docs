@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Excel Export Options in ASP.NET MVC Tree Grid Component | Syncfusion
-description: Learn here all about Excel Export Options in Syncfusion ASP.NET MVC Tree Grid component of Syncfusion Essential JS 2 and more.
+title: ASP.NET MVC TreeGrid Excel Export Options | Syncfusion
+description: Learn about Excel export options in ASP.NET MVC TreeGrid, including export customization, hidden columns, selected records, and advanced export settings..
 platform: grid-sdk
 control: Excel Export Options
 publishingplatform: grid-sdk
 documentation: ug
 ---
 
-
-# Excel Export Options
+# Excel Export Options in ASP.NET MVC TreeGrid
 
 The excel export provides an option to customize mapping of the tree grid to excel document.
 

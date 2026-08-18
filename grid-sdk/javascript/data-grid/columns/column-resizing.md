@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Javascript Grid Column Resizing | Syncfusion
-description: Learn how to resize columns in Javascript Data Grid with manual and automatic width adjustments, resize modes, and programmatic resizing options.
+title: Column resizing in JavaScript Grid control | Syncfusion
+description: Learn here all about Column resizing in Syncfusion JavaScript Grid control of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Column resizing 
 publishingplatform: grid-sdk
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Column Resizing in Javascript Data Grid
+# Column resizing in JavaScript Grid control
 
 Grid control provides an intuitive user interface for resizing columns to fit their content. This feature allows users to easily adjust the width of the columns to improve readability and aesthetics of the data presented. To enable column resizing, set the [allowResizing](../../api/grid/#allowresizing) property of the grid to **true**.
 

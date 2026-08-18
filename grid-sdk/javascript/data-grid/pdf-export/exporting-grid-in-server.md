@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Javascript Grid Server-Side PDF Export | Syncfusion
-description: Learn how to export Javascript Data Grid data using server-side PDF generation, API endpoints, and efficient export processing for large datasets.
+title: Exporting grid in server in JavaScript Grid control | Syncfusion
+description: Learn here all about Exporting grid in server in Syncfusion JavaScript Grid control of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Exporting grid in server 
 publishingplatform: grid-sdk
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Server dependencies in Javascript Data Grid
+# Exporting Grid in Server in JavaScript Grid control
 
 The Grid control provides an option to export grid data to a PDF document on the server side using the Grid server export library. This allows you to perform PDF export operations on the server, providing additional security and flexibility. To enable server-side PDF exporting, you need to configure the server dependencies and implement the necessary server configuration.
 

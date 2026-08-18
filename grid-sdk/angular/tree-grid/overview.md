@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Angular TreeGrid Key Features | Syncfusion
-description: Explore the key features of Angular TreeGrid, including hierarchical data binding, editing, filtering, sorting, virtualization, and exporting.
+title: Overview in Angular Tree Grid component | Syncfusion
+description: Learn here all about Index in Syncfusion Angular Tree Grid component of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Overview 
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-#  Key Features of Angular TreeGrid
+# Overview of Tree Grid in Angular
 
 The Essential Studio<sup style="font-size:70%">&reg;</sup> for Angular Tree Grid is a feature-rich component used to visualize self-referential hierarchical data efficiently in a tabular format. The Tree Grid can bind data from various sources such as an array of JSON objects, RESTful services, OData services, WCF services, or DataManager, allowing flexible data integration by mapping data fields to columns. It enables expanding or collapsing hierarchical data through the tree column for an interactive experience.
 

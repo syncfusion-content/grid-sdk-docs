@@ -1,14 +1,14 @@
----
+﻿---
 layout: post
-title: "MongoDB Data Binding in Angular Pivotview component | Syncfusion"
+title: "MongoDB in Angular Pivot Table | Syncfusion"
 component: "Pivot Table"
-platform: grid-sdk
-description: "Learn how to bind data from a MongoDB Database in the Syncfusion Angular Pivot Table of Syncfusion Essential JS 2 and more."
+platform: ej2-angular
+description: Learn how the Angular Pivot Table binds to a MongoDB database through an ASP.NET Core Web API and the MongoDB.Driver library.
 control: MongoDB Data Binding
 documentation: ug
 ---
 
-# MongoDB in EJ2 Angular Pivotview Component
+# MongoDB in Angular Pivot Table
 
 This guide explains how to retrieve data from a MongoDB database using the [MongoDB.Driver](https://www.nuget.org/packages/MongoDB.Driver) and [MongoDB.Bson](https://www.nuget.org/packages/MongoDB.Bson) libraries and bind it to the Pivot Table through a Web API controller.
 
@@ -24,7 +24,7 @@ Follow these steps to create a Web API service that retrieves data from a MongoD
 
 ### Step 2: Install the MongoDB NuGet Packages
 To enable MongoDB database connectivity:
-1. Open the **NuGet Package Manager** in your project solution and search for the packages [MongoDB.Driver](https://www.nuget.org/packages/MongoDB.Driver/) and [MongoDB.Bson](https://www.nuget.org/packages/MongoDB.Bson).
+1. Open the **NuGet Package Manager** in your project solution and search for the packages [MongoDB.Driver](https://www.nuget.org/packages/MongoDB.Driver) and [MongoDB.Bson](https://www.nuget.org/packages/MongoDB.Bson).
 2. Install both packages to add MongoDB support.
 
 ![Add the NuGet package MongoDB.Driver to the project](../images/mongodb-data-nuget-package-install.png)
@@ -34,7 +34,7 @@ To enable MongoDB database connectivity:
 2. This controller facilitates data communication between the MongoDB database and the Pivot Table.
 
 ### Step 4: Connect to MongoDB and Retrieve Data
-In the **PivotController.cs** file, use the [MongoDB.Driver](https://www.nuget.org/packages/MongoDB.Driver/) and [MongoDB.Bson](https://www.nuget.org/packages/MongoDB.Bson) libraries to connect to a MongoDB database and retrieve data for the Pivot Table.
+In the **PivotController.cs** file, use the [MongoDB.Driver](https://www.nuget.org/packages/MongoDB.Driver) and [MongoDB.Bson](https://www.nuget.org/packages/MongoDB.Bson) libraries to connect to a MongoDB database and retrieve data for the Pivot Table.
 
 1. **Establish Connection**: Use **MongoClient** with a valid connection string (e.g., `<Enter your valid connection string here>`) to connect to the MongoDB database.
 2. **Access the Database and Collection**: Use the **GetDatabase** method to access the specified database (e.g., `sample_training`) and the **GetCollection** method to target the desired collection (e.g., `ProductDetails`).

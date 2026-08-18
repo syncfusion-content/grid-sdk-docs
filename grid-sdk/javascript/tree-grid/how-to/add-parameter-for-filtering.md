@@ -3,8 +3,7 @@ layout: post
 title: JavaScript TreeGrid Filtering Parameters | Syncfusion
 description: Learn how to add filtering parameters in JavaScript TreeGrid, including menu filter customization, parameter handling, and advanced filtering options.
 platform: grid-sdk
-control: Add parameter for filtering 
-publishingplatform: grid-sdk
+control: Add parameter for filtering
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---

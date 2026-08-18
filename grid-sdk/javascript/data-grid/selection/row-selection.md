@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Javascript Grid Row Selection | Syncfusion
-description: Learn how to select single or multiple rows in Javascript Data Grid with selection modes, keyboard interactions, selection APIs, and row selection events.
+title: Row selection in JavaScript Grid control | Syncfusion
+description: Learn here all about Row selection in Syncfusion JavaScript Grid control of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Row selection 
 publishingplatform: grid-sdk
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Row Selection in Javascript Data Grid
+# Row selection in JavaScript Grid control
 
 Row selection in the Grid control allows you to interactively select specific rows or ranges of rows within the grid. This selection can be done effortlessly through mouse clicks or arrow keys (up, down, left, and right). This feature is useful when you want to highlight, manipulate, or perform actions on specific row within the Grid.
 

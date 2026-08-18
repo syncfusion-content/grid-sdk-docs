@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Javascript Grid Batch Editing | Syncfusion
-description: Learn how to perform batch editing in Javascript Data Grid, update multiple records efficiently, customize edit workflows, and save changes in bulk.
+title: Batch editing in JavaScript Grid control | Syncfusion
+description: Learn here all about Batch editing in Syncfusion JavaScript Grid control of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Batch editing 
 publishingplatform: grid-sdk
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Batch Editing in Javascript Data Grid
+# Batch editing in JavaScript Grid control
 
 Batch editing is a powerful feature in the Grid control that allows you to edit multiple cells simultaneously. It provides a convenient way to make changes to multiple cells and save them in a single request to the data source. This feature is particularly useful when dealing with large datasets or when you need to update multiple cells at once.
 

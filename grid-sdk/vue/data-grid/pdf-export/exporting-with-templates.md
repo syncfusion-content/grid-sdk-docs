@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Vue Grid PDF Export Templates | Syncfusion
-description: Learn how to export Vue Data Grid into PDF using templates, including column, detail, and caption templates with custom formatting, images, and links.
+title: Exporting Vue Grid with Templates | Syncfusion
+description: Learn here all about Exporting grids with templates in Syncfusion Vue Grid component of Syncfusion Essential JS 2 and more.
 control: Exporting grid with templates
 platform: grid-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# PDF Export Templates in Vue Data Grid
+# Exporting grid with templates in Vue Grid control
 
 The [Vue Data Grid](https://www.syncfusion.com/vue-components/vue-grid) offers the option to export the column, detail, and caption templates to a PDF document. The template contains images, hyperlinks, and customized text.
 

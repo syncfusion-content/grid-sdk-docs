@@ -1,14 +1,14 @@
 ---
 layout: post
-title: React TreeGrid State Persistence | Syncfusion
-description: Learn how to use state persistence in the React TreeGrid component, including configuration with enablePersistence and localStorage usage.
+title: State persistence in React TreeGrid | Syncfusion
+description: Learn here all about State persistence in Syncfusion React TreeGrid component of Syncfusion Essential JS 2 and more.
 control: State persistence
 platform: grid-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# State Persistence in React TreeGrid
+# State persistence in React TreeGrid
 
 State persistence maintains the TreeGrid state in the browser’s [localStorage](https://www.w3schools.com/html/html5_webstorage.asp#) across page refreshes and intra-tab navigation.
 

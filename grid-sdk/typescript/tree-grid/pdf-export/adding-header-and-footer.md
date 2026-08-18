@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Filtering in TypeScript TreeGrid
+title: TypeScript TreeGrid PDF Headers and Footers | Syncfusion
 description: Learn how to use filtering in TypeScript TreeGrid, including filter bar, menu, Excel-like filtering, operators, and custom filter options.
 platform: grid-sdk
-control: Adding header and footer 
-publishingplatform: grid-sdk
+control: Adding header and footer
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Filtering in TypeScript TreeGrid
+# Adding Headers and Footers in TypeScript TreeGrid
 
 You can customize text, page number, line, page size and changing orientation in header and footer.
 
