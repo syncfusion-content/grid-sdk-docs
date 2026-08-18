@@ -1,14 +1,13 @@
 ---
 layout: post
-title: Column Chooser in ASP.NET MVC Tree Grid Component | Syncfusion
-description: Learn here all about Column Chooser in Syncfusion ASP.NET MVC Tree Grid component of Syncfusion Essential JS 2 and more.
+title: ASP.NET MVC TreeGrid Column Chooser | Syncfusion
+description: Learn how to use the column chooser in ASP.NET MVC TreeGrid to show, hide, and manage column visibility dynamically.
 platform: grid-sdk
 control: Column Chooser
-publishingplatform: grid-sdk
 documentation: ug
 ---
 
-# Column Chooser in ASP.NET MVC Tree Grid Component
+# Column Chooser in ASP.NET MVC TreeGrid
 
 The column chooser has options to show or hide columns dynamically. It can be enabled by defining the [`ShowColumnChooser`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGrid.html#Syncfusion_EJ2_TreeGrid_TreeGrid_ShowColumnChooser) as true.
 
@@ -74,7 +73,7 @@ To implement a custom column chooser template in the TreeGrid, use the following
 
 * **ColumnChooserSettings.RenderCustomColumnChooser** -  Allows you to override the default column chooser UI with a fully customized layout.
 
-In this example, a Syncfusion TreeView component is rendered inside the column chooser. To use the TreeView component, install the Syncfusion TreeView package as described in the [documentation](../../treeview/getting-started). The `ColumnChooserSettings.Template` property defines a element with the `Id` set to **tree**, providing as a container for the TreeView component. The `ColumnChooserSettings.RenderCustomColumnChooser` method initializes the TreeView with checkboxes and appends it to this template. Checkbox selection is handled using the [NodeClicked](../../api/treeview/#nodeclicked) and [keyPress](../../api/treeview/#keypress) events, which organize columns into **Task Info**, **Schedule**, and **Progress**.
+In this example, a Syncfusion TreeView component is rendered inside the column chooser. To use the TreeView component, install the Syncfusion TreeView package as described in the [documentation](../../treeview/getting-started). The `ColumnChooserSettings.Template` property defines a element with the `Id` set to **tree**, providing as a container for the TreeView component. The `ColumnChooserSettings.RenderCustomColumnChooser` method initializes the TreeView with checkboxes and appends it to this template. Checkbox selection is handled using the [NodeClicked](../../api/treeview#nodeclicked) and [keyPress](../../api/treeview#keypress) events, which organize columns into **Task Info**, **Schedule**, and **Progress**.
 
 The column chooser footer is customized using `ColumnChooserSettings.FooterTemplate`, replacing the default buttons with customized **Apply** and **Close** buttons. The **Apply** button updates column visibility based on selection, while the **Close** button closes the column chooser via the `onClick` event. Additionally, the header is customized using `ColumnChooserSettings.HeaderTemplate` to include a title and an icon.
 
@@ -87,6 +86,6 @@ The column chooser footer is customized using `ColumnChooserSettings.FooterTempl
 {% endhighlight %}
 {% endtabs %}
 
-![Column Chooser Template TreeGrid](../../images/column-chooser-template.png)
+![Column Chooser Template TreeGrid](../images/column-chooser-template.png)
 
 N> You can refer to our [`ASP.NET MVC Tree Grid`](https://www.syncfusion.com/aspnet-mvc-ui-controls/tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our [`ASP.NET MVC Tree Grid example`](https://ej2.syncfusion.com/aspnetmvc/TreeGrid/Overview#/material) to knows how to present and manipulate data.

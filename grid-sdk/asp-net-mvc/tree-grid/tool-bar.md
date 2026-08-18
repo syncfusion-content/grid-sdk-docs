@@ -4,7 +4,6 @@ title: Toolbar in ASP.NET MVC Tree Grid Component | Syncfusion
 description: Learn here all about Tool Bar in Syncfusion ASP.NET MVC Tree Grid component of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Tool Bar
-publishingplatform: grid-sdk
 documentation: ug
 ---
 

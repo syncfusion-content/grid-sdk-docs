@@ -1,15 +1,13 @@
 ---
 layout: post
-title: Rows Customization in Syncfusion ASP.NET MVC Tree Grid Component
-description: Learn here all about rows customization in Syncfusion ASP.NET MVC Tree Grid component and much more.
+title: ASP.NET MVC TreeGrid Rows | Syncfusion
+description: Learn how to work with rows in ASP.NET MVC TreeGrid, including row customization, selection, styling, rendering, and row-level operations.
 platform: grid-sdk
 control: Row
-publishingplatform: grid-sdk
 documentation: ug
 ---
 
-
-# Rows in ASP.NET MVC Tree Grid Component
+# Rows in ASP.NET MVC TreeGrid
 
 The row represents record details fetched from data source.
 

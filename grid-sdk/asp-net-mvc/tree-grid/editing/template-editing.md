@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Template Editing in ASP.NET MVC Tree Grid Component | Syncfusion
-description: Learn here all about Template Editing in Syncfusion ASP.NET MVC Tree Grid component of Syncfusion Essential JS 2 and more.
+title: ASP.NET MVC TreeGrid Template Editing | Syncfusion
+description: Learn how to use template editing in ASP.NET MVC TreeGrid to create custom edit forms with tailored layouts and controls.
 platform: grid-sdk
 control: Template Editing
-publishingplatform: grid-sdk
 documentation: ug
 ---
 
 
-# Template Editing in ASP.NET MVC Tree Grid Component
+# Template Editing in ASP.NET MVC TreeGrid
 
 ## Cell edit template
 
