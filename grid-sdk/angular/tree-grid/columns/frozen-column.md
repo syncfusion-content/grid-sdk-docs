@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Angular TreeGrid Frozen Columns | Syncfusion
-description: Learn how to pin or freeze columns in Angular TreeGrid to keep important columns visible while scrolling horizontally.
+title: Column pinning (Frozen) in Angular TreeGrid component | Syncfusion
+description: Learn here all about Column pinning (Frozen) in Syncfusion Angular TreeGrid component of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Column pinning (Frozen) 
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Frozen Columns in Angular TreeGrid
+# Column pinning (Frozen) in Angular TreeGrid component
 
 In the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular TreeGrid component, columns can be **frozen**, ensuring they remain visible while scrolling through extensive datasets. This functionality significantly improves experience by keeping critical information constantly within view, even when navigating through large volumes of data. Important columns remain fixed in their positions, making it easier to access and reference key data points while working with the TreeGrid.
 

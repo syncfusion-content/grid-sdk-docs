@@ -1,14 +1,14 @@
 ---
 layout: post
-title: React TreeGrid Excel-Like Filter | Syncfusion
-description: Learn how to use Excel-like filtering in React TreeGrid, including filter menus, search, checkbox filtering, and custom filter options.
+title: Excel like filter in React TreeGrid component | Syncfusion
+description: Learn here all about Excel like filter in Syncfusion React TreeGrid component of Syncfusion Essential JS 2 and more.
 control: Excel like filter 
 platform: grid-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Excel-Like Filter in React TreeGrid
+# Excel like filter in React TreeGrid
 
 Enable the Excel like filter by setting [filterSettings.type](https://ej2.syncfusion.com/react/documentation/api/treegrid/filterSettingsModel/#type) to `Excel`. The Excel filter menu adapts to the column type and provides options such as sorting, clear filter, and an advanced filtering submenu.
 

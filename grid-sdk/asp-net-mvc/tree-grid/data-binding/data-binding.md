@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Data Binding in ASP.NET MVC Tree Grid Component | Syncfusion
-description: Learn here all about Data Binding in Syncfusion ASP.NET MVC Tree Grid component of Syncfusion Essential JS 2 and more.
+title: ASP.NET MVC TreeGrid Data Binding | Syncfusion
+description: Learn about data binding in the ASP.NET MVC TreeGrid, covering local and remote data integration, expand state mapping, and best practices.
 platform: grid-sdk
 control: Data Binding
 publishingplatform: grid-sdk
 documentation: ug
 ---
 
-
-# Data binding in ASP.NET MVC Tree Grid Component
+# Data Binding in ASP.NET MVC TreeGrid
 
 The TreeGrid uses **DataManager**, which supports both RESTful JSON data services binding and local JavaScript object array binding. The [`DataSource`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGrid~DataSource.html) property can be assigned either with the instance of **DataManager** or JavaScript object array collection.
 

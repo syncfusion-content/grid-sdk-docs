@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Column Template in ASP.NET Core Tree Grid Component | Syncfusion
-description: Learn here all about Column Template in Syncfusion ASP.NET Core Tree Grid component of Syncfusion Essential JS 2 and more.
+title: ASP.NET Core TreeGrid Column Template | Syncfusion
+description: Learn how to use column templates in ASP.NET Core TreeGrid to display custom content, images, buttons, and formatted data in cells.
 platform: grid-sdk
 control: Column Template
 publishingplatform: grid-sdk
 documentation: ug
 ---
 
-# Column Template in ASP.NET Core Tree Grid Component
+# Column Template in ASP.NET Core TreeGrid
 
 The column [`template`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridColumn~Template.html) has options to display custom element instead of a field value in the column.
 

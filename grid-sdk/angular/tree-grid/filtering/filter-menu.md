@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Angular TreeGrid Filter Menu | Syncfusion
-description: Learn how to use the filter menu in Angular TreeGrid, including column filtering, filter operators, and custom filter options.
+title: Filter menu in Angular TreeGrid component | Syncfusion
+description: Learn here all about Filter menu in Syncfusion Angular TreeGrid component of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Filter menu 
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Filter Menu in Angular TreeGrid
+# Filter menu in Angular TreeGrid component
 
 The filter menu in the Angular TreeGrid component allows enabling filtering and provides a user-friendly interface for filtering data based on column types and operators.
 

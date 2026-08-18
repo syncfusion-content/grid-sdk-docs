@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Blazor Grid Caption Template | Syncfusion
-description: Learn how to customize group caption rows in Blazor Data Grid using CaptionTemplate and CaptionTemplateContext to display custom text and summaries.
+title: Caption template in Blazor DataGrid | Syncfusion®
+description: Learn how to customize group caption rows in Blazor DataGrid using CaptionTemplate and CaptionTemplateContext.
 platform: grid-sdk
 control: DataGrid
 documentation: ug
 ---
 
-# Caption Template in Blazor Data Grid
+# Caption template in Blazor DataGrid
 
 The caption template feature in the [Blazor DataGrid](https://www.syncfusion.com/blazor-components/blazor-datagrid) customizes the content of group caption rows. It can display additional information about grouped data (such as the grouped value and record count) and render custom content including images, icons, or other Razor components. This enables clear, informative, and visually rich group captions in the DataGrid.
 

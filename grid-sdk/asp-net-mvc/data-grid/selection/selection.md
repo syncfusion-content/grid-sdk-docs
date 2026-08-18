@@ -1,14 +1,14 @@
 ---
 layout: post
-title: ASP.NET MVC Grid Selection | Syncfusion
-description: Learn how to use selection in ASP.NET MVC Data Grid with row, cell, and column selection modes, selection APIs, keyboard interactions, and selection events.
+title: Selection in Syncfusion ASP.NET MVC Grid Component
+description: Learn here all about Selection in Syncfusion ASP.NET MVC Grid component of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Selection
 publishingplatform: grid-sdk
 documentation: ug
 ---
 
-# Selection in ASP.NET MVC Data Grid
+# Selection in ASP.NET MVC Grid component
 
 Selection in the Grid component allows you to interactively select specific cells, rows, or columns within the grid. This selection can be done through mouse clicks or arrow keys (up, down, left, and right) or touch. This feature is useful when you want to highlight, manipulate, or perform actions on specific  cells, rows, or columns within the Grid.
 

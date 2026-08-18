@@ -1,14 +1,14 @@
 ---
 layout: post
-title: React TreeGrid PDF Export Options | Syncfusion
-description: Learn about PDF export options in React TreeGrid, including exporting selected records, hidden columns, custom fonts, and advanced settings.
+title: Pdf export options in React TreeGrid | Syncfusion
+description: Learn here all about Pdf export options in Syncfusion React TreeGrid component of Syncfusion Essential JS 2 and more.
 control: Pdf export options 
 platform: grid-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# PDF Export Options in React TreeGrid
+# PDF export options in React TreeGrid
 
 ## Export selected records
 

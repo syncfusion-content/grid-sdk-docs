@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Typescript Grid Cordova Export Support | Syncfusion
-description: Learn how to export Typescript Data Grid data in Cordova applications using Blob streams, Excel and PDF export events, and mobile-friendly file handling.
+title: Exporting grid in cordova application in TypeScript Grid control | Syncfusion
+description: Learn here all about Exporting grid in cordova application in Syncfusion TypeScript Grid control of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Exporting grid in cordova application 
 publishingplatform: grid-sdk
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Cordova Export in Typescript Data Grid
+# Exporting grid in cordova application in TypeScript Grid control
 
 Exporting the TypeScript Grid in a Cordova application can be beneficial in various scenarios where users need to generate and download reports, share data in Excel or PDF formats, or archive information for offline use. A Cordova application does not support direct file download. To export the TypeScript Grid component in a Cordova application, you need to utilize Blob streams. This can be achieved by using the appropriate exporting methods and export complete events to obtain the Blob stream.
 

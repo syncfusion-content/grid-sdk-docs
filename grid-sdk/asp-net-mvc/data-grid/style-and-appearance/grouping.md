@@ -1,14 +1,14 @@
 ---
 layout: post
-title: ASP.NET MVC Grid Grouping Customization | Syncfusion
-description: Learn how to customize grouping styles in ASP.NET MVC Data Grid with group headers, captions, aggregates, and group area appearance.
+title: Grouping in ASP.NET MVC Grid Component
+description: Learn here all about Grouping in Syncfusion ASP.NET MVC Grid component of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Grouping
 publishingplatform: grid-sdk
 documentation: ug
 ---
 
-# Grouping Style in ASP.NET MVC Data Grid
+# Grouping in ASP.NET MVC Grid component
 
 You can customize the appearance of grouping elements in the Syncfusion ASP.NET MVC Grid component using CSS. Here are examples of how to customize the group header, group expand/collapse icons, group caption row, and grouping indent cell.
 

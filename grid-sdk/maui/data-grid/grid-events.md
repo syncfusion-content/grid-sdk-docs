@@ -5,14 +5,14 @@ description: Learn how to handle events and listen for cell value changes in Syn
 platform: grid-sdk
 control: SfDataGrid
 documentation: UG
-keywords : maui data grid, maui datagrid, maui grid, grid maui, maui gridview, grid in maui, .net maui datagrid, .net maui grid, .net grid maui, .net maui grid events, maui grid events
+keywords : maui datagrid, maui grid, grid maui, maui gridview, grid in maui, .net maui datagrid, .net maui grid, .net grid maui, .net maui grid events, maui grid events
 ---
 
-# Grid Events in .NET MAUI Data Grid
+# Grid Events in MAUI DataGrid (SfDataGrid)
 
 ## Cell Tap Events
 
-The [.NET MAUI Data Grid](https://www.syncfusion.com/maui-controls/maui-datagrid) provides the following events for handling interactions with the cells.
+The [.NET MAUI DataGrid](https://www.syncfusion.com/maui-controls/maui-datagrid) provides the following events for handling interactions with the cells.
 
 * [CellTapped](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.DataGrid.SfDataGrid.html#Syncfusion_Maui_DataGrid_SfDataGrid_CellTapped) : Called when a tap on a cell has occurred.
 * [CellDoubleTapped](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.DataGrid.SfDataGrid.html#Syncfusion_Maui_DataGrid_SfDataGrid_CellDoubleTapped) : Called when the user has tapped a cell with a primary button at the same cell twice in quick succession.
@@ -377,8 +377,8 @@ The `DataGridCellHoveredEventArgs` object exposes the following properties:
 | [RowData](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.DataGrid.DataGridCellHoveredEventArgs.html#Syncfusion_Maui_DataGrid_DataGridCellHoveredEventArgs_RowData)        | Gets the underlying data object for the row that contains the hovered cell. |
 | [Column](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.DataGrid.DataGridCellHoveredEventArgs.html#Syncfusion_Maui_DataGrid_DataGridCellHoveredEventArgs_Column)         | Gets the column associated with the hovered cell.                           |
 | [Point](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.DataGrid.DataGridCellHoveredEventArgs.html#Syncfusion_Maui_DataGrid_DataGridCellHoveredEventArgs_Point)          | Gets the location (coordinates) of the hovered cell.                        |
-| [CellValue](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.DataGrid.DataGridCellHoveredEventArgs.html#Syncfusion_Maui_DataGrid_DataGridCellHoveredEventArgs_CellValue)      | Gets the value contained in the hovered cell.                               |
-| [CellType](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.DataGrid.DataGridCellHoveredEventArgs.html#Syncfusion_Maui_DataGrid_DataGridCellHoveredEventArgs_CellType)       | Gets the type of the hovered cell.                                          |
+| `CellValue`      | Gets the value contained in the hovered cell.                               |
+| `CellType`       | Gets the type of the hovered cell.                                          |
 
 {% tabs %}
 {% highlight xaml tabtitle="MainPage.xaml" %}

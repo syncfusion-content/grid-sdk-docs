@@ -1,14 +1,14 @@
 ---
 layout: post
-title: ASP.NET MVC Grid Row Pinning | Syncfusion
-description: Learn how to pin rows in ASP.NET MVC Data Grid using Syncfusion. Keep important rows fixed at the top while supporting data operations.
+title: Row Pinning in Syncfusion ASP.NET MVC Grid Component
+description: Learn here all about Row Pinning in Syncfusion ASP.NET MVC Grid component of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Row Pinning
 publishingplatform: grid-sdk
 documentation: ug
 ---
 
-# Row Pinning in ASP.NET MVC Data Grid
+# Row Pinning in EJ2 ASP.NET MVC Grid Control
 
 The Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Grid control provides option to pin specific rows at the top, ensuring important information remains visible while scrolling vertically. This feature is useful when you want to keep specific rows always visible for quick reference or priority viewing, regardless of user interactions.
 

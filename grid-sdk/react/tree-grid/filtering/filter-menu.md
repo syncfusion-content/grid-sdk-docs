@@ -1,14 +1,14 @@
 ---
 layout: post
-title: React TreeGrid Filter Menu | Syncfusion
-description: Learn how to use the filter menu in React TreeGrid, including column filtering, filter operators, and custom filter options.
+title: Filter menu in React TreeGrid component | Syncfusion
+description: Learn here all about Filter menu in Syncfusion React TreeGrid component of Syncfusion Essential JS 2 and more.
 control: Filter menu 
 platform: grid-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Filter Menu in React TreeGrid
+# Filter menu in React TreeGrid
 
 Enable the filter menu by setting [filterSettings.type](https://ej2.syncfusion.com/react/documentation/api/treegrid/filterSettingsModel/#type) to `Menu`. The menu UI adapts to the column type and provides operator-based filtering.
 

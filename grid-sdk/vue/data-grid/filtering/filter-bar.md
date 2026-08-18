@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Vue Grid Filter Bar | Syncfusion
-description: Learn how to use Filter Bar in Vue Data Grid with expression operators, configurable modes, column settings, custom templates, and filter status display.
+title: Filter bar in Vue Grid component | Syncfusion
+description: Learn here all about Filter bar in Syncfusion Vue Grid component of Syncfusion Essential JS 2 and more.
 control: Filter bar 
 platform: grid-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Filter Bar in Vue Data Grid
+# Filter bar in Vue Grid component
 
 The filter bar feature provides a user-friendly way to filter data in the [Vue Data Grid](https://www.syncfusion.com/vue-components/vue-grid). It displays an input field for each column, allowing you to enter filter criteria and instantly see the filtered results.
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Angular TreeGrid Cells | Syncfusion
-description: Learn how to customize and format cells in Angular TreeGrid, including tooltips, styling, clip mode, autowrap, and cell templates.
+title: Cell in Angular TreeGrid component | Syncfusion
+description: Learn about cell customization, formatting, tooltips, and styling in the Syncfusion Angular TreeGrid, including clip mode, autowrap, and cell templates.
 platform: grid-sdk
 control: Cell 
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Cells in Angular TreeGrid
+# Cell in Angular TreeGrid component
 
 In the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular TreeGrid, a **cell** represents the intersection of a row and a column, displaying specific data associated with that row and column. Each cell can contain text, numbers, or other content relevant to the underlying data.
 

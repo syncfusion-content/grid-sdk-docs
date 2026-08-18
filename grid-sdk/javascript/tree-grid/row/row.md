@@ -3,8 +3,7 @@ layout: post
 title: JavaScript TreeGrid Rows | Syncfusion
 description: Learn how to work with rows in JavaScript TreeGrid, including row customization, selection, styling, rendering, and row-level operations.
 platform: grid-sdk
-control: Row 
-publishingplatform: grid-sdk
+control: Row
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
@@ -15,8 +14,8 @@ The row represents record details fetched from data source.
 
 ## Customize rows
 
-You can customize the appearance of a row by using the [`rowDataBound`](../../api/treegrid/#rowdatabound) event.
-The [`rowDataBound`](../../api/treegrid/#rowdatabound) event triggers for every row. In the event handler, you can get the `RowDataBoundEventArgs` that contains details of the row.
+You can customize the appearance of a row by using the [`rowDataBound`](../../api/treegrid#rowdatabound) event.
+The [`rowDataBound`](../../api/treegrid#rowdatabound) event triggers for every row. In the event handler, you can get the `RowDataBoundEventArgs` that contains details of the row.
 
 {% if page.publishingplatform == "typescript" %}
 

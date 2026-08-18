@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Javascript Grid Bind Data with WebMethodAdaptor | Syncfusion
-description: Learn how to use WebMethodAdaptor in Javascript Data Grid to bind remote data, execute CRUD operations, and integrate web methods efficiently.
+title: Bind data & perform CRUD with WebMethodAdaptor in Syncfusion Grid
+description: Learn here all about how to bind data and perform CRUD action using WebMethodAdaptor in Syncfusion JavaScript Grid control.
 platform: grid-sdk
 control: grid
 keywords: Adaptors, webmethodadaptor, web method adaptor, remotedata 
@@ -10,7 +10,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Remote Data Binding with REST API using WebMethod in Data Grid
+# WebMethodAdaptor in Control
 
 The WebMethodAdaptor in JavaScript Grid facilitates data binding from remote services using web methods. This powerful feature enables efficient communication between the client-side application and the server. The WebMethodAdaptor, like the URL adaptor, sends query parameters encapsulated within an object named **value**. Within this **value** object, various datamanager properties such as **requiresCounts**, **skip**, **take**, **sorted**, and **where** queries are included.
 

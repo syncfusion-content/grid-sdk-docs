@@ -1,14 +1,14 @@
 ---
 layout: post
-title: ASP.NET MVC Grid Excel Export Options | Syncfusion
-description: Learn how to export ASP.NET MVC Data Grid into Excel with custom content, record and column selection, styles, themes, grouping, and advanced export options.
+title: Excel Export Options in Syncfusion ASP.NET MVC Grid Component
+description: Learn here all about Excel Export Options in Syncfusion ASP.NET MVC Grid component of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Excel Export Options
 publishingplatform: grid-sdk
 documentation: ug
 ---
 
-# Excel Export Options in ASP.NET MVC Data Grid
+# Excel export options in ASP.NET MVC Grid component
 
 The Syncfusion ASP.NET MVC Grid component allows you to customize the Excel or CSV export options functionality. This flexibility enables you to have greater control over the exported content and layout to meet your specific requirements.
 

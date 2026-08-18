@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Javascript Grid Columns | Syncfusion
-description: Learn how to define and configure columns in Javascript Data Grid, including column types, widths, templates, and behaviors for effective data presentation.
+title: Columns in JavaScript Grid control | Syncfusion
+description: Learn here all about Columns in Syncfusion JavaScript Grid control of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Columns 
 publishingplatform: grid-sdk
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Columns in Javascript Data Grid
+# Columns in JavaScript Grid control
 
 The column definitions are used as the [`dataSource`](../api/grid/#datasource) schema in the Grid. This plays a vital role in rendering column values in the required format. The grid operations such as sorting, filtering and grouping etc. are performed based on column definitions. The [`field`](../api/grid/column/#field) property of the [`columns`](../api/grid/column) is necessary to map the data source values in Grid columns.
  

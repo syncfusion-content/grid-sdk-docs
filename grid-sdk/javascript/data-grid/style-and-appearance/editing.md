@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Javascript Grid Editing Customization | Syncfusion
-description: Learn how to customize editing styles in Javascript Data Grid with editor appearance, edit layouts, form elements, and editing UI customization.
+title: Editing in JavaScript Grid control | Syncfusion
+description: Learn here all about Editing in Syncfusion JavaScript Grid control of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Editing 
 publishingplatform: grid-sdk
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Editing Style in Javascript Data Grid
+# Editing in JavaScript Grid control
 
 You can customize the appearance of editing-related elements in the JavaScript Grid control using CSS. Below are examples of how to customize various editing-related elements.
 

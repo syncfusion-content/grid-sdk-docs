@@ -5,10 +5,10 @@ description: Learn how to serialize and deserialize columns in Syncfusion® .NET
 platform: grid-sdk
 control: SfDataGrid
 documentation: ug
-keywords : maui data grid, maui datagrid, maui grid, grid maui, maui gridview, grid in maui, .net maui datagrid, .net maui grid, .net grid maui, .net maui serialization and deserialization, maui serialization and deserialization
+keywords : maui datagrid, maui grid, grid maui, maui gridview, grid in maui, .net maui datagrid, .net maui grid, .net grid maui, .net maui serialization and deserialization, maui serialization and deserialization
 ---
 
-# Serialization and Deserialization in .NET MAUI Data Grid
+# Serialization and Deserialization in .NET MAUI DataGrid (SfDataGrid)
 
 SfDataGrid allows you to serialize and deserialize the SfDataGrid settings using [DataContractSerializer](https://learn.microsoft.com/en-us/dotnet/api/system.runtime.serialization.datacontractserializer?view=net-9.0&redirectedfrom=MSDN).
 

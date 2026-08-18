@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Javascript Grid Bind Data using SQL Dapper Server | Syncfusion
-description: Learn how to connect SQL Server data to Javascript Data Grid using Dapper, perform CRUD operations, and implement UrlAdaptor and CustomAdaptor patterns.
+title: Bind SQL Server Data in Syncfusion JavaScript Grid using Dapper
+description: Learn how to consume data from SQL Server using Dapper and Microsoft SQL Client,bind it to Syncfusion JavaScript Grid, and perform CRUD operations.
 platform: grid-sdk
 control: grid
 keywords: adaptors, customadaptor, urladaptor, dapper, remotedata
@@ -10,7 +10,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# SQL Server Dapper Integration in Javascript Data Grid
+# Connecting SQL data to Syncfusion JavaScript Grid using Dapper
 
 This section describes how to connect and retrieve data from a Microsoft SQL Server database using [Dapper](https://github.com/DapperLib/Dapper) and [Microsoft.Data.SqlClient](https://www.nuget.org/packages/Microsoft.Data.SqlClient) and bind it to Syncfusion JavaScript Grid.
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: ASP.NET Core Grid Aggregate Customization | Syncfusion
-description: Learn how to customize aggregate styles in ASP.NET Core Data Grid with aggregate rows, cells, templates, and visual formatting options.
+title: Aggregate in ASP.NET Core Grid Component
+description: Learn here all about Aggregate in Syncfusion ASP.NET Core Grid component of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Aggregate
 publishingplatform: grid-sdk
 documentation: ug
 ---
 
-# Aggregate Style in ASP.NET Core Data Grid
+# Aggregate in ASP.NET Core Grid component
 
 You can customize the appearance of aggregate elements in the Syncfusion ASP.NET Core Grid component using CSS. Below are examples of how to customize the aggregate root element and the aggregate cell elements.
 

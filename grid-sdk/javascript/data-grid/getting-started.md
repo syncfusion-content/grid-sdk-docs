@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Javascript Data Grid Getting Started (Quick Setup Guide) | Syncfusion
-description: Learn how to install and configure the Javascript Data Grid. Set up a new Javascript app and enable paging, sorting, filtering, and grouping.
+title: Getting started with JavaScript DataGrid control | Syncfusion
+description:  Checkout and learn about Getting started with JavaScript DataGrid control of Syncfusion Essential JS 2 and more details.
 platform: grid-sdk
 control: Getting started 
 publishingplatform: grid-sdk
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Getting Started with Javascript Data Grid Control
+# Getting started in JavaScript DataGrid control
 
 This section explains the steps required to create a simple Essential<sup style="font-size:70%">&reg;</sup> JS 2 DataGrid and demonstrate the basic usage of the DataGrid control in a JavaScript application.
 

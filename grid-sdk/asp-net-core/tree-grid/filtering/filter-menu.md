@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Filter Menu in ASP.NET Core Tree Grid Component | Syncfusion
-description: Learn here all about Filter Menu in Syncfusion ASP.NET Core Tree Grid component of Syncfusion Essential JS 2 and more.
+title: ASP.NET Core TreeGrid Filter Menu | Syncfusion
+description: Learn how to use the filter menu in ASP.NET Core TreeGrid, including column filtering, filter operators, and custom filter options.
 platform: grid-sdk
 control: Filter Menu
 publishingplatform: grid-sdk
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Filter Menu in ASP.NET Core Tree Grid Component
+# Filter Menu in ASP.NET Core TreeGrid
 
 You can enable filter menu by setting the [`type`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridFilterSettings~Type.html) as **menu**. The filter menu UI will be rendered based on its column type, which allows you to filter data. You can filter the records with different operators.
 

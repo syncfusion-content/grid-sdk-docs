@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Footer aggregate in Vue Treegrid component | Syncfusion
-description: Learn here all about Footer aggregate in Syncfusion Vue Treegrid component of Syncfusion Essential JS 2 and more.
+title: Vue TreeGrid Footer Aggregate | Syncfusion
+description: Learn how to configure and display footer aggregate values in Vue TreeGrid, including API usage, templates, and formatting options.
 control: Footer aggregate 
 platform: grid-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Footer aggregate in Vue Treegrid component
+# Footer Aggregate in Vue TreeGrid
 
 Footer aggregate value is calculated for all the rows, and it is displayed in the footer cells. Use the [`footerTemplate`](https://ej2.syncfusion.com/vue/documentation/api/treegrid/aggregateColumnModel/#footertemplate) property to render the aggregate value in footer cells.
 

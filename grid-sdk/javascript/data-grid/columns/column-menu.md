@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Javascript Grid Column Menu | Syncfusion
-description: Learn how to configure and customize the column menu in Javascript Data Grid, including sorting, filtering, menu items, and column-specific actions.
+title: Column menu in JavaScript Grid control | Syncfusion
+description: Learn here all about Column menu in Syncfusion JavaScript Grid control of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Column menu 
 publishingplatform: grid-sdk
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Column Menu in Javascript Data Grid
+# Column menu in JavaScript Grid control
 
 The column menu in the JavaScript Grid control provides options to enable features such as sorting, grouping, filtering, column chooser, and autofit. When users click on the column header’s menu icon, a menu will be displayed with these integrated features. To enable the column menu, you need to set the [showColumnMenu](../../api/grid#showcolumnmenu) property to **true** in the Grid configuration.
 

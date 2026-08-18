@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Typescript Grid Row Drag and Drop | Syncfusion
-description: Learn how to implement row drag and drop in Typescript Data Grid using Syncfusion. Reorder rows, configure drop targets, and handle drag events efficiently.
+title: Row drag and drop in TypeScript Grid control | Syncfusion
+description: Learn here all about Row drag and drop in Syncfusion TypeScript Grid control of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Row drag and drop 
 publishingplatform: grid-sdk
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Row Drag and Drop in Typescript Data Grid
+# Row drag and drop in TypeScript Grid control
 
 The TypeScript Grid control provides built-in support for row drag and drop functionality. This feature allows you to easily rearrange rows within the grid by dragging and dropping them to new positions. Additionally, you can also drag and drop rows from one grid to another grid, as well as drag and drop rows to custom controls.
 

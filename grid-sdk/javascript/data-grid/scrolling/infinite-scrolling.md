@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Javascript Grid Infinite Scrolling | Syncfusion
-description: Learn how to implement infinite scrolling in Javascript Data Grid with incremental data loading, optimized retrieval, and smooth performance for large datasets.
+title: Infinite scrolling in JavaScript Grid control | Syncfusion
+description: Learn here all about Infinite scrolling in Syncfusion JavaScript Grid control of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Infinite scrolling 
 publishingplatform: grid-sdk
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Infinite Scroll in Javascript Data Grid
+# Infinite scroll in JavaScript Grid control
 
 The infinite scrolling feature in the Grid is a powerful tool for seamlessly handling extensive data sets without compromising grid performance. It operates on a “load-on-demand” concept, ensuring that data is fetched only when needed. In the default infinite scrolling mode, a new block of data is loaded each time the scrollbar reaches the end of the vertical scroller. This approach significantly enhances the user experience when working with large data collections in the JavaScript Grid.
 

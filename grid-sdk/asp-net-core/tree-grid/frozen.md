@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Frozen in ASP.NET Core Tree Grid Component
-description: Learn here all about Frozen in Syncfusion ASP.NET Core Tree Grid component of Syncfusion Essential JS 2 and more.
+title: ASP.NET Core TreeGrid Frozen Columns | Syncfusion
+description: Learn how to pin or freeze columns in ASP.NET Core TreeGrid to keep important columns visible while scrolling horizontally.
 platform: grid-sdk
 control: Frozen
 publishingplatform: grid-sdk
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Frozen rows and columns
+# Frozen Columns in ASP.NET Core TreeGrid
 
 ## Frozen rows and columns
 

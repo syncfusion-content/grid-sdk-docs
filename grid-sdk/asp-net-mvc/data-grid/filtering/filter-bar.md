@@ -1,14 +1,14 @@
 ---
 layout: post
-title: ASP.NET MVC Grid Filter Bar | Syncfusion
-description: Learn how to use Filter Bar in ASP.NET MVC Data Grid to apply column filters, configure filter operators and templates, and manage data efficiently.
+title: Filter Bar Syncfusion in ASP.NET MVC Grid Component
+description: Learn here all about Filter Bar in Syncfusion ASP.NET MVC Grid component of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Filter Bar
 publishingplatform: grid-sdk
 documentation: ug
 ---
 
-# Filter Bar in ASP.NET MVC Data Grid
+# Filter bar in ASP.NET MVC Grid component
 
 The filter bar feature provides a user-friendly way to filter data in the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Grid. It displays an input field for each column, allowing you to enter filter criteria and instantly see the filtered results.
 

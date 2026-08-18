@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Blazor TreeGrid Cell Customization and Features | Syncfusion
-description: Learn how to customize and manage cells in Blazor TreeGrid, including cell styling, rendering, formatting, and interaction features.
+title: Cell in Blazor TreeGrid Component | Syncfusion®
+description: Checkout and learn here all the features about cell in Blazor TreeGrid component and much more details.
 platform: grid-sdk
 control: Tree Grid
 documentation: ug
 ---
 
-# Cell Features in Blazor TreeGrid
+# Cell in Blazor TreeGrid Component
 
 ## Displaying the HTML content
 

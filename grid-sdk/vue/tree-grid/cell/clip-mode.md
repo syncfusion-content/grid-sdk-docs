@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Clip mode in Vue Treegrid component | Syncfusion
-description: Learn here all about Clip mode in Syncfusion Vue Treegrid component of Syncfusion Essential JS 2 and more.
+title: Vue TreeGrid Clip Mode | Syncfusion
+description: Learn how to configure clip mode in Vue TreeGrid to manage overflowing cell content using clipping, ellipsis, or ellipsis with tooltip display.
 control: Clip mode 
 platform: grid-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Clip mode in Vue Treegrid component
+# Clip Mode in Vue TreeGrid
 
 The clip mode provides options to display its overflow cell content and it can be defined by the [`columns.clipMode`](https://ej2.syncfusion.com/vue/documentation/api/treegrid/column/#clipmode) property.
 

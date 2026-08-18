@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Javascript Grid Grouping | Syncfusion
-description: Learn how to use grouping in Javascript Data Grid with configurable settings, aggregates, drop area control, reorderable columns, and expand or collapse options.
+title: Grouping in JavaScript Grid control | Syncfusion
+description: Learn here all about Grouping in Syncfusion JavaScript Grid control of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Grouping 
 publishingplatform: grid-sdk
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Grouping in Javascript Data Grid
+# Grouping in JavaScript Grid control
 
 The grouping feature in the JavaScript Grid allows you to organize data into a hierarchical structure, making it easier to expand and collapse records. You can group the columns by simply dragging and dropping the column header to the group drop area. To enable grouping in the grid, you need to set the [allowGrouping](../../api/grid#allowgrouping) property to **true**. Additionally, you can customize the grouping options using the [groupSettings](../../api/grid/groupSettings) property.
 

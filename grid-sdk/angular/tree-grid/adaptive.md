@@ -1,20 +1,20 @@
 ---
 layout: post
-title: Angular TreeGrid Adaptive UI | Syncfusion
-description: Learn how to enable adaptive UI in Angular TreeGrid for optimized mobile, tablet, and small-screen user experiences.
+title: Adaptive in Angular TreeGrid component | Syncfusion
+description: Learn how to enable adaptive UI support in the Syncfusion Angular TreeGrid component for optimal mobile and small screen user experiences.
 platform: grid-sdk
 control: Adaptive
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Adaptive UI in Angular TreeGrid
+# Adaptive in Angular TreeGrid component
 
 The TreeGrid user interface is designed for optimal viewing and improved usability on mobile devices and small screens.
 
 ## Render adaptive dialogs
 
-Enable the [`enableAdaptiveUI`](https://ej2.syncfusion.com/angular/documentation/api/treegrid#enableadaptiveui) property to allow the TreeGrid to render filter, sort, and edit dialogs in full-screen mode. This adaptive behavior enhances the user experience on devices with limited screen space.
+Enable the [`enableAdaptiveUI`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#enableadaptiveui) property to allow the TreeGrid to render filter, sort, and edit dialogs in full-screen mode. This adaptive behavior enhances the user experience on devices with limited screen space.
 
 The following example demonstrates adaptive dialog rendering:
 

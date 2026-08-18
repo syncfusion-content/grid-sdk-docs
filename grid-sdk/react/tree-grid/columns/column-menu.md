@@ -1,14 +1,14 @@
 ---
 layout: post
-title: React TreeGrid Column Menu | Syncfusion
-description: Learn how to use the column menu in React TreeGrid for sorting, filtering, column visibility, and other column actions.
+title: Column menu in React TreeGrid | Syncfusion
+description: Learn here all about Column menu in Syncfusion React TreeGrid of Syncfusion Essential JS 2 and more.
 control: Column menu 
 platform: grid-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Column Menu in React TreeGrid
+# Column menu in React TreeGrid
 
 The column menu provides built-in actions such as sorting, filtering, and autofit. A menu with these actions appears when the column menu icon is clicked. Enable the column menu by setting the [showColumnMenu](https://ej2.syncfusion.com/react/documentation/api/treegrid/#showcolumnmenu) property to true.
 

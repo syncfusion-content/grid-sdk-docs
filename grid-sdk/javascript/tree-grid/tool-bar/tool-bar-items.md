@@ -3,8 +3,7 @@ layout: post
 title: JavaScript TreeGrid Toolbar Items | Syncfusion
 description: Learn about configuring built-in and custom toolbar items in the JavaScript TreeGrid, including actions, alignment, and best practices.
 platform: grid-sdk
-control: Tool bar items 
-publishingplatform: grid-sdk
+control: Tool bar items
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
@@ -13,7 +12,7 @@ domainurl: https://help.syncfusion.com/grid-sdk
 
 ## Built-in toolbar items
 
-Built-in toolbar items execute standard actions of the treegrid, and it can be added by defining the [`toolbar`](../../api/treegrid/#toolbar) as a collection of built-in items. It renders the button with icon and text.
+Built-in toolbar items execute standard actions of the treegrid, and it can be added by defining the [`toolbar`](../../api/treegrid#toolbar) as a collection of built-in items. It renders the button with icon and text.
 
 The following table shows built-in toolbar items and its actions.
 
@@ -61,7 +60,7 @@ The following table shows built-in toolbar items and its actions.
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/treegrid/toolbar-cs3" %}
 {% endif %}
 
-> * The [`toolbar`](../../api/treegrid/#toolbar) has options to define both built-in and custom toolbar items.
+> * The [`toolbar`](../../api/treegrid#toolbar) has options to define both built-in and custom toolbar items.
 
 ## Enable or disable toolbar items
 

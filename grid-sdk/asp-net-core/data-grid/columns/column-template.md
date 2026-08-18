@@ -1,14 +1,14 @@
 ---
 layout: post
-title: ASP.NET Core Grid Column Template| Syncfusion
-description: Learn how to create custom column templates in ASP.NET Core Data Grid to render rich cell content, editors, formatting, and interactive UI elements.
+title: Column Template in Syncfusion ASP.NET Core Grid Component
+description: Learn here all about Column Template in Syncfusion ASP.NET Core Grid component of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Column Template
 publishingplatform: grid-sdk
 documentation: ug
 ---
 
-# Column Template in ASP.NET Core Data Grid
+# Column Template in ASP.NET Core Grid Component
 
 Grid component provides a `template` option that allows you to display custom elements in a column instead of the field value. This can be useful when you need to display images, buttons, or other custom content within a column.
 

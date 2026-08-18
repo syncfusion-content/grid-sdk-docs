@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Angular TreeGrid Checkbox Column | Syncfusion
-description: Learn how to enable and customize checkbox columns in Angular TreeGrid, including row selection and checkbox behavior.
+title: Checkbox Column in Angular TreeGrid component | Syncfusion
+description: Learn here all about Checkbox column in Syncfusion Angular TreeGrid component of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Checkbox Columns  
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Checkbox Column in Angular TreeGrid
+# Checkbox Column in Angular TreeGrid component
 
 The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular TreeGrid component supports checkbox selection in the tree column with hierarchical selection functionality using the [autoCheckHierarchy](https://ej2.syncfusion.com/angular/documentation/api/treegrid#autocheckhierarchy) property and the showCheckbox property of the column.
 

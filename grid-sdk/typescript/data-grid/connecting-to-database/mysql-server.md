@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Typescript Grid MySQL Server Integration | Syncfusion
-description: Learn how to connect Typescript Data Grid to MySQL Server using LINQ2DB, execute database queries, and manage grid data efficiently.
+title: MySQL Server Data Binding in Syncfusion TypeScript Grid
+description: Learn how to consume data from SQL Server using MySQL Client, bind it to Syncfusion TypeScript Grid, and perform CRUD operations.
 platform: grid-sdk
 control: grid
 keywords: adaptors, customadaptor, urladaptor, mysql, remotedata
@@ -10,7 +10,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# MySQL Server Integration in Typescript Data Grid
+# Connecting MySQL Server data to Syncfusion TypeScript Grid
 
 This section describes how to connect and retrieve data from a MySQL Server database using [MySQL data](https://www.nuget.org/packages/MySql.Data) and bind it to the Syncfusion TypeScript Grid.
 

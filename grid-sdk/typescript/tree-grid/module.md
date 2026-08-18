@@ -3,8 +3,7 @@ layout: post
 title: TypeScript TreeGrid Modules | Syncfusion
 description: Learn about module injection in TypeScript TreeGrid, including available feature modules, dependencies, and their purposes.
 platform: grid-sdk
-control: Module 
-publishingplatform: grid-sdk
+control: Module
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---

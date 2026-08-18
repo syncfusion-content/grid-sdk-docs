@@ -1,7 +1,7 @@
 ---
 layout: post
-title: ##Platform_Name## Grid Globalization and Localization | Syncfusion
-description: Learn how to use globalization in ##Platform_Name## Data Grid with localization, internationalization, culture switching, RTL support, and locale-specific formatting.
+title: Global local in TypeScript Grid control | Syncfusion
+description: Learn here all about Global local in Syncfusion TypeScript Grid control of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Global local 
 publishingplatform: grid-sdk
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Globalization in ##Platform_Name## Data Grid
+# Global local in TypeScript Grid control
 
 The TypeScript Grid control provides a feature known as Globalization (global and local), which makes the application more accessible and useful for individuals from different regions and language backgrounds. You have the ability to view data in your preferred language and format, resulting in an enhanced overall experience.
 

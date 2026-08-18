@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Angular TreeGrid Local Data | Syncfusion
-description: Learn to bind local data to Angular TreeGrid with support for hierarchical and self-referential (flat) data structures.
-platform: ej2-angular
+title: Local data in Angular TreeGrid component | Syncfusion
+description: Learn to bind local data to Syncfusion Angular TreeGrid with support for hierarchical and self-referential (flat) data structures.
 platform: grid-sdk
 control: Local data
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Local Data in Angular TreeGrid
+# Local data in Angular TreeGrid component
 
 In local data binding, the data source for rendering the TreeGrid control is retrieved from within the same application.
 

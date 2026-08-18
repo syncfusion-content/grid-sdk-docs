@@ -3,8 +3,7 @@ layout: post
 title: TypeScript TreeGrid Refresh Data Source | Syncfusion
 description: Learn how to refresh the data source in TypeScript TreeGrid to update records dynamically and keep displayed data synchronized with changes.
 platform: grid-sdk
-control: Refresh the data source 
-publishingplatform: grid-sdk
+control: Refresh the data source
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
@@ -30,7 +29,7 @@ Add/delete the data source record by using the following code.
 
 **Step 2**:
 
-Refresh the Tree Grid after the data source change by using the [`refresh`](../../api/treegrid/#refresh) method.
+Refresh the Tree Grid after the data source change by using the [`refresh`](../../api/treegrid#refresh) method.
 
 ```ts
     treegrid.refresh(); // refresh the Grid.
