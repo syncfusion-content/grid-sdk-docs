@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Aggregates in Vue Treegrid component | Syncfusion
-description: Learn here all about Aggregates in Syncfusion Vue Treegrid component of Syncfusion Essential JS 2 and more.
+title: Vue TreeGrid Aggregates | Syncfusion
+description: Learn how to configure, display, and customize aggregate values in Vue TreeGrid, including built-in aggregate types and child aggregation.
 control: Aggregates 
 platform: grid-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Aggregates in Vue Treegrid component
+# Aggregates in Vue TreeGrid
 
 Aggregate values are displayed in the TreeGrid footer and in parent row footer for child row aggregate values. It can be configured through `aggregates` property. [`field`](https://ej2.syncfusion.com/vue/documentation/api/treegrid/aggregateColumnModel/#field) and [`type`](https://ej2.syncfusion.com/vue/documentation/api/treegrid/aggregateColumnModel/#type) are the minimum properties required to represent an aggregate column.
 

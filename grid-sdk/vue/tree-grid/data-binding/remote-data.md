@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Remote data in Vue Treegrid component | Syncfusion
-description: Learn here all about Remote data in Syncfusion Vue Treegrid component of Syncfusion Essential JS 2 and more.
+title: Vue TreeGrid Remote Data | Syncfusion
+description: Learn how to bind remote data in the Vue TreeGrid, including load on demand, paging, virtualization, adaptors, and error handling.
 control: Remote data 
 platform: grid-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Remote data in Vue Treegrid component
+# Remote Data in Vue TreeGrid
 
 To bind remote data to TreeGrid component, assign service data as an instance of `DataManager` to the [`dataSource`](https://ej2.syncfusion.com/vue/documentation/api/treegrid#datasource) property. To interact with remote data source,  provide the endpoint `url` and define the [`hasChildMapping`](https://ej2.syncfusion.com/vue/documentation/api/treegrid#hasChildMapping) property of treegrid.
 
