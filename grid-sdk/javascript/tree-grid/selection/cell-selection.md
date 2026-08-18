@@ -1,20 +1,19 @@
 ---
 layout: post
-title: Cell selection in JavaScript Treegrid control | Syncfusion
-description: Learn here all about Cell selection in Syncfusion JavaScript Treegrid control of Syncfusion Essential JS 2 and more.
+title: JavaScript TreeGrid Cell Selection | Syncfusion
+description: Learn how to perform cell selection in the JavaScript TreeGrid, including selection modes, programmatic APIs, and retrieving selected cell indexes.more.
 platform: grid-sdk
-control: Cell selection 
-publishingplatform: grid-sdk
+control: Cell selection
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Cell selection in JavaScript Treegrid control
+# Cell Selection in JavaScript TreeGrid
 
 Cell Selection can be done through simple Mouse down or Arrow keys(up, down, left and right).
 
 TreeGrid supports two types of cell selection mode which can be set by using
-[`selectionSettings.cellSelectionMode`](../../api/treegrid/selectionSettings/#cellselectionmode). They are:
+[`selectionSettings.cellSelectionMode`](../../api/treegrid/selectionSettings#cellselectionmode). They are:
 
 * **`Flow`** - The `Flow` value is set by default.
 Select range of cells between the start index and end index which includes in between cells of rows.

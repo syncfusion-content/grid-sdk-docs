@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Olap in TypeScript Pivot Table component | Syncfusion
-description: Learn here all about Olap in Syncfusion TypeScript Pivot Table component of Syncfusion Essential JS 2 and more.
-platform: grid-sdk
-control: Olap 
-publishingplatform: grid-sdk
+title: OLAP in ##Platform_Name## Pivot Table | Syncfusion
+description: Learn how the ##Platform_Name## Pivot Table connects to OLAP data sources and supports MDX queries with axis configuration.
+platform: ej2-javascript
+control: OLAP
+publishingplatform: ##Platform_Name##
 documentation: ug
-domainurl: https://help.syncfusion.com/grid-sdk
+domainurl: ##DomainURL##
 ---
 
-# OLAP in TypeScript Pivot Table component
+# OLAP in ##Platform_Name## Pivot Table
 
 ## Getting Started
 

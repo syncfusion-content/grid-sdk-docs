@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Adding Header and Footer in ASP.NET Core Tree Grid Component | Syncfusion
-description: Learn here all about Adding Header and Footer in Syncfusion ASP.NET Core Tree Grid component of Syncfusion Essential JS 2 and more.
+title: ASP.NET Core TreeGrid Excel Export Headers and Footers | Syncfusion
+description: Learn how to add headers and footers to Excel exports in ASP.NET Core TreeGrid, including configuration, customization, and export options.
 platform: grid-sdk
 control: Adding Header and Footer
 publishingplatform: grid-sdk
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Adding Header and Footer
+# Adding Headers and Footers in ASP.NET Core TreeGrid
 
 The excel export provides an option to include header and footer content for exported excel document.
 

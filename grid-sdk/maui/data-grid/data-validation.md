@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Data Validation in .NET MAUI DataGrid control | Syncfusion®
-description: Learn all about Data Validation support in Syncfusion® .NET MAUI DataGrid (SfDataGrid) control and more.
+title: Data Validation in .NET MAUI Data Grid | Syncfusion®
+description: Learn all about data validation in Syncfusion® .NET MAUI Data Grid, including validation rules, error handling, and data input customization.
 platform: grid-sdk
 control: SfDataGrid
 documentation: UG

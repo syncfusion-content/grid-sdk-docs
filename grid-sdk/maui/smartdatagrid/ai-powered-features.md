@@ -1,7 +1,7 @@
 ---
 layout: post
-title: AI-Powered Features in MAUI SmartDataGrid control | Syncfusion®
-description: Learn here all about how to use AI-powered natural language commands in Syncfusion® .NET MAUI SmartDataGrid (SfSmartDataGrid) control and more.
+title: AI-Powered Features in .NET MAUI Smart Data Grid control | Syncfusion®
+description: Learn to use AI-powered natural language commands in in Syncfusion® .NET MAUI Smart Data Grid to analyze, interact with, and manage data effortlessly.
 platform: grid-sdk
 control: SfSmartDataGrid
 documentation: UG

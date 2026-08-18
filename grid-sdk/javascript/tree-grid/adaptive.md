@@ -1,19 +1,18 @@
 ---
 layout: post
-title: Adaptive in JavaScript Treegrid control | Syncfusion
-description: Learn here all about Adaptive in Syncfusion JavaScript Treegrid control of Syncfusion Essential JS 2 and more.
+title:  JavaScript TreeGrid Adaptive UI | Syncfusion
+description: Learn how to enable adaptive UI in JavaScript TreeGrid for optimized mobile, tablet, and small-screen user experiences.
 platform: grid-sdk
-control: Adaptive 
-publishingplatform: grid-sdk
+control: Adaptive
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Adaptive in JavaScript Treegrid control
+# Adaptive UI in JavaScript TreeGrid
 
 The Tree Grid user interface (UI) was redesigned to provide an optimal viewing experience and improve usability on small screens. This interface will render the filter, edit dialog and other features adaptively. For example, Filtering opens the UI for user in a pop-up occupying the entire screen.
 
-To make the tree grid adaptive, set the [`enableAdaptiveUI`](../api/treegrid/#enableAdaptiveUI) to true.
+To make the tree grid adaptive, set the [`enableAdaptiveUI`](../api/treegrid#enableAdaptiveUI) to true.
 
 {% if page.publishingplatform == "typescript" %}
 

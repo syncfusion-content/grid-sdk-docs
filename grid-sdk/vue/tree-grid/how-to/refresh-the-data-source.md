@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Refresh the data source in Vue Treegrid component | Syncfusion
-description: Learn here all about Refresh the data source in Syncfusion Vue Treegrid component of Syncfusion Essential JS 2 and more.
+title: Vue TreeGrid Refresh Data Source | Syncfusion
+description: Learn how to refresh the Vue TreeGrid data source after adding or deleting records to keep the displayed data synchronized with updates.
 control: Refresh the data source 
 platform: grid-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Refresh the data source in Vue Treegrid component
+# Refresh the Data Source in Vue TreeGrid
 
 ## How to refresh the datasource
 

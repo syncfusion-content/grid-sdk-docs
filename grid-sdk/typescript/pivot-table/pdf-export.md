@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Pdf export in TypeScript Pivot Table component | Syncfusion
-description: Learn here all about Pdf export in Syncfusion TypeScript Pivot Table component of Syncfusion Essential JS 2 and more.
-platform: grid-sdk
-control: Pdf export 
-publishingplatform: grid-sdk
+title: PDF Export in ##Platform_Name## Pivot Table | Syncfusion
+description: Learn how the ##Platform_Name## Pivot Table exports to PDF via `pdfExport`, with multiple Pivot Tables supported in a single document using `pivotTableIds`.
+platform: ej2-javascript
+control: PDF export
+publishingplatform: ##Platform_Name##
 documentation: ug
-domainurl: https://help.syncfusion.com/grid-sdk
+domainurl: ##DomainURL##
 ---
 
-# PDF export in TypeScript Pivot Table component
+# PDF Export in ##Platform_Name## Pivot Table
 
 The Typescript Pivot Table allows exporting pivot table data as a PDF document. To enable PDF export, inject the `PDFExport` module into the Pivot Table and set the [`allowPdfExport`](https://ej2.syncfusion.com/documentation/api/pivotview/index-default#allowpdfexport) property to **true**. Once enabled, use the [`pdfExport`](https://ej2.syncfusion.com/documentation/api/pivotview/index-default#pdfexport) method to generate and download the PDF file.
 
@@ -381,7 +381,7 @@ In the following code example, the row and column spans are adjusted for empty c
 
 ### Exporting with hyperlinks and images
 
-The Pivot Table allows adding hyperlinks and images to cells during PDF export. The [`pdfQueryCellInfo`](https://ej2.syncfusion.com/documentation/api/grid/#pdfquerycellinfo) event handles row and value cells, while the [`pdfHeaderQueryCellInfo`](https://ej2.syncfusion.com/documentation/api/pivotview/gridSettingsModel#pdfheaderquerycellinfo) event handles header cells. Both events provide access to the [hyperlink](https://ej2.syncfusion.com/documentation/api/grid/pdfquerycellinfoeventargs#hyperlink) property to set URLs in cells and the [image](https://ej2.syncfusion.com/documentation/api/grid/pdfquerycellinfoeventargs#image) property to add images to cells.
+The Pivot Table allows adding hyperlinks and images to cells during PDF export. The [`pdfQueryCellInfo`](https://ej2.syncfusion.com/documentation/api/grid#pdfquerycellinfo) event handles row and value cells, while the [`pdfHeaderQueryCellInfo`](https://ej2.syncfusion.com/documentation/api/pivotview/gridSettingsModel#pdfheaderquerycellinfo) event handles header cells. Both events provide access to the [hyperlink](https://ej2.syncfusion.com/documentation/api/grid/pdfquerycellinfoeventargs#hyperlink) property to set URLs in cells and the [image](https://ej2.syncfusion.com/documentation/api/grid/pdfquerycellinfoeventargs#image) property to add images to cells.
 
 > PDF export supports base64 strings for exporting images.
 
@@ -522,7 +522,7 @@ The following example demonstrates how to apply conditional formatting to the **
 
 ## Enabling horizontal overflow
 
-The Pivot Table component supports exporting all columns on a single page in the exported PDF document, even if the number of columns exceeds the maximum page limits. This functionality ensures readability and comprehensiveness of the exported PDF. To enable this option, set the [allowHorizontalOverflow](https://ej2.syncfusion.com/documentation/api/grid/pdfExportProperties/#allowhorizontaloverflow) property in the [`pdfExportProperties`](https://ej2.syncfusion.com/documentation/api/grid/pdfexportproperties) object to **true**.
+The Pivot Table component supports exporting all columns on a single page in the exported PDF document, even if the number of columns exceeds the maximum page limits. This functionality ensures readability and comprehensiveness of the exported PDF. To enable this option, set the [allowHorizontalOverflow](https://ej2.syncfusion.com/documentation/api/grid/pdfExportProperties#allowhorizontaloverflow) property in the [`pdfExportProperties`](https://ej2.syncfusion.com/documentation/api/grid/pdfexportproperties) object to **true**.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}

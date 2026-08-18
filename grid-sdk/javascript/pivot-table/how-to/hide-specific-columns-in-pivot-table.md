@@ -1,15 +1,15 @@
 ---
 layout: post
 title: Hide specific columns in pivot table in Javascript | Syncfusion
-description: Learn here all about Hide specific columns in pivot table in Syncfusion JavaScript Pivot Table component of Syncfusion Essential JS 2 and more.
-platform: grid-sdk
+description: Learn here all about Hide specific columns in pivot table in Syncfusion ##Platform_Name## Pivot Table component of Syncfusion Essential JS 2 and more.
+platform: ej2-javascript
 control: Hide specific columns in pivot table 
-publishingplatform: grid-sdk
+publishingplatform: ##Platform_Name##
 documentation: ug
-domainurl: https://help.syncfusion.com/grid-sdk
+domainurl: ##DomainURL##
 ---
 
-# Hide specific columns in the JavaScript Pivot Table component
+# Hide specific columns in the ##Platform_Name## Pivot Table component
 
 By using the [`columnRender`](https://ej2.syncfusion.com/documentation/api/pivotview/gridSettings#columnrender) event in the [`gridSettings`](https://ej2.syncfusion.com/documentation/api/pivotview/gridSettings), you can hide specific column(s) in the pivot table. In the example below, the **"Units Sold"** column under **"FY 2016"** is hidden by setting its **visible** property to **false** via the [`columnRender`](https://ej2.syncfusion.com/documentation/api/pivotview/gridSettings#columnrender) event.
 

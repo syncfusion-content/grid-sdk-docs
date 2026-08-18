@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Column resizing in Vue Treegrid component | Syncfusion
-description: Learn here all about Column resizing in Syncfusion Vue Treegrid component of Syncfusion Essential JS 2 and more.
+title: Vue TreeGrid Column Resizing | Syncfusion
+description: Learn how to resize columns in Vue TreeGrid, including column width adjustment, resizing modes, and auto-fit options.
 control: Column resizing 
 platform: grid-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Column resizing in Vue Treegrid component
+# Column Resizing in Vue TreeGrid
 
 Column width can be resized by clicking and dragging the right edge of the column header. While dragging, the width of the respective column will be resized immediately. Each column can be auto resized by double-clicking the right edge of the column header to fit the width of that column based on the widest cell content. To enable column resize, set the [`allowResizing`](https://ej2.syncfusion.com/vue/documentation/api/treegrid/#allowresizing) property to true.
 

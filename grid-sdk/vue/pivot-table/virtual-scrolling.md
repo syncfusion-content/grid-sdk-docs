@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Virtual scrolling in Vue Pivot Table component | Syncfusion
-description: Learn here all about Virtual scrolling in Syncfusion Vue Pivot Table component of Syncfusion Essential JS 2 and more.
+title: Virtual Scrolling in Vue Pivot Table | Syncfusion
+description: Learn how the Vue Pivot Table renders only rows and columns in the current viewport via enableVirtualization for efficient large-dataset scrolling.
 control: Virtual scrolling 
-platform: grid-sdk
+platform: ej2-vue
 documentation: ug
-domainurl: https://help.syncfusion.com/grid-sdk
+domainurl: ##DomainURL##
 ---
 
 <!-- markdownlint-disable MD036 -->
 
-# Virtual Scrolling in Vue Pivot Table Component
+# Virtual Scrolling in Vue Pivot Table
 
 ## Virtual Scrolling
 

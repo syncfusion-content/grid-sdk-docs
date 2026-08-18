@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Grouping in MAUI DataGrid control | Syncfusion®
-description: Learn here all about Grouping support in Syncfusion® MAUI DataGrid (SfDataGrid) control and more about it.
+title: Grouping in .NET MAUI Data Grid | Syncfusion®
+description: Learn how to group data in Syncfusion® .NET MAUI Data Grid, including grouping options, customization features, and data organization techniques.
 platform: grid-sdk
 control: SfDataGrid
 documentation: UG

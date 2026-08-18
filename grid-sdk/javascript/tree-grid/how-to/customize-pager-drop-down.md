@@ -1,17 +1,16 @@
 ---
 layout: post
-title: Customize pager drop down in JavaScript Treegrid control | Syncfusion
-description: Learn here all about Customize pager drop down in Syncfusion JavaScript Treegrid control of Syncfusion Essential JS 2 and more.
+title: JavaScript TreeGrid Pager Dropdown Customization | Syncfusion
+description: Learn how to customize the pager dropdown in JavaScript TreeGrid of Essential JS 2, including setting page size values using pageSettings.
 platform: grid-sdk
-control: Customize pager drop down 
-publishingplatform: grid-sdk
+control: Customize pager drop down
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Customize pager drop down in JavaScript Treegrid control
+# Customize Pager Dropdown in JavaScript TreeGrid
 
-To customize default values of pager dropdown, you need to define [`pageSizes`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/pageSettings/#pagesizes) as array of strings.
+To customize default values of pager dropdown, you need to define [`pageSizes`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/pageSettings#pagesizes) as array of strings.
 
 {% if page.publishingplatform == "typescript" %}
 

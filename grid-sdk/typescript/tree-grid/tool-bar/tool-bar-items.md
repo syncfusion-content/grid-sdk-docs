@@ -1,19 +1,18 @@
 ---
 layout: post
-title: Tool bar items in TypeScript Treegrid control | Syncfusion
-description: Learn here all about Tool bar items in Syncfusion TypeScript Treegrid control of Syncfusion Essential JS 2 and more.
+title: TypeScript TreeGrid Toolbar Items | Syncfusion
+description: Learn about configuring built-in and custom toolbar items in the TypeScript TreeGrid, including actions, alignment, and best practices.
 platform: grid-sdk
-control: Tool bar items 
-publishingplatform: grid-sdk
+control: Tool bar items
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Tool bar items in TypeScript Treegrid control
+# Custom Toolbar in TypeScript TreeGrid
 
 ## Built-in toolbar items
 
-Built-in toolbar items execute standard actions of the treegrid, and it can be added by defining the [`toolbar`](../../api/treegrid/#toolbar) as a collection of built-in items. It renders the button with icon and text.
+Built-in toolbar items execute standard actions of the treegrid, and it can be added by defining the [`toolbar`](../../api/treegrid#toolbar) as a collection of built-in items. It renders the button with icon and text.
 
 The following table shows built-in toolbar items and its actions.
 
@@ -61,7 +60,7 @@ The following table shows built-in toolbar items and its actions.
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/treegrid/toolbar-cs3" %}
 {% endif %}
 
-> * The [`toolbar`](../../api/treegrid/#toolbar) has options to define both built-in and custom toolbar items.
+> * The [`toolbar`](../../api/treegrid#toolbar) has options to define both built-in and custom toolbar items.
 
 ## Enable or disable toolbar items
 

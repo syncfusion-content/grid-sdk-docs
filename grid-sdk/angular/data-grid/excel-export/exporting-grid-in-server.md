@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Angular Grid - Server-Side Export | Syncfusion
-description: Angular Grid server‑side Excel export enables backend workbook generation, endpoint setup, and scalable large‑data exports without blocking clients.
+title: Angular Grid Server-Side Excel Export | Syncfusion
+description: Learn how to export Angular Data Grid data on the server, generate Excel workbooks in the backend, and handle large-scale exports efficiently.
 platform: grid-sdk
 control: Server-side Export
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Server-Side Excel Export
+# Server-Side Excel Export in Angular Data Grid
 
 The [Angular Data Grid](https://www.syncfusion.com/angular-components/angular-data-grid) component provides server-side Excel export functionality using the Grid server export library. This approach enables Excel export operations to execute on the server, delivering enhanced security and flexibility. Server-side export requires configuring server dependencies and implementing the necessary server configuration.
 

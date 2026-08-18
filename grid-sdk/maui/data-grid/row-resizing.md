@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Row Resizing in .NET MAUI DataGrid control | Syncfusion®
-description: Learn about interactive row resizing support in Syncfusion® MAUI DataGrid (SfDataGrid) control and how to use the new API.
+title: Row Resizing in .NET MAUI Data Grid | Syncfusion®
+description: Learn how to use interactive row resizing in Syncfusion® .NET MAUI Data Grid and customize row heights dynamically through user interactions.
 platform: grid-sdk
 control: SfDataGrid
 documentation: ug

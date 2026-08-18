@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Persisting data in server in JavaScript Treegrid control | Syncfusion
-description: Learn here all about Persisting data in server in Syncfusion JavaScript Treegrid control of Syncfusion Essential JS 2 and more.
+title: JavaScript TreeGrid Persisting Data in Server | Syncfusion
+description: Learn how to persist edited data in a database using RESTful services and DataManager in the JavaScript TreeGrid.
 platform: grid-sdk
-control: Persisting data in server 
-publishingplatform: grid-sdk
+control: Persisting data in server
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Persisting data in server in JavaScript Treegrid control
+# Persisting data in Server in JavaScript TreeGrid
 
 Edited data can be persisted in the database using the RESTful web services.
 

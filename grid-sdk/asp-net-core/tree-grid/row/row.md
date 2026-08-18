@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Rows Customization in Syncfusion ASP.NET Core Tree Grid Component
-description: Learn here all about rows customization in Syncfusion ASP.NET Core Tree Grid component and much more.
+title: ASP.NET Core TreeGrid Rows | Syncfusion
+description: Learn how to work with rows in ASP.NET Core TreeGrid, including row customization, selection, styling, rendering, and row-level operations.
 platform: grid-sdk
 control: Row
 publishingplatform: grid-sdk
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Rows in ASP.NET Core Tree Grid Component
+# Rows in ASP.NET Core TreeGrid
 
 The row represents record details fetched from data source.
 

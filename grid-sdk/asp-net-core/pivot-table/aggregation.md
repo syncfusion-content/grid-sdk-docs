@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Aggregation in ASP.NET Core Syncfusion Pivot Table Component
-description: Learn here all about Aggregation in Syncfusion ASP.NET Core Pivot Table component of Syncfusion Essential JS 2 and more.
-platform: grid-sdk
+title: Aggregation in ASP.NET Core Pivot Table | Syncfusion
+description: Learn how the ASP.NET Core Pivot Table performs value-axis aggregations like Sum, Avg, Min, Max, Count, and DifferenceFrom on relational data.
+platform: ej2-asp-core-mvc
 control: Aggregation
-publishingplatform: grid-sdk
+publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
 
-# Aggregation in ASP.NET Core Pivot Table component
+# Aggregation in ASP.NET Core Pivot Table
 
 > This feature is applicable only for the relational data source.
 

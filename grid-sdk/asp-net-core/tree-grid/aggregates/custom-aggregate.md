@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Custom Aggregate in ASP.NET Core Tree Grid Component | Syncfusion
-description: Learn here all about Custom Aggregate in Syncfusion ASP.NET Core Tree Grid component of Syncfusion Essential JS 2 and more.
+title: ASP.NET Core TreeGrid Custom Aggregate | Syncfusion
+description: Learn about implementing custom aggregates in the ASP.NET Core TreeGrid, including configuration and usage of custom aggregation functions.
 platform: grid-sdk
 control: Custom Aggregate
 publishingplatform: grid-sdk
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Custom Aggregate in ASP.NET Core Tree Grid Component
+# Custom Aggregate in ASP.NET Core TreeGrid
 
 To calculate the aggregate value with your own aggregate functions, use the custom aggregate option. To use custom aggregation, specify the [`type`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridAggregateColumn~Type.html) as **Custom**, and provide the custom aggregate function in the [`customAggregate`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridAggregateColumn~CustomAggregate.html) property.
 

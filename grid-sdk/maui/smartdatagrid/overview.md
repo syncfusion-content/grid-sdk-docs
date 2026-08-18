@@ -1,7 +1,7 @@
 ---
 layout: post
-title: About .NET MAUI Smart DataGrid control | Syncfusion®
-description: Learn about the Syncfusion® .NET MAUI Smart DataGrid (SfSmartDataGrid) control and its AI-assisted features.
+title: About Syncfusion .NET MAUI Smart Data Grid Control | Syncfusion®
+description: Learn about introduction of Syncfusion® Essential Studio .NET MAUI Smart Data Grid control and more details.
 platform: grid-sdk
 control: SfSmartDataGrid
 documentation: ug
@@ -68,7 +68,7 @@ The following table summarizes the globalization support available in this contr
 <th align="center">Keyboard navigation</th>
 </tr>
 <tr>
-<td><a href="/maui/smartdatagrid/overview">Smart DataGrid</a></td>
+<td><a href="/maui/smartdatagrid/overview" aria-label="Navigate to Smart DataGrid documentation">Smart DataGrid</a></td>
 <td align="center"><img src="../Images/full-support.svg" alt="full-support" width="16" /></td>
 <td align="center"><img src="../Images/full-support.svg" alt="full-support" width="16" /></td>
 <td align="center"><img src="../Images/not-applicable.svg" alt="not-applicable" width="16" /></td>

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Data Binding in .NET MAUI DataGrid control | Syncfusion®
-description: Learn all about Data Binding support in Syncfusion® .NET MAUI DataGrid (SfDataGrid) control and more.
+title: Data Binding in .NET MAUI Data Grid | Syncfusion®
+description: Learn all about data binding in Syncfusion® .NET MAUI Data Grid, including binding data sources, data updates, and customization options.
 platform: grid-sdk
 control: SfDataGrid
 documentation: UG

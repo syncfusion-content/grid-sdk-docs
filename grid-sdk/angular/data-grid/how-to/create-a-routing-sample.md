@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Angular Grid – Create Routing Example | Syncfusion
-description: Angular Grid provides routing sample patterns, state preservation techniques, routing integration examples, and guidance for route-driven grid scenarios.
+title: Angular Grid Routing Integration | Syncfusion
+description: Learn how to integrate Angular Data Grid with Angular routing using navigation, route configuration, and component-based grid views.
 platform: grid-sdk
 control: Create a routing sample
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Routing sample in Angular Grid Component
+# Routing Integration in Angular Data Grid
 
 Angular routing is a core feature that manages navigation within a single-page application (SPA), providing seamless transitions between different views or components without refreshing the page.
 
@@ -62,9 +62,9 @@ Add router links to the component template using the `routerLink` attribute on a
 ```ts
 <nav>
   <ul>
-    <li><a routerLink="/">Home</a></li>
-    <li><a routerLink="/about">Grid 1</a></li>
-    <li><a routerLink="/contact">Grid 2</a></li>
+    <li><a routerLink="/" aria-label="Go to Home page">Home</a></li>
+    <li><a routerLink="/about" aria-label="Go to Grid 1 page">Grid 1</a></li>
+    <li><a routerLink="/contact" aria-label="Go to Grid 2 page">Grid 2</a></li>
   </ul>
 </nav>
 <router-outlet></router-outlet>

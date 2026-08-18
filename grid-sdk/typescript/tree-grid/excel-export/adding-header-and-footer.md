@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Adding header and footer in TypeScript Treegrid control | Syncfusion
-description: Learn here all about Adding header and footer in Syncfusion TypeScript Treegrid control of Syncfusion Essential JS 2 and more.
+title: TypeScript TreeGrid Excel Export Headers and Footers | Syncfusion
+description: Learn how to add headers and footers to Excel exports in TypeScript TreeGrid, including configuration, customization, and export options.
 platform: grid-sdk
-control: Adding header and footer 
-publishingplatform: grid-sdk
+control: Adding header and footer
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Adding header and footer in TypeScript Treegrid control
+# Adding Headers and Footers in TypeScript TreeGrid
 
 The excel export provides an option to include header and footer content for exported excel document.
 

@@ -1,19 +1,18 @@
 ---
 layout: post
-title: Column menu in JavaScript Treegrid control | Syncfusion
-description: Learn here all about Column menu in Syncfusion JavaScript Treegrid control of Syncfusion Essential JS 2 and more.
+title: JavaScript TreeGrid Column Menu | Syncfusion
+description: Learn how to use the column menu in JavaScript TreeGrid for sorting, filtering, column visibility, and other column actions.
 platform: grid-sdk
-control: Column menu 
-publishingplatform: grid-sdk
+control: Column menu
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Column menu in JavaScript Treegrid control
+# Column Menu in JavaScript TreeGrid
 
-The column menu has options to integrate features like sorting, filtering, and autofit. It will show a menu with the integrated feature when users click on multiple icon of the column. To enable column menu, you need to define the [`showColumnMenu`](../../api/treegrid/#showcolumnmenu) property as true.
+The column menu has options to integrate features like sorting, filtering, and autofit. It will show a menu with the integrated feature when users click on multiple icon of the column. To enable column menu, you need to define the [`showColumnMenu`](../../api/treegrid#showcolumnmenu) property as true.
 
-By default, column menu is enabled for all columns and you can disable column menu for a particular column by defining the [`showColumnMenu`](../../api/treegrid/column/#showcolumnmenu) as false in [`columns`](../../api/treegrid#column) property.
+By default, column menu is enabled for all columns and you can disable column menu for a particular column by defining the [`showColumnMenu`](../../api/treegrid/column#showcolumnmenu) as false in [`columns`](../../api/treegrid#column) property.
 
 To use the column menu, inject the `ColumnMenu` module in the treegrid.
 
@@ -56,11 +55,11 @@ The default items are displayed in following table.
 
 ## Custom column menu item
 
-The custom column menu items can be added to the column menu by defining the [`columnMenuItems`](https://ej2.syncfusion.com/documentation/api/treegrid/#columnmenuitems) as a collection of the [`MenuItemModel`](https://ej2.syncfusion.com/documentation/api/context-menu/menuItemModel).
+The custom column menu items can be added to the column menu by defining the [`columnMenuItems`](https://ej2.syncfusion.com/documentation/api/treegrid#columnmenuitems) as a collection of the [`MenuItemModel`](https://ej2.syncfusion.com/documentation/api/context-menu/menuItemModel).
 
-The action for custom column menu items can be performed using [`columnMenuClick`](https://ej2.syncfusion.com/documentation/api/treegrid/#contextmenuclick) event.
+The action for custom column menu items can be performed using [`columnMenuClick`](https://ej2.syncfusion.com/documentation/api/treegrid#contextmenuclick) event.
 
-In the below example, clear sorting action was performed through `columnMenuItems` by using [`clearSorting`](https://ej2.syncfusion.com/documentation/api/treegrid/#clearsorting) method of the Tree Grid.
+In the below example, clear sorting action was performed through `columnMenuItems` by using [`clearSorting`](https://ej2.syncfusion.com/documentation/api/treegrid#clearsorting) method of the Tree Grid.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -91,7 +90,7 @@ In the below example, clear sorting action was performed through `columnMenuItem
 
 ## Customize menu items for particular columns
 
-It is possible to customize specific items from the column menu for particular [`columns`](../../api/treegrid#column) using [`columnMenuOpen`](https://ej2.syncfusion.com/documentation/api/treegrid/#columnmenuopen) event. `columnMenuOpen` event can be utilized to determine which items to customize in column menu.
+It is possible to customize specific items from the column menu for particular [`columns`](../../api/treegrid#column) using [`columnMenuOpen`](https://ej2.syncfusion.com/documentation/api/treegrid#columnmenuopen) event. `columnMenuOpen` event can be utilized to determine which items to customize in column menu.
 
 The following example shows how to hide the built-in **Filter** menu item when the column menu is opened for the **taskName** column, while allowing it to remain visible for all other columns.
 

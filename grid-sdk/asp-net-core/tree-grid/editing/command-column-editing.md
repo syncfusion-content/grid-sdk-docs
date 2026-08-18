@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Command Column Editing in ASP.NET Core Tree Grid Component | Syncfusion
-description: Learn here all about Command Column Editing in Syncfusion ASP.NET Core Tree Grid component of Syncfusion Essential JS 2 and more.
+title: ASP.NET Core TreeGrid Command Column Editing | Syncfusion
+description: Learn how to use command column editing in the ASP.NET Core TreeGrid to add CRUD and custom action buttons for row-level operations.
 platform: grid-sdk
 control: Command Column Editing
 publishingplatform: grid-sdk
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Command Column Editing in ASP.NET Core Tree Grid Component
+# Command Column Editing in ASP.NET Core TreeGrid
 
 The command column provides an option to add CRUD action buttons in a column. This can be defined by the [`commands`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridColumn~Commands.html) property of [`e-treegrid-column`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridColumn.html) tag helper.
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Master Details View in .NET MAUI DataGrid control | Syncfusion®
-description: Learn all about Master Details View support in Syncfusion® .NET MAUI DataGrid (SfDataGrid) control, its elements, and more here.
+title: Master Details View in .NET MAUI Data Grid | Syncfusion®
+description: Learn how to use Master Details View in Syncfusion® .NET MAUI Data Grid to display hierarchical data with expandable parent and child records.
 platform: grid-sdk
 control: SfDataGrid
 documentation: UG

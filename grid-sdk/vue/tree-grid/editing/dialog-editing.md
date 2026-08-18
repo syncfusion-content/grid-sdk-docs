@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Dialog editing in Vue Treegrid component | Syncfusion
-description: Learn here all about Dialog editing in Syncfusion Vue Treegrid component of Syncfusion Essential JS 2 and more.
+title: Vue TreeGrid Dialog Editing | Syncfusion
+description: Learn how to use dialog editing in Vue TreeGrid to edit records through customizable forms and perform CRUD operations.
 control: Dialog editing 
 platform: grid-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Dialog editing in Vue Treegrid component
+# Dialog Editing in Vue TreeGrid
 
 In Dialog edit mode, when you start editing the currently selected row, data will be shown on a dialog. You can change the cell values and save edited data to the data source.
 

@@ -1,21 +1,20 @@
 ---
 layout: post
-title: Getting started with TypeScript Tree Grid control | Syncfusion
-description:  Checkout and learn about Getting started with TypeScript Tree Grid control of Syncfusion Essential JS 2 and more details.
+title: TypeScript TreeGrid Getting Started | Syncfusion
+description: Learn how to get started with TypeScript TreeGrid, including installation, configuration, data binding, and basic setup.
 platform: grid-sdk
-control: Getting started 
-publishingplatform: grid-sdk
+control: Getting started
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-#  Getting started in TypeScript Tree Grid control
+# Getting Started with TypeScript TreeGrid
 
 The Tree Grid component is essential for displaying hierarchical data in a tabular format. It is commonly used for project management (displaying tasks and subtasks), organizational structures (displaying company hierarchies), file systems, and any scenario where data has parent-child relationships.
 
 This section explains the steps to create a simple Tree Grid and demonstrates the basic usage of the Tree Grid component using the Essential<sup style="font-size:70%">&reg;</sup> JS 2 [quickstart](https://github.com/SyncfusionExamples/ej2-quickstart-webpack-) seed repository. This seed repository is pre-configured with the Essential<sup style="font-size:70%">&reg;</sup> JS 2 package.
 
-> This application is integrated with the `webpack.config.js` configuration and uses the latest version of the [webpack-cli](https://webpack.js.org/api/cli/#commands). It requires node `v14.15.0` or higher. For more information about webpack and its features, refer to the [webpack documentation](https://webpack.js.org/guides/getting-started/).
+> This application is integrated with the `webpack.config.js` configuration and uses the latest version of the [webpack-cli](https://webpack.js.org/api/cli#commands). It requires node `v14.15.0` or higher. For more information about webpack and its features, refer to the [webpack documentation](https://webpack.js.org/guides/getting-started).
 
 
 ## Prerequisites
@@ -23,8 +22,8 @@ This section explains the steps to create a simple Tree Grid and demonstrates th
 Ensure the following tools are installed on your machine:
  
 * [Git](https://git-scm.com/downloads)
-* [Node.js](https://nodejs.org/en/)
-* [Visual Studio Code](https://code.visualstudio.com/)
+* [Node.js](https://nodejs.org/en)
+* [Visual Studio Code](https://code.visualstudio.com)
 
 ## Set up development environment
 
