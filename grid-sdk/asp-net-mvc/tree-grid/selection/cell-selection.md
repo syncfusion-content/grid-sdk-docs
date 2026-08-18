@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Cell Selection in ASP.NET MVC Tree Grid Component | Syncfusion
-description: Learn here all about Cell Selection in Syncfusion ASP.NET MVC Tree Grid component of Syncfusion Essential JS 2 and more.
+title: ASP.NET MVC TreeGrid Cell Selection | Syncfusion
+description: Learn how to perform cell selection in the ASP.NET MVC TreeGrid, including selection modes, programmatic APIs, and retrieving selected cell indexes.
 platform: grid-sdk
 control: Cell Selection
 publishingplatform: grid-sdk
 documentation: ug
 ---
 
-# Cell Selection in ASP.NET MVC Tree Grid Component
+# Cell Selection in ASP.NET MVC TreeGrid
 
 Cell selection can be done through simple mouse down or arrow keys (up, down, left, and right).
 
