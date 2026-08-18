@@ -1,18 +1,18 @@
 ---
 layout: post
-title: Cell in Vue Treegrid component | Syncfusion
-description: Learn here all about Cell in Syncfusion Vue Treegrid component of Syncfusion Essential JS 2 and more.
+title: Vue TreeGrid Cell Customization | Syncfusion
+description: Learn how to customize Vue TreeGrid cells using custom styles, attributes, and grid lines to improve appearance and enhance data presentation.
 control: Cell 
 platform: grid-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Cell in Vue Treegrid component
+# Cell Customization in Vue TreeGrid
 
 ## Customize cell styles
 
-The appearance of cells can be customized by using the [`queryCellInfo`](https://ej2.syncfusion.com/vue/documentation/api/treegrid/#querycellinfo) event. The [`queryCellInfo`](https://ej2.syncfusion.com/vue/documentation/api/treegrid/#querycellinfo) event triggers for every cell. In that event handler, you can get `QueryCellInfoEventArgs` that contains the details of the cell.
+The appearance of cells can be customized by using the [`queryCellInfo`](https://ej2.syncfusion.com/vue/documentation/api/treegrid#querycellinfo) event. The [`queryCellInfo`](https://ej2.syncfusion.com/vue/documentation/api/treegrid#querycellinfo) event triggers for every cell. In that event handler, you can get `QueryCellInfoEventArgs` that contains the details of the cell.
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
@@ -27,7 +27,7 @@ The appearance of cells can be customized by using the [`queryCellInfo`](https:/
 
 ## Custom attributes
 
-You can customize the treegrid cells by adding a CSS class to the [`customAttribute`](https://ej2.syncfusion.com/vue/documentation/api/treegrid/column/#customattributes) property of the column.
+You can customize the treegrid cells by adding a CSS class to the [`customAttribute`](https://ej2.syncfusion.com/vue/documentation/api/treegrid/column#customattributes) property of the column.
 
 ```css
 .e-attr {
@@ -56,8 +56,8 @@ In the below example, we have customized the cells of `TaskID` and `StartDate` c
 
 ## Grid lines
 
-The [`gridLines`](https://ej2.syncfusion.com/vue/documentation/api/treegrid/#gridlines) have option to display cell border and it can be defined by the
-[`gridLines`](https://ej2.syncfusion.com/vue/documentation/api/treegrid/#gridlines) property.
+The [`gridLines`](https://ej2.syncfusion.com/vue/documentation/api/treegrid#gridlines) have option to display cell border and it can be defined by the
+[`gridLines`](https://ej2.syncfusion.com/vue/documentation/api/treegrid#gridlines) property.
 
 The available modes of grid lines are:
 
@@ -80,4 +80,4 @@ The available modes of grid lines are:
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/treegrid/cell/default-cs4" %}
 
->By default, the treegrid renders with `Default` mode.
+> By default, the treegrid renders with `Default` mode.

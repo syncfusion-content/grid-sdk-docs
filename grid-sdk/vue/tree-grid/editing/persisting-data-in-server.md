@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Persisting data in server in Vue Treegrid component | Syncfusion
-description: Learn here all about Persisting data in server in Syncfusion Vue Treegrid component of Syncfusion Essential JS 2 and more.
+title: Vue TreeGrid Persisting Data in Server | Syncfusion
+description: Learn how to persist edited data in a database using RESTful services and DataManager in the Vue TreeGrid.
 control: Persisting data in server 
 platform: grid-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Persisting data in server in Vue Treegrid component
+# Persisting data in Server in Vue TreeGrid
 
 Edited data can be persisted in the database using the RESTful web services.
 
@@ -135,7 +135,7 @@ public int FindChildRecords(int id)
 
 The newly added record details are bound to the `value` parameter and `relationalKey` contains primaryKey value of an selected record helps to find out the position of newly added record. Please refer to the following screenshot.
 
-![Insert](images/insert.PNG)
+![Insert](../images/insert.PNG)
 
 ## Update record
 
@@ -160,7 +160,7 @@ public ActionResult Update(TreeGridData value)
 
 The updated record details are bound to the `value` parameter. Please refer to the following screenshot.
 
-![Update](images/update.PNG)
+![Update](../images/update.PNG)
 
 ## Delete record
 
@@ -189,11 +189,11 @@ public ActionResult Remove(List<TreeGridData> changed, List<TreeGridData> added,
 
 The deleted record primary key value is bound to the `key` parameter. Please refer to the following screenshot.
 
-![Delete](images/remove.PNG)
+![Delete](../images/remove.PNG)
 
 While delete parent record, the parent and child records is bound to the `deleted` parameter. Please refer to the following screenshot.
 
-![Remove](images/delete.PNG)
+![Remove](../images/delete.PNG)
 
 ## Remote save adaptor
 
