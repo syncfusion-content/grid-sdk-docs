@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Typescript Grid Context Menu | Syncfusion
-description: Learn how to use Context Menu in Typescript Data Grid with default items, custom actions, event handling, and options to prevent menu items.
+title: Context menu in TypeScript Grid control | Syncfusion
+description: Learn here all about Context menu in Syncfusion TypeScript Grid control of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Context menu 
 publishingplatform: grid-sdk
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Context Menu in Typescript Data Grid
+# Context menu in TypeScript Grid control
 
 The TypeScript Grid control comes equipped with a context menu feature, which is triggered when a user right-clicks anywhere within the grid. This feature serves to enrich the user experience by offering immediate access to a variety of supplementary actions and operations that can be executed on the data displayed in the grid.
 

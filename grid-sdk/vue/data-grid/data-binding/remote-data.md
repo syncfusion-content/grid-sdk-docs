@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Vue Grid Remote Data Binding | Syncfusion
-description: Learn how to bind remote data sources in Vue Data Grid using adaptors, configure server-side operations, and manage data efficiently.
+title: Vue Grid - Remote Data | Syncfusion
+description: Vue Grid provides remote data binding options, adaptor configuration, server operations, and guidance for reliable server-side data handling.
 control: Remote data 
 platform: grid-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Remote Data Binding in Vue Data Grid
+# Remote data in Vue Grid component
 
 In [Vue Data Grid](https://www.syncfusion.com/vue-components/vue-grid) component, binding remote data is a fundamental aspect that enhances the efficiency of data interaction. This process involves assigning the service data, represented as an instance of [DataManager](https://ej2.syncfusion.com/vue/documentation/data/vue-3-getting-started), to the [dataSource](https://ej2.syncfusion.com/vue/documentation/api/grid/index-default#datasource) property of the Vue Grid component.  By doing so, seamless interaction with a remote data source is enabled, achieved by specifying the endpoint URL where the data is hosted.
 
@@ -630,9 +630,9 @@ To implement CRUD operations using Vue Data Grid, follow these steps:
 
 1. **Configure grid settings:** Set up the grid to allow editing, adding, and deleting operations, and specify the [toolbar](https://ej2.syncfusion.com/vue/documentation/api/grid/index-default#toolbar) options that will provide access to these features.
 
-2. **Handle data state changes:** Utilize the [dataStateChange](https://ej2.syncfusion.com/vue/documentation/api/grid/#datastatechange) event to respond to changes in the grid's data state. This event is triggered whenever the grid is interacted with, such as during paging or sorting.
+2. **Handle data state changes:** Utilize the [dataStateChange](https://ej2.syncfusion.com/vue/documentation/api/grid#datastatechange) event to respond to changes in the grid's data state. This event is triggered whenever the grid is interacted with, such as during paging or sorting.
 
-3. **Execute CRUD operations:** Within the event handler for [dataSourceChanged](https://ej2.syncfusion.com/vue/documentation/api/grid/#datasourcechanged), implement logic to handle various CRUD actions based on the action or requestType property of the event arguments.
+3. **Execute CRUD operations:** Within the event handler for [dataSourceChanged](https://ej2.syncfusion.com/vue/documentation/api/grid#datasourcechanged), implement logic to handle various CRUD actions based on the action or requestType property of the event arguments.
 
 4. **Call endEdit method:** After performing CRUD operations (adding, editing, or deleting), call the [endEdit](https://ej2.syncfusion.com/vue/documentation/api/grid/index-default#endedit) method to signal the completion of the operation and update the grid accordingly.
 
@@ -1186,7 +1186,7 @@ The following screenshot represents the grid action with custom binding
 
 The complete sample for custom binding is available on [GitHub](https://github.com/SyncfusionExamples/vue-data-grid-integration-with-custom-binding) link. 
 
-> * While working with grid edit operation, defining the [isPrimaryKey](https://ej2.syncfusion.com/vue/documentation/api/grid/column/#isprimarykey) property of column is a mandatory step. In case the primary key column is not defined, the edit or delete action will take place on the first row of the grid.
+> * While working with grid edit operation, defining the [isPrimaryKey](https://ej2.syncfusion.com/vue/documentation/api/grid/column#isprimarykey) property of column is a mandatory step. In case the primary key column is not defined, the edit or delete action will take place on the first row of the grid.
 > * Need to maintain the same instance for all grid actions.
 
 ## Sending additional parameters to the server

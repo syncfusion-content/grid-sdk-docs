@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Vue Grid MySQL Server Integration | Syncfusion
-description: Learn how to connect Vue Data Grid to MySQL Server using LINQ2DB, execute database queries, and manage grid data efficiently.
+title: MySQL Server Data Binding in Syncfusion Vue Grid
+description: Learn how to consume data from SQL Server using MySQL Client, bind it to Syncfusion Grid, and perform CRUD operations.
 platform: grid-sdk
 control: Grid
 keywords: adaptors, customadaptor, urladaptor, mysql, remotedata 
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# MySQL Server Integration in Vue Data Grid
+# Connecting MySQL Server data to Vue Data Grid
 
 This section describes how to connect and retrieve data from a MySQL Server database using [MySQL data](https://www.nuget.org/packages/MySql.Data) and bind it to the [Vue Data Grid](https://www.syncfusion.com/vue-components/vue-grid).
 
@@ -2153,7 +2153,7 @@ export class CustomAdaptor extends UrlAdaptor {
 
 ### Handling CRUD operations
 
-To enable editing in the Vue Data Grid, utilize the [editSettings](https://ej2.syncfusion.com/vue/documentation/api/grid/editSettings/) property. The Grid offers multiple edit modes including the **Inline/Normal**, **Dialog** and **Batch** editing. For more details, refer to the Grid [editing](https://ej2.syncfusion.com/vue/documentation/grid/editing/edit) documentation.
+To enable editing in the Vue Data Grid, utilize the [editSettings](https://ej2.syncfusion.com/vue/documentation/api/grid/editSettings) property. The Grid offers multiple edit modes including the **Inline/Normal**, **Dialog** and **Batch** editing. For more details, refer to the Grid [editing](https://ej2.syncfusion.com/vue/documentation/grid/editing/edit) documentation.
 
 In this scenario, the inline edit [mode](https://ej2.syncfusion.com/vue/documentation/api/grid/editsettings#mode) and [toolbar](https://ej2.syncfusion.com/vue/documentation/api/grid#toolbar) property configured to display toolbar items for editing purpose.
 

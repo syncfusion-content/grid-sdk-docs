@@ -1,16 +1,16 @@
 ---
 layout: post
 title: React TreeGrid Custom Aggregate | Syncfusion
-description: Learn about implementing custom aggregates in the Angular TreeGrid, including configuration and usage of custom aggregation functions.
+description: Learn about implementing custom aggregates in the React TreeGrid, including configuration and usage of custom aggregation functions.
 control: Custom aggregate
 platform: grid-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Custom Aggregate in React TreeGrid
+# Custom aggregate in React TreeGrid
 
-Custom aggregates calculate summary values using application-defined functions. To enable custom aggregation, set [type](https://ej2.syncfusion.com/react/documentation/api/treegrid/aggregateColumnModel/#type) to **Custom** and provide the aggregate function through the [customAggregate](https://ej2.syncfusion.com/react/documentation/api/treegrid/aggregateColumnModel/#customaggregate) property.
+Custom aggregates calculate summary values using application-defined functions. To enable custom aggregation, set [type](https://ej2.syncfusion.com/react/documentation/api/treegrid/aggregateColumnModel#type) to **Custom** and provide the aggregate function through the [customAggregate](https://ej2.syncfusion.com/react/documentation/api/treegrid/aggregateColumnModel#customaggregate) property.
 
 {% tabs %}
 {% highlight js tabtitle="app.jsx" %}

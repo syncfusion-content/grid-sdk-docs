@@ -3,8 +3,7 @@ layout: post
 title: JavaScript TreeGrid Excel Cell Style Customization | Syncfusion
 description:  Learn how to customize Excel cell styles in the JavaScript TreeGrid of Essential JS 2, including conditional formatting and theming options.
 platform: grid-sdk
-control: Excel cell style customization 
-publishingplatform: grid-sdk
+control: Excel cell style customization
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
@@ -13,7 +12,7 @@ domainurl: https://help.syncfusion.com/grid-sdk
 
 ## Conditional cell formatting
 
-TreeGrid cells in the exported Excel can be customized or formatted using [`excelQueryCellInfo`](../../api/treegrid/#excelQueryCellInfo) event. In this event, we can format the treegrid cells of exported PDF document based on the column cell value.
+TreeGrid cells in the exported Excel can be customized or formatted using [`excelQueryCellInfo`](../../api/treegrid#excelQueryCellInfo) event. In this event, we can format the treegrid cells of exported PDF document based on the column cell value.
 
 In the below sample, we have set the background color for `Duration` column in the exported excel by `args.cell` and `backgroundColor` property.
 

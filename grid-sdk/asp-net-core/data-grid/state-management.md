@@ -1,14 +1,14 @@
 ---
 layout: post
-title: ASP.NET Core Grid State Management | Syncfusion
-description: Learn how to manage and persist ASP.NET Core Data Grid state using local storage, state restoration, version-based persistence, and custom state handling.
+title: State management in Syncfusion ASP.NET Core Grid Component
+description: Learn here all about State management in Syncfusion ASP.NET Core Grid component of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: State management
 publishingplatform: grid-sdk
 documentation: ug
 ---
 
-# State Management in ASP.NET Core Data Grid
+# State Management in ASP.NET Core Grid component
 
 State management in the ASP.NET Core Grid component allows you to maintain the grid's state even after a browser refresh or when navigating to a different page within the same browser session. This feature is particularly useful for retaining the grid's configuration and data even after a page reload.
 

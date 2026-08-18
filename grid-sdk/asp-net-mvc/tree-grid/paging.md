@@ -1,15 +1,13 @@
 ---
 layout: post
-title: Paging in ASP.NET MVC Tree Grid Control | Syncfusion
-description: Learn here all about Paging in Syncfusion ASP.NET MVC Tree Grid component of Syncfusion Essential JS 2 and more.
+title: ASP.NET MVC TreeGrid Paging | Syncfusion
+description: Learn how to use paging in ASP.NET MVC TreeGrid, including pagination configuration, customization, and advanced features for managing large datasets.
 platform: grid-sdk
 control: Paging
-publishingplatform: grid-sdk
 documentation: ug
 ---
 
-
-# Paging in in Tree Grid Control
+# Paging in ASP.NET MVC TreeGrid
 
 Paging provides an option to display TreeGrid data in page segments. To enable paging, set the [`AllowPaging`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGrid~AllowPaging.html) to true. When paging is enabled, pager component renders at the bottom of the treegrid. Paging options can be configured through the [`PageSettings`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGrid~PageSettings.html).
 
@@ -42,7 +40,7 @@ N> You can achieve better performance by using treegrid paging to fetch only a p
 
 ## Page Size Mode
 
-Two behaviour are available in TreeGrid paging to display certain number of records in a current page. Following are the two types of [`PageSizeMode`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridPageSettings~PageSizeMode.html).
+Two behavior are available in TreeGrid paging to display certain number of records in a current page. Following are the two types of [`PageSizeMode`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridPageSettings~PageSizeMode.html).
 
 * **All** : This is the default mode. The number of records in a page is based on [`PageSize`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridPageSettings~PageSize.html) property.
 * **Root** : The number of root nodes or the 0th level records to be displayed per page is based on [`PageSize`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridPageSettings~PageSize.html) property.

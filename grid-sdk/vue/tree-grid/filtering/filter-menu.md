@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Filter menu in Vue Treegrid component | Syncfusion
-description: Learn here all about Filter menu in Syncfusion Vue Treegrid component of Syncfusion Essential JS 2 and more.
+title: Vue TreeGrid Filter Menu | Syncfusion
+description: Learn how to use the filter menu in Vue TreeGrid, including column filtering, filter operators, and custom filter options.
 control: Filter menu 
 platform: grid-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Filter menu in Vue Treegrid component
+# Filter Menu in Vue TreeGrid
 
-You can enable filter menu by setting the [`filterSettings.type`](https://ej2.syncfusion.com/vue/documentation/api/treegrid/filterSettingsModel/#type) as `Menu`. The filter menu UI will be rendered based on its column type, which allows you to filter data.
+You can enable filter menu by setting the [`filterSettings.type`](https://ej2.syncfusion.com/vue/documentation/api/treegrid/filterSettingsModel#type) as `Menu`. The filter menu UI will be rendered based on its column type, which allows you to filter data.
 
 You can filter the records with different operators.
 
@@ -25,16 +25,16 @@ You can filter the records with different operators.
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/treegrid/filtering/default-cs4" %}
 
-> * [`allowFiltering`](https://ej2.syncfusion.com/vue/documentation/api/treegrid/#allowfiltering) must be set as true to enable filter menu.
-> * Setting [`columns.allowFiltering`](https://ej2.syncfusion.com/vue/documentation/api/treegrid/column/#allowfiltering) as false will prevent filter menu rendering for a particular column.
+> * [`allowFiltering`](https://ej2.syncfusion.com/vue/documentation/api/treegrid#allowfiltering) must be set as true to enable filter menu.
+> * Setting [`columns.allowFiltering`](https://ej2.syncfusion.com/vue/documentation/api/treegrid/column#allowfiltering) as false will prevent filter menu rendering for a particular column.
 
 ## Enable different filter dialog for a column
 
 You can use both `Menu` and `Excel` filter in a same TreeGrid. To do so, set the
-[`column.filter.type`](https://ej2.syncfusion.com/vue/documentation/api/treegrid/column/#filter) as `Menu` or `Excel`.
+[`column.filter.type`](https://ej2.syncfusion.com/vue/documentation/api/treegrid/column#filter) as `Menu` or `Excel`.
 
 In the following sample menu filter is enabled by default and Excel filter is enabled for the Task Name column using the
-[`column.filter.type`](https://ej2.syncfusion.com/vue/documentation/api/treegrid/column/#filter).
+[`column.filter.type`](https://ej2.syncfusion.com/vue/documentation/api/treegrid/column#filter).
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}

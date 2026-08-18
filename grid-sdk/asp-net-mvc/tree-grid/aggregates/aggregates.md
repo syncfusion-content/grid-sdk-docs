@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Aggregates in ASP.NET MVC Tree Grid Component | Syncfusion
-description: Learn here all about Aggregates in Syncfusion ASP.NET MVC Tree Grid component of Syncfusion Essential JS 2 and more.
+title: ASP.NET MVC TreeGrid Aggregates | Syncfusion
+description: Learn how to configure, display, and customize aggregate values in ASP.NET MVC TreeGrid, including built-in aggregate types and child aggregation.
 platform: grid-sdk
 control: Aggregates
-publishingplatform: grid-sdk
 documentation: ug
 ---
 
 
-# Aggregates in ASP.NET MVC Tree Grid Component
+# Aggregates in ASP.NET MVC TreeGrid
 
 Aggregate values are displayed in the TreeGrid footer and in parent row footer for child row aggregate values. It can be configured through [`Aggregates`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGrid~Aggregates.html) property.
  [`Field`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridAggregateColumn~Field.html) and [`Type`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridAggregateColumn~Type.html) are the minimum properties required to represent an aggregate column.

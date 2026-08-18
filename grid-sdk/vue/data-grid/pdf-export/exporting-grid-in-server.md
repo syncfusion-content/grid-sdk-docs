@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Vue Grid Server-Side PDF Export | Syncfusion
-description: Learn how to export Vue Data Grid data using server-side PDF generation, API endpoints, and efficient export processing for large datasets.
+title: Exporting grid in server in Vue Grid component | Syncfusion
+description: Learn here all about Exporting grid in server in Syncfusion Vue Grid component of Syncfusion Essential JS 2 and more.
 control: Exporting grid in server 
 platform: grid-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Server dependencies in Vue Data Grid
+# Exporting grid in server in Vue Grid component
 
 The [Vue Data Grid](https://www.syncfusion.com/vue-components/vue-grid) component provides an option to export grid data to a PDF document on the server side using the Grid server export library. This allows you to perform PDF export operations on the server, providing additional security and flexibility. To enable server-side PDF exporting, you need to configure the server dependencies and implement the necessary server configuration.
 
@@ -29,7 +29,7 @@ To export the grid data to a PDF document on the server side, you need to perfor
 
 2. Define a controller action that handles the server-side PDF export. This action should receive the Grid properties from the client-side and initiate the PDF export operation on the server.
 
-3. Use the [serverPdfExport](https://ej2.syncfusion.com/vue/documentation/api/grid/#serverpdfexport) method to pass the Grid properties to the server exporting action. This method allows you to specify the server action URL and other export options.
+3. Use the [serverPdfExport](https://ej2.syncfusion.com/vue/documentation/api/grid#serverpdfexport) method to pass the Grid properties to the server exporting action. This method allows you to specify the server action URL and other export options.
 
 The following code snippet shows server configuration using ASP.NET Core Controller Action..
 
@@ -297,7 +297,7 @@ private void PdfHeaderQueryCellInfo(object pdf)
 
 Passing additional parameters to the server when exporting data in the Vue Data Grid involves providing flexibility to include extra information or customize the export process based on specific requirements.
 
-You can achieve this by utilizing the [query](https://ej2.syncfusion.com/vue/documentation/api/grid/#query) property and the [toolbarClick](https://ej2.syncfusion.com/vue/documentation/api/grid/#toolbarclick) event. Within the `query` property, you can invoke the `addParams` method to add parameters to the request.
+You can achieve this by utilizing the [query](https://ej2.syncfusion.com/vue/documentation/api/grid#query) property and the [toolbarClick](https://ej2.syncfusion.com/vue/documentation/api/grid#toolbarclick) event. Within the `query` property, you can invoke the `addParams` method to add parameters to the request.
 
 The following example demonstrates how to pass additional parameters to the server when PDF exporting within the `toolbarClick` event. Within the event, the additional parameters, specifically **recordcount** as **15**, are passed using the addParams method and displayed as a message.
 

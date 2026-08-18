@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Typescript Grid Excel Export Options | Syncfusion
-description: Learn how to export Typescript Data Grid into Excel with custom content, record and column selection, styles, themes, grouping, and advanced export options.
+title: Excel export options in TypeScript Grid control | Syncfusion
+description: Learn here all about Excel export options in Syncfusion TypeScript Grid control of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Excel export options 
 publishingplatform: grid-sdk
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Excel Export Options in Typescript Data Grid
+# Excel export options in TypeScript Grid control
 
 The TypeScript Grid control allows you to customize the Excel or CSV export options functionality. This flexibility enables you to have greater control over the exported content and layout to meet your specific requirements.
 

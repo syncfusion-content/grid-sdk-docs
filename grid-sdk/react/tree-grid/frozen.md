@@ -1,14 +1,14 @@
 ---
 layout: post
-title: React TreeGrid Frozen Columns | Syncfusion
-description: Learn how to pin or freeze columns in React TreeGrid to keep important columns visible while scrolling horizontally.
+title: Frozen in React TreeGrid | Syncfusion
+description: Learn here all about Frozen in Syncfusion React TreeGrid component of Syncfusion Essential JS 2 and more.
 control: Frozen 
 platform: grid-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Frozen Columns in React TreeGrid 
+# Frozen in React TreeGrid 
 
 ## Frozen rows and columns
 
@@ -16,7 +16,7 @@ Frozen rows and columns provides an option to make rows and columns always visib
 
 To use frozen rows and columns support, inject the **Freeze** module in the tree grid.
 
-In this demo, the [frozenColumns](https://ej2.syncfusion.com/react/documentation/api/treegrid/#frozencolumns) is set as **'2'** and the [frozenRows](https://ej2.syncfusion.com/react/documentation/api/treegrid/#frozenrows)
+In this demo, the [frozenColumns](https://ej2.syncfusion.com/react/documentation/api/treegrid#frozencolumns) is set as **'2'** and the [frozenRows](https://ej2.syncfusion.com/react/documentation/api/treegrid#frozenrows)
 is set as **'3'**. Hence, the left two columns and top three rows are frozen.
 
 {% tabs %}
@@ -32,7 +32,7 @@ is set as **'3'**. Hence, the left two columns and top three rows are frozen.
 
 ### Freeze particular columns
 
-You can use [isFrozen](https://ej2.syncfusion.com/react/documentation/api/treegrid/column/#isfrozen) property to freeze selected columns in tree grid.
+You can use [isFrozen](https://ej2.syncfusion.com/react/documentation/api/treegrid/column#isfrozen) property to freeze selected columns in tree grid.
 
 In this demo, the columns with field name `taskName` and `startDate` is frozen using the `isFrozen` property.
 
@@ -49,9 +49,9 @@ In this demo, the columns with field name `taskName` and `startDate` is frozen u
 
 ### Freeze direction
 
-You can freeze the tree grid columns on the left or right side by using the [column.freeze](https://ej2.syncfusion.com/react/documentation/api/treegrid/column/#freeze) freeze property and the remaining columns will be movable. The tree grid will automatically move the columns to the left or right position based on the [column.freeze](https://ej2.syncfusion.com/react/documentation/api/treegrid/column/#freeze) value.
+You can freeze the tree grid columns on the left or right side by using the [column.freeze](https://ej2.syncfusion.com/react/documentation/api/treegrid/column#freeze) freeze property and the remaining columns will be movable. The tree grid will automatically move the columns to the left or right position based on the [column.freeze](https://ej2.syncfusion.com/react/documentation/api/treegrid/column#freeze) value.
 
-Types of the [column.freeze](https://ej2.syncfusion.com/react/documentation/api/treegrid/column/#freeze) directions:
+Types of the [column.freeze](https://ej2.syncfusion.com/react/documentation/api/treegrid/column#freeze) directions:
 
 * **`Left`**: Allows you to freeze the columns at the left.
 * **`Right`**: Allows you to freeze the columns at the right.
@@ -69,7 +69,7 @@ In this demo, the **Task Name** column is frozen at the left and the **Priority*
 
  {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/treegrid/freeze-direction-cs1" %}
 
-> * Freeze Direction is not compatible with the [isFrozen](https://ej2.syncfusion.com/react/documentation/api/treegrid/column/#isfrozen) and [frozenColumns](https://ej2.syncfusion.com/react/documentation/api/treegrid/#frozencolumns) properties.
+> * Freeze Direction is not compatible with the [isFrozen](https://ej2.syncfusion.com/react/documentation/api/treegrid/column#isfrozen) and [frozenColumns](https://ej2.syncfusion.com/react/documentation/api/treegrid#frozencolumns) properties.
 
 ### Limitations of frozen tree grid
 

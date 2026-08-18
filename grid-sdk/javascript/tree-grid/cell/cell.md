@@ -3,8 +3,7 @@ layout: post
 title: JavaScript TreeGrid Cells | Syncfusion
 description: Learn how to customize and format cells in JavaScript TreeGrid, including tooltips, styling, clip mode, autowrap, and cell templates.
 platform: grid-sdk
-control: Cell 
-publishingplatform: grid-sdk
+control: Cell
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
@@ -13,8 +12,8 @@ domainurl: https://help.syncfusion.com/grid-sdk
 
 ## Customize cell styles
 
-The appearance of cells can be customized by using the [`queryCellInfo`](../../api/treegrid/#querycellinfo) event.
-The [`queryCellInfo`](../../api/treegrid/#querycellinfo) event triggers for every cell. In that event handler, you can get `QueryCellInfoEventArgs` that contains the details of the cell.
+The appearance of cells can be customized by using the [`queryCellInfo`](../../api/treegrid#querycellinfo) event.
+The [`queryCellInfo`](../../api/treegrid#querycellinfo) event triggers for every cell. In that event handler, you can get `QueryCellInfoEventArgs` that contains the details of the cell.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -45,7 +44,7 @@ The [`queryCellInfo`](../../api/treegrid/#querycellinfo) event triggers for ever
 
 ## Custom attributes
 
-You can customize the treegrid cells by adding a CSS class to the [`customAttribute`](../../api/treegrid/column/#customattributes) property of the column.
+You can customize the treegrid cells by adding a CSS class to the [`customAttribute`](../../api/treegrid/column#customattributes) property of the column.
 
 ```css
 .e-attr {
@@ -90,7 +89,7 @@ In the below example, we have customized the cells of `TaskID` and `StartDate` c
 
 ## Grid lines
 
-The [`gridLines`](../../api/treegrid/#gridlines) have option to display cell border and it can be defined by the [`gridLines`](../../api/treegrid/#gridlines) property.
+The [`gridLines`](../../api/treegrid#gridlines) have option to display cell border and it can be defined by the [`gridLines`](../../api/treegrid#gridlines) property.
 
 The available modes of grid lines are:
 

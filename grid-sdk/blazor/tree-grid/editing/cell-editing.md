@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Blazor TreeGrid Cell Editing | Syncfusion
-description: Learn how to edit cells in Blazor TreeGrid, configure editing modes, validate input, and customize editing behavior.
+title: Cell Editing in Blazor Tree Grid Component | Syncfusion®
+description: Checkout and learn here all the features about Cell Editing in Blazor Tree Grid component and much more details.
 platform: grid-sdk
 control: Tree Grid
 documentation: ug
 ---
 
-# Cell Editing in Blazor TreeGrid
+# Cell Editing in Blazor Tree Grid Component
 
 In Cell edit mode, when a cell is double clicked, it is changed to edit state. The cell value can be changed and saved to the data source. To enable Cell edit, set the [TreeGridEditSettings.Mode](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.TreeGrid.TreeGridEditSettings.html#Syncfusion_Blazor_TreeGrid_TreeGridEditSettings_Mode) as **Cell**.
 

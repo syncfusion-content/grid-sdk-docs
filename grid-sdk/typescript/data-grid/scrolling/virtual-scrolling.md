@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Typescript Grid Virtual Scrolling | Syncfusion
-description: Learn how to use virtual scrolling and row virtualization in Typescript Data Grid to efficiently render large datasets and improve scrolling performance.
+title: Virtual scrolling in TypeScript Grid control | Syncfusion
+description: Learn here all about Virtual scrolling in Syncfusion TypeScript Grid control of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Virtual scrolling 
 publishingplatform: grid-sdk
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Virtual Scrolling in Typescript Data Grid
+# Virtual scrolling in TypeScript Grid control
 
 The virtual scrolling feature in the Grid allows you to efficiently handle and display a large amount of data without experiencing any performance degradation. It optimizes the rendering process by loading only the visible rows in the Grid viewport, rather than rendering the entire dataset at once. This is particularly useful when dealing with datasets that contain thousands of records.
 

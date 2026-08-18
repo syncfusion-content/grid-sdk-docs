@@ -1,14 +1,14 @@
 ---
 layout: post
-title: ASP.NET Core Grid Lazy Load Grouping | Syncfusion
-description: Learn how to use Lazy Load Grouping in ASP.NET Core Data Grid to load grouped records on demand, improve performance, and efficiently handle large datasets.
+title: Lazy Load Grouping in Syncfusion ASP.NET Core Grid Component
+description: Learn here all about Lazy Load Grouping in Syncfusion ASP.NET Core Grid component of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Lazy Load Grouping
 publishingplatform: grid-sdk
 documentation: ug
 ---
  
-# Lazy Load Grouping in ASP.NET Core Data Grid
+# Lazy load grouping in ASP.NET Core Grid component
 
 In ASP.NET Core, lazy loading refers to the technique of loading data dynamically when they are needed, instead of loading everything upfront. Lazy loading can significantly improve the performance of your application by reducing the initial load time.
 

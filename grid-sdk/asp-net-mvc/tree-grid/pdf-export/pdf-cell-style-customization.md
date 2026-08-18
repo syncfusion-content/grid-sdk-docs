@@ -1,15 +1,13 @@
 ---
 layout: post
-title: PDF Cell Style Customization in Syncfusion ASP.NET MVC Tree Grid Component
-description: Learn here all about PDF Cell Style Customization in Syncfusion ASP.NET MVC Tree Grid component of Syncfusion Essential JS 2 and more.
+title:  ASP.NET MVC TreeGrid PDF Cell Style Customization | Syncfusion
+description: Learn how to customize PDF cell styles in the ASP.NET MVC TreeGrid, including conditional formatting and theme options for PDF export.
 platform: grid-sdk
 control: PDF Cell Style Customization
-publishingplatform: grid-sdk
 documentation: ug
 ---
 
-
-# PDF Cell Style Customization
+# PDF Cell Style Customization in ASP.NET MVC TreeGrid
 
 ## Conditional cell formatting
 
@@ -46,7 +44,7 @@ In the below sample, we have set the background color for **Duration** column in
 
 PDF export provides an option to include theme for exported PDF document.
 
-To apply theme in exported PDF, define the [`theme`](https://ej2.syncfusion.com/documentation/api/grid/pdfExportProperties/#theme) in [`PdfExportProperties`](https://ej2.syncfusion.com/documentation/api/grid/pdfExportProperties/#pdfexportproperties).
+To apply theme in exported PDF, define the [`theme`](https://ej2.syncfusion.com/documentation/api/grid/pdfExportProperties#theme) in [`PdfExportProperties`](https://ej2.syncfusion.com/documentation/api/grid/pdfExportProperties#pdfexportproperties).
 
 {% if page.publishingplatform == "aspnet-core" %}
 

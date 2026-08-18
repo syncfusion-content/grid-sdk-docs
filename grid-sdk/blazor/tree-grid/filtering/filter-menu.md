@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Blazor TreeGrid Filter Menu | Syncfusion
-description: Learn how to use the filter menu in Blazor TreeGrid to apply advanced filtering, customize filter options, and improve data filtering experiences.
+title: Filter Menu in Blazor Tree Grid Component | Syncfusion®
+description: Checkout and learn here all the features about Filter Menu in Blazor Tree Grid component and much more details.
 platform: grid-sdk
 control: Tree Grid
 documentation: ug
 ---
 
-# Filter Menu in Blazor TreeGrid
+# Filter Menu in Blazor Tree Grid Component
 
 The filter menu can be enabled by setting the [Type](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor~Syncfusion.Blazor.TreeGrid.TreeGridFilterSettings~Type.html) of [FilterSettings](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor~Syncfusion.Blazor.TreeGrid.TreeGridFilterSettings.html) as **Menu**. The filter menu UI will be rendered based on its column type, which allows to filter data. The records can be filtered with different operators.
 

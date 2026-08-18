@@ -1,14 +1,13 @@
 ---
 layout: post
-title: Column Menu in ASP.NET MVC Tree Grid Component | Syncfusion
-description: Learn here all about Column Menu in Syncfusion ASP.NET MVC Tree Grid component of Syncfusion Essential JS 2 and more.
+title: ASP.NET MVC TreeGrid Column Menu | Syncfusion
+description: Learn how to use the column menu in ASP.NET MVC TreeGrid for sorting, filtering, column visibility, and other column actions.
 platform: grid-sdk
 control: Column Menu
-publishingplatform: grid-sdk
 documentation: ug
 ---
 
-# Column Menu in ASP.NET MVC Tree Grid Component
+# Column Menu in ASP.NET MVC TreeGrid
 
 The column menu has options to integrate features like sorting, filtering, and autofit. It will show a menu with the integrated feature when users click on multiple icon of the column. To enable column menu, you need to define the [`ShowColumnMenu`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGrid~ShowColumnMenu.html) property as true.
 

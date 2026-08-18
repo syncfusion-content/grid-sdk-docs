@@ -3,15 +3,14 @@ layout: post
 title: TypeScript TreeGrid Toolbar | Syncfusion
 description: Learn how to customize the toolbar in TypeScript TreeGrid, including item control, toolbar placement, and toolbar templates.
 platform: grid-sdk
-control: Tool bar 
-publishingplatform: grid-sdk
+control: Tool bar
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
 # Toolbar in TypeScript TreeGrid
 
-The TreeGrid provides ToolBar support to handle treegrid actions. The [`toolbar`](../../api/treegrid/#toolbar) property accepts either the collection of built-in toolbar items and [`ItemModel`](../../api/toolbar/#item) objects for custom toolbar items or HTML element ID for toolbar template.
+The TreeGrid provides ToolBar support to handle treegrid actions. The [`toolbar`](../../api/treegrid#toolbar) property accepts either the collection of built-in toolbar items and [`ItemModel`](../../api/toolbar#item) objects for custom toolbar items or HTML element ID for toolbar template.
 
 To use ToolBar, inject `Toolbar` module in the treegrid.
 

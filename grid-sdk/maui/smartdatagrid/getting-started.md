@@ -8,9 +8,9 @@ documentation: ug
 keywords: maui smart datagrid getting started, ai datagrid maui, .net maui smart datagrid setup, Syncfusion.Maui.SmartDataGrid
 ---
 
-# Getting Started with .NET MAUI Smart Data Grid
+# Getting Started with .NET MAUI Smart DataGrid
 
-This section provides a quick overview for working with the `SfSmartDataGrid` for .NET MAUI. Follow the steps below to add a basic Smart DataGrid to your project and configure AI-powered features.
+This section provides a quick overview for working with the `SfSmartDataGrid` for .NET MAUI. Follow the steps below to add a basic Smart DataGrid to your projectf and configure AI-powered features.
 
 > **Note:** The Smart DataGrid is distributed as part of the `Syncfusion.Maui.SmartDataGrid` package and supports AI-assisted interactions such as intelligent sorting, filtering, grouping, and highlighting. Ensure your application has the required AI service configuration to enable these features.
 
@@ -29,12 +29,121 @@ Before proceeding, ensure the following are set up:
 2. Name the project and choose a location. Then, click **Next.**
 3. Select the .NET framework version and click **Create.**
 
-## Step 2: Install the Syncfusion<sup>®</sup> MAUI Smart Data Grid NuGet Package
+## Step 2: Install the Syncfusion<sup>®</sup> MAUI Smart DataGrid NuGet Package
 
 1. In **Solution Explorer**, right-click the project and choose **Manage NuGet Packages**.
 2. Search for `Syncfusion.Maui.SmartDataGrid` and install the latest version.
 3. Ensure the necessary dependencies are installed correctly, and the project is restored.
 
+## Step 3: Register the handler
+
+[Syncfusion.Maui.Core](https://www.nuget.org/packages/Syncfusion.Maui.Core/) NuGet is a dependent package for all Syncfusion<sup>®</sup> controls of .NET MAUI. In the MauiProgram.cs file, register the handler for Syncfusion<sup>®</sup> core.
+
+{% highlight c# hl_lines="6 22" %}
+using Microsoft.Maui;
+using Microsoft.Maui.Hosting;
+using Microsoft.Maui.Controls.Compatibility;
+using Microsoft.Maui.Controls.Hosting;
+using Microsoft.Maui.Controls.Xaml;
+using Syncfusion.Maui.Core.Hosting;
+
+namespace GettingStarted
+{
+    public class MauiProgram
+    {
+        public static MauiApp CreateMauiApp()
+        {
+            var builder = MauiApp.CreateBuilder();
+            builder
+                .UseMauiApp<App>()
+                .ConfigureFonts(fonts =>
+                {
+                    fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
+                });
+
+            builder.ConfigureSyncfusionCore();
+            return builder.Build();
+        }
+    }
+}
+{% endhighlight %}
+
+## Step 4: Register the AI Service
+
+To configure the AI services, you must call the `ConfigureSyncfusionAIServices()` method in the `MauiProgram.cs` file.
+
+{% highlight c# hl_lines="6 31" %}
+using Microsoft.Maui;
+using Microsoft.Maui.Hosting;
+using Microsoft.Maui.Controls.Compatibility;
+using Microsoft.Maui.Controls.Hosting;
+using Microsoft.Maui.Controls.Xaml;
+using Syncfusion.Maui.SmartComponents.Hosting;
+
+namespace GettingStarted
+{
+    public class MauiProgram
+    {
+        public static MauiApp CreateMauiApp()
+        {
+            var builder = MauiApp.CreateBuilder();
+            builder
+                .UseMauiApp<App>()
+                .ConfigureFonts(fonts =>
+                {
+                    fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
+                });
+
+            string key = "<MENTION-YOUR-KEY>";
+            Uri azureEndPoint = new Uri("<MENTION-YOUR-URL>");
+            string deploymentName = "<MENTION-YOUR-DEPLOYMENT-NAME>";
+
+            // Shows how to configure Azure AI service to the Smart Components.
+            AzureOpenAIClient azureOpenAIClient = new AzureOpenAIClient(azureEndPoint, new AzureKeyCredential(key));
+            IChatClient azureChatClient = azureOpenAIClient.GetChatClient(deploymentName).AsIChatClient();
+
+            builder.Services.AddChatClient(azureChatClient);
+            builder.ConfigureSyncfusionAIServices();
+
+            return builder.Build();
+        }
+    }
+}
+{% endhighlight %}
+
+## Step 5: Add a Basic Smart DataGrid
+
+1. Import the control namespace `Syncfusion.Maui.SmartDataGrid` in XAML or C# code.
+2. Initialize the [SfSmartDataGrid]() control.
+
+{% tabs %}
+{% highlight xaml tabtitle="MainPage.xaml" %}
+
+<ContentPage
+    . . .
+    xmlns:syncfusion="clr-namespace:Syncfusion.Maui.SmartDataGrid;assembly=Syncfusion.Maui.SmartDataGrid">
+
+    <syncfusion:SfSmartDataGrid />
+</ContentPage>
+
+{% endhighlight %}
+{% highlight c# tabtitle="MainPage.xaml.cs" %}
+
+using Syncfusion.Maui.SmartDataGrid;
+. . .
+
+public partial class MainPage : ContentPage
+{
+    public MainPage()
+    {
+        InitializeComponent();
+        SfSmartDataGrid dataGrid = new SfSmartDataGrid();
+        this.Content = dataGrid;
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
 {% endtabcontent %}
 
 {% tabcontent Visual Studio Code %}
@@ -53,13 +162,121 @@ Before proceeding, ensure the following are set up:
 3. Select the project location, type the project name and press **Enter.**
 4. Then choose **Create project.**
 
-## Step 2: Install the Syncfusion<sup>®</sup> MAUI Smart Data Grid NuGet Package
+## Step 2: Install the Syncfusion<sup>®</sup> MAUI Smart DataGrid NuGet Package
 
-1. Press <kbd>Ctrl</kbd> + <kbd>`</kbd> (backtick) to open the integrated terminal in Visual Studio Code.
-2. Ensure you're in the project root directory where your .csproj file is located.
-3. Run the command `dotnet add package Syncfusion.Maui.SmartDataGrid` to install the Syncfusion<sup>®</sup> .NET MAUI Smart Data Grid package.
-4. To ensure all dependencies are installed, run `dotnet restore`.
+1. In **Solution Explorer**, right-click the project and choose **Manage NuGet Packages**.
+2. Search for `Syncfusion.Maui.SmartDataGrid` and install the latest version.
+3. Ensure the necessary dependencies are installed correctly, and the project is restored.
 
+## Step 3: Register the handler
+
+[Syncfusion.Maui.Core](https://www.nuget.org/packages/Syncfusion.Maui.Core/) NuGet is a dependent package for all Syncfusion<sup>®</sup> controls of .NET MAUI. In the `MauiProgram.cs` file, register the handler for Syncfusion<sup>®</sup> core.
+
+{% highlight c# hl_lines="6 17" %}
+using Microsoft.Maui;
+using Microsoft.Maui.Hosting;
+using Microsoft.Maui.Controls.Compatibility;
+using Microsoft.Maui.Controls.Hosting;
+using Microsoft.Maui.Controls.Xaml;
+using Syncfusion.Maui.Core.Hosting;
+
+namespace GettingStarted
+{
+    public class MauiProgram
+    {
+        public static MauiApp CreateMauiApp()
+        {
+            var builder = MauiApp.CreateBuilder();
+            builder
+                .UseMauiApp<App>()
+                .ConfigureFonts(fonts =>
+                {
+                    fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
+                });
+
+            builder.ConfigureSyncfusionCore();
+            return builder.Build();
+        }
+    }
+}
+{% endhighlight %}
+
+## Step 4: Register the AI Service
+
+To configure the AI services, you must call the `ConfigureSyncfusionAIServices()` method in the `MauiProgram.cs` file.
+
+{% highlight c# hl_lines="6 31" %}
+using Microsoft.Maui;
+using Microsoft.Maui.Hosting;
+using Microsoft.Maui.Controls.Compatibility;
+using Microsoft.Maui.Controls.Hosting;
+using Microsoft.Maui.Controls.Xaml;
+using Syncfusion.Maui.SmartComponents.Hosting;
+
+namespace GettingStarted
+{
+    public class MauiProgram
+    {
+        public static MauiApp CreateMauiApp()
+        {
+            var builder = MauiApp.CreateBuilder();
+            builder
+                .UseMauiApp<App>()
+                .ConfigureFonts(fonts =>
+                {
+                    fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
+                });
+
+            string key = "<MENTION-YOUR-KEY>";
+            Uri azureEndPoint = new Uri("<MENTION-YOUR-URL>");
+            string deploymentName = "<MENTION-YOUR-DEPLOYMENT-NAME>";
+
+            // Shows how to configure Azure AI service to the Smart Components.
+            AzureOpenAIClient azureOpenAIClient = new AzureOpenAIClient(azureEndPoint, new AzureKeyCredential(key));
+            IChatClient azureChatClient = azureOpenAIClient.GetChatClient(deploymentName).AsIChatClient();
+
+            builder.Services.AddChatClient(azureChatClient);
+            builder.ConfigureSyncfusionAIServices();
+
+            return builder.Build();
+        }
+    }
+}
+{% endhighlight %}
+
+## Step 5: Add a Basic Smart DataGrid
+
+1. Import the control namespace `Syncfusion.Maui.SmartDataGrid` in XAML or C# code.
+2. Initialize the `SfSmartDataGrid` control.
+
+{% tabs %}
+{% highlight xaml tabtitle="MainPage.xaml" %}
+
+<ContentPage
+    . . .
+    xmlns:syncfusion="clr-namespace:Syncfusion.Maui.SmartDataGrid;assembly=Syncfusion.Maui.SmartDataGrid">
+
+    <syncfusion:SfSmartDataGrid />
+</ContentPage>
+
+{% endhighlight %}
+{% highlight c# tabtitle="MainPage.xaml.cs" %}
+
+using Syncfusion.Maui.SmartDataGrid;
+. . .
+
+public partial class MainPage : ContentPage
+{
+    public MainPage()
+    {
+        InitializeComponent();
+        SfSmartDataGrid dataGrid = new SfSmartDataGrid();
+        this.Content = dataGrid;
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
 {% endtabcontent %}
 
 {% tabcontent JetBrains Rider %}
@@ -78,63 +295,87 @@ Before proceeding, ensure the following are set up:
 2. Enter the Project Name, Solution Name, and Location.
 3. Select the .NET framework version and click Create.
 
-## Step 2: Install the Syncfusion<sup>®</sup> MAUI Smart Data Grid NuGet Package
+## Step 2: Install the Syncfusion<sup>®</sup> MAUI Smart DataGrid NuGet Package
 
 1. In **Solution Explorer**, right-click the project and choose **Manage NuGet Packages**.
 2. Search for `Syncfusion.Maui.SmartDataGrid` and install the latest version.
 3. Ensure the necessary dependencies are installed correctly, and the project is restored.
 
-{% endtabcontent %}
-{% endtabcontents %}
-
 ## Step 3: Register the handler
 
-[Syncfusion.Maui.Core](https://www.nuget.org/packages/Syncfusion.Maui.Core/) NuGet is a dependent package for all Syncfusion<sup>®</sup> controls of .NET MAUI. In the MauiProgram.cs file, register the handler for Syncfusion<sup>®</sup> core.
+[Syncfusion.Maui.Core](https://www.nuget.org/packages/Syncfusion.Maui.Core/) NuGet is a dependent package for all Syncfusion<sup>®</sup> controls of .NET MAUI. In the `MauiProgram.cs` file, register the handler for Syncfusion<sup>®</sup> core.
 
-{% tabs %}
-{% highlight c# %}
+{% highlight c# hl_lines="6 17" %}
+using Microsoft.Maui;
+using Microsoft.Maui.Hosting;
+using Microsoft.Maui.Controls.Compatibility;
+using Microsoft.Maui.Controls.Hosting;
+using Microsoft.Maui.Controls.Xaml;
 using Syncfusion.Maui.Core.Hosting;
-{% endhighlight %}
-{% endtabs %}
 
-Register the Syncfusion core handler in your `CreateMauiApp` method of `MauiProgram.cs` file to use Syncfusion controls.
+namespace GettingStarted
+{
+    public class MauiProgram
+    {
+        public static MauiApp CreateMauiApp()
+        {
+            var builder = MauiApp.CreateBuilder();
+            builder
+                .UseMauiApp<App>()
+                .ConfigureFonts(fonts =>
+                {
+                    fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
+                });
 
-{% tabs %}
-{% highlight c# %}
-builder.ConfigureSyncfusionCore();
+            builder.ConfigureSyncfusionCore();
+            return builder.Build();
+        }
+    }
+}
 {% endhighlight %}
-{% endtabs %}
 
 ## Step 4: Register the AI Service
 
 To configure the AI services, you must call the `ConfigureSyncfusionAIServices()` method in the `MauiProgram.cs` file.
 
-Add the following namespaces:
-
-{% tabs %}
-{% highlight c# %}
+{% highlight c# hl_lines="6 31" %}
+using Microsoft.Maui;
+using Microsoft.Maui.Hosting;
+using Microsoft.Maui.Controls.Compatibility;
+using Microsoft.Maui.Controls.Hosting;
+using Microsoft.Maui.Controls.Xaml;
 using Syncfusion.Maui.SmartComponents.Hosting;
-using Azure.AI.OpenAI;
-using Azure;
+
+namespace GettingStarted
+{
+    public class MauiProgram
+    {
+        public static MauiApp CreateMauiApp()
+        {
+            var builder = MauiApp.CreateBuilder();
+            builder
+                .UseMauiApp<App>()
+                .ConfigureFonts(fonts =>
+                {
+                    fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
+                });
+
+            string key = "<MENTION-YOUR-KEY>";
+            Uri azureEndPoint = new Uri("<MENTION-YOUR-URL>");
+            string deploymentName = "<MENTION-YOUR-DEPLOYMENT-NAME>";
+
+            // Shows how to configure Azure AI service to the Smart Components.
+            AzureOpenAIClient azureOpenAIClient = new AzureOpenAIClient(azureEndPoint, new AzureKeyCredential(key));
+            IChatClient azureChatClient = azureOpenAIClient.GetChatClient(deploymentName).AsIChatClient();
+
+            builder.Services.AddChatClient(azureChatClient);
+            builder.ConfigureSyncfusionAIServices();
+
+            return builder.Build();
+        }
+    }
+}
 {% endhighlight %}
-{% endtabs %}
-
-In the `CreateMauiApp` method, add the following code to configure the Azure AI service:
-
-{% tabs %}
-{% highlight c# %}
-string key = "<MENTION-YOUR-KEY>";
-Uri azureEndPoint = new Uri("<MENTION-YOUR-URL>");
-string deploymentName = "<MENTION-YOUR-DEPLOYMENT-NAME>";
-
-// Shows how to configure Azure AI service to the Smart Components.
-AzureOpenAIClient azureOpenAIClient = new AzureOpenAIClient(azureEndPoint, new AzureKeyCredential(key));
-IChatClient azureChatClient = azureOpenAIClient.GetChatClient(deploymentName).AsIChatClient();
-
-builder.Services.AddChatClient(azureChatClient);
-builder.ConfigureSyncfusionAIServices();
-{% endhighlight %}
-{% endtabs %}
 
 ## Step 5: Add a Basic Smart DataGrid
 
@@ -142,35 +383,36 @@ builder.ConfigureSyncfusionAIServices();
 2. Initialize the `SfSmartDataGrid` control.
 
 {% tabs %}
-{% highlight xaml %}
-xmlns:syncfusion="clr-namespace:Syncfusion.Maui.SmartDataGrid;assembly=Syncfusion.Maui.SmartDataGrid"
+{% highlight xaml tabtitle="MainPage.xaml" %}
+
+<ContentPage
+    . . .
+    xmlns:syncfusion="clr-namespace:Syncfusion.Maui.SmartDataGrid;assembly=Syncfusion.Maui.SmartDataGrid">
+
+    <syncfusion:SfSmartDataGrid />
+</ContentPage>
+
 {% endhighlight %}
-{% highlight c# tabtitle="C#" %}
+{% highlight c# tabtitle="MainPage.xaml.cs" %}
+
 using Syncfusion.Maui.SmartDataGrid;
+. . .
+
+public partial class MainPage : ContentPage
+{
+    public MainPage()
+    {
+        InitializeComponent();
+        SfSmartDataGrid dataGrid = new SfSmartDataGrid();
+        this.Content = dataGrid;
+    }
+}
+
 {% endhighlight %}
 {% endtabs %}
+{% endtabcontent %}
+{% endtabcontents %}
 
-Create a `ViewModel` instance and set it as the SmartDataGrid's `BindingContext`. This enables property binding from `ViewModel` class.
-
-To populate the `SfSmartDataGrid`, bind the item collection from its `BindingContext` to [SfSmartDataGrid.ItemsSource](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.DataGrid.SfDataGrid.html#Syncfusion_Maui_DataGrid_SfDataGrid_ItemsSource) property. 
-
-The following code example binds the collection to the `SfSmartDataGrid.ItemsSource` property:
-
-{% tabs %}
-{% highlight xaml %}
-<syncfusion:SfSmartDataGrid x:Name="dataGrid"
-                        ItemsSource="{Binding OrderInfoCollection}">
-    <syncfusion:SfSmartDataGrid.BindingContext>
-        <local:OrderInfoRepository />
-    </syncfusion:SfSmartDataGrid.BindingContext>
-</syncfusion:SfSmartDataGrid>
-{% endhighlight %}
-{% highlight c# %}
-OrderInfoRepository viewModel = new OrderInfoRepository();
-SfSmartDataGrid dataGrid = new SfSmartDataGrid();
-dataGrid.ItemsSource = viewModel.OrderInfoCollection;
-{% endhighlight %}
-{% endtabs %}
 ## Step 6: Define Data Model and View Model
 
 ### Data Model
@@ -181,37 +423,37 @@ Create a data model class and save it as `OrderInfo.cs`. Implement `INotifyPrope
 {% highlight c# %}
 public class OrderInfo
 {
-    private string? orderID;
-    private string? customerID;
-    private string? customer;
-    private string? shipCity;
-    private string? shipCountry;
+    private string orderID;
+    private string customerID;
+    private string customer;
+    private string shipCity;
+    private string shipCountry;
 
-    public string? OrderID
+    public string OrderID
     {
         get { return orderID; }
         set { this.orderID = value; }
     }
 
-    public string? CustomerID
+    public string CustomerID
     {
         get { return customerID; }
         set { this.customerID = value; }
     }
 
-    public string? ShipCountry
+    public string ShipCountry
     {
         get { return shipCountry; }
         set { this.shipCountry = value; }
     }
 
-    public string? Customer
+    public string Customer
     {
         get { return this.customer; }
         set { this.customer = value; }
     }
 
-    public string? ShipCity
+    public string ShipCity
     {
         get { return shipCity; }
         set { this.shipCity = value; }
@@ -231,16 +473,16 @@ public class OrderInfo
 
 > **Note:** Implement `INotifyPropertyChanged` in your model to enable property-level binding and automatic UI updates when data changes.
 
-{% tabs %}
-{% highlight c# %}
+**Example INotifyPropertyChanged Implementation:**
+```csharp
 public class OrderInfo : INotifyPropertyChanged
 {
-    private string? orderID;
-    public string? OrderID
+    private string orderID;
+    public string OrderID
     {
         get { return orderID; }
-        set
-        {
+        set 
+        { 
             if (orderID != value)
             {
                 orderID = value;
@@ -249,15 +491,14 @@ public class OrderInfo : INotifyPropertyChanged
         }
     }
 
-    public event PropertyChangedEventHandler? PropertyChanged;
+    public event PropertyChangedEventHandler PropertyChanged;
 
     protected void OnPropertyChanged(string propertyName)
     {
         PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
     }
 }
-{% endhighlight %}
-{% endtabs %}
+```
 
 ### View Model
 
@@ -344,8 +585,8 @@ Press **F5** to build and run the application. Once compiled, the smart datagrid
 
 Here is the result of the previous codes,
 
-<img src="Images\getting-started\maui-smart-datagrid.png" width="600" alt="Getting started with .NET MAUI Smart Data Grid." />
+<img src="Images\getting-started\maui-smart-datagrid.png" width="600" alt="Getting started with .NET MAUI Smart DataGrid." />
 
 You can download the complete project of this demo from [GitHub](https://github.com/SyncfusionExamples/Maui-SmartDataGrid-Sample).
 
-> **Note:** You can refer to our [.NET MAUI Smart Data Grid](https://www.syncfusion.com/maui-controls/maui-smart-datagrid) feature tour page for its groundbreaking feature representations. You can also explore our [.NET MAUI Smart Data Grid Example](https://github.com/syncfusion/maui-demos/tree/master/MAUI/SmartComponents) that shows you how to render the Smart DataGrid in .NET MAUI.
+> **Note:** You can refer to our [.NET MAUI Smart DataGrid](https://www.syncfusion.com/maui-controls/maui-smart-datagrid) feature tour page for its groundbreaking feature representations. You can also explore our [.NET MAUI Smart DataGrid Example](https://github.com/syncfusion/maui-demos/tree/master/MAUI/SmartComponents) that shows you how to render the Smart DataGrid in .NET MAUI.

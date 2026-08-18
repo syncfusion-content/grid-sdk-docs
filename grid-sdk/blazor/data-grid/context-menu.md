@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Blazor Grid Context Menu | Syncfusion
-description: Learn how to use and customize the Context Menu in Blazor Data Grid, including built-in items, custom menu items, event handling, and menu actions.
+title: Context Menu in Blazor DataGrid | Syncfusion®
+description: Explore and understand the Context Menu in Blazor DataGrid. Learn about its features, usage, customization, and more.
 platform: grid-sdk
 control: DataGrid
 documentation: ug
 ---
 
-# Context Menu in Blazor Data Grid
+# Context menu in Blazor DataGrid
 
 The [Blazor DataGrid](https://www.syncfusion.com/blazor-components/blazor-datagrid) supports a context menu that appears when right-clicking anywhere within the grid. This menu provides quick access to actions related to the grid’s data and layout, enhancing interactivity and usability.
 

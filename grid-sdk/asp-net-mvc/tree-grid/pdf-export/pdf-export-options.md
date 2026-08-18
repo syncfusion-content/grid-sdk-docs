@@ -1,15 +1,13 @@
 ---
 layout: post
-title: PDF Export Options in ASP.NET MVC Tree Grid Component | Syncfusion
-description: Learn here all about PDF Export Options in Syncfusion ASP.NET MVC Tree Grid component of Syncfusion Essential JS 2 and more.
+title:  ASP.NET MVC TreeGrid PDF Export Options | Syncfusion
+description: Learn about PDF export options in ASP.NET MVC TreeGrid, including exporting selected records, hidden columns, custom fonts, and advanced settings.
 platform: grid-sdk
 control: PDF Export Options
-publishingplatform: grid-sdk
 documentation: ug
 ---
 
-
-# PDF Export Options
+# PDF Export Options in ASP.NET MVC TreeGrid
 
 ## To customize PDF export
 
@@ -53,7 +51,6 @@ The available default fonts are,
 * TimesRoman
 * Courier
 * Symbol
-* ZapfDingbats
 
 The code example for changing default font,
 

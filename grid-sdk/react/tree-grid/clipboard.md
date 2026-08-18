@@ -1,7 +1,7 @@
 ---
 layout: post
-title: React TreeGrid Clipboard | Syncfusion
-description: Learn how to use clipboard operations in React TreeGrid, including copy, paste, hierarchy modes, and autofill for rows and cells.
+title: Clipboard in React TreeGrid | Syncfusion
+description: Learn here all about Clipboard in Syncfusion React TreeGrid component of Syncfusion Essential JS 2 and more.
 control: Clipboard
 platform: grid-sdk
 documentation: ug
@@ -31,7 +31,7 @@ Interaction keys | Description
 
 ## Copy to clipboard by external buttons
 
-Invoke the [copy](https://ej2.syncfusion.com/react/documentation/api/treegrid/#copy) method to copy selected rows or cells using external buttons.
+Invoke the [copy](https://ej2.syncfusion.com/react/documentation/api/treegrid#copy) method to copy selected rows or cells using external buttons.
 
 {% tabs %}
 {% highlight js tabtitle="app.jsx" %}
@@ -45,7 +45,7 @@ Invoke the [copy](https://ej2.syncfusion.com/react/documentation/api/treegrid/#c
 
 ## Copy Hierarchy Modes
 
-TreeGrid supports multiple copy modes via the [copyHierarchyMode](https://ej2.syncfusion.com/react/documentation/api/treegrid/filterSettingsModel/#hierarchymode) property.
+TreeGrid supports multiple copy modes via the [copyHierarchyMode](https://ej2.syncfusion.com/react/documentation/api/treegrid/filterSettingsModel#hierarchymode) property.
 
 * **Parent** : Default mode. Copies the selected records along with their parent records. If no parent exists, only the selected records are copied.
 

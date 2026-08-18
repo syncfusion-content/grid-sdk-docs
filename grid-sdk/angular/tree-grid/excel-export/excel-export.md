@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Angular TreeGrid Excel Export | Syncfusion
-description: Learn how to export data from Angular TreeGrid to Excel, including export customization, selected records, and advanced export options.
+title: Excel export in Angular TreeGrid component | Syncfusion
+description: Learn about exporting data from the Syncfusion Angular TreeGrid component of Essential JS 2 to Excel documents.
 platform: grid-sdk
 control: Excel export 
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Excel Export in Angular TreeGrid
+# Excel export in Angular TreeGrid component
 
 Excel export in the TreeGrid component enables exporting TreeGrid data to an Excel document. The [`excelExport`](https://ej2.syncfusion.com/angular/documentation/api/treegrid#excelexport) method is used for exporting data. To enable Excel export in TreeGrid, set the [`allowExcelExport`](https://ej2.syncfusion.com/angular/documentation/api/treegrid#allowexcelexport-boolean) property to true.
 

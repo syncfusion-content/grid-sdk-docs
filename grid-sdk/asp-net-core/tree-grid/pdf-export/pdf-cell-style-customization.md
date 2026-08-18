@@ -1,15 +1,14 @@
 ---
 layout: post
-title: PDF Cell Style Customization in Syncfusion ASP.NET Core Tree Grid Component
-description: Learn here all about PDF Cell Style Customization in Syncfusion ASP.NET Core Tree Grid component of Syncfusion Essential JS 2 and more.
+title:  ASP.NET Core TreeGrid PDF Cell Style Customization | Syncfusion
+description: Learn how to customize PDF cell styles in the ASP.NET Core TreeGrid, including conditional formatting and theme options for PDF export.
 platform: grid-sdk
 control: PDF Cell Style Customization
-publishingplatform: grid-sdk
 documentation: ug
 ---
 
 
-# PDF Cell Style Customization
+# PDF Cell Style Customization in ASP.NET Core TreeGrid
 
 ## Conditional cell formatting
 

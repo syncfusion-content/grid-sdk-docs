@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Typescript Grid Filter Menu | Syncfusion
-description: Learn how to use Filter Menu in Typescript Data Grid with configurable dialogs, custom components, operator options, and multi-value filtering.
+title: Filter menu in TypeScript Grid control | Syncfusion
+description: Learn here all about Filter menu in Syncfusion TypeScript Grid control of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Filter menu 
 publishingplatform: grid-sdk
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Filter Menu in Typescript Data Grid
+# Filter menu in TypeScript Grid control
 
 The filter menu in the TypeScript Grid control allows you to enable filtering and provides a user-friendly interface for filtering data based on column types and operators.
 

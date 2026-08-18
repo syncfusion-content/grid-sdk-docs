@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Javascript Grid Filtering | Syncfusion
-description: Learn how to use filtering in Javascript Data Grid with filter types, server filtering, expression operators, and UI options for refined data results.
+title: Filtering in JavaScript Grid control | Syncfusion
+description: Learn here all about Filtering in Syncfusion JavaScript Grid control of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
-control: Filtering 
-publishingplatform: grid-sdk
+control: Filtering
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Filtering in Javascript Data Grid
+# Filtering in JavaScript Grid control
 
 Filtering is a powerful feature in the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid control that enables you to selectively view data based on specific criteria. It allows you to narrow down large datasets and focus on the information you need, thereby enhancing data analysis and decision-making.
 

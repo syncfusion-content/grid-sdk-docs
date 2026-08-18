@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Vue Grid Virtual Scrolling | Syncfusion
-description: Learn how to use virtual scrolling and row virtualization in Vue Data Grid to efficiently render large datasets and improve scrolling performance.
+title: Virtual scroll in Vue Grid component | Syncfusion
+description: Learn here all about Virtual scroll in Syncfusion Vue Grid component of Syncfusion Essential JS 2 and more.
 control: Virtual scroll 
 platform: grid-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
-# Virtual Scrolling in Vue Data Grid
+# Virtual scrolling in Vue Grid component
 
 The virtual scrolling feature in the [Vue Data Grid](https://www.syncfusion.com/vue-components/vue-grid) allows you to efficiently handle and display a large amount of data without experiencing any performance degradation. It optimizes the rendering process by loading only the visible rows in the Grid viewport, rather than rendering the entire dataset at once. This is particularly useful when dealing with datasets that contain thousands of records.
 
@@ -17,9 +17,9 @@ To enable virtualization in the Grid, you need to inject the **VirtualScrollServ
 
 Row virtualization is a feature in the Vue Data Grid that allows you to load and render rows only in the content viewport. It provides an alternative way of paging where data is loaded dynamically while scrolling vertically, rather than loading all the data at once. This is particularly useful when dealing with large datasets, as it improves the performance and reduces the initial load time.
 
-To set up row virtualization, you need to define the [enableVirtualization](https://ej2.syncfusion.com/vue/documentation/api/grid/#enablevirtualization) property as **true** and specify the content height using the [height](https://ej2.syncfusion.com/vue/documentation/api/grid/#height) property in the Grid configuration.
+To set up row virtualization, you need to define the [enableVirtualization](https://ej2.syncfusion.com/vue/documentation/api/grid#enablevirtualization) property as **true** and specify the content height using the [height](https://ej2.syncfusion.com/vue/documentation/api/grid#height) property in the Grid configuration.
 
-The number of records displayed in the Grid is implicitly determined by the height of the content area. Additionally, you have an option to explicitly define the visible number of records using the [pageSettings.pageSize](https://ej2.syncfusion.com/vue/documentation/api/grid/pageSettingsModel/#pagesize) property. The loaded data will be cached and reused when needed in the future.
+The number of records displayed in the Grid is implicitly determined by the height of the content area. Additionally, you have an option to explicitly define the visible number of records using the [pageSettings.pageSize](https://ej2.syncfusion.com/vue/documentation/api/grid/pageSettingsModel#pagesize) property. The loaded data will be cached and reused when needed in the future.
 
 The following example enable row virtualization using `enableVirtualization` property.
 
@@ -65,7 +65,7 @@ The following example enable row virtualization using `enableVirtualization` pro
 
 Column virtualization feature in the Vue Data Grid that allows you to optimize the rendering of columns by displaying only the columns that are currently within the viewport. It allows horizontal scrolling to view additional columns. This feature is particularly useful when dealing with grids that have a large number of columns, as it helps to improve the performance and reduce the initial loading time.
 
-To enable column virtualization, you need to set the [enableColumnVirtualization](https://ej2.syncfusion.com/vue/documentation/api/grid/#enablecolumnvirtualization) property of the Grid to **true**. This configuration instructs the Grid to only render the columns that are currently visible in the viewport. 
+To enable column virtualization, you need to set the [enableColumnVirtualization](https://ej2.syncfusion.com/vue/documentation/api/grid#enablecolumnvirtualization) property of the Grid to **true**. This configuration instructs the Grid to only render the columns that are currently visible in the viewport. 
 
 The following example enable column virtualization using `enableColumnVirtualization`  property.
 
@@ -80,7 +80,7 @@ The following example enable column virtualization using `enableColumnVirtualiza
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/grid/virtualscroll/default-cs5" %}
 
-> Column's [width](https://ej2.syncfusion.com/vue/documentation/api/grid/column/#width) is required for column virtualization. If column's width is not defined then Grid will consider its value as **200px**.
+> Column's [width](https://ej2.syncfusion.com/vue/documentation/api/grid/column#width) is required for column virtualization. If column's width is not defined then Grid will consider its value as **200px**.
 
 ### Limitations 
 
@@ -108,7 +108,7 @@ The following example enable column virtualization using `enableColumnVirtualiza
 
 ## Browser height limitation in virtual scrolling and solution
 
-You can load millions of records in the Grid by using virtual scrolling, where the grid loads and renders rows on-demand while scrolling vertically. As a result, Grid lightens the browser’s load by minimizing the DOM elements and rendering elements visible in the viewport. The height of the grid is calculated using the Total Records Count * [Row Height](https://ej2.syncfusion.com/vue/documentation/api/grid/#rowheight) property.
+You can load millions of records in the Grid by using virtual scrolling, where the grid loads and renders rows on-demand while scrolling vertically. As a result, Grid lightens the browser’s load by minimizing the DOM elements and rendering elements visible in the viewport. The height of the grid is calculated using the Total Records Count * [Row Height](https://ej2.syncfusion.com/vue/documentation/api/grid#rowheight) property.
 
 The browser has some maximum pixel height limitations for the scroll bar element. The content placed above the maximum height can't be scrolled if the element height is greater than the browser's maximum height limit. The browser height limit affects the virtual scrolling of the grid. When a large number of records are bound to the Grid, it can only display the records until the maximum height limit of the browser. Once the browser's height limit is reached while scrolling, the user won't able to scroll further to view the remaining records.
 
@@ -222,7 +222,7 @@ Let's see the step by step procedure for how we can overcome the limitation in t
 
 ### Solution 2: Using RowHeight property
 
-You can reduce the [row height](https://ej2.syncfusion.com/vue/documentation/grid/row/row-height) using the [rowHeight](https://ej2.syncfusion.com/vue/documentation/api/grid/#rowheight) property of the Grid. It will reduce the overall height to accommodate more rows. But this approach optimizes the limitation, but if the height limit is reached after reducing row height also, you have to opt for the previous solution or use paging.
+You can reduce the [row height](https://ej2.syncfusion.com/vue/documentation/grid/row/row-height) using the [rowHeight](https://ej2.syncfusion.com/vue/documentation/api/grid#rowheight) property of the Grid. It will reduce the overall height to accommodate more rows. But this approach optimizes the limitation, but if the height limit is reached after reducing row height also, you have to opt for the previous solution or use paging.
 
 In the following image, you can see how many records will be scrollable when setting rowHeight to "36px" and "30px".
 

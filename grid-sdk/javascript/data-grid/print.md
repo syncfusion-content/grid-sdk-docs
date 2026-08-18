@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Javascript Grid Print | Syncfusion
-description: Learn how to print Javascript Data Grid content with print customization options, formatted layouts, and print-ready output for grid data.
+title: Print in JavaScript Grid control | Syncfusion
+description: Learn here all about Print in Syncfusion JavaScript Grid control of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Print 
 publishingplatform: grid-sdk
@@ -9,11 +9,11 @@ documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Print in Javascript Data Grid
+# Print in JavaScript Grid control
 
 The printing feature in Syncfusion<sup style="font-size:70%">&reg;</sup> Grid allows you to easily generate and print a representation of the grid's content for better offline accessibility and documentation. You can enable this feature using either the grid's toolbar or the programmatically available `print` method.
 
-To add the printing option to the grid's toolbar, simply include the [toolbar](../api/grid/#toolbar) property in your grid configuration and add the **Print** as toolbar item. This will allow you to directly initiate the printing process while click on the Print item from the toolbar.
+To add the printing option to the grid's toolbar, simply include the [toolbar](../api/grid#toolbar) property in your grid configuration and add the **Print** as toolbar item. This will allow you to directly initiate the printing process while click on the Print item from the toolbar.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -53,7 +53,7 @@ When printing a webpage, some print options, such as layout, paper size, and mar
 
 ## Print by external button
 
-You can print the grid's content using an external button by utilizing the [print](../api/grid/#print) method. This method allows you to trigger the printing process programmatically.
+You can print the grid's content using an external button by utilizing the [print](../api/grid#print) method. This method allows you to trigger the printing process programmatically.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -84,7 +84,7 @@ You can print the grid's content using an external button by utilizing the [prin
 
 ## Print visible Page
 
-By default, the JavaScript Grid prints all the pages of the grid. The [printMode](../api/grid/#printmode) property within the grid grants you control over the printing process. However, if you want to print only the current visible page, you can achieve this by setting the [printMode](../api/grid/#printmode) property to **CurrentPage**.
+By default, the JavaScript Grid prints all the pages of the grid. The [printMode](../api/grid#printmode) property within the grid grants you control over the printing process. However, if you want to print only the current visible page, you can achieve this by setting the [printMode](../api/grid#printmode) property to **CurrentPage**.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -115,7 +115,7 @@ By default, the JavaScript Grid prints all the pages of the grid. The [printMode
 
 ## Print only selected records
 
-By default, the JavaScript Grid prints all the data bound to its dataSource. However, there might be cases where you want to print only the selected records from the grid. The JavaScript Grid provides an option to achieve this by binding to the [beforePrint](../api/grid/#beforeprint) event, where you can replace the rows of the printing grid with the selected rows.
+By default, the JavaScript Grid prints all the data bound to its dataSource. However, there might be cases where you want to print only the selected records from the grid. The JavaScript Grid provides an option to achieve this by binding to the [beforePrint](../api/grid#beforeprint) event, where you can replace the rows of the printing grid with the selected rows.
 
 Below is an example code that demonstrates how to print only the selected records from the JavaScript Grid:
 
@@ -148,7 +148,7 @@ Below is an example code that demonstrates how to print only the selected record
 
 ## Print the hierarchy grid
 
-The JavaScript Grid allows you to print hierarchy grids, which consist of a parent grid and its child grids. By default, when you print a hierarchy grid, it includes the parent grid and expanded child grids only. However, you can customize the print behavior using the [hierarchyPrintMode](../api/grid/#hierarchyprintmode) property.
+The JavaScript Grid allows you to print hierarchy grids, which consist of a parent grid and its child grids. By default, when you print a hierarchy grid, it includes the parent grid and expanded child grids only. However, you can customize the print behavior using the [hierarchyPrintMode](../api/grid#hierarchyprintmode) property.
 
 The `hierarchyPrintMode` property in the JavaScript Grid lets you control the printing behavior for hierarchy grids. You can choose from three options:
 
@@ -189,7 +189,7 @@ The `hierarchyPrintMode` property in the JavaScript Grid lets you control the pr
 
 The JavaScript Grid provides the option to visualize details of a record in another grid in a master-detail manner. By default, when you print a master-detail grid, only the master grid is included in the print output. However, you can customize the print behavior to include both the master and detail grids using the `beforePrint` event of the grid.
 
-The [beforePrint](../api/grid/#beforeprint) event in the JavaScript Grid is triggered before the actual printing process begins. You can handle this event to customize the print output. By adding the detail grid to the `element` argument of the `beforePrint` event, you can ensure that both the master and detail grids are printed on the page.
+The [beforePrint](../api/grid#beforeprint) event in the JavaScript Grid is triggered before the actual printing process begins. You can handle this event to customize the print output. By adding the detail grid to the `element` argument of the `beforePrint` event, you can ensure that both the master and detail grids are printed on the page.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -230,7 +230,7 @@ To show a large number of columns when printing, you can adjust the scale option
 
 In the JavaScript Grid, you have the flexibility to control the visibility of columns during the printing process. You can dynamically show or hide specific columns using the [toolbarClick](../api/grid#toolbarclick) and [printComplete](../api/grid#printcomplete) events while printing. This capability enhances your control over which columns are included in the printed output, allowing you to tailor the printed grid to your specific needs.
 
-In the [toolbarClick](../api/grid#toolbarclick) event, you can show or hide columns by setting [column.visible](../api/grid/column/#visible) property to **true** or **false** respectively.
+In the [toolbarClick](../api/grid#toolbarclick) event, you can show or hide columns by setting [column.visible](../api/grid/column#visible) property to **true** or **false** respectively.
 
 In the `printComplete` event, the column visibility state is reset back to its original configuration.
 
@@ -265,7 +265,7 @@ Here's a code example that demonstrates how to show a hidden column (CustomerID)
 
 ## Print the expanded state from other pages
 
-By default, when printing, the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid only includes the expanded child Grids visible on the current page. However, you can enhance the printing functionality to include expanded child Grids from other pages. This can be achieved using the [load](../api/grid/#load) and [toolbarClick](../api/grid/#toolbarclick) events, which help manage the expanded state of rows across different pages.
+By default, when printing, the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid only includes the expanded child Grids visible on the current page. However, you can enhance the printing functionality to include expanded child Grids from other pages. This can be achieved using the [load](../api/grid#load) and [toolbarClick](../api/grid#toolbarclick) events, which help manage the expanded state of rows across different pages.
 
 The following example demonstrates how to print the expanded child Grids from other pages:
 
@@ -304,7 +304,7 @@ If printing all the data remains a requirement, an alternative approach is recom
 
 ## Retain grid styles while printing
 
-The JavaScript Grid provides a [beforePrint](../api/grid/#beforeprint) event that allows you to customize the appearance and styles of the grid before it is sent to the printer. By handling this event, you can ensure that the grid retains its styles and appearance while printing.
+The JavaScript Grid provides a [beforePrint](../api/grid#beforeprint) event that allows you to customize the appearance and styles of the grid before it is sent to the printer. By handling this event, you can ensure that the grid retains its styles and appearance while printing.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -335,7 +335,7 @@ The JavaScript Grid provides a [beforePrint](../api/grid/#beforeprint) event tha
 
 ## Print grid along with other controls
 
-To print the JavaScript Grid along with another control, such as a chart, you can use the [beforePrint](../api/grid/#beforeprint) event of the grid. In this event, you can clone the content of the other control and append it to the print document.
+To print the JavaScript Grid along with another control, such as a chart, you can use the [beforePrint](../api/grid#beforeprint) event of the grid. In this event, you can clone the content of the other control and append it to the print document.
 
 Here is an example of how to print grid along with chart control:
 
@@ -368,7 +368,7 @@ Here is an example of how to print grid along with chart control:
 
 ## Add a title to the header while printing
 
-You can add a title to the header when printing the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid by utilizing the [beforePrint](../api/grid/#beforeprint) event. This event allows you to customize the print layout, including the addition of a title element, ensuring that the printed document is informative and visually appealing.
+You can add a title to the header when printing the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid by utilizing the [beforePrint](../api/grid#beforeprint) event. This event allows you to customize the print layout, including the addition of a title element, ensuring that the printed document is informative and visually appealing.
 
 Here’s an example of how to add a title to your Grid when using the print function:
 

@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Infinite Scroll in Syncfusion ASP.NET Core Tree Grid Component
-description: Learn here all about Infinite Scroll in Syncfusion ASP.NET Core Tree Grid component of Syncfusion Essential JS 2 and more.
+title: ASP.NET Core TreeGrid Infinite Scroll | Syncfusion
+description: Learn how to enable and configure infinite scroll in the ASP.NET Core TreeGrid for efficient large data handling, cache management, and best practices.
 platform: grid-sdk
 control: Infinite Scroll
-publishingplatform: grid-sdk
 documentation: ug
 ---
 
 
-# Tree Grid Infinite scrolling
+# Infinite Scroll in ASP.NET Core TreeGrid
 
 Infinite scrolling is used to load a huge amount of data without degrading the Tree Grid performance. This feature works like the lazy loading concept, which means the buffer data is loaded only when the scrollbar reaches the end of the scroller.
 
@@ -111,7 +110,7 @@ To enable the cache mode in Infinite scrolling, set `enableCache` property of `I
 * Cell selection will not be persisted in cache mode.
 * Infinite scrolling is not compatible with batch editing, cell editing, detail template and hierarchy features.
 * The aggregated information and total group items are displayed based on the current view items. To get these information regardless of the view items, refer to the
-* Programmatic selection using the [`selectRows`](../api/treegrid/#selectrows) and [`selectRow`](../api/treegrid/#selectrow) method is not supported in infinite scrolling.
+* Programmatic selection using the [`selectRows`](../api/treegrid#selectrows) and [`selectRow`](../api/treegrid#selectrow) method is not supported in infinite scrolling.
 * Infinite scrolling does not support rendering records in a collapsed state. All records must be fully expanded at initial rendering for proper functionality.
 
 N> You can refer to our  [`ASP.NET Core Tree Grid`](https://www.syncfusion.com/aspnet-core-ui-controls/tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our ASP.NET Core Tree Grid example [`ASP.NET Core Tree Grid example`](https://ej2.syncfusion.com/aspnetcore/TreeGrid/Overview#/material) to knows how to present and manipulate data.

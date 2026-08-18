@@ -1,14 +1,14 @@
 ---
 layout: post
-title: React TreeGrid Rows | Syncfusion
-description: Learn how to work with rows in React TreeGrid, including row customization, selection, styling, rendering, and row-level operations.
+title: Row in React TreeGrid component | Syncfusion
+description: Learn here all about Row in Syncfusion React TreeGrid component of Syncfusion Essential JS 2 and more.
 control: Row 
 platform: grid-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Rows in React TreeGrid
+# Row in React TreeGrid
 
 A row represents record details from the datasource.
 
@@ -17,7 +17,7 @@ The following video provides a quick start for row features:
 
 ## Customize rows
 
-Customize the appearance of a row using the [rowDataBound](https://ej2.syncfusion.com/react/documentation/api/treegrid/#rowdatabound) event, which triggers for every row. In the event handler, [RowDataBoundEventArgs](https://ej2.syncfusion.com/react/documentation/api/grid/rowDataBoundEventArgs/) provides details of the row.
+Customize the appearance of a row using the [rowDataBound](https://ej2.syncfusion.com/react/documentation/api/treegrid#rowdatabound) event, which triggers for every row. In the event handler, [RowDataBoundEventArgs](https://ej2.syncfusion.com/react/documentation/api/grid/rowDataBoundEventArgs) provides details of the row.
 
 {% tabs %}
 {% highlight js tabtitle="app.jsx" %}
@@ -55,7 +55,7 @@ The following example demonstrates this style override.
 
 ## Row height
 
-Row height can be customized using the [rowHeight](https://ej2.syncfusion.com/react/documentation/api/treegrid/#rowheight) property. This is useful for displaying more content in a row or reducing height to fit content. The property sets the height for all rows.
+Row height can be customized using the [rowHeight](https://ej2.syncfusion.com/react/documentation/api/treegrid#rowheight) property. This is useful for displaying more content in a row or reducing height to fit content. The property sets the height for all rows.
 
 In the following example, `rowHeight` is set to 60px.
 
@@ -72,7 +72,7 @@ In the following example, `rowHeight` is set to 60px.
 
 ### Customize row height for particular row
 
-When a specific row requires a different height, apply a custom value during the [rowDataBound](https://ej2.syncfusion.com/react/documentation/api/treegrid/#rowdatabound) event based on the row data. This approach keeps the global `rowHeight` for all rows while selectively overriding the height for targeted rows.
+When a specific row requires a different height, apply a custom value during the [rowDataBound](https://ej2.syncfusion.com/react/documentation/api/treegrid#rowdatabound) event based on the row data. This approach keeps the global `rowHeight` for all rows while selectively overriding the height for targeted rows.
 
 In the following example, the row with `TaskID` as **3** is set to **90px** using `rowDataBound` event.
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Javascript Grid How-To Guide | Syncfusion
-description: Learn how to customize and extend Javascript Data Grid with practical examples for editing, sorting, exporting, data binding, column customization, and more.
+title: How to in JavaScript Grid control | Syncfusion
+description: Learn here all about How to in Syncfusion JavaScript Grid control of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: How to 
 publishingplatform: grid-sdk
@@ -9,11 +9,11 @@ documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# How-To Examples in Javascript Data Grid
+# How to in JavaScript Grid control
 
 ## Refresh the data source
 
-You can add/delete the data source records through an external button. To reflect the data source changes in the grid, invoke the [`refresh`](../api/grid/#refresh) method.
+You can add/delete the data source records through an external button. To reflect the data source changes in the grid, invoke the [`refresh`](../api/grid#refresh) method.
 
 To refresh the data source:
 
@@ -30,7 +30,7 @@ Add/delete the data source record by using the following code.
 
 **Step 2**:
 
-Refresh the grid after the data source change by using the [`refresh`](../api/grid/#refresh) method.
+Refresh the grid after the data source change by using the [`refresh`](../api/grid#refresh) method.
 
 ```ts
     grid.refresh(); // refresh the Grid.
@@ -68,7 +68,7 @@ Refresh the grid after the data source change by using the [`refresh`](../api/gr
 
 ### Create custom toolbar with drop-down list
 
-You can create your own ToolBar items in the Grid. It can be added by defining the [`toolbar`](../api/grid/#toolbar) as HTML element ID. Actions for this ToolBar template items are defined in the [`toolbarClick`](../api/grid/#toolbarclick).
+You can create your own ToolBar items in the Grid. It can be added by defining the [`toolbar`](../api/grid#toolbar) as HTML element ID. Actions for this ToolBar template items are defined in the [`toolbarClick`](../api/grid#toolbarclick).
 
 To include components in the ToolBar, please ensure the following steps:
 
@@ -87,7 +87,7 @@ Initialize the template for your custom component. Using the following code add 
 
 **Step 2**:
 
-To render the DropDownList component, use the [`dataBound`](../api/grid/#databound) event of the Grid.
+To render the DropDownList component, use the [`dataBound`](../api/grid#databound) event of the Grid.
 
 * You can select the grid row index based on the selected data in the DropDownList. The output will appear as follows.
 
@@ -190,13 +190,13 @@ In the below demo, the button click will enable/disable the Grid and its actions
 
 ### Change column header text dynamically
 
-You can change the column [`headerText`](../api/grid/column/#headertext) dynamically through an external button.
+You can change the column [`headerText`](../api/grid/column#headertext) dynamically through an external button.
 
 Follow the given steps to change the header text dynamically:
 
 **Step 1**:
 
-Get the column object corresponding to the field name by using the [`getColumnByField`](../api/grid/#getcolumnbyfield) method.
+Get the column object corresponding to the field name by using the [`getColumnByField`](../api/grid#getcolumnbyfield) method.
 Then, change the header text value.
 
 ```ts
@@ -207,7 +207,7 @@ column.headerText = 'Changed Text';
 
 **Step 2**:
 
-To reflect the changes in the grid header, invoke the [`refreshHeader`](../api/grid/#refreshheader) method.
+To reflect the changes in the grid header, invoke the [`refreshHeader`](../api/grid#refreshheader) method.
 
 ```ts
 grid.refreshHeader();
@@ -243,7 +243,7 @@ grid.refreshHeader();
 
 ### Customize column styles
 
-You can customise the appearance of the header and content of a particular column using the [`customAttributes`](../api/grid/column/#customattributes) property.
+You can customise the appearance of the header and content of a particular column using the [`customAttributes`](../api/grid/column#customattributes) property.
 
 To customize the grid column, follow the given steps:
 
@@ -270,7 +270,7 @@ Create a CSS class with custom style to override the default style for rowcell a
 
 **Step 2**:
 
-Add the custom CSS class to the specified column by using the [`customAttributes`](../api/grid/column/#customattributes) property.
+Add the custom CSS class to the specified column by using the [`customAttributes`](../api/grid/column#customattributes) property.
 
 ```ts
 { field: 'ShipCity', headerText: 'Ship City', customAttributes: {class: 'customcss'}, width: 100 },
@@ -306,9 +306,9 @@ Add the custom CSS class to the specified column by using the [`customAttributes
 
 ### Display custom tooltip for columns in grid
 
-To display custom ToolTip ([`EJ2 Tooltip`](../../tooltip/getting-started)),  use the [`queryCellInfo`](../api/grid/#querycellinfo) event.
+To display custom ToolTip ([`EJ2 Tooltip`](../../tooltip/getting-started)),  use the [`queryCellInfo`](../api/grid#querycellinfo) event.
 
-Render the ToolTip component for the grid cells by using the following code in the [`queryCellInfo`](../api/grid/#querycellinfo) event.
+Render the ToolTip component for the grid cells by using the following code in the [`queryCellInfo`](../api/grid#querycellinfo) event.
 
 ```ts
 function tooltip (args: QueryCellInfoEventArgs) {
@@ -348,7 +348,7 @@ function tooltip (args: QueryCellInfoEventArgs) {
 
 ### Render other components in a column
 
-You can render any component in a grid column using the [`template`](../api/grid/column/#template) property.
+You can render any component in a grid column using the [`template`](../api/grid/column#template) property.
 
 To render other components in the grid, ensure the following steps:
 
@@ -369,7 +369,7 @@ template:`<div>
 
 **Step 2**:
 
-Using the [`queryCellInfo`](../api/grid/#querycellinfo) event, you can render the DropDown component with the following code.
+Using the [`queryCellInfo`](../api/grid#querycellinfo) event, you can render the DropDown component with the following code.
 
 ```ts
     function dropdown(args: QueryCellInfoEventArgs) {
@@ -409,7 +409,7 @@ Using the [`queryCellInfo`](../api/grid/#querycellinfo) event, you can render th
 
 ### Change the orientation of the header text
 
-You can change the orientation of the header text by using the [`customAttributes`](../api/grid/column/#customattributes) property.
+You can change the orientation of the header text by using the [`customAttributes`](../api/grid/column#customattributes) property.
 
 Ensure the following steps:
 
@@ -426,7 +426,7 @@ Create a CSS class with orientation style for the grid header cell.
 
 **Step 2**:
 
-Add the custom CSS class to a particular column by using the [`customAttributes`](../api/grid/column/#customattributes) property.
+Add the custom CSS class to a particular column by using the [`customAttributes`](../api/grid/column#customattributes) property.
 
 ```ts
     { field: 'ShipCity', headerText: 'Ship City', textAlign: 'Center', customAttributes: {class: 'orientationcss'}, width: 80 },
@@ -551,7 +551,7 @@ In the below demo, the `ShipCountry` column is rendered with the template.
 
 ### Customize the edit dialog
 
-You can customize the appearance of the edit dialog in the [`actionComplete`](../api/grid/#actioncomplete) event based on `requestType` as `beginEdit` or `add`.
+You can customize the appearance of the edit dialog in the [`actionComplete`](../api/grid#actioncomplete) event based on `requestType` as `beginEdit` or `add`.
 
 In the following example, the dialog's header text has been changed for editing and adding the records.
 
@@ -584,7 +584,7 @@ In the following example, the dialog's header text has been changed for editing 
 
 ### Show or Hide columns in Dialog editing
 
-You can show hidden columns or hide visible column's editor in the dialog while editing the grid record using [`actionBegin`](../api/grid/#actionbegin) and [`actionComplete`](../api/grid/#actioncomplete) events.
+You can show hidden columns or hide visible column's editor in the dialog while editing the grid record using [`actionBegin`](../api/grid#actionbegin) and [`actionComplete`](../api/grid#actioncomplete) events.
 
 In the `actionBegin` event, based on `requestType` as `beginEdit` or  `add`. We can show or hide the editor by using `column.visible` property.
 
@@ -654,7 +654,7 @@ In the below demo, Cascading DropDownList is rendered for the `ShipCountry` and 
 
 ### Provide custom data source and enabling filtering to DropDownList
 
-You can provide data source to the DropDownList by using the [`columns.edit.params`](../api/grid/column/#edit) property.
+You can provide data source to the DropDownList by using the [`columns.edit.params`](../api/grid/column#edit) property.
 
 While setting new data source using edit params, you must specify a new `query` property too for the dropdownlist as follows,
 
@@ -704,7 +704,7 @@ In the below demo, DropDownList is rendered with custom Datasource for the `Ship
 
 You can access the component instance from the component element using the `ej2_instances` property.
 
-In the below demo, you can access the Editor component instance while adding or editing actions on the [`actionComplete`](../api/grid/#actioncomplete) event.
+In the below demo, you can access the Editor component instance while adding or editing actions on the [`actionComplete`](../api/grid#actioncomplete) event.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -735,7 +735,7 @@ In the below demo, you can access the Editor component instance while adding or 
 
 ### Use Wizard like Dialog Editing
 
-Wizard helps you to create intuitive step-by-step forms to fill. You can achieve the wizard-like editing by using the dialog template feature. It supports your own editing template by defining the [`editSettings.mode`](../api/grid/editSettings/#mode) as `Dialog` and [`editSetting.template`](../api/grid/editSettings/#template) as SCRIPT element ID or HTML string which holds the template.
+Wizard helps you to create intuitive step-by-step forms to fill. You can achieve the wizard-like editing by using the dialog template feature. It supports your own editing template by defining the [`editSettings.mode`](../api/grid/editSettings#mode) as `Dialog` and [`editSetting.template`](../api/grid/editSettings#template) as SCRIPT element ID or HTML string which holds the template.
 
 The following example demonstrates the wizard-like editing in the grid with obtrusive validation.
 
@@ -768,7 +768,7 @@ The following example demonstrates the wizard-like editing in the grid with obtr
 
 ### Using the tab inside the dialog template
 
-You can use the [`tab`](../../tab/index.html) component inside the dialog edit UI using the dialog template feature. The dialog template feature can be enabled by defining the [`editSettings.mode`](../api/grid/editSettings/#mode) as `Dialog` and [`editSetting.template`](../api/grid/editSettings/#template) as SCRIPT element ID or HTML string which holds the template.
+You can use the [`tab`](../../tab/index.html) component inside the dialog edit UI using the dialog template feature. The dialog template feature can be enabled by defining the [`editSettings.mode`](../api/grid/editSettings#mode) as `Dialog` and [`editSetting.template`](../api/grid/editSettings#template) as SCRIPT element ID or HTML string which holds the template.
 
 To include the tab components in the dialog, follow the given steps:
 
@@ -820,7 +820,7 @@ Initialize the template for your tab component.
 
 **Step 2**:
 
-To render the tab component, use the [`actionComplete`](../api/grid/#databound) event of the grid.
+To render the tab component, use the [`actionComplete`](../api/grid#databound) event of the grid.
 
 ```ts
 
@@ -867,7 +867,7 @@ The following example demonstrates rendering the tab control inside the edit dia
 
 ### Disable editing for a particular row/cell
 
-You can disable the editing for a particular row by using the [`actionBegin`](../api/grid/#actionbegin) event of Grid based on `requestType` as `beginEdit`.
+You can disable the editing for a particular row by using the [`actionBegin`](../api/grid#actionbegin) event of Grid based on `requestType` as `beginEdit`.
 
 In the below demo, the rows which are having the value for `ShipCountry` column as "France" is prevented from editing.
 
@@ -898,7 +898,7 @@ In the below demo, the rows which are having the value for `ShipCountry` column 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grid-cs95" %}
 {% endif %}
 
-For batch mode of editing, you can use [`cellEdit`](../api/grid/#celledit) event of Grid. In the below demo, the cells which are having the value as "France" is prevented from editing.
+For batch mode of editing, you can use [`cellEdit`](../api/grid#celledit) event of Grid. In the below demo, the cells which are having the value as "France" is prevented from editing.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -964,9 +964,9 @@ The following example demonstrates on `Adding` a new row when `Enter` key is pre
 
 ### Make a cell editable on a single click with batch editing
 
-You can make a cell editable on a single click with `batch` mode of editing in Grid, by using the [`editCell`](../api/grid/edit/#editcell) method.
+You can make a cell editable on a single click with `batch` mode of editing in Grid, by using the [`editCell`](../api/grid/edit#editcell) method.
 
-Bind the click event for Grid and in the click event handler call the [`editCell`](../api/grid/edit/#editcell) method, based on the clicked target element.
+Bind the click event for Grid and in the click event handler call the [`editCell`](../api/grid/edit#editcell) method, based on the clicked target element.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -999,7 +999,7 @@ Bind the click event for Grid and in the click event handler call the [`editCell
 
 ### Customizing filter menu operators list
 
- You can customize the default filter operator list by defining the [`filterSettings.operators`](../api/grid/filterSettings/#operators) property.
+ You can customize the default filter operator list by defining the [`filterSettings.operators`](../api/grid/filterSettings#operators) property.
 The available options are:
 * `stringOperator`- Defines the customized string operator list.
 * `numberOperator` - Defines the customized number operator list.
@@ -1041,7 +1041,7 @@ The following sample illustrates customizing the string filter operators.
 
 You can perform single-column or multi-column sorting dynamically through an external button.
 
-To perform single-column sorting, use the [`sortColumn`](../api/grid/sort/#sortcolumn) method of Grid.
+To perform single-column sorting, use the [`sortColumn`](../api/grid/sort#sortcolumn) method of Grid.
 
 ```ts
     document.getElementById('SingleSort').addEventListener('click', () => {
@@ -1049,7 +1049,7 @@ To perform single-column sorting, use the [`sortColumn`](../api/grid/sort/#sortc
     });
 ```
 
-To perform multi-column sorting, you need to push the columns to be sorted into the [`sortSettings.columns`](../api/grid/sortSettings/#columns).
+To perform multi-column sorting, you need to push the columns to be sorted into the [`sortSettings.columns`](../api/grid/sortSettings#columns).
 
 ```ts
     document.getElementById('MultiSort').addEventListener('click', () => {
@@ -1091,7 +1091,7 @@ In the below demo, click on the corresponding button to perform single-column or
 
 You can clear the sorting for a particular column or the entire sorted columns in Grid dynamically through an external button.
 
-To clear sort for a particular column, you need to splice the particular column from the [`sortSettings.columns`](../api/grid/sortSettings/#columns).
+To clear sort for a particular column, you need to splice the particular column from the [`sortSettings.columns`](../api/grid/sortSettings#columns).
 
 ```ts
     document.getElementById('SingleClearSort').addEventListener('click', () => {
@@ -1105,7 +1105,7 @@ To clear sort for a particular column, you need to splice the particular column 
     });
 ```
 
-To clear sorting for all the sorted columns, use the [`clearSorting`](../api/grid/sort/#clearsorting) method of Grid.
+To clear sorting for all the sorted columns, use the [`clearSorting`](../api/grid/sort#clearsorting) method of Grid.
 
 ```ts
     document.getElementById('MultiClearSort').addEventListener('click', () => {
@@ -1146,7 +1146,7 @@ In the below demo, click on the corresponding button to clear sort for particula
 
 ### Use Edit Template in Foreign Key Column
 
-By default, the foreign key column uses the drop-down component for editing. You can render other than the drop-down component by using the [`column.edit`](../api/grid/column/#edit) property. The following example demonstrates the way of using edit template in the foreign column.
+By default, the foreign key column uses the drop-down component for editing. You can render other than the drop-down component by using the [`column.edit`](../api/grid/column#edit) property. The following example demonstrates the way of using edit template in the foreign column.
 
 In the following code example, the `Employee Name` is a foreign key column. When editing, the AutoComplete component is rendered instead of drop-down list.
 
@@ -1179,7 +1179,7 @@ In the following code example, the `Employee Name` is a foreign key column. When
 
 ### Customize filter UI in foreign key column
 
-You can create your own filtering UI by using [`column.filter`](../api/grid/column/#filter) property. The following example demonstrates the way to create a custom filtering UI in the foreign column.
+You can create your own filtering UI by using [`column.filter`](../api/grid/column#filter) property. The following example demonstrates the way to create a custom filtering UI in the foreign column.
 
 In the following example, The `Employee Name` is a foreign key column. DropDownList is rendered using Filter UI.
 
@@ -1212,7 +1212,7 @@ In the following example, The `Employee Name` is a foreign key column. DropDownL
 
 ### Use filter bar template in foreign key column
 
-You can use the filter bar template in foreign key column by defining the [`column.filterBarTemplate`](../api/grid/column/#filterbartemplate) property. The following example demonstrates the way to use filter bar template in foreign column.
+You can use the filter bar template in foreign key column by defining the [`column.filterBarTemplate`](../api/grid/column#filterbartemplate) property. The following example demonstrates the way to use filter bar template in foreign column.
 
 In the following example, The `Employee Name` is a foreign key column. This column header shows the custom filter bar template and you can select filter value by using the `DropDown` options.
 
@@ -1278,7 +1278,7 @@ In the following example, The `Employee Name` is a foreign key column and the ag
 
 ### Bind foreign key dataSource on dropdown edit
 
-When editing, you can bind foreign key datasource to a dropdown list by using [`column.dataSource`](../api/grid/column/#datasource) property.
+When editing, you can bind foreign key datasource to a dropdown list by using [`column.dataSource`](../api/grid/column#datasource) property.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -1379,7 +1379,7 @@ In the below Pdf exporting demo, We have gotten the filtered data by applying fi
 
 ### Customize pager drop-down
 
-To customize the default values of pager drop-down, you need to define the [`pageSizes`](../api/grid/pageSettingsModel/#pagesizes) as array of strings.
+To customize the default values of pager drop-down, you need to define the [`pageSizes`](../api/grid/pageSettingsModel#pagesizes) as array of strings.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -1412,7 +1412,7 @@ To customize the default values of pager drop-down, you need to define the [`pag
 
 By default, the expand/collapse icon will be visible even if the child grid is empty.
 
-You can use [`rowDataBound`](../api/grid/#rowdatabound) event to hide the icon when there is no record in child grid.
+You can use [`rowDataBound`](../api/grid#rowdatabound) event to hide the icon when there is no record in child grid.
 
 To hide the expand/collapse icon in parent row with no record in child grid, follow the given steps:
 
@@ -1433,7 +1433,7 @@ Create CSS class with custom style to override the default style of Grid.
 
 **Step 2**:
 
-Add the CSS class to the Grid in the [`rowDataBound`](../api/grid/#rowdatabound) event handler of Grid.
+Add the CSS class to the Grid in the [`rowDataBound`](../api/grid#rowdatabound) event handler of Grid.
 
 ```ts
     function rowDataBound(args:any):void{

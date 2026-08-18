@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Typescript Grid Selection Customization | Syncfusion
-description: Learn how to customize selection styles in Typescript Data Grid for selected rows, cells, and columns using CSS and selection templates.
+title: Selection in TypeScript Grid control | Syncfusion
+description: Learn here all about Selection in Syncfusion TypeScript Grid control of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Selection 
 publishingplatform: grid-sdk
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Selection Style in Typescript Data Grid
+# Selection in TypeScript Grid control
 
 You can customize the appearance of the selection in the TypeScript Grid control using CSS. Here are examples of how to customize the row selection background, cell selection background, and column selection background.
 

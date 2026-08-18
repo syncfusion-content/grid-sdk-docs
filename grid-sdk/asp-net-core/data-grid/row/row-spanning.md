@@ -1,14 +1,14 @@
 ---
 layout: post
-title: ASP.NET Core Grid Row Spanning | Syncfusion
-description: Learn how to use Row Spanning in ASP.NET Core Data Grid to merge cells across rows, configure rowspan behavior, and customize data layouts.
+title: Row Spanning in Syncfusion ASP.NET Core Grid Component
+description: Learn here all about Row Spanning in Syncfusion ASP.NET Core Grid component of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Row Spanning
 publishingplatform: grid-sdk
 documentation: ug
 ---
 
-# Row Spanning in ASP.NET Core Data Grid
+# Row spanning in ASP.NET Core Grid component
 
 The grid provides an option to span row cells, allowing you to merge two or more cells in a row into a single cell. This feature can be useful in scenarios where you want to display information that spans across multiple rows, but want to avoid repeating the same information in each row.
 

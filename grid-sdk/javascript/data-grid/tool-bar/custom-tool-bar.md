@@ -1,7 +1,7 @@
 ---
 layout: post
-title: ##Platform_Name## Grid Custom Toolbar | Syncfusion
-description: Learn how to create a custom toolbar in ##Platform_Name## Data Grid with templates, custom components, interactive controls, and custom toolbar actions.
+title: Custom tool bar in JavaScript Grid control | Syncfusion
+description: Learn here all about Custom tool bar in Syncfusion JavaScript Grid control of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Custom tool bar 
 publishingplatform: grid-sdk
@@ -9,11 +9,11 @@ documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Custom Toolbar in ##Platform_Name## Data Grid
+# Custom tool bar in JavaScript Grid control
 
 Custom toolbar in JavaScript Grid allows you to create a distinctive toolbar layout, style, and functionality that aligns with the specific needs of your application, providing a personalized experience within the Grid control.
 
-This can be achieved by utilizing the [toolbarTemplate](../../api/grid/#toolbartemplate) property, which offers extensive customization options for the toolbar. You can define a custom template for the toolbar and handle the actions for this toolbar template items are defined in the **clicked** event.
+This can be achieved by utilizing the [toolbarTemplate](../../api/grid#toolbartemplate) property, which offers extensive customization options for the toolbar. You can define a custom template for the toolbar and handle the actions for this toolbar template items are defined in the **clicked** event.
 
 The following example demonstrates, how to render the custom toolbar using `toolbarTemplate`.
 
@@ -48,7 +48,7 @@ The following example demonstrates, how to render the custom toolbar using `tool
 
 Render an image with text in custom toolbar in JavaScript Grid allows easily render an image along with text in the toolbar of the Grid. This feature enhances the visual presentation of the Grid, providing additional context and improving the overall experience.
 
-To render an image with text in custom toolbar, This can be achieved by utilizing the [toolbarTemplate](../../api/grid/#toolbartemplate) property.
+To render an image with text in custom toolbar, This can be achieved by utilizing the [toolbarTemplate](../../api/grid#toolbartemplate) property.
 
 The following example demonstrates how to render an image in the toolbar of the grid using `toolbarTemplate`.
 
@@ -93,7 +93,7 @@ Render DropDownList in custom toolbar in JavaScript Grid enables you to extend t
 
 {% endif %}
 
-This can be achieved by utilizing the [toolbarTemplate](../../api/grid/#toolbartemplate). The example below demonstrates how to render the **DropDownList** control in the custom toolbar, where the toolbar template includes the its [change](../../api/drop-down-list#change) event is bound to the **onChange** method.
+This can be achieved by utilizing the [toolbarTemplate](../../api/grid#toolbartemplate). The example below demonstrates how to render the **DropDownList** control in the custom toolbar, where the toolbar template includes the its [change](../../api/drop-down-list#change) event is bound to the **onChange** method.
 
 In the **onChange** method, the text of the selected item is checked to determine the appropriate action. For example, if **Update** is chosen, the [endEdit](../../api/grid#endedit) method is called to exit the edit mode. If **Edit** is selected, the selected record is passed to the [startEdit](../../api/grid#startedit) method to initiate the edit mode dynamically. Similarly, if **Delete** is picked, the selected record is passed to the [deleteRecord](../../api/grid#deleterecord) method to remove it from the grid.
 
@@ -130,11 +130,11 @@ Rendering a control or element using the toolbar template in the JavaScript Grid
 
 {% if page.publishingplatform == "typescript" %}
  
-To render custom components or elements within the toolbar, use the [toolbarTemplate](../../api/grid/#toolbartemplate) property. This allows you to include other components, such as a [Button](../../button/getting-started), and perform specific grid actions based on the button click. For example, when the **ExcelExport** button is clicked, the [excelExport](../../api/grid/#excelexport) method is called to export the grid to Excel. Similarly, when the **PdfExport** button is clicked, the [pdfExport](../../api/grid/#pdfexport) method is called to export the grid to PDF format.Likewise, when the **Print** button is clicked, the [print](../../api/grid/#print) method will triggered to print the grid.
+To render custom components or elements within the toolbar, use the [toolbarTemplate](../../api/grid#toolbartemplate) property. This allows you to include other components, such as a [Button](../../button/getting-started), and perform specific grid actions based on the button click. For example, when the **ExcelExport** button is clicked, the [excelExport](../../api/grid#excelexport) method is called to export the grid to Excel. Similarly, when the **PdfExport** button is clicked, the [pdfExport](../../api/grid#pdfexport) method is called to export the grid to PDF format.Likewise, when the **Print** button is clicked, the [print](../../api/grid#print) method will triggered to print the grid.
 
  {% elsif page.publishingplatform == "javascript" %}
  
-To render custom components or elements within the toolbar, use the [toolbarTemplate](../../api/grid/#toolbartemplate) property. This allows you to include other components, such as a [Button](../../button/es5-getting-started), and perform specific grid actions based on the button click. For example, when the **ExcelExport** button is clicked, the [excelExport](../../api/grid/#excelexport) method is called to export the grid to Excel. Similarly, when the **PdfExport** button is clicked, the [pdfExport](../../api/grid/#pdfexport) method is called to export the grid to PDF format.Likewise, when the **Print** button is clicked, the [print](../../api/grid/#print) method will triggered to print the grid.
+To render custom components or elements within the toolbar, use the [toolbarTemplate](../../api/grid#toolbartemplate) property. This allows you to include other components, such as a [Button](../../button/es5-getting-started), and perform specific grid actions based on the button click. For example, when the **ExcelExport** button is clicked, the [excelExport](../../api/grid#excelexport) method is called to export the grid to Excel. Similarly, when the **PdfExport** button is clicked, the [pdfExport](../../api/grid#pdfexport) method is called to export the grid to PDF format.Likewise, when the **Print** button is clicked, the [print](../../api/grid#print) method will triggered to print the grid.
 
 {% endif %}
 

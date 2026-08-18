@@ -3,8 +3,7 @@ layout: post
 title:  TypeScript TreeGrid Key Features | Syncfusion
 description: Explore the key features of TypeScript TreeGrid, including hierarchical data binding, editing, filtering, sorting, virtualization, and exporting.
 platform: grid-sdk
-control: Index 
-publishingplatform: grid-sdk
+control: Index
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---

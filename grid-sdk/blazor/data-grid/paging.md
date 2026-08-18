@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Blazor Grid Paging | Syncfusion
-description: Learn how to configure paging in Blazor Data Grid, customize pager settings, manage page navigation, and improve data browsing.
+title: Paging in Blazor DataGrid Component | Syncfusion®
+description: Learn how to configure paging in the Blazor DataGrid, including page size, page count, current page, pager templates, events, and top pager layout.
 platform: grid-sdk
 control: DataGrid
 documentation: ug
 ---
 
-# Paging in Blazor Data Grid
+# Paging in Blazor DataGrid
 
 Paging provides an option to display [Blazor DataGrid](https://www.syncfusion.com/blazor-components/blazor-datagrid) data in segmented pages, making it easier to navigate large datasets. This feature is particularly useful when dealing with extensive data sets.
 
