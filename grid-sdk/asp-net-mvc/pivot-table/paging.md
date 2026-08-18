@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Paging in ASP.NET MVC Syncfusion Pivot Table Component
-description: Learn here all about Paging in Syncfusion ASP.NET MVC Pivot Table component of Syncfusion Essential JS 2 and more.
-platform: grid-sdk
+title: Paging in ASP.NET MVC Pivot Table | Syncfusion
+description: Learn how the ASP.NET MVC Pivot Table splits large row and column datasets into pages via EnablePaging and PageSettings, with a configurable pager UI.
+platform: ej2-asp-core-mvc
 control: Paging
-publishingplatform: grid-sdk
+publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
 <!-- markdownlint-disable MD036 -->
 
-# Paging in ASP.NET MVC Pivot Table Component
+# Paging in ASP.NET MVC Pivot Table
 
 The paging feature in the Pivot Table component is designed to handle large datasets efficiently by dividing the data into manageable pages. This prevents performance issues associated with rendering large amounts of data at once, allowing users to navigate through rows and columns page by page.
 

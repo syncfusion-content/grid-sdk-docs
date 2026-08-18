@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Getting started with React Pivotview component | Syncfusion
-description:  Checkout and learn about Getting started with React Pivotview component of Syncfusion Essential JS 2 and more details.
-control: Getting started 
-platform: grid-sdk
+title: Getting Started with React Pivot Table | Syncfusion
+description: Learn how to get started with the React Pivot Table. Explore setup, features, examples, and customization options.
+control: Pivot Table
+platform: ej2-react
 documentation: ug
-domainurl: https://help.syncfusion.com/grid-sdk
+domainurl: ##DomainURL##
 ---
 
-# Getting started in React PivotView component
+# Getting Started with React Pivot Table
 
 This section guides you through the steps to create a simple [Pivot Table](https://www.syncfusion.com/react-components/react-pivot-table) using the Syncfusion `PivotView` component in a React application. It demonstrates how to set up and use the component to display and analyze data effectively.
 
@@ -27,7 +27,7 @@ To get started quickly with the React [Pivot Table](https://www.syncfusion.com/r
 
 Easily set up a React application using [Vite](https://vitejs.dev), which provides a faster development environment, smaller bundle sizes, and optimized builds compared to traditional tools like `create-react-app`. For detailed steps, refer to the Vite [installation instructions](https://vitejs.dev/guide).
 
-> **Note:** To create a React application using `create-react-app`, refer to this [documentation](https://ej2.syncfusion.com/react/documentation/getting-started/create-app) for more details.
+> **Note:** To create a React application using `create-react-app`, see the [Create React App documentation](https://ej2.syncfusion.com/react/documentation/getting-started/create-app) for more details.
 
 To create a new React application, run the following command and choose the `React` framework. Select the `TypeScript` variant if you plan to follow the `App.tsx` example below.
 
@@ -38,7 +38,7 @@ This command will prompt you for a few settings for the new project, such as sel
 
 ![Initial_setup](images/Initial-setup.jpg)
 
-Terminate the application, then run the following command:
+After the project is created, change into the new directory:
 
 ```bash
 cd my-app
@@ -87,22 +87,22 @@ The Pivot Table code should be placed in the **src/App.tsx** file (or **src/App.
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/getting-started-cs1/app/App.jsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/react/pivot-table/react/pivot-table/getting-started-cs1/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/getting-started-cs1/app/App.tsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/react/pivot-table/react/pivot-table/getting-started-cs1/app/App.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
 ## Run the application
 
-Run the following command from the `my-app` directory, then open the URL printed in the terminal (by default `http://localhost:5173`) in your browser to view the Pivot Table.
+Run the following command from the `my-app` directory, then open the URL printed in the terminal (by default at `http://localhost:5173`) in your browser to view the Pivot Table.
 
 ```bash
 npm run dev
 ```
 
-## See also
+## See Also
 
 * [Getting Started with Next.js](./nextjs-getting-started)
 * [Data Binding](./data-binding)

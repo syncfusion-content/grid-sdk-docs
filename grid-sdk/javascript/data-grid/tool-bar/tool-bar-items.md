@@ -1,7 +1,7 @@
 ---
 layout: post
-title: ##Platform_Name## Grid Toolbar Items | Syncfusion
-description: Learn how to use toolbar items in ##Platform_Name## Data Grid with built-in actions, custom toolbar items, templates, export options, and search functionality.
+title: Tool bar items in JavaScript Grid control | Syncfusion
+description: Learn here all about Tool bar items in Syncfusion JavaScript Grid control of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Tool bar items 
 publishingplatform: grid-sdk
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Toolbar Items in ##Platform_Name## Data Grid
+# Tool bar items in JavaScript Grid control
 
 The JavaScript Grid offers a flexible toolbar that enables the addition of custom toolbar items or modification of existing ones. This customizable toolbar is positioned above the grid, providing a convenient way to access various actions and functionalities
 

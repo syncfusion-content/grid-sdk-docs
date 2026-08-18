@@ -1,14 +1,14 @@
 ---
 layout: post
-title: React TreeGrid Column Resizing | Syncfusion
-description: Learn how to resize columns in React TreeGrid, including column width adjustment, resizing modes, and auto-fit options.
+title: Column resizing in React TreeGrid | Syncfusion
+description: Learn here all about Column resizing in Syncfusion React TreeGrid of Syncfusion Essential JS 2 and more.
 control: Column resizing 
 platform: grid-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Column Resizing in React TreeGrid
+# Column resizing in React TreeGrid 
 
 Column width can be adjusted by clicking and dragging the right edge of a column header. While dragging, the column resizes immediately. Double-clicking the right edge of a column header automatically fits that column to the widest cell content. To enable column resizing, set the [`allowResizing`](https://ej2.syncfusion.com/react/documentation/api/treegrid#allowresizing) property to true.
 

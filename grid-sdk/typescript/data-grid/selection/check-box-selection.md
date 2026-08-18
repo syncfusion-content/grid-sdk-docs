@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Typescript Grid Checkbox Selection | Syncfusion
-description: Learn how to enable checkbox selection in Typescript Data Grid with checkbox columns, select-all functionality, selection APIs, and multiple selection support.
+title: Check box selection in TypeScript Grid control | Syncfusion
+description: Learn here all about Check box selection in Syncfusion TypeScript Grid control of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Check box selection 
 publishingplatform: grid-sdk
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Checkbox Selection in Typescript Data Grid
+# Check box selection in TypeScript Grid control
 
 Checkbox selection in the Grid control allows you to provide an option to select multiple records by using a checkbox in each row. This feature is particularly useful when you need to perform bulk actions or operations on selected records within the Grid.
 

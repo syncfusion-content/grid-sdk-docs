@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Typescript Grid PostgreSQL Server Data Binding | Syncfusion
-description: Learn how to connect Typescript Data Grid to PostgreSQL Server, bind data through API services, and perform efficient CRUD operations.
+title: PostgreSQL Server Data Binding Syncfusion TypeScript Grid
+description: Learn how to consume data from PostgreSQL Server, bind it to Syncfusion Grid, and perform CRUD operations.
 platform: grid-sdk
 control: grid
 keywords: adaptors, customadaptor, urladaptor, postgresql, remotedata
@@ -10,7 +10,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# PostgreSQL Server Data Binding in Typescript Data Grid
+# Connecting PostgreSQL Server data to Syncfusion TypeScript Grid
 
 This section describes how to connect and retrieve data from a PostgreSQL Server database using [Npgsql EntityFrameworkCore PostgreSQL](https://www.nuget.org/packages/Npgsql.EntityFrameworkCore.PostgreSQL) and bind it to the Syncfusion TypeScript Grid.
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: ASP.NET Core Grid Caption Template | Syncfusion
-description: Learn how to use Caption Template in ASP.NET Core Data Grid to customize group captions, apply formatting, and display group information effectively.
+title: Caption Template in ASP.NET Core Grid Component
+description: Learn here all about Caption Template in Syncfusion ASP.NET Core Grid component of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Caption Template
 publishingplatform: grid-sdk
 documentation: ug
 ---
 
-# Caption Template in ASP.NET Core Data Grid
+# Caption template in ASP.NET Core Grid component
 
 The caption template feature in the [ASP.NET Core DataGrid](https://www.syncfusion.com/aspnet-core-ui-controls/grid) allows you to customize and enhance the appearance of group caption row. It provides a flexible way to display additional information about grouped data, such as counts or grouped value, and enables you to incorporate custom content like images, icons, or other HTML elements. This feature empowers you to create visually appealing and informative group captions in the grid component.
 

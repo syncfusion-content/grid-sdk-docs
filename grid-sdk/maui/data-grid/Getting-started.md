@@ -1,19 +1,19 @@
 ---
 layout: post
-title: Getting Started with .NET MAUI Data Grid | Syncfusion®
+title: Getting Started with .NET MAUI DataGrid control | Syncfusion
 canonical_url: "https://www.syncfusion.com/maui-controls/maui-datagrid"
 description: Learn how to get started with the Syncfusion® .NET MAUI Data Grid control. Explore setup, features, examples, and customization options
-platform: MAUI
+platform: grid-sdk
 control: SfDataGrid
 documentation: ug
-keywords : maui data grid, maui datagrid, maui grid, grid maui, maui gridview, grid in maui, .net maui datagrid, .net maui grid, .net grid maui
+keywords : maui datagrid, maui grid, grid maui, maui gridview, grid in maui, .net maui datagrid, .net maui grid, .net grid maui
 ---
 
-# Getting Started with .NET MAUI Data Grid
+# Getting Started with .NET MAUI DataGrid
 
 This section provides a quick overview for working with the [SfDataGrid](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.DataGrid.SfDataGrid.html) for .NET MAUI.  Follow the steps below to add a basic DataGrid to your project.
 
-To quickly get started with the [.NET MAUI Data Grid](https://www.syncfusion.com/maui-controls/maui-datagrid), watch this video:
+To quickly get started with the [.NET MAUI DataGrid](https://www.syncfusion.com/maui-controls/maui-datagrid), watch this video:
 
 <style>#MAUIDataGridVideoTutorial{width : 90% !important; height: 400px !important }</style> <iframe id='MAUIDataGridVideoTutorial' src='https://www.youtube.com/embed/xW0a7JlHbz4'></iframe>
 
@@ -33,7 +33,7 @@ Before proceeding, ensure the following are set up:
 2. Name the project and choose a location. Then, click **Next.**
 3. Select the .NET framework version and click **Create.**
 
-## Step 2: Install the Syncfusion<sup>®</sup> MAUI Data Grid NuGet package
+## Step 2: Install the Syncfusion<sup>®</sup> MAUI DataGrid NuGet package
 
 1.  In **Solution Explorer**, right-click the project and choose **Manage NuGet Packages**.
 2.  Search for [Syncfusion.Maui.DataGrid](https://www.nuget.org/packages/Syncfusion.Maui.DataGrid/) and install the latest version.
@@ -58,11 +58,11 @@ Before proceeding, ensure the following are set up:
 3. Select the project location, type the project name and press **Enter.**
 4. Then choose **Create project.**
 
-## Step 2: Install the Syncfusion<sup>®</sup> MAUI Data Grid NuGet package
+## Step 2: Install the Syncfusion<sup>®</sup> MAUI DataGrid NuGet package
 
 1. Press <kbd>Ctrl</kbd> + <kbd>`</kbd> (backtick) to open the integrated terminal in Visual Studio Code.
 2. Ensure you're in the project root directory where your .csproj file is located.
-3. Run the command `dotnet add package Syncfusion.Maui.DataGrid` to install the Syncfusion<sup>®</sup> .NET MAUI Data Grid package.
+3. Run the command `dotnet add package Syncfusion.Maui.DataGrid` to install the Syncfusion<sup>®</sup> .NET MAUI DataGrid package.
 4. To ensure all dependencies are installed, run `dotnet restore`.
 
 {% endtabcontent %}
@@ -83,7 +83,7 @@ Before proceeding, ensure the following are set up:
 2. Enter the Project Name, Solution Name, and Location.
 3. Select the .NET framework version and click Create.
 
-## Step 2: Install the Syncfusion<sup>®</sup> MAUI Data Grid NuGet package
+## Step 2: Install the Syncfusion<sup>®</sup> MAUI DataGrid NuGet package
 
 1. In **Solution Explorer,** right-click the project and choose **Manage NuGet Packages.**
 2. Search for [Syncfusion.Maui.DataGrid](https://www.nuget.org/packages/Syncfusion.Maui.DataGrid/) and install the latest version.
@@ -94,9 +94,9 @@ Before proceeding, ensure the following are set up:
 
 ## Step 3: Register Syncfusion handler
  
-To use Syncfusion controls, register the Syncfusion core handler in your application's startup configuration.
+To use Syncfusion controls, you must register the Syncfusion core handler in your application's startup configuration.
 
-In the `MauiProgram.cs` file (located at the root of your project), add the following namespace:
+In the `MauiProgram.cs` file (located at the root of your project), add the namespace and register the handler in the `CreateMauiApp` method:
  
 {% tabs %}
 {% highlight c# %}
@@ -104,7 +104,7 @@ using Syncfusion.Maui.Core.Hosting;
 {% endhighlight %}
 {% endtabs %}
  
-Then, register the Syncfusion core handler in the `CreateMauiApp` method:
+Register the Syncfusion core handler in your `CreateMauiApp` method of `MauiProgram.cs` file to use Syncfusion controls.
  
 {% tabs %}
 {% highlight c# %}
@@ -120,37 +120,37 @@ Create a simple data model as shown in the following code example, and save it a
 {% highlight c# %}
 public class OrderInfo
 {
-    private string? orderID;
-    private string? customerID;
-    private string? customer;
-    private string? shipCity;
-    private string? shipCountry;
+    private string orderID;
+    private string customerID;
+    private string customer;
+    private string shipCity;
+    private string shipCountry;
 
-    public string? OrderID
+    public string OrderID
     {
         get { return orderID; }
         set { this.orderID = value; }
     }
 
-    public string? CustomerID
+    public string CustomerID
     {
         get { return customerID; }
         set { this.customerID = value; }
     }
 
-    public string? ShipCountry
+    public string ShipCountry
     {
         get { return shipCountry; }
         set { this.shipCountry = value; }
     }
 
-    public string? Customer
+    public string Customer
     {
         get { return this.customer; }
         set { this.customer = value; }
     }
-
-    public string? ShipCity
+    
+    public string ShipCity
     {
         get { return shipCity; }
         set { this.shipCity = value; }
@@ -245,8 +245,8 @@ dataGrid.ItemsSource = viewModel.OrderInfoCollection;
 
 The following screenshot shows the DataGrid populated with sample data:
 
-<img src="Images\getting-started\net-maui-datagrid-getting-started.png" width="404" alt="Getting started with .NET MAUI Data Grid">
+<img src="Images\getting-started\net-maui-datagrid-getting-started.png" width="404" alt="Getting started with .NET MAUI DataGrid">
 
 You can download the DataGrid Getting Started sample from [GitHub](https://github.com/SyncfusionExamples/simple-.net-maui-datagrid).
 
-> **Note:** You can refer to our [.NET MAUI Data Grid](https://www.syncfusion.com/maui-controls/maui-datagrid) feature tour page for its groundbreaking feature representations. You can also explore our [.NET MAUI Data Grid Example](https://github.com/syncfusion/maui-demos/tree/master/MAUI/DataGrid) that shows you how to render the DataGrid in .NET MAUI.
+> **Note:** You can refer to our [.NET MAUI DataGrid](https://www.syncfusion.com/maui-controls/maui-datagrid) feature tour page for its groundbreaking feature representations. You can also explore our [.NET MAUI DataGrid Example](https://github.com/syncfusion/maui-demos/tree/master/MAUI/DataGrid) that shows you how to render the DataGrid in .NET MAUI.

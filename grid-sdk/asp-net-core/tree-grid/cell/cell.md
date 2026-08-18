@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Cell in ASP.NET Core Tree Grid Component | Syncfusion
-description: Learn here all about Cell in Syncfusion ASP.NET Core Tree Grid component of Syncfusion Essential JS 2 and more.
+title: ASP.NET Core TreeGrid Cells | Syncfusion
+description: Learn how to customize and format cells in ASP.NET Core TreeGrid, including tooltips, styling, clip mode, autowrap, and cell templates.
 platform: grid-sdk
 control: Cell
 publishingplatform: grid-sdk
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Cell in ASP.NET Core Tree Grid Component
+# Cells in ASP.NET Core TreeGrid
 
 ## Customize cell styles
 

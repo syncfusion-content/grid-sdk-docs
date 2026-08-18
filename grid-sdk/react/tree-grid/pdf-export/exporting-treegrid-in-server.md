@@ -1,14 +1,14 @@
 ---
 layout: post
-title: React TreeGrid PDF Server-Side Export | Syncfusion
-description: Learn how to export the React TreeGrid to PDF on the server side using server export libraries and configuration with Essential JS 2.
+title: PDF Exporting TreeGrid in server in React TreeGrid | Syncfusion
+description: Learn here all about Exporting TreeGrid in server in Syncfusion React TreeGrid component of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Exporting TreeGrid in server 
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# PDF Server-Side Export in React TreeGrid
+# Exporting TreeGrid in server in React TreeGrid
 
 The TreeGrid supports exporting data to PDF on the server side using the TreeGrid server export library.
 

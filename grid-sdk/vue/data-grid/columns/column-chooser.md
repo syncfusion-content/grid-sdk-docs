@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Vue Grid Column Chooser | Syncfusion
-description: Learn how to show, hide, and manage column visibility in Vue Data Grid using the Column Chooser for a customizable view.
+title: Column chooser in Vue Grid component | Syncfusion
+description: Learn here all about Column chooser in Syncfusion Vue Grid component of Syncfusion Essential JS 2 and more.
 control: Column chooser 
 platform: grid-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Column Chooser in Vue Data Grid
+# Column chooser in Vue Grid component
 
 The column chooser feature in the [Vue Data Grid](https://www.syncfusion.com/vue-components/vue-grid) component allows you to dynamically show or hide columns. This feature can be enabled by defining the [showColumnChooser](https://ej2.syncfusion.com/vue/documentation/api/grid#showcolumnchooser) property as **true**.
 

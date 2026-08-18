@@ -1,12 +1,12 @@
----
-title: "MySQL Data Binding in Angular Pivotview component | Syncfusion"
+﻿---
+title: "MySQL in Angular Pivot Table | Syncfusion"
 component: "Pivot Table"
-description: "Learn how to bind data from a MySQL database in the Syncfusion Angular Pivot Table of Syncfusion Essential JS 2 and more."
+description: Learn how the Angular Pivot Table binds to a MySQL database through an ASP.NET Core Web API and MySqlClient.
 ---
 
-# MySQL in EJ2 Angular Pivotview Component
+# MySQL in Angular Pivot Table
 
-This guide explains how to retrieve data from a MySQL database using the [MySqlClient](https://mysqlclient.readthedocs.io/) library and bind it to the Pivot Table through a Web API controller.
+This guide explains how to retrieve data from a MySQL database using the [MySqlClient](https://mysqlclient.readthedocs.io) library and bind it to the Pivot Table through a Web API controller.
 
 ## Creating a Web API Service to Fetch MySQL Data
 
@@ -30,7 +30,7 @@ To enable MySQL database connectivity in your application:
 2. This controller will handle data communication between the MySQL database and the Pivot Table.
 
 ### Step 4: Connect to MySQL and Retrieve Data
-In the **PivotController.cs** file, use the [MySqlClient](https://mysqlclient.readthedocs.io/) from the **MySql.Data** library to connect to a MySQL database and retrieve data for the Pivot Table.
+In the **PivotController.cs** file, use the [MySqlClient](https://mysqlclient.readthedocs.io) from the **MySql.Data** library to connect to a MySQL database and retrieve data for the Pivot Table.
 
 1. **Establish Connection**: Use **MySqlConnection** with a valid connection string (e.g., `Server=localhost;Database=mydb;Uid=myuser;Pwd=mypassword;`) to connect to the MySQL database.
 2. **Query and Fetch Data**: Execute a SQL query (e.g., `SELECT * FROM orders`) using **MySqlCommand** to retrieve data for the pivot table.

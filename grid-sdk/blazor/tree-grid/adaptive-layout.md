@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Blazor TreeGrid Adaptive Layout | Syncfusion
-description: Learn how to use Adaptive Layout in Blazor TreeGrid  to render filter, sort, and edit dialogs in fullscreen mode for responsive and mobile-friendly experiences.
+title: Adaptive Layout in Blazor TreeGrid Component | Syncfusion®
+description: The Blazor TreeGrid will render the adaptive UI filter, sort, and edit dialogs in full screen for a better user experience.
 platform: grid-sdk
 control: Tree Grid
 documentation: ug
 ---
 
-# Adaptive UI Layout in Blazor TreeGrid
+# Adaptive UI Layout in Blazor Tree Grid Component
 
 The Tree Grid user interface (UI) was redesigned to provide an optimal viewing experience and improve usability on small screens. This interface will render the filter, sort, and edit dialogs adaptively and have an option to render the Tree Grid row elements in the vertical direction.
 

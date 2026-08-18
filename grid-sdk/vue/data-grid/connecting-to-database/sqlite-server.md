@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Vue Grid SQLite Data Binding | Syncfusion
-description: Learn how to connect Vue Data Grid to SQLite using EF Core, perform CRUD operations, and enable filtering, sorting, and advanced data management.
+title: Bind SQLite Server Data in Syncfusion Vue Grid
+description: Learn how to consume data from SQLite Server, bind it to Syncfusion Vue Grid, and perform CRUD operations.
 platform: grid-sdk
 control: grid
 keywords: adaptors, customadaptor, urladaptor, sqlite, remotedata
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# SQLite Data Binding in Vue Data Grid
+# Connecting SQLite Server data to Vue Grid
 
 This section describes how to connect and retrieve data from a SQLite Server database using [Microsoft.Data.Sqlite](https://www.nuget.org/packages/Microsoft.Data.Sqlite/) and bind it to the Syncfusion [Vue Data Grid](https://www.syncfusion.com/vue-components/vue-grid).
 

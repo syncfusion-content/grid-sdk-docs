@@ -1,7 +1,7 @@
 ---
 layout: post
-title: React TreeGrid Scrolling | Syncfusion
-description: Learn how to configure scrolling in React TreeGrid, including responsive sizing, sticky headers, scroll-to-row, and scrollbar options.
+title: Scrolling in React TreeGrid | Syncfusion
+description: Learn here all about Scrolling in Syncfusion React TreeGrid component of Syncfusion Essential JS 2 and more.
 control: Scrolling
 platform: grid-sdk
 documentation: ug

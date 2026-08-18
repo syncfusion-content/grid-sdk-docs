@@ -1,14 +1,14 @@
 ---
 layout: post
-title: React TreeGrid Data Binding | Syncfusion
-description: Learn about data binding in the React TreeGrid, covering local and remote data integration, expand state mapping, and best practices.
+title: Data binding in React TreeGrid | Syncfusion
+description: Learn about Data binding in Syncfusion React TreeGrid component of Syncfusion Essential JS 2 and more.
 control: Data binding 
 platform: grid-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Data Binding in React TreeGrid
+# Data binding in React TreeGrid
 
 The TreeGrid uses the **DataManager**, which supports both RESTful JSON data service binding and local JavaScript object array binding. The [dataSource](https://ej2.syncfusion.com/react/documentation/api/treegrid#datasource) property can be assigned an instance of [DataManager](https://ej2.syncfusion.com/documentation/data/data-binding) or a JavaScript object array.
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Typescript Grid Editing Customization | Syncfusion
-description: Learn how to customize editing styles in Typescript Data Grid with editor appearance, edit layouts, form elements, and editing UI customization.
+title: Editing in TypeScript Grid control | Syncfusion
+description: Learn here all about Editing in Syncfusion TypeScript Grid control of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Editing 
 publishingplatform: grid-sdk
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Editing Style in Typescript Data Grid
+# Editing in TypeScript Grid control
 
 You can customize the appearance of editing-related elements in the TypeScript Grid control using CSS. Below are examples of how to customize various editing-related elements.
 

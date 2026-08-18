@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Angular TreeGrid Tree Column | Syncfusion
-description: Learn how to configure the tree column in Angular TreeGrid for displaying hierarchical data with expand and collapse functionality
+title: Tree Column in Angular TreeGrid component | Syncfusion
+description: Learn here all about tree column in Syncfusion Angular TreeGrid component of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Columns  
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Tree Column in Angular TreeGrid
+# Tree Column in Angular TreeGrid component
 
 The Syncfusion<sup style="font-size:70%">&reg;</sup> Angular TreeGrid component provides a convenient way to represent parent-child relationships using expand and collapse icons in the tree column cell. This can be achieved by utilizing the [treeColumnIndex](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#treecolumnindex) property by setting its value to a column index. This guide outlines how to configure and use this property to display the expand or collapse icon in the desired column.
 

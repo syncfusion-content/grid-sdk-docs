@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Typescript Grid Performance | Syncfusion
-description: Learn how to optimize Typescript Data Grid performance with virtualization, paging, efficient data operations, and best practices for large datasets.
+title: Performance tips for TypeScript Grid control | Syncfusion
+description: Checkout and learn here all about how to improve the loading performance of TypeScript  Grid control even binding large data set.
 platform: grid-sdk
 control: Performance 
 publishingplatform: grid-sdk
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Performance Tips for Typescript Data Grid
+# Performance tips for TypeScript Grid control
 
 This article is a comprehensive guide on improving the loading performance of the TypeScript Grid, especially when dealing with large datasets along with large number of columns. It provides valuable insights into the steps that need to be followed to bind a large data source without experiencing any performance degradations. By offering detailed explanations and actionable tips, this resource aims to empower readers with the knowledge and best practices necessary to optimize the performance of the TypeScript Grid during data binding, ensuring a smooth and efficient user experience.
 

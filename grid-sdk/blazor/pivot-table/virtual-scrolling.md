@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Virtual Scrolling in Blazor Pivot Table Component | Syncfusion®
-description: Learn about virtual scrolling in Blazor Pivot Table component for handling large datasets with examples and much more details.
-platform: grid-sdk
+title: Virtual Scrolling in Blazor Pivot Table | Syncfusion
+description: Learn how the Blazor Pivot Table renders only the rows and columns visible in the current viewport via EnableVirtualization, loading data on scroll.
+platform: Blazor
 control: Pivot Table
 documentation: ug
 ---
 
 <!-- markdownlint-disable MD036 -->
 
-# Virtual scrolling in Blazor Pivot Table component
+# Virtual Scrolling in Blazor Pivot Table
 
 ## Virtual Scrolling
 

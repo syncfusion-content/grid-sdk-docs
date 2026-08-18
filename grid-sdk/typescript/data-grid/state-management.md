@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Typescript Grid State Management | Syncfusion
-description: Learn how to manage and persist Typescript Data Grid state using local storage, state restoration, version-based persistence, and custom state handling.
+title: State Management in TypeScript Grid control | Syncfusion
+description: Learn here all about State Management in Syncfusion TypeScript Grid control of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: State Management 
 publishingplatform: grid-sdk
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# State Management in Typescript Data Grid
+# State Management in TypeScript Grid control
 
 State management in the TypeScript Grid control allows you to maintain the grid's state even after a browser refresh or when navigating to a different page within the same browser session. This feature is particularly useful for retaining the grid's configuration and data even after a page reload.
 

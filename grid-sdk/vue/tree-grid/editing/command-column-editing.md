@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Command column editing in Vue Treegrid component | Syncfusion
-description: Learn here all about Command column editing in Syncfusion Vue Treegrid component of Syncfusion Essential JS 2 and more.
+title: Vue TreeGrid Command Column Editing | Syncfusion
+description: Learn how to use command column editing in the Vue TreeGrid to add CRUD and custom action buttons for row-level operations.
 control: Command column editing 
 platform: grid-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Command column editing in Vue Treegrid component
+# Command Column Editing in Vue TreeGrid
 
 The command column provides an option to add CRUD action buttons in a column. This can be defined by the [`column.commands`](https://ej2.syncfusion.com/vue/documentation/api/treegrid/column/#commands) property.
 

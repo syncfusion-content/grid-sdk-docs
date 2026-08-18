@@ -1,14 +1,14 @@
 ---
 layout: post
-title: React TreeGrid Remote Data | Syncfusion
-description: Learn how to bind remote data in the React TreeGrid, including load on demand, paging, virtualization, adaptors, and error handling.
+title: Remote data in React TreeGrid | Syncfusion
+description: Learn here all about Remote data in Syncfusion React TreeGrid of Syncfusion Essential JS 2 and more.
 control: Remote data 
 platform: grid-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Remote Data in React TreeGrid
+# Remote data in React TreeGrid 
 
 To bind remote data to the TreeGrid, assign a service endpoint through an instance of **DataManager** to the [dataSource](https://ej2.syncfusion.com/react/documentation/api/treegrid#datasource) property. To interact with a remote datasource, provide the endpoint `url` and define the [hasChildMapping](https://ej2.syncfusion.com/react/documentation/api/treegrid#haschildmapping) property of the TreeGrid.
 

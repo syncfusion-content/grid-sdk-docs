@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Blazor TreeGrid Selection Styling with CSS | Syncfusion
-description: Learn how to style row and cell selection in Blazor TreeGrid using CSS, including selector specificity, CSS isolation, and custom selection styles.
+title: Selection styling with CSS in Blazor TreeGrid | Syncfusion®
+description: Learn how to style row and cell selection in Blazor TreeGrid using CSS, with tips on isolation and selector specificity.
 platform: grid-sdk
 control: TreeGrid
 documentation: ug
 ---
 
-# Selection Customization in Blazor TreeGrid
+# Selection customization in Blazor TreeGrid
 
 The appearance of selection elements in the Blazor TreeGrid can be customized using CSS. Styling options are available for:
 

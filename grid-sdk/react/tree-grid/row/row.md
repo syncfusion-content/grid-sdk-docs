@@ -1,14 +1,14 @@
 ---
 layout: post
-title: React TreeGrid Rows | Syncfusion
-description: Learn how to work with rows in React TreeGrid, including row customization, selection, styling, rendering, and row-level operations.
+title: Row in React TreeGrid component | Syncfusion
+description: Learn here all about Row in Syncfusion React TreeGrid component of Syncfusion Essential JS 2 and more.
 control: Row 
 platform: grid-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Rows in React TreeGrid
+# Row in React TreeGrid
 
 A row represents record details from the datasource.
 

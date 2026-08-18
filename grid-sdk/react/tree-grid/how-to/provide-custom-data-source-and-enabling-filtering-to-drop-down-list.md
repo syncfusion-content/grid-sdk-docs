@@ -1,14 +1,14 @@
 ---
 layout: post
-title: React TreeGrid DropDownList Data & Filtering | Syncfusion
-description: Learn how to provide a custom data source and enable filtering for DropDownList in the React TreeGrid with column edit parameters.
+title: Custom Data and Filtering in React TreeGrid | Syncfusion
+description: Learn here all about Provide custom data source and enabling filtering to drop down list in Syncfusion React TreeGrid component and more.
 control: Provide custom data source and enabling filtering to drop down list 
 platform: grid-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Custom Data Source and Filtering for DropDownList in React TreeGrid
+# Provide custom datasource and filter with React TreeGrid Dropdowns
 
 Provide a data source to the DropDownList by using the **params** of the [columns.edit](https://ej2.syncfusion.com/react/documentation/api/treegrid/column#edit) property.
 

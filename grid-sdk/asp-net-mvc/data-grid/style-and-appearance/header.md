@@ -1,14 +1,14 @@
 ---
 layout: post
-title: ASP.NET MVC Grid Header Customization | Syncfusion
-description: Learn how to customize header styles in ASP.NET MVC Data Grid with header templates, icons, and interactive header elements.
+title: Header in ASP.NET MVC Grid Component
+description: Learn here all about Header in Syncfusion ASP.NET MVC Grid component of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Header
 publishingplatform: grid-sdk
 documentation: ug
 ---
 
-# Header Style in ASP.NET MVC Data Grid
+# Header in ASP.NET MVC Grid component
 
 You can customize the appearance of the header elements in the Syncfusion ASP.NET MVC Grid component using CSS. Here are examples of how to customize the Grid header, header cell, and header cell div element.
 

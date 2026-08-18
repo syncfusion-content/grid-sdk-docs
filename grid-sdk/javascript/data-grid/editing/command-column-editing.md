@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Javascript Grid Command Column Editing | Syncfusion
-description: Learn how to enable command column editing in Javascript Data Grid with built-in edit, save, and delete actions, customizable buttons, and event handling.
+title: Command column editing in JavaScript Grid control | Syncfusion
+description: Learn here all about Command column editing in Syncfusion JavaScript Grid control of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Command column editing 
 publishingplatform: grid-sdk
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Command Column Editing in Javascript Data Grid
+# Command column editing in JavaScript Grid control
 
 The command column editing feature allows you to add CRUD (Create, Read, Update, Delete) action buttons in a column for performing operations on individual rows.This feature is commonly used when you need to enable inline editing, deletion, or saving of row changes directly within the grid. 
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Typescript Grid Custom Remote Data Binding| Syncfusion
-description: Learn how to bind remote data with custom rules in Typescript Data Grid, customize data operations, and manage CRUD actions.
+title: Bind data & perform CRUD action with CustomAdaptor in Syncfusion TypeScript Grid
+description: Learn here all about how to bind data and perform CRUD action using CustomAdaptor in Syncfusion TypeScript Grid component of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: grid
 keywords: adaptors, custom adaptor, remotedata
@@ -10,7 +10,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Custom Remote Data Binding in Typescript Data Grid
+# CustomAdaptor in Syncfusion TypeScript Grid
 
 The `CustomAdaptor` in the Syncfusion TypeScript Grid allows to create their own custom adaptors by extending the built-in adaptors. The custom adaptor involves handling the query process, requests, and responses of the built-in adaptor. The `CustomAdaptor` can be used to extend OData V4 services, enabling efficient data fetching and manipulation. By default, there are three built-in methods available for `CustomAdaptor`.
 

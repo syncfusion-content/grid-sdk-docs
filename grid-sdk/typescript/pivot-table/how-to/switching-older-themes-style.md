@@ -2,11 +2,11 @@
 layout: post
 title: Switching older themes style in Javascript | Syncfusion
 description: Learn here all about Switching older themes style in Syncfusion JavaScript Pivot Table component of Syncfusion Essential JS 2 and more.
-platform: grid-sdk
+platform: ej2-javascript
 control: Switching older themes style 
-publishingplatform: grid-sdk
+publishingplatform: ##Platform_Name##
 documentation: ug
-domainurl: https://help.syncfusion.com/grid-sdk
+domainurl: ##DomainURL##
 ---
 
 <!-- markdownlint-disable MD009 -->

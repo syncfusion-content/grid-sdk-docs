@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Vue Grid Access Grid Instance | Syncfusion
-description: Learn how to access the Vue Data Grid instance programmatically to customize filtering, sorting, and other grid operations using Grid APIs.
+title: Access grid instance in Vue Grid component | Syncfusion
+description: Learn here all about Access grid instance in Syncfusion Vue Grid component of Syncfusion Essential JS 2 and more.
 control: Access grid instance 
 platform: grid-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Access Grid Instance in Vue Data Grid
+# Access grid instance in Vue Grid component
 
 The [Vue Data Grid](https://www.syncfusion.com/vue-components/vue-grid) component allows you to programmatically access the grid instance, enabling you to manipulate its properties and methods. This capability is particularly useful for customizing functionalities such as filtering, sorting, and more, directly from the grid instance.
 

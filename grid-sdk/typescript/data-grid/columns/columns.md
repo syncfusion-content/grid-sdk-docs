@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Typescript Grid Columns | Syncfusion
-description: Learn how to define and configure columns in Typescript Data Grid, including column types, widths, templates, and behaviors for effective data presentation.
+title: Columns in TypeScript Grid control | Syncfusion
+description: Learn here all about Columns in Syncfusion TypeScript Grid control of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Columns 
 publishingplatform: grid-sdk
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Columns in Typescript Data Grid
+# Columns in TypeScript Grid control
 
 In TypeScript Grid, Columns are fundamental elements that play a pivotal role in organizing and displaying data within your application. They serve as the building blocks for data presentation, allowing you to specify what data fields to show, how to format and style them, and how to enable various interactions within the grid.
 

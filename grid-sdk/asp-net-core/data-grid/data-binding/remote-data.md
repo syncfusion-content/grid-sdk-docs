@@ -1,14 +1,14 @@
 ---
 layout: post
-title: ASP.NET Core Grid Remote Data Binding | Syncfusion
-description: Learn how to bind remote data sources in ASP.NET Core Data Grid using adaptors, configure server-side operations, and manage data efficiently.
+title: Remote Data in Syncfusion ASP.NET Core Grid Component
+description: Learn here all about Remote Data in Syncfusion ASP.NET Core Grid component of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Remote Data
 publishingplatform: grid-sdk
 documentation: ug
 ---
 
-# Remote Data Binding in ASP.NET Core Data Grid
+# Remote data in ASP.NET Core Grid Component
 
 In ASP.NET Core Grid component, binding remote data is a fundamental aspect that enhances the efficiency of data interaction. This process involves assigning the service data, represented as an instance of `DataManager`, to the `dataSource` property of the ASP.NET Core Grid component. By doing so, you enable seamless interaction with a remote data source, and this is achieved by specifying the endpoint URL where the data is hosted.
 

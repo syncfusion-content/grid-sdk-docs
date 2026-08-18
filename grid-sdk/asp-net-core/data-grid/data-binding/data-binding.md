@@ -1,14 +1,14 @@
 ---
 layout: post
-title: ASP.NET Core Grid Data Binding | Syncfusion
-description: Learn how to bind local and remote data sources in ASP.NET Core Data Grid, enable dynamic updates, and manage data flow efficiently.
+title: Data Binding in ASP.NET Core Grid Control | Syncfusion
+description: Learn here all about Data Binding in Syncfusion ASP.NET Core Grid component of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Data Binding
 publishingplatform: grid-sdk
 documentation: ug
 ---
 
-# Data Binding in ASP.NET Core Data Grid
+# Data binding in Syncfusion ASP.NET Core Grid
 
 Data binding is a fundamental technique that empowers the Syncfusion ASP.NET Core Grid to integrate data into its interface, enabling the creation of dynamic and interactive Grid views. This feature is particularly valuable when working with large datasets or when data needs to be fetched remotely. 
 

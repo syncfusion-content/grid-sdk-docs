@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Typescript Grid Aggregate Customization | Syncfusion
-description: Learn how to customize aggregate styles in Typescript Data Grid with aggregate rows, cells, templates, and visual formatting options.
+title: Aggregate in TypeScript Grid control | Syncfusion
+description: Learn here all about Aggregate in Syncfusion TypeScript Grid control of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Aggregate 
 publishingplatform: grid-sdk
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Aggregate Style in Typescript Data Grid
+# Aggregate in TypeScript Grid control
 
 You can customize the appearance of aggregate elements in the TypeScript Grid control using CSS. Below are examples of how to customize the aggregate root element and the aggregate cell elements.
 

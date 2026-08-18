@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Column template in Vue Treegrid component | Syncfusion
-description: Learn here all about Column template in Syncfusion Vue Treegrid component of Syncfusion Essential JS 2 and more.
+title: Vue TreeGrid Column Template | Syncfusion
+description: Learn how to use column templates in Vue TreeGrid to display custom content, images, buttons, and formatted data in cells.
 control: Column template 
 platform: grid-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Column template in Vue Treegrid component
+# Column Template in Vue TreeGrid
 
 The column [`template`](https://ej2.syncfusion.com/vue/documentation/api/treegrid/column/#template) has options to display custom element instead of a field value in the column.
 

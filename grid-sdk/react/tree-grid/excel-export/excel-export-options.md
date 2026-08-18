@@ -1,14 +1,14 @@
 ---
 layout: post
-title: React TreeGrid Excel Export Options | Syncfusion
-description: Learn about Excel export options in React TreeGrid, including export customization, hidden columns, selected records, and advanced export settings.
+title: Excel export options in React TreeGrid | Syncfusion
+description: Learn here all about Excel export options in Syncfusion React TreeGrid component of Syncfusion Essential JS 2 and more.
 control: Excel export options 
 platform: grid-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Excel Export Options in React TreeGrid
+# Excel export options in React TreeGrid
 
 ## To customize excel export
 

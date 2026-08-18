@@ -2,13 +2,13 @@
 layout: post
 title: Row Resizing in .NET MAUI Data Grid | Syncfusion®
 description: Learn how to use interactive row resizing in Syncfusion® .NET MAUI Data Grid and customize row heights dynamically through user interactions.
-platform: MAUI
+platform: grid-sdk
 control: SfDataGrid
 documentation: ug
-keywords : maui data grid, maui datagrid, maui grid, grid maui, maui gridview, grid in maui, .net maui datagrid, row resizing, datagrid row height, maui datagrid row, sfdatagrid row resize
+keywords : maui datagrid, maui grid, grid maui, maui gridview, grid in maui, .net maui datagrid, row resizing, datagrid row height, maui datagrid row, sfdatagrid row resize
 ---
 
-# Row Resizing in .NET MAUI Data Grid
+# Row Resizing in MAUI DataGrid (SfDataGrid)
 
 The `SfDataGrid` supports interactive row resizing. When enabled, users can long-press the bottom edge of a row header to change that row's height. Resized heights are cached and preserved during scrolling.
 

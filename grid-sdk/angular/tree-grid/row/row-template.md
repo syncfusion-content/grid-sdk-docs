@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Angular TreeGrid Row Template | Syncfusion
-description: Learn how to use row templates in Angular TreeGrid to customize row layouts, display custom content, and enhance data presentation.
+title: Row template in Angular TreeGrid component | Syncfusion
+description: Learn here all about Row template in Syncfusion Angular TreeGrid component of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Row template 
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Row Template in Angular TreeGrid
+# Row template in Angular TreeGrid component
 
 The row template feature in TreeGrid allows customizing the appearance and layout of rows in the TreeGrid. This feature is useful when custom content, such as images, buttons, or other controls, needs to be displayed within the rows.
 

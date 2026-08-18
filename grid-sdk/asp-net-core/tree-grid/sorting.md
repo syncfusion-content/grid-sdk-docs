@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Sorting in ASP.NET Core Tree Grid Control | Syncfusion
-description: Learn here all about Sorting in Syncfusion ASP.NET Core Tree Grid component of Syncfusion Essential JS 2 and more.
+title: ASP.NET Core TreeGrid Sorting | Syncfusion
+description: Learn how to sort data in ASP.NET Core TreeGrid, including single and multi-column sorting, custom sorting, and sort order configuration.
 platform: grid-sdk
 control: Sorting
 publishingplatform: grid-sdk
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Sorting in Tree Grid Control
+# Sorting in ASP.NET Core TreeGrid
 
 Sorting enables you to sort data in **Ascending** or **Descending** order. To sort a column, click the column header.
 

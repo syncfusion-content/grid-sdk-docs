@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Cell in Vue Treegrid component | Syncfusion
-description: Learn here all about Cell in Syncfusion Vue Treegrid component of Syncfusion Essential JS 2 and more.
+title: Vue TreeGrid Cell Customization | Syncfusion
+description: Learn how to customize Vue TreeGrid cells using custom styles, attributes, and grid lines to improve appearance and enhance data presentation.
 control: Cell 
 platform: grid-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Cell in Vue Treegrid component
+# Cell Customization in Vue TreeGrid
 
 ## Customize cell styles
 

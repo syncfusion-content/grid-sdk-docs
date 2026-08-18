@@ -1,14 +1,14 @@
 ---
 layout: post
-title: React TreeGrid Persisting Data in Server | Syncfusion
-description: Learn how to persist edited data in a database using RESTful services and DataManager in the React TreeGrid.
+title: Persisting data in server in React TreeGrid component | Syncfusion
+description: Learn here all about Persisting data in server in Syncfusion React TreeGrid component of Syncfusion Essential JS 2 and more.
 control: Persisting data in server 
 platform: grid-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Persisting data in Server in React TreeGrid
+# Persisting data in server in React TreeGrid
 
 Edited data can be persisted to a database using RESTful web services.
 

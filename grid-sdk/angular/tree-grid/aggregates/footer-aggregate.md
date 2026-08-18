@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Angular TreeGrid Footer Aggregate | Syncfusion
-description: Learn how to configure and display footer aggregate values in Angular TreeGrid, including API usage, templates, and formatting options.
+title: Footer aggregate in Angular TreeGrid component | Syncfusion
+description: Learn about configuring and displaying footer aggregates in the Syncfusion Angular TreeGrid component, including API usage, templates, and formatting options.
 platform: grid-sdk
 control: Footer aggregate
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Footer Aggregate in Angular TreeGrid
+# Footer aggregate in Angular TreeGrid component
 
 Footer aggregate values are calculated for all rows and displayed in the footer cells of the TreeGrid. Use the [`footerTemplate`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/aggregateColumnModel/#footertemplate) property to render aggregate values in footer cells.
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Angular TreeGrid Command Column Editing | Syncfusion
-description: Learn how to use command column editing in the Angular TreeGrid to add CRUD and custom action buttons for row-level operations.
+title: Command column editing in Angular TreeGrid component | Syncfusion
+description: Learn how to use command column editing in the Syncfusion Angular TreeGrid component to add CRUD and custom action buttons for row-level operations.
 platform: grid-sdk
 control: Command column editing 
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Command Column Editing in Angular TreeGrid
+# Command column editing in Angular TreeGrid component
 
 Command column editing allows you to include CRUD (Create, Read, Update, Delete) action buttons in a dedicated column, enabling row-level operations such as inline editing, deleting, saving, and canceling directly in the TreeGrid.
 

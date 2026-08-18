@@ -1,22 +1,22 @@
 ---
 layout: post
-title: Display string value to pivot table values in React | Syncfusion
-description: Learn here all about how to display string value to pivot table values in Syncfusion React Pivotview component of Syncfusion Essential JS 2 and more.
-platform: grid-sdk
-control: Display string value to pivot table values 
+title: How to display values in HH:MM:SS in Pivot Table | Syncfusion
+description: Step-by-step example showing how to display numeric values as a custom time string in value cells of the React Pivot Table using the aggregateCellInfo event.
+platform: ej2-react
+control: Pivot Table
 documentation: ug
-domainurl: https://help.syncfusion.com/grid-sdk
+domainurl: ##DomainURL##
 ---
 
 <!-- markdownlint-disable MD009 -->
 
-# Display string values in React Pivot Table cells
+# How to display values in HH:MM:SS in Pivot Table
 
 The Pivot Table allows users to display custom string values in value cells by using the [`aggregateCellInfo`](https://ej2.syncfusion.com/react/documentation/api/pivotview/index-default#aggregatecellinfo) event. This is useful when you need to format numeric values into readable strings, such as converting seconds to time format or applying custom formatting rules.
 
 ## Converting numeric values to time format
 
-The following example demonstrates how to convert numeric values in the **Sold** field to time format (HH:MM:SS) using the [`aggregateCellInfo`](https://ej2.syncfusion.com/react/documentation/api/pivotview/index-default#aggregatecellinfo) event. The event provides access to cell data through [`args.cellSets`](https://helpej2.syncfusion.com/react/documentation/api/pivotview/aggregateeventargs#cellsets), allowing you to customize the display value based on the underlying data.
+The following example demonstrates how to convert numeric values in the **Sold** field to time format (HH:MM:SS) using the [`aggregateCellInfo`](https://ej2.syncfusion.com/react/documentation/api/pivotview/index-default#aggregatecellinfo) event. The event provides access to cell data through [`args.cellSets`](https://ej2.syncfusion.com/react/documentation/api/pivotview/aggregateeventargs#cellsets), allowing you to customize the display value based on the underlying data.
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}

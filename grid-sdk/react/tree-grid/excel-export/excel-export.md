@@ -1,14 +1,14 @@
 ---
 layout: post
-title: React TreeGrid Excel Export | Syncfusion
-description: Learn how to export data from React TreeGrid to Excel, including export customization, selected records, and advanced export options.
+title: Excel export in React TreeGrid | Syncfusion
+description: Learn here all about Excel export in Syncfusion React TreeGrid component of Syncfusion Essential JS 2 and more.
 control: Excel export 
 platform: grid-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Excel Export in React TreeGrid
+# Excel export in React TreeGrid
 
 Excel export enables exporting TreeGrid data to an Excel document. Export by calling the [excelExport](https://ej2.syncfusion.com/react/documentation/api/treegrid#excelexport) method. To enable Excel export in the TreeGrid, set [allowExcelExport](https://ej2.syncfusion.com/react/documentation/api/treegrid#allowexcelexport) to **true**.
 

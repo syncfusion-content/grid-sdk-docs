@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Javascript Grid Header Customization | Syncfusion
-description: Learn how to customize header styles in Javascript Data Grid with header templates, icons, and interactive header elements.
+title: Header in JavaScript Grid control | Syncfusion
+description: Learn here all about Header in Syncfusion JavaScript Grid control of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Header 
 publishingplatform: grid-sdk
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Header Style in Javascript Data Grid
+# Header in JavaScript Grid control
 
 You can customize the appearance of the header elements in the JavaScript Grid control using CSS. Here are examples of how to customize the Grid header, header cell, and header cell div element.
 

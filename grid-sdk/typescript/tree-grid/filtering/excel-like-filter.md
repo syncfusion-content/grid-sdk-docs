@@ -3,15 +3,14 @@ layout: post
 title: TypeScript TreeGrid Excel-Like Filter | Syncfusion
 description: Learn how to use Excel-like filtering in TypeScript TreeGrid, including filter menus, search, checkbox filtering, and custom filter options.
 platform: grid-sdk
-control: Excel like filter 
-publishingplatform: grid-sdk
+control: Excel like filter
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
 # Excel-Like Filter in TypeScript TreeGrid
 
-You can enable Excel like filter by defining.[`filterSettings.type`](../../api/treegrid/filterSettingsModel/#type) as `Excel`.The excel menu contains an option such as Sorting, Clear filter, Sub menu for advanced filtering.
+You can enable Excel like filter by defining.[`filterSettings.type`](../../api/treegrid/filterSettingsModel#type) as `Excel`.The excel menu contains an option such as Sorting, Clear filter, Sub menu for advanced filtering.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -42,7 +41,7 @@ You can enable Excel like filter by defining.[`filterSettings.type`](../../api/t
 
 ## Change default excel filter operator
 
-You can change the default excel-filter operator by changing the column operator as `contains` from `startsWith` in the [`actionBegin`](../../api/treegrid/#actionBegin) event
+You can change the default excel-filter operator by changing the column operator as `contains` from `startsWith` in the [`actionBegin`](../../api/treegrid#actionBegin) event
 
 {% if page.publishingplatform == "typescript" %}
 

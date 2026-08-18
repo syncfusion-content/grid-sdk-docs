@@ -3,8 +3,7 @@ layout: post
 title: JavaScript TreeGrid Styling | Syncfusion
 description: Learn how to customize the appearance of JavaScript TreeGrid using CSS classes, Theme Studio, and advanced styling techniques.
 platform: grid-sdk
-control: Treegrid styling 
-publishingplatform: grid-sdk
+control: Treegrid styling
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---

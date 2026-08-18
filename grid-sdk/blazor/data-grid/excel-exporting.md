@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Blazor Grid Excel Exporting | Syncfusion
-description: Learn how to export data from Blazor Data Grid to Excel with support for selected records, custom formats, aggregates, events, and export customization.
+title: Excel Export in Blazor DataGrid | Syncfusion®
+description: Learn how to configure Excel export in Blazor DataGrid, including custom formats, selected records, parameters, and aggregate support.
 platform: grid-sdk
 control: DataGrid
 documentation: ug
 ---
 
-# Excel Exporting in Blazor Data Grid
+# Excel exporting in Blazor DataGrid
 
 The Excel and CSV exporting feature in the [Blazor DataGrid](https://www.syncfusion.com/blazor-components/blazor-datagrid) enables exporting Grid data to spreadsheet formats for external analysis or sharing.
 

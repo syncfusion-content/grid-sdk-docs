@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Data binding in Vue Treegrid component | Syncfusion
-description: Learn here all about Data binding in Syncfusion Vue Treegrid component of Syncfusion Essential JS 2 and more.
+title: Vue TreeGrid Data Binding | Syncfusion
+description: Learn about data binding in the Vue TreeGrid, covering local and remote data integration, expand state mapping, and best practices.
 control: Data binding 
 platform: grid-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Data binding in Vue Treegrid component
+# Data Binding in Vue TreeGrid
 
 The TreeGrid uses `DataManager`, which supports both RESTful JSON data services binding and local JavaScript object array binding. The [`dataSource`](https://ej2.syncfusion.com/vue/documentation/api/treegrid/#dataSource) property can be assigned either with the instance of `DataManager` or JavaScript object array collection.
 It supports two kinds of data binding method:

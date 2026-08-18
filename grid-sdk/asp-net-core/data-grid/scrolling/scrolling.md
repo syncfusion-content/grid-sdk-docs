@@ -1,14 +1,14 @@
 ---
 layout: post
-title: ASP.NET Core Grid Scrolling | Syncfusion
-description: Learn how to use Scrolling in ASP.NET Core Data Grid to configure scroll behavior, enable sticky headers, and customize scrolling options.
+title: Scrolling in Syncfusion ASP.NET Core Grid Component
+description: Learn here all about Scrolling in Syncfusion ASP.NET Core Grid component of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Scrolling
 publishingplatform: grid-sdk
 documentation: ug
 ---
 
-# Scrolling in ASP.NET Core Data Grid
+# Scrolling in ASP.NET Core Grid component
 
 The scrolling feature in the ASP.NET Core Grid component allows you to navigate through the content that extends beyond the visible area of the grid . It provides scrollbars that are automatically displayed when the content exceeds the specified `width` or `height` of the grid element. This feature is useful when you have a large amount of data or when the content needs to be displayed within a limited space. The vertical and horizontal scrollbars will be displayed based on the following criteria:
 
