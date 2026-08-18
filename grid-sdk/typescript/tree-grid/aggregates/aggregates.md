@@ -3,7 +3,7 @@ layout: post
 title: TypeScript TreeGrid Aggregates | Syncfusion
 description: Learn how to configure, display, and customize aggregate values in TypeScript TreeGrid, including built-in aggregate types and child aggregation.
 platform: grid-sdk
-control: Aggregates 
+control: Aggregates
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
