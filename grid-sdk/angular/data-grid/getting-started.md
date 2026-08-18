@@ -98,10 +98,6 @@ ng serve
 {% endhighlight %}
 {% endtabs %}
 
-The output will appear as follows:
-
-![Grid Component](./images/cli-grid.png)
-
 {% endtabcontent %}
 
 {% tabcontent Angular CLI %}
