@@ -1,19 +1,18 @@
 ---
 layout: post
-title: Cell Editing in ASP.NET Core Tree Grid Component | Syncfusion
-description: Learn here all about Cell Editing in Syncfusion ASP.NET Core Tree Grid component of Syncfusion Essential JS 2 and more.
+title: ASP.NET Core TreeGrid Cell Editing | Syncfusion
+description: Learn how to use cell editing in the ASP.NET Core TreeGrid, including enabling, editing, and handling cell edit events.
 platform: grid-sdk
 control: Cell Editing
-publishingplatform: grid-sdk
 documentation: ug
 ---
 
 
-# Cell Editing in ASP.NET Core Tree Grid Component
+# Cell Editing in ASP.NET Core TreeGrid
 
 In Cell edit mode, when you double click on a cell, it is changed to edit state. You can change the cell value and save to the data source.
 
-To enable Cell edit, set the [`mode`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridEditSettings~Mode.html) property of [`e-treegrid-editsettings`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridEditSettings.html) tag helper as **Cell**.
+To enable Cell edit, set the [`mode`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridEditSettings~Mode.html) property of [`EditSettings`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridEditSettings.html) tag helper as **Cell**.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

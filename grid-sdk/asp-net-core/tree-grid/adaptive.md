@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Adaptive in ASP.NET Core Tree Grid Component
-description: Learn here all about Adaptive in Syncfusion ASP.NET Core Tree Grid component of Syncfusion Essential JS 2 and more.
+title:  ASP.NET Core TreeGrid Adaptive UI | Syncfusion
+description: Learn how to enable adaptive UI in ASP.NET Core TreeGrid for optimized mobile, tablet, and small-screen user experiences.
 platform: grid-sdk
 control: Adaptive
-publishingplatform: grid-sdk
 documentation: ug
 ---
 
 
-# Adaptive View in ASP.NET Core Tree Grid Component
+# Adaptive UI in ASP.NET Core TreeGrid
 
 The Tree Grid user interface (UI) was redesigned to provide an optimal viewing experience and improve usability on small screens. This interface will render the filter, sort, and edit dialogs adaptively.
 
