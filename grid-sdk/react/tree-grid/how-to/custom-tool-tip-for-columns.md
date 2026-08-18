@@ -10,9 +10,9 @@ domainurl: https://help.syncfusion.com/grid-sdk
 
 # Custom tool tip for columns in React TreeGrid
 
-Implement a custom tooltip [EJ2 Tooltip](https://ej2.syncfusion.com/react/documentation/tooltip/getting-started) for the TreeGrid using the [queryCellInfo](https://ej2.syncfusion.com/react/documentation/api/treegrid/#querycellinfo) event.
+Implement a custom tooltip [EJ2 Tooltip](https://ej2.syncfusion.com/react/documentation/tooltip/getting-started) for the TreeGrid using the [queryCellInfo](https://ej2.syncfusion.com/react/documentation/api/treegrid#querycellinfo) event.
 
-Render the Tooltip component for TreeGrid cells by using the following code in the [queryCellInfo](https://ej2.syncfusion.com/react/documentation/api/treegrid/#querycellinfo) event.
+Render the Tooltip component for TreeGrid cells by using the following code in the [queryCellInfo](https://ej2.syncfusion.com/react/documentation/api/treegrid#querycellinfo) event.
 
 ```ts
 

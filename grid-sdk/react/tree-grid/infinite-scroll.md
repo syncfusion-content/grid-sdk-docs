@@ -63,7 +63,7 @@ To enable cache mode in Infinite scrolling, set the `infiniteScrollSettings.enab
 * Cell selection is not persisted in cache mode.
 * Infinite scrolling is not compatible with batch editing, cell editing, and detail template.
 * Aggregates and total group items reflect only the current view items. To compute across all items regardless of view, refer to the corresponding aggregate documentation.
-* Programmatic selection using the [selectRows](https://ej2.syncfusion.com/react/documentation/api/treegrid/#selectrows) and [selectRow](https://ej2.syncfusion.com/react/documentation/api/treegrid/#selectrow) methods is not supported with Infinite scrolling.
+* Programmatic selection using the [selectRows](https://ej2.syncfusion.com/react/documentation/api/treegrid#selectrows) and [selectRow](https://ej2.syncfusion.com/react/documentation/api/treegrid#selectrow) methods is not supported with Infinite scrolling.
 * Infinite scrolling does not support rendering records in a collapsed state. All records must be fully expanded at initial rendering.
 
 > Refer to the [React TreeGrid](https://www.syncfusion.com/react-ui-components/react-tree-grid) feature tour page for feature highlights. Explore the [React TreeGrid example](https://ej2.syncfusion.com/react/demos/#/material/treegrid/treegrid-overview) to learn how to present and manipulate data.

@@ -10,11 +10,11 @@ domainurl: https://help.syncfusion.com/grid-sdk
 
 # Show spinner while exporting in React TreeGrid
 
-Show or hide the spinner during export operations by using the [showSpinner](https://ej2.syncfusion.com/react/documentation/api/treegrid/#showspinner) and [hideSpinner](https://ej2.syncfusion.com/react/documentation/api/treegrid/#hidespinner) methods. Display the spinner in the [toolbarClick](https://ej2.syncfusion.com/react/documentation/api/treegrid/#toolbarclick) event before exporting, and hide it in the [pdfExportComplete](https://ej2.syncfusion.com/react/documentation/api/treegrid/#pdfexportcomplete) or [excelExportComplete](https://ej2.syncfusion.com/react/documentation/api/treegrid/#excelexportcomplete) event after exporting.
+Show or hide the spinner during export operations by using the [showSpinner](https://ej2.syncfusion.com/react/documentation/api/treegrid#showspinner) and [hideSpinner](https://ej2.syncfusion.com/react/documentation/api/treegrid#hidespinner) methods. Display the spinner in the [toolbarClick](https://ej2.syncfusion.com/react/documentation/api/treegrid#toolbarclick) event before exporting, and hide it in the [pdfExportComplete](https://ej2.syncfusion.com/react/documentation/api/treegrid#pdfexportcomplete) or [excelExportComplete](https://ej2.syncfusion.com/react/documentation/api/treegrid#excelexportcomplete) event after exporting.
 
-In the [toolbarClick](https://ej2.syncfusion.com/react/documentation/api/grid/#toolbarclick) event, when **args.item.text** is **PDF Export** or **Excel Export**, call [showSpinner](https://ej2.syncfusion.com/react/documentation/api/treegrid/#showspinner) from the TreeGrid instance.
+In the [toolbarClick](https://ej2.syncfusion.com/react/documentation/api/grid#toolbarclick) event, when **args.item.text** is **PDF Export** or **Excel Export**, call [showSpinner](https://ej2.syncfusion.com/react/documentation/api/treegrid#showspinner) from the TreeGrid instance.
 
-In the [pdfExportComplete](https://ej2.syncfusion.com/react/documentation/api/treegrid/#pdfexportcomplete) or [excelExportComplete](https://ej2.syncfusion.com/react/documentation/api/treegrid/#excelexportcomplete) event, call [hideSpinner](https://ej2.syncfusion.com/react/documentation/api/treegrid/#hidespinner).
+In the [pdfExportComplete](https://ej2.syncfusion.com/react/documentation/api/treegrid#pdfexportcomplete) or [excelExportComplete](https://ej2.syncfusion.com/react/documentation/api/treegrid#excelexportcomplete) event, call [hideSpinner](https://ej2.syncfusion.com/react/documentation/api/treegrid#hidespinner).
 
 The following demo renders the default spinner during TreeGrid export.
 

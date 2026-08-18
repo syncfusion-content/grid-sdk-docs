@@ -12,7 +12,7 @@ domainurl: https://help.syncfusion.com/grid-sdk
 
 The TreeGrid uses hierarchical data binding and does not include built-in support for foreign key data sources.
 
-To display foreign key values during initial render, handle the [queryCellInfo](https://ej2.syncfusion.com/react/documentation/api/treegrid/#querycellinfo) event. For editing, configure the [editType](https://ej2.syncfusion.com/react/documentation/api/treegrid/column/#edittype) and [columns.edit](https://ej2.syncfusion.com/react/documentation/api/treegrid/column/#edit) properties to render a DropDownList bound to an external or foreign datasource.
+To display foreign key values during initial render, handle the [queryCellInfo](https://ej2.syncfusion.com/react/documentation/api/treegrid#querycellinfo) event. For editing, configure the [editType](https://ej2.syncfusion.com/react/documentation/api/treegrid/column#edittype) and [columns.edit](https://ej2.syncfusion.com/react/documentation/api/treegrid/column#edit) properties to render a DropDownList bound to an external or foreign datasource.
 
 {% tabs %}
 {% highlight js tabtitle="app.jsx" %}

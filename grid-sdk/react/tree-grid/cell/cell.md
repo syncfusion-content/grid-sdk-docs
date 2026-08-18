@@ -14,7 +14,7 @@ In the Syncfusion React TreeGrid, a cell represents the intersection of a row an
 
 ## Displaying the HTML content
 
-Displaying HTML content is useful for formatted values such as images, links, or tables. HTML tags can be rendered in both headers and content. By default, HTML is encoded to prevent security risks.To render raw HTML tags without encoding, set the [disableHtmlEncode](https://ej2.syncfusion.com/react/documentation/api/treegrid/column/#disablehtmlencode) property to false.
+Displaying HTML content is useful for formatted values such as images, links, or tables. HTML tags can be rendered in both headers and content. By default, HTML is encoded to prevent security risks.To render raw HTML tags without encoding, set the [disableHtmlEncode](https://ej2.syncfusion.com/react/documentation/api/treegrid/column#disablehtmlencode) property to false.
 
 The following example demonstrates rendering HTML content in headers and cells by configuring the `disableHtmlEncode` property:
 
@@ -29,9 +29,9 @@ The following example demonstrates rendering HTML content in headers and cells b
 
  {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/treegrid/cell-cs5" %}
 
-## Autowrap the TreeGrid content
+## Auto wrap the TreeGrid content
 
-Auto wrap allows cell content to flow to the next line when it exceeds the column width. Wrapping occurs at whitespace boundaries. Enable auto wrap by setting [allowTextWrap](https://ej2.syncfusion.com/react/documentation/api/treegrid/#allowtextwrap) to **true**, and configure behavior using [textWrapSettings.wrapMode](https://ej2.syncfusion.com/react/documentation/api/treegrid/#textwrapsettings).
+Auto wrap allows cell content to flow to the next line when it exceeds the column width. Wrapping occurs at whitespace boundaries. Enable auto wrap by setting [allowTextWrap](https://ej2.syncfusion.com/react/documentation/api/treegrid#allowtextwrap) to **true**, and configure behavior using [textWrapSettings.wrapMode](https://ej2.syncfusion.com/react/documentation/api/treegrid#textwrapsettings).
 
 There are three types of **wrapMode**:
 
@@ -56,7 +56,7 @@ The following example sets `allowTextWrap` to **true** and `textWrapSettings.wra
 
 ## Customize cell styles
 
-Cell appearance can be customized using the [queryCellInfo](https://ej2.syncfusion.com/react/documentation/api/treegrid/#querycellinfo) event, which triggers for every cell. The event provides [QueryCellInfoEventArgs](https://ej2.syncfusion.com/react/documentation/api/grid/queryCellInfoEventArgs/) with details of the cell.
+Cell appearance can be customized using the [queryCellInfo](https://ej2.syncfusion.com/react/documentation/api/treegrid#querycellinfo) event, which triggers for every cell. The event provides [QueryCellInfoEventArgs](https://ej2.syncfusion.com/react/documentation/api/grid/queryCellInfoEventArgs) with details of the cell.
 
 {% tabs %}
 {% highlight js tabtitle="app.jsx" %}
@@ -71,7 +71,7 @@ Cell appearance can be customized using the [queryCellInfo](https://ej2.syncfusi
 
 ## Custom attributes
 
-Cells can be customized by adding a CSS class through the [customAttribute](https://ej2.syncfusion.com/react/documentation/api/treegrid/column/#customattributes) property of the column.
+Cells can be customized by adding a CSS class through the [customAttribute](https://ej2.syncfusion.com/react/documentation/api/treegrid/column#customattributes) property of the column.
 
 ```css
 .e-attr {
@@ -102,7 +102,7 @@ In the following example, cells in the *TaskID* and *StartDate* columns are cust
 
 ## Clip mode
 
-Clip mode manages long text that overflows cell boundaries. It supports truncation, ellipsis, and ellipsis with tooltip. Configure the behavior using the [clipMode](https://ej2.syncfusion.com/react/documentation/api/treegrid/column/#clipmode) property.
+Clip mode manages long text that overflows cell boundaries. It supports truncation, ellipsis, and ellipsis with tooltip. Configure the behavior using the [clipMode](https://ej2.syncfusion.com/react/documentation/api/treegrid/column#clipmode) property.
 
 There are three types of `clipMode`:
 
@@ -127,7 +127,7 @@ The following example demonstrates how to set the `clipMode` property:
 
 ## TreeGrid lines
 
-The [gridLines](https://ej2.syncfusion.com/react/documentation/api/treegrid/#gridlines) property controls cell borders.
+The [gridLines](https://ej2.syncfusion.com/react/documentation/api/treegrid#gridlines) property controls cell borders.
 
 The available modes are:
 

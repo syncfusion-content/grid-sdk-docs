@@ -10,7 +10,7 @@ domainurl: https://help.syncfusion.com/grid-sdk
 
 # Print in React TreeGrid
 
-Print the TreeGrid by calling the [print](https://ej2.syncfusion.com/react/documentation/api/treegrid/#print) method from the TreeGrid instance. The print option can be shown on the [toolbar](https://ej2.syncfusion.com/react/documentation/api/treegrid/#toolbar) by adding the **Print** toolbar item.
+Print the TreeGrid by calling the [print](https://ej2.syncfusion.com/react/documentation/api/treegrid#print) method from the TreeGrid instance. The print option can be shown on the [toolbar](https://ej2.syncfusion.com/react/documentation/api/treegrid#toolbar) by adding the **Print** toolbar item.
 
 {% tabs %}
 {% highlight js tabtitle="app.jsx" %}
@@ -33,7 +33,7 @@ Some print options cannot be configured through JavaScript. Customize layout, pa
 
 ## Print using an external button
 
-To print the TreeGrid from an external button, invoke the [print](https://ej2.syncfusion.com/react/documentation/api/treegrid/#print) method.
+To print the TreeGrid from an external button, invoke the [print](https://ej2.syncfusion.com/react/documentation/api/treegrid#print) method.
 
 {% tabs %}
 {% highlight js tabtitle="app.jsx" %}
@@ -47,7 +47,7 @@ To print the TreeGrid from an external button, invoke the [print](https://ej2.sy
 
 ## Print the visible page
 
-By default, the TreeGrid prints all pages. To print only the current page, set [printMode](https://ej2.syncfusion.com/react/documentation/api/treegrid/#printmode) to **CurrentPage**.
+By default, the TreeGrid prints all pages. To print only the current page, set [printMode](https://ej2.syncfusion.com/react/documentation/api/treegrid#printmode) to **CurrentPage**.
 
 {% tabs %}
 {% highlight js tabtitle="app.jsx" %}
@@ -69,9 +69,9 @@ To display more columns when printing, adjust the scale option in the browser’
 
 ## Show or Hide columns while Printing
 
-Show a hidden column or hide a visible column during printing using the [toolbarClick](https://ej2.syncfusion.com/react/documentation/api/treegrid/#toolbarclick) and [printComplete](https://ej2.syncfusion.com/react/documentation/api/treegrid/#printcomplete) events.  
+Show a hidden column or hide a visible column during printing using the [toolbarClick](https://ej2.syncfusion.com/react/documentation/api/treegrid#toolbarclick) and [printComplete](https://ej2.syncfusion.com/react/documentation/api/treegrid#printcomplete) events.  
 
-In the [toolbarClick](https://ej2.syncfusion.com/react/documentation/api/treegrid/#toolbarclick) event, when **args.item.text** is **Print**, toggle visibility by setting the [column.visible](https://ej2.syncfusion.com/react/documentation/api/treegrid/column/#visible) property to **true** or **false**. 
+In the [toolbarClick](https://ej2.syncfusion.com/react/documentation/api/treegrid#toolbarclick) event, when **args.item.text** is **Print**, toggle visibility by setting the [column.visible](https://ej2.syncfusion.com/react/documentation/api/treegrid/column#visible) property to **true** or **false**. 
 
 In the `printComplete` event, restore the previous column visibility state.  
 

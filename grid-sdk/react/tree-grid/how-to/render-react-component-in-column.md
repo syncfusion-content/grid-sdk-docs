@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Render react component in column in React TreeGrid | Syncfusion
-description: Learn here all about Render react component in column in Syncfusion React TreeGrid component of Syncfusion Essential JS 2 and more.
+title: React TreeGrid React Component Rendering | Syncfusion
+description: Learn how to render custom React components in React TreeGrid columns using the template property to create interactive and customizable cell content.
 control: Render react component in column 
 platform: grid-sdk
 documentation: ug
@@ -10,7 +10,7 @@ domainurl: https://help.syncfusion.com/grid-sdk
 
 # Render react component in column in React TreeGrid
 
-Render a React component inside TreeGrid cells by using the [queryCellInfo](https://ej2.syncfusion.com/react/documentation/api/treegrid/#querycellinfo) event.
+Render a React component inside TreeGrid cells by using the [queryCellInfo](https://ej2.syncfusion.com/react/documentation/api/treegrid#querycellinfo) event.
 
 In the following sample, a DropDownList is rendered in the **Priority** column.
 

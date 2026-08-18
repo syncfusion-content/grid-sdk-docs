@@ -10,13 +10,13 @@ domainurl: https://help.syncfusion.com/grid-sdk
 
 # Selection in React TreeGrid
 
-Selection highlights a row or a cell. Selection can be performed using mouse click/drag or arrow keys. To disable selection in the TreeGrid, set [allowSelection](https://ej2.syncfusion.com/react/documentation/api/treegrid/#allowselection) to **false**.
+Selection highlights a row or a cell. Selection can be performed using mouse click/drag or arrow keys. To disable selection in the TreeGrid, set [allowSelection](https://ej2.syncfusion.com/react/documentation/api/treegrid#allowselection) to **false**.
 
 For a quick overview of selection, refer to the following video:
 
 {% youtube "https://www.youtube.com/watch?v=2pAN-4v7E4E" %}
 
-Two selection types are available and can be configured using [selectionSettings.type](https://ej2.syncfusion.com/react/documentation/api/treegrid/selectionSettings/#type):
+Two selection types are available and can be configured using [selectionSettings.type](https://ej2.syncfusion.com/react/documentation/api/treegrid/selectionSettings#type):
 
 * **Single** (default): Allows selection of a single row or cell.
 * **Multiple**: Allows selection of multiple rows or cells.
@@ -36,7 +36,7 @@ For multi-selection, hold Ctrl key and click the desired rows or cells. To selec
 
 ## Selection mode
 
-TreeGrid supports three selection modes configured via [selectionSettings.mode](https://ej2.syncfusion.com/react/documentation/api/treegrid/selectionSettings/#mode):
+TreeGrid supports three selection modes configured via [selectionSettings.mode](https://ej2.syncfusion.com/react/documentation/api/treegrid/selectionSettings#mode):
 
 * **Row** (default): Selects rows only.
 * **Cell**: Selects cells only.
@@ -57,7 +57,7 @@ TreeGrid supports three selection modes configured via [selectionSettings.mode](
 
 On touch devices, tapping a row selects it. A floating menu ![Multi Row selection](../images/selection.jpg) enables multi-row selection. To select multiple rows or cells, tap the menu ![Multi Row or Cells](../images/mselection.jpg), then tap the desired targets.
 
-> Multi-selection requires [selectionSettings.type](https://ej2.syncfusion.com/react/documentation/api/treegrid/selectionSettings/#type) set to **Multiple**.
+> Multi-selection requires [selectionSettings.type](https://ej2.syncfusion.com/react/documentation/api/treegrid/selectionSettings#type) set to **Multiple**.
 
 The following screenshot illustrates touch selection on a device.
 

@@ -10,11 +10,11 @@ domainurl: https://help.syncfusion.com/grid-sdk
 
 # Show hide columns in dialog editing in React Treegrid component
 
-You can show hidden columns or hide visible column's editor in the dialog while editing the treegrid record using [`actionBegin`](https://ej2.syncfusion.com/react/documentation/api/treegrid/#actionbegin) and [`actionComplete`](https://ej2.syncfusion.com/react/documentation/api/treegrid/#actioncomplete) events.
+You can show hidden columns or hide visible column's editor in the dialog while editing the treegrid record using [`actionBegin`](https://ej2.syncfusion.com/react/documentation/api/treegrid#actionbegin) and [`actionComplete`](https://ej2.syncfusion.com/react/documentation/api/treegrid#actioncomplete) events.
 
-In the [`actionBegin`](https://ej2.syncfusion.com/react/documentation/api/treegrid/#actionbegin) event, based on **requestType** as **beginEdit** or  **add**. We can show or hide the editor by using [`column.visible`](https://ej2.syncfusion.com/react/documentation/api/treegrid/column/#visible) property.
+In the [`actionBegin`](https://ej2.syncfusion.com/react/documentation/api/treegrid#actionbegin) event, based on **requestType** as **beginEdit** or  **add**. We can show or hide the editor by using [`column.visible`](https://ej2.syncfusion.com/react/documentation/api/treegrid/column#visible) property.
 
-In the [`actionComplete`](https://ej2.syncfusion.com/react/documentation/api/treegrid/#actioncomplete) event, based on **requestType** as **save**. We can reset the properties back to the column state.
+In the [`actionComplete`](https://ej2.syncfusion.com/react/documentation/api/treegrid#actioncomplete) event, based on **requestType** as **save**. We can reset the properties back to the column state.
 
 In the below example, we have rendered the treegrid columns *Progress* as hidden column and *Priority* as visible column. In the edit mode, we have changed the *Progress* column to visible state and *Priority* column to hidden state.
 

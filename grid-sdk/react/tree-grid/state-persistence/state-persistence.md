@@ -12,11 +12,11 @@ domainurl: https://help.syncfusion.com/grid-sdk
 
 State persistence maintains the TreeGrid state in the browser’s [localStorage](https://www.w3schools.com/html/html5_webstorage.asp#) across page refreshes and intra-tab navigation.
 
-TreeGrid stores its model in local storage when [enablePersistence](https://ej2.syncfusion.com/react/documentation/api/treegrid/#enablepersistence) is set to **true**.
+TreeGrid stores its model in local storage when [enablePersistence](https://ej2.syncfusion.com/react/documentation/api/treegrid#enablepersistence) is set to **true**.
 
 ## Get or set local storage value
 
-When [enablePersistence](https://ej2.syncfusion.com/react/documentation/api/treegrid/#enablepersistence) is true, TreeGrid property values are saved in `window.localStorage`. Use `getItem` and `setItem` to retrieve or assign the stored model.
+When [enablePersistence](https://ej2.syncfusion.com/react/documentation/api/treegrid#enablepersistence) is true, TreeGrid property values are saved in `window.localStorage`. Use `getItem` and `setItem` to retrieve or assign the stored model.
 
 ```ts
         // Get the TreeGrid model.
