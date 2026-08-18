@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Performance tips for JavaScript Pivot Table component | Syncfusion
-description: Checkout and learn here all about best practices to improve the performance of the Syncfusion JavaScript Pivot Table component and much more.
-platform: grid-sdk
-control: Pivot Table
-publishingplatform: grid-sdk
+title: Performance Tips in ##Platform_Name## Pivot Table | Syncfusion
+description: Learn how the ##Platform_Name## Pivot Table improves loading on large datasets with virtual scrolling, paging, server-side engine and data compression.
+platform: ej2-javascript
+control: Performance best practices
+publishingplatform: ##Platform_Name##
 documentation: ug
-domainurl: https://help.syncfusion.com/grid-sdk
+domainurl: ##DomainURL##
 ---
 
-# Best practices to improve the performance of the Pivot Table
+# Performance Best Practices in ##Platform_Name## Pivot Table
 
 Performance optimization is crucial when working with large datasets in the [Syncfusion<sup style="font-size:70%">&reg;</sup> Javascript Pivot Table](https://www.syncfusion.com/javascript-ui-controls/js-pivot-table). This documentation provides some best practices to empower your data analysis and enhance the user experience.
 

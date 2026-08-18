@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Styling in .NET MAUI DataGrid control | Syncfusion®
-description: Learn all about Styling support in Syncfusion® .NET MAUI DataGrid (SfDataGrid) control, its elements and more.
+title: Styling in .NET MAUI Data Grid | Syncfusion®
+description: Learn how to customize the appearance of Syncfusion® .NET MAUI Data Grid using styling options for rows, cells, headers, and other grid elements.
 platform: grid-sdk
 control: SfDataGrid
 documentation: ug

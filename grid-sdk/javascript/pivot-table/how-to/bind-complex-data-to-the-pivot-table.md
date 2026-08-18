@@ -2,11 +2,11 @@
 layout: post
 title: Complex JSON to flat JSON in Javascript | Syncfusion
 description: Learn here all about how to convert complex JSON to flat JSON and assign it to the pivot table in Syncfusion Javascript of Syncfusion Essential JS 2 and more.
-platform: grid-sdk
+platform: ej2-javascript
 control: Convert complex JSON to flat JSON and assign it to the pivot table 
-publishingplatform: grid-sdk
+publishingplatform: ##Platform_Name##
 documentation: ug
-domainurl: https://help.syncfusion.com/grid-sdk
+domainurl: ##DomainURL##
 ---
 
 <!-- markdownlint-disable MD009 -->

@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Pdf Export in ASP.NET MVC Syncfusion Pivot Table Component
-description: Learn here all about Pdf Export in Syncfusion ASP.NET MVC Pivot Table component of Syncfusion Essential JS 2 and more.
-platform: grid-sdk
+title: PDF Export in ASP.NET MVC Pivot Table | Syncfusion
+description: Learn how the ASP.NET MVC Pivot Table exports the rendered pivot report to a PDF document via AllowPdfExport and the PdfExport method.
+platform: ej2-asp-core-mvc
 control: Pdf Export
-publishingplatform: grid-sdk
+publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
 
-# PDF Export in ASP.NET MVC Pivot Table Component
+# PDF Export in ASP.NET MVC Pivot Table
 
 The ASP.NET Core Pivot Table lets users easily export their pivot table data as a PDF document. By setting the [`AllowPdfExport`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_AllowPdfExport) property to **true** in the Pivot Table configuration, users can enable PDF export. Once enabled, you can use the `pdfExport` method to generate and download the PDF file.
 

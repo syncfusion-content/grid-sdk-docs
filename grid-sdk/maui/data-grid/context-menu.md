@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Context menu in .NET MAUI DataGrid control | Syncfusion
-description: Learn how to show and customize context menu in Syncfusion .NET MAUI DataGrid (SfDataGrid) for header, record, group caption, group summary, and table summary.
+title: Context menu in .NET MAUI Data Grid | Syncfusion®
+description: Learn how to show and customize context menu in Syncfusion .NET MAUI Data Grid for header, record, group caption, group summary, and table summary.
 platform: grid-sdk
 control: SfDataGrid
 documentation: ug

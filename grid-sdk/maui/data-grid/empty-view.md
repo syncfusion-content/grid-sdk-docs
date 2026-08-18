@@ -1,7 +1,7 @@
 ---
 layout: post
-title: EmptyView in MAUI DataGrid control | Syncfusion®
-description: Learn here all about Empty View support in Syncfusion® MAUI DataGrid (SfDataGrid) control and more about it.
+title: Empty View in .NET MAUI Data Grid | Syncfusion®
+description: Learn how to display and customize an empty view in Syncfusion® .NET MAUI Data Grid when no data is available.
 platform: grid-sdk
 control: SfDataGrid
 documentation: UG
@@ -96,7 +96,7 @@ this.Content = dataGrid;
 
 ## Display a DataTemplate when DataGrid has no items
 
-#### Using EmptyViewTemplate with Custom Binding
+### Using EmptyViewTemplate with Custom Binding
 
 For advanced scenarios such as filtered or searched data, you can set the `EmptyView` to a custom type that will be displayed when the `ItemsSource` is null or the collection that the `ItemsSource` parameter specifies is empty or null. The `EmptyViewTemplate` can be used to modify the `EmptyView`'s appearance and behavior based on dynamic properties.
  

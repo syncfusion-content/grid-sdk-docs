@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Data Compression in TypeScript Pivot Table component | Syncfusion
-description: Learn here all about data compression in Syncfusion TypeScript Pivot Table component of Syncfusion Essential JS 2 and more.
-platform: grid-sdk
-control: Data Compression 
-publishingplatform: grid-sdk
+title: Data Compression in ##Platform_Name## Pivot Table | Syncfusion
+description: Learn how the ##Platform_Name## Pivot Table compresses unique raw data via `allowDataCompression` to speed up rendering on large datasets.
+platform: ej2-javascript
+control: Data Compression
+publishingplatform: ##Platform_Name##
 documentation: ug
-domainurl: https://help.syncfusion.com/grid-sdk
+domainurl: ##DomainURL##
 ---
 
-# Data Compression in TypeScript Pivot Table component
+# Data Compression in ##Platform_Name## Pivot Table
 
 > This property is applicable only for the relational data source.
 

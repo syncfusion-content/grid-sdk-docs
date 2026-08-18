@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Pull To Refresh in .NET MAUI DataGrid control | Syncfusion®
-description: Learn here all about Pull To Refresh support in Syncfusion® .NET MAUI DataGrid (SfDataGrid) control and more.
+title: Pull To Refresh in .NET MAUI Data Grid | Syncfusion®
+description: Learn how to enable and customize Pull To Refresh in Syncfusion® .NET MAUI Data Grid  to refresh data through intuitive touch gestures.
 platform: grid-sdk
 control: SfDataGrid
 documentation: UG

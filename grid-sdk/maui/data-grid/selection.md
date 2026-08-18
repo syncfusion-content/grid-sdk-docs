@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Selection in .NET MAUI DataGrid control | Syncfusion®
-description: Learn here all about Selection support in Syncfusion® .NET MAUI DataGrid (SfDataGrid) control, its elements and more.
+title: Selection in .NET MAUI Data Grid | Syncfusion®
+description: Learn how to use selection features in Syncfusion® .NET MAUI Data Grid including row, cell, and multiple selection modes with customization options.
 platform: grid-sdk
 control: SfDataGrid
 documentation: ug

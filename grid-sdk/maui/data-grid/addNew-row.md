@@ -1,7 +1,7 @@
 ---
 layout: post
-title: AddNewRow in .NET MAUI DataGrid control | Syncfusion®
-description: Learn here all about how to add new row in Syncfusion® .NET MAUI DataGrid (SfDataGrid) control and more.
+title: AddNewRow in .NET MAUI Data Grid | Syncfusion®
+description: Learn how to add new rows in the Syncfusion® .NET MAUI Data Grid with step-by-step guidance, examples, and customization options.
 platform: grid-sdk
 control: SfDataGrid
 documentation: UG

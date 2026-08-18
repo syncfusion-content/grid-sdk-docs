@@ -1,13 +1,13 @@
 ---
 layout: post
-title: CSS Customization in Blazor Pivot Table Component | Syncfusion®
-description: Learn how to customize CSS styling in Blazor Pivot Table component with examples and much more details.
-platform: grid-sdk
+title: CSS Customization in Blazor Pivot Table | Syncfusion
+description: Learn how to style the Blazor Pivot Table with custom CSS to control row headers, column headers, value cells, summary cells, and the Field List.
+platform: Blazor
 control: Pivot Table
 documentation: ug
 ---
 
-# CSS Customization in Blazor Pivot Table Component
+# CSS Customization in Blazor Pivot Table
 
 The Blazor Pivot Table component provides extensive CSS customization options, allowing users to modify the visual appearance and layout of various pivot table elements. This includes styling row headers, column headers, value cells, summary cells, Field List components, and Grouping Bar areas to match application themes and design requirements.
 
@@ -121,7 +121,7 @@ The CSS selectors target the following Pivot Table elements:
 
 ## Text Alignment
 
-The alignment of text inside row headers, column headers, value cells, and summary cells can be customized using CSS styling. The following example demonstrates how to center-align text in value cells:
+The alignment of text inside row headers, column headers, value cells, and summary cells can be customized using CSS styling. The following example demonstrates how to center-align text in value cells (additional selectors for column headers, row headers, and summary cells are included as commented CSS in the sample):
 
 ```cshtml
 @using Syncfusion.Blazor.PivotView
@@ -182,7 +182,7 @@ The alignment of text inside row headers, column headers, value cells, and summa
 
 ![Text Alignment in Blazor PivotGrid](images/blazor-pivotgrid-text-alignment.webp)
 
-## Customize header, value and summary cell styles
+## Customize header, value, and summary cell styles
 
 The Pivot Table component elements including header cells, value cells, and summary cells can be styled using built-in CSS class names. This enables comprehensive visual customization of the component's appearance to match application themes and design requirements.
 
@@ -248,4 +248,4 @@ The CSS classes target the following Pivot Table elements:
 
 ![Blazor PivotGrid with Custom Styles](images/blazor-pivotgrid-custom-styles.webp)
 
-N> You can refer to the [Blazor Pivot Table](https://www.syncfusion.com/blazor-components/blazor-pivot-table) feature tour page for its groundbreaking feature representations. You can also explore the [Blazor Pivot Table example](https://blazor.syncfusion.com/demos/pivot-table/default-functionalities?theme=bootstrap5) to know how to render and configure the pivot table.
+N> You can refer to the [Blazor Pivot Table](https://www.syncfusion.com/blazor-components/blazor-pivot-table) feature tour page for its groundbreaking feature representations. You can also explore the [Blazor Pivot Table example](https://blazor.syncfusion.com/demos/pivot-table/default-functionalities?theme=fluent2) to know how to render and configure the pivot table.

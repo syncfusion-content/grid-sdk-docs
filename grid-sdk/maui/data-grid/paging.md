@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Paging in MAUI DataGrid control | Syncfusion®
-description: Learn here all about Paging support in Syncfusion® MAUI DataGrid (SfDataGrid) control, its elements and more.
+title: Paging in .NET MAUI Data Grid | Syncfusion®
+description: Learn how to enable and customize paging in Syncfusion® .NET MAUI Data Grid to efficiently navigate and manage large datasets.
 platform: grid-sdk
 control: SfDataGrid
 documentation: UG
