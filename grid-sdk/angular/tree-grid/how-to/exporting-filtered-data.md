@@ -10,9 +10,9 @@ domainurl: https://help.syncfusion.com/grid-sdk
 
 # Exporting filtered data in Angular TreeGrid component
 
-Filtered data can be exported by assigning the filtered results to [`PdfExportProperties.dataSource`](https://ej2.syncfusion.com/angular/documentation/api/grid/pdfExportProperties/#datasource) before performing the export operation.
+Filtered data can be exported by assigning the filtered results to [`PdfExportProperties.dataSource`](https://ej2.syncfusion.com/angular/documentation/api/grid/pdfExportProperties#datasource) before performing the export operation.
 
-In the following PDF export demo, the filtered data is obtained from the filteredResult property of the TreeGrid's filterModule. This resulting data is then defined in [`PdfExportProperties.dataSource`](https://ej2.syncfusion.com/angular/documentation/api/grid/pdfExportProperties/#datasource) and passed to the [`pdfExport`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#pdfexport) method of the TreeGrid component.
+In the following PDF export demo, the filtered data is obtained from the filteredResult property of the TreeGrid's filterModule. This resulting data is then defined in [`PdfExportProperties.dataSource`](https://ej2.syncfusion.com/angular/documentation/api/grid/pdfExportProperties#datasource) and passed to the [`pdfExport`](https://ej2.syncfusion.com/angular/documentation/api/treegrid#pdfexport) method of the TreeGrid component.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

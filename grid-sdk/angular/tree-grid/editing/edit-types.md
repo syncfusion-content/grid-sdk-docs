@@ -619,7 +619,7 @@ The TreeGrid allows you to render the RichTextEditor component within the edit f
 
 To render RichTextEditor component in edit form, you need to define an [editTemplate](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column/#edittemplate) for the column using **ng-template**. The `editTemplate` property specifies the cell edit template that used as an editor for a particular column. It can accept either a template string or an HTML element ID.
 
-Additionally, you need set the [allowTextWrap](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#allowtextwrap) property of the corresponding TreeGrid column to **true**. By enabling this property, the rich text editor component will automatically adjust its width and wrap the text content to fit within the boundaries of the column.
+Additionally, you need set the [allowTextWrap](https://ej2.syncfusion.com/angular/documentation/api/treegrid#allowtextwrap) property of the corresponding TreeGrid column to **true**. By enabling this property, the rich text editor component will automatically adjust its width and wrap the text content to fit within the boundaries of the column.
 
 The following example demonstrates how to render a RichTextEditor component in the **taskName** column of the TreeGrid. The [actionBegin](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#actionbegin) event is handled to update the edited value in the TreeGrid when the save button is clicked:
 

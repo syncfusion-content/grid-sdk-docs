@@ -56,7 +56,7 @@ Example:
 
 ## Automatically update a specific column based on another column's edited value
 
-Columns can be updated dynamically in response to editing another column by configuring [columns->edit->params](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column/#edit) and specifying [editType](https://ej2.syncfusion.com/angular/documentation/api/treegrid/columnModel/#edittype). This is useful for real-time calculations and value propagation.
+Columns can be updated dynamically in response to editing another column by configuring [columns->edit->params](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column#edit) and specifying [editType](https://ej2.syncfusion.com/angular/documentation/api/treegrid/columnModel#edittype). This is useful for real-time calculations and value propagation.
 
 Example:
 
@@ -174,7 +174,7 @@ Example:
 
 You can delete multiple rows programmatically by using following method.
 
-1. [deleteRecord](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#deleterecord) -This method allows you to delete a record with the given options. If the **fieldname** (field name of the primary key column) and **data** parameters are not provided, the tree grid will delete the selected records.
+1. [deleteRecord](https://ej2.syncfusion.com/angular/documentation/api/treegrid#deleterecord) -This method allows you to delete a record with the given options. If the **fieldName** (field name of the primary key column) and **data** parameters are not provided, the tree grid will delete the selected records.
 
     ```ts
         this.treegrid.deleteRecord();

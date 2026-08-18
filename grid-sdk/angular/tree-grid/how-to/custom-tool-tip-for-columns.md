@@ -10,10 +10,10 @@ domainurl: https://help.syncfusion.com/grid-sdk
 
 # Custom tool tip for columns in Angular TreeGrid component
 
-Custom tooltips can be added to columns in the TreeGrid component by using the [`EJ2 Tooltip`](https://ej2.syncfusion.com/angular/documentation/tooltip/getting-started) component in combination with the [`queryCellInfo`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#querycellinfo) event.
+Custom tooltips can be added to columns in the TreeGrid component by using the [`EJ2 Tooltip`](https://ej2.syncfusion.com/angular/documentation/tooltip/getting-started) component in combination with the [`queryCellInfo`](https://ej2.syncfusion.com/angular/documentation/api/treegrid#querycellinfo) event.
 
 Render the Tooltip component for TreeGrid cells by using the following code in the
-[`queryCellInfo`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#querycellinfo) event.
+[`queryCellInfo`](https://ej2.syncfusion.com/angular/documentation/api/treegrid#querycellinfo) event.
 
 ```typescript
 

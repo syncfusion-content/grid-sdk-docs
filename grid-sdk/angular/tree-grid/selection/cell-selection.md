@@ -12,7 +12,7 @@ domainurl: https://help.syncfusion.com/grid-sdk
 
 Cell selection in the TreeGrid can be performed using either mouse (click and drag) or keyboard arrow keys (up, down, left, right).
 
-TreeGrid supports two types of cell selection modes, which can be set using the [`selectionSettings.cellSelectionMode`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/selectionSettings/#cellselectionmode) property:
+TreeGrid supports two types of cell selection modes, which can be set using the [`selectionSettings.cellSelectionMode`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/selectionSettings#cellselectionmode) property:
 
 * **Flow** (default): Selects a range of cells from the starting to ending index, including all intermediate cells within rows.
 * **Box**: Selects a rectangular range of cells, based on the starting and ending column indexes, including all intermediate cells within those columns across the selected rows.
@@ -29,11 +29,11 @@ TreeGrid supports two types of cell selection modes, which can be set using the 
 
 {% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/treegrid/selection-cs1" %}
 
-> For cell selection, set [`selectionSettings.mode`](https://ej2.syncfusion.com/angular/documentation/api/grid/selectionSettings/#mode) to `Cell` or `Both`.
+> For cell selection, set [`selectionSettings.mode`](https://ej2.syncfusion.com/angular/documentation/api/grid/selectionSettings#mode) to `Cell` or `Both`.
 
 ## Perform cell selection programmatically
 
-To programmatically select a cell, use the [`selectCell`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#selectcell) method, passing the cell index as a parameter. To clear cell or row selections, call the [`clearSelection`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#clearselection) method.
+To programmatically select a cell, use the [`selectCell`](https://ej2.syncfusion.com/angular/documentation/api/treegrid#selectcell) method, passing the cell index as a parameter. To clear cell or row selections, call the [`clearSelection`](https://ej2.syncfusion.com/angular/documentation/api/treegrid#clearselection) method.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -49,7 +49,7 @@ To programmatically select a cell, use the [`selectCell`](https://ej2.syncfusion
 
 ## Get selected row cell indexes
 
-To retrieve the indexes of selected row cells, use the [`getSelectedRowCellIndexes`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#getselectedrowcellindexes) method.
+To retrieve the indexes of selected row cells, use the [`getSelectedRowCellIndexes`](https://ej2.syncfusion.com/angular/documentation/api/treegrid#getselectedrowcellindexes) method.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
