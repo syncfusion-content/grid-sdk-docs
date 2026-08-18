@@ -1,15 +1,13 @@
 ---
 layout: post
-title: Persisting Data in Server in ASP.NET MVC Tree Grid Component | Syncfusion
-description: Learn here all about Persisting Data in Server in Syncfusion ASP.NET MVC Tree Grid component of Syncfusion Essential JS 2 and more.
+title: ASP.NET MVC TreeGrid Persisting Data in Server | Syncfusion
+description: Learn how to persist edited data in a database using RESTful services and DataManager in the ASP.NET MVC TreeGrid.
 platform: grid-sdk
 control: Persisting Data in Server
-publishingplatform: grid-sdk
 documentation: ug
 ---
 
-
-# Persisting Data in Server
+# Persisting data in Server in ASP.NET MVC TreeGrid
 
 Edited data can be persisted in the database using the RESTful web services.
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Accessibility in Typescript Pivot Table component | Syncfusion
-description: Learn here all about Accessibility in Syncfusion Typescript Pivot Table component of Syncfusion Essential JS 2 and more.
-control: Accessibility 
-platform: grid-sdk
+title: Accessibility in ##Platform_Name## Pivot Table | Syncfusion
+description: Learn how the ##Platform_Name## Pivot Table supports WAI-ARIA roles, full keyboard navigation, and screen reader support that comply with WCAG 2.2.
+control: Accessibility
+platform: ej2-javascript
 documentation: ug
-domainurl: https://help.syncfusion.com/grid-sdk
+domainurl: ##DomainURL##
 ---
 
-# Accessibility in Typescript Pivot Table component
+# Accessibility in ##Platform_Name## Pivot Table
 
 The pivot table component followed the accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) that are commonly used to evaluate accessibility.
 
@@ -40,7 +40,7 @@ The accessibility compliance for the pivot table component is outlined below.
 
 ## WAI-ARIA attributes
 
-[WAI-ARIA](https://www.w3.org/WAI/ARIA/apg/patterns/alert/) (Accessibility Initiative – Accessible Rich Internet Applications) defines a way to increase the accessibility of web pages, dynamic content, and user interface components developed with Ajax, HTML, JavaScript,and related technologies. ARIA provides additional semantics to describe the role, state, and functionality of web components. The following ARIA attributes are used in the pivot table component:
+[WAI-ARIA](https://www.w3.org/WAI/ARIA/apg/patterns/alert/) (Accessibility Initiative – Accessible Rich Internet Applications) defines a way to increase the accessibility of web pages, dynamic content, and user interface components developed with Ajax, HTML, JavaScript, and related technologies. ARIA provides additional semantics to describe the role, state, and functionality of web components. The following ARIA attributes are used in the pivot table component:
 
 | Attributes | Purpose |
 | --- | --- |
@@ -67,12 +67,7 @@ The accessibility compliance for the pivot table component is outlined below.
 
 ## Keyboard interaction
 
-The pivot table component followed the [keyboard interaction](https://www.w3.org/WAI/ARIA/apg/patterns/alert/#keyboardinteraction) guideline, making it easy for people who use assistive technologies (AT) and those who completely rely on keyboard navigation. The following keyboard shortcuts are supported by the Message component.
-
-| **Press** | **To do this** |
-| --- | --- |
-| <kbd>Tab / Shift + Tab</kbd> | To focus the close icon in the message. |
-| <kbd>Enter / Space</kbd> | Closes the focused close icon's message. |
+The pivot table component followed the [keyboard interaction](https://www.w3.org/WAI/ARIA/apg/patterns/alert/#keyboardinteraction) guideline, making it easy for people who use assistive technologies (AT) and those who completely rely on keyboard navigation. The following keyboard shortcuts are supported by the Pivot Table component.
 
 ### Pivot Table
 
@@ -85,7 +80,7 @@ The pivot table component followed the [keyboard interaction](https://www.w3.org
 | <kbd>LeftArrow</kbd> | Moves the cell focus left side. If the selection is enabled in the pivot table, then it will move left side to select previous row or column or individual cell. |
 | <kbd>RightArrow</kbd> | Moves the cell focus right side. If the selection is enabled in the pivot table, then it will move right side to select next row or column or individual cell. |
 | <kbd>Shift + DownArrow</kbd> | Extends the cell selection downwards. |
-| <kbd>Shift + UpArrow</kbd> | Extends the cell selection selection upwards. |
+| <kbd>Shift + UpArrow</kbd> | Extends the cell selection upwards. |
 | <kbd>Shift + LeftArrow</kbd> | Extends the cell selection to the left side. |
 | <kbd>Shift + RightArrow</kbd> | Extends the cell selection to the right side. |
 | <kbd>Ctrl + A</kbd> | Selects all cells. |
@@ -136,8 +131,8 @@ The pivot table component followed the [keyboard interaction](https://www.w3.org
 | <kbd>Home</kbd> | If the current active element is a dropdown list, the first item will be selected. |
 | <kbd>End</kbd> | If the current active element is a dropdown list, the last item will be selected. |
 | <kbd>Alt + Down</kbd> | If the current active element is a dropdown list, the popup will be opened. |
-| <kbd>Alt + Down</kbd> | If the current active element is a dropdown list, the popup will be closed. |
-| <kbd>Esc or Escape</kbd> | Closes the dropdown list.
+| <kbd>Alt + Up</kbd> | If the current active element is a dropdown list, the popup will be closed. |
+| <kbd>Esc or Escape</kbd> | Closes the dropdown list. |
 
 ### Filter Dialog
 
@@ -212,7 +207,7 @@ The pivot table component followed the [keyboard interaction](https://www.w3.org
 | <kbd>Ctrl + Home</kbd> | Goes to the first cell in the table. |
 | <kbd>Ctrl + End</kbd> | Goes to the last cell in the table. |
 | <kbd>Enter</kbd> | Performs the selection operation of the current active element. |
-| <kbd>Esc or Escape</kbd> | If the cell is in selected state, the it deselects all rows/cells. If the row/cell is in edit state, it cancels the current entries in the row/cell. If the current active element is not a row/cell, it closes the drill-through dialog. |
+| <kbd>Esc or Escape</kbd> | If the cell is in selected state, then it deselects all rows/cells. If the row/cell is in edit state, it cancels the current entries in the row/cell. If the current active element is not a row/cell, it closes the drill-through dialog. |
 | <kbd>F2</kbd> | Initiate editing a row/cell in the data grid. |
 | <kbd>Insert</kbd> | Adds a new row/cell in the data grid. |
 | <kbd>Delete</kbd> | Removes the selected row in the data grid. |

@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Data binding in React Pivot Table component | Syncfusion
-description: Learn here all about Data binding in Syncfusion React Pivot Table component of Syncfusion Essential JS 2 and more.
-control: Data binding 
-platform: grid-sdk
+title: Data binding in React Pivot Table | Syncfusion
+description: Learn how the React Pivot Table binds local JSON arrays, remote services, and OLAP cubes for data visualization and analysis.
+control: Pivot Table
+platform: ej2-react
 documentation: ug
-domainurl: https://help.syncfusion.com/grid-sdk
+domainurl: ##DomainURL##
 ---
 
-# Data binding in React Pivot Table component
+# Data binding in React Pivot Table
 
-To get start quickly with Data Binding, you can check on this video:
+To get started quickly with Data Binding, you can check out this video:
 
 {% youtube "https://www.youtube.com/watch?v=_sKndiVl5w0" %}
 
@@ -68,13 +68,16 @@ import { Uploader } from '@syncfusion/ej2-inputs';
 import { DataSourceSettingsModel } from '@syncfusion/ej2-pivotview/src/model/datasourcesettings-model';
 
 function App() {
-  
+
   // Step 1: Initialize the file uploader
   let uploadObj: Uploader = new Uploader({
   });
   uploadObj.appendTo('#fileupload');
 
   let input = document.querySelector('input[type="file"]');
+  let pivotObj: PivotViewComponent;
+  let dataSourceSettings: DataSourceSettingsModel;
+
   // Step 2: Add the event listener that triggers when the *.JSON file is uploaded
   input.addEventListener('change', function (e: Event) {
     // Step 3: Initialize the file reader
@@ -82,15 +85,15 @@ function App() {
     reader.onload = function () {
       // Step 4: Get the string output and parse it as JSON
       let result: any = JSON.parse(reader.result as string);
-      let dataSourceSettings: DataSourceSettingsModel = {
-        // Step 5: Bind the JSON result as data source
-        dataSource: result
-        // Step 6: Provide the appropriate report configuration here
-      };
-      reader.readAsText((input as any).files[0]);
+      // Step 5: Bind the JSON result as data source
+      dataSourceSettings = { dataSource: result };
+      // Step 6: Provide the appropriate report configuration here
+      pivotObj.dataSourceSettings = dataSourceSettings;
     };
+    // Step 7: Read the selected file as text (must be called before onload fires)
+    reader.readAsText((input as any).files[0]);
   });
-  let pivotObj: PivotViewComponent;
+
   return <PivotViewComponent ref={d => pivotObj = d} id='PivotView' height={350} dataSourceSettings={dataSourceSettings}></PivotViewComponent>;
 }
 

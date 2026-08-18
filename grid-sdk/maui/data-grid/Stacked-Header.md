@@ -2,7 +2,7 @@
 layout: post
 title: Stacked Headers in .NET MAUI Data Grid | Syncfusion®
 description: Learn how to create and customize stacked headers in Syncfusion® .NET MAUI Data Grid to group related columns and improve data organization.
-platform: MAUI
+platform: grid-sdk
 control: SfDataGrid
 documentation: UG
 keywords : maui data grid, maui datagrid, maui grid, grid maui, maui gridview, grid in maui, .net maui datagrid, .net maui grid, .net grid maui, .net maui stacked header, maui stacked header

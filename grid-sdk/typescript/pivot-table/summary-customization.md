@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Summary customization in Typescript Pivot Table component | Syncfusion
-description: Learn here all about Summary customization in Syncfusion TypeScript Pivot Table component of Syncfusion Essential JS 2 and more.
-platform: grid-sdk
-control: Summary customization 
-publishingplatform: grid-sdk
+title: Summary Customization in ##Platform_Name## Pivot Table | Syncfusion
+description: Learn how the ##Platform_Name## Pivot Table shows or hides grand totals and sub-totals via `showGrandTotals` and `showSubTotals` row and column flags.
+platform: ej2-javascript
+control: Summary customization
+publishingplatform: ##Platform_Name##
 documentation: ug
-domainurl: https://help.syncfusion.com/grid-sdk
+domainurl: ##DomainURL##
 ---
 
-# Summary customization in TypeScript Pivot Table component
+# Summary Customization in ##Platform_Name## Pivot Table
 
 ## Show or hide grand totals
 

@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Aggregation in TypeScript Pivot Table component | Syncfusion
-description: Learn here all about Aggregation in Syncfusion TypeScript Pivot Table component of Syncfusion Essential JS 2 and more.
-platform: grid-sdk
-control: Aggregation 
-publishingplatform: grid-sdk
+title: Aggregation in ##Platform_Name## Pivot Table | Syncfusion
+description: Learn how the ##Platform_Name## Pivot Table applies aggregation types like Sum, Count, and Average to value fields, with custom aggregations at runtime.
+platform: ej2-javascript
+control: Aggregation
+publishingplatform: ##Platform_Name##
 documentation: ug
-domainurl: https://help.syncfusion.com/grid-sdk
+domainurl: ##DomainURL##
 ---
 
-# Aggregation in TypeScript Pivot Table component
+# Aggregation in ##Platform_Name## Pivot Table
 
 > This feature is applicable only for the relational data source.
 

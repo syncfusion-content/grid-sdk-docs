@@ -1,15 +1,15 @@
 ---
 layout: post
 title: Customize the icons for pivot table in Javascript | Syncfusion
-description: Learn here all about Customize the icons for pivot table in Syncfusion TypeScript Pivot Table component of Syncfusion Essential JS 2 and more.
-platform: grid-sdk
+description: Learn here all about Customize the icons for pivot table in Syncfusion ##Platform_Name## Pivot Table component of Syncfusion Essential JS 2 and more.
+platform: ej2-javascript
 control: Customize the icons for pivot table 
-publishingplatform: grid-sdk
+publishingplatform: ##Platform_Name##
 documentation: ug
-domainurl: https://help.syncfusion.com/grid-sdk
+domainurl: ##DomainURL##
 ---
 
-# Customize the icons within the TypeScript Pivot Table component
+# Customize the icons within the ##Platform_Name## Pivot Table component
 
 The Typescript Pivot Table component supports the customization of various icons across its interface. This includes icons for the field list, expand/collapse actions, and other interactive elements. You can customize these icons by overriding the default CSS classes with custom Unicode values.
 

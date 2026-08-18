@@ -1,12 +1,12 @@
 ---
 layout: post
 title: Chart based on pivot table selection in Javascript | Syncfusion
-description: Learn here all about Chart based on pivot table selection in Syncfusion TypeScript Pivot Table component of Syncfusion Essential JS 2 and more.
-platform: grid-sdk
+description: Learn here all about Chart based on pivot table selection in Syncfusion ##Platform_Name## Pivot Table component of Syncfusion Essential JS 2 and more.
+platform: ej2-javascript
 control: Chart based on pivot table selection 
-publishingplatform: grid-sdk
+publishingplatform: ##Platform_Name##
 documentation: ug
-domainurl: https://help.syncfusion.com/grid-sdk
+domainurl: ##DomainURL##
 ---
 
 # Chart based on pivot table selection in JavaScript Pivotview component

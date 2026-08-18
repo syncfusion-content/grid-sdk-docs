@@ -1,14 +1,13 @@
 ---
 layout: post
-title: Headers in ASP.NET MVC Tree Grid Component | Syncfusion
-description: Learn here all about Headers in Syncfusion ASP.NET MVC Tree Grid component of Syncfusion Essential JS 2 and more.
+title: ASP.NET MVC TreeGrid Headers | Syncfusion
+description: Learn how to configure and customize column headers in ASP.NET MVC TreeGrid, including header text and template options.
 platform: grid-sdk
 control: Headers
-publishingplatform: grid-sdk
 documentation: ug
 ---
 
-# Headers in ASP.NET MVC Tree Grid Component
+# Headers in ASP.NET MVC TreeGrid
 
 ## Header text
 
@@ -66,7 +65,7 @@ You can customize the header element by using the [`HeaderTemplate`](https://hel
 
 Sometimes, there may be a requirement to change the column [`HeaderText`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGridColumn.html#Syncfusion_EJ2_TreeGrid_TreeGridColumn_HeaderText) of the Tree Grid dynamically. This can be done using the following approach:
 
-**Step 1**: In external button click, get the column object corresponding to the field name by using the [`getColumnByField`](https://ej2.syncfusion.com/documentation/api/treegrid/#getcolumnbyfield) method. Then, change the header text value.
+**Step 1**: In external button click, get the column object corresponding to the field name by using the [`getColumnByField`](https://ej2.syncfusion.com/documentation/api/treegrid#getcolumnbyfield) method. Then, change the header text value.
 
 ```typescript
 var column = treegrid.getColumnByField("Duration"); // Get column object.
@@ -74,7 +73,7 @@ column.headerText = 'Changed Text';
 
 ```
 
-**Step 2**: To reflect the changes in the Tree Grid header, invoke the [`refreshColumns`](https://ej2.syncfusion.com/documentation/api/treegrid/#refreshcolumns) method.
+**Step 2**: To reflect the changes in the Tree Grid header, invoke the [`refreshColumns`](https://ej2.syncfusion.com/documentation/api/treegrid#refreshcolumns) method.
 
 ```typescript
 treegrid.refreshColumns();

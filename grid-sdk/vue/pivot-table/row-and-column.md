@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Row and column in Vue Pivot Table component | Syncfusion
-description: Learn here all about Row and column in Syncfusion Vue Pivot Table component of Syncfusion Essential JS 2 and more.
+title: Row and Column in Vue Pivot Table | Syncfusion
+description: Learn how the Vue Pivot Table sets row and column dimensions via height, width, and gridSettings, with pixel, percentage, and auto size modes.
 control: Row and column 
-platform: grid-sdk
+platform: ej2-vue
 documentation: ug
-domainurl: https://help.syncfusion.com/grid-sdk
+domainurl: ##DomainURL##
 ---
 
 <!-- markdownlint-disable MD012 -->
 
-# Row and column in Vue Pivot Table component
+# Row and Column in Vue Pivot Table
 
 To learn about how to use the row and column options effectively in the Vue Pivot Table, watch this video:
 

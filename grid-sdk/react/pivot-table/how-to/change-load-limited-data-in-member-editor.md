@@ -1,18 +1,18 @@
 ---
 layout: post
-title: Change load limited data in member editor in React | Syncfusion
-description: Learn here all about Change load limited data in member editor in Syncfusion React Pivotview component of Syncfusion Essential JS 2 and more.
-control: Change load limited data in member editor 
-platform: grid-sdk
+title: How to limit member editor data in React Pivot Table | Syncfusion
+description: Step-by-step example showing how to limit data loaded in the member editor of the React Pivot Table using maxNodeLimitInMemberEditor.
+control: Pivot Table
+platform: ej2-react
 documentation: ug
-domainurl: https://help.syncfusion.com/grid-sdk
+domainurl: ##DomainURL##
 ---
 
-# Change load limited data in member editor in React
+# How to limit member editor data in React Pivot Table
 
 ## Overview
 
-When working with large datasets in the React Pivotview component, loading all field values in the filter dialog's member editor can cause performance issues. The [`maxNodeLimitInMemberEditor`](https://ej2.syncfusion.com/react/documentation/api/pivotview/index-default#maxnodelimitinmembereditor) property allows you to set a limit on the number of field values displayed initially, improving the loading performance while still providing access to all data through search functionality.
+When working with large datasets in the React Pivot Table component, loading all field values in the filter dialog's member editor can cause performance issues. The [`maxNodeLimitInMemberEditor`](https://ej2.syncfusion.com/react/documentation/api/pivotview/index-default#maxnodelimitinmembereditor) property allows you to set a limit on the number of field values displayed initially, improving the loading performance while still providing access to all data through search functionality.
 
 ## Setting the data limit
 
@@ -27,7 +27,7 @@ When the number of field values exceeds this limit:
 
 ## Implementation example
 
-In the following example, the limit of data in the member editor is set to 100. As a result, the member editor for the `ProductID` field displays only its first 100 members out of 1000 total members.
+In the following example, the limit of data in the member editor is set to 100. As a result, the member editor for the `ProductID` field displays only its first 100 members; the remaining 900 members are reachable through the search option.
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}

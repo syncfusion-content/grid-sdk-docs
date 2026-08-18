@@ -1,15 +1,13 @@
 ---
 layout: post
-title: Clipboard in ASP.NET MVC Tree Grid Component
-description: Learn here all about Clipboard in Syncfusion ASP.NET MVC Tree Grid component of Syncfusion Essential JS 2 and more.
+title: ASP.NET MVC TreeGrid Clipboard | Syncfusion
+description: Learn how to use clipboard operations in ASP.NET MVC TreeGrid, including copy, paste, hierarchy modes, and autofill for rows and cells.
 platform: grid-sdk
 control: Clipboard
-publishingplatform: grid-sdk
 documentation: ug
 ---
 
-
-# Clipboard
+# Clipboard in ASP.NET MVC TreeGrid
 
 The clipboard provides an option to copy selected rows or cells data into the clipboard.
 
@@ -47,7 +45,7 @@ Interaction keys |Description
 
 ## Copy to clipboard by external buttons
 
-To copy selected rows or cells data into the clipboard with help of external buttons, you need to invoke the [`copy`](https://ej2.syncfusion.com/documentation/api/treegrid/#copy) method.
+To copy selected rows or cells data into the clipboard with help of external buttons, you need to invoke the [`copy`](https://ej2.syncfusion.com/documentation/api/treegrid#copy) method.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

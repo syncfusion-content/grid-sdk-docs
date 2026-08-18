@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Summary customization in Vue Pivot Table component | Syncfusion
-description: Learn here all about Summary customization in Syncfusion Vue Pivot Table component of Syncfusion Essential JS 2 and more.
+title: Summary Customization in Vue Pivot Table | Syncfusion
+description: Learn how the Vue Pivot Table shows or hides grand totals and subtotals per row or column, and repositions them to the top or bottom via dataSourceSettings.
 control: Summary customization 
-platform: grid-sdk
+platform: ej2-vue
 documentation: ug
-domainurl: https://help.syncfusion.com/grid-sdk
+domainurl: ##DomainURL##
 ---
 
-# Summary customization in Vue Pivot Table component
+# Summary Customization in Vue Pivot Table
 
 ## Show or hide grand totals
 

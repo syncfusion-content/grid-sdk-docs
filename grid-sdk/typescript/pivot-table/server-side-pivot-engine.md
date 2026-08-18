@@ -1,17 +1,17 @@
 ---
 layout: post
-title: Server side pivot engine in TypeScript Pivotview control | Syncfusion
-description: Learn here all about Server side pivot engine in Syncfusion TypeScript Pivotview control of Syncfusion Essential JS 2 and more.
-platform: grid-sdk
-control: Server side pivot engine 
-publishingplatform: grid-sdk
+title: Server-Side Pivot Engine in ##Platform_Name## Pivot Table | Syncfusion
+description: Learn how the ##Platform_Name## Pivot Table uses `Syncfusion.Pivot.Engine` server-side for aggregation, filtering, and sorting.
+platform: ej2-javascript
+control: Server side pivot engine
+publishingplatform: ##Platform_Name##
 documentation: ug
-domainurl: https://help.syncfusion.com/grid-sdk
+domainurl: ##DomainURL##
 ---
 
 > By default, the Pivot Table processes and displays data using its built-in engine with the given data source. Alternatively, you can use a server-side pivot engine to connect external data to the Pivot Table, which is especially useful when working with large datasets. This option is applicable only for relational data sources.
 
-# Server side pivot engine in TypeScript Pivot Table component
+# Server-Side Pivot Engine in ##Platform_Name## Pivot Table
 
 This section explains how to use the Syncfusion<sup style="font-size:70%">&reg;</sup> assembly [`Syncfusion.Pivot.Engine`](https://www.nuget.org/packages/Syncfusion.Pivot.Engine) in a server-side application. The server-side engine performs operations such as aggregation, filtering, sorting, and grouping on the server. Only the information required for the Pivot Table viewport is sent to the client through a web service (Web API), instead of transferring the entire data source. This approach helps reduce network traffic and improves Pivot Table rendering performance when working with large data sets. It works efficiently with the virtual scrolling option and supports all existing features in the Pivot Table.
 
