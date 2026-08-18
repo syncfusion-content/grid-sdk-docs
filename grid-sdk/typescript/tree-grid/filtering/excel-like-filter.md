@@ -3,7 +3,7 @@ layout: post
 title: TypeScript TreeGrid Excel-Like Filter | Syncfusion
 description: Learn how to use Excel-like filtering in TypeScript TreeGrid, including filter menus, search, checkbox filtering, and custom filter options.
 platform: grid-sdk
-control: Excel like filter 
+control: Excel like filter
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---

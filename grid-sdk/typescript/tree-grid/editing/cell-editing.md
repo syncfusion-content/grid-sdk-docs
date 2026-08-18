@@ -3,7 +3,7 @@ layout: post
 title: TypeScript TreeGrid Cell Editing | Syncfusion
 description: Learn how to use cell editing in the TypeScript TreeGrid, including enabling, editing, and handling cell edit events.
 platform: grid-sdk
-control: Cell editing 
+control: Cell editing
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---

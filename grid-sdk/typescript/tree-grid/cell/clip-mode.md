@@ -3,7 +3,7 @@ layout: post
 title: TypeScript TreeGrid Clip Mode | Syncfusion
 description: Learn how to configure clip mode in TypeScript TreeGrid to manage overflowing cell content using clipping, ellipsis, or ellipsis with tooltip display.
 platform: grid-sdk
-control: Clip mode 
+control: Clip mode
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---

@@ -3,7 +3,7 @@ layout: post
 title: TypeScript TreeGrid Batch Editing | Syncfusion
 description: Learn how to use batch editing in TypeScript TreeGrid to edit multiple cells, perform bulk updates, and save changes efficiently.
 platform: grid-sdk
-control: Batch editing 
+control: Batch editing
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---

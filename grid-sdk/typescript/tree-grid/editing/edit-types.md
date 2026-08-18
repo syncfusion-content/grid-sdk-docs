@@ -3,7 +3,7 @@ layout: post
 title: TypeScript TreeGrid Edit Types | Syncfusion
 description: Learn how to use different edit types in TypeScript TreeGrid, including cell, row, batch, and dialog editing modes for managing data.
 platform: grid-sdk
-control: Edit types 
+control: Edit types
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---

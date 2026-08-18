@@ -3,7 +3,7 @@ layout: post
 title: TypeScript TreeGrid Edit | Syncfusion
 description: Learn how to edit data in TypeScript TreeGrid, including CRUD operations, editing modes, validation, and data update workflows.
 platform: grid-sdk
-control: Edit 
+control: Edit
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---

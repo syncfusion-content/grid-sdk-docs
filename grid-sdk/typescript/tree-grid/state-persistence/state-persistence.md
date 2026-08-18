@@ -3,7 +3,7 @@ layout: post
 title: TypeScript TreeGrid State Persistence | Syncfusion
 description: Learn how to use state persistence in the TypeScript TreeGrid component, including configuration with enablePersistence and localStorage usage.
 platform: grid-sdk
-control: State persistence 
+control: State persistence
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---

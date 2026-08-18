@@ -3,7 +3,7 @@ layout: post
 title: TypeScript TreeGrid Paging | Syncfusion
 description: Learn how to use paging in TypeScript TreeGrid, including pagination configuration, customization, and advanced features for managing large datasets.
 platform: grid-sdk
-control: Paging 
+control: Paging
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---

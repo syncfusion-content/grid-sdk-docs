@@ -3,7 +3,7 @@ layout: post
 title: TypeScript TreeGrid Sorting | Syncfusion
 description: Learn how to sort data in TypeScript TreeGrid, including single and multi-column sorting, custom sorting, and sort order configuration.
 platform: grid-sdk
-control: Sorting 
+control: Sorting
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---

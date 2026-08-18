@@ -3,7 +3,7 @@ layout: post
 title: TypeScript TreeGrid Column Resizing | Syncfusion
 description: Learn how to resize columns in TypeScript TreeGrid, including column width adjustment, resizing modes, and auto-fit options.
 platform: grid-sdk
-control: Column resizing 
+control: Column resizing
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---

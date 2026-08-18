@@ -3,7 +3,7 @@ layout: post
 title: TypeScript TreeGrid Selection | Syncfusion
 description: Learn all about selection in the TypeScript TreeGrid, including single/multiple selection, selection modes, toggle selection, and touch interactions.
 platform: grid-sdk
-control: Selection 
+control: Selection
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---

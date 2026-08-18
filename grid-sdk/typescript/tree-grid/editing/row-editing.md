@@ -3,7 +3,7 @@ layout: post
 title: TypeScript TreeGrid Row Editing | Syncfusion
 description: Learn how to use row editing in TypeScript TreeGrid, including editing rows, programmatic CRUD operations, and confirmation dialogs.
 platform: grid-sdk
-control: Row editing 
+control: Row editing
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---

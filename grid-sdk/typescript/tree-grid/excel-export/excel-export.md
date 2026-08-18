@@ -3,7 +3,7 @@ layout: post
 title: TypeScript TreeGrid Excel Export | Syncfusion
 description: Learn how to export data from TypeScript TreeGrid to Excel, including export customization, selected records, and advanced export options.
 platform: grid-sdk
-control: Excel export 
+control: Excel export
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---

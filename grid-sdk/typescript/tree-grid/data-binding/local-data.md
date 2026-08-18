@@ -3,7 +3,7 @@ layout: post
 title: TypeScript TreeGrid Local Data | Syncfusion
 description: Learn to bind local data to TypeScript TreeGrid with support for hierarchical and self-referential (flat) data structures.
 platform: grid-sdk
-control: Local data 
+control: Local data
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---

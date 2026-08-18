@@ -3,7 +3,7 @@ layout: post
 title: TypeScript TreeGrid Cells | Syncfusion
 description: Learn how to customize and format cells in TypeScript TreeGrid, including tooltips, styling, clip mode, autowrap, and cell templates.
 platform: grid-sdk
-control: Cell 
+control: Cell
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---

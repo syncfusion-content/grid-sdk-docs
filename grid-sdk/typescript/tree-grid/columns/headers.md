@@ -3,7 +3,7 @@ layout: post
 title: TypeScript TreeGrid Headers | Syncfusion
 description: Learn how to configure and customize column headers in TypeScript TreeGrid, including header text and template options.
 platform: grid-sdk
-control: Headers 
+control: Headers
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---

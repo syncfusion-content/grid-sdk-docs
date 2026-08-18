@@ -3,7 +3,7 @@ layout: post
 title: TypeScript TreeGrid Detail Template | Syncfusion
 description: Learn how to use detail templates in TypeScript TreeGrid to display expandable row content, nested data, and custom detail views.
 platform: grid-sdk
-control: Detail template 
+control: Detail template
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---

@@ -3,7 +3,7 @@ layout: post
 title: TypeScript TreeGrid Wizard-Like Dialog Editing | Syncfusion
 description: Learn how to implement wizard-like dialog editing in TypeScript TreeGrid to guide users through multi-step record creation and editing processes.
 platform: grid-sdk
-control: Use wizard like dialog editing 
+control: Use wizard like dialog editing
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---

@@ -3,7 +3,7 @@ layout: post
 title: TypeScript TreeGrid Row Selection | Syncfusion
 description: Learn how to use row selection in TypeScript TreeGrid, including programmatic selection, selected records, row indexes, and persistent selection.
 platform: grid-sdk
-control: Row selection 
+control: Row selection
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---

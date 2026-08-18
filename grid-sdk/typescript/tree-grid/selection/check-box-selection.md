@@ -3,7 +3,7 @@ layout: post
 title: TypeScript TreeGrid Checkbox Selection | Syncfusion
 description: Learn how to enable and configure checkbox selection in TypeScript TreeGrid, including selection modes, persist selection, and checkbox behavior.
 platform: grid-sdk
-control: Check box selection 
+control: Check box selection
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---

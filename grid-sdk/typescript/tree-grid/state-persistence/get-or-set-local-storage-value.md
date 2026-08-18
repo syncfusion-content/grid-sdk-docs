@@ -3,7 +3,7 @@ layout: post
 title: TypeScript TreeGrid Local Storage Persistence | Syncfusion
 description: Learn how to get and set local storage values for the TypeScript TreeGrid component using enablePersistence and standard browser APIs.
 platform: grid-sdk
-control: Get or set local storage value 
+control: Get or set local storage value
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---

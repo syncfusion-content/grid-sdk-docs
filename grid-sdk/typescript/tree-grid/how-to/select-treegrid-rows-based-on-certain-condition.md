@@ -3,7 +3,7 @@ layout: post
 title: TypeScript TreeGrid Conditional Row Selection | Syncfusion
 description: Learn how to select TreeGrid rows based on specific conditions using the selectRows method in the TypeScript TreeGrid component.
 platform: grid-sdk
-control: Select treegrid rows based on certain condition 
+control: Select treegrid rows based on certain condition
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---

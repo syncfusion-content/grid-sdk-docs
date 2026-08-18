@@ -3,7 +3,7 @@ layout: post
 title: TypeScript TreeGrid Template Editing | Syncfusion
 description: Learn how to use template editing in TypeScript TreeGrid to create custom edit forms with tailored layouts and controls.
 platform: grid-sdk
-control: Template editing 
+control: Template editing
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
@@ -81,7 +81,7 @@ ${/if}
 
 ```
 
-> The dialog template syntax supports the ES6 expression string literals, and you can refer to the [`Template Engine`](../../common/template-engine/) for more template syntax.
+> The dialog template syntax supports the ES6 expression string literals, and you can refer to the [`Template Engine`](../../common/template-engine) for more template syntax.
 
 ### Render editors as components
 

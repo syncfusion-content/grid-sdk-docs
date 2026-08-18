@@ -3,7 +3,7 @@ layout: post
 title: TypeScript TreeGrid Print | Syncfusion
 description: Learn how to print TypeScript TreeGrid, including toolbar integration, page setup, column visibility settings, and print customization options.
 platform: grid-sdk
-control: Print 
+control: Print
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
@@ -45,7 +45,7 @@ Some of the print options cannot be configured through JavaScript code. So, you 
 
 * [`Chrome`](https://support.google.com/chrome/answer/1069693?hl=en&visit_id=1-636335333734668335-3165046395&rd=1)
 * [`Firefox`](https://support.mozilla.org/en-US/kb/how-print-web-pages-firefox)
-* [`Safari`](http://www.mintprintables.com/print-tips/adjust-margins-osx/)
+* [`Safari`](http://www.mintprintables.com/print-tips/adjust-margins-osx)
 * [`IE`](http://www.helpteaching.com/help/print/index.htm)
 
 ## Print using an external button

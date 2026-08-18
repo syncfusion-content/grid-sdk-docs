@@ -3,7 +3,7 @@ layout: post
 title: TypeScript TreeGrid Custom Aggregate | Syncfusion
 description: Learn about implementing custom aggregates in the TypeScript TreeGrid, including configuration and usage of custom aggregation functions.
 platform: grid-sdk
-control: Custom aggregate 
+control: Custom aggregate
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---

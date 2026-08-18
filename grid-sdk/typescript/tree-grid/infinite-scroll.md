@@ -3,7 +3,7 @@ layout: post
 title: TypeScript TreeGrid Infinite Scroll | Syncfusion
 description: Learn how to enable and configure infinite scroll in the TypeScript TreeGrid for efficient large data handling, cache management, and best practices.
 platform: grid-sdk
-control: Infinite scroll 
+control: Infinite scroll
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---

@@ -3,7 +3,7 @@ layout: post
 title: TypeScript TreeGrid Row Cell Customization | Syncfusion
 description: Learn how to customize rows and cells in the TypeScript TreeGrid using queryCellInfo and rowDataBound events.
 platform: grid-sdk
-control: Row cell customization 
+control: Row cell customization
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---

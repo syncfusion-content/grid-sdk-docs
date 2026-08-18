@@ -3,7 +3,7 @@ layout: post
 title: TypeScript TreeGrid Column Menu | Syncfusion
 description: Learn how to use the column menu in TypeScript TreeGrid for sorting, filtering, column visibility, and other column actions.
 platform: grid-sdk
-control: Column menu 
+control: Column menu
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---

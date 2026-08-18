@@ -3,7 +3,7 @@ layout: post
 title: TypeScript TreeGrid Decimal Point Restriction | Syncfusion
 description: Learn how to restrict decimal points while editing in the TypeScript TreeGrid using NumericTextBox configuration.
 platform: grid-sdk
-control: Restrict decimal points while treegrid editing 
+control: Restrict decimal points while treegrid editing
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---

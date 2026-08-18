@@ -3,20 +3,20 @@ layout: post
 title:  TypeScript TreeGrid Column Style Customization | Syncfusion
 description: Learn how to customize column styles in TypeScript TreeGrid using customAttributes, including applying custom CSS to header and content cells.
 platform: grid-sdk
-control: Customize column styles 
+control: Customize column styles
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
 # Customize Column Styles in TypeScript TreeGrid
 
-You can customise the appearance of the header and content of a particular column using the [`customAttributes`](../../api/treegrid/column#customattributes) property.
+You can customize the appearance of the header and content of a particular column using the [`customAttributes`](../../api/treegrid/column#customattributes) property.
 
 To customize the Tree Grid column, follow the given steps:
 
 **Step 1**:
 
-Create a CSS class with custom style to override the default style for rowcell and header cell.
+Create a CSS class with custom style to override the default style for row cell and header cell.
 
 ```
 .e-treegrid .e-rowcell.customcss{

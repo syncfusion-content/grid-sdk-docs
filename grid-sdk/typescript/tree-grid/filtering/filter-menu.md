@@ -3,7 +3,7 @@ layout: post
 title: TypeScript TreeGrid Filter Menu | Syncfusion
 description: Learn how to use the filter menu in TypeScript TreeGrid, including column filtering, filter operators, and custom filter options.
 platform: grid-sdk
-control: Filter menu 
+control: Filter menu
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---

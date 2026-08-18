@@ -3,7 +3,7 @@ layout: post
 title: TypeScript TreeGrid Show Spinner While Exporting | Syncfusion
 description: Learn how to display a loading spinner during export operations in TypeScript TreeGrid to provide visual feedback and improve user experience.
 platform: grid-sdk
-control: Show spinner while exporting 
+control: Show spinner while exporting
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---

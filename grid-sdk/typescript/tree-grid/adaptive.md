@@ -3,7 +3,7 @@ layout: post
 title:  TypeScript TreeGrid Adaptive UI | Syncfusion
 description: Learn how to enable adaptive UI in TypeScript TreeGrid for optimized mobile, tablet, and small-screen user experiences.
 platform: grid-sdk
-control: Adaptive 
+control: Adaptive
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---

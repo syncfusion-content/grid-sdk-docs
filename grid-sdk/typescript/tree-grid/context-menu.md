@@ -3,7 +3,7 @@ layout: post
 title: TypeScript TreeGrid Context Menu | Syncfusion
 description: Learn how to customize the context menu in TypeScript TreeGrid, including custom items, dynamic enable/disable options, and API integration.
 platform: grid-sdk
-control: Context menu 
+control: Context menu
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
@@ -67,7 +67,7 @@ Items| Description
 ## Custom context menu items
 
 The custom context menu items can be added by defining the [`contextMenuItems`](../api/treegrid#contextmenuitems) as a collection of
-[`contextMenuItemModel`](../api/grid/contextMenuItemModel/).
+[`contextMenuItemModel`](../api/grid/contextMenuItemModel).
 Actions for this customized items can be defined in the [`contextMenuClick`](../api/treegrid#contextmenuclick) event.
 
 In the below sample, we have shown context menu item for parent rows to expand or collapse child rows.

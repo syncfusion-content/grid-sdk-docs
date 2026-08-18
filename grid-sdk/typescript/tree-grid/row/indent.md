@@ -3,7 +3,7 @@ layout: post
 title: TypeScript TreeGrid Indent and Outdent | Syncfusion
 description: Learn how to indent and outdent rows in TypeScript TreeGrid to modify hierarchical relationships and manage parent-child records.
 platform: grid-sdk
-control: Indent 
+control: Indent
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---

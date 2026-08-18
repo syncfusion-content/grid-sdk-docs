@@ -3,7 +3,7 @@ layout: post
 title: TypeScript TreeGrid Tabs in Dialog Editing | Syncfusion
 description: Learn how to use tabs within dialog editing in TypeScript TreeGrid to organize form fields and create a streamlined editing experience.
 platform: grid-sdk
-control: Using tab inside the dialog editing 
+control: Using tab inside the dialog editing
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---

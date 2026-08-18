@@ -3,7 +3,7 @@ layout: post
 title: TypeScript TreeGrid Validation | Syncfusion
 description: Learn how to configure validation in TypeScript TreeGrid, including required fields, custom rules, and error handling during editing.
 platform: grid-sdk
-control: Validation 
+control: Validation
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---

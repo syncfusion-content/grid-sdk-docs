@@ -3,7 +3,7 @@ layout: post
 title: TypeScript TreeGrid Immutable Mode | Syncfusion
 description: Learn how to use immutable mode in TypeScript TreeGrid to optimize rendering performance and efficiently update data changes.
 platform: grid-sdk
-control: Immutable mode 
+control: Immutable mode
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---

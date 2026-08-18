@@ -3,7 +3,7 @@ layout: post
 title: TypeScript TreeGrid Remote Data | Syncfusion
 description: Learn how to bind remote data in the TypeScript TreeGrid, including load on demand, paging, virtualization, adaptors, and error handling.
 platform: grid-sdk
-control: Remote data 
+control: Remote data
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---

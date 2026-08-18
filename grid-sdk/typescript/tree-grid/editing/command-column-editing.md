@@ -3,7 +3,7 @@ layout: post
 title: TypeScript TreeGrid Command Column Editing | Syncfusion
 description: Learn how to use command column editing in the TypeScript TreeGrid to add CRUD and custom action buttons for row-level operations.
 platform: grid-sdk
-control: Command column editing 
+control: Command column editing
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---

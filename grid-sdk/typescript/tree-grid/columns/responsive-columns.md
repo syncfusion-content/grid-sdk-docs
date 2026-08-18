@@ -3,7 +3,7 @@ layout: post
 title: TypeScript TreeGrid Responsive Columns | Syncfusion
 description: Learn how to create responsive columns in TypeScript TreeGrid using media queries to control column visibility and optimize layouts across devices.
 platform: grid-sdk
-control: Responsive columns 
+control: Responsive columns
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---

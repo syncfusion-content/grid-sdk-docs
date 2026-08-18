@@ -3,7 +3,7 @@ layout: post
 title: TypeScript TreeGrid Auto Fit Columns | Syncfusion
 description: Learn how to automatically adjust column widths in TypeScript TreeGrid to fit content and improve data presentation.
 platform: grid-sdk
-control: Auto fit columns 
+control: Auto fit columns
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---

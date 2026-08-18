@@ -3,7 +3,7 @@ layout: post
 title: TypeScript TreeGrid Searching | Syncfusion
 description: Learn how to enable and customize searching in TypeScript TreeGrid, including search settings, operators, column-specific search, and advanced options.
 platform: grid-sdk
-control: Searching 
+control: Searching
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---

@@ -3,7 +3,7 @@ layout: post
 title: TypeScript TreeGrid Toolbar Items | Syncfusion
 description: Learn about configuring built-in and custom toolbar items in the TypeScript TreeGrid, including actions, alignment, and best practices.
 platform: grid-sdk
-control: Tool bar items 
+control: Tool bar items
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---

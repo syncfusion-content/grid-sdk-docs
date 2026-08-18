@@ -3,7 +3,7 @@ layout: post
 title: TypeScript TreeGrid Data Binding | Syncfusion
 description: Learn about data binding in the TypeScript TreeGrid, covering local and remote data integration, expand state mapping, and best practices.
 platform: grid-sdk
-control: Data binding 
+control: Data binding
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---

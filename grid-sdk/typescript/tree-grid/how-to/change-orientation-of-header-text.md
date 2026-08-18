@@ -3,7 +3,7 @@ layout: post
 title: TypeScript TreeGrid Change Header Text Orientation | Syncfusion
 description: Learn how to change header text orientation in TypeScript TreeGrid to optimize column header display and improve readability.
 platform: grid-sdk
-control: Change orientation of header text 
+control: Change orientation of header text
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---

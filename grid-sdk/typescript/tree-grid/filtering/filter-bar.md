@@ -3,7 +3,7 @@ layout: post
 title: TypeScript TreeGrid Filter Bar | Syncfusion
 description: Learn how to use the filter bar in TypeScript TreeGrid, including column filtering, filter operators, and custom filter behavior.
 platform: grid-sdk
-control: Filter bar 
+control: Filter bar
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---

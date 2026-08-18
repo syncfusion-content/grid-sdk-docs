@@ -3,7 +3,7 @@ layout: post
 title: TypeScript TreeGrid Excel Cell Style Customization | Syncfusion
 description:  Learn how to customize Excel cell styles in the TypeScript TreeGrid of Essential JS 2, including conditional formatting and theming options.
 platform: grid-sdk
-control: Excel cell style customization 
+control: Excel cell style customization
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---

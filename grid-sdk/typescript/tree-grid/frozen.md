@@ -3,7 +3,7 @@ layout: post
 title: TypeScript TreeGrid Frozen Columns | Syncfusion
 description: Learn how to pin or freeze columns in TypeScript TreeGrid to keep important columns visible while scrolling horizontally.
 platform: grid-sdk
-control: Frozen 
+control: Frozen
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---

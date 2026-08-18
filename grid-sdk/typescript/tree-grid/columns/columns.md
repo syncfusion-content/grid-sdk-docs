@@ -3,7 +3,7 @@ layout: post
 title: TypeScript TreeGrid Columns | Syncfusion
 description: Learn how to configure and customize columns in TypeScript TreeGrid, including column types, visibility, templates, and formatting options.
 platform: grid-sdk
-control: Columns 
+control: Columns
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
@@ -21,7 +21,7 @@ is necessary to map the data source values in TreeGrid columns.
 
 ## Format
 
-To format cell values based on specific culture, use the [`columns.format`](../../api/treegrid/column#format) property. The TreeGrid uses [Internalization](../../common/internationalization/) library to format [`number`](../../common/internationalization#number-formatting) and [`date`](../../common/internationalization#manipulating-datetime)
+To format cell values based on specific culture, use the [`columns.format`](../../api/treegrid/column#format) property. The TreeGrid uses [Internalization](../../common/internationalization) library to format [`number`](../../common/internationalization#number-formatting) and [`date`](../../common/internationalization#manipulating-datetime)
 values.
 
 {% if page.publishingplatform == "typescript" %}

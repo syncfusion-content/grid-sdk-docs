@@ -3,7 +3,7 @@ layout: post
 title: TypeScript TreeGrid Dialog Editing | Syncfusion
 description: Learn how to use dialog editing in TypeScript TreeGrid to edit records through customizable forms and perform CRUD operations.
 platform: grid-sdk
-control: Dialog editing 
+control: Dialog editing
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---

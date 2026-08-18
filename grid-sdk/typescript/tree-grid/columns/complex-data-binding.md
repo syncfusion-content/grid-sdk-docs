@@ -3,7 +3,7 @@ layout: post
 title: TypeScript TreeGrid Complex Data Binding | Syncfusion
 description: Learn how to use complex data binding in TypeScript TreeGrid with nested field mapping, dot notation, and hierarchical data display.
 platform: grid-sdk
-control: Complex data binding 
+control: Complex data binding
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---

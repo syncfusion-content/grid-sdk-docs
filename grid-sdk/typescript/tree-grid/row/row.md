@@ -3,7 +3,7 @@ layout: post
 title: TypeScript TreeGrid Rows | Syncfusion
 description: Learn how to work with rows in TypeScript TreeGrid, including row customization, selection, styling, rendering, and row-level operations.
 platform: grid-sdk
-control: Row 
+control: Row
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---

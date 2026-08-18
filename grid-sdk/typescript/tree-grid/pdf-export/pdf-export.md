@@ -3,7 +3,7 @@ layout: post
 title: TypeScript TreeGrid PDF Export | Syncfusion
 description: Learn how to enable and use PDF export in the TypeScript TreeGrid, including showing a spinner and providing a custom data source.
 platform: grid-sdk
-control: Pdf export 
+control: Pdf export
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---

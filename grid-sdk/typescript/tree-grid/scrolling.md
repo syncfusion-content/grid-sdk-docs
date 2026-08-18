@@ -3,7 +3,7 @@ layout: post
 title: TypeScript TreeGrid Scrolling | Syncfusion
 description: Learn how to configure scrolling in TypeScript TreeGrid, including responsive sizing, sticky headers, scroll-to-row, and scrollbar options.
 platform: grid-sdk
-control: Scrolling 
+control: Scrolling
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---

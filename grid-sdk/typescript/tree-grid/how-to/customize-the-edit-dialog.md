@@ -3,7 +3,7 @@ layout: post
 title: TypeScript TreeGrid Customize Edit Dialog | Syncfusion
 description: Learn how to customize the edit dialog in TypeScript TreeGrid to tailor editing interfaces and enhance user interaction.
 platform: grid-sdk
-control: Customize the edit dialog 
+control: Customize the edit dialog
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
