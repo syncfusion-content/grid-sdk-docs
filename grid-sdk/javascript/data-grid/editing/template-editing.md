@@ -3,8 +3,7 @@ layout: post
 title: Template editing in JavaScript Grid control | Syncfusion
 description: Learn here all about Template editing in Syncfusion JavaScript Grid control of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
-control: Template editing 
-publishingplatform: grid-sdk
+control: Template editing
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
@@ -13,7 +12,7 @@ domainurl: https://help.syncfusion.com/grid-sdk
 
 ## Inline or dialog template editing
 
-The dialog/inline template editing provides an option to customize the default behavior of dialog editing. Using the dialog template, you can render your own editors by defining the [editSettings.mode](../../api/grid/editSettings/#mode) as `Dialog/Inline` and [editSetting.template](../../api/grid/editSettings/#template) as SCRIPT element ID or HTML string which holds the template.
+The dialog/inline template editing provides an option to customize the default behavior of dialog editing. Using the dialog template, you can render your own editors by defining the [editSettings.mode](../../api/grid/editSettings#mode) as `Dialog/Inline` and [editSetting.template](../../api/grid/editSettings#template) as SCRIPT element ID or HTML string which holds the template.
 
 In some cases, you need to add the new field editors in the dialog which are not present in the column model. In that situation, the dialog template will help you to customize the default edit dialog.
 
@@ -84,7 +83,7 @@ ${/if}
 
 ## Render editors as controls
 
-You can convert the form editors to EJ2 controls in the [actionComplete](../../api/grid/#actioncomplete) event based on the `requestType` as `beginEdit` or `add`.
+You can convert the form editors to EJ2 controls in the [actionComplete](../../api/grid#actioncomplete) event based on the `requestType` as `beginEdit` or `add`.
 
 The following code example illustrates rendering the drop-down list control in the `actionComplete` event.
 
@@ -122,7 +121,7 @@ The following code example illustrates rendering the drop-down list control in t
 
 ## Get value from editor
 
-You can read, format, and update the current editor value in the [actionBegin](../../api/grid/#actionbegin) event at the time of setting `requestType` to `save`.
+You can read, format, and update the current editor value in the [actionBegin](../../api/grid#actionbegin) event at the time of setting `requestType` to `save`.
 
 In the following code example, the `freight` value has been formatted and updated.
 
@@ -154,7 +153,7 @@ In the following code example, the `freight` value has been formatted and update
 
 ## Set focus to editor
 
-By default, the first input element in the dialog will be focused while opening the dialog. If the first input element is in disabled or hidden state, focus the valid input element in the [actionComplete](../../api/grid/#actioncomplete) event based on **requestType** as **beginEdit**.
+By default, the first input element in the dialog will be focused while opening the dialog. If the first input element is in disabled or hidden state, focus the valid input element in the [actionComplete](../../api/grid#actioncomplete) event based on **requestType** as **beginEdit**.
 
 {% if page.publishingplatform == "typescript" %}
  
@@ -186,7 +185,7 @@ By default, the first input element in the dialog will be focused while opening 
 
 ## Disable form validation
 
-If you need to disable the default validation rules in  the [actionComplete](../../api/grid/#actioncomplete) event.
+If you need to disable the default validation rules in  the [actionComplete](../../api/grid#actioncomplete) event.
 
 {% if page.publishingplatform == "typescript" %}
  
@@ -218,7 +217,7 @@ If you need to disable the default validation rules in  the [actionComplete](../
 
 ## Adding validation rules for custom editors
 
-If you have interested to use our default form validation, the validation rules for the fields which are not present in the column model need to be add in  the [actionComplete](../../api/grid/#actioncomplete) event.
+If you have interested to use our default form validation, the validation rules for the fields which are not present in the column model need to be add in  the [actionComplete](../../api/grid#actioncomplete) event.
 
 {% if page.publishingplatform == "typescript" %}
  
@@ -250,11 +249,11 @@ If you have interested to use our default form validation, the validation rules 
 
 ## Render tab control inside the dialog template
 
-You can use [Tab](../../tab/index.html) control inside dialog edit UI using dialog template feature. The dialog template feature can be enabled by defining  [editSettings.mode](../../api/grid/editSettings/#mode) as `Dialog` and [editSettingsTemplate](../../api/grid/editSettings/#template) as template variable to define the editors.
+You can use [Tab](../../tab/index.html) control inside dialog edit UI using dialog template feature. The dialog template feature can be enabled by defining  [editSettings.mode](../../api/grid/editSettings#mode) as `Dialog` and [editSettingsTemplate](../../api/grid/editSettings#template) as template variable to define the editors.
 
 To include tab controls in the Dialog, please ensure the following steps:
 
-**Step 1**: To render the Tab control, use the [editSettingsTemplate](../../api/grid/editSettings/#template) of the Grid. Inside the content template of the tab items define the input elements.
+**Step 1**: To render the Tab control, use the [editSettingsTemplate](../../api/grid/editSettings#template) of the Grid. Inside the content template of the tab items define the input elements.
 
 ```
         <div>
@@ -300,7 +299,7 @@ To include tab controls in the Dialog, please ensure the following steps:
 
 **Step 2**:
 
-To render the tab control, use the [actionComplete](../../api/grid/#actionComplete) event of the grid.
+To render the tab control, use the [actionComplete](../../api/grid#actionComplete) event of the grid.
 
 {% if page.publishingplatform == "typescript" %}
  

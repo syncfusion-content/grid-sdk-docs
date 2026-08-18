@@ -3,8 +3,7 @@ layout: post
 title: Data binding in JavaScript Grid control | Syncfusion
 description: Learn here all about Data binding in Syncfusion JavaScript Grid control of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
-control: Data binding 
-publishingplatform: grid-sdk
+control: Data binding
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---

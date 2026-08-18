@@ -3,8 +3,7 @@ layout: post
 title: Remote data in JavaScript Grid control | Syncfusion
 description: Learn here all about Remote data in Syncfusion JavaScript Grid control of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
-control: Remote data 
-publishingplatform: grid-sdk
+control: Remote data
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---

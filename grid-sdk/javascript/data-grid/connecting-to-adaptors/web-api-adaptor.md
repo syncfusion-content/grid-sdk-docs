@@ -4,8 +4,7 @@ title: Bind data & perform CRUD with WebApiAdaptor in Syncfusion Grid
 description: Learn here all about how to bind data and perform CRUD action using WebApiAdaptor in Syncfusion JavaScript Grid control.
 platform: grid-sdk
 control: grid
-keywords: Adaptors, WebApiAdaptor, web api adaptor, remotedata 
-publishingplatform: grid-sdk
+keywords: Adaptors, WebApiAdaptor, web api adaptor, remotedata
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---

@@ -4,8 +4,7 @@ title: Bind data & perform CRUD with RemoteSaveAdaptor in Syncfusion Grid
 description: Learn here all about how to bind data and perform CRUD action using RemoteSaveAdaptor in Syncfusion JavaScript Grid control.
 platform: grid-sdk
 control: grid
-keywords: Adaptors, RemoteSaveAdaptor, remotesave adaptor, remotedata 
-publishingplatform: grid-sdk
+keywords: Adaptors, RemoteSaveAdaptor, remotesave adaptor, remotedata
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---

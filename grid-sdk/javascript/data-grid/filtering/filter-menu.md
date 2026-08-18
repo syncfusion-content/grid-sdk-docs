@@ -3,8 +3,7 @@ layout: post
 title: Filter menu in JavaScript Grid control | Syncfusion
 description: Learn here all about Filter menu in Syncfusion JavaScript Grid control of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
-control: Filter menu 
-publishingplatform: grid-sdk
+control: Filter menu
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
@@ -44,14 +43,14 @@ Here is an example that demonstrates the usage of the filter menu in the JavaScr
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grid-cs65" %}
 {% endif %}
 
-> * [allowFiltering](../../api/grid/#allowfiltering) must be set as true to enable filter menu.
-> * By setting [columns->allowFiltering](../../api/grid/column/#allowfiltering) as false will prevent filter menu rendering for a particular column.
+> * [allowFiltering](../../api/grid#allowfiltering) must be set as true to enable filter menu.
+> * By setting [columns->allowFiltering](../../api/grid/column#allowfiltering) as false will prevent filter menu rendering for a particular column.
 
 ## Custom control in filter menu
 
 You can enhance the filtering experience in the JavaScript Grid control by customizing the filter menu with custom controls. This allows you to replace the default search box with custom controls like dropdowns or textboxes. By default, the filter menu provides an autocomplete control for string type columns, a numeric textbox for number type columns, and a dropdown control for boolean type columns, making it easy to search for values.
 
-To customize the filter menu, you can make use of the [column.filter.ui](../../api/grid/column/#filter) property. This property allows you to integrate your desired custom filter control into a specific column of the Grid. To implement a custom filter UI, you need to define the following functions:
+To customize the filter menu, you can make use of the [column.filter.ui](../../api/grid/column#filter) property. This property allows you to integrate your desired custom filter control into a specific column of the Grid. To implement a custom filter UI, you need to define the following functions:
 
 * **create**: This function is responsible for creating the custom control for the filter.
 * **write**: The write function is used to wire events for the custom control. This allows you to handle changes in the custom filter UI.
@@ -95,7 +94,7 @@ Here is a sample code demonstrating how to render a dropdownlist control for the
 
 ## Show 24 hours time format in filter dialog
 
-The JavaScript Grid provides a feature to display the time in a 24-hour format in the date or datetime column filter dialog. By default, the filter dialog displays the time in a 12-hour format (AM/PM) for the date or datetime column. However, you can customize the default format by setting the type as **dateTime** and the format as **M/d/y HH:mm**. To enable the 24-hour time format in the filter dialog, you need to handle the [actionComplete](../../api/grid/#actioncomplete) event with [requestType](../../api/grid/filterEventArgs/#requesttype) as [filterAfterOpen](../../api/grid/action/) and set the `timeFormat` of the `DateTimepicker` to **HH:mm**.
+The JavaScript Grid provides a feature to display the time in a 24-hour format in the date or datetime column filter dialog. By default, the filter dialog displays the time in a 12-hour format (AM/PM) for the date or datetime column. However, you can customize the default format by setting the type as **dateTime** and the format as **M/d/y HH:mm**. To enable the 24-hour time format in the filter dialog, you need to handle the [actionComplete](../../api/grid#actioncomplete) event with [requestType](../../api/grid/filterEventArgs#requesttype) as [filterAfterOpen](../../api/grid/action/) and set the `timeFormat` of the `DateTimepicker` to **HH:mm**.
 
 Here is an example that demonstrates how to show 24 hours time format in filter dialog:
 
@@ -128,7 +127,7 @@ Here is an example that demonstrates how to show 24 hours time format in filter 
 
 ## Customizing filter menu operators list
 
-The JavaScript Grid enables you to customize the default filter operator list by utilizing the [filterSettings->operators](../../api/grid/filterSettings/#operators) property. This feature allows you to define your own set of operators that will be available in the filter menu. You can customize operators for string, number, date, and boolean data types.
+The JavaScript Grid enables you to customize the default filter operator list by utilizing the [filterSettings->operators](../../api/grid/filterSettings#operators) property. This feature allows you to define your own set of operators that will be available in the filter menu. You can customize operators for string, number, date, and boolean data types.
 
 The available options for customization are:
 
@@ -168,7 +167,7 @@ Here is an example of how to customize the filter operators list in JavaScript G
 
 ## Filter by multiple keywords using filter menu
 
-The JavaScript Grid allows you to perform filtering actions based on multiple keywords, rather than a single keyword, using the filter menu dialog. To enable this feature, you can set [filterSettings->type](../../api/grid/filterSettings/#type) as **Menu** and render the `MultiSelect` control as a custom control in the filter menu dialog.
+The JavaScript Grid allows you to perform filtering actions based on multiple keywords, rather than a single keyword, using the filter menu dialog. To enable this feature, you can set [filterSettings->type](../../api/grid/filterSettings#type) as **Menu** and render the `MultiSelect` control as a custom control in the filter menu dialog.
 
 Here is an example that demonstrates how to perform filtering by multiple keywords using the filter menu in the JavaScript Grid:
 
@@ -201,7 +200,7 @@ Here is an example that demonstrates how to perform filtering by multiple keywor
 
 ## Customize the default input control of filter menu dialog
 
-You have the flexibility to customize the default settings of input controls within the menu filter by utilizing the `params` property within the column definition of [filter](../../api/grid/column/#filter). This allows you to modify the behavior of specific filter controls to better suit your needs.
+You have the flexibility to customize the default settings of input controls within the menu filter by utilizing the `params` property within the column definition of [filter](../../api/grid/column#filter). This allows you to modify the behavior of specific filter controls to better suit your needs.
 
 {% if page.publishingplatform == "typescript" %}
  
@@ -270,7 +269,7 @@ By default, the [AutoComplete](../../auto-complete/es5-getting-started) control 
 
 {% endif %}
 
-You can prevent autofill feature by setting the [autofill](../../api/auto-complete#autofill) parameter to **false** using the `params` property within the column definition of the [filter](../../api/grid/column/#filter). 
+You can prevent autofill feature by setting the [autofill](../../api/auto-complete#autofill) parameter to **false** using the `params` property within the column definition of the [filter](../../api/grid/column#filter). 
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -419,4 +418,4 @@ grid.appendTo('#Grid');
 
 ## See also
 
-* [How to perform filter by using Wildcard and LIKE operator filter](./filtering/#wildcard-and-like-operator-filter)
+* [How to perform filter by using Wildcard and LIKE operator filter](./filtering#wildcard-and-like-operator-filter)

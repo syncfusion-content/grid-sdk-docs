@@ -3,8 +3,7 @@ layout: post
 title: Column pinning (Frozen) in JavaScript Grid control | Syncfusion
 description: Learn here all about Column pinning (Frozen) in Syncfusion JavaScript Grid control of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
-control: Column pinning (Frozen) 
-publishingplatform: grid-sdk
+control: Column pinning (Frozen)
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---

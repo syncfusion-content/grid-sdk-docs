@@ -3,8 +3,7 @@ layout: post
 title: Foreign key column in JavaScript Grid control | Syncfusion
 description: Learn here all about Foreign key column in Syncfusion JavaScript Grid control of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
-control: Foreign key column 
-publishingplatform: grid-sdk
+control: Foreign key column
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---

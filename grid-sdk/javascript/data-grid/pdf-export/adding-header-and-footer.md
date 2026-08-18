@@ -3,8 +3,7 @@ layout: post
 title: Adding header and footer in JavaScript Grid control | Syncfusion
 description: Learn here all about Adding header and footer in Syncfusion JavaScript Grid control of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
-control: Adding header and footer 
-publishingplatform: grid-sdk
+control: Adding header and footer
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
@@ -24,7 +23,7 @@ The footer section, on the other hand, is usually positioned at the bottom of ea
 To add text in the header or footer of the exported PDF document, follow these steps:
 
 1. Access the [pdfExportProperties](../../api/grid/pdfExportProperties) of the Grid control.
-2. Set the [header](../../api/grid/pdfExportProperties/#header) or [footer](../../api/grid/pdfExportProperties/#footer) property to a string value representing the desired text.
+2. Set the [header](../../api/grid/pdfExportProperties#header) or [footer](../../api/grid/pdfExportProperties#footer) property to a string value representing the desired text.
 3. Trigger the PDF export operation.
 
 The following code example demostrates how to add the header in the exported PDF document. 
@@ -84,7 +83,7 @@ This can be achieved using the [pdfExportProperties](../../api/grid/pdfExportPro
 * DashDotDot
 * Solid
 
-To add a line in the header or footer of the exported PDF document, you can access the `header.contents` or `footer.contents` property of the [header](../../api/grid/pdfExportProperties/#header) or [footer](../../api/grid/pdfExportProperties/#footer) in the `pdfExportProperties` property of the grid. 
+To add a line in the header or footer of the exported PDF document, you can access the `header.contents` or `footer.contents` property of the [header](../../api/grid/pdfExportProperties#header) or [footer](../../api/grid/pdfExportProperties#footer) in the `pdfExportProperties` property of the grid. 
 
 The following code example demostrates how to draw a line in the header of the exported PDF document. 
 
@@ -165,7 +164,7 @@ This can be achieved using the [pdfExportProperties](../../api/grid/pdfExportPro
 * Number - 1,2,3,
 * Arabic - 1,2,3.
 
-To add a page number in the header or footer of the exported PDF document, you can access the `header.contents` or `footer.contents` property of the [header](../../api/grid/pdfExportProperties/#header) or [footer](../../api/grid/pdfExportProperties/#footer) in the `pdfExportProperties` property of the grid. 
+To add a page number in the header or footer of the exported PDF document, you can access the `header.contents` or `footer.contents` property of the [header](../../api/grid/pdfExportProperties#header) or [footer](../../api/grid/pdfExportProperties#footer) in the `pdfExportProperties` property of the grid. 
 
 The following code example demostrates how to add a page number in the footer of the exported PDF document.
 
@@ -306,7 +305,7 @@ The following example demonstrates how to add a header and footer to the exporte
 
 When exporting data from the JavaScript Grid to a PDF document, you have an option to repeat the column header on every page. This feature ensures that the column header remains visible and easily identifiable, even when the data spans multiple pages in the exported PDF document.
 
-By default, the column header is occurs only on the first page of the PDF document. However, you can enable the `repeatHeader` property of the **pdfGrid** object to **true** which display the column header on every page. This can be achieved using the [pdfHeaderQueryCellInfo](../../api/grid/#pdfheaderquerycellinfo) event of the Grid.
+By default, the column header is occurs only on the first page of the PDF document. However, you can enable the `repeatHeader` property of the **pdfGrid** object to **true** which display the column header on every page. This can be achieved using the [pdfHeaderQueryCellInfo](../../api/grid#pdfheaderquerycellinfo) event of the Grid.
 
 The following example demonstrates how to repeat the column header on every page of the exported PDF document using the `pdfHeaderQueryCellInfo` event.
 

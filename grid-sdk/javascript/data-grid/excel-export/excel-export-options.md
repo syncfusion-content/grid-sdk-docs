@@ -3,8 +3,7 @@ layout: post
 title: Excel export options in JavaScript Grid control | Syncfusion
 description: Learn here all about Excel export options in Syncfusion JavaScript Grid control of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
-control: Excel export options 
-publishingplatform: grid-sdk
+control: Excel export options
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---

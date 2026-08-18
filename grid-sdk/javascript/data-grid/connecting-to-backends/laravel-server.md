@@ -5,7 +5,6 @@ description: Connect Laravel with PHP Syncfusion Grid for CRUD, filtering, sorti
 platform: grid-sdk
 control: grid
 keywords: adaptors, urladaptor, laravel, php, remotedata, restful-api
-publishingplatform: grid-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---

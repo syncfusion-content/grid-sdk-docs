@@ -3,8 +3,7 @@ layout: post
 title: Resize grid in various dimension in JavaScript Grid control | Syncfusion
 description: Learn here all about Resize grid in various dimension in Syncfusion JavaScript Grid control of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
-control: Resize grid in various dimension 
-publishingplatform: grid-sdk
+control: Resize grid in various dimension
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
