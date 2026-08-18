@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Vue Grid Lazy Load Grouping | Syncfusion
-description: Learn how to use Lazy Load Grouping in Vue Data Grid to load grouped records on demand, improve performance, and efficiently handle large datasets.
+title: Vue Grid - Lazy Load Grouping | Syncfusion
+description: Vue Grid lazy load grouping optimizes large datasets by loading grouped records on demand, improving performance with infinite or virtual scrolling.
 control: Lazy load grouping 
 platform: grid-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Lazy Load Grouping in Vue Data Grid
+# Lazy load grouping in Vue Grid component
 
 Lazy loading in Vue refers to dynamically loading data as needed, rather than all at once, to enhance application performance by minimizing initial load time.
 
@@ -122,7 +122,7 @@ The following example demonstrates configuring lazy load grouping with infinite 
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/grid/group/lazy-load-group-cs2" %}
 
-> * The [enableInfiniteScrolling](https://ej2.syncfusion.com/vue/documentation/api/grid/#enableinfinitescrolling) property is optional and can be set to `true` or `false` based on the requirement.
+> * The [enableInfiniteScrolling](https://ej2.syncfusion.com/vue/documentation/api/grid#enableinfinitescrolling) property is optional and can be set to `true` or `false` based on the requirement.
 > * When enabling the `enableInfiniteScrolling` feature, it is necessary to define the [height](https://ej2.syncfusion.com/vue/documentation/api/grid#height) property.
 
 ## Lazy load grouping with virtual scrolling

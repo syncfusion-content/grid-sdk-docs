@@ -1,14 +1,14 @@
 ---
 layout: post
-title: ASP.NET MVC Grid Server-Side Excel Export | Syncfusion
-description: Learn how to export ASP.NET MVC Data Grid data on the server, generate Excel workbooks in the backend, and handle large-scale exports efficiently.
+title: Exporting Grid in Server in Syncfusion ASP.NET MVC Grid Component
+description: Learn here all about Exporting Grid in Server in Syncfusion ASP.NET MVC Grid component of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Exporting Grid in Server
 publishingplatform: grid-sdk
 documentation: ug
 ---
 
-# Server-Side Excel Export in ASP.NET MVC Data Grid
+# Exporting grid in server in ASP.NET MVC Grid component
 
 The Syncfusion Grid component in ASP.NET MVC provides a powerful option to export data to Excel on the server side using the Grid server export library. This allows you to perform Excel export operations on the server, providing additional security and flexibility. To enable server-side Excel exporting, you need to configure the server dependencies and implement the necessary server configuration.
 

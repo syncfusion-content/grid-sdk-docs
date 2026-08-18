@@ -5,10 +5,10 @@ description: Learn how to use summaries in Syncfusion® .NET MAUI Data Grid to c
 platform: grid-sdk
 control: SfDataGrid
 documentation: UG
-keywords : maui data grid, maui datagrid, maui grid, grid maui, maui gridview, grid in maui, .net maui datagrid, .net maui grid, .net grid maui, .net maui summaries, maui summaries
+keywords : maui datagrid, maui grid, grid maui, maui gridview, grid in maui, .net maui datagrid, .net maui grid, .net grid maui, .net maui summaries, maui summaries
 ---
 
-# Summaries in .NET MAUI Data Grid
+# Summaries in MAUI DataGrid (SfDataGrid)
 
 The data grid supports to display the concise information about the bound data objects using summaries. The control provides the following summary types:
 

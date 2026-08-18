@@ -1,20 +1,20 @@
 ---
 layout: post
-title: React TreeGrid Virtual Scrolling | Syncfusion
-description: Learn how to use virtual scrolling in React TreeGrid for large datasets, including row and column virtualization and performance optimization.
+title: Virtual scroll in React TreeGrid | Syncfusion
+description: Learn here all about Virtual scroll in Syncfusion React TreeGrid component of Syncfusion Essential JS 2 and more.
 control: Virtual scroll
 platform: grid-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Virtual Scrolling in React TreeGrid
+# Virtual scroll in React TreeGrid
 
 TreeGrid loads large data sets without performance degradation. To enable virtualization, inject `VirtualScrollService` in the TreeGrid.
 
 ## Row virtualization
 
-Row virtualization loads and renders only the rows within the content viewport. It serves as an alternative to paging; rows are appended during vertical scrolling. To set up row virtualization, set [enableVirtualization](https://ej2.syncfusion.com/react/documentation/api/treegrid/#enablevirtualization) to true and define the content height using the [height](https://ej2.syncfusion.com/react/documentation/api/treegrid/#height) property.  
+Row virtualization loads and renders only the rows within the content viewport. It serves as an alternative to paging; rows are appended during vertical scrolling. To set up row virtualization, set [enableVirtualization](https://ej2.syncfusion.com/react/documentation/api/treegrid#enablevirtualization) to true and define the content height using the [height](https://ej2.syncfusion.com/react/documentation/api/treegrid#height) property.  
 
 The number of records displayed is determined by the content area height, and a buffer of records is maintained in the TreeGrid content in addition to the visible rows.  
 
@@ -57,7 +57,7 @@ Expand and collapse state of any child record is persisted.
 
 Column virtualization renders only the columns within the current viewport, and other columns are rendered on demand during horizontal scrolling.
  
-To set up column virtualization, set both [enableVirtualization](https://ej2.syncfusion.com/react/documentation/api/treegrid/#enablevirtualization) and [enableColumnVirtualization](https://ej2.syncfusion.com/react/documentation/api/treegrid/#enablecolumnvirtualization) to **true**.
+To set up column virtualization, set both [enableVirtualization](https://ej2.syncfusion.com/react/documentation/api/treegrid#enablevirtualization) and [enableColumnVirtualization](https://ej2.syncfusion.com/react/documentation/api/treegrid#enablecolumnvirtualization) to **true**.
 
 {% tabs %}
 {% highlight js tabtitle="app.jsx" %}
@@ -69,7 +69,7 @@ To set up column virtualization, set both [enableVirtualization](https://ej2.syn
 {% endtabs %}
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/treegrid/virtualscroll-cs2" %}
 
-> Column's [width](https://ej2.syncfusion.com/react/documentation/api/treegrid/column/#width) is required for column virtualization. If a column width is not defined, TreeGrid considers `200px`.
+> Column's [width](https://ej2.syncfusion.com/react/documentation/api/treegrid/column#width) is required for column virtualization. If a column width is not defined, TreeGrid considers `200px`.
 
 ### Limitations
 

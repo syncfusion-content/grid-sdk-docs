@@ -1,14 +1,14 @@
 ---
 layout: post
-title: ASP.NET Core Grid PDF Export Templates | Syncfusion
-description: Learn how to export ASP.NET Core Data Grid into PDF using templates, including column, detail, and caption templates with custom formatting, images, and links.
+title: Exporting Templates in Syncfusion ASP.NET Core Grid Component
+description: Learn here all about Exporting grids with templates in Syncfusion ASP.NET Core Grid component of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Exporting grid with templates
 publishingplatform: grid-sdk
 documentation: ug
 ---
 
-# PDF Export Templates in ASP.NET Core Data Grid
+# Exporting grid with templates in ASP.NET Core Grid control
 
 The grid offers the option to export the column, detail, and caption templates to a PDF document. The template contains images, hyperlinks, and customized text.
 

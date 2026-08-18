@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Vue Grid Column Template| Syncfusion
-description: Learn how to create custom column templates in Vue Data Grid to render rich cell content, editors, formatting, and interactive UI elements.
+title: Column template in Vue Grid component | Syncfusion
+description: Learn here all about Column template in Syncfusion Vue Grid component of Syncfusion Essential JS 2 and more.
 control: Column template 
 platform: grid-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Column Template in Vue Data Grid
+# Column template in Vue Grid component
 
 [Vue Data Grid](https://www.syncfusion.com/vue-components/vue-grid) component provides a [template](https://ej2.syncfusion.com/vue/documentation/api/grid/column#template) option that allows you to display custom elements in a column instead of the field value. This can be useful when you need to display images, buttons, or other custom content within a column.
 
@@ -49,7 +49,7 @@ The following example demonstrates, how to render hyperlink column in the Grid u
         <e-column field='FirstName' headerText='FirstName' width='120' :template="'columnTemplate'"></e-column>
       </e-columns>
       <template v-slot:columnTemplate="{ data }">
-        <a href="#" @click="onClick(data.FirstName)">{{ data.FirstName }}</a>
+        <a href="#" @click="onClick(data.FirstName)" aria-label="View FirstName">{{ data.FirstName }}</a>
       </template>
     </ejs-grid>
   </div>
@@ -90,7 +90,7 @@ const onClick = (firstName) => {
         <e-column field='FirstName' headerText='FirstName' width='120' :template="'columnTemplate'"></e-column>
       </e-columns>
       <template v-slot:columnTemplate="{data}">
-        <a href="#" @click="onClick(data.FirstName)">{{data.FirstName}}</a>
+        <a href="#" @click="onClick(data.FirstName)"  aria-label="View FirstName">{{data.FirstName}}</a>
       </template>
     </ejs-grid>
   </div>
@@ -435,7 +435,7 @@ The Vue Data Grid component allows you to dynamically add template columns at ru
 
 Dynamically adding template columns involves creating and inserting columns with custom templates after the grid has been initialized. This approach provides flexibility in presenting data in a highly customizable manner.
 
-The following example demonstrates how to add template column using external button click. In this example, the **ShipCountry** column with a [Dropdownlist](https://ej2.syncfusion.com/vue/documentation/drop-down-list/getting-started) is added in column [template](https://ej2.syncfusion.com/vue/documentation/api/grid/column#template), and an icon is displayed using the [headerTemplate](https://ej2.syncfusion.com/vue/documentation/api/grid/column#headertemplate) for the **ShipCountry** column. 
+The following example demonstrates how to add template column using external button click. In this example, the **ShipCountry** column with a [DropDownList](https://ej2.syncfusion.com/vue/documentation/drop-down-list/getting-started) is added in column [template](https://ej2.syncfusion.com/vue/documentation/api/grid/column#template), and an icon is displayed using the [headerTemplate](https://ej2.syncfusion.com/vue/documentation/api/grid/column#headertemplate) for the **ShipCountry** column. 
 
 
 {% tabs %}

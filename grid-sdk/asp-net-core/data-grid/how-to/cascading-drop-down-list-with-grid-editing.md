@@ -1,7 +1,7 @@
 ---
 layout: post
-title: ASP.NET Core Grid Cascading DropDownList Editing | Syncfusion
-description: Learn how to implement cascading DropDownList controls in ASP.NET Core Data Grid editing using cell edit templates for dependent field selection.
+title: Cascading Drop Down List With Grid Editing in ASP.NET Core Grid Component
+description: Learn here all about Cascading Drop Down List With Grid Editing in Syncfusion ASP.NET Core Grid component of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Cascading Drop Down List With Grid Editing
 publishingplatform: grid-sdk
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Cascading DropDownList with Grid Editing in ASP.NET Core Data Grid
+# Cascading DropDownList with Grid editing
 
 You can achieve the Cascading DropDownList with grid Editing by using the Cell Edit Template feature.
 

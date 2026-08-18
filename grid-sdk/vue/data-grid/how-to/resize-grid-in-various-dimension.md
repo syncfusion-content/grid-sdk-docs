@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Vue Grid Dynamic Resizing | Syncfusion
-description: Learn how to resize Vue Data Grid dynamically by adjusting parent container dimensions and managing grid width and height responsively.
+title: Resize the grid in various dimension in Vue Grid component | Syncfusion
+description: Learn here all about Resize the grid in various dimension in Syncfusion Vue Grid component of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Resize the grid in various dimension 
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Grid Resizing in Vue Data Grid
+# Resize the grid in various dimension in Vue Grid component
 
 The [Vue Data Grid](https://www.syncfusion.com/vue-components/vue-grid) component offers a friendly way to resize the grid, allowing you to adjust its width and height for improved data visualization.
 

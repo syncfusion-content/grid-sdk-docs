@@ -1,14 +1,14 @@
 ---
 layout: post
-title: ASP.NET Core Grid Selection Customization | Syncfusion
-description: Learn how to customize selection styles in ASP.NET Core Data Grid for selected rows, cells, and columns using CSS and selection templates.
+title: Selection in ASP.NET Core Grid Component
+description: Learn here all about Selection in Syncfusion ASP.NET Core Grid component of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Selection
 publishingplatform: grid-sdk
 documentation: ug
 ---
 
-# Selection Style in ASP.NET Core Data Grid
+# Selection in ASP.NET Core Grid component
 
 You can customize the appearance of the selection in the Syncfusion ASP.NET Core Grid component using CSS. Here are examples of how to customize the row selection background, cell selection background, and column selection background.
 

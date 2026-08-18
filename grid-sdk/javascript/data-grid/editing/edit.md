@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Javascript Grid Editing | Syncfusion
-description: Learn how to configure editing in Javascript Data Grid, customize edit modes, apply validation rules, use templates, and manage CRUD workflows efficiently.
+title: Edit in JavaScript Grid control | Syncfusion
+description: Learn here all about Edit in Syncfusion JavaScript Grid control of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
-control: Edit 
-publishingplatform: grid-sdk
+control: Edit
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Editing in Javascript Data Grid
+# Edit in JavaScript Grid control
 
 The Grid control provides powerful options for dynamically inserting, deleting, and updating records, enabling you to modify data directly within the grid. This feature is useful when you want to seamlessly perform CRUD (Create, Read, Update, Delete) operations.
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Typescript Grid Dynamic Resizing | Syncfusion
-description: Learn how to resize Typescript Data Grid dynamically by adjusting parent container dimensions and managing grid width and height responsively.
+title: Resize grid in various dimension in TypeScript Grid control | Syncfusion
+description: Learn here all about Resize grid in various dimension in Syncfusion TypeScript Grid control of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Resize grid in various dimension 
 publishingplatform: grid-sdk
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Grid Resizing in Typescript Data Grid
+# Resize the grid in various dimension in TypeScript Grid control
 
 The TypeScript Grid control offers a friendly way to resize the grid, allowing you to adjust its width and height for improved data visualization.
 

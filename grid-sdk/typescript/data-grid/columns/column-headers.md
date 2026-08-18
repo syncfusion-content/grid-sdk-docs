@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Typescript Grid Column Headers | Syncfusion
-description: Learn how to customize column headers in Typescript Data Grid with header text, templates, tooltips, and multi-line layouts.
+title: Headers in TypeScript Grid control | Syncfusion
+description: Learn here all about Headers in Syncfusion TypeScript Grid control of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Headers 
 publishingplatform: grid-sdk
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Column Headers in Typescript Data Grid
+# Headers in TypeScript Grid control
 
 The TypeScript Grid control provides a comprehensive set of options to customize and manage headers efficiently. Headers play a crucial role in organizing and presenting data effectively in the grid.
 

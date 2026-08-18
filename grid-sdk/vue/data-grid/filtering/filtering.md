@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Vue Grid Filtering | Syncfusion
-description: Learn how to use filtering in Vue Data Grid with filter types, server filtering, expression operators, and UI options for refined data results.
+title: Filtering in Vue Grid component | Syncfusion
+description: Learn here all about Filtering in Syncfusion Vue Grid component of Syncfusion Essential JS 2 and more.
 control: Filtering 
 platform: grid-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Filtering in Vue Data Grid
+# Filtering in Vue Grid component
 
 Filtering is a powerful feature in the [Vue Data Grid](https://www.syncfusion.com/vue-components/vue-grid)s component that enables you to selectively view data based on specific criteria. It allows you to narrow down large datasets and focus on the information you need, thereby enhancing data analysis and decision-making.
 

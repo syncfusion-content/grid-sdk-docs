@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Typescript Grid Batch Editing | Syncfusion
-description: Learn how to perform batch editing in Typescript Data Grid, update multiple records efficiently, customize edit workflows, and save changes in bulk.
+title: Batch editing in TypeScript Grid control | Syncfusion
+description: Learn here all about Batch editing in Syncfusion TypeScript Grid control of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Batch editing 
 publishingplatform: grid-sdk
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Batch Editing in Typescript Data Grid
+# Batch editing in TypeScript Grid control
 
 Batch editing is a powerful feature in the Grid control that allows you to edit multiple cells simultaneously. It provides a convenient way to make changes to multiple cells and save them in a single request to the data source. This feature is particularly useful when dealing with large datasets or when you need to update multiple cells at once.
 

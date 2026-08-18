@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Vue Grid Grouping | Syncfusion
-description:  Learn how to use grouping in Vue Data Grid with configurable settings, aggregates, drop area control, reorderable columns, and expand or collapse options.
+title: Vue Grid - Grouping | Syncfusion
+description: Vue Grid grouping enables configurable settings, initial grouping, aggregates, drop-area control, reorderable columns, and expand/collapse.
 control: Grouping 
 platform: grid-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Grouping in Vue Data Grid
+# Grouping in Vue Grid component
 
 The grouping feature in the [Vue Data Grid](https://www.syncfusion.com/vue-components/vue-grid) enables data to be organized into a hierarchical structure, allowing records to be expanded and collapsed for improved readability and analysis.
 

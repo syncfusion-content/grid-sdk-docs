@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Vue Grid Performance | Syncfusion
-description: Learn how to optimize Vue Data Grid performance with virtualization, paging, efficient data operations, and best practices for large datasets.
+title: Performance tips for Vue Grid Component | Syncfusion
+description: Checkout and learn here all about how to improve the loading performance of Vue DataGrid even binding large data set.
 control: Performance 
 platform: grid-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Performance Tips for Vue Data Grid
+# Performance tips for Vue DataGrid Component
 
 This article is a comprehensive guide on improving the loading performance of the [Vue Data Grid](https://www.syncfusion.com/vue-components/vue-grid), especially when dealing with large datasets along with large number of columns. It provides valuable insights into the steps that need to be followed to bind a large data source without experiencing any performance degradations. By offering detailed explanations and actionable tips, this resource aims to empower readers with the knowledge and best practices necessary to optimize the performance of the Vue DataGrid during data binding, ensuring a smooth and efficient user experience.
 
@@ -34,7 +34,7 @@ It is possible to enable both row and column virtualization. This feature allows
 [Documentation link](https://ej2.syncfusion.com/vue/documentation/grid/virtual-scroll#browser-height-limitation-in-virtual-scrolling-and-solution)
 
 ## How to improve loading performance by binding large data by showing custom text or element
-When integrating image or template elements into a column, it's recommended to utilize the [Column Template](https://ej2.syncfusion.com/vue/documentation/grid/columns/column-template) feature rather than customizing the data through [rowDataBound](https://ej2.syncfusion.com/vue/documentation/api/grid/#rowdatabound) or [queryCellInfo](https://ej2.syncfusion.com/vue/documentation/api/grid/#querycellinfo) events. These events are triggered for each row and cell rendering, introducing delays in the component's rendering process. Moreover, rendering custom elements using these events may result in the persistence of rendered elements, potentially causing longer rendering times over time. By opting for the column template feature, you can efficiently meet this requirement without experiencing rendering delays and ensure a more streamlined rendering process.
+When integrating image or template elements into a column, it's recommended to utilize the [Column Template](https://ej2.syncfusion.com/vue/documentation/grid/columns/column-template) feature rather than customizing the data through [rowDataBound](https://ej2.syncfusion.com/vue/documentation/api/grid#rowdatabound) or [queryCellInfo](https://ej2.syncfusion.com/vue/documentation/api/grid#querycellinfo) events. These events are triggered for each row and cell rendering, introducing delays in the component's rendering process. Moreover, rendering custom elements using these events may result in the persistence of rendered elements, potentially causing longer rendering times over time. By opting for the column template feature, you can efficiently meet this requirement without experiencing rendering delays and ensure a more streamlined rendering process.
 
 ## How to improve loading performance by referring individual script and CSS
 
@@ -46,7 +46,7 @@ So to improve the performance of grid during the initial rendering, suggested yo
 
 ## How to update cell values without frequent server calls 
 
-Efficiently update cell values without the need for frequent server calls, especially beneficial for live update scenarios. Even when the data is initially bound from the server, performing edit operations can be done without triggering a database refresh. Utilize the [setCellValue](https://ej2.syncfusion.com/vue/documentation/api/grid/#setcellvalue) method to update the DataGrid without affecting the database and only refresh the UI.
+Efficiently update cell values without the need for frequent server calls, especially beneficial for live update scenarios. Even when the data is initially bound from the server, performing edit operations can be done without triggering a database refresh. Utilize the [setCellValue](https://ej2.syncfusion.com/vue/documentation/api/grid#setcellvalue) method to update the DataGrid without affecting the database and only refresh the UI.
 
 ## How to optimize server-side data operations with adaptors
 
@@ -80,6 +80,6 @@ The Vue Grid component is client-server based. So, we send the data as JSON obje
 var serializer = new JavaScriptSerializer { MaxJsonLength = Int32.MaxValue };
 ```
 
-## Microsoft excel limitation while exporting millions of records to excel file format
+## Microsoft Excel limitation while exporting millions of records to excel file format
 
-By default, Microsoft Excel supports only 1,048,576 records in an excel sheet. Hence it is not possible to export millions of records to excel. You can refer the [documentation](https://support.microsoft.com/en-gb/office/excel-specifications-and-limits-1672b34d-7043-467e-8e27-269d656771c3) link for more details on Microsoft excel specifications and limits. So suggest to export the data in CSV (Comma-Separated Values) or other formats that can handle large datasets more efficiently than Excel.
+By default, Microsoft Excel supports only 1,048,576 records in an excel sheet. Hence it is not possible to export millions of records to excel. You can refer the [documentation](https://support.microsoft.com/en-gb/office/excel-specifications-and-limits-1672b34d-7043-467e-8e27-269d656771c3) link for more details on Microsoft Excel specifications and limits. So suggest to export the data in CSV (Comma-Separated Values) or other formats that can handle large datasets more efficiently than Excel.

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: ASP.NET MVC Grid Filter Menu | Syncfusion
-description: Learn how to use Filter Menu in ASP.NET MVC Data Grid with configurable dialogs, custom components, operator options, and multi-value filtering.
+title: Filter Menu in Syncfusion ASP.NET MVC Grid Component
+description: Learn here all about Filter Menu in Syncfusion ASP.NET MVC Grid component of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Filter Menu
 publishingplatform: grid-sdk
 documentation: ug
 ---
-# Filter Menu in ASP.NET MVC Data Grid
+# Filter menu in  ASP.NET MVC Grid component
 
 The filter menu in the  ASP.NET MVC Grid component allows you to enable filtering and provides a user-friendly interface for filtering data based on column types and operators.
 

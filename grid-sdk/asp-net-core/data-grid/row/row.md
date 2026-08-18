@@ -1,14 +1,14 @@
 ---
 layout: post
-title: ASP.NET Core Grid Row | Syncfusion
-description: Learn how to configure and customize rows in ASP.NET Core Data Grid using Syncfusion. Manage row events, selection, styling, and interaction capabilities.
+title: Row in Syncfusion ASP.NET Core Grid Control | Syncfusion
+description: Learn here all about Row in Syncfusion ASP.NET Core Grid component of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Row
 publishingplatform: grid-sdk
 documentation: ug
 ---
 
-# Row in ASP.NET Core Data Grid
+# Row in ASP.NET Core Grid control 
 
 Each row typically represents a single record or item from a data source. Rows in a grid are used to present data in a tabular format. Each row displays a set of values representing the fields of an individual data record. Rows allow users to interact with the data in the grid. Users can select rows, edit cell values, perform sorting or filtering operations, and trigger events based on actions.
 

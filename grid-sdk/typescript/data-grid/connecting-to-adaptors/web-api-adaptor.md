@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Typescript Grid Bind Data with WebApiAdaptor | Syncfusion
-description: Learn how to use WebApiAdaptor in Typescript Data Grid to connect Web APIs, bind remote data, and perform CRUD operations efficiently.
+title: Bind data & perform CRUD with WebApiAdaptor in Syncfusion Grid
+description: Learn here all about how to bind data and perform CRUD action using WebApiAdaptor in Syncfusion TypeScript Grid control.
 platform: grid-sdk
 control: grid
 keywords: Adaptors, WebApiAdaptor, web api adaptor, remotedata 
@@ -10,7 +10,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Connect Typescript Data Grid to Web API Services
+# WebApiAdaptor in Control
 
 The `WebApiAdaptor` is an extension of the `ODataAdaptor`, designed to interact with Web APIs created with OData endpoints. This adaptor ensures seamless communication between Grid and OData-endpoint based Web APIs, enabling efficient data retrieval and manipulation. For successful integration, the endpoint must be capable of understanding OData-formatted queries sent along with the request.
 

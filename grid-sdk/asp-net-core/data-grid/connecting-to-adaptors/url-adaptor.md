@@ -1,7 +1,7 @@
 ---
 layout: post
-title: ASP.NET Core Grid Bind Data with UrlAdaptor | Syncfusion
-description: Learn how to bind remote data from custom REST APIs in ASP.NET Core Data Grid and perform data operations and CRUD actions.
+title: UrlAdaptor in Syncfusion ASP.NET Core Grid.
+description: Learn here all about Bind data and perform CRUD action with UrlAdaptor in Syncfusion ASP.NET Core Grid of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Grid
 keywords: Adaptors, UrlAdaptor, url method adaptor, remotedata 
@@ -9,7 +9,7 @@ publishingplatform: grid-sdk
 documentation: ug
 ---
 
-# Custom REST API Remote Data Binding in ASP.NET Core Data Grid 
+# UrlAdaptor in Syncfusion ASP.NET Core Grid 
 
 The `UrlAdaptor` serves as the base adaptor for facilitating communication between remote data services and an UI control. It enables seamless data binding and interaction with custom API services or any remote service through URLs. The `UrlAdaptor` is particularly useful for the scenarios where a custom API service with unique logic for handling data and CRUD operations is in place. This approach allows for custom handling of data and CRUD operations, and the resultant data returned in the `result` and `count` format for display in the Syncfusion ASP.NET Core Grid.
 

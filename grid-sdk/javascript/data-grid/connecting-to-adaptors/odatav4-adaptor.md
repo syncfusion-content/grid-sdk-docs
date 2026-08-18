@@ -1,16 +1,15 @@
 ---
 layout: post
-title: Javascript Grid Bind Data with ODataV4Adaptor | Syncfusion
-description: Learn how to use ODataV4Adaptor in Javascript Data Grid to bind OData services, perform CRUD operations, and manage remote data efficiently.
+title: Bind data & perform CRUD action with ODataV4Adaptor in Syncfusion Grid
+description: Learn here all about how to bind data and perform CRUD action using ODataV4Adaptor in Syncfusion JavaScript Grid control.
 platform: grid-sdk
 control: grid
-keywords: Adaptors, ODataV4Adaptor, odatav4 adaptor, remotedata 
-publishingplatform: grid-sdk
+keywords: Adaptors, ODataV4Adaptor, odatav4 adaptor, remotedata
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Connect Javascript Data Grid to OData V4 Services
+# ODataV4Adaptor in JavaScript Grid Control
 
 The `ODataV4Adaptor` in the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid Control allows seamless integration of the Grid with OData v4 services, enabling efficient data fetching and manipulation. This guide provides detailed instructions on binding data and performing CRUD (Create, Read, Update, Delete) actions using the `ODataV4Adaptor` in your Syncfusion<sup style="font-size:70%">&reg;</sup> Grid Control.
 

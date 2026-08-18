@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Vue Grid Column Reorder | Syncfusion
-description: Learn how to reorder columns in Vue Data Grid using drag-and-drop, configure reorder restrictions, handle reorder events, and persist column order.
+title: Column reorder in Vue Grid component | Syncfusion
+description: Learn here all about Column reorder in Syncfusion Vue Grid component of Syncfusion Essential JS 2 and more.
 control: Column reorder 
 platform: grid-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 --- 
 
-# Column Reorder in Vue Data Grid
+# Column reorder in Vue Grid component
 
 The [Vue Data Grid](https://www.syncfusion.com/vue-components/vue-grid) component allows to reorder columns by drag and drop of a particular column header from one index to another index within the grid. This feature can be enabled by injecting the **Reorder** in the provider section.
 

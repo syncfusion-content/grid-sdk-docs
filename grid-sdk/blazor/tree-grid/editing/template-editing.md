@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Blazor TreeGrid Template Editing | Syncfusion
-description: Learn how to configure template editing in Blazor TreeGrid with inline and dialog modes, custom editors, form templates, and editing events.
+title: Template Editing in Blazor Tree Grid Component | Syncfusion®
+description: Checkout and learn here all about Template Editing in Blazor Tree Grid component and much more details.
 platform: grid-sdk
 control: Tree Grid
 documentation: ug
 ---
 
-# Template Editing in Blazor TreeGrid
+# Template Editing in Blazor Tree Grid Component
 
 ## Dialog template
 
