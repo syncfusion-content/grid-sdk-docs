@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Global Local in ASP.NET Core Tree Grid Component
-description: Learn here all about Global Local in Syncfusion ASP.NET Core Tree Grid component of Syncfusion Essential JS 2 and more.
+title: ASP.NET Core TreeGrid Global Localization | Syncfusion
+description: Learn how to implement global localization in ASP.NET Core TreeGrid, including internationalization, localization, and RTL language support.
 platform: grid-sdk
 control: Global Local
 publishingplatform: grid-sdk
 documentation: ug
 ---
 
-# Globalization in ASP.NET Core Tree Grid control
+# Global Localization in ASP.NET Core TreeGrid
 
 ## Localization
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with ASP.NET Core Tree Grid Control | Syncfusion
-description: Checkout and learn about getting started with ASP.NET Core Tree Grid control of Syncfusion Essential JS 2 and more details.
+title: ASP.NET Core TreeGrid Getting Started | Syncfusion
+description: Learn how to get started with ASP.NET Core TreeGrid, including installation, configuration, data binding, and basic setup.
 platform: grid-sdk
 control: Getting Started Core
 publishingplatform: grid-sdk
