@@ -3,8 +3,7 @@ layout: post
 title: JavaScript TreeGrid Empty Record Template | Syncfusion
 description: Learn how to customize the empty record template in JavaScript TreeGrid to display custom messages, images, and content when no records are available.
 platform: grid-sdk
-control: Customize the Empty Record Template 
-publishingplatform: grid-sdk
+control: Customize the Empty Record Template
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
