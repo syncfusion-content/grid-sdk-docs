@@ -1,14 +1,14 @@
 ---
 layout: post
-title: React TreeGrid Custom Column Tooltips | Syncfusion
-description: Learn how to add custom tooltips for columns in React TreeGrid using the Tooltip component and queryCellInfo event.
+title: Custom tool tip for columns in React TreeGrid | Syncfusion
+description: Learn here all about Custom tool tip for columns in Syncfusion React TreeGrid component of Syncfusion Essential JS 2 and more.
 control: Custom tool tip for columns 
 platform: grid-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Custom Tooltips for Columns in React TreeGrid
+# Custom tool tip for columns in React TreeGrid
 
 Implement a custom tooltip [EJ2 Tooltip](https://ej2.syncfusion.com/react/documentation/tooltip/getting-started) for the TreeGrid using the [queryCellInfo](https://ej2.syncfusion.com/react/documentation/api/treegrid/#querycellinfo) event.
 

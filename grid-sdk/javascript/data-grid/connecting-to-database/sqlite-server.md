@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Javascript Grid SQLite Data Binding | Syncfusion
-description: Learn how to connect Javascript Data Grid to SQLite using EF Core, perform CRUD operations, and enable filtering, sorting, and advanced data management.
+title: Bind SQLite Server Data in Syncfusion JavaScript Grid
+description: Learn how to consume data from SQLite Server, bind it to Syncfusion JavaScript Grid, and perform CRUD operations.
 platform: grid-sdk
 control: grid
 keywords: adaptors, customadaptor, urladaptor, sqlite, remotedata
@@ -10,7 +10,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# SQLite Data Binding in Javascript Data Grid
+# Connecting SQLite Server data to Syncfusion JavaScript Grid
 
 This section describes how to connect and retrieve data from a SQLite Server database using [Microsoft.Data.Sqlite](https://www.nuget.org/packages/Microsoft.Data.Sqlite/) and bind it to the Syncfusion JavaScript Grid.
 

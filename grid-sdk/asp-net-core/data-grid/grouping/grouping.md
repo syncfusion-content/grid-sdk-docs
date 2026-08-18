@@ -1,14 +1,14 @@
 ---
 layout: post
-title: ASP.NET Core Grid Grouping | Syncfusion
-description: Learn how to use Grouping in ASP.NET Core Data Grid to organize data, display aggregates, customize grouping settings, and expand or collapse records.
+title: Grouping in Syncfusion ASP.NET Core Grid Component
+description: Learn here all about Grouping in Syncfusion ASP.NET Core Grid component of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Grouping
 publishingplatform: grid-sdk
 documentation: ug
 ---
 
-# Grouping in ASP.NET Core Data Grid
+# Grouping in ASP.NET Core Grid component
 
 The grouping feature in the [ASP.NET Core DataGrid](https://www.syncfusion.com/aspnet-core-ui-controls/grid) allows you to organize data into a hierarchical structure, making it easier to expand and collapse records. You can group the columns by simply dragging and dropping the column header to the group drop area. To enable grouping in the grid, you need to set the [allowGrouping](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.grids.grid.html#Syncfusion_EJ2_Grids_Grid_AllowGrouping) property to **true**. Additionally, you can customize the grouping options using the [groupSettings](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.grids.grid.html#Syncfusion_EJ2_Grids_Grid_GroupSettings) property.
 

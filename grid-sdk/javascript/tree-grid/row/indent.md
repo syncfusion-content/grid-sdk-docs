@@ -3,8 +3,7 @@ layout: post
 title: JavaScript TreeGrid Indent and Outdent | Syncfusion
 description: Learn how to indent and outdent rows in JavaScript TreeGrid to modify hierarchical relationships and manage parent-child records.
 platform: grid-sdk
-control: Indent 
-publishingplatform: grid-sdk
+control: Indent
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
@@ -44,7 +43,7 @@ To use the indent and outdent feature, inject the `RowDD` module in the Tree Gri
 
 ## Indent/Outdent a row programmatically
 
-You can change the hierarchy level of record programmatically using [indent](https://ej2.syncfusion.com/javascript/documentation/api/treegrid/#indent) and [outdent](https://ej2.syncfusion.com/javascript/documentation/api/treegrid/#outdent) methods.
+You can change the hierarchy level of record programmatically using [indent](https://ej2.syncfusion.com/javascript/documentation/api/treegrid#indent) and [outdent](https://ej2.syncfusion.com/javascript/documentation/api/treegrid#outdent) methods.
 
 {% if page.publishingplatform == "typescript" %}
 

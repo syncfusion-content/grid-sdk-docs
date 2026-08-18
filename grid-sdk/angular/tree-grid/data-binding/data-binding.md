@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Angular TreeGrid Data Binding | Syncfusion
-description: Learn about data binding in the Angular TreeGrid, covering local and remote data integration, expand state mapping, and best practices.
+title: Data binding in Angular TreeGrid component | Syncfusion
+description: Learn about data binding in the Syncfusion Angular TreeGrid component, covering local and remote data integration, expand state mapping, and best practices.
 platform: grid-sdk
 control: Data binding
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Data Binding in Angular TreeGrid
+# Data binding in Angular TreeGrid component
 
 The TreeGrid supports flexible data binding options, allowing integration with both local object arrays and remote RESTful JSON data services. Assign the [`dataSource`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#datasource) property with either a JavaScript object array or a `DataManager` instance.
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: React TreeGrid Getting Started | Syncfusion
-description: Learn how to get started with React TreeGrid, including installation, configuration, data binding, and basic setup.
+title: Getting started with React Tree Grid component | Syncfusion
+description:  Checkout and learn about Getting started with React Tree Grid component of Syncfusion Essential JS 2 and more details.
 control: Getting started 
 platform: grid-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Getting Started with React TreeGrid
+# Getting Started with React Tree Grid
 
 This section outlines the steps to create a simple Essential JS 2 Tree Grid and demonstrates basic usage in a React application.
 

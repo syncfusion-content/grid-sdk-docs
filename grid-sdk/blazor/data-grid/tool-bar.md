@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Blazor Grid Toolbar Configuration and Customization | Syncfusion
-description: Learn how to configure and customize the toolbar in Blazor Data Grid, manage toolbar actions, enable dynamic controls, and apply CSS styling.
+title: Configuring and Customizing Toolbar in Blazor DataGrid | Syncfusion®
+description: Learn how to configure, customize, and manage toolbar actions in Blazor DataGrid, including dynamic control and CSS styling.
 platform: grid-sdk
 control: DataGrid
 documentation: ug
 ---
 
-# Toolbar Configuration and Customization in Blazor Data Grid
+# Toolbar in Blazor DataGrid
 
 The toolbar in the [Blazor DataGrid](https://www.syncfusion.com/blazor-components/blazor-datagrid) provides quick access to common actions such as adding, editing, deleting, printing, and exporting data (Excel, CSV, PDF).
 

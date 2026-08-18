@@ -3,15 +3,14 @@ layout: post
 title: JavaScript TreeGrid Local Storage Persistence | Syncfusion
 description: Learn how to get and set local storage values for the JavaScript TreeGrid component using enablePersistence and standard browser APIs.
 platform: grid-sdk
-control: Get or set local storage value 
-publishingplatform: grid-sdk
+control: Get or set local storage value
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
 # Get or Set Local Storage Values in JavaScript TreeGrid
 
-If the [`enablePersistence`](../../api/treegrid/#enablepersistence) property is set to true, the treegrid property value is saved in the `window.localStorage` for reference. You can get/set the localStorage value by using the `getItem`/`setItem` method in the `window.localStorage`.
+If the [`enablePersistence`](../../api/treegrid#enablepersistence) property is set to true, the treegrid property value is saved in the `window.localStorage` for reference. You can get/set the localStorage value by using the `getItem`/`setItem` method in the `window.localStorage`.
 
 ```ts
 //get the TreeGrid model.

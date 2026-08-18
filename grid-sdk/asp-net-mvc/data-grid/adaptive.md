@@ -1,14 +1,14 @@
 ---
 layout: post
-title: ASP.NET MVC Grid Adaptive UI Customization | Syncfusion
-description: Learn how to customize adaptive UI in ASP.NET MVC Data Grid using responsive dialogs, vertical row rendering, and optimized mobile layouts.
+title: Adaptive in Syncfusion ASP.NET MVC Grid Component 
+description: Learn here all about Adaptive in Syncfusion ASP.NET MVC Grid component of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Adaptive
 publishingplatform: grid-sdk
 documentation: ug
 ---
 
-# Adaptive UI in ASP.NET MVC Data Grid
+# Adaptive in ASP.NET MVC Grid component
 
 The Grid user interface (UI) was redesigned to provide an optimal viewing experience and improve usability on small screens. This interface will render the filter, sort, column chooser, column menu(supports only when the [RowRenderingMode](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_RowRenderingMode) as Horizontal) and edit dialogs adaptively and have an option to render the grid row elements in the vertical direction.
 

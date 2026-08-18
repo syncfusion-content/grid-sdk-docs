@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Typescript Grid EJ1 API Migration | Syncfusion
-description: Learn how to migrate from EJ1 to EJ2 Typescript Data Grid APIs, map legacy options to updated patterns, and handle common breaking changes effectively.
+title: Ej1 api migration in TypeScript Grid control | Syncfusion
+description: Learn here all about Ej1 api migration in Syncfusion TypeScript Grid control of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Ej1 api migration 
 publishingplatform: grid-sdk
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# EJ1 API Migration in Typescript Data Grid
+# Ej1 api migration in TypeScript Grid control
 
 This article describes the API migration process of Grid component from Essential<sup style="font-size:70%">&reg;</sup> JS 1 to Essential<sup style="font-size:70%">&reg;</sup> JS 2.
 

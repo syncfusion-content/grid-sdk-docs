@@ -5,10 +5,10 @@ description: Learn how to use scrolling features in Syncfusion® .NET MAUI Data 
 platform: grid-sdk
 control: SfDataGrid
 documentation: UG
-keywords : maui data grid, maui datagrid, maui grid, grid maui, maui gridview, grid in maui, .net maui datagrid, .net maui grid, .net grid maui, .net maui scrolling, maui scrolling
+keywords : maui datagrid, maui grid, grid maui, maui gridview, grid in maui, .net maui datagrid, .net maui grid, .net grid maui, .net maui scrolling, maui scrolling
 ---
 
-# Scrolling in .NET MAUI Data Grid
+# Scrolling in MAUI DataGrid (SfDataGrid)
 
 ## Programmatic scrolling
 

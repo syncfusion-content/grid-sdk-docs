@@ -1,14 +1,14 @@
 ---
 layout: post
-title: React TreeGrid Column Reorder | Syncfusion
-description: Learn how to reorder columns in React TreeGrid using drag-and-drop functionality and customize column arrangement.
+title: Column reorder in React TreeGrid | Syncfusion
+description: Learn here all about Column reorder in Syncfusion React TreeGrid of Syncfusion Essential JS 2 and more.
 control: Column reorder 
 platform: grid-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Column Reorder in React TreeGrid  
+# Column reorder in React TreeGrid 
 
 Columns can be reordered by drag and drop a column header from one index to another within the TreeGrid. Enable this behavior by setting [allowReordering](https://ej2.syncfusion.com/react/documentation/api/treegrid/#allowreordering) to true.
 

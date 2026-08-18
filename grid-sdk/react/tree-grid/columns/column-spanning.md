@@ -1,14 +1,14 @@
 ---
 layout: post
-title: React TreeGrid Column Spanning | Syncfusion
-description: Learn how to configure column spanning in React TreeGrid, including merging cells and customizing column layouts.
+title: Column spanning in React TreeGrid | Syncfusion
+description: Learn here all about Column spanning in Syncfusion React TreeGrid of Syncfusion Essential JS 2 and more.
 control: Column spanning 
 platform: grid-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Column Spanning in React TreeGrid
+# Column spanning in React TreeGrid 
 
 The column spanning feature in the Syncfusion<sup style="font-size:70%">&reg;</sup> React TreeGrid allows merging adjacent cells horizontally, creating a visually appealing and informative layout. By defining the `colSpan` attribute in the [queryCellInfo](https://ej2.syncfusion.com/react/documentation/api/treegrid/index-default#querycellinfo) event, cells can be easily spanned and the appearance of the TreeGrid can be customized.
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: ASP.NET MVC Grid Editing Customization | Syncfusion
-description: Learn how to customize editing styles in ASP.NET MVC Data Grid with editor appearance, edit layouts, form elements, and editing UI customization.
+title: Editing in Syncfusion ASP.NET MVC Grid Component
+description: Learn here all about Editing in Syncfusion ASP.NET MVC Grid component of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Editing
 publishingplatform: grid-sdk
 documentation: ug
 ---
 
-# Editing Style in ASP.NET MVC Data Grid
+# Editing in ASP.NET MVC Grid component
 
 You can customize the appearance of editing-related elements in the Syncfusion ASP.NET MVC Grid component using CSS. Below are examples of how to customize various editing-related elements.
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Vue Grid Clipboard | Syncfusion
-description: Learn how to use clipboard features in Vue Data Grid, including copy, paste, autofill, keyboard shortcuts, and clipboard data operations.
+title: Clipboard in Vue Grid component | Syncfusion
+description: Learn here all about Clipboard in Syncfusion Vue Grid component of Syncfusion Essential JS 2 and more.
 control: Clipboard 
 platform: grid-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Clipboard in Vue Data Grid
+# Clipboard in Vue Grid component
 
 The clipboard feature in the [Vue Data Grid](https://www.syncfusion.com/vue-components/vue-grid) provides an easy way to copy selected rows or cells data into the clipboard. You can use keyboard shortcuts to perform the copy operation. The following list of keyboard shortcuts is supported in the Grid to copy selected rows or cells data into clipboard.
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Blazor Grid Lazy Load Grouping for Large Data Performance | Syncfusion
-description: Learn how to enable lazy load grouping in Blazor Data Grid with on-demand loading and efficient handling of large datasets.
+title: Lazy load grouping in Blazor DataGrid | Syncfusion®
+description: Learn how to enable lazy load grouping in Blazor DataGrid with on-demand data loading, infinite scrolling, and virtual scrolling for large datasets.
 platform: grid-sdk
 control: DataGrid
 documentation: ug
 ---
 
-# Lazy Load Grouping for Large Data Performance in Blazor Data Grid
+# Lazy Load Grouping in Blazor DataGrid
 
 In Blazor, lazy loading refers to loading data dynamically only when needed, rather than loading everything upfront. This approach reduces initial load time and improves application performance.
 

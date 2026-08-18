@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Typescript Grid Data Binding | Syncfusion
-description: Learn how to bind local and remote data sources in Typescript Data Grid, enable dynamic updates, and manage data flow efficiently.
+title: Data binding in TypeScript Grid control | Syncfusion
+description: Learn here all about Data binding in Syncfusion TypeScript Grid control of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Data binding 
 publishingplatform: grid-sdk
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Data Binding in Typescript Data Grid
+# Data binding in TypeScript Grid control
 
 Data binding is a fundamental technique that empowers the Grid control to integrate data into its interface, enabling the creation of dynamic and interactive grid views. This feature is particularly valuable when working with large datasets or when data needs to be fetched remotely. 
 

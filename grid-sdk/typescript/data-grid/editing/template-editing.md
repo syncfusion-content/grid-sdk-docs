@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Typescript Grid Custom Template Editing | Syncfusion
-description: Learn how to use inline and dialog template editing in Typescript Data Grid to customize edit forms, capture user input, and manage CRUD operations 
+title: Template editing in TypeScript Grid control | Syncfusion
+description: Learn here all about Template editing in Syncfusion TypeScript Grid control of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Template editing 
 publishingplatform: grid-sdk
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Custom Template Editing in Typescript Data Grid
+# Template editing in TypeScript Grid control
 
 ## Inline or dialog template editing
 

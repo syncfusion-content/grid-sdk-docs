@@ -1,14 +1,14 @@
 ---
 layout: post
-title: ASP.NET Core Grid Adding Header and Footer | Syncfusion
-description: Learn how to add custom headers and footers in ASP.NET Core Data Grid PDF export, customize content, apply templates, and format exported documents.
+title: Adding Header and Footer in ASP.NET Core Grid Component
+description: Learn here all about Adding Header and Footer in Syncfusion ASP.NET Core Grid component of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Adding Header and Footer
 publishingplatform: grid-sdk
 documentation: ug
 ---
 
-# Adding Header and Footer in ASP.NET Core Data Grid
+# Adding header and footer in ASP.NET Core Grid component
 
 The Syncfusion ASP.NET Core Grid allows you to add customized header and footer sections in the exported PDF document. This feature enables you to include custom text, page numbers, lines, page size, and even change the orientation of the header and footer.
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Javascript Grid Group and Caption Aggregates | Syncfusion
-description: Learn how to compute and display group and caption aggregates in Javascript Data Grid, including group summaries, captions, and aggregate formatting.
+title: Group and caption aggregate in JavaScript Grid | Syncfusion
+description: Learn here all about Group and caption aggregate in Syncfusion JavaScript Grid control of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Group and caption aggregate 
 publishingplatform: grid-sdk
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Group and Caption Aggregates in Javascript Data Grid
+# Group and caption aggregate in JavaScript Grid control
 
 Group footer and caption aggregates in the JavaScript Grid control allow you to calculate aggregate values based on the current group items. These aggregate values can be displayed in the group footer cells and group caption cells, respectively. To achieve this, you can use the [groupFooterTemplate](../../api/grid/aggregateColumn#groupfootertemplate) and [groupCaptionTemplate](../../api/grid/aggregateColumn#groupcaptiontemplate) properties of the [AggregateColumn](../../api/grid/aggregateColumn).
 

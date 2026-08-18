@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Javascript Grid Lazy Load Grouping | Syncfusion
-description: Learn how to use Lazy Load Grouping in Javascript Data Grid to load grouped records on demand, improve performance, and efficiently handle large datasets.
+title: Lazy load grouping in JavaScript Grid control | Syncfusion
+description: Learn here all about Lazy load grouping in Syncfusion JavaScript Grid control of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Lazy load grouping 
 publishingplatform: grid-sdk
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Lazy Load Grouping in Javascript Data Grid
+# Lazy load grouping in JavaScript Grid control
 
 In JavaScript, lazy loading refers to the technique of loading data dynamically when they are needed, instead of loading everything upfront. Lazy loading can significantly improve the performance of your application by reducing the initial load time.
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: ASP.NET Core Grid Print | Syncfusion
-description: Learn how to print ASP.NET Core Data Grid content with print customization options, formatted layouts, and print-ready output for grid data.
+title: Print in Syncfusion ASP.NET Core Grid Component
+description: Learn here all about Print in Syncfusion ASP.NET Core Grid component of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Print
 publishingplatform: grid-sdk
 documentation: ug
 ---
 
-# Print in ASP.NET Core Data Grid
+# Print in ASP.NET Core Grid component
 
 The printing feature in Syncfusion<sup style="font-size:70%">&reg;</sup> Grid allows you to easily generate and print a representation of the grid's content for better offline accessibility and documentation. You can enable this feature using either the grid's toolbar or the programmatically available `print` method.
 

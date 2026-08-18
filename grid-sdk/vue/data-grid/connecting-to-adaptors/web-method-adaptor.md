@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Vue Grid Bind Data with WebMethodAdaptor | Syncfusion
-description: Learn how to use WebMethodAdaptor in Vue Data Grid to bind remote data, execute CRUD operations, and integrate web methods efficiently.
+title: Bind data & perform CRUD with WebMethodAdaptor in Syncfusion Grid
+description: Learn here all about how to bind data and perform CRUD action using WebMethodAdaptor in Syncfusion Vue Grid component of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: grid
 keywords: Adaptors, webmethodadaptor, web method adaptor, remotedata 
@@ -9,7 +9,8 @@ documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Remote Data Binding with Custom REST API using WebMethod Vue Data Grid
+# WebMethodAdaptor in Vue Data Grid Component
+
 The WebMethodAdaptor in [Vue Data Grid](https://www.syncfusion.com/vue-components/vue-grid) facilitates data binding from remote services using web methods. This powerful feature enables efficient communication between the client-side application and the server. The WebMethodAdaptor, like the URL adaptor, sends query parameters encapsulated within an object named **value**. Within this **value** object, various datamanager properties such as **requiresCounts**, **skip**, **take**, **sorted**, and **where** queries are included.
 
 ![Webmethod Adaptor](../images/web-method-adaptor-value.png)

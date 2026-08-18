@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Typescript Grid Validation | Syncfusion
-description: Learn how to configure validation in Typescript Data Grid using built-in and custom rules, display error messages, and prevent invalid data entry.
+title: Validation in TypeScript Grid control | Syncfusion
+description: Learn here all about Validation in Syncfusion TypeScript Grid control of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Validation 
 publishingplatform: grid-sdk
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Validation in Typescript Data Grid
+# Validation in TypeScript Grid control
 
 Validation is a crucial aspect of data integrity in any application. The TypeScript Grid control in Syncfusion<sup style="font-size:70%">&reg;</sup> provides built-in support for easy and effective data validation. This feature ensures that the data entered or modified adheres to predefined rules, preventing errors and guaranteeing the accuracy of the displayed information.
 

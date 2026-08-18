@@ -3,8 +3,7 @@ layout: post
 title: JavaScript TreeGrid Sorting | Syncfusion
 description: Learn how to sort data in JavaScript TreeGrid, including single and multi-column sorting, custom sorting, and sort order configuration.
 platform: grid-sdk
-control: Sorting 
-publishingplatform: grid-sdk
+control: Sorting
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
@@ -16,9 +15,9 @@ To sort a column, click the column header.
 
 To sort multiple columns, press and hold the CTRL key and click the column header.  You can clear sorting of any one of the multi-sorted columns by pressing and holding the SHIFT key and clicking the specific column header.
 
-To enable sorting in the TreeGrid, set the [`allowSorting`](../api/treegrid/#allowsorting) to true. Sorting options can be configured through the [`sortSettings`](../api/treegrid/sortSettings).
+To enable sorting in the TreeGrid, set the [`allowSorting`](../api/treegrid#allowsorting) to true. Sorting options can be configured through the [`sortSettings`](../api/treegrid/sortSettings).
 
-To sort, inject the [`Sort`](../api/treegrid/#sortmodule) module in the treegrid.
+To sort, inject the [`Sort`](../api/treegrid#sortmodule) module in the treegrid.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -48,12 +47,12 @@ To sort, inject the [`Sort`](../api/treegrid/#sortmodule) module in the treegrid
 {% endif %}
 
 > * TreeGrid columns are sorted in the `Ascending` order. If you click the already sorted column, the sort direction toggles.
-> * You can apply and clear sorting by invoking [`sortByColumn`](../api/treegrid#sortbycolumn) and [`clearSorting`](../api/treegrid/#clearsorting) methods.
-> * To disable sorting for a particular column, set the [`columns.allowSorting`](../api/treegrid/column/#allowSorting) to false.
+> * You can apply and clear sorting by invoking [`sortByColumn`](../api/treegrid#sortbycolumn) and [`clearSorting`](../api/treegrid#clearsorting) methods.
+> * To disable sorting for a particular column, set the [`columns.allowSorting`](../api/treegrid/column#allowSorting) to false.
 
 ## Initial sort
 
-To sort at initial rendering, set the [`field`](../api/treegrid/sortDescriptorModel/#field) and [`direction`](../api/treegrid/sortDescriptorModel/#direction) in the `sortSettings.columns`.
+To sort at initial rendering, set the [`field`](../api/treegrid/sortDescriptorModel#field) and [`direction`](../api/treegrid/sortDescriptorModel#direction) in the `sortSettings.columns`.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -84,7 +83,7 @@ To sort at initial rendering, set the [`field`](../api/treegrid/sortDescriptorMo
 
 ## Sorting events
 
-During the sort action, the treegrid component triggers two events. The [`actionBegin`](../api/treegrid/#actionbegin) event triggers before the sort action starts, and the [`actionComplete`](../api/treegrid/#actioncomplete) event triggers after the sort action is completed. Using these events you can perform the needed actions.
+During the sort action, the treegrid component triggers two events. The [`actionBegin`](../api/treegrid#actionbegin) event triggers before the sort action starts, and the [`actionComplete`](../api/treegrid#actioncomplete) event triggers after the sort action is completed. Using these events you can perform the needed actions.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -117,7 +116,7 @@ During the sort action, the treegrid component triggers two events. The [`action
 
 <!--  Custom sort comparer
 
-You can customize the default sort action for a column by defining the [`column.sortComparer`](../api/treegrid/column/#sortcomparer) property. The sort comparer function has the same functionality like [`Array.sort`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort) sort comparer.
+You can customize the default sort action for a column by defining the [`column.sortComparer`](../api/treegrid/column#sortcomparer) property. The sort comparer function has the same functionality like [`Array.sort`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort) sort comparer.
 
 In the following example, custom sort comparer function was defined in the `Category` column.
 

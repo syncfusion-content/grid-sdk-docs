@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Typescript Grid Scrolling | Syncfusion
-description: Learn how to configure scrolling in Typescript Data Grid, including scroll behavior, responsive layouts, sticky headers, auto-scrolling, and scrollbar settings.
+title: Scrolling in TypeScript Grid control | Syncfusion
+description: Learn here all about Scrolling in Syncfusion TypeScript Grid control of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Scrolling 
 publishingplatform: grid-sdk
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Scrolling in Typescript Data Grid
+# Scrolling in TypeScript Grid control
 
 The scrolling feature in the TypeScript Grid control allows you to navigate through the content that extends beyond the visible area of the grid. It provides scrollbars that are automatically displayed when the content exceeds the specified `width` or `height` of the grid element. This feature is useful when you have a large amount of data or when the content needs to be displayed within a limited space. The vertical and horizontal scrollbars will be displayed based on the following criteria:
 

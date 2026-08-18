@@ -3,8 +3,7 @@ layout: post
 title: TypeScript TreeGrid Enable or Disable Actions | Syncfusion
 description: Learn how to enable or disable the TypeScript TreeGrid and its actions using custom CSS to control user interaction.
 platform: grid-sdk
-control: Enable disable treegrid and its actions 
-publishingplatform: grid-sdk
+control: Enable disable treegrid and its actions
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---

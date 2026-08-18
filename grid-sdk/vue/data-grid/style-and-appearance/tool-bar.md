@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Vue Grid Toolbar Style | Syncfusion
-description: Learn how to customize toolbar styles in Vue Data Grid with toolbar items, templates, layout options, and CSS-based styling.
+title: Tool bar in Vue Grid component | Syncfusion
+description: Learn here all about Tool bar in Syncfusion Vue Grid component of Syncfusion Essential JS 2 and more.
 control: Tool bar 
 platform: grid-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Toolbar Style in Vue Data Grid
+# Toolbar in Vue Grid component
 
 You can customize the appearance of the toolbar in the [Vue Data Grid](https://www.syncfusion.com/vue-components/vue-grid) component using CSS. Here are examples of how to customize the toolbar root element and toolbar button element.
 

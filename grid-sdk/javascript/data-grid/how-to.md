@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Javascript Grid How-To Guide | Syncfusion
-description: Learn how to customize and extend Javascript Data Grid with practical examples for editing, sorting, exporting, data binding, column customization, and more.
+title: How to in JavaScript Grid control | Syncfusion
+description: Learn here all about How to in Syncfusion JavaScript Grid control of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: How to 
 publishingplatform: grid-sdk
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# How-To Examples in Javascript Data Grid
+# How to in JavaScript Grid control
 
 ## Refresh the data source
 

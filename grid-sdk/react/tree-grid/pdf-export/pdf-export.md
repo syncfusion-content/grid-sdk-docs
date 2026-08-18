@@ -1,14 +1,14 @@
 ---
 layout: post
-title: React TreeGrid PDF Export | Syncfusion
-description: Learn how to enable and use PDF export in the React TreeGrid, including showing a spinner and providing a custom data source.
+title: Pdf export in React TreeGrid | Syncfusion
+description: Learn here all about Pdf export in Syncfusion React TreeGrid component of Syncfusion Essential JS 2 and more.
 control: Pdf export 
 platform: grid-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# PDF Export in React TreeGrid
+# PDF export in React TreeGrid
 
 PDF export enables exporting TreeGrid data to a PDF document. Export by calling the [pdfExport](https://ej2.syncfusion.com/react/documentation/api/treegrid/#pdfexport) method. To enable PDF export in the TreeGrid, set [allowPdfExport](https://ej2.syncfusion.com/react/documentation/api/treegrid/#allowpdfexport) to **true**.
 

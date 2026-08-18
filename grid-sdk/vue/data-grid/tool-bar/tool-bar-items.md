@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Vue Grid Toolbar Items | Syncfusion
-description: Learn how to use toolbar items in Vue Data Grid with built-in actions, custom toolbar items, templates, export options, and search functionality.
+title: Tool bar items in Vue Grid component | Syncfusion
+description: Learn here all about Tool bar items in Syncfusion Vue Grid component of Syncfusion Essential JS 2 and more.
 control: Tool bar items 
 platform: grid-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Toolbar Items in Vue Data Grid
+# Tool bar items in Vue Grid component
 
 The [Vue Data Grid](https://www.syncfusion.com/vue-components/vue-grid) offers a flexible toolbar that enables the addition of custom toolbar items or modification of existing ones. This customizable toolbar is positioned above the grid, providing a convenient way to access various actions and functionalities
 

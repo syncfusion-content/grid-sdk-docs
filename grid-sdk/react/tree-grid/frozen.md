@@ -1,14 +1,14 @@
 ---
 layout: post
-title: React TreeGrid Frozen Columns | Syncfusion
-description: Learn how to pin or freeze columns in React TreeGrid to keep important columns visible while scrolling horizontally.
+title: Frozen in React TreeGrid | Syncfusion
+description: Learn here all about Frozen in Syncfusion React TreeGrid component of Syncfusion Essential JS 2 and more.
 control: Frozen 
 platform: grid-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Frozen Columns in React TreeGrid 
+# Frozen in React TreeGrid 
 
 ## Frozen rows and columns
 

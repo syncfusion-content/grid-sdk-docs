@@ -1,14 +1,13 @@
 ---
 layout: post
-title: React TreeGrid Toolbar Items | Syncfusion
-description: Learn about configuring built-in and custom toolbar items in the React TreeGrid, including actions, alignment, and best practices.
+title: Tool bar items in React TreeGrid component | Syncfusion
+description: Learn here all about Tool bar items in Syncfusion React TreeGrid component of Syncfusion Essential JS 2 and more.
 control: Tool bar items
 platform: grid-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
-
-# Toolbar Items in React TreeGrid
+# Tool bar items in React TreeGrid
 
 ## Built-in toolbar items
 
