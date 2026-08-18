@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Javascript Grid Context Menu | Syncfusion
-description: Learn how to use Context Menu in Javascript Data Grid with default items, custom actions, event handling, and options to prevent menu items.
+title: Context menu in JavaScript Grid control | Syncfusion
+description: Learn here all about Context menu in Syncfusion JavaScript Grid control of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Context menu 
 publishingplatform: grid-sdk
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Context Menu in Javascript Data Grid
+# Context menu in JavaScript Grid control
 
 The JavaScript Grid control comes equipped with a context menu feature, which is triggered when a user right-clicks anywhere within the grid. This feature serves to enrich the user experience by offering immediate access to a variety of supplementary actions and operations that can be executed on the data displayed in the grid.
 

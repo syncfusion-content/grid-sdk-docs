@@ -1,18 +1,18 @@
 ---
 layout: post
-title: Vue Grid Row Spanning | Syncfusion
-description: Learn how to implement row spanning in Vue Data Grid using Syncfusion. Merge cells across rows, configure rowspan behavior, and create rich data layouts.
+title: Row spanning in Vue Grid component | Syncfusion
+description: Learn here all about Row spanning in Syncfusion Vue Grid component of Syncfusion Essential JS 2 and more.
 control: Row spanning 
 platform: grid-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Row Spanning in Vue Data Grid
+# Row spanning in Vue Grid component
 
 The [Vue Data Grid](https://www.syncfusion.com/vue-components/vue-grid) provides an option to span row cells, allowing you to merge two or more cells in a row into a single cell. This feature can be useful in scenarios where you want to display information that spans across multiple rows, but want to avoid repeating the same information in each row.
 
-To achieve this, You need to define the [rowSpan](https://ej2.syncfusion.com/vue/documentation/api/grid/queryCellInfoEventArgs/#rowspan) attribute to span cells in the [queryCellInfo](https://ej2.syncfusion.com/vue/documentation/api/grid/#queryCellInfoEventArgs) event. The `rowSpan` attribute is used to specify the number of rows that the current cell should span.
+To achieve this, You need to define the [rowSpan](https://ej2.syncfusion.com/vue/documentation/api/grid/queryCellInfoEventArgs#rowspan) attribute to span cells in the [queryCellInfo](https://ej2.syncfusion.com/vue/documentation/api/grid#queryCellInfoEventArgs) event. The `rowSpan` attribute is used to specify the number of rows that the current cell should span.
 
 The `queryCellInfo` event is triggered for each cell in the grid, and allows you to customize the cells in the grid. By handling this event, you can set the `rowSpan` attribute for a cell to achieve row spanning.
 
@@ -34,7 +34,7 @@ In the following demo, **Davolio** cell is spanned to two rows in the **Employee
 
 ## Limitations
 
-* The [updateCell](https://ej2.syncfusion.com/vue/documentation/api/grid/#updatecell) method does not support row spanning.
+* The [updateCell](https://ej2.syncfusion.com/vue/documentation/api/grid#updatecell) method does not support row spanning.
 * Row spanning is not compatible with the following features:
     1. Virtual scrolling
     2. Infinite scrolling
@@ -49,7 +49,7 @@ In the following demo, **Davolio** cell is spanned to two rows in the **Employee
 
 The Syncfusion Vue Grid introduces a simplified approach to vertically merge cells using the `enableRowSpan` property. 
 
-When the `enableRowSpan` property is enabled, the Grid automatically merges cells with matching data across adjacent columns without requiring manual span configuration using the [queryCellInfo](https://ej2.syncfusion.com/vue/documentation/api/grid/#queryCellInfoEventArgs) event. These merged cells are visually combined into a single cell, improving readability.
+When the `enableRowSpan` property is enabled, the Grid automatically merges cells with matching data across adjacent columns without requiring manual span configuration using the [queryCellInfo](https://ej2.syncfusion.com/vue/documentation/api/grid#queryCellInfoEventArgs) event. These merged cells are visually combined into a single cell, improving readability.
 
 Here is an example of how to use the `enableRowSpan` property to merge cells vertically:
 

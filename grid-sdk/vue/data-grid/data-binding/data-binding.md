@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Vue Grid Data Binding | Syncfusion
-description: Learn how to bind local and remote data sources in Vue Data Grid, enable dynamic updates, and manage data flow efficiently.
+title: Vue Grid - Data Binding | Syncfusion
+description: Data binding in Vue Grid connects component state, local arrays, or remote sources to grid rows, enabling dynamic updates and controlled data flow.
 control: Data binding 
 platform: grid-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Data Binding in Vue Data Grid
+# Data binding in Vue Grid component
 
 Data binding is a fundamental technique that empowers the [Vue Data Grid](https://www.syncfusion.com/vue-components/vue-grid) component to integrate data into its interface, enabling the creation of dynamic and interactive grid views. This feature is particularly valuable when working with large datasets or when data needs to be fetched remotely. 
 
@@ -125,7 +125,7 @@ The following code demonstrates updating the data source and columns defined abo
 
 **2. Modify only the existing columns:**
 
-To modify existing columns in a grid, add or remove columns or replace the entire set of columns using the [changeDataSource](https://ej2.syncfusion.com/vue/documentation/api/grid/#changedatasource) method. To use this method, set the first parameter to "null" and provide the new columns as the second parameter. Note that if a column field is not specified in the `dataSource`, its corresponding column values will be empty. The following example illustrates modifying existing columns.
+To modify existing columns in a grid, add or remove columns or replace the entire set of columns using the [changeDataSource](https://ej2.syncfusion.com/vue/documentation/api/grid#changedatasource) method. To use this method, set the first parameter to "null" and provide the new columns as the second parameter. Note that if a column field is not specified in the `dataSource`, its corresponding column values will be empty. The following example illustrates modifying existing columns.
 
 The following code demonstrates adding new columns to existing grid columns "newColumn" by using the `changeDataSource` method.
 

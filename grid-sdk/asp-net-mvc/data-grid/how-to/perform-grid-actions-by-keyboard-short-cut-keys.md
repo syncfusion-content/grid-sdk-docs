@@ -1,7 +1,7 @@
 ---
 layout: post
-title: ASP.NET MVC Grid Keyboard Shortcuts | Syncfusion
-description: Learn how to perform ASP.NET MVC Data Grid actions using keyboard shortcuts to improve navigation, editing, and overall productivity.
+title: Perform Grid Actions By Keyboard Short Cut Keys in ASP.NET MVC Grid Component
+description: Learn here all about Perform Grid Actions By Keyboard Short Cut Keys in Syncfusion ASP.NET MVC Grid component of syncfusion and more.
 platform: grid-sdk
 control: Perform Grid Actions By Keyboard Short Cut Keys
 publishingplatform: grid-sdk
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Keyboard Shortcuts for Grid Actions in ASP.NET MVC Data Grid
+# Perform Grid actions by keyboard shortcut keys
 
 Using keyboard shortcuts, Grid performs navigation and actions.
 

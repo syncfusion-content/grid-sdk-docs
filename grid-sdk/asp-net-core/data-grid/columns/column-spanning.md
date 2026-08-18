@@ -1,14 +1,14 @@
 ---
 layout: post
-title: ##Platform_Name## Grid Column Spanning | Syncfusion
-description: Learn how to merge cells using column spanning in ##Platform_Name## Data Grid, configure colspan behavior, and build complex multi-column layouts.
+title: Column Spanning in Syncfusion ASP.NET Core Grid 
+description: Learn here all about Column Spanning in Syncfusion ASP.NET Core Grid of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Column Spanning
 publishingplatform: grid-sdk
 documentation: ug
 ---
 
-# Column Spanning in ASP.NET Core Data Grid
+# Column Spanning in ASP.NET Core Grid
 
 The column spanning feature in the Syncfusion Grid allows you to merge adjacent cells horizontally, creating a visually appealing and informative layout. By defining the `colSpan` attribute in the [queryCellInfo](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_QueryCellInfo) event, you can easily span cells and customize the appearance of the Grid.
 

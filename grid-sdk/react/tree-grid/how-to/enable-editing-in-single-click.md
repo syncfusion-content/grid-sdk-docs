@@ -1,20 +1,20 @@
 ---
 layout: post
-title: React TreeGrid Single-Click Editing | Syncfusion
-description: Learn how to enable single-click row and cell editing in React TreeGrid for faster data entry, streamlined updates, and improved editing workflows.
+title: Enable editing in single click in React TreeGrid | Syncfusion
+description: Learn here all about Enable editing in single click in Syncfusion React TreeGrid component of Syncfusion Essential JS 2 and more.
 control: Enable editing in single click 
 platform: grid-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Enable Single-Click Editing in React TreeGrid
+# Enable editing in single click in React TreeGrid
 
 ## Row Editing
 
-Enable single-click row editing in the TreeGrid by using the [startEdit](https://ej2.syncfusion.com/react/documentation/api/treegrid/#startedit) and [endEdit](https://ej2.syncfusion.com/react/documentation/api/treegrid/#endedit) methods.
+Enable single-click row editing in the TreeGrid by using the [startEdit](https://ej2.syncfusion.com/react/documentation/api/treegrid#startedit) and [endEdit](https://ej2.syncfusion.com/react/documentation/api/treegrid#endedit) methods.
 
-Bind the **mousedown** event for the TreeGrid and, in the event handler, call [startEdit](https://ej2.syncfusion.com/react/documentation/api/treegrid/#startedit) or [endEdit](https://ej2.syncfusion.com/react/documentation/api/treegrid/#endedit) based on the clicked target element.
+Bind the **mousedown** event for the TreeGrid and, in the event handler, call [startEdit](https://ej2.syncfusion.com/react/documentation/api/treegrid#startedit) or [endEdit](https://ej2.syncfusion.com/react/documentation/api/treegrid#endedit) based on the clicked target element.
 
 {% tabs %}
 {% highlight js tabtitle="app.jsx" %}
@@ -35,9 +35,9 @@ Bind the **mousedown** event for the TreeGrid and, in the event handler, call [s
 
 ## Cell Editing
 
-Enable single-click cell editing in the TreeGrid by using the [editCell](https://ej2.syncfusion.com/react/documentation/api/treegrid/#editcell) method.
+Enable single-click cell editing in the TreeGrid by using the [editCell](https://ej2.syncfusion.com/react/documentation/api/treegrid#editcell) method.
 
-Bind the **mousedown** event for the TreeGrid and, in the event handler, call the [editCell](https://ej2.syncfusion.com/react/documentation/api/treegrid/#editcell) method based on the clicked target element.
+Bind the **mousedown** event for the TreeGrid and, in the event handler, call the [editCell](https://ej2.syncfusion.com/react/documentation/api/treegrid#editcell) method based on the clicked target element.
 
 {% tabs %}
 {% highlight js tabtitle="app.jsx" %}

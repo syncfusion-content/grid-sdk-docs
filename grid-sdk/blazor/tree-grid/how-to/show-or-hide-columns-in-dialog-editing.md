@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Blazor TreeGrid Show or Hide Columns in Dialog Editing | Syncfusion
-description: Learn how to show or hide columns in Blazor TreeGrid dialog editing, customize column visibility, and improve editing workflows.
+title: Show or Hide columns in Dialog editing in TreeGrid | Syncfusion®
+description: Learn here all about how to show or hide columns in Dialog editing in Blazor TreeGrid component and much more details.
 platform: grid-sdk
 control: Tree Grid
 documentation: ug
 ---
 
-# Show or Hide Columns in Dialog Editing in Blazor TreeGrid
+# Show or Hide columns in Dialog editing in Blazor TreeGrid Component
 
 The hidden columns can be shown or visible columns' editor can be hidden in the dialog while editing the Tree Grid record. This can be achieved by **Template**. In the following example, the Tree Grid columns' `Progress` are rendered as hidden column and `Priority` as visible column. In the edit mode, the `Progress` column is changed to visible state and `Priority` column to hidden state.
 

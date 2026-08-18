@@ -1,14 +1,14 @@
 ---
 layout: post
-title: React TreeGrid Key Features | Syncfusion
-description: Explore the key features of React TreeGrid, including hierarchical data binding, editing, filtering, sorting, virtualization, and exporting.
+title: Index in React Tree Grid | Syncfusion
+description: Learn here all about Index in Syncfusion React Tree Grid component of Syncfusion Essential JS 2 and more.
 control: Index 
 platform: grid-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Key Features of React TreeGrid
+# Index in React Tree Grid
 
 Essential Studio for JavaScript Tree Grid is a feature-rich control for visualizing self-referential hierarchical data in a tabular layout. It binds data from sources such as JSON arrays, RESTful services, OData services, WCF services, or DataManager, and maps fields to columns. Child records can be expanded or collapsed using the tree column.
 

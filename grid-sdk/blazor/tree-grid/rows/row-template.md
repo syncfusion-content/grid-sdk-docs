@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Blazor TreeGrid Row Template | Syncfusion
-description: Learn how to customize row templates in Blazor TreeGrid  to display custom content, enhance layouts, and improve data presentation.
+title: Row Template in Blazor Tree Grid Component | Syncfusion®
+description: Check out here and learn more details about the Row Template in the Blazor Tree Grid component and much more details.
 platform: grid-sdk
 control: Tree Grid
 documentation: ug
 ---
 
-# Row Template in Blazor TreeGrid
+# Row Template in Blazor Tree Grid Component
 
 To know more about Row Template in the Blazor tree grid Component, you can check this video.
 

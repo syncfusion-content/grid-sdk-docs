@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Typescript Grid Remote Data Binding | Syncfusion
-description: Learn how to bind remote data sources in Typescript Data Grid using adaptors, configure server-side operations, and manage data efficiently.
+title: Remote data in TypeScript Grid control | Syncfusion
+description: Learn here all about Remote data in Syncfusion TypeScript Grid control of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Remote data 
 publishingplatform: grid-sdk
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Remote Data Binding in Typescript Data Grid
+# Remote data in TypeScript Grid control
 
 In TypeScript Grid component, binding remote data is a fundamental aspect that enhances the efficiency of data interaction. This process involves assigning the service data, represented as an instance of `DataManager`, to the [dataSource](../../api/grid#datasource) property of the TypeScript Grid component. By doing so, you enable seamless interaction with a remote data source, and this is achieved by specifying the endpoint URL where the data is hosted.
 

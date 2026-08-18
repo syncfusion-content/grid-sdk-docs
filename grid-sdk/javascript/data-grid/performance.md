@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Javascript Grid Performance | Syncfusion
-description: Learn how to optimize Javascript Data Grid performance with virtualization, paging, efficient data operations, and best practices for large datasets.
+title: Performance tips for JavaScript Grid control | Syncfusion
+description: Checkout and learn here all about how to improve the loading performance of JavaScript  Grid control even binding large data set.
 platform: grid-sdk
 control: Performance 
 publishingplatform: grid-sdk
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Performance Tips for Javascript Data Grid
+# Performance tips for JavaScript Grid control
 
 This article is a comprehensive guide on improving the loading performance of the JavaScript Grid, especially when dealing with large datasets along with large number of columns. It provides valuable insights into the steps that need to be followed to bind a large data source without experiencing any performance degradations. By offering detailed explanations and actionable tips, this resource aims to empower readers with the knowledge and best practices necessary to optimize the performance of the JavaScript Grid during data binding, ensuring a smooth and efficient user experience.
 
@@ -35,7 +35,7 @@ It is possible to enable both row and column virtualization. This feature allows
 [Documentation link](../../documentation/grid/virtual-scroll#browser-height-limitation-in-virtual-scrolling-and-solution)
 
 ## How to improve loading performance by binding large data by showing custom text or element
-When integrating image or template elements into a column, it's recommended to utilize the [Column Template](../../documentation/grid/columns/column-template) feature rather than customizing the data through [rowDataBound](../../api/grid/#rowdatabound) or [queryCellInfo](../../api/grid/#querycellinfo) events. These events are triggered for each row and cell rendering, introducing delays in the control's rendering process. Moreover, rendering custom elements using these events may result in the persistence of rendered elements, potentially causing longer rendering times over time. By opting for the column template feature, you can efficiently meet this requirement without experiencing rendering delays and ensure a more streamlined rendering process.
+When integrating image or template elements into a column, it's recommended to utilize the [Column Template](../../documentation/grid/columns/column-template) feature rather than customizing the data through [rowDataBound](../../api/grid#rowdatabound) or [queryCellInfo](../../api/grid#querycellinfo) events. These events are triggered for each row and cell rendering, introducing delays in the control's rendering process. Moreover, rendering custom elements using these events may result in the persistence of rendered elements, potentially causing longer rendering times over time. By opting for the column template feature, you can efficiently meet this requirement without experiencing rendering delays and ensure a more streamlined rendering process.
 
 ## How to improve loading performance by referring individual script and CSS
 
@@ -47,7 +47,7 @@ So to improve the performance of grid during the initial rendering, suggested yo
 
 ## How to update cell values without frequent server calls 
 
-Efficiently update cell values without the need for frequent server calls, especially beneficial for live update scenarios. Even when the data is initially bound from the server, performing edit operations can be done without triggering a database refresh. Utilize the [setCellValue](../../api/grid/#setcellvalue) method to update the Grid without affecting the database and only refresh the UI.
+Efficiently update cell values without the need for frequent server calls, especially beneficial for live update scenarios. Even when the data is initially bound from the server, performing edit operations can be done without triggering a database refresh. Utilize the [setCellValue](../../api/grid#setcellvalue) method to update the Grid without affecting the database and only refresh the UI.
 
 ## How to optimize server-side data operations with adaptors
 

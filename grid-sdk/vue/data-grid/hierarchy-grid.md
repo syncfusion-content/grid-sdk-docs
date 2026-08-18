@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Vue Grid Hierarchy Grid | Syncfusion
-description: earn how to create hierarchy grids in Vue Data Grid with parent-child relationships, nested child grids, hierarchical data binding, and expandable rows.
+title: Hierarchy grid in Vue Grid component | Syncfusion
+description: Learn here all about Hierarchy grid in Syncfusion Vue Grid component of Syncfusion Essential JS 2 and more.
 control: Hierarchy grid 
 platform: grid-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Hierarchy Grid in Vue Data Grid
+# Hierarchy grid in Vue Grid component
 
 The Hierarchy Grid in an [Vue Data Grid](https://www.syncfusion.com/vue-components/vue-grid) component is typically used when you need to display hierarchical data in a tabular format with expandable and collapsible rows. It allows you to represent parent and child relationships within the grid, making it easier for you to navigate and understand the data.
 

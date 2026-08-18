@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Typescript Grid Adaptive UI Customization | Syncfusion
-description: Learn how to customize adaptive UI in Typescript Data Grid with responsive dialogs, vertical row rendering, and optimized mobile layouts.
+title: Adaptive in TypeScript Grid Control | Syncfusion
+description: Learn here all about adaptive in Syncfusion Essential TypeScript Grid control, its elements and more.
 platform: grid-sdk
 control: Adaptive 
 publishingplatform: grid-sdk
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Adaptive UI in Typescript Data Grid
+# Adaptive in TypeScript Grid Control
 
 The Grid user interface (UI) was redesigned to provide an optimal viewing experience and improve usability on small screens. This interface will render the filter, sort, column chooser, column menu(supports only when the `rowRenderingMode` as Horizontal) and edit dialogs adaptively and have an option to render the grid row elements in the vertical direction.
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Typescript Grid Row | Syncfusion
-description: Learn how to configure and customize rows in Typescript Data Grid using Syncfusion. Manage row events, selection, styling, and interaction capabilities.
+title: Row in TypeScript Grid control | Syncfusion
+description: Learn here all about Row in Syncfusion TypeScript Grid control of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Row 
 publishingplatform: grid-sdk
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Row in Typescript Data Grid
+# Row in TypeScript Grid control
 
 Each row typically represents a single record or item from a data source. Rows in a grid are used to present data in a tabular format. Each row displays a set of values representing the fields of an individual data record. Rows allow users to interact with the data in the grid. Users can select rows, edit cell values, perform sorting or filtering operations, and trigger events based on actions.
 

@@ -1,16 +1,16 @@
 ---
 layout: post
-title: React TreeGrid Filter Bar | Syncfusion
-description: Learn how to use the filter bar in React TreeGrid, including column filtering, filter operators, and custom filter behavior.
+title: Filter bar in React TreeGrid component | Syncfusion
+description: Learn here all about Filter bar in Syncfusion React TreeGrid component of Syncfusion Essential JS 2 and more.
 control: Filter bar 
 platform: grid-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Filter Bar in React TreeGrid
+# Filter bar in React TreeGrid
 
-When [allowFiltering](https://ej2.syncfusion.com/react/documentation/api/treegrid/#allowfiltering) is set to true, a filter bar row appears below the header to filter data. Records can be filtered using different expressions based on the column type.
+When [allowFiltering](https://ej2.syncfusion.com/react/documentation/api/treegrid#allowfiltering) is set to true, a filter bar row appears below the header to filter data. Records can be filtered using different expressions based on the column type.
 
  **Filter bar expressions:**
 
@@ -40,7 +40,7 @@ N/A | N/A | **Equal** operator is always used for Boolean columns | Boolean
 
  {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/treegrid/filtering-cs3" %}
 
-> By default, [filterSettings.columns.operator](https://ej2.syncfusion.com/react/documentation/api/treegrid/filterSettingsModel/#operators) is `equal`.
+> By default, [filterSettings.columns.operator](https://ej2.syncfusion.com/react/documentation/api/treegrid/filterSettingsModel#operators) is `equal`.
 
 ## Filter bar template with custom component
 
@@ -61,7 +61,7 @@ The following example demonstrates the way to use filter template for a column w
 
 ### Change default filter bar operator
 
-Change the default filter operator by extending [filterModule.filterOperators](https://ej2.syncfusion.com/react/documentation/api/treegrid/filterSettings/#operators) in the [dataBound](https://ej2.syncfusion.com/react/documentation/api/treegrid/#databound) event.
+Change the default filter operator by extending [filterModule.filterOperators](https://ej2.syncfusion.com/react/documentation/api/treegrid/filterSettings#operators) in the [dataBound](https://ej2.syncfusion.com/react/documentation/api/treegrid#databound) event.
 
 In the following sample, the default operator for string columns is changed from `startsWith` to `contains`.
 

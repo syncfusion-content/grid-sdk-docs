@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Blazor Grid Style Aggregate Rows Using CSS | Syncfusion
-description: Learn how to customize aggregate rows in Blazor Data Grid using CSS, including footer containers, summary cells, and aggregate styling options.
+title: Customize aggregates in Blazor DataGrid | Syncfusion®
+description: Learn how to customize aggregate rows in the Blazor DataGrid using CSS, including footer containers and summary cells and much more details.
 platform: grid-sdk
 control: DataGrid
 documentation: ug
 ---
 
-# Aggregate Customization in Blazor Data Grid
+# Aggregate customization in Blazor DataGrid
 
 Aggregates are displayed as summary rows in the DataGrid footer, providing a consolidated view of totals, averages, or counts. These rows can be styled using CSS to match the layout and design of the grid. Styling options are available for:
 

@@ -8,7 +8,7 @@ documentation: ug
 keywords: maui datagrid context menu, maui grid context menu, .net maui datagrid right click, .net maui datagrid long press, maui datagrid header context menu, record context menu, group caption context menu, group summary context menu, table summary context menu
 ---
 
-# Context Menu in .NET MAUI Data Grid
+# Context Menu in .NET MAUI DataGrid (SfDataGrid)
 
 ## Overview
 

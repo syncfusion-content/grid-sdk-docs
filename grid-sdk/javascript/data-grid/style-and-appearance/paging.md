@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Javascript Grid Paging Customization | Syncfusion
-description: Learn how to customize paging styles in Javascript Data Grid with pager templates, page size controls, layout options, and pager UI customization.
+title: Paging in JavaScript Grid control | Syncfusion
+description: Learn here all about Paging in Syncfusion JavaScript Grid control of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Paging 
 publishingplatform: grid-sdk
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Paging Style in Javascript Data Grid
+# Paging in JavaScript Grid control
 
 You can customize the appearance of the paging elements in the JavaScript Grid control using CSS. Here are examples of how to customize the pager root element, pager container element, pager navigation elements, pager page numeric link elements, and pager current page numeric element.
 

@@ -5,14 +5,14 @@ description: Learn all about column sizing support in Syncfusion® .NET MAUI Dat
 platform: grid-sdk
 control: SfDataGrid
 documentation: ug
-keywords : maui data grid, maui datagrid, maui grid, grid maui, maui gridview, grid in maui, .net maui datagrid, .net maui grid, .net grid maui, .net maui sizing, maui column sizing
+keywords : maui datagrid, maui grid, grid maui, maui gridview, grid in maui, .net maui datagrid, .net maui grid, .net grid maui, .net maui sizing, maui column sizing
 ---
 
-# Column Sizing in .NET MAUI Data Grid
+# Column Sizing in .NET MAUI DataGrid (SfDataGrid)
 
-The [.NET MAUI Data Grid](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.DataGrid.SfDataGrid.html) allows you to set the column widths based on certain logics using the [SfDataGrid.ColumnWidthMode](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.DataGrid.SfDataGrid.html#Syncfusion_Maui_DataGrid_SfDataGrid_ColumnWidthMode) or [DataGridColumn.ColumnWidthMode](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.DataGrid.DataGridColumn.html#Syncfusion_Maui_DataGrid_DataGridColumn_ColumnWidthMode) property. 
+The [.NET MAUI DataGrid](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.DataGrid.SfDataGrid.html) allows you to set the column widths based on certain logics using the [SfDataGrid.ColumnWidthMode](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.DataGrid.SfDataGrid.html#Syncfusion_Maui_DataGrid_SfDataGrid_ColumnWidthMode) or [DataGridColumn.ColumnWidthMode](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.DataGrid.DataGridColumn.html#Syncfusion_Maui_DataGrid_DataGridColumn_ColumnWidthMode) property. 
 
-To get started quickly with column sizing in [.NET MAUI Data Grid](https://www.syncfusion.com/maui-controls/maui-datagrid), you can check on this video:
+To get started quickly with column sizing in [.NET MAUI DataGrid](https://www.syncfusion.com/maui-controls/maui-datagrid), you can check on this video:
 
 <style>#MAUIDataGridVideoTutorial{width : 90% !important; height: 400px !important }</style> <iframe id='MAUIDataGridVideoTutorial' src="https://www.youtube.com/embed/vtMmQIWyipU?start=243"></iframe>
 

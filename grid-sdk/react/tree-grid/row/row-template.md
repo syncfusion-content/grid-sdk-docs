@@ -1,16 +1,16 @@
 ---
 layout: post
-title: React TreeGrid Row Template | Syncfusion
-description: Learn how to use row templates in React TreeGrid to customize row layouts, display custom content, and enhance data presentation.
+title: Row template in React TreeGrid component | Syncfusion
+description: Learn here all about Row template in Syncfusion React TreeGrid component of Syncfusion Essential JS 2 and more.
 control: Row template 
 platform: grid-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Row Template in React TreeGrid
+# Row template in React TreeGrid
 
-The [rowTemplate](https://ej2.syncfusion.com/react/documentation/api/treegrid/#rowtemplate) option customizes the look and behavior of TreeGrid rows. The `rowTemplate` property accepts either a template string or an HTML element ID.
+The [rowTemplate](https://ej2.syncfusion.com/react/documentation/api/treegrid#rowtemplate) option customizes the look and behavior of TreeGrid rows. The `rowTemplate` property accepts either a template string or an HTML element ID.
 
 {% tabs %}
 {% highlight js tabtitle="app.jsx" %}
@@ -23,11 +23,11 @@ The [rowTemplate](https://ej2.syncfusion.com/react/documentation/api/treegrid/#r
 
  {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/treegrid/rowtemplate-cs1" %}
 
-The [rowTemplate](https://ej2.syncfusion.com/react/documentation/api/treegrid/#rowtemplate) must return a single tr element.
+The [rowTemplate](https://ej2.syncfusion.com/react/documentation/api/treegrid#rowtemplate) must return a single tr element.
 
 ## Row template with formatting
 
-When using [rowTemplate](https://ej2.syncfusion.com/react/documentation/api/treegrid/#rowtemplate), values cannot be formatted inside the template using [columns.format](https://ej2.syncfusion.com/react/documentation/api/treegrid/column/#format) property. In such cases, define a global formatting function and invoke it within the template.
+When using [rowTemplate](https://ej2.syncfusion.com/react/documentation/api/treegrid#rowtemplate), values cannot be formatted inside the template using [columns.format](https://ej2.syncfusion.com/react/documentation/api/treegrid/column#format) property. In such cases, define a global formatting function and invoke it within the template.
 
 {% tabs %}
 {% highlight js tabtitle="app.jsx" %}

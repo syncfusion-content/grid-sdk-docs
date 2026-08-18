@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Blazor Grid Column Validation | Syncfusion
-description: Learn how to use column validation in Blazor Data Grid using built-in validation rules, custom validators, editing validation, and error message customization.
+title: Column Validation in Blazor DataGrid | Syncfusion®
+description: Learn about Column Validation in Blazor DataGrid, including setup, validation types, and customization options.
 platform: grid-sdk
 control: DataGrid
 documentation: ug
 ---
 
-# Column validation in Blazor Data Grid
+# Validation in Blazor DataGrid
 
 Validation is essential for maintaining data integrity in applications. The [Blazor DataGrid](https://www.syncfusion.com/blazor-components/blazor-datagrid) provides built-in support for reliable data validation. This feature ensures that entered or modified data adheres to predefined rules, helping prevent errors and maintain the accuracy of displayed information.
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Blazor Grid Dialog Editing | Syncfusion
-description: Learn how to use dialog editing in Blazor Data Grid for add, edit, validation, custom edit forms, dialog templates, and CRUD operations.
+title: Dialog Editing in Blazor DataGrid | Syncfusion®
+description: Checkout and learn here all the features about Dialog Editing in Blazor DataGrid and much more details.
 platform: grid-sdk
 control: DataGrid
 documentation: ug
 ---
 
-# Dialog Editing in Blazor Data Grid
+# Dialog editing in Blazor DataGrid
 
 Dialog editing in the [Blazor DataGrid](https://www.syncfusion.com/blazor-components/blazor-datagrid) enables editing of data in the selected row using a dialog window. This feature facilitates quick modification of cell values and updates the data source without navigating to a separate page or view. Dialog editing is particularly effective for scenarios requiring streamlined editing of multiple cells.
 

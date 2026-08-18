@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Typescript Grid Row Template | Syncfusion
-description: Customize row layouts in Typescript Data Grid with Syncfusion row templates. Create rich row designs, display custom content, and enhance data presentation.
+title: Row template in TypeScript Grid control | Syncfusion
+description: Learn here all about Row template in Syncfusion TypeScript Grid control of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Row template 
 publishingplatform: grid-sdk
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Row Template in Typescript Data Grid
+# Row template in TypeScript Grid control
 
 The row template feature in Grid allows you to customize the appearance and layout of rows in the grid. This feature is useful when you want to display custom content, such as images, buttons, or other controls, within the rows.
 

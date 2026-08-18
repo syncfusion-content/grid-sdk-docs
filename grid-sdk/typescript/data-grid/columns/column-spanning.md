@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Typescript Grid Column Spanning | Syncfusion
-description: Learn how to merge cells using column spanning in Typescript Data Grid, configure colspan behavior, and build complex multi-column layouts.
+title: Column spanning in TypeScript Grid control | Syncfusion
+description: Learn here all about Column spanning in Syncfusion TypeScript Grid control of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Column spanning 
 publishingplatform: grid-sdk
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Column Spanning in Typescript Data Grid
+# Column spanning in TypeScript Grid control
 
 The column spanning feature in the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid allows you to merge adjacent cells horizontally, creating a visually appealing and informative layout. By defining the [colSpan](../../api/grid/queryCellInfoEventArgs/#colspan) attribute in the [queryCellInfo](../../api/grid/queryCellInfoEventArgs/) event, you can easily span cells and customize the appearance of the grid.
 

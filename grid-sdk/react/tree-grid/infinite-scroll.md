@@ -1,14 +1,14 @@
 ---
 layout: post
-title: React TreeGrid Infinite Scroll | Syncfusion
-description: Learn how to enable and configure infinite scroll in the React TreeGrid for efficient large data handling, cache management, and best practices.
+title: Infinite scroll in React TreeGrid | Syncfusion
+description: Learn here all about Infinite scroll in Syncfusion React TreeGrid component of Syncfusion Essential JS 2 and more.
 control: Infinite scroll
 platform: grid-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Infinite Scroll in React TreeGrid
+# Infinite scroll in React TreeGrid
 
 Infinite scrolling loads large data sets without degrading TreeGrid performance. This feature uses lazy loading, buffer data is fetched only when the scrollbar reaches the end of the scroller.
 To enable Infinite scrolling, set the `enableInfiniteScrolling` property to true and inject the **InfiniteScroll** module in the TreeGrid.
@@ -63,7 +63,7 @@ To enable cache mode in Infinite scrolling, set the `infiniteScrollSettings.enab
 * Cell selection is not persisted in cache mode.
 * Infinite scrolling is not compatible with batch editing, cell editing, and detail template.
 * Aggregates and total group items reflect only the current view items. To compute across all items regardless of view, refer to the corresponding aggregate documentation.
-* Programmatic selection using the [selectRows](https://ej2.syncfusion.com/react/documentation/api/treegrid/#selectrows) and [selectRow](https://ej2.syncfusion.com/react/documentation/api/treegrid/#selectrow) methods is not supported with Infinite scrolling.
+* Programmatic selection using the [selectRows](https://ej2.syncfusion.com/react/documentation/api/treegrid#selectrows) and [selectRow](https://ej2.syncfusion.com/react/documentation/api/treegrid#selectrow) methods is not supported with Infinite scrolling.
 * Infinite scrolling does not support rendering records in a collapsed state. All records must be fully expanded at initial rendering.
 
 > Refer to the [React TreeGrid](https://www.syncfusion.com/react-ui-components/react-tree-grid) feature tour page for feature highlights. Explore the [React TreeGrid example](https://ej2.syncfusion.com/react/demos/#/material/treegrid/treegrid-overview) to learn how to present and manipulate data.

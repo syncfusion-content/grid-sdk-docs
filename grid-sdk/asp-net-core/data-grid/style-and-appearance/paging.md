@@ -1,14 +1,14 @@
 ---
 layout: post
-title: ASP.NET Core Grid Paging Customization | Syncfusion
-description: Learn how to customize paging styles in ASP.NET Core Data Grid with pager templates, page size controls, layout options, and pager UI customization.
+title: Paging in ASP.NET Core Grid Component
+description: Learn here all about Paging in Syncfusion ASP.NET Core Grid component of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Paging
 publishingplatform: grid-sdk
 documentation: ug
 ---
 
-# Paging Style in ASP.NET Core Data Grid
+# Paging in ASP.NET Core Grid component
 
 You can customize the appearance of the paging elements in the Syncfusion ASP.NET Core Grid component using CSS. Here are examples of how to customize the pager root element, pager container element, pager navigation elements, pager page numeric link elements, and pager current page numeric element.
 
