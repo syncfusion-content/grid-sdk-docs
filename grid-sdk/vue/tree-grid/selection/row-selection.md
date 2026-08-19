@@ -1,18 +1,18 @@
 ---
 layout: post
-title: Row selection in Vue Treegrid component | Syncfusion
-description: Learn here all about Row selection in Syncfusion Vue Treegrid component of Syncfusion Essential JS 2 and more.
+title: Vue TreeGrid Row Selection | Syncfusion
+description: Learn how to use row selection in Vue TreeGrid, including programmatic selection, selected records, row indexes, and persistent selection.
 control: Row selection 
 platform: grid-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Row selection in Vue Treegrid component
+# Row Selection in Vue TreeGrid
 
 ## Toggle selection
 
-The Toggle selection allows to perform selection and unselection of the particular row or cell. To enable toggle selection, set [`enableToggle`](https://ej2.syncfusion.com/vue/documentation/api/treegrid/selectionSettings/#enableToggle) property of the selectionSettings as true. If you click on the selected row or cell then it will be unselected and vice versa.
+The Toggle selection allows to perform selection and unselection of the particular row or cell. To enable toggle selection, set [`enableToggle`](https://ej2.syncfusion.com/vue/documentation/api/treegrid/selectionSettings#enableToggle) property of the selectionSettings as true. If you click on the selected row or cell then it will be unselected and vice versa.
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}

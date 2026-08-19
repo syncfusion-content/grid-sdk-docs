@@ -1,14 +1,13 @@
 ---
 layout: post
-title: Content in ASP.NET MVC Tree Grid Component | Syncfusion
-description: Learn here all about Content in Syncfusion ASP.NET MVC Tree Grid component of Syncfusion Essential JS 2 and more.
+title: ASP.NET MVC TreeGrid Cell Content | Syncfusion
+description: Learn how to display HTML content in ASP.NET MVC TreeGrid headers and cells using disableHtmlEncode to render formatted content and custom markup.
 platform: grid-sdk
 control: Content
-publishingplatform: grid-sdk
 documentation: ug
 ---
 
-# Displaying the HTML content
+# HTML Content in ASP.NET MVC TreeGrid
 
 The HTML tags can be displayed in the TreeGrid header and content by enabling the [`DisableHtmlEncode`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridColumn~DisableHtmlEncode.html) property.
 

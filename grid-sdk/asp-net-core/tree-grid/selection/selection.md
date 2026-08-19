@@ -1,19 +1,18 @@
 ---
 layout: post
-title: Selection in ASP.NET Core Tree Grid Component | Syncfusion
-description: Learn here all about Selection in Syncfusion ASP.NET Core Tree Grid component of Syncfusion Essential JS 2 and more.
+title: ASP.NET Core TreeGrid Selection | Syncfusion
+description: Learn all about selection in the ASP.NET Core TreeGrid, including single/multiple selection, selection modes, toggle selection, and touch interactions.
 platform: grid-sdk
 control: Selection
-publishingplatform: grid-sdk
 documentation: ug
 ---
 
 
-# Selection in ASP.NET Core Tree Grid Component
+# Selection in ASP.NET Core TreeGrid
 
 Selection provides an option to highlight a row or a cell. It can be done through simple mouse down or arrow keys. To disable selection in the TreeGrid, set the [`allowSelection`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.TreeGrid.TreeGrid.html#Syncfusion_EJ2_TreeGrid_TreeGrid_AllowSelection) to false.
 
-The treegrid supports two types of selection that can be set by using the [`type`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/aspnetcore/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridSelectionSettings~Type.html) property of [`e-treegrid-selectionsettings`] tag helper. They are:
+The treegrid supports two types of selection that can be set by using the [`type`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/aspnetcore/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridSelectionSettings~Type.html) property of [`SelectionSettings`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/aspnetcore/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridSelectionSettings~Type.html) tag helper. They are:
 
 * **Single**: The Single value is set by default, and it only allows selection of a single row or a cell.
 * **Multiple**: Allows you to select multiple rows or cells. To perform the multi-selection, press and hold CTRL key and click the desired rows or cells. To select range of rows or cells, press and hold the SHIFT key and click the rows or cells.

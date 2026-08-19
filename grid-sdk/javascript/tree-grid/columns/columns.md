@@ -3,8 +3,7 @@ layout: post
 title: JavaScript TreeGrid Columns | Syncfusion
 description: Learn how to configure and customize columns in JavaScript TreeGrid, including column types, visibility, templates, and formatting options.
 platform: grid-sdk
-control: Columns 
-publishingplatform: grid-sdk
+control: Columns
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
@@ -12,17 +11,17 @@ domainurl: https://help.syncfusion.com/grid-sdk
 # Columns in JavaScript TreeGrid
 
 The column definitions are used as the [`dataSource`](../../api/treegrid#dataSource) schema in the TreeGrid. This plays a vital role in rendering column values in the required format.
-The treegrid operations such as sorting, filtering and searching etc. are performed based on column definitions. The [`field`](../../api/treegrid/column/#field) property of the [`columns`](../../api/treegrid#column)
+The treegrid operations such as sorting, filtering and searching etc. are performed based on column definitions. The [`field`](../../api/treegrid/column#field) property of the [`columns`](../../api/treegrid#column)
 is necessary to map the data source values in TreeGrid columns.
 
-> 1. If the column [`field`](../../api/treegrid/column/#field) is not specified in the dataSource, the column values will be empty.
-> 2. If the [`field`](../../api/treegrid/column/#field) name contains “dot” operator, it is considered as complex binding.
+> 1. If the column [`field`](../../api/treegrid/column#field) is not specified in the dataSource, the column values will be empty.
+> 2. If the [`field`](../../api/treegrid/column#field) name contains “dot” operator, it is considered as complex binding.
 
 [`treeColumnIndex`](../../api/treegrid#treecolumnindex) property denotes the column that is used to expand and collapse child rows.
 
 ## Format
 
-To format cell values based on specific culture, use the [`columns.format`](../../api/treegrid/column/#format) property. The TreeGrid uses [Internalization](../../common/internationalization/) library to format [`number`](../../common/internationalization/#number-formatting) and [`date`](../../common/internationalization/#manipulating-datetime)
+To format cell values based on specific culture, use the [`columns.format`](../../api/treegrid/column#format) property. The TreeGrid uses [Internalization](../../common/internationalization) library to format [`number`](../../common/internationalization#number-formatting) and [`date`](../../common/internationalization#manipulating-datetime)
 values.
 
 {% if page.publishingplatform == "typescript" %}
@@ -52,7 +51,7 @@ values.
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/treegrid/columns-cs7" %}
 {% endif %}
 
-> By default, the [`number`](../../common/internationalization/#number-formatting) and [`date`](../../common/internationalization/#manipulating-datetime) values are formatted in `en-US` locale.
+> By default, the [`number`](../../common/internationalization#number-formatting) and [`date`](../../common/internationalization#manipulating-datetime) values are formatted in `en-US` locale.
 
 ### Number formatting
 
@@ -64,13 +63,13 @@ N | Denotes numeric type. | The numeric format is followed by integer value as N
 C | Denotes currency type. | The currency format is followed by integer value as C2, C3. etc which denotes the number of precision to be allowed.
 P | Denotes percentage type | The percentage format expects the input value to be in the range of 0 to 1. For example the cell value `0.2` is formatted as `20%`. The percentage format is followed by integer value as P2, P3. etc which denotes the number of precision to be allowed.
 
-Please refer to the link to know more about [`Number formatting`](../../common/internationalization/#number-formatting).
+Please refer to the link to know more about [`Number formatting`](../../common/internationalization#number-formatting).
 
 ### Date formatting
 
 You can format date values either using built-in date format string or custom format string.
 
-For built-in date format you can specify [`columns.format`](../../api/treegrid/column/#format) property as string   (Example: `yMd`). Please refer to the link to know more about [`Date formatting`](../../common/internationalization/#manipulating-datetime).
+For built-in date format you can specify [`columns.format`](../../api/treegrid/column#format) property as string   (Example: `yMd`). Please refer to the link to know more about [`Date formatting`](../../common/internationalization#manipulating-datetime).
 
 You can also use custom format string to format the date values. Some of the custom formats and the formatted date values are given in the below table.
 
@@ -111,7 +110,7 @@ Format | Formatted value
 
 ## Lock columns
 
-You can lock columns by using [`column.lockColumn`](../../api/treegrid/column/#lockcolumn) property. The locked columns will be moved to the first position. Also you can’t reorder its position.
+You can lock columns by using [`column.lockColumn`](../../api/treegrid/column#lockcolumn) property. The locked columns will be moved to the first position. Also you can’t reorder its position.
 
 In the below example, duration column is locked and its reordering functionality is disabled.
 
@@ -144,10 +143,10 @@ In the below example, duration column is locked and its reordering functionality
 
 ## Column type
 
-Column type can be specified using the [`columns.type`](../../api/treegrid/column/#type) property. It specifies the type of data the column binds.
+Column type can be specified using the [`columns.type`](../../api/treegrid/column#type) property. It specifies the type of data the column binds.
 
-If the [`format`](../../api/treegrid/column/#format)  is defined for a column, the column uses [`type`](../../api/treegrid/column/#type) to select the appropriate format option ([number](../../common/internationalization/#number-formatting)
- or [date](../../common/internationalization/#manipulating-datetime)).
+If the [`format`](../../api/treegrid/column#format)  is defined for a column, the column uses [`type`](../../api/treegrid/column#type) to select the appropriate format option ([number](../../common/internationalization#number-formatting)
+ or [date](../../common/internationalization#manipulating-datetime)).
 
 TreeGrid column supports the following types:
 
@@ -157,11 +156,11 @@ TreeGrid column supports the following types:
 * date
 * datetime
 
-> If the [`type`](../../api/treegrid/column/#type) is not defined, it will be determined from the first record of the [`dataSource`](../../api/treegrid/column/#datasource).
+> If the [`type`](../../api/treegrid/column#type) is not defined, it will be determined from the first record of the [`dataSource`](../../api/treegrid/column#datasource).
 
 ## Controlling Tree Grid actions
 
-You can enable or disable treegrid action for a particular column by setting the [`allowFiltering`](../../api/treegrid/column/#allowfiltering), and [`allowSorting`](../../api/treegrid/column/#allowsorting) properties.
+You can enable or disable treegrid action for a particular column by setting the [`allowFiltering`](../../api/treegrid/column#allowfiltering), and [`allowSorting`](../../api/treegrid/column#allowsorting) properties.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -192,7 +191,7 @@ You can enable or disable treegrid action for a particular column by setting the
 
 ## Show/hide columns by external button
 
-You can show or hide treegrid columns dynamically using external buttons by invoking the [`showColumns`](../../api/treegrid/#showcolumns) or [`hideColumns`](../../api/treegrid/#hidecolumns) method.
+You can show or hide treegrid columns dynamically using external buttons by invoking the [`showColumns`](../../api/treegrid#showcolumns) or [`hideColumns`](../../api/treegrid#hidecolumns) method.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -223,7 +222,7 @@ You can show or hide treegrid columns dynamically using external buttons by invo
 
 ## ValueAccessor
 
-The [`valueAccessor`](../../api/treegrid/column/#valueaccessor) is used to access/manipulate the value of display data. You can achieve custom value formatting by using the [`valueAccessor`](../../api/treegrid/column/#valueaccessor).
+The [`valueAccessor`](../../api/treegrid/column#valueaccessor) is used to access/manipulate the value of display data. You can achieve custom value formatting by using the [`valueAccessor`](../../api/treegrid/column#valueaccessor).
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -254,9 +253,9 @@ The [`valueAccessor`](../../api/treegrid/column/#valueaccessor) is used to acces
 
 ### Display array type columns
 
-You can bind an array of objects in a column by using the [`valueAccessor`](../../api/treegrid/column/#valueaccessor) property.
+You can bind an array of objects in a column by using the [`valueAccessor`](../../api/treegrid/column#valueaccessor) property.
 In this example, the name field has an array of two objects, FirstName and LastName. These two objects are joined and bound to a column using the
-[`valueAccessor`](../../api/treegrid/column/#valueaccessor).
+[`valueAccessor`](../../api/treegrid/column#valueaccessor).
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -287,7 +286,7 @@ In this example, the name field has an array of two objects, FirstName and LastN
 
 ### Expression column
 
-You can achieve the expression column by using the [`valueAccessor`](../../api/treegrid/column/#valueaccessor) property.
+You can achieve the expression column by using the [`valueAccessor`](../../api/treegrid/column#valueaccessor) property.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -318,7 +317,7 @@ You can achieve the expression column by using the [`valueAccessor`](../../api/t
 
 ## How to render boolean values as checkbox
 
-To render boolean values as checkbox in columns, you need to set [`displayAsCheckBox`](../../api/treegrid/column/#displayascheckbox) property as `true`.
+To render boolean values as checkbox in columns, you need to set [`displayAsCheckBox`](../../api/treegrid/column#displayascheckbox) property as `true`.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -347,4 +346,4 @@ To render boolean values as checkbox in columns, you need to set [`displayAsChec
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/treegrid/columns-cs15" %}
 {% endif %}
 
-> You can refer to our [`JavaScript Tree Grid`](https://www.syncfusion.com/javascript-ui-controls/js-tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our JavaScript Tree Grid example [`JavaScript Tree Grid example`](https://ej2.syncfusion.com/demos/#/material/tree-grid/treegrid-overview.html) to knows how to present and manipulate data.
+> You can refer to our [`JavaScript Tree Grid`](https://www.syncfusion.com/javascript-ui-controls/js-tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our JavaScript Tree Grid example [`JavaScript Tree Grid example`](https://ej2.syncfusion.com/demos#/material/tree-grid/treegrid-overview.html) to knows how to present and manipulate data.

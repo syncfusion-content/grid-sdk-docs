@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Javascript Grid Column Pinning | Syncfusion
-description: Learn how to freeze and pin columns in Javascript Data Grid to keep important fields visible while scrolling and synchronize frozen content.
+title: Column pinning (Frozen) in JavaScript Grid control | Syncfusion
+description: Learn here all about Column pinning (Frozen) in Syncfusion JavaScript Grid control of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
-control: Column pinning (Frozen) 
-publishingplatform: grid-sdk
+control: Column pinning (Frozen)
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Column Pinning in Javascript Data Grid
+# Column Pinning (Frozen) in JavaScript Grid control
 
 In the JavaScript Grid control, you have the capability to **freeze** columns, ensuring they remain visible as you scroll through extensive datasets. This functionality significantly improves user experience by keeping critical information constantly within view, even when navigating through large volumes of data. This means that important columns remain fixed in their positions, making it easier to access and reference key data points while working with the grid.
 

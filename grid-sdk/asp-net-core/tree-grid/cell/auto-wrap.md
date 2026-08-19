@@ -1,14 +1,13 @@
 ---
 layout: post
-title: Auto Wrap in ASP.NET Core Tree Grid Component | Syncfusion
-description: Learn here all about Auto Wrap in Syncfusion ASP.NET Core Tree Grid component of Syncfusion Essential JS 2 and more.
+title: ASP.NET Core TreeGrid Auto Wrap | Syncfusion
+description: Learn how to enable auto wrap in ASP.NET Core TreeGrid to display header and cell content across multiple lines using flexible text wrapping modes.
 platform: grid-sdk
 control: Auto Wrap
-publishingplatform: grid-sdk
 documentation: ug
 ---
 
-# Auto Wrap in ASP.NET Core Tree Grid Component
+# Auto Wrap in ASP.NET Core TreeGrid
 
 The auto wrap allows the cell content of the treegrid to wrap to the next line when it exceeds the boundary of the cell width. The Cell Content wrapping works based on the position of white space between words. To enable auto wrap, set the [`allowTextWrap`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGrid~AllowTextWrap.html) property to **true**.
 

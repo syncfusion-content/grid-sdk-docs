@@ -1,18 +1,17 @@
 ---
 layout: post
-title: React TreeGrid Toolbar Items | Syncfusion
-description: Learn about configuring built-in and custom toolbar items in the React TreeGrid, including actions, alignment, and best practices.
+title: Tool bar items in React TreeGrid component | Syncfusion
+description: Learn here all about Tool bar items in Syncfusion React TreeGrid component of Syncfusion Essential JS 2 and more.
 control: Tool bar items
 platform: grid-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
-
-# Toolbar Items in React TreeGrid
+# Tool bar items in React TreeGrid
 
 ## Built-in toolbar items
 
-Built-in toolbar items execute standard TreeGrid actions and can be added by defining the [toolbar](https://ej2.syncfusion.com/react/documentation/api/treegrid/#toolbar) property as a collection of built-in items. Each item renders as a button with an icon and text.
+Built-in toolbar items execute standard TreeGrid actions and can be added by defining the [toolbar](https://ej2.syncfusion.com/react/documentation/api/treegrid#toolbar) property as a collection of built-in items. Each item renders as a button with an icon and text.
 
 The following table lists built-in toolbar items and their actions.
 
@@ -44,13 +43,13 @@ The following table lists built-in toolbar items and their actions.
 {% endtabs %}
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/treegrid/toolbar-cs1" %}
 
-> The [toolbar](https://ej2.syncfusion.com/react/documentation/api/treegrid/#toolbar) supports both built-in and custom toolbar items.
+> The [toolbar](https://ej2.syncfusion.com/react/documentation/api/treegrid#toolbar) supports both built-in and custom toolbar items.
 
 ## Custom toolbar items
 
-Custom toolbar items can be added by defining the [toolbar](https://ej2.syncfusion.com/react/documentation/api/treegrid/#toolbar) property as a collection of [ItemModels](https://ej2.syncfusion.com/react/documentation/api/toolbar/itemModel/). Actions for custom items are handled in the [toolbarClick](https://ej2.syncfusion.com/react/documentation/api/treegrid/#toolbarclick) event.
+Custom toolbar items can be added by defining the [toolbar](https://ej2.syncfusion.com/react/documentation/api/treegrid#toolbar) property as a collection of [ItemModels](https://ej2.syncfusion.com/react/documentation/api/toolbar/itemModel). Actions for custom items are handled in the [toolbarClick](https://ej2.syncfusion.com/react/documentation/api/treegrid#toolbarclick) event.
 
-By default, custom items are aligned to the **Left**. The position can be changed using the [align](https://ej2.syncfusion.com/react/documentation/api/toolbar/itemModel/#align) property. In the sample below, the position is set to **Right** for the **Quick Filter** toolbar item.
+By default, custom items are aligned to the **Left**. The position can be changed using the [align](https://ej2.syncfusion.com/react/documentation/api/toolbar/itemModel#align) property. In the sample below, the position is set to **Right** for the **Quick Filter** toolbar item.
 
 {% tabs %}
 {% highlight js tabtitle="app.jsx" %}
@@ -62,7 +61,7 @@ By default, custom items are aligned to the **Left**. The position can be change
 {% endtabs %}
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/treegrid/toolbar-cs2" %}
 
-> * The [toolbar](https://ej2.syncfusion.com/react/documentation/api/treegrid/#toolbar) supports both built-in and custom items.  
+> * The [toolbar](https://ej2.syncfusion.com/react/documentation/api/treegrid#toolbar) supports both built-in and custom items.  
 > * Any item that does not match a built-in name is treated as a custom toolbar item.
 
 ## Built-in and custom items in toolbar

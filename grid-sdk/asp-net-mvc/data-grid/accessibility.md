@@ -1,14 +1,14 @@
 ---
 layout: post
-title: ASP.NET MVC Grid Accessibility | Syncfusion
-description: Learn how to use accessibility features in ASP.NET MVC Data Grid with keyboard navigation, ARIA attributes, screen reader support, and accessibility standards.
+title: Accessibility in Syncfusion ASP.NET MVC Grid Component
+description: Learn here all about Accessibility in Syncfusion ASP.NET MVC Grid component of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Accessibility
 publishingplatform: grid-sdk
 documentation: ug
 ---
 
-# Accessibility in Grid Component
+# Accessibility in Grid component
 
 The Grid component followed the accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) that are commonly used to evaluate accessibility.
 

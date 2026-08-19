@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Typescript Grid Accessibility | Syncfusion
-description: Learn how to use accessibility features in Typescript Data Grid with keyboard navigation, ARIA support, screen readers, and WCAG standards.
+title: Accessibility in TypeScript Grid control | Syncfusion
+description: Learn here all about Accessibility in Syncfusion TypeScript Grid control of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Accessibility 
 publishingplatform: grid-sdk
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Accessibility in Typescript Data Grid
+# Accessibility in TypeScript Grid control
 
 The Grid control followed the accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) that are commonly used to evaluate accessibility.
 

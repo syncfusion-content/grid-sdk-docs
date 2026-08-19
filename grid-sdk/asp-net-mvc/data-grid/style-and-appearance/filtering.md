@@ -1,14 +1,14 @@
 ---
 layout: post
-title: ASP.NET MVC Grid Filtering Customization | Syncfusion
-description: Learn how to customize filtering styles in ASP.NET MVC Data Grid with filter bars, filter menus, Excel-like filtering, templates, and filter UI appearance.
+title: Filtering in ASP.NET MVC Grid Component
+description: Learn here all about Filtering in Syncfusion ASP.NET MVC Grid component of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Filtering
 publishingplatform: grid-sdk
 documentation: ug
 ---
 
-# Filtering Style in ASP.NET MVC Data Grid
+# Filtering in ASP.NET MVC Grid component
 
 You can customize the appearance of filtering elements in the Syncfusion ASP.NET MVC Grid component using CSS. Below are examples of how to customize various filtering elements, including filter bar cell elements, filter bar input elements, focus styles, clear icons, filter icons, filter dialog content, filter dialog footer, filter dialog input elements, filter dialog button elements, and Excel filter dialog number filters.
 

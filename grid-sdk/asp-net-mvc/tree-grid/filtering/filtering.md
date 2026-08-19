@@ -1,15 +1,13 @@
 ---
 layout: post
-title: Filtering in ASP.NET MVC Tree Grid Component | Syncfusion
-description: Learn here all about Filtering in Syncfusion ASP.NET MVC Tree Grid component of Syncfusion Essential JS 2 and more.
+title: ASP.NET MVC TreeGrid Filtering | Syncfusion
+description: Learn how to use filtering in ASP.NET MVC TreeGrid, including filter bar, menu, Excel-like filtering, operators, and custom filter options.
 platform: grid-sdk
 control: Filtering
-publishingplatform: grid-sdk
 documentation: ug
 ---
 
-
-# Filtering in ASP.NET MVC Tree Grid Component
+# Filtering in ASP.NET MVC TreeGrid
 
 Filtering allows you to view specific or related records based on filter criteria. To enable filtering in the TreeGrid, set the [`AllowFiltering`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGrid~AllowFiltering.html) to true. Filtering options can be configured through [`FilterSettings`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGrid~FilterSettings.html).
 
@@ -38,7 +36,7 @@ Filtering allows you to view specific or related records based on filter criteri
 
 
 
-N> You can apply and clear filtering by using [`filterByColumn`](https://ej2.syncfusion.com/documentation/api/treegrid/#filterbycolumn) and [`clearFiltering`](https://ej2.syncfusion.com/documentation/api/treegrid/#clearfiltering) methods.
+N> You can apply and clear filtering by using [`filterByColumn`](https://ej2.syncfusion.com/documentation/api/treegrid#filterbycolumn) and [`clearFiltering`](https://ej2.syncfusion.com/documentation/api/treegrid#clearfiltering) methods.
 <br/> To disable filtering for a particular column, set [`AllowFiltering`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridColumn~AllowFiltering.html) property of [`Column`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridColumn.html) to false.
 
 ## Filter hierarchy modes

@@ -3,8 +3,7 @@ layout: post
 title: JavaScript TreeGrid PDF Headers and Footers | Syncfusion
 description: Learn how to add and customize headers and footers in PDF exports for the JavaScript TreeGrid, including text, page numbers, lines, and images.
 platform: grid-sdk
-control: Adding header and footer 
-publishingplatform: grid-sdk
+control: Adding header and footer
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---

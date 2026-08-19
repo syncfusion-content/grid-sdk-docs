@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Toolbar Items in ASP.NET MVC Tree Grid Component | Syncfusion
-description: Learn here all about Toolbar Items in Syncfusion ASP.NET MVC Tree Grid component of Syncfusion Essential JS 2 and more.
+title: ASP.NET MVC TreeGrid Toolbar Items | Syncfusion
+description: Learn about configuring built-in and custom toolbar items in the ASP.NET MVC TreeGrid, including actions, alignment, and best practices.
 platform: grid-sdk
 control: Toolbar Items
 publishingplatform: grid-sdk
 documentation: ug
 ---
 
-
-# Toolbar Items in ASP.NET MVC Tree Grid Component
+# Toolbar Items in ASP.NET MVC TreeGrid
 
 ## Built-in toolbar items
 

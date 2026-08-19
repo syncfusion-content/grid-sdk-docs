@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Typescript Grid Paging Customization | Syncfusion
-description: Learn how to customize paging styles in Typescript Data Grid with pager templates, page size controls, layout options, and pager UI customization.
+title: Paging in TypeScript Grid control | Syncfusion
+description: Learn here all about Paging in Syncfusion TypeScript Grid control of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Paging 
 publishingplatform: grid-sdk
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Paging Style in Typescript Data Grid
+# Paging in TypeScript Grid control
 
 You can customize the appearance of the paging elements in the TypeScript Grid control using CSS. Here are examples of how to customize the pager root element, pager container element, pager navigation elements, pager page numeric link elements, and pager current page numeric element.
 

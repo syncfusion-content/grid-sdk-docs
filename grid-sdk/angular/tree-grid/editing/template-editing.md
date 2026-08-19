@@ -1,20 +1,20 @@
 ---
 layout: post
-title: Angular TreeGrid Template Editing | Syncfusion
-description: Learn how to use template editing in Angular TreeGrid to create custom edit forms with tailored layouts and controls.
+title: Template editing in Angular TreeGrid component | Syncfusion
+description: Learn here all about Template editing in Syncfusion Angular TreeGrid component of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Template editing 
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Template Editing in Angular TreeGrid
+# Template editing in Angular TreeGrid component
 
 ## Reactive forms
 
-[Reactive](https://angular.io/guide/reactive-forms) Forms is a model-driven approach to create and manipulate form controls. You can use reactive forms to add and update TreeGrid records. To use reactive forms for editing operations, you can leverage the template support of dialog or row edit mode. Setting the [editSettings.mode](https://ej2.syncfusion.com/angular/documentation/api/treegrid/editSettings/#mode) as **Row/Dialog** and **editSettingsTemplate** as template variable of NgTemplate to define the TreeGrid editors.
+[Reactive](https://angular.io/guide/reactive-forms) Forms is a model-driven approach to create and manipulate form controls. You can use reactive forms to add and update TreeGrid records. To use reactive forms for editing operations, you can leverage the template support of dialog or row edit mode. Setting the [editSettings.mode](https://ej2.syncfusion.com/angular/documentation/api/treegrid/editSettings#mode) as **Row/Dialog** and **editSettingsTemplate** as template variable of NgTemplate to define the TreeGrid editors.
 
-In the following sample, the **FormGroup** with **FormControls** is created for each column in the [actionBegin](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#actionbegin) event. While saving, the formgroup is validated and the TreeGrid is updated with the edited data from the FormGroup object:
+In the following sample, the **FormGroup** with **FormControls** is created for each column in the [actionBegin](https://ej2.syncfusion.com/angular/documentation/api/treegrid#actionbegin) event. While saving, the FormGroup is validated and the TreeGrid is updated with the edited data from the FormGroup object:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -29,7 +29,7 @@ In the following sample, the **FormGroup** with **FormControls** is created for 
 
 ## Template-driven forms
 
-[Template-driven](https://angular.io/guide/forms#template-driven-forms) forms is a template-driven approach to create and manipulate form controls. You can use template-driven forms to add and update TreeGrid records. To use template-driven forms for editing operations, you can leverage the template support of dialog or row edit mode. Setting the [editSettings.mode](https://ej2.syncfusion.com/angular/documentation/api/treegrid/editSettingsModel/#mode) as `Row/Dialog` and `editSettingsTemplate` as template variable of NgTemplate to define the TreeGrid editors.
+Template-driven forms is a template-driven approach to create and manipulate form controls. You can use template-driven forms to add and update TreeGrid records. To use template-driven forms for editing operations, you can leverage the template support of dialog or row edit mode. Setting the [editSettings.mode](https://ej2.syncfusion.com/angular/documentation/api/treegrid/editSettingsModel#mode) as `Row/Dialog` and `editSettingsTemplate` as template variable of NgTemplate to define the TreeGrid editors.
 
 In some cases, you need to add new field editors in the dialog which are not present in the column model. In that situation, the dialog template will help you customize the default edit dialog.
 
@@ -86,7 +86,7 @@ The following code example illustrates rendering the **taskID** textbox, when a 
 
 ## Set focus to editor
 
-By default, the first input element in the dialog will be focused while opening the dialog. If the first input element is in disabled or hidden state then you need to focus the valid input element in the [actionComplete](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#actioncomplete) event based on **requestType** as **beginEdit**.
+By default, the first input element in the dialog will be focused while opening the dialog. If the first input element is in disabled or hidden state then you need to focus the valid input element in the [actionComplete](https://ej2.syncfusion.com/angular/documentation/api/treegrid#actioncomplete) event based on **requestType** as **beginEdit**.
 
 ```typescript
 
@@ -101,7 +101,7 @@ By default, the first input element in the dialog will be focused while opening 
 
 ## Disable form validation
 
-If you are interested in using [angular form validation](https://angular.io/guide/form-validation) then you need to disable the default validation rules in the [actionComplete](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#actioncomplete) event.
+If you are interested in using angular form validation then you need to disable the default validation rules in the [actionComplete](https://ej2.syncfusion.com/angular/documentation/api/treegrid#actioncomplete) event.
 
 ```typescript
 
@@ -116,7 +116,7 @@ If you are interested in using [angular form validation](https://angular.io/guid
 
 ## Adding validation rules for custom editors
 
-If you are interested in using our default form validation, the validation rules for the fields which are not present in the column model need to be added in the [actionComplete](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#actioncomplete) event.
+If you are interested in using our default form validation, the validation rules for the fields which are not present in the column model need to be added in the [actionComplete](https://ej2.syncfusion.com/angular/documentation/api/treegrid#actioncomplete) event.
 
 ```typescript
 
@@ -131,7 +131,7 @@ If you are interested in using our default form validation, the validation rules
 
 ## Render tab component inside the dialog template
 
-You can use [Tab](https://ej2.syncfusion.com/angular/documentation/tab/getting-started) component inside dialog edit UI using dialog template feature. The dialog template feature can be enabled by defining [editSettings.mode](https://ej2.syncfusion.com/angular/documentation/api/treegrid/editSettings/#mode) as `Dialog` and **editSettingsTemplate** as template variable in NgTemplate to define the TreeGrid editors.
+You can use [Tab](https://ej2.syncfusion.com/angular/documentation/tab/getting-started) component inside dialog edit UI using dialog template feature. The dialog template feature can be enabled by defining [editSettings.mode](https://ej2.syncfusion.com/angular/documentation/api/treegrid/editSettings#mode) as `Dialog` and **editSettingsTemplate** as template variable in NgTemplate to define the TreeGrid editors.
 
 To include tab components in the Dialog, please ensure the following steps:
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Vue Grid Registration Using Vue Component | Syncfusion
-description: Learn how to register Vue Data Grid using Vue component, including Grid, column, and aggregate directive registration for Vue applications.
+title: Register the grid using vue component in Vue Grid component | Syncfusion
+description: Learn here all about Register the grid using vue component in Syncfusion Vue Grid component of Syncfusion Essential JS 2 and more.
 control: Register the grid using vue component 
 platform: grid-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Grid Registration with Vue Component in Vue Data Grid
+# Register the grid using vue component in Vue Grid component
 
 Import the `GridComponent` from the `@syncfuion/ej2-vue-grids` package,register the same using the `Vue.component()` with name of the grid selector and the [Vue Data Grid](https://www.syncfusion.com/vue-components/vue-grid) Component as its arguments.
 

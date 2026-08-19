@@ -1,14 +1,14 @@
 ---
 layout: post
-title: ASP.NET Core Grid Data Annotation | Syncfusion
-description: Learn how to use data annotations in ASP.NET Core Data Grid to enable model validation, display attributes, and custom validation messages.
+title: Data Annotation in ASP.NET Core Grid Component
+description: Learn here all about Data Annotation in Syncfusion ASP.NET Core Grid component of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Data Annotation
 publishingplatform: grid-sdk
 documentation: ug
 ---
 
-# Data Annotation in ASP.NET Core Data Grid
+# Data Annotation in Grid Component
 
 Data Annotation helps you define rules for the model class to perform data validation and display suitable messages to end users as validation message in the edit form.
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: ASP.NET MVC Grid Style and Appearance | Syncfusion
-description: Learn how to customize the style and appearance of ASP.NET MVC Data Grid with built-in themes, CSS customization, theme packages, and design configuration.
+title: Style And Appearance in Syncfusion ASP.NET MVC Grid Component
+description: Learn here all about Style And Appearance in Syncfusion ASP.NET MVC Grid component of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Style And Appearance
 publishingplatform: grid-sdk
 documentation: ug
 ---
 
-# Style and Appearance in ASP.NET MVC Data Grid
+# Style and appearance in ASP.NET MVC Grid component
 
 The Grid component offers various ways to customize its appearance using both default CSS and custom themes. Let's go over some common approaches:
 

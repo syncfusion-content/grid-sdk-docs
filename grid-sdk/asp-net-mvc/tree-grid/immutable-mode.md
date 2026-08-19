@@ -1,21 +1,20 @@
 ---
 layout: post
-title: Immutable Mode in ASP.NET MVC Tree Grid Component
-description: Learn here all about Immutable Mode in Syncfusion ASP.NET MVC Tree Grid component of Syncfusion Essential JS 2 and more.
+title: Immutable mode in ASP.NET MVC Treegrid | Syncfusion
+description: Learn here all about Immutable mode in Syncfusion ASP.NET MVC Treegrid control of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Immutable Mode
-publishingplatform: grid-sdk
 documentation: ug
 ---
 
 
-# Immutable Mode
+# Immutable mode in ASP.NET MVC Treegrid
 
-The immutable mode optimizes the Tree Grid re-rendering performance by using the object reference and [`deep compare`](https://dmitripavlutin.com/how-to-compare-objects-in-javascript/#4-deep-equality) concept. When performing the Tree Grid actions, it will only re-render the modified or newly added rows and prevent the re-rendering of the unchanged rows.
+The immutable mode optimizes the Tree Grid re-rendering performance by using the object reference and deep compare concept. When performing the Tree Grid actions, it will only re-render the modified or newly added rows and prevent the re-rendering of the unchanged rows.
 
 To enable this feature, you have to set the `EnableImmutableMode` property as **true**.
 
-N>* This feature uses the primary key value for data comparison. So, you need to provide the [`IsPrimaryKey`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.TreeGrid.TreeGridColumn.html#Syncfusion_EJ2_TreeGrid_TreeGridColumn_IsPrimaryKey) column.
+> * This feature uses the primary key value for data comparison. So, you need to provide the [`IsPrimaryKey`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.TreeGrid.TreeGridColumn.html#Syncfusion_EJ2_TreeGrid_TreeGridColumn_IsPrimaryKey) column.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

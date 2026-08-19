@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Tool bar items in Vue Treegrid component | Syncfusion
-description: Learn here all about Tool bar items in Syncfusion Vue Treegrid component of Syncfusion Essential JS 2 and more.
+title: Angular TreeGrid Toolbar Items | Syncfusion
+description: Learn about configuring built-in and custom toolbar items in the Angular TreeGrid, including actions, alignment, and best practices.
 control: Tool bar items 
 platform: grid-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Tool bar items in Vue Treegrid component
+# Toolbar Items in Angular TreeGrid
 
 ## Built-in toolbar items
 
@@ -42,14 +42,14 @@ The following table shows built-in toolbar items and its actions.
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/treegrid/toolbar/default-cs1" %}
 
-> * The [`toolbar`](https://ej2.syncfusion.com/vue/documentation/api/treegrid/#toolbar) has options to define both built-in and custom toolbar items.
+> * The [`toolbar`](https://ej2.syncfusion.com/vue/documentation/api/treegrid#toolbar) has options to define both built-in and custom toolbar items.
 
 ## Custom toolbar items
 
-Custom toolbar items can be added by defining the [`toolbar`](https://ej2.syncfusion.com/vue/documentation/api/treegrid/#toolbar) as a collection of
-[`ItemModels`](https://ej2.syncfusion.com/vue/documentation/api/toolbar/#item). Actions for this customized toolbar items are defined in the [`toolbarClick`](https://ej2.syncfusion.com/vue/documentation/api/treegrid/#toolbarclick) event.
+Custom toolbar items can be added by defining the [`toolbar`](https://ej2.syncfusion.com/vue/documentation/api/treegrid#toolbar) as a collection of
+[`ItemModels`](https://ej2.syncfusion.com/vue/documentation/api/toolbar#item). Actions for this customized toolbar items are defined in the [`toolbarClick`](https://ej2.syncfusion.com/vue/documentation/api/treegrid#toolbarclick) event.
 
-By default, Custom toolbar items are in position `Left`. You can change the position by using the [`align`](https://ej2.syncfusion.com/vue/documentation/api/toolbar/#item) property. In the below sample, we have applied position `Right` for the `Quick Filter` toolbar item.
+By default, Custom toolbar items are in position `Left`. You can change the position by using the [`align`](https://ej2.syncfusion.com/vue/documentation/api/toolbar#item) property. In the below sample, we have applied position `Right` for the `Quick Filter` toolbar item.
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
@@ -62,7 +62,7 @@ By default, Custom toolbar items are in position `Left`. You can change the posi
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/treegrid/toolbar/default-cs2" %}
 
-> * The [`toolbar`](https://ej2.syncfusion.com/vue/documentation/api/treegrid/#toolbar) has options to define both built-in and custom toolbar items.
+> * The [`toolbar`](https://ej2.syncfusion.com/vue/documentation/api/treegrid#toolbar) has options to define both built-in and custom toolbar items.
 > * If a toolbar item does not match the built-in items, it will be treated as a custom toolbar item.
 
 ## Built-in and custom items in toolbar

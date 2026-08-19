@@ -1,14 +1,13 @@
 ---
 layout: post
-title: Headers in ASP.NET Core Tree Grid Component | Syncfusion
-description: Learn here all about Headers in Syncfusion ASP.NET Core Tree Grid component of Syncfusion Essential JS 2 and more.
+title: ASP.NET Core TreeGrid Headers | Syncfusion
+description: Learn how to configure and customize column headers in ASP.NET Core TreeGrid, including header text and template options.
 platform: grid-sdk
 control: Headers
-publishingplatform: grid-sdk
 documentation: ug
 ---
 
-# Headers in ASP.NET Core Tree Grid Component
+# Headers in ASP.NET Core TreeGrid
 
 ## Header text
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Blazor TreeGrid Column Spanning | Syncfusion
-description: Learn how to use column spanning in Blazor TreeGrid to merge adjacent cells, improve data presentation, and enhance grid readability.
+title: Column Spanning in Blazor Tree Grid Component | Syncfusion®
+description: Check out here and learn more details about the column spanning in the Blazor Tree Grid component and much more details.
 platform: grid-sdk
 control: Tree Grid
 documentation: ug

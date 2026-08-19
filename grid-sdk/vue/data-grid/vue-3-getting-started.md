@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Vue Grid Getting Started with Vue 3 | Syncfusion
-description: Learn how to get started with Vue Data Grid in Vue 3 using Vite, Composition API, Options API, project setup, and grid configuration.
+title: Vue 3 getting started with the Data Grid component | Syncfusion
+description: Check out and learn about Vue 3 getting started with the Vue Data Grid component of Syncfusion Essential JS 2 and more details.
 control: Vue 3 getting started
 platform: grid-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Getting Started with Vue Data Grid in Vue 3
+# Getting Started with the Vue Data Grid Component in Vue 3
 
 This article provides a step-by-step guide for setting up a [Vite](https://vitejs.dev) project with a JavaScript environment and integrating the [Vue Data Grid](https://www.syncfusion.com/vue-components/vue-grid) component using the [Composition API](https://vuejs.org/guide/introduction.html#composition-api) / [Options API](https://vuejs.org/guide/introduction.html#options-api).
 
@@ -97,7 +97,7 @@ npm run dev
 
 The output will appear as follows:
 
-![Grid Component](./images/cli-grid.png)
+![Grid Component](./images/vue-3-js-grid.png)
 
 {% endtabcontent %}
 

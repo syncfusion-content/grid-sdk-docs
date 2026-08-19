@@ -5,10 +5,10 @@ description: Learn how to group data in Syncfusion® .NET MAUI Data Grid, includ
 platform: grid-sdk
 control: SfDataGrid
 documentation: UG
-keywords : maui data grid, maui datagrid, maui grid, grid maui, maui gridview, grid in maui, .net maui datagrid, .net maui grid, .net grid maui, .net maui grouping, maui grouping
+keywords : maui datagrid, maui grid, grid maui, maui gridview, grid in maui, .net maui datagrid, .net maui grid, .net grid maui, .net maui grouping, maui grouping
 ---
 
-# Grouping in .NET MAUI Data Grid
+# Grouping in MAUI DataGrid (SfDataGrid)
 
 Grouping in a datagrid refers to the process of organizing and categorizing data based on specific criteria or field values. It allows you to group related records together, creating a hierarchical structure within the datagrid. Each group is identified by its [CaptionSummaryRow](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.DataGrid.SfDataGrid.html#Syncfusion_Maui_DataGrid_SfDataGrid_CaptionSummaryRowProperty), which displays the group key and provides access to the underlying records in that group. The CaptionSummaryRow shows summary information such as the grouping column value and the count of records in each group.
 

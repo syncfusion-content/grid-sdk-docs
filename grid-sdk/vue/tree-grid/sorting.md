@@ -1,23 +1,23 @@
 ---
 layout: post
-title: Sorting in Vue Treegrid component | Syncfusion
-description: Learn here all about Sorting in Syncfusion Vue Treegrid component of Syncfusion Essential JS 2 and more.
+title: Vue TreeGrid Sorting | Syncfusion
+description: Learn how to sort data in Vue TreeGrid, including single and multi-column sorting, custom sorting, and sort order configuration.
 control: Sorting 
 platform: grid-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Sorting in Vue Treegrid component
+# Sorting in Vue TreeGrid
 
 Sorting enables you to sort data in the `Ascending` or `Descending` order.
 To sort a column, click the column header.
 
 To sort multiple columns, press and hold the CTRL key and click the column header.  You can clear sorting of any one of the multi-sorted columns by pressing and holding the SHIFT key and clicking the specific column header.
 
-To enable sorting in the TreeGrid, set the [`allowSorting`](https://ej2.syncfusion.com/vue/documentation/api/treegrid/#allowsorting) to true. Sorting options can be configured through the [`sortSettings`](https://ej2.syncfusion.com/vue/documentation/api/treegrid/sortSettings).
+To enable sorting in the TreeGrid, set the [`allowSorting`](https://ej2.syncfusion.com/vue/documentation/api/treegrid#allowsorting) to true. Sorting options can be configured through the [`sortSettings`](https://ej2.syncfusion.com/vue/documentation/api/treegrid/sortSettings).
 
-To sort, inject the [`Sort`](https://ej2.syncfusion.com/vue/documentation/api/treegrid/#sortmodule) module in the treegrid.
+To sort, inject the [`Sort`](https://ej2.syncfusion.com/vue/documentation/api/treegrid#sortmodule) module in the treegrid.
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
@@ -31,13 +31,13 @@ To sort, inject the [`Sort`](https://ej2.syncfusion.com/vue/documentation/api/tr
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/treegrid/sorting/default-cs1" %}
 
 > * TreeGrid columns are sorted in the `Ascending` order. If you click the already sorted column, the sort direction toggles.
-> * You can apply and clear sorting by invoking [`sortByColumn`](https://ej2.syncfusion.com/vue/documentation/api/treegrid/#sortbycolumn) and
-[`clearSorting`](https://ej2.syncfusion.com/vue/documentation/api/treegrid/#clearsorting) methods.
-> * To disable sorting for a particular column, set the [`columns.allowSorting`](https://ej2.syncfusion.com/vue/documentation/api/treegrid/column/#allowSorting) to false.
+> * You can apply and clear sorting by invoking [`sortByColumn`](https://ej2.syncfusion.com/vue/documentation/api/treegrid#sortbycolumn) and
+[`clearSorting`](https://ej2.syncfusion.com/vue/documentation/api/treegrid#clearsorting) methods.
+> * To disable sorting for a particular column, set the [`columns.allowSorting`](https://ej2.syncfusion.com/vue/documentation/api/treegrid/column#allowSorting) to false.
 
 ## Initial sort
 
-To sort at initial rendering, set the [`field`](https://ej2.syncfusion.com/vue/documentation/api/treegrid/sortDescriptorModel/#field) and [`direction`](https://ej2.syncfusion.com/vue/documentation/api/treegrid/sortDescriptorModel/#direction) in the `sortSettings.columns`.
+To sort at initial rendering, set the [`field`](https://ej2.syncfusion.com/vue/documentation/api/treegrid/sortDescriptorModel#field) and [`direction`](https://ej2.syncfusion.com/vue/documentation/api/treegrid/sortDescriptorModel#direction) in the `sortSettings.columns`.
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
@@ -52,7 +52,7 @@ To sort at initial rendering, set the [`field`](https://ej2.syncfusion.com/vue/d
 
 ## Sorting events
 
-During the sort action, the treegrid component triggers two events. The [`actionBegin`](https://ej2.syncfusion.com/vue/documentation/api/treegrid/#actionbegin) event triggers before the sort action starts, and the [`actionComplete`](https://ej2.syncfusion.com/vue/documentation/api/treegrid/#actioncomplete) event triggers after the sort action is completed. Using these events you can perform the needed actions.
+During the sort action, the treegrid component triggers two events. The [`actionBegin`](https://ej2.syncfusion.com/vue/documentation/api/treegrid#actionbegin) event triggers before the sort action starts, and the [`actionComplete`](https://ej2.syncfusion.com/vue/documentation/api/treegrid#actioncomplete) event triggers after the sort action is completed. Using these events you can perform the needed actions.
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}

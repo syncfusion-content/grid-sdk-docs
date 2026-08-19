@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Javascript Grid Integrate Chart in Grid | Syncfusion
-description: Learn how to integrate charts in Javascript Data Grid by embedding charts in cells or detail views to visualize and analyze data effectively.
+title: Integrate Chart in JavaScript Grid | Syncfusion
+description: Learn here all about integrate Chart in Syncfusion JavaScript Grid of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Integrate Chart 
 publishingplatform: grid-sdk
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Integrate Chart in Javascript Data Grid
+# Integrate Chart in EJ2 JavaScript Grid
 
 The Grid and Chart Integration feature in Syncfusion allows users to visualize tabular data in a graphical format by linking the Grid with the Chart.This feature allows seamless integration with Charts to visualize selected data interactively. You can generate various Chart types such as bar, line, or pie directly from Grid data using the [ContextMenu](../../documentation/grid/context-menu) feature. This feature is particularly useful in scenarios where tabular data can be better understood through graphical representation.
 
@@ -156,7 +156,7 @@ Grid.Inject(ContextMenu);
 
 **Step 2: Define Chart options to Grid Context Menu:**
 
-Add Chart visualization options as context menu items within the Grid configuration using [contextMenuItems](../api/grid/#contextmenuitems) property. These items allow  you to right-click on selected rows and choose a Chart type to visualize the data.
+Add Chart visualization options as context menu items within the Grid configuration using [contextMenuItems](../api/grid#contextmenuitems) property. These items allow  you to right-click on selected rows and choose a Chart type to visualize the data.
 
 ```ts
 
@@ -171,7 +171,7 @@ contextMenuItems: [
 
 **Step 3: Initialize GridChart instance on Grid creation:**
 
-Inside the Grid’s [created](../api/grid/#created) event, instantiate a **GridChart** object. This instance will be used to render Charts dynamically based on the selected Grid data.
+Inside the Grid’s [created](../api/grid#created) event, instantiate a **GridChart** object. This instance will be used to render Charts dynamically based on the selected Grid data.
 
 ```ts
 created: () => {
@@ -187,7 +187,7 @@ This ensures that the Chart instance is ready as soon as the Grid is initialized
 
 **Step 4: Handle context menu click to render Chart:**
 
-Use the [contextMenuClick](../api/grid/#contextmenuclick) event to detect which Chart type was selected and render the Chart accordingly using the `gridChart.render()` method.
+Use the [contextMenuClick](../api/grid#contextmenuclick) event to detect which Chart type was selected and render the Chart accordingly using the `gridChart.render()` method.
 
 `ContextMenuClick` event passes the below arguments:
 
@@ -250,7 +250,7 @@ Use the [contextMenuClick](../api/grid/#contextmenuclick) event to detect which 
 
 **Step 1: Define Chart options to Grid Context Menu:**
 
-Add Chart visualization options as context menu items within the Grid configuration using [contextMenuItems](../api/grid/#contextmenuitems) property. These items allow  you to right-click on selected rows and choose a Chart type to visualize the data.
+Add Chart visualization options as context menu items within the Grid configuration using [contextMenuItems](../api/grid#contextmenuitems) property. These items allow  you to right-click on selected rows and choose a Chart type to visualize the data.
 
 ```ts
 
@@ -265,7 +265,7 @@ contextMenuItems: [
 
 **Step 2: Initialize GridChart instance on Grid creation:**
 
-Inside the Grid’s [created](../api/grid/#created) event, instantiate a **GridChart** object. This instance will be used to render Charts dynamically based on the selected Grid data.
+Inside the Grid’s [created](../api/grid#created) event, instantiate a **GridChart** object. This instance will be used to render Charts dynamically based on the selected Grid data.
 
 ```ts
 created: () => {
@@ -281,7 +281,7 @@ This ensures that the Chart instance is ready as soon as the Grid is initialized
 
 **Step 3: Handle context menu click to render Chart:**
 
-Use the [contextMenuClick](../api/grid/#contextmenuclick) event to detect which Chart type was selected and render the Chart accordingly using the `GridChart.render()` method.
+Use the [contextMenuClick](../api/grid#contextmenuclick) event to detect which Chart type was selected and render the Chart accordingly using the `GridChart.render()` method.
 
 `ContextMenuClick` event passes the below arguments:
 
@@ -425,9 +425,9 @@ When enabled, the property panel appears alongside the Chart popup and offers th
 
 **customize the Chart model:**   
 
-You can customize the [Chart](../../documentation/chart/getting-started) by defining a [chartModel](../api/chart/chartModel/) object in the `chart` property of the `model` object within the [contextMenuClick](../api/grid/#contextmenuclick) event .This allows you to configure various Chart properties such as axes, margins, tooltips, titles, and more. Additionally, you can use the [events](../../documentation/api/chart/#events/) of the Chart within the `chartModel` configuration to apply further customizations when the Chart is rendered. 
+You can customize the [Chart](../../documentation/chart/getting-started) by defining a [chartModel](../api/chart/chartModel/) object in the `chart` property of the `model` object within the [contextMenuClick](../api/grid#contextmenuclick) event .This allows you to configure various Chart properties such as axes, margins, tooltips, titles, and more. Additionally, you can use the [events](../../documentation/api/chart#events) of the Chart within the `chartModel` configuration to apply further customizations when the Chart is rendered. 
 
-To customize [Accumulation Charts](../../documentation/accumulation-chart/getting-started) (such as Pie), use the `accumulationChart` property of the `model` object. This property allows you to configure Chart options like titles, legends, data labels, and visual styles tailored for accumulation-type visualizations.  You can also use Accumulation Chart [events](../../documentation/api/accumulation-chart/#events/) to apply additional customizations when the Chart is rendered.
+To customize [Accumulation Charts](../../documentation/accumulation-chart/getting-started) (such as Pie), use the `accumulationChart` property of the `model` object. This property allows you to configure Chart options like titles, legends, data labels, and visual styles tailored for accumulation-type visualizations.  You can also use Accumulation Chart [events](../../documentation/api/accumulation-chart#events) to apply additional customizations when the Chart is rendered.
 
 The following code snippets demonstrate how to achieve this:
 

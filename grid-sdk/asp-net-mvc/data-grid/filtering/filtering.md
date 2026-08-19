@@ -1,14 +1,14 @@
 ---
 layout: post
-title: ASP.NET MVC Grid Filtering | Syncfusion
-description: Learn how to use filtering in ASP.NET MVC Data Grid with filter types, server filtering, expression operators, and UI options for refined data results.
+title: Filtering in Syncfusion ASP.NET MVC Grid Component
+description: Learn here all about Filtering in Syncfusion ASP.NET MVC Grid component of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Filtering
 publishingplatform: grid-sdk
 documentation: ug
 ---
 
-# Filtering in ASP.NET MVC Data Grid
+# Filtering in ASP.NET MVC Grid component
 
 Filtering is a powerful feature in the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid component that enables you to selectively view data based on specific criteria. It allows you to narrow down large datasets and focus on the information you need, thereby enhancing data analysis and decision-making.
 

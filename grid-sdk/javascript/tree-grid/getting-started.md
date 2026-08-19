@@ -3,8 +3,7 @@ layout: post
 title: JavaScript TreeGrid Getting Started | Syncfusion
 description: Learn how to get started with JavaScript TreeGrid, including installation, configuration, data binding, and basic setup.
 platform: grid-sdk
-control: Getting started 
-publishingplatform: grid-sdk
+control: Getting started
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---

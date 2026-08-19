@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Blazor Grid Firebase Realtime Database | Syncfusion
-description: Learn how to connect Firebase Realtime Database with Blazor Data Grid for CRUD operations, filtering, sorting, paging, and live updates.
+title: Blazor Data Grid connected to Firebase Realtime Database | Syncfusion®
+description: Bind Firebase Realtime Database data to Blazor Data Grid using REST API with complete CRUD, filtering, sorting, paging, and real-time synchronization.
 platform: grid-sdk
 control: DataGrid
 documentation: ug
 ---
 
-# Firebase Realtime Database in Blazor Data Grid
+# Connecting Firebase Realtime Database to Blazor Data Grid
 
 The [Blazor DataGrid](https://www.syncfusion.com/blazor-components/blazor-datagrid) supports binding data from a Firebase Realtime Database using the REST API. This approach provides a lightweight, language-agnostic solution for working with cloud-hosted JSON databases without requiring external SDKs.
 

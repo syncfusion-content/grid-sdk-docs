@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Blazor Grid Customize Selection | Syncfusion
-description: Learn how to style row and cell selection in Blazor Data Grid using CSS, including CSS isolation techniques and selector specificity tips.
+title: Selection styling with CSS in Blazor DataGrid | Syncfusion®
+description: Learn how to style row and cell selection in Blazor DataGrid using CSS, with tips on isolation and selector specificity.
 platform: grid-sdk
 control: DataGrid
 documentation: ug
 ---
 
-# Selection Customization in Blazor Data Grid
+# Selection customization in Blazor DataGrid
 
 The appearance of selection elements in the [Blazor DataGrid](https://www.syncfusion.com/blazor-components/blazor-datagrid) can be customized using CSS. Styling options are available for:
 

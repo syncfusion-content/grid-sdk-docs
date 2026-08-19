@@ -1,14 +1,14 @@
 ---
 layout: post
-title: React TreeGrid Checkbox Selection | Syncfusion
-description: Learn how to enable and configure checkbox selection in React TreeGrid, including selection modes, persist selection, and checkbox behavior.
+title: Check box selection in React TreeGrid component | Syncfusion
+description: Learn here all about Check box selection in Syncfusion React TreeGrid component of Syncfusion Essential JS 2 and more.
 control: Check box selection 
 platform: grid-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Checkbox Selection in React TreeGrid
+# Check box selection in React TreeGrid
 
 Checkbox selection enables selecting multiple TreeGrid records using a checkbox in each row.
 

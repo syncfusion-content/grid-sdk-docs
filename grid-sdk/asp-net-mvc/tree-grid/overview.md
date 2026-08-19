@@ -1,15 +1,13 @@
 ---
 layout: post
-title: Overview in ASP.NET MVC Tree Grid Component  | Syncfusion
-description: Learn here all about Overview in Syncfusion ASP.NET MVC Tree Grid component of Syncfusion Essential JS 2 and more.
+title: ASP.NET MVC TreeGrid Key Features | Syncfusion
+description: Explore the key features of ASP.NET MVC TreeGrid, including hierarchical data binding, editing, filtering, sorting, virtualization, and exporting.
 platform: grid-sdk
 control: Index
-publishingplatform: grid-sdk
 documentation: ug
 ---
 
-
-# Overview in ASP.NET MVC Tree Grid Component
+# Key Features of ASP.NET MVC TreeGrid
 
 The Tree Grid component is a feature-rich control used to visualize self-referential hierarchical data effectively in a tabular format. It can pull data from data sources such as an array of JSON, RESTful services, `OData services`, `WCF services` or `DataManager`, and binding data fields to columns. It also expands or collapses child data using the tree column.
 

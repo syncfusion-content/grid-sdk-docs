@@ -1,14 +1,14 @@
 ---
 layout: post
-title: ASP.NET Core Grid Row Template | Syncfusion
-description: Customize row layouts in ASP.NET Core Data Grid with Syncfusion row templates. Create rich row designs, display custom content, and enhance data presentation.
+title: Row Template in Syncfusion ASP.NET Core Grid Component
+description: Learn here all about Row Template in Syncfusion ASP.NET Core Grid component of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Row Template
 publishingplatform: grid-sdk
 documentation: ug
 ---
 
-# Row Template in ASP.NET Core Data Grid
+# Row template in ASP.NET Core Grid component
 
 The row template feature in Grid allows you to customize the appearance and layout of rows in the grid. This feature is useful when you want to display custom content, such as images, buttons, or other controls, within the rows.
 

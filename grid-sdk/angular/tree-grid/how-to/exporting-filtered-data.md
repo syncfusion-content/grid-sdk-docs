@@ -1,18 +1,18 @@
 ---
 layout: post
-title:  Angular TreeGrid Filtered Data Export | Syncfusion
-description: Learn how to export filtered data in the Angular TreeGrid, including specifying filtered results using PdfExportProperties for exporting.
+title: Exporting filtered data in Angular TreeGrid component | Syncfusion
+description: Learn how to export filtered data in the Syncfusion Angular TreeGrid component, including specifying filtered results using PdfExportProperties for exporting.
 platform: grid-sdk
 control: Exporting filtered data 
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Exporting Filtered Data in Angular TreeGrid
+# Exporting filtered data in Angular TreeGrid component
 
-Filtered data can be exported by assigning the filtered results to [`PdfExportProperties.dataSource`](https://ej2.syncfusion.com/angular/documentation/api/grid/pdfExportProperties/#datasource) before performing the export operation.
+Filtered data can be exported by assigning the filtered results to [`PdfExportProperties.dataSource`](https://ej2.syncfusion.com/angular/documentation/api/grid/pdfExportProperties#datasource) before performing the export operation.
 
-In the following PDF export demo, the filtered data is obtained from the filteredResult property of the TreeGrid's filterModule. This resulting data is then defined in [`PdfExportProperties.dataSource`](https://ej2.syncfusion.com/angular/documentation/api/grid/pdfExportProperties/#datasource) and passed to the [`pdfExport`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#pdfexport) method of the TreeGrid component.
+In the following PDF export demo, the filtered data is obtained from the filteredResult property of the TreeGrid's filterModule. This resulting data is then defined in [`PdfExportProperties.dataSource`](https://ej2.syncfusion.com/angular/documentation/api/grid/pdfExportProperties#datasource) and passed to the [`pdfExport`](https://ej2.syncfusion.com/angular/documentation/api/treegrid#pdfexport) method of the TreeGrid component.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

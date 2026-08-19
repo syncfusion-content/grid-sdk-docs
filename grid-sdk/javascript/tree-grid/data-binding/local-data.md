@@ -3,8 +3,7 @@ layout: post
 title: JavaScript TreeGrid Local Data | Syncfusion
 description: Learn to bind local data to JavaScript TreeGrid with support for hierarchical and self-referential (flat) data structures.
 platform: grid-sdk
-control: Local data 
-publishingplatform: grid-sdk
+control: Local data
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Angular TreeGrid Persisting Data in Server | Syncfusion
-description: Learn how to persist edited data in a database using RESTful services and DataManager in the Angular TreeGrid.
+title: Persisting data in server in Angular TreeGrid component | Syncfusion
+description: Learn how to persist edited data in a database using RESTful services and DataManager in the Syncfusion Angular TreeGrid component.
 platform: grid-sdk
 control: Persisting data in server 
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Persisting data in Server in Angular TreeGrid
+# Persisting data in server in Angular TreeGrid component
 
 Edited data in the TreeGrid component can be persisted to a database via RESTful web services.
 
@@ -20,11 +20,11 @@ You can also view a video tutorial about persisting data on the server.
 
 {% youtube "https://www.youtube.com/watch?v=UuD7_W2yIVs" %}
 
-The following sections explain how to get edited data details on the server side using [UrlAdaptor](../../data/adaptors/#url-adaptor) and other available adaptors with the `dataManager` property. See the [adaptors documentation](https://ej2.syncfusion.com/angular/documentation/data/adaptors) for details.
+The following sections explain how to get edited data details on the server side using [UrlAdaptor](../../data/adaptors#url-adaptor) and other available adaptors with the `dataManager` property. See the [adaptors documentation](https://ej2.syncfusion.com/angular/documentation/data/adaptors) for details.
 
 ## Using URL adaptor
 
-Use the [UrlAdaptor](../../data/adaptors/#url-adaptor) of [DataManager](../../data) to bind data from a remote service. The initial data load and subsequent CRUD actions can be managed through various URL properties of the DataManager.
+Use the [UrlAdaptor](../../data/adaptors#url-adaptor) of [DataManager](../../data) to bind data from a remote service. The initial data load and subsequent CRUD actions can be managed through various URL properties of the DataManager.
 
 When using `UrlAdaptor`, operations such as paging, filtering, sorting, and editing should be handled on the server.
 
@@ -104,7 +104,7 @@ public ActionResult DataSource(DataManager dm)
 
 ### Insert record
 
-Use **insertUrl** to point to the controller action for inserting a record. The example below illustrates handling insertion at a specific position using [newRowPosition](https://ej2.syncfusion.com/angular/documentation/api/treegrid/editSettings/#newrowposition).
+Use **insertUrl** to point to the controller action for inserting a record. The example below illustrates handling insertion at a specific position using [newRowPosition](https://ej2.syncfusion.com/angular/documentation/api/treegrid/editSettings#newrowposition).
 
 ```typescript
 public void Insert(TreeGridData value, int relationalKey)
@@ -441,9 +441,9 @@ public ActionResult Remove(List<TreeGridData> changed, List<TreeGridData> added,
 
 ## Passing additional parameters to server during CRUD operation
 
-Pass custom parameters in data requests using the [query](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#query) property and the `addParams` method of the Query class.
+Pass custom parameters in data requests using the [query](https://ej2.syncfusion.com/angular/documentation/api/treegrid#query) property and the `addParams` method of the Query class.
 
-During CRUD operations, use the [actionBegin](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#actionbegin) event to conditionally add parameters for save or delete actions.
+During CRUD operations, use the [actionBegin](https://ej2.syncfusion.com/angular/documentation/api/treegrid#actionbegin) event to conditionally add parameters for save or delete actions.
 
 Example:
 

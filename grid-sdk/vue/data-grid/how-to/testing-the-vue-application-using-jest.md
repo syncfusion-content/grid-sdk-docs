@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Vue Grid Jest Unit Testing | Syncfusion
-description: Learn how to perform Jest unit testing in Vue Data Grid using snapshot tests, DOM testing, mocks, and validation techniques for grid behavior.
+title: Testing the Vue application using Jest | Syncfusion
+description: Learn here all about Testing the Vue application using Jest in Syncfusion Vue Grid component of Syncfusion Essential JS 2 and more.
 control: Testing the Vue application using Jest 
 platform: grid-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Jest Unit Testing in Vue Data Grid
+# Testing the Vue application using Jest
 
 Vue [Jest](https://v2.vuejs.org/v2/guide/testing.html) testing is a popular approach to test Vue applications using the Jest testing framework. This approach involves the creation and execution of unit tests specifically designed for Vue components. By conducting unit testing, which focuses on testing isolated units of code like functions, methods, and components to ensure that they behave as expected. This approach validates the individual units of your Vue components, catch potential bugs early in the development process, and maintains the reliability and stability of your Vue application. To create a Jest test case for the [Vue Data Grid](https://www.syncfusion.com/vue-components/vue-grid) component, follow the below steps:
 
@@ -124,7 +124,7 @@ The DOM testing involves testing the behavior and interact of Vue component. Thi
 
 **Example:**
 
-The `it` block is used to define a test case for the "Length of the record". Within the test case, the `shallowMount` function from the **@vue/test-utils** package is used to create a shallow wrapper for the **App** component. After, you need to create the instance of grid component. We check that the data grid in the data source has the appropriate number of data records. The [dataSource](https://ej2.syncfusion.com/vue/documentation/api/grid/#datasource) property is employed to retrieve the record of the data. By utilizing this property, we can verify the accurate population of data in the grid component.
+The `it` block is used to define a test case for the "Length of the record". Within the test case, the `shallowMount` function from the **@vue/test-utils** package is used to create a shallow wrapper for the **App** component. After, you need to create the instance of grid component. We check that the data grid in the data source has the appropriate number of data records. The [dataSource](https://ej2.syncfusion.com/vue/documentation/api/grid#datasource) property is employed to retrieve the record of the data. By utilizing this property, we can verify the accurate population of data in the grid component.
 
 ```typescript
 it('Length of the record', () => {
@@ -166,5 +166,5 @@ Run the following command to execute the Jest test case.
 npm run test
 ```
 
-> * This is only for local data. You can use the [currentViewData](https://ej2.syncfusion.com/vue/documentation/api/grid/#currentviewdata) property by rendering the remote data.
+> * This is only for local data. You can use the [currentViewData](https://ej2.syncfusion.com/vue/documentation/api/grid#currentviewdata) property by rendering the remote data.
 > * You can find the sample of the Unit Jest testing in DataGrid [here](https://github.com/SyncfusionExamples/DataGrid-Vue-test-case/tree/master)

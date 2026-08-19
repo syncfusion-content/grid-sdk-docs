@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Blazor TreeGrid Cell Edit Types | Syncfusion
-description: Learn how to use different cell edit types in Blazor TreeGrid, configure editor parameters, and customize editing experiences.
+title: Cell Edit Types in Blazor Tree Grid Component | Syncfusion®
+description: Checkout and learn here all about Cell Edit Types in Blazor Tree Grid component and much more details.
 platform: grid-sdk
 control: Tree Grid
 documentation: ug
 ---
 
-# Cell Edit Template in Blazor TreeGrid
+# Cell edit type and its params in Blazor Tree Grid Component
 
 The [TreeGridColumn.EditType](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.TreeGrid.TreeGridColumn.html#Syncfusion_Blazor_TreeGrid_TreeGridColumn_EditType) is used to customize the edit type of the particular column. The [TreeGridColumn.EditType](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.TreeGrid.TreeGridColumn.html#Syncfusion_Blazor_TreeGrid_TreeGridColumn_EditType) can be set based on the data type of the column.
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Vue Grid Server-Side Excel Export | Syncfusion
-description: Learn how to export Vue Data Grid data on the server, generate Excel workbooks in the backend, and handle large-scale exports efficiently.
+title: Exporting grid in server in Vue Grid component | Syncfusion
+description: Learn here all about Exporting grid in server in Syncfusion Vue Grid component of Syncfusion Essential JS 2 and more.
 control: Exporting grid in server 
 platform: grid-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Server-Side Excel Export in Vue Data Grid
+# Exporting grid in server in Vue Grid component
 
 The [Vue Data Grid](https://www.syncfusion.com/vue-components/vue-grid) component in Vue provides a powerful option to export data to Excel on the server side using the Grid server export library. This allows you to perform Excel export operations on the server, providing additional security and flexibility. To enable server-side Excel exporting, you need to configure the server dependencies and implement the necessary server configuration.
 
@@ -32,7 +32,7 @@ To export the grid data to a Excel document on the server side, you need to perf
 
 2. Define a controller action that handles the server-side Excel export. This action should receive the Grid properties from the client-side and initiate the Excel export operation on the server.
 
-3. Use the [serverExcelExport](https://ej2.syncfusion.com/vue/documentation/api/grid/#serverexcelexport) method to pass the Grid properties to the server exporting action. This method allows you to specify the server action URL and other export options.
+3. Use the [serverExcelExport](https://ej2.syncfusion.com/vue/documentation/api/grid#serverexcelexport) method to pass the Grid properties to the server exporting action. This method allows you to specify the server action URL and other export options.
 
 The following code snippet shows server configuration using ASP.NET Core Controller Action.
 
@@ -99,9 +99,9 @@ const grid = ref(null);
 
 ## CSV export in server side
 
-To perform CSV export on the server-side, you can use the [serverCsvExport](https://ej2.syncfusion.com/vue/documentation/api/grid/#servercsvexport) method, which sends the Grid properties to the server for processing and generating the CSV file.
+To perform CSV export on the server-side, you can use the [serverCsvExport](https://ej2.syncfusion.com/vue/documentation/api/grid#servercsvexport) method, which sends the Grid properties to the server for processing and generating the CSV file.
 
-To initiate the CSV export, you can invoke the `serverCsvExport` method within the [toolbarClick](https://ej2.syncfusion.com/vue/documentation/api/grid/#toolbarclick) event. Upon triggering the event, the server will deserialize the Grid properties and pass them to the `CsvExport` method, which will handle exporting the properties to the CSV format.
+To initiate the CSV export, you can invoke the `serverCsvExport` method within the [toolbarClick](https://ej2.syncfusion.com/vue/documentation/api/grid#toolbarclick) event. Upon triggering the event, the server will deserialize the Grid properties and pass them to the `CsvExport` method, which will handle exporting the properties to the CSV format.
 
 Here's an example of how you can accomplish CSV export on the server-side:
 
@@ -351,7 +351,7 @@ public ActionResult ExcelExport(string gridModel)
 
 The Grid provides support to customize the column header styles, including changing text orientation, font color, and other visual aspects, in the exported Excel file on the server-side. This feature is particularly useful when you want to enhance the appearance of the exported data and create a unique representation of the Grid in the Excel document.
 
-To achieve this requirement, you can use the [excelHeaderQueryCellInfo](https://ej2.syncfusion.com/vue/documentation/api/grid/#excelheaderquerycellinfo) event of the Grid. This event is triggered when creating column headers for the Excel document to be exported on the server-side. In this event, you can collect the column header details and handle customizations.
+To achieve this requirement, you can use the [excelHeaderQueryCellInfo](https://ej2.syncfusion.com/vue/documentation/api/grid#excelheaderquerycellinfo) event of the Grid. This event is triggered when creating column headers for the Excel document to be exported on the server-side. In this event, you can collect the column header details and handle customizations.
 
 In the following demo, using the `HeaderCellRotate` method of the `GridExcelExport` class in the `ServerExcelHeaderQueryCellInfo` event, you can rotate the header text of the column header in the excel exported document.
 

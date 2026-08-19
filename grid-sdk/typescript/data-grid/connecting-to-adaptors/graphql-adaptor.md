@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Typescript Grid Bind Data with GraphQLAdaptor | Syncfusion
-description: Learn how to use GraphQLAdaptor in Typescript Data Grid to bind GraphQL data, execute queries and mutations, and perform CRUD operations.
+title: Bind data & perform CRUD with GraphQLAdaptor in Syncfusion Grid
+description: Learn here all about how to bind data and perform CRUD action using GraphQLAdaptor in Syncfusion TypeScript Grid control.
 platform: grid-sdk
 control: grid
 keywords: Adaptors, GraphQLAdaptor, GraphQL adaptor, remotedata 
@@ -10,7 +10,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# GraphQL Data Binding in Typescript Data Grid
+# Connecting GraphQL Service with TypeScript Grid Control
 
 GraphQL is a powerful query language for APIs, designed to provide a more efficient alternative to traditional REST APIs. It allows you to precisely fetch the data you need, reducing over-fetching and under-fetching of data. GraphQL provides a flexible and expressive syntax for querying, enabling clients to request only the specific data they require.
 

@@ -4,7 +4,6 @@ title: Column Resizing in ASP.NET Core Tree Grid Component | Syncfusion
 description: Learn here all about Column Resizing in Syncfusion ASP.NET Core Tree Grid component of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Column Resizing
-publishingplatform: grid-sdk
 documentation: ug
 ---
 

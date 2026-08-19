@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Blazor TreeGrid Styling and Appearance | Syncfusion
-description: Learn how to customize Blazor TreeGrid appearance using CSS and Theme Studio, including headers, rows, alternate rows, and visual styles.
+title: Styling and Appearance in Blazor TreeGrid Component | Syncfusion®
+description: Learn to customize the Blazor TreeGrid using CSS and Theme Studio, including headers, rows, alternate rows, and styling options.
 platform: grid-sdk
 control: TreeGrid
 documentation: ug
 ---
 
-# Styling and Appearance in Blazor TreeGrid
+# Style and appearance in Blazor TreeGrid
 
 The Blazor TreeGrid supports visual customization using CSS and theme-based styling. Styles can be applied to various elements to match the application's design. Styling options are available for:
 

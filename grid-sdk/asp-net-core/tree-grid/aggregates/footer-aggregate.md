@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Footer Aggregate in ASP.NET Core Tree Grid Component | Syncfusion
-description: Learn here all about Footer Aggregate in Syncfusion ASP.NET Core Tree Grid component of Syncfusion Essential JS 2 and more.
+title: ASP.NET Core TreeGrid Footer Aggregate | Syncfusion
+description: Learn how to configure and display footer aggregate values in ASP.NET Core TreeGrid, including API usage, templates, and formatting options.
 platform: grid-sdk
 control: Footer Aggregate
-publishingplatform: grid-sdk
 documentation: ug
 ---
 
 
-# Footer Aggregate in ASP.NET Core Tree Grid Component
+# Footer Aggregate in ASP.NET Core TreeGrid
 
 Footer aggregate value is calculated for all the rows, and it is displayed in the footer cells. Use the [`footerTemplate`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridAggregateColumn~FooterTemplate.html) property of [`e-treegrid-aggregate-column`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridAggregateColumn.html) tag helper to render the aggregate value in footer cells.
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Vue Grid How-To Guide | Syncfusion
-description: Learn how to customize and extend Vue Data Grid with practical examples for editing, sorting, exporting, data binding, column customization, and more.
+title: How to in Vue Grid component | Syncfusion
+description: Learn here all about How to in Syncfusion Vue Grid component of Syncfusion Essential JS 2 and more.
 control: How to 
 platform: grid-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# How-To Examples in Vue Data Grid
+# How to in Vue Grid component
 
 <!--markdownlint-disable MD009-->
 
@@ -48,7 +48,7 @@ Vue.component('e-column', AggregateColumnDirective);
 
 ## How to Refresh the Datasource
 
-You can add/delete the datasource records through an external button. To reflect the datasource changes in grid, you need to invoke the [`refresh`](https://ej2.syncfusion.com/vue/documentation/api/grid/#refresh) method.
+You can add/delete the datasource records through an external button. To reflect the datasource changes in grid, you need to invoke the [`refresh`](https://ej2.syncfusion.com/vue/documentation/api/grid#refresh) method.
 
 Please follow the below steps to refresh the grid after datasource change.
 
@@ -137,14 +137,14 @@ In the below demo, the button click will enable/disable the Grid and its actions
 
 ### Customize Column Styles
 
-You can customise the appearance of header and content of the particular column using the
-[`customAttributes`](https://ej2.syncfusion.com/vue/documentation/api/grid/column/#customattributes) property.
+You can customize the appearance of header and content of the particular column using the
+[`customAttributes`](https://ej2.syncfusion.com/vue/documentation/api/grid/column#customattributes) property.
 
 To customize the grid column, follow the given steps:
 
 **Step 1**:
 
-Create a css class with custom style to override the default style for rowcell and headercell.
+Create a css class with custom style to override the default style for row cell and header cell.
 
 ```
 .e-grid .e-rowcell.customcss{
@@ -164,7 +164,7 @@ Create a css class with custom style to override the default style for rowcell a
 
 **Step 2**:
 
-Add the custom css class to particular column by using [`customAttributes`](https://ej2.syncfusion.com/vue/documentation/api/grid/column/#customattributes) property.
+Add the custom css class to particular column by using [`customAttributes`](https://ej2.syncfusion.com/vue/documentation/api/grid/column#customattributes) property.
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
@@ -180,10 +180,10 @@ Add the custom css class to particular column by using [`customAttributes`](http
 ### Custom Tooltip for Columns
 
 You can achieve the custom tooltip([`EJ2 Tooltip`](../../tooltip/getting-started)) for Grid by using the
-[`queryCellInfo`](https://ej2.syncfusion.com/vue/documentation/api/grid/#querycellinfo) event.
+[`queryCellInfo`](https://ej2.syncfusion.com/vue/documentation/api/grid#querycellinfo) event.
 
 Render the ToolTip component for the grid cells by using the following code in the
-[`queryCellInfo`](https://ej2.syncfusion.com/vue/documentation/api/grid/#querycellinfo) event.
+[`queryCellInfo`](https://ej2.syncfusion.com/vue/documentation/api/grid#querycellinfo) event.
 
 ```ts
 tooltip (args) {
@@ -206,7 +206,7 @@ tooltip (args) {
 
 ### Render other components in a column
 
-You can render any component in a grid column using the [`template`](https://ej2.syncfusion.com/vue/documentation/api/grid/column/#template) property.
+You can render any component in a grid column using the [`template`](https://ej2.syncfusion.com/vue/documentation/api/grid/column#template) property.
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
@@ -221,7 +221,7 @@ You can render any component in a grid column using the [`template`](https://ej2
 
 ### How to change the Orientation of Header Text
 
-You can change the orientation of the header text by using the [`customAttributes`](https://ej2.syncfusion.com/vue/documentation/api/grid/column/#customattributes) property.
+You can change the orientation of the header text by using the [`customAttributes`](https://ej2.syncfusion.com/vue/documentation/api/grid/column#customattributes) property.
 
 To change the Orientation of Header Text, Ensure the following steps:
 
@@ -237,7 +237,7 @@ Create a css class with orientation style for grid header cell.
 
 **Step 2**:
 
-Add the custom css class to particular column by using [`customAttributes`](https://ej2.syncfusion.com/vue/documentation/api/grid/column/#customattributes) property.
+Add the custom css class to particular column by using [`customAttributes`](https://ej2.syncfusion.com/vue/documentation/api/grid/column#customattributes) property.
 
 ```
     <e-column field='Freight' headerText='Freight' textAlign='Center' format='C2' :customAttributes='customAttributes' width=80></e-column>
@@ -330,7 +330,7 @@ In the below demo, the `ShipCountry` column is rendered with the template.
 
 ### Customize the Edit Dialog
 
-You can customize the appearance of the edit dialog in the [`actionComplete`](https://ej2.syncfusion.com/vue/documentation/api/grid/#actioncomplete) event based on `requestType` as `beginEdit` or `add`.
+You can customize the appearance of the edit dialog in the [`actionComplete`](https://ej2.syncfusion.com/vue/documentation/api/grid#actioncomplete) event based on `requestType` as `beginEdit` or `add`.
 
 In the below example, we have changed the dialog's header text for editing and adding records.
 
@@ -347,7 +347,7 @@ In the below example, we have changed the dialog's header text for editing and a
 
 ### Show or Hide columns in Dialog editing
 
-You can show hidden columns or hide visible column's editor in the dialog while editing the grid record using [`actionBegin`](https://ej2.syncfusion.com/vue/documentation/api/grid/#actionbegin) and [`actionComplete`](https://ej2.syncfusion.com/vue/documentation/api/grid/#actioncomplete) events.
+You can show hidden columns or hide visible column's editor in the dialog while editing the grid record using [`actionBegin`](https://ej2.syncfusion.com/vue/documentation/api/grid#actionbegin) and [`actionComplete`](https://ej2.syncfusion.com/vue/documentation/api/grid#actioncomplete) events.
 
 In the `actionBegin` event, based on `requestType` as `beginEdit` or  `add`. We can show or hide the editor by using `column.visible` property.
 
@@ -418,7 +418,7 @@ In the below demo, DropDownList is rendered with custom Datasource for the `Ship
 
 ### Disable editing for a particular row/cell
 
-You can disable the editing for a particular row by using the [`actionBegin`](https://ej2.syncfusion.com/vue/documentation/api/grid/#actionbegin) event of Grid based on `requestType` as `beginEdit`.
+You can disable the editing for a particular row by using the [`actionBegin`](https://ej2.syncfusion.com/vue/documentation/api/grid#actionbegin) event of Grid based on `requestType` as `beginEdit`.
 
 In the below demo, the rows which are having the value for `ShipCountry` column as "France" is prevented from editing.
 
@@ -433,7 +433,7 @@ In the below demo, the rows which are having the value for `ShipCountry` column 
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/grid/edit/default-cs40" %}
 
-For batch mode of editing, you can use [`cellEdit`](https://ej2.syncfusion.com/vue/documentation/api/grid/#celledit) event of Grid. In the below demo, the cells which are having the value as "France" is prevented from editing.
+For batch mode of editing, you can use [`cellEdit`](https://ej2.syncfusion.com/vue/documentation/api/grid#celledit) event of Grid. In the below demo, the cells which are having the value as "France" is prevented from editing.
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
@@ -487,7 +487,7 @@ Bind the click event for the Grid and in the click event handler call the **edit
 ### Customizing filter menu operators list
 
  You can customize the default filter operator list by defining the
-  [`filterSettings.operators`](https://ej2.syncfusion.com/vue/documentation/api/grid/filterSettings/#operators) property. The available options are:
+  [`filterSettings.operators`](https://ej2.syncfusion.com/vue/documentation/api/grid/filterSettings#operators) property. The available options are:
 
 * `stringOperator`- defines customized string operator list.
 * `numberOperator` - defines customized number operator list.
@@ -512,7 +512,7 @@ In the following sample, we have customized string filter operators.
 
 You can perform single-column or multi-column sorting dynamically through an external button.
 
-To perform single-column sorting, use the [`sortColumn`](../api/grid/#sortcolumn) method of Grid.
+To perform single-column sorting, use the [`sortColumn`](../api/grid#sortcolumn) method of Grid.
 
 ```ts
     singleSort: function() {
@@ -520,7 +520,7 @@ To perform single-column sorting, use the [`sortColumn`](../api/grid/#sortcolumn
     }
 ```
 
-To perform multi-column sorting, you need to push the columns to be sorted into the [`sortSettings.columns`](https://ej2.syncfusion.com/vue/documentation/api/grid/sortSettings/#columns).
+To perform multi-column sorting, you need to push the columns to be sorted into the [`sortSettings.columns`](https://ej2.syncfusion.com/vue/documentation/api/grid/sortSettings#columns).
 
 ```ts
     multiSort: function() {
@@ -546,7 +546,7 @@ In the below demo, click on the corresponding button to perform single-column or
 
 You can clear the sorting for a particular column or the entire sorted columns in Grid dynamically through an external button.
 
-To clear sort for a particular column, you need to splice the particular column from the [`sortSettings.columns`](https://ej2.syncfusion.com/vue/documentation/api/grid/sortSettings/#columns).
+To clear sort for a particular column, you need to splice the particular column from the [`sortSettings.columns`](https://ej2.syncfusion.com/vue/documentation/api/grid/sortSettings#columns).
 
 ```ts
     SingleClearSort: function() {
@@ -560,7 +560,7 @@ To clear sort for a particular column, you need to splice the particular column 
     }
 ```
 
-To clear sorting for all the sorted columns, use the [`clearSorting`](https://ej2.syncfusion.com/vue/documentation/api/grid/#clearsorting) method of Grid.
+To clear sorting for all the sorted columns, use the [`clearSorting`](https://ej2.syncfusion.com/vue/documentation/api/grid#clearsorting) method of Grid.
 
 ```ts
     MultiClearSort: function() {
@@ -586,7 +586,7 @@ In the below demo, click on the corresponding button to clear sort for particula
 ### Use Edit Template in Foreign Key Column
 
 By default, foreign key column uses dropdown component for editing.
-You can render other than the dropdown by using the [`column.edit`](https://ej2.syncfusion.com/vue/documentation/api/grid/column/#edit) property.
+You can render other than the dropdown by using the [`column.edit`](https://ej2.syncfusion.com/vue/documentation/api/grid/column#edit) property.
 The following example demonstrates the way of using edit template in foreign column.
 
 In the following example, The `Employee Name` is a foreign key column and while editing, AutoComplete component is rendered instead of DropDownList.
@@ -604,7 +604,7 @@ In the following example, The `Employee Name` is a foreign key column and while 
 
 ### Customize filter UI in foreign key column
 
-You can create your own filtering UI by using [`column.filter`](https://ej2.syncfusion.com/vue/documentation/api/grid/column/#filter) property.
+You can create your own filtering UI by using [`column.filter`](https://ej2.syncfusion.com/vue/documentation/api/grid/column#filter) property.
 The following example demonstrates the way to create a custom filtering UI in the foreign column.
 
 In the following example, The `Employee Name` is a foreign key column. DropDownList is rendered using Filter UI.
@@ -641,7 +641,7 @@ In the following example, The `Employee Name` is a foreign key column and the ag
 
 ### Bind foreign key dataSource on dropdown edit
 
-When editing, you can bind foreign key datasource to a dropdown list by using [`column.dataSource`](https://ej2.syncfusion.com/vue/documentation/api/grid/column/#datasource) property.
+When editing, you can bind foreign key datasource to a dropdown list by using [`column.dataSource`](https://ej2.syncfusion.com/vue/documentation/api/grid/column#datasource) property.
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
@@ -677,7 +677,7 @@ Cordova application does not support direct file download. So we have to use the
 
 You can export the filtered data by defining the resulted data in `exportProperties.dataSource` before export.
 
-In the below Pdf exporting demo, We have gotten the filtered data by applying filter query to the grid data and then defines the resulted data in `exportProperties.dataSource` and pass it to `pdfExport` method.
+In the below PDF exporting demo, We have gotten the filtered data by applying filter query to the grid data and then defines the resulted data in `exportProperties.dataSource` and pass it to `pdfExport` method.
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
@@ -711,7 +711,7 @@ To customize default values of pager dropdown, you need to define `pageSizes` as
 
 By default, the expand/collapse icon will be visible even if the child grid is empty.
 
-You can use [`rowDataBound`](https://ej2.syncfusion.com/vue/documentation/api/grid/#rowdatabound) event to hide the icon when there are no records in child grid.
+You can use [`rowDataBound`](https://ej2.syncfusion.com/vue/documentation/api/grid#rowdatabound) event to hide the icon when there are no records in child grid.
 
 To hide the expand/collapse icon in parent row when no records in child grid, follow the given steps:
 
@@ -732,7 +732,7 @@ Create CSS class with custom style to override the default style of Grid.
 
 **Step 2**:
 
-Add the CSS class to the Grid in the [`rowDataBound`](https://ej2.syncfusion.com/vue/documentation/api/grid/#rowdatabound) event handler of Grid.
+Add the CSS class to the Grid in the [`rowDataBound`](https://ej2.syncfusion.com/vue/documentation/api/grid#rowdatabound) event handler of Grid.
 
 ```ts
     rowDataBound(args){
