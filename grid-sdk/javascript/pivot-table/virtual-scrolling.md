@@ -1,17 +1,17 @@
 ---
 layout: post
-title: Virtual scrolling in JavaScript Pivot Table component | Syncfusion
-description: Learn here all about Virtual scrolling in Syncfusion JavaScript Pivot Table component of Syncfusion Essential JS 2 and more.
-platform: grid-sdk
-control: Virtual scrolling 
-publishingplatform: grid-sdk
+title: Virtual Scrolling in ##Platform_Name## Pivot Table | Syncfusion
+description: Learn how the ##Platform_Name## Pivot Table renders only visible rows and columns for large datasets via `enableVirtualization`.
+platform: ej2-javascript
+control: Virtual scrolling
+publishingplatform: ##Platform_Name##
 documentation: ug
-domainurl: https://help.syncfusion.com/grid-sdk
+domainurl: ##DomainURL##
 ---
 
 <!-- markdownlint-disable MD036 -->
 
-# Virtual scrolling in JavaScript Pivot Table component
+# Virtual Scrolling in ##Platform_Name## Pivot Table
 
 ## Virtual Scrolling
 

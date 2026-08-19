@@ -1,14 +1,14 @@
 ---
 layout: post
-title: ASP.NET MVC Grid Inline Editing | Syncfusion
-description: Learn how to perform inline editing in ASP.NET MVC Data Grid, update records directly, customize editing behavior, and manage CRUD operations efficiently.
+title: Inline Editing in Syncfusion ASP.NET MVC Grid Component
+description: Learn here all about Inline Editing in Syncfusion ASP.NET MVC Grid component of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Inline Editing
 publishingplatform: grid-sdk
 documentation: ug
 ---
 
-# Inline Editing in ASP.NET MVC Data Grid
+# Inline editing in ASP.NET MVC grid component
 
 The ASP.NET MVC Grid component provides a powerful in-line editing feature that allows you to edit cell values of row directly within the grid. This feature is especially useful when you want to quickly modify data without the need for a separate edit form. In normal edit mode, the selected record is changed to an edit state, and you can modify the cell values and save the edited data to the data source.
 

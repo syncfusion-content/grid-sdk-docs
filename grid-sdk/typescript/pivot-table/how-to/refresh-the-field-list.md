@@ -1,15 +1,15 @@
 ---
 layout: post
 title: Refresh the field list in Javascript Pivotview component | Syncfusion
-description: Learn here all about Refresh the field list in Syncfusion TypeScript Pivot Table component of Syncfusion Essential JS 2 and more.
-platform: grid-sdk
+description: Learn here all about Refresh the field list in Syncfusion ##Platform_Name## Pivot Table component of Syncfusion Essential JS 2 and more.
+platform: ej2-javascript
 control: Refresh the field list 
-publishingplatform: grid-sdk
+publishingplatform: ##Platform_Name##
 documentation: ug
-domainurl: https://help.syncfusion.com/grid-sdk
+domainurl: ##DomainURL##
 ---
 
-# Refresh the field list in TypeScript Pivot Table component
+# Refresh the field list in ##Platform_Name## Pivot Table component
 
 The Typescript Pivot Table component allows dynamic data source updates, enabling you to refresh both the pivot table and field list with new data at runtime. This approach is especially useful in scenarios where data changes frequently or when switching between different datasets without reinitializing the entire component.
 

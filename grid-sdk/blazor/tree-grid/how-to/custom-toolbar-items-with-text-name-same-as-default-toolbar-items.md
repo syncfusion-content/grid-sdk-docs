@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Blazor TreeGrid Custom Toolbar Items | Syncfusion
-description: Learn how to create custom toolbar items in Blazor TreeGrid using text names that match default toolbar items and customize toolbar actions.
+title: Custom toolbar items in Blazor TreeGrid Component | Syncfusion®
+description: Learn here all about custom toolbar items with text name same as default toolbar items in Blazor TreeGrid component and more.
 platform: grid-sdk
 control: Tree Grid
 documentation: ug
 ---
 
-# Custom Toolbar Items in Blazor TreeGrid
+# Custom toolbar items in Blazor TreeGrid Component
 
 The Custom toolbar items can be created with text name same as default toolbar items (Add,Edit,Delete,etc.). But while creating them, they will be considered as default toolbar items which will cause some issues while clicking on it. To overcome this behavior, it is suggested to define the **Id** property for custom toolbar items.
 

@@ -5,12 +5,12 @@ description: Learn all about data binding in Syncfusion® .NET MAUI Data Grid, i
 platform: grid-sdk
 control: SfDataGrid
 documentation: UG
-keywords : maui data grid, maui datagrid, maui grid, grid maui, maui gridview, grid in maui, .net maui datagrid, .net maui grid, .net grid maui, .net maui data binding, maui data binding
+keywords : maui datagrid, maui grid, grid maui, maui gridview, grid in maui, .net maui datagrid, .net maui grid, .net grid maui, .net maui data binding, maui data binding
 ---
 
-# Data Binding in .NET MAUI Data Grid
+# Data Binding in MAUI DataGrid (SfDataGrid)
 
-The [.NET MAUI Data Grid](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.DataGrid.SfDataGrid.html) Control is bound to an external data source to display the data in a tabular format. It supports data sources such as List, IEnumerable, and so on. The [SfDataGrid.ItemsSource](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.DataGrid.SfDataGrid.html#Syncfusion_Maui_DataGrid_SfDataGrid_ItemsSourceProperty) property helps to bind this control with a collection of objects.
+The [.NET MAUI DataGrid](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.DataGrid.SfDataGrid.html) Control is bound to an external data source to display the data in a tabular format. It supports data sources such as List, IEnumerable, and so on. The [SfDataGrid.ItemsSource](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.DataGrid.SfDataGrid.html#Syncfusion_Maui_DataGrid_SfDataGrid_ItemsSourceProperty) property helps to bind this control with a collection of objects.
 
 The code below demonstrates how to bind a data source to the `SfDataGrid`. Each row in the SfDataGrid binds to an object in the data source. Each column binds to a property in the data model object.
 
@@ -438,4 +438,4 @@ private void Button_Clicked(object sender, EventArgs e)
 {% endhighlight %}
 {% endtabs %}
 
-> **Note:** Looking for the full .NET MAUI Data Grid component overview, features, pricing, and documentation? Visit the [.NET MAUI Data Grid](https://www.syncfusion.com/maui-controls/maui-datagrid) page.
+> **Note:** Looking for the full .NET MAUI DataGrid component overview, features, pricing, and documentation? Visit the [.NET MAUI DataGrid](https://www.syncfusion.com/maui-controls/maui-datagrid) page.

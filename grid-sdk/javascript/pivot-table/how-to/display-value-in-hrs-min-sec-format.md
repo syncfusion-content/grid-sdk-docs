@@ -1,17 +1,17 @@
 ---
 layout: post
 title: Display string value to pivot table values in Javascript | Syncfusion
-description: Learn here all about how to display string value to pivot table values in Syncfusion JavaScript Pivot Table component of Syncfusion Essential JS 2 and more.
-platform: grid-sdk
+description: Learn here all about how to display string value to pivot table values in Syncfusion ##Platform_Name## Pivot Table component of Syncfusion Essential JS 2 and more.
+platform: ej2-javascript
 control: Display string value to pivot table values
-publishingplatform: grid-sdk
+publishingplatform: ##Platform_Name##
 documentation: ug
-domainurl: https://help.syncfusion.com/grid-sdk
+domainurl: ##DomainURL##
 ---
 
 <!-- markdownlint-disable MD009 -->
 
-# Display string values in JavaScript Pivot Table cells
+# Display string values in ##Platform_Name## Pivot Table cells
 
 The Pivot Table allows users to display custom string values in value cells by using the [`aggregateCellInfo`](https://ej2.syncfusion.com/documentation/api/pivotview/index-default#aggregatecellinfo) event. This is useful when you need to format numeric values into readable strings, such as converting seconds to time format or applying custom formatting rules.
 

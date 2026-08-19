@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Javascript Grid Column Template| Syncfusion
-description: Learn how to create custom column templates in Javascript Data Grid to render rich cell content, editors, formatting, and interactive UI elements.
+title: Column template in JavaScript Grid control | Syncfusion
+description: Learn here all about Column template in Syncfusion JavaScript Grid control of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
-control: Column template 
-publishingplatform: grid-sdk
+control: Column template
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Column Template in Javascript Data Grid
+# Column template in JavaScript Grid control
 
 Grid control provides a [template](../../api/grid/column#template) option that allows you to display custom elements in a column instead of the field value. This can be useful when you need to display images, buttons, or other custom content within a column.
 

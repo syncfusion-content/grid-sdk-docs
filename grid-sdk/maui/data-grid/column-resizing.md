@@ -5,10 +5,10 @@ description: Learn all about column resizing support in Syncfusion® .NET MAUI D
 platform: grid-sdk
 control: SfDataGrid
 documentation: ug
-keywords : maui data grid, maui datagrid, maui grid, grid maui, maui gridview, grid in maui, .net maui datagrid, .net maui grid, .net grid maui, .net maui column resizing, maui column resizing
+keywords : maui datagrid, maui grid, grid maui, maui gridview, grid in maui, .net maui datagrid, .net maui grid, .net grid maui, .net maui column resizing, maui column resizing
 ---
 
-# Columns Resizing in .NET MAUI Data Grid
+# Columns Resizing in MAUI DataGrid (SfDataGrid)
 
 The `SfDataGrid` allows you to resize the columns by tapping and dragging the right border of the column headers. Resizing can be enabled or disabled by setting the [SfDataGrid.AllowResizingColumns](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.DataGrid.SfDataGrid.html#Syncfusion_Maui_DataGrid_SfDataGrid_AllowResizingColumns) property. A resizing indicator is displayed while resizing a column.
 

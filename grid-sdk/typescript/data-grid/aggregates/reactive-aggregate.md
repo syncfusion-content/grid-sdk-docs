@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Typescript Grid Reactive Aggregate | Syncfusion
-description: Learn how to use reactive aggregates in Typescript Data Grid to automatically update summary values when data is edited, added, or removed.
+title: Reactive aggregate in TypeScript Grid control | Syncfusion
+description: Learn here all about Reactive aggregate in Syncfusion TypeScript Grid control of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Reactive aggregate 
 publishingplatform: grid-sdk
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Reactive Aggregate in Typescript Data Grid
+# Reactive aggregate in TypeScript Grid control
 
 The TypeScript Grid control provides support for reactive aggregates, which allow you to update the aggregate values dynamically as the data changes. Reactive aggregates automatically recalculate their values when there are changes in the underlying data, providing real-time updates to the aggregate values in the grid.
 

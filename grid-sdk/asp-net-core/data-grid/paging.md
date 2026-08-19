@@ -1,14 +1,14 @@
 ---
 layout: post
-title: ASP.NET Core Grid Paging | Syncfusion
-description: Learn how to configure paging in ASP.NET Core Data Grid with client and server paging, page size options, pager templates, and navigation controls.
+title: Paging in ASP.NET Core Grid Control | Syncfusion
+description: Learn here all about Paging in Syncfusion ASP.NET Core Grid component of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Paging
 publishingplatform: grid-sdk
 documentation: ug
 ---
 
-# Paging in ASP.NET Core Data Grid
+# Paging in ASP.NET Core Grid component
 
 Paging provides an option to display grid data in segmented pages, making it easier to navigate through large datasets. This feature is particularly useful when dealing with extensive data sets. 
 

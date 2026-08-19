@@ -1,17 +1,17 @@
 ---
 layout: post
-title: Row and column in TypeScript Pivot Table component | Syncfusion
-description: Learn here all about Row and column in Syncfusion TypeScript Pivot Table component of Syncfusion Essential JS 2 and more.
-platform: grid-sdk
-control: Row and column 
-publishingplatform: grid-sdk
+title: Row and Column in ##Platform_Name## Pivot Table | Syncfusion
+description: Learn how the ##Platform_Name## Pivot Table sets `height` and `width` in pixel, percentage, or auto formats, with a 400px minimum width for proper display.
+platform: ej2-javascript
+control: Row and column
+publishingplatform: ##Platform_Name##
 documentation: ug
-domainurl: https://help.syncfusion.com/grid-sdk
+domainurl: ##DomainURL##
 ---
 
 <!-- markdownlint-disable MD012 -->
 
-# Row and column in TypeScript Pivot Table component
+# Row and Column in ##Platform_Name## Pivot Table
 
 ## Width and Height
 

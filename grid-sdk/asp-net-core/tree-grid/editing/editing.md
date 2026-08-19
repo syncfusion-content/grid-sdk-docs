@@ -1,15 +1,13 @@
 ---
 layout: post
-title: Editing in ASP.NET Core Tree Grid Component | Syncfusion
-description: Learn here all about Editing in Syncfusion ASP.NET Core Tree Grid component of Syncfusion Essential JS 2 and more.
-platform: grid-sdk
+title: ASP.NET Core TreeGrid Edit | Syncfusion
+description: Learn how to edit data in ASP.NET Core TreeGrid, including CRUD operations, editing modes, validation, and data update workflows.
 control: Editing
-publishingplatform: grid-sdk
 documentation: ug
 ---
 
 
-# Editing in ASP.NET Core Tree Grid Component
+# Edit in ASP.NET Core TreeGrid
 
 The TreeGrid component has options to dynamically insert, delete and update records. Editing feature is enabled by using [`e-treegrid-editSettings`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridEditSettings.html) tag helper and it requires a primary key column for CRUD operations.
 
@@ -73,7 +71,7 @@ The treegrid toolbar has the built-in items to execute Editing actions. You can 
 
 ## Adding row position
 
-The TreeGrid control provides the support to add the new row in the top, bottom, above selected row, below selected row and child position of tree grid content using [`newRowPosition`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridEditSettings~NewRowPosition.html) property of [`e-treegrid-editsettings`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridEditSettings.html) tag helper. By default, a new row will be added at the top of the treegrid.
+The TreeGrid control provides the support to add the new row in the top, bottom, above selected row, below selected row and child position of tree grid content using [`newRowPosition`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridEditSettings~NewRowPosition.html) property of [`EditSettings`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridEditSettings.html) tag helper. By default, a new row will be added at the top of the treegrid.
 
 The following examples shows how to set new row position as **Child** in treegrid.
 

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Typescript Grid Hierarchy Grid | Syncfusion
-description: earn how to create hierarchy grids in Typescript Data Grid with parent-child relationships, nested child grids, hierarchical data binding, and expandable rows.
+title: Hierarchy grid in TypeScript Grid control | Syncfusion
+description: Learn here all about Hierarchy grid in Syncfusion TypeScript Grid control of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Hierarchy grid 
 publishingplatform: grid-sdk
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Hierarchy Grid in Typescript Data Grid
+# Hierarchy grid in TypeScript Grid control
 
 The Hierarchy Grid in an TypeScript Grid control is typically used when you need to display hierarchical data in a tabular format with expandable and collapsible rows. It allows you to represent parent and child relationships within the grid, making it easier for you to navigate and understand the data.
 

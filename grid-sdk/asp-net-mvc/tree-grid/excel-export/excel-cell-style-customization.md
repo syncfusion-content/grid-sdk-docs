@@ -1,15 +1,13 @@
 ---
 layout: post
-title: Excel Cell Style Customization in Syncfusion ASP.NET MVC Tree Grid Component
-description: Learn here all about Excel Cell Style Customization in Syncfusion ASP.NET MVC Tree Grid component of Syncfusion Essential JS 2 and more.
+title: ASP.NET MVC TreeGrid Excel Cell Style Customization | Syncfusion
+description:  Learn how to customize Excel cell styles in the ASP.NET MVC TreeGrid of Essential JS 2, including conditional formatting and theming options.
 platform: grid-sdk
 control: Excel Cell Style Customization
-publishingplatform: grid-sdk
 documentation: ug
 ---
 
-
-# Excel Cell Style Customization
+# Excel Cell Style Customization in ASP.NET MVC TreeGrid
 
 ## Conditional cell formatting
 
@@ -46,7 +44,7 @@ In the below sample, we have set the background color for **Duration** column in
 
 The excel export provides an option to include theme for exported excel document.
 
-To apply theme in exported Excel, define the [`theme`](https://ej2.syncfusion.com/documentation/api/grid/excelExportProperties/#theme) in [`ExcelExportProperties`](https://ej2.syncfusion.com/documentation/api/grid/excelExportProperties/#excelexportproperties).
+To apply theme in exported Excel, define the [`theme`](https://ej2.syncfusion.com/documentation/api/grid/excelExportProperties#theme) in [`ExcelExportProperties`](https://ej2.syncfusion.com/documentation/api/grid/excelExportProperties#excelexportproperties).
 
 {% if page.publishingplatform == "aspnet-core" %}
 

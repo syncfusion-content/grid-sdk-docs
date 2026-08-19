@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Grouping in ASP.NET Core Syncfusion Pivot Table Control | Syncfusion
-description: Learn here all about Grouping in Syncfusion ASP.NET Core Pivot Table component of Syncfusion Essential JS 2 and more.
-platform: grid-sdk
+title: Grouping in ASP.NET Core Pivot Table | Syncfusion
+description: Learn how the ASP.NET Core Pivot Table groups date, number, and string fields into year, quarter, or numeric ranges via allowGrouping.
+platform: ej2-asp-core-mvc
 control: Grouping
-publishingplatform: grid-sdk
+publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
 
-# Grouping in ASP.NET Core Pivot Table Control
+# Grouping in ASP.NET Core Pivot Table
 
 > This feature is applicable only for the relational data source.
 

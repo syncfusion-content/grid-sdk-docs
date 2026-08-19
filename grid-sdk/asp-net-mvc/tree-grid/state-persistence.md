@@ -1,15 +1,13 @@
 ---
 layout: post
-title: State Persistence in ASP.NET MVC Tree Grid Component
-description: Learn here all about State Persistence in Syncfusion ASP.NET MVC Tree Grid component of Syncfusion Essential JS 2 and more.
+title: ASP.NET MVC TreeGrid State Persistence | Syncfusion
+description: Learn how to use state persistence in the ASP.NET MVC TreeGrid component, including configuration with enablePersistence and localStorage usage.
 platform: grid-sdk
 control: State Persistence
-publishingplatform: grid-sdk
 documentation: ug
 ---
 
-
-# State Persistence
+# State Persistence in ASP.NET MVC TreeGrid
 
 State persistence refers to the TreeGrid's state maintained in the browser's [`localStorage`](https://www.w3schools.com/html/html5_webstorage.asp#) even if the browser is refreshed or if you move to the next page within the browser.
 State persistence stores treegrid’s model object in the local storage when the [`enablePersistence`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGrid~EnablePersistence.html) is defined as true.

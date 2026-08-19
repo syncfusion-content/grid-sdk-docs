@@ -7,7 +7,7 @@ control: SfDataGrid
 documentation: UG
 ---
 
-# Search in .NET MAUI Data Grid
+# Search in MAUI DataGrid (SfDataGrid)
 The [SfDataGrid](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.DataGrid.SfDataGrid.html) control allows you to search the data displayed within the datagrid. You can search the data using the built-in search UI or programmatically.
 
 ## UI Searching

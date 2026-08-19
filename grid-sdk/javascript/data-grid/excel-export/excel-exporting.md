@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Javascript Grid Excel Export | Syncfusion
-description: Learn how to export Javascript Data Grid data to Excel, create downloadable workbooks, and customize export settings for spreadsheets.
+title: Excel exporting in JavaScript Grid control | Syncfusion
+description: Learn here all about Excel exporting in Syncfusion JavaScript Grid control of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
-control: Excel exporting 
-publishingplatform: grid-sdk
+control: Excel exporting
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Excel Export in Javascript Data Grid
+# Excel exporting in JavaScript Grid control
 
 The Excel or CSV exporting feature in the JavaScript Grid control allows you to export the Grid data to an Excel or CSV document. This can be useful when you need to share or analyze the data in a spreadsheet format.
 

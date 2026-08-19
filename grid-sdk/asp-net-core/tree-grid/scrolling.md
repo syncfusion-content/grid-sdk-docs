@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Scrolling in ASP.NET Core Tree Grid Control | Syncfusion
-description: Learn here all about Scrolling in Syncfusion ASP.NET Core Tree Grid component of Syncfusion Essential JS 2 and more.
+title: ASP.NET Core TreeGrid Scrolling | Syncfusion
+description: Learn how to configure scrolling in ASP.NET Core TreeGrid, including responsive sizing, sticky headers, scroll-to-row, and scrollbar options.
 platform: grid-sdk
 control: Scrolling
-publishingplatform: grid-sdk
 documentation: ug
 ---
 
 
-# Scrolling in Tree Grid Control
+# Scrolling in ASP.NET Core TreeGrid
 
 The scrollbar will be displayed in the treegrid when content exceeds the element [`width`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGrid~Width.html) or [`height`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGrid~Height.html). The vertical and horizontal scrollbars will be displayed based on the following criteria:
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: React TreeGrid Add Headers and Footers to Excel Export | Syncfusion
-description: Learn how to add headers and footers to Excel exports in React TreeGrid, including configuration, customization, and export options.
+title: Adding header and footer in React TreeGrid | Syncfusion
+description: Learn here all about Adding header and footer in Syncfusion React TreeGrid of Syncfusion Essential JS 2 and more.
 control: Adding header and footer 
 platform: grid-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Adding Headers and Footers in React TreeGrid
+# Adding header and footer in React TreeGrid
 
 Excel export supports adding header and footer content to the exported Excel document.
 

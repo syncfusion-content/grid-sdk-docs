@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Provide custom data source and enabling filtering to drop down list in Vue Treegrid component | Syncfusion
-description: Learn here all about Provide custom data source and enabling filtering to drop down list in Syncfusion Vue Treegrid component of Syncfusion Essential JS 2 and more.
+title: Vue TreeGrid DropDownList Data & Filtering | Syncfusion
+description: Learn how to provide a custom data source and enable filtering for DropDownList in the Vue TreeGrid with column edit parameters.
 control: Provide custom data source and enabling filtering to drop down list 
 platform: grid-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Provide custom data source and enabling filtering to drop down list in Vue Treegrid component
+# Custom Data Source and Filtering for DropDownList in Vue TreeGrid
 
-You can provide data source to the DropDownList by using the **params** of [`columns.edit`](https://ej2.syncfusion.com/vue/documentation/api/treegrid/column/#edit) property.
+You can provide data source to the DropDownList by using the **params** of [`columns.edit`](https://ej2.syncfusion.com/vue/documentation/api/treegrid/column#edit) property.
 
 While setting new data source using edit params, you must specify a new **query** property for the DropDownList as follows,
 
@@ -26,9 +26,9 @@ While setting new data source using edit params, you must specify a new **query*
     };
 ```
 
-You can also enable filtering for the DropDownList by passing the [`allowFiltering`](https://ej2.syncfusion.com/vue/documentation/api/drop-down-list/#allowfiltering) as **true** to the edit params.
+You can also enable filtering for the DropDownList by passing the [`allowFiltering`](https://ej2.syncfusion.com/vue/documentation/api/drop-down-list#allowfiltering) as **true** to the edit params.
 
-In the below demo, DropDownList is rendered with custom [`dataSource`](https://ej2.syncfusion.com/vue/documentation/api/drop-down-list/#datasource) for the *Priority* column and enabled filtering to search DropDownList items.
+In the below demo, DropDownList is rendered with custom [`dataSource`](https://ej2.syncfusion.com/vue/documentation/api/drop-down-list#datasource) for the *Priority* column and enabled filtering to search DropDownList items.
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}

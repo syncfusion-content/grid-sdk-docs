@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Typescript Grid Custom Toolbar | Syncfusion
-description: Learn how to create a custom toolbar in Typescript Data Grid with templates, custom components, interactive controls, and custom toolbar actions.
+title: Custom tool bar in TypeScript Grid control | Syncfusion
+description: Learn here all about Custom tool bar in Syncfusion TypeScript Grid control of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Custom tool bar 
 publishingplatform: grid-sdk
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Custom Toolbar in Typescript Data Grid
+# Custom tool bar in TypeScript Grid control
 
 Custom toolbar in TypeScript Grid allows you to create a distinctive toolbar layout, style, and functionality that aligns with the specific needs of your application, providing a personalized experience within the Grid control.
 

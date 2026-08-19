@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Blazor TreeGrid Accessibility | Syncfusion
-description: Learn how Blazor TreeGrid supports accessibility with WCAG 2.2 compliance, Section 508 support, ARIA attributes, keyboard navigation, and screen readers.
+title: Accessibility in Blazor TreeGrid Component | Syncfusion®
+description: Checkout and learn here all the features about accessibility in Blazor TreeGrid component and much more details.
 platform: grid-sdk
 control: Tree Grid
 documentation: ug
 ---
 
-# Accessibility in Blazor TreeGrid
+# Accessibility in Blazor TreeGrid Component
 
 The Blazor Tree Grid component followed the accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) that are commonly used to evaluate accessibility.
 

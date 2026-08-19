@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Typescript Grid Edit Types | Syncfusion
-description: Learn how to configure edit types in Typescript Data Grid, choose appropriate cell editors, customize editing behavior, and manage column editing efficiently.
+title: Edit types in TypeScript Grid control | Syncfusion
+description: Learn here all about Edit types in Syncfusion TypeScript Grid control of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Edit types 
 publishingplatform: grid-sdk
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Edit Types in Typescript Data Grid
+# Edit types in TypeScript Grid control
 
 The TypeScript Grid control in Syncfusion<sup style="font-size:70%">&reg;</sup> provides various edit types that allow you to customize the editing behavior for different types of columns. These edit types enhance the editing experience and provide flexibility in handling different data types. 
 

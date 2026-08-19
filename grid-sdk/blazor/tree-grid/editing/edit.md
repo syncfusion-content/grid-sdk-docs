@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Blazor TreeGrid Editing | Syncfusion
-description: Learn how to enable and customize editing in Blazor TreeGrid, manage CRUD operations, validate data, and improve editing workflows.
+title: Editing in Blazor TreeGrid Component | Syncfusion®
+description: Checkout and learn how to enable and use editing in the Blazor TreeGrid component and much more details.
 platform: grid-sdk
 control: TreeGrid
 documentation: ug
 ---
 
-# Editing in Blazor TreeGrid
+# Editing in Blazor TreeGrid Component
 
 The TreeGrid supports dynamically inserting, updating, and deleting records. Enable editing using [TreeGridEditSettings](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.TreeGrid.TreeGridEditSettings.html), and define a primary key column to support CRUD operations.
 

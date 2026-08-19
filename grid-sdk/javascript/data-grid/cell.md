@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Javascript Grid Cells | Syncfusion
-description: Learn how to customize Javascript Data Grid cells with HTML content, text wrapping, cell styling, clip modes, tooltips, and grid line configuration.
+title: Cell in JavaScript Grid Control | Syncfusion
+description: Learn here all about cell support in Syncfusion JavaScript Grid control, it's elements, and more.
 platform: grid-sdk
 control: Cell 
 publishingplatform: grid-sdk
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Cells in Javascript Data Grid
+# Cell in JavaScript Grid Control
 
 In the JavaScript Grid, a **cell** refers to an individual data point or a unit within a grid column that displays data. It represents the intersection of a row and a column, and it contains specific information associated with that row and column. Each cell can display text, numbers, or other content related to the data it represents. 
 

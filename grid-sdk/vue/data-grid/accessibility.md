@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Vue Grid Accessibility | Syncfusion
-description: Learn how to use accessibility features in Vue Data Grid with keyboard navigation, ARIA attributes, screen reader support, and accessibility standards.
+title: Accessibility in Vue Grid component | Syncfusion
+description: Learn here all about Accessibility in Syncfusion Vue Grid component of Syncfusion Essential JS 2 and more.
 control: Accessibility 
 platform: grid-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Accessibility in Vue Data Grid
+# Accessibility in Vue Grid component
 
-The [Vue Data Grid](https://www.syncfusion.com/vue-components/vue-grid) component followed the accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) that are commonly used to evaluate accessibility.
+The [Vue Data Grid](https://www.syncfusion.com/vue-components/vue-grid) component followed the accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria#roles) that are commonly used to evaluate accessibility.
 
 The accessibility compliance for the Grid component is outlined below.
 
@@ -96,7 +96,7 @@ The accessibility checker tools highlights the following known issues:
 
 ## Keyboard interaction
 
-The Grid component followed the [keyboard interaction](https://www.w3.org/WAI/ARIA/apg/patterns/alert/#keyboardinteraction) guideline, making it easy for people who use assistive technologies (AT) and those who completely rely on keyboard navigation. The following keyboard shortcuts are supported by the Grid component.
+The Grid component followed the [keyboard interaction](https://www.w3.org/WAI/ARIA/apg/patterns/alert#keyboardinteraction) guideline, making it easy for people who use assistive technologies (AT) and those who completely rely on keyboard navigation. The following keyboard shortcuts are supported by the Grid component.
 
 <b>Pager</b>
 

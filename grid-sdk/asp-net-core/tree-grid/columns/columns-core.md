@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Columns Core in ASP.NET Core Tree Grid Component | Syncfusion
-description: Learn here all about Columns Core in Syncfusion ASP.NET Core Tree Grid component of Syncfusion Essential JS 2 and more.
+title: ASP.NET Core TreeGrid Columns | Syncfusion
+description: Learn how to configure and customize columns in ASP.NET Core TreeGrid, including column types, visibility, templates, and formatting options.
 platform: grid-sdk
 control: Columns Core
-publishingplatform: grid-sdk
 documentation: ug
 ---
 
 
-# Columns in ASP.NET Core Tree Grid Component
+# Columns in ASP.NET Core TreeGrid
 
 The column definitions are used as the dataSource schema in the TreeGrid. This plays a vital role in rendering column values in the required format. The treegrid operations such as sorting, filtering and searching etc. are performed based on column definitions. The [`field`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.TreeGrid.TreeGridColumn.html#Syncfusion_EJ2_TreeGrid_TreeGridColumn_Field) property of [`e-treegrid-columns`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.TreeGrid.TreeGridColumns.html) tag helper is necessary to map the data source values in TreeGrid columns.
 

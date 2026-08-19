@@ -1,14 +1,14 @@
 ---
 layout: post
-title: React TreeGrid Preact | Syncfusion
-description: Learn how to use React TreeGrid in Preact applications with setup instructions, required configuration, and full grid feature support.
+title: Preact Getting Started with React Tree Grid Component | Syncfusion
+description: Check out and learn about getting started with the Preact Framework and React Tree Grid Component of Syncfusion Essential JS 2 and more details.
 control: Preact
 platform: grid-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Getting Started with React Data TreeGrid in Preact Framework
+# Getting Started with the Tree Grid Component in the Preact Framework
 
 This article provides a step-by-step guide for setting up a [Preact](https://preactjs.com/) project and integrating the Syncfusion<sup style="font-size:70%">&reg;</sup> React Tree Grid component.
 
@@ -83,7 +83,7 @@ With `my-project` ready using default settings, add Syncfusion<sup style="font-s
 
 ## Adding Syncfusion<sup style="font-size:70%">&reg;</sup> React Tree Grid packages
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> React component packages are available at [npmjs.com](https://www.npmjs.com/search?q=ej2-react). To use Syncfusion<sup style="font-size:70%">&reg;</sup> React components in the project, install the corresponding npm package.
+Syncfusion<sup style="font-size:70%">&reg;</sup> React component packages are available at [npm registry](https://www.npmjs.com/search?q=ej2-react). To use Syncfusion<sup style="font-size:70%">&reg;</sup> React components in the project, install the corresponding npm package.
 
 This article uses the [React Tree Grid component](https://www.syncfusion.com/react-components/react-tree-grid) as an example. To use the React Tree Grid component in the project, install the `@syncfusion/ej2-react-treegrid` package using one of the following commands:
 

@@ -1,21 +1,21 @@
 ---
 layout: post
-title: Row in Vue Treegrid component | Syncfusion
-description: Learn here all about Row in Syncfusion Vue Treegrid component of Syncfusion Essential JS 2 and more.
+title: Vue TreeGrid Rows | Syncfusion
+description: Learn how to work with rows in Vue TreeGrid, including row customization, selection, styling, rendering, and row-level operations.
 control: Row 
 platform: grid-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Row in Vue Treegrid component
+# Rows in Vue TreeGrid
 
 The row represents record details fetched from data source.
 
 ## Customize rows
 
-You can customize the appearance of a row by using the [`rowDataBound`](https://ej2.syncfusion.com/vue/documentation/api/treegrid/#rowdatabound) event.
-The [`rowDataBound`](https://ej2.syncfusion.com/vue/documentation/api/treegrid/#rowdatabound) event triggers for every row. In the event handler, you can get the
+You can customize the appearance of a row by using the [`rowDataBound`](https://ej2.syncfusion.com/vue/documentation/api/treegrid#rowdatabound) event.
+The [`rowDataBound`](https://ej2.syncfusion.com/vue/documentation/api/treegrid#rowdatabound) event triggers for every row. In the event handler, you can get the
 `RowDataBoundEventArgs` that contains details of the row.
 
 {% tabs %}

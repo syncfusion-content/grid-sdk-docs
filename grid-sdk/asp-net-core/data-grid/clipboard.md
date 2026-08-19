@@ -1,7 +1,7 @@
 ---
 layout: post
-title: ASP.NET Core Grid Clipboard | Syncfusion
-description: Learn how to use clipboard features in ASP.NET Core Data Grid, including copy, paste, autofill, keyboard shortcuts, and clipboard data operations.
+title: Clipboard in Syncfusion ASP.NET Core Grid Component
+description: Learn here all about Clipboard in Syncfusion ASP.NET Core Grid component of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Clipboard
 publishingplatform: grid-sdk
@@ -9,7 +9,7 @@ documentation: ug
 ---
 
 
-# Clipboard in ASP.NET Core Data Grid
+# Clipboard in ASP.NET Core Grid Component
 
 The clipboard feature in the Syncfusion ASP.NET Core Grid provides an easy way to copy selected rows or cells data into the clipboard. You can use keyboard shortcuts to perform the copy operation. The following list of keyboard shortcuts is supported in the Grid to copy selected rows or cells data into clipboard.
 

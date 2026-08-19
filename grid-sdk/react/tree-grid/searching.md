@@ -1,7 +1,7 @@
 ---
 layout: post
-title: React TreeGrid Searching | Syncfusion
-description: Learn how to enable and customize searching in React TreeGrid, including search settings, operators, column-specific search, and advanced options.
+title: Searching in React TreeGrid component | Syncfusion
+description: Learn here all about Searching in Syncfusion React TreeGrid component of Syncfusion Essential JS 2 and more.
 control: Searching 
 platform: grid-sdk
 documentation: ug
@@ -10,7 +10,7 @@ domainurl: https://help.syncfusion.com/grid-sdk
 
 # Searching in React TreeGrid
 
-Search records by calling the [search](https://ej2.syncfusion.com/react/documentation/api/treegrid/#search) method with a search key. A search text box can also be placed in the TreeGrid toolbar by adding the search item to the [toolbar](https://ej2.syncfusion.com/react/documentation/api/treegrid/#toolbar).
+Search records by calling the [search](https://ej2.syncfusion.com/react/documentation/api/treegrid#search) method with a search key. A search text box can also be placed in the TreeGrid toolbar by adding the search item to the [toolbar](https://ej2.syncfusion.com/react/documentation/api/treegrid#toolbar).
 
 To enable searching, inject the **Filter** module into the TreeGrid.
 
@@ -27,7 +27,7 @@ To enable searching, inject the **Filter** module into the TreeGrid.
 
 ## Initial search
 
-Apply search on initial render by setting [fields](https://ej2.syncfusion.com/react/documentation/api/treegrid/searchSettings/#fields), [operator](https://ej2.syncfusion.com/react/documentation/api/treegrid/searchSettings/#operator), [key](https://ej2.syncfusion.com/react/documentation/api/treegrid/searchSettings/#key), and [ignoreCase](https://ej2.syncfusion.com/react/documentation/api/treegrid/searchSettings/#ignorecase) in [searchSettings](https://ej2.syncfusion.com/react/documentation/api/treegrid/#searchsettings).
+Apply search on initial render by setting [fields](https://ej2.syncfusion.com/react/documentation/api/treegrid/searchSettings#fields), [operator](https://ej2.syncfusion.com/react/documentation/api/treegrid/searchSettings#operator), [key](https://ej2.syncfusion.com/react/documentation/api/treegrid/searchSettings#key), and [ignoreCase](https://ej2.syncfusion.com/react/documentation/api/treegrid/searchSettings#ignorecase) in [searchSettings](https://ej2.syncfusion.com/react/documentation/api/treegrid#searchsettings).
 
 {% tabs %}
 {% highlight js tabtitle="app.jsx" %}
@@ -40,11 +40,11 @@ Apply search on initial render by setting [fields](https://ej2.syncfusion.com/re
 
  {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/treegrid/searching-cs2" %}
 
-> By default, searching targets all bound column values. To customize this behavior define the [searchSettings.fields](https://ej2.syncfusion.com/react/documentation/api/treegrid/searchSettingsModel/#fields) property.
+> By default, searching targets all bound column values. To customize this behavior define the [searchSettings.fields](https://ej2.syncfusion.com/react/documentation/api/treegrid/searchSettingsModel#fields) property.
 
 ## Search operators
 
-Configure the operator in [searchSettings.operator](https://ej2.syncfusion.com/react/documentation/api/treegrid/searchSettingsModel/#operator) to control how matching is performed.
+Configure the operator in [searchSettings.operator](https://ej2.syncfusion.com/react/documentation/api/treegrid/searchSettingsModel#operator) to control how matching is performed.
 
 The following operators are supported in searching:
 
@@ -56,11 +56,11 @@ contains | Checks whether a value contains the specified value.
 equal | Checks whether a value is equal to the specified value.
 notEqual | Checks for values not equal to the specified value.
 
-> By default, the [searchSettings.operator](https://ej2.syncfusion.com/react/documentation/api/treegrid/searchSettingsModel/#operator) value is **contains**.
+> By default, the [searchSettings.operator](https://ej2.syncfusion.com/react/documentation/api/treegrid/searchSettingsModel#operator) value is **contains**.
 
 ## Search by external button
 
-Trigger a search from external UI by invoking the [search](https://ej2.syncfusion.com/react/documentation/api/treegrid/#search) method.
+Trigger a search from external UI by invoking the [search](https://ej2.syncfusion.com/react/documentation/api/treegrid#search) method.
 
 {% tabs %}
 {% highlight js tabtitle="app.jsx" %}
@@ -75,7 +75,7 @@ Trigger a search from external UI by invoking the [search](https://ej2.syncfusio
 
 ## Search specific columns
 
-By default, searching targets all visible columns. To search specific columns, list their field names in [searchSettings.fields](https://ej2.syncfusion.com/react/documentation/api/treegrid/searchSettingsModel/#fields).
+By default, searching targets all visible columns. To search specific columns, list their field names in [searchSettings.fields](https://ej2.syncfusion.com/react/documentation/api/treegrid/searchSettingsModel#fields).
 
 {% tabs %}
 {% highlight js tabtitle="app.jsx" %}

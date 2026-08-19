@@ -1,14 +1,14 @@
----
+﻿---
 layout: post
-title: "Oracle Data Binding in Angular Pivotview component | Syncfusion"
+title: "Oracle in Angular Pivot Table | Syncfusion"
 component: "Pivot Table"
-platform: grid-sdk
-description: "Learn how to bind data from a Oracle database in the Syncfusion Angular Pivot Table of Syncfusion Essential JS 2 and more."
+platform: ej2-angular
+description: Learn how the Angular Pivot Table binds to an Oracle database through an ASP.NET Core Web API and Oracle Managed Data Access.
 control: Oracle Data Binding
 documentation: ug
 ---
 
-# Oracle in EJ2 Angular Pivotview Component
+# Oracle in Angular Pivot Table
 
 This guide explains how to retrieve data from an Oracle database using the [Oracle Managed Data Access](https://www.nuget.org/packages/Oracle.ManagedDataAccess) library and bind it to the Pivot Table through a Web API controller.
 
@@ -24,8 +24,8 @@ Follow these steps to create a Web API service that retrieves data from an Oracl
 
 ### Step 2: Install the Oracle NuGet Package
 To enable Oracle database connectivity:
-1. Open the **NuGet Package Manager** in your project solution and search for [Oracle.ManagedDataAccess.Core](https://www.nuget.org/packages/Oracle.ManagedDataAccess.Core/).
-2. Install the [Oracle.ManagedDataAccess.Core](https://www.nuget.org/packages/Oracle.ManagedDataAccess.Core/) package to add Oracle support.
+1. Open the **NuGet Package Manager** in your project solution and search for [Oracle.ManagedDataAccess.Core](https://www.nuget.org/packages/Oracle.ManagedDataAccess.Core).
+2. Install the [Oracle.ManagedDataAccess.Core](https://www.nuget.org/packages/Oracle.ManagedDataAccess.Core) package to add Oracle support.
 
 ![Installing the Oracle.ManagedDataAccess.Core NuGet package](../images/oracle-data-nuget-package-install.png)
 

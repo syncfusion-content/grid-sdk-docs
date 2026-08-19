@@ -1,20 +1,20 @@
 ---
 layout: post
-title: Immutable mode in Vue Treegrid component | Syncfusion
-description: Learn here all about Immutable mode in Syncfusion Vue Treegrid component of Syncfusion Essential JS 2 and more.
+title: Vue TreeGrid Immutable Mode | Syncfusion
+description: Learn how to use immutable mode in Vue TreeGrid to optimize rendering performance by updating only modified rows and reducing re-rendering.
 control: Immutable mode 
 platform: grid-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Immutable mode in Vue Treegrid component
+# Immutable Mode in Vue TreeGrid
 
-The immutable mode optimizes the TreeGrid re-rendering performance by using the object reference and [`deep compare`](https://dmitripavlutin.com/how-to-compare-objects-in-javascript/#4-deep-equality) concept. When performing the TreeGrid actions, it will only re-render the modified or newly added rows and prevent the re-rendering of the unchanged rows.
+The immutable mode optimizes the TreeGrid re-rendering performance by using the object reference and deep compare concept. When performing the TreeGrid actions, it will only re-render the modified or newly added rows and prevent the re-rendering of the unchanged rows.
 
-To enable this feature, you have to set the [`enableImmutableMode`](https://ej2.syncfusion.com/vue/documentation/api/treegrid#enableimmutablemode) property as **true**.
+To enable this feature, you have to set the [`enableImmutableMode`](https://ej2.syncfusion.com/vue/documentation/api/treegrid#enableimmutablemode) property as `true`.
 
-> * This feature uses the primary key value for data comparison. So, you need to provide the [`isPrimaryKey`](https://ej2.syncfusion.com/vue/documentation/api/treegrid/column/#isprimarykey) column.
+> * This feature uses the primary key value for data comparison. So, you need to provide the [`isPrimaryKey`](https://ej2.syncfusion.com/vue/documentation/api/treegrid/column#isprimarykey) column.
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}

@@ -1,12 +1,12 @@
 ---
 layout: post  
 title: Configure minimum width in Javascript | Syncfusion
-description: Learn all about configuring the minimum width in the Syncfusion TypeScript Pivot Table component of Syncfusion Essential JS 2, and more.  
-platform: grid-sdk  
+description: Learn all about configuring the minimum width in the Syncfusion ##Platform_Name## Pivot Table component of Syncfusion Essential JS 2, and more.  
+platform: ej2-javascript  
 control: Configuring the minimum width in the Pivot Table component  
-publishingplatform: grid-sdk  
+publishingplatform: ##Platform_Name##  
 documentation: ug  
-domainurl: https://help.syncfusion.com/grid-sdk  
+domainurl: ##DomainURL##  
 ---
 
 # Configuring the minimum width in the JavaScript

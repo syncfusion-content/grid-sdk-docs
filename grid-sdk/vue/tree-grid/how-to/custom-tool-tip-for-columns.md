@@ -1,18 +1,18 @@
 ---
 layout: post
-title: Custom tool tip for columns in Vue Treegrid component | Syncfusion
-description: Learn here all about Custom tool tip for columns in Syncfusion Vue Treegrid component of Syncfusion Essential JS 2 and more.
+title: Vue TreeGrid Custom Column Tooltips | Syncfusion
+description: Learn how to add custom tooltips for columns in Vue TreeGrid using the Tooltip component and queryCellInfo event.
 control: Custom tool tip for columns 
 platform: grid-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Custom tool tip for columns in Vue Treegrid component
+# Custom Tooltips for Columns in Vue TreeGrid
 
-You can achieve the custom tooltip([`EJ2 Tooltip`](../../tooltip/getting-started)) for Tree Grid by using the [`queryCellInfo`](https://ej2.syncfusion.com/vue/documentation/api/treegrid/#querycellinfo) event.
+You can achieve the custom tooltip([`EJ2 Tooltip`](../../tooltip/getting-started)) for Tree Grid by using the [`queryCellInfo`](https://ej2.syncfusion.com/vue/documentation/api/treegrid#querycellinfo) event.
 
-Render the ToolTip component for the Tree Grid cells by using the following code in the [`queryCellInfo`](https://ej2.syncfusion.com/vue/documentation/api/treegrid/#querycellinfo) event.
+Render the ToolTip component for the Tree Grid cells by using the following code in the [`queryCellInfo`](https://ej2.syncfusion.com/vue/documentation/api/treegrid#querycellinfo) event.
 
 ```ts
 

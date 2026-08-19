@@ -3,8 +3,7 @@ layout: post
 title: JavaScript TreeGrid Helpers | Syncfusion
 description: Learn how to use helpers in JavaScript TreeGrid with practical examples and implementation guidance for common development scenarios.
 platform: grid-sdk
-control: Helpers 
-publishingplatform: grid-sdk
+control: Helpers
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Blazor TreeGrid Searching | Syncfusion
-description: Learn how to search data in Blazor TreeGrid using toolbar integration, external triggers, and advanced search customization options.
+title: Searching in Blazor TreeGrid Component | Syncfusion®
+description: Learn all about Searching in the Blazor TreeGrid component, including toolbar integration, external triggers, and search customization.
 platform: grid-sdk
 control: TreeGrid
 documentation: ug
 ---
 
-# Searching in Blazor TreeGrid
+# Searching in Blazor TreeGrid Component
 
 In a TreeGrid, records can be searched using the [SearchAsync](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.TreeGrid.SfTreeGrid-1.html#Syncfusion_Blazor_TreeGrid_SfTreeGrid_1_SearchAsync_System_String_) method by passing a search key as a parameter. A search textbox can also be integrated into the TreeGrid toolbar by adding the **Search** item to the [Toolbar](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.TreeGrid.SfTreeGrid-1.html#Syncfusion_Blazor_TreeGrid_SfTreeGrid_1_Toolbar).
 

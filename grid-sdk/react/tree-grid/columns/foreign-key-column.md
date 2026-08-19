@@ -1,7 +1,7 @@
 ---
 layout: post
-title: React TreeGrid Display Foreign Key Values | Syncfusion
-description: Learn to display foreign key values and render dropdowns in React TreeGrid using external data for hierarchical structures.
+title: Foreign key column in React TreeGrid | Syncfusion
+description: Learn here all about Foreign key column in Syncfusion React TreeGrid of Syncfusion Essential JS 2 and more.
 control: Foreign key column 
 platform: grid-sdk
 documentation: ug
@@ -12,7 +12,7 @@ domainurl: https://help.syncfusion.com/grid-sdk
 
 The TreeGrid uses hierarchical data binding and does not include built-in support for foreign key data sources.
 
-To display foreign key values during initial render, handle the [queryCellInfo](https://ej2.syncfusion.com/react/documentation/api/treegrid/#querycellinfo) event. For editing, configure the [editType](https://ej2.syncfusion.com/react/documentation/api/treegrid/column/#edittype) and [columns.edit](https://ej2.syncfusion.com/react/documentation/api/treegrid/column/#edit) properties to render a DropDownList bound to an external or foreign datasource.
+To display foreign key values during initial render, handle the [queryCellInfo](https://ej2.syncfusion.com/react/documentation/api/treegrid#querycellinfo) event. For editing, configure the [editType](https://ej2.syncfusion.com/react/documentation/api/treegrid/column#edittype) and [columns.edit](https://ej2.syncfusion.com/react/documentation/api/treegrid/column#edit) properties to render a DropDownList bound to an external or foreign datasource.
 
 {% tabs %}
 {% highlight js tabtitle="app.jsx" %}
