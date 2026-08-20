@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Freezing Headers in Windows Forms Pivot Grid control | Syncfusion®
-description: Learn about Freezing Headers support in Syncfusion® Windows Forms Pivot Grid control and more details.
+title: Freezing Headers in Windows Forms Pivot Table | Syncfusion®
+description: Keep row and column headers visible in Syncfusion® Windows Forms Pivot Table control by enabling frozen headers for easier navigation in large datasets.
 platform: grid-sdk
-control: Pivot Grid
+control: Pivot Table
 documentation: ug
 ---
 
-# Freezing Headers in Windows Forms Pivot Grid
+# Freezing Headers in Windows Forms Pivot Table
 
 The [WinForms Pivot Grid](https://www.syncfusion.com/winforms-ui-controls/pivot-grid) control provides built-in support for freezing column and row headers. This support is quite useful when users want to make the headers visible at all times. The row and column headers are always visible when scrolling through the pivot grid with large number of rows and columns.
 
