@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Filtering in WPF TreeGrid | Syncfusion®
 description: Filter TreeGrid records using built-in filter predicates, UI options, and advanced filter conditions for relevant data.

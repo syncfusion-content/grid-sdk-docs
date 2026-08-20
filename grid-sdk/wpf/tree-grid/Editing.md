@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Editing in WPF TreeGrid | Syncfusion®
 description: Enable cell editing in TreeGrid with support for custom editors, edit modes, and validation during data updates.

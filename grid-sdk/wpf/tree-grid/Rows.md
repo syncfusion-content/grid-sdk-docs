@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Rows in WPF TreeGrid | Syncfusion®
 description: Rows in TreeGrid include headers, unbound, and data rows with customizable styles, indicators, and flexible layouts.

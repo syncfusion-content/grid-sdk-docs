@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Sub-Totals for Child Elements in WPF Pivot Table | Syncfusion®
-description: Sub-Totals for Child Elements in the Syncfusion® WPF Pivot Table control shows subtotals based on child nodes in rows and columns using ShowSubTotalsForChildren.
+description: Sub-Totals for Child Elements in Syncfusion® WPF Pivot Table control shows subtotals based on child nodes in rows and columns using ShowSubTotalsForChildren.
 platform: grid-sdk
 control: Pivot Table
 documentation: ug

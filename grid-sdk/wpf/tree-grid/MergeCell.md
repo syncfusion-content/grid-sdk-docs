@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Merge Cells in WPF TreeGrid | Syncfusion®
 description: Merge Cells in TreeGrid combines adjacent cells with matching values to improve data organization and readability.

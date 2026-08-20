@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Formatting using gradient color scales in WPF Pivot Table | Syncfusion®
+title: Formatting using gradientcolor scales in WPF Pivot Table | Syncfusion®
 description: Apply gradient color scale formatting in the Syncfusion® WPF Pivot Table control to highlight cell values visually for better analysis.
 platform: grid-sdk
 control: Pivot Table

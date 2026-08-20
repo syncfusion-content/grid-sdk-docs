@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Selection in WPF TreeGrid | Syncfusion®
 description: Selection in TreeGrid provides flexible row, cell, and multi-selection options with customizable modes and selection behaviors.

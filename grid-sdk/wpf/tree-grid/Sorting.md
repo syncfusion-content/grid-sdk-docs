@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Sorting in WPF TreeGrid | Syncfusion®
 description: Sorting in TreeGrid provides single and multi-column sorting, custom sorting, programmatic sorting, and sorting event support for efficient data organization.
