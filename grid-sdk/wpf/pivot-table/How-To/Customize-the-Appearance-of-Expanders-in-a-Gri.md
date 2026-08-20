@@ -1,13 +1,13 @@
 ---
 layout: post
-title: 143-Customize-the-Appearance-of-Expanders-in-a-Gri | Syncfusion
-description: Section helps to know how to customize the appearance of expanders using customized styles in PivotGrid control.
+title: How to Customize Expanders Appearance in WPF Pivot Table | Syncfusion®
+description: Customize the appearance of expanders in Syncfusion® WPF Pivot Table control using custom styles and templates for styling and binding.
 platform: grid-sdk
-control: PivotGridControl
+control: Pivot Table
 documentation: ug
 ---
 
-# How to customize the appearance of expanders in PivotGrid?
+# How to Customize Expanders Appearance in WPF Pivot Table
 
 Define your own style for the expander and assign that style to the `ExpanderStyle` property of the PivotGrid control.
 

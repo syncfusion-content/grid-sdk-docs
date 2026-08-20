@@ -1,9 +1,9 @@
 ---
 layout: post
 title: Row Height Customization in WPF TreeGrid | Syncfusion®
-description: Learn about Row Height Customization in the Syncfusion® WPF TreeGrid control. Adjust row heights dynamically for better layout and readability.
+description: Row Height Customization in TreeGrid customizes row heights dynamically to improve data display, readability, and user experience.
 platform: grid-sdk
-control: SfTreeGrid
+control: TreeGrid
 documentation: ug
 ---
 

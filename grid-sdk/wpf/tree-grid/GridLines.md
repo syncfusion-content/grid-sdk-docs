@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Grid Lines in WPF TreeGrid | Syncfusion®
-description: Learn about customizing grid lines for cells and headers in the Syncfusion® WPF TreeGrid control with flexible styling options.
+description: Customize grid lines in TreeGrid to show vertical, horizontal, or both borders for cells and header cells.
 platform: grid-sdk
 control: TreeGrid
 documentation: ug

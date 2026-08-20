@@ -1,9 +1,9 @@
 ---
 layout: post
 title: Getting Started with WPF TreeGrid | Syncfusion®
-description: Learn how to get started with the Syncfusion WPF TreeGrid control. Explore setup, features, examples, and customization options.
+description: Learn how to get started with the Syncfusion® WPF TreeGrid control. Explore setup, features, examples, and customization options.
 platform: grid-sdk
-control: SfTreeGrid
+control: TreeGrid
 documentation: ug
 ---
 

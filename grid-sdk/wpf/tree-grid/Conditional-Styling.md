@@ -1,9 +1,9 @@
 ---
 layout: post
 title: Conditional Styling in WPF TreeGrid | Syncfusion®
-description: Learn about Conditional Styling in the Syncfusion® WPF TreeGrid control. Apply styles dynamically based on conditions to enhance data visualization.
+description: Conditional Styling in TreeGrid applies custom styles to cells, rows, and columns dynamically based on data values and conditions.
 platform: grid-sdk
-control: SfTreeGrid
+control: TreeGrid
 documentation: ug
 ---
 

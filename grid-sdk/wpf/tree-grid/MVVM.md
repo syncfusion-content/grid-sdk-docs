@@ -1,9 +1,9 @@
 ---
 layout: post
 title: MVVM in WPF TreeGrid | Syncfusion®
-description: Learn about MVVM support in the Syncfusion® WPF TreeGrid control. Implement data binding using MVVM pattern.
+description: MVVM in TreeGrid enables seamless integration with the MVVM pattern for managing data, commands, and user interactions effectively.
 platform: grid-sdk
-control: SfTreeGrid
+control: TreeGrid
 documentation: ug
 ---
 

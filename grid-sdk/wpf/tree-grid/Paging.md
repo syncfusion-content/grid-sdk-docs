@@ -1,9 +1,9 @@
 ---
 layout: post
 title: Paging in WPF TreeGrid | Syncfusion®
-description: Learn about Paging in the Syncfusion® WPF TreeGrid control. Navigate large data sets efficiently by splitting records into multiple pages.
+description: Paging in TreeGrid displays data in pages to improve navigation, performance, and the overall browsing experience.
 platform: grid-sdk
-control: SfTreeGrid
+control: TreeGrid
 documentation: ug
 ---
 

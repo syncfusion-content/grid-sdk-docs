@@ -1,9 +1,9 @@
 ---
 layout: post
 title: Columns in WPF TreeGrid | Syncfusion®
-description: Learn about Columns in the Syncfusion® WPF TreeGrid control. Configure, customize, and manage column types and behaviors effectively.
+description: Columns in TreeGrid supports auto-generated and custom columns, column types, resizing, reordering, freezing, and data binding.
 platform: grid-sdk
-control: SfTreeGrid
+control: TreeGrid
 documentation: ug
 ---
 

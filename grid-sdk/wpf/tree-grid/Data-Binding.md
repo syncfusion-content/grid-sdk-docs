@@ -1,9 +1,9 @@
----
+﻿---
 layout: post
 title: Data Binding in WPF TreeGrid | Syncfusion®
-description: Learn about Data Binding in the Syncfusion® WPF TreeGrid control. Bind hierarchical data sources with flexible options.
+description: Bind hierarchical and self-relational data to TreeGrid using ItemsSource, nested collections, and on-demand loading.
 platform: grid-sdk
-control: SfTreeGrid
+control: TreeGrid
 documentation: ug
 ---
 
