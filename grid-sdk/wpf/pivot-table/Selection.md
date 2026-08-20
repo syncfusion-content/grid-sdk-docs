@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Cell Selection in WPF Pivot Grid control | Syncfusion®
-description: Learn about Cell Selection support in Syncfusion® Essential Studio® WPF Pivot Grid control, its elements and more.
+title: Cell Selection in WPF Pivot Table | Syncfusion®
+description: Cell Selection in the Syncfusion® WPF Pivot Table control allows selecting rows, columns, or headers to highlight and analyze pivot data.
 platform: grid-sdk
-control: Pivot grid
+control: Pivot Table
 documentation: ug
 ---
 
-# Cell Selection in WPF Pivot Grid
+# Cell Selection in WPF Pivot Table
 
 The pivot grid supports selecting entire row or column and group of cells with or without header cells. It is similar to cell selection in the Microsoft Excel.
 
