@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Data Binding in Windows Forms Pivot Grid control | Syncfusion®
-description: Learn about Data Binding support in Syncfusion® Windows Forms Pivot Grid control, its elements and more details.
+title: Data Binding in Windows Forms Pivot Table | Syncfusion®
+description: Bind IEnumerable lists or data tables to Syncfusion® Windows Forms Pivot Table control with refresh support and events for dynamic data updates.
 platform: grid-sdk
-control: PivotGrid
+control: Pivot Table
 documentation: ug
 ---
 
-# Data Binding in Windows Forms Pivot Grid
+# Data Binding in Windows Forms Pivot Table
 
 Pivot grid control is designed to display the bounded data in a tabular format. The data binding can be achieved by assigning data sources through [ItemSource](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControl.html#Syncfusion_Windows_Forms_PivotAnalysis_PivotGridControl_ItemSource) property.
 

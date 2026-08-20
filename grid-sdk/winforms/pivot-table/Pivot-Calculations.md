@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Pivot Calculations in Windows Forms Pivot Grid | Syncfusion®
-description: Learn about Pivot Calculations support in Syncfusion® Windows Forms Pivot Grid control and more details.
+title: Pivot Calculations in Windows Forms Pivot Table | Syncfusion®
+description: Define pivot calculations in Syncfusion® Windows Forms Pivot Table control using PivotComputationInfo with formatting, formulas, types, and synchronization.
 platform: grid-sdk
-control: Pivot Grid
+control: Pivot Table
 documentation: ug
 ---
 
-# Pivot Calculations in Windows Forms Pivot Grid
+# Pivot Calculations in Windows Forms Pivot Table
 
 Pivot calculations are defined by using the [PivotComputationInfo](https://help.syncfusion.com/cr/windowsforms/Syncfusion.PivotAnalysis.Base.PivotComputationInfo.html) object which holds the information required for defining calculations that appear in the pivot grid control.
 
