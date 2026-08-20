@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Editing in WPF Pivot Grid control | Syncfusion®
-description: Learn about Editing support in Syncfusion® Essential Studio® WPF Pivot Grid control, its elements and more.
+title: Editing in WPF Pivot Table | Syncfusion®
+description: Enable editing in the Syncfusion® WPF Pivot Table control to modify cell values directly and update pivot table data at runtime.
 platform: grid-sdk
-control: Pivot grid
+control: Pivot Table
 documentation: ug
 ---
 
-# Editing in WPF Pivot Grid
+# Editing in WPF Pivot Table
 
 The [WPF Pivot Grid](https://www.syncfusion.com/wpf-controls/pivot-grid) supports editing the value and total cells, and this can be achieved by using the `EnableValueEditing` property. While handling the editing operations, the values will be calculated automatically and its total values will be adjusted accordingly.
 

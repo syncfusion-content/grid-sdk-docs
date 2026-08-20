@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Defining grouping bar Properties for Pivot Grid | Syncfusion®
-description: Support to perform sorting, filtering, and summarizing of data the way a user wants at runtime using GroupingBar.
+title: Defining Grouping Bar Properties in WPF Pivot Table | Syncfusion®
+description: Configure grouping bar in the Syncfusion® WPF Pivot Table control to perform sorting, filtering, and summarizing of data at runtime.
 platform: grid-sdk
-control: Pivot grid
+control: Pivot Table
 documentation: ug
 ---
 
-# Defining Grouping Bar Properties for Pivot Grid
+# Defining Grouping Bar Properties in WPF Pivot Table
 
 The grouping bar allows you to perform sorting, filtering, and summarizing of data the way a user wants at runtime. Each item contains:
 

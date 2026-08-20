@@ -1,7 +1,7 @@
 ---
 layout: post
-title: ToolTip in WinUI TreeGrid control | Syncfusion®
-description: Learn here all about ToolTip support in Syncfusion® WinUI TreeGrid(SfTreeGrid) control with customization support and more.
+title: ToolTip in WinUI TreeGrid | Syncfusion®
+description: Add ToolTip support in Syncfusion® WinUI TreeGrid. Show helpful information on hover cells and customize tooltip content and style.
 platform: grid-sdk
 control: SfTreeGrid
 documentation: ug

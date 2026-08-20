@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Data Binding in WPF Pivot Grid control | Syncfusion®
-description: Learn about Data Binding support in Syncfusion® Essential Studio® WPF Pivot Grid control, its elements and more.
+title: Data Binding in WPF Pivot Table | Syncfusion®
+description: Bind data sources to the Syncfusion® WPF Pivot Table control to display and analyze relational data in a pivot table format.
 platform: grid-sdk
-control: Pivot grid
+control: Pivot Table
 documentation: ug
 ---
 
-# Data Binding in WPF Pivot Grid
+# Data Binding in WPF Pivot Table
 
 ## Binding pivot grid to list
 

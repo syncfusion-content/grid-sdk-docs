@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Exporting in WPF Pivot Grid control | Syncfusion®
-description: Learn about Exporting support in Syncfusion® Essential Studio® WPF Pivot Grid control, its elements and more.
+title: Exporting in WPF Pivot Table | Syncfusion®
+description: Export data from the Syncfusion® WPF Pivot Table control to Excel, PDF, and other formats for easy sharing and reporting.
 platform: grid-sdk
-control: Pivot grid
+control: Pivot Table
 documentation: ug
 ---
 
-# Exporting in WPF Pivot Grid
+# Exporting in WPF Pivot Table
 
 The [WPF Pivot Grid](https://www.syncfusion.com/wpf-controls/pivot-grid) provides an option to export its content to various formats. It provides the following exporting options.
 

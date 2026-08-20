@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Export To PDF in WPF TreeGrid control | Syncfusion®
-description: Learn here all about Export To PDF support in Syncfusion® WPF TreeGrid (SfTreeGrid) control and more.
+title: Export To PDF in WPF TreeGrid | Syncfusion®
+description: Export TreeGrid data to PDF with options to include headers, stacked headers, and maintain applied sorting or filtering.
 platform: grid-sdk
-control: SfTreeGrid
+control: TreeGrid
 documentation: ug
 ---
 
-# Export To PDF in WPF TreeGrid (SfTreeGrid)
+# Export To PDF in WPF TreeGrid
 
 SfTreeGrid provides support to export the data to PDF file. This also provides support to export the headers and stacked headers. This maintains the sorting and filtering processes when exporting.
 

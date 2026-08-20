@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Setting Caption in PivotTableFieldList in WPF Pivot Grid | Syncfusion®
-description: Learn about Setting Caption in PivotTableFieldList support in Syncfusion® Essential Studio® WPF Pivot Grid control, its elements and more.
+title: Setting Caption in PivotTableFieldList in WPF Pivot Table | Syncfusion®
+description: Setting Caption in PivotTableFieldList of the Syncfusion® WPF Pivot Table control customizes field captions in the field list for clarity and better usability.
 platform: grid-sdk
-control: Pivot grid
+control: Pivot Table
 documentation: ug
 ---
 
-# Setting Caption in PivotTableFieldList in WPF Pivot Grid
+# Setting Caption in PivotTableFieldList in WPF Pivot Table
 
 The pivot grid supports duplicating the same fields in different names. This can be achieved by using the `FieldCaption` property of PivotItem and PivotComputationInfo. This support allows you to define multiple items in same underlying type for the pivot grid control.
 

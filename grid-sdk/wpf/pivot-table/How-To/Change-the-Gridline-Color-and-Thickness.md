@@ -1,13 +1,13 @@
 ---
 layout: post
-title: 142-Change-the-Gridline-Color-and-Thickness | Syncfusion
-description: Section that helps to know how to change the color and thickness of grid lines in pivot grid control.
+title: Change GridLine Color and Thickness in WPF Pivot Table | Syncfusion®
+description: Change the grid line color and thickness in Syncfusion® WPF Pivot Table control using GridLineStroke and BorderThickness properties.
 platform: grid-sdk
-control: PivotGridControl
+control: Pivot Table
 documentation: ug
 ---
 
-# How to change the GridLine color and thickness?
+# How to Change GridLine Color and Thickness in WPF Pivot Table
 
 The color and thickness of the grid lines can be modified using the `GridLineStroke` property of the PivotGridControl and the `BorderThickness` property of PivotGridCellStyle.
 

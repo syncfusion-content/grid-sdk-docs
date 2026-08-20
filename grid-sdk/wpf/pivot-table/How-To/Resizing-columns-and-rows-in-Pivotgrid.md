@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Resizing columns and rows | Syncfusion
-description: Section helps to know how to resize the rows and columne at run-time in pivot grid control. | Syncfusion
+title: How to Resize columns and Rows in WPF Pivot Table | Syncfusion®
+description: Resize columns and rows dynamically in Syncfusion® WPF Pivot Table control by enabling AllowResizeColumns and AllowResizeRows properties.
 platform: grid-sdk
-control: Pivot Grid
+control: Pivot Table
 documentation: ug
 ---
 
-# How to resizing the columns and rows in PivotGrid?
+# How to Resize columns and Rows in WPF Pivot Table
 
 PivotGridControl supports resizing of rows and columns dynamically. In this topic, on-demand resizing of rows and columns is discussed.
 

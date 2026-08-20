@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Displaying Calculations in WPF Pivot Grid control | Syncfusion®
-description: Learn about Displaying Calculations support in Syncfusion® Essential Studio® WPF Pivot Grid control, its elements and more.
+title: Displaying Calculations in WPF Pivot Table | Syncfusion®
+description: Displaying Calculations in the Syncfusion® WPF Pivot Table control shows values in rows or columns using ShowCalculationsAsColumns or schema designer.
 platform: grid-sdk
-control: Pivot grid
+control: Pivot Tablerid
 documentation: ug
 ---
 
-# Displaying Calculations in WPF Pivot Grid
+# Displaying Calculations in WPF Pivot Table
 
 The pivot grid provides support to show the calculation values in column or row. This can be achieved by using the `ShowCalculationsAsColumns` property of pivot grid control or through simple uncheck or check option in the pivot schema designer.
 

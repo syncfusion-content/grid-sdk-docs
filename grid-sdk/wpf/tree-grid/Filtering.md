@@ -1,13 +1,13 @@
----
+﻿---
 layout: post
-title: Filtering in WPF TreeGrid control | Syncfusion®
-description: Learn here all about Filtering support in Syncfusion® WPF TreeGrid (SfTreeGrid) control, its elements and more.
+title: Filtering in WPF TreeGrid | Syncfusion®
+description: Filter TreeGrid records using built-in filter predicates, UI options, and advanced filter conditions for relevant data.
 platform: grid-sdk
-control: SfTreeGrid
+control: TreeGrid
 documentation: ug
 ---
 
-# Filtering in WPF TreeGrid (SfTreeGrid)
+# Filtering in WPF TreeGrid
 
 Filtering is the process of retrieving the values from a collection that satisfies the specified condition. In SfTreeGrid, filtering can be applied through the UI as well as the programmatic filters.
 
@@ -334,7 +334,7 @@ When the DateTime type value is bound to the {{'[TreeGridColumn](https://help.sy
 </tr>
 <tr>
 <td>
-<img src="Filtering_images/wpf-treegrid-text-filter.png" alt="Displays Text Filter in WPF TreeGrid/>
+<img src="Filtering_images/wpf-treegrid-text-filter.png" alt="Displays Text Filter in WPF TreeGrid"/>
 </td>
 <td>
 <img src="Filtering_images/wpf-treegrid-number-filter.png" alt="Displays Number Filter in WPF TreeGrid"/>

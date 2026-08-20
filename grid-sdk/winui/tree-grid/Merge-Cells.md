@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Merge Cells in WinUI TreeGrid control | Syncfusion®
-description: Learn here all about Merge Cells support in Syncfusion® WinUI TreeGrid(SfTreeGrid) control with column wise changing support and more.
+title: Merge Cells in WinUI TreeGrid | Syncfusion®
+description: Merge cells in the Syncfusion® WinUI TreeGrid control. Combine adjacent cells column‑wise for better readability.
 platform: grid-sdk
 control: TreeGrid
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Grid Lines Customization in WinUI TreeGrid control | Syncfusion®
-description: Learn here all about Grid Lines Customization support in Syncfusion® WinUI TreeGrid(SfTreeGrid) control and more.
+title: Grid Lines Customization in WinUI TreeGrid | Syncfusion®
+description: Customize grid lines in the Syncfusion® WinUI TreeGrid control. Adjust line styles, visibility, and appearance to enhance data presentation.
 platform: grid-sdk
 control: TreeGrid
 documentation: ug

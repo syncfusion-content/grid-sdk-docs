@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Editing in WinUI TreeGrid control | Syncfusion®
-description: Learn here all about Editing feature of Syncfusion® WinUI TreeGrid(SfTreeGrid) control with cursor placement support and more.
+title: Editing in WinUI TreeGrid | Syncfusion®
+description: Learn about Editing in the Syncfusion® WinUI TreeGrid control. Edit cell values with cursor placement, validation, and flexible editing modes.
 platform: grid-sdk
 control: SfTreeGrid
 documentation: ug
