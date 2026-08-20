@@ -3,8 +3,7 @@ layout: post
 title: Local data in JavaScript Grid control | Syncfusion
 description: Learn here all about Local data in Syncfusion JavaScript Grid control of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
-control: Local data 
-publishingplatform: grid-sdk
+control: Local data
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---

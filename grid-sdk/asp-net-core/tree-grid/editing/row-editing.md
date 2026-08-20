@@ -1,18 +1,17 @@
 ---
 layout: post
-title: Row Editing in ASP.NET Core Tree Grid Component | Syncfusion
-description: Learn here all about Row Editing in Syncfusion ASP.NET Core Tree Grid component of Syncfusion Essential JS 2 and more.
+title: ASP.NET Core TreeGrid Row Editing | Syncfusion
+description: Learn how to use row editing in ASP.NET Core TreeGrid, including editing rows, programmatic CRUD operations, and confirmation dialogs.
 platform: grid-sdk
 control: Row Editing
-publishingplatform: grid-sdk
 documentation: ug
 ---
 
-# Row Editing in ASP.NET Core Tree Grid Component
+# Row Editing in ASP.NET Core TreeGrid
 
 In Row edit mode, when you start editing the currently selected record, the entire row is changed to edit state. You can change the cell values of the row and save edited data to the data source.
 
-To enable Row edit, set the [`mode`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridEditSettings~Mode.html) property of [`e-treegrid-editsettings`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridEditSettings.html) tag helper as **Row**.
+To enable Row edit, set the [`mode`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridEditSettings~Mode.html) property of [`EditSettings`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridEditSettings.html) tag helper as **Row**.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

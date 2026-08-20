@@ -3,8 +3,7 @@ layout: post
 title: Columns in JavaScript Grid control | Syncfusion
 description: Learn here all about Columns in Syncfusion JavaScript Grid control of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
-control: Columns 
-publishingplatform: grid-sdk
+control: Columns
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---

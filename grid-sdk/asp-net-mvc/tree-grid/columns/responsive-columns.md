@@ -1,14 +1,13 @@
 ---
 layout: post
-title: Responsive Columns in ASP.NET MVC Tree Grid Component | Syncfusion
-description: Learn here all about Responsive Columns in Syncfusion ASP.NET MVC Tree Grid component of Syncfusion Essential JS 2 and more.
+title: ASP.NET MVC TreeGrid Responsive Columns | Syncfusion
+description: Learn how to create responsive columns in ASP.NET MVC TreeGrid using media queries to control column visibility and optimize layouts across devices.
 platform: grid-sdk
 control: Responsive Columns
-publishingplatform: grid-sdk
 documentation: ug
 ---
 
-# Responsive Columns in ASP.NET MVC Tree Grid Component
+# Responsive Columns in ASP.NET MVC TreeGrid
 
 You can toggle column visibility based on media queries which are defined at the [`HideAtMedia`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridColumn~HideAtMedia.html).
 The [`HideAtMedia`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridColumn~HideAtMedia.html) accepts valid

@@ -1,21 +1,20 @@
 ---
 layout: post
-title: Frozen in ASP.NET Core Tree Grid Component
-description: Learn here all about Frozen in Syncfusion ASP.NET Core Tree Grid component of Syncfusion Essential JS 2 and more.
+title: ASP.NET Core TreeGrid Frozen Columns | Syncfusion
+description: Learn how to pin or freeze columns in ASP.NET Core TreeGrid to keep important columns visible while scrolling horizontally.
 platform: grid-sdk
 control: Frozen
-publishingplatform: grid-sdk
 documentation: ug
 ---
 
 
-# Frozen rows and columns
+# Frozen Columns in ASP.NET Core TreeGrid
 
 ## Frozen rows and columns
 
 Frozen rows and columns provides an option to make rows and columns always visible in the top and left side of the tree grid while scrolling.
 
-In this demo, the [`frozenColumns`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGrid~FrozenColumns.html) is set as '2' and the [`frozenRows`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGrid~FrozenRows.html) is set as '3'. Hence, the left two columns and top three rows are frozen.
+In this demo, the [`frozenColumns`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGrid.html#Syncfusion_EJ2_TreeGrid_TreeGrid_FrozenColumns) is set as '2' and the [`frozenRows`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGrid.html#Syncfusion_EJ2_TreeGrid_TreeGrid_FrozenRows) is set as '3'. Hence, the left two columns and top three rows are frozen.
 
 {% if page.publishingplatform == "aspnet-core" %}
 
@@ -44,9 +43,9 @@ In this demo, the [`frozenColumns`](https://help.syncfusion.com/cr/cref_files/as
 
 ### Freeze particular columns
 
-To freeze particular column in the tree grid, the [`isFrozen`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridColumn~IsFrozen.html) property of **e-treegrid-column** tag helper can be used.
+To freeze particular column in the tree grid, the [`isFrozen`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGridColumn.html#Syncfusion_EJ2_TreeGrid_TreeGridColumn_IsFrozen) property of **e-treegrid-column** tag helper can be used.
 
-In this demo, the columns with field name **TaskName** and **StartDate** is frozen using the [`isFrozen`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridColumn~IsFrozen.html) property of **e-treegrid-column**.
+In this demo, the columns with field name **TaskName** and **StartDate** is frozen using the [`isFrozen`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGridColumn.html#Syncfusion_EJ2_TreeGrid_TreeGridColumn_IsFrozen) property of **e-treegrid-column**.
 
 {% if page.publishingplatform == "aspnet-core" %}
 

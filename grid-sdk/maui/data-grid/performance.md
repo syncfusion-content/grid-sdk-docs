@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Performance in .NET MAUI DataGrid control | Syncfusion®
-description: Learn here all about Scrolling performance in Syncfusion® .NET MAUI DataGrid (SfDataGrid) control and more.
+title: Performance in .NET MAUI Data Grid | Syncfusion®
+description: Learn how Syncfusion® .NET MAUI Data Grid delivers smooth scrolling performance with UI virtualization, data virtualization, and optimized rendering techniques.
 platform: grid-sdk
 control: SfDataGrid
 documentation: UG

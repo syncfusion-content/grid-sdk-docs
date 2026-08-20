@@ -1,14 +1,13 @@
 ---
 layout: post
-title: Row Template in ASP.NET MVC Tree Grid Component | Syncfusion
-description: Learn here all about Row Template in Syncfusion ASP.NET MVC Tree Grid component of Syncfusion Essential JS 2 and more.
+title: ASP.NET MVC TreeGrid Row Template | Syncfusion
+description: Learn how to use row templates in ASP.NET MVC TreeGrid to customize row layouts, display custom content, and enhance data presentation.
 platform: grid-sdk
 control: Row Template
-publishingplatform: grid-sdk
 documentation: ug
 ---
 
-# Row Template in ASP.NET MVC Tree Grid Component
+# Row Template in ASP.NET MVC TreeGrid
 
 The **RowTemplate** has an option to customize the look and behavior of the treegrid rows. The [`RowTemplate`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.TreeGrid.TreeGrid.html#Syncfusion_EJ2_TreeGrid_TreeGrid_RowTemplate) property accepts either the **Template** string or HTML element ID.
 

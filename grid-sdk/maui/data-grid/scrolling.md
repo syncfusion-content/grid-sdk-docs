@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Scrolling in .NET MAUI DataGrid control | Syncfusion®
-description: Learn here all about Scrolling support in Syncfusion® .NET MAUI DataGrid (SfDataGrid) control and more.
+title: Scrolling in .NET MAUI Data Grid | Syncfusion®
+description: Learn how to use scrolling features in Syncfusion® .NET MAUI Data Grid including horizontal and vertical, programmatic navigation, and customization options.
 platform: grid-sdk
 control: SfDataGrid
 documentation: UG

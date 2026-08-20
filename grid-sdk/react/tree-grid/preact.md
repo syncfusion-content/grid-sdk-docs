@@ -83,7 +83,7 @@ With `my-project` ready using default settings, add Syncfusion<sup style="font-s
 
 ## Adding Syncfusion<sup style="font-size:70%">&reg;</sup> React Tree Grid packages
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> React component packages are available at [npmjs.com](https://www.npmjs.com/search?q=ej2-react). To use Syncfusion<sup style="font-size:70%">&reg;</sup> React components in the project, install the corresponding npm package.
+Syncfusion<sup style="font-size:70%">&reg;</sup> React component packages are available at [npm registry](https://www.npmjs.com/search?q=ej2-react). To use Syncfusion<sup style="font-size:70%">&reg;</sup> React components in the project, install the corresponding npm package.
 
 This article uses the [React Tree Grid component](https://www.syncfusion.com/react-components/react-tree-grid) as an example. To use the React Tree Grid component in the project, install the `@syncfusion/ej2-react-treegrid` package using one of the following commands:
 

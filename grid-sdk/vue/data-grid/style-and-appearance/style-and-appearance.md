@@ -48,7 +48,7 @@ To customize the appearance of the root element of the Vue Data Grid component, 
 
 ```
 
-![grid root element](../images/whole-grid.png)
+![grid root element](../images/Vue3-grid-demo.PNG)
 
 The above code snippet, the **.e-grid** class targets the root element of the Vue Data Grid component, and the `font-family` property is set to cursive to change the font family of the grid content.
 

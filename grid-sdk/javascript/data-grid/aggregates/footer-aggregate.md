@@ -3,8 +3,7 @@ layout: post
 title: Footer aggregate in JavaScript Grid control | Syncfusion
 description: Learn here all about Footer aggregate in Syncfusion JavaScript Grid control of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
-control: Footer aggregate 
-publishingplatform: grid-sdk
+control: Footer aggregate
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---

@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Hyper link in JavaScript Pivot Table component | Syncfusion
-description: Learn here all about Hyper link in Syncfusion JavaScript Pivot Table component of Syncfusion Essential JS 2 and more.
-platform: grid-sdk
-control: Hyper link 
-publishingplatform: grid-sdk
+title: Hyper Link in ##Platform_Name## Pivot Table | Syncfusion
+description: Learn how the ##Platform_Name## Pivot Table adds hyperlinks to row headers, column headers, value cells, and summary cells via `hyperlinkSettings`.
+platform: ej2-javascript
+control: Hyper link
+publishingplatform: ##Platform_Name##
 documentation: ug
-domainurl: https://help.syncfusion.com/grid-sdk
+domainurl: ##DomainURL##
 ---
 
-# Hyper link in JavaScript Pivot Table component
+# Hyper Link in ##Platform_Name## Pivot Table
 
 The Pivot Table component provides built-in support for displaying hyperlinks within individual cells. This feature allows users to link data in specific cells, enhancing interactivity and navigation.
 
@@ -167,7 +167,7 @@ It provides two parameters:
 * [`data`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/hyperCellClickEventArgs#data): Contains detailed information about the clicked cell, including its value, row and column headers, position, and whether it’s a summary cell.
 * [`nativeEvent`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/hyperCellClickEventArgs#nativeevent): Represents the original browser event triggered by the click, useful for advanced event handling.
 
-In the example below, when a hyperlink cell is clicked, a custom attribute (**data-url**) is added to the cell to redirect users to the Syncfusion Javascript Pivot Table Hyperlink [Demo](https://ej2.syncfusion.com/demos#/tailwind3/pivot-table/hyper-link.html). The [`cancel`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/hyperCellClickEventArgs#cancel) property is set to **false** to enable this interaction.
+In the example below, when a hyperlink cell is clicked, a custom attribute (**data-url**) is added to the cell to redirect users to the Syncfusion JavaScript Pivot Table Hyperlink [Demo](https://ej2.syncfusion.com/demos/#/tailwind3/pivot-table/hyper-link.html). The [`cancel`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/hyperCellClickEventArgs#cancel) property is set to **false** to enable this interaction.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}

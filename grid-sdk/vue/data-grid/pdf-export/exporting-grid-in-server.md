@@ -29,7 +29,7 @@ To export the grid data to a PDF document on the server side, you need to perfor
 
 2. Define a controller action that handles the server-side PDF export. This action should receive the Grid properties from the client-side and initiate the PDF export operation on the server.
 
-3. Use the [serverPdfExport](https://ej2.syncfusion.com/vue/documentation/api/grid/#serverpdfexport) method to pass the Grid properties to the server exporting action. This method allows you to specify the server action URL and other export options.
+3. Use the [serverPdfExport](https://ej2.syncfusion.com/vue/documentation/api/grid#serverpdfexport) method to pass the Grid properties to the server exporting action. This method allows you to specify the server action URL and other export options.
 
 The following code snippet shows server configuration using ASP.NET Core Controller Action..
 
@@ -297,7 +297,7 @@ private void PdfHeaderQueryCellInfo(object pdf)
 
 Passing additional parameters to the server when exporting data in the Vue Data Grid involves providing flexibility to include extra information or customize the export process based on specific requirements.
 
-You can achieve this by utilizing the [query](https://ej2.syncfusion.com/vue/documentation/api/grid/#query) property and the [toolbarClick](https://ej2.syncfusion.com/vue/documentation/api/grid/#toolbarclick) event. Within the `query` property, you can invoke the `addParams` method to add parameters to the request.
+You can achieve this by utilizing the [query](https://ej2.syncfusion.com/vue/documentation/api/grid#query) property and the [toolbarClick](https://ej2.syncfusion.com/vue/documentation/api/grid#toolbarclick) event. Within the `query` property, you can invoke the `addParams` method to add parameters to the request.
 
 The following example demonstrates how to pass additional parameters to the server when PDF exporting within the `toolbarClick` event. Within the event, the additional parameters, specifically **recordcount** as **15**, are passed using the addParams method and displayed as a message.
 

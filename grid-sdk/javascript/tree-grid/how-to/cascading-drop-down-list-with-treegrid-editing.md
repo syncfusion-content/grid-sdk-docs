@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Cascading drop down list with treegrid editing in JavaScript Treegrid control | Syncfusion
-description: Learn here all about Cascading drop down list with treegrid editing in Syncfusion JavaScript Treegrid control of Syncfusion Essential JS 2 and more.
+title: JavaScript TreeGrid Cascading Drop-Down Editing | Syncfusion
+description: Learn how to implement cascading drop down lists with editing in the JavaScript TreeGrid of Essential JS 2 using cell edit templates.
 platform: grid-sdk
-control: Cascading drop down list with treegrid editing 
-publishingplatform: grid-sdk
+control: Cascading drop down list with treegrid editing
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Cascading drop down list with treegrid editing in JavaScript Treegrid control
+# Cascading Drop-Down Lists with Editing in JavaScript TreeGrid
 
 You can achieve the Cascading DropDownList with Tree Grid Editing by using the Cell Edit Template feature.
 

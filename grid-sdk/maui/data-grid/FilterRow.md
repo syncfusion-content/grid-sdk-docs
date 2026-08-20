@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Filter Row in .NET MAUI DataGrid | Syncfusion
-description: Learn here all about FilterRow support in Syncfusion® .NET MAUI DataGrid (SfDataGrid) control and more.
+title: Filter Row in .NET MAUI Data Grid | Syncfusion
+description: Learn how to use FilterRow in Syncfusion® .NET MAUI Data Grid to filter data directly within the DataGrid and quickly find relevant records.
 platform: grid-sdk
 control: SfDataGrid
 documentation: ug

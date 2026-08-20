@@ -4,8 +4,7 @@ title: Bind data & perform CRUD action with ODataV4Adaptor in Syncfusion Grid
 description: Learn here all about how to bind data and perform CRUD action using ODataV4Adaptor in Syncfusion JavaScript Grid control.
 platform: grid-sdk
 control: grid
-keywords: Adaptors, ODataV4Adaptor, odatav4 adaptor, remotedata 
-publishingplatform: grid-sdk
+keywords: Adaptors, ODataV4Adaptor, odatav4 adaptor, remotedata
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---

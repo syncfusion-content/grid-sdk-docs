@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Load More in .NET MAUI DataGrid control | Syncfusion®
-description: Learn here all about Load More support in Syncfusion® .NET MAUI DataGrid (SfDataGrid) control and more.
+title: Load More in .NET MAUI Data Grid | Syncfusion®
+description: Learn Load more command in MAUI Data Grid using Syncfusion controls. It supports data operations, UI customization, and enterprise features.
 platform: grid-sdk
 control: SfDataGrid
 documentation: UG

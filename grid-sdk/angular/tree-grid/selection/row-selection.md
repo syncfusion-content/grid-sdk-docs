@@ -12,7 +12,7 @@ domainurl: https://help.syncfusion.com/grid-sdk
 
 ## Select row at initial rendering
 
-To select a row when the TreeGrid first renders, set the [`selectedRowIndex`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#selectedrowindex) property.
+To select a row when the TreeGrid first renders, set the [`selectedRowIndex`](https://ej2.syncfusion.com/angular/documentation/api/treegrid#selectedrowindex) property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -28,7 +28,7 @@ To select a row when the TreeGrid first renders, set the [`selectedRowIndex`](ht
 
 ## Get selected row indexes
 
-Obtain selected row indexes using the [`getSelectedRowIndexes`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#getselectedrowindexes) method.
+Obtain selected row indexes using the [`getSelectedRowIndexes`](https://ej2.syncfusion.com/angular/documentation/api/treegrid#getselectedrowindexes) method.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -44,9 +44,9 @@ Obtain selected row indexes using the [`getSelectedRowIndexes`](https://ej2.sync
 
 ## Clear selection programmatically
 
-Clear TreeGrid selection programmatically by using the [`clearSelection`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#clearselection) method.
+Clear TreeGrid selection programmatically by using the [`clearSelection`](https://ej2.syncfusion.com/angular/documentation/api/treegrid#clearselection) method.
 
-In the demo below, the third row is selected initially using [`selectedRowIndex`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#selectedrowindex). You can clear this selection by calling the `clearSelection` method, such as on an external button click.
+In the demo below, the third row is selected initially using [`selectedRowIndex`](https://ej2.syncfusion.com/angular/documentation/api/treegrid#selectedrowindex). You can clear this selection by calling the `clearSelection` method, such as on an external button click.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -62,9 +62,9 @@ In the demo below, the third row is selected initially using [`selectedRowIndex`
 
 ## Get selected records on various pages
 
-Enable the [`selectionSettings.persistSelection`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/selectionSettings/#persistselection) property to maintain selection across all TreeGrid operations. With persistence enabled, selection is retained on every page, even after navigation.
+Enable the [`selectionSettings.persistSelection`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/selectionSettings#persistselection) property to maintain selection across all TreeGrid operations. With persistence enabled, selection is retained on every page, even after navigation.
 
-Get the selected records using the [`getSelectedRecords`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#getselectedrecords) method.
+Get the selected records using the [`getSelectedRecords`](https://ej2.syncfusion.com/angular/documentation/api/treegrid#getselectedrecords) method.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -78,11 +78,11 @@ Get the selected records using the [`getSelectedRecords`](https://ej2.syncfusion
 
 {% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/treegrid/selection-cs7" %}
 
-> To persist selection, at least one column must be defined as a primary key using the [`columns.isPrimaryKey`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column/#isprimarykey) property.
+> To persist selection, at least one column must be defined as a primary key using the [`columns.isPrimaryKey`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column#isprimarykey) property.
 
 ## Get selected rows programmatically
 
-Retrieve selected row elements using the [`getSelectedRows`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#getselectedrows) method in the TreeGrid.
+Retrieve selected row elements using the [`getSelectedRows`](https://ej2.syncfusion.com/angular/documentation/api/treegrid#getselectedrows) method in the TreeGrid.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

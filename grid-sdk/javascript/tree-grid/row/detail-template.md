@@ -1,17 +1,16 @@
 ---
 layout: post
-title: Detail template in JavaScript Treegrid control | Syncfusion
-description: Learn here all about Detail template in Syncfusion JavaScript Treegrid control of Syncfusion Essential JS 2 and more.
+title: JavaScript TreeGrid Detail Template | Syncfusion
+description: Learn how to use detail templates in JavaScript TreeGrid to display expandable row content, nested data, and custom detail views.
 platform: grid-sdk
-control: Detail template 
-publishingplatform: grid-sdk
+control: Detail template
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Detail template in JavaScript Treegrid control
+# Detail Template in JavaScript TreeGrid
 
-The detail template provides additional information about a particular row. By expanding the parent row the child rows are expanded along with their detail template. The [`detailTemplate`](../../api/treegrid/#detailtemplate) property accepts either the template string or HTML element ID.
+The detail template provides additional information about a particular row. By expanding the parent row the child rows are expanded along with their detail template. The [`detailTemplate`](../../api/treegrid#detailtemplate) property accepts either the template string or HTML element ID.
 
 To use detail template, inject the DetailRow module in the TreeGrid.
 

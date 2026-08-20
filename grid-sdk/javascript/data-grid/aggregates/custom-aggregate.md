@@ -3,8 +3,7 @@ layout: post
 title: Custom aggregate in JavaScript Grid control | Syncfusion
 description: Learn here all about Custom aggregate in Syncfusion JavaScript Grid control of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
-control: Custom aggregate 
-publishingplatform: grid-sdk
+control: Custom aggregate
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---

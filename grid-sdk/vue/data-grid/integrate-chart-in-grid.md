@@ -54,7 +54,7 @@ Refer to the [Vue 2 Getting Started](https://ej2.syncfusion.com/vue/documentatio
 
 ### Add Syncfusion Vue packages
 
-Syncfusion Vue component packages are available at [npmjs.com](https://www.npmjs.com/~syncfusionorg). To use Syncfusion Vue components in your project, install the corresponding npm packages.
+Syncfusion Vue component packages are available at [npm js.com](https://www.npmjs.com/~syncfusionorg). To use Syncfusion Vue components in your project, install the corresponding npm packages.
 
 To install the `Grid-Chart` package, use the following command:
 
@@ -143,7 +143,7 @@ provide('grid', [ContextMenu]);
 
 **Step 2: Define Chart options to Grid Context Menu:**
 
-Add Chart visualization options as context menu items within the Grid configuration using [contextMenuItems](https://ej2.syncfusion.com/vue/documentation/api/grid/#contextmenuitems) property. These items allow  you to right-click on selected rows and choose a Chart type to visualize the data.
+Add Chart visualization options as context menu items within the Grid configuration using [contextMenuItems](https://ej2.syncfusion.com/vue/documentation/api/grid#contextmenuitems) property. These items allow  you to right-click on selected rows and choose a Chart type to visualize the data.
 
 {% tabs %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
@@ -181,7 +181,7 @@ const contextMenuItems = [
 
 **Step 3: Initialize GridChart instance on Grid creation:**
 
-Inside the Grid’s [created](https://ej2.syncfusion.com/vue/documentation/api/grid/#created) event, instantiate a **GridChart** object. This instance will be used to render Charts dynamically based on the selected Grid data.
+Inside the Grid’s [created](https://ej2.syncfusion.com/vue/documentation/api/grid#created) event, instantiate a **GridChart** object. This instance will be used to render Charts dynamically based on the selected Grid data.
 
 {% tabs %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
@@ -221,7 +221,7 @@ This ensures that the Chart instance is ready as soon as the Grid is initialized
 
 **Step 4: Handle context menu click to render Chart:**
 
-Use the [contextMenuClick](https://ej2.syncfusion.com/vue/documentation/api/grid/#contextmenuclick) event to detect which Chart type was selected and render the Chart accordingly using the `gridChart.render()` method.
+Use the [contextMenuClick](https://ej2.syncfusion.com/vue/documentation/api/grid#contextmenuclick) event to detect which Chart type was selected and render the Chart accordingly using the `gridChart.render()` method.
 
 `ContextMenuClick` event passes the below arguments:
 
@@ -235,7 +235,7 @@ Use the [contextMenuClick](https://ej2.syncfusion.com/vue/documentation/api/grid
 
   * `chartArgs`: Contains Grid instance, [Chart type](.https://ej2.syncfusion.com/vue/documentation/chart/chart-types), and selected records.
 
-  * `chartModel:` This specifies various Chart configurations related to the appearance and behavior of the Chart. The model allows you to configure axes, labels, legends, tooltips, and other Chart attributes. Refer to Syncfusion's [Chart Model](https://ej2.syncfusion.com/vue/documentation/api/chart/chartmodel/) for detailed configurations, options, and customization possibilities.
+  * `chartModel:` This specifies various Chart configurations related to the appearance and behavior of the Chart. The model allows you to configure axes, labels, legends, tooltips, and other Chart attributes. Refer to Syncfusion's [Chart Model](https://ej2.syncfusion.com/vue/documentation/api/chart/chartmodel) for detailed configurations, options, and customization possibilities.
 
   * `categorySeries:` This specifies the fields in your data used for [categories](https://ej2.syncfusion.com/vue/documentation/chart/category-axis) and [series](https://ej2.syncfusion.com/vue/documentation/chart/chart-series) in the Chart.
 
@@ -383,13 +383,13 @@ When enabled, the property panel appears alongside the Chart popup and offers th
 
   * **Chart Style:** 
 
-    * **Margin :** Adjust the [margins](https://ej2.syncfusion.com/vue/documentation/api/chart/margin/) around the chart (top, bottom, left, right) for better layout spacing.
+    * **Margin :** Adjust the [margins](https://ej2.syncfusion.com/vue/documentation/api/chart/margin) around the chart (top, bottom, left, right) for better layout spacing.
     * **Color**: Set distinct colors for different chart elements to improve visual clarity.
 
   * **Title Style** 
 
     * **Legend** - Toggle the visibility of the legend and customize its font, size, color, and position.
-    * **Series** - Enable/disable tooltips and customize [Series](https://ej2.syncfusion.com/vue/documentation/api/chart/series/) color and data labels based on categories such as online, retail, or revenue.
+    * **Series** - Enable/disable tooltips and customize [Series](https://ej2.syncfusion.com/vue/documentation/api/chart/series) color and data labels based on categories such as online, retail, or revenue.
 
   * **Axes:** - Select axes as either category or value type, and customize:
 
@@ -399,9 +399,9 @@ When enabled, the property panel appears alongside the Chart popup and offers th
 
 **customize the Chart model:**   
 
-You can customize the [Chart](https://ej2.syncfusion.com/vue/documentation//chart/getting-started) by defining a [chartModel](https://ej2.syncfusion.com/vue/documentation/api/chart/chartModel/) object in the `chart` property of the `model` object within the [contextMenuClick](https://ej2.syncfusion.com/vue/documentation/api/grid/#contextmenuclick) event .This allows you to configure various Chart properties such as axes, margins, tooltips, titles, and more. Additionally, you can use the [events](https://ej2.syncfusion.com/vue/documentation//api/chart/#events/) of the Chart within the `chartModel` configuration to apply further customizations when the Chart is rendered. 
+You can customize the [Chart](https://ej2.syncfusion.com/vue/documentation//chart/getting-started) by defining a [chartModel](https://ej2.syncfusion.com/vue/documentation/api/chart/chartModel) object in the `chart` property of the `model` object within the [contextMenuClick](https://ej2.syncfusion.com/vue/documentation/api/grid#contextmenuclick) event .This allows you to configure various Chart properties such as axes, margins, tooltips, titles, and more. Additionally, you can use the [events](https://ej2.syncfusion.com/vue/documentation//api/chart#events) of the Chart within the `chartModel` configuration to apply further customizations when the Chart is rendered. 
 
-To customize [Accumulation Charts](https://ej2.syncfusion.com/vue/documentation//accumulation-chart/getting-started) (such as Pie), use the `accumulationChart` property of the `model` object. This property allows you to configure Chart options like titles, legends, data labels, and visual styles tailored for accumulation-type visualizations.  You can also use Accumulation Chart [events](https://ej2.syncfusion.com/vue/documentation//api/accumulation-chart/#events/) to apply additional customizations when the Chart is rendered.
+To customize [Accumulation Charts](https://ej2.syncfusion.com/vue/documentation//accumulation-chart/getting-started) (such as Pie), use the `accumulationChart` property of the `model` object. This property allows you to configure Chart options like titles, legends, data labels, and visual styles tailored for accumulation-type visualizations.  You can also use Accumulation Chart [events](https://ej2.syncfusion.com/vue/documentation//api/accumulation-chart#events) to apply additional customizations when the Chart is rendered.
 
 The following code snippets demonstrate how to achieve this:
 

@@ -12,7 +12,7 @@ domainurl: https://help.syncfusion.com/grid-sdk
 
 The row template feature in TreeGrid allows customizing the appearance and layout of rows in the TreeGrid. This feature is useful when custom content, such as images, buttons, or other controls, needs to be displayed within the rows.
 
-To enable the row template feature, set the [rowTemplate](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#rowtemplate) property of the TreeGrid component. This property accepts a custom HTML template that defines the layout for each row. 
+To enable the row template feature, set the [rowTemplate](https://ej2.syncfusion.com/angular/documentation/api/treegrid#rowtemplate) property of the TreeGrid component. This property accepts a custom HTML template that defines the layout for each row. 
 
 In the following example, the first column displays Employee Information with Employee ID, the second column presents the Employee Photo, and the third column showcases employee details such as Name, Designation, etc.
 
@@ -91,7 +91,7 @@ export class AppComponent implements OnInit {
 
 The row template feature in Syncfusion<sup style="font-size:70%">&reg;</sup> TreeGrid allows customizing the layout of rows in the TreeGrid. This is useful when images, buttons, or other custom content need to be displayed within the rows of a TreeGrid.
 
-By default, Syncfusion<sup style="font-size:70%">&reg;</sup> TreeGrid provides the [columns.format](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column/#format) property to format the values displayed in each column. However, when using the [rowTemplate](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#rowtemplate), the `columns.format` property cannot be directly applied to format the values inside the template.
+By default, Syncfusion<sup style="font-size:70%">&reg;</sup> TreeGrid provides the [columns.format](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column#format) property to format the values displayed in each column. However, when using the [rowTemplate](https://ej2.syncfusion.com/angular/documentation/api/treegrid#rowtemplate), the `columns.format` property cannot be directly applied to format the values inside the template.
 
 To format the values within the row template, a global function can be defined that handles the formatting logic. This function can be invoked inside the template to format the corresponding values.
 
@@ -187,7 +187,7 @@ export interface DateFormat extends Window {
 
 The TreeGrid allows rendering custom Syncfusion<sup style="font-size:70%">&reg;</sup> controls within the rows of the TreeGrid. This feature is helpful as it enables displaying interactive Syncfusion<sup style="font-size:70%">&reg;</sup> controls instead of field values in the TreeGrid.
 
-To enable a Syncfusion<sup style="font-size:70%">&reg;</sup> control in a row template, set the [rowTemplate](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#rowtemplate) property of the TreeGrid component. This property accepts a custom HTML template that defines the layout for each row. 
+To enable a Syncfusion<sup style="font-size:70%">&reg;</sup> control in a row template, set the [rowTemplate](https://ej2.syncfusion.com/angular/documentation/api/treegrid#rowtemplate) property of the TreeGrid component. This property accepts a custom HTML template that defines the layout for each row. 
 
 Here is an example that demonstrates rendering Syncfusion<sup style="font-size:70%">&reg;</sup> controls within a row template:
 

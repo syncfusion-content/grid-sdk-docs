@@ -1,19 +1,18 @@
 ---
 layout: post
-title: Headers in TypeScript Treegrid control | Syncfusion
-description: Learn here all about Headers in Syncfusion TypeScript Treegrid control of Syncfusion Essential JS 2 and more.
+title: TypeScript TreeGrid Headers | Syncfusion
+description: Learn how to configure and customize column headers in TypeScript TreeGrid, including header text and template options.
 platform: grid-sdk
-control: Headers 
-publishingplatform: grid-sdk
+control: Headers
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Headers in TypeScript Treegrid control
+# Headers in TypeScript TreeGrid
 
 ## Header text
 
-By default, column header title is displayed from column [`field`](../../api/treegrid/column/#field) value. To override the default header title, you have to define the [`headerText`](../../api/treegrid/column/#headertext) value.
+By default, column header title is displayed from column [`field`](../../api/treegrid/column#field) value. To override the default header title, you have to define the [`headerText`](../../api/treegrid/column#headertext) value.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -42,11 +41,11 @@ By default, column header title is displayed from column [`field`](../../api/tre
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/treegrid/columns-cs17" %}
 {% endif %}
 
-> * If both the [`field`](../../api/treegrid/column/#field) and [`headerText`](../../api/treegrid/column/#headertext) are not defined in the column, the column renders with “empty” header text.
+> * If both the [`field`](../../api/treegrid/column#field) and [`headerText`](../../api/treegrid/column#headertext) are not defined in the column, the column renders with “empty” header text.
 
 ## Header template
 
-You can customize the header element by using the [`headerTemplate`](../../api/treegrid/column/#headerTemplate) property.
+You can customize the header element by using the [`headerTemplate`](../../api/treegrid/column#headerTemplate) property.
 
 {% if page.publishingplatform == "typescript" %}
 

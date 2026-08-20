@@ -10,9 +10,9 @@ domainurl: https://help.syncfusion.com/grid-sdk
 
 # Exporting filtered data in React TreeGrid
 
-Export filtered data by defining the resulting dataset in [PdfExportProperties.dataSource](https://ej2.syncfusion.com/react/documentation/api/grid/pdfExportProperties/#datasource) before export.
+Export filtered data by defining the resulting dataset in [PdfExportProperties.dataSource](https://ej2.syncfusion.com/react/documentation/api/grid/pdfExportProperties#datasource) before export.
 
-In the following PDF export demo, filtered data is obtained from the TreeGrid `filterModule.filteredResult`, assigned to [PdfExportProperties.dataSource](https://ej2.syncfusion.com/react/documentation/api/grid/pdfExportProperties/#datasource), and then passed to the [pdfExport](https://ej2.syncfusion.com/react/documentation/api/treegrid/#pdfexport) method.
+In the following PDF export demo, filtered data is obtained from the TreeGrid `filterModule.filteredResult`, assigned to [PdfExportProperties.dataSource](https://ej2.syncfusion.com/react/documentation/api/grid/pdfExportProperties#datasource), and then passed to the [pdfExport](https://ej2.syncfusion.com/react/documentation/api/treegrid#pdfexport) method.
 
 {% tabs %}
 {% highlight js tabtitle="app.jsx" %}

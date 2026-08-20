@@ -1,7 +1,7 @@
 ---
 layout: post
-title: ToolTip in .NET MAUI DataGrid control | Syncfusion®
-description: Learn here all about ToolTip support in Syncfusion® MAUI DataGrid (SfDataGrid) control and more here.
+title: ToolTip in .NET MAUI Data Grid | Syncfusion®
+description: Learn how to enable and customize tooltips in Syncfusion® .NET MAUI Data Grid to display additional information for cells, rows, and grid elements.
 platform: grid-sdk
 control: SfDataGrid
 documentation: ug

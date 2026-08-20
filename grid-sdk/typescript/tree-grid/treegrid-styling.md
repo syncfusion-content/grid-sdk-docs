@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Treegrid styling in TypeScript Treegrid control | Syncfusion
-description: Learn here all about Treegrid styling in Syncfusion TypeScript Treegrid control of Syncfusion Essential JS 2 and more.
+title: TypeScript TreeGrid Styling | Syncfusion
+description: Learn how to customize the appearance of TypeScript TreeGrid using CSS classes, Theme Studio, and advanced styling techniques.
 platform: grid-sdk
-control: Treegrid styling 
-publishingplatform: grid-sdk
+control: Treegrid styling
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Treegrid styling in TypeScript Treegrid control
+# Styling in TypeScript TreeGrid
 
 To modify the TreeGrid appearance, you need to override the default CSS of treegrid. Please find the list of CSS classes and its corresponding section in treegrid. Also, you have an option to create your own custom theme for all the JavaScript controls using our [`Theme Studio`](https://ej2.syncfusion.com/themestudio/?theme=material).
 

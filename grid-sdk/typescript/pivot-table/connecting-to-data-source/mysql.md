@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Mysql in TypeScript Pivot Table Component | Syncfusion
-description: Learn here all about Mysql in Syncfusion TypeScript Pivot Table Component of Syncfusion Essential JS 2 and more.
-platform: grid-sdk
-control: Mysql 
-publishingplatform: grid-sdk
+title: MySQL in ##Platform_Name## Pivot Table | Syncfusion
+description: Learn how the ##Platform_Name## Pivot Table connects to MySQL via the MySql.Data library and a Web API controller to fetch and bind data at runtime.
+platform: ej2-javascript
+control: MySQL
+publishingplatform: ##Platform_Name##
 documentation: ug
-domainurl: https://help.syncfusion.com/grid-sdk
+domainurl: ##DomainURL##
 ---
 
-# MySQL in TypeScript Pivot Table Component
+# MySQL in ##Platform_Name## Pivot Table
 
 This guide explains how to retrieve data from a MySQL database using the [MySqlClient](https://mysqlclient.readthedocs.io) library and bind it to the Pivot Table through a Web API controller.
 

@@ -3,8 +3,7 @@ layout: post
 title: Group and caption aggregate in JavaScript Grid | Syncfusion
 description: Learn here all about Group and caption aggregate in Syncfusion JavaScript Grid control of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
-control: Group and caption aggregate 
-publishingplatform: grid-sdk
+control: Group and caption aggregate
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---

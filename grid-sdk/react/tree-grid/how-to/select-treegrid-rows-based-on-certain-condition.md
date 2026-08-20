@@ -10,7 +10,7 @@ domainurl: https://help.syncfusion.com/grid-sdk
 
 # Select TreeGrid rows based on certain condition in React TreeGrid
 
-Select specific rows in the TreeGrid based on a condition by using the [selectRows](https://ej2.syncfusion.com/react/documentation/api/treegrid/#selectrows) method within the [dataBound](https://ej2.syncfusion.com/react/documentation/api/treegrid/#databound) event.
+Select specific rows in the TreeGrid based on a condition by using the [selectRows](https://ej2.syncfusion.com/react/documentation/api/treegrid#selectrows) method within the [dataBound](https://ej2.syncfusion.com/react/documentation/api/treegrid#databound) event.
 
 In the following demo, rows are selected when the value in the **Duration** column is greater than 4.
 

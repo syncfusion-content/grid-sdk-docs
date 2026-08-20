@@ -23,7 +23,7 @@ The server-side export functionality is available in the Syncfusion.EJ2.TreeGrid
 
 The following code snippet shows server configuration using an ASP.NET Core controller action.
 
-To export the TreeGrid on the server side, call the [serverExcelExport](https://ej2.syncfusion.com/documentation/api/treegrid/#serverexcelexport) method to pass TreeGrid properties to the server export action.
+To export the TreeGrid on the server side, call the [serverExcelExport](https://ej2.syncfusion.com/documentation/api/treegrid#serverexcelexport) method to pass TreeGrid properties to the server export action.
 
 ```ts
 
@@ -80,9 +80,9 @@ export default App;
 ```
 ## CSV Export in server side
 
-Export to CSV on the server side using the [serverCsvExport](https://ej2.syncfusion.com/react/documentation/api/treegrid/#servercsvexport) method, which passes TreeGrid properties to the server.
+Export to CSV on the server side using the [serverCsvExport](https://ej2.syncfusion.com/react/documentation/api/treegrid#servercsvexport) method, which passes TreeGrid properties to the server.
 
-In the following demo, the method is invoked inside the [toolbarClick](https://ej2.syncfusion.com/react/documentation/api/treegrid/#toolbarclick) event. On the server, TreeGrid properties are deserialized and passed to the [ExportToCsv](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGridExport.TreeGridExcelExport.html#Syncfusion_EJ2_TreeGridExport_TreeGridExcelExport_ExportToCsv__1_Syncfusion_EJ2_TreeGrid_TreeGrid_System_Collections_IEnumerable_Syncfusion_EJ2_TreeGridExport_ExcelExportProperties_) method, which generates the CSV.
+In the following demo, the method is invoked inside the [toolbarClick](https://ej2.syncfusion.com/react/documentation/api/treegrid#toolbarclick) event. On the server, TreeGrid properties are deserialized and passed to the [ExportToCsv](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGridExport.TreeGridExcelExport.html#Syncfusion_EJ2_TreeGridExport_TreeGridExcelExport_ExportToCsv__1_Syncfusion_EJ2_TreeGrid_TreeGrid_System_Collections_IEnumerable_Syncfusion_EJ2_TreeGridExport_ExcelExportProperties_) method, which generates the CSV.
 
 ```ts
 

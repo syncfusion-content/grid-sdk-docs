@@ -12,7 +12,7 @@ domainurl: https://help.syncfusion.com/grid-sdk
 
 Paging provides an option to display grid data in segmented pages, making it easier to navigate through large datasets. This feature is particularly useful when dealing with extensive data sets. 
 
-To enable paging, you need to set the [allowPaging](https://ej2.syncfusion.com/vue/documentation/api/grid/#allowpaging) property to **true**. This property determines whether paging is enabled or disabled for the grid. When paging is enabled, a pager component rendered at the bottom of the grid, allowing you to navigate through different pages of data.
+To enable paging, you need to set the [allowPaging](https://ej2.syncfusion.com/vue/documentation/api/grid#allowpaging) property to **true**. This property determines whether paging is enabled or disabled for the grid. When paging is enabled, a pager component rendered at the bottom of the grid, allowing you to navigate through different pages of data.
 
 To use paging, you need to inject the **PageService** into the provider section of your **AppModule**. This service provides the necessary methods and events to handle paging functionality.
 
@@ -26,7 +26,7 @@ Customizing the pager options in the Vue Data Grid allows you to tailor the pagi
 
 ### Change the page size 
 
-The Vue Data Grid allows you to control the number of records displayed per page, providing you with flexibility in managing your data. This feature is particularly useful when you want to adjust the amount of data visible to you at any given time. To achieve this, you can utilize the [pageSettings.pageSize](https://ej2.syncfusion.com/vue/documentation/api/grid/pageSettings/#pagesize) property. This property is used to specify the initial number of records to display on each page. The default value of `pageSize` property is **12**.
+The Vue Data Grid allows you to control the number of records displayed per page, providing you with flexibility in managing your data. This feature is particularly useful when you want to adjust the amount of data visible to you at any given time. To achieve this, you can utilize the [pageSettings.pageSize](https://ej2.syncfusion.com/vue/documentation/api/grid/pageSettings#pagesize) property. This property is used to specify the initial number of records to display on each page. The default value of `pageSize` property is **12**.
 
 The following example demonstrates how to change the page size of a Grid using an external button click based on **TextBox** input.
 
@@ -45,7 +45,7 @@ The following example demonstrates how to change the page size of a Grid using a
 
 The Vue Data Grid allows you to adjust the number of pages displayed in the pager container. This is useful when you want to manage the number of pages you see while navigating through extensive datasets. The default value of `pageCount` property is **8**.
 
-To change the page count in the Vue Data Grid, you can utilize the [pageSettings.pageCount](https://ej2.syncfusion.com/vue/documentation/api/grid/pageSettings/#pagecount) property, which defines the number of pages displayed in the pager container.
+To change the page count in the Vue Data Grid, you can utilize the [pageSettings.pageCount](https://ej2.syncfusion.com/vue/documentation/api/grid/pageSettings#pagecount) property, which defines the number of pages displayed in the pager container.
 
 The following example demonstrates how to change the page count of a Grid using an external button click based on **TextBox** input.
 
@@ -64,7 +64,7 @@ The following example demonstrates how to change the page count of a Grid using 
 
 The Vue Data Grid allows you to change the currently displayed page, which can be particularly useful when you need to navigate through different pages of data either upon the initial rendering of the grid or update the displayed page based on interactions or specific conditions. The default value of `currentPage` property is **1**.
 
-To change the current page in the Vue Data Grid, you can utilize the [pageSettings.currentPage](https://ej2.syncfusion.com/vue/documentation/api/grid/pageSettings/#currentpage) property, which defines the current page number of the pager.
+To change the current page in the Vue Data Grid, you can utilize the [pageSettings.currentPage](https://ej2.syncfusion.com/vue/documentation/api/grid/pageSettings#currentpage) property, which defines the current page number of the pager.
 
 The following example demonstrates how to dynamically change the current page using an external button click based on **TextBox** input:
 
@@ -83,11 +83,11 @@ The following example demonstrates how to dynamically change the current page us
 
 The Vue Data Grid allows you to include the current page information as a query string in the URL. This feature is particularly useful for scenarios where you need to maintain and share the state of the grid's pagination.
 
-To add the current page detail to the URL as a query string in the Vue Data Grid, you can enable the [enableQueryString](https://ej2.syncfusion.com/vue/documentation/api/grid/pageSettings/#enablequerystring) property. When this property is set to **true**, it will automatically pass the current page information as a query string parameter along with the URL when navigating to other pages within the grid. 
+To add the current page detail to the URL as a query string in the Vue Data Grid, you can enable the [enableQueryString](https://ej2.syncfusion.com/vue/documentation/api/grid/pageSettings#enablequerystring) property. When this property is set to **true**, it will automatically pass the current page information as a query string parameter along with the URL when navigating to other pages within the grid. 
 
 > By enabling the `enableQueryString` property, you can easily copy the URL of the current page and share it with others. When the shared URL is opened, it will load the grid with the exact page that was originally shared.
 
-In the following example, the [EJ2 Toggle Switch Button](https://ej2.syncfusion.com/vue/documentation/switch/getting-started) component is added to enable or disable the addition of the current page to the URL as a query string. When the switch is toggled, the [change](https://ej2.syncfusion.com/vue/documentation/api/switch/#change) event is triggered and the `enableQueryString` property of the grid is updated accordingly.
+In the following example, the [EJ2 Toggle Switch Button](https://ej2.syncfusion.com/vue/documentation/switch/getting-started) component is added to enable or disable the addition of the current page to the URL as a query string. When the switch is toggled, the [change](https://ej2.syncfusion.com/vue/documentation/api/switch#change) event is triggered and the `enableQueryString` property of the grid is updated accordingly.
 
 
 {% tabs %}
@@ -231,7 +231,7 @@ export default {
 
 The pager template in Vue Data Grid allows you to customize the appearance and behavior of the pager element, which is used for navigation through different pages of grid data. This feature is particularly useful when you want to use custom elements inside the pager instead of the default elements.
 
-To use the pager template, you need to specify the [pagerTemplate](https://ej2.syncfusion.com/vue/documentation/api/grid/pageSettings/#template) property in your Vue Data Grid configuration. The `pagerTemplate` property allows you to define a custom template for the pager. Within the template, you can access the [currentPage](https://ej2.syncfusion.com/vue/documentation/api/grid/pageSettings/#currentpage), [pageSize](https://ej2.syncfusion.com/vue/documentation/api/grid/pageSettings/#pagesize), [pageCount](https://ej2.syncfusion.com/vue/documentation/api/grid/pageSettings/#pagecount), **totalPage** and **totalRecordCount** values.
+To use the pager template, you need to specify the [pagerTemplate](https://ej2.syncfusion.com/vue/documentation/api/grid/pageSettings#template) property in your Vue Data Grid configuration. The `pagerTemplate` property allows you to define a custom template for the pager. Within the template, you can access the [currentPage](https://ej2.syncfusion.com/vue/documentation/api/grid/pageSettings#currentpage), [pageSize](https://ej2.syncfusion.com/vue/documentation/api/grid/pageSettings#pagesize), [pageCount](https://ej2.syncfusion.com/vue/documentation/api/grid/pageSettings#pagecount), **totalPage** and **totalRecordCount** values.
 
 The following example demonstrates how to render a **NumericTextBox** component in the pager using the `pagerTemplate` property:
 
@@ -387,7 +387,7 @@ export default {
 
 The pager with a page size dropdown in Vue Data Grid allows you to dynamically change the number of records displayed in the grid. This feature is useful when you want to easily customize the number of records to be shown per page.
 
-To enable the page size Dropdown feature in the Vue Data Grid, you need to set the [pageSettings.pageSizes](https://ej2.syncfusion.com/vue/documentation/api/grid/pageSettings/#pagesizes) property to **true** in the grid configuration. This property configuration triggers the rendering of a dropdown list within the pager, allowing you to select the desired page size. The selected page size determines the number of records displayed on each page of the grid.
+To enable the page size Dropdown feature in the Vue Data Grid, you need to set the [pageSettings.pageSizes](https://ej2.syncfusion.com/vue/documentation/api/grid/pageSettings#pagesizes) property to **true** in the grid configuration. This property configuration triggers the rendering of a dropdown list within the pager, allowing you to select the desired page size. The selected page size determines the number of records displayed on each page of the grid.
 
 The following example that demonstrates how to integrate the page size Dropdown feature by configuring the `pageSizes` property:
 
@@ -406,7 +406,7 @@ The following example that demonstrates how to integrate the page size Dropdown 
 
 ### Customize page size dropdown 
 
-The Vue Data Grid allows you to customize the default values of the page size dropdown in the pager, allowing you to change the number of records displayed per page. To achieve this, you can define the [pageSizes](https://ej2.syncfusion.com/vue/documentation/api/grid/pageSettings/#pagesizes) property as an array of string instead of boolean value.
+The Vue Data Grid allows you to customize the default values of the page size dropdown in the pager, allowing you to change the number of records displayed per page. To achieve this, you can define the [pageSizes](https://ej2.syncfusion.com/vue/documentation/api/grid/pageSettings#pagesizes) property as an array of string instead of boolean value.
 
 The following example demonstrate how to customize the default values of the pager dropdown using the `pageSizes` property:
 
@@ -446,7 +446,7 @@ The following example demonstrates how to dynamically navigate to a particular p
 
 You can get pager element in the Vue Data Grid. This allows you to customize the pager's appearance or behavior to meet the requirements of your application.
 
-[getPager](https://ej2.syncfusion.com/vue/documentation/api/grid/#getpager)- This method allows you to obtain a reference to the pager element within the Vue Data Grid. It returns an HTML element representing the pager.
+[getPager](https://ej2.syncfusion.com/vue/documentation/api/grid#getpager)- This method allows you to obtain a reference to the pager element within the Vue Data Grid. It returns an HTML element representing the pager.
 
 ```ts
   this.$refs.grid.getPager()
@@ -456,7 +456,7 @@ You can get pager element in the Vue Data Grid. This allows you to customize the
 
 You have an option to dynamically calculate the page size of a grid by considering the height of its parent element. This functionality proves invaluable in ensuring that the grid's content remains within the available space, preventing the need for excessive scrolling. It primarily serves the purpose of automatically adjusting the `pageSize` when the height of the grid's parent element changes dynamically. Upon each alteration in the parent element's height, invoking this method will compute the grid's `pageSize` and present the current page records accordingly. This feature effectively addresses situations where a static `pageSize` value does not cater to the varying heights of different parent elements, preventing any unwanted empty spaces within the grid.
 
-To achieve page size calculation based on an element's height in the Grid, you can utilize the [calculatePageSizeByParentHeight](https://ej2.syncfusion.com/vue/documentation/api/grid/#calculatepagesizebyparentheight) method. This method calculates the page size based on the height of the parent element.
+To achieve page size calculation based on an element's height in the Grid, you can utilize the [calculatePageSizeByParentHeight](https://ej2.syncfusion.com/vue/documentation/api/grid#calculatepagesizebyparentheight) method. This method calculates the page size based on the height of the parent element.
 
 The following example demonstrates how to calculate the page size based on element height using the `calculatePageSizeByParentHeight` method triggered by a change event based on the **NumericTextBox** input:
 
@@ -473,7 +473,7 @@ The following example demonstrates how to calculate the page size based on eleme
 
 ## Render pager at the top of the grid 
 
-The Grid component provides built-in support for rendering a pager at the bottom of the grid by default. However, in certain scenarios, you might want to display the pager at the top of the grid. This can be achieved by utilizing the [dataBound](https://ej2.syncfusion.com/vue/documentation/api/grid/#databound) event. This event is triggered when the Grid completes rendering its data. By handling this event, you can customize the rendering of the pager and move it to the top of the Grid.
+The Grid component provides built-in support for rendering a pager at the bottom of the grid by default. However, in certain scenarios, you might want to display the pager at the top of the grid. This can be achieved by utilizing the [dataBound](https://ej2.syncfusion.com/vue/documentation/api/grid#databound) event. This event is triggered when the Grid completes rendering its data. By handling this event, you can customize the rendering of the pager and move it to the top of the Grid.
 
 Here's an example that demonstrates how to render the pager at the top of the grid using the `dataBound` event:
 
@@ -489,17 +489,17 @@ Here's an example that demonstrates how to render the pager at the top of the gr
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/grid/page/default-page2" %}
 
 > During the paging action, the pager component triggers the below three events.
-> * The [created](https://ej2.syncfusion.com/vue/documentation/api/pager/pagerModel/#created) event triggers when Pager is created.
-> * The [click](https://ej2.syncfusion.com/vue/documentation/api/pager/pagerModel/#click) event triggers when the numeric items in the pager is clicked.
-> * The [dropDownChanged](https://ej2.syncfusion.com/vue/documentation/api/pager/pagerModel/#dropdownchanged) event triggers when pageSize DropDownList value is selected.
+> * The [created](https://ej2.syncfusion.com/vue/documentation/api/pager/pagerModel#created) event triggers when Pager is created.
+> * The [click](https://ej2.syncfusion.com/vue/documentation/api/pager/pagerModel#click) event triggers when the numeric items in the pager is clicked.
+> * The [dropDownChanged](https://ej2.syncfusion.com/vue/documentation/api/pager/pagerModel#dropdownchanged) event triggers when pageSize DropDownList value is selected.
 
 ## Pager events 
 
 The Vue Data Grid component triggers two pager events during paging actions:
 
-[actionBegin](https://ej2.syncfusion.com/vue/documentation/api/grid/#actionbegin)-  This event triggered before any paging action (such as changing the page, changing the page size and etc) is initiated. You can use this event to customize or control the behavior of paging actions.
+[actionBegin](https://ej2.syncfusion.com/vue/documentation/api/grid#actionbegin)-  This event triggered before any paging action (such as changing the page, changing the page size and etc) is initiated. You can use this event to customize or control the behavior of paging actions.
 
-[actionComplete](https://ej2.syncfusion.com/vue/documentation/api/grid/#actioncomplete)- This event triggered after a pager action is completed. It provides information about the action, such as the new page number, page size, and the total number of records. You can use this event to perform actions or update the UI after the operation has been executed.
+[actionComplete](https://ej2.syncfusion.com/vue/documentation/api/grid#actioncomplete)- This event triggered after a pager action is completed. It provides information about the action, such as the new page number, page size, and the total number of records. You can use this event to perform actions or update the UI after the operation has been executed.
 
 The following example that example demonstrates how to use these events to display notification messages to indicate the current and next page during paging actions in the Vue Data Grid:
 

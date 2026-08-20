@@ -11,14 +11,14 @@ domainurl: https://help.syncfusion.com/grid-sdk
 
 # Data binding in JavaScript Grid control
 
-The Grid uses [`DataManager`](../data), which supports both RESTful JSON data services binding and local JavaScript object array binding. The [`dataSource`](../api/grid/#datasource) property can be assigned either with the instance of [`DataManager`](../data) or JavaScript object array collection.
+The Grid uses [`DataManager`](../data), which supports both RESTful JSON data services binding and local JavaScript object array binding. The [`dataSource`](../api/grid#datasource) property can be assigned either with the instance of [`DataManager`](../data) or JavaScript object array collection.
 It supports two kinds of data binding method:
 * Local data
 * Remote data
 
 ## Local Data
 
-To bind local data to the grid, you can assign a JavaScript object array to the [`dataSource`](../api/grid/#datasource) property. The local data source can also be provided as an instance of the [`DataManager`](../data).
+To bind local data to the grid, you can assign a JavaScript object array to the [`dataSource`](../api/grid#datasource) property. The local data source can also be provided as an instance of the [`DataManager`](../data).
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -35,7 +35,7 @@ To bind local data to the grid, you can assign a JavaScript object array to the 
 
 ## Remote data
 
-To bind remote data to grid component, assign service data as an instance of [`DataManager`](../data) to the [`dataSource`](../api/grid/#datasource) property. To interact with remote data source,  provide the endpoint **url**.
+To bind remote data to grid component, assign service data as an instance of [`DataManager`](../data) to the [`dataSource`](../api/grid#datasource) property. To interact with remote data source,  provide the endpoint **url**.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -203,7 +203,7 @@ On remote data binding, all grid actions such as paging, sorting, editing, group
 
 ### Sending additional parameters to the server
 
-To add a custom parameter to the data request, use the **addParams** method of **Query** class. Assign the **Query** object with additional parameters to the grid [`query`](../api/grid/#query) property.
+To add a custom parameter to the data request, use the **addParams** method of **Query** class. Assign the **Query** object with additional parameters to the grid [`query`](../api/grid#query) property.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -216,14 +216,14 @@ To add a custom parameter to the data request, use the **addParams** method of *
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grid-cs126" %}
 
-> The parameters added using the [`query`](../api/grid/#query) property will be sent along with the data request for every grid action.
+> The parameters added using the [`query`](../api/grid#query) property will be sent along with the data request for every grid action.
 
 ### Handling HTTP error
 
 During server interaction from the grid, some server-side exceptions may occur, and you can acquire those error messages or exception details
-in client-side using the [`actionFailure`](../api/grid/#actionfailure) event.
+in client-side using the [`actionFailure`](../api/grid#actionfailure) event.
 
-The argument passed to the [`actionFailure`](../api/grid/#actionfailure) event contains the error details returned from the server.
+The argument passed to the [`actionFailure`](../api/grid#actionfailure) event contains the error details returned from the server.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -234,11 +234,11 @@ The argument passed to the [`actionFailure`](../api/grid/#actionfailure) event c
 {% endhighlight %}
 {% endtabs %}
 
-> The [`actionFailure`](../api/grid/#actionfailure) event will be triggered not only for the server errors, but also when there is an exception while processing the grid actions.
+> The [`actionFailure`](../api/grid#actionfailure) event will be triggered not only for the server errors, but also when there is an exception while processing the grid actions.
 
 ## Binding with ajax
 
-You can use Grid [`dataSource`](../api/grid/#datasource) property to bind the datasource to Grid from external ajax request. In the below code we have fetched the datasource from the server with the help of ajax request and provided that to [`dataSource`](../api/grid/#datasource) property by using **onSuccess** event of the ajax.
+You can use Grid [`dataSource`](../api/grid#datasource) property to bind the datasource to Grid from external ajax request. In the below code we have fetched the datasource from the server with the help of ajax request and provided that to [`dataSource`](../api/grid#datasource) property by using **onSuccess** event of the ajax.
 
 ```ts
 ej.grids.Grid.Inject(ej.grids.Page);

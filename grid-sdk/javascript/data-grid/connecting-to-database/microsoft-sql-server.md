@@ -5,7 +5,6 @@ description: Learn how to consume data from SQL Server using Microsoft SQL Clien
 platform: grid-sdk
 control: Grid
 keywords: adaptors, customadaptor, urladaptor, microsoftsql, remotedata
-publishingplatform: grid-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
@@ -14,7 +13,7 @@ domainurl: https://help.syncfusion.com/grid-sdk
 
 This section describes how to connect and retrieve data from a Microsoft SQL Server database using [Microsoft.Data.SqlClient](https://www.nuget.org/packages/Microsoft.Data.SqlClient) and bind it to the Syncfusion JavaScript Grid.
 
-Microsoft SQL Server database can be bound to the Syncfusion JavaScript Grid in different ways (i.e.) using [dataSource](../../api/grid/#datasource) property, custom adaptor and remote data binding using various adaptors. In this documentation, two approaches will be examined to connect a Microsoft SQL Server database to a Grid. Both the approaches have capability to handle data and CRUD operations with built-in methods as well as can be customized as per your own.
+Microsoft SQL Server database can be bound to the Syncfusion JavaScript Grid in different ways (i.e.) using [dataSource](../../api/grid#datasource) property, custom adaptor and remote data binding using various adaptors. In this documentation, two approaches will be examined to connect a Microsoft SQL Server database to a Grid. Both the approaches have capability to handle data and CRUD operations with built-in methods as well as can be customized as per your own.
 
 **1. Using UrlAdaptor**
 
@@ -1115,7 +1114,7 @@ CRUD operations within the Grid can be mapped to server-side controller actions 
 3. **updateUrl**: Specifies the URL for updating existing data.
 4. **batchUrl**: Specifies the URL for batch editing.
 
-To enable editing in Grid, refer to the editing [documentation](../../grid/editing/edit). In the below example, the inline edit [mode](../../api/grid/editSettings/#mode) is enabled and [toolbar](../../api/grid/#toolbar) property is configured to display toolbar items for editing purposes.
+To enable editing in Grid, refer to the editing [documentation](../../grid/editing/edit). In the below example, the inline edit [mode](../../api/grid/editSettings#mode) is enabled and [toolbar](../../api/grid#toolbar) property is configured to display toolbar items for editing purposes.
 
 {% tabs %}
 {% if page.publishingplatform == "typescript" %}
@@ -1189,8 +1188,8 @@ grid.appendTo('#Grid');
 
 {% endtabs %}
 
-> * Normal/Inline editing is the default edit [mode](../../api/grid/editSettings/#mode) for the Grid. To enable CRUD operations, ensure that the [isPrimaryKey](../../api/grid/column/#isprimarykey) property is set to **true** for a specific Grid column, ensuring that its value is unique.
-> * If database has an auto generated column, ensure to define [isIdentity](../../api/grid/column/#isidentity) property of Grid column to disable them during adding or editing operations.
+> * Normal/Inline editing is the default edit [mode](../../api/grid/editSettings#mode) for the Grid. To enable CRUD operations, ensure that the [isPrimaryKey](../../api/grid/column#isprimarykey) property is set to **true** for a specific Grid column, ensuring that its value is unique.
+> * If database has an auto generated column, ensure to define [isIdentity](../../api/grid/column#isidentity) property of Grid column to disable them during adding or editing operations.
 
 **Insert Operation:**
 
@@ -1332,7 +1331,7 @@ public class CRUDModel<T> where T : class
 
 **Batch Operation:**
 
-To perform batch operation, define the edit [mode](../../api/grid/editSettings/#mode) as **Batch** and specify the `batchUrl` property in the `DataManager`. Use the **Add** toolbar button to insert new row in batch editing mode. To edit a cell, double-click the desired cell and update the value as required. To delete a record, simply select the record and press the **Delete** toolbar button. Now, all CRUD operations will be executed in batch editing mode. Clicking the **Update** toolbar button will update the newly added, edited, or deleted records from the **Orders** table using a single API **POST** request.
+To perform batch operation, define the edit [mode](../../api/grid/editSettings#mode) as **Batch** and specify the `batchUrl` property in the `DataManager`. Use the **Add** toolbar button to insert new row in batch editing mode. To edit a cell, double-click the desired cell and update the value as required. To delete a record, simply select the record and press the **Delete** toolbar button. Now, all CRUD operations will be executed in batch editing mode. Clicking the **Update** toolbar button will update the newly added, edited, or deleted records from the **Orders** table using a single API **POST** request.
 
 {% tabs %}
 {% highlight cs tabtitle="GridController.cs" %}
@@ -2144,7 +2143,7 @@ export class CustomAdaptor extends ej.data.UrlAdaptor {
 
 To enable editing in the Syncfusion JavaScript Grid, utilize the [editSettings](../../api/grid/editSettings/) property. The Grid offers multiple edit modes including the **Inline/Normal**, **Dialog** and **Batch** editing. For more details, refer to the Grid [editing](../../grid/editing/edit) documentation.
 
-In this scenario, the inline edit [mode](../../api/grid/editSettings/#mode) and [toolbar](../../api/grid/#toolbar) property configured to display toolbar items for editing purpose.
+In this scenario, the inline edit [mode](../../api/grid/editSettings#mode) and [toolbar](../../api/grid#toolbar) property configured to display toolbar items for editing purpose.
 
 
 {% tabs %}
@@ -2221,8 +2220,8 @@ grid.appendTo('#Grid');
 {% endif %}
 {% endtabs %}
 
-> * Normal/Inline editing is the default edit [mode](../../api/grid/editSettings/#mode) for the Grid. To enable CRUD operations, ensure that the [isPrimaryKey](../../api/grid/column/#isprimarykey) property is set to **true** for a specific Grid column, ensuring that its value is unique.
-> * If database has an auto generated column, ensure to define [isIdentity](../../api/grid/column/#isidentity) property of Grid column to disable them during adding or editing operations.
+> * Normal/Inline editing is the default edit [mode](../../api/grid/editSettings#mode) for the Grid. To enable CRUD operations, ensure that the [isPrimaryKey](../../api/grid/column#isprimarykey) property is set to **true** for a specific Grid column, ensuring that its value is unique.
+> * If database has an auto generated column, ensure to define [isIdentity](../../api/grid/column#isidentity) property of Grid column to disable them during adding or editing operations.
 
 The CRUD operations can be performed and customized on our own by overriding the following CRUD methods of the `UrlAdaptor` 
 

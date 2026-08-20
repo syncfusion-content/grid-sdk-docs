@@ -1,18 +1,18 @@
 ---
 layout: post
-title: Row editing in Vue Treegrid component | Syncfusion
-description: Learn here all about Row editing in Syncfusion Vue Treegrid component of Syncfusion Essential JS 2 and more.
+title: Vue TreeGrid Row Editing | Syncfusion
+description: Learn how to use row editing in Vue TreeGrid, including editing rows, programmatic CRUD operations, and confirmation dialogs.
 control: Row editing 
 platform: grid-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Row editing in Vue Treegrid component
+# Row Editing in Vue TreeGrid
 
 In Row edit mode, when you start editing the currently selected record, the entire row is changed to edit state.
 You can change the cell values of the row and save edited data to the data source.
-To enable Row edit, set the [`editSettings.mode`](https://ej2.syncfusion.com/vue/documentation/api/treegrid/editSettingsModel/#mode) as `Row`.
+To enable Row edit, set the [`editSettings.mode`](https://ej2.syncfusion.com/vue/documentation/api/treegrid/editSettingsModel#mode) as `Row`.
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}

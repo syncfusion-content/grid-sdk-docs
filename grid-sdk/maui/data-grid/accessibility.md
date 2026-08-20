@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Accessibility in .NET MAUI DataGrid control | Syncfusion®
-description: Learn here all about Accessibility support in Syncfusion® .NET MAUI DataGrid (SfDataGrid) control and more.
+title: Accessibility in .NET MAUI Data Grid | Syncfusion®
+description: Learn about the accessibility support available in Syncfusion® .NET MAUI Data Grid. Explore features designed to improve usability for all users.
 platform: grid-sdk
 control: SfDataGrid
 documentation: UG

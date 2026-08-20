@@ -1,21 +1,20 @@
 ---
 layout: post
-title: Show spinner while exporting in TypeScript Treegrid control | Syncfusion
-description: Learn here all about Show spinner while exporting in Syncfusion TypeScript Treegrid control of Syncfusion Essential JS 2 and more.
+title: TypeScript TreeGrid Show Spinner While Exporting | Syncfusion
+description: Learn how to display a loading spinner during export operations in TypeScript TreeGrid to provide visual feedback and improve user experience.
 platform: grid-sdk
-control: Show spinner while exporting 
-publishingplatform: grid-sdk
+control: Show spinner while exporting
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Show spinner while exporting in TypeScript Treegrid control
+# Show Spinner While Exporting in TypeScript TreeGrid
 
-You can show/ hide spinner component while exporting the Tree Grid using [`showSpinner`](../api/treegrid/#showspinner)/ [`hideSpinner`](../api/treegrid/#hidespinner) methods. You can use  [`toolbarClick`](../api/treegrid/#toolbarclick) event to show spinner before exporting and hide a spinner in the [`pdfExportComplete`](../api/treegrid/#pdfexportcomplete) or [`excelExportComplete`](../api/treegrid/#excelexportcomplete) event after the exporting.
+You can show/ hide spinner component while exporting the Tree Grid using [`showSpinner`](../api/treegrid#showspinner)/ [`hideSpinner`](../api/treegrid#hidespinner) methods. You can use  [`toolbarClick`](../api/treegrid#toolbarclick) event to show spinner before exporting and hide a spinner in the [`pdfExportComplete`](../api/treegrid#pdfexportcomplete) or [`excelExportComplete`](../api/treegrid#excelexportcomplete) event after the exporting.
 
-In the [`toolbarClick`](../../api/grid/#toolbarclick) event, based on the parameter **args.item.text** as **PDF Export** or **Excel Export** we can call the [`showSpinner`](../api/treegrid/#showspinner) method from Tree Grid instance.
+In the [`toolbarClick`](../../api/grid#toolbarclick) event, based on the parameter **args.item.text** as **PDF Export** or **Excel Export** we can call the [`showSpinner`](../api/treegrid#showspinner) method from Tree Grid instance.
 
-In the [`pdfExportComplete`](../api/treegrid/#pdfexportcomplete) or [`excelExportComplete`](../api/treegrid/#excelexportcomplete) event, We can call the [`hideSpinner`](../api/treegrid/#hidespinner) method.
+In the [`pdfExportComplete`](../api/treegrid#pdfexportcomplete) or [`excelExportComplete`](../api/treegrid#excelexportcomplete) event, We can call the [`hideSpinner`](../api/treegrid#hidespinner) method.
 
 In the below demo, we have rendered the default spinner component when exporting the Tree Grid.
 

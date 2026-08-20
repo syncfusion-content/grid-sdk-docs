@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Changing the pivotview component minimum height in React | Syncfusion
-description: Learn here all about Changing the pivotview component minimum height in Syncfusion React Pivotview component of Syncfusion Essential JS 2 and more.
-control: Changing the pivotview component minimum height 
-platform: grid-sdk
+title: How to change the minimum height in React Pivot Table | Syncfusion
+description: Step-by-step example showing how to change the minimum height in the React Pivot Table using the minHeight property.
+control: Pivot Table
+platform: ej2-react
 documentation: ug
-domainurl: https://help.syncfusion.com/grid-sdk
+domainurl: ##DomainURL##
 ---
 
-# Changing the pivotview component minimum height in React
+# How to change the minimum height of the React Pivot Table
 
 The `minHeight` property allows you to set the minimum height for the React Pivot Table component. By default, the component maintains a minimum height of **300px**. This property ensures the component remains visible and functional even when the container height is smaller than the specified minimum value.
 

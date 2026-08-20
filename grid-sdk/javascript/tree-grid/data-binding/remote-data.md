@@ -1,19 +1,18 @@
 ---
 layout: post
-title: Remote data in JavaScript Treegrid control | Syncfusion
-description: Learn here all about Remote data in Syncfusion JavaScript Treegrid control of Syncfusion Essential JS 2 and more.
+title: JavaScript TreeGrid Remote Data | Syncfusion
+description: Learn how to bind remote data in the JavaScript TreeGrid, including load on demand, paging, virtualization, adaptors, and error handling.
 platform: grid-sdk
-control: Remote data 
-publishingplatform: grid-sdk
+control: Remote data
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Remote data in JavaScript Treegrid control
+# Remote Data in JavaScript TreeGrid
 
 To bind remote data to TreeGrid component, assign service data as an instance of `DataManager` to the [`dataSource`](../../api/treegrid#datasource) property. To interact with remote data source,  provide the endpoint `url` and define the [`hasChildMapping`](../../api/treegrid#hasChildMapping) property of treegrid.
 
-The [`hasChildMapping`](../../api/treegrid/#haschildmapping) property maps the field name in data source, that denotes whether current record holds any child records. This is useful internally to show expand icon while binding child data on demand.
+The [`hasChildMapping`](../../api/treegrid#haschildmapping) property maps the field name in data source, that denotes whether current record holds any child records. This is useful internally to show expand icon while binding child data on demand.
 
 The TreeGrid provides `Load on Demand` support for rendering remote data. The Load on demand is considered in TreeGrid for the following actions.
 
@@ -176,9 +175,9 @@ namespace Controllers
 
 ## LoadChildOnDemand
 
-While binding remote data to Tree Grid component, by default Tree Grid renders parent rows in collapsed state. Tree Grid provides option to load the child records also during the initial rendering itself for remote data binding by setting [`loadChildOnDemand`](https://ej2.syncfusion.com/documentation/api/treegrid/#loadchildondemand) as false.
+While binding remote data to Tree Grid component, by default Tree Grid renders parent rows in collapsed state. Tree Grid provides option to load the child records also during the initial rendering itself for remote data binding by setting [`loadChildOnDemand`](https://ej2.syncfusion.com/documentation/api/treegrid#loadchildondemand) as false.
 
-When [`loadChildOnDemand`](https://ej2.syncfusion.com/documentation/api/treegrid/#loadchildondemand) is enabled parent records are rendered in collapsed state.
+When [`loadChildOnDemand`](https://ej2.syncfusion.com/documentation/api/treegrid#loadchildondemand) is enabled parent records are rendered in collapsed state.
 
 The following code example describes the behavior of the loadChildOnDemand feature of Tree Grid.
 
@@ -459,9 +458,9 @@ also when there is an exception while processing the treegrid actions.
 
 While binding remote data to Tree Grid component, by default Tree Grid renders parent rows in collapsed state. When expanding the root node, the child nodes will be loaded from the remote server.
 
-When using virtualization with remote data binding, it helps you to improve the tree grid performance while loading a large set of data by setting [`enableVirtualization`](https://ej2.syncfusion.com/documentation/api/treegrid/#enablevirtualization) as true. The Tree Grid UI virtualization allows it to render only rows and columns visible within the view-port without buffering the entire datasource.
+When using virtualization with remote data binding, it helps you to improve the tree grid performance while loading a large set of data by setting [`enableVirtualization`](https://ej2.syncfusion.com/documentation/api/treegrid#enablevirtualization) as true. The Tree Grid UI virtualization allows it to render only rows and columns visible within the view-port without buffering the entire datasource.
 
-[`hasChildMapping`](https://ej2.syncfusion.com/documentation/api/treegrid/#haschildmapping) property maps the field name in data source, that denotes whether current record holds any child records. This is useful internally to show expand icon while binding child data on demand.
+[`hasChildMapping`](https://ej2.syncfusion.com/documentation/api/treegrid#haschildmapping) property maps the field name in data source, that denotes whether current record holds any child records. This is useful internally to show expand icon while binding child data on demand.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -842,9 +841,9 @@ public class TreeData
 
 ### Load parent rows in expanded state with virtualization
 
-Tree Grid provides an option to load the child records in the initial rendering itself for remote data binding by setting the [`loadChildOnDemand`](https://ej2.syncfusion.com/documentation/api/treegrid/#loadchildondemand) as true. When the `loadChildOnDemand` is enabled, parent records are rendered in expanded state.
+Tree Grid provides an option to load the child records in the initial rendering itself for remote data binding by setting the [`loadChildOnDemand`](https://ej2.syncfusion.com/documentation/api/treegrid#loadchildondemand) as true. When the `loadChildOnDemand` is enabled, parent records are rendered in expanded state.
 
-When using virtualization with `loadChildOnDemand` , it helps you to improve the tree grid performance while loading the child records during the initial rendering for remote data binding by setting [`enableVirtualization`](https://ej2.syncfusion.com/documentation/api/treegrid/#enablevirtualization) as true and `loadChildOnDemand` as true.
+When using virtualization with `loadChildOnDemand` , it helps you to improve the tree grid performance while loading the child records during the initial rendering for remote data binding by setting [`enableVirtualization`](https://ej2.syncfusion.com/documentation/api/treegrid#enablevirtualization) as true and `loadChildOnDemand` as true.
 
 {% if page.publishingplatform == "typescript" %}
 

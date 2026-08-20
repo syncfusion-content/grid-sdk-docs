@@ -23,7 +23,7 @@ The server side export functionality is provided in the Syncfusion.EJ2.TreeGridE
 
 The following code snippet shows an ASP.NET Core Controller Action for server configuration.
 
-To export the TreeGrid on the server side, call the [serverPdfExport](https://ej2.syncfusion.com/react/documentation/api/treegrid/#serverpdfexport) method to pass TreeGrid properties to the server export action.
+To export the TreeGrid on the server side, call the [serverPdfExport](https://ej2.syncfusion.com/react/documentation/api/treegrid#serverpdfexport) method to pass TreeGrid properties to the server export action.
 
 ```ts
 
@@ -149,7 +149,7 @@ private void PdfHeaderQueryCellInfo(object pdf)
 
 Additional parameters can be passed to the server to customize the export process based on specific requirements.
 
-This can be achieved using the [query](https://ej2.syncfusion.com/react/documentation/api/treegrid/#query) property and the [toolbarClick](https://ej2.syncfusion.com/react/documentation/api/treegrid/#toolbarclick) event. Within the `query` property, invoke the [addParams](https://ej2.syncfusion.com/documentation/api/data/query/#addparams) method to add parameters to the request.
+This can be achieved using the [query](https://ej2.syncfusion.com/react/documentation/api/treegrid#query) property and the [toolbarClick](https://ej2.syncfusion.com/react/documentation/api/treegrid#toolbarclick) event. Within the `query` property, invoke the [addParams](https://ej2.syncfusion.com/documentation/api/data/query#addparams) method to add parameters to the request.
 
 The following example demonstrates passing additional parameters during PDF export within the `toolbarClick` event. In this example, the parameter **recordcount** with value **12** is passed using `addParams` and shown as a message.
 

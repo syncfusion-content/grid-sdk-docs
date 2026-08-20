@@ -3,8 +3,7 @@ layout: post
 title: Persisting data in server in JavaScript Grid control | Syncfusion
 description: Learn here all about Persisting data in server in Syncfusion JavaScript Grid control of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
-control: Persisting data in server 
-publishingplatform: grid-sdk
+control: Persisting data in server
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---

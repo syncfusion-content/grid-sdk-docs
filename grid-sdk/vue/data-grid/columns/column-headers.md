@@ -233,7 +233,7 @@ Here's an example of how to use stacked headers with a custom `headerTemplate` i
       </e-columns>
       <template v-slot:orderIDTemplate>
         <div>
-          <a href="#">OrderID</a>
+         <a href="#" aria-label="View order details">OrderID</a>
         </div>
       </template>
       <template v-slot:orderDetailsTemplate>
@@ -342,7 +342,7 @@ const dropdownData = ["Order Details", "Order Information"];
       </e-columns>
       <template v-slot:orderIDTemplate>
         <div>
-          <a href="#">OrderID</a>
+          <a href="#" aria-label="View order Id">OrderID</a>
         </div>
       </template>
       <template v-slot:orderDetailsTemplate>
@@ -481,11 +481,11 @@ The following example demonstrates how to dynamically change the alignment of th
 >* The `headerTextAlign` property only changes the alignment of the text in the column header, and not the content of the column. If you want to align both the column header and content, you can use the [textAlign](https://ej2.syncfusion.com/documentation/api/grid/column#textalign) property.
 >* You can also use the `headerTextAlign` property with the stacked header feature in Vue Data Grid. The property will align the header text in the sub-headers as well.
 
-## Autowrap the header text
+## Auto wrap the header text
 
-The Autowrap allows the cell content of the grid to wrap to the next line when it exceeds the boundary of the specified cell width. The cell content wrapping works based on the position of white space between words. To support the Autowrap functionality in Vue Data Grid, you should set the appropriate [width](https://ej2.syncfusion.com/vue/documentation/api/grid/column#width) for the columns. The column width defines the maximum width of a column and helps to wrap the content automatically.
+The Auto wrap allows the cell content of the grid to wrap to the next line when it exceeds the boundary of the specified cell width. The cell content wrapping works based on the position of white space between words. To support the Auto wrap functionality in Vue Data Grid, you should set the appropriate [width](https://ej2.syncfusion.com/vue/documentation/api/grid/column#width) for the columns. The column width defines the maximum width of a column and helps to wrap the content automatically.
 
-To enable Autowrap, set the `allowTextWrap` property to **true**. You can also configure the auto wrap mode by setting the [textWrapSettings.wrapMode](https://ej2.syncfusion.com/vue/documentation/api/grid/textWrapSettings#wrapmode) property.
+To enable Auto wrap, set the `allowTextWrap` property to **true**. You can also configure the auto wrap mode by setting the [textWrapSettings.wrapMode](https://ej2.syncfusion.com/vue/documentation/api/grid/textWrapSettings#wrapmode) property.
 
 Grid provides the below three options for configuring:
 
@@ -493,9 +493,9 @@ Grid provides the below three options for configuring:
 * **Header**: With this option, only the grid header text is wrapped.
 * **Content**: With this option, only the grid content is wrapped.
 
->* If a column width is not specified, then the Autowrap of columns will be adjusted with respect to the grid's width.
+>* If a column width is not specified, then the Auto wrap of columns will be adjusted with respect to the grid's width.
 >* If a column's header text contains no white space, the text may not be wrapped.
->* If the content of a cell contains HTML tags, the Autowrap functionality may not work as expected. In such cases, you can use the [headerTemplate](https://ej2.syncfusion.com/vue/documentation/api/grid/column#headertemplate) and [template](https://ej2.syncfusion.com/vue/documentation/api/grid/column#template) properties of the column to customize the appearance of the header and cell content.
+>* If the content of a cell contains HTML tags, the Auto wrap functionality may not work as expected. In such cases, you can use the [headerTemplate](https://ej2.syncfusion.com/vue/documentation/api/grid/column#headertemplate) and [template](https://ej2.syncfusion.com/vue/documentation/api/grid/column#template) properties of the column to customize the appearance of the header and cell content.
 
 The following example demonstrates how to dynamically change the auto-wrap of the header text based on DropDown change.
 

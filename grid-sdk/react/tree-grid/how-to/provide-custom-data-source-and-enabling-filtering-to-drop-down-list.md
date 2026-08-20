@@ -10,7 +10,7 @@ domainurl: https://help.syncfusion.com/grid-sdk
 
 # Provide custom datasource and filter with React TreeGrid Dropdowns
 
-Provide a data source to the DropDownList by using the **params** of the [columns.edit](https://ej2.syncfusion.com/react/documentation/api/treegrid/column/#edit) property.
+Provide a data source to the DropDownList by using the **params** of the [columns.edit](https://ej2.syncfusion.com/react/documentation/api/treegrid/column#edit) property.
 
 When setting a new data source using edit params, specify a new **query** property for the DropDownList as shown below.
 
@@ -26,9 +26,9 @@ When setting a new data source using edit params, specify a new **query** proper
   };
 ```
 
-Enable filtering for the DropDownList by passing [allowFiltering](https://ej2.syncfusion.com/react/documentation/api/drop-down-list/#allowfiltering) as **true** in the edit params.
+Enable filtering for the DropDownList by passing [allowFiltering](https://ej2.syncfusion.com/react/documentation/api/drop-down-list#allowfiltering) as **true** in the edit params.
 
-In the following demo, the DropDownList is rendered with a custom [dataSource](https://ej2.syncfusion.com/react/documentation/api/drop-down-list/#datasource) for the **Priority** column, and filtering is enabled to search DropDownList items.
+In the following demo, the DropDownList is rendered with a custom [dataSource](https://ej2.syncfusion.com/react/documentation/api/drop-down-list#datasource) for the **Priority** column, and filtering is enabled to search DropDownList items.
 
 {% tabs %}
 {% highlight js tabtitle="app.jsx" %}

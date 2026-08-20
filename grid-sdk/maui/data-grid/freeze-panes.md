@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Freeze panes in .NET MAUI DataGrid control | Syncfusion®
-description: Learn here all about how to freeze rows and columns in Syncfusion® .NET MAUI DataGrid (SfDataGrid) control and more.
+title: Freeze Panes in .NET MAUI Data Grid | Syncfusion®
+description: Learn how to freeze rows and columns in Syncfusion® .NET MAUI Data Grid to keep important data visible while scrolling.
 platform: grid-sdk
 control: SfDataGrid
 documentation: UG

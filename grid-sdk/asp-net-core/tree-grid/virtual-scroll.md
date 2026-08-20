@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Virtual in Syncfusion ASP.NET Core Tree Grid Component
-description: Learn here all about Virtual in Syncfusion ASP.NET Core Tree Grid component of Syncfusion Essential JS 2 and more.
+title:  ASP.NET Core TreeGrid Virtual Scrolling | Syncfusion
+description: Learn how to use virtual scrolling in ASP.NET Core TreeGrid for large datasets, including row and column virtualization and performance optimization.
 platform: grid-sdk
 control: Virtual
-publishingplatform: grid-sdk
 documentation: ug
 ---
 
 
-# Tree Grid Virtualization
+# Virtual Scrolling in ASP.NET Core TreeGrid
 
 TreeGrid allows you to load large amount of data without performance degradation.
 

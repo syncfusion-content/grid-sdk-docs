@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Column Drag and Drop in .NET MAUI DataGrid control | Syncfusion®
-description: Learn all about column drag and drop support in Syncfusion® MAUI DataGrid (SfDataGrid) control and more here.
+title: Column Drag and Drop in .NET MAUI Data Grid | Syncfusion®
+description: Learn all about column drag-and-drop support in Syncfusion® .NET MAUI Data Grid, including column reordering, customization options, and usage examples.
 platform: grid-sdk
 control: SfDataGrid
 documentation: ug

@@ -1,19 +1,18 @@
 ---
 layout: post
-title: Row selection in JavaScript Treegrid control | Syncfusion
-description: Learn here all about Row selection in Syncfusion JavaScript Treegrid control of Syncfusion Essential JS 2 and more.
+title: JavaScript TreeGrid Row Selection | Syncfusion
+description: Learn how to use row selection in JavaScript TreeGrid, including programmatic selection, selected records, row indexes, and persistent selection.
 platform: grid-sdk
-control: Row selection 
-publishingplatform: grid-sdk
+control: Row selection
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Row selection in JavaScript Treegrid control
+# Row Selection in JavaScript TreeGrid
 
 ## Select row at initial rendering
 
-To select a row at initial rendering, set the [`selectedRowIndex`](../../api/treegrid/#selectedrowindex) value.
+To select a row at initial rendering, set the [`selectedRowIndex`](../../api/treegrid#selectedrowindex) value.
 
  {% if page.publishingplatform == "typescript" %}
 
@@ -44,7 +43,7 @@ To select a row at initial rendering, set the [`selectedRowIndex`](../../api/tre
 
 ## Get selected row indexes
 
-You can get the selected row indexes by using the [`getSelectedRowIndexes`](../../api/treegrid/#getselectedrowindexes) method.
+You can get the selected row indexes by using the [`getSelectedRowIndexes`](../../api/treegrid#getselectedrowindexes) method.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -75,7 +74,7 @@ You can get the selected row indexes by using the [`getSelectedRowIndexes`](../.
 
 ## Multiple selection based on condition
 
-You can select multiple treegrid rows based on condition by using the [`selectRows`](../../api/treegrid/#selectrows) method.
+You can select multiple treegrid rows based on condition by using the [`selectRows`](../../api/treegrid#selectrows) method.
 
 In the following code, the rows which contains `taskID` value as `3` and `5` are selected at initial rendering.
 
@@ -108,7 +107,7 @@ In the following code, the rows which contains `taskID` value as `3` and `5` are
 
 ## Toggle selection
 
-The Toggle selection allows to perform selection and unselection of the particular row or cell. To [`enable toggle`](../../api/treegrid/selectionSettings/#enabletoggle) selection, set enableToggle property of the selectionSettings as true. If you click on the selected row or cell then it will be unselected and vice versa.
+The Toggle selection allows to perform selection and unselection of the particular row or cell. To [`enable toggle`](../../api/treegrid/selectionSettings#enabletoggle) selection, set enableToggle property of the selectionSettings as true. If you click on the selected row or cell then it will be unselected and vice versa.
 
 {% if page.publishingplatform == "typescript" %}
 

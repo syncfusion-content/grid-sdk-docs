@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Unbound Columns in MAUI DataGrid control | Syncfusion®
-description: Learn here all about unbound columns support in Syncfusion® MAUI DataGrid (SfDataGrid) control and more about it.
+title: Unbound Column in .NET MAUI Data Grid | Syncfusion®
+description: Learn how to create and customize unbound columns in Syncfusion® .NET MAUI Data Grid to display calculated, formatted, or custom data values.
 platform: grid-sdk
 control: SfDataGrid
 documentation: UG

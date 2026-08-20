@@ -3,8 +3,7 @@ layout: post
 title: Grouping in JavaScript Grid control | Syncfusion
 description: Learn here all about Grouping in Syncfusion JavaScript Grid control of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
-control: Grouping 
-publishingplatform: grid-sdk
+control: Grouping
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---

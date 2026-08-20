@@ -12,7 +12,7 @@ domainurl: https://help.syncfusion.com/grid-sdk
 
 ## Built-in toolbar items
 
-Built-in toolbar items perform standard TreeGrid actions and can be added by setting the [`toolbar`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#toolbar) property to a collection of built-in item names. Each built-in item renders as a button with an icon and text.
+Built-in toolbar items perform standard TreeGrid actions and can be added by setting the [`toolbar`](https://ej2.syncfusion.com/angular/documentation/api/treegrid#toolbar) property to a collection of built-in item names. Each built-in item renders as a button with an icon and text.
 
 The following table lists available built-in toolbar items and their corresponding actions:
 
@@ -45,11 +45,11 @@ The following table lists available built-in toolbar items and their correspondi
 
 {% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/treegrid/edit-toolbar-cs38" %}
 
-> * The [`toolbar`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#toolbar) property supports both built-in and custom toolbar items.
+> * The [`toolbar`](https://ej2.syncfusion.com/angular/documentation/api/treegrid#toolbar) property supports both built-in and custom toolbar items.
 
 ## Custom toolbar component in a specific position
 
-By default, custom toolbar items are positioned on the left. Change their position using the [`align`](https://ej2.syncfusion.com/angular/documentation/api/toolbar/itemModel/#align) property. In the following example, the Collapse All toolbar item is aligned to the right and Expand All to the left.
+By default, custom toolbar items are positioned on the left. Change their position using the [`align`](https://ej2.syncfusion.com/angular/documentation/api/toolbar/itemModel#align) property. In the following example, the Collapse All toolbar item is aligned to the right and Expand All to the left.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

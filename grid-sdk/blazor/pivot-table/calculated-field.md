@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Calculated Field in Blazor Pivot Table Component | Syncfusion®
-description: Learn how to create custom calculated fields in Blazor Pivot Table component with examples and much more details.
-platform: grid-sdk
+title: Calculated Field in Blazor Pivot Table | Syncfusion
+description: Learn how the Blazor Pivot Table creates custom value fields from existing fields with formulas via the built-in dialog or the API.
+platform: Blazor
 control: Pivot Table
 documentation: ug
 ---
 
-# Calculated Field in Blazor Pivot Table Component
+# Calculated Field in Blazor Pivot Table
 
 The calculated field feature enables users to create custom value fields using mathematical formulas and existing fields from their data source. Users can perform complex calculations with basic arithmetic operators and seamlessly integrate these custom fields into their pivot table for enhanced data visualization and reporting.
 
@@ -208,7 +208,7 @@ To format calculated field values in your code, use the [PivotViewFormatSettings
 
 To apply formatting to calculated field values via the user interface, use the built-in "Format" dropdown available in the calculated field dialog. This dropdown provides the following predefined format options:
 
-* **Standard** - Displays numbers in their basic numeric form.
+* **Standard** - Displays numbers using the default numeric format (equivalent to the `N` format).
 * **Currency** - Displays numbers as currency values.
 * **Percentage** - Displays numbers as percentage values.
 * **Custom** - Denotes the custom format. For example: "C2". This shows the value "9584.3" as "$9584.30."
@@ -255,7 +255,7 @@ Syntax: X / Y
 * `^` – power operator.
 
 ```typescript
-Syntax: X^2
+Syntax: X^Y
 ```
 
 * `<` - less than operator.
@@ -309,7 +309,7 @@ Syntax: X & Y
 * `?` – conditional operator.
 
 ```typescript
-Syntax: condition ? then : else
+Syntax: condition ? valueIfTrue : valueIfFalse
 ```
 
 * `Min` – function that returns the minimum value.
@@ -367,6 +367,8 @@ Syntax: Max(number1, number2)
 ![Blazor PivotTable woth Conditional Calculate Field](images/blazor-pivottable-conditional-calculated-field.webp)
 
 ## Event
+
+The Pivot Table provides the following events to monitor calculated field operations. Each event lets you track, validate, or intercept a specific stage of the user interaction lifecycle.
 
 ### CalculatedFieldCreate
 
@@ -665,4 +667,4 @@ The [OnActionFailure](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Pi
 }
 ```
 
-N> You can refer to the [Blazor Pivot Table](https://www.syncfusion.com/blazor-components/blazor-pivot-table) feature tour page for its groundbreaking feature representations. You can also explore the [Blazor Pivot Table example](https://blazor.syncfusion.com/demos/pivot-table/default-functionalities?theme=bootstrap5) to know how to render and configure the pivot table.
+N> You can refer to the [Blazor Pivot Table](https://www.syncfusion.com/blazor-components/blazor-pivot-table) feature tour page for its groundbreaking feature representations. You can also explore the [Blazor Pivot Table example](https://blazor.syncfusion.com/demos/pivot-table/default-functionalities?theme=fluent2) to know how to render and configure the pivot table.

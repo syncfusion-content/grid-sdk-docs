@@ -16,7 +16,7 @@ The [Vue Data Grid](https://www.syncfusion.com/vue-components/vue-grid) offers t
 
 The PDF export functionality allows you to export Grid columns that include images, hyperlinks, and custom text to a PDF document.
 
-In the following sample, the hyperlinks and images are exported to PDF using [hyperlink](https://ej2.syncfusion.com/vue/documentation/api/grid/pdfQueryCellInfoEventArgs/#hyperlink) and [image](https://ej2.syncfusion.com/vue/documentation/api/grid/pdfQueryCellInfoEventArgs/#image) properties in the [pdfQueryCellInfo](https://ej2.syncfusion.com/vue/documentation/api/grid/#pdfquerycellinfo) event.
+In the following sample, the hyperlinks and images are exported to PDF using [hyperlink](https://ej2.syncfusion.com/vue/documentation/api/grid/pdfQueryCellInfoEventArgs#hyperlink) and [image](https://ej2.syncfusion.com/vue/documentation/api/grid/pdfQueryCellInfoEventArgs#image) properties in the [pdfQueryCellInfo](https://ej2.syncfusion.com/vue/documentation/api/grid#pdfquerycellinfo) event.
 
 > PDF Export supports base64 string to export the images.
 
@@ -39,7 +39,7 @@ In the following sample, the hyperlinks and images are exported to PDF using [hy
             </template>
             <template v-slot:mailTemplate="{data}">
                 <div class="link">
-                  <a :href="'mailto:'+data.EmailID">{{data.EmailID}}</a>
+                  <a :href="'mailto:'+data.EmailID" aria-label="Send email">{{data.EmailID}}</a>
                 </div>
             </template>
     </ejs-grid>
@@ -111,7 +111,7 @@ const grid = ref(null);
             </template>
             <template v-slot:mailTemplate="{data}">
                 <div class="link">
-                  <a :href="'mailto:'+data.EmailID">{{data.EmailID}}</a>
+                  <a :href="'mailto:'+data.EmailID" aria-label="Send email">{{data.EmailID}}</a>
                 </div>
             </template>
     </ejs-grid>
@@ -196,12 +196,12 @@ By default, the grid will export the parent grid with expanded detail rows alone
 | All      | Exports the parent grid with all the detail rows. |
 | None     | Exports the parent grid alone. |
 
-The detail rows in the exported PDF can be customized or formatted using the [exportDetailTemplate](https://ej2.syncfusion.com/vue/documentation/api/grid/#exportdetailtemplate) event. In this event, the detail rows of the PDF document are formatted in accordance with their parent row details.
+The detail rows in the exported PDF can be customized or formatted using the [exportDetailTemplate](https://ej2.syncfusion.com/vue/documentation/api/grid#exportdetailtemplate) event. In this event, the detail rows of the PDF document are formatted in accordance with their parent row details.
 
-In the following sample, the detail row content is formatted by specifying the [columnCount](https://ej2.syncfusion.com/vue/documentation/api/grid/detailTemplateProperties/#columncount), [columnHeader](https://ej2.syncfusion.com/vue/documentation/api/grid/detailTemplateProperties/#columnheader), and [rows](https://ej2.syncfusion.com/vue/documentation/api/grid/detailTemplateProperties/#rows) properties using its [parentRow](https://ej2.syncfusion.com/vue/documentation/api/grid/exportDetailTemplateEventArgs/#parentrow) details. This allows for the creation of detail rows in the PDF document. Additionally, custom styles can be applied to specific cells using the [style](https://ej2.syncfusion.com/vue/documentation/api/grid/detailTemplateCell/#style) property.
+In the following sample, the detail row content is formatted by specifying the [columnCount](https://ej2.syncfusion.com/vue/documentation/api/grid/detailTemplateProperties#columncount), [columnHeader](https://ej2.syncfusion.com/vue/documentation/api/grid/detailTemplateProperties#columnheader), and [rows](https://ej2.syncfusion.com/vue/documentation/api/grid/detailTemplateProperties#rows) properties using its [parentRow](https://ej2.syncfusion.com/vue/documentation/api/grid/exportDetailTemplateEventArgs#parentrow) details. This allows for the creation of detail rows in the PDF document. Additionally, custom styles can be applied to specific cells using the [style](https://ej2.syncfusion.com/vue/documentation/api/grid/detailTemplateCell#style) property.
 
-> * If `columnCount` is not provided, the columns in the detail row of the PDF grid will be generated based on the count of the `columnHeader`/`rows` first row's [cells](https://ej2.syncfusion.com/vue/documentation/api/grid/detailTemplateRow/#cells).
-> * When using [rowSpan](https://ej2.syncfusion.com/vue/documentation/api/grid/detailTemplateCell/#rowspan), it is Essential<sup style="font-size:70%">&reg;</sup> to provide the cell's [index](https://ej2.syncfusion.com/vue/documentation/api/grid/detailTemplateCell/#index) for proper functionality.
+> * If `columnCount` is not provided, the columns in the detail row of the PDF grid will be generated based on the count of the `columnHeader`/`rows` first row's [cells](https://ej2.syncfusion.com/vue/documentation/api/grid/detailTemplateRow#cells).
+> * When using [rowSpan](https://ej2.syncfusion.com/vue/documentation/api/grid/detailTemplateCell#rowspan), it is Essential<sup style="font-size:70%">&reg;</sup> to provide the cell's [index](https://ej2.syncfusion.com/vue/documentation/api/grid/detailTemplateCell#index) for proper functionality.
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
@@ -244,7 +244,7 @@ In the following sample, the detail row content is formatted by specifying the [
                 <tr>
                     <td>
                         <span class="link">
-                            Contact: <a :href="'mailto:'+data.Contact">{{data.Contact}}</a>
+                            Contact: <a :href="'mailto:'+data.Contact" aria-label="Send email to contact">{{data.Contact}}</a>
                         </span>
                     </td>
                 </tr>
@@ -464,7 +464,7 @@ const grid = ref(null);
                 <tr>
                     <td>
                         <span class="link">
-                            Contact: <a :href="'mailto:'+data.Contact">{{data.Contact}}</a>
+                            Contact: <a :href="'mailto:'+data.Contact" aria-label="Send email to contact">{{data.Contact}}</a>
                         </span>
                     </td>
                 </tr>
@@ -668,7 +668,7 @@ components: {
 
 The PDF export feature enables exporting of Grid with a caption template to an PDF document.
 
-In the following sample, the customized caption text is exported to PDF using [captionText](https://ej2.syncfusion.com/vue/documentation/api/grid/exportGroupCaptionEventArgs/#captiontext) property in the [exportGroupCaption](https://ej2.syncfusion.com/vue/documentation/api/grid/#exportgroupcaption) event.
+In the following sample, the customized caption text is exported to PDF using [captionText](https://ej2.syncfusion.com/vue/documentation/api/grid/exportGroupCaptionEventArgs#captiontext) property in the [exportGroupCaption](https://ej2.syncfusion.com/vue/documentation/api/grid#exportgroupcaption) event.
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}

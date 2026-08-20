@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Globalization in React Pivot Table component | Syncfusion
-description: Learn here all about Globalization and localization in Syncfusion React Pivot Table component of Syncfusion Essential JS 2 and more.
-control: Globalization and localization
-platform: grid-sdk
+title: Globalization in React Pivot Table | Syncfusion
+description: Learn how the React Pivot Table supports globalization and localization for culture-specific number, date, and currency formats, plus translated UI strings.
+control: Pivot Table
+platform: ej2-react
 documentation: ug
-domainurl: https://help.syncfusion.com/grid-sdk
+domainurl: ##DomainURL##
 ---
 
-# Globalization and localization in React Pivot Table component
+# Globalization and localization in React Pivot Table
 
 The Pivot Table helps users view and interact with data in their own language and regional format. This means users from different countries can easily read and understand the data because dates, numbers, and words are shown in a way that feels familiar to them.
 
@@ -26,6 +26,8 @@ For more details:
 
 ## Load CLDR-Data to the application
 
+> **Note:** Modern EJ2 applications use the `loadCldr` method from `@syncfusion/ej2-base` to load CLDR JSON data from the `cldr-data` npm package, which simplifies the setup. The steps below describe the manual approach for legacy applications.
+
 * Open command prompt in your machine.
 
 * Run the following command in command prompt.
@@ -36,17 +38,17 @@ For more details:
     For example: cd /d  E:\react\WebApplication
     ```
 
-* Make sure that you have installed `Node and NPM` in your machine before installing the `CLDR-Data`.
+* Make sure that you have installed Node.js and npm on your machine before installing the `CLDR-Data` package.
 
-* To check if you have `Node`, run this command in command prompt.
+* To check if you have Node.js installed, run this command in the command prompt.
 
     ```
     node -v
     ```
 
-* If `Node` is not installed, then you can download and install the `Node` from this [location](https://nodejs.org/en/).
+* If Node.js is not installed, then you can download and install it from the [Node.js website](https://nodejs.org/en/).
 
-* To confirm if you have `NPM`, run this command in command prompt.
+* To confirm if you have npm installed, run this command in the command prompt.
 
     ```
     npm -v
@@ -88,8 +90,8 @@ By default, all Syncfusion components use English culture ('en-US'). To use a di
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs110" %}
 
 > * In the above sample, `Amount` field is formatted by [`NumberFormatOptions`](https://ej2.syncfusion.com/react/documentation/common/globalization/internationalization#manipulating-numbers). For date formats, the value strings are formatted by [`DateFormatOptions`](https://ej2.syncfusion.com/react/documentation/common/globalization/internationalization#manipulating-datetime).
-> * By default, [`locale`](https://ej2.syncfusion.com/react/documentation/api/pivotview/index-default#locale) value is `en-US`. If you want to change the `en-US` culture to a different culture, you have to change  the [`locale`](https://ej2.syncfusion.com/react/documentation/api/pivotview/index-default#locale) accordingly.
-> * Also, you will find more details about support format string for number formats and data formats [`here`](https://ej2.syncfusion.com/react/documentation/common/globalization/internationalization#supported-format-string).
+> * By default, [`locale`](https://ej2.syncfusion.com/react/documentation/api/pivotview/index-default#locale) value is `en-US`. If you want to change the `en-US` culture to a different culture, you have to change the [`locale`](https://ej2.syncfusion.com/react/documentation/api/pivotview/index-default#locale) accordingly.
+> * You can find more details about supported format strings for number formats and date formats [`here`](https://ej2.syncfusion.com/react/documentation/common/globalization/internationalization#supported-format-string).
 
 ### Decimal separators
 

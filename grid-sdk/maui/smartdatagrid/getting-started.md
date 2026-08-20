@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Getting Started with .NET MAUI Smart DataGrid | Syncfusion®
-description: Learn about getting started with Syncfusion .NET MAUI Smart DataGrid (SfDataGrid) control, its elements, and more here.
+title: Getting Started with .NET MAUI Smart Data Grid | Syncfusion®
+description: Learn how to get started with the Syncfusion .NET MAUI Smart Data Grid control. Explore setup, features, examples, and customization options
 platform: grid-sdk
 control: SfSmartDataGrid
 documentation: ug

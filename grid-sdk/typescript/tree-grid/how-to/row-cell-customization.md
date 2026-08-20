@@ -1,19 +1,18 @@
 ---
 layout: post
-title: Row cell customization in TypeScript Treegrid control | Syncfusion
-description: Learn here all about Row cell customization in Syncfusion TypeScript Treegrid control of Syncfusion Essential JS 2 and more.
+title: TypeScript TreeGrid Row Cell Customization | Syncfusion
+description: Learn how to customize rows and cells in the TypeScript TreeGrid using queryCellInfo and rowDataBound events.
 platform: grid-sdk
-control: Row cell customization 
-publishingplatform: grid-sdk
+control: Row cell customization
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Row cell customization in TypeScript Treegrid control
+# Row Cell Customization in TypeScript TreeGrid
 
-In Tree Grid we can customize the row and cell using [`queryCellInfo`](../api/treegrid/#querycellinfo) and [`rowDataBound`](../api/treegrid/#rowdatabound) events of Tree Grid.
+In Tree Grid we can customize the row and cell using [`queryCellInfo`](../api/treegrid#querycellinfo) and [`rowDataBound`](../api/treegrid#rowdatabound) events of Tree Grid.
 
-In the below demo, we customize and show the command buttons only for the parent rows using [`queryCellInfo`](../api/treegrid/#querycellinfo) and [`rowDataBound`](../api/treegrid/#rowdatabound) events of Tree Grid.
+In the below demo, we customize and show the command buttons only for the parent rows using [`queryCellInfo`](../api/treegrid#querycellinfo) and [`rowDataBound`](../api/treegrid#rowdatabound) events of Tree Grid.
 
 {% if page.publishingplatform == "typescript" %}
 

@@ -1,17 +1,16 @@
 ---
 layout: post
-title: Batch editing in JavaScript Treegrid control | Syncfusion
-description: Learn here all about Batch editing in Syncfusion JavaScript Treegrid control of Syncfusion Essential JS 2 and more.
+title: JavaScript TreeGrid Batch Editing | Syncfusion
+description: Learn how to use batch editing in JavaScript TreeGrid to edit multiple cells, perform bulk updates, and save changes efficiently.
 platform: grid-sdk
-control: Batch editing 
-publishingplatform: grid-sdk
+control: Batch editing
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Batch editing in JavaScript Treegrid control
+# Batch Editing in JavaScript TreeGrid
 
-In Batch edit mode, when you double-click on the Tree Grid cell, then the target cell changed to edit state. You can bulk save (added, changed and deleted data in the single request) to data source by click on the toolbar's `Update` button or by externally invoking the [`batchSave`](../../api/treegrid/edit/#batchsave) method. To enable Batch edit, set the [`editSettings.mode`](../../api/grid/editSettings/#mode) as `Batch`.
+In Batch edit mode, when you double-click on the Tree Grid cell, then the target cell changed to edit state. You can bulk save (added, changed and deleted data in the single request) to data source by click on the toolbar's `Update` button or by externally invoking the [`batchSave`](../../api/treegrid/edit#batchsave) method. To enable Batch edit, set the [`editSettings.mode`](../../api/grid/editSettings#mode) as `Batch`.
 
 {% if page.publishingplatform == "typescript" %}
 

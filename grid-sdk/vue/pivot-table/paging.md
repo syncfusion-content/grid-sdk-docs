@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Paging in Vue Pivot Table component | Syncfusion
-description: Learn here all about Paging in Syncfusion Vue Pivot Table component of Syncfusion Essential JS 2 and more.
+title: Paging in Vue Pivot Table | Syncfusion
+description: Learn how the Vue Pivot Table splits large data into row and column pages via enablePaging, with custom page sizes and a built-in pager UI for navigation.
 control: Paging 
-platform: grid-sdk
+platform: ej2-vue
 documentation: ug
-domainurl: https://help.syncfusion.com/grid-sdk
+domainurl: ##DomainURL##
 ---
 
-# Paging in Vue Pivot Table component
+# Paging in Vue Pivot Table
 
 The paging feature in the Pivot Table component is designed to handle large datasets efficiently by dividing the data into manageable pages. This prevents performance issues associated with rendering large amounts of data at once, allowing users to navigate through rows and columns page by page.
 

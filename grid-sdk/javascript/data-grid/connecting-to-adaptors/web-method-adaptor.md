@@ -4,8 +4,7 @@ title: Bind data & perform CRUD with WebMethodAdaptor in Syncfusion Grid
 description: Learn here all about how to bind data and perform CRUD action using WebMethodAdaptor in Syncfusion JavaScript Grid control.
 platform: grid-sdk
 control: grid
-keywords: Adaptors, webmethodadaptor, web method adaptor, remotedata 
-publishingplatform: grid-sdk
+keywords: Adaptors, webmethodadaptor, web method adaptor, remotedata
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---

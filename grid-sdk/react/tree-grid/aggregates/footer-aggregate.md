@@ -10,7 +10,7 @@ domainurl: https://help.syncfusion.com/grid-sdk
 
 # Footer aggregate in React TreeGrid 
 
-Footer aggregate values are calculated across all rows and displayed in footer cells. Render footer aggregates using the [footerTemplate](https://ej2.syncfusion.com/react/documentation/api/treegrid/aggregateColumnModel/#footertemplate) property.
+Footer aggregate values are calculated across all rows and displayed in footer cells. Render footer aggregates using the [footerTemplate](https://ej2.syncfusion.com/react/documentation/api/treegrid/aggregateColumnModel#footertemplate) property.
 
 
 {% tabs %}
@@ -23,11 +23,11 @@ Footer aggregate values are calculated across all rows and displayed in footer c
 {% endtabs %}
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/treegrid/aggregate-cs3" %}
 
-> Access aggregate values inside the template using their corresponding [type](https://ej2.syncfusion.com/react/documentation/api/treegrid/aggregateColumnModel/#type) name.
+> Access aggregate values inside the template using their corresponding [type](https://ej2.syncfusion.com/react/documentation/api/treegrid/aggregateColumnModel#type) name.
 
 ## How to format aggregate value
 
-Format the aggregate result using the [format](https://ej2.syncfusion.com/react/documentation/api/treegrid/aggregateColumnModel/#format) property.
+Format the aggregate result using the [format](https://ej2.syncfusion.com/react/documentation/api/treegrid/aggregateColumnModel#format) property.
 
 {% tabs %}
 {% highlight js tabtitle="app.jsx" %}

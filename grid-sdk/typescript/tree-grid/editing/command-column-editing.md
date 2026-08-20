@@ -1,17 +1,16 @@
 ---
 layout: post
-title: Command column editing in TypeScript Treegrid control | Syncfusion
-description: Learn here all about Command column editing in Syncfusion TypeScript Treegrid control of Syncfusion Essential JS 2 and more.
+title: TypeScript TreeGrid Command Column Editing | Syncfusion
+description: Learn how to use command column editing in the TypeScript TreeGrid to add CRUD and custom action buttons for row-level operations.
 platform: grid-sdk
-control: Command column editing 
-publishingplatform: grid-sdk
+control: Command column editing
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Command column editing in TypeScript Treegrid control
+# Command Column Editing in TypeScript TreeGrid
 
-The command column provides an option to add CRUD action buttons in a column. This can be defined by the [`column.commands`](../../api/treegrid/column/#commands) property.
+The command column provides an option to add CRUD action buttons in a column. This can be defined by the [`column.commands`](../../api/treegrid/column#commands) property.
 
 The available built-in command buttons are:
 
@@ -51,7 +50,7 @@ The available built-in command buttons are:
 
 ## Custom command
 
- The custom command buttons can be added in a column by using the [`column.commands`](../../api/treegrid/column/#commands) property and the action for the custom buttons can be defined in the [`buttonOption.click`](../../api/grid/commandButtonOptions/#click) event.
+ The custom command buttons can be added in a column by using the [`column.commands`](../../api/treegrid/column#commands) property and the action for the custom buttons can be defined in the [`buttonOption.click`](../../api/grid/commandButtonOptions#click) event.
 
 {% if page.publishingplatform == "typescript" %}
 
