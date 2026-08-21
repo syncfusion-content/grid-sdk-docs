@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Data Virtualization in WinUI DataGrid control | Syncfusion®
-description: Learn here all about Data Virtualization support in Syncfusion® WinUI DataGrid(SfDataGrid) control and more.
+title: Data Virtualization in WinUI Data Grid | Syncfusion®
+description: Data virtualization in Data Grid improves performance by loading and processing large datasets on demand with efficient data retrieval techniques.
 platform: grid-sdk
-control: DataGrid
+control: Data Grid
 documentation: ug
 ---
 
-# Data Virtualization in WinUI DataGrid
+# Data Virtualization in WinUI Data Grid
 
 SfDataGrid provides support to handle the large amount of data through built-in virtualization features. With Data virtualization, [SfDataGrid.View](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_View) process the data in on-demand for better performance while loading large amount of data. Below are the different virtualization concepts available,
 
@@ -122,7 +122,7 @@ In the below code, `IncrementalList` is initialized by passing Action to its con
 
 {% tabs %}
 {% highlight c# %}
-Public class ViewModel
+public class ViewModel
 {
 
     public ViewModel()
@@ -155,7 +155,7 @@ Public class ViewModel
 
 ### Load data using ISupportIncrementalLoading
 
-You can fetch the data in some user action instead of scrolling using [IncrementalList.LoadItems](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.IncrementalList-1.html#Syncfusion_UI_Xaml_Grid_IncrementalList_1_LoadItems_System_Collections_Generic_IEnumerable__0__) method.
+You can fetch the data in some user action instead of scrolling using [IncrementalList.LoadItems](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.IncrementalList-1.html#Syncfusion_UI_Xaml_DataGrid_IncrementalList_1_LoadItems_System_Collections_Generic_IEnumerable__0__) method.
 
 In the below code, data fetched when you click the `Load Items` button.
 
@@ -238,7 +238,7 @@ public class ViewModel : INotifyPropertyChanged
 
         await Task.Run(new Action(() =>
         {
-            DataServiceQuery<Order> query = (northwindEntity.Orders as 
+            DataServiceQuery<Order> query = northwindEntity.Orders as DataServiceQuery<Order>;
 
             query = query.Skip<Order>(baseIndex).Take<Order>((int)count) as DataServiceQuery<Order>;
 

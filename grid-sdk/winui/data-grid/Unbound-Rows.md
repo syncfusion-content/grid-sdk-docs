@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Unbound Rows in WinUI DataGrid control | Syncfusion®
-description: Learn here all about Unbound Rows support in Syncfusion® WinUI DataGrid(SfDataGrid) control with positioning support and more.
+title: Unbound Rows in WinUI Data Grid | Syncfusion®
+description: Unbound rows in Data Grid display custom data independently of the data source and support flexible positioning and data entry scenarios.
 platform: grid-sdk
-control: DataGrid
+control: Data Grid
 documentation: ug
 ---
 
-# Unbound Rows in WinUI DataGrid
+# Unbound Rows in WinUI Data Grid
 
 SfDataGrid allows you to add **additional rows** at top and also bottom of the SfDataGrid which are **not bound with data object** from underlying data source. You can add unbound rows using [SfDataGrid.UnboundRows](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_UnboundRows) collection property. You can add any no of unbound rows to SfDataGrid. Unbound rows can be printed.
 
@@ -114,7 +114,7 @@ You can get or set the [GridUnboundRowEventsArgs.Value](https://help.syncfusion.
                        SelectionMode="Multiple" >                        
     <dataGrid:SfDataGrid.UnboundRows>
         <dataGrid:GridUnboundRow  Position="Top" />
-    </dataGrid:SfDataGrid.UnBoundRows>                        
+    </dataGrid:SfDataGrid.UnboundRows>                        
 </dataGrid:SfDataGrid>
 {% endhighlight %}
 {% endtabs %}
@@ -123,7 +123,7 @@ For example, now unbound row populated based on selected items in SfDataGrid.
 
 {% tabs %}
 {% highlight c# %}
-var collection = (this.dataGrid.DataContext as ViewModel).Orders;
+var collection = (this.sfDataGrid.DataContext as ViewModel).Orders;
 this.sfDataGrid.SelectedItems.Add(collection[4]);
 this.sfDataGrid.SelectedItems.Add(collection[5]);
 this.sfDataGrid.SelectedItems.Add(collection[7]);
