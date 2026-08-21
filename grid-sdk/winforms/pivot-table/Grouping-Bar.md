@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Grouping Bar in Windows Forms Pivot Grid control | Syncfusion®
-description: Learn about Grouping Bar support in Syncfusion® Windows Forms Pivot Grid control, its elements and more details.
+title: Grouping Bar in Windows Forms Pivot Table | Syncfusion®
+description: Manage fields in Syncfusion® Windows Forms Pivot Table control using the grouping bar to filter, sort, reorder, and remove items interactively.
 platform: grid-sdk
-control: Pivot Grid
+control: Pivot Table
 documentation: ug
 ---
 
-# Grouping Bar in Windows Forms Pivot Grid
+# Grouping Bar in Windows Forms Pivot Table
 
 The grouping bar allows users to slice and dice the pivot fields between column, row, value and filter header areas. It also allows to add, rearrange or remove the fields to show the data in the pivot grid exactly the way you want.
 
