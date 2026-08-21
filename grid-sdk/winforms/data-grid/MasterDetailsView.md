@@ -2880,4 +2880,4 @@ Limitations are:
 
 [How to collapse the details view datagrid inside the Groups in DataGrid (SfDataGrid)](https://support.syncfusion.com/kb/article/9772/how-to-collapse-the-details-view-datagrid-inside-the-groups-in-datagrid)
 
-[How to apply alternate backcolor for the rows in both parent and child grid in WinForms DataGrid (SfDataGrid)](https://support.syncfusion.com/kb/article/9045/how-to-apply-alternate-backcolor-for-the-rows-in-both-parent-and-child-grid-in-winforms)
+[How to apply alternate back color for the rows in both parent and child grid in WinForms DataGrid (SfDataGrid)](https://support.syncfusion.com/kb/article/9045/how-to-apply-alternate-backcolor-for-the-rows-in-both-parent-and-child-grid-in-winforms)
