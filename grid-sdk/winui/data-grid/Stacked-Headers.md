@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Stacked Headers in WinUI DataGrid control | Syncfusion®
-description: Learn here all about Stacked Headers support in Syncfusion® WinUI DataGrid(SfDataGrid) control with custom support and more.
+title: Stacked Headers in WinUI Data Grid | Syncfusion®
+description: Stacked headers in Data Grid group related columns under custom header rows, improving organization and enhancing data readability.
 platform: grid-sdk
-control: DataGrid
+control: Data Grid
 documentation: ug
 ---
 
-# Stacked Headers in WinUI DataGrid
+# Stacked Headers in WinUI Data Grid
 
 SfDataGrid supports additional unbound header rows known as `stacked header rows` that span across the DataGrid columns using [StackedHeaderRows](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.SfGridBase.html#Syncfusion_UI_Xaml_Grids_SfGridBase_StackedHeaderRows). You can group one or more columns under each stacked header.
 
@@ -45,7 +45,7 @@ sfDataGrid.StackedHeaderRows.Add(stackedHeaderRow1);
 
 var stackedHeaderRow2 = new StackedHeaderRow();
 stackedHeaderRow2.StackedColumns.Add(new StackedColumn() { ChildColumns = "OrderID,OrderDate", HeaderText = "Order Details", MappingName = "OrderDetails" });
-stackedHeaderRow2.StackedColumns.Add(new StackedColumn() { ChildColumns = "Quantity,UnitPrice", HeaderText = "Product Details", MappingName = "ProductrDetails" });
+stackedHeaderRow2.StackedColumns.Add(new StackedColumn() { ChildColumns = "Quantity,UnitPrice", HeaderText = "Product Details", MappingName = "ProductDetails" });
 stackedHeaderRow2.StackedColumns.Add(new StackedColumn() { ChildColumns = "ShipCity,Country", HeaderText = "Shipping Details", MappingName = "ShippingDetails" });
 sfDataGrid.StackedHeaderRows.Add(stackedHeaderRow2);
 {% endhighlight %}
@@ -191,11 +191,11 @@ foreach (var stackedColumnName in removingColumns.ToList())
         removingColumns.Remove(stackedColumnName);
     }
     else
+    {
         childColumns = childColumns + stackedColumnName + ",";
     }
     this.sfDataGrid.StackedHeaderRows[1].StackedColumns[0].ChildColumns = childColumns;
 }
-this.sfDataGrid.StackedHeaderRows[1].StackedColumns[0].ChildColumns = childColumns;
 {% endhighlight %}
 {% endtabs %}
 

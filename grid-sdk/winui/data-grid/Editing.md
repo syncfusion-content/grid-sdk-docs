@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Editing in WinUI DataGrid control | Syncfusion®
-description: Learn here all about Editing support in Syncfusion® WinUI DataGrid(SfDataGrid) control with cursor placement and more.
+title: Editing in WinUI Data Grid | Syncfusion®
+description: Editing in Data Grid enables users to modify cell values, validate input, update data, and control editing behavior efficiently.
 platform: grid-sdk
-control: DataGrid
+control: Data Grid
 documentation: ug
 ---
 
 
 
-# Editing in WinUI DataGrid
+# Editing in WinUI Data Grid
 
 SfDataGrid provides support for editing and it can be enabled or disabled by setting [SfDataGrid.AllowEditing](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.SfGridBase.html#Syncfusion_UI_Xaml_Grids_SfGridBase_AllowEditing) property.
 
@@ -21,7 +21,7 @@ SfDataGrid provides support for editing and it can be enabled or disabled by set
                         ItemsSource="{Binding Employees}"/>
 {% endhighlight %}
 {% highlight c# %}
-dataGrid.AllowEditing = true;
+sfDataGrid.AllowEditing = true;
 {% endhighlight %}
 {% endtabs %}
 
@@ -46,7 +46,7 @@ N> It is mandatory to set the [NavigationMode](https://help.syncfusion.com/cr/wi
 
 ## Entering into edit mode
 
-You can enter into edit mode by pressing <kbd>F2</kbd> key or clicking (touch also supported) the cell. You can allow users to edit the cell in single click (OnTap) or double click (OnDoubleTab) by setting [EditTrigger](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.SfGridBase.html#Syncfusion_UI_Xaml_Grids_SfGridBase_EditTrigger) property.
+You can enter into edit mode by pressing <kbd>F2</kbd> key or clicking (touch also supported) the cell. You can allow users to edit the cell in single click (OnTap) or double click (OnDoubleTap) by setting [EditTrigger](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.SfGridBase.html#Syncfusion_UI_Xaml_Grids_SfGridBase_EditTrigger) property.
 
 
 {% tabs %}
