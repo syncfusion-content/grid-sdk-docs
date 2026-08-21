@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Show Calculations as Columns in Windows Forms Pivot Table | Syncfusion®
+title: Show Calculations as Columns in WindowsForms Pivot Table | Syncfusion®
 description: Show calculations as columns in Syncfusion® Windows Forms Pivot Table control using the ShowCalculationsAsColumns property or schema designer option.
 platform: grid-sdk
 control: Pivot Table
