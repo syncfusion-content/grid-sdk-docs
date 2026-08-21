@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Editing in WPF TreeGrid control | Syncfusion®
-description: Learn here all about Editing support in Syncfusion® WPF TreeGrid (SfTreeGrid) control, its elements and more.
+title: Editing in WPF TreeGrid | Syncfusion®
+description: Enable cell editing in TreeGrid with support for custom editors, edit modes, and validation during data updates.
 platform: grid-sdk
-control: SfTreeGrid
+control: TreeGrid
 documentation: ug
 ---
 
-# Editing in WPF TreeGrid (SfTreeGrid)
+# Editing in WPF TreeGrid
 
 SfTreeGrid provides support for editing and it can be enabled or disabled by setting [SfTreeGrid.AllowEditing](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_AllowEditing) property.
 
