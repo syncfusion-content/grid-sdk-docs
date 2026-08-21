@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Drill Operation in UWP Pivot Grid control | Syncfusion
-description: Learn here all about Drill Operation support in Syncfusion UWP Pivot Grid (SfPivotGrid) control and more.
+title: Drill Operation in UWP Pivot Table | Syncfusion®
+description: Drill Operation in Syncfusion® UWP Pivot Table control lets users drill down for detailed data or drill up for summaries, with multiple drill types supported.
 platform: grid-sdk
-control: SfPivotGrid
+control: Pivot Table
 documentation: ug
 ---
 
-# Drill Operation in UWP Pivot Grid (SfPivotGrid)
+# Drill Operation in UWP Pivot Table
 
 ## Drill down/Drill up
 
