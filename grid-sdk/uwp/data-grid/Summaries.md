@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Summaries in UWP DataGrid control | Syncfusion®
-description: Learn here all about Summaries support in Syncfusion® UWP DataGrid (SfDataGrid) control, its features and more.
+title: Summaries in UWP Data Grid | Syncfusion®
+description: Summaries in Data Grid display aggregate values such as count, sum, average, minimum, and maximum using table, group, caption, and custom summaries.
 platform: grid-sdk
-control: SfDataGrid
+control: Data Grid
 documentation: ug
 ---
 
-# Summaries in UWP DataGrid (SfDataGrid)
+# Summaries in UWP Data Grid
 
 SfDataGrid provides support to display the concise information about the data objects using summaries. SfDataGrid provides below three different types of summary rows.
 
@@ -1000,7 +1000,7 @@ this.sfDataGrid.TableSummaryRows.Add(tableSummaryRow2);
 {% endhighlight %}
 {% endtabs %}
 
-![Calculate summaries for selected records in WPF SfDataGrid](Summaries_images/Summaries_img19.png)
+![Calculate summaries for selected records in UWP SfDataGrid](Summaries_images/Summaries_img19.png)
 
 N> The `GridSummaryRow.CalculationUnit` takes higher priority than the `SfDataGrid.SummaryCalculationUnit`.
 

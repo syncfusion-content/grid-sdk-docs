@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Export To PDF in UWP DataGrid control | Syncfusion®
-description: Learn here all about Export To PDF support in Syncfusion® UWP DataGrid (SfDataGrid) control and more.
+title: Export To PDF in UWP Data Grid | Syncfusion®
+description: Export To PDF in Data Grid exports grid data to PDF documents while preserving content, layouts, formatting, and visual styles.
 platform: grid-sdk
-control: SfDataGrid
+control: Data Grid
 documentation: ug
 ---
 
 
-# Export To PDF in UWP DataGrid (SfDataGrid)
+# Export To PDF in UWP Data Grid
 
 SfDataGrid provides support to export data to PDF file. It also provides support for grouping, filtering, sorting, paging, unbound rows, merged cells, stacked headers and details View while exporting.
 
@@ -203,7 +203,7 @@ By default, group summaries in SfDataGrid will be exported to PDF. If you want t
 {% tabs %}
 {% highlight c# %}
 PdfExportingOptions options = new PdfExportingOptions();
-options.ExportGroupSummary = true;
+options.ExportGroupSummary = false;
 var document = this.dataGrid.ExportToPdf(options);
 StorageFile storageFile = await KnownFolders.PicturesLibrary.CreateFileAsync("Sample" + ".pdf", CreationCollisionOption.ReplaceExisting);
 
@@ -222,7 +222,7 @@ By default, table summaries in SfDataGrid will be exported to PDF. If you want t
 {% tabs %}
 {% highlight c# %}
 PdfExportingOptions options = new PdfExportingOptions();
-options.ExportTableSummary = true;
+options.ExportTableSummary = false;
 var document = this.dataGrid.ExportToPdf(options);
 StorageFile storageFile = await KnownFolders.PicturesLibrary.CreateFileAsync("Sample" + ".pdf", CreationCollisionOption.ReplaceExisting);
 

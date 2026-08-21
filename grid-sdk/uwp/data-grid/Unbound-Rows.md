@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Unbound Rows in UWP DataGrid control | Syncfusion®
-description: Learn here all about Unbound Rows support in Syncfusion® UWP DataGrid (SfDataGrid) control and more.
+title: Unbound Rows in UWP Data Grid | Syncfusion®
+description: Unbound Rows in Data Grid display custom rows for calculations, summaries, and additional information independent of the data source.
 platform: grid-sdk
-control: SfDataGrid
+control: Data Grid
 documentation: ug
 ---
 
-# Unbound Rows in UWP DataGrid (SfDataGrid)
+# Unbound Rows in UWP Data Grid
 
 SfDataGrid allows you to add additional rows at top and also bottom of the SfDataGrid which are not bound with data object from underlying data source. You can add unbound rows using [SfDataGrid.UnBoundRows](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_UnBoundRows) collection property. You can add any no of unbound rows to SfDataGrid. Unbound rows can be exported and printed.
 
@@ -212,11 +212,11 @@ You can customize the style of unbound row by writing style of TargetType [UnBou
 
 {% tabs %}
 {% highlight xaml %}
-<Window.Resources>    
+<Page.Resources>    
     <Style TargetType="syncfusion:UnBoundRowControl">
         <Setter Property="FontWeight" Value="Bold"/>
     </Style>        
-</Window.Resources>
+</Page.Resources>
 
 <syncfusion:SfDataGrid x:Name="dataGrid" 
                        ItemsSource="{Binding Orders}"    
@@ -236,11 +236,11 @@ You can customize the style of unbound row cell by writing style of TargetType [
 
 {% tabs %}
 {% highlight xaml %}
-<Window.Resources>    
+<Page.Resources>    
         <Style TargetType="syncfusion:GridUnBoundRowCell">
             <Setter Property="Foreground" Value="Red" />
         </Style>
-</Window.Resources>
+</Page.Resources>
 
 <syncfusion:SfDataGrid x:Name="dataGrid" 
                        ItemsSource="{Binding Orders}"

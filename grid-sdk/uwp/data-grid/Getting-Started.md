@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Getting Started with UWP DataGrid control | Syncfusion®
-description: Learn here about getting started with Syncfusion® UWP DataGrid (SfDataGrid) control, its elements and more.
+title: Getting Started with UWP Data Grid | Syncfusion®
+description: Learn how to get started with the Syncfusion® UWP Data Grid control. Explore setup, features, examples, and customization options.
 platform: grid-sdk
-control: SfDataGrid
+control: Data Grid
 documentation: ug
 ---
 
-# Getting Started with UWP DataGrid (SfDataGrid)
+# Getting Started with UWP Data Grid
 
 The SfDataGrid control for Universal Windows Platform is used to display collection of data in rows and columns. It includes editing and data shaping features (Sorting, grouping, filtering and etc) that allows the end users to easily manage the data.
  
@@ -118,7 +118,7 @@ You can refer [here](https://help.syncfusion.com/uwp/system-requirements) to kno
 
 ## Creating simple application with SfDataGrid
 
-In this walk through, you will create WPF application that contains SfDataGrid control. 
+In this walk through, you will create UWP application that contains SfDataGrid control. 
 
 1. [Creating project](#creating-the-project)
 2. [Adding control via Designer](#adding-control-via-designer)

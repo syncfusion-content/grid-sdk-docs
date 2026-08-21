@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Columns in UWP DataGrid control | Syncfusion®
-description: Learn here all about Columns support in Syncfusion® UWP DataGrid (SfDataGrid) control, its elements and more details. 
+title: Columns in UWP Data Grid | Syncfusion®
+description: Columns in Data Grid support auto-generation, custom column types, resizing, drag-and-drop, stacking headers, freezing, and flexible sizing options.
 platform: grid-sdk
-control: SfDataGrid
+control: Data Grid
 documentation: ug
 ---
 
-# Columns in UWP DataGrid (SfDataGrid)
+# Columns in UWP Data Grid
 
 SfDataGrid allows you to add or remove columns using [SfDataGrid.Columns](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_Columns) property. You can choose the columns to be added from built-in column types or you can create your own column and add to the `SfDataGrid.Columns`. 
 
@@ -1385,7 +1385,7 @@ Below code uses the `ColumnRatio` to apply the defined star width for each colum
                        ColumnSizer="Star"
                        AutoGenerateColumns="False">
                        
-    <syncfusioSSn:SfDataGrid.Columns>
+    <syncfusion:SfDataGrid.Columns>
         <syncfusion:GridTextColumn  HeaderText="Order ID"
                                     MappingName="OrderID"
                                     local:StarRatio.ColumnRatio="1" />
