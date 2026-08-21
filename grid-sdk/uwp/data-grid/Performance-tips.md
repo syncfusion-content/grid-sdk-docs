@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Performance tips in UWP DataGrid control | Syncfusion®
-description: Learn here all about Performance tips support in Syncfusion® UWP DataGrid (SfDataGrid) control and more.
+title: Performance Tips in UWP Data Grid | Syncfusion®
+description: Performance tips in Data Grid help optimize data loading, batch updates, filtering, summaries, column operations, and rendering for large datasets.
 platform: grid-sdk
-control: SfDataGrid
+control: Data Grid
 documentation: ug
 ---
 
-# Performance tips in UWP DataGrid (SfDataGrid)
+# Performance Tips in UWP Data Grid
 
 SfDataGrid provides various built-in options to optimize the performance when handling large amount of data or high frequency updates. 
 
@@ -134,7 +134,7 @@ SfDataGrid allows you to open filter popup in less time by setting [CanGenerateU
 
 {% tabs %}
 {% highlight xaml %}
-<Window.Resources>    
+<Page.Resources>    
     <Style TargetType="syncfusion:GridFilterControl">
         <Setter Property="FilterMode" Value="AdvancedFilter" />
     </Style>
@@ -142,7 +142,7 @@ SfDataGrid allows you to open filter popup in less time by setting [CanGenerateU
     <Style TargetType="syncfusion:AdvancedFilterControl">
         <Setter Property="CanGenerateUniqueItems" Value="False" />
     </Style>
-</Window.Resources>
+</Page.Resources>
 {% endhighlight %}
 {% endtabs %}
 
