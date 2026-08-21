@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Master Details View in WinForms DataGrid control | Syncfusion®
-description: This section explains about the Master-Details View in SfDataGrid, its represent the hierarchical data in the form of nested table.
+title: Master-Details View in Windows Forms Data Grid | Syncfusion®
+description: Master-Details View in Data Grid displays hierarchical data through nested tables and relationships for organized data navigation and management.
 platform: grid-sdk
-control: SfDataGrid
+control: Data Grid
 documentation: ug
 ---
 
-# Master Details View in Windows Forms DataGrid (SfDataGrid)
+# Master-Details View in Windows Forms Data Grid
 
 The [WinForms DataGrid](https://www.syncfusion.com/winforms-ui-controls/datagrid) (SfDataGrid) provides support to represent the hierarchical data in the form of nested tables by using Master-Details view. You can expand or collapse the nested table (DetailsViewDataGrid) by using an expander column in a row. You can also expand or collapse the nested table programmatically. The number of tables nested with relations are unlimited.
 
@@ -1463,7 +1463,7 @@ End Function
 {% endhighlight %}
 {% endtabs %}
 
-N> This event will be trigged only when the underlying data object contains relations otherwise, you must define a dummy relation to notify the DataGrid to fire this event.
+N> This event will be triggered only when the underlying data object contains relations otherwise, you must define a dummy relation to notify the DataGrid to fire this event.
 
 ## Defining properties for DetailsViewDataGrid
 
