@@ -5,7 +5,7 @@ description: Learn about the introduction of Syncfusion® Essential Studio WPF S
 platform: grid-sdk
 control: Smart Data Grid
 documentation: ug
-keywords: grid-sdk smart datagrid, ai datagrid grid-sdk, smart grid grid-sdk, ai gridview grid-sdk, grid-sdk smart datagrid, grid-sdk ai grid
+keywords: wpf smart datagrid, ai datagrid wpf, smart grid wpf, ai gridview wpf, wpf smart datagrid, wpf ai grid
 ---
 
 # About Syncfusion® WPF Smart Data Grid Control

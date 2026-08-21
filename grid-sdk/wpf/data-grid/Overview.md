@@ -1,7 +1,7 @@
 ---
 layout: post
 title: About Syncfusion® WPF Data Grid Control | Syncfusion®
-canonical_url: "https://www.syncfusion.com/grid-sdk-controls/datagrid"
+canonical_url: "https://www.syncfusion.com/wpf-controls/datagrid"
 description: Learn about the overview of Syncfusion® Essential Studio WPF Data Grid control, its features and more details.
 platform: grid-sdk
 control: Data Grid

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Getting Started with WPF Data Grid | Syncfusion®
-canonical_url: "https://www.syncfusion.com/grid-sdk-controls/datagrid"
+canonical_url: "https://www.syncfusion.com/wpf-controls/datagrid"
 description: Learn how to get started with the Syncfusion® WPF Data Grid control. Explore setup, features, examples, and customization options.
 platform: grid-sdk
 control: Data Grid
