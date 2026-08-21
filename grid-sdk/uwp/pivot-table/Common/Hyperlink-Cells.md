@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Hyperlink Cells in UWP Pivot Grid control | Syncfusion
-description: Learn here all about Hyperlink Cells support in Syncfusion UWP Pivot Grid (SfPivotGrid) control and more.
+title: Hyperlink Cells in UWP Pivot Table | Syncfusion®
+description: Hyperlink Cells in Syncfusion® UWP Pivot Table control let users click column, row, value, or summary cells to access detailed information easily.
 platform: grid-sdk
-control: SfPivotGrid
+control: Pivot Table
 documentation: ug
 ---
 
-# Hyperlink Cells in UWP Pivot Grid (SfPivotGrid)
+# Hyperlink Cells in UWP Pivot Table
 
 The SfPivotGrid allows hyperlinking of cells to retrieve detailed information about a particular cell. Hyperlink can be individually applied to the following cells:
 

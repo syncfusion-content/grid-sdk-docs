@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Selection in UWP TreeGrid control | Syncfusion®
-description: Learn here all about Selection support in Syncfusion® UWP TreeGrid (SfTreeGrid) control, its elements, features, and more.
+title: Selection in UWP TreeGrid | Syncfusion®
+description: Selection in UWP TreeGrid supports row and cell selection with single, multiple, and extended modes with navigation.
 platform: grid-sdk
-control: SfTreeGrid
+control: TreeGrid
 documentation: ug
 ---
 
-# Selection in UWP TreeGrid (SfTreeGrid)
+# Selection in UWP TreeGrid
 
 SfTreeGrid allows you select one or more rows.
 
@@ -237,7 +237,7 @@ this.treeGrid.ScrollInView(new RowColumnIndex(rowIndex, columnIndex));
 
 ### Scroll to selected item
 
-You can scroll programmatically to the `SelectedItem` sing the `ScrollInView` method by resolving the index of the item selected.
+You can scroll programmatically to the `SelectedItem` using the `ScrollInView` method by resolving the index of the item selected.
 
 {% tabs %}
 {% highlight c# %}

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Conditional Formatting in UWP Pivot Grid control | Syncfusion
-description: Learn here all about Conditional Formatting support in Syncfusion UWP Pivot Grid (SfPivotGrid) control and more.
+title: Conditional Formatting in UWP Pivot Table | Syncfusion®
+description: Apply conditional formatting in Syncfusion® UWP Pivot Table control to highlight cells dynamically based on conditions, values, and custom styles.
 platform: grid-sdk
-control: SfPivotGrid
+control: Pivot Table
 documentation: ug
 ---
 
-# Conditional Formatting in UWP Pivot Grid (SfPivotGrid)
+# Conditional Formatting in UWP Pivot Table
 
 The SfPivotGrid supports conditional formatting which allows you to format the grid cells based on certain conditions. Conditional formats can be specified with the help of `ConditionalFormats` property through which required number of formatters of **PivotGridDataConditionalFormat** type can be added to the SfPivotGrid.
 
