@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Row drag and drop in WinUI TreeGrid control | Syncfusion®
-description: Learn here all about row drag and drop support in Syncfusion® WinUI TreeGrid (SfTreeGrid) control and more.
+title: Row Drag and Drop in WinUI SfTreeGrid | Syncfusion®
+description: Enable row drag and drop in the Syncfusion® WinUI SfTreeGrid control. Rearrange rows interactively and customize drop behavior for flexibility.
 platform: grid-sdk
 control: SfTreeGrid
 documentation: ug
 ---
 
-# Row drag and drop in WinUI TreeGrid (SfTreeGrid)
+# Row Drag and Drop in WinUI SfTreeGrid
 
 `SfTreeGrid` allows you to drag and drop the rows by setting the [AllowRowDragDrop](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.SfGridBase.html#Syncfusion_UI_Xaml_Grids_SfGridBase_AllowRowDragDrop) and [AllowDrop](https://docs.microsoft.com/en-us/dotnet/api/system.windows.uielement.allowdrop) properties to true. You can also drag and drop the rows between treegrid and other controls such as [ListView](https://docs.microsoft.com/en-us/windows/apps/design/controls/listview-and-gridview), [DataGrid](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html) and [SfTreeView](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeView.SfTreeView.html). 
 
@@ -31,7 +31,7 @@ sfTreeGrid.AllowDrop = true;
 
 While dropping, the dragging nodes can be added above or below or as a child node based on their [DropPosition](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridRowDropPosition.html). For example, if you drop a node at the bottom of the target node, it will be added below the target node. If you drop over the target node, it will be added as a child of that target node.
 
-<img src="Row-Drag-and-Drop-images/draganddrop-img2.png" alt="Drap and Drop the Row in WinUI TreeGrid" width="100%" Height="Auto"/>
+<img src="Row-Drag-and-Drop-images/draganddrop-img2.png" alt="Drag and Drop the Row in WinUI TreeGrid" width="100%" Height="Auto"/>
 
 N> Drag indicators will not be shown when [DropPosition](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridRowDropPosition.html) is set to [AsChild](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridRowDropPosition.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridRowDropPosition_AsChild).
 
