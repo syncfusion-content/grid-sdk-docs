@@ -3,7 +3,7 @@ layout: post
 title: Displaying Calculations in WPF Pivot Table | Syncfusion®
 description: Displaying Calculations in the Syncfusion® WPF Pivot Table control shows values in rows or columns using ShowCalculationsAsColumns or schema designer.
 platform: grid-sdk
-control: Pivot Tablerid
+control: Pivot Table
 documentation: ug
 ---
 
