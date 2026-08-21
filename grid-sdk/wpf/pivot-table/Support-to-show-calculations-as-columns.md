@@ -11,7 +11,7 @@ documentation: ug
 
 The pivot grid provides support to show the calculation values in column or row. This can be achieved by using the `ShowCalculationsAsColumns` property of pivot grid control or through simple uncheck or check option in the pivot schema designer.
 
-## Setting ShowCalculationsAsColumns property through code
+## Setting ShowCalculationsAsColumns property through code 
 
 For XAML, refer to the following code sample.
 
