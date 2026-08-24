@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Column Types in WinUI DataGrid control | Syncfusion®
-description: Learn here all about Column Types features of Syncfusion® WinUI DataGrid(SfDataGrid) control and more.
+title: Column Types in WinUI Data Grid | Syncfusion®
+description: Column types in Data Grid provide specialized columns for displaying and editing text, numeric, checkbox, date, and custom data values.
 platform: grid-sdk
-control: SfDataGrid
+control: Data Grid
 documentation: ug
 ---
 
 
-# Column Types in WinUI DataGrid
+# Column Types in WinUI Data Grid
 
 SfDataGrid provides support for various built-in column types. Each column has its own properties and renderer to handle different types of data.
  
@@ -963,7 +963,7 @@ this.dataGrid.Columns.Add(new GridDateColumn() { HeaderText = "Date", MappingNam
 
 `GridDateColumn` provides support to restrict or allow null value in columns based on [AllowNull](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridDateColumn.html#Syncfusion_UI_Xaml_DataGrid_GridDateColumn_AllowNull) property. Instead of displaying null values, you can display hint text using [PlaceholderText](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridDateColumn.html#Syncfusion_UI_Xaml_DataGrid_GridDateColumn_PlaceholderText) property.
 
-The `PlaceholderText` does not shown, when the `AllowNull` is `false`.
+The `PlaceholderText` is not shown, when the `AllowNull` is `false`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -1185,7 +1185,7 @@ public class CustomEditTemplateSelector: DataTemplateSelector
         var data = item as OrderInfo;
  
         if (data.OrderID % 2 == 0)
-            return Appliaction.Current.Resources["AlternateEditTemplate"] as DataTemplate;
+            return Application.Current.Resources["AlternateEditTemplate"] as DataTemplate;
  
         else
             return Application.Current.Resources["DefaultEditTemplate"] as DataTemplate;
@@ -1234,12 +1234,12 @@ By default, `GridComboBoxColumn` displays the value using `MappingName` property
     <dataGrid:SfDataGrid.Columns> 
         <dataGrid:GridComboBoxColumn  HeaderText="Customer ID"
                                         ItemsSource="{Binding ComboItems, Source={StaticResource viewModel}}"
-                                        MappingName=" Customer ID " />
+                                        MappingName="CustomerID" />
     </dataGrid:SfDataGrid.Columns> 
 </dataGrid:SfDataGrid>
 {% endhighlight %}
 {% highlight c# %}
-this.dataGrid.Columns.Add(new GridComboBoxColumn() { HeaderText = " Customer ID ", MappingName = " Customer ID ", ItemsSource = viewModel.ComboItems });
+this.dataGrid.Columns.Add(new GridComboBoxColumn() { HeaderText = "Customer ID", MappingName = "CustomerID", ItemsSource = viewModel.ComboItems });
 {% endhighlight %}
 {% endtabs %}
 
@@ -1516,7 +1516,7 @@ The `PlaceholderText` is not displayed, when the `AllowNull` is set to `false`. 
 
 {% endhighlight %}
 {% highlight c# %}
-this.dataGrid.Columns.Add(new GridTimeColumn() { HeaderText = "Delivered Time", MappingName = "DeliveredTime" PlaceholderText="Change the Time" });
+this.dataGrid.Columns.Add(new GridTimeColumn() { HeaderText = "Delivered Time", MappingName = "DeliveredTime", PlaceholderText = "Change the Time" });
 {% endhighlight %}
 {% endtabs %}
 

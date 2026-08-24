@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Clipboard Operations in WinUI DataGrid control | Syncfusion®
-description: Learn here all about Clipboard Operations support in Syncfusion® WinUI DataGrid(SfDataGrid) control and more.
+title: Clipboard Operations in WinUI Data Grid | Syncfusion®
+description: Clipboard operations in Data Grid enable cutting, copying, and pasting records or cells within the grid and across external applications.
 platform: grid-sdk
-control: DataGrid
+control: Data Grid
 documentation: ug
 ---
 
 
-# Clipboard Operations in WinUI DataGrid
+# Clipboard Operations in WinUI Data Grid
 
 SfDataGrid provide support for the clipboard operations such as cut, copy and paste the data within control and between other applications such as Notepad, Excel. Clipboard operations copy and paste is enabled by default. You can copy selected records/cells from SfDataGrid by pressing <kbd>Ctrl+C</kbd> and also can paste the content from [Clipboard](https://docs.microsoft.com/en-us/uwp/api/Windows.ApplicationModel.DataTransfer.Clipboard?view=winrt-19041) to SfDataGrid by pressing <kbd>Ctrl+V</kbd>.
 
@@ -123,7 +123,7 @@ N> `IncludeHiddenColumn` is not supported when `SelectionUnit` is `Cell`.
 {% highlight c# %}
 this.sfDataGrid.GridCopyContent += sfDataGrid_GridCopyContent;
 
-void sfDdataGrid_GridCopyContent(object sender, GridCopyPasteEventArgs e)
+void sfDataGrid_GridCopyContent(object sender, GridCopyPasteEventArgs e)
 {
     if (((e.OriginalSender as SfDataGrid).SelectedItem as OrderInfo).OrderID == 1004)
         e.Handled = true;
@@ -324,7 +324,7 @@ this.sfDataGrid.ClipboardController.Cut();
 {% endhighlight %}
 {% endtabs %}
 
-Cut the data column in SfDataGrid by using [SelectCells](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_SelectCells_System_Object_Syncfusion_UI_Xaml_Grid_GridColumn_System_Object_Syncfusion_UI_Xaml_Grid_GridColumn_System_Boolean_) method and `Cut` method in `ClipboardController` of SfDataGrid.
+Cut the data column in SfDataGrid by using [SelectCells](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_SelectCells_System_Object_Syncfusion_UI_Xaml_DataGrid_GridColumn_System_Object_Syncfusion_UI_Xaml_DataGrid_GridColumn_System_Boolean_) method and `Cut` method in `ClipboardController` of SfDataGrid.
 
 {% tabs %}
 {% highlight c# %}
@@ -545,7 +545,7 @@ public class CustomCopyPaste : DataGridClipboardController
 
 ### Create new records while pasting in WinUI DataGrid
 
-By default while paste the clipboard value to SfDataGrid, it changes the values of the already existing records. The below code example shows how to add the copied records as new rows in SfDataGrid by overriding the `PasteToRows` method in `DataGridClipboardController` class.
+By default while pasting the clipboard value to SfDataGrid, it changes the values of the already existing records. The below code example shows how to add the copied records as new rows in SfDataGrid by overriding the `PasteToRows` method in `DataGridClipboardController` class.
 
 {% tabs %}
 {% highlight c# %}

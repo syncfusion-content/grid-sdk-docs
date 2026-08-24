@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Row Height Customization in WinUI DataGrid control | Syncfusion®
-description: Learn here all about Row Height Customization support in Syncfusion® WinUI DataGrid(sfDataGrid) control and more.
+title: Row Height Customization in WinUI Data Grid | Syncfusion®
+description: Row height customization in Data Grid allows row heights to be adjusted dynamically, improving readability and enhancing data presentation.
 platform: grid-sdk
-control: DataGrid
+control: Data Grid
 documentation: ug
 ---
 
-# Row Height Customization in WinUI DataGrid
+# Row Height Customization in WinUI Data Grid
 
 You can change the header row height by setting [SfDataGrid.HeaderRowHeight](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.SfGridBase.html#Syncfusion_UI_Xaml_Grids_SfGridBase_HeaderRowHeight) and the other rows height can be changed by setting [SfDataGrid.RowHeight](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.SfGridBase.html#Syncfusion_UI_Xaml_Grids_SfGridBase_RowHeight) property.
 
@@ -129,7 +129,7 @@ Here, row heights are customized based on the large text content.
 
 <img src="Row-Height-Customization_images/winui-datagrid-auto-size-row-height.png" alt="Auto Size Row Height in WinUI DataGrid" width="100%" Height="Auto"/>
 
-#### GridRowSizingOptions
+### GridRowSizingOptions
 
 [GridRowSizingOptions](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridRowSizingOptions.html) have the following properties,
 
