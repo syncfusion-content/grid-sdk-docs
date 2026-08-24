@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Data Binding in WPF DataGrid control | Syncfusion®
-description: Learn here all about Data Binding support in Syncfusion® WPF DataGrid (SfDataGrid) control, its elements and more details.
+title: Data Binding in WPF Data Grid | Syncfusion®
+description: Data Binding in Data Grid provides flexible data source binding, collection management, and efficient data display capabilities.
 platform: grid-sdk
-control: SfDataGrid
+control: Data Grid
 documentation: ug
 ---
 
-# Data Binding in WPF DataGrid (SfDataGrid)
+# Data Binding in WPF Data Grid
 
 [WPF DataGrid](https://www.syncfusion.com/wpf-controls/datagrid) (SfDataGrid) control is designed to display the bounded data in a tabular format. The data binding can be achieved by assigning the data sources to [SfDataGrid.ItemsSource](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_ItemsSource) property.
 

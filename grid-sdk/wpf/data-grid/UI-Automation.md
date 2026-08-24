@@ -1,13 +1,13 @@
 ---
 layout: post
-title: UI Automation in WPF DataGrid control | Syncfusion®
-description: Learn here all about UI Automation support in Syncfusion® WPF DataGrid (SfDataGrid) control and more.
+title: UI Automation in WPF Data Grid | Syncfusion®
+description: UI Automation in  Data Grid enables accessibility and automated testing support through built-in UI Automation providers for grid elements.
 platform: grid-sdk
-control: SfDataGrid
+control: Data Grid
 documentation: ug
 ---
 
-# UI Automation in WPF DataGrid (SfDataGrid)
+# UI Automation in WPF Data Grid
 
 Microsoft UI Automation is the new accessibility Framework for Microsoft Windows, available on all operating systems that support Windows Presentation Foundation (WPF). UI Automation provides accessibility to most UI elements and it provides the information about UI element to the end user. You can interact with the UI by using automated test scripts. To know more about UI Automation, refer the MSDN page [here](https://learn.microsoft.com/en-us/dotnet/framework/ui-automation/ui-automation-overview).
 
