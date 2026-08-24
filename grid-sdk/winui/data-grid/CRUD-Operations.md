@@ -1,13 +1,13 @@
 ---
 layout: post
-title: CRUD Operations in WinUI DataGrid control | Syncfusion®
-description: Learn here all about CRUD Operations feature of Syncfusion® WinUI DataGrid(SfDataGrid) control and more.
+title: CRUD Operations in WinUI Data Grid | Syncfusion®
+description: Context flyout in Data Grid provides quick access to commands and actions through a customizable menu for enhanced user interaction.
 platform: grid-sdk
-control: DataGrid
+control: Data Grid
 documentation: ug
 ---
 
-# CRUD Operations in WinUI DataGrid
+# CRUD Operations in WinUI Data Grid
 
 DataGrid listens and responds to the CRUD operations such as add, delete and data update (property change) at runtime. Also, it supports [editing](https://help.syncfusion.com/winui/datagrid/editing), [add new row](https://help.syncfusion.com/winui/datagrid/data-manipulation#add-new-rows), [delete row](https://help.syncfusion.com/winui/datagrid/data-manipulation#delete-row) by pressing <kbd>Delete</kbd> key.
 
@@ -283,7 +283,7 @@ this.sfDataGrid.AddNewRowPosition = AddNewRowPosition.Top;
 
 <img src="CRUD-Operations_images/winui-datagrid-add-new-row.png" alt="WinUI DataGrid with Add New Row" width="100%" Height="Auto"/>
 
-You can get the row row index of AddNewRow using [SfDataGrid.GetAddNewRowIndex](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridIndexResolver.html#Syncfusion_UI_Xaml_DataGrid_GridIndexResolver_GetAddNewRowIndex_Syncfusion_UI_Xaml_DataGrid_SfDataGrid_) method.
+You can get the row index of AddNewRow using [SfDataGrid.GetAddNewRowIndex](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridIndexResolver.html#Syncfusion_UI_Xaml_DataGrid_GridIndexResolver_GetAddNewRowIndex_Syncfusion_UI_Xaml_DataGrid_SfDataGrid_) method.
 
 {% tabs %}
 {% highlight c# %}
@@ -411,9 +411,9 @@ Similarly, you can validate the cells in AddNewRow by using the [CurrentCellVali
 
 ### Customizing AddNewRow text using default resource file
 
-SfDataGrid enables you to customize the watermark text of AddNewRow by changing value of AddNewRowText in Resource Designer. For more information, you can refer [Editing default culture resource](https://help.syncfusion.com/winui/localization#editing-default-culture-strings) section.
+SfDataGrid enables you to customize the watermark text of AddNewRow by changing value of AddNewRowText in Resource Designer. For more information, you can refer [Editing default culture resource](https://help.syncfusion.com/winui/common/localization#editing-default-language-strings) section.
 
-To customize the AddNewRowText, add the default [Syncfusion.Grid.WinUI.resw](https://github.com/syncfusion/winui-controls-localization-resource-files) file in **Resources** folder and then customize the value of AddNewRowText. Refer [here](https://help.syncfusion.com/winui/localization) to learn more about localization. 
+To customize the AddNewRowText, add the default [Syncfusion.Grid.WinUI.resw](https://help.syncfusion.com/winui/datagrid/crud-operations#customizing-addnewrow-text-using-default-resource-file) file in **Resources** folder and then customize the value of AddNewRowText. Refer [here](https://help.syncfusion.com/winui/common/localization) to learn more about localization.
 
 <img src="CRUD-Operations_images/winui-datagrid-add-new-text-customization-using-resx.png" alt="Add New Text Customization using Resx File in WinUI DataGrid" width="100%" Height="Auto"/>
 
@@ -685,7 +685,7 @@ You can handle the selection after remove the records through `SelectedIndex` pr
 
 {% tabs %}
 {% highlight c# %}
-this.sfDataGrid.RecordDeleted += SfDataGrid_RecordDeleted
+this.sfDataGrid.RecordDeleted += SfDataGrid_RecordDeleted;
 
 private void SfDataGrid_RecordDeleted(object sender, RecordDeletedEventArgs e)
 {

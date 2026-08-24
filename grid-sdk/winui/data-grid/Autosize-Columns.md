@@ -1,13 +1,13 @@
 ---
 layout: post
-title: AutoSize Columns in WinUI DataGrid control | Syncfusion®
-description: Learn here all about AutoSize Columns support in Syncfusion® WinUI DataGrid(SfDataGrid) control and more.
+title: AutoSize Columns in WinUI Data Grid | Syncfusion®
+description: AutoSize Columns in Data Grid automatically adjusts column widths based on content, headers, and available space, with customizable sizing options.
 platform: grid-sdk
-control: DataGrid
+control: Data Grid
 documentation: ug
 ---
 
-# AutoSize Columns in WinUI DataGrid
+# AutoSize Columns in WinUI Data Grid
 
 DataGrid allows you to set the column widths based on certain logic using [SfDataGrid.ColumnWidthMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_ColumnWidthMode) or [GridColumn.ColumnWidthMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridColumn.html#Syncfusion_UI_Xaml_DataGrid_GridColumn_ColumnWidthMode) property. Below is the list of predefined column sizing options available.
 
@@ -107,7 +107,7 @@ In SfDataGrid while setting `SfDataGrid.ColumnWidthMode` as `AutoLastColumnFill`
                         ItemsSource="{Binding OrdersDetails}">            
             <dataGrid:SfDataGrid.Columns>
                 <dataGrid:GridTextColumn HeaderText="Order ID" MappingName="OrderID" ColumnWidthMode="AutoLastColumnFill" />
-                <dataGrid:GridTextColumn HeaderText="Customer ID" MappingName="Customer ID" />               
+                <dataGrid:GridTextColumn HeaderText="Customer ID" MappingName="CustomerID" />               
                 <dataGrid:GridTextColumn HeaderText="Order Date" MappingName="OrderDate" />
                 <dataGrid:GridTextColumn HeaderText="Unit Price" MappingName="UnitPrice" />
                 <dataGrid:GridTextColumn HeaderText="Ship City" MappingName="ShipCity" />
@@ -403,9 +403,9 @@ Below code uses the `ColumnRatio` to apply the defined star width for each colum
                         ItemsSource="{Binding OrdersDetails}">
     <dataGrid:SfDataGrid.Columns>
         <dataGrid:GridTextColumn HeaderText="Order ID" MappingName="OrderID" local:StarRatio.ColumnRatio="1"/>
-        <dataGrid:GridTextColumn HeaderText="Customer ID" MappingName="Customer ID" local:StarRatio.ColumnRatio="1"/>
+        <dataGrid:GridTextColumn HeaderText="Customer ID" MappingName="CustomerID" local:StarRatio.ColumnRatio="1"/>
         <dataGrid:GridTextColumn HeaderText="Order Date" MappingName="OrderDate" local:StarRatio.ColumnRatio="1"/>
-        <dataGrid:GridTextColumn   HeaderText="Unit Price" MappingName="Unit Price" local:StarRatio.ColumnRatio="1"/>
+        <dataGrid:GridTextColumn   HeaderText="Unit Price" MappingName="UnitPrice" local:StarRatio.ColumnRatio="1"/>
         <dataGrid:GridTextColumn   HeaderText="Ship City" MappingName="ShipCity" local:StarRatio.ColumnRatio="2" />
         <dataGrid:GridTextColumn MappingName="Country" local:StarRatio.ColumnRatio="2"/>
     </dataGrid:SfDataGrid.Columns>
