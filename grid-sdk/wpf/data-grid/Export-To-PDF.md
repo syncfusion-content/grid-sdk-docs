@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Export To PDF in WPF DataGrid control | Syncfusion®
-description: Learn here all about Export To PDF support in Syncfusion® WPF DataGrid (SfDataGrid) control and more.
+title: Export To PDF in WPF Data Grid | Syncfusion®
+description: Export To PDF in Data Grid exports grid data to PDF documents while preserving content, layouts, formatting, and visual styles.
 platform: grid-sdk
-control: SfDataGrid
+control: Data Grid
 documentation: ug
 ---
 
-# Export To PDF in WPF DataGrid (SfDataGrid)
+# Export To PDF in WPF Data Grid
 
 [WPF DataGrid](https://www.syncfusion.com/wpf-controls/datagrid) provides support to export data to PDF file. It also provides support for grouping, filtering, sorting, paging, unbound rows, merged cells, stacked headers and details View while exporting.
 
