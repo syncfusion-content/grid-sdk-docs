@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Performance in WinUI DataGrid control | Syncfusion®
-description: Learn here all about Performance support in Syncfusion® WinUI DataGrid(SfDataGrid) control with virtualization support and more.
+title: Performance in WinUI Data Grid | Syncfusion®
+description: Performance features in Data Grid improve responsiveness through virtualization, efficient data processing, and optimized rendering for large datasets.
 platform: grid-sdk
-control: DataGrid
+control: Data Grid
 documentation: ug
 ---
 
-# Performance in WinUI DataGrid
+# Performance in WinUI Data Grid
 
 SfDataGrid provides various built-in options to optimize the performance when handling large amount of data or high frequency updates.
                                
@@ -73,7 +73,7 @@ SfDataGrid considers only the `removed` item value and the current summary value
 
 ### Property Change in a record
 
-SfDataGrid considers only the changed item value and the current aggregated value instead of recalculating the summary based on all records.  For this you have to implement [INotifyPropertyChanging](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Data.INotifyPropertyChanging.html) and [INotifyPropertyChanged](https://docs.microsoft.com/en-us/windows/winui/api/microsoft.ui.xaml.data.inotifypropertychanged) interface to your Data Model.
+SfDataGrid considers only the changed item value and the current aggregated value instead of recalculating the summary based on all records.  For this you have to implement [INotifyPropertyChanging](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Data.INotifyPropertyChanging.html) and [INotifyPropertyChanged](https://learn.microsoft.com/en-us/uwp/api/windows.ui.xaml.data.inotifypropertychanged?view=winrt-28000) interface to your Data Model.
 
 Below code to enable summary calculation optimization by inheriting `INotifyPropertyChanging` and `INotifyPropertyChanged` interface to Data Model.
 

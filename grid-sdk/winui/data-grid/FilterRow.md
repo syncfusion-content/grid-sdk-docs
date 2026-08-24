@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Filter Row in WinUI DataGrid control | Syncfusion®
-description: Learn here all about Filter Row support in Syncfusion® WinUI DataGrid(SfDataGrid) control with many filter options.
+title: Filter Row in WinUI Data Grid | Syncfusion®
+description: Filter row in Data Grid provides built-in editors and filter conditions to quickly find, refine, and manage data records.
 platform: grid-sdk
-control: DataGrid
+control: Data Grid
 documentation: ug
 ---
 
-# Filter Row in WinUI DataGrid
+# Filter Row in WinUI Data Grid
 
 SfDataGrid provides built-in row (called FilterRow) to filter the records. You can enable the FilterRow by specifying the position where it should be displayed by setting [SfDataGrid.FilterRowPosition](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.FilterRowPosition.html) property.
 
@@ -324,13 +324,16 @@ You can customize the style of filter row by writing style of TargetType [Filte
 
 {% tabs %}
 {% highlight xaml %}
-<Page.Resources>
-    xmlns:dataGridRowFilter="using:Syncfusion.UI.Xaml.DataGrid.RowFilter"
+<Page
+    x:Class="FilterRowDemo.MainPage"
+    xmlns:dataGridRowFilter="using:Syncfusion.UI.Xaml.DataGrid.RowFilter">
 
-    <Style TargetType="dataGridRowFilter:FilterRowControl">
-        <Setter Property="Background" Value="BlanchedAlmond"/>
-    </Style>
-</Page.Resources>
+    <Page.Resources>
+        <Style TargetType="dataGridRowFilter:FilterRowControl">
+            <Setter Property="Background" Value="BlanchedAlmond"/>
+        </Style>
+    </Page.Resources>
+</Page>
 {% endhighlight %}
 {% endtabs %}
 
