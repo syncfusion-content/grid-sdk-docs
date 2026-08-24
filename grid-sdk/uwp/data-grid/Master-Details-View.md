@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Master-Details View in UWP Data Grid | Syncfusion®
-description: Master-Details View in Data Grid displays hierarchical data through expandable views to show related records and details.
+description: Master-Details View in UWP Data Grid displays hierarchical data through expandable views to show related records and details.
 platform: grid-sdk
 control: Data Grid
 documentation: ug

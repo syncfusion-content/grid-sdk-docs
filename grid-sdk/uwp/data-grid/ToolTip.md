@@ -1,7 +1,7 @@
 ---
 layout: post
 title: ToolTip in UWP Data Grid | Syncfusion®
-description: ToolTip in Data Grid displays additional information for cells, rows, and headers through customizable tooltip support.
+description: ToolTip in UWP Data Grid displays additional information for cells, rows, and headers through customizable tooltip support.
 platform: grid-sdk
 control: Data Grid
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Merge Cells in UWP Data Grid | Syncfusion®
-description: Merge Cells in Data Grid combines adjacent cells with matching values to improve data organization and readability.
+description: Merge Cells in UWP Data Grid combines adjacent cells with matching values to improve data organization and readability.
 platform: grid-sdk
 control: Data Grid
 documentation: ug

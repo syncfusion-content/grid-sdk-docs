@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Data Binding in UWP Data Grid | Syncfusion®
-description: Data Binding in Data Grid provides flexible data source binding, collection management, and efficient data display capabilities.
+description: Data Binding in UWP Data Grid provides flexible data source binding, collection management, and efficient data display capabilities.
 platform: grid-sdk
 control: Data Grid
 documentation: ug

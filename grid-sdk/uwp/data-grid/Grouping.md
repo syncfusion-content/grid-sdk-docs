@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Grouping in UWP Data Grid | Syncfusion®
-description: Grouping in Data Grid organizes and displays data in groups to improve readability, navigation, and data analysis.
+description: Grouping in UWP Data Grid organizes and displays data in groups to improve readability, navigation, and data analysis.
 platform: grid-sdk
 control: Data Grid
 documentation: ug

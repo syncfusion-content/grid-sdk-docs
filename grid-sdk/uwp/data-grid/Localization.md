@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Localization in UWP Data Grid | Syncfusion®
-description: Localization in Data Grid customizes grid content and user interface elements to support multiple languages and regional settings.
+description: Localization in UWP Data Grid customizes grid content and user interface elements to support multiple languages and regional settings.
 platform: grid-sdk
 control: Data Grid
 documentation: ug

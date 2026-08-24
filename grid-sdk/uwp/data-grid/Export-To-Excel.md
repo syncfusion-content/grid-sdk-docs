@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Export To Excel in UWP Data Grid | Syncfusion®
-description: Export To Excel in Data Grid exports grid data to Excel files while preserving data, formatting, styles, and workbook structure.
+description: Export To Excel in UWP Data Grid exports grid data to Excel files while preserving data, formatting, styles, and workbook structure.
 platform: grid-sdk
 control: Data Grid
 documentation: ug

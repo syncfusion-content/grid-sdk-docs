@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Data Validation in UWP Data Grid | Syncfusion®
-description: Data Validation in Data Grid helps validate user input, display validation errors, and maintain accurate data with customizable validation rules.
+description: Data Validation in UWP Data Grid helps validate user input, display validation errors, and maintain accurate data with customizable validation rules.
 platform: grid-sdk
 control: Data Grid
 documentation: ug

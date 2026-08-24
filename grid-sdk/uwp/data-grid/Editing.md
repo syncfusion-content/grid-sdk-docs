@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Editing in UWP Data Grid | Syncfusion®
-description: Editing in Data Grid provides built-in features to add, modify, and update records with validation and customizable editing behavior.
+description: Editing in UWP Data Grid provides built-in features to add, modify, and update records with validation and customizable editing behavior.
 platform: grid-sdk
 control: Data Grid
 documentation: ug

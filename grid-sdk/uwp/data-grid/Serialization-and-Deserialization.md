@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Serialization and Deserialization in UWP Data Grid | Syncfusion®
-description: Serialization and Deserialization in Data Grid saves and restores grid settings, layouts, and configurations to preserve the user interface state.
+description: Serialization and Deserialization in UWP Data Grid saves and restores grid settings, layouts, and configurations to preserve the user interface state.
 platform: grid-sdk
 control: Data Grid
 documentation: ug

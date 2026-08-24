@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Data Virtualization in UWP Data Grid | Syncfusion®
-description: Data Virtualization in Data Grid enables efficient handling of large datasets through on-demand data loading and virtualization.
+description: Data Virtualization in UWP Data Grid enables efficient handling of large datasets through on-demand data loading and virtualization.
 platform: grid-sdk
 control: Data Grid
 documentation: ug

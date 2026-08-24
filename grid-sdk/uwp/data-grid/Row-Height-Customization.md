@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Row Height Customization in UWP Data Grid | Syncfusion®
-description: Row Height Customization in Data Grid customizes row heights dynamically to improve data display, readability, and user experience.
+description: Row Height Customization in UWP Data Grid customizes row heights dynamically to improve data display, readability, and user experience.
 platform: grid-sdk
 control: Data Grid
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Unbound Column in UWP Data Grid | Syncfusion®
-description: Unbound Column in Data Grid displays calculated or custom values that are not directly bound to the underlying data source.
+description: Unbound Column in UWP Data Grid displays calculated or custom values that are not directly bound to the underlying data source.
 platform: grid-sdk
 control: Data Grid
 documentation: ug

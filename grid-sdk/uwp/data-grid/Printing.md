@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Printing in UWP Data Grid | Syncfusion®
-description: Printing in Data Grid prints grid data with customizable layouts, formatting, and page settings for professional output.
+description: Printing in UWP Data Grid prints grid data with customizable layouts, formatting, and page settings for professional output.
 platform: grid-sdk
 control: Data Grid
 documentation: ug

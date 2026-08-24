@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Selection in UWP Data Grid | Syncfusion®
-description: Selection in Data Grid provides flexible row, cell, and multi-selection options with customizable modes and selection behaviors.
+description: Selection in UWP Data Grid provides flexible row, cell, and multi-selection options with customizable modes and selection behaviors.
 platform: grid-sdk
 control: Data Grid
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Column Types in UWP Data Grid | Syncfusion®
-description: Column Types in Data Grid provides built-in and custom column types to display, edit, format, and customize data effectively.
+description: Column Types in UWP Data Grid provides built-in and custom column types to display, edit, format, and customize data effectively.
 platform: grid-sdk
 control: Data Grid
 documentation: ug
