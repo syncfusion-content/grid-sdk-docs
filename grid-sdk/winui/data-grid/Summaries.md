@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Summaries in WinUI DataGrid control | Syncfusion®
-description: Learn here all about Summaries support in Syncfusion® WinUI DataGrid(SfDataGrid) control with displaying summary and more.
+title: Summaries in WinUI Data Grid | Syncfusion®
+description: Summaries in Data Grid provide aggregate calculations and customizable summary displays, helping analyze and present data effectively.
 platform: grid-sdk
-control: DataGrid
+control: Data Grid
 documentation: ug
 ---
 
 
-# Summaries in WinUI DataGrid
+# Summaries in WinUI Data Grid
 
 SfDataGrid provides support to display the concise information about the data objects using summaries. SfDataGrid provides below three different types of summary rows.
 
