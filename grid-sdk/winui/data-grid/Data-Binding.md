@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Data Binding in WinUI DataGrid control | Syncfusion®
-description: Learn here all about Data Binding support in Syncfusion® WinUI DataGrid(SfDataGrid) control with many binding opion support.
+title: Data Binding in WinUI Data Grid | Syncfusion®
+description: Data binding in Data Grid enables seamless integration with data sources, supporting efficient data display, updates, and synchronization.
 platform: grid-sdk
-control: SfDataGrid
+control: Data Grid
 documentation: ug
 ---
 
-# Data Binding in WinUI DataGrid
+# Data Binding in WinUI Data Grid
 
 SfDataGrid control is designed to display the bounded data in a tabular format. The data binding can be achieved by assigning the data sources to [SfDataGrid.ItemsSource](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_ItemsSource) property.
 
@@ -112,7 +112,7 @@ The [GridItemsSourceChangedEventArgs](https://help.syncfusion.com/cr/winui/Sync
 
 ## View 
 
-DataGrid has the View property of type `ICollectionViewAdv` interface that implements ICollectionView interface. View is responsible for maintain and manipulation data and other advanced operations like Sorting, Grouping, Filtering and etc. When you bind Collection to `ItemsSource` property of SfDataGrid, then View will be created and maintains the operations on Data such as Grouping, Filtering, Sorting, Insert, Delete, and Modification. Following are some important properties that can be used for various purposes.
+DataGrid has the View property of type `ICollectionViewAdv` interface that implements ICollectionView interface. View is responsible for maintaining and manipulating data and other advanced operations like Sorting, Grouping, Filtering and etc. When you bind Collection to `ItemsSource` property of SfDataGrid, then View will be created and maintains the operations on Data such as Grouping, Filtering, Sorting, Insert, Delete, and Modification. Following are some important properties that can be used for various purposes.
 
 N> DataGrid creates different types of views derived from [ICollectionViewAdv](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Data.ICollectionViewAdv.html) interface based on ItemsSource.
 
