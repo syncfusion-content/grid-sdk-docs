@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Clipboard Operations in WPF DataGrid control | Syncfusion®
-description: Learn here all about Clipboard Operations support in Syncfusion® WPF DataGrid (SfDataGrid) control and more.
+description: Clipboard Operations in Data Grid enables copy, cut, and paste actions with configurable settings, events, and custom clipboard behavior.
 platform: grid-sdk
 control: SfDataGrid
 documentation: ug
