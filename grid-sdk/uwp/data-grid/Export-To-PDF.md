@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Export To PDF in UWP Data Grid | Syncfusion®
-description: Export To PDF in Data Grid exports grid data to PDF documents while preserving content, layouts, formatting, and visual styles.
+description: Export To PDF in UWP Data Grid exports grid data to PDF documents while preserving content, layouts, formatting, and visual styles.
 platform: grid-sdk
 control: Data Grid
 documentation: ug

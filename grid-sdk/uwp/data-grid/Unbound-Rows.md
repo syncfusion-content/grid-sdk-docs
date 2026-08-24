@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Unbound Rows in UWP Data Grid | Syncfusion®
-description: Unbound Rows in Data Grid display custom rows for calculations, summaries, and additional information independent of the data source.
+description: Unbound Rows in UWP Data Grid display custom rows for calculations, summaries, and additional information independent of the data source.
 platform: grid-sdk
 control: Data Grid
 documentation: ug

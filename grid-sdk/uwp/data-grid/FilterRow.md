@@ -1,7 +1,7 @@
 ---
 layout: post
 title: FilterRow in UWP Data Grid | Syncfusion®
-description: Filter Row in Data Grid filters data directly within the grid through an interactive row for quick and efficient data refinement. Filter Row in Data Grid filters data directly within the grid through an interactive row for quick and efficient data refinement.
+description: Filter Row in UWP Data Grid filters data directly within the grid through an interactive row for quick and efficient data refinement.
 platform: grid-sdk
 control: Data Grid
 documentation: ug

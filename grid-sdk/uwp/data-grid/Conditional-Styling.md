@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Conditional Styling in UWP Data Grid | Syncfusion®
-description: Conditional Styling in Data Grid applies custom styles to cells, rows, and columns dynamically based on data values and conditions.
+description: Conditional Styling in UWP Data Grid applies custom styles to cells, rows, and columns dynamically based on data values and conditions.
 platform: grid-sdk
 control: Data Grid
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Summaries in UWP Data Grid | Syncfusion®
-description: Summaries in Data Grid display aggregate values such as count, sum, average, minimum, and maximum using table, group, caption, and custom summaries.
+description: Summaries in UWP Data Grid display aggregate values such as count, sum, average, minimum, and maximum using table, group, caption, and custom summaries.
 platform: grid-sdk
 control: Data Grid
 documentation: ug

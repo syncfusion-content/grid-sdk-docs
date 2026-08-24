@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Clipboard Operations in UWP Data Grid  | Syncfusion®
-description: Clipboard Operations in Data Grid enables copy, cut, and paste actions with configurable settings, events, and custom clipboard behavior.
+description: Clipboard Operations in UWP Data Grid enables copy, cut, and paste actions with configurable settings, events, and custom clipboard behavior.
 platform: grid-sdk
 control: Data Grid
 documentation: ug
