@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Customization in WPF SmartDataGrid control | Syncfusion®
-description: Learn here all about how to customize behavior and features of Syncfusion® WPF SmartDataGrid (SfSmartDataGrid) control and more.
+title: Customization in WPF Smart Data Grid | Syncfusion®
+description: The customization options in Smart Data Grid enable configuration of prompts, suggestions, smart actions, highlighting, and user interactions.
 platform: grid-sdk
-control: SfSmartDataGrid
+control: Smart Data Grid
 documentation: ug
 keywords : WPF datagrid, customization, assistview, prompts, smart actions
 ---
 
-# Customization in WPF SmartDataGrid (SfSmartDataGrid)
+# Customization in WPF Smart Data Grid
 
 The `SfSmartDataGrid` provides options to customize its behavior and appearance, including predefined suggestions, initial prompts, enabling or disabling smart actions.
 
