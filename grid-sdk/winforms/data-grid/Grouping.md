@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Grouping | DataGrid Control for Windows Forms | Syncfusion®
-description: This section explains about the grouping feature and it's customization in datagrid control for windows forms
+title: Grouping in Windows Forms Data Grid | Syncfusion®
+description: Grouping in Data Grid organizes and displays data in groups to improve readability, navigation, and data analysis.
 platform: grid-sdk
-control: SfDataGrid
+control: Data Grid
 documentation: ug
 ---
 
-# Grouping in Windows Forms DataGrid (SfDataGrid)
+# Grouping in Windows Forms Data Grid
 [WinForms DataGrid](https://www.syncfusion.com/winforms-ui-controls/datagrid) (SfDataGrid) allows to group the data against one or more columns. When grouping is applied, the data is organized into a hierarchical structure based on matching column values and it is sorted by ascending order.
 
 ## UI Grouping
@@ -22,7 +22,7 @@ Me.sfDataGrid1.AllowGrouping = True
 {% endhighlight %}
 {% endtabs %}
 
-Grouping for particular column can  be enables or disabled by setting the [GridColumnBase.AllowGrouping](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.GridColumnBase.html#Syncfusion_WinForms_DataGrid_GridColumnBase_AllowGrouping) property.
+Grouping for particular column can be enabled or disabled by setting the [GridColumnBase.AllowGrouping](https://help.syncfusion.com/cr/windowsforms/Syncfusion.WinForms.DataGrid.GridColumnBase.html#Syncfusion_WinForms_DataGrid_GridColumnBase_AllowGrouping) property.
 {% tabs %}
 {% highlight c# %}
 this.sfDataGrid1.Columns["OrderID"].AllowGrouping = true;

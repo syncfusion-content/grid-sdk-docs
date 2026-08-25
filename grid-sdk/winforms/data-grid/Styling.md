@@ -1,13 +1,13 @@
 ---
 layout: post
-title: styling | DataGrid Control for Windows Forms | Syncfusion®
-description: This section explains about the styling customization of elements in datagrid control for windows forms
+title: Styles in Windows Forms Data Grid | Syncfusion®
+description: Styles in Data Grid support customizing grid appearance, cell and row styles, themes, and visual elements for enhanced user experience.
 platform: grid-sdk
-control: SfDataGrid
+control: Data Grid
 documentation: ug
 ---
 
-# Styles in Windows Forms DataGrid (SfDataGrid)
+# Styles in Windows Forms Data Grid
 
 ## Styling Record Cell
 
@@ -391,6 +391,6 @@ sfDataGrid1.Style.BusyIndicatorImage = Image.FromFile("../../BusyIndicator.gif")
 
 ## See also
 
-[How to apply alternate backcolor for the rows in both parent and child grid in WinForms DataGrid (SfDataGrid)](https://support.syncfusion.com/kb/article/9045/how-to-apply-alternate-backcolor-for-the-rows-in-both-parent-and-child-grid-in-winforms)
+[How to apply alternate back color for the rows in both parent and child grid in WinForms DataGrid (SfDataGrid)](https://support.syncfusion.com/kb/article/9045/how-to-apply-alternate-backcolor-for-the-rows-in-both-parent-and-child-grid-in-winforms)
 
 [How to change the outermost border color of the WinForms DataGrid (SfDataGrid)](https://support.syncfusion.com/kb/article/7942/how-to-change-the-outermost-border-color-of-the-winforms-datagrid-sfdatagrid)
