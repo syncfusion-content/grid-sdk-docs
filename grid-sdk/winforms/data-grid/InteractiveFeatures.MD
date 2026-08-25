@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Interactive Features in Windows Forms DataGrid | Syncfusion®
-description: Learn about Interactive Features support in Syncfusion® Windows Forms DataGrid (SfDataGrid) control and more.
+title: Interactive Features in Windows Forms Data Grid | Syncfusion®
+description: Interactive features in Data Grid provide context menus, column chooser, tooltips, and customization options for enhanced user interaction.
 platform: grid-sdk
-control: SfDataGrid
+control: Data Grid
 documentation: ug
 ---
-# Interactive Features in Windows Forms DataGrid (SfDataGrid)
+# Interactive Features in Windows Forms Data Grid
 
 ## Context Menu
 
@@ -535,7 +535,7 @@ public class ColumnChooserExt : ColumnChooser
     /// </summary>
     protected override void AddOKButton()
     {
-        // Do nothing to avod adding the OK button.
+        // Do nothing to avoid adding the OK button.
     }
     
     /// <summary>
@@ -591,7 +591,7 @@ Public Class ColumnChooserExt
 	''' Overridden to cancel the adding of OK button.
 	''' </summary>
 	Protected Overrides Sub AddOKButton()
-		' Do nothing to avod adding the OK button.
+		' Do nothing to avoid adding the OK button.
 	End Sub
 	
 	''' <summary>

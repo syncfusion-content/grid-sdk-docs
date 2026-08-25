@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Grouping in WPF DataGrid control | Syncfusion®
-description: Learn here all about Grouping support in Syncfusion® WPF DataGrid (SfDataGrid) control, its elements and more details.
+title: Grouping in WPF Data Grid | Syncfusion®
+description: Grouping in Data Grid organizes and displays data in groups to improve readability, navigation, and data analysis.
 platform: grid-sdk
-control: SfDataGrid
+control: Data Grid
 documentation: ug
 ---
 
-# Grouping in WPF DataGrid (SfDataGrid)
+# Grouping in WPF Data Grid
 
 [WPF DataGrid](https://www.syncfusion.com/wpf-controls/datagrid) allows you to group the data against one or more columns. When grouping is applied, the data is organized into a hierarchical structure based on matching column values and it is sorted by ascending order.
  
