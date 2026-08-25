@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Row Height Customization in UWP DataGrid control | Syncfusion®
-description: Learn here all about Row Height Customization support in Syncfusion® UWP DataGrid (SfDataGrid) control and more.
+title: Row Height Customization in UWP Data Grid | Syncfusion®
+description: Row Height Customization in UWP Data Grid customizes row heights dynamically to improve data display, readability, and user experience.
 platform: grid-sdk
-control: SfDataGrid
+control: Data Grid
 documentation: ug
 ---
 
 
-# Row Height Customization in UWP DataGrid (SfDataGrid)
+# Row Height Customization in UWP Data Grid
 
 You can change the header row height by setting [SfDataGrid.HeaderRowHeight](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_HeaderRowHeight) and the other rows height can be changed by setting [SfDataGrid.RowHeight](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfGridBase.html#Syncfusion_UI_Xaml_Grid_SfGridBase_RowHeight) property. 
 
@@ -154,7 +154,7 @@ Here, row heights are customized based on the large text content.
 
 ![AutoFit RowHeight based on content Image in uwp datagrid](Row-Height-Customization_images/Row-Height-Customization_img3.png)
 
-#### GridRowSizingOptions
+### GridRowSizingOptions
 
 [GridRowSizingOptions](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridRowSizingOptions.html) have the following properties,
 
@@ -228,7 +228,7 @@ dataGrid.GetVisualContainer().InvalidateMeasureInfo();
 
 
 ### Update Row Height while editing
-You can set the height of the row based on the content after editing by refreshing the row height in [SfDataGrid.CurrentCellEndEdi](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html) event.
+You can set the height of the row based on the content after editing by refreshing the row height in [SfDataGrid.CurrentCellEndEdit](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html) event.
 
 You can call the `InvalidateRowHeight` method in `CurrentCellEndEdit` event to reset the particular row height. Then call the `InvalidateMeasureInfo` method of `VisualContainer` to refresh the view. Now the `QueryRowHeight` event is called again for edited row alone and row height is calculated based on edited content.
 
@@ -275,7 +275,7 @@ By default, auto height is supported for the headers is `QueryRowHeight` event. 
 
 {% tabs %}
 {% highlight xaml %}
-<Window.Resources>
+<Page.Resources>
     <DataTemplate x:Key="headerTemplate">
         <TextBlock Height="70"
                     FontWeight="Bold"
@@ -283,7 +283,7 @@ By default, auto height is supported for the headers is `QueryRowHeight` event. 
                     Text="Total Amount of Price in this month"
                     TextWrapping="Wrap" />
     </DataTemplate>
-</Window.Resources>
+</Page.Resources>
 
 <syncfusion:SfDataGrid x:Name="dataGrid" ItemsSource="{Binding Orders}">
     <syncfusion:SfDataGrid.Columns>

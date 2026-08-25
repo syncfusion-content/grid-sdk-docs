@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Printing in UWP DataGrid control | Syncfusion®
-description: Learn here all about Printing support in Syncfusion® UWP DataGrid (SfDataGrid) control and more.
+title: Printing in UWP Data Grid | Syncfusion®
+description: Printing in UWP Data Grid prints grid data with customizable layouts, formatting, and page settings for professional output.
 platform: grid-sdk
-control: SfDataGrid
+control: Data Grid
 documentation: ug
 ---
 
-# Printing in UWP DataGrid (SfDataGrid)
+# Printing in UWP Data Grid
 
 SfDataGrid provides support to print the data displayed in the DataGrid using [SfDataGrid.Print](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_Print) method.
  
@@ -622,7 +622,7 @@ N> [GetColumnWidth](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.P
 
 ### Printing Selected rows
 
-Selected rows can be printed by overriding [GetSourceListForPrinting](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.PrintManagerBase.html#Syncfusion_UI_Xaml_Grid_PrintManagerBase_GetSourceListForPrinting) method in `PrintManagerClass` class.
+Selected rows can be printed by overriding [GetSourceListForPrinting](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.PrintManagerBase.html#Syncfusion_UI_Xaml_Grid_PrintManagerBase_GetSourceListForPrinting) method in `GridPrintManager` class.
 
 {% tabs %}
 {% highlight c# %}
@@ -785,7 +785,7 @@ dataGrid.PrintSettings.PrintManagerBase.Print();
 
 N> View sample in [GitHub](https://github.com/SyncfusionExamples/How-to-print-specific-pages-in-uwp-datagrid).
 
-N> Printing the specific pages in uwp datagrid support only for the uwp target build version as 17763 or above. For more information [click here](https://docs.microsoft.com/en-us/uwp/api/windows.graphics.printing.printpagerange?view=winrt-19041).
+N> Printing the specific pages in uwp datagrid support only for the uwp target build version as 17763 or above. For more information, refer to [PrintPageRange](https://docs.microsoft.com/en-us/uwp/api/windows.graphics.printing.printpagerange?view=winrt-19041).
 
 ### Disable print preview
 
