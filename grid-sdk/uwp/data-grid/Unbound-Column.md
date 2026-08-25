@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Unbound Column in UWP DataGrid control | Syncfusion®
-description: Learn here all about Unbound Column support in Syncfusion® UWP DataGrid (SfDataGrid) control and more.
+title: Unbound Column in UWP Data Grid | Syncfusion®
+description: Unbound Column in UWP Data Grid displays calculated or custom values that are not directly bound to the underlying data source.
 platform: grid-sdk
-control: SfDataGrid
+control: Data Grid
 documentation: ug
 ---
 
 
-# Unbound Column in UWP DataGrid (SfDataGrid)
+# Unbound Column in UWP Data Grid
 
 SfDataGrid allows you to add **additional columns** which are **not bound with data object** from underlying data source. You can add unbound column using [GridUnBoundColumn](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.Grid.GridUnBoundColumn.html) class. Unbound columns support for sorting, filtering, grouping, exporting and printing as normal columns.
 
@@ -453,4 +453,4 @@ You can change the renderer of unbound column by removing the predefined cell ty
 
 ## Templating unbound column
 
-You can load any WPF control in the display mode for `GridUnBoundColumn` by setting `GridColumn.CellTemplate` property. In edit mode, corresponding editor will be loaded based on column type. You can refer the [CellTemplate](https://help.syncfusion.com/uwp/datagrid/column-types#celltemplate-in-gridcolumn) section of `GridColumn` and [GridTemplateColumn](https://help.syncfusion.com/uwp/datagrid/column-types#gridtemplatecolumn) for more information.
+You can load any UWP control in the display mode for `GridUnBoundColumn` by setting `GridColumn.CellTemplate` property. In edit mode, corresponding editor will be loaded based on column type. You can refer the [CellTemplate](https://help.syncfusion.com/uwp/datagrid/column-types#celltemplate-in-gridcolumn) section of `GridColumn` and [GridTemplateColumn](https://help.syncfusion.com/uwp/datagrid/column-types#gridtemplatecolumn) for more information.
