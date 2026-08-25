@@ -390,7 +390,7 @@ Refer to the following steps to create a satellite assembly.
 
 2.Select File > Save As to save the edited resource file as **Syncfusion.PivotAnalysis.Windows.Localization.SR.de-DE** in the desired location.
 
-3.Open the Visual Studio command prompt and enter the following command. Make sure to keep the sfpublic.snk file in the same location containing the "Syncfusion.PivotAnalysis.Windows.Localization.SR.de-DE.resources" file
+3.Open the Visual Studio command prompt and enter the following command. Make sure to keep the sf.public snk file in the same location containing the "Syncfusion.PivotAnalysis.Windows.Localization.SR.de-DE.resources" file
 
 {% highlight text %}
 
