@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Hiding Fields in WPF Pivot Grid control | Syncfusion®
-description: Learn about Hiding Fields support in Syncfusion® Essential Studio® WPF Pivot Grid control, its elements and more.
+title: Hiding Fields in WPF Pivot Table | Syncfusion®
+description: Hiding fields in the Syncfusion® WPF Pivot Table control allows users to hide unnecessary fields from the pivot table field list using ShowDisplayFieldsOnly
 platform: grid-sdk
-control: Pivot grid
+control: Pivot Table
 documentation: ug
 ---
 
-# Hiding Fields in WPF Pivot Grid
+# Hiding Fields in WPF Pivot Table
 
 You can hide the unnecessary fields from the pivot table field list using the `ShowDisplayFieldsOnly` property.
 

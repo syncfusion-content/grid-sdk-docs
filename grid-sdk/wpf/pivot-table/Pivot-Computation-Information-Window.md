@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Pivot Computation Information Dialog in WPF Pivot Grid | Syncfusion®
-description: Learn about Pivot Computation Information Dialog support in Syncfusion® WPF Pivot Grid control and more.
+title: Pivot Computation Information Dialog in WPF Pivot Table | Syncfusion®
+description: Use the Pivot Computation Information Dialog in the Syncfusion® WPF Pivot Table control to configure calculations, aggregation types, and display options.
 platform: grid-sdk
-control: Pivot grid
+control: Pivot Table
 documentation: ug
 ---
 
-# Pivot Computation Information Dialog in WPF Pivot Grid
+# Pivot Computation Information Dialog in WPF Pivot Table
 
 The pivot computation information dialog is used to change or edit value formats, summary types, calculation types, and the field header.
 

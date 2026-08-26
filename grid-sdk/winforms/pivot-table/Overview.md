@@ -1,13 +1,13 @@
 ---
 layout: post
-title: About Windows Forms Pivot Grid control | Syncfusion®
-description: Learn here all about introduction of Syncfusion® Windows Forms Pivot Grid control, its elements and more details.
+title: About Syncfusion Windows Forms Pivot Table Control | Syncfusion®
+description: Learn about introduction of Syncfusion® Essential Studio Windows Forms Pivot Table control and more details.
 platform: grid-sdk
-control: PivotGrid
+control: Pivot Table
 documentation: ug
 ---
 
-# Windows Forms Pivot Grid Overview
+# About Syncfusion Windows Forms Pivot Table Control
 
 The [WinForms Pivot Grid](https://www.syncfusion.com/winforms-ui-controls/pivot-grid) control is a powerful cell-oriented, extensible grid control that simulates the pivot table feature of Excel. The pivot grid, as the name implies, pivots data to be organized in a cross-tabulated form. The major advantage of pivot grid is that you can extract the desired information from a large list within seconds. Along with presenting the data, the pivot grid also enables you to summarize and group the data.
 

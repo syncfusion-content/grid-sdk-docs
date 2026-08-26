@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Show/Hide Sub-Totals in WPF Pivot Grid control | Syncfusion®
-description: Learn about Show/Hide Sub-Totals support in Syncfusion® Essential Studio® WPF Pivot Grid control, its elements and more.
+title: Show/Hide Sub-Totals in WPF Pivot Table | Syncfusion®
+description: Show or hide sub-totals in the Syncfusion® WPF Pivot Table control to customize summaries, simplify views, and focus analysis on essential pivot data.
 platform: grid-sdk
-control: Pivot grid
+control: Pivot Table
 documentation: ug
 ---
 
-# Show/Hide Sub-Totals in WPF Pivot Grid
+# Show/Hide Sub-Totals in WPF Pivot Table
 
 The subtotal hiding feature is used to show or hide subtotals in the pivot grid. It provides an abstract view of data as desired and provides the following levels of hiding.
 

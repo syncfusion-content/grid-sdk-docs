@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Cell Selection in Windows Forms Pivot Grid control | Syncfusion®
-description: Learn about Cell Selection support in Syncfusion® Windows Forms Pivot Grid control, its elements and more details.
+title: Cell Selection in Windows Forms Pivot Table | Syncfusion®
+description: Enable cell selection in Syncfusion® Windows Forms Pivot Table control with Excel-like frames, multi-cell selection, and customizable borders.
 platform: grid-sdk
-control: PivotGrid
+control: Pivot Table
 documentation: ug
 ---
 
-# Cell Selection in Windows Forms Pivot Grid
+# Cell Selection in Windows Forms Pivot Table
 
 The pivot grid supports cell selection where you can select grid value cells similar to Microsoft Excel. Using this support, selected cells can be copied to clipboard or notepad. The custom operations can be performed on cell selection and also any control can be bound to the pivot grid based on its selected cell values.
 
