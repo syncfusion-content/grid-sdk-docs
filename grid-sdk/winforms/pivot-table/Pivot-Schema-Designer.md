@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Pivot Schema Designer in Windows Forms Pivot Grid | Syncfusion®
-description: Learn about Pivot Schema Designer support in Syncfusion® Windows Forms Pivot Grid control and more details.
+title: Pivot Schema Designer in Windows Forms Pivot Table | Syncfusion®
+description: Pivot Schema Designer in Syncfusion® Windows Forms Pivot Table control lets users add, arrange, filter, and manage fields with Excel-like layout and features.
 platform: grid-sdk
-control: Pivot Grid
+control: Pivot Table
 documentation: ug
 ---
 
-# Pivot Schema Designer in Windows Forms Pivot Grid
+# Pivot Schema Designer in Windows Forms Pivot Table
 
 The [Pivot schema designer](https://help.syncfusion.com/cr/windowsforms/Syncfusion.Windows.Forms.PivotAnalysis.PivotGridControl.html#Syncfusion_Windows_Forms_PivotAnalysis_PivotGridControl_PivotSchemaDesigner) also known as pivot table field list allows you to add, rearrange, filter, and remove the pivot fields to show the data in the pivot grid exactly the way you desired.
 

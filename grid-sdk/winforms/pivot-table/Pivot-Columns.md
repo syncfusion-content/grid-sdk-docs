@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Pivot Columns in Windows Forms Pivot Grid control | Syncfusion®
-description: Learn about Pivot Columns support in Syncfusion® Windows Forms Pivot Grid control, its elements and more details.
+title: Pivot Columns in Windows Forms Pivot Table | Syncfusion®
+description: Define and manage pivot columns in Syncfusion® Windows Forms Pivot Table control using PivotItem with support for synchronization, sorting, and formatting.
 platform: grid-sdk
-control: PivotGrid
+control: Pivot Table
 documentation: ug
 ---
 
-# Pivot Columns in Windows Forms Pivot Grid
+# Pivot Columns in Windows Forms Pivot Table
 
 Pivot columns are defined by using the [PivotItem](https://help.syncfusion.com/cr/windowsforms/Syncfusion.PivotAnalysis.Base.PivotItem.html) object which holds the information needed for columns that appear in the pivot grid control.
 

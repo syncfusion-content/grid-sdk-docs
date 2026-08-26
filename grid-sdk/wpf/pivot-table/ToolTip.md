@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Tooltip in WPF Pivot Grid control | Syncfusion®
-description: Learn about Tooltip support in Syncfusion® Essential Studio® WPF Pivot Grid control, its elements and more.
+title: Tooltip in WPF Pivot Table | Syncfusion®
+description: Tooltip in the Syncfusion® WPF Pivot Table control displays cell values with row and column details, and supports customization for enhanced analysis.
 platform: grid-sdk
-control: Pivot grid
+control: Pivot Table
 documentation: ug
 ---
 
-# Tooltip in WPF Pivot Grid
+# Tooltip in WPF Pivot Table
 
 Tooltip holds the respective cell value and its row and column information. It can be enabled or disabled using the `TooltipEnabled` Boolean property. User can customize the tooltip skin at the sample level and also can set the custom text.
 

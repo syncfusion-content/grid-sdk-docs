@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Sorting events | PivotGrid | Syncfusion®
-description: Support to keep tracking of the sorter value fields, which is invoked before and after the sort operation.
+title: Sorting Events in WPF Pivot Table | Syncfusion®
+description: Sorting Events in the Syncfusion® WPF Pivot Table control help track value fields before and after sorting using SortBegin and SortCompleted.
 platform: grid-sdk
-control: Pivot grid
+control: Pivot Table
 documentation: ug
 ---
 
-# Sorting Events in WPF Pivot Grid Control
+# Sorting Events in WPF Pivot Table
 
 The pivot grid provides certain sorting events to keep track of the sorted value fields, which is invoked before and after the sort operation.
 

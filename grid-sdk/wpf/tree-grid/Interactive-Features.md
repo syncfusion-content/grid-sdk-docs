@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Interactive Features in WPF TreeGrid control | Syncfusion®
-description: Learn here all about Interactive Features support in Syncfusion® WPF TreeGrid (SfTreeGrid) control and more.
+title: Interactive Features in WPF TreeGrid | Syncfusion®
+description: Interactive features in TreeGrid enhance usability by offering context menus, drag‑and‑drop, tooltips, and flexible customization.
 platform: grid-sdk
-control: SfTreeGrid
+control: TreeGrid
 documentation: ug
 ---
 
-# Interactive Features in WPF TreeGrid (SfTreeGrid)
+# Interactive Features in WPF TreeGrid
 
 ## Context menu
 

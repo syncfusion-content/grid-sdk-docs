@@ -1,13 +1,13 @@
 ---
 layout: post
-title: 144-Hide-the-Grand-Totals-Present-in-the-PivotGrid | Syncfusion
-description: Section that helps to know how to show or hide the grand totals present in pivot grid control. | Syncfusion
+title: How to Hide Grand Totals in WPF Pivot Table | Syncfusion®
+description: Hide the grand totals in Syncfusion® WPF Pivot Table control by setting the ShowGrandTotals property to false.
 platform: grid-sdk
-control: PivotGridControl
+control: Pivot Table
 documentation: ug
 ---
 
-# How to hide the Grand Total present in the PivotGrid?
+# How to Hide Grand Totals in WPF Pivot Table
 
 It can be achieved by setting the property `ShowGrandTotals` to false. By default, PivotGrid displays Grand Total for both column and row headers. 
 It can be mentioned either in *XAML* or in *Code-Behind*.

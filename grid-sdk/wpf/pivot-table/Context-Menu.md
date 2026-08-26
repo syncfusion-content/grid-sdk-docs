@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Context Menu in WPF Pivot Grid control | Syncfusion®
-description: Learn about Context Menu support in Syncfusion® Essential Studio® WPF Pivot Grid control, its elements and more.
+title: Context Menu in WPF Pivot Table | Syncfusion®
+description: Context Menu in the Syncfusion® WPF Pivot Table control provides quick actions and manages pivot table operations efficiently.
 platform: grid-sdk
-control: Pivot grid
+control: Pivot Table
 documentation: ug
 ---
 
-# Context Menu in WPF Pivot Grid
+# Context Menu in WPF Pivot Table
 
 The [WPF Pivot Grid](https://www.syncfusion.com/wpf-controls/pivot-grid) supports the context menu option in RowPivotsOnly mode. Following are the available options.
 
