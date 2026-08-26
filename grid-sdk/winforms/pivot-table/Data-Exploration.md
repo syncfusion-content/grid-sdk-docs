@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Data Exploration in Windows Forms Pivot Grid control | Syncfusion®
-description: Learn about Data Exploration support in Syncfusion® Windows Forms Pivot Grid control and more details.
+title: Data Exploration in Windows Forms Pivot Table | Syncfusion®
+description: Explore data in Syncfusion® Windows Forms Pivot Table control with drill down and drill up support, expanding or collapsing headers programmatically.
 platform: grid-sdk
-control: Pivot Grid
+control: Pivot Table
 documentation: ug
 ---
 
-# Data Exploration in Windows Forms Pivot Grid
+# Data Exploration in Windows Forms Pivot Table
 
 Pivot grid provides support for drill down and drill up to visualize the pivot information in both abstract and detailed views. The row headers and column headers can be expanded or collapsed programmatically to explore the pivot data.
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Printing in Windows Forms Pivot Grid control | Syncfusion®
-description: Learn about Printing support in Syncfusion® Windows Forms Pivot Grid control, its elements and more details.
+title: Printing in Windows Forms Pivot Table | Syncfusion®
+description: Print Syncfusion® Windows Forms Pivot Table control with support for preview, headers, footers, landscape or portrait views, and customizable events.
 platform: grid-sdk
-control: Pivot Grid
+control: Pivot Table
 documentation: ug
 ---
 
-# Printing in Windows Forms Pivot Grid
+# Printing in Windows Forms Pivot Table
 
 Pivot grid provides support for printing that allows users to print the contents of pivot grid on paper and it also provides support to preview the contents before printing. This support is used to print the pivot grid control in both landscape and portrait views.
 

@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Layouts in Windows Forms Pivot Grid Control | Syncfusion®
-description: Learn here all about layouts support in Syncfusion® Windows Forms Pivot Grid control, its elements, and more.
+title: Layouts in Windows Forms Pivot Table | Syncfusion®
+description: Configure layouts in Syncfusion® Windows Forms Pivot Table control with support for normal and flat layouts, subtotals, grand totals, and interactive options.
 platform: grid-sdk
-control: PivotGrid
+control: Pivot Table
 documentation: ug
 ---
 
-# Layouts in Windows Forms Pivot Grid
+# Layouts in Windows Forms Pivot Table
 
 [Windows Forms Pivot Grid](https://www.syncfusion.com/winforms-ui-controls/pivot-grid) provides support for the following types of layout in order to display the values of pivot fields.
 
