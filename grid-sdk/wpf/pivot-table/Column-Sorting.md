@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Sorting in WPF Pivot Grid control | Syncfusion®
-description: Learn about Sorting support in Syncfusion® Essential Studio® WPF Pivot Grid control, its elements and more.
+title: Column Sorting in WPF Pivot Table | Syncfusion®
+description: Column Sorting in the Syncfusion® WPF Pivot Table control supports ascending, descending, and custom options for organized pivot data.
 platform: grid-sdk
-control: Pivot grid
+control: Pivot Table
 documentation: ug
 ---
 
-# Sorting in WPF Pivot Grid
+# Column Sorting in WPF Pivot Table
 
 The [WPF Pivot Grid](https://www.syncfusion.com/wpf-controls/pivot-grid) control provides a sorting option for calculation columns in RowPivotsOnly mode. This can be enabled or disabled using the `AllowSort` property of `PivotComputationInfo`.
 
