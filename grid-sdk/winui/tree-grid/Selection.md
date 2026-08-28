@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Selection in WinUI TreeGrid control | Syncfusion®
-description: Learn here all about Selection support in Syncfusion® WinUI TreeGrid(SfTreeGrid) control with cell navigation and more.
+title: Selection in WinUI TreeGrid | Syncfusion®
+description: Selection in TreeGrid supports row and cell selection with navigation modes and flexible selection behavior.
 platform: grid-sdk
 control: TreeGrid
 documentation: ug
@@ -199,7 +199,7 @@ this.sfTreeGrid.SelectionController.MoveCurrentCell(new RowColumnIndex(3, 2), fa
 
 ### Clear selection
 
-You can clear the selection using the [ClearSelections](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_ClearSelections_System_Boolean_) method. In row selection, you can remove the selection by setting null to the `SelectedItem` or clearing the `SelectedItems` property.
+You can clear the selection using the [ClearSelections](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.TreeGridBaseSelectionController.html#Syncfusion_UI_Xaml_TreeGrid_TreeGridBaseSelectionController_ClearSelections_System_Boolean_) method of the `SelectionController`. In row selection, you can remove the selection by setting null to the `SelectedItem` or clearing the `SelectedItems` property.
 
 {% tabs %}
 {% highlight c# %}
