@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Filtering in WinUI TreeGrid control | Syncfusion®
-description: Learn here all about Filtering support in Syncfusion® WinUI TreeGrid(SfTreeGrid) control with programmatic support and more.
+title: Filtering in WinUI TreeGrid | Syncfusion®
+description: Filtering in TreeGrid refines visible nodes with filter levels, programmatic filters, and UI filter.
 platform: grid-sdk
-control: SfTreeGrid
+control: TreeGrid
 documentation: ug
 ---
 
@@ -27,7 +27,7 @@ treeGrid.FilterLevel = FilterLevel.All;
 
 * All - Filter will be applied to all the nodes in SfTreeGrid.
 
-* Extended - Filtering is applied based on the node hierarchy. Child nodes are included in filtering only when their parent node is expanded. If a node matches the filter condition, all of its ancestor nodes are displayed to preserve the hierarchy, even if those ancestor nodes do not match the filter condition.
+* Extended - Filtering is applied based on the node hierarchy. Child nodes are included in filtering only when their parent node is expanded. If a node matches the filter condition, all of its ancestor nodes are displayed to preserve the hierarchy, even if those ancestor nodes do not match the filter condition. 
 
 **Root**
 
@@ -58,7 +58,7 @@ View filtering can be achieved by setting the [SfTreeGrid.View.Filter](https://h
 {% tabs %}
 {% highlight c# %}
 
-public bool FilerNodes(object o)
+public bool FilterNodes(object o)
 {
     var data = o as Employee;
 
@@ -71,7 +71,7 @@ private void Button_Click(object sender, RoutedEventArgs e)
 {   
     if (treeGrid != null && treeGrid.View != null)
     {
-    	treeGrid.View.Filter = FilerNodes;
+    	treeGrid.View.Filter = FilterNodes;
     	treeGrid.View.RefreshFilter();
     }
 }
