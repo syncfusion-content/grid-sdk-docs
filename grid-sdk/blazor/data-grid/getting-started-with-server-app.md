@@ -2,7 +2,7 @@
 layout: post
 title: Getting Started with DataGrid in the Blazor Server App | Syncfusion®
 description: Check out and learn about the documentation for getting started with Blazor DataGrid Component in Blazor Server App.
-platform: Blazor
+platform: grid-sdk
 control: DataGrid
 documentation: ug
 ---
