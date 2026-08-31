@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Getting Started with Blazor DataGrid in Blazor Web App | Syncfusion
-description: Learn how to get started with Syncfusion Blazor DataGrid in a Web app, including project setup, package installation, service registration, and data binding.
-platform: Blazor
+description: Check out and learn about the documentation for getting started with Blazor DataGrid in Blazor Web App.
+platform: grid-sdk
 component: DataGrid
 documentation: ug
 ---
