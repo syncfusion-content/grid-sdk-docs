@@ -1,17 +1,17 @@
 ---
 layout: post
-title: Getting Started with UWP TreeGrid control | Syncfusion®
-description: Learn here about getting started with Syncfusion® UWP TreeGrid (SfTreeGrid) control, its elements and more.
+title: Getting Started with UWP TreeGrid | Syncfusion®
+description: Learn how to get started with the Syncfusion® UWP TreeGrid control. Explore setup, features, examples, and customization options.
 platform: grid-sdk
-control: SfTreeGrid
+control: TreeGrid
 documentation: ug
 ---
 
-# Getting Started with UWP TreeGrid (SfTreeGrid)
+# Getting Started with UWP TreeGrid
 
 The SfTreeGrid is a data oriented control that displays the self-relational and hierarchical data in tree structure with columns. The data can be loaded on-demand also.
 
-### Assembly Deployment
+## Assembly Deployment
 
 The following list of assemblies needs to be added as reference to use SfTreeGrid control in any application,
 
@@ -1079,4 +1079,4 @@ You can customize sorting by handling the [SfTreeGrid.SortColumnChanging](https:
 
 ### Editing
 
-Editing can be enabled by setting [SfTreeGrid.AllowEditing](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html) events.
+Editing can be enabled by setting [SfTreeGrid.AllowEditing](https://help.syncfusion.com/cr/uwp/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html) property to `true`.
