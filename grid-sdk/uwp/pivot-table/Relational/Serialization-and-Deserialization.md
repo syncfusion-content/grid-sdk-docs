@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Serialization and Deserialization in UWP Pivot Grid control | Syncfusion
-description: Learn here all about Serialization and Deserialization support in Syncfusion UWP Pivot Grid (SfPivotGrid) control and more.
+title: Serialization and Deserialization in UWP Pivot Table | Syncfusion®
+description: Serialization and Deserialization in Syncfusion® UWP Pivot Table control save and restore grid settings using XML files, streams, storage, or strings.
 platform: grid-sdk
-control: SfPivotGrid
+control: Pivot Table
 documentation: ug
 ---
 
-# Serialization and Deserialization in UWP Pivot Grid (SfPivotGrid)
+# Serialization and Deserialization in UWP Pivot Table
 
 This support allows you to serialize and deserialize the settings of SfPivotGrid control using [DataContractSerializer](https://msdn.microsoft.com/en-in/library/system.runtime.serialization.datacontractserializer.aspx).
 
