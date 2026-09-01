@@ -1,19 +1,20 @@
 ---
 layout: post
-title: ASP.NET MVC Grid Overview | Syncfusion
-description: Learn how to use ASP.NET MVC Data Grid to display and manage tabular data with data binding, paging, sorting, filtering, editing, and templates.
+title: Vue Data Grid Overview and Features | Syncfusion
+description: Learn how to use Vue Data Grid for data management, CRUD operations, sorting, filtering, grouping, paging, and virtualization.
+control: Overview 
 platform: grid-sdk
-control: Overview
 documentation: ug
+domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# ASP.NET MVC Data Grid Overview
+# Vue Data Grid Overview
 
-The ASP.NET MVC Data Grid is a powerful and feature-rich UI component designed for displaying and managing tabular data with high performance and flexibility. It offers a comprehensive set of enterprise-grade capabilities, including advanced data operations, seamless integration with multiple data sources, and extensive customization options. 
+The Vue Data Grid is a powerful and feature-rich UI component designed for displaying and managing tabular data with high performance and flexibility. It offers a comprehensive set of enterprise-grade capabilities, including advanced data operations, seamless integration with multiple data sources, and extensive customization options. 
 
 ## Common use cases
 
-The ASP.NET MVC Data Grid supports a wide range of data-intensive application scenarios.
+The Vue Data Grid supports a wide range of data-intensive application scenarios.
 
 | Use case | Description | Relevant grid capabilities |
 |----------|-------------|-----------------------|
@@ -25,7 +26,7 @@ The ASP.NET MVC Data Grid supports a wide range of data-intensive application sc
 
 ## Data connectivity
 
-The ASP.NET MVC Data Grid integrates with modern application architectures, supporting local collections, REST APIs, GraphQL services, OData endpoints, ORM frameworks, and relational databases.
+The Vue Data Grid integrates with modern application architectures, supporting local collections, REST APIs, GraphQL services, OData endpoints, ORM frameworks, and relational databases.
 
 ### Data binding approaches
 
@@ -33,7 +34,7 @@ The ASP.NET MVC Data Grid integrates with modern application architectures, supp
 
 - **[Remote data](./data-binding/remote-data)** - Connect to web services, REST APIs, and remote endpoints with automatic request handling and response parsing. Ideal for scalable applications with large or frequently updated datasets.
 
-- **[Custom API binding](./data-binding/remote-data#binding-observable-data-using-async-pipe)** - Connect the Data Grid to external APIs and data services with full control over request handling, response parsing, and data operations.
+- **[Custom API binding](./data-binding/remote-data)** - Connect the Data Grid to external APIs and data services with full control over request handling, response parsing, and data operations.
 
 - **ORM integration** - Seamless integration with popular Object-Relational Mapping frameworks eliminates custom data mapping code and enables LINQ-based queries.
     - **[Entity Framework](./connecting-to-orm/entityframework)** - Integrate with Entity Framework and EF Core-based applications.
@@ -43,7 +44,7 @@ The ASP.NET MVC Data Grid integrates with modern application architectures, supp
 
 The Data Grid integrates with major relational databases to provide seamless data access and management:
 
-| Database | Key Benefit | Best For |
+| Database | Key benefit | Best for |
 |----------|---------------|----------|
 | **[Microsoft SQL Server](./connecting-to-database/microsoft-sql-server)** | ADO.NET and Entity Framework integration | Enterprise applications, complex queries |
 | **[MySQL Server](./connecting-to-database/mysql-server)** | Cross-platform connectivity | Web applications, open-source stacks |
@@ -63,7 +64,7 @@ API and service integration enables the Data Grid to connect seamlessly with Gra
 
 ## Data operations
 
-The ASP.NET MVC Data Grid includes key features that make it easier to work with and understand large sets of information. These capabilities support organizing records, locating information efficiently, and summarizing results to enable clear analysis of complex datasets.
+The Vue Data Grid includes key features that make it easier to work with and understand large sets of information. These capabilities support organizing records, locating information efficiently, and summarizing results to enable clear analysis of complex datasets.
 
 - **[Sorting](./sorting)** - Arrange records in ascending or descending order to quickly identify trends and patterns.
 - **[Filter bar](./filtering/filter-bar)** - Apply inline text filters in column headers for immediate results without dialogs.  
@@ -75,11 +76,11 @@ The ASP.NET MVC Data Grid includes key features that make it easier to work with
 
 ## Large-scale rendering performance
 
-The ASP.NET MVC Data Grid is designed for high performance, ensuring smooth interaction with large datasets. It uses built-in DOM virtualization with paging or virtual scrolling to load data on demand. This approach minimizes memory usage and reduces rendering overhead by limiting the number of active DOM elements, delivering responsive navigation and seamless scrolling even with very large datasets.
+The Vue Data Grid is designed for high performance, ensuring smooth interaction with large datasets. It uses built-in DOM virtualization with paging or virtual scrolling to load data on demand. This approach minimizes memory usage and reduces rendering overhead by limiting the number of active DOM elements, delivering responsive navigation and seamless scrolling even with very large datasets.
 
 ## Editing and CRUD operations
 
-The ASP.NET MVC Data Grid enables seamless Create, Read, Update, and Delete (CRUD) operations directly within the grid interface, eliminating the need for separate forms or pages. Data modification occurs inline with immediate visual feedback, improving productivity and reducing context switching.
+The Vue Data Grid enables seamless Create, Read, Update, and Delete (CRUD) operations directly within the grid interface, eliminating the need for separate forms or pages. Data modification occurs inline with immediate visual feedback, improving productivity and reducing context switching.
 
 **Editing modes**
 
@@ -97,7 +98,7 @@ Built-in validation rules such as required fields, minimum and maximum values, a
 
 ## Columns
 
-The ASP.NET MVC Data Grid provides flexible column and layout customization with formatting, resizing, reordering, and visibility controls for professional displays.
+The Vue Data Grid provides flexible column and layout customization with formatting, resizing, reordering, and visibility controls for professional displays.
 
 - **[Column formatting](./columns/columns)** - Apply predefined or custom formats (currency, dates, percentages) for professional number and date presentation.  
 - **[Column resizing](./columns/column-resizing)** - Adjust widths manually with auto-fit and responsive options for optimal visibility. 
@@ -109,11 +110,11 @@ The ASP.NET MVC Data Grid provides flexible column and layout customization with
 
 ## Responsive design
 
-The ASP.NET MVC Data Grid provides [adaptive layouts](./adaptive) and mobile-friendly interactions for a consistent experience across desktop, tablet, and mobile devices.
+The Vue Data Grid provides [adaptive layouts](./adaptive) and mobile-friendly interactions for a consistent experience across desktop, tablet, and mobile devices.
 
 ## User experience and interaction
 
-The ASP.NET MVC Data Grid delivers accessible, customizable data experiences with flexible interactions, templating, and standards-compliant accessibility support.
+The Vue Data Grid delivers accessible, customizable data experiences with flexible interactions, templating, and standards-compliant accessibility support.
 
 **Templating and customization**
 
@@ -145,7 +146,7 @@ The Data Grid is fully accessible and compliant with Web Content Accessibility G
 
 ## Export and print
 
-The ASP.NET MVC Data Grid provides comprehensive export and reporting capabilities, enabling extraction, analysis, and distribution of grid data in professional document formats. Built-in Excel, PDF, and print functionality with customizable templates eliminates the need for external reporting tools.
+The Vue Data Grid provides comprehensive export and reporting capabilities, enabling extraction, analysis, and distribution of grid data in professional document formats. Built-in Excel, PDF, and print functionality with customizable templates eliminates the need for external reporting tools.
 
 | Format | Key benefit | Best for |
 |--------|-------------|----------|
@@ -156,9 +157,9 @@ The ASP.NET MVC Data Grid provides comprehensive export and reporting capabiliti
 
 ## Advanced features
 
-The ASP.NET MVC Data Grid includes sophisticated capabilities designed for complex enterprise data scenarios. These advanced features enable developers to build powerful, scalable data management solutions that handle demanding business requirements.
+The Vue Data Grid includes sophisticated capabilities designed for complex enterprise data scenarios. These advanced features enable developers to build powerful, scalable data management solutions that handle demanding business requirements.
   
-- **[Master-detail grids](./hierarchy-grid)** - Implement master-detail relationships to display complex parent-child data structures.  
+- **[Master-detail grids](./hierarchy-grid)** - Implement maste-detail relationships to display complex parent-child data structures.  
 - **[Row spanning](./row-spanning)** - Extend cells vertically across rows to create specialized layouts.  
 - **[Detail templates](./detail-template)** - Add expandable row sections for drill-down exploration and richer data views.
 - **[Foreign key columns](./columns/foreign-key-column)** - Automatically look up related data to show meaningful relationships.  
@@ -175,7 +176,7 @@ For specific implementation patterns, refer to feature documentation:
 
 ## Themes and styling
 
-Match the ASP.NET MVC Data Grid to the application's visual design using built-in themes and customization options. Supported themes are:
+Match the Vue Data Grid to the application's visual design using built-in themes and customization options. Supported themes are:
 
 - Fluent 2
 - Material 3
@@ -183,14 +184,14 @@ Match the ASP.NET MVC Data Grid to the application's visual design using built-i
 - Tailwind CSS
 - Fluent 2 High Contrast
 
-[Syncfusion Theme Studio](https://ej2.syncfusion.com/aspnetmvc/documentation/appearance/theme-studio) allows customization of the Data Grid's appearance by modifying theme variables such as primary, accent, and background colors, enabling consistent styling, lightweight CSS generation, and seamless integration while ensuring the grid aligns with application design requirements.
+[Syncfusion Theme Studio](https://ej2.syncfusion.com/vue/documentation/appearance/theme-studio) allows customization of the Data Grid’s appearance by modifying theme variables such as primary, accent, and background colors, enabling consistent styling, lightweight CSS generation, and seamless integration while ensuring the grid aligns with application design requirements
 
 [Explore themes and styling](../appearance-and-styling/appearance-styling)
 
 ## Quick links
 
 **Getting started:**
-- [ASP.NET MVC Data Grid Guide](./getting-started)
+- [Vue Data Grid Guide](./getting-started)
 
 **Popular features:**
 - [Filtering](./filtering/filtering) 
@@ -207,7 +208,7 @@ Match the ASP.NET MVC Data Grid to the application's visual design using built-i
 ## Support and resources
 
 - **Questions?** Visit the [Syncfusion support portal](https://www.syncfusion.com/support)
-- **Code Examples?** Browse [Data Grid demos](https://ej2.syncfusion.com/aspnetmvc/grid/gridoverview#/fluent2) and samples
-- **API Details?** See [Data Grid API reference](https://help.syncfusion.com/cr/aspnetmvc-js2/syncfusion.ej2.grids.grid.html)
-- **Community?** Join the [Syncfusion community forum](https://www.syncfusion.com/forums/aspnetmvc-js2)
-- **What's new?** Check [Release notes](../../Release-Notes)
+- **Code Examples?** Browse [Data Grid demos](https://ej2.syncfusion.com/vue/demos/#/tailwind3/grid/grid-overview) and samples
+- **API Details?** See [Data Grid API reference](https://ej2.syncfusion.com/vue/documentation/api/grid/index-default)
+- **Community?** Join the [Syncfusion community forum](https://www.syncfusion.com/forums/vue)
+- **What's New?** Check [Release Notes](../../Release-Notes)
