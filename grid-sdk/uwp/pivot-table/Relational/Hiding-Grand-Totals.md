@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Hiding Grand Totals
-description: Hiding grand totals in pivot grid
+title: Hiding Grand Totals in UWP Pivot Table | Syncfusion®
+description: Hide grand totals in Syncfusion® UWP Pivot Table control by disabling the ShowGrandTotals property to remove overall row and column summaries.
 platform: grid-sdk
-control: SfPivotGrid
+control: Pivot Table
 documentation: ug
 ---
 
-# Hiding Grand Totals
+# Hiding Grand Totals in UWP Pivot Table
 
 You can hide the grand total values of the pivot grid control by setting the `ShowGrandTotals` property to false. By default, the pivot grid displays the grand total values of both rows and columns.
 
