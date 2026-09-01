@@ -1,20 +1,20 @@
 ---
 layout: post
-title: Javascript Data Grid Overview and Features | Syncfusion
-description: Learn how to use Javascript Data Grid for data management, CRUD operations, sorting, filtering, grouping, paging, and virtualization.
+title: JavaScript Data Grid Overview and Features | Syncfusion
+description: Learn how to use JavaScript Data Grid for data management, CRUD operations, sorting, filtering, grouping, paging, and virtualization.
 platform: grid-sdk
 control: Overview
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Javascript Data Grid Overview
+# JavaScript Data Grid Overview
 
-The Javascript Data Grid is a powerful and feature-rich UI component designed for displaying and managing tabular data with high performance and flexibility. It offers a comprehensive set of enterprise-grade capabilities, including advanced data operations, seamless integration with multiple data sources, and extensive customization options. 
+The JavaScript Data Grid is a powerful and feature-rich UI component designed for displaying and managing tabular data with high performance and flexibility. It offers a comprehensive set of enterprise-grade capabilities, including advanced data operations, seamless integration with multiple data sources, and extensive customization options. 
 
 ## Common use cases
 
-The Javascript Data Grid supports a wide range of data-intensive application scenarios.
+The JavaScript Data Grid supports a wide range of data-intensive application scenarios.
 
 | Use case | Description | Relevant grid capabilities |
 |----------|-------------|-----------------------|
@@ -26,7 +26,7 @@ The Javascript Data Grid supports a wide range of data-intensive application sce
 
 ## Data connectivity
 
-The Javascript Data Grid integrates with modern application architectures, supporting local collections, REST APIs, GraphQL services, OData endpoints, ORM frameworks, and relational databases.
+The JavaScript Data Grid integrates with modern application architectures, supporting local collections, REST APIs, GraphQL services, OData endpoints, ORM frameworks, and relational databases.
 
 ### Data binding approaches
 
@@ -53,7 +53,7 @@ The Data Grid integrates with major relational databases to provide seamless dat
 
 **API and service integration**
 
-API and service integration enables the Data Grid to connect seamlessly with GraphQL, Web API, OData, URL, and custom services for flexible backend data access.
+API and service integration enables the Data Grid to connect seamlessly with GraphQL, Web API, OData, URL, and custom services for flexible server-side data access.
 
 | Integration approach | Best suited for | Key benefit |
 |-----------------------|------------------|-------------|
@@ -64,7 +64,7 @@ API and service integration enables the Data Grid to connect seamlessly with Gra
 
 ## Data operations
 
-The Javascript Data Grid includes key features that make it easier to work with and understand large sets of information. These capabilities support organizing records, locating information efficiently, and summarizing results to enable clear analysis of complex datasets.
+The JavaScript Data Grid includes key features that make it easier to work with and understand large sets of information. These capabilities support organizing records, locating information efficiently, and summarizing results to enable clear analysis of complex datasets.
 
 - **[Sorting](./sorting)** - Arrange records in ascending or descending order to quickly identify trends and patterns.
 - **[Filter bar](./filtering/filter-bar)** - Apply inline text filters in column headers for immediate results without dialogs.  
@@ -76,11 +76,11 @@ The Javascript Data Grid includes key features that make it easier to work with 
 
 ## Large-scale rendering performance
 
-The Javascript Data Grid is designed for high performance, ensuring smooth interaction with large datasets. It uses built-in DOM virtualization with paging or virtual scrolling to load data on demand. This approach minimizes memory usage and reduces rendering overhead by limiting the number of active DOM elements, delivering responsive navigation and seamless scrolling even with very large datasets.
+The JavaScript Data Grid is designed for high performance, ensuring smooth interaction with large datasets. It uses built-in DOM virtualization with paging or virtual scrolling to load data on demand. This approach minimizes memory usage and reduces rendering overhead by limiting the number of active DOM elements, delivering responsive navigation and seamless scrolling even with very large datasets.
 
 ## Editing and CRUD operations
 
-The Javascript Data Grid enables seamless Create, Read, Update, and Delete (CRUD) operations directly within the grid interface, eliminating the need for separate forms or pages. Data modification occurs inline with immediate visual feedback, improving productivity and reducing context switching.
+The JavaScript Data Grid enables seamless Create, Read, Update, and Delete (CRUD) operations directly within the grid interface, eliminating the need for separate forms or pages. Data modification occurs inline with immediate visual feedback, improving productivity and reducing context switching.
 
 **Editing modes**
 
@@ -98,7 +98,7 @@ Built-in validation rules such as required fields, minimum and maximum values, a
 
 ## Columns
 
-The Javascript Data Grid provides flexible column and layout customization with formatting, resizing, reordering, and visibility controls for professional displays.
+The JavaScript Data Grid provides flexible column and layout customization with formatting, resizing, reordering, and visibility controls for professional displays.
 
 - **[Column formatting](./columns/columns)** - Apply predefined or custom formats (currency, dates, percentages) for professional number and date presentation.  
 - **[Column resizing](./columns/column-resizing)** - Adjust widths manually with auto-fit and responsive options for optimal visibility. 
@@ -110,11 +110,11 @@ The Javascript Data Grid provides flexible column and layout customization with 
 
 ## Responsive design
 
-The Javascript Data Grid provides [adaptive layouts](./adaptive) and mobile-friendly interactions for a consistent experience across desktop, tablet, and mobile devices.
+The JavaScript Data Grid provides [adaptive layouts](./adaptive) and mobile-friendly interactions for a consistent experience across desktop, tablet, and mobile devices.
 
 ## User experience and interaction
 
-The Javascript Data Grid delivers accessible, customizable data experiences with flexible interactions, templating, and standards-compliant accessibility support.
+The JavaScript Data Grid delivers accessible, customizable data experiences with flexible interactions, templating, and standards-compliant accessibility support.
 
 **Templating and customization**
 
@@ -146,7 +146,7 @@ The Data Grid is fully accessible and compliant with Web Content Accessibility G
 
 ## Export and print
 
-The Javascript Data Grid provides comprehensive export and reporting capabilities, enabling extraction, analysis, and distribution of grid data in professional document formats. Built-in Excel, PDF, and print functionality with customizable templates eliminates the need for external reporting tools.
+The JavaScript Data Grid provides comprehensive export and reporting capabilities, enabling extraction, analysis, and distribution of grid data in professional document formats. Built-in Excel, PDF, and print functionality with customizable templates eliminates the need for external reporting tools.
 
 | Format | Key benefit | Best for |
 |--------|-------------|----------|
@@ -157,7 +157,7 @@ The Javascript Data Grid provides comprehensive export and reporting capabilitie
 
 ## Advanced features
 
-The Javascript Data Grid includes sophisticated capabilities designed for complex enterprise data scenarios. These advanced features enable developers to build powerful, scalable data management solutions that handle demanding business requirements.
+The JavaScript Data Grid includes sophisticated capabilities designed for complex enterprise data scenarios. These advanced features enable developers to build powerful, scalable data management solutions that handle demanding business requirements.
   
 - **[Master-detail grids](./hierarchy-grid)** - Implement master-detail relationships to display complex parent-child data structures.  
 - **[Row spanning](./row-spanning)** - Extend cells vertically across rows to create specialized layouts.  
@@ -176,7 +176,7 @@ For specific implementation patterns, refer to feature documentation:
 
 ## Themes and styling
 
-Match the Javascript Data Grid to the application's visual design using built-in themes and customization options. Supported themes are:
+Match the JavaScript Data Grid to the application's visual design using built-in themes and customization options. Supported themes are:
 
 - Fluent 2
 - Material 3
@@ -184,14 +184,14 @@ Match the Javascript Data Grid to the application's visual design using built-in
 - Tailwind CSS
 - Fluent 2 High Contrast
 
-[Syncfusion Theme Studio](https://ej2.syncfusion.com/javascript/documentation/appearance/theme-studio) allows customization of the Data Grid's appearance by modifying theme variables such as primary, accent, and background colors, enabling consistent styling, lightweight CSS generation, and seamless integration while ensuring the grid aligns with application design requirements.
+[Syncfusion Theme Studio](https://ej2.syncfusion.com/JavaScript/documentation/appearance/theme-studio) allows customization of the Data Grid's appearance by modifying theme variables such as primary, accent, and background colors, enabling consistent styling, lightweight CSS generation, and seamless integration while ensuring the grid aligns with application design requirements.
 
 [Explore themes and styling](../appearance-and-styling/appearance-styling)
 
 ## Quick links
 
 **Getting started:**
-- [Javascript Data Grid Guide](./getting-started)
+- [JavaScript Data Grid Guide](./getting-started)
 
 **Popular features:**
 - [Filtering](./filtering/filtering) 
@@ -208,7 +208,7 @@ Match the Javascript Data Grid to the application's visual design using built-in
 ## Support and resources
 
 - **Questions?** Visit the [Syncfusion support portal](https://www.syncfusion.com/support)
-- **Code Examples?** Browse [Data Grid demos](https://ej2.syncfusion.com/javascript/demos/#/tailwind3/grid/grid-overview.html) and samples
-- **API Details?** See [Data Grid API reference](https://ej2.syncfusion.com/javascript/documentation/api/grid/index-default)
+- **Code Examples?** Browse [Data Grid demos](https://ej2.syncfusion.com/JavaScript/demos/#/tailwind3/grid/grid-overview.html) and samples
+- **API Details?** See [Data Grid API reference](https://ej2.syncfusion.com/JavaScript/documentation/api/grid/index-default)
 - **Community?** Join the [Syncfusion community forum](https://www.syncfusion.com/forums/essential-js2)
 - **What's New?** Check [Release notes](../../Release-Notes)

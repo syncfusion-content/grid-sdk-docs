@@ -53,7 +53,7 @@ The Data Grid integrates with major relational databases to provide seamless dat
 
 **API and service integration**
 
-API and service integration enables the Data Grid to connect seamlessly with GraphQL, Web API, OData, URL, and custom services for flexible backend data access.
+API and service integration enables the Data Grid to connect seamlessly with GraphQL, Web API, OData, URL, and custom services for flexible server-side data access.
 
 | Integration approach | Best suited for | Key benefit |
 |-----------------------|------------------|-------------|
