@@ -1,6 +1,7 @@
 ---
 layout: post
-title: Learn how to use React Data Grid for data management, CRUD operations, sorting, filtering, grouping, paging, and virtualization.
+title: React Data Grid Overview and Features | Syncfusion
+description: Learn how to use React Data Grid for data management, CRUD operations, sorting, filtering, grouping, paging, and virtualization.
 control: Overview 
 platform: grid-sdk
 documentation: ug
@@ -52,7 +53,7 @@ The Data Grid integrates with major relational databases to provide seamless dat
 
 **API and service integration**
 
-API and service integration enables the Data Grid to connect seamlessly with GraphQL, Web API, OData, URL, and custom services for flexible backend data access.
+API and service integration enables the Data Grid to connect seamlessly with GraphQL, Web API, OData, URL, and custom services for flexible server-side data access.
 
 | Integration approach | Best suited for | Key benefit |
 |-----------------------|------------------|-------------|
