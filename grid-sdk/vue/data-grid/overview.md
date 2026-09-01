@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Vue Data Grid Overview and Features | Syncfusion
-description: Learn here all about Paging and and its customization in Syncfusion Vue Grid component of Syncfusion Essential JS 2 and more.
+description: Learn how to use Vue Data Grid for data management, CRUD operations, sorting, filtering, grouping, paging, and virtualization.
 control: Overview 
 platform: grid-sdk
 documentation: ug

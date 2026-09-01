@@ -1,6 +1,7 @@
 ---
 layout: post
-title: Learn how to use React Data Grid for data management, CRUD operations, sorting, filtering, grouping, paging, and virtualization.
+title: React Data Grid Overview and Features | Syncfusion
+description: Learn how to use React Data Grid for data management, CRUD operations, sorting, filtering, grouping, paging, and virtualization.
 control: Overview 
 platform: grid-sdk
 documentation: ug
