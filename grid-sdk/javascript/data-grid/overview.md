@@ -184,7 +184,7 @@ Match the JavaScript Data Grid to the application's visual design using built-in
 - Tailwind CSS
 - Fluent 2 High Contrast
 
-[Syncfusion Theme Studio](https://ej2.syncfusion.com/JavaScript/documentation/appearance/theme-studio) allows customization of the Data Grid's appearance by modifying theme variables such as primary, accent, and background colors, enabling consistent styling, lightweight CSS generation, and seamless integration while ensuring the grid aligns with application design requirements.
+[Syncfusion Theme Studio](https://ej2.syncfusion.com/javascript/documentation/appearance/theme-studio) allows customization of the Data Grid's appearance by modifying theme variables such as primary, accent, and background colors, enabling consistent styling, lightweight CSS generation, and seamless integration while ensuring the grid aligns with application design requirements.
 
 [Explore themes and styling](../appearance-and-styling/appearance-styling)
 
@@ -208,7 +208,7 @@ Match the JavaScript Data Grid to the application's visual design using built-in
 ## Support and resources
 
 - **Questions?** Visit the [Syncfusion support portal](https://www.syncfusion.com/support)
-- **Code Examples?** Browse [Data Grid demos](https://ej2.syncfusion.com/JavaScript/demos/#/tailwind3/grid/grid-overview.html) and samples
-- **API Details?** See [Data Grid API reference](https://ej2.syncfusion.com/JavaScript/documentation/api/grid/index-default)
+- **Code Examples?** Browse [Data Grid demos](https://ej2.syncfusion.com/javascript/demos/#/tailwind3/grid/grid-overview.html) and samples
+- **API Details?** See [Data Grid API reference](https://ej2.syncfusion.com/javascript/documentation/api/grid/index-default)
 - **Community?** Join the [Syncfusion community forum](https://www.syncfusion.com/forums/essential-js2)
 - **What's New?** Check [Release notes](../../Release-Notes)
