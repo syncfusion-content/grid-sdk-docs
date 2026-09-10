@@ -2,7 +2,7 @@
 layout: post
 title: Blazor Grid Column Validation | Syncfusion
 description: Learn how to use column validation in Blazor Data Grid using built-in validation rules, custom validators, editing validation, and error message customization.
-platform: Blazor
+platform: grid-sdk
 control: DataGrid
 documentation: ug
 ---
