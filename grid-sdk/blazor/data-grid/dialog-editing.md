@@ -1,274 +1,36 @@
 ---
 layout: post
-title: Dialog Editing in Blazor DataGrid | Syncfusion®
-description: Checkout and learn here all the features about Dialog Editing in Blazor DataGrid and much more details.
+title: Blazor Grid Dialog Editing | Syncfusion
+description: Learn how to use dialog editing in Blazor Data Grid for add, edit, validation, custom edit forms, dialog templates, and CRUD operations.
 platform: grid-sdk
 control: DataGrid
 documentation: ug
 ---
 
-# Dialog editing in Blazor DataGrid
+# Dialog Editing in Blazor Data Grid
 
-Dialog editing in the [Blazor DataGrid](https://www.syncfusion.com/blazor-components/blazor-datagrid) enables editing of data in the selected row using a dialog window. This feature facilitates quick modification of cell values and updates the data source without navigating to a separate page or view. Dialog editing is particularly effective for scenarios requiring streamlined editing of multiple cells.
+Dialog editing in the [Blazor Data Grid](https://www.syncfusion.com/blazor-components/blazor-datagrid) enables editing the data of a selected row in a dialog window. This feature facilitates quick modification of cell values and updates the data source without navigating to a separate page or view. Dialog editing is particularly effective for scenarios requiring streamlined editing of multiple cells.
 
-To enable dialog editing, set the [GridEditSettings.Mode](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridEditSettings.html#Syncfusion_Blazor_Grids_GridEditSettings_Mode) property to **Dialog**. This property defines the editing mode for the DataGrid.
+To enable dialog editing, set the [GridEditSettings.Mode](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridEditSettings.html#Syncfusion_Blazor_Grids_GridEditSettings_Mode) property to **Dialog**. This property defines the editing mode for the Data Grid.
 
 {% tabs %}
 {% highlight razor tabtitle="Index.razor" %}
 @using Syncfusion.Blazor.Grids
 
 <SfGrid DataSource="@OrderData" Toolbar="@(new List<string>() { "Add", "Edit","Delete", "Update", "Cancel" })" Height="315">
-    <GridEditSettings AllowAdding="true" AllowEditing="true" AllowDeleting="true" Mode="EditMode.Dialog" ></GridEditSettings>
-    <GridColumns>
-        <GridColumn Field=@nameof(OrderDetails.OrderID) HeaderText="Order ID" IsPrimaryKey="true" ValidationRules="@(new ValidationRules{ Required=true })" TextAlign="TextAlign.Right" Width="120"></GridColumn>
-        <GridColumn Field=@nameof(OrderDetails.CustomerID) HeaderText="Customer ID" ValidationRules="@(new ValidationRules{ Required=true, MinLength=5 })" Width="120"></GridColumn>
-        <GridColumn Field=@nameof(OrderDetails.Freight) HeaderText="Freight" ValidationRules="@(new ValidationRules{ Required=true, Min=1, Max=1000 })" Format="C2" TextAlign="TextAlign.Right" EditType="EditType.NumericEdit" Width="120"></GridColumn>
-        <GridColumn Field=@nameof(OrderDetails.ShipCountry) HeaderText="Ship Country" EditType="EditType.DropDownEdit" Width="150"></GridColumn>
-    </GridColumns>
-</SfGrid>
-@code {
-    public List<OrderDetails> OrderData { get; set; }
-    protected override void OnInitialized()
-    {
-        OrderData = OrderDetails.GetAllRecords();
-    }
-}
-{% endhighlight %}
-{% highlight c# tabtitle="OrderDetails.cs" %}
-public class OrderDetails
-{
-    public static List<OrderDetails> Order = new List<OrderDetails>();
-    public OrderDetails(int OrderID, string CustomerId, double Freight, string ShipCountry)
-    {
-        this.OrderID = OrderID;
-        this.CustomerID = CustomerId;
-        this.Freight = Freight;
-        this.ShipCountry = ShipCountry;    
-    }
-    public static List<OrderDetails> GetAllRecords()
-    {
-        if (Order.Count == 0)
-        {
-            Order.Add(new OrderDetails(10248, "VINET", 32.38, "France"));
-            Order.Add(new OrderDetails(10249, "TOMSP", 11.61, "Germany"));
-            Order.Add(new OrderDetails(10250, "HANAR", 65.83, "Brazil"));
-            Order.Add(new OrderDetails(10251, "VICTE", 41.34, "France"));
-            Order.Add(new OrderDetails(10252, "SUPRD", 51.3, "Belgium"));
-            Order.Add(new OrderDetails(10253, "HANAR", 58.17, "Brazil"));
-            Order.Add(new OrderDetails(10254, "CHOPS", 22.98, "Switzerland"));
-            Order.Add(new OrderDetails(10255, "RICSU", 148.33, "Switzerland"));
-            Order.Add(new OrderDetails(10256, "WELLI", 13.97, "Brazil"));
-            Order.Add(new OrderDetails(10257, "HILAA", 81.91, "Venezuela"));
-            Order.Add(new OrderDetails(10258, "ERNSH", 140.51, "Austria"));
-            Order.Add(new OrderDetails(10259, "CENTC", 3.25, "Mexico"));
-            Order.Add(new OrderDetails(10260, "OTTIK", 55.09, "Germany"));
-            Order.Add(new OrderDetails(10261, "QUEDE", 3.05, "Brazil"));
-            Order.Add(new OrderDetails(10262, "RATTC", 48.29, "USA"));
-        }
-        return Order;
-    }
-    public int OrderID { get; set; }
-    public string CustomerID { get; set; }
-    public double Freight { get; set; }
-    public string ShipCountry { get; set; }
-}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://blazorplayground.syncfusion.com/embed/htBTihBtqxaHFdKg?appbar=false&editor=false&result=true&errorlist=false&theme=bootstrap5" %}
-
-## Customize the edit dialog
-
-The edit dialog in the Blazor DataGrid supports customization of its appearance and behavior based on the action being performed, such as editing or adding a record. Properties such as header text, close icon visibility, and dialog height can be modified to align with specific application requirements.
-
-To customize the edit dialog, use the [HeaderTemplate](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridEditSettings.html#Syncfusion_Blazor_Grids_GridEditSettings_HeaderTemplate) and [FooterTemplate](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridEditSettings.html#Syncfusion_Blazor_Grids_GridEditSettings_FooterTemplate) properties of [GridEditSettings](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridEditSettings.html).
-
-{% tabs %}
-{% highlight razor tabtitle="Index.razor" %}
-@using Syncfusion.Blazor.Grids
-@using Syncfusion.Blazor.Buttons
-
-<SfGrid @ref="Grid" DataSource="@OrderData" Toolbar="@(new List<string>() { "Add", "Edit","Delete", "Update", "Cancel" })" Height="315">
-    <GridEditSettings AllowAdding="true" AllowEditing="true" AllowDeleting="true" Dialog="DialogParams" Mode="EditMode.Dialog">
-        <HeaderTemplate>
-            @{
-                var DialogHeader = GetHeader((context as OrderDetails));
-                <span>@DialogHeader</span>
-            }
-        </HeaderTemplate>
-        <FooterTemplate>
-            <SfButton OnClick="@SaveEdit" IsPrimary="true">Submit</SfButton>
-            <SfButton OnClick="@CancelEdit">Discard</SfButton>
-        </FooterTemplate>
-    </GridEditSettings>
-    <GridColumns>
-        <GridColumn Field=@nameof(OrderDetails.OrderID) HeaderText="Order ID" IsPrimaryKey="true" ValidationRules="@(new ValidationRules{ Required=true })" TextAlign="TextAlign.Right" Width="120"></GridColumn>
-        <GridColumn Field=@nameof(OrderDetails.CustomerID) HeaderText="Customer ID" ValidationRules="@(new ValidationRules{ Required=true, MinLength=5 })" Width="120"></GridColumn>
-        <GridColumn Field=@nameof(OrderDetails.Freight) HeaderText="Freight" ValidationRules="@(new ValidationRules{ Required=true, Min=1, Max=1000 })" Format="C2" TextAlign="TextAlign.Right" EditType="EditType.NumericEdit" Width="120"></GridColumn>
-        <GridColumn Field=@nameof(OrderDetails.ShipCountry) HeaderText="Ship Country" EditType="EditType.DropDownEdit" Width="150"></GridColumn>
-    </GridColumns>
-</SfGrid>
-@code {
-    public SfGrid<OrderDetails> Grid { get; set; }
-    public List<OrderDetails> OrderData { get; set; }
-    protected override void OnInitialized()
-    {
-        OrderData = OrderDetails.GetAllRecords();
-    }
-    public DialogSettings DialogParams { get; set; } = new DialogSettings { Height= "300px", Width="300px" }; 
-    public string GetHeader(OrderDetails value)
-    {
-        return value.OrderID == 0 
-            ? "New Customer" 
-            : "Edit Record of " + value.CustomerID;
-    }
-    public async Task CancelEdit()
-    {
-        await Grid.CloseEditAsync();     //Cancel editing action.
-    }
-    public async Task SaveEdit()
-    {
-        await Grid.EndEditAsync();       //Save the edited/added data to Grid.
-    }
-}
-{% endhighlight %}
-{% highlight c# tabtitle="OrderDetails.cs" %}
-public class OrderDetails
-{
-    public static List<OrderDetails> Order = new List<OrderDetails>();
-    public OrderDetails(int OrderID, string CustomerId, double Freight, string ShipCountry)
-    {
-        this.OrderID = OrderID;
-        this.CustomerID = CustomerId;
-        this.Freight = Freight;
-        this.ShipCountry = ShipCountry;    
-    }
-    public static List<OrderDetails> GetAllRecords()
-    {
-        if (Order.Count == 0)
-        {
-            Order.Add(new OrderDetails(10248, "VINET", 32.38, "France"));
-            Order.Add(new OrderDetails(10249, "TOMSP", 11.61, "Germany"));
-            Order.Add(new OrderDetails(10250, "HANAR", 65.83, "Brazil"));
-            Order.Add(new OrderDetails(10251, "VICTE", 41.34, "France"));
-            Order.Add(new OrderDetails(10252, "SUPRD", 51.3, "Belgium"));
-            Order.Add(new OrderDetails(10253, "HANAR", 58.17, "Brazil"));
-            Order.Add(new OrderDetails(10254, "CHOPS", 22.98, "Switzerland"));
-            Order.Add(new OrderDetails(10255, "RICSU", 148.33, "Switzerland"));
-            Order.Add(new OrderDetails(10256, "WELLI", 13.97, "Brazil"));
-            Order.Add(new OrderDetails(10257, "HILAA", 81.91, "Venezuela"));
-            Order.Add(new OrderDetails(10258, "ERNSH", 140.51, "Austria"));
-            Order.Add(new OrderDetails(10259, "CENTC", 3.25, "Mexico"));
-            Order.Add(new OrderDetails(10260, "OTTIK", 55.09, "Germany"));
-            Order.Add(new OrderDetails(10261, "QUEDE", 3.05, "Brazil"));
-            Order.Add(new OrderDetails(10262, "RATTC", 48.29, "USA"));
-        }
-        return Order;
-    }
-    public int OrderID { get; set; }
-    public string CustomerID { get; set; }
-    public double Freight { get; set; }
-    public string ShipCountry { get; set; }
-}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://blazorplayground.syncfusion.com/embed/VDVyZWjvKbTMIaIU?appbar=false&editor=false&result=true&errorlist=false&theme=bootstrap5" %}
-
-> * The DataGrid add or edit dialog element includes a max-height property, which is calculated based on the available window height. In a standard window size of **1920×1080** pixels, the dialog height can be set up to **658px**.
-> * Refer to the Blazor DataGrid feature tour for a broad overview. Explore the [Blazor DataGrid example](https://blazor.syncfusion.com/demos/datagrid/overview?theme=bootstrap5) to understand data presentation and manipulation.
-
-## Show or hide columns in dialog editing
-
-The Blazor DataGrid provides the ability to dynamically show or hide columns during dialog editing. This feature enables conditional column visibility based on the editing context, such as when adding a new record or modifying an existing one.
-To implement this behavior, use the following Grid events:
-
-1. [RowCreating](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridEvents-1.html#Syncfusion_Blazor_Grids_GridEvents_1_RowCreating): Triggered before a new record is added.
-2. [RowEditing](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridEvents-1.html#Syncfusion_Blazor_Grids_GridEvents_1_RowEditing): Triggered before an existing record is edited.
-3. [RowUpdating](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridEvents-1.html#Syncfusion_Blazor_Grids_GridEvents_1_RowUpdating): Triggered before the update operation is finalized.
-4. [EditCanceling](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridEvents-1.html#Syncfusion_Blazor_Grids_GridEvents_1_EditCanceling): Triggered before the cancel operation is executed.
-
-Within the `RowCreating` and `RowEditing` event handlers, column visibility can be modified using the [Column.Visible](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridColumn.html#Syncfusion_Blazor_Grids_GridColumn_Visible) property. This property determines whether a column is displayed or hidden during dialog editing.
-
-To restore the original visibility state, use the `Column.Visible` property in the `RowUpdating` and `EditCanceling` events.
-
-{% tabs %}
-{% highlight razor tabtitle="Index.razor" %}
-@using Syncfusion.Blazor.Grids
-
-<SfGrid @ref="Grid" DataSource="@OrderData" Toolbar="@(new List<string>() { "Add", "Edit","Delete", "Update", "Cancel" })" Height="315">
     <GridEditSettings AllowAdding="true" AllowEditing="true" AllowDeleting="true" Mode="EditMode.Dialog"></GridEditSettings>
-    <GridEvents TValue="OrderDetails" EditCanceling="RowCancelingHandler" RowEditing="RowEditingHandler" RowCreating="RowAddingHandler" RowUpdating="RowUpdatingHandler"></GridEvents>
     <GridColumns>
-        <GridColumn Field=@nameof(OrderDetails.OrderID) HeaderText="Order ID" IsPrimaryKey="true" ValidationRules="@(new ValidationRules{ Required=true})" TextAlign="TextAlign.Right" Width="120"></GridColumn>
-        <GridColumn Field=@nameof(OrderDetails.CustomerID) HeaderText="Customer Name" ValidationRules="@(new ValidationRules{ Required=true, MinLength=5})" Visible="false" Width="120"></GridColumn>
-        <GridColumn Field=@nameof(OrderDetails.Freight) HeaderText="Freight" ValidationRules="@(new ValidationRules{ Required=true, Min=1, Max=1000})" Format="C2" TextAlign="TextAlign.Right" EditType="EditType.NumericEdit" Width="120"></GridColumn>
+        <GridColumn Field=@nameof(OrderDetails.OrderID) HeaderText="Order ID" IsPrimaryKey="true" ValidationRules="@(new ValidationRules{ Required=true })" TextAlign="TextAlign.Right" Width="120"></GridColumn>
+        <GridColumn Field=@nameof(OrderDetails.CustomerID) HeaderText="Customer ID" ValidationRules="@(new ValidationRules{ Required=true, MinLength=5 })" Width="120"></GridColumn>
+        <GridColumn Field=@nameof(OrderDetails.Freight) HeaderText="Freight" ValidationRules="@(new ValidationRules{ Required=true, Min=1, Max=1000 })" Format="C2" TextAlign="TextAlign.Right" EditType="EditType.NumericEdit" Width="120"></GridColumn>
         <GridColumn Field=@nameof(OrderDetails.ShipCountry) HeaderText="Ship Country" EditType="EditType.DropDownEdit" Width="150"></GridColumn>
     </GridColumns>
 </SfGrid>
-
 @code {
-    public SfGrid<OrderDetails> Grid { get; set; }
     public List<OrderDetails> OrderData { get; set; }
     protected override void OnInitialized()
     {
         OrderData = OrderDetails.GetAllRecords();
-    }
-    public void RowAddingHandler(RowCreatingEventArgs<OrderDetails> args)
-    {
-        var columns = Grid.Columns;
-        foreach (var column in columns)
-        {
-            if (column.Field == "CustomerID")
-            {
-                column.Visible = true; 
-            }
-        }
-    }
-    public void RowEditingHandler(RowEditingEventArgs<OrderDetails> args)
-    {
-        var columns = Grid.Columns;
-        foreach (var column in columns)
-        {
-            if (column.Field == "CustomerID")
-            {
-                column.Visible = true; 
-            }
-            else if (column.Field == "ShipCountry")
-            {
-                column.Visible = false; 
-            }
-        }
-    }
-    public void RowUpdatingHandler(RowUpdatingEventArgs<OrderDetails> args)
-    {
-        var columns = Grid.Columns;
-        foreach (var column in columns)
-        {
-            if (column.Field == "CustomerID")
-            {
-                column.Visible = false; 
-            }
-            else if (column.Field == "ShipCountry")
-            {
-                column.Visible = true; 
-            }            
-        }
-    }
-    public void RowCancelingHandler(EditCancelingEventArgs<OrderDetails> args)
-    {
-        var columns = Grid.Columns;
-        foreach (var column in columns)
-        {
-            if (column.Field == "CustomerID")
-            {
-                column.Visible = false; 
-        }
-            else if (column.Field == "ShipCountry")
-            {
-                column.Visible = true; 
-            }
-        }
     }
 }
 {% endhighlight %}
@@ -313,11 +75,12 @@ public class OrderDetails
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://blazorplayground.syncfusion.com/embed/VXrzWVLAqtMKVgod?appbar=false&editor=false&result=true&errorlist=false&theme=bootstrap5" %}
+{% previewsample "https://blazorplayground.syncfusion.com/embed/rXVxtwDhBqPcsjMi?appbar=false&editor=false&result=true&errorlist=false&theme=fluent2" %}
 
-## Use wizard-like dialog editing
 
-The Blazor DataGrid supports wizard-like dialog editing, enabling structured, step-by-step form layouts. This approach facilitates segmented data entry by dividing complex forms into manageable sections.
+## Wizard-like dialog editing
+
+The Blazor Data Grid supports wizard-like dialog editing, enabling structured, step-by-step form layouts. The wizard layout facilitates segmented data entry by dividing complex forms into manageable sections.
 
 To configure wizard-like dialog editing, enable the template feature by setting the [GridEditSettings.Mode](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridEditSettings.html#Syncfusion_Blazor_Grids_GridEditSettings_Mode) property to **Dialog** and assigning a value to the [Template](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridEditSettings.html#Syncfusion_Blazor_Grids_GridEditSettings_Template) property of [GridEditSettings](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridEditSettings.html). The template defines the editors and layout for each step in the wizard.
 
@@ -330,7 +93,7 @@ To configure wizard-like dialog editing, enable the template feature by setting 
 
 <SfGrid @ref="Grid" DataSource="@OrderData" AllowPaging="true" Toolbar="@(new List<string>() { "Add", "Edit", "Delete", "Update", "Cancel" })" Height="315">
     <GridEvents TValue="OrderDetails" RowCreating="RowCreating" OnBeginEdit="OnBeginEdit"></GridEvents>
-    <GridEditSettings AllowAdding="true" AllowEditing="true" AllowDeleting="true" Mode="Syncfusion.Blazor.Grids.EditMode.Dialog">
+    <GridEditSettings AllowAdding="true" AllowEditing="true" AllowDeleting="true" Mode="EditMode.Dialog">
         <Template>
             @{
                 var Order = (context as OrderDetails);
@@ -447,9 +210,9 @@ To configure wizard-like dialog editing, enable the template feature by setting 
             Grid.PreventRender(false);
         }
     }
-    public void SaveDialog()
+    public async Task SaveDialog()
     {
-        Grid.EndEditAsync();
+        await Grid.EndEditAsync();
     }  
     public void RowCreating(RowCreatingEventArgs<OrderDetails> args)
     {
@@ -545,13 +308,253 @@ public class OrderDetails
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://blazorplayground.syncfusion.com/embed/BDLyZMjvJXWZYAiP?appbar=false&editor=false&result=true&errorlist=false&theme=bootstrap5" %}
+{% previewsample "https://blazorplayground.syncfusion.com/embed/BNBHtGjVhpXqNLBP?appbar=false&editor=false&result=true&errorlist=false&theme=fluent2" %}
 
-## Customize add/edit dialog footer
+## Customize the edit dialog
 
-The Blazor DataGrid supports customization of the footer section in the add/edit dialog. By default, the dialog displays two buttons in the footer: **Save** and **Cancel**, which perform save and discard operations respectively.
+The edit dialog in the Blazor Data Grid supports customization of the appearance and behavior based on the action being performed, such as editing or adding a record. Properties such as header text and dialog height can be modified to align with specific application requirements.
 
-Custom buttons, specific actions, or visual modifications such as color and size adjustments can be implemented using the [FooterTemplate](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridEditSettings.html#Syncfusion_Blazor_Grids_GridEditSettings_FooterTemplate) property of the [GridEditSettings](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridEditSettings.html). This property allows definition of a custom footer layout for the dialog.
+To customize the edit dialog dimensions, use the [Dialog](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridEditSettings.html#Syncfusion_Blazor_Grids_GridEditSettings_Dialog) property of [GridEditSettings](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridEditSettings.html). The Dialog property accepts [DialogSettings](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.DialogSettings.html) values such as height and width. To customize the dialog header and footer, use the [HeaderTemplate](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridEditSettings.html#Syncfusion_Blazor_Grids_GridEditSettings_HeaderTemplate) and [FooterTemplate](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridEditSettings.html#Syncfusion_Blazor_Grids_GridEditSettings_FooterTemplate) properties.
+
+In the following example, the `GetHeader` method checks the `OrderID` value to set the dialog header: an `OrderID` value of `0` identifies an add operation and displays `New Customer`, while a nonzero value identifies an edit operation and displays `Edit Record of` followed by the customer ID.
+
+{% tabs %}
+{% highlight razor tabtitle="Index.razor" %}
+@using Syncfusion.Blazor.Grids
+@using Syncfusion.Blazor.Buttons
+
+<SfGrid @ref="Grid" DataSource="@OrderData" Toolbar="@(new List<string>() { "Add", "Edit","Delete", "Update", "Cancel" })" Height="315">
+    <GridEditSettings AllowAdding="true" AllowEditing="true" AllowDeleting="true" Dialog="DialogParams" Mode="EditMode.Dialog">
+        <HeaderTemplate>
+            @{
+                var DialogHeader = GetHeader((context as OrderDetails));
+                <span>@DialogHeader</span>
+            }
+        </HeaderTemplate>
+        <FooterTemplate>
+            <SfButton OnClick="@SaveEdit" IsPrimary="true">Submit</SfButton>
+            <SfButton OnClick="@CancelEdit">Discard</SfButton>
+        </FooterTemplate>
+    </GridEditSettings>
+    <GridColumns>
+        <GridColumn Field=@nameof(OrderDetails.OrderID) HeaderText="Order ID" IsPrimaryKey="true" ValidationRules="@(new ValidationRules{ Required=true })" TextAlign="TextAlign.Right" Width="120"></GridColumn>
+        <GridColumn Field=@nameof(OrderDetails.CustomerID) HeaderText="Customer ID" ValidationRules="@(new ValidationRules{ Required=true, MinLength=5 })" Width="120"></GridColumn>
+        <GridColumn Field=@nameof(OrderDetails.Freight) HeaderText="Freight" ValidationRules="@(new ValidationRules{ Required=true, Min=1, Max=1000 })" Format="C2" TextAlign="TextAlign.Right" EditType="EditType.NumericEdit" Width="120"></GridColumn>
+        <GridColumn Field=@nameof(OrderDetails.ShipCountry) HeaderText="Ship Country" EditType="EditType.DropDownEdit" Width="150"></GridColumn>
+    </GridColumns>
+</SfGrid>
+@code {
+    public SfGrid<OrderDetails> Grid { get; set; }
+    public List<OrderDetails> OrderData { get; set; }
+    protected override void OnInitialized()
+    {
+        OrderData = OrderDetails.GetAllRecords();
+    }
+    public DialogSettings DialogParams { get; set; } = new DialogSettings { Height="300px", Width="300px" };
+    public string GetHeader(OrderDetails value)
+    {
+        return value.OrderID == 0 
+            ? "New Customer" 
+            : "Edit Record of " + value.CustomerID;
+    }
+    public async Task CancelEdit()
+    {
+        await Grid.CloseEditAsync();     //Cancel editing action.
+    }
+    public async Task SaveEdit()
+    {
+        await Grid.EndEditAsync();       //Save the edited/added data to Data Grid.
+    }
+}
+{% endhighlight %}
+{% highlight c# tabtitle="OrderDetails.cs" %}
+public class OrderDetails
+{
+    public static List<OrderDetails> Order = new List<OrderDetails>();
+    public OrderDetails(int OrderID, string CustomerId, double Freight, string ShipCountry)
+    {
+        this.OrderID = OrderID;
+        this.CustomerID = CustomerId;
+        this.Freight = Freight;
+        this.ShipCountry = ShipCountry;    
+    }
+    public static List<OrderDetails> GetAllRecords()
+    {
+        if (Order.Count == 0)
+        {
+            Order.Add(new OrderDetails(10248, "VINET", 32.38, "France"));
+            Order.Add(new OrderDetails(10249, "TOMSP", 11.61, "Germany"));
+            Order.Add(new OrderDetails(10250, "HANAR", 65.83, "Brazil"));
+            Order.Add(new OrderDetails(10251, "VICTE", 41.34, "France"));
+            Order.Add(new OrderDetails(10252, "SUPRD", 51.3, "Belgium"));
+            Order.Add(new OrderDetails(10253, "HANAR", 58.17, "Brazil"));
+            Order.Add(new OrderDetails(10254, "CHOPS", 22.98, "Switzerland"));
+            Order.Add(new OrderDetails(10255, "RICSU", 148.33, "Switzerland"));
+            Order.Add(new OrderDetails(10256, "WELLI", 13.97, "Brazil"));
+            Order.Add(new OrderDetails(10257, "HILAA", 81.91, "Venezuela"));
+            Order.Add(new OrderDetails(10258, "ERNSH", 140.51, "Austria"));
+            Order.Add(new OrderDetails(10259, "CENTC", 3.25, "Mexico"));
+            Order.Add(new OrderDetails(10260, "OTTIK", 55.09, "Germany"));
+            Order.Add(new OrderDetails(10261, "QUEDE", 3.05, "Brazil"));
+            Order.Add(new OrderDetails(10262, "RATTC", 48.29, "USA"));
+        }
+        return Order;
+    }
+    public int OrderID { get; set; }
+    public string CustomerID { get; set; }
+    public double Freight { get; set; }
+    public string ShipCountry { get; set; }
+}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "https://blazorplayground.syncfusion.com/embed/LtLdZwtrBgOCWMim?appbar=false&editor=false&result=true&errorlist=false&theme=fluent2" %}
+
+> * The Data Grid add or edit dialog element includes a max-height property calculated from the available window height. In a standard window size of **1920×1080** pixels, the dialog height can be set up to **658px**.
+> * Refer to the Blazor Data Grid feature tour for a broad overview. Explore the [Blazor Data Grid example](https://blazor.syncfusion.com/demos/datagrid/overview?theme=fluent2) to understand data presentation and manipulation.
+
+## Show or hide columns in dialog editing
+
+The Blazor Data Grid provides the ability to dynamically show or hide columns during dialog editing. This feature enables conditional column visibility based on the editing context, such as when adding a new record or modifying an existing one.
+To implement this behavior, use the following Data Grid events:
+
+1. [RowCreating](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridEvents-1.html#Syncfusion_Blazor_Grids_GridEvents_1_RowCreating): Triggered before a new record is added.
+2. [RowEditing](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridEvents-1.html#Syncfusion_Blazor_Grids_GridEvents_1_RowEditing): Triggered before an existing record is edited.
+3. [RowUpdating](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridEvents-1.html#Syncfusion_Blazor_Grids_GridEvents_1_RowUpdating): Triggered before the update operation is finalized.
+4. [EditCanceling](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridEvents-1.html#Syncfusion_Blazor_Grids_GridEvents_1_EditCanceling): Triggered before the cancel operation is executed.
+
+Within the `RowCreating` and `RowEditing` event handlers, column visibility can be modified using the [GridColumn.Visible](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridColumn.html#Syncfusion_Blazor_Grids_GridColumn_Visible) property. The GridColumn.Visible property determines whether a column is displayed or hidden during dialog editing.
+
+To restore the original visibility state, use the `GridColumn.Visible` property in the `RowUpdating` and `EditCanceling` events.
+
+{% tabs %}
+{% highlight razor tabtitle="Index.razor" %}
+@using Syncfusion.Blazor.Grids
+
+<SfGrid @ref="Grid" DataSource="@OrderData" Toolbar="@(new List<string>() { "Add", "Edit","Delete", "Update", "Cancel" })" Height="315">
+    <GridEditSettings AllowAdding="true" AllowEditing="true" AllowDeleting="true" Mode="EditMode.Dialog"></GridEditSettings>
+    <GridEvents TValue="OrderDetails" EditCanceling="RowCancelingHandler" RowEditing="RowEditingHandler" RowCreating="RowAddingHandler" RowUpdating="RowUpdatingHandler"></GridEvents>
+    <GridColumns>
+        <GridColumn Field=@nameof(OrderDetails.OrderID) HeaderText="Order ID" IsPrimaryKey="true" ValidationRules="@(new ValidationRules{ Required=true})" TextAlign="TextAlign.Right" Width="120"></GridColumn>
+        <GridColumn Field=@nameof(OrderDetails.CustomerID) HeaderText="Customer Name" ValidationRules="@(new ValidationRules{ Required=true, MinLength=5})" Visible="false" Width="120"></GridColumn>
+        <GridColumn Field=@nameof(OrderDetails.Freight) HeaderText="Freight" ValidationRules="@(new ValidationRules{ Required=true, Min=1, Max=1000})" Format="C2" TextAlign="TextAlign.Right" EditType="EditType.NumericEdit" Width="120"></GridColumn>
+        <GridColumn Field=@nameof(OrderDetails.ShipCountry) HeaderText="Ship Country" EditType="EditType.DropDownEdit" Width="150"></GridColumn>
+    </GridColumns>
+</SfGrid>
+
+@code {
+    public SfGrid<OrderDetails> Grid { get; set; }
+    public List<OrderDetails> OrderData { get; set; }
+    protected override void OnInitialized()
+    {
+        OrderData = OrderDetails.GetAllRecords();
+    }
+    public void RowAddingHandler(RowCreatingEventArgs<OrderDetails> args)
+    {
+        var columns = Grid.Columns;
+        foreach (var column in columns)
+        {
+            if (column.Field == "CustomerID")
+            {
+                column.Visible = true; 
+            }
+        }
+    }
+    public void RowEditingHandler(RowEditingEventArgs<OrderDetails> args)
+    {
+        var columns = Grid.Columns;
+        foreach (var column in columns)
+        {
+            if (column.Field == "CustomerID")
+            {
+                column.Visible = true; 
+            }
+            else if (column.Field == "ShipCountry")
+            {
+                column.Visible = false; 
+            }
+        }
+    }
+    public void RowUpdatingHandler(RowUpdatingEventArgs<OrderDetails> args)
+    {
+        var columns = Grid.Columns;
+        foreach (var column in columns)
+        {
+            if (column.Field == "CustomerID")
+            {
+                column.Visible = false; 
+            }
+            else if (column.Field == "ShipCountry")
+            {
+                column.Visible = true; 
+            }            
+        }
+    }
+    public void RowCancelingHandler(EditCancelingEventArgs<OrderDetails> args)
+    {
+        var columns = Grid.Columns;
+        foreach (var column in columns)
+        {
+            if (column.Field == "CustomerID")
+            {
+                column.Visible = false; 
+            }
+            else if (column.Field == "ShipCountry")
+            {
+                column.Visible = true; 
+            }
+        }
+    }
+}
+{% endhighlight %}
+{% highlight c# tabtitle="OrderDetails.cs" %}
+public class OrderDetails
+{
+    public static List<OrderDetails> Order = new List<OrderDetails>();
+    public OrderDetails(int OrderID, string CustomerId, double Freight, string ShipCountry)
+    {
+        this.OrderID = OrderID;
+        this.CustomerID = CustomerId;
+        this.Freight = Freight;
+        this.ShipCountry = ShipCountry;    
+    }
+    public static List<OrderDetails> GetAllRecords()
+    {
+        if (Order.Count == 0)
+        {
+            Order.Add(new OrderDetails(10248, "VINET", 32.38, "France"));
+            Order.Add(new OrderDetails(10249, "TOMSP", 11.61, "Germany"));
+            Order.Add(new OrderDetails(10250, "HANAR", 65.83, "Brazil"));
+            Order.Add(new OrderDetails(10251, "VICTE", 41.34, "France"));
+            Order.Add(new OrderDetails(10252, "SUPRD", 51.3, "Belgium"));
+            Order.Add(new OrderDetails(10253, "HANAR", 58.17, "Brazil"));
+            Order.Add(new OrderDetails(10254, "CHOPS", 22.98, "Switzerland"));
+            Order.Add(new OrderDetails(10255, "RICSU", 148.33, "Switzerland"));
+            Order.Add(new OrderDetails(10256, "WELLI", 13.97, "Brazil"));
+            Order.Add(new OrderDetails(10257, "HILAA", 81.91, "Venezuela"));
+            Order.Add(new OrderDetails(10258, "ERNSH", 140.51, "Austria"));
+            Order.Add(new OrderDetails(10259, "CENTC", 3.25, "Mexico"));
+            Order.Add(new OrderDetails(10260, "OTTIK", 55.09, "Germany"));
+            Order.Add(new OrderDetails(10261, "QUEDE", 3.05, "Brazil"));
+            Order.Add(new OrderDetails(10262, "RATTC", 48.29, "USA"));
+        }
+        return Order;
+    }
+    public int OrderID { get; set; }
+    public string CustomerID { get; set; }
+    public double Freight { get; set; }
+    public string ShipCountry { get; set; }
+}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "https://blazorplayground.syncfusion.com/embed/rjLRDQDhhgufkYDE?appbar=false&editor=false&result=true&errorlist=false&theme=fluent2" %}
+
+## Customize dialog footer
+
+The Blazor Data Grid supports customization of the footer section in the add/edit dialog. By default, the dialog displays two buttons in the footer: **Save** and **Cancel**, which perform save and discard operations respectively.
+
+Custom buttons, specific actions, or visual modifications such as color and size adjustments can be implemented using the [FooterTemplate](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridEditSettings.html#Syncfusion_Blazor_Grids_GridEditSettings_FooterTemplate) property of the [GridEditSettings](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridEditSettings.html). The FooterTemplate property allows defining a custom footer layout for the dialog.
 
 {% tabs %}
 {% highlight razor tabtitle="Index.razor" %}
@@ -630,11 +633,11 @@ public class OrderDetails
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://blazorplayground.syncfusion.com/embed/LZLSZyKtglluvsMB?appbar=false&editor=false&result=true&errorlist=false&theme=bootstrap5" %}
+{% previewsample "https://blazorplayground.syncfusion.com/embed/hXhnDGtrLTZQKqEz?appbar=false&editor=false&result=true&errorlist=false&theme=fluent2" %}
 
-## Implement calculated column inside Blazor DataGrid dialog editing
+## Implement calculated column inside Blazor Data Grid dialog editing
 
-The Blazor DataGrid supports automatic column value updates based on changes made to related columns during dialog editing. This functionality enables dynamic calculations within the edit form using the **Dialog Template** feature.
+The Blazor Data Grid supports automatic column value updates based on changes made to related columns during dialog editing. This functionality enables dynamic calculations within the edit form using the **Dialog Template** feature.
 
 In the following example, the [SfNumericTextBox](https://blazor.syncfusion.com/documentation/numeric-textbox/getting-started) component is rendered inside the dialog edit form. The **Total** column value is calculated based on the **Price** and **Quantity** columns using the [ValueChange](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Inputs.NumericTextBoxEvents-1.html#Syncfusion_Blazor_Inputs_NumericTextBoxEvents_1_ValueChange) event. 
 
@@ -774,6 +777,6 @@ public class ProductDetails
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://blazorplayground.syncfusion.com/embed/LDLyXsZxfZTvqDJz?appbar=false&editor=false&result=true&errorlist=false&theme=bootstrap5" %}
+{% previewsample "https://blazorplayground.syncfusion.com/embed/VjrHDGtVVpsHZhzb?appbar=false&editor=false&result=true&errorlist=false&theme=fluent2" %}
 
 > For details about events triggered during **Dialog editing**, refer to the supported events [documentation](https://blazor.syncfusion.com/documentation/datagrid/in-line-editing#supported-events-for-inline-and-dialog-editing).
