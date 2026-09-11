@@ -2,7 +2,7 @@
 layout: post
 title: Blazor Grid Edit Types | Syncfusion
 description: Learn about edit types in Blazor Data Grid, including text, numeric, date, dropdown, checkbox editors, custom edit types, and editor customization.
-platform: Blazor
+platform: grid-sdk
 control: DataGrid
 documentation: ug
 ---
