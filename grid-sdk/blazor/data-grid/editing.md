@@ -2,7 +2,7 @@
 layout: post
 title: Blazor Grid Editing | Syncfusion
 description: Learn how to edit data in Blazor Data Grid using inline, dialog, batch, and command column editing with validation and CRUD operations.
-platform: 
+platform: grid-sdk
 control: DataGrid
 documentation: ug
 ---
