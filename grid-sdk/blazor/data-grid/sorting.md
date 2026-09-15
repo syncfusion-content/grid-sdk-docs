@@ -2,7 +2,7 @@
 layout: post
 title: Blazor Grid Sorting | Syncfusion
 description: Learn Blazor Data Grid sorting with single-column, multi-column, custom, foreign-key, culture-aware and programmatic sorting capabilities.
-platform: Blazor
+platform: grid-sdk
 control: DataGrid
 documentation: ug
 ---
