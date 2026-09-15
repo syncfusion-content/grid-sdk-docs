@@ -2,7 +2,7 @@
 layout: post
 title: Blazor Grid Filtering | Syncfusion
 description: Learn how to filter data in Blazor Data Grid using filter operators, multiple filter conditions, filter settings, and advanced filtering options.
-platform: Blazor
+platform: grid-sdk
 control: DataGrid
 documentation: ug
 ---
