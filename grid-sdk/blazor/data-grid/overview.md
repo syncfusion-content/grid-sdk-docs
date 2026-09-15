@@ -2,7 +2,7 @@
 layout: post
 title: Blazor DataGrid Documentation & Developer Guide | Syncfusion
 description: Learn how to use Syncfusion Blazor Data Grid for data management, CRUD operations, sorting, filtering, grouping, paging, virtualization, and customization.
-platform: Blazor
+platform: grid-sdk
 control: DataGrid
 documentation: ug
 ---
