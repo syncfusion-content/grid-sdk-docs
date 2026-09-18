@@ -181,7 +181,7 @@ When `InitialSortDirection` is set to `Descending`, the sorting cycle follows:
 * Ascending
 * Clear sorting
 
-![Descending sorting example](Sorting_images/winui-treegrid-initial-sorting-descending.gif)
+![Descending sorting example](Sorting-images/winui-treegrid-initial-sorting-descending.gif)
 
 When `InitialSortDirection` is set to `Ascending`, the sorting cycle follows:
 
@@ -189,7 +189,7 @@ When `InitialSortDirection` is set to `Ascending`, the sorting cycle follows:
 * Descending
 * Clear sorting
 
-![Ascending sorting example](Sorting_images/winui-treegrid-initial-sorting-ascending.gif)
+![Ascending sorting example](Sorting-images/winui-treegrid-initial-sorting-ascending.gif)
 
 ### Runtime behavior
 
