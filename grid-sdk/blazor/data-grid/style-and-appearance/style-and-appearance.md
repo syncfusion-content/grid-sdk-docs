@@ -11,7 +11,7 @@ documentation: ug
 
 The [Blazor DataGrid](https://www.syncfusion.com/blazor-components/blazor-datagrid) supports visual customization using CSS and theme-based styling. Styles can be applied to various elements to match the application's design. Styling options are available for:
 
-- **DataGrid root element:** Defines the overall appearance of the grid container.
+- **Blazor DataGrid root element:** Defines the overall appearance of the grid container.
 - **Alternate rows with frozen columns:** Applies styles to alternate rows when frozen columns are enabled.
 - **Grid lines:** Controls the color and visibility of horizontal and vertical lines between cells.
 
@@ -39,7 +39,7 @@ Theme Studio provides a unified approach to style all components, including the 
 3. Customize colors, typography, spacing, and other visual tokens.
 4. Download the generated CSS and include it in the Blazor project’s site stylesheet or theme bundle.
 
-## Customize the DataGrid root element
+## Customize the Blazor DataGrid root element
 
 The **.e-grid** class styles the root container of the Blazor DataGrid. Apply CSS to modify its appearance:
 
