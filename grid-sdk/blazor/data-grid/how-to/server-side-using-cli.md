@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Add DataGrid to standalone Blazor Server app using .NET CLI | Syncfusion®
+title: Add DataGrid to Blazor Server app using .NET CLI | Syncfusion
 description: Add the Blazor DataGrid to a Blazor Server app using the .NET CLI on .NET 8/9, including setup, theme, scripts, and basic features.
 platform: grid-sdk
 control: DataGrid
@@ -271,7 +271,7 @@ public class OrderData
 
 Columns are automatically generated when the column declaration is empty or undefined during initialization of the Blazor DataGrid.
 
-The Grid also supports defining columns using [GridColumns](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridColumns.html). In `GridColumn`, several properties are available to customize column behavior.
+The Blazor Grid also supports defining columns using [GridColumns](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridColumns.html). In `GridColumn`, several properties are available to customize column behavior.
 
 Here are the key properties used in the example below:
 
@@ -668,8 +668,8 @@ public class OrderData
 
 ## See also
 
-* [Getting Started with DataGrid in Blazor Server-Side using Visual Studio 2022](../getting-started-with-server-app.md)
+* [Getting Started with Blazor DataGrid in Blazor Server-Side using Visual Studio 2022](../getting-started-with-server-app.md)
 
 * [Getting started with Data Grid in Blazor WebAssembly App using .NET Core CLI](./blazor-webassembly-data-grid-using-cli)
 
-* [Getting Started with DataGrid in Blazor WebAssembly using Visual Studio 2022](../getting-started.md)
+* [Getting Started with Blazor DataGrid in Blazor WebAssembly using Visual Studio 2022](../getting-started.md)
