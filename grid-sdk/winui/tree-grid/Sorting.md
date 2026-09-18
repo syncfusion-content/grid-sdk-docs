@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Sorting in WinUI TreeGrid | Syncfusion®
-description: Sorting in TreeGrid provides single and multi-column sorting, initial sort direction, custom sorting, programmatic sorting, and sorting event support for efficient data organization.
+description: Sorting in TreeGrid sorts one or more columns in ascending or descending order with customizable sort behavior.
 platform: grid-sdk
 control: TreeGrid
 documentation: ug
@@ -118,20 +118,18 @@ Use the `SfTreeGrid.InitialSortDirection` property to apply the same initial sor
 {% highlight xaml %}
 
 <treeGrid:SfTreeGrid Name="treeGrid"
-                    AllowSorting="True"
-                    InitialSortDirection="Descending"
-                    AutoExpandMode="RootNodesExpanded"
-                    ItemsSource="{Binding Employees}"
-                    ParentPropertyName="ID"
-                    ChildPropertyName="ReportsTo"
-                    SelfRelationRootValue="-1">
+                     AllowSorting="True"
+                     InitialSortDirection="Descending"
+                     AutoExpandMode="RootNodesExpanded"
+                     ItemsSource="{Binding Employees}"
+                     ParentPropertyName="ID"
+                     ChildPropertyName="ReportsTo"
+                     SelfRelationRootValue="-1">
 </treeGrid:SfTreeGrid>
 						   
 {% endhighlight %}
 {% highlight c# %}
-
 this.treeGrid.InitialSortDirection = ListSortDirection.Descending;
-
 {% endhighlight %}
 {% endtabs %}
 
@@ -145,18 +143,19 @@ Use the `TreeGridColumn.InitialSortDirection` property to define the initial sor
 {% highlight xaml %}
 
 <treeGrid:SfTreeGrid Name="treeGrid"
-                    AllowSorting="True"
-                    AutoExpandMode="RootNodesExpanded"
-                    ItemsSource="{Binding Employees}"
-                    ParentPropertyName="ID"
-                    ChildPropertyName="ReportsTo"
-                    SelfRelationRootValue="-1">
+                     AllowSorting="True"
+                     AutoExpandMode="RootNodesExpanded"
+                     ItemsSource="{Binding Employees}"
+                     ParentPropertyName="ID"
+                     ChildPropertyName="ReportsTo"
+                     SelfRelationRootValue="-1">
                     
     <treeGrid:SfTreeGrid.Columns>
-        <treeGrid:TreeGridNumericColumn MappingName="ID"  InitialSortDirection="Descending" />
+        <treeGrid:TreeGridNumericColumn MappingName="ID" InitialSortDirection="Descending" />
         <treeGrid:TreeGridTextColumn MappingName="FirstName" HeaderText="First Name" InitialSortDirection="Ascending" />
         <treeGrid:TreeGridTextColumn MappingName="LastName" HeaderText="Last Name" /> 
     </treeGrid:SfTreeGrid.Columns>
+
 </treeGrid:SfTreeGrid>
 
 {% endhighlight %}

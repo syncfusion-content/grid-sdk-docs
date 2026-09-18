@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Sorting in WPF TreeGrid | Syncfusion®
-description: Sorting in TreeGrid provides single and multi-column sorting, initial sort direction, custom sorting, programmatic sorting, and sorting event support for efficient data organization.
+description: Sorting in TreeGrid provides single and multi-column sorting, custom sorting, programmatic sorting, and sorting event support for efficient data organization.
 platform: grid-sdk
 control: TreeGrid
 documentation: ug
@@ -109,16 +109,14 @@ Use the `SfTreeGrid.InitialSortDirection` property to apply the same initial sor
 {% highlight xaml %}
 
 <syncfusion:SfTreeGrid Name="treeGrid"
-						AllowSorting="True"
-						InitialSortDirection="Descending"
-						AutoExpandMode="RootNodesExpanded"
-						ChildPropertyName="Children"
-						ItemsSource="{Binding EmployeeDetails}">
+					   AllowSorting="True"
+					   InitialSortDirection="Descending"
+					   AutoExpandMode="RootNodesExpanded"
+					   ChildPropertyName="Children"
+					   ItemsSource="{Binding EmployeeDetails}">
 {% endhighlight %}
 {% highlight c# %}
-
 this.treeGrid.InitialSortDirection = ListSortDirection.Descending;
-
 {% endhighlight %}
 {% endtabs %}
 
@@ -132,11 +130,11 @@ Use the `TreeGridColumn.InitialSortDirection` property to define the initial sor
 {% highlight xaml %}
 
 <syncfusion:SfTreeGrid Name="treeGrid"
-						AllowSorting="True"
-						AutoGenerateColumns="False"
-						AutoExpandMode="RootNodesExpanded"
-						ChildPropertyName="Children"
-						ItemsSource="{Binding EmployeeDetails}">
+					   AllowSorting="True"
+					   AutoGenerateColumns="False"
+					   AutoExpandMode="RootNodesExpanded"
+					   ChildPropertyName="Children"
+					   ItemsSource="{Binding EmployeeDetails}">
 						
 	<syncfusion:SfTreeGrid.Columns>
 	    <syncfusion:TreeGridTextColumn MappingName="ID" InitialSortDirection="Descending" />

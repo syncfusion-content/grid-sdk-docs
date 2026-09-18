@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Sorting in UWP TreeGrid | Syncfusion®
-description: Sorting in TreeGrid provides single and multi-column sorting, initial sort direction, custom sorting, programmatic sorting, and sorting event support for efficient data organization.
+description: Sorting in UWP TreeGrid sorts one or more columns in ascending or descending order with customizable sort behavior.
 platform: grid-sdk
 control: TreeGrid
 documentation: ug
@@ -112,9 +112,7 @@ Use the `SfTreeGrid.InitialSortDirection` property to apply the same initial sor
                        ParentPropertyName="ID">
 {% endhighlight %}
 {% highlight c# %}
-
-  treeGrid.InitialSortDirection = ListSortDirection.Descending;
-
+treeGrid.InitialSortDirection = ListSortDirection.Descending;
 {% endhighlight %}
 {% endtabs %}
 
@@ -127,17 +125,18 @@ Use the `TreeGridColumn.InitialSortDirection` property to define the initial sor
 {% tabs %}
 {% highlight xaml %}
 <syncfusion:SfTreeGrid Name="treeGrid"
-                               AllowSorting="False"
-                               AutoGenerateColumns="False"
-                               ChildPropertyName="ReportsTo"
-                               ItemsSource="{Binding EmployeeInfo}"
-                               ParentPropertyName="ID">
+                       AllowSorting="False"
+                       AutoGenerateColumns="False"
+                       ChildPropertyName="ReportsTo"
+                       ItemsSource="{Binding EmployeeInfo}"
+                       ParentPropertyName="ID">
 
     <syncfusion:SfTreeGrid.Columns>
         <syncfusion:TreeGridTextColumn MappingName="ID" InitialSortDirection="Descending" /> 
         <syncfusion:TreeGridTextColumn AllowSorting="True" MappingName="FirstName" HeaderText="First Name" InitialSortDirection="Ascending" />
         <syncfusion:TreeGridTextColumn AllowSorting="False" MappingName="LastName" HeaderText="Last Name" />
     </syncfusion:SfTreeGrid.Columns>
+
 </syncfusion:SfTreeGrid>
 {% endhighlight %}
 {% highlight c# %}
