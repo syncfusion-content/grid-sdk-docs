@@ -936,7 +936,7 @@ public class OrderDetails
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://blazorplayground.syncfusion.com/embed/rDhnNmtWqDkWsnuh?appbar=false&editor=false&result=true&errorlist=false&theme=fluent2" %}
+{% previewsample "https://blazorplayground.syncfusion.com/embed/LDhojCBWKkZwhwWp?appbar=false&editor=false&result=true&errorlist=false&theme=bootstrap5" %}
 
 ## How to perform bulk changes using a method
 
@@ -1097,8 +1097,6 @@ public class OrderDetails
 }
 {% endhighlight %}
 {% endtabs %}
-
-{% previewsample "https://blazorplayground.syncfusion.com/embed/LXrxNmVUBWOQLhre?appbar=false&editor=false&result=true&errorlist=false&theme=fluent2" %}
 
 N> The **AllowEditOnSingleClick** property applies only to **Batch** editing mode. Normal and Dialog editing modes are not affected by this setting.
 

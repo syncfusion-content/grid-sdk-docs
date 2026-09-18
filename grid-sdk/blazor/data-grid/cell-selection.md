@@ -183,7 +183,7 @@ public class OrderDetails
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://blazorplayground.syncfusion.com/embed/VDrdjcZiARWsuoVw?appbar=false&editor=false&result=true&errorlist=false&theme=fluent2" %}
+{% previewsample "https://blazorplayground.syncfusion.com/embed/LNLyWMtQzmNlCgRz?appbar=false&editor=false&result=true&errorlist=false&theme=bootstrap5" %}
 
 ## Cell selection mode
 

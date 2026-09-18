@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Blazor Grid Overview and Features | Syncfusion
-description: Learn how to use Blazor Data Grid for data management, CRUD operations, sorting, filtering, grouping, paging, and virtualization.
-platform: Blazor
-control: DataGrid
+title: Blazor DataGrid Documentation & Developer Guide | Syncfusion
+description: Learn how to use Syncfusion Blazor Data Grid for data management, CRUD operations, sorting, filtering, grouping, paging, virtualization, and customization.
+platform: grid-sdk
 documentation: ug
 ---
 
-# Overview in Blazor Data Grid
+# Blazor Data Grid Documentation Overview
 
-## Introduction to Syncfusion Blazor Grid
+## Introduction to Syncfusion Blazor DataGrid
 
 The Blazor DataGrid is a powerful and feature-rich UI component designed for displaying and managing tabular data with high performance and flexibility. It offers a comprehensive set of enterprise-grade capabilities, including advanced data operations, seamless integration with multiple data sources, and extensive customization options. Built for scalability, it enables developers to create responsive, data-intensive applications with ease.
 
