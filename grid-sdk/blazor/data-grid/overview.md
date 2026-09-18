@@ -3,7 +3,6 @@ layout: post
 title: Blazor DataGrid Documentation & Developer Guide | Syncfusion
 description: Learn how to use Syncfusion Blazor Data Grid for data management, CRUD operations, sorting, filtering, grouping, paging, virtualization, and customization.
 platform: grid-sdk
-control: DataGrid
 documentation: ug
 ---
 
@@ -28,7 +27,7 @@ The Blazor DataGrid is ideal for a wide range of business scenarios:
 
 ## Data Connectivity
 
-The Blazor DataGrid enables multiple data binding approaches, offering flexibility in choosing the right strategy for different application architectures. The DataGrid can work with in-memory collections for small datasets, connect to remote services for scalable applications, or leverage ORM frameworks for seamless database integration.
+The Blazor DataGrid enables multiple data binding approaches, offering flexibility in choosing the right strategy for different application architectures. The Blazor Grid can work with in-memory collections for small datasets, connect to remote services for scalable applications, or leverage ORM frameworks for seamless database integration.
 
 **Data Binding Approaches**
 
@@ -46,7 +45,7 @@ The Blazor DataGrid enables multiple data binding approaches, offering flexibili
 
 **Database Compatibility**
 
-The DataGrid integrates with virtually any data source through native connectors and adaptor patterns:
+The Blazor DataGrid integrates with virtually any data source through native connectors and adaptor patterns:
 
 | Database | Key Benefit | Best For |
 |----------|---------------|----------|
@@ -66,7 +65,7 @@ Connect your application to modern databases and cloud-hosted data platforms. Th
 
 **API & service integration**
 
-API & service integration enables the DataGrid to connect seamlessly with GraphQL, Web API, OData, URL, and custom services for flexible backend data access.
+API & service integration enables the Blazor DataGrid to connect seamlessly with GraphQL, Web API, OData, URL, and custom services for flexible backend data access.
 
 | Technology | Key Benefit | Use Case |
 |-----------|---------------|----------|
@@ -122,7 +121,7 @@ Multiple editing modes support different workflow scenarios:
 
 **Data Validation**
 
-The DataGrid includes built-in [validation with Data Annotations](./column-validation#data-annotation) that enforces business rules using .NET attributes. Validation errors display inline with helpful messages, guiding users to correct data before submission.
+The Blazor DataGrid includes built-in [validation with Data Annotations](./column-validation#data-annotation) that enforces business rules using .NET attributes. Validation errors display inline with helpful messages, guiding users to correct data before submission.
 
 ## Performance Best Practices
 
@@ -170,7 +169,7 @@ Templating & Customization allows developers to personalize the DataGrid’s hea
 
 **Selection**
 
-Selection enables users to choose rows, cells, or ranges in the DataGrid for interaction, bulk actions, and persistent context-aware workflows.
+Selection enables users to choose rows, cells, or ranges in the Blazor DataGrid for interaction, bulk actions, and persistent context-aware workflows.
 
 | Feature | Purpose | Key Benefit |
 |---------|---------|-------------|
@@ -181,7 +180,7 @@ Selection enables users to choose rows, cells, or ranges in the DataGrid for int
 
 **Accessibility & Keyboard Navigation**
 
-The DataGrid is fully accessible and compliant with Web Content Accessibility Guidelines (WCAG) standards:
+The Blazor DataGrid is fully accessible and compliant with Web Content Accessibility Guidelines (WCAG) standards:
 
 - **[WCAG Compliance](./accessibility)** — Level AA accessibility standards
 - **[Keyboard Shortcuts](./accessibility#keyboard-interaction)** — Complete grid operation via keyboard
