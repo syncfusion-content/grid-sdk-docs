@@ -5,6 +5,7 @@ description: Performance tips in Data Grid help optimize data loading, batch upd
 platform: grid-sdk
 control: Data Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Performance Tips in UWP Data Grid

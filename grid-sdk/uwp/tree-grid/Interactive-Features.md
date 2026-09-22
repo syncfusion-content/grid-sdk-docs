@@ -5,6 +5,7 @@ description: Interactive Features in UWP TreeGrid provide context menus for cell
 platform: grid-sdk
 control: TreeGrid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Interactive Features in UWP TreeGrid

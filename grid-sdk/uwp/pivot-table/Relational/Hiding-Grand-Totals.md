@@ -5,6 +5,7 @@ description: Hide grand totals in Syncfusion® UWP Pivot Table control by disabl
 platform: grid-sdk
 control: Pivot Table
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Hiding Grand Totals in UWP Pivot Table

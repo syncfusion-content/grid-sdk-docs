@@ -5,6 +5,7 @@ description: Hide the grand totals in Syncfusion® WPF Pivot Table control by se
 platform: grid-sdk
 control: Pivot Table
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # How to Hide Grand Totals in WPF Pivot Table

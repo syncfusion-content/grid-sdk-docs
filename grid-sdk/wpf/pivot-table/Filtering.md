@@ -5,6 +5,7 @@ description: Apply filtering in Syncfusion WPF Pivot Table control using FilterE
 platform: grid-sdk
 control: Pivot Table
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Filtering in WPF Pivot Table

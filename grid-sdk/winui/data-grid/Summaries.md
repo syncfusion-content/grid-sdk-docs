@@ -5,6 +5,7 @@ description: Summaries in Data Grid provide aggregate calculations and customiza
 platform: grid-sdk
 control: Data Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 

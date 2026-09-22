@@ -5,6 +5,7 @@ description: Export TreeGrid data to PDF with options to include headers, stacke
 platform: grid-sdk
 control: TreeGrid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Export To PDF in WPF TreeGrid

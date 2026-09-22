@@ -5,6 +5,7 @@ description: Interactive features in TreeGrid enhance usability by offering cont
 platform: grid-sdk
 control: TreeGrid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Interactive Features in WPF TreeGrid

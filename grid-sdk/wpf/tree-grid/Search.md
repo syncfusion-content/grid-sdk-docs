@@ -5,6 +5,7 @@ description: Search in TreeGrid quickly locates records across grid data to impr
 platform: grid-sdk
 control: TreeGrid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Search in WPF TreeGrid

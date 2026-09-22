@@ -5,6 +5,7 @@ description: Helpers in Data Grid provides helper classes and methods to customi
 platform: grid-sdk
 control: Data Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Helpers in WPF Data Grid

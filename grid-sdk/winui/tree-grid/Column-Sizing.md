@@ -5,6 +5,7 @@ description: Column Sizing in TreeGrid adjusts column widths automatically or ma
 platform: grid-sdk
 control: TreeGrid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Column Sizing in WinUI TreeGrid

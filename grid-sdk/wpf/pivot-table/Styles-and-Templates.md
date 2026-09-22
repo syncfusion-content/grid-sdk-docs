@@ -5,6 +5,7 @@ description: Cell Style and Template in the Syncfusion® WPF Pivot Table control
 platform: grid-sdk
 control: Pivot Table
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Cell Style and Template in WPF Pivot Table

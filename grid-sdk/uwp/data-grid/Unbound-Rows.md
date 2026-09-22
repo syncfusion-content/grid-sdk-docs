@@ -5,6 +5,7 @@ description: Unbound Rows in UWP Data Grid display custom rows for calculations,
 platform: grid-sdk
 control: Data Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Unbound Rows in UWP Data Grid

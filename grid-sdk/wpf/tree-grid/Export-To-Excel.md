@@ -5,6 +5,7 @@ description: Export TreeGrid data to Excel with support for headers, stacked hea
 platform: grid-sdk
 control: TreeGrid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Export To Excel in WPF TreeGrid

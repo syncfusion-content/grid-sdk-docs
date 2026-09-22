@@ -5,6 +5,7 @@ description: Conditional Styling in TreeGrid applies custom styles to cells, row
 platform: grid-sdk
 control: TreeGrid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Conditional Styling in WPF TreeGrid

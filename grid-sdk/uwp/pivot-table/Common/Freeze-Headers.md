@@ -5,6 +5,7 @@ description: Freeze Headers in Syncfusion® UWP Pivot Table control keeps row an
 platform: grid-sdk
 control: Pivot Table
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Freeze Headers in UWP Pivot Table

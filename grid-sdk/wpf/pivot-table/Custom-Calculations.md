@@ -5,6 +5,7 @@ description: Define custom calculations in the Syncfusion® WPF Pivot Table cont
 platform: grid-sdk
 control: Pivot Table
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Custom Calculations in WPF Pivot Table
