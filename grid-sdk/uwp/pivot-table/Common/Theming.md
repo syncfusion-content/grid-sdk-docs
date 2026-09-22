@@ -5,6 +5,7 @@ description: Theming in Syncfusion® UWP Pivot Table control lets you apply buil
 platform: grid-sdk
 control: Pivot Table
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Theming in UWP Pivot Table

@@ -5,6 +5,7 @@ description: Printing in the Syncfusion® WPF Pivot Table control allows users t
 platform: grid-sdk
 control: Pivot Table
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Printing in WPF Pivot Table

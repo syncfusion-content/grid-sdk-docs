@@ -5,6 +5,7 @@ description: Filtering in Data Grid enables efficient data filtering through col
 platform: grid-sdk
 control: Data Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 

@@ -5,6 +5,7 @@ description: Clipboard Operations in UWP TreeGrid enable copy, cut, and paste ac
 platform: grid-sdk
 control: TreeGrid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Clipboard Operations in UWP TreeGrid

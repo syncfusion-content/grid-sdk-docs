@@ -5,6 +5,7 @@ description: Sorting Events in the Syncfusion® WPF Pivot Table control help tra
 platform: grid-sdk
 control: Pivot Table
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Sorting Events in WPF Pivot Table

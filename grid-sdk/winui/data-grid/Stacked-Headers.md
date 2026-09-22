@@ -5,6 +5,7 @@ description: Stacked headers in Data Grid group related columns under custom hea
 platform: grid-sdk
 control: Data Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Stacked Headers in WinUI Data Grid

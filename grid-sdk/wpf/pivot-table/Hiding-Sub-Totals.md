@@ -5,6 +5,7 @@ description: Show or hide sub-totals in the Syncfusion® WPF Pivot Table control
 platform: grid-sdk
 control: Pivot Table
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Show/Hide Sub-Totals in WPF Pivot Table

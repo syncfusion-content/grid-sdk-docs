@@ -5,6 +5,7 @@ description: UI Automation in  Data Grid enables accessibility and automated tes
 platform: grid-sdk
 control: Data Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # UI Automation in WPF Data Grid

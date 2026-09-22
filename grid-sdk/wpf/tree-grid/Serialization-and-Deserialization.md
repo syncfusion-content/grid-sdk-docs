@@ -5,6 +5,7 @@ description: Serialization in TreeGrid enables saving and restoring grid state w
 platform: grid-sdk
 control: TreeGrid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Serialization and Deserialization in WPF TreeGrid

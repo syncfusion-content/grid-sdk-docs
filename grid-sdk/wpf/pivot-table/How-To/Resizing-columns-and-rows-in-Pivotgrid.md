@@ -5,6 +5,7 @@ description: Resize columns and rows dynamically in Syncfusion® WPF Pivot Table
 platform: grid-sdk
 control: Pivot Table
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # How to Resize columns and Rows in WPF Pivot Table

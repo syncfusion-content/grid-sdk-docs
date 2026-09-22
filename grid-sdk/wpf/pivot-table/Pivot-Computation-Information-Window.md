@@ -5,6 +5,7 @@ description: Use the Pivot Computation Information Dialog in the Syncfusion® WP
 platform: grid-sdk
 control: Pivot Table
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Pivot Computation Information Dialog in WPF Pivot Table

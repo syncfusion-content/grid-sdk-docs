@@ -5,6 +5,7 @@ description: UI Automation in TreeGrid enables accessibility and automated testi
 platform: grid-sdk
 control: TreeGrid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # UI Automation in WPF TreeGrid

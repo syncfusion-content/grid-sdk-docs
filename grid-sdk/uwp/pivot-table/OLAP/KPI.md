@@ -5,6 +5,7 @@ description: KPI in Syncfusion® UWP Pivot Table control displays business metri
 platform: grid-sdk
 control: Pivot Table
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # KPI in UWP Pivot Table

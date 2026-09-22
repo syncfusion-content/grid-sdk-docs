@@ -5,6 +5,7 @@ description: Selection in Data Grid enables row, cell, and multiple-item selecti
 platform: grid-sdk
 control: Data Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Selection in WinUI Data Grid
