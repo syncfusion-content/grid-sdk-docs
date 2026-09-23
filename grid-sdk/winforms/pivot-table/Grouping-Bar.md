@@ -5,6 +5,7 @@ description: Manage fields in Syncfusion® Windows Forms Pivot Table control usi
 platform: grid-sdk
 control: Pivot Table
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Grouping Bar in Windows Forms Pivot Table

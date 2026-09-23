@@ -5,6 +5,7 @@ description: Data Binding in UWP Data Grid provides flexible data source binding
 platform: grid-sdk
 control: Data Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 

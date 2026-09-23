@@ -5,6 +5,7 @@ description: Export data from Syncfusion® Windows Forms Pivot Table control to 
 platform: grid-sdk
 control: Pivot Table
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Exporting in Windows Forms Pivot Table

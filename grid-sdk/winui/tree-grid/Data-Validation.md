@@ -5,6 +5,7 @@ description: Data Validation in TreeGrid uses INotifyDataErrorInfo and attribute
 platform: grid-sdk
 control: TreeGrid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 

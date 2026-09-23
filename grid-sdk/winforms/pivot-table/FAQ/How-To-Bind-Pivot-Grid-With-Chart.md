@@ -5,6 +5,7 @@ description: Bind Pivot Table with Chart in Syncfusion® Windows Forms control u
 platform: grid-sdk
 control: Pivot Table
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # How to Bind Pivot Table with Chart in Windows Forms Pivot Table

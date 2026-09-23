@@ -5,6 +5,7 @@ description: Selection in TreeGrid provides flexible row, cell, and multi-select
 platform: grid-sdk
 control: TreeGrid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Selection in WPF TreeGrid

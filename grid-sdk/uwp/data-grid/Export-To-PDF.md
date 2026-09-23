@@ -5,6 +5,7 @@ description: Export To PDF in UWP Data Grid exports grid data to PDF documents w
 platform: grid-sdk
 control: Data Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 

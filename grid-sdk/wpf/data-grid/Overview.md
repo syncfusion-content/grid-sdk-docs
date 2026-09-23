@@ -6,6 +6,7 @@ description: Learn about the overview of Syncfusion® Essential Studio WPF Data 
 platform: grid-sdk
 control: Data Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # About Syncfusion® WPF Data Grid Control

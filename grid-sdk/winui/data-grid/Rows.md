@@ -5,6 +5,7 @@ description: Rows in Data Grid support row headers, header rows, frozen panes, a
 platform: grid-sdk
 control: Data Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Rows in WinUI Data Grid

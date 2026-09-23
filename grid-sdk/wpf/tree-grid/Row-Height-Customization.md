@@ -5,6 +5,7 @@ description: Row Height Customization in TreeGrid customizes row heights dynamic
 platform: grid-sdk
 control: TreeGrid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Row Height Customization in WPF TreeGrid

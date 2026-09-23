@@ -5,6 +5,7 @@ description: Unbound rows in Data Grid display custom data independently of the 
 platform: grid-sdk
 control: Data Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Unbound Rows in WinUI Data Grid

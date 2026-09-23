@@ -5,6 +5,7 @@ description: Editing in Data Grid enables users to modify cell values, validate 
 platform: grid-sdk
 control: Data Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 

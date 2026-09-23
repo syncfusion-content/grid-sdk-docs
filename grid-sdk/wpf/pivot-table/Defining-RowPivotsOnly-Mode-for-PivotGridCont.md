@@ -5,6 +5,7 @@ description: RowPivotsOnly mode in the Syncfusion® WPF Pivot Table control disp
 platform: grid-sdk
 control: Pivot Table
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # RowPivotsOnly Mode in WPF Pivot Table

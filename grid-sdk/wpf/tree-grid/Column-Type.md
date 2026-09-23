@@ -5,6 +5,7 @@ description: Column Types in TreeGrid provides built-in and custom column types 
 platform: grid-sdk
 control: TreeGrid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 
