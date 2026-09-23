@@ -6,6 +6,7 @@ platform: grid-sdk
 control: SfSmartDataGrid
 documentation: UG
 keywords : maui datagrid, appearance, styling, assistview, toolbar, templates
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Appearance in MAUI SmartDataGrid (SfSmartDataGrid)

@@ -5,6 +5,7 @@ description: Learn how to localize Syncfusion® .NET MAUI Data Grid by translati
 platform: grid-sdk
 control: SfDataGrid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Localization in .NET MAUI DataGrid (SfDataGrid)

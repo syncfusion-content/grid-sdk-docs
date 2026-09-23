@@ -6,6 +6,7 @@ platform: grid-sdk
 control: SfDataGrid
 documentation: ug
 keywords : maui datagrid, maui grid, grid maui, maui gridview, grid in maui, .net maui datagrid, row resizing, datagrid row height, maui datagrid row, sfdatagrid row resize
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Row Resizing in MAUI DataGrid (SfDataGrid)
