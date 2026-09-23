@@ -5,6 +5,7 @@ description: Apply filtering in Syncfusion® Windows Forms Pivot Table control t
 platform: grid-sdk
 control: Pivot Table
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Filtering in Windows Forms Pivot Table

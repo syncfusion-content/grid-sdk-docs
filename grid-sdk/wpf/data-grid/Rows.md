@@ -5,6 +5,7 @@ description: Rows in Data Grid provides support for row headers, header rows, fr
 platform: grid-sdk
 control: Data Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Rows in WPF Data Grid

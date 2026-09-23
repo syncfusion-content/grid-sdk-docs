@@ -5,6 +5,7 @@ description: Show tooltip in Syncfusion® Windows Forms Pivot Table control for 
 platform: grid-sdk
 control: Pivot Table
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # How to Show Tooltip in Windows Forms Pivot Table

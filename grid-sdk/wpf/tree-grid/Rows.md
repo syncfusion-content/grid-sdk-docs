@@ -5,6 +5,7 @@ description: Rows in TreeGrid include headers, unbound, and data rows with custo
 platform: grid-sdk
 control: TreeGrid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Rows in WPF TreeGrid

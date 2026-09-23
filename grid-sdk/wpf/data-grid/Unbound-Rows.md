@@ -5,6 +5,7 @@ description: Unbound Rows in Data Grid display custom rows for calculations, sum
 platform: grid-sdk
 control: Data Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 

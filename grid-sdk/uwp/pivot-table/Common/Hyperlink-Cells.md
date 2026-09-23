@@ -5,6 +5,7 @@ description: Hyperlink Cells in Syncfusion® UWP Pivot Table control let users c
 platform: grid-sdk
 control: Pivot Table
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Hyperlink Cells in UWP Pivot Table

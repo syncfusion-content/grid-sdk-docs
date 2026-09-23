@@ -5,6 +5,7 @@ description: Row Height Customization in UWP Data Grid customizes row heights dy
 platform: grid-sdk
 control: Data Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 

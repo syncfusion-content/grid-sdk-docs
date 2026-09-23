@@ -5,6 +5,7 @@ description: Localization in Data Grid customizes grid content and user interfac
 platform: grid-sdk
 control: Data Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 

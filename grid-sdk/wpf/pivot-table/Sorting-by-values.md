@@ -5,6 +5,7 @@ description: Sorting by Values in the Syncfusion® WPF Pivot Table control lets 
 platform: grid-sdk
 control: Pivot Table
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Sorting by Values in WPF Pivot Table

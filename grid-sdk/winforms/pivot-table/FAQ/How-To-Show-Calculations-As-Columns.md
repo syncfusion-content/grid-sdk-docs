@@ -5,6 +5,7 @@ description: Show calculations as columns in Syncfusion® Windows Forms Pivot Ta
 platform: grid-sdk
 control: Pivot Table
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # How to Show Calculations as Columns in Windows Forms Pivot Table

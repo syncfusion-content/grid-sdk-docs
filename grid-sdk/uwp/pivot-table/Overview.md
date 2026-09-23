@@ -5,6 +5,7 @@ description: Learn about introduction of Syncfusion® Essential Studio UWP Pivot
 platform: grid-sdk
 control: Pivot Table
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # About Syncfusion® UWP Pivot Table Control

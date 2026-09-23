@@ -5,6 +5,7 @@ description: Load TreeGrid child nodes on demand to improve performance when wor
 platform: grid-sdk
 control: TreeGrid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Load On Demand in WPF TreeGrid

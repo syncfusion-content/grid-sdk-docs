@@ -5,6 +5,7 @@ description: Summaries in UWP Data Grid display aggregate values such as count, 
 platform: grid-sdk
 control: Data Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Summaries in UWP Data Grid

@@ -5,6 +5,7 @@ description: Stacked Headers in Data Grid groups related columns under shared he
 platform: grid-sdk
 control: Data Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Stacked Headers in WPF Data Grid
