@@ -5,6 +5,7 @@ description: Export To PDF in Data Grid supports exporting records with customiz
 platform: grid-sdk
 control: Data Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Export To PDF in Windows Forms Data Grid

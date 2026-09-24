@@ -5,6 +5,7 @@ description: Apply conditional formatting in the Syncfusion® WPF Pivot Table co
 platform: grid-sdk
 control: Pivot Table
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Formatting using data conditions in WPF Pivot Table

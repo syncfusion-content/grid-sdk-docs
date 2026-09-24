@@ -5,6 +5,7 @@ description: Filter TreeGrid records using built-in filter predicates, UI option
 platform: grid-sdk
 control: TreeGrid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Filtering in WPF TreeGrid

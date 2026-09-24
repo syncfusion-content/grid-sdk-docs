@@ -5,6 +5,7 @@ description: CRUD Operations in Data Grid enables creating, reading, updating, a
 platform: grid-sdk
 control: Data Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # CRUD Operations in WPF Data Grid

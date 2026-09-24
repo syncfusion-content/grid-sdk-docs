@@ -5,6 +5,7 @@ description: Export data from the Syncfusion® WPF Pivot Table control to Excel,
 platform: grid-sdk
 control: Pivot Table
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Exporting in WPF Pivot Table

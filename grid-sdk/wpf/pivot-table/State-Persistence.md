@@ -5,6 +5,7 @@ description: State Persistence in the Syncfusion® WPF Pivot Table control prese
 platform: grid-sdk
 control: Pivot Table
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # State Persistence in WPF Pivot Table

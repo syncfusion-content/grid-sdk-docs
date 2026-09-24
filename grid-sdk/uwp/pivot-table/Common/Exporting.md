@@ -5,6 +5,7 @@ description: Export data from Syncfusion® UWP Pivot Table control to Excel, Wor
 platform: grid-sdk
 control: Pivot Table
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Exporting in UWP Pivot Table

@@ -5,6 +5,7 @@ description: Skin Customization in the Syncfusion® WPF Pivot Table control appl
 platform: grid-sdk
 control: Pivot Table
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Skin Customization in WPF Pivot Table

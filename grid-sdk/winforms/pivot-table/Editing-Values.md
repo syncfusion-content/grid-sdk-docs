@@ -5,6 +5,7 @@ description: Edit values in Syncfusion® Windows Forms Pivot Table control to mo
 platform: grid-sdk
 control: Pivot Table
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Editing Values in Windows Forms Pivot Table

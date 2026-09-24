@@ -6,6 +6,7 @@ platform: grid-sdk
 control: Smart Data Grid
 documentation: ug
 keywords : WPF datagrid, ai assist, natural language commands, sorting, grouping, filtering, highlighting
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # AI-Powered Features in WPF Smart Data Grid

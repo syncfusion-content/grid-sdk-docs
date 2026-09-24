@@ -5,6 +5,7 @@ description: Enable cell editing in TreeGrid with support for custom editors, ed
 platform: grid-sdk
 control: TreeGrid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Editing in WPF TreeGrid

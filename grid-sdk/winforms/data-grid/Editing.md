@@ -5,6 +5,7 @@ description: Editing in Data Grid supports cell and record editing, customizable
 platform: grid-sdk
 control: Data Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Editing in Windows Forms Data Grid

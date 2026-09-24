@@ -5,6 +5,7 @@ description: Paging in Syncfusion® UWP Pivot Table control enables efficient ha
 platform: grid-sdk
 control: Pivot Table
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Paging in UWP Pivot Table

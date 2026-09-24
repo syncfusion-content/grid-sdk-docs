@@ -5,6 +5,7 @@ description: Serialization and Deserialization in Syncfusion® UWP Pivot Table c
 platform: grid-sdk
 control: Pivot Table
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Serialization and Deserialization in UWP Pivot Table

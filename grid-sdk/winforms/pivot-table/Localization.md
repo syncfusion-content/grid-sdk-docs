@@ -5,6 +5,7 @@ description: Localize Syncfusion® Windows Forms Pivot Table control using ILoca
 platform: grid-sdk
 control: Pivot Table
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Localization in Windows Forms Pivot Table

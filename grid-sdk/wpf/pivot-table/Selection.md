@@ -5,6 +5,7 @@ description: Cell Selection in the Syncfusion® WPF Pivot Table control allows s
 platform: grid-sdk
 control: Pivot Table
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Cell Selection in WPF Pivot Table

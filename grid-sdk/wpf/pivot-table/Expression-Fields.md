@@ -5,6 +5,7 @@ description: Add expression fields in the Syncfusion® WPF Pivot Table control t
 platform: grid-sdk
 control: Pivot Table
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Expression Fields in WPF Pivot Table

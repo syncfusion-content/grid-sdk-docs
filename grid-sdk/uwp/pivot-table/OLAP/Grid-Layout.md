@@ -5,6 +5,7 @@ description: Grid Layout in Syncfusion® UWP Pivot Table control customizes summ
 platform: grid-sdk
 control: Pivot Table
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Grid Layout in UWP Pivot Table

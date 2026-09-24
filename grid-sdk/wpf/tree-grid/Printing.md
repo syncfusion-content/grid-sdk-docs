@@ -5,6 +5,7 @@ description: Printing in TreeGrid prints grid data with customizable layouts, fo
 platform: grid-sdk
 control: TreeGrid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Printing in WPF TreeGrid

@@ -6,6 +6,7 @@ description: Learn how to get started with the Syncfusion® WinUI Data Grid cont
 platform: grid-sdk
 control: Data Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Getting Started with WinUI Data Grid
