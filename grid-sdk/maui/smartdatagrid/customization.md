@@ -6,6 +6,7 @@ platform: grid-sdk
 control: SfSmartDataGrid
 documentation: UG
 keywords : maui datagrid, customization, assistview, prompts, smart actions
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Customization in MAUI SmartDataGrid (SfSmartDataGrid)
