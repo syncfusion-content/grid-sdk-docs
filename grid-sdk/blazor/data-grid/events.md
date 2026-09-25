@@ -3207,7 +3207,7 @@ The [OnColumnMenuOpen](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.G
 
 ## Printing
 
-`Printing` triggers while the DataGrid generates print content, allowing you to customize the print layout, styling, and content before it is rendered for printing.
+`Printing` triggers while the Data Grid generates print content, allowing customization of the print layout, styling, and content before rendering for printing.
 
 ```cshtml
 @using Syncfusion.Blazor.Grids
@@ -3264,7 +3264,7 @@ The [OnColumnMenuOpen](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.G
 
 ## Printed
 
-`Printed` triggers after the DataGrid print content is generated and ready for printing. Use it to perform post-print actions such as tracking, notifications, or resource cleanup.
+`Printed` triggers after the Data Grid print content is generated and ready for printing. Use it to perform post-print actions such as tracking, notifications, or resource cleanup.
 
 ```cshtml
 @using Syncfusion.Blazor.Grids

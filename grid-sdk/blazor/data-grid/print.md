@@ -434,7 +434,7 @@ In the below example, we have **CustomerID** as a hidden column in the datagrid.
 
 ## Show or hide columns using print event
 
-In the Blazor DataGrid, the flexibility to control the visibility of columns during the printing process is available. Specific columns can be dynamically shown or hidden using the `Printing` and `Printed` events while printing. This capability enhances control over which columns are included in the printed output, allowing the printed DataGrid to be tailored to specific needs.
+In the Blazor Data Grid, the flexibility to control the visibility of columns during the printing process is available. Specific columns can be dynamically shown or hidden using the `Printing` and `Printed` events while printing. This capability enhances control over which columns are included in the printed output, allowing the printed Data Grid to be tailored to specific needs.
 
 In the `Printing` event, can show or hide columns by setting column.visible property to true or false respectively.
 
