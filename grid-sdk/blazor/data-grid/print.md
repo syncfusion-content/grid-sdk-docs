@@ -432,6 +432,96 @@ In the below example, we have **CustomerID** as a hidden column in the datagrid.
 }
 ``` -->
 
+## Show or hide columns using print event
+
+In the Blazor DataGrid, the flexibility to control the visibility of columns during the printing process is available. Specific columns can be dynamically shown or hidden using the `Printing` and `Printed` events while printing. This capability enhances control over which columns are included in the printed output, allowing the printed grid to be tailored to specific needs.
+
+In the `Printing` event, can show or hide columns by setting column.visible property to true or false respectively.
+
+In the `Printed` event, the column visibility state is reset back to its original configuration.
+
+Here’s a code example that demonstrates how to show a hidden column (CustomerID) and hide a visible column (ShipCity) during printing and then reset their visibility after printing:
+
+{% tabs %}
+{% highlight razor tabtitle="Index.razor" %}
+
+@using Syncfusion.Blazor.Grids
+
+<SfGrid @ref="DefaultGrid" DataSource="@Orders" Toolbar="@(new List<string>() { "Print" })" Height="315">
+    <GridEvents Printing="Printing" Printed="OnPrintCompleted" TValue="OrderData"></GridEvents>
+    <GridColumns>
+        <GridColumn Field=@nameof(OrderData.OrderID) HeaderText="Order ID" Width="120"></GridColumn>
+        <GridColumn Field=@nameof(OrderData.CustomerID) HeaderText="Customer ID" Width="120" Visible="@IsVisible"></GridColumn>
+        <GridColumn Field=@nameof(OrderData.ShipCity) HeaderText="Ship City" Width="130" Visible="@IsUIMode"></GridColumn>
+        <GridColumn Field=@nameof(OrderData.Freight) HeaderText="Freight" Width="120"></GridColumn>
+    </GridColumns>
+</SfGrid>
+
+@code {
+    private SfGrid<OrderData> DefaultGrid;
+    private List<OrderData> Orders { get; set; }
+    private bool IsUIMode = true;
+    private bool IsVisible = false;
+
+    protected override void OnInitialized()
+    {
+        Orders = OrderData.GetAllRecords();
+    }
+
+    private void Printing(PrintingEventArgs args)
+    {
+        IsUIMode = false;
+        IsVisible = true;
+    }
+
+    private void OnPrintCompleted()
+    {
+        IsUIMode = true;
+        IsVisible = false;
+    }
+}
+
+{% endhighlight %}
+{% highlight c# tabtitle="OrderData.cs" %}
+
+internal sealed class OrderData
+{
+    private static readonly List<OrderData> Data = new();
+
+    public OrderData(int orderID, string customerID, string shipCity, double freight)
+    {
+        OrderID = orderID;
+        CustomerID = customerID;
+        ShipCity = shipCity;
+        Freight = freight;
+    }
+
+    internal static List<OrderData> GetAllRecords()
+    {
+        if (Data.Count == 0)
+        {
+            Data.Add(new OrderData(10248, "VINET", "Reims", 32.38));
+            Data.Add(new OrderData(10249, "TOMSP", "Münster", 11.61));
+            Data.Add(new OrderData(10250, "HANAR", "Rio de Janeiro", 65.83));
+            Data.Add(new OrderData(10251, "VICTE", "Lyon", 41.34));
+            Data.Add(new OrderData(10252, "SUPRD", "Charleroi", 51.30));
+            Data.Add(new OrderData(10253, "HANAR", "Rio de Janeiro", 58.17));
+            Data.Add(new OrderData(10254, "CHOPS", "Bern", 22.98));
+            Data.Add(new OrderData(10255, "RICSU", "Genève", 148.33));
+            Data.Add(new OrderData(10256, "WELLI", "Resende", 13.97));
+        }
+        return Data;
+    }
+
+    public int OrderID { get; set; }
+    public string CustomerID { get; set; }
+    public string ShipCity { get; set; }
+    public double Freight { get; set; }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
 ## Limitations of printing large data
 
 Printing a large volume of data in a single page may cause performance issues in the browser. Rendering many rows and columns at once can slow down the page or make it unresponsive.
