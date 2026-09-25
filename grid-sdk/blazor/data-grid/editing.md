@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Editing in Blazor DataGrid | Syncfusion®
-description: Learn how to configure and customize editing features in the Blazor DataGrid efficiently and much more details.
+title: Customize editing in Blazor DataGrid | Syncfusion®
+description: Learn how to style and customize edited and added rows, input fields, the edit dialog header, and command buttons in the Blazor DataGrid using CSS.
 platform: grid-sdk
 control: DataGrid
 documentation: ug
 ---
 
-# Editing in Blazor DataGrid
+# Editing customization in Blazor DataGrid
 
 The [Blazor DataGrid](https://www.syncfusion.com/blazor-components/blazor-datagrid) provides powerful options for dynamically inserting, deleting, and updating records, enabling to modify data directly within the Blazor Grid. This feature is useful for performing CRUD (Create, Read, Update and Delete) operations seamlessly.
 
