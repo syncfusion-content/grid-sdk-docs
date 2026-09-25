@@ -10,36 +10,9 @@ keywords: blazor datagrid cell editing, blazor grid cell edit mode, cell editing
 
 # Cell Editing in Blazor Data Grid
 
-Cell editing allows individual cell values in the [Blazor DataGrid](https://www.syncfusion.com/blazor-components/blazor-datagrid) to be updated directly, without opening a separate edit form or affecting other cells in the row.
+Cell editing provides a streamlined way to update individual cell values directly within the [Blazor DataGrid](https://www.syncfusion.com/blazor-components/blazor-datagrid). It is designed for quick, inline modifications, making data entry and corrections more efficient. This approach ensures that changes are applied seamlessly to large datasets while maintaining consistency with the grid’s overall editing experience.
 
-## What is cell editing?
-
-Cell editing is an edit mode in which a single cell switches to an editable state when selected for editing. Only the targeted cell becomes editable; the remaining cells in the row stay in their display state. Once the value is modified and confirmed, the change is saved immediately at the cell level.
-
-**How cell editing differs from Normal Editing**
-
-This differs from [normal (row) editing](./in-line-editing.md), where an entire row moves into edit state and all editable columns in that row become active at the same time.
-
-## Why cell editing ?
-
-Cell editing reduces the effort required to make small, isolated corrections to data. Instead of activating an entire row for editing, only the required cell is engaged, which:
-
-* Lowers the chance of accidental changes to unrelated columns in the same row.
-* Speeds up repetitive data-entry tasks, since focus can move directly between cells.
-* Keeps the visual context of the row intact while a value is being corrected.
-* Supports keyboard-first workflows through direct key press activation and configurable focus movement after a save.
-
-## When to use cell editing ?
-
-Cell editing fits scenarios where updates are frequent but limited to specific columns or values, such as:
-
-* Correcting a single field (for example, a price, quantity, or status) in a large dataset without opening the full row for editing.
-* Building spreadsheet-like data entry experiences where users move from cell to cell using the keyboard.
-* Applying quick inline corrections during data review, without exposing every editable column in the row.
-
-For scenarios that require editing multiple related fields in a row at once, [normal editing](./in-line-editing.md), [dialog editing](./dialog-editing.md), or [batch editing](./batch-editing.md) may be more appropriate.
-
-## Enable cell editing
+**Enable cell editing**
 
 Cell editing is enabled by configuring two properties on [GridEditSettings](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridEditSettings.html):
 
@@ -49,7 +22,6 @@ Cell editing is enabled by configuring two properties on [GridEditSettings](http
 | [AllowEditing](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridEditSettings.html#Syncfusion_Blazor_Grids_GridEditSettings_AllowEditing) | Set to `true` to permit existing records to be edited. |
 
 With both properties configured, double-clicking a cell, or selecting a cell and pressing **Enter** or **F2**, switches that cell into edit mode.
-
 
 {% tabs %}
 {% highlight razor tabtitle="Index.razor" %}
@@ -119,21 +91,9 @@ public class OrderDetails
 
 ## Edit on key press in cell editing
 
-### What is edit on key press?
+Edit on key press is an interaction mode in which a selected cell switches to edit state as soon as a key is pressed, instead of requiring a double-click or a separate action to begin editing. This removes the extra step of double-clicking before every correction, keeping repetitive data-entry workflows moving without interruption. This option is useful for data-entry-heavy grids where a cell is selected and its value overwritten immediately, such as order processing sheets, inventory counts, or timesheet grids.
 
-Edit on key press is an interaction mode in which a selected cell switches to edit state as soon as a key is pressed, instead of requiring a double-click or a separate action to begin editing.
-
-### Why edit on key press ?
-
-Requiring a double-click before every correction adds an extra step to repetitive data-entry tasks. Edit on key press removes that step, so typing can start the moment a cell is selected, which keeps data-entry workflows moving without interruption.
-
-### When to use edit on key press ?
-
-Enable this option for data-entry-heavy grids where users regularly select a cell and immediately overwrite its value, such as order processing sheets, inventory counts, or timesheet grids.
-
-### Configure edit on key press
-
-Set the [AllowEditOnKeyPress](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridEditSettings.html#Syncfusion_Blazor_Grids_GridEditSettings_AllowEditOnKeyPress) property in [GridEditSettings](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridEditSettings.html) to `true`. When enabled, pressing a key while a cell is selected places the cell in edit mode and applies the entered value directly.
+To enable set the [AllowEditOnKeyPress](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridEditSettings.html#Syncfusion_Blazor_Grids_GridEditSettings_AllowEditOnKeyPress) property in [GridEditSettings](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridEditSettings.html) to `true`. When enabled, pressing a key while a cell is selected places the cell in edit mode and applies the entered value directly.
 
 {% tabs %}
 {% highlight razor tabtitle="Index.razor" %}
@@ -201,23 +161,9 @@ public class OrderDetails
 
 ## Customize focus movement after save (EnterKeyDirection)
 
-### What is EnterKeyDirection?
+`EnterKeyDirection` is a [GridEditSettings](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridEditSettings.html) property that controls where keyboard focus moves after a cell value is saved by pressing the `Enter` key. Without this control, keyboard-driven data entry can lose track of position after every save, forcing repeated re-selection of cells. Configure this property when data is entered in a specific pattern, such as moving down a single column with `NextRow`, moving across a row with `NextColumn`, or keeping focus fixed on the same cell with `None` for repeated corrections.
 
-`EnterKeyDirection` is a [GridEditSettings](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridEditSettings.html) property that controls where keyboard focus moves after a cell value is saved by pressing the `Enter` key. It accepts a value from the `EnterKeyDirection` enumeration.
-
-### Why EnterKeyDirection ?
-
-Without control over focus movement, keyboard-driven data entry can lose track of position after every save, forcing repeated re-selection of cells. `EnterKeyDirection` keeps focus predictable, so entering a sequence of values with the keyboard alone remains efficient.
-
-### When to use EnterKeyDirection ?
-
-Configure this property when data is entered in a specific pattern, for example:
-
-* Moving down a single column to enter a series of values (`NextRow`).
-* Moving across a row to fill in multiple fields for one record (`NextColumn`).
-* Keeping focus fixed on the same cell for repeated corrections (`None`).
-
-### EnterKeyDirection enum
+`EnterKeyDirection` is part of the **EnterKeyDirection** enumeration, which provides multiple options for customizing the focus behavior on `Enter` key. The available modes include `NextColumn`, `NextRow` and `None`.
 
 | Enum value | Description |
 |---------|-----|
@@ -328,10 +274,6 @@ private class DropdownOption<T>
 | Typing into a selected cell does not start editing. | `AllowEditOnKeyPress` is `false` (default). | Set `AllowEditOnKeyPress="true"` in `GridEditSettings`. |
 | Focus does not move after pressing `Enter`. | `EnterKeyDirection` is set to `None`. | Set `EnterKeyDirection` to `NextRow` or `NextColumn` based on the desired direction. |
 | A cell will not save. | The entered value fails a validation rule on the column. | Check the column's `ValidationRules` and correct the value, or adjust the rule. |
-
-## Summary
-
-Cell editing lets individual cell values in the Blazor DataGrid be updated without opening a full row or dialog for editing. Enabling `EditMode.Cell` along with `AllowEditing` activates the feature, `AllowEditOnKeyPress` removes the need to double-click before typing, and `EnterKeyDirection` controls where focus lands after a value is saved.
 
 ## See also
 
