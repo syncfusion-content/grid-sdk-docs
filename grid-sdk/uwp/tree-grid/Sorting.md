@@ -125,7 +125,7 @@ Use the `TreeGridColumn.InitialSortDirection` property to define the initial sor
 {% tabs %}
 {% highlight xaml %}
 <syncfusion:SfTreeGrid Name="treeGrid"
-                       AllowSorting="False"
+                       AllowSorting="True"
                        AutoGenerateColumns="False"
                        ChildPropertyName="ReportsTo"
                        ItemsSource="{Binding EmployeeInfo}"
@@ -133,8 +133,8 @@ Use the `TreeGridColumn.InitialSortDirection` property to define the initial sor
 
     <syncfusion:SfTreeGrid.Columns>
         <syncfusion:TreeGridTextColumn MappingName="ID" InitialSortDirection="Descending" /> 
-        <syncfusion:TreeGridTextColumn AllowSorting="True" MappingName="FirstName" HeaderText="First Name" InitialSortDirection="Ascending" />
-        <syncfusion:TreeGridTextColumn AllowSorting="False" MappingName="LastName" HeaderText="Last Name" />
+        <syncfusion:TreeGridTextColumn MappingName="FirstName" HeaderText="First Name" InitialSortDirection="Ascending" />
+        <syncfusion:TreeGridTextColumn MappingName="LastName" HeaderText="Last Name" />
     </syncfusion:SfTreeGrid.Columns>
 
 </syncfusion:SfTreeGrid>
