@@ -7,7 +7,7 @@ control: Tree Grid
 documentation: ug
 ---
 
-# Overview in Blazor TreeGrid
+# Blazor TreeGrid Documentation Overview
 
 ## Introduction to Syncfusion Blazor TreeGrid
 
@@ -46,7 +46,7 @@ The [Blazor TreeGrid](https://www.syncfusion.com/blazor-components/blazor-tree-g
 |---------|---------------|----------|
 | **[SfDataManager with adaptors](./data-binding)** | Automatic remote operation handling | Web services, REST endpoints |
 | **[Custom Binding](./custom-binding)** | Full manual control over data operations | Specialized backend, performance-tuned services |
-| **[Entity Framework](./editing/entity-frame-work)** | ORM-based editing with child record handling | ASP.NET backend, relational databases |
+| **[Entity Framework](./editing/entity-frame-work)** | ORM based editing with child record handling | ASP.NET backend, relational databases |
 
 N> To learn about the adaptors supported by the TreeGrid and all remote data binding scenarios, refer to [Data Binding](./data-binding).
 
@@ -57,11 +57,11 @@ The [Blazor TreeGrid](https://www.syncfusion.com/blazor-components/blazor-tree-g
 | Feature | Purpose | Key Benefit |
 |---------|---------|-------------|
 | **[Sorting](./sorting)** | Arrange records in ascending or descending order while preserving the parent-child structure | Quick sort by clicking column headers |
-| **[Filtering](./filter)** | Apply multi-level conditions across tree data with hierarchy-aware modes | [Filter hierarchy modes](./filter#filter-hierarchy-modes) preserve or filter entire tree branches |
+| **[Filtering](./filter)** | Apply multi-level conditions across tree data with hierarchy aware modes | [Filter hierarchy modes](./filter#filter-hierarchy-modes) preserve or filter entire tree branches |
 | **[Filter Bar](./filtering/filter-bar)** | Quick filtering with inline text inputs in column headers | Immediate results without dialogs |
-| **[Filter Menu](./filtering/filter-menu)** | Advanced filtering with complex conditions and multiple criteria | Powerful expression-based filtering |
-| **[Excel-like Filter](./filtering/excel-like-filter)** | Familiar checkbox-based filtering interface from Excel | Multi-select from available values |
-| **[Searching](./searching)** | Rapid text-based search across tree data with navigation | [Hierarchical Search](./searching) to locate records anywhere in the tree |
+| **[Filter Menu](./filtering/filter-menu)** | Advanced filtering with complex conditions and multiple criteria | Powerful expression based filtering |
+| **[Excel-like Filter](./filtering/excel-like-filter)** | Familiar checkbox based filtering interface from Excel | Multi-select from available values |
+| **[Searching](./searching)** | Rapid text based search across tree data with navigation | [Hierarchical Search](./searching) to locate records anywhere in the tree |
 | **[Aggregates](./aggregate)** | Calculate summary values (sum, average, count) on tree data | [Footer aggregate](./aggregate#footer-aggregate) with built-in functions |
 | **[Custom Sorting](./sorting#custom-sorting)** | Define custom sort logic beyond standard functions | Specialized business sort rules |
 
@@ -72,7 +72,7 @@ The [Blazor TreeGrid](https://www.syncfusion.com/blazor-components/blazor-tree-g
 | Feature | Benefit | Use Case | Key Benefit |
 |---------|---------|----------|--------------|
 | **[Row Virtualization](./virtualization#row-virtualization)** | Render only visible rows; load/unload as users scroll | Large trees (10K+ rows) | Smooth scrolling |
-| **[Column Virtualization](./virtualization#column-virtualization)** | Render only visible columns; optimize for many-column grids | Wide grids (50+ columns) | Efficient horizontal scrolling |
+| **[Column Virtualization](./virtualization#column-virtualization)** | Render only visible columns; optimize for many column grids | Wide grids (50+ columns) | Efficient horizontal scrolling |
 | **[Managing Records Count](./virtualization#managing-records-count)** | Control additional records loaded per block during virtualization | Deep tree structures | Controlled memory usage |
 | **[Paging](./paging)** | Divide the tree data across pages with page options | Browsing large forests | Navigable dataset segments |
 
@@ -88,9 +88,9 @@ Multiple editing modes support different workflow scenarios:
 |------|-------------|----------|-------------|
 | **[Cell Editing](./editing/cell-editing)** | Edit cell content directly in the grid | Quick single-cell edits, power users | Direct editing without dialog overhead |
 | **[Row Editing](./editing/row-editing)** | Edit an entire row at once | Comprehensive multi-field edits | All fields editable in one action |
-| **[Dialog Editing](./editing/dialog-editing)** | Open a dedicated form dialog for editing | Comprehensive multi-field edits with validation | Organized form-based editing with validation |
+| **[Dialog Editing](./editing/dialog-editing)** | Open a dedicated form dialog for editing | Comprehensive multi-field edits with validation | Organized form based editing with validation |
 | **[Batch Editing](./editing/batch-editing)** | Edit multiple records and submit together | Bulk operations, mass updates | Single submission of all changes |
-| **[Template Editing](./editing/template-editing)** | Use custom Blazor templates for edit forms | Complex layouts, custom components inside edit dialogs | Flexible, custom-designed edit forms |
+| **[Template Editing](./editing/template-editing)** | Use custom Blazor templates for edit forms | Complex layouts, custom components inside edit dialogs | Flexible, custom designed edit forms |
 | **[Command Column Editing](./editing/command-column-editing)** | Edit, Delete, Save, Cancel buttons in dedicated column | Intuitive interface | One-click actions without keyboard interaction |
 
 **Data Validation**
@@ -102,7 +102,7 @@ The [Blazor TreeGrid](https://www.syncfusion.com/blazor-components/blazor-tree-g
 | Feature | Purpose | Key Benefit |
 |---------|---------|-------------|
 | **[Clipboard](./clipboard)** | Copy TreeGrid cells and paste them into Excel or text editors | Seamless data transfer to spreadsheets |
-| **[AutoFill](./auto-fill-like-excel)** | Drag fill handle to extend or clear values like Excel AutoFill | Spreadsheet-like productivity |
+| **[AutoFill](./auto-fill-like-excel)** | Drag fill handle to extend or clear values like Excel AutoFill | Spreadsheet like productivity |
 
 ## Columns
 
@@ -113,10 +113,10 @@ The [Blazor TreeGrid](https://www.syncfusion.com/blazor-components/blazor-tree-g
 | **[Column Formatting](./column#format)** | Apply predefined or custom formats (currency, dates, percentages, etc.) | Professional number and date display |
 | **[Header Template](./column#header-template)** | Customize column headers with icons, tooltips, complex formatting | Professional header design |
 | **[Column Resizing](./columns/column-resizing)** | Manually adjust column widths with auto-fit and responsive options | Optimal content visibility |
-| **[Column Reordering](./columns/column-reorder)** | Drag column headers to reorder display sequence | User-preferred column arrangement |
+| **[Column Reordering](./columns/column-reorder)** | Drag column headers to reorder display sequence | User preferred column arrangement |
 | **[Column Spanning](./columns/column-spanning)** | Extend cells across multiple columns for merged display areas | Grouped or summary information |
 | **[Column Menu](./columns/column-menu)** | Dropdown menu for visibility, filtering, sorting, autofit | Quick column management |
-| **[Column Chooser](./columns/column-chooser)** | Dialog to dynamically show/hide columns | User-controlled visibility |
+| **[Column Chooser](./columns/column-chooser)** | Dialog to dynamically show/hide columns | User controlled visibility |
 | **[Column Template](./columns/column-template)** | Custom cell rendering with custom components | Rich data visualization |
 | **[Lock Columns](./column#lock-columns)** | Fix columns so they stay visible during horizontal scrolling | Always visible critical information |
 | **[Responsive Columns](./column#responsive-columns)** | Hide columns at different resolutions | Optimal display across all devices |
@@ -144,8 +144,8 @@ The [Blazor TreeGrid](https://www.syncfusion.com/blazor-components/blazor-tree-g
 | Feature | Purpose | Key Benefit |
 |---------|---------|-------------|
 | **[Row Selection](./selection)** | Single or multiple row selection modes | Flexible selection workflows |
-| **[Cell Selection](./selection#cell-selection)** | Individual cell or range selection with copy-paste | Spreadsheet-like interaction |
-| **[Checkbox Selection](./selection#checkbox-selection)** | Checkbox-based selection with select-all option | Bulk operation selection |
+| **[Cell Selection](./selection#cell-selection)** | Individual cell or range selection with copy-paste | Spreadsheet like interaction |
+| **[Checkbox Selection](./selection#checkbox-selection)** | Checkbox based selection with select-all option | Bulk operation selection |
 | **[Drag Selection](./selection#drag-selection)** | Drag to select a range of rows or cells | Mouse-friendly bulk selection |
 | **[Toggle Selection](./selection#toggle-selection)** | Toggle multiple non-adjacent selections without Ctrl key | Touch-friendly multi-selection |
 
@@ -154,7 +154,7 @@ The [Blazor TreeGrid](https://www.syncfusion.com/blazor-components/blazor-tree-g
 | Feature | Purpose | Key Benefit |
 |---------|---------|-------------|
 | **[Toolbar](./toolbar)** | Add customizable toolbars with built-in and custom items | Quick access to actions |
-| **[Context Menu](./context-menu)** | Right-click access to TreeGrid actions | Desktop-feel productivity |
+| **[Context Menu](./context-menu)** | Right-click access to TreeGrid actions | Desktop feel productivity |
 | **[Adaptive Layout](./adaptive-layout)** | Automatically adjust layout based on screen space | Optimal display on mobile devices |
 | **[State Management](./state-management)** | Save/restore user preferences across sessions | Personalized user experience |
 
@@ -168,7 +168,7 @@ Templating & Customization allows developers to personalize the TreeGrid's heade
 | **[Column Template](./columns/column-template)** | Custom cell rendering with custom components | Rich data visualization |
 | **[Row Template](./rows/row-template)** | Complete row customization for specialized layouts | Unique row presentations |
 | **[Detail Template](./rows/detail-template)** | Expandable row sections for additional information | Hierarchical data display |
-| **[Globalization](./globalization)** | Culture-aware formatting and right-to-left rendering | Global application support |
+| **[Globalization](./globalization)** | Culture aware formatting and right-to-left rendering | Global application support |
 
 **Accessibility & Keyboard Navigation**
 
@@ -176,11 +176,11 @@ The [Blazor TreeGrid](https://www.syncfusion.com/blazor-components/blazor-tree-g
 
 - **[WAI-ARIA](./accessibility#wai-aria)** - Accessible roles and attributes for TreeGrid UI
 - **[Keyboard interaction](./accessibility#keyboard-interaction)** - Complete TreeGrid operations via keyboard
-  - Tab/Shift+Tab - Navigate between cells
-  - Arrow Keys - Move between rows and columns
-  - Enter - Edit cells, confirm changes
-  - Escape - Cancel editing
-  - Ctrl+A - Select all rows
+  - **Tab/Shift+Tab** - Navigate between cells
+  - **Arrow Keys** - Move between rows and columns
+  - **Enter** - Edit cells, confirm changes
+  - **Escape** - Cancel editing
+  - **Ctrl+A** - Select all rows
 - **[Screen Reader Support](./accessibility)** - Full compatibility with assistive technologies
 - **[Semantic HTML](./accessibility)** - Proper ARIA labels and semantic markup
 
@@ -192,7 +192,7 @@ The [Blazor TreeGrid](https://www.syncfusion.com/blazor-components/blazor-tree-g
 |--------|---------------|----------|
 | **[Excel Export](./excel-export)** | Export to XLSX with tree structure preserved, including indent level | Data analysis, spreadsheet workflows |
 | **[PDF Export](./exporting)** | Generate formatted PDF documents with custom layouts | Professional reports, archiving |
-| **[Print](./print)** | Printer-ready output with page orientation control | Hard copy reports, on-demand printing |
+| **[Print](./print)** | Printer ready output with page orientation control | Hard copy reports, on-demand printing |
 
 ## Advanced features
 
@@ -202,7 +202,7 @@ The [Blazor TreeGrid](https://www.syncfusion.com/blazor-components/blazor-tree-g
 |---------|---------|----------|-------------|
 | **[State Management](./state-management)** | Save/restore user preferences across sessions | Column order, visibility, sort states | Personalized user experience |
 | **[Detail Templates](./rows/detail-template)** | Expandable row sections for additional information | Product details, historical data | Drill-down exploration |
-| **[Global/Local Formatting](./globalization)** | Consistent or column-specific formatting | Currency, dates, numbers, text | Professional presentation |
+| **[Global/Local Formatting](./globalization)** | Consistent or column specific formatting | Currency, dates, numbers, text | Professional presentation |
 | **[Events](./events)** | Event handlers for every user and API action in the TreeGrid | Custom workflows and integrations | Deep integration points |
 
 **Enterprise Patterns**
