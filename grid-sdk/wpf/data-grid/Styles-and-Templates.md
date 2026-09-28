@@ -5,6 +5,7 @@ description: Styles and Templates in Data Grid customizes the appearance and beh
 platform: grid-sdk
 control: Data Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Styles and Templates in WPF Data Grid

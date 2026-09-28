@@ -5,6 +5,7 @@ description: State Persistence in Syncfusion® UWP Pivot Table control preserve 
 platform: grid-sdk
 control: Pivot Table
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # State Persistence in UWP Pivot Table

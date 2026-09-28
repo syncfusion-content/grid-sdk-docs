@@ -5,6 +5,7 @@ description: Column Types in UWP Data Grid provides built-in and custom column t
 platform: grid-sdk
 control: Data Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 

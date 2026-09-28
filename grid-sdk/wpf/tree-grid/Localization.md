@@ -5,6 +5,7 @@ description: Localization in TreeGrid customizes grid content to support multipl
 platform: grid-sdk
 control: TreeGrid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 # Localization in WPF TreeGrid
 

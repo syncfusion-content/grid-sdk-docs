@@ -5,6 +5,7 @@ description: Improved Scrolling in the Syncfusion® WPF Pivot Table control boos
 platform: grid-sdk
 control: Pivot Table
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Improved Deferred Scrolling in WPF Pivot Table

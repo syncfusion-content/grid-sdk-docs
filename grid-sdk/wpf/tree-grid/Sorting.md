@@ -5,6 +5,7 @@ description: Sorting in TreeGrid provides single and multi-column sorting, custo
 platform: grid-sdk
 control: TreeGrid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 

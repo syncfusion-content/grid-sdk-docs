@@ -5,6 +5,7 @@ description: Enable editing in the Syncfusion® WPF Pivot Table control to modif
 platform: grid-sdk
 control: Pivot Table
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Editing in WPF Pivot Table

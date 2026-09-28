@@ -5,6 +5,7 @@ description: Setting Caption in PivotTableFieldList of the Syncfusion® WPF Pivo
 platform: grid-sdk
 control: Pivot Table
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Setting Caption in PivotTableFieldList in WPF Pivot Table

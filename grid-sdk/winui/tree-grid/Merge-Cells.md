@@ -5,6 +5,7 @@ description: Merge Cells in TreeGrid enables combining adjacent cells across col
 platform: grid-sdk
 control: TreeGrid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Merge Cells in WinUI TreeGrid

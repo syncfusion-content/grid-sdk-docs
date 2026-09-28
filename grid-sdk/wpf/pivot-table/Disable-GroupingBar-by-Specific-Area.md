@@ -5,6 +5,7 @@ description: Grouping bar visibility in Syncfusion® WPF Pivot Table to show hea
 platform: grid-sdk
 control: Pivot Table
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Visibility of Grouping Bar in WPF Pivot Table

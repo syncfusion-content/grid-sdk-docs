@@ -5,6 +5,7 @@ description: Themes in TreeGrid apply built in themes to customize grid appearan
 platform: grid-sdk
 control: TreeGrid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Themes in WPF TreeGrid

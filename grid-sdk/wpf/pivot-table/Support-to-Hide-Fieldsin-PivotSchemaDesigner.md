@@ -5,6 +5,7 @@ description: Hiding fields in the Syncfusion® WPF Pivot Table control allows us
 platform: grid-sdk
 control: Pivot Table
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Hiding Fields in WPF Pivot Table

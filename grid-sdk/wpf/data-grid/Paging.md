@@ -5,6 +5,7 @@ description: Paging in Data Grid displays data in pages to improve navigation, p
 platform: grid-sdk
 control: Data Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Paging in WPF Data Grid

@@ -5,6 +5,7 @@ description: Data Virtualization in UWP Data Grid enables efficient handling of 
 platform: grid-sdk
 control: Data Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 

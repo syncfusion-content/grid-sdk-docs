@@ -5,6 +5,7 @@ description: Columns in Data Grid support auto-generation, custom column types, 
 platform: grid-sdk
 control: Data Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Columns in UWP Data Grid

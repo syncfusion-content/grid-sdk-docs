@@ -5,6 +5,7 @@ description: Customize grid lines in TreeGrid to show vertical, horizontal, or b
 platform: grid-sdk
 control: TreeGrid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Grid Lines in WPF TreeGrid

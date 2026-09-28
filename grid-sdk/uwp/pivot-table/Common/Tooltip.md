@@ -5,6 +5,7 @@ description: Tooltip in Syncfusion® UWP Pivot Table control displays cell infor
 platform: grid-sdk
 control: Pivot Table
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Tooltip in UWP Pivot Table

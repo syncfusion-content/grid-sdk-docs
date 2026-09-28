@@ -5,6 +5,7 @@ description: Column Types in TreeGrid support text, numbers, dates, times, check
 platform: grid-sdk
 control: TreeGrid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 

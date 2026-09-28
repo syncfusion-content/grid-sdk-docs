@@ -5,6 +5,7 @@ description: Data virtualization in Data Grid improves performance by loading an
 platform: grid-sdk
 control: Data Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Data Virtualization in WinUI Data Grid

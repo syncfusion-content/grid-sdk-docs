@@ -5,6 +5,7 @@ description: Merge Cells in TreeGrid combines adjacent cells with matching value
 platform: grid-sdk
 control: TreeGrid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Merge Cells in WPF TreeGrid

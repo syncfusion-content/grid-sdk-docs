@@ -5,6 +5,7 @@ description: Learn how to search data in Syncfusion® .NET MAUI Data Grid includ
 platform: grid-sdk
 control: SfDataGrid
 documentation: UG
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Search in MAUI DataGrid (SfDataGrid)

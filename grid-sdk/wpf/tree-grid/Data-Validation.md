@@ -5,6 +5,7 @@ description: Validate user input in TreeGrid with built-in rules, IDataErrorInfo
 platform: grid-sdk
 control: TreeGrid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 

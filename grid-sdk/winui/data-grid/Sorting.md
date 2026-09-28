@@ -5,6 +5,7 @@ description: Sorting in Data Grid organizes data in ascending or descending orde
 platform: grid-sdk
 control: Data Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 

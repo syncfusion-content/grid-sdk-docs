@@ -5,6 +5,7 @@ description: Grouping bar context menu in the Syncfusion® WPF Pivot Table contr
 platform: grid-sdk
 control: Pivot Table
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Grouping Bar Context Menu in WPF Pivot Table

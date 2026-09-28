@@ -5,6 +5,7 @@ description: Unbound Column in UWP Data Grid displays calculated or custom value
 platform: grid-sdk
 control: Data Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 

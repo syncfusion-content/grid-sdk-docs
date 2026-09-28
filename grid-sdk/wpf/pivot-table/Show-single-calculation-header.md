@@ -6,6 +6,7 @@ description: Single Calculation Header in the Syncfusion® WPF Pivot Table contr
 platform: grid-sdk
 control: Pivot Table
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Single Calculation Header in WPF Pivot Table

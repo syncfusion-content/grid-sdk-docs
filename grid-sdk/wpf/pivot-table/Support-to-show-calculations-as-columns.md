@@ -5,6 +5,7 @@ description: Displaying Calculations in the Syncfusion® WPF Pivot Table control
 platform: grid-sdk
 control: Pivot Table
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Displaying Calculations in WPF Pivot Table

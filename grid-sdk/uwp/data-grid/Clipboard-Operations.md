@@ -5,6 +5,7 @@ description: Clipboard Operations in UWP Data Grid enables copy, cut, and paste 
 platform: grid-sdk
 control: Data Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 --- 
 
 

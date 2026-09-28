@@ -5,6 +5,7 @@ description: Improve loading and scrolling performance in Syncfusion® WPF Pivot
 platform: grid-sdk
 control: Pivot Table
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # How to Improve Loading and Scrolling Performance in WPF Pivot Table

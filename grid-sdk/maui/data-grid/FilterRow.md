@@ -6,6 +6,7 @@ platform: grid-sdk
 control: SfDataGrid
 documentation: ug
 keywords : maui datagrid, maui grid, grid maui, maui gridview, grid in maui, .net maui datagrid, .net maui grid, .net grid maui, .net maui filterrow, maui filterrow
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Filter Row in MAUI DataGrid (SfDataGrid)

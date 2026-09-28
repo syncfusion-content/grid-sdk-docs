@@ -6,6 +6,7 @@ platform: grid-sdk
 control: SfDataGrid
 documentation: UG
 keywords : maui datagrid, maui grid, grid maui, maui gridview, grid in maui, .net maui datagrid, .net maui grid, .net grid maui, .net maui scrolling, maui scrolling
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Scrolling in MAUI DataGrid (SfDataGrid)

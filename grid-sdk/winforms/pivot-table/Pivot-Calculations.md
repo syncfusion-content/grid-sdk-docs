@@ -5,6 +5,7 @@ description: Define pivot calculations in Syncfusion® Windows Forms Pivot Table
 platform: grid-sdk
 control: Pivot Table
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Pivot Calculations in Windows Forms Pivot Table

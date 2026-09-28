@@ -5,6 +5,7 @@ description: Change row height and column width in Syncfusion® Windows Forms Pi
 platform: grid-sdk
 control: Pivot Table
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # How to Change Row Height and Column Width in Windows Forms Pivot Table

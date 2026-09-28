@@ -5,6 +5,7 @@ description: Styles and Templates in TreeGrid provide flexible customization of 
 platform: grid-sdk
 control: TreeGrid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Styles and Templates in WPF TreeGrid

@@ -5,6 +5,7 @@ description: Interactive features in Data Grid include row headers, touch suppor
 platform: grid-sdk
 control: Data Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Interactive Features in UWP Data Grid

@@ -5,6 +5,7 @@ description: Editing in UWP TreeGrid supports entering edit mode with keys or ta
 platform: grid-sdk
 control: TreeGrid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 

@@ -5,6 +5,7 @@ description: Apply Excel-like filtering in the Syncfusion® WPF Pivot Table cont
 platform: grid-sdk
 control: Pivot Table
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Excel-Like Filtering in WPF Pivot Table

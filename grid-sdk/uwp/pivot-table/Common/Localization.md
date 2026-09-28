@@ -5,6 +5,7 @@ description: Localization in SyncfusionÂ® UWP Pivot Table control enables resxâ€
 platform: grid-sdk
 control: Pivot Table
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Localization in UWP Pivot Table

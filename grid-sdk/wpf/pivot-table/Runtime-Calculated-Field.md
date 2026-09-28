@@ -5,6 +5,7 @@ description: Calculated Field in the Syncfusion® WPF Pivot Table control lets u
 platform: grid-sdk
 control: Pivot Table
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Calculated Field in WPF Pivot Table

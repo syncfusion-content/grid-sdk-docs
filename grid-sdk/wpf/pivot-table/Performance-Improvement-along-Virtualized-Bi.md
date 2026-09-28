@@ -5,6 +5,7 @@ description: Improve performance in the Syncfusion® WPF Pivot Table control wit
 platform: grid-sdk
 control: Pivot Table
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Virtualized Binding in WPF Pivot Table

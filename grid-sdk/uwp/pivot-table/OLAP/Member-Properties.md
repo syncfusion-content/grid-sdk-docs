@@ -5,6 +5,7 @@ description: Member Properties in Syncfusion® UWP Pivot Table control display d
 platform: grid-sdk
 control: Pivot Table
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Member Properties in UWP Pivot Table

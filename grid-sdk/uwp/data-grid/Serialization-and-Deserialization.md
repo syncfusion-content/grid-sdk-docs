@@ -5,6 +5,7 @@ description: Serialization and Deserialization in UWP Data Grid saves and restor
 platform: grid-sdk
 control: Data Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 

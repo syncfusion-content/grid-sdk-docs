@@ -5,6 +5,7 @@ description: Context Menu in the Syncfusion® WPF Pivot Table control provides q
 platform: grid-sdk
 control: Pivot Table
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Context Menu in WPF Pivot Table

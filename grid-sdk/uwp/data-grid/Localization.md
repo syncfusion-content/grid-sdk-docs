@@ -5,6 +5,7 @@ description: Localization in UWP Data Grid customizes grid content and user inte
 platform: grid-sdk
 control: Data Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 

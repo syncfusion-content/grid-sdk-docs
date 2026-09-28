@@ -5,6 +5,7 @@ description: Columns in Data Grid support auto-generation, customization, resizi
 platform: grid-sdk
 control: Data Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Columns in Windows Forms Data Grid

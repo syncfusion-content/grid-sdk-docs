@@ -5,6 +5,7 @@ description: Grouping in UWP Data Grid organizes and displays data in groups to 
 platform: grid-sdk
 control: Data Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 

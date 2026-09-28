@@ -5,6 +5,7 @@ description: MVVM in Data Grid enables seamless integration with the MVVM patter
 platform: grid-sdk
 control: Data Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # MVVM in WPF Data Grid

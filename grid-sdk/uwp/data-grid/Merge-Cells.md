@@ -5,6 +5,7 @@ description: Merge Cells in UWP Data Grid combines adjacent cells with matching 
 platform: grid-sdk
 control: Data Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Merge Cells in UWP Data Grid

@@ -5,6 +5,7 @@ description: Column Types in UWP TreeGrid support text, numeric, date, checkbox,
 platform: grid-sdk
 control: TreeGrid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 

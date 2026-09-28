@@ -5,6 +5,7 @@ description: Master-Details View in UWP Data Grid displays hierarchical data thr
 platform: grid-sdk
 control: Data Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 --- 
 
 # Master-Details View in UWP Data Grid

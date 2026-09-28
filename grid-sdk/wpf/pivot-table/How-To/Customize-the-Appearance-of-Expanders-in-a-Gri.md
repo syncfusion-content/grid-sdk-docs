@@ -5,6 +5,7 @@ description: Customize the appearance of expanders in Syncfusion® WPF Pivot Tab
 platform: grid-sdk
 control: Pivot Table
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # How to Customize Expanders Appearance in WPF Pivot Table

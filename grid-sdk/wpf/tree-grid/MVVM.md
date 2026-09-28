@@ -5,6 +5,7 @@ description: MVVM in TreeGrid enables seamless integration with the MVVM pattern
 platform: grid-sdk
 control: TreeGrid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # MVVM in WPF TreeGrid

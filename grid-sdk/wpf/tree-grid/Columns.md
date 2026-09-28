@@ -5,6 +5,7 @@ description: Columns in TreeGrid supports auto-generated and custom columns, col
 platform: grid-sdk
 control: TreeGrid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Columns in WPF TreeGrid

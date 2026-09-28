@@ -5,6 +5,7 @@ description: Bind hierarchical and self-relational data to TreeGrid using ItemsS
 platform: grid-sdk
 control: TreeGrid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Data Binding in WPF TreeGrid

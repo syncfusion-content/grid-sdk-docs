@@ -5,6 +5,7 @@ description: Export To Excel in UWP Data Grid exports grid data to Excel files w
 platform: grid-sdk
 control: Data Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 

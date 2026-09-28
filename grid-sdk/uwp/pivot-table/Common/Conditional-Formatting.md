@@ -5,6 +5,7 @@ description: Apply conditional formatting in Syncfusion® UWP Pivot Table contro
 platform: grid-sdk
 control: Pivot Table
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Conditional Formatting in UWP Pivot Table

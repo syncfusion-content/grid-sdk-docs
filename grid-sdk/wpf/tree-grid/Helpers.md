@@ -5,6 +5,7 @@ description: Helpers in TreeGrid provides helper classes and methods to customiz
 platform: grid-sdk
 control: TreeGrid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Helpers in WPF TreeGrid

@@ -13,7 +13,7 @@ The [Blazor DataGrid](https://www.syncfusion.com/blazor-components/blazor-datagr
 
 ## Auto-update aggregate values in batch editing
 
-When the DataGrid is in batch editing mode, aggregate values in the footer, group footer, and group caption are refreshed each time a cell edit is saved. This ensures that summaries reflect the most recent edits.
+When the Blazor DataGrid is in batch editing mode, aggregate values in the footer, group footer, and group caption are refreshed each time a cell edit is saved. This ensures that summaries reflect the most recent edits.
 
 {% tabs %}
 {% highlight razor tabtitle="Index.razor" %}

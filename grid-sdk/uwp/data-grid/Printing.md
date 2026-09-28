@@ -5,6 +5,7 @@ description: Printing in UWP Data Grid prints grid data with customizable layout
 platform: grid-sdk
 control: Data Grid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Printing in UWP Data Grid

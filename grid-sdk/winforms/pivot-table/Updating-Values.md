@@ -5,6 +5,7 @@ description: Update values in Syncfusion® Windows Forms Pivot Table control in 
 platform: grid-sdk
 control: Pivot Table
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Updating Values in Windows Forms Pivot Table

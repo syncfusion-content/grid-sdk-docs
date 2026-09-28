@@ -5,6 +5,7 @@ description: Enable hyperlink cells in Syncfusion® Windows Forms Pivot Table co
 platform: grid-sdk
 control: Pivot Table
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Hyperlink Cells in Windows Forms Pivot Table

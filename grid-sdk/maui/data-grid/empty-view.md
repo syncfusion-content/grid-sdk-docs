@@ -5,6 +5,7 @@ description: Learn how to display and customize an empty view in Syncfusion® .N
 platform: grid-sdk
 control: SfDataGrid
 documentation: UG
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Empty view in MAUI DataGrid (SfDataGrid)

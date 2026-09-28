@@ -5,6 +5,7 @@ description: Paging in TreeGrid displays data in pages to improve navigation, pe
 platform: grid-sdk
 control: TreeGrid
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Paging in WPF TreeGrid

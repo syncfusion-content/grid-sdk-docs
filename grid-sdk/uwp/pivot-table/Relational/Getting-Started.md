@@ -5,6 +5,7 @@ description: Learn how to get started with the Syncfusion® UWP Pivot Table cont
 platform: grid-sdk
 control: Pivot Table
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Getting Started with UWP Pivot Table 

@@ -5,6 +5,7 @@ description: Define PivotComputationInfo in the Syncfusion® WPF Pivot Table con
 platform: grid-sdk
 control: Pivot Table
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # PivotComputationInfo in WPF Pivot Table

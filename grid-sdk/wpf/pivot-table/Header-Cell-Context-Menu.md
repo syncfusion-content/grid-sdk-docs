@@ -5,6 +5,7 @@ description: Expand or collapse headers in the Syncfusion® WPF Pivot Table cont
 platform: grid-sdk
 control: Pivot Table
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Expand/Collapse Headers in WPF Pivot Table

@@ -5,6 +5,7 @@ description: Sorting in Syncfusion® UWP Pivot Table control helps users organiz
 platform: grid-sdk
 control: Pivot Table
 documentation: ug
+appliesto: UI Component Suite, Grid SDK
 ---
 
 # Sorting in UWP Pivot Table
