@@ -320,17 +320,7 @@ npm start
        <head>
           <title>Essential JS 2 Grid</title>
 
-          <link href="https://cdn.syncfusion.com/ej2/28.1.33/ej2-base/styles/bootstrap5.css" rel="stylesheet">
-          <link href="https://cdn.syncfusion.com/ej2/28.1.33/ej2-grids/styles/bootstrap5.css" rel="stylesheet">
-          <link href="https://cdn.syncfusion.com/ej2/28.1.33/ej2-buttons/styles/bootstrap5.css" rel="stylesheet">
-          <link href="https://cdn.syncfusion.com/ej2/28.1.33/ej2-popups/styles/bootstrap5.css" rel="stylesheet">
-          <link href="https://cdn.syncfusion.com/ej2/28.1.33/ej2-navigations/styles/bootstrap5.css" rel="stylesheet">
-          <link href="https://cdn.syncfusion.com/ej2/28.1.33/ej2-dropdowns/styles/bootstrap5.css" rel="stylesheet">
-          <link href="https://cdn.syncfusion.com/ej2/28.1.33/ej2-lists/styles/bootstrap5.css" rel="stylesheet">
-          <link href="https://cdn.syncfusion.com/ej2/28.1.33/ej2-inputs/styles/bootstrap5.css" rel="stylesheet">
-          <link href="https://cdn.syncfusion.com/ej2/28.1.33/ej2-calendars/styles/bootstrap5.css" rel="stylesheet">
-          <link href="https://cdn.syncfusion.com/ej2/28.1.33/ej2-splitbuttons/styles/bootstrap5.css" rel="stylesheet">
-          <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+          <link href="https://cdn.syncfusion.com/ej2/34.2.2/material3.css" rel="stylesheet" />
           <script src="https://cdn.syncfusion.com/ej2/28.1.33/dist/ej2.min.js" type="text/javascript"></script>
         </head>
        <body>
