@@ -73,7 +73,7 @@ This setup includes additional dependencies required for more advanced functiona
 <head>
     <title>Essential JS 2 Tree Grid</title>
 
-    <!-- Essential JS 2 Tree Grid's dependent material theme -->
+    <!-- Essential JS 2 Tree Grid's dependent material3 theme -->
     <link href="https://cdn.syncfusion.com/ej2/34.2.2/ej2-base/styles/material3.css" rel="stylesheet" type="text/css" />
     <link href="https://cdn.syncfusion.com/ej2/34.2.2/ej2-popups/styles/material3.css" rel="stylesheet" type="text/css" />
     <link href="https://cdn.syncfusion.com/ej2/34.2.2/ej2-buttons/styles/material3.css" rel="stylesheet" type="text/css" />
@@ -179,7 +179,7 @@ treeGridObj.appendTo('#TreeGrid');
 <head>
     <title>Essential JS 2 Tree Grid</title>
 
-    <!-- Essential JS 2 combined material theme (all components) -->
+    <!-- Essential JS 2 combined material3 theme (all components) -->
     <link href="https://cdn.syncfusion.com/ej2/34.2.2/material3.css" rel="stylesheet" />
     <!-- Essential JS 2 combined script (all components) -->
     <script src="https://cdn.syncfusion.com/ej2/34.1.29/dist/ej2.min.js" type="text/javascript"></script>
