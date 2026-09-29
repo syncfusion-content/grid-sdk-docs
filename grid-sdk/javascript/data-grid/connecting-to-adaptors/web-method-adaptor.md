@@ -1,6 +1,6 @@
 ---
 layout: post
-title: WebMethodAdaptor in JavaScript Grid control | Syncfusion
+title: Javascript Grid Bind Data with WebMethodAdaptor | Syncfusion
 description: Learn here all about how to bind data and perform CRUD action using WebMethodAdaptor in Syncfusion JavaScript Grid control.
 platform: grid-sdk
 control: grid

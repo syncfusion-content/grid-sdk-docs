@@ -96,13 +96,14 @@ This setup includes additional dependencies required for more advanced functiona
 
 </html>
 ```
-> To include all required Essential JS 2 styles and scripts, use the following CDN links.
->
-> `Essential JS 2 combined material3 theme (all components)`
-> `<link href="https://cdn.syncfusion.com/ej2/34.2.2/material3.css" rel="stylesheet" />`
->
-> `Essential JS 2 combined script (all components)`
-> `<script src="https://cdn.syncfusion.com/ej2/34.1.29/dist/ej2.min.js" type="text/javascript"></script>`
+To include all required Essential JS 2 styles and scripts, use the following CDN links.
+
+```
+<!-- Essential JS 2 combined material3 theme (all components) -->
+<link href="https://cdn.syncfusion.com/ej2/34.2.2/material3.css" rel="stylesheet" />
+<!-- Essential JS 2 combined script (all components) --> 
+<script src="https://cdn.syncfusion.com/ej2/34.1.29/dist/ej2.min.js" type="text/javascript"></script>
+```
 
 ## Adding DataGrid control
 

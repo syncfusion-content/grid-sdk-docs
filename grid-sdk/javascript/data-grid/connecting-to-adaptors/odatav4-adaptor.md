@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ODataV4Adaptor in JavaScript Grid control | Syncfusion
+title: Javascript Grid Bind Data with ODataV4Adaptor | Syncfusion
 description: Learn here all about how to bind data and perform CRUD action using ODataV4Adaptor in Syncfusion JavaScript Grid control.
 platform: grid-sdk
 control: grid
