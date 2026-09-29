@@ -329,6 +329,38 @@ Here's an example that demonstrates how to use the `rowDataBound` event and `get
 
 >The `getRowInfo` method can only be used in the `rowDataBound` event. Attempting to use it elsewhere will result in an error.
 
+## Empty record mode
+
+The `emptyRecordMode` property determines how the empty record row is displayed when the Grid has no records. It supports two modes: `Sticky`, which keeps the empty record row visible during scrolling, and `Normal`, which allows the empty record row to scroll along with the Grid content.
+
+
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/grid-sdk/typescript/grid/empty-record-mode/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/grid-sdk/typescript/grid/empty-record-mode/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/empty-record-mode" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/grid-sdk/typescript/grid/empty-record-mode/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/grid-sdk/typescript/grid/empty-record-mode/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/empty-record-mode" %}
+{% endif %}
+
 ## Row pinning (Frozen)
 
 The TypeScript Grid allows you to freeze rows to keep them visible while scrolling vertically through large datasets. This feature enhances the experience by maintaining important information within view at all times.
