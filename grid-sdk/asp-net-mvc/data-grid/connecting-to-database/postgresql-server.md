@@ -1,7 +1,7 @@
 ---
 layout: post
 title: PostgreSQL Server Data Binding Syncfusion ASP.NET MVC Grid
-description: Learn how to consume data from PostgreSQL Server, bind it to Syncfusion Grid, and perform CRUD operations.
+description: Learn how to consume data from PostgreSQL Server, bind it to MVC Grid, and perform CRUD operations.
 platform: grid-sdk
 control: grid
 keywords: adaptors, customadaptor, urladaptor, postgresql, remotedata 

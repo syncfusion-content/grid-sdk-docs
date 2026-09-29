@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Bind data & perform CRUD action with CustomAdaptor in Syncfusion Grid
+title: MVC Bind data & perform CRUD action with CustomAdaptor in Syncfusion Grid
 description: Learn here all about Bind data and perform CRUD action with CustomAdaptor in Syncfusion ASP.NET MVC Grid of Syncfusion Essential JS 2 and more.
 control: Custom Adaptor
 platform: grid-sdk

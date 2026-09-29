@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Microsoft SQL Server Data Binding in Syncfusion ASP.NET MVC Grid
-description: Learn how to consume data from SQL Server using Microsoft SQL Client, bind it to Syncfusion Grid, and perform CRUD operations.
+description: Learn how to consume data from SQL Server using Microsoft SQL Client, bind it to MVC Grid, and perform CRUD operations.
 platform: grid-sdk
 control: grid
 keywords: adaptors, urladaptor, customadaptor, remotedata, microsoft sql server

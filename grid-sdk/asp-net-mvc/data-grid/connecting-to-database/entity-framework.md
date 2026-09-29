@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Bind SQL Server Data in Syncfusion ASP.NET MVC Grid using Entity Framework
+title: Bind SQL Server Data in ASP.NET MVC Grid using Entity Framework
 description: Learn about consume data using Entity Framework from Microsoft SQL Server, bind it to Syncfusion ASP.NET MVC Grid, and performing CRUD operations.
 control: grid
 platform: grid-sdk
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Connecting SQL Server data to Syncfusion ASP.NET MVC Grid using Entity Framework
+# Connecting SQL Server data to ASP.NET MVC Grid using Entity Framework
 
 This section describes how to connect and retrieve data from a Microsoft SQL Server database using [Entity Framework](https://learn.microsoft.com/en-us/ef/core/) and bind it to the Syncfusion ASP.NET MVC Grid.
 
