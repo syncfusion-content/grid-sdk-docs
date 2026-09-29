@@ -5,7 +5,6 @@ description: Learn here all about Bind data and perform CRUD action with ODataV4
 platform: grid-sdk
 control: Grid
 keywords: Adaptors, ODataV4Adaptor, ODataV4 adaptor, remotedata 
-publishingplatform: grid-sdk
 documentation: ug
 ---
 

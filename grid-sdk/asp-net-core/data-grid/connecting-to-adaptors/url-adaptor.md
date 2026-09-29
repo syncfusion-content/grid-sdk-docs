@@ -5,7 +5,6 @@ description: Learn here all about Bind data and perform CRUD action with UrlAdap
 platform: grid-sdk
 control: Grid
 keywords: Adaptors, UrlAdaptor, url method adaptor, remotedata 
-publishingplatform: grid-sdk
 documentation: ug
 ---
 

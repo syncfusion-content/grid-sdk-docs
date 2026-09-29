@@ -5,7 +5,6 @@ description: Learn here all about how to bind data and perform CRUD action using
 platform: grid-sdk
 control: Grid
 keywords: Adaptors, RemoteSaveAdaptor, remotesave adaptor, remotedata 
-publishingplatform: grid-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---

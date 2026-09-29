@@ -5,11 +5,10 @@ description: Learn here all about Bind data and perform CRUD action with WebApiA
 platform: grid-sdk
 control: Grid
 keywords: Adaptors, webapiadaptor, webapi adaptor, remotedata, webapi 
-publishingplatform: grid-sdk
 documentation: ug
 ---
 
-# WebApiAdaptor in Syncfusion ASP.NET Core Grid
+# Connect ASP.NET Core Data Grid to Web API Services
 
 The `WebApiAdaptor` is an extension of the `ODataAdaptor`, designed to interact with Web APIs created with OData endpoints. This adaptor ensures seamless communication between Syncfusion ASP.NET Core Grid and OData-endpoint based Web APIs, enabling efficient data retrieval and manipulation. For successful integration, the endpoint must be capable of understanding OData-formatted queries sent along with the request.
 
