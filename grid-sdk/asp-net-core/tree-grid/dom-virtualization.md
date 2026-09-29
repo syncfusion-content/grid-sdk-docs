@@ -90,7 +90,7 @@ Row virtualization is ideal for datasets with many rows (10,000+) but manageable
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/tree-grid/dom-virtual/domvirtualization1/razor %}
+{% include code-snippet/grid-sdk/asp-net-core/tree-grid/dom-virtual/domvirtualization1/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="domvirtualization1.cs" %}
 {% include code-snippet/grid-sdk/asp-net-core/tree-grid/dom-virtual/domvirtualization1/domvirtualization1.cs %}
