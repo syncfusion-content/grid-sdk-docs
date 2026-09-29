@@ -1,6 +1,6 @@
 ---
 layout: post
-title: MVC Bind data & perform CRUD action with CustomAdaptor in Syncfusion Grid
+title: MVC Grid Custom Remote Data Binding | Syncfusion
 description: Learn here all about Bind data and perform CRUD action with CustomAdaptor in Syncfusion ASP.NET MVC Grid of Syncfusion Essential JS 2 and more.
 control: Custom Adaptor
 platform: grid-sdk
@@ -305,8 +305,6 @@ To include the required styles and scripts, add the following references inside 
     <link rel="stylesheet" href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/bootstrap5.css" />
     <!-- Syncfusion ASP.NET MVC control scripts -->
     <script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/dist/ej2.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
-    <script src="https://cdn.syncfusion.com/ej2/syncfusion-helper.js" type="text/javascript"></script>
 </head>
 
 {% endhighlight %}
