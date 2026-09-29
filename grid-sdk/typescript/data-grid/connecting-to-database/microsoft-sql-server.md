@@ -1167,7 +1167,7 @@ grid.appendTo('#Grid');
 
 {% endtabs %}
 
-> * Normal/Inline editing is the default edit [mode](../../api/grid/editSettings#mode) for the Grid. To enable CRUD operations, ensure that the [isPrimaryKey](../../api/grid/column/#isprimarykey) property is set to **true** for a specific Grid column, ensuring that its value is unique.
+> * Normal/Inline editing is the default edit [mode](../../api/grid/editSettings#mode) for the Grid. To enable CRUD operations, ensure that the [isPrimaryKey](../../api/grid/column#isprimarykey) property is set to **true** for a specific Grid column, ensuring that its value is unique.
 > * If database has an auto generated column, ensure to define [isIdentity](../../api/grid/column#isidentity) property of Grid column to disable them during adding or editing operations.
 
 **Insert Operation:**

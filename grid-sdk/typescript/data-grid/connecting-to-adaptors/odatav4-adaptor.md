@@ -5,7 +5,6 @@ description: Learn here all about how to bind data and perform CRUD action using
 platform: grid-sdk
 control: grid
 keywords: Adaptors, ODataV4Adaptor, odatav4 adaptor, remotedata 
-publishingplatform: grid-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---

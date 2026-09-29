@@ -864,7 +864,7 @@ app.Run();
 
 The following screenshot shows how to pass selected records to the server:
 
-![Pass selected records to server using ajax](../../grid/images/row-selected-record.png)
+![Pass selected records to server using ajax](../images/row-selected-record.png)
 
 ## Pass selected records to server using FETCH
 
@@ -1218,4 +1218,4 @@ app.Run();
 
 The following screenshot shows how to pass selected records to the server:
 
-![Pass selected records to server using fetch](../../grid/images/row-selected-record.png)
+![Pass selected records to server using fetch](../images/row-selected-record.png)

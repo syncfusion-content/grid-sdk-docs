@@ -95,6 +95,7 @@ To install only the Syncfusion `Grid`,`Chart` and `GridChart` and packages, use 
 npm install @syncfusion/ej2-grids
 npm install @syncfusion/ej2-grid-chart
 npm install @syncfusion/e2-charts
+npm install @syncfusion/ej2-material3-theme
 
 {% endhighlight %}
 {% endtabs %}
@@ -103,10 +104,10 @@ npm install @syncfusion/e2-charts
 
 Syncfusion JavaScript controls come with [built-in themes](../appearance/theme), which are available in the installed packages. It’s easy to adapt the Syncfusion TypeScript controls to match the style of your application by referring to one of the built-in themes.
 
-To apply a theme, you can import the required CSS files from the node_modules directory. For example, to use the Bootstrap 5 theme, add the following imports to the **~/src/styles/styles.css** file:
+To apply a theme, you can import the required CSS files from the node_modules directory. For example, to use the material3 theme, add the following imports to the **~/src/styles/styles.css** file:
 
 ```css
-@import "../node_modules/@syncfusion/ej2-material3-theme/styles/grid-chart/index.css";
+@import "../../node_modules/@syncfusion/ej2-material3-theme/styles/grid-chart/index.css";
 
 ```
 

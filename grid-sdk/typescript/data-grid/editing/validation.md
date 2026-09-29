@@ -859,7 +859,7 @@ namespace UrlAdaptor.Models
 
 The following screenshot illustrates how to retrieve and display error messages when CRUD operations fail:
 
-![custom error message](../../grid/images/custom-error-message.png)
+![custom error message](../images/custom-error-message.png)
 
 ## Prevent adding duplicate rows with custom validation
 
