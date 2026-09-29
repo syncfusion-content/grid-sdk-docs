@@ -9,7 +9,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Connecting SQL Server data to Syncfusion ASP.NET Core Grid using Entity Framework
+# SQL Server Entity Framework Core Integration in ASP.NET Core Data Grid
 
 This section describes how to connect and retrieve data from a Microsoft SQL Server database using [Entity Framework](https://learn.microsoft.com/en-us/ef/core/) and bind it to the Syncfusion ASP.NET Core Grid.
 
