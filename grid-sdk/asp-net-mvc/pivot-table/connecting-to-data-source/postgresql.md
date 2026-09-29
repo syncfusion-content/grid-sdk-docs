@@ -1,7 +1,7 @@
 ---
 layout: post
 title: PostgreSQL Data Binding in ASP.NET MVC Pivot Table | Syncfusion
-platform: ej2-asp-core-mvc
+platform: grid-sdk
 description: Learn how to bind PostgreSQL data to the ASP.NET MVC Pivot Table using the Npgsql.EntityFrameworkCore.PostgreSQL provider in a Web API controller.
 documentation: ug
 ---

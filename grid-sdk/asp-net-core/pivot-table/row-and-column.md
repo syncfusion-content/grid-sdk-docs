@@ -2,7 +2,7 @@
 layout: post
 title: Row and Column in ASP.NET Core Pivot Table | Syncfusion
 description: Learn how to set the ASP.NET Core Pivot Table's width, height, row height, column width, and grid lines via the height, width, and e-gridSettings properties.
-platform: ej2-asp-core-mvc
+platform: grid-sdk
 control: Row And Column
 publishingplatform: ##Platform_Name##
 documentation: ug
