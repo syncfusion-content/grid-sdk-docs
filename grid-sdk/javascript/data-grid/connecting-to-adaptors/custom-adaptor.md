@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Javascript Grid Custom Remote Data Binding | Syncfusion
+title: JavaScript Grid Custom Remote Data Binding | Syncfusion
 description: Learn here all about how to bind data and perform CRUD action using CustomAdaptor in Syncfusion JavaScript Grid component of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: grid

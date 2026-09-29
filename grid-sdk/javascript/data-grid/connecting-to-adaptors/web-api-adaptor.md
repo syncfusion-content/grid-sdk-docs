@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Javascript Grid Bind Data with WebApiAdaptor | Syncfusion
+title: JavaScript Grid Bind Data with WebApiAdaptor | Syncfusion
 description: Learn here all about how to bind data and perform CRUD action using WebApiAdaptor in Syncfusion JavaScript Grid control.
 platform: grid-sdk
 control: grid

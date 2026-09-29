@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Javascript Grid Bind Data with Entity Framework Core | Syncfusion
+title: JavaScript Grid Bind Data with Entity Framework Core | Syncfusion
 description: Learn about consume data using Entity Framework from Microsoft SQL Server, bind it to Syncfusion JavaScript Grid, and performing CRUD operations.
 platform: grid-sdk
 control: grid

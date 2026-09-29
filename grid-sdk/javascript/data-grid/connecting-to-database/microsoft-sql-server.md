@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Javascript Grid Microsoft SQL Server Integration | Syncfusion
+title: JavaScript Grid Microsoft SQL Server Integration | Syncfusion
 description: Learn how to connect Javascript Data Grid to Microsoft SQL Server using ASP.NET Core Web API, execute SQL queries, and manage data efficiently.
 platform: grid-sdk
 control: Grid
