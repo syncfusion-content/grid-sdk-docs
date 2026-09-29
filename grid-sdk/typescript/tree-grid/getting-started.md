@@ -69,7 +69,7 @@ Then add the following CSS reference to the **src/styles/styles.css** file:
 {% tabs %}
 {% highlight css tabtitle="styles.css" %}
 
-@import "../../node_modules/@syncfusion/ej2-material3-theme/grids/grid/index.css";
+@import "../../node_modules/@syncfusion/ej2-material3-theme/styles/treegrid/index.css";
 
 {% endhighlight %}
 {% endtabs %}
@@ -161,7 +161,7 @@ treeGridObj.appendTo('#TreeGrid');
 
 {% highlight html tabtitle="styles.css" %}
 
-@import '../../node_modules/@syncfusion/ej2-material3-theme/grids/grid/index.css';
+@import '../../node_modules/@syncfusion/ej2-material3-theme/styles/treegrid/index.css';
 
 {% endhighlight %}
 
