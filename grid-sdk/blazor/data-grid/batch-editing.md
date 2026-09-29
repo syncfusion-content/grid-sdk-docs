@@ -80,7 +80,7 @@ public class OrderDetails
 
 ## Enable Undo / Redo
 
-The Grid supports Undo / Redo actions in batch editing, allowing changes such as cell edits, row additions, and row deletions to be reverted or reapplied before saving. This feature can be enabled by setting the **GridEditSettings.EnableUndoRedo** property to `true`.
+The Grid supports Undo / Redo actions in batch editing, allowing changes such as cell edits, row additions, and row deletions to be reverted or reapplied before saving. This feature can be enabled by setting the [EnableUndoRedo](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridEditSettings.html#Syncfusion_Blazor_Grids_GridEditSettings_EnableUndoRedo) property to `true` inside [GridEditSettings](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridEditSettings.html).
 
 Undo and redo operations can be performed using keyboard shortcuts. Press `Ctrl + Z` to undo an action, and `Ctrl + Y` to redo an action.
 
@@ -149,7 +149,7 @@ public class OrderDetails
 {% endhighlight %}
 {% endtabs %}
 
-> Note: The maximum number of undo and redo actions stored in the stack can be controlled using the GridEditSettings.UndoRedoLimit property. This property limits the number of actions that can be reverted or reapplied during a batch editing session. The default value is 20.
+> Note: The maximum number of undo and redo actions stored in the stack can be controlled using the [UndoRedoLimit](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridEditSettings.html#Syncfusion_Blazor_Grids_GridEditSettings_UndoRedoLimit) property inside [GridEditSettings](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridEditSettings.html). This property limits the number of actions that can be reverted or reapplied during a batch editing session. The default value is 20.
 
 ## Automatically update the column based on another column edited value
 
