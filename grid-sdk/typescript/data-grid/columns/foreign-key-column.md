@@ -4,7 +4,6 @@ title: Foreign key column in TypeScript Grid control | Syncfusion
 description: Learn here all about Foreign key column in Syncfusion TypeScript Grid control of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Foreign key column 
-publishingplatform: grid-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---

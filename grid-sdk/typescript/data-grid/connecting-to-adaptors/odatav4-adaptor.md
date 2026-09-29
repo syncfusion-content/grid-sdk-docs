@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Bind data & perform CRUD action with ODataV4Adaptor in Syncfusion Grid
+title: TypeScript Grid Bind Data with ODataV4Adaptor | Syncfusion
 description: Learn here all about how to bind data and perform CRUD action using ODataV4Adaptor in Syncfusion TypeScript Grid control.
 platform: grid-sdk
 control: grid

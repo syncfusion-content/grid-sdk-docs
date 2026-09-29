@@ -1,16 +1,15 @@
 ---
 layout: post
-title: Bind data & perform CRUD with WebMethodAdaptor in Syncfusion Grid
+title: TypeScript Grid Bind Data with WebMethodAdaptor | Syncfusion
 description: Learn here all about how to bind data and perform CRUD action using WebMethodAdaptor in Syncfusion TypeScript Grid control.
 platform: grid-sdk
 control: grid
 keywords: Adaptors, webmethodadaptor, web method adaptor, remotedata 
-publishingplatform: grid-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# WebMethodAdaptor in Control
+# Remote Data Binding with REST API using WebMethod in Data Grid
 
 The WebMethodAdaptor in TypeScript Grid facilitates data binding from remote services using web methods. This powerful feature enables efficient communication between the client-side application and the server. The WebMethodAdaptor, like the URL adaptor, sends query parameters encapsulated within an object named **value**. Within this **value** object, various datamanager properties such as **requiresCounts**, **skip**, **take**, **sorted**, and **where** queries are included.
 

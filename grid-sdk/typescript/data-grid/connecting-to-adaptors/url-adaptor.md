@@ -1,11 +1,10 @@
 ---
 layout: post
-title: Bind data & perform CRUD with UrlAdaptor in Syncfusion Grid
+title: TypeScript Grid Bind Data with UrlAdaptor | Syncfusion
 description: Learn here all about how to bind data and perform CRUD action using UrlAdaptor in Syncfusion TypeScript Grid control.
 platform: grid-sdk
 control: grid
 keywords: Adaptors, UrlAdaptor, url method adaptor, remotedata 
-publishingplatform: grid-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
