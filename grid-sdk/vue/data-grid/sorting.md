@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Sorting in Vue Grid component | Syncfusion
-description: Learn here all about Sorting in Syncfusion Vue Grid component of Syncfusion Essential JS 2 and more.
+title: Vue Grid Sorting | Syncfusion
+description: Learn Vue Data Grid sorting with single-column, multi-column, custom, foreign-key, culture-aware and programmatic sorting capabilities.
 control: Sorting 
 platform: grid-sdk
 documentation: ug

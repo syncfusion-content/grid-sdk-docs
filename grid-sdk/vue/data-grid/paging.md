@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Paging in Vue Grid component | Syncfusion
+title: Vue Grid Paging | Syncfusion
 description: Learn here all about Paging and and its customization in Syncfusion Vue Grid component of Syncfusion Essential JS 2 and more.
 control: Paging 
 platform: grid-sdk
@@ -8,7 +8,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Paging in Vue Grid component
+# Paging in Vue Data Grid
 
 Paging provides an option to display grid data in segmented pages, making it easier to navigate through large datasets. This feature is particularly useful when dealing with extensive data sets. 
 
