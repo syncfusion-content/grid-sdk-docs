@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Bind SQL Server Data in Syncfusion JavaScript Grid using Entity Framework
+title: Entity Framework in JavaScript Grid control | Syncfusion
 description: Learn about consume data using Entity Framework from Microsoft SQL Server, bind it to Syncfusion JavaScript Grid, and performing CRUD operations.
 platform: grid-sdk
 control: grid
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Connecting SQL Server data to Syncfusion JavaScript Grid using Entity Framework
+# Entity Framework in Syncfusion JavaScript Grid Control
 
 This section describes how to connect and retrieve data from a Microsoft SQL Server database using [Entity Framework](https://learn.microsoft.com/en-us/ef/core/) and bind it to the Syncfusion JavaScript Grid.
 
@@ -2268,7 +2268,7 @@ export class CustomAdaptor extends ej.data.UrlAdaptor {
 
 ### Handling CRUD operations
 
-To enable editing in the Syncfusion JavaScript Grid, utilize the [editSettings](../../api/grid/editSettings/) property. The Grid offers multiple edit modes including the **Inline/Normal**, **Dialog** and **Batch** editing. For more details, refer to the Grid [editing](../../grid/editing/edit) documentation.
+To enable editing in the Syncfusion JavaScript Grid, utilize the [editSettings](../../api/grid/editSettings) property. The Grid offers multiple edit modes including the **Inline/Normal**, **Dialog** and **Batch** editing. For more details, refer to the Grid [editing](../../grid/editing/edit) documentation.
 
 In this scenario, the inline edit [mode](../../api/grid/editSettings#mode) and [toolbar](../../api/grid#toolbar) property configured to display toolbar items for editing purpose.
 

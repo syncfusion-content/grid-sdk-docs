@@ -288,7 +288,7 @@ function actionFailure(args: FailureEventArgs) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Typescript Grid Control" />
     <meta name="author" content="Syncfusion" />
-    <link href="https://cdn.syncfusion.com/ej2/34.2.2/material3.css" rel="stylesheet" />
+    <link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/material3.css" rel="stylesheet" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
     <script src="https://cdn.syncfusion.com/ej2/syncfusion-helper.js" type="text/javascript"></script>
 </head>
@@ -602,7 +602,7 @@ function actionFailure(args) {
     <meta name="description" content="Javascript Grid Control">
     <meta name="author" content="Syncfusion">
     <link href="css/index.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/34.2.2/material3.css" rel="stylesheet" />
+    <link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/material3.css" rel="stylesheet" />
     <script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/dist/ej2.min.js" type="text/javascript"></script>
     <script src="https://cdn.syncfusion.com/ej2/syncfusion-helper.js" type="text/javascript"></script>
 </head>
