@@ -107,17 +107,7 @@ Syncfusion JavaScript controls come with [built-in themes](../appearance/theme),
 To apply a theme, you can import the required CSS files from the node_modules directory. For example, to use the Bootstrap 5 theme, add the following imports to the **~/src/styles/styles.css** file:
 
 ```css
-@import '../../node_modules/@syncfusion/ej2-base/styles/bootstrap5.css';
-@import '../../node_modules/@syncfusion/ej2-buttons/styles/bootstrap5.css';
-@import '../../node_modules/@syncfusion/ej2-calendars/styles/bootstrap5.css';
-@import '../../node_modules/@syncfusion/ej2-dropdowns/styles/bootstrap5.css';
-@import '../../node_modules/@syncfusion/ej2-inputs/styles/bootstrap5.css';
-@import '../../node_modules/@syncfusion/ej2-navigations/styles/bootstrap5.css';
-@import '../../node_modules/@syncfusion/ej2-popups/styles/bootstrap5.css';
-@import '../../node_modules/@syncfusion/ej2-notifications/styles/bootstrap5.css';
-@import '../../node_modules/@syncfusion/ej2-splitbuttons/styles/bootstrap5.css';
-@import '../../node_modules/@syncfusion/ej2-grids/styles/bootstrap5.css';
-@import '../../node_modules/@syncfusion/ej2-grid-chart/styles/bootstrap5.css';
+@import "../node_modules/@syncfusion/ej2-material3-theme/styles/grid-chart/index.css";
 
 ```
 
