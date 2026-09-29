@@ -74,18 +74,7 @@ This setup includes additional dependencies required for more advanced functiona
     <title>Essential JS 2 Tree Grid</title>
 
     <!-- Essential JS 2 Tree Grid's dependent material theme -->
-    <link href="https://cdn.syncfusion.com/ej2/34.1.29/ej2-base/styles/material.css" rel="stylesheet" type="text/css" />
-    <link href="https://cdn.syncfusion.com/ej2/34.1.29/ej2-popups/styles/material.css" rel="stylesheet" type="text/css" />
-    <link href="https://cdn.syncfusion.com/ej2/34.1.29/ej2-buttons/styles/material.css" rel="stylesheet" type="text/css" />
-    <link href="https://cdn.syncfusion.com/ej2/34.1.29/ej2-navigations/styles/material.css" rel="stylesheet" type="text/css" />
-    <link href="https://cdn.syncfusion.com/ej2/34.1.29/ej2-dropdowns/styles/material.css" rel="stylesheet" type="text/css" />
-    <link href="https://cdn.syncfusion.com/ej2/34.1.29/ej2-lists/styles/material.css" rel="stylesheet" type="text/css" />
-    <link href="https://cdn.syncfusion.com/ej2/34.1.29/ej2-inputs/styles/material.css" rel="stylesheet" type="text/css" />
-    <link href="https://cdn.syncfusion.com/ej2/34.1.29/ej2-calendars/styles/material.css" rel="stylesheet" type="text/css" />
-    <link href="https://cdn.syncfusion.com/ej2/34.1.29/ej2-notifications/styles/material.css" rel="stylesheet" type="text/css" />
-    <link href="https://cdn.syncfusion.com/ej2/34.1.29/ej2-splitbuttons/styles/material.css" rel="stylesheet" type="text/css" />
-    <link href="https://cdn.syncfusion.com/ej2/34.1.29/ej2-grids/styles/material.css" rel="stylesheet" type="text/css" />
-    <link href="https://cdn.syncfusion.com/ej2/34.1.29/ej2-treegrid/styles/material.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.syncfusion.com/ej2/34.2.2/material3.css" rel="stylesheet" />
 
     <!-- Essential JS 2 Tree Grid's dependent scripts -->
     <script src="https://cdn.syncfusion.com/ej2/34.1.29/ej2-base/dist/global/ej2-base.min.js" type="text/javascript"></script>
@@ -180,7 +169,7 @@ treeGridObj.appendTo('#TreeGrid');
     <title>Essential JS 2 Tree Grid</title>
 
     <!-- Essential JS 2 combined material theme (all components) -->
-    <link href="https://cdn.syncfusion.com/ej2/34.1.29/material.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.syncfusion.com/ej2/34.2.2/material3.css" rel="stylesheet" />
     <!-- Essential JS 2 combined script (all components) -->
     <script src="https://cdn.syncfusion.com/ej2/34.1.29/dist/ej2.min.js" type="text/javascript"></script>
 </head>
