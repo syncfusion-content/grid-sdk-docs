@@ -2,7 +2,7 @@
 layout: post
 title: Performance Best Practices in ASP.NET Core Pivot Table | Syncfusion
 description: Learn how to improve the ASP.NET Core Pivot Table's loading performance with virtual scrolling, paging, server-side engine, and data compression.
-platform: ej2-asp-core-mvc
+platform: grid-sdk
 control: Performance best practices
 publishingplatform: ##Platform_Name##
 documentation: ug

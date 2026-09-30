@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Bind data & perform CRUD with RemoteSaveAdaptor in Syncfusion Grid
+title: Vue Grid Bind Data with RemoteSaveAdaptor | Syncfusion
 description: Learn here all about how to bind data and perform CRUD action using RemoteSaveAdaptor in Syncfusion Vue Grid component.
 platform: grid-sdk
 control: grid
@@ -247,6 +247,7 @@ Open your terminal in the project’s client folder and install the required Syn
 ```bash
 npm install @syncfusion/ej2-vue-grids --save
 npm install @syncfusion/ej2-data --save
+npm install @syncfusion/ej2-material3-theme --save
 ```
 
 **Step 2:** Clean Up App.vue and main.css
@@ -258,15 +259,7 @@ Remove unnecessary default codes in `App.vue` and `main.css`.
 Include the necessary CSS files in your `App.Vue` file to style the Syncfusion<sup style="font-size:70%">&reg;</sup> Vue component:
 
 ```css
-@import '../node_modules/@syncfusion/ej2-base/styles/material3.css';
-@import '../node_modules/@syncfusion/ej2-buttons/styles/material3.css';
-@import '../node_modules/@syncfusion/ej2-calendars/styles/material3.css';
-@import '../node_modules/@syncfusion/ej2-dropdowns/styles/material3.css';
-@import '../node_modules/@syncfusion/ej2-inputs/styles/material3.css';
-@import '../node_modules/@syncfusion/ej2-navigations/styles/material3.css';
-@import '../node_modules/@syncfusion/ej2-popups/styles/material3.css';
-@import '../node_modules/@syncfusion/ej2-splitbuttons/styles/material3.css';
-@import '../node_modules/@syncfusion/ej2-vue-grids/styles/material3.css';
+@import "../node_modules/@syncfusion/ej2-material3-theme/styles/grid/index.css";
 ```
 
 **Step 4:** Adding Vue Data Grid Component
@@ -334,15 +327,7 @@ In this example, data is fetched by the server and assign it to the `dataSource`
 </script>
 
 <style>
-	@import "../node_modules/@syncfusion/ej2-base/styles/material3.css";
-	@import "../node_modules/@syncfusion/ej2-buttons/styles/material3.css";
-	@import "../node_modules/@syncfusion/ej2-calendars/styles/material3.css";
-	@import "../node_modules/@syncfusion/ej2-dropdowns/styles/material3.css";
-	@import "../node_modules/@syncfusion/ej2-inputs/styles/material3.css";
-	@import "../node_modules/@syncfusion/ej2-navigations/styles/material3.css";
-	@import "../node_modules/@syncfusion/ej2-popups/styles/material3.css";
-	@import "../node_modules/@syncfusion/ej2-splitbuttons/styles/material3.css";
-	@import "../node_modules/@syncfusion/ej2-vue-grids/styles/material3.css";
+@import "../node_modules/@syncfusion/ej2-material3-theme/styles/grid/index.css";
 </style>
 
 {% endhighlight %}
@@ -406,15 +391,7 @@ In this example, data is fetched by the server and assign it to the `dataSource`
 </script>
 
 <style>
-    @import "../node_modules/@syncfusion/ej2-base/styles/material3.css";
-    @import "../node_modules/@syncfusion/ej2-buttons/styles/material3.css";
-    @import "../node_modules/@syncfusion/ej2-calendars/styles/material3.css";
-    @import "../node_modules/@syncfusion/ej2-dropdowns/styles/material3.css";
-    @import "../node_modules/@syncfusion/ej2-inputs/styles/material3.css";
-    @import "../node_modules/@syncfusion/ej2-navigations/styles/material3.css";
-    @import "../node_modules/@syncfusion/ej2-popups/styles/material3.css";
-    @import "../node_modules/@syncfusion/ej2-splitbuttons/styles/material3.css";
-    @import "../node_modules/@syncfusion/ej2-vue-grids/styles/material3.css";
+@import "../node_modules/@syncfusion/ej2-material3-theme/styles/grid/index.css";
 </style>
 {% endhighlight %}
 

@@ -2,7 +2,7 @@
 layout: post
 title: How to Hide Empty Headers in ASP.NET MVC Pivot Table | Syncfusion
 description: Learn how to hide "Undefined" headers in the ASP.NET MVC Pivot Table by setting the ShowHeaderWhenEmpty property under DataSourceSettings to false.
-platform: ej2-asp-core-mvc
+platform: grid-sdk
 control: Hide Empty Headers
 publishingplatform: ##Platform_Name##
 documentation: ug

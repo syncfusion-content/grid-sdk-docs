@@ -2,7 +2,7 @@
 layout: post
 title: Grouping Bar in ASP.NET MVC Pivot Table | Syncfusion
 description: Learn how the ASP.NET MVC Pivot Table Grouping Bar lets users drag fields between axes, apply sort and filter, and rearrange the pivot report at runtime.
-platform: ej2-asp-core-mvc
+platform: grid-sdk
 control: Grouping Bar
 publishingplatform: ##Platform_Name##
 documentation: ug

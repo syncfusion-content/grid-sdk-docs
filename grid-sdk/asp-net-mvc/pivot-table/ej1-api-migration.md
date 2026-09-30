@@ -2,7 +2,7 @@
 layout: post
 title: EJ1 API Migration in ASP.NET MVC Pivot Table | Syncfusion
 description: Learn how to migrate Pivot Grid API usage from Essential JS 1 to the ASP.NET MVC Pivot Table by mapping data source, rows, columns, and values.
-platform: ej2-asp-core-mvc
+platform: grid-sdk
 control: Ej1 Api Migration
 publishingplatform: ##Platform_Name##
 documentation: ug

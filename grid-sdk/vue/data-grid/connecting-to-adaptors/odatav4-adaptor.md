@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Bind data & perform CRUD action with ODataV4Adaptor in Syncfusion Grid
+title: Vue Grid Bind Data with ODataV4Adaptor | Syncfusion
 description: Learn here all about how to bind data and perform CRUD action using ODataV4Adaptor in Syncfusion Vue Grid component of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: grid
@@ -149,6 +149,7 @@ Open your terminal in the project’s client folder and install the required Syn
 ```bash
 npm install @syncfusion/ej2-vue-grids --save
 npm install @syncfusion/ej2-data --save
+npm install @syncfusion/ej2-material3-theme --save
 ```
 
 **Step 2:** Clean Up App.vue and main.css
@@ -160,15 +161,7 @@ Remove unnecessary default codes in `App.vue` and `main.css`.
 Include the necessary CSS files in your `App.Vue` file to style the Syncfusion<sup style="font-size:70%">&reg;</sup> Vue component:
 
 ```css
-@import '../node_modules/@syncfusion/ej2-base/styles/material3.css';
-@import '../node_modules/@syncfusion/ej2-buttons/styles/material3.css';
-@import '../node_modules/@syncfusion/ej2-calendars/styles/material3.css';
-@import '../node_modules/@syncfusion/ej2-dropdowns/styles/material3.css';
-@import '../node_modules/@syncfusion/ej2-inputs/styles/material3.css';
-@import '../node_modules/@syncfusion/ej2-navigations/styles/material3.css';
-@import '../node_modules/@syncfusion/ej2-popups/styles/material3.css';
-@import '../node_modules/@syncfusion/ej2-splitbuttons/styles/material3.css';
-@import '../node_modules/@syncfusion/ej2-vue-grids/styles/material3.css';
+@import "../node_modules/@syncfusion/ej2-material3-theme/styles/grid/index.css";
 ```
 
 **Step 4:** Adding Vue Data Grid Component
@@ -205,15 +198,7 @@ The following example demonstrates how to bind remote data to the grid component
 
 </script>
 <style>
-	@import "../node_modules/@syncfusion/ej2-base/styles/material3.css";
-	@import "../node_modules/@syncfusion/ej2-buttons/styles/material3.css";
-	@import "../node_modules/@syncfusion/ej2-calendars/styles/material3.css";
-	@import "../node_modules/@syncfusion/ej2-dropdowns/styles/material3.css";
-	@import "../node_modules/@syncfusion/ej2-inputs/styles/material3.css";
-	@import "../node_modules/@syncfusion/ej2-navigations/styles/material3.css";
-	@import "../node_modules/@syncfusion/ej2-popups/styles/material3.css";
-	@import "../node_modules/@syncfusion/ej2-splitbuttons/styles/material3.css";
-	@import "../node_modules/@syncfusion/ej2-vue-grids/styles/material3.css";
+@import "../node_modules/@syncfusion/ej2-material3-theme/styles/grid/index.css";
 </style>
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
@@ -250,15 +235,7 @@ The following example demonstrates how to bind remote data to the grid component
 </script>
 
 <style>
-	@import "../node_modules/@syncfusion/ej2-base/styles/material3.css";
-	@import "../node_modules/@syncfusion/ej2-buttons/styles/material3.css";
-	@import "../node_modules/@syncfusion/ej2-calendars/styles/material3.css";
-	@import "../node_modules/@syncfusion/ej2-dropdowns/styles/material3.css";
-	@import "../node_modules/@syncfusion/ej2-inputs/styles/material3.css";
-	@import "../node_modules/@syncfusion/ej2-navigations/styles/material3.css";
-	@import "../node_modules/@syncfusion/ej2-popups/styles/material3.css";
-	@import "../node_modules/@syncfusion/ej2-splitbuttons/styles/material3.css";
-	@import "../node_modules/@syncfusion/ej2-vue-grids/styles/material3.css";
+@import "../node_modules/@syncfusion/ej2-material3-theme/styles/grid/index.css";
 </style>
 {% endhighlight %}
 
@@ -336,15 +313,7 @@ builder.Services.AddControllers().AddOData(
 
 </script>
 <style>
-	@import "../node_modules/@syncfusion/ej2-base/styles/material3.css";
-	@import "../node_modules/@syncfusion/ej2-buttons/styles/material3.css";
-	@import "../node_modules/@syncfusion/ej2-calendars/styles/material3.css";
-	@import "../node_modules/@syncfusion/ej2-dropdowns/styles/material3.css";
-	@import "../node_modules/@syncfusion/ej2-inputs/styles/material3.css";
-	@import "../node_modules/@syncfusion/ej2-navigations/styles/material3.css";
-	@import "../node_modules/@syncfusion/ej2-popups/styles/material3.css";
-	@import "../node_modules/@syncfusion/ej2-splitbuttons/styles/material3.css";
-	@import "../node_modules/@syncfusion/ej2-vue-grids/styles/material3.css";
+@import "../node_modules/@syncfusion/ej2-material3-theme/styles/grid/index.css";
 </style>
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
@@ -385,15 +354,7 @@ builder.Services.AddControllers().AddOData(
 </script>
 
 <style>
-	@import "../node_modules/@syncfusion/ej2-base/styles/material3.css";
-	@import "../node_modules/@syncfusion/ej2-buttons/styles/material3.css";
-	@import "../node_modules/@syncfusion/ej2-calendars/styles/material3.css";
-	@import "../node_modules/@syncfusion/ej2-dropdowns/styles/material3.css";
-	@import "../node_modules/@syncfusion/ej2-inputs/styles/material3.css";
-	@import "../node_modules/@syncfusion/ej2-navigations/styles/material3.css";
-	@import "../node_modules/@syncfusion/ej2-popups/styles/material3.css";
-	@import "../node_modules/@syncfusion/ej2-splitbuttons/styles/material3.css";
-	@import "../node_modules/@syncfusion/ej2-vue-grids/styles/material3.css";
+@import "../node_modules/@syncfusion/ej2-material3-theme/styles/grid/index.css";
 </style>
 {% endhighlight %}
 {% endtabs %}
@@ -451,15 +412,7 @@ builder.Services.AddControllers().AddOData(
 
 </script>
 <style>
-	@import "../node_modules/@syncfusion/ej2-base/styles/material3.css";
-	@import "../node_modules/@syncfusion/ej2-buttons/styles/material3.css";
-	@import "../node_modules/@syncfusion/ej2-calendars/styles/material3.css";
-	@import "../node_modules/@syncfusion/ej2-dropdowns/styles/material3.css";
-	@import "../node_modules/@syncfusion/ej2-inputs/styles/material3.css";
-	@import "../node_modules/@syncfusion/ej2-navigations/styles/material3.css";
-	@import "../node_modules/@syncfusion/ej2-popups/styles/material3.css";
-	@import "../node_modules/@syncfusion/ej2-splitbuttons/styles/material3.css";
-	@import "../node_modules/@syncfusion/ej2-vue-grids/styles/material3.css";
+@import "../node_modules/@syncfusion/ej2-material3-theme/styles/grid/index.css";
 </style>
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
@@ -499,15 +452,7 @@ builder.Services.AddControllers().AddOData(
 </script>
 
 <style>
-	@import "../node_modules/@syncfusion/ej2-base/styles/material3.css";
-	@import "../node_modules/@syncfusion/ej2-buttons/styles/material3.css";
-	@import "../node_modules/@syncfusion/ej2-calendars/styles/material3.css";
-	@import "../node_modules/@syncfusion/ej2-dropdowns/styles/material3.css";
-	@import "../node_modules/@syncfusion/ej2-inputs/styles/material3.css";
-	@import "../node_modules/@syncfusion/ej2-navigations/styles/material3.css";
-	@import "../node_modules/@syncfusion/ej2-popups/styles/material3.css";
-	@import "../node_modules/@syncfusion/ej2-splitbuttons/styles/material3.css";
-	@import "../node_modules/@syncfusion/ej2-vue-grids/styles/material3.css";
+@import "../node_modules/@syncfusion/ej2-material3-theme/styles/grid/index.css";
 </style>
 {% endhighlight %}
 
@@ -568,15 +513,7 @@ builder.Services.AddControllers().AddOData(
 
 </script>
 <style>
-	@import "../node_modules/@syncfusion/ej2-base/styles/material3.css";
-	@import "../node_modules/@syncfusion/ej2-buttons/styles/material3.css";
-	@import "../node_modules/@syncfusion/ej2-calendars/styles/material3.css";
-	@import "../node_modules/@syncfusion/ej2-dropdowns/styles/material3.css";
-	@import "../node_modules/@syncfusion/ej2-inputs/styles/material3.css";
-	@import "../node_modules/@syncfusion/ej2-navigations/styles/material3.css";
-	@import "../node_modules/@syncfusion/ej2-popups/styles/material3.css";
-	@import "../node_modules/@syncfusion/ej2-splitbuttons/styles/material3.css";
-	@import "../node_modules/@syncfusion/ej2-vue-grids/styles/material3.css";
+@import "../node_modules/@syncfusion/ej2-material3-theme/styles/grid/index.css";
 </style>
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
@@ -616,15 +553,7 @@ builder.Services.AddControllers().AddOData(
 </script>
 
 <style>
-	@import "../node_modules/@syncfusion/ej2-base/styles/material3.css";
-	@import "../node_modules/@syncfusion/ej2-buttons/styles/material3.css";
-	@import "../node_modules/@syncfusion/ej2-calendars/styles/material3.css";
-	@import "../node_modules/@syncfusion/ej2-dropdowns/styles/material3.css";
-	@import "../node_modules/@syncfusion/ej2-inputs/styles/material3.css";
-	@import "../node_modules/@syncfusion/ej2-navigations/styles/material3.css";
-	@import "../node_modules/@syncfusion/ej2-popups/styles/material3.css";
-	@import "../node_modules/@syncfusion/ej2-splitbuttons/styles/material3.css";
-	@import "../node_modules/@syncfusion/ej2-vue-grids/styles/material3.css";
+@import "../node_modules/@syncfusion/ej2-material3-theme/styles/grid/index.css";
 </style>
 {% endhighlight %}
 
@@ -696,15 +625,7 @@ builder.Services.AddControllers().AddOData(
 
 </script>
 <style>
-	@import "../node_modules/@syncfusion/ej2-base/styles/material3.css";
-	@import "../node_modules/@syncfusion/ej2-buttons/styles/material3.css";
-	@import "../node_modules/@syncfusion/ej2-calendars/styles/material3.css";
-	@import "../node_modules/@syncfusion/ej2-dropdowns/styles/material3.css";
-	@import "../node_modules/@syncfusion/ej2-inputs/styles/material3.css";
-	@import "../node_modules/@syncfusion/ej2-navigations/styles/material3.css";
-	@import "../node_modules/@syncfusion/ej2-popups/styles/material3.css";
-	@import "../node_modules/@syncfusion/ej2-splitbuttons/styles/material3.css";
-	@import "../node_modules/@syncfusion/ej2-vue-grids/styles/material3.css";
+@import "../node_modules/@syncfusion/ej2-material3-theme/styles/grid/index.css";
 </style>
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
@@ -744,15 +665,7 @@ builder.Services.AddControllers().AddOData(
 </script>
 
 <style>
-	@import "../node_modules/@syncfusion/ej2-base/styles/material3.css";
-	@import "../node_modules/@syncfusion/ej2-buttons/styles/material3.css";
-	@import "../node_modules/@syncfusion/ej2-calendars/styles/material3.css";
-	@import "../node_modules/@syncfusion/ej2-dropdowns/styles/material3.css";
-	@import "../node_modules/@syncfusion/ej2-inputs/styles/material3.css";
-	@import "../node_modules/@syncfusion/ej2-navigations/styles/material3.css";
-	@import "../node_modules/@syncfusion/ej2-popups/styles/material3.css";
-	@import "../node_modules/@syncfusion/ej2-splitbuttons/styles/material3.css";
-	@import "../node_modules/@syncfusion/ej2-vue-grids/styles/material3.css";
+@import "../node_modules/@syncfusion/ej2-material3-theme/styles/grid/index.css";
 </style>
 {% endhighlight %}
 
@@ -796,15 +709,7 @@ To enable CRUD operations in the Vue Data Grid component within an Vue applicati
 
 </script>
 <style>
-	@import "../node_modules/@syncfusion/ej2-base/styles/material3.css";
-	@import "../node_modules/@syncfusion/ej2-buttons/styles/material3.css";
-	@import "../node_modules/@syncfusion/ej2-calendars/styles/material3.css";
-	@import "../node_modules/@syncfusion/ej2-dropdowns/styles/material3.css";
-	@import "../node_modules/@syncfusion/ej2-inputs/styles/material3.css";
-	@import "../node_modules/@syncfusion/ej2-navigations/styles/material3.css";
-	@import "../node_modules/@syncfusion/ej2-popups/styles/material3.css";
-	@import "../node_modules/@syncfusion/ej2-splitbuttons/styles/material3.css";
-	@import "../node_modules/@syncfusion/ej2-vue-grids/styles/material3.css";
+@import "../node_modules/@syncfusion/ej2-material3-theme/styles/grid/index.css";
 </style>
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
@@ -846,15 +751,7 @@ To enable CRUD operations in the Vue Data Grid component within an Vue applicati
 </script>
 
 <style>
-	@import "../node_modules/@syncfusion/ej2-base/styles/material3.css";
-	@import "../node_modules/@syncfusion/ej2-buttons/styles/material3.css";
-	@import "../node_modules/@syncfusion/ej2-calendars/styles/material3.css";
-	@import "../node_modules/@syncfusion/ej2-dropdowns/styles/material3.css";
-	@import "../node_modules/@syncfusion/ej2-inputs/styles/material3.css";
-	@import "../node_modules/@syncfusion/ej2-navigations/styles/material3.css";
-	@import "../node_modules/@syncfusion/ej2-popups/styles/material3.css";
-	@import "../node_modules/@syncfusion/ej2-splitbuttons/styles/material3.css";
-	@import "../node_modules/@syncfusion/ej2-vue-grids/styles/material3.css";
+@import "../node_modules/@syncfusion/ej2-material3-theme/styles/grid/index.css";
 </style>
 {% endhighlight %}
 
@@ -993,15 +890,7 @@ The following code example describes the above behavior.
 
 </script>
 <style>
-	@import "../node_modules/@syncfusion/ej2-base/styles/material3.css";
-	@import "../node_modules/@syncfusion/ej2-buttons/styles/material3.css";
-	@import "../node_modules/@syncfusion/ej2-calendars/styles/material3.css";
-	@import "../node_modules/@syncfusion/ej2-dropdowns/styles/material3.css";
-	@import "../node_modules/@syncfusion/ej2-inputs/styles/material3.css";
-	@import "../node_modules/@syncfusion/ej2-navigations/styles/material3.css";
-	@import "../node_modules/@syncfusion/ej2-popups/styles/material3.css";
-	@import "../node_modules/@syncfusion/ej2-splitbuttons/styles/material3.css";
-	@import "../node_modules/@syncfusion/ej2-vue-grids/styles/material3.css";
+@import "../node_modules/@syncfusion/ej2-material3-theme/styles/grid/index.css";
 </style>
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
@@ -1046,15 +935,7 @@ The following code example describes the above behavior.
 </script>
 
 <style>
-	@import "../node_modules/@syncfusion/ej2-base/styles/material3.css";
-	@import "../node_modules/@syncfusion/ej2-buttons/styles/material3.css";
-	@import "../node_modules/@syncfusion/ej2-calendars/styles/material3.css";
-	@import "../node_modules/@syncfusion/ej2-dropdowns/styles/material3.css";
-	@import "../node_modules/@syncfusion/ej2-inputs/styles/material3.css";
-	@import "../node_modules/@syncfusion/ej2-navigations/styles/material3.css";
-	@import "../node_modules/@syncfusion/ej2-popups/styles/material3.css";
-	@import "../node_modules/@syncfusion/ej2-splitbuttons/styles/material3.css";
-	@import "../node_modules/@syncfusion/ej2-vue-grids/styles/material3.css";
+@import "../node_modules/@syncfusion/ej2-material3-theme/styles/grid/index.css";
 </style>
 {% endhighlight %}
 
@@ -1093,15 +974,7 @@ For batch editing, you can specify a custom batch URL as follows:
 
 </script>
 <style>
-	@import "../node_modules/@syncfusion/ej2-base/styles/material3.css";
-	@import "../node_modules/@syncfusion/ej2-buttons/styles/material3.css";
-	@import "../node_modules/@syncfusion/ej2-calendars/styles/material3.css";
-	@import "../node_modules/@syncfusion/ej2-dropdowns/styles/material3.css";
-	@import "../node_modules/@syncfusion/ej2-inputs/styles/material3.css";
-	@import "../node_modules/@syncfusion/ej2-navigations/styles/material3.css";
-	@import "../node_modules/@syncfusion/ej2-popups/styles/material3.css";
-	@import "../node_modules/@syncfusion/ej2-splitbuttons/styles/material3.css";
-	@import "../node_modules/@syncfusion/ej2-vue-grids/styles/material3.css";
+@import "../node_modules/@syncfusion/ej2-material3-theme/styles/grid/index.css";
 </style>
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
@@ -1144,15 +1017,7 @@ For batch editing, you can specify a custom batch URL as follows:
 </script>
 
 <style>
-	@import "../node_modules/@syncfusion/ej2-base/styles/material3.css";
-	@import "../node_modules/@syncfusion/ej2-buttons/styles/material3.css";
-	@import "../node_modules/@syncfusion/ej2-calendars/styles/material3.css";
-	@import "../node_modules/@syncfusion/ej2-dropdowns/styles/material3.css";
-	@import "../node_modules/@syncfusion/ej2-inputs/styles/material3.css";
-	@import "../node_modules/@syncfusion/ej2-navigations/styles/material3.css";
-	@import "../node_modules/@syncfusion/ej2-popups/styles/material3.css";
-	@import "../node_modules/@syncfusion/ej2-splitbuttons/styles/material3.css";
-	@import "../node_modules/@syncfusion/ej2-vue-grids/styles/material3.css";
+@import "../node_modules/@syncfusion/ej2-material3-theme/styles/grid/index.css";
 </style>
 {% endhighlight %}
 {% endtabs %}
