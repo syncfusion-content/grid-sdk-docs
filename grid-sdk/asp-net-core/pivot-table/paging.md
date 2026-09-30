@@ -2,7 +2,7 @@
 layout: post
 title: Paging in ASP.NET Core Pivot Table | Syncfusion
 description: Learn how the ASP.NET Core Pivot Table splits large row and column datasets into pages via enablePaging and e-pageSettings, with a configurable pager UI.
-platform: ej2-asp-core-mvc
+platform: grid-sdk
 control: Paging
 publishingplatform: ##Platform_Name##
 documentation: ug

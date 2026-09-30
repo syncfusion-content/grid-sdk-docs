@@ -2,7 +2,7 @@
 layout: post
 title: Data Binding in ASP.NET MVC Pivot Table | Syncfusion
 description: Learn how the ASP.NET MVC Pivot Table binds JSON, REST, CSV, and remote data sources via the DataSource property, DataManager, or a Web API controller.
-platform: ej2-asp-core-mvc
+platform: grid-sdk
 control: Data Binding
 publishingplatform: ##Platform_Name##
 documentation: ug
