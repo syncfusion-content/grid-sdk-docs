@@ -4,7 +4,6 @@ title: Remote data in TypeScript Grid control | Syncfusion
 description: Learn here all about Remote data in Syncfusion TypeScript Grid control of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Remote data 
-publishingplatform: grid-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
@@ -57,16 +56,7 @@ npm install @syncfusion/ej2-data --save
 **Step 3:**  Add the following styles to the ~/src/styles/styles.css file:
 
 ```bash
-@import '../../node_modules/@syncfusion/ej2-base/styles/bootstrap5.css';  
-@import '../../node_modules/@syncfusion/ej2-buttons/styles/bootstrap5.css';  
-@import '../../node_modules/@syncfusion/ej2-calendars/styles/bootstrap5.css';  
-@import '../../node_modules/@syncfusion/ej2-dropdowns/styles/bootstrap5.css';  
-@import '../../node_modules/@syncfusion/ej2-inputs/styles/bootstrap5.css';  
-@import '../../node_modules/@syncfusion/ej2-navigations/styles/bootstrap5.css';
-@import '../../node_modules/@syncfusion/ej2-popups/styles/bootstrap5.css';
-@import '../../node_modules/@syncfusion/ej2-splitbuttons/styles/bootstrap5.css';
-@import '../../node_modules/@syncfusion/ej2-notifications/styles/bootstrap5.css';
-@import '../../node_modules/@syncfusion/ej2-grids/styles/bootstrap5.css';
+@import "../node_modules/@syncfusion/ej2-material3-theme/styles/grid/index.css"
 ```
 
 **Step 4:** Install the necessary packages for setting up an Express server:
@@ -321,16 +311,7 @@ npm start
        <head>
           <title>Essential JS 2 Grid</title>
 
-          <link href="https://cdn.syncfusion.com/ej2/28.1.33/ej2-base/styles/bootstrap5.css" rel="stylesheet">
-          <link href="https://cdn.syncfusion.com/ej2/28.1.33/ej2-grids/styles/bootstrap5.css" rel="stylesheet">
-          <link href="https://cdn.syncfusion.com/ej2/28.1.33/ej2-buttons/styles/bootstrap5.css" rel="stylesheet">
-          <link href="https://cdn.syncfusion.com/ej2/28.1.33/ej2-popups/styles/bootstrap5.css" rel="stylesheet">
-          <link href="https://cdn.syncfusion.com/ej2/28.1.33/ej2-navigations/styles/bootstrap5.css" rel="stylesheet">
-          <link href="https://cdn.syncfusion.com/ej2/28.1.33/ej2-dropdowns/styles/bootstrap5.css" rel="stylesheet">
-          <link href="https://cdn.syncfusion.com/ej2/28.1.33/ej2-lists/styles/bootstrap5.css" rel="stylesheet">
-          <link href="https://cdn.syncfusion.com/ej2/28.1.33/ej2-inputs/styles/bootstrap5.css" rel="stylesheet">
-          <link href="https://cdn.syncfusion.com/ej2/28.1.33/ej2-calendars/styles/bootstrap5.css" rel="stylesheet">
-          <link href="https://cdn.syncfusion.com/ej2/28.1.33/ej2-splitbuttons/styles/bootstrap5.css" rel="stylesheet">
+          <link href="https://cdn.syncfusion.com/ej2/35.1.37/material3.css" rel="stylesheet">
           <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
           <script src="https://cdn.syncfusion.com/ej2/28.1.33/dist/ej2.min.js" type="text/javascript"></script>
         </head>
