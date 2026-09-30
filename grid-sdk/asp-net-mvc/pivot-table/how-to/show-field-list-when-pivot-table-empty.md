@@ -2,7 +2,7 @@
 layout: post
 title: Show Field List when Empty in ASP.NET MVC Pivot Table | Syncfusion
 description: Learn how to auto-open the ASP.NET MVC Pivot Table's Field List when no fields are configured, via the DataBound event and the OnShowFieldList method.
-platform: ej2-asp-core-mvc
+platform: grid-sdk
 control: Show Field List When Pivot Table Empty
 publishingplatform: ##Platform_Name##
 documentation: ug

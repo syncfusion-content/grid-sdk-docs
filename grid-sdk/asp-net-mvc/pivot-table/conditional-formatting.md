@@ -2,7 +2,7 @@
 layout: post
 title: Conditional Formatting in ASP.NET MVC Pivot Table | Syncfusion
 description: Learn how the ASP.NET MVC Pivot Table applies conditional formatting to value cells via the toolbar dialog or ConditionalFormatSettings, with custom colors.
-platform: ej2-asp-core-mvc
+platform: grid-sdk
 control: Conditional Formatting
 publishingplatform: ##Platform_Name##
 documentation: ug

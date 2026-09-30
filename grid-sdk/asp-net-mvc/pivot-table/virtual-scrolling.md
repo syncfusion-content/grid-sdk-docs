@@ -2,7 +2,7 @@
 layout: post
 title: Virtual Scrolling in ASP.NET MVC Pivot Table | Syncfusion
 description: Learn how the ASP.NET MVC Pivot Table renders only visible rows and columns via EnableVirtualization and the VirtualScroll module for smooth scrolling.
-platform: ej2-asp-core-mvc
+platform: grid-sdk
 control: Virtual Scrolling
 publishingplatform: ##Platform_Name##
 documentation: ug

@@ -2,7 +2,7 @@
 layout: post
 title: Getting Started with ASP.NET MVC Pivot Table | Syncfusion
 description: Learn how to create a new ASP.NET MVC Web App in Visual Studio and install Syncfusion.EJ2.AspNet.MVC plus Themes NuGet packages to render the Pivot Table.
-platform: ej2-asp-core-mvc
+platform: grid-sdk
 control: Getting Started
 publishingplatform: ##Platform_Name##
 documentation: ug

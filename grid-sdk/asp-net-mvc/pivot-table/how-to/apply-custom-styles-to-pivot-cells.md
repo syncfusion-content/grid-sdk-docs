@@ -2,7 +2,7 @@
 layout: post
 title: How to Apply Cell Styles in ASP.NET MVC Pivot Table | Syncfusion
 description: Learn how to style cells in the ASP.NET MVC Pivot Table via the QueryCellInfo and HeaderCellInfo events in GridSettings, applying CSS to values and headers.
-platform: ej2-asp-core-mvc
+platform: grid-sdk
 control: Apply custom style to pivot cells 
 documentation: ug
 publishingplatform: ##Platform_Name## 
