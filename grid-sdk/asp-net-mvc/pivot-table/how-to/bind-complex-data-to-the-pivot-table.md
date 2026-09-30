@@ -2,7 +2,7 @@
 layout: post
 title: How to Flatten Complex JSON in ASP.NET MVC Pivot Table | Syncfusion
 description: Learn how to flatten complex nested JSON and bind it to the ASP.NET MVC Pivot Table, mapping parent and child object fields into individual columns.
-platform: ej2-asp-core-mvc
+platform: grid-sdk
 control: Convert complex JSON to flat JSON and assign it to the pivot table 
 documentation: ug
 publishingplatform: ##Platform_Name## 

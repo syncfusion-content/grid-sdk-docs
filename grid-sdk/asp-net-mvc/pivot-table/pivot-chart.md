@@ -2,7 +2,7 @@
 layout: post
 title: Pivot Chart in ASP.NET MVC Pivot Table | Syncfusion
 description: Learn how the ASP.NET MVC Pivot Table pairs with a Pivot Chart that supports 15+ chart types, drill down/up, and grid-or-chart display via DisplayOption.
-platform: ej2-asp-core-mvc
+platform: grid-sdk
 control: Pivot Chart
 publishingplatform: ##Platform_Name##
 documentation: ug

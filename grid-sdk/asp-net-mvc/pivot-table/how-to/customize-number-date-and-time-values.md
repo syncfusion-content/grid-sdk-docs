@@ -2,7 +2,7 @@
 layout: post
 title: Format Number, Date, Time in ASP.NET MVC Pivot Table | Syncfusion
 description: Learn how to apply number, date, and time formats to ASP.NET MVC Pivot Table fields via FormatSettings, including Intl numberFormatOptions.
-platform: ej2-asp-core-mvc
+platform: grid-sdk
 control: Customize Number Date And Time Values
 publishingplatform: ##Platform_Name##
 documentation: ug

@@ -2,7 +2,7 @@
 layout: post
 title: Print in ASP.NET MVC Pivot Table | Syncfusion
 description: Learn how the ASP.NET MVC Pivot Table prints the current pivot report (table or chart) by invoking the Print method on the underlying Grid or Chart component.
-platform: ej2-asp-core-mvc
+platform: grid-sdk
 control: Print 
 documentation: ug
 publishingplatform: ##Platform_Name##

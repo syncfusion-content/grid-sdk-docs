@@ -2,7 +2,7 @@
 layout: post
 title: How to Display String Values in ASP.NET Core Pivot Table | Syncfusion
 description: Learn how to render custom string values in ASP.NET Core Pivot Table value cells via the aggregateCellInfo event's args.cellSets data.
-platform: ej2-asp-core-mvc
+platform: grid-sdk
 control: Display string value to pivot table values
 documentation: ug
 publishingplatform: ##Platform_Name##

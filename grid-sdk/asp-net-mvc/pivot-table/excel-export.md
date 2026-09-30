@@ -2,7 +2,7 @@
 layout: post
 title: Excel Export in ASP.NET MVC Pivot Table | Syncfusion
 description: Learn how the ASP.NET MVC Pivot Table exports pivot data to Excel (.xlsx) and CSV files via the ExcelExport and CSVExport methods.
-platform: ej2-asp-core-mvc
+platform: grid-sdk
 control: Excel Export
 publishingplatform: ##Platform_Name##
 documentation: ug
