@@ -3,8 +3,7 @@ layout: post
 title: Local data in TypeScript Grid control | Syncfusion
 description: Learn here all about Local data in Syncfusion TypeScript Grid control of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
-control: Local data 
-publishingplatform: grid-sdk
+control: Local data
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
@@ -162,18 +161,7 @@ npm install @syncfusion/ej2-base --save
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Typescript Grid Control" />
     <meta name="author" content="Syncfusion" />
-    <link href="https://cdn.syncfusion.com/ej2/27.148/ej2-base/styles/bootstrap5.css" rel="stylesheet" />
-    <link href="https://cdn.syncfusion.com/ej2/27.148/ej2-grids/styles/bootstrap5.css" rel="stylesheet" />
-    <link href="https://cdn.syncfusion.com/ej2/27.148/ej2-buttons/styles/bootstrap5.css" rel="stylesheet" />
-    <link href="https://cdn.syncfusion.com/ej2/27.148/ej2-popups/styles/bootstrap5.css" rel="stylesheet" />
-    <link href="https://cdn.syncfusion.com/ej2/27.148/ej2-richtexteditor/styles/bootstrap5.css" rel="stylesheet" />
-    <link href="https://cdn.syncfusion.com/ej2/27.148/ej2-navigations/styles/bootstrap5.css" rel="stylesheet" />
-    <link href="https://cdn.syncfusion.com/ej2/27.148/ej2-dropdowns/styles/bootstrap5.css" rel="stylesheet" />
-    <link href="https://cdn.syncfusion.com/ej2/27.148/ej2-lists/styles/bootstrap5.css" rel="stylesheet" />
-    <link href="https://cdn.syncfusion.com/ej2/27.148/ej2-inputs/styles/bootstrap5.css" rel="stylesheet" />
-    <link href="https://cdn.syncfusion.com/ej2/27.148/ej2-calendars/styles/bootstrap5.css" rel="stylesheet" />
-    <link href="https://cdn.syncfusion.com/ej2/27.148/ej2-notifications/styles/bootstrap5.css" rel="stylesheet" />
-    <link href="https://cdn.syncfusion.com/ej2/27.148/ej2-splitbuttons/styles/bootstrap5.css" rel="stylesheet" />
+    <link href="https://cdn.syncfusion.com/ej2/35.1.37/material3.css" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
     <script src="https://cdn.syncfusion.com/ej2/syncfusion-helper.js" type="text/javascript"></script>
 </head>
@@ -696,18 +684,7 @@ The wwwroot/index.html file is served at https://localhost:xxxx.
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Javascript Grid Control">
     <meta name="author" content="Syncfusion">
-    <link href="https://cdn.syncfusion.com/ej2/27.148/ej2-base/styles/bootstrap5.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/27.148/ej2-grids/styles/bootstrap5.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/27.148/ej2-buttons/styles/bootstrap5.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/27.148/ej2-popups/styles/bootstrap5.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/27.148/ej2-richtexteditor/styles/bootstrap5.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/27.148/ej2-navigations/styles/bootstrap5.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/27.148/ej2-dropdowns/styles/bootstrap5.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/27.148/ej2-lists/styles/bootstrap5.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/27.148/ej2-inputs/styles/bootstrap5.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/27.148/ej2-calendars/styles/bootstrap5.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/27.148/ej2-notifications/styles/bootstrap5.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/27.148/ej2-splitbuttons/styles/bootstrap5.css" rel="stylesheet">
+    <link href="https://cdn.syncfusion.com/ej2/35.1.37/material3.css" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
     <script src="https://cdn.syncfusion.com/ej2/27.148/dist/ej2.min.js" type="text/javascript"></script>
     <script src="https://cdn.syncfusion.com/ej2/syncfusion-helper.js" type="text/javascript"></script>
@@ -1440,18 +1417,7 @@ npm install @syncfusion/ej2-buttons --save
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Typescript Grid Control" />
     <meta name="author" content="Syncfusion" />
-    <link href="https://cdn.syncfusion.com/ej2/27.148/ej2-base/styles/bootstrap5.css" rel="stylesheet" />
-    <link href="https://cdn.syncfusion.com/ej2/27.148/ej2-grids/styles/bootstrap5.css" rel="stylesheet" />
-    <link href="https://cdn.syncfusion.com/ej2/27.148/ej2-buttons/styles/bootstrap5.css" rel="stylesheet" />
-    <link href="https://cdn.syncfusion.com/ej2/27.148/ej2-popups/styles/bootstrap5.css" rel="stylesheet" />
-    <link href="https://cdn.syncfusion.com/ej2/27.148/ej2-richtexteditor/styles/bootstrap5.css" rel="stylesheet" />
-    <link href="https://cdn.syncfusion.com/ej2/27.148/ej2-navigations/styles/bootstrap5.css" rel="stylesheet" />
-    <link href="https://cdn.syncfusion.com/ej2/27.148/ej2-dropdowns/styles/bootstrap5.css" rel="stylesheet" />
-    <link href="https://cdn.syncfusion.com/ej2/27.148/ej2-lists/styles/bootstrap5.css" rel="stylesheet" />
-    <link href="https://cdn.syncfusion.com/ej2/27.148/ej2-inputs/styles/bootstrap5.css" rel="stylesheet" />
-    <link href="https://cdn.syncfusion.com/ej2/27.148/ej2-calendars/styles/bootstrap5.css" rel="stylesheet" />
-    <link href="https://cdn.syncfusion.com/ej2/27.148/ej2-notifications/styles/bootstrap5.css" rel="stylesheet" />
-    <link href="https://cdn.syncfusion.com/ej2/27.148/ej2-splitbuttons/styles/bootstrap5.css" rel="stylesheet" />
+    <link href="https://cdn.syncfusion.com/ej2/35.1.37/material3.css" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
     <script src="https://cdn.syncfusion.com/ej2/syncfusion-helper.js" type="text/javascript"></script>
@@ -1826,18 +1792,7 @@ app.Run();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Javascript Grid Control">
     <meta name="author" content="Syncfusion">
-    <link href="https://cdn.syncfusion.com/ej2/27.148/ej2-base/styles/bootstrap5.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/27.148/ej2-grids/styles/bootstrap5.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/27.148/ej2-buttons/styles/bootstrap5.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/27.148/ej2-popups/styles/bootstrap5.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/27.148/ej2-richtexteditor/styles/bootstrap5.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/27.148/ej2-navigations/styles/bootstrap5.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/27.148/ej2-dropdowns/styles/bootstrap5.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/27.148/ej2-lists/styles/bootstrap5.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/27.148/ej2-inputs/styles/bootstrap5.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/27.148/ej2-calendars/styles/bootstrap5.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/27.148/ej2-notifications/styles/bootstrap5.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/27.148/ej2-splitbuttons/styles/bootstrap5.css" rel="stylesheet">
+    <link href="https://cdn.syncfusion.com/ej2/35.1.37/material3.css" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
     <script src="https://cdn.syncfusion.com/ej2/27.148/dist/ej2.min.js" type="text/javascript"></script>
     <script src="https://cdn.syncfusion.com/ej2/syncfusion-helper.js" type="text/javascript"></script>
@@ -2414,18 +2369,7 @@ npm install @syncfusion/ej2-buttons --save
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Typescript Grid Control" />
     <meta name="author" content="Syncfusion" />
-    <link href="https://cdn.syncfusion.com/ej2/27.148/ej2-base/styles/bootstrap5.css" rel="stylesheet" />
-    <link href="https://cdn.syncfusion.com/ej2/27.148/ej2-grids/styles/bootstrap5.css" rel="stylesheet" />
-    <link href="https://cdn.syncfusion.com/ej2/27.148/ej2-buttons/styles/bootstrap5.css" rel="stylesheet" />
-    <link href="https://cdn.syncfusion.com/ej2/27.148/ej2-popups/styles/bootstrap5.css" rel="stylesheet" />
-    <link href="https://cdn.syncfusion.com/ej2/27.148/ej2-richtexteditor/styles/bootstrap5.css" rel="stylesheet" />
-    <link href="https://cdn.syncfusion.com/ej2/27.148/ej2-navigations/styles/bootstrap5.css" rel="stylesheet" />
-    <link href="https://cdn.syncfusion.com/ej2/27.148/ej2-dropdowns/styles/bootstrap5.css" rel="stylesheet" />
-    <link href="https://cdn.syncfusion.com/ej2/27.148/ej2-lists/styles/bootstrap5.css" rel="stylesheet" />
-    <link href="https://cdn.syncfusion.com/ej2/27.148/ej2-inputs/styles/bootstrap5.css" rel="stylesheet" />
-    <link href="https://cdn.syncfusion.com/ej2/27.148/ej2-calendars/styles/bootstrap5.css" rel="stylesheet" />
-    <link href="https://cdn.syncfusion.com/ej2/27.148/ej2-notifications/styles/bootstrap5.css" rel="stylesheet" />
-    <link href="https://cdn.syncfusion.com/ej2/27.148/ej2-splitbuttons/styles/bootstrap5.css" rel="stylesheet" />
+    <link href="https://cdn.syncfusion.com/ej2/35.1.37/material3.css" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
     <script src="https://cdn.syncfusion.com/ej2/syncfusion-helper.js" type="text/javascript"></script>
@@ -2801,19 +2745,8 @@ app.Run();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Javascript Grid Control">
     <meta name="author" content="Syncfusion">
-    <link href="https://cdn.syncfusion.com/ej2/27.148/ej2-base/styles/bootstrap5.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/27.148/ej2-grids/styles/bootstrap5.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/27.148/ej2-buttons/styles/bootstrap5.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/27.148/ej2-popups/styles/bootstrap5.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/27.148/ej2-richtexteditor/styles/bootstrap5.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/27.148/ej2-navigations/styles/bootstrap5.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/27.148/ej2-dropdowns/styles/bootstrap5.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/27.148/ej2-lists/styles/bootstrap5.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/27.148/ej2-inputs/styles/bootstrap5.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/27.148/ej2-calendars/styles/bootstrap5.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/27.148/ej2-notifications/styles/bootstrap5.css" rel="stylesheet">
+    <link href="https://cdn.syncfusion.com/ej2/35.1.37/material3.css" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css">
-    <link href="https://cdn.syncfusion.com/ej2/27.148/ej2-splitbuttons/styles/bootstrap5.css" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
     <script src="https://cdn.syncfusion.com/ej2/27.148/dist/ej2.min.js" type="text/javascript"></script>
     <script src="https://cdn.syncfusion.com/ej2/syncfusion-helper.js" type="text/javascript"></script>

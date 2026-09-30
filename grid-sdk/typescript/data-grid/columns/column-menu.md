@@ -4,7 +4,6 @@ title: Column menu in TypeScript Grid control | Syncfusion
 description: Learn here all about Column menu in Syncfusion TypeScript Grid control of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Column menu 
-publishingplatform: grid-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
@@ -211,7 +210,7 @@ To customize the column menu icon, follow these steps:
 2.Import the required icon stylesheets. You can use either the material or bootstrap5 style, depending on your preference. Add the following code to import the stylesheets:
 
 ```html
-<link href="https://cdn.syncfusion.com/ej2/ej2-icons/styles/material.css" rel="stylesheet" />
+<link href="https://cdn.syncfusion.com/ej2/ej2-icons/styles/material3.css" rel="stylesheet" />
 <link href="https://cdn.syncfusion.com/ej2/ej2-icons/styles/bootstrap5.css" rel="stylesheet" />
 ```
 
