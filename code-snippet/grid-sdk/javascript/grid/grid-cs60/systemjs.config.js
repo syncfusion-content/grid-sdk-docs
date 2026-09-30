@@ -9,7 +9,7 @@ System.config({
             experimentalDecorators: true
         }
     },
-    paths: { "syncfusion:": "https://cdn.syncfusion.com/ej2/34.1.29/"
+    paths: { "syncfusion:": "https://cdn.syncfusion.com/ej2/35.1.37/"
     },
     map: {
         main: "index.ts",
