@@ -4,7 +4,6 @@ title: Inline Editing in ASP.NET Core Grid Control | Syncfusion
 description: Learn here all about Inline Editing in Syncfusion ASP.NET Core Grid component of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Inline Editing
-publishingplatform: grid-sdk
 documentation: ug
 ---
 
@@ -158,7 +157,7 @@ To delete multiple selected records in the grid, first you need to select multip
 
 You can delete multiple rows programmatically by using following method.
 
-1. `deleteRecord` -This method allows you to delete a record with the given options. If the **fieldname** (field name of the primary key column) and **data** parameters are not provided, the grid will delete the selected records.
+1. `deleteRecord` -This method allows you to delete a record with the given options. If the **field name** (field name of the primary key column) and **data** parameters are not provided, the grid will delete the selected records.
 
     ```ts
         var grid = document.getElementById("grid").ej2_instances[0];

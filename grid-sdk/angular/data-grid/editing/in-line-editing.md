@@ -169,7 +169,7 @@ Multiple row deletion is supported via the in-built toolbar or through methods.
 
 Multiple rows can be deleted programmatically using the following methods.
 
-1. [deleteRecord](https://ej2.syncfusion.com/angular/documentation/api/grid#deleterecord) - This method deletes a record with the given options. If the `fieldname` (primary key field) and `data` parameters are not provided, the grid deletes the selected records.
+1. [deleteRecord](https://ej2.syncfusion.com/angular/documentation/api/grid#deleterecord) - This method deletes a record with the given options. If the `field name` (primary key field) and `data` parameters are not provided, the grid deletes the selected records.
 
     ```ts
         this.grid.deleteRecord();

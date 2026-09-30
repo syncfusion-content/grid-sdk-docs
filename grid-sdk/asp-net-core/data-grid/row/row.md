@@ -4,7 +4,6 @@ title: Row in Syncfusion ASP.NET Core Grid Control | Syncfusion
 description: Learn here all about Row in Syncfusion ASP.NET Core Grid component of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Row
-publishingplatform: grid-sdk
 documentation: ug
 ---
 
@@ -142,10 +141,10 @@ In the following example, the row height is configured to 100px using the `rowHe
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid/row/custom-header-footer-height-cs1/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-core/grid/row/custom-header-footer-height-cs1/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Custom-header-footer-height-cs1.cs" %}
-{% include code-snippet/grid/row/custom-header-footer-height-cs1/header-footer-height.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/grid/row/custom-header-footer-height-cs1/header-footer-height.cs %}
 {% endhighlight %}
 {% endtabs %}
 
