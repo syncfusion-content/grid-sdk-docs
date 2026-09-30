@@ -431,7 +431,7 @@ Here's an example of how to use the `recordDoubleClick` event to move the focus 
 
 ## Enable editing in single click
 
-Enabling single-click editing in the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid's **Normal** editing mode is a valuable feature that allows you to make a row editable with just one click.This can be achieved by using the [startEdit](../../api/grid/#startedit) and [endEdit](../../api/grid#endedit) methods.
+Enabling single-click editing in the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid's **Normal** editing mode is a valuable feature that allows you to make a row editable with just one click.This can be achieved by using the [startEdit](../../api/grid#startedit) and [endEdit](../../api/grid#endedit) methods.
 
 To implement this feature, you need to bind the `mouseup` event for the Grid and, within the event handler, call the `startEdit` and `endEdit` methods based on the clicked target element. This ensures that the editing mode is triggered when clicking on a specific element within the Grid.
 
