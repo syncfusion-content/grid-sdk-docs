@@ -311,8 +311,8 @@ npm start
        <head>
           <title>Essential JS 2 Grid</title>
 
-          <link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/material3.css" rel="stylesheet" />
-          <script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/dist/ej2.min.js" type="text/javascript"></script>
+          <link href="https://cdn.syncfusion.com/ej2/35.1.37/material3.css" rel="stylesheet" />
+          <script src="https://cdn.syncfusion.com/ej2/35.1.37/dist/ej2.min.js" type="text/javascript"></script>
         </head>
        <body>
          <br/><br/><br/><br/>
