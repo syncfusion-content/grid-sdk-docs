@@ -156,9 +156,9 @@ public class OrderDetails
 
 ## Customize focus movement after save (EnterKeyDirection)
 
-`EnterKeyDirection` is a [GridEditSettings](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridEditSettings.html) property that controls where keyboard focus moves after a cell value is saved by pressing the `Enter` key. Without this control, keyboard-driven data entry can lose track of position after every save, forcing repeated re-selection of cells. Configure this property when data is entered in a specific pattern, such as moving down a single column with `NextRow`, moving across a row with `NextColumn`, or keeping focus fixed on the same cell with `None` for repeated corrections.
+[EnterKeyDirection](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridEditSettings.html#Syncfusion_Blazor_Grids_GridEditSettings_EnterKeyDirection) is a [GridEditSettings](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridEditSettings.html) property that controls where keyboard focus moves after a cell value is saved by pressing the `Enter` key. Without this control, keyboard-driven data entry can lose track of position after every save, forcing repeated re-selection of cells. Configure this property when data is entered in a specific pattern, such as moving down a single column with `NextRow`, moving across a row with `NextColumn`, or keeping focus fixed on the same cell with `None` for repeated corrections.
 
-`EnterKeyDirection` is part of the **EnterKeyDirection** enumeration, which provides multiple options for customizing the focus behavior on `Enter` key. The available modes include `NextColumn`, `NextRow` and `None`.
+`EnterKeyDirection` is part of the [EnterKeyDirection](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.EnterKeyDirection.html) enumeration, which provides multiple options for customizing the focus behavior on `Enter` key. The available modes include `NextColumn`, `NextRow` and `None`.
 
 | Enum value | Description |
 |---------|-----|
