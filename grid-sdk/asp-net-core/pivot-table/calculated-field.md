@@ -2,7 +2,7 @@
 layout: post
 title: Calculated Field in ASP.NET Core Pivot Table | Syncfusion
 description: Learn how the ASP.NET Core Pivot Table creates custom value fields using math formulas via the Field List dialog or e-calculatedfieldsettings.
-platform: ej2-asp-core-mvc
+platform: grid-sdk
 control: Calculated Field
 publishingplatform: ##Platform_Name##
 documentation: ug
@@ -175,7 +175,7 @@ To reuse an existing formula:
 
 Formatting calculated field values enhances the readability and insight of your data in the pivot table. You can apply different formats using the calculated field dialog in the UI or programmatically through code.
 
-To format calculated field values in your code, use the [`e-formatsettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewFormatSettings.html) property. For more information about supported number formats, refer to the documentation [here](https://ej2.syncfusion.com/aspnetcore/documentation/pivot-table/number-formatting).
+To format calculated field values in your code, use the [`e-formatsettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewFormatSettings.html) property. For more information about supported number formats, refer to the documentation [here](https://help.syncfusion.com/grid-sdk/asp-net-core/pivot-table/number-formatting).
 
 ### Formatting through the user interface
 
