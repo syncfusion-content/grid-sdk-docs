@@ -8,7 +8,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Grouping in Vue Grid component
+# Grouping in Vue Data Grid
 
 The grouping feature in the [Vue Data Grid](https://www.syncfusion.com/vue-components/vue-grid) enables data to be organized into a hierarchical structure, allowing records to be expanded and collapsed for improved readability and analysis.
 

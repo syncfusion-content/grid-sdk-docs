@@ -1,7 +1,7 @@
 ---
 layout: post
 title: MySQL Server Data Binding in Syncfusion Vue Grid
-description: Learn how to consume data from SQL Server using MySQL Client, bind it to Syncfusion Grid, and perform CRUD operations.
+description: Learn how to connect Vue Data Grid to MySQL Server using LINQ2DB, execute database queries, and manage grid data efficiently.
 platform: grid-sdk
 control: Grid
 keywords: adaptors, customadaptor, urladaptor, mysql, remotedata 

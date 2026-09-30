@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Bind data & perform CRUD with WebMethodAdaptor in Syncfusion Grid
+title: Vue Grid Bind Data with WebMethodAdaptor | Syncfusion
 description: Learn here all about how to bind data and perform CRUD action using WebMethodAdaptor in Syncfusion Vue Grid component of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: grid
