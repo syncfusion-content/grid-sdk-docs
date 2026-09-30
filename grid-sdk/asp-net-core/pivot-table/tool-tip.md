@@ -2,7 +2,7 @@
 layout: post
 title: Tooltip in ASP.NET Core Pivot Table | Syncfusion
 description: Learn how the ASP.NET Core Pivot Table displays contextual tooltips on value cells via the showTooltip property, including row and column header info on hover.
-platform: ej2-asp-core-mvc
+platform: grid-sdk
 control: Tool Tip
 publishingplatform: ##Platform_Name##
 documentation: ug

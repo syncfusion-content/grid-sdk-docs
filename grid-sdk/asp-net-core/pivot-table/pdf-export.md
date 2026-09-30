@@ -2,7 +2,7 @@
 layout: post
 title: PDF Export in ASP.NET Core Pivot Table | Syncfusion
 description: Learn how the ASP.NET Core Pivot Table exports the rendered pivot report to a PDF document via allowPdfExport and the pdfExport method.
-platform: ej2-asp-core-mvc
+platform: grid-sdk
 control: Pdf Export
 publishingplatform: ##Platform_Name##
 documentation: ug

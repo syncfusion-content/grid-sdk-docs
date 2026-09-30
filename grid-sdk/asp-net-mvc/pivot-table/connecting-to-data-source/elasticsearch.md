@@ -2,7 +2,7 @@
 layout: post
 title: Elasticsearch Data Binding in ASP.NET MVC Pivot Table | Syncfusion
 component: "Pivot Table"
-platform: ej2-asp-core-mvc
+platform: grid-sdk
 description: Learn how to bind Elasticsearch data to the ASP.NET MVC Pivot Table using the NEST client in a Web API controller exposed as JSON.
 ---
 
