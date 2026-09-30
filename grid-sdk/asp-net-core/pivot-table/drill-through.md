@@ -2,7 +2,7 @@
 layout: post
 title: Drill Through in ASP.NET Core Pivot Table | Syncfusion
 description: Learn how the ASP.NET Core Pivot Table opens a raw-data grid in a new window on double-click via the allowDrillThrough property and DrillThrough module.
-platform: ej2-asp-core-mvc
+platform: grid-sdk
 control: Drill Through
 publishingplatform: ##Platform_Name##
 documentation: ug

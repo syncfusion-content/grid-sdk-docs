@@ -2,7 +2,7 @@
 layout: post
 title: Calculated Field in ASP.NET Core Pivot Table | Syncfusion
 description: Learn how the ASP.NET Core Pivot Table creates custom value fields using math formulas via the Field List dialog or e-calculatedfieldsettings.
-platform: ej2-asp-core-mvc
+platform: grid-sdk
 control: Calculated Field
 publishingplatform: ##Platform_Name##
 documentation: ug

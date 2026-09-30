@@ -2,7 +2,7 @@
 layout: post
 title: Hyperlink in ASP.NET Core Pivot Table | Syncfusion
 description: Learn how the ASP.NET Core Pivot Table shows hyperlinks in row, column, and value cells via e-hyperlinkSettings and conditionalSettings.
-platform: ej2-asp-core-mvc
+platform: grid-sdk
 control: Hyper Link
 publishingplatform: ##Platform_Name##
 documentation: ug
