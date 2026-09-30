@@ -24,6 +24,7 @@
     "@syncfusion/ej2-splitbuttons": "*",
     "@syncfusion/ej2-grids": "*",
     "@syncfusion/ej2-treegrid": "*",
+    "@syncfusion/ej2-material3-theme": "*",
     "@syncfusion/ej2-angular-dropdowns": "*",
     "@syncfusion/ej2-angular-inputs": "*",
     "@syncfusion/ej2-angular-base": "*",
