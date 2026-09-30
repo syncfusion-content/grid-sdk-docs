@@ -2065,7 +2065,7 @@ export class CustomAdaptor extends ej.data.UrlAdaptor {
 
 ### Handling CRUD operations
 
-To enable editing in the Syncfusion JavaScript Grid, utilize the [editSettings](../../api/grid/editSettings/) property. The Grid offers multiple edit modes including the Inline/Normal, Dialog and Batch editing. For more details, refer to the Grid [editing](../../grid/editing/edit) documentation.
+To enable editing in the Syncfusion JavaScript Grid, utilize the [editSettings](../../api/grid/editSettings) property. The Grid offers multiple edit modes including the Inline/Normal, Dialog and Batch editing. For more details, refer to the Grid [editing](../../grid/editing/edit) documentation.
 
 In this scenario, the inline edit [mode](../../api/grid/editSettings#mode) and [toolbar](../../api/grid#toolbar) property configured to display toolbar items for editing purpose.
 

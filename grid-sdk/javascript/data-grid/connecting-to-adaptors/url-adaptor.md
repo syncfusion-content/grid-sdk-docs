@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Bind data & perform CRUD with UrlAdaptor in Syncfusion Grid
+title: JavaScript Grid Bind Data with UrlAdaptor | Syncfusion
 description: Learn here all about how to bind data and perform CRUD action using UrlAdaptor in Syncfusion JavaScript Grid control.
 platform: grid-sdk
 control: grid

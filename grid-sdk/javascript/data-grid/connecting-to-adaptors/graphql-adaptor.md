@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Bind data & perform CRUD with GraphQLAdaptor in Syncfusion Grid
+title: JavaScript Grid Bind Data with GraphQLAdaptor | Syncfusion
 description: Learn here all about how to bind data and perform CRUD action using GraphQLAdaptor in Syncfusion JavaScript Grid control.
 platform: grid-sdk
 control: grid

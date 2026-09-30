@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Microsoft SQL Server Data Binding in Syncfusion Grid
-description: Learn how to consume data from SQL Server using Microsoft SQL Client, bind it to Syncfusion Grid, and perform CRUD operations.
+title: JavaScript Grid Microsoft SQL Server Integration | Syncfusion
+description: Learn how to connect Javascript Data Grid to Microsoft SQL Server using ASP.NET Core Web API, execute SQL queries, and manage data efficiently.
 platform: grid-sdk
 control: Grid
 keywords: adaptors, customadaptor, urladaptor, microsoftsql, remotedata
@@ -2119,7 +2119,7 @@ export class CustomAdaptor extends ej.data.UrlAdaptor {
 
 ### Handling CRUD operations
 
-To enable editing in the Syncfusion JavaScript Grid, utilize the [editSettings](../../api/grid/editSettings/) property. The Grid offers multiple edit modes including the **Inline/Normal**, **Dialog** and **Batch** editing. For more details, refer to the Grid [editing](../../grid/editing/edit) documentation.
+To enable editing in the Syncfusion JavaScript Grid, utilize the [editSettings](../../api/grid/editSettings) property. The Grid offers multiple edit modes including the **Inline/Normal**, **Dialog** and **Batch** editing. For more details, refer to the Grid [editing](../../grid/editing/edit) documentation.
 
 In this scenario, the inline edit [mode](../../api/grid/editSettings#mode) and [toolbar](../../api/grid#toolbar) property configured to display toolbar items for editing purpose.
 

@@ -4,7 +4,6 @@ title: Getting started with JavaScript DataGrid control | Syncfusion
 description:  Checkout and learn about Getting started with JavaScript DataGrid control of Syncfusion Essential JS 2 and more details.
 platform: grid-sdk
 control: Getting started 
-publishingplatform: grid-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
