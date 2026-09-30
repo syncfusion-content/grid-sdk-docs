@@ -2,7 +2,7 @@
 layout: post
 title: CSS Customization in ASP.NET Core Pivot Table | Syncfusion
 description: Learn how the ASP.NET Core Pivot Table uses CSS to hide axes, align text in headers and value cells, and style the Field List and Grouping Bar UI elements.
-platform: ej2-asp-core-mvc
+platform: grid-sdk
 control: Css Customization
 publishingplatform: ##Platform_Name##
 documentation: ug

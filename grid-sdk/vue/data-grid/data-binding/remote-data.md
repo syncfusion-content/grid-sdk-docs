@@ -263,15 +263,7 @@ provide('grid', [Page]);
 </template>
 
 <style>
-@import "../node_modules/@syncfusion/ej2-base/styles/material3.css";
-@import "../node_modules/@syncfusion/ej2-buttons/styles/material3.css";
-@import "../node_modules/@syncfusion/ej2-calendars/styles/material3.css";
-@import "../node_modules/@syncfusion/ej2-dropdowns/styles/material3.css";
-@import "../node_modules/@syncfusion/ej2-inputs/styles/material3.css";
-@import "../node_modules/@syncfusion/ej2-navigations/styles/material3.css";
-@import "../node_modules/@syncfusion/ej2-popups/styles/material3.css";
-@import "../node_modules/@syncfusion/ej2-splitbuttons/styles/material3.css";
-@import "../node_modules/@syncfusion/ej2-vue-grids/styles/material3.css";
+@import "../node_modules/@syncfusion/ej2-material3-theme/styles/grid/index.css";
 </style>
 ```
 
@@ -761,15 +753,7 @@ provide('grid', [Page, Filter, Sort, Group, LazyLoadGroup, Toolbar, Edit, Search
 </template>
 
 <style>
-  @import "../node_modules/@syncfusion/ej2-base/styles/material3.css";
-  @import "../node_modules/@syncfusion/ej2-buttons/styles/material3.css";
-  @import "../node_modules/@syncfusion/ej2-calendars/styles/material3.css";
-  @import "../node_modules/@syncfusion/ej2-dropdowns/styles/material3.css";
-  @import "../node_modules/@syncfusion/ej2-inputs/styles/material3.css";
-  @import "../node_modules/@syncfusion/ej2-navigations/styles/material3.css";
-  @import "../node_modules/@syncfusion/ej2-popups/styles/material3.css";
-  @import "../node_modules/@syncfusion/ej2-splitbuttons/styles/material3.css";
-  @import "../node_modules/@syncfusion/ej2-vue-grids/styles/material3.css";
+@import "../node_modules/@syncfusion/ej2-material3-theme/styles/grid/index.css";
 </style>
 {% endraw %}
 {% endhighlight %}
@@ -845,15 +829,7 @@ export default {
 </template>
 
 <style>
-  @import "../node_modules/@syncfusion/ej2-base/styles/material3.css";
-  @import "../node_modules/@syncfusion/ej2-buttons/styles/material3.css";
-  @import "../node_modules/@syncfusion/ej2-calendars/styles/material3.css";
-  @import "../node_modules/@syncfusion/ej2-dropdowns/styles/material3.css";
-  @import "../node_modules/@syncfusion/ej2-inputs/styles/material3.css";
-  @import "../node_modules/@syncfusion/ej2-navigations/styles/material3.css";
-  @import "../node_modules/@syncfusion/ej2-popups/styles/material3.css";
-  @import "../node_modules/@syncfusion/ej2-splitbuttons/styles/material3.css";
-  @import "../node_modules/@syncfusion/ej2-vue-grids/styles/material3.css";
+@import "../node_modules/@syncfusion/ej2-material3-theme/styles/grid/index.css";
 </style>
 {% endraw %}
 {% endhighlight %}
@@ -1246,15 +1222,7 @@ provide('grid', [Page]);
 </template>
 
 <style>
-  @import "../node_modules/@syncfusion/ej2-base/styles/material3.css";
-  @import "../node_modules/@syncfusion/ej2-buttons/styles/material3.css";
-  @import "../node_modules/@syncfusion/ej2-calendars/styles/material3.css";
-  @import "../node_modules/@syncfusion/ej2-dropdowns/styles/material3.css";
-  @import "../node_modules/@syncfusion/ej2-inputs/styles/material3.css";
-  @import "../node_modules/@syncfusion/ej2-navigations/styles/material3.css";
-  @import "../node_modules/@syncfusion/ej2-popups/styles/material3.css";
-  @import "../node_modules/@syncfusion/ej2-splitbuttons/styles/material3.css";
-  @import "../node_modules/@syncfusion/ej2-vue-grids/styles/material3.css";
+@import "../node_modules/@syncfusion/ej2-material3-theme/styles/grid/index.css";
 </style>
 {% endhighlight %}
 {% highlight html tabtitle="Options API ~/src/App.vue" %}
@@ -1308,15 +1276,7 @@ export default {
 </template>
 
 <style>
-  @import "../node_modules/@syncfusion/ej2-base/styles/material3.css";
-  @import "../node_modules/@syncfusion/ej2-buttons/styles/material3.css";
-  @import "../node_modules/@syncfusion/ej2-calendars/styles/material3.css";
-  @import "../node_modules/@syncfusion/ej2-dropdowns/styles/material3.css";
-  @import "../node_modules/@syncfusion/ej2-inputs/styles/material3.css";
-  @import "../node_modules/@syncfusion/ej2-navigations/styles/material3.css";
-  @import "../node_modules/@syncfusion/ej2-popups/styles/material3.css";
-  @import "../node_modules/@syncfusion/ej2-splitbuttons/styles/material3.css";
-  @import "../node_modules/@syncfusion/ej2-vue-grids/styles/material3.css";
+@import "../node_modules/@syncfusion/ej2-material3-theme/styles/grid/index.css";
 </style>
 {% endhighlight %}
 {% highlight js tabtitle="server.js" %}
@@ -1592,15 +1552,7 @@ onMounted(() => {
 provide('grid', [Page,Toolbar,ExcelExport,PdfExport]);
 </script>
 <style>
-  @import "../node_modules/@syncfusion/ej2-base/styles/material3.css";
-  @import "../node_modules/@syncfusion/ej2-buttons/styles/material3.css";
-  @import "../node_modules/@syncfusion/ej2-calendars/styles/material3.css";
-  @import "../node_modules/@syncfusion/ej2-dropdowns/styles/material3.css";
-  @import "../node_modules/@syncfusion/ej2-inputs/styles/material3.css";
-  @import "../node_modules/@syncfusion/ej2-navigations/styles/material3.css";
-  @import "../node_modules/@syncfusion/ej2-popups/styles/material3.css";
-  @import "../node_modules/@syncfusion/ej2-splitbuttons/styles/material3.css";
-  @import "../node_modules/@syncfusion/ej2-vue-grids/styles/material3.css";
+@import "../node_modules/@syncfusion/ej2-material3-theme/styles/grid/index.css";
 </style>
 {% endraw %}
 {% endhighlight %}
@@ -1681,15 +1633,7 @@ provide('grid', [Page,Toolbar,ExcelExport,PdfExport]);
   };
 </script>
 <style>
-  @import "../node_modules/@syncfusion/ej2-base/styles/material3.css";
-  @import "../node_modules/@syncfusion/ej2-buttons/styles/material3.css";
-  @import "../node_modules/@syncfusion/ej2-calendars/styles/material3.css";
-  @import "../node_modules/@syncfusion/ej2-dropdowns/styles/material3.css";
-  @import "../node_modules/@syncfusion/ej2-inputs/styles/material3.css";
-  @import "../node_modules/@syncfusion/ej2-navigations/styles/material3.css";
-  @import "../node_modules/@syncfusion/ej2-popups/styles/material3.css";
-  @import "../node_modules/@syncfusion/ej2-splitbuttons/styles/material3.css";
-  @import "../node_modules/@syncfusion/ej2-vue-grids/styles/material3.css";
+@import "../node_modules/@syncfusion/ej2-material3-theme/styles/grid/index.css";
 </style>
 {% endraw %}
 {% endhighlight %}
@@ -1906,15 +1850,7 @@ const executeQuery = () => {
 provide('grid',  [Page]);
 </script>
 <style>
-@import "../node_modules/@syncfusion/ej2-base/styles/material3.css";
-@import "../node_modules/@syncfusion/ej2-buttons/styles/material3.css";
-@import "../node_modules/@syncfusion/ej2-calendars/styles/material3.css";
-@import "../node_modules/@syncfusion/ej2-dropdowns/styles/material3.css";
-@import "../node_modules/@syncfusion/ej2-inputs/styles/material3.css";
-@import "../node_modules/@syncfusion/ej2-navigations/styles/material3.css";
-@import "../node_modules/@syncfusion/ej2-popups/styles/material3.css";
-@import "../node_modules/@syncfusion/ej2-splitbuttons/styles/material3.css";
-@import "../node_modules/@syncfusion/ej2-vue-grids/styles/material3.css";
+@import "../node_modules/@syncfusion/ej2-material3-theme/styles/grid/index.css";
 </style>
 
 {% endraw %}
@@ -1988,15 +1924,7 @@ export default {
 };
 </script>
 <style>
-@import "../node_modules/@syncfusion/ej2-base/styles/material3.css";
-@import "../node_modules/@syncfusion/ej2-buttons/styles/material3.css";
-@import "../node_modules/@syncfusion/ej2-calendars/styles/material3.css";
-@import "../node_modules/@syncfusion/ej2-dropdowns/styles/material3.css";
-@import "../node_modules/@syncfusion/ej2-inputs/styles/material3.css";
-@import "../node_modules/@syncfusion/ej2-navigations/styles/material3.css";
-@import "../node_modules/@syncfusion/ej2-popups/styles/material3.css";
-@import "../node_modules/@syncfusion/ej2-splitbuttons/styles/material3.css";
-@import "../node_modules/@syncfusion/ej2-vue-grids/styles/material3.css";
+@import "../node_modules/@syncfusion/ej2-material3-theme/styles/grid/index.css";
 </style>
 
 {% endraw %}
