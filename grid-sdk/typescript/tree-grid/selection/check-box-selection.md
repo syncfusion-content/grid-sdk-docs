@@ -138,7 +138,7 @@ The available modes are displayed in the following table.
 {% include code-snippet/grid-sdk/typescript/treegrid/columns-cs19/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/treegrid/columns-cs19/ts/index.html %}
+{% include code-snippet/grid-sdk/typescript/treegrid/columns-cs19/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
@@ -151,7 +151,7 @@ The available modes are displayed in the following table.
 {% include code-snippet/grid-sdk/typescript/treegrid/columns-cs19/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/treegrid/columns-cs19/js/index.html %}
+{% include code-snippet/grid-sdk/typescript/treegrid/columns-cs19/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
