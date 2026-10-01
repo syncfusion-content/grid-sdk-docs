@@ -15,6 +15,1023 @@ The Blazor Grid offers extensive options to customize cell appearance and functi
 
 {% youtube "youtube:https://www.youtube.com/watch?v=6H90a5tz7bE"%}
 
+## Find and highlight
+ 
+The Find and Highlight feature in the [Blazor Data Grid](Blazor DataGrid Component and Data Table | Syncfusion) enables real-time in-grid text discovery by scanning visible cell content and highlighting every match without filtering or removing non-matching rows. As the user types in the find input, all matching text in the grid is wrapped in a `<mark>` element and styled with a highlight color. A match counter (for example, `2 of 14`) is displayed alongside **Previous** and **Next** navigation buttons so that users can step through each occurrence individually.
+ 
+The feature is activated by including the `Find` built-in toolbar item and is fully configurable through [GridFindSettings](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridFindSettings.html). It is independent of the grid search and filtering features — rows are never hidden.
+ 
+> **Find and Highlight vs. Searching:** The built-in [Search](./searching) toolbar item hides rows that do not match the search term. The **Find** toolbar item, by contrast, highlights matching text across all visible rows while keeping the full dataset intact.
+ 
+**Key capabilities:**
+ 
+| Capability | Details |
+|---|---|
+| Real-time highlighting | Matches are highlighted as the user types, with no need to press Enter. |
+| Match navigation | **Previous** / **Next** buttons and `Shift+Enter` / `Enter` keyboard shortcuts step through each match. |
+| Match counter | A `current of total` indicator shows how many matches exist and which one is active. |
+| Case-sensitive matching | Controlled by [GridFindSettings.CaseSensitive](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridFindSettings.html#Syncfusion_Blazor_Grids_GridFindSettings_CaseSensitive). |
+| Column-level opt-out | Set [AllowSearchHighlight](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridColumn.html#Syncfusion_Blazor_Grids_GridColumn_AllowSearchHighlight) to `false` on a column to exclude it from scanning and highlighting. |
+| Custom highlight style | Override the highlight appearance using [GridFindSettings.HighlightCssClass](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridFindSettings.html#Syncfusion_Blazor_Grids_GridFindSettings_HighlightCssClass). |
+| Programmatic control | Use the [FindHighlightAsync](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.SfGrid-1.html#Syncfusion_Blazor_Grids_SfGrid_1_FindHighlightAsync_System_String_), [ResetFindAsync](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.SfGrid-1.html#Syncfusion_Blazor_Grids_SfGrid_1_ResetFindAsync), [FindNextHighlightAsync](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.SfGrid-1.html#Syncfusion_Blazor_Grids_SfGrid_1_FindNextHighlightAsync), [FindPreviousHighlightAsync](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.SfGrid-1.html#Syncfusion_Blazor_Grids_SfGrid_1_FindPreviousHighlightAsync), and [FindGoToAsync](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.SfGrid-1.html#Syncfusion_Blazor_Grids_SfGrid_1_FindGoToAsync_System_Int32_) API methods to drive find and highlight programmatically. |
+| Paging support | Highlighting is automatically reapplied when the user navigates to a different page. |
+
+### Enable Find and Highlight using toolbar
+ 
+The simplest way to activate the Find and Highlight feature is to add the `"Find"` string to the [Toolbar](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.SfGrid-1.html#Syncfusion_Blazor_Grids_SfGrid_1_Toolbar) property. This renders the find input box along with the **Previous**, **Next** icons, and match counter in the grid toolbar. No additional configuration is required for basic usage.
+
+{% tabs %}
+{% highlight razor tabtitle="Index.razor" %}
+
+@using Syncfusion.Blazor.Grids
+
+<SfGrid @ref="Grid" DataSource="@GridData" AllowSorting="true" Height="500" AllowTextWrap="true" AllowReordering="true" Toolbar=@(new List<string> {"Find"})>
+    <GridColumns>
+        <GridColumn Field=@nameof(SupportTicket.TicketId) HeaderText="Ticket ID" Width="130" IsPrimaryKey="true"> </GridColumn>
+        <GridColumn Field=@nameof(SupportTicket.Subject) HeaderText="Subject" Width="250"> </GridColumn>
+        <GridColumn Field=@nameof(SupportTicket.CustomerName) HeaderText="Customer Name" Width="180"> </GridColumn>
+        <GridColumn Field=@nameof(SupportTicket.Email) HeaderText="Email" Width="220"> </GridColumn>
+        <GridColumn Field=@nameof(SupportTicket.ContactNumber) HeaderText="Contact Number" Visible="false" Width="180"> </GridColumn>
+        <GridColumn Field=@nameof(SupportTicket.Priority) HeaderText="Priority" Width="120"> </GridColumn>
+        <GridColumn Field=@nameof(SupportTicket.Status) HeaderText="Status" Width="120">  </GridColumn>
+        <GridColumn Field=@nameof(SupportTicket.Category) HeaderText="Category" Width="130"> </GridColumn>
+        <GridColumn Field=@nameof(SupportTicket.AssignedTo) HeaderText="Assigned To" Width="180"> </GridColumn>
+    </GridColumns>
+</SfGrid>
+
+@code 
+{
+    private SfGrid<SupportTicket> Grid { get; set; }
+    private string searchText {get;set;}
+    private int matchNumber { get; set; }
+    public List<SupportTicket> GridData { get; set; } = new();
+
+    protected override void OnInitialized()
+    {
+        GridData = SupportTicket.GetAllRecords().ToList();
+    }
+}
+
+{% endhighlight %}
+
+{% highlight c# tabtitle="SupportTicket.cs" %}
+
+ public class SupportTicket
+ {
+     public SupportTicket()
+     {
+     }
+     public static IReadOnlyList<SupportTicket> GetAllRecords()
+     {
+         List<SupportTicket> tickets = new();
+         var customers = new[]
+         {
+             new
+             {
+                 Name = "John Smith",
+                 Email = "john.smith@email.com",
+                 ContactNumber = "+1-202-555-0101"
+             },
+             new
+             {
+                 Name = "Emma Wilson",
+                 Email = "emma.wilson@email.com",
+                 ContactNumber = "+44-20-7946-1002"
+             },
+             new
+             {
+                 Name = "Michael Davis",
+                 Email = "michael.davis@email.com",
+                 ContactNumber = "+1-416-555-1003"
+             },
+             new
+             {
+                 Name = "Sophia Brown",
+                 Email = "sophia.brown@email.com",
+                 ContactNumber = "+61-2-5550-1004"
+             },
+             new
+             {
+                 Name = "Raj Kumar",
+                 Email = "raj.kumar@email.com",
+                 ContactNumber = "+91-98765-10005"
+             },
+             new
+             {
+                 Name = "Lisa Taylor",
+                 Email = "lisa.taylor@email.com",
+                 ContactNumber = "+49-30-5555-1006"
+             },
+             new
+             {
+                 Name = "Alex Johnson",
+                 Email = "alex.johnson@email.com",
+                 ContactNumber = "+33-1-5550-1007"
+             },
+             new
+             {
+                 Name = "Priya Sharma",
+                 Email = "priya.sharma@email.com",
+                 ContactNumber = "+65-6555-1008"
+             },
+             new
+             {
+                 Name = "Daniel Moore",
+                 Email = "daniel.moore@email.com",
+                 ContactNumber = "+971-4-555-1009"
+             },
+             new
+             {
+                 Name = "Olivia Martin",
+                 Email = "olivia.martin@email.com",
+                 ContactNumber = "+81-3-5555-1010"
+             }
+         };
+         string[] assignedTo =
+         {
+             "Sarah Johnson",
+             "David Clark",
+             "Alex Brown"
+         };
+         var templates = new[]
+         {
+             new
+             {
+                 Subject = "Payment not processed",
+                 Description = "My recent payment for order was deducted but the order shows pending status. Please resolve urgently.",
+                 Category = "Billing",
+                 Priority = "High",
+                 Status = "Open"
+             },
+             new
+             {
+                 Subject = "Login failed after password reset",
+                 Description = "Customer is unable to login after resetting password. Authentication validation failed.",
+                 Category = "Authentication",
+                 Priority = "Medium",
+                 Status = "In Progress"
+             },
+             new
+             {
+                 Subject = "Refund payment pending",
+                 Description = "Refund payment has not been processed and customer is waiting for an update.",
+                 Category = "Billing",
+                 Priority = "High",
+                 Status = "Open"
+             },
+             new
+             {
+                 Subject = "Order tracking unavailable",
+                 Description = "Customer cannot track the order. Order tracking page displays an error.",
+                 Category = "Order",
+                 Priority = "Low",
+                 Status = "Resolved"
+             },
+             new
+             {
+                 Subject = "Payment gateway timeout",
+                 Description = "Payment gateway timeout occurred during checkout for multiple customers.",
+                 Category = "Billing",
+                 Priority = "Critical",
+                 Status = "Open"
+             }
+         };
+         for (int i = 1; i <= 100; i++)
+         {
+             var template = templates[(i - 1) % templates.Length];
+             var customer = customers[(i - 1) % customers.Length];
+             tickets.Add(new SupportTicket(
+                 $"TKT-{10000 + i}",
+                 customer.Name,
+                 customer.ContactNumber,
+                 customer.Email,
+                 template.Subject,
+                 template.Description,
+                 template.Category,
+                 template.Priority,
+                 template.Status,
+                 assignedTo[(i - 1) % assignedTo.Length],
+                 new DateTime(2026, ((i - 1) % 12) + 1, ((i - 1) % 28) + 1),
+                 new DateTime(2026, ((i - 1) % 12) + 1, ((i + 2) % 28) + 1)
+             ));
+         }
+         return tickets;
+     }
+     public SupportTicket(
+         string ticketId,
+         string customerName,
+         string contactNumber,
+         string email,
+         string subject,
+         string description,
+         string category,
+         string priority,
+         string status,
+         string assignedTo,
+         DateTime createdDate,
+         DateTime lastUpdated)
+     {
+         TicketId = ticketId;
+         CustomerName = customerName;
+         ContactNumber = contactNumber;
+         Email = email;
+         Subject = subject;
+         Description = description;
+         Category = category;
+         Priority = priority;
+         Status = status;
+         AssignedTo = assignedTo;
+         CreatedDate = createdDate;
+         LastUpdated = lastUpdated;
+     }
+     public string? TicketId { get; set; }
+     public string? CustomerName { get; set; }
+     public string? ContactNumber { get; set; }
+     public string? Email { get; set; }
+     public string? Subject { get; set; }
+     public string? Description { get; set; }
+     public string? Category { get; set; }
+     public string? Priority { get; set; }
+     public string? Status { get; set; }
+     public string? AssignedTo { get; set; }
+     public DateTime CreatedDate { get; set; }
+     public DateTime LastUpdated { get; set; }
+ }
+
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "https://blazorplayground.syncfusion.com/embed/LNhHCNZMhnevzCwi?appbar=false&editor=false&result=true&errorlist=false&theme=fluent2" %}
+ 
+### Configure Find and Highlight behavior using GridFindSettings
+ 
+Use the [GridFindSettings](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridFindSettings.html) component inside `SfGrid` to fine-tune the behavior and appearance of the Find and Highlight feature. The following properties are available:
+ 
+| Property | Type | Default | Description |
+|---|---|---|---|
+| [PlaceholderText](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridFindSettings.html#Syncfusion_Blazor_Grids_GridFindSettings_PlaceholderText) | `string` | `"Find"` | Custom placeholder text displayed in the find input field when it is empty. |
+| [HighlightCssClass](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridFindSettings.html#Syncfusion_Blazor_Grids_GridFindSettings_HighlightCssClass) | `string` | `"e-find-highlight"` | CSS class applied to the `<mark>` element that wraps each matched text. Override this to change highlight color or style. |
+| [CaseSensitive](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridFindSettings.html#Syncfusion_Blazor_Grids_GridFindSettings_CaseSensitive) | `bool` | `false` | When `true`, only text with identical letter casing is matched. When `false`, `"John"`, `"john"`, and `"JOHN"` all match the search term `"john"`. |
+ 
+The following example enables case-sensitive matching, sets a custom placeholder, and applies a custom highlight style:
+ 
+{% tabs %}
+{% highlight razor tabtitle="Index.razor" %}
+
+@using Syncfusion.Blazor.Grids
+
+<SfGrid @ref="Grid" DataSource="@GridData" Height="500" AllowTextWrap="true" Toolbar=@(new List<string> {"Find"})>
+    <GridFindSettings PlaceholderText="Search in grid..." CaseSensitive="true" HighlightCssClass="custom-highlight"></GridFindSettings>
+    <GridColumns>
+        <GridColumn Field=@nameof(SupportTicket.TicketId) HeaderText="Ticket ID" Width="130" IsPrimaryKey="true"> </GridColumn>
+        <GridColumn Field=@nameof(SupportTicket.Subject) HeaderText="Subject" Width="250"> </GridColumn>
+        <GridColumn Field=@nameof(SupportTicket.CustomerName) HeaderText="Customer Name" Width="180"> </GridColumn>
+        <GridColumn Field=@nameof(SupportTicket.Email) Visible="false" HeaderText="Email" Width="220"> </GridColumn>
+        <GridColumn Field=@nameof(SupportTicket.ContactNumber) HeaderText="Contact Number" Visible="false" Width="180"> </GridColumn>
+        <GridColumn Field=@nameof(SupportTicket.Priority) HeaderText="Priority" Width="120"> </GridColumn>
+        <GridColumn Field=@nameof(SupportTicket.Status) HeaderText="Status" Width="120">  </GridColumn>
+        <GridColumn Field=@nameof(SupportTicket.Category) HeaderText="Category" Width="130"> </GridColumn>
+        <GridColumn Field=@nameof(SupportTicket.AssignedTo) HeaderText="Assigned To" Width="180"> </GridColumn>
+    </GridColumns>
+</SfGrid>
+
+<style>
+    .custom-highlight {
+        background-color: #ff9800;
+        color: #fff;
+        border-radius: 2px;
+        padding: 0 2px;
+    }
+</style>
+
+@code 
+{
+    private SfGrid<SupportTicket> Grid { get; set; }
+    private string searchText {get;set;}
+    private int matchNumber { get; set; }
+    public List<SupportTicket> GridData { get; set; } = new();
+
+    protected override void OnInitialized()
+    {
+        GridData = SupportTicket.GetAllRecords().ToList();
+    }
+}
+{% endhighlight %}
+{% highlight c# tabtitle="SupportTicket.cs" %}
+
+public class SupportTicket
+{
+    public SupportTicket()
+    {
+    }
+    public static IReadOnlyList<SupportTicket> GetAllRecords()
+    {
+        List<SupportTicket> tickets = new();
+        var customers = new[]
+        {
+            new
+            {
+                Name = "John Smith",
+                Email = "john.smith@email.com",
+                ContactNumber = "+1-202-555-0101"
+            },
+            new
+            {
+                Name = "Emma Wilson",
+                Email = "emma.wilson@email.com",
+                ContactNumber = "+44-20-7946-1002"
+            },
+            new
+            {
+                Name = "Michael Davis",
+                Email = "michael.davis@email.com",
+                ContactNumber = "+1-416-555-1003"
+            },
+            new
+            {
+                Name = "Sophia Brown",
+                Email = "sophia.brown@email.com",
+                ContactNumber = "+61-2-5550-1004"
+            },
+            new
+            {
+                Name = "Raj Kumar",
+                Email = "raj.kumar@email.com",
+                ContactNumber = "+91-98765-10005"
+            },
+            new
+            {
+                Name = "Lisa Taylor",
+                Email = "lisa.taylor@email.com",
+                ContactNumber = "+49-30-5555-1006"
+            },
+            new
+            {
+                Name = "Alex Johnson",
+                Email = "alex.johnson@email.com",
+                ContactNumber = "+33-1-5550-1007"
+            },
+            new
+            {
+                Name = "Priya Sharma",
+                Email = "priya.sharma@email.com",
+                ContactNumber = "+65-6555-1008"
+            },
+            new
+            {
+                Name = "Daniel Moore",
+                Email = "daniel.moore@email.com",
+                ContactNumber = "+971-4-555-1009"
+            },
+            new
+            {
+                Name = "Olivia Martin",
+                Email = "olivia.martin@email.com",
+                ContactNumber = "+81-3-5555-1010"
+            }
+        };
+        string[] assignedTo =
+        {
+            "Sarah Johnson",
+            "David Clark",
+            "Alex Brown"
+        };
+        var templates = new[]
+        {
+            new
+            {
+                Subject = "Payment not processed",
+                Description = "My recent payment for order was deducted but the order shows pending status. Please resolve urgently.",
+                Category = "Billing",
+                Priority = "High",
+                Status = "Open"
+            },
+            new
+            {
+                Subject = "Login failed after password reset",
+                Description = "Customer is unable to login after resetting password. Authentication validation failed.",
+                Category = "Authentication",
+                Priority = "Medium",
+                Status = "In Progress"
+            },
+            new
+            {
+                Subject = "Refund payment pending",
+                Description = "Refund payment has not been processed and customer is waiting for an update.",
+                Category = "Billing",
+                Priority = "High",
+                Status = "Open"
+            },
+            new
+            {
+                Subject = "Order tracking unavailable",
+                Description = "Customer cannot track the order. Order tracking page displays an error.",
+                Category = "Order",
+                Priority = "Low",
+                Status = "Resolved"
+            },
+            new
+            {
+                Subject = "Payment gateway timeout",
+                Description = "Payment gateway timeout occurred during checkout for multiple customers.",
+                Category = "Billing",
+                Priority = "Critical",
+                Status = "Open"
+            }
+        };
+        for (int i = 1; i <= 100; i++)
+        {
+            var template = templates[(i - 1) % templates.Length];
+            var customer = customers[(i - 1) % customers.Length];
+            tickets.Add(new SupportTicket(
+                $"TKT-{10000 + i}",
+                customer.Name,
+                customer.ContactNumber,
+                customer.Email,
+                template.Subject,
+                template.Description,
+                template.Category,
+                template.Priority,
+                template.Status,
+                assignedTo[(i - 1) % assignedTo.Length],
+                new DateTime(2026, ((i - 1) % 12) + 1, ((i - 1) % 28) + 1),
+                new DateTime(2026, ((i - 1) % 12) + 1, ((i + 2) % 28) + 1)
+            ));
+        }
+        return tickets;
+    }
+    public SupportTicket(
+        string ticketId,
+        string customerName,
+        string contactNumber,
+        string email,
+        string subject,
+        string description,
+        string category,
+        string priority,
+        string status,
+        string assignedTo,
+        DateTime createdDate,
+        DateTime lastUpdated)
+    {
+        TicketId = ticketId;
+        CustomerName = customerName;
+        ContactNumber = contactNumber;
+        Email = email;
+        Subject = subject;
+        Description = description;
+        Category = category;
+        Priority = priority;
+        Status = status;
+        AssignedTo = assignedTo;
+        CreatedDate = createdDate;
+        LastUpdated = lastUpdated;
+    }
+    public string? TicketId { get; set; }
+    public string? CustomerName { get; set; }
+    public string? ContactNumber { get; set; }
+    public string? Email { get; set; }
+    public string? Subject { get; set; }
+    public string? Description { get; set; }
+    public string? Category { get; set; }
+    public string? Priority { get; set; }
+    public string? Status { get; set; }
+    public string? AssignedTo { get; set; }
+    public DateTime CreatedDate { get; set; }
+    public DateTime LastUpdated { get; set; }
+}
+{% endhighlight %}
+{% endtabs %}
+ 
+ {% previewsample "https://blazorplayground.syncfusion.com/embed/LtBxMZNshbelDxOY?appbar=false&editor=false&result=true&errorlist=false&theme=fluent2" %}
+ 
+### Exclude a column from Find and Highlight
+
+By default, every data column participates in Find and Highlight scanning. To exclude a specific column — for example, a column containing IDs, internal codes, or sensitive data — set its [AllowSearchHighlight](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridColumn.html#Syncfusion_Blazor_Grids_GridColumn_AllowSearchHighlight) property to `false`.
+ 
+When a column is excluded:
+- Its cell content is not scanned for matches.
+- No highlight is applied to cells in that column.
+- Its cells are not counted in the total match count.
+- **Previous** / **Next** navigation skips that column entirely.
+ 
+> `AllowSearchHighlight` is independent of [AllowSearching](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridColumn.html#Syncfusion_Blazor_Grids_GridColumn_AllowSearching). `AllowSearching` controls whether the column participates in the toolbar **Search** operation (which filters rows), whereas `AllowSearchHighlight` controls whether the column participates in the **Find** toolbar operation (which highlights without filtering).
+ 
+{% tabs %}
+{% highlight razor tabtitle="Index.razor" %}
+@using Syncfusion.Blazor.Grids
+
+<SfGrid @ref="Grid" DataSource="@GridData" Height="500" AllowTextWrap="true" Toolbar=@(new List<string> {"Find"})>
+    <GridColumns>
+        <GridColumn Field=@nameof(SupportTicket.TicketId) HeaderText="Ticket ID" Width="130" IsPrimaryKey="true"> </GridColumn>
+        <GridColumn Field=@nameof(SupportTicket.Subject) HeaderText="Subject" Width="250"> </GridColumn>
+        <GridColumn Field=@nameof(SupportTicket.CustomerName) HeaderText="Customer Name" AllowSearchHighlight="false" Width="180"> </GridColumn>
+        <GridColumn Field=@nameof(SupportTicket.Priority) HeaderText="Priority" AllowSearchHighlight="false" Width="120"> </GridColumn>
+        <GridColumn Field=@nameof(SupportTicket.Status) HeaderText="Status" Width="120">  </GridColumn>
+        <GridColumn Field=@nameof(SupportTicket.Category) HeaderText="Category" Width="130"> </GridColumn>
+        <GridColumn Field=@nameof(SupportTicket.AssignedTo) HeaderText="Assigned To" Width="180"> </GridColumn>
+    </GridColumns>
+</SfGrid>
+
+@code 
+{
+    private SfGrid<SupportTicket> Grid { get; set; }
+    private string searchText {get;set;}
+    private int matchNumber { get; set; }
+    public List<SupportTicket> GridData { get; set; } = new();
+
+    protected override void OnInitialized()
+    {
+        GridData = SupportTicket.GetAllRecords().ToList();
+    }
+}
+{% endhighlight %}
+{% highlight c# tabtitle="SupportTicket.cs" %}
+public class SupportTicket
+{
+    public SupportTicket()
+    {
+    }
+    public static IReadOnlyList<SupportTicket> GetAllRecords()
+    {
+        List<SupportTicket> tickets = new();
+        var customers = new[]
+        {
+            new
+            {
+                Name = "John Smith",
+                Email = "john.smith@email.com",
+                ContactNumber = "+1-202-555-0101"
+            },
+            new
+            {
+                Name = "Emma Wilson",
+                Email = "emma.wilson@email.com",
+                ContactNumber = "+44-20-7946-1002"
+            },
+            new
+            {
+                Name = "Michael Davis",
+                Email = "michael.davis@email.com",
+                ContactNumber = "+1-416-555-1003"
+            },
+            new
+            {
+                Name = "Sophia Brown",
+                Email = "sophia.brown@email.com",
+                ContactNumber = "+61-2-5550-1004"
+            },
+            new
+            {
+                Name = "Raj Kumar",
+                Email = "raj.kumar@email.com",
+                ContactNumber = "+91-98765-10005"
+            },
+            new
+            {
+                Name = "Lisa Taylor",
+                Email = "lisa.taylor@email.com",
+                ContactNumber = "+49-30-5555-1006"
+            },
+            new
+            {
+                Name = "Alex Johnson",
+                Email = "alex.johnson@email.com",
+                ContactNumber = "+33-1-5550-1007"
+            },
+            new
+            {
+                Name = "Priya Sharma",
+                Email = "priya.sharma@email.com",
+                ContactNumber = "+65-6555-1008"
+            },
+            new
+            {
+                Name = "Daniel Moore",
+                Email = "daniel.moore@email.com",
+                ContactNumber = "+971-4-555-1009"
+            },
+            new
+            {
+                Name = "Olivia Martin",
+                Email = "olivia.martin@email.com",
+                ContactNumber = "+81-3-5555-1010"
+            }
+        };
+        string[] assignedTo =
+        {
+            "Sarah Johnson",
+            "David Clark",
+            "Alex Brown"
+        };
+        var templates = new[]
+        {
+            new
+            {
+                Subject = "Payment not processed",
+                Description = "My recent payment for order was deducted but the order shows pending status. Please resolve urgently.",
+                Category = "Billing",
+                Priority = "High",
+                Status = "Open"
+            },
+            new
+            {
+                Subject = "Login failed after password reset",
+                Description = "Customer is unable to login after resetting password. Authentication validation failed.",
+                Category = "Authentication",
+                Priority = "Medium",
+                Status = "In Progress"
+            },
+            new
+            {
+                Subject = "Refund payment pending",
+                Description = "Refund payment has not been processed and customer is waiting for an update.",
+                Category = "Billing",
+                Priority = "High",
+                Status = "Open"
+            },
+            new
+            {
+                Subject = "Order tracking unavailable",
+                Description = "Customer cannot track the order. Order tracking page displays an error.",
+                Category = "Order",
+                Priority = "Low",
+                Status = "Resolved"
+            },
+            new
+            {
+                Subject = "Payment gateway timeout",
+                Description = "Payment gateway timeout occurred during checkout for multiple customers.",
+                Category = "Billing",
+                Priority = "Critical",
+                Status = "Open"
+            }
+        };
+        for (int i = 1; i <= 100; i++)
+        {
+            var template = templates[(i - 1) % templates.Length];
+            var customer = customers[(i - 1) % customers.Length];
+            tickets.Add(new SupportTicket(
+                $"TKT-{10000 + i}",
+                customer.Name,
+                customer.ContactNumber,
+                customer.Email,
+                template.Subject,
+                template.Description,
+                template.Category,
+                template.Priority,
+                template.Status,
+                assignedTo[(i - 1) % assignedTo.Length],
+                new DateTime(2026, ((i - 1) % 12) + 1, ((i - 1) % 28) + 1),
+                new DateTime(2026, ((i - 1) % 12) + 1, ((i + 2) % 28) + 1)
+            ));
+        }
+        return tickets;
+    }
+    public SupportTicket(
+        string ticketId,
+        string customerName,
+        string contactNumber,
+        string email,
+        string subject,
+        string description,
+        string category,
+        string priority,
+        string status,
+        string assignedTo,
+        DateTime createdDate,
+        DateTime lastUpdated)
+    {
+        TicketId = ticketId;
+        CustomerName = customerName;
+        ContactNumber = contactNumber;
+        Email = email;
+        Subject = subject;
+        Description = description;
+        Category = category;
+        Priority = priority;
+        Status = status;
+        AssignedTo = assignedTo;
+        CreatedDate = createdDate;
+        LastUpdated = lastUpdated;
+    }
+    public string? TicketId { get; set; }
+    public string? CustomerName { get; set; }
+    public string? ContactNumber { get; set; }
+    public string? Email { get; set; }
+    public string? Subject { get; set; }
+    public string? Description { get; set; }
+    public string? Category { get; set; }
+    public string? Priority { get; set; }
+    public string? Status { get; set; }
+    public string? AssignedTo { get; set; }
+    public DateTime CreatedDate { get; set; }
+    public DateTime LastUpdated { get; set; }
+}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "https://blazorplayground.syncfusion.com/embed/LjrnMXDMgLqjAsvP?appbar=false&editor=false&result=true&errorlist=false&theme=fluent2" %}
+ 
+> In this example, the **CustomerName**  and **Priority** column is excluded from Find and Highlight. Entering a text that appears in that column will not produce a match or a highlight.
+ 
+### Enable Find and Highlight using API methods
+
+The Find and Highlight feature can be controlled entirely from code without relying on the toolbar UI. This is useful for building custom find panels, integrating keyboard shortcuts, or triggering highlighting from business logic.
+ 
+The following methods are available on the grid reference:
+ 
+| Method | Signature | Description |
+|---|---|---|
+| [FindHighlightAsync](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.SfGrid-1.html#Syncfusion_Blazor_Grids_SfGrid_1_FindHighlightAsync_System_String_) | `Task FindHighlightAsync(string findKey)` | Highlights all cells that contain `findKey`. Pass an empty string to clear all highlights. |
+| [ResetFindAsync](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.SfGrid-1.html#Syncfusion_Blazor_Grids_SfGrid_1_ResetFindAsync) | `Task ResetFindAsync()` | Clears all highlights and resets the match counter. |
+| [FindNextHighlightAsync](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.SfGrid-1.html#Syncfusion_Blazor_Grids_SfGrid_1_FindNextHighlightAsync) | `Task FindNextHighlightAsync()` | Moves the active match to the next match. Wraps to the first match after the last. |
+| [FindPreviousHighlightAsync](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.SfGrid-1.html#Syncfusion_Blazor_Grids_SfGrid_1_FindPreviousHighlightAsync) | `Task FindPreviousHighlightAsync()` | Moves the active match to the previous match. Wraps to the last match before the first. |
+| [FindGoToAsync](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.SfGrid-1.html#Syncfusion_Blazor_Grids_SfGrid_1_FindGoToAsync_System_Int32_) | `Task FindGoToAsync(int matchNumber)` | Jumps directly to a match by its 1-based index. Out-of-range values are clamped to the nearest valid match. |
+ 
+> The `Find` toolbar item must be present in the [Toolbar](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.SfGrid-1.html#Syncfusion_Blazor_Grids_SfGrid_1_Toolbar) configuration for these methods to function.
+ 
+The following example demonstrates driving Find and Highlight programmatically using external buttons:
+ 
+{% tabs %}
+{% highlight razor tabtitle="Index.razor" %}
+
+@using Syncfusion.Blazor.Buttons
+@using Syncfusion.Blazor.Grids
+@using Syncfusion.Blazor.Inputs
+
+<label>Find:</label>
+<SfTextBox FloatLabelType="FloatLabelType.Always" Width="250px" @bind-Value="@searchText" CssClass="e-outline e-small e-searchbox" Input="@OnValueChange">
+</SfTextBox>
+<SfButton Content="Previous" OnClick="FindPreviousMatch"></SfButton>
+<SfButton Content="Next" OnClick="FindNextMatch"></SfButton>
+<br />
+<br />
+<label>Go to match: </label>
+<SfNumericTextBox TValue="int" FloatLabelType="FloatLabelType.Always" @bind-Value="@matchNumber" Width="250px" Min="1" CssClass="e-outline e-small e-searchbox">
+</SfNumericTextBox>
+<SfButton Content="Go To" OnClick="GoToMatch"></SfButton>
+<br />
+
+<SfGrid @ref="Grid" DataSource="@GridData" AllowSorting="true" Height="500" AllowTextWrap="true" AllowReordering="true">
+    <GridColumns>
+        <GridColumn Field=@nameof(SupportTicket.TicketId) HeaderText="Ticket ID" Width="130" IsPrimaryKey="true"> </GridColumn>
+        <GridColumn Field=@nameof(SupportTicket.Subject) HeaderText="Subject" Width="250"> </GridColumn>
+        <GridColumn Field=@nameof(SupportTicket.CustomerName) HeaderText="Customer Name" Width="180"> </GridColumn>
+        <GridColumn Field=@nameof(SupportTicket.Email) HeaderText="Email" Width="220"> </GridColumn>
+        <GridColumn Field=@nameof(SupportTicket.Priority) HeaderText="Priority" Width="120"> </GridColumn>
+        <GridColumn Field=@nameof(SupportTicket.Status) HeaderText="Status" Width="120">  </GridColumn>
+        <GridColumn Field=@nameof(SupportTicket.Category) HeaderText="Category" Width="130"> </GridColumn>
+        <GridColumn Field=@nameof(SupportTicket.AssignedTo) HeaderText="Assigned To" Width="180"> </GridColumn>
+    </GridColumns>
+</SfGrid>
+
+<style>
+    .e-outline.e-small.e-searchbox.e-input-group {
+        margin-top: 0px;
+    }
+</style>
+
+@code 
+{
+    private SfGrid<SupportTicket> Grid { get; set; }
+    private string searchText {get;set;}
+    private int matchNumber { get; set; }
+    public List<SupportTicket> GridData { get; set; } = new();
+
+    protected override void OnInitialized()
+    {
+        GridData = SupportTicket.GetAllRecords().ToList();
+    }
+
+    private async Task OnValueChange(InputEventArgs args)
+    {
+        if (Grid != null)
+        {
+            await Grid.FindHighlightAsync(args.Value);
+        }
+    }
+
+    private async Task FindPreviousMatch()
+    {
+        await Grid.FindPreviousHighlightAsync();
+    }
+
+    private async Task FindNextMatch()
+    {
+        await Grid.FindNextHighlightAsync();
+    }
+
+    private async Task GoToMatch()
+    {
+        await Grid.FindGoToAsync(matchNumber);
+    }
+}
+{% endhighlight %}
+{% highlight c# tabtitle="SupportTicket.cs" %}
+public class SupportTicket
+{
+    public SupportTicket()
+    {
+    }
+    public static IReadOnlyList<SupportTicket> GetAllRecords()
+    {
+        List<SupportTicket> tickets = new();
+        var customers = new[]
+        {
+            new
+            {
+                Name = "John Smith",
+                Email = "john.smith@email.com",
+                ContactNumber = "+1-202-555-0101"
+            },
+            new
+            {
+                Name = "Emma Wilson",
+                Email = "emma.wilson@email.com",
+                ContactNumber = "+44-20-7946-1002"
+            },
+            new
+            {
+                Name = "Michael Davis",
+                Email = "michael.davis@email.com",
+                ContactNumber = "+1-416-555-1003"
+            },
+            new
+            {
+                Name = "Sophia Brown",
+                Email = "sophia.brown@email.com",
+                ContactNumber = "+61-2-5550-1004"
+            },
+            new
+            {
+                Name = "Raj Kumar",
+                Email = "raj.kumar@email.com",
+                ContactNumber = "+91-98765-10005"
+            },
+            new
+            {
+                Name = "Lisa Taylor",
+                Email = "lisa.taylor@email.com",
+                ContactNumber = "+49-30-5555-1006"
+            },
+            new
+            {
+                Name = "Alex Johnson",
+                Email = "alex.johnson@email.com",
+                ContactNumber = "+33-1-5550-1007"
+            },
+            new
+            {
+                Name = "Priya Sharma",
+                Email = "priya.sharma@email.com",
+                ContactNumber = "+65-6555-1008"
+            },
+            new
+            {
+                Name = "Daniel Moore",
+                Email = "daniel.moore@email.com",
+                ContactNumber = "+971-4-555-1009"
+            },
+            new
+            {
+                Name = "Olivia Martin",
+                Email = "olivia.martin@email.com",
+                ContactNumber = "+81-3-5555-1010"
+            }
+        };
+        string[] assignedTo =
+        {
+            "Sarah Johnson",
+            "David Clark",
+            "Alex Brown"
+        };
+        var templates = new[]
+        {
+            new
+            {
+                Subject = "Payment not processed",
+                Description = "My recent payment for order was deducted but the order shows pending status. Please resolve urgently.",
+                Category = "Billing",
+                Priority = "High",
+                Status = "Open"
+            },
+            new
+            {
+                Subject = "Login failed after password reset",
+                Description = "Customer is unable to login after resetting password. Authentication validation failed.",
+                Category = "Authentication",
+                Priority = "Medium",
+                Status = "In Progress"
+            },
+            new
+            {
+                Subject = "Refund payment pending",
+                Description = "Refund payment has not been processed and customer is waiting for an update.",
+                Category = "Billing",
+                Priority = "High",
+                Status = "Open"
+            },
+            new
+            {
+                Subject = "Order tracking unavailable",
+                Description = "Customer cannot track the order. Order tracking page displays an error.",
+                Category = "Order",
+                Priority = "Low",
+                Status = "Resolved"
+            },
+            new
+            {
+                Subject = "Payment gateway timeout",
+                Description = "Payment gateway timeout occurred during checkout for multiple customers.",
+                Category = "Billing",
+                Priority = "Critical",
+                Status = "Open"
+            }
+        };
+        for (int i = 1; i <= 100; i++)
+        {
+            var template = templates[(i - 1) % templates.Length];
+            var customer = customers[(i - 1) % customers.Length];
+            tickets.Add(new SupportTicket(
+                $"TKT-{10000 + i}",
+                customer.Name,
+                customer.ContactNumber,
+                customer.Email,
+                template.Subject,
+                template.Description,
+                template.Category,
+                template.Priority,
+                template.Status,
+                assignedTo[(i - 1) % assignedTo.Length],
+                new DateTime(2026, ((i - 1) % 12) + 1, ((i - 1) % 28) + 1),
+                new DateTime(2026, ((i - 1) % 12) + 1, ((i + 2) % 28) + 1)
+            ));
+        }
+        return tickets;
+    }
+    public SupportTicket(
+        string ticketId,
+        string customerName,
+        string contactNumber,
+        string email,
+        string subject,
+        string description,
+        string category,
+        string priority,
+        string status,
+        string assignedTo,
+        DateTime createdDate,
+        DateTime lastUpdated)
+    {
+        TicketId = ticketId;
+        CustomerName = customerName;
+        ContactNumber = contactNumber;
+        Email = email;
+        Subject = subject;
+        Description = description;
+        Category = category;
+        Priority = priority;
+        Status = status;
+        AssignedTo = assignedTo;
+        CreatedDate = createdDate;
+        LastUpdated = lastUpdated;
+    }
+    public string? TicketId { get; set; }
+    public string? CustomerName { get; set; }
+    public string? ContactNumber { get; set; }
+    public string? Email { get; set; }
+    public string? Subject { get; set; }
+    public string? Description { get; set; }
+    public string? Category { get; set; }
+    public string? Priority { get; set; }
+    public string? Status { get; set; }
+    public string? AssignedTo { get; set; }
+    public DateTime CreatedDate { get; set; }
+    public DateTime LastUpdated { get; set; }
+}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "https://blazorplayground.syncfusion.com/embed/LjLHCXtCfSlVILQA?appbar=false&editor=false&result=true&errorlist=false&theme=fluent2" %}
+
+### Keyboard shortcuts for Find and Highlight
+
+The Find and Highlight toolbar supports the following keyboard interactions when the find input is focused:
+ 
+| Key | Action |
+|---|---|
+| `Enter` | Moves to the next match. |
+| `Shift+Enter` | Moves to the previous match. |
+| `Escape` | Closes the find toolbar and clears all highlights. |
+ 
+These shortcuts mirror standard find behavior in browsers and desktop applications, reducing the learning curve for end users.
+
+### Limitations
+
+-  Cells rendered through a [column Template](./column-template.md), [edit template](./template-editing.md), or [command column](./command-column-editing.md) are **not** scanned, highlighted, or counted.
+-  Text currently being typed into an Add/Edit form editor is **not** searched or highlighted. The feature operates on committed, display-time cell values only.
+
 ## Displaying the HTML content
 
 Displaying HTML content in the Blazor Grid is useful when presenting formatted elements such as images, hyperlinks, or tables within a tabular layout. The Blazor DataGrid supports rendering HTML tags in both header and content cells.
