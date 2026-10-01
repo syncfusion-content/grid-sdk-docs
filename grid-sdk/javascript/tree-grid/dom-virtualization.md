@@ -92,7 +92,7 @@ Buffer configuration defines how many extra rows the Tree Grid renders beyond th
 {% include code-snippet/grid-sdk/javascript/treegrid/dom-virtual-cs2/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/treegrid/dom-virtual-cs2/index.html/ %}
+{% include code-snippet/grid-sdk/javascript/treegrid/dom-virtual-cs2/index.html %}
 {% endhighlight %}
 {% endtabs %}
  
