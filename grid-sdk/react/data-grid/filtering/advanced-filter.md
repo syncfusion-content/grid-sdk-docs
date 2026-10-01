@@ -33,7 +33,7 @@ To use advanced filtering, inject the [AdvancedFilter](../../api/grid/advancedfi
 {% endhighlight %}
 {% endtabs %}
 
- {% previewsample "page.domainurl/code-snippet/grid-sdk/react/grid/advanced-filter-cs1" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/grid/advanced-filter-cs1" %}
 
 ## Initial filter
 
@@ -56,7 +56,7 @@ The following example demonstrates displaying only tickets with a priority of **
 {% endhighlight %}
 {% endtabs %}
 
- {% previewsample "page.domainurl/code-snippet/grid-sdk/react/grid/advanced-filter-cs2" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/grid/advanced-filter-cs2" %}
 
 > By default, hidden columns are not included in the advanced filter builder. Setting `advancedFilterSettings.includeHiddenColumns` to `true` displays hidden columns in the Query Builder, enabling filter conditions to be created using their values.
 
@@ -95,4 +95,4 @@ The Advanced Filter feature provides the following methods for controlling the d
 {% endhighlight %}
 {% endtabs %}
 
- {% previewsample "page.domainurl/code-snippet/grid-sdk/react/grid/advanced-filter-cs3" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/grid/advanced-filter-cs3" %}
