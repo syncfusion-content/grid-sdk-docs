@@ -81,7 +81,7 @@ new Vue({
             }
         },
         queryCellInfo(args) {
-            if ((args.column && args.column.field) !== 'status' ||
+            if ((args.column && args.column.field !== 'status') ||
                 !args.cell || !args.data) {
                 return;
             }
