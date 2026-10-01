@@ -2,7 +2,7 @@
 layout: post
 title: Blazor Pivot Table Overview | Syncfusion
 description: Learn how to use Syncfusion Blazor Pivot Table for multi dimensional data analysis, OLAP cubes, aggregation, grouping, filtering, sorting, and reporting.
-platform: Blazor
+platform: grid-sdk
 control: Pivot Table
 documentation: ug
 ---
@@ -11,7 +11,7 @@ documentation: ug
 
 ## Introduction to Syncfusion Blazor Pivot Table
 
-The [Blazor Pivot Table](https://www.syncfusion.com/blazor-components/blazor-pivot-table) is a powerful and feature-rich UI component designed for summarizing, reorganizing, analyzing, and presenting complex multi-dimensional datasets in an interactive cross tabular format. Built for enterprise data intelligence, it transforms flat and relational records into dynamic pivot reports with full support for drill-down, drill-through, grouping, calculated fields, filtering, sorting, and conditional formatting.
+The [Blazor Pivot Table](https://www.syncfusion.com/blazor-components/blazor-pivot-table) is a powerful and feature-rich UI component designed for summarizing, reorganizing, analyzing, and presenting complex multi dimensional datasets in an interactive cross tabular format. Built for enterprise data intelligence, it transforms flat and relational records into dynamic pivot reports with full support for drill-down, drill-through, grouping, calculated fields, filtering, sorting, and conditional formatting.
 
 ## Common use cases
 
@@ -35,8 +35,8 @@ The [Blazor Pivot Table](https://www.syncfusion.com/blazor-components/blazor-piv
 - **[In-Memory Data](./data-binding#list-binding)** - Bind pivot tables directly to local C# collections, `List<T>`, `IEnumerable<T>`, and [ObservableCollection](./data-binding#observable-collection) for instant client-side data binding without external dependencies.
 - **[JSON & CSV Data](./data-binding#json)** - Ingest raw data in both standard [JSON object arrays](./data-binding#json) and lightweight [CSV text payloads](./data-binding#csv) for optimized bandwidth utilization.
 - **[Remote Data Sources](./data-binding#remote-data-binding)** - Connect to web services, REST APIs, and remote endpoints through Syncfusion DataManager with automatic request handling and response parsing.
-- **[OLAP Cubes](./olap)** - Connect natively to Microsoft SQL Server Analysis Services (SSAS) multi-dimensional cubes and tabular models using XMLA protocols, honoring cube dimensions, measures, KPIs, named sets, and hierarchies.
-- **[Server-Side Pivot Engine](./server-side-pivot-engine)** - Offload multi-dimensional calculations, aggregations, and layout operations to a dedicated ASP.NET Core server side engine to handle massive enterprise datasets containing tens of millions of records.
+- **[OLAP Cubes](./olap)** - Connect natively to Microsoft SQL Server Analysis Services (SSAS) multi dimensional cubes and tabular models using XMLA protocols, honoring cube dimensions, measures, KPIs, named sets, and hierarchies.
+- **[Server-Side Pivot Engine](./server-side-pivot-engine)** - Offload multi dimensional calculations, aggregations, and layout operations to a dedicated ASP.NET Core server side engine to handle massive enterprise datasets containing tens of millions of records.
 
 **Database Compatibility**
 
@@ -46,9 +46,9 @@ The [Blazor Pivot Table](https://www.syncfusion.com/blazor-components/blazor-piv
 |----------|-------------|----------|
 | **[Microsoft SQL Server](./connecting-to-data-source/microsoft-sql-server)** | Enterprise ADO.NET and EF Core connectivity | Enterprise applications, complex financial queries |
 | **[MySQL](./connecting-to-data-source/mysql)** | Cross platform relational connectivity | Web applications, open source stacks |
-| **[PostgreSQL](./connecting-to-data-source/postgreSQL)** | Advanced relational features and JSON querying | Large-scale analytical applications |
-| **[SQLite Server](./connecting-to-data-source/sqlite-server)** | Lightweight file-based embedded storage | Desktop apps, mobile apps, local storage |
-| **[Oracle](./connecting-to-data-source/oracledb)** | High throughput enterprise data warehousing | Mission-critical financial and ERP systems |
+| **[PostgreSQL](./connecting-to-data-source/postgreSQL)** | Advanced relational features and JSON querying | Large scale analytical applications |
+| **[SQLite Server](./connecting-to-data-source/sqlite-server)** | Lightweight file based embedded storage | Desktop apps, mobile apps, local storage |
+| **[Oracle](./connecting-to-data-source/oracledb)** | High throughput enterprise data warehousing | Mission critical financial and ERP systems |
 | **[Snowflake](./connecting-to-data-source/snowflakedb)** | Cloud data warehouse with elastic scalability | Massive cloud data analytics |
 
 **Modern databases & cloud platforms**
@@ -152,13 +152,13 @@ The [Blazor Pivot Table](https://www.syncfusion.com/blazor-components/blazor-piv
 
 ## Export & Reporting
 
-The [Blazor Pivot Table](https://www.syncfusion.com/blazor-components/blazor-pivot-table) provides comprehensive export capabilities, enabling users to extract, analyze, and share reports in industry-standard document formats:
+The [Blazor Pivot Table](https://www.syncfusion.com/blazor-components/blazor-pivot-table) provides comprehensive export capabilities, enabling users to extract, analyze, and share reports in industry standard document formats:
 
 | Format | Key Benefit | Best For |
 |--------|-------------|----------|
 | **[Excel Exporting](./excel-export)** | Export to XLSX with cell styling, conditional formatting, and custom headers/footers | Spreadsheet analysis, financial workflows, and offline distribution |
-| **[CSV Exporting](./excel-export#csv-export)** | Export raw cross-tabulated data to lightweight CSV format | Bulk data exchange and external pipeline ingestion |
-| **[PDF Exporting](./pdf-export)** | Generate formatted PDF documents with custom page orientation, table-and-chart layouts, and page numbers | Executive presentations, compliance reporting, and document archiving |
+| **[CSV Exporting](./excel-export#csv-export)** | Export raw cross tabulated data to lightweight CSV format | Bulk data exchange and external pipeline ingestion |
+| **[PDF Exporting](./pdf-export)** | Generate formatted PDF documents with custom page orientation, table and chart layouts, and page numbers | Executive presentations, compliance reporting, and document archiving |
 
 ## Artificial Intelligence (AI) Features
 
@@ -166,7 +166,7 @@ The [Blazor Pivot Table](https://www.syncfusion.com/blazor-components/blazor-piv
 
 | Feature | Purpose | Key Benefit |
 |---------|---------|-------------|
-| **[Smart Pivot Table](./smart-pivot)** | Natural language report generation, automatic data summarization, and dimension/measure prediction | Instant business intelligence insights through plain-English prompts |
+| **[Smart Pivot Table](./smart-pivot)** | Natural language report generation, automatic data summarization, and dimension/measure prediction | Instant business intelligence insights through plain English prompts |
 
 ## Accessibility & Keyboard Navigation
 
@@ -204,7 +204,7 @@ The [Blazor Pivot Table](https://www.syncfusion.com/blazor-components/blazor-piv
 - [Pivot Chart](./pivot-chart) - Interactive chart visualizer with 20+ types
 - [Field List](./field-list) & [Grouping Bar](./grouping-bar) - Interactive report layout builders
 - [Aggregation](./aggregation) & [Calculated Fields](./calculated-field) - Dynamic statistical metrics
-- [Excel Export](./excel-export) & [PDF Export](./pdf-export) - Professional multi-format document exporting
+- [Excel Export](./excel-export) & [PDF Export](./pdf-export) - Professional multi format document exporting
 - [Smart Pivot Table](./smart-pivot) - AI powered natural language reporting
 
 ## Support & Resources
