@@ -37,5 +37,4 @@ const customAggregateFn = function (data) {
 provide('grid', [Aggregate]);
 </script>
 <style>
-@import "../node_modules/@syncfusion/ej2-material3-theme/styles/grid/index.css";
-</style>
+@import "../node_modules/@syncfusion/ej2-material3-theme/styles/grid/index.css";</style>

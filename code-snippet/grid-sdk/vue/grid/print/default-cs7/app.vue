@@ -58,5 +58,5 @@ export default {
   .e-grid .e-altrow .e-rowcell{
       background: #e7d7f7 !important;
   }
-  @import "../node_modules/@syncfusion/ej2-material3-theme/styles/grid/index.css";
+@import "../node_modules/@syncfusion/ej2-material3-theme/styles/grid/index.css";
 </style>

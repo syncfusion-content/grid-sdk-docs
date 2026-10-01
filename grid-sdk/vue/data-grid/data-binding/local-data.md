@@ -934,7 +934,6 @@ provide('grid', [Page, Edit, Toolbar]);
 
 <style>
 @import "../node_modules/@syncfusion/ej2-material3-theme/styles/grid/index.css";
-    @import "../node_modules/@syncfusion/ej2-material3-theme/styles/grid/index.css";
 </style>
 {% endraw %}
 {% endhighlight %}
@@ -1700,7 +1699,6 @@ The following example demonstrates data binding and CRUD actions performed throu
 
 <style>
 @import "../node_modules/@syncfusion/ej2-material3-theme/styles/grid/index.css";
-    @import "../node_modules/@syncfusion/ej2-material3-theme/styles/grid/index.css";
 </style>
 {% endraw %}
 {% endhighlight %}
@@ -2226,7 +2224,6 @@ provide('grid', [Page]);
 
 <style>
 @import "../node_modules/@syncfusion/ej2-material3-theme/styles/grid/index.css";
-@import "../node_modules/@syncfusion/ej2-material3-theme/styles/grid/index.css";
 #message{
         color:red;
         text-align: center;
@@ -2359,7 +2356,6 @@ provide: {
 }
 </script>
 <style>
-@import "../node_modules/@syncfusion/ej2-material3-theme/styles/grid/index.css";
 @import "../node_modules/@syncfusion/ej2-material3-theme/styles/grid/index.css";
 #message{
         color:red;

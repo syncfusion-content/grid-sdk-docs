@@ -58,5 +58,5 @@ let names = ['hardire', 'abramjo01', 'aubucch01', 'Hook', 'Rumpelstiltskin', 'Be
   provide('grid',  [VirtualScroll, Toolbar, Edit]);
 </script>
 <style>
-  @import "../node_modules/@syncfusion/ej2-material3-theme/styles/grid/index.css";
+@import "../node_modules/@syncfusion/ej2-material3-theme/styles/grid/index.css";
 </style>

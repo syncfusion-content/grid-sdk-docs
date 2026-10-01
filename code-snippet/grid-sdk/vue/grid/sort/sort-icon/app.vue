@@ -39,5 +39,5 @@ components: {
 .e-grid .e-icon-descending::before {
   content: '\e7fe';
 }
-  @import "../node_modules/@syncfusion/ej2-material3-theme/styles/grid/index.css";
+@import "../node_modules/@syncfusion/ej2-material3-theme/styles/grid/index.css";
 </style>

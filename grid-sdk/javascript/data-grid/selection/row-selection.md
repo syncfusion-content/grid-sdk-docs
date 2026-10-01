@@ -573,7 +573,7 @@ To achieve passing selected records to the server using AJAX requests in the Syn
     <meta name="description" content="Javascript Grid Control">
     <meta name="author" content="Syncfusion">
     <link href="css/index.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/material3.css" rel="stylesheet" />    
+    <link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/material3.css" rel="stylesheet" />
     <script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/dist/ej2.min.js" type="text/javascript"></script>
     <script src="https://cdn.syncfusion.com/ej2/syncfusion-helper.js" type="text/javascript"></script>
 </head>
@@ -922,7 +922,7 @@ To achieve passing selected records to the server using Fetch requests in the Sy
     <meta name="description" content="Javascript Grid Control">
     <meta name="author" content="Syncfusion">
     <link href="css/index.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/material3.css" rel="stylesheet" />    
+    <link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/material3.css" rel="stylesheet" />
     <script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/dist/ej2.min.js" type="text/javascript"></script>
     <script src="https://cdn.syncfusion.com/ej2/syncfusion-helper.js" type="text/javascript"></script>
 </head>

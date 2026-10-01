@@ -62,7 +62,7 @@ const excelHeaderQueryCellInfo = (args) => {
    provide('grid',  [Toolbar, ExcelExport]);
 </script>
 <style>
-  @import "../node_modules/@syncfusion/ej2-material3-theme/styles/grid/index.css";
+@import "../node_modules/@syncfusion/ej2-material3-theme/styles/grid/index.css";
   
    .orientationcss .e-headercelldiv {
     transform: rotate(90deg);

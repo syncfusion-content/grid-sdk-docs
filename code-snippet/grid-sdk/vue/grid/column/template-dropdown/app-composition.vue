@@ -20,5 +20,5 @@ import { data } from './datasource.js';
 const dropData = ['Order Placed', 'Processing', 'Delivered'];
 </script>
 <style>
-  @import "../node_modules/@syncfusion/ej2-material3-theme/styles/grid/index.css";
+@import "../node_modules/@syncfusion/ej2-material3-theme/styles/grid/index.css";
 </style>

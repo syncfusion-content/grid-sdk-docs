@@ -2,6 +2,7 @@
 layout: post
 title: Vue Grid Microsoft SQL Server Integration | Syncfusion
 description: Learn how to connect Vue Data Grid to Microsoft SQL Server using ASP.NET Core Web API, execute SQL queries, and manage data efficiently.
+platform: grid-sdk
 control: Grid
 keywords: adaptors, customadaptor, urladaptor, mssql, remotedata 
 documentation: ug

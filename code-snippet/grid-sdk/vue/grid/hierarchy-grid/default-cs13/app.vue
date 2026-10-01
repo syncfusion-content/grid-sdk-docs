@@ -56,7 +56,7 @@ components: {
 }
 </script>
 <style>
-  @import "../node_modules/@syncfusion/ej2-material3-theme/styles/grid/index.css";
+@import "../node_modules/@syncfusion/ej2-material3-theme/styles/grid/index.css";
 
   .e-row[aria-selected="true"] .e-customizedexpandcell {
       background-color: #e0e0e0;

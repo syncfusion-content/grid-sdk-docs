@@ -43,7 +43,7 @@ export default {
 };
 </script>
 <style>
-  @import "../node_modules/@syncfusion/ej2-material3-theme/styles/grid/index.css";
+@import "../node_modules/@syncfusion/ej2-material3-theme/styles/grid/index.css";
   @import "https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css";
   .form-group.col-md-6 {
     width: 250px;

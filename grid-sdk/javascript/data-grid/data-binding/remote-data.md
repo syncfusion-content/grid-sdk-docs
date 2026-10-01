@@ -56,7 +56,16 @@ npm install @syncfusion/ej2-data --save
 **Step 3:**  Add the following styles to the ~/src/styles/styles.css file:
 
 ```bash
-@import "../../node_modules/@syncfusion/ej2-material3-theme/styles/grid-chart/index.css";
+@import '../../node_modules/@syncfusion/ej2-base/styles/bootstrap5.css';  
+@import '../../node_modules/@syncfusion/ej2-buttons/styles/bootstrap5.css';  
+@import '../../node_modules/@syncfusion/ej2-calendars/styles/bootstrap5.css';  
+@import '../../node_modules/@syncfusion/ej2-dropdowns/styles/bootstrap5.css';  
+@import '../../node_modules/@syncfusion/ej2-inputs/styles/bootstrap5.css';  
+@import '../../node_modules/@syncfusion/ej2-navigations/styles/bootstrap5.css';
+@import '../../node_modules/@syncfusion/ej2-popups/styles/bootstrap5.css';
+@import '../../node_modules/@syncfusion/ej2-splitbuttons/styles/bootstrap5.css';
+@import '../../node_modules/@syncfusion/ej2-notifications/styles/bootstrap5.css';
+@import '../../node_modules/@syncfusion/ej2-grids/styles/bootstrap5.css';
 ```
 
 **Step 4:** Install the necessary packages for setting up an Express server:
@@ -311,8 +320,8 @@ npm start
        <head>
           <title>Essential JS 2 Grid</title>
 
-          <link href="https://cdn.syncfusion.com/ej2/35.1.37/material3.css" rel="stylesheet" />
-          <script src="https://cdn.syncfusion.com/ej2/35.1.37/dist/ej2.min.js" type="text/javascript"></script>
+          <link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/material3.css" rel="stylesheet" />
+          <script src="https://cdn.syncfusion.com/ej2/28.1.33/dist/ej2.min.js" type="text/javascript"></script>
         </head>
        <body>
          <br/><br/><br/><br/>

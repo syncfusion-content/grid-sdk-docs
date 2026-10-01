@@ -34,6 +34,5 @@ const app = createApp();
   provide('grid', [Group, Aggregate])
 </script>
 <style>
-   @import "../node_modules/@syncfusion/ej2-material3-theme/styles/grid/index.css";
-
+ @import "../node_modules/@syncfusion/ej2-material3-theme/styles/grid/index.css";
 </style>

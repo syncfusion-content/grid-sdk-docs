@@ -17,5 +17,5 @@ import { GridComponent as EjsGrid, ColumnDirective as EColumn, ColumnsDirective 
 import { data } from "./datasource.js";
 </script>
 <style>
-  @import "../node_modules/@syncfusion/ej2-material3-theme/styles/grid/index.css";
+@import "../node_modules/@syncfusion/ej2-material3-theme/styles/grid/index.css";
 </style>

@@ -57,6 +57,6 @@ provide("richtexteditor", [HtmlEditor, RichTextEditorToolbar, QuickToolbar]);
 
 <style>
 @import "../node_modules/@syncfusion/ej2-material3-theme/styles/grid/index.css";
-@import "../node_modules/@syncfusion/ej2-tailwind3-theme/styles/file-manager/index.css";
-@import "node_modules/@syncfusion/ej2-material3-theme/styles/rich-text-editor/index.css";;
+@import "node_modules/@syncfusion/ej2-material3-theme/styles/rich-text-editor/index.css";
+@import "../node_modules/@syncfusion/ej2-material3-theme/styles/file-manager/index.css";
 </style>
