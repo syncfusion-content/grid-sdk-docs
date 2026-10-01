@@ -82,6 +82,8 @@ public class OrderDetails
 {% endhighlight %}
 {% endtabs %}
 
+{% previewsample "https://blazorplayground.syncfusion.com/embed/VtBHCtjCzHpxoHek?appbar=false&editor=false&result=true&errorlist=false&theme=fluent2" %}
+
 > When editing is enabled, the [IsPrimaryKey](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridColumn.html#Syncfusion_Blazor_Grids_GridColumn_IsPrimaryKey) property must be set to `true` on the unique column so that updates are mapped to the correct record.
 
 ## Edit on key press in cell editing
@@ -153,6 +155,8 @@ public class OrderDetails
 }
 {% endhighlight %}
 {% endtabs %}
+
+{% previewsample "https://blazorplayground.syncfusion.com/embed/rtLxiXDMzxRJUoQW?appbar=false&editor=false&result=true&errorlist=false&theme=fluent2" %}
 
 ## Customize focus movement after save (EnterKeyDirection)
 
@@ -257,6 +261,8 @@ private class DropdownOption<T>
 }
 {% endhighlight %}
 {% endtabs %}
+
+{% previewsample "https://blazorplayground.syncfusion.com/embed/hZhRijjifxwTVfXq?appbar=false&editor=false&result=true&errorlist=false&theme=fluent2" %}
 
 > The `EnterKeyDirection` and `AllowEditOnKeyPress` properties apply only when `Mode` is set to `EditMode.Cell`.
 
