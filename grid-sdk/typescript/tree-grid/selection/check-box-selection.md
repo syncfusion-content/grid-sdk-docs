@@ -117,3 +117,43 @@ In the following sample, selection is disabled for rows where the "Progress" col
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/treegrid/selection-cs10" %}
 {% endif %}
+
+## Hierarchy checkbox selection
+
+The hierarchy checkbox enables cascading selection of parent and child rows in Tree Grid. When a parent row checkbox is selected, all its child records are automatically selected, and the parent state updates based on children selection. To enable hierarchy checkbox selection, set the `showCheckbox` property to `true` in a column and configure the `hierarchyCheckboxMode` property. By default, hierarchy checkbox mode is set to `self`.
+
+The available modes are displayed in the following table.
+
+| Item | Description |
+|-----|-----|
+| `self` | Only the targeted row is selected; children and parent are not affected. |
+| `hierarchy` | Selection cascades to all descendants and adjusts the parent state accordingly. |
+| `filteredHierarchy` | Behaves like hierarchy, but applies the cascade only to records matching the current filter or search criteria. |
+
+
+{% if page.publishingplatform == "typescript" %}
+
+ {% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/grid-sdk/typescript/treegrid/columns-cs19/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/grid-sdk/typescript/treegrid/columns-cs19/ts/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/treegrid/columns-cs19" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/grid-sdk/typescript/treegrid/columns-cs19/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/grid-sdk/typescript/treegrid/columns-cs19/js/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/treegrid/columns-cs19" %}
+{% endif %}

@@ -63,6 +63,5 @@ const grid = ref(null);
     margin-right: 4px;
     margin-bottom: 3px;
 }
-  @import "../node_modules/@syncfusion/ej2-material3-theme/styles/grid/index.css";
-
+@import "../node_modules/@syncfusion/ej2-material3-theme/styles/grid/index.css";
 </style>

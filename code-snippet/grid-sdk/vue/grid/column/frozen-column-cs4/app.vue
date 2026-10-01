@@ -40,7 +40,7 @@ components: {
 }
 </script>
 <style>
-  @import "../node_modules/@syncfusion/ej2-material3-theme/styles/grid/index.css";
+@import "../node_modules/@syncfusion/ej2-material3-theme/styles/grid/index.css";
 
   .e-grid .e-fixedfreeze.e-freezeleftborder{
     border-left-color: rgb(9, 209, 9) !important; 

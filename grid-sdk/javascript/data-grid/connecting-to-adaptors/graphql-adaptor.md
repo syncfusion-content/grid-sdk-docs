@@ -257,7 +257,16 @@ npm install
 
 ```css
 
-@import "../node_modules/@syncfusion/ej2-material3-theme/styles/grid/index.css"
+@import '../node_modules/@syncfusion/ej2-base/styles/bootstrap5.css';  
+@import '../node_modules/@syncfusion/ej2-buttons/styles/bootstrap5.css';  
+@import '../node_modules/@syncfusion/ej2-calendars/styles/bootstrap5.css';  
+@import '../node_modules/@syncfusion/ej2-dropdowns/styles/bootstrap5.css';  
+@import '../node_modules/@syncfusion/ej2-inputs/styles/bootstrap5.css';  
+@import '../node_modules/@syncfusion/ej2-navigations/styles/bootstrap5.css';
+@import '../node_modules/@syncfusion/ej2-popups/styles/bootstrap5.css';
+@import '../node_modules/@syncfusion/ej2-splitbuttons/styles/bootstrap5.css';
+@import '../node_modules/@syncfusion/ej2-notifications/styles/bootstrap5.css';
+@import '../node_modules/@syncfusion/ej2-grids/styles/bootstrap5.css';
 
 ```
 
@@ -313,7 +322,7 @@ Now, add an HTML div element with its ID attribute set to Grid in your `index.ht
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Typescript Grid Control" />
     <meta name="author" content="Syncfusion" />
-    <link href="https://cdn.syncfusion.com/ej2/35.1.37/material3.css" rel="stylesheet">
+    <link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/material3.css" rel="stylesheet" />
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
 <script src="https://cdn.syncfusion.com/ej2/syncfusion-helper.js" type ="text/javascript"></script>
@@ -363,9 +372,9 @@ To integrate GraphQL with the Syncfusion<sup style="font-size:70%">&reg;</sup> G
     <meta name="description" content="Javascript Grid Control">
     <meta name="author" content="Syncfusion">
     <link href="index.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/35.1.37/material3.css" rel="stylesheet" />
+    <link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/material3.css" rel="stylesheet" />
 
-    <script src="https://cdn.syncfusion.com/ej2/35.1.37/dist/ej2.min.js" type="text/javascript"></script>
+    <script src="https://cdn.syncfusion.com/ej2/25.2.3/dist/ej2.min.js" type="text/javascript"></script>
     <script src="https://cdn.syncfusion.com/ej2/syncfusion-helper.js" type="text/javascript"></script>
 </head>
 

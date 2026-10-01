@@ -41,7 +41,7 @@ components: {
 }
 </script>
 <style>
-  @import "../node_modules/@syncfusion/ej2-material3-theme/styles/grid/index.css";
+@import "../node_modules/@syncfusion/ej2-material3-theme/styles/grid/index.css";
   .e-grid .e-icon-grightarrow::before,
        .e-grid-menu .e-icon-grightarrow::before {
             content: '\e7f9';

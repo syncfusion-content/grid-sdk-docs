@@ -284,6 +284,7 @@ npm install @syncfusion/ej2-data --save
     <meta name="description" content="Typescript Grid Control" />
     <meta name="author" content="Syncfusion" />
     <link href="https://cdn.syncfusion.com/ej2/35.1.37/material3.css" rel="stylesheet">
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
 
     <script src="https://cdn.syncfusion.com/ej2/syncfusion-helper.js" type="text/javascript"></script>
@@ -538,6 +539,7 @@ Create an `index.html` file under the `wwwroot` folder and add the necessary HTM
     <meta name="author" content="Syncfusion">
     <link href="css/index.css" rel="stylesheet">
     <link href="https://cdn.syncfusion.com/ej2/35.1.37/material3.css" rel="stylesheet">
+
     <script src="https://cdn.syncfusion.com/ej2/35.1.37/dist/ej2.min.js" type="text/javascript"></script>
     <script src="https://cdn.syncfusion.com/ej2/syncfusion-helper.js" type="text/javascript"></script>
 </head>

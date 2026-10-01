@@ -313,7 +313,7 @@ npm start
 
           <link href="https://cdn.syncfusion.com/ej2/35.1.37/material3.css" rel="stylesheet">
           <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
-          <script src="https://cdn.syncfusion.com/ej2/28.1.33/dist/ej2.min.js" type="text/javascript"></script>
+          <script src="https://cdn.syncfusion.com/ej2/35.1.37/dist/ej2.min.js" type="text/javascript"></script>
         </head>
        <body>
          <br/><br/><br/><br/>

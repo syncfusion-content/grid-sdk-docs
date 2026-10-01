@@ -34,5 +34,5 @@ const groupOptions = { showDropArea: false, columns: ['CustomerID', 'ShipCity'] 
   provide('grid',  [Group]);
 </script>
 <style>
-  @import "../node_modules/@syncfusion/ej2-material3-theme/styles/grid/index.css";
+@import "../node_modules/@syncfusion/ej2-material3-theme/styles/grid/index.css";
 </style>

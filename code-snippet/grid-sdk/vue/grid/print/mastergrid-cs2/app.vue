@@ -59,7 +59,6 @@ export default {
 </script>
 <style>
 @import "../node_modules/@syncfusion/ej2-material3-theme/styles/grid/index.css";
-
 .e-statustext{
   padding: 8px 0px 10px 0px;
 }

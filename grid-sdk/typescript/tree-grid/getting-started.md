@@ -161,7 +161,7 @@ treeGridObj.appendTo('#TreeGrid');
 
 {% highlight html tabtitle="styles.css" %}
 
-@import "../../node_modules/@syncfusion/ej2-material3-theme/styles/treegrid/index.css";
+@import '../../node_modules/@syncfusion/ej2-material3-theme/styles/treegrid/index.css';
 
 {% endhighlight %}
 

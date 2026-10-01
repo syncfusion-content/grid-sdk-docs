@@ -32,5 +32,5 @@ const grid = ref(null);
     provide('grid',  [Group, PdfExport, Toolbar]);
 </script>
 <style>
-  @import "../node_modules/@syncfusion/ej2-material3-theme/styles/grid/index.css";
+@import "../node_modules/@syncfusion/ej2-material3-theme/styles/grid/index.css";
 </style>

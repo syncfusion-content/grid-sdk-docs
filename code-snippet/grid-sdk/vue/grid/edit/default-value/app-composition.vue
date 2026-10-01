@@ -27,5 +27,5 @@ const freightIDRules={required: true, min: 1, max:1000 };
 provide('grid', [Page,Toolbar,Edit]);
 </script>
 <style>
-  @import "../node_modules/@syncfusion/ej2-material3-theme/styles/grid/index.css";
+@import "../node_modules/@syncfusion/ej2-material3-theme/styles/grid/index.css";
 </style>

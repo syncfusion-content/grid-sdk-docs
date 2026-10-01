@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Vue Grid - Grouping | Syncfusion
+title: Vue Grid Grouping | Syncfusion
 description: Vue Grid grouping enables configurable settings, initial grouping, aggregates, drop-area control, reorderable columns, and expand/collapse.
 control: Grouping 
 platform: grid-sdk

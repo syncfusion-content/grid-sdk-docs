@@ -41,5 +41,5 @@ setCulture('ar-AE');
   provide('grid',  [Page, Group, Edit, Toolbar, Sort, Reorder, ColumnMenu, ColumnChooser]);
 </script>
 <style>
-  @import "../node_modules/@syncfusion/ej2-material3-theme/styles/grid/index.css";
+@import "../node_modules/@syncfusion/ej2-material3-theme/styles/grid/index.css";
 </style>

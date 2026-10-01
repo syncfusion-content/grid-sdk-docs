@@ -54,7 +54,7 @@ const app = createApp();
   provide('grid',  [Toolbar, PdfExport, ExcelExport]);
 </script>
 <style>
-  @import "../node_modules/@syncfusion/ej2-material3-theme/styles/grid/index.css";
+@import "../node_modules/@syncfusion/ej2-material3-theme/styles/grid/index.css";
 
 #pdfButton,#printButton {
   margin-left: 5px;
