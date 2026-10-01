@@ -1,0 +1,10 @@
+@Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)ViewBag.DataSource).EnableAutoFill(true).SelectionSettings(selection =>{ selection.Mode(Syncfusion.EJ2.Grids.SelectionMode.Cell).CellSelectionMode(Syncfusion.EJ2.Grids.CellSelectionMode.Box).Type(Syncfusion.EJ2.Grids.SelectionType.Multiple);}).Columns(col =>
+{
+    col.Field("Id").HeaderText("ID").IsPrimaryKey(true).Width("100").ValidationRules(new { required = true }).Add();
+    col.Field("Product").HeaderText("Product Name").Width("180").ValidationRules(new { required = true }).Add();
+    col.Field("Quantity").HeaderText("Quantity").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("Price").HeaderText("Price Per Unit").Width("140").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).EditType("numericedit").Format("C2").Add();
+    col.Field("GrossAmount").HeaderText("Gross Amount").Width("150").AllowFormula(true).Format("C2").Add();
+    col.Field("TaxAmount").HeaderText("Tax Amount").Width("130").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).AllowFormula(true).Format("C2").Add();
+    col.Field("TotalAmount").HeaderText("Total Amount").Width("150").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).AllowFormula(true).Format("C2").Add();
+}.EditSettings(edit => { edit.AllowEditing(true).Mode(Syncfusion.EJ2.Grids.EditMode.Cell);}).Render()
