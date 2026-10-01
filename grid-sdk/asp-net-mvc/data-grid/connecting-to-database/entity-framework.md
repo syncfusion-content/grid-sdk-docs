@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  ASP.NET MVC Grid Bind Data with Entity Framework Core | Syncfusion
+title: ASP.NET MVC Grid Bind Data with Entity Framework Core | Syncfusion
 description: Learn about consume data using Entity Framework from Microsoft SQL Server, bind it to Syncfusion ASP.NET MVC Grid, and performing CRUD operations.
 control: grid
 platform: grid-sdk
