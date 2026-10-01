@@ -18,6 +18,21 @@ Advanced filtering is enabled by setting the `allowAdvancedFiltering` property t
 
 To use advanced filtering, inject the [AdvancedFilter](../../api/grid/advancedfilter) module into the Grid along with the other required modules.
 
+{% if page.publishingplatform == "typescript" %}
+
+ {% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/grid-sdk/javascript/grid/advanced-filter-cs1/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/grid-sdk/javascript/grid/advanced-filter-cs1/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/advanced-filter-cs1" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
 {% include code-snippet/grid-sdk/javascript/grid/advanced-filter-cs1/index.js %}
@@ -28,12 +43,28 @@ To use advanced filtering, inject the [AdvancedFilter](../../api/grid/advancedfi
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/advanced-filter-cs1" %}
+{% endif %}
 
 ## Initial filter
 
 Initial filter conditions can be set and applied automatically when the Grid loads. The `advancedFilterSettings` property with `queryBuilderSettings` is used to define the initial rule.
 
 The following example demonstrates displaying only tickets with a priority of **High** and a status other than **Done**.
+
+{% if page.publishingplatform == "typescript" %}
+
+ {% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/grid-sdk/javascript/grid/advanced-filter-cs2/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/grid-sdk/javascript/grid/advanced-filter-cs2/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/advanced-filter-cs2" %}
+
+{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -45,6 +76,7 @@ The following example demonstrates displaying only tickets with a priority of **
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/advanced-filter-cs2" %}
+{% endif %}
 
 > By default, hidden columns are not included in the advanced filter builder. Setting `advancedFilterSettings.includeHiddenColumns` to `true` displays hidden columns in the Query Builder, enabling filter conditions to be created using their values.
 
@@ -68,6 +100,21 @@ The Advanced Filter feature provides the following methods for controlling the d
 5. The [getAdvancedFilter](../../api/grid#getadvancedfilter) method retrieves the currently configured filter rule.
 6. The [setAdvancedFilter](../../api/grid#setadvancedfilter) method sets the specified rule as the current rule configuration in the Advanced Filter Query Builder.
 
+{% if page.publishingplatform == "typescript" %}
+
+ {% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/grid-sdk/javascript/grid/advanced-filter-cs3/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/grid-sdk/javascript/grid/advanced-filter-cs3/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/advanced-filter-cs3" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
 {% include code-snippet/grid-sdk/javascript/grid/advanced-filter-cs3/index.js %}
@@ -78,3 +125,4 @@ The Advanced Filter feature provides the following methods for controlling the d
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/advanced-filter-cs3" %}
+{% endif %}
