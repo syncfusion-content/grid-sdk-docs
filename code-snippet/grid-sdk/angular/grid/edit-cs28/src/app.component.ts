@@ -14,7 +14,7 @@ import { EditService, EditSettingsModel, GridComponent, GridModule, ToolbarServi
         <button ejs-button id='delete' (click)='clickEvents($event)'>Delete</button>
         <button ejs-button id='updaterow' (click)='clickEvents($event)'>Update Row</button>
         <button ejs-button id='updatecell' (click)='clickEvents($event)'>Update cell</button>
-         <button ejs-button id='save' (click)='clickEvents($event)'>Save Bulk Changes</button>
+        <button ejs-button id='save' (click)='clickEvents($event)'>Save Bulk Changes</button>
         <div class="control-section"  style="padding-top:20px">
             <ejs-grid #grid id="Grid" [dataSource]='data' [editSettings]='editSettings' height='273'>
                 <e-columns>

@@ -86,7 +86,7 @@ export default {
 </script>
 <style>
 @import "../node_modules/@syncfusion/ej2-material3-theme/styles/grid/index.css";
-  #edit,#add,#delete,#updaterow,#updatecell{
+  #edit,#add,#delete,#updaterow,#updatecell,#save{
     margin-left: 10px
   }
 </style>
