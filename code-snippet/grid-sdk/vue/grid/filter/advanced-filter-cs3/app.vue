@@ -6,13 +6,11 @@
 				<button @click="applyAdvancedFilter">Apply rule</button>
 				<button @click="setAdvancedFilter">Set rule</button>
 				<button @click="getAdvancedFilter">Get rule</button>
-				<button @click="getPredicate">Get predicate</button>
-				<button @click="isAdvancedFilterApplied">Check filter</button>
 				<button @click="clearAdvancedFilter">Clear filter</button>
 			</div>
 			<ejs-grid ref="grid" id="Grid" :dataSource="data" :enableVirtualization="true"
 				:allowSorting="true" height="400" :allowAdvancedFiltering="true" :advancedFilterSettings="advancedFilterSettings"
-				:toolbar="toolbar" :load="load" :advancedFilterOpen="advancedFilterOpen" :rowHeight="45">
+				:toolbar="toolbar" :load="load" :rowHeight="45">
 				<e-columns>
 					<e-column field="TicketID" headerText="Ticket ID" textAlign="Right" width="120"
 						:isPrimaryKey="true"></e-column>
@@ -63,7 +61,6 @@ export default {
 	data: () => ({
 		data: ticketdata,
 		toolbar: [ 'AdvancedFilter' ],
-		closeButton: false,
 		pageSettings: { pageSize: 50 },
 		advancedFilterSettings: {
 			queryBuilderSettings: {
@@ -72,17 +69,6 @@ export default {
 		}
 	}),
 	methods: {
-		advancedFilterOpen(args) {
-			if (this.closeButton) {
-				return;
-			}
-			args.dialog.buttons = args.dialog.buttons.concat({
-				buttonModel: { content: 'Close dialog' },
-				click: () => this.$refs.grid.ej2Instances.closeAdvancedFilterDialog()
-			});
-			args.dialog.dataBind();
-			this.closeButton = true;
-		},
 		openAdvancedFilter() {
 			this.$refs.grid.ej2Instances.openAdvancedFilterDialog();
 		},
@@ -94,12 +80,6 @@ export default {
 		},
 		getAdvancedFilter() {
 			console.log(this.$refs.grid.ej2Instances.getAdvancedFilter());
-		},
-		getPredicate() {
-			console.log(this.$refs.grid.ej2Instances.getPredicateFromRule(initialAdvancedFilterRule));
-		},
-		isAdvancedFilterApplied() {
-			console.log(this.$refs.grid.ej2Instances.isAdvancedFilterApplied());
 		},
 		clearAdvancedFilter() {
 			this.$refs.grid.ej2Instances.clearAdvancedFilter();
@@ -115,3 +95,6 @@ export default {
 	}
 };
 </script>
+<style>
+ @import "../node_modules/@syncfusion/ej2-material3-theme/styles/grid/index.css";
+</style>
