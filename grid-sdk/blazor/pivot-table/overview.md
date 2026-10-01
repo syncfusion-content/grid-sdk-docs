@@ -125,7 +125,7 @@ Transform raw pivot numbers into intuitive graphical charts and customized sprea
 | **[Multiple Axes](./pivot-chart#multiple-axis)** | Plot metrics with different scales simultaneously on separate value axes | Side by side comparison of disparate metrics |
 | **[Classic Layout](./classic-layout)** | Display row headers in separate columns rather than a stepped tree layout | Excel-like tabular structure for clear cross referencing |
 | **[Row and Column](./row-and-column)** | Adjust header dimensions, configure auto-fit, and control header freezing | Tailored table structure and dimension sizing |
-| **[Show/Hide Totals](./show-hide-totals)** | Toggle visibility of subtotals and grand totals for rows and columns | Clean, decluttered executive presentations |
+| **[Show/Hide Totals](./show-hide-totals)** | Toggle visibility of subtotals and grand totals for rows and columns | Clean, organized executive presentations |
 
 ## Data Formatting & Cell Customization
 
