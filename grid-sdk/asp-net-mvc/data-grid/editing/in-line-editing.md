@@ -4,7 +4,6 @@ title: Inline Editing in Syncfusion ASP.NET MVC Grid Component
 description: Learn here all about Inline Editing in Syncfusion ASP.NET MVC Grid component of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Inline Editing
-publishingplatform: grid-sdk
 documentation: ug
 ---
 
@@ -77,6 +76,8 @@ Performing CRUD actions programmatically refers to the ability to create, read, 
 * If you need to update the particular cell in the row, you can use the `setCellValue` method. In this method, you need to pass the primary key value of the data source, field name, and new value for the particular cell. When using this method, any changes made to a cell will only be reflected visually in the UI of Grid alone, not persisted or saved in the underlying data source. This method is commonly employed for unbound columns, such as auto-calculated columns or formula columns, where the values are derived or computed based on other data within the Grid or external calculations. By using this method, you can update the visual representation of these unbound columns without modifying the actual data source.
 
 * To remove a selected row from the Grid, use the `deleteRecord` method. For both edit and delete operations, you must select a row first.
+
+* To perform bulk updates in the Grid, use the [saveBulkChanges]. This method enables multiple records to be updated programmatically in a single operation.
 
 > * In both normal and dialog editing modes, these methods can be used.
 
@@ -156,7 +157,7 @@ To delete multiple selected records in the grid, first you need to select multip
 
 You can delete multiple rows programmatically by using following method.
 
-1. `deleteRecord` -This method allows you to delete a record with the given options. If the **fieldname** (field name of the primary key column) and **data** parameters are not provided, the grid will delete the selected records.
+1. `deleteRecord` -This method allows you to delete a record with the given options. If the **field name** (field name of the primary key column) and **data** parameters are not provided, the grid will delete the selected records.
 
     ```ts
         var grid = document.getElementById("grid").ej2_instances[0];
@@ -206,7 +207,7 @@ Here's an example of how to enable adding new rows at the bottom of the grid:
 
 ![Adding a new row at the bottom of the grid](../images/editing/inline-poistion.png)
 
->* Add [NewRowPostion](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.GridEditSettings.html#Syncfusion_EJ2_Grids_GridEditSettings_NewRowPosition) is supported for **Normal** and **Batch** editing modes.
+>* Add [NewRowPosition](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.GridEditSettings.html#Syncfusion_EJ2_Grids_GridEditSettings_NewRowPosition) is supported for **Normal** and **Batch** editing modes.
 >* If you set [NewRowPosition](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.GridEditSettings.html#Syncfusion_EJ2_Grids_GridEditSettings_NewRowPosition) as **Bottom**, the grid will display a blank row form at the bottom by default, allowing you to enter data for the new record. However, when the data is saved or updated, it will be inserted at the top of the grid. 
 
 ## Show add new row always in grid

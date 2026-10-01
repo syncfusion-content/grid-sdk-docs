@@ -4,7 +4,6 @@ title: Row in Syncfusion ASP.NET Core Grid Control | Syncfusion
 description: Learn here all about Row in Syncfusion ASP.NET Core Grid component of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Row
-publishingplatform: grid-sdk
 documentation: ug
 ---
 
@@ -133,6 +132,21 @@ In the below example, we will demonstrate how to dynamically change the height o
 >*	The [rowHeight](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_RowHeight) property can only be used to set the height of the entire grid row. It cannot be used to set the height of individual cells within a row.
 >*  The `rowHeight` property applies the height to all rows in the grid, including the header and footer rows.
 >*	You can also set the height for a specific row using the `rowHeight` property of the corresponding row object in the [rowDataBound](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_RowDataBound) event.
+
+### Customize header and footer row heights 
+
+The height of the header and footer rows can be customized to provide additional space for header and footer elements when needed. Use the [headerRowHeight] property to set the height of the header row and the [footerRowHeight] property to set the height of the footer row.
+
+In the following example, the row height is configured to 100px using the `rowHeight` property, and the header and footer row heights are configured to 50px using the `headerRowHeight` and `footerRowHeight` properties.
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/grid-sdk/asp-net-core/grid/row/custom-header-footer-height-cs1/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Custom-header-footer-height-cs1.cs" %}
+{% include code-snippet/grid-sdk/asp-net-core/grid/row/custom-header-footer-height-cs1/header-footer-height.cs %}
+{% endhighlight %}
+{% endtabs %}
 
 ### Customize row height for particular row 
 

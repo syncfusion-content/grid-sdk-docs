@@ -93,6 +93,7 @@ Programmatic CRUD operations enable creating, reading, updating, and deleting da
 | [updateRow](https://ej2.syncfusion.com/angular/documentation/api/grid#updaterow) | Update row data in the data source | Provide the row `index` and the updated `data` as parameters. The data source updates accordingly. |
 | [setCellValue](https://ej2.syncfusion.com/angular/documentation/api/grid#setcellvalue) | Update a particular cell in a row | Provide the primary key value, field name, and new value. Changes appear visually in the UI only (not persisted). Useful for unbound columns, auto-calculated columns, and formula columns. |
 | [deleteRecord](https://ej2.syncfusion.com/angular/documentation/api/grid#deleterecord) | Remove a selected row from the grid | First select the row, then invoke this method. The selected row is immediately removed. Without row selection along with default `showConfirmDialog` enabled state, "No records selected for delete operation" dialog appears. |
+| [saveBulkChanges] | Update multiple records in the grid in a single operation | Pass the updated changes, the target original records to be modified, and an optional callback function that executes after the bulk update is completed |
 
 > In both `Normal` and `Dialog` editing modes, these methods can be used.
 
@@ -168,7 +169,7 @@ Multiple row deletion is supported via the in-built toolbar or through methods.
 
 Multiple rows can be deleted programmatically using the following methods.
 
-1. [deleteRecord](https://ej2.syncfusion.com/angular/documentation/api/grid#deleterecord) - This method deletes a record with the given options. If the `fieldname` (primary key field) and `data` parameters are not provided, the grid deletes the selected records.
+1. [deleteRecord](https://ej2.syncfusion.com/angular/documentation/api/grid#deleterecord) - This method deletes a record with the given options. If the `field name` (primary key field) and `data` parameters are not provided, the grid deletes the selected records.
 
     ```ts
         this.grid.deleteRecord();

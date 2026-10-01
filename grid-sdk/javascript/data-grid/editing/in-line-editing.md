@@ -126,6 +126,8 @@ Performing CRUD actions programmatically refers to the ability to create, read, 
 
 * To remove a selected row from the Grid, use the [deleteRecord](../../api/grid#deleterecord) method. For both edit and delete operations, you must select a row first.
 
+* To perform bulk updates in the Grid, use the [saveBulkChanges]. This method enables multiple records to be updated programmatically in a single operation.
+
 > In both normal and dialog editing modes, these methods can be used.
 
 {% if page.publishingplatform == "typescript" %}
@@ -268,7 +270,7 @@ To delete multiple selected records in the grid, first you need to select multip
 
 You can delete multiple rows programmatically by using following method.
 
-1. [deleteRecord](../../api/grid#deleterecord) -This method allows you to delete a record with the given options. If the **fieldname** (field name of the primary key column) and **data** parameters are not provided, the grid will delete the selected records.
+1. [deleteRecord](../../api/grid#deleterecord) -This method allows you to delete a record with the given options. If the **field name** (field name of the primary key column) and **data** parameters are not provided, the grid will delete the selected records.
 
     ```ts
         grid.deleteRecord();
@@ -348,7 +350,7 @@ Here's an example of how to enable adding new rows at the bottom of the grid:
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grid-cs45" %}
 {% endif %}
 
->* Add `newRowPostion` is supported for **Normal** and **Batch** editing modes.
+>* Add `newRowPosition` is supported for **Normal** and **Batch** editing modes.
 >* If you set `newRowPosition` as **Bottom**, the grid will display a blank row form at the bottom by default, allowing you to enter data for the new record. However, when the data is saved or updated, it will be inserted at the top of the grid. 
 
 ## Show add new row always in grid
