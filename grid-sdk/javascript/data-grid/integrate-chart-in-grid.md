@@ -4,7 +4,6 @@ title: Integrate Chart in JavaScript Grid | Syncfusion
 description: Learn here all about integrate Chart in Syncfusion JavaScript Grid of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Integrate Chart 
-publishingplatform: grid-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
@@ -107,17 +106,7 @@ Syncfusion JavaScript controls come with [built-in themes](../appearance/theme),
 To apply a theme, you can import the required CSS files from the node_modules directory. For example, to use the Bootstrap 5 theme, add the following imports to the **~/src/styles/styles.css** file:
 
 ```css
-@import '../../node_modules/@syncfusion/ej2-base/styles/bootstrap5.css';
-@import '../../node_modules/@syncfusion/ej2-buttons/styles/bootstrap5.css';
-@import '../../node_modules/@syncfusion/ej2-calendars/styles/bootstrap5.css';
-@import '../../node_modules/@syncfusion/ej2-dropdowns/styles/bootstrap5.css';
-@import '../../node_modules/@syncfusion/ej2-inputs/styles/bootstrap5.css';
-@import '../../node_modules/@syncfusion/ej2-navigations/styles/bootstrap5.css';
-@import '../../node_modules/@syncfusion/ej2-popups/styles/bootstrap5.css';
-@import '../../node_modules/@syncfusion/ej2-notifications/styles/bootstrap5.css';
-@import '../../node_modules/@syncfusion/ej2-splitbuttons/styles/bootstrap5.css';
-@import '../../node_modules/@syncfusion/ej2-grids/styles/bootstrap5.css';
-@import '../../node_modules/@syncfusion/ej2-grid-chart/styles/bootstrap5.css';
+@import "../../node_modules/@syncfusion/ej2-material3-theme/styles/grid-chart/index.css";
 
 ```
 
@@ -201,7 +190,7 @@ Use the [contextMenuClick](../api/grid#contextmenuclick) event to detect which C
 
   * `chartArgs`: Contains Grid instance, [Chart type](../../documentation/chart/chart-types), and selected records.
 
-  * `chartModel:` This specifies various Chart configurations related to the appearance and behavior of the Chart. The model allows you to configure axes, labels, legends, tooltips, and other Chart attributes. Refer to Syncfusion's [Chart Model](../api/chart/chartmodel/) for detailed configurations, options, and customization possibilities.
+  * `chartModel:` This specifies various Chart configurations related to the appearance and behavior of the Chart. The model allows you to configure axes, labels, legends, tooltips, and other Chart attributes. Refer to Syncfusion's [Chart Model](../api/chart/chartmodel) for detailed configurations, options, and customization possibilities.
 
   * `categorySeries:` This specifies the fields in your data used for [categories](../chart/category-axis) and [series](../chart/chart-series) in the Chart.
 
@@ -295,7 +284,7 @@ Use the [contextMenuClick](../api/grid#contextmenuclick) event to detect which C
 
   * `chartArgs`: Contains Grid instance, [Chart type](../../documentation/chart/chart-types), and selected records.
 
-  * `chartModel:` This specifies various Chart configurations related to the appearance and behavior of the Chart. The model allows you to configure axes, labels, legends, tooltips, and other Chart attributes. Refer to Syncfusion's [Chart Model](../api/chart/chartmodel/) for detailed configurations, options, and customization possibilities.
+  * `chartModel:` This specifies various Chart configurations related to the appearance and behavior of the Chart. The model allows you to configure axes, labels, legends, tooltips, and other Chart attributes. Refer to Syncfusion's [Chart Model](../api/chart/chartmodel) for detailed configurations, options, and customization possibilities.
 
   * `categorySeries:` This specifies the fields in your data used for [categories](../chart/category-axis) and [series](../chart/chart-series) in the Chart.
 
@@ -409,13 +398,13 @@ When enabled, the property panel appears alongside the Chart popup and offers th
 
   * **Chart Style:** 
 
-    * **Margin :** Adjust the [margins](../api/chart/margin/) around the Chart (top, bottom, left, right) for better layout spacing.
+    * **Margin :** Adjust the [margins](../api/chart/margin) around the Chart (top, bottom, left, right) for better layout spacing.
     * **Color**: Set distinct colors for different Chart elements to improve visual clarity.
 
   * **Title Style** 
 
     * **Legend** - Toggle the visibility of the legend and customize its font, size, color, and position.
-    * **Series** - Enable/disable tooltips and customize [Series](../api/chart/series/) color and data labels based on categories such as online, retail, or revenue.
+    * **Series** - Enable/disable tooltips and customize [Series](../api/chart/series) color and data labels based on categories such as online, retail, or revenue.
 
   * **Axes:** - Select axes as either category or value type, and customize:
 
@@ -425,7 +414,7 @@ When enabled, the property panel appears alongside the Chart popup and offers th
 
 **customize the Chart model:**   
 
-You can customize the [Chart](../../documentation/chart/getting-started) by defining a [chartModel](../api/chart/chartModel/) object in the `chart` property of the `model` object within the [contextMenuClick](../api/grid#contextmenuclick) event .This allows you to configure various Chart properties such as axes, margins, tooltips, titles, and more. Additionally, you can use the [events](../../documentation/api/chart#events) of the Chart within the `chartModel` configuration to apply further customizations when the Chart is rendered. 
+You can customize the [Chart](../../documentation/chart/getting-started) by defining a [chartModel](../api/chart/chartModel) object in the `chart` property of the `model` object within the [contextMenuClick](../api/grid#contextmenuclick) event .This allows you to configure various Chart properties such as axes, margins, tooltips, titles, and more. Additionally, you can use the [events](../../documentation/api/chart#events) of the Chart within the `chartModel` configuration to apply further customizations when the Chart is rendered. 
 
 To customize [Accumulation Charts](../../documentation/accumulation-chart/getting-started) (such as Pie), use the `accumulationChart` property of the `model` object. This property allows you to configure Chart options like titles, legends, data labels, and visual styles tailored for accumulation-type visualizations.  You can also use Accumulation Chart [events](../../documentation/api/accumulation-chart#events) to apply additional customizations when the Chart is rendered.
 
