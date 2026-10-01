@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Blazor Pivot Table Overview | Syncfusion
-description: Learn how to use Syncfusion Blazor Pivot Table for multi dimensional data analysis, OLAP cubes, aggregation, grouping, filtering, sorting, and reporting.
+title: Blazor Pivot Table Overview and Features | Syncfusion
+description: Learn how to use Blazor Pivot Table for multi dimensional data analysis, OLAP cubes, aggregation, grouping, filtering, sorting, and reporting.
 platform: grid-sdk
 control: Pivot Table
 documentation: ug
