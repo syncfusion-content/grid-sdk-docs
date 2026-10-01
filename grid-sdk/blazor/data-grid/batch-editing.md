@@ -90,7 +90,7 @@ In addition, Undo and Redo toolbar items can be added to the Grid toolbar to per
 {% highlight razor tabtitle="Index.razor" %}
 @using Syncfusion.Blazor.Grids
 
-<SfGrid DataSource="@OrderData" Toolbar="@(new List<string>() { "Add", "Edit", "Delete", "Update", "Cancel" })" Height="315">
+<SfGrid DataSource="@OrderData" Toolbar="@(new List<string>() { "Add", "Edit", "Delete", "Update", "Cancel", "Undo", "Redo" })" Height="315">
     <GridEditSettings AllowAdding="true" AllowEditing="true" AllowDeleting="true" EnableUndoRedo="true" UndoRedoLimit="25" Mode="EditMode.Batch"></GridEditSettings>
     <GridColumns>
         <GridColumn Field=@nameof(OrderDetails.OrderID) HeaderText="Order ID" IsPrimaryKey="true" ValidationRules="@(new ValidationRules{ Required=true})" TextAlign="TextAlign.Right" Width="120"></GridColumn>
@@ -148,6 +148,8 @@ public class OrderDetails
 }
 {% endhighlight %}
 {% endtabs %}
+
+{% previewsample "https://blazorplayground.syncfusion.com/embed/BNVniZDiJwNAIpVv?appbar=false&editor=false&result=true&errorlist=false&theme=fluent2" %}
 
 > Note: The maximum number of undo and redo actions stored in the stack can be controlled using the [UndoRedoLimit](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridEditSettings.html#Syncfusion_Blazor_Grids_GridEditSettings_UndoRedoLimit) property inside [GridEditSettings](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridEditSettings.html). This property limits the number of actions that can be reverted or reapplied during a batch editing session. The default value is 20.
 
