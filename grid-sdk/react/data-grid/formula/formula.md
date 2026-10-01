@@ -16,7 +16,7 @@ Formula cells in the Syncfusion React Data Grid enable spreadsheet-like calculat
 
 Formula support is enabled by setting the [allowFormula](https://ej2.syncfusion.com/react/documentation/api/grid/column#allowFormula) property at the column level. When `allowFormula` is enabled, the data source must include the formula definition for the corresponding column. The Data Grid evaluates the formula and automatically updates the calculated value when dependent data changes.
 
-To use formula functionality, inject the [Formula](https://ej2.syncfusion.com/react/documentation/api/grid/formula) module into the **Grid**.
+To use formula functionality, inject the `Formula` module into the **Grid**.
 
 **For example:**
 

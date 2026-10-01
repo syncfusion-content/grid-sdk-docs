@@ -1,7 +1,7 @@
 ---
 layout: post
 title: React Grid Formula Reference | Syncfusion
-description: Reference for supported operators, built-in functions, and formula errors in React Data Grid.
+description: Learn about supported operators, built-in functions, and formula errors available in the Syncfusion React Data Grid component.
 control: Formula Reference
 platform: grid-sdk
 documentation: ug

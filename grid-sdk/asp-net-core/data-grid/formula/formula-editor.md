@@ -1,10 +1,9 @@
 ---
 layout: post
-title: Grid Formula Editor in Syncfusion ASP.NET Core Grid Control | Syncfusion
+title: Formula Editor in Syncfusion ASP.NET Core Grid Control
 description: Learn here all about formula editor in Syncfusion ASP.NET Core Grid component of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Formula Editor
-publishingplatform: grid-sdk
 documentation: ug
 ---
 

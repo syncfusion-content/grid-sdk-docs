@@ -1,10 +1,9 @@
 ---
 layout: post
-title: Grid Formula Reference in Syncfusion ASP.NET Core Grid Control | Syncfusion
+title: Formula Reference in Syncfusion ASP.NET Core Grid Control
 description: Learn here all about formula reference in Syncfusion ASP.NET Core Grid component of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Formula Reference
-publishingplatform: grid-sdk
 documentation: ug
 ---
 

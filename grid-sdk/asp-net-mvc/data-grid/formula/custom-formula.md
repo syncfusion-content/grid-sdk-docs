@@ -4,7 +4,6 @@ title: Custom Formula Function in Syncfusion ASP.NET MVC Grid Component
 description: Learn here all about custom formula function in Syncfusion ASP.NET MVC Grid component of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Custom Formula Function
-publishingplatform: grid-sdk
 documentation: ug
 ---
 
@@ -14,7 +13,7 @@ The formula engine supports custom functions in addition to the built-in functio
 
 ## Custom function API
 
-Use the [formulaSettings.customFunctions](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.GridFormulaSettings.html#Syncfusion_EJ2_Grids_GridFormulaSettings_CustomFunctions)  property to define the custom formulas available in the Grid. Each custom function has a unique name, and the calculation logic is written inside the `func` callback.
+Use the [formulaSettings.customFunctions](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.GridFormulaSettings.html#Syncfusion_EJ2_Grids_GridFormulaSettings_CustomFunctions)  property to define the custom formulas available in the Grid. Each custom function has a unique name, and its calculation logic is defined using a function that returns the computed result.
 
 | Property | Type | Description |
 | --- | --- | --- |
