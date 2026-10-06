@@ -1,7 +1,7 @@
 ---
 layout: post
-title: OLAP in ##Platform_Name## Pivot Table | Syncfusion
-description:  Learn how the ##Platform_Name## Pivot Table connects to OLAP data sources and supports MDX queries with axis configuration.
+title: OLAP in JavaScript Pivot Table | Syncfusion
+description:  Learn how the JavaScript Pivot Table connects to OLAP data sources and supports MDX queries with axis configuration.
 platform: ej2-javascript
 control: OLAP
 publishingplatform: ##Platform_Name##
@@ -9,7 +9,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# OLAP in ##Platform_Name## Pivot Table
+# OLAP in JavaScript Pivot Table
 
 ## Getting Started
 
