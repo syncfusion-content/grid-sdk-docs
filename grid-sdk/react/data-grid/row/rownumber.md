@@ -1,7 +1,7 @@
 ---
 layout: post
 title: React Grid Row Number Column | Syncfusion
-description: Learn how to display row numbers in the React Data Grid using Syncfusion.
+description: Learn how to display row numbers in the React Data Grid using the built-in row number column feature in Syncfusion.
 platform: grid-sdk
 control: Row number column
 documentation: ug
