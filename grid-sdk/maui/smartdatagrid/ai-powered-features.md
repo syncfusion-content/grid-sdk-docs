@@ -11,7 +11,7 @@ appliesto: UI Component Suite, Grid SDK
 
 # AI-Powered Features in MAUI SmartDataGrid (SfSmartDataGrid)
 
-The [SfSmartDataGrid](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.SmartComponents.SfSmartDataGrid.html) provides AI-powered capabilities that enable grid operations through natural language prompts. Instead of manually configuring sort criteria, filter conditions, or grouping levels through UI controls, you can type natural language commands to perform these actions instantly. Actions such as sorting, grouping, filtering, highlighting, and clearing can be applied using simple text commands. Multi-column operations are supported in a single prompt for efficient interaction with the grid.
+The [SfSmartDataGrid](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.SmartDataGrid.SfSmartDataGrid.html) provides AI-powered capabilities that enable grid operations through natural language prompts. Instead of manually configuring sort criteria, filter conditions, or grouping levels through UI controls, you can type natural language commands to perform these actions instantly. Actions such as sorting, grouping, filtering, highlighting, and clearing can be applied using simple text commands. Multi-column operations are supported in a single prompt for efficient interaction with the grid.
 
 ## Sorting
 
