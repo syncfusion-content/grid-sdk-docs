@@ -77,7 +77,7 @@ Performing CRUD actions programmatically refers to the ability to create, read, 
 
 * To remove a selected row from the Grid, use the `deleteRecord` method. For both edit and delete operations, you must select a row first.
 
-* To perform bulk updates in the Grid, use the [saveBulkChanges]. This method enables multiple records to be updated programmatically in a single operation.
+* To perform bulk updates in the Grid, use the `saveBulkChanges` method. This method enables multiple records to be updated programmatically in a single operation.
 
 >* In both normal and dialog editing modes, these methods can be used.
 

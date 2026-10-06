@@ -135,7 +135,7 @@ In the below example, we will demonstrate how to dynamically change the height o
 
 ### Customize header and footer row heights 
 
-The height of the header and footer rows can be customized to provide additional space for header and footer elements when needed. Use the [headerRowHeight] property to set the height of the header row and the [footerRowHeight] property to set the height of the footer row.
+The height of the header and footer rows can be customized to provide additional space for header and footer elements when needed. Use the [headerRowHeight](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_HeaderRowHeight) property to set the height of the header row and the [footerRowHeight](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_FooterRowHeight) property to set the height of the footer row.
 
 In the following example, the row height is configured to 100px using the `rowHeight` property, and the header and footer row heights are configured to 50px using the `headerRowHeight` and `footerRowHeight` properties.
 
