@@ -17,9 +17,9 @@ This section explain steps to create a simple Essential<sup style="font-size:70%
 
 ### Dependencies
 
-Understanding the dependency structure helps you identify the required packages for implementing the Pivot Table component with OLAP data in your Javascript application. The Pivot Table component relies on a structured hierarchy of dependencies that provide essential functionality for data processing, user interface elements, and export capabilities.
+Understanding the dependency structure helps you identify the required packages for implementing the Pivot Table component with OLAP data in your JavaScript application. The Pivot Table component relies on a structured hierarchy of dependencies that provide essential functionality for data processing, user interface elements, and export capabilities.
 
-The following dependency tree shows the required packages for the Javascript Pivot Table component:
+The following dependency tree shows the required packages for the JavaScript Pivot Table component:
 
 ```javascript
 |-- @syncfusion/ej2-pivotview
@@ -136,54 +136,44 @@ Refer the pivot table's CDN links as below
 
 **Syntax:**
 
-> Script: `http://cdn.syncfusion.com/ej2/{PACKAGE_NAME}/dist/global/{PACKAGE_NAME}.min.js`
+> Script: `https://cdn.syncfusion.com/ej2/{PACKAGE_VERSION}/{PACKAGE_NAME}/dist/global/{PACKAGE_NAME}.min.js`
 >
-> Styles: `http://cdn.syncfusion.com/ej2/{PACKAGE_NAME}/styles/tailwind3.css`
+> Styles: `https://cdn.syncfusion.com/ej2/{PACKAGE_VERSION}/tailwind3.css`
 
 **Example:**
 
-> Script: [http://cdn.syncfusion.com/ej2/ej2-pivotview/dist/global/ej2-pivotview.min.js](http://cdn.syncfusion.com/ej2/ej2-pivotview/dist/global/ej2-pivotview.min.js)
+> Script: [https://cdn.syncfusion.com/ej2/34.2.2/ej2-pivotview/dist/global/ej2-pivotview.min.js](https://cdn.syncfusion.com/ej2/34.2.2/ej2-pivotview/dist/global/ej2-pivotview.min.js)
 >
-> Styles: [https://cdn.syncfusion.com/ej2/32.1.19/ej2-pivotview/styles/tailwind3.css](https://cdn.syncfusion.com/ej2/32.1.19/ej2-pivotview/styles/tailwind3.css)
+> Styles: [https://cdn.syncfusion.com/ej2/34.2.2/tailwind3.css](https://cdn.syncfusion.com/ej2/34.2.2/tailwind3.css)
 
 ```html
 <!DOCTYPE html>
   <html xmlns="http://www.w3.org/1999/xhtml">
        <head>
             <title>Essential JS 2</title>
-            <!-- Essential JS 2 pivot table's dependent tailwind3 theme -->
-            <link href="http://cdn.syncfusion.com/ej2/ej2-base/styles/tailwind3.css" rel="stylesheet" type="text/css"/>
-            <link href="http://cdn.syncfusion.com/ej2/ej2-buttons/styles/tailwind3.css" rel="stylesheet" type="text/css"/>
-            <link href="http://cdn.syncfusion.com/ej2/ej2-calendars/styles/tailwind3.css" rel="stylesheet" type="text/css"/>
-            <link href="http://cdn.syncfusion.com/ej2/ej2-dropdowns/styles/tailwind3.css" rel="stylesheet" type="text/css"/>
-            <link href="http://cdn.syncfusion.com/ej2/ej2-inputs/styles/tailwind3.css" rel="stylesheet" type="text/css"/>
-            <link href="http://cdn.syncfusion.com/ej2/ej2-lists/styles/tailwind3.css" rel="stylesheet" type="text/css"/>
-            <link href="http://cdn.syncfusion.com/ej2/ej2-popups/styles/tailwind3.css" rel="stylesheet" type="text/css"/>
-            <link href="http://cdn.syncfusion.com/ej2/ej2-navigations/styles/tailwind3.css" rel="stylesheet" type="text/css"/>
-            <link href="http://cdn.syncfusion.com/ej2/ej2-grids/styles/tailwind3.css" rel="stylesheet" type="text/css"/>
-            <!-- Essential JS 2 pivot table's tailwind3 theme -->
-            <link href="http://cdn.syncfusion.com/ej2/ej2-pivotview/styles/tailwind3.css" rel="stylesheet" type="text/css"/>
+            <!-- Essential JS 2 theme -->
+            <link href="https://cdn.syncfusion.com/ej2/34.2.2/tailwind3.css" rel="stylesheet" type="text/css"/>
 
             <!-- Essential JS 2 pivot table's dependent scripts -->
-            <script src="http://cdn.syncfusion.com/ej2/ej2-base/dist/global/ej2-base.min.js" type="text/javascript"></script>
-            <script src="http://cdn.syncfusion.com/ej2/ej2-buttons/dist/global/ej2-buttons.min.js" type="text/javascript"></script>
-            <script src="http://cdn.syncfusion.com/ej2/ej2-data/dist/global/ej2-data.min.js" type="text/javascript"></script>
-            <script src="http://cdn.syncfusion.com/ej2/ej2-file-utils/dist/global/ej2-file-utils.min.js" type="text/javascript"></script>
-            <script src="http://cdn.syncfusion.com/ej2/ej2-compression/dist/global/ej2-compression.min.js" type="text/javascript"></script>
-            <script src="http://cdn.syncfusion.com/ej2/ej2-excel-export/dist/global/ej2-excel-export.min.js" type="text/javascript"></script>
-            <script src="http://cdn.syncfusion.com/ej2/ej2-lists/dist/global/ej2-lists.min.js" type="text/javascript"></script>
-            <script src="http://cdn.syncfusion.com/ej2/ej2-pdf-export/dist/global/ej2-pdf-export.min.js" type="text/javascript"></script>
-            <script src="http://cdn.syncfusion.com/ej2/ej2-popups/dist/global/ej2-popups.min.js" type="text/javascript"></script>
-            <script src="http://cdn.syncfusion.com/ej2/ej2-svg-base/dist/global/ej2-svg-base.min.js" type="text/javascript"></script>
-            <script src="http://cdn.syncfusion.com/ej2/ej2-inputs/dist/global/ej2-inputs.min.js" type="text/javascript"></script>
-            <script src="http://cdn.syncfusion.com/ej2/ej2-calendars/dist/global/ej2-calendars.min.js" type="text/javascript"></script>
-            <script src="http://cdn.syncfusion.com/ej2/ej2-dropdowns/dist/global/ej2-dropdowns.min.js" type="text/javascript"></script>
-            <script src="http://cdn.syncfusion.com/ej2/ej2-navigations/dist/global/ej2-navigations.min.js" type="text/javascript"></script>
-            <script src="http://cdn.syncfusion.com/ej2/ej2-charts/dist/global/ej2-charts.min.js" type="text/javascript"></script>
-            <script src="http://cdn.syncfusion.com/ej2/ej2-grids/dist/global/ej2-grids.min.js" type="text/javascript"></script>
+            <script src="https://cdn.syncfusion.com/ej2/34.2.2/ej2-base/dist/global/ej2-base.min.js" type="text/javascript"></script>
+            <script src="https://cdn.syncfusion.com/ej2/34.2.2/ej2-buttons/dist/global/ej2-buttons.min.js" type="text/javascript"></script>
+            <script src="https://cdn.syncfusion.com/ej2/34.2.2/ej2-data/dist/global/ej2-data.min.js" type="text/javascript"></script>
+            <script src="https://cdn.syncfusion.com/ej2/34.2.2/ej2-file-utils/dist/global/ej2-file-utils.min.js" type="text/javascript"></script>
+            <script src="https://cdn.syncfusion.com/ej2/34.2.2/ej2-compression/dist/global/ej2-compression.min.js" type="text/javascript"></script>
+            <script src="https://cdn.syncfusion.com/ej2/34.2.2/ej2-excel-export/dist/global/ej2-excel-export.min.js" type="text/javascript"></script>
+            <script src="https://cdn.syncfusion.com/ej2/34.2.2/ej2-lists/dist/global/ej2-lists.min.js" type="text/javascript"></script>
+            <script src="https://cdn.syncfusion.com/ej2/34.2.2/ej2-pdf-export/dist/global/ej2-pdf-export.min.js" type="text/javascript"></script>
+            <script src="https://cdn.syncfusion.com/ej2/34.2.2/ej2-popups/dist/global/ej2-popups.min.js" type="text/javascript"></script>
+            <script src="https://cdn.syncfusion.com/ej2/34.2.2/ej2-svg-base/dist/global/ej2-svg-base.min.js" type="text/javascript"></script>
+            <script src="https://cdn.syncfusion.com/ej2/34.2.2/ej2-inputs/dist/global/ej2-inputs.min.js" type="text/javascript"></script>
+            <script src="https://cdn.syncfusion.com/ej2/34.2.2/ej2-calendars/dist/global/ej2-calendars.min.js" type="text/javascript"></script>
+            <script src="https://cdn.syncfusion.com/ej2/34.2.2/ej2-dropdowns/dist/global/ej2-dropdowns.min.js" type="text/javascript"></script>
+            <script src="https://cdn.syncfusion.com/ej2/34.2.2/ej2-navigations/dist/global/ej2-navigations.min.js" type="text/javascript"></script>
+            <script src="https://cdn.syncfusion.com/ej2/34.2.2/ej2-charts/dist/global/ej2-charts.min.js" type="text/javascript"></script>
+            <script src="https://cdn.syncfusion.com/ej2/34.2.2/ej2-grids/dist/global/ej2-grids.min.js" type="text/javascript"></script>
 
             <!-- Essential JS 2 pivot table's global script -->
-            <script src="http://cdn.syncfusion.com/ej2/ej2-pivotview/dist/global/ej2-pivotview.min.js" type="text/javascript"></script>
+            <script src="https://cdn.syncfusion.com/ej2/34.2.2/ej2-pivotview/dist/global/ej2-pivotview.min.js" type="text/javascript"></script>
        </head>
        <body>
        </body>
@@ -202,39 +192,29 @@ Next you can start adding pivot table control to the application. To get started
   <html xmlns="http://www.w3.org/1999/xhtml">
        <head>
             <title>Essential JS 2</title>
-            <!-- Essential JS 2 pivot table's dependent tailwind3 theme -->
-            <link href="http://cdn.syncfusion.com/ej2/ej2-base/styles/tailwind3.css" rel="stylesheet" type="text/css"/>
-            <link href="http://cdn.syncfusion.com/ej2/ej2-buttons/styles/tailwind3.css" rel="stylesheet" type="text/css"/>
-            <link href="http://cdn.syncfusion.com/ej2/ej2-calendars/styles/tailwind3.css" rel="stylesheet" type="text/css"/>
-            <link href="http://cdn.syncfusion.com/ej2/ej2-dropdowns/styles/tailwind3.css" rel="stylesheet" type="text/css"/>
-            <link href="http://cdn.syncfusion.com/ej2/ej2-inputs/styles/tailwind3.css" rel="stylesheet" type="text/css"/>
-            <link href="http://cdn.syncfusion.com/ej2/ej2-lists/styles/tailwind3.css" rel="stylesheet" type="text/css"/>
-            <link href="http://cdn.syncfusion.com/ej2/ej2-popups/styles/tailwind3.css" rel="stylesheet" type="text/css"/>
-            <link href="http://cdn.syncfusion.com/ej2/ej2-navigations/styles/tailwind3.css" rel="stylesheet" type="text/css"/>
-            <link href="http://cdn.syncfusion.com/ej2/ej2-grids/styles/tailwind3.css" rel="stylesheet" type="text/css"/>
-            <!-- Essential JS 2 pivot table's tailwind3 theme -->
-            <link href="http://cdn.syncfusion.com/ej2/ej2-pivotview/styles/tailwind3.css" rel="stylesheet" type="text/css"/>
+            <!-- Essential JS 2 theme -->
+            <link href="https://cdn.syncfusion.com/ej2/34.2.2/tailwind3.css" rel="stylesheet" type="text/css"/>
 
             <!-- Essential JS 2 pivot table's dependent scripts -->
-            <script src="http://cdn.syncfusion.com/ej2/ej2-base/dist/global/ej2-base.min.js" type="text/javascript"></script>
-            <script src="http://cdn.syncfusion.com/ej2/ej2-buttons/dist/global/ej2-buttons.min.js" type="text/javascript"></script>
-            <script src="http://cdn.syncfusion.com/ej2/ej2-data/dist/global/ej2-data.min.js" type="text/javascript"></script>
-            <script src="http://cdn.syncfusion.com/ej2/ej2-file-utils/dist/global/ej2-file-utils.min.js" type="text/javascript"></script>
-            <script src="http://cdn.syncfusion.com/ej2/ej2-compression/dist/global/ej2-compression.min.js" type="text/javascript"></script>
-            <script src="http://cdn.syncfusion.com/ej2/ej2-excel-export/dist/global/ej2-excel-export.min.js" type="text/javascript"></script>
-            <script src="http://cdn.syncfusion.com/ej2/ej2-lists/dist/global/ej2-lists.min.js" type="text/javascript"></script>
-            <script src="http://cdn.syncfusion.com/ej2/ej2-pdf-export/dist/global/ej2-pdf-export.min.js" type="text/javascript"></script>
-            <script src="http://cdn.syncfusion.com/ej2/ej2-popups/dist/global/ej2-popups.min.js" type="text/javascript"></script>
-            <script src="http://cdn.syncfusion.com/ej2/ej2-svg-base/dist/global/ej2-svg-base.min.js" type="text/javascript"></script>
-            <script src="http://cdn.syncfusion.com/ej2/ej2-inputs/dist/global/ej2-inputs.min.js" type="text/javascript"></script>
-            <script src="http://cdn.syncfusion.com/ej2/ej2-calendars/dist/global/ej2-calendars.min.js" type="text/javascript"></script>
-            <script src="http://cdn.syncfusion.com/ej2/ej2-dropdowns/dist/global/ej2-dropdowns.min.js" type="text/javascript"></script>
-            <script src="http://cdn.syncfusion.com/ej2/ej2-navigations/dist/global/ej2-navigations.min.js" type="text/javascript"></script>
-            <script src="http://cdn.syncfusion.com/ej2/ej2-charts/dist/global/ej2-charts.min.js" type="text/javascript"></script>
-            <script src="http://cdn.syncfusion.com/ej2/ej2-grids/dist/global/ej2-grids.min.js" type="text/javascript"></script>
+            <script src="https://cdn.syncfusion.com/ej2/34.2.2/ej2-base/dist/global/ej2-base.min.js" type="text/javascript"></script>
+            <script src="https://cdn.syncfusion.com/ej2/34.2.2/ej2-buttons/dist/global/ej2-buttons.min.js" type="text/javascript"></script>
+            <script src="https://cdn.syncfusion.com/ej2/34.2.2/ej2-data/dist/global/ej2-data.min.js" type="text/javascript"></script>
+            <script src="https://cdn.syncfusion.com/ej2/34.2.2/ej2-file-utils/dist/global/ej2-file-utils.min.js" type="text/javascript"></script>
+            <script src="https://cdn.syncfusion.com/ej2/34.2.2/ej2-compression/dist/global/ej2-compression.min.js" type="text/javascript"></script>
+            <script src="https://cdn.syncfusion.com/ej2/34.2.2/ej2-excel-export/dist/global/ej2-excel-export.min.js" type="text/javascript"></script>
+            <script src="https://cdn.syncfusion.com/ej2/34.2.2/ej2-lists/dist/global/ej2-lists.min.js" type="text/javascript"></script>
+            <script src="https://cdn.syncfusion.com/ej2/34.2.2/ej2-pdf-export/dist/global/ej2-pdf-export.min.js" type="text/javascript"></script>
+            <script src="https://cdn.syncfusion.com/ej2/34.2.2/ej2-popups/dist/global/ej2-popups.min.js" type="text/javascript"></script>
+            <script src="https://cdn.syncfusion.com/ej2/34.2.2/ej2-svg-base/dist/global/ej2-svg-base.min.js" type="text/javascript"></script>
+            <script src="https://cdn.syncfusion.com/ej2/34.2.2/ej2-inputs/dist/global/ej2-inputs.min.js" type="text/javascript"></script>
+            <script src="https://cdn.syncfusion.com/ej2/34.2.2/ej2-calendars/dist/global/ej2-calendars.min.js" type="text/javascript"></script>
+            <script src="https://cdn.syncfusion.com/ej2/34.2.2/ej2-dropdowns/dist/global/ej2-dropdowns.min.js" type="text/javascript"></script>
+            <script src="https://cdn.syncfusion.com/ej2/34.2.2/ej2-navigations/dist/global/ej2-navigations.min.js" type="text/javascript"></script>
+            <script src="https://cdn.syncfusion.com/ej2/34.2.2/ej2-charts/dist/global/ej2-charts.min.js" type="text/javascript"></script>
+            <script src="https://cdn.syncfusion.com/ej2/34.2.2/ej2-grids/dist/global/ej2-grids.min.js" type="text/javascript"></script>
 
             <!-- Essential JS 2 pivot table's global script -->
-            <script src="http://cdn.syncfusion.com/ej2/ej2-pivotview/dist/global/ej2-pivotview.min.js" type="text/javascript"></script>
+            <script src="https://cdn.syncfusion.com/ej2/34.2.2/ej2-pivotview/dist/global/ej2-pivotview.min.js" type="text/javascript"></script>
        </head>
        <body>
            <!-- Add the HTML <div> element for pivot table  -->
