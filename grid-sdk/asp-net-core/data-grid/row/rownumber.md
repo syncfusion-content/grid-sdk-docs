@@ -4,7 +4,6 @@ title: ASP.NET Core Grid Row Number Column | Syncfusion
 description: Learn how to display row numbers in the ASP.NET Core Data Grid using the built-in row number column feature in Syncfusion.
 platform: ej2-asp-core-mvc
 control: Row number column
-publishingplatform: ASP.NET Core
 documentation: ug
 ---
 

@@ -4,7 +4,6 @@ title: Vue Grid Row Number Column | Syncfusion
 description: Learn how to display row numbers in the Vue Data Grid using the built-in row number column feature in Syncfusion.
 platform: ej2-vue
 control: Row number column
-publishingplatform: Vue
 documentation: ug
 domainurl: ##DomainURL##
 ---

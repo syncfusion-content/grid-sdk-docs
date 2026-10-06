@@ -4,7 +4,6 @@ title: TypeScript Grid Row Number Column | Syncfusion
 description: Learn how to display row numbers in the TypeScript Data Grid using the built-in row number column feature in Syncfusion.
 platform: grid-sdk
 control: Row number column
-publishingplatform: grid-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---

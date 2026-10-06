@@ -4,7 +4,6 @@ title: Row in JavaScript Grid control | Syncfusion
 description: Learn here all about Row in Syncfusion JavaScript Grid control of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Row 
-publishingplatform: grid-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
