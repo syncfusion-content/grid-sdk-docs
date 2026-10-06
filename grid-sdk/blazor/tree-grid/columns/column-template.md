@@ -557,7 +557,7 @@ This can be achieved by initially defining an anchor tag inside the column templ
             <Template>
                 @{
                     var Employee = (context as EmployeeData);
-                    <div><a href="#" @onclick="@(() => Navigate(Employee))">View</a></div>
+                    <div><a href="#" @onclick="@(() => Navigate(Employee))" aria-label="Hyperlink Column">View</a></div>
                 }
             </Template>
         </TreeGridColumn>

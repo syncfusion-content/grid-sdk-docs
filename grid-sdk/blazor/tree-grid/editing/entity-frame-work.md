@@ -11,7 +11,7 @@ documentation: ug
 
 This section uses and follows the code explained in the [Entity Framework data binding](https://help.syncfusion.com/grid-sdk/blazor/tree-grid/data-binding#entity-framework) section hence it is recommended to refer Entity Framework data binding section before continue this section.
 
-### Handle CRUD in data access layer class
+## Handle CRUD in data access layer class
 
 Now add methods **AddTask**, **UpdateTask**, **DeleteTask** in the **"TasksDataAccessLayer.cs"** to handle the insert, update and remove operations respectively.**CRUD** record details are bound to the **Tasks** parameter.
 
@@ -101,7 +101,7 @@ namespace TreeGridWebApiEFSample.Shared.DataAccess
 }
 ```
 
-### Enable CRUD in Web API
+## Enable CRUD in Web API
 
 Now, create a new **Post**, **Put**, **Delete** method in the Web API controller which will perform the CRUD operations and returns the appropriate resultant data. The **'SfDataManager'** will make requests to this action based on route name.
 
@@ -237,7 +237,7 @@ namespace TreeGridWebApiEFSample.Controllers
 }
 ```
 
-### Configure the Tree Grid to perform CRUD operations
+## Configure the Tree Grid to perform CRUD operations
 
 ```cshtml
 @using Syncfusion.Blazor.Grids
