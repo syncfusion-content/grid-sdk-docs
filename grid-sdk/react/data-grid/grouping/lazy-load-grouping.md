@@ -63,7 +63,7 @@ public IActionResult UrlDatasource([FromBody] DataManagerRequest dm)
     }
     if (dm.Where != null && dm.Where.Count > 0) // Handling filtering operation.
     {
-        DataSource = operation.PerformFiltering(DataSource, dm.Where, dm.Where[0].Operator);
+        DataSource = operation.PerformFiltering(DataSource, dm.Where, dm.Where[0].Condition);
     }
     int count = DataSource.Cast<Customers>().Count();
     if (dm.IsLazyLoad == false && dm.Sorted != null && dm.Sorted.Count > 0) // Handling sorting opertaion for grouping.

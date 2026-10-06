@@ -79,7 +79,7 @@ namespace SignalR.Controllers
             }
             if (dm.Where != null && dm.Where.Count > 0)
             {
-                DataSource = operation.PerformFiltering(DataSource, dm.Where, dm.Where[0].Operator);
+                DataSource = operation.PerformFiltering(DataSource, dm.Where, dm.Where[0].Condition);
             }
             int count = DataSource.Cast<OrdersDetails>().Count();
             if (dm.Skip != 0)
