@@ -48,8 +48,8 @@ To use local scripts and styles for Syncfusion<sup style="font-size:70%">&reg;</
 >Styles: `**(installed location)**/Syncfusion/Essential Studio/{RELEASE_VERSION}/Essential JS 2/{PACKAGE_NAME}/styles/tailwind3.css`
 
 **Example:**
->Script: `C:/Program Files (x86)/Syncfusion/Essential Studio/25.1.35/Essential JS 2/ej2-pivotview/dist/global/ej2-pivotview.min.js`
->Styles: `C:/Program Files (x86)/Syncfusion/Essential Studio/25.1.35/Essential JS 2/ej2-pivotview/styles/tailwind3.css`
+>Script: `C:/Program Files (x86)/Syncfusion/Essential Studio/35.1.37/Essential JS 2/ej2-pivotview/dist/global/ej2-pivotview.min.js`
+>Styles: `C:/Program Files (x86)/Syncfusion/Essential Studio/35.1.37/Essential JS 2/ej2-pivotview/styles/tailwind3.css`
 
 **4. Referencing in HTML File:** Once the files are copied, reference the pivot table's scripts and styles into the **index.html** file.
 

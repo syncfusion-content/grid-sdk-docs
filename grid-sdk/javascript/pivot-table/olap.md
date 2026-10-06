@@ -69,16 +69,12 @@ After installing the Essential<sup style="font-size:70%">&reg;</sup> JS 2 produc
 Refer the below location to find pivot table's script and style file.
 
 **Syntax:**
-
-> Script: **(installed location)**/Syncfusion/Essential Studio/{RELEASE_VERSION}/Essential JS 2/{PACKAGE_NAME}/dist/global/{PACKAGE_NAME}.min.js
->
-> Styles: **(installed location)**/Syncfusion/Essential Studio/{RELEASE_VERSION}/Essential JS 2/{PACKAGE_NAME}/styles/tailwind3.css
+>Script: `**(installed location)**/Syncfusion/Essential Studio/{RELEASE_VERSION}/Essential JS 2/{PACKAGE_NAME}/dist/global/{PACKAGE_NAME}.min.js`
+>Styles: `**(installed location)**/Syncfusion/Essential Studio/{RELEASE_VERSION}/Essential JS 2/{PACKAGE_NAME}/styles/tailwind3.css`
 
 **Example:**
-
-> Script: C:/Program Files (x86)/Syncfusion/Essential Studio/15.4.30/Essential JS 2/ej2-pivotview/dist/global/ej2-pivotview.min.js
->
-> Styles: C:/Program Files (x86)/Syncfusion/Essential Studio/15.4.30/Essential JS 2/ej2-pivotview/styles/tailwind3.css
+>Script: `C:/Program Files (x86)/Syncfusion/Essential Studio/35.1.37/Essential JS 2/ej2-pivotview/dist/global/ej2-pivotview.min.js`
+>Styles: `C:/Program Files (x86)/Syncfusion/Essential Studio/35.1.37/Essential JS 2/ej2-pivotview/styles/tailwind3.css`
 
 After copying the files, then you can refer the pivot table and its [dependency](#dependencies) scripts and styles into the **index.html** file.
 
@@ -225,7 +221,7 @@ Next you can start adding pivot table control to the application. To get started
 
 ```
 
-Next we need to initialize pivot table component using **ej.pivotview.PivotView()** instance as follows.
+Next we need to initialize pivot table component using `ej.pivotview.PivotView()` instance as follows.
 
 ```javascript
 
@@ -527,11 +523,7 @@ To enable virtual scrolling, set the [`enableVirtualization`](https://ej2.syncfu
 
 ### Run the application
 
-The quickstart project is configured to compile and run the application in the browser. Use the following command to run the application.
-
-```
-npm start
-```
+Now, run the **index.html** in web browser, it will render the Essential<sup style="font-size:70%">&reg;</sup> JS 2 Pivot Table control.
 
 Output will be displayed as follows.
 
