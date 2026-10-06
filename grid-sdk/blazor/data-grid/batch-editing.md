@@ -1115,4 +1115,4 @@ Batch editing in the Blazor DataGrid enables simultaneous editing of multiple re
 
 ## See Also
 
-* [Editing in Blazor DataGrid](https://blazor.syncfusion.com/documentation/datagrid/editing)
+* [Editing in Blazor DataGrid](https://help.syncfusion.com/grid-sdk/blazor/data-grid/editing)

@@ -440,12 +440,12 @@ The Blazor DataGrid uses `virtualization` to improve performance during on-scree
 
 To avoid performance issues when printing large datasets, consider exporting the data to a supported format:
 
-- [Excel](https://blazor.syncfusion.com/documentation/datagrid/excel-exporting)
-- [CSV](https://blazor.syncfusion.com/documentation/datagrid/excel-exporting)
-- [PDF](https://blazor.syncfusion.com/documentation/datagrid/pdf-export)
+- [Excel](https://help.syncfusion.com/grid-sdk/blazor/data-grid/excel-exporting)
+- [CSV](https://help.syncfusion.com/grid-sdk/blazor/data-grid/excel-exporting)
+- [PDF](https://help.syncfusion.com/grid-sdk/blazor/data-grid/pdf-export)
  
 These formats can be printed using desktop applications, which offer better control over layout and performance.
 
 > The printed output reflects the current state of the Blazor DataGrid, including visible columns, sorting, and filtering at the time printing is initiated.
 
-N> Refer to the [Blazor DataGrid](https://www.syncfusion.com/blazor-components/blazor-datagrid) feature tour for a broad overview. Explore the [Blazor DataGrid example](https://blazor.syncfusion.com/demos/datagrid/overview?theme=bootstrap5) to understand data presentation and manipulation.
+N> Refer to the [Blazor DataGrid](https://www.syncfusion.com/blazor-components/blazor-datagrid) feature tour for a broad overview. Explore the [Blazor DataGrid example](https://blazor.syncfusion.com/demos/datagrid/overview?theme=fluent2) to understand data presentation and manipulation.

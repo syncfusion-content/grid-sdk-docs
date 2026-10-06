@@ -11,7 +11,7 @@ documentation: ug
 
 ## Default editors
 
-The [EditType](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridColumn.html) property of the [GridColumn](https://help.syncfusion.com/cr/aspnetcore-blazor/Syncfusion.Blazor.Grids.GridColumn.html) component is used for defining the editor component for any particular column. You can set the [EditType](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridColumn.html) based on the data type of the column.
+The [EditType](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridColumn.html#Syncfusion_Blazor_Grids_GridColumn_EditType) property of the [GridColumn](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridColumn.html) component is used for defining the editor component for any particular column. You can set the [EditType](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridColumn.html#Syncfusion_Blazor_Grids_GridColumn_EditType) based on the data type of the column.
 
 The available default edit types are,
 
@@ -23,19 +23,18 @@ The available default edit types are,
 
 * [BooleanEdit](https://blazor.syncfusion.com/documentation/check-box/getting-started) component for boolean data type.
 
-* [DatePickerEdit](https://blazor.syncfusion.com/documentation/datepicker/getting-started) component for date data type.
+* [DatePickerEdit](https://help.syncfusion.com/scheduler-sdk/blazor/date-picker/getting-started) component for date data type.
 
-* [DateTimePickerEdit](https://blazor.syncfusion.com/documentation/datetime-picker/getting-started) component for date time data type.
+* [DateTimePickerEdit](https://help.syncfusion.com/scheduler-sdk/blazor/datetime-picker/getting-started) component for date time data type.
 
-* [TimePickerEdit](https://blazor.syncfusion.com/documentation/timepicker/getting-started)
-component for TimeOnly data type.
+* [TimePickerEdit](https://help.syncfusion.com/scheduler-sdk/blazor/time-picker/getting-started) component for TimeOnly data type.
 
 ## Customizing the default editor controls
 
-You can customize the behavior of the editor component through the [EditorSettings](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridColumn.html) property of the [GridColumn](https://help.syncfusion.com/cr/aspnetcore-blazor/Syncfusion.Blazor.Grids.GridColumn.html) component.
+You can customize the behavior of the editor component through the [EditorSettings](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridColumn.html) property of the [GridColumn](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridColumn.html) component.
 
 N> We have limited the properties of editor components that can be customized using [EditorSettings](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridColumn.html) in Grid default editor components. Find the list of properties that can be customized the below topics.
-<br/> If you want to customize other properties, refer to our [EditTemplate](https://blazor.syncfusion.com/documentation/datagrid/editing#cell-edit-template) documentation to render the custom components in EditForm along with your customization.
+<br/> If you want to customize other properties, refer to our [EditTemplate](https://help.syncfusion.com/grid-sdk/blazor/data-grid/template-editing) documentation to render the custom components in EditForm along with your customization.
 
 ### DefaultEdit
 
@@ -434,7 +433,7 @@ The following sample code demonstrates the customization applied to TimePicker c
 
 N> Before adding edit template to the datagrid, it is recommended to go through the [template](./templates#templates) section topic to configure the template.
 
-The cell edit template is used to add a custom component for a particular column. You can use the **EditTemplate** of the [GridColumn](https://help.syncfusion.com/cr/aspnetcore-blazor/Syncfusion.Blazor.Grids.GridColumn.html) component to add the custom component. You can access the parameters passed to the templates using implicit parameter named **context**.
+The cell edit template is used to add a custom component for a particular column. You can use the **EditTemplate** of the [GridColumn](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridColumn.html) component to add the custom component. You can access the parameters passed to the templates using implicit parameter named **context**.
 
 N> Custom components inside the EditTemplate must be specified with two-way (**@bind-Value**) binding to reflect the changes in DataGrid.
 

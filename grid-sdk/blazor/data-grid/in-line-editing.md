@@ -1272,37 +1272,37 @@ The Blazor DataGrid supports a range of events during inline and dialog editing 
 
 | Event | Description |
 |-------|-------------|
-| [RowCreating](https://blazor.syncfusion.com/documentation/datagrid/events#rowcreating) | Triggered before a new row is added. Used for initializing default values or conditionally preventing the add operation. |
-| [RowCreated](https://blazor.syncfusion.com/documentation/datagrid/events#rowcreated) | Triggered after a new row is added. |
+| [RowCreating](https://help.syncfusion.com/grid-sdk/blazor/data-grid/events#rowcreating) | Triggered before a new row is added. Used for initializing default values or conditionally preventing the add operation. |
+| [RowCreated](https://help.syncfusion.com/grid-sdk/blazor/data-grid/events#rowcreated) | Triggered after a new row is added. |
 
 * **Editing a record**
 
 | Event | Description |
 |-------|-------------|
-| [OnRowEditStart](https://blazor.syncfusion.com/documentation/datagrid/events#onroweditstart) | Triggered before a row enters edit mode. Enables control over data cloning behavior and preparation for editing. |
-| [OnBeginEdit](https://blazor.syncfusion.com/documentation/datagrid/events#onbeginedit) | Triggered before a row enters edit mode in the UI (e.g., double-click or F2). Used for conditional editing logic. |
-| [RowEditing](https://blazor.syncfusion.com/documentation/datagrid/events#rowediting) | Triggered before the edit action is performed. Used for validation or dynamic configuration of the editing interface. |
-| [RowEdited](https://blazor.syncfusion.com/documentation/datagrid/events#rowedited) | Triggered after the edit action is completed. |
+| [OnRowEditStart](https://help.syncfusion.com/grid-sdk/blazor/data-grid/events#onroweditstart) | Triggered before a row enters edit mode. Enables control over data cloning behavior and preparation for editing. |
+| [OnBeginEdit](https://help.syncfusion.com/grid-sdk/blazor/data-grid/events#onbeginedit) | Triggered before a row enters edit mode in the UI (e.g., double-click or F2). Used for conditional editing logic. |
+| [RowEditing](https://help.syncfusion.com/grid-sdk/blazor/data-grid/events#rowediting) | Triggered before the edit action is performed. Used for validation or dynamic configuration of the editing interface. |
+| [RowEdited](https://help.syncfusion.com/grid-sdk/blazor/data-grid/events#rowedited) | Triggered after the edit action is completed. |
 
 * **Saving (Updating) a record**
 
 | Event | Description |
 |-------|-------------|
-| [RowUpdating](https://blazor.syncfusion.com/documentation/datagrid/events#rowupdating) | Triggered before edited or newly added data is saved. Used for validation or data modification before committing to the data source. |
-| [RowUpdated](https://blazor.syncfusion.com/documentation/datagrid/events#rowupdated) | Triggered after data is saved to the data source. |
+| [RowUpdating](https://help.syncfusion.com/grid-sdk/blazor/data-grid/events#rowupdating) | Triggered before edited or newly added data is saved. Used for validation or data modification before committing to the data source. |
+| [RowUpdated](https://help.syncfusion.com/grid-sdk/blazor/data-grid/events#rowupdated) | Triggered after data is saved to the data source. |
 
 * **Deleting a record**
 
 | Event | Description |
 |-------|-------------|
-| [RowDeleting](https://blazor.syncfusion.com/documentation/datagrid/events#rowdeleting) | Triggered before a row is deleted. Used to confirm deletion or cancel the operation based on custom logic. |
-| [RowDeleted](https://blazor.syncfusion.com/documentation/datagrid/events#rowdeleted) | Triggered after a row is deleted. |
+| [RowDeleting](https://help.syncfusion.com/grid-sdk/blazor/data-grid/events#rowdeleting) | Triggered before a row is deleted. Used to confirm deletion or cancel the operation based on custom logic. |
+| [RowDeleted](https://help.syncfusion.com/grid-sdk/blazor/data-grid/events#rowdeleted) | Triggered after a row is deleted. |
 
 * **Canceling an edit operation**
 
 | Event | Description |
 |-------|-------------|
-| [EditCanceling](https://blazor.syncfusion.com/documentation/datagrid/events#editcanceling) | Triggered before cancellation of an edit operation. Used for confirmation prompts or rollback logic. |
-| [EditCanceled](https://blazor.syncfusion.com/documentation/datagrid/events#editcanceled) | Triggered after cancellation of an edit operation. |
+| [EditCanceling](https://help.syncfusion.com/grid-sdk/blazor/data-grid/events#editcanceling) | Triggered before cancellation of an edit operation. Used for confirmation prompts or rollback logic. |
+| [EditCanceled](https://help.syncfusion.com/grid-sdk/blazor/data-grid/events#editcanceled) | Triggered after cancellation of an edit operation. |
 
 > All listed events are applicable in both **Inline** and **Dialog** editing modes.
