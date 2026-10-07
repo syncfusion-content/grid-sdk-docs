@@ -91,6 +91,6 @@ To enable the classic layout, set the `Layout` property in the [PivotViewGridSet
 
 ## See also
 
-* [Row and column](https://blazor.syncfusion.com/documentation/pivot-table/row-and-column)
-* [Show/Hide Totals](https://blazor.syncfusion.com/documentation/pivot-table/show-hide-totals)
-* [Grouping bar](https://blazor.syncfusion.com/documentation/pivot-table/grouping-bar)
+* [Row and column](https://help.syncfusion.com/grid-sdk/blazor/pivot-table/row-and-column)
+* [Show/Hide Totals](https://help.syncfusion.com/grid-sdk/blazor/pivot-table/show-hide-totals)
+* [Grouping bar](https://help.syncfusion.com/grid-sdk/blazor/pivot-table/grouping-bar)

@@ -750,7 +750,7 @@ Firebase Realtime Database is a JSON tree database suitable for real-time JSON s
 | Antiforgery validation fails | This sample does not apply `[IgnoreAntiforgeryToken]`. If you observe `400` antiforgery failures under your template defaults, add the attribute to `OrderController`. For cookie-authenticated APIs, configure the adaptor to send the expected request token instead. |
 | Large datasets are slow | Process `DataManagerRequest` operations on the server instead of returning the entire `Orders` node. |
 
-For current component behavior, see the [Pivot Table editing documentation](https://blazor.syncfusion.com/documentation/pivot-table/editing) and [Pivot Table data-binding documentation](https://blazor.syncfusion.com/documentation/pivot-table/data-binding).
+For current component behavior, see the [Pivot Table editing documentation](https://help.syncfusion.com/grid-sdk/blazor/pivot-table/editing) and [Pivot Table data-binding documentation](https://help.syncfusion.com/grid-sdk/blazor/pivot-table/data-binding).
 
 ## Complete Sample Repository
 
