@@ -26,4 +26,4 @@ The following example demonstrates to resize the grid's dimensions via an extern
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/grid-resize" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/grid-resize" %}

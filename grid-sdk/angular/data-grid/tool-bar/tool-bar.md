@@ -26,7 +26,7 @@ The following example demonstrates enabling toolbar items in the grid:
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/toolbar-cs2" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/toolbar-cs2" %}
 
 ## Enable or disable toolbar items
 
@@ -44,7 +44,7 @@ In the following example, the [EJ2 Toggle Switch Button component](https://ej2.s
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/toolbar-enable-cs1" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/toolbar-enable-cs1" %}
 
 ## Add toolbar at the bottom of the Grid
 
@@ -64,7 +64,7 @@ The following example shows adding toolbar items at the bottom using the grid's 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/toolbar-enable-cs2" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/toolbar-enable-cs2" %}
 
 ## Customize toolbar buttons using CSS
 
@@ -91,7 +91,7 @@ The following example demonstrates changing the background color of the `Add`, `
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/toolbar-cs3" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/toolbar-cs3" %}
 
 ## See Also
 

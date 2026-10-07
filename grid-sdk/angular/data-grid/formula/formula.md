@@ -121,7 +121,7 @@ The following example shows a formula-enabled column that calculates the product
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/grid-sdk/angular/grid/formula-cs3" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/formula-cs3" %}
 
 ## See also
 

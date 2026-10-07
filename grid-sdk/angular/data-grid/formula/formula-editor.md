@@ -29,7 +29,7 @@ Cells and ranges referenced by the formula are highlighted while editing. Select
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/grid-sdk/angular/grid/formula-cs3" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/formula-cs3" %}
 
 ## Preventing formula cell editor
 
@@ -44,7 +44,7 @@ Editing can be disabled for a formula-enabled column by setting `allowEditing` t
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/grid-sdk/angular/grid/formula-cs5" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/formula-cs5" %}
 
 ## See also
 

@@ -45,7 +45,7 @@ Column types can be explicitly defined using the `type` property. For example:
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/column-type-cs1" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/column-type-cs1" %}
 
 > * If [type](https://ej2.syncfusion.com/angular/documentation/api/grid/column#type) is not defined, the grid detects it from the first record in the [dataSource](https://ej2.syncfusion.com/angular/documentation/api/grid#datasource).
 > * In case the first record's value for a column is null or blank, define the [type](https://ej2.syncfusion.com/angular/documentation/api/grid/column#type) for accurate filtering and editing dialogs.
@@ -109,7 +109,7 @@ The Grid allocates column space using the [width](https://ej2.syncfusion.com/ang
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/column-width-cs1" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/column-width-cs1" %}
 
 ## Column formatting
 
@@ -125,7 +125,7 @@ Column formatting serves as a powerful feature in Angular Data Grid, enabling cu
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/grid-cs12" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/grid-cs12" %}
 
 > * The grid uses the [Internationalization](https://ej2.syncfusion.com/angular/documentation/common/globalization/internationalization) library to format values based on culture and format.
 > * By default, [number](https://ej2.syncfusion.com/angular/documentation/common/globalization/internationalization#number-formatting) and [date](https://ej2.syncfusion.com/angular/documentation/common/globalization/internationalization#date-formatting) formats use the **en-US** locale. Customize by specifying the [locale](https://ej2.syncfusion.com/angular/documentation/common/globalization/localization).
@@ -155,7 +155,7 @@ The following example code demonstrates the formatting of data for "Mark 1" and 
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/column-format-cs3" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/column-format-cs3" %}
 
 > For additional details on number formatting options supported by the Grid component, refer to the [number formatting](https://ej2.syncfusion.com/angular/documentation/common/globalization/internationalization#number-formatting) section in the Internationalization documentation.
 
@@ -184,7 +184,7 @@ Format | Formatted value
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/grid-cs13" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/grid-cs13" %}
 
 > See [Date formatting](https://ej2.syncfusion.com/angular/documentation/common/globalization/internationalization#date-formatting) for more details.
 
@@ -204,7 +204,7 @@ Example: Set `format: "yyyy-MMM-dd"` and `locale: "es-AR"` for Spanish (Argentin
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/localization-cs3" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/localization-cs3" %}
 
 ### Format template column values
 
@@ -253,7 +253,7 @@ export class AppComponent implements OnInit {
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/column-format-cs1" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/column-format-cs1" %}
 
 > Other Angular pipes, such as "currency", "decimal", "percent", etc., can be used to format different types of values in the column template based on the requirements.
 
@@ -302,7 +302,7 @@ In the below example, the "numberFormatOptions" object is used as the `format` p
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/column-format-cs2" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/column-format-cs2" %}
 
 > For more information, refer to the [custom date formatting](https://ej2.syncfusion.com/angular/documentation/common/globalization/internationalization#custom-formats) and [custom number formatting](https://ej2.syncfusion.com/angular/documentation/common/globalization/internationalization#custom-number-formatting-and-parsing) sections.
 
@@ -327,7 +327,7 @@ Example using the `textAlign` property:
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/grid-cs17" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/grid-cs17" %}
 
 > The `textAlign` property affects only cell content; to align the header, use [headerTextAlign](https://ej2.syncfusion.com/angular/documentation/api/grid/column#headertextalign).
 
@@ -347,7 +347,7 @@ To enable the rendering of boolean values as checkboxes, set the `displayAsCheck
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/grid-cs14" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/grid-cs14" %}
 
 > The `displayAsCheckBox` property applies only to boolean columns. Checked = true; unchecked = false.
 
@@ -367,7 +367,7 @@ Example implementation:
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/blank-row" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/blank-row" %}
 
 ## AutoFit columns
 
@@ -398,7 +398,7 @@ The Grid can automatically adjust column widths to fit the widest cell content, 
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/resize-cs1" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/resize-cs1" %}
 
 > Call `autoFitColumns()` without parameters to resize every column in the Grid.
 
@@ -418,7 +418,7 @@ This feature can be enabled by setting the [autoFit](https://ej2.syncfusion.com/
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/autofit-cs1" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/autofit-cs1" %}
 
 > If any one of the `e-column` widths is **undefined**, then the particular column will automatically adjust to fill the entire width of the Grid table, even if the `autoFit` property of Grid is enabled.
 
@@ -436,7 +436,7 @@ Use [autoFitColumns](https://ej2.syncfusion.com/angular/documentation/api/grid#a
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/autofit-cs2" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/autofit-cs2" %}
 
 ### AutoFit columns for specific rows
 
@@ -456,7 +456,7 @@ The following example demonstrates auto-fitting columns with specific rows. The 
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/autofit-cs3" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/autofit-cs3" %}
 
 ## Lock columns
 
@@ -475,7 +475,7 @@ The Angular Data Grid allows locking columns to prevent reordering and automatic
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/reorder-cs5" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/reorder-cs5" %}
 
 ## Show or hide columns
 
@@ -498,7 +498,7 @@ In the below example, the "Ship City" column is defined with `visible` property 
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/grid-cs15" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/grid-cs15" %}
 
 > * Hiding a column using the `visible` property only affects the UI representation of the Grid. The data for hidden columns still exists in the data source and can be accessed or modified through code.
 > * When a column is hidden, its width is not included in the calculation of the total grid width.
@@ -524,7 +524,7 @@ Here's an example showing how to show or hide a column based on the HeaderText i
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/grid-cs16" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/grid-cs16" %}
 
 **Based on field**
 
@@ -540,7 +540,7 @@ External buttons can control column visibility by field name using the `showColu
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/grid-cs30" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/grid-cs30" %}
 
 ## Controlling Grid actions per column
 
@@ -604,7 +604,7 @@ The [columns](https://ej2.syncfusion.com/angular/documentation/api/grid/index-de
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/column-cs1" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/column-cs1" %}
 
 ### Adding/Removing Columns
 
@@ -622,7 +622,7 @@ New columns can be added using the `push` method to add the column object to the
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/column-cs2" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/column-cs2" %}
 
 ### Refreshing columns
 
@@ -648,7 +648,7 @@ This example shows a Grid with three columns: "Order ID", "Customer ID", and "Fr
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/grid-cs21" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/grid-cs21" %}
 
 ## See also
 

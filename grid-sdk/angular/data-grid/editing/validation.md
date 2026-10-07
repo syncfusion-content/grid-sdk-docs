@@ -30,7 +30,7 @@ Example of applying validation rules to a grid column:
 {% endhighlight %}
 {% endtabs %} 
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/edit-cs33" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/edit-cs33" %}
 
 ## Custom validation
 
@@ -48,7 +48,7 @@ The following example demonstrates custom validation for the "Customer ID" colum
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/edit-cs34" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/edit-cs34" %}
 
 ### Custom validation based on dropdown change
 
@@ -66,7 +66,7 @@ Example applying dependent validation between "Role" and "Salary" columns:
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/edit-cs35" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/edit-cs35" %}
 
 ### Custom validation for numeric columns
 
@@ -82,7 +82,7 @@ Numeric column validation applies rules for numeric data such as positive values
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/edit-validation-cs5" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/edit-validation-cs5" %}
 
 ## Dynamically add or remove validation rules from the form
 
@@ -100,7 +100,7 @@ The following example demonstrates dynamic addition or removal of validation rul
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/edit-validation-cs3" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/edit-validation-cs3" %}
 
 > To remove an existing validation rule from an input element, use the [removeRules](https://ej2.syncfusion.com/angular/documentation/api/form-validator#removerules) method.
 
@@ -120,7 +120,7 @@ The following example demonstrates moving validation messages to the top of the 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/edit-validation-cs4" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/edit-validation-cs4" %}
 
 ## Show custom error message for failed CRUD actions
 

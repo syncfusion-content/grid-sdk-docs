@@ -53,4 +53,4 @@ The following example demonstrates how to enable basic features such as Paging, 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/sorting-cs1" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/sorting-cs1" %}

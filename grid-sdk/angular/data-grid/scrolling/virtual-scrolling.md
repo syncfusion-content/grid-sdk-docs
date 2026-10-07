@@ -34,7 +34,7 @@ The following example enables row virtualization using the `enableVirtualization
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/paging1-cs8" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/paging1-cs8" %}
 
 ### Limitations 
 
@@ -79,7 +79,7 @@ The following example enables column virtualization using the `enableColumnVirtu
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/paging1-cs9" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/paging1-cs9" %}
 
 > Column's [width](https://ej2.syncfusion.com/angular/documentation/api/grid/column#width) is required for column virtualization. If column's width is not defined then grid will consider its value as "200px".
 
