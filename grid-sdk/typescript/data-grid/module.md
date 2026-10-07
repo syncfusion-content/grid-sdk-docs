@@ -3,7 +3,7 @@ layout: post
 title: Module in TypeScript Grid control | Syncfusion
 description: Learn here all about Module in Syncfusion TypeScript Grid control of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
-control: Module 
+control: Module
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
@@ -19,6 +19,7 @@ The available Grid modules are:
 | [Page](../api/grid/page) | `Page` | Inject this module to use paging feature. |
 | [Sort](../api/grid/sort) | `Sort` | Inject this module to use sorting feature. |
 | [Filter](../api/grid/filter) | `Filter` | Inject this module to use filtering feature. |
+| [AdvancedFilter](../api/grid/advancedfilter)| Inject this module to use advanced filtering feature. |
 | [Group](../api/grid/group) | `Group` | Inject this module to use grouping feature. |
 | [LazyLoadGroup](../api/grid/lazyLoadGroup) | `LazyLoadGroup` | Inject this module to use lazy load grouping feature. |
 | [Edit](../api/grid/edit) | `Edit` | Inject this module to use editing feature. |
