@@ -225,10 +225,10 @@ The Grid automatically updates row numbers when operations such as paging, sorti
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/grid/rownumber/app-composition.vue %}
+{% include code-snippet/grid-sdk/vue/grid/row/rownumber/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/grid/rownumber/app.vue %}
+{% include code-snippet/grid-sdk/vue/grid/row/rownumber/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
