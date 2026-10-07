@@ -206,10 +206,10 @@ The `emptyRecordMode` property determines how the empty record row is displayed 
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/grid/empty-record-mode/app-composition.vue %}
+{% include code-snippet/grid-sdk/vue/grid/row/empty-record-mode/app-composition.vue %}
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/grid/empty-record-mode/app.vue %}
+{% include code-snippet/grid-sdk/vue/grid/row/empty-record-mode/app.vue %}
 {% endhighlight %}
 {% endtabs %}
         
