@@ -169,7 +169,7 @@ The following example demonstrates dynamically changing the height of the rows u
 
 The height of the header and footer rows can be customized to provide additional space for header and footer elements when needed. Use the [headerRowHeight](https://ej2.syncfusion.com/react/documentation/api/grid#headerrowheight) property to set the height of the header row and the [footerRowHeight](https://ej2.syncfusion.com/react/documentation/api/grid#footerrowheight) property to set the height of the footer row.
 
-In the following example, the row height is configured to 100px using the `rowHeight` property, and the header and footer row heights are configured to 50px using the `headerRowHeight` and `footerRowHeight` properties.
+In the following example, the row height is configured to "100px" using the `rowHeight` property, and the header and footer row heights are configured to "50px" using the `headerRowHeight` and `footerRowHeight` properties.
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
