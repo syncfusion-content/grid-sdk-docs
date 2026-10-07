@@ -293,4 +293,4 @@ public class TaskDetails
 
 ## See also
 
-* [Infinite scrolling with Lazy load grouping in Blazor Grid](https://blazor.syncfusion.com/documentation/datagrid/lazy-load-grouping#lazy-load-grouping-with-infinite-scrolling)
+* [Infinite scrolling with Lazy load grouping in Blazor Grid](https://help.syncfusion.com/grid-sdk/blazor/data-grid/lazy-load-grouping#lazy-load-grouping-with-infinite-scrolling)

@@ -2,7 +2,7 @@
 layout: post
 title: URL Adaptor in Blazor Pivot Table | Syncfusion
 description: Learn how the Blazor Pivot Table binds to a custom REST API through the URL adaptor, sending read and CRUD requests and aggregating client-side.
-platform: Blazor
+platform: grid-sdk
 control: Pivot Table
 keywords: adaptors, urladaptor, url adaptor, remotedata 
 documentation: ug
@@ -452,9 +452,9 @@ The Pivot Table supports different edit modes for handling data modifications in
 
 - **EditMode.Normal (Inline Editing)**: Edits occur directly in the grid cells. This is the default and recommended mode for quick edits.
 - **EditMode.Dialog (Modal Editing)**: Opens a modal dialog for editing record details. Useful for forms with many fields.
-- **EditMode.Batch (Bulk Editing)**: Allows editing multiple records before saving all changes at once through a batch operation. Refer to the [batch editing documentation](https://blazor.syncfusion.com/documentation/pivot-table/editing#batch) for details.
+- **EditMode.Batch (Bulk Editing)**: Allows editing multiple records before saving all changes at once through a batch operation. Refer to the [batch editing documentation](https://help.syncfusion.com/grid-sdk/blazor/pivot-table/editing#batch) for details.
 
-To enable editing in the Blazor Pivot Table, refer to the editing [documentation](https://blazor.syncfusion.com/documentation/pivot-table/editing). The example below demonstrates inline edit mode (Normal mode), which is the default and most common approach for CRUD operations in the editing popup. CRUD URLs are configured for managing data operations on the server side.
+To enable editing in the Blazor Pivot Table, refer to the editing [documentation](https://help.syncfusion.com/grid-sdk/blazor/pivot-table/editing). The example below demonstrates inline edit mode (Normal mode), which is the default and most common approach for CRUD operations in the editing popup. CRUD URLs are configured for managing data operations on the server side.
 
 **Edit Mode: Normal (Inline Editing)**
 
@@ -982,4 +982,4 @@ By following the steps outlined in this documentation, you can successfully impl
 
 ## Complete Sample Repository
 
-A complete, working sample implementation is available in the [GitHub repository](https://github.com/SyncfusionExamples/syncfusion-blazor-pivot-table-remote-data-binding/tree/master/UrlAdaptor).
+A complete, working sample implementation is available in the [GitHub repository](https://github.com/SyncfusionExamples/syncfusion-blazor-pivot-table-adaptors/tree/master/UrlAdaptor).

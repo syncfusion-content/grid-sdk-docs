@@ -200,7 +200,7 @@ public class OrderData
 
 The Blazor DataGrid supports displaying time in 24-hour format within the filter dialog for date or datetime columns. For `DateTime` columns, the filter dialog's time picker defaults to a **12-hour (AM/PM)** format. This can be customized to a 24-hour format.
 
-To implement this, define a [FilterTemplate](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridColumn.html#Syncfusion_Blazor_Grids_GridColumn_FilterTemplate) for the desired [GridColumn](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridColumn.html). Inside the template, use a [DateTimePicker](https://blazor.syncfusion.com/documentation/datetime-picker/getting-started-with-web-app) component and set its `TimeFormat` property to **HH:mm**.
+To implement this, define a [FilterTemplate](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridColumn.html#Syncfusion_Blazor_Grids_GridColumn_FilterTemplate) for the desired [GridColumn](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridColumn.html). Inside the template, use a [DateTimePicker](https://help.syncfusion.com/scheduler-sdk/blazor/datetime-picker/getting-started-with-web-app) component and set its `TimeFormat` property to **HH:mm**.
 
 {% tabs %}
 {% highlight razor tabtitle="Index.razor" %}
@@ -448,7 +448,7 @@ The following table outlines component configurations customized for specific co
 | **Order ID**   | [NumericTextBox](https://blazor.syncfusion.com/documentation/numeric-textbox/getting-started)   | Show clear button enabled, minimum value set to 10,000 |
 | **Customer ID**| [AutoComplete](https://blazor.syncfusion.com/documentation/autocomplete/getting-started)        | Autofill disabled, debounce delay set to 2000 ms       |
 | **Ship City**  | [AutoComplete](https://blazor.syncfusion.com/documentation/autocomplete/getting-started)        | Autofill enabled, minimum input length set to 2        |
-| **Order Time** | [TimePicker](https://blazor.syncfusion.com/documentation/timepicker/getting-started)            | Step interval set to 10 minutes                        |
+| **Order Time** | [TimePicker](https://help.syncfusion.com/scheduler-sdk/blazor/time-picker/getting-started)            | Step interval set to 10 minutes                        |
 
 {% tabs %}
 {% highlight razor tabtitle="Index.razor" %}
@@ -564,8 +564,8 @@ Customize the default input components in the filter menu dialog using the [Filt
 | String      | [AutoComplete](https://blazor.syncfusion.com/documentation/autocomplete/getting-started)    |  Autofill="false" | [AutoComplete API](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.DropDowns.SfAutoComplete-2.html) |
 | Number      | [NumericTextBox](https://blazor.syncfusion.com/documentation/numeric-textbox/getting-started) | ShowSpinButton="false" | [NumericTextBox API](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Inputs.SfNumericTextBox-1.html)                 |
 | Boolean     | [DropDownList](https://blazor.syncfusion.com/documentation/dropdown-list/getting-started)   | SortOrder="SortOrder.Ascending"  | [DropDownList API](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.DropDowns.SfDropDownList-2.html)                   |
-| Date        | [DatePicker](https://blazor.syncfusion.com/documentation/datepicker/getting-started)         | WeekNumber="true"    | [DatePicker API](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Calendars.SfDatePicker-1.html)                         |
-| DateTime    | [DateTimePicker](https://blazor.syncfusion.com/documentation/datetime-picker/getting-started) | ShowClearButton="true"  | [DateTimePicker API](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Calendars.SfDateTimePicker-1.html)                 |
+| Date        | [DatePicker](https://help.syncfusion.com/scheduler-sdk/blazor/date-picker/getting-started)         | WeekNumber="true"    | [DatePicker API](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Calendars.SfDatePicker-1.html)                         |
+| DateTime    | [DateTimePicker](https://help.syncfusion.com/scheduler-sdk/blazor/datetime-picker/getting-started) | ShowClearButton="true"  | [DateTimePicker API](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Calendars.SfDateTimePicker-1.html)                 |
 
 
 In the following example, the **OrderID** and **Freight** columns are numeric. By default, the filter dialog displays a [NumericTextBox](https://blazor.syncfusion.com/documentation/numeric-textbox/getting-started) with a spin button. Using the `FilterTemplate` property of the `GridColumn`, the spin button can be hidden specifically for the **OrderID** column.
@@ -1292,9 +1292,9 @@ Different filter types such as Excel, Menu, and Checkbox can be defined in diffe
 
 ## Filtering using DateRangePicker
 
-By default, for the date column in the filter menu, filtering action is performed based on a single date value selected from the `SfDatePicker`. The Blazor DataGrid also can perform the filtering action between the range of date values by rendering the [SfDateRangePicker](https://blazor.syncfusion.com/documentation/daterangepicker/getting-started-with-web-app) in the filter menu. This can be achieved by the filter template feature of the Blazor Grid.
+By default, for the date column in the filter menu, filtering action is performed based on a single date value selected from the `SfDatePicker`. The Blazor DataGrid also can perform the filtering action between the range of date values by rendering the [SfDateRangePicker](https://help.syncfusion.com/scheduler-sdk/blazor/daterange-picker/getting-started-with-web-app) in the filter menu. This can be achieved by the filter template feature of the Blazor Grid.
 
-In this configuration, the `SfDateRangePicker` is rendered in the filter template of the **OrderDate** column. The [ValueChange](https://blazor.syncfusion.com/documentation/daterangepicker/events#valuechange) event captures the selected start and end dates. The filtering logic is handled in the [Filtering](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridEvents-1.html#Syncfusion_Blazor_Grids_GridEvents_1_Filtering) event, where the default filter action is canceled and custom predicates are applied using the selected date range.
+In this configuration, the `SfDateRangePicker` is rendered in the filter template of the **OrderDate** column. The [ValueChange](https://help.syncfusion.com/scheduler-sdk/blazor/daterange-picker/events#valuechange) event captures the selected start and end dates. The filtering logic is handled in the [Filtering](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridEvents-1.html#Syncfusion_Blazor_Grids_GridEvents_1_Filtering) event, where the default filter action is canceled and custom predicates are applied using the selected date range.
 
 {% tabs %}
 {% highlight razor tabtitle="Index.razor" %}

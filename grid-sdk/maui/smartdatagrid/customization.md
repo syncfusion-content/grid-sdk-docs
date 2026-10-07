@@ -11,11 +11,11 @@ appliesto: UI Component Suite, Grid SDK
 
 # Customization in MAUI SmartDataGrid (SfSmartDataGrid)
 
-The [SfSmartDataGrid](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.SmartComponents.SfSmartDataGrid.html) provides options to customize its behavior and features, including predefined suggestions, initial prompts, enabling or disabling smart actions, and programmatic control of the AssistView.
+The [SfSmartDataGrid](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.SmartDataGrid.SfSmartDataGrid.html) provides options to customize its behavior and features, including predefined suggestions, initial prompts, enabling or disabling smart actions, and programmatic control of the AssistView.
 
 ## Suggestions
 
-The [SuggestedPrompts](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.SmartComponents.DataGridAssistViewSettings.html#Syncfusion_Maui_SmartComponents_DataGridAssistViewSettings_SuggestedPrompts) property in [DataGridAssistViewSettings](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.SmartComponents.DataGridAssistViewSettings.html) provides a predefined list of suggestions displayed in the AssistView banner. These quick-access suggestions help users discover common operations without typing commands manually.
+The [SuggestedPrompts](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.SmartDataGrid.DataGridAssistViewSettings.html#Syncfusion_Maui_SmartDataGrid_DataGridAssistViewSettings_SuggestedPrompts) property in [DataGridAssistViewSettings](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.SmartDataGrid.DataGridAssistViewSettings.html) provides a predefined list of suggestions displayed in the AssistView banner. These quick-access suggestions help users discover common operations without typing commands manually.
 
 
 {% tabs %}
@@ -46,7 +46,7 @@ public class OrderInfoRepository
 
 ## Prompt
 
-The [Prompt](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.SmartComponents.DataGridAssistViewSettings.html#Syncfusion_Maui_SmartComponents_DataGridAssistViewSettings_Prompt) property in [DataGridAssistViewSettings](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.SmartComponents.DataGridAssistViewSettings.html) defines an initial command automatically executed when the AssistView opens for the first time. The prompt uses the same syntax as user-entered commands (see [AI-Powered Features](ai-powered-features.md) for supported commands).
+The [Prompt](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.SmartDataGrid.DataGridAssistViewSettings.html#Syncfusion_Maui_SmartDataGrid_DataGridAssistViewSettings_Prompt) property in [DataGridAssistViewSettings](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.SmartDataGrid.DataGridAssistViewSettings.html) defines an initial command automatically executed when the AssistView opens for the first time. The prompt uses the same syntax as user-entered commands (see [AI-Powered Features](ai-powered-features.md) for supported commands).
 
 > **Note:** The prompt is only executed once on first open. Invalid or unsupported prompts are silently ignored with no error notification.
 
@@ -66,7 +66,7 @@ SmartGrid.AssistViewSettings.Prompt = "Sort by OrderDate ascending";
 
 ## EnableSmartActions
 
-The [EnableSmartActions](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.SmartComponents.DataGridAssistViewSettings.html#Syncfusion_Maui_SmartComponents_DataGridAssistViewSettings_EnableSmartActions) property in [DataGridAssistViewSettings](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.SmartComponents.DataGridAssistViewSettings.html) controls whether AI commands modify the grid. By default, this property is set to `true`, enabling automatic execution of sorting, grouping, filtering, and highlighting operations. Set to `false` to prevent all grid modifications (useful for preview or read-only modes).
+The [EnableSmartActions](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.SmartDataGrid.DataGridAssistViewSettings.html#Syncfusion_Maui_SmartDataGrid_DataGridAssistViewSettings_EnableSmartActions) property in [DataGridAssistViewSettings](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.SmartDataGrid.DataGridAssistViewSettings.html) controls whether AI commands modify the grid. By default, this property is set to `true`, enabling automatic execution of sorting, grouping, filtering, and highlighting operations. Set to `false` to prevent all grid modifications (useful for preview or read-only modes).
 
 {% tabs %}
 {% highlight xaml %}
@@ -84,7 +84,7 @@ SmartGrid.AssistViewSettings.EnableSmartActions = true;
 
 ## Programmatic AssistView Control
 
-Use the [ShowAssistView](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.SmartComponents.SfSmartDataGrid.html#Syncfusion_Maui_SmartComponents_SfSmartDataGrid_ShowAssistView_Microsoft_Maui_Controls_View_) and [CloseAssistView](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.SmartComponents.SfSmartDataGrid.html#Syncfusion_Maui_SmartComponents_SfSmartDataGrid_CloseAssistView) methods on the [SfSmartDataGrid](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.SmartComponents.SfSmartDataGrid.html) instance to display or hide the AssistView popup programmatically. By default, `ShowAssistView()` opens the popup anchored to the default AssistView button. Optionally pass a View object to anchor the popup to a different UI element (e.g., a custom button).
+Use the [ShowAssistView](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.SmartDataGrid.SfSmartDataGrid.html#Syncfusion_Maui_SmartDataGrid_SfSmartDataGrid_ShowAssistView_Microsoft_Maui_Controls_View_) and [CloseAssistView](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.SmartDataGrid.SfSmartDataGrid.html#Syncfusion_Maui_SmartDataGrid_SfSmartDataGrid_CloseAssistView) methods on the [SfSmartDataGrid](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.SmartDataGrid.SfSmartDataGrid.html) instance to display or hide the AssistView popup programmatically. By default, `ShowAssistView()` opens the popup anchored to the default AssistView button. Optionally pass a View object to anchor the popup to a different UI element (e.g., a custom button).
 
 **Return Types:** 
 - `ShowAssistView()`: `void`
@@ -107,7 +107,7 @@ SmartGrid.CloseAssistView();
 
 ## Apply Smart Actions Programmatically
 
-The [GetResponseAsync](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.SmartComponents.SfSmartDataGrid.html#Syncfusion_Maui_SmartComponents_SfSmartDataGrid_GetResponseAsync_System_String_) method on the [SfSmartDataGrid](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.SmartComponents.SfSmartDataGrid.html) instance executes AI commands programmatically without displaying the AssistView UI. Pass a prompt string using the same syntax as user-entered commands. This is useful for background processing, API automation, or custom UI integration.
+The [GetResponseAsync](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.SmartDataGrid.SfSmartDataGrid.html#Syncfusion_Maui_SmartDataGrid_SfSmartDataGrid_GetResponseAsync_System_String_) method on the [SfSmartDataGrid](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.SmartDataGrid.SfSmartDataGrid.html) instance executes AI commands programmatically without displaying the AssistView UI. Pass a prompt string using the same syntax as user-entered commands. This is useful for background processing, API automation, or custom UI integration.
 
 **Method Signature:**
 ```csharp
@@ -144,7 +144,7 @@ Events allow you to intercept and customize behavior at specific points in the A
 
 ### AssistViewOpening
 
-The [DataGridAssistViewSettings.AssistViewOpening](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.SmartComponents.DataGridAssistViewSettings.html#Syncfusion_Maui_SmartComponents_DataGridAssistViewSettings_AssistViewOpening) event fires before the AssistView popup displays. Use this to validate permissions, initialize state, or cancel the operation by setting `Cancel = true`.
+The [DataGridAssistViewSettings.AssistViewOpening](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.SmartDataGrid.DataGridAssistViewSettings.html#Syncfusion_Maui_SmartDataGrid_DataGridAssistViewSettings_AssistViewOpening) event fires before the AssistView popup displays. Use this to validate permissions, initialize state, or cancel the operation by setting `Cancel = true`.
 
 {% tabs %}
 {% highlight xaml %}
@@ -169,7 +169,7 @@ private void OnAssistViewOpening(object sender, AssistViewOpeningEventArgs e)
 
 ### AssistViewRequest
 
-The [SfSmartDataGrid.AssistViewRequest](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.SmartComponents.SfSmartDataGrid.html#Syncfusion_Maui_SmartComponents_SfSmartDataGrid_AssistViewRequest) event fires when a user or code sends a command. The event provides the `Prompt` text and allows cancellation to prevent execution.
+The [SfSmartDataGrid.AssistViewRequest](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.SmartDataGrid.SfSmartDataGrid.html#Syncfusion_Maui_SmartDataGrid_SfSmartDataGrid_AssistViewRequest) event fires when a user or code sends a command. The event provides the `Prompt` text and allows cancellation to prevent execution.
 
 {% tabs %}
 {% highlight xaml %}
@@ -195,7 +195,7 @@ private void OnAssistViewRequest(object sender, AssistViewRequestEventArgs e)
 
 ### AssistViewClosing
 
-The [DataGridAssistViewSettings.AssistViewClosing](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.SmartComponents.DataGridAssistViewSettings.html#Syncfusion_Maui_SmartComponents_DataGridAssistViewSettings_AssistViewClosing) event fires before the AssistView popup closes. Set `Cancel = true` to keep the popup open.
+The [DataGridAssistViewSettings.AssistViewClosing](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.SmartDataGrid.DataGridAssistViewSettings.html#Syncfusion_Maui_SmartDataGrid_DataGridAssistViewSettings_AssistViewClosing) event fires before the AssistView popup closes. Set `Cancel = true` to keep the popup open.
 
 {% tabs %}
 {% highlight xaml %}

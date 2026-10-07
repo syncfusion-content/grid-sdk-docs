@@ -48,7 +48,7 @@ Row virtualization is ideal for datasets with many rows (10,000+) but manageable
 {% include code-snippet/grid-sdk/typescript/treegrid/dom-virtual-cs1/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/treegrid/dom-virtual-cs1/ts/index.html %}
+{% include code-snippet/grid-sdk/typescript/treegrid/dom-virtual-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
        
@@ -61,7 +61,7 @@ Row virtualization is ideal for datasets with many rows (10,000+) but manageable
 {% include code-snippet/grid-sdk/typescript/treegrid/dom-virtual-cs1/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/treegrid/dom-virtual-cs1/js/index.html %}
+{% include code-snippet/grid-sdk/typescript/treegrid/dom-virtual-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
  
@@ -79,7 +79,7 @@ Buffer configuration defines how many extra rows the Tree Grid renders beyond th
 {% include code-snippet/grid-sdk/typescript/treegrid/dom-virtual-cs2/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/treegrid/dom-virtual-cs2/ts/index.html %}
+{% include code-snippet/grid-sdk/typescript/treegrid/dom-virtual-cs2/index.html %}
 {% endhighlight %}
 {% endtabs %}
        
@@ -92,7 +92,7 @@ Buffer configuration defines how many extra rows the Tree Grid renders beyond th
 {% include code-snippet/grid-sdk/typescript/treegrid/dom-virtual-cs2/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/treegrid/dom-virtual-cs2/js/index.html %}
+{% include code-snippet/grid-sdk/typescript/treegrid/dom-virtual-cs2/index.html %}
 {% endhighlight %}
 {% endtabs %}
  

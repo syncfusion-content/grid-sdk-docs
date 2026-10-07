@@ -2,7 +2,7 @@
 layout: post
 title: How to show tooltips for headers in Blazor Pivot Table | Syncfusion
 description: Step-by-step example showing how to show tooltips for headers in the Blazor Pivot Table, binding SfTooltip to header cells via OnRender and ContentTemplate.
-platform: Blazor
+platform: grid-sdk
 control: Pivot Table
 documentation: ug
 ---
