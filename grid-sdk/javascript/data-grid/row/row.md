@@ -4,7 +4,6 @@ title: Row in JavaScript Grid control | Syncfusion
 description: Learn here all about Row in Syncfusion JavaScript Grid control of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Row 
-publishingplatform: grid-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
@@ -19,7 +18,7 @@ Customizing the styles of rows in a Syncfusion<sup style="font-size:70%">&reg;</
 
 ### Using event
 
-You can customize the appearance of the rows by using the [rowDataBound](../../api/grid#rowdatabound) event. This event triggers for every row when it is bound to the data source. In the event handler, you can get the [RowDataBoundEventArgs](../../api/grid/rowDataBoundEventArgs/) object, which contains details of the row. You can use this object to modify the row's appearance, add custom elements, or perform any other customization.
+You can customize the appearance of the rows by using the [rowDataBound](../../api/grid#rowdatabound) event. This event triggers for every row when it is bound to the data source. In the event handler, you can get the [RowDataBoundEventArgs](../../api/grid/rowDataBoundEventArgs) object, which contains details of the row. You can use this object to modify the row's appearance, add custom elements, or perform any other customization.
 
 Here's an example of how you can use the `rowDataBound` event to customize the styles of rows based on the value of the **Freight** column. This example involves checking the value of the Freight column for each row and adding a CSS class to the row based on the value. The CSS classes **below-30**, **below-80**, and **above-80** can then be defined in your stylesheet to apply the desired styles to the rows.
 
@@ -328,6 +327,72 @@ Here's an example that demonstrates how to use the `rowDataBound` event and `get
 {% endif %}
 
 >The `getRowInfo` method can only be used in the `rowDataBound` event. Attempting to use it elsewhere will result in an error.
+
+## Empty record mode
+
+The `emptyRecordMode` property determines how the empty record row is displayed when the Grid has no records. It supports two modes: `Sticky`, which keeps the empty record row visible during scrolling, and `Normal`, which allows the empty record row to scroll along with the Grid content.
+
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/grid-sdk/javascript/grid/empty-record-mode/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/grid-sdk/javascript/grid/empty-record-mode/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/empty-record-mode" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/grid-sdk/javascript/grid/empty-record-mode/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/grid-sdk/javascript/grid/empty-record-mode/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/empty-record-mode" %}
+{% endif %}
+
+## Row Number in Data Grid
+
+The JavaScript Data Grid provides built-in support for displaying row numbers through a dedicated row number column. This column displays the position of each record in the current view and is automatically maintained by the Grid.
+
+To display row numbers, set the [columns->type](../../api/grid/column#type) property to `RowNumber`. This creates a read-only column for displaying row numbers, eliminating the need to include a separate row number field in the data source.
+
+The Grid automatically updates row numbers when operations such as paging, sorting, filtering, and grouping are performed. This ensures that the displayed row numbers always reflect the current view and order of the records.
+
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/grid-sdk/javascript/grid/rownumber/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/grid-sdk/javascript/grid/rownumber/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/rownumber" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/grid-sdk/javascript/grid/rownumber/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/grid-sdk/javascript/grid/rownumber/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/rownumber" %}
+{% endif %}
 
 ## Row pinning (Frozen)
 
