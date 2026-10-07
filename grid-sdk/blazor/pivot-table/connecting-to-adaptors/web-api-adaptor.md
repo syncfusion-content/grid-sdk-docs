@@ -320,7 +320,7 @@ When you run the application, the Blazor Pivot Table will display data fetched f
 
 ## Handling CRUD operations
 
-To manage CRUD (Create, Read, Update, and Delete) operations using the WebApiAdaptor in Blazor Pivot Table, follow the provided guide for configuring the Pivot Table for [editing](https://blazor.syncfusion.com/documentation/pivot-table/editing) and add the sample `Post`, `Put`, and `Delete` methods below to the `OrdersController` created in [Creating an API service](#creating-an-api-service) → Step 3. This controller then handles HTTP requests for CRUD operations such as **GET, POST, PUT,** and **DELETE**.
+To manage CRUD (Create, Read, Update, and Delete) operations using the WebApiAdaptor in Blazor Pivot Table, follow the provided guide for configuring the Pivot Table for [editing](https://help.syncfusion.com/grid-sdk/blazor/pivot-table/editing) and add the sample `Post`, `Put`, and `Delete` methods below to the `OrdersController` created in [Creating an API service](#creating-an-api-service) → Step 3. This controller then handles HTTP requests for CRUD operations such as **GET, POST, PUT,** and **DELETE**.
 
 To enable CRUD operations in the Pivot Table, follow the steps below. The Pivot Table must allow drill-through so the underlying grid is rendered with the records that can be edited, added, or deleted; set `AllowDrillThrough="true"` on `SfPivotView` before adding the `PivotViewCellEditSettings` and `BeginDrillThrough` handler shown below.
 
@@ -643,7 +643,7 @@ The `WebApiAdaptor` consumes this `{ Items, Count }` payload to load the full da
 
 ## Complete sample repository
 
-A complete, working sample implementation is available in the [GitHub repository](https://github.com/SyncfusionExamples/syncfusion-blazor-pivot-table-remote-data-binding/tree/master/WebApiAdaptor).
+A complete, working sample implementation is available in the [GitHub repository](https://github.com/SyncfusionExamples/syncfusion-blazor-pivot-table-adaptors/tree/master/WebApiAdaptor).
 
 ## Summary
 
@@ -659,6 +659,6 @@ The WebApiAdaptor automatically handles the communication between the client-sid
 
 ## See also
 
-- [Syncfusion Blazor Pivot Table documentation](https://blazor.syncfusion.com/documentation/pivot-table/getting-started)
+- [Syncfusion Blazor Pivot Table documentation](https://help.syncfusion.com/grid-sdk/blazor/pivot-table/getting-started)
 - [WebApiAdaptor reference](https://blazor.syncfusion.com/documentation/data/adaptors#web-api-adaptor)
-- [Live demo on GitHub](https://github.com/SyncfusionExamples/syncfusion-blazor-pivot-table-remote-data-binding/tree/master/WebApiAdaptor)
+- [Live demo on GitHub](https://github.com/SyncfusionExamples/syncfusion-blazor-pivot-table-adaptors/tree/master/WebApiAdaptor)
