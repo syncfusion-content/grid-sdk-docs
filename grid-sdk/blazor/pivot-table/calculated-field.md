@@ -2,7 +2,7 @@
 layout: post
 title: Calculated Field in Blazor Pivot Table | Syncfusion
 description: Learn how the Blazor Pivot Table creates custom value fields from existing fields with formulas via the built-in dialog or the API.
-platform: Blazor
+platform: grid-sdk
 control: Pivot Table
 documentation: ug
 ---

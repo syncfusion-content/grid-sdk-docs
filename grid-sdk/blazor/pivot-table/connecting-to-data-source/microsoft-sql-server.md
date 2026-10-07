@@ -2,7 +2,7 @@
 layout: post
 title: Microsoft SQL Server in Blazor Pivot Table | Syncfusion
 description: Learn how to load and edit Microsoft SQL Server data in the Blazor Pivot Table through an ASP.NET Core API using Microsoft.Data.SqlClient.
-platform: Blazor
+platform: grid-sdk
 control: PivotTable
 documentation: ug
 ---

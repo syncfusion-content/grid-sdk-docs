@@ -2,7 +2,7 @@
 layout: post
 title: Data Binding in Blazor Pivot Table | Syncfusion
 description: Learn how the Blazor Pivot Table binds to local JSON, remote services, and custom data sources via PivotViewDataSourceSettings with CRUD-enabled adaptors.
-platform: Blazor
+platform: grid-sdk
 control: Pivot Table
 documentation: ug
 ---

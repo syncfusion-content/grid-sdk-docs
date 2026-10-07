@@ -2,7 +2,7 @@
 layout: post
 title: Toolbar in Blazor Pivot Table | Syncfusion
 description: Learn how the Blazor Pivot Table exposes a toolbar with built-in options for new, save, load, grid-chart switching, exporting, and conditional formatting.
-platform: Blazor
+platform: grid-sdk
 control: Pivot Table
 documentation: ug
 ---

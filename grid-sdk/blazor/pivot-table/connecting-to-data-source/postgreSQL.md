@@ -2,7 +2,7 @@
 layout: post
 title: PostgreSQL in Blazor Pivot Table | Syncfusion
 description: Learn how to bind the Blazor Pivot Table to PostgreSQL through an ASP.NET Core API that uses Npgsql and the Syncfusion URL adaptor for read and CRUD operations.
-platform: Blazor
+platform: grid-sdk
 control: PivotTable
 documentation: ug
 ---

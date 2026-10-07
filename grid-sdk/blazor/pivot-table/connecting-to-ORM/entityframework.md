@@ -2,7 +2,7 @@
 layout: post
 title: Entity Framework in Blazor Pivot Table | Syncfusion
 description: Learn how to connect the Blazor Pivot Table to SQL Server with Entity Framework Core for strongly typed models and a maintainable DbContext-based data layer.
-platform: Blazor
+platform: grid-sdk
 control: Pivot Table
 documentation: ug
 ---

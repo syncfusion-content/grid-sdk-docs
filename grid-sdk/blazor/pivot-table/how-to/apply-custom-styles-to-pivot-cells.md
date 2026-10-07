@@ -2,7 +2,7 @@
 layout: post
 title: How to style pivot cells in Blazor Pivot Table | Syncfusion
 description: Step-by-step example showing how to style pivot cells in the Blazor Pivot Table, using the EnginePopulated event and the cellData.CssClass property.
-platform: Blazor
+platform: grid-sdk
 control: Pivot Table
 documentation: ug
 ---
