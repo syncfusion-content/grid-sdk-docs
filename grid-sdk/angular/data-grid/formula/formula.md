@@ -92,7 +92,7 @@ The Grid also supports absolute references when you want a formula to stay attac
 =$A$1*10
 ```
 
-![Formula cell in JavaScript Grid.](../images/grid-formula-cell.png)
+![Formula cell in JavaScript Grid.](../../images/grid-formula-cell.png)
 
 ### Cell ranges
 
@@ -104,7 +104,7 @@ Cell ranges represent a contiguous block of cells and are specified using the to
 =MAX(D2:D25)
 ```
 
-![Formula cell range in JavaScript Grid.](../images/grid-formula-cell-range.png)
+![Formula cell range in JavaScript Grid.](../../images/grid-formula-cell-range.png)
 
 ### Built-in functions
 
