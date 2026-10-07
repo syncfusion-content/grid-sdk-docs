@@ -4,7 +4,6 @@ title: Row in Syncfusion ASP.NET MVC Grid Component
 description: Learn here all about Row in Syncfusion ASP.NET MVC Grid component of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Row
-publishingplatform: grid-sdk
 documentation: ug
 ---
 
@@ -134,6 +133,21 @@ In the below example, we will demonstrate how to dynamically change the height o
 > *  The `RowHeight` property applies the height to all rows in the grid, including the header and footer rows.
 > *	You can also set the height for a specific row using the `RowHeight` property of the corresponding row object in the [RowDataBound](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_RowDataBound) event.
 
+### Customize header and footer row heights 
+
+The height of the header and footer rows can be customized to provide additional space for header and footer elements when needed. Use the [headerRowHeight](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_HeaderRowHeight) property to set the height of the header row and the [footerRowHeight](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_FooterRowHeight) property to set the height of the footer row.
+
+In the following example, the row height is configured to "100px" using the `rowHeight` property, and the header and footer row heights are configured to "50px" using the `headerRowHeight` and `footerRowHeight` properties.
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/grid-sdk/asp-net-mvc/grid/row/custom-header-footer-height-cs1/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Custom-header-footer-height-cs1.cs" %}
+{% include code-snippet/grid-sdk/asp-net-mvc/grid/row/custom-header-footer-height-cs1/header-footer-height.cs %}
+{% endhighlight %}
+{% endtabs %}
+
 ### Customize row height for particular row 
 
 Customizing the row height for a particular row can be useful when you want to display more content in a particular row, reduce the height of a row to fit its content, or make a specific row stand out from the other rows in the grid. This can be achieved by using the [RowHeight](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_RowHeight) property of the Grid component along with the [RowDataBound](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_RowDataBound) event.
@@ -199,6 +213,36 @@ Here's an example that demonstrates how to use the `RowDataBound` event and `get
 ![Row information](../images/row/row-information.gif)
 
 > The `getRowInfo` method can only be used in the `RowDataBound` event. Attempting to use it elsewhere will result in an error.
+
+## Empty record mode
+
+The `emptyRecordMode` property determines how the empty record row is displayed when the Grid has no records. It supports two modes: `Sticky`, which keeps the empty record row visible during scrolling, and `Normal`, which allows the empty record row to scroll along with the Grid content.
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/grid-sdk/asp-net-mvc/grid/row/empty-record-mode/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Empty-record-mode.cs" %}
+{% include code-snippet/grid-sdk/asp-net-mvc/grid/row/empty-record-mode/empty-record-mode.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+## Row Number in Data Grid
+
+The ASP.NET MVC Data Grid provides built-in support for displaying row numbers through a dedicated row number column. This column displays the position of each record in the current view and is automatically maintained by the Grid.
+
+To display row numbers, set the [columns->type] property to `RowNumber`. This creates a read-only column for displaying row numbers, eliminating the need to include a separate row number field in the data source.
+
+The Grid automatically updates row numbers when operations such as paging, sorting, filtering, and grouping are performed. This ensures that the displayed row numbers always reflect the current view and order of the records.
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/grid-sdk/asp-net-mvc/grid/row/rownumber/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Row-number.cs" %}
+{% include code-snippet/grid-sdk/asp-net-mvc/grid/row/rownumber/rownumber.cs %}
+{% endhighlight %}
+{% endtabs %}
 
 ## Row pinning (Frozen)
 
