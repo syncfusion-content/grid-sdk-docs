@@ -11,7 +11,7 @@ documentation: ug
 
 The [Blazor Pivot Table](https://www.syncfusion.com/blazor-components/blazor-pivot-table) can load and edit MySQL data through an ASP.NET Core API and the Syncfusion URL Adaptor. The adaptor sends read and CRUD requests to controller endpoints; the controller uses `MySql.Data` to execute parameterized SQL against MySQL.
 
-This tutorial is a small-data sample. Its read endpoint returns every raw order because the Pivot Table's built-in engine needs the complete raw dataset to calculate accurate aggregates. For large datasets, use the [Syncfusion server-side Pivot Engine](https://blazor.syncfusion.com/documentation/pivot-table/server-side-pivot-engine) instead of applying ordinary paging to this endpoint.
+This tutorial is a small-data sample. Its read endpoint returns every raw order because the Pivot Table's built-in engine needs the complete raw dataset to calculate accurate aggregates. For large datasets, use the [Syncfusion server-side Pivot Engine](https://help.syncfusion.com/grid-sdk/blazor/pivot-table/server-side-pivot-engine) instead of applying ordinary paging to this endpoint.
 
 ## Prerequisites
 
@@ -174,7 +174,7 @@ public class Order
 }
 ```
 
-The same model is used by the controller and Razor component. The `[Key]` annotation identifies `OrderID` as the primary key when the Pivot Table creates its raw-item edit grid. Do not attempt to access `BeginDrillThroughEventArgs.GridObj`; the [current event documentation](https://blazor.syncfusion.com/documentation/pivot-table/events#begindrillthrough) states that this property is returned as null.
+The same model is used by the controller and Razor component. The `[Key]` annotation identifies `OrderID` as the primary key when the Pivot Table creates its raw-item edit grid. Do not attempt to access `BeginDrillThroughEventArgs.GridObj`; the [current event documentation](https://help.syncfusion.com/grid-sdk/blazor/pivot-table/events#begindrillthrough) states that this property is returned as null.
 
 ### Step 6: Create the API Controller
 
@@ -603,7 +603,7 @@ Before deployment:
 
 Do not apply `Skip`, `Take`, or ordinary DataManager paging to the read action in this sample. Doing so sends only part of the raw dataset to the built-in Pivot Table engine and produces incomplete aggregates.
 
-For large datasets, follow the [server-side Pivot Engine guide](https://blazor.syncfusion.com/documentation/pivot-table/server-side-pivot-engine). The server-side engine performs aggregation, filtering, grouping, and sorting on the server and sends only the required pivot results to the browser.
+For large datasets, follow the [server-side Pivot Engine guide](https://help.syncfusion.com/grid-sdk/blazor/pivot-table/server-side-pivot-engine). The server-side engine performs aggregation, filtering, grouping, and sorting on the server and sends only the required pivot results to the browser.
 
 ## Troubleshooting
 
@@ -624,7 +624,7 @@ For large datasets, follow the [server-side Pivot Engine guide](https://blazor.s
 
 ## Complete Sample Repository
 
-A complete, working sample implementation is available in the [GitHub repository](https://github.com/SyncfusionExamples/syncfusion-blazor-pivot-table-mysql-database-binding-sample).
+A complete, working sample implementation is available in the [GitHub repository](https://github.com/SyncfusionExamples/syncfusion-blazor-pivot-table-mysql).
 
 ## Summary
 

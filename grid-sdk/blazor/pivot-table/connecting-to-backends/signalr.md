@@ -467,7 +467,7 @@ Syncfusion provides the `SfPivotView` component used to display aggregated data 
 
 For this project, the **Fluent2** theme is used. A different theme can be selected or the existing theme can be customized based on project requirements. Refer to the [Blazor Components Appearance](https://blazor.syncfusion.com/documentation/appearance/themes) documentation to learn more about theming and customization options.
 
-Blazor components are now configured and ready to use. For additional guidance, refer to the Pivot Table component's [getting‑started](https://blazor.syncfusion.com/documentation/pivot-table/getting-started-webapp) documentation.
+Blazor components are now configured and ready to use. For additional guidance, refer to the Pivot Table component's [getting‑started](https://help.syncfusion.com/grid-sdk/blazor/pivot-table/getting-started-webapp) documentation.
 
 ### Integration Step 2: Create the Custom Adaptor for the Pivot Table
 
@@ -929,9 +929,9 @@ Most real-time issues in Blazor + SignalR Pivot Table setups are solved by:
 
 ## Complete Sample Repository
 
-A complete, working sample implementation is available in the [GitHub repository](https://github.com/SyncfusionExamples/blazor-pivot-table-integrations/tree/master).
+A complete, working sample implementation is available in the [GitHub repository](https://github.com/SyncfusionExamples/blazor-pivot-table-backend-interaction/tree/master).
 
 ## See also
 
 - [ASP.NET Core SignalR .NET client](https://learn.microsoft.com/en-us/aspnet/core/signalr/dotnet-client?view=aspnetcore-10.0&tabs=visual-studio)
-- [Getting Started with Pivot Table in a Blazor Web App](https://blazor.syncfusion.com/documentation/pivot-table/getting-started-webapp)
+- [Getting Started with Pivot Table in a Blazor Web App](https://help.syncfusion.com/grid-sdk/blazor/pivot-table/getting-started-webapp)
