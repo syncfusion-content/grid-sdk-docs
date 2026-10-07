@@ -43,7 +43,7 @@ The following example demonstrates basic filter bar activation in the grid:
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/filter-bar-cs1" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/filter-bar-cs1" %}
 
 > To enable or dynamically switch the filter type, set the [filterSettings.type](https://ej2.syncfusion.com/angular/documentation/api/grid/filtersettings#type) as `FilterBar` mode.
 
@@ -77,7 +77,7 @@ When [filterSettings.mode](https://ej2.syncfusion.com/angular/documentation/api/
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/filter-bar-cs2" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/filter-bar-cs2" %}
 
 ## Display filter text in pager
 
@@ -97,7 +97,7 @@ The following example shows filter status display in the pager:
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/filter-bar-cs3" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/filter-bar-cs3" %}
 
 ## Show or hide filter bar operator in filter bar cell
 
@@ -115,7 +115,7 @@ To display the operator dropdown in filter bar cells, set the [showFilterBarOper
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/filter-bar-cs4" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/filter-bar-cs4" %}
 
 ## Prevent filtering for particular column
 
@@ -133,7 +133,7 @@ The following example disables filtering for the "Customer ID" column.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/filter-bar-cs5" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/filter-bar-cs5" %}
 
 ## Hide filter bar for template column
 
@@ -151,7 +151,7 @@ The following example demonstrates to hide the filter bar for a template column:
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/filter-bar-cs6" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/filter-bar-cs6" %}
 
 ## Filter bar template with custom component
 
@@ -178,7 +178,7 @@ To implement a custom filter bar template, define the `filterBarTemplate` proper
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/filter-bar-cs8" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/filter-bar-cs8" %}
 
 ## See also
 

@@ -24,4 +24,4 @@ For instance, the sample below demonstrates columns **OrderID** and **Freight** 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/filtering1-cs12" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/filtering1-cs12" %}

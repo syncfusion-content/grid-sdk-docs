@@ -53,4 +53,4 @@ In the following example, clicking the button toggles enabling or disabling the 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/edit-cs49" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/edit-cs49" %}

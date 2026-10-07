@@ -27,7 +27,7 @@ The following example pins rows with "Critical" priority and "Open" status at th
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/rows-pinning-cs1" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/rows-pinning-cs1" %}
 
 
 > Pinning rows requires a primary key column for mapping the pinned rows to their original records. To define the primary key, set [columns->isPrimaryKey](https://ej2.syncfusion.com/angular/documentation/api/grid/column#isprimarykey) to `true` in particular column.
@@ -45,7 +45,7 @@ Row pinning keeps important rows visible at the top while navigating pages. Pinn
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/rows-pinning-cs2" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/rows-pinning-cs2" %}
 
 ## Pinned rows selection
 
@@ -60,7 +60,7 @@ Pinned rows can be selected like regular rows, with their selection state synchr
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/rows-pinning-cs3" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/rows-pinning-cs3" %}
 
 > The [selectionSettings->persistSelection](https://ej2.syncfusion.com/angular/documentation/api/grid/selectionsettings#persistselection) will be automatically enabled when pinning the rows using the `isRowPinned` callback function.
 
@@ -80,7 +80,7 @@ When sorting is applied, pinned rows are reordered using the same sorting rules 
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/rows-pinning-cs4" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/rows-pinning-cs4" %}
 
 ## CRUD operations with row pinning
 
@@ -95,7 +95,7 @@ Row pinning fully supports CRUD operations with automatic synchronization betwee
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/rows-pinning-cs5" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/rows-pinning-cs5" %}
 
 ## Dynamic row pinning
 
@@ -110,4 +110,4 @@ Dynamic row pinning is available through the built-in context menu, allowing qui
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/rows-pinning-cs6" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/rows-pinning-cs6" %}

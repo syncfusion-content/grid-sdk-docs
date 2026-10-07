@@ -53,7 +53,7 @@ The following example registers a custom function named `CUSTOMSUM`. It accepts 
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/grid-sdk/angular/grid/formula-cs4" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/formula-cs4" %}
 
 ## Add and remove formulas in programmatic way
 

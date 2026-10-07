@@ -58,7 +58,7 @@ The following example displays the sum of the "Freight" field in the footer of e
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/aggregates-group-cs1" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/aggregates-group-cs1" %}
 
 > Inside the template, access each aggregate value using its [type](https://ej2.syncfusion.com/angular/documentation/api/grid/aggregateColumn#type) name. For example, use `data.sum` to access the sum aggregate and `data.max` to access the maximum aggregate.
 
@@ -100,7 +100,7 @@ The following example displays the max of the "Freight" field in the each group 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/aggregates-group-cs2" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/aggregates-group-cs2" %}
 
 > By default, the group total summary is calculated for the current page records within each group. Set [groupSettings.disablePageWiseAggregates](https://ej2.syncfusion.com/angular/documentation/api/grid/groupSettings#disablepagewiseaggregates) to `true` to calculate aggregates using all records in the grouped dataset.
 
@@ -148,7 +148,7 @@ To calculate aggregates across the entire grouped data, set the [groupSettings.d
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/aggregates-group-cs3" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/aggregates-group-cs3" %}
 
 ## See also
 

@@ -30,7 +30,7 @@ To enable the Excel like filtering, set the [filterSettings.type](https://ej2.sy
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/excel-like-filtering-cs1" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/excel-like-filtering-cs1" %}
 
 > * The Excel-like filter feature supports various filter conditions, including text-based, number-based, date-based, and boolean-based filters.
 > * The filter dialog provides additional options, such as sorting filter values, searching for specific values, and clearing applied filters.
@@ -53,7 +53,7 @@ The following example demonstrates to implement checkbox filtering in the Syncfu
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/check-box-filter-cs1" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/check-box-filter-cs1" %}
 
 ## Customize the filter choice count
 
@@ -75,7 +75,7 @@ The following example demonstrates to customize the filter choice count in the c
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/excel-like-filtering-cs2" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/excel-like-filtering-cs2" %}
 
 > The specified filter choice count value determines the display of unique items as checkbox list in the `Excel/Checkbox` type filter dialog. Higher values may result in rendering delays when opening the filter dialog. Therefore, setting a reasonable filter choice count value is recommended for optimal performance.
 
@@ -153,7 +153,7 @@ export class AppComponent implements OnInit {
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/excel-like-filtering-cs7" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/excel-like-filtering-cs7" %}
 
 ## Show template in checkbox list data
 
@@ -221,7 +221,7 @@ export class AppComponent implements OnInit {
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/excel-like-filtering-cs4" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/excel-like-filtering-cs4" %}
 
 ## Customize the excel filter dialog using CSS
 
@@ -252,7 +252,7 @@ The following example demonstrates context menu removal in the Excel filter dial
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/excel-like-filtering-cs8" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/excel-like-filtering-cs8" %}
 
 ## Bind custom remote datasource for excel/checkbox filtering
 
@@ -272,7 +272,7 @@ The following example demonstrates to dynamically change the remote custom data 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/filtering-custom-datasouce-cs1" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/filtering-custom-datasouce-cs1" %}
 
 ## Hide sorting option in filter dialog
 
@@ -298,7 +298,7 @@ The following example demonstrates to hide sorting options in the Excel filter d
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/excel-like-filtering-hide" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/excel-like-filtering-hide" %}
 
 ## Render checkbox list data in on-demand for excel/checkbox filtering
 
@@ -344,7 +344,7 @@ The following example demonstrates On-Demand Excel filter implementation for the
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/checkbox-excel-filter" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/checkbox-excel-filter" %}
 
 ## See also
 

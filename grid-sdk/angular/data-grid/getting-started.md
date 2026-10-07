@@ -243,7 +243,7 @@ bootstrapApplication(App, appConfig)
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/paging-cs1" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/paging-cs1" %}
 
 ## Run the application
 

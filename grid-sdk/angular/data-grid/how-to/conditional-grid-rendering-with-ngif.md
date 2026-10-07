@@ -26,4 +26,4 @@ The following example demonstrates toggling the grid's visibility with a [button
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/conditional-rendering" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/conditional-rendering" %}
