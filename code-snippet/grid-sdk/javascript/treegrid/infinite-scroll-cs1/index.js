@@ -1,5 +1,5 @@
 ej.treegrid.TreeGrid.Inject(ej.treegrid.InfiniteScroll);
-var dataSource();
+dataSource();
 var treegrid = new ej.treegrid.TreeGrid({
         dataSource: virtualData,
         enableInfiniteScrolling: true,
