@@ -2,7 +2,7 @@
 layout: post
 title: Excel Export in Blazor Pivot Table | Syncfusion
 description: Learn how the Blazor Pivot Table exports data to an Excel document via ExportToExcelAsync, returning either a direct download or an in-memory stream.
-platform: Blazor
+platform: grid-sdk
 control: Pivot Table
 documentation: ug
 ---

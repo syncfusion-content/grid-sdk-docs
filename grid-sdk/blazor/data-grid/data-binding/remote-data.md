@@ -53,7 +53,7 @@ To configure remote data binding:
 
 [OData](https://www.odata.org/documentation/) (Open Data Protocol) is a standardized protocol that simplifies data sharing across different systems by enabling querying and updating data through RESTful APIs. The Blazor DataGrid provides built-in support for **OData v3** and **v4** services using [DataManager](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Data.SfDataManager.html).
 
-The `DataManager` communicates with the remote OData service using either [ODataAdaptor](https://blazor.syncfusion.com/documentation/data/adaptors#odata-adaptor) or [ODataV4Adaptor](https://blazor.syncfusion.com/documentation/datagrid/connecting-to-adaptors/odatav4-adaptor), depending on the protocol version.
+The `DataManager` communicates with the remote OData service using either [ODataAdaptor](https://blazor.syncfusion.com/documentation/data/adaptors#odata-adaptor) or [ODataV4Adaptor](https://help.syncfusion.com/grid-sdk/blazor/data-grid/connecting-to-adaptors/odatav4-adaptor), depending on the protocol version.
 
 * Use `ODataAdaptor` for **OData v3** services.
 * Use `ODataV4Adaptor` for **OData v4** services.
@@ -157,7 +157,7 @@ The [SfDataManager](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Data
 3. Use a custom [HTTP message handler](https://learn.microsoft.com/en-us/aspnet/web-api/overview/advanced/httpclient-message-handlers) for advanced scenarios such as logging or request modification.
 For details on registering a custom handler, see the [Microsoft ASP.NET Core documentation](https://learn.microsoft.com/en-us/aspnet/core/fundamentals/http-requests?view=aspnetcore-10.0).
 
-> [Typed clients](https://learn.microsoft.com/en-us/aspnet/core/fundamentals/http-requests?view=aspnetcore-10.0#typed-clients) are not supported with `SfDataManager`. For similar functionality, use [custom binding](https://blazor.syncfusion.com/documentation/datagrid/connecting-to-adaptors/custom-adaptor).
+> [Typed clients](https://learn.microsoft.com/en-us/aspnet/core/fundamentals/http-requests?view=aspnetcore-10.0#typed-clients) are not supported with `SfDataManager`. For similar functionality, use [custom binding](https://help.syncfusion.com/grid-sdk/blazor/data-grid/connecting-to-adaptors/custom-adaptor).
 
 ## Authorization and Authentication
 

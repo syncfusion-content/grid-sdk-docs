@@ -2,7 +2,7 @@
 layout: post
 title: Dapper in Blazor Pivot Table | Syncfusion
 description: Learn how to connect the Blazor Pivot Table to SQL Server with the Dapper micro-ORM for parameterized queries with minimal data-access overhead.
-platform: Blazor
+platform: grid-sdk
 control: Pivot Table
 documentation: ug
 ---

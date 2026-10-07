@@ -2,7 +2,7 @@
 layout: post
 title: Sorting in Blazor Pivot Table | Syncfusion
 description: Learn how the Blazor Pivot Table sorts field members in ascending or descending order via the sort icon, PivotViewSortSettings, or value-based sorting.
-platform: Blazor
+platform: grid-sdk
 control: Pivot Table
 documentation: ug
 ---

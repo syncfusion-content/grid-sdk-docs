@@ -547,7 +547,7 @@ CRUD operations within the Blazor Grid can be mapped to server-side controller a
 4. **CrudUrl**: Specifies a single URL for all CRUD operations.
 5. **BatchUrl**: Specifies the URL for batch editing.
 
-To enable editing in Blazor DataGrid, refer to the editing [documentation](https://blazor.syncfusion.com/documentation/datagrid/editing). In the example below, the inline edit [Mode](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridEditSettings.html#Syncfusion_Blazor_Grids_GridEditSettings_Mode) is enabled, and the [Toolbar](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.SfGrid-1.html#Syncfusion_Blazor_Grids_SfGrid_1_Toolbar) property is configured to display toolbar items for editing purposes.
+To enable editing in Blazor DataGrid, refer to the editing [documentation](https://help.syncfusion.com/grid-sdk/blazor/data-grid/editing). In the example below, the inline edit [Mode](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridEditSettings.html#Syncfusion_Blazor_Grids_GridEditSettings_Mode) is enabled, and the [Toolbar](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.SfGrid-1.html#Syncfusion_Blazor_Grids_SfGrid_1_Toolbar) property is configured to display toolbar items for editing purposes.
 
 {% tabs %}
 {% highlight razor tabtitle="Index.razor" %}

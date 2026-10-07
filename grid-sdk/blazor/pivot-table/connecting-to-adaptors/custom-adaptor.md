@@ -2,7 +2,7 @@
 layout: post
 title: Custom Adaptor in Blazor Pivot Table | Syncfusion
 description: Learn how to implement a custom data adaptor for the Blazor Pivot Table by extending DataAdaptor and overriding the Read, Insert, Update, and Remove methods.
-platform: Blazor
+platform: grid-sdk
 control: PivotView
 keywords: adaptors, CustomAdaptor, custom adaptor, remotedata, custombinding, custom binding
 documentation: ug

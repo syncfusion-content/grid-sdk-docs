@@ -2,7 +2,7 @@
 layout: post
 title: MySQL in Blazor Pivot Table | Syncfusion
 description: Learn how to load and edit MySQL data in the Blazor Pivot Table through an ASP.NET Core API using MySql.Data and the Syncfusion URL adaptor.
-platform: Blazor
+platform: grid-sdk
 control: PivotTable
 documentation: ug
 ---

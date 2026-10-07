@@ -2,7 +2,7 @@
 layout: post
 title: Blazor Pivot Table Real-time Updates Using SignalR | Syncfusion
 description: Learn how to use SignalR to push real-time updates into the Syncfusion Blazor Pivot Table with live data synchronization and automatic refresh.
-platform: Blazor
+platform: grid-sdk
 control: PivotTable
 documentation: ug
 ---

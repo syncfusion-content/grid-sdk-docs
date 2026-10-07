@@ -2,7 +2,7 @@
 layout: post
 title: Blazor Pivot Table with MongoDB via URL Adaptor | Syncfusion®
 description: Bind a MongoDB database to the Blazor Pivot Table through an ASP.NET Core API and the Syncfusion URL Adaptor.
-platform: Blazor
+platform: grid-sdk
 control: PivotTable
 documentation: ug
 ---

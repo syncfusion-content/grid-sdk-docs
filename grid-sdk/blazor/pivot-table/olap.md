@@ -2,7 +2,7 @@
 layout: post
 title: OLAP in Blazor Pivot Table | Syncfusion
 description: Learn how the Blazor Pivot Table connects to an OLAP cube such as SQL Server Analysis Services via ProviderType.SSAS, Catalog, Cube, and URL properties.
-platform: Blazor
+platform: grid-sdk
 control: Pivot Table
 documentation: ug
 ---
