@@ -817,7 +817,7 @@ The Blazor framework script (`_framework/blazor.web.js`) and the Syncfusion Blaz
 
 For this project, the **tailwind3** theme is used. A different theme can be selected or the existing theme can be customized based on project requirements. Refer to the [Blazor Components Appearance](https://blazor.syncfusion.com/documentation/appearance/themes) documentation to learn more about theming and customization options.
 
-Blazor components are now configured and ready to use. For additional guidance, refer to the [Pivot Table component's getting‑started](https://blazor.syncfusion.com/documentation/pivot-table/getting-started-webapp) documentation.
+Blazor components are now configured and ready to use. For additional guidance, refer to the [Pivot Table component's getting‑started](https://help.syncfusion.com/grid-sdk/blazor/pivot-table/getting-started-webapp) documentation.
 
 ### Step 2: Create the Blazor PivotView
 
@@ -1414,7 +1414,7 @@ The most common issues encountered when wiring the Pivot Table to a Hot Chocolat
 
 ## Complete Sample Repository
 
-A complete, working sample implementation is available in the [GitHub repository](https://github.com/SyncfusionExamples/syncfusion-blazor-pivot-table-remote-data-binding/tree/master/GraphQLAdaptor).
+A complete, working sample implementation is available in the [GitHub repository](https://github.com/SyncfusionExamples/syncfusion-blazor-pivot-table-adaptors/tree/master/GraphQLAdaptor).
 
 ## Summary
 

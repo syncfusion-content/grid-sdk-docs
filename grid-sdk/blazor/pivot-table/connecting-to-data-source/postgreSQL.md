@@ -549,7 +549,7 @@ Replace `Components/Pages/Home.razor` with:
 
 `BeginDrillThrough` marks `OrderID` as the edit grid's primary key. The URL Adaptor sends the edited record, including `OrderID`, to the update endpoint and sends the primary-key value in `key` to the delete endpoint.
 
-The editing APIs shown here are tested with the Syncfusion version listed in the prerequisites. See [editing in the Blazor Pivot Table](https://blazor.syncfusion.com/documentation/pivot-table/editing) and the [`BeginDrillThroughEventArgs` API](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.PivotView.BeginDrillThroughEventArgs.html) when using another package version.
+The editing APIs shown here are tested with the Syncfusion version listed in the prerequisites. See [editing in the Blazor Pivot Table](https://help.syncfusion.com/grid-sdk/blazor/pivot-table/editing) and the [`BeginDrillThroughEventArgs` API](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.PivotView.BeginDrillThroughEventArgs.html) when using another package version.
 
 ## Build and Verify the Application
 
@@ -641,7 +641,7 @@ Representative payloads are:
 
 ## Complete Sample Repository
 
-A complete, working sample implementation is available in the [GitHub repository](https://github.com/SyncfusionExamples/syncfusion-blazor-pivot-table-PostgreSQL-database-binding-sample).
+A complete, working sample implementation is available in the [GitHub repository](https://github.com/SyncfusionExamples/syncfusion-blazor-pivot-table-postgresql).
 
 ## Summary
 

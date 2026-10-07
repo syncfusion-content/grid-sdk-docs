@@ -519,4 +519,4 @@ Double-clicking any aggregated value cell opens the drill-through editor, where 
 
 ## GitHub Sample
 
-A complete reference sample is available on [GitHub](https://github.com/SyncfusionExamples/syncfusion-blazor-pivot-table-remote-data-binding/tree/master/ODataV4Adaptor).
+A complete reference sample is available on [GitHub](https://github.com/SyncfusionExamples/syncfusion-blazor-pivot-table-adaptors/tree/master/ODataV4Adaptor).

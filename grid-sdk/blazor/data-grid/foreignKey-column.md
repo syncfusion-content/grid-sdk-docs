@@ -770,7 +770,7 @@ By default, the DataGrid generates a filter query for foreign key columns based 
 
 ## Render foreign key value in column template
 
-The Blazor DataGrid supports rendering foreign key values within a [column template](https://blazor.syncfusion.com/documentation/datagrid/column-template), enabling display of descriptive values from a related data source instead of the underlying foreign key. This approach is useful when a foreign key refers to an ID and a corresponding name or label needs to be shown.
+The Blazor DataGrid supports rendering foreign key values within a [column template](https://help.syncfusion.com/grid-sdk/blazor/data-grid/column-template), enabling display of descriptive values from a related data source instead of the underlying foreign key. This approach is useful when a foreign key refers to an ID and a corresponding name or label needs to be shown.
 
 To configure this feature, define a column using the [Template](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridColumn.html#Syncfusion_Blazor_Grids_GridColumn_Template) property and bind the required value from the foreign key mapping.
 
@@ -1005,7 +1005,7 @@ The Blazor DataGrid supports customizing the edit template for foreign key colum
 2. Render `SfDataManager` inside the foreign key column for remote foreign data.
 3. Use `EditTemplate` to render a custom component like [SfAutoComplete](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.DropDowns.SfAutoComplete-2.html), bind the foreign key field using [@bind-Value](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.DropDowns.SfDropDownList-2.html#Syncfusion_Blazor_DropDowns_SfDropDownList_2_Value), and configure [AutoCompleteFieldSettings](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.DropDowns.AutoCompleteFieldSettings.html) with [Text](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.DropDowns.AutoCompleteFieldSettings.html#Syncfusion_Blazor_DropDowns_AutoCompleteFieldSettings_Text) and [Value](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.DropDowns.AutoCompleteFieldSettings.html#Syncfusion_Blazor_DropDowns_AutoCompleteFieldSettings_Value).
 
-> For detailed configuration of remote data operations, refer to the [UrlAdaptor documentation](https://blazor.syncfusion.com/documentation/datagrid/connecting-to-adaptors/url-adaptor).
+> For detailed configuration of remote data operations, refer to the [UrlAdaptor documentation](https://help.syncfusion.com/grid-sdk/blazor/data-grid/connecting-to-adaptors/url-adaptor).
 
 {% tabs %}
 {% highlight razor tabtitle="Home.razor" %}
