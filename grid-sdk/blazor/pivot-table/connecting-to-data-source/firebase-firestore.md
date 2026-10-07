@@ -2,7 +2,7 @@
 layout: post
 title: Connect Firebase Firestore to Blazor Pivot Table | Syncfusion®
 description: Bind a Firebase Firestore database to the Blazor Pivot Table through an ASP.NET Core API and the Syncfusion URL Adaptor.
-platform: Blazor
+platform: grid-sdk
 control: PivotTable
 documentation: ug
 ---

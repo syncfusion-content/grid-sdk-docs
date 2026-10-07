@@ -2,7 +2,7 @@
 layout: post
 title: Drill Down in Blazor Pivot Table | Syncfusion
 description: Learn how the Blazor Pivot Table expands and collapses hierarchical row and column members for drill down and drill up, including drill position and Expand All.
-platform: Blazor
+platform: grid-sdk
 control: Pivot Table
 documentation: ug
 ---
