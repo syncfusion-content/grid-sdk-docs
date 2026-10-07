@@ -23,9 +23,7 @@ The Server side export functionality is shipped in the Syncfusion.EJ2.TreeGridEx
 
 The following code snippet shows server configuration using ASP.NET Core Controller Action.
 
-To Export the tree grid in server side, You need to call the [`serverExcelExport`](https://ej2.syncfusion.com/documentation/api/treegrid#serverexcelexport) method for passing the tree grid properties to server exporting action.
-
-{% if page.publishingplatform == "aspnet-core" %}
+To Export the tree grid in server side, You need to call the [`serverExcelExport`](https://ej2.syncfusion.com/documentation/api/treegrid/#serverexcelexport) method for passing the tree grid properties to server exporting action.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -36,25 +34,11 @@ To Export the tree grid in server side, You need to call the [`serverExcelExport
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/tree-grid/excel-export/server-export/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Server-exportCore.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/tree-grid/excel-export/server-export/server-exportCore.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
 ## CSV Export in server side
 
-You can export the tree grid to CSV format by using the [`serverCsvExport`](https://ej2.syncfusion.com/documentation/api/treegrid#servercsvexport) method which will pass the tree grid properties to server.
+You can export the tree grid to CSV format by using the [`serverCsvExport`](https://ej2.syncfusion.com/documentation/api/treegrid/index-default#servercsvexport) method which will pass the tree grid properties to server.
 
-In the below demo, we have invoked the above method inside the [`toolbarClick`](https://ej2.syncfusion.com/documentation/api/treegrid#toolbarclick) event. In server side, we have deserialized the tree grid properties and passed to the `CsvExport` method which will export the properties to CSV format.
-
-{% if page.publishingplatform == "aspnet-core" %}
+In the below demo, we have invoked the above method inside the [`toolbarClick`](https://ej2.syncfusion.com/documentation/api/treegrid/index-default#toolbarclick) event. In server side, we have deserialized the tree grid properties and passed to the `CsvExport` method which will export the properties to CSV format.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -65,20 +49,6 @@ In the below demo, we have invoked the above method inside the [`toolbarClick`](
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/tree-grid/excel-export/server-csv-export/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Server-exportCore.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/tree-grid/excel-export/server-csv-export/server-exportCore.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
-
 ## Rotate a header text to a certain degree in the exported tree grid on the server side
 
 The Tree Grid has support to customize the column header styles such as changing text orientation, the font color, and so on in the exported Excel file. To achieve this requirement, use the `ExcelHeaderCellRendering` event of the tree grid.
@@ -86,8 +56,6 @@ The Tree Grid has support to customize the column header styles such as changing
 The `ExcelHeaderCellRendering` will be triggered when creating a column header for the excel document to be exported in the server side. Customize the column header in this event.
 
 In the following demo, using the `HeaderCellRotate` method of the `TreeGridExcelExport` class in the `ExcelHeaderCellRendering` event, you can rotate the header text of the column header in the excel exported document.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -97,15 +65,3 @@ In the following demo, using the `HeaderCellRotate` method of the `TreeGridExcel
 {% include code-snippet/grid-sdk/asp-net-core/tree-grid/excel-export/server-rotate-header/server-rotate-header.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/tree-grid/excel-export/server-rotate-header/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Server-RotateHeader.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/tree-grid/excel-export/server-rotate-header/server-rotate-header.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
