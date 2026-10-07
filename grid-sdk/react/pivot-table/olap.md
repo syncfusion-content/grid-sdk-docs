@@ -84,21 +84,32 @@ npm install @syncfusion/ej2-react-pivotview --save
 
 ### Adding CSS Reference
 
-To style the [Pivot Table](https://www.syncfusion.com/react-components/react-pivot-table), include the necessary CSS files for the Pivot Table and its [dependent](#dependencies) components in the **src/App.css** file. For this example, we use the **tailwind3** theme to ensure a consistent and modern appearance. Add the following code to import the required styles:
+Themes for Syncfusion<sup style="font-size:70%">&reg;</sup> React components can be applied using CSS or SASS files from the [npm theme packages](https://ej2.syncfusion.com/react/documentation/appearance/theme#theme-packages), CDN, CRG, or [Theme Studio](https://ej2.syncfusion.com/react/documentation/appearance/theme-studio). For more information, see the [themes documentation](https://ej2.syncfusion.com/react/documentation/appearance/theme).
 
-```css
-@import "../ej2-tailwind3-theme/styles/pivotview/index.css";
-```
+This guide uses the `Tailwind 3` theme as an example, sourced from the theme package. In this package, each component includes an `index.css` file that automatically loads all the required dependency styles. To install the [Tailwind 3](https://www.npmjs.com/package/@syncfusion/ej2-tailwind3-theme) theme package, use the following command:
 
-These styles ensure the [Pivot Table](https://www.syncfusion.com/react-components/react-pivot-table) and its related components, such as buttons and dropdowns, display correctly. You can also use other themes like **bootstrap**, **fabric**, or **high-contrast** to match your application's look. For details on individual component styles, refer to the [Syncfusion theme documentation](https://ej2.syncfusion.com/react/documentation/appearance/theme-studio).
+{% tabs %}
+{% highlight bash tabtitle="npm" %}
 
-Next, import the **App.css** file into your application by adding the following line in the **src/App.tsx** (for TypeScript) or **src/App.jsx** (for JavaScript) file:
+npm install @syncfusion/ej2-tailwind3-theme --save
 
-```js
-import './App.css';
-```
+{% endhighlight %}
+{% highlight bash tabtitle="yarn" %}
 
-This import applies the CSS styles to your React application, enabling the [Pivot Table](https://www.syncfusion.com/react-components/react-pivot-table) to render with the **tailwind3** theme.
+yarn add @syncfusion/ej2-tailwind3-theme
+
+{% endhighlight %}
+{% endtabs %}
+
+By default, Vite projects include a `src/index.css` file with default styles. These default styles may conflict with Syncfusion component styles. Replace the contents of `src/index.css` with the following import to apply the Pivot Table theme styles:
+
+{% tabs %}
+{% highlight css tabtitle="src/index.css" %}
+
+@import '../node_modules/@syncfusion/ej2-tailwind3-theme/styles/pivotview/index.css';
+
+{% endhighlight %}
+{% endtabs %}
 
 ### Adding Pivot Table Component
 
