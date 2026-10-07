@@ -1051,7 +1051,7 @@ public class OrderDetails
 {% endhighlight %}
 {% endtabs %}
 
-> The Blazor DataGrid component includes a built-in feature to customize tooltip content for both header cells and content cells. For more information, refer to the documentation [here](https://blazor.syncfusion.com/documentation/datagrid/cell#show-tooltip).
+> The Blazor DataGrid component includes a built-in feature to customize tooltip content for both header cells and content cells. For more information, refer to the documentation [here](https://help.syncfusion.com/grid-sdk/blazor/data-grid/cell#show-tooltip).
 
 {% previewsample "https://blazorplayground.syncfusion.com/embed/LtrJirtAJDjvaNlx?appbar=false&editor=false&result=true&errorlist=false&theme=bootstrap5" %}
 

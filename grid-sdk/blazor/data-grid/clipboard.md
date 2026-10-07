@@ -204,7 +204,7 @@ The AutoFill feature in the Blazor DataGrid allows quick data entry by copying v
 3. Drag the handle to the target cells.
 4. Release the mouse to populate the target cells with the copied data.
 
-To enable AutoFill, set the [EnableAutoFill](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.SfGrid-1.html#Syncfusion_Blazor_Grids_SfGrid_1_EnableAutoFill) property to **true** and use [Batch editing](https://blazor.syncfusion.com/documentation/datagrid/batch-editing) to allow copying values across multiple cells.
+To enable AutoFill, set the [EnableAutoFill](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.SfGrid-1.html#Syncfusion_Blazor_Grids_SfGrid_1_EnableAutoFill) property to **true** and use [Batch editing](https://help.syncfusion.com/grid-sdk/blazor/data-grid/batch-editing) to allow copying values across multiple cells.
 
 {% tabs %}
 {% highlight razor tabtitle="Index.razor" %}
@@ -379,7 +379,7 @@ internal sealed class OrderData
 
 {% previewsample "https://blazorplayground.syncfusion.com/embed/LDBoWNsGJziFNQMu?appbar=false&editor=false&result=true&errorlist=false&theme=bootstrap5" %}
 
-> To paste content, set selection [Mode](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridSelectionSettings.html#Syncfusion_Blazor_Grids_GridSelectionSettings_Mode) to **Cell**, set [CellSelectionMode](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridSelectionSettings.html#Syncfusion_Blazor_Grids_GridSelectionSettings_CellSelectionMode) to **Box**, and enable [Batch editing](https://blazor.syncfusion.com/documentation/datagrid/batch-editing).
+> To paste content, set selection [Mode](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridSelectionSettings.html#Syncfusion_Blazor_Grids_GridSelectionSettings_Mode) to **Cell**, set [CellSelectionMode](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridSelectionSettings.html#Syncfusion_Blazor_Grids_GridSelectionSettings_CellSelectionMode) to **Box**, and enable [Batch editing](https://help.syncfusion.com/grid-sdk/blazor/data-grid/batch-editing).
 
 ### Limitations
 

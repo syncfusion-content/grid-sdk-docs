@@ -182,7 +182,7 @@ public class OrderDetails
 * With row virtual scrolling, copy-paste and drag-and-drop apply only to items within the current viewport.
 * Cell-based selection is not supported for row virtual scrolling.
 * Variable row heights in template columns—where each row has a different height—are not supported.
-* By default, the group expand/collapse state is not persisted. To persist the state, set the [GridGroupSettings.PersistGroupState](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridGroupSettings.html#Syncfusion_Blazor_Grids_GridGroupSettings_PersistGroupState) property to **true**.  For more details, refer to the [documentation](https://blazor.syncfusion.com/documentation/datagrid/grouping#persist-grouped-row-expand-or-collapse-state).
+* By default, the group expand/collapse state is not persisted. To persist the state, set the [GridGroupSettings.PersistGroupState](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridGroupSettings.html#Syncfusion_Blazor_Grids_GridGroupSettings_PersistGroupState) property to **true**.  For more details, refer to the [documentation](https://help.syncfusion.com/grid-sdk/blazor/data-grid/grouping#persist-grouped-row-expand-or-collapse-state).
 * Due to browser element height limits, the maximum number of records is bounded by browser capabilities.
 * Blazor Grid content height is calculated from row height and total record count; features that change row height (such as text wrapping) are not supported.
 * To increase row height while keeping all rows uniform, specify a fixed height:
@@ -1070,4 +1070,4 @@ To enable external refresh of the virtualized Blazor Grid, set [EnableVirtualiza
 
 ## See also
 
-* [Row virtualization with Lazy load grouping in Blazor Grid](https://blazor.syncfusion.com/documentation/datagrid/lazy-load-grouping#lazy-load-grouping-with-virtual-scrolling)
+* [Row virtualization with Lazy load grouping in Blazor Grid](https://help.syncfusion.com/grid-sdk/blazor/data-grid/lazy-load-grouping#lazy-load-grouping-with-virtual-scrolling)
