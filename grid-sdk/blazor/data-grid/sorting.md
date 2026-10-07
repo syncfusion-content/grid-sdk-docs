@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Sorting in Blazor DataGrid | Syncfusion®
-description: Explore sorting in Blazor DataGrid including single/multi-column sort, initial sort, custom icons, foreign key sorting, and sorting events.
+title: Blazor Grid Sorting | Syncfusion®
+description: Learn Blazor Data Grid sorting with single-column, multi-column, custom, foreign-key, culture-aware and programmatic sorting capabilities.
 platform: grid-sdk
 control: DataGrid
 documentation: ug
