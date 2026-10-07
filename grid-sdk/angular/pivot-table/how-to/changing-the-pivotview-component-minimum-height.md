@@ -8,9 +8,9 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# How to Change the Minimum Height in Angular Pivot Table
+# How to change the minimum height of the Angular Pivot Table
 
-The `minHeight` property allows you to set the minimum height for the Angular Pivotview component. By default, the component maintains a minimum height of **300px**. This property ensures the component remains visible and functional even when the container height is smaller than the specified minimum value.
+The `minHeight` property allows you to set the minimum height for the Angular Pivot Table component. By default, the component maintains a minimum height of **300px**. This property ensures the component remains visible and functional even when the container height is smaller than the specified minimum value.
 
 When the content exceeds the minimum height, the component automatically adjusts to accommodate the data. This property is particularly useful for responsive layouts where the component needs to maintain usability across different screen sizes.
 
