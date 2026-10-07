@@ -655,7 +655,7 @@ N> If you want to handle filtering, sorting, and paging operations using Dynamic
 
 ## Handling CRUD operations
 
-To manage CRUD (Create, Read, Update, and Delete) operations using the WebApiAdaptor in Blazor DataGrid, follow the provided guide for configuring the Blazor Grid for [editing](https://blazor.syncfusion.com/documentation/datagrid/editing) and utilize the sample implementation of the `GridController` in your server application. This controller handles HTTP requests for CRUD operations such as **GET, POST, PUT,** and **DELETE**.
+To manage CRUD (Create, Read, Update, and Delete) operations using the WebApiAdaptor in Blazor DataGrid, follow the provided guide for configuring the Blazor Grid for [editing](https://help.syncfusion.com/grid-sdk/blazor/data-grid/editing) and utilize the sample implementation of the `GridController` in your server application. This controller handles HTTP requests for CRUD operations such as **GET, POST, PUT,** and **DELETE**.
 
 To enable CRUD operations in the Blazor Grid, follow the steps below:
 
