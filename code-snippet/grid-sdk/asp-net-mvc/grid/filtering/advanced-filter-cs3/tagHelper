@@ -3,11 +3,9 @@
     <button type="button" id="apply">Apply rule</button>
     <button type="button" id="set">Set rule</button>
     <button type="button" id="get">Get rule</button>
-    <button type="button" id="predicate">Get predicate</button>
-    <button type="button" id="isApplied">Check filter</button>
     <button type="button" id="clear">Clear filter</button>
 
-    <ejs-grid id="grid" dataSource="@ViewBag.dataSource" enableVirtualization="true" allowSorting="true" height="400px" rowHeight="45" load="load" advancedFilterOpen="advancedFilterOpen" allowAdvancedFiltering="true" toolbar="@(new List<string>() { "AdvancedFilter" })">
+    <ejs-grid id="grid" dataSource="@ViewBag.dataSource" enableVirtualization="true" allowSorting="true" height="400px" rowHeight="45" load="load" allowAdvancedFiltering="true" toolbar="@(new List<string>() { "AdvancedFilter" })">
     <e-grid-pageSettings pageSize="50"></e-grid-pageSettings>
     <e-grid-columns>
         <e-grid-column field="TicketID" headerText="Ticket ID" textAlign="Right" width="120" isPrimaryKey="true"></e-grid-column>
@@ -24,7 +22,6 @@
 
 <script>
     var gridInstance;
-    var closeButton = false;
 
     var initialAdvancedFilterRule = {
         condition: 'and',
@@ -64,26 +61,9 @@
         });
     }
 
-    function advancedFilterOpen(args) {
-        if (closeButton) {
-            return;
-        }
-
-        args.dialog.buttons = args.dialog.buttons.concat({
-            buttonModel: { content: 'Close dialog' },
-            click: function () {
-                gridInstance.closeAdvancedFilterDialog();
-            }
-        });
-        args.dialog.dataBind();
-        closeButton = true;
-    }
-
     document.getElementById('open').onclick = function () { gridInstance.openAdvancedFilterDialog(); };
     document.getElementById('apply').onclick = function () { gridInstance.applyAdvancedFilter(initialAdvancedFilterRule); };
     document.getElementById('set').onclick = function () { gridInstance.setAdvancedFilter(initialAdvancedFilterRule); };
     document.getElementById('get').onclick = function () { console.log(gridInstance.getAdvancedFilter()); };
-    document.getElementById('predicate').onclick = function () { console.log(gridInstance.getPredicateFromRule(initialAdvancedFilterRule)); };
-    document.getElementById('isApplied').onclick = function () { console.log(gridInstance.isAdvancedFilterApplied()); };
     document.getElementById('clear').onclick = function () { gridInstance.clearAdvancedFilter(); };
 </script>

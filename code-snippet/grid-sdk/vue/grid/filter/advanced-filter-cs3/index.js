@@ -34,13 +34,11 @@ new Vue({
         <button id="apply" @click="applyAdvancedFilter">Apply rule</button>
         <button id="set" @click="setAdvancedFilter">Set rule</button>
         <button id="get" @click="getAdvancedFilter">Get rule</button>
-        <button id="predicate" @click="getPredicate">Get predicate</button>
-        <button id="isApplied" @click="isAdvancedFilterApplied">Check filter</button>
         <button id="clear" @click="clearAdvancedFilter">Clear filter</button>
       <ejs-grid ref="grid" id="Grid" :dataSource="data" :enableVirtualization="true"
         :allowSorting="true" height="400" :allowAdvancedFiltering="true"
         :advancedFilterSettings="advancedFilterSettings" :toolbar="toolbar" :load="load"
-        :advancedFilterOpen="advancedFilterOpen" :rowHeight="45">
+        :rowHeight="45">
         <e-columns>
           <e-column field="TicketID" headerText="Ticket ID" textAlign="Right" width="120"
             :isPrimaryKey="true"></e-column>
@@ -69,17 +67,6 @@ new Vue({
     };
   },
   methods: {
-    advancedFilterOpen(args) {
-      if (this.closeButton) {
-        return;
-      }
-      args.dialog.buttons = args.dialog.buttons.concat({
-        buttonModel: { content: 'Close dialog' },
-        click: () => this.$refs.grid.ej2Instances.closeAdvancedFilterDialog()
-      });
-      args.dialog.dataBind();
-      this.closeButton = true;
-    },
     openAdvancedFilter() {
       this.$refs.grid.ej2Instances.openAdvancedFilterDialog();
     },
@@ -91,12 +78,6 @@ new Vue({
     },
     getAdvancedFilter() {
       console.log(this.$refs.grid.ej2Instances.getAdvancedFilter());
-    },
-    getPredicate() {
-      console.log(this.$refs.grid.ej2Instances.getPredicateFromRule(initialAdvancedFilterRule));
-    },
-    isAdvancedFilterApplied() {
-      console.log(this.$refs.grid.ej2Instances.isAdvancedFilterApplied());
     },
     clearAdvancedFilter() {
       this.$refs.grid.ej2Instances.clearAdvancedFilter();

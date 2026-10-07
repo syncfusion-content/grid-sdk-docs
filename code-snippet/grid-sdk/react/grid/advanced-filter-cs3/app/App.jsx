@@ -3,7 +3,6 @@ import { GridComponent, ColumnsDirective, ColumnDirective, Inject, Sort, Toolbar
 import { ticketdata } from './datasource';
 function App() {
     let gridInstance;
-    let closeButton = false;
     const initialAdvancedFilterRule = {
         condition: 'and',
         rules: [
@@ -33,17 +32,6 @@ function App() {
             args.enableSeamlessScrolling = true;
         }
     }
-    function advancedFilterOpen(args) {
-        if (closeButton) {
-            return;
-        }
-        args.dialog.buttons = args.dialog.buttons.concat({
-            buttonModel: { content: 'Close dialog' },
-            click: function () { gridInstance.closeAdvancedFilterDialog(); }
-        });
-        args.dialog.dataBind();
-        closeButton = true;
-    }
     function openAdvancedFilter() {
         return gridInstance.openAdvancedFilterDialog();
     }
@@ -56,12 +44,6 @@ function App() {
     function getAdvancedFilter() {
         return console.log(gridInstance.getAdvancedFilter());
     }
-    function getPredicate() {
-        return console.log(gridInstance.getPredicateFromRule(initialAdvancedFilterRule));
-    }
-    function isAdvancedFilterApplied() {
-        return console.log(gridInstance.isAdvancedFilterApplied());
-    }
     function clearAdvancedFilter() {
         return gridInstance.clearAdvancedFilter();
     }
@@ -73,11 +55,9 @@ function App() {
                     <button id='apply' onClick={applyAdvancedFilter}>Apply rule</button>
                     <button id='set' onClick={setAdvancedFilter}>Set rule</button>
                     <button id='get' onClick={getAdvancedFilter}>Get rule</button>
-                    <button id='predicate' onClick={getPredicate}>Get predicate</button>
-                    <button id='isApplied' onClick={isAdvancedFilterApplied}>Check filter</button>
                     <button id='clear' onClick={clearAdvancedFilter}>Clear filter</button>
                 </div>
-                <GridComponent ref={(grid) => (gridInstance = grid)} dataSource={ticketdata} enableVirtualization={true} allowSorting={true} load={load.bind(this)} allowAdvancedFiltering={true} toolbar={toolbarOptions} advancedFilterOpen={advancedFilterOpen} rowHeight={45} pageSettings={{ pageSize: 50 }} height={400} advancedFilterSettings={advancedFilterSettings}>
+                <GridComponent ref={(grid) => (gridInstance = grid)} dataSource={ticketdata} enableVirtualization={true} allowSorting={true} load={load.bind(this)} allowAdvancedFiltering={true} toolbar={toolbarOptions} rowHeight={45} pageSettings={{ pageSize: 50 }} height={400} advancedFilterSettings={advancedFilterSettings}>
                     <ColumnsDirective>
                         <ColumnDirective field='TicketID' headerText='Ticket ID' textAlign='Right' width='120' isPrimaryKey={true}></ColumnDirective>
                         <ColumnDirective field='Title' headerText='Title' width='260'></ColumnDirective>

@@ -72,3 +72,6 @@ export default {
 	}
 };
 </script>
+<style>
+ @import "../node_modules/@syncfusion/ej2-material3-theme/styles/grid/index.css";
+</style>

@@ -1,5 +1,5 @@
 import { loadCultureFiles } from '@syncfusion/ej2-base';
-import { Grid, Sort, Toolbar, VirtualScroll, AdvancedFilter, LoadEventArgs, AdvancedFilterOpenEventArgs } from '@syncfusion/ej2-grids';
+import { Grid, Sort, Toolbar, VirtualScroll, AdvancedFilter, LoadEventArgs } from '@syncfusion/ej2-grids';
 import { ticketdata } from './datasource.ts';
 Grid.Inject(Sort, Toolbar, VirtualScroll, AdvancedFilter);
 
@@ -23,8 +23,6 @@ const initialAdvancedFilterRule = {
     ]
 };
 
-let closeButton: boolean = false;
-
 loadCultureFiles();
 let grid: Grid = new Grid({
     dataSource: ticketdata,
@@ -41,17 +39,6 @@ let grid: Grid = new Grid({
         queryBuilderSettings: {
             rule: initialAdvancedFilterRule
         }
-    },
-    advancedFilterOpen: (args: AdvancedFilterOpenEventArgs) => {
-        if (closeButton) {
-            return;
-        }
-        args.dialog.buttons = args.dialog.buttons.concat({
-            buttonModel: { content: 'Close dialog' },
-            click: () => grid.closeAdvancedFilterDialog()
-        });
-        args.dialog.dataBind();
-        closeButton = true;
     },
     pageSettings: { pageSize: 50 },
     allowAdvancedFiltering: true,
@@ -73,6 +60,4 @@ document.getElementById('open')!.onclick = () => grid.openAdvancedFilterDialog()
 document.getElementById('apply')!.onclick = () => grid.applyAdvancedFilter(initialAdvancedFilterRule);
 document.getElementById('set')!.onclick = () => grid.setAdvancedFilter(initialAdvancedFilterRule);
 document.getElementById('get')!.onclick = () => console.log(grid.getAdvancedFilter());
-document.getElementById('predicate')!.onclick = () => console.log(grid.getPredicateFromRule(initialAdvancedFilterRule));
-document.getElementById('isApplied')!.onclick = () => console.log(grid.isAdvancedFilterApplied());
 document.getElementById('clear')!.onclick = () => grid.clearAdvancedFilter();

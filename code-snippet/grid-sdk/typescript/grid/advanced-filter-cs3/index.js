@@ -18,8 +18,6 @@ var initialAdvancedFilterRule = {
     ]
 };
 
-var closeButton = false;
-
 var grid = new ej.grids.Grid({
     dataSource: ticketdata,
     enableVirtualization: true,
@@ -32,17 +30,6 @@ var grid = new ej.grids.Grid({
         queryBuilderSettings: {
             rule: initialAdvancedFilterRule
         }
-    },
-    advancedFilterOpen: function (args) {
-        if (closeButton) {
-            return;
-        }
-        args.dialog.buttons = args.dialog.buttons.concat({
-            buttonModel: { content: 'Close dialog' },
-            click: function () { grid.closeAdvancedFilterDialog(); }
-        });
-        args.dialog.dataBind();
-        closeButton = true;
     },
     load: function (args) {
         if (args) {
@@ -67,6 +54,4 @@ document.getElementById('open').onclick = function () { return grid.openAdvanced
 document.getElementById('apply').onclick = function () { return grid.applyAdvancedFilter(initialAdvancedFilterRule); };
 document.getElementById('set').onclick = function () { return grid.setAdvancedFilter(initialAdvancedFilterRule); };
 document.getElementById('get').onclick = function () { return console.log(grid.getAdvancedFilter()); };
-document.getElementById('predicate').onclick = function () { return console.log(grid.getPredicateFromRule(initialAdvancedFilterRule)); };
-document.getElementById('isApplied').onclick = function () { return console.log(grid.isAdvancedFilterApplied()); };
 document.getElementById('clear').onclick = function () { return grid.clearAdvancedFilter(); };

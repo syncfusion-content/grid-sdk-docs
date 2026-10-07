@@ -18,14 +18,12 @@ import { ticketdata } from './datasource';
       <button (click)="applyAdvancedFilter()">Apply rule</button>
       <button (click)="setAdvancedFilter()">Set rule</button>
       <button (click)="getAdvancedFilter()">Get rule</button>
-      <button (click)="getPredicate()">Get predicate</button>
-      <button (click)="isAdvancedFilterApplied()">Check filter</button>
       <button (click)="clearAdvancedFilter()">Clear filter</button>
     </div>
     <div>
       <ejs-grid #grid id='AdvancedFilter' [dataSource]='data' [allowAdvancedFiltering]='true' [allowSorting]='true'
         [enableVirtualization]='true' [pageSettings]='pageSettings' [advancedFilterSettings]='advancedFilterSettings'
-        height='400' rowHeight='45' [toolbar]='toolbar' (load)='onLoad($event)' (advancedFilterOpen)='onAdvancedFilterOpen($event)'>
+        height='400' rowHeight='45' [toolbar]='toolbar' (load)='onLoad($event)'>
         <e-columns>
           <e-column field='TicketID' headerText='Ticket ID' textAlign='Right' width='120' isPrimaryKey='true'></e-column>
           <e-column field='Title' headerText='Title' width='260'></e-column>
@@ -49,7 +47,6 @@ export class AppComponent implements OnInit {
   public pageSettings: Object;
   public advancedFilterSettings: Object;
   public initialAdvancedFilterRule: Object;
-  public closeButton: boolean = false;
 
   @ViewChild('grid') public grid?: GridComponent;
 
@@ -89,18 +86,6 @@ export class AppComponent implements OnInit {
     }
   }
 
-  public onAdvancedFilterOpen(args: any): void {
-    if (this.closeButton) {
-      return;
-    }
-    args.dialog.buttons = args.dialog.buttons.concat({
-      buttonModel: { content: 'Close dialog' },
-      click: () => this.grid?.closeAdvancedFilterDialog(),
-    });
-    args.dialog.dataBind();
-    this.closeButton = true;
-  }
-
   public openAdvancedFilter(): void {
     this.grid?.openAdvancedFilterDialog();
   }
@@ -115,14 +100,6 @@ export class AppComponent implements OnInit {
 
   public getAdvancedFilter(): void {
     console.log(this.grid?.getAdvancedFilter());
-  }
-
-  public getPredicate(): void {
-    console.log(this.grid?.getPredicateFromRule(this.initialAdvancedFilterRule));
-  }
-
-  public isAdvancedFilterApplied(): void {
-    console.log(this.grid?.isAdvancedFilterApplied());
   }
 
   public clearAdvancedFilter(): void {
