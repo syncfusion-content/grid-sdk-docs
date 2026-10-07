@@ -115,7 +115,7 @@ The following sample demonstrates how to enable or disable the sticky header in 
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/treegrid/sscrolling-sticky-header" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/treegrid/scrolling-sticky-header" %}
 {% endif %}
 
 ## Scroll to selected row
