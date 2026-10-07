@@ -2,7 +2,7 @@
 layout: post
 title: Blazor Pivot Table Firebase Realtime Database Binding | Syncfusion®
 description: Bind a Firebase Realtime Database to the Blazor Pivot Table through an ASP.NET Core API and the Syncfusion UrlAdaptor.
-platform: Blazor
+platform: grid-sdk
 control: PivotTable
 documentation: ug
 ---

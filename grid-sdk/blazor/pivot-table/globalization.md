@@ -2,7 +2,7 @@
 layout: post
 title: Globalization in Blazor Pivot Table | Syncfusion
 description: Learn how to localize the Blazor Pivot Table text and enable right-to-left rendering for Arabic, Farsi, and Urdu via the EnableRtl property.
-platform: Blazor
+platform: grid-sdk
 control: Pivot Table
 documentation: ug
 ---

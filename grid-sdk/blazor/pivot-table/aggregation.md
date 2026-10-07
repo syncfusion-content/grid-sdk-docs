@@ -2,7 +2,7 @@
 layout: post
 title: Aggregation in Blazor Pivot Table | Syncfusion
 description: Learn how the Blazor Pivot Table performs value-axis aggregations such as Sum, Count, Min, Max, Average, running totals, and percentage comparisons.
-platform: Blazor
+platform: grid-sdk
 control: Pivot Table
 documentation: ug
 ---

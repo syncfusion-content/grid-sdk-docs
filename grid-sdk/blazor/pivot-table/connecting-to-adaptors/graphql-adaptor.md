@@ -3,7 +3,7 @@ layout: post
 title: GraphQL Adaptor in Blazor Pivot Table | Syncfusion
 description: Learn how to bind the Blazor Pivot Table to a Hot Chocolate GraphQL server that loads raw relational records and persists CRUD edits as GraphQL mutations.
 control: PivotTable
-platform: blazor
+platform: grid-sdk
 documentation: ug
 ---
 

@@ -2,7 +2,7 @@
 layout: post
 title: Accessibility in Blazor Pivot Table | Syncfusion
 description: Learn how the Blazor Pivot Table complies with WCAG 2.2 and Section 508 guidelines through WAI-ARIA roles, keyboard navigation, and screen reader support.
-platform: Blazor
+platform: grid-sdk
 control: Pivot Table
 documentation: ug
 ---

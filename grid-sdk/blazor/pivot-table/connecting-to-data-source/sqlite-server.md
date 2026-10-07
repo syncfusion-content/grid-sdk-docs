@@ -2,7 +2,7 @@
 layout: post
 title: SQLite in Blazor Pivot Table | Syncfusion
 description: Learn how to load and edit SQLite data in the Blazor Pivot Table through an ASP.NET Core API that uses Microsoft.Data.Sqlite and the Syncfusion URL adaptor.
-platform: Blazor
+platform: grid-sdk
 control: PivotTable
 documentation: ug
 ---

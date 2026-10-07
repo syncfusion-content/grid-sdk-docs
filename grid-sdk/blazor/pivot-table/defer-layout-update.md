@@ -2,7 +2,7 @@
 layout: post
 title: Defer Layout Update in Blazor Pivot Table | Syncfusion
 description: Learn how the Blazor Pivot Table defers layout updates so Field List changes batch into one Apply click, reducing renders for complex reports.
-platform: Blazor
+platform: grid-sdk
 control: Pivot Table
 documentation: ug
 ---
