@@ -2,7 +2,7 @@
 layout: post
 title: Blazor TreeGrid Overview and Features | Syncfusion
 description: Learn how to use Blazor TreeGrid for hierarchical data display, tree data binding, CRUD operations, sorting, filtering, paging, and virtualization.
-platform: Blazor
+platform: grid-sdk
 control: Tree Grid
 documentation: ug
 ---

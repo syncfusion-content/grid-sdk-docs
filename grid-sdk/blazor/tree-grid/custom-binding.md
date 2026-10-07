@@ -11,7 +11,7 @@ documentation: ug
 
 The [SfDataManager](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Data.SfDataManager.html) has custom adaptor support which allows to perform manual operations on the data. This can be utilized for implementing custom data binding and editing operations in the Tree Grid component.
 
-N> Only [Self-Referential type data](https://blazor.syncfusion.com/documentation/treegrid/data-binding#self-referential-data-bindingflat-data) is supported with custom binding in tree grid
+N> Only [Self-Referential type data](https://help.syncfusion.com/grid-sdk/blazor/tree-grid/data-binding#self-referential-data-bindingflat-data) is supported with custom binding in tree grid
 
 For implementing custom data binding in the Tree Grid, the **DataAdaptor** class is used. This abstract class acts as a base class for the custom adaptor.
 

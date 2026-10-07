@@ -236,7 +236,7 @@ public class Employee
 
 ![Blazor TreeGrid column with header template](../images/blazor-treegrid-column-header-template.webp)
 
-N> For Templated TreeGrid component, define the [ModelType](https://blazor.syncfusion.com/documentation/treegrid/templates#template-modeltype) property to enable strong typing inside templates.
+N> For Templated TreeGrid component, define the [ModelType](https://help.syncfusion.com/grid-sdk/blazor/tree-grid/templates#template-modeltype) property to enable strong typing inside templates.
 
 ## Header text
 

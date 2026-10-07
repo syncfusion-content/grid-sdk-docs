@@ -13,7 +13,7 @@ This guide explains how to retrieve data from a MySQL database using the [MySqlC
 Follow these steps to create a Web API service that retrieves data from a MySQL database and prepares it for the Pivot Table.
 
 ### Step 1: Create an ASP.NET Core Web Application
-1. Open Visual Studio and create a new **ASP.NET Core Web App** project named **MyWebService**
+1. Open Visual Studio and create a new **ASP.NET Core Web App** project named **MyWebService**.
 2. Follow the official [Microsoft documentation](https://learn.microsoft.com/en-us/visualstudio/get-started/csharp/tutorial-aspnet-core?view=vs-2022) for detailed instructions on creating an ASP.NET Core Web application.
 
 ![Create ASP.NET Core Web App project](../images/azure-asp-core-web-service-create.png)
@@ -109,7 +109,7 @@ In the **PivotController.cs** file, define a **Get** method that calls **GetMySQ
 
 ### Step 6: Run the Web API Service
 1. Build and run the application in Visual Studio.
-2. The application will be hosted at a URL such as `https://localhost:7146`(the port number may vary based on your configuration).
+2. The application will be hosted at a URL such as `https://localhost:7146` (the port number may vary based on your configuration).
 
 ### Step 7: Verify the JSON Data
 1. Access the Web API endpoint at `https://localhost:7146/Pivot` to view the JSON data retrieved from the MySQL database.
@@ -193,4 +193,4 @@ export class AppComponent implements OnInit {
 ![Pivot table bound with MySQL database](../images/pivottable-with-mysql-data.png)
 
 ### Additional Resources
-Explore a complete example of the Angular Pivot Table integrated with an ASP.NET Core Web Application to fetch data from a MySQL database in this [GitHub](https://github.com/SyncfusionExamples/how-to-bind-MySQL-database-to-pivot-table) repository.
+For a complete example of the Angular Pivot Table integrated with an ASP.NET Core Web Application that fetches data from a MySQL database, see this [GitHub](https://github.com/SyncfusionExamples/how-to-bind-MySQL-database-to-pivot-table) repository.

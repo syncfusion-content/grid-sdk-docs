@@ -194,7 +194,7 @@ The Blazor DataGrid supports rendering other components inside a column using th
 
 ### Render LineChart in a column
 
-The [LineChart](https://blazor.syncfusion.com/documentation/sparkline/getting-started-webapp) offers an elegant way to represent and compare data over time. It displays data points connected by straight line segments to visualize trends.
+The [LineChart](https://help.syncfusion.com/chart-sdk/blazor/sparkline-charts/getting-started-webapp) offers an elegant way to represent and compare data over time. It displays data points connected by straight line segments to visualize trends.
 
 {% tabs %}
 {% highlight razor tabtitle="Index.razor" %}

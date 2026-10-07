@@ -22,7 +22,7 @@ The [UrlAdaptor](https://blazor.syncfusion.com/documentation/data/adaptors#url-a
 - Supports manual implementation of server-side logic.
 - Ideal for RESTful services with custom endpoints.
 
-For implementation details, refer to the [UrlAdaptor documentation](https://blazor.syncfusion.com/documentation/datagrid/connecting-to-adaptors/url-adaptor).
+For implementation details, refer to the [UrlAdaptor documentation](https://help.syncfusion.com/grid-sdk/blazor/data-grid/connecting-to-adaptors/url-adaptor).
 
 **ODataV4Adaptor**
 
@@ -31,7 +31,7 @@ The [ODataV4Adaptor](https://blazor.syncfusion.com/documentation/data/adaptors#o
 - Suitable for modern **OData V4** services.
 - Enables efficient data manipulation and retrieval.
 
-For implementation details, refer to the [ODataV4Adaptor documentation](https://blazor.syncfusion.com/documentation/datagrid/connecting-to-adaptors/odatav4-adaptor).
+For implementation details, refer to the [ODataV4Adaptor documentation](https://help.syncfusion.com/grid-sdk/blazor/data-grid/connecting-to-adaptors/odatav4-adaptor).
 
 **WebApiAdaptor**
 
@@ -40,7 +40,7 @@ The [WebApiAdaptor](https://blazor.syncfusion.com/documentation/data/adaptors#we
 - Automatically maps CRUD operations to Web API endpoints.
 - Useful for applications built with ASP.NET Core Web API.
 
-For implementation details, refer to the [WebApiAdaptor documentation](https://blazor.syncfusion.com/documentation/datagrid/connecting-to-adaptors/web-api-adaptor).
+For implementation details, refer to the [WebApiAdaptor documentation](https://help.syncfusion.com/grid-sdk/blazor/data-grid/connecting-to-adaptors/web-api-adaptor).
 
 **GraphQLAdaptor**
 
@@ -49,7 +49,7 @@ The [GraphQLAdaptor](https://blazor.syncfusion.com/documentation/data/adaptors#g
 - Supports flexible and efficient data querying.
 - Ideal for modern APIs using GraphQL syntax.
 
-For implementation details, refer to the [GraphQLAdaptor documentation](https://blazor.syncfusion.com/documentation/datagrid/connecting-to-adaptors/graphql-adaptor).
+For implementation details, refer to the [GraphQLAdaptor documentation](https://help.syncfusion.com/grid-sdk/blazor/data-grid/connecting-to-adaptors/graphql-adaptor).
 
 
 N> 
