@@ -114,7 +114,7 @@ The [Blazor Pivot Table](https://www.syncfusion.com/blazor-components/blazor-piv
 | **[Report Persistence](./tool-bar#save-and-load-reports-to-a-sql-database)** | Save and retrieve report definitions to and from SQL databases or local storage | Reusable, personalized user reports |
 | **[State Persistence](./state-persistence)** | Maintain component layout, expanded states, and filters across user sessions | Consistent user workflow and state restoration |
 
-## Analytical visualization & layout
+## Analytical visualization & Layout
 
 Transform raw pivot numbers into intuitive graphical charts and customized spreadsheet layouts:
 
