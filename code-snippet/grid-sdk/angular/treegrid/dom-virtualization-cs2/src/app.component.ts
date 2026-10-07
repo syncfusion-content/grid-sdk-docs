@@ -2,14 +2,14 @@ import { NgModule, ViewChild } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { Component, OnInit, ViewEncapsulation, } from '@angular/core';
 import { NgClass } from '@angular/common';
-import { TreeGridAllModule, DomVirtualizationService, SortService } from '@syncfusion/ej2-angular-treegrid';
+import { TreeGridModule, DomVirtualizationService, SortService } from '@syncfusion/ej2-angular-treegrid';
 import { domVirtualizationData, domVirtualizationDataSource } from './datasource';
 
 @Component({
     imports: [TreeGridModule, NgClass],
     standalone: true,
     selector: 'app-container',
-    template: ` <ejs-treegrid id="TreeGrid" [dataSource]="data" height="400"
+    template: `<ejs-treegrid id="TreeGrid" [dataSource]="data" height="400"
         [enableDomVirtualization]="true"
         [treeColumnIndex]="2" idMapping="ItemID" parentIdMapping="ParentItemID"
         clipMode="EllipsisWithTooltip"
