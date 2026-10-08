@@ -100,7 +100,7 @@ Supported page number types:
 
 ## Insert an image in header or footer
 
-Image (Base64 string) can be added in the exported document in header/footer using the [`PdfExportProperties`](https://ej2.syncfusion.com/documentation/api/grid/pdfExportProperties#properties).
+Image (Base64 string) can be added in the exported document in header/footer using the [`PdfExportProperties`](https://ej2.syncfusion.com/documentation/api/grid/pdfexportproperties#properties).
 
 ```typescript
 
@@ -123,19 +123,6 @@ var exportProperties = {
 
 The below code illustrates the pdf export customization.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/pdf-export/insert-image/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Insert-image.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/pdf-export/insert-image/insert-image.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/pdf-export/insert-image/razor %}
@@ -144,8 +131,5 @@ The below code illustrates the pdf export customization.
 {% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/pdf-export/insert-image/insert-image.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
-
-
-N> You can refer to our [`ASP.NET MVC Tree Grid`](https://www.syncfusion.com/aspnet-mvc-ui-controls/tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our [`ASP.NET MVC Tree Grid example`](https://ej2.syncfusion.com/aspnetmvc/TreeGrid/Overview#/material) to knows how to present and manipulate data.
+N> You can refer to our [`ASP.NET MVC Tree Grid`](https://www.syncfusion.com/aspnet-mvc-ui-controls/tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our [`ASP.NET MVC Tree Grid example`](https://ej2.syncfusion.com/aspnetmvc/treegrid/overview#/fluent2) to knows how to present and manipulate data.

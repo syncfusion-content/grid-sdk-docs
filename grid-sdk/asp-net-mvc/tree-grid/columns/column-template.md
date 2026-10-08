@@ -9,17 +9,7 @@ documentation: ug
 
 # Column Template in ASP.NET MVC TreeGrid
 
-The column [`Template`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridColumn~Template.html) has options to display custom element instead of a field value in the column.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight c# tabtitle="Column-template.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/columns-mvc/column-template/column-template.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
+The column [`Template`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGridColumn.html#Syncfusion_EJ2_TreeGrid_TreeGridColumn_Template) has options to display custom element instead of a field value in the column.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -29,11 +19,8 @@ The column [`Template`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2
 {% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/columns-mvc/column-template/column-template.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
-
-
-N> TreeGrid actions such as editing, filtering and sorting etc. will depend upon the column [`Field`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridColumn~Field.html). If the [`Field`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridColumn~Field.html) is not specified in the template column, the treegrid actions cannot be performed.
+N> TreeGrid actions such as editing, filtering and sorting etc. will depend upon the column [`Field`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGridColumn.html#Syncfusion_EJ2_TreeGrid_TreeGridColumn_Field). If the [`Field`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGridColumn.html#Syncfusion_EJ2_TreeGrid_TreeGridColumn_Field) is not specified in the template column, the treegrid actions cannot be performed.
 
 ## Using condition template
 
@@ -51,16 +38,6 @@ In the following code, checkbox is rendered based on **Approved** field value.
         </script>
 ```
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight c# tabtitle="Using-condition-template.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/columns-mvc/using-condition-template/using-condition-template.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/columns-mvc/using-condition-template/razor %}
@@ -69,7 +46,6 @@ In the following code, checkbox is rendered based on **Approved** field value.
 {% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/columns-mvc/using-condition-template/using-condition-template.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ## Render other components in a column
 
@@ -97,16 +73,6 @@ To render other components in the Tree Grid, ensure the following steps:
 ```
 Refer to the below complete code example about how to render dropdown component in Tree Grid column.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight c# tabtitle="Using-condition-template.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/columns-mvc/render-other-comp/render-other-comp.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/columns-mvc/render-other-comp/razor %}
@@ -115,6 +81,5 @@ Refer to the below complete code example about how to render dropdown component 
 {% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/columns-mvc/render-other-comp/render-other-comp.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
-N> You can refer to our [`ASP.NET MVC Tree Grid`](https://www.syncfusion.com/aspnet-mvc-ui-controls/tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our [`ASP.NET MVC Tree Grid example`](https://ej2.syncfusion.com/aspnetmvc/TreeGrid/Overview#/material) to knows how to present and manipulate data.
+N> You can refer to our [`ASP.NET MVC Tree Grid`](https://www.syncfusion.com/aspnet-mvc-ui-controls/tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our [`ASP.NET MVC Tree Grid example`](https://ej2.syncfusion.com/aspnetmvc/treegrid/overview#/fluent2) to knows how to present and manipulate data.

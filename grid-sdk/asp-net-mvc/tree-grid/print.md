@@ -9,20 +9,7 @@ documentation: ug
 
 # Print in ASP.NET MVC TreeGrid
 
-To print the TreeGrid, use the [`print`](https://ej2.syncfusion.com/documentation/api/grid#print) method from treegrid instance. The print option can be displayed on the [`Toolbar`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGrid~Toolbar.html) by adding the **print** toolbar item.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/print/print/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Print.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/print/print/print.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
+To print the TreeGrid, use the [`print`](https://ej2.syncfusion.com/documentation/api/grid/index-default#print) method from treegrid instance. The print option can be displayed on the [`Toolbar`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGrid.html#Syncfusion_EJ2_TreeGrid_TreeGrid_Toolbar) by adding the **print** toolbar item.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -32,9 +19,6 @@ To print the TreeGrid, use the [`print`](https://ej2.syncfusion.com/documentatio
 {% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/print/print/print.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
-
-
 
 ## Page setup
 
@@ -42,25 +26,12 @@ Some of the print options cannot be configured through JavaScript code. So, you 
 
 * [`Chrome`](https://support.google.com/chrome/answer/1069693?hl=en&visit_id=1-636335333734668335-3165046395&rd=1)
 * [`Firefox`](https://support.mozilla.org/en-US/kb/how-print-web-pages-firefox)
-* [`Safari`](http://www.mintprintables.com/print-tips/adjust-margins-osx/)
-* [`IE`](http://www.helpteaching.com/help/print/index.htm)
+* [`Safari`](https://mintprintables.com/print-tips/adjust-margins-osx/)
+* [`IE`](https://www.helpteaching.com/help/print/index.htm)
 
 ## Print using an external button
 
-To print the treegrid from an external button, invoke the [`print`](https://ej2.syncfusion.com/documentation/api/grid#print) method.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/print/print-button/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Print-button.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/print/print-button/print-button.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
+To print the treegrid from an external button, invoke the [`print`](https://ej2.syncfusion.com/documentation/api/grid/index-default#print) method.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -70,26 +41,10 @@ To print the treegrid from an external button, invoke the [`print`](https://ej2.
 {% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/print/print-button/print-button.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
-
-
 
 ## Print the visible page
 
-By default, the treegrid prints all the pages. To print the current page alone, set the [`PrintMode`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGrid~PrintMode.html) to **CurrentPage**.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/print/current-page/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Current-page.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/print/current-page/current-page.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
+By default, the treegrid prints all the pages. To print the current page alone, set the [`PrintMode`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGrid.html#Syncfusion_EJ2_TreeGrid_TreeGrid_PrintMode) to **CurrentPage**.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -99,9 +54,6 @@ By default, the treegrid prints all the pages. To print the current page alone, 
 {% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/print/current-page/current-page.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
-
-
 
 ## Print large number of columns
 
@@ -113,26 +65,13 @@ To show large number of columns when printing, adjust the scale option from prin
 
 ## Show or Hide columns while Printing
 
-You can show a hidden column or hide a visible column while printing the treegrid using [`ToolbarClick`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGrid~ToolbarClick.html) and [`PrintComplete`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGrid~PrintComplete.html) events.
+You can show a hidden column or hide a visible column while printing the treegrid using [`ToolbarClick`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGrid.html#Syncfusion_EJ2_TreeGrid_TreeGrid_ToolbarClick) and [`PrintComplete`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGrid.html#Syncfusion_EJ2_TreeGrid_TreeGrid_PrintComplete) events.
 
-In [`ToolbarClick`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGrid~ToolbarClick.html) event, based on **args.item.text** as **print**. We can show or hide columns by setting [`Visible`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridColumn~Visible.html) of [`Column`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridColumn.html) property to **true** or **false** respectively.
+In [`ToolbarClick`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGrid.html#Syncfusion_EJ2_TreeGrid_TreeGrid_ToolbarClick) event, based on **args.item.text** as **print**. We can show or hide columns by setting [`Visible`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGridColumn.html#Syncfusion_EJ2_TreeGrid_TreeGridColumn_Visible) of [`Column`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGridColumn.html) property to **true** or **false** respectively.
 
-In [`PrintComplete`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGrid~PrintComplete.html) event, We have reversed the state back to the previous state.
+In [`PrintComplete`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGrid.html#Syncfusion_EJ2_TreeGrid_TreeGrid_PrintComplete) event, We have reversed the state back to the previous state.
 
 In the below example, we have **Duration** as a hidden column in the treegrid. While printing, we have changed **Duration** to visible column and **StartDate** as hidden column.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/print/show-hide/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Show-hide.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/print/show-hide/show-hide.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -142,9 +81,6 @@ In the below example, we have **Duration** as a hidden column in the treegrid. W
 {% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/print/show-hide/show-hide.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
-
-
 
 ## Limitations of Printing Large Data
 
@@ -152,4 +88,4 @@ When treegrid contains large number of data, printing all the data at once is no
 
 If printing of all the data is still needed, we suggest to Export the treegrid to `Excel` or `CSV` or `Pdf` and then print it from another non-web based application.
 
-N> You can refer to our [`ASP.NET MVC Tree Grid`](https://www.syncfusion.com/aspnet-mvc-ui-controls/tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our [`ASP.NET MVC Tree Grid example`](https://ej2.syncfusion.com/aspnetmvc/TreeGrid/Overview#/material) to knows how to present and manipulate data.
+N> You can refer to our [`ASP.NET MVC Tree Grid`](https://www.syncfusion.com/aspnet-mvc-ui-controls/tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our [`ASP.NET MVC Tree Grid example`](https://ej2.syncfusion.com/aspnetmvc/treegrid/overview#/fluent2) to knows how to present and manipulate data.
