@@ -174,7 +174,7 @@ public class OrderDetails
 
 ## Customize Enter key navigation
 
-[EnterKeyDirection](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridEditSettings.html#Syncfusion_Blazor_Grids_GridEditSettings_EnterKeyDirection) is a [GridEditSettings](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridEditSettings.html) property that controls where focus moves after saving a cell using the Enter key. The property supports keyboard-based data entry scenarios that require quick navigation between cells without using the mouse. By default, the value is None, which keeps the focus on the current cell.
+[EnterKeyDirection](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridEditSettings.html#Syncfusion_Blazor_Grids_GridEditSettings_EnterKeyDirection) is a [GridEditSettings](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridEditSettings.html) property that controls where focus moves after saving a cell using the Enter key. The property supports keyboard-based data entry scenarios that require quick navigation between cells without using the mouse. By default, the value is `EnterKeyDirection.None`, which keeps the focus on the current cell.
 
 The [EnterKeyDirection](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.EnterKeyDirection.html) enumeration provides the following options:
 
