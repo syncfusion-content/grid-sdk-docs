@@ -1,14 +1,14 @@
 ---
 layout: post
-title: ASP.NET Core TreeGrid Styling | Syncfusion
-description: Learn how to customize the appearance of ASP.NET Core TreeGrid using CSS classes, Theme Studio, and advanced styling techniques.
+title: ASP.NET Core TreeGrid Styling Control | Syncfusion
+description: Learn how to customize the appearance of ASP.NET Core TreeGrid control using CSS classes, Theme Studio, and advanced styling techniques.
 platform: grid-sdk
 control: Treegrid Styling
 documentation: ug
 ---
 
 
-# Styling in ASP.NET Core TreeGrid
+# Styling in ASP.NET Core TreeGrid Control
 
 To modify the TreeGrid appearance, you need to override the default CSS of treegrid. Find the list of CSS classes and its corresponding section in treegrid. Also, you have an option to create your own custom theme for all the ASP.NET CORE controls using our [`Theme Studio`](https://ej2.syncfusion.com/themestudio/?theme=material).
 
