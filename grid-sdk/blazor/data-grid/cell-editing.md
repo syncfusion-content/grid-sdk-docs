@@ -16,13 +16,13 @@ Cell editing provides a streamlined way to update individual cell values directl
 
 In enterprise applications, users often need to correct a few values across a large dataset. Opening a separate edit form for each change adds unnecessary steps and interrupts the workflow. Cell editing streamlines these corrections, reduces repetitive steps, and boosts productivity.
 
-**Pain points**
+**Resolved pain points**
 
 - Repeated clicks and form openings to update individual values.
 - Context switching between the grid and separate edit forms.
 - Slower corrections when changes span many records.
 
-**Use case: Inventory management**
+**Use case**
 
 A warehouse operator finds incorrect quantities for 50 products. Cell editing allows each quantity to be corrected directly in the grid, without opening a separate dialog for every product, so the operator can continue working in the same view.
 
@@ -102,7 +102,7 @@ public class OrderDetails
 
 ## Edit on key press in cell editing
 
-Edit on key press is an interaction mode in which a selected cell switches to edit state as soon as a key is pressed, instead of requiring a double-click or a separate action to begin editing. This removes the extra step of double-clicking before every correction, keeping repetitive data-entry workflows moving without interruption. This option is useful for data-entry-heavy grids where a cell is selected and its value overwritten immediately, such as order processing sheets, inventory counts, or timesheet grids.
+Edit on key press is an interaction mode in which a selected cell switches to edit state as soon as a key is pressed, instead of requiring a double-click or a separate action to begin editing. This removes the extra step of double-clicking before every correction, keeping repetitive data-entry workflows moving without interruption. This option is useful for data-entry-heavy grids where a cell is selected and its value overwritten immediately, such as order processing sheets, inventory counts, or time sheet grids.
 
 To enable set the [AllowEditOnKeyPress](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridEditSettings.html#Syncfusion_Blazor_Grids_GridEditSettings_AllowEditOnKeyPress) property in [GridEditSettings](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridEditSettings.html) to `true`. When enabled, pressing a printable character key, such as a letter, digit, or symbol, while a cell is selected automatically places the cell in edit mode and applies the entered character directly to the cell.
 
