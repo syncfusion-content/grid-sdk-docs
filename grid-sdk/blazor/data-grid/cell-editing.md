@@ -12,6 +12,20 @@ keywords: blazor datagrid cell editing, blazor grid cell edit mode, cell editing
 
 Cell editing provides a streamlined way to update individual cell values directly within the [Blazor DataGrid](https://www.syncfusion.com/blazor-components/blazor-datagrid). It is designed for quick, inline modifications, making data entry and corrections more efficient. This approach ensures that changes are applied seamlessly to large datasets while maintaining consistency with the grid’s overall editing experience.
 
+**Why use cell editing?**
+
+In enterprise applications, users often need to correct a few values across a large dataset. Opening a separate edit form for each change adds unnecessary steps and interrupts the workflow. Cell editing streamlines these corrections, reduces repetitive steps, and boosts productivity.
+
+**Pain points**
+
+- Repeated clicks and form openings to update individual values.
+- Context switching between the grid and separate edit forms.
+- Slower corrections when changes span many records.
+
+**Use case: Inventory management**
+
+A warehouse operator finds incorrect quantities for 50 products. Cell editing allows each quantity to be corrected directly in the grid, without opening a separate dialog for every product, so the operator can continue working in the same view.
+
 **Enable cell editing**
 
 To enable cell editing in the Data Grid, configure the [GridEditSettings](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridEditSettings.html)-> [Mode](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridEditSettings.html#Syncfusion_Blazor_Grids_GridEditSettings_Mode) property to `EditMode.Cell` and allow editing through the [GridEditSettings](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridEditSettings.html)-> [Mode](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridEditSettings.html#Syncfusion_Blazor_Grids_GridEditSettings_Mode)-> [AllowEditing](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridEditSettings.html#Syncfusion_Blazor_Grids_GridEditSettings_AllowAdding) property.
