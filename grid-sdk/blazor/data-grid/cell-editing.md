@@ -14,7 +14,7 @@ Cell editing provides a streamlined way to update individual cell values directl
 
 In enterprise applications, users often need to correct a few values across a large dataset. Opening a separate edit form for each change adds unnecessary steps and interrupts the workflow. Cell editing streamlines these corrections, reduces repetitive steps, and boosts productivity.
 
-**Resolved common pain points**
+**Common pain points**
 
 - Repeated clicks and form openings to update individual values.
 - Context switching between the Data Grid and separate edit forms.
