@@ -22,8 +22,6 @@ The cell edit template is used to add a custom component for a particular column
 
 * **destroy** - It is used to destroy the component.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-core/tree-grid/editing/edit-template/tagHelper %}
@@ -33,29 +31,13 @@ The cell edit template is used to add a custom component for a particular column
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/tree-grid/editing/edit-template/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="EditTemplate.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/tree-grid/editing/edit-template/editTemplate.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
-
 ## Dialog template
 
-The dialog template editing provides an option to customize the default behavior of dialog editing. Using the dialog template, you can render your own editors by defining the [`mode`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridEditSettings~Mode.html) as **Dialog** and [`template`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridEditSettings~Template.html) as SCRIPT element ID or HTML string which holds the template.
+The dialog template editing provides an option to customize the default behavior of dialog editing. Using the dialog template, you can render your own editors by defining the [`mode`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.TreeGrid.TreeGridEditSettings.html#Syncfusion_EJ2_TreeGrid_TreeGridEditSettings_Mode) as **Dialog** and [`template`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.TreeGrid.TreeGridEditSettings.html#Syncfusion_EJ2_TreeGrid_TreeGridEditSettings_Template) as SCRIPT element ID or HTML string which holds the template.
 
 In some cases, you need to add the new field editors in the dialog which are not present in the column model. In that situation, the dialog template will help you to customize the default edit dialog.
 
 In the following sample, treegrid enabled with dialog template editing.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -75,34 +57,11 @@ In the following sample, treegrid enabled with dialog template editing.
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/tree-grid/editing/dialog-template/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="DialogTemplate.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/tree-grid/editing/dialog-template/dialogTemplate.cs %}
-{% endhighlight %}
-{% highlight c# tabtitle="Editpartial.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/tree-grid/editing/dialog-template/editpartial.cs %}
-{% endhighlight %}
-{% highlight c# tabtitle="EditpartialMVC.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/tree-grid/editing/dialog-template/editpartialMVC.cs %}
-{% endhighlight %}
-{% highlight c# tabtitle="TemplateModel.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/tree-grid/editing/dialog-template/templateModel.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
-
 N> The template form editors should have **name** attribute.
 
 ### Get value from editor
 
-You can read, format, and update the current editor value in the [`actionBegin`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGrid~ActionBegin.html) event at the time of setting **requestType** to **save**.
+You can read, format, and update the current editor value in the [`actionBegin`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.TreeGrid.TreeGrid.html#Syncfusion_EJ2_TreeGrid_TreeGrid_ActionBegin) event at the time of setting **requestType** to **save**.
 
 In the following code example, the **progress** value has been formatted and updated.
 
@@ -119,7 +78,7 @@ In the following code example, the **progress** value has been formatted and upd
 ### Set focus to editor
 
 By default, the first input element in the dialog will be focused while opening the dialog.
-If the first input element is in disabled or hidden state, focus the valid input element in the [`actionComplete`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGrid~ActionComplete.html) event based on **requestType** as **beginEdit**.
+If the first input element is in disabled or hidden state, focus the valid input element in the [`actionComplete`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.TreeGrid.TreeGrid.html#Syncfusion_EJ2_TreeGrid_TreeGrid_ActionComplete) event based on **requestType** as **beginEdit**.
 
 ```typescript
 
@@ -134,7 +93,7 @@ If the first input element is in disabled or hidden state, focus the valid input
 
 ### Adding validation rules for custom editors
 
-If you have used additional fields that are not present in the column model, then add the validation rules to the [`actionComplete`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGrid~ActionComplete.html) event.
+If you have used additional fields that are not present in the column model, then add the validation rules to the [`actionComplete`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.TreeGrid.TreeGrid.html#Syncfusion_EJ2_TreeGrid_TreeGrid_ActionComplete) event.
 
 ```typescript
 
@@ -149,4 +108,4 @@ If you have used additional fields that are not present in the column model, the
 
 
 
-N> You can refer to our  [`ASP.NET Core Tree Grid`](https://www.syncfusion.com/aspnet-core-ui-controls/tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our ASP.NET Core Tree Grid example [`ASP.NET Core Tree Grid example`](https://ej2.syncfusion.com/aspnetcore/TreeGrid/Overview#/material) to knows how to present and manipulate data.
+N> You can refer to our  [`ASP.NET Core Tree Grid`](https://www.syncfusion.com/aspnet-core-ui-controls/tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our ASP.NET Core Tree Grid example [`ASP.NET Core Tree Grid example`](https://ej2.syncfusion.com/aspnetcore/treegrid/overview#/fluent2) to knows how to present and manipulate data.

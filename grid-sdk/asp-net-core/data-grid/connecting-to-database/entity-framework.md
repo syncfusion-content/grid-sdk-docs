@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Bind SQL Server Data in Syncfusion ASP.NET Core Grid using Entity Framework
+title: ASP.NET Core Grid Bind Data with Entity Framework Core | Syncfusion
 description: Learn about consume data using Entity Framework from Microsoft SQL Server, bind it to Syncfusion ASP.NET Core Grid, and performing CRUD operations.
 control: grid
 platform: grid-sdk
@@ -9,11 +9,11 @@ documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Connecting SQL Server data to Syncfusion ASP.NET Core Grid using Entity Framework
+# SQL Server Entity Framework Core Integration in ASP.NET Core Data Grid
 
 This section describes how to connect and retrieve data from a Microsoft SQL Server database using [Entity Framework](https://learn.microsoft.com/en-us/ef/core/) and bind it to the Syncfusion ASP.NET Core Grid.
 
-Microsoft SQL Server database can be bound to the Grid using **Entity Framework** in different ways (i.e.) using [dataSource](https://ej2.syncfusion.com/aspnetcore/documentation/api/grid/#datasource) property, custom adaptor and remote data binding using various adaptors. In this documentation, two approaches will be examined to connect a Microsoft SQL Server database to a Grid using **Entity Framework**. Both the approaches have capability to handle data and CRUD operations with built-in methods as well as can be customized as per your own.
+Microsoft SQL Server database can be bound to the Grid using **Entity Framework** in different ways (i.e.) using `dataSource` property, custom adaptor and remote data binding using various adaptors. In this documentation, two approaches will be examined to connect a Microsoft SQL Server database to a Grid using **Entity Framework**. Both the approaches have capability to handle data and CRUD operations with built-in methods as well as can be customized as per your own.
 
 **Entity Framework**
 
@@ -21,11 +21,11 @@ Entity Framework is an open-source [ORM framework](https://en.wikipedia.org/wiki
 
 **1. Using UrlAdaptor**
 
-The [UrlAdaptor](https://ej2.syncfusion.com/aspnetcore/documentation/grid/connecting-to-adaptors/url-adaptor) serves as the base adaptor for facilitating communication between remote data services and an UI component. It enables the remote binding of data to the Syncfusion ASP.NET Core Grid by connecting to an existing pre-configured API service linked to the Microsoft SQL Server database. While the Grid supports various adaptors to fulfill this requirement, including [Web API](https://ej2.syncfusion.com/aspnetcore/documentation/grid/connecting-to-adaptors/web-api-adaptor), [ODataV4](https://ej2.syncfusion.com/aspnetcore/documentation/grid/connecting-to-adaptors/odatav4-adaptor), [UrlAdaptor](https://ej2.syncfusion.com/aspnetcore/documentation/grid/connecting-to-adaptors/url-adaptor), [Web Method](https://ej2.syncfusion.com/aspnetcore/documentation/grid/connecting-to-adaptors/web-method-adaptor), and `GraphQL`, the `UrlAdaptor` is particularly useful for the scenarios where a custom API service with unique logic for handling data and CRUD operations is in place. This approach allows for custom handling of data and CRUD operations, and the resultant data returned in the `result` and `count` format for display in the Grid.
+The [UrlAdaptor](https://help.syncfusion.com/grid-sdk/asp-net-core/data-grid/connecting-to-adaptors/url-adaptor) serves as the base adaptor for facilitating communication between remote data services and an UI component. It enables the remote binding of data to the Syncfusion ASP.NET Core Grid by connecting to an existing pre-configured API service linked to the Microsoft SQL Server database. While the Grid supports various adaptors to fulfill this requirement, including [Web API](https://help.syncfusion.com/grid-sdk/asp-net-core/data-grid/connecting-to-adaptors/web-api-adaptor), [ODataV4](https://help.syncfusion.com/grid-sdk/asp-net-core/data-grid/connecting-to-adaptors/odatav4-adaptor), [UrlAdaptor](https://help.syncfusion.com/grid-sdk/asp-net-core/data-grid/connecting-to-adaptors/url-adaptor), [Web Method](https://help.syncfusion.com/grid-sdk/asp-net-core/data-grid/connecting-to-adaptors/web-method-adaptor), and `GraphQL`, the `UrlAdaptor` is particularly useful for the scenarios where a custom API service with unique logic for handling data and CRUD operations is in place. This approach allows for custom handling of data and CRUD operations, and the resultant data returned in the `result` and `count` format for display in the Grid.
 
 **2. Using CustomAdaptor**
 
-The [CustomAdaptor](https://ej2.syncfusion.com/aspnetcore/documentation/grid/connecting-to-adaptors/custom-adaptor) serves as a mediator between the UI component and the database for data binding. While the data source from the database can be directly bound to the Syncfusion ASP.NET Core Grid locally using the `dataSource` property, the `CustomAdaptor` approach is preferred as it allows for customization of both data operations and CRUD operations according to specific requirements. In this approach, for every action in the Grid, a corresponding request with action details is sent to the `CustomAdaptor`. The Grid provides predefined methods to perform data operations such as **searching**, **filtering**, **sorting**, **aggregation**, **paging** and **grouping**. Alternatively, your own custom methods can be employed to execute operations and return the data in the `result` and `count` format for displaying in the Grid. Additionally, for CRUD operations, predefined methods can be overridden to provide custom functionality. Further details on this can be found in the latter part of the documentation.
+The [CustomAdaptor](https://help.syncfusion.com/grid-sdk/asp-net-core/data-grid/connecting-to-adaptors/custom-adaptor) serves as a mediator between the UI component and the database for data binding. While the data source from the database can be directly bound to the Syncfusion ASP.NET Core Grid locally using the `dataSource` property, the `CustomAdaptor` approach is preferred as it allows for customization of both data operations and CRUD operations according to specific requirements. In this approach, for every action in the Grid, a corresponding request with action details is sent to the `CustomAdaptor`. The Grid provides predefined methods to perform data operations such as **searching**, **filtering**, **sorting**, **aggregation**, **paging** and **grouping**. Alternatively, your own custom methods can be employed to execute operations and return the data in the `result` and `count` format for displaying in the Grid. Additionally, for CRUD operations, predefined methods can be overridden to provide custom functionality. Further details on this can be found in the latter part of the documentation.
 
 ## Binding data using Entity Framework from Microsoft SQL Server via an API service.
 
@@ -181,21 +181,6 @@ To include the required styles and scripts, add the following references inside 
     <link rel="stylesheet" href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/bootstrap5.css" />
     <!-- Syncfusion ASP.NET Core control scripts -->
     <script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/dist/ej2.min.js"></script>
-    <!-- Include the necessary CSS files to style the Syncfusion ASP.NET Core controls-->
-    <link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-base/styles/bootstrap5.css" rel="stylesheet" />
-    <link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-grids/styles/bootstrap5.css" rel="stylesheet" />
-    <link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-buttons/styles/bootstrap5.css" rel="stylesheet" />
-    <link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-popups/styles/bootstrap5.css" rel="stylesheet" />
-    <link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-richtexteditor/styles/bootstrap5.css" rel="stylesheet" />
-    <link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-navigations/styles/bootstrap5.css" rel="stylesheet" />
-    <link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-dropdowns/styles/bootstrap5.css" rel="stylesheet" />
-    <link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-lists/styles/bootstrap5.css" rel="stylesheet" />
-    <link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-inputs/styles/bootstrap5.css" rel="stylesheet" />
-    <link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-calendars/styles/bootstrap5.css" rel="stylesheet" />
-    <link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-notifications/styles/bootstrap5.css" rel="stylesheet" />
-    <link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/ej2-splitbuttons/styles/bootstrap5.css" rel="stylesheet" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
-    <script src="https://cdn.syncfusion.com/ej2/syncfusion-helper.js" type="text/javascript"></script>
 </head>
 
 {% endhighlight %}
@@ -603,7 +588,7 @@ CRUD operations within the Grid can be mapped to server-side controller actions 
 3. **updateUrl**: Specifies the URL for updating existing data.
 4. **batchUrl**: Specifies the URL for batch editing.
 
-To enable editing in ASP.NET Core Grid, refer to the editing [documentation](https://ej2.syncfusion.com/aspnetcore/documentation/grid/editing/edit). In the below example, the inline edit `mode` is enabled and [toolbar](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_Toolbar) property is configured to display toolbar items for editing purposes.
+To enable editing in ASP.NET Core Grid, refer to the editing [documentation](https://help.syncfusion.com/grid-sdk/asp-net-core/data-grid/editing/edit). In the below example, the inline edit `mode` is enabled and [toolbar](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_Toolbar) property is configured to display toolbar items for editing purposes.
 
 {% tabs %}
 {% highlight cshtml tabtitle="Index.cshtml" %}
@@ -946,7 +931,7 @@ When you run the application, the resultant Grid will look like this
 
 ## Binding data from Microsoft SQL Server using Entity Framework with CustomAdaptor
 
-This section describes step by step process how to use Entity Framework to retrieve data from a Microsoft SQL Server using [CustomAdaptor](https://ej2.syncfusion.com/aspnetcore/documentation/grid/connecting-to-adaptors/custom-adaptor) and bind it to the Syncfusion AsP.NET Core Grid.
+This section describes step by step process how to use Entity Framework to retrieve data from a Microsoft SQL Server using [CustomAdaptor](https://help.syncfusion.com/grid-sdk/asp-net-core/data-grid/connecting-to-adaptors/custom-adaptor) and bind it to the Syncfusion AsP.NET Core Grid.
 
 **1.** To create a simple Grid, the procedure is explained in the above-mentioned topic on [Connecting Syncfusion ASP.NET Core Grid to an API service](##connecting-syncfusion-aspnet-core-grid-to-an-api-service)
 
@@ -1400,7 +1385,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 ### Handling CRUD operations
 
-To enable editing in the Syncfusion ASP.NET Core Grid, utilize the [editSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridEditSettings.html) property. The Grid offers multiple edit modes including the **Inline/Normal**, **Dialog** and **Batch** editing. For more details, refer to the Grid [editing](https://ej2.syncfusion.com/aspnetcore/documentation/grid/editing/edit) documentation.
+To enable editing in the Syncfusion ASP.NET Core Grid, utilize the [editSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridEditSettings.html) property. The Grid offers multiple edit modes including the **Inline/Normal**, **Dialog** and **Batch** editing. For more details, refer to the Grid [editing](https://help.syncfusion.com/grid-sdk/asp-net-core/data-grid/editing/edit) documentation.
 
 In this scenario, the inline edit `mode` and [toolbar](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_Toolbar) property configured to display toolbar items for editing purpose.
 

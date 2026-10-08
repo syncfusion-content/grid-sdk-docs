@@ -2,7 +2,7 @@
 layout: post
 title: How to Display String Values in ASP.NET MVC Pivot Table | Syncfusion
 description: Learn how to render custom string values (e.g. seconds as HH:MM:SS) in ASP.NET MVC Pivot Table value cells via the AggregateCellInfo event's args.cellSets data.
-platform: ej2-asp-core-mvc
+platform: grid-sdk
 control: Display string value to pivot table values
 documentation: ug
 publishingplatform: ##Platform_Name## 

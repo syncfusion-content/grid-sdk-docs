@@ -2,7 +2,7 @@
 layout: post
 title: Data Binding in ASP.NET Core Pivot Table | Syncfusion
 description: Learn how the ASP.NET Core Pivot Table binds JSON, REST, CSV, and remote data sources via the dataSource property, DataManager, or a Web API controller.
-platform: ej2-asp-core-mvc
+platform: grid-sdk
 control: Data Binding
 publishingplatform: ##Platform_Name##
 documentation: ug
@@ -18,8 +18,6 @@ The Pivot Table supports JSON data binding by setting the `type` property under 
 
 You can bind local JSON data to the Pivot Table by assigning a local variable containing the JSON data to the [`dataSource`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettingsBuilder.html#Syncfusion_EJ2_PivotView_PivotViewDataSourceSettingsBuilder_DataSource_System_Action_Syncfusion_EJ2_DataManagerBuilder__) property under [`e-datasourcesettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettingsBuilder.html).
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/data-binding/local-data/tagHelper %}
@@ -29,21 +27,7 @@ You can bind local JSON data to the Pivot Table by assigning a local variable co
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/data-binding/local-data/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Localdata.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/data-binding/local-data/localdata.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-You can also bind JSON data using the [`DataManager`](https://ej2.syncfusion.com/documentation/api/data/dataManager) with `JsonAdaptor`. In this approach, assign the [`DataManager`](https://ej2.syncfusion.com/documentation/api/data/dataManager) instance containing JSON data to the [`dataSource`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettingsBuilder.html#Syncfusion_EJ2_PivotView_PivotViewDataSourceSettingsBuilder_DataSource_System_Action_Syncfusion_EJ2_DataManagerBuilder__) property under [`e-datasourcesettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettingsBuilder.html). Using [`DataManager`](https://ej2.syncfusion.com/documentation/api/data/dataManager) is optional for local JSON data binding.
-
-{% if page.publishingplatform == "aspnet-core" %}
+You can also bind JSON data using the [`DataManager`](https://ej2.syncfusion.com/documentation/api/data/datamanager) with `JsonAdaptor`. In this approach, assign the [`DataManager`](https://ej2.syncfusion.com/documentation/api/data/datamanager) instance containing JSON data to the [`dataSource`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettingsBuilder.html#Syncfusion_EJ2_PivotView_PivotViewDataSourceSettingsBuilder_DataSource_System_Action_Syncfusion_EJ2_DataManagerBuilder__) property under [`e-datasourcesettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettingsBuilder.html). Using [`DataManager`](https://ej2.syncfusion.com/documentation/api/data/datamanager) is optional for local JSON data binding.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -53,20 +37,6 @@ You can also bind JSON data using the [`DataManager`](https://ej2.syncfusion.com
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/data-binding/local-json-datamanager/localjsondatamanager.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/data-binding/local-json-datamanager/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Localjsondatamanager.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/data-binding/local-json-datamanager/localjsondatamanager.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
 
 ![Local JSON data binding](images/local-json-datamanager.png)
 
@@ -106,8 +76,6 @@ You can also load JSON data from a local *.json file using the file uploader opt
 
 To bind remote JSON data to the Pivot Table, set the endpoint [`url`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html#Syncfusion_EJ2_PivotView_PivotViewDataSourceSettings_Url) in the [`e-datasourcesettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettingsBuilder.html) property. The [`url`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html#Syncfusion_EJ2_PivotView_PivotViewDataSourceSettings_Url) property accepts both direct downloadable JSON files (*.json) and web service URLs.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/data-binding/remote-json-data/tagHelper %}
@@ -116,19 +84,6 @@ To bind remote JSON data to the Pivot Table, set the endpoint [`url`](https://he
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/data-binding/remote-json-data/remotejsondata.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/data-binding/remote-json-data/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Remotejsondata.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/data-binding/remote-json-data/remotejsondata.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
 
 
 ![Pivot Table bound to remote JSON data](images/remote-json-data.png)
@@ -143,8 +98,6 @@ To bind CSV data, set the `type` property under [`e-datasourcesettings`](https:/
 
 To bind local CSV data to the Pivot Table, convert the data into a string array and assign it directly to the [`dataSource`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettingsBuilder.html#Syncfusion_EJ2_PivotView_PivotViewDataSourceSettingsBuilder_DataSource_System_Action_Syncfusion_EJ2_DataManagerBuilder__) property under [`e-datasourcesettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettingsBuilder.html).
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/data-binding/local-csv-data/tagHelper %}
@@ -153,20 +106,6 @@ To bind local CSV data to the Pivot Table, convert the data into a string array 
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/data-binding/local-csv-data/localcsvdata.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/data-binding/local-csv-data/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Localcsvdata.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/data-binding/local-csv-data/localcsvdata.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
 
 ![Pivot Table with local CSV data binding](images/local-csv-data.png)
 
@@ -211,8 +150,6 @@ Remote CSV data binding allows you to load data directly from external sources w
 
 To bind remote CSV data, set the [`url`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html#Syncfusion_EJ2_PivotView_PivotViewDataSourceSettings_Url) property under [`e-datasourcesettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettingsBuilder.html) to point to your data source endpoint. The [`url`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html#Syncfusion_EJ2_PivotView_PivotViewDataSourceSettings_Url) property accepts both direct downloadable CSV files (*.csv) and web service URLs that return CSV data.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/data-binding/remote-csv-data/tagHelper %}
@@ -222,19 +159,6 @@ To bind remote CSV data, set the [`url`](https://help.syncfusion.com/cr/aspnetco
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/data-binding/remote-csv-data/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Remotecsvdata.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/data-binding/remote-csv-data/remotecsvdata.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
 
 ![Pivot Table bound to remote CSV data](images/remote-csv-data.png)
 
@@ -242,9 +166,7 @@ To bind remote CSV data, set the [`url`](https://help.syncfusion.com/cr/aspnetco
 
 Remote data binding allows you to connect your Pivot Table component to data sources that are hosted on remote servers, enabling you to work with data from web services, databases, and other external sources.
 
-To bind remote data, specify the endpoint `url` within [`DataManager`](https://ej2.syncfusion.com/documentation/api/data/dataManager) along with the appropriate `adaptor`. By default, `DataManager` uses `ODataAdaptor` for remote data binding.
-
-{% if page.publishingplatform == "aspnet-core" %}
+To bind remote data, specify the endpoint `url` within [`DataManager`](https://ej2.syncfusion.com/documentation/api/data/datamanager) along with the appropriate `adaptor`. By default, `DataManager` uses `ODataAdaptor` for remote data binding.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -255,25 +177,11 @@ To bind remote data, specify the endpoint `url` within [`DataManager`](https://e
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/data-binding/remote-data/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Remotedata.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/data-binding/remote-data/remotedata.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
 ### Binding with OData services
 
-OData (Open Data Protocol) is a web-based protocol that provides a standard way to create and consume data APIs. You can easily connect your Pivot Table to OData services using the [`DataManager`](https://ej2.syncfusion.com/documentation/api/data/dataManager), which handles the communication and data retrieval automatically.
+OData (Open Data Protocol) is a web-based protocol that provides a standard way to create and consume data APIs. You can easily connect your Pivot Table to OData services using the [`DataManager`](https://ej2.syncfusion.com/documentation/api/data/datamanager), which handles the communication and data retrieval automatically.
 
 The following example demonstrates how to bind the Pivot Table to an OData service:
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -284,23 +192,9 @@ The following example demonstrates how to bind the Pivot Table to an OData servi
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/data-binding/odata/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Odata.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/data-binding/odata/odata.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
 ### Binding with OData V4 services
 
-OData V4 services provide enhanced query capabilities and improved performance for data retrieval operations. The OData V4 is an improved version of OData protocols, and the [`DataManager`](https://ej2.syncfusion.com/documentation/api/data/dataManager) can retrieve and consume OData V4 services. For more details on OData V4 services, refer to the [OData documentation](https://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part1-protocol/odata-v4.0-errata03-os-part1-protocol-complete.html#_Toc453752197). To bind OData V4 service, use the `ODataV4Adaptor`.
-
-{% if page.publishingplatform == "aspnet-core" %}
+OData V4 services provide enhanced query capabilities and improved performance for data retrieval operations. The OData V4 is an improved version of OData protocols, and the [`DataManager`](https://ej2.syncfusion.com/documentation/api/data/datamanager) can retrieve and consume OData V4 services. For more details on OData V4 services, refer to the [OData documentation](https://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part1-protocol/odata-v4.0-errata03-os-part1-protocol-complete.html#_Toc453752197). To bind OData V4 service, use the `ODataV4Adaptor`.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -311,23 +205,9 @@ OData V4 services provide enhanced query capabilities and improved performance f
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/data-binding/odatav4/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Odatav4.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/data-binding/odatav4/odatav4.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
 ### Web API
 
 Web API binding allows you to connect the Pivot Table directly to RESTful web services for dynamic data loading. Users can use `WebApiAdaptor` to bind the Pivot Table with Web API created using OData endpoint.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -338,26 +218,11 @@ Web API binding allows you to connect the Pivot Table directly to RESTful web se
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/data-binding/webapi/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Web-api.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/data-binding/webapi/web-api.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
 ### Querying in Data Manager
 
-By default, the [`DataManager`](https://ej2.syncfusion.com/documentation/api/data/dataManager) fetches all records from the data source you have configured. However, you can customize this behavior by applying your own query using the `defaultQuery` property in the Data Manager instance.
+By default, the [`DataManager`](https://ej2.syncfusion.com/documentation/api/data/datamanager) fetches all records from the data source you have configured. However, you can customize this behavior by applying your own query using the `defaultQuery` property in the Data Manager instance.
 
-The query can include operations such as filtering records based on specific conditions, sorting data in ascending or descending order, or limiting the number of records through paging. When you define these queries, the [`DataManager`](https://ej2.syncfusion.com/documentation/api/data/dataManager) processes them at the data source level, ensuring that only the required data is retrieved and displayed in the Pivot Table.
-
-{% if page.publishingplatform == "aspnet-core" %}
+The query can include operations such as filtering records based on specific conditions, sorting data in ascending or descending order, or limiting the number of records through paging. When you define these queries, the [`DataManager`](https://ej2.syncfusion.com/documentation/api/data/datamanager) processes them at the data source level, ensuring that only the required data is retrieved and displayed in the Pivot Table.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -367,18 +232,6 @@ The query can include operations such as filtering records based on specific con
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/data-binding/ODataAdaptor/ODataAdaptor.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/data-binding/ODataAdaptor/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="ODataAdaptor.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/data-binding/ODataAdaptor/ODataAdaptor.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 ## Mapping
 
@@ -426,8 +279,6 @@ Field mapping is particularly useful for configuring fields that are not part of
 
 The following code sample demonstrates how to configure the visibility of field button icons:
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/getting-start-mvc/field-mapping/tagHelper %}
@@ -437,27 +288,11 @@ The following code sample demonstrates how to configure the visibility of field 
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/getting-start-mvc/field-mapping/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Fieldmapping.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/getting-start-mvc/field-mapping/fieldmapping.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
-
 ![Field button icons customized](images/field-mapping.png)
 
 ## Values in row axis
 
 You can display value fields in the row axis of the Pivot Table to make your data analysis clear and more accessible. By default, value fields appear in the column axis. To display these fields in the row axis, set the [`valueAxis`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html#Syncfusion_EJ2_PivotView_PivotViewDataSourceSettings_valueAxis) property to **row**. The default value is **column**.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -468,20 +303,6 @@ You can display value fields in the row axis of the Pivot Table to make your dat
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/data-binding/values-in-row/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Valuesinrow.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/data-binding/values-in-row/valuesinrow.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
-
 ![Values in row axis](images/valueaxis.png)
 
 ## Values at different positions
@@ -489,8 +310,6 @@ You can display value fields in the row axis of the Pivot Table to make your dat
 Positioning value fields at specific locations helps create more meaningful data layouts and improves the readability of your Pivot Table. By default, value fields appear at the end of the row or column axis. To place value fields at different positions, use the [`valueIndex`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html#Syncfusion_EJ2_PivotView_PivotViewDataSourceSettings_valueindex) property and set it to the desired index position. The default value is **-1**, which places fields at the last position. The [`valueIndex`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html#Syncfusion_EJ2_PivotView_PivotViewDataSourceSettings_valueindex) property works together with the [`valueAxis`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html#Syncfusion_EJ2_PivotView_PivotViewDataSourceSettings_valueAxis) property.
 
 > This option is available only for relational data sources. To enable users to rearrange value fields through the interface, set the [`showValuesButton`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_ShowValuesButton) property to **true** in both the grouping bar and field list UI.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -501,20 +320,6 @@ Positioning value fields at specific locations helps create more meaningful data
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/data-binding/measureatdifferentposition/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Measureatdifferentposition.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/data-binding/measureatdifferentposition/measureatdifferentposition.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
-
 ![Values at custom position](images/measureatdifferentposition.png)
 
 ## Show 'no data' items
@@ -522,8 +327,6 @@ Positioning value fields at specific locations helps create more meaningful data
 Display all field items in your Pivot Table, even when they lack data in certain row and column combinations, for a complete view of your data structure. By default, the Pivot Table displays field items only when they contain data in their respective row or column combinations. However, you can show all items, including those without data, by setting the [`showNoDataItems`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewRow.html#Syncfusion_EJ2_PivotView_PivotViewRow_ShowNoDataItems) property to **true** for the desired fields.
 
 In the following example, the "Country" and "State" field rows are displayed even when they don't have data in all combinations with the "Date" column field.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -534,27 +337,11 @@ In the following example, the "Country" and "State" field rows are displayed eve
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/data-binding/no-data/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Nodata.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/data-binding/no-data/nodata.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
-
 ![No-data items shown](images/nodata.png)
 
 ## Show value headers always
 
 Ensure value headers remain visible in your Pivot Table at all times, providing consistent column identification even with single value scenarios. The Pivot Table typically hides value headers when displaying only one value. To maintain consistent header visibility regardless of the number of values, set the [`alwaysShowValueHeader`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html#Syncfusion_EJ2_PivotView_PivotViewDataSourceSettings_AlwaysShowValueHeader) property to **true**.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -565,27 +352,11 @@ Ensure value headers remain visible in your Pivot Table at all times, providing 
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/data-binding/single-calculation-header/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Single-calculation-header.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/data-binding/single-calculation-header/single-calculation-header.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
-
 ![Value headers always visible](images/valuesheader.png)
 
 ## Customize empty value cells
 
 Show custom text in cells that contain no data to make your Pivot Table more informative and user-friendly. By default, empty value cells appear blank in the Pivot Table. However, you can display meaningful text in these cells using the [`emptyCellsTextContent`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html#Syncfusion_EJ2_PivotView_PivotViewDataSourceSettings_EmptyCellsTextContent) property within the [`e-datasourcesettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettingsBuilder.html). Since this property accepts string values, you can fill empty cells with any text such as "0", "-", "*", "(blank)", or other meaningful indicators. This setting applies to all value fields and can be configured in your code behind.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -595,20 +366,6 @@ Show custom text in cells that contain no data to make your Pivot Table more inf
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/data-binding/empty-cells/empty-cells.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/data-binding/empty-cells/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Empty-cells.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/data-binding/empty-cells/empty-cells.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
 
 ![Custom text in empty cells](images/emptyvalues.png)
 
@@ -629,8 +386,6 @@ The load event provides the following parameters:
 - `fieldsType`: Defines the type of specific fields, such as whether they should be treated as numbers, dates, or text.
 - `pivotview`: Defines the Pivot Table instance object that provides access to all component methods and properties.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/data-binding/load/tagHelper %}
@@ -639,19 +394,6 @@ The load event provides the following parameters:
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/data-binding/load/load.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/data-binding/load/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Load.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/data-binding/load/load.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
 
 ### EnginePopulated
 
@@ -665,8 +407,6 @@ When this event triggers, it provides the following parameters:
 
 Below is an example showing how the [`enginePopulated`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_EnginePopulated) event can be used in a ASP.NET Core Pivot Table. The code demonstrates how to set up the event and access its details for custom logic.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/data-binding/engine-populated/tagHelper %}
@@ -676,25 +416,11 @@ Below is an example showing how the [`enginePopulated`](https://help.syncfusion.
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/data-binding/engine-populated/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Enginepopulated.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/data-binding/engine-populated/enginepopulated.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
 ### EnginePopulating
 
 The [`enginePopulating`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_EnginePopulating) event lets you update the [`e-datasourcesettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettingsBuilder.html) before the Pivot Table's engine processes the data. This allows you to modify how your data appears by changing field captions, formatting options, or report configurations right before the table renders. For example, you can adjust column captions or show a message for empty cells. This helps users control how the data will appear in the Pivot Table in a straightforward way.
 
 The [`enginePopulating`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_EnginePopulating) event provides an argument that contains the `dataSourceSettings` property. You can directly edit this property to update fields, labels, or other `dataSourceSettings` options, ensuring your Pivot Table displays data exactly how you need it. Below is an example showing how to use the `enginePopulating` event in a ASP.NET Core Pivot Table:
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -704,18 +430,6 @@ The [`enginePopulating`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusio
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/data-binding/engine-populating/enginepopulating.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/data-binding/engine-populating/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Enginepopulating.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/data-binding/engine-populating/enginepopulating.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 ## See Also
 

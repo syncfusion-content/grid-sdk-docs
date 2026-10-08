@@ -51,6 +51,13 @@ let button: Button = new Button(
   );
   button4.appendTo('#Updatecell');
 
+  let button5: Button = new Button(
+    {
+        content: 'Bulk save'
+    }
+  );
+  button5.appendTo('#save');
+
 (<HTMLElement>document.getElementById('Edit')).onclick = function () {
     grid.startEdit();
 };
@@ -69,6 +76,9 @@ let button: Button = new Button(
 };
 (<HTMLElement>document.getElementById('Updatecell')).onclick = function () {
     grid.setCellValue((grid.currentViewData[0]  as  columnDataType).OrderID,'CustomerID','Value Changed'); 
+};
+(<HTMLElement>document.getElementById('save')).onclick = function () {
+    grid.saveBulkChanges({ShipName: 'Island Trading', ShipCity: 'Tokyo'}, grid.getCurrentViewRecords().slice(0,3), () => { grid.refresh(); });
 };
 
 function generateCustomerId() {

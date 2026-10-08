@@ -29,7 +29,7 @@ In the following example, the [EJ2 Toggle Switch Button](https://ej2.syncfusion.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/treegrid/cell-cs1" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/cell-cs1" %}
 
 > - The [disableHtmlEncode](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column#disablehtmlencode) property disables HTML encoding for the specified column.
 > - If set to **false**, HTML tags in the column's data are rendered. If set to **true**, HTML tags are displayed as plain text.
@@ -67,7 +67,7 @@ The following example demonstrates configuring `allowTextWrap` and dynamically c
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/treegrid/cell-cs2" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/cell-cs2" %}
 
 > - Column width influences the auto wrap result. If not specified, wrapping adjusts to the TreeGrid's width.
 > - If header text lacks whitespace, wrapping may not occur.
@@ -92,7 +92,7 @@ In the following example, a `queryCellInfo` event handler assigns custom classes
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/treegrid/cell-cs3" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/cell-cs3" %}
 
 > Using `queryCellInfo` with a large dataset may impact performance, as the event triggers for each cell during rendering.
 
@@ -118,7 +118,7 @@ The following example customizes selection appearance using a class name:
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/treegrid/cell-cs4" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/cell-cs4" %}
 
 ### Using property
 
@@ -143,7 +143,7 @@ The example below demonstrates custom styling for **taskID** and **startDate** c
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/treegrid/cell-cs5" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/cell-cs5" %}
 
 > Custom attributes can apply styles to content, header, and footer cells.
 
@@ -162,7 +162,7 @@ The following example shows how to use [getColumnHeaderByIndex](https://ej2.sync
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/treegrid/cell-cs6" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/cell-cs6" %}
 
 > Ensure the correct row and column indices are provided to prevent styling the incorrect cell.
 
@@ -185,7 +185,7 @@ The following example configures the `clipMode` property and updates its value d
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/treegrid/cell-cs7" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/cell-cs7" %}
 
 > - The default [columns.clipMode](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column#clipmode) is **Ellipsis**.
 > - When setting [width](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column#width), clip mode activates automatically if content overflows.
@@ -292,7 +292,7 @@ The following example demonstrates customizing tooltip content with EJ2 Tooltip:
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/treegrid/cell-cs8" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/cell-cs8" %}
 
 ## Grid lines
 
@@ -317,7 +317,7 @@ The example below demonstrates dynamic grid line selection via dropdown using th
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/treegrid/cell-cs9" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/cell-cs9" %}
 
 > By default, the TreeGrid uses **Default** mode for grid lines.
 

@@ -24,7 +24,7 @@ To render a checkbox in each TreeGrid row, add a column with type set to `CheckB
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/treegrid/selection-cs2" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/selection-cs2" %}
 
 > By default, selection is allowed via clicking either a row or its checkbox. To restrict selection to only the checkbox, set the [`selectionSettings.checkboxOnly`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/selectionSettings#checkboxonly) property to `true`.
 > To persist selection across operations, set [`selectionSettings.persistSelection`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/selectionSettings#persistselection) to `true`. For persisted selection, at least one column must be defined as a primary key using the [`columns.isPrimaryKey`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column#isprimarykey) property.
@@ -47,7 +47,7 @@ Checkbox selection supports two modes, which can be set using [`selectionSetting
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/treegrid/selection-cs3" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/selection-cs3" %}
 
 > Checkbox Selection is intended for row selection only and is not compatible with cell selection mode.
 
@@ -71,4 +71,28 @@ In the following sample, selection is disabled for rows where the "Progress" col
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/treegrid/selection-cs14" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/selection-cs14" %}
+
+## Hierarchy checkbox selection
+
+The hierarchy checkbox enables cascading selection of parent and child rows in Tree Grid. When a parent row checkbox is selected, all its child records are automatically selected, and the parent state updates based on children selection. To enable hierarchy checkbox selection, set the `showCheckbox` property to `true` in a column and configure the `hierarchyCheckboxMode` property. By default, hierarchy checkbox mode is set to `self`.
+
+The available modes are displayed in the following table.
+
+| Item | Description |
+|-----|-----|
+| `self` | Only the targeted row is selected; children and parent are not affected. |
+| `hierarchy` | Selection cascades to all descendants and adjusts the parent state accordingly. |
+| `filteredHierarchy` | Behaves like hierarchy, but applies the cascade only to records matching the current filter or search criteria. |
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/grid-sdk/angular/treegrid/selection-cs15/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/grid-sdk/angular/treegrid/selection-cs15/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/selection-cs15" %}

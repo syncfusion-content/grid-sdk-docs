@@ -2,7 +2,7 @@
 layout: post
 title: Custom Adaptor in Blazor Pivot Table | Syncfusion
 description: Learn how to implement a custom data adaptor for the Blazor Pivot Table by extending DataAdaptor and overriding the Read, Insert, Update, and Remove methods.
-platform: Blazor
+platform: grid-sdk
 control: PivotView
 keywords: adaptors, CustomAdaptor, custom adaptor, remotedata, custombinding, custom binding
 documentation: ug
@@ -611,7 +611,7 @@ public override object Remove(DataManager dataManager, object primaryColumnValue
 
 ### Complete CRUD Implementation Example
 
-The following sample assembles the Read/Insert/Update/Remove overrides shown individually above into one complete component, ready to copy into a single `.razor` file. Refer to the per-method subsections above for explanations of each override; the code here is the consolidated reference, also available in the [GitHub sample](https://github.com/SyncfusionExamples/syncfusion-blazor-pivot-table-remote-data-binding/tree/master/CustomAdaptor).
+The following sample assembles the Read/Insert/Update/Remove overrides shown individually above into one complete component, ready to copy into a single `.razor` file. Refer to the per-method subsections above for explanations of each override; the code here is the consolidated reference, also available in the [GitHub sample](https://github.com/SyncfusionExamples/syncfusion-blazor-pivot-table-adaptors/tree/master/CustomAdaptor).
 
 ```cshtml
 @page "/"
@@ -767,7 +767,7 @@ The following sample assembles the Read/Insert/Update/Remove overrides shown ind
 
 ## Complete Sample Repository
 
-A complete, working sample implementation of the Custom Adaptor CRUD operations described in this document is available in the [GitHub repository](https://github.com/SyncfusionExamples/syncfusion-blazor-pivot-table-remote-data-binding/tree/master/CustomAdaptor).
+A complete, working sample implementation of the Custom Adaptor CRUD operations described in this document is available in the [GitHub repository](https://github.com/SyncfusionExamples/syncfusion-blazor-pivot-table-adaptors/tree/master/CustomAdaptor).
 
 Download or clone the repository to explore the project structure, run the sample locally, and adapt the pattern to your own data source.
 

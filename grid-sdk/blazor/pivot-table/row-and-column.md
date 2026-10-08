@@ -2,7 +2,7 @@
 layout: post
 title: Row and Column in Blazor Pivot Table | Syncfusion
 description: Learn how to set the Blazor Pivot Table's row and column dimensions in pixel, percentage, or auto height with a 400px minimum width to ensure proper rendering.
-platform: Blazor
+platform: grid-sdk
 control: Pivot Table
 documentation: ug
 ---

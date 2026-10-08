@@ -2,7 +2,7 @@
 layout: post
 title: Grouping in Blazor Pivot Table | Syncfusion
 description: Learn how the Blazor Pivot Table groups date, number, and custom fields into categories such as year, quarter, or numeric ranges through the Group Field dialog.
-platform: Blazor
+platform: grid-sdk
 control: Pivot Table
 documentation: ug
 ---

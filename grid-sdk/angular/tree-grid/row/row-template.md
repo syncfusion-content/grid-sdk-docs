@@ -85,7 +85,7 @@ export class AppComponent implements OnInit {
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/treegrid/row-cs8" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/row-cs8" %}
 
 ## Row template with formatting
 
@@ -179,7 +179,7 @@ export interface DateFormat extends Window {
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/treegrid/row-cs9" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/row-cs9" %}
 
 >When using the `rowTemplate` feature in Syncfusion<sup style="font-size:70%">&reg;</sup> TreeGrid, any formatting applied to columns using the `columns.format` property will not work inside the template.
 
@@ -249,7 +249,7 @@ export class AppComponent implements OnInit {
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/treegrid/row-cs10" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/row-cs10" %}
 
 ## Limitations
 

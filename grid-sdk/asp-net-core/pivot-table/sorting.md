@@ -2,7 +2,7 @@
 layout: post
 title: Sorting in ASP.NET Core Pivot Table | Syncfusion
 description: Learn how the ASP.NET Core Pivot Table sorts field members and aggregated values via enableSorting, the e-sortsettings property, or sort icons in the UI.
-platform: ej2-asp-core-mvc
+platform: grid-sdk
 control: Sorting
 publishingplatform: ##Platform_Name##
 documentation: ug
@@ -43,8 +43,6 @@ You can also configure member sorting during initial rendering using the [`e-sor
 
 The following example demonstrates how to configure the Pivot Table to enable member sorting and set the "Year" field to sort in descending order:
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/sorting/tagHelper %}
@@ -54,25 +52,11 @@ The following example demonstrates how to configure the Pivot Table to enable me
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/sorting/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Sorting.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/sorting/Sorting.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
 ### Alphanumeric Sorting
 
 Usually, string sorting is applied to field members even if their names start with numbers. To sort field members numerically based on the numbers at the beginning of their names, you can set the [`dataType`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotFieldListRow.html#Syncfusion_EJ2_PivotView_PivotFieldListRow_DataType) property to **number** for the specific field. This enables numeric sorting instead of alphabetical sorting, allowing for better logical ordering of numbered items.
 
 When [`dataType`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotFieldListRow.html#Syncfusion_EJ2_PivotView_PivotFieldListRow_DataType) is set to **number**, the component intelligently sorts members like '71-AJ', '209-FB', '36-SW' in the correct numerical sequence (36-SW, 71-AJ, 209-FB) rather than alphabetical order (209-FB, 36-SW, 71-AJ).
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -82,20 +66,6 @@ When [`dataType`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.P
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/sorting/alpha-numeric-headers/AlphaHeader.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/sorting/alpha-numeric-headers/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="AlphaHeader.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/sorting/alpha-numeric-headers/AlphaHeader.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
 
 ![Alphanumeric sorting example](images/alpha-numeric-header.png)
 
@@ -109,8 +79,6 @@ To set up custom sorting, use the following properties:
 - eld headers (aka, members) in rows and columns based on user-defined order. This can be configured mainly using the [`membersOrder`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewSortSetting.html#Syncfusion_EJ2_PivotView_PivotViewSortSetting_MembersOrder): An array of member values arranged in the user-defined sequence.
 - [`order`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewSortSetting.html#Syncfusion_EJ2_PivotView_PivotViewSortSetting_Order): Determines whether the specified member array should be arranged in ascending or descending order.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/sorting/custom-sorting/tagHelper %}
@@ -119,20 +87,6 @@ To set up custom sorting, use the following properties:
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/sorting/custom-sorting/Custom-sorting.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/sorting/custom-sorting/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Custom-sorting.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/sorting/custom-sorting/Custom-sorting.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
 
 ![Custom sorting example](images/Custom sorting.png)
 
@@ -146,9 +100,7 @@ You can also configure value sorting programmatically using the [`e-valuesortset
 * [`headerDelimiter`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewValueSortSettings.html#Syncfusion_EJ2_PivotView_PivotViewValueSortSettings_HeaderDelimiter): It allows to set the delimiters string to separate the header text between levels.
 * [`sortOrder`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewValueSortSettings.html#Syncfusion_EJ2_PivotView_PivotViewValueSortSettings_SortOrder): It allows to set the sort direction of the value field.
 
-> Value fields are set to the column axis by default. In such cases, the value sorting applied will have an effect on the column alone. You need to place the value fields in the row axis to do so in row wise. For more information, please [`refer here`](https://ej2.syncfusion.com/aspnetcore/documentation/pivot-table/data-binding#values-in-row-axis).
-
-{% if page.publishingplatform == "aspnet-core" %}
+> Value fields are set to the column axis by default. In such cases, the value sorting applied will have an effect on the column alone. You need to place the value fields in the row axis to do so in row wise. For more information, please [`refer here`](https://help.syncfusion.com/grid-sdk/asp-net-core/pivot-table/data-binding#values-in-row-axis).
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -158,20 +110,6 @@ You can also configure value sorting programmatically using the [`e-valuesortset
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/value-sorting/ValueSorting.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/value-sorting/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="ValueSorting.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/value-sorting/ValueSorting.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
 
 ![Value sorting example](images/valuesorting.png)
 
@@ -187,8 +125,6 @@ Multiple axis sorting allows simultaneous sorting of value fields in both row an
 
 > Note: This feature is applicable only to relational data sources and operates exclusively with client-side engine.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/multiple-axis-sorting/tagHelper %}
@@ -197,18 +133,6 @@ Multiple axis sorting allows simultaneous sorting of value fields in both row an
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/multiple-axis-sorting/MultipleAxisSorting.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/multiple-axis-sorting/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="MultipleAxisSorting.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/multiple-axis-sorting/MultipleAxisSorting.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 ![Multiple Axis Sorting](images/multiple-axis-sorting.png)
 
@@ -230,8 +154,6 @@ The [`OnHeadersSort`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.E
 
 The example below demonstrates how to use the [`OnHeadersSort`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_OnHeadersSort) event in the Pivot Table component to customize the header order for specific fields, such as **Country** and **Year**.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/onHeaderSort/tagHelper %}
@@ -240,20 +162,6 @@ The example below demonstrates how to use the [`OnHeadersSort`](https://help.syn
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/onHeaderSort/OnHeaderSort.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/onHeaderSort/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="OnHeaderSort.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/onHeaderSort/OnHeaderSort.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
 
 ![OnHeadersSort event example](images/Custom sorting_event.png)
 
@@ -276,8 +184,6 @@ The [`actionBegin`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2
 
 In the sample below, the sort action is restricted by setting the **args.cancel** property to **true** in the [`actionBegin`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_ActionBegin) event handler.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/action-event/actionBegin-sort/tagHelper %}
@@ -286,18 +192,6 @@ In the sample below, the sort action is restricted by setting the **args.cancel*
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/action-event/actionBegin-sort/actionBegin-aggregation.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/action-event/actionBegin-sort/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="ActionBegin-aggregation.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/action-event/actionBegin-sort/actionBegin-aggregation.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 ### ActionComplete
 
@@ -316,8 +210,6 @@ The event [`actionComplete`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncf
 
 > Note: This event is triggered only when field-based UI actions such as filtering, sorting, removing fields from the grouping bar, editing, or changing the aggregation type are performed.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/action-event/actionComplete-sort/tagHelper %}
@@ -326,18 +218,6 @@ The event [`actionComplete`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncf
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/action-event/actionComplete-sort/actionComplete-aggregation.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/action-event/actionComplete-sort/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="ActionComplete-aggregation.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/action-event/actionComplete-sort/actionComplete-aggregation.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 ### ActionFailure
 
@@ -352,8 +232,6 @@ The [`actionFailure`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.E
 
 * `errorInfo`: It holds the error information of the current UI action.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/action-event/actionFailure-sort/tagHelper %}
@@ -362,15 +240,3 @@ The [`actionFailure`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.E
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/action-event/actionFailure-sort/actionFailure-aggregation.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/action-event/actionFailure-sort/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="ActionFailure-aggregation.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/action-event/actionFailure-sort/actionFailure-aggregation.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}

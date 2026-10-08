@@ -10,7 +10,7 @@ System.config({
         }
     },
     paths: {
-        "syncfusion:": "https://cdn.syncfusion.com/ej2/34.1.29/"
+        "syncfusion:": "https://cdn.syncfusion.com/ej2/35.1.37/"
     },
     map: {
         main: "index.ts",
@@ -30,6 +30,7 @@ System.config({
         "@syncfusion/ej2-compression": "syncfusion:ej2-compression/dist/ej2-compression.umd.min.js",    
         "@syncfusion/ej2-data": "syncfusion:ej2-data/dist/ej2-data.umd.min.js",
         "@syncfusion/ej2-grids": "syncfusion:ej2-grids/dist/ej2-grids.umd.min.js",
+        "@syncfusion/ej2-querybuilder": "syncfusion:ej2-querybuilder/dist/ej2-querybuilder.umd.min.js",
         "@syncfusion/ej2-splitbuttons": "syncfusion:ej2-splitbuttons/dist/ej2-splitbuttons.umd.min.js"
     }
 });

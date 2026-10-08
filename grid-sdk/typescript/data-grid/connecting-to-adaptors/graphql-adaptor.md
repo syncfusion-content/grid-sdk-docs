@@ -1,11 +1,10 @@
 ---
 layout: post
-title: Bind data & perform CRUD with GraphQLAdaptor in Syncfusion Grid
+title: TypreScript Grid Bind Data with GraphQLAdaptor | Syncfusion
 description: Learn here all about how to bind data and perform CRUD action using GraphQLAdaptor in Syncfusion TypeScript Grid control.
 platform: grid-sdk
 control: grid
 keywords: Adaptors, GraphQLAdaptor, GraphQL adaptor, remotedata 
-publishingplatform: grid-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
@@ -258,16 +257,7 @@ npm install
 
 ```css
 
-@import '../node_modules/@syncfusion/ej2-base/styles/bootstrap5.css';  
-@import '../node_modules/@syncfusion/ej2-buttons/styles/bootstrap5.css';  
-@import '../node_modules/@syncfusion/ej2-calendars/styles/bootstrap5.css';  
-@import '../node_modules/@syncfusion/ej2-dropdowns/styles/bootstrap5.css';  
-@import '../node_modules/@syncfusion/ej2-inputs/styles/bootstrap5.css';  
-@import '../node_modules/@syncfusion/ej2-navigations/styles/bootstrap5.css';
-@import '../node_modules/@syncfusion/ej2-popups/styles/bootstrap5.css';
-@import '../node_modules/@syncfusion/ej2-splitbuttons/styles/bootstrap5.css';
-@import '../node_modules/@syncfusion/ej2-notifications/styles/bootstrap5.css';
-@import '../node_modules/@syncfusion/ej2-grids/styles/bootstrap5.css';
+@import "../node_modules/@syncfusion/ej2-material3-theme/styles/grid/index.css"
 
 ```
 
@@ -323,19 +313,7 @@ Now, add an HTML div element with its ID attribute set to Grid in your `index.ht
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Typescript Grid Control" />
     <meta name="author" content="Syncfusion" />
-    <link href="https://cdn.syncfusion.com/ej2/26.1.35/ej2-base/styles/bootstrap5.css" rel="stylesheet" />
-    <link href="https://cdn.syncfusion.com/ej2/26.1.35/ej2-grids/styles/bootstrap5.css" rel="stylesheet" />
-    <link href="https://cdn.syncfusion.com/ej2/26.1.35/ej2-buttons/styles/bootstrap5.css" rel="stylesheet" />
-    <link href="https://cdn.syncfusion.com/ej2/26.1.35/ej2-popups/styles/bootstrap5.css" rel="stylesheet" />
-    <link href="https://cdn.syncfusion.com/ej2/26.1.35/ej2-richtexteditor/styles/bootstrap5.css" rel="stylesheet" />
-    <link href="https://cdn.syncfusion.com/ej2/26.1.35/ej2-navigations/styles/bootstrap5.css" rel="stylesheet" />
-    <link href="https://cdn.syncfusion.com/ej2/26.1.35/ej2-dropdowns/styles/bootstrap5.css" rel="stylesheet" />
-    <link href="https://cdn.syncfusion.com/ej2/26.1.35/ej2-lists/styles/bootstrap5.css" rel="stylesheet" />
-    <link href="https://cdn.syncfusion.com/ej2/26.1.35/ej2-inputs/styles/bootstrap5.css" rel="stylesheet" />
-    <link href="https://cdn.syncfusion.com/ej2/26.1.35/ej2-calendars/styles/bootstrap5.css" rel="stylesheet" />
-    <link href="https://cdn.syncfusion.com/ej2/26.1.35/ej2-notifications/styles/bootstrap5.css" rel="stylesheet" />
-    <link href="https://cdn.syncfusion.com/ej2/26.1.35/ej2-splitbuttons/styles/bootstrap5.css" rel="stylesheet" />
-
+    <link href="https://cdn.syncfusion.com/ej2/35.1.37/material3.css" rel="stylesheet">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
 <script src="https://cdn.syncfusion.com/ej2/syncfusion-helper.js" type ="text/javascript"></script>
 </head>
@@ -384,20 +362,8 @@ To integrate GraphQL with the Syncfusion<sup style="font-size:70%">&reg;</sup> G
     <meta name="description" content="Javascript Grid Control">
     <meta name="author" content="Syncfusion">
     <link href="index.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/25.2.3/ej2-base/styles/bootstrap5.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/25.2.3/ej2-grids/styles/bootstrap5.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/25.2.3/ej2-buttons/styles/bootstrap5.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/25.2.3/ej2-popups/styles/bootstrap5.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/25.2.3/ej2-richtexteditor/styles/bootstrap5.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/25.2.3/ej2-navigations/styles/bootstrap5.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/25.2.3/ej2-dropdowns/styles/bootstrap5.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/25.2.3/ej2-lists/styles/bootstrap5.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/25.2.3/ej2-inputs/styles/bootstrap5.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/25.2.3/ej2-calendars/styles/bootstrap5.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/25.2.3/ej2-notifications/styles/bootstrap5.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/25.2.3/ej2-splitbuttons/styles/bootstrap5.css" rel="stylesheet">
-
-    <script src="https://cdn.syncfusion.com/ej2/25.2.3/dist/ej2.min.js" type="text/javascript"></script>
+    <link href="https://cdn.syncfusion.com/ej2/35.1.37/material3.css" rel="stylesheet">
+    <script src="https://cdn.syncfusion.com/ej2/35.1.37/dist/ej2.min.js" type="text/javascript"></script>
     <script src="https://cdn.syncfusion.com/ej2/syncfusion-helper.js" type="text/javascript"></script>
 </head>
 
@@ -456,7 +422,7 @@ You can find the complete `GraphQLAdaptor` sample in the [GitHub](https://github
 
 ## Handling searching operation
 
-To handle search operation in the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid using the GraphQLAdaptor, by utilizing the `datamanager.search` parameters and executing the search operation with the [search](https://ej2.syncfusion.com/documentation/api/data/query/#search) method. This feature allows users to efficiently search through the grid's data and retrieve relevant information based on specified criteria.
+To handle search operation in the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid using the GraphQLAdaptor, by utilizing the `datamanager.search` parameters and executing the search operation with the [search](https://ej2.syncfusion.com/documentation/api/data/query#search) method. This feature allows users to efficiently search through the grid's data and retrieve relevant information based on specified criteria.
 
 In the image below, you can see the values of `datamanager.search` parameters:
 
@@ -565,7 +531,7 @@ grid.appendTo('#Grid');
 
 ## Handling filtering operation
 
-To handle filter operation in the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid using the GraphQLAdaptor, by utilizing the `datamanager.where` parameters and executing the filter operation with the [where](https://ej2.syncfusion.com/documentation/api/data/query/#where) method. This feature allows you to efficiently filter through the grid's data and retrieve relevant information based on specified criteria.
+To handle filter operation in the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid using the GraphQLAdaptor, by utilizing the `datamanager.where` parameters and executing the filter operation with the [where](https://ej2.syncfusion.com/documentation/api/data/query#where) method. This feature allows you to efficiently filter through the grid's data and retrieve relevant information based on specified criteria.
 
 In the image below, you can see the values of `datamanager.where` parameters:
 
@@ -681,7 +647,7 @@ grid.appendTo('#Grid');
 
 ## Handling sorting operation
 
-To handle sort operation in the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid using the GraphQLAdaptor, by utilizing the `datamanager.sorted `parameters and executing the sort operation with the [sortBy](https://ej2.syncfusion.com/documentation/api/data/query/#sortBy) method. This feature allows users to efficiently sort grid data based on specified criteria.
+To handle sort operation in the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid using the GraphQLAdaptor, by utilizing the `datamanager.sorted `parameters and executing the sort operation with the [sortBy](https://ej2.syncfusion.com/documentation/api/data/query#sortBy) method. This feature allows users to efficiently sort grid data based on specified criteria.
 
 In the image below, you can see the values of `datamanager.sorted` parameters:
 
@@ -792,7 +758,7 @@ grid.appendTo('#Grid');
 
 ## Handling paging operation
 
-To handle page operation in the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid using the GraphQLAdaptor, by utilizing the `datamanager.skip` and `datamanager.take` parameters and executing the paging with the [page](https://ej2.syncfusion.com/documentation/api/data/query/#page) method. This feature allows users to navigate through large datasets efficiently by dividing them into pages.
+To handle page operation in the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid using the GraphQLAdaptor, by utilizing the `datamanager.skip` and `datamanager.take` parameters and executing the paging with the [page](https://ej2.syncfusion.com/documentation/api/data/query#page) method. This feature allows users to navigate through large datasets efficiently by dividing them into pages.
 
 In the image below, you can see the value of `datamanager.skip` and `datamanager.take` parameters:
 
@@ -1120,7 +1086,7 @@ Deleting a record from the database involves the following steps:
   ```
   {% endif %}
 
-> Normal/Inline editing is the default edit [mode](../../api/grid/editSettings/#mode) for the Grid control. To enable CRUD operations, ensure that the [isPrimaryKey](../../api/grid/column/#isprimarykey) property is set to **true** for a specific grid column, ensuring that its value is unique.
+> Normal/Inline editing is the default edit [mode](../../api/grid/editSettings#mode) for the Grid control. To enable CRUD operations, ensure that the [isPrimaryKey](../../api/grid/column#isprimarykey) property is set to **true** for a specific grid column, ensuring that its value is unique.
 
 {% tabs %}
 {% highlight js tabtitle="resolver.js" %}

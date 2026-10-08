@@ -50,4 +50,4 @@ The following list outlines the features that are not compatible with row spanni
 * Export
 
 ## See Also
-* [Column Spanning in Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.Core TreeGrid](https://ej2.syncfusion.com/aspnetcore/documentation/tree-grid/columns/column-spanning)
+* [Column Spanning in Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.Core TreeGrid](https://help.syncfusion.com/grid-sdk/asp-net-core/tree-grid/columns/column-spanning)

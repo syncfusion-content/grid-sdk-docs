@@ -1259,7 +1259,7 @@ app.Run();
 
 ```
 
-**Step 4:** Create a simple Blazor DataGrid by following the [Getting Started](https://blazor.syncfusion.com/documentation/datagrid/getting-started-with-web-app) documentation link.
+**Step 4:** Create a simple Blazor DataGrid by following the [Getting Started](https://help.syncfusion.com/grid-sdk/blazor/data-grid/getting-started-with-web-app) documentation link.
 
 **Step 5:** Create a **Data** folder and add Data Controller (**OrderDetails.cs**) in your project to handle CRUD operations for the Blazor Grid: 
 

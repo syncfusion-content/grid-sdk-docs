@@ -29,7 +29,7 @@ The following code example demonstrates how to define a validation rule for Tree
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/treegrid/validation-cs1" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/validation-cs1" %}
 
 ## Custom validation
 
@@ -46,7 +46,7 @@ In the following demo, custom validation is applied for **Priority** column:
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/treegrid/validation-cs2" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/validation-cs2" %}
 
 ### Custom validation based on dropdown change
 
@@ -63,7 +63,7 @@ In the following sample, dropdownlist edit type is used for the **Role** and **S
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/treegrid/validation-cs3" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/validation-cs3" %}
 
 ### Custom validation for numeric column
 
@@ -80,7 +80,7 @@ In the following example, custom validation functions are defined for the progre
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/treegrid/validation-cs4" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/validation-cs4" %}
 
 ## Dynamically add or remove validation rules from the form
 
@@ -99,7 +99,7 @@ The following example demonstrates how to dynamically add or remove a required v
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/treegrid/validation-cs5" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/validation-cs5" %}
 
 >To remove an existing validation rule from an input element, you can use the [removeRules](https://ej2.syncfusion.com/angular/documentation/api/form-validator#removerules) method. 
 
@@ -120,4 +120,4 @@ The following example demonstrates how to change the position of the validation 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/treegrid/validation-cs6" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/validation-cs6" %}

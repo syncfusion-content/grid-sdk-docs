@@ -2,7 +2,7 @@
 layout: post
 title: Pivot Chart in ASP.NET Core Pivot Table | Syncfusion
 description: Learn how the ASP.NET Core Pivot Table pairs with a Pivot Chart that supports 15+ chart types, drill down/up, and grid-or-chart display via e-displayOption.
-platform: ej2-asp-core-mvc
+platform: grid-sdk
 control: Pivot Chart
 publishingplatform: ##Platform_Name##
 documentation: ug
@@ -22,8 +22,6 @@ Users can display the pivot chart component individually with pivot values and m
 
 The following sample shows the pivot chart component based on the pivot report bound to it.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/pivot-chart/display-view/tagHelper %}
@@ -33,21 +31,9 @@ The following sample shows the pivot chart component based on the pivot report b
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pivot-chart/display-view/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="DisplayView.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pivot-chart/display-view/DisplayView.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
 ## Data Binding
 
-The Pivot Table component supports both local and remote data binding options to populate data in the pivot chart. Users can bind data to the component using the [`dataSource`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html#Syncfusion_EJ2_PivotView_PivotViewDataSourceSettings_DataSource) property, which accepts either an instance of [`DataManager`](https://ej2.syncfusion.com/documentation/api/data/dataManager) for remote data sources or a JavaScript object array collection for local data. For further details, [refer here](./data-binding).
+The Pivot Table component supports both local and remote data binding options to populate data in the pivot chart. Users can bind data to the component using the [`dataSource`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html#Syncfusion_EJ2_PivotView_PivotViewDataSourceSettings_DataSource) property, which accepts either an instance of [`DataManager`](https://ej2.syncfusion.com/documentation/api/data/datamanager) for remote data sources or a JavaScript object array collection for local data. For further details, [refer here](./data-binding).
 
 ## Chart Types
 
@@ -79,8 +65,6 @@ By default, the [**Line**](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfus
 
 For example, to display a [**Bar**](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.ChartSeriesType.html) chart, set the chart type to 'Bar' within the Pivot Chart settings. Review the following code samples to see how to set this option:
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/pivot-chart/chart-type/tagHelper %}
@@ -89,20 +73,6 @@ For example, to display a [**Bar**](https://help.syncfusion.com/cr/aspnetcore-js
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/pivot-chart/chart-type/ChartType.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pivot-chart/chart-type/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="ChartType.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pivot-chart/chart-type/ChartType.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
 
 ![Pivot chart type example](images/charttype.png)
 
@@ -120,8 +90,6 @@ As like other chart types it can be changed using the property [`type`](https://
 
 In the code example below, the **Pie** chart is displayed by default. You can switch to other accumulation chart types, such as Doughnut, Funnel, or Pyramid, using the dropdown list.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/pivot-chart/chart-accumulation/tagHelper %}
@@ -130,20 +98,6 @@ In the code example below, the **Pie** chart is displayed by default. You can sw
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/pivot-chart/chart-accumulation/Accumulation.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pivot-chart/chart-accumulation/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Accumulation.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pivot-chart/chart-accumulation/Accumulation.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
 
 ![Accumulation chart example](images/accumulation.png)
 
@@ -157,8 +111,6 @@ In accumulation charts, you can use the drill down and drill up options to explo
 
 > You can use the drill operation for row headers only in accumulation charts.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/pivot-chart/chart-drill/tagHelper %}
@@ -168,20 +120,6 @@ In accumulation charts, you can use the drill down and drill up options to explo
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pivot-chart/chart-drill/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Drill.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pivot-chart/chart-drill/Drill.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
-
 ![Accumulation chart drilldown](images/accumulation-drill.png)
 
 ### Column Headers and Delimiters
@@ -189,8 +127,6 @@ In accumulation charts, you can use the drill down and drill up options to explo
 In accumulation charts, only the values from a single column in the pivot chart are displayed. By default, the first column is used. If you want to show values from a different column, you can specify the column headers with the `columnHeader` property in [`e-chartSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewChartSettings.html).
 
 If the column has more than one header, enter all the headers separated by a delimiter, such as **Germany-Road Bikes**. You can set your preferred delimiter using the `columnDelimiter` property in [`e-chartSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewChartSettings.html). This allows you to display the correct values in your accumulation chart according to how your columns are grouped in the Pivot Table.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -200,19 +136,6 @@ If the column has more than one header, enter all the headers separated by a del
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/pivot-chart/chart-column/Column.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pivot-chart/chart-column/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Column.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pivot-chart/chart-column/Column.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
 
 
 ![Accumulation chart column header selection](images/accumulation-column.png)
@@ -230,8 +153,6 @@ The `position` property in `dataLabel` allows you to specify where the data labe
 
 In the following code sample, the data labels are placed inside the chart points.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/pivot-chart/chart-datalabel/tagHelper %}
@@ -241,25 +162,9 @@ In the following code sample, the data labels are placed inside the chart points
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pivot-chart/chart-datalabel/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="DataLabel.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pivot-chart/chart-datalabel/DataLabel.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
-
 ![Accumulation chart data labels](images/accumulation-label.png)
 
 The **Connector Line** appears when data labels are positioned outside the chart. You can style this connector line using the `connectorStyle` property in `dataLabel` to modify its color, length, width, and other properties. In the example below, the connector line appearance is changed to show a different style.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -270,27 +175,11 @@ The **Connector Line** appears when data labels are positioned outside the chart
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pivot-chart/chart-connector/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Connector.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pivot-chart/chart-connector/Connector.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
-
 ![Accumulation chart connector line](images/accumulation-connector.png)
 
 ### Pie and Doughnut Customization
 
 You can draw pie and doughnut charts within a specific range by using the `startAngle` and `endAngle` properties in the [`e-chartSeries`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewPivotSeries.html) configuration. The default value for the `startAngle` property is **0**, and the `endAngle` property is **360**. By modifying these properties, you can create semi-pie and semi-doughnut charts.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -301,27 +190,11 @@ You can draw pie and doughnut charts within a specific range by using the `start
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pivot-chart/chart-angle/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Angle.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pivot-chart/chart-angle/Angle.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
-
 ![Pie/doughnut chart angle customization](images/accumulation-angle.png)
 
 You can convert a pie chart to a doughnut chart and vice-versa using the `innerRadius` property in the [`e-chartSeries`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewPivotSeries.html) configuration. When this property is set to a value greater than **0** percent, the chart appears as a doughnut instead of a pie chart.
 
 > This property accepts values only in percentage format.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -332,27 +205,11 @@ You can convert a pie chart to a doughnut chart and vice-versa using the `innerR
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pivot-chart/chart-radius/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Radius.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pivot-chart/chart-radius/Radius.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
-
 ![Pie to doughnut radius exampl](images/accumulation-radius.png)
 
 ### Exploding Series Points
 
 You can make an individual point in a pivot chart stand out by enabling the exploding option. To do this, set the `explode` property in the [`e-chartSeries`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewPivotSeries.html) to **true**. When this option is turned on, a chart point will separate from the rest of the series when a user clicks it with a mouse or taps it on a touch device. This makes it easier for users to highlight and identify specific data points in accumulation charts like Pie, Doughnut, Funnel, or Pyramid.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -363,20 +220,6 @@ You can make an individual point in a pivot chart stand out by enabling the expl
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pivot-chart/chart-explode/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Explode.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pivot-chart/chart-explode/Explode.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
-
 ![Exploding series point](images/accumulation-explode.png)
 
 ## Field List
@@ -384,8 +227,6 @@ You can make an individual point in a pivot chart stand out by enabling the expl
 The field list makes it easy to add, remove, or rearrange fields in the pivot chart, so you can display exactly the data you need. To show the field list in the Pivot Chart, set the [`showFieldList`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_ShowFieldList) property of the Pivot Table to **true**. When you make changes with the field list, the pivot chart updates right away to show the new results. To learn more about the field list and how it works, see the [field list](./field-list) topic in the documentation.
 
 The sample below demonstrates the field list shown in `Popup` mode within the pivot chart.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -396,20 +237,6 @@ The sample below demonstrates the field list shown in `Popup` mode within the pi
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pivot-chart/chart-fieldlist/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="ChartFieldList.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pivot-chart/chart-fieldlist/ChartFieldList.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
-
 ![Pivot chart with field list](images/pivotchart-FL.png)
 
 ## Grouping Bar
@@ -417,8 +244,6 @@ The sample below demonstrates the field list shown in `Popup` mode within the pi
 You can display the grouping bar in the Pivot Chart by setting the [`showGroupingBar`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_ShowGroupingBar) property to **true**. When enabled, the grouping bar in the pivot chart shows a drop-down list on the value axis. This drop-down lets users select from the value fields defined in [`e-datasourcesettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html). Users can switch between these fields to update the chart based on the selected value field. This method of selection is the default behavior in the Pivot Chart component. For more details about how the grouping bar works, refer to the [grouping bar](./grouping-bar) documentation.
 
 > When there are multiple axes, buttons appear on the value axis instead of the drop-down list.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -429,25 +254,9 @@ You can display the grouping bar in the Pivot Chart by setting the [`showGroupin
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pivot-chart/chart-groupingbar/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="ChartGroupingBar.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pivot-chart/chart-groupingbar/ChartGroupingBar.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
-
 ![Pivot chart grouping bar](images/pivotchart-gbar.png)
 
 When using accumulation charts, the drop-down list appears on the column axis. This list contains the column headers available in the Pivot Chart. Users can switch column headers using this drop-down, and the accumulation chart will update with the selected header.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -458,27 +267,11 @@ When using accumulation charts, the drop-down list appears on the column axis. T
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pivot-chart/chart-group/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Group.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pivot-chart/chart-group/Group.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
-
 ![Accumulation chart grouping](images/accumulation-group.png)
 
 ## Single Axis
 
 By default, the pivot chart uses the first value field (measure) from your report as the value axis. If you want to display data using a different value field, you can do this easily. Use the [`value`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewChartSettings.html#Syncfusion_EJ2_PivotView_PivotViewChartSettings_Value) property inside [`e-chartSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewChartSettings.html). This option lets you show a specific value field in the pivot chart, allowing you to focus on the data you need.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -489,20 +282,6 @@ By default, the pivot chart uses the first value field (measure) from your repor
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pivot-chart/chart-single/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="ChartSingle.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pivot-chart/chart-single/ChartSingle.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
-
 ![Pivot chart single axis](images/chart_single_axis.png)
 
 ## Multiple Axis
@@ -510,8 +289,6 @@ By default, the pivot chart uses the first value field (measure) from your repor
 The pivot chart can be drawn with multiple value fields by setting the [`enableMultipleAxis`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewChartSettings.html#Syncfusion_EJ2_PivotView_PivotViewChartSettings_EnableMultipleAxis) property to **true** in the [`e-chartSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewChartSettings.html). In the following code sample, the pivot chart displays both value fields "Sold" and "Amount" from the [`e-datasourcesettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html).
 
 > Multiple axis support is not applicable for accumulation chart types like pie, doughnut, pyramid, and funnel.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -522,25 +299,9 @@ The pivot chart can be drawn with multiple value fields by setting the [`enableM
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pivot-chart/chart-multivalue/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="ChartMultiValue.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pivot-chart/chart-multivalue/ChartMultiValue.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
-
 ![Pivot chart multiple axes](images/multi-axis.png)
 
 When binding more value fields, the result displays multiple pivot charts, with each chart shrinking within the parent container height. To prevent this behavior, set the [`enableScrollOnMultiAxis`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewChartSettings.html#Syncfusion_EJ2_PivotView_PivotViewChartSettings_EnableScrollOnMultiAxis) property to **true** in the [`e-chartSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewChartSettings.html). This ensures each pivot chart maintains a minimum height of "160px" to "180px" and displays a vertical scroll bar for better visibility.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -551,27 +312,11 @@ When binding more value fields, the result displays multiple pivot charts, with 
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pivot-chart/chart-multiaxisscrollbar/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="ChartScrollBar.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pivot-chart/chart-multiaxisscrollbar/ChartScrollBar.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
-
 ![Pivot chart with scroll bar](images/chart-scrollbar.png)
 
 Alternatively, you can display multiple values in a single chart. In this approach, the series from multiple values are grouped and displayed together. Based on the values, multiple Y-axis scales are created with different ranges. This can be achieved by setting [`enableMultipleAxis`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewChartSettings.html#Syncfusion_EJ2_PivotView_PivotViewChartSettings_EnableMultipleAxis) to **true** and [`multipleAxisMode`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewChartSettings.html#Syncfusion_EJ2_PivotView_PivotViewChartSettings_MultipleAxisMode) to `Single` in the [`chartSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewChartSettings.html).
 
 In the following code sample, the pivot chart appears as a single chart with multiple value fields such as **Sold** and **Amount**, each represented with its own Y-axis.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -582,25 +327,11 @@ In the following code sample, the pivot chart appears as a single chart with mul
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pivot-chart/chart-multipleaxismode/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="ChartMultipleAxisMode.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pivot-chart/chart-multipleaxismode/ChartMultipleAxisMode.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
 Additionally, to display chart series for multiple values within a single y-axis, set the properties [`enableMultipleAxis`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewChartSettings.html#Syncfusion_EJ2_PivotView_PivotViewChartSettings_EnableMultipleAxis) to **true** and the [`multipleAxisMode`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewChartSettings.html#Syncfusion_EJ2_PivotView_PivotViewChartSettings_MultipleAxisMode) to **Combined**, in the [`chartSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewChartSettings.html).
 
 > The y-axis range values will be formatted using the first value field on the value axis. For example, if the first value field is in currency format and the remaining value fields are in different number formats or no format, the y-axis range values will be displayed in the currency format of the first value field.
 
 The pivot chart in the following code sample can be seen as a single chart with multiple value fields such as **Sold** and **Amount** drawn as a single y-axis.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -611,20 +342,6 @@ The pivot chart in the following code sample can be seen as a single chart with 
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pivot-chart/single-combined-y-axis/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="combinedYAxis.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pivot-chart/single-combined-y-axis/combinedYAxis.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
-
 ![Pivot Chart for multiple values in a single y-axis](images/single-combined-y-axis.png)
 
 ### Show point color based on members
@@ -632,8 +349,6 @@ The pivot chart in the following code sample can be seen as a single chart with 
 When you enable multiple axes in the pivot chart, you can use the [`showPointColorByMembers`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewChartSettings.html#Syncfusion_EJ2_PivotView_PivotViewChartSettings_ShowPointColorByMembers) property in the [`chartSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewChartSettings.html) to display the same color for each member on the column axis across all measures. Setting this property to **true** makes it easy for users to spot and compare each member throughout the entire chart.
 
 In addition, users can show or hide specific members from all measures in the chart by clicking the corresponding legend item. This interaction allows users to focus on the members they want to analyze without distraction.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -644,28 +359,12 @@ In addition, users can show or hide specific members from all measures in the ch
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pivot-chart/show-member-series/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="ShowMemberSeries.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pivot-chart/show-member-series/ShowMemberSeries.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
-
 ![Show point color based on members in Pivot Chart](images/showMemberSeries.png)
 
 
 ## Series customization
 
 You can customize the series in the pivot chart by using the [`e-chartSeries`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewPivotSeries.html) property inside [`e-chartSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewChartSettings.html). Any changes you make to the [`e-chartSeries`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewPivotSeries.html) property will apply to all series in the chart.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -676,27 +375,11 @@ You can customize the series in the pivot chart by using the [`e-chartSeries`](h
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pivot-chart/chartseries/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="ChartSeries.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pivot-chart/chartseries/ChartSeries.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
-
 ![Pivot chart series customization](images/chart-series.png)
 
 If you want to change each series separately, use the `chartSeriesCreated` event. This event happens after the pivot chart series are created, making it possible to work with each series one at a time.
 
 The sample below shows how you can hide every even-numbered series in the pivot chart.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -706,20 +389,6 @@ The sample below shows how you can hide every even-numbered series in the pivot 
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/pivot-chart/chartseries-event/ChartSeriesEvent.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pivot-chart/chartseries-event/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="ChartSeriesEvent.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pivot-chart/chartseries-event/ChartSeriesEvent.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
 
 ![Pivot chart series event example](images/chart-series-event.png)
 
@@ -731,8 +400,6 @@ Users can customize the x-axis and y-axis of the pivot chart using the [`primary
 
 For example, in the sample below, the titles for the y-axis and x-axis are set to custom values.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/pivot-chart/chart-axis/tagHelper %}
@@ -741,20 +408,6 @@ For example, in the sample below, the titles for the y-axis and x-axis are set t
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/pivot-chart/chart-axis/ChartAxis.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pivot-chart/chart-axis/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="ChartAxis.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pivot-chart/chart-axis/ChartAxis.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
 
 ![Pivot chart axis customization](images/axis-customization.png)
 
@@ -767,8 +420,6 @@ Users can also modify multi-level labels on the primary x-axis by using the `mul
 
 The example below shows how to update the text and style for multi-level labels on the pivot chart’s x-axis:
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/pivot-chart/chart-multiLevelLabelRender/tagHelper %}
@@ -777,20 +428,6 @@ The example below shows how to update the text and style for multi-level labels 
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/pivot-chart/chart-multiLevelLabelRender/chart-multiLevelLabelRender.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pivot-chart/chart-multiLevelLabelRender/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Chart-multiLevelLabelRender.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pivot-chart/chart-multiLevelLabelRender/chart-multiLevelLabelRender.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
 
 ![Multi-level label customization](images/multilevellabelrender.png)
 
@@ -826,8 +463,6 @@ Users can also choose where the legend appears in the pivot chart by setting the
 
 In the following code example, you can see how to set a different legend shape and position.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/pivot-chart/legend/tagHelper %}
@@ -836,20 +471,6 @@ In the following code example, you can see how to set a different legend shape a
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/pivot-chart/legend/Legend.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pivot-chart/legend/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Legend.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pivot-chart/legend/Legend.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
 
 ![Legend settings customization](images/legend-settings.png)
 
@@ -865,8 +486,6 @@ If you want to display a tooltip when hovering over an axis crosshair, use the `
 
 In the following code sample, both marker and crosshair options are enabled and set up using the above properties:
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/pivot-chart/marker/tagHelper %}
@@ -875,20 +494,6 @@ In the following code sample, both marker and crosshair options are enabled and 
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/pivot-chart/marker/Marker.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pivot-chart/marker/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Marker.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pivot-chart/marker/Marker.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
 
 ![Marker and crosshair example](images/marker-crosshair.png)
 
@@ -913,8 +518,6 @@ When the pivot chart is zoomed, a toolbar appears at the top of the chart with t
 
 In the code sample below, all four zooming types are enabled, along with the toolbar options for the pivot chart.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/pivot-chart/zooming/tagHelper %}
@@ -923,20 +526,6 @@ In the code sample below, all four zooming types are enabled, along with the too
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/pivot-chart/zooming/Zooming.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pivot-chart/zooming/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Zooming.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pivot-chart/zooming/Zooming.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
 
 ![Chart zooming and panning](images/zooming.png)
 
@@ -948,8 +537,6 @@ If users do not want to show the tooltip, they can disable it by setting the `en
 
 The code below shows how to change the default tooltip appearance and settings in the Pivot Chart.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/pivot-chart/chart-tooltip/tagHelper %}
@@ -958,20 +545,6 @@ The code below shows how to change the default tooltip appearance and settings i
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/pivot-chart/chart-tooltip/ChartTooltip.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pivot-chart/chart-tooltip/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="ChartTooltip.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pivot-chart/chart-tooltip/ChartTooltip.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
 
 ![Pivot chart tooltip](images/tooltip.png)
 
@@ -993,8 +566,6 @@ Other optional parameters for the `chartExport` method include:
 
 The example below shows how to export the pivot chart using an external button labeled "Export":
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/pivot-chart/export/tagHelper %}
@@ -1004,20 +575,6 @@ The example below shows how to export the pivot chart using an external button l
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pivot-chart/export/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Export.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pivot-chart/export/Export.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
-
 ![Pivot chart export example](images/chart-export.png)
 
 ## Print
@@ -1025,8 +582,6 @@ The example below shows how to export the pivot chart using an external button l
 You can print the current view of the pivot chart directly from the browser by using the `printChart` method. This allows you to create a physical or digital copy of your pivot chart as displayed on the screen.
 
 In the example below, clicking an external button labeled "Print Chart" calls the `printChart` method and prints the rendered pivot chart.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -1036,19 +591,5 @@ In the example below, clicking an external button labeled "Print Chart" calls th
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/pivot-chart/print/Print.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pivot-chart/print/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Print.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pivot-chart/print/Print.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
 
 ![Pivot chart print example](images/print-chart.png)

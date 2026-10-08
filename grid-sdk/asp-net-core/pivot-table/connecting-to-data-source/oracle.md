@@ -2,7 +2,7 @@
 layout: post
 title: Oracle Data Binding in ASP.NET Core Pivot Table | Syncfusion
 description: Learn how to bind Oracle data to the ASP.NET Core Pivot Table using Oracle.ManagedDataAccess.Core in a Web API controller exposed as JSON.
-platform: ej2-asp-core-mvc
+platform: grid-sdk
 documentation: ug
 ---
 
@@ -176,4 +176,4 @@ Here’s the updated sample code with the report configuration and field list su
 ![Pivot Table bound with Oracle database](../images/oracle-data-binding.png)
 
 ### Additional Resources
-Explore a complete example of the ASP.NET Core Pivot Table integrated with an ASP.NET Core Web Application to fetch data from an Oracle database in this [GitHub](https://github.com/SyncfusionExamples/how-to-bind-Oracle-database-to-pivot-table) repository.
+Explore a complete example of the ASP.NET Core Pivot Table integrated with an ASP.NET Core Web Application to fetch data from an Oracle database in this [GitHub](https://github.com/SyncfusionExamples/web-bind-Oracle-database-to-pivot-table) repository.

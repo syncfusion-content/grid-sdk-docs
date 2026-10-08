@@ -2,7 +2,7 @@
 layout: post
 title: OLAP in ASP.NET Core Pivot Table | Syncfusion
 description: Learn how to configure the ASP.NET Core Pivot Table with OLAP cube data sources, including license registration and project setup in Visual Studio.
-platform: ej2-asp-core-mvc
+platform: grid-sdk
 control: Olap
 publishingplatform: ##Platform_Name##
 documentation: ug
@@ -12,11 +12,11 @@ documentation: ug
 
 ## Getting Started with ASP.NET Core
 
-N> Starting with v16.2.0.x, if you reference Syncfusion<sup style="font-size:70%">&reg;</sup> assemblies from trial setup or from the NuGet feed, you also have to include a license key in your projects. Refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/license-key) to know about registering Syncfusion<sup style="font-size:70%">&reg;</sup> license key in your ASP.NET MVC application to use our components.
+N> Starting with v16.2.0.x, if you reference Syncfusion<sup style="font-size:70%">&reg;</sup> assemblies from trial setup or from the NuGet feed, you also have to include a license key in your projects. Refer to this [link](https://help.syncfusion.com/common/essential-studio/licensing/overview) to know about registering Syncfusion<sup style="font-size:70%">&reg;</sup> license key in your ASP.NET MVC application to use our components.
 
 ### Prerequisites
 
-The official prerequisites to create and run an ASP.NET Core 2.x application on Windows environment are described in the [.NET Core documentation website](https://docs.microsoft.com/en-us/dotnet/core/windows-prerequisites?tabs=netcore2x).
+The official prerequisites to create and run an ASP.NET Core 2.x application on Windows environment are described in the [.NET Core documentation website](https://learn.microsoft.com/en-us/dotnet/core/install/windows?tabs=netcore2x#dependencies).
 
 ### Create ASP.NET Core web application
 
@@ -84,8 +84,6 @@ N> The Syncfusion.EJ2.AspNet.Core NuGet package has dependencies, [`Newtonsoft.J
 
 Add the below code to your `Index.cshtml` view page which is present under `Views/Home` folder, to initialize the pivot table component with sample OLAP data source.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/getting-start-mvc/olap-pivot-table/tagHelper %}
@@ -94,20 +92,6 @@ Add the below code to your `Index.cshtml` view page which is present under `V
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/getting-start-mvc/olap-pivot-table/pivottable.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/getting-start-mvc/olap-pivot-table/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Pivottable.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/getting-start-mvc/olap-pivot-table/pivottable.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
 
 ### Adding OLAP Cube Elements to Row, Column, Value, and Filter Axes
 
@@ -127,8 +111,6 @@ To specify each [OLAP cube element](#olap-cube-elements) in the required axis, s
 
 For example, in the sample below, the element "Product Categories" is assigned to the columns axis, "Customer Geography" is assigned to the rows axis, and both "Customer Count" and "Internet Sales Amount" are set in the values axis.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/getting-start-mvc/olap-fields/tagHelper %}
@@ -138,19 +120,6 @@ For example, in the sample below, the element "Product Categories" is assigned t
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/getting-start-mvc/olap-fields/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Fields.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/getting-start-mvc/olap-fields/fields.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
 ### Applying Formatting to a Value Field
 
 You can change how values in the Pivot Table are displayed by applying formatting. For example, you can display values as currency by using the **C** format string. To apply formatting, use the [`e-formatsettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewFormatSetting.html) property within [`DataSourceSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html), and define both the [`name`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewFormatSetting.html#Syncfusion_EJ2_PivotView_PivotViewFormatSetting_Name) (the value field to format) and the [`format`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewFormatSetting.html#Syncfusion_EJ2_PivotView_PivotViewFormatSetting_Format) (the format to apply).
@@ -158,8 +127,6 @@ You can change how values in the Pivot Table are displayed by applying formattin
 In the following example, the [`e-formatsettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewFormatSetting.html) property is used to apply the **C0** format to the **[Measures].[Internet Sales Amount]** field. This causes its values to be displayed as currency, showing the currency symbol without any decimal places. You can add formatting for other value fields in a similar way by including them in the [`e-formatsettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewFormatSetting.html) array.
 
 > Only fields from the value section containing numeric data can be formatted.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -170,18 +137,6 @@ In the following example, the [`e-formatsettings`](https://help.syncfusion.com/c
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/getting-start-mvc/olap-formatting/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Formatting.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/getting-start-mvc/olap-formatting/formatting.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
 ### Enable Grouping Bar
 
 The grouping bar lets users easily organize [OLAP cube elements](#olap-cube-elements) from the connected data source. Users can drag these cube elements between different axes, such as [`rows`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html#Syncfusion_EJ2_PivotView_PivotViewDataSourceSettings_Rows), [`columns`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html#Syncfusion_EJ2_PivotView_PivotViewDataSourceSettings_Columns), [`values`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html#Syncfusion_EJ2_PivotView_PivotViewDataSourceSettings_Values), and [`filters`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html#Syncfusion_EJ2_PivotView_PivotViewDataSourceSettings_Filters), to quickly change how data is shown in the Pivot Table. It also allows sorting, filtering, and removing of elements directly from the grouping bar, making it simple to customize the Pivot Table layout at runtime.
@@ -189,8 +144,6 @@ The grouping bar lets users easily organize [OLAP cube elements](#olap-cube-elem
 To display the grouping bar, set the [`showGroupingBar`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_ShowGroupingBar) property to **true** in the `Pivot Table` component, and make sure to inject the **GroupingBar** module as shown below.
 
 > Note: If the **GroupingBar** module is not injected, the grouping bar will not appear in the Pivot Table component.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -201,18 +154,6 @@ To display the grouping bar, set the [`showGroupingBar`](https://help.syncfusion
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/getting-start-mvc/olap-grouping-bar/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Grouping-bar.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/getting-start-mvc/olap-grouping-bar/grouping-bar.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
 ### Enable Pivot Field List
 
 The Pivot Table control includes a built-in Field List, similar to the one in Microsoft Excel. This Field List allows users to add or remove [OLAP cube elements](#olap-cube-elements), and to move them between different axes: [`rows`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html#Syncfusion_EJ2_PivotView_PivotViewDataSourceSettings_Rows), [`columns`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html#Syncfusion_EJ2_PivotView_PivotViewDataSourceSettings_Columns), [`values`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html#Syncfusion_EJ2_PivotView_PivotViewDataSourceSettings_Values), and [`filters`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html#Syncfusion_EJ2_PivotView_PivotViewDataSourceSettings_Filters). Users can also filter and sort these elements as needed, all during runtime.
@@ -220,8 +161,6 @@ The Pivot Table control includes a built-in Field List, similar to the one in Mi
 To display the Field List, set the [`showFieldList`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_ShowFieldList) property to **true** on the Pivot Table. It is also necessary to inject the `FieldList` module.
 
 > Note: If the **FieldList** module is not injected, the Field List will not appear in the Pivot Table.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -232,25 +171,11 @@ To display the Field List, set the [`showFieldList`](https://help.syncfusion.com
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/getting-start-mvc/olap-field-list/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Field-list.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/getting-start-mvc/olap-field-list/field-list.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
 ### Exploring Filter Axis
 
 The filter axis in the Pivot Table allows users to control which data is displayed in the [`rows`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html#Syncfusion_EJ2_PivotView_PivotViewDataSourceSettings_Rows), [`columns`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html#Syncfusion_EJ2_PivotView_PivotViewDataSourceSettings_Columns), and [`values`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html#Syncfusion_EJ2_PivotView_PivotViewDataSourceSettings_Values) axes. It includes various [OLAP cube elements](#olap-cube-elements), such as hierarchies and calculated members. When elements are placed in the filter axis, they act as master filters that refine the data shown in the Pivot Table.
 
 Users can add [OLAP cube elements](#olap-cube-elements) and filter members to the filter axis either by updating the report in code behind or by dragging items from other axes to the filter axis using the grouping bar or field list at runtime. This makes it easy to filter data according to specific requirements directly within the Pivot Table interface.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -260,18 +185,6 @@ Users can add [OLAP cube elements](#olap-cube-elements) and filter members to th
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/getting-start-mvc/olap-explore-filter/explore-filter.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/getting-start-mvc/olap-explore-filter/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Explore-filter.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/getting-start-mvc/olap-explore-filter/explore-filter.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 ### Calculated Field
 
@@ -295,8 +208,6 @@ You can also add calculated fields at runtime through the built-in dialog. To en
 
 > If the **CalculatedField** module is not added, the calculated field dialog will not be shown with the Pivot Table component. Also, calculated measures can be added only to the value axis.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/getting-start-mvc/olap-calculated-field/tagHelper %}
@@ -305,19 +216,6 @@ You can also add calculated fields at runtime through the built-in dialog. To en
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/getting-start-mvc/olap-calculated-field/calculated-field.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/getting-start-mvc/olap-calculated-field/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Calculated-field.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/getting-start-mvc/olap-calculated-field/calculated-field.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
 
 Users can add a calculated field at runtime using the built-in dialog by following these steps:
 
@@ -335,7 +233,7 @@ Users can add a calculated field at runtime using the built-in dialog by followi
 **Step 2:** Create the expression for your calculated field. To do this, drag and drop fields from the tree view on the left side of the dialog and use simple arithmetic operators.
 
 **For example**: `IIF([Measures].[Internet Sales Amount]^0.5 > 100, [Measures].[Internet Sales Amount]*100, [Measures].[Internet Sales Amount]/100)`  
-For more information about supported [`operators`](https://docs.microsoft.com/en-us/sql/mdx/operators-mdx-syntax?view=sql-server-ver15) and [`functions`](https://docs.microsoft.com/en-us/sql/mdx/functions-mdx-syntax?view=sql-server-ver15), see the Microsoft documentation.
+For more information about supported [`operators`](https://learn.microsoft.com/en-us/sql/mdx/operators-mdx-syntax?view=sql-server-ver15) and [`functions`](https://learn.microsoft.com/en-us/sql/mdx/functions-mdx-syntax?view=sql-server-ver15), see the Microsoft documentation.
 
 ![Create calculated field expression](images/calculatedfield-drag.png)
 
@@ -444,8 +342,6 @@ Virtual scrolling helps you view large amounts of data smoothly in the Pivot Tab
 
 To enable virtual scrolling, set the [`enableVirtualization`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_EnableVirtualization) option to **true**. Also, be sure to inject the `VirtualScroll` module into the Pivot Table.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/getting-start-mvc/olap-virtual/tagHelper %}
@@ -454,18 +350,6 @@ To enable virtual scrolling, set the [`enableVirtualization`](https://help.syncf
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/getting-start-mvc/olap-virtual/virtual.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/getting-start-mvc/olap-virtual/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Virtual.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/getting-start-mvc/olap-virtual/virtual.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 ![Virtual Scrolling applied](images/olap-virtual.png)
 
@@ -489,8 +373,6 @@ To connect an OLAP data source to the Pivot Table, use the [`DataSourceSettings`
 
 Below are sample code files showing how to bind an OLAP data source in ASP.NET Core:
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/getting-start-mvc/olap-data-binding/tagHelper %}
@@ -500,19 +382,6 @@ Below are sample code files showing how to bind an OLAP data source in ASP.NET C
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/getting-start-mvc/olap-data-binding/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Data-binding.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/getting-start-mvc/olap-data-binding/data-binding.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
 ### Fields
 
 #### Measures in the Row Axis
@@ -520,8 +389,6 @@ Below are sample code files showing how to bind an OLAP data source in ASP.NET C
 By default, measures are shown on the columns axis in the Pivot Table. If you would like to display measures on the rows axis instead, you can do this using the [grouping bar](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_ShowGroupingBar) or the [field list](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_ShowFieldList) UI. Simply drag the "Measures" button and drop it onto the rows axis.
 
 Alternatively, you can set up the measure directly in your code by configuring the [`DataSourceSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html) option, as shown in the code below:
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -532,23 +399,9 @@ Alternatively, you can set up the measure directly in your code by configuring t
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/getting-start-mvc/olap-measures-in-row/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Measures-in-row.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/getting-start-mvc/olap-measures-in-row/measures-in-row.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
 #### Measures in Different Positions
 
 You can choose where to place measures on either the row or column axis through code behind or the user interface. In this example, the **measures** are set before the dimension field on the column axis. To achieve this, specify the order of the fields within the [`DataSourceSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html) property.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -559,25 +412,11 @@ You can choose where to place measures on either the row or column axis through 
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/getting-start-mvc/olap-measures-position/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Measures-position.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/getting-start-mvc/olap-measures-position/measures-position.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
 ### Named Set
 
 A named set is a multidimensional expression (MDX) that provides a predefined group of members from a dimension. It is created by combining cube data with arithmetic operators, numbers, or functions.
 
 To display a named set in the Pivot Table, set its unique name using the [`name`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewRow.html#Syncfusion_EJ2_PivotView_PivotViewRow_Name) property within either the row or column axis in [`DataSourceSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html). Additionally, set the [`isNamedSet`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewRow.html#Syncfusion_EJ2_PivotView_PivotViewRow_IsNamedSet) property to **true**. In the example below, the "Core Product Group" named set is added to the column axis.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -587,18 +426,6 @@ To display a named set in the Pivot Table, set its unique name using the [`name`
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/getting-start-mvc/olap-named-set/named-set.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/getting-start-mvc/olap-named-set/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Named-set.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/getting-start-mvc/olap-named-set/named-set.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 ### Configuring Authentication
 
@@ -611,8 +438,6 @@ To connect to an OLAP data source that requires authentication, users can provid
 
 Below is an example of how to configure authentication settings in the Pivot Table:
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/getting-start-mvc/olap-authentication/tagHelper %}
@@ -622,25 +447,11 @@ Below is an example of how to configure authentication settings in the Pivot Tab
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/getting-start-mvc/olap-authentication/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Authentication.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/getting-start-mvc/olap-authentication/Authentication.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
 ### Roles
 
 SQL Server Analysis Services (SSAS) uses [`roles`](https://learn.microsoft.com/en-us/analysis-services/multidimensional-models/roles-and-permissions-analysis-services?view=asallproducts-allversions) to control user access to the data inside an OLAP cube. Each role is defined with a set of permissions that can be assigned to individual users or groups. By assigning roles, you can restrict access to sensitive data and also determine who can view or modify information in the cube.
 
 In the Syncfusion ASP.NET Core Pivot Table, you can specify roles using the [`roles`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html#Syncfusion_EJ2_PivotView_PivotViewDataSourceSettings_Roles) property within the [`e-datasourcesettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html) object. This allows you to provide one or more role names for connecting to an OLAP cube. If you want to use multiple roles, list them as a comma-separated string.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -650,18 +461,6 @@ In the Syncfusion ASP.NET Core Pivot Table, you can specify roles using the [`ro
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/getting-start-mvc/olap-roles/roles.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/getting-start-mvc/olap-roles/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Roles.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/getting-start-mvc/olap-roles/roles.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 ## OLAP Cube: Elements
 
@@ -753,8 +552,6 @@ The [`beforeServiceInvoke`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfu
 
 When the [`beforeServiceInvoke`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_BeforeServiceInvoke) event is triggered, the event argument provides access to the request details and includes a `customProperties` field.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/getting-start-mvc/olap-beforeserviceinvoke/tagHelper %}
@@ -763,18 +560,6 @@ When the [`beforeServiceInvoke`](https://help.syncfusion.com/cr/aspnetcore-js2/S
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/getting-start-mvc/olap-beforeserviceinvoke/olap-beforeServiceInvoke.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/getting-start-mvc/olap-beforeserviceinvoke/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="BeforeServiceInvoke.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/getting-start-mvc/olap-beforeserviceinvoke/olap-beforeServiceInvoke.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 ### AfterServiceInvoke
 
@@ -786,8 +571,6 @@ The [`afterServiceInvoke`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfus
 
 When the [`afterServiceInvoke`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_AfterServiceInvoke) event is triggered, the event argument provides access to the server response details, including properties such as the action performed and the result data returned from the OLAP server.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/getting-start-mvc/olap-afterServiceInvoke/tagHelper %}
@@ -796,15 +579,3 @@ When the [`afterServiceInvoke`](https://help.syncfusion.com/cr/aspnetcore-js2/Sy
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/getting-start-mvc/olap-afterServiceInvoke/olap-afterServiceInvoke.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/getting-start-mvc/olap-afterServiceInvoke/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="AfterServiceInvoke.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/getting-start-mvc/olap-afterServiceInvoke/olap-afterServiceInvoke.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}

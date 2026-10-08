@@ -519,9 +519,11 @@ To use Syncfusion<sup style="font-size:70%">&reg;</sup> Grid component and Datam
 ```bash
 npm install @syncfusion/ej2-angular-grids --save
 npm install @syncfusion/ej2-data
+npm install @syncfusion/ej2-material3-theme --save
 ```
 - `@syncfusion/ej2-angular-grids` –  required to use the Angular Data Grid component.
 - `@syncfusion/ej2-data` – Provides data utilities for binding and manipulating Grid data.
+- `@syncfusion/ej2-material3-theme` - Required to apply the Material 3 theme styles to the Data Grid component.
 
 ### Step 2: Including required Syncfusion stylesheets
 
@@ -530,16 +532,8 @@ Once the dependencies are installed, the required CSS files are made available i
 ```css
 [src/styles.css]
 
-@import '../node_modules/@syncfusion/ej2-base/styles/material3.css';  
-@import '../node_modules/@syncfusion/ej2-buttons/styles/material3.css';  
-@import '../node_modules/@syncfusion/ej2-calendars/styles/material3.css';  
-@import '../node_modules/@syncfusion/ej2-dropdowns/styles/material3.css';  
-@import '../node_modules/@syncfusion/ej2-inputs/styles/material3.css';  
-@import '../node_modules/@syncfusion/ej2-navigations/styles/material3.css';
-@import '../node_modules/@syncfusion/ej2-popups/styles/material3.css';
-@import '../node_modules/@syncfusion/ej2-splitbuttons/styles/material3.css';
-@import '../node_modules/@syncfusion/ej2-notifications/styles/material3.css';
-@import '../node_modules/@syncfusion/ej2-angular-grids/styles/material3.css';
+@import "../node_modules/@syncfusion/ej2-material3-theme/styles/grid/index.css";
+
 
 ```
 For this project, the "Material3" theme is used. A different theme can be selected or the existing theme can be customized based on project requirements. Refer to the [Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Components Appearance](https://ej2.syncfusion.com/angular/documentation/appearance/theme-studio) documentation to learn more about theming and customization options.

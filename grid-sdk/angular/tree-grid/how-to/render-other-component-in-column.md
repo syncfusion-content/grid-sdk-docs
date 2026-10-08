@@ -26,6 +26,6 @@ In the sample below, a DropDownList is rendered in the **Priority** column.
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/treegrid/refresh-cs13" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/refresh-cs13" %}
 
 > For more feature information, see the [`Angular TreeGrid feature tour page`](https://www.syncfusion.com/angular-components/angular-tree-grid). Practical examples for rendering and manipulating data can be found in the [`Angular TreeGrid example`](https://ej2.syncfusion.com/angular/demos/#/material/treegrid/treegrid-overview).

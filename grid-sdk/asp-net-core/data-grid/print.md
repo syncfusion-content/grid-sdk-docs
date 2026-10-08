@@ -4,7 +4,6 @@ title: Print in Syncfusion ASP.NET Core Grid Component
 description: Learn here all about Print in Syncfusion ASP.NET Core Grid component of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Print
-publishingplatform: grid-sdk
 documentation: ug
 ---
 
@@ -31,8 +30,8 @@ When printing a webpage, some print options, such as layout, paper size, and mar
 
 * [Chrome](https://support.google.com/chrome/answer/1069693?hl=en&visit_id=1-636335333734668335-3165046395&rd=1)
 * [Firefox](https://support.mozilla.org/en-US/kb/how-print-web-pages-firefox)
-* [Safari](http://www.mintprintables.com/print-tips/adjust-margins-osx/)
-* [IE](http://www.helpteaching.com/help/print/index.htm)
+* [Safari](https://mintprintables.com/print-tips/adjust-margins-osx/)
+* [IE](https://www.helpteaching.com/help/print/index.htm)
 
 ## Print by external button
 
@@ -186,7 +185,7 @@ The following example demonstrates how to print the expanded child grids from ot
 
 Printing a large volume of data all at once in the grid can have certain limitations due to potential browser performance issues. Rendering numerous DOM elements on a single page can lead to browser slowdowns or even hang the browser. The grid offers a solution to manage extensive datasets through virtualization. However, it's important to note that virtualization for both rows and columns is not feasible during the printing process.
 
-If printing all the data remains a requirement, an alternative approach is recommended. Exporting the grid data to formats like [Excel](https://ej2.syncfusion.com/aspnetcore/documentation/grid/excel-export/excel-exporting) or [CSV](https://ej2.syncfusion.com/aspnetcore/documentation/grid/excel-export/excel-exporting) or [Pdf](https://ej2.syncfusion.com/aspnetcore/documentation/grid/pdf-export/pdf-export) is advised. This exported data can then be printed using non-web-based applications, mitigating the potential performance challenges associated with printing large datasets directly from the browser.
+If printing all the data remains a requirement, an alternative approach is recommended. Exporting the grid data to formats like [Excel](https://help.syncfusion.com/grid-sdk/asp-net-core/data-grid/excel-export/excel-exporting) or [CSV](https://help.syncfusion.com/grid-sdk/asp-net-core/data-grid/excel-export/excel-exporting) or [Pdf](https://help.syncfusion.com/grid-sdk/asp-net-core/data-grid/pdf-export/pdf-export) is advised. This exported data can then be printed using non-web-based applications, mitigating the potential performance challenges associated with printing large datasets directly from the browser.
 
 ## Retain grid styles while printing
 

@@ -2,7 +2,7 @@
 layout: post
 title: How to switch to older themes in Blazor Pivot Table | Syncfusion
 description: Step-by-step example showing how to switch to older themes in the Blazor Pivot Table by overriding CSS for row, column, and header cell backgrounds.
-platform: Blazor
+platform: grid-sdk
 control: Pivot Table
 documentation: ug
 ---

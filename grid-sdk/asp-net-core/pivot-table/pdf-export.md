@@ -2,7 +2,7 @@
 layout: post
 title: PDF Export in ASP.NET Core Pivot Table | Syncfusion
 description: Learn how the ASP.NET Core Pivot Table exports the rendered pivot report to a PDF document via allowPdfExport and the pdfExport method.
-platform: ej2-asp-core-mvc
+platform: grid-sdk
 control: Pdf Export
 publishingplatform: ##Platform_Name##
 documentation: ug
@@ -15,8 +15,6 @@ The ASP.NET Core Pivot Table lets users easily export their pivot table data as 
 
 In the following example, an external button is used to start the PDF export process. When the user clicks the button, the `pdfExport` method is called so that the Pivot Table data can be saved as a PDF file.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/pdf-export/export/tagHelper %}
@@ -25,18 +23,6 @@ In the following example, an external button is used to start the PDF export pro
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/pdf-export/export/Export.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pdf-export/export/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Export.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pdf-export/export/Export.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 ## Multiple Pivot Table exporting
 
@@ -48,8 +34,6 @@ Multiple Pivot Tables can be exported to the same or different pages in a single
 
 To export multiple Pivot Tables on the same page, set the `multipleExport.type` property to **AppendToPage** in [`pdfExportProperties`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.GridExport.PdfExportProperties.html#properties). Blank space between the Pivot Tables can be added by using the `multipleExport.blankSpace` property.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/pdf-export/multiple-export/tagHelper %}
@@ -59,23 +43,9 @@ To export multiple Pivot Tables on the same page, set the `multipleExport.type` 
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pdf-export/multiple-export/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="MultipleExport.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pdf-export/multiple-export/MultipleExport.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
 ### New page
 
 To export each Pivot Table on a separate page, set the `multipleExport.type` property to **NewPage** in [`pdfExportProperties`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.GridExport.PdfExportProperties.html#properties).
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -86,25 +56,11 @@ To export each Pivot Table on a separate page, set the `multipleExport.type` pro
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pdf-export/multiple-export-with-new-page/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="MultipleExportNewPage.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pdf-export/multiple-export-with-new-page/MultipleExportNewPage.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
 ## Export table and chart into the same document
 
 If you want to export both the table and the chart from the Pivot Table into a single PDF file, set the [`e-displayOption`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewDisplayOption.html) property to **Both**. Then, when you use the `pdfExport` method, make sure to set the `exportBothTableAndChart` option to **true**. This will include both the data table and its chart in one PDF document when you export.
 
 The following example shows how you can set this up in your application:
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -114,18 +70,6 @@ The following example shows how you can set this up in your application:
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/pdf-export/export-tableAndChart/exportTableAndChart.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pdf-export/export-tableAndChart/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="exportTableAndChart.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pdf-export/export-tableAndChart/exportTableAndChart.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 ## Customization during PDF export
 
@@ -227,8 +171,6 @@ The following example shows how to add page numbers with Arabic format in the he
 
 The below code illustrates the PDF export customization options.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/pdf-export/header-footer/tagHelper %}
@@ -237,18 +179,6 @@ The below code illustrates the PDF export customization options.
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/pdf-export/header-footer/ThemeExport.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pdf-export/header-footer/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="ThemeExport.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pdf-export/header-footer/ThemeExport.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 #### Add an image in header/footer
 
@@ -275,8 +205,6 @@ let pdfExportProperties: PdfExportProperties = {
 
 The below code illustrates the PDF export customization options.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/pdf-export/header-footer/tagHelper %}
@@ -286,23 +214,9 @@ The below code illustrates the PDF export customization options.
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pdf-export/header-footer/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="ThemeExport.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pdf-export/header-footer/ThemeExport.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
 ### Changing the file name while exporting
 
 The PDF export provides an option to change the file name of the document before exporting. To change the file name, define the `fileName` property in the `pdfExportProperties` object and pass it as a parameter to the `pdfExport` method.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -313,23 +227,9 @@ The PDF export provides an option to change the file name of the document before
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pdf-export/file-name/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="FileName.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pdf-export/file-name/FileName.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
 ### Changing page orientation while exporting
 
 When exporting the Pivot Table as a PDF, users can choose the page orientation of the document. By default, the PDF is exported in **Portrait** orientation. If you want to change the orientation to **Landscape**, set the `pageOrientation` property in the `pdfExportProperties` object. Then, pass this object as a parameter to the `pdfExport` method. This lets you select either Portrait or Landscape orientation based on your needs before saving the exported PDF.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -340,18 +240,6 @@ When exporting the Pivot Table as a PDF, users can choose the page orientation o
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pdf-export/page-layout/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="PageLayout.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pdf-export/page-layout/PageLayout.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
 ### Changing page size while exporting
 
 When exporting Pivot Table data to PDF, users can select a specific page size for the PDF document. To set the page size, define the `pageSize` property within the `pdfExportProperties` object, and pass this object as a parameter to the `pdfExport` method.
@@ -359,8 +247,6 @@ When exporting Pivot Table data to PDF, users can select a specific page size fo
 You can choose from various page sizes, such as Letter, Note, Legal, A0, A1, A2, A3, A5, A6, A7, A8, A9, B0, B1, B2, B3, B4, B5, Archa, Archb, Archc, Archd, Arche, Flsa, HalfLetter, Letter11x17, and Ledger.
 
 This option lets users easily adjust the PDF layout to fit their specific needs before exporting the data from the Pivot Table.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -371,23 +257,9 @@ This option lets users easily adjust the PDF layout to fit their specific needs 
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pdf-export/page-size/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="PageSize.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pdf-export/page-size/PageSize.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
 ### Changing document width and height while exporting
 
 You can adjust the size of the exported PDF document by setting the `height` and `width` options in the [`beforeExport`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_BeforeExport) event. This allows you to specify the dimensions of the PDF before creating it.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -398,23 +270,9 @@ You can adjust the size of the exported PDF document by setting the `height` and
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pdf-export/exporting-customization/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="exporting-customization.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pdf-export/exporting-customization/exporting-customization.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
 ### Customize the table column count while exporting
 
 Users can control how many Pivot Table columns appear on each page of the exported PDF by setting the `columnSize` option in the [`beforeExport`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_BeforeExport) event. This allows users to split Pivot Table columns across multiple pages when exporting large tables to PDF, making the output easier to read.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -424,18 +282,6 @@ Users can control how many Pivot Table columns appear on each page of the export
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/pdf-export/exporting-columnCustomization/exporting-columnCustomization.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pdf-export/exporting-columnCustomization/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="exporting-columnCustomization.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pdf-export/exporting-columnCustomization/exporting-columnCustomization.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 ### Changing the table's column width and row height while exporting
 
@@ -447,8 +293,6 @@ To set the width of specific columns during export, use the [`pdfHeaderQueryCell
 
 For example, the **"Units Sold"** column under **"FY 2015"** can be set to a width of **250 points**:
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/pdf-export/exporting-columnWidthCustomization/tagHelper %}
@@ -458,25 +302,11 @@ For example, the **"Units Sold"** column under **"FY 2015"** can be set to a wid
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pdf-export/exporting-columnWidthCustomization/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="exporting-columnWidthCustomization.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pdf-export/exporting-columnWidthCustomization/exporting-columnWidthCustomization.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
 #### Adjusting row height
 
 To change the height of a particular row in the PDF document, use the [`pdfQueryCellInfo`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_PdfQueryCellInfo) event. Check if the current row matches the target row by comparing the row headers using `args.data.rowHeaders`, which holds the string value of the row header level names. If it matches, set the `args.cell.gridRow.height` property with the desired value in **points**.
 
 For example, the **"Mountain Bikes"** row under **"France"** can be set to a height of **100 points**:
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -487,25 +317,11 @@ For example, the **"Mountain Bikes"** row under **"France"** can be set to a hei
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pdf-export/exporting-rowHeightCustomization/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="exporting-rowHeightCustomization.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pdf-export/exporting-rowHeightCustomization/exporting-rowHeightCustomization.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
 ### Customize the pivot report during export
 
 The Pivot Table report can be modified before exporting by applying filters, adding formatting, or performing drill operations. These modifications apply only to the Pivot Table exported to the PDF file and do not affect the Pivot Table displayed on the screen. To modify the export behavior, use the [`beforeExport`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_BeforeExport) event. This event is triggered right before the export operation begins.
 
 In the following example, the [`beforeExport`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_BeforeExport) event is used to expand all Pivot Table headers by setting the [`expandAll`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html#Syncfusion_EJ2_PivotView_PivotViewDataSourceSettings_ExpandAll) property to **true**. The `generateGridData` method is then called to obtain the updated [`pivotValues`](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.pivotview.pivotview.html#Syncfusion_EJ2_PivotView_PivotView_PivotValues). The updated [`pivotValues`](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.pivotview.pivotview.html#Syncfusion_EJ2_PivotView_PivotView_PivotValues) are assigned to `args.dataCollections` for the export. Finally, [`expandAll`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html#Syncfusion_EJ2_PivotView_PivotViewDataSourceSettings_ExpandAll) is set to **false** again to restore the original state of the Pivot Table.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -515,18 +331,6 @@ In the following example, the [`beforeExport`](https://help.syncfusion.com/cr/as
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/pdf-export/customizing-pivot-report/CustomizingPivotReport.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pdf-export/customizing-pivot-report/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="CustomizingPivotReport.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pdf-export/customizing-pivot-report/CustomizingPivotReport.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 ### Exporting with row and column cells spanning
 
@@ -539,8 +343,6 @@ In the [`pdfQueryCellInfo`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfu
 
 In the following code example, the row and column spans are adjusted for empty cells in the Pivot Table and during PDF export.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/pdf-export/export-row-column-spanning/tagHelper %}
@@ -550,25 +352,11 @@ In the following code example, the row and column spans are adjusted for empty c
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pdf-export/export-row-column-spanning/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="ExportWithCellSpanning.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pdf-export/export-row-column-spanning/ExportWithCellSpanning.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
 ### Exporting with hyperlinks and images
 
 The Pivot Table allows adding hyperlinks and images to cells during PDF export. The [`pdfQueryCellInfo`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_PdfQueryCellInfo) event handles row and value cells, while the [`pdfHeaderQueryCellInfo`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_PdfHeaderQueryCellInfo) event handles header cells. Both events provide access to the `hyperlink` property to set URLs in cells and the `image` property to add images to cells.
 
 > PDF export supports base64 strings for exporting images.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -579,25 +367,13 @@ The Pivot Table allows adding hyperlinks and images to cells during PDF export. 
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pdf-export/export-hyperlinks-images/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="ExportHyperlinksImages.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pdf-export/export-hyperlinks-images/ExportHyperlinksImages.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
 ## Exporting with custom aggregates
 
 The Pivot Table supports exporting data with custom calculations beyond the default options such as **Sum**, **Count**, or **Average**. Custom aggregates allow for advanced analytical scenarios where standard calculations are not sufficient.
 
 To export with custom aggregates, follow these steps:
 
-1. Define custom aggregate names using the [localization](https://ej2.syncfusion.com/aspnetcore/documentation/pivot-table/globalization-and-localization#localization) option. These names appear in the Pivot Table's aggregation menu.
+1. Define custom aggregate names using the [localization](https://help.syncfusion.com/grid-sdk/asp-net-core/pivot-table/globalization-and-localization) option. These names appear in the Pivot Table's aggregation menu.
 2. Add custom aggregation types to the aggregate menu during Pivot Table initialization using the [`dataBound`](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.pivotview.pivotview.html#Syncfusion_EJ2_PivotView_PivotView_DataBound) event.
 3. Use the [`aggregateCellInfo`](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.pivotview.pivotview.html#Syncfusion_EJ2_PivotView_PivotView_AggregateCellInfo) event to define the calculation logic for each custom type. This event triggers for every aggregate cell, allowing custom calculations to be applied.
 4. Once the calculations are defined, call the `pdfExport` method to export the Pivot Table with all custom aggregations applied.
@@ -605,8 +381,6 @@ To export with custom aggregates, follow these steps:
 For more information about adding custom aggregation types, see the [custom aggregation documentation](./how-to/add-custom-aggregation-type-in-menu).
 
 The following example shows how to add two custom aggregate types to the aggregate menu: **CustomAggregateType 1**, which calculates a weighted average, and **CustomAggregateType 2**, which calculates the percentage of the total.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -616,18 +390,6 @@ The following example shows how to add two custom aggregate types to the aggrega
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/pdf-export/custom-aggregate-export/CustomAggregateExport.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pdf-export/custom-aggregate-export/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="CustomAggregateExport.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pdf-export/custom-aggregate-export/CustomAggregateExport.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 ## Exporting with custom date format
 
@@ -641,8 +403,6 @@ After configuration, call the `pdfExport` method to export the Pivot Table with 
 
 The following example demonstrates exporting a Pivot Table with a custom date format. The date field uses the pattern `"EEE, MMM d, ''yy"` to display dates in the format: weekday abbreviation, month abbreviation, day, and two-digit year (for example, Sun, May 8, '23).
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/pdf-export/custom-date-export/tagHelper %}
@@ -652,25 +412,11 @@ The following example demonstrates exporting a Pivot Table with a custom date fo
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pdf-export/custom-date-export/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="CustomDateExport.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pdf-export/custom-date-export/CustomDateExport.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
 ## Changing the pivot table style while exporting
 
 When you export the Pivot Table as a PDF document, you can change the colors used for headers, captions, and records. To do this, use the `theme` property inside the `pdfExportProperties` object. Pass this object to the `pdfExport` method. This allows you to adjust how the Pivot Table looks in the exported PDF.
 
 > By default, the Material theme is applied to the exported PDF document.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -680,18 +426,6 @@ When you export the Pivot Table as a PDF document, you can change the colors use
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/pdf-export/theme-export/ThemeExport.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pdf-export/theme-export/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="ThemeExport.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pdf-export/theme-export/ThemeExport.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 ### Changing default font while exporting 
 
@@ -719,8 +453,6 @@ var pdfExportProperties = {
 
 You can also use custom fonts when exporting if you need support for languages or styles that are not available in the built-in fonts. The custom font should be in **Base64** format and applied using the **PdfTrueTypeFont** class. In the example below, the **Advent Pro** font is used, which supports the Hungarian language.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/pdf-export/non-english-export/tagHelper %}
@@ -730,18 +462,6 @@ You can also use custom fonts when exporting if you need support for languages o
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pdf-export/non-english-export/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Non-english-export.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pdf-export/non-english-export/non-english-export.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
 > Non-English alphabets can also be exported correctly when you specify a suitable font.
 
 ### Apply custom styles based on specific conditions
@@ -749,8 +469,6 @@ You can also use custom fonts when exporting if you need support for languages o
 When exporting Pivot Table data to PDF, custom styles can be applied to cells based on their values or other criteria. To apply custom styles, use the [`pdfQueryCellInfo`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_PdfQueryCellInfo) event. In this event, the cell information can be accessed through the `args.data` property, and its style properties, such as `backgroundColor`, `fontFamily`, and `textPenColor`, can be customized. These changes apply only to the exported PDF and do not affect the on-screen Pivot Table display
 
 The following example demonstrates how to apply conditional formatting to the **Sold** field values in the exported PDF document. Values below **700** units are highlighted in **red**, while values of **700** units or more are highlighted in **green**.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -761,23 +479,9 @@ The following example demonstrates how to apply conditional formatting to the **
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pdf-export/apply-custom-styles/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="ApplyCustomStyles.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pdf-export/apply-custom-styles/ApplyCustomStyles.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
 ## Enabling horizontal overflow
 
 The Pivot Table component supports exporting all columns on a single page in the exported PDF document, even if the number of columns exceeds the maximum page limits. This functionality ensures readability and comprehensiveness of the exported PDF. To enable this option, set the [allowHorizontalOverflow](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.GridExport.PdfExportProperties.html#Syncfusion_EJ2_GridExport_PdfExportProperties_AllowHorizontalOverflow) property in the [`pdfExportProperties`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.GridExport.PdfExportProperties.html#properties) object to **true**.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -788,25 +492,11 @@ The Pivot Table component supports exporting all columns on a single page in the
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pdf-export/horizontal-overflow/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="HorizontalOverflow.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pdf-export/horizontal-overflow/HorizontalOverflow.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
 ## Export only the current page
 
 By default, the Pivot Table exports all data records. When working with large datasets, this can result in larger file sizes. To optimize file size and performance, only the data records currently visible in the viewport can be exported by setting the [`exportAllPages`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_ExportAllPages) property to **false**.
 
 > This option is applicable only when the virtualization or paging functionality is enabled.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -817,23 +507,9 @@ By default, the Pivot Table exports all data records. When working with large da
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pdf-export/exportallpages/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Exportallpages.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pdf-export/exportallpages/exportallpages.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
 ## Repeat row headers
 
 By default, row headers are repeated on each page when exporting the Pivot Table as a PDF. This allows easy identification of rows in larger tables that extend across multiple pages. To turn off repeated row headers, set the `allowRepeatHeader` property to **false** within the [`beforeExport`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_BeforeExport) event.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -844,23 +520,9 @@ By default, row headers are repeated on each page when exporting the Pivot Table
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pdf-export/repeat-headers/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Export.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pdf-export/repeat-headers/Export.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
 ## Repeat column headers on every page
 
 By default, column headers are repeated on each page when exporting the Pivot Table as a PDF. This ensures consistent column identification across multi-page documents. To prevent column headers from repeating on each page, use the [`pdfQueryCellInfo`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_PdfQueryCellInfo) event. In this event, access the `pdfGrid` object through `args.cell.row.pdfGrid`, which holds the current PDF grid and allows component over the repeat header behavior. Then set its `repeatHeader` property to **false** to disable the repetition.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -871,23 +533,9 @@ By default, column headers are repeated on each page when exporting the Pivot Ta
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pdf-export/repeat-column-headers/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="RepeatColumnHeaders.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pdf-export/repeat-column-headers/RepeatColumnHeaders.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
 ## Show spinner during export
 
 When exporting data, displaying a spinner provides visual feedback to users that the export process is in progress. To show a spinner, invoke the `showWaitingPopup` method in the button's click event before calling the `pdfExport` method. After the export is complete, use the [`ExportComplete`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_ExportComplete) event to trigger the `hideWaitingPopup` method, which hides the spinner and indicates that the export has finished.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -897,18 +545,6 @@ When exporting data, displaying a spinner provides visual feedback to users that
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/pdf-export/show-spinner/ShowSpinner.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pdf-export/show-spinner/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="ShowSpinner.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pdf-export/show-spinner/ShowSpinner.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 ## Events
 
@@ -923,8 +559,6 @@ The `pdfQueryCellInfo` event occurs for each row and value cell while exporting 
 
 By using this event, users can easily update the cell text, apply different styles such as font or background color, or adjust other settings as needed during PDF export.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/grid-customization/pdf-querycell/tagHelper %}
@@ -933,18 +567,6 @@ By using this event, users can easily update the cell text, apply different styl
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/grid-customization/pdf-querycell/PdfQueryCell.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grid-customization/pdf-querycell/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="PdfQueryCell.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grid-customization/pdf-querycell/PdfQueryCell.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 ### PdfHeaderQueryCellInfo
 
@@ -955,8 +577,6 @@ The event provides the following parameters:
 - `cell`: Gives information about the current header cell being exported.
 - `style`: Contains style properties that can be used to format the cell.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/grid-customization/pdf-headercell/tagHelper %}
@@ -965,18 +585,6 @@ The event provides the following parameters:
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/grid-customization/pdf-headercell/PdfHeader.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grid-customization/pdf-headercell/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="PdfHeader.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grid-customization/pdf-headercell/PdfHeader.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 ### ExportComplete
 
@@ -987,8 +595,6 @@ The event provides the following parameters:
 * `type` - Specifies the current export type, such as PDF, Excel, or CSV.
 * `promise` - Contains the promise object that resolves with blob data.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/pdf-export/blob-export/tagHelper %}
@@ -997,19 +603,6 @@ The event provides the following parameters:
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/pdf-export/blob-export/blob-export.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pdf-export/blob-export/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Blob-export.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pdf-export/blob-export/blob-export.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
 
 ## See Also
 

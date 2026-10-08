@@ -2,7 +2,7 @@
 layout: post
 title: Grouping Bar in ASP.NET Core Pivot Table | Syncfusion
 description: Learn how the ASP.NET Core Pivot Table Grouping Bar lets users drag fields between axes, apply sort and filter, and rearrange the pivot report at runtime.
-platform: ej2-asp-core-mvc
+platform: grid-sdk
 control: Grouping Bar
 publishingplatform: ##Platform_Name##
 documentation: ug
@@ -23,8 +23,6 @@ The grouping bar provides intuitive interactions similar to the Field List, maki
 
 To use the grouping bar, you need to inject the `GroupingBar` module in the Pivot Table.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/getting-start-mvc/groupingbar/tagHelper %}
@@ -33,20 +31,6 @@ To use the grouping bar, you need to inject the `GroupingBar` module in the Pivo
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/getting-start-mvc/groupingbar/groupingbar.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/getting-start-mvc/groupingbar/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Groupingbar.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/getting-start-mvc/groupingbar/groupingbar.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
 
 ![Pivot table with grouping bar enabled](images/gs_groupingbar.png)
 
@@ -58,8 +42,6 @@ The fields panel appears above the grouping bar and shows all the fields that ar
 
 To display the fields panel, set the [`showFieldsPanel`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewGroupingBarSettings.html#Syncfusion_EJ2_PivotView_PivotViewGroupingBarSettings_ShowFieldsPanel) property to **true** within the [`e-groupingBarSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewGroupingBarSettings.html) configuration.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/grouping-bar/showFieldsPanel/tagHelper %}
@@ -68,19 +50,6 @@ To display the fields panel, set the [`showFieldsPanel`](https://help.syncfusion
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/grouping-bar/showFieldsPanel/showFieldsPanel.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grouping-bar/showFieldsPanel/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="ShowFieldsPanel.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grouping-bar/showFieldsPanel/showFieldsPanel.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
 
 
 ![Grouping bar with fields panel shown](images/showfieldspanel.png)
@@ -93,8 +62,6 @@ By default, the filter icon appears next to each field in the grouping bar. If y
 
 > By default, the filter icon is enabled in the grouping bar.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/grouping-bar/show-filter/tagHelper %}
@@ -103,19 +70,6 @@ By default, the filter icon appears next to each field in the grouping bar. If y
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/grouping-bar/show-filter/ShowFilter.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grouping-bar/show-filter/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="ShowFilter.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grouping-bar/show-filter/ShowFilter.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
 
 
 ![Pivot Table filter icon example](images/groupingbar-filter.png)
@@ -126,8 +80,6 @@ By default, the filter icon appears for all fields in the grouping bar. To hide 
 
 In the sample below, the filter icons for the "Quarter" and "Products" fields are hidden.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/grouping-bar/show-filter-specific/tagHelper %}
@@ -136,20 +88,6 @@ In the sample below, the filter icons for the "Quarter" and "Products" fields ar
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/grouping-bar/show-filter-specific/ShowFilter.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grouping-bar/show-filter-specific/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="ShowFilter.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grouping-bar/show-filter-specific/ShowFilter.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
 
 ![Filter icon hidden for specific fields](images/groupingbar-filter-specific.png)
 
@@ -161,8 +99,6 @@ To disable the sort option, set the [`showSortIcon`](https://help.syncfusion.com
 
 > By default, the sort icon is enabled in the grouping bar.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/grouping-bar/show-sort/tagHelper %}
@@ -171,19 +107,6 @@ To disable the sort option, set the [`showSortIcon`](https://help.syncfusion.com
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/grouping-bar/show-sort/ShowSort.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grouping-bar/show-sort/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="ShowSort.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grouping-bar/show-sort/ShowSort.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
 
 
 ![Pivot Table sort icon example](images/groupingbar-sort.png)
@@ -194,8 +117,6 @@ You can choose to show or hide the sort icon for individual fields in the Pivot 
 
 In the example below, the sort icons for the "Quarter" and "Country" fields are hidden in the grouping bar. This allows users to prevent sorting for these fields while keeping other fields sortable.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/grouping-bar/show-sort-specific/tagHelper %}
@@ -204,19 +125,6 @@ In the example below, the sort icons for the "Quarter" and "Country" fields are 
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/grouping-bar/show-sort-specific/ShowSort.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grouping-bar/show-sort-specific/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="ShowSort.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grouping-bar/show-sort-specific/ShowSort.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
 
 
 ![Sort icon hidden for specific fields](images/groupingbar-sort-specific.png)
@@ -229,8 +137,6 @@ If you want to hide the remove icon, set the [`showRemoveIcon`](https://help.syn
 
 > Note: The remove icon is enabled in the grouping bar by default.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/grouping-bar/show-remove/tagHelper %}
@@ -240,20 +146,6 @@ If you want to hide the remove icon, set the [`showRemoveIcon`](https://help.syn
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grouping-bar/show-remove/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="ShowRemove.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grouping-bar/show-remove/ShowRemove.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
-
 ![Pivot Table remove icon example](images/groupingbar-remove.png)
 
 ## Show or hide a specific remove icon
@@ -261,8 +153,6 @@ If you want to hide the remove icon, set the [`showRemoveIcon`](https://help.syn
 You can hide the remove icon for an individual field button in the Pivot Table grouping bar. To do this, set the [`showRemoveIcon`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewRow.html#Syncfusion_EJ2_PivotView_PivotViewRow_ShowRemoveIcon) property to **false** for the desired field within the [`e-datasourcesettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html) options.
 
 In the example below, the remove icon for the "Year", "Sold", and "Products" fields has been hidden. This helps prevent users from accidentally removing those fields while interacting with the Pivot Table.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -273,27 +163,12 @@ In the example below, the remove icon for the "Year", "Sold", and "Products" fie
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grouping-bar/show-remove-specific/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="ShowRemove.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grouping-bar/show-remove-specific/ShowRemove.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
 
 ![Remove icon hidden for specific fields](images/groupingbar-remove-specific.png)
 
 ## Disable all fields from dragging
 
 In the Pivot Table, the grouping bar lets users move fields between the row, column, value, and filter axes to change the report as needed. By default, all fields can be moved using drag-and-drop in the grouping bar. To prevent users from dragging any fields, set the [`allowDragAndDrop`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewGroupingBarSettings.html#Syncfusion_EJ2_PivotView_PivotViewGroupingBarSettings_AllowDragAndDrop) option in [`e-groupingBarSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewGroupingBarSettings.html) to **false**. This will lock the layout of the current report, so users cannot rearrange fields in the grouping bar.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -304,20 +179,6 @@ In the Pivot Table, the grouping bar lets users move fields between the row, col
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grouping-bar/drag/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Drag.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grouping-bar/drag/drag.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
-
 ![Dragging disabled for all fields](images/gbar_drag.png)
 
 ## Disable specific field from dragging
@@ -325,8 +186,6 @@ In the Pivot Table, the grouping bar lets users move fields between the row, col
 You can prevent users from dragging certain fields in the grouping bar of the Pivot Table. To do this, set the [`allowDragAndDrop`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewRow.html#Syncfusion_EJ2_PivotView_PivotViewRow_AllowDragAndDrop) property to **false** for the specific field within the [`e-datasourcesettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html).
 
 In the example below, users cannot drag the "Year" and "Products" fields. This setting helps you control which fields can be arranged in the column, row, value, or filter axes at runtime.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -337,27 +196,13 @@ In the example below, users cannot drag the "Year" and "Products" fields. This s
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grouping-bar/drag-specific/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Drag.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grouping-bar/drag-specific/drag.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
 ## Remove specific field(s) from displaying
 
 When you bind a report to the Pivot Table, all fields from the data source are automatically displayed in the Grouping Bar. However, you can hide specific fields from appearing in the Grouping Bar to simplify the user interface.
 
 To exclude specific fields, add the field names to the [`excludeFields`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html#Syncfusion_EJ2_PivotView_PivotViewDataSourceSettings_ExcludeFields) property within the [`e-datasourcesettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html) configuration. This prevents the selected fields from being displayed in the Grouping Bar while keeping them available in the underlying data source.
 
-> **Note:** When you exclude fields using the `excludeFields` property, these fields will also be hidden in the field list UI. For more information about field list behavior, refer to this [link](https://ej2.syncfusion.com/aspnetcore/documentation/pivot-table/grouping-bar#remove-specific-fields-from-displaying).
-
-{% if page.publishingplatform == "aspnet-core" %}
+> **Note:** When you exclude fields using the `excludeFields` property, these fields will also be hidden in the field list UI. For more information about field list behavior, refer to this [link](https://help.syncfusion.com/grid-sdk/asp-net-core/pivot-table/grouping-bar#remove-specific-fields-from-displaying).
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -368,20 +213,6 @@ To exclude specific fields, add the field names to the [`excludeFields`](https:/
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grouping-bar/removespecific/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Removespecific.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grouping-bar/removespecific/removespecific.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
-
 ![Exclude field from grouping bar](images/excludefieldgroupingbar.png)
 
 ## Changing aggregation type of value fields at runtime
@@ -389,8 +220,6 @@ To exclude specific fields, add the field names to the [`excludeFields`](https:/
 Users can easily perform calculations on groups of values in the Pivot Table by using the aggregation option. Each value field in the Pivot Table appears in the grouping bar with a dropdown icon next to it. This icon lets users select a different aggregation type, such as Sum, Average, or Count, at runtime. When an aggregation type is selected, the Pivot Table values update immediately to reflect the new calculation.
 
 By default, the icon for setting the aggregation type is visible in the grouping bar. To hide this icon, set the [`showValueTypeIcon`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewGroupingBarSettings.html#Syncfusion_EJ2_PivotView_PivotViewGroupingBarSettings_ShowValueTypeIcon) property to **false** inside [`e-groupingBarSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewGroupingBarSettings.html). For more details about aggregation options, see the [aggregation](./aggregation) section.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -400,19 +229,6 @@ By default, the icon for setting the aggregation type is visible in the grouping
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/grouping-bar/aggregation/aggregation.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grouping-bar/aggregation/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Aggregation.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grouping-bar/aggregation/aggregation.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
 
 
 <!-- markdownlint-disable MD012 -->
@@ -428,8 +244,6 @@ You can hide the dropdown icon for a particular field button in the Pivot Tableâ
 
 In the following example, the dropdown icon for the "Sold" field is hidden:
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/grouping-bar/aggregation-specific/tagHelper %}
@@ -438,20 +252,6 @@ In the following example, the dropdown icon for the "Sold" field is hidden:
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/grouping-bar/aggregation-specific/aggregation-specific.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grouping-bar/aggregation-specific/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Aggregation-specific.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grouping-bar/aggregation-specific/aggregation-specific.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
 
 ![Specific dropdown icon hidden](images/groupingbar-dropdown-specific.png)
 
@@ -465,8 +265,6 @@ The **Values** button appears in the grouping bar when the [`showValuesButton`](
 
 > The Values button is displayed only when multiple fields are added to the Values axis. It is not shown when a single field is present.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/grouping-bar/groupingbar-valuesbutton/tagHelper %}
@@ -475,20 +273,6 @@ The **Values** button appears in the grouping bar when the [`showValuesButton`](
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/grouping-bar/groupingbar-valuesbutton/groupingbar-valuesbutton.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grouping-bar/groupingbar-valuesbutton/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Groupingbar-valuesbutton.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grouping-bar/groupingbar-valuesbutton/groupingbar-valuesbutton.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
 
 ![Values button in grouping bar](images/groupingbarvaluebutton.png)
 
@@ -505,8 +289,6 @@ The [`onFieldDropped`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.
 
 For example, you can use this event to change the caption of the `droppedField` instantly at runtime when a user moves a field to a different axis.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/grouping-bar/field-dropped/tagHelper %}
@@ -515,18 +297,6 @@ For example, you can use this event to change the caption of the `droppedField` 
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/grouping-bar/field-dropped/field-dropped.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grouping-bar/field-dropped/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Field-dropped.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grouping-bar/field-dropped/field-dropped.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 ### FieldDragStart
 
@@ -540,8 +310,6 @@ The [`fieldDragStart`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.
 
 In the following example, the drag action is prevented only for fields placed in the rows axis. Users will not be able to drag fields from the rows axis, but can still drag fields from other axes.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/grouping-bar/field-drag-start/tagHelper %}
@@ -550,18 +318,6 @@ In the following example, the drag action is prevented only for fields placed in
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/grouping-bar/field-drag-start/field-drag-start.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grouping-bar/field-drag-start/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Field-drag-start.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grouping-bar/field-drag-start/field-drag-start.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 ### FieldDrop
 
@@ -577,8 +333,6 @@ The [`fieldDrop`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.P
 
 In the example below, dropping any field into the "Values" axis is prevented. This is managed by setting the `cancel` parameter to **true** when a field is dropped onto the "Values" axis.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/grouping-bar/field-drop/tagHelper %}
@@ -587,18 +341,6 @@ In the example below, dropping any field into the "Values" axis is prevented. Th
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/grouping-bar/field-drop/field-drop.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grouping-bar/field-drop/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Field-drop.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grouping-bar/field-drop/field-drop.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 ### FieldRemove
 
@@ -614,8 +356,6 @@ The event provides the following parameters:
 
 In the following example, the field "Country" cannot be removed from the report by any UI action. This is achieved by handling the [`fieldRemove`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_FieldRemove) event and setting the `cancel` property to **true** if the field name matches "Country".
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/grouping-bar/field-remove/tagHelper %}
@@ -624,18 +364,6 @@ In the following example, the field "Country" cannot be removed from the report 
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/grouping-bar/field-remove/field-remove.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grouping-bar/field-remove/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Field-remove.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grouping-bar/field-remove/field-remove.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 ### AggregateMenuOpen
 
@@ -650,8 +378,6 @@ The event provides the following parameters:
 
 In the following sample, the dropdown menu for the "Amount" field is customized to show specific aggregation types.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/grouping-bar/aggregation-menu-open/tagHelper %}
@@ -660,20 +386,6 @@ In the following sample, the dropdown menu for the "Amount" field is customized 
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/grouping-bar/aggregation-menu-open/aggregation-menu-open.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grouping-bar/aggregation-menu-open/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Aggregation-menu-open.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grouping-bar/aggregation-menu-open/aggregation-menu-open.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
 
 ![AggregateMenuOpen event](images/aggregatemenuopen.png)
 
@@ -702,8 +414,6 @@ The [`actionBegin`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2
 
 For example, in the sample below, users can restrict actions like sorting or filtering from the grouping bar by setting `args.cancel` to **true** within the [`actionBegin`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_ActionBegin) event.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/action-event/actionBegin-groupingBar/tagHelper %}
@@ -712,18 +422,6 @@ For example, in the sample below, users can restrict actions like sorting or fil
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/action-event/actionBegin-groupingBar/actionBegin-aggregation.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/action-event/actionBegin-groupingBar/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="ActionBegin-aggregation.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/action-event/actionBegin-groupingBar/actionBegin-aggregation.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 ### ActionComplete
 
@@ -749,8 +447,6 @@ The event provides the following parameters:
 
 - `actionInfo`: Supplies detailed information about the UI action. For example, when sorting is finished, this parameter includes the sort order and the name of the field involved.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/action-event/actionComplete-groupingBar/tagHelper %}
@@ -759,18 +455,6 @@ The event provides the following parameters:
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/action-event/actionComplete-groupingBar/actionComplete-aggregation.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/action-event/actionComplete-groupingBar/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="ActionComplete-aggregation.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/action-event/actionComplete-groupingBar/actionComplete-aggregation.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 ### ActionFailure
 
@@ -792,8 +476,6 @@ The [`actionFailure`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.E
 
 When this event is triggered, users can refer to the information in these parameters to identify the action that failed and the reason for the failure. This helps users correct issues with actions such as sorting, filtering, aggregating, removing, or editing fields in the Pivot Table's grouping bar.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/action-event/actionFailure-groupingBar/tagHelper %}
@@ -802,20 +484,6 @@ When this event is triggered, users can refer to the information in these parame
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/action-event/actionFailure-groupingBar/actionFailure-aggregation.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/action-event/actionFailure-groupingBar/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="ActionFailure-aggregation.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/action-event/actionFailure-groupingBar/actionFailure-aggregation.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
 
 ## See Also
 

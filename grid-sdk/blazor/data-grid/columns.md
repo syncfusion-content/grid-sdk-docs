@@ -411,7 +411,7 @@ public class OrderData
 
 {% previewsample "https://blazorplayground.syncfusion.com/embed/LZBgCZAsgcTiXKaN?appbar=false&editor=false&result=true&errorlist=false&theme=bootstrap5" %}
 
-> To learn more about number formatting, refer to the [Number](https://blazor.syncfusion.com/documentation/datagrid/columns#number-formatting) section.
+> To learn more about number formatting, refer to the [Number](https://help.syncfusion.com/grid-sdk/blazor/data-grid/columns#number-formatting) section.
 
 ### Date formatting
 
@@ -1018,7 +1018,7 @@ Boolean values in the Blazor DataGrid can be displayed as checkboxes instead of 
 
 >* The `DisplayAsCheckBox` property renders a checkbox for Boolean values.
 >* This property works with columns bound to bool or nullable bool fields.
->* Checkboxes are read-only by default unless editing is enabled. To render a checkbox while editing a Boolean value, define the [EditType](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.ColumnModel.html#Syncfusion_Blazor_Grids_ColumnModel_EditType) property as **EditType.BooleanEdit** in the column configuration.
+>* Checkboxes are read-only by default unless editing is enabled. To render a checkbox while editing a Boolean value, define the [EditType](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridColumn.html#Syncfusion_Blazor_Grids_GridColumn_EditType) property as **EditType.BooleanEdit** in the column configuration.
 
 ## AutoFit columns
 
@@ -2121,7 +2121,7 @@ The Blazor DataGrid allows customizing column styles to match design requirement
 * Column properties like `CssClass`
 * Methods for programmatic customization
 
-For detailed guidance, refer to the [Customize Cell Styles](https://blazor.syncfusion.com/documentation/datagrid/cell#customize-cell-styles) documentation.
+For detailed guidance, refer to the [Customize Cell Styles](https://help.syncfusion.com/grid-sdk/blazor/data-grid/cell#customize-cell-styles) documentation.
 
 ## Manipulating columns
 
@@ -2358,8 +2358,8 @@ Use `HideAtMedia` property to create responsive layouts where certain columns ar
 
 ## See also
 
-* [How to create a Custom Grid Column component](https://support.syncfusion.com/kb/article/11220/blazor-grid-how-to-create-a-custom-grid-column-component)
+* [How to create a Custom Grid Column component](https://support.syncfusion.com/kb/article/11220/how-to-create-a-custom-grid-column-in-blazor-grid)
 
 * Comprehensive information about the Blazor DataGrid and its features is available through the following resources:
     * **Feature Overview:** The [Blazor DataGrid](https://www.syncfusion.com/blazor-components/blazor-datagrid) feature tour provides a complete overview of available capabilities.
-    * **Interactive Examples:** The [Blazor DataGrid examples](https://blazor.syncfusion.com/demos/datagrid/overview?theme=bootstrap5) provide practical demonstrations of data presentation and manipulation.
+    * **Interactive Examples:** The [Blazor DataGrid examples](https://blazor.syncfusion.com/demos/datagrid/overview?theme=fluent2) provide practical demonstrations of data presentation and manipulation.

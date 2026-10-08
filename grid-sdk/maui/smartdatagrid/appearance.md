@@ -11,17 +11,17 @@ appliesto: UI Component Suite, Grid SDK
 
 # Appearance in MAUI SmartDataGrid (SfSmartDataGrid)
 
-The [SfSmartDataGrid](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.SmartComponents.SfSmartDataGrid.html) provides options to customize the appearance of its toolbar, AssistView button, and AssistView popup. You can style elements such as background, stroke, and thickness, or replace default visuals with templates for complete control over the layout and design.
+The [SfSmartDataGrid](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.SmartDataGrid.SfSmartDataGrid.html) provides options to customize the appearance of its toolbar, AssistView button, and AssistView popup. You can style elements such as background, stroke, and thickness, or replace default visuals with templates for complete control over the layout and design.
 
 ## Toolbar
 
 ### Styling
 
-The toolbar’s visual style is driven by the following [SmartAssistStyle](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.SmartComponents.SmartAssistStyle.html) properties:
+The toolbar’s visual style is driven by the following [SmartAssistStyle](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.SmartDataGrid.SmartAssistStyle.html#properties) properties:
 
-- [ToolbarBackground](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.SmartComponents.SmartAssistStyle.html#Syncfusion_Maui_SmartComponents_SmartAssistStyle_ToolbarBackground): Background color for the toolbar.
-- [ToolbarStroke](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.SmartComponents.SmartAssistStyle.html#Syncfusion_Maui_SmartComponents_SmartAssistStyle_ToolbarStroke): Border color of the toolbar.
-- [ToolbarStrokeThickness](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.SmartComponents.SmartAssistStyle.html#Syncfusion_Maui_SmartComponents_SmartAssistStyle_ToolbarStrokeThickness): Border thickness of the toolbar.
+- [ToolbarBackground](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.SmartDataGrid.SmartAssistStyle.html#Syncfusion_Maui_SmartDataGrid_SmartAssistStyle_ToolbarBackground): Background color for the toolbar.
+- [ToolbarStroke](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.SmartDataGrid.SmartAssistStyle.html#Syncfusion_Maui_SmartDataGrid_SmartAssistStyle_ToolbarStroke): Border color of the toolbar.
+- [ToolbarStrokeThickness](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.SmartDataGrid.SmartAssistStyle.html#Syncfusion_Maui_SmartDataGrid_SmartAssistStyle_ToolbarStrokeThickness): Border thickness of the toolbar.
 
 {% tabs %}
 {% highlight xaml %}
@@ -52,7 +52,7 @@ style.ToolbarStrokeThickness = 2f;
 
 ### Toolbar Template
 
-The `SfSmartDataGrid` control allows you to fully customize the toolbar appearance by using the [ToolbarTemplate](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.SmartComponents.SfSmartDataGrid.html#Syncfusion_Maui_SmartComponents_SfSmartDataGrid_ToolbarTemplate) property. This property lets you define a custom layout and style for the toolbar.
+The `SfSmartDataGrid` control allows you to fully customize the toolbar appearance by using the [ToolbarTemplate](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.SmartDataGrid.SfSmartDataGrid.html#Syncfusion_Maui_SmartDataGrid_SfSmartDataGrid_ToolbarTemplate) property. This property lets you define a custom layout and style for the toolbar.
 
 {% tabs %}
 {% highlight xaml %}
@@ -119,9 +119,9 @@ SmartGrid.ToolbarTemplate = new DataTemplate(() =>
 
 The AssistView button’s visual style is driven by the following `SmartAssistStyle` properties:
 
--  [AssistButtonBackground](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.SmartComponents.SmartAssistStyle.html#Syncfusion_Maui_SmartComponents_SmartAssistStyle_AssistButtonBackground): Background color for the AssistView button.
-- [AssistButtonIconColor](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.SmartComponents.SmartAssistStyle.html#Syncfusion_Maui_SmartComponents_SmartAssistStyle_AssistButtonIconColor): Color applied to the AssistView button icon.
-- [AssistButtonCornerRadius](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.SmartComponents.SmartAssistStyle.html#Syncfusion_Maui_SmartComponents_SmartAssistStyle_AssistButtonCornerRadius): Corner radius for the button shape.
+-  [AssistButtonBackground](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.SmartDataGrid.SmartAssistStyle.html#Syncfusion_Maui_SmartDataGrid_SmartAssistStyle_AssistButtonBackground): Background color for the AssistView button.
+- [AssistButtonIconColor](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.SmartDataGrid.SmartAssistStyle.html#Syncfusion_Maui_SmartDataGrid_SmartAssistStyle_AssistButtonIconColor): Color applied to the AssistView button icon.
+- [AssistButtonCornerRadius](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.SmartDataGrid.SmartAssistStyle.html#Syncfusion_Maui_SmartDataGrid_SmartAssistStyle_AssistButtonCornerRadius): Corner radius for the button shape.
 
 {% tabs %}
 {% highlight xaml %}
@@ -154,7 +154,7 @@ style.AssistButtonCornerRadius = 10;
 
 ### AssistViewButton Icon Visibility
 
-The [SfSmartDataGrid.ShowAssistButtonIcon](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.SmartComponents.SfSmartDataGrid.html#Syncfusion_Maui_SmartComponents_SfSmartDataGrid_ShowAssistButtonIcon) property determines whether the AssistView button icon is displayed. By default, ShowAssistButtonIcon is set to `true`. To hide the icon, set this property to false.
+The [SfSmartDataGrid.ShowAssistButtonIcon](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.SmartDataGrid.SfSmartDataGrid.html#Syncfusion_Maui_SmartDataGrid_SfSmartDataGrid_ShowAssistButtonIcon) property determines whether the AssistView button icon is displayed. By default, ShowAssistButtonIcon is set to `true`. To hide the icon, set this property to false.
 
 {% tabs %}
 {% highlight xaml %}
@@ -171,7 +171,7 @@ SmartGrid.ShowAssistButtonIcon = false;
 
 ### AssistView Button Template
 
-Use the [AssistButtonTemplate](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.SmartComponents.SfSmartDataGrid.html#Syncfusion_Maui_SmartComponents_SfSmartDataGrid_AssistButtonTemplate) property to replace the entire button with a custom layout. To customize only the icon, use `AssistButtonIconTemplate` instead (see below).
+Use the [AssistButtonTemplate](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.SmartDataGrid.SfSmartDataGrid.html#Syncfusion_Maui_SmartDataGrid_SfSmartDataGrid_AssistButtonTemplate) property to replace the entire button with a custom layout. To customize only the icon, use `AssistButtonIconTemplate` instead (see below).
 
 {% tabs %}
 {% highlight xaml %}  
@@ -202,7 +202,7 @@ SmartGrid.AssistButtonTemplate = new DataTemplate(() =>
 
 ### AssistView Icon Template
 
-Use the [AssistButtonIconTemplate](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.SmartComponents.SfSmartDataGrid.html#Syncfusion_Maui_SmartComponents_SfSmartDataGrid_AssistButtonIconTemplate) property to customize only the button's icon. Place icon image files in the `Resources/Images` folder of your project.
+Use the [AssistButtonIconTemplate](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.SmartDataGrid.SfSmartDataGrid.html#Syncfusion_Maui_SmartDataGrid_SfSmartDataGrid_AssistButtonIconTemplate) property to customize only the button's icon. Place icon image files in the `Resources/Images` folder of your project.
 
 > **Note:** `AssistButtonIconTemplate` only applies when `AssistButtonTemplate` is not set. If both are defined, `AssistButtonTemplate` takes precedence.
 
@@ -237,16 +237,16 @@ SmartGrid.AssistButtonIconTemplate = new DataTemplate(() =>
 
 ### Styling
 
-Use the [SmartAssistStyle](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.SmartComponents.SmartAssistStyle.html) class to customize the AssistView popup appearance, header styling, and default highlight color.
+Use the [SmartAssistStyle](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.SmartDataGrid.SmartAssistStyle.html) class to customize the AssistView popup appearance, header styling, and default highlight color.
 
-- [AssistPopupStroke](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.SmartComponents.SmartAssistStyle.html#Syncfusion_Maui_SmartComponents_SmartAssistStyle_AssistPopupStroke): Border color of the AssistView popup.
-- [AssistPopupStrokeThickness](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.SmartComponents.SmartAssistStyle.html#Syncfusion_Maui_SmartComponents_SmartAssistStyle_AssistPopupStrokeThickness): Border thickness of the AssistView popup.
-- [AssistViewHeaderTextColor](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.SmartComponents.SmartAssistStyle.html#Syncfusion_Maui_SmartComponents_SmartAssistStyle_AssistViewHeaderTextColor):Text color of the header.
-- [AssistViewHeaderFontFamily](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.SmartComponents.SmartAssistStyle.html#Syncfusion_Maui_SmartComponents_SmartAssistStyle_AssistViewHeaderFontFamily): Font family used for the header text.
-- [AssistViewHeaderFontAttributes](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.SmartComponents.SmartAssistStyle.html#Syncfusion_Maui_SmartComponents_SmartAssistStyle_AssistViewHeaderFontAttributes): Font attributes (e.g., Bold, Italic).
-- [AssistViewHeaderFontSize](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.SmartComponents.SmartAssistStyle.html#Syncfusion_Maui_SmartComponents_SmartAssistStyle_AssistViewHeaderFontSize): Font size for header text.
-- [AssistViewHeaderBackground](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.SmartComponents.SmartAssistStyle.html#Syncfusion_Maui_SmartComponents_SmartAssistStyle_AssistViewHeaderBackground): Background color of the header.
-- [HighlightColor](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.SmartComponents.SmartAssistStyle.html#Syncfusion_Maui_SmartComponents_SmartAssistStyle_HighlightColor): Fallback color used by row/cell highlight actions when the prompt doesn’t specify a color.
+- [AssistPopupStroke](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.SmartDataGrid.SmartAssistStyle.html#Syncfusion_Maui_SmartDataGrid_SmartAssistStyle_AssistPopupStroke): Border color of the AssistView popup.
+- [AssistPopupStrokeThickness](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.SmartDataGrid.SmartAssistStyle.html#Syncfusion_Maui_SmartDataGrid_SmartAssistStyle_AssistPopupStrokeThickness): Border thickness of the AssistView popup.
+- [AssistViewHeaderTextColor](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.SmartDataGrid.SmartAssistStyle.html#Syncfusion_Maui_SmartDataGrid_SmartAssistStyle_AssistViewHeaderTextColor):Text color of the header.
+- [AssistViewHeaderFontFamily](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.SmartDataGrid.SmartAssistStyle.html#Syncfusion_Maui_SmartDataGrid_SmartAssistStyle_AssistViewHeaderFontFamily): Font family used for the header text.
+- [AssistViewHeaderFontAttributes](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.SmartDataGrid.SmartAssistStyle.html#Syncfusion_Maui_SmartDataGrid_SmartAssistStyle_AssistViewHeaderFontAttributes): Font attributes (e.g., Bold, Italic).
+- [AssistViewHeaderFontSize](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.SmartDataGrid.SmartAssistStyle.html#Syncfusion_Maui_SmartDataGrid_SmartAssistStyle_AssistViewHeaderFontSize): Font size for header text.
+- [AssistViewHeaderBackground](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.SmartDataGrid.SmartAssistStyle.html#Syncfusion_Maui_SmartDataGrid_SmartAssistStyle_AssistViewHeaderBackground): Background color of the header.
+- [HighlightColor](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.SmartDataGrid.SmartAssistStyle.html#Syncfusion_Maui_SmartDataGrid_SmartAssistStyle_HighlightColor): Fallback color used by row/cell highlight actions when the prompt doesn’t specify a color.
 
 {% tabs %}
 {% highlight xaml %}
@@ -286,7 +286,7 @@ style.HighlightColor = Colors.Red;
 
 ### AssistView Header Text
 
-The [AssistViewHeaderText](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.SmartComponents.DataGridAssistViewSettings.html#Syncfusion_Maui_SmartComponents_DataGridAssistViewSettings_AssistViewHeaderText) property in [DataGridAssistViewSettings](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.SmartComponents.DataGridAssistViewSettings.html) is used to change the default text displayed in the AssistView header. By default, the header text is "AI Assistant".
+The [AssistViewHeaderText](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.SmartDataGrid.DataGridAssistViewSettings.html#Syncfusion_Maui_SmartDataGrid_DataGridAssistViewSettings_AssistViewHeaderText) property in [DataGridAssistViewSettings](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.SmartDataGrid.DataGridAssistViewSettings.html) is used to change the default text displayed in the AssistView header. By default, the header text is "AI Assistant".
 
 {% tabs %}
 {% highlight xaml %}
@@ -304,7 +304,7 @@ SmartGrid.AssistViewSettings.AssistViewHeaderText = "Smart Assistant";
 
 ### Show AssistView Close Button
 
-The [ShowAssistViewCloseButton](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.SmartComponents.DataGridAssistViewSettings.html#Syncfusion_Maui_SmartComponents_DataGridAssistViewSettings_ShowAssistViewCloseButton) property in [DataGridAssistViewSettings](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.SmartComponents.DataGridAssistViewSettings.html) determines whether the close button in the AssistView header is displayed. By default, this property is set to `true`. To hide the close button, set this property to false.
+The [ShowAssistViewCloseButton](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.SmartDataGrid.DataGridAssistViewSettings.html#Syncfusion_Maui_SmartDataGrid_DataGridAssistViewSettings_ShowAssistViewCloseButton) property in [DataGridAssistViewSettings](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.SmartDataGrid.DataGridAssistViewSettings.html) determines whether the close button in the AssistView header is displayed. By default, this property is set to `true`. To hide the close button, set this property to false.
 
 {% tabs %}
 {% highlight xaml %}
@@ -322,7 +322,7 @@ SmartGrid.AssistViewSettings.ShowAssistViewCloseButton = false;
 
 ### Show AssistView Banner
 
-The [ShowAssistViewBanner](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.SmartComponents.DataGridAssistViewSettings.html#Syncfusion_Maui_SmartComponents_DataGridAssistViewSettings_ShowAssistViewBanner) property in [DataGridAssistViewSettings](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.SmartComponents.DataGridAssistViewSettings.html) determines whether the banner area and suggestions are displayed in the AssistView. By default, this property is set to `true`.
+The [ShowAssistViewBanner](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.SmartDataGrid.DataGridAssistViewSettings.html#Syncfusion_Maui_SmartDataGrid_DataGridAssistViewSettings_ShowAssistViewBanner) property in [DataGridAssistViewSettings](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.SmartDataGrid.DataGridAssistViewSettings.html) determines whether the banner area and suggestions are displayed in the AssistView. By default, this property is set to `true`.
 
 > **Note:** To display the content defined in `AssistViewBannerTemplate` and suggestions, `ShowAssistViewBanner` must be set to `true`.
 
@@ -341,7 +341,7 @@ SmartGrid.AssistViewSettings.ShowAssistViewBanner = true;
 
 ### AssistView Header Template
 
-Use the [AssistViewHeaderTemplate](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.SmartComponents.DataGridAssistViewSettings.html#Syncfusion_Maui_SmartComponents_DataGridAssistViewSettings_AssistViewHeaderTemplate) property to replace the header with a custom layout. The example below demonstrates how to add a close button using the `CloseAssistView()` method.
+Use the [AssistViewHeaderTemplate](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.SmartDataGrid.DataGridAssistViewSettings.html#Syncfusion_Maui_SmartDataGrid_DataGridAssistViewSettings_AssistViewHeaderTemplate) property to replace the header with a custom layout. The example below demonstrates how to add a close button using the `CloseAssistView()` method.
 
 {% tabs %}
 {% highlight xaml %}
@@ -424,7 +424,7 @@ SmartGrid.AssistViewSettings.AssistViewHeaderTemplate = new DataTemplate(() =>
 
 ### AssistView Banner Template
 
-Use the [AssistViewBannerTemplate](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.SmartComponents.DataGridAssistViewSettings.html#Syncfusion_Maui_SmartComponents_DataGridAssistViewSettings_AssistViewBannerTemplate) property to customize the banner area. Set `ShowAssistViewBanner` to `true` to display this custom banner content.
+Use the [AssistViewBannerTemplate](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.SmartDataGrid.DataGridAssistViewSettings.html#Syncfusion_Maui_SmartDataGrid_DataGridAssistViewSettings_AssistViewBannerTemplate) property to customize the banner area. Set `ShowAssistViewBanner` to `true` to display this custom banner content.
 
 > **Note:** To display the content defined in `AssistViewBannerTemplate`, you must set `ShowAssistViewBanner` to true.
 
@@ -465,7 +465,7 @@ SmartGrid.AssistViewSettings.AssistViewBannerTemplate = new DataTemplate(() =>
 
 ### AssistView Editor Template
 
-Use the [AssistViewEditorTemplate](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.SmartComponents.DataGridAssistViewSettings.html#Syncfusion_Maui_SmartComponents_DataGridAssistViewSettings_AssistViewEditorTemplate) property to customize the text input editor area where users enter AI commands.
+Use the [AssistViewEditorTemplate](https://help.syncfusion.com/cr/maui/Syncfusion.Maui.SmartDataGrid.DataGridAssistViewSettings.html#Syncfusion_Maui_SmartDataGrid_DataGridAssistViewSettings_AssistViewEditorTemplate) property to customize the text input editor area where users enter AI commands.
 
 {% tabs %}
 {% highlight xaml %}
