@@ -300,15 +300,15 @@ These formats can be printed using desktop applications, which offer better cont
 
 ## Printing events
 
-The Blazor Data Grid provides events triggered during print operations, such as [Printing](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridEvents-1.html#Syncfusion_Blazor_Grids_GridEvents_1_Printing) and [Printed](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridEvents-1.html#Syncfusion_Blazor_Grids_GridEvents_1_Printed). These events allow custom actions before and after the Blazor Data Grid content is printed, supporting validation, customization, and response handling.
+The Blazor Data Grid provides [Printing](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridEvents-1.html#Syncfusion_Blazor_Grids_GridEvents_1_Printing) and [Printed](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridEvents-1.html#Syncfusion_Blazor_Grids_GridEvents_1_Printed) events that are triggered before and after the print operation. These events allow you to validate, customize, or cancel the printing process and execute additional actions once printing is completed.
 
-1. `Printing`: Triggered before the Blazor Data Grid is printed.
+1. `Printing`: Triggered before the print operation begins.
 
-2. `Printed`: Triggered after the Blazor Data Grid has been printed.
+2. `Printed`: Triggered after the print operation is completed.
 
 ### Printing
 
-The `Printing` event is triggered before the print operation begins. The event allows inspecting, modifying, or canceling the printing process based on custom logic or validation requirements.
+The [Printing](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridEvents-1.html#Syncfusion_Blazor_Grids_GridEvents_1_Printing) event is triggered before the print operation begins. The event allows inspection, customization, or cancellation of the printing process based on application requirements.
 
 **Event Arguments**
 
@@ -317,9 +317,9 @@ The event uses the [PrintingEventArgs](https://help.syncfusion.com/cr/blazor/Syn
 | Event Argument    | Description |
 |-------------------|-------------|
 | Cancel            | Specifies whether the print operation should be cancelled. Set to `true` to cancel printing. |
-| PrintDataSource   | Defines the records to include in the printed output. If not set, the current data source is used. |
-| HeaderTemplate    | Defines the header content rendered in the printed document, such as titles or logos. |
-| FooterTemplate    | Defines the footer content rendered in the printed document, such as page numbers or notes. |
+| PrintDataSource   | Specifies the records to be included in the printed output. If not provided, the Data Grid current data source is used. |
+| HeaderTemplate    | Specifies custom header content to be displayed in the printed output, such as titles, company information, or logos. |
+| FooterTemplate    | Specifies custom footer content to be displayed in the printed output, such as page numbers, dates, or notes. |
 
 {% tabs %}
 {% highlight razor tabtitle="Index.razor" %}
@@ -406,7 +406,7 @@ internal sealed class OrderData
 
 ### Printed
 
-The `Printed` event is triggered after the print operation has completed. This event can be used to restore the original Blazor Data Grid state, log the print operation, or show a notification once printing is done.
+The [Printed](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridEvents-1.html#Syncfusion_Blazor_Grids_GridEvents_1_Printed) event is triggered after the print operation is completed. This event can be used for post-print actions such as restoring the Grid state, logging activity, or displaying notifications.
 
 {% tabs %}
 {% highlight razor tabtitle="Index.razor" %}
