@@ -33,7 +33,7 @@ The following example demonstrates row virtualization using `enableVirtualizatio
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/treegrid/virtual-scroll-cs1" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/virtual-scroll-cs1" %}
 
 ### Limitations 
 
@@ -75,7 +75,7 @@ The following example demonstrates column virtualization using `enableColumnVirt
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/treegrid/virtual-scroll-cs2" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/virtual-scroll-cs2" %}
 
 > Column's [width](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column/#width) is required for column virtualization. If column's width is not defined then tree grid will consider its value as **200px**.
 

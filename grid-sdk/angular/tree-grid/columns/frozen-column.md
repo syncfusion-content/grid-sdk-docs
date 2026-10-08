@@ -23,7 +23,7 @@ In the following example, the [frozenColumns](https://ej2.syncfusion.com/angular
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/treegrid/frozencolumns-cs1" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/frozencolumns-cs1" %}
 
 > * Frozen columns should not be set outside the TreeGrid viewport.
 > * Frozen TreeGrid supports column virtualization feature, which helps to improve the TreeGrid performance while loading a large dataset.
@@ -47,7 +47,7 @@ The following example demonstrates how to freeze particular column in TreeGrid u
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/treegrid/frozencolumns-cs2" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/frozencolumns-cs2" %}
 
 ## Freeze direction
 
@@ -74,7 +74,7 @@ In the following example, the **taskName** column is frozen on the left side, th
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/treegrid/frozencolumns-cs3" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/frozencolumns-cs3" %}
 
 > * Freeze Direction is not compatible with the [isFrozen](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column#isfrozen) and [frozenColumns](https://ej2.syncfusion.com/angular/documentation/api/treegrid#frozencolumns) properties.
 
@@ -120,7 +120,7 @@ The following example demonstrates how to change the default frozen line color u
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/treegrid/frozencolumns-cs4" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/frozencolumns-cs4" %}
 
 ## Deprecated methods 
 

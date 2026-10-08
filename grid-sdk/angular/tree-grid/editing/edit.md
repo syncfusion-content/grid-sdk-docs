@@ -39,7 +39,7 @@ The following example demonstrates how to enable editing in the TreeGrid:
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/treegrid/edit-cs2" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/edit-cs2" %}
 
 > * If [columns.isIdentity](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column/#isidentity) is enabled, then it will be considered as a read-only column when adding a record.
 > * You can disable editing for a particular column, by specifying `columns.allowEditing` to **false**.
@@ -65,7 +65,7 @@ The following example demonstrates how to enable the toolbar with edit option in
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/treegrid/edit-cs3" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/edit-cs3" %}
 
 ## Disable editing for particular column
 
@@ -87,7 +87,7 @@ The following example demonstrates how to disable editing for the column in the 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/treegrid/edit-cs4" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/edit-cs4" %}
 
 >* If you have set the [isPrimaryKey](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column/#isprimarykey) property to **true** for a column, editing will be automatically disabled for that column.
 >* You can disable the particular cell using [cellEdit](https://ej2.syncfusion.com/angular/documentation/api/grid/#celledit) event. Please refer this [link](https://ej2.syncfusion.com/angular/documentation/treegrid/editing/batch-editing#cancel-edit-based-on-condition-in-batch-mode).
@@ -112,7 +112,7 @@ In the following demo, the rows which have the value for **Task Name** column as
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/treegrid/edit-cs13" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/edit-cs13" %}
 
 ## Editing template column
 
@@ -197,7 +197,7 @@ export class AppComponent implements OnInit {
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/treegrid/edit-cs5" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/edit-cs5" %}
 
 ## Customize delete confirmation dialog
 
@@ -222,7 +222,7 @@ The following example demonstrates how to customize the delete confirmation dial
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/treegrid/edit-cs6" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/edit-cs6" %}
 
 ## Update boolean column value with a single click   
 
@@ -242,7 +242,7 @@ In the following sample, the `CheckBox` component is rendered as a template in t
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/treegrid/edit-cs7" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/edit-cs7" %}
 
 ## Edit enum column 
 
@@ -262,7 +262,7 @@ In the following example, the `DropDownList` component is rendered within the [e
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/treegrid/edit-cs8" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/edit-cs8" %}
 
 ## Edit complex column 
 
@@ -282,7 +282,7 @@ In the following sample, the input element is rendered in the edit template of t
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/treegrid/edit-cs9" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/edit-cs9" %}
 
 ## How to perform CRUD action externally 
 
@@ -314,7 +314,7 @@ The following example demonstrates the integration of the TreeGrid with a separa
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/treegrid/edit-cs10" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/edit-cs10" %}
 
 ### Using external form 
 
@@ -336,7 +336,7 @@ In the following example, it demonstrates how to edit the form using an external
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/treegrid/edit-cs11" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/edit-cs11" %}
 
 ## Troubleshoot editing works only for first row
 
@@ -406,7 +406,7 @@ export class AppComponent implements OnInit {
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/treegrid/edit-cs12" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/edit-cs12" %}
 
 > * If a template column has a corresponding `field` property defined, the value entered in the template column's input field will be stored in the associated edit column of the row's data object.
 

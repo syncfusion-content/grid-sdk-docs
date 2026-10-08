@@ -25,7 +25,7 @@ In the following demo, the **Lunch Break** cell spans multiple rows in the "1:00
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/treegrid/row-spanning-cs1" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/row-spanning-cs1" %}
 
 > * To disable the spanning for particular TreeGrid page, use **requestType** from `queryCellInfo` event argument.
 > * The `rowSpan` and `colSpan` attributes can be used together to merge cells both vertically and horizontally.
@@ -57,7 +57,7 @@ The row spanning feature in the Syncfusion Angular TreeGrid can be enabled using
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/treegrid/row-spanning-cs2" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/row-spanning-cs2" %}
 
 > In the sample, row spanning is disabled at the column level for the price based columns such as "Planned Budget" and "Actual Spend" by setting each column's `enableRowSpan` property to **false**.
 

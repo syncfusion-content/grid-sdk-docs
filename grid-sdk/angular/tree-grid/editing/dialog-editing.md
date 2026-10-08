@@ -25,7 +25,7 @@ The following example demonstrates how to enable dialog editing in the TreeGrid:
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/treegrid/dialog-edit-cs1" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/dialog-edit-cs1" %}
 
 ## Customize edit dialog
 
@@ -46,7 +46,7 @@ The following example demonstrates how to customize the edit dialog using the `a
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/treegrid/dialog-edit-cs2" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/dialog-edit-cs2" %}
 
 > The TreeGrid add or edit dialog element has the max-height property, which is calculated based on the available window height. So, in the normal window (1920 x 1080), it is possible to set the dialog height up to 658px.
 
@@ -67,7 +67,7 @@ In the following example, the TreeGrid columns **priority** is rendered as a hid
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/treegrid/dialog-edit-cs3" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/dialog-edit-cs3" %}
 
 ## Use wizard like dialog editing
 
@@ -86,7 +86,7 @@ The following example demonstrates the wizard-like editing in the TreeGrid with 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/treegrid/dialog-edit-cs4" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/dialog-edit-cs4" %}
 
 ## Customize add/edit dialog footer
 
@@ -103,4 +103,4 @@ In the following example, using the `dialog` argument of the `actionComplete` ev
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/treegrid/dialog-edit-cs5" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/dialog-edit-cs5" %}
