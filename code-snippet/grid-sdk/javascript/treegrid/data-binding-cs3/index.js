@@ -1,4 +1,3 @@
-import { projectData } from './es5-datasource.js';
 ej.treegrid.TreeGrid.Inject(ej.treegrid.Page);
 
 var treeGridObj = new ej.treegrid.TreeGrid({
