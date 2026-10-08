@@ -16,13 +16,13 @@ Cell editing provides a streamlined way to update individual cell values directl
 
 In enterprise applications, users often need to correct a few values across a large dataset. Opening a separate edit form for each change adds unnecessary steps and interrupts the workflow. Cell editing streamlines these corrections, reduces repetitive steps, and boosts productivity.
 
-**Resolved pain points**
+**Pain points**
 
 - Repeated clicks and form openings to update individual values.
 - Context switching between the Data Grid and separate edit forms.
 - Slower corrections when changes span many records.
 
-**Use case**
+**Use case: Inventory management**
 
 A warehouse operator finds incorrect quantities for 50 products. Cell editing allows each quantity to be corrected directly in the Data Grid, without opening a separate dialog for every product, so the operator can continue working in the same view.
 
@@ -102,7 +102,7 @@ public class OrderDetails
 
 ## Edit on key press in cell editing
 
-Edit on key press is an interaction mode in which a selected cell switches to edit state as soon as a key is pressed, instead of requiring a double-click or a separate action to begin editing. Edit on key press removes the extra step of double-clicking before every correction, keeping repetitive data-entry workflows moving without interruption. Edit on key press is useful for data-entry-heavy Data Grids where a cell is selected and the value is overwritten immediately, such as order processing sheets, inventory counts, or timesheet grids.
+Edit on key press allows a selected cell to enter edit mode immediately when a user presses a printable key, without requiring a double-click or another action to start editing. Edit on key press improves data-entry speed and reduces unnecessary interactions, making it ideal for applications where users frequently update large amounts of data. Typical use cases include inventory updates, order management, timesheet tracking, and other spreadsheet-style data entry scenarios.
 
 To enable, set the [AllowEditOnKeyPress](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridEditSettings.html#Syncfusion_Blazor_Grids_GridEditSettings_AllowEditOnKeyPress) property in [GridEditSettings](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridEditSettings.html) to `true`. When enabled, pressing a printable character key, such as a letter, digit, or symbol, while a cell is selected, automatically places the cell in edit mode and applies the entered character directly to the cell.
 
@@ -172,17 +172,17 @@ public class OrderDetails
 
 {% previewsample "https://blazorplayground.syncfusion.com/embed/rtLxiXDMzxRJUoQW?appbar=false&editor=false&result=true&errorlist=false&theme=fluent2" %}
 
-## Customize focus movement after save (EnterKeyDirection)
+## Customize Enter key navigation
 
-[EnterKeyDirection](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridEditSettings.html#Syncfusion_Blazor_Grids_GridEditSettings_EnterKeyDirection) is a [GridEditSettings](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridEditSettings.html) property that controls where keyboard focus moves after a cell value is saved by pressing the `Enter` key. The default value is `None`, which keeps focus on the current cell after the value is saved. Configure EnterKeyDirection when keyboard-driven data entry needs a specific pattern, such as moving across `NextRow`, `NextColumn`, or keeping focus fixed on the same cell with `None` for repeated corrections.
+[EnterKeyDirection](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridEditSettings.html#Syncfusion_Blazor_Grids_GridEditSettings_EnterKeyDirection) is a [GridEditSettings](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridEditSettings.html) property that controls where focus moves after saving a cell using the Enter key. The property supports keyboard-based data entry scenarios that require quick navigation between cells without using the mouse. By default, the value is None, which keeps the focus on the current cell.
 
-The [EnterKeyDirection](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.EnterKeyDirection.html) enumeration provides multiple values for customizing the focus behavior on the `Enter` key. The available values are `NextColumn`, `NextRow`, and `None`.
+The [EnterKeyDirection](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.EnterKeyDirection.html) enumeration provides the following options:
 
 | Enum value | Description |
 |---------|-----|
-| `EnterKeyDirection.NextColumn` | Moves focus to the next column in the same row that was just saved. |
-| `EnterKeyDirection.NextRow` | Moves focus to the same column in the next row. |
-| `EnterKeyDirection.None` | Keeps focus on the same cell that was just saved. |
+| `EnterKeyDirection.NextColumn` | Moves focus to the next column in the current row. Useful for entering data across a row. |
+| `EnterKeyDirection.NextRow` | Moves focus to the same column in the next row. Useful for updating the same field across multiple records. |
+| `EnterKeyDirection.None` | Keeps focus on the current cell after saving. Useful for reviewing or correcting the entered value. |
 
 {% tabs %}
 {% highlight razor tabtitle="Index.razor" %}
