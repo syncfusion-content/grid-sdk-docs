@@ -1,14 +1,13 @@
 ---
 layout: post
-title: Grouping in Syncfusion ASP.NET Core Grid Component
-description: Learn here all about Grouping in Syncfusion ASP.NET Core Grid component of Syncfusion Essential JS 2 and more.
+title: Grouping in Syncfusion ASP.NET Core Grid Control
+description: Learn here all about Grouping in Syncfusion ASP.NET Core Grid control of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Grouping
-publishingplatform: grid-sdk
 documentation: ug
 ---
 
-# Grouping in ASP.NET Core Grid component
+# Grouping in ASP.NET Core Grid Control
 
 The grouping feature in the [ASP.NET Core DataGrid](https://www.syncfusion.com/aspnet-core-ui-controls/grid) allows you to organize data into a hierarchical structure, making it easier to expand and collapse records. You can group the columns by simply dragging and dropping the column header to the group drop area. To enable grouping in the grid, you need to set the [allowGrouping](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.grids.grid.html#Syncfusion_EJ2_Grids_Grid_AllowGrouping) property to **true**. Additionally, you can customize the grouping options using the [groupSettings](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.grids.grid.html#Syncfusion_EJ2_Grids_Grid_GroupSettings) property.
 
@@ -185,7 +184,7 @@ The following example demonstrates how to collapse all grouped rows at the initi
         }
     }
 ```
-> The collapse all approach is suggested for a limited number of records since collapsing every grouped record takes some time. If you have a large dataset, it is recommended to use [lazy-load grouping](https://ej2.syncfusion.com/aspnetcore/documentation/grid/grouping/lazy-load-grouping). This approach is also applicable for the `groupExpandAll` method.
+> The collapse all approach is suggested for a limited number of records since collapsing every grouped record takes some time. If you have a large dataset, it is recommended to use [lazy-load grouping](https://help.syncfusion.com/grid-sdk/asp-net-core/data-grid/grouping/lazy-load-grouping). This approach is also applicable for the `groupExpandAll` method.
 
 ## Group or ungroup column externally
 
@@ -301,4 +300,4 @@ The following example demonstrates how the `actionBegin` and `actionComplete` ev
 
 ## See Also
 
-* [Exporting grouped records](https://ej2.syncfusion.com/aspnetcore/documentation/grid/excel-export/excel-export-options#exporting-grouped-records)
+* [Exporting grouped records](https://help.syncfusion.com/grid-sdk/asp-net-core/data-grid/excel-export/excel-export-options#exporting-grouped-records)

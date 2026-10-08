@@ -4,13 +4,12 @@ title: Integrate Chart in Syncfusion ASP.NET Core Grid
 description: Learn here all about integrate Chart in Syncfusion ASP.NET Core Grid of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Integrate Chart
-publishingplatform: grid-sdk
 documentation: ug
 ---
 
-# Integrate Chart in Syncfusion ASP.NET Core Grid
+# Integrate Chart in Syncfusion ASP.NET Core Grid Control
 
-The Grid and Chart Integration feature in Syncfusion allows users to visualize tabular data in a graphical format by linking the Grid with the Chart.This feature allows seamless integration with Charts to visualize selected data interactively. You can generate various Chart types such as bar, line, or pie directly from Grid data using the [ContextMenu](https://ej2.syncfusion.com/aspnetcore/documentation/grid/context-menu) feature. This feature is particularly useful in scenarios where tabular data can be better understood through graphical representation.
+The Grid and Chart Integration feature in Syncfusion allows users to visualize tabular data in a graphical format by linking the Grid with the Chart.This feature allows seamless integration with Charts to visualize selected data interactively. You can generate various Chart types such as bar, line, or pie directly from Grid data using the [ContextMenu](https://help.syncfusion.com/grid-sdk/asp-net-core/data-grid/context-menu) feature. This feature is particularly useful in scenarios where tabular data can be better understood through graphical representation.
 
 This feature is particularly useful in dashboards, reporting tools, and data-driven applications where both tabular and visual representations of data are required.
 
@@ -147,11 +146,11 @@ Use the [contextMenuClick](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfus
 
 * Use the `gridChart.render` to render the Chart. It accepts three arguments discussed below:
 
-  * `chartArgs`: Contains Grid instance, [Chart type](https://ej2.syncfusion.com/aspnetcore/documentation/chart/chart-types), and selected records.
+  * `chartArgs`: Contains Grid instance, [Chart type](https://help.syncfusion.com/chart-sdk/asp-net-core/charts/chart-types/line), and selected records.
 
   * `chartModel:` This specifies various Chart configurations related to the appearance and behavior of the Chart. The model allows you to configure axes, labels, legends, tooltips, and other Chart attributes. Refer to Syncfusion's Chart Model for detailed configurations, options, and customization possibilities.
 
-  * `categorySeries:` This specifies the fields in your data used for [categories](https://ej2.syncfusion.com/aspnetcore/documentation/chart/category-axis) and [series](https://ej2.syncfusion.com/aspnetcore/documentation/chart/chart-series) in the Chart.
+  * `categorySeries:` This specifies the fields in your data used for [categories](https://help.syncfusion.com/chart-sdk/asp-net-core/charts/category-axis) and [series](https://help.syncfusion.com/chart-sdk/asp-net-core/charts/chart-series) in the Chart.
 
     * Category fields: Define the grouping axis.
     * Series fields: Define the actual values plotted on the Chart.
@@ -210,7 +209,7 @@ The following complete example demonstrates how to integrate Charts into a Grid 
 {% endhighlight %}
 {% endtabs %}
 
-![Chart integration via Context Menu in Grid](../images/GridChart1.gif)
+![Chart integration via Context Menu in Grid](./images/GridChart1.gif)
 
 ## Enable export functionality in GridChart
 
@@ -266,9 +265,9 @@ When enabled, the property panel appears alongside the Chart popup and offers th
 
 **Customize the Chart model:**   
 
-You can customize the [Chart](https://ej2.syncfusion.com/aspnetcore/documentation/chart/getting-started) by defining a `chartModel` object in the `chart` property of the `model` object within the [contextMenuClick](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ContextMenuClick) event .This allows you to configure various Chart properties such as axes, margins, tooltips, titles, and more. Additionally, you can use the [events](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.Chart.html#properties) of the Chart within the `chartModel` configuration to apply further customizations when the Chart is rendered. 
+You can customize the [Chart](https://help.syncfusion.com/chart-sdk/asp-net-core/charts/getting-started) by defining a `chartModel` object in the `chart` property of the `model` object within the [contextMenuClick](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ContextMenuClick) event .This allows you to configure various Chart properties such as axes, margins, tooltips, titles, and more. Additionally, you can use the [events](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.Chart.html#properties) of the Chart within the `chartModel` configuration to apply further customizations when the Chart is rendered. 
 
-To customize [Accumulation Charts](https://ej2.syncfusion.com/aspnetcore/documentation/accumulation-chart/getting-started) (such as Pie), use the `accumulationChart` property of the `model` object. This property allows you to configure Chart options like titles, legends, data labels, and visual styles tailored for accumulation-type visualizations.  You can also use Accumulation Chart [events](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.AccumulationChart.html#properties) to apply additional customizations when the Chart is rendered.
+To customize [Accumulation Charts](https://help.syncfusion.com/chart-sdk/asp-net-core/accumulation-charts/getting-started) (such as Pie), use the `accumulationChart` property of the `model` object. This property allows you to configure Chart options like titles, legends, data labels, and visual styles tailored for accumulation-type visualizations.  You can also use Accumulation Chart [events](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Charts.AccumulationChart.html#properties) to apply additional customizations when the Chart is rendered.
 
 The following code snippets demonstrate how to achieve this:
 
@@ -363,4 +362,4 @@ The following complete example demonstrates how to enable the property panel by 
 {% endhighlight %}
 {% endtabs %}
 
-![Chart integration](../images/GridChart2.gif) 
+![Chart integration](./images/GridChart2.gif) 

@@ -4,7 +4,6 @@ title: Hierarchy grid in Syncfusion ASP.NET Core Grid Component
 description: Learn here all about Hierarchy grid in Syncfusion ASP.NET Core Grid component of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Hierarchy grid
-publishingplatform: grid-sdk
 documentation: ug
 ---
 
@@ -34,7 +33,7 @@ The following example demonstrates how to enable the hierarchy feature in the gr
 ![Hierarchy grid](images/hierarchy-grid/hierarchy-grid.png)
 
 > * Grid supports n level of child grids.
-> * Hierarchical binding is not supported when [Detail Template](https://ej2.syncfusion.com/aspnetcore/documentation/grid/row/detail-template) is enabled.
+> * Hierarchical binding is not supported when [Detail Template](https://help.syncfusion.com/grid-sdk/asp-net-core/data-grid/row/detail-template) is enabled.
 > * In [ASP.NET Core DataGrid](https://www.syncfusion.com/aspnet-core-ui-controls/grid) component, searching operates independently for parent and child grids. Searching within the parent grid filters only parent records, and similarly, searching within the child grid filters only child records. The component does not support simultaneous searching across both parent and child grids.
 
 ## Bind hierarchy grid with different field

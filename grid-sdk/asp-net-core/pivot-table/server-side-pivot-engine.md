@@ -81,7 +81,7 @@ Launch your ASP.NET Core application to view the Pivot Table. The Pivot Table wi
 
 ## Available configurations in Server-side application
 
-This section explains how to set up and use different data sources with the server-side Pivot Engine in the ASP.NET Core [Pivot Table](https://ej2.syncfusion.com/aspnetcore/documentation/pivot-table/getting-started).
+This section explains how to set up and use different data sources with the server-side Pivot Engine in the ASP.NET Core [Pivot Table](https://help.syncfusion.com/grid-sdk/asp-net-core/pivot-table/getting-started).
 
 ### Supportive Data Sources
 
@@ -658,7 +658,7 @@ Finally, configure the [`e-datasourcesettings`](https://help.syncfusion.com/cr/a
 
 #### Memory Cache
 
-In a server-side application, the [`Memory Cache`](https://docs.microsoft.com/en-us/dotnet/api/system.runtime.caching.memorycache?view=dotnet-plat-ext-5.0) option helps store the data source and engine properties in RAM for use during UI actions in the Pivot Table. This approach improves performance by preventing the need to recalculate aggregated values every time the user interacts with the Pivot Table. The following example shows how the memory cache is used in the **GetEngine** method to store engine properties:
+In a server-side application, the [`Memory Cache`](https://learn.microsoft.com/en-us/dotnet/api/system.runtime.caching.memorycache?view=net-11.0-pp&viewFallbackFrom=dotnet-plat-ext-5.0) option helps store the data source and engine properties in RAM for use during UI actions in the Pivot Table. This approach improves performance by preventing the need to recalculate aggregated values every time the user interacts with the Pivot Table. The following example shows how the memory cache is used in the **GetEngine** method to store engine properties:
 
 ```csharp
 public async Task<EngineProperties> GetEngine(FetchData param)
@@ -1016,8 +1016,6 @@ The Pivot Table exposes a hook for every outgoing call through the [`beforeServi
 
 Use a trusted token issued by the authentication flow after sign‑in. Keep tokens out of source control by retrieving them at runtime (for example, from a secure in‑memory store, a server endpoint that reads an **httpOnly** cookie, or a token manager that refreshes on expiry). Merge the token into request headers so every call carries proof of identity.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/server-side/Authentication/tagHelper %}
@@ -1027,21 +1025,9 @@ Use a trusted token issued by the authentication flow after sign‑in. Keep toke
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/server-side/Authentication/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Authentication.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/server-side/Authentication/Authentication.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
 **Production tips**
 - Load tokens on demand and rotate them regularly; never hard-code secrets in source control.
-- When a backend expects a different header (for example, X‑API‑Key), use that header instead of Authorization.
+- When a back end expects a different header (for example, X‑API‑Key), use that header instead of Authorization.
 - Configure CORS to allow any custom headers added (for example, include Authorization in Access‑Control‑Allow‑Headers) so browsers do not block requests.
 
 **Troubleshooting**

@@ -10,9 +10,7 @@ documentation: ug
 
 # Searching in ASP.NET Core TreeGrid
 
-You can search records in a TreeGrid, by using the **search** method with search key as a parameter. This also provides an option to integrate search text box in treegrid's toolbar by adding search item to the [`toolbar`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGrid~Toolbar.html).
-
-{% if page.publishingplatform == "aspnet-core" %}
+You can search records in a TreeGrid, by using the **search** method with search key as a parameter. This also provides an option to integrate search text box in treegrid's toolbar by adding search item to the [`toolbar`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.TreeGrid.TreeGrid.html#Syncfusion_EJ2_TreeGrid_TreeGrid_Toolbar).
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -23,25 +21,10 @@ You can search records in a TreeGrid, by using the **search** method with search
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/tree-grid/searching/default-searching/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="DefaultSearching.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/tree-grid/searching/default-searching/defaultSearching.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
 
 ## Initial search
 
-To apply search at initial rendering, set the fields, operator, key, and ignoreCase in the [`e-treegrid-searchSettings`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridSearchSettings.html) tag helper.
-
-{% if page.publishingplatform == "aspnet-core" %}
+To apply search at initial rendering, set the fields, operator, key, and ignoreCase in the [`e-treegrid-searchSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.TreeGrid.TreeGridSearchSettings.html) tag helper.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -52,21 +35,8 @@ To apply search at initial rendering, set the fields, operator, key, and ignoreC
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
 
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/tree-grid/searching/initial-search/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Initialsearch.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/tree-grid/searching/initial-search/initialsearch.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
-
-N> By default, treegrid searches all the bound column values. To customize this behavior define the [`fields`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGridSearchSettings.html#Syncfusion_EJ2_TreeGrid_TreeGridSearchSettings_Fields) property in [`e-treegrid-searchSettings`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridSearchSettings.html) tag helper.
+N> By default, treegrid searches all the bound column values. To customize this behavior define the [`fields`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.TreeGrid.TreeGridSearchSettings.html#Syncfusion_EJ2_TreeGrid_TreeGridSearchSettings_Fields) property in [`e-treegrid-searchSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.TreeGrid.TreeGridSearchSettings.html) tag helper.
 
 ## Search operators
 
@@ -88,8 +58,6 @@ N> By default, the [`operator`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syn
 
 To search treegrid records from an external button, invoke the **search** method.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-core/tree-grid/searching/search-external/tagHelper %}
@@ -99,25 +67,10 @@ To search treegrid records from an external button, invoke the **search** method
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/tree-grid/searching/search-external/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="SearchExternal.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/tree-grid/searching/search-external/searchExternal.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
 
 ## Search specific columns
 
-By default, treegrid searches all visible columns. You can search specific columns by defining the specific column's field names in the [`fields`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridSearchSettings~Fields.html) property of [`e-treegrid-searchSettings`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridSearchSettings.html) tag helper.
-
-{% if page.publishingplatform == "aspnet-core" %}
+By default, treegrid searches all visible columns. You can search specific columns by defining the specific column's field names in the [`fields`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.TreeGrid.TreeGridSearchSettings.html#Syncfusion_EJ2_TreeGrid_TreeGridSearchSettings_Fields) property of [`e-treegrid-searchSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.TreeGrid.TreeGridSearchSettings.html) tag helper.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -128,18 +81,5 @@ By default, treegrid searches all visible columns. You can search specific colum
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
 
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/tree-grid/searching/search-columns/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="SearchColumns.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/tree-grid/searching/search-columns/searchColumns.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
-
-N> You can refer to our  [`ASP.NET Core Tree Grid`](https://www.syncfusion.com/aspnet-core-ui-controls/tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our ASP.NET Core Tree Grid example [`ASP.NET Core Tree Grid example`](https://ej2.syncfusion.com/aspnetcore/TreeGrid/Overview#/material) to knows how to present and manipulate data.
+N> You can refer to our  [`ASP.NET Core Tree Grid`](https://www.syncfusion.com/aspnet-core-ui-controls/tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our ASP.NET Core Tree Grid example [`ASP.NET Core Tree Grid example`](https://ej2.syncfusion.com/aspnetcore/treegrid/overview#/fluent2) to knows how to present and manipulate data.
