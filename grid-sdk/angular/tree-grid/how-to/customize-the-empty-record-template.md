@@ -26,4 +26,4 @@ In the following example, an image and text have been rendered as a template to 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/treegrid/refresh-cs18" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/refresh-cs18" %}

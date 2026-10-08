@@ -50,4 +50,4 @@ The following example demonstrates how to enable basic features such as Paging, 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/treegrid/getting-started-cs5" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/getting-started-cs5" %}

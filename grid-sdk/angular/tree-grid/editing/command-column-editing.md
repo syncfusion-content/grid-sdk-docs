@@ -36,7 +36,7 @@ Example: Adding CRUD action buttons using the `commands` column property:
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/treegrid/edit-command-cs1" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/edit-command-cs1" %}
 
 ## Custom command
 
@@ -55,4 +55,4 @@ Example: Adding custom command buttons with behavior to display row details in a
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/treegrid/edit-command-cs2" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/edit-command-cs2" %}

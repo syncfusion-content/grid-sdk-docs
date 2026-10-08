@@ -38,7 +38,7 @@ The following example demonstrates how to specify column types in a TreeGrid usi
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/treegrid/column-type-cs1" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/column-type-cs1" %}
 
 >* If the [type](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column#type) is not defined, then it will be determined from the first record of the [dataSource](https://ej2.syncfusion.com/angular/documentation/api/treegrid#datasource).
 >* If the first record of the [dataSource](https://ej2.syncfusion.com/angular/documentation/api/treegrid#datasource) is null/blank value for a column, then it is necessary to define the [type](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column#type) for that column. This is because the TreeGrid uses the column type to determine which filter dialog to display for that column.
@@ -103,7 +103,7 @@ The column width is specified as an absolute pixel value. For example, a column 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/treegrid/columns-width-cs1" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/columns-width-cs1" %}
 
 ## Column formatting
 
@@ -120,7 +120,7 @@ The [column.format](https://ej2.syncfusion.com/angular/documentation/api/treegri
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/treegrid/column-format-cs1" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/column-format-cs1" %}
 
 >* The TreeGrid uses the [Internalization](https://ej2.syncfusion.com/angular/documentation/common/globalization/internationalization) library to format values based on the specified format and culture.
 >* By default, the [number](https://ej2.syncfusion.com/angular/documentation/common/globalization/internationalization#number-formatting) and [date](https://ej2.syncfusion.com/angular/documentation/common/globalization/internationalization#date-formatting) values are formatted in **en-US** locale. The currency and date can be localized in different locale as explained [here](https://ej2.syncfusion.com/angular/documentation/common/globalization/localization).
@@ -150,7 +150,7 @@ The following example demonstrates the formatting of data for **units** column u
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/treegrid/column-format-cs2" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/column-format-cs2" %}
 
 >To learn more about number formatting, refer to the [number](https://ej2.syncfusion.com/angular/documentation/common/globalization/internationalization#number-formatting) section.
 
@@ -177,7 +177,7 @@ Format | Formatted value
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/treegrid/column-format-cs3" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/column-format-cs3" %}
 
 >To learn more about date formatting, refer to [Date formatting](https://ej2.syncfusion.com/angular/documentation/common/globalization/internationalization#date-formatting). 
 
@@ -196,7 +196,7 @@ In this example, the format property specifies the date format as "**yyyy-MMM-dd
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/treegrid/column-format-cs4" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/column-format-cs4" %}
 
 ### Format template column value 
 
@@ -248,7 +248,7 @@ export class AppComponent implements OnInit {
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/treegrid/column-format-cs5" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/column-format-cs5" %}
 
 > Other Angular pipes, such as **currency, decimal, percent,** etc., can be used to format other types of values in the column template based on requirements.
 
@@ -267,7 +267,7 @@ In the following example, the **numberFormatOptions** object is used as the `for
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/treegrid/column-format-cs6" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/column-format-cs6" %}
 
 >To learn more about custom formatting, refer to [Custom Date formatting](https://ej2.syncfusion.com/angular/documentation/common/internationalization#custom-formats) and [Custom Number formatting](https://ej2.syncfusion.com/angular/documentation/common/internationalization#custom-number-formatting-and-parsing).
 
@@ -291,7 +291,7 @@ The following example demonstrates using the `textAlign` property to align the t
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/treegrid/column-align-cs1" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/column-align-cs1" %}
 
 >* The `textAlign` property changes the alignment for both the column content and header. If the header needs to be aligned differently, the [headerTextAlign](https://ej2.syncfusion.com/documentation/api/treegrid/column#headerTextAlign) property can be used.
 
@@ -310,7 +310,7 @@ To enable the rendering of boolean values as checkboxes, set the `displayAsCheck
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/treegrid/boolean-columns-cs1" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/boolean-columns-cs1" %}
 
 >* The `displayAsCheckBox` property is only applicable to boolean values in TreeGrid columns.
 >* When `displayAsCheckBox` is set to **true**, the boolean values will be rendered as checkboxes in the TreeGrid column, with checked state indicating **true** and unchecked state indicating **false**.
@@ -330,7 +330,7 @@ The following example demonstrates how to prevent a checkbox from being displaye
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/treegrid/blank-row-cs1" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/blank-row-cs1" %}
 
 ## AutoFit columns
 
@@ -355,7 +355,7 @@ To use `autoFitColumns` method, inject **ResizeService** in the provider section
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/treegrid/resize-cs1" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/resize-cs1" %}
 
 > All the columns can be automatically resized by invoking the `autoFitColumns` method without specifying column names.
 
@@ -374,7 +374,7 @@ This feature can be enabled by enabling the [autoFit](https://ej2.syncfusion.com
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/treegrid/autofit-cs1" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/autofit-cs1" %}
 
 > If any one of the column width is undefined, then the particular column will automatically adjust to fill the entire width of the TreeGrid table, even if the `autoFit` property of TreeGrid is enabled.
 
@@ -393,7 +393,7 @@ The following example demonstrates how to auto fit columns when changing column 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/treegrid/autofit-cs2" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/autofit-cs2" %}
 
 ## Locked columns
 
@@ -413,7 +413,7 @@ The following example demonstrates how to use the `lockColumn` property to lock 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/treegrid/lockedcolumn-cs1" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/lockedcolumn-cs1" %}
 
 ## Show or hide columns
 
@@ -434,7 +434,7 @@ In the following example, the **duration** column is defined with `visible` prop
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/treegrid/column-visible-cs1" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/column-visible-cs1" %}
 
 >* Hiding a column using the `visible` property only affects the UI representation of the TreeGrid. The data for the hidden column will still be available in the underlying data source, and can be accessed or modified programmatically.
 >* When a column is hidden, its width is not included in the calculation of the total TreeGrid width.
@@ -459,7 +459,7 @@ The following example demonstrates how to show or hide a column based on the Hea
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/treegrid/column-visible-cs2" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/column-visible-cs2" %}
 
 **Based on field**
 
@@ -476,7 +476,7 @@ The following example demonstrates how to show or hide a column based on the fie
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/treegrid/column-visible-cs3" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/column-visible-cs3" %}
 
 ## Controlling TreeGrid actions
 
@@ -500,7 +500,7 @@ The following example demonstrates how to control TreeGrid actions for specific 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/treegrid/control-actions-cs1" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/control-actions-cs1" %}
 
 ## Customize column styles
 
@@ -571,7 +571,7 @@ The column definitions in the TreeGrid can be updated using the [column](https:/
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/treegrid/columns-cs1" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/columns-cs1" %}
 
 ### Adding/removing columns
 
@@ -590,7 +590,7 @@ The following example demonstrates how to add and remove a column from the TreeG
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/treegrid/columns-cs16" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/columns-cs16" %}
 
 ### How to refresh columns
 
@@ -614,4 +614,4 @@ In this example, there is a TreeGrid that displays data with two columns: **Task
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/treegrid/columns-cs17" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/columns-cs17" %}

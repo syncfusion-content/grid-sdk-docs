@@ -25,7 +25,7 @@ The following example demonstrates the hierarchical selection of checkboxes in t
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/treegrid/checkbox-column-cs1" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/checkbox-column-cs1" %}
 
 >* The `column.showCheckbox` property will be utilized only when the column serves as a tree column cell (i.e., the treeColumnIndex column).
 
@@ -46,7 +46,7 @@ The following example demonstrates programmatic checkbox selection in the TreeGr
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/treegrid/checkbox-column-cs2" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/checkbox-column-cs2" %}
 
 ## Get checked record details
 
@@ -65,7 +65,7 @@ The TreeGrid provides methods to retrieve information about checked records when
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/treegrid/checkbox-column-cs7" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/checkbox-column-cs7" %}
 
 ## Render checkbox in checked state at initial rendering 
 
@@ -82,7 +82,7 @@ The following example demonstrates rendering checkboxes in a checked state at in
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/treegrid/checkbox-column-cs3" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/checkbox-column-cs3" %}
 
 ## Hide checkbox for parent rows 
 
@@ -101,7 +101,7 @@ The following example demonstrates hiding checkboxes for parent rows in the Tree
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/treegrid/checkbox-column-cs4" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/checkbox-column-cs4" %}
 
 **Hide checkbox for child rows
 
@@ -116,7 +116,7 @@ The following example demonstrates hiding checkboxes for child rows in the TreeG
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/treegrid/checkbox-column-cs6" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/checkbox-column-cs6" %}
 
 ## Change row background color on checkbox change event
 
@@ -135,4 +135,4 @@ The following example demonstrates customizing the background color of selected 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/treegrid/checkbox-column-cs5" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/checkbox-column-cs5" %}

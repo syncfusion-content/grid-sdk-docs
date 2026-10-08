@@ -21,7 +21,7 @@ To print the TreeGrid, call the [`print`](https://ej2.syncfusion.com/angular/doc
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/treegrid/edit-toolbar-cs33" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/edit-toolbar-cs33" %}
 
 ## Page setup
 
@@ -45,7 +45,7 @@ To print the TreeGrid with an external button, invoke the [`print`](https://ej2.
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/treegrid/columns-cs27" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/columns-cs27" %}
 
 ## Print the visible page
 
@@ -60,7 +60,7 @@ By default, TreeGrid prints all pages. To print only the current page, set the [
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/treegrid/edit-toolbar-cs34" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/edit-toolbar-cs34" %}
 
 ## Print large numbers of columns
 
@@ -91,7 +91,7 @@ In the below example, we have `Duration` as a hidden column in the treegrid. Whi
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/treegrid/edit-toolbar-cs35" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/edit-toolbar-cs35" %}
 
 ## Printing limitations with large data
 
