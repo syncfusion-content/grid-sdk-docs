@@ -20,6 +20,20 @@ The Blazor Grid offers extensive options to customize cell appearance and functi
 The Find and Highlight feature in the [Blazor Data Grid](Blazor DataGrid Component and Data Table | Syncfusion) enables real-time in-grid text discovery by scanning visible cell content and highlighting every match without filtering or removing non-matching rows. As the user types in the find input, all matching text in the grid is wrapped in a `<mark>` element and styled with a highlight color. A match counter (for example, `2 of 14`) is displayed alongside **Previous** and **Next** navigation buttons so that users can step through each occurrence individually.
  
 The feature is activated by including the `Find` built-in toolbar item and is fully configurable through [GridFindSettings](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridFindSettings.html). It is independent of the grid search and filtering features — rows are never hidden.
+
+**Why Find and Highlight ?**
+
+Reviewing a large grid to find records containing a specific name, reference, or keyword can require manually scanning many rows. Filtering can hide nonmatching rows, making it harder to retain the surrounding data for comparison. Find and Highlight speeds up this review by highlighting matches while keeping nonmatching rows visible, improving review efficiency.
+
+**Resolved pain points**
+
+- Manually scanning rows to locate matching text.
+- Losing sight of nonmatching records when filtering is used.
+- Difficulty tracking and navigating multiple occurrences.
+
+**Use case**
+
+A support agent reviewing a large ticket queue needs to find tickets mentioning a payment issue. Find and Highlight marks matching text, displays the match count, and supports navigation between matches while keeping the visible rows available for context. This streamlines ticket review and helps the agent work more efficiently.
  
 > **Find and Highlight vs. Searching:** The built-in [Search](./searching) toolbar item hides rows that do not match the search term. The **Find** toolbar item, by contrast, highlights matching text across all visible rows while keeping the full dataset intact.
  
