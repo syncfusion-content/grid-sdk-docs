@@ -78,9 +78,27 @@ public class OrderDetails
 
 {% previewsample "https://blazorplayground.syncfusion.com/embed/VXVINMWGKEkClhfx?appbar=false&editor=false&result=true&errorlist=false&theme=bootstrap5" %}
 
-## Enable Undo / Redo
+## Undo / Redo actions in batch edit
 
-The Grid supports Undo / Redo actions in batch editing, allowing changes such as cell edits, row additions, and row deletions to be reverted or reapplied before saving. This feature can be enabled by setting the [EnableUndoRedo](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridEditSettings.html#Syncfusion_Blazor_Grids_GridEditSettings_EnableUndoRedo) property to `true` inside [GridEditSettings](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridEditSettings.html).
+The Data Grid supports Undo / Redo actions in batch editing, allowing changes such as cell edits, row additions, and row deletions to be reverted or reapplied before saving.
+ 
+**Why use Undo / Redo ?**
+
+During batch editing, several changes may remain pending before they are saved. An accidental cell edit, row addition, or deletion can require manual correction or risk losing other valid changes. Undo and Redo allow individual actions to be reversed or reapplied without discarding the remaining batch changes, reducing rework and supporting productivity.
+
+**Resolved pain points**
+
+- Accidental changes can introduce errors across multiple records.
+- Correcting pending changes manually takes time and effort.
+- Canceling the batch to recover can discard valid edits.
+
+**Use case: Order review**
+
+A staff member updates freight values for several orders but accidentally changes the wrong order. Undo restores the previous value without discarding the other pending edits; Redo can reapply the change if needed.
+
+**Enable Undo / Redo**
+
+This feature can be enabled by setting the [EnableUndoRedo](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridEditSettings.html#Syncfusion_Blazor_Grids_GridEditSettings_EnableUndoRedo) property to `true` inside [GridEditSettings](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridEditSettings.html).
 
 Undo and redo operations can be performed using keyboard shortcuts. Press `Ctrl + Z` to undo an action, and `Ctrl + Y` to redo an action.
 
