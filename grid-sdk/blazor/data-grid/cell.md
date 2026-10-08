@@ -15,27 +15,245 @@ The Blazor Grid offers extensive options to customize cell appearance and functi
 
 {% youtube "youtube:https://www.youtube.com/watch?v=6H90a5tz7bE"%}
 
+## Displaying the HTML content
+
+Displaying HTML content in the Blazor Grid is useful when presenting formatted elements such as images, hyperlinks, or tables within a tabular layout. The Blazor DataGrid supports rendering HTML tags in both header and content cells.
+
+By default, HTML content is encoded to prevent security vulnerabilities. To render raw HTML, set the [DisableHtmlEncode](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridColumn.html#Syncfusion_Blazor_Grids_GridColumn_DisableHtmlEncode) property to **false**. This allows HTML tags to be displayed as intended within the cell.
+
+To configure:
+
+- Set `DisableHtmlEncode` to **false** in the column definition.
+- Insert HTML tags such as `<img>`, `<a>`, or `<table>` directly into the cell content.
+- Use a [Blazor Toggle Switch](https://www.syncfusion.com/blazor-components/blazor-toggle-switch-button)  to dynamically control the encoding behavior.
+- Handle the [ValueChange](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Buttons.SfSwitch-1.html#Syncfusion_Blazor_Buttons_SfSwitch_1_ValueChange) event to update the column setting.
+- Call the [Refresh](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.SfGrid-1.html#Syncfusion_Blazor_Grids_SfGrid_1_Refresh) method to apply the changes and re-render the Blazor Data Grid.
+
+{% tabs %}
+{% highlight razor tabtitle="Index.razor" %}
+@using Syncfusion.Blazor.Grids
+@using Syncfusion.Blazor.Buttons
+
+<label> Enable or disable HTML Encode</label>
+<SfSwitch ValueChange="Change" TChecked="bool"></SfSwitch>
+
+<SfGrid @ref="Grid" DataSource="@Orders" Height="315">
+    <GridColumns>
+        <GridColumn Field=@nameof(OrderData.OrderID) HeaderText="Order ID" TextAlign="TextAlign.Right" Width="140"></GridColumn>
+        <GridColumn Field=@nameof(OrderData.CustomerID) HeaderText="<span> Customer ID </span>" DisableHtmlEncode="@IsEncode" Width="120"></GridColumn>
+        <GridColumn Field=@nameof(OrderData.Freight) HeaderText="Freight" Format="C2" Width="100"></GridColumn>
+        <GridColumn Field=@nameof(OrderData.ShipCity) HeaderText="Ship City" Width="100"></GridColumn>
+    </GridColumns>
+</SfGrid>
+
+@code {
+    private SfGrid<OrderData> Grid;
+    public bool IsEncode { get; set; } = true;
+    public List<OrderData> Orders { get; set; }
+
+    protected override void OnInitialized()
+    {
+        Orders = OrderData.GetAllRecords();
+    }
+    private void Change(Syncfusion.Blazor.Buttons.ChangeEventArgs<bool> args)
+    {
+        IsEncode = !args.Checked;
+        Grid.Refresh();
+    }
+
+}
+{% endhighlight %}
+{% highlight c# tabtitle="OrderData.cs" %}
+
+ public class OrderData
+    {
+        public static List<OrderData> Orders = new List<OrderData>();
+        public OrderData()
+        {
+
+        }
+        public OrderData(int? OrderID, string CustomerId, double? Freight, string ShipCity)
+        {
+            this.OrderID = OrderID;
+            this.CustomerID = CustomerId;
+            this.Freight = Freight;
+            this.ShipCity= ShipCity;
+        }
+
+        public static List<OrderData> GetAllRecords()
+        {
+            if (Orders.Count() == 0)
+            {
+                int code = 10;
+                for (int i = 1; i < 2; i++)
+                {
+                    Orders.Add(new OrderData(10248, "<b>VINET</b>",32.38, "Reims"));
+                    Orders.Add(new OrderData(10249, "<b>TOMSP</b>", 11.61, "Münster"));
+                    Orders.Add(new OrderData(10250, "<b>HANAR</b>", 65.83, "Rio de Janeiro"));
+                    Orders.Add(new OrderData(10251, "<b>VICTE</b>", 41.34, "Lyon"));
+                    Orders.Add(new OrderData(10252, "<b>SUPRD</b>", 51.30, "Charleroi"));
+                    Orders.Add(new OrderData(10253, "<b>CHOPS</b>", 58.17, "Bern"));
+                    Orders.Add(new OrderData(10254, "<b>RICSU</b>", 22.98, "Genève"));
+                    Orders.Add(new OrderData(10255, "<b>WELLI</b>", 13.97, "San Cristóbal"));
+                    Orders.Add(new OrderData(10256, "<b>HILAA</b>", 81.91, "Graz"));
+                    code += 5;
+                }
+            }
+            return Orders;
+        }
+
+        public int? OrderID { get; set; }
+        public string CustomerID { get; set; }
+        public double? Freight { get; set; }
+        public string ShipCity { get; set; }
+    }
+    {% endhighlight %}
+{% endtabs %}
+
+{% previewsample "https://blazorplayground.syncfusion.com/embed/LtBAMZDRBetNXSsV?appbar=false&editor=false&result=true&errorlist=false&theme=bootstrap5" %}
+
+> * The [DisableHtmlEncode](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridColumn.html#Syncfusion_Blazor_Grids_GridColumn_DisableHtmlEncode) property disables HTML encoding for the corresponding column in the Blazor DataGrid.
+> * When set to **false**, HTML tags in the column’s data are rendered as HTML.
+> * When set to **true**, HTML tags are encoded and displayed as plain text.
+> * Disabling HTML encoding introduces potential security vulnerabilities. Enable this feature only when using fully trusted and sanitized data sources.
+
+## Autowrap the Blazor Data Grid content
+
+The auto wrap feature in the Blazor DataGrid enables cell content to wrap to the next line when it exceeds the defined column width. Wrapping occurs at whitespace boundaries between words, ensuring readability without horizontal scrolling. To support auto wrap, define an appropriate width for each column. The column width acts as the maximum boundary for wrapping content.
+
+Enable auto wrap by setting the [AllowTextWrap](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.SfGrid-1.html#Syncfusion_Blazor_Grids_SfGrid_1_AllowTextWrap) property to **true**. Configure the wrapping behavior using the [TextWrapSettings.WrapMode](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridTextWrapSettings.html#Syncfusion_Blazor_Grids_GridTextWrapSettings_WrapMode) property.
+
+Set the **WrapMode** property in `TextWrapSettings` to one of these values:
+
+* **Both** - Wraps text in both header and content cells. This is the default value.
+* **Header** - Wraps text only in header cells.
+* **Content** - Wraps text only in content cells.
+
+> * If a column width is not specified, auto wrap adjusts based on the overall Blazor Grid width.
+> * Header text without whitespace may not wrap.
+> * HTML content interferes with wrapping behavior. Use [HeaderTemplate](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridEditSettings.html#Syncfusion_Blazor_Grids_GridEditSettings_HeaderTemplate) and [Template](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridEditSettings.html#Syncfusion_Blazor_Grids_GridEditSettings_Template) properties to customize layout and ensure proper wrapping.
+
+{% tabs %}
+{% highlight razor tabtitle="Index.razor" %}
+@using Syncfusion.Blazor.Grids
+@using Syncfusion.Blazor.DropDowns
+
+<label>Change the wrapmode of auto wrap feature:</label>
+<SfDropDownList TValue="WrapMode" TItem="DropDownOrder" @bind-Value="@WrapModeValue" DataSource="@DropDownValue" Width="100px">
+    <DropDownListFieldSettings Text="Text" Value="Value"></DropDownListFieldSettings>
+    <DropDownListEvents ValueChange="OnValueChange" TValue="WrapMode" TItem="DropDownOrder"></DropDownListEvents>
+</SfDropDownList>
+
+<SfGrid @ref="Grid" DataSource="@Orders" GridLines="GridLine.Default" AllowTextWrap="true" Height="315">
+    <GridTextWrapSettings WrapMode="@WrapModeValue"></GridTextWrapSettings>
+    <GridColumns>
+        <GridColumn Field=@nameof(OrderData.Name) HeaderText="Name of the inventor" Width="70"></GridColumn>
+        <GridColumn Field=@nameof(OrderData.PatentFamilies) HeaderText="No of patentfamilies" Width="80"></GridColumn>
+        <GridColumn Field=@nameof(OrderData.Country) HeaderText="Country" Width="100"></GridColumn>
+        <GridColumn Field=@nameof(OrderData.Active) HeaderText="Active" Width="100"></GridColumn>
+        <GridColumn Field=@nameof(OrderData.MainFields) HeaderText="Main fields of Invention" Width="120"></GridColumn>
+    </GridColumns>
+</SfGrid>
+
+@code {
+    private SfGrid<OrderData> Grid;
+    public List<OrderData> Orders { get; set; }
+    public WrapMode WrapModeValue { get; set; } = WrapMode.Content;
+    protected override void OnInitialized()
+    {
+        Orders = OrderData.GetAllRecords();
+    }
+    public class DropDownOrder
+    {
+        public string Text { get; set; }
+        public WrapMode Value { get; set; }
+    }
+    List<DropDownOrder> DropDownValue = new List<DropDownOrder>
+    {
+        new DropDownOrder() { Text = "Both", Value = WrapMode.Both },
+        new DropDownOrder() { Text = "Content", Value = WrapMode.Content },
+        new DropDownOrder() { Text = "Header", Value = WrapMode.Header }
+    };
+    public void OnValueChange(ChangeEventArgs<WrapMode, DropDownOrder> Args)
+    {
+        WrapModeValue = Args.Value;
+        Grid.Refresh();
+    }
+}
+{% endhighlight %}
+{% highlight c# tabtitle="OrderData.cs" %}
+public class OrderData
+    {
+        public static List<OrderData> Orders = new List<OrderData>();
+        public OrderData()
+        {
+
+        }
+        public OrderData(string Name, int? PatentFamilies,string NumberofINPADOCpatents, string Country, string MainFields, string active)
+        {
+            this.Name = Name;
+            this.PatentFamilies = PatentFamilies;
+            this.NumberofINPADOCpatents = NumberofINPADOCpatents;
+            this.Country = Country;
+            this.MainFields = MainFields;
+            this.Active = active;
+        }
+
+        public static List<OrderData> GetAllRecords()
+        {
+            if (Orders.Count() == 0)
+            {
+                int code = 10;
+                for (int i = 1; i < 2; i++)
+                {
+                    Orders.Add(new OrderData("Kia Silverb", 4737, "9839", "Australia", "Printing, Digital paper, Internet, Electronics,Lab-on-a-chip, MEMS, Mechanical, VLSI", "1994-2016"));
+                    Orders.Add(new OrderData("Shunpei Yamazaki", 4677, "10000+", "Japan", "Various", "1976-2016"));
+                    Orders.Add(new OrderData("Lowell L. Wood, Jr.",13197, "1332", "Canada", "Printing, Digital paper, Internet, Electronics, CGI, VLSI", "1977-2016"));
+                    Orders.Add(new OrderData("Paul Lap", 1255, "3099", "India", "Automotive, Stainless steel products", "2000-2016"));
+                    Orders.Add(new OrderData("Gurtej Sandhu", 1240, "2038", "USA", "Gaming machines", "1991-2016"));
+                    Orders.Add(new OrderData("Shunpei Yamazaki", 1240, "4126", "Canada", "Printing, Digital paper, Internet, Electronics, CGI, VLSI", "2000-2016"));
+                    Orders.Add(new OrderData("Paul Lap", 1093, "3360", "USA", "Automotive, Stainless steel products", "1977 - 2016"));
+                    Orders.Add(new OrderData("Gurtej Sandhu", 993, "1398", "Japan", "Various", "1976-2016"));
+                    Orders.Add(new OrderData("Kia Silverb", 949,"NA", "India", "Printing, Digital paper, Internet, Electronics, CGI, VLSI", "1994-2016"));                  
+                    code += 5;
+                }
+            }
+            return Orders;
+        }
+        public string Name { get; set; }
+        public int? PatentFamilies { get; set; }
+        public string NumberofINPADOCpatents { get; set; }
+        public string Country { get; set; }
+        public string MainFields { get; set; }
+        public string Active { get; set; }
+    }
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "https://blazorplayground.syncfusion.com/embed/hXBgiiNgrTpwZLYn?appbar=false&editor=false&result=true&errorlist=false&theme=bootstrap5" %}
+
+
 ## Find and highlight
  
-The Find and Highlight feature in the [Blazor Data Grid](Blazor DataGrid Component and Data Table | Syncfusion) enables real-time in-grid text discovery by scanning visible cell content and highlighting every match without filtering or removing non-matching rows. As the user types in the find input, all matching text in the grid is wrapped in a `<mark>` element and styled with a highlight color. A match counter (for example, `2 of 14`) is displayed alongside **Previous** and **Next** navigation buttons so that users can step through each occurrence individually.
- 
-The feature is activated by including the `Find` built-in toolbar item and is fully configurable through [GridFindSettings](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridFindSettings.html). It is independent of the grid search and filtering features — rows are never hidden.
+The Find and Highlight feature in the Blazor Data Grid enables real-time text discovery in the Data Grid by scanning visible cell content and highlighting every match without filtering or removing non-matching rows. As text is entered in the find input, all matching text in the Data Grid is wrapped in a `<mark>` element and styled with a highlight color. A match counter (for example, `2 of 14`) is displayed alongside **Previous** and **Next** navigation buttons so that each occurrence can be stepped through individually.
 
-**Why Find and Highlight ?**
+The feature is activated by including the `Find` built-in toolbar item and is fully configurable through [GridFindSettings](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridFindSettings.html). Find and Highlight is independent of the Data Grid search and filtering features — rows are never hidden.
 
-Reviewing a large grid to find records containing a specific name, reference, or keyword can require manually scanning many rows. Filtering can hide nonmatching rows, making it harder to retain the surrounding data for comparison. Find and Highlight speeds up this review by highlighting matches while keeping nonmatching rows visible, improving review efficiency.
+**Why Find and Highlight?**
+
+Reviewing a large Data Grid to find records containing a specific name, reference, or keyword requires manually scanning many rows. Filtering can hide non-matching rows, making it harder to retain the surrounding data for comparison. Find and Highlight speeds up the review by highlighting matches while keeping non-matching rows visible, improving review efficiency.
 
 **Resolved pain points**
 
 - Manually scanning rows to locate matching text.
-- Losing sight of nonmatching records when filtering is used.
+- Losing visibility into non-matching records when filtering is used.
 - Difficulty tracking and navigating multiple occurrences.
 
 **Use case**
 
-A support agent reviewing a large ticket queue needs to find tickets mentioning a payment issue. Find and Highlight marks matching text, displays the match count, and supports navigation between matches while keeping the visible rows available for context. This streamlines ticket review and helps the agent work more efficiently.
+A support agent reviewing a large ticket queue needs to find tickets mentioning a payment issue. The feature marks matching text, displays the match count, and supports navigation between matches while keeping the visible rows available for context. Find and Highlight streamlines ticket review and helps the agent work more efficiently.
  
-> **Find and Highlight vs. Searching:** The built-in [Search](./searching) toolbar item hides rows that do not match the search term. The **Find** toolbar item, by contrast, highlights matching text across all visible rows while keeping the full dataset intact.
+> **Find and Highlight vs. Searching:** The built-in [Search](./searching) toolbar item hides rows that do not match the search term. The **Find** toolbar item, by contrast, highlights matching text across all visible rows while keeping all rows intact.
  
 **Key capabilities:**
  
@@ -48,18 +266,20 @@ A support agent reviewing a large ticket queue needs to find tickets mentioning 
 | Column-level opt-out | Set [AllowSearchHighlight](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridColumn.html#Syncfusion_Blazor_Grids_GridColumn_AllowSearchHighlight) to `false` on a column to exclude it from scanning and highlighting. |
 | Custom highlight style | Override the highlight appearance using [GridFindSettings.HighlightCssClass](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridFindSettings.html#Syncfusion_Blazor_Grids_GridFindSettings_HighlightCssClass). |
 | Programmatic control | Use the [FindHighlightAsync](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.SfGrid-1.html#Syncfusion_Blazor_Grids_SfGrid_1_FindHighlightAsync_System_String_), [ResetFindAsync](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.SfGrid-1.html#Syncfusion_Blazor_Grids_SfGrid_1_ResetFindAsync), [FindNextHighlightAsync](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.SfGrid-1.html#Syncfusion_Blazor_Grids_SfGrid_1_FindNextHighlightAsync), [FindPreviousHighlightAsync](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.SfGrid-1.html#Syncfusion_Blazor_Grids_SfGrid_1_FindPreviousHighlightAsync), and [FindGoToAsync](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.SfGrid-1.html#Syncfusion_Blazor_Grids_SfGrid_1_FindGoToAsync_System_Int32_) API methods to drive find and highlight programmatically. |
-| Paging support | Highlighting is automatically reapplied when the user navigates to a different page. |
+| Paging support | Highlighting is automatically reapplied during page navigation. |
+
+For configuration options, see [Configure Find and Highlight behavior using GridFindSettings](#configure-find-and-highlight-behavior-using-gridfindsettings), [Exclude a column from Find and Highlight](#exclude-a-column-from-find-and-highlight), and [Enable Find and Highlight using API methods](#enable-find-and-highlight-using-api-methods).
 
 ### Enable Find and Highlight using toolbar
  
-The simplest way to activate the Find and Highlight feature is to add the `"Find"` string to the [Toolbar](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.SfGrid-1.html#Syncfusion_Blazor_Grids_SfGrid_1_Toolbar) property. This renders the find input box along with the **Previous**, **Next** icons, and match counter in the grid toolbar. No additional configuration is required for basic usage.
+The simplest way to activate the Find and Highlight feature is to add the `"Find"` string to the [Toolbar](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.SfGrid-1.html#Syncfusion_Blazor_Grids_SfGrid_1_Toolbar) property. This renders the find input box along with the **Previous**, **Next** icons, and match counter in the Data Grid toolbar. No additional configuration is required for basic usage.
 
 {% tabs %}
 {% highlight razor tabtitle="Index.razor" %}
 
 @using Syncfusion.Blazor.Grids
 
-<SfGrid @ref="Grid" DataSource="@GridData" AllowSorting="true" Height="500" AllowTextWrap="true" AllowReordering="true" Toolbar=@(new List<string> {"Find"})>
+<SfGrid @ref="Grid" DataSource="@GridData" AllowSorting="true" Height="500" AllowTextWrap="true" AllowReordering="true" Toolbar="@(new List<string>() { "Find" })">
     <GridColumns>
         <GridColumn Field=@nameof(SupportTicket.TicketId) HeaderText="Ticket ID" Width="130" IsPrimaryKey="true"> </GridColumn>
         <GridColumn Field=@nameof(SupportTicket.Subject) HeaderText="Subject" Width="250"> </GridColumn>
@@ -76,8 +296,6 @@ The simplest way to activate the Find and Highlight feature is to add the `"Find
 @code 
 {
     private SfGrid<SupportTicket> Grid { get; set; }
-    private string searchText {get;set;}
-    private int matchNumber { get; set; }
     public List<SupportTicket> GridData { get; set; } = new();
 
     protected override void OnInitialized()
@@ -276,16 +494,16 @@ The simplest way to activate the Find and Highlight feature is to add the `"Find
 {% endtabs %}
 
 {% previewsample "https://blazorplayground.syncfusion.com/embed/LNhHCNZMhnevzCwi?appbar=false&editor=false&result=true&errorlist=false&theme=fluent2" %}
- 
+
 ### Configure Find and Highlight behavior using GridFindSettings
  
-Use the [GridFindSettings](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridFindSettings.html) component inside `SfGrid` to fine-tune the behavior and appearance of the Find and Highlight feature. The following properties are available:
+Use the [GridFindSettings](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridFindSettings.html) component inside `SfGrid` to customize the behavior and appearance of the Find and Highlight feature. The following properties are available:
  
 | Property | Type | Default | Description |
 |---|---|---|---|
-| [PlaceholderText](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridFindSettings.html#Syncfusion_Blazor_Grids_GridFindSettings_PlaceholderText) | `string` | `"Find"` | Custom placeholder text displayed in the find input field when it is empty. |
-| [HighlightCssClass](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridFindSettings.html#Syncfusion_Blazor_Grids_GridFindSettings_HighlightCssClass) | `string` | `"e-find-highlight"` | CSS class applied to the `<mark>` element that wraps each matched text. Override this to change highlight color or style. |
-| [CaseSensitive](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridFindSettings.html#Syncfusion_Blazor_Grids_GridFindSettings_CaseSensitive) | `bool` | `false` | When `true`, only text with identical letter casing is matched. When `false`, `"John"`, `"john"`, and `"JOHN"` all match the search term `"john"`. |
+| [PlaceholderText](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridFindSettings.html#Syncfusion_Blazor_Grids_GridFindSettings_PlaceholderText) | `string` | `"Find"` | Custom placeholder text displayed in the find input field when the input is empty. |
+| [HighlightCssClass](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridFindSettings.html#Syncfusion_Blazor_Grids_GridFindSettings_HighlightCssClass) | `string` | `"e-find-highlight"` | CSS class applied to the `<mark>` element that wraps each matched text. Override `HighlightCssClass` to change the highlight color or style. |
+| [CaseSensitive](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridFindSettings.html#Syncfusion_Blazor_Grids_GridFindSettings_CaseSensitive) | `bool` | `false` | When `true`, only text with identical letter casing is matched. When `false`, matches ignore letter case, so `"John"`, `"john"`, and `"JOHN"` all match the search term `"john"`. |
  
 The following example enables case-sensitive matching, sets a custom placeholder, and applies a custom highlight style:
  
@@ -321,8 +539,6 @@ The following example enables case-sensitive matching, sets a custom placeholder
 @code 
 {
     private SfGrid<SupportTicket> Grid { get; set; }
-    private string searchText {get;set;}
-    private int matchNumber { get; set; }
     public List<SupportTicket> GridData { get; set; } = new();
 
     protected override void OnInitialized()
@@ -517,19 +733,19 @@ public class SupportTicket
 {% endhighlight %}
 {% endtabs %}
  
- {% previewsample "https://blazorplayground.syncfusion.com/embed/LtBxMZNshbelDxOY?appbar=false&editor=false&result=true&errorlist=false&theme=fluent2" %}
+{% previewsample "https://blazorplayground.syncfusion.com/embed/LtBxMZNshbelDxOY?appbar=false&editor=false&result=true&errorlist=false&theme=fluent2" %}
  
 ### Exclude a column from Find and Highlight
 
-By default, every data column participates in Find and Highlight scanning. To exclude a specific column — for example, a column containing IDs, internal codes, or sensitive data — set its [AllowSearchHighlight](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridColumn.html#Syncfusion_Blazor_Grids_GridColumn_AllowSearchHighlight) property to `false`.
+By default, every column participates in Find and Highlight scanning. To exclude a specific column — for example, a column containing IDs, internal codes, or sensitive data — set the [AllowSearchHighlight](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridColumn.html#Syncfusion_Blazor_Grids_GridColumn_AllowSearchHighlight) property to `false`.
  
 When a column is excluded:
 - Its cell content is not scanned for matches.
 - No highlight is applied to cells in that column.
-- Its cells are not counted in the total match count.
+- Cells in that column are not counted in the total match count.
 - **Previous** / **Next** navigation skips that column entirely.
  
-> `AllowSearchHighlight` is independent of [AllowSearching](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridColumn.html#Syncfusion_Blazor_Grids_GridColumn_AllowSearching). `AllowSearching` controls whether the column participates in the toolbar **Search** operation (which filters rows), whereas `AllowSearchHighlight` controls whether the column participates in the **Find** toolbar operation (which highlights without filtering).
+> `AllowSearchHighlight` is independent of [AllowSearching](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridColumn.html#Syncfusion_Blazor_Grids_GridColumn_AllowSearching). `AllowSearching` controls whether the column participates in the toolbar **Search** operation (which filters rows), and `AllowSearchHighlight` controls whether the column participates in the **Find** toolbar operation (which highlights without filtering).
  
 {% tabs %}
 {% highlight razor tabtitle="Index.razor" %}
@@ -747,24 +963,22 @@ public class SupportTicket
 
 {% previewsample "https://blazorplayground.syncfusion.com/embed/LjrnMXDMgLqjAsvP?appbar=false&editor=false&result=true&errorlist=false&theme=fluent2" %}
  
-> In this example, the **CustomerName**  and **Priority** column is excluded from Find and Highlight. Entering a text that appears in that column will not produce a match or a highlight.
+> In this example, the **CustomerName** and **Priority** columns are excluded from Find and Highlight. Entering a text that appears in those columns will not produce a match or a highlight.
  
 ### Enable Find and Highlight using API methods
 
-The Find and Highlight feature can be controlled entirely from code without relying on the toolbar UI. This is useful for building custom find panels, integrating keyboard shortcuts, or triggering highlighting from business logic.
+The Find and Highlight feature can be controlled entirely from the code-behind without relying on the toolbar UI. Use the API methods to build custom find panels, integrate keyboard shortcuts, or trigger highlighting from business logic.
  
 The following methods are available on the grid reference:
  
-| Method | Signature | Description |
-|---|---|---|
-| [FindHighlightAsync](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.SfGrid-1.html#Syncfusion_Blazor_Grids_SfGrid_1_FindHighlightAsync_System_String_) | `Task FindHighlightAsync(string findKey)` | Highlights all cells that contain `findKey`. Pass an empty string to clear all highlights. |
-| [ResetFindAsync](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.SfGrid-1.html#Syncfusion_Blazor_Grids_SfGrid_1_ResetFindAsync) | `Task ResetFindAsync()` | Clears all highlights and resets the match counter. |
-| [FindNextHighlightAsync](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.SfGrid-1.html#Syncfusion_Blazor_Grids_SfGrid_1_FindNextHighlightAsync) | `Task FindNextHighlightAsync()` | Moves the active match to the next match. Wraps to the first match after the last. |
-| [FindPreviousHighlightAsync](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.SfGrid-1.html#Syncfusion_Blazor_Grids_SfGrid_1_FindPreviousHighlightAsync) | `Task FindPreviousHighlightAsync()` | Moves the active match to the previous match. Wraps to the last match before the first. |
-| [FindGoToAsync](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.SfGrid-1.html#Syncfusion_Blazor_Grids_SfGrid_1_FindGoToAsync_System_Int32_) | `Task FindGoToAsync(int matchNumber)` | Jumps directly to a match by its 1-based index. Out-of-range values are clamped to the nearest valid match. |
- 
-> The `Find` toolbar item must be present in the [Toolbar](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.SfGrid-1.html#Syncfusion_Blazor_Grids_SfGrid_1_Toolbar) configuration for these methods to function.
- 
+| Method | Description |
+|---|---|
+| [FindHighlightAsync](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.SfGrid-1.html#Syncfusion_Blazor_Grids_SfGrid_1_FindHighlightAsync_System_String_) | Highlights all cells that contain the supplied search key. Pass an empty string to clear existing highlights. |
+| [ResetFindAsync](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.SfGrid-1.html#Syncfusion_Blazor_Grids_SfGrid_1_ResetFindAsync) | Clears all highlights and resets the match counter to 0. |
+| [FindNextHighlightAsync](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.SfGrid-1.html#Syncfusion_Blazor_Grids_SfGrid_1_FindNextHighlightAsync) | Moves the active match to the next match. Wraps to the first match after the last. |
+| [FindPreviousHighlightAsync](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.SfGrid-1.html#Syncfusion_Blazor_Grids_SfGrid_1_FindPreviousHighlightAsync) | Moves the active match to the previous match. Wraps to the last match before the first. |
+| [FindGoToAsync](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.SfGrid-1.html#Syncfusion_Blazor_Grids_SfGrid_1_FindGoToAsync_System_Int32_) | Jumps directly to a match by its 1-based index. Out-of-range values are clamped to the first or last match. For example, calling `FindGoToAsync(0)` or `FindGoToAsync(-1)` selects the first match, and calling `FindGoToAsync(9999)` selects the last match when the total count is lower. |
+
 The following example demonstrates driving Find and Highlight programmatically using external buttons:
  
 {% tabs %}
@@ -782,7 +996,7 @@ The following example demonstrates driving Find and Highlight programmatically u
 <br />
 <br />
 <label>Go to match: </label>
-<SfNumericTextBox TValue="int" FloatLabelType="FloatLabelType.Always" @bind-Value="@matchNumber" Width="250px" Min="1" CssClass="e-outline e-small e-searchbox">
+<SfNumericTextBox TValue="int" FloatLabelType="FloatLabelType.Always" @bind-Value="@matchNumber" Width="250px" Min="1" Max="100" CssClass="e-outline e-small e-searchbox">
 </SfNumericTextBox>
 <SfButton Content="Go To" OnClick="GoToMatch"></SfButton>
 <br />
@@ -1039,229 +1253,12 @@ The Find and Highlight toolbar supports the following keyboard interactions when
 | `Shift+Enter` | Moves to the previous match. |
 | `Escape` | Closes the find toolbar and clears all highlights. |
  
-These shortcuts mirror standard find behavior in browsers and desktop applications, reducing the learning curve for end users.
+These shortcuts match standard find behavior in browsers and desktop applications.
 
 ### Limitations
 
--  Cells rendered through a [column Template](./column-template.md), [edit template](./template-editing.md), or [command column](./command-column-editing.md) are **not** scanned, highlighted, or counted.
--  Text currently being typed into an Add/Edit form editor is **not** searched or highlighted. The feature operates on committed, display-time cell values only.
-
-## Displaying the HTML content
-
-Displaying HTML content in the Blazor Grid is useful when presenting formatted elements such as images, hyperlinks, or tables within a tabular layout. The Blazor DataGrid supports rendering HTML tags in both header and content cells.
-
-By default, HTML content is encoded to prevent security vulnerabilities. To render raw HTML, set the [DisableHtmlEncode](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridColumn.html#Syncfusion_Blazor_Grids_GridColumn_DisableHtmlEncode) property to **false**. This allows HTML tags to be displayed as intended within the cell.
-
-To configure:
-
-- Set `DisableHtmlEncode` to **false** in the column definition.
-- Insert HTML tags such as `<img>`, `<a>`, or `<table>` directly into the cell content.
-- Use a [Blazor Toggle Switch](https://www.syncfusion.com/blazor-components/blazor-toggle-switch-button)  to dynamically control the encoding behavior.
-- Handle the [ValueChange](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Buttons.SfSwitch-1.html#Syncfusion_Blazor_Buttons_SfSwitch_1_ValueChange) event to update the column setting.
-- Call the [Refresh](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.SfGrid-1.html#Syncfusion_Blazor_Grids_SfGrid_1_Refresh) method to apply the changes and re-render the Blazor Data Grid.
-
-{% tabs %}
-{% highlight razor tabtitle="Index.razor" %}
-@using Syncfusion.Blazor.Grids
-@using Syncfusion.Blazor.Buttons
-
-<label> Enable or disable HTML Encode</label>
-<SfSwitch ValueChange="Change" TChecked="bool"></SfSwitch>
-
-<SfGrid @ref="Grid" DataSource="@Orders" Height="315">
-    <GridColumns>
-        <GridColumn Field=@nameof(OrderData.OrderID) HeaderText="Order ID" TextAlign="TextAlign.Right" Width="140"></GridColumn>
-        <GridColumn Field=@nameof(OrderData.CustomerID) HeaderText="<span> Customer ID </span>" DisableHtmlEncode="@IsEncode" Width="120"></GridColumn>
-        <GridColumn Field=@nameof(OrderData.Freight) HeaderText="Freight" Format="C2" Width="100"></GridColumn>
-        <GridColumn Field=@nameof(OrderData.ShipCity) HeaderText="Ship City" Width="100"></GridColumn>
-    </GridColumns>
-</SfGrid>
-
-@code {
-    private SfGrid<OrderData> Grid;
-    public bool IsEncode { get; set; } = true;
-    public List<OrderData> Orders { get; set; }
-
-    protected override void OnInitialized()
-    {
-        Orders = OrderData.GetAllRecords();
-    }
-    private void Change(Syncfusion.Blazor.Buttons.ChangeEventArgs<bool> args)
-    {
-        IsEncode = !args.Checked;
-        Grid.Refresh();
-    }
-
-}
-{% endhighlight %}
-{% highlight c# tabtitle="OrderData.cs" %}
-
- public class OrderData
-    {
-        public static List<OrderData> Orders = new List<OrderData>();
-        public OrderData()
-        {
-
-        }
-        public OrderData(int? OrderID, string CustomerId, double? Freight, string ShipCity)
-        {
-            this.OrderID = OrderID;
-            this.CustomerID = CustomerId;
-            this.Freight = Freight;
-            this.ShipCity= ShipCity;
-        }
-
-        public static List<OrderData> GetAllRecords()
-        {
-            if (Orders.Count() == 0)
-            {
-                int code = 10;
-                for (int i = 1; i < 2; i++)
-                {
-                    Orders.Add(new OrderData(10248, "<b>VINET</b>",32.38, "Reims"));
-                    Orders.Add(new OrderData(10249, "<b>TOMSP</b>", 11.61, "Münster"));
-                    Orders.Add(new OrderData(10250, "<b>HANAR</b>", 65.83, "Rio de Janeiro"));
-                    Orders.Add(new OrderData(10251, "<b>VICTE</b>", 41.34, "Lyon"));
-                    Orders.Add(new OrderData(10252, "<b>SUPRD</b>", 51.30, "Charleroi"));
-                    Orders.Add(new OrderData(10253, "<b>CHOPS</b>", 58.17, "Bern"));
-                    Orders.Add(new OrderData(10254, "<b>RICSU</b>", 22.98, "Genève"));
-                    Orders.Add(new OrderData(10255, "<b>WELLI</b>", 13.97, "San Cristóbal"));
-                    Orders.Add(new OrderData(10256, "<b>HILAA</b>", 81.91, "Graz"));
-                    code += 5;
-                }
-            }
-            return Orders;
-        }
-
-        public int? OrderID { get; set; }
-        public string CustomerID { get; set; }
-        public double? Freight { get; set; }
-        public string ShipCity { get; set; }
-    }
-    {% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://blazorplayground.syncfusion.com/embed/LtBAMZDRBetNXSsV?appbar=false&editor=false&result=true&errorlist=false&theme=bootstrap5" %}
-
-> * The [DisableHtmlEncode](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridColumn.html#Syncfusion_Blazor_Grids_GridColumn_DisableHtmlEncode) property disables HTML encoding for the corresponding column in the Blazor DataGrid.
-> * When set to **false**, HTML tags in the column’s data are rendered as HTML.
-> * When set to **true**, HTML tags are encoded and displayed as plain text.
-> * Disabling HTML encoding introduces potential security vulnerabilities. Enable this feature only when using fully trusted and sanitized data sources.
-
-## Autowrap the Blazor Data Grid content
-
-The auto wrap feature in the Blazor DataGrid enables cell content to wrap to the next line when it exceeds the defined column width. Wrapping occurs at whitespace boundaries between words, ensuring readability without horizontal scrolling. To support auto wrap, define an appropriate width for each column. The column width acts as the maximum boundary for wrapping content.
-
-Enable auto wrap by setting the [AllowTextWrap](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.SfGrid-1.html#Syncfusion_Blazor_Grids_SfGrid_1_AllowTextWrap) property to **true**. Configure the wrapping behavior using the [TextWrapSettings.WrapMode](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridTextWrapSettings.html#Syncfusion_Blazor_Grids_GridTextWrapSettings_WrapMode) property.
-
-Set the **WrapMode** property in `TextWrapSettings` to one of these values:
-
-* **Both** - Wraps text in both header and content cells. This is the default value.
-* **Header** - Wraps text only in header cells.
-* **Content** - Wraps text only in content cells.
-
-> * If a column width is not specified, auto wrap adjusts based on the overall Blazor Grid width.
-> * Header text without whitespace may not wrap.
-> * HTML content interferes with wrapping behavior. Use [HeaderTemplate](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridEditSettings.html#Syncfusion_Blazor_Grids_GridEditSettings_HeaderTemplate) and [Template](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridEditSettings.html#Syncfusion_Blazor_Grids_GridEditSettings_Template) properties to customize layout and ensure proper wrapping.
-
-{% tabs %}
-{% highlight razor tabtitle="Index.razor" %}
-@using Syncfusion.Blazor.Grids
-@using Syncfusion.Blazor.DropDowns
-
-<label>Change the wrapmode of auto wrap feature:</label>
-<SfDropDownList TValue="WrapMode" TItem="DropDownOrder" @bind-Value="@WrapModeValue" DataSource="@DropDownValue" Width="100px">
-    <DropDownListFieldSettings Text="Text" Value="Value"></DropDownListFieldSettings>
-    <DropDownListEvents ValueChange="OnValueChange" TValue="WrapMode" TItem="DropDownOrder"></DropDownListEvents>
-</SfDropDownList>
-
-<SfGrid @ref="Grid" DataSource="@Orders" GridLines="GridLine.Default" AllowTextWrap="true" Height="315">
-    <GridTextWrapSettings WrapMode="@WrapModeValue"></GridTextWrapSettings>
-    <GridColumns>
-        <GridColumn Field=@nameof(OrderData.Name) HeaderText="Name of the inventor" Width="70"></GridColumn>
-        <GridColumn Field=@nameof(OrderData.PatentFamilies) HeaderText="No of patentfamilies" Width="80"></GridColumn>
-        <GridColumn Field=@nameof(OrderData.Country) HeaderText="Country" Width="100"></GridColumn>
-        <GridColumn Field=@nameof(OrderData.Active) HeaderText="Active" Width="100"></GridColumn>
-        <GridColumn Field=@nameof(OrderData.MainFields) HeaderText="Main fields of Invention" Width="120"></GridColumn>
-    </GridColumns>
-</SfGrid>
-
-@code {
-    private SfGrid<OrderData> Grid;
-    public List<OrderData> Orders { get; set; }
-    public WrapMode WrapModeValue { get; set; } = WrapMode.Content;
-    protected override void OnInitialized()
-    {
-        Orders = OrderData.GetAllRecords();
-    }
-    public class DropDownOrder
-    {
-        public string Text { get; set; }
-        public WrapMode Value { get; set; }
-    }
-    List<DropDownOrder> DropDownValue = new List<DropDownOrder>
-    {
-        new DropDownOrder() { Text = "Both", Value = WrapMode.Both },
-        new DropDownOrder() { Text = "Content", Value = WrapMode.Content },
-        new DropDownOrder() { Text = "Header", Value = WrapMode.Header }
-    };
-    public void OnValueChange(ChangeEventArgs<WrapMode, DropDownOrder> Args)
-    {
-        WrapModeValue = Args.Value;
-        Grid.Refresh();
-    }
-}
-{% endhighlight %}
-{% highlight c# tabtitle="OrderData.cs" %}
-public class OrderData
-    {
-        public static List<OrderData> Orders = new List<OrderData>();
-        public OrderData()
-        {
-
-        }
-        public OrderData(string Name, int? PatentFamilies,string NumberofINPADOCpatents, string Country, string MainFields, string active)
-        {
-            this.Name = Name;
-            this.PatentFamilies = PatentFamilies;
-            this.NumberofINPADOCpatents = NumberofINPADOCpatents;
-            this.Country = Country;
-            this.MainFields = MainFields;
-            this.Active = active;
-        }
-
-        public static List<OrderData> GetAllRecords()
-        {
-            if (Orders.Count() == 0)
-            {
-                int code = 10;
-                for (int i = 1; i < 2; i++)
-                {
-                    Orders.Add(new OrderData("Kia Silverb", 4737, "9839", "Australia", "Printing, Digital paper, Internet, Electronics,Lab-on-a-chip, MEMS, Mechanical, VLSI", "1994-2016"));
-                    Orders.Add(new OrderData("Shunpei Yamazaki", 4677, "10000+", "Japan", "Various", "1976-2016"));
-                    Orders.Add(new OrderData("Lowell L. Wood, Jr.",13197, "1332", "Canada", "Printing, Digital paper, Internet, Electronics, CGI, VLSI", "1977-2016"));
-                    Orders.Add(new OrderData("Paul Lap", 1255, "3099", "India", "Automotive, Stainless steel products", "2000-2016"));
-                    Orders.Add(new OrderData("Gurtej Sandhu", 1240, "2038", "USA", "Gaming machines", "1991-2016"));
-                    Orders.Add(new OrderData("Shunpei Yamazaki", 1240, "4126", "Canada", "Printing, Digital paper, Internet, Electronics, CGI, VLSI", "2000-2016"));
-                    Orders.Add(new OrderData("Paul Lap", 1093, "3360", "USA", "Automotive, Stainless steel products", "1977 - 2016"));
-                    Orders.Add(new OrderData("Gurtej Sandhu", 993, "1398", "Japan", "Various", "1976-2016"));
-                    Orders.Add(new OrderData("Kia Silverb", 949,"NA", "India", "Printing, Digital paper, Internet, Electronics, CGI, VLSI", "1994-2016"));                  
-                    code += 5;
-                }
-            }
-            return Orders;
-        }
-        public string Name { get; set; }
-        public int? PatentFamilies { get; set; }
-        public string NumberofINPADOCpatents { get; set; }
-        public string Country { get; set; }
-        public string MainFields { get; set; }
-        public string Active { get; set; }
-    }
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://blazorplayground.syncfusion.com/embed/hXBgiiNgrTpwZLYn?appbar=false&editor=false&result=true&errorlist=false&theme=bootstrap5" %}
+- Cells rendered through a [column Template](./column-template.md), [edit template](./template-editing.md), or [command column](./command-column-editing.md) are not scanned, highlighted, or counted.
+- Text in an active Add or Edit form editor, the toolbar `Search`, filter input, or any in-progress editor on the page is not searched or highlighted. The feature operates only on committed cell values.
 
 ## Customize cell styles
 
