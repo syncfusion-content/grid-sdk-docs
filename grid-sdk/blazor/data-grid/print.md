@@ -324,6 +324,7 @@ The event uses the [PrintingEventArgs](https://help.syncfusion.com/cr/blazor/Syn
 {% tabs %}
 {% highlight razor tabtitle="Index.razor" %}
 @using Syncfusion.Blazor.Grids
+@using System.Linq
 
 <SfGrid DataSource="@GridData" Toolbar="@(new List<string>() { "Print" })" Height="315">
     <GridEvents Printing="Printing" TValue="OrderData"></GridEvents>
@@ -350,6 +351,11 @@ The event uses the [PrintingEventArgs](https://help.syncfusion.com/cr/blazor/Syn
         {
             args.Cancel = true;
         }
+        // Customize the records included in the printed output using PrintDataSource
+        else
+        {
+            args.PrintDataSource = GridData.Where(order => order.OrderID < 10252).ToList();
+        }
 
         return Task.CompletedTask;
     }
@@ -396,7 +402,7 @@ internal sealed class OrderData
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://blazorplayground.syncfusion.com/embed/hthnMDZFHWIVcLQg?appbar=false&editor=false&result=true&errorlist=false&theme=fluent2" %}
+{% previewsample "https://blazorplayground.syncfusion.com/embed/LZrnCNtldTUjTxSE?appbar=false&editor=false&result=true&errorlist=false&theme=fluent2" %}
 
 ### Printed
 
@@ -404,106 +410,15 @@ The `Printed` event is triggered after the print operation has completed. This e
 
 {% tabs %}
 {% highlight razor tabtitle="Index.razor" %}
-@using Syncfusion.Blazor.Grids
-
-@if (showNotification)
-{
-    <div style="text-align:center; color:red">
-        <span>Printing completed</span>
-    </div>
-    <br />
-}
-
-<SfGrid DataSource="@GridData" Toolbar="@(new List<string>() { "Print" })" Height="315">
-    <GridEvents Printed="Printed" TValue="OrderData"></GridEvents>
-    <GridColumns>
-        <GridColumn Field="@nameof(OrderData.OrderID)" HeaderText="Order ID" Width="90" TextAlign="TextAlign.Right"></GridColumn>
-        <GridColumn Field="@nameof(OrderData.CustomerID)" HeaderText="Customer ID" Width="100"></GridColumn>
-        <GridColumn Field="@nameof(OrderData.ShipCity)" HeaderText="Ship City" Width="100"></GridColumn>
-        <GridColumn Field="@nameof(OrderData.ShipName)" HeaderText="Ship Name" Width="120"></GridColumn>
-    </GridColumns>
-</SfGrid>
-
-@code {
-    private List<OrderData> GridData { get; set; } = new List<OrderData>();
-    private bool showNotification { get; set; }
-
-    protected override void OnInitialized()
-    {
-        GridData = OrderData.GetAllRecords();
-    }
-
-    private Task Printed()
-    {
-        showNotification = true;
-        return Task.CompletedTask;
-    }
-}
-
-{% endhighlight %}
-{% highlight c# tabtitle="OrderData.cs" %}
-
-internal sealed class OrderData
-{
-    private static readonly List<OrderData> Data = new();
-
-    public OrderData(int orderID, string customerID, string shipCity, string shipName)
-    {
-        OrderID = orderID;
-        CustomerID = customerID;
-        ShipCity = shipCity;
-        ShipName = shipName;
-    }
-
-    internal static List<OrderData> GetAllRecords()
-    {
-        if (Data.Count == 0)
-        {
-            Data.Add(new OrderData(10248, "VINET", "Reims", "Vins et alcools Cheval"));
-            Data.Add(new OrderData(10249, "TOMSP", "Münster", "Toms Spezialitäten"));
-            Data.Add(new OrderData(10250, "HANAR", "Rio de Janeiro", "Hanari Carnes"));
-            Data.Add(new OrderData(10251, "VICTE", "Lyon", "Victuailles en stock"));
-            Data.Add(new OrderData(10252, "SUPRD", "Charleroi", "Suprêmes délices"));
-            Data.Add(new OrderData(10253, "HANAR", "Lyon", "Hanari Carnes"));
-            Data.Add(new OrderData(10254, "CHOPS", "Rio de Janeiro", "Chop-suey Chinese"));
-            Data.Add(new OrderData(10255, "RICSU", "Münster", "Richter Supermarkt"));
-            Data.Add(new OrderData(10256, "WELLI", "Reims", "Wellington Import"));
-        }
-
-        return Data;
-    }
-
-    public int OrderID { get; set; }
-    public string CustomerID { get; set; }
-    public string ShipCity { get; set; }
-    public string ShipName { get; set; }
-}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://blazorplayground.syncfusion.com/embed/hjBniDDPRiggFiVj?appbar=false&editor=false&result=true&errorlist=false&theme=fluent2" %}
-
-## Show or hide columns using print events
-
-The Blazor Data Grid allows controlling column visibility during printing. Specific columns can be dynamically shown or hidden using the `Printing` and `Printed` events. This capability provides control over which columns appear in the printed output, allowing the printed Data Grid to be tailored to specific needs.
-
-In the `Printing` event, columns can be shown or hidden by setting the column's `Visible` property to `true` or `false`. The event receives a [PrintingEventArgs](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.PrintingEventArgs.html) parameter, which can be used to inspect or modify the print operation.
-
-In the `Printed` event, the column visibility state is reset to the original configuration.
-
-The following code shows a hidden column (CustomerID) and hides a visible column (ShipCity) during printing, then resets the visibility after printing:
-
-{% tabs %}
-{% highlight razor tabtitle="Index.razor" %}
 
 @using Syncfusion.Blazor.Grids
 
 <SfGrid @ref="DefaultGrid" DataSource="@Orders" Toolbar="@(new List<string>() { "Print" })" Height="315">
-    <GridEvents Printing="Printing" Printed="OnPrintCompleted" TValue="OrderData"></GridEvents>
+    <GridEvents Printed="OnPrintCompleted" TValue="OrderData"></GridEvents>
     <GridColumns>
         <GridColumn Field=@nameof(OrderData.OrderID) HeaderText="Order ID" Width="120"></GridColumn>
         <GridColumn Field=@nameof(OrderData.CustomerID) HeaderText="Customer ID" Width="120" Visible="@IsVisible"></GridColumn>
-        <GridColumn Field=@nameof(OrderData.ShipCity) HeaderText="Ship City" Width="130" Visible="@IsUIMode"></GridColumn>
+        <GridColumn Field=@nameof(OrderData.ShipCity) HeaderText="Ship City" Width="130"></GridColumn>
         <GridColumn Field=@nameof(OrderData.Freight) HeaderText="Freight" Width="120"></GridColumn>
     </GridColumns>
 </SfGrid>
@@ -511,23 +426,15 @@ The following code shows a hidden column (CustomerID) and hides a visible column
 @code {
     private SfGrid<OrderData> DefaultGrid;
     private List<OrderData> Orders { get; set; }
-    private bool IsUIMode = true;
-    private bool IsVisible = false;
+    private bool IsVisible = true;
 
     protected override void OnInitialized()
     {
         Orders = OrderData.GetAllRecords();
     }
 
-    private void Printing(PrintingEventArgs args)
-    {
-        IsUIMode = false;
-        IsVisible = true;
-    }
-
     private void OnPrintCompleted()
     {
-        IsUIMode = true;
         IsVisible = false;
     }
 }
