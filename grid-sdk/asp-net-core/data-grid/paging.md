@@ -7,7 +7,7 @@ control: Paging
 documentation: ug
 ---
 
-# Paging in ASP.NET Core Grid component
+# Paging in ASP.NET Core Grid Control
 
 Paging provides an option to display grid data in segmented pages, making it easier to navigate through large datasets. This feature is particularly useful when dealing with extensive data sets. 
 

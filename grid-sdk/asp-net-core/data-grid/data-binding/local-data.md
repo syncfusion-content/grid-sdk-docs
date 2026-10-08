@@ -324,8 +324,6 @@ The following screenshot represents the addition, editing, and deletion operatio
 
 ![Data binding with SignalR ](../images/data-binding/signalRImage.webp)
 
-<!-- > You can find a complete sample for signalR on [GitHub](https://github.com/SyncfusionExamples/Binding-data-with-SignalR-in-ej2-aspcore-grid). -->
-
 ## Binding data from excel file
 
 The Syncfusion ASP.NET Core Grid allows you to import data from Excel files into your web application for display and manipulation within the Grid. This feature streamlines the process of transferring Excel data to a web-based environment. This can be achieved by using [uploader](https://ej2.syncfusion.com/aspnetcore/documentation/uploader/getting-started) [change](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Inputs.Uploader.html#Syncfusion_EJ2_Inputs_Uploader_Change) event.
@@ -645,8 +643,6 @@ The following screenshot represents loading data when the button is clicked and 
 
 ![Binding data and performing CRUD actions via Fetch request](../images/data-binding/requestFetch.webp)
 
-<!-- You can find a complete sample for Fetch request on [GitHub](https://github.com/SyncfusionExamples/Binding-data-and-perform-action-in-ej2-aspnetcore-grid-using-Fetch-request). -->
-
 ### Display the loading indicator with local data
 
 The Syncfusion ASP.NET Core Grid allows you to display a loading indicator while loading local data. This feature is useful when there is a delay in loading data from a local source, and you want to inform the you that the data is being fetched.
@@ -958,8 +954,6 @@ The following screenshot represents loading data when the button is clicked and 
 
 ![Binding data and performing CRUD actions via AJAX request](../images/data-binding/ajaxrequest.gif)
 
-<!-- You can find a complete sample for AJAX request on [GitHub](https://github.com/SyncfusionExamples/Binding-data-and-perform-action-in-ej2-aspnetcore-grid-using-Ajax-request). -->
-
 ### Display the loading indicator using AJAX
 
 The Syncfusion ASP.NET Core Grid allows you to display a loading indicator while loading data using AJAX. This feature is useful when there is a delay in loading data from data , and you want to inform the you that the data is being fetched. This is particularly beneficial when working with large datasets or under conditions of slower internet connections.
@@ -998,7 +992,7 @@ The following example demonstrates how to show and hide the spinner during data 
 
 ## Immutable mode  
 
-Immutable mode in the Syncfusion ASP.NET Core Grid is designed to optimize re-rendering performance by utilizing the object reference and [deep compare](https://dmitripavlutin.com/how-to-compare-objects-in-javascript/#4-deep-equality) concept. This mode ensures that when performing Grid actions, only the modified or newly added rows are re-rendered, preventing unnecessary re-rendering of unchanged rows. 
+Immutable mode in the Syncfusion ASP.NET Core Grid is designed to optimize re-rendering performance by utilizing the object reference and deep compare concept. This mode ensures that when performing Grid actions, only the modified or newly added rows are re-rendered, preventing unnecessary re-rendering of unchanged rows. 
 
 To enable this feature, you need to set the [enableImmutableMode](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_EnableImmutableMode) property as **true**.
 
