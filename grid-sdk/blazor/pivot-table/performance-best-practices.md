@@ -24,16 +24,16 @@ In the bundled package (Syncfusion.Blazor), all components are included, resulti
 Individual NuGet packages contain all required dependencies and resources for each component, including their script and CSS references. Therefore, it's preferable to reference the individual package.
 
 Refer to the below documentation:
-* [Individual NuGet package](https://blazor.syncfusion.com/documentation/pivot-table/getting-started-webapp)
-* [Adding script and CSS](https://blazor.syncfusion.com/documentation/pivot-table/getting-started-webapp)
+* [Individual NuGet package](https://help.syncfusion.com/grid-sdk/blazor/pivot-table/getting-started-webapp#install-the-required-blazor-packages)
+* [Adding script and CSS](https://help.syncfusion.com/grid-sdk/blazor/pivot-table/getting-started-webapp#add-stylesheet-and-script-resources)
 
 ### Virtual scrolling
 
-The virtual scrolling in the pivot table significantly improves performance, especially when handling large datasets, because it only renders the rows and columns related to the current viewport. The remaining data is loaded dynamically as you scroll, either vertically or horizontally. For more information on implementing virtual scrolling in the pivot table, you can refer to the documentation [here](https://blazor.syncfusion.com/documentation/pivot-table/virtual-scrolling).
+The virtual scrolling in the pivot table significantly improves performance, especially when handling large datasets, because it only renders the rows and columns related to the current viewport. The remaining data is loaded dynamically as you scroll, either vertically or horizontally. For more information on implementing virtual scrolling in the pivot table, you can refer to the documentation [here](https://help.syncfusion.com/grid-sdk/blazor/pivot-table/virtual-scrolling).
 
 ### Paging
 
-If your browser's maximum pixel height limits you from using the pivot table with virtual scrolling, we recommend utilizing the paging option instead. Similar to virtual scrolling, the paging option allows you to load a large amount of data, which can be displayed in the pivot table page-by-page. For more information on implementing paging in the pivot table, please refer to the documentation [here](https://blazor.syncfusion.com/documentation/pivot-table/paging).
+If your browser's maximum pixel height limits you from using the pivot table with virtual scrolling, we recommend utilizing the paging option instead. Similar to virtual scrolling, the paging option allows you to load a large amount of data, which can be displayed in the pivot table page-by-page. For more information on implementing paging in the pivot table, please refer to the documentation [here](https://help.syncfusion.com/grid-sdk/blazor/pivot-table/paging).
 
 ### Server-side engine
 
@@ -51,7 +51,7 @@ In case a large amount of aggregated data is sent to the client-side from the we
 
 Additionally, the cache concept is implemented in the server-side engine to hold the pivot engine's instance based on the end-user GUID. This allows for quick retrieval, calculation, and re-sending of modified pivot data to the Pivot Table viewport, based on the UI action performed.
 
-For more information on implementing the server-side engine in the pivot table, please refer to the documentation [here](https://blazor.syncfusion.com/documentation/pivot-table/server-side-pivot-engine).
+For more information on implementing the server-side engine in the pivot table, please refer to the documentation [here](https://help.syncfusion.com/grid-sdk/blazor/pivot-table/server-side-pivot-engine).
 
 ## How can I enhance the performance of the Pivot Table through data operations?
 
@@ -67,13 +67,13 @@ Additionally, it works with the virtual scrolling or paging option enabled as we
 
 N> If your input data has very few repeated records, we would not suggest this option.
 
-For more information on implementing the data compression in the pivot table, you can refer to the documentation [here](https://blazor.syncfusion.com/documentation/pivot-table/virtual-scrolling#data-compression).
+For more information on implementing the data compression in the pivot table, you can refer to the documentation [here](https://help.syncfusion.com/grid-sdk/blazor/pivot-table/data-compression).
 
 ### Defer layout update
 
 The Defer Layout Update feature in the pivot table allows end-users to perform various operations, such as adding, removing, and rearranging fields, filtering, sorting, changing aggregation types, and more, without immediately updating the pivot table. The efficiency of this process lies in allowing end-users to complete their modifications. The final application of these changes occurs when end-users click the **Apply** button in the Field List UI. This action triggers the pivot table to update based on the last modified report. By deferring the layout update until precisely requested, the Blazor Pivot Table remains unchanged initially, ensuring minimal resource utilization and avoiding frequent re-rendering until the end-user explicitly applies the modifications.
 
-For more information on defer layout updates, you can refer to the documentation [here](https://blazor.syncfusion.com/documentation/pivot-table/defer-layout-update).
+For more information on defer layout updates, you can refer to the documentation [here](https://help.syncfusion.com/grid-sdk/blazor/pivot-table/defer-layout-update).
 
 ### Sorting
 
@@ -83,7 +83,7 @@ Once the input raw data is arranged as needed and the pivot table is rendered, i
 
 ### Member filtering
 
-When working with large datasets, it's beneficial to set a display limit for members in the filter dialog UI. This allows the filter dialog to quickly show members up to the specified limit without facing performance issues. If there are more members beyond this limit, a message displaying the count of remaining members will appear at the bottom of the filter dialog UI. End users can then access the remaining members using the search option provided in the filter dialog during runtime. For detailed instructions on implementing the node limit in the filter dialog UI, refer to the documentation linked [here](https://blazor.syncfusion.com/documentation/pivot-table/filtering#performance-tips).
+When working with large datasets, it's beneficial to set a display limit for members in the filter dialog UI. This allows the filter dialog to quickly show members up to the specified limit without facing performance issues. If there are more members beyond this limit, a message displaying the count of remaining members will appear at the bottom of the filter dialog UI. End users can then access the remaining members using the search option provided in the filter dialog during runtime. For detailed instructions on implementing the node limit in the filter dialog UI, refer to the documentation linked [here](https://help.syncfusion.com/grid-sdk/blazor/pivot-table/filtering#performance-tips).
 
 ### Grouping
 
@@ -312,13 +312,13 @@ Here's an example below of configuring grouping in your input raw data and assig
 
 ### Value filtering
 
-The [value filtering](https://blazor.syncfusion.com/documentation/pivot-table/filtering#value-filtering) primarily operates on grand totals, meaning the filtering process considers entire rows and columns to match applied value conditions. For similar results with more flexibility and better performance, consider exploring our label filtering or member filtering options. These alternatives can yield comparable outcomes, particularly when dealing with large datasets. You can find more information on utilizing the [label filtering](https://blazor.syncfusion.com/documentation/pivot-table/filtering#label-filtering) or [member filtering](https://blazor.syncfusion.com/documentation/pivot-table/filtering#member-filtering) options in the documentation section dedicated to these features.
+The [value filtering](https://help.syncfusion.com/grid-sdk/blazor/pivot-table/filtering#value-filtering) primarily operates on grand totals, meaning the filtering process considers entire rows and columns to match applied value conditions. For similar results with more flexibility and better performance, consider exploring our label filtering or member filtering options. These alternatives can yield comparable outcomes, particularly when dealing with large datasets. You can find more information on utilizing the [label filtering](https://help.syncfusion.com/grid-sdk/blazor/pivot-table/filtering#label-filtering) or [member filtering](https://help.syncfusion.com/grid-sdk/blazor/pivot-table/filtering#member-filtering) options in the documentation section dedicated to these features.
 
 ## How do I improve the scrolling performance of the Pivot Table?
 
 ### Virtual scrolling with single page mode
 
-By default, the pivot table with virtual scrolling renders not only the current view page but also the previous and next pages. However, by using single-page mode along with virtual scrolling, only the rows and columns relevant to the current view page are rendered. This optimization significantly enhances the scrolling performance of the pivot table. For more information on implementing this feature, you can refer to the documentation [here](https://blazor.syncfusion.com/documentation/pivot-table/virtual-scrolling#single-page-mode).
+By default, the pivot table with virtual scrolling renders not only the current view page but also the previous and next pages. However, by using single-page mode along with virtual scrolling, only the rows and columns relevant to the current view page are rendered. This optimization significantly enhances the scrolling performance of the pivot table. For more information on implementing this feature, you can refer to the documentation [here](https://help.syncfusion.com/grid-sdk/blazor/pivot-table/virtual-scrolling#virtual-scrolling-with-single-page-mode).
 
 ### Limiting the component size
 
@@ -409,7 +409,7 @@ When a callback method is assigned to the pivot table event, the parent compone
 
 You can prevent this re-rendering of the pivot table component by calling the **PreventRender** method.
 
-In the following example, the [Drill](https://blazor.syncfusion.com/documentation/pivot-table/events#drill) event is bound with a callback method. So, after the drill event is completed, the parent component's **StateHasChanged** method will be invoked.
+In the following example, the [Drill](https://help.syncfusion.com/grid-sdk/blazor/pivot-table/events#drill) event is bound with a callback method. So, after the drill event is completed, the parent component's **StateHasChanged** method will be invoked.
 
 ```cshtml
 @using Syncfusion.Blazor.PivotView
@@ -448,8 +448,8 @@ In the following example, the [Drill](https://blazor.syncfusion.com/documentatio
 ```
 
 N> * The **PreventRender** method internally overrides the component's **ShouldRender** method to prevent rendering.
-N> * For better performance, it is recommended to use the **PreventRender** method for user interactive [events](https://blazor.syncfusion.com/documentation/pivot-table/events) like BeforeColumnsRender, BeforeExport, CellClick, ChartSeriesCreated, Drill, DrillThrough, etc.
-N> * For events without any argument such as [DataBound](https://blazor.syncfusion.com/documentation/pivot-table/events#databound), you can use **PreventRender** method of the pivot table to disable rendering.
+N> * For better performance, it is recommended to use the **PreventRender** method for user interactive [events](https://help.syncfusion.com/grid-sdk/blazor/pivot-table/events) like BeforeColumnsRender, BeforeExport, CellClick, ChartSeriesCreated, Drill, DrillThrough, etc.
+N> * For events without any argument such as [DataBound](https://help.syncfusion.com/grid-sdk/blazor/pivot-table/events#databound), you can use **PreventRender** method of the pivot table to disable rendering.
 
 ## What are the strategic approaches to addressing latency challenges?
 

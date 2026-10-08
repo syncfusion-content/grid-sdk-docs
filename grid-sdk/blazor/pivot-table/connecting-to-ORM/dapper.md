@@ -9,7 +9,7 @@ documentation: ug
 
 # Dapper in Blazor Pivot Table
 
-The [Blazor Pivot Table](https://www.syncfusion.com/blazor-components/blazor-pivottable) can be connected to a Microsoft SQL Server database using the lightweight Dapper micro-ORM. This approach provides a simple way to execute SQL statements while keeping the data access layer minimal and efficient.
+The [Blazor Pivot Table](https://www.syncfusion.com/blazor-components/blazor-pivot-table) can be connected to a Microsoft SQL Server database using the lightweight Dapper micro-ORM. This approach provides a simple way to execute SQL statements while keeping the data access layer minimal and efficient.
 
 **What is Dapper?**
 
@@ -617,7 +617,7 @@ The implementation uses:
 
 ## Complete Sample Repository
 
-A complete sample implementation is available in the [GitHub repository](https://github.com/SyncfusionExamples/syncfusion-blazor-pivot-table-dapper-multi-database-binding-sample/tree/master).
+A complete sample implementation is available in the [GitHub repository](https://github.com/SyncfusionExamples/syncfusion-blazor-pivot-table-dapper/tree/master).
 
 ## Summary
 

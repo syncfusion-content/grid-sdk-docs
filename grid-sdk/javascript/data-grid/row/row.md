@@ -214,6 +214,39 @@ In the below example, we will demonstrate how to dynamically change the height o
 >*  The `rowHeight` property applies the height to all rows in the grid, including the header and footer rows.
 >*	You can also set the height for a specific row using the `rowHeight` property of the corresponding row object in the `rowDataBound` event.
 
+### Customize header and footer row heights
+
+The height of the header and footer rows can be customized to provide additional space for header and footer elements when needed. Use the [headerRowHeight](../../api/grid#headerrowheight) property to set the height of the header row and the [footerRowHeight](../../api/grid#footerrowheight) property to set the height of the footer row.
+
+In the following example, the row height is configured to "100px" using the `rowHeight` property and the header and footer row height is configured to "50px" using the `headerRowHeight` and `footerRowHeight` properties.
+
+{% if page.publishingplatform == "typescript" %}
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/grid-sdk/javascript/grid/custom-header-footer-height-cs1/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/grid-sdk/javascript/grid/custom-header-footer-height-cs1/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/grid-sdk/javascript/grid/custom-header-footer-height-cs1" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/grid-sdk/javascript/grid/custom-header-footer-height-cs1/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/grid-sdk/javascript/grid/custom-header-footer-height-cs1/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/grid-sdk/javascript/grid/custom-header-footer-height-cs1" %}
+{% endif %}
+
 ### Customize row height for particular row 
 
 Customizing the row height for a particular row can be useful when you want to display more content in a particular row, reduce the height of a row to fit its content, or make a specific row stand out from the other rows in the grid. This can be achieved by using the [rowHeight](../../api/grid#rowheight) property of the Grid control along with the [rowDataBound](../../api/grid#rowdatabound) event.

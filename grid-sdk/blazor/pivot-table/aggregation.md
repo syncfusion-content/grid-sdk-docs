@@ -41,7 +41,7 @@ N> Numeric fields support all aggregation types listed below. Fields of type str
 | PercentageOfParentColumnTotal| Displays the pivot table values with percentage of its parent total in each column.|
 | PercentageOfParentRowTotal| Displays the pivot table values with percentage of its parent total in each row.|
 
-N> **CalculatedField** is not an aggregation type. It enables you to create a new calculated field that is derived from existing fields using a formula. See the [Calculated Field](https://blazor.syncfusion.com/documentation/pivot-table/calculated-field) section for details.
+N> **CalculatedField** is not an aggregation type. It enables you to create a new calculated field that is derived from existing fields using a formula. See the [Calculated Field](https://help.syncfusion.com/grid-sdk/blazor/pivot-table/calculated-field) section for details.
 
 ## Assigning aggregation type for value fields through API
 
