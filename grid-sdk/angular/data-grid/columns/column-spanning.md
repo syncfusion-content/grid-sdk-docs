@@ -24,7 +24,7 @@ In the following demo, Employee "Davolio" doing analysis from "9.00" AM to "10.0
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/spanning-cs1" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/spanning-cs1" %}
 
 ## Change the border color while column spanning
 
@@ -40,7 +40,7 @@ The border color of spanned cells can be customized through the  [QueryCellInfo]
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/spanning-cs3" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/spanning-cs3" %}
 
 ## Limitations
 
@@ -69,7 +69,7 @@ Here is an example of using the `enableColumnSpan` property to merge cells horiz
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/column-spanning-cs1" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/column-spanning-cs1" %}
 
 > To control spanning at the column level, the [enableColumnSpan](https://ej2.syncfusion.com/angular/documentation/api/grid/index-default#enablecolumnspan) property can be disabled in the column definition. Setting `enableColumnSpan` to `false` prevents merging for that specific column.
 

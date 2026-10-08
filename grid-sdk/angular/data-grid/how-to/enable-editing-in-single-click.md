@@ -24,7 +24,7 @@ You can enable editing of a row with a single mouse click in the Syncfusion Angu
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/single-click-batch-editing-cs1" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/single-click-batch-editing-cs1" %}
 
 ### Open dropdown edit popup on single click
 
@@ -40,4 +40,4 @@ You can also open the dropdown edit popup with a single click for dropdown-type 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/open-dropdown-popup-cs1" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/open-dropdown-popup-cs1" %}

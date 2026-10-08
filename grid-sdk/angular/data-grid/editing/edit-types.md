@@ -60,7 +60,7 @@ The following sample code demonstrates the customization applied to `TextBox` co
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/edit-params-default" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/edit-params-default" %}
 
 ## Customizing the NumericTextBox for numericedit type 
 
@@ -82,7 +82,7 @@ The following sample code demonstrates the customization applied to `NumericText
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/edit-params-numeric" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/edit-params-numeric" %}
 
 ### Restrict decimal input in NumericTextBox while editing
 
@@ -100,7 +100,7 @@ In the below demo, while editing the row the decimal point value is restricted t
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/prevent-decimalpoint-cs1" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/prevent-decimalpoint-cs1" %}
 
 ## Customizing the DropDownList for dropdownedit type 
 
@@ -122,7 +122,7 @@ The following sample code demonstrates the customization applied to `DropDownLis
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/edit-params-dropdown" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/edit-params-dropdown" %}
 
 ### Provide custom data source for DropDownList component
 
@@ -144,7 +144,7 @@ In the below demo, `DropDownList` is rendered with custom data source for the "S
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/edit-cs12" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/edit-cs12" %}
 
 ### Enable filtering in DropDownList editor
 
@@ -164,7 +164,7 @@ In the following demo, filtering is enabled for the "Ship Country" column:
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/edit-filter" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/edit-filter" %}
 
 ### Open popup on focus in DropDownList
 
@@ -186,7 +186,7 @@ The following sample demonstrates to open the popup when focusing on the edit ce
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/open-dropdown-popup-cs1" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/open-dropdown-popup-cs1" %}
 
 ## Customizing the CheckBox for booleanedit type 
 
@@ -208,7 +208,7 @@ The following sample code demonstrates the customization applied to `CheckBox` c
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/edit-params-checkbox" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/edit-params-checkbox" %}
 
 ## Customizing the DatePicker for datepickeredit type 
 
@@ -230,7 +230,7 @@ The following sample code demonstrates the customization applied to `DatePicker`
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/edit-params-datepicker" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/edit-params-datepicker" %}
 
 ## Customizing the DateTimePicker for datetimepickeredit type 
 
@@ -252,7 +252,7 @@ The following sample code demonstrates the customization applied to DateTimePick
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/edit-params-datetimepicker" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/edit-params-datetimepicker" %}
 
 ### Restrict minimum selectable date in DatePicker
 
@@ -270,7 +270,7 @@ Example with dynamic min date:
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/hide-dates-cs1" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/hide-dates-cs1" %}
 
 ## Accessing editor component instances
 
@@ -290,7 +290,7 @@ In the below demo, access the editor component instance while adding or editing 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/edit-access-editor-cs1" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/edit-access-editor-cs1" %}
 
 ## Rendering custom cell editors
 
@@ -318,7 +318,7 @@ The following example demonstrates to render a textArea component in the "Ship A
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/edit-textarea-cs1" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/edit-textarea-cs1" %}
 
 **Prevent Enter key from saving edits in a multiline textbox** 
 
@@ -334,7 +334,7 @@ Override the default Enter key behavior in multiline textboxes by using the `sto
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/edit-textbox" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/edit-textbox" %}
 
 ### Render AutoComplete in the edit form
 
@@ -356,7 +356,7 @@ The following example demonstrates to render an `AutoComplete` component in the 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/edit-autocomplete" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/edit-autocomplete" %}
 
 ### Render MaskedTextBox in the edit form
 
@@ -376,7 +376,7 @@ Here's an example to render a MaskedTextBox component in the "Customer Number" c
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/edit-maskedtextbox" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/edit-maskedtextbox" %}
 
 ### Render DropDownList component in edit form 
 
@@ -396,7 +396,7 @@ The following example demonstrates to render a `DropDownList` component in the "
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/edit-dropdownlist" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/edit-dropdownlist" %}
 
 ### Render images in the DropDownList editor component using the item template 
 
@@ -506,7 +506,7 @@ export class AppComponent {
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/edit-drobdown-image" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/edit-drobdown-image" %}
 
 ### Render Multiple columns in DropDownList component
 
@@ -622,7 +622,7 @@ export class AppComponent implements OnInit {
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/edit-multicolumn-dropdown" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/edit-multicolumn-dropdown" %}
 
 ### Render ComboBox component in edit form
 
@@ -642,7 +642,7 @@ The following example demonstrates to render a `ComboBox` component in the "Ship
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/edit-combox" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/edit-combox" %}
 
 ### Render TimePicker component in edit form
 
@@ -662,7 +662,7 @@ The following example demonstrates to render a `TimePicker` component in the "Or
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/edit-cs13" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/edit-cs13" %}
 
 ### Render MultiSelect component in edit form
 
@@ -682,7 +682,7 @@ The following example demonstrates to render a `MultiSelect` component in the "S
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/edit-cs15" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/edit-cs15" %}
 
 ### Render RichTextEditor component in edit form
 
@@ -704,7 +704,7 @@ The following example demonstrates to render a `RichTextEditor` component in the
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/edit-cs16" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/edit-cs16" %}
 
 ### Render Upload component in edit form  
 
@@ -828,7 +828,7 @@ export interface columnDataType{
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/edit-upload" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/edit-upload" %}
 
 > To prevent accidentally closing the cell editor (particularly with complex custom editors), add the `edit-custom-template` class to custom component roots and set the `cssClass` property to include `edit-custom-template` for Syncfusion editors when needed.
 
@@ -859,7 +859,7 @@ Define a custom editor with the `edit` API for AutoComplete in the "Customer ID"
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/edit-cs14" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/edit-cs14" %}
 
 ### Example: Cascading DropDownList editors
 
@@ -875,4 +875,4 @@ Create cascading DropDownLists (e.g., country and state) by configuring a custom
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/edit-cs40" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/edit-cs40" %}

@@ -24,7 +24,7 @@ The following example demonstrates rendering the custom toolbar `toolbarTemplate
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/toolbar-template-cs1" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/toolbar-template-cs1" %}
 
 ## Render image with text in custom toolbar
 
@@ -47,7 +47,7 @@ The following example demonstrates rendering an image in the toolbar using `ng-t
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/toolbar-template-cs3" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/toolbar-template-cs3" %}
 
 > Styles and layout of the image and text in the custom toolbar can be further adjusted as per specific design requirements.
 
@@ -69,7 +69,7 @@ In the `onChange` method, the text of the selected item is checked to determine 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/toolbar-template-cs4" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/toolbar-template-cs4" %}
 
 ## Render a component or element using the toolbar template
 
@@ -91,4 +91,4 @@ Below is an example demonstrating this approach:
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/toolbar-template-cs2" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/toolbar-template-cs2" %}

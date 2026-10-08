@@ -77,7 +77,7 @@ The following example presents employee information with the employee "Photo" in
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/custom-cell-cs9" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/custom-cell-cs9" %}
 
 ## Row template with formatting
 
@@ -176,7 +176,7 @@ export interface DateFormat extends Window {
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/custom-cell-cs10" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/custom-cell-cs10" %}
 
 > When using the `rowTemplate` feature in Angular Data Grid, keep in mind that any formatting applied to columns using the `format` property will not work inside the template.
 
@@ -267,7 +267,7 @@ export class AppComponent {
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/row-template-cs3" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/row-template-cs3" %}
 
 ## Render Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Chart in row template
 
@@ -332,7 +332,7 @@ export class AppComponent {
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/row-chart-template" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/row-chart-template" %}
 
 ## Limitations
 

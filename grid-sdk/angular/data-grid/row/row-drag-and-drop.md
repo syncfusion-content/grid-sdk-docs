@@ -37,7 +37,7 @@ The following example demonstrates drag and drop within the Grid:
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/dragndrop-cs3" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/dragndrop-cs3" %}
 
 ## Drag and drop to another Grid 
 
@@ -57,7 +57,7 @@ The following example demonstrates row drag and drop between different Grid comp
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/dragndrop-cs1" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/dragndrop-cs1" %}
 
 > * Row drag and drop functionality is not supported with virtual scrolling and frozen rows and columns mode.
 > * The `RowDDService` must be injected in the providers section.
@@ -78,7 +78,7 @@ In the following example, selected grid rows are dragged and dropped into a `Tre
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/dragndrop-cs5" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/dragndrop-cs5" %}
 
 > The `rowDrop` event triggers when a row is dropped onto a custom component, regardless of drop success. Use the `args.cancel` property to prevent the default action and implement custom handling logic.
 
@@ -100,7 +100,7 @@ The following example demonstrates hide drag and drop icons in the Angular Data 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/dragndrop-cs2" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/dragndrop-cs2" %}
 
 > * The selection feature must be enabled to allow users to select rows before performing drag and drop operations.
 > * For multiple row selection, set the [type](https://ej2.syncfusion.com/angular/documentation/api/grid/selectionSettings#type) property to `Multiple`. Users can then select multiple rows by clicking and dragging within the grid.
@@ -203,7 +203,7 @@ export class AppComponent implements OnInit {
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/dragndrop-cs6" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/dragndrop-cs6" %}
 
 ## Limitations
 
