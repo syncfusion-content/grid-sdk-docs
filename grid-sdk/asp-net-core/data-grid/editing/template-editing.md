@@ -1,10 +1,9 @@
 ---
 layout: post
-title: Template Editing in ASP.NET Core Grid Component
-description: Learn here all about Template Editing in Syncfusion ASP.NET Core Grid component of Syncfusion Essential JS 2 and more.
+title: Template Editing in ASP.NET Core Grid Control | Syncfusion
+description: Learn here all about Template Editing in Syncfusion ASP.NET Core Grid control of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Template Editing
-publishingplatform: grid-sdk
 documentation: ug
 ---
 

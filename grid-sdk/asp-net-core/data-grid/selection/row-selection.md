@@ -4,7 +4,6 @@ title: Row Selection in Syncfusion ASP.NET Core Grid Component
 description: Learn here all about Row Selection in Syncfusion ASP.NET Core Grid component of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Row Selection
-publishingplatform: grid-sdk
 documentation: ug
 ---
 
@@ -508,7 +507,7 @@ namespace SelectRecord.Models
 
 The following screenshot shows how to pass selected records to the server:
 
-![Pass selected records to server using ajax](../../images/selection/row-selected-record.png)
+![Pass selected records to server using ajax](../images/selection/row-selected-record.png)
 
 ## Pass selected records to server using FETCH
 
@@ -726,4 +725,4 @@ namespace SelectRecord.Models
 
 The following screenshot shows how to pass selected records to the server:
 
-![Pass selected records to server using fetch](../../images/selection/row-selected-record.png)
+![Pass selected records to server using fetch](../images/selection/row-selected-record.png)

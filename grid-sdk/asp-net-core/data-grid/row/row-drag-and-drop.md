@@ -4,7 +4,6 @@ title: Row Drag And Drop in Syncfusion ASP.NET Core Grid Component
 description: Learn here all about Row Drag And Drop in Syncfusion ASP.NET Core Grid component of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Row Drag And Drop
-publishingplatform: grid-sdk
 documentation: ug
 ---
 

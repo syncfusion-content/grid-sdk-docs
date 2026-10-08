@@ -4,11 +4,10 @@ title: Integrate Chart in Syncfusion ASP.NET Core Grid
 description: Learn here all about integrate Chart in Syncfusion ASP.NET Core Grid of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Integrate Chart
-publishingplatform: grid-sdk
 documentation: ug
 ---
 
-# Integrate Chart in Syncfusion ASP.NET Core Grid
+# Integrate Chart in Syncfusion ASP.NET Core Grid Control
 
 The Grid and Chart Integration feature in Syncfusion allows users to visualize tabular data in a graphical format by linking the Grid with the Chart.This feature allows seamless integration with Charts to visualize selected data interactively. You can generate various Chart types such as bar, line, or pie directly from Grid data using the [ContextMenu](https://help.syncfusion.com/grid-sdk/asp-net-core/data-grid/context-menu) feature. This feature is particularly useful in scenarios where tabular data can be better understood through graphical representation.
 
@@ -210,7 +209,7 @@ The following complete example demonstrates how to integrate Charts into a Grid 
 {% endhighlight %}
 {% endtabs %}
 
-![Chart integration via Context Menu in Grid](../images/GridChart1.gif)
+![Chart integration via Context Menu in Grid](./images/GridChart1.gif)
 
 ## Enable export functionality in GridChart
 
@@ -363,4 +362,4 @@ The following complete example demonstrates how to enable the property panel by 
 {% endhighlight %}
 {% endtabs %}
 
-![Chart integration](../images/GridChart2.gif) 
+![Chart integration](./images/GridChart2.gif) 

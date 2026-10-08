@@ -4,7 +4,6 @@ title: Filter Menu in Syncfusion ASP.NET Core Grid Control | Syncfusion
 description: Learn here all about Filter Menu in Syncfusion ASP.NET Core Grid component of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Filter Menu
-publishingplatform: grid-sdk
 documentation: ug
 ---
 
@@ -212,4 +211,4 @@ When using the filter menu, the UI displays operators for all columns based on t
 
 ## See also
 
-* [How to perform filter by using Wildcard and LIKE operator filter](./filtering/#wildcard-and-like-operator-filter)
+* [How to perform filter by using Wildcard and LIKE operator filter](https://help.syncfusion.com/grid-sdk/asp-net-core/data-grid/filtering/filtering#wildcard-and-like-operator-filter)

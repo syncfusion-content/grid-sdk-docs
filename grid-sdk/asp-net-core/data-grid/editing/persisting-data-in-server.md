@@ -4,7 +4,6 @@ title: Persisting Data in Server in ASP.NET Core Grid Control | Syncfusion
 description: Learn here all about Persisting Data in Server in Syncfusion ASP.NET Core Grid component of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Persisting Data in Server
-publishingplatform: grid-sdk
 documentation: ug
 ---
 

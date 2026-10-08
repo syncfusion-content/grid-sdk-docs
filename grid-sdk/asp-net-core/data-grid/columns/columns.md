@@ -4,7 +4,6 @@ title: Columns in Syncfusion ASP.NET Core Grid Component
 description: Learn here all about Columns in Syncfusion ASP.NET Core Grid component of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Columns
-publishingplatform: grid-sdk
 documentation: ug
 ---
 
@@ -583,7 +582,7 @@ grid.refreshColumns();
 ```
 ## Responsive columns
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Grid Core provides a built-in feature to toggle the visibility of columns based on media queries using the [hideAtMedia](../../api/grid/column/#hideatmedia) property of the column object. The `hideAtMedia` accepts valid [Media Queries](http://cssmediaqueries.com/what-are-css-media-queries.html). 
+The Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Grid Core provides a built-in feature to toggle the visibility of columns based on media queries using the [hideAtMedia](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridColumn.html#Syncfusion_Blazor_Grids_GridColumn_HideAtMedia) property of the column object. The `hideAtMedia` accepts valid [Media Queries](http://cssmediaqueries.com/what-are-css-media-queries.html). 
 
 In this example, we have a Grid that displays data with three columns: **Order ID, Customer ID, and Freight**. We have set the `hideAtMedia` property of the **OrderID** column to (min-width: 700px) which means that this column will be hidden when the browser screen width is less than or equal to 700px.
 

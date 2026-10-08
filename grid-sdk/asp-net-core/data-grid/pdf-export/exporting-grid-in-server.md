@@ -4,7 +4,6 @@ title: Exporting Grid in Server in Syncfusion ASP.NET Core Grid Component
 description: Learn here all about Exporting Grid in Server in Syncfusion ASP.NET Core Grid component of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Exporting Grid in Server
-publishingplatform: grid-sdk
 documentation: ug
 ---
 

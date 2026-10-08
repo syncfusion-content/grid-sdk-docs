@@ -4,7 +4,6 @@ title: Column Template in Syncfusion ASP.NET Core Grid Component
 description: Learn here all about Column Template in Syncfusion ASP.NET Core Grid component of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Column Template
-publishingplatform: grid-sdk
 documentation: ug
 ---
 

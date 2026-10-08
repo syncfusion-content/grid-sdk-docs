@@ -4,7 +4,6 @@ title: Validation in ASP.NET Core Grid Control | Syncfusion
 description: Learn here all about Validation in Syncfusion ASP.NET Core Grid component of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Validation
-publishingplatform: grid-sdk
 documentation: ug
 ---
 

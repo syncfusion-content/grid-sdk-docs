@@ -4,7 +4,6 @@ title: Hierarchy grid in Syncfusion ASP.NET Core Grid Component
 description: Learn here all about Hierarchy grid in Syncfusion ASP.NET Core Grid component of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Hierarchy grid
-publishingplatform: grid-sdk
 documentation: ug
 ---
 

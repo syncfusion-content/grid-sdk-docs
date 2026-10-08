@@ -1,10 +1,9 @@
 ---
 layout: post
-title: Infinite Scrolling in Syncfusion ASP.NET Core Grid Control | Syncfusion
+title: Infinite Scrolling in Syncfusion ASP.NET Core Grid Control
 description: Learn here all about Infinite Scrolling in Syncfusion ASP.NET Core Grid component of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Infinite Scroll
-publishingplatform: grid-sdk
 documentation: ug
 ---
 
