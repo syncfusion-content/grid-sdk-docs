@@ -4,7 +4,6 @@ title: Vue Grid Formula Cells | Syncfusion
 description: Learn how to use spreadsheet-style formulas in the Vue Data Grid with built-in functions, custom formulas, and automatic recalculation.
 platform: ej2-javascript
 control: Formula
-publishingplatform: Vue
 documentation: ug
 domainurl: ##DomainURL##
 ---

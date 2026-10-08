@@ -4,7 +4,6 @@ title: Vue Grid Custom Formula Functions | Syncfusion
 description: Learn how to create and use custom formula functions in Vue Data Grid for your own business rules and calculations.
 platform: ej2-javascript
 control: Custom Formula
-publishingplatform: Vue
 documentation: ug
 domainurl: ##DomainURL##
 ---
