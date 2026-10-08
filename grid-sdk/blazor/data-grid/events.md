@@ -17,7 +17,7 @@ N> All events should be configured within a single **GridEvents** component.
 
 ## OnActionBegin
 
-[OnActionBegin](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridEvents-1.html#Syncfusion_Blazor_Grids_GridEvents_1_OnActionBegin) triggers when a Blazor Grid action starts ([sorting](https://help.syncfusion.com/grid-sdk/blazor/data-grid/sorting), [filtering](https://help.syncfusion.com/grid-sdk/blazor/data-grid/filtering), [paging](https://help.syncfusion.com/grid-sdk/blazor/data-grid/paging), [grouping](https://help.syncfusion.com/grid-sdk/blazor/data-grid/grouping), [editing](https://help.syncfusion.com/grid-sdk/blazor/data-grid/editing), and more). Use this to inspect or adjust action parameters before execution.
+[OnActionBegin](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridEvents-1.html#Syncfusion_Blazor_Grids_GridEvents_1_OnActionBegin) triggers when a Blazor Grid action starts ([sorting](https://blazor.syncfusion.com/documentation/datagrid/sorting), [filtering](https://blazor.syncfusion.com/documentation/datagrid/filtering), [paging](https://blazor.syncfusion.com/documentation/datagrid/paging), [grouping](https://blazor.syncfusion.com/documentation/datagrid/grouping), [editing](https://blazor.syncfusion.com/documentation/datagrid/editing), and more). Use this to inspect or adjust action parameters before execution.
 
 ```cshtml
 @using Syncfusion.Blazor.Grids
@@ -64,7 +64,7 @@ N> All events should be configured within a single **GridEvents** component.
 
 ## OnActionComplete
 
-[OnActionComplete](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridEvents-1.html#Syncfusion_Blazor_Grids_GridEvents_1_OnActionComplete) triggers after Blazor Grid actions ([sorting](https://help.syncfusion.com/grid-sdk/blazor/data-grid/sorting), [filtering](https://help.syncfusion.com/grid-sdk/blazor/data-grid/filtering), [paging](https://help.syncfusion.com/grid-sdk/blazor/data-grid/paging), [grouping](https://help.syncfusion.com/grid-sdk/blazor/data-grid/grouping), [editing](https://help.syncfusion.com/grid-sdk/blazor/data-grid/editing), etc.) finish. Use it for post-processing or UI updates.
+[OnActionComplete](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridEvents-1.html#Syncfusion_Blazor_Grids_GridEvents_1_OnActionComplete) triggers after Blazor Grid actions ([sorting](https://blazor.syncfusion.com/documentation/datagrid/sorting), [filtering](https://blazor.syncfusion.com/documentation/datagrid/filtering), [paging](https://blazor.syncfusion.com/documentation/datagrid/paging), [grouping](https://blazor.syncfusion.com/documentation/datagrid/grouping), [editing](https://blazor.syncfusion.com/documentation/datagrid/editing), etc.) finish. Use it for post-processing or UI updates.
 
 ```cshtml
 @using Syncfusion.Blazor.Grids
@@ -3205,6 +3205,120 @@ The [OnColumnMenuOpen](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.G
 }
 ```
 
+## Printing
+
+`Printing` triggers while the Data Grid generates print content, allowing customization of the print layout, styling, and content before rendering for printing.
+
+```cshtml
+@using Syncfusion.Blazor.Grids
+
+<SfGrid DataSource="@Orders" AllowPaging="true" AllowSorting="true">
+    <GridEvents Printing="Printing" TValue="Order"></GridEvents>
+    <GridColumns>
+        <GridColumn Field=@nameof(Order.OrderID) HeaderText="Order ID" IsPrimaryKey="true" TextAlign="TextAlign.Right" Width="120"></GridColumn>
+        <GridColumn Field=@nameof(Order.CustomerID) HeaderText="Customer Name" Width="150"></GridColumn>
+        <GridColumn Field=@nameof(Order.OrderDate) HeaderText=" Order Date" Format="d" Type="ColumnType.Date" TextAlign="TextAlign.Right" Width="130"></GridColumn>
+        <GridColumn Field=@nameof(Order.Freight) HeaderText="Freight" Format="C2" TextAlign="TextAlign.Right" Width="120"></GridColumn>
+    </GridColumns>
+</SfGrid>
+
+@code{
+
+    public List<Order> Orders { get; set; }
+
+    protected override void OnInitialized()
+    {
+        Orders = GetAllRecords();
+    }
+
+    public List<Order> GetAllRecords()
+    {
+        List<Order> data = new List<Order>();
+        int count = 1000;
+        for (int i = 0; i < 15; i++)
+        {
+            data.Add(new Order() { OrderID = count + 1, CustomerID = "ALFKI", OrderDate = new DateTime(1995, 05, 15), Freight = 25.7 * 2 });
+            data.Add(new Order() { OrderID = count + 2, CustomerID = "ANANTR", OrderDate = new DateTime(1994, 04, 04), Freight = 26.7 * 2 });
+            data.Add(new Order() { OrderID = count + 3, CustomerID = "BLONP", OrderDate = new DateTime(1993, 03, 10), Freight = 27.7 * 2 });
+            data.Add(new Order() { OrderID = count + 4, CustomerID = "ANTON", OrderDate = new DateTime(1992, 02, 14), Freight = 28.7 * 2 });
+            data.Add(new Order() { OrderID = count + 5, CustomerID = "BOLID", OrderDate = new DateTime(1991, 01, 18), Freight = 29.7 * 2 });
+            count += 5;
+        }
+        return data;
+    }
+
+    public void Printing(PrintingEventArgs args)
+    {
+        // Customize header, content using args.
+    }
+
+    public class Order
+    {
+        public int? OrderID { get; set; }
+        public string CustomerID { get; set; }
+        public DateTime? OrderDate { get; set; }
+        public double? Freight { get; set; }
+    }
+}
+```
+
+## Printed
+
+`Printed` triggers after the Data Grid print content is generated and ready for printing. Use it to perform post-print actions such as tracking, notifications, or resource cleanup.
+
+```cshtml
+@using Syncfusion.Blazor.Grids
+
+<SfGrid DataSource="@Orders" AllowPaging="true" AllowSorting="true">
+    <GridEvents Printed="OnPrintCompleted" TValue="Order"></GridEvents>
+    <GridColumns>
+        <GridColumn Field=@nameof(Order.OrderID) HeaderText="Order ID" IsPrimaryKey="true" TextAlign="TextAlign.Right" Width="120"></GridColumn>
+        <GridColumn Field=@nameof(Order.CustomerID) HeaderText="Customer Name" Width="150"></GridColumn>
+        <GridColumn Field=@nameof(Order.OrderDate) HeaderText=" Order Date" Format="d" Type="ColumnType.Date" TextAlign="TextAlign.Right" Width="130"></GridColumn>
+        <GridColumn Field=@nameof(Order.Freight) HeaderText="Freight" Format="C2" TextAlign="TextAlign.Right" Width="120"></GridColumn>
+    </GridColumns>
+</SfGrid>
+
+@code{
+
+    public List<Order> Orders { get; set; }
+
+    protected override void OnInitialized()
+    {
+        Orders = GetAllRecords();
+    }
+
+    public List<Order> GetAllRecords()
+    {
+        List<Order> data = new List<Order>();
+        int count = 1000;
+        for (int i = 0; i < 15; i++)
+        {
+            data.Add(new Order() { OrderID = count + 1, CustomerID = "ALFKI", OrderDate = new DateTime(1995, 05, 15), Freight = 25.7 * 2 });
+            data.Add(new Order() { OrderID = count + 2, CustomerID = "ANANTR", OrderDate = new DateTime(1994, 04, 04), Freight = 26.7 * 2 });
+            data.Add(new Order() { OrderID = count + 3, CustomerID = "BLONP", OrderDate = new DateTime(1993, 03, 10), Freight = 27.7 * 2 });
+            data.Add(new Order() { OrderID = count + 4, CustomerID = "ANTON", OrderDate = new DateTime(1992, 02, 14), Freight = 28.7 * 2 });
+            data.Add(new Order() { OrderID = count + 5, CustomerID = "BOLID", OrderDate = new DateTime(1991, 01, 18), Freight = 29.7 * 2 });
+            count += 5;
+        }
+        return data;
+    }
+
+    public void OnPrintCompleted()
+    {
+        //  Trigger post-print actions.
+    }
+
+    public class Order
+    {
+        public int? OrderID { get; set; }
+        public string CustomerID { get; set; }
+        public DateTime? OrderDate { get; set; }
+        public double? Freight { get; set; }
+    }
+}
+```
+
 ## Sorting
 
 [Sorting](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridEvents-1.html#Syncfusion_Blazor_Grids_GridEvents_1_Sorting) triggers before a sort is applied, removed, or its direction changes. Use it to validate sort rules, customize sort descriptors, or cancel sorting via event args.
@@ -4713,4 +4827,4 @@ N> This event is raised specifically for the `Menu`, `CheckBox` and `Excel` [Fil
 }
 ```
 
-N> Refer to the [Blazor DataGrid](https://www.syncfusion.com/blazor-components/blazor-datagrid) feature tour for key capabilities and explore the [Blazor DataGrid example](https://blazor.syncfusion.com/demos/datagrid/overview?theme=fluent2) to understand how to present and manipulate data effectively.
+N> Refer to the [Blazor DataGrid](https://www.syncfusion.com/blazor-components/blazor-datagrid) feature tour for key capabilities and explore the [Blazor DataGrid example](https://blazor.syncfusion.com/demos/datagrid/overview?theme=bootstrap5) to understand how to present and manipulate data effectively.
