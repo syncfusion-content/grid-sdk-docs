@@ -27,7 +27,7 @@ TreeGrid supports two types of selection, configurable using [`selectionSettings
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/treegrid/selection-cs8" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/selection-cs8" %}
 
 ## Selection mode
 
@@ -47,7 +47,7 @@ Selection mode can be configured with [`selectionSettings.mode`](https://ej2.syn
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/treegrid/selection-cs9" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/selection-cs9" %}
 
 ## Toggle selection
 
@@ -63,7 +63,7 @@ Toggle selection enables selecting and unselecting specific rows or cells by cli
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/treegrid/selection-cs10" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/selection-cs10" %}
 
 > If multi-selection is enabled, the first click on any selected row (without pressing Ctrl) will clear previous selections. The second click on the same row will deselect it.
 

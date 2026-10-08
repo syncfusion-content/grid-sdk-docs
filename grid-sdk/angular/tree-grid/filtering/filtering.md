@@ -40,7 +40,7 @@ Here is an example that demonstrates the default filtering feature of the TreeGr
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/treegrid/filtering-cs9" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/filtering-cs9" %}
 
 > * Filtering can be applied and cleared by using [filterByColumn](https://ej2.syncfusion.com/angular/documentation/api/treegrid#filterbycolumn) and [clearFiltering](https://ej2.syncfusion.com/angular/documentation/api/treegrid#clearfiltering) methods.
 > * To disable filtering for a particular column, set [columns.allowFiltering](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column#allowfiltering) to false.
@@ -81,7 +81,7 @@ The following demo illustrates filtering records with different hierarchy modes.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/treegrid/filtering-cs10" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/filtering-cs10" %}
 
 ## Initial filter
 
@@ -101,7 +101,7 @@ Here is an example of how to configure the initial filter using the `predicate` 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/treegrid/filtering-cs11" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/filtering-cs11" %}
 
 ### Initial filter with multiple values for same column
 
@@ -123,7 +123,7 @@ The following example demonstrates how to perform an initial filter with multipl
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/treegrid/filtering-cs12" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/filtering-cs12" %}
 
 ### Initial filter with multiple values for different columns 
 
@@ -145,7 +145,7 @@ The following example demonstrates how to perform an initial filter with multipl
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/treegrid/filtering-cs13" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/filtering-cs13" %}
 
 ## Filter operators
 
@@ -194,7 +194,7 @@ Here's an example that demonstrates how to change the default filter operator co
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/treegrid/filtering-cs14" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/filtering-cs14" %}
 
 ## Prevent filtering for particular column
 
@@ -214,7 +214,7 @@ Here's an example that demonstrates how to remove the filter bar for the taskNam
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/treegrid/filtering-cs15" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/filtering-cs15" %}
 
 ## Handling filtering at server end based on hierarchy modes 
 
@@ -441,7 +441,7 @@ Consider the following sample where the `ignoreAccent` property is set to true i
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/treegrid/filtering-cs16" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/filtering-cs16" %}
 
 ## Filtering with case sensitivity
 
@@ -461,7 +461,7 @@ Below is an example code demonstrating how to enable or disable case sensitivity
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/treegrid/filtering-cs17" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/filtering-cs17" %}
 
 ## Enable different filter dialog for a column
 
@@ -483,7 +483,7 @@ Here's an example where the menu filter is enabled by default for all columns, b
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/treegrid/filtering-cs18" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/filtering-cs18" %}
 
 > [View the GitHub sample demonstrating different filter dialogs in a TreeGrid column.](https://github.com/SyncfusionExamples/How-to-Work-with-Filtering-Options-in-Angular-Tree-Grid)
 
@@ -507,7 +507,7 @@ The following example demonstrates how to programmatically filter the TreeGrid u
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/treegrid/filtering-cs19" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/filtering-cs19" %}
 
 ## How to get filtered records
 
@@ -533,7 +533,7 @@ Below is an example demonstrating how to retrieve filtering data in a TreeGrid u
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/treegrid/filtering-cs20" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/filtering-cs20" %}
 
 **2. Using the properties in the FilterEventArgs object**
 
@@ -573,7 +573,7 @@ Here's an example of how to clear the filtering in a TreeGrid using the `clearFi
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/treegrid/filtering-cs21" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/filtering-cs21" %}
 
 ## Filtering events
 
@@ -647,4 +647,4 @@ export class AppComponent implements OnInit {
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/treegrid/filtering-cs22" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/filtering-cs22" %}
