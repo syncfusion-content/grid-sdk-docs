@@ -102,7 +102,7 @@ public class OrderDetails
 
 ## Edit on key press in cell editing
 
-Edit on key press allows a selected cell to enter edit mode immediately when a user presses a printable key, without requiring a double-click or another action to start editing. Edit on key press improves data-entry speed and reduces unnecessary interactions, making it ideal for applications where users frequently update large amounts of data. Typical use cases include inventory updates, order management, timesheet tracking, and other spreadsheet-style data entry scenarios.
+Edit on key press allows a selected cell to enter edit mode immediately when a user presses a printable key, without requiring a double-click or another action to start editing. Edit on key press improves data-entry speed and reduces unnecessary interactions, making it ideal for applications where users frequently update large amounts of data. Typical use cases include inventory updates, order management, time sheet tracking, and other spreadsheet-style data entry scenarios.
 
 To enable, set the [AllowEditOnKeyPress](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridEditSettings.html#Syncfusion_Blazor_Grids_GridEditSettings_AllowEditOnKeyPress) property in [GridEditSettings](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridEditSettings.html) to `true`. When enabled, pressing a printable character key, such as a letter, digit, or symbol, while a cell is selected, automatically places the cell in edit mode and applies the entered character directly to the cell.
 
