@@ -43,7 +43,7 @@ To achieve real-time data binding with SignalR in your Grid, follow the steps be
 * Name the project **signalR**.
 * Click “Create”
 
-**Step 2:**  Create a simple Grid by following the [Getting Started documentation link](https://ej2.syncfusion.com/aspnetcore/documentation/grid/getting-started-core).
+**Step 2:**  Create a simple Grid by following the [Getting Started documentation link](https://help.syncfusion.com/grid-sdk/asp-net-core/data-grid/getting-started-core).
 
 **Step 3:** Install the SignalR Client Library by following these steps:
 
@@ -364,7 +364,7 @@ To achieve data binding and perform CRUD actions using Fetch requests in the Gri
 * Name the project **FetchRequest**.
 * Click “Create”
 
-**Step 2:**  Create a simple Grid by following the [Getting Started documentation link](https://ej2.syncfusion.com/aspnetcore/documentation/grid/getting-started-core).
+**Step 2:**  Create a simple Grid by following the [Getting Started documentation link](https://help.syncfusion.com/grid-sdk/asp-net-core/data-grid/getting-started-core).
 
 **Step 3:**  In the **Pages/Index.cshtml** file, follow the steps below.
 
@@ -678,7 +678,7 @@ To achieve data binding and perform CRUD actions using AJAX requests in the Grid
 * Choose ASP.NET Core Web App(Razor Pages) project template.
 * Name the project **AJAXRequest**.
 * Click “Create”
-**Step 2:**  Create a simple Grid by following the [Getting Started documentation link](https://ej2.syncfusion.com/aspnetcore/documentation/grid/getting-started-core).
+**Step 2:**  Create a simple Grid by following the [Getting Started documentation link](https://help.syncfusion.com/grid-sdk/asp-net-core/data-grid/getting-started-core).
 
 **Step 3:**  In the **Pages/Index.cshtml** file, follow the steps below.
 

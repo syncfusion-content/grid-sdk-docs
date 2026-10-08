@@ -46,10 +46,10 @@ select the corresponding DataGrid features from option.
 ![Alt text](./images/explorer-mvc.PNG)
 
 N> * Ensure at least one Entity Framework model has been exists and the application compiled once.
-<br/> * If no Entity Framework model exists in your application, refer to the [`documentation`](https://docs.microsoft.com/en-us/aspnet/mvc/overview/getting-started/database-first-development/creating-the-web-application#generate-the-models) to generate the Entity Framework model. Once model file added, ensure required DBContext and properties are added. Now, build the application and try scaffolding. If any changes done in model properties later, compile the application once before perform scaffolding.
+<br/> * If no Entity Framework model exists in your application, refer to the [`documentation`](https://learn.microsoft.com/en-us/aspnet/mvc/overview/getting-started/database-first-development/creating-the-web-application#generate-the-models) to generate the Entity Framework model. Once model file added, ensure required DBContext and properties are added. Now, build the application and try scaffolding. If any changes done in model properties later, compile the application once before perform scaffolding.
 
 ## How to render Syncfusion<sup style="font-size:70%">&reg;</sup> Control'?'
 
 Refer to the following UG links to render Syncfusion<sup style="font-size:70%">&reg;</sup> control after performed scaffolding.
 
-**MVC5:** [`Configure Essential<sup style="font-size:70%">&reg;</sup> JS 2 using Syncfusion.EJ2.MVC5 package`](https://ej2.syncfusion.com/aspnetmvc/documentation/getting-started/visual-studio-2017/#configure-essential-js-2-in-the-application)
+**MVC5:** [`Configure Essential<sup style="font-size:70%">&reg;</sup> JS 2 using Syncfusion.EJ2.MVC5 package`](https://ej2.syncfusion.com/aspnetmvc/documentation/getting-started/aspnet-mvc-htmlhelper)

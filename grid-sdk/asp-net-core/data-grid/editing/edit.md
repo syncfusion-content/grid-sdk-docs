@@ -35,7 +35,7 @@ You can start the edit action either by double clicking the particular row or by
 
 ## Toolbar with edit option
 
-The toolbar with edit option feature in the Grid component provides a [built-in toolbar](https://ej2.syncfusion.com/aspnetcore/documentation/grid/tool-bar/tool-bar-items#built-in-toolbar-items) that includes various items for executing editing actions. This feature allows you to easily perform edit operations on the grid data, such as modifying cell values, updating changes, and canceling edits. 
+The toolbar with edit option feature in the Grid component provides a [built-in toolbar](https://help.syncfusion.com/grid-sdk/asp-net-core/data-grid/tool-bar/tool-bar-items#built-in-toolbar-items) that includes various items for executing editing actions. This feature allows you to easily perform edit operations on the grid data, such as modifying cell values, updating changes, and canceling edits. 
 
 To enable this feature, you need to configure the [toolbar](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_Toolbar) property of the Grid component. This property allows you to define the items that will be displayed in the grid toolbar. By including the relevant items like **Edit**, **Add**, **Delete**, **Update**, and **Cancel** within the `toolbar` property, you can enable the edit options in the toolbar.
 
@@ -72,8 +72,8 @@ Here's an example that demonstrates how to disable editing for the column in the
 ![Disable Edit for particular column](../images/editing/disable-column-editing.png)
 
 > * If you have set the `isPrimaryKey` property to **true** for a column, editing will be automatically disabled for that column.
-> * You can disable the particular row using [actionBegin](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ActionBegin) event. Please refer this [link](https://ej2.syncfusion.com/aspnetcore/documentation/grid/editing/in-line-editing#cancel-edit-based-on-condition).
-> * You can disable the particular cell using [cellEdit](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_CellEdit) event. Please refer this [link](https://ej2.syncfusion.com/aspnetcore/documentation/grid/editing/batch-editing#cancel-edit-based-on-condition-in-batch-mode).
+> * You can disable the particular row using [actionBegin](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ActionBegin) event. Please refer this [link](https://help.syncfusion.com/grid-sdk/asp-net-core/data-grid/editing/in-line-editing#cancel-edit-based-on-condition).
+> * You can disable the particular cell using [cellEdit](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_CellEdit) event. Please refer this [link](https://help.syncfusion.com/grid-sdk/asp-net-core/data-grid/editing/batch-editing#cancel-edit-based-on-condition).
 
 ## Editing template column
 

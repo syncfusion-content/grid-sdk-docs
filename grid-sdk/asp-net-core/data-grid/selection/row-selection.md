@@ -300,7 +300,7 @@ To achieve passing selected records to the server using AJAX requests in the Syn
 
 **Step 1:** Open Visual Studio and create an ASP.NET Core project named **SelectRecord**. To create an ASP.NET Core application, follow the documentation [link](https://learn.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/razor-pages-start?view=aspnetcore-8.0&tabs=visual-studio#create-a-razor-pages-web-app) for detailed steps.
 
-**Step 2 :** Create a simple Syncfusion ASP.NET Core Grid by following the [Getting Started](https://ej2.syncfusion.com/aspnetcore/documentation/grid/getting-started-core) documentation link.
+**Step 2 :** Create a simple Syncfusion ASP.NET Core Grid by following the [Getting Started](https://help.syncfusion.com/grid-sdk/asp-net-core/data-grid/getting-started-core) documentation link.
 
 **Step 3:** In your HTML file (e.g., **Index.cshtml**), add a button to trigger the AJAX call and include the Syncfusion ASP.NET Core Grid with necessary configurations:
 
@@ -518,7 +518,7 @@ To achieve passing selected records to the server using Fetch requests in the Sy
 
 **Step 1:** Open Visual Studio and create an ASP.NET Core project named **SelectRecord**. To create an ASP.NET Core application, follow the documentation [link](https://learn.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/razor-pages-start?view=aspnetcore-8.0&tabs=visual-studio#create-a-razor-pages-web-app) for detailed steps.
 
-**Step 2 :** Create a simple Syncfusion ASP.NET Core Grid by following the [Getting Started](https://ej2.syncfusion.com/aspnetcore/documentation/grid/getting-started-core) documentation link.
+**Step 2 :** Create a simple Syncfusion ASP.NET Core Grid by following the [Getting Started](https://help.syncfusion.com/grid-sdk/asp-net-core/data-grid/getting-started-core) documentation link.
 
 **Step 3:** In your HTML file (e.g., **Index.cshtml**), add a button to trigger the Fetch call and include the Syncfusion ASP.NET Core Grid with necessary configurations:
 

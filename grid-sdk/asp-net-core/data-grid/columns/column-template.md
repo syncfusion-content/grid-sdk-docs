@@ -58,7 +58,7 @@ The column template has options to render a custom component in a grid column in
 
 ### Render LineChart component in a column
 
-The [LineChart](https://ej2.syncfusion.com/aspnetcore/documentation/sparkline/getting-started) component of Syncfusion<sup style="font-size:70%">&reg;</sup> provides an elegant way to represent and compare data over time. It displays data points connected by straight line segments to visualize trends in data. 
+The [LineChart](https://help.syncfusion.com/chart-sdk/asp-net-core/sparkline-charts/getting-started) component of Syncfusion<sup style="font-size:70%">&reg;</sup> provides an elegant way to represent and compare data over time. It displays data points connected by straight line segments to visualize trends in data. 
 
 In the following example, we have rendered the Sparkline Chart component in the Grid column by defining the `template` property.
 

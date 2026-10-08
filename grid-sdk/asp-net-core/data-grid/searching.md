@@ -277,5 +277,5 @@ The following example demonstrates how to retrieve searched records using an ext
 
 ## See also
 
-* [How to perform search by using Wildcard and LIKE operator filter](https://ej2.syncfusion.com/aspnetcore/documentation/grid/filtering/filtering#wildcard-and-like-operator-filter)
+* [How to perform search by using Wildcard and LIKE operator filter](https://help.syncfusion.com/grid-sdk/asp-net-core/data-grid/filtering/filtering#wildcard-and-like-operator-filter)
 

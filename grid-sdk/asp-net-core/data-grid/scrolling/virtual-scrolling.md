@@ -58,7 +58,7 @@ The following example enable row virtualization using `enableVirtualization` pro
         height: 2em;
     }
     ```
-* Since data is virtualized in grid, the aggregated information and total group items are displayed based on the current view items. To get these information regardless of the view items, refer to the [Group with paging](https://ej2.syncfusion.com/aspnetcore/documentation/grid/grouping/grouping#group-with-paging) topic. 
+* Since data is virtualized in grid, the aggregated information and total group items are displayed based on the current view items. To get these information regardless of the view items, refer to the [Group with paging](https://help.syncfusion.com/grid-sdk/asp-net-core/data-grid/grouping/grouping#group-with-paging) topic. 
 * It is necessary to set a static height for the component or its parent container when using row virtualization. The 100% height will work only if the component height is set to 100%, and its parent container has a static height.
 
 ## Column virtualization
@@ -246,4 +246,4 @@ In the following image, you can see how many records will be scrollable when set
 
 ### Solution 3: Using paging instead of virtual scrolling
 
-Similar to virtual scrolling, the [paging](https://ej2.syncfusion.com/aspnetcore/documentation/grid/paging) feature also loads the data in an on-demand concept. Pagination is also compatible with all the other features(Grouping, Editing, etc.) in Grid. So, use the `paging` feature instead of virtual scrolling to view a large number of records in the Grid without any kind of performance degradation or browser height limitation.
+Similar to virtual scrolling, the [paging](https://help.syncfusion.com/grid-sdk/asp-net-core/data-grid/paging) feature also loads the data in an on-demand concept. Pagination is also compatible with all the other features(Grouping, Editing, etc.) in Grid. So, use the `paging` feature instead of virtual scrolling to view a large number of records in the Grid without any kind of performance degradation or browser height limitation.
