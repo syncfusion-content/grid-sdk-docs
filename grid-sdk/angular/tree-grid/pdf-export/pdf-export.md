@@ -28,7 +28,7 @@ You can watch this video to learn how to perform exports and customize them in t
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/treegrid/pdf-export-cs12" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/pdf-export-cs12" %}
 
 <!-- Multiple exporting
 
@@ -44,7 +44,7 @@ PDF export provides an option for exporting multiple treegrid to same file. In t
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/treegrid/pdf-export-cs13" %} -->
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/pdf-export-cs13" %} -->
 
 ## Show spinner while exporting
 
@@ -62,7 +62,7 @@ In the following demo, the default spinner component is rendered when exporting 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/treegrid/pdf-export-cs14" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/pdf-export-cs14" %}
 
 ## Custom data source
 
@@ -78,7 +78,7 @@ PDF export provides an option to define a data source dynamically before exporti
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/treegrid/pdf-export-cs15" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/pdf-export-cs15" %}
 
 ## Exporting Custom Aggregates in Tree Grid
  
@@ -96,6 +96,6 @@ In the provided example, the `customAggregateFn` function computes the item coun
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/treegrid/pdf-export-cs16" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/pdf-export-cs16" %}
 
 > You can refer to our [`Angular TreeGrid`](https://www.syncfusion.com/angular-components/angular-tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our [`Angular TreeGrid example`](https://ej2.syncfusion.com/angular/demos/#/tailwind3/treegrid/treegrid-overview) to learn how to present and manipulate data.

@@ -35,7 +35,7 @@ Key actions using load on demand:
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/treegrid/data-binding-cs4" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/data-binding-cs4" %}
 
 **Service code snippet:**
 
@@ -275,7 +275,7 @@ To avoid round trips to the server and process TreeGrid actions client-side, set
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/treegrid/data-binding-cs5" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/data-binding-cs5" %}
 
 ## Custom adaptor
 
@@ -290,7 +290,7 @@ You can extend DataManager’s adaptors to implement custom data processing—su
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/treegrid/data-binding-cs6" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/data-binding-cs6" %}
 
 ## Sending additional parameters to the server
 
@@ -305,7 +305,7 @@ To send custom parameters with your remote data requests, use the `addParams` me
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/treegrid/data-binding-cs7" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/data-binding-cs7" %}
 
 ## Handling HTTP errors
 
@@ -320,7 +320,7 @@ Handle exceptions and errors from the server using the TreeGrid’s [`actionFail
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/treegrid/data-binding-cs8" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/data-binding-cs8" %}
 
 > The [`actionFailure`](https://ej2.syncfusion.com/angular/documentation/api/treegrid#actionfailure) event is triggered on both server-side and in-client exceptions during TreeGrid actions.
 
