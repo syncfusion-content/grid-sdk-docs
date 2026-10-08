@@ -957,7 +957,7 @@ namespace Grid_SQLite.Server.Controllers
             IQueryable<Asset> query = _db.Assets.AsNoTracking();
             var op = new DataOperations();
             if (dm.Where?.Count > 0)
-                query = op.PerformFiltering(query, dm.Where, dm.Where[0].Operator)
+                query = op.PerformFiltering(query, dm.Where, dm.Where[0].Condition)
                     .Cast<Asset>()
                     .AsQueryable();
 
@@ -1632,7 +1632,7 @@ namespace Grid_SQLite.Server.Controllers
                 query = op.PerformSearching(query, dm.Search).Cast<Asset>().AsQueryable();
 
             if (dm.Where?.Count > 0)
-                query = op.PerformFiltering(query, dm.Where, dm.Where[0].Operator)
+                query = op.PerformFiltering(query, dm.Where, dm.Where[0].Condition)
                     .Cast<Asset>()
                     .AsQueryable();
 
