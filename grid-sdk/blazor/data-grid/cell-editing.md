@@ -12,8 +12,6 @@ keywords: blazor datagrid cell editing, blazor grid cell edit mode, cell editing
 
 Cell editing provides a streamlined way to update individual cell values directly within the [Blazor DataGrid](https://www.syncfusion.com/blazor-components/blazor-datagrid). Cell editing is designed for quick, inline modifications, making data entry and corrections more efficient. Cell editing ensures that changes are applied seamlessly to large datasets while maintaining consistency with the Data Grid’s overall editing experience.
 
-**Why use cell editing?**
-
 In enterprise applications, users often need to correct a few values across a large dataset. Opening a separate edit form for each change adds unnecessary steps and interrupts the workflow. Cell editing streamlines these corrections, reduces repetitive steps, and boosts productivity.
 
 **Resolved pain points**
@@ -22,15 +20,11 @@ In enterprise applications, users often need to correct a few values across a la
 - Context switching between the Data Grid and separate edit forms.
 - Slower corrections when changes span many records.
 
-**Use case**
-
-A warehouse operator finds incorrect quantities for 50 products. Cell editing allows each quantity to be corrected directly in the Data Grid, without opening a separate dialog for every product, so the operator can continue working in the same view.
-
 **Enable cell editing**
 
 To enable cell editing in the Data Grid, configure the [GridEditSettings](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridEditSettings.html) component. Set the [Mode](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridEditSettings.html#Syncfusion_Blazor_Grids_GridEditSettings_Mode) property to `EditMode.Cell`. Set the [AllowEditing](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridEditSettings.html#Syncfusion_Blazor_Grids_GridEditSettings_AllowEditing) property to `true` to permit cell updates.
 
-With both properties configured, double-clicking a cell, or selecting a cell and pressing **Enter** or **F2**, switches that cell into edit mode.
+With both properties configured, double-clicking a cell, or selecting a cell and pressing **enter** or **F2**, switches that cell into edit mode.
 
 {% tabs %}
 {% highlight razor tabtitle="Index.razor" %}
@@ -172,9 +166,9 @@ public class OrderDetails
 
 {% previewsample "https://blazorplayground.syncfusion.com/embed/rtLxiXDMzxRJUoQW?appbar=false&editor=false&result=true&errorlist=false&theme=fluent2" %}
 
-## Customize Enter key navigation
+## Customize enter key navigation
 
-[EnterKeyDirection](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridEditSettings.html#Syncfusion_Blazor_Grids_GridEditSettings_EnterKeyDirection) is a [GridEditSettings](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridEditSettings.html) property that controls where focus moves after saving a cell using the Enter key. The property supports keyboard-based data entry scenarios that require quick navigation between cells without using the mouse. By default, the value is `EnterKeyDirection.None`, which keeps the focus on the current cell.
+[EnterKeyDirection](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridEditSettings.html#Syncfusion_Blazor_Grids_GridEditSettings_EnterKeyDirection) is a [GridEditSettings](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridEditSettings.html) property that controls where focus moves after saving a cell using the enter key. The property supports keyboard-based data entry scenarios that require quick navigation between cells without using the mouse. By default, the value is `EnterKeyDirection.None`, which keeps the focus on the current cell.
 
 The [EnterKeyDirection](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.EnterKeyDirection.html) enumeration provides the following options:
 
@@ -287,7 +281,7 @@ Cell editing in the Blazor Data Grid enables users to update individual cells di
 | Event | Description |
 |-------|-------------|
 | [OnCellEdit](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridEvents-1.html#Syncfusion_Blazor_Grids_GridEvents_1_OnCellEdit) | Triggers before a cell enters edit mode in the UI, such as on double-click or pressing **F2**. |
-| [OnCellSave](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridEvents-1.html#Syncfusion_Blazor_Grids_GridEvents_1_OnCellSave) | Triggers before cell changes are updated in the UI, such as on pressing Enter or navigating to another cell. |
+| [OnCellSave](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridEvents-1.html#Syncfusion_Blazor_Grids_GridEvents_1_OnCellSave) | Triggers before cell changes are updated in the UI, such as on pressing enter or navigating to another cell. |
 | [CellSaved](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridEvents-1.html#Syncfusion_Blazor_Grids_GridEvents_1_CellSaved) | Triggers after cell changes are updated in the UI and the edited values are highlighted in the Data Grid. |
 | [EditCanceling](https://blazor.syncfusion.com/documentation/datagrid/events#editcanceling) | Triggered before cancellation of an edit operation. Used for confirmation prompts or rollback logic. |
 | [EditCanceled](https://blazor.syncfusion.com/documentation/datagrid/events#editcanceled) | Triggered after cancellation of an edit operation. |
@@ -299,7 +293,7 @@ Cell editing in the Blazor Data Grid enables users to update individual cells di
 | Double-clicking a cell does not start editing. | `AllowEditing` is set to `false`, or `Mode` is not set to `EditMode.Cell`. | Set both `AllowEditing="true"` and `Mode="EditMode.Cell"` in `GridEditSettings`. |
 | Saved changes appear on the wrong record. | The primary key column is missing or `IsPrimaryKey` is not set. | Set `IsPrimaryKey="true"` on the unique identifier column. |
 | Typing into a selected cell does not start editing. | `AllowEditOnKeyPress` is `false` (default). | Set `AllowEditOnKeyPress="true"` in `GridEditSettings`. |
-| Focus does not move after pressing `Enter`. | `EnterKeyDirection` is set to `None`. | Set `EnterKeyDirection` to `NextRow` or `NextColumn` based on the desired direction. |
+| Focus does not move after pressing `enter` key. | `EnterKeyDirection` is set to `None`. | Set `EnterKeyDirection` to `NextRow` or `NextColumn` based on the desired direction. |
 | A cell fails to save. | The entered value fails a validation rule on the column. | Check the column's `ValidationRules` and correct the value, or adjust the rule. |
 
 ## See also
