@@ -1,10 +1,9 @@
 ---
 layout: post
 title: Vue Grid Formula Reference | Syncfusion
-description: Reference for supported operators, built-in functions, and formula errors in Vue Data Grid.
+description: Reference for supported operators, built-in functions, and formula errors in the Vue Data Grid Formula Cell feature.
 platform: ej2-javascript
 control: Formula Reference
-publishingplatform: Vue
 documentation: ug
 domainurl: ##DomainURL##
 ---
