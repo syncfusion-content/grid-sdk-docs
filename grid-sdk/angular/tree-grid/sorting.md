@@ -32,7 +32,7 @@ The following demo illustrates how to enable sorting in the tree grid.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/treegrid/sorting-cs1" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/sorting-cs1" %}
 
 ## Initial sorting
 
@@ -50,7 +50,7 @@ The following example demonstrates how to set `sortSettings.columns` for **Categ
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/treegrid/sorting-cs2" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/sorting-cs2" %}
 
 > The initial sorting defined in `sortSettings.columns` will override any sorting applied through interaction.
 
@@ -75,7 +75,7 @@ The following demo illustrates how to enable multi-column sorting in the tree gr
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/treegrid/sorting-cs3" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/sorting-cs3" %}
 
 ### Sort multiple columns without holding the CTRL key
 
@@ -93,7 +93,7 @@ The following example demonstrates how to enable the `enableSortMultiTouch` prop
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/treegrid/sorting-cs4" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/sorting-cs4" %}
 
 ## Prevent sorting for particular column
 
@@ -113,7 +113,7 @@ The following example demonstrates, how to disable sorting for **orderName** col
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/treegrid/sorting-cs6" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/sorting-cs6" %}
 
 ## Sort order
 
@@ -137,7 +137,7 @@ In the following example, the custom sort comparer function was defined in the *
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/treegrid/sorting-cs7" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/sorting-cs7" %}
 
 > The customSortComparer function takes two parameters: a and b. The a and b parameters are the values to be compared. The function returns -1, 0, or 1, depending on the comparison result.
 
@@ -169,7 +169,7 @@ In the following example, sorting is performed based on the **"ar"** locale usin
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/treegrid/sorting-cs8" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/sorting-cs8" %}
 
 ## Customize sort icon
 
@@ -199,7 +199,7 @@ In the below sample, tree grid is rendered with a customized sort icon.
 {% endhighlight %}
 {% endtabs %}
 	  
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/treegrid/sorting-cs9" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/sorting-cs9" %}
 
 ## Sort columns externally
 
@@ -221,7 +221,7 @@ The following example demonstrates how to add sort columns to a tree grid. It ut
 {% endhighlight %}
 {% endtabs %}
 	  
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/treegrid/sorting-cs10" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/sorting-cs10" %}
 
 ### Remove sort columns
 
@@ -239,7 +239,7 @@ The following example demonstrates how to remove sort columns. It utilizes the *
 {% endhighlight %}
 {% endtabs %}
 	  
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/treegrid/sorting-cs11" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/sorting-cs11" %}
 
 ### Clear sorting 
 
@@ -257,7 +257,7 @@ The following example demonstrates how to clear the sorting using `clearSorting`
 {% endhighlight %}
 {% endtabs %}
 	  
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/treegrid/sorting-cs12" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/sorting-cs12" %}
 
 ## Sorting events
 
@@ -280,6 +280,6 @@ The following example demonstrates how the `actionBegin` and `actionComplete` ev
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/treegrid/sorting-cs13" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/sorting-cs13" %}
 
 > [args.requestType](https://ej2.syncfusion.com/angular/documentation/api/grid/sortEventArgs#requesttype) refers to the current action being performed. For example in sorting, the `args.requestType` value is **sorting**.

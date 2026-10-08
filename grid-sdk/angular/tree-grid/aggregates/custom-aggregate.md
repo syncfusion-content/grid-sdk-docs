@@ -22,6 +22,6 @@ To calculate aggregate values using your own aggregation logic, use the custom a
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/treegrid/aggregate-cs2" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/aggregate-cs2" %}
 
 > To access the custom aggregate value inside a template, use the key `Custom` within the context of your footer or summary template.
