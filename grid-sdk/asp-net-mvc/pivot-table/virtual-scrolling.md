@@ -14,24 +14,11 @@ documentation: ug
 
 ## Virtual Scrolling
 
-Virtual scrolling enables efficient handling of large datasets by rendering only the rows and columns visible in the current viewport. This approach prevents performance degradation when working with substantial amounts of data, as content refreshes dynamically during vertical or horizontal scrolling. This feature can be enabled by setting the [EnableVirtualization](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_EnableVirtualization) property in [PivotView](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html) class to **true**.
+Virtual scrolling enables efficient handling of large datasets by rendering only the rows and columns visible in the current viewport. This approach prevents performance degradation when working with substantial amounts of data, as content refreshes dynamically during vertical or horizontal scrolling. This feature can be enabled by setting the [EnableVirtualization](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_EnableVirtualization) property in [PivotView](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html) class to **true**.
 
 N> The Virtualization and [Paging](./paging) features in the Pivot Table should not be enabled simultaneously. You can use either feature at a time, but not both together, as they are designed to handle data rendering differently and may conflict when used together.
 
 To use the virtual scrolling feature, inject the `VirtualScroll` module into the Pivot Table.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/virtual-scrolling/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="VirtualScrolling.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/virtual-scrolling/VirtualScrolling.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -41,7 +28,6 @@ To use the virtual scrolling feature, inject the `VirtualScroll` module into the
 {% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/virtual-scrolling/VirtualScrolling.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ![Virtual scrolling example](images/virtualscrolling.gif)
 
@@ -53,19 +39,6 @@ When virtual scrolling is enabled, the Pivot Table renders not only the current 
 
 To optimize performance, set the [AllowSinglePage](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewVirtualScrollSettingsBuilder.html#Syncfusion_EJ2_PivotView_PivotViewVirtualScrollSettingsBuilder_AllowSinglePage_System_Boolean_) property to **true** within the [virtualScrollSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewVirtualScrollSettings.html). Enabling this property ensures that only the rows and columns for the current view page are rendered during virtual scrolling. This significantly enhances the performance of the Pivot Table, especially during initial rendering and user actions such as drilling up, drilling down, sorting, filtering, and more.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/single-page-mode/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="SinglePageMode.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/single-page-mode/SinglePageMode.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/single-page-mode/razor %}
@@ -74,11 +47,10 @@ To optimize performance, set the [AllowSinglePage](https://help.syncfusion.com/c
 {% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/single-page-mode/SinglePageMode.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ## Limitations for Virtual Scrolling
 
-* In virtual scrolling, the [ColumnWidth](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewGridSettings.html#Syncfusion_EJ2_PivotView_PivotViewGridSettings_ColumnWidth) property in [GridSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewGridSettings.html) should be in pixels, and percentage values are not accepted.
+* In virtual scrolling, the [ColumnWidth](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewGridSettings.html#Syncfusion_EJ2_PivotView_PivotViewGridSettings_ColumnWidth) property in [GridSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewGridSettings.html) should be in pixels, and percentage values are not accepted.
 * Features such as auto fit, column resizing, text wrapping, and setting specific column widths through events can dynamically affect the row height and column width in the Pivot Table at runtime. However, these changes are not considered in the scroller calculations, particularly with large datasets. This can lead to performance issues and problems with UI functionality during scrolling. Therefore, it is not recommended to use these features alongside virtualization in the Pivot Table.
 * Grouping, which takes additional time to split the raw items into the provided format.
 * Date Formatting, which takes additional time to convert date format.
@@ -93,21 +65,8 @@ Virtual scrolling works automatically with "Popup" field lists when you set the 
 Here's how to make virtual scrolling work with a static field list:
 
 1. Enable virtual scrolling in the Pivot Table component by setting the [EnableVirtualization](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_EnableVirtualization) property to **true**, which improves performance for large datasets.
-2. Connect the PivotFieldList component to the Pivot Table component using the [load](https://ej2.syncfusion.com/documentation/common/api-l10n.html#load) event.
-3. Ensure synchronization between the Pivot Table and field list by updating the Pivot Table’s report configuration with the field list’s report configuration during the [load](https://ej2.syncfusion.com/documentation/common/api-l10n.html#load) event.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/field-list/static-fieldlist-virtualization/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Virtualization.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/field-list/static-fieldlist-virtualization/virtualization.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
+2. Connect the PivotFieldList component to the Pivot Table component using the `load` event.
+3. Ensure synchronization between the Pivot Table and field list by updating the Pivot Table’s report configuration with the field list’s report configuration during the `load` event.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -117,7 +76,6 @@ Here's how to make virtual scrolling work with a static field list:
 {% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/field-list/static-fieldlist-virtualization/virtualization.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ## See also
 

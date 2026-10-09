@@ -17,19 +17,6 @@ The classic layout, also known as the tabular layout, in the Syncfusion<sup styl
 
 To enable the classic layout, set the [Layout](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewGridSettings.html#Syncfusion_EJ2_PivotView_PivotViewGridSettings_Layout) property in the [PivotViewGridSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewGridSettings.html) of the Pivot Table to **Tabular**.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/classic-layout/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="ClassicLayout.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/classic-layout/ClassicLayout.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/classic-layout/razor %}
@@ -38,9 +25,6 @@ To enable the classic layout, set the [Layout](https://help.syncfusion.com/cr/as
 {% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/classic-layout/ClassicLayout.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
-
-
 
 ![Classic Layout](images/classic-layout.png)
 

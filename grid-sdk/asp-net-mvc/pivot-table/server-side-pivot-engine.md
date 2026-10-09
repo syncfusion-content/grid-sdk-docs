@@ -81,7 +81,7 @@ Launch your ASP.NET MVC application to view the Pivot Table. The Pivot Table wil
 
 ## Available configurations in Server-side application
 
-This section explains how to set up and use different data sources with the server-side Pivot Engine in the ASP.NET MVC [Pivot Table](https://ej2.syncfusion.com/aspnetmvc/documentation/pivot-table/getting-started).
+This section explains how to set up and use different data sources with the server-side Pivot Engine in the ASP.NET MVC [Pivot Table](https://help.syncfusion.com/grid-sdk/asp-net-mvc/pivot-table/getting-started).
 
 ### Supportive Data Sources
 
@@ -655,7 +655,7 @@ Finally, configure the `dataSourceSettings` property for the Pivot Table on the 
 
 #### Memory Cache
 
-In a server-side application, the [`Memory Cache`](https://docs.microsoft.com/en-us/dotnet/api/system.runtime.caching.memorycache?view=dotnet-plat-ext-5.0) option helps store the data source and engine properties in RAM for use during UI actions in the Pivot Table. This approach improves performance by preventing the need to recalculate aggregated values every time the user interacts with the Pivot Table. The following example shows how the memory cache is used in the **GetEngine** method to store engine properties:
+In a server-side application, the [`Memory Cache`](https://learn.microsoft.com/en-us/dotnet/api/system.runtime.caching.memorycache?view=net-11.0-pp&viewFallbackFrom=dotnet-plat-ext-5.0) option helps store the data source and engine properties in RAM for use during UI actions in the Pivot Table. This approach improves performance by preventing the need to recalculate aggregated values every time the user interacts with the Pivot Table. The following example shows how the memory cache is used in the **GetEngine** method to store engine properties:
 
 ```csharp
 public async Task<EngineProperties> GetEngine(FetchData param)
@@ -691,7 +691,7 @@ The memory cache is configured to expire after 60 minutes to help free up RAM. I
 
 ## Excel Export
 
-The server-side engine seamlessly supports Excel export functionality, enabling users to efficiently generate and download pivot table reports in Excel format directly from the server. To enable Excel export in the pivot table, set the [`AllowExcelExport`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_AllowExcelExport) property in [`PivotView`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html) class to **true**. Once the API is set, the user needs to call the  `excelExport` method to export the pivot table to Excel by clicking an external button.
+The server-side engine seamlessly supports Excel export functionality, enabling users to efficiently generate and download pivot table reports in Excel format directly from the server. To enable Excel export in the pivot table, set the [`AllowExcelExport`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_AllowExcelExport) property in [`PivotView`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html) class to **true**. Once the API is set, the user needs to call the  `excelExport` method to export the pivot table to Excel by clicking an external button.
 
 > The pivot table component can be exported to Excel format using options available in the toolbar. For more details [refer](./tool-bar) here.
 
@@ -829,7 +829,7 @@ The Excel export provides an option to include header and footer content for the
 
 ## CSV Export
 
-The Excel export allows pivot table data to be exported in **CSV** file format as well. To enable CSV export in the pivot table, set the [`AllowExcelExport`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_AllowExcelExport) property in [`PivotView`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html) class to **true**. Once the API is set, the user needs to call the `csvExport` method to export the pivot table to CSV by clicking an external button.
+The Excel export allows pivot table data to be exported in **CSV** file format as well. To enable CSV export in the pivot table, set the [`AllowExcelExport`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_AllowExcelExport) property in [`PivotView`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html) class to **true**. Once the API is set, the user needs to call the `csvExport` method to export the pivot table to CSV by clicking an external button.
 
 > The pivot table component can be exported to CSV format using options available in the toolbar. For more details [refer](./tool-bar) here.
 
@@ -1010,19 +1010,6 @@ The Pivot Table exposes a hook for every outgoing call through the [`BeforeServi
 
 Use a trusted token issued by the authentication flow after sign‑in. Keep tokens out of source control by retrieving them at runtime (for example, from a secure in‑memory store, a server endpoint that reads an **httpOnly** cookie, or a token manager that refreshes on expiry). Merge the token into request headers so every call carries proof of identity.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/paging/template/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Paging.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/paging/template/Paging.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/paging/template/razor %}
@@ -1031,7 +1018,6 @@ Use a trusted token issued by the authentication flow after sign‑in. Keep toke
 {% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/paging/template/Paging.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 **Production tips**
 - Load tokens on demand and rotate them regularly; never hard-code secrets in source control.

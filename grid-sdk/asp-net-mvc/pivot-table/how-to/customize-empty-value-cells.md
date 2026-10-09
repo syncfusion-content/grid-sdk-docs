@@ -20,19 +20,6 @@ Use the [`EmptyCellsTextContent`](https://help.syncfusion.com/cr/aspnetmvc-js2/S
 
 The following example demonstrates how to configure custom text for empty value cells during the initial rendering of the Pivot Table component:
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/custom-cell-text/custom-cell-text/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="CustomText.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/custom-cell-text/custom-cell-text/CustomText.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/custom-cell-text/custom-cell-text/razor %}
@@ -41,6 +28,3 @@ The following example demonstrates how to configure custom text for empty value 
 {% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/custom-cell-text/custom-cell-text/CustomText.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
-
-

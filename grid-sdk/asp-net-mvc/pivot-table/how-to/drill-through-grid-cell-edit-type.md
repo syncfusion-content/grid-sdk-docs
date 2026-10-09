@@ -18,19 +18,6 @@ Using the [`DrillThrough`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusi
 
 The following edit types are available for different data types:
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/summary-customization/edit-type/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="EditType.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/summary-customization/edit-type/EditType.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/summary-customization/edit-type/razor %}
@@ -39,8 +26,5 @@ The following edit types are available for different data types:
 {% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/summary-customization/edit-type/EditType.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
-
-
 
 ![Drill Through Grid Cell Edit Type](../images/edit-type.png)

@@ -20,19 +20,6 @@ You can use the [`DataBound`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncf
 
 In the following example, we have added two custom aggregation types **CustomAggregateType 1** (which calculates a weighted average) and **CustomAggregateType 2** (which calculates the percentage of total) to the aggregate menu.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/add-custom-aggregation/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="CustomAggregation.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/add-custom-aggregation/CustomAggregation.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/add-custom-aggregation/razor %}
@@ -41,6 +28,5 @@ In the following example, we have added two custom aggregation types **CustomAgg
 {% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/add-custom-aggregation/CustomAggregation.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ![Add custom aggregation type to the menu](../images/add-custom-aggregation-type-in-menu.png)

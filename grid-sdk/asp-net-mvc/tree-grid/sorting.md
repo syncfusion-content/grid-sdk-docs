@@ -58,51 +58,6 @@ During the sort action, the treegrid component triggers two events. The [`Action
 
 * > The **args.requestType** is the current action name. For example, in sorting the **args.requestType** value is 'sorting'.
 
-<!--  Custom sort comparer
-
-You can customize the default sort action for a column by defining the [`column.sortComparer`](../../api/treegrid/column/#sortcomparer) property. The sort comparer function has the same functionality like [`Array.sort`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort) sort comparer.
-
-In the following example, custom sort comparer function was defined in the `Category` column.
-
-
-```typescript
-import { TreeGrid, Sort } from '@syncfusion/ej2-treegrid';
-import { sortData } from './datasource.ts';
-
-TreeGrid.Inject(Sort);
-
-// The custom function
-let sortComparer: (reference: string, comparer:  string) => number = (reference: string,
-comparer:  string) => {
-    if (reference < comparer) {
-        return -1;
-    }
-    if (reference > comparer) {
-        return 1;
-    }
-    return 0;
-};
-
-let treeGridObj: TreeGrid = new TreeGrid({
-    dataSource: sortData,
-    childMapping: 'subtasks',
-    allowSorting: true,
-    height: 315,
-    treeColumnIndex: 1,
-    columns: [
-        { field: 'Category', headerText: 'Category', width: 140 },
-        { field: 'orderName', headerText: 'Order Name', width: 200 },
-        { field: 'orderDate', headerText: 'Order Date', width: 120, textAlign: 'Right', format: 'yMd', type: 'date' },
-        { field: 'units', headerText: 'Units', width: 90, textAlign: 'Right' }
-    ]
-});
-
-treeGridObj.appendTo('#TreeGrid');
-
-```
-
-N> The sort comparer function will work only for the local data. -->
-
 ## Touch interaction
 
 When you tap the treegrid header on touchscreen devices, the selected column header is sorted. A popup ![Multi column sorting](images/sorting.jpg) is displayed for multi-column sorting. To sort multiple columns, tap the popup![Multi sorting](images/msorting.jpg), and then tap the desired treegrid headers.

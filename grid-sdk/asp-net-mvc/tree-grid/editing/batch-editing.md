@@ -1,7 +1,7 @@
 ---
 layout: post
 title: ASP.NET MVC TreeGrid Batch Editing | Syncfusion
-description: Learn how to use batch editing in ASP.NET MVC TreeGrid to edit multiple cells, perform bulk updates, and save changes efficientlyNET MVC Tree Grid component of Syncfusion Essential JS 2 and more.
+description: Learn how to use batch editing in the ASP.NET MVC TreeGrid to edit multiple cells, perform bulk updates, and save changes efficiently with Essential JS 2.
 platform: grid-sdk
 control: Batch Editing
 documentation: ug

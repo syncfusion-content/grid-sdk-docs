@@ -19,34 +19,21 @@ Users can create calculated fields in two convenient ways:
 - **Interactive Method**: Using the built-in dialog accessible from the Field List UI.
 - **Code-Based Method**: Configuring fields programmatically using the [`PivotViewCalculatedFieldsSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewCalculatedFieldSetting.html) property.
 
-To enable the calculated field functionality, set the [`AllowCalculatedField`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_AllowCalculatedField) property to **true**. Once enabled, a "CALCULATED FIELD" button appears in the Field List UI. Clicking this button opens the calculated field dialog, where users can create and manage custom fields using an intuitive interface.
+To enable the calculated field functionality, set the [`AllowCalculatedField`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_AllowCalculatedField) property to **true**. Once enabled, a "CALCULATED FIELD" button appears in the Field List UI. Clicking this button opens the calculated field dialog, where users can create and manage custom fields using an intuitive interface.
 
 ### Defining calculated fields programmatically
 
 You can define calculated fields programmatically using the [`PivotViewCalculatedFieldsSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewCalculatedFieldSetting.html) property. This approach is ideal for pre-configuring specific calculations. The following properties are essential for creating a calculated field:
 
-- [`Name`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewCalculatedFieldSetting.html#Syncfusion_EJ2_PivotView_PivotViewCalculatedFieldSetting_Name): Specifies a unique name for the calculated field.
-- [`Formula`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewCalculatedFieldSetting.html#Syncfusion_EJ2_PivotView_PivotViewCalculatedFieldSetting_Formula): Defines the mathematical expression using existing field names and arithmetic operators.
-- [`Format`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewFormatSetting.html#Syncfusion_EJ2_PivotView_PivotViewFormatSetting_Format): Configures the number format for displaying calculated results.
+- [`Name`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewCalculatedFieldSetting.html#Syncfusion_EJ2_PivotView_PivotViewCalculatedFieldSetting_Name): Specifies a unique name for the calculated field.
+- [`Formula`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewCalculatedFieldSetting.html#Syncfusion_EJ2_PivotView_PivotViewCalculatedFieldSetting_Formula): Defines the mathematical expression using existing field names and arithmetic operators.
+- [`Format`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewFormatSetting.html#Syncfusion_EJ2_PivotView_PivotViewFormatSetting_Format): Configures the number format for displaying calculated results.
 
 To use the calculated field feature, you must inject the `CalculatedField` module into the pivot table.
 
 N>
 - The calculated field feature applies only to value fields. By default, calculated fields created programmatically are added to the field list and calculated field dialog UI. To display a calculated field in the pivot table UI, it must be added to the [`Values`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html#Syncfusion_EJ2_PivotView_PivotViewDataSourceSettings_Values) property, as shown in the code below.
 - The following advanced aggregation types are not supported within calculated field formulas: `Index`, `RunningTotals`, `PercentageOfRunningTotals`, `PercentageOfGrandTotal`, `PercentageOfColumnTotal`, `PercentageOfRowTotal`, `PercentageOfParentColumnTotal`, `PercentageOfParentRowTotal`, `DifferenceFrom`, `PercentageOfDifferenceFrom`, and `PercentageOfParentTotal`.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/calculatedfield/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Calculatedfield.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/calculatedfield/calculatedfield.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -56,28 +43,12 @@ N>
 {% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/calculatedfield/calculatedfield.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
-
-
 
 ![CalculatedField applied](images/calculatedfield.png)
 
 ## Opening the calculated field dialog programmatically
 
 You can display the calculated field dialog by calling the `CreateCalculatedFieldDialog` method when an external button is clicked. This provides additional flexibility for accessing the calculated field functionality.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/getting-start-core/calculatedfield/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Calculatedfield.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/getting-start-core/calculatedfield/calculatedfield.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -87,9 +58,6 @@ You can display the calculated field dialog by calling the `CreateCalculatedFiel
 {% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/getting-start-core/calculatedfield/calculatedfield.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
-
-
 
 ![Pivot Table - calculated field](images/calc-field-btn.png)
 
@@ -175,7 +143,7 @@ To reuse an existing formula:
 
 Formatting calculated field values enhances the readability and insight of your data in the pivot table. You can apply different formats using the calculated field dialog in the UI or programmatically through code.
 
-To format calculated field values in your code, use the [`FormatSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewFormatSettings.html) property. For more information about supported number formats, refer to the documentation [`here`](https://ej2.syncfusion.com/aspnetmvc/documentation/pivot-table/number-formatting).
+To format calculated field values in your code, use the [`FormatSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewFormatSettings.html) property. For more information about supported number formats, refer to the documentation [`here`](https://help.syncfusion.com/grid-sdk/asp-net-mvc/pivot-table/number-formatting).
 
 ### Formatting through the user interface
 
@@ -317,19 +285,6 @@ Below is a list of operators and functions that can be used in the formula to cr
 
  > Also, you can use JavaScript [Math](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math) object properties and methods directly to the formula.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/calculatedfield-condition/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Calculatedfield.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/calculatedfield-condition/calculatedfield.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/calculatedfield-condition/razor %}
@@ -338,9 +293,6 @@ Below is a list of operators and functions that can be used in the formula to cr
 {% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/calculatedfield-condition/calculatedfield.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
-
-
 
 ![Calculated field with conditional formula](images/calculatedfield-conditional.png)
 
@@ -348,7 +300,7 @@ Below is a list of operators and functions that can be used in the formula to cr
 
 ### CalculatedFieldCreate
 
-The [`CalculatedFieldCreate`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_CalculatedFieldCreate) event enables you to validate and manage calculated field details before they are applied to the pivot table. This ensures data accuracy and prevents invalid configurations. The event is triggered when the "OK" button is clicked to close the calculated field dialog, allowing you to modify or validate the calculated field information before it is saved.
+The [`CalculatedFieldCreate`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_CalculatedFieldCreate) event enables you to validate and manage calculated field details before they are applied to the pivot table. This ensures data accuracy and prevents invalid configurations. The event is triggered when the "OK" button is clicked to close the calculated field dialog, allowing you to modify or validate the calculated field information before it is saved.
 
 **Event Parameters:**
 
@@ -368,19 +320,6 @@ The event provides the following parameters to facilitate interaction with calcu
 
 The following example shows how to prevent users from creating calculated fields without setting a format:
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/calculatedfieldCreate/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="CalculatedfieldCreate.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/calculatedfieldCreate/calculatedfieldCreate.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/calculatedfieldCreate/razor %}
@@ -389,11 +328,10 @@ The following example shows how to prevent users from creating calculated fields
 {% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/calculatedfieldCreate/calculatedfieldCreate.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ### ActionBegin
 
-The [`ActionBegin`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_ActionBegin) event allows you to control and monitor calculated field operations before they are executed, enabling you to validate or restrict user actions as needed.
+The [`ActionBegin`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_ActionBegin) event allows you to control and monitor calculated field operations before they are executed, enabling you to validate or restrict user actions as needed.
 
 This event is triggered when users interact with calculated field functionality in the following ways:
 - Clicking the calculated field button
@@ -422,20 +360,7 @@ The event provides the following parameters to help you handle these interaction
 
 **Example:**
 
-The example below illustrates how to prevent access to the calculated field dialog by canceling the action triggered when a user clicks the calculated field button. This is achieved by setting the **args.cancel** property to **true** within the [`ActionBegin`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_ActionBegin) event:
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/action-event/actionBegin-calculatedField/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="ActionBegin-calculatedField.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/action-event/actionBegin-calculatedField/actionBegin-calculatedField.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
+The example below illustrates how to prevent access to the calculated field dialog by canceling the action triggered when a user clicks the calculated field button. This is achieved by setting the **args.cancel** property to **true** within the [`ActionBegin`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_ActionBegin) event:
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -445,11 +370,10 @@ The example below illustrates how to prevent access to the calculated field dial
 {% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/action-event/actionBegin-calculatedField/actionBegin-calculatedField.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ### ActionComplete
 
-The [`ActionComplete`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_ActionComplete) event enables you to track when calculated field operations are successfully completed in the Pivot Table. This event is useful for performing additional actions or logging activities after users create or modify calculated fields.
+The [`ActionComplete`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_ActionComplete) event enables you to track when calculated field operations are successfully completed in the Pivot Table. This event is useful for performing additional actions or logging activities after users create or modify calculated fields.
 
 The event provides the following parameters to help you handle completed operations:
 
@@ -472,20 +396,7 @@ The event provides the following parameters to help you handle completed operati
 
 **Example:**
 
-The example below demonstrates how to use the [`ActionComplete`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_ActionComplete) event to log information when calculated field operations are completed:
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/action-event/actionComplete-calculatedField/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="ActionComplete-calculatedField.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/action-event/actionComplete-calculatedField/actionComplete-calculatedField.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
+The example below demonstrates how to use the [`ActionComplete`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_ActionComplete) event to log information when calculated field operations are completed:
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -495,11 +406,10 @@ The example below demonstrates how to use the [`ActionComplete`](https://help.sy
 {% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/action-event/actionComplete-calculatedField/actionComplete-calculatedField.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ### ActionFailure
 
-The [`ActionFailure`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_ActionFailure) event is triggered when a UI action fails to produce the expected result. This event provides detailed information about the failure through the following parameters:
+The [`ActionFailure`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_ActionFailure) event is triggered when a UI action fails to produce the expected result. This event provides detailed information about the failure through the following parameters:
 
 * `actionName`: It holds the name of the current action failed. The following are the UI actions and their names:
 
@@ -511,19 +421,6 @@ The [`ActionFailure`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.E
 
 * `errorInfo`: It holds the error information of the current UI action.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/action-event/actionFailure-calculatedField/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="ActionFailure-calculatedField.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/action-event/actionFailure-calculatedField/actionFailure-calculatedField.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/action-event/actionFailure-calculatedField/razor %}
@@ -532,4 +429,3 @@ The [`ActionFailure`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.E
 {% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/action-event/actionFailure-calculatedField/actionFailure-calculatedField.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}

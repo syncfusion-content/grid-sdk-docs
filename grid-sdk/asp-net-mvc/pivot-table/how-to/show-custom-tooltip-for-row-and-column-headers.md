@@ -14,19 +14,6 @@ To display tooltips for row and column headers, initialize an external `Tooltip`
 
 For row header tooltips, the formatted text and field name of the current row header are retrieved from the [`PivotValues`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_PivotValues) and displayed in the tooltip. For column header tooltips, the text content of the respective column header element is extracted and displayed directly in the tooltip.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/custom-tooltip/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="CustomTooltip.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/custom-tooltip/CustomTooltip.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/custom-tooltip/razor %}
@@ -35,6 +22,5 @@ For row header tooltips, the formatted text and field name of the current row he
 {% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/custom-tooltip/CustomTooltip.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ![Show tooltip for row and column headers](../images/custom-tooltip.png)

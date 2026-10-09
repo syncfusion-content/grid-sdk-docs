@@ -18,19 +18,6 @@ The [`BeginDrillThrough`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusio
 
 > Grid features are segregated into individual feature-wise modules. For example, to use the sorting feature, the `Sort` module must be injected using the `Grid.Inject(Sort)` method.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/custom-editing/custom-editing/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="CustomEditing.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/custom-editing/custom-editing/CustomEditing.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/custom-editing/custom-editing/razor %}
@@ -39,6 +26,3 @@ The [`BeginDrillThrough`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusio
 {% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/custom-editing/custom-editing/CustomEditing.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
-
-

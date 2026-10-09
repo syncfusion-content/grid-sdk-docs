@@ -12,19 +12,6 @@ documentation: ug
 
 The `minHeight` property allows you to change the minimum height for the pivot table control. For the pivot table control, the default minimum height is **300px**.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/summary-customization/min-height/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="MinHeight.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/summary-customization/min-height/MinHeight.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/summary-customization/min-height/razor %}
@@ -33,5 +20,3 @@ The `minHeight` property allows you to change the minimum height for the pivot t
 {% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/summary-customization/min-height/MinHeight.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
-

@@ -4,7 +4,6 @@ title: ASP.NET MVC TreeGrid Toolbar | Syncfusion
 description: Learn how to customize the toolbar in ASP.NET MVC TreeGrid, including item control, toolbar placement, and toolbar templates.
 platform: grid-sdk
 control: Tool Bar
-publishingplatform: grid-sdk
 documentation: ug
 ---
 
