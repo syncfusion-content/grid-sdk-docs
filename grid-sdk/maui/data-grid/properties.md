@@ -1162,89 +1162,89 @@ result.</td>
     </tr>
     <tr valign="top">
         <td><a href="https://help.syncfusion.com/cr/maui/Syncfusion.Maui.DataGrid.SfDataGrid.html#Syncfusion_Maui_DataGrid_SfDataGrid_AddNewRowInitiating" aria-label="View AddNewRowInitiating event in API reference">AddNewRowInitiating</a></td>
-        <td><a href="https://learn.microsoft.com/dotnet/api/system.eventhandler-1" aria-label="View EventHandler type in API reference">EventHandler</a>&lt;<a href="https://help.syncfusion.com/cr/maui/Syncfusion.Maui.DataGrid.DataGridAddNewRowInitiatingEventArgs.html" aria-label="View DataGridAddNewRowInitiatingEventArgs type in API reference">DataGridAddNewRowInitiatingEventArgs</a>&gt;</td>
+        <td><a href="https://learn.microsoft.com/dotnet/api/system.eventhandler-1" aria-label="View EventHandler type in API reference">EventHandler&lt;<a href="https://help.syncfusion.com/cr/maui/Syncfusion.Maui.DataGrid.DataGridAddNewRowInitiatingEventArgs.html" aria-label="View DataGridAddNewRowInitiatingEventArgs type in API reference">DataGridAddNewRowInitiatingEventArgs&gt;</a></a></td>
         <td>Triggered when the add new row process is initiated.</td>
     </tr>
 <tr valign="top">
         <td><a href="https://help.syncfusion.com/cr/maui/Syncfusion.Maui.DataGrid.SfDataGrid.html#Syncfusion_Maui_DataGrid_SfDataGrid_AutoGeneratingColumn" aria-label="View AutoGeneratingColumn event in API reference">AutoGeneratingColumn</a></td>
-        <td><a href="https://learn.microsoft.com/dotnet/api/system.eventhandler-1" aria-label="View EventHandler type in API reference">EventHandler</a>&lt;<a href="https://help.syncfusion.com/cr/maui/Syncfusion.Maui.DataGrid.DataGridAutoGeneratingColumnEventArgs.html" aria-label="View DataGridAutoGeneratingColumnEventArgs type in API reference">DataGridAutoGeneratingColumnEventArgs</a>&gt;</td>
+        <td><a href="https://learn.microsoft.com/dotnet/api/system.eventhandler-1" aria-label="View EventHandler type in API reference">EventHandler&lt;<a href="https://help.syncfusion.com/cr/maui/Syncfusion.Maui.DataGrid.DataGridAutoGeneratingColumnEventArgs.html" aria-label="View DataGridAutoGeneratingColumnEventArgs type in API reference">DataGridAutoGeneratingColumnEventArgs&gt;</a></a></td>
         <td>Triggered when column is generated for the properties from underlying data object.</td>
     </tr>
 <tr valign="top">
         <td><a href="https://help.syncfusion.com/cr/maui/Syncfusion.Maui.DataGrid.SfDataGrid.html#Syncfusion_Maui_DataGrid_SfDataGrid_AutoGeneratingRelations" aria-label="View AutoGeneratingRelations event in API reference">AutoGeneratingRelations</a></td>
-        <td><a href="https://learn.microsoft.com/dotnet/api/system.eventhandler-1" aria-label="View EventHandler type in API reference">EventHandler</a>&lt;<a href="https://help.syncfusion.com/cr/maui/Syncfusion.Maui.DataGrid.DataGridAutoGeneratingRelationsArgs.html" aria-label="View DataGridAutoGeneratingRelationsArgs type in API reference">DataGridAutoGeneratingRelationsArgs</a>&gt;</td>
+        <td><a href="https://learn.microsoft.com/dotnet/api/system.eventhandler-1" aria-label="View EventHandler type in API reference">EventHandler&lt;<a href="https://help.syncfusion.com/cr/maui/Syncfusion.Maui.DataGrid.DataGridAutoGeneratingRelationsArgs.html" aria-label="View DataGridAutoGeneratingRelationsArgs type in API reference">DataGridAutoGeneratingRelationsArgs&gt;</a></a></td>
         <td>Triggered when the relations for Master-Details View is generated automatically.</td>
     </tr>
 <tr valign="top">
         <td><a href="https://help.syncfusion.com/cr/maui/Syncfusion.Maui.DataGrid.SfDataGrid.html#Syncfusion_Maui_DataGrid_SfDataGrid_CellDoubleTapped" aria-label="View CellDoubleTapped event in API reference">CellDoubleTapped</a></td>
-        <td><a href="https://learn.microsoft.com/dotnet/api/system.eventhandler-1" aria-label="View EventHandler type in API reference">EventHandler</a>&lt;<a href="https://help.syncfusion.com/cr/maui/Syncfusion.Maui.DataGrid.DataGridCellDoubleTappedEventArgs.html" aria-label="View DataGridCellDoubleTappedEventArgs type in API reference">DataGridCellDoubleTappedEventArgs</a>&gt;</td>
+        <td><a href="https://learn.microsoft.com/dotnet/api/system.eventhandler-1" aria-label="View EventHandler type in API reference">EventHandler&lt;<a href="https://help.syncfusion.com/cr/maui/Syncfusion.Maui.DataGrid.DataGridCellDoubleTappedEventArgs.html" aria-label="View DataGridCellDoubleTappedEventArgs type in API reference">DataGridCellDoubleTappedEventArgs&gt;</a></a></td>
         <td>Triggered when the cell is tapped twice.</td>
     </tr>
 <tr valign="top">
         <td><a href="https://help.syncfusion.com/cr/maui/Syncfusion.Maui.DataGrid.SfDataGrid.html#Syncfusion_Maui_DataGrid_SfDataGrid_CellEntered" aria-label="View CellEntered event in API reference">CellEntered</a></td>
-        <td><a href="https://learn.microsoft.com/dotnet/api/system.eventhandler-1" aria-label="View EventHandler type in API reference">EventHandler</a>&lt;<a href="https://help.syncfusion.com/cr/maui/Syncfusion.Maui.DataGrid.DataGridCellEnteredEventArgs.html" aria-label="View DataGridCellEnteredEventArgs type in API reference">DataGridCellEnteredEventArgs</a>&gt;</td>
+        <td><a href="https://learn.microsoft.com/dotnet/api/system.eventhandler-1" aria-label="View EventHandler type in API reference">EventHandler&lt;<a href="https://help.syncfusion.com/cr/maui/Syncfusion.Maui.DataGrid.DataGridCellEnteredEventArgs.html" aria-label="View DataGridCellEnteredEventArgs type in API reference">DataGridCellEnteredEventArgs&gt;</a></a></td>
         <td>Triggered when the mouse is entered to the cell.</td>
     </tr>
 <tr valign="top">
         <td><a href="https://help.syncfusion.com/cr/maui/Syncfusion.Maui.DataGrid.SfDataGrid.html#Syncfusion_Maui_DataGrid_SfDataGrid_CellExited" aria-label="View CellExited event in API reference">CellExited</a></td>
-        <td><a href="https://learn.microsoft.com/dotnet/api/system.eventhandler-1" aria-label="View EventHandler type in API reference">EventHandler</a>&lt;<a href="https://help.syncfusion.com/cr/maui/Syncfusion.Maui.DataGrid.DataGridCellExitedEventArgs.html" aria-label="View DataGridCellExitedEventArgs type in API reference">DataGridCellExitedEventArgs</a>&gt;</td>
+        <td><a href="https://learn.microsoft.com/dotnet/api/system.eventhandler-1" aria-label="View EventHandler type in API reference">EventHandler&lt;<a href="https://help.syncfusion.com/cr/maui/Syncfusion.Maui.DataGrid.DataGridCellExitedEventArgs.html" aria-label="View DataGridCellExitedEventArgs type in API reference">DataGridCellExitedEventArgs&gt;</a></a></td>
         <td>Triggered when the mouse is exited from the cell.</td>
     </tr>
 <tr valign="top">
         <td><a href="https://help.syncfusion.com/cr/maui/Syncfusion.Maui.DataGrid.SfDataGrid.html#Syncfusion_Maui_DataGrid_SfDataGrid_CellHovered" aria-label="View CellHovered event in API reference">CellHovered</a></td>
-        <td><a href="https://learn.microsoft.com/dotnet/api/system.eventhandler-1" aria-label="View EventHandler type in API reference">EventHandler</a>&lt;<a href="https://help.syncfusion.com/cr/maui/Syncfusion.Maui.DataGrid.DataGridCellHoveredEventArgs.html" aria-label="View DataGridCellHoveredEventArgs type in API reference">DataGridCellHoveredEventArgs</a>&gt;</td>
+        <td><a href="https://learn.microsoft.com/dotnet/api/system.eventhandler-1" aria-label="View EventHandler type in API reference">EventHandler&lt;<a href="https://help.syncfusion.com/cr/maui/Syncfusion.Maui.DataGrid.DataGridCellHoveredEventArgs.html" aria-label="View DataGridCellHoveredEventArgs type in API reference">DataGridCellHoveredEventArgs&gt;</a></a></td>
         <td>Triggered when the mouse is hovered in the cell.</td>
     </tr>
 <tr valign="top">
         <td><a href="https://help.syncfusion.com/cr/maui/Syncfusion.Maui.DataGrid.SfDataGrid.html#Syncfusion_Maui_DataGrid_SfDataGrid_CellLongPress" aria-label="View CellLongPress event in API reference">CellLongPress</a></td>
-        <td><a href="https://learn.microsoft.com/dotnet/api/system.eventhandler-1" aria-label="View EventHandler type in API reference">EventHandler</a>&lt;<a href="https://help.syncfusion.com/cr/maui/Syncfusion.Maui.DataGrid.DataGridCellLongPressEventArgs.html" aria-label="View DataGridCellLongPressEventArgs type in API reference">DataGridCellLongPressEventArgs</a>&gt;</td>
+        <td><a href="https://learn.microsoft.com/dotnet/api/system.eventhandler-1" aria-label="View EventHandler type in API reference">EventHandler&lt;<a href="https://help.syncfusion.com/cr/maui/Syncfusion.Maui.DataGrid.DataGridCellLongPressEventArgs.html" aria-label="View DataGridCellLongPressEventArgs type in API reference">DataGridCellLongPressEventArgs&gt;</a></a></td>
         <td>Triggered when the cell is long pressed for particular period.</td>
     </tr>
 <tr valign="top">
         <td><a href="https://help.syncfusion.com/cr/maui/Syncfusion.Maui.DataGrid.SfDataGrid.html#Syncfusion_Maui_DataGrid_SfDataGrid_CellRedoing" aria-label="View CellRedoing event in API reference">CellRedoing</a></td>
-        <td><a href="https://learn.microsoft.com/dotnet/api/system.eventhandler-1" aria-label="View EventHandler type in API reference">EventHandler</a>&lt;<a href="https://help.syncfusion.com/cr/maui/Syncfusion.Maui.DataGrid.DataGridUndoRedoEventArgs.html" aria-label="View DataGridUndoRedoEventArgs type in API reference">DataGridUndoRedoEventArgs</a>&gt;</td>
+        <td><a href="https://learn.microsoft.com/dotnet/api/system.eventhandler-1" aria-label="View EventHandler type in API reference">EventHandler&lt;<a href="https://help.syncfusion.com/cr/maui/Syncfusion.Maui.DataGrid.DataGridUndoRedoEventArgs.html" aria-label="View DataGridUndoRedoEventArgs type in API reference">DataGridUndoRedoEventArgs&gt;</a></a></td>
         <td>Triggered before a cell edit is redone.
 This event can be cancelled to prevent the redo operation from occurring.</td>
     </tr>
 <tr valign="top">
         <td><a href="https://help.syncfusion.com/cr/maui/Syncfusion.Maui.DataGrid.SfDataGrid.html#Syncfusion_Maui_DataGrid_SfDataGrid_CellRightTapped" aria-label="View CellRightTapped event in API reference">CellRightTapped</a></td>
-        <td><a href="https://learn.microsoft.com/dotnet/api/system.eventhandler-1" aria-label="View EventHandler type in API reference">EventHandler</a>&lt;<a href="https://help.syncfusion.com/cr/maui/Syncfusion.Maui.DataGrid.DataGridCellRightTappedEventArgs.html" aria-label="View DataGridCellRightTappedEventArgs type in API reference">DataGridCellRightTappedEventArgs</a>&gt;</td>
+        <td><a href="https://learn.microsoft.com/dotnet/api/system.eventhandler-1" aria-label="View EventHandler type in API reference">EventHandler&lt;<a href="https://help.syncfusion.com/cr/maui/Syncfusion.Maui.DataGrid.DataGridCellRightTappedEventArgs.html" aria-label="View DataGridCellRightTappedEventArgs type in API reference">DataGridCellRightTappedEventArgs&gt;</a></a></td>
         <td>Triggered when a cell in the data grid is right-clicked using the mouse.</td>
     </tr>
 <tr valign="top">
         <td><a href="https://help.syncfusion.com/cr/maui/Syncfusion.Maui.DataGrid.SfDataGrid.html#Syncfusion_Maui_DataGrid_SfDataGrid_CellTapped" aria-label="View CellTapped event in API reference">CellTapped</a></td>
-        <td><a href="https://learn.microsoft.com/dotnet/api/system.eventhandler-1" aria-label="View EventHandler type in API reference">EventHandler</a>&lt;<a href="https://help.syncfusion.com/cr/maui/Syncfusion.Maui.DataGrid.DataGridCellTappedEventArgs.html" aria-label="View DataGridCellTappedEventArgs type in API reference">DataGridCellTappedEventArgs</a>&gt;</td>
+        <td><a href="https://learn.microsoft.com/dotnet/api/system.eventhandler-1" aria-label="View EventHandler type in API reference">EventHandler&lt;<a href="https://help.syncfusion.com/cr/maui/Syncfusion.Maui.DataGrid.DataGridCellTappedEventArgs.html" aria-label="View DataGridCellTappedEventArgs type in API reference">DataGridCellTappedEventArgs&gt;</a></a></td>
         <td>Triggered when the cell is tapped.</td>
     </tr>
 <tr valign="top">
         <td><a href="https://help.syncfusion.com/cr/maui/Syncfusion.Maui.DataGrid.SfDataGrid.html#Syncfusion_Maui_DataGrid_SfDataGrid_CellToolTipOpening" aria-label="View CellToolTipOpening event in API reference">CellToolTipOpening</a></td>
-        <td><a href="https://learn.microsoft.com/dotnet/api/system.eventhandler-1" aria-label="View EventHandler type in API reference">EventHandler</a>&lt;<a href="https://help.syncfusion.com/cr/maui/Syncfusion.Maui.DataGrid.DataGridCellToolTipOpeningEventArgs.html" aria-label="View DataGridCellToolTipOpeningEventArgs type in API reference">DataGridCellToolTipOpeningEventArgs</a>&gt;</td>
+        <td><a href="https://learn.microsoft.com/dotnet/api/system.eventhandler-1" aria-label="View EventHandler type in API reference">EventHandler&lt;<a href="https://help.syncfusion.com/cr/maui/Syncfusion.Maui.DataGrid.DataGridCellToolTipOpeningEventArgs.html" aria-label="View DataGridCellToolTipOpeningEventArgs type in API reference">DataGridCellToolTipOpeningEventArgs&gt;</a></a></td>
         <td>Triggered when a tooltip is about to be opened for a cell in the SfDataGrid.</td>
     </tr>
 <tr valign="top">
         <td><a href="https://help.syncfusion.com/cr/maui/Syncfusion.Maui.DataGrid.SfDataGrid.html#Syncfusion_Maui_DataGrid_SfDataGrid_CellUndoing" aria-label="View CellUndoing event in API reference">CellUndoing</a></td>
-        <td><a href="https://learn.microsoft.com/dotnet/api/system.eventhandler-1" aria-label="View EventHandler type in API reference">EventHandler</a>&lt;<a href="https://help.syncfusion.com/cr/maui/Syncfusion.Maui.DataGrid.DataGridUndoRedoEventArgs.html" aria-label="View DataGridUndoRedoEventArgs type in API reference">DataGridUndoRedoEventArgs</a>&gt;</td>
+        <td><a href="https://learn.microsoft.com/dotnet/api/system.eventhandler-1" aria-label="View EventHandler type in API reference">EventHandler&lt;<a href="https://help.syncfusion.com/cr/maui/Syncfusion.Maui.DataGrid.DataGridUndoRedoEventArgs.html" aria-label="View DataGridUndoRedoEventArgs type in API reference">DataGridUndoRedoEventArgs&gt;</a></a></td>
         <td>Triggered before a cell edit is undone.
 This event can be cancelled to prevent the undo operation from occurring.</td>
     </tr>
 <tr valign="top">
         <td><a href="https://help.syncfusion.com/cr/maui/Syncfusion.Maui.DataGrid.SfDataGrid.html#Syncfusion_Maui_DataGrid_SfDataGrid_CellValidated" aria-label="View CellValidated event in API reference">CellValidated</a></td>
-        <td><a href="https://learn.microsoft.com/dotnet/api/system.eventhandler-1" aria-label="View EventHandler type in API reference">EventHandler</a>&lt;<a href="https://help.syncfusion.com/cr/maui/Syncfusion.Maui.DataGrid.DataGridCellValidatedEventArgs.html" aria-label="View DataGridCellValidatedEventArgs type in API reference">DataGridCellValidatedEventArgs</a>&gt;</td>
+        <td><a href="https://learn.microsoft.com/dotnet/api/system.eventhandler-1" aria-label="View EventHandler type in API reference">EventHandler&lt;<a href="https://help.syncfusion.com/cr/maui/Syncfusion.Maui.DataGrid.DataGridCellValidatedEventArgs.html" aria-label="View DataGridCellValidatedEventArgs type in API reference">DataGridCellValidatedEventArgs&gt;</a></a></td>
         <td>Triggered when the current cell is validated.</td>
     </tr>
 <tr valign="top">
         <td><a href="https://help.syncfusion.com/cr/maui/Syncfusion.Maui.DataGrid.SfDataGrid.html#Syncfusion_Maui_DataGrid_SfDataGrid_CellValidating" aria-label="View CellValidating event in API reference">CellValidating</a></td>
-        <td><a href="https://learn.microsoft.com/dotnet/api/system.eventhandler-1" aria-label="View EventHandler type in API reference">EventHandler</a>&lt;<a href="https://help.syncfusion.com/cr/maui/Syncfusion.Maui.DataGrid.DataGridCellValidatingEventArgs.html" aria-label="View DataGridCellValidatingEventArgs type in API reference">DataGridCellValidatingEventArgs</a>&gt;</td>
+        <td><a href="https://learn.microsoft.com/dotnet/api/system.eventhandler-1" aria-label="View EventHandler type in API reference">EventHandler&lt;<a href="https://help.syncfusion.com/cr/maui/Syncfusion.Maui.DataGrid.DataGridCellValidatingEventArgs.html" aria-label="View DataGridCellValidatingEventArgs type in API reference">DataGridCellValidatingEventArgs&gt;</a></a></td>
         <td>Triggered while moving to other cells from edited cell for validating the user input.</td>
     </tr>
 <tr valign="top">
         <td><a href="https://help.syncfusion.com/cr/maui/Syncfusion.Maui.DataGrid.SfDataGrid.html#Syncfusion_Maui_DataGrid_SfDataGrid_CellValueChanged" aria-label="View CellValueChanged event in API reference">CellValueChanged</a></td>
-        <td><a href="https://learn.microsoft.com/dotnet/api/system.eventhandler-1" aria-label="View EventHandler type in API reference">EventHandler</a>&lt;<a href="https://help.syncfusion.com/cr/maui/Syncfusion.Maui.DataGrid.DataGridCellValueChangedEventArgs.html" aria-label="View DataGridCellValueChangedEventArgs type in API reference">DataGridCellValueChangedEventArgs</a>&gt;</td>
+        <td><a href="https://learn.microsoft.com/dotnet/api/system.eventhandler-1" aria-label="View EventHandler type in API reference">EventHandler&lt;<a href="https://help.syncfusion.com/cr/maui/Syncfusion.Maui.DataGrid.DataGridCellValueChangedEventArgs.html" aria-label="View DataGridCellValueChangedEventArgs type in API reference">DataGridCellValueChangedEventArgs&gt;</a></a></td>
         <td>Triggered when the cell value is changed.</td>
     </tr>
 <tr valign="top">
         <td><a href="https://help.syncfusion.com/cr/maui/Syncfusion.Maui.DataGrid.SfDataGrid.html#Syncfusion_Maui_DataGrid_SfDataGrid_CheckboxSelectorChecked" aria-label="View CheckboxSelectorChecked event in API reference">CheckboxSelectorChecked</a></td>
-        <td><a href="https://learn.microsoft.com/dotnet/api/system.eventhandler-1" aria-label="View EventHandler type in API reference">EventHandler</a>&lt;<a href="https://help.syncfusion.com/cr/maui/Syncfusion.Maui.DataGrid.DataGridCheckboxSelectorCheckedEventArgs.html" aria-label="View DataGridCheckboxSelectorCheckedEventArgs type in API reference">DataGridCheckboxSelectorCheckedEventArgs</a>&gt;</td>
+        <td><a href="https://learn.microsoft.com/dotnet/api/system.eventhandler-1" aria-label="View EventHandler type in API reference">EventHandler&lt;<a href="https://help.syncfusion.com/cr/maui/Syncfusion.Maui.DataGrid.DataGridCheckboxSelectorCheckedEventArgs.html" aria-label="View DataGridCheckboxSelectorCheckedEventArgs type in API reference">DataGridCheckboxSelectorCheckedEventArgs&gt;</a></a></td>
         <td>Triggered when a checkbox in the GridCheckBoxSelectorColumn is clicked.
 This event allows you to cancel the selection change or modify the checkbox state.</td>
     </tr>
