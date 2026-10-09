@@ -9,14 +9,14 @@ documentation: ug
 
 # Clipboard in Blazor Data Grid
 
-The **clipboard** feature in the [Blazor DataGrid](https://www.syncfusion.com/blazor-components/blazor-datagrid) supports copying selected rows or cells with keyboard shortcuts or programmatic methods. Data can be sent to external applications such as spreadsheets or text editors.
-To use keyboard shortcuts, selection must be enabled and the grid must be focused.
+The **clipboard** feature in the [Blazor Data Grid](https://www.syncfusion.com/blazor-components/blazor-datagrid) supports copying selected rows or cells with keyboard shortcuts or programmatic methods. Data can be sent to external applications such as spreadsheets or text editors.
+To use keyboard shortcuts, selection must be enabled and the Data Grid must be focused.
 
 ## Copying Data
 
 Copy data from the Data Grid with keyboard shortcuts or programmatic methods.
 
-### Keyboard shortcuts
+**Keyboard shortcuts**
 
 To enable clipboard functionality, configure the Data Grid with the required [GridSelectionSettings](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridSelectionSettings.html). If the selection mode is **Row**, entire rows are copied. If the selection mode is **Cell**, only the highlighted cells are copied.
 
@@ -100,7 +100,7 @@ internal sealed class OrderData
 
 {% previewsample "https://blazorplayground.syncfusion.com/embed/BDhRNGZCfsUftPWT?appbar=false&editor=false&result=true&errorlist=false&theme=fluent2" %}
 
-### Copy to clipboard using external button
+## Copy to clipboard using external button
 
 Clipboard actions can also be triggered with external buttons or programmatic methods when UI controls are preferred over shortcut keys.
 
@@ -305,7 +305,7 @@ The **Paste** feature in the Blazor Data Grid allows pasting data that was previ
 
 To enable pasting, ensure `GridEditSettings` is configured with `Mode="EditMode.Batch"` and `AllowEditing="true"`. Pasted values remain in batch mode until the **Update** button is clicked to apply changes to the data source.
 
-### Steps to paste data
+**Steps to paste data**
 
 1. Select the cell to copy.
 2. Press <kbd>Ctrl + C</kbd> to copy the content.
@@ -392,7 +392,7 @@ internal sealed class OrderData
  
 The Blazor Data Grid supports pasting Clipboard content through an external button using the [PasteAsync](Class SfGrid - Blazor API Reference) method. The PasteAsync method allows paste operations to be integrated into custom toolbars, command panels, and other application UI elements.
  
-To enable pasting, configure the Data Grid for cell selection and batch editing. Set the selection [Mode](Class GridSelectionSettings - Blazor API Reference) to **Cell**, set [CellSelectionMode](Class GridSelectionSettings - Blazor API Reference) to **Box**, and enable [batch editing](Batch Editing in Blazor DataGrid | Syncfusion®).
+To enable pasting, configure the Data Grid for cell selection and batch editing. Set the selection [Mode](Class GridSelectionSettings - Blazor API Reference) to **Cell**, set [CellSelectionMode](Class GridSelectionSettings - Blazor API Reference) to **Box**, and enable [batch editing](Batch Editing in Blazor Data Grid | Syncfusion®).
  
 > Enable Clipboard access in the browser's site settings. The Blazor Data Grid does not perform the paste if access is denied or the Clipboard is empty.
  
