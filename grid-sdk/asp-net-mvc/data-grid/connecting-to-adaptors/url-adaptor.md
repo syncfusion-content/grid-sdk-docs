@@ -239,7 +239,7 @@ To handle filtering operation, configure your API endpoint to support filter cri
      // Handling filtering operation.
      if (DataManagerRequest.Where != null && DataManagerRequest.Where.Count > 0)
      {
-         DataSource = operation.PerformFiltering(DataSource, DataManagerRequest.Where, DataManagerRequest.Where[0].Operator);
+         DataSource = operation.PerformFiltering(DataSource, DataManagerRequest.Where, DataManagerRequest.Where[0].Condition);
      }
 
      // Get the total records count.
@@ -635,7 +635,7 @@ public object Post([FromBody] DataManagerRequest DataManagerRequest)
   // Handling filtering operation
   if (DataManagerRequest.Where != null && DataManagerRequest.Where.Count > 0)
   {
-    DataSource = operation.PerformFiltering(DataSource, DataManagerRequest.Where, DataManagerRequest.Where[0].Operator);
+    DataSource = operation.PerformFiltering(DataSource, DataManagerRequest.Where, DataManagerRequest.Where[0].Condition);
   }
 
   // Get the total count of records.

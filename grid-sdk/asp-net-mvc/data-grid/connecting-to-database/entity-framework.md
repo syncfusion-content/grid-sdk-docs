@@ -369,13 +369,7 @@ public JsonResult UrlDataSource(DataManagerRequest DataManagerRequest)
         // Handling filtering operation.
         if (DataManagerRequest.Where != null && DataManagerRequest.Where.Count > 0)
         {
-            foreach (WhereFilter condition in DataManagerRequest.Where)
-            {
-                foreach (WhereFilter predicate in condition.predicates)
-                {
-                    DataSource = queryableOperation.PerformFiltering(DataSource, DataManagerRequest.Where, predicate.Operator);
-                }
-            }
+            DataSource = queryableOperation.PerformFiltering(DataSource, DataManagerRequest.Where, DataManagerRequest.Where[0].Condition);
             //Add custom logic here if needed and remove above method.
         }
 
@@ -1127,13 +1121,7 @@ public JsonResult UrlDataSource(DataManagerRequest DataManagerRequest)
         // Handling filtering operation.
         if (DataManagerRequest.Where != null && DataManagerRequest.Where.Count > 0)
         {
-            foreach (WhereFilter condition in DataManagerRequest.Where)
-            {
-                foreach (WhereFilter predicate in condition.predicates)
-                {
-                    DataSource = queryableOperation.PerformFiltering(DataSource, DataManagerRequest.Where, predicate.Operator);
-                }
-            }
+            DataSource = queryableOperation.PerformFiltering(DataSource, DataManagerRequest.Where, DataManagerRequest.Where[0].Condition);
             //Add custom logic here if needed and remove above method.
         }
 

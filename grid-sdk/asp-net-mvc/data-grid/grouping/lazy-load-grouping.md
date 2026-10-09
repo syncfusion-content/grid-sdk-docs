@@ -59,7 +59,7 @@ public IActionResult UrlDataSource([FromBody] DataManagerRequest dataRequest)
     }
     if (dataRequest.Where != null && dataRequest.Where.Count > 0) //Filtering
     {
-        dataSource = operation.PerformFiltering(dataSource, dataRequest.Where, dataRequest.Where[0].Operator);
+        dataSource = operation.PerformFiltering(dataSource, dataRequest.Where, dataRequest.Where[0].Condition);
     }
     int count = dataSource.Cast<Customers>().Count();
     if (dataRequest.IsLazyLoad == false && dataRequest.Sorted != null && dataRequest.Sorted.Count > 0) //Sorting for grouping
