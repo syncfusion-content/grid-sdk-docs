@@ -24,4 +24,4 @@ The following example demonstrates setting **Employee.EmployeeID** as a complex 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/foreignkey-cs11" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/foreignkey-cs11" %}

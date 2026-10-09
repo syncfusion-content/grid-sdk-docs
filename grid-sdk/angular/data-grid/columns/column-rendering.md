@@ -34,7 +34,7 @@ Here's an example code snippet that demonstrates defining columns manually in th
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/paging-cs1" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/paging-cs1" %}
 
 ## Auto-generated columns
 
@@ -52,7 +52,7 @@ The following code snippet enables auto-generated columns in the Syncfusion<sup 
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/grid-cs3" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/grid-cs3" %}
 
 > * When columns are auto-generated, the column [type](https://ej2.syncfusion.com/angular/documentation/api/grid/column#type) is determined from the first record of the [dataSource](https://ej2.syncfusion.com/angular/documentation/api/grid#datasource).
 > * Auto-generating columns for large datasets can affect performance. To improve efficiency, columns can be defined manually in the `columns` option during initialization. Alternatively, the column virtualization feature can be enabled by setting [enableColumnVirtualization](https://ej2.syncfusion.com/angular/documentation/api/grid#enablecolumnvirtualization) to `true`.
@@ -71,7 +71,7 @@ Primary key configuration for auto-generated columns is necessary when editing i
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/grid-cs4" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/grid-cs4" %}
 
 If the column `field` name is known, the [getColumnByField](https://ej2.syncfusion.com/angular/documentation/api/grid#getcolumnbyfield) method can be used to retrieve the column object. Then, the `isPrimaryKey` property can be set to `true` for that column, as demonstrated in the code snippet below:
 
@@ -97,7 +97,7 @@ In the below example, `width` is set for the "OrderID" column, `type` is set for
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/grid-cs5" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/grid-cs5" %}
 
 ## Dynamic column generation 
 
@@ -119,7 +119,7 @@ Here is an example of dynamically generating columns in the grid using the `*ngF
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/dynamic-column-cs1" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/dynamic-column-cs1" %}
 
 > The data source or columns can be changed dynamically in the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid by using the [changeDataSource](https://ej2.syncfusion.com/angular/documentation/api/grid#changedatasource) method. For more information, please refer to [this](https://ej2.syncfusion.com/angular/documentation/grid/data-binding/data-binding#dynamically-change-the-datasource-or-columns-or-both) section.
 
@@ -144,7 +144,7 @@ In the provided code, the `currencyFormatter` function takes the Freight value o
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/grid-cs10" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/grid-cs10" %}
 
 > The `valueAccessor` function can have performance implications on large datasets. To avoid this, enable **row virtualization** by setting [`enableVirtualization`](https://ej2.syncfusion.com/angular/documentation/api/grid#enablevirtualization) to `true`. This ensures that only visible rows are rendered, improving performance.
 
@@ -164,7 +164,7 @@ For example, consider a column named "Name" that contains an array of two object
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/grid-cs11" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/grid-cs11" %}
 
 ### Expression column
 
@@ -182,7 +182,7 @@ For example, consider an expression column named "Calories Intake". This column 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/expression-cs1" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/expression-cs1" %}
 
 ### Display serial number
 
@@ -204,7 +204,7 @@ Here is an example code snippet that demonstrates displaying serial numbers in a
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/grid-cs31" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/grid-cs31" %}
 
 ## Complex data binding
 
@@ -226,7 +226,7 @@ In the below example, the nested "Employee" object's "FirstName" and "LastName" 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/grid-cs18" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/grid-cs18" %}
 
 ### Using remote data
 
@@ -245,7 +245,7 @@ In the below example, the `expand` query loads the nested "Employee" object's "C
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/complex-data-cs2" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/complex-data-cs2" %}
 
 ### Complex data binding with list or array of objects
 
@@ -263,7 +263,7 @@ The following example shows setting a complex field for a data source containing
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/complex-data-cs1" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/complex-data-cs1" %}
 
 ### Setting a complex column as a foreign key column
 
@@ -281,4 +281,4 @@ The following example demonstrates setting the "Employee.EmployeeID" column as a
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/foreignkey-cs11" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/foreignkey-cs11" %}

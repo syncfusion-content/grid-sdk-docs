@@ -34,7 +34,7 @@ In the following example, the scrollbar is enabled, and the grid's `height` is s
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/scrolling-cs1" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/scrolling-cs1" %}
 
 ## Responsive with parent container
 
@@ -54,7 +54,7 @@ In the following example, the parent container has explicit height and width set
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/scrolling-cs2" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/scrolling-cs2" %}
 
 ## Sticky header
 
@@ -72,7 +72,7 @@ The following demo enables sticky header behavior during parent container scroll
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/scrolling-cs3" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/scrolling-cs3" %}
 
 ## Scroll to selected row
 
@@ -90,7 +90,7 @@ The following example demonstrates auto-scroll implementation using the `rowSele
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/scrolling-select-cs1" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/scrolling-select-cs1" %}
 
 ## Hide the empty placeholder of scrollbar
 
@@ -108,7 +108,7 @@ The following example demonstrates the `hideScroll` method implementation with t
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/scrolling-cs4" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/scrolling-cs4" %}
 
 ## Render scrollbar in both top and bottom
 
@@ -135,4 +135,4 @@ The following example demonstrates to use the `created` event to insert a scroll
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/scrolling-cs5" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/scrolling-cs5" %}

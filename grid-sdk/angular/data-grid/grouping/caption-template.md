@@ -54,7 +54,7 @@ export class AppComponent implements OnInit {
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/grouping1-cs1" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/grouping1-cs1" %}
 
 ## Adding custom text in group caption
 
@@ -98,7 +98,7 @@ export class AppComponent implements OnInit {
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/grouping1-cs13" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/grouping1-cs13" %}
 
 ## Customize group caption text using locale
 
@@ -116,7 +116,7 @@ Localization can be achieved using the `L10n.load()` and `setCulture()` methods 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/grouping1-cs19" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/grouping1-cs19" %}
 
 ## Render custom component in group caption
 
@@ -134,7 +134,7 @@ In the example below, the [Chips](https://ej2.syncfusion.com/angular/documentati
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/grouping1-cs14" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/grouping1-cs14" %}
 
 ## See also
 - [Grouping overview](./grouping)

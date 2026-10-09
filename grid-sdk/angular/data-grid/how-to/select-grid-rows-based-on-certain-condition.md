@@ -20,4 +20,4 @@ In the example below, all grid rows are selected where the value of the **Employ
 {% include code-snippet/grid-sdk/angular/grid/custom-column-cs5/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/custom-column-cs5" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/custom-column-cs5" %}

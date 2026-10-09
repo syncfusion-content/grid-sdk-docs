@@ -443,7 +443,7 @@ The following example demonstrates binding observable data using the async pipe 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/observables-async" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/observables-async" %}
 
 > * While working with grid edit operation, defining the `isPrimaryKey` property of column is a mandatory step. In case the primary key column is not defined, the edit or delete action will take place on the first row of the grid.
 > * Need to maintain the same instance for all grid actions.
@@ -1025,7 +1025,7 @@ The following example demonstrates binding observable data without using the asy
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/observables-non-async" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/observables-non-async" %}
 
 > Improper handling of observables and subscriptions may lead to memory leaks and unexpected behavior. Ensure proper subscription management, especially when dealing with long-lived observables.
 
@@ -1217,7 +1217,7 @@ The following example demonstrates the process of sending additional parameters 
 
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/observables-additional-parameters" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/observables-additional-parameters" %}
 
 ![AdditionalParameters](../images/additional_parameters.png)
 
@@ -1272,4 +1272,4 @@ The following example demonstrates the process of fetching data from the server 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/adapter-result" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/adapter-result" %}

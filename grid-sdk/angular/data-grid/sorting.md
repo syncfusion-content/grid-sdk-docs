@@ -26,7 +26,7 @@ To use the sorting feature, inject the `SortService` to the providers array.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/sorting1-cs1" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/sorting1-cs1" %}
 
 > * Grid column sorted in `Ascending` order. If a click occurs on an already sorted column, the sort direction toggles.
 > * Apply and clear sorting by using the [sortColumn](https://ej2.syncfusion.com/angular/documentation/api/grid#sortcolumn) and [clearSorting](https://ej2.syncfusion.com/angular/documentation/api/grid#clearsorting) methods.
@@ -48,7 +48,7 @@ The following example demonstrates setting `sortSettings.columns` for "Order ID"
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/sorting1-cs2" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/sorting1-cs2" %}
 
 > The initial sorting defined in [sortSettings.columns](https://ej2.syncfusion.com/angular/documentation/api/grid/sortSettings#columns) will override any sorting applied through user interaction.
 
@@ -71,7 +71,7 @@ To clear multi-column sorting for a particular column, press <kbd>Shift</kbd> wh
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/sorting1-cs3" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/sorting1-cs3" %}
 
 ## Prevent sorting for particular column
 
@@ -89,7 +89,7 @@ This is achieved by setting the [allowSorting](https://ej2.syncfusion.com/angula
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/sorting1-cs11" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/sorting1-cs11" %}
 
 ## Sort order
 
@@ -113,7 +113,7 @@ The following example demonstrates defining a custom `sortComparer` function for
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/sorting1-cs5" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/sorting1-cs5" %}
 
 > The "customSortComparer" function takes two parameters: a and b, which are the values being compared. The function returns "-1", "0", or "1", depending on the comparison result.
 
@@ -133,7 +133,7 @@ The example below demonstrates displaying "null" values at the bottom of the gri
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/null-date-value-cs1" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/null-date-value-cs1" %}
 
 ## Touch interaction
 
@@ -165,7 +165,7 @@ The following example demonstrates sorting with a foreign key column enabled, wh
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/sorting1-cs10" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/sorting1-cs10" %}
 
 > Make sure to inject the `ForeignKeyService` in the provider section to ensure its availability throughout the application.
 
@@ -272,7 +272,7 @@ In the following example, sorting is performed based on the "ar" locale using th
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/localization-cs4" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/localization-cs4" %}
 
 ## Customizing the sort icon
 
@@ -299,7 +299,7 @@ The following sample demonstrates a grid rendered with a customized sort icon.
 {% endhighlight %}
 {% endtabs %}
 	  
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/sorting1-cs7" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/sorting1-cs7" %}
 
 ## Sort columns externally
 
@@ -321,7 +321,7 @@ The following example demonstrates adding sort columns to a grid. The `DropDownL
 {% endhighlight %}
 {% endtabs %}
 	  
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/sorting1-cs9" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/sorting1-cs9" %}
 
 ### Remove sort columns
 
@@ -339,7 +339,7 @@ The following example demonstrates removing sort columns. The `DropDownList` com
 {% endhighlight %}
 {% endtabs %}
 	  
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/sorting1-cs8" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/sorting1-cs8" %}
 
 ### Clear sorting 
 
@@ -357,7 +357,7 @@ The following example demonstrates to clear the sorting using `clearSorting` met
 {% endhighlight %}
 {% endtabs %}
 	  
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/sorting1-cs6" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/sorting1-cs6" %}
 
 ## Sorting events
 
@@ -418,7 +418,7 @@ export class AppComponent implements OnInit {
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/sorting1-cs4" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/sorting1-cs4" %}
 
 > [args.requestType](https://ej2.syncfusion.com/angular/documentation/api/grid/sortEventArgs#requesttype) refers to the current action being performed. For example in sorting, the `args.requestType` value is `sorting`.
 

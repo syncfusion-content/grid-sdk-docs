@@ -39,7 +39,7 @@ In this example, a `FormGroup` with relevant `FormControls` is created during th
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/reactive-form-cs1" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/reactive-form-cs1" %}
 
 **Using Template-driven Forms**
 
@@ -60,7 +60,7 @@ In the following example, a `FormGroup` is created using the `ngForm` directive.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/dialogTemplate-cs1" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/dialogTemplate-cs1" %}
 
 > Each form field must have a `name` attribute.
 
@@ -191,7 +191,7 @@ The following example renders a tab component inside the edit dialog. The tab co
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/tablikeedit-cs1" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/tablikeedit-cs1" %}
 
 ## See also
 

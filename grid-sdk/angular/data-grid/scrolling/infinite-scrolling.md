@@ -50,7 +50,7 @@ The following example demonstrates to enable infinite scroll in the grid:
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/paging1-cs2" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/paging1-cs2" %}
 
 ## Number of blocks rendered during initial loading
 
@@ -70,7 +70,7 @@ The example below demonstrates to configure initialBlocks using a [DropDownList]
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/paging1-cs3" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/paging1-cs3" %}
 
 ## Efficient data caching and DOM management in grid cache mode
 
@@ -90,7 +90,7 @@ The following example demonstrates enabling or disabling cache mode for infinite
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/paging1-cs4" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/paging1-cs4" %}
 
 > If [Hierarchy Grid](https://ej2.syncfusion.com/angular/documentation/grid/hierarchy-grid) or [Detail Template](https://ej2.syncfusion.com/angular/documentation/grid/row/detail-template) feature is enabled along with infinite scrolling without defining the height property, it will take a default height of "300px". Since the [height](https://ej2.syncfusion.com/angular/documentation/api/grid#height) property is mandatory for the hierarchy grid and detail template features, ensure to define it accordingly. 
 

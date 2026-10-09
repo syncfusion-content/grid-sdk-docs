@@ -22,6 +22,7 @@ Syncfusion Angular Grid modules help optimize your application’s bundle size b
 | [Lazy Load Grouping](./grouping/lazy-load-grouping) | `LazyLoadGroupService` | Inject this module to use lazy load grouping feature. |
 | [Editing](./editing/edit) | `EditService` | Inject this module to use editing feature. |
 | [Aggregates](./aggregates/aggregates) | `AggregateService` | Inject this module to use aggregate feature. |
+| [Formula](./formula/formula) | `FormulaService` | Inject this module to use formula feature. |
 | [Column Chooser](./columns/column-chooser) | `ColumnChooserService` | Inject this module to use column chooser feature. |
 | [Column Menu](./columns/column-menu) | `ColumnMenuService` | Inject this module to use column menu feature. |
 | [Command Column](./editing/command-column-editing) | `CommandColumnService` | Inject this module to use command column feature. |
@@ -53,4 +54,4 @@ The following example demonstrates how to enable basic features such as Paging, 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/sorting-cs1" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/sorting-cs1" %}
