@@ -404,10 +404,10 @@ To enable pasting, configure the Data Grid for cell selection and batch editing.
  
 {% tabs %}
 {% highlight razor tabtitle="Index.razor" %}
- 
+
 @using Syncfusion.Blazor.Grids
 @using Syncfusion.Blazor.Buttons
- 
+
 <SfButton Content="Paste" OnClick="@Paste"></SfButton>
  
 <SfGrid @ref="Grid" DataSource="@Orders" AllowSelection="true" Toolbar="@(new List<string>() { "Add", "Update", "Cancel" })" Height="348">
@@ -437,7 +437,7 @@ To enable pasting, configure the Data Grid for cell selection and batch editing.
 }
  
 {% endhighlight %}
- 
+
 {% highlight c# tabtitle="OrderData.cs" %}
  
 internal sealed class OrderData
@@ -451,7 +451,7 @@ internal sealed class OrderData
         ShipCity = shipCity;
         ShipName = shipName;
     }
- 
+
     internal static List<OrderData> GetAllRecords()
     {
         if (Data.Count == 0)
@@ -472,10 +472,10 @@ internal sealed class OrderData
             Data.Add(new OrderData(10261, "QUEDE", "Rio de Janeiro", "Que delícia"));
             Data.Add(new OrderData(10262, "RATTC", "Albuquerque", "Rattlesnake Canyon Grocery"));
         }
- 
+
         return Data;
     }
- 
+
     public int OrderID { get; set; }
     public string CustomerID { get; set; }
     public string ShipCity { get; set; }
@@ -484,9 +484,9 @@ internal sealed class OrderData
  
 {% endhighlight %}
 {% endtabs %}
- 
+
 {% previewsample "https://blazorplayground.syncfusion.com/embed/LDLdWjXuLLhbowAP?appbar=false&editor=false&result=true&errorlist=false&theme=fluent2%22 %}
- 
+
 ### Paste limitations
- 
+
 - **Data Type Conversion**: Pasting does not convert string values to numeric or date types. Pasting strings into numeric cells results in **NaN**, and pasting strings into date cells results in an **empty cell**. Ensure that the pasted values are compatible with the target column's data type.
