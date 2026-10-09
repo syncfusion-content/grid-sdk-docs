@@ -24,7 +24,10 @@ Add them by defining the [Toolbar](https://help.syncfusion.com/cr/blazor/Syncfus
 | Update | Saves changes made during edit mode. |
 | Delete | Deletes the selected record. |
 | Cancel | Discards changes made during edit mode. |
+| Undo   | Reverts the recent changes made during batch editing. |
+| Redo   | Reapplies the previously undone changes during batch editing. |
 | Search | Displays a search box to filter the records. |
+| Find   | Displays a find box to locate and highlight matching text across the Blazor DataGrid. |
 | Print | Prints the Blazor DataGrid content. |
 | ColumnChooser | Opens the Column Chooser to toggle column visibility. |
 | PdfExport | Exports Blazor DataGrid data to a PDF file. |
