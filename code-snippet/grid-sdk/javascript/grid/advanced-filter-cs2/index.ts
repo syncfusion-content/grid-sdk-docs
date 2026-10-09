@@ -1,4 +1,3 @@
-import { loadCultureFiles } from '@syncfusion/ej2-base';
 import { Grid, Sort, Toolbar, VirtualScroll, AdvancedFilter, LoadEventArgs } from '@syncfusion/ej2-grids';
 import { ticketdata } from './datasource.ts';
 Grid.Inject(Sort, Toolbar, VirtualScroll, AdvancedFilter);
@@ -23,7 +22,6 @@ const initialAdvancedFilterRule = {
     ]
 };
 
-loadCultureFiles();
 let grid: Grid = new Grid({
     dataSource: ticketdata,
     enableVirtualization: true,
