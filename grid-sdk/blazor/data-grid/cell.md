@@ -232,47 +232,40 @@ public class OrderData
 
 {% previewsample "https://blazorplayground.syncfusion.com/embed/hXBgiiNgrTpwZLYn?appbar=false&editor=false&result=true&errorlist=false&theme=bootstrap5" %}
 
-
 ## Find and highlight
  
-The Find and Highlight feature in the Blazor Data Grid enables real-time text discovery in the Data Grid by scanning visible cell content and highlighting every match without filtering or removing non-matching rows. As text is entered in the find input, all matching text in the Data Grid is wrapped in a `<mark>` element and styled with a highlight color. A match counter (for example, `2 of 14`) is displayed alongside **Previous** and **Next** navigation buttons so that each occurrence can be stepped through individually.
+The Find and Highlight feature in the Blazor Data Grid provides real-time text discovery by scanning visible cell content and highlighting all matching text without filtering or hiding non-matching rows. When text is entered in the find input, matching text in the Data Grid is wrapped inside a `<mark>` element and displayed with a highlight style. A match counter (for example, `2 of 14`) is displayed along with `Previous` and `Next` navigation buttons to move through each match individually.
 
-The feature is activated by including the `Find` built-in toolbar item and is fully configurable through [GridFindSettings](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridFindSettings.html). Find and Highlight is independent of the Data Grid search and filtering features — rows are never hidden.
+Enable the Find and Highlight feature by adding the `Find` item to the built-in toolbar. Find and Highlight behavior can be customized through [GridFindSettings](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridFindSettings.html). Find and Highlight works independently of the Data Grid search and filtering features, so all rows remain visible during text discovery.
 
-**Why Find and Highlight?**
+Finding records that contain a specific name, reference, or keyword in a large Data Grid often requires scanning many rows manually. Filtering displays only matching rows and can make record comparison difficult. Find and Highlight helps locate matching text quickly while keeping all visible rows available for reference and comparison.
 
-Reviewing a large Data Grid to find records containing a specific name, reference, or keyword requires manually scanning many rows. Filtering can hide non-matching rows, making it harder to retain the surrounding data for comparison. Find and Highlight speeds up the review by highlighting matches while keeping non-matching rows visible, improving review efficiency.
-
-**Resolved pain points**
+**Common pain points**
 
 - Manually scanning rows to locate matching text.
 - Losing visibility into non-matching records when filtering is used.
 - Difficulty tracking and navigating multiple occurrences.
 
-**Use case**
-
-A support agent reviewing a large ticket queue needs to find tickets mentioning a payment issue. The feature marks matching text, displays the match count, and supports navigation between matches while keeping the visible rows available for context. Find and Highlight streamlines ticket review and helps the agent work more efficiently.
- 
 > **Find and Highlight vs. Searching:** The built-in [Search](./searching) toolbar item hides rows that do not match the search term. The **Find** toolbar item, by contrast, highlights matching text across all visible rows while keeping all rows intact.
  
 **Key capabilities:**
  
 | Capability | Details |
 |---|---|
-| Real-time highlighting | Matches are highlighted as the user types, with no need to press Enter. |
-| Match navigation | **Previous** / **Next** buttons and `Shift+Enter` / `Enter` keyboard shortcuts step through each match. |
-| Match counter | A `current of total` indicator shows how many matches exist and which one is active. |
-| Case-sensitive matching | Controlled by [GridFindSettings.CaseSensitive](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridFindSettings.html#Syncfusion_Blazor_Grids_GridFindSettings_CaseSensitive). |
-| Column-level opt-out | Set [AllowSearchHighlight](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridColumn.html#Syncfusion_Blazor_Grids_GridColumn_AllowSearchHighlight) to `false` on a column to exclude it from scanning and highlighting. |
-| Custom highlight style | Override the highlight appearance using [GridFindSettings.HighlightCssClass](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridFindSettings.html#Syncfusion_Blazor_Grids_GridFindSettings_HighlightCssClass). |
+| Real-time highlighting | Matching text is highlighted as text is entered in the find input. Pressing Enter is not required. |
+| Match navigation | Navigate between matches using the `Previous` and `Next` buttons or the Shift+Enter and Enter keyboard shortcuts. |
+| Match counter | A current of total indicator displays the active match number and the total number of matches. |
+| Case-sensitive matching | Configure case-sensitive matching using [GridFindSettings.CaseSensitive](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridFindSettings.html#Syncfusion_Blazor_Grids_GridFindSettings_CaseSensitive). |
+| Column-level opt-out | Set [AllowSearchHighlight](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridColumn.html#Syncfusion_Blazor_Grids_GridColumn_AllowSearchHighlight) to `false` in `GridColumn` to exclude the column from scanning and highlighting. |
+| Custom highlight style | Customize the highlight appearance using [GridFindSettings.HighlightCssClass](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridFindSettings.html#Syncfusion_Blazor_Grids_GridFindSettings_HighlightCssClass). |
 | Programmatic control | Use the [FindHighlightAsync](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.SfGrid-1.html#Syncfusion_Blazor_Grids_SfGrid_1_FindHighlightAsync_System_String_), [ResetFindAsync](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.SfGrid-1.html#Syncfusion_Blazor_Grids_SfGrid_1_ResetFindAsync), [FindNextHighlightAsync](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.SfGrid-1.html#Syncfusion_Blazor_Grids_SfGrid_1_FindNextHighlightAsync), [FindPreviousHighlightAsync](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.SfGrid-1.html#Syncfusion_Blazor_Grids_SfGrid_1_FindPreviousHighlightAsync), and [FindGoToAsync](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.SfGrid-1.html#Syncfusion_Blazor_Grids_SfGrid_1_FindGoToAsync_System_Int32_) API methods to drive find and highlight programmatically. |
 | Paging support | Highlighting is automatically reapplied during page navigation. |
 
 For configuration options, see [Configure Find and Highlight behavior using GridFindSettings](#configure-find-and-highlight-behavior-using-gridfindsettings), [Exclude a column from Find and Highlight](#exclude-a-column-from-find-and-highlight), and [Enable Find and Highlight using API methods](#enable-find-and-highlight-using-api-methods).
 
-### Enable Find and Highlight using toolbar
- 
-The simplest way to activate the Find and Highlight feature is to add the `"Find"` string to the [Toolbar](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.SfGrid-1.html#Syncfusion_Blazor_Grids_SfGrid_1_Toolbar) property. This renders the find input box along with the **Previous**, **Next** icons, and match counter in the Data Grid toolbar. No additional configuration is required for basic usage.
+### Enable find and highlight using toolbar
+
+The simplest way to enable the find and highlight feature is to add the `Find` string to the [Toolbar](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.SfGrid-1.html#Syncfusion_Blazor_Grids_SfGrid_1_Toolbar) property. This renders the find input box along with the **Previous**, **Next** icons, and match counter in the Data Grid toolbar. No additional configuration is required for basic usage.
 
 {% tabs %}
 {% highlight razor tabtitle="Index.razor" %}
@@ -495,15 +488,15 @@ The simplest way to activate the Find and Highlight feature is to add the `"Find
 
 {% previewsample "https://blazorplayground.syncfusion.com/embed/LNhHCNZMhnevzCwi?appbar=false&editor=false&result=true&errorlist=false&theme=fluent2" %}
 
-### Configure Find and Highlight behavior using GridFindSettings
- 
+### Configure find and highlight behavior using GridFindSettings
+
 Use the [GridFindSettings](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridFindSettings.html) component inside `SfGrid` to customize the behavior and appearance of the Find and Highlight feature. The following properties are available:
  
-| Property | Type | Default | Description |
+| Property | Type | Default value | Description |
 |---|---|---|---|
-| [PlaceholderText](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridFindSettings.html#Syncfusion_Blazor_Grids_GridFindSettings_PlaceholderText) | `string` | `"Find"` | Custom placeholder text displayed in the find input field when the input is empty. |
-| [HighlightCssClass](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridFindSettings.html#Syncfusion_Blazor_Grids_GridFindSettings_HighlightCssClass) | `string` | `"e-find-highlight"` | CSS class applied to the `<mark>` element that wraps each matched text. Override `HighlightCssClass` to change the highlight color or style. |
-| [CaseSensitive](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridFindSettings.html#Syncfusion_Blazor_Grids_GridFindSettings_CaseSensitive) | `bool` | `false` | When `true`, only text with identical letter casing is matched. When `false`, matches ignore letter case, so `"John"`, `"john"`, and `"JOHN"` all match the search term `"john"`. |
+| [PlaceholderText](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridFindSettings.html#Syncfusion_Blazor_Grids_GridFindSettings_PlaceholderText) | `string` | `"Find"` | Specifies the placeholder text displayed in the find input when no value is entered. |
+| [HighlightCssClass](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridFindSettings.html#Syncfusion_Blazor_Grids_GridFindSettings_HighlightCssClass) | `string` | `"e-find-highlight"` | Specifies the CSS class applied to the `<mark>` element that highlights matching text. Set a custom CSS class to change the highlight appearance. |
+| [CaseSensitive](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridFindSettings.html#Syncfusion_Blazor_Grids_GridFindSettings_CaseSensitive) | `bool` | `false` | Specifies whether matching is case-sensitive. When set to `true`, only text with matching letter casing is highlighted. When set to `false`, letter casing is ignored during matching. For example, "John", "john", and "JOHN" match the search term "john". |
  
 The following example enables case-sensitive matching, sets a custom placeholder, and applies a custom highlight style:
  
@@ -735,17 +728,17 @@ public class SupportTicket
  
 {% previewsample "https://blazorplayground.syncfusion.com/embed/LtBxMZNshbelDxOY?appbar=false&editor=false&result=true&errorlist=false&theme=fluent2" %}
  
-### Exclude a column from Find and Highlight
+### Exclude a column from find and highlight
 
-By default, every column participates in Find and Highlight scanning. To exclude a specific column — for example, a column containing IDs, internal codes, or sensitive data — set the [AllowSearchHighlight](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridColumn.html#Syncfusion_Blazor_Grids_GridColumn_AllowSearchHighlight) property to `false`.
- 
+By default, Find and Highlight scans all columns in the Data Grid. To exclude a column from scanning and highlighting, set the [AllowSearchHighlight](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridColumn.html#Syncfusion_Blazor_Grids_GridColumn_AllowSearchHighlight) property to `false` in the corresponding `GridColumn`. This option is useful for columns that contain IDs, internal codes, or sensitive data.
+
 When a column is excluded:
 - Its cell content is not scanned for matches.
 - No highlight is applied to cells in that column.
 - Cells in that column are not counted in the total match count.
 - **Previous** / **Next** navigation skips that column entirely.
  
-> `AllowSearchHighlight` is independent of [AllowSearching](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridColumn.html#Syncfusion_Blazor_Grids_GridColumn_AllowSearching). `AllowSearching` controls whether the column participates in the toolbar **Search** operation (which filters rows), and `AllowSearchHighlight` controls whether the column participates in the **Find** toolbar operation (which highlights without filtering).
+> `AllowSearchHighlight` works independently of [AllowSearching](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridColumn.html#Syncfusion_Blazor_Grids_GridColumn_AllowSearching). The `AllowSearching` property determines whether a column participates in the toolbar search operation that filters rows. The `AllowSearchHighlight` property determines whether a column participates in the `Find` operation that highlights matching text without filtering rows.
  
 {% tabs %}
 {% highlight razor tabtitle="Index.razor" %}
@@ -963,9 +956,9 @@ public class SupportTicket
 
 {% previewsample "https://blazorplayground.syncfusion.com/embed/LjrnMXDMgLqjAsvP?appbar=false&editor=false&result=true&errorlist=false&theme=fluent2" %}
  
-> In this example, the **CustomerName** and **Priority** columns are excluded from Find and Highlight. Entering a text that appears in those columns will not produce a match or a highlight.
+> In this example, the **CustomerName** and **Priority** columns are excluded from Find and Highlight. Entering text that appears in those columns will not produce a match or a highlight.
  
-### Enable Find and Highlight using API methods
+### Enable find and highlight using API methods
 
 The Find and Highlight feature can be controlled entirely from the code-behind without relying on the toolbar UI. Use the API methods to build custom find panels, integrate keyboard shortcuts, or trigger highlighting from business logic.
  
@@ -973,11 +966,11 @@ The following methods are available on the grid reference:
  
 | Method | Description |
 |---|---|
-| [FindHighlightAsync](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.SfGrid-1.html#Syncfusion_Blazor_Grids_SfGrid_1_FindHighlightAsync_System_String_) | Highlights all cells that contain the supplied search key. Pass an empty string to clear existing highlights. |
-| [ResetFindAsync](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.SfGrid-1.html#Syncfusion_Blazor_Grids_SfGrid_1_ResetFindAsync) | Clears all highlights and resets the match counter to 0. |
-| [FindNextHighlightAsync](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.SfGrid-1.html#Syncfusion_Blazor_Grids_SfGrid_1_FindNextHighlightAsync) | Moves the active match to the next match. Wraps to the first match after the last. |
-| [FindPreviousHighlightAsync](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.SfGrid-1.html#Syncfusion_Blazor_Grids_SfGrid_1_FindPreviousHighlightAsync) | Moves the active match to the previous match. Wraps to the last match before the first. |
-| [FindGoToAsync](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.SfGrid-1.html#Syncfusion_Blazor_Grids_SfGrid_1_FindGoToAsync_System_Int32_) | Jumps directly to a match by its 1-based index. Out-of-range values are clamped to the first or last match. For example, calling `FindGoToAsync(0)` or `FindGoToAsync(-1)` selects the first match, and calling `FindGoToAsync(9999)` selects the last match when the total count is lower. |
+| [FindHighlightAsync](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.SfGrid-1.html#Syncfusion_Blazor_Grids_SfGrid_1_FindHighlightAsync_System_String_) | Highlights all matching text in the Data Grid based on the specified search text. Pass an empty string to remove existing highlights. |
+| [ResetFindAsync](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.SfGrid-1.html#Syncfusion_Blazor_Grids_SfGrid_1_ResetFindAsync) | Removes all highlights and resets the match counter to 0. |
+| [FindNextHighlightAsync](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.SfGrid-1.html#Syncfusion_Blazor_Grids_SfGrid_1_FindNextHighlightAsync) | Moves the active selection to the next match. After the last match, navigation continues from the first match. |
+| [FindPreviousHighlightAsync](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.SfGrid-1.html#Syncfusion_Blazor_Grids_SfGrid_1_FindPreviousHighlightAsync) | Moves the active selection to the previous match. Before the first match, navigation continues from the last match. |
+| [FindGoToAsync](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.SfGrid-1.html#Syncfusion_Blazor_Grids_SfGrid_1_FindGoToAsync_System_Int32_) | Navigates directly to a match based on the specified 1-based index. Values below the valid range select the first match, and values above the valid range select the last match. For example, `FindGoToAsync(0)` and `FindGoToAsync(-1)` select the first match, while `FindGoToAsync(9999)` selects the last available match when the total match count is lower. |
 
 The following example demonstrates driving Find and Highlight programmatically using external buttons:
  
@@ -1243,7 +1236,7 @@ public class SupportTicket
 
 {% previewsample "https://blazorplayground.syncfusion.com/embed/LjLHCXtCfSlVILQA?appbar=false&editor=false&result=true&errorlist=false&theme=fluent2" %}
 
-### Keyboard shortcuts for Find and Highlight
+### Keyboard shortcuts for Find and highlight
 
 The Find and Highlight toolbar supports the following keyboard interactions when the find input is focused:
  
@@ -1257,8 +1250,8 @@ These shortcuts match standard find behavior in browsers and desktop application
 
 ### Limitations
 
-- Cells rendered through a [column Template](./column-template.md), [edit template](./template-editing.md), or [command column](./command-column-editing.md) are not scanned, highlighted, or counted.
-- Text in an active Add or Edit form editor, the toolbar `Search`, filter input, or any in-progress editor on the page is not searched or highlighted. The feature operates only on committed cell values.
+- Cells rendered through a [column Template](./column-template.md), [edit template](./template-editing.md), or [command column](./command-column-editing.md) are excluded from Find and Highlight scanning, highlighting, and match counting.
+- Text in an active Add or Edit form editor, the toolbar `Search` filter input, or any other in-progress editor on the page is not searched or highlighted. The feature operates only on committed cell values.
 
 ## Customize cell styles
 
