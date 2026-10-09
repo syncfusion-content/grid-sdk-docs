@@ -403,16 +403,32 @@ The Grid automatically updates row numbers when operations such as paging, sorti
 
 The following example demonstrates how to add a row number column to the Grid:
 
+{% if page.publishingplatform == "typescript" %}
+
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/typescript/grid/rownumber/index.ts %}
+{% include code-snippet/grid-sdk/javascript/grid/rownumber/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/rownumber/index.html %}
+{% include code-snippet/grid-sdk/javascript/grid/rownumber/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/rownumber" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/rownumber" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/grid-sdk/javascript/grid/rownumber/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/grid-sdk/javascript/grid/rownumber/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/rownumber" %}
+{% endif %}
 
 ## Row pinning (Frozen)
 
