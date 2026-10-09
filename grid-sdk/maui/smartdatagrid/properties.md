@@ -539,9 +539,9 @@ documentation: ug
     </tr>
 <tr valign="top">
         <td><a href="https://help.syncfusion.com/cr/maui/Syncfusion.Maui.DataGrid.SfDataGrid.html#Syncfusion_Maui_DataGrid_SfDataGrid_GroupSummaryRows" aria-label="View GroupSummaryRows property in API reference">GroupSummaryRows</a></td>
-        <td><a href="https://learn.microsoft.com/en-us/dotnet/api/system.collections.objectmodel.observablecollection-1?view=net-10.0" aria-label="View object type in API reference">System.Collections.ObjectModel.ObservableCollection</a><<a href="https://help.syncfusion.com/cr/maui/Syncfusion.Maui.DataGrid.DataGridSummaryRow.html" aria-label="View object type in API reference">DataGridSummaryRow</a>></td>
+        <td><a href="https://learn.microsoft.com/en-us/dotnet/api/system.collections.objectmodel.observablecollection-1?view=net-10.0" aria-label="View object type in API reference">ObservableCollection&lt;<a href="https://help.syncfusion.com/cr/maui/Syncfusion.Maui.DataGrid.DataGridSummaryRow.html" aria-label="View object type in API reference">DataGridSummaryRow&gt;</a></a></td>
         <td>Represents a class that defines the summary information of summary row.</td>
-    </tr>
+    </tr> 
 <tr valign="top">
         <td><a href="https://help.syncfusion.com/cr/maui/Syncfusion.Maui.DataGrid.SfDataGrid.html#Syncfusion_Maui_DataGrid_SfDataGrid_GroupSummaryTemplate" aria-label="View GroupSummaryTemplate property in API reference">GroupSummaryTemplate</a></td>
         <td><a href="https://learn.microsoft.com/dotnet/api/microsoft.maui.controls.datatemplate" aria-label="View DataTemplate type in API reference">DataTemplate</a></td>
@@ -750,7 +750,7 @@ Identifies the PasteOption bindable property.</td>
     </tr>
 <tr valign="top">
         <td><a href="https://help.syncfusion.com/cr/maui/Syncfusion.Maui.DataGrid.SfDataGrid.html#Syncfusion_Maui_DataGrid_SfDataGrid_SelectedRows" aria-label="View SelectedRows property in API reference">SelectedRows</a></td>
-        <td><a href="https://learn.microsoft.com/en-us/dotnet/api/system.collections.objectmodel.observablecollection-1?view=net-10.0" aria-label="View ObservableCollections type in API reference">System.Collections.ObjectModel.ObservableCollection</a><<a herf="https://learn.microsoft.com/en-us/dotnet/api/system.object?view=net-10.0"  aria-label="View object type in API reference">System.Object</a>></td>
+        <td><a href="https://learn.microsoft.com/en-us/dotnet/api/system.collections.objectmodel.observablecollection-1?view=net-10.0" aria-label="View ObservableCollections type in API reference">ObservableCollection&lt;<a herf="https://learn.microsoft.com/en-us/dotnet/api/system.object?view=net-10.0"  aria-label="View object type in API reference">Object&gt;</a></a></td>
         <td>Provides the <code>data records</code> currently selected when row selection allows one or more rows.</td>
     </tr>
 <tr valign="top">
@@ -845,7 +845,7 @@ Identifies the PasteOption bindable property.</td>
     </tr>
 <tr valign="top">
         <td><a href="https://help.syncfusion.com/cr/maui/Syncfusion.Maui.DataGrid.SfDataGrid.html#Syncfusion_Maui_DataGrid_SfDataGrid_StackedHeaderRows" aria-label="View StackedHeaderRows property in API reference">StackedHeaderRows</a></td>
-        <td><a href="https://learn.microsoft.com/en-us/dotnet/api/system.collections.objectmodel.observablecollection-1?view=net-10.0" aria-label="View ObservableCollection type in API reference">System.Collections.ObjectModel.ObservableCollection</a><<a href="https://help.syncfusion.com/cr/maui/Syncfusion.Maui.DataGrid.DataGridStackedHeaderRow.html" aria-label="View DataGridStackedHeaderRow type in API reference">DataGridStackedHeaderRow</a>></td>
+        <td><a href="https://learn.microsoft.com/en-us/dotnet/api/system.collections.objectmodel.observablecollection-1?view=net-10.0" aria-label="View ObservableCollection type in API reference">ObservableCollection&lt;<a href="https://help.syncfusion.com/cr/maui/Syncfusion.Maui.DataGrid.DataGridStackedHeaderRow.html" aria-label="View DataGridStackedHeaderRow type in API reference">DataGridStackedHeaderRow&gt;</a></a></td>
         <td>Declaration only in provided API excerpt.</td>
     </tr>
 <tr valign="top">
@@ -865,7 +865,7 @@ Identifies the PasteOption bindable property.</td>
     </tr>
 <tr valign="top">
         <td><a href="https://help.syncfusion.com/cr/maui/Syncfusion.Maui.DataGrid.SfDataGrid.html#Syncfusion_Maui_DataGrid_SfDataGrid_TableSummaryRows" aria-label="View TableSummaryRows property in API reference">TableSummaryRows</a></td>
-        <td><a href="https://learn.microsoft.com/en-us/dotnet/api/system.collections.objectmodel.observablecollection-1?view=net-10.0" aria-label="View ObservableCollection type in API reference">System.Collections.ObjectModel.ObservableCollection</a><<a href="https://help.syncfusion.com/cr/maui/Syncfusion.Maui.DataGrid.DataGridTableSummaryRow.html" aria-label="View DataGridTableSummaryRow type in API reference">DataGridTableSummaryRow</a>></td>
+        <td><a href="https://learn.microsoft.com/en-us/dotnet/api/system.collections.objectmodel.observablecollection-1?view=net-10.0" aria-label="View ObservableCollection type in API reference">ObservableCollection&lt;<a href="https://help.syncfusion.com/cr/maui/Syncfusion.Maui.DataGrid.DataGridTableSummaryRow.html" aria-label="View DataGridTableSummaryRow type in API reference">DataGridTableSummaryRow&gt;</a></a></td>
         <td>Gets or sets the table summary rows.</td>
     </tr>
 <tr valign="top">
