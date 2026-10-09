@@ -750,7 +750,7 @@ Identifies the PasteOption bindable property.</td>
     </tr>
 <tr valign="top">
         <td><a href="https://help.syncfusion.com/cr/maui/Syncfusion.Maui.DataGrid.SfDataGrid.html#Syncfusion_Maui_DataGrid_SfDataGrid_SelectedRows" aria-label="View SelectedRows property in API reference">SelectedRows</a></td>
-        <td><a href="https://learn.microsoft.com/en-us/dotnet/api/system.collections.objectmodel.observablecollection-1?view=net-10.0" aria-label="View ObservableCollections type in API reference">ObservableCollection&lt;<a herf="https://learn.microsoft.com/en-us/dotnet/api/system.object?view=net-10.0"  aria-label="View object type in API reference">Object&gt;</a></a></td>
+        <td><a href="https://learn.microsoft.com/en-us/dotnet/api/system.collections.objectmodel.observablecollection-1?view=net-10.0" aria-label="View ObservableCollections type in API reference">ObservableCollection&lt;<a href="https://learn.microsoft.com/en-us/dotnet/api/system.object?view=net-10.0"  aria-label="View object type in API reference">Object&gt;</a></a></td>
         <td>Provides the <code>data records</code> currently selected when row selection allows one or more rows.</td>
     </tr>
 <tr valign="top">
