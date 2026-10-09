@@ -78,6 +78,199 @@ public class OrderDetails
 
 {% previewsample "https://blazorplayground.syncfusion.com/embed/VXVINMWGKEkClhfx?appbar=false&editor=false&result=true&errorlist=false&theme=bootstrap5" %}
 
+## Undo / Redo actions in batch edit
+
+The Blazor Data Grid provides Undo / Redo actions in batch editing, which allows changes such as cell edits, row additions, and row deletions to be reverted or reapplied before saving.
+
+During batch editing, multiple changes may remain pending before the next save. An accidental cell edit, row addition, or deletion may require manual correction or may risk losing other valid changes. Undo and Redo reverse or reapply individual actions without discarding the remaining batch changes, reducing rework and improving productivity.
+
+**Common pain points**
+
+- Accidental changes may introduce errors across multiple records.
+- Manually correcting pending changes takes time and effort.
+- Cancelling the batch to recover a mistake can discard valid edits.
+
+### Enable Undo / Redo using toolbar
+
+Enable the feature by setting the [EnableUndoRedo](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridEditSettings.html#Syncfusion_Blazor_Grids_GridEditSettings_EnableUndoRedo) property to `true` inside [GridEditSettings](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridEditSettings.html).
+
+Add the `Undo` and `Redo` toolbar items to the Data Grid toolbar to perform these actions through the user interface.
+
+{% tabs %}
+{% highlight razor tabtitle="Index.razor" %}
+@using Syncfusion.Blazor.Grids
+
+<SfGrid DataSource="@OrderData" Toolbar="@(new List<string>() { "Add", "Edit", "Delete", "Update", "Cancel", "Undo", "Redo" })" Height="315">
+    <GridEditSettings AllowAdding="true" AllowEditing="true" AllowDeleting="true" EnableUndoRedo="true" Mode="EditMode.Batch"></GridEditSettings>
+    <GridColumns>
+        <GridColumn Field=@nameof(OrderDetails.OrderID) HeaderText="Order ID" IsPrimaryKey="true" ValidationRules="@(new ValidationRules{ Required=true})" TextAlign="TextAlign.Right" Width="120"></GridColumn>
+        <GridColumn Field=@nameof(OrderDetails.CustomerID) HeaderText="Customer Name" ValidationRules="@(new ValidationRules{ Required=true, MinLength=5})" Width="120"></GridColumn>
+        <GridColumn Field=@nameof(OrderDetails.Freight) HeaderText="Freight" ValidationRules="@(new ValidationRules{ Required=true, Min=1, Max=1000})" Format="C2" TextAlign="TextAlign.Right" EditType="EditType.NumericEdit" Width="120"></GridColumn>
+        <GridColumn Field=@nameof(OrderDetails.ShipCountry) HeaderText="Ship Country" EditType="EditType.DropDownEdit" Width="150"></GridColumn>
+    </GridColumns>
+</SfGrid>
+
+@code {
+    public List<OrderDetails> OrderData { get; set; }
+    protected override void OnInitialized()
+    {
+        OrderData = OrderDetails.GetAllRecords();
+    }
+}
+{% endhighlight %}
+{% highlight c# tabtitle="OrderDetails.cs" %}
+public class OrderDetails
+{
+    public static List<OrderDetails> Order = new List<OrderDetails>();
+    public OrderDetails(int OrderID, string CustomerId, double Freight, string ShipCountry)
+    {
+        this.OrderID = OrderID;
+        this.CustomerID = CustomerId;
+        this.Freight = Freight;
+        this.ShipCountry = ShipCountry;    
+    }
+    public static List<OrderDetails> GetAllRecords()
+    {
+        if (Order.Count == 0)
+        {
+            Order.Add(new OrderDetails(10248, "VINET", 32.38, "France"));
+            Order.Add(new OrderDetails(10249, "TOMSP", 11.61, "Germany"));
+            Order.Add(new OrderDetails(10250, "HANAR", 65.83, "Brazil"));
+            Order.Add(new OrderDetails(10251, "VICTE", 41.34, "France"));
+            Order.Add(new OrderDetails(10252, "SUPRD", 51.3, "Belgium"));
+            Order.Add(new OrderDetails(10253, "HANAR", 58.17, "Brazil"));
+            Order.Add(new OrderDetails(10254, "CHOPS", 22.98, "Switzerland"));
+            Order.Add(new OrderDetails(10255, "RICSU", 148.33, "Switzerland"));
+            Order.Add(new OrderDetails(10256, "WELLI", 13.97, "Brazil"));
+            Order.Add(new OrderDetails(10257, "HILAA", 81.91, "Venezuela"));
+            Order.Add(new OrderDetails(10258, "ERNSH", 140.51, "Austria"));
+            Order.Add(new OrderDetails(10259, "CENTC", 3.25, "Mexico"));
+            Order.Add(new OrderDetails(10260, "OTTIK", 55.09, "Germany"));
+            Order.Add(new OrderDetails(10261, "QUEDE", 3.05, "Brazil"));
+            Order.Add(new OrderDetails(10262, "RATTC", 48.29, "USA"));
+        }
+        return Order;
+    }
+    public int OrderID { get; set; }
+    public string CustomerID { get; set; }
+    public double Freight { get; set; }
+    public string ShipCountry { get; set; }
+}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "https://blazorplayground.syncfusion.com/embed/BNVniZDiJwNAIpVv?appbar=false&editor=false&result=true&errorlist=false&theme=fluent2" %}
+
+### Customize UndoRedoLimit count
+
+Control the maximum number of undo and redo actions stored in the stack using the [UndoRedoLimit](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridEditSettings.html#Syncfusion_Blazor_Grids_GridEditSettings_UndoRedoLimit) property in [GridEditSettings](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridEditSettings.html). This property caps the number of actions that can be reverted or reapplied during a batch editing session. The default value is `20`.
+
+{% tabs %}
+{% highlight razor tabtitle="Index.razor" %}
+@using Syncfusion.Blazor.Grids
+
+<SfGrid DataSource="@OrderData" Toolbar="@(new List<string>() { "Add", "Edit", "Delete", "Update", "Cancel", "Undo", "Redo" })" Height="315">
+    <GridEditSettings AllowAdding="true" AllowEditing="true" AllowDeleting="true" EnableUndoRedo="true" UndoRedoLimit="25" Mode="EditMode.Batch"></GridEditSettings>
+    <GridColumns>
+        <GridColumn Field=@nameof(OrderDetails.OrderID) HeaderText="Order ID" IsPrimaryKey="true" ValidationRules="@(new ValidationRules{ Required=true})" TextAlign="TextAlign.Right" Width="120"></GridColumn>
+        <GridColumn Field=@nameof(OrderDetails.CustomerID) HeaderText="Customer Name" ValidationRules="@(new ValidationRules{ Required=true, MinLength=5})" Width="120"></GridColumn>
+        <GridColumn Field=@nameof(OrderDetails.Freight) HeaderText="Freight" ValidationRules="@(new ValidationRules{ Required=true, Min=1, Max=1000})" Format="C2" TextAlign="TextAlign.Right" EditType="EditType.NumericEdit" Width="120"></GridColumn>
+        <GridColumn Field=@nameof(OrderDetails.ShipCountry) HeaderText="Ship Country" EditType="EditType.DropDownEdit" Width="150"></GridColumn>
+    </GridColumns>
+</SfGrid>
+
+@code {
+    public List<OrderDetails> OrderData { get; set; }
+    protected override void OnInitialized()
+    {
+        OrderData = OrderDetails.GetAllRecords();
+    }
+}
+{% endhighlight %}
+{% highlight c# tabtitle="OrderDetails.cs" %}
+public class OrderDetails
+{
+    public static List<OrderDetails> Order = new List<OrderDetails>();
+    public OrderDetails(int OrderID, string CustomerId, double Freight, string ShipCountry)
+    {
+        this.OrderID = OrderID;
+        this.CustomerID = CustomerId;
+        this.Freight = Freight;
+        this.ShipCountry = ShipCountry;    
+    }
+    public static List<OrderDetails> GetAllRecords()
+    {
+        if (Order.Count == 0)
+        {
+            Order.Add(new OrderDetails(10248, "VINET", 32.38, "France"));
+            Order.Add(new OrderDetails(10249, "TOMSP", 11.61, "Germany"));
+            Order.Add(new OrderDetails(10250, "HANAR", 65.83, "Brazil"));
+            Order.Add(new OrderDetails(10251, "VICTE", 41.34, "France"));
+            Order.Add(new OrderDetails(10252, "SUPRD", 51.3, "Belgium"));
+            Order.Add(new OrderDetails(10253, "HANAR", 58.17, "Brazil"));
+            Order.Add(new OrderDetails(10254, "CHOPS", 22.98, "Switzerland"));
+            Order.Add(new OrderDetails(10255, "RICSU", 148.33, "Switzerland"));
+            Order.Add(new OrderDetails(10256, "WELLI", 13.97, "Brazil"));
+            Order.Add(new OrderDetails(10257, "HILAA", 81.91, "Venezuela"));
+            Order.Add(new OrderDetails(10258, "ERNSH", 140.51, "Austria"));
+            Order.Add(new OrderDetails(10259, "CENTC", 3.25, "Mexico"));
+            Order.Add(new OrderDetails(10260, "OTTIK", 55.09, "Germany"));
+            Order.Add(new OrderDetails(10261, "QUEDE", 3.05, "Brazil"));
+            Order.Add(new OrderDetails(10262, "RATTC", 48.29, "USA"));
+        }
+        return Order;
+    }
+    public int OrderID { get; set; }
+    public string CustomerID { get; set; }
+    public double Freight { get; set; }
+    public string ShipCountry { get; set; }
+}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "https://blazorplayground.syncfusion.com/embed/BNVniZDiJwNAIpVv?appbar=false&editor=false&result=true&errorlist=false&theme=fluent2" %}
+
+> Note: When [ShowConfirmDialog](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridEditSettings.html#Syncfusion_Blazor_Grids_GridEditSettings_ShowConfirmDialog) is enabled in [GridEditSettings](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridEditSettings.html), confirmation dialogs appear before the batch operation is completed. The undo/redo stack remains active during the dialog interaction and is only cleared after the user confirms the **Update** or **Cancel** action.
+
+### Perform undo / redo actions using keyboard keys
+
+When [EnableUndoRedo](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridEditSettings.html#Syncfusion_Blazor_Grids_GridEditSettings_EnableUndoRedo) is set to `true`, the Blazor Data Grid supports keyboard shortcuts to undo and redo batch edit actions. The following table lists the supported keys and the corresponding actions.
+
+| Keys | Action |
+|------|--------|
+| `Ctrl + Z` | Reverts the last batch edit action in the Data Grid. |
+| `Ctrl + Y` | Reapplies the last reverted batch edit action in the Data Grid. |
+| `Cmd + Z` (macOS) | Reverts the last batch edit action in the Data Grid. |
+| `Cmd + Shift + Z` (macOS) | Reapplies the last reverted batch edit action in the Data Grid. |
+
+### Perform undo / redo actions using API methods
+
+The Blazor Data Grid provides API methods to perform undo and redo actions programmatically. The following table lists the available API methods and their behavior.
+
+| Method | Behavior |
+|--------|----------|
+| `UndoAsync()` | Reverts the last batch edit action performed in the Data Grid. |
+| `RedoAsync()` | Reapplies the last reverted batch edit action in the Data Grid. |
+| `UndoAllAsync()` | Reverts all batch edit actions available in the undo stack of the Data Grid. |
+| `RedoAllAsync()` | Reapplies all reverted batch edit actions available in the redo stack of the Data Grid. |
+| `ClearUndoRedoAsync()` | Clears both the undo stack and the redo stack of the Data Grid. |
+
+### Events involved in undo / redo actions
+
+The Blazor Data Grid triggers events when undo and redo actions are performed. These events allow custom logic to run before or after each action. The following table lists the events and describes when each event is triggered.
+
+| Event Name | Class Name | Description |
+|------------|-----------|-------------|
+| `OnUndo` | `OnUndoEventArgs<TValue>` | Triggers before an undo action is applied in the Data Grid. |
+| `OnRedo` | `OnRedoEventArgs<TValue>` | Triggers before a redo action is applied in the Data Grid. |
+| `OnUndoCompleted` | `OnUndoCompletedEventArgs<TValue>` | Triggers after an undo action is applied in the Data Grid. |
+| `OnRedoCompleted` | `OnRedoCompletedEventArgs<TValue>` | Triggers after a redo action is applied in the Data Grid. |
+
+### Limitations
+
+- Undo and Redo actions are supported only in batch edit mode.
+- The number of stored actions is limited by the `UndoRedoLimit` property. When the limit is reached, the oldest action is removed from the stack.
+
 ## Automatically update the column based on another column edited value
 
 In batch editing mode, the Blazor DataGrid supports automatic updates of one column based on changes made to another. This is useful for scenarios where calculated values need to be updated in real time during editing.
