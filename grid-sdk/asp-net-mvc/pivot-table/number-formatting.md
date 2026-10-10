@@ -24,12 +24,12 @@ The Pivot Table component supports the following display formats for numeric val
 
 ## Defining number format settings
 
-To configure number formats for numeric values, use the [`FormatSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewFormatSetting.html) property in the [`DataSourceSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_DataSourceSettings). Use the following main properties within the [`FormatSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewFormatSetting.html) option to define how values are formatted:
+To configure number formats for numeric values, use the [`FormatSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewFormatSetting.html) property in the [`DataSourceSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_DataSourceSettings). Use the following main properties within the [`FormatSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewFormatSetting.html) option to define how values are formatted:
 
 ### Essential formatting properties
 
-* [`Name`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewFormatSetting.html#Syncfusion_EJ2_PivotView_PivotViewFormatSetting_Name): Specifies the field name to which the formatting should be applied.
-* [`Format`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewFormatSetting.html#Syncfusion_EJ2_PivotView_PivotViewFormatSetting_Format): Defines the format pattern for the respective field.
+* [`Name`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewFormatSetting.html#Syncfusion_EJ2_PivotView_PivotViewFormatSetting_Name): Specifies the field name to which the formatting should be applied.
+* [`Format`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewFormatSetting.html#Syncfusion_EJ2_PivotView_PivotViewFormatSetting_Format): Defines the format pattern for the respective field.
 
 ### Format type codes
 
@@ -43,21 +43,8 @@ Use these standard format codes to specify the formatting type:
 
 ### Additional formatting options
 
-* [`UseGrouping`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewFormatSetting.html#Syncfusion_EJ2_PivotView_PivotViewFormatSetting_UseGrouping): Controls the display of grouping separators. When set to **true** (default), displays values like $100,000,000; when **false**, displays as $100000000.
-* [`Currency`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewFormatSetting.html#Syncfusion_EJ2_PivotView_PivotViewFormatSetting_Currency): Specifies the currency code to be considered for currency formatting (e.g., USD, EUR, GBP).
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/number-formatting/code-behind/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Formatting.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/number-formatting/code-behind/Formatting.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
+* [`UseGrouping`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewFormatSetting.html#Syncfusion_EJ2_PivotView_PivotViewFormatSetting_UseGrouping): Controls the display of grouping separators. When set to **true** (default), displays values like $100,000,000; when **false**, displays as $100000000.
+* [`Currency`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewFormatSetting.html#Syncfusion_EJ2_PivotView_PivotViewFormatSetting_Currency): Specifies the currency code to be considered for currency formatting (e.g., USD, EUR, GBP).
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -67,19 +54,16 @@ Use these standard format codes to specify the formatting type:
 {% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/number-formatting/code-behind/Formatting.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
-
-
 
 ![Number formatting example](images/formatting.png)
 
-You can also format the values at runtime using the formatting dialog. This option can be enabled by setting the [`AllowNumberFormatting`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_AllowNumberFormatting) property to **true**. The same has been discussed in some of the upcoming topics.
+You can also format the values at runtime using the formatting dialog. This option can be enabled by setting the [`AllowNumberFormatting`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_AllowNumberFormatting) property to **true**. The same has been discussed in some of the upcoming topics.
 
 > **Important:** To use the runtime formatting dialog, include the `NumberFormatting` module in the pivot table.
 
 ## Custom format
 
-Custom format lets you display numbers in your preferred pattern by setting the [`Format`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewFormatSetting.html#Syncfusion_EJ2_PivotView_PivotViewFormatSetting_Format) property within the [`FormatSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewFormatSetting.html). You can use one or more format specifiers (shown in the table below) to control how values appear in the Pivot Table.
+Custom format lets you display numbers in your preferred pattern by setting the [`Format`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewFormatSetting.html#Syncfusion_EJ2_PivotView_PivotViewFormatSetting_Format) property within the [`FormatSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewFormatSetting.html). You can use one or more format specifiers (shown in the table below) to control how values appear in the Pivot Table.
 
 | Specifier | Description | Input | Format Output |
 | ------- |--------------- | ---------------- | --------------- |
@@ -91,20 +75,7 @@ Custom format lets you display numbers in your preferred pattern by setting the 
 | ; | Denotes separate formats for positive, negative and zero values. | { format: '###.##;(###.00);-0' } | '(120.00)'    |
 | 'String' (single Quotes) | Denotes the characters that are enclosed in the single quote (') to be replaced in the resulting string. | { format: "####.00 '@'" } | "123.00 @"    |
 
->NOTE: When you define a custom format, certain properties such as [`UseGrouping`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewFormatSetting.html#Syncfusion_EJ2_PivotView_PivotViewFormatSetting_UseGrouping) and [`Currency`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewFormatSetting.html#Syncfusion_EJ2_PivotView_PivotViewFormatSetting_Currency) in the format settings will be ignored.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/number-formatting/custom/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Formatting.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/number-formatting/custom/Formatting.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
+>NOTE: When you define a custom format, certain properties such as [`UseGrouping`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewFormatSetting.html#Syncfusion_EJ2_PivotView_PivotViewFormatSetting_UseGrouping) and [`Currency`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewFormatSetting.html#Syncfusion_EJ2_PivotView_PivotViewFormatSetting_Currency) in the format settings will be ignored.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -114,28 +85,12 @@ Custom format lets you display numbers in your preferred pattern by setting the 
 {% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/number-formatting/custom/Formatting.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
-
-
 
 ![Custom number formatting](images/formatting-custom.png)
 
 ## Toolbar
 
-Number formatting can be applied instantly at runtime through the built-in dialog, accessible from the toolbar. To enable this, set both the [`AllowNumberFormatting`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_AllowNumberFormatting) and [`ShowToolbar`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_ShowToolbar) properties to **true**, and include the **NumberFormatting** option in the [`Toolbar`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_Toolbar) property. The toolbar will then automatically display the "Number Formatting" icon. Clicking this icon opens the dialog, allowing you to specify number formats for value fields directly within the Pivot Table.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/number-formatting/toolbar/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Formatting.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/number-formatting/toolbar/Formatting.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
+Number formatting can be applied instantly at runtime through the built-in dialog, accessible from the toolbar. To enable this, set both the [`AllowNumberFormatting`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_AllowNumberFormatting) and [`ShowToolbar`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_ShowToolbar) properties to **true**, and include the **NumberFormatting** option in the [`Toolbar`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_Toolbar) property. The toolbar will then automatically display the "Number Formatting" icon. Clicking this icon opens the dialog, allowing you to specify number formats for value fields directly within the Pivot Table.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -145,28 +100,12 @@ Number formatting can be applied instantly at runtime through the built-in dialo
 {% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/number-formatting/toolbar/Formatting.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
-
-
 
 ![Number formatting toolbar](images/formatting-toolbar.png)
 
 ## Invoking formatting dialog through external button
 
 The number formatting dialog can be opened programmatically by clicking an external button, using the `ShowNumberFormattingDialog` method of the PivotTable component.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/number-formatting/button/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Formatting.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/number-formatting/button/Formatting.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -176,9 +115,6 @@ The number formatting dialog can be opened programmatically by clicking an exter
 {% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/number-formatting/button/Formatting.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
-
-
 
 ![Number formatting dialog](images/formatting-dialog.png)
 
@@ -186,7 +122,7 @@ The number formatting dialog can be opened programmatically by clicking an exter
 
 ### NumberFormatting
 
-The [`NumberFormatting`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_NumberFormatting) event is triggered when the user clicks the 'Apply' button in the number formatting dialog to confirm their formatting settings. This event facilitates the validation or modification of the formatting settings applied by the user. It includes the following parameters:
+The [`NumberFormatting`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_NumberFormatting) event is triggered when the user clicks the 'Apply' button in the number formatting dialog to confirm their formatting settings. This event facilitates the validation or modification of the formatting settings applied by the user. It includes the following parameters:
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
@@ -194,20 +130,7 @@ The [`NumberFormatting`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusio
 | `formatSettings` | `IFormatSettings` | Contains the user-defined formatting options, such as decimal places (`minimumFractionDigits`, `maximumFractionDigits`), currency symbols (`currency`), or grouping separators (`useGrouping`), applied to the field. |
 | `cancel` | `boolean` | It is a boolean property, and when set to **true**, the customization made in the number formatting dialog will not be applied. |
 
-The following sample demonstrates how to prevent number formatting changes for the 'Amount' field by setting the `cancel` property to **true** in the [`NumberFormatting`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_NumberFormatting) event.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/number-formatting/numberformatting-event/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Formatting.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/number-formatting/numberformatting-event/Formatting.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
+The following sample demonstrates how to prevent number formatting changes for the 'Amount' field by setting the `cancel` property to **true** in the [`NumberFormatting`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_NumberFormatting) event.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -217,12 +140,9 @@ The following sample demonstrates how to prevent number formatting changes for t
 {% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/number-formatting/numberformatting-event/Formatting.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
-
-
 
 ## See Also
 
 * [Customize number, date, and time values](./how-to/customize-number-date-and-time-values)
-* [NumberFormatOptions](https://ej2.syncfusion.com/documentation/common/intl.html?lang=typescript#manipulating-numbers)
+* [NumberFormatOptions](https://ej2.syncfusion.com/aspnetmvc/documentation/common/internationalization#manipulating-numbers)
 * [Toolbar](./tool-bar)

@@ -9,7 +9,7 @@ documentation: ug
 
 # Command Column Editing in ASP.NET MVC TreeGrid
 
-The command column provides an option to add CRUD action buttons in a column. This can be defined by the [`Commands`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridColumn~Commands.html) property of [`Column`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridColumn.html) API.
+The command column provides an option to add CRUD action buttons in a column. This can be defined by the [`Commands`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGridColumn.html#Syncfusion_EJ2_TreeGrid_TreeGridColumn_Commands) property of [`Column`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGridColumn.html) API.
 
 The available built-in command buttons are:
 
@@ -20,19 +20,6 @@ The available built-in command buttons are:
 | Save | Update the edited row.|
 | Cancel | Cancel the edited state. |
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/editing/command-columns/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Commandcolumn.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/editing/command-columns/commandcolumn.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/editing/command-columns/razor %}
@@ -41,26 +28,10 @@ The available built-in command buttons are:
 {% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/editing/command-columns/commandcolumn.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
-
-
 
 ## Custom command
 
- The custom command buttons can be added in a column by using the [`Commands`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridColumn~Commands.html) property of [`Column`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridColumn.html) API and the action for the custom buttons can be defined in the **ButtonOption.Click** event.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/editing/custom-command/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Customcommand.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/editing/custom-command/customcommand.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
+The custom command buttons can be added in a column by using the [`Commands`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGridColumn.html#Syncfusion_EJ2_TreeGrid_TreeGridColumn_Commands) property of [`Column`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGridColumn.html) API and the action for the custom buttons can be defined in the **ButtonOption.Click** event.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -70,8 +41,5 @@ The available built-in command buttons are:
 {% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/editing/custom-command/customcommand.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
-
-
-N> You can refer to our [`ASP.NET MVC Tree Grid`](https://www.syncfusion.com/aspnet-mvc-ui-controls/tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our [`ASP.NET MVC Tree Grid example`](https://ej2.syncfusion.com/aspnetmvc/TreeGrid/Overview#/material) to knows how to present and manipulate data.
+N> You can refer to our [`ASP.NET MVC Tree Grid`](https://www.syncfusion.com/aspnet-mvc-ui-controls/tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our [`ASP.NET MVC Tree Grid example`](https://ej2.syncfusion.com/aspnetmvc/treegrid/overview#/fluent2) to knows how to present and manipulate data.

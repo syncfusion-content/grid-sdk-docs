@@ -26,19 +26,6 @@ Follow these steps to enable combined table and chart export:
 
 The following example demonstrates how to restrict the built-in export action by setting the `args.cancel` option to **true** in the [`ActionBegin`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_ActionBegin) event, and then export both the table and the chart by calling the `pdfExport` method with the `exportBothTableAndChart` argument set to **true**.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/export-table-and-chart/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="ExportTableAndChart.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/export-table-and-chart/ExportTableAndChart.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/export-table-and-chart/razor %}
@@ -47,4 +34,3 @@ The following example demonstrates how to restrict the built-in export action by
 {% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/export-table-and-chart/ExportTableAndChart.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}

@@ -41,7 +41,7 @@ To achieve real-time data binding with SignalR in your Grid, follow the steps be
 * Name the project **SignalR**.
 * Click “Create”
 
-**Step 2:**  Create a simple Grid by following the [Getting Started documentation link](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/getting-started-mvc).
+**Step 2:**  Create a simple Grid by following the [Getting Started documentation link](https://help.syncfusion.com/grid-sdk/asp-net-mvc/data-grid/getting-started-mvc).
 
 **Step 3:**  Create a controller on the server-side to manage data operations such as fetching, updating, inserting, and deleting records. You can create a **HomeController.cs** file under the **Controllers** folder. Add the following code to define methods for sending data updates to clients:
 
@@ -365,7 +365,7 @@ To achieve data binding and perform CRUD actions using Fetch requests in the Gri
 * Name the project **FetchRequest**.
 * Click “Create”
 
-**Step 2:**  Create a simple Grid by following the [Getting Started documentation link](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/getting-started-mvc).
+**Step 2:**  Create a simple Grid by following the [Getting Started documentation link](https://help.syncfusion.com/grid-sdk/asp-net-mvc/data-grid/getting-started-mvc).
 
 **Step 3:**  In the **Views/Home/Index.cshtml** file, follow the steps below.
 
@@ -619,7 +619,7 @@ To achieve data binding and perform CRUD actions using AJAX requests in the Grid
 * Name the project **AJAXRequest**.
 * Click “Create”
 
-**Step 2:**  Create a simple Grid by following the [Getting Started documentation link](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/getting-started-mvc).
+**Step 2:**  Create a simple Grid by following the [Getting Started documentation link](https://help.syncfusion.com/grid-sdk/asp-net-mvc/data-grid/getting-started-mvc).
 
 **Step 3:**  In the **Views/Home/Index.cshtml** file, follow the steps below.
 

@@ -12,8 +12,7 @@ documentation: ug
 
 ## Cell edit type and its params
 
-The [`EditType`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridColumn~EditType.html) in [`Column`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridColumn.html) API is used to customize the edit type of the particular column.
-You can set the [`EditType`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridColumn~EditType.html) based on data type of the column.
+The [`EditType`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGridColumn.html#Syncfusion_EJ2_TreeGrid_TreeGridColumn_EditType) in [`Column`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGridColumn.html) API is used to customize the edit type of the particular column. You can set the [`EditType`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGridColumn.html#Syncfusion_EJ2_TreeGrid_TreeGridColumn_EditType) based on data type of the column.
 
 * [`NumericTextBox`](../numerictextbox) component for integers, double, and decimal data types.
 
@@ -27,7 +26,7 @@ You can set the [`EditType`](https://help.syncfusion.com/cr/cref_files/aspnetcor
 
 * `datetimepickeredit` - [`DateTimePicker`](../datetimepicker) component for date time data type.
 
-Also, you can customize model of the [`EditType`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridColumn~EditType.html) component through the **params** in[`Edit`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridColumn~Edit.html) property of [`Column`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridColumn.html) API.
+Also, you can customize model of the [`EditType`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGridColumn.html#Syncfusion_EJ2_TreeGrid_TreeGridColumn_EditType) component through the **params** in[`Edit`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGridColumn.html#Syncfusion_EJ2_TreeGrid_TreeGridColumn_Edit) property of [`Column`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGridColumn.html) API.
 
 The following table describes cell edit type component and their corresponding edit params of the column.
 
@@ -40,19 +39,6 @@ Component |Example
 [`DatePicker`](../datepicker) | params: { format:'dd.MM.yyyy' }
 [`DateTimePicker`](../datetimepicker) | params: { value: new Date() }
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/editing/edit-type/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="EditType.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/editing/edit-type/editType.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/editing/edit-type/razor %}
@@ -61,9 +47,6 @@ Component |Example
 {% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/editing/edit-type/editType.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
-
-
 
 N> If edit type is not defined in the column, then it will be considered as the **stringedit** type (Textbox component).
-<br/> You can refer to our [`ASP.NET MVC Tree Grid`](https://www.syncfusion.com/aspnet-mvc-ui-controls/tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our [`ASP.NET MVC Tree Grid example`](https://ej2.syncfusion.com/aspnetmvc/TreeGrid/Overview#/material) to knows how to present and manipulate data.
+<br/> You can refer to our [`ASP.NET MVC Tree Grid`](https://www.syncfusion.com/aspnet-mvc-ui-controls/tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our [`ASP.NET MVC Tree Grid example`](https://ej2.syncfusion.com/aspnetmvc/treegrid/overview#/fluent2) to knows how to present and manipulate data.

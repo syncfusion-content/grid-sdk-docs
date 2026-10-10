@@ -13,19 +13,6 @@ Checkbox selection provides an option to select multiple treegrid records with h
 
 To render the checkbox in each treegrid row, you need to use checkbox column with type as `checkbox` using the column [`Type`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGridColumn.html#Syncfusion_EJ2_TreeGrid_TreeGridColumn_Type) property.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/selection/checkbox/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Checkbox.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/selection/checkbox/checkbox.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/selection/checkbox/razor %}
@@ -34,9 +21,6 @@ To render the checkbox in each treegrid row, you need to use checkbox column wit
 {% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/selection/checkbox/checkbox.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
-
-
 
 N> By default, selection is allowed by clicking a treegrid row or checkbox in that row. To allow selection only through checkbox, you can set the
 <br/>[`CheckboxOnly`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGridSelectionSettings.html#Syncfusion_EJ2_TreeGrid_TreeGridSelectionSettings_CheckboxOnly) property of [`SelectionSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGridSelectionSettings.html) to true.
@@ -50,19 +34,6 @@ In checkbox selection, selection can also be done by clicking on rows. This sele
 * `Default`: This is the default value of the `checkboxMode`. In this mode, user can select multiple rows by clicking rows one by one.
 * `ResetOnRowClick`: In `ResetOnRowClick` mode, when user clicks on a row it will reset previously selected row. Also you can perform multiple-selection in this mode by press and hold **CTRL** key and click the desired rows. To select range of rows, press and hold the **SHIFT** key and click the rows.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/selection/windowslikeselection/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Windows.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/selection/windowslikeselection/windows.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/selection/windowslikeselection/razor %}
@@ -71,7 +42,6 @@ In checkbox selection, selection can also be done by clicking on rows. This sele
 {% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/selection/windowslikeselection/windows.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 > Checkbox Selection feature is intended for row selection only; it is not compatible with cell selection mode.
 
@@ -85,19 +55,6 @@ Remote data: The callback runs only for the rows displayed on the current page w
 
 In the following sample, selection is disabled for rows where the "Progress" column has the value "Completed".
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/selection/partial-selection/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Partial.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/selection/partial-selection/partial.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/selection/partial-selection/razor %}
@@ -106,7 +63,6 @@ In the following sample, selection is disabled for rows where the "Progress" col
 {% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/selection/partial-selection/partial.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ## Hierarchy checkbox selection
 
@@ -120,19 +76,6 @@ The available modes are displayed in the following table.
 | `hierarchy` | Selection cascades to all descendants and adjusts the parent state accordingly. |
 | `filteredHierarchy` | Behaves like hierarchy, but applies the cascade only to records matching the current filter or search criteria. |
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/selection/hierarchy-selection/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Hierarchy.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/selection/hierarchy-selection/hierarchy-selection.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/selection/hierarchy-selection/razor %}
@@ -141,8 +84,7 @@ The available modes are displayed in the following table.
 {% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/selection/hierarchy-selection/hierarchy-selection.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
-N> You can refer to our [`ASP.NET MVC Tree Grid`](https://www.syncfusion.com/aspnet-mvc-ui-controls/tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our [`ASP.NET MVC Tree Grid example`](https://ej2.syncfusion.com/aspnetmvc/TreeGrid/Overview#/material) to knows how to present and manipulate data.
+N> You can refer to our [`ASP.NET MVC Tree Grid`](https://www.syncfusion.com/aspnet-mvc-ui-controls/tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our [`ASP.NET MVC Tree Grid example`](https://ej2.syncfusion.com/aspnetmvc/treegrid/overview#/fluent2) to knows how to present and manipulate data.
 
 

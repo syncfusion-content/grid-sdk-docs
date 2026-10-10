@@ -13,24 +13,11 @@ TreeGrid allows you to load large amount of data without performance degradation
 
 ## Row Virtualization
 
-Row virtualization allows you to load and render rows only in the content viewport. It is an alternative way of paging in which the rows will be appended while scrolling vertically. To setup the row virtualization, you need to define [`EnableVirtualization`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.TreeGrid.TreeGrid.html#Syncfusion_EJ2_TreeGrid_TreeGrid_EnableVirtualization) as true and content height by [`Height`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.TreeGrid.TreeGrid.html#Syncfusion_EJ2_TreeGrid_TreeGrid_Height) property.
+Row virtualization allows you to load and render rows only in the content viewport. It is an alternative way of paging in which the rows will be appended while scrolling vertically. To setup the row virtualization, you need to define [`EnableVirtualization`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGrid.html#Syncfusion_EJ2_TreeGrid_TreeGrid_EnableVirtualization) as true and content height by [`Height`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGrid.html#Syncfusion_EJ2_TreeGrid_TreeGrid_Height) property.
 
 The number of records displayed in the TreeGrid is determined implicitly by height of the content area and a buffer records will be maintained in the TreeGrid content in addition to the original set of rows.
 
 Expand and Collapse state of any child record will be persisted.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/virtual/rowvirtual/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Rowvirtual.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/virtual/rowvirtual/rowvirtual.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -40,7 +27,6 @@ Expand and Collapse state of any child record will be persisted.
 {% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/virtual/rowvirtual/rowvirtual.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ### Limitations 
 
@@ -71,20 +57,7 @@ Expand and Collapse state of any child record will be persisted.
 
 Column virtualization allows you to virtualize columns. It will render column only in the current view port and all other columns are rendered on demand during horizontal scrolling.
 
-To setup the column virtualization, set the [`EnableVirtualization`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.TreeGrid.TreeGrid.html#Syncfusion_EJ2_TreeGrid_TreeGrid_EnableVirtualization) and [`EnableColumnVirtualization`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.TreeGrid.TreeGrid.html#Syncfusion_EJ2_TreeGrid_TreeGrid_EnableColumnVirtualization) properties as `true`.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/virtual/columnvirtual/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Columnvirtual.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/virtual/columnvirtual/columnvirtual.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
+To setup the column virtualization, set the [`EnableVirtualization`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGrid.html#Syncfusion_EJ2_TreeGrid_TreeGrid_EnableVirtualization) and [`EnableColumnVirtualization`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGrid.html#Syncfusion_EJ2_TreeGrid_TreeGrid_EnableColumnVirtualization) properties as `true`.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -94,9 +67,6 @@ To setup the column virtualization, set the [`EnableVirtualization`](https://hel
 {% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/virtual/columnvirtual/columnvirtual.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
-
-
 
 N> Column's `Width` is required for column virtualization. If column's width is not defined then tree grid will consider its value as `200px`.
 
@@ -127,4 +97,4 @@ N> Column's `Width` is required for column virtualization. If column's width is 
     8. Autofill
     9. Column chooser
        
-N> You can refer to our [`ASP.NET MVC Tree Grid`](https://www.syncfusion.com/aspnet-mvc-ui-controls/tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our [`ASP.NET MVC Tree Grid example`](https://ej2.syncfusion.com/aspnetmvc/TreeGrid/Overview#/material) to knows how to present and manipulate data.
+N> You can refer to our [`ASP.NET MVC Tree Grid`](https://www.syncfusion.com/aspnet-mvc-ui-controls/tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our [`ASP.NET MVC Tree Grid example`](https://ej2.syncfusion.com/aspnetmvc/treegrid/overview#/fluent2) to knows how to present and manipulate data.

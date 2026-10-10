@@ -9,7 +9,7 @@ documentation: ug
 
 # Column Menu in ASP.NET MVC TreeGrid
 
-The column menu has options to integrate features like sorting, filtering, and autofit. It will show a menu with the integrated feature when users click on multiple icon of the column. To enable column menu, you need to define the [`ShowColumnMenu`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGrid~ShowColumnMenu.html) property as true.
+The column menu has options to integrate features like sorting, filtering, and autofit. It will show a menu with the integrated feature when users click on multiple icon of the column. To enable column menu, you need to define the [`ShowColumnMenu`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGrid.html#Syncfusion_EJ2_TreeGrid_TreeGrid_ShowColumnMenu) property as true.
 
 By default, column menu is enabled for all columns and you can disable column menu for a particular column by defining the [`ShowColumnMenu`] as false in [`Column`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGridColumn.html) property.
 
@@ -23,16 +23,6 @@ The default items are displayed in following table.
 | `AutoFitAll` | Auto fit all columns. |
 | `Filter` | Show the filter option as given in `filterSettings.type` |
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight c# tabtitle="Columnmenu.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/columns-mvc/columnmenu/columnmenu.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/columns-mvc/columnmenu/razor %}
@@ -41,7 +31,6 @@ The default items are displayed in following table.
 {% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/columns-mvc/columnmenu/columnmenu.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ## Custom column menu item
 
@@ -51,16 +40,6 @@ The action for custom column menu items can be performed using [`ColumnMenuClick
 
 Refer to the below complete code example about how to use custom column menu item.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight c# tabtitle="Columnmenu.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/columns-mvc/customcolumnmenu/customcolumnmenu.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/columns-mvc/customcolumnmenu/razor %}
@@ -69,23 +48,12 @@ Refer to the below complete code example about how to use custom column menu ite
 {% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/columns-mvc/customcolumnmenu/customcolumnmenu.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ## Customize menu items for particular columns
 
 It is possible to customize specific items from the column menu for particular [`Columns`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGridColumn.html#Syncfusion_EJ2_TreeGrid_TreeGridColumn_Columns) using [`ColumnMenuOpen`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGrid.html#Syncfusion_EJ2_TreeGrid_TreeGrid_ColumnMenuOpen) event. `ColumnMenuOpen` event can be utilized to determine which items to customize in column menu.
 
 The following example shows how to hide the built-in **Filter** menu item when the column menu is opened for the **taskName** column, while allowing it to remain visible for all other columns.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight c# tabtitle="Columnmenu.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/columns-mvc/customizecolumnmenu/customizecolumnmenu.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -95,6 +63,5 @@ The following example shows how to hide the built-in **Filter** menu item when t
 {% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/columns-mvc/customizecolumnmenu/customizecolumnmenu.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
-N> You can refer to our [`ASP.NET MVC Tree Grid`](https://www.syncfusion.com/aspnet-mvc-ui-controls/tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our [`ASP.NET MVC Tree Grid example`](https://ej2.syncfusion.com/aspnetmvc/TreeGrid/Overview#/material) to knows how to present and manipulate data.
+N> You can refer to our [`ASP.NET MVC Tree Grid`](https://www.syncfusion.com/aspnet-mvc-ui-controls/tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our [`ASP.NET MVC Tree Grid example`](https://ej2.syncfusion.com/aspnetmvc/treegrid/overview#/fluent2) to knows how to present and manipulate data.

@@ -18,19 +18,6 @@ Interaction keys |Description
 <kbd>Ctrl + C</kbd> |Copy selected rows or cells data into clipboard.
 <kbd>Ctrl + Shift + H</kbd> |Copy selected rows or cells data with header into clipboard.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/clipboard/copy/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Copy.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/clipboard/copy/copy.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/clipboard/copy/razor %}
@@ -39,26 +26,11 @@ Interaction keys |Description
 {% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/clipboard/copy/copy.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
-
 
 
 ## Copy to clipboard by external buttons
 
-To copy selected rows or cells data into the clipboard with help of external buttons, you need to invoke the [`copy`](https://ej2.syncfusion.com/documentation/api/treegrid#copy) method.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/clipboard/copyButtons/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Copybuttons.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/clipboard/copyButtons/copybuttons.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
+To copy selected rows or cells data into the clipboard with help of external buttons, you need to invoke the [`copy`](https://ej2.syncfusion.com/documentation/api/treegrid/index-default#copy) method.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -68,8 +40,6 @@ To copy selected rows or cells data into the clipboard with help of external but
 {% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/clipboard/copyButtons/copybuttons.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
-
 
 
 ## Copy Hierarchy Modes
@@ -85,19 +55,6 @@ The below are the type of copy mode available in TreeGrid.
 
 * **None** : Only the Selected records will be in clipboard.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/clipboard/hierarchyMode/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Hierarchy.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/clipboard/hierarchyMode/hierarchy.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/clipboard/hierarchyMode/razor %}
@@ -106,26 +63,11 @@ The below are the type of copy mode available in TreeGrid.
 {% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/clipboard/hierarchyMode/hierarchy.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
-
 
 
 ## AutoFill
 
 AutoFill Feature allows you to copy the data of selected cells and paste it to another cells by just dragging the autofill icon of the selected cells up to required cells. This feature is enabled by defining `EnableAutoFill` property as true.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/clipboard/autofill/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Autofill.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/clipboard/autofill/autofill.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -135,8 +77,6 @@ AutoFill Feature allows you to copy the data of selected cells and paste it to a
 {% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/clipboard/autofill/autofill.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
-
 
 
 N> * If `EnableAutoFill` is set to true, then the autofill icon will be displayed on cell selection to copy cells.
@@ -151,19 +91,6 @@ N> * If `EnableAutoFill` is set to true, then the autofill icon will be displaye
 
 You can able to copy the content of a cell or a group of cells by selecting the cells and pressing <kbd>Ctrl + C</kbd> shortcut key and paste it to another set of cells by selecting the cells and pressing <kbd>Ctrl + V</kbd> shortcut key.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/clipboard/paste/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Paste.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/clipboard/paste/paste.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/clipboard/paste/razor %}
@@ -172,8 +99,6 @@ You can able to copy the content of a cell or a group of cells by selecting the 
 {% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/clipboard/paste/paste.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
-
 
 
 N> To perform paste functionality, it requires the selection `Mode` to be `Cell`,  `CellSelectionMode` to be `Box` and also Batch Editing should be enabled.
@@ -182,4 +107,4 @@ N> To perform paste functionality, it requires the selection `Mode` to be `Cell`
 
 * Since the string values are not parsed to number and date type, so when the copied string type cells are pasted to number type cells then it will display as **NaN**. For date type cells, when the copied string format cells are pasted to date type cells then it will display as an **empty cell**.
 
-N> You can refer to our [`ASP.NET MVC Tree Grid`](https://www.syncfusion.com/aspnet-mvc-ui-controls/tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our [`ASP.NET MVC Tree Grid example`](https://ej2.syncfusion.com/aspnetmvc/TreeGrid/Overview#/material) to knows how to present and manipulate data.
+N> You can refer to our [`ASP.NET MVC Tree Grid`](https://www.syncfusion.com/aspnet-mvc-ui-controls/tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our [`ASP.NET MVC Tree Grid example`](https://ej2.syncfusion.com/aspnetmvc/treegrid/overview#/fluent2) to knows how to present and manipulate data.

@@ -13,19 +13,19 @@ documentation: ug
 
 > This feature is applicable only for the relational data source.
 
-The cell editing option allows users to directly change data in the pivot table by adding, updating, or deleting raw data items within any value cell. When you double-click a value cell, the raw items appear in a data grid within a new window. In this data grid, you can perform CRUD operations by double-clicking cells or using toolbar options. After you finish editing the raw items, the pivot table automatically updates the aggregated values. To enable this option, set the [`AllowEditing`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewCellEditSettings.html#Syncfusion_EJ2_PivotView_PivotViewCellEditSettings_AllowEditing) property in [`PivotViewCellEditSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewCellEditSettings.html) to **true**.
+The cell editing option allows users to directly change data in the pivot table by adding, updating, or deleting raw data items within any value cell. When you double-click a value cell, the raw items appear in a data grid within a new window. In this data grid, you can perform CRUD operations by double-clicking cells or using toolbar options. After you finish editing the raw items, the pivot table automatically updates the aggregated values. To enable this option, set the [`AllowEditing`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewCellEditSettings.html#Syncfusion_EJ2_PivotView_PivotViewCellEditSettings_AllowEditing) property in [`PivotViewCellEditSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewCellEditSettings.html) to **true**.
 
 The [`PivotViewCellEditSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewCellEditSettings.html) property provides comprehensive control over editing behavior through the following options:
 
-* [`AllowAdding`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewCellEditSettings.html#Syncfusion_EJ2_PivotView_PivotViewCellEditSettings_AllowAdding): Enables adding new rows to the data grid.
-* [`AllowEditing`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewCellEditSettings.html#Syncfusion_EJ2_PivotView_PivotViewCellEditSettings_AllowEditing): Allows editing existing records in the data grid.
-* [`AllowDeleting`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewCellEditSettings.html#Syncfusion_EJ2_PivotView_PivotViewCellEditSettings_AllowDeleting): Enables deleting records directly from the data grid.
-* [`AllowCommandColumns`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewCellEditSettings.html#Syncfusion_EJ2_PivotView_PivotViewCellEditSettings_AllowCommandColumns): Displays built-in command buttons (edit, delete, save, cancel) in the data grid.
-* [`Mode`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewCellEditSettings.html#Syncfusion_EJ2_PivotView_PivotViewCellEditSettings_Mode): Sets the editing mode.
-* [`AllowEditOnDblClick`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewCellEditSettings.html#Syncfusion_EJ2_PivotView_PivotViewCellEditSettings_AllowEditOnDblClick): Enables users to start editing a cell by double-clicking it.
-* [`ShowConfirmDialog`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewCellEditSettings.html#Syncfusion_EJ2_PivotView_PivotViewCellEditSettings_ShowConfirmDialog): Shows a confirmation dialog before saving changes.
-* [`ShowDeleteConfirmDialog`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewCellEditSettings.html#Syncfusion_EJ2_PivotView_PivotViewCellEditSettings_ShowDeleteConfirmDialog): Shows a confirmation dialog before deleting a record.
-* [`AllowInlineEditing`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewCellEditSettings.html#Syncfusion_EJ2_PivotView_PivotViewCellEditSettings_AllowInlineEditing): Allows users to edit content directly in the cell.
+* [`AllowAdding`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewCellEditSettings.html#Syncfusion_EJ2_PivotView_PivotViewCellEditSettings_AllowAdding): Enables adding new rows to the data grid.
+* [`AllowEditing`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewCellEditSettings.html#Syncfusion_EJ2_PivotView_PivotViewCellEditSettings_AllowEditing): Allows editing existing records in the data grid.
+* [`AllowDeleting`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewCellEditSettings.html#Syncfusion_EJ2_PivotView_PivotViewCellEditSettings_AllowDeleting): Enables deleting records directly from the data grid.
+* [`AllowCommandColumns`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewCellEditSettings.html#Syncfusion_EJ2_PivotView_PivotViewCellEditSettings_AllowCommandColumns): Displays built-in command buttons (edit, delete, save, cancel) in the data grid.
+* [`Mode`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewCellEditSettings.html#Syncfusion_EJ2_PivotView_PivotViewCellEditSettings_Mode): Sets the editing mode.
+* [`AllowEditOnDblClick`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewCellEditSettings.html#Syncfusion_EJ2_PivotView_PivotViewCellEditSettings_AllowEditOnDblClick): Enables users to start editing a cell by double-clicking it.
+* [`ShowConfirmDialog`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewCellEditSettings.html#Syncfusion_EJ2_PivotView_PivotViewCellEditSettings_ShowConfirmDialog): Shows a confirmation dialog before saving changes.
+* [`ShowDeleteConfirmDialog`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewCellEditSettings.html#Syncfusion_EJ2_PivotView_PivotViewCellEditSettings_ShowDeleteConfirmDialog): Shows a confirmation dialog before deleting a record.
+* [`AllowInlineEditing`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewCellEditSettings.html#Syncfusion_EJ2_PivotView_PivotViewCellEditSettings_AllowInlineEditing): Allows users to edit content directly in the cell.
 
 The CRUD operations available in the data grid toolbar and command column are:
 
@@ -46,22 +46,9 @@ The following are the supported edit types in the data grid:
 
 ## Normal
 
-Normal edit mode allows users to edit one row at a time in the editing dialog with simple data changes and updates. In normal edit mode, when editing begins, the selected row changes to edit state. Cell values can be modified and saved to the data source by clicking the "Update" toolbar button. To enable normal edit mode, set the [`Mode`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewCellEditSettings.html#Syncfusion_EJ2_PivotView_PivotViewCellEditSettings_Mode) property in [`PivotViewCellEditSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewCellEditSettings.html) to **Normal**.
+Normal edit mode allows users to edit one row at a time in the editing dialog with simple data changes and updates. In normal edit mode, when editing begins, the selected row changes to edit state. Cell values can be modified and saved to the data source by clicking the "Update" toolbar button. To enable normal edit mode, set the [`Mode`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewCellEditSettings.html#Syncfusion_EJ2_PivotView_PivotViewCellEditSettings_Mode) property in [`PivotViewCellEditSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewCellEditSettings.html) to **Normal**.
 
 > The normal edit mode **Normal** is set as the default mode for editing.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/editing/normal/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Normal.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/editing/normal/Normal.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -71,28 +58,12 @@ Normal edit mode allows users to edit one row at a time in the editing dialog wi
 {% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/editing/normal/Normal.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
-
-
 
 ![Pivot Table normal edit mode](images/edit-normal.png)
 
 ## Dialog
 
-The dialog edit mode provides a focused editing environment by displaying the selected row data in an exclusive dialog window, ensuring clear visibility and controlled data modification. In dialog edit mode, when editing begins, the currently selected row data appears in a dedicated dialog. Cell values can be modified and saved to the data source by clicking the "Save" button in the dialog. To enable dialog editing, set the [`Mode`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewCellEditSettings.html#Syncfusion_EJ2_PivotView_PivotViewCellEditSettings_Mode) property in [`PivotViewCellEditSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewCellEditSettings.html) to **Dialog**.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/editing/dialog/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Dialog.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/editing/dialog/Dialog.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
+The dialog edit mode provides a focused editing environment by displaying the selected row data in an exclusive dialog window, ensuring clear visibility and controlled data modification. In dialog edit mode, when editing begins, the currently selected row data appears in a dedicated dialog. Cell values can be modified and saved to the data source by clicking the "Save" button in the dialog. To enable dialog editing, set the [`Mode`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewCellEditSettings.html#Syncfusion_EJ2_PivotView_PivotViewCellEditSettings_Mode) property in [`PivotViewCellEditSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewCellEditSettings.html) to **Dialog**.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -102,28 +73,12 @@ The dialog edit mode provides a focused editing environment by displaying the se
 {% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/editing/dialog/Dialog.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
-
-
 
 ![Pivot Table dialog edit mode](images/edit-dialog.png)
 
 ## Batch
 
-Batch editing enables users to make multiple changes to data grid cells and save them all at once, improving efficiency for bulk updates. When a user double-clicks any data grid cell in batch mode, the target cell changes to edit state. Users can perform multiple changes and save all modifications (added, changed, and deleted data) to the data source by clicking the **Update** toolbar button. To enable batch editing, set the [`Mode`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewCellEditSettings.html#Syncfusion_EJ2_PivotView_PivotViewCellEditSettings_Mode) property in [`PivotViewCellEditSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewCellEditSettings.html) to **Batch**.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/editing/batch/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Batch.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/editing/batch/Batch.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
+Batch editing enables users to make multiple changes to data grid cells and save them all at once, improving efficiency for bulk updates. When a user double-clicks any data grid cell in batch mode, the target cell changes to edit state. Users can perform multiple changes and save all modifications (added, changed, and deleted data) to the data source by clicking the **Update** toolbar button. To enable batch editing, set the [`Mode`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewCellEditSettings.html#Syncfusion_EJ2_PivotView_PivotViewCellEditSettings_Mode) property in [`PivotViewCellEditSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewCellEditSettings.html) to **Batch**.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -133,15 +88,12 @@ Batch editing enables users to make multiple changes to data grid cells and save
 {% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/editing/batch/Batch.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
-
-
 
 ![Pivot Table batch edit mode](images/edit-batch.png)
 
 ## Command column
 
-The command column option provides dedicated action buttons within the data grid for streamlined CRUD operations as an alternative to using toolbar options. An additional column appears in the data grid layout containing command buttons to perform the CRUD operations. To enable the command columns, set the [`AllowCommandColumns`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewCellEditSettings.html#Syncfusion_EJ2_PivotView_PivotViewCellEditSettings_AllowCommandColumns) property in [`PivotViewCellEditSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewCellEditSettings.html) to **true**.
+The command column option provides dedicated action buttons within the data grid for streamlined CRUD operations as an alternative to using toolbar options. An additional column appears in the data grid layout containing command buttons to perform the CRUD operations. To enable the command columns, set the [`AllowCommandColumns`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewCellEditSettings.html#Syncfusion_EJ2_PivotView_PivotViewCellEditSettings_AllowCommandColumns) property in [`PivotViewCellEditSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewCellEditSettings.html) to **true**.
 
 The available built-in command buttons are:
 
@@ -154,20 +106,7 @@ The available built-in command buttons are:
 
 N>
 - When the command column option is enabled, the Edit, Delete, Update, and Cancel buttons are not shown in the Data Grid's toolbar. Instead, these action buttons appear in the last column of each row within the Data Grid.
-- To delete a record directly from the data grid using the **Delete** action button in the command column, you need to set the [`AllowDeleting`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewCellEditSettings.html#Syncfusion_EJ2_PivotView_PivotViewCellEditSettings_AllowDeleting) property to **true**.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/editing/cc/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="CC.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/editing/cc/CC.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
+- To delete a record directly from the data grid using the **Delete** action button in the command column, you need to set the [`AllowDeleting`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewCellEditSettings.html#Syncfusion_EJ2_PivotView_PivotViewCellEditSettings_AllowDeleting) property to **true**.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -177,28 +116,12 @@ N>
 {% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/editing/cc/CC.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
-
-
 
 ![Pivot Table command column editing](images/edit-command.png)
 
 ## Inline Editing
 
 The inline editing option provides streamlined data modification by allowing direct editing of value cells without opening an external dialog, improving workflow efficiency for quick data updates. This editing mode applies only when a single raw data item corresponds to the value of the cell and works with all editing modes including normal, batch, dialog, and column commands. Enable inline editing by setting the [`AllowInlineEditing`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewCellEditSettings.html#Syncfusion_EJ2_PivotView_PivotViewCellEditSettings_AllowInlineEditing)property in [`PivotViewCellEditSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewCellEditSettings.html) to **true**.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/editing/Inline-editing/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Inline.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/editing/Inline-editing/Inline.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -208,9 +131,6 @@ The inline editing option provides streamlined data modification by allowing dir
 {% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/editing/Inline-editing/Inline.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
-
-
 
 ![Pivot Table inline editing](images/inline-editting.png)
 
@@ -220,19 +140,6 @@ Pivot chart editing provides an alternative way to conveniently update, add, or 
 
 Clicking a data point in the pivot chart displays the underlying raw items in a data grid within a popup window. Users can then add, update, or delete these items using any of the supported edit types (normal, dialog, batch, or command column), following the same steps as for pivot table cells.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/editing/chart/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Chart.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/editing/chart/Chart.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/editing/chart/razor %}
@@ -241,9 +148,6 @@ Clicking a data point in the pivot chart displays the underlying raw items in a 
 {% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/editing/chart/Chart.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
-
-
 
 ![Pivot chart drill-through before editing](images/drillthrough-chart-before.png)
 <br/>
@@ -261,19 +165,6 @@ The event [`EditCompleted`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfus
 * `previousPosition` - It holds the index of the raw data whose values are edited.
 * `cancel` - It is a boolean property and if it is set as **true**, the editing won’t be reflected in the pivot table.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/editCompleted-event/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="EditCompleted.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/editCompleted-event/EditCompleted.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/editCompleted-event/razor %}
@@ -282,8 +173,6 @@ The event [`EditCompleted`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfus
 {% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/editCompleted-event/EditCompleted.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
-
 
 ### DrillThrough
 
@@ -295,7 +184,7 @@ For more information [`refer`](./drill-through#begindrillthrough) here.
 
 ### ActionBegin
 
-The [`ActionBegin`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_ActionBegin) event triggers when editing actions such as add, edit, save, or delete are started through the UI (either by dialog or inline editing). This event lets users monitor the editing workflow and take action before the operation completes. The following parameters are available in the event:
+The [`ActionBegin`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_ActionBegin) event triggers when editing actions such as add, edit, save, or delete are started through the UI (either by dialog or inline editing). This event lets users monitor the editing workflow and take action before the operation completes. The following parameters are available in the event:
 
 - `dataSourceSettings`: Contains the current data source settings, including all input data, rows, columns, values, filters, and format settings.
 - `actionName`: Shows the name of the editing action that has started. The following are the UI actions and their names:
@@ -309,20 +198,7 @@ The [`ActionBegin`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2
 
 - `cancel`: Allows users to stop (cancel) the action by setting this option to **true**.
 
-For example, you can restrict add and save actions by setting **args.cancel** to **true** in the [`ActionBegin`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_ActionBegin) event.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/action-event/actionBegin-editing/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="ActionBegin-editing.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/action-event/actionBegin-editing/actionBegin-editing.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
+For example, you can restrict add and save actions by setting **args.cancel** to **true** in the [`ActionBegin`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_ActionBegin) event.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -332,11 +208,10 @@ For example, you can restrict add and save actions by setting **args.cancel** to
 {% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/action-event/actionBegin-editing/actionBegin-editing.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ### ActionComplete
 
-The [`ActionComplete`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_ActionComplete) event triggers whenever a UI action, such as add, update, remove, or save (using dialog or inline editing), is finished. This lets users know exactly what kind of action has just been completed. The event provides the following details:
+The [`ActionComplete`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_ActionComplete) event triggers whenever a UI action, such as add, update, remove, or save (using dialog or inline editing), is finished. This lets users know exactly what kind of action has just been completed. The event provides the following details:
 
 * `dataSourceSettings`: Contains the current data source settings, including input data, rows, columns, values, filters, format settings, and more.
 * `actionName`: It holds the name of the current action completed. The following are the UI actions and their names:
@@ -350,19 +225,6 @@ The [`ActionComplete`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.
 
 * `actionInfo`: It holds the unique information about the current UI action. For example, if save action is completed, the event argument contains information such as mode of editing and saved records.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/action-event/actionComplete-editing/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="ActionComplete-editing.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/action-event/actionComplete-editing/actionComplete-editing.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/action-event/actionComplete-editing/razor %}
@@ -371,11 +233,10 @@ The [`ActionComplete`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.
 {% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/action-event/actionComplete-editing/actionComplete-editing.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ### ActionFailure
 
-The [`ActionFailure`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_ActionFailure) event is triggered when a UI action fails to produce the expected result. This event provides detailed information about the failure through the following parameters:
+The [`ActionFailure`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_ActionFailure) event is triggered when a UI action fails to produce the expected result. This event provides detailed information about the failure through the following parameters:
 
 * `actionName`: It holds the name of the current action failed. The following are the UI actions and their names:
 
@@ -388,19 +249,6 @@ The [`ActionFailure`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.E
 
 * `errorInfo`: It holds the error information of the current UI action.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/action-event/actionFailure-editing/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="ActionFailure-editing.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/action-event/actionFailure-editing/actionFailure-editing.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/action-event/actionFailure-editing/razor %}
@@ -409,4 +257,3 @@ The [`ActionFailure`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.E
 {% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/action-event/actionFailure-editing/actionFailure-editing.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}

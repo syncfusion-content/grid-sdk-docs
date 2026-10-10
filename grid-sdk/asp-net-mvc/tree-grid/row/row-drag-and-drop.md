@@ -9,24 +9,11 @@ documentation: ug
 
 # Row Drag and Drop in ASP.NET MVC TreeGrid
 
-The TreeGrid rows can be reordered, dropped to another TreeGrid or custom control by enabling the [`allowRowDragAndDrop`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGrid~AllowRowDragAndDrop.html) to true.
+The TreeGrid rows can be reordered, dropped to another TreeGrid or custom control by enabling the [`allowRowDragAndDrop`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGrid.html#Syncfusion_EJ2_TreeGrid_TreeGrid_AllowRowDragAndDrop) to true.
 
 ## Drag and drop within Tree Grid
 
-The TreeGrid row drag and drop allows you to drag and drop TreeGrid rows on the same TreeGrid using drag icon. To enable row drag and drop, set the [`allowRowDragAndDrop`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGrid~AllowRowDragAndDrop.html) to true. It provides the way to drop the row above, below or child to the target row with respective to the target row position.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/row/row-drag-single/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Dragdrop.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/row/row-drag-single/dragdrop.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
+The TreeGrid row drag and drop allows you to drag and drop TreeGrid rows on the same TreeGrid using drag icon. To enable row drag and drop, set the [`allowRowDragAndDrop`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGrid.html#Syncfusion_EJ2_TreeGrid_TreeGrid_AllowRowDragAndDrop) to true. It provides the way to drop the row above, below or child to the target row with respective to the target row position.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -36,30 +23,14 @@ The TreeGrid row drag and drop allows you to drag and drop TreeGrid rows on the 
 {% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/row/row-drag-single/dragdrop.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
-
-
 
 N> * Selection feature must be enabled for row drag and drop.
-<br/> * For multiple row selection, the [`type`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridSelectionSettings~Type.html) property must be set to `multiple`.
+<br/> * For multiple row selection, the [`type`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGridSelectionSettings.html#Syncfusion_EJ2_TreeGrid_TreeGridSelectionSettings_Type) property must be set to `multiple`.
 <br/> * The [`isPrimaryKey`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.TreeGrid.TreeGridColumn.html#Syncfusion_EJ2_TreeGrid_TreeGridColumn_IsPrimaryKey) property is necessary to perform row drag and drop operation.
 
 ## Drag and drop to another Tree Grid
 
 To drag and drop between two TreeGrid, enable the [`allowRowDragAndDrop`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.TreeGrid.TreeGrid.html#Syncfusion_EJ2_TreeGrid_TreeGrid_AllowRowDragAndDrop) property and specify the target TreeGrid ID in [`targetID`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.TreeGrid.TreeGridRowDropSettings.html#Syncfusion_EJ2_TreeGrid_TreeGridRowDropSettings_TargetID) property of rowDropSettings.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/row/row-drag-drop/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Dragdrop.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/row/row-drag-drop/dragdrop.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -69,18 +40,15 @@ To drag and drop between two TreeGrid, enable the [`allowRowDragAndDrop`](https:
 {% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/row/row-drag-drop/dragdrop.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
-
-
 
 ## Drag and drop events
 
 The following events are triggered while drag and drop the treegrid rows.
 
 [`RowDragStartHelper`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.TreeGrid.TreeGrid.html#Syncfusion_EJ2_TreeGrid_TreeGrid_RowDragStartHelper) - Triggers when click the drag icon or treegrid row and this event is used to customize the drag element based on user criteria.<br/>
-[`RowDragStart`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGrid~RowDragStart.html) -Triggers when starts to drag the treegrid row. <br/>
-[`RowDrag`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGrid~RowDrag.html) - Triggers while dragging the treegrid row. <br/>
-[`RowDrop`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGrid~RowDrop.html) - Triggers when a drag element is dropped on the target element. <br/>
+[`RowDragStart`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGrid.html#Syncfusion_EJ2_TreeGrid_TreeGrid_RowDragStart) -Triggers when starts to drag the treegrid row. <br/>
+[`RowDrag`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGrid.html#Syncfusion_EJ2_TreeGrid_TreeGrid_RowDrag) - Triggers while dragging the treegrid row. <br/>
+[`RowDrop`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGrid.html#Syncfusion_EJ2_TreeGrid_TreeGrid_RowDrop) - Triggers when a drag element is dropped on the target element. <br/>
 
 ## Prevent reordering a row as child to another row
 
@@ -99,4 +67,4 @@ In the below example drop action is canceled and dropped above to target row.
 
 
 
-N> You can refer to our [`ASP.NET MVC Tree Grid`](https://www.syncfusion.com/aspnet-mvc-ui-controls/tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our [`ASP.NET MVC Tree Grid example`](https://ej2.syncfusion.com/aspnetmvc/TreeGrid/Overview#/material) to knows how to present and manipulate data.
+N> You can refer to our [`ASP.NET MVC Tree Grid`](https://www.syncfusion.com/aspnet-mvc-ui-controls/tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our [`ASP.NET MVC Tree Grid example`](https://ej2.syncfusion.com/aspnetmvc/treegrid/overview#/fluent2) to knows how to present and manipulate data.

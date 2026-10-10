@@ -24,19 +24,6 @@ You can customize the pivot button icons in the pivot table by overriding the cl
 
 In the below sample, pivot table is rendered with a customized pivot button icons.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/icon-customize/customize/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="IconCustomize.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/icon-customize/customize/IconCustomize.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/icon-customize/customize/razor %}
@@ -45,6 +32,3 @@ In the below sample, pivot table is rendered with a customized pivot button icon
 {% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/icon-customize/customize/IconCustomize.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
-
-

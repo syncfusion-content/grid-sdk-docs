@@ -14,19 +14,6 @@ By using the [`ColumnRender`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncf
 
 N> The **dot(.)** character in **FY 2016.Units Sold** is used by default to identify the header levels in the pivot table's row and column. It can be changed by setting the [`HeaderDelimiter`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewValueSortSettings.html#Syncfusion_EJ2_PivotView_PivotViewValueSortSettings_HeaderDelimiter) in the [`PivotViewValueSortSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewValueSortSettings.html) property to any other delimiter instead of the default separator.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/hide-specific-column/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="HideSpecificColumn.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/hide-specific-column/HideSpecificColumn.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/hide-specific-column/razor %}
@@ -35,6 +22,5 @@ N> The **dot(.)** character in **FY 2016.Units Sold** is used by default to iden
 {% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/hide-specific-column/HideSpecificColumn.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ![Hide specific columns in Pivot Table](../images/hide-specific-column.png)

@@ -25,19 +25,6 @@ You can map The CRUD operation in grid can be mapped to server-side Controller a
 
 The following code example describes the above behavior.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/editing/urladaptor/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="UrladaptorMVC.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/editing/urladaptor/urladaptorMVC.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/editing/urladaptor/razor %}
@@ -46,9 +33,6 @@ The following code example describes the above behavior.
 {% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/editing/urladaptor/urladaptorMVC.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
-
-
 
 Also, when using the **UrlAdaptor**, you need to return the data as JSON from the controller action and the JSON object must contain a property as **result** with dataSource as its value and one more property **count** with the dataSource total records count as its value.
 
@@ -58,19 +42,6 @@ Using the **InsertUrl** property, you can specify the controller action mapping 
 
 The following code example describes the above behavior.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/editing/urladaptor/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="InsertMVC.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/editing/urladaptor/insertMVC.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/editing/urladaptor/razor %}
@@ -79,9 +50,6 @@ The following code example describes the above behavior.
 {% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/editing/urladaptor/insertMVC.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
-
-
 
 The newly added record details are bound to the **value** parameter and **relationalKey** contains primaryKey value of an selected record helps to find out the position of newly added record. Refer to the following screenshot.
 
@@ -93,19 +61,6 @@ Using the **UpdateUrl** property, the controller action mapping URL can be speci
 
 The following code example describes the previous behavior.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/editing/urladaptor/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="UpdateMVC.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/editing/urladaptor/updateMVC.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/editing/urladaptor/razor %}
@@ -114,9 +69,6 @@ The following code example describes the previous behavior.
 {% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/editing/urladaptor/updateMVC.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
-
-
 
 The updated record details are bound to the **value** parameter. Refer to the following screenshot.
 
@@ -128,19 +80,6 @@ Using the **RemoveUrl** and **BatchUrl** property, the controller action mapping
 
 The following code example describes the previous behavior.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/editing/urladaptor/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="DeleteMVC.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/editing/urladaptor/deleteMVC.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/editing/urladaptor/razor %}
@@ -149,9 +88,6 @@ The following code example describes the previous behavior.
 {% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/editing/urladaptor/deleteMVC.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
-
-
 
 The deleted record primary key value is bound to the **key** parameter. Refer to the following screenshot.
 
@@ -169,19 +105,6 @@ Datasource must be set to **json** property and set **RemoteSaveAdaptor** to the
 
 You can use the following code example to use **RemoteSaveAdaptor** in TreeGrid.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/editing/remotesaveadaptor/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="CrudMVC.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/editing/remotesaveadaptor/crudMVC.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/editing/remotesaveadaptor/razor %}
@@ -190,8 +113,5 @@ You can use the following code example to use **RemoteSaveAdaptor** in TreeGrid.
 {% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/editing/remotesaveadaptor/crudMVC.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
-
-
-N> You can refer to our [`ASP.NET MVC Tree Grid`](https://www.syncfusion.com/aspnet-mvc-ui-controls/tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our [`ASP.NET MVC Tree Grid example`](https://ej2.syncfusion.com/aspnetmvc/TreeGrid/Overview#/material) to knows how to present and manipulate data.
+N> You can refer to our [`ASP.NET MVC Tree Grid`](https://www.syncfusion.com/aspnet-mvc-ui-controls/tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our [`ASP.NET MVC Tree Grid example`](https://ej2.syncfusion.com/aspnetmvc/treegrid/overview#/fluent2) to knows how to present and manipulate data.
