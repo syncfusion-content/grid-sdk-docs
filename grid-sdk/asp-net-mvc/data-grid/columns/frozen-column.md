@@ -125,7 +125,7 @@ The following example demonstrates how to change the default frozen line color u
 
 ## Render DatePicker in frozen columns in Grid
 
-The Syncfusion Grid allows rendering a [DatePicker](https://ej2.syncfusion.com/aspnetmvc/documentation/datepicker/getting-started) inside frozen columns during editing. This is achieved using the `Edit` property, where a custom editor (DatePicker) is assigned to the specific column.
+The Syncfusion Grid allows rendering a [DatePicker](https://help.syncfusion.com/scheduler-sdk/asp-net-mvc/date-picker/getting-started) inside frozen columns during editing. This is achieved using the `Edit` property, where a custom editor (DatePicker) is assigned to the specific column.
 
 To integrate a `DatePicker` in a frozen column, configure the column’s `Edit` property with custom `create`, `write`, `read`, and `destroy` methods. These methods ensure that the `DatePicker` initializes, retrieves, and destroys correctly within the frozen column.
 
