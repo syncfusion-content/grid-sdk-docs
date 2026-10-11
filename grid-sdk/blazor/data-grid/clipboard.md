@@ -205,7 +205,7 @@ The AutoFill feature supports quick data entry by dragging a handle to copy cell
 
 To enable AutoFill, set the [EnableAutoFill](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.SfGrid-1.html#Syncfusion_Blazor_Grids_SfGrid_1_EnableAutoFill) property to **true** and use [Batch editing](https://blazor.syncfusion.com/documentation/datagrid/batch-editing) to copy values across multiple cells. Copied values remain in batch mode until the **Update** button is clicked to apply changes to the data source.
 
-### Steps to use AutoFill
+**Steps to use AutoFill**
 
 1. Select the cells to copy in the Data Grid.
 2. After selection, a small square appears in the bottom-right corner of the selection border. When the pointer hovers over the handle, the cursor changes to a crosshair.
@@ -289,7 +289,7 @@ internal sealed class OrderData
 
 {% previewsample "https://blazorplayground.syncfusion.com/embed/rZrnDcXszsUECbja?appbar=false&editor=false&result=true&errorlist=false&theme=fluent2" %}
 
-### AutoFill Limitations
+### AutoFill limitations
 
 - **Data Type Conversion:** AutoFill does not convert string values to numeric or date types. Copying strings into numeric cells results in **NaN**, and copying strings into date cells results in an **empty cell**.
 - **Value Copying**: AutoFill copies values directly from the source range without generating non-linear or sequential series.
@@ -390,9 +390,9 @@ internal sealed class OrderData
 
 ## Paste Clipboard content using an external button
  
-The Blazor Data Grid supports pasting Clipboard content through an external button using the [PasteAsync](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.SfGrid-1.html#Syncfusion_Blazor_Grids_SfGrid_1_PasteAsync_System_Nullable_System_Boolean__) method. The PasteAsync method allows paste operations to be integrated into custom toolbars, command panels, and other application UI elements.
+The Blazor Data Grid supports pasting Clipboard content through an external button using the [`PasteAsync`](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.SfGrid-1.html#Syncfusion_Blazor_Grids_SfGrid_1_PasteAsync_System_Nullable_System_Boolean__) method. The PasteAsync method allows paste operations to be integrated into custom toolbars, command panels, and other application UI elements.
  
-To enable pasting, configure the Data Grid for cell selection and batch editing. Set the selection [Mode](Class GridSelectionSettings - Blazor API Reference) to **Cell**, set [CellSelectionMode](Class GridSelectionSettings - Blazor API Reference) to **Box**, and enable [batch editing](Batch Editing in Blazor Data Grid | Syncfusion®).
+To enable pasting, configure the Data Grid for cell selection and batch editing. Set the selection [Mode](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridSelectionSettings.html#Syncfusion_Blazor_Grids_GridSelectionSettings_Mode) to **Cell**, set [CellSelectionMode](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridSelectionSettings.html#Syncfusion_Blazor_Grids_GridSelectionSettings_CellSelectionMode) to **Box**, and enable [Batch editing](https://help.syncfusion.com/grid-sdk/blazor/data-grid/batch-editing).
  
 > Enable Clipboard access in the browser's site settings. The Blazor Data Grid does not perform the paste if access is denied or the Clipboard is empty.
  
