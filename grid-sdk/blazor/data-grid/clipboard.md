@@ -390,7 +390,7 @@ internal sealed class OrderData
 
 ## Paste Clipboard content using an external button
  
-The Blazor Data Grid supports pasting Clipboard content through an external button using the [PasteAsync](Class SfGrid - Blazor API Reference) method. The PasteAsync method allows paste operations to be integrated into custom toolbars, command panels, and other application UI elements.
+The Blazor Data Grid supports pasting Clipboard content through an external button using the [PasteAsync](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.SfGrid-1.html#Syncfusion_Blazor_Grids_SfGrid_1_PasteAsync_System_Nullable_System_Boolean__) method. The PasteAsync method allows paste operations to be integrated into custom toolbars, command panels, and other application UI elements.
  
 To enable pasting, configure the Data Grid for cell selection and batch editing. Set the selection [Mode](Class GridSelectionSettings - Blazor API Reference) to **Cell**, set [CellSelectionMode](Class GridSelectionSettings - Blazor API Reference) to **Box**, and enable [batch editing](Batch Editing in Blazor Data Grid | Syncfusion®).
  
