@@ -251,8 +251,8 @@ Finding records that contain a specific name, reference, or keyword in a large D
  
 | Capability | Details |
 |---|---|
-| Real-time highlighting | Matching text is highlighted as text is entered in the find input. Pressing Enter is not required. |
-| Match navigation | Navigate between matches using the `Previous` and `Next` buttons or the Shift+Enter and Enter keyboard shortcuts. |
+| Real-time highlighting | Matching text is highlighted as text is entered in the find input. Pressing `enter` is not required. |
+| Match navigation | Navigate between matches using the `Previous` and `Next` buttons or the `shift+enter` and `enter` keyboard shortcuts. |
 | Match counter | A current of total indicator displays the active match number and the total number of matches. |
 | Case-sensitive matching | Configure case-sensitive matching using [GridFindSettings.CaseSensitive](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridFindSettings.html#Syncfusion_Blazor_Grids_GridFindSettings_CaseSensitive). |
 | Column-level opt-out | Set [AllowSearchHighlight](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridColumn.html#Syncfusion_Blazor_Grids_GridColumn_AllowSearchHighlight) to `false` in `GridColumn` to exclude the column from scanning and highlighting. |
@@ -261,6 +261,9 @@ Finding records that contain a specific name, reference, or keyword in a large D
 | Paging support | Highlighting is automatically reapplied during page navigation. |
 
 For configuration options, see [Configure Find and Highlight behavior using GridFindSettings](#configure-find-and-highlight-behavior-using-gridfindsettings), [Exclude a column from Find and Highlight](#exclude-a-column-from-find-and-highlight), and [Enable Find and Highlight using API methods](#enable-find-and-highlight-using-api-methods).
+
+> * Cells rendered through a [column Template](./column-template.md), [edit template](./template-editing.md), or [command column](./command-column-editing.md) are excluded from Find and Highlight scanning, highlighting, and match counting.
+> * Text in an active Add or Edit form editor, the toolbar `Search` filter input, or any other in-progress editor on the page is not searched or highlighted. The feature operates only on committed cell values.
 
 ### Enable find and highlight using toolbar
 
@@ -731,7 +734,7 @@ public class SupportTicket
 
 By default, Find and Highlight scans all columns in the Data Grid. To exclude a column from scanning and highlighting, set the [AllowSearchHighlight](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridColumn.html#Syncfusion_Blazor_Grids_GridColumn_AllowSearchHighlight) property to `false` in the corresponding `GridColumn`. This option is useful for columns that contain IDs, internal codes, or sensitive data.
 
-When a column is excluded:
+For an excluded column:
 - Cell content is not scanned for matches.
 - No highlighting is applied to the concern column's cells.
 - The column's cells are excluded from the total match count.
@@ -1244,11 +1247,6 @@ The Find and Highlight toolbar supports the following keyboard interactions when
 | `Escape` | Closes the find toolbar and clears all highlights. |
  
 These shortcuts match standard find behavior in browsers and desktop applications.
-
-### Constraints 
-
-- Cells rendered through a [column Template](./column-template.md), [edit template](./template-editing.md), or [command column](./command-column-editing.md) are excluded from Find and Highlight scanning, highlighting, and match counting.
-- Text in an active Add or Edit form editor, the toolbar `Search` filter input, or any other in-progress editor on the page is not searched or highlighted. The feature operates only on committed cell values.
 
 ## Customize cell styles
 
