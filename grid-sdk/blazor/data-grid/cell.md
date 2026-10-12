@@ -246,8 +246,6 @@ Finding records that contain a specific name, reference, or keyword in a large D
 - Difficulty identifying all occurrences of a keyword across visible records.
 - Challenges in reviewing and comparing matching records while maintaining context.
 - Time-consuming navigation between multiple matching results.
-
-> **Find and Highlight vs. Searching:** The built-in [Search](./searching) toolbar item hides rows that do not match the search term. The **Find** toolbar item, by contrast, highlights matching text across all visible rows while keeping all rows intact.
  
 **Key capabilities:**
  
@@ -738,9 +736,7 @@ When a column is excluded:
 - No highlighting is applied to the concern column's cells.
 - The column's cells are excluded from the total match count.
 - **Previous** / **Next** navigation skips the column entirely.
- 
-> `AllowSearchHighlight` works independently of [AllowSearching](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridColumn.html#Syncfusion_Blazor_Grids_GridColumn_AllowSearching). The `AllowSearching` property determines whether a column participates in the toolbar search operation that filters rows. The `AllowSearchHighlight` property determines whether a column participates in the `Find` operation that highlights matching text without filtering rows.
- 
+
 {% tabs %}
 {% highlight razor tabtitle="Index.razor" %}
 @using Syncfusion.Blazor.Grids
