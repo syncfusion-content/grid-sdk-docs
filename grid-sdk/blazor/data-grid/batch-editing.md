@@ -80,15 +80,15 @@ public class OrderDetails
 
 ## Undo / Redo actions in batch edit
 
-The Blazor Data Grid provides Undo and Redo actions in batch edit mode, allowing cell edits, row additions, and row deletions to be reverted or reapplied before saving.
+The Blazor Data Grid provides Undo and Redo actions in batch edit mode, enabling cell edits, row additions, and row deletions to be reverted or reapplied before changes are saved.
 
-During batch editing, multiple changes can remain pending before they are saved. Accidental edits, row additions, or deletions may require manual correction, while canceling the batch may discard other valid changes. Undo and Redo help recover from mistakes without losing remaining pending changes, reducing rework and improving productivity.
+Batch editing often involves multiple pending modifications across several records. Identifying and correcting unintended updates can become time-consuming, especially when valid changes must be preserved. Undo and Redo simplify change management by restoring or reversing individual actions without affecting other pending updates.
 
 **Common pain points**
 
-- Accidental changes can introduce errors across multiple records.
-- Manually correcting pending changes takes time and effort.
-- Canceling a batch to recover from a mistake can discard valid edits.
+- Discarding an entire batch to recover from a single mistake may result in lost work.
+- Verifying pending updates across multiple records can be challenging.
+- Recreating deleted rows or restoring previous values adds unnecessary effort.
 
 > * Undo and Redo actions are supported only in batch edit mode.
 > * The number of stored actions is limited by the `UndoRedoLimit` property. When the limit is reached, the oldest action is removed from the stack.
