@@ -750,10 +750,10 @@ public class OrderTransaction
 
 ## See also
 
-* [Data Grid data binding](./data-binding.md)
-* [Data Grid filtering](./filtering.md)
-* [Data Grid sorting](./sorting.md)
-* [Data Grid grouping](./grouping.md)
-* [Data Grid editing](./in-line-editing.md)
-* [Normal editing](./normal-editing.md)
-* [Batch editing](./batch-editing.md)
+* [Paging](.././paging.md)
+* [Filtering](.././filtering.md)
+* [Sorting](.././sorting.md)
+* [Grouping](.././grouping.md)
+* [Normal editing](.././in-line-editing.md)
+* [Dialog editing](.././dialog-editing.md)
+* [Batch editing](.././batch-editing.md)
