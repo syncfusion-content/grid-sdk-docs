@@ -4,7 +4,6 @@ title: Virtual Scroll in Syncfusion ASP.NET MVC Grid Component
 description: Learn here all about Virtual Scroll in Syncfusion ASP.NET MVC Grid component of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Virtual Scroll
-publishingplatform: grid-sdk
 documentation: ug
 ---
 

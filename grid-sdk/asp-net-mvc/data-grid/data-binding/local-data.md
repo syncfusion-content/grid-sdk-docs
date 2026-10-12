@@ -1,10 +1,9 @@
 ---
 layout: post
-title: Local Data in ASP.NET MVC Grid Component
-description: Learn here all about Local Data in Syncfusion ASP.NET MVC Grid component of Syncfusion Essential JS 2 and more.
+title: Local Data in Syncfusion ASP.NET MVC Grid Control
+description: Learn here all about Local Data in Syncfusion ASP.NET MVC Grid control of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Local Data
-publishingplatform: grid-sdk
 documentation: ug
 ---
 
@@ -324,9 +323,9 @@ namespace SignalR
 
 The following screenshot represents the addition, editing, and deletion operations performed, reflecting changes across all client sides:
 
-![Data binding with SignalR ](../images/data-binding/signalRImage.gif)
+![Data binding with SignalR ](../images/data-binding/signalRImage.webp)
 
-> You can find a complete sample for signalR on [GitHub](https://github.com/SyncfusionExamples/Binding-data-with-SignalR-in-ej2-aspnetmvc-grid).
+<!-- > You can find a complete sample for signalR on [GitHub](https://github.com/SyncfusionExamples/Binding-data-with-SignalR-in-ej2-aspnetmvc-grid). -->
 
 ## Binding data from excel file
 
@@ -349,7 +348,7 @@ The following example demonstrates how to import Excel data into the Grid by uti
 {% endhighlight %}
 {% endtabs %}
 
-![Local data](../images/data-binding/local-data-upload.gif)
+![Local data](../images/data-binding/local-data-upload.webp)
 
 ## Binding data and performing CRUD actions via Fetch request
 
@@ -584,7 +583,7 @@ namespace FetchRequest.Models
 ```
 The following screenshot represents loading data when the button is clicked and CRUD operations are performed:
 
-![Binding data and performing CRUD actions via Fetch request](../images/data-binding/requestFetch.gif)
+![Binding data and performing CRUD actions via Fetch request](../images/data-binding/requestFetch.webp)
 
 > You can find a complete sample for Fetch request [GitHub](https://github.com/SyncfusionExamples/Binding-data-and-perform-action-in-ej2-aspnetmvc-grid-using-Ajax-request).
 

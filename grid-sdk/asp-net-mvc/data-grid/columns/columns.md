@@ -4,7 +4,6 @@ title: Columns in Syncfusion ASP.NET MVC Grid Component
 description: Learn here all about Columns in Syncfusion ASP.NET MVC Grid component of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Columns
-publishingplatform: grid-sdk
 documentation: ug
 ---
 
@@ -39,7 +38,7 @@ Here is an example of how to specify column types in a grid using the types ment
 ![Column Type](../images/columns/Column-type.png)
 
 >* If the `Type` is not defined, then it will be determined from the first record of the [DataSource](https://help.syncfusion.com/cr/aspnetmvc-js2/syncfusion.ej2.grids.grid.html#Syncfusion_EJ2_Grids_Grid_DataSource).
->* Incase if the first record of the [DataSource](https://help.syncfusion.com/cr/aspnetmvc-js2/syncfusion.ej2.grids.grid.html#Syncfusion_EJ2_Grids_Grid_DataSource) is null/blank value for a column then it is necessary to define the `Type` for that column. This is because the grid uses the column type to determine which filter dialog to display for that column
+>* In case if the first record of the [DataSource](https://help.syncfusion.com/cr/aspnetmvc-js2/syncfusion.ej2.grids.grid.html#Syncfusion_EJ2_Grids_Grid_DataSource) is null/blank value for a column then it is necessary to define the `Type` for that column. This is because the grid uses the column type to determine which filter dialog to display for that column
 
 ### Difference between boolean type and checkbox type column 
 
@@ -524,7 +523,7 @@ let visibleColumns = Grid.GetVisibleColumns();
 
 * **`GetForeignKeyColumns`**:
 
-This method returns the array of foreignkey columns.
+This method returns the array of foreign key columns.
 
 ```ts
 let foreignKeyColumns = Grid.GetForeignKeyColumns();
@@ -602,7 +601,7 @@ In this example, we have a Grid that displays data with three columns: **Order I
 ## See Also
 
 * [Group Column by Format](../grouping#group-by-format)
-* [How to set complex column as Foreignkey column](../how-to/complex-column-as-foreign-key-column)
+* [How to set complex column as Foreign key column](../how-to/complex-column-as-foreign-key-column)
 * [Complex Data Binding with list of Array Of Objects](../how-to/list-of-array-of-objects)
 * [How to add primaryKey after column rendered in ASP.NET MVC  Grid](https://www.syncfusion.com/forums/138439/how-to-add-primarykey-after-column-rendered-in-asp-net-mvc-grid)
 * [Drag and drop between two Grids in ASP.NET MVC Grid](https://www.syncfusion.com/forums/138154/drag-and-drop-between-two-grids-in-asp-net-mvc-grid)

@@ -1,10 +1,9 @@
 ---
 layout: post
-title: Perform Crud Operation Using Anti Forgery Token in ASP.NET MVC Grid Component
+title: Perform Crud Operation in Syncfusion ASP.NET MVC Grid Control
 description: Learn here all about Perform Crud Operation Using Anti Forgery Token in Syncfusion ASP.NET MVC Grid component of syncfusion and more.
 platform: grid-sdk
 control: Perform Crud Operation Using Anti Forgery Token
-publishingplatform: grid-sdk
 documentation: ug
 ---
 

@@ -1,10 +1,9 @@
 ---
 layout: post
-title: Template Editing in ASP.NET MVC Grid Component
+title: Template Editing in Syncfusion ASP.NET MVC Grid Control
 description: Learn here all about Template Editing in Syncfusion ASP.NET MVC Grid component of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Template Editing
-publishingplatform: grid-sdk
 documentation: ug
 ---
 

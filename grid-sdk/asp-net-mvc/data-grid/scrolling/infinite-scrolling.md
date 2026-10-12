@@ -4,7 +4,6 @@ title: Infinite Scroll in Syncfusion ASP.NET MVC Grid Control | Syncfusion
 description: Learn here all about Infinite Scroll in Syncfusion ASP.NET MVC Grid component of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Infinite Scroll
-publishingplatform: grid-sdk
 documentation: ug
 ---
 

@@ -4,7 +4,6 @@ title: Filter Menu in Syncfusion ASP.NET MVC Grid Component
 description: Learn here all about Filter Menu in Syncfusion ASP.NET MVC Grid component of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Filter Menu
-publishingplatform: grid-sdk
 documentation: ug
 ---
 # Filter menu in  ASP.NET MVC Grid component
@@ -209,4 +208,4 @@ When using the filter menu, the UI displays operators for all columns based on t
 
 ## See also
 
-* [How to perform filter by using Wildcard and LIKE operator filter](./filtering/#wildcard-and-like-operator-filter)
+* [How to perform filter by using Wildcard and LIKE operator filter](./filtering#wildcard-and-like-operator-filter)

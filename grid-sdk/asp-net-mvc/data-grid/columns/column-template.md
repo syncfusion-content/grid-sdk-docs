@@ -4,7 +4,6 @@ title: Column Template in Syncfusion ASP.NET MVC Grid Component
 description: Learn here all about Column Template in Syncfusion ASP.NET MVC Grid component of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Column Template
-publishingplatform: grid-sdk
 documentation: ug
 ---
 
@@ -280,7 +279,7 @@ The Syncfusion<sup style="font-size:70%">&reg;</sup> Grid component allows you t
 
 Dynamically adding template columns involves creating and inserting columns with custom templates after the grid has been initialized. This approach provides flexibility in presenting data in a highly customizable manner.
 
-The following example demonstrates how to add template column using external button click. In this example, the **ShipCountry** column with a [Dropdownlist](https://ej2.syncfusion.com/aspnetmvc/documentation/drop-down-list/getting-started) is added in column `Template`, and an icon is displayed in the column header by using the `HeaderTemplate` for the **ShipCountry** column. 
+The following example demonstrates how to add template column using external button click. In this example, the **ShipCountry** column with a [DropDownList](https://ej2.syncfusion.com/aspnetmvc/documentation/drop-down-list/getting-started) is added in column `Template`, and an icon is displayed in the column header by using the `HeaderTemplate` for the **ShipCountry** column. 
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}

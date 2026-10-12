@@ -1,14 +1,13 @@
 ---
 layout: post
-title: Changing The Pivotview Component Minimum Height in ASP.NET MVC Pivot Table Component
+title: Changing the Syncfusion ASP.NET MVC Pivot Table Control Minimum Height
 description: Learn here all about Changing The Pivotview Component Minimum Height in Syncfusion ASP.NET MVC Pivot Table component of syncfusion and more.
 platform: grid-sdk
 control: Changing The Pivotview Component Minimum Height
-publishingplatform: grid-sdk
 documentation: ug
 ---
 
-# Changing the Pivot Table component's minimum height
+# Changing the Pivot Table control's minimum height
 
 The `minHeight` property allows you to change the minimum height for the pivot table control. For the pivot table control, the default minimum height is **300px**.
 

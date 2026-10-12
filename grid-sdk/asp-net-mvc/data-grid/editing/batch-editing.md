@@ -4,7 +4,6 @@ title: Batch Editing in Syncfusion ASP.NET MVC Grid Component
 description: Learn here all about Batch Editing in Syncfusion ASP.NET MVC Grid component of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Batch Editing
-publishingplatform: grid-sdk
 documentation: ug
 ---
 

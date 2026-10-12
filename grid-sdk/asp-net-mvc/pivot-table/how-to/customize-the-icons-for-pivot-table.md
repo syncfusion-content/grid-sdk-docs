@@ -1,14 +1,13 @@
 ---
 layout: post
-title: Customize The Icons For Pivot Table in ASP.NET MVC Pivot Table Component
+title: Customize the Icons | Syncfusion ASP.NET MVC Pivot Table Control
 description: Learn here all about Customize The Icons For Pivot Table in Syncfusion ASP.NET MVC Pivot Table component of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Customize The Icons For Pivot Table
-publishingplatform: grid-sdk
 documentation: ug
 ---
 
-# Customize the icons for pivot table
+# Customize the icons for ASP.NET MVC Pivot Table Control
 
 You can customize the pivot button icons in the pivot table by overriding the class **.pivot-button** with a custom property content as mentioned below.
 
