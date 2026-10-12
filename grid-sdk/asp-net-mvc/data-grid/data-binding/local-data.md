@@ -325,8 +325,6 @@ The following screenshot represents the addition, editing, and deletion operatio
 
 ![Data binding with SignalR ](../images/data-binding/signalRImage.webp)
 
-<!-- > You can find a complete sample for signalR on [GitHub](https://github.com/SyncfusionExamples/Binding-data-with-SignalR-in-ej2-aspnetmvc-grid). -->
-
 ## Binding data from excel file
 
 The Syncfusion ASP.NET MVC Grid allows you to import data from Excel files into your web application for display and manipulation within the Grid. This feature streamlines the process of transferring Excel data to a web-based environment. This can be achieved by using [Uploader](https://ej2.syncfusion.com/aspnetmvc/documentation/uploader/getting-started) [Change](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Inputs.Uploader.html#Syncfusion_EJ2_Inputs_Uploader_Change) event.
@@ -880,7 +878,7 @@ The following example demonstrates how to show and hide the spinner during data 
 
 ## Immutable mode  
 
-Immutable mode in the Syncfusion ASP.NET MVC Grid is designed to optimize re-rendering performance by utilizing the object reference and [deep compare](https://dmitripavlutin.com/how-to-compare-objects-in-javascript/#4-deep-equality) concept. This mode ensures that when performing Grid actions, only the modified or newly added rows are re-rendered, preventing unnecessary re-rendering of unchanged rows. 
+Immutable mode in the Syncfusion ASP.NET MVC Grid is designed to optimize re-rendering performance by utilizing the object reference and deep compare concept. This mode ensures that when performing Grid actions, only the modified or newly added rows are re-rendered, preventing unnecessary re-rendering of unchanged rows. 
 
 To enable this feature, you need to set the [EnableImmutableMode](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_EnableImmutableMode) property as **true**.
 

@@ -33,7 +33,7 @@ To implement the `DataStateChange` event, follow these steps:
 
 ## Creating an API service
 
-To configure a server with Syncfusion ASP.Net MVC Grid, you need to follow the below steps:
+To configure a server with Syncfusion ASP.NET MVC Grid, you need to follow the below steps:
 
 **Step 1:** To create a new ASP.NET Web Application (.NET Framework) project named FetchRequest, follow these steps:
 
