@@ -10,7 +10,7 @@ keywords: blazor datagrid event-driven databinding, OnDataLoad event, custom dat
 
 # Event-Driven Data Binding in Blazor Data Grid
 
-Event-driven data binding enables the Data Grid to retrieve data through the `OnDataLoad` event instead of using built-in data adaptors. Each time the user performs an action—such as paging, sorting, filtering, searching, or grouping—the event is triggered, allowing the application to fetch and return data from custom services, APIs, databases, or repositories.
+Event-driven data binding enables the Data Grid to retrieve data through the [OnDataLoad]((https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridEvents-1.html#Syncfusion_Blazor_Grids_GridEvents_1_OnDataLoad)) event instead of using built-in data adaptors. Each paging, sorting, filtering, searching, or grouping operation triggers the `OnDataLoad` event so the application can fetch and return data from custom services, APIs, databases, or repositories.
 
 Event-driven data binding is ideal for the following scenarios:
 
@@ -22,7 +22,7 @@ Event-driven data binding is ideal for the following scenarios:
 
 **Configure OnDataLoad event properties**
 
-The `OnDataLoad` event handler receives `args.Request` containing the user's current operation (paging, filtering, sorting, etc.) and must populate response properties to tell the grid which records to display. Understanding these request and response properties is essential for implementing correct data retrieval logic:
+The `OnDataLoad` event provides the [args.Request](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridLoadEventArgs-1.html#Syncfusion_Blazor_Grids_GridLoadEventArgs_1_Request) object, which contains details about the current data operation. Based on the request information in `args.Request`, the event handler must process the data and populate the required response properties. The request and response properties work together to enable the Data Grid to retrieve and display the correct set of records. Understanding the purpose of these properties is essential for implementing custom data loading logic effectively.
 
 **Request Properties**
 
@@ -30,31 +30,31 @@ The `args.Request` object contains the following properties that describe the cu
 
 | Request Property | Type | Description |
 |------------------|------|-------------|
-| Skip | int | The number of records to skip from the start. Used for pagination to show different pages. Default is `0`. |
-| Take | int | The number of records to retrieve. Specifies how many rows to display on the current page. Default is `0`. |
-| Sort | List<SortRequest>? | The fields to sort by and their sort order (ascending or descending). Null if no sorting is applied. |
-| Filter | List<FilterRequest>? | The conditions to filter data by (field name, operator, and value). Null if no filters are applied. |
-| Search | List<SearchRequest>? | The search keywords and which fields to search in. Null if no search is applied. |
-| Group | List<string>? | The field names to group data by. Null if no grouping is applied. |
-| Aggregates | List<AggregateRequest>? | The aggregate calculations to perform (Sum, Average, Count, Min, Max). Null if no aggregates are requested. |
-| Select | List<string>? | The specific columns to return in the results. Null to return all columns. |
-| Expand | List<string>? | Related data to include with the main records. Null if no related data is needed. |
+| [Skip](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.DataRequest.html#Syncfusion_Blazor_Grids_DataRequest_Skip) | int | The number of records to skip from the start. Used for pagination to show different pages. Default is `0`. |
+| [Take](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.DataRequest.html#Syncfusion_Blazor_Grids_DataRequest_Take) | int | The number of records to retrieve. Specifies how many rows to display on the current page. Default is `0`. |
+| [Sort](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.DataRequest.html#Syncfusion_Blazor_Grids_DataRequest_Sort) | List<SortRequest>? | The fields to sort by and the sort order for each field (ascending or descending). Null when no sorting is applied. |
+| [Filter](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.DataRequest.html#Syncfusion_Blazor_Grids_DataRequest_Filter) | List<FilterRequest>? | The filter conditions to apply to the data by field name, operator, and value. Null when no filters are applied. |
+| [Search](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.DataRequest.html#Syncfusion_Blazor_Grids_DataRequest_Search) | List<SearchRequest>? | The search keywords and the fields to search across. Null when no search is applied. |
+| [Group](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.DataRequest.html#Syncfusion_Blazor_Grids_DataRequest_Group) | List<string>? | The field names to group data by. Null when no grouping is applied. |
+| [Aggregates](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.DataRequest.html#Syncfusion_Blazor_Grids_DataRequest_Aggregates) | List<AggregateRequest>? | The aggregate calculations to perform (Sum, Average, Count, Min, Max). Null when no aggregates are requested. |
+| [Select](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.DataRequest.html#Syncfusion_Blazor_Grids_DataRequest_Select) | List<string>? | The specific columns to return in the results. Null to return all columns. |
+| [Expand](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.DataRequest.html#Syncfusion_Blazor_Grids_DataRequest_Expand) | List<string>? | Related data to include with the main records. Null when no related data is needed. |
 
 **Response Properties**
 
-The event uses the `GridLoadEventArgs` class, which includes the following properties that must be set by the event handler:
+The event uses the [GridLoadEventArgs](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridLoadEventArgs-1.html) class, which includes the following properties that must be set by the event handler:
 
 | Response Property | Type | Description |
 |-------------------|------|-------------|
-| Result | IEnumerable<TValue> | The records to display in the grid after applying pagination (Skip and Take). |
-| Count | int | The total number of records that match the current filters and search, without pagination limits. |
-| AggregatesResult | IDictionary<string, object>? | The calculated aggregate values (like totals and averages) to display in the footer. |
+| [Result](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridLoadEventArgs-1.html#Syncfusion_Blazor_Grids_GridLoadEventArgs_1_Result) | IEnumerable<TValue> | The records to display in the grid after applying pagination (Skip and Take). |
+| [Count](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridLoadEventArgs-1.html#Syncfusion_Blazor_Grids_GridLoadEventArgs_1_Count) | int | The total number of records that match the current filters and search, without pagination limits. |
+| [AggregatesResult](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridLoadEventArgs-1.html#Syncfusion_Blazor_Grids_GridLoadEventArgs_1_AggregatesResult) | IDictionary<string, object>? | The calculated aggregate values (like totals and averages) to display in the footer. |
 
 ---
 
 ## Handling paging operation
 
-Paging allows users to browse large datasets by viewing one page at a time. The event handler uses `args.Request.Skip` and `args.Request.Take` to fetch only the required records for the current page from the data source. Return the page data via `args.Result` and the total record count via `args.Count` so the grid can display correct page numbers and navigation controls.
+Paging supports large datasets by displaying one page at a time. The event handler uses `args.Request.Skip` and `args.Request.Take` to fetch only the required records for the current page from the data source. The event handler must return the page data via `args.Result` and the total record count via `args.Count` so the Data Grid can display correct page numbers and navigation controls.
 
 {% tabs %}
 {% highlight razor tabtitle="Index.razor" %}
@@ -141,9 +141,9 @@ public class OrderData
 
 ## Handling sorting operation
 
-Sorting enables users to organize data by specific columns in ascending or descending order. The event handler receives sort criteria from `args.Request.Sort` and applies the sorting logic to the data source. Return the sorted records via `args.Result` and the total record count via `args.Count` to display organized data in the grid.
+Sorting organizes data by specific columns in ascending or descending order. The event handler receives sort criteria from `args.Request.Sort` and applies the sorting logic to the data source. The event handler must return the sorted records via `args.Result` and the total record count via `args.Count` to display organized data in the Data Grid.
 
-The built-in `DataOperations` helper in the Syncfusion Blazor data layer applies sort requests returned by the grid. For custom repositories or APIs, the same sort metadata must be mapped to custom query logic before returning paged data.
+The built-in `DataOperations` helper in the Syncfusion Blazor data layer applies sort requests provided by the Data Grid. For custom repositories or APIs, the same sort metadata must be mapped to custom query logic before returning paged data.
 
 {% tabs %}
 {% highlight razor tabtitle="Index.razor" %}
@@ -251,9 +251,9 @@ public class OrderData
 
 ## Handling aggregates operation
 
-Aggregates display summary values such as sum, average, count, minimum, or maximum in grid footer rows. The event handler receives aggregate requirements from `args.Request.Aggregates` and calculates these values on the complete dataset before pagination. Return the records via `args.Result` and calculated aggregates via `args.AggregatesResult` to display summaries below the grid data.
+Aggregates display summary values such as sum, average, count, minimum, or maximum in Data Grid footer rows. The event handler receives aggregate requirements from `args.Request.Aggregates` and calculates these values on the complete dataset before pagination. The event handler must return the records via `args.Result` and calculated aggregates via `args.AggregatesResult` to display summaries below the Data Grid data.
 
-The `DataUtil.PerformAggregation` helper calculates the requested aggregate values for the full filtered dataset. In custom services, calculate aggregates before applying `Skip` and `Take`, otherwise the footer totals will use only the current page instead of the whole result set.
+The `DataUtil.PerformAggregation` helper calculates the requested aggregate values for the full filtered dataset. In custom services, calculate aggregates before applying `Skip` and `Take`; otherwise, the footer totals will reflect only the current page instead of the entire result set.
 
 {% tabs %}
 {% highlight razor tabtitle="Index.razor" %}
@@ -403,11 +403,11 @@ public class OrderData
 
 ## Handling filtering operation
 
-Filtering allows users to display only records that match specified criteria. The event handler receives filter definitions from `args.Request.Filter` and applies the filtering logic to the data source. Return the filtered records via `args.Result` and the total matching record count via `args.Count` so users see only relevant data.
+Filtering displays only records that match specified criteria. The event handler receives filter definitions from `args.Request.Filter` and applies the filtering logic to the data source. The event handler must return the filtered records via `args.Result` and the total matching record count via `args.Count` to display only relevant data.
 
 **Filter request structure**
 
-When a user applies filters to the Data Grid, the `args.Request.Filter` property contains a list of `FilterRequest` objects. Each object specifies the field to filter, the operator (equals, contains, greater than, etc.), the filter value, and additional options like case-sensitivity and accent handling. The following debugger snapshot shows the request payload generated by the grid when filters are applied:
+When filtering is applied to the Data Grid, the `args.Request.Filter` property contains a list of `FilterRequest` objects. Each `FilterRequest` object specifies the field to filter, the operator (equals, contains, greater than, etc.), the filter value, and additional options like case-sensitivity and accent handling. The following debugger snapshot shows the request payload generated by the Data Grid when filters are applied:
 
 ![Filter property displaying FilterRequest objects with Field, Operator, Value, Condition, IgnoreCase, and IgnoreAccent properties](../images/blazor-datagrid-custom-data-filtering.webp)
 
@@ -417,27 +417,27 @@ Map each `FilterRequest` in the custom implementation to a database or API query
 
 ## Handling grouping operation
 
-Grouping organizes data into logical categories based on column values. The event handler receives grouping information from `args.Request.Group` and applies grouping logic to the data source. Return grouped records via `args.Result` with calculated summaries and the total record count via `args.Count` to display organized, categorized data in the grid.
+Grouping organizes data into logical categories based on column values. The event handler receives grouping information from `args.Request.Group` and applies grouping logic to the data source. The event handler must return grouped records via `args.Result` with calculated summaries and the total record count via `args.Count` to display organized, categorized data in the Data Grid.
 
 **Group request structure**
 
-When a user groups data in the Data Grid, the `args.Request.Group` property contains a list of field names that define the grouping hierarchy. For example, grouping by "Category" and then "Status" creates nested groups. The following debugger snapshot shows the group field list generated by the grid:
+When grouping is applied to the Data Grid, the `args.Request.Group` property contains a list of field names that define the grouping hierarchy. For example, grouping by "Category" and then "Status" creates nested groups. The following debugger snapshot shows the group field list generated by the Data Grid:
 
 ![Group property displaying the list of field names to group by](../images/blazor-datagrid-custom-data-grouping.webp)
 
-Create the group hierarchy in the service layer or repository, then return the grouped records through `args.Result` and the total record count through `args.Count`.
+The implementation must create the group hierarchy in the service layer or repository, then return the grouped records through `args.Result` and the total record count through `args.Count`.
 
 ---
 
 ## Handling searching operation
 
-Searching enables users to find records by entering keywords that are matched across multiple columns. The event handler receives search criteria from `args.Request.Search` and applies the search logic to the data source. Return the matching records via `args.Result` and the total matching count via `args.Count` to display search results in the grid.
+Searching locates records by matching entered keywords across multiple columns. The event handler receives search criteria from `args.Request.Search` and applies the search logic to the data source. The event handler must return the matching records via `args.Result` and the total matching count via `args.Count` to display search results in the Data Grid.
 
 **Search request structure**
 
-When a user performs a search in the Data Grid, the `args.Request.Search` property contains a list of `SearchRequest` objects. Each object specifies which fields to search within, the search keyword, the search operator (contains, starts with, ends with, etc.), and options for case-sensitivity and accent handling. The following debugger snapshot shows the request payload generated during a search:
+When a search is performed in the Data Grid, the `args.Request.Search` property contains a list of `SearchRequest` objects. Each `SearchRequest` object specifies which fields to search within, the search keyword, the search operator (contains, starts with, ends with, etc.), and options for case-sensitivity and accent handling. The following debugger snapshot shows the request payload generated during a search:
 
-![Search property displaying SearchRequest objects with Fields, Key (search text), Operator, IgnoreCase, and IgnoreAccent properties](../images/blazor-datagrid-custom-data-searching.webp)
+![Search property displaying SearchRequest objects with search text, fields, operator, search options](../images/blazor-datagrid-custom-data-searching.webp)
 
 Map each `SearchRequest` to the corresponding backend query logic, then return the matching records through `args.Result` and the total matching record count through `args.Count`.
 
@@ -445,28 +445,15 @@ Map each `SearchRequest` to the corresponding backend query logic, then return t
 
 ## Handling CRUD operation
 
-Event-driven data binding requires explicit handling of changes. The Data Grid detects when a user adds, edits, or deletes records and notifies the application through dedicated events like `RowUpdating` and `RowDeleting`. These events provide a reliable mechanism to capture and respond to data modifications, allowing the application to validate changes, apply business logic, maintain data integrity, and save modifications to the data source.
+Event-driven data binding requires explicit handling of changes. The Data Grid notifies the application through dedicated events such as `RowUpdating` and `RowDeleting` when records are added, edited, or deleted. These events provide a reliable mechanism to capture and respond to data modifications, allowing the application to validate changes, apply business logic, maintain data integrity, and save modifications to the data source.
 
 **CRUD Events and Properties**
 
 | Event | Event Args | Key Properties | Description |
 |-------|-----------|-----------------|-------------|
-| `RowUpdating` | `RowUpdatingEventArgs<T>` | `Data` - The updated record; `Action` - Indicates if the operation is `Edited` (update) or `Added` (insert); `Index` - Row index in the grid | Fires when a user edits an existing row or adds a new row. Check `args.Action` to distinguish between edit and add operations. Update the corresponding record in the data source or insert a new record. |
-| `RowDeleting` | `RowDeletingEventArgs<T>` | `Datas` - Collection of records to be deleted; `Index` - Row index in the grid | Fires when a user deletes one or more rows. Extract the record(s) from `args.Datas` and remove them from the data source. |
-| `OnBatchSave` | `BeforeBatchSaveArgs<T>` | `BatchChanges` - Contains three collections: `AddedRecords` (new rows), `ChangedRecords` (edited rows), and `DeletedRecords` (deleted rows) | Fires when a user saves multiple changes at once in batch edit mode. Process all additions, updates, and deletions together in a single transaction for better performance and data consistency. |
-
-**Row Update Operation**
-
-The `RowUpdating` event handles both editing and adding new records:
-
-- **Editing a row**: When a user modifies an existing row, `args.Action` equals `SaveActionType.Edited`. The application receives the updated record in `args.Data` and finds the matching record to update its properties in the data source.
-- **Adding a new row**: When a user adds a new row, `args.Action` does not equal `SaveActionType.Edited`. The application receives the new record data in `args.Data` and inserts it into the data source at the specified `args.Index`.
-
-**Row Delete Operation**
-
-The `RowDeleting` event handles row deletion:
-
-- When a user deletes one or more rows, the Data Grid passes the record(s) to be deleted in `args.Datas`. The application finds the matching record(s) and removes them from the data source.
+| `RowUpdating` | `RowUpdatingEventArgs<T>` | `Data` - The updated record; `Action` - Indicates if the operation is `Edited` (update) or `Added` (insert); `Index` - Row index in the Data Grid | The `RowUpdating` event fires when an existing row is edited or a new row is added. The handler should check `args.Action` to distinguish between edit and add operations. The handler must update the corresponding record in the data source or insert a new record. |
+| `RowDeleting` | `RowDeletingEventArgs<T>` | `Datas` - Collection of records to be deleted; `Index` - Row index in the Data Grid | The `RowDeleting` event fires when one or more rows are deleted. The handler must extract the record(s) from `args.Datas` and remove the records from the data source. |
+| `OnBatchSave` | `BeforeBatchSaveArgs<T>` | `BatchChanges` - Contains three collections: `AddedRecords` (new rows), `ChangedRecords` (edited rows), and `DeletedRecords` (deleted rows) | The `OnBatchSave` event fires when multiple changes are saved at once in batch edit mode. The handler should process all additions, updates, and deletions together in a single transaction for better performance and data consistency. |
 
 {% tabs %}
 {% highlight razor tabtitle="Index.razor" %}
@@ -585,7 +572,7 @@ public class SupportTicket
 
 The `OnBatchSave` operation handles multiple changes at once:
 
-- When a user adds, edits, and deletes multiple rows before saving, the Data Grid bundles all changes into a single request. The application receives three groups: records to add, records to update, and records to delete. Batch operations allow the application to save all changes together in one database transaction or API call, which is more efficient than handling each change individually.
+- When multiple rows are added, edited, and deleted before save, the Data Grid bundles all changes into a single request. The application receives three groups: records to add, records to update, and records to delete. Batch operations save all changes together in one database transaction or API call, which is more efficient than handling each change individually.
 
 {% tabs %}
 {% highlight razor tabtitle="Index.razor" %}
@@ -702,11 +689,18 @@ public class OrderData
 | Issue | Likely cause | Resolution |
 |---|---|---|
 | Data Grid shows no data. | The `OnDataLoad` event handler is not configured. | Attach the handler to `<GridEvents OnDataLoad="HandlerMethod">` in the component. |
-| Data Grid shows no data. | `args.Result` is not assigned or is empty. | Populate `args.Result` with the records to display in the grid. |
+| Data Grid shows no data. | `args.Result` is not assigned or is empty. | Populate `args.Result` with the records to display in the Data Grid. |
 | Pagination controls are disabled or show incorrect page count. | `args.Count` is set to the current page size instead of the total matching record count. | Assign `args.Count` to the full number of records that match the current filter and search state, not just the page size. |
 | Filtered results are incomplete or missing. | Filter logic is not applied before assigning `args.Result`. | Apply the conditions from `args.Request.Filter` to the data source before returning records in `args.Result`. |
 | Searched results are incomplete or missing. | Search logic is not applied before assigning `args.Result`. | Apply the conditions from `args.Request.Search` to the data source before returning records in `args.Result`. |
-| Aggregate values (sum, average) do not appear in footer rows. | `args.AggregatesResult` is not populated. | Calculate the aggregate values and assign them to `args.AggregatesResult`. |
+| Aggregate values (sum, average) do not appear in footer rows. | `args.AggregatesResult` is not populated. | Calculate the aggregate values and assign the values to `args.AggregatesResult`. |
 | Aggregate values are incorrect after pagination. | Aggregate calculations are performed after `Skip` and `Take`. | Compute the aggregate values before pagination so the totals reflect the full filtered dataset. |
 | Grouped data appears ungrouped. | Grouping logic is not applied to the records. | Apply the field names from `args.Request.Group` to create the group hierarchy before returning results. |
 | Grouped data shows duplicate groups. | Group records are not organized according to the requested hierarchy. | Ensure each record belongs to one group path and maintain the full grouping hierarchy when returning `args.Result`. |
+
+## See also
+
+* [Grid Events](https://help.syncfusion.com/grid-sdk/blazor/data-grid/events)
+* [Custom Adaptor](https://help.syncfusion.com/grid-sdk/blazor/data-grid/connecting-to-adaptors/custom-adaptor)
+* [Local Data Binding](https://help.syncfusion.com/grid-sdk/blazor/data-grid/data-binding/local-data)
+* [Remote Data Binding](https://help.syncfusion.com/grid-sdk/blazor/data-grid/data-binding/remote-data)
