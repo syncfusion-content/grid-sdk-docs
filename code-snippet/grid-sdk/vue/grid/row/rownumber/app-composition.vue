@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <div style="height:500px;width:600px">
-      <ejs-grid :dataSource='data' :allowSorting='true' :allowFiltering='true' height='273'>
+      <ejs-grid :dataSource='data' :allowSorting='true' :allowFiltering='true' height='100%' width='100%'>
         <e-columns>
           <e-column type='RowNumber' textAlign='Center'></e-column>
           <e-column field='ProductID' headerText='Product ID' width=120 :visible='false' textAlign='Right' :isPrimaryKey='true' type='number'></e-column>
