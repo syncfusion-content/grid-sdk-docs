@@ -370,10 +370,10 @@ The `emptyRecordMode` property determines how the empty record row is displayed 
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/typescript/grid/empty-record-mode/index.ts %}
+{% include code-snippet/grid-sdk/typescript/grid/row/empty-record-mode/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/empty-record-mode/index.html %}
+{% include code-snippet/grid-sdk/typescript/grid/row/empty-record-mode/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -383,10 +383,10 @@ The `emptyRecordMode` property determines how the empty record row is displayed 
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/empty-record-mode/index.js %}
+{% include code-snippet/grid-sdk/typescript/grid/row/empty-record-mode/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/empty-record-mode/index.html %}
+{% include code-snippet/grid-sdk/typescript/grid/row/empty-record-mode/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -405,10 +405,10 @@ The following example demonstrates how to add a row number column to the Grid:
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/typescript/grid/rownumber/index.ts %}
+{% include code-snippet/grid-sdk/typescript/grid/row/rownumber/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/rownumber/index.html %}
+{% include code-snippet/grid-sdk/typescript/grid/row/rownumber/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
