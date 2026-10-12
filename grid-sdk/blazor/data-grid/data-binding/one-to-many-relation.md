@@ -12,7 +12,7 @@ keywords: blazor datagrid one-to-many, blazor grid parent child, flattened data 
 
 In Blazor Data Grid, displaying one-to-many relationships requires special handling. Most real-world applications contain parent records with multiple associated child records. A typical example is an Order containing multiple OrderTransactions. Data Grid provides multiple approaches to handle one-to-many relationships, with flattening being one of the most effective techniques.
 
-## Approaches to Handle One-to-Many Relationships
+## Approaches to handle one-to-many relationships
 
 The following approaches support one-to-many relationships in Data Grid:
 
@@ -25,7 +25,7 @@ Flattened data enables display and manipulation of aggregated child data in the 
 
 **Why use flattening?**
 
-An Order model with a Transactions collection demonstrates the challenge:
+An Order model with a transactions collection demonstrates the challenge:
 
 ```csharp
 public class Order
@@ -280,7 +280,7 @@ private static OrderDto GenerateOrderDto(Order order)
 
 ### Normal editing
 
-Normal editing allows adding, editing, and deleting one record at a time. [RowUpdating](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridEvents-1.html#Syncfusion_Blazor_Grids_GridEvents_1_RowUpdating) and [RowDeleted](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridEvents-1.html#Syncfusion_Blazor_Grids_GridEvents_1_RowDeleted) events intercept normal editing operations. The event handlers manage the Transactions collection directly and regenerate flattened DTO values after each modification to keep aggregated fields synchronized with the underlying child collection.
+Normal editing allows adding, editing, and deleting one record at a time. [RowUpdating](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridEvents-1.html#Syncfusion_Blazor_Grids_GridEvents_1_RowUpdating) and [RowDeleted](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridEvents-1.html#Syncfusion_Blazor_Grids_GridEvents_1_RowDeleted) events intercept normal editing operations. The event handlers manage the transactions collection directly and regenerate flattened DTO values after each modification to keep aggregated fields synchronized with the underlying child collection.
 
 {% tabs %}
 {% highlight razor tabtitle="Index.razor" %}
@@ -499,7 +499,7 @@ public class OrderTransaction
 
 ### Batch editing
 
-Batch editing allows multiple changes before saving all at once. [OnBatchSave](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridEvents-1.html#Syncfusion_Blazor_Grids_GridEvents_1_OnBatchSave) event processes added, edited, and deleted records in separate collections. The event handler manages Transactions collection modifications for each record type (added, changed, deleted) and regenerates flattened values to maintain data consistency across the batch.
+Batch editing allows multiple changes before saving all at once. [OnBatchSave](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridEvents-1.html#Syncfusion_Blazor_Grids_GridEvents_1_OnBatchSave) event processes added, edited, and deleted records in separate collections. The event handler manages transactions collection modifications for each record type (added, changed, deleted) and regenerates flattened values to maintain data consistency across the batch.
 
 {% tabs %}
 {% highlight razor tabtitle="Index.razor" %}
