@@ -93,7 +93,7 @@ During batch editing, multiple changes can remain pending before they are saved.
 > * Undo and Redo actions are supported only in batch edit mode.
 > * The number of stored actions is limited by the `UndoRedoLimit` property. When the limit is reached, the oldest action is removed from the stack.
 
-### Enable Undo / Redo using toolbar
+**Enable Undo / Redo using toolbar**
 
 Enable the feature by setting the [EnableUndoRedo](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridEditSettings.html#Syncfusion_Blazor_Grids_GridEditSettings_EnableUndoRedo) property to `true` inside [GridEditSettings](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridEditSettings.html).
 
