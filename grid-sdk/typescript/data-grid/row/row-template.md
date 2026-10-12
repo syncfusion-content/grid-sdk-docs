@@ -17,7 +17,7 @@ To enable the row template feature, you need to set the [rowTemplate](../../api/
 
 In the following example, Employee Information with Employee Photo is presented in the first column and employee details like Name, Address, etc., are presented in the second column.
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -30,19 +30,7 @@ In the following example, Employee Information with Employee Photo is presented 
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/row-template-cs30" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/row-template-cs30/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/row-template-cs30/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/row-template-cs30" %}
-{% endif %}
 
 ## Row template with formatting
 
@@ -54,7 +42,7 @@ To format the values within the row template, you can define a global function t
 
 Here is an example of how to define a global formatting function for a date column and use it inside a `rowTemplate`:
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -67,19 +55,7 @@ Here is an example of how to define a global formatting function for a date colu
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/row-template-format-cs1" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/row-template-format-cs1/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/row-template-format-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/row-template-format-cs1" %}
-{% endif %}
 
 >When using the `rowTemplate` feature in Syncfusion<sup style="font-size:70%">&reg;</sup> Grid, keep in mind that any formatting applied to columns using the `columns->format` property will not work inside the template.
 
@@ -91,7 +67,7 @@ To enable a Syncfusion<sup style="font-size:70%">&reg;</sup> control in a row te
 
 Here is an example that demonstrates rendering Syncfusion<sup style="font-size:70%">&reg;</sup> controls within a row template :
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -104,19 +80,7 @@ Here is an example that demonstrates rendering Syncfusion<sup style="font-size:7
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/row-template-component-cs1" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/row-template-component-cs1/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/row-template-component-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/row-template-component-cs1" %}
-{% endif %}
 
 ## Render Syncfusion<sup style="font-size:70%">&reg;</sup> Chart in row template
 
@@ -126,7 +90,7 @@ To render a Syncfusion<sup style="font-size:70%">&reg;</sup> Chart within a row 
 
 Here is an example that demonstrates rendering Syncfusion<sup style="font-size:70%">&reg;</sup> Chart within a row template:
 
-{% if page.publishingplatform == "typescript" %}
+
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -139,19 +103,7 @@ Here is an example that demonstrates rendering Syncfusion<sup style="font-size:7
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/row-template-chart" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/row-template-chart/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/row-template-chart/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/row-template-chart" %}
-{% endif %}
 
 ## Limitations
 

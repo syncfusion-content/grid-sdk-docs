@@ -19,7 +19,7 @@ To enable filtering in the Grid, you need to set the [allowFiltering](../../api/
 
 Here is an example that demonstrates the default filtering feature of the grid:
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -32,19 +32,7 @@ Here is an example that demonstrates the default filtering feature of the grid:
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/grid-cs70" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/grid-cs70/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/grid-cs70/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/grid-cs70" %}
-{% endif %}
 
 > * You can apply and clear filtering, by using [filterByColumn](../../api/grid/filter#filterbycolumn) and [clearFiltering](../../api/grid/filter#clearfiltering) methods.
 > * To disable Filtering for a particular column, by specifying [columns->allowFiltering](../../api/grid/column#allowfiltering) to false.
@@ -55,7 +43,7 @@ To apply an initial filter, you need to specify the filter criteria using the [p
 
 Here is an example of how to configure the initial filter using the `predicate` object:
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -68,19 +56,7 @@ Here is an example of how to configure the initial filter using the `predicate` 
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/grid-cs71" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/grid-cs71/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/grid-cs71/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/grid-cs71" %}
-{% endif %}
 
 ### Initial filter with multiple values for same column
 
@@ -90,7 +66,7 @@ To apply the filter with multiple values for same column at initial rendering, s
 
 The following example demonstrates, how to perform an initial filter with multiple values for same **CustomerID** column using `filterSettings.columns` and `predicate`.
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -103,19 +79,7 @@ The following example demonstrates, how to perform an initial filter with multip
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/filtering-cs1" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/filtering-cs1/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/filtering-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/filtering-cs1" %}
-{% endif %}
 
 ### Initial filter with multiple values for different columns 
 
@@ -125,7 +89,7 @@ To apply the filter with multiple values for different column at initial renderi
 
 The following example demonstrates how to perform an initial filter with multiple values for different **Order ID** and **Customer ID** columns using `filterSettings.columns` and `predicate`.
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -138,19 +102,7 @@ The following example demonstrates how to perform an initial filter with multipl
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/filtering-cs2" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/filtering-cs2/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/filtering-cs2/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/filtering-cs2" %}
-{% endif %}
 
 ## Filter operators
 
@@ -228,7 +180,7 @@ The diacritics filter feature in the TypeScript Grid is useful when working with
 
 Consider the following sample where the `ignoreAccent` property is set to true in order to include diacritic characters in the filtering process:
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -241,19 +193,7 @@ Consider the following sample where the `ignoreAccent` property is set to true i
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/filter-diacritics-cs1" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/filter-diacritics-cs1/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/filter-diacritics-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/filter-diacritics-cs1" %}
-{% endif %}
 
 ## Perform ENUM column filtering
 
@@ -261,15 +201,11 @@ The Syncfusion TypeScript Grid allows you to filter enum-type data using the [Fi
 
 To achieve this functionality:
 
-{% if page.publishingplatform == "typescript" %}
+
 
 1. Render [DropDownList](https://ej2.syncfusion.com/documentation/drop-down-list/getting-started) in the `FilterBarTemplate` for the enum-type column.
 
-{% elsif page.publishingplatform == "javascript" %}
 
-1. Render [DropDownList](https://ej2.syncfusion.com/javascript/documentation/drop-down-list/es5-getting-started) in the `FilterBarTemplate` for the enum-type column.
-
-{% endif %}
 
 2. Bind the enumerated list data to the column.
 
@@ -279,7 +215,7 @@ To achieve this functionality:
 
 Below is an example demonstrating how to filter enum-type data in a Syncfusion TypeScript Grid:
 
-{% if page.publishingplatform == "typescript" %}
+
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -292,19 +228,7 @@ Below is an example demonstrating how to filter enum-type data in a Syncfusion T
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/enum-filtering-cs1" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/enum-filtering-cs1/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/enum-filtering-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/enum-filtering-cs1" %}
-{% endif %}
 
 ## Filtering with case sensitivity
 
@@ -312,7 +236,7 @@ The TypeScript Grid provides the flexibility to enable or disable case sensitivi
 
 Below is an example code demonstrating how to enable or disable case sensitivity while filtering:
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -325,19 +249,7 @@ Below is an example code demonstrating how to enable or disable case sensitivity
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/filtering-caseSensitivity-cs1" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/filtering-caseSensitivity-cs1/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/filtering-caseSensitivity-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/filtering-caseSensitivity-cs1" %}
-{% endif %}
 
 ## Enable different filter for a column
 
@@ -347,7 +259,7 @@ It can be achieved by adjusting the [column->filter->type](../../api/grid/column
 
 Here's an example where the menu filter is enabled by default for all columns, but you can dynamically modify the filter types through a dropdown:
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -360,19 +272,7 @@ Here's an example where the menu filter is enabled by default for all columns, b
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/filter-column-cs1" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/filter-column-cs1/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/filter-column-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/filter-column-cs1" %}
-{% endif %}
 
 ## Change default filter operator for particular column
 
@@ -380,7 +280,7 @@ The Syncfusion<sup style="font-size:70%">&reg;</sup> Grid control provides the f
 
 Here's an example that demonstrates how to change the default filter operator column :
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -393,19 +293,7 @@ Here's an example that demonstrates how to change the default filter operator co
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/filter-change-default-filter-cs1" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/filter-change-default-filter-cs1/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/filter-change-default-filter-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/filter-change-default-filter-cs1" %}
-{% endif %}
 
 ## Filter grid programmatically with single and multiple values using method 
 
@@ -415,7 +303,7 @@ This can be achieved by utilizing the [filterByColumn](../../api/grid#filterbyco
 
 The following example demostrates, how to programmatically filter the Grid using single and multiple values for the **OrderID** and **CustomerID** columns. This is accomplished by calling the `filterByColumn` method within an external button click function.
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -428,19 +316,7 @@ The following example demostrates, how to programmatically filter the Grid using
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/filtering-cs3" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/filtering-cs3/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/filtering-cs3/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/filtering-cs3" %}
-{% endif %}
 
 ## How to get filtered records
 
@@ -454,7 +330,7 @@ This method retrieves an array of records that match the currently applied filte
 
 Here's an example of how to get the filtering data in a Syncfusion<sup style="font-size:70%">&reg;</sup> grid using the `getFilteredRecords` method:
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -467,19 +343,7 @@ Here's an example of how to get the filtering data in a Syncfusion<sup style="fo
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/filter-record-cs1" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/filter-record-cs1/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/filter-record-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/filter-record-cs1" %}
-{% endif %}
 
 **2.Using the properties in the FilterEventArgs object**
 
@@ -506,7 +370,7 @@ The Syncfusion<sup style="font-size:70%">&reg;</sup> Grid provides a method call
 
 Here's an example of how to clear the filtering in a Syncfusion<sup style="font-size:70%">&reg;</sup> grid using the `clearFiltering` method:
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -519,19 +383,7 @@ Here's an example of how to clear the filtering in a Syncfusion<sup style="font-
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/filter-clear-cs1" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/filter-clear-cs1/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/filter-clear-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/filter-clear-cs1" %}
-{% endif %}
 
 ## Filtering events
 
@@ -541,7 +393,7 @@ To implement filtering events in the TypeScript Grid, you can utilize the availa
 
 In the given example, the filtering is prevented for **ShipCity** column during `actionBegin` event.
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -554,19 +406,7 @@ In the given example, the filtering is prevented for **ShipCity** column during 
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/filter-event-cs1" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/filter-event-cs1/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/filter-event-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/filter-event-cs1" %}
-{% endif %}
 
 ## See Also
 

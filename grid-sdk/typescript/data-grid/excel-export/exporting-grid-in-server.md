@@ -69,7 +69,7 @@ public ActionResult DataSource(DataManager dm)
 
 ```
 
-{% if page.publishingplatform == "typescript" %}
+
  
 ```ts
 import { Grid, Toolbar } from '@syncfusion/ej2-grids';
@@ -102,36 +102,7 @@ grid.toolbarClick = (args: Object) => {
 
 ```
 
- {% elsif page.publishingplatform == "javascript" %}
  
-```js
-ej.grids.Grid.Inject(ej.grids.Toolbar);
-var data = new ej.data.DataManager({
-    url: "Home/DataSource",
-    adaptor: new ej.data.UrlAdaptor
-});
-
-var grid = new ej.grids.Grid({
-    dataSource: data,
-    toolbar: ['ExcelExport'],
-    columns: [
-        { field: 'OrderID', headerText: 'Order ID', textAlign: 'Right', width: 100 },
-        { field: 'CustomerID', headerText: 'Customer ID', width: 120 },
-        { field: 'Freight', headerText: 'Freight', textAlign: 'Right', width: 120, format: 'C2' },
-        { field: 'ShipCountry', headerText: 'Ship Country', width: 150 }
-    ],
-    height: 265
-});
-grid.appendTo('#Grid');
-
-grid.toolbarClick = (args) => {
-    if (args['item'].id === 'Grid_excelexport') {
-        grid.serverExcelExport("Home/ExcelExport");
-    }
-}
-
-```
-{% endif %}
 
 >Note: Refer to the GitHub sample for quick implementation and testing from [here](https://github.com/SyncfusionExamples/TypeScript-EJ2-Grid-server-side-exporting).
 
@@ -169,7 +140,7 @@ public ActionResult DataSource(DataManager dm)
 }
 
 ```
-{% if page.publishingplatform == "typescript" %}
+
  
 ```ts
 import { Grid, Toolbar } from '@syncfusion/ej2-grids';
@@ -202,37 +173,7 @@ grid.toolbarClick = (args: Object) => {
 
 ```
 
- {% elsif page.publishingplatform == "javascript" %}
  
-```js
-ej.grids.Grid.Inject(ej.grids.Toolbar);
-var data = new ej.data.DataManager({
-    url: "Home/DataSource",
-    adaptor: new ej.data.UrlAdaptor
-});
-
-var grid = new ej.grids.Grid({
-    dataSource: data,
-    toolbar: ['CsvExport'],
-    columns: [
-        { field: 'OrderID', headerText: 'Order ID', textAlign: 'Right', width: 100 },
-        { field: 'CustomerID', headerText: 'Customer ID', width: 120 },
-        { field: 'Freight', headerText: 'Freight', textAlign: 'Right', width: 120, format: 'C2' },
-        { field: 'ShipCountry', headerText: 'Ship Country', width: 150 }
-    ],
-    height: 265
-});
-grid.appendTo('#Grid');
-
-grid.toolbarClick = (args: Object) => {
-    if (args['item'].id === 'Grid_csvexport') {
-        grid.serverCsvExport("Home/CsvGridExport");
-    }
-}
-
-```
-
-{% endif %}
 
 ## Export grid as memory stream
 

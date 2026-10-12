@@ -17,7 +17,7 @@ To use the searching feature, need to inject  **Search** module in the grid and 
 
 To further enhance the search functionality, you can integrate a search text box directly into the grid's toolbar. This allows users to enter search criteria conveniently within the grid interface. To add the search item to the grid's toolbar, use the [toolbar](../api/grid/#toolbar) property and add **Search** item.
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -30,19 +30,7 @@ To further enhance the search functionality, you can integrate a search text box
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/grid-cs155" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/grid-cs155/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/grid-cs155/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/grid-cs155" %}
-{% endif %}
 
 > The clear icon is shown in the Data Grid search text box when it is focused on search text or after typing the single character in the search text box. A single click of the clear icon clears the text in the search box as well as the search results in the Grid.
 
@@ -68,7 +56,7 @@ The following example demonstrates how to set an initial search in the grid usin
 4. `ignoreCase`: **true** makes the search case-insensitive.
 5. `ignoreAccent`: **true** will ignores diacritic characters or accents during the search operation.
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -81,19 +69,7 @@ The following example demonstrates how to set an initial search in the grid usin
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/grid-cs156" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/grid-cs156/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/grid-cs156/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/grid-cs156" %}
-{% endif %}
 
 > By default, grid searches all the bound column values. However, you can customize this behavior by definining the [searchSettings->fields](../api/grid/searchSettings/#fields) property.
 
@@ -115,17 +91,13 @@ notequal |Checks whether a value not equal to the specified value.
 
 These operators provide flexibility in defining the search behavior and allow you to perform different types of comparisons based on your requirements.
 
-{% if page.publishingplatform == "typescript" %}
+
  
 The following example demonstrates how to set the `searchSettings->operator` property based on changing the dropdown value using the [change](../api/drop-down-list/#change) event of the [DropDownList](../drop-down-list/getting-started) control.
 
- {% elsif page.publishingplatform == "javascript" %}
  
-The following example demonstrates how to set the `searchSettings->operator` property based on changing the dropdown value using the [change](../api/drop-down-list/#change) event of the [DropDownList](../drop-down-list/es5-getting-started) control.
 
-{% endif %}
 
-{% if page.publishingplatform == "typescript" %}
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -138,19 +110,7 @@ The following example demonstrates how to set the `searchSettings->operator` pro
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/search-operator-cs1" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/search-operator-cs1/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/search-operator-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/search-operator-cs1" %}
-{% endif %}
 
 ## Search by external button
 
@@ -163,7 +123,7 @@ The `search` method allows you to perform a search operation based on a search k
 3. Inside the event handler, get the reference of the grid control.
 4. Invoke the `search` method of the grid by passing the search key as a parameter.
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -176,19 +136,7 @@ The `search` method allows you to perform a search operation based on a search k
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/search-method-cs1" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/search-method-cs1/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/search-method-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/search-method-cs1" %}
-{% endif %}
 
 ## Search specific columns
 
@@ -196,7 +144,7 @@ By default, the [search](../api/grid/#search) functionality searches all visible
 
 The following example demonstrates how to search specific columns such as **CustomerID**, **Freight**, and **ShipCity** by using the `searchSettings->fields` property.
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -209,19 +157,7 @@ The following example demonstrates how to search specific columns such as **Cust
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/column-search-cs1" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/column-search-cs1/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/column-search-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/column-search-cs1" %}
-{% endif %}
 
 ## Search on each key stroke
 
@@ -231,7 +167,7 @@ To achieve this, you need to bind the `keyup` event to the search input element 
 
 In the following example, the `created` event is bound to the grid control, and inside the event handler, the `keyup` event is bound to the [search](../api/grid/#search) input element. Whenever the `keyup` event is triggered, the current `search` string is obtained from the `search` input element, and the `search` method is invoked on the grid instance with the current search string as a parameter. This allows the search results to be displayed in real-time as you type in the search box.
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -244,19 +180,7 @@ In the following example, the `created` event is bound to the grid control, and 
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/column-search-cs2" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/column-search-cs2/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/column-search-cs2/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/column-search-cs2" %}
-{% endif %}
 
 > Search on each key stroke approach may affect the performance of the application when dealing with a large number of records.
 
@@ -266,7 +190,7 @@ By default, the search operation considers the underlying raw data of each cell 
 
 The following example demonstrates how to implement searching based on column formatting in the Grid. In the `actionBegin` event, retrieve the search value from the [getColumns](../api/grid/#getcolumns) method. Iterate through the columns and check whether the column has a format specified. If the column has a format specified, use the `grid.valueFormatterService.fromView` method to get the formatted value of the cell. If the formatted value matches the search value, set the **OR** predicate that includes the current column filter and the new filter based on the formatted value.
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -279,19 +203,7 @@ The following example demonstrates how to implement searching based on column fo
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/search-formatting-cs1" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/search-formatting-cs1/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/search-formatting-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/search-formatting-cs1" %}
-{% endif %}
 
 ## Perform search operation in Grid using multiple keywords
 
@@ -301,7 +213,7 @@ The following example demonstrates, how to perform a search with multiple keywor
 
 On the other hand, the [actionComplete](../api/grid/#actioncomplete) event is used to manage the completion of the `search` operation. It ensures that the search input value is updated if necessary and clears the `query` when the search input is empty.
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -314,19 +226,7 @@ On the other hand, the [actionComplete](../api/grid/#actioncomplete) event is us
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/column-search-cs4" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/column-search-cs4/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/column-search-cs4/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/column-search-cs4" %}
-{% endif %}
 
 > By using this approach, you can perform a search operation in the grid using multiple keywords.
 
@@ -334,17 +234,13 @@ On the other hand, the [actionComplete](../api/grid/#actioncomplete) event is us
 
 By default, the searching operation in the Grid control does not ignore diacritic characters or accents. However, there are cases where ignoring diacritic characters becomes necessary. This feature enhances the search experience by enabling data searching without considering accents, ensuring a more comprehensive and accurate search  and it can be achieved by utilizing the [searchSettings->ignoreAccent](../api/grid/searchSettings/#ignoreaccent) property of the Grid control as **true**.
 
-{% if page.publishingplatform == "typescript" %}
+
  
 The following example demonstrates how to define the `ignoreAccent` property within the [searchSettings](../api/grid/#searchsettings) property of the grid. Additionally, the [EJ2 Toggle Switch Button](../switch/getting-started) control is included to modify the value of the `searchSettings->ignoreAccent` property. When the switch is toggled, the [change](../api/switch/#change) event is triggered, and the `searchSettings->ignoreAccent` property is updated accordingly. This functionality helps to visualize the impact of the `searchSettings->ignoreAccent` setting when performing search operations.
 
- {% elsif page.publishingplatform == "javascript" %}
  
-The following example demonstrates how to define the `ignoreAccent` property within the [searchSettings](../api/grid/#searchsettings) property of the grid. Additionally, the [EJ2 Toggle Switch Button](../switch/es5-getting-started) control is included to modify the value of the `searchSettings->ignoreAccent` property. When the switch is toggled, the [change](../api/switch/#change) event is triggered, and the `searchSettings->ignoreAccent` property is updated accordingly. This functionality helps to visualize the impact of the `searchSettings->ignoreAccent` setting when performing search operations.
 
-{% endif %}
 
-{% if page.publishingplatform == "typescript" %}
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -357,19 +253,7 @@ The following example demonstrates how to define the `ignoreAccent` property wit
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/search-ignoreAccent-cs1" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/search-ignoreAccent-cs1/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/search-ignoreAccent-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/search-ignoreAccent-cs1" %}
-{% endif %}
 
 > * You can set [searchSettings->ignoreAccent](../api/grid/searchSettings/#ignoreaccent) property along with other search settings such as [fields](../api/grid/searchSettings/#fields), [operator](../api/grid/searchSettings/#operator), and [ignoreCase](../api/grid/searchSettings/#ignoreaccent) to achieve the desired search behavior.
 > * This feature works only for the characters that are not in the ASCII range.
@@ -383,7 +267,7 @@ To achieve search text highlighting in the Grid, you can utilize the [queryCellI
 
 The following example demonstrates how to highlight search text in grid using the `queryCellInfo` event. The `queryCellInfo` event checks if the current cell is in the desired search column, retrieves the cell value, search keyword and uses the `includes` method to check if the cell value contains the search keyword. If it does, the matched text is replaced with the same text wrapped in a `span` tag with a `customcss` class. You can then use CSS to define the `customcss` class and style to easily identify where the search keywords are present in the grid.
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -396,19 +280,7 @@ The following example demonstrates how to highlight search text in grid using th
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/column-search-cs3" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/column-search-cs3/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/column-search-cs3/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/column-search-cs3" %}
-{% endif %}
 
 ## Clear search by external button
 
@@ -418,7 +290,7 @@ To clear the searched grid records from an external button, you can set the [sea
 
 The following example demonstrates how to clear the searched records using an external button.
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -431,19 +303,7 @@ The following example demonstrates how to clear the searched records using an ex
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/clear-search-cs1" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/clear-search-cs1/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/clear-search-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/clear-search-cs1" %}
-{% endif %}
 
 > You can also clear the searched records by using the clear icon within the search input field.
 
@@ -455,7 +315,7 @@ To achieve this, the [actionComplete](../api/grid/#actionComplete) event can be 
 
 The following example demonstrates how to retrieve searched records using an external button:
 
-{% if page.publishingplatform == "typescript" %}
+
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -468,19 +328,7 @@ The following example demonstrates how to retrieve searched records using an ext
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/retrieve-searched-records-cs1" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/retrieve-searched-records-cs1/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/retrieve-searched-records-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/retrieve-searched-records-cs1" %}
-{% endif %}
 
 ## See Also
 

@@ -62,7 +62,7 @@ public IActionResult UrlDatasource([FromBody]DataManagerRequest dm)
 }
 
 ```
-{% if page.publishingplatform == "typescript" %}
+
  
 ```ts
 import { Grid, Toolbar } from '@syncfusion/ej2-grids';
@@ -96,37 +96,7 @@ grid.toolbarClick = (args: ClickEventArgs) => {
 
 ```
 
- {% elsif page.publishingplatform == "javascript" %}
  
-```js
-ej.grids.Grid.Inject(ej.grids.Toolbar);
-
-var data = new ej.data.DataManager({
-    url: "Home/DataSource",
-    adaptor: new ej.data.UrlAdaptor
-});
-
-var grid = new ej.grids.Grid({
-    dataSource: data,
-    toolbar: ['PdfExport'],
-    columns: [
-        { field: 'OrderID', headerText: 'Order ID', textAlign: 'Right', width: 120 },
-        { field: 'CustomerID', headerText: 'Customer ID', width: 150 },
-        { field: 'ShipCity', headerText: 'Ship City', width: 150 },
-        { field: 'ShipName', headerText: 'Ship Name', width: 150 }
-    ],
-    height: 273
-});
-grid.appendTo('#Grid');
-
-grid.toolbarClick = (args) => {
-    if (args['item'].id === 'Grid_pdfexport') {  // 'Grid_pdfexport' -> Grid control id + _ + toolbar item name
-        grid.serverPdfExport("Home/PdfExport");
-    }
-}
-
-```
-{% endif %}
 
 >Note: Refer to the GitHub sample for quick implementation and testing from [here](https://github.com/SyncfusionExamples/TypeScript-EJ2-Grid-server-side-exporting).
 
@@ -338,7 +308,7 @@ You can achieve this by utilizing the [query](../../api/grid/#query) property an
 
 The following example demonstrates how to pass additional parameters to the server when PDF exporting within the `toolbarClick` event. Within the event, the additional parameters, specifically **recordcount** as **15**, are passed using the addParams method and displayed as a message.
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -351,19 +321,7 @@ The following example demonstrates how to pass additional parameters to the serv
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/pdf-server-cs2" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/pdf-server-cs2/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/pdf-server-cs2/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/pdf-server-cs2" %}
-{% endif %}
 
 ## Limitations
 

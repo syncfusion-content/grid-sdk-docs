@@ -21,7 +21,7 @@ The drag and drop feature allows you to rearrange rows within the grid by draggi
 
 Here's an example of how to enable drag and drop within the Grid:
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -34,19 +34,7 @@ Here's an example of how to enable drag and drop within the Grid:
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/draganddrop-single-cs1" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/draganddrop-single-cs1/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/draganddrop-single-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/draganddrop-single-cs1" %}
-{% endif %}
 
 ## Drag and drop to grid 
 
@@ -56,7 +44,7 @@ To specify the target control where the grid rows should be dropped, use the [ta
 
 Here's an example code snippet that demonstrates how to enable Row drag and drop another Grid control:
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -69,19 +57,7 @@ Here's an example code snippet that demonstrates how to enable Row drag and drop
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/draganddrop-cs1" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/draganddrop-cs1/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/draganddrop-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/draganddrop-cs1" %}
-{% endif %}
 
 > * The row drag and drop feature is not supported in virtual scrolling and frozen rows and columns mode.
 > * In order to use row drag and drop, you need to inject the **RowDD** module in the grid.
@@ -92,7 +68,7 @@ The Grid provides the feature to drag and drop grid rows to any custom control. 
 
 In the below example, the selected grid row is dragged and dropped in to the TreeGrid control by using [rowDrop](../../api/grid/#rowdrop) event. Once the row is dropped into the TreeGrid control, we have removed the corresponding grid row from grid and its data inserted in custom control.
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -105,19 +81,7 @@ In the below example, the selected grid row is dragged and dropped in to the Tre
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/draganddrop-custom-cs1" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/draganddrop-custom-cs1/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/draganddrop-custom-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/draganddrop-custom-cs1" %}
-{% endif %}
 
 > * The `rowDrop` event is fired when a row is dropped onto a custom control, regardless of whether the drop is successful or not. You can use the `args.cancel` property to prevent the default action.
 
@@ -129,7 +93,7 @@ By setting the `targetID`, the Grid will render without a helper icon for row dr
 
 Here's an example of how to hide the drag and drop icon in the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid:
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -142,19 +106,7 @@ Here's an example of how to hide the drag and drop icon in the Syncfusion<sup st
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/draganddrop-single-cs2" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/draganddrop-single-cs2/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/draganddrop-single-cs2/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/draganddrop-single-cs2" %}
-{% endif %}
 
 > * The selection feature must be enabled in the Grid to allow users to select rows before performing the drag and drop operation.
 > * Multiple rows can be selected by clicking and dragging inside the grid. For multiple row selection, the [type](../../api/grid/selectionSettings/#type) property must be set to **Multiple**.
@@ -171,7 +123,7 @@ The Grid control provides a set of events that are triggered during drag and dro
 
 4. [rowDrop](../../api/grid/#rowdrop): This event is triggered when a drag element is dropped onto a target element.
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -184,19 +136,7 @@ The Grid control provides a set of events that are triggered during drag and dro
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/draganddrop-event-cs1" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/draganddrop-event-cs1/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/draganddrop-event-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/draganddrop-event-cs1" %}
-{% endif %}
 
 ## Limitations
 
