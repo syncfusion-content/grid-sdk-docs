@@ -88,7 +88,7 @@ During batch editing, multiple changes may remain pending before the next save. 
 
 - Accidental changes may introduce errors across multiple records.
 - Manually correcting pending changes takes time and effort.
-- Cancelling the batch to recover a mistake can discard valid edits.
+- Canceling the batch to recover a mistake can discard valid edits.
 
 > * Undo and Redo actions are supported only in batch edit mode.
 > * The number of stored actions is limited by the `UndoRedoLimit` property. When the limit is reached, the oldest action is removed from the stack.
