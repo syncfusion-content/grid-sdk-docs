@@ -233,18 +233,19 @@ public class OrderData
 {% previewsample "https://blazorplayground.syncfusion.com/embed/hXBgiiNgrTpwZLYn?appbar=false&editor=false&result=true&errorlist=false&theme=bootstrap5" %}
 
 ## Find and highlight
- 
-The Find and Highlight feature in the Blazor Data Grid provides real-time text discovery by scanning visible cell content and highlighting all matching text without filtering or hiding non-matching rows. When text is entered in the find input, matching text in the Data Grid is wrapped inside a `<mark>` element and displayed with a highlight style. A match counter (for example, `2 of 14`) is displayed along with `Previous` and `Next` navigation buttons to move through each match individually.
 
-Enable the Find and Highlight feature by adding the `Find` item to the built-in toolbar. Find and Highlight behavior can be customized through [GridFindSettings](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridFindSettings.html). Find and Highlight works independently of the Data Grid search and filtering features, so all rows remain visible during text discovery.
+The Find and Highlight feature enables quick text discovery within the Data Grid by locating and highlighting matching content across visible records. All records remain visible during the process, allowing data to be reviewed and compared without changing the current view. Navigation controls and a match counter help move through individual matches efficiently, making it easier to locate specific values, keywords, references, or data entries within large datasets.
+ 
+Enable the feature by adding the `Find` item to the built-in toolbar. Find and Highlight behavior can be customized using [GridFindSettings](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridFindSettings.html) and works independently of filtering and other data operations.
 
 Finding records that contain a specific name, reference, or keyword in a large Data Grid often requires scanning many rows manually. Filtering displays only matching rows and can make record comparison difficult. Find and Highlight helps locate matching text quickly while keeping all visible rows available for reference and comparison.
 
 **Common pain points**
 
-- Manually scanning rows to locate matching text.
-- Losing visibility into non-matching records when filtering is used.
-- Difficulty tracking and navigating multiple occurrences.
+- Manually scanning large datasets to locate specific text or values.
+- Difficulty identifying all occurrences of a keyword across visible records.
+- Challenges in reviewing and comparing matching records while maintaining context.
+- Time-consuming navigation between multiple matching results.
 
 > **Find and Highlight vs. Searching:** The built-in [Search](./searching) toolbar item hides rows that do not match the search term. The **Find** toolbar item, by contrast, highlights matching text across all visible rows while keeping all rows intact.
  
@@ -733,10 +734,10 @@ public class SupportTicket
 By default, Find and Highlight scans all columns in the Data Grid. To exclude a column from scanning and highlighting, set the [AllowSearchHighlight](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridColumn.html#Syncfusion_Blazor_Grids_GridColumn_AllowSearchHighlight) property to `false` in the corresponding `GridColumn`. This option is useful for columns that contain IDs, internal codes, or sensitive data.
 
 When a column is excluded:
-- Its cell content is not scanned for matches.
-- No highlight is applied to cells in that column.
-- Cells in that column are not counted in the total match count.
-- **Previous** / **Next** navigation skips that column entirely.
+- Cell content is not scanned for matches.
+- No highlighting is applied to the concern column's cells.
+- The column's cells are excluded from the total match count.
+- **Previous** / **Next** navigation skips the column entirely.
  
 > `AllowSearchHighlight` works independently of [AllowSearching](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridColumn.html#Syncfusion_Blazor_Grids_GridColumn_AllowSearching). The `AllowSearching` property determines whether a column participates in the toolbar search operation that filters rows. The `AllowSearchHighlight` property determines whether a column participates in the `Find` operation that highlights matching text without filtering rows.
  
@@ -1236,7 +1237,7 @@ public class SupportTicket
 
 {% previewsample "https://blazorplayground.syncfusion.com/embed/LjLHCXtCfSlVILQA?appbar=false&editor=false&result=true&errorlist=false&theme=fluent2" %}
 
-### Keyboard shortcuts for Find and highlight
+### Keyboard shortcuts for find and highlight
 
 The Find and Highlight toolbar supports the following keyboard interactions when the find input is focused:
  
@@ -1248,7 +1249,7 @@ The Find and Highlight toolbar supports the following keyboard interactions when
  
 These shortcuts match standard find behavior in browsers and desktop applications.
 
-### Limitations
+### Constraints 
 
 - Cells rendered through a [column Template](./column-template.md), [edit template](./template-editing.md), or [command column](./command-column-editing.md) are excluded from Find and Highlight scanning, highlighting, and match counting.
 - Text in an active Add or Edit form editor, the toolbar `Search` filter input, or any other in-progress editor on the page is not searched or highlighted. The feature operates only on committed cell values.
