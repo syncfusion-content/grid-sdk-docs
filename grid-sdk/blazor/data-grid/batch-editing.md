@@ -252,11 +252,11 @@ The Blazor Data Grid provides API methods to perform undo and redo actions progr
 
 | Method | Behavior |
 |--------|----------|
-| `UndoAsync()` | Reverts the last batch edit action performed in the Data Grid. |
-| `RedoAsync()` | Reapplies the last reverted batch edit action in the Data Grid. |
-| `UndoAllAsync()` | Reverts all batch edit actions available in the undo stack of the Data Grid. |
-| `RedoAllAsync()` | Reapplies all reverted batch edit actions available in the redo stack of the Data Grid. |
-| `ClearUndoRedoAsync()` | Clears both the undo stack and the redo stack of the Data Grid. |
+| [UndoAsync()](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.SfGrid-1.html#Syncfusion_Blazor_Grids_SfGrid_1_UndoAsync) | Reverts the last batch edit action performed in the Data Grid. |
+| [RedoAsync()](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.SfGrid-1.html#Syncfusion_Blazor_Grids_SfGrid_1_RedoAsync) | Reapplies the last reverted batch edit action in the Data Grid. |
+| [UndoAllAsync](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.SfGrid-1.html#Syncfusion_Blazor_Grids_SfGrid_1_UndoAllAsync) | Reverts all batch edit actions available in the undo stack of the Data Grid. |
+| [RedoAllAsync](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.SfGrid-1.html#Syncfusion_Blazor_Grids_SfGrid_1_RedoAllAsync) | Reapplies all reverted batch edit actions available in the redo stack of the Data Grid. |
+| [ClearUndoRedoAsync](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.SfGrid-1.html#Syncfusion_Blazor_Grids_SfGrid_1_ClearUndoRedoAsync) | Clears both the undo stack and the redo stack of the Data Grid. |
 
 ### Events involved in undo / redo actions
 
@@ -264,10 +264,10 @@ The Blazor Data Grid triggers events when undo and redo actions are performed. T
 
 | Event Name | Class Name | Description |
 |------------|-----------|-------------|
-| `OnUndo` | `OnUndoEventArgs<TValue>` | Triggers before an undo action is applied in the Data Grid. |
-| `OnRedo` | `OnRedoEventArgs<TValue>` | Triggers before a redo action is applied in the Data Grid. |
-| `OnUndoCompleted` | `OnUndoCompletedEventArgs<TValue>` | Triggers after an undo action is applied in the Data Grid. |
-| `OnRedoCompleted` | `OnRedoCompletedEventArgs<TValue>` | Triggers after a redo action is applied in the Data Grid. |
+| [OnUndo](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridEvents-1.html#Syncfusion_Blazor_Grids_GridEvents_1_OnUndo) | [OnUndoEventArgs<TValue>](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.OnUndoEventArgs-1.html) | Triggers before an undo action is applied in the Data Grid. |
+| [OnRedo](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridEvents-1.html#Syncfusion_Blazor_Grids_GridEvents_1_OnRedo) | [OnRedoEventArgs<TValue>](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.OnRedoEventArgs-1.html) | Triggers before a redo action is applied in the Data Grid. |
+| [OnUndoCompleted](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridEvents-1.html#Syncfusion_Blazor_Grids_GridEvents_1_OnUndoCompleted) | [OnUndoCompletedEventArgs<TValue>](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.OnUndoCompletedEventArgs-1.html) | Triggers after an undo action is applied in the Data Grid. |
+| [OnRedoCompleted](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridEvents-1.html#Syncfusion_Blazor_Grids_GridEvents_1_OnRedoCompleted) | [OnRedoCompletedEventArgs<TValue>](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.OnRedoCompletedEventArgs-1.html) | Triggers after a redo action is applied in the Data Grid. |
 
 ## Automatically update the column based on another column edited value
 
