@@ -4,7 +4,6 @@ title: Row pinning in TypeScript Grid control | Syncfusion
 description: Learn here all about Row pinning in Syncfusion TypeScript Grid control of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Row Pinning
-publishingplatform: grid-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---

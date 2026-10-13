@@ -199,7 +199,7 @@ are not defined in the column, the column renders with “empty” header text.
 
 ## Format
 
-To format cell values based on specific culture, use the [`columns.format`](../api/grid/column#format) property. The grid uses[Internalization](../common/internationalization/) library to format [`number`](../common/internationalization#number-formatting) and [`date`](../common/internationalization#date-formatting)
+To format cell values based on specific culture, use the [`columns.format`](../api/grid/column#format) property. The grid uses[Internalization](../common/internationalization) library to format [`number`](../common/internationalization#number-formatting) and [`date`](../common/internationalization#date-formatting)
 values.
 
 {% tabs %}
@@ -213,7 +213,7 @@ values.
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grid-cs117" %}
 
-> By default, the [`number`](../common/internationalization#number-formatting) and [`date`](../common/internationalization#date-formatting) values are formatted in **en-US** locale. You can localize the currency and date in different locale as explained [`here`](../common/internationalization/)
+> By default, the [`number`](../common/internationalization#number-formatting) and [`date`](../common/internationalization#date-formatting) values are formatted in **en-US** locale. You can localize the currency and date in different locale as explained [`here`](../common/internationalization)
 
 ### Number formatting
 

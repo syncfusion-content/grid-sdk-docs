@@ -10,7 +10,7 @@ domainurl: https://help.syncfusion.com/grid-sdk
 
 # Column spanning in JavaScript Grid control
 
-The column spanning feature in the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid allows you to merge adjacent cells horizontally, creating a visually appealing and informative layout. By defining the [colSpan](../../api/grid/queryCellInfoEventArgs#colspan) attribute in the [queryCellInfo](../../api/grid/queryCellInfoEventArgs/) event, you can easily span cells and customize the appearance of the grid.
+The column spanning feature in the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid allows you to merge adjacent cells horizontally, creating a visually appealing and informative layout. By defining the [colSpan](../../api/grid/queryCellInfoEventArgs#colspan) attribute in the [queryCellInfo](../../api/grid/queryCellInfoEventArgs) event, you can easily span cells and customize the appearance of the grid.
 
 In the following demo, Employee **Davolio** doing analysis from 9.00 AM to 10.00 AM, so that cells have spanned.
 

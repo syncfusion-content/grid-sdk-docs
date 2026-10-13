@@ -11,7 +11,7 @@ domainurl: https://help.syncfusion.com/grid-sdk
 
 # Sorting in JavaScript Grid control
 
-You can customize the appearance of the sorting icons and multi sorting icons in the JavaScript Grid control using CSS. You can use the available Syncfusion<sup style="font-size:70%">&reg;</sup> [icons](../../appearance/icons/#material) based on your theme. Here's how to do it:
+You can customize the appearance of the sorting icons and multi sorting icons in the JavaScript Grid control using CSS. You can use the available Syncfusion<sup style="font-size:70%">&reg;</sup> [icons](https://ej2.syncfusion.com/javascript/documentation/appearance/icons#material) based on your theme. Here's how to do it:
 
 ## Customizing the grid sorting icon
 

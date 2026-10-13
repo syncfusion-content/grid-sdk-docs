@@ -4,7 +4,6 @@ title: Footer aggregate in TypeScript Grid control | Syncfusion
 description: Learn here all about Footer aggregate in Syncfusion TypeScript Grid control of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Footer aggregate 
-publishingplatform: grid-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---

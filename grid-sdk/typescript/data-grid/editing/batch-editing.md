@@ -4,7 +4,6 @@ title: Batch editing in TypeScript Grid control | Syncfusion
 description: Learn here all about Batch editing in Syncfusion TypeScript Grid control of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Batch editing 
-publishingplatform: grid-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---

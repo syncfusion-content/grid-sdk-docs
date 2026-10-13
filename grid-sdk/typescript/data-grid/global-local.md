@@ -4,7 +4,6 @@ title: Global local in TypeScript Grid control | Syncfusion
 description: Learn here all about Global local in Syncfusion TypeScript Grid control of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Global local 
-publishingplatform: grid-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---

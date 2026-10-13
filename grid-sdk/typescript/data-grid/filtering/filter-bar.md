@@ -4,7 +4,6 @@ title: Filter bar in TypeScript Grid control | Syncfusion
 description: Learn here all about Filter bar in Syncfusion TypeScript Grid control of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Filter bar 
-publishingplatform: grid-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---

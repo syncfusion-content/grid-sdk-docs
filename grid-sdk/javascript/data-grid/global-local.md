@@ -271,7 +271,7 @@ The following example demonstrates how to load a translation object for **French
 
 ### Switch the different localization
 
-The Synfusion JavaScript Grid allows you to switch the localization from one culture to another culture. This will be useful when you want to change the localization based on your requirements. 
+The Syncfusion JavaScript Grid allows you to switch the localization from one culture to another culture. This will be useful when you want to change the localization based on your requirements. 
 
 To switch to a different localization, follow these steps:
 

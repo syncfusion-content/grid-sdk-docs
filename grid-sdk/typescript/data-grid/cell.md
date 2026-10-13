@@ -4,7 +4,6 @@ title: Cell in TypeScript Grid Control | Syncfusion
 description: Learn here all about cell support in Syncfusion TypeScript Grid control, it's elements, and more.
 platform: grid-sdk
 control: Cell 
-publishingplatform: grid-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---

@@ -4,7 +4,6 @@ title: Excel exporting in TypeScript Grid control | Syncfusion
 description: Learn here all about Excel exporting in Syncfusion TypeScript Grid control of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Excel exporting 
-publishingplatform: grid-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---

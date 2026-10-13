@@ -208,7 +208,7 @@ window.localStorage.setItem('gridOrders', JSON.stringify(value)); //"gridOrders"
 
 ## Prevent columns from persisting
 
-In the JavaScript Grid control, you may sometimes want to prevent certain settings from being persisted when using the [enablePersistence](../api/grid#enablepersistence) feature. When the `enablePersistence` property is set to **true**, the Grid properties such as [Grouping](../api/grid/groupSettings/), [Paging](../api/grid/pageSettings/), [Filtering](../api/grid/filterSettings/), [Sorting](../api/grid/sortSettings/), and [Columns](../api/grid/column/) will persist. You can use the `addOnPersist` method to prevent these Grid properties from persisting.
+In the JavaScript Grid control, you may sometimes want to prevent certain settings from being persisted when using the [enablePersistence](../api/grid#enablepersistence) feature. When the `enablePersistence` property is set to **true**, the Grid properties such as [Grouping](../api/grid/groupSettings), [Paging](../api/grid/pageSettings), [Filtering](../api/grid/filterSettings), [Sorting](../api/grid/sortSettings), and [Columns](../api/grid/column) will persist. You can use the `addOnPersist` method to prevent these Grid properties from persisting.
 
 The following example demonstrates how to prevent Grid columns from persisting. In the [dataBound](../api/grid#databound) event of the Grid, you can override the `addOnPersist` method and remove the columns from the key list given for persistence.
 

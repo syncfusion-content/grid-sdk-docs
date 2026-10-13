@@ -4,7 +4,6 @@ title: Context menu in TypeScript Grid control | Syncfusion
 description: Learn here all about Context menu in Syncfusion TypeScript Grid control of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Context menu 
-publishingplatform: grid-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---

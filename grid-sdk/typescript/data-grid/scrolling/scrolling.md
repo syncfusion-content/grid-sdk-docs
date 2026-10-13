@@ -4,7 +4,6 @@ title: Scrolling in TypeScript Grid control | Syncfusion
 description: Learn here all about Scrolling in Syncfusion TypeScript Grid control of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Scrolling 
-publishingplatform: grid-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---

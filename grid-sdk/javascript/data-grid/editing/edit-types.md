@@ -14,7 +14,7 @@ The JavaScript Grid control in Syncfusion<sup style="font-size:70%">&reg;</sup> 
 
 ## Default cell edit type editor
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Grid provides pre-built default editors that enhance data editing and input handling within the grid. These default editors are designed to simplify the process of defining the editor control for specific columns based on the data type of the column within the grid. To configure default editors for grid columns, leverage the [editType](../../api/grid/editType/) property.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Grid provides pre-built default editors that enhance data editing and input handling within the grid. These default editors are designed to simplify the process of defining the editor control for specific columns based on the data type of the column within the grid. To configure default editors for grid columns, leverage the [editType](../../api/grid/editType) property.
 
 The available default edit types are as follows:
 
@@ -46,7 +46,7 @@ You can customize the default TextBox control in Grid edit form using its proper
 
 control|Edit Type |Description|Example Customized edit params
 -----|---|-----|-----|
-[TextBox](../../textbox/getting-started) |stringedit| The `stringedit` type renders a TextBox control for string data type columns. To customize the `TextBox` control, refer to the [TextBox API documentation](../../api/textbox/) for detailed information on available properties | params: { showClearButton : true}
+[TextBox](../../textbox/getting-started) |stringedit| The `stringedit` type renders a TextBox control for string data type columns. To customize the `TextBox` control, refer to the [TextBox API documentation](../../api/textbox) for detailed information on available properties | params: { showClearButton : true}
 
 The following sample code demonstrates the customization applied to TextBox control of **CustomerID** Grid column:
 
@@ -70,7 +70,7 @@ You can customize the `NumericTextBox` control in Grid edit form using its prope
 
 control| Edit Type |Description |Example Customized edit params
 -----|-----|-----|----|
-[NumericTextBox](../../numerictextbox/getting-started)|numericedit| The `numericedit` type renders a NumericTextBox control for integers, double, float, short, byte, long, long double and decimal data types columns. To customize the **NumericTextBox** control, refer to the [NumericTextBox API documentation](../../api/numerictextbox/) for detailed information on available properties. | params: { decimals: 2, value: 5 }
+[NumericTextBox](../../numerictextbox/getting-started)|numericedit| The `numericedit` type renders a NumericTextBox control for integers, double, float, short, byte, long, long double and decimal data types columns. To customize the **NumericTextBox** control, refer to the [NumericTextBox API documentation](../../api/numerictextbox) for detailed information on available properties. | params: { decimals: 2, value: 5 }
 
 The following sample code demonstrates the customization applied to NumericTextBox control of **Freight** Grid column:
 
@@ -118,7 +118,7 @@ You can customize the `DropDownList` control in Grid edit form using its propert
 
 Control|Edit Type |Description| Example Customized edit params
 -----|-----|-----|----|
-[DropDownList](../../drop-down-list/getting-started)|DropDownEdit|  The `dropdownedit` type renders a DropDownList control for string data type columns. To customize the DropDownList control, refer to the [DropDownList API documentation](../../api/drop-down-list/) for detailed information on available properties.  | params: { value: ‘Germany’ }
+[DropDownList](../../drop-down-list/getting-started)|DropDownEdit|  The `dropdownedit` type renders a DropDownList control for string data type columns. To customize the DropDownList control, refer to the [DropDownList API documentation](../../api/drop-down-list) for detailed information on available properties.  | params: { value: ‘Germany’ }
 
 The following sample code demonstrates the customization applied to DropDownList control  of **ShipCity** Grid column:
 
@@ -212,7 +212,7 @@ You can customize the CheckBox control in Grid edit form using its property. Thi
 
 Control| Edit Type |Description |Example Customized edit params
 -----|-----|-----|----|
-[CheckBox](../../check-box/getting-started)| booleanedit | The `booleanedit` type renders a **CheckBox** control for boolean data type. To customize the CheckBox control, refer to the [CheckBox API documentation](../../api/check-box/) for detailed information on available properties. | params: { checked: true}
+[CheckBox](../../check-box/getting-started)| booleanedit | The `booleanedit` type renders a **CheckBox** control for boolean data type. To customize the CheckBox control, refer to the [CheckBox API documentation](../../api/check-box) for detailed information on available properties. | params: { checked: true}
 
 The following sample code demonstrates the customization applied to CheckBox control of **Verified** Grid column:
 
@@ -236,7 +236,7 @@ You can customize the DatePicker control in Grid edit form using its property. T
 
 control| Edit Type |Description|Example Customized edit params
 -----|-----|-----|----|
-[DatePicker](../../datepicker/getting-started)| datepickeredit | The `datepickeredit` type renders a **DatePicker** control for date data type columns. To customize the DatePicker control, refer to the [DatePicker API documentation](../../api/datepicker/) for detailed information on available properties. | params: { format:'dd.MM.yyyy' }
+[DatePicker](../../datepicker/getting-started)| datepickeredit | The `datepickeredit` type renders a **DatePicker** control for date data type columns. To customize the DatePicker control, refer to the [DatePicker API documentation](../../api/datepicker) for detailed information on available properties. | params: { format:'dd.MM.yyyy' }
  
 The following sample code demonstrates the customization applied to DatePicker control of **OrderDate** Grid column:
 
@@ -280,7 +280,7 @@ You can customize the DateTimePicker control in Grid edit form using its propert
 
 control|Edit Type |Description |Example Customized edit params
 -----|-----|-----|----|
-[DateTimePicker](../../datetimepicker/getting-started)| datetimepickeredit | The `datetimepickeredit` type renders a **DateTimePicker** control for date time data type columns. You can customize the DateTimePicker control, refer to the [DateTimePicker API documentation](../../api/datetimepicker/) for detailed information on available properties. | params: { value: new Date() }
+[DateTimePicker](../../datetimepicker/getting-started)| datetimepickeredit | The `datetimepickeredit` type renders a **DateTimePicker** control for date time data type columns. You can customize the DateTimePicker control, refer to the [DateTimePicker API documentation](../../api/datetimepicker) for detailed information on available properties. | params: { value: new Date() }
  
 The following sample code demonstrates the customization applied to DateTimePicker control of **OrderDate** Grid column:
 
@@ -342,7 +342,7 @@ To render a textArea in the edit form, you need to define a cell edit template f
 
 > When using a text area, please use **Shift+Enter** to move to the next line. By default, pressing **Enter** will trigger a record update while you are in edit mode.
 
-The following example demonstrates how to render a textArea control in the **ShipAddress** column of the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid. The [valueAccessor](../../api/grid/valueAccessor/) property is utilized to split the text into multiple lines within the grid column:
+The following example demonstrates how to render a textArea control in the **ShipAddress** column of the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid. The [valueAccessor](../../api/grid/valueAccessor) property is utilized to split the text into multiple lines within the grid column:
 
 
 

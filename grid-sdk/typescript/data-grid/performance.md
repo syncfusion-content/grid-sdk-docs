@@ -4,7 +4,6 @@ title: Performance tips for TypeScript Grid control | Syncfusion
 description: Checkout and learn here all about how to improve the loading performance of TypeScript  Grid control even binding large data set.
 platform: grid-sdk
 control: Performance 
-publishingplatform: grid-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---

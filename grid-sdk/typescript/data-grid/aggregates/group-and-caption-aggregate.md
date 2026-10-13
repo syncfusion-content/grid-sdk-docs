@@ -4,7 +4,6 @@ title: Group and caption aggregate in TypeScript Grid | Syncfusion
 description: Learn here all about Group and caption aggregate in Syncfusion TypeScript Grid control of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Group and caption aggregate 
-publishingplatform: grid-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---

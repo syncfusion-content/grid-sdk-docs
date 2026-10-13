@@ -4,7 +4,6 @@ title: Column rendering in TypeScript Grid control | Syncfusion
 description: Learn here all about Column rendering in Syncfusion TypeScript Grid control of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Column rendering 
-publishingplatform: grid-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---

@@ -4,7 +4,6 @@ title: Tool bar items in TypeScript Grid control | Syncfusion
 description: Learn here all about Tool bar items in Syncfusion TypeScript Grid control of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Tool bar items 
-publishingplatform: grid-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---

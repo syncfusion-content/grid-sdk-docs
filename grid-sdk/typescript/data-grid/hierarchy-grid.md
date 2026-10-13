@@ -4,7 +4,6 @@ title: Hierarchy grid in TypeScript Grid control | Syncfusion
 description: Learn here all about Hierarchy grid in Syncfusion TypeScript Grid control of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Hierarchy grid 
-publishingplatform: grid-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---

@@ -4,7 +4,6 @@ title: Adaptive in TypeScript Grid Control | Syncfusion
 description: Learn here all about adaptive in Syncfusion Essential TypeScript Grid control, its elements and more.
 platform: grid-sdk
 control: Adaptive 
-publishingplatform: grid-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---

@@ -15,7 +15,7 @@ The Grid control provides built-in support for sorting data-bound columns in asc
 
 To sort a particular column in the grid, click on its column header. Each time you click the header, the order of the column will switch between **Ascending** and **Descending**.
 
-To use the sorting feature, you need to inject the [Sort](../api/grid/sort/) module in the grid.
+To use the sorting feature, you need to inject the [Sort](../api/grid/sort) module in the grid.
 
 
 

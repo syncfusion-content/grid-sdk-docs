@@ -76,7 +76,7 @@ By settings [filterSettings->mode](../../api/grid/filterSettings#mode) as **Imme
 
 The Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript  Grid control provides an option to display filter text within the pager, indicating the current filtering status. Enabling this feature provides you with a clear understanding of the applied filters and the criteria used for filtering.
 
-To enable the display of filter text within the pager, you should set the [showFilterBarStatus](../../api/grid/filterSettings#showfilterbarstatus) property within the [filterSettings](../../api/grid/filterSettings/) configuration.
+To enable the display of filter text within the pager, you should set the [showFilterBarStatus](../../api/grid/filterSettings#showfilterbarstatus) property within the [filterSettings](../../api/grid/filterSettings) configuration.
 
 
 
@@ -96,7 +96,7 @@ To enable the display of filter text within the pager, you should set the [showF
 
 In the JavaScript Grid control, you have the ability to modify the filter operator for a column directly within the user interface during the filtering process through the filter bar cell. For instance, the default operator for filtering string-type columns in the filter bar is "startswith". Now, you can customize the default operator for a specific column using the filter operator feature.
 
-To achieve this functionality, you can enable the  [showFilterBarOperator](../../api/grid/filterSettings#showfilterbaroperator) property within the [filterSettings](../../api/grid/filterSettings/).
+To achieve this functionality, you can enable the  [showFilterBarOperator](../../api/grid/filterSettings#showfilterbaroperator) property within the [filterSettings](../../api/grid/filterSettings).
 
 
 
@@ -114,7 +114,7 @@ To achieve this functionality, you can enable the  [showFilterBarOperator](../..
 
 ## Prevent filtering for particular column
 
-In the JavaScript Grid, you can prevent filtering for a specific column by utilizing the [allowFiltering](../../api/grid#allowfiltering) property of the [column](../../api/grid/column/) object and setting it to **false**. This feature is useful when you want to disable filtering options for a particular column.
+In the JavaScript Grid, you can prevent filtering for a specific column by utilizing the [allowFiltering](../../api/grid#allowfiltering) property of the [column](../../api/grid/column) object and setting it to **false**. This feature is useful when you want to disable filtering options for a particular column.
 
 Here's an example that demonstrates how to remove the filter bar for the **CustomerID** column in JavaScript Grid:
 
@@ -136,7 +136,7 @@ Here's an example that demonstrates how to remove the filter bar for the **Custo
 
 By default, the filter bar is set to a disabled mode for template columns in the grid. However, in certain cases, you may want to hide the filter bar for a template column to provide a customized filtering experience.
 
-To hide the filter bar for a template column, you can use the [filterTemplate](../../api/grid/column#filtertemplate) property of the [column](../../api/grid/column/). This property allows you to define a custom template for the filter bar of a column.
+To hide the filter bar for a template column, you can use the [filterTemplate](../../api/grid/column#filtertemplate) property of the [column](../../api/grid/column). This property allows you to define a custom template for the filter bar of a column.
 
 Here's an example that demonstrates how to hide the filter bar for a template column in the JavaScript Grid:
 

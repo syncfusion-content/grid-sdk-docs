@@ -4,7 +4,6 @@ title: Exporting grid in server in TypeScript Grid control | Syncfusion
 description: Learn here all about Exporting grid in server in Syncfusion TypeScript Grid control of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Exporting grid in server 
-publishingplatform: grid-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---

@@ -4,7 +4,6 @@ title: Excel like filter in TypeScript Grid control | Syncfusion
 description: Learn here all about Excel like filter in Syncfusion TypeScript Grid control of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Excel like filter 
-publishingplatform: grid-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---

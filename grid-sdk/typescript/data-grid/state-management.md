@@ -4,7 +4,6 @@ title: State Management in TypeScript Grid control | Syncfusion
 description: Learn here all about State Management in Syncfusion TypeScript Grid control of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: State Management 
-publishingplatform: grid-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---

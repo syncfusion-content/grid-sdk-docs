@@ -268,7 +268,7 @@ After running the application, you can verify that the server-side API controlle
 
 ## Connecting Syncfusion JavaScript Grid to an custom service extending the ODataV4 service
 
-To integrate the Syncfusion JavaScript Grid into your Javascript and ASP.NET Core project using Visual Studio, follow these steps:
+To integrate the Syncfusion JavaScript Grid into your JavaScript and ASP.NET Core project using Visual Studio, follow these steps:
 
 **Step 1:** Create wwwroot folder:
 
@@ -280,7 +280,7 @@ Inside the wwwroot folder, create js folder to hold script file, respectively.
 
 **Step 3:** Create index.html file:
 
-Create an `index.html` file under the `wwwroot` folder and add the necessary HTML structure along with CSS and javaScript links to include Syncfusion JavaScript Grid dependencies.
+Create an `index.html` file under the `wwwroot` folder and add the necessary HTML structure along with CSS and JavaScript links to include Syncfusion JavaScript Grid dependencies.
 
 ```html
 <!DOCTYPE html>

@@ -4,7 +4,6 @@ title: Pdf export in TypeScript Grid control | Syncfusion
 description: Learn here all about Pdf export in Syncfusion TypeScript Grid control of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Pdf export 
-publishingplatform: grid-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---

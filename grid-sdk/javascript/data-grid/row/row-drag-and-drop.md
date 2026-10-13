@@ -39,7 +39,7 @@ Here's an example of how to enable drag and drop within the Grid:
 
 The grid row drag and drop allows you to drag grid rows and drop to another grid. This feature can be enabled by setting the [allowRowDragAndDrop](../../api/grid#allowrowdraganddrop) property to **true** in the Grid control. This property specifies whether to enable or disable the row drag and drop feature in the Grid. By default, this property is set to **false**, which means that row drag and drop functionality is not enabled.
 
-To specify the target control where the grid rows should be dropped, use the [targetID](../../api/grid/rowDropSettings#targetid) property of the [rowDropSettings](../../api/grid/rowDropSettings/) object. The `targetID` property takes the ID of the target control as its value.
+To specify the target control where the grid rows should be dropped, use the [targetID](../../api/grid/rowDropSettings#targetid) property of the [rowDropSettings](../../api/grid/rowDropSettings) object. The `targetID` property takes the ID of the target control as its value.
 
 Here's an example code snippet that demonstrates how to enable Row drag and drop another Grid control:
 
@@ -84,7 +84,7 @@ In the below example, the selected grid row is dragged and dropped in to the Tre
 
 ## Drag and drop rows without drag icon
 
-By default, when performing a drag and drop operation in the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid, drag icons are displayed. However, in some cases, you may want to hide these drag icons. This can be achieved by setting the [targetID](../../api/grid/rowDropSettings#targetid) property of the [rowDropSettings](../../api/grid/rowDropSettings/) object to the current Grid's ID.
+By default, when performing a drag and drop operation in the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid, drag icons are displayed. However, in some cases, you may want to hide these drag icons. This can be achieved by setting the [targetID](../../api/grid/rowDropSettings#targetid) property of the [rowDropSettings](../../api/grid/rowDropSettings) object to the current Grid's ID.
 
 By setting the `targetID`, the Grid will render without a helper icon for row dragging. You can then customize the drag and drop action by binding to the [rowDrop](../../api/grid#rowdrop) event of the Grid. In the `rowDrop` event, you can prevent the default action by setting `args.cancel` to **true**, and reorder the rows using the [reorderRows](../../api/grid#reorderrows) method of the Grid.
 

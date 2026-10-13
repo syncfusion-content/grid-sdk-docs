@@ -4,7 +4,6 @@ title: Virtual scrolling in TypeScript Grid control | Syncfusion
 description: Learn here all about Virtual scrolling in Syncfusion TypeScript Grid control of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Virtual scrolling 
-publishingplatform: grid-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---

@@ -4,7 +4,6 @@ title: Data binding in TypeScript Grid control | Syncfusion
 description: Learn here all about Data binding in Syncfusion TypeScript Grid control of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Data binding 
-publishingplatform: grid-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---

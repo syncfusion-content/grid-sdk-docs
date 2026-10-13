@@ -13,7 +13,7 @@ domainurl: https://help.syncfusion.com/grid-sdk
 
 The toolbar in the JavaScript Grid control offers several general use cases to enhance data manipulation and overall experience. Actions such as adding, editing, and deleting records within the grid can be performed, providing efficient data manipulation capabilities. The toolbar also facilitates data export and import functionality, allowing you to generate downloadable files in formats like Excel, CSV, or PDF. 
 
-To enable the toolbar functionality, you need to inject the **Toolbar** module in the grid. This module provides the necessary methods to interact with the toolbar items. The toolbar can be customized with built-in toolbar items or custom toolbar items using the [toolbar](../../api/grid#toolbar) property. The `toolbar` property accepts an array of strings representing the built-in toolbar items or an array of [ItemModel](../../api/toolbar/itemModel/) objects for custom toolbar items.
+To enable the toolbar functionality, you need to inject the **Toolbar** module in the grid. This module provides the necessary methods to interact with the toolbar items. The toolbar can be customized with built-in toolbar items or custom toolbar items using the [toolbar](../../api/grid#toolbar) property. The `toolbar` property accepts an array of strings representing the built-in toolbar items or an array of [ItemModel](../../api/toolbar/itemModel) objects for custom toolbar items.
 
 The following example demonstrates how to enable toolbar items in the grid.
 

@@ -4,7 +4,6 @@ title: Filtering in TypeScript Grid control | Syncfusion
 description: Learn here all about Filtering in Syncfusion TypeScript Grid control of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Filtering 
-publishingplatform: grid-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---

@@ -4,7 +4,6 @@ title: Detail template in TypeScript Grid control | Syncfusion
 description: Learn here all about Detail template in Syncfusion TypeScript Grid control of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Detail template 
-publishingplatform: grid-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
