@@ -452,7 +452,7 @@ Event-driven data binding requires explicit handling of changes. The Data Grid n
 | Event | Event Args | Key Properties | Description |
 |-------|-----------|-----------------|-------------|
 | `RowUpdating` | `RowUpdatingEventArgs<T>` | `Data` - The updated record; `Action` - Indicates if the operation is `Edited` (update) or `Added` (insert); `Index` - Row index in the Data Grid | The `RowUpdating` event fires when an existing row is edited or a new row is added. The handler should check `args.Action` to distinguish between edit and add operations. The handler must update the corresponding record in the data source or insert a new record. |
-| `RowDeleting` | `RowDeletingEventArgs<T>` | `Data's` - Collection of records to be deleted; `Index` - Row index in the Data Grid | The `RowDeleting` event fires when one or more rows are deleted. The handler must extract the record(s) from `args.Datas` and remove the records from the data source. |
+| `RowDeleting` | `RowDeletingEventArgs<T>` | Data's - Collection of records to be deleted; `Index` - Row index in the Data Grid | The `RowDeleting` event fires when one or more rows are deleted. The handler must extract the record(s) from `args.Datas` and remove the records from the data source. |
 | `OnBatchSave` | `BeforeBatchSaveArgs<T>` | `BatchChanges` - Contains three collections: `AddedRecords` (new rows), `ChangedRecords` (edited rows), and `DeletedRecords` (deleted rows) | The `OnBatchSave` event fires when multiple changes are saved at once in batch edit mode. The handler should process all additions, updates, and deletions together in a single transaction for better performance and data consistency. |
 
 {% tabs %}
