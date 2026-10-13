@@ -4,7 +4,6 @@ title: Column pinning (Frozen) in Syncfusion ASP.NET MVC Grid Component
 description: Learn here all about Column pinning (Frozen) in Syncfusion ASP.NET MVC Grid component of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Column pinning (Frozen)
-publishingplatform: grid-sdk
 documentation: ug
 ---
 
@@ -29,7 +28,7 @@ In the following example, the [FrozenColumns](https://help.syncfusion.com/cr/asp
 > * Frozen Grid support column virtualization feature, which helps to improve the Grid performance while loading a large dataset.
 > * The frozen feature is supported only for the columns that are visible in the current view.
 > * You can use both `FrozenColumns` property and [FrozenRows](https://help.syncfusion.com/cr/aspnetmvc-js2/syncfusion.ej2.grids.grid.html#Syncfusion_EJ2_Grids_Grid_FrozenRows) property in the same application.
-> * When both frozen columns and column virtualization are enabled, horizontal scrolling using touchpad gestures (e.g., two-finger swipe) is not supported. Users must use the horizontal scrollbar to scroll the Grid content.
+> * When both frozen columns and column virtualization are enabled, horizontal scrolling using touch pad gestures (e.g., two-finger swipe) is not supported. Users must use the horizontal scrollbar to scroll the Grid content.
 
 ## Freeze particular columns
 
@@ -125,7 +124,7 @@ The following example demonstrates how to change the default frozen line color u
 
 ## Render DatePicker in frozen columns in Grid
 
-The Syncfusion Grid allows rendering a [DatePicker](https://ej2.syncfusion.com/aspnetmvc/documentation/datepicker/getting-started) inside frozen columns during editing. This is achieved using the `Edit` property, where a custom editor (DatePicker) is assigned to the specific column.
+The Syncfusion Grid allows rendering a [DatePicker](https://help.syncfusion.com/scheduler-sdk/asp-net-mvc/date-picker/getting-started) inside frozen columns during editing. This is achieved using the `Edit` property, where a custom editor (DatePicker) is assigned to the specific column.
 
 To integrate a `DatePicker` in a frozen column, configure the column’s `Edit` property with custom `create`, `write`, `read`, and `destroy` methods. These methods ensure that the `DatePicker` initializes, retrieves, and destroys correctly within the frozen column.
 

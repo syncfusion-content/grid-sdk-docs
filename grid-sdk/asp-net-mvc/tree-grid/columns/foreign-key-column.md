@@ -15,16 +15,6 @@ To display the foreignKey value at initial rendering, use[`QueryCellInfo`](https
 
 In the following code example, **EmployeeID** is a foreign column which shows **EmployeeName** from foreign data.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight c# tabtitle="Columnmenu.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/columns-mvc/foreign/foreign.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/columns-mvc/foreign/razor %}
@@ -33,6 +23,5 @@ In the following code example, **EmployeeID** is a foreign column which shows **
 {% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/columns-mvc/foreign/foreign.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
-N> You can refer to our [`ASP.NET MVC Tree Grid`](https://www.syncfusion.com/aspnet-mvc-ui-controls/tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our [`ASP.NET MVC Tree Grid example`](https://ej2.syncfusion.com/aspnetmvc/TreeGrid/Overview#/material) to knows how to present and manipulate data.
+N> You can refer to our [`ASP.NET MVC Tree Grid`](https://www.syncfusion.com/aspnet-mvc-ui-controls/tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our [`ASP.NET MVC Tree Grid example`](https://ej2.syncfusion.com/aspnetmvc/treegrid/overview#/fluent2) to knows how to present and manipulate data.

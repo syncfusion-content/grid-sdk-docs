@@ -4,7 +4,6 @@ title: Column Template in Syncfusion ASP.NET MVC Grid Component
 description: Learn here all about Column Template in Syncfusion ASP.NET MVC Grid component of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Column Template
-publishingplatform: grid-sdk
 documentation: ug
 ---
 
@@ -58,7 +57,7 @@ The column template has options to render a custom component in a grid column in
 
 ### Render LineChart component in a column
 
-The [LineChart](https://ej2.syncfusion.com/aspnetmvc/documentation/sparkline/getting-started) component of Syncfusion<sup style="font-size:70%">&reg;</sup> provides an elegant way to represent and compare data over time. It displays data points connected by straight line segments to visualize trends in data. 
+The [LineChart](https://help.syncfusion.com/chart-sdk/asp-net-mvc/sparkline-charts/getting-started) component of Syncfusion<sup style="font-size:70%">&reg;</sup> provides an elegant way to represent and compare data over time. It displays data points connected by straight line segments to visualize trends in data. 
 
 In the following example, we have rendered the Sparkline Chart component in the Grid column by defining the `Template` property.
 
@@ -280,7 +279,7 @@ The Syncfusion<sup style="font-size:70%">&reg;</sup> Grid component allows you t
 
 Dynamically adding template columns involves creating and inserting columns with custom templates after the grid has been initialized. This approach provides flexibility in presenting data in a highly customizable manner.
 
-The following example demonstrates how to add template column using external button click. In this example, the **ShipCountry** column with a [Dropdownlist](https://ej2.syncfusion.com/aspnetmvc/documentation/drop-down-list/getting-started) is added in column `Template`, and an icon is displayed in the column header by using the `HeaderTemplate` for the **ShipCountry** column. 
+The following example demonstrates how to add template column using external button click. In this example, the **ShipCountry** column with a [DropDownList](https://ej2.syncfusion.com/aspnetmvc/documentation/drop-down-list/getting-started) is added in column `Template`, and an icon is displayed in the column header by using the `HeaderTemplate` for the **ShipCountry** column. 
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}

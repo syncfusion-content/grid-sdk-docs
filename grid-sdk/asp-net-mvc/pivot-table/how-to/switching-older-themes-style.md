@@ -58,19 +58,6 @@ In the current theme, the height of each Pivot Table row has been reduced to mak
 
 The following code sample demonstrates how to replicate the older theme style:
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/switch-theme/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="SwitchTheme.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/switch-theme/SwitchTheme.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/switch-theme/razor %}
@@ -79,8 +66,5 @@ The following code sample demonstrates how to replicate the older theme style:
 {% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/switch-theme/SwitchTheme.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
-
-
 
 ![Adjusting Row Height](../images/row-height.png)

@@ -9,20 +9,7 @@ documentation: ug
 
 # Excel Export in ASP.NET MVC TreeGrid
 
-The excel export allows exporting TreeGrid data to Excel document. You need to use the [`excelExport`](https://ej2.syncfusion.com/documentation/api/grid#excelexport) method for exporting. To enable Excel export in the treegrid, set the [`AllowExcelExport`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGrid~AllowExcelExport.html) as true.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/excel-export/export/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Export.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/excel-export/export/export.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
+The excel export allows exporting TreeGrid data to Excel document. You need to use the [`excelExport`](https://ej2.syncfusion.com/documentation/api/grid/index-default#excelexport) method for exporting. To enable Excel export in the treegrid, set the [`AllowExcelExport`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGrid.html#Syncfusion_EJ2_TreeGrid_TreeGrid_AllowExcelExport) as true.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -32,26 +19,10 @@ The excel export allows exporting TreeGrid data to Excel document. You need to u
 {% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/excel-export/export/export.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
-
-
 
 ## Persist collapsed state
 
-You can persist the collapsed state in the exported document by defining `isCollapsedStatePersist` property as true in `TreeGridExcelExportProperties` parameter of [`excelExport`](https://ej2.syncfusion.com/documentation/api/grid#excelexport) method.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/excel-export/is-collapsed/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Is-collapsed.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/excel-export/is-collapsed/is-collapsed.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
+You can persist the collapsed state in the exported document by defining `isCollapsedStatePersist` property as true in `TreeGridExcelExportProperties` parameter of [`excelExport`](https://ej2.syncfusion.com/documentation/api/grid/index-default#excelexport) method.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -61,7 +32,6 @@ You can persist the collapsed state in the exported document by defining `isColl
 {% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/excel-export/is-collapsed/is-collapsed.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ## Exporting custom aggregates in TreeGrid  
 
@@ -80,4 +50,4 @@ In the provided example, the `CustomAggregateFn` function computes the item coun
 
 ![Excel Custom Aggregates ](../images/custom-aggregate-excel.png)
 
-N> You can refer to our [`ASP.NET MVC Tree Grid`](https://www.syncfusion.com/aspnet-mvc-ui-controls/tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our [`ASP.NET MVC Tree Grid example`](https://ej2.syncfusion.com/aspnetmvc/TreeGrid/Overview#/material) to knows how to present and manipulate data.
+N> You can refer to our [`ASP.NET MVC Tree Grid`](https://www.syncfusion.com/aspnet-mvc-ui-controls/tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our [`ASP.NET MVC Tree Grid example`](https://ej2.syncfusion.com/aspnetmvc/treegrid/overview#/fluent2) to knows how to present and manipulate data.
