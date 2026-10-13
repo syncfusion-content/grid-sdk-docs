@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Batch editing in JavaScript Grid control | Syncfusion
 description: Learn here all about Batch editing in Syncfusion JavaScript Grid control of Syncfusion Essential JS 2 and more.
@@ -18,20 +18,7 @@ To enable batch editing mode, you need to set the [editSettings->mode](../../api
 
 Here's an example how to enable batch editing in the javascript grid control:
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/grid-cs17/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/grid-cs17/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grid-cs17" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -43,36 +30,19 @@ Here's an example how to enable batch editing in the javascript grid control:
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grid-cs17" %}
-{% endif %}
+
 
 ## Automatically update the column based on another column edited value 
 
-{% if page.publishingplatform == "typescript" %}
- 
-You can automatically update the value of a column based on the edited value of another column in batch mode. This feature is useful when you want to dynamically calculate and update a column's value in real-time based on the changes made in another related column. This can be achieved using the [Cell Edit Template](https://ej2.syncfusion.com/documentation/grid/editing/edit-types#custom-editors-using-template) feature in the Grid control.
 
- {% elsif page.publishingplatform == "javascript" %}
  
 You can automatically update the value of a column based on the edited value of another column in batch mode. This feature is useful when you want to dynamically calculate and update a column's value in real-time based on the changes made in another related column. This can be achieved using the [Cell Edit Template](https://ej2.syncfusion.com/javascript/documentation/grid/editing/edit-types#custom-editors-using-template) feature in the Grid control.
 
-{% endif %}
+
 
 In the following example, the **TotalCost** column value is updated based on changes to the **UnitPrice** and **UnitInStock** columns during batch editing.
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/grid-cs18/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/grid-cs18/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grid-cs18" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -84,7 +54,7 @@ In the following example, the **TotalCost** column value is updated based on cha
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grid-cs18" %}
-{% endif %}
+
 
 > * You can utilize the [updateCell](../../api/grid#updatecell) method to update cells in batch mode.
 
@@ -100,20 +70,7 @@ To cancel the delete action, you need to handle the [beforeBatchDelete](../../ap
 
 In the below demo, prevent the CRUD operation based on the **Role** column value. If the Role Column is **Admin**, then edit/delete action is prevented for that row.
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/grid-cs19/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/grid-cs19/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grid-cs19" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -125,7 +82,7 @@ In the below demo, prevent the CRUD operation based on the **Role** column value
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grid-cs19" %}
-{% endif %}
+
 
 ## Adding a new row at the bottom of the grid
 
@@ -139,20 +96,7 @@ The grid control allows you to add a new row at the bottom of the grid, allowing
 
 Here's an example that demonstrates how to enable adding new rows at the bottom of the grid using `newRowPosition` property:
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/grid-cs19-BatchEdit/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/grid-cs19-BatchEdit/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grid-cs19-BatchEdit" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -164,7 +108,7 @@ Here's an example that demonstrates how to enable adding new rows at the bottom 
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grid-cs19-BatchEdit" %}
-{% endif %}
+
 
 ## Confirmation dialog
 
@@ -178,20 +122,7 @@ To enable the confirmation dialog, you can set the [editSettings->showConfirmDia
 
 Here's an example that demonstrates how to enable/disable the confirmation dialog using the `showConfirmDialog` property:
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/grid-cs20/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/grid-cs20/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grid-cs20" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -203,7 +134,7 @@ Here's an example that demonstrates how to enable/disable the confirmation dialo
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grid-cs20" %}
-{% endif %}
+
 
 ## How to make editing in single click and arrow keys
 
@@ -215,20 +146,7 @@ To enable editing using arrow keys, you can handle the [load](../../api/grid#loa
 
 Here's an example that demonstrates how to achieve both single-click editing and arrow key navigation using the `created` and `load` events in conjunction with the `editCell` method:
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/grid-cs21/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/grid-cs21/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grid-cs21" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -240,7 +158,7 @@ Here's an example that demonstrates how to achieve both single-click editing and
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grid-cs21" %}
-{% endif %}
+
 
 ## Disable editing for a particular cell
 
@@ -250,20 +168,7 @@ To disable editing for a particular cell in batch mode, use the [cellEdit](../..
 
 Here's an example demonstrating how you can disable editing for cells containing the value **France** using the `cellEdit` event:
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/grid-cs21-PreventEdit/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/grid-cs21-PreventEdit/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grid-cs21-PreventEdit" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -275,7 +180,7 @@ Here's an example demonstrating how you can disable editing for cells containing
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grid-cs21-PreventEdit" %}
-{% endif %}
+
 
 ## Save or update the changes immediately
 
@@ -291,20 +196,7 @@ The `batchSave` method is a built-in function provided by the Grid's edit servic
 
 Here's an example that demonstrates how to achieve immediate saving or updating of changes using the `cellSaved` event and the `batchSave` method:
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/grid-cs21-SaveUpdate/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/grid-cs21-SaveUpdate/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grid-cs21-SaveUpdate" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -316,4 +208,3 @@ Here's an example that demonstrates how to achieve immediate saving or updating 
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grid-cs21-SaveUpdate" %}
-{% endif %}

@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Resize grid in various dimension in JavaScript Grid control | Syncfusion
 description: Learn here all about Resize grid in various dimension in Syncfusion JavaScript Grid control of Syncfusion Essential JS 2 and more.
@@ -16,20 +16,7 @@ To resize the grid externally, you can use an external button to modify the widt
 
 The following example demonstrates how to resize the grid on external button click based on input.
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/resize-grid-dimension-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/resize-grid-dimension-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/resize-grid-dimension-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -41,4 +28,3 @@ The following example demonstrates how to resize the grid on external button cli
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/resize-grid-dimension-cs1" %}
-{% endif %}

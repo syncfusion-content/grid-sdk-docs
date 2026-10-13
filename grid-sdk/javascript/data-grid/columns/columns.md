@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Columns in JavaScript Grid control | Syncfusion
 description: Learn here all about Columns in Syncfusion JavaScript Grid control of Syncfusion Essential JS 2 and more.
@@ -27,20 +27,7 @@ Grid supports the following column types:
 
 Here is an example of how to specify column types in a grid using the types mentioned above.
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/column-type-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/column-type-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/column-type-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -52,7 +39,7 @@ Here is an example of how to specify column types in a grid using the types ment
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/column-type-cs1" %}
-{% endif %}
+
 
 >* If the [type](../../api/grid/column#type) is not defined, then it will be determined from the first record of the [dataSource](../../api/grid#datasource).
 >* Incase if the first record of the [dataSource](../../api/grid#datasource) is null/blank value for a column then it is necessary to define the [type](../../api/grid/column#type) for that column. This is because the grid uses the column type to determine which filter dialog to display for that column
@@ -106,20 +93,7 @@ The column width is specified as an absolute pixel value. For example, a column 
   { field: 'OrderID', headerText: 'Order ID', textAlign: 'Right', width: '100' }
 ```
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/column-width-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/column-width-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/column-width-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -131,7 +105,7 @@ The column width is specified as an absolute pixel value. For example, a column 
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/column-width-cs1" %}
-{% endif %}
+
 
 ## Column formatting
 
@@ -139,20 +113,7 @@ Column formatting is a powerful feature in Syncfusion<sup style="font-size:70%">
 
 You can use the [columns->format](../../api/grid/column#format) property to specify the format for column values. 
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/column-formatting-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/column-formatting-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/column-formatting-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -164,7 +125,7 @@ You can use the [columns->format](../../api/grid/column#format) property to spec
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/column-formatting-cs1" %}
-{% endif %}
+
 
 >* The grid uses the [Internalization](../../common/internationalization) library to format values based on the specified format and culture.
 >* By default, the [number](../../common/internationalization#number-formatting) and [date](../../common/internationalization#date-formatting) values are formatted in **en-US** locale. You can localize the currency and date in different locale as explained [here](../../common/localization).
@@ -184,20 +145,7 @@ P | Denotes percentage type | The percentage format expects the input value to b
 
 The following example code demonstrates the formatting of data for **Mark 1** and **Mark 2** using the **'N'** format, **Percentage of Marks** using the **'P'** format, and **Fees** using the **'C'** format.
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/column-numberformat-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/column-numberformat-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/column-numberformat-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -209,7 +157,7 @@ The following example code demonstrates the formatting of data for **Mark 1** an
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/column-numberformat-cs1" %}
-{% endif %}
+
 
 >To learn more about number formatting, you can refer to the [number](../../common/internationalization#number-formatting) section.
 
@@ -227,20 +175,7 @@ Format | Formatted value
 { type: 'dateTime', format: 'dd/MM/yyyy hh:mm a' } | 04/07/1996 12:00 AM
 { type: 'dateTime', format: 'MM/dd/yyyy hh:mm:ss a' } | 07/04/1996 12:00:00 AM
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/pagerdropdown-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/pagerdropdown-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/pagerdropdown-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -252,7 +187,7 @@ Format | Formatted value
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/pagerdropdown-cs1" %}
-{% endif %}
+
 
 >To learn more about date formatting, you can refer to [Date formatting](../../common/internationalization#date-formatting). 
 
@@ -262,20 +197,7 @@ You can also format the date column based on the localization settings of the us
 
 In this example, the format property specifies the date format as "**yyyy-MMM-dd**", and the locale property specifies the locale as **"es-AR"** for Spanish (Argentina).
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/column-dateformat-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/column-dateformat-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/column-dateformat-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -287,7 +209,7 @@ In this example, the format property specifies the date format as "**yyyy-MMM-dd
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/column-dateformat-cs1" %}
-{% endif %}
+
 
 ### Format template column value 
 
@@ -295,20 +217,7 @@ In the JavaScript Grid, you have the ability to customize the display of data in
 
 To illustrate how to format a template column value, consider the following example where the **OrderDate** column is formatted to display dates in the **‘dd/MMM/yyyy’** format.
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/column-format-template-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/column-format-template-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/column-format-template-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -320,7 +229,7 @@ To illustrate how to format a template column value, consider the following exam
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/column-format-template-cs1" %}
-{% endif %}
+
 
 ### Custom formatting
 
@@ -328,20 +237,7 @@ Syncfusion<sup style="font-size:70%">&reg;</sup> Grid allows you to customize th
 
 In the below example, the **numberFormatOptions** object is used as the `format` property for the **'Freight'** column to apply a custom numeric format with four decimal places. Similarly, the **dateFormatOptions** object is used as the `format` property for the **'OrderDate'** column to apply a custom date format displaying the date in the format of day-of-the-week, month abbreviation, day, and 2-digit year (e.g. Sun, May 8, '23).
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/custom-formatting-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/custom-formatting-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/custom-formatting-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -353,7 +249,7 @@ In the below example, the **numberFormatOptions** object is used as the `format`
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/custom-formatting-cs1" %}
-{% endif %}
+
 
 >To learn more about custom formatting, you can refer to [Custom Date formatting](../../common/internationalization#custom-formats) and [Custom Number formatting](../../common/internationalization#custom-number-formatting-and-parsing). 
 
@@ -368,20 +264,7 @@ You can align the text in the content of a Grid column using the [textAlign](../
 
 Here is an example of using the `textAlign` property to align the text of a Grid column:
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/grid-cs7/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/grid-cs7/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grid-cs7" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -393,7 +276,7 @@ Here is an example of using the `textAlign` property to align the text of a Grid
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grid-cs7" %}
-{% endif %}
+
 
 >* The `textAlign` property only changes the alignment content not the column header. If you want to align both the column header and content, you can use the [headerTextAlign](../../api/grid/column#headerTextAlign) property.
 
@@ -403,20 +286,7 @@ The Grid control allows you to render boolean values as checkboxes in columns. T
 
 To enable the rendering of boolean values as checkboxes, you need to set the `displayAsCheckBox` property of the `columns` to **true**.
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/grid-cs5/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/grid-cs5/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grid-cs5" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -428,7 +298,7 @@ To enable the rendering of boolean values as checkboxes, you need to set the `di
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grid-cs5" %}
-{% endif %}
+
 
 >* The `displayAsCheckBox` property is only applicable to boolean values in Grid columns.
 >* When `displayAsCheckBox` is set to **true**, the boolean values will be rendered as checkboxes in the Grid column, with checked state indicating **true** and unchecked state indicating **false**.
@@ -439,20 +309,7 @@ To prevent the checkbox in the blank row of the Grid, even if the [displayAsChec
 
 Here is an example of how you can prevent a checkbox from being displayed in a blank row in a Grid:
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/blank-row-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/blank-row-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/blank-row-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -464,7 +321,7 @@ Here is an example of how you can prevent a checkbox from being displayed in a b
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/blank-row-cs1" %}
-{% endif %}
+
 
 ## AutoFit columns
 
@@ -476,20 +333,7 @@ The [autoFitColumns](../../api/grid#autofitcolumns) method resizes the column to
 
 To use `autoFitColumns` method, inject the **Resize** module in the grid.
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/autofit-columns-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/autofit-columns-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/autofit-columns-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -501,7 +345,7 @@ To use `autoFitColumns` method, inject the **Resize** module in the grid.
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/autofit-columns-cs1" %}
-{% endif %}
+
 
 > You can autofit all the columns by invoking the `autoFitColumns` method without specifying column names.
 
@@ -511,20 +355,7 @@ The Autofit feature is utilized to display columns in a grid based on the define
 
 You can enable this feature by setting the [autoFit](../../api/grid#autofit) property set to **true**. This feature ensures that the column width is rendered only as defined in the Grid column definition.
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/autofit-columns-cs3/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/autofit-columns-cs3/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/autofit-columns-cs3" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -536,7 +367,7 @@ You can enable this feature by setting the [autoFit](../../api/grid#autofit) pro
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/autofit-columns-cs3" %}
-{% endif %}
+
 
 > If any one of the column width is undefined, then the particular column will automatically adjust to fill the entire width of the grid table, even if you have enabled the `autoFit` property of grid.
 
@@ -546,20 +377,7 @@ In Syncfusion<sup style="font-size:70%">&reg;</sup> Grid, you can auto-fit colum
 
 Here's an example code snippet in JavaScript that demonstrates how to auto fit columns when changing column visibility using column chooser:
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/autofit-columns-cs4/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/autofit-columns-cs4/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/autofit-columns-cs4" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -571,7 +389,7 @@ Here's an example code snippet in JavaScript that demonstrates how to auto fit c
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/autofit-columns-cs4" %}
-{% endif %}
+
 
 ### AutoFit columns with specific rows
 
@@ -581,20 +399,7 @@ This feature will calculate the appropriate width based on the maximum content w
 
 Here is an example of how to autofit columns with specific rows. The first parameter is an array containing the specific column field names, such as  **Inventor**, **Number of INPADOC patents** and **Main fields of invention**  is passed to apply the autofit functionality to these columns. After, the second parameter are start index is set to **1** and third parameter are end index is set to **3**. When specifying these start and end index, the autofit operation is applied only to the range of rows from 1 to 3 for column width adjustment.
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/autofit-columns-cs5/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/autofit-columns-cs5/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/autofit-columns-cs5" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -606,7 +411,7 @@ Here is an example of how to autofit columns with specific rows. The first param
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/autofit-columns-cs5" %}
-{% endif %}
+
 
 ## Locked columns
 
@@ -614,20 +419,7 @@ The Syncfusion<sup style="font-size:70%">&reg;</sup> Grid allows you to lock col
 
 Here's an example of how you can use the `lockColumn` property to lock a column in the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid:
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/lock-column-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/lock-column-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/lock-column-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -639,7 +431,7 @@ Here's an example of how you can use the `lockColumn` property to lock a column 
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/lock-column-cs1" %}
-{% endif %}
+
 
 ## Show or hide columns
 
@@ -651,30 +443,13 @@ The Syncfusion<sup style="font-size:70%">&reg;</sup> Grid control allows you to 
 
 You can show or hide columns in the JavaScript Grid using the [visible](../../api/grid/column#visible) property of each column. By setting the `visible` property to **true** or **false**, you can control whether the column should be visible or hidden in the grid. Here's an example of how to show or hide a column in the JavaScript Grid using the visible property:
 
-{% if page.publishingplatform == "typescript" %}
 
-In the following example, the [EJ2 Toggle Switch Button](../../switch/getting-started) component is added to enable and disable the `visible` property. When the switch is toggled, the [change](../../api/switch#change) event is triggered and the `visible` property of the **ShipCity** column is updated accordingly. The [refreshColumns](../../api/grid#refreshcolumns) method is called to refresh the grid and display the updated content. 
- 
-{% elsif page.publishingplatform == "javascript" %}
  
 In the following example, the [EJ2 Toggle Switch Button](../../switch/es5-getting-started) component is added to enable and disable the `visible` property. When the switch is toggled, the [change](../../api/switch#change) event is triggered and the `visible` property of the **ShipCity** column is updated accordingly. The [refreshColumns](../../api/grid#refreshcolumns) method is called to refresh the grid and display the updated content.
 
-{% endif %}
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/grid-cs6/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/grid-cs6/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grid-cs6" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -686,7 +461,7 @@ In the following example, the [EJ2 Toggle Switch Button](../../switch/es5-gettin
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grid-cs6" %}
-{% endif %}
+
 
 >* Hiding a column using the `visible` property only affects the UI representation of the grid. The data for the hidden column will still be available in the underlying data source, and can be accessed or modified programmatically.
 >* When a column is hidden, its width is not included in the calculation of the total grid width.
@@ -702,20 +477,7 @@ You can dynamically show or hide columns in the Grid based on the header text by
 
 Here's an example of how to show or hide a column based on the HeaderText in the JavaScript Grid:
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/show-hide-columns-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/show-hide-columns-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/show-hide-columns-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -727,7 +489,7 @@ Here's an example of how to show or hide a column based on the HeaderText in the
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/show-hide-columns-cs1" %}
-{% endif %}
+
 
 **Based on field**
 
@@ -735,20 +497,7 @@ You can dynamically show or hide columns in the Grid using external buttons base
 
 Here's an example of how to show or hide a column based on the field in the JavaScript Grid:
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/show-hide-columns-field-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/show-hide-columns-field-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/show-hide-columns-field-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -760,7 +509,7 @@ Here's an example of how to show or hide a column based on the field in the Java
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/show-hide-columns-field-cs1" %}
-{% endif %}
+
 
 ## Controlling Grid actions
 
@@ -776,20 +525,7 @@ You can control various actions such as filtering, grouping, sorting, resizing, 
 
 Here is an example code that demonstrates how to control grid actions for specific columns:
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/grouping-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/grouping-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grouping-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -801,7 +537,7 @@ Here is an example code that demonstrates how to control grid actions for specif
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grouping-cs1" %}
-{% endif %}
+
 
 ## Customize column styles
 
@@ -871,20 +607,7 @@ let fieldNames = grid.getColumnFieldNames()
 
 You can update the column definitions in the Grid using the [columns](../../api/grid/column) property. You can modify the properties of the column objects in the columns array to update the columns dynamically. For example, you can change the headerText, width, visible, and other properties of a column to update its appearance and behavior in the grid and then call the [refreshColumns](../../api/grid#refreshcolumns) method to apply the changes to the grid.
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/columns-updateColumn-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/columns-updateColumn-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/columns-updateColumn-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -896,7 +619,7 @@ You can update the column definitions in the Grid using the [columns](../../api/
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/columns-updateColumn-cs1" %}
-{% endif %}
+
 
 ### Adding/Removing Columns
 
@@ -906,20 +629,7 @@ To add a new column to the Grid, you can directly **push** the new column object
 
 Here's an example of how you can add and remove a column from the grid:
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/column-addRemove-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/column-addRemove-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/column-addRemove-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -931,7 +641,7 @@ Here's an example of how you can add and remove a column from the grid:
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/column-addRemove-cs1" %}
-{% endif %}
+
 
 ### How to refresh columns
 
@@ -947,20 +657,7 @@ The JavaScript Grid provides a built-in feature to toggle the visibility of colu
 
 In this example, we have a Grid that displays data with three columns: **Order ID, Customer ID, and Freight**. We have set the `hideAtMedia` property of the **OrderID** column to (min-width: 700px) which means that this column will be hidden when the browser screen width is less than or equal to 700px.
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/hide-media-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/hide-media-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/hide-media-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -972,7 +669,7 @@ In this example, we have a Grid that displays data with three columns: **Order I
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/hide-media-cs1" %}
-{% endif %}
+
 
 ## See Also
 

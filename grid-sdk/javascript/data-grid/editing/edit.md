@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Edit in JavaScript Grid control | Syncfusion
 description: Learn here all about Edit in Syncfusion JavaScript Grid control of Syncfusion Essential JS 2 and more.
@@ -20,20 +20,7 @@ You can start the edit action either by double clicking the particular row or by
 
 To use CRUD, inject the [Edit](../../api/grid/edit) module in the **Grid**.
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/grid-cs35/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/grid-cs35/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grid-cs35" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -45,7 +32,7 @@ To use CRUD, inject the [Edit](../../api/grid/edit) module in the **Grid**.
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grid-cs35" %}
-{% endif %}
+
 
 > * If [columns->isIdentity](../../api/grid/column#isidentity) is enabled, then it will be considered as a read-only column when editing and adding a record.
 > * You can disable editing for a particular column, by specifying `columns.allowEditing` to **false**.
@@ -59,20 +46,7 @@ To enable this feature, you need to configure the [toolbar](../../api/grid#toolb
 
 Here's an example of how to enable the toolbar with edit option in the Grid.
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/grid-cs36/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/grid-cs36/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grid-cs36" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -84,7 +58,7 @@ Here's an example of how to enable the toolbar with edit option in the Grid.
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grid-cs36" %}
-{% endif %}
+
 
 ## Disable editing for particular column
 
@@ -94,20 +68,7 @@ To disable editing for a particular column, you can use the [allowEditing](../..
 
 Here's an example that demonstrates how to disable editing for the column in the Grid.
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/grid-cs37/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/grid-cs37/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grid-cs37" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -119,7 +80,7 @@ Here's an example that demonstrates how to disable editing for the column in the
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grid-cs37" %}
-{% endif %}
+
 
 >* If you have set the [isPrimaryKey](../../api/grid/column#isprimarykey) property to **true** for a column, editing will be automatically disabled for that column.
 > * You can disable the particular row using [actionBegin](../../api/grid#actionbegin) event. Please refer this [link](../../grid/editing/in-line-editing#disable-editing-for-a-particular-row).
@@ -133,20 +94,7 @@ To enable the editing template column feature, you need to define the [field](..
 
 In the below demo, the **ShipCountry** column is rendered with the template.
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/edit-column-template-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/edit-column-template-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/edit-column-template-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -158,7 +106,7 @@ In the below demo, the **ShipCountry** column is rendered with the template.
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/edit-column-template-cs1" %}
-{% endif %}
+
 
 ## Customize delete confirmation dialog
 
@@ -171,20 +119,7 @@ To customize the delete confirmation dialog, you can utilize the [toolbarClick](
 
 The following example that demonstrates how to customize the delete confirmation dialog using the `toolbarClick` event.
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/grid-cs38/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/grid-cs38/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grid-cs38" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -196,7 +131,7 @@ The following example that demonstrates how to customize the delete confirmation
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grid-cs38" %}
-{% endif %}
+
 
 ## Update boolean column value with a single click   
 
@@ -204,20 +139,7 @@ The Syncfusion<sup style="font-size:70%">&reg;</sup> Grid allows you to update a
 
 In the following sample, the `CheckBox` control is rendered as a template in the **Verified** column to make it editable with a single click.
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/grid-cs39/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/grid-cs39/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grid-cs39" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -229,7 +151,7 @@ In the following sample, the `CheckBox` control is rendered as a template in the
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grid-cs39" %}
-{% endif %}
+
 
 ## Edit enum column 
 
@@ -237,20 +159,7 @@ The Syncfusion<sup style="font-size:70%">&reg;</sup> Grid provides a feature tha
 
 In the following example, the `DropDownList` control is rendered within the cell edit template for the Employee Feedback column using edit property. 
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/edit-enum-column/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/edit-enum-column/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/edit-enum-column" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -262,7 +171,7 @@ In the following example, the `DropDownList` control is rendered within the cell
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/edit-enum-column" %}
-{% endif %}
+
 
 ## Edit complex column 
 
@@ -270,20 +179,7 @@ The edit template for complex column in Grid is used to customize the editing ex
 
 In the following sample, the input element is rendered in the edit template of the FirstName and LastName column. The edited changes can be saved using the `name` property of the input element. Since the complex data is bound to the FirstName and LastName column, The `name` property should be defined as **Name___FirstName and Name___LastName**, respectively, instead of using the dot notation (**Name.FirstName** and **Name.LastName**).
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/edit-complex-column/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/edit-complex-column/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/edit-complex-column" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -295,7 +191,7 @@ In the following sample, the input element is rendered in the edit template of t
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/edit-complex-column" %}
-{% endif %}
+
 
 ## Edit foreign key column 
 
@@ -303,20 +199,7 @@ The Syncfusion<sup style="font-size:70%">&reg;</sup> Grid offers a powerful edit
 
 In the following code example, the Employee Name is a foreign key column. When editing, the ComboBox control is rendered instead of DropDownList.
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/edit-foreignKey-column/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/edit-foreignKey-column/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/edit-foreignKey-column" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -328,7 +211,7 @@ In the following code example, the Employee Name is a foreign key column. When e
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/edit-foreignKey-column" %}
-{% endif %}
+
 
 ## How to perform CRUD action externally 
 
@@ -348,20 +231,7 @@ To perform CRUD operations externally, the following methods are available:
 
 The following example demonstrates the integration of the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid with a separate toolbar for external CRUD operations. The toolbar contains buttons for Add, Edit, Delete, Update, and Cancel.
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/edit-separate-toolbar/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/edit-separate-toolbar/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/edit-separate-toolbar" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -373,7 +243,7 @@ The following example demonstrates the integration of the Syncfusion<sup style="
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/edit-separate-toolbar" %}
-{% endif %}
+
 
 ### Using external form 
 
@@ -383,20 +253,7 @@ To enable the use of an external form for editing in Syncfusion<sup style="font-
 
 In the following example, it demonstrates how to edit the form using an external form by utilizing the `rowSelected` event.
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/edit-external-form/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/edit-external-form/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/edit-external-form" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -408,7 +265,7 @@ In the following example, it demonstrates how to edit the form using an external
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/edit-external-form" %}
-{% endif %}
+
 
 ## Troubleshoot editing works only for first row
 
@@ -420,20 +277,7 @@ To make a Grid column always editable, you can utilize the column template featu
 
 In the following example, the textbox is rendered in the **Freight** column using a column template. The keyup event for the Grid is bound using the [created](../../api/grid#created) event of the Grid, and the edited changes are saved in the data source using the [updateRow](../../api/grid#updaterow) method of the Grid.
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/editable-grid-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/editable-grid-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/editable-grid-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -445,7 +289,7 @@ In the following example, the textbox is rendered in the **Freight** column usin
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/editable-grid-cs1" %}
-{% endif %}
+
 
 > * If a template column has a corresponding `field` property defined, the value entered in the template column's input field will be stored in the associated edit column of the row's data object.
 

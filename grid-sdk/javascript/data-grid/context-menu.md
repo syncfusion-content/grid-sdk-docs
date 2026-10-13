@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Context menu in JavaScript Grid control | Syncfusion
 description: Learn here all about Context menu in Syncfusion JavaScript Grid control of Syncfusion Essential JS 2 and more.
@@ -57,20 +57,7 @@ Items| Description
 
 The following example demonstrates how to enable context menu feature in the grid.
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/row-template-cs14/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/row-template-cs14/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/row-template-cs14" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -82,7 +69,7 @@ The following example demonstrates how to enable context menu feature in the gri
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/row-template-cs14" %}
-{% endif %}
+
 
 ## Custom context menu items
 
@@ -94,20 +81,7 @@ Furthermore, you can assign actions to these custom items by utilizing the [cont
  
 The following example demonstrates how to add custom context menu items in the Grid control.
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/row-template-cs15/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/row-template-cs15/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/row-template-cs15" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -119,7 +93,7 @@ The following example demonstrates how to add custom context menu items in the G
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/row-template-cs15" %}
-{% endif %}
+
 
 ## Show context menu on left click
 
@@ -131,20 +105,7 @@ By using the `onclick` event listener of the Grid, you can obtain the clicked po
 
 The following example demonstrates how to show context menu on left click using `created` event.
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/row-template-cs16/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/row-template-cs16/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/row-template-cs16" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -156,7 +117,7 @@ The following example demonstrates how to show context menu on left click using 
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/row-template-cs16" %}
-{% endif %}
+
 
 > You can hide or show an item in context menu for specific area inside of grid by defining the [target](../api/grid/contextMenuItemModel#target) property.
 
@@ -166,30 +127,13 @@ With the JavaScript Grid, you have the ability to manage the activation or deact
 
 This can be achieved using the [enableItems](../api/context-menu#enableitems) method of the context menu. By setting the enable parameter in the enableItems method to **true**, you can enable context menu items, and by setting it to **false**, you can disable them. Based on your specific condition or requirements, you can enable or disable the context menu item using the `enableItems` method.
 
-{% if page.publishingplatform == "typescript" %}
- 
-In the following example, the [EJ2 Toggle Switch Button](../switch/getting-started) control is added to enable and disable the context menu items using `enableItems` method. When the switch is toggled, the [change](../api/switch#change) event is triggered, and the **Copy** items is updated accordingly. 
 
- {% elsif page.publishingplatform == "javascript" %}
  
 In the following example, the [EJ2 Toggle Switch Button](../switch/es5-getting-started) control is added to enable and disable the context menu items using `enableItems` method. When the switch is toggled, the [change](../api/switch#change) event is triggered, and the **Copy** items is updated accordingly. 
 
-{% endif %}
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/row-template-cs17/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/row-template-cs17/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/row-template-cs17" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -201,7 +145,7 @@ In the following example, the [EJ2 Toggle Switch Button](../switch/es5-getting-s
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/row-template-cs17" %}
-{% endif %}
+
 
 ## Show or hide context menu items
 
@@ -209,30 +153,13 @@ The JavaScript Grid provides the flexibility to show or hide both default and cu
 
 This can be achieved using the [showItems](../api/context-menu#showitems) and [hideItems](../api/context-menu#hideitems) methods of the context menu by specifying the item you want to show or hide as an argument. 
 
-{% if page.publishingplatform == "typescript" %}
- 
-In the following example, the [EJ2 Toggle Switch Button](../switch/getting-started) control is added to show or hide the context menu items using `showItems` and `hideItems` methods. When the switch is toggled, the [change](../api/switch#change) event is triggered, and the **Copy** items is updated accordingly. 
 
- {% elsif page.publishingplatform == "javascript" %}
  
 In the following example, the [EJ2 Toggle Switch Button](../switch/es5-getting-started) control is added to show or hide the context menu items using `showItems` and `hideItems` methods. When the switch is toggled, the [change](../api/switch#change) event is triggered, and the **Copy** items is updated accordingly. 
 
-{% endif %}
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/show-or-hide-menu-item-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/show-or-hide-menu-item-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/show-or-hide-menu-item-cs1" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -244,4 +171,3 @@ In the following example, the [EJ2 Toggle Switch Button](../switch/es5-getting-s
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/show-or-hide-menu-item-cs1" %}
-{% endif %}

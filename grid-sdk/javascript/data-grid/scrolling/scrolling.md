@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Scrolling in JavaScript Grid control | Syncfusion
 description: Learn here all about Scrolling in Syncfusion JavaScript Grid control of Syncfusion Essential JS 2 and more.
@@ -25,20 +25,7 @@ The JavaScript Grid control offers a straightforward method to tailor the width 
 
 In the following example, the scrollbar is enabled, and the grid's `height` is set to 315 pixels, while the `width` is set to 400 pixels:
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/scroller-cs5/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/scroller-cs5/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/scroller-cs5" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -50,26 +37,13 @@ In the following example, the scrollbar is enabled, and the grid's `height` is s
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/scroller-cs5" %}
-{% endif %}
+
 
 ## Set height and width using viewport units
 
 The Grid's [height](../../api/grid#height) and [width](../../api/grid#width) properties accept viewport units (for example, `70vh` and `70vw`). Using `height: 70vh` and `width: 70vw` makes the grid occupy that percentage of the browser viewport and automatically adjusts the number of visible rows and columns to the available space, ensuring a responsive layout across screen sizes.
 
-{% if page.publishingplatform == "typescript" %}
 
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/grid-height/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/grid-height/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grid-height" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -81,7 +55,7 @@ The Grid's [height](../../api/grid#height) and [width](../../api/grid#width) pro
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grid-height" %}
-{% endif %}
+
 
 ## Responsive with parent container
 
@@ -91,20 +65,7 @@ To achieve this, you need to specify the [width](../../api/grid#width) and [heig
 
 In the following example, the parent container has explicit height and width set, and the Grid container's height and width are both set to 100%. This ensures that the Grid adjusts its size responsively based on the dimensions of the parent container:
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/scroll-parent-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/scroll-parent-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/scroll-parent-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -116,7 +77,7 @@ In the following example, the parent container has explicit height and width set
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/scroll-parent-cs1" %}
-{% endif %}
+
 
 ## Sticky header
 
@@ -124,20 +85,7 @@ The JavaScript Grid control provides a feature that allows you to make column he
 
 In the below demo, the Grid headers will be sticky while scrolling the Grid's parent div element.
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/sticky-header-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/sticky-header-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/sticky-header-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -149,7 +97,7 @@ In the below demo, the Grid headers will be sticky while scrolling the Grid's pa
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/sticky-header-cs1" %}
-{% endif %}
+
 
 ## Scroll to selected row
 
@@ -157,20 +105,7 @@ The JavaScript Grid control allows you to scroll the grid content to the positio
 
 The following example that demonstrates how to use the `rowSelected` event to scroll to the selected row:
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/scroll-to-select-row-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/scroll-to-select-row-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/scroll-to-select-row-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -182,7 +117,7 @@ The following example that demonstrates how to use the `rowSelected` event to sc
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/scroll-to-select-row-cs1" %}
-{% endif %}
+
 
 ## Hide the empty placeholder of scrollbar
 
@@ -190,20 +125,7 @@ The Syncfusion<sup style="font-size:70%">&reg;</sup> Grid control provides a fea
 
 The following example that demonstrates how to use the `hideScroll` method inside the [dataBound](../../api/grid#databound) event:
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/scroller-cs6/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/scroller-cs6/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/scroller-cs6" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -215,7 +137,7 @@ The following example that demonstrates how to use the `hideScroll` method insid
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/scroller-cs6" %}
-{% endif %}
+
 
 ## Render scrollbar in both top and bottom
 
@@ -230,20 +152,7 @@ Steps to render scrollbars at the top in the Grid:
 
 The following example demonstrates how to use the `created` event to insert a scrollbar at the top of the Grid content:
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/scroller-cs7/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/scroller-cs7/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/scroller-cs7" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -255,4 +164,3 @@ The following example demonstrates how to use the `created` event to insert a sc
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/scroller-cs7" %}
-{% endif %}

@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Enable disable grid and its actions in JavaScript Grid control | Syncfusion
 description: Learn here all about Enable disable grid and its actions in Syncfusion JavaScript Grid control of Syncfusion Essential JS 2 and more.
@@ -47,20 +47,7 @@ Add/Remove the CSS class to the Grid in the [click](../../api/button#click) even
 
 In the example below, clicking the button will toggle the enable/disable state of the Grid and its actions:
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/disablegrid-cs2/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/disablegrid-cs2/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/disablegrid-cs2" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -72,4 +59,3 @@ In the example below, clicking the button will toggle the enable/disable state o
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/disablegrid-cs2" %}
-{% endif %}

@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Pdf export in JavaScript Grid control | Syncfusion
 description: Learn here all about Pdf export in Syncfusion JavaScript Grid control of Syncfusion Essential JS 2 and more.
@@ -19,20 +19,7 @@ To use PDF export, inject the **PdfExport** in the **Grid**.
 
 The following example demonstrates how to perform a PDF export action in the grid.
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/grid-cs148/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/grid-cs148/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grid-cs148" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -44,7 +31,7 @@ The following example demonstrates how to perform a PDF export action in the gri
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grid-cs148" %}
-{% endif %}
+
 
 ## Show spinner while exporting
 
@@ -57,20 +44,7 @@ The `toolbarClick` event is triggered when a toolbar item in the Grid is clicked
 To hide the spinner after the exporting is completed, bind the [pdfExportComplete](../../api/grid#pdfexportcomplete) event and use the `hideSpinner` method on the Grid instance to hide the spinner.
 
 The following example demonstrates how to show and hide the spinner during PDF export in a grid.
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/grid-cs149/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/grid-cs149/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grid-cs149" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -82,7 +56,7 @@ The following example demonstrates how to show and hide the spinner during PDF e
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grid-cs149" %}
-{% endif %}
+
 
 ## Binding custom data source while exporting
 
@@ -92,20 +66,7 @@ To export data, you need to define the [dataSource](../../api/grid/pdfExportProp
 
 The following example demonstrates how to render custom data source during PDF export. By utilizing the [pdfExport](../../api/grid#pdfexport) method and passing the `pdfExportProperties` object through the grid instance, the grid data will be exported to a PDF using the dynamically defined data source.
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/grid-cs150/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/grid-cs150/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grid-cs150" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -117,7 +78,7 @@ The following example demonstrates how to render custom data source during PDF e
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grid-cs150" %}
-{% endif %}
+
 
 > Make sure to utilize the [field](../../api/grid/column#field) property that you have declared in the grid columns when modifying the data source for exporting.
 
@@ -131,20 +92,7 @@ Within the **customAggregateFn** function, it takes an input data that contains 
 
 The following example shows how to export the grid with a custom aggregate that shows the calculation of the **Brazil** count of the **ShipCountry** column.
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/grid-cs151/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/grid-cs151/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grid-cs151" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -156,7 +104,7 @@ The following example shows how to export the grid with a custom aggregate that 
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grid-cs151" %}
-{% endif %}
+
 
 ## Exporting with cell and row spanning
 
@@ -166,20 +114,7 @@ To achieve this, you can utilize the [rowSpan](../../api/grid/querycellinfoevent
 
 The following example demonstrates how to perform export with cell and row spanning using `queryCellInfo` and `pdfQueryCellInfo` events of the Grid.
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/grid-cs207/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/grid-cs207/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grid-cs207" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -191,7 +126,7 @@ The following example demonstrates how to perform export with cell and row spann
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grid-cs207" %}
-{% endif %}
+
 
 > * The [updateCell](../../api/grid#updatecell) method does not support row and column spanning.
 
@@ -203,20 +138,7 @@ To apply a custom date format to grid columns during the export, you can utilize
 
 The following example demonstrates how to export the grid data with custom date format. In this example, the formatOptions object is used as the `columns.format` property for the **OrderDate** column. This custom date format displays the date in the format of day-of-the-week, month abbreviation, day, and 2-digit year (e.g., Thu, Jul 4, '96).
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/grid-cs208/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/grid-cs208/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grid-cs208" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -228,7 +150,7 @@ The following example demonstrates how to export the grid data with custom date 
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grid-cs208" %}
-{% endif %}
+
 
 ## Exporting multiple grids
 
@@ -240,20 +162,7 @@ PDF exporting provides support for exporting multiple grids on the same page. To
 
 The following example demonstrates how to export multiple grids to the same page in a PDF file when a toolbar item is clicked.
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/grid-cs209/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/grid-cs209/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grid-cs209" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -265,7 +174,7 @@ The following example demonstrates how to export multiple grids to the same page
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grid-cs209" %}
-{% endif %}
+
 
 ### New page
 
@@ -281,20 +190,7 @@ To achieve this, you can follow these steps:
 
 The following example demonstrates how to export multiple grids to a PDF file when a toolbar item is clicked.
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/grid-cs210/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/grid-cs210/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grid-cs210" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -306,7 +202,7 @@ The following example demonstrates how to export multiple grids to a PDF file wh
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grid-cs210" %}
-{% endif %}
+
 
 ### Limitations
 
@@ -328,20 +224,7 @@ The `hierarchyExportMode` property allows you to specify the exporting behavior 
 
 The following example demonstrates how to export hierarchical grid to PDF document. Also change the `pdfExportProperties.hierarchyExportMode` property by using [value](../../api/drop-down-list#value) property of the `DropDownList` control.
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/grid-cs211/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/grid-cs211/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grid-cs211" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -353,7 +236,7 @@ The following example demonstrates how to export hierarchical grid to PDF docume
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grid-cs211" %}
-{% endif %}
+
 
 ### Format the child Grid columns before exporting
 
@@ -361,20 +244,7 @@ The Syncfusion JavaScript Grid allows customization of the child Grid's PDF expo
 
 In the following example, the `exportDetailDataBound` event is used to modify the **OrderDate** column of the child Grid. By setting the column's [format](https://ej2.syncfusion.com/documentation/api/grid/column#format) property, the date values are formatted as `dd/MM/yyyy` when exported to PDF document.
 
-{% if page.publishingplatform == "typescript" %}
 
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/hierarchy-export-cs2/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/hierarchy-export-cs2/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/hierarchy-export-cs2" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -386,7 +256,7 @@ In the following example, the `exportDetailDataBound` event is used to modify th
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/hierarchy-export-cs2" %}
-{% endif %}
+
 
 ## Merge duplicate cells in a specific column before exporting
 
@@ -394,20 +264,7 @@ You can merge duplicate cells (based on their values) in a specific column of th
 
 Here’s an example demonstrating how to merge duplicate cells in the **OrderID** column in both Grid view and export:
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/custom-cellmerge-export-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/custom-cellmerge-export-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/custom-cellmerge-export-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -419,7 +276,7 @@ Here’s an example demonstrating how to merge duplicate cells in the **OrderID*
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/custom-cellmerge-export-cs1" %}
-{% endif %}
+
 
 ## Remove header row while exporting
 
@@ -429,20 +286,7 @@ To achieve this, you can utilize the [pdfHeaderQueryCellInfo](../../api/grid#pdf
 
 The following example demonstrates how to perform export without header using `pdfHeaderQueryCellInfo` event of the Grid.
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/grid-cs212/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/grid-cs212/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grid-cs212" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -454,7 +298,7 @@ The following example demonstrates how to perform export without header using `p
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grid-cs212" %}
-{% endif %}
+
 
 ## See Also
 
