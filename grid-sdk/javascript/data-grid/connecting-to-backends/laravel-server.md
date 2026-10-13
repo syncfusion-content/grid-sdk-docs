@@ -11,17 +11,17 @@ domainurl: https://help.syncfusion.com/grid-sdk
 
 # Connecting PHP Laravel data to Syncfusion Grid with PHP
 
-[Laravel](https://laravel.com/docs/12.x) is a modern PHP framework that provides a clean, elegant syntax and powerful features for building web applications. The Syncfusion JavaScript Grid component seamlessly integrates with the Laravel framework and MySQL Server, providing strong support for RESTful APIs. By combining Laravel’s robust backend with the Grid’s rich frontend features enables the creation of interactive, responsive data management interfaces with minimal custom code.
+[Laravel](https://laravel.com/docs/12.x) is a modern PHP framework that provides a clean, elegant syntax and powerful features for building web applications. The Syncfusion JavaScript Grid component seamlessly integrates with the Laravel framework and MySQL Server, providing strong support for RESTful APIs. By combining Laravelâ€™s robust backend with the Gridâ€™s rich frontend features enables the creation of interactive, responsive data management interfaces with minimal custom code.
 
 ## Why Integrate Laravel with Syncfusion Grid?
 
 - **Streamlined Data Connectivity**: Syncfusion Grid easily consumes RESTful API endpoints, enabling smooth communication with any backend service.
 
-- **Simplified Data Handling**: It provides built‑in support for CRUD operations, enabling records to be managed directly in the Grid without complex setup.
+- **Simplified Data Handling**: It provides builtâ€‘in support for CRUD operations, enabling records to be managed directly in the Grid without complex setup.
 
-- **Scalable Performance**: With server‑side processing for filtering, sorting, and paging, Syncfusion Grid ensures responsive performance even with large datasets.
+- **Scalable Performance**: With serverâ€‘side processing for filtering, sorting, and paging, Syncfusion Grid ensures responsive performance even with large datasets.
 
-- **Rich Feature Set**: Syncfusion Grid provides an extensive collection of advanced features such as grouping, exporting, column customization, and responsive layouts. These capabilities make it a versatile and scalable solution for enterprise‑grade data management.
+- **Rich Feature Set**: Syncfusion Grid provides an extensive collection of advanced features such as grouping, exporting, column customization, and responsive layouts. These capabilities make it a versatile and scalable solution for enterpriseâ€‘grade data management.
 
 ## Prerequisites
 
@@ -123,8 +123,8 @@ Generate a model with migration for managing student data:
 php artisan make:model Student -m
 ```
 This command creates two files:
-- **Model**: (**app/Models/Student.php**) — represents the students table and allows object‑oriented interaction with the database.
-- **Migration**: (**database/migrations/xxxx_xx_xx_create_students_table.php**) — a schema file used to define or modify database tables.
+- **Model**: (**app/Models/Student.php**) â€” represents the students table and allows objectâ€‘oriented interaction with the database.
+- **Migration**: (**database/migrations/xxxx_xx_xx_create_students_table.php**) â€” a schema file used to define or modify database tables.
 
 > The **xxxx_xx_xx** part is a timestamp automatically added by Laravel. It ensures migrations run in the correct order. Even though the name looks like a "version" this file is simply the first definition of the "students" table.
 
@@ -203,7 +203,7 @@ class Student extends Model
 
 **Key Details:**
 
-- The "$fillable" array specifies which fields can be mass‑assigned using methods like "create()" or "fill()".  
+- The "$fillable" array specifies which fields can be massâ€‘assigned using methods like "create()" or "fill()".  
 - The "$primaryKey" property tells Laravel that "StudentID" is the unique identifier for this model.  
 - The "$timestamps" property enables automatic tracking of the "created_at" and "updated_at" fields.  
 - The "$casts" property ensures timestamp fields are treated as proper datetime objects in PHP.  
@@ -212,7 +212,7 @@ class Student extends Model
 
 ### Step 5: Create a server controller
 
-Generate a controller by executing the following command. The controller will handle server‑side operations:
+Generate a controller by executing the following command. The controller will handle serverâ€‘side operations:
 
 ```bash
 php artisan make:controller ServerController
@@ -364,7 +364,7 @@ Run the seeder with the following command in the Visual Studio Code terminal or 
 php artisan migrate:fresh --seed
 ```
 
-This command executes the DatabaseSeeder, which populates the database with 1,000 dynamically generated student records. Each record contains a first name, last name, email, course, status, and campus assignment, and is assigned a unique auto‑incremented "StudentID".
+This command executes the DatabaseSeeder, which populates the database with 1,000 dynamically generated student records. Each record contains a first name, last name, email, course, status, and campus assignment, and is assigned a unique autoâ€‘incremented "StudentID".
 
 ## Integrating Syncfusion Grid with PHP and Laravel API
 
@@ -401,7 +401,7 @@ Create a new **Blade** file at (**resources/views/grid.blade.php**). This file w
 
 ### Step 2: Add Syncfusion references
 
-Include Syncfusion’s CSS and JavaScript libraries using CDN links:
+Include Syncfusionâ€™s CSS and JavaScript libraries using CDN links:
 
 ```html
 <!-- Syncfusion EJ2 CSS Theme (Material 3 Light) -->
@@ -417,7 +417,7 @@ In this example, the "Material 3" theme is applied. Other themes can be chosen o
 
 The Syncfusion [DataManager](https://ej2.syncfusion.com/javascript/documentation/data/overview) acts as the data layer and serves as a bridge between the Syncfusion Grid and the backend. Every action performed in the Grid such as fetching records, sorting, filtering, searching, paging, or performing CRUD (Create, Read, Update, Delete) operations is routed through the DataManager. It standardizes communication with remote services and ensures that queries are properly serialized before reaching the server.
 
-The [UrlAdaptor](https://ej2.syncfusion.com/javascript/documentation/data/adaptors#url-adaptor) is a built‑in adaptor specifically designed for custom RESTful APIs like Laravel. It defines the format of requests and the processing of responses. The UrlAdaptor converts Grid actions into HTTP `POST` requests and manages the JSON responses returned by the server, enabling the Grid to display and handle data seamlessly.
+The [UrlAdaptor](https://ej2.syncfusion.com/javascript/documentation/data/adaptors#url-adaptor) is a builtâ€‘in adaptor specifically designed for custom RESTful APIs like Laravel. It defines the format of requests and the processing of responses. The UrlAdaptor converts Grid actions into HTTP `POST` requests and manages the JSON responses returned by the server, enabling the Grid to display and handle data seamlessly.
 
 If the `UrlAdaptor` does not meet the requirements of a project, other adaptors can be used. For example, the `WebApiAdaptor` is available for scenarios where APIs follow different conventions.
 
@@ -492,7 +492,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 ### Step 5: Define web route
 
-In Laravel, routes are used to map incoming HTTP requests to specific views or controller actions. By default, all routes are defined inside the (**routes/web.php**) file for web‑based requests.
+In Laravel, routes are used to map incoming HTTP requests to specific views or controller actions. By default, all routes are defined inside the (**routes/web.php**) file for webâ€‘based requests.
 
 A simple route is defined to load the Grid view when the root URL (/) of the application is visited.
 
@@ -682,7 +682,7 @@ During the search action, `UrlAdaptor` sends the search text along with the targ
 
 **Client-to-server communication:**
 - The Grid sends a `POST` request to `/api/read` with a "search" parameter that includes the search term and target fields.
-- Both case‑insensitive and case‑sensitive searches are supported.
+- Both caseâ€‘insensitive and caseâ€‘sensitive searches are supported.
 - The matching results are returned to the Grid in JSON format containing the "result" records and the "count" of total available records.
 
 ```php
@@ -856,7 +856,7 @@ The "insert" method handles creating new student records. When the "Add" button 
 **Client-to-server communication:**
 
 - The Grid sends a `POST` request to `/api/insert` with new record data in the value property.
-- The ServerController’s insert method receives and validates the data.
+- The ServerControllerâ€™s insert method receives and validates the data.
 - Required fields are checked (for example, "FirstName" is mandatory).
 - A new student record is created using Eloquent ORM.
 - The server returns the created record along with the generated ID.
@@ -894,9 +894,9 @@ The "update" method handles modifying existing student records. When a record is
 **Client-to-server communication:**
 
 - The Grid sends a `POST` request to `/api/update` with modified record data in the value property.
-- The ServerController’s update method receives the request.
+- The ServerControllerâ€™s update method receives the request.
 - The "StudentID" is extracted as the primary key to identify the record.
-- The record is located using Eloquent’s "where()" method.
+- The record is located using Eloquentâ€™s "where()" method.
 - All changed fields are updated using "fill()" and "save()".
 - The updated record is returned to refresh the Grid display.
 
@@ -939,7 +939,7 @@ The "remove" method handles deleting student records from the database. When a r
 
 **Client-to-server communication:**
 - The Grid sends a `POST` request to `/api/remove` with the primary key (StudentID).
-- The ServerController’s remove method receives the request.
+- The ServerControllerâ€™s remove method receives the request.
 - The "StudentID" is extracted from the request parameters.
 - The corresponding record is located and deleted from the database.
 - A confirmation response is returned to the client.
@@ -993,11 +993,11 @@ The repository contains the complete Laravel backend implementation with all Ser
 | **GridDataManager is not defined / Grid not displaying data** | Ensure Syncfusion CDN links are added correctly in HTML and URLs are accessible. |
 | **403 Forbidden error when submitting form** | CSRF token missing. Add `{{ csrf_field() }}` in forms under (**routes/web.php** )(not API routes). |
 | **419 error or 'Page Expired' when Grid performs CRUD** | Do not add CSRF tokens to API routes. Verify API endpoints are in **routes/api.php**, remove CSRF headers from `DataManager`, and ensure `/api/` prefix is used. |
-| **Grid shows data but filtering/sorting doesn’t work** | Confirm API endpoints (`/api/read`, `/api/insert`, `/api/update`, `/api/remove`) exist in **routes/api.php** and ServerController methods are implemented. |
+| **Grid shows data but filtering/sorting doesnâ€™t work** | Confirm API endpoints (`/api/read`, `/api/insert`, `/api/update`, `/api/remove`) exist in **routes/api.php** and ServerController methods are implemented. |
 | **Port 8000 is already in use** | Run Laravel on another port: <br>`php artisan serve --port=8001`. |
 | **CORS error: No 'Access-Control-Allow-Origin' header** | Install `fruitcake/laravel-cors`, register `HandleCors` middleware in `app/Http/Kernel.php`, and configure `config/cors.php` with allowed origins. |
 | **Mass assignment exception** | Add missing fields to `$fillable` in Student model: `protected $fillable = ['FirstName','LastName','Email','Course','Status','Campus'];`. |
-| **Edit/Delete buttons don’t work; 'Editing failed'** | Ensure StudentID consistency: migration uses `$table->id('StudentID')`, Grid column defines `{ field: 'StudentID', isPrimaryKey: true }`, seeder doesn’t set StudentID manually, and controller methods use `where('StudentID', $studentId)`. |
+| **Edit/Delete buttons donâ€™t work; 'Editing failed'** | Ensure StudentID consistency: migration uses `$table->id('StudentID')`, Grid column defines `{ field: 'StudentID', isPrimaryKey: true }`, seeder doesnâ€™t set StudentID manually, and controller methods use `where('StudentID', $studentId)`. |
 | **Grid loads but 404 error on CRUD** | Verify **routes/api.php** contains:<br> `Route::post('/read', ...); Route::post('/insert', ...); Route::post('/update', ...); Route::post('/remove', ...);`. |
 | **Filtering/Sorting/Paging shows no results or 500 error** | Return response with both `result` array and `count` property: <br> `return response()->json(['result' => $records, 'count' => $total]);`|
 

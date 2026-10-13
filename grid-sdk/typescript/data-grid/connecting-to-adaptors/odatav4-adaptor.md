@@ -619,7 +619,7 @@ grid.appendTo('#Grid');
 
 {% endtabs %}
 
-> Normal/Inline editing is the default edit [mode](../../api/grid/editSettings#mode) for the Grid control. To enable CRUD operations, ensure that the [isPrimaryKey](../../api/grid/column#isprimarykey) property is set to **true** for a specific Grid column, ensuring that its value is unique.
+> Normal/Inline editing is the default edit [mode](https://ej2.syncfusion.com/documentation/api/grid/editSettings#mode) for the Grid control. To enable CRUD operations, ensure that the [isPrimaryKey](https://ej2.syncfusion.com/documentation/api/grid/column#isprimarykey) property is set to **true** for a specific Grid column, ensuring that its value is unique.
 
 **Insert Record**
 

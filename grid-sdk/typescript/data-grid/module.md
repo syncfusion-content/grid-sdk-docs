@@ -16,32 +16,32 @@ The available Grid modules are:
 
 | Feature | Module | Description |
 |---------|--------|-------------|
-| [Page](../api/grid/page) | `Page` | Inject this module to use paging feature. |
-| [Sort](../api/grid/sort) | `Sort` | Inject this module to use sorting feature. |
-| [Filter](../api/grid/filter) | `Filter` | Inject this module to use filtering feature. |
-| [AdvancedFilter](../api/grid/advancedfilter)| Inject this module to use advanced filtering feature. |
-| [Group](../api/grid/group) | `Group` | Inject this module to use grouping feature. |
-| [LazyLoadGroup](../api/grid/lazyLoadGroup) | `LazyLoadGroup` | Inject this module to use lazy load grouping feature. |
-| [Edit](../api/grid/edit) | `Edit` | Inject this module to use editing feature. |
-| [Formula](../api/grid/formula) | `Formula` | Inject this module to use formula feature. |
-| [Aggregate](../api/grid/aggregate) | `Aggregate` | Inject this module to use aggregate feature. |
-| [ColumnChooser](../api/grid/columnChooser) | `ColumnChooser` | Inject this module to use column chooser feature. |
-| [ColumnMenu](../api/grid/columnmenumodule) | `ColumnMenu` | Inject this module to use column menu feature. |
-| [CommandColumn](../api/grid/commandColumn) | `CommandColumn` | Inject this module to use command column feature. |
-| [ContextMenu](../api/grid/contextMenu) | `ContextMenu` | Inject this module to use context menu feature. |
-| [DetailRow](../api/grid/detailRow) | `DetailRow` | Inject this module to use detail template feature. |
-| [ForeignKey](../api/grid/foreignkey) | `ForeignKey` | Inject this module to use foreign key feature. |
-| [Freeze](../api/grid/freeze) | `Freeze` | Inject this module to use frozen rows and columns feature. |
-| [Resize](../api/grid/resize) | `Resize` | Inject this module to use resize feature. |
-| [Reorder](../api/grid/reorder) | `Reorder` | Inject this module to use reorder feature. |
-| [RowDD](../api/grid/rowdd) | `RowDD` | Inject this module to use row drag and drop feature. |
-| [Search](../api/grid/search) | `Search` | Inject this module to use search feature and this is a default injected module. |
-| [Selection](../api/grid/selection) | `Selection` | Inject this module to use selection feature and this is a default injected module. |
-| [VirtualScroll](../api/grid/virtualscroll) | `VirtualScroll` | Inject this module to use virtual scrolling feature. |
-| [InfiniteScroll](../api/grid/infinitescroll) | `InfiniteScroll` | Inject this module to use infinite scrolling feature. |
-| [Toolbar](../api/grid/toolbarmodule) | `Toolbar` | Inject this module to use toolbar feature. |
-| [ExcelExport](../api/grid/excelexportmodule) | `ExcelExport` | Inject this module to use excel export feature. |
-| [PdfExport](../api/grid/pdfexportmodule) | `PdfExport` | Inject this module to use PDF export feature. |
+| [Page](https://ej2.syncfusion.com/documentation/api/grid/page) | `Page` | Inject this module to use paging feature. |
+| [Sort](https://ej2.syncfusion.com/documentation/api/grid/sort) | `Sort` | Inject this module to use sorting feature. |
+| [Filter](https://ej2.syncfusion.com/documentation/api/grid/filter) | `Filter` | Inject this module to use filtering feature. |
+| [AdvancedFilter](https://ej2.syncfusion.com/documentation/api/grid/advancedfilter)| Inject this module to use advanced filtering feature. |
+| [Group](https://ej2.syncfusion.com/documentation/api/grid/group) | `Group` | Inject this module to use grouping feature. |
+| [LazyLoadGroup](https://ej2.syncfusion.com/documentation/api/grid/lazyLoadGroup) | `LazyLoadGroup` | Inject this module to use lazy load grouping feature. |
+| [Edit](https://ej2.syncfusion.com/documentation/api/grid/edit) | `Edit` | Inject this module to use editing feature. |
+| [Formula](https://ej2.syncfusion.com/documentation/api/grid/formula) | `Formula` | Inject this module to use formula feature. |
+| [Aggregate](https://ej2.syncfusion.com/documentation/api/grid/aggregate) | `Aggregate` | Inject this module to use aggregate feature. |
+| [ColumnChooser](https://ej2.syncfusion.com/documentation/api/grid/columnChooser) | `ColumnChooser` | Inject this module to use column chooser feature. |
+| [ColumnMenu](https://ej2.syncfusion.com/documentation/api/grid/columnmenumodule) | `ColumnMenu` | Inject this module to use column menu feature. |
+| [CommandColumn](https://ej2.syncfusion.com/documentation/api/grid/commandColumn) | `CommandColumn` | Inject this module to use command column feature. |
+| [ContextMenu](https://ej2.syncfusion.com/documentation/api/grid/contextMenu) | `ContextMenu` | Inject this module to use context menu feature. |
+| [DetailRow](https://ej2.syncfusion.com/documentation/api/grid/detailRow) | `DetailRow` | Inject this module to use detail template feature. |
+| [ForeignKey](https://ej2.syncfusion.com/documentation/api/grid/foreignkey) | `ForeignKey` | Inject this module to use foreign key feature. |
+| [Freeze](https://ej2.syncfusion.com/documentation/api/grid/freeze) | `Freeze` | Inject this module to use frozen rows and columns feature. |
+| [Resize](https://ej2.syncfusion.com/documentation/api/grid/resize) | `Resize` | Inject this module to use resize feature. |
+| [Reorder](https://ej2.syncfusion.com/documentation/api/grid/reorder) | `Reorder` | Inject this module to use reorder feature. |
+| [RowDD](https://ej2.syncfusion.com/documentation/api/grid/rowdd) | `RowDD` | Inject this module to use row drag and drop feature. |
+| [Search](https://ej2.syncfusion.com/documentation/api/grid/search) | `Search` | Inject this module to use search feature and this is a default injected module. |
+| [Selection](https://ej2.syncfusion.com/documentation/api/grid/selection) | `Selection` | Inject this module to use selection feature and this is a default injected module. |
+| [VirtualScroll](https://ej2.syncfusion.com/documentation/api/grid/virtualscroll) | `VirtualScroll` | Inject this module to use virtual scrolling feature. |
+| [InfiniteScroll](https://ej2.syncfusion.com/documentation/api/grid/infinitescroll) | `InfiniteScroll` | Inject this module to use infinite scrolling feature. |
+| [Toolbar](https://ej2.syncfusion.com/documentation/api/grid/toolbarmodule) | `Toolbar` | Inject this module to use toolbar feature. |
+| [ExcelExport](https://ej2.syncfusion.com/documentation/api/grid/excelexportmodule) | `ExcelExport` | Inject this module to use excel export feature. |
+| [PdfExport](https://ej2.syncfusion.com/documentation/api/grid/pdfexportmodule) | `PdfExport` | Inject this module to use PDF export feature. |
 
 ## Enabling basic features
 

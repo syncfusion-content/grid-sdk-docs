@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Formula Editor in JavaScript Grid control | Syncfusion
 description: Learn here all about formula editor in Syncfusion JavaScript Grid control of Syncfusion Essential JS 2 and more.
@@ -15,7 +15,7 @@ The formula editor is used for editing values in formula-enabled columns. Openin
 
 ## Enabling default editor
 
-To enable formula editing, register the `EditModule`, set [editSettings.allowEditing](../../api/grid/editsettingsmodel#allowediting) to `true`, enable formulas through set [allowFormula](../../api/grid/column#allowformula) to `true` for the required columns.
+To enable formula editing, register the `EditModule`, set [editSettings.allowEditing](https://ej2.syncfusion.com/javascript/documentation/api/grid/editsettingsmodel#allowediting) to `true`, enable formulas through set [allowFormula](https://ej2.syncfusion.com/javascript/documentation/api/grid/column#allowformula) to `true` for the required columns.
 
 The default editor is automatically available for formula-enabled columns in an editable grid. Opening a formula-enabled cell for editing displays the formula expression in column-letter and row-number notation, such as **=D1*E1**.
 

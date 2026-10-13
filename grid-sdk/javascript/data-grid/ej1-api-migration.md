@@ -4,7 +4,6 @@ title: Ej1 api migration in JavaScript Grid control | Syncfusion
 description: Learn here all about Ej1 api migration in Syncfusion JavaScript Grid control of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Ej1 api migration 
-publishingplatform: grid-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
@@ -28,7 +27,7 @@ This article describes the API migration process of Grid component from Essentia
 |Behavior | API in Essential<sup style="font-size:70%">&reg;</sup> JS 1 | API in Essential<sup style="font-size:70%">&reg;</sup> JS 2 |
 |--------- | ----------- | ----------- |
 |Default | **Property:** *allowGrouping* <br><br> `$("#Grid").ejGrid({` <br>&nbsp; `allowGrouping: true` <br> `});`| **Property:** *allowGrouping* <br><br>`var gridObj = new ej.grids.Grid({`<br>&nbsp;`allowGrouping: true` <br>`});`<br>`gridObj.appendTo('#Grid');` |
-|   Group Columns initially      | **Property:** *groupSettings.groupedColumns* <br><br> `$("#Grid").ejGrid({`<br>&nbsp;&nbsp;`allowGrouping: true,`<br>&nbsp; `groupSettings: {`<br>  &nbsp;&nbsp;`groupedColumns:[“OrderID”, “CustomerID”]`<br>&nbsp;&nbsp; `}`<br>`});` | **Property:** *groupSettings.columns* <br><br> `var gridObj = new ej.grids.Grid({`<br>&nbsp;`allowGrouping: true,`<br>&nbsp;`groupSettings: {`<br>&nbsp;`columns: [“OrderID”, “CustomerID”]`<br>&nbsp;&nbsp;`}`<br>`});`<br>`gridObj.appendTo('#Grid');`
+|   Group Columns initially      | **Property:** *groupSettings.groupedColumns* <br><br> `$("#Grid").ejGrid({`<br>&nbsp;&nbsp;`allowGrouping: true,`<br>&nbsp; `groupSettings: {`<br>  &nbsp;&nbsp;`groupedColumns:[â€œOrderIDâ€, â€œCustomerIDâ€]`<br>&nbsp;&nbsp; `}`<br>`});` | **Property:** *groupSettings.columns* <br><br> `var gridObj = new ej.grids.Grid({`<br>&nbsp;`allowGrouping: true,`<br>&nbsp;`groupSettings: {`<br>&nbsp;`columns: [â€œOrderIDâ€, â€œCustomerIDâ€]`<br>&nbsp;&nbsp;`}`<br>`});`<br>`gridObj.appendTo('#Grid');`
 |   Caption Template           | **Property:** *groupSettings.captionFormat* <br><br> `$("#Grid").ejGrid({`<br>&nbsp;&nbsp;`allowGrouping: true,`<br>&nbsp; `groupSettings: {`<br>  &nbsp;&nbsp;`captionFormat: "#template"`<br>&nbsp;&nbsp; `}`<br>`});` | **Property:** *groupSettings.captionTemplate* <br><br> `var gridObj = new ej.grids.Grid({`<br>&nbsp;`allowGrouping: true,`<br>&nbsp;`groupSettings: {`<br>&nbsp;`captionTemplate: '#template'`<br>&nbsp;&nbsp;`}`<br>`});`<br>`gridObj.appendTo('#Grid');`
 | Show Drop Area | **Property:** *groupSettings.showDropArea* <br><br> `$("#Grid").ejGrid({`<br>&nbsp;&nbsp;`allowGrouping: true,`<br>&nbsp; `groupSettings: {`<br>  &nbsp;&nbsp;`showDropArea: false`<br>&nbsp;&nbsp; `}`<br>`});` | **Property:** *groupSettings.showDropArea* <br><br> `var gridObj = new ej.grids.Grid({`<br>&nbsp;`allowGrouping: true,`<br>&nbsp;`groupSettings: {`<br>&nbsp;`showDropArea: false`<br>&nbsp;&nbsp;`}`<br>`});`<br>`gridObj.appendTo('#Grid');`
 |Collapse all group caption rows | **Method:** *collapseAll()* <br><br> `var gridObj = $("#Grid").data("ejGrid");` <br> `gridObj.collapseAll();`| **Method:** *collapseAll()* <br><br> `var gridObj = document.getElementById('Grid')`<br>`.ej2_instances[0]` <br> `gridObj.groupModule.collapseAll()`

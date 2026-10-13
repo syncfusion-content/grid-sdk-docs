@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: JavaScript Grid Bind Data with GraphQLAdaptor | Syncfusion
 description: Learn here all about how to bind data and perform CRUD action using GraphQLAdaptor in Syncfusion JavaScript Grid control.
@@ -792,7 +792,7 @@ Deleting a record from the database involves the following steps:
   ```
   
 
-> Normal/Inline editing is the default edit [mode](../../api/grid/editSettings#mode) for the Grid control. To enable CRUD operations, ensure that the [isPrimaryKey](../../api/grid/column#isprimarykey) property is set to **true** for a specific grid column, ensuring that its value is unique.
+> Normal/Inline editing is the default edit [mode](https://ej2.syncfusion.com/javascript/documentation/api/grid/editSettings#mode) for the Grid control. To enable CRUD operations, ensure that the [isPrimaryKey](https://ej2.syncfusion.com/javascript/documentation/api/grid/column#isprimarykey) property is set to **true** for a specific grid column, ensuring that its value is unique.
 
 {% tabs %}
 {% highlight js tabtitle="resolver.js" %}

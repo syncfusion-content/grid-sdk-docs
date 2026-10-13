@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Aggregates in JavaScript Grid control | Syncfusion
 description: Learn here all about Aggregates in Syncfusion JavaScript Grid control of Syncfusion Essential JS 2 and more.
@@ -10,7 +10,7 @@ domainurl: https://help.syncfusion.com/grid-sdk
 
 # Aggregates in JavaScript Grid control
 
-The Aggregates feature in the JavaScript Grid control allows you to display aggregate values in the footer, group footer, and group caption of the grid. With this feature, you can easily perform calculations on specific columns and show summary information. This feature can be configured using the `aggregates` property. To represent an aggregate column, you need to specify the minimum required properties, such as [field](../../api/grid/aggregateColumn#field) and [type](../../api/grid/aggregateColumn#type).
+The Aggregates feature in the JavaScript Grid control allows you to display aggregate values in the footer, group footer, and group caption of the grid. With this feature, you can easily perform calculations on specific columns and show summary information. This feature can be configured using the `aggregates` property. To represent an aggregate column, you need to specify the minimum required properties, such as [field](https://ej2.syncfusion.com/javascript/documentation/api/grid/aggregateColumn#field) and [type](https://ej2.syncfusion.com/javascript/documentation/api/grid/aggregateColumn#type).
 
 To use aggregate feature, you need to inject the `Aggregate` module.
 
@@ -18,11 +18,11 @@ To use aggregate feature, you need to inject the `Aggregate` module.
 
 By default, the aggregate values are displayed in the footer, group, and caption cells of the grid. However, you can choose to display the aggregate value in any of these cells by using the following properties:
 
-* **[footerTemplate](../../api/grid/aggregateColumn#footertemplate):** Use this property to display the aggregate value in the footer cell. You can define a custom template to format the aggregate value as per your requirements.
+* **[footerTemplate](https://ej2.syncfusion.com/javascript/documentation/api/grid/aggregateColumn#footertemplate):** Use this property to display the aggregate value in the footer cell. You can define a custom template to format the aggregate value as per your requirements.
 
-* **[groupFooterTemplate](../../api/grid/aggregateColumn#groupfootertemplate):** Use this property to display the aggregate value in the group footer cell. Similar to the footerTemplate, you can provide a custom template to format the aggregate value.
+* **[groupFooterTemplate](https://ej2.syncfusion.com/javascript/documentation/api/grid/aggregateColumn#groupfootertemplate):** Use this property to display the aggregate value in the group footer cell. Similar to the footerTemplate, you can provide a custom template to format the aggregate value.
 
-* **[groupCaptionTemplate](../../api/grid/aggregateColumn#groupcaptiontemplate):** Use this property to display the aggregate value in the group caption cell. You can define a custom template to format the aggregate value.
+* **[groupCaptionTemplate](https://ej2.syncfusion.com/javascript/documentation/api/grid/aggregateColumn#groupcaptiontemplate):** Use this property to display the aggregate value in the group caption cell. You can define a custom template to format the aggregate value.
 
 
 
@@ -44,7 +44,7 @@ By default, the aggregate values are displayed in the footer, group, and caption
 
 ## Built-in aggregate types
 
-The JavaScript Grid control provides several built-in aggregate types that can be specified in the [type](../../api/grid/aggregateColumn#type) property to configure an aggregate column.
+The JavaScript Grid control provides several built-in aggregate types that can be specified in the [type](https://ej2.syncfusion.com/javascript/documentation/api/grid/aggregateColumn#type) property to configure an aggregate column.
 
 The available built-in aggregate types are:
 
@@ -78,7 +78,7 @@ Multiple aggregates for a column allows you to calculate and display different s
 
 However, in scenarios where you need to display multiple summary values for the same column, multiple aggregates come into play. This feature enables you to calculate and display various aggregate values, such as sum, average, minimum, maximum, or custom calculations, concurrently for a specific column.
 
-You can use multiple aggregates for a single column in the JavaScript Grid by specifying the aggregate [type](../../api/grid/aggregateColumn#type) as an array.
+You can use multiple aggregates for a single column in the JavaScript Grid by specifying the aggregate [type](https://ej2.syncfusion.com/javascript/documentation/api/grid/aggregateColumn#type) as an array.
 
 Here's an example of how to use multiple aggregates in the JavaScript Grid:
 

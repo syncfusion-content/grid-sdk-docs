@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Column spanning in JavaScript Grid control | Syncfusion
 description: Learn here all about Column spanning in Syncfusion JavaScript Grid control of Syncfusion Essential JS 2 and more.
@@ -10,7 +10,7 @@ domainurl: https://help.syncfusion.com/grid-sdk
 
 # Column spanning in JavaScript Grid control
 
-The column spanning feature in the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid allows you to merge adjacent cells horizontally, creating a visually appealing and informative layout. By defining the [colSpan](../../api/grid/queryCellInfoEventArgs#colspan) attribute in the [queryCellInfo](../../api/grid/queryCellInfoEventArgs) event, you can easily span cells and customize the appearance of the grid.
+The column spanning feature in the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid allows you to merge adjacent cells horizontally, creating a visually appealing and informative layout. By defining the [colSpan](https://ej2.syncfusion.com/javascript/documentation/api/grid/queryCellInfoEventArgs#colspan) attribute in the [queryCellInfo](https://ej2.syncfusion.com/javascript/documentation/api/grid/queryCellInfoEventArgs) event, you can easily span cells and customize the appearance of the grid.
 
 In the following demo, Employee **Davolio** doing analysis from 9.00 AM to 10.00 AM, so that cells have spanned.
 
@@ -30,7 +30,7 @@ In the following demo, Employee **Davolio** doing analysis from 9.00 AM to 10.00
 
 ## Change the border color while column spanning
 
-You can change the border color for the spanned cells by the using [queryCellInfo](../../api/grid#querycellinfo) event. This event triggers before the cell element is appended to the Grid element.
+You can change the border color for the spanned cells by the using [queryCellInfo](https://ej2.syncfusion.com/javascript/documentation/api/grid#querycellinfo) event. This event triggers before the cell element is appended to the Grid element.
 
 
 
@@ -48,7 +48,7 @@ You can change the border color for the spanned cells by the using [queryCellInf
 
 ## Limitations
 
-* The [updateCell](../../api/grid#updatecell) method does not support column spanning.
+* The [updateCell](https://ej2.syncfusion.com/javascript/documentation/api/grid#updatecell) method does not support column spanning.
 * Column spanning is not compatible with the following features:
     1. Virtual scrolling
     2. Infinite scrolling
@@ -59,7 +59,7 @@ You can change the border color for the spanned cells by the using [queryCellInf
 
 The Syncfusion Grid introduces a simplified approach to horizontally merge cells using the `enableColumnSpan` property. 
 
-When the `enableColumnSpan` property is enabled, the Grid automatically merges cells with matching data across adjacent columns without requiring manual span configuration using the [queryCellInfo](../../api/grid#querycellinfo) event. These merged cells are visually combined into a single cell, improving readability.
+When the `enableColumnSpan` property is enabled, the Grid automatically merges cells with matching data across adjacent columns without requiring manual span configuration using the [queryCellInfo](https://ej2.syncfusion.com/javascript/documentation/api/grid#querycellinfo) event. These merged cells are visually combined into a single cell, improving readability.
 
 Here is an example of how to use the `enableColumnSpan` property to merge cells horizontally:
 

@@ -14,7 +14,7 @@ In TypeScript, lazy loading refers to the technique of loading data dynamically 
 
 Lazy load grouping in Syncfusion<sup style="font-size:70%">&reg;</sup> Grid allows you to load and display grouped data efficiently by fetching only the required data on demand. This feature is useful when dealing with large datasets where loading all the data at once might affect performance. The Grid will render only the initial level caption rows in the collapsed state at grouping. The child rows of each caption will be fetched in on demand and render in the Grid when you expand the caption row.
 
-To enable this feature, need to set the [groupSettings->enableLazyLoading](../../api/grid/groupSettings/#enableLazyLoading) property to **true**.
+To enable this feature, need to set the [groupSettings->enableLazyLoading](https://ej2.syncfusion.com/documentation/api/grid/groupSettings/#enableLazyLoading) property to **true**.
 
 The following example demonstrates how to enable the lazy load grouping feature by setting `groupSettings.enableLazyLoading` property.
 
@@ -112,7 +112,7 @@ Lazy loading grouping with infinite scrolling is a valuable feature in scenarios
 
 3. Infinite scrolling enables the Grid to load additional data as the user scrolls to the end of the scrollbar.
 
-To enable this feature, you need to set the [groupSettings->enableLazyLoading](../../api/grid/groupSettings/#enableLazyLoading) and [enableInfiniteScrolling](../../api/grid/#enableinfinitescrolling) properties to **true**.
+To enable this feature, you need to set the [groupSettings->enableLazyLoading](https://ej2.syncfusion.com/documentation/api/grid/groupSettings/#enableLazyLoading) and [enableInfiniteScrolling](https://ej2.syncfusion.com/documentation/api/grid#enableinfinitescrolling) properties to **true**.
 
 The following example demonstrates how to enable the lazy load grouping with infinite scrolling feature using the `groupSettings.enableLazyLoading` and `enableInfiniteScrolling` properties.
 
@@ -131,8 +131,8 @@ The following example demonstrates how to enable the lazy load grouping with inf
 
 
 
-> * The [enableInfiniteScrolling](../../api/grid/#enableinfinitescrolling) property is optional and can be set to **true** or **false** based on the requirement.
-> * When enabling the `enableInfiniteScrolling` feature, it is necessary to define the [height](../../api/grid/#height) property.
+> * The [enableInfiniteScrolling](https://ej2.syncfusion.com/documentation/api/grid#enableinfinitescrolling) property is optional and can be set to **true** or **false** based on the requirement.
+> * When enabling the `enableInfiniteScrolling` feature, it is necessary to define the [height](https://ej2.syncfusion.com/documentation/api/grid#height) property.
 
 ## Lazy load grouping with virtual scrolling
 
@@ -146,7 +146,7 @@ The lazy load grouping with virtual scrolling feature in the TypeScript Grid all
 
 3. Virtual scrolling allows the Grid to load and display a buffered set of records while scrolling vertically.
 
-To enable this feature, you need to set the [groupSettings->enableLazyLoading](../../api/grid/groupSettings/#enableLazyLoading) and [enableVirtualization](../../api/grid/#enablevirtualization) properties to **true**.
+To enable this feature, you need to set the [groupSettings->enableLazyLoading](https://ej2.syncfusion.com/documentation/api/grid/groupSettings/#enableLazyLoading) and [enableVirtualization](https://ej2.syncfusion.com/documentation/api/grid#enablevirtualization) properties to **true**.
 
 The following example demonstrates how to enable the lazy load grouping with virtual scrolling feature using the `groupSettings.enableLazyLoading` and `enableVirtualization` properties.
 

@@ -14,7 +14,7 @@ Validation is a crucial aspect of data integrity in any application. The TypeScr
 
 ## Column validation
 
-Column validation allows you to validate the edited or added row data before saving it. This feature is particularly useful when you need to enforce specific rules or constraints on individual columns to ensure data integrity. By applying validation rules to columns, you can display error messages for invalid fields and prevent the saving of erroneous data. This feature leverages the **Form Validator** control to perform the validation. You can define validation rules using the [columns.validationRules](../../api/grid/column#validationrules) property to specify the criteria for validating column values.
+Column validation allows you to validate the edited or added row data before saving it. This feature is particularly useful when you need to enforce specific rules or constraints on individual columns to ensure data integrity. By applying validation rules to columns, you can display error messages for invalid fields and prevent the saving of erroneous data. This feature leverages the **Form Validator** control to perform the validation. You can define validation rules using the [columns.validationRules](https://ej2.syncfusion.com/documentation/api/grid/column#validationrules) property to specify the criteria for validating column values.
 
 The following code example demonstrates how to define a validation rule for grid column:
 
@@ -148,7 +148,7 @@ Here's an example that demonstrates how to change the position of the validation
 
 While performing CRUD actions in the Syncfusion TypeScript Grid, errors may occur due to various reasons such as validation failures, network issues, or server-side exceptions. Handling these errors effectively is essential for providing meaningful error messages when an operation fails.
 
-To achieve this, you can use the [actionFailure](../../api/grid#actionfailure) event. This event is triggered when an action (like update, delete, or insert) fails, allowing you to retrieve the error message from the server response and display it in the UI.  
+To achieve this, you can use the [actionFailure](https://ej2.syncfusion.com/documentation/api/grid#actionfailure) event. This event is triggered when an action (like update, delete, or insert) fails, allowing you to retrieve the error message from the server response and display it in the UI.  
 
 The following sample demonstrates how to retrieve and display error messages in the Syncfusion TypeScript Grid:
 
@@ -482,11 +482,11 @@ The Syncfusion TypeScript Grid allows you to enforce constraints to prevent dupl
 
 To prevent adding duplicate rows in the Grid, follow these steps:
 
-1. Implement Custom Validation: Define the `orderIdCustomValidation` function to check whether the entered **OrderID** already exists in the [dataSource](../../api/grid#datasource). This allows editing an existing row without triggering a duplicate error.
+1. Implement Custom Validation: Define the `orderIdCustomValidation` function to check whether the entered **OrderID** already exists in the [dataSource](https://ej2.syncfusion.com/documentation/api/grid#datasource). This allows editing an existing row without triggering a duplicate error.
 
 2. Add Dynamic Validation Rules: Create the `orderIDRules` object to enforce unique **OrderID** values. Dynamically add this rule to the form during the **save** action.
 
-3. Handle Validation in the [actionBegin](../../api/grid#actionbegin) event: In the `actionBegin` event, check if the **requestType** is **save**. Apply the validation rule before saving and cancel the action `args.cancel = true` if the validation fails.
+3. Handle Validation in the [actionBegin](https://ej2.syncfusion.com/documentation/api/grid#actionbegin) event: In the `actionBegin` event, check if the **requestType** is **save**. Apply the validation rule before saving and cancel the action `args.cancel = true` if the validation fails.
 
 For server-side validation to prevent adding duplicate rows, you can refer to the detailed guidance provided in our [knowledge base](https://support.syncfusion.com/kb/article/11608/how-to-do-server-side-validation-for-grid-in-asp-net-mvc-application). If you want to display the Grid's validation tooltip instead of the alert used in our knowledge base, you can call the `grid.editModule.formObj.validate()` method in the `Ajax/Fetch` success function to display the Grid's tooltip validation for the server side.
 

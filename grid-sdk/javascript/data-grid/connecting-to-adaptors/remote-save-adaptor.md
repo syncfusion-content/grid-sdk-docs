@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: JavaScript Grid Bind Data with RemoteSaveAdaptor | Syncfusion
 description: Learn here all about how to bind data and perform CRUD action using RemoteSaveAdaptor in Syncfusion JavaScript Grid control.

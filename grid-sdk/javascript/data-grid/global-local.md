@@ -1,10 +1,9 @@
-﻿---
+---
 layout: post
 title: Global local in JavaScript Grid control | Syncfusion
 description: Learn here all about Global local in Syncfusion JavaScript Grid control of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Global local 
-publishingplatform: grid-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
@@ -17,7 +16,7 @@ The JavaScript Grid control provides a feature known as Globalization (global an
 
 The JavaScript Grid provides a built-in [Localization](../common/localization) library, enabling you to customize the text used in the grid to suit different languages or cultural preferences. With this library, you can change static text on various elements, such as **group drop area text** and **pager information text**, to different cultures, such as **Arabic**, **Deutsch**, **French**, and more.
 
-This can be achieved by defining the [locale](../api/grid#locale) property and translation object.
+This can be achieved by defining the [locale](https://ej2.syncfusion.com/javascript/documentation/api/grid#locale) property and translation object.
 
 The following list of properties and its values are used in the grid.
 
@@ -233,7 +232,7 @@ The JavaScript Grid control provides a built-in Localization library that allows
 
 This feature allows you to specify translation objects for specific cultures, such as **Deutsch** (German), and display the Grid's content in the desired language.
 
-The following example demonstrates how to load a translation object for **Deutsch (de)** culture, by using the **load** function of **L10n** class from the **ej2-base** module and by defining the [locale](../api/grid#locale) to **de-DE**.
+The following example demonstrates how to load a translation object for **Deutsch (de)** culture, by using the **load** function of **L10n** class from the **ej2-base** module and by defining the [locale](https://ej2.syncfusion.com/javascript/documentation/api/grid#locale) to **de-DE**.
 
 
 
@@ -253,7 +252,7 @@ The following example demonstrates how to load a translation object for **Deutsc
 
 The Loading translations feature allows you to specify translation objects for different cultures, such as **Deutsch**, **Arabic**, **French** and display the Grid's content in the desired language.
 
-The following example demonstrates how to load a translation object for **French (fr)** culture, by defining the [locale](../api/grid#locale) to **fr-FR** and by using the **load** function of **L10n** class from the **ej2-base** module.
+The following example demonstrates how to load a translation object for **French (fr)** culture, by defining the [locale](https://ej2.syncfusion.com/javascript/documentation/api/grid#locale) to **fr-FR** and by using the **load** function of **L10n** class from the **ej2-base** module.
 
 
 
@@ -332,7 +331,7 @@ For example, when the first Grid is set to use the **fr-FR** Locale, it applies 
 
 The Internationalization library in the JavaScript Grid provides a localized display of number, date, and time values in the Grid control based on the preferred language and region.
 
-[Internationalization](../common/internationalization) library allows you to globalize number, date, and time values using format strings defined in the [columns.format](../api/grid/column#format) property.
+[Internationalization](../common/internationalization) library allows you to globalize number, date, and time values using format strings defined in the [columns.format](https://ej2.syncfusion.com/javascript/documentation/api/grid/column#format) property.
 
 You need to load the culture format files corresponding to the desired locale. This ensures that the Grid control uses the correct format strings for number, date, and time values based on the selected culture. This can be demonstrated in the below example,
 
@@ -351,17 +350,17 @@ You need to load the culture format files corresponding to the desired locale. T
 
 
 > * In the above sample, **Freight** column is formatted using the [NumberFormatOptions](../common/internationalization#manipulating-numbers).
-> * By default, [locale](../api/grid#locale) value is **en-US**. If you wish to change the culture to something other than **en-US**, you can simply set the `locale` property accordingly.
+> * By default, [locale](https://ej2.syncfusion.com/javascript/documentation/api/grid#locale) value is **en-US**. If you wish to change the culture to something other than **en-US**, you can simply set the `locale` property accordingly.
 
 ## Right to Left - RTL
 
 The Right to Left (RTL) feature in the JavaScript Grid allows you to switch the text direction and layout from left-to-right to right-to-left. This feature is especially beneficial for interacting with the grid in languages that are written and read from right to left, such as **Arabic**, **Farsi,** **Urdu**, and others. Enabling RTL significantly improves the experience and accessibility for such languages.
 
-To enable RTL in the Grid, you need to set the [enableRtl](../api/grid#enablertl) property to **true**. By setting `enableRtl`, the grid control's text direction and layout will be adjusted to support right-to-left languages.
+To enable RTL in the Grid, you need to set the [enableRtl](https://ej2.syncfusion.com/javascript/documentation/api/grid#enablertl) property to **true**. By setting `enableRtl`, the grid control's text direction and layout will be adjusted to support right-to-left languages.
 
 
  
-In the following example, the [EJ2 Toggle Switch Button](../switch/es5-getting-started) control is added to enable or diable the Right to Left (RTL) feature for the **Arabic (ar-AE)** locale. When the switch is toggled, the [change](../api/switch#change) event is triggered and the `enableRtl` property of the grid is updated accordingly. 
+In the following example, the [EJ2 Toggle Switch Button](https://ej2.syncfusion.com/javascript/documentation/switch/es5-getting-started) control is added to enable or disable the Right to Left (RTL) feature for the **Arabic (ar-AE)** locale. When the switch is toggled, the [change](https://ej2.syncfusion.com/javascript/documentation/api/switch#change) event is triggered and the `enableRtl` property of the grid is updated accordingly. 
 
 
 

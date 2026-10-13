@@ -1,10 +1,9 @@
-﻿---
+---
 layout: post
 title: Style and appearance in JavaScript Grid control | Syncfusion
 description: Learn here all about Style and appearance in Syncfusion JavaScript Grid control of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Style and appearance 
-publishingplatform: grid-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---

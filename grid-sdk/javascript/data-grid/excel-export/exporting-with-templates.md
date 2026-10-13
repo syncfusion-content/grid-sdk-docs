@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Exporting Grid with Templates in JavaScript Grid control | Syncfusion
 description: Learn here all about Exporting grids with templates in Syncfusion JavaScript Grid control of Syncfusion Essential JS 2 and more.
@@ -16,7 +16,7 @@ The grid offers the option to export the column, detail, and caption templates t
 
 The Excel export functionality allows you to export Grid columns that include images, hyperlinks, and custom text to an Excel document.
 
-In the following sample, the hyperlinks and images are exported to Excel using [hyperlink](../../api/grid/excelQueryCellInfoEventArgs#hyperlink) and [image](../../api/grid/excelQueryCellInfoEventArgs#image) properties in the [excelQueryCellInfo](../../api/grid#excelquerycellinfo) event.
+In the following sample, the hyperlinks and images are exported to Excel using [hyperlink](https://ej2.syncfusion.com/javascript/documentation/api/grid/excelQueryCellInfoEventArgs#hyperlink) and [image](https://ej2.syncfusion.com/javascript/documentation/api/grid/excelQueryCellInfoEventArgs#image) properties in the [excelQueryCellInfo](https://ej2.syncfusion.com/javascript/documentation/api/grid#excelquerycellinfo) event.
 
 > Excel Export supports base64 string to export the images.
 
@@ -46,11 +46,11 @@ By default, the grid will export the parent grid with expanded detail rows alone
 | All      | Exports the parent grid with all the detail rows. |
 | None     | Exports the parent grid alone. |
 
-The detail rows in the exported Excel can be customized or formatted using the [exportDetailTemplate](../../api/grid#exportdetailtemplate) event. In this event, the detail rows of the Excel document are formatted in accordance with their parent row details.
+The detail rows in the exported Excel can be customized or formatted using the [exportDetailTemplate](https://ej2.syncfusion.com/javascript/documentation/api/grid#exportdetailtemplate) event. In this event, the detail rows of the Excel document are formatted in accordance with their parent row details.
 
-In the following sample, the detail row content is formatted by specifying the [columnHeader](../../api/grid/detailTemplateProperties#columnheader) and [rows](../../api/grid/detailTemplateProperties#rows) properties using its [parentRow](../../api/grid/exportDetailTemplateEventArgs#parentrow) details. This allows for the creation of detail rows in the Excel document. Additionally, custom styles can be applied to specific cells using the [style](../../api/grid/detailTemplateCell#style) property.
+In the following sample, the detail row content is formatted by specifying the [columnHeader](https://ej2.syncfusion.com/javascript/documentation/api/grid/detailTemplateProperties#columnheader) and [rows](https://ej2.syncfusion.com/javascript/documentation/api/grid/detailTemplateProperties#rows) properties using its [parentRow](https://ej2.syncfusion.com/javascript/documentation/api/grid/exportDetailTemplateEventArgs#parentrow) details. This allows for the creation of detail rows in the Excel document. Additionally, custom styles can be applied to specific cells using the [style](https://ej2.syncfusion.com/javascript/documentation/api/grid/detailTemplateCell#style) property.
 
-> When using [rowSpan](../../api/grid/detailTemplateCell#rowspan), it is Essential<sup style="font-size:70%">&reg;</sup> to provide the cell's [index](../../api/grid/detailTemplateCell#index) for proper functionality.
+> When using [rowSpan](https://ej2.syncfusion.com/javascript/documentation/api/grid/detailTemplateCell#rowspan), it is Essential<sup style="font-size:70%">&reg;</sup> to provide the cell's [index](https://ej2.syncfusion.com/javascript/documentation/api/grid/detailTemplateCell#index) for proper functionality.
 
 
 
@@ -72,7 +72,7 @@ In the following sample, the detail row content is formatted by specifying the [
 
 The Excel export feature enables exporting of Grid with a caption template to an Excel document.
 
-In the following sample, the customized caption text is exported to Excel using [captionText](../../api/grid/exportGroupCaptionEventArgs#captiontext) property in the [exportGroupCaption](../../api/grid#exportgroupcaption) event.
+In the following sample, the customized caption text is exported to Excel using [captionText](https://ej2.syncfusion.com/javascript/documentation/api/grid/exportGroupCaptionEventArgs#captiontext) property in the [exportGroupCaption](https://ej2.syncfusion.com/javascript/documentation/api/grid#exportgroupcaption) event.
 
 
 

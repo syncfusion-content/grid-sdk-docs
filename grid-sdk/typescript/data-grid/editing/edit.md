@@ -12,13 +12,13 @@ domainurl: https://help.syncfusion.com/grid-sdk
 
 The Grid control provides powerful options for dynamically inserting, deleting, and updating records, enabling you to modify data directly within the grid. This feature is useful when you want to seamlessly perform CRUD (Create, Read, Update, Delete) operations.
 
-To enable editing functionality directly within the grid, you need to configure the [allowEditing](../../api/grid/editSettingsModel#allowediting), [allowAdding](../../api/grid/editSettingsModel#allowadding), and [allowDeleting](../../api/grid/editSettingsModel#allowdeleting) properties within the [editSettings](../../api/grid#editsettings)  to **true**.
+To enable editing functionality directly within the grid, you need to configure the [allowEditing](https://ej2.syncfusion.com/documentation/api/grid/editSettingsModel#allowediting), [allowAdding](https://ej2.syncfusion.com/documentation/api/grid/editSettingsModel#allowadding), and [allowDeleting](https://ej2.syncfusion.com/documentation/api/grid/editSettingsModel#allowdeleting) properties within the [editSettings](https://ej2.syncfusion.com/documentation/api/grid#editsettings)  to **true**.
 
-Editing feature requires a primary key column for CRUD operations. To define the primary key, set [columns->isPrimaryKey](../../api/grid/column#isprimarykey) to **true** in particular column.
+Editing feature requires a primary key column for CRUD operations. To define the primary key, set [columns->isPrimaryKey](https://ej2.syncfusion.com/documentation/api/grid/column#isprimarykey) to **true** in particular column.
 
-You can start the edit action either by double clicking the particular row or by selecting the required row and click on **Edit** button in the toolbar. Similarly, you can add a new record to grid either by clicking on **Add** button in the toolbar or on an external button which is bound to invoke the [addRecord](../../api/grid/edit#addrecord) method of the grid, **Save** and **Cancel** while in edit mode is possible using respective toolbar icon in grid. Deletion of the record is possible by selecting the required row and click on **Delete** button in the toolbar.
+You can start the edit action either by double clicking the particular row or by selecting the required row and click on **Edit** button in the toolbar. Similarly, you can add a new record to grid either by clicking on **Add** button in the toolbar or on an external button which is bound to invoke the [addRecord](https://ej2.syncfusion.com/documentation/api/grid/edit#addrecord) method of the grid, **Save** and **Cancel** while in edit mode is possible using respective toolbar icon in grid. Deletion of the record is possible by selecting the required row and click on **Delete** button in the toolbar.
 
-To use CRUD, inject the [Edit](../../api/grid/edit) module in the **Grid**.
+To use CRUD, inject the [Edit](https://ej2.syncfusion.com/documentation/api/grid/edit) module in the **Grid**.
 
 
 
@@ -35,7 +35,7 @@ To use CRUD, inject the [Edit](../../api/grid/edit) module in the **Grid**.
 
 
 
-> * If [columns->isIdentity](../../api/grid/column#isidentity) is enabled, then it will be considered as a read-only column when editing and adding a record.
+> * If [columns->isIdentity](https://ej2.syncfusion.com/documentation/api/grid/column#isidentity) is enabled, then it will be considered as a read-only column when editing and adding a record.
 > * You can disable editing for a particular column, by specifying `columns.allowEditing` to **false**.
 >* You can use the **Insert** key to add a new row to the grid and use the **Delete** key to delete the selected row from the grid.
 
@@ -43,7 +43,7 @@ To use CRUD, inject the [Edit](../../api/grid/edit) module in the **Grid**.
 
 The toolbar with edit option feature in the Grid control provides a [built-in toolbar](../../toolbar/item-configuration) that includes various items for executing editing actions. This feature allows you to easily perform edit operations on the grid data, such as modifying cell values, updating changes, and canceling edits. 
 
-To enable this feature, you need to configure the [toolbar](../../api/grid#toolbar) property of the Grid control. This property allows you to define the items that will be displayed in the grid toolbar. By including the relevant items like **Edit**, **Add**, **Delete**, **Update**, and **Cancel** within the `toolbar` property, you can enable the edit options in the toolbar.
+To enable this feature, you need to configure the [toolbar](https://ej2.syncfusion.com/documentation/api/grid#toolbar) property of the Grid control. This property allows you to define the items that will be displayed in the grid toolbar. By including the relevant items like **Edit**, **Add**, **Delete**, **Update**, and **Cancel** within the `toolbar` property, you can enable the edit options in the toolbar.
 
 Here's an example of how to enable the toolbar with edit option in the Grid.
 
@@ -66,7 +66,7 @@ Here's an example of how to enable the toolbar with edit option in the Grid.
 
 In Grid control, you have an option to disable editing for a specific column. This feature is useful when you want to prevent editing certain columns, such as columns that contain calculated values or read-only data.
 
-To disable editing for a particular column, you can use the [allowEditing](../../api/grid/column#allowediting)  property of the **columns** object. By setting this property to **false**, you can prevent editing for that specific column.
+To disable editing for a particular column, you can use the [allowEditing](https://ej2.syncfusion.com/documentation/api/grid/column#allowediting)  property of the **columns** object. By setting this property to **false**, you can prevent editing for that specific column.
 
 Here's an example that demonstrates how to disable editing for the column in the Grid.
 
@@ -85,15 +85,15 @@ Here's an example that demonstrates how to disable editing for the column in the
 
 
 
->* If you have set the [isPrimaryKey](../../api/grid/column#isprimarykey) property to **true** for a column, editing will be automatically disabled for that column.
-> * You can disable the particular row using [actionBegin](../../api/grid#actionbegin) event. Please refer this [link](../../grid/editing/in-line-editing#disable-editing-for-a-particular-row).
->* You can disable the particular cell using [cellEdit](../../api/grid#celledit) event. Please refer this [link](../../grid/editing/batch-editing#disable-editing-for-a-particular-cell).
+>* If you have set the [isPrimaryKey](https://ej2.syncfusion.com/documentation/api/grid/column#isprimarykey) property to **true** for a column, editing will be automatically disabled for that column.
+> * You can disable the particular row using [actionBegin](https://ej2.syncfusion.com/documentation/api/grid#actionbegin) event. Please refer this [link](../../grid/editing/in-line-editing#disable-editing-for-a-particular-row).
+>* You can disable the particular cell using [cellEdit](https://ej2.syncfusion.com/documentation/api/grid#celledit) event. Please refer this [link](../../grid/editing/batch-editing#disable-editing-for-a-particular-cell).
 
 ## Editing template column
 
 The editing template column feature in the Grid allows you to create custom editing templates for specific columns in the grid. This feature is particularly useful when you need to customize the editing experience for certain columns, such as using custom input controls or displaying additional information during editing.
 
-To enable the editing template column feature, you need to define the [field](../../api/grid/column#field) property for the specific column in the grid's configuration. The `field` property maps the column to the corresponding field name in the data source, allowing you to edit the value of that field.
+To enable the editing template column feature, you need to define the [field](https://ej2.syncfusion.com/documentation/api/grid/column#field) property for the specific column in the grid's configuration. The `field` property maps the column to the corresponding field name in the data source, allowing you to edit the value of that field.
 
 In the below demo, the **ShipCountry** column is rendered with the template.
 
@@ -116,9 +116,9 @@ In the below demo, the **ShipCountry** column is rendered with the template.
 
 Customizing the delete confirmation dialog in Grid allows you to personalize the appearance, content, and behavior of the dialog that appears when you attempts to delete an item. You can modify properties like header, showCloseIcon, and height to tailor the edit dialog to your specific requirements. Additionally, you can override default localization strings to provide custom text for buttons or other elements within the dialog.
 
-To customize the delete confirmation dialog, you can utilize the [toolbarClick](../../api/grid#toolbarclick) event. This event is triggered when a toolbar item, such as the delete button, is clicked.
+To customize the delete confirmation dialog, you can utilize the [toolbarClick](https://ej2.syncfusion.com/documentation/api/grid#toolbarclick) event. This event is triggered when a toolbar item, such as the delete button, is clicked.
 
->* To enable the confirmation dialog for the delete operation in the Grid, you can set the [showDeleteConfirmDialog](../../api/grid/editSettings#showdeleteconfirmdialog) property of the `editSettings` configuration to **true**.
+>* To enable the confirmation dialog for the delete operation in the Grid, you can set the [showDeleteConfirmDialog](https://ej2.syncfusion.com/documentation/api/grid/editSettings#showdeleteconfirmdialog) property of the `editSettings` configuration to **true**.
 >* You can refer the Grid [Default text](../global-local) list for more localization.
 
 The following example that demonstrates how to customize the delete confirmation dialog using the `toolbarClick` event.
@@ -203,7 +203,7 @@ In the following sample, the input element is rendered in the edit template of t
 
 ## Edit foreign key column 
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Grid offers a powerful editing feature for foreign key columns, enhancing the default rendering of the DropDownList control during editing. This flexibility is particularly useful when you need to customize the editor for foreign key columns. By default, the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid renders the DropDownList control as the editor for foreign key columns during editing. However, you can enhance and customize this behavior by leveraging the cell edit template  for the column using [edit](../../api/grid/column#edit) property . The [edit](../../api/grid/column#edit) property allows you to specify a cell edit template that serves as an editor for a particular column.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Grid offers a powerful editing feature for foreign key columns, enhancing the default rendering of the DropDownList control during editing. This flexibility is particularly useful when you need to customize the editor for foreign key columns. By default, the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid renders the DropDownList control as the editor for foreign key columns during editing. However, you can enhance and customize this behavior by leveraging the cell edit template  for the column using [edit](https://ej2.syncfusion.com/documentation/api/grid/column#edit) property . The [edit](https://ej2.syncfusion.com/documentation/api/grid/column#edit) property allows you to specify a cell edit template that serves as an editor for a particular column.
 
 In the following code example, the Employee Name is a foreign key column. When editing, the ComboBox control is rendered instead of DropDownList.
 
@@ -232,11 +232,11 @@ The Syncfusion<sup style="font-size:70%">&reg;</sup> Grid enables external CRUD 
 
 To perform CRUD operations externally, the following methods are available:
 
-[addRecord](../../api/grid#addrecord) - To add a new record. If no data is passed then add form will be shown.
-[startEdit](../../api/grid#startedit) - To edit the selected row.
-[deleteRecord](../../api/grid#deleterecord) - To delete a selected row.
-[endEdit](../../api/grid#endedit) - If the grid is in editable state, then you can save a record by invoking this method.
-[closeEdit](../../api/grid#closeedit) - To cancel the edited state.
+[addRecord](https://ej2.syncfusion.com/documentation/api/grid#addrecord) - To add a new record. If no data is passed then add form will be shown.
+[startEdit](https://ej2.syncfusion.com/documentation/api/grid#startedit) - To edit the selected row.
+[deleteRecord](https://ej2.syncfusion.com/documentation/api/grid#deleterecord) - To delete a selected row.
+[endEdit](https://ej2.syncfusion.com/documentation/api/grid#endedit) - If the grid is in editable state, then you can save a record by invoking this method.
+[closeEdit](https://ej2.syncfusion.com/documentation/api/grid#closeedit) - To cancel the edited state.
 
 The following example demonstrates the integration of the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid with a separate toolbar for external CRUD operations. The toolbar contains buttons for Add, Edit, Delete, Update, and Cancel.
 
@@ -259,7 +259,7 @@ The following example demonstrates the integration of the Syncfusion<sup style="
 
 Performing the edit operation in a custom external form in the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid is a valuable feature when you need to customize the edit operation within a separate form rather than the default in-grid editing. 
 
-To enable the use of an external form for editing in Syncfusion<sup style="font-size:70%">&reg;</sup> Grid, you can make use of the [rowSelected](../../api/grid#rowselected) event. This event specifies whether the edit operation should be triggered when a row is selected.
+To enable the use of an external form for editing in Syncfusion<sup style="font-size:70%">&reg;</sup> Grid, you can make use of the [rowSelected](https://ej2.syncfusion.com/documentation/api/grid#rowselected) event. This event specifies whether the edit operation should be triggered when a row is selected.
 
 In the following example, it demonstrates how to edit the form using an external form by utilizing the `rowSelected` event.
 
@@ -280,13 +280,13 @@ In the following example, it demonstrates how to edit the form using an external
 
 ## Troubleshoot editing works only for first row
 
-The Editing functionalities can be performed based upon the primary key value of the selected row. If [isPrimaryKey](../../api/grid/column#isprimarykey) property is not defined in the grid, then edit or delete action take places the first row. To overcome this, ensure that you establish the `isPrimaryKey` property as **true** for the relevant column responsible for holding the unique identifier for each row.
+The Editing functionalities can be performed based upon the primary key value of the selected row. If [isPrimaryKey](https://ej2.syncfusion.com/documentation/api/grid/column#isprimarykey) property is not defined in the grid, then edit or delete action take places the first row. To overcome this, ensure that you establish the `isPrimaryKey` property as **true** for the relevant column responsible for holding the unique identifier for each row.
 
 ## How to make a grid column always editable
 
 To make a Grid column always editable, you can utilize the column template feature of the Grid. This feature is useful when you want to edit a particular column's values directly within the grid.
 
-In the following example, the textbox is rendered in the **Freight** column using a column template. The keyup event for the Grid is bound using the [created](../../api/grid#created) event of the Grid, and the edited changes are saved in the data source using the [updateRow](../../api/grid#updaterow) method of the Grid.
+In the following example, the textbox is rendered in the **Freight** column using a column template. The keyup event for the Grid is bound using the [created](https://ej2.syncfusion.com/documentation/api/grid#created) event of the Grid, and the edited changes are saved in the data source using the [updateRow](https://ej2.syncfusion.com/documentation/api/grid#updaterow) method of the Grid.
 
 
 

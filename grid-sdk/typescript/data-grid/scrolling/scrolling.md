@@ -14,13 +14,13 @@ The scrolling feature in the TypeScript Grid control allows you to navigate thro
 
 * The vertical scrollbar appears when the total height of rows present in the grid exceeds its element height.
 * The horizontal scrollbar appears when the sum of columns width exceeds the grid element width.
-* The [height](../../api/grid#height) and [width](../../api/grid#width) are used to set the grid height and width, respectively.
+* The [height](https://ej2.syncfusion.com/documentation/api/grid#height) and [width](https://ej2.syncfusion.com/documentation/api/grid#width) are used to set the grid height and width, respectively.
 
 > The default value for `height`and `width` is `auto`.
 
 ## Set width and height
 
-The TypeScript Grid control offers a straightforward method to tailor the width and height of the scroller to meet your specific requirements. This is particularly useful when you want precise control over the dimensions of the scroller. To achieve this, you can use pixel values as numbers for the [width](../../api/grid#width) and [height](../../api/grid#height) properties of the Grid.
+The TypeScript Grid control offers a straightforward method to tailor the width and height of the scroller to meet your specific requirements. This is particularly useful when you want precise control over the dimensions of the scroller. To achieve this, you can use pixel values as numbers for the [width](https://ej2.syncfusion.com/documentation/api/grid#width) and [height](https://ej2.syncfusion.com/documentation/api/grid#height) properties of the Grid.
 
 In the following example, the scrollbar is enabled, and the grid's `height` is set to 315 pixels, while the `width` is set to 400 pixels:
 
@@ -41,7 +41,7 @@ In the following example, the scrollbar is enabled, and the grid's `height` is s
 
 ## Set height and width using viewport units
 
-The Grid's [height](../../api/grid#height) and [width](../../api/grid#width) properties accept viewport units (for example, `70vh` and `70vw`). Using `height: 70vh` and `width: 70vw` makes the grid occupy that percentage of the browser viewport and automatically adjusts the number of visible rows and columns to the available space, ensuring a responsive layout across screen sizes.
+The Grid's [height](https://ej2.syncfusion.com/documentation/api/grid#height) and [width](https://ej2.syncfusion.com/documentation/api/grid#width) properties accept viewport units (for example, `70vh` and `70vw`). Using `height: 70vh` and `width: 70vw` makes the grid occupy that percentage of the browser viewport and automatically adjusts the number of visible rows and columns to the available space, ensuring a responsive layout across screen sizes.
 
 
 
@@ -62,7 +62,7 @@ The Grid's [height](../../api/grid#height) and [width](../../api/grid#width) pro
 
 The Grid control allows you to create a responsive layout by making it fill its parent container and automatically adjust its size based on the available space and changes in the container's dimensions. This capability is particularly useful for building applications that need to adapt to various screen sizes and devices.
 
-To achieve this, you need to specify the [width](../../api/grid#width) and [height](../../api/grid#height) properties of the Grid as 100%. However, keep in mind that setting the height property to 100% requires the Grid's parent element to have an explicit height defined.
+To achieve this, you need to specify the [width](https://ej2.syncfusion.com/documentation/api/grid#width) and [height](https://ej2.syncfusion.com/documentation/api/grid#height) properties of the Grid as 100%. However, keep in mind that setting the height property to 100% requires the Grid's parent element to have an explicit height defined.
 
 In the following example, the parent container has explicit height and width set, and the Grid container's height and width are both set to 100%. This ensures that the Grid adjusts its size responsively based on the dimensions of the parent container:
 
@@ -83,7 +83,7 @@ In the following example, the parent container has explicit height and width set
 
 ## Sticky header
 
-The TypeScript Grid control provides a feature that allows you to make column headers remain fixed while scrolling, ensuring they stay visible at all times. To achieve this, you can utilize the [enableStickyHeader](../../api/grid#enablestickyheader) property by setting it to **true**.
+The TypeScript Grid control provides a feature that allows you to make column headers remain fixed while scrolling, ensuring they stay visible at all times. To achieve this, you can utilize the [enableStickyHeader](https://ej2.syncfusion.com/documentation/api/grid#enablestickyheader) property by setting it to **true**.
 
 In the below demo, the Grid headers will be sticky while scrolling the Grid's parent div element.
 
@@ -104,7 +104,7 @@ In the below demo, the Grid headers will be sticky while scrolling the Grid's pa
 
 ## Scroll to selected row
 
-The TypeScript Grid control allows you to scroll the grid content to the position of the selected row, ensuring that the selected row is automatically brought into view. This feature is particularly useful when dealing with a large dataset and wanting to maintain focus on the selected row. To achieve this, you can utilize the [rowSelected](../../api/grid#rowselected) event provided by the Grid.
+The TypeScript Grid control allows you to scroll the grid content to the position of the selected row, ensuring that the selected row is automatically brought into view. This feature is particularly useful when dealing with a large dataset and wanting to maintain focus on the selected row. To achieve this, you can utilize the [rowSelected](https://ej2.syncfusion.com/documentation/api/grid#rowselected) event provided by the Grid.
 
 The following example that demonstrates how to use the `rowSelected` event to scroll to the selected row:
 
@@ -125,9 +125,9 @@ The following example that demonstrates how to use the `rowSelected` event to sc
 
 ## Hide the empty placeholder of scrollbar
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Grid control provides a feature to hide the empty placeholder of the scrollbar, offering a cleaner interface without unnecessary scrollbars. To achieve this, you can utilize the [hideScroll](../../api/grid#hidescroll) method. This method allows you to determine whether the scrollbar should be hidden based on the content's overflow.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Grid control provides a feature to hide the empty placeholder of the scrollbar, offering a cleaner interface without unnecessary scrollbars. To achieve this, you can utilize the [hideScroll](https://ej2.syncfusion.com/documentation/api/grid#hidescroll) method. This method allows you to determine whether the scrollbar should be hidden based on the content's overflow.
 
-The following example that demonstrates how to use the `hideScroll` method inside the [dataBound](../../api/grid#databound) event:
+The following example that demonstrates how to use the `hideScroll` method inside the [dataBound](https://ej2.syncfusion.com/documentation/api/grid#databound) event:
 
 
 
@@ -151,7 +151,7 @@ The Syncfusion TypeScript Grid allows rendering scrollbars at both the top and b
 Steps to render scrollbars at the top in the Grid:
 
 1. **Add a Scrollbar** - Insert a `<div id="scroller">` above the Grid in the template to act as a top scrollbar.
-2. **Initialize Scrollbar in [created](../../api/grid#created) Event** - Retrieve the Grid's content and move the scroller `div` above it dynamically.
+2. **Initialize Scrollbar in [created](https://ej2.syncfusion.com/documentation/api/grid#created) Event** - Retrieve the Grid's content and move the scroller `div` above it dynamically.
 3. **Synchronize Scroll Events** - Link `onscroll` events of the scroller `div` and the Grid content to scroll together.
 4. **Adjust Scrollbar Width and Visibility** - Use `setScroller()` to match the scrollbar width with the Grid and update it on window resize.
 

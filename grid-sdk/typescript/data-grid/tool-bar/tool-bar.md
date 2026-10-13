@@ -12,13 +12,11 @@ domainurl: https://help.syncfusion.com/grid-sdk
 
 The toolbar in the TypeScript Grid control offers several general use cases to enhance data manipulation and overall experience. Actions such as adding, editing, and deleting records within the grid can be performed, providing efficient data manipulation capabilities. The toolbar also facilitates data export and import functionality, allowing you to generate downloadable files in formats like Excel, CSV, or PDF. 
 
-To enable the toolbar functionality, you need to inject the **Toolbar** module in the grid. This module provides the necessary methods to interact with the toolbar items. The toolbar can be customized with built-in toolbar items or custom toolbar items using the [toolbar](../../api/grid/#toolbar) property. The `toolbar` property accepts an array of strings representing the built-in toolbar items or an array of [ItemModel](../../api/toolbar/itemModel/) objects for custom toolbar items.
+To enable the toolbar functionality, you need to inject the **Toolbar** module in the grid. This module provides the necessary methods to interact with the toolbar items. The toolbar can be customized with built-in toolbar items or custom toolbar items using the [toolbar](https://ej2.syncfusion.com/documentation/api/grid#toolbar) property. The `toolbar` property accepts an array of strings representing the built-in toolbar items or an array of [ItemModel](https://ej2.syncfusion.com/documentation/api/toolbar/itemmodel) objects for custom toolbar items.
 
 The following example demonstrates how to enable toolbar items in the grid.
 
-
-
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/grid-sdk/typescript/grid/toolbar-cs1/index.ts %}
 {% endhighlight %}
@@ -29,23 +27,15 @@ The following example demonstrates how to enable toolbar items in the grid.
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/toolbar-cs1" %}
 
-
-
 ## Enable or disable toolbar items
 
 Enabling or disabling toolbar items dynamically in TypeScript Grid is to provide control over the availability of specific functionality based on application logic. This feature allows you to customize the toolbar based on various conditions or individuals interactions. 
 
-You can enable or disable toolbar items dynamically by using the [enableToolbarItems](../../api/grid/#enabletoolbaritems) method. This method allows you to control the availability of specific toolbar items based on your application logic.
-
-
+You can enable or disable toolbar items dynamically by using the [enableToolbarItems](https://ej2.syncfusion.com/documentation/api/grid#enabletoolbaritems) method. This method allows you to control the availability of specific toolbar items based on your application logic.
  
-In the following example, the [EJ2 Toggle Switch Button control](../../switch/getting-started) is added to enable and disable the toolbar items using `enableToolbarItems` method. When the switch is toggled, the [change](../../api/switch/#change) event is triggered and the toolbar items are updated accordingly.
+In the following example, the [EJ2 Toggle Switch Button control](https://ej2.syncfusion.com/documentation/switch/getting-started) is added to enable and disable the toolbar items using `enableToolbarItems` method. When the switch is toggled, the [change](https://ej2.syncfusion.com/documentation/api/switch/#change) event is triggered and the toolbar items are updated accordingly.
 
- 
-
-
-
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/grid-sdk/typescript/grid/toolbar-enable-cs2/index.ts %}
 {% endhighlight %}
@@ -57,18 +47,15 @@ In the following example, the [EJ2 Toggle Switch Button control](../../switch/ge
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/toolbar-enable-cs2" %}
 
 
-
 ## Add toolbar at the bottom of Grid
 
 By adding the toolbar at the bottom of the TypeScript Grid, important actions and functionality remain consistently visible and easily accessible, providing easy access to actions and operations without the need for scrolling.
 
-To add the toolbar at the bottom of the Grid, you can utilize the [created](../../api/grid/#created) event. By handling this event, you can dynamically insert the toolbar items at the desired position in the grid layout.
+To add the toolbar at the bottom of the Grid, you can utilize the [created](https://ej2.syncfusion.com/documentation/api/grid#created) event. By handling this event, you can dynamically insert the toolbar items at the desired position in the grid layout.
 
 The following example shows how to add the toolbar items at the bottom using `created` event of the grid.
 
-
-
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/grid-sdk/typescript/grid/toolbar-bottom-cs1/index.ts %}
 {% endhighlight %}
@@ -78,7 +65,6 @@ The following example shows how to add the toolbar items at the bottom using `cr
 {% endtabs %}
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/toolbar-bottom-cs1" %}
-
 
 
 ## Customize toolbar buttons using CSS
@@ -96,9 +82,7 @@ The appearance of the built-in toolbar buttons can be modified by applying the f
 
 The following example demonstrates how to change the background color of the `Add`, `Edit`, `Delete`, `Update` and `Cancel` toolbar buttons by applying CSS styles.
 
-
-
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/grid-sdk/typescript/grid/toolbar-customize-cs1/index.ts %}
 {% endhighlight %}
@@ -110,8 +94,7 @@ The following example demonstrates how to change the background color of the `Ad
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/toolbar-customize-cs1" %}
 
 
-
 ## See Also
 
-* [Toolbar Control](../../toolbar/getting-started)
+* [Toolbar Control](https://ej2.syncfusion.com/documentation/toolbar/getting-started)
 * [How to set overflow mode in Grid toolbar](https://support.syncfusion.com/kb/article/9929/how-to-set-overflow-mode-in-grid-toolbar)

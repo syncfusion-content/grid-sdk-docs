@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Formula Cells in JavaScript Grid control | Syncfusion
 description: Learn here all about Formula cells in Syncfusion JavaScript Grid control of Syncfusion Essential JS 2 and more.
@@ -15,9 +15,9 @@ Formula cells in the Syncfusion JavaScript Data Grid enable spreadsheet-like cal
 
 ## Enable formula
 
-Formula support is enabled by setting the [allowFormula](../../api/grid/column#allowformula) property at the column level. When `allowFormula` is enabled, the data source must include the formula definition for the corresponding column. The Data Grid evaluates the formula and automatically updates the calculated value when dependent data changes.
+Formula support is enabled by setting the [allowFormula](https://ej2.syncfusion.com/javascript/documentation/api/grid/column#allowformula) property at the column level. When `allowFormula` is enabled, the data source must include the formula definition for the corresponding column. The Data Grid evaluates the formula and automatically updates the calculated value when dependent data changes.
 
-To use formula functionality, inject the [Formula](../../api/grid/formula) module into the **Grid**.
+To use formula functionality, inject the [Formula](https://ej2.syncfusion.com/javascript/documentation/api/grid/formula) module into the **Grid**.
 
 **For example:**
 

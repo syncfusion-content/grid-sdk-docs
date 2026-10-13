@@ -16,7 +16,7 @@ The Syncfusion<sup style="font-size:70%">&reg;</sup> Grid component provides adv
 
 Advanced filtering is enabled by setting the `allowAdvancedFiltering` property to `true`. This adds an **Filter** button to the toolbar, which opens the Query Builder dialog for creating advanced filter conditions.
 
-To use advanced filtering, inject the [AdvancedFilter](../../api/grid/advancedfilter) module into the Grid along with the other required modules.
+To use advanced filtering, inject the [AdvancedFilter](https://ej2.syncfusion.com/documentation/api/grid/advancedfilter) module into the Grid along with the other required modules.
 
 
 
@@ -60,21 +60,21 @@ The following example demonstrates displaying only tickets with a priority of **
 
 The Advanced Filter feature provides the following events for customizing the dialog and filter operations.
 
-1. The [advancedFilterOpen](../../api/grid#advancedfilteropen) event is triggered when the Advanced Filter dialog opens. The event arguments provide access to the dialog and Query Builder instances.
-2. The [advancedFilterClose](../../api/grid#advancedfilterclose) event is triggered when the Advanced Filter dialog closes. Set the `cancel` property to `true` to prevent the dialog from closing.
-3. The [advancedFilterActionBegin](../../api/grid#advancedfilteractionbegin) event is triggered before a filter is applied or cleared. Set the `cancel` property to `true` to prevent the operation. The event arguments include the filter rule, dialog instance, and Query Builder instance.
-4. The [advancedFilterActionComplete](../../api/grid#advancedfilteractioncomplete) event is triggered after a filter is applied or cleared. Set the `cancel` property to `true` to keep the Advanced Filter dialog open after the operation.
+1. The [advancedFilterOpen](https://ej2.syncfusion.com/documentation/api/grid#advancedfilteropen) event is triggered when the Advanced Filter dialog opens. The event arguments provide access to the dialog and Query Builder instances.
+2. The [advancedFilterClose](https://ej2.syncfusion.com/documentation/api/grid#advancedfilterclose) event is triggered when the Advanced Filter dialog closes. Set the `cancel` property to `true` to prevent the dialog from closing.
+3. The [advancedFilterActionBegin](https://ej2.syncfusion.com/documentation/api/grid#advancedfilteractionbegin) event is triggered before a filter is applied or cleared. Set the `cancel` property to `true` to prevent the operation. The event arguments include the filter rule, dialog instance, and Query Builder instance.
+4. The [advancedFilterActionComplete](https://ej2.syncfusion.com/documentation/api/grid#advancedfilteractioncomplete) event is triggered after a filter is applied or cleared. Set the `cancel` property to `true` to keep the Advanced Filter dialog open after the operation.
 
 ## Methods
 
 The Advanced Filter feature provides the following methods for controlling the dialog and managing filter rules programmatically:
 
-1. The [openAdvancedFilterDialog](../../api/grid#openadvancedfilterdialog) method opens the Advanced Filter dialog.
-2. The [closeAdvancedFilterDialog](../../api/grid#closeadvancedfilterdialog) method closes the Advanced Filter dialog.
-3. The [applyAdvancedFilter](../../api/grid#applyadvancedfilter) method applies the specified filter rule to the Grid.
-4. The [clearAdvancedFilter](../../api/grid#clearadvancedfilter) method clears the applied Advanced Filter and restores the original data view.
-5. The [getAdvancedFilter](../../api/grid#getadvancedfilter) method retrieves the currently configured filter rule.
-6. The [setAdvancedFilter](../../api/grid#setadvancedfilter) method sets the specified rule as the current rule configuration in the Advanced Filter Query Builder.
+1. The [openAdvancedFilterDialog](https://ej2.syncfusion.com/documentation/api/grid#openadvancedfilterdialog) method opens the Advanced Filter dialog.
+2. The [closeAdvancedFilterDialog](https://ej2.syncfusion.com/documentation/api/grid#closeadvancedfilterdialog) method closes the Advanced Filter dialog.
+3. The [applyAdvancedFilter](https://ej2.syncfusion.com/documentation/api/grid#applyadvancedfilter) method applies the specified filter rule to the Grid.
+4. The [clearAdvancedFilter](https://ej2.syncfusion.com/documentation/api/grid#clearadvancedfilter) method clears the applied Advanced Filter and restores the original data view.
+5. The [getAdvancedFilter](https://ej2.syncfusion.com/documentation/api/grid#getadvancedfilter) method retrieves the currently configured filter rule.
+6. The [setAdvancedFilter](https://ej2.syncfusion.com/documentation/api/grid#setadvancedfilter) method sets the specified rule as the current rule configuration in the Advanced Filter Query Builder.
 
 
 

@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Group and caption aggregate in JavaScript Grid | Syncfusion
 description: Learn here all about Group and caption aggregate in Syncfusion JavaScript Grid control of Syncfusion Essential JS 2 and more.
@@ -10,10 +10,10 @@ domainurl: https://help.syncfusion.com/grid-sdk
 
 # Group and caption aggregate in JavaScript Grid control
 
-Group footer and caption aggregates in the JavaScript Grid control allow you to calculate aggregate values based on the current group items. These aggregate values can be displayed in the group footer cells and group caption cells, respectively. To achieve this, you can use the [groupFooterTemplate](../../api/grid/aggregateColumn#groupfootertemplate) and [groupCaptionTemplate](../../api/grid/aggregateColumn#groupcaptiontemplate) properties of the [AggregateColumn](../../api/grid/aggregateColumn).
+Group footer and caption aggregates in the JavaScript Grid control allow you to calculate aggregate values based on the current group items. These aggregate values can be displayed in the group footer cells and group caption cells, respectively. To achieve this, you can use the [groupFooterTemplate](https://ej2.syncfusion.com/javascript/documentation/api/grid/aggregateColumn#groupfootertemplate) and [groupCaptionTemplate](https://ej2.syncfusion.com/javascript/documentation/api/grid/aggregateColumn#groupcaptiontemplate) properties of the [AggregateColumn](https://ej2.syncfusion.com/javascript/documentation/api/grid/aggregateColumn).
 
-> When working with group aggregates in Syncfusion<sup style="font-size:70%">&reg;</sup> Grid, it is important to set the property [allowGrouping](../../api/grid/column#allowgrouping) of the [column](../../api/grid/column) to **true**. 
-> To maintain grouped columns in the grid after grouping, set [showGroupedColumn](../../api/grid/groupSettings#showgroupedcolumn) to **true**.
+> When working with group aggregates in Syncfusion<sup style="font-size:70%">&reg;</sup> Grid, it is important to set the property [allowGrouping](https://ej2.syncfusion.com/javascript/documentation/api/grid/column#allowgrouping) of the [column](https://ej2.syncfusion.com/javascript/documentation/api/grid/column) to **true**. 
+> To maintain grouped columns in the grid after grouping, set [showGroupedColumn](https://ej2.syncfusion.com/javascript/documentation/api/grid/groupSettings#showgroupedcolumn) to **true**.
 
 ## Group footer aggregates
 
@@ -36,11 +36,11 @@ Here's an example that demonstrates how to use group footer aggregates in the Ja
 
 
 > * Use the template reference variable name as **groupFooterTemplate** to specify the group footer template and as **groupCaptionTemplate** to specify the group caption template.
-> * The aggregate values must be accessed inside the template using their corresponding [type](../../api/grid/aggregateColumn#type) name.
+> * The aggregate values must be accessed inside the template using their corresponding [type](https://ej2.syncfusion.com/javascript/documentation/api/grid/aggregateColumn#type) name.
 
 ## Group caption aggregates
 
-Group caption aggregates are displayed in the caption cells of each group. These cells appear at the top of each group and provide a summary of the grouped data. To display group caption aggregates, you can use the [groupCaptionTemplate](../../api/grid/aggregateColumn#groupcaptiontemplate) property. This property allows you to define a template that will be used to display the aggregate values in the group caption cells.
+Group caption aggregates are displayed in the caption cells of each group. These cells appear at the top of each group and provide a summary of the grouped data. To display group caption aggregates, you can use the [groupCaptionTemplate](https://ej2.syncfusion.com/javascript/documentation/api/grid/aggregateColumn#groupcaptiontemplate) property. This property allows you to define a template that will be used to display the aggregate values in the group caption cells.
 
 Here's an example that demonstrates how to use group and caption aggregates in the JavaScript Grid control:
 
@@ -59,11 +59,11 @@ Here's an example that demonstrates how to use group and caption aggregates in t
 
 
 > * The group total summary in Syncfusion<sup style="font-size:70%">&reg;</sup> Grid is calculated based on the current page records for each group by default.
-> * If you require aggregates for all the data in the grid, you can enable the [disablePageWiseAggregates](../../api/grid/groupSettings#disablepagewiseaggregates) property.
+> * If you require aggregates for all the data in the grid, you can enable the [disablePageWiseAggregates](https://ej2.syncfusion.com/javascript/documentation/api/grid/groupSettings#disablepagewiseaggregates) property.
 
 ## Disable page wise aggregates for grouping
 
-In some cases, you may want to disable the page-wise aggregates for grouping in the JavaScript Grid control. By default, when grouping is enabled with paging, the grid calculates the aggregates for each page separately. However, you can choose to disable this behavior and calculate aggregates for the entire grouped data instead. This can be achieved by setting the [disablePageWiseAggregates](../../api/grid/groupSettings#disablepagewiseaggregates) property to **true**.
+In some cases, you may want to disable the page-wise aggregates for grouping in the JavaScript Grid control. By default, when grouping is enabled with paging, the grid calculates the aggregates for each page separately. However, you can choose to disable this behavior and calculate aggregates for the entire grouped data instead. This can be achieved by setting the [disablePageWiseAggregates](https://ej2.syncfusion.com/javascript/documentation/api/grid/groupSettings#disablepagewiseaggregates) property to **true**.
 
 
 

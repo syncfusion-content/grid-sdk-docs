@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Reactive aggregate in JavaScript Grid control | Syncfusion
 description: Learn here all about Reactive aggregate in Syncfusion JavaScript Grid control of Syncfusion Essential JS 2 and more.

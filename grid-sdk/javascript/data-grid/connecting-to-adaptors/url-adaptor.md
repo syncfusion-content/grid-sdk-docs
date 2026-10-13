@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: JavaScript Grid Bind Data with UrlAdaptor | Syncfusion
 description: Learn here all about how to bind data and perform CRUD action using UrlAdaptor in Syncfusion JavaScript Grid control.
@@ -513,7 +513,7 @@ CRUD operations within the grid can be mapped to server-side controller actions 
 4. **crudUrl**: Specifies a single URL for all CRUD operations.
 5. **batchUrl**: Specifies the URL for batch editing.
 
-To enable editing in JavaScript Grid control, refer to the editing [documentation](../editing/edit). In the below example, the inline edit [mode](../../api/grid/editSettings#mode) is enabled and [toolbar](../../api/grid#toolbar) property is configured to display toolbar items for editing purposes.
+To enable editing in JavaScript Grid control, refer to the editing [documentation](../editing/edit). In the below example, the inline edit [mode](https://ej2.syncfusion.com/javascript/documentation/api/grid/editSettings#mode) is enabled and [toolbar](https://ej2.syncfusion.com/javascript/documentation/api/grid#toolbar) property is configured to display toolbar items for editing purposes.
 
 {% tabs %}
 
@@ -545,7 +545,7 @@ grid.appendTo('#Grid');
 
 {% endtabs %}
 
-> Normal/Inline editing is the default edit [mode](../../api/grid/editSettings#mode) for the Grid control. To enable CRUD operations, ensure that the [isPrimaryKey](../../api/grid/column#isprimarykey) property is set to **true** for a specific Grid column, ensuring that its value is unique.
+> Normal/Inline editing is the default edit [mode](https://ej2.syncfusion.com/javascript/documentation/api/grid/editSettings#mode) for the Grid control. To enable CRUD operations, ensure that the [isPrimaryKey](https://ej2.syncfusion.com/javascript/documentation/api/grid/column#isprimarykey) property is set to **true** for a specific Grid column, ensuring that its value is unique.
 
 The below class is used to structure data sent during CRUD operations.
 
@@ -716,7 +716,7 @@ public void CrudUpdate([FromBody] CRUDModel<OrdersDetails> request)
 
 **Batch operation:**
 
-To perform batch operation, define the edit [mode](../../api/grid/editSettings#mode) as **Batch** and specify the `batchUrl` property in the DataManager. Use the **Add** toolbar button to insert new row in batch editing mode. To edit a cell, double-click the desired cell and update the value as required. To delete a record, simply select the record and press the **Delete** toolbar button. Now, all CRUD operations will be executed in single request. Clicking the **Update** toolbar button will update the newly added, edited, or deleted records from the OrdersDetails table using a single API POST request.
+To perform batch operation, define the edit [mode](https://ej2.syncfusion.com/javascript/documentation/api/grid/editSettings#mode) as **Batch** and specify the `batchUrl` property in the DataManager. Use the **Add** toolbar button to insert new row in batch editing mode. To edit a cell, double-click the desired cell and update the value as required. To delete a record, simply select the record and press the **Delete** toolbar button. Now, all CRUD operations will be executed in single request. Clicking the **Update** toolbar button will update the newly added, edited, or deleted records from the OrdersDetails table using a single API POST request.
 
 
 ```js

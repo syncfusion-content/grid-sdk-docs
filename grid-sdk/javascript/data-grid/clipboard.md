@@ -1,10 +1,9 @@
-﻿---
+---
 layout: post
 title: Clipboard in JavaScript Grid control | Syncfusion
 description: Learn here all about Clipboard in Syncfusion JavaScript Grid control of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Clipboard 
-publishingplatform: grid-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
@@ -40,7 +39,7 @@ To enable the clipboard feature, you can use the grid control with your data sou
 
 Copying data to the clipboard by using external buttons in the JavaScript Grid allows you to programmatically trigger the copy operation, making it more friendly, especially for those who may not be familiar with keyboard shortcuts or manual copying.
 
-To copy selected rows or cells data into the clipboard with the help of external buttons, you can utilize the [copy](../api/grid/clipboard#copy) method available in the grid control. This is demonstrated in the following example,
+To copy selected rows or cells data into the clipboard with the help of external buttons, you can utilize the [copy](https://ej2.syncfusion.com/javascript/documentation/api/grid/clipboard#copy) method available in the grid control. This is demonstrated in the following example,
 
 
 
@@ -70,7 +69,7 @@ The AutoFill feature in the JavaScript Grid allows you to copy the data of selec
 
 4. Release the mouse to complete the autofill action, and the data from the source cells will be copied and pasted into the target cells.
 
-This feature is enabled by defining [enableAutoFill](../api/grid#enableautofill) property as **true**. 
+This feature is enabled by defining [enableAutoFill](https://ej2.syncfusion.com/javascript/documentation/api/grid#enableautofill) property as **true**. 
 
 The following example demonstrates, how to enable autofill feature in the grid.
 
@@ -88,7 +87,7 @@ The following example demonstrates, how to enable autofill feature in the grid.
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grid-cs2" %}
 
 
-> * If [enableAutoFill](../api/grid#enableautofill) is set to **true**, then the autofill icon will be displayed on cell selection to copy cells.
+> * If [enableAutoFill](https://ej2.syncfusion.com/javascript/documentation/api/grid#enableautofill) is set to **true**, then the autofill icon will be displayed on cell selection to copy cells.
 > * It requires the selection `mode` to be **Cell**,  `cellSelectionMode` to be **Box** and also `editMode` to be **Batch** .
 
 ### Limitations

@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Exporting grid in server in JavaScript Grid control | Syncfusion
 description: Learn here all about Exporting grid in server in Syncfusion JavaScript Grid control of Syncfusion Essential JS 2 and more.
@@ -29,7 +29,7 @@ To export the grid data to a PDF document on the server side, you need to perfor
 
 2. Define a controller action that handles the server-side PDF export. This action should receive the Grid properties from the client-side and initiate the PDF export operation on the server.
 
-3. Use the [serverPdfExport](../../api/grid#serverpdfexport) method to pass the Grid properties to the server exporting action. This method allows you to specify the server action URL and other export options.
+3. Use the [serverPdfExport](https://ej2.syncfusion.com/javascript/documentation/api/grid#serverpdfexport) method to pass the Grid properties to the server exporting action. This method allows you to specify the server action URL and other export options.
 
 The following code snippet shows server configuration using ASP.NET Core Controller Action.
 
@@ -242,7 +242,7 @@ public ActionResult PdfExport(string gridModel)
 
 Grid control provides support for customizing column header styles, including rotating the header text to a certain degree in the exported PDF file on the server side. To achieve this requirement, you can use the `BeginCellLayout` event of the `PdfExportProperties` class along with a custom event handler.
 
-1. The [PdfHeaderQueryCellInfo](../../api/grid#pdfheaderquerycellinfo) event is triggered when creating a column header for the PDF document to be exported. In this event, you can collect the column header details and handle customizations.
+1. The [PdfHeaderQueryCellInfo](https://ej2.syncfusion.com/javascript/documentation/api/grid#pdfheaderquerycellinfo) event is triggered when creating a column header for the PDF document to be exported. In this event, you can collect the column header details and handle customizations.
 
 2. In the `BeginCellLayout` event handler, you can use the `Graphics.DrawString` method to rotate the header text to the desired degree, will be triggered when creating a column header for the PDF document to be exported. Collect the column header details in this event and handle the custom in the `BeginCellLayout` event handler.
 
@@ -299,7 +299,7 @@ private void PdfHeaderQueryCellInfo(object pdf)
 
 Passing additional parameters to the server when exporting data in the JavaScript Grid involves providing flexibility to include extra information or customize the export process based on specific requirements.
 
-You can achieve this by utilizing the [query](../../api/grid#query) property and the [toolbarClick](../../api/grid#toolbarclick) event. Within the `query` property, you can invoke the `addParams` method to add parameters to the request.
+You can achieve this by utilizing the [query](https://ej2.syncfusion.com/javascript/documentation/api/grid#query) property and the [toolbarClick](https://ej2.syncfusion.com/javascript/documentation/api/grid#toolbarclick) event. Within the `query` property, you can invoke the `addParams` method to add parameters to the request.
 
 The following example demonstrates how to pass additional parameters to the server when PDF exporting within the `toolbarClick` event. Within the event, the additional parameters, specifically **recordcount** as **15**, are passed using the addParams method and displayed as a message.
 

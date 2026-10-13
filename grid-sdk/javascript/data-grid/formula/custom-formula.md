@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Custom Formula Functions in JavaScript Grid control | Syncfusion
 description: Learn here all about custom formula functions in Syncfusion JavaScript Grid control of Syncfusion Essential JS 2 and more.
@@ -15,7 +15,7 @@ The formula engine supports custom functions in addition to the built-in functio
 
 ## Custom function API
 
-Use the [formulaSettings.customFunctions](../../api/grid/formulasettingsmodel#customfunctions)  property to define the custom formulas available in the Grid. Each custom function has a unique name, and its calculation logic is defined using a function that returns the computed result.
+Use the [formulaSettings.customFunctions](https://ej2.syncfusion.com/javascript/documentation/api/grid/formulasettingsmodel#customfunctions)  property to define the custom formulas available in the Grid. Each custom function has a unique name, and its calculation logic is defined using a function that returns the computed result.
 
 | Property | Type | Description |
 | --- | --- | --- |

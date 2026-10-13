@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Customize the Empty Record Template in JavaScript Grid control | Syncfusion
 description: Learn here all about Customize the Empty Record Template in Syncfusion JavaScript Grid control of Syncfusion Essential JS 2 and more.

@@ -12,7 +12,7 @@ domainurl: https://help.syncfusion.com/grid-sdk
 
 The filter bar feature provides a user-friendly way to filter data in the Syncfusion<sup style="font-size:70%">&reg;</sup> TypeScript  Grid. It displays an input field for each column, allowing you to enter filter criteria and instantly see the filtered results.
 
-By defining the [allowFiltering](../../api/grid/#allowfiltering) to true, then filter bar row will be rendered next to header which allows you to filter data. You can filter the records with different expressions depending upon the column type.
+By defining the [allowFiltering](https://ej2.syncfusion.com/documentation/api/grid#allowfiltering) to true, then filter bar row will be rendered next to header which allows you to filter data. You can filter the records with different expressions depending upon the column type.
 
 **Filter bar expressions:**
 You can enter the following filter expressions(operators) manually in the filter bar.
@@ -47,17 +47,17 @@ The following example demonstrates how to activate default filtering in the grid
 
 
 
-> If the [filterSettings->type](../../api/grid/filtersettings/#type) is not explicitly specified, it defaults to **FilterBar**.
+> If the [filterSettings->type](https://ej2.syncfusion.com/documentation/api/grid/filtersettings/#type) is not explicitly specified, it defaults to **FilterBar**.
 
 ## Filter bar modes
 
 The Syncfusion<sup style="font-size:70%">&reg;</sup> TypeScript  Grid control refers to two different ways in which the grid's filter bar can operate when filtering criteria are applied. These modes, "OnEnter Mode" and "Immediate Mode," offer users different experiences and behaviors when interacting with the filter bar.
 
 **OnEnter Mode:**
-By settings [filterSettings->mode](../../api/grid/filterSettings/#mode) as **OnEnter**, the filter bar captures the filter criteria entered but doesn't initiate filtering until the **Enter** key is pressed. This allows multiple criteria modifications without triggering immediate filtering actions.
+By settings [filterSettings->mode](https://ej2.syncfusion.com/documentation/api/grid/filterSettings/#mode) as **OnEnter**, the filter bar captures the filter criteria entered but doesn't initiate filtering until the **Enter** key is pressed. This allows multiple criteria modifications without triggering immediate filtering actions.
 
 **Immediate Mode:**
-By settings [filterSettings->mode](../../api/grid/filterSettings/#mode) as **Immediate**, the filter bar instantly applies filtering as filter criteria are entered. Filtering actions take place as soon as criteria are input or modified, providing real-time previews of filtering results.
+By settings [filterSettings->mode](https://ej2.syncfusion.com/documentation/api/grid/filterSettings/#mode) as **Immediate**, the filter bar instantly applies filtering as filter criteria are entered. Filtering actions take place as soon as criteria are input or modified, providing real-time previews of filtering results.
 
 
 
@@ -78,7 +78,7 @@ By settings [filterSettings->mode](../../api/grid/filterSettings/#mode) as **Imm
 
 The Syncfusion<sup style="font-size:70%">&reg;</sup> TypeScript  Grid control provides an option to display filter text within the pager, indicating the current filtering status. Enabling this feature provides you with a clear understanding of the applied filters and the criteria used for filtering.
 
-To enable the display of filter text within the pager, you should set the [showFilterBarStatus](../../api/grid/filterSettings/#showfilterbarstatus) property within the [filterSettings](../../api/grid/filterSettings/) configuration.
+To enable the display of filter text within the pager, you should set the [showFilterBarStatus](https://ej2.syncfusion.com/documentation/api/grid/filterSettings/#showfilterbarstatus) property within the [filterSettings](https://ej2.syncfusion.com/documentation/api/grid/filterSettings/) configuration.
 
 
 
@@ -99,7 +99,7 @@ To enable the display of filter text within the pager, you should set the [showF
 
 In the TypeScript Grid control, you have the ability to modify the filter operator for a column directly within the user interface during the filtering process through the filter bar cell. For instance, the default operator for filtering string-type columns in the filter bar is "startswith". Now, you can customize the default operator for a specific column using the filter operator feature.
 
-To achieve this functionality, you can enable the  [showFilterBarOperator](../../api/grid/filterSettings/#showfilterbaroperator) property within the [filterSettings](../../api/grid/filterSettings/).
+To achieve this functionality, you can enable the  [showFilterBarOperator](https://ej2.syncfusion.com/documentation/api/grid/filterSettings/#showfilterbaroperator) property within the [filterSettings](https://ej2.syncfusion.com/documentation/api/grid/filterSettings/).
 
 
 
@@ -118,7 +118,7 @@ To achieve this functionality, you can enable the  [showFilterBarOperator](../..
 
 ## Prevent filtering for particular column
 
-In the TypeScript Grid, you can prevent filtering for a specific column by utilizing the [allowFiltering](../../api/grid/#allowfiltering) property of the [column](../../api/grid/column/) object and setting it to **false**. This feature is useful when you want to disable filtering options for a particular column.
+In the TypeScript Grid, you can prevent filtering for a specific column by utilizing the [allowFiltering](https://ej2.syncfusion.com/documentation/api/grid#allowfiltering) property of the [column](https://ej2.syncfusion.com/documentation/api/grid/column/) object and setting it to **false**. This feature is useful when you want to disable filtering options for a particular column.
 
 Here's an example that demonstrates how to remove the filter bar for the **CustomerID** column in TypeScript Grid:
 
@@ -141,7 +141,7 @@ Here's an example that demonstrates how to remove the filter bar for the **Custo
 
 By default, the filter bar is set to a disabled mode for template columns in the grid. However, in certain cases, you may want to hide the filter bar for a template column to provide a customized filtering experience.
 
-To hide the filter bar for a template column, you can use the [filterTemplate](../../api/grid/column/#filtertemplate) property of the [column](../../api/grid/column/). This property allows you to define a custom template for the filter bar of a column.
+To hide the filter bar for a template column, you can use the [filterTemplate](https://ej2.syncfusion.com/documentation/api/grid/column/#filtertemplate) property of the [column](https://ej2.syncfusion.com/documentation/api/grid/column/). This property allows you to define a custom template for the filter bar of a column.
 
 Here's an example that demonstrates how to hide the filter bar for a template column in the TypeScript Grid:
 
@@ -162,7 +162,7 @@ Here's an example that demonstrates how to hide the filter bar for a template co
 
 ## Filter bar template with custom control
 
-The [filterBarTemplate](../../api/grid/column/#filterbartemplate) feature in the TypeScript Grid allows you to customize the controls displayed in the filter bar. Normally, a text box is the default element rendered in the filter bar cell. This flexibility allows you to use various controls, such as datepicker, numerictextbox, combobox, and multiselect, within the filter bar based on your specific requirements.
+The [filterBarTemplate](https://ej2.syncfusion.com/documentation/api/grid/column/#filterbartemplate) feature in the TypeScript Grid allows you to customize the controls displayed in the filter bar. Normally, a text box is the default element rendered in the filter bar cell. This flexibility allows you to use various controls, such as datepicker, numerictextbox, combobox, and multiselect, within the filter bar based on your specific requirements.
 
 To utilize this feature, you can define a custom template for the filter bar by setting the `filterBarTemplate` property of a column in your TypeScript application:
 

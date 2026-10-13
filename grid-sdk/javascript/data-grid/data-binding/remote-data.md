@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Remote data in JavaScript Grid control | Syncfusion
 description: Learn here all about Remote data in Syncfusion JavaScript Grid control of Syncfusion Essential JS 2 and more.
@@ -10,7 +10,7 @@ domainurl: https://help.syncfusion.com/grid-sdk
 
 # Remote data in JavaScript Grid control
 
-In JavaScript Grid component, binding remote data is a fundamental aspect that enhances the efficiency of data interaction. This process involves assigning the service data, represented as an instance of `DataManager`, to the [dataSource](../../api/grid#datasource) property of the JavaScript Grid component. By doing so, you enable seamless interaction with a remote data source, and this is achieved by specifying the endpoint URL where the data is hosted.
+In JavaScript Grid component, binding remote data is a fundamental aspect that enhances the efficiency of data interaction. This process involves assigning the service data, represented as an instance of `DataManager`, to the [dataSource](https://ej2.syncfusion.com/javascript/documentation/api/grid#datasource) property of the JavaScript Grid component. By doing so, you enable seamless interaction with a remote data source, and this is achieved by specifying the endpoint URL where the data is hosted.
 
 Additionally, leverage the power for data retrieval and operations, enhancing event handling, asynchronous programming, and concurrent value management in JavaScript applications.
 
@@ -18,7 +18,7 @@ Additionally, leverage the power for data retrieval and operations, enhancing ev
 
 The custom binding feature in the JavaScript Grid enables you to manage your own custom API for handling data processing externally and then binding the resulting data to the Grid. This allows you to implement your own custom data logic to your application's requirements. When using custom binding, the Grid expects the result of the custom logic to be an object with properties `result` and `count`. The `result` property should contain the data to be displayed in the Grid, while the `count` property indicates the total number of records in the dataset for your application. To utilize custom binding, you can handle the  [DataManager](../../data). The DataManager integrates seamlessly with the JavaScript Grid to manage custom data processing and binding. 
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Grid component offers a range of powerful features for handling grid actions such as **paging**, **grouping**, **sorting** and **filtering**. These actions trigger the [dataStateChange](../../api/grid#datastatechange) event. The feature for CRUD action such as **Create**, **Read**, **Update**, **Delete** operations. This action trigger the [dataSourceChanged](../../api/grid#datasourcechanged) event. This event provides you with the opportunity to manage and manipulate data according to the individual's interactions. 
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Grid component offers a range of powerful features for handling grid actions such as **paging**, **grouping**, **sorting** and **filtering**. These actions trigger the [dataStateChange](https://ej2.syncfusion.com/javascript/documentation/api/grid#datastatechange) event. The feature for CRUD action such as **Create**, **Read**, **Update**, **Delete** operations. This action trigger the [dataSourceChanged](https://ej2.syncfusion.com/javascript/documentation/api/grid#datasourcechanged) event. This event provides you with the opportunity to manage and manipulate data according to the individual's interactions. 
 
 **Using the dataStateChange event**
 
@@ -548,7 +548,7 @@ export function getOrders(state, action) {
 
 In JavaScript, lazy loading refers to the technique of loading data dynamically when they are needed, instead of loading everything upfront. Lazy load grouping allows you to load and display grouped data efficiently by fetching only the required data on demand.  
 
-To enable this feature, you need to set the [groupSettings.enableLazyLoading](../../api/grid/groupSettings#enableLazyLoading) property to **true**. Also, you need to manage the state based on the initial grid action as follows.
+To enable this feature, you need to set the [groupSettings.enableLazyLoading](https://ej2.syncfusion.com/javascript/documentation/api/grid/groupSettings#enableLazyLoading) property to **true**. Also, you need to manage the state based on the initial grid action as follows.
 
 ```typescript
 const groupSettings = { enableLazyLoading: true, columns: ['ProductName'], showGroupedColumn: true, };
@@ -638,9 +638,9 @@ To implement CRUD operations using Syncfusion<sup style="font-size:70%">&reg;</s
 
 1. **Configure grid settings:** Set up the necessary grid settings, such as editing, adding, and deleting records. Define the toolbar options to facilitate your interactions.
 
-2. **Handle data state changes:** Utilize the [dataStateChange](../../api/grid#datastatechange) event to respond to changes in the grid’s data state. This event is triggered whenever you interact with the grid, such as paging or sorting.
+2. **Handle data state changes:** Utilize the [dataStateChange](https://ej2.syncfusion.com/javascript/documentation/api/grid#datastatechange) event to respond to changes in the grid’s data state. This event is triggered whenever you interact with the grid, such as paging or sorting.
 
-3. **Execute CRUD operations:** Within the event handler for [dataSourceChanged](../../api/grid#datasourcechanged), implement logic to handle various CRUD actions based on the action or requestType property of the event arguments.
+3. **Execute CRUD operations:** Within the event handler for [dataSourceChanged](https://ej2.syncfusion.com/javascript/documentation/api/grid#datasourcechanged), implement logic to handle various CRUD actions based on the action or requestType property of the event arguments.
 
 4. **Call endEdit method:** After performing CRUD operations (adding, editing, or deleting), call the endEdit method to signal the completion of the operation and update the grid accordingly.
 
@@ -740,16 +740,16 @@ The following screenshot represents the grid action with custom binding
 
 ![Grid with Custom Binding](../images/databining/remote-custom-binding.gif)
 
-> * While working with grid edit operation, defining the [isPrimaryKey](../../api/grid#isprimarykey) property of column is a mandatory step. In case the primary key column is not defined, the edit or delete action will take place on the first row of the grid.
+> * While working with grid edit operation, defining the [isPrimaryKey](https://ej2.syncfusion.com/javascript/documentation/api/grid#isprimarykey) property of column is a mandatory step. In case the primary key column is not defined, the edit or delete action will take place on the first row of the grid.
 > * Need to maintain the same instance for all grid actions.
 
 ## Export all records in client side
 
 Export all records is especially beneficial when dealing with large datasets that need to be exported for offline analysis or sharing.
 
-By default, the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid component exports only the records on the current page. However, the JavaScript Grid component allows you to export all records, including those from multiple pages, by configuring the [pdfExportProperties](../../api/grid/pdfExportProperties) and [excelExportProperties](../../api/grid/excelExportProperties).
+By default, the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid component exports only the records on the current page. However, the JavaScript Grid component allows you to export all records, including those from multiple pages, by configuring the [pdfExportProperties](https://ej2.syncfusion.com/javascript/documentation/api/grid/pdfExportProperties) and [excelExportProperties](https://ej2.syncfusion.com/javascript/documentation/api/grid/excelExportProperties).
 
-To export all records, including those from multiple pages, configure the [pdfExportProperties.dataSource](../../api/grid/pdfExportProperties#datasource) for PDF exporting and [excelExportProperties.dataSource](../../api/grid/excelExportProperties#datasource) for Excel exporting within the [toolbarClick](../../api/grid#toolbarclick) event handler. Inside this event, set the `dataSource` property of `pdfExportProperties` and `excelExportProperties` for PDF and Excel exporting to include all records.
+To export all records, including those from multiple pages, configure the [pdfExportProperties.dataSource](https://ej2.syncfusion.com/javascript/documentation/api/grid/pdfExportProperties#datasource) for PDF exporting and [excelExportProperties.dataSource](https://ej2.syncfusion.com/javascript/documentation/api/grid/excelExportProperties#datasource) for Excel exporting within the [toolbarClick](https://ej2.syncfusion.com/javascript/documentation/api/grid#toolbarclick) event handler. Inside this event, set the `dataSource` property of `pdfExportProperties` and `excelExportProperties` for PDF and Excel exporting to include all records.
 
 **Excel Exporting**
 
@@ -810,7 +810,7 @@ The following code example shows how to export all records in client side:
 
 The Syncfusion<sup style="font-size:70%">&reg;</sup> Grid component allows you to include custom parameters in data requests. This feature is particularly useful when you need to provide additional information to the server enhanced processing.
 
-By utilizing the [query](../../api/grid#query) property of the grid along with the `addParams` method of the Query class, you can easily incorporate custom parameters into data requests for every grid action.
+By utilizing the [query](https://ej2.syncfusion.com/javascript/documentation/api/grid#query) property of the grid along with the `addParams` method of the Query class, you can easily incorporate custom parameters into data requests for every grid action.
 
 To enable custom parameters in data requests for the grid component, follow these steps:
 

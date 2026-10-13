@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Adding header and footer in JavaScript Grid control | Syncfusion
 description: Learn here all about Adding header and footer in Syncfusion JavaScript Grid control of Syncfusion Essential JS 2 and more.
@@ -22,11 +22,11 @@ The footer section, on the other hand, is usually positioned at the bottom of ea
 
 To add text in the header or footer of the exported PDF document, follow these steps:
 
-1. Access the [pdfExportProperties](../../api/grid/pdfExportProperties) of the Grid control.
-2. Set the [header](../../api/grid/pdfExportProperties#header) or [footer](../../api/grid/pdfExportProperties#footer) property to a string value representing the desired text.
+1. Access the [pdfExportProperties](https://ej2.syncfusion.com/javascript/documentation/api/grid/pdfExportProperties) of the Grid control.
+2. Set the [header](https://ej2.syncfusion.com/javascript/documentation/api/grid/pdfExportProperties#header) or [footer](https://ej2.syncfusion.com/javascript/documentation/api/grid/pdfExportProperties#footer) property to a string value representing the desired text.
 3. Trigger the PDF export operation.
 
-The following code example demostrates how to add the header in the exported PDF document. 
+The following code example demonstrates how to add the header in the exported PDF document. 
 
 
 
@@ -54,7 +54,7 @@ var exportProperties = {
 
 When exporting data from the JavaScript Grid to a PDF document, you have an option to add a line in the header and footer section. This feature allows you to enhance the visual appearance of the exported PDF document and create a clear separation between the header and the content.
 
-This can be achieved using the [pdfExportProperties](../../api/grid/pdfExportProperties) property of the Grid. You can customize the line style using different supported line styles listed below:
+This can be achieved using the [pdfExportProperties](https://ej2.syncfusion.com/javascript/documentation/api/grid/pdfExportProperties) property of the Grid. You can customize the line style using different supported line styles listed below:
 
 * Dash
 * Dot
@@ -62,9 +62,9 @@ This can be achieved using the [pdfExportProperties](../../api/grid/pdfExportPro
 * DashDotDot
 * Solid
 
-To add a line in the header or footer of the exported PDF document, you can access the `header.contents` or `footer.contents` property of the [header](../../api/grid/pdfExportProperties#header) or [footer](../../api/grid/pdfExportProperties#footer) in the `pdfExportProperties` property of the grid. 
+To add a line in the header or footer of the exported PDF document, you can access the `header.contents` or `footer.contents` property of the [header](https://ej2.syncfusion.com/javascript/documentation/api/grid/pdfExportProperties#header) or [footer](https://ej2.syncfusion.com/javascript/documentation/api/grid/pdfExportProperties#footer) in the `pdfExportProperties` property of the grid. 
 
-The following code example demostrates how to draw a line in the header of the exported PDF document. 
+The following code example demonstrates how to draw a line in the header of the exported PDF document. 
 
 
  
@@ -103,7 +103,7 @@ var exportProperties = {
 
 When exporting data from the JavaScript Grid to a PDF document, you have an option to include page numbers in the header and footer section. This feature allows you to provide a reference to the page number for better document navigation.
 
-This can be achieved using the [pdfExportProperties](../../api/grid/pdfExportProperties) property of the Grid. You can choose from different types of supported page number listed below:
+This can be achieved using the [pdfExportProperties](https://ej2.syncfusion.com/javascript/documentation/api/grid/pdfExportProperties) property of the Grid. You can choose from different types of supported page number listed below:
 
 * LowerLatin - a, b, c,
 * UpperLatin - A, B, C,
@@ -112,9 +112,9 @@ This can be achieved using the [pdfExportProperties](../../api/grid/pdfExportPro
 * Number - 1,2,3,
 * Arabic - 1,2,3.
 
-To add a page number in the header or footer of the exported PDF document, you can access the `header.contents` or `footer.contents` property of the [header](../../api/grid/pdfExportProperties#header) or [footer](../../api/grid/pdfExportProperties#footer) in the `pdfExportProperties` property of the grid. 
+To add a page number in the header or footer of the exported PDF document, you can access the `header.contents` or `footer.contents` property of the [header](https://ej2.syncfusion.com/javascript/documentation/api/grid/pdfExportProperties#header) or [footer](https://ej2.syncfusion.com/javascript/documentation/api/grid/pdfExportProperties#footer) in the `pdfExportProperties` property of the grid. 
 
-The following code example demostrates how to add a page number in the footer of the exported PDF document.
+The following code example demonstrates how to add a page number in the footer of the exported PDF document.
 
 
  
@@ -144,7 +144,7 @@ The following code example demostrates how to add a page number in the footer of
 
 The JavaScript Grid have an option to include an image in the header and footer section when exporting data from the Grid to PDF document. This feature allows you to add a custom logo, branding, or any other relevant image to the exported document.
 
-You can use a base64 string with the .jpeg format to represent the image. This can be achieved using the [pdfExportProperties](../../api/grid/pdfExportProperties) property of the Grid control.
+You can use a base64 string with the .jpeg format to represent the image. This can be achieved using the [pdfExportProperties](https://ej2.syncfusion.com/javascript/documentation/api/grid/pdfExportProperties) property of the Grid control.
 
 To insert an image in the header or footer of the exported PDF document, follow these steps:
 
@@ -198,7 +198,7 @@ The following example demonstrates how to add a header and footer to the exporte
 
 When exporting data from the JavaScript Grid to a PDF document, you have an option to repeat the column header on every page. This feature ensures that the column header remains visible and easily identifiable, even when the data spans multiple pages in the exported PDF document.
 
-By default, the column header is occurs only on the first page of the PDF document. However, you can enable the `repeatHeader` property of the **pdfGrid** object to **true** which display the column header on every page. This can be achieved using the [pdfHeaderQueryCellInfo](../../api/grid#pdfheaderquerycellinfo) event of the Grid.
+By default, the column header is occurs only on the first page of the PDF document. However, you can enable the `repeatHeader` property of the **pdfGrid** object to **true** which display the column header on every page. This can be achieved using the [pdfHeaderQueryCellInfo](https://ej2.syncfusion.com/javascript/documentation/api/grid#pdfheaderquerycellinfo) event of the Grid.
 
 The following example demonstrates how to repeat the column header on every page of the exported PDF document using the `pdfHeaderQueryCellInfo` event.
 
