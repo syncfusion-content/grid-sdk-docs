@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Filter bar in JavaScript Grid control | Syncfusion
 description: Learn here all about Filter bar in Syncfusion JavaScript Grid control of Syncfusion Essential JS 2 and more.
@@ -32,20 +32,7 @@ N/A |N/A |Always **equal** operator will be used for Boolean filter |Boolean
 
 The following example demonstrates how to activate default filtering in the grid.
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/grid-cs64/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/grid-cs64/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grid-cs64" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -57,7 +44,7 @@ The following example demonstrates how to activate default filtering in the grid
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grid-cs64" %}
-{% endif %}
+
 
 > If the [filterSettings->type](../../api/grid/filtersettings#type) is not explicitly specified, it defaults to **FilterBar**.
 
@@ -71,20 +58,7 @@ By settings [filterSettings->mode](../../api/grid/filterSettings#mode) as **OnEn
 **Immediate Mode:**
 By settings [filterSettings->mode](../../api/grid/filterSettings#mode) as **Immediate**, the filter bar instantly applies filtering as filter criteria are entered. Filtering actions take place as soon as criteria are input or modified, providing real-time previews of filtering results.
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/filter-bar-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/filter-bar-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/filter-bar-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -96,7 +70,7 @@ By settings [filterSettings->mode](../../api/grid/filterSettings#mode) as **Imme
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/filter-bar-cs1" %}
-{% endif %}
+
 
 ## Display filter text in pager
 
@@ -104,20 +78,7 @@ The Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript  Grid control pr
 
 To enable the display of filter text within the pager, you should set the [showFilterBarStatus](../../api/grid/filterSettings#showfilterbarstatus) property within the [filterSettings](../../api/grid/filterSettings/) configuration.
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/filter-bar-cs2/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/filter-bar-cs2/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/filter-bar-cs2" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -129,7 +90,7 @@ To enable the display of filter text within the pager, you should set the [showF
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/filter-bar-cs2" %}
-{% endif %}
+
 
 ## Show or hide filter bar operator in filter bar cell
 
@@ -137,20 +98,7 @@ In the JavaScript Grid control, you have the ability to modify the filter operat
 
 To achieve this functionality, you can enable the  [showFilterBarOperator](../../api/grid/filterSettings#showfilterbaroperator) property within the [filterSettings](../../api/grid/filterSettings/).
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/filter-bar-cs3/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/filter-bar-cs3/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/filter-bar-cs3" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -162,7 +110,7 @@ To achieve this functionality, you can enable the  [showFilterBarOperator](../..
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/filter-bar-cs3" %}
-{% endif %}
+
 
 ## Prevent filtering for particular column
 
@@ -170,20 +118,7 @@ In the JavaScript Grid, you can prevent filtering for a specific column by utili
 
 Here's an example that demonstrates how to remove the filter bar for the **CustomerID** column in JavaScript Grid:
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/filter-bar-cs4/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/filter-bar-cs4/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/filter-bar-cs4" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -195,7 +130,7 @@ Here's an example that demonstrates how to remove the filter bar for the **Custo
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/filter-bar-cs4" %}
-{% endif %}
+
 
 ## Hide filter bar for template column
 
@@ -205,20 +140,7 @@ To hide the filter bar for a template column, you can use the [filterTemplate](.
 
 Here's an example that demonstrates how to hide the filter bar for a template column in the JavaScript Grid:
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/filter-bar-cs5/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/filter-bar-cs5/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/filter-bar-cs5" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -230,7 +152,7 @@ Here's an example that demonstrates how to hide the filter bar for a template co
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/filter-bar-cs5" %}
-{% endif %}
+
 
 ## Filter bar template with custom control
 
@@ -238,20 +160,7 @@ The [filterBarTemplate](../../api/grid/column#filterbartemplate) feature in the 
 
 To utilize this feature, you can define a custom template for the filter bar by setting the `filterBarTemplate` property of a column in your JavaScript application:
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/filter-template-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/filter-template-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/filter-template-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -263,7 +172,7 @@ To utilize this feature, you can define a custom template for the filter bar by 
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/filter-template-cs1" %}
-{% endif %}
+
 
 ## See also
 

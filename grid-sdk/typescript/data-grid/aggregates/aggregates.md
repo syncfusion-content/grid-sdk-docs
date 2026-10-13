@@ -25,7 +25,7 @@ By default, the aggregate values are displayed in the footer, group, and caption
 
 * **[groupCaptionTemplate](../../api/grid/aggregateColumn#groupcaptiontemplate):** Use this property to display the aggregate value in the group caption cell. You can define a custom template to format the aggregate value.
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -38,19 +38,7 @@ By default, the aggregate values are displayed in the footer, group, and caption
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/aggregates-values-cs1" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/aggregates-values-cs1/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/aggregates-values-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/aggregates-values-cs1" %}
-{% endif %}
 
 > * When using local data, the total summary is calculated based on the entire dataset available in the grid. The aggregate values will reflect calculations across all the rows in the grid.
 
@@ -72,7 +60,7 @@ The available built-in aggregate types are:
 
 Here is an example that demonstrates how to use built-in aggregates types in the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid:
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -85,19 +73,7 @@ Here is an example that demonstrates how to use built-in aggregates types in the
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/aggregates-buildin-type-cs1" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/aggregates-buildin-type-cs1/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/aggregates-buildin-type-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/aggregates-buildin-type-cs1" %}
-{% endif %}
 
 ## Multiple aggregates for a column
 
@@ -109,7 +85,7 @@ You can use multiple aggregates for a single column in the TypeScript Grid by sp
 
 Here's an example of how to use multiple aggregates in the TypeScript Grid:
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -121,17 +97,3 @@ Here's an example of how to use multiple aggregates in the TypeScript Grid:
 {% endtabs %}
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/aggregates-multiple-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/aggregates-multiple-cs1/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/aggregates-multiple-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/aggregates-multiple-cs1" %}
-{% endif %}

@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Lazy load grouping in JavaScript Grid control | Syncfusion
 description: Learn here all about Lazy load grouping in Syncfusion JavaScript Grid control of Syncfusion Essential JS 2 and more.
@@ -18,20 +18,7 @@ To enable this feature, need to set the [groupSettings->enableLazyLoading](../..
 
 The following example demonstrates how to enable the lazy load grouping feature by setting `groupSettings.enableLazyLoading` property.
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/lazy-load-group-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/lazy-load-group-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/lazy-load-group-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -43,7 +30,7 @@ The following example demonstrates how to enable the lazy load grouping feature 
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/lazy-load-group-cs1" %}
-{% endif %}
+
 
 ## Handling the lazy load grouping at server-side
 
@@ -128,20 +115,7 @@ To enable this feature, you need to set the [groupSettings->enableLazyLoading](.
 
 The following example demonstrates how to enable the lazy load grouping with infinite scrolling feature using the `groupSettings.enableLazyLoading` and `enableInfiniteScrolling` properties.
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/lazy-load-group-cs2/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/lazy-load-group-cs2/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/lazy-load-group-cs2" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -153,7 +127,7 @@ The following example demonstrates how to enable the lazy load grouping with inf
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/lazy-load-group-cs2" %}
-{% endif %}
+
 
 > * The [enableInfiniteScrolling](../../api/grid#enableinfinitescrolling) property is optional and can be set to **true** or **false** based on the requirement.
 > * When enabling the `enableInfiniteScrolling` feature, it is necessary to define the [height](../../api/grid#height) property.
@@ -174,20 +148,7 @@ To enable this feature, you need to set the [groupSettings->enableLazyLoading](.
 
 The following example demonstrates how to enable the lazy load grouping with virtual scrolling feature using the `groupSettings.enableLazyLoading` and `enableVirtualization` properties.
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/lazy-load-group-virtualscroll/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/lazy-load-group-virtualscroll/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/lazy-load-group-virtualscroll" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -199,7 +160,7 @@ The following example demonstrates how to enable the lazy load grouping with vir
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/lazy-load-group-virtualscroll" %}
-{% endif %}
+
 
 > When using the `enableVirtualization` feature, it is necessary to define the [height](../../documentation/api/grid#height) property.
 

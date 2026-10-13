@@ -55,7 +55,7 @@ The above code snippet, the **.e-grid** class targets the root element of the Ty
 
 In the following sample, the font family of grid content is changed to **cursive**, and the background color of rows, selected rows, alternate rows, and row hovering color is modified using the below CSS styles.
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -68,19 +68,7 @@ In the following sample, the font family of grid content is changed to **cursive
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/style-appearance-cs1" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/style-appearance-cs1/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/style-appearance-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/style-appearance-cs1" %}
-{% endif %}
 
 ## See Also
 

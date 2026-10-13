@@ -13,9 +13,9 @@ domainurl: https://help.syncfusion.com/grid-sdk
 
 The TypeScript Grid control allows you to calculate and display aggregate values in the footer cells. The footer aggregate value is calculated from all the rows in the grid. You can use the [footerTemplate](../../api/grid/aggregateColumn#footertemplate) property to render the aggregate value in the footer cells.
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/grid-sdk/typescript/grid/aggregates-cs2/index.ts %}
 {% endhighlight %}
@@ -26,19 +26,7 @@ The TypeScript Grid control allows you to calculate and display aggregate values
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/aggregates-cs2" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/aggregates-cs2/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/aggregates-cs2/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/aggregates-cs2" %}
-{% endif %}
 
 > * Use the template reference variable name **#footerTemplate** to specify the footer template.
 > * Inside the template, access the aggregate values using their corresponding [type](../../api/grid/aggregateColumn#type) name. For example, to access the sum aggregate value, use **Sum**.
@@ -47,9 +35,9 @@ The TypeScript Grid control allows you to calculate and display aggregate values
 
 To format the aggregate value result in the TypeScript Grid control, you can use the [format](../../api/grid/aggregateColumn#format) property of the [AggregateColumn](../../api/grid/aggregateColumn). The `format` property allows you to specify a format string that determines how the aggregate value will be displayed.
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/grid-sdk/typescript/grid/aggregates-cs3/index.ts %}
 {% endhighlight %}
@@ -60,19 +48,7 @@ To format the aggregate value result in the TypeScript Grid control, you can use
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/aggregates-cs3" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/aggregates-cs3/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/aggregates-cs3/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/aggregates-cs3" %}
-{% endif %}
 
 ## How to place aggregates on top of the Grid
 
@@ -80,7 +56,7 @@ By default, the aggregated values are placed at the bottom of the footer section
 
 In the following, footer content is appended to the header content using the `dataBound` event of the Grid.
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -92,17 +68,3 @@ In the following, footer content is appended to the header content using the `da
 {% endtabs %}
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/aggregates-cs4" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/aggregates-cs4/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/aggregates-cs4/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/aggregates-cs4" %}
-{% endif %}

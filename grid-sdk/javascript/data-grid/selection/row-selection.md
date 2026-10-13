@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Row selection in JavaScript Grid control | Syncfusion
 description: Learn here all about Row selection in Syncfusion JavaScript Grid control of Syncfusion Essential JS 2 and more.
@@ -22,20 +22,7 @@ To enable single row selection, set the [selectionSettings->mode](../../api/grid
 
 Here's an example of how to enable single row selection using properties:
 
- {% if page.publishingplatform == "typescript" %}
-
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/grid-cs182/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/grid-cs182/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grid-cs182" %}
-
-{% elsif page.publishingplatform == "javascript" %}
+ 
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -47,7 +34,7 @@ Here's an example of how to enable single row selection using properties:
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grid-cs182" %}
-{% endif %}
+
 
 ## Multiple row selection 
 
@@ -57,20 +44,7 @@ To enable multiple row selection, set the [selectionSettings->mode](../../api/gr
 
 Here's an example of how to enable multiple rows selection using properties:
 
- {% if page.publishingplatform == "typescript" %}
-
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/selected-index-cs3/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/selected-index-cs3/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/selected-index-cs3" %}
-
-{% elsif page.publishingplatform == "javascript" %}
+ 
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -82,7 +56,7 @@ Here's an example of how to enable multiple rows selection using properties:
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/selected-index-cs3" %}
-{% endif %}
+
 
 ## Select row at initial rendering
 
@@ -90,20 +64,7 @@ You have the ability to select a specific row during the initial rendering of th
 
 In the following example, it demonstrates how to select a row at initial rendering:
 
- {% if page.publishingplatform == "typescript" %}
-
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/grid-cs162/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/grid-cs162/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grid-cs162" %}
-
-{% elsif page.publishingplatform == "javascript" %}
+ 
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -115,7 +76,7 @@ In the following example, it demonstrates how to select a row at initial renderi
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grid-cs162" %}
-{% endif %}
+
 
 ## Select rows in any page based on index value 
 
@@ -127,20 +88,7 @@ Additionally, by handling the [actionComplete](../../api/grid#actioncomplete) ev
 
 The following example demonstrates how to select rows in any page based on index value using `actionComplete` and `change` event:
 
- {% if page.publishingplatform == "typescript" %}
-
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/grid-cs184/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/grid-cs184/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grid-cs184" %}
-
-{% elsif page.publishingplatform == "javascript" %}
+ 
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -152,7 +100,7 @@ The following example demonstrates how to select rows in any page based on index
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grid-cs184" %}
-{% endif %}
+
 
 ## Multiple row selection by single click on row 
 
@@ -162,20 +110,7 @@ To enable the simple multiple row selection, you need to set the [selectionSetti
 
 The following example demonstrates how to enable multiple row selection with a single click on the Grid row using `enableSimpleMultiRowSelection` property:
 
- {% if page.publishingplatform == "typescript" %}
-
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/grid-cs185/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/grid-cs185/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grid-cs185" %}
-
-{% elsif page.publishingplatform == "javascript" %}
+ 
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -187,7 +122,7 @@ The following example demonstrates how to enable multiple row selection with a s
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grid-cs185" %}
-{% endif %}
+
 
 ## Select rows externally 
 
@@ -201,20 +136,7 @@ To achieve single row selection, you can use the [selectRow](../../api/grid#sele
 
 The following example demonstrates how to select a single row within the Grid by obtaining the selected row index through a textbox control and passing these row index as argument to the `selectRow` method. When the button event is triggered by clicking the **Select Row** button, a single row is selected within the Grid:
 
- {% if page.publishingplatform == "typescript" %}
-
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/grid-cs186/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/grid-cs186/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grid-cs186" %}
-
-{% elsif page.publishingplatform == "javascript" %}
+ 
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -226,7 +148,7 @@ The following example demonstrates how to select a single row within the Grid by
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grid-cs186" %}
-{% endif %}
+
 
 ### Multiple rows selection
 
@@ -236,20 +158,7 @@ To achieve multiple row selection, you can use the [selectRows](../../api/grid/s
 
 The following example, demonstrates how to select multiple rows in the Grid by calling the `selectRows` method within the button click event and passing an array of row indexes as arguments.
 
- {% if page.publishingplatform == "typescript" %}
-
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/grid-cs187/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/grid-cs187/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grid-cs187" %}
-
-{% elsif page.publishingplatform == "javascript" %}
+ 
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -261,7 +170,7 @@ The following example, demonstrates how to select multiple rows in the Grid by c
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grid-cs187" %}
-{% endif %}
+
 
 ### Range of rows selection 
 
@@ -271,20 +180,7 @@ To achieve range of row selection, you can use the [selectRowsByRange](../../api
  
 The following example, demonstrates how to select a range of rows within the Grid by obtaining the selected rows start index and end index through textbox controls. Then, pass these start index and end index as arguments to the `selectRowsByRange` method. When you trigger the button event by clicking the **Select Rows** button, a range of rows is selected within the Grid.
 
- {% if page.publishingplatform == "typescript" %}
-
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/grid-cs188/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/grid-cs188/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grid-cs188" %}
-
-{% elsif page.publishingplatform == "javascript" %}
+ 
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -296,7 +192,7 @@ The following example, demonstrates how to select a range of rows within the Gri
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grid-cs188" %}
-{% endif %}
+
 
 ## Select grid rows based on certain condition
 
@@ -304,20 +200,7 @@ You can programmatically select specific rows in the JavaScript Grid control bas
 
 In the below demo, we have selected the grid rows only when **EmployeeID** column value greater than **3**.
 
- {% if page.publishingplatform == "typescript" %}
-
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/grid-cs189/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/grid-cs189/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grid-cs189" %}
-
-{% elsif page.publishingplatform == "javascript" %}
+ 
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -329,7 +212,7 @@ In the below demo, we have selected the grid rows only when **EmployeeID** colum
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grid-cs189" %}
-{% endif %}
+
 
 ## How to get selected row indexes 
 
@@ -339,20 +222,7 @@ To achieve this, you can leverage the [getSelectedRowIndexes](../../api/grid#get
 
 The following example demonstrates how to get selected row indexes using  `getSelectedRowIndexes` method: 
 
- {% if page.publishingplatform == "typescript" %}
-
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/selected-index-cs2/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/selected-index-cs2/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/selected-index-cs2" %}
-
-{% elsif page.publishingplatform == "javascript" %}
+ 
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -364,7 +234,7 @@ The following example demonstrates how to get selected row indexes using  `getSe
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/selected-index-cs2" %}
-{% endif %}
+
 
 ## How to get selected records on various pages 
 
@@ -376,20 +246,7 @@ To retrieve the selected records from different pages, you can use the  [getSele
 
 The following example demonstrates how to retrieve selected records from various pages using the `getSelectedRecords` method and display **OrderID** in a dialog when a button is clicked:
 
- {% if page.publishingplatform == "typescript" %}
-
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/grid-cs163/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/grid-cs163/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grid-cs163" %}
-
-{% elsif page.publishingplatform == "javascript" %}
+ 
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -401,7 +258,7 @@ The following example demonstrates how to retrieve selected records from various
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grid-cs163" %}
-{% endif %}
+
 
 > To persist the grid selection, it is necessary to define any one of the columns as a primary key using the [columns](../../api/grid#columns) property.
 
@@ -413,20 +270,7 @@ To retrieve the selected records, you can use the [getSelectedRecords](../../api
 
 Here's an example that displays the selected row count using the `getSelectedRecords` method:
 
- {% if page.publishingplatform == "typescript" %}
-
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/selected-records-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/selected-records-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/selected-records-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
+ 
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -438,7 +282,7 @@ Here's an example that displays the selected row count using the `getSelectedRec
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/selected-records-cs1" %}
-{% endif %}
+
 
 ## Clear row selection programmatically 
 
@@ -448,20 +292,7 @@ Clearing row selection programmatically in the Grid control is a useful feature 
 
 The following example demonstrates how to clear row selection by calling the [clearRowSelection](../../api/grid#clearrowselection) method in the button click event.
 
- {% if page.publishingplatform == "typescript" %}
-
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/clear-selection-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/clear-selection-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/clear-selection-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
+ 
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -473,7 +304,7 @@ The following example demonstrates how to clear row selection by calling the [cl
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/clear-selection-cs1" %}
-{% endif %}
+
 
 ## Row selection events 
 
@@ -489,20 +320,7 @@ The Grid provides several events related to row selection that allow you to resp
 
 In the following example, row selection is canceled when the value of **CustomerID** is equal to **VINET** within the `rowSelecting` event. The background color changes to green when the value of **Freight** is greater than 10 and less than or equal to 140, triggering the `rowDeselected` event. The background color changes to red when the value of **Freight** is less than or equal to 10 during the `rowDeselected` event. Furthermore, the background color changes to yellow when the value of **Freight** is greater than 140 during the `rowDeselected` event. A notification message is displayed to indicate which event was triggered whenever a row is selected.
 
- {% if page.publishingplatform == "typescript" %}
-
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/grid-cs192/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/grid-cs192/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grid-cs192" %}
-
-{% elsif page.publishingplatform == "javascript" %}
+ 
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -514,7 +332,7 @@ In the following example, row selection is canceled when the value of **Customer
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grid-cs192" %}
-{% endif %}
+
 
 ## Pass selected records to server using AJAX
 
@@ -522,46 +340,16 @@ The Syncfusion JavaScript Grid allows you to select multiple or single records a
 
 To achieve passing selected records to the server using AJAX requests in the Syncfusion JavaScript Grid, follow these steps:
 
-{% if page.publishingplatform == "typescript" %}
- 
-**Step 1:** Open Visual Studio and create an project followed by this [link](https://ej2.syncfusion.com/documentation/grid/connecting-to-adaptors/web-api-adaptor#creating-an-api-service) and named **SelectedRecord**. 
 
-**Step 2 :** Create a simple JavaScript Grid by following the [Getting Started](https://ej2.syncfusion.com/documentation/grid/getting-started) documentation link.
-
- {% elsif page.publishingplatform == "javascript" %}
  
 **Step 1:** Open Visual Studio and create an project followed by this [link](https://ej2.syncfusion.com/javascript/documentation/grid/connecting-to-adaptors/web-api-adaptor#creating-an-api-service) and named **SelectedRecord**. 
 
 **Step 2 :** Create a simple JavaScript Grid by following the [Getting Started](https://ej2.syncfusion.com/javascript/documentation/grid/getting-started) documentation link.
 
-{% endif %}
+
 
 **Step 3:** In your JavaScript control HTML file (e.g., **index.html**), add a button to trigger the AJAX call and include the Syncfusion JavaScript Grid with necessary configurations.
-{% if page.publishingplatform == "typescript" %}
- 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <title>EJ2 Grid</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Typescript Grid Control" />
-    <meta name="author" content="Syncfusion" />
-    <link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/material3.css" rel="stylesheet" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
-    <script src="https://cdn.syncfusion.com/ej2/syncfusion-helper.js" type="text/javascript"></script>
-</head>
-<body>
-    <div id='container'>
-        <button id="sendRecords">Pass the selected records to controller</button>
-        <div id='Grid'></div>
-    </div>
-</body>
-</html>
-```
 
- {% elsif page.publishingplatform == "javascript" %}
  
 ```html
 <!DOCTYPE html>
@@ -586,58 +374,9 @@ To achieve passing selected records to the server using AJAX requests in the Syn
 </body>
 </html>
 ```
-{% endif %}
-
-{% if page.publishingplatform == "typescript" %}
-
-**Step 4:** In your JavaScript control (**index.ts**), retrieve the button element and add an event listener. When clicked, retrieve the selected records using the [getSelectedRecords](../../api/grid#getselectedrecords) method from the Syncfusion Platform_Name## Grid and send them to the server using AJAX. Add the following code:
- 
-```ts
-import { Grid, Selection } from '@syncfusion/ej2-grids';
-import { DataManager, UrlAdaptor } from '@syncfusion/ej2-data';
-import { Ajax } from '@syncfusion/ej2-base';
-
-let data: DataManager = new DataManager({
-    url: 'https://localhost:****/api/Grid', // Replace your hosted link.
-    adaptor: new UrlAdaptor()
-});
 
 
-let grid: Grid = new Grid({
-    dataSource: data,
-    selectionSettings: { type: 'Multiple' },
-    columns: [
-        { field: 'OrderID', headerText: 'Order ID', textAlign: 'Right', width: 120, isPrimaryKey: true, type: 'number' },
-        { field: 'CustomerID', width: 140, headerText: 'Customer ID', type: 'string' },
-        { field: 'ShipCity', headerText: 'Ship City', width: 140 },
-        { field: 'ShipCountry', headerText: 'Ship Country', width: 140 }
-    ]
-});
-grid.appendTo('#Grid');
 
-(document.getElementById('sendRecords') as HTMLElement).addEventListener('click', function () {
-    if (grid) {
-        let selectedRecords = grid.getSelectedRecords();
-        let rows = JSON.stringify(selectedRecords);
-
-        let ajax = new Ajax({
-            url: 'https://localhost:****/api/Grid/SelectRecord', // Replace your hosted link.
-            type: 'POST',
-            contentType: 'application/json; charset=utf-8',
-            data: rows,
-        });
-        ajax.onSuccess = (response: string) => {
-            console.log('Data sent successfully:', response);
-        };
-        ajax.onFailure = (error: string) => {
-            console.error('Error sending data:', error);
-        };
-        ajax.send();
-    }
-});
-```
-
-{% elsif page.publishingplatform == "javascript" %}
  
 **Step 4:** In your JavaScript control (**index.js**), retrieve the button element and add an event listener. When clicked, retrieve the selected records using the [getSelectedRecords](../../api/grid#getselectedrecords) method from the Syncfusion Platform_Name## Grid and send them to the server using AJAX. Add the following code:
 
@@ -679,7 +418,7 @@ document.getElementById('sendRecords').addEventListener('click', function () {
     }
 });
 ```
-{% endif %}
+
 
 **Step 5:** On the server side, create a controller named **GridController.cs** under the **Controllers** folder to handle incoming requests and process selected records. Add the following code:
 
@@ -870,47 +609,17 @@ The Syncfusion JavaScript Grid allows you to select multiple or single records a
 
 To achieve passing selected records to the server using Fetch requests in the Syncfusion JavaScript Grid, follow these steps:
 
-{% if page.publishingplatform == "typescript" %}
 
-**Step 1:** Open Visual Studio and create an project followed by this [link](https://ej2.syncfusion.com/documentation/grid/connecting-to-adaptors/web-api-adaptor#creating-an-api-service) and named **SelectedRecord**.
- 
-**Step 2 :** Create a simple JavaScript Grid by following the [Getting Started](https://ej2.syncfusion.com/documentation/grid/getting-started) documentation link.
-
-{% elsif page.publishingplatform == "javascript" %}
 
 **Step 1:** Open Visual Studio and create an project followed by this [link](https://ej2.syncfusion.com/javascript/documentation/grid/connecting-to-adaptors/web-api-adaptor#creating-an-api-service) and named **SelectedRecord**.
  
 **Step 2 :** Create a simple JavaScript Grid by following the [Getting Started](https://ej2.syncfusion.com/javascript/documentation/grid/getting-started) documentation link.
 
-{% endif %}
+
 
 **Step 3:** In your JavaScript control HTML file (e.g., **index.html**), add a button to trigger the Fetch call and include the Syncfusion JavaScript Grid with necessary configurations.
 
-{% if page.publishingplatform == "typescript" %}
- 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <title>EJ2 Grid</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Typescript Grid Control" />
-    <meta name="author" content="Syncfusion" />
-    <link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/material3.css" rel="stylesheet" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
-    <script src="https://cdn.syncfusion.com/ej2/syncfusion-helper.js" type="text/javascript"></script>
-</head>
-<body>
-    <div id='container'>
-        <button id="sendRecords">Pass the selected records to controller</button>
-        <div id='Grid'></div>
-    </div>
-</body>
-</html>
-```
 
- {% elsif page.publishingplatform == "javascript" %}
  
 ```html
 <!DOCTYPE html>
@@ -935,59 +644,9 @@ To achieve passing selected records to the server using Fetch requests in the Sy
 </body>
 </html>
 ```
-{% endif %}
-
-{% if page.publishingplatform == "typescript" %}
-
- **Step 4:** In your JavaScript control (**index.ts**), retrieve the button element and add an event listener. When clicked, retrieve the selected records using the [getSelectedRecords](../../api/grid#getselectedrecords) method from the Syncfusion Platform_Name## Grid and send them to the server using AJAX. Add the following code:
- 
-```ts
-import { Grid, Selection } from '@syncfusion/ej2-grids';
-import { DataManager, UrlAdaptor } from '@syncfusion/ej2-data';
-import { Fetch } from '@syncfusion/ej2-base';
-
-let data: DataManager = new DataManager({
-    url: 'https://localhost:****/api/Grid', // Replace your hosted link.
-    adaptor: new UrlAdaptor()
-});
 
 
-let grid: Grid = new Grid({
-    dataSource: data,
-    selectionSettings: { type: 'Multiple' },
-    columns: [
-        { field: 'OrderID', headerText: 'Order ID', textAlign: 'Right', width: 120, isPrimaryKey: true, type: 'number' },
-        { field: 'CustomerID', width: 140, headerText: 'Customer ID', type: 'string' },
-        { field: 'ShipCity', headerText: 'Ship City', width: 140 },
-        { field: 'ShipCountry', headerText: 'Ship Country', width: 140 }
-    ]
-});
-grid.appendTo('#Grid');
 
-(document.getElementById('sendRecords') as HTMLElement).addEventListener('click', function () {
-    if (grid) {
-        let selectedRecords = grid.getSelectedRecords();
-        let rows = JSON.stringify(selectedRecords);
-        // Replace your hosted link.
-        fetch('https://localhost:****/api/Grid/SelectRecord', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            body: rows
-        })
-            .then(response => response.json())
-            .then(data => {
-                console.log('Success:', data);
-            })
-            .catch(error => {
-                console.error('Error:', error);
-            });
-    }
-});
-```
-
-{% elsif page.publishingplatform == "javascript" %}
  
 **Step 4:** In your JavaScript control (**index.js**), retrieve the button element and add an event listener. When clicked, retrieve the selected records using the [getSelectedRecords](../../api/grid#getselectedrecords) method from the Syncfusion Platform_Name## Grid and send them to the server using AJAX. Add the following code:
 
@@ -1031,7 +690,7 @@ document.getElementById('sendRecords').addEventListener('click', function () {
     }
 });
 ```
-{% endif %}
+
 
 **Step 5:** On the server side, create a controller named **GridController.cs** under the **Controllers** folder to handle incoming requests and process selected records. Add the following code:
 

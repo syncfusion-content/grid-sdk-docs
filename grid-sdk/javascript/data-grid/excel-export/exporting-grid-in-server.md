@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Exporting grid in server in JavaScript Grid control | Syncfusion
 description: Learn here all about Exporting grid in server in Syncfusion JavaScript Grid control of Syncfusion Essential JS 2 and more.
@@ -68,40 +68,7 @@ public ActionResult DataSource(DataManager dm)
 
 ```
 
-{% if page.publishingplatform == "typescript" %}
- 
-```ts
-import { Grid, Toolbar } from '@syncfusion/ej2-grids';
-import { DataManager, UrlAdaptor } from '@syncfusion/ej2-data';
-Grid.Inject(Toolbar);
 
-let data: DataManager = new DataManager({
-    url: "Home/DataSource",
-    adaptor: new UrlAdaptor
-});
-
-let grid: Grid = new Grid({
-    dataSource: data,
-    toolbar: ['ExcelExport'],
-    columns: [
-        { field: 'OrderID', headerText: 'Order ID', textAlign: 'Right', width: 100 },
-        { field: 'CustomerID', headerText: 'Customer ID', width: 120 },
-        { field: 'Freight', headerText: 'Freight', textAlign: 'Right', width: 120, format: 'C2' },
-        { field: 'ShipCountry', headerText: 'Ship Country', width: 150 }
-    ],
-    height: 265
-});
-grid.appendTo('#Grid');
-
-grid.toolbarClick = (args: Object) => {
-    if (args['item'].id === 'Grid_excelexport') {
-        grid.serverExcelExport("Home/ExcelExport");
-    }
-}
-
-```
-
- {% elsif page.publishingplatform == "javascript" %}
  
 ```js
 ej.grids.Grid.Inject(ej.grids.Toolbar);
@@ -130,7 +97,7 @@ grid.toolbarClick = (args) => {
 }
 
 ```
-{% endif %}
+
 
 >Note: Refer to the GitHub sample for quick implementation and testing from [here](https://github.com/SyncfusionExamples/TypeScript-EJ2-Grid-server-side-exporting).
 
@@ -168,40 +135,7 @@ public ActionResult DataSource(DataManager dm)
 }
 
 ```
-{% if page.publishingplatform == "typescript" %}
- 
-```ts
-import { Grid, Toolbar } from '@syncfusion/ej2-grids';
-import { DataManager, UrlAdaptor } from '@syncfusion/ej2-data';
-Grid.Inject(Toolbar);
 
-let data: DataManager = new DataManager({
-    url: "Home/DataSource",
-    adaptor: new UrlAdaptor
-});
-
-let grid: Grid = new Grid({
-    dataSource: data,
-    toolbar: ['CsvExport'],
-    columns: [
-        { field: 'OrderID', headerText: 'Order ID', textAlign: 'Right', width: 100 },
-        { field: 'CustomerID', headerText: 'Customer ID', width: 120 },
-        { field: 'Freight', headerText: 'Freight', textAlign: 'Right', width: 120, format: 'C2' },
-        { field: 'ShipCountry', headerText: 'Ship Country', width: 150 }
-    ],
-    height: 265
-});
-grid.appendTo('#Grid');
-
-grid.toolbarClick = (args: Object) => {
-    if (args['item'].id === 'Grid_csvexport') {
-        grid.serverCsvExport("Home/CsvGridExport");
-    }
-}
-
-```
-
- {% elsif page.publishingplatform == "javascript" %}
  
 ```js
 ej.grids.Grid.Inject(ej.grids.Toolbar);
@@ -231,7 +165,7 @@ grid.toolbarClick = (args: Object) => {
 
 ```
 
-{% endif %}
+
 
 ## Export grid as memory stream
 

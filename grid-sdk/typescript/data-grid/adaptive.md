@@ -21,7 +21,7 @@ Additionally, apply the `e-bigger` class to the grid's parent element to enable 
 
 The following sample demonstrates how to enable and utilize adaptive dialogs in the TypeScript Grid:
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -34,19 +34,7 @@ The following sample demonstrates how to enable and utilize adaptive dialogs in 
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/adaptive-cs1" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/adaptive-cs1/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/adaptive-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/adaptive-cs1" %}
-{% endif %}
 
 ## Vertical row rendering
 
@@ -56,7 +44,7 @@ The TypeScript Grid introduces the feature of vertical row rendering, allowing y
 
 The following sample demonstrates how to dynamically change the row rendering mode between **Vertical** and **Horizontal** based on a DropDownList selection:
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -69,19 +57,7 @@ The following sample demonstrates how to dynamically change the row rendering mo
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/vertical-rendering-cs1" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/vertical-rendering-cs1/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/vertical-rendering-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/vertical-rendering-cs1" %}
-{% endif %}
 
 > [enableAdaptiveUI](../api/grid#enableadaptiveui) property must be enabled for vertical row rendering.
 
@@ -112,7 +88,7 @@ By default, adaptive UI layout is rendered in both mobile devices and desktop mo
 
 > The [rowRenderingMode](../api/grid#rowrenderingmode) property is rendered on the adaptive layout based on the `AdaptiveUIMode` property.
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -124,17 +100,3 @@ By default, adaptive UI layout is rendered in both mobile devices and desktop mo
 {% endtabs %}
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/adaptive-cs3" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/adaptive-cs3/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/adaptive-cs3/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/adaptive-cs3" %}
-{% endif %}

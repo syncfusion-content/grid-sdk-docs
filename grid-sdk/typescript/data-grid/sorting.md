@@ -17,7 +17,7 @@ To sort a particular column in the grid, click on its column header. Each time y
 
 To use the sorting feature, you need to inject the [Sort](../api/grid/sort/) module in the grid.
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -30,19 +30,7 @@ To use the sorting feature, you need to inject the [Sort](../api/grid/sort/) mod
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/grid-cs166" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/grid-cs166/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/grid-cs166/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/grid-cs166" %}
-{% endif %}
 
 > * Grid column sorted in **Ascending** order. If you click on an already sorted column, then toggles the sort direction.
 > * You can apply and clear sorting by using the [sortColumn](../api/grid/#sortcolumn) and [clearSorting](../api/grid/#clearsorting) methods.
@@ -54,7 +42,7 @@ By default, the grid control does not apply any sorting to its records at initia
 
 The following example demonstrates how to set [sortSettings->columns](../api/grid/sortSettings/#columns) for **OrderID** and **ShipCity** columns with a specified [direction](../api/grid/sortDescriptorModel/#direction).
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -67,19 +55,7 @@ The following example demonstrates how to set [sortSettings->columns](../api/gri
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/grid-cs167" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/grid-cs167/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/grid-cs167/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/grid-cs167" %}
-{% endif %}
 
 > The initial sorting defined in [sortSettings->columns](../api/grid/sortSettings/#columns) will override any sorting applied through user interaction.
 
@@ -92,7 +68,7 @@ To clear multi-column sorting for a particular column, press the "Shift + mouse 
 > * The [allowSorting](../api/grid/#allowsorting) must be true while enabling multi-column sort.
 > * Set [allowMultiSorting](../api/grid/#allowmultisorting) property as **false** to disable multi-column sorting.
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -105,19 +81,7 @@ To clear multi-column sorting for a particular column, press the "Shift + mouse 
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/grid-cs168" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/grid-cs168/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/grid-cs168/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/grid-cs168" %}
-{% endif %}
 
 ## Prevent sorting for particular column
 
@@ -127,7 +91,7 @@ It can be achieved by setting the [allowSorting](../api/grid/#allowsorting) prop
 
 The following example demonstrates, how to disable sorting for **CustomerID** column.
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -140,19 +104,7 @@ The following example demonstrates, how to disable sorting for **CustomerID** co
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/sorting-cs1" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/sorting-cs1/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/sorting-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/sorting-cs1" %}
-{% endif %}
 
 ## Sort order
 
@@ -166,7 +118,7 @@ The Grid control provides a way to customize the default sort action for a colum
 
 The following example demonstrates how to define custom sort comparer function for the **Customer ID** column.
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -179,19 +131,7 @@ The following example demonstrates how to define custom sort comparer function f
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/sort-comparer-cs2" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/sort-comparer-cs2/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/sort-comparer-cs2/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/sort-comparer-cs2" %}
-{% endif %}
 
 > The customSortComparer function takes two parameters: a and b. The a and b parameters are the values to be compared. The function returns -1, 0, or 1, depending on the comparison result.
 
@@ -201,7 +141,7 @@ By default, null values in a Syncfusion<sup style="font-size:70%">&reg;</sup> Gr
 
 The example below demonstrates how to display null values at the bottom of the grid while sorting the **OrderDate** column in both ascending and descending order.
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -214,19 +154,7 @@ The example below demonstrates how to display null values at the bottom of the g
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/sort-comparer-cs1" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/sort-comparer-cs1/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/sort-comparer-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/sort-comparer-cs1" %}
-{% endif %}
 
 ## Touch interaction
 
@@ -248,7 +176,7 @@ In the case of local data in the grid, the sorting operation will be performed b
 
 The following example demonstrates how to perform sorting by enabling a foreign key column, where the **CustomerID** column acts as a foreign column displaying the **ContactName** column from foreign data.
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -261,19 +189,7 @@ The following example demonstrates how to perform sorting by enabling a foreign 
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/sorting-cs2" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/sorting-cs2/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/sorting-cs2/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/sorting-cs2" %}
-{% endif %}
 
 > Make sure to inject the **ForeignKey** module in the grid to ensure its availability throughout your application.
 
@@ -281,7 +197,7 @@ The following example demonstrates how to perform sorting by enabling a foreign 
 
 In the case of remote data in the grid, the sorting operation will be performed based on the [foreignKeyField](../api/grid/column/#foreignkeyfield) property of the column. The `foreignKeyField` property should be defined in the column definition with the corresponding foreign key field name for each row. The grid will send a request to the server-side with the `foreignKeyField` name, and the server-side should handle the sorting operation and return the sorted data to the grid.
 
-{% if page.publishingplatform == "typescript" %}
+
  
 ```ts
 import { Grid, ForeignKey, Sort } from '@syncfusion/ej2-grids';
@@ -312,33 +228,7 @@ grid.appendTo('#Grid');
 
 ```
 
- {% elsif page.publishingplatform == "javascript" %}
  
-```js
-ej.grids.Grid.Inject(ej.grids.ForeignKey);
-
-var dataSource = new ej.data.DataManager({
-    json: '/OData/Items',
-    adaptor: new ej.data.ODataV4Adaptor
-});
-var employeeData = new ej.data.DataManager({
-    url: '/OData/Brands',
-    adaptor: new ej.data.ODataV4Adaptor
-});
-var grid = new ej.grids.Grid({
-        dataSource: data,
-        columns: [
-            { field: 'OrderID', headerText: 'Order ID', textAlign: 'Right', width: 100 },
-            { field: 'EmployeeID', headerText: 'Employee Name', width: 150, foreignKeyValue: 'FirstName', dataSource: employeeData },
-            { field: 'Freight', headerText: 'Freight', width: 100, textAlign: 'Right'},
-            { field: 'ShipName', headerText: 'Ship Name', width: 180 }
-        ],
-        height: 315
-    });
-grid.appendTo('#Grid');
-
-```
-{% endif %}
 
 The following code example describes the handling of sorting operation at the server side.
 
@@ -391,7 +281,7 @@ Perform sorting based on culture in the Grid can be achieved by utilizing the [l
 
 In the following example, sorting is performed based on the **"ar"** locale using the [column.sortComparer](../api/grid/column/#sortcomparer) property.
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -404,19 +294,7 @@ In the following example, sorting is performed based on the **"ar"** locale usin
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/sorting-cs7" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/sorting-cs7/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/sorting-cs7/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/sorting-cs7" %}
-{% endif %}
 
 ## How to customize sort icon
 
@@ -433,7 +311,7 @@ To customize the sort icon in the Grid, you can override the default grid classe
 ```
 In the below sample, grid is rendered with a customized sort icon.
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -446,19 +324,7 @@ In the below sample, grid is rendered with a customized sort icon.
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/sorting-cs3" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/sorting-cs3/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/sorting-cs3/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/sorting-cs3" %}
-{% endif %}
 
 ## Sort columns externally
 
@@ -470,7 +336,7 @@ To sort a column externally, you can utilize the [sortColumn](../api/grid/#sortc
 
 The following example demonstrates how to add sort columns to a grid. It utilizes the **DropDownList** control to select the column and sort direction. When an external button is clicked, the [sortColumn](../api/grid/#sortcolumn) method is called with the specified **columnName**, **direction**, and **isMultiSort** parameters. 
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -483,19 +349,7 @@ The following example demonstrates how to add sort columns to a grid. It utilize
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/sorting-cs4" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/sorting-cs4/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/sorting-cs4/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/sorting-cs4" %}
-{% endif %}
 
 ### Remove sort columns
 
@@ -503,7 +357,7 @@ To remove a sort column externally, you can use the `removeSortColumn` method pr
 
 The following example demonstrates how to remove sort columns. It utilizes the **DropDownList** control to select the column. When an external button is clicked, the `removeSortColumn` method is called to remove the selected sort column.
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -516,19 +370,7 @@ The following example demonstrates how to remove sort columns. It utilizes the *
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/sorting-cs5" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/sorting-cs5/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/sorting-cs5/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/sorting-cs5" %}
-{% endif %}
 
 ### Clear sorting 
 
@@ -536,7 +378,7 @@ To clear the sorting on an external button click, you can use the [clearSorting]
 
 The following example demonstrates how to clear the sorting using `clearSorting` method in the external button click.
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -549,19 +391,7 @@ The following example demonstrates how to clear the sorting using `clearSorting`
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/sorting-cs6" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/sorting-cs6/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/sorting-cs6/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/sorting-cs6" %}
-{% endif %}
 
 ## Sorting Events
 
@@ -573,7 +403,7 @@ The Grid control provides two events that are triggered during the sorting actio
 
 The following example demonstrates how the [actionBegin](../api/grid/#actionbegin) and [actionComplete](../api/grid/#actioncomplete) events work when sorting is performed. The `actionBegin` event is used to cancel the sorting of the OrderID column. The `actionComplete` event is used to display a message.
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -586,18 +416,6 @@ The following example demonstrates how the [actionBegin](../api/grid/#actionbegi
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/sorting-event-cs1" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/sorting-event-cs1/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/sorting-event-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/sorting-event-cs1" %}
-{% endif %}
 
 > [args.requestType](../api/grid/sortEventArgs/#requesttype) refers to the current action being performed. For example in sorting, the `args.requestType` value is **sorting**.

@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Custom Formula Functions in JavaScript Grid control | Syncfusion
 description: Learn here all about custom formula functions in Syncfusion JavaScript Grid control of Syncfusion Essential JS 2 and more.
@@ -41,20 +41,7 @@ You can register custom formula functions with the `formulaSettings.customFuncti
 
 The following example registers a custom function named `CUSTOMSUM`. It accepts multiple values, including cell ranges, and returns the total of all provided values.
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/formula-cs4/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/formula-cs4/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/formula-cs4" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -66,7 +53,7 @@ The following example registers a custom function named `CUSTOMSUM`. It accepts 
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/formula-cs4" %}
-{% endif %}
+
 
 ## Add and remove formulas in programmatic way
 

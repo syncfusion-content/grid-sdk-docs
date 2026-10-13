@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Grouping in JavaScript Grid control | Syncfusion
 description: Learn here all about Grouping in Syncfusion JavaScript Grid control of Syncfusion Essential JS 2 and more.
@@ -14,20 +14,7 @@ The grouping feature in the JavaScript Grid allows you to organize data into a h
 
 To use the Grouping feature, need to inject **Group** in the grid.
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/grid-cs80/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/grid-cs80/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grid-cs80" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -39,7 +26,7 @@ To use the Grouping feature, need to inject **Group** in the grid.
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grid-cs80" %}
-{% endif %}
+
 
 > * You can group and ungroup columns in the Grid by using the [groupColumn](../../api/grid/group#groupcolumn) and [ungroupColumn](../../api/grid/group#ungroupcolumn) methods respectively.
 > * To disable grouping for a specific column, set the [columns->allowGrouping](../../api/grid/column#allowgrouping) to **false**.
@@ -50,20 +37,7 @@ To enable initial grouping in the Grid, you can use the [groupSettings](../../ap
 
 The following example demonstrates how to set an initial grouping for the **CustomerID** and **ShipCity** columns during the initial rendering grid, by using the `groupSettings.columns` property.
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/grid-cs81/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/grid-cs81/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grid-cs81" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -75,7 +49,7 @@ The following example demonstrates how to set an initial grouping for the **Cust
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grid-cs81" %}
-{% endif %}
+
 
 > You can group by multiple columns by specifying an array of column names in the columns property of the `groupSettings`.
 
@@ -83,20 +57,7 @@ The following example demonstrates how to set an initial grouping for the **Cust
 
 The Grid control provides the ability to prevent grouping for a particular column. This can be useful when you have certain columns that you do not want to be included in the grouping process. It can be achieved by setting the [allowGrouping](../../api/grid/column#allowgrouping) property of the particular `column` to **false**. The following example demonstrates, how to disable grouping for **CustomerID** column.
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/grid-grouping-prevent/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/grid-grouping-prevent/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grid-grouping-prevent" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -108,7 +69,7 @@ The Grid control provides the ability to prevent grouping for a particular colum
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grid-grouping-prevent" %}
-{% endif %}
+
 
 ## Hide drop area
 
@@ -116,30 +77,13 @@ By default, the Grid provides a drop area for grouping columns. This drop area a
 
 To hide the drop area in the JavaScript Grid, you can set the [groupSettings->showDropArea](../../api/grid/groupSettings#showdroparea) property to **false**. 
 
-{% if page.publishingplatform == "typescript" %}
- 
-In the following example, the [EJ2 Toggle Switch Button](../../switch/getting-started) control is added to hide or show the drop area. When the switch is toggled, the [change](../../api/switch#change) event is triggered and the `groupSettings.showDropArea` property of the grid is updated accordingly. 
 
- {% elsif page.publishingplatform == "javascript" %}
  
 In the following example, the [EJ2 Toggle Switch Button](../../switch/es5-getting-started) control is added to hide or show the drop area. When the switch is toggled, the [change](../../api/switch#change) event is triggered and the `groupSettings.showDropArea` property of the grid is updated accordingly. 
 
-{% endif %}
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/grid-cs82/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/grid-cs82/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grid-cs82" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -151,7 +95,7 @@ In the following example, the [EJ2 Toggle Switch Button](../../switch/es5-gettin
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grid-cs82" %}
-{% endif %}
+
 
 > By default, the group drop area will be shown only if there is at least one column available to group.
 
@@ -159,30 +103,13 @@ In the following example, the [EJ2 Toggle Switch Button](../../switch/es5-gettin
 
 The JavaScript Grid has a default behavior where the grouped column is hidden, to provide a cleaner and more focused view of your data. However, if you prefer to show the grouped column in the grid, you can achieve this by setting the [groupSettings->showGroupedColumn](../../api/grid/groupSettings#showgroupedcolumn) property to **true**.
 
-{% if page.publishingplatform == "typescript" %}
- 
-In the following example, the [EJ2 Toggle Switch Button](../../switch/getting-started) control is added to hide or show the grouped columns. When the switch is toggled, the [change](../../api/switch#change) event is triggered and the `groupSettings.showGroupedColumn` property of the grid is updated accordingly.
 
- {% elsif page.publishingplatform == "javascript" %}
  
 In the following example, the [EJ2 Toggle Switch Button](../../switch/es5-getting-started) control is added to hide or show the grouped columns. When the switch is toggled, the [change](../../api/switch#change) event is triggered and the `groupSettings.showGroupedColumn` property of the grid is updated accordingly.
 
-{% endif %}
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/grid-grouping-grouped/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/grid-grouping-grouped/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grid-grouping-grouped" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -194,7 +121,7 @@ In the following example, the [EJ2 Toggle Switch Button](../../switch/es5-gettin
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grid-grouping-grouped" %}
-{% endif %}
+
 
 ## Reordering on grouped columns 
 
@@ -202,20 +129,7 @@ The JavaScript Grid allows you to easily reorder the grouped columns by dragging
 
 To enable this feature, you have to set the [groupSettings->allowReordering](../../api/grid/groupSettings#allowReordering) property as **true**. This is demonstrated in the sample below.
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/grid-grouping-reordering/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/grid-grouping-reordering/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grid-grouping-reordering" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -227,7 +141,7 @@ To enable this feature, you have to set the [groupSettings->allowReordering](../
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grid-grouping-reordering" %}
-{% endif %}
+
 
 ## Sort grouped columns in descending order during initial grouping
 
@@ -235,20 +149,7 @@ By default, grouped columns are sorted in ascending order. However, you can sort
 
 The following example demonstrates how to sort the **CustomerID** column by setting the `sortSettings.columns` property to **Descending** during the initial grouping of the grid.
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/grid-grouping-sorting/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/grid-grouping-sorting/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grid-grouping-sorting" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -260,7 +161,7 @@ The following example demonstrates how to sort the **CustomerID** column by sett
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grid-grouping-sorting" %}
-{% endif %}
+
 
 ## Group with paging
 
@@ -274,20 +175,7 @@ By default, columns are grouped by the data or value present for the particular 
 
 The following example demonstrates how to perform a group action using the `enableGroupByFormat` property for the  **OrderDate** and **Freight** columns of the grid. 
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/grid-cs83/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/grid-cs83/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grid-cs83" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -299,7 +187,7 @@ The following example demonstrates how to perform a group action using the `enab
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grid-cs83" %}
-{% endif %}
+
 
 > Numeric columns can be grouped based on formats such as currency or percentage, while datetime columns can be grouped based on specific date or time formats.
 
@@ -311,20 +199,7 @@ To collapse all grouped rows at the initial rendering of the Grid using the [dat
 
 The following example demonstrates how to collapse all grouped rows at the initial rendering.
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/grid-grouping-collapse/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/grid-grouping-collapse/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grid-grouping-collapse" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -336,7 +211,7 @@ The following example demonstrates how to collapse all grouped rows at the initi
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grid-grouping-collapse" %}
-{% endif %}
+
 
 > You can also collapse all the grouped rows at the initial rendering using the [groupCollapseAll](../../api/grid#groupcollapseall) method inside the [dataBound](../../api/grid#databound) event. This is demonstrated in the below code snippet,
 
@@ -354,30 +229,13 @@ The following example demonstrates how to collapse all grouped rows at the initi
 
 By default, the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid supports interaction-oriented column grouping, where users manually group columns by dragging and dropping them into the grouping area of the grid. Grid provides an ability to group and ungroup a column using [groupColumn](../../api/grid#groupcolumn) and [ungroupColumn](../../api/grid#ungroupcolumn) methods. These methods provide a programmatic approach to perform column grouping and ungrouping.
 
-{% if page.publishingplatform == "typescript" %}
- 
-The following example demonstrates how to group and upgroup the columns in a grid. It utilizes the [DropDownList](../../drop-down-list/getting-started) control to select the column. When an external button is clicked, the `groupColumn` and `ungroupColumn` methods are called to group or ungroup the selected column.
 
-{% elsif page.publishingplatform == "javascript" %}
  
 The following example demonstrates how to group and upgroup the columns in a grid. It utilizes the [DropDownList](../../drop-down-list/es5-getting-started) control to select the column. When an external button is clicked, the `groupColumn` and `ungroupColumn` methods are called to group or ungroup the selected column.
 
-{% endif %}
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/grid-cs84/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/grid-cs84/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grid-cs84" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -389,7 +247,7 @@ The following example demonstrates how to group and upgroup the columns in a gri
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grid-cs84" %}
-{% endif %}
+
 
 ## Expand or collapse externally
 
@@ -399,30 +257,13 @@ The JavaScript Grid offers a convenient feature to expand or collapse grouped ro
 
 Grid provides an ability to expand or collapse grouped rows using [groupExpandAll](../../api/grid#groupexpandall) and [groupCollapseAll](../../api/grid#groupcollapseall) methods respectively.
 
-{% if page.publishingplatform == "typescript" %}
- 
-In the following example, the [EJ2 Toggle Switch Button](../../switch/getting-started) control is added to expand or collapse grouped rows. When the switch is toggled, the [change](../../api/switch#change) event is triggered and the `groupExpandAll` and `groupCollapseAll` methods are called to expand or collapse grouped rows.
 
-{% elsif page.publishingplatform == "javascript" %}
  
 In the following example, the [EJ2 Toggle Switch Button](../../switch/es5-getting-started) control is added to expand or collapse grouped rows. When the switch is toggled, the [change](../../api/switch#change) event is triggered and the `groupExpandAll` and `groupCollapseAll` methods are called to expand or collapse grouped rows.
 
-{% endif %}
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/grid-cs82-expandall/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/grid-cs82-expandall/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grid-cs82-expandall" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -434,7 +275,7 @@ In the following example, the [EJ2 Toggle Switch Button](../../switch/es5-gettin
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grid-cs82-expandall" %}
-{% endif %}
+
 
 ### Expand or collapse selected grouped row
 
@@ -452,20 +293,7 @@ To implement this functionality, follow these steps:
 
 The following example demonstrates the function that collapses the selected row using an external button click. 
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/grid-cs82-grouped/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/grid-cs82-grouped/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grid-cs82-grouped" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -477,7 +305,7 @@ The following example demonstrates the function that collapses the selected row 
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grid-cs82-grouped" %}
-{% endif %}
+
 
 ## Clear grouping 
 
@@ -487,20 +315,7 @@ To clear all the grouped columns in the Grid, you can utilize the [clearGrouping
 
 The following example demonstrates how to clear the grouping using `clearGrouping` method in the external button click.
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/grid-grouping-clear/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/grid-grouping-clear/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grid-grouping-clear" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -512,7 +327,7 @@ The following example demonstrates how to clear the grouping using `clearGroupin
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grid-grouping-clear" %}
-{% endif %}
+
 
 ## Grouping Events
 
@@ -524,20 +339,7 @@ The Grid control provides two events that are triggered during the group action 
 
 The following example demonstrates how the `actionBegin` and `actionComplete` events work when grouping is performed. The `actionBegin` event is used to cancel the grouping of the **OrderID** column. The `actionComplete` event is used to display a message.
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/grouping-event-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/grouping-event-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grouping-event-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -549,7 +351,7 @@ The following example demonstrates how the `actionBegin` and `actionComplete` ev
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grouping-event-cs1" %}
-{% endif %}
+
 
 > The [args.requestType](../../api/grid/sortEventArgs#requesttype) property represents the name of the current action being performed. For instance, during grouping, the `args.requestType` value will be **grouping**.
 

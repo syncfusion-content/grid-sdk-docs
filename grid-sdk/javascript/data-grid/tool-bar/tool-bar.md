@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Tool bar in JavaScript Grid control | Syncfusion
 description: Learn here all about Tool bar in Syncfusion JavaScript Grid control of Syncfusion Essential JS 2 and more.
@@ -17,20 +17,7 @@ To enable the toolbar functionality, you need to inject the **Toolbar** module i
 
 The following example demonstrates how to enable toolbar items in the grid.
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/toolbar-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/toolbar-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/toolbar-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -42,7 +29,7 @@ The following example demonstrates how to enable toolbar items in the grid.
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/toolbar-cs1" %}
-{% endif %}
+
 
 ## Enable or disable toolbar items
 
@@ -50,30 +37,13 @@ Enabling or disabling toolbar items dynamically in JavaScript Grid is to provide
 
 You can enable or disable toolbar items dynamically by using the [enableToolbarItems](../../api/grid#enabletoolbaritems) method. This method allows you to control the availability of specific toolbar items based on your application logic.
 
-{% if page.publishingplatform == "typescript" %}
- 
-In the following example, the [EJ2 Toggle Switch Button control](../../switch/getting-started) is added to enable and disable the toolbar items using `enableToolbarItems` method. When the switch is toggled, the [change](../../api/switch#change) event is triggered and the toolbar items are updated accordingly.
 
- {% elsif page.publishingplatform == "javascript" %}
  
 In the following example, the [EJ2 Toggle Switch Button control](../../switch/es5-getting-started) is added to enable and disable the toolbar items using `enableToolbarItems` method. When the switch is toggled, the [change](../../api/switch#change) event is triggered and the toolbar items are updated accordingly.
 
-{% endif %}
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/toolbar-enable-cs2/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/toolbar-enable-cs2/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/toolbar-enable-cs2" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -85,7 +55,7 @@ In the following example, the [EJ2 Toggle Switch Button control](../../switch/es
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/toolbar-enable-cs2" %}
-{% endif %}
+
 
 ## Add toolbar at the bottom of Grid
 
@@ -95,20 +65,7 @@ To add the toolbar at the bottom of the Grid, you can utilize the [created](../.
 
 The following example shows how to add the toolbar items at the bottom using `created` event of the grid.
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/toolbar-bottom-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/toolbar-bottom-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/toolbar-bottom-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -120,7 +77,7 @@ The following example shows how to add the toolbar items at the bottom using `cr
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/toolbar-bottom-cs1" %}
-{% endif %}
+
 
 ## Customize toolbar buttons using CSS
 
@@ -137,20 +94,7 @@ The appearance of the built-in toolbar buttons can be modified by applying the f
 
 The following example demonstrates how to change the background color of the `Add`, `Edit`, `Delete`, `Update` and `Cancel` toolbar buttons by applying CSS styles.
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/toolbar-customize-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/toolbar-customize-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/toolbar-customize-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -162,7 +106,7 @@ The following example demonstrates how to change the background color of the `Ad
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/toolbar-customize-cs1" %}
-{% endif %}
+
 
 ## See Also
 

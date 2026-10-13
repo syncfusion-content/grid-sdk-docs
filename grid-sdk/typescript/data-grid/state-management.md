@@ -15,7 +15,7 @@ State management in the TypeScript Grid control allows you to maintain the grid'
 
 To enable state persistence in the Grid, you can utilize the [enablePersistence](../api/grid/#enablepersistence) property. When this property is set to **true**, the grid will automatically save its state in the browser's [localStorage](https://www.w3schools.com/html/html5_webstorage.asp#), ensuring that the state is preserved across page reloads.
 
-{% if page.publishingplatform == "typescript" %}
+
  
 ```ts
 let grid: Grid = new Grid({
@@ -25,17 +25,7 @@ let grid: Grid = new Grid({
 grid.appendTo('#Grid');
 ```
 
- {% elsif page.publishingplatform == "javascript" %}
  
-```js
-var grid = new ej.grids.Grid({
-    dataSource: data,
-    enablePersistence: true,
-});     
-grid.appendTo('#Grid');
-```
-
-{% endif %}
 
 > The grid will store the state using the combination of the control name and control ID in the storage. For example, if the control name is **grid** and the ID is **OrderDetails**, the state will be stored as **gridOrderDetails**.
 
@@ -66,7 +56,7 @@ If you want to restore the initial state of the grid, consider changing the cont
 
 Here is an example code to change the control id dynamically to restore initial grid state.
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -79,19 +69,7 @@ Here is an example code to change the control id dynamically to restore initial 
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/state-management-cs1" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/state-management-cs1/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/state-management-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/state-management-cs1" %}
-{% endif %}
 
 ### Clearing local storage
 
@@ -99,7 +77,7 @@ Another method to reset the grid is by clearing the local storage associated wit
 
 Here is an example code on how to clear local storage to retain its default state.
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -112,19 +90,7 @@ Here is an example code on how to clear local storage to retain its default stat
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/initial-grid-cs1" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/initial-grid-cs1/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/initial-grid-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/initial-grid-cs1" %}
-{% endif %}
 
 ## Restore to specific state version
 
@@ -134,7 +100,7 @@ In the below example, the `clickHandler` method is responsible for handling butt
 
 Here is an example of how to integrate version-based persistence into your TypeScript control and restore to specific state version:
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -147,19 +113,7 @@ Here is an example of how to integrate version-based persistence into your TypeS
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/state-management-cs3" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/state-management-cs3/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/state-management-cs3/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/state-management-cs3" %}
-{% endif %}
 
 ## Restore to previous state
 
@@ -169,7 +123,7 @@ To implement this functionality, use the `getItem` and `setItem` methods for loc
 
 The provided code demonstrates how to save and restore the previous state of a TypeScript Grid control using local storage.
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -182,25 +136,13 @@ The provided code demonstrates how to save and restore the previous state of a T
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/state-management-cs4" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/state-management-cs4/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/state-management-cs4/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/state-management-cs4" %}
-{% endif %}
 
 ## Maintaining custom query in a persistent state
 
 When [enablePersistence](../api/grid/#enablepersistence) is enabled, the Grid does not automatically maintain custom query parameters after a page load. This is because the Grid refreshes its query params for every page load. You can maintain the custom query params by resetting the [addParams](../api/data/query/#addparams) method in the [actionBegin](../api/grid/#actionbegin) event.
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -211,18 +153,7 @@ When [enablePersistence](../api/grid/#enablepersistence) is enabled, the Grid do
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/grouping-event-cs2/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/grouping-event-cs2/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% endif %}
 
 ## Observables binding with state persistence
 
@@ -238,7 +169,7 @@ To implement state persistence with observables, the initial query state must be
 
 Except for the initial render, state persistence ensures that manually performed actions are retained by storing the state in the browser’s `localStorage`, allowing it to persist across page reloads. The following example demonstrates how to use the [created](https://ej2.syncfusion.com/documentation/api/grid/#created) event to send the persisted state to the service at initial render:
 
-{% if page.publishingplatform == "typescript" %}
+
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -256,24 +187,7 @@ Except for the initial render, state persistence ensures that manually performed
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/state-management-cs8" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/state-management-cs8/index.js %}
-{% endhighlight %}
-
-{% highlight js tabtitle="es5-order-service.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/state-management-cs8/es5-order-service.js %}
-{% endhighlight %}
-
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/state-management-cs8/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/state-management-cs8" %}
-{% endif %}
 
 ## Get or set local storage value
 
@@ -281,7 +195,7 @@ If the [enablePersistence](../api/grid/#enablepersistence) property is set to **
 
 To retrieve the Grid model from Local Storage, follow these steps:
 
-{% if page.publishingplatform == "typescript" %}
+
  
 ```ts
 //get the Grid model.
@@ -289,15 +203,7 @@ let value: string = window.localStorage.getItem('gridOrders'); //"gridOrders" is
 let model: Object = JSON.parse(value);
 
 ```
- {% elsif page.publishingplatform == "javascript" %}
  
-```js
-//get the Grid model.
-var value = window.localStorage.getItem('gridOrders'); //"gridOrders" is control name + control id.
-var model = JSON.parse(value);
-
-```
-{% endif %}
 
 ```typescript
 //set the Grid model.
@@ -311,7 +217,7 @@ In the TypeScript Grid control, you may sometimes want to prevent certain settin
 
 The following example demonstrates how to prevent Grid columns from persisting. In the [dataBound](../api/grid/#databound) event of the Grid, you can override the `addOnPersist` method and remove the columns from the key list given for persistence.
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -324,19 +230,7 @@ The following example demonstrates how to prevent Grid columns from persisting. 
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/state-management-cs5" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/state-management-cs5/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/state-management-cs5/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/state-management-cs5" %}
-{% endif %}
 
 ## Add to persist
 
@@ -348,7 +242,7 @@ When the [enablePersistence](../api/grid/#enablepersistence) property is set to 
 
 Here's an example of how to add a new column to a list of persisted columns:
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -361,19 +255,7 @@ Here's an example of how to add a new column to a list of persisted columns:
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/state-management-cs6" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/state-management-cs6/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/state-management-cs6/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/state-management-cs6" %}
-{% endif %}
 
 > * Adding new columns using `Columns` directly in the grid initialization is not recommended if you intend to persist the new columns with the existing columns list 
 
@@ -383,7 +265,7 @@ By default, when the [enablePersistence](../api/grid/#enablepersistence) propert
 
 To restore these column properties and achieve persistence, you can follow the approach of cloning the grid's columns property using JavaScript Object's assign method and manually storing it along with the persist data. When restoring the settings, this cloned column object must be assigned to the grid's columns property to restore the column settings. The following sample demonstrates this process:
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -395,17 +277,3 @@ To restore these column properties and achieve persistence, you can follow the a
 {% endtabs %}
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/state-management-cs7" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/state-management-cs7/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/state-management-cs7/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/state-management-cs7" %}
-{% endif %}

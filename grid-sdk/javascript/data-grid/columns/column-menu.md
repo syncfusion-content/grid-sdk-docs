@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Column menu in JavaScript Grid control | Syncfusion
 description: Learn here all about Column menu in Syncfusion JavaScript Grid control of Syncfusion Essential JS 2 and more.
@@ -27,20 +27,7 @@ The default column menu items are displayed in following table.
 | **ColumnChooser** | Choose the column visibility. |
 | **Filter** | Show the filter option as given in [filterSettings->type](../../api/grid/filterSettings#type) |
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/row-template-cs4/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/row-template-cs4/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/row-template-cs4" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -52,7 +39,7 @@ The default column menu items are displayed in following table.
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/row-template-cs4" %}
-{% endif %}
+
 
 > * You can disable column menu for a particular column by defining the [columns.showColumnMenu](../../api/grid/column#showcolumnmenu) as false.
 > *  You can customize the default items by defining the [columnMenuItems](../../api/grid#columnmenuitems) with required items.
@@ -65,20 +52,7 @@ To prevent the column menu for a particular column, you can set the [showColumnM
 
 The following example demonstrates how to prevent the column menu for a specific column. In this example, the column menu is disabled for the **OrderID** column by setting the `showColumnMenu` property to **false**.
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/column-columnmenu-cs2/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/column-columnmenu-cs2/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/column-columnmenu-cs2" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -90,7 +64,7 @@ The following example demonstrates how to prevent the column menu for a specific
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/column-columnmenu-cs2" %}
-{% endif %}
+
 
 ## Add custom column menu item
 
@@ -98,20 +72,7 @@ The custom column menu item feature allows you to add additional menu items to t
 
 Consider the following example, which demonstrates how to add a custom column menu item to clear the sorting of the Grid:
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/row-template-cs6/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/row-template-cs6/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/row-template-cs6" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -123,7 +84,7 @@ Consider the following example, which demonstrates how to add a custom column me
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/row-template-cs6" %}
-{% endif %}
+
 
 ## Customize menu items for particular columns
 
@@ -131,20 +92,7 @@ Sometimes, you have a scenario that to hide an item from column menu for particu
 
 The following sample, **Filter** item was hidden in column menu when opens for the **OrderID** column.
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/row-template-cs7/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/row-template-cs7/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/row-template-cs7" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -156,7 +104,7 @@ The following sample, **Filter** item was hidden in column menu when opens for t
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/row-template-cs7" %}
-{% endif %}
+
 
 ## Render nested column menu
 
@@ -166,20 +114,7 @@ To enable the nested column menu feature, you need to define the [columnMenuItem
 
 Here is an example of how to configure the `columnMenuItems` property to include a nested menu:
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/render-nested-column-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/render-nested-column-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/render-nested-column-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -191,7 +126,7 @@ Here is an example of how to configure the `columnMenuItems` property to include
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/render-nested-column-cs1" %}
-{% endif %}
+
 
 ## Customize the icon of column menu
 
@@ -216,20 +151,7 @@ To customize the column menu icon, follow these steps:
 
 Here is an example that demonstrates how to customize the column menu icon in the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid:
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/custom-column-menu-icon-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/custom-column-menu-icon-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/custom-column-menu-icon-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -241,7 +163,7 @@ Here is an example that demonstrates how to customize the column menu icon in th
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/custom-column-menu-icon-cs1" %}
-{% endif %}
+
 
 ## Column menu events
 
@@ -250,20 +172,7 @@ The column menu in JavaScript Grid provides a set of events that allow customiza
 1. The [columnMenuOpen](../../api/grid#columnmenuopen) event triggers before the column menu opens.
 2. The [columnMenuClick](../../api/grid#columnmenuclick) event triggers when the user clicks the column menu of the grid.
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/row-template-cs5/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/row-template-cs5/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/row-template-cs5" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -275,4 +184,3 @@ The column menu in JavaScript Grid provides a set of events that allow customiza
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/row-template-cs5" %}
-{% endif %}

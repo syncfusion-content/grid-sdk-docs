@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Row in JavaScript Grid control | Syncfusion
 description: Learn here all about Row in Syncfusion JavaScript Grid control of Syncfusion Essential JS 2 and more.
@@ -22,20 +22,7 @@ You can customize the appearance of the rows by using the [rowDataBound](../../a
 
 Here's an example of how you can use the `rowDataBound` event to customize the styles of rows based on the value of the **Freight** column. This example involves checking the value of the Freight column for each row and adding a CSS class to the row based on the value. The CSS classes **below-30**, **below-80**, and **above-80** can then be defined in your stylesheet to apply the desired styles to the rows.
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/custom-row-cs3/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/custom-row-cs3/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/custom-row-cs3" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -47,7 +34,7 @@ Here's an example of how you can use the `rowDataBound` event to customize the s
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/custom-row-cs3" %}
-{% endif %}
+
 
 >The [queryCellInfo](../../api/grid#querycellinfo) event can also be used to customize cells and is triggered for every cell in the grid. It can be useful when you need to customize cells based on certain conditions or criteria.
 
@@ -69,20 +56,7 @@ To change the background color of the alternate rows, you can add the following 
 
 Here's an example of how to use the **.e-altrow** class to style alternate rows:
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/how-to-alt-row-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/how-to-alt-row-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/how-to-alt-row-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -94,7 +68,7 @@ Here's an example of how to use the **.e-altrow** class to style alternate rows:
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/how-to-alt-row-cs1" %}
-{% endif %}
+
 
 **Customize selected row**
 
@@ -110,20 +84,7 @@ To change the background color of the selected row, you can add the following CS
 
 Here's an example of how to use the **.e-selectionbackground** class to style the selected row:
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/how-to-alt-row-cs2/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/how-to-alt-row-cs2/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/how-to-alt-row-cs2" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -135,7 +96,7 @@ Here's an example of how to use the **.e-selectionbackground** class to style th
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/how-to-alt-row-cs2" %}
-{% endif %}
+
 
 ### Using method 
 
@@ -150,20 +111,7 @@ The Grid provides below methods to customize the appearance of the grid rows :
 
 The following example demonstrates how to use [getRowByIndex](../../api/grid#getcolumnheaderbyindex) methods to customize the appearance of the row inside the [dataBound](../../api/grid#databound) event of the grid.
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/row-style-method-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/row-style-method-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/row-style-method-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -175,7 +123,7 @@ The following example demonstrates how to use [getRowByIndex](../../api/grid#get
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/row-style-method-cs1" %}
-{% endif %}
+
 
 ## Row height
 
@@ -183,20 +131,7 @@ The Syncfusion<sup style="font-size:70%">&reg;</sup> Grid allows you to customiz
 
 In the below example, we will demonstrate how to dynamically change the height of the rows using the `rowHeight` property.
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/custom-row-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/custom-row-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/custom-row-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -208,7 +143,7 @@ In the below example, we will demonstrate how to dynamically change the height o
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/custom-row-cs1" %}
-{% endif %}
+
 
 >*	The `rowHeight` property can only be used to set the height of the entire grid row. It cannot be used to set the height of individual cells within a row.
 >*  The `rowHeight` property applies the height to all rows in the grid, including the header and footer rows.
@@ -220,20 +155,7 @@ The height of the header and footer rows can be customized to provide additional
 
 In the following example, the row height is configured to "100px" using the `rowHeight` property and the header and footer row height is configured to "50px" using the `headerRowHeight` and `footerRowHeight` properties.
 
-{% if page.publishingplatform == "typescript" %}
 
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/custom-header-footer-height-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/custom-header-footer-height-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "page.domainurl/code-snippet/grid-sdk/javascript/grid/custom-header-footer-height-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -245,7 +167,7 @@ In the following example, the row height is configured to "100px" using the `row
 {% endtabs %}
 
 {% previewsample "page.domainurl/code-snippet/grid-sdk/javascript/grid/custom-header-footer-height-cs1" %}
-{% endif %}
+
 
 ### Customize row height for particular row 
 
@@ -255,20 +177,7 @@ The `rowHeight` property of the Grid control allows you to set the height of all
 
 In the below example, the row height for the row with **OrderID** as '10249' is set as '90px' using the `rowDataBound` event.
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/custom-row-cs2/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/custom-row-cs2/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/custom-row-cs2" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -280,7 +189,7 @@ In the below example, the row height for the row with **OrderID** as '10249' is 
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/custom-row-cs2" %}
-{% endif %}
+
 
 >* In virtual scrolling mode, it is not applicable to set different row heights.
 >* You can customize the row height of multiple rows by checking the relevant criteria in the `rowDataBound` event and setting the `rowHeight` property accordingly.
@@ -294,20 +203,7 @@ By default, the `enableHover` property is set to **true**, which means that the 
 
 Here is an example that demonstrates how to enable/disable row hover based on the Switch Control:
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/row-hover-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/row-hover-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/row-hover-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -319,7 +215,7 @@ Here is an example that demonstrates how to enable/disable row hover based on th
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/row-hover-cs1" %}
-{% endif %}
+
 
 > The `enableHover` property applies to the entire grid, not individual rows or columns.
 
@@ -332,20 +228,7 @@ You can retrieve row information when hovering over a specific cell. This can be
 
 Here's an example that demonstrates how to use the `rowDataBound` event and `getRowInfo` method to retrieve the row information when hovering over a cell in the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid.
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/grid-cs154/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/grid-cs154/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grid-cs154" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -357,7 +240,7 @@ Here's an example that demonstrates how to use the `rowDataBound` event and `get
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grid-cs154" %}
-{% endif %}
+
 
 >The `getRowInfo` method can only be used in the `rowDataBound` event. Attempting to use it elsewhere will result in an error.
 
@@ -365,20 +248,7 @@ Here's an example that demonstrates how to use the `rowDataBound` event and `get
 
 The `emptyRecordMode` property determines how the empty record row is displayed when the Grid has no records. It supports two modes: `Sticky`, which keeps the empty record row visible during scrolling, and `Normal`, which allows the empty record row to scroll along with the Grid content.
 
-{% if page.publishingplatform == "typescript" %}
 
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/empty-record-mode/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/empty-record-mode/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/empty-record-mode" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -390,7 +260,7 @@ The `emptyRecordMode` property determines how the empty record row is displayed 
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/empty-record-mode" %}
-{% endif %}
+
 
 ## Row Number in Data Grid
 
@@ -400,20 +270,7 @@ To display row numbers, set the [columns->type](../../api/grid/column#type) prop
 
 The Grid automatically updates row numbers when operations such as paging, sorting, filtering, and grouping are performed. This ensures that the displayed row numbers always reflect the current view and order of the records.
 
-{% if page.publishingplatform == "typescript" %}
 
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/rownumber/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/rownumber/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/rownumber" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -425,7 +282,7 @@ The Grid automatically updates row numbers when operations such as paging, sorti
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/rownumber" %}
-{% endif %}
+
 
 ## Row pinning (Frozen)
 
@@ -433,20 +290,7 @@ The JavaScript Grid allows you to freeze rows to keep them visible while scrolli
 
 In the following example, the [frozenRows](../../api/grid#frozenrows) property is set to **2**. This configuration freezes the top two rows of the grid, and they will remain fixed in their positions while the rest of the grid can be scrolled vertically.
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/row-pinning-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/row-pinning-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/row-pinning-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -458,7 +302,7 @@ In the following example, the [frozenRows](../../api/grid#frozenrows) property i
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/row-pinning-cs1" %}
-{% endif %}
+
 
 > * Frozen rows should not be set outside the grid view port.
 > * Frozen Grid will support row virtualization feature, which helps to improve the Grid performance while loading a large dataset.
@@ -478,20 +322,7 @@ To change the default frozen rows line color, you can use the following CSS clas
 ```
 By applying this CSS class, you can set the background color of frozen rows to the specified RGB color. The following example demonstrates how to change the default frozen rows line color using CSS.
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/row-pinning-cs2/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/row-pinning-cs2/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/row-pinning-cs2" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -503,7 +334,7 @@ By applying this CSS class, you can set the background color of frozen rows to t
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/row-pinning-cs2" %}
-{% endif %}
+
 
 ### Deprecated methods
 
@@ -534,20 +365,7 @@ The addRecord method takes two parameters:
 
 Here's an example of how to add a new row using the `addRecord` method:
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/add-row-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/add-row-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/add-row-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -559,7 +377,7 @@ Here's an example of how to add a new row using the `addRecord` method:
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/add-row-cs1" %}
-{% endif %}
+
 
 >* When working with remote data, it is impossible to add a new row between the existing rows.
 >* If you want to add a new record to the beginning of the data source, you can pass **0** as the second parameter to the `addRecord `method.
@@ -577,20 +395,7 @@ In the following example, the **onCheckBoxChange** method is used to check wheth
 
 If the checkbox is unchecked, the method iterates through the hiddenRows array and shows each row by setting its display style to an empty string. The hiddenRows array is also cleared.
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/show-hide-row-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/show-hide-row-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/show-hide-row-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -602,7 +407,7 @@ If the checkbox is unchecked, the method iterates through the hiddenRows array a
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/show-hide-row-cs1" %}
-{% endif %}
+
 
 ## How to get the row data and element
 

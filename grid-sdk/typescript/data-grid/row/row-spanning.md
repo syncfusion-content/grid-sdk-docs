@@ -19,7 +19,7 @@ The `queryCellInfo` event is triggered for each cell in the grid, and allows you
 
 In the following demo, **Davolio** cell is spanned to two rows in the **EmployeeName** column.Also Grid supports the spanning of rows and columns for same cells. **Lunch Break** cell is spanned to two rows and three columns in the **1:00** column.
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -32,19 +32,7 @@ In the following demo, **Davolio** cell is spanned to two rows in the **Employee
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/row-spanning-cs1" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/row-spanning-cs1/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/row-spanning-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/row-spanning-cs1" %}
-{% endif %}
 
 > To disable the spanning for particular grid page, you need to use **requestType** from `queryCellInfo` event argument.
 > The `rowSpan` and `colSpan` attributes can be used together to merge cells both vertically and horizontally.
@@ -70,7 +58,7 @@ When the `enableRowSpan` property is enabled, the Grid automatically merges cell
 
 Here is an example of how to use the `enableRowSpan` property to merge cells vertically:
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -83,19 +71,7 @@ Here is an example of how to use the `enableRowSpan` property to merge cells ver
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/row-spanning-cs2" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/row-spanning-cs2/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/row-spanning-cs2/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/row-spanning-cs2" %}
-{% endif %}
 
 > You can also control spanning at the column level. To prevent merging for specific columns, set `enableRowSpan` to **false** in the column definition.
 
