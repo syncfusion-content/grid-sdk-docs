@@ -209,13 +209,7 @@ namespace UrlAdaptor.Controllers
             // Handling filtering operation.
             if (dataManager.Where != null && dataManager.Where.Count > 0)
             {
-                foreach (var condition in dataManager.Where)
-                {
-                    foreach (var predicate in condition.predicates)
-                    {
-                        DataSource = queryableOperation.PerformFiltering(DataSource, dataManager.Where, predicate.Operator);
-                    }
-                }
+                DataSource = queryableOperation.PerformFiltering(DataSource, dataManager.Where, dataManager.Where[0].Condition);
             }
 
             // Handling sorting operation.

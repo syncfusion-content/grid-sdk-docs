@@ -98,7 +98,7 @@ namespace signalR.Pages
             }
             if (dataManagerRequest.Where != null && dataManagerRequest.Where.Count > 0)
             {
-                DataSource = operation.PerformFiltering(DataSource, dataManagerRequest.Where, dataManagerRequest.Where[0].Operator);
+                DataSource = operation.PerformFiltering(DataSource, dataManagerRequest.Where, dataManagerRequest.Where[0].Condition);
             }
             int count = DataSource.Cast<OrdersDetails>().Count();
             if (dataManagerRequest.Skip != 0)

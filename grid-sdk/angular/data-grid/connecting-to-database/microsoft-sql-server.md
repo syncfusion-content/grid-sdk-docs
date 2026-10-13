@@ -1096,7 +1096,7 @@ Filtering allows restricting data based on column values using the Excel filter 
 
                 // Filtering
                 if (dm.Where != null && dm.Where.Count > 0)
-                    data = _dataOps.PerformFiltering(data, dm.Where, dm.Where[0].Operator);
+                    data = _dataOps.PerformFiltering(data, dm.Where, dm.Where[0].Condition);
 
                 // Other operations (search, sort, paging)...
                 int count = data.Count();
@@ -1606,7 +1606,7 @@ namespace Grid_MSSQL.Server.Controllers
             // Filtering
             if (dm.Where != null && dm.Where.Count > 0)
             {
-                data = _dataOps.PerformFiltering(data, dm.Where, dm.Where[0].Operator);
+                data = _dataOps.PerformFiltering(data, dm.Where, dm.Where[0].Condition);
             }
 
             // Sorting
