@@ -707,13 +707,7 @@ public object Post([FromBody] DataManager DataManagerRequest)
     if (DataManagerParams.Where != null && DataManagerParams.Where.Count > 0)
     {
         // Handling filtering operation
-        foreach (var condition in DataManagerParams.Where)
-        {
-            foreach (var predicate in condition.predicates)
-            {
-                DataSource = queryableOperation.PerformFiltering(DataSource, DataManagerParams.Where, predicate.Operator);
-            }
-        }
+        DataSource = queryableOperation.PerformFiltering(DataSource, DataManagerParams.Where, DataManagerParams.Where[0].Condition);
     }
     // Get the total records count
     int totalRecordsCount = DataSource.Count();
