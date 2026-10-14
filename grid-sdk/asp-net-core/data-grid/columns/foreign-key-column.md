@@ -4,7 +4,6 @@ title: Foreign Key Column in Syncfusion ASP.NET Core Grid Component
 description: Learn here all about Foreign Key Column in Syncfusion ASP.NET Core Grid component of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Foreign Key Column
-publishingplatform: grid-sdk
 documentation: ug
 ---
 
@@ -52,7 +51,7 @@ In this example, **data** is the local data source for the Grid, and **employeeD
 
 The Foreign key column in Syncfusion Grid allows you to bind remote data for a foreign key column. You can assign the service data as an instance of `DataManager` instead of using the `dataSource` property, and provide the endpoint `URL` as the data source URL.
 
-This example demonstrates how to use the foreign key column with remote data binding using the [ODataV4Adaptor](https://ej2.syncfusion.com/aspnetcore/documentation/grid/data-binding/remote-data#odata-v4-adaptor---binding-odata-v4-service) in the grid:
+This example demonstrates how to use the foreign key column with remote data binding using the [ODataV4Adaptor](https://help.syncfusion.com/grid-sdk/asp-net-core/data-grid/connecting-to-adaptors/odatav4-adaptor) in the grid:
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -185,13 +184,13 @@ In the following example, **Customer Name** and **Ship City** are foreign key co
 
 ## Edit template in foreign key column using remote data
 
-The Syncfusion ASP.NET Core Grid allows you to customize the edit template for foreign key columns when using remote data. By default, a [DropDownList](https://ej2.syncfusion.com/aspnetcore/documentation/drop-down-list/getting-started-core) component is used for editing foreign key column. However, you can render a different component by configuring the [column.edit](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_Edit) property. 
+The Syncfusion ASP.NET Core Grid allows you to customize the edit template for foreign key columns when using remote data. By default, a [DropDownList](https://help.syncfusion.com/grid-sdk/asp-net-core/data-grid/getting-started-core) component is used for editing foreign key column. However, you can render a different component by configuring the [column.edit](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_Edit) property. 
 
-This example demonstrates how to use an edit template in a foreign key column with remote data. In this case, an [AutoComplete](https://ej2.syncfusion.com/aspnetcore/documentation/auto-complete/getting-started-core) component is rendered as the edit template for the **EmployeeID** foreign key column. The [dataSource](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.AutoComplete.html#Syncfusion_EJ2_DropDowns_AutoComplete_DataSource) property of the **AutoComplete** component is set to the employees data, and the [field](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_Field) property is configured to display the **FirstName** field as the value. Follow the steps below to achieve this:
+This example demonstrates how to use an edit template in a foreign key column with remote data. In this case, an [AutoComplete](https://ej2.syncfusion.com/aspnetcore/documentation/auto-complete/getting-started) component is rendered as the edit template for the **EmployeeID** foreign key column. The [dataSource](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.DropDowns.AutoComplete.html#Syncfusion_EJ2_DropDowns_AutoComplete_DataSource) property of the **AutoComplete** component is set to the employees data, and the [field](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_Field) property is configured to display the **FirstName** field as the value. Follow the steps below to achieve this:
 
 **Step 1:** Open Visual Studio and create an ASP.NET Core project named **UrlAdaptor**. To create an ASP.NET Core application, follow the documentation [link](https://learn.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/razor-pages-start?view=aspnetcore-8.0&tabs=visual-studio#create-a-razor-pages-web-app) for detailed steps.
 
-**Step 2 :** Create a simple Syncfusion ASP.NET Core Grid by following the [Getting Started](https://ej2.syncfusion.com/aspnetcore/documentation/grid/getting-started-core) documentation link.
+**Step 2 :** Create a simple Syncfusion ASP.NET Core Grid by following the [Getting Started](https://help.syncfusion.com/grid-sdk/asp-net-core/data-grid/getting-started-core) documentation link.
 
 **Step 3:** In your ASP.NET Core file (e.g., **Index.cshtml**), define the Syncfusion ASP.NET Core Grid with the necessary configurations, including a foreign key column for **EmployeeID**, and implement the required logic to manage its behavior.
 

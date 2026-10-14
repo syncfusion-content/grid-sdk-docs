@@ -11,7 +11,7 @@ documentation: ug
 
 Column spanning in the TreeGrid allows merging adjacent cells horizontally, creating a visually appealing and informative layout. By defining the `colSpan` attribute in the [queryCellInfo](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.TreeGrid.TreeGrid.html#Syncfusion_EJ2_TreeGrid_TreeGrid_QueryCellInfo) event, cells can be easily spanned and the appearance of the TreeGrid can be customized.
 
-In the following example, Employee "Davolio" is scheduled for analysis from "9.00 AM" to "10.00 AM", so those cells have been spanned.
+In the following example, Employee "David" is scheduled for analysis from "9.00 AM" to "10.00 AM", so those cells have been spanned.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -50,4 +50,4 @@ The following list outlines the features that are not compatible with column spa
 * Export
 
 ## See Also
-* [Row Spanning in Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.Core TreeGrid](https://ej2.syncfusion.com/aspnetcore/documentation/tree-grid/row/row-spanning)
+* [Row Spanning in Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.Core TreeGrid](https://help.syncfusion.com/grid-sdk/asp-net-core/tree-grid/row/row-spanning)

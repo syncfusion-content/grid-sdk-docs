@@ -4,7 +4,6 @@ title: Columns in Syncfusion ASP.NET Core Grid Component
 description: Learn here all about Columns in Syncfusion ASP.NET Core Grid component of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Columns
-publishingplatform: grid-sdk
 documentation: ug
 ---
 
@@ -39,7 +38,7 @@ Here is an example of how to specify column types in a grid using the types ment
 ![Column Type](../images/columns/Column-type.png)
 
 >* If the `type` is not defined, then it will be determined from the first record of the [dataSource](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.grids.grid.html#Syncfusion_EJ2_Grids_Grid_DataSource).
->* Incase if the first record of the [dataSource](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_DataSource) is null/blank value for a column then it is necessary to define the `type` for that column. This is because the grid uses the column type to determine which filter dialog to display for that column.
+>* In case if the first record of the [dataSource](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_DataSource) is null/blank value for a column then it is necessary to define the `type` for that column. This is because the grid uses the column type to determine which filter dialog to display for that column.
 
 ### Difference between boolean type and checkbox type column 
 
@@ -48,7 +47,7 @@ Here is an example of how to specify column types in a grid using the types ment
 3. When the grid column `type` is a **checkbox**, the selection type of the grid `selectionSettings` will be multiple. This is the default behavior.
 4. If you have more than one column with the column type as a **checkbox**, the grid will automatically enable the other column's checkbox when selecting one column checkbox.
 
-> To learn more about how to render boolean values as checkboxes in a Syncfusion<sup style="font-size:70%">&reg;</sup> GridColumn, please refer to the [Render Boolean Values as Checkbox](https://ej2.syncfusion.com/aspnetcore/documentation/grid/columns/columns#render-boolean-value-as-checkbox) section.
+> To learn more about how to render boolean values as checkboxes in a Syncfusion<sup style="font-size:70%">&reg;</sup> GridColumn, please refer to the [Render Boolean Values as Checkbox](https://help.syncfusion.com/grid-sdk/asp-net-core/data-grid/columns/columns#render-boolean-value-as-checkbox) section.
 
 ## Column width
 
@@ -309,7 +308,7 @@ The `autoFitColumns` method resizes the column to fit the widest cell's content 
 
 ![Column AutoFit](../images/columns/autofit.png)
 
-> You can autoFit all the columns by invoking the `autoFitColumns` method without specifying column names.
+> You can AutoFit all the columns by invoking the `autoFitColumns` method without specifying column names.
 
 ### AutoFit columns with empty space
 
@@ -480,7 +479,7 @@ Here is an example code that demonstrates how to component grid actions for spec
 
 Customizing the grid column styles allows you to modify the appearance of columns in the Grid component to meet your design requirements. You can customize the font, background color, and other styles of the columns. To customize the columns styles in the grid, you can use grid event, css, property or method support.
 
-For more information check on this [documentation](https://ej2.syncfusion.com/aspnetcore/documentation/grid/cell#customize-cell-styles).
+For more information check on this [documentation](https://help.syncfusion.com/grid-sdk/asp-net-core/data-grid/cell#customize-cell-styles).
 
 ## Manipulating columns
 
@@ -583,7 +582,7 @@ grid.refreshColumns();
 ```
 ## Responsive columns
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Grid Core provides a built-in feature to toggle the visibility of columns based on media queries using the [hideAtMedia](../../api/grid/column/#hideatmedia) property of the column object. The `hideAtMedia` accepts valid [Media Queries](http://cssmediaqueries.com/what-are-css-media-queries.html). 
+The Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Grid Core provides a built-in feature to toggle the visibility of columns based on media queries using the [hideAtMedia](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridColumn.html#Syncfusion_Blazor_Grids_GridColumn_HideAtMedia) property of the column object. The `hideAtMedia` accepts valid [Media Queries](http://cssmediaqueries.com/what-are-css-media-queries.html). 
 
 In this example, we have a Grid that displays data with three columns: **Order ID, Customer ID, and Freight**. We have set the `hideAtMedia` property of the **OrderID** column to (min-width: 700px) which means that this column will be hidden when the browser screen width is less than or equal to 700px.
 
@@ -603,5 +602,5 @@ In this example, we have a Grid that displays data with three columns: **Order I
 * [Group Column by Format](../grouping#group-by-format)
 * [How to set complex column as Foreignkey column](../how-to/complex-column-as-foreign-key-column)
 * [Complex Data Binding with list of Array Of Objects](../how-to/list-of-array-of-objects)
-* [How to display image on the base64 Grid column](https://support.syncfusion.com/kb/article/9862/how-to-display-a-picture-on-the-base64-grid-column-in-javascript-application)
+* [How to display image on the base64 Grid column](https://support.syncfusion.com/kb/article/9862/how-to-display-a-picture-on-base64-grid-column-in-javascript-grid)
 * [How to change the data source or columns dynamically](../data-binding/how-to-change-the-data-source-or-columns-dynamically)

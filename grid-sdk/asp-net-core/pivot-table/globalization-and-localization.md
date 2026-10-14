@@ -11,7 +11,7 @@ documentation: ug
 
 # Globalization and Localization in ASP.NET Core Pivot Table
 
-Globalization is the combination of internalization and localization. You can adapt the component to various languages by parsing and formatting the date or number ([`Internationalization`](https://ej2.syncfusion.com/aspnetcore/documentation/base/intl.html)) & adding culture specific customization and translation to the text ([`Localization`](https://ej2.syncfusion.com/aspnetcore/documentation/base/localization.html)).
+Globalization is the combination of internalization and localization. You can adapt the component to various languages by parsing and formatting the date or number ([`Internationalization`](https://ej2.syncfusion.com/aspnetcore/documentation/common/internationalization)) & adding culture specific customization and translation to the text ([`Localization`](https://ej2.syncfusion.com/aspnetcore/documentation/common/localization)).
 
 ## Internationalization
 
@@ -27,7 +27,7 @@ npm install cldr-data --save
 
 Once the package installed, you can find the culture specific JSON data under the location `/scripts/cldr-data`.
 
-* Now use the [`loadCultureFiles`](https://ej2.syncfusion.com/aspnetcore/documentation/base/intl.html#loading-culture-data) method to load the culture specific CLDR JSON data.
+* Now use the [`loadCultureFiles`](https://ej2.syncfusion.com/aspnetcore/documentation/common/internationalization#loading-culture-data) method to load the culture specific CLDR JSON data.
 
 In ASP.NET MVC refer the culture files directly from `/scripts/cldr-data` location. In ASP.NET Core refer the culture files directly from `/wwwroot/scripts/cldr-data` location as like the below code examples for both ASP.NET Core and MVC
 
@@ -76,8 +76,6 @@ In ASP.NET MVC refer the culture files directly from `/scripts/cldr-data` locati
 
 * Set the culture by using the `locale` property.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/globalization/internationalization/tagHelper %}
@@ -87,31 +85,15 @@ In ASP.NET MVC refer the culture files directly from `/scripts/cldr-data` locati
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/globalization/internationalization/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Internationalization.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/globalization/internationalization/Internationalization.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
-
 N> * By default, `locale` value is `en-US`. If you want to change the `en-US` culture to a different culture, you have to change  the `locale` accordingly.
 
 <!-- markdownlint-disable MD009 -->
 
 ### Decimal separators
 
-The decimal separators of pivot table values varies based on the culture applied to the component. The culture can be set by calling the method [`setCulture`](https://ej2.syncfusion.com/aspnetcore/documentation/common/internationalization/?no-cache=1#setting-global-culture) with appropriate culture string as its parameter. 
+The decimal separators of pivot table values varies based on the culture applied to the component. The culture can be set by calling the method [`setCulture`](https://ej2.syncfusion.com/aspnetcore/documentation/common/internationalization#setting-global-culture) with appropriate culture string as its parameter. 
 
 The following example demonstrates the decimal separators in `Deutsch` culture.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -122,25 +104,11 @@ The following example demonstrates the decimal separators in `Deutsch` culture.
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/globalization/locale/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Locale.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/globalization/locale/Locale.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
-
 ![Pivot table values with German locale decimal separators](images/localede.png)
 
 ## Localization
 
-The [`Localization`](https://ej2.syncfusion.com/aspnetcore/documentation/base/localization.html) library allows you to localize default text content of the Pivot Table. The pivot table component has static text on some features (like drop area text, pivot field list title, etc...) that can be changed to other cultures (Arabic, Deutsch, French, etc.) by defining the `locale` value and translation object.
+The [`Localization`](https://ej2.syncfusion.com/aspnetcore/documentation/common/localization) library allows you to localize default text content of the Pivot Table. The pivot table component has static text on some features (like drop area text, pivot field list title, etc...) that can be changed to other cultures (Arabic, Deutsch, French, etc.) by defining the `locale` value and translation object.
 
 The following list of properties and its values are used in the pivot table.
 
@@ -594,11 +562,9 @@ N> To find the latest localization keywords of pivotview and pivotfieldlist for 
 
 ### Loading Translations
 
-To load translation object in an application, use [`load`](https://ej2.syncfusion.com/documentation/common/api-l10n.html#load) function of the [`L10n`](https://ej2.syncfusion.com/documentation/common/api-l10n.html) class.
+To load translation object in an application, use `load` function of the `L10n` class.
 
 The following example demonstrates the Pivot Table in `Deutsch` culture.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -609,25 +575,9 @@ The following example demonstrates the Pivot Table in `Deutsch` culture.
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/globalization/localization/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Localization.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/globalization/localization/Localization.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
-
 ## Right-to-left (RTL)
 
 RTL provides an option to switch the text direction and layout of the Pivot Table component from right to left. It improves the user experiences and accessibility for users who use right-to-left languages (Arabic, Farsi, Urdu, etc.). To enable RTL Pivot Table, set the `enableRtl` property to **true**.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -637,16 +587,3 @@ RTL provides an option to switch the text direction and layout of the Pivot Tabl
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/globalization/rtl/RTL.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/globalization/rtl/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="RTL.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/globalization/rtl/RTL.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-

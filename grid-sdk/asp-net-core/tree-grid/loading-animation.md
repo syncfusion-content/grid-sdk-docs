@@ -16,8 +16,6 @@ The tree grid supports two indicator types, which can be enabled by setting the 
 
 In the following sample, the Shimmer indicator is displayed while the tree grid is loading and refreshing when using the remote data.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-core/tree-grid/data-binding-core/loading-animation/tagHelper %}
@@ -27,15 +25,5 @@ In the following sample, the Shimmer indicator is displayed while the tree grid 
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
 
-{% tabs %}
-{% highlight c# tabtitle="LoadingAnimation.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/tree-grid/data-binding-core/loading-animation/loadingAnimation.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
-
-> You can refer to our  [`ASP.NET Core Tree Grid`](https://www.syncfusion.com/aspnet-core-ui-controls/tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our ASP.NET Core Tree Grid example [`ASP.NET Core Tree Grid example`](https://ej2.syncfusion.com/aspnetcore/TreeGrid/Overview#/material) to knows how to present and manipulate data.
+> You can refer to our  [`ASP.NET Core Tree Grid`](https://www.syncfusion.com/aspnet-core-ui-controls/tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our ASP.NET Core Tree Grid example [`ASP.NET Core Tree Grid example`](https://ej2.syncfusion.com/aspnetcore/treegrid/overview#/fluent2) to knows how to present and manipulate data.
