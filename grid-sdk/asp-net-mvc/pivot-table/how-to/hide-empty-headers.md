@@ -16,19 +16,6 @@ For example, when the raw data contains **"United Kingdom"** for the 'Country' f
 
 > By default, this property is set to **true**.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/hide-headers/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Fieldlist.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/hide-headers/fieldlist.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/hide-headers/razor %}
@@ -37,6 +24,3 @@ For example, when the raw data contains **"United Kingdom"** for the 'Country' f
 {% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/hide-headers/fieldlist.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
-
-

@@ -22,20 +22,7 @@ The Server side export functionality is shipped in the Syncfusion.EJ2.TreeGridEx
 
 The following code snippet shows server configuration using ASP.NET Core Controller Action.
 
-To Export the tree grid in server side, You need to call the [`serverPdfExport`](https://ej2.syncfusion.com/documentation/api/treegrid#serverpdfexport) method for passing the tree grid properties to server exporting action.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/pdf-export/server-export/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Server-exportCore.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/pdf-export/server-export/server-exportCore.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
+To Export the tree grid in server side, You need to call the [`serverPdfExport`](https://ej2.syncfusion.com/documentation/api/treegrid/index-default#serverpdfexport) method for passing the tree grid properties to server exporting action.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -45,7 +32,6 @@ To Export the tree grid in server side, You need to call the [`serverPdfExport`]
 {% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/pdf-export/server-export/server-exportMvc.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ## Rotate a header text to a certain degree in the exported tree grid on the server side
 
@@ -57,19 +43,6 @@ In the following demo, the `DrawString` method from the `Graphics` is used to ro
 
 N> A PDF exporting is not supported to rotate the column header on the client side.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/pdf-export/rotate-header/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Rotate-Header.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/pdf-export/rotate-header/rotate-header.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/pdf-export/rotate-header/razor %}
@@ -78,4 +51,3 @@ N> A PDF exporting is not supported to rotate the column header on the client si
 {% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/pdf-export/rotate-header/rotate-header.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}

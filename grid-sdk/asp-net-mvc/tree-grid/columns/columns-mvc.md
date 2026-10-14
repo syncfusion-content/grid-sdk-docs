@@ -23,16 +23,6 @@ N> 1. If the column [`Field`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncf
 To format cell values based on specific culture, use the [`Format`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGridColumn.html#Syncfusion_EJ2_TreeGrid_TreeGridColumn_Format) property of [`Column`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGridColumn.html#Syncfusion_EJ2_TreeGrid_TreeGridColumn_Field). The TreeGrid uses [Internalization](../../common/internationalization) library to format [`number`](../../common/internationalization#number-formatting) and [`date`](../../common/internationalization#manipulating-datetime)
 values.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight c# tabtitle="Formatting.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/columns-mvc/formatting/formatting.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/columns-mvc/formatting/razor %}
@@ -41,8 +31,6 @@ values.
 {% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/columns-mvc/formatting/formatting.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
-
 
 
 N> By default, the [`number`](../../common/internationalization#number-formatting) and [`date`](../../common/internationalization#manipulating-datetime) values are formatted in `en-US` locale.
@@ -75,16 +63,6 @@ Format | Formatted value
 { type: 'dateTime', format: 'dd/MM/yyyy hh:mm a' } | 04/07/1996 12:00 AM
 { type: 'dateTime', format: 'MM/dd/yyyy hh:mm:ss a' } | 07/04/1996 12:00:00 AM
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight c# tabtitle="Dateformatting.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/columns-mvc/dateformatting/dateformatting.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/columns-mvc/dateformatting/razor %}
@@ -93,8 +71,6 @@ Format | Formatted value
 {% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/columns-mvc/dateformatting/dateformatting.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
-
 
 
 ## Lock columns
@@ -139,19 +115,6 @@ To render checkboxes in existing column, you need to set [`ShowCheckbox`](https:
 
 It is also possible to select the rows hierarchically using checkboxes in TreeGrid by enabling [`AutoCheckHierarchy`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGrid.html#Syncfusion_EJ2_TreeGrid_TreeGrid_AutoCheckHierarchy) property. When we check on any parent record checkbox then the child record checkboxes will get checked.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/columns-mvc/checkbox/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Checkbox.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/columns-mvc/checkbox/checkbox.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/columns-mvc/checkbox/razor %}
@@ -160,23 +123,10 @@ It is also possible to select the rows hierarchically using checkboxes in TreeGr
 {% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/columns-mvc/checkbox/checkbox.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
-
-
 
 ## Controlling Tree Grid actions
 
 You can enable or disable treegrid action for a particular column by setting the [`AllowFiltering`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGridColumn.html#Syncfusion_EJ2_TreeGrid_TreeGridColumn_AllowFiltering), and [`AllowSorting`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGridColumn.html#Syncfusion_EJ2_TreeGrid_TreeGridColumn_AllowSorting) properties in [`Column`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGridColumn.html).
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight c# tabtitle="Gridaction.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/columns-mvc/gridaction/gridaction.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -186,23 +136,10 @@ You can enable or disable treegrid action for a particular column by setting the
 {% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/columns-mvc/gridaction/gridaction.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
-
-
 
 ## Show/hide columns by external button
 
-You can show or hide treegrid columns dynamically using external buttons by invoking the [`showColumns`](https://ej2.syncfusion.com/documentation/api/grid#showcolumns) or [`hideColumns`](https://ej2.syncfusion.com/documentation/api/grid#hidecolumns) method.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight c# tabtitle="Showhide.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/columns-mvc/showhide/showhide.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
+You can show or hide treegrid columns dynamically using external buttons by invoking the [`showColumns`](https://ej2.syncfusion.com/documentation/api/grid/index-default#showcolumns) or [`hideColumns`](https://ej2.syncfusion.com/documentation/api/grid/index-default#hidecolumns) method.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -212,23 +149,10 @@ You can show or hide treegrid columns dynamically using external buttons by invo
 {% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/columns-mvc/showhide/showhide.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
-
-
 
 ## ValueAccessor
 
 The [`ValueAccessor`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGridColumn.html#Syncfusion_EJ2_TreeGrid_TreeGridColumn_ValueAccessor) is used to access/manipulate the value of display data. You can achieve custom value formatting by using the [`ValueAccessor`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGridColumn.html#Syncfusion_EJ2_TreeGrid_TreeGridColumn_ValueAccessor).
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight c# tabtitle="Value.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/columns-mvc/value/value.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -238,25 +162,12 @@ The [`ValueAccessor`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ
 {% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/columns-mvc/value/value.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
-
-
 
 ### Display array type columns
 
 You can bind an array of objects in a column by using the [`ValueAccessor`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGridColumn.html#Syncfusion_EJ2_TreeGrid_TreeGridColumn_ValueAccessor) property.
 In this example, the name field has an array of two objects, FirstName and LastName. These two objects are joined and bound to a column using the
 [`ValueAccessor`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGridColumn.html#Syncfusion_EJ2_TreeGrid_TreeGridColumn_ValueAccessor).
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight c# tabtitle="Valuearray.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/columns-mvc/valuearray/valuearray.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -266,23 +177,10 @@ In this example, the name field has an array of two objects, FirstName and LastN
 {% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/columns-mvc/valuearray/valuearray.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
-
-
 
 ### Expression column
 
 You can achieve the expression column by using the [`ValueAccessor`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGridColumn.html#Syncfusion_EJ2_TreeGrid_TreeGridColumn_ValueAccessor) property.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight c# tabtitle="Expression.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/columns-mvc/expression/expression.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -292,23 +190,11 @@ You can achieve the expression column by using the [`ValueAccessor`](https://hel
 {% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/columns-mvc/expression/expression.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
-
 
 
 ## How to render boolean values as checkbox
 
 To render boolean values as checkbox in columns, you need to set [`DisplayAsCheckBox`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGridColumn.html#Syncfusion_EJ2_TreeGrid_TreeGridColumn_DisplayAsCheckBox) property as **true**.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight c# tabtitle="Displayascheckbox.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/columns-mvc/displayascheckbox/displayascheckbox.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -318,11 +204,9 @@ To render boolean values as checkbox in columns, you need to set [`DisplayAsChec
 {% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/columns-mvc/displayascheckbox/displayascheckbox.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 
-
-N> You can refer to our [`ASP.NET MVC Tree Grid`](https://www.syncfusion.com/aspnet-mvc-ui-controls/tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our [`ASP.NET MVC Tree Grid example`](https://ej2.syncfusion.com/aspnetmvc/TreeGrid/Overview#/material) to knows how to present and manipulate data.
+N> You can refer to our [`ASP.NET MVC Tree Grid`](https://www.syncfusion.com/aspnet-mvc-ui-controls/tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our [`ASP.NET MVC Tree Grid example`](https://ej2.syncfusion.com/aspnetmvc/treegrid/overview#/fluent2) to knows how to present and manipulate data.
 
 
 

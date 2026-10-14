@@ -9,20 +9,7 @@ documentation: ug
 
 # Filtering in ASP.NET MVC TreeGrid
 
-Filtering allows you to view specific or related records based on filter criteria. To enable filtering in the TreeGrid, set the [`AllowFiltering`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGrid~AllowFiltering.html) to true. Filtering options can be configured through [`FilterSettings`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGrid~FilterSettings.html).
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/filtering/default-filtering/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="DefaultFiltering.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/filtering/default-filtering/defaultFiltering.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
+Filtering allows you to view specific or related records based on filter criteria. To enable filtering in the TreeGrid, set the [`AllowFiltering`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGrid.html#Syncfusion_EJ2_TreeGrid_TreeGrid_AllowFiltering) to true. Filtering options can be configured through [`FilterSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGrid.html#Syncfusion_EJ2_TreeGrid_TreeGrid_FilterSettings).
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -32,16 +19,14 @@ Filtering allows you to view specific or related records based on filter criteri
 {% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/filtering/default-filtering/defaultFiltering.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
-
-
-N> You can apply and clear filtering by using [`filterByColumn`](https://ej2.syncfusion.com/documentation/api/treegrid#filterbycolumn) and [`clearFiltering`](https://ej2.syncfusion.com/documentation/api/treegrid#clearfiltering) methods.
-<br/> To disable filtering for a particular column, set [`AllowFiltering`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridColumn~AllowFiltering.html) property of [`Column`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridColumn.html) to false.
+N> You can apply and clear filtering by using [`filterByColumn`](https://ej2.syncfusion.com/documentation/api/treegrid/index-default#filterbycolumn) and [`clearFiltering`](https://ej2.syncfusion.com/documentation/api/treegrid/index-default#clearfiltering) methods.
+<br/> To disable filtering for a particular column, set [`AllowFiltering`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGridColumn.html#Syncfusion_EJ2_TreeGrid_TreeGridColumn_AllowFiltering) property of [`Column`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGridColumn.html) to false.
 
 ## Filter hierarchy modes
 
-TreeGrid provides support for a set of filtering modes with [`HierarchyMode`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridFilterSettings~HierarchyMode.html) of [`FilterSettings`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGrid~FilterSettings.html) property.
+TreeGrid provides support for a set of filtering modes with [`HierarchyMode`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGridFilterSettings.html#Syncfusion_EJ2_TreeGrid_TreeGridFilterSettings_HierarchyMode) of [`FilterSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGrid.html#Syncfusion_EJ2_TreeGrid_TreeGrid_FilterSettings) property.
+
 The below are the type of filter mode available in TreeGrid.
 
 * **Parent** : This is the default filter hierarchy mode in TreeGrid. The filtered records are displayed with its parent records, if the filtered records not have any parent record then the filtered records only displayed.
@@ -52,19 +37,6 @@ The below are the type of filter mode available in TreeGrid.
 
 * **None** : The filtered records are only displayed.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/filtering/filter-modes/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="FilterModes.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/filtering/filter-modes/filterModes.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/filtering/filter-modes/razor %}
@@ -73,26 +45,10 @@ The below are the type of filter mode available in TreeGrid.
 {% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/filtering/filter-modes/filterModes.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
-
-
 
 ## Initial filter
 
-To apply the filter at initial rendering, set the filter **Predicate** object in [`Columns`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridFilterSettings~Columns.html) property of [`FilterSettings`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridFilterSettings.html).
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/filtering/initial-filter/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="InitialFilter.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/filtering/initial-filter/initialFilter.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
+To apply the filter at initial rendering, set the filter **Predicate** object in [`Columns`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGridFilterSettings.html#Syncfusion_EJ2_TreeGrid_TreeGridFilterSettings_Columns) property of [`FilterSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGridFilterSettings.html).
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -102,13 +58,10 @@ To apply the filter at initial rendering, set the filter **Predicate** object in
 {% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/filtering/initial-filter/initialFilter.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
-
-
 
 ## Filter operators
 
-The filter operator for a column can be defined in the **Operator** property of [`Columns`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridFilterSettings~Columns.html) in [`FilterSettings`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridFilterSettings.html).
+The filter operator for a column can be defined in the **Operator** property of [`Columns`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGridFilterSettings.html#Syncfusion_EJ2_TreeGrid_TreeGridFilterSettings_Columns) in [`FilterSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGridFilterSettings.html).
 
 The available operators and its supported data types are:
 
@@ -124,8 +77,8 @@ greaterthanorequal|Checks whether a value is greater than or equal to the specif
 lessthan |Checks whether the value is less than the specified value. |Number &#124; Date
 lessthanorequal |Checks whether the value is less than or equal to the specified value. |Number &#124; Date
 
-N> By default, the **Operator** [`Columns`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridFilterSettings~Columns.html) value is **equal**.
+N> By default, the **Operator** [`Columns`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGridFilterSettings.html#Syncfusion_EJ2_TreeGrid_TreeGridFilterSettings_Columns) value is **equal**.
 
 
 
-N> You can refer to our [`ASP.NET MVC Tree Grid`](https://www.syncfusion.com/aspnet-mvc-ui-controls/tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our [`ASP.NET MVC Tree Grid example`](https://ej2.syncfusion.com/aspnetmvc/TreeGrid/Overview#/material) to knows how to present and manipulate data.
+N> You can refer to our [`ASP.NET MVC Tree Grid`](https://www.syncfusion.com/aspnet-mvc-ui-controls/tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our [`ASP.NET MVC Tree Grid example`](https://ej2.syncfusion.com/aspnetmvc/treegrid/overview#/fluent2) to knows how to present and manipulate data.

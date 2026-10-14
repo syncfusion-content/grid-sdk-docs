@@ -20,24 +20,11 @@ The Field List can be displayed in two different ways to work with your Pivot Ta
 
 ## In-built Field List (Popup)
 
-The built-in field list provides quick access to modify your Pivot Table report settings without taking up permanent space on your webpage. To enable this option, set the [`ShowFieldList`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_ShowFieldList) property in [`PivotView`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html) class to **true**. A field list icon will then appear in the top-left corner of the Pivot Table. When you click this icon, the field list dialog opens.
+The built-in field list provides quick access to modify your Pivot Table report settings without taking up permanent space on your webpage. To enable this option, set the [`ShowFieldList`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_ShowFieldList) property in [`PivotView`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html) class to **true**. A field list icon will then appear in the top-left corner of the Pivot Table. When you click this icon, the field list dialog opens.
 
 > The field list icon appears in the top right corner of the Pivot Table when the grouping bar is enabled.
 
 To use the field list, you need to inject the `FieldList` module in the Pivot Table.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/getting-start-mvc/fieldlist/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Fieldlist.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/getting-start-mvc/fieldlist/fieldlist.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -47,9 +34,6 @@ To use the field list, you need to inject the `FieldList` module in the Pivot Ta
 {% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/getting-start-mvc/fieldlist/fieldlist.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
-
-
 
 <!-- markdownlint-disable MD012 -->
 ![Pivot Table field list icon in toolbar](images/gs_fieldlist_icon.png)
@@ -59,22 +43,9 @@ To use the field list, you need to inject the `FieldList` module in the Pivot Ta
 
 ## Stand-alone Field List (Fixed)
 
-The stand-alone Field List allows users to keep the Field List visible at a specific place on the web page, making it easy to access its options without opening a popup each time. To configure the stand-alone Field List, set the [`RenderMode`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotFieldList.html#Syncfusion_EJ2_PivotView_PivotFieldList_RenderMode) property to [**Mode.Fixed**](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.Mode.html) in [`PivotFieldList`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotFieldList.html).
+The stand-alone Field List allows users to keep the Field List visible at a specific place on the web page, making it easy to access its options without opening a popup each time. To configure the stand-alone Field List, set the [`RenderMode`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotFieldList.html#Syncfusion_EJ2_PivotView_PivotFieldList_RenderMode) property to [**Mode.Fixed**](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.Mode.html) in [`PivotFieldList`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotFieldList.html).
 
 > To ensure the field list works seamlessly with the Pivot Table, use the `updateView` and `update` methods. These methods synchronize data source changes between the field list and Pivot Table components, keeping both components in sync when users make modifications.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/field-list/static/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Static.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/field-list/static/Static.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -84,34 +55,18 @@ The stand-alone Field List allows users to keep the Field List visible at a spec
 {% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/field-list/static/Static.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
-
-
 
 ![Stand-alone static field list](images/staticfieldlist.png)
 
 ## Invoking dynamic Field List (Customized)
 
-You can open the Field List dialog independently using an external button, allowing you to interact with the Pivot Table dynamically. To achieve this, set the [`RenderMode`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotFieldList.html#Syncfusion_EJ2_PivotView_PivotFieldList_RenderMode) property to [**Mode.Popup**](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.Mode.html). This setting ensures the Field List dialog appears when you click the external button.
+You can open the Field List dialog independently using an external button, allowing you to interact with the Pivot Table dynamically. To achieve this, set the [`RenderMode`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotFieldList.html#Syncfusion_EJ2_PivotView_PivotFieldList_RenderMode) property to [**Mode.Popup**](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.Mode.html). This setting ensures the Field List dialog appears when you click the external button.
 
 You can also specify where the Field List dialog appears on the web page by using the `target` property. By default, the `target` value is set to `null`, which positions the dialog relative to the `document.body` element.
 
 To ensure the Field List and Pivot Table stay in sync, use the `updateView` and `update` methods. These methods update the data source in both the Field List and the Pivot Table at the same time, keeping the displayed data consistent.
 
 The sample code below shows how to open the Field List dialog using an external button click.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/field-list/popup/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Popup.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/field-list/popup/Popup.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -121,9 +76,6 @@ The sample code below shows how to open the Field List dialog using an external 
 {% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/field-list/popup/Popup.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
-
-
 
 ![Customized field list popup opened via external button](images/fieldlist-custom.png)
 
@@ -136,22 +88,9 @@ You can enable the field search option in two different Field List configuration
 
 **Stand-alone Field List**
 
-To enable the search box in the stand-alone Field List UI, set the [`EnableFieldSearching`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotFieldList.html#Syncfusion_EJ2_PivotView_PivotFieldList_EnableFieldSearching) property to **true** in [`PivotFieldList`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotFieldList.html).
+To enable the search box in the stand-alone Field List UI, set the [`EnableFieldSearching`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotFieldList.html#Syncfusion_EJ2_PivotView_PivotFieldList_EnableFieldSearching) property to **true** in [`PivotFieldList`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotFieldList.html).
 
 > By default, the field search option is disabled in the Field List UI.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/field-list/Search-desired-field-static/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Search.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/field-list/Search-desired-field-static/Search-desired-field-static.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -161,28 +100,12 @@ To enable the search box in the stand-alone Field List UI, set the [`EnableField
 {% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/field-list/Search-desired-field-static/Search-desired-field-static.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
-
-
 
 ![Searching Static FieldList](images/Search desired field in static field list.png)
 
 **Pivot Table's Built-in Popup Field List**
 
-To enable the search box in the Pivot Table's built-in popup Field List UI, set the [`EnableFieldSearching`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_EnableFieldSearching) property to **true** in [`PivotView`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html).
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/field-list/Search-desired-field-popup/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Search.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/field-list/Search-desired-field-popup/Search-desired-field-popup.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
+To enable the search box in the Pivot Table's built-in popup Field List UI, set the [`EnableFieldSearching`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_EnableFieldSearching) property to **true** in [`PivotView`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html).
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -192,9 +115,6 @@ To enable the search box in the Pivot Table's built-in popup Field List UI, set 
 {% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/field-list/Search-desired-field-popup/Search-desired-field-popup.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
-
-
 
 ![Searching Popup FieldList](images/Search desired field in popup field list.png)
 
@@ -210,19 +130,6 @@ To display the fields in descending order by default whenever the Field List ope
 
 Below is an example showing how to set up this option when initializing the Pivot Table:
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/field-list/sort/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="fieldSort.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/field-list/sort/fieldSort.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/field-list/sort/razor %}
@@ -231,30 +138,14 @@ Below is an example showing how to set up this option when initializing the Pivo
 {% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/field-list/sort/fieldSort.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
-
-
 
 ![Fields in the Field list UI arranged in descending order](images/fieldlist-sort.png)
 
 ## Group fields under desired folder name
 
-Organizing fields into custom folders in the Field List helps users manage and locate fields more efficiently. Users can group fields under a specific folder name in the Field List UI by setting the [`GroupName`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.FieldMappingFieldListDataSourceBuilder.html#Syncfusion_EJ2_PivotView_FieldMappingFieldListDataSourceBuilder_GroupName_System_String_) property within the [`FieldMapping`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html#Syncfusion_EJ2_PivotView_PivotViewDataSourceSettings_FieldMapping) configuration of the [`PivotViewDataSourceSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html). This feature allows users to visually categorize fields in the Pivot Table for improved organization and clarity.
+Organizing fields into custom folders in the Field List helps users manage and locate fields more efficiently. Users can group fields under a specific folder name in the Field List UI by setting the [`GroupName`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.FieldMappingFieldListDataSourceBuilder.html#Syncfusion_EJ2_PivotView_FieldMappingFieldListDataSourceBuilder_GroupName_System_String_) property within the [`FieldMapping`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html#Syncfusion_EJ2_PivotView_PivotViewDataSourceSettings_FieldMapping) configuration of the [`PivotViewDataSourceSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html). This feature allows users to visually categorize fields in the Pivot Table for improved organization and clarity.
 
-> **Note**: Fields can only be grouped under a single level using the [`GroupName`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.FieldMappingFieldListDataSourceBuilder.html#Syncfusion_EJ2_PivotView_FieldMappingFieldListDataSourceBuilder_GroupName_System_String_) property.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/field-list/group-name-folder/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="GroupName.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/field-list/group-name-folder/GroupName.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
+> **Note**: Fields can only be grouped under a single level using the [`GroupName`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.FieldMappingFieldListDataSourceBuilder.html#Syncfusion_EJ2_PivotView_FieldMappingFieldListDataSourceBuilder_GroupName_System_String_) property.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -264,9 +155,6 @@ Organizing fields into custom folders in the Field List helps users manage and l
 {% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/field-list/group-name-folder/GroupName.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
-
-
 
 ![Fields displayed in folder structure](images/groupNameTreeview.png)
 
@@ -278,20 +166,7 @@ The Field List allows users to quickly modify their data analysis by selecting o
 
 ## Remove specific field(s) from displaying
 
-When you connect a data source to the Pivot Table, all available fields from the data source are automatically shown in the field list. If you want to hide certain fields from the field list, you can do so easily. To hide one or more fields, add their names to the [`ExcludeFields`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html#Syncfusion_EJ2_PivotView_PivotViewDataSourceSettings_ExcludeFields) property belonging to [`PivotViewDataSourceSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html) class.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/field-list/exclude-fields/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Fieldlist.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/field-list/exclude-fields/fieldlist.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
+When you connect a data source to the Pivot Table, all available fields from the data source are automatically shown in the field list. If you want to hide certain fields from the field list, you can do so easily. To hide one or more fields, add their names to the [`ExcludeFields`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html#Syncfusion_EJ2_PivotView_PivotViewDataSourceSettings_ExcludeFields) property belonging to [`PivotViewDataSourceSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html) class.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -301,9 +176,6 @@ When you connect a data source to the Pivot Table, all available fields from the
 {% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/field-list/exclude-fields/fieldlist.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
-
-
 
 ![Pivot Table field list with hidden fields excluded](images/fieldlist_hide.png)
 
@@ -333,7 +205,7 @@ The Pivot Table allows users to sort members in the row and column axes using a 
 
 ## Calculated fields
 
-The calculated field option allows users to create a new field based on existing fields from the data source using basic arithmetic operations, such as addition, subtraction, multiplication, and division. To use this option in the Field List UI, set the [`AllowCalculatedField`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_AllowCalculatedField) property in [`PivotView`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html) class to **true** in pivot table. When enabled, a button appears in the Field List UI. Clicking this button opens the calculated field dialog, where users can define a new calculated field. For more details on calculated fields, refer to [this section](./calculated-field).
+The calculated field option allows users to create a new field based on existing fields from the data source using basic arithmetic operations, such as addition, subtraction, multiplication, and division. To use this option in the Field List UI, set the [`AllowCalculatedField`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_AllowCalculatedField) property in [`PivotView`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html) class to **true** in pivot table. When enabled, a button appears in the Field List UI. Clicking this button opens the calculated field dialog, where users can define a new calculated field. For more details on calculated fields, refer to [this section](./calculated-field).
 
 ![Enabling calculated field in Field List UI](images/gs_calc_button.png)
 
@@ -353,7 +225,7 @@ Users can perform calculations on a group of values by selecting an aggregation 
 
 ## Defer layout update
 
-The defer layout update option allows users to update the Pivot Table only when needed, instead of after every change in the Field List. To enable this option, set the [`AllowDeferLayoutUpdate`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_AllowDeferLayoutUpdate) property in [`PivotView`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html) class to **true** in pivot table. When enabled, a checkbox appears in the Field List, checked by default. Users can uncheck this checkbox to make changes without updating the Pivot Table immediately, and then apply all changes at once. For more details on defer layout update, refer to [defer update](./defer-update).
+The defer layout update option allows users to update the Pivot Table only when needed, instead of after every change in the Field List. To enable this option, set the [`AllowDeferLayoutUpdate`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_AllowDeferLayoutUpdate) property in [`PivotView`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html) class to **true** in pivot table. When enabled, a checkbox appears in the Field List, checked by default. Users can uncheck this checkbox to make changes without updating the Pivot Table immediately, and then apply all changes at once. For more details on defer layout update, refer to [defer update](./defer-update).
 
 ![Defer layout update checkbox](images/fieldlist_deferupdate.png)
 
@@ -363,19 +235,6 @@ The built-in Field List dialog can be displayed over a specific element on a web
 
 The sample code below demonstrates how to display the built-in Field List dialog using `document.body` as the target element.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/field-list/fieldlist-on-specifictarget/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Fieldlist-on-specifictarget.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/field-list/fieldlist-on-specifictarget/fieldlist-on-specifictarget.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/field-list/fieldlist-on-specifictarget/razor %}
@@ -384,28 +243,12 @@ The sample code below demonstrates how to display the built-in Field List dialog
 {% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/field-list/fieldlist-on-specifictarget/fieldlist-on-specifictarget.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
-
-
 
 ![Field list popup over target](images/popup-fieldlist-specifictarget.png)
 
 ## Show field list using toolbar
 
-The Field List can be displayed in the toolbar by enabling specific options in the Pivot Table. To show the Field List in the toolbar, set the [`ShowFieldList`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_ShowFieldList) and [`ShowToolbar`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_ShowToolbar) properties to **true**. Additionally, include the **FieldList** item in the [`Toolbar`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_Toolbar) property. When these options are enabled, the Field List icon automatically appears in the toolbar, and it will not be displayed in the top-left corner of the Pivot Table.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/field-list/toolbar/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Fieldlist.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/field-list/toolbar/fieldlist.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
+The Field List can be displayed in the toolbar by enabling specific options in the Pivot Table. To show the Field List in the toolbar, set the [`ShowFieldList`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_ShowFieldList) and [`ShowToolbar`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_ShowToolbar) properties to **true**. Additionally, include the **FieldList** item in the [`Toolbar`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_Toolbar) property. When these options are enabled, the Field List icon automatically appears in the toolbar, and it will not be displayed in the top-left corner of the Pivot Table.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -415,30 +258,14 @@ The Field List can be displayed in the toolbar by enabling specific options in t
 {% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/field-list/toolbar/fieldlist.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
-
-
 
 ![Field list in toolbar](images/fieldlist_toolbar.png)
 
 ## Set caption to fields which isn’t bound to the report
 
-You can assign captions to all fields in the data source, even if they are not currently used in the Pivot Table report. This is done using the [`EnginePopulated`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotFieldList.html#Syncfusion_EJ2_PivotView_PivotFieldList_EnginePopulated) event. When you set a caption, it appears in both the Grouping Bar and the Field List for the respective field.
+You can assign captions to all fields in the data source, even if they are not currently used in the Pivot Table report. This is done using the [`EnginePopulated`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotFieldList.html#Syncfusion_EJ2_PivotView_PivotFieldList_EnginePopulated) event. When you set a caption, it appears in both the Grouping Bar and the Field List for the respective field.
 
 In the example below, captions are set for the `Year` and `Quarter` fields dynamically.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/field-list/fieldlist-caption/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Fieldlist.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/field-list/fieldlist-caption/fieldlist.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -448,9 +275,6 @@ In the example below, captions are set for the `Year` and `Quarter` fields dynam
 {% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/field-list/fieldlist-caption/fieldlist.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
-
-
 
 ![Field list with captions applied](images/fieldlist_caption1.png)
 
@@ -462,19 +286,6 @@ At runtime, the **Values** button in the field list allows users to move the val
 
 > The Values button is displayed only when multiple fields are added to the Values axis. It is not shown when a single field is present.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/field-list/fieldlist-valuesbutton/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Fieldlist-valuesbutton.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/field-list/fieldlist-valuesbutton/fieldlist-valuesbutton.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/field-list/fieldlist-valuesbutton/razor %}
@@ -483,9 +294,6 @@ At runtime, the **Values** button in the field list allows users to move the val
 {% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/field-list/fieldlist-valuesbutton/fieldlist-valuesbutton.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
-
-
 
 ![Values button in field list for repositioning measures](images/fieldlistmeasureatdifferentposition.png)
 
@@ -493,27 +301,14 @@ At runtime, the **Values** button in the field list allows users to move the val
 
 ### EnginePopulated
 
-The [`EnginePopulated`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotFieldList.html#Syncfusion_EJ2_PivotView_PivotFieldList_EnginePopulated) event is available in both the Pivot Table and the Field List. It triggers after the data engine is populated with the updated report settings, allowing the Pivot Table and Field List to stay in sync when changes are made.
+The [`EnginePopulated`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotFieldList.html#Syncfusion_EJ2_PivotView_PivotFieldList_EnginePopulated) event is available in both the Pivot Table and the Field List. It triggers after the data engine is populated with the updated report settings, allowing the Pivot Table and Field List to stay in sync when changes are made.
 
-- In the Field List, the [`EnginePopulated`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotFieldList.html#Syncfusion_EJ2_PivotView_PivotFieldList_EnginePopulated) event is triggered whenever the report is modified, such as when fields are added, removed, or rearranged. The updated report is sent to the Pivot Table using the `updateView` method within this event to refresh the Pivot Table's display.
+- In the Field List, the [`EnginePopulated`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotFieldList.html#Syncfusion_EJ2_PivotView_PivotFieldList_EnginePopulated) event is triggered whenever the report is modified, such as when fields are added, removed, or rearranged. The updated report is sent to the Pivot Table using the `updateView` method within this event to refresh the Pivot Table's display.
 - In the Pivot Table, the [`EnginePopulated`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_EnginePopulated) event is triggered when the report is updated. The modified report is passed to the Field List using the `update` method to ensure the Field List reflects the changes.
 
 This event includes the following parameters: [`PivotViewDataSourceSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html), [`PivotFieldList`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotFieldList.html), and [`PivotValues`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_PivotValues).
 
 > Note: This event is not needed for the popup Field List, as it is built into the Pivot Table.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/field-list/static/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Static.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/field-list/static/Static.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -523,26 +318,12 @@ This event includes the following parameters: [`PivotViewDataSourceSettings`](ht
 {% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/field-list/static/Static.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ### FieldListRefreshed
 
 The  event triggers whenever a change occurs in the field list UI, such as adding, removing, or rearranging fields, or applying sort or filter options. This event provides two parameters: [`PivotViewDataSourceSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html) and [`PivotValues`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_PivotValues). These parameters allow users to track and respond to updates in the field list. The event applies only to the static field list.
 
-For example, when a user sorts a field in the field list, the field list updates, and the The event [`FieldListRefreshed`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_FieldListRefreshed) event triggers. Users can perform custom operation inside that event.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/field-list/refresh-event/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Popup.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/field-list/refresh-event/Popup.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
+For example, when a user sorts a field in the field list, the field list updates, and the The event [`FieldListRefreshed`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_FieldListRefreshed) event triggers. Users can perform custom operation inside that event.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -552,11 +333,10 @@ For example, when a user sorts a field in the field list, the field list updates
 {% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/field-list/refresh-event/Popup.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ### OnFieldDropped
 
-The [`OnFieldDropped`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_OnFieldDropped) event triggers when a user drops a field into an axis in the Pivot Table. This event provides access to details about the dropped field and the Pivot Table's configuration through its parameters. The event includes the following parameters:
+The [`OnFieldDropped`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_OnFieldDropped) event triggers when a user drops a field into an axis in the Pivot Table. This event provides access to details about the dropped field and the Pivot Table's configuration through its parameters. The event includes the following parameters:
 
 - [`PivotViewDataSourceSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html): Represents the current report configuration of the Pivot Table, defined in the [`PivotViewDataSourceSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html) property. It provides access to the Pivot Table's data structure and settings.
 - `droppedAxis`: Indicates the axis (such as row, column, value, or filter) where the field has been dropped.
@@ -566,19 +346,6 @@ The [`OnFieldDropped`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.
 
 In the following code example, we changed the caption of the dropped field using this event at runtime:
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/field-list/field-dropped/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Dropped.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/field-list/field-dropped/dropped.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/field-list/field-dropped/razor %}
@@ -587,15 +354,12 @@ In the following code example, we changed the caption of the dropped field using
 {% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/field-list/field-dropped/dropped.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
-
-
 
 ![Field dropped event in field list](images/fielddropped_fieldlist.png)
 
 ### ActionBegin
 
-The [`ActionBegin`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotFieldList.html#Syncfusion_EJ2_PivotView_PivotFieldList_ActionBegin) event triggers when UI actions such as sorting, filtering, aggregation, or editing calculated fields begin in the field list. This event allows users to identify the current action being performed at runtime and provides the following parameters:
+The [`ActionBegin`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotFieldList.html#Syncfusion_EJ2_PivotView_PivotFieldList_ActionBegin) event triggers when UI actions such as sorting, filtering, aggregation, or editing calculated fields begin in the field list. This event allows users to identify the current action being performed at runtime and provides the following parameters:
 
 * `dataSourceSettings`: Contains the current data source settings, including input data source, rows, columns, values, filters, format settings, and other configurations.
 
@@ -617,20 +381,7 @@ The [`ActionBegin`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2
 
 * `cancel`: A boolean property that allows you to prevent the current action from completing. Set this to **true** to stop the action from proceeding.
 
-In the following sample, you can restrict opening the popup field list by setting the **args.cancel** option to **true** in the [`ActionBegin`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotFieldList.html#Syncfusion_EJ2_PivotView_PivotFieldList_ActionBegin) event.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/action-event/actionBegin-fieldList/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="ActionBegin-fieldList.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/action-event/actionBegin-fieldList/actionBegin-fieldList.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
+In the following sample, you can restrict opening the popup field list by setting the **args.cancel** option to **true** in the [`ActionBegin`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotFieldList.html#Syncfusion_EJ2_PivotView_PivotFieldList_ActionBegin) event.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -640,11 +391,10 @@ In the following sample, you can restrict opening the popup field list by settin
 {% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/action-event/actionBegin-fieldList/actionBegin-fieldList.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ### ActionComplete
 
-The [`ActionComplete`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotFieldList.html#Syncfusion_EJ2_PivotView_PivotFieldList_ActionComplete) event is triggered when UI actions such as sorting, filtering, aggregation, or editing calculated fields in the field list are completed. This event allows users to identify which UI action has been completed at runtime. The event provides the following parameters:
+The [`ActionComplete`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotFieldList.html#Syncfusion_EJ2_PivotView_PivotFieldList_ActionComplete) event is triggered when UI actions such as sorting, filtering, aggregation, or editing calculated fields in the field list are completed. This event allows users to identify which UI action has been completed at runtime. The event provides the following parameters:
 
 - `dataSourceSettings`: Contains the current [`PivotViewDataSourceSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html) such as input data source, rows, columns, values, filters, format settings, and other configurations.
 
@@ -666,19 +416,6 @@ The [`ActionComplete`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.
 
 - `actionInfo`: Contains specific information about the current UI action. For example, when sorting is completed, this parameter includes details such as the sort order and field name.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/action-event/actionComplete-fieldList/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="ActionComplete-fieldList.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/action-event/actionComplete-fieldList/actionComplete-fieldList.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/action-event/actionComplete-fieldList/razor %}
@@ -687,11 +424,10 @@ The [`ActionComplete`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.
 {% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/action-event/actionComplete-fieldList/actionComplete-fieldList.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ### ActionFailure
 
-The [`ActionFailure`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotFieldList.html#Syncfusion_EJ2_PivotView_PivotFieldList_ActionFailure) event is triggered when a UI action fails to produce the expected result. This event provides detailed information about the failure through the following parameters:
+The [`ActionFailure`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotFieldList.html#Syncfusion_EJ2_PivotView_PivotFieldList_ActionFailure) event is triggered when a UI action fails to produce the expected result. This event provides detailed information about the failure through the following parameters:
 
 * `actionName`: It holds the name of the current action failed. The following are the UI actions and their names:
 
@@ -707,19 +443,6 @@ The [`ActionFailure`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.E
 
 * `errorInfo`: It holds the error information of the current UI action.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/action-event/actionFailure-fieldList/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="ActionFailure-fieldList.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/action-event/actionFailure-fieldList/actionFailure-fieldList.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/action-event/actionFailure-fieldList/razor %}
@@ -728,8 +451,6 @@ The [`ActionFailure`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.E
 {% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/action-event/actionFailure-fieldList/actionFailure-fieldList.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
-
 
 ## See Also
 

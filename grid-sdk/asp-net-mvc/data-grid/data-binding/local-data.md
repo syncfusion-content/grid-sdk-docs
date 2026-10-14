@@ -1,10 +1,9 @@
 ---
 layout: post
-title: Local Data in ASP.NET MVC Grid Component
-description: Learn here all about Local Data in Syncfusion ASP.NET MVC Grid component of Syncfusion Essential JS 2 and more.
+title: Local Data in Syncfusion ASP.NET MVC Grid Control
+description: Learn here all about Local Data in Syncfusion ASP.NET MVC Grid control of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Local Data
-publishingplatform: grid-sdk
 documentation: ug
 ---
 
@@ -41,7 +40,7 @@ To achieve real-time data binding with SignalR in your Grid, follow the steps be
 * Name the project **SignalR**.
 * Click “Create”
 
-**Step 2:**  Create a simple Grid by following the [Getting Started documentation link](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/getting-started-mvc).
+**Step 2:**  Create a simple Grid by following the [Getting Started documentation link](https://help.syncfusion.com/grid-sdk/asp-net-mvc/data-grid/getting-started-mvc).
 
 **Step 3:**  Create a controller on the server-side to manage data operations such as fetching, updating, inserting, and deleting records. You can create a **HomeController.cs** file under the **Controllers** folder. Add the following code to define methods for sending data updates to clients:
 
@@ -324,9 +323,7 @@ namespace SignalR
 
 The following screenshot represents the addition, editing, and deletion operations performed, reflecting changes across all client sides:
 
-![Data binding with SignalR ](../images/data-binding/signalRImage.gif)
-
-> You can find a complete sample for signalR on [GitHub](https://github.com/SyncfusionExamples/Binding-data-with-SignalR-in-ej2-aspnetmvc-grid).
+![Data binding with SignalR ](../images/data-binding/signalRImage.webp)
 
 ## Binding data from excel file
 
@@ -349,7 +346,7 @@ The following example demonstrates how to import Excel data into the Grid by uti
 {% endhighlight %}
 {% endtabs %}
 
-![Local data](../images/data-binding/local-data-upload.gif)
+![Local data](../images/data-binding/local-data-upload.webp)
 
 ## Binding data and performing CRUD actions via Fetch request
 
@@ -365,7 +362,7 @@ To achieve data binding and perform CRUD actions using Fetch requests in the Gri
 * Name the project **FetchRequest**.
 * Click “Create”
 
-**Step 2:**  Create a simple Grid by following the [Getting Started documentation link](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/getting-started-mvc).
+**Step 2:**  Create a simple Grid by following the [Getting Started documentation link](https://help.syncfusion.com/grid-sdk/asp-net-mvc/data-grid/getting-started-mvc).
 
 **Step 3:**  In the **Views/Home/Index.cshtml** file, follow the steps below.
 
@@ -584,7 +581,7 @@ namespace FetchRequest.Models
 ```
 The following screenshot represents loading data when the button is clicked and CRUD operations are performed:
 
-![Binding data and performing CRUD actions via Fetch request](../images/data-binding/requestFetch.gif)
+![Binding data and performing CRUD actions via Fetch request](../images/data-binding/requestFetch.webp)
 
 > You can find a complete sample for Fetch request [GitHub](https://github.com/SyncfusionExamples/Binding-data-and-perform-action-in-ej2-aspnetmvc-grid-using-Ajax-request).
 
@@ -619,7 +616,7 @@ To achieve data binding and perform CRUD actions using AJAX requests in the Grid
 * Name the project **AJAXRequest**.
 * Click “Create”
 
-**Step 2:**  Create a simple Grid by following the [Getting Started documentation link](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/getting-started-mvc).
+**Step 2:**  Create a simple Grid by following the [Getting Started documentation link](https://help.syncfusion.com/grid-sdk/asp-net-mvc/data-grid/getting-started-mvc).
 
 **Step 3:**  In the **Views/Home/Index.cshtml** file, follow the steps below.
 
@@ -881,7 +878,7 @@ The following example demonstrates how to show and hide the spinner during data 
 
 ## Immutable mode  
 
-Immutable mode in the Syncfusion ASP.NET MVC Grid is designed to optimize re-rendering performance by utilizing the object reference and [deep compare](https://dmitripavlutin.com/how-to-compare-objects-in-javascript/#4-deep-equality) concept. This mode ensures that when performing Grid actions, only the modified or newly added rows are re-rendered, preventing unnecessary re-rendering of unchanged rows. 
+Immutable mode in the Syncfusion ASP.NET MVC Grid is designed to optimize re-rendering performance by utilizing the object reference and deep compare concept. This mode ensures that when performing Grid actions, only the modified or newly added rows are re-rendered, preventing unnecessary re-rendering of unchanged rows. 
 
 To enable this feature, you need to set the [EnableImmutableMode](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_EnableImmutableMode) property as **true**.
 
