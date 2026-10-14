@@ -4,7 +4,6 @@ title: Searching in Syncfusion ASP.NET Core Grid Component
 description: Learn here all about Searching in Syncfusion ASP.NET Core Grid component of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Searching
-publishingplatform: grid-sdk
 documentation: ug
 ---
 
@@ -277,5 +276,5 @@ The following example demonstrates how to retrieve searched records using an ext
 
 ## See also
 
-* [How to perform search by using Wildcard and LIKE operator filter](https://ej2.syncfusion.com/aspnetcore/documentation/grid/filtering/filtering#wildcard-and-like-operator-filter)
+* [How to perform search by using Wildcard and LIKE operator filter](https://help.syncfusion.com/grid-sdk/asp-net-core/data-grid/filtering/filtering#wildcard-and-like-operator-filter)
 

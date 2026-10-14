@@ -18,9 +18,7 @@ Cell selection is enabled using the [`allowSelection`](https://help.syncfusion.c
 
 ## Implementation
 
-The [`cellSelected`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_CellSelected) event triggers when cells are selected in the pivot table. This event provides selected cell information including row header name, column header name, measure name, and values. Using this data, the [`chart`](https://ej2.syncfusion.com/aspnetcore/documentation/chart/getting-started) control can be plotted accordingly.
-
-{% if page.publishingplatform == "aspnet-core" %}
+The [`cellSelected`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_CellSelected) event triggers when cells are selected in the pivot table. This event provides selected cell information including row header name, column header name, measure name, and values. Using this data, the [`chart`](https://help.syncfusion.com/chart-sdk/asp-net-core/charts/getting-started) control can be plotted accordingly.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -30,19 +28,5 @@ The [`cellSelected`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/field-list/chart/Popup.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/field-list/chart/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Popup.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/field-list/chart/Popup.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
 
 ![Chart Based On Pivot Table Selection](../images/chart-selection.png)
