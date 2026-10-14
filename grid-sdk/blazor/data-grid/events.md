@@ -1232,6 +1232,298 @@ N> All events should be configured within a single **GridEvents** component.
 }
 ```
 
+## OnUndo
+
+[OnUndo](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridEvents-1.html#Syncfusion_Blazor_Grids_GridEvents_1_OnUndo) triggers before an undo action is applied in batch edit mode.
+
+```cshtml
+
+@using Syncfusion.Blazor.Grids
+
+<SfGrid DataSource="@OrderData" Toolbar="@(new List<string>() { "Add", "Edit", "Delete", "Update", "Cancel", "Undo", "Redo" })" Height="315">
+    <GridEditSettings AllowAdding="true" AllowEditing="true" AllowDeleting="true" EnableUndoRedo="true" Mode="EditMode.Batch"></GridEditSettings>
+    <GridEvents OnUndo="OnUndoHandler" TValue="OrderDetails"></GridEvents>
+    <GridColumns>
+        <GridColumn Field=@nameof(OrderDetails.OrderID) HeaderText="Order ID" IsPrimaryKey="true" ValidationRules="@(new ValidationRules { Required = true })" TextAlign="TextAlign.Right" Width="120"></GridColumn>
+        <GridColumn Field=@nameof(OrderDetails.CustomerID) HeaderText="Customer Name" ValidationRules="@(new ValidationRules { Required = true, MinLength = 5 })" Width="120"></GridColumn>
+        <GridColumn Field=@nameof(OrderDetails.Freight) HeaderText="Freight" ValidationRules="@(new ValidationRules { Required = true, Min = 1, Max = 1000 })" Format="C2" TextAlign="TextAlign.Right" EditType="EditType.NumericEdit" Width="120"></GridColumn>
+        <GridColumn Field=@nameof(OrderDetails.ShipCountry) HeaderText="Ship Country" EditType="EditType.DropDownEdit" Width="150"></GridColumn>
+    </GridColumns>
+</SfGrid>
+
+@code
+{
+    public List<OrderDetails> OrderData { get; set; }
+
+    protected override void OnInitialized()
+    {
+        OrderData = OrderDetails.GetAllRecords();
+    }
+
+    private void OnUndoHandler(OnUndoEventArgs<OrderDetails> args)
+    {
+        // customize your actions here...
+    }
+
+    public class OrderDetails
+    {
+        public static List<OrderDetails> Order = new List<OrderDetails>();
+        public OrderDetails(int OrderID, string CustomerId, double Freight, string ShipCountry)
+        {
+            this.OrderID = OrderID;
+            this.CustomerID = CustomerId;
+            this.Freight = Freight;
+            this.ShipCountry = ShipCountry;
+        }
+        public static List<OrderDetails> GetAllRecords()
+        {
+            if (Order.Count == 0)
+            {
+                Order.Add(new OrderDetails(10248, "VINET", 32.38, "France"));
+                Order.Add(new OrderDetails(10249, "TOMSP", 11.61, "Germany"));
+                Order.Add(new OrderDetails(10250, "HANAR", 65.83, "Brazil"));
+                Order.Add(new OrderDetails(10251, "VICTE", 41.34, "France"));
+                Order.Add(new OrderDetails(10252, "SUPRD", 51.3, "Belgium"));
+                Order.Add(new OrderDetails(10253, "HANAR", 58.17, "Brazil"));
+                Order.Add(new OrderDetails(10254, "CHOPS", 22.98, "Switzerland"));
+                Order.Add(new OrderDetails(10255, "RICSU", 148.33, "Switzerland"));
+                Order.Add(new OrderDetails(10256, "WELLI", 13.97, "Brazil"));
+                Order.Add(new OrderDetails(10257, "HILAA", 81.91, "Venezuela"));
+                Order.Add(new OrderDetails(10258, "ERNSH", 140.51, "Austria"));
+                Order.Add(new OrderDetails(10259, "CENTC", 3.25, "Mexico"));
+                Order.Add(new OrderDetails(10260, "OTTIK", 55.09, "Germany"));
+                Order.Add(new OrderDetails(10261, "QUEDE", 3.05, "Brazil"));
+                Order.Add(new OrderDetails(10262, "RATTC", 48.29, "USA"));
+            }
+            return Order;
+        }
+        public int OrderID { get; set; }
+        public string CustomerID { get; set; }
+        public double Freight { get; set; }
+        public string ShipCountry { get; set; }
+    }
+}
+```
+
+## OnUndoCompleted
+
+[OnUndoCompleted](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridEvents-1.html#Syncfusion_Blazor_Grids_GridEvents_1_OnUndoCompleted) triggers after an undo action is applied in batch edit mode.
+
+```cshtml
+
+@using Syncfusion.Blazor.Grids
+
+<SfGrid DataSource="@OrderData" Toolbar="@(new List<string>() { "Add", "Edit", "Delete", "Update", "Cancel", "Undo", "Redo" })" Height="315">
+    <GridEditSettings AllowAdding="true" AllowEditing="true" AllowDeleting="true" EnableUndoRedo="true" Mode="EditMode.Batch"></GridEditSettings>
+    <GridEvents OnUndoCompleted="OnUndoCompletedHandler" TValue="OrderDetails"></GridEvents>
+    <GridColumns>
+        <GridColumn Field=@nameof(OrderDetails.OrderID) HeaderText="Order ID" IsPrimaryKey="true" ValidationRules="@(new ValidationRules { Required = true })" TextAlign="TextAlign.Right" Width="120"></GridColumn>
+        <GridColumn Field=@nameof(OrderDetails.CustomerID) HeaderText="Customer Name" ValidationRules="@(new ValidationRules { Required = true, MinLength = 5 })" Width="120"></GridColumn>
+        <GridColumn Field=@nameof(OrderDetails.Freight) HeaderText="Freight" ValidationRules="@(new ValidationRules { Required = true, Min = 1, Max = 1000 })" Format="C2" TextAlign="TextAlign.Right" EditType="EditType.NumericEdit" Width="120"></GridColumn>
+        <GridColumn Field=@nameof(OrderDetails.ShipCountry) HeaderText="Ship Country" EditType="EditType.DropDownEdit" Width="150"></GridColumn>
+    </GridColumns>
+</SfGrid>
+
+@code
+{
+    public List<OrderDetails> OrderData { get; set; }
+
+    protected override void OnInitialized()
+    {
+        OrderData = OrderDetails.GetAllRecords();
+    }
+
+    private void OnUndoCompletedHandler(OnUndoCompletedEventArgs<OrderDetails> args)
+    {
+        // customize your actions here...
+    }
+
+    public class OrderDetails
+    {
+        public static List<OrderDetails> Order = new List<OrderDetails>();
+        public OrderDetails(int OrderID, string CustomerId, double Freight, string ShipCountry)
+        {
+            this.OrderID = OrderID;
+            this.CustomerID = CustomerId;
+            this.Freight = Freight;
+            this.ShipCountry = ShipCountry;
+        }
+        public static List<OrderDetails> GetAllRecords()
+        {
+            if (Order.Count == 0)
+            {
+                Order.Add(new OrderDetails(10248, "VINET", 32.38, "France"));
+                Order.Add(new OrderDetails(10249, "TOMSP", 11.61, "Germany"));
+                Order.Add(new OrderDetails(10250, "HANAR", 65.83, "Brazil"));
+                Order.Add(new OrderDetails(10251, "VICTE", 41.34, "France"));
+                Order.Add(new OrderDetails(10252, "SUPRD", 51.3, "Belgium"));
+                Order.Add(new OrderDetails(10253, "HANAR", 58.17, "Brazil"));
+                Order.Add(new OrderDetails(10254, "CHOPS", 22.98, "Switzerland"));
+                Order.Add(new OrderDetails(10255, "RICSU", 148.33, "Switzerland"));
+                Order.Add(new OrderDetails(10256, "WELLI", 13.97, "Brazil"));
+                Order.Add(new OrderDetails(10257, "HILAA", 81.91, "Venezuela"));
+                Order.Add(new OrderDetails(10258, "ERNSH", 140.51, "Austria"));
+                Order.Add(new OrderDetails(10259, "CENTC", 3.25, "Mexico"));
+                Order.Add(new OrderDetails(10260, "OTTIK", 55.09, "Germany"));
+                Order.Add(new OrderDetails(10261, "QUEDE", 3.05, "Brazil"));
+                Order.Add(new OrderDetails(10262, "RATTC", 48.29, "USA"));
+            }
+            return Order;
+        }
+        public int OrderID { get; set; }
+        public string CustomerID { get; set; }
+        public double Freight { get; set; }
+        public string ShipCountry { get; set; }
+    }
+}
+```
+
+## OnRedo
+
+[OnRedo](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridEvents-1.html#Syncfusion_Blazor_Grids_GridEvents_1_OnRedo) triggers before a redo action is applied in batch edit mode.
+
+```cshtml
+
+@using Syncfusion.Blazor.Grids
+
+<SfGrid DataSource="@OrderData" Toolbar="@(new List<string>() { "Add", "Edit", "Delete", "Update", "Cancel", "Undo", "Redo" })" Height="315">
+    <GridEditSettings AllowAdding="true" AllowEditing="true" AllowDeleting="true" EnableUndoRedo="true" Mode="EditMode.Batch"></GridEditSettings>
+    <GridEvents OnRedo="OnRedoHandler" TValue="OrderDetails"></GridEvents>
+    <GridColumns>
+        <GridColumn Field=@nameof(OrderDetails.OrderID) HeaderText="Order ID" IsPrimaryKey="true" ValidationRules="@(new ValidationRules { Required = true })" TextAlign="TextAlign.Right" Width="120"></GridColumn>
+        <GridColumn Field=@nameof(OrderDetails.CustomerID) HeaderText="Customer Name" ValidationRules="@(new ValidationRules { Required = true, MinLength = 5 })" Width="120"></GridColumn>
+        <GridColumn Field=@nameof(OrderDetails.Freight) HeaderText="Freight" ValidationRules="@(new ValidationRules { Required = true, Min = 1, Max = 1000 })" Format="C2" TextAlign="TextAlign.Right" EditType="EditType.NumericEdit" Width="120"></GridColumn>
+        <GridColumn Field=@nameof(OrderDetails.ShipCountry) HeaderText="Ship Country" EditType="EditType.DropDownEdit" Width="150"></GridColumn>
+    </GridColumns>
+</SfGrid>
+
+@code
+{
+    public List<OrderDetails> OrderData { get; set; }
+
+    protected override void OnInitialized()
+    {
+        OrderData = OrderDetails.GetAllRecords();
+    }
+
+    private void OnRedoHandler(OnRedoEventArgs<OrderDetails> args)
+    {
+        // customize your actions here...
+    }
+
+    public class OrderDetails
+    {
+        public static List<OrderDetails> Order = new List<OrderDetails>();
+        public OrderDetails(int OrderID, string CustomerId, double Freight, string ShipCountry)
+        {
+            this.OrderID = OrderID;
+            this.CustomerID = CustomerId;
+            this.Freight = Freight;
+            this.ShipCountry = ShipCountry;
+        }
+        public static List<OrderDetails> GetAllRecords()
+        {
+            if (Order.Count == 0)
+            {
+                Order.Add(new OrderDetails(10248, "VINET", 32.38, "France"));
+                Order.Add(new OrderDetails(10249, "TOMSP", 11.61, "Germany"));
+                Order.Add(new OrderDetails(10250, "HANAR", 65.83, "Brazil"));
+                Order.Add(new OrderDetails(10251, "VICTE", 41.34, "France"));
+                Order.Add(new OrderDetails(10252, "SUPRD", 51.3, "Belgium"));
+                Order.Add(new OrderDetails(10253, "HANAR", 58.17, "Brazil"));
+                Order.Add(new OrderDetails(10254, "CHOPS", 22.98, "Switzerland"));
+                Order.Add(new OrderDetails(10255, "RICSU", 148.33, "Switzerland"));
+                Order.Add(new OrderDetails(10256, "WELLI", 13.97, "Brazil"));
+                Order.Add(new OrderDetails(10257, "HILAA", 81.91, "Venezuela"));
+                Order.Add(new OrderDetails(10258, "ERNSH", 140.51, "Austria"));
+                Order.Add(new OrderDetails(10259, "CENTC", 3.25, "Mexico"));
+                Order.Add(new OrderDetails(10260, "OTTIK", 55.09, "Germany"));
+                Order.Add(new OrderDetails(10261, "QUEDE", 3.05, "Brazil"));
+                Order.Add(new OrderDetails(10262, "RATTC", 48.29, "USA"));
+            }
+            return Order;
+        }
+        public int OrderID { get; set; }
+        public string CustomerID { get; set; }
+        public double Freight { get; set; }
+        public string ShipCountry { get; set; }
+    }
+}
+```
+
+## OnRedoCompleted
+
+[OnRedoCompleted](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridEvents-1.html#Syncfusion_Blazor_Grids_GridEvents_1_OnRedoCompleted) triggers after a redo action is applied in batch edit mode.
+
+```cshtml
+
+@using Syncfusion.Blazor.Grids
+
+<SfGrid DataSource="@OrderData" Toolbar="@(new List<string>() { "Add", "Edit", "Delete", "Update", "Cancel", "Undo", "Redo" })" Height="315">
+    <GridEditSettings AllowAdding="true" AllowEditing="true" AllowDeleting="true" EnableUndoRedo="true" Mode="EditMode.Batch"></GridEditSettings>
+    <GridEvents OnRedoCompleted="OnRedoCompletedHandler" TValue="OrderDetails"></GridEvents>
+    <GridColumns>
+        <GridColumn Field=@nameof(OrderDetails.OrderID) HeaderText="Order ID" IsPrimaryKey="true" ValidationRules="@(new ValidationRules { Required = true })" TextAlign="TextAlign.Right" Width="120"></GridColumn>
+        <GridColumn Field=@nameof(OrderDetails.CustomerID) HeaderText="Customer Name" ValidationRules="@(new ValidationRules { Required = true, MinLength = 5 })" Width="120"></GridColumn>
+        <GridColumn Field=@nameof(OrderDetails.Freight) HeaderText="Freight" ValidationRules="@(new ValidationRules { Required = true, Min = 1, Max = 1000 })" Format="C2" TextAlign="TextAlign.Right" EditType="EditType.NumericEdit" Width="120"></GridColumn>
+        <GridColumn Field=@nameof(OrderDetails.ShipCountry) HeaderText="Ship Country" EditType="EditType.DropDownEdit" Width="150"></GridColumn>
+    </GridColumns>
+</SfGrid>
+
+@code
+{
+    public List<OrderDetails> OrderData { get; set; }
+
+    protected override void OnInitialized()
+    {
+        OrderData = OrderDetails.GetAllRecords();
+    }
+
+    private void OnRedoCompletedHandler(OnRedoCompletedEventArgs<OrderDetails> args)
+    {
+        // customize your actions here...
+    }
+
+    public class OrderDetails
+    {
+        public static List<OrderDetails> Order = new List<OrderDetails>();
+        public OrderDetails(int OrderID, string CustomerId, double Freight, string ShipCountry)
+        {
+            this.OrderID = OrderID;
+            this.CustomerID = CustomerId;
+            this.Freight = Freight;
+            this.ShipCountry = ShipCountry;
+        }
+        public static List<OrderDetails> GetAllRecords()
+        {
+            if (Order.Count == 0)
+            {
+                Order.Add(new OrderDetails(10248, "VINET", 32.38, "France"));
+                Order.Add(new OrderDetails(10249, "TOMSP", 11.61, "Germany"));
+                Order.Add(new OrderDetails(10250, "HANAR", 65.83, "Brazil"));
+                Order.Add(new OrderDetails(10251, "VICTE", 41.34, "France"));
+                Order.Add(new OrderDetails(10252, "SUPRD", 51.3, "Belgium"));
+                Order.Add(new OrderDetails(10253, "HANAR", 58.17, "Brazil"));
+                Order.Add(new OrderDetails(10254, "CHOPS", 22.98, "Switzerland"));
+                Order.Add(new OrderDetails(10255, "RICSU", 148.33, "Switzerland"));
+                Order.Add(new OrderDetails(10256, "WELLI", 13.97, "Brazil"));
+                Order.Add(new OrderDetails(10257, "HILAA", 81.91, "Venezuela"));
+                Order.Add(new OrderDetails(10258, "ERNSH", 140.51, "Austria"));
+                Order.Add(new OrderDetails(10259, "CENTC", 3.25, "Mexico"));
+                Order.Add(new OrderDetails(10260, "OTTIK", 55.09, "Germany"));
+                Order.Add(new OrderDetails(10261, "QUEDE", 3.05, "Brazil"));
+                Order.Add(new OrderDetails(10262, "RATTC", 48.29, "USA"));
+            }
+            return Order;
+        }
+        public int OrderID { get; set; }
+        public string CustomerID { get; set; }
+        public double Freight { get; set; }
+        public string ShipCountry { get; set; }
+    }
+}
+```
+
 ## OnCellEdit
 
 [OnCellEdit](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridEvents-1.html#Syncfusion_Blazor_Grids_GridEvents_1_OnCellEdit) triggers when a cell enters edit mode. Use it to configure the editor or apply validation.
