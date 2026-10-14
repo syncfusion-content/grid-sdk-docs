@@ -70,12 +70,12 @@ This example enables the grouping bar, the built-in field list, and the calculat
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/pivot-grid/module-cs1/src/app.component.ts %}
+{% include code-snippet/grid-sdk/angular/pivot-table/module-cs1/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/pivot-grid/module-cs1/src/main.ts %}
+{% include code-snippet/grid-sdk/angular/pivot-table/module-cs1/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/samples/pivot-grid/module-cs1" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/module-cs1" %}
