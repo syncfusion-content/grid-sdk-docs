@@ -14,9 +14,7 @@ Sorting enables you to sort data in **Ascending** or **Descending** order. To so
 
 To sort multiple columns, press and hold the CTRL key and click the column header. You can clear sorting of any one of the multi-sorted columns by pressing and holding the SHIFT key and clicking the specific column header.
 
-To enable sorting in the TreeGrid, set the [`allowSorting`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGrid~AllowSorting.html) property to true. Sorting options can be configured through the [`SortSettings`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridSortSettings.html) tag helper.
-
-{% if page.publishingplatform == "aspnet-core" %}
+To enable sorting in the TreeGrid, set the [`allowSorting`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.TreeGrid.TreeGrid.html#Syncfusion_EJ2_TreeGrid_TreeGrid_AllowSorting) property to true. Sorting options can be configured through the [`SortSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.TreeGrid.TreeGridSortSettings.html) tag helper.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -27,29 +25,14 @@ To enable sorting in the TreeGrid, set the [`allowSorting`](https://help.syncfus
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/tree-grid/sorting/default-sorting/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="DefaultSorting.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/tree-grid/sorting/default-sorting/defaultSorting.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
 
 N> TreeGrid columns are sorted in the **Ascending** order. If you click the already sorted column, the sort direction toggles.
 <br/> You can apply and clear sorting by invoking **sortColumn** and **clearSorting** methods.
-<br/> To disable sorting for a particular column, set the [`allowSorting`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridColumn~AllowSorting.html) property of [`e-treegrid-column`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridColumn.html) tag helper to **false**.
+<br/> To disable sorting for a particular column, set the [`allowSorting`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.TreeGrid.TreeGridColumn.html#Syncfusion_EJ2_TreeGrid_TreeGridColumn_AllowSorting) property of [`e-treegrid-column`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.TreeGrid.TreeGridColumn.html) tag helper to **false**.
 
 ## Initial sort
 
-To sort at initial rendering, set the field and direction in the [`columns`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridSortSettingsBuilder~Columns.html) property of [`SortSettings`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridSortSettings.html) tag helper.
-
-{% if page.publishingplatform == "aspnet-core" %}
+To sort at initial rendering, set the field and direction in the [`columns`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.TreeGrid.TreeGridSortSettings.html#Syncfusion_EJ2_TreeGrid_TreeGridSortSettings_Columns) property of [`SortSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.TreeGrid.TreeGridSortSettings.html) tag helper.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -60,25 +43,10 @@ To sort at initial rendering, set the field and direction in the [`columns`](htt
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/tree-grid/sorting/initial-sort/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="InitialSort.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/tree-grid/sorting/initial-sort/initialSort.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
 
 ## Sorting events
 
-During the sort action, the treegrid component triggers two events. The [`actionBegin`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGrid~ActionBegin.html) event triggers before the sort action starts, and the [`actionComplete`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGrid~ActionComplete.html) event triggers after the sort action is completed. Using these events you can perform the needed actions.
-
-{% if page.publishingplatform == "aspnet-core" %}
+During the sort action, the treegrid component triggers two events. The [`actionBegin`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.TreeGrid.TreeGrid.html#Syncfusion_EJ2_TreeGrid_TreeGrid_ActionBegin) event triggers before the sort action starts, and the [`actionComplete`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.TreeGrid.TreeGrid.html#Syncfusion_EJ2_TreeGrid_TreeGrid_ActionComplete) event triggers after the sort action is completed. Using these events you can perform the needed actions.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -88,19 +56,6 @@ During the sort action, the treegrid component triggers two events. The [`action
 {% include code-snippet/grid-sdk/asp-net-core/tree-grid/sorting/event-handlers/eventHandlers.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/tree-grid/sorting/event-handlers/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="EventHandlers.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/tree-grid/sorting/event-handlers/eventHandlers.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
 
 
 N> The **args.requestType** is the current action name. For example, in sorting the **args.requestType** value is **sorting**.
@@ -158,4 +113,4 @@ The following screenshot shows treegrid touch sorting.
 
 ![Touch interaction](images/touch-sorting.png)
 
-N> You can refer to our  [`ASP.NET Core Tree Grid`](https://www.syncfusion.com/aspnet-core-ui-controls/tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our ASP.NET Core Tree Grid example [`ASP.NET Core Tree Grid example`](https://ej2.syncfusion.com/aspnetcore/TreeGrid/Overview#/material) to knows how to present and manipulate data.
+N> You can refer to our  [`ASP.NET Core Tree Grid`](https://www.syncfusion.com/aspnet-core-ui-controls/tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our ASP.NET Core Tree Grid example [`ASP.NET Core Tree Grid example`](https://ej2.syncfusion.com/aspnetcore/treegrid/overview#/fluent2) to knows how to present and manipulate data.

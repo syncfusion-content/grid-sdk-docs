@@ -18,8 +18,6 @@ PDF export provides an option to customize mapping of treegrid to exported PDF d
 
 You can assign the file name for the exported document by defining **fileName** property in **PdfExportProperties**.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-core/tree-grid/pdf-export/file-name/tagHelper %}
@@ -28,20 +26,6 @@ You can assign the file name for the exported document by defining **fileName** 
 {% include code-snippet/grid-sdk/asp-net-core/tree-grid/pdf-export/file-name/file-name.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/tree-grid/pdf-export/file-name/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="File-name.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/tree-grid/pdf-export/file-name/file-name.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
 
 ### Default fonts for PDF exporting
 
@@ -72,8 +56,6 @@ You can change the default font of TreeGrid header, content and caption cells in
 
 In the following example, we have used Advent Pro font to export the treegrid with Hungarian fonts.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-core/tree-grid/pdf-export/custom-font/tagHelper %}
@@ -83,20 +65,6 @@ In the following example, we have used Advent Pro font to export the treegrid wi
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/tree-grid/pdf-export/custom-font/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Custom-font.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/tree-grid/pdf-export/custom-font/custom-font.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
-
 N> **PdfTrueTypeFont** accepts base 64 format of the Custom Font.
 
 
@@ -104,8 +72,6 @@ N> **PdfTrueTypeFont** accepts base 64 format of the Custom Font.
 ### How to change page orientation
 
 Page orientation can be changed Landscape(Default Portrait) for the exported document using the exportProperties.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -115,20 +81,6 @@ Page orientation can be changed Landscape(Default Portrait) for the exported doc
 {% include code-snippet/grid-sdk/asp-net-core/tree-grid/pdf-export/page-orientation/page-orientation.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/tree-grid/pdf-export/page-orientation/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Page-orientation.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/tree-grid/pdf-export/page-orientation/page-orientation.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
 
 ### How to change page size
 
@@ -163,8 +115,6 @@ Supported page sizes are:
 * Letter11x17
 * Ledger
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-core/tree-grid/pdf-export/page-size/tagHelper %}
@@ -174,25 +124,9 @@ Supported page sizes are:
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/tree-grid/pdf-export/page-size/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Page-size.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/tree-grid/pdf-export/page-size/page-size.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
-
 ### Export hidden columns
 
 PDF export provides an option to export hidden columns of TreeGrid by defining the includeHiddenColumn as **true**.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -203,31 +137,15 @@ PDF export provides an option to export hidden columns of TreeGrid by defining t
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/tree-grid/pdf-export/hidden-column/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Hidden-column.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/tree-grid/pdf-export/hidden-column/hidden-column.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
-
 ### Show or hide columns on exported PDF
 
-You can show a hidden column or hide a visible column while exporting the treegrid using [`toolbarClick`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGrid~ToolbarClick.html) and [`pdfExportComplete`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGrid~PdfExportComplete.html) events.
+You can show a hidden column or hide a visible column while exporting the treegrid using [`toolbarClick`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.TreeGrid.TreeGrid.html#Syncfusion_EJ2_TreeGrid_TreeGrid_ToolbarClick) and [`pdfExportComplete`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.TreeGrid.TreeGrid.html#Syncfusion_EJ2_TreeGrid_TreeGrid_PdfExportComplete) events.
 
-In [`toolbarClick`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGrid~ToolbarClick.html) event, based on **args.item.text** as **PDF Export**. We can show or hide columns by setting [`visible`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridColumn~Visible.html) property of [`e-treegrid-column`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridColumn.html) tag helper to **true** or **false** respectively.
+In [`toolbarClick`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.TreeGrid.TreeGrid.html#Syncfusion_EJ2_TreeGrid_TreeGrid_ToolbarClick) event, based on **args.item.text** as **PDF Export**. We can show or hide columns by setting [`visible`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.TreeGrid.TreeGridColumn.html#Syncfusion_EJ2_TreeGrid_TreeGridColumn_Visible) property of [`e-treegrid-column`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.TreeGrid.TreeGridColumn.html) tag helper to **true** or **false** respectively.
 
-In the [`pdfExportComplete`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGrid~PdfExportComplete.html) event, We have reversed the state back to the previous state.
+In the [`pdfExportComplete`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.TreeGrid.TreeGrid.html#Syncfusion_EJ2_TreeGrid_TreeGrid_PdfExportComplete) event, We have reversed the state back to the previous state.
 
 In the below example, we have **Duration** as a hidden column in the treegrid. While exporting, we have changed **Duration** to visible column and **StartDate** as hidden column.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -238,18 +156,4 @@ In the below example, we have **Duration** as a hidden column in the treegrid. W
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/tree-grid/pdf-export/show-hide-column/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Show-hide-column.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/tree-grid/pdf-export/show-hide-column/show-hide-column.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
-
-N> You can refer to our  [`ASP.NET Core Tree Grid`](https://www.syncfusion.com/aspnet-core-ui-controls/tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our ASP.NET Core Tree Grid example [`ASP.NET Core Tree Grid example`](https://ej2.syncfusion.com/aspnetcore/TreeGrid/Overview#/material) to knows how to present and manipulate data.
+N> You can refer to our  [`ASP.NET Core Tree Grid`](https://www.syncfusion.com/aspnet-core-ui-controls/tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our ASP.NET Core Tree Grid example [`ASP.NET Core Tree Grid example`](https://ej2.syncfusion.com/aspnetcore/treegrid/overview#/fluent2) to knows how to present and manipulate data.

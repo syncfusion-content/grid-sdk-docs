@@ -13,8 +13,6 @@ The Indent and Outdent feature will help to change the hierarchy level of rows i
 
 To use the indent and outdent feature, inject the `RowDD` module in the Tree Grid. The tree grid toolbar has the built-in items to execute indent and outdent actions. Define this by using the toolbar property.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-core/tree-grid/indent/tagHelper %}
@@ -24,23 +22,9 @@ To use the indent and outdent feature, inject the `RowDD` module in the Tree Gri
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/tree-grid/indent/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Indent.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/tree-grid/indent/indent.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
 ## Indent/Outdent a row programmatically
 
 You can change the hierarchy level of record programmatically using `indent` and `outdent` methods.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -51,18 +35,4 @@ You can change the hierarchy level of record programmatically using `indent` and
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/tree-grid/programmatic-indent/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Indent.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/tree-grid/programmatic-indent/indent.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
-
-N>Refer to our [`ASP.NET Core Tree Grid`](https://www.syncfusion.com/aspnet-core-ui-controls/tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our ASP.NET Core Tree Grid example [`ASP.NET Core Tree Grid example`](https://ej2.syncfusion.com/aspnetcore/TreeGrid/Overview#/material) to learn how to present and manipulate data.
+N>Refer to our [`ASP.NET Core Tree Grid`](https://www.syncfusion.com/aspnet-core-ui-controls/tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our ASP.NET Core Tree Grid example [`ASP.NET Core Tree Grid example`](https://ej2.syncfusion.com/aspnetcore/treegrid/overview#/fluent2) to learn how to present and manipulate data.

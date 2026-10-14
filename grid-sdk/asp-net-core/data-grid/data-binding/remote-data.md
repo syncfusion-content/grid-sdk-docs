@@ -4,7 +4,6 @@ title: Remote Data in Syncfusion ASP.NET Core Grid Component
 description: Learn here all about Remote Data in Syncfusion ASP.NET Core Grid component of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Remote Data
-publishingplatform: grid-sdk
 documentation: ug
 ---
 
@@ -44,7 +43,7 @@ To configure a server with Syncfusion ASP.NET Core Grid, you need to follow the 
 * Name the project **CustomBinding**.
 * Click “Create”
 
-**Step 2:**  Create a simple ASP.NET Core Grid by following the [Getting Started documentation link](https://ej2.syncfusion.com/aspnetcore/documentation/grid/getting-started-core).
+**Step 2:**  Create a simple ASP.NET Core Grid by following the [Getting Started documentation link](https://help.syncfusion.com/grid-sdk/asp-net-core/data-grid/getting-started-core).
 
 **Step 3:**  Create a model class named **OrdersDetails.cs** under the Models folder in the server-side project to represent the order data. Add the following code.
 
@@ -519,7 +518,7 @@ export function getOrders(state, action) {
 }
 ```
 
-> Further information can be accessed in the respective documentation for [lazy load grouping](https://ej2.syncfusion.com/aspnetcore/documentation/grid/grouping/lazy-load-grouping).
+> Further information can be accessed in the respective documentation for [lazy load grouping](https://help.syncfusion.com/grid-sdk/asp-net-core/data-grid/grouping/lazy-load-grouping).
 
 ## Handling CRUD operations
 
@@ -658,7 +657,7 @@ To export the complete Grid data to PDF document, utilize the `pdfExportProperti
   });
 ```
 
-> For further customization on Grid export, refer to the respective documentation for [PDF exporting](https://ej2.syncfusion.com/aspnetcore/documentation/grid/pdf-export/pdf-export-options) and [Excel exporting](https://ej2.syncfusion.com/aspnetcore/documentation/grid/excel-export/excel-export-options)
+> For further customization on Grid export, refer to the respective documentation for [PDF exporting](https://help.syncfusion.com/grid-sdk/asp-net-core/data-grid/pdf-export/pdf-export-options) and [Excel exporting](https://help.syncfusion.com/grid-sdk/asp-net-core/data-grid/excel-export/excel-export-options)
 
 The following code example demonstrates how to export all records on the client side:
 
