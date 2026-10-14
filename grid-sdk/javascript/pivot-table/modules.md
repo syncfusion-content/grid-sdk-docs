@@ -19,7 +19,7 @@ The available Pivot Table modules are:
 | [Field list](./field-list) | `FieldList` | Displays the field list using the [`showFieldList`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/index-default#showfieldlist) option. Supports relational and OLAP data. |
 | [Calculated field](./calculated-field) | `CalculatedField` | Enables calculated fields with [`allowCalculatedField`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/index-default#allowcalculatedfield). Relational and OLAP formula syntax differs. |
 | [Conditional formatting](./conditional-formatting) | `ConditionalFormatting` | Enables conditional formatting with [`allowConditionalFormatting`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/index-default#allowconditionalformatting). Supports relational and OLAP data. |
-| [Number formatting](../number-formatting) | `NumberFormatting` | Enables runtime number formatting with [`allowNumberFormatting`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/index-default#allownumberformatting). Supports relational and OLAP data. |
+| [Number formatting](./number-formatting) | `NumberFormatting` | Enables runtime number formatting with [`allowNumberFormatting`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/index-default#allownumberformatting). Supports relational and OLAP data. |
 | [Grouping](./grouping) | `Grouping` | Groups date, number, and string fields with [`allowGrouping`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/index-default#allowgrouping). Applies to relational data. |
 | [Drill through](./drill-through) | `DrillThrough` | Shows underlying records for an aggregated value with [`allowDrillThrough`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/index-default#allowdrillthrough). OLAP access depends on cube permissions. |
 | [Toolbar](./tool-bar) | `Toolbar` | Displays toolbar commands when [`showToolbar`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/index-default#showtoolbar) is enabled and commands are specified through [`toolbar`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/index-default#toolbar). Supports relational and OLAP data. |
@@ -45,11 +45,11 @@ The following example enables the grouping bar, field list, and calculated field
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/pivot-table/module-cs1/index.js %}
+{% include code-snippet/grid-sdk/javascript/pivot-table/module-cs1/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/pivot-table/module-cs1/js/index.html %}
+{% include code-snippet/grid-sdk/javascript/pivot-table/module-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/pivot-table/module-cs1/js" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/pivot-table/module-cs1" %}
