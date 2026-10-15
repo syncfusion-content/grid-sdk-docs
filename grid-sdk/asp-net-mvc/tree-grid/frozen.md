@@ -16,19 +16,6 @@ Frozen rows and columns provides an option to make rows and columns always visib
 
 In this demo, the [`FrozenColumns`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGrid.html#Syncfusion_EJ2_TreeGrid_TreeGrid_FrozenColumns) is set as **2** and the [`FrozenRows`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGrid.html#Syncfusion_EJ2_TreeGrid_TreeGrid_FrozenRows) is set as **3**. Hence, the left two columns and top three rows are frozen.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/scrolling/frozencolumn/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Freezecolumn.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/scrolling/frozencolumn/freezecolumn.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/scrolling/frozencolumn/razor %}
@@ -37,28 +24,12 @@ In this demo, the [`FrozenColumns`](https://help.syncfusion.com/cr/aspnetmvc-js2
 {% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/scrolling/frozencolumn/freezecolumn.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
-
-
 
 ### Freeze particular columns
 
 To freeze particular column in the tree grid, the [`IsFrozen`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGridColumn.html#Syncfusion_EJ2_TreeGrid_TreeGridColumn_IsFrozen) property can be used.
 
 In this demo, the columns with field name **TaskName** and **StartDate** is frozen using the `IsFrozen` property.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/scrolling/isfreezecol/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Isfreeze.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/scrolling/isfreezecol/isfreeze.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -68,9 +39,6 @@ In this demo, the columns with field name **TaskName** and **StartDate** is froz
 {% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/scrolling/isfreezecol/isfreeze.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
-
-
 
 ### Freeze direction
 
@@ -83,19 +51,6 @@ Types of the [`column.freeze`](https://help.syncfusion.com/cr/aspnetcore-js2/Syn
 
 In this demo, the **Task Name** column is frozen at the left and the **Priority** column is frozen at the right side of the content table.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/scrolling/freeze-direction/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Freeze-direction.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/scrolling/freeze-direction/freeze-direction.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/scrolling/freeze-direction/razor %}
@@ -104,9 +59,6 @@ In this demo, the **Task Name** column is frozen at the left and the **Priority*
 {% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/scrolling/freeze-direction/freeze-direction.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
-
-
 
 ### Limitations of frozen tree grid
 
@@ -121,4 +73,4 @@ Freeze Direction feature has the below limitations, along with the above mention
 * Infinite scroll cache mode
 * Freeze direction in the stacked header is not compatible with column reordering.
 
-N> You can refer to our [`ASP.NET MVC Tree Grid`](https://www.syncfusion.com/aspnet-mvc-ui-controls/tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our [`ASP.NET MVC Tree Grid example`](https://ej2.syncfusion.com/aspnetmvc/TreeGrid/Overview#/material) to knows how to present and manipulate data.
+N> You can refer to our [`ASP.NET MVC Tree Grid`](https://www.syncfusion.com/aspnet-mvc-ui-controls/tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our [`ASP.NET MVC Tree Grid example`](https://ej2.syncfusion.com/aspnetmvc/treegrid/overview#/fluent2) to knows how to present and manipulate data.

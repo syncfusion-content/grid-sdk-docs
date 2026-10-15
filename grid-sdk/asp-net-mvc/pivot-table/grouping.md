@@ -15,7 +15,7 @@ documentation: ug
 
 Grouping is one of the most useful features in the Pivot Table component, automatically organizing date, time, number, and string data types into meaningful categories. For example, date fields can be formatted and displayed based on year, quarter, month, and other time periods. Similarly, number fields can be grouped into ranges, such as 1-5, 6-10, and so on. These grouped fields function as individual fields, allowing users to drag them between different axes including columns, rows, values, and filters to create dynamic Pivot Tables at runtime.
 
-The grouping feature can be enabled by setting the [`AllowGrouping`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_AllowGrouping) property in [`PivotView`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html) class to **true**.
+The grouping feature can be enabled by setting the [`AllowGrouping`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_AllowGrouping) property in [`PivotView`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html) class to **true**.
 
 To perform grouping actions through the user interface, right-click on the Pivot Table's row or column header and select **Group**. A dialog will appear where you can configure the appropriate options to group the data. To ungroup data, right-click on the Pivot Table's row or column header and select **Ungroup**.
 
@@ -27,19 +27,6 @@ To use the grouping feature, you need to inject the `Grouping` module in the Piv
 
 > Similar to Excel, only one type of grouping can be applied to a field at a time.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/grouping/group-ui/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Grouping.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/grouping/group-ui/Grouping.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/grouping/group-ui/razor %}
@@ -48,24 +35,10 @@ To use the grouping feature, you need to inject the `Grouping` module in the Piv
 {% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/grouping/group-ui/Grouping.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ## Number Grouping
 
 Number grouping allows users to organize numerical data into different ranges, such as 1–5, 6–10, and so on. This can be configured via the UI by right-clicking a number-based header in the Pivot Table and selecting the **Group** option from the context menu.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/grouping/number-group-ui/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Grouping.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/grouping/number-group-ui/Grouping.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -75,9 +48,6 @@ Number grouping allows users to organize numerical data into different ranges, s
 {% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/grouping/number-group-ui/Grouping.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
-
-
 
 ![Number grouping option](./images/number-group-option.png)
 
@@ -101,26 +71,13 @@ The "**Interval by**" option is used to separate the selected number data type f
 
 You can configure number grouping through code-behind using the [`PivotViewGroupSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewGroupSetting.html) property. This allows you to define how numbers are grouped without relying on the UI. Below are the key settings you need:
 
-* [`Name`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewGroupSetting.html#Syncfusion_EJ2_PivotView_PivotViewGroupSetting_Name): Allows user to set the field name.
-* [`RangeInterval`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewGroupSetting.html#Syncfusion_EJ2_PivotView_PivotViewGroupSetting_RangeInterval): Allows user to set the interval between two numbers.
-* [`StartingAt`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewGroupSetting.html#Syncfusion_EJ2_PivotView_PivotViewGroupSetting_StartingAt): Allows user to set the starting number.
-* [`EndingAt`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewGroupSetting.html#Syncfusion_EJ2_PivotView_PivotViewGroupSetting_EndingAt): Allows user to set the ending number.
-* [`Type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewGroupSetting.html#Syncfusion_EJ2_PivotView_PivotViewGroupSetting_Type): Allows user to set the group type. For number grouping, [**Number**](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.GroupType.html) is set.
+* [`Name`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewGroupSetting.html#Syncfusion_EJ2_PivotView_PivotViewGroupSetting_Name): Allows user to set the field name.
+* [`RangeInterval`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewGroupSetting.html#Syncfusion_EJ2_PivotView_PivotViewGroupSetting_RangeInterval): Allows user to set the interval between two numbers.
+* [`StartingAt`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewGroupSetting.html#Syncfusion_EJ2_PivotView_PivotViewGroupSetting_StartingAt): Allows user to set the starting number.
+* [`EndingAt`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewGroupSetting.html#Syncfusion_EJ2_PivotView_PivotViewGroupSetting_EndingAt): Allows user to set the ending number.
+* [`Type`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewGroupSetting.html#Syncfusion_EJ2_PivotView_PivotViewGroupSetting_Type): Allows user to set the group type. For number grouping, [**Number**](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.GroupType.html) is set.
 
-> If starting and ending numbers specified in [`StartingAt`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewGroupSetting.html#Syncfusion_EJ2_PivotView_PivotViewGroupSetting_StartingAt) and [`EndingAt`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewGroupSetting.html#Syncfusion_EJ2_PivotView_PivotViewGroupSetting_EndingAt) properties are in-between the number range, then rest of the numbers will be grouped and placed in “Out of Range” section introduced specific to this feature.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/grouping/number-group/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Grouping.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/grouping/number-group/Grouping.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
+> If starting and ending numbers specified in [`StartingAt`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewGroupSetting.html#Syncfusion_EJ2_PivotView_PivotViewGroupSetting_StartingAt) and [`EndingAt`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewGroupSetting.html#Syncfusion_EJ2_PivotView_PivotViewGroupSetting_EndingAt) properties are in-between the number range, then rest of the numbers will be grouped and placed in “Out of Range” section introduced specific to this feature.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -130,7 +87,6 @@ You can configure number grouping through code-behind using the [`PivotViewGroup
 {% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/grouping/number-group/Grouping.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ![Applied grouping settings updated in Pivot Table for number grouping](images/number-group-updated.png)
 
@@ -144,19 +100,6 @@ To remove an applied number grouping, simply right-click on the grouped header i
 
 Date grouping organizes date and time data into hierarchical segments, such as years, quarters, months, days, hours, minutes, or seconds. Users can configure date grouping through the UI by right-clicking a date or time-based header in the Pivot Table and selecting **Group** option from the context menu. A dialog will appear, allowing users to choose the desired grouping intervals.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/grouping/date-group-ui/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Grouping.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/grouping/date-group-ui/Grouping.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/grouping/date-group-ui/razor %}
@@ -165,7 +108,6 @@ Date grouping organizes date and time data into hierarchical segments, such as y
 {% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/grouping/date-group-ui/Grouping.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ![Context-menu options for date grouping](images/date-group-option.png)
 
@@ -193,26 +135,13 @@ The **Interval by** option allows users to split date fields into years, quarter
 
 You can configure date grouping programmatically using the [`PivotViewGroupSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewGroupSetting.html) property. This allows you to define how dates are grouped without using the UI. The key settings are:
 
-* [`Name`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewGroupSetting.html#Syncfusion_EJ2_PivotView_PivotViewGroupSetting_Name): Allows user to set the field name.
-* [`Type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewGroupSetting.html#Syncfusion_EJ2_PivotView_PivotViewGroupSetting_Type): Allows user to set the group type. For date grouping, **Date** is set.
-* [`StartingAt`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewGroupSetting.html#Syncfusion_EJ2_PivotView_PivotViewGroupSetting_StartingAt): Allows user to set starting date.
-* [`EndingAt`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewGroupSetting.html#Syncfusion_EJ2_PivotView_PivotViewGroupSetting_EndingAt): Allows user to set ending date.
-* [`GroupInterval`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewGroupSetting.html#Syncfusion_EJ2_PivotView_PivotViewGroupSetting_GroupInterval): Allows user to set interval in year, quarter, month, day, hour, minute, or second pattern.
+* [`Name`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewGroupSetting.html#Syncfusion_EJ2_PivotView_PivotViewGroupSetting_Name): Allows user to set the field name.
+* [`Type`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewGroupSetting.html#Syncfusion_EJ2_PivotView_PivotViewGroupSetting_Type): Allows user to set the group type. For date grouping, **Date** is set.
+* [`StartingAt`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewGroupSetting.html#Syncfusion_EJ2_PivotView_PivotViewGroupSetting_StartingAt): Allows user to set starting date.
+* [`EndingAt`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewGroupSetting.html#Syncfusion_EJ2_PivotView_PivotViewGroupSetting_EndingAt): Allows user to set ending date.
+* [`GroupInterval`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewGroupSetting.html#Syncfusion_EJ2_PivotView_PivotViewGroupSetting_GroupInterval): Allows user to set interval in year, quarter, month, day, hour, minute, or second pattern.
 
 > For example, if your date format is "YYYY-DD-MM HH:MM:SS" and you want to group only by year and month, set the `groupInterval` property with just **Years** and **Months**. You can also rearrange the order of the intervals (Year, Quarter, Month, Day, etc.) as needed—this order will reflect in the Pivot Table display.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/grouping/date-group/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Grouping.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/grouping/date-group/Grouping.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -222,7 +151,6 @@ You can configure date grouping programmatically using the [`PivotViewGroupSetti
 {% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/grouping/date-group/Grouping.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 Furthermore, in the field list UI, these date group fields **Years (Date)**, **Quarters (Date)**, **Months (Date)**, etc... will be automatically grouped and displayed under the **Date** folder name.
 
@@ -238,19 +166,6 @@ To remove a previously applied date grouping, simply right-click the relevant da
 
 Custom grouping is an option that enables users to group data types (date, time, number, or string) into custom fields based on specific requirements. This functionality can be accessed through the user interface by right-clicking a header in the Pivot Table.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/grouping/custom-group-ui/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Grouping.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/grouping/custom-group-ui/Grouping.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/grouping/custom-group-ui/razor %}
@@ -259,7 +174,6 @@ Custom grouping is an option that enables users to group data types (date, time,
 {% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/grouping/custom-group-ui/Grouping.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ### Creating a Custom Group
 
@@ -297,32 +211,19 @@ User can also apply new custom grouping options to an existing custom field by r
 
 You can configure custom grouping programmatically using the [`PivotViewGroupSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewGroupSetting.html) property in the Pivot Table component. This property allows you to define how fields are grouped in the Pivot Table without using the UI. The available properties are:
 
-* [`Name`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewGroupSetting.html#Syncfusion_EJ2_PivotView_PivotViewGroupSetting_Name): Allows user to set the field name.
-* [`Caption`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewGroupSetting.html#Syncfusion_EJ2_PivotView_PivotViewGroupSetting_Caption): Allows user to set the caption name for custom grouping field.
-* [`CustomGroups`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewGroupSetting.html#Syncfusion_EJ2_PivotView_PivotViewGroupSetting_CustomGroups): Allows user to set the custom groups.
-* [`Type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewGroupSetting.html#Syncfusion_EJ2_PivotView_PivotViewGroupSetting_Type): Allows user to set the group type. For custom grouping, [**Custom**](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.GroupType.html) is set.
+* [`Name`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewGroupSetting.html#Syncfusion_EJ2_PivotView_PivotViewGroupSetting_Name): Allows user to set the field name.
+* [`Caption`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewGroupSetting.html#Syncfusion_EJ2_PivotView_PivotViewGroupSetting_Caption): Allows user to set the caption name for custom grouping field.
+* [`CustomGroups`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewGroupSetting.html#Syncfusion_EJ2_PivotView_PivotViewGroupSetting_CustomGroups): Allows user to set the custom groups.
+* [`Type`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewGroupSetting.html#Syncfusion_EJ2_PivotView_PivotViewGroupSetting_Type): Allows user to set the group type. For custom grouping, [**Custom**](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.GroupType.html) is set.
 
-The [`CustomGroups`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewGroupSetting.html#Syncfusion_EJ2_PivotView_PivotViewGroupSetting_CustomGroups) property includes:
+The [`CustomGroups`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewGroupSetting.html#Syncfusion_EJ2_PivotView_PivotViewGroupSetting_CustomGroups) property includes:
 
-* [`GroupName`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewCustomGroup.html#Syncfusion_EJ2_PivotView_PivotViewCustomGroup_GroupName): Allows user to set the group name (or title) for selected headers.
-* [`Items`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewCustomGroup.html#Syncfusion_EJ2_PivotView_PivotViewCustomGroup_Items): It allows to set the headers which needs to be grouped from display.
+* [`GroupName`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewCustomGroup.html#Syncfusion_EJ2_PivotView_PivotViewCustomGroup_GroupName): Allows user to set the group name (or title) for selected headers.
+* [`Items`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewCustomGroup.html#Syncfusion_EJ2_PivotView_PivotViewCustomGroup_Items): It allows to set the headers which needs to be grouped from display.
 
-> Headers listed in [`Items`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewCustomGroup.html#Syncfusion_EJ2_PivotView_PivotViewCustomGroup_Items) are grouped under the specified [`GroupName`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewCustomGroup.html#Syncfusion_EJ2_PivotView_PivotViewCustomGroup_GroupName) in the Pivot Table. Headers not included in [`Items`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewCustomGroup.html#Syncfusion_EJ2_PivotView_PivotViewCustomGroup_Items) are displayed under their original names.
+> Headers listed in [`Items`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewCustomGroup.html#Syncfusion_EJ2_PivotView_PivotViewCustomGroup_Items) are grouped under the specified [`GroupName`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewCustomGroup.html#Syncfusion_EJ2_PivotView_PivotViewCustomGroup_GroupName) in the Pivot Table. Headers not included in [`Items`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewCustomGroup.html#Syncfusion_EJ2_PivotView_PivotViewCustomGroup_Items) are displayed under their original names.
 
 Here’s an example of configuring custom grouping programmatically:
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/grouping/custom-group/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Grouping.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/grouping/custom-group/Grouping.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -332,7 +233,6 @@ Here’s an example of configuring custom grouping programmatically:
 {% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/grouping/custom-group/Grouping.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ![Applied grouping settings updated in Pivot Table for custom grouping](images/custom-group-updated.png)
 

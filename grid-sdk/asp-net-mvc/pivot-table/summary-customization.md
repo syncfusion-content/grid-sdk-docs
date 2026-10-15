@@ -16,19 +16,6 @@ Allows to show or hide grand totals in rows and columns using the [`ShowGrandTot
 
 > By default, [`ShowGrandTotals`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html#Syncfusion_EJ2_PivotView_PivotViewDataSourceSettings_ShowGrandTotals), [`ShowRowGrandTotals`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html#Syncfusion_EJ2_PivotView_PivotViewDataSourceSettings_ShowRowGrandTotals) and [`ShowColumnGrandTotals`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html#Syncfusion_EJ2_PivotView_PivotViewDataSourceSettings_ShowColumnGrandTotals) properties in [`DataSourceSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html) are set as **true**.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/summary-customization/grand-total/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="GrandTotal.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/summary-customization/grand-total/GrandTotal.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/summary-customization/grand-total/razor %}
@@ -37,26 +24,12 @@ Allows to show or hide grand totals in rows and columns using the [`ShowGrandTot
 {% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/summary-customization/grand-total/GrandTotal.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ![Grand totals example](images/grandtotal.png)
 
 ## Show grand totals at top or bottom
 
 Allows to show grand totals either at top or bottom in rows and columns using the [`GrandTotalsPosition`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.GrandTotalsPosition.html) property. To show the grand totals at top in rows and columns, set the [`GrandTotalsPosition`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.GrandTotalsPosition.html) property in [`DataSourceSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html) to **Top**.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/summary-customization/grand-total-top/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="GrandTotal.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/summary-customization/grand-total-top/GrandTotalTop.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -66,7 +39,6 @@ Allows to show grand totals either at top or bottom in rows and columns using th
 {% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/summary-customization/grand-total-top/GrandTotalTop.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ![Grand totals at top](images/grand-totals-at-top.png)
 
@@ -76,19 +48,6 @@ Allows to show or hide sub-totals in rows and columns using the [`ShowSubTotals`
 
 > By default, [`ShowSubTotals`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewRow.html#Syncfusion_EJ2_PivotView_PivotViewRow_ShowSubTotals), [`ShowRowSubTotals`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html#Syncfusion_EJ2_PivotView_PivotViewDataSourceSettings_ShowRowSubTotals) and [`ShowColumnSubTotals`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html#Syncfusion_EJ2_PivotView_PivotViewDataSourceSettings_ShowColumnSubTotals) properties in [`DataSourceSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html) are set as **true**.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/summary-customization/sub-total/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="SubTotal.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/summary-customization/sub-total/SubTotal.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/summary-customization/sub-total/razor %}
@@ -97,7 +56,6 @@ Allows to show or hide sub-totals in rows and columns using the [`ShowSubTotals`
 {% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/summary-customization/sub-total/SubTotal.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ![Sub-totals example](images/sub-total.png)
 
@@ -107,19 +65,6 @@ Allows to show or hide sub-totals for specific fields in rows and columns using 
 
 > By default, [`ShowSubTotals`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewRow.html#Syncfusion_EJ2_PivotView_PivotViewRow_ShowSubTotals) property in [`Row`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewRow.html) or [`Column`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.ColumnsDataSourceSettings.html) is set as **true**.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/summary-customization/sub-total-specific/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="SubTotalSpecific.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/summary-customization/sub-total-specific/SubTotalSpecific.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/summary-customization/sub-total-specific/razor %}
@@ -128,7 +73,6 @@ Allows to show or hide sub-totals for specific fields in rows and columns using 
 {% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/summary-customization/sub-total-specific/SubTotalSpecific.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ![Sub-totals for specific fields](images/subtotal2.png)
 
@@ -138,19 +82,6 @@ Allows to show sub-totals either at top or bottom of the header group in rows an
 
 To show sub-totals at top of the header group in rows and columns, set the [`SubTotalsPosition`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.SubTotalsPosition.html) property in [`DataSourceSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html) to **Top**.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/summary-customization/subtotal-top/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="GrandTotal.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/summary-customization/subtotal-top/subtotal-top.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/summary-customization/subtotal-top/razor %}
@@ -159,24 +90,10 @@ To show sub-totals at top of the header group in rows and columns, set the [`Sub
 {% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/summary-customization/subtotal-top/subtotal-top.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ![Subtotals top position](images/subTotalsPosition-Top.png)
 
 To show sub-totals at bottom of the header group in rows and columns, set the  [`SubTotalsPosition`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.SubTotalsPosition.html) property in [`DataSourceSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html) to **Bottom**.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/summary-customization/subtotal-bottom/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="GrandTotal.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/summary-customization/subtotal-bottom/subtotal-bottom.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -186,7 +103,6 @@ To show sub-totals at bottom of the header group in rows and columns, set the  [
 {% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/summary-customization/subtotal-bottom/subtotal-bottom.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ![Subtotals bottom position](images/subTotalsPosition-Bottom.png)
 
@@ -196,19 +112,6 @@ It can also be achieved using built-in toolbar options by setting the [`ShowTool
 
 The grand totals and sub-totals can be dynamically displayed at the top or bottom of the pivot table's row and column axes by using the built-in options "Grand totals position" and "Subtotals position" available in the grand totals and sub-totals drop down menus, respectively.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/summary-customization/toolbar/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Toolbar.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/summary-customization/toolbar/Toolbar.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/summary-customization/toolbar/razor %}
@@ -217,7 +120,6 @@ The grand totals and sub-totals can be dynamically displayed at the top or botto
 {% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/summary-customization/toolbar/Toolbar.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ![Grand Totals](images/toolbar-grandtotals.png)
 

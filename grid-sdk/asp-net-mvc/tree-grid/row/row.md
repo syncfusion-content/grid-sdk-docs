@@ -13,21 +13,8 @@ The row represents record details fetched from data source.
 
 ## Customize rows
 
-You can customize the appearance of a row by using the [`RowDataBound`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGrid~RowDataBound.html) event.
-The [`RowDataBound`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGrid~RowDataBound.html) event triggers for every row. In the event handler, you can get the **args** which contains details of the row.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/row/customize-rows/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="CustomizeRows.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/row/customize-rows/CustomizeRows.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
+You can customize the appearance of a row by using the [`RowDataBound`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGrid.html#Syncfusion_EJ2_TreeGrid_TreeGrid_RowDataBound) event.
+The [`RowDataBound`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGrid.html#Syncfusion_EJ2_TreeGrid_TreeGrid_RowDataBound) event triggers for every row. In the event handler, you can get the **args** which contains details of the row.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -37,9 +24,6 @@ The [`RowDataBound`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Sy
 {% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/row/customize-rows/CustomizeRows.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
-
-
 
 ## Styling alternate rows
 
@@ -53,19 +37,6 @@ The [`RowDataBound`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Sy
 
 Refer to the following example.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/row/alternate-rows/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="AlternateRows.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/row/alternate-rows/alternateRows.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/row/alternate-rows/razor %}
@@ -74,8 +45,5 @@ Refer to the following example.
 {% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/row/alternate-rows/alternateRows.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
-
-
-N> Refer to our [`ASP.NET MVC Tree Grid`](https://www.syncfusion.com/aspnet-mvc-ui-controls/tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our [`ASP.NET MVC Tree Grid example`](https://ej2.syncfusion.com/aspnetmvc/TreeGrid/Overview#/material) to learn how to present and manipulate data.
+N> Refer to our [`ASP.NET MVC Tree Grid`](https://www.syncfusion.com/aspnet-mvc-ui-controls/tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our [`ASP.NET MVC Tree Grid example`](https://ej2.syncfusion.com/aspnetmvc/treegrid/overview#/fluent2) to learn how to present and manipulate data.

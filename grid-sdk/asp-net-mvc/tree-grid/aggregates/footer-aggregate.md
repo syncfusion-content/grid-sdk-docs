@@ -10,20 +10,7 @@ documentation: ug
 
 # Footer Aggregate in ASP.NET MVC TreeGrid
 
-Footer aggregate value is calculated for all the rows, and it is displayed in the footer cells. Use the [`FooterTemplate`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridAggregateColumn~FooterTemplate.html) property to render the aggregate value in footer cells.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/aggregates/footer-aggregate/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="FooterAggregate.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/aggregates/footer-aggregate/footerAggregate.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
+Footer aggregate value is calculated for all the rows, and it is displayed in the footer cells. Use the [`FooterTemplate`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGridAggregateColumn.html#Syncfusion_EJ2_TreeGrid_TreeGridAggregateColumn_FooterTemplate) property to render the aggregate value in footer cells.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -33,28 +20,13 @@ Footer aggregate value is calculated for all the rows, and it is displayed in th
 {% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/aggregates/footer-aggregate/footerAggregate.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 
-
-N> The aggregate values must be accessed inside the template using their corresponding [`Type`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridAggregateColumn~Type.html) name.
+N> The aggregate values must be accessed inside the template using their corresponding [`Type`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGridAggregateColumn.html#Syncfusion_EJ2_TreeGrid_TreeGridAggregateColumn_Type) name.
 
 ## How to format aggregate value
 
-You can format the aggregate value result by using the [`Format`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridAggregateColumn~Format.html) property.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/aggregates/format-Aggregate/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="FormatAggregate.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/aggregates/format-Aggregate/formatAggregate.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
+You can format the aggregate value result by using the [`Format`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGridAggregateColumn.html#Syncfusion_EJ2_TreeGrid_TreeGridAggregateColumn_Format) property.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -64,8 +36,6 @@ You can format the aggregate value result by using the [`Format`](https://help.s
 {% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/aggregates/format-Aggregate/formatAggregate.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 
-
-N> You can refer to our [`ASP.NET MVC Tree Grid`](https://www.syncfusion.com/aspnet-mvc-ui-controls/tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our [`ASP.NET MVC Tree Grid example`](https://ej2.syncfusion.com/aspnetmvc/TreeGrid/Overview#/material) to knows how to present and manipulate data.
+N> You can refer to our [`ASP.NET MVC Tree Grid`](https://www.syncfusion.com/aspnet-mvc-ui-controls/tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our [`ASP.NET MVC Tree Grid example`](https://ej2.syncfusion.com/aspnetmvc/treegrid/overview#/fluent2) to knows how to present and manipulate data.
