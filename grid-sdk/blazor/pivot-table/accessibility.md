@@ -42,7 +42,7 @@ The pivot table component followed the [WAI-ARIA](https://www.w3.org/WAI/ARIA/ap
 
 | Selector / Element | Attribute / Role | Purpose |
 | --- | --- | --- |
-| Pivot table element (`e-pivotview`) | `role=grid` | Attribute added to identify the grid component element within the pivot table element. |
+| Grid element (`e-grid`) placed within the pivot table element (`e-pivotview`) | `role=grid` | Attribute added to identify the grid component element within the pivot table element. |
 | Pivot chart element | `role=region` | Attribute added to identify the chart component element within the pivot table element. The region must have an accessible name (for example, via `aria-label`) to be exposed as a landmark. |
 | Dialog popups (field list, calculated field, member editor, conditional formatting, number formatting, drill-through) | `role=dialog` | Attribute added to the dialog popup containers to identify them as dialogs, informing assistive technologies that the popup content is separated from the main page flow. |
 | Pager navigation buttons and dialog popup buttons (field list, calculated field, member editor, conditional formatting) | `role=button` | This attribute is added to the pager navigation buttons as well as the buttons in the dialog popup such as field list, calculated field, member editor, conditional formatting of pivot table component to indicate that it is a clickable element. |
