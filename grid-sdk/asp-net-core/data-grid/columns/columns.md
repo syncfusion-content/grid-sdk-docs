@@ -38,7 +38,7 @@ Here is an example of how to specify column types in a grid using the types ment
 ![Column Type](../images/columns/Column-type.png)
 
 >* If the `type` is not defined, then it will be determined from the first record of the [dataSource](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.grids.grid.html#Syncfusion_EJ2_Grids_Grid_DataSource).
->* Incase if the first record of the [dataSource](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_DataSource) is null/blank value for a column then it is necessary to define the `type` for that column. This is because the grid uses the column type to determine which filter dialog to display for that column.
+>* In case if the first record of the [dataSource](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_DataSource) is null/blank value for a column then it is necessary to define the `type` for that column. This is because the grid uses the column type to determine which filter dialog to display for that column.
 
 ### Difference between boolean type and checkbox type column 
 
@@ -308,7 +308,7 @@ The `autoFitColumns` method resizes the column to fit the widest cell's content 
 
 ![Column AutoFit](../images/columns/autofit.png)
 
-> You can autoFit all the columns by invoking the `autoFitColumns` method without specifying column names.
+> You can AutoFit all the columns by invoking the `autoFitColumns` method without specifying column names.
 
 ### AutoFit columns with empty space
 
