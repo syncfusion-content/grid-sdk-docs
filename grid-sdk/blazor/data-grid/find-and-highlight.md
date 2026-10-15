@@ -8,7 +8,7 @@ keywords: adaptors, CustomAdaptor, custom adaptor, remotedata, custombinding, cu
 documentation: ug
 ---
 
-# Find and highlight
+# Find and Highlight in Blazor DataGrid
 
 The Find and Highlight feature enables quick text discovery within the Data Grid by locating and highlighting matching content across visible records. All records remain visible during the process, allowing data to be reviewed and compared without changing the current view. Navigation controls and a match counter help move through individual matches efficiently, making it easier to locate specific values, keywords, references, or data entries within large datasets.
  
