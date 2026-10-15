@@ -1,14 +1,14 @@
 ---
 layout: post
 title: Blazor Grid Find and Highlight | Syncfusion
-description: Learn the Find and Highlight feature in Blazor Data Grid. Quickly locate matching records, highlight search results, and navigate through matches with built-in keyboard support.
+description: Learn the Find and Highlight feature in Blazor Data Grid. Quickly locate matching records, navigate and highlight search results with built-in keyboard support.
 platform: grid-sdk
 control: DataGrid
 keywords: adaptors, CustomAdaptor, custom adaptor, remotedata, custombinding, custom binding
 documentation: ug
 ---
 
-# Find and highlight
+# Find and Highlight in Blazor Data Grid
 
 The Find and Highlight feature enables quick text discovery within the Data Grid by locating and highlighting matching content across visible records. All records remain visible during the process, allowing data to be reviewed and compared without changing the current view. Navigation controls and a match counter help move through individual matches efficiently, making it easier to locate specific values, keywords, references, or data entries within large datasets.
  
