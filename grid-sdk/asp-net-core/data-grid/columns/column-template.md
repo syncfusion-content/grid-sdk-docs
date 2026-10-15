@@ -126,7 +126,7 @@ function dropdown(args) {
 {% endhighlight %}
 {% endtabs %}
 
-![Column Template Dropdownlist](../images/column-template/column-template-dropdownlist.png)
+![Column Template DropDownList](../images/column-template/column-template-dropdownlist.png)
 
 ### Render Chip component in a column
 
@@ -279,7 +279,7 @@ The Syncfusion<sup style="font-size:70%">&reg;</sup> Grid component allows you t
 
 Dynamically adding template columns involves creating and inserting columns with custom templates after the grid has been initialized. This approach provides flexibility in presenting data in a highly customizable manner.
 
-The following example demonstrates how to add template column using external button click. In this example, the **ShipCountry** column with a [Dropdownlist](https://ej2.syncfusion.com/aspnetcore/documentation/drop-down-list/getting-started) is added in column `template`, and an icon is displayed in the column header by using the `headerTemplate` for the **ShipCountry** column. 
+The following example demonstrates how to add template column using external button click. In this example, the **ShipCountry** column with a [DropDownList](https://ej2.syncfusion.com/aspnetcore/documentation/drop-down-list/getting-started) is added in column `template`, and an icon is displayed in the column header by using the `headerTemplate` for the **ShipCountry** column. 
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}

@@ -542,7 +542,7 @@ public IActionResult Delete(int key)
 
 > Please find the sample in this [GitHub location](https://github.com/SyncfusionExamples/Binding-data-from-remote-service-to-asp.net-core-data-grid/tree/master/ODataV4Adaptor_EJ2Core).
 
-## Odata with custom url
+## OData with custom url
 
 The Syncfusion ODataV4 adaptor extends support for calling customized URLs to accommodate data retrieval and CRUD actions as per your application's requirements. However, when utilizing a custom URL with the ODataV4 adaptor, it's essential to modify the routing configurations in your application's route configuration file to align with your custom URL. You can invoke the custom URL by the following methods in the `DataManager`.
 
