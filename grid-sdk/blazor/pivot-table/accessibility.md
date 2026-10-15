@@ -38,33 +38,67 @@ The accessibility compliance for the pivot table component is outlined below.
 
 ## WAI-ARIA attributes
 
-The pivot table component followed the [WAI-ARIA](https://www.w3.org/WAI/ARIA/apg/patterns/table/) patterns to meet the accessibility. The following ARIA selectors, attributes, and roles are used in the pivot table component:
+The pivot table component followed the [WAI-ARIA](https://www.w3.org/WAI/ARIA/apg/patterns/table/) patterns to meet the accessibility. The following ARIA selectors, attributes, and roles are used in the pivot table component, grouped by the component region to which they apply.
+
+### Pivot grid element
 
 | Selector / Element | Attribute / Role | Purpose |
 | --- | --- | --- |
 | Grid element (`.e-grid`) within the pivot table element (`.e-pivotview`) | `role=grid` | Attribute added to identify the grid component element within the pivot table element. |
 | Pivot chart element (`.e-pivotchart`) | `role=region` | Attribute added to identify the chart component element within the pivot table element. The region must have an accessible name (for example, via `aria-label`) to be exposed as a landmark. |
-| Dialog popup containers — field list (`.e-pivotfieldlist-container`), calculated field (`.e-pivot-calc-dialog-div`), member editor (`.e-member-editor-dialog`), conditional formatting (`.e-pivot-formatting-dialog`), number formatting (`.e-pivot-format-dialog`), drill-through (`.e-drillthrough-dialog`) | `role=dialog` | Attribute added to the dialog popup containers to identify them as dialogs, informing assistive technologies that the popup content is separated from the main page flow. |
-| Pager navigation buttons (`.e-first`, `.e-prev`, `.e-next`, `.e-last`), pivot buttons (`.e-pivot-button`) in the grouping bar and field list, field list toggle button (`.e-toggle-field-list`), treeview sort buttons, and dialog popup buttons | `role=button` | This attribute is added to the pager navigation buttons, the pivot buttons in the grouping bar and field list, the field list toggle and treeview sort buttons, as well as the buttons in the dialog popups such as field list, calculated field, member editor, and conditional formatting of the pivot table component to indicate that it is a clickable element. |
-| Conditional formatting style container tables (`.e-format-table`) | `role=table` | This attribute is added to each conditional formatting style container element to denote it as a table. |
-| Table element inside the number formatting popup (`.e-pivot-format-table`) | `role=tableItems` | This attribute is added to the container element that appears inside the number formatting popup to indicate it as a table. |
-| Row group container inside the number formatting popup (`.e-pivot-format-dialog-outer`) | `role=rowgroup` | This attribute is added to the container element that appears inside the number formatting popup to indicate it as a row group. |
-| Header `th` cells (`.e-headercell`, `.e-columnheader`) | `role=columnheader` | Attribute added to the column header cells of the pivot table (column headers and value axis headers) to provide column header information to assistive technologies. |
-| Row header cells (`.e-rowsheader`) | `role=gridcell` | Attribute added to the row header cells of the pivot table to provide row header information, allowing assistive technologies to associate each data cell with its row header. |
-| Table rows (`.e-row`) within the header and content tables | `role=row` | Attribute added to each row element in the header and content tables to define a row containing header or data cells. |
-| Data and value cells (`td` elements with `.e-rowcell`, `.e-valuecell`) | `role=gridcell` | Attribute added to the data and value cells within the pivot table grid to identify them as grid cells, ensuring they are announced together with their associated row and column headers. |
 | Decorative and structural wrapper elements (layout containers within the dialog popups) | `role=presentation` / `role=none` | Attribute added to elements whose semantics are not relevant to assistive technologies (such as layout wrappers), removing them from the accessibility tree. |
-| Pivot buttons (`.e-pivot-button`), treeview sort buttons, and dialog popup buttons (field list, calculated field, member editor) | `aria-disabled` | The buttons within the dialog popups, such as field list, calculated field and member editor, as well as the pivot buttons in the grouping bar and field list, will be disabled based on their usability. To indicate its disabled state, this attribute is added with the value `true`. By default, the attribute value is set to `false`. |
-| Pivot buttons (`.e-pivot-button`), treeview sort buttons, pager navigation buttons (`.e-first`, `.e-prev`, `.e-next`, `.e-last`), and label elements in the member editor popup and calculated field popup | `aria-label` | This attribute is added to the pivot buttons in the grouping bar and field list, the treeview sort buttons, the pager navigation buttons, and the label elements placed inside the member editor popup and calculated field popup to provide an accessible name for each element. |
-| Selected treeview item in the calculated field popup (`.e-pivot-calc-dialog-div`) and selected rows or cells in the pivot grid | `aria-selected` | This attribute is added to the selected treeview item in the calculated field popup with the value as `true`, and to the rows and cells in the pivot grid to denote their selection state. |
-| Toolbar dropdown elements (report list, chart menu items) | `aria-expanded` | This attribute indicates the current expanded or collapsed state of the toolbar dropdown elements, such as the report list and the chart menu items. |
-| Non-focusable decorative elements (for example, chart axis and clip-path elements) | `aria-hidden` | This attribute hides decorative elements, such as non-interactive chart elements, from the screen reader output. |
-| Grid cells and associated header or popup elements | `aria-owns` | This attribute defines the relationship between an element and its owned child elements (for example, associating cells or popup content with their owning element) to construct a meaningful accessibility tree. Note: This attribute is rendered only in specific configurations, such as when drill-through or specific popup features are enabled. |
-| Data cells (`.e-valuecell`) with corresponding column headers | `aria-describedby` | This attribute provides a descriptive reference for the data cells, associating them with the corresponding column header information when the cell receives focus. |
+
+### Column headers
+
+| Selector / Element | Attribute / Role | Purpose |
+| --- | --- | --- |
+| Header `th` cells (`.e-headercell`, `.e-columnheader`) | `role=columnheader` | Attribute added to the column header cells of the pivot table (column headers and value axis headers) to provide column header information to assistive technologies. |
 | Header and data cells (`.e-headercell`, `.e-rowcell`) | `aria-colindex` | This attribute is added to the header and data cells to specify the column index of the cell relative to the total number of columns. It is also used by the keyboard navigation and selection modules to identify the active cell. |
 | Header and data cells (`.e-headercell`, `.e-rowcell`) | `aria-rowindex` | This attribute is added to the header and data cells to specify the row index of the cell relative to the total number of rows. It is also used by the keyboard navigation and selection modules to identify the active cell. |
 | `th` elements in the grid header table (`.e-table`) | `aria-colspan` | This attribute is added to the `th` elements in the `e-table`, which represent the column span value. |
 | `th` elements in the grid header table (`.e-table`) | `aria-rowspan` | This attribute is added to the `th` elements in the `e-table`, which represent the row span value. |
+
+### Row headers
+
+| Selector / Element | Attribute / Role | Purpose |
+| --- | --- | --- |
+| Row header cells (`.e-rowsheader`) | `role=gridcell` | Attribute added to the row header cells of the pivot table to provide row header information, allowing assistive technologies to associate each data cell with its row header. |
+
+### Data cells and rows
+
+| Selector / Element | Attribute / Role | Purpose |
+| --- | --- | --- |
+| Table rows (`.e-row`) within the header and content tables | `role=row` | Attribute added to each row element in the header and content tables to define a row containing header or data cells. |
+| Table row groups (`thead` and `tbody` elements) | `role=rowgroup` | Attribute added to the table row group elements within the grid tables to group rows. |
+| Data and value cells (`td` elements with `.e-rowcell`, `.e-valuecell`) | `role=gridcell` | Attribute added to the data and value cells within the pivot table grid to identify them as grid cells, ensuring they are announced together with their associated row and column headers. |
+| Selected rows or cells in the pivot grid | `aria-selected` | This attribute is added to the rows and cells in the pivot grid to denote their selection state with the value as `true` when selected. |
+| Grid cells and associated header or popup elements | `aria-owns` | This attribute defines the relationship between an element and its owned child elements (for example, associating cells or popup content with their owning element) to construct a meaningful accessibility tree. Note: This attribute is rendered only in specific configurations, such as when drill-through or specific popup features are enabled. |
+
+### Dialog popups
+
+| Selector / Element | Attribute / Role | Purpose |
+| --- | --- | --- |
+| Dialog popup containers — field list (`.e-pivotfieldlist-container`), calculated field (`.e-pivot-calc-dialog-div`), member editor (`.e-member-editor-dialog`), conditional formatting (`.e-pivot-formatting-dialog`), number formatting (`.e-pivot-format-dialog`), drill-through (`.e-drillthrough-dialog`) | `role=dialog` | Attribute added to the dialog popup containers to identify them as dialogs, informing assistive technologies that the popup content is separated from the main page flow. |
+| Dialog popup containers | `aria-describedby` | This attribute associates the dialog container with its content element, providing a descriptive reference for screen readers when the dialog opens. |
+| Conditional formatting style container tables (`.e-format-table`) | `role=table` | This attribute is added to each conditional formatting style container element to denote it as a table. |
+| Table element inside the number formatting popup (`.e-pivot-format-table`) | `role=tableItems` | This attribute is added to the container element that appears inside the number formatting popup to indicate it as a table. |
+| Row group container inside the number formatting popup (`.e-pivot-format-dialog-outer`) | `role=rowgroup` | This attribute is added to the container element that appears inside the number formatting popup to indicate it as a row group. |
+| Non-focusable decorative elements (for example, chart axis and clip-path elements) | `aria-hidden` | This attribute hides decorative elements, such as non-interactive chart elements, from the screen reader output. |
+
+### Buttons and interactive elements
+
+| Selector / Element | Attribute / Role | Purpose |
+| --- | --- | --- |
+| Pager navigation buttons (`.e-first`, `.e-prev`, `.e-next`, `.e-last`), pivot buttons (`.e-pivot-button`) in the grouping bar and field list, field list toggle button (`.e-toggle-field-list`), treeview sort buttons, and dialog popup buttons | `role=button` | This attribute is added to the pager navigation buttons, the pivot buttons in the grouping bar and field list, the field list toggle and treeview sort buttons, as well as the buttons in the dialog popups such as field list, calculated field, member editor, and conditional formatting of the pivot table component to indicate that it is a clickable element. |
+| Pivot buttons (`.e-pivot-button`), treeview sort buttons, and dialog popup buttons (field list, calculated field, member editor) | `aria-disabled` | The buttons within the dialog popups, such as field list, calculated field and member editor, as well as the pivot buttons in the grouping bar and field list, will be disabled based on their usability. To indicate its disabled state, this attribute is added with the value `true`. By default, the attribute value is set to `false`. |
+| Pivot buttons (`.e-pivot-button`), treeview sort buttons, pager navigation buttons (`.e-first`, `.e-prev`, `.e-next`, `.e-last`), and label elements in the member editor popup and calculated field popup | `aria-label` | This attribute is added to the pivot buttons in the grouping bar and field list, the treeview sort buttons, the pager navigation buttons, and the label elements placed inside the member editor popup and calculated field popup to provide an accessible name for each element. |
+| Toolbar dropdown elements (report list, chart menu items) | `aria-expanded` | This attribute indicates the current expanded or collapsed state of the toolbar dropdown elements, such as the report list and the chart menu items. |
+| Selected treeview item in the calculated field popup (`.e-pivot-calc-dialog-div`) | `aria-selected` | This attribute is added to the selected treeview item in the calculated field popup with the value as `true` to denote that it is a selected element. |
+
+### Field-specific data attributes
+
+| Selector / Element | Attribute | Purpose |
+| --- | --- | --- |
 | Calculated field popup treeview items (`.e-pivot-calc-dialog-div`); pivot buttons (`.e-pivot-button`) | `data-type` | This attribute is added to the treeview item in the calculated field popup, as well as the buttons in the grouping bar and field list. It represents the aggregate type for the specified field. |
 | Calculated field popup treeview items (`.e-pivot-calc-dialog-div`); pivot buttons (`.e-pivot-button`) | `data-caption` | This attribute is added to the treeview item in the calculated field popup, as well as the buttons in the grouping bar and field list. It represents the caption for the specified field. |
 | Calculated field popup treeview items (`.e-pivot-calc-dialog-div`) | `data-field` | This attribute is added to the treeview item in the calculated field popup. It denotes the name of the specified field. |
