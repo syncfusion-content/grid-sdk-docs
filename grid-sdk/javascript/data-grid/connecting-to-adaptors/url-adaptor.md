@@ -684,13 +684,7 @@ public object Post([FromBody] DataManagerRequest DataManagerRequest)
   if (DataManagerRequest.Where != null && DataManagerRequest.Where.Count > 0)
   {
     // Handling filtering operation
-    foreach (var condition in DataManagerRequest.Where)
-    {
-      foreach (var predicate in condition.predicates)
-      {
-        DataSource = queryableOperation.PerformFiltering(DataSource, DataManagerRequest.Where, predicate.Operator);
-      }
-    }
+    DataSource = queryableOperation.PerformFiltering(DataSource, DataManagerRequest.Where, DataManagerRequest.Where[0].Condition);
   }
   // Get the total records count
   int totalRecordsCount = DataSource.Count();
@@ -1406,7 +1400,7 @@ public object Post([FromBody] DataManagerRequest DataManagerRequest)
   // Handling filtering operation
   if (DataManagerRequest.Where != null && DataManagerRequest.Where.Count > 0)
   {
-    DataSource = operation.PerformFiltering(DataSource, DataManagerRequest.Where, DataManagerRequest.Where[0].Operator);
+    DataSource = operation.PerformFiltering(DataSource, DataManagerRequest.Where, DataManagerRequest.Where[0].Condition);
   }
 
   // Get the total count of records.
