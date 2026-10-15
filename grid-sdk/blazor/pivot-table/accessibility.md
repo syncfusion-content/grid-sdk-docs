@@ -38,31 +38,41 @@ The accessibility compliance for the pivot table component is outlined below.
 
 ## WAI-ARIA attributes
 
-The pivot table component followed the [WAI-ARIA](https://www.w3.org/WAI/ARIA/apg/patterns/table/) patterns to meet the accessibility. The following ARIA attributes are used in the pivot table component:
+The pivot table component followed the [WAI-ARIA](https://www.w3.org/WAI/ARIA/apg/patterns/table/) patterns to meet the accessibility. The following ARIA selectors, attributes, and roles are used in the pivot table component:
 
-| Attributes | Purpose |
-| --- | --- |
-| `role=grid` | Attribute added to identify the grid component element within the pivot table element. |
-| `role=region` | Attribute added to identify the chart component element within the pivot table element. The region must have an accessible name (for example, via `aria-label`) to be exposed as a landmark. |
-| `role=button` | This attribute is added to the pager navigation buttons as well as the buttons in the dialog popup such as field list, calculated field, member editor, conditional formatting of pivot table component to indicate that it is a clickable element. |
-| `role=table` | This attribute is added to each conditional formatting style container element to denote it as a table. |
-| `role=tableItems` | This attribute is added to the container element that appears inside the number formatting popup to indicate it as a table. |
-| `role=rowgroup` | This attribute is added to the container element that appears inside the number formatting popup to indicate it as a row group. |
-| `aria-disabled` | The buttons within the dialog popups, such as field list, calculated field and member editor, will be disabled based on their usability. To indicate its disabled state, we will add this attribute with the values `true`. By default, the attribute value is set to `false`. |
-| `aria-label` | This attribute is added to label elements that are placed inside the pager, member editor popup, and calculated field popup to identify them as label elements. |
-| `aria-selected` | This attribute is added to the selected treeview item in the calculated field popup with the value as `true` to denote that it is a selected element. |
-| `aria-colspan` | This attribute is added to the `th` elements in the `e-table`, which represent the column span value. |
-| `aria-rowspan` | This attribute is added to the `th` elements in the `e-table`, which represent the row span value. |
-| `data-type` | This attribute is added to the treeview item in the calculated field popup, as well as the buttons in the grouping bar and field list. It represents the aggregate type for the specified field. |
-| `data-caption` | This attribute is added to the treeview item in the calculated field popup, as well as the buttons in the grouping bar and field list. It represents the caption for the specified field. |
-| `data-basefield` | This attribute is added to the treeview item in the calculated field popup, as well as the buttons in the grouping bar and field list. It denotes the base field for the specified field, which is used to display the values for aggregation types such as **DifferenceFrom**, **PercentageOfDifferenceFrom**, and **PercentageOfParentTotal**. |
-| `data-baseitem` | This attribute is added to the treeview item in the calculated field popup, as well as the buttons in the grouping bar and field list. It denotes the base item for the specified field, which is used to display the values for aggregation types such as **DifferenceFrom**, **PercentageOfDifferenceFrom**, and **PercentageOfParentTotal**. |
-| `data-field` | This attribute is added to the treeview item in the calculated field popup. It denotes the name of the specified field. |
-| `data-membertype` | This attribute is added to the treeview item in the calculated field popup. It denotes the member type of the selected OLAP calculated field. |
-| `data-hierarchy` | This attribute is added to the treeview item in the calculated field popup. It denotes the parent hierarchy unique name of the selected OLAP calculated field. |
-| `data-formula` | This attribute is added to the treeview item in the calculated field popup. It denotes the formula used for the specified calculated field. |
-| `data-formatString` | This attribute is added to the treeview item in the calculated field popup. It denotes the format string used for the specified calculated field. |
-| `data-customformatstring` | This attribute is added to the treeview item in the calculated field popup. It denotes the custom format string used for the specified calculated field. |
+| Selector / Element | Attribute / Role | Purpose |
+| --- | --- | --- |
+| Pivot table element (`e-pivotview`) | `role=grid` | Attribute added to identify the grid component element within the pivot table element. |
+| Pivot chart element | `role=region` | Attribute added to identify the chart component element within the pivot table element. The region must have an accessible name (for example, via `aria-label`) to be exposed as a landmark. |
+| Dialog popups (field list, calculated field, member editor, conditional formatting, number formatting, drill-through) | `role=dialog` | Attribute added to the dialog popup containers to identify them as dialogs, informing assistive technologies that the popup content is separated from the main page flow. |
+| Pager navigation buttons and dialog popup buttons (field list, calculated field, member editor, conditional formatting) | `role=button` | This attribute is added to the pager navigation buttons as well as the buttons in the dialog popup such as field list, calculated field, member editor, conditional formatting of pivot table component to indicate that it is a clickable element. |
+| Conditional formatting style container elements | `role=table` | This attribute is added to each conditional formatting style container element to denote it as a table. |
+| Container element inside the number formatting popup | `role=tableItems` | This attribute is added to the container element that appears inside the number formatting popup to indicate it as a table. |
+| Container element inside the number formatting popup | `role=rowgroup` | This attribute is added to the container element that appears inside the number formatting popup to indicate it as a row group. |
+| Header `th` cells (`.e-headercell`, `.e-columnheader`) | `role=columnheader` | Attribute added to the column header cells of the pivot table (column headers and value axis headers) to provide column header information to assistive technologies. |
+| Row header cells (`.e-rowsheader`) | `role=rowheader` | Attribute added to the row header cells of the pivot table to provide row header information, allowing assistive technologies to associate each data cell with its row header. |
+| Table rows within the grid tables | `role=row` | Attribute added to each row element in the header and content tables to define a row containing header or data cells. |
+| Data and value cells (`td` elements, `.e-rowcell`, `.e-valuecell`) | `role=gridcell` | Attribute added to the data and value cells within the pivot table grid to identify them as grid cells, ensuring they are announced together with their associated row and column headers. |
+| Decorative and structural wrapper elements | `role=presentation` / `role=none` | Attribute added to elements whose semantics are not relevant to assistive technologies (such as layout wrappers), removing them from the accessibility tree. |
+| Dialog popup buttons (field list, calculated field, member editor) | `aria-disabled` | The buttons within the dialog popups, such as field list, calculated field and member editor, will be disabled based on their usability. To indicate its disabled state, we will add this attribute with the values `true`. By default, the attribute value is set to `false`. |
+| Label elements in the pager, member editor popup, and calculated field popup | `aria-label` | This attribute is added to label elements that are placed inside the pager, member editor popup, and calculated field popup to identify them as label elements. |
+| Selected treeview item in the calculated field popup | `aria-selected` | This attribute is added to the selected treeview item in the calculated field popup with the value as `true` to denote that it is a selected element. |
+| Expand/collapse header cells and grouped elements | `aria-expanded` | This attribute indicates the current expanded or collapsed state of the drillable row and column headers in the pivot table. |
+| Icon and non-focusable decorative elements | `aria-hidden` | This attribute hides decorative elements, such as the drill down/up expand and collapse icons, from the screen reader output. |
+| Grid cells and associated header or popup elements | `aria-owns` | This attribute defines the relationship between an element and its owned child elements (for example, associating cells or popup content with their owning element) to construct a meaningful accessibility tree. |
+| Data cells with corresponding column headers | `aria-describedby` | This attribute provides a descriptive reference for the data cells, associating them with the corresponding column header information when the cell receives focus. |
+| `th` elements in the `e-table` (column and row header cells) | `aria-colspan` | This attribute is added to the `th` elements in the `e-table`, which represent the column span value. |
+| `th` elements in the `e-table` (column and row header cells) | `aria-rowspan` | This attribute is added to the `th` elements in the `e-table`, which represent the row span value. |
+| Calculated field popup treeview item; grouping bar and field list buttons | `data-type` | This attribute is added to the treeview item in the calculated field popup, as well as the buttons in the grouping bar and field list. It represents the aggregate type for the specified field. |
+| Calculated field popup treeview item; grouping bar and field list buttons | `data-caption` | This attribute is added to the treeview item in the calculated field popup, as well as the buttons in the grouping bar and field list. It represents the caption for the specified field. |
+| Calculated field popup treeview item; grouping bar and field list buttons | `data-basefield` | This attribute is added to the treeview item in the calculated field popup, as well as the buttons in the grouping bar and field list. It denotes the base field for the specified field, which is used to display the values for aggregation types such as **DifferenceFrom**, **PercentageOfDifferenceFrom**, and **PercentageOfParentTotal**. |
+| Calculated field popup treeview item; grouping bar and field list buttons | `data-baseitem` | This attribute is added to the treeview item in the calculated field popup, as well as the buttons in the grouping bar and field list. It denotes the base item for the specified field, which is used to display the values for aggregation types such as **DifferenceFrom**, **PercentageOfDifferenceFrom**, and **PercentageOfParentTotal**. |
+| Calculated field popup treeview item | `data-field` | This attribute is added to the treeview item in the calculated field popup. It denotes the name of the specified field. |
+| Calculated field popup treeview item | `data-membertype` | This attribute is added to the treeview item in the calculated field popup. It denotes the member type of the selected OLAP calculated field. |
+| Calculated field popup treeview item | `data-hierarchy` | This attribute is added to the treeview item in the calculated field popup. It denotes the parent hierarchy unique name of the selected OLAP calculated field. |
+| Calculated field popup treeview item | `data-formula` | This attribute is added to the treeview item in the calculated field popup. It denotes the formula used for the specified calculated field. |
+| Calculated field popup treeview item | `data-formatString` | This attribute is added to the treeview item in the calculated field popup. It denotes the format string used for the specified calculated field. |
+| Calculated field popup treeview item | `data-customformatstring` | This attribute is added to the treeview item in the calculated field popup. It denotes the custom format string used for the specified calculated field. |
 
 The Syncfusion<sup style="font-size:70%">&reg;</sup> Blazor Pivot Table internally uses the Syncfusion Grid component, which follows a two‑table structure for header and content rendering. This improves screen reader interpretation but may trigger warnings in automated accessibility tools. These issues occur due to the underlying grid rendering. These warnings do not necessarily affect actual assistive-technology usability. The following categories of warnings have been observed in [axe-core](https://www.nuget.org/packages/Deque.AxeCore.Playwright) reports:
 
