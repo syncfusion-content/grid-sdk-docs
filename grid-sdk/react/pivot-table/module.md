@@ -26,7 +26,7 @@ Import a module from `@syncfusion/ej2-react-pivotview`, register it through the 
 | [Toolbar](./tool-bar) | `Toolbar` | `showToolbar` and `toolbar` | Relational and OLAP |
 | [Pivot Chart](./pivot-chart) | `PivotChart` | `displayOption`, `chartSettings`, and `chartSeries` | Relational and OLAP |
 | [Virtual scrolling](./virtual-scrolling) | `VirtualScroll` | `enableVirtualization` | Relational and OLAP |
-| [Paging](./paging) | `Pager` | `enablePaging`, `pageSettings`, and `pagerSettings` | Relational and OLAP |
+| [Paging](./paging) | `Pager` | `enablePaging`, `pageSettings`, and `pagerSettings` | Relational data only |
 | [Excel and CSV export](./excel-export) | `ExcelExport` | `allowExcelExport` | Relational and OLAP |
 | [PDF export](./pdf-export) | `PDFExport` | `allowPdfExport` | Relational and OLAP |
 
