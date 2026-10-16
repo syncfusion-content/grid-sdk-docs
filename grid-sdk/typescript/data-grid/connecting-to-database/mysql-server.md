@@ -17,11 +17,11 @@ MySQL Server database can be bound to the Grid in different ways (i.e.) using [d
 
 **1. Using UrlAdaptor**
 
-The [UrlAdaptor](.../../grid/connecting-to-adaptors/url-adaptor?cs-save-lang=1&cs-lang=csharp) serves as the base adaptor for facilitating communication between remote data services and an UI component. It enables the remote binding of data to the Syncfusion TypeScript Grid by connecting to an existing pre-configured API service linked to the MySQL Server database. While the Grid supports various adaptors to fulfill this requirement, including [Web API](.../../grid/connecting-to-adaptors/web-api-adaptor), [ODataV4](.../../grid/connecting-to-adaptors/odatav4-adaptor), [UrlAdaptor](.../../grid/connecting-to-adaptors/url-adaptor?cs-save-lang=1&cs-lang=csharp), and [GraphQL](.../../grid/connecting-to-adaptors/graphql-adaptor), the `UrlAdaptor` is particularly useful for the scenarios where a custom API service with unique logic for handling data and CRUD operations is in place. This approach allows for custom handling of data and CRUD operations, and the resultant data returned in the `result` and `count` format for display in the Grid.
+The [UrlAdaptor](../connecting-to-adaptors/url-adaptor) serves as the base adaptor for facilitating communication between remote data services and an UI component. It enables the remote binding of data to the Syncfusion TypeScript Grid by connecting to an existing pre-configured API service linked to the MySQL Server database. While the Grid supports various adaptors to fulfill this requirement, including [Web API](../connecting-to-adaptors/web-api-adaptor), [ODataV4](../connecting-to-adaptors/odatav4-adaptor), [UrlAdaptor](../connecting-to-adaptors/url-adaptor), and [GraphQL](../connecting-to-adaptors/graphql-adaptor), the `UrlAdaptor` is particularly useful for the scenarios where a custom API service with unique logic for handling data and CRUD operations is in place. This approach allows for custom handling of data and CRUD operations, and the resultant data returned in the `result` and `count` format for display in the Grid.
 
 **2. Using CustomAdaptor**
 
-The [CustomAdaptor](.../../grid/connecting-to-adaptors/custom-adaptor) serves as a mediator between the UI component and the database for data binding. While the data source from the database can be directly bound to the Syncfusion TypeScript Grid locally using the `dataSource` property, the `CustomAdaptor` approach is preferred as it allows for customization of both data operations and CRUD operations according to specific requirements. In this approach, for every action in the Grid, a corresponding request with action details is sent to the `CustomAdaptor`. The Grid provides predefined methods to perform data operations such as **searching**, **filtering**, **sorting**, **aggregation**, **paging** and **grouping**. Alternatively, your own custom methods can be employed to execute operations and return the data in the `result` and `count` format for displaying in the Grid. Additionally, for CRUD operations, predefined methods can be overridden to provide custom functionality. Further details on this can be found in the latter part of the documentation.
+The [CustomAdaptor](../connecting-to-adaptors/custom-adaptor) serves as a mediator between the UI component and the database for data binding. While the data source from the database can be directly bound to the Syncfusion TypeScript Grid locally using the `dataSource` property, the `CustomAdaptor` approach is preferred as it allows for customization of both data operations and CRUD operations according to specific requirements. In this approach, for every action in the Grid, a corresponding request with action details is sent to the `CustomAdaptor`. The Grid provides predefined methods to perform data operations such as **searching**, **filtering**, **sorting**, **aggregation**, **paging** and **grouping**. Alternatively, your own custom methods can be employed to execute operations and return the data in the `result` and `count` format for displaying in the Grid. Additionally, for CRUD operations, predefined methods can be overridden to provide custom functionality. Further details on this can be found in the latter part of the documentation.
 
 ## Binding data from MySQL Server using an API service
 
@@ -283,7 +283,7 @@ npm install @syncfusion/ej2-data --save
 </html>
 ```
 
-**Step 9:**  Create `src/index.ts` . In this file, import `DataManager` and `UrlAdaptor` from `@syncfusion/ej2-data`. Create a [DataManager](../../data/getting-started) instance specifying the URL of your API endpoint(https:localhost:xxxx/api/Grid) using the `url` property and set the adaptor `UrlAdaptor`.
+**Step 9:**  Create `src/index.ts` . In this file, import `DataManager` and `UrlAdaptor` from `@syncfusion/ej2-data`. Create a [DataManager](https://ej2.syncfusion.com/documentation/data/getting-started) instance specifying the URL of your API endpoint(https:localhost:xxxx/api/Grid) using the `url` property and set the adaptor `UrlAdaptor`.
 
 **Step 10** The `DataManager` offers multiple adaptor options to connect with remote database based on an API service. Below is an example of the `UrlAdaptor` configuration where an API service are set up to return the resulting data in the `result` and `count` format.
 
@@ -762,7 +762,7 @@ CRUD operations within the Grid can be mapped to server-side controller actions 
 3. **updateUrl**: Specifies the URL for updating existing data.
 4. **batchUrl**: Specifies the URL for batch editing.
 
-To enable editing in Grid, refer to the editing [documentation](../../grid/editing/edit). In the below example, the inline edit [mode](https://ej2.syncfusion.com/documentation/api/grid/editSettings#mode) is enabled and [toolbar](https://ej2.syncfusion.com/documentation/api/grid#toolbar) property is configured to display toolbar items for editing purposes.
+To enable editing in Grid, refer to the editing [documentation](../editing/edit). In the below example, the inline edit [mode](https://ej2.syncfusion.com/documentation/api/grid/editSettings#mode) is enabled and [toolbar](https://ej2.syncfusion.com/documentation/api/grid#toolbar) property is configured to display toolbar items for editing purposes.
 
 {% tabs %}
 
@@ -1075,7 +1075,7 @@ public class CRUDModel<T> where T : class
 
 When you run the application, the resultant Grid will look like this
 
-![Syncfusion Angular Grid bound with MySQL Server data](.../images/connecting-micro-curd.gif)
+![Syncfusion Angular Grid bound with MySQL Server data](../images/connecting-micro-curd.gif)
 
 ## Binding data from MySQL Server using CustomAdaptor
 
@@ -1608,7 +1608,7 @@ export class CustomAdaptor extends UrlAdaptor {
 
 ### Handling CRUD operations
 
-To enable editing in the Syncfusion TypeScript Grid, utilize the [editSettings](https://ej2.syncfusion.com/documentation/api/grid/editSettings) property. The Grid offers multiple edit modes including the Inline/Normal, Dialog and Batch editing. For more details, refer to the Grid [editing](../../grid/editing/edit) documentation.
+To enable editing in the Syncfusion TypeScript Grid, utilize the [editSettings](https://ej2.syncfusion.com/documentation/api/grid/editSettings) property. The Grid offers multiple edit modes including the Inline/Normal, Dialog and Batch editing. For more details, refer to the Grid [editing](../editing/edit) documentation.
 
 In this scenario, the inline edit [mode](https://ej2.syncfusion.com/documentation/api/grid/editSettings#mode) and [toolbar](https://ej2.syncfusion.com/documentation/api/grid#toolbar) property configured to display toolbar items for editing purpose.
 

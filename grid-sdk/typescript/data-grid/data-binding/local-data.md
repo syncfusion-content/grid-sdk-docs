@@ -657,7 +657,7 @@ The following screenshot represents the addition, editing, and deletion operatio
 
 
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Grid control allows you to import data from Excel files into your web application for display and manipulation within the grid. This feature streamlines the process of transferring Excel data to a web-based environment. This can be achieved by using [Uploader](../../uploader/getting-started) control [change](../../api/uploader#change) event.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Grid control allows you to import data from Excel files into your web application for display and manipulation within the grid. This feature streamlines the process of transferring Excel data to a web-based environment. This can be achieved by using [Uploader](https://ej2.syncfusion.com/documentation/uploader/getting-started) control [change](https://ej2.syncfusion.com/documentation/api/uploader#change) event.
 
 
 
@@ -673,15 +673,9 @@ To import excel data in to grid, you can follow these steps:
 2. Parse the excel file data using **XLSX** library.
 3. Bind the JSON to the grid control.
 
+The following example demonstrates how to import Excel data into the grid by utilizing the [Uploader](https://ej2.syncfusion.com/documentation/uploader/getting-started) control's `change` event along with the **XLSX** library:
 
-
-The following example demonstrates how to import Excel data into the grid by utilizing the [Uploader](../../uploader/getting-started) control's `change` event along with the **XLSX** library:
-
-
-
-
-
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/grid-sdk/typescript/grid/local-binding-cs2/index.ts %}
 {% endhighlight %}
@@ -692,16 +686,11 @@ The following example demonstrates how to import Excel data into the grid by uti
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/local-binding-cs2" %}
 
-
-
 ## Binding data and performing CRUD actions via Fetch request
 
 The Syncfusion<sup style="font-size:70%">&reg;</sup> Grid provides a seamless way to bind data from external sources using Fetch requests, facilitating CRUD (Create, Read, Update, Delete) operations with data retrieved from a server. This feature is particularly valuable for sending data to a server for database updates and asynchronously retrieving data without refreshing the entire web page.
 
 To achieve data binding and perform CRUD actions using Fetch requests in the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid, follow these steps:
-
-
-
 
 **Step 1:** Set up your development environment
 

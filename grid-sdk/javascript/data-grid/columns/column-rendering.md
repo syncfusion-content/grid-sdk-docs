@@ -237,7 +237,7 @@ In the below example, we have bound the nested **Employee** object's **FirstName
 
 ### Using remote data
 
-To enable complex data binding in the Grid control using remote data, add the [expand](../../api/data/query#expand) query to the [query](https://ej2.syncfusion.com/javascript/documentation/api/grid#query) property of the Grid, to eager load the complex data. Here is an example of how to achieve complex data binding using remote data:
+To enable complex data binding in the Grid control using remote data, add the [expand](https://ej2.syncfusion.com/javascript/documentation/api/data/query#expand) query to the [query](https://ej2.syncfusion.com/javascript/documentation/api/grid#query) property of the Grid, to eager load the complex data. Here is an example of how to achieve complex data binding using remote data:
 
 In the below example, we have used the `expand` query to load the nested Employee object's **City** property using the dot (.) operator.
 

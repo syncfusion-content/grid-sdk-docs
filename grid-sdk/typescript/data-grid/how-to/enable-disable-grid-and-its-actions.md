@@ -29,7 +29,7 @@ Create CSS class with custom style to override the default style of Grid.
 
 **Step 2**:
 
-Add/Remove the CSS class to the Grid in the [click](../../api/button#click) event handler of Button.
+Add/Remove the CSS class to the Grid in the [click](https://ej2.syncfusion.com/documentation/api/button#click) event handler of Button.
 
 ```ts
     document.getElementById('primarybtn').addEventListener('click', () => {

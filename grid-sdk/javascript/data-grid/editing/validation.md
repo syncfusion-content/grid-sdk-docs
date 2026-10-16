@@ -76,7 +76,7 @@ In the following sample, dropdownlist edit type is used for the **Role** and **S
 
 Custom validation for a numeric column Grid is useful when you want to enforce specific validation rules on numeric values in a column. This allows you to define your own validation logic and display custom error messages when the you enters invalid data.
 
-In the following example, custom validation functions, namely **customFn** and **customFn1**, are defined to check the entered numeric value against your validation criteria. Then, the grid column is configured with the appropriate validation settings using the **freightRules** object, specifying the custom validation functions along with corresponding error messages. Additionally, the `change` event of the numeric column is bound to the [validate](../../api/form-validator#validate) method of the form element through the edit params. This enables you to trigger validation and display error messages whenever the you modifies the value in the **NumericTextBox**.
+In the following example, custom validation functions, namely **customFn** and **customFn1**, are defined to check the entered numeric value against your validation criteria. Then, the grid column is configured with the appropriate validation settings using the **freightRules** object, specifying the custom validation functions along with corresponding error messages. Additionally, the `change` event of the numeric column is bound to the [validate](https://ej2.syncfusion.com/javascript/documentation/api/form-validator#validate) method of the form element through the edit params. This enables you to trigger validation and display error messages whenever the you modifies the value in the **NumericTextBox**.
 
 
 
@@ -96,7 +96,7 @@ In the following example, custom validation functions, namely **customFn** and *
 
 You can dynamically add or remove validation rules from input elements within a form. This feature is particularly useful when you need to adjust the validation rules based on different scenarios or dynamically changing data.
 
-To add validation rules dynamically to an input element, you can use the [addRules](../../api/form-validator#addrules) method. This method enables you to add validation rules to the corresponding input element based on the name attribute.
+To add validation rules dynamically to an input element, you can use the [addRules](https://ej2.syncfusion.com/javascript/documentation/api/form-validator#addrules) method. This method enables you to add validation rules to the corresponding input element based on the name attribute.
 
 The following example to demonstrates how to dynamically add or remove a required validation rule for an input field based on a **CheckBox** selection:
 
@@ -114,13 +114,13 @@ The following example to demonstrates how to dynamically add or remove a require
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/validation-cs2" %}
 
 
->To remove an existing validation rule from an input element, you can use the [removeRules](../../api/form-validator#removerules) method. 
+>To remove an existing validation rule from an input element, you can use the [removeRules](https://ej2.syncfusion.com/javascript/documentation/api/form-validator#removerules) method. 
 
 ## Change the position of validation error message
 
 By default, the validation error message in Grid is displayed below the input field. However, you have an option to customize its position and display it in a different location. This feature is particularly useful when you want to align the error message according to your application's design and layout.
 
-To change the position of the validation error message in Grid, you can utilize the [customPlacement](../../api/form-validator#customplacement) event of the form validator. This event allows you to define a custom logic to position the error message at the desired location.
+To change the position of the validation error message in Grid, you can utilize the [customPlacement](https://ej2.syncfusion.com/javascript/documentation/api/form-validator#customplacement) event of the form validator. This event allows you to define a custom logic to position the error message at the desired location.
 
 Here's an example that demonstrates how to change the position of the validation error message to the top of the input field:
 

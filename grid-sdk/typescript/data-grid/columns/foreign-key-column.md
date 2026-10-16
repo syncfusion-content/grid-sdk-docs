@@ -67,11 +67,9 @@ In this example, **data** is the local data source for the Grid, and **employeeD
 
 The Foreign key column in Syncfusion<sup style="font-size:70%">&reg;</sup> Grid allows you to bind remote data for a foreign key column. You can assign the service data as an instance of `DataManager` to the `dataSource` property, and provide the endpoint `URL` as the data source URL.
 
-This example demonstrates how to use the foreign key column with remote data binding using the [ODataV4Adaptor](../../grid/data-binding/remote-data#odata-v4-adaptor---binding-odata-v4-service) in the grid:
+This example demonstrates how to use the foreign key column with remote data binding using the `ODataV4Adaptor` in the grid:
 
-
-
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/grid-sdk/typescript/grid/foreign-key-cs1remote/index.ts %}
 {% endhighlight %}
@@ -93,13 +91,9 @@ The Syncfusion<sup style="font-size:70%">&reg;</sup> Grid provides support for u
 
 
  
-In this example, an [AutoComplete](https://ej2.syncfusion.com/demos/#/bootstrap5/auto-complete/default.html) control is rendered as the edit template for the **"EmployeeID"** foreign key column. The [dataSource](../../api/auto-complete#datasource) property of the `AutoComplete` control is set to the employees data, and the fields property is configured to display the **"FirstName"** field as the value.
+In this example, an [AutoComplete](https://ej2.syncfusion.com/demos/#/bootstrap5/auto-complete/default.html) control is rendered as the edit template for the **"EmployeeID"** foreign key column. The [dataSource](https://ej2.syncfusion.com/documentation/api/auto-complete#datasource) property of the `AutoComplete` control is set to the employees data, and the fields property is configured to display the **"FirstName"** field as the value.
 
-
-
-
-
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/grid-sdk/typescript/grid/foreign-key-cs2/index.ts %}
 {% endhighlight %}
@@ -118,13 +112,9 @@ The Syncfusion<sup style="font-size:70%">&reg;</sup> Grid allows you to customiz
 
 
  
-In this example, a [DropDownList](https://ej2.syncfusion.com/demos/#/bootstrap5/drop-down-list/default.html) control is rendered as the filter UI for the **"EmployeeID"** foreign key column. The [dataSource](../../api/drop-down-list#datasource) property of the DropDownList control is set to the employees data, and the fields property is configured to display the **FirstName** field as the [text](../../api/drop-down-list#text) and **EmployeeID** field as the [value](../../api/drop-down-list#value). The `value` property is set to the current filter value of the column.
+In this example, a [DropDownList](https://ej2.syncfusion.com/demos/#/bootstrap5/drop-down-list/default.html) control is rendered as the filter UI for the **"EmployeeID"** foreign key column. The [dataSource](https://ej2.syncfusion.com/documentation/api/drop-down-list#datasource) property of the DropDownList control is set to the employees data, and the fields property is configured to display the **FirstName** field as the [text](https://ej2.syncfusion.com/documentation/api/drop-down-list#text) and **EmployeeID** field as the [value](https://ej2.syncfusion.com/documentation/api/drop-down-list#value). The `value` property is set to the current filter value of the column.
 
- 
-
-
-
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/grid-sdk/typescript/grid/foreign-key-cs3/index.ts %}
 {% endhighlight %}
@@ -235,13 +225,13 @@ In the following example, **Customer Name** and **Ship City** are foreign key co
 
 The TypeScript Grid allows you to customize the edit template for foreign key columns when using remote data. By default, a [DropDownList](https://ej2.syncfusion.com/documentation/drop-down-list/getting-started) control is used for editing foreign key column. However, you can render a different control by configuring the [column.edit](https://ej2.syncfusion.com/documentation/api/grid/column#edit) property. 
 
-This example demonstrates how to use an edit template in a foreign key column with remote data. In this case, an [AutoComplete](../../auto-complete/getting-started) control is rendered as the edit template for the **EmployeeID** foreign key column. The [dataSource](../../api/auto-complete#datasource) property of the **AutoComplete** control is set to the employees data, and the [field](https://ej2.syncfusion.com/documentation/api/grid/column#field) property is configured to display the **FirstName** field as the value. Follow the steps below to achieve this:
+This example demonstrates how to use an edit template in a foreign key column with remote data. In this case, an [AutoComplete](https://ej2.syncfusion.com/documentation/auto-complete/getting-started) control is rendered as the edit template for the **EmployeeID** foreign key column. The [dataSource](https://ej2.syncfusion.com/documentation/api/auto-complete#datasource) property of the **AutoComplete** control is set to the employees data, and the [field](https://ej2.syncfusion.com/documentation/api/grid/column#field) property is configured to display the **FirstName** field as the value. Follow the steps below to achieve this:
 
 
 
 **Step 1:** Open Visual Studio and create an project using following [link](https://ej2.syncfusion.com/documentation/grid/connecting-to-adaptors/web-api-adaptor#creating-an-api-service) and named **EditTemplate**.
 
-**Step 2 :** Create a simple TypeScript Grid by following the [Getting Started](../../grid/getting-started.md) documentation link.
+**Step 2 :** Create a simple TypeScript Grid by following the [Getting Started](../getting-started) documentation link.
 
 **Step 3:**  In your TypeScript control HTML file (e.g., **index.html**), define the  Grid and include the necessary Syncfusion<sup style="font-size:70%">&reg;</sup> styles:
 

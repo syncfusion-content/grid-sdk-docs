@@ -35,7 +35,7 @@ The following example demonstrates how to enable the lazy load grouping feature 
 
 ## Handling the lazy load grouping at server-side
 
-When using the lazy load grouping feature of the Grid, you can use the [UrlAdaptor](../../data/adaptors#url-adaptor) of `DataManager` when binding remote data to handle the lazy load grouping at the server-side. Along with the default server request, this feature will additionally send the following details to handle the lazy load grouping:
+When using the lazy load grouping feature of the Grid, you can use the [UrlAdaptor](https://ej2.syncfusion.com/documentation/data/adaptors#url-adaptor) of `DataManager` when binding remote data to handle the lazy load grouping at the server-side. Along with the default server request, this feature will additionally send the following details to handle the lazy load grouping:
 
 Property Name |Description
 -----|-----
@@ -165,12 +165,12 @@ The following example demonstrates how to enable the lazy load grouping with vir
 
 
 
-> When using the `enableVirtualization` feature, it is necessary to define the [height](../../documentation/api/grid/#height) property.
+> When using the `enableVirtualization` feature, it is necessary to define the [height](https://ej2.syncfusion.com/documentation/api/grid#height) property.
 
 ## Limitations for lazy load grouping
 
 * Due to the element height limitation in browsers, the maximum number of records loaded by the grid is limited due to the browser capability.
-* Lazy load grouping is only supported by the [UrlAdaptor](../../data/adaptors#url-adaptor) and [JsonAdaptor](../../data/adaptors#json-adaptor) adaptors.
+* Lazy load grouping is only supported by the [UrlAdaptor](https://ej2.syncfusion.com/documentation/data/adaptors#url-adaptor) and [JsonAdaptor](https://ej2.syncfusion.com/documentation/data/adaptors#json-adaptor) adaptors.
 * Lazy load grouping is not compatible with the following features
     * Batch editing
     * Row template

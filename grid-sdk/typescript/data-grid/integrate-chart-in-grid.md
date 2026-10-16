@@ -268,13 +268,13 @@ When enabled, the property panel appears alongside the Chart popup and offers th
 
   * **Chart Style:** 
 
-    * **Margin :** Adjust the [margins](../api/chart/margin) around the Chart (top, bottom, left, right) for better layout spacing.
+    * **Margin :** Adjust the [margins](https://ej2.syncfusion.com/documentation/api/chart/margin) around the Chart (top, bottom, left, right) for better layout spacing.
     * **Color**: Set distinct colors for different Chart elements to improve visual clarity.
 
   * **Title Style** 
 
     * **Legend** - Toggle the visibility of the legend and customize its font, size, color, and position.
-    * **Series** - Enable/disable tooltips and customize [Series](../api/chart/series) color and data labels based on categories such as online, retail, or revenue.
+    * **Series** - Enable/disable tooltips and customize [Series](https://ej2.syncfusion.com/documentation/api/chart/series) color and data labels based on categories such as online, retail, or revenue.
 
   * **Axes:** - Select axes as either category or value type, and customize:
 
@@ -284,9 +284,9 @@ When enabled, the property panel appears alongside the Chart popup and offers th
 
 **customize the Chart model:**   
 
-You can customize the [Chart](../../documentation/chart/getting-started) by defining a [chartModel](../api/chart/chartModel) object in the `chart` property of the `model` object within the [contextMenuClick](https://ej2.syncfusion.com/documentation/api/grid#contextmenuclick) event .This allows you to configure various Chart properties such as axes, margins, tooltips, titles, and more. Additionally, you can use the [events](../../documentation/api/chart#events) of the Chart within the `chartModel` configuration to apply further customizations when the Chart is rendered. 
+You can customize the [Chart](https://ej2.syncfusion.com/documentation/chart/getting-started) by defining a [chartModel](https://ej2.syncfusion.com/documentation/api/chart/chartModel) object in the `chart` property of the `model` object within the [contextMenuClick](https://ej2.syncfusion.com/documentation/api/grid#contextmenuclick) event .This allows you to configure various Chart properties such as axes, margins, tooltips, titles, and more. Additionally, you can use the [events](https://ej2.syncfusion.com/documentation/api/chart#events) of the Chart within the `chartModel` configuration to apply further customizations when the Chart is rendered. 
 
-To customize [Accumulation Charts](../../documentation/accumulation-chart/getting-started) (such as Pie), use the `accumulationChart` property of the `model` object. This property allows you to configure Chart options like titles, legends, data labels, and visual styles tailored for accumulation-type visualizations.  You can also use Accumulation Chart [events](../../documentation/api/accumulation-chart#events) to apply additional customizations when the Chart is rendered.
+To customize [Accumulation Charts](https://ej2.syncfusion.com/documentation/accumulation-chart/getting-started) (such as Pie), use the `accumulationChart` property of the `model` object. This property allows you to configure Chart options like titles, legends, data labels, and visual styles tailored for accumulation-type visualizations.  You can also use Accumulation Chart [events](https://ej2.syncfusion.com/documentation/api/accumulation-chart#events) to apply additional customizations when the Chart is rendered.
 
 The following code snippets demonstrate how to achieve this:
 

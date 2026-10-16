@@ -232,7 +232,7 @@ The following example demonstrates how to collapse all grouped rows at the initi
         }
     }
 ```
-> The collapse all approach is suggested for a limited number of records since collapsing every grouped record takes some time. If you have a large dataset, it is recommended to use [lazy-load grouping](../../grid/grouping/lazy-load-grouping). This approach is also applicable for the [groupExpandAll](https://ej2.syncfusion.com/documentation/api/grid#groupexpandall) method.
+> The collapse all approach is suggested for a limited number of records since collapsing every grouped record takes some time. If you have a large dataset, it is recommended to use [lazy-load grouping](./lazy-load-grouping). This approach is also applicable for the [groupExpandAll](https://ej2.syncfusion.com/documentation/api/grid#groupexpandall) method.
 
 ## Group or ungroup column externally
 
@@ -377,4 +377,4 @@ The following example demonstrates how the `actionBegin` and `actionComplete` ev
 ## See Also
 
 * [Exporting grouped records](../excel-export/excel-export-options#exporting-grouped-records)
-* [How to enable lazy load grouping in Grid](../../grid/grouping/lazy-load-grouping)
+* [How to enable lazy load grouping in Grid](./lazy-load-grouping)

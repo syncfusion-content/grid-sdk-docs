@@ -20,12 +20,12 @@ The available default edit types are as follows:
 
 Control|Edit Type value |Description
 ----|-----|-----
-[TextBox](../../textbox/getting-started)|stringedit	|  The  `stringedit` type renders a TextBox control for string data type columns. 
-[NumericTextBox](../../numerictextbox/getting-started)|numericedit	| The `numericedit` type renders a NumericTextBox control for integers,double,float ,short ,byte ,long ,long double and decimal data types columns.
-[DropDownList](../../drop-down-list/getting-started)|dropdownedit	| The `dropdownedit` type renders a DropdownList control for string data type columns.
-[Checkbox](../../check-box/getting-started)|booleanedit	| The `booleanedit` type renders a CheckBox control for boolean data type columns.
-[DatePicker](../../datepicker/getting-started)|datepickeredit	|The `datepickeredit` type renders a DatePicker control for date data type columns.
-[DateTimePicker](../../datetimepicker/getting-started)|datetimepickeredit	| The `datetimepickeredit` type renders a DateTimePicker control for date time data type columns.
+[TextBox](https://ej2.syncfusion.com/javascript/documentation/textbox/es5-getting-started)|stringedit	|  The  `stringedit` type renders a TextBox control for string data type columns. 
+[NumericTextBox](https://ej2.syncfusion.com/javascript/documentation/numerictextbox/es5-getting-started)|numericedit	| The `numericedit` type renders a NumericTextBox control for integers,double,float ,short ,byte ,long ,long double and decimal data types columns.
+[DropDownList](https://ej2.syncfusion.com/javascript/documentation/drop-down-list/es5-getting-started)|dropdownedit	| The `dropdownedit` type renders a DropdownList control for string data type columns.
+[Checkbox](https://ej2.syncfusion.com/javascript/documentation/check-box/es5-getting-started)|booleanedit	| The `booleanedit` type renders a CheckBox control for boolean data type columns.
+[DatePicker](https://ej2.syncfusion.com/javascript/documentation/datepicker/es5-getting-started)|datepickeredit	|The `datepickeredit` type renders a DatePicker control for date data type columns.
+[DateTimePicker](https://ej2.syncfusion.com/javascript/documentation/datetimepicker/es5-getting-started)|datetimepickeredit	| The `datetimepickeredit` type renders a DateTimePicker control for date time data type columns.
 
 The following example demonstrates how to define the `editType` for grid columns:
 
@@ -46,7 +46,7 @@ You can customize the default TextBox control in Grid edit form using its proper
 
 control|Edit Type |Description|Example Customized edit params
 -----|---|-----|-----|
-[TextBox](../../textbox/getting-started) |stringedit| The `stringedit` type renders a TextBox control for string data type columns. To customize the `TextBox` control, refer to the [TextBox API documentation](../../api/textbox) for detailed information on available properties | params: { showClearButton : true}
+[TextBox](https://ej2.syncfusion.com/javascript/documentation/textbox/es5-getting-started) |stringedit| The `stringedit` type renders a TextBox control for string data type columns. To customize the `TextBox` control, refer to the [TextBox API documentation](https://ej2.syncfusion.com/javascript/documentation/api/textbox) for detailed information on available properties | params: { showClearButton : true}
 
 The following sample code demonstrates the customization applied to TextBox control of **CustomerID** Grid column:
 
@@ -70,7 +70,7 @@ You can customize the `NumericTextBox` control in Grid edit form using its prope
 
 control| Edit Type |Description |Example Customized edit params
 -----|-----|-----|----|
-[NumericTextBox](../../numerictextbox/getting-started)|numericedit| The `numericedit` type renders a NumericTextBox control for integers, double, float, short, byte, long, long double and decimal data types columns. To customize the **NumericTextBox** control, refer to the [NumericTextBox API documentation](../../api/numerictextbox) for detailed information on available properties. | params: { decimals: 2, value: 5 }
+[NumericTextBox](https://ej2.syncfusion.com/javascript/documentation/numerictextbox/es5-getting-started)|numericedit| The `numericedit` type renders a NumericTextBox control for integers, double, float, short, byte, long, long double and decimal data types columns. To customize the **NumericTextBox** control, refer to the [NumericTextBox API documentation](https://ej2.syncfusion.com/javascript/documentation/api/numerictextbox) for detailed information on available properties. | params: { decimals: 2, value: 5 }
 
 The following sample code demonstrates the customization applied to NumericTextBox control of **Freight** Grid column:
 
@@ -90,7 +90,7 @@ The following sample code demonstrates the customization applied to NumericTextB
 
 ### Restrict to type decimal points in a NumericTextBox while editing the numeric column
 
-By default, the `NumericTextBox` control allows entering decimal values with up to two decimal places when editing a numeric column. However, there might be cases where you want to restrict input to whole numbers only, without any decimal points. In such scenarios, you can make use of the [validateDecimalOnType](../../api/numerictextbox#validatedecimalontype) and [decimals](../../api/numerictextbox#decimals) properties provided by Syncfusion's<sup style="font-size:70%">&reg;</sup> `NumericTextBox` control.
+By default, the `NumericTextBox` control allows entering decimal values with up to two decimal places when editing a numeric column. However, there might be cases where you want to restrict input to whole numbers only, without any decimal points. In such scenarios, you can make use of the [validateDecimalOnType](https://ej2.syncfusion.com/javascript/documentation/api/numerictextbox#validatedecimalontype) and [decimals](https://ej2.syncfusion.com/javascript/documentation/api/numerictextbox#decimals) properties provided by Syncfusion's<sup style="font-size:70%">&reg;</sup> `NumericTextBox` control.
 
 The `validateDecimalOnType` property is used to control whether decimal points are allowed during input in the NumericTextBox. By default, it is set to **false**, allowing decimal points to be entered. However, when set to **true**, decimal points will be restricted, and only whole numbers can be entered.
 
@@ -118,11 +118,9 @@ You can customize the `DropDownList` control in Grid edit form using its propert
 
 Control|Edit Type |Description| Example Customized edit params
 -----|-----|-----|----|
-[DropDownList](../../drop-down-list/getting-started)|DropDownEdit|  The `dropdownedit` type renders a DropDownList control for string data type columns. To customize the DropDownList control, refer to the [DropDownList API documentation](https://ej2.syncfusion.com/javascript/documentation/api/drop-down-list) for detailed information on available properties.  | params: { value: ‘Germany’ }
+[DropDownList](https://ej2.syncfusion.com/javascript/documentation/drop-down-list/es5-getting-started)|DropDownEdit|  The `dropdownedit` type renders a DropDownList control for string data type columns. To customize the DropDownList control, refer to the [DropDownList API documentation](https://ej2.syncfusion.com/javascript/documentation/api/drop-down-list) for detailed information on available properties.  | params: { value: ‘Germany’ }
 
 The following sample code demonstrates the customization applied to DropDownList control  of **ShipCity** Grid column:
-
-
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -212,7 +210,7 @@ You can customize the CheckBox control in Grid edit form using its property. Thi
 
 Control| Edit Type |Description |Example Customized edit params
 -----|-----|-----|----|
-[CheckBox](../../check-box/getting-started)| booleanedit | The `booleanedit` type renders a **CheckBox** control for boolean data type. To customize the CheckBox control, refer to the [CheckBox API documentation](../../api/check-box) for detailed information on available properties. | params: { checked: true}
+[CheckBox](https://ej2.syncfusion.com/javascript/documentation/check-box/es5-getting-started)| booleanedit | The `booleanedit` type renders a **CheckBox** control for boolean data type. To customize the CheckBox control, refer to the [CheckBox API documentation](https://ej2.syncfusion.com/javascript/documentation/api/check-box) for detailed information on available properties. | params: { checked: true}
 
 The following sample code demonstrates the customization applied to CheckBox control of **Verified** Grid column:
 
@@ -236,7 +234,7 @@ You can customize the DatePicker control in Grid edit form using its property. T
 
 control| Edit Type |Description|Example Customized edit params
 -----|-----|-----|----|
-[DatePicker](../../datepicker/getting-started)| datepickeredit | The `datepickeredit` type renders a **DatePicker** control for date data type columns. To customize the DatePicker control, refer to the [DatePicker API documentation](../../api/datepicker) for detailed information on available properties. | params: { format:'dd.MM.yyyy' }
+[DatePicker](https://ej2.syncfusion.com/javascript/documentation/datepicker/es5-getting-started)| datepickeredit | The `datepickeredit` type renders a **DatePicker** control for date data type columns. To customize the DatePicker control, refer to the [DatePicker API documentation](https://ej2.syncfusion.com/javascript/documentation/api/datepicker) for detailed information on available properties. | params: { format:'dd.MM.yyyy' }
  
 The following sample code demonstrates the customization applied to DatePicker control of **OrderDate** Grid column:
 
@@ -256,7 +254,7 @@ The following sample code demonstrates the customization applied to DatePicker c
 
 ### Disable the date value prior to the selected date value in DatePicker control
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Grid allows configuring the [DatePicker](../../datepicker/getting-started) control to dynamically set a minimum date for selection. This feature ensures that users can select dates only from a specified minimum date onward, based on the context of each row's data. This functionality is particularly useful in maintaining data accuracy by preventing users from selecting invalid or illogical dates.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Grid allows configuring the [DatePicker](https://ej2.syncfusion.com/javascript/documentation/datepicker/es5-getting-started) control to dynamically set a minimum date for selection. This feature ensures that users can select dates only from a specified minimum date onward, based on the context of each row's data. This functionality is particularly useful in maintaining data accuracy by preventing users from selecting invalid or illogical dates.
 
 The following example demonstrates how to configure the `DatePicker` control within the grid using the **edit** parameters of a column. This setup dynamically restricts the selection of dates in the DatePicker's calendar based on the data in the current row.
 
@@ -280,7 +278,7 @@ You can customize the DateTimePicker control in Grid edit form using its propert
 
 control|Edit Type |Description |Example Customized edit params
 -----|-----|-----|----|
-[DateTimePicker](../../datetimepicker/getting-started)| datetimepickeredit | The `datetimepickeredit` type renders a **DateTimePicker** control for date time data type columns. You can customize the DateTimePicker control, refer to the [DateTimePicker API documentation](../../api/datetimepicker) for detailed information on available properties. | params: { value: new Date() }
+[DateTimePicker](https://ej2.syncfusion.com/javascript/documentation/datetimepicker/es5-getting-started)| datetimepickeredit | The `datetimepickeredit` type renders a **DateTimePicker** control for date time data type columns. You can customize the DateTimePicker control, refer to the [DateTimePicker API documentation](https://ej2.syncfusion.com/javascript/documentation/api/datetimepicker) for detailed information on available properties. | params: { value: new Date() }
  
 The following sample code demonstrates the customization applied to DateTimePicker control of **OrderDate** Grid column:
 
@@ -362,7 +360,7 @@ The following example demonstrates how to render a textArea control in the **Shi
 
 While editing a particular row in normal or dialog edit mode, pressing the **ENTER** key will save the changes made in the specific cell or edit form. Similarly, pressing the **ENTER** key while performing editing with the multiline textbox will save the changes.  However, in a multiline textbox, it is often desired that pressing the **ENTER** key adds a new line break in the text content, rather than triggering the save action.
 
-To achieve this behavior, you can utilize the `stopPropagation` method along with the [focus](../../api/textbox/textBoxModel#focus) event of the textBox control. This prevents the default behavior of the **ENTER** key, allowing you to manually handle the newline behavior.
+To achieve this behavior, you can utilize the `stopPropagation` method along with the [focus](https://ej2.syncfusion.com/javascript/documentation/api/textbox/textBoxModel#focus) event of the textBox control. This prevents the default behavior of the **ENTER** key, allowing you to manually handle the newline behavior.
 
 The following example demonstrates how to prevent the enter key functionality in multiline textbox during editing by utilizing the `focus` event:
 

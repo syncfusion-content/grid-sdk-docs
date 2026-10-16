@@ -95,7 +95,7 @@ The following example that demonstrates how to enable/disable cache mode in infi
 * Cell selection will not be persisted in cache mode.
 * The group records cannot be collapsed in cache mode.
 * Lazy load grouping with infinite scrolling does not support cache mode, and the infinite scrolling mode is exclusively applicable to parent-level caption rows in this scenario.
-* The aggregated information and total group items are displayed based on the current view items. To get these information regardless of the view items, refer to the [Group with paging](../../grid/grouping/grouping#group-with-paging) topic.
+* The aggregated information and total group items are displayed based on the current view items. To get these information regardless of the view items, refer to the [Group with paging](../grouping/grouping#group-with-paging) topic.
 * Programmatic selection using the [selectRows](https://ej2.syncfusion.com/javascript/documentation/api/grid#selectrows) and [selectRow](https://ej2.syncfusion.com/javascript/documentation/api/grid#selectrow) method is not supported in infinite scrolling.
 * Infinite scrolling is not compatible with the following features:
     1. Batch editing

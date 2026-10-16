@@ -503,7 +503,7 @@ In this example, the **.e-currentitem** class targets the current page numeric i
 
 ### Sorting
 
-You can customize the appearance of the sorting icons and multi sorting icons in the child grid using CSS.You can use the available Syncfusion<sup style="font-size:70%">&reg;</sup> [icons](../appearance/icons#material) based on your theme. Here's how to do it:
+You can customize the appearance of the sorting icons and multi sorting icons in the child grid using CSS.You can use the available Syncfusion<sup style="font-size:70%">&reg;</sup> [icons](https://ej2.syncfusion.com/javascript/documentation/appearance/icons#material) based on your theme. Here's how to do it:
 
 **Customizing the child grid sorting icon**
 

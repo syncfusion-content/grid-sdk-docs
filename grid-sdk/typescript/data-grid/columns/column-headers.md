@@ -349,7 +349,7 @@ The following example demonstrates how to change the orientation of the **Freigh
 
 Custom tooltips for headers provide additional information when hovering over a column header in the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid. This can be useful in situations where there is not enough space to display all of the information related to a column, or when there is additional context that may be helpful.
 
-To enable custom tooltips for headers, you can use the [beforeRender](https://ej2.syncfusion.com/documentation/api/grid#beforeRender) event of the Grid control. This event is triggered for each header cell before it is rendered, allowing you to add a custom tooltip to the header cell using [tooltip](../../tooltip/content) control.
+To enable custom tooltips for headers, you can use the [beforeRender](https://ej2.syncfusion.com/documentation/api/grid#beforeRender) event of the Grid control. This event is triggered for each header cell before it is rendered, allowing you to add a custom tooltip to the header cell using [tooltip](https://ej2.syncfusion.com/documentation/tooltip/content) control.
 
 Here's an example of how to use the `beforeRender` event to add a custom tooltip to a header cell:
 

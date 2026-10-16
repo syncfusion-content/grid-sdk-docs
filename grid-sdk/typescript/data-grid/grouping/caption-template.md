@@ -81,7 +81,7 @@ The TypeScript Grid offers the flexibility to render a custom control in the gro
 
 To render custom control in the group caption, you can utilize the [captionTemplate](https://ej2.syncfusion.com/documentation/api/grid/groupSettings/#captiontemplate) property. This feature enables you to replace plain text with a custom control in the group caption, enhancing customization and interactivity.
 
-The following example demonstrates how to add a custom control to the group caption using the `captionTemplate` property. In the template, the [Chips](../../chips/getting-started) control is utilized, with the text content set as the group key.
+The following example demonstrates how to add a custom control to the group caption using the `captionTemplate` property. In the template, the [Chips](https://ej2.syncfusion.com/documentation/chips/getting-started) control is utilized, with the text content set as the group key.
 
 
 

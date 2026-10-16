@@ -552,7 +552,7 @@ The following screenshot represents the addition, editing, and deletion operatio
 
 
  
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Grid control allows you to import data from Excel files into your web application for display and manipulation within the grid. This feature streamlines the process of transferring Excel data to a web-based environment. This can be achieved by using [Uploader](../../uploader/es5-getting-started) control [change](../../api/uploader#change) event. 
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Grid control allows you to import data from Excel files into your web application for display and manipulation within the grid. This feature streamlines the process of transferring Excel data to a web-based environment. This can be achieved by using [Uploader](https://ej2.syncfusion.com/javascript/documentation/uploader/es5-getting-started) control [change](https://ej2.syncfusion.com/javascript/documentation/api/uploader#change) event. 
 
 
 
@@ -570,7 +570,7 @@ To import excel data in to grid, you can follow these steps:
 
 
  
-The following example demonstrates how to import Excel data into the grid by utilizing the [Uploader](../../uploader/es5-getting-started) control's `change` event along with the **XLSX** library:
+The following example demonstrates how to import Excel data into the grid by utilizing the [Uploader](https://ej2.syncfusion.com/javascript/documentation/uploader/es5-getting-started) control's `change` event along with the **XLSX** library:
 
 
 

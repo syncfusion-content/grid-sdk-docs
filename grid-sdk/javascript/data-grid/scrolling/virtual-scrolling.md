@@ -60,7 +60,7 @@ The following example enable row virtualization using `enableVirtualization` pro
         height: 2em;
     }
     ```
-* Since data is virtualized in grid, the aggregated information and total group items are displayed based on the current view items. To get these information regardless of the view items, refer to the [Group with paging](../../grid/grouping/grouping#group-with-paging) topic. 
+* Since data is virtualized in grid, the aggregated information and total group items are displayed based on the current view items. To get these information regardless of the view items, refer to the [Group with paging](../grouping/grouping#group-with-paging) topic. 
 * It is necessary to set a static height for the control or its parent container when using row virtualization. The 100% height will work only if the control height is set to 100%, and its parent container has a static height.
 
 ## Column virtualization
@@ -253,7 +253,7 @@ Let's see the step by step procedure for how we can overcome the limitation in t
 
 ### Solution 2: Using RowHeight property
 
-You can reduce the [row height](../../grid/row/row-height) using the [rowHeight](https://ej2.syncfusion.com/javascript/documentation/api/grid#rowheight) property of the Grid. It will reduce the overall height to accommodate more rows. But this approach optimizes the limitation, but if the height limit is reached after reducing row height also, you have to opt for the previous solution or use paging.
+You can reduce the [row height](../row/row#row-height) using the [rowHeight](https://ej2.syncfusion.com/javascript/documentation/api/grid#rowheight) property of the Grid. It will reduce the overall height to accommodate more rows. But this approach optimizes the limitation, but if the height limit is reached after reducing row height also, you have to opt for the previous solution or use paging.
 
 In the following image, you can see how many records will be scrollable when setting rowHeight to "36px" and "30px".
 
@@ -261,7 +261,7 @@ In the following image, you can see how many records will be scrollable when set
 
 ### Solution 3: Using paging instead of virtual scrolling
 
-Similar to virtual scrolling, the [paging](../../grid/paging) feature also loads the data in an on-demand concept. Pagination is also compatible with all the other features(Grouping, Editing, etc.) in Grid. So, use the paging feature instead of virtual scrolling to view a large number of records in the Grid without any kind of performance degradation or browser height limitation.
+Similar to virtual scrolling, the [paging](../paging) feature also loads the data in an on-demand concept. Pagination is also compatible with all the other features(Grouping, Editing, etc.) in Grid. So, use the paging feature instead of virtual scrolling to view a large number of records in the Grid without any kind of performance degradation or browser height limitation.
 
 ## See also
 

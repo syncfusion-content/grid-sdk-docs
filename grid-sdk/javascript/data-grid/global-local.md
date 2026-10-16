@@ -14,7 +14,7 @@ The JavaScript Grid control provides a feature known as Globalization (global an
 
 ## Localization
 
-The JavaScript Grid provides a built-in [Localization](../common/localization) library, enabling you to customize the text used in the grid to suit different languages or cultural preferences. With this library, you can change static text on various elements, such as **group drop area text** and **pager information text**, to different cultures, such as **Arabic**, **Deutsch**, **French**, and more.
+The JavaScript Grid provides a built-in [Localization](https://ej2.syncfusion.com/javascript/documentation/common/localization) library, enabling you to customize the text used in the grid to suit different languages or cultural preferences. With this library, you can change static text on various elements, such as **group drop area text** and **pager information text**, to different cultures, such as **Arabic**, **Deutsch**, **French**, and more.
 
 This can be achieved by defining the [locale](https://ej2.syncfusion.com/javascript/documentation/api/grid#locale) property and translation object.
 
@@ -331,7 +331,7 @@ For example, when the first Grid is set to use the **fr-FR** Locale, it applies 
 
 The Internationalization library in the JavaScript Grid provides a localized display of number, date, and time values in the Grid control based on the preferred language and region.
 
-[Internationalization](../common/internationalization) library allows you to globalize number, date, and time values using format strings defined in the [columns.format](https://ej2.syncfusion.com/javascript/documentation/api/grid/column#format) property.
+[Internationalization](https://ej2.syncfusion.com/javascript/documentation/common/internationalization) library allows you to globalize number, date, and time values using format strings defined in the [columns.format](https://ej2.syncfusion.com/javascript/documentation/api/grid/column#format) property.
 
 You need to load the culture format files corresponding to the desired locale. This ensures that the Grid control uses the correct format strings for number, date, and time values based on the selected culture. This can be demonstrated in the below example,
 
@@ -349,7 +349,7 @@ You need to load the culture format files corresponding to the desired locale. T
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grid-cs78" %}
 
 
-> * In the above sample, **Freight** column is formatted using the [NumberFormatOptions](../common/internationalization#manipulating-numbers).
+> * In the above sample, **Freight** column is formatted using the [NumberFormatOptions](https://ej2.syncfusion.com/javascript/documentation/common/internationalization#manipulating-numbers).
 > * By default, [locale](https://ej2.syncfusion.com/javascript/documentation/api/grid#locale) value is **en-US**. If you wish to change the culture to something other than **en-US**, you can simply set the `locale` property accordingly.
 
 ## Right to Left - RTL
@@ -361,10 +361,6 @@ To enable RTL in the Grid, you need to set the [enableRtl](https://ej2.syncfusio
 
  
 In the following example, the [EJ2 Toggle Switch Button](https://ej2.syncfusion.com/javascript/documentation/switch/es5-getting-started) control is added to enable or disable the Right to Left (RTL) feature for the **Arabic (ar-AE)** locale. When the switch is toggled, the [change](https://ej2.syncfusion.com/javascript/documentation/api/switch#change) event is triggered and the `enableRtl` property of the grid is updated accordingly. 
-
-
-
-
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -380,5 +376,5 @@ In the following example, the [EJ2 Toggle Switch Button](https://ej2.syncfusion.
 
 ## See Also
 
-* [Internationalization](../common/localization)
-* [Localization](../common/internationalization)
+* [Internationalization](https://ej2.syncfusion.com/javascript/documentation/common/localization)
+* [Localization](https://ej2.syncfusion.com/javascript/documentation/common/internationalization)

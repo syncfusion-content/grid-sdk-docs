@@ -21,7 +21,7 @@ Entity Framework is an open-source [ORM framework](https://en.wikipedia.org/wiki
 
 **1. Using UrlAdaptor**
 
-The [UrlAdaptor](../../grid/connecting-to-adaptors/url-adaptor) serves as the base adaptor for facilitating communication between remote data services and an UI component. It enables the remote binding of data to the Syncfusion TypeScript Grid by connecting to an existing pre-configured API service linked to the Microsoft SQL Server database. While the Grid supports various adaptors to fulfill this requirement, including [Web API](../../grid/connecting-to-adaptors/web-api-adaptor), [ODataV4](../../grid/connecting-to-adaptors/odatav4-adaptor), [UrlAdaptor](../../grid/connecting-to-adaptors/url-adaptor), and [GraphQL](../../grid/connecting-to-adaptors/graphql-adaptor), the `UrlAdaptor` is particularly useful for the scenarios where a custom API service with unique logic for handling data and CRUD operations is in place. This approach allows for custom handling of data and CRUD operations, and the resultant data returned in the `result` and `count` format for display in the Grid.
+The [UrlAdaptor](../connecting-to-adaptors/url-adaptor) serves as the base adaptor for facilitating communication between remote data services and an UI component. It enables the remote binding of data to the Syncfusion TypeScript Grid by connecting to an existing pre-configured API service linked to the Microsoft SQL Server database. While the Grid supports various adaptors to fulfill this requirement, including [Web API](../connecting-to-adaptors/web-api-adaptor), [ODataV4](../connecting-to-adaptors/odatav4-adaptor), [UrlAdaptor](../connecting-to-adaptors/url-adaptor), and [GraphQL](../connecting-to-adaptors/graphql-adaptor), the `UrlAdaptor` is particularly useful for the scenarios where a custom API service with unique logic for handling data and CRUD operations is in place. This approach allows for custom handling of data and CRUD operations, and the resultant data returned in the `result` and `count` format for display in the Grid.
 
 **2. Using CustomAdaptor**
 
@@ -284,7 +284,7 @@ npm install @syncfusion/ej2-data --save
 </html>
 ```
 
-**Step 9:**  Create `src/index.ts` . In this file, import `DataManager` and `UrlAdaptor` from `@syncfusion/ej2-data`. Create a [DataManager](../../data/getting-started) instance specifying the URL of your API endpoint(https:localhost:xxxx/api/Grid) using the `url` property and set the adaptor `UrlAdaptor`.
+**Step 9:**  Create `src/index.ts` . In this file, import `DataManager` and `UrlAdaptor` from `@syncfusion/ej2-data`. Create a [DataManager](https://ej2.syncfusion.com/documentation/data/getting-started) instance specifying the URL of your API endpoint(https:localhost:xxxx/api/Grid) using the `url` property and set the adaptor `UrlAdaptor`.
 
 **Step 10** The `DataManager` offers multiple adaptor options to connect with remote database based on an API service. Below is an example of the `UrlAdaptor` configuration where an API service are set up to return the resulting data in the `result` and `count` format.
 
@@ -759,7 +759,7 @@ CRUD operations within the Grid can be mapped to server-side controller actions 
 3. **updateUrl**: Specifies the URL for updating existing data.
 4. **batchUrl**: Specifies the URL for batch editing.
 
-To enable editing in Grid, refer to the editing [documentation](../../grid/editing/edit). In the below example, the inline edit [mode](https://ej2.syncfusion.com/documentation/api/grid/editSettings#mode) is enabled and [toolbar](https://ej2.syncfusion.com/documentation/api/grid#toolbar) property is configured to display toolbar items for editing purposes.
+To enable editing in Grid, refer to the editing [documentation](../editing/edit). In the below example, the inline edit [mode](https://ej2.syncfusion.com/documentation/api/grid/editSettings#mode) is enabled and [toolbar](https://ej2.syncfusion.com/documentation/api/grid#toolbar) property is configured to display toolbar items for editing purposes.
 
 {% tabs %}
 
@@ -1650,7 +1650,7 @@ export class CustomAdaptor extends UrlAdaptor {
 
 ### Handling CRUD operations
 
-To enable editing in the Syncfusion TypeScript Grid, utilize the [editSettings](https://ej2.syncfusion.com/documentation/api/grid/editSettings) property. The Grid offers multiple edit modes including the **Inline/Normal**, **Dialog** and **Batch** editing. For more details, refer to the Grid [editing](../../grid/editing/edit) documentation.
+To enable editing in the Syncfusion TypeScript Grid, utilize the [editSettings](https://ej2.syncfusion.com/documentation/api/grid/editSettings) property. The Grid offers multiple edit modes including the **Inline/Normal**, **Dialog** and **Batch** editing. For more details, refer to the Grid [editing](../editing/edit) documentation.
 
 In this scenario, the inline edit [mode](https://ej2.syncfusion.com/documentation/api/grid/editSettings#mode) and [toolbar](https://ej2.syncfusion.com/documentation/api/grid#toolbar) property configured to display toolbar items for editing purpose.
 

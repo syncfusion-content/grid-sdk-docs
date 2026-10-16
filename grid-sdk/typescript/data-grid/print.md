@@ -203,7 +203,7 @@ The following example demonstrates how to print the expanded child Grids from ot
 
 Printing a large volume of data all at once in the grid can have certain limitations due to potential browser performance issues. Rendering numerous DOM elements on a single page can lead to browser slowdowns or even hang the browser. The grid offers a solution to manage extensive datasets through virtualization. However, it's important to note that virtualization for both rows and columns is not feasible during the printing process.
 
-If printing all the data remains a requirement, an alternative approach is recommended. Exporting the grid data to formats like [Excel](../grid/excel-export/excel-export-options) or [CSV](../grid/excel-export/excel-exporting) or [Pdf](../grid/pdf-export/) is advised. This exported data can then be printed using non-web-based applications, mitigating the potential performance challenges associated with printing large datasets directly from the browser.
+If printing all the data remains a requirement, an alternative approach is recommended. Exporting the grid data to formats like [Excel](./excel-export/excel-export-options) or [CSV](./excel-export/excel-exporting) or [Pdf](./pdf-export/pdf-export) is advised. This exported data can then be printed using non-web-based applications, mitigating the potential performance challenges associated with printing large datasets directly from the browser.
 
 ## Retain grid styles while printing
 

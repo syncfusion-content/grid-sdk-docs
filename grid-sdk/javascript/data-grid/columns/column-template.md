@@ -65,12 +65,9 @@ The column template has options to render a custom control in a grid column inst
 ### Render LineChart control in a column
 
  
-The [LineChart](../../sparkline/es5-getting-started) control of Syncfusion<sup style="font-size:70%">&reg;</sup> provides an elegant way to represent and compare data over time. It displays data points connected by straight line segments to visualize trends in data.
-
+The [LineChart](https://ej2.syncfusion.com/javascript/documentation/sparkline/es5-getting-started) control of Syncfusion<sup style="font-size:70%">&reg;</sup> provides an elegant way to represent and compare data over time. It displays data points connected by straight line segments to visualize trends in data.
 
 In the following example, we have rendered the Sparkline Chart control in the Grid column by defining the [template](https://ej2.syncfusion.com/javascript/documentation/api/grid/column#template) property.
-
-
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -88,7 +85,7 @@ In the following example, we have rendered the Sparkline Chart control in the Gr
 
 
  
-The [ColorPicker](../../color-picker/es5-getting-started) control of Syncfusion<sup style="font-size:70%">&reg;</sup> provides a user-friendly way to select colors from a pre-defined color palette or custom colors. It can be used in a variety of scenarios such as picking a theme color or changing the color of an element on a page.  
+The [ColorPicker](https://ej2.syncfusion.com/javascript/documentation/color-picker/es5-getting-started) control of Syncfusion<sup style="font-size:70%">&reg;</sup> provides a user-friendly way to select colors from a pre-defined color palette or custom colors. It can be used in a variety of scenarios such as picking a theme color or changing the color of an element on a page.  
  
 
 In the following code, we rendered the ColorPicker control in the Grid column by defining the [template](https://ej2.syncfusion.com/javascript/documentation/api/grid/column#template) property.
@@ -164,7 +161,7 @@ function dropdown(args) {
 
 ### Render Chip control in a column
 
-The Grid control provides support for rendering [Chips](../../chips/getting-started) control in a column using the [template](https://ej2.syncfusion.com/javascript/documentation/api/grid/column#template) property. This feature is useful when displaying data that requires a chip control to be rendered in a column.
+The Grid control provides support for rendering [Chips](https://ej2.syncfusion.com/javascript/documentation/chips/getting-started) control in a column using the [template](https://ej2.syncfusion.com/javascript/documentation/api/grid/column#template) property. This feature is useful when displaying data that requires a chip control to be rendered in a column.
 
 In the following code, we rendered the Chips control in the Grid **First Name** column by defining the [template](https://ej2.syncfusion.com/javascript/documentation/api/grid/column#template) property.
 
@@ -200,7 +197,7 @@ function queryCellInfo(args) {
 
 
  
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Grid control supports rendering the [Progress Bar](../../progressbar/es5-getting-started) control within a column using the [template](https://ej2.syncfusion.com/javascript/documentation/api/grid/column#template) property. Displaying the `Progress Bar` control in a grid column allows users to visually track the progress of tasks or operations associated with specific records. This feature is particularly useful for applications involving processes such as data loading, task completion, or other progressive activities.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Grid control supports rendering the [Progress Bar](https://ej2.syncfusion.com/javascript/documentation/progressbar/es5-getting-started) control within a column using the [template](https://ej2.syncfusion.com/javascript/documentation/api/grid/column#template) property. Displaying the `Progress Bar` control in a grid column allows users to visually track the progress of tasks or operations associated with specific records. This feature is particularly useful for applications involving processes such as data loading, task completion, or other progressive activities.
 
 
 
@@ -242,7 +239,7 @@ function queryCellInfo(args) {
 
 
 
-The JavaScript Grid supports rendering the [RadioButton](../../radio-button/es5-getting-started) within a column using the [template](https://ej2.syncfusion.com/javascript/documentation/api/grid/column#template) property. This feature is particularly useful for displaying selection options, such as order statuses, payment methods, or approval choices, within the Grid.
+The JavaScript Grid supports rendering the [RadioButton](https://ej2.syncfusion.com/javascript/documentation/radio-button/es5-getting-started) within a column using the [template](https://ej2.syncfusion.com/javascript/documentation/api/grid/column#template) property. This feature is particularly useful for displaying selection options, such as order statuses, payment methods, or approval choices, within the Grid.
 
 In the following example, a `RadioButton` is rendered in the **Order Status** column of the Grid by defining the `template` property.
 
@@ -363,7 +360,7 @@ Dynamically adding template columns involves creating and inserting columns with
 
 
  
-The following example demonstrates how to add template column using external button click. In this example, the **ShipCountry** column with a [Dropdownlist](../../drop-down-list/es5-getting-started) is added in column [template](https://ej2.syncfusion.com/javascript/documentation/api/grid/column#template), and an icon is displayed using the [headerTemplate](https://ej2.syncfusion.com/javascript/documentation/api/grid/column#headertemplate) for the **ShipCountry** column. 
+The following example demonstrates how to add template column using external button click. In this example, the **ShipCountry** column with a [Dropdownlist](https://ej2.syncfusion.com/javascript/documentation/drop-down-list/es5-getting-started) is added in column [template](https://ej2.syncfusion.com/javascript/documentation/api/grid/column#template), and an icon is displayed using the [headerTemplate](https://ej2.syncfusion.com/javascript/documentation/api/grid/column#headertemplate) for the **ShipCountry** column. 
 
 
 

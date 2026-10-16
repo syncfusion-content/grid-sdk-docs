@@ -80,4 +80,4 @@ Use `addFormula` to dynamically add custom formulas when needed. Use `removeForm
 - [Formulas](./formula)
 - [Formula reference](./formula-reference)
 - [Formula Editor](./formula-editor)
-- [Editing](../editing/cell-editing)
+- [Editing](../editing/edit)

@@ -49,9 +49,7 @@ Refer to the following steps to set up your local environment.
 
 The Essential JS 2 Grid and GridChart can be initialized by using either of the following ways.
 
-* [Using local script and style](../../documentation/getting-started/quick-start#using-local-scripts-and-styles).
-* [Using CDN link for script and style](../../documentation/getting-started/quick-start#using-cdn-link-for-scripts-and-styles).
-
+The Essential JS 2 Grid and GridChart can be initialized by referencing the required scripts and styles through CDN links. For more information, refer to [documentation](https://ej2.syncfusion.com/javascript/documentation/getting-started/quick-start#step-2-add-syncfusion-css-styles-and-scripts)
 
 
 ### Chart integration via Context Menu in Grid
@@ -212,13 +210,13 @@ When enabled, the property panel appears alongside the Chart popup and offers th
 
   * **Chart Style:** 
 
-    * **Margin :** Adjust the [margins](../api/chart/margin) around the Chart (top, bottom, left, right) for better layout spacing.
+    * **Margin :** Adjust the [margins](https://ej2.syncfusion.com/javascript/documentation/api/chart/margin) around the Chart (top, bottom, left, right) for better layout spacing.
     * **Color**: Set distinct colors for different Chart elements to improve visual clarity.
 
   * **Title Style** 
 
     * **Legend** - Toggle the visibility of the legend and customize its font, size, color, and position.
-    * **Series** - Enable/disable tooltips and customize [Series](../api/chart/series) color and data labels based on categories such as online, retail, or revenue.
+    * **Series** - Enable/disable tooltips and customize [Series](https://ej2.syncfusion.com/javascript/documentation/api/chart/series) color and data labels based on categories such as online, retail, or revenue.
 
   * **Axes:** - Select axes as either category or value type, and customize:
 
@@ -228,13 +226,11 @@ When enabled, the property panel appears alongside the Chart popup and offers th
 
 **customize the Chart model:**   
 
-You can customize the [Chart](../../documentation/chart/getting-started) by defining a [chartModel](../api/chart/chartModel) object in the `chart` property of the `model` object within the [contextMenuClick](https://ej2.syncfusion.com/javascript/documentation/api/grid#contextmenuclick) event .This allows you to configure various Chart properties such as axes, margins, tooltips, titles, and more. Additionally, you can use the [events](../../documentation/api/chart#events) of the Chart within the `chartModel` configuration to apply further customizations when the Chart is rendered. 
+You can customize the [Chart](https://ej2.syncfusion.com/javascript/documentation/chat-ui/es5-getting-started) by defining a [chartModel](https://ej2.syncfusion.com/javascript/documentation/api/chart/chartModel) object in the `chart` property of the `model` object within the [contextMenuClick](https://ej2.syncfusion.com/javascript/documentation/api/grid#contextmenuclick) event .This allows you to configure various Chart properties such as axes, margins, tooltips, titles, and more. Additionally, you can use the [events](https://ej2.syncfusion.com/javascript/documentation/api/chart#events) of the Chart within the `chartModel` configuration to apply further customizations when the Chart is rendered. 
 
-To customize [Accumulation Charts](../../documentation/accumulation-chart/getting-started) (such as Pie), use the `accumulationChart` property of the `model` object. This property allows you to configure Chart options like titles, legends, data labels, and visual styles tailored for accumulation-type visualizations.  You can also use Accumulation Chart [events](../../documentation/api/accumulation-chart#events) to apply additional customizations when the Chart is rendered.
+To customize [Accumulation Charts](https://ej2.syncfusion.com/javascript/documentation/accumulation-chart/es5-getting-started) (such as Pie), use the `accumulationChart` property of the `model` object. This property allows you to configure Chart options like titles, legends, data labels, and visual styles tailored for accumulation-type visualizations.  You can also use Accumulation Chart [events](https://ej2.syncfusion.com/javascript/documentation/api/accumulation-chart#events) to apply additional customizations when the Chart is rendered.
 
 The following code snippets demonstrate how to achieve this:
-
-
 
 ```ts
 contextMenuClick: (args) => {
@@ -281,13 +277,9 @@ contextMenuClick: (args) => {
 }
 ```
 
-
-
 You can also programmatically update the Chart’s appearance using the `updateChartSettings(args: UpdateChartArgs)` event provided by the **GridChart** integration. This event is triggered when you modify Chart properties through the Chart popup’s property panel. This is useful for applying custom themes, adjusting axis settings, or modifying series styles.
 
 The following code snippet demonstrates how to dynamically customize chart margins and restrict their values to a minimum of 20 using the `updateChartSettings` event.
-
-
 
 ```ts
 created: () => {
@@ -313,11 +305,7 @@ function updateChartSettings(args) {
 
 ```
 
-
-
 The following complete example demonstrates how to enable the property panel by setting `enablePropertyPanel` to **true**, customize the chart using the `chartModel` within `contextMenuClick` event, and dynamically control or customize the behavior of the `updateChartSettings` event.
-
-
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}

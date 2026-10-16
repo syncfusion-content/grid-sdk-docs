@@ -204,11 +204,9 @@ The supported `pageOrientation` options are:
 
 2. **Portrait**: Exports the grid with a portrait PDF page orientation.
 
-The following example demonstrates how to export the grid into PDF document by setting the `pdfExportProperties.pageOrientation` property using the [value](../../api/drop-down-list#value) property of the `DropDownList` control.
+The following example demonstrates how to export the grid into PDF document by setting the `pdfExportProperties.pageOrientation` property using the [value](https://ej2.syncfusion.com/documentation/api/drop-down-list#value) property of the `DropDownList` control.
 
-
-
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/grid-sdk/typescript/grid/grid-cs145/index.ts %}
 {% endhighlight %}
@@ -257,7 +255,7 @@ Supported `pdfPageSize` are:
 * Letter11x17
 * Ledger
 
-The following example demonstrates how to export the grid into PDF document by setting the `pdfExportProperties.pageSize` property by using [value](../../api/drop-down-list#value) property of the `DropDownList` control.
+The following example demonstrates how to export the grid into PDF document by setting the `pdfExportProperties.pageSize` property by using [value](https://ej2.syncfusion.com/documentation/api/drop-down-list#value) property of the `DropDownList` control.
 
 
 

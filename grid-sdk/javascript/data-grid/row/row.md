@@ -385,7 +385,7 @@ Here's an example of how to add a new row using the `addRecord` method:
 
 ## Show or hide a row using an external actions
 
-In a Syncfusion<sup style="font-size:70%">&reg;</sup> grid, you can show or hide a particular row based on some external action, such as a checkbox click.This can be useful in scenarios where you want to hide certain rows from the grid temporarily, without removing them from the underlying data source. This can be achieved by using  the [getRowByIndex](https://ej2.syncfusion.com/javascript/documentation/api/grid#getrowbyindex) and `getRowsObject` methods of the grid along with the [change](../../api/check-box#change) event of the checkbox
+In a Syncfusion<sup style="font-size:70%">&reg;</sup> grid, you can show or hide a particular row based on some external action, such as a checkbox click.This can be useful in scenarios where you want to hide certain rows from the grid temporarily, without removing them from the underlying data source. This can be achieved by using  the [getRowByIndex](https://ej2.syncfusion.com/javascript/documentation/api/grid#getrowbyindex) and `getRowsObject` methods of the grid along with the [change](https://ej2.syncfusion.com/javascript/documentation/api/check-box#change) event of the checkbox
 
 The `getRowsObject` method returns an array of row objects that represents all the rows in the grid. You can use this method to iterate through all the rows and access their data and index.
 

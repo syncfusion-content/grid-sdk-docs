@@ -268,9 +268,9 @@ Here's an example that demonstrates how to render the pager at the top of the gr
 
 
 > During the paging action, the pager control triggers the below three events.
-> * The [created](../api/pager/pagerModel/#created) event triggers when Pager is created.
-> * The [click](../api/pager/pagerModel/#click) event triggers when the numeric items in the pager is clicked.
-> * The [dropDownChanged](../api/pager/pagerModel/#dropdownchanged) event triggers when pageSize DropDownList value is selected.
+> * The [created](https://ej2.syncfusion.com/documentation/api/pager/pagerModel#created) event triggers when Pager is created.
+> * The [click](https://ej2.syncfusion.com/documentation/api/pager/pagerModel#click) event triggers when the numeric items in the pager is clicked.
+> * The [dropDownChanged](https://ej2.syncfusion.com/documentation/api/pager/pagerModel#dropdownchanged) event triggers when pageSize DropDownList value is selected.
 
 ## Pager events 
 

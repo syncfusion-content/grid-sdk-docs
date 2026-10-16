@@ -14,7 +14,7 @@ In JavaScript Grid, Columns are fundamental elements that play a pivotal role in
 
 ## Column types
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Grid control allows you to specify the type of data that a column binds using the [columns->type](https://ej2.syncfusion.com/javascript/documentation/api/grid/column#type) property. The `type` property is used to determine the appropriate [format](https://ej2.syncfusion.com/javascript/documentation/api/grid/column#format), such as [number](../../common/internationalization#number-formatting) or [date](../../common/internationalization#manipulating-datetime), for displaying the column data. 
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Grid control allows you to specify the type of data that a column binds using the [columns->type](https://ej2.syncfusion.com/javascript/documentation/api/grid/column#type) property. The `type` property is used to determine the appropriate [format](https://ej2.syncfusion.com/javascript/documentation/api/grid/column#format), such as [number](https://ej2.syncfusion.com/javascript/documentation/common/internationalization#number-formatting) or [date](https://ej2.syncfusion.com/javascript/documentation/common/internationalization#manipulating-datetime), for displaying the column data. 
 
 Grid supports the following column types:
 
@@ -51,7 +51,7 @@ Here is an example of how to specify column types in a grid using the types ment
 3. When the grid column `type` is a **checkbox**, the selection type of the grid `selectionSettings` will be multiple. This is the default behavior.
 4. If you have more than one column with the column type as a **checkbox**, the grid will automatically enable the other column's checkbox when selecting one column checkbox.
 
-> To learn more about how to render boolean values as checkboxes in a Syncfusion<sup style="font-size:70%">&reg;</sup> GridColumn, please refer to the [Render Boolean Values as Checkbox](../../grid/columns/columns#render-boolean-value-as-checkbox) section.
+> To learn more about how to render boolean values as checkboxes in a Syncfusion<sup style="font-size:70%">&reg;</sup> GridColumn, please refer to the [Render Boolean Values as Checkbox](#render-boolean-value-as-checkbox) section.
 
 ## Column width
 
@@ -127,8 +127,8 @@ You can use the [columns->format](https://ej2.syncfusion.com/javascript/document
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/column-formatting-cs1" %}
 
 
->* The grid uses the [Internalization](../../common/internationalization) library to format values based on the specified format and culture.
->* By default, the [number](../../common/internationalization#number-formatting) and [date](../../common/internationalization#date-formatting) values are formatted in **en-US** locale. You can localize the currency and date in different locale as explained [here](../../common/localization).
+>* The grid uses the [Internalization](https://ej2.syncfusion.com/javascript/documentation/common/internationalization) library to format values based on the specified format and culture.
+>* By default, the [number](https://ej2.syncfusion.com/javascript/documentation/common/internationalization#number-formatting) and [date](https://ej2.syncfusion.com/javascript/documentation/common/internationalization#date-formatting) values are formatted in **en-US** locale. You can localize the currency and date in different locale as explained [here](https://ej2.syncfusion.com/javascript/documentation/common/localization).
 >* The available format codes may vary depending on the data type of the column.
 >* You can also customize the formatting further by providing a custom function to the `format` property, instead of a format string.
 >* Make sure that the format string is valid and compatible with the data type of the column, to avoid unexpected results.
@@ -159,7 +159,7 @@ The following example code demonstrates the formatting of data for **Mark 1** an
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/column-numberformat-cs1" %}
 
 
->To learn more about number formatting, you can refer to the [number](../../common/internationalization#number-formatting) section.
+>To learn more about number formatting, you can refer to the [number](https://ej2.syncfusion.com/javascript/documentation/common/internationalization#number-formatting) section.
 
 ### Date formatting
 
@@ -189,7 +189,7 @@ Format | Formatted value
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/pagerdropdown-cs1" %}
 
 
->To learn more about date formatting, you can refer to [Date formatting](../../common/internationalization#date-formatting). 
+>To learn more about date formatting, you can refer to [Date formatting](https://ej2.syncfusion.com/javascript/documentation/common/internationalization#date-formatting). 
 
 ### Format the date column based on localization 
 
@@ -251,7 +251,7 @@ In the below example, the **numberFormatOptions** object is used as the `format`
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/custom-formatting-cs1" %}
 
 
->To learn more about custom formatting, you can refer to [Custom Date formatting](../../common/internationalization#custom-formats) and [Custom Number formatting](../../common/internationalization#custom-number-formatting-and-parsing). 
+>To learn more about custom formatting, you can refer to [Custom Date formatting](https://ej2.syncfusion.com/javascript/documentation/common/internationalization#custom-formats) and [Custom Number formatting](https://ej2.syncfusion.com/javascript/documentation/common/internationalization#custom-number-formatting-and-parsing). 
 
 ## Align the text of content
 
@@ -543,7 +543,7 @@ Here is an example code that demonstrates how to control grid actions for specif
 
 Customizing the grid column styles allows you to modify the appearance of columns in the Grid control to meet your design requirements. You can customize the font, background color, and other styles of the columns. To customize the columns styles in the grid, you can use grid event, css, property or method support.
 
-For more information check on this [documentation](../../grid/cell#customize-cell-styles).
+For more information check on this [documentation](../cell#customize-cell-styles).
 
 ## Manipulating columns
 

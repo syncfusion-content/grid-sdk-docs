@@ -449,7 +449,7 @@ export class CustomAdaptor extends ODataV4Adaptor {
 
 **Step 11:** Adding Syncfusion Component:
 
-Create `src/index.ts` file. In this file, import `DataManager` and `UrlAdaptor` from `@syncfusion/ej2-data`. Create a [DataManager](../../data/getting-started) instance specifying the URL of your API endpoint(https://localhost:xxxx/odata/Orders) using the `url` property. Then, set `CustomAdaptor` as the adaptor to handle data requests.
+Create `src/index.ts` file. In this file, import `DataManager` and `UrlAdaptor` from `@syncfusion/ej2-data`. Create a [DataManager](https://ej2.syncfusion.com/documentation/data/getting-started) instance specifying the URL of your API endpoint(https://localhost:xxxx/odata/Orders) using the `url` property. Then, set `CustomAdaptor` as the adaptor to handle data requests.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -758,7 +758,7 @@ grid.appendTo('#Grid');
 
 ## Handling CRUD operations
 
-To manage CRUD (Create, Read, Update, and Delete) operations using `CustomAdaptor`, follow the provided guide for configuring the Syncfusion TypeScript Grid for [editing](../../grid/editing/edit) and utilize the sample implementation of the `OrdersController` in your server application. This controller processes HTTP requests for CRUD operations, including GET, POST, PATCH, and DELETE.
+To manage CRUD (Create, Read, Update, and Delete) operations using `CustomAdaptor`, follow the provided guide for configuring the Syncfusion TypeScript Grid for [editing](../editing/edit) and utilize the sample implementation of the `OrdersController` in your server application. This controller processes HTTP requests for CRUD operations, including GET, POST, PATCH, and DELETE.
 
 To enable CRUD operations in the Syncfusion TypeScript Grid within an Angular application, follow the below steps:
 

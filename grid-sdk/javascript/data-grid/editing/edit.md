@@ -40,7 +40,7 @@ To use CRUD, inject the [Edit](https://ej2.syncfusion.com/javascript/documentati
 
 ## Toolbar with edit option
 
-The toolbar with edit option feature in the Grid control provides a [built-in toolbar](../../toolbar/item-configuration) that includes various items for executing editing actions. This feature allows you to easily perform edit operations on the grid data, such as modifying cell values, updating changes, and canceling edits. 
+The toolbar with edit option feature in the Grid control provides a [built-in toolbar](../tool-bar/tool-bar) that includes various items for executing editing actions. This feature allows you to easily perform edit operations on the grid data, such as modifying cell values, updating changes, and canceling edits. 
 
 To enable this feature, you need to configure the [toolbar](https://ej2.syncfusion.com/javascript/documentation/api/grid#toolbar) property of the Grid control. This property allows you to define the items that will be displayed in the grid toolbar. By including the relevant items like **Edit**, **Add**, **Delete**, **Update**, and **Cancel** within the `toolbar` property, you can enable the edit options in the toolbar.
 
@@ -83,8 +83,8 @@ Here's an example that demonstrates how to disable editing for the column in the
 
 
 >* If you have set the [isPrimaryKey](https://ej2.syncfusion.com/javascript/documentation/api/grid/column#isprimarykey) property to **true** for a column, editing will be automatically disabled for that column.
-> * You can disable the particular row using [actionBegin](https://ej2.syncfusion.com/javascript/documentation/api/grid#actionbegin) event. Please refer this [link](../../grid/editing/in-line-editing#disable-editing-for-a-particular-row).
->* You can disable the particular cell using [cellEdit](https://ej2.syncfusion.com/javascript/documentation/api/grid#celledit) event. Please refer this [link](../../grid/editing/batch-editing#disable-editing-for-a-particular-cell).
+> * You can disable the particular row using [actionBegin](https://ej2.syncfusion.com/javascript/documentation/api/grid#actionbegin) event. Please refer this [link](./in-line-editing#disable-editing-for-a-particular-row).
+>* You can disable the particular cell using [cellEdit](https://ej2.syncfusion.com/javascript/documentation/api/grid#celledit) event. Please refer this [link](./batch-editing#disable-editing-for-a-particular-cell).
 
 ## Editing template column
 

@@ -304,15 +304,11 @@ The following screenshot represents the Bootstrap tooltip for the **CustomerID**
 
 
  
-The Grid provides a feature to display custom tooltips for its columns using the [EJ2 Tooltip](../tooltip/getting-started) control. This allows you to provide additional information about the columns when the user hovers over them.
-
- 
+The Grid provides a feature to display custom tooltips for its columns using the [EJ2 Tooltip](https://ej2.syncfusion.com/documentation/tooltip/getting-started) control. This allows you to provide additional information about the columns when the user hovers over them.
 
 To enable custom tooltips for columns in the Grid, you can render the Grid control inside the Tooltip control and set the target as `.e-rowcell`. This will display the tooltip when hovering over the grid cells.
 
-Change the tooltip content for the grid cells by using the following code in the [beforeRender](../api/tooltip#beforerender) event.
-
-
+Change the tooltip content for the grid cells by using the following code in the [beforeRender](https://ej2.syncfusion.com/documentation/api/tooltip#beforerender) event.
 
 ```ts
 function beforeRender(args: TooltipEventArgs) {
@@ -322,9 +318,7 @@ function beforeRender(args: TooltipEventArgs) {
 }
 ```
 
-
-
-The following example demonstrates how to customize the tooltip content for the grid cells by using the [beforeRender](../api/tooltip#beforerender) event of the EJ2 Tooltip control.
+The following example demonstrates how to customize the tooltip content for the grid cells by using the [beforeRender](https://ej2.syncfusion.com/documentation/api/tooltip#beforerender) event of the EJ2 Tooltip control.
 
 
 

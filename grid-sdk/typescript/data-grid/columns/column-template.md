@@ -20,9 +20,7 @@ To render an image in a grid column, you need to define a [template](https://ej2
 
 The following example demonstrates how to define a [template](https://ej2.syncfusion.com/documentation/api/grid/column#template) for the **Employee Image** field that displays an image element. The `template` property is set to the HTML element that contains an image tag. You have utilized the `src` and `alt` attributes to an image tag. 
 
-
-
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/grid-sdk/typescript/grid/column-template-cs1/index.ts %}
 {% endhighlight %}
@@ -33,8 +31,6 @@ The following example demonstrates how to define a [template](https://ej2.syncfu
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/column-template-cs1" %}
 
-
-
 > The [template](https://ej2.syncfusion.com/documentation/api/grid/column#template) option allows to define any HTML content within a column.
 
 ## Render hyperlink in a column
@@ -43,9 +39,7 @@ The Grid control provides support for rendering hyperlink columns and performing
 
 The following example demonstrates, how to render hyperlink column in the Grid using the [template](https://ej2.syncfusion.com/documentation/api/grid/column#template) property of the `column`. To define a `template` for the column,  you can use the `template` with the `a` tag to create the hyperlink.
 
-
-
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/grid-sdk/typescript/grid/column-template-cs3/index.ts %}
 {% endhighlight %}
@@ -57,7 +51,6 @@ The following example demonstrates, how to render hyperlink column in the Grid u
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/column-template-cs3" %}
 
 
-
 >The window.open() method is a built-in JavaScript function that opens a new browser window or tab with the specified URL.
 
 ## Render other controls in a column
@@ -66,15 +59,11 @@ The column template has options to render a custom control in a grid column inst
 
 ### Render LineChart control in a column
 
-
-The [LineChart](../../sparkline/getting-started) control of Syncfusion<sup style="font-size:70%">&reg;</sup> provides an elegant way to represent and compare data over time. It displays data points connected by straight line segments to visualize trends in data. 
- 
+The [LineChart](https://ej2.syncfusion.com/documentation/sparkline/getting-started) control of Syncfusion<sup style="font-size:70%">&reg;</sup> provides an elegant way to represent and compare data over time. It displays data points connected by straight line segments to visualize trends in data.
 
 In the following example, we have rendered the Sparkline Chart control in the Grid column by defining the [template](https://ej2.syncfusion.com/documentation/api/grid/column#template) property.
 
-
-
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/grid-sdk/typescript/grid/column-template-cs4/index.ts %}
 {% endhighlight %}
@@ -85,19 +74,14 @@ In the following example, we have rendered the Sparkline Chart control in the Gr
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/column-template-cs4" %}
 
-
-
 ### Render ColorPicker control in a column
-
-
  
-The [ColorPicker](../../color-picker/getting-started) control of Syncfusion<sup style="font-size:70%">&reg;</sup> provides a user-friendly way to select colors from a pre-defined color palette or custom colors. It can be used in a variety of scenarios such as picking a theme color or changing the color of an element on a page.  
+The [ColorPicker](https://ej2.syncfusion.com/documentation/color-picker/getting-started) control of Syncfusion<sup style="font-size:70%">&reg;</sup> provides a user-friendly way to select colors from a pre-defined color palette or custom colors. It can be used in a variety of scenarios such as picking a theme color or changing the color of an element on a page.  
  
 
 In the following code, we rendered the ColorPicker control in the Grid column by defining the [template](https://ej2.syncfusion.com/documentation/api/grid/column#template) property.
 
 
- 
 ```ts
 function colorPicker(args: QueryCellInfoEventArgs) {
   let inputElement: HTMLSelectElement  = args.cell.querySelector('input')
@@ -110,10 +94,7 @@ function colorPicker(args: QueryCellInfoEventArgs) {
 }
 ```
  
-
-
-
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/grid-sdk/typescript/grid/column-template-cs5/index.ts %}
 {% endhighlight %}
@@ -124,16 +105,9 @@ function colorPicker(args: QueryCellInfoEventArgs) {
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/column-template-cs5" %}
 
-
-
 ### Render DropDownList control in a column
 
-
-
 To render a custom control in a grid column, you need to define a [template](https://ej2.syncfusion.com/documentation/api/grid/column#template) for the column using the `template` property. In the following code, we rendered the [DropDownList](https://ej2.syncfusion.com/documentation/drop-down-list/getting-started) control in the **Order Status** column by defining the `template` property.
-
-
-
 
  
 ```ts
@@ -151,10 +125,7 @@ function dropdown(args: QueryCellInfoEventArgs) {
 
 ```
 
-
-
-
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/grid-sdk/typescript/grid/column-sync-comp-cs1/index.ts %}
 {% endhighlight %}
@@ -165,15 +136,11 @@ function dropdown(args: QueryCellInfoEventArgs) {
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/column-sync-comp-cs1" %}
 
-
-
 ### Render Chip control in a column
 
-The Grid control provides support for rendering [Chips](../../chips/getting-started) control in a column using the [template](https://ej2.syncfusion.com/documentation/api/grid/column#template) property. This feature is useful when displaying data that requires a chip control to be rendered in a column.
+The Grid control provides support for rendering [Chips](https://ej2.syncfusion.com/documentation/chips/getting-started) control in a column using the [template](https://ej2.syncfusion.com/documentation/api/grid/column#template) property. This feature is useful when displaying data that requires a chip control to be rendered in a column.
 
 In the following code, we rendered the Chips control in the Grid **First Name** column by defining the [template](https://ej2.syncfusion.com/documentation/api/grid/column#template) property.
-
-
  
 ```ts
   function queryCellInfo(args: QueryCellInfoEventArgs ) {
@@ -186,10 +153,7 @@ In the following code, we rendered the Chips control in the Grid **First Name** 
   }
 ```
  
-
-
-
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/grid-sdk/typescript/grid/column-template-cs6/index.ts %}
 {% endhighlight %}
@@ -200,19 +164,11 @@ In the following code, we rendered the Chips control in the Grid **First Name** 
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/column-template-cs6" %}
 
-
-
 ### Render ProgressBar control in a column
-
-
  
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Grid control supports rendering the [Progress Bar](../../progressbar/getting-started) control within a column using the [template](https://ej2.syncfusion.com/documentation/api/grid/column#template) property. Displaying the `Progress Bar` control in a grid column allows users to visually track the progress of tasks or operations associated with specific records. This feature is particularly useful for applications involving processes such as data loading, task completion, or other progressive activities.
-
-
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Grid control supports rendering the [Progress Bar](https://ej2.syncfusion.com/documentation/progressbar/getting-started) control within a column using the [template](https://ej2.syncfusion.com/documentation/api/grid/column#template) property. Displaying the `Progress Bar` control in a grid column allows users to visually track the progress of tasks or operations associated with specific records. This feature is particularly useful for applications involving processes such as data loading, task completion, or other progressive activities.
 
 In the following code, the `Progress Bar` control render in the Grid **Freight** column by defining the [template](https://ej2.syncfusion.com/documentation/api/grid/column#template) property.
-
-
 
 ```ts
 function queryCellInfo(args: QueryCellInfoEventArgs ) {
@@ -229,10 +185,7 @@ function queryCellInfo(args: QueryCellInfoEventArgs ) {
 }
 ```
  
-
-
-
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/grid-sdk/typescript/grid/column-template-cs9/index.ts %}
 {% endhighlight %}
@@ -243,13 +196,9 @@ function queryCellInfo(args: QueryCellInfoEventArgs ) {
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/column-template-cs9" %}
 
-
-
 ### Render RadioButton in a column 
 
-
-
-The TypeScript Grid supports rendering the [RadioButton](../../radio-button/getting-started) within a column using the [template](https://ej2.syncfusion.com/documentation/api/grid/column#template) property. This feature is particularly useful for displaying selection options, such as order statuses, payment methods, or approval choices, within the Grid.
+The TypeScript Grid supports rendering the [RadioButton](https://ej2.syncfusion.com/documentation/radio-button/getting-started) within a column using the [template](https://ej2.syncfusion.com/documentation/api/grid/column#template) property. This feature is particularly useful for displaying selection options, such as order statuses, payment methods, or approval choices, within the Grid.
 
 In the following example, a `RadioButton` is rendered in the **Order Status** column of the Grid by defining the `template` property.
 
@@ -271,10 +220,6 @@ function initializeRadioButtons(args: QueryCellInfoEventArgs){
 }
 ```
 
-
-
-
-
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/grid-sdk/typescript/grid/template-radiobutton/index.ts %}
@@ -285,8 +230,6 @@ function initializeRadioButtons(args: QueryCellInfoEventArgs){
 {% endtabs %}
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/template-radiobutton" %}
-
-
 
 ## Using condition template
 
@@ -304,9 +247,7 @@ The following example demonstrates how to use the `template` property with the `
         </script>
 ```
 
-
-
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/grid-sdk/typescript/grid/condition-inside-template-cs1/index.ts %}
 {% endhighlight %}
@@ -317,8 +258,6 @@ The following example demonstrates how to use the `template` property with the `
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/condition-inside-template-cs1" %}
 
-
-
 >You can use any template element or custom control instead of the checkbox in the conditional template based on your requirement.
 
 ## How to get the row object by clicking on the template element
@@ -327,9 +266,7 @@ The Grid control allows you to retrieve the row object of the selected record wh
 
 In the following code, the button element is rendered in the **Employee Data** column and `click` event binding is used to call the showDetails method when the template element is clicked. The showDetails method is passed the data object as an argument, which allows you to access the selected row object and display it in the dialog popup.
 
-
-
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/grid-sdk/typescript/grid/column-template-cs7/index.ts %}
 {% endhighlight %}
@@ -340,8 +277,6 @@ In the following code, the button element is rendered in the **Employee Data** c
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/column-template-cs7" %}
 
-
-
 ## Use custom helper inside the template
 
 The Syncfusion<sup style="font-size:70%">&reg;</sup> Grid allows you to use custom helpers inside the `template` property of a column. This feature allows you to create complex templates that can incorporate additional helper functions that are not available through the default [template](https://ej2.syncfusion.com/documentation/api/grid/column#template) syntax.
@@ -350,9 +285,7 @@ To use the custom helper function inside a column template, you must first add t
 
 The following example demonstrates how to use a custom helper function inside the [template](https://ej2.syncfusion.com/documentation/api/grid/column#template) property, using the `template` element for the Freight column.
 
-
-
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/grid-sdk/typescript/grid/column-template-cs8/index.ts %}
 {% endhighlight %}
@@ -363,8 +296,6 @@ The following example demonstrates how to use a custom helper function inside th
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/column-template-cs8" %}
 
-
-
 > Custom helpers can only be used inside the template property of a column. 
 
 ## Dynamically adding template column
@@ -373,15 +304,9 @@ The Syncfusion<sup style="font-size:70%">&reg;</sup> Grid control allows you to 
 
 Dynamically adding template columns involves creating and inserting columns with custom templates after the grid has been initialized. This approach provides flexibility in presenting data in a highly customizable manner.
 
+The following example demonstrates how to add template column using external button click. In this example, the **ShipCountry** column with a [Dropdownlist](https://ej2.syncfusion.com/documentation/drop-down-list/getting-started) is added in column [template](https://ej2.syncfusion.com/documentation/api/grid/column#template), and an icon is displayed using the [headerTemplate](https://ej2.syncfusion.com/documentation/api/grid/column#headertemplate) for the **ShipCountry** column. 
 
-
-The following example demonstrates how to add template column using external button click. In this example, the **ShipCountry** column with a [Dropdownlist](../../drop-down-list/getting-started) is added in column [template](https://ej2.syncfusion.com/documentation/api/grid/column#template), and an icon is displayed using the [headerTemplate](https://ej2.syncfusion.com/documentation/api/grid/column#headertemplate) for the **ShipCountry** column. 
- 
-
-
-
-
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/grid-sdk/typescript/grid/column-template-cs10/index.ts %}
 {% endhighlight %}
@@ -392,8 +317,6 @@ The following example demonstrates how to add template column using external but
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/column-template-cs10" %}
 
-
-
 ## Enhancing Grid performance by enabling or disabling Aria Labels
 
 By default, the TypeScript Grid adds custom **aria-label** attributes to template cells by combining the cell value, the "**is template cell**" identifier, and the column header name. These attributes help screen readers provide meaningful context.
@@ -402,9 +325,7 @@ If your application doesn’t require screen reader support and includes multipl
 
 The example below enables Aria labels for the **Employee Image** column and disables them for the **First Name** column in the TypeScript Grid.
 
-
-
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/grid-sdk/typescript/grid/template-aria-label/index.ts %}
 {% endhighlight %}

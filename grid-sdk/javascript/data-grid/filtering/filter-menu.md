@@ -141,11 +141,11 @@ You have the flexibility to customize the default settings of input controls wit
  
 | Column Type | Default control                                                                                 | Customization                            | API Reference                                                                                             |
 | ----------- | ------------------------------------------------------------------------------------------------- | ---------------------------------------- | --------------------------------------------------------------------------------------------------------- |
-| String      | [AutoComplete](../../auto-complete/es5-getting-started)    | Eg: { params: { autofill: false }}       | [AutoComplete API](../../api/auto-complete/autoCompleteModel) |
-| Number      | [NumericTextBox](../../numerictextbox/es5-getting-started) | Eg: { params: { showSpinButton: false }} | [NumericTextBox API](../../api/numerictextbox)                 |
+| String      | [AutoComplete](https://ej2.syncfusion.com/javascript/documentation/auto-complete/es5-getting-started)    | Eg: { params: { autofill: false }}       | [AutoComplete API](https://ej2.syncfusion.com/javascript/documentation/api/auto-complete/autoCompleteModel) |
+| Number      | [NumericTextBox](https://ej2.syncfusion.com/javascript/documentation/numerictextbox/es5-getting-started) | Eg: { params: { showSpinButton: false }} | [NumericTextBox API](https://ej2.syncfusion.com/javascript/documentation/api/numerictextbox)                 |
 | Boolean     | [DropDownList](https://ej2.syncfusion.com/javascript/documentation/drop-down-list/es5-getting-started)   | Eg: { params: { sortOrder:'Ascending'}}  | [DropDownList API](https://ej2.syncfusion.com/javascript/documentation/api/drop-down-list)                   |
-| Date        | [DatePicker](../../datepicker/es5-getting-started)         | Eg: { params: { weekNumber: true }}      | [DatePicker API](../../api/datepicker)                         |
-| DateTime    | [DateTimePicker](../../datetimepicker/es5-getting-started) | Eg: { params: { showClearButton: true }} | [DateTimePicker API](../../api/datetimepicker)                 |
+| Date        | [DatePicker](https://ej2.syncfusion.com/javascript/documentation/datepicker/es5-getting-started)         | Eg: { params: { weekNumber: true }}      | [DatePicker API](https://ej2.syncfusion.com/javascript/documentation/api/datepicker)                         |
+| DateTime    | [DateTimePicker](https://ej2.syncfusion.com/javascript/documentation/datetimepicker/es5-getting-started) | Eg: { params: { showClearButton: true }} | [DateTimePicker API](https://ej2.syncfusion.com/javascript/documentation/api/datetimepicker)                 |
 
 
 
@@ -173,11 +173,11 @@ In the example provided below, the **OrderID** and **Freight** columns are numer
 
 
  
-By default, the [AutoComplete](../../auto-complete/es5-getting-started) control in the filter menu dialog is set to automatically fill suggestions as you type. However, there might be scenarios where you want to prevent this autofill behavior to provide a more customized and controlled user experience.
+By default, the [AutoComplete](https://ej2.syncfusion.com/javascript/documentation/auto-complete/es5-getting-started) control in the filter menu dialog is set to automatically fill suggestions as you type. However, there might be scenarios where you want to prevent this autofill behavior to provide a more customized and controlled user experience.
 
 
 
-You can prevent autofill feature by setting the [autofill](../../api/auto-complete#autofill) parameter to **false** using the `params` property within the column definition of the [filter](https://ej2.syncfusion.com/javascript/documentation/api/grid/column#filter). 
+You can prevent autofill feature by setting the [autofill](https://ej2.syncfusion.com/javascript/documentation/api/auto-complete#autofill) parameter to **false** using the `params` property within the column definition of the [filter](https://ej2.syncfusion.com/javascript/documentation/api/grid/column#filter). 
 
 
 

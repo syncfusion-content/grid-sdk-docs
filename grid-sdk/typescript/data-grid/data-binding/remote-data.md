@@ -16,7 +16,7 @@ Additionally, leverage the power for data retrieval and operations, enhancing ev
 
 ## Custom binding
 
-The custom binding feature in the TypeScript Grid enables you to manage your own custom API for handling data processing externally and then binding the resulting data to the Grid. This allows you to implement your own custom data logic to your application's requirements. When using custom binding, the Grid expects the result of the custom logic to be an object with properties `result` and `count`. The `result` property should contain the data to be displayed in the Grid, while the `count` property indicates the total number of records in the dataset for your application. To utilize custom binding, you can handle the  [DataManager](../../data). The DataManager integrates seamlessly with the TypeScript Grid to manage custom data processing and binding. 
+The custom binding feature in the TypeScript Grid enables you to manage your own custom API for handling data processing externally and then binding the resulting data to the Grid. This allows you to implement your own custom data logic to your application's requirements. When using custom binding, the Grid expects the result of the custom logic to be an object with properties `result` and `count`. The `result` property should contain the data to be displayed in the Grid, while the `count` property indicates the total number of records in the dataset for your application. To utilize custom binding, you can handle the  [DataManager](https://ej2.syncfusion.com/documentation/data/getting-started). The DataManager integrates seamlessly with the TypeScript Grid to manage custom data processing and binding. 
 
 The Syncfusion<sup style="font-size:70%">&reg;</sup> Grid component offers a range of powerful features for handling grid actions such as **paging**, **grouping**, **sorting** and **filtering**. These actions trigger the [dataStateChange](https://ej2.syncfusion.com/documentation/api/grid#datastatechange) event. The feature for CRUD action such as **Create**, **Read**, **Update**, **Delete** operations. This action trigger the [dataSourceChanged](https://ej2.syncfusion.com/documentation/api/grid#datasourcechanged) event. This event provides you with the opportunity to manage and manipulate data according to the individual's interactions. 
 
@@ -809,7 +809,7 @@ To export the complete Grid data to PDF document, utilize the `pdfExportProperti
 ```
 
 
-> For further customization on Grid export, refer to the respective documentation for [PDF exporting](../../grid/pdf-export/pdf-export-options) and [Excel exporting](../../grid/excel-export/excel-export-options)
+> For further customization on Grid export, refer to the respective documentation for [PDF exporting](../pdf-export/pdf-export-options) and [Excel exporting](../excel-export/excel-export-options)
 
 The following code example shows how to export all records in client side:
 
@@ -881,7 +881,7 @@ The following example demonstrates how to send additional parameters to the serv
 
 ## Offline mode
 
-On remote data binding, all grid actions such as paging, sorting, editing, grouping, filtering, etc, will be processed on server-side. To avoid post back for every action, set the grid to load all data on initialization and make the actions process in client-side. To enable this behavior, use the `offline` property of [DataManager](../../data).
+On remote data binding, all grid actions such as paging, sorting, editing, grouping, filtering, etc, will be processed on server-side. To avoid post back for every action, set the grid to load all data on initialization and make the actions process in client-side. To enable this behavior, use the `offline` property of [DataManager](https://ej2.syncfusion.com/documentation/data/getting-started).
 
 
 
@@ -900,9 +900,9 @@ On remote data binding, all grid actions such as paging, sorting, editing, group
 
 ## Fetch result from the DataManager query using external button 
 
-By default, TypeScript Grid automatically binds a remote data source using the [DataManager](../../data/getting-started). However, in some scenarios, you may need to fetch data dynamically from the server using a query triggered by an external button. This approach allows greater control over when and how data is loaded into the Grid.
+By default, TypeScript Grid automatically binds a remote data source using the [DataManager](https://ej2.syncfusion.com/documentation/data/getting-started). However, in some scenarios, you may need to fetch data dynamically from the server using a query triggered by an external button. This approach allows greater control over when and how data is loaded into the Grid.
 
-To achieve this, you can use the [executeQuery](../../api/data/dataManager#executequery) method of `DataManager` with a **[Query](../../api/data/query)** object. This method allows you to run a custom query and retrieve results dynamically.
+To achieve this, you can use the [executeQuery](https://ej2.syncfusion.com/documentation/api/data/dataManager#executequery) method of `DataManager` with a **[Query](https://ej2.syncfusion.com/documentation/api/data/query)** object. This method allows you to run a custom query and retrieve results dynamically.
 
 The following example demonstrates how to fetch data from the server when an external button is clicked and display a status message indicating the data fetch status:
 

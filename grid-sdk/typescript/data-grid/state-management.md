@@ -139,11 +139,9 @@ The provided code demonstrates how to save and restore the previous state of a T
 
 ## Maintaining custom query in a persistent state
 
-When [enablePersistence](https://ej2.syncfusion.com/documentation/api/grid#enablepersistence) is enabled, the Grid does not automatically maintain custom query parameters after a page load. This is because the Grid refreshes its query params for every page load. You can maintain the custom query params by resetting the [addParams](../api/data/query/#addparams) method in the [actionBegin](https://ej2.syncfusion.com/documentation/api/grid#actionbegin) event.
+When [enablePersistence](https://ej2.syncfusion.com/documentation/api/grid#enablepersistence) is enabled, the Grid does not automatically maintain custom query parameters after a page load. This is because the Grid refreshes its query params for every page load. You can maintain the custom query params by resetting the [addParams](https://ej2.syncfusion.com/documentation/api/data/query/#addparams) method in the [actionBegin](https://ej2.syncfusion.com/documentation/api/grid#actionbegin) event.
 
-
-
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/grid-sdk/typescript/grid/grouping-event-cs2/index.ts %}
 {% endhighlight %}
@@ -151,8 +149,6 @@ When [enablePersistence](https://ej2.syncfusion.com/documentation/api/grid#enabl
 {% include code-snippet/grid-sdk/typescript/grid/grouping-event-cs2/index.html %}
 {% endhighlight %}
 {% endtabs %}
-
-
 
 ## Observables binding with state persistence
 

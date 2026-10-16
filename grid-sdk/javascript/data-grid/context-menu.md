@@ -124,7 +124,7 @@ The following example demonstrates how to show context menu on left click using 
 
 With the JavaScript Grid, you have the ability to manage the activation or deactivation of both default and custom context menu items. This feature provides you with the flexibility to tailor the behavior of context menu items to suit specific conditions or individual interactions within your application.
 
-This can be achieved using the [enableItems](../api/context-menu#enableitems) method of the context menu. By setting the enable parameter in the enableItems method to **true**, you can enable context menu items, and by setting it to **false**, you can disable them. Based on your specific condition or requirements, you can enable or disable the context menu item using the `enableItems` method.
+This can be achieved using the [enableItems](https://ej2.syncfusion.com/javascript/documentation/api/context-menu#enableitems) method of the context menu. By setting the enable parameter in the enableItems method to **true**, you can enable context menu items, and by setting it to **false**, you can disable them. Based on your specific condition or requirements, you can enable or disable the context menu item using the `enableItems` method.
 
 
  
@@ -150,7 +150,7 @@ In the following example, the [EJ2 Toggle Switch Button](https://ej2.syncfusion.
 
 The JavaScript Grid provides the flexibility to show or hide both default and custom context menu items. This feature allows you to customize the context menu items based on various conditions or individuals interactions.
 
-This can be achieved using the [showItems](../api/context-menu#showitems) and [hideItems](../api/context-menu#hideitems) methods of the context menu by specifying the item you want to show or hide as an argument. 
+This can be achieved using the [showItems](https://ej2.syncfusion.com/javascript/documentation/api/context-menu#showitems) and [hideItems](https://ej2.syncfusion.com/javascript/documentation/api/context-menu#hideitems) methods of the context menu by specifying the item you want to show or hide as an argument. 
 
 
  

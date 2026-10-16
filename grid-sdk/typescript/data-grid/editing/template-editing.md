@@ -172,7 +172,7 @@ If you have interested to use our default form validation, the validation rules 
 
 ## Render tab control inside the dialog template
 
-You can use [Tab](../../tab/index.html) control inside dialog edit UI using dialog template feature. The dialog template feature can be enabled by defining  [editSettings.mode](https://ej2.syncfusion.com/documentation/api/grid/editSettings/#mode) as `Dialog` and [editSettingsTemplate](https://ej2.syncfusion.com/documentation/api/grid/editSettings/#template) as template variable to define the editors.
+You can use [Tab](https://ej2.syncfusion.com/documentation/tab/getting-started) control inside dialog edit UI using dialog template feature. The dialog template feature can be enabled by defining  [editSettings.mode](https://ej2.syncfusion.com/documentation/api/grid/editSettings/#mode) as `Dialog` and [editSettingsTemplate](https://ej2.syncfusion.com/documentation/api/grid/editSettings/#template) as template variable to define the editors.
 
 To include tab controls in the Dialog, please ensure the following steps:
 

@@ -139,7 +139,7 @@ Here is an example of how to use the `reorderColumns` method to reorder single c
 
 Previously, column reordering in the Grid was handled using methods like [reorderColumnByIndex](https://ej2.syncfusion.com/documentation/api/grid#reordercolumnbyindex), [reorderColumns](https://ej2.syncfusion.com/documentation/api/grid#reordercolumns), and [reorderColumnByTargetIndex](https://ej2.syncfusion.com/documentation/api/grid#reordercolumnbytargetindex). These methods allowed reordering based on field names or index positions and were suitable for simple, flat column structures.
 
-To reorder stacked header columns, use the `reorderByColumnModel` method. It enables reordering by passing complete column model objects. This method is specifically designed to support [stacked header columns](../../grid/columns/column-headers#stacked-header), but it also works with normal column configurations.
+To reorder stacked header columns, use the `reorderByColumnModel` method. It enables reordering by passing complete column model objects. This method is specifically designed to support [stacked header columns](./column-headers#stacked-header), but it also works with normal column configurations.
 
 The `reorderColumnByModel` method accepts two arguments:
 

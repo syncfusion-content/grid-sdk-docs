@@ -116,7 +116,7 @@ You can assign a JavaScript object array to the [dataSource](https://ej2.syncfus
     }];
 ```
 
-The following code demonstrates how to create the [columns](../../grid/columns/columns) for the grid, which are based on the provided grid data source.
+The following code demonstrates how to create the [columns](../columns/columns) for the grid, which are based on the provided grid data source.
 
 ```typescript
     public newColumn: ColumnModel[] = [

@@ -134,4 +134,4 @@ The following example shows a formula-enabled column that calculates the product
 - [Formula reference](./formula-reference)
 - [Formula Editor](./formula-editor)
 - [Custom formula functions](./custom-formula)
-- [Editing](../editing/cell-editing)
+- [Editing](../editing/edit)

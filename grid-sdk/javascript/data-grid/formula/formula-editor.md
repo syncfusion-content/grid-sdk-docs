@@ -58,4 +58,4 @@ Editing can be disabled for a formula-enabled column by setting `allowEditing` t
 - [Formulas](./formula)
 - [Formula reference](./formula-reference)
 - [Custom formula functions](./custom-formula)
-- [Editing](../editing/cell-editing)
+- [Editing](../editing/edit)
