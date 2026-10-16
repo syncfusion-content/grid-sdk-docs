@@ -30,7 +30,7 @@ The following example demonstrates enabling the `toolbar` with search option in 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/searching-cs1" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/searching-cs1" %}
 
 > * The clear icon is shown in the Grid search text box when it is focused on search text or after typing the single character in the search text box. A single click of the clear icon clears the text in the search box as well as the search results in the grid.
 > * In Syncfusion Grid component, searching operates independently for parent and child grids. Searching within the parent grid filters only parent records, and similarly, searching within the child grid filters only child records. The component does not support simultaneous searching across both parent and child grids.
@@ -73,7 +73,7 @@ This configuration searches the "Customer ID" column for records containing "Ha"
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/searching-cs2" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/searching-cs2" %}
 
 > By default, the grid searches all visible columns. Customize this by setting the [searchSettings.fields](https://ej2.syncfusion.com/angular/documentation/api/grid/searchSettings#fields) property to limit searching to specific columns only.
 
@@ -107,7 +107,7 @@ The following example demonstrates setting the `searchSettings.operator` propert
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/searching-cs11" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/searching-cs11" %}
 
 ## Search by external button
 
@@ -131,7 +131,7 @@ Implementation steps for searching via an external button:
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/searching-cs3" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/searching-cs3" %}
 
 ## Search specific columns
 
@@ -154,7 +154,7 @@ The following example searches only the "Customer ID", "Freight", and "Ship Coun
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/searching-cs4" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/searching-cs4" %}
 
 ## Search on each key stroke
 
@@ -178,7 +178,7 @@ In the following example, the `created` event of the grid binds the `keyup` even
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/searching-cs6" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/searching-cs6" %}
 
 > Search on each key stroke approach may affect the performance of the application when dealing with a large number of records.
 
@@ -205,7 +205,7 @@ In the following example, the `actionBegin` event checks if a column has formatt
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/searching-cs10" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/searching-cs10" %}
 
 ## Perform search operation in Grid using multiple keywords
 
@@ -232,7 +232,7 @@ On the other hand, the [actionComplete](https://ej2.syncfusion.com/angular/docum
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/searching-cs7" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/searching-cs7" %}
 
 > By using multiple keywords, searches are more flexible and powerful. Keywords are split by a delimiter and combined using `OR` logic, meaning the grid displays records matching any of the provided keywords.
 
@@ -257,7 +257,7 @@ The following example demonstrates toggling the `ignoreAccent` property using a 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/searching-cs9" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/searching-cs9" %}
 
 > * The `ignoreAccent` property can be combined with other search settings such as `fields`, `operator`, `ignoreCase` to customize search behavior.
 > * This feature applies only to non-ASCII characters (characters with diacritical marks).
@@ -294,7 +294,7 @@ Define the CSS class to apply highlighting styles (e.g., `background-color: yell
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/searching-cs8" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/searching-cs8" %}
 
 ## Clear search by external button
 
@@ -318,7 +318,7 @@ The following example demonstrates clearing search records using an external but
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/searching-cs5" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/searching-cs5" %}
 
 > Alternatively, the search box's built-in clear icon also clears search results. When the search box has focus or contains text, clicking the clear icon removes the text and resets the grid to display all records.
 
@@ -347,7 +347,7 @@ The following example demonstrates to retrieve searched records using an externa
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/retrieve-searched-records-cs1" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/retrieve-searched-records-cs1" %}
 
 ## See also
 

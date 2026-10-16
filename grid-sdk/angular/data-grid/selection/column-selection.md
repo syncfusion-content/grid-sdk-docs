@@ -24,7 +24,7 @@ To enable column selection in the grid, set the [selectionSettings.allowColumnSe
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/selection-cs6" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/selection-cs6" %}
 
 ## Single column selection
 
@@ -48,7 +48,7 @@ To enable single column selection, set the [selectionSettings.allowColumnSelecti
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/selection-column-cs7" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/selection-column-cs7" %}
 
 ## Multiple column selection
 
@@ -72,7 +72,7 @@ To enable multiple column selection, set the [selectionSettings.allowColumnSelec
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/selection-column-cs8" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/selection-column-cs8" %}
 
 ## Select columns programmatically
 
@@ -98,7 +98,7 @@ The following example demonstrates selecting a single column within the grid. Th
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/selection-column-cs9" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/selection-column-cs9" %}
 
 ### Multiple column selection
 
@@ -120,7 +120,7 @@ The following example demonstrates selecting multiple columns in the grid by cal
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/selection-column-cs10" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/selection-column-cs10" %}
 
 ### Range of column selection
 
@@ -140,7 +140,7 @@ The following example demonstrates selecting a range of columns within the grid.
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/selection-column-cs11" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/selection-column-cs11" %}
 
 ### Select with existing column
 
@@ -160,7 +160,7 @@ The following example demonstrates selecting a column with an existing column. T
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/selection-column-cs12" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/selection-column-cs12" %}
 
 ## Clear column selection programmatically
 
@@ -180,7 +180,7 @@ The following example demonstrates clearing column selection by calling the `cle
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/selection-column-cs14" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/selection-column-cs14" %}
 
 ## Column selection events
 
@@ -283,4 +283,4 @@ export class AppComponent implements OnInit {
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/selection-column-cs13" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/selection-column-cs13" %}

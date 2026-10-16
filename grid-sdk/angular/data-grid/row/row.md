@@ -40,7 +40,7 @@ Here's an example of customizing the rows styles based on the value of the "Frei
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/row-css-cs11" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/row-css-cs11" %}
 
 > The [queryCellInfo](https://ej2.syncfusion.com/angular/documentation/api/grid#querycellinfo) event provides similar functionality for individual cell customization and can be combined with row-level styling for comprehensive appearance control.
 
@@ -72,7 +72,7 @@ The following example demonstrates using the `.e-altrow` class to style alternat
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/row-style-alt-cs1" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/row-style-alt-cs1" %}
 
 **Customize selected row**
 
@@ -97,7 +97,7 @@ Here's an example of styling the selected row using the `.e-selectionbackground`
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/row-style-selected-cs1" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/row-style-selected-cs1" %}
 
 ### Using methods
 
@@ -125,7 +125,7 @@ The following example demonstrates customizing the appearance of the row using t
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/rows-event-cs1" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/rows-event-cs1" %}
 
 ## Row height
 
@@ -143,7 +143,7 @@ The following example demonstrates dynamically changing the height of the rows u
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/row-height-cs1" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/row-height-cs1" %}
 
 > * The `rowHeight` property can only be used to set the height of the entire grid row, not individual cells within a row.
 > * The `rowHeight` property applies the height to all rows in the grid, including the header and footer rows.
@@ -183,7 +183,7 @@ In the following example, the row height for the row with "OrderID" as "10249" i
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/row-height-cs8" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/row-height-cs8" %}
 
 > * In virtual scrolling mode, it is not applicable to set different row heights.
 > * The row height of multiple rows can be customized by checking the relevant criteria in the `rowDataBound` event and setting the `rowHeight` property accordingly.
@@ -205,7 +205,7 @@ The following example demonstrates hover effect control through a Switch compone
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/row-hover-cs1" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/row-hover-cs1" %}
 
 > The `enableHover` property affects the entire Grid and cannot be applied to individual rows or columns.
 
@@ -228,7 +228,7 @@ Here's an example that demonstrates retrieving the row information when hovering
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/row-hover-info-cs1" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/row-hover-info-cs1" %}
 
 >The `getRowInfo` method requires execution within the `rowDataBound` event context for proper functionality.
 
@@ -246,7 +246,7 @@ The `emptyRecordMode` property determines how the empty record row is displayed 
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/empty-record-mode" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/empty-record-mode" %}
 
 ## Row Number in Data Grid
 
@@ -266,7 +266,7 @@ The Grid automatically updates row numbers when operations such as paging, sorti
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/rownumber" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/rownumber" %}
 
 ## Row pinning (Frozen)
 
@@ -286,7 +286,7 @@ In the following example, the `frozenRows` property is set to "3". This configur
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/frozenrows-cs1" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/frozenrows-cs1" %}
 
 > * Frozen rows must remain within the visible viewport area.
 > * Row virtualization is supported with frozen rows for enhanced performance.
@@ -314,7 +314,7 @@ The following example demonstrates frozen row border customization:
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/frozenrows-cs2" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/frozenrows-cs2" %}
 
 ### Deprecated methods
 
@@ -354,7 +354,7 @@ Here’s an example that demonstrates adding a new row using the addRecord metho
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/add-new-row-cs1" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/add-new-row-cs1" %}
 
 > * When working with remote data, it is impossible to add a new row between the existing rows.
 > * To add a new record to the beginning of the data source, pass "0" as the second parameter to the `addRecord` method.
@@ -458,7 +458,7 @@ export class AppComponent {
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/row-grid-cs1" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/row-grid-cs1" %}
 
 ## Get the row data and element
 

@@ -36,7 +36,7 @@ The following example demonstrates exporting either the current page or all page
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/excel-exporting-cs4" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/excel-exporting-cs4" %}
 
 ## Export selected records
 
@@ -66,7 +66,7 @@ The following example demonstrates exporting the selected records to an Excel do
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/exporting-filtered-data-cs1" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/exporting-filtered-data-cs1" %}
 
 ## Exporting grouped records
 
@@ -87,7 +87,7 @@ The following example demonstrates exporting grouped records to an Excel documen
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/excel-exporting-cs8" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/excel-exporting-cs8" %}
 
 ## Export with hidden columns
 
@@ -107,7 +107,7 @@ The following example demonstrates to export hidden columns to an Excel file. In
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/excel-exporting-cs5" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/excel-exporting-cs5" %}
 
 ## Show or hide columns while exporting
 
@@ -135,7 +135,7 @@ In the following example, the "Customer ID" is initially a hidden column in the 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/excel-exporting-cs6" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/excel-exporting-cs6" %}
 
 ## Show or hide columns while exporting with stacked header
 
@@ -163,7 +163,7 @@ In the following example, the "Ship Name" is initially a hidden column in the Gr
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/exportexcel-show-hide" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/exportexcel-show-hide" %}
 
 ## Enable filtering in the exported Excel file
 
@@ -183,7 +183,7 @@ The following example demonstrates exporting data with filter options to an Exce
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/excel-exporting-cs7" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/excel-exporting-cs7" %}
 
 ## Define file name
 
@@ -203,7 +203,7 @@ The following example demonstrates to define a file name using `ExcelExportPrope
 {% endhighlight %} 
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/excel-exporting-cs9" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/excel-exporting-cs9" %}
 
 ## Export the master detail grid
 
@@ -223,7 +223,7 @@ The following example demonstrates exporting master detail grid to the same page
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/export-masterdetail-grid" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/export-masterdetail-grid" %}
 
 ## Customizing columns on export
 
@@ -249,7 +249,7 @@ The following example demonstrates customizing the grid columns when exporting a
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/excel-exporting-column" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/excel-exporting-column" %}
 
 ## Font and color customization
 
@@ -275,7 +275,7 @@ In the following example, apply font styling to the caption, header, and record 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/excel-exporting-cs3" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/excel-exporting-cs3" %}
 
 ## Rotate a header text in the exported grid
 
@@ -295,7 +295,7 @@ In the following demo, using the `rotation` property of the style argument in th
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/excel-grouping" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/excel-grouping" %}
 
 ## Conditional cell formatting
 
@@ -315,7 +315,7 @@ The following example demonstrates customizing the background color of the Freig
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/excel-exporting-cs2" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/excel-exporting-cs2" %}
 
 ## Adding header and footer in the exported Excel file
 
@@ -335,7 +335,7 @@ The following example demonstrates to add a header and footer to the exported gr
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/excel-exporting-cs1" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/excel-exporting-cs1" %}
 
 ## Export grid as blob
 
@@ -353,4 +353,4 @@ The following example demonstrates obtaining the blob data of the exported grid 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/export-grid-as-blob-cs2" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/export-grid-as-blob-cs2" %}

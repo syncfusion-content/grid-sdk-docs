@@ -112,7 +112,7 @@ export class AppComponent implements OnInit {
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/custom-cell-cs4" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/custom-cell-cs4" %}
 
 ## Rendering custom component
 
@@ -138,7 +138,7 @@ For example, to render a grid inside the detail row, place an HTML div element a
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/custom-cell-cs5" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/custom-cell-cs5" %}
 
 ## Expand by external button
 
@@ -269,7 +269,7 @@ export class AppComponent implements OnInit {
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/custom-cell-cs6" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/custom-cell-cs6" %}
 
 ## Customize detail template icon
 
@@ -396,7 +396,7 @@ export interface DateFormat extends Window {
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/row-detail-icon-cs1" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/row-detail-icon-cs1" %}
 
 ## Limitations
 

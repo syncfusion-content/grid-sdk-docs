@@ -34,7 +34,7 @@ The following example demonstrates enabling the hierarchy feature in the grid, w
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/default-cs5" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/default-cs5" %}
 
 > * The Grid supports n level of child grids.
 > * Hierarchical binding is not supported when [DetailTemplate](https://ej2.syncfusion.com/angular/documentation/api/grid#detailtemplate) is enabled.
@@ -57,7 +57,7 @@ In the following example, the `load` event is used to customize the mapping valu
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/default-cs9" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/default-cs9" %}
 
 > Make sure to adjust the field name according to the specific scenario.
 
@@ -77,7 +77,7 @@ In the provided example, the third record of the grid is expanded by utilizing t
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/default-cs7" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/default-cs7" %}
 
 > Index values begin with "0", allowing provision of the desired target index to expand a specific child grid initially.
 
@@ -97,7 +97,7 @@ To achieve this, use the [load](https://ej2.syncfusion.com/angular/documentation
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/default-cs8" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/default-cs8" %}
 
 ## Dynamic data binding in Child Grids using parent row values
 
@@ -115,7 +115,7 @@ Within the `detailDataBound` event, the child grid’s [dataSource](https://ej2.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/default-cs12" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/default-cs12" %}
 
 ## Adding record in child grid
 
@@ -133,7 +133,7 @@ This is accomplished through the grid's [actionBegin](https://ej2.syncfusion.com
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/default-cs10" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/default-cs10" %}
 
 ## Template column in child grid
 
@@ -218,7 +218,7 @@ export class AppComponent implements OnInit, AfterViewInit {
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/default-cs11" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/default-cs11" %}
 
 ## Getting parent details in the child grid
 
@@ -236,7 +236,7 @@ This can be accomplished through the grid's [created](https://ej2.syncfusion.com
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/default-cs16" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/default-cs16" %}
 
 ## Render aggregates in child grid
 
@@ -255,7 +255,7 @@ The following example demonstrates rendering aggregates in a child grid to displ
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/child-grid-aggregate" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/child-grid-aggregate" %}
 
 ## Expand and collapse all child grids dynamically
 
@@ -273,7 +273,7 @@ By default, all child grids are rendered in a collapsed state. To programmatical
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/default-cs6" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/default-cs6" %}
 
 > The `expandAll` and `collapseAll` methods are not recommended for large datasets due to the considerable time required to update the changes in the UI.
 
@@ -305,7 +305,7 @@ In the demo below, the expand/collapse icons have been changed to arrow-down and
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/default-change-icon" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/default-change-icon" %}
 
 ## Hide the expand/collapse icon in parent row when no record in child grid
 
@@ -356,7 +356,7 @@ The following example demonstrates hiding the expand/collapse icon for the row w
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/template-cs4" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/template-cs4" %}
 
 ## Child Grid expand and collapse events
 
@@ -373,7 +373,7 @@ In the example below, expansion is prevented for the "Nancy" row, and collapse i
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/detail-row-events" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/detail-row-events" %}
 
 ## Customize the child grid
 

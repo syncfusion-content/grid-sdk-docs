@@ -24,4 +24,4 @@ The following example demonstrates configuring cell editors for the **ShipCountr
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/edit-cs50" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/edit-cs50" %}

@@ -26,7 +26,7 @@ The following example demonstrates the local data binding feature in the Angular
 {% endhighlight %}
 {% endtabs %}
     
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/databinding-cs1" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/databinding-cs1" %}
 
 ## Data binding with SignalR 
 
@@ -394,7 +394,7 @@ The following example demonstrates Excel data import into the grid utilizing the
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/imported-data" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/imported-data" %}
 
 ## Binding data and performing CRUD actions via Fetch request
 
@@ -1046,7 +1046,7 @@ The following example demonstrates showing and hiding the spinner during data lo
 {% endhighlight %}
 {% endtabs %}
     
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/show-hide-spinner-cs1" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/show-hide-spinner-cs1" %}
 
 ## Immutable mode
 
@@ -1220,7 +1220,7 @@ export class AppComponent implements OnInit {
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/immutable-cs1" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/immutable-cs1" %}
 
 ### Limitations
 
