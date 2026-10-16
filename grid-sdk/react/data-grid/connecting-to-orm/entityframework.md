@@ -909,7 +909,7 @@ namespace Grid_EntityFramework.Server.Controllers
             var op = new DataOperations();
 
             if (dm.Where?.Count > 0)
-                query = op.PerformFiltering(query, dm.Where, dm.Where[0].Operator)
+                query = op.PerformFiltering(query, dm.Where, dm.Where[0].Condition)
                     .Cast<Ticket>()
                     .AsQueryable();
 
@@ -1376,7 +1376,7 @@ namespace Grid_EntityFramework.Server.Controllers
                 query = op.PerformSearching(query, dm.Search).Cast<Ticket>().AsQueryable();
 
             if (dm.Where?.Count > 0)
-                query = op.PerformFiltering(query, dm.Where, dm.Where[0].Operator)
+                query = op.PerformFiltering(query, dm.Where, dm.Where[0].Condition)
                     .Cast<Ticket>()
                     .AsQueryable();
 
