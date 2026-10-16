@@ -1012,7 +1012,7 @@ namespace Grid_Dapper.Server.Controllers
 
             // Filtering
             if (dm.Where != null && dm.Where.Count > 0)
-                data = _dataOps.PerformFiltering(data, dm.Where, dm.Where[0].Operator);
+                data = _dataOps.PerformFiltering(data, dm.Where, dm.Where[0].Condition);
 
             // Other action code goes here
 
@@ -1612,7 +1612,7 @@ namespace Grid_Dapper.Server.Controllers
             // Filtering
             if (dm.Where != null && dm.Where.Count > 0)
             {
-                data = _dataOps.PerformFiltering(data, dm.Where, dm.Where[0].Operator);
+                data = _dataOps.PerformFiltering(data, dm.Where, dm.Where[0].Condition);
             }
 
             // Sorting
