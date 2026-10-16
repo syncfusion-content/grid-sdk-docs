@@ -1452,9 +1452,9 @@ namespace Grid_MySQL.Server.Controllers
 
 ## Running the application
 
-Open a terminal and follow the instructions below to build and run both the backend and frontend of the application.
+Open a terminal and follow the instructions below to build and run both the back end and front end of the application.
 
-### Running the ASP.NET Core backend server
+### Running the ASP.NET Core back-end server
 
 Navigate to the **Grid_MySQL.Server** project directory and run:
 
@@ -1463,7 +1463,7 @@ Navigate to the **Grid_MySQL.Server** project directory and run:
     dotnet run
 ```
 
-- The backend server should start and listen on **https://localhost:5283** (or the port shown in the terminal).
+- The back-end server should start and listen on **https://localhost:5283** (or the port shown in the terminal).
 - Test the API endpoint at: **https://localhost:5283/api/grid/url**.
 
 ### Running the React frontend client
@@ -1474,7 +1474,7 @@ Navigate to the **grid_mysql.client** directory and execute:
 npm run dev
 ```
 
-- The application will automatically connect to the backend API at **http://localhost:5283/api/grid**.
+- The application will automatically connect to the back-end API at **http://localhost:5283/api/grid**.
 - The transaction management application is now running and ready to use.
 
 **Available features:**

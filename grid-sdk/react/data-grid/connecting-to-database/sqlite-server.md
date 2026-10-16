@@ -100,7 +100,7 @@ After executing this script, the asset records are stored in the "asset" table w
 
 ### Step 2: Create a new ASP.NET Core with React project
 
-Before installing NuGet packages, a new ASP.NET Core Web Application with React must be created. This template creates a full-stack application with both the ASP.NET Core backend server and React frontend client in a single solution.
+Before installing NuGet packages, a new ASP.NET Core Web Application with React must be created. This template creates a full-stack application with both the ASP.NET Core back-end server and React front-end client in a single solution.
 
 **Instructions:**
 
@@ -120,7 +120,7 @@ Before installing NuGet packages, a new ASP.NET Core Web Application with React 
 8. Click **Create**.
 
 Visual Studio will create a solution with two projects:
-- **Grid_SQLite.Server**: The ASP.NET Core backend with Controllers and configuration files.
+- **Grid_SQLite.Server**: The ASP.NET Core back end with Controllers and configuration files.
 - **grid_sqlite.client**: The React + Vite frontend client application.
 
 ### Step 3: Install required NuGet packages
@@ -162,7 +162,7 @@ Install-Package Syncfusion.EJ2.AspNet.Core -Version 32.2.3
    - **Microsoft.EntityFrameworkCore.Tools** (version 9.0.0)
    - **Syncfusion.EJ2.AspNet.Core** (version 32.2.3)
 
-All required packages are now installed. Verify the installation by checking the project's **.csproj** file or using `dotnet list package` command.
+All required packages are now installed. Verify the installation by checking the project's **.csproj** file or by running `dotnet list package` with the .NET CLI.
 
 
 ### Step 4: Create the data model
@@ -582,7 +582,7 @@ export default App;
 
 The React Data Grid can bind data from a **SQLite database** using [DataManager](https://ej2.syncfusion.com/react/documentation/data/getting-started) and set the `adaptor` property to `CustomAdaptor` for scenarios that require full control over data operations.
 
-The `CustomAdaptor` (client-side) is a bridge between the React Grid and the ASP.NET Core backend. It extends the `UrlAdaptor` and handles all data operation requests by constructing HTTP POST calls to corresponding server endpoints. When the Grid performs operations like reading, searching, filtering, sorting, paging, and CRUD operations, the CustomAdaptor intercepts these actions and formats them into HTTP requests. These requests are sent to the ASP.NET Core Web API controller on the server, which processes the `DataManagerRequest` using Entity Framework Core to query the SQLite database and return the results.
+The `CustomAdaptor` (client-side) is a bridge between the React Grid and the ASP.NET Core back end. It extends the `UrlAdaptor` and handles all data operation requests by constructing HTTP POST calls to corresponding server endpoints. When the Grid performs operations like reading, searching, filtering, sorting, paging, and CRUD operations, the CustomAdaptor intercepts these actions and formats them into HTTP requests. These requests are sent to the ASP.NET Core Web API controller on the server, which processes the `DataManagerRequest` using Entity Framework Core to query the SQLite database and return the results.
 
 **Instructions:**
 

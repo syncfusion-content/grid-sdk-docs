@@ -48,7 +48,7 @@ Ensure the following software and packages are installed before proceeding:
 | 5 | Implement the repository pattern with Dapper for efficient data access | [View](#step-6-create-the-repository-class) |
 | 6 | Create a React Grid component that supports searching, filtering, sorting, paging, and CRUD operations | [View](#integrating-syncfusion-react-grid) |
 | 7 | Handle bulk operations and batch updates | [View](#step-10-perform-crud-operations) |
-| 8 | Complete end‑to‑end reservation management workflow using the Syncfusio<sup style="font-size:70%">&reg;</sup>n React Grid with server‑side processing and SQL Server integration | [View](#step-11-complete-code)  |
+| 8 | Complete end‑to‑end reservation management workflow using the Syncfusion<sup style="font-size:70%">&reg;</sup> React Grid with server‑side processing and SQL Server integration | [View](#step-11-complete-code)  |
 | 9 | Explore a complete working sample available on GitHub | [View](#complete-sample-repository) |
 
 
@@ -608,7 +608,7 @@ export default App;
 
 The React Data Grid can bind data from a **SQL Server** database using [DataManager](https://ej2.syncfusion.com/react/documentation/data/getting-started) and set the `adaptor` property to `CustomAdaptor` for scenarios that require full control over data operations.
 
-The `CustomAdaptor` (client-side) is a bridge between the React Grid and the ASP.NET Core backend. It extends the `UrlAdaptor` and handles all data operation requests by constructing HTTP POST calls to corresponding server endpoints. When the Grid performs operations like reading, searching, filtering, sorting, paging, and CRUD operations, the CustomAdaptor intercepts these actions and formats them into HTTP requests. These requests are sent to the ASP.NET Core Web API controller on the server, which processes the `DataManagerRequest` using Dapper to query the SQL Server database and return the results.
+The `CustomAdaptor` (client-side) is a bridge between the React Grid and the ASP.NET Core back end. It extends the `UrlAdaptor` and handles all data operation requests by constructing HTTP POST calls to corresponding server endpoints. When the Grid performs operations like reading, searching, filtering, sorting, paging, and CRUD operations, the CustomAdaptor intercepts these actions and formats them into HTTP requests. These requests are sent to the ASP.NET Core Web API controller on the server, which processes the `DataManagerRequest` using Dapper to query the SQL Server database and return the results.
 
 **Instructions:**
 
