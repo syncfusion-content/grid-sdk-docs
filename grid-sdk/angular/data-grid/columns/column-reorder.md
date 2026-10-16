@@ -32,7 +32,7 @@ The following example demonstrates column reordering in the Grid component:
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/reorder-cs1" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/reorder-cs1" %}
 
 > * The appearance of the column headers during drag and drop can be customized using the [columnDrag](https://ej2.syncfusion.com/angular/documentation/api/grid#columndrag) and [columnDrop](https://ej2.syncfusion.com/angular/documentation/api/grid#columndrop) events.
 > * When columns are reordered, the position of the corresponding column data will also be changed. Ensure that any additional code or logic that relies on the order of the column data is updated accordingly.
@@ -53,7 +53,7 @@ In the following example, the "ShipCity" column is prevented from being reordere
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/reorder-cs6" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/reorder-cs6" %}
 
 ## Reorder columns externally
 
@@ -85,7 +85,7 @@ In this example, the "Customer ID" column, located at index "1", is moved to ind
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/reorder-cs7" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/reorder-cs7" %}
 
 ### Reorder columns by target index
 
@@ -112,7 +112,7 @@ The following example demonstrates the use of the `reorderColumnByTargetIndex` m
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/reorder-cs8" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/reorder-cs8" %}
 
 ### Reorder columns by field names
 
@@ -139,7 +139,7 @@ The following example demonstrates the use of the `reorderColumns` method to reo
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/reorder-cs9" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/reorder-cs9" %}
 
 ### Reorder columns using column model
 
@@ -178,7 +178,7 @@ This shows the method handling reordering of both normal and stacked header colu
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/reorder-cs10" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/reorder-cs10" %}
 
 ## Column Reorder events
 
@@ -262,4 +262,4 @@ export class AppComponent implements OnInit {
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/reorder-cs4" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/reorder-cs4" %}

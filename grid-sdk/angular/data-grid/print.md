@@ -24,7 +24,7 @@ Enable printing in the grid by configuring the [toolbar](https://ej2.syncfusion.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/print-cs1" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/print-cs1" %}
 
 ## Page setup
 
@@ -49,7 +49,7 @@ The Grid's content can be printed using an external button by calling the `print
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/print-cs2" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/print-cs2" %}
 
 ## Print visible page 
 
@@ -65,7 +65,7 @@ By default, the Angular Data Grid prints all pages. Use the [printMode](https://
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/print-cs3" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/print-cs3" %}
 
 ## Print only selected records
 
@@ -81,7 +81,7 @@ By default, the Angular Data Grid prints all data bound to its [dataSource](http
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/print-cs4" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/print-cs4" %}
 
 ## Print the hierarchy grids
 
@@ -105,7 +105,7 @@ The `hierarchyPrintMode` property in the Angular Grid controls printing behavior
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/print-cs5" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/print-cs5" %}
 
 ## Print master detail grids
 
@@ -123,7 +123,7 @@ The `beforePrint` event fires before printing. Handling this event and adding th
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/print-cs6" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/print-cs6" %}
 
 ## Print large number of columns
 
@@ -153,7 +153,7 @@ The following example demonstrates showing a hidden column (Customer ID) and hid
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/print-cs7" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/print-cs7" %}
 
 ## Add title to print header
 
@@ -171,7 +171,7 @@ Example: adding a title to the grid print output:
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/print-method" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/print-method" %}
 
 ## Optimized approaches for printing full data sets
 
@@ -191,7 +191,7 @@ The Angular Data Grid provides a [beforePrint](https://ej2.syncfusion.com/angula
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/print-cs8" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/print-cs8" %}
 
 ## Print grid along with other components
 
@@ -207,4 +207,4 @@ To print the Angular Data Grid together with other components (for example, a `C
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/print-cs9" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/print-cs9" %}

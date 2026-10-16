@@ -32,7 +32,7 @@ The following example demonstrates exporting current page to a PDF document when
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/exporting-cs11" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/exporting-cs11" %}
 
 ## Export selected records
 
@@ -62,7 +62,7 @@ The following example demonstrates exporting the selected records to a PDF docum
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/exporting-filtered-data-cs3" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/exporting-filtered-data-cs3" %}
 
 ## Export filtered records
 
@@ -92,7 +92,7 @@ The following example demonstrates exporting the filtered records to a PDF docum
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/exporting-filtered-data-cs4" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/exporting-filtered-data-cs4" %}
 
 ## Export with hidden columns
 
@@ -112,7 +112,7 @@ The following example demonstrates exporting hidden columns to a PDF file. In th
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/exporting-cs12" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/exporting-cs12" %}
 
 ## Show or hide columns while exporting
 
@@ -140,7 +140,7 @@ In the following example, the "Customer ID" is initially a hidden column in the 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/exporting-cs13" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/exporting-cs13" %}
 
 ## Show or hide columns while exporting with stacked header
 
@@ -168,7 +168,7 @@ In the following example, the "Ship Name" is initially a hidden column in the Gr
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/exportpdf-show-hide" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/exportpdf-show-hide" %}
 
 ## Change page orientation
 
@@ -194,7 +194,7 @@ The following example demonstrates exporting the grid into PDF document by setti
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/exporting-cs14" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/exporting-cs14" %}
 
 ## Change page size
 
@@ -244,7 +244,7 @@ The following example demonstrates exporting the grid into PDF document by setti
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/exporting-cs15" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/exporting-cs15" %}
 
 ## Define file name
 
@@ -264,7 +264,7 @@ The following example demonstrates defining a file name using `pdfExportProperti
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/exporting-cs16" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/exporting-cs16" %}
 
 ## Enabling horizontal overflow
 
@@ -284,7 +284,7 @@ The following example uses the [EJ2 Toggle Switch Button](https://ej2.syncfusion
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/exporting-cs27" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/exporting-cs27" %}
 
 ## Customizing columns on export
 
@@ -310,7 +310,7 @@ The following example demonstrates customizing the grid columns when exporting a
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/exporting-cs28" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/exporting-cs28" %}
 
 ## Font and color customization
 
@@ -346,7 +346,7 @@ The following example demonstrates, changing the default font when exporting a d
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/exporting-cs26" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/exporting-cs26" %}
 
 ### Add custom font
 
@@ -366,7 +366,7 @@ The following example demonstrates the usage of the custom "Algeria" font for ex
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/exporting-cs17" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/exporting-cs17" %}
 
 > `PdfTrueTypeFont` accepts base64 format of the custom font.
 
@@ -388,7 +388,7 @@ The following example demonstrates customizing the background color of the "Frei
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/exporting-cs9" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/exporting-cs9" %}
 
 ## Export grid as blob
 
@@ -406,4 +406,4 @@ The following example demonstrates obtaining the blob data of the exported grid 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/export-grid-as-blob-cs1" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/export-grid-as-blob-cs1" %}

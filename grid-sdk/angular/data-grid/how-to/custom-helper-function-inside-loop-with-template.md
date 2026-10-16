@@ -47,4 +47,4 @@ The following example demonstrates using a helper inside a loop with a template 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/custom-helper-loop-template" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/custom-helper-loop-template" %}

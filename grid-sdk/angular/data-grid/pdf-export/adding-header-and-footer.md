@@ -168,7 +168,7 @@ The following example demonstrates adding a header and footer to the exported gr
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/exporting-cs5" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/exporting-cs5" %}
 
 ## Repeat column headers on every page
 
@@ -188,4 +188,4 @@ The following example demonstrates repeating the column header on every page of 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/exporting-cs6" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/exporting-cs6" %}

@@ -26,4 +26,4 @@ The following example demonstrates rendering an image and text within the templa
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/empty-record-template-cs1" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/empty-record-template-cs1" %}
