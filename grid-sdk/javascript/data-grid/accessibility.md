@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Accessibility in JavaScript Grid control | Syncfusion
 description: Learn here all about Accessibility in Syncfusion JavaScript Grid control of Syncfusion Essential JS 2 and more.
@@ -215,20 +215,7 @@ To prevent the default key action behavior in the grid, you can utilize the [key
 
 The following example demonstrates how to prevent the default behavior of the **"ENTER"** key using the `keyPressed` event.
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/keyboard-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/keyboard-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/keyboard-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -240,7 +227,7 @@ The following example demonstrates how to prevent the default behavior of the **
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/keyboard-cs1" %}
-{% endif %}
+
 
 ### Custom shortcut keys to perform grid actions
 
@@ -266,20 +253,7 @@ And prevented the default actions associated with the following keyboard shortcu
 
 You can add more custom shortcuts and actions as needed to enhance the functionality of your JavaScript Grid control.
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/keyboard-cs2/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/keyboard-cs2/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/keyboard-cs2" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -291,7 +265,7 @@ You can add more custom shortcuts and actions as needed to enhance the functiona
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/keyboard-cs2" %}
-{% endif %}
+
 
 ## Ensuring accessibility
 
@@ -299,20 +273,7 @@ The Grid control's accessibility levels are ensured through an [accessibility-ch
 
 The accessibility compliance of the Grid control is shown in the following sample. Open the [sample](https://ej2.syncfusion.com/accessibility/grid.html) in a new window to evaluate the accessibility of the Grid control with accessibility tools.
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/ensuring-accessibility-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/ensuring-accessibility-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/ensuring-accessibility-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -324,7 +285,7 @@ The accessibility compliance of the Grid control is shown in the following sampl
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/ensuring-accessibility-cs1" %}
-{% endif %}
+
 
 ## See also
 

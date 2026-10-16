@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Exporting Grid with Templates in JavaScript Grid control | Syncfusion
 description: Learn here all about Exporting grids with templates in Syncfusion JavaScript Grid control of Syncfusion Essential JS 2 and more.
@@ -20,20 +20,7 @@ In the following sample, the hyperlinks and images are exported to Excel using [
 
 > Excel Export supports base64 string to export the images.
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/column-template-export-cs2/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/column-template-export-cs2/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/column-template-export-cs2" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -45,7 +32,7 @@ In the following sample, the hyperlinks and images are exported to Excel using [
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/column-template-export-cs2" %}
-{% endif %}
+
 
 ![ColumnTemplateExport](../images/colTemp_excel_expt.gif)
 
@@ -65,20 +52,7 @@ In the following sample, the detail row content is formatted by specifying the [
 
 > When using [rowSpan](../../api/grid/detailTemplateCell#rowspan), it is Essential<sup style="font-size:70%">&reg;</sup> to provide the cell's [index](../../api/grid/detailTemplateCell#index) for proper functionality.
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/detail-template-export-cs2/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/detail-template-export-cs2/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/detail-template-export-cs2" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -90,7 +64,7 @@ In the following sample, the detail row content is formatted by specifying the [
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/detail-template-export-cs2" %}
-{% endif %}
+
 
 ![DetailTemplateExport](../images/detailTemp_excel_expt.gif)
 
@@ -100,20 +74,7 @@ The Excel export feature enables exporting of Grid with a caption template to an
 
 In the following sample, the customized caption text is exported to Excel using [captionText](../../api/grid/exportGroupCaptionEventArgs#captiontext) property in the [exportGroupCaption](../../api/grid#exportgroupcaption) event.
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/caption-template-export-cs2/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/caption-template-export-cs2/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/caption-template-export-cs2" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -125,6 +86,6 @@ In the following sample, the customized caption text is exported to Excel using 
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/caption-template-export-cs2" %}
-{% endif %}
+
 
 ![CaptionTemplateExport](../images/captionTemp_excel_expt.gif)

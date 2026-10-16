@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Filter menu in JavaScript Grid control | Syncfusion
 description: Learn here all about Filter menu in Syncfusion JavaScript Grid control of Syncfusion Essential JS 2 and more.
@@ -16,20 +16,7 @@ To enable the filter menu, you need to set the [filterSettings->type](../../api/
 
 Here is an example that demonstrates the usage of the filter menu in the JavaScript Grid:
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/grid-cs65/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/grid-cs65/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grid-cs65" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -41,7 +28,7 @@ Here is an example that demonstrates the usage of the filter menu in the JavaScr
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grid-cs65" %}
-{% endif %}
+
 
 > * [allowFiltering](../../api/grid#allowfiltering) must be set as true to enable filter menu.
 > * By setting [columns->allowFiltering](../../api/grid/column#allowfiltering) as false will prevent filter menu rendering for a particular column.
@@ -60,20 +47,7 @@ For example, you can replace the standard search box in the filter menu with a d
 
 Here is a sample code demonstrating how to render a dropdownlist control for the **CustomerID** column:
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/grid-cs66/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/grid-cs66/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grid-cs66" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -85,7 +59,7 @@ Here is a sample code demonstrating how to render a dropdownlist control for the
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grid-cs66" %}
-{% endif %}
+
 
 **Default filter input for CustomerID column**
 ![Default filter input for CustomerID column](../images/filter-menu-auto-complete.gif)
@@ -98,20 +72,7 @@ The JavaScript Grid provides a feature to display the time in a 24-hour format i
 
 Here is an example that demonstrates how to show 24 hours time format in filter dialog:
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/filter-menu-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/filter-menu-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/filter-menu-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -123,7 +84,7 @@ Here is an example that demonstrates how to show 24 hours time format in filter 
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/filter-menu-cs1" %}
-{% endif %}
+
 
 ## Customizing filter menu operators list
 
@@ -138,20 +99,7 @@ The available options for customization are:
   
 Here is an example of how to customize the filter operators list in JavaScript Grid:
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/grid-cs67/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/grid-cs67/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grid-cs67" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -163,7 +111,7 @@ Here is an example of how to customize the filter operators list in JavaScript G
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grid-cs67" %}
-{% endif %}
+
 
 ## Filter by multiple keywords using filter menu
 
@@ -171,20 +119,7 @@ The JavaScript Grid allows you to perform filtering actions based on multiple ke
 
 Here is an example that demonstrates how to perform filtering by multiple keywords using the filter menu in the JavaScript Grid:
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/grid-cs69/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/grid-cs69/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grid-cs69" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -196,23 +131,13 @@ Here is an example that demonstrates how to perform filtering by multiple keywor
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grid-cs69" %}
-{% endif %}
+
 
 ## Customize the default input control of filter menu dialog
 
 You have the flexibility to customize the default settings of input controls within the menu filter by utilizing the `params` property within the column definition of [filter](../../api/grid/column#filter). This allows you to modify the behavior of specific filter controls to better suit your needs.
 
-{% if page.publishingplatform == "typescript" %}
- 
-| Column Type | Default control                                                                                 | Customization                            | API Reference                                                                                             |
-| ----------- | ------------------------------------------------------------------------------------------------- | ---------------------------------------- | --------------------------------------------------------------------------------------------------------- |
-| String      | [AutoComplete](../../auto-complete/getting-started)    | Eg: { params: { autofill: false }}       | [AutoComplete API](../../api/auto-complete/autoCompleteModel/) |
-| Number      | [NumericTextBox](../../numerictextbox/getting-started) | Eg: { params: { showSpinButton: false }} | [NumericTextBox API](../../api/numerictextbox)                 |
-| Boolean     | [DropDownList](../../drop-down-list/getting-started)   | Eg: { params: { sortOrder:'Ascending'}}  | [DropDownList API](../../api/drop-down-list)                   |
-| Date        | [DatePicker](../../datepicker/getting-started)         | Eg: { params: { weekNumber: true }}      | [DatePicker API](../../api/datepicker)                         |
-| DateTime    | [DateTimePicker](../../datetimepicker/getting-started) | Eg: { params: { showClearButton: true }} | [DateTimePicker API](../../api/datetimepicker)                 |
 
-{% elsif page.publishingplatform == "javascript" %}
  
 | Column Type | Default control                                                                                 | Customization                            | API Reference                                                                                             |
 | ----------- | ------------------------------------------------------------------------------------------------- | ---------------------------------------- | --------------------------------------------------------------------------------------------------------- |
@@ -222,7 +147,7 @@ You have the flexibility to customize the default settings of input controls wit
 | Date        | [DatePicker](../../datepicker/es5-getting-started)         | Eg: { params: { weekNumber: true }}      | [DatePicker API](../../api/datepicker)                         |
 | DateTime    | [DateTimePicker](../../datetimepicker/es5-getting-started) | Eg: { params: { showClearButton: true }} | [DateTimePicker API](../../api/datetimepicker)                 |
 
-{% endif %}
+
 
 
 
@@ -230,20 +155,7 @@ You have the flexibility to customize the default settings of input controls wit
 
 In the example provided below, the **OrderID** and **Freight** columns are numeric columns. When you open the filter dialog for these columns, you will notice that a `NumericTextBox` with a spin button is displayed to change or set the filter value. However, using the `params` property, you can hide the spin button specifically for the **OrderID** column.
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/filter-menu-cs2/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/filter-menu-cs2/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/filter-menu-cs2" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -255,36 +167,19 @@ In the example provided below, the **OrderID** and **Freight** columns are numer
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/filter-menu-cs2" %}
-{% endif %}
+
 
 ### Prevent autofill option in autocomplete of menu filter
 
-{% if page.publishingplatform == "typescript" %}
- 
-By default, the [AutoComplete](../../auto-complete/getting-started) control in the filter menu dialog is set to automatically fill suggestions as you type. However, there might be scenarios where you want to prevent this autofill behavior to provide a more customized and controlled user experience.
 
- {% elsif page.publishingplatform == "javascript" %}
  
 By default, the [AutoComplete](../../auto-complete/es5-getting-started) control in the filter menu dialog is set to automatically fill suggestions as you type. However, there might be scenarios where you want to prevent this autofill behavior to provide a more customized and controlled user experience.
 
-{% endif %}
+
 
 You can prevent autofill feature by setting the [autofill](../../api/auto-complete#autofill) parameter to **false** using the `params` property within the column definition of the [filter](../../api/grid/column#filter). 
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/filter-menu-cs3/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/filter-menu-cs3/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/filter-menu-cs3" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -296,7 +191,7 @@ You can prevent autofill feature by setting the [autofill](../../api/auto-comple
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/filter-menu-cs3" %}
-{% endif %}
+
 
 ## Hide default filter icons while perform filtering through method
 
@@ -312,20 +207,7 @@ To customize the filter icon in the Grid, use the **display** property of the **
 
 The following example demonstrate how to hide the default filter icons while filtering the **CustomerID** column programmatically using a method.
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/filter-menu-hide/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/filter-menu-hide/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/filter-menu-hide" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -337,7 +219,7 @@ The following example demonstrate how to hide the default filter icons while fil
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/filter-menu-hide" %}
-{% endif %}
+
 
 ## Filter menu events
 
@@ -349,20 +231,7 @@ The JavaScript Grid offers the [actionBegin](../../api/grid#actionbegin) and [ac
 
 Here's an example of how to use these events to handle filter menu action in the JavaScript Grid:
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/filter-menu-cs4/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/filter-menu-cs4/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/filter-menu-cs4" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -374,7 +243,7 @@ Here's an example of how to use these events to handle filter menu action in the
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/filter-menu-cs4" %}
-{% endif %}
+
 
 ## Troubleshoot filter menu operator issue
 
@@ -382,21 +251,7 @@ When using the filter menu, the UI displays operators for all columns based on t
 
 **Explicitly Define Data Type:** When defining columns in your JavaScript Grid control, make sure to explicitly specify the data type for each column. You can do this using the type property within the columns configuration. For example:
 
-{% if page.publishingplatform == "typescript" %}
- 
-```ts
-let grid: Grid = new Grid({
-    dataSource: data,
-    columns: [
-        { field: 'OrderID', headerText: 'Order ID', type: 'number', width: 120 },
-        { field: 'CustomerName', headerText: 'CustomerName', type: 'string', width: 150 },
-                    <!-- Define data types for other columns as needed -->
-    ],
-});     
-grid.appendTo('#Grid');
-```
 
- {% elsif page.publishingplatform == "javascript" %}
  
 ```js
 var grid = new ej.grids.Grid({
@@ -410,7 +265,7 @@ var grid = new ej.grids.Grid({
 grid.appendTo('#Grid');
 ```
 
-{% endif %}
+
 
 **Handle Null or Empty Data:** If your data source contains null or empty values, make sure that these values are appropriately handled within your data source or by preprocessing your data to ensure consistency.
 

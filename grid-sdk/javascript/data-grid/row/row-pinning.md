@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Row pinning in JavaScript Grid control | Syncfusion
 description: Learn here all about Row pinning in Syncfusion JavaScript Grid control of Syncfusion Essential JS 2 and more.
@@ -19,20 +19,7 @@ This functionality does not change the grid's overall content height, keeping th
  
 The following example pins rows with "Critical" priority and "Open" status at the top using the `isRowPinned` callback function.
 
-{% if page.publishingplatform == "typescript" %}
 
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/rows-pinning-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/rows-pinning-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/rows-pinning-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -44,7 +31,7 @@ The following example pins rows with "Critical" priority and "Open" status at th
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/rows-pinning-cs1" %}
-{% endif %}
+
 
 > Pinning rows requires a primary key column for mapping the pinned rows to their original records. To define the primary key, set [columns->isPrimaryKey](../../api/grid/column#isprimarykey) to **true** in particular column.
 
@@ -52,20 +39,7 @@ The following example pins rows with "Critical" priority and "Open" status at th
 
 Row pinning in the Grid control keeps important rows visible at the top while navigating through pages. Pinned rows are not counted as part of the page size and remain fixed at the top of the grid. For example, if  [pageSettings->pageSize](../../api/grid/pagesettings#pagesize) is set to "10" and "2" rows are pinned, those "2" rows stay at the top, and the grid displays "10" additional rows beneath them. When moving to another page, the pinned rows remain fixed at the top, and the next set of  "10" records is rendered below.
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/rows-pinning-cs2/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/rows-pinning-cs2/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/rows-pinning-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -77,26 +51,13 @@ Row pinning in the Grid control keeps important rows visible at the top while na
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/rows-pinning-cs2" %}
-{% endif %}
+
 
 ## Pinned rows selection
 
 Pinned rows can be selected in the same way as regular rows. Their selection state is always synchronized with the corresponding data rows through the primary key value. This ensures consistent behavior during all grid operations, including paging, sorting, and filtering. Whether selection is performed using the mouse, keyboard, or checkbox selection, pinned rows always display the same selection state as their associated data rows.
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/rows-pinning-cs4/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/rows-pinning-cs4/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/rows-pinning-cs4" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -108,7 +69,7 @@ Pinned rows can be selected in the same way as regular rows. Their selection sta
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/rows-pinning-cs4" %}
-{% endif %}
+
 
 > The [selectionSettings->persistSelection](../../api/grid/selectionsettings#persistselection) will be automatically enabled when pinning the rows using the `isRowPinned` callback function.
 
@@ -118,20 +79,7 @@ Row pinning remains fully compatible with filtering and sorting operations in th
  
 When sorting is applied to any column, pinned rows are reordered using the same sorting rules while remaining fixed at the top of the grid. This ensures that pinned rows stay visible and correctly positioned, even as the rest of the data is reorganized. The combined behavior provides a smooth and intuitive experience, allowing data to be refined and analyzed without losing visibility of important pinned records.
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/rows-pinning-cs3/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/rows-pinning-cs3/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/rows-pinning-cs3" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -143,27 +91,14 @@ When sorting is applied to any column, pinned rows are reordered using the same 
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/rows-pinning-cs3" %}
-{% endif %}
+
 
 
 ## CRUD operations with row pinning
 
 Row pinning fully supports CRUD operations by keeping pinned rows and their corresponding original rows synchronized. Any edit, update, or deletion applied to a pinned row is immediately reflected in the original row, and any change made to the original row is likewise mirrored in the pinned row. This ensures consistent and accurate data across both views.
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/rows-pinning-cs5/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/rows-pinning-cs5/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/rows-pinning-cs5" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -175,26 +110,13 @@ Row pinning fully supports CRUD operations by keeping pinned rows and their corr
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/rows-pinning-cs5" %}
-{% endif %}
+
 
 ## Dynamic row pinning
 
 Row pinning provides dynamic control through the built-in context menu, allowing quick actions to pin or remove pinned rows. Using options such as `PinRow` and `UnpinRow`, any row can be right-clicked to pin it to the top or quickly remove it from the pinned section.
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/rows-pinning-cs6/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/rows-pinning-cs6/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/rows-pinning-cs6" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -206,7 +128,7 @@ Row pinning provides dynamic control through the built-in context menu, allowing
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/rows-pinning-cs6" %}
-{% endif %}
+
 
 ## Limitation
 

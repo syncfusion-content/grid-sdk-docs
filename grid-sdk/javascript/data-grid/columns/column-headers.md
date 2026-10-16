@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Headers in JavaScript Grid control | Syncfusion
 description: Learn here all about Headers in Syncfusion JavaScript Grid control of Syncfusion Essential JS 2 and more.
@@ -18,20 +18,7 @@ By default, the header text of a column in Grid is displayed from the column’s
 
 To enable the `headerText` property, you simply need to define it in the  [columns](../../api/grid/column#columns) property. The following example demonstrates how to enable header text for a Grid column.
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/grid-cs8/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/grid-cs8/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grid-cs8" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -43,7 +30,7 @@ To enable the `headerText` property, you simply need to define it in the  [colum
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grid-cs8" %}
-{% endif %}
+
 
 > * The `headerText` property is optional, and if it is not defined, then the corresponding column’s  field value is set as header text for that column.
 > * You can also use the [headerTemplate](../../api/grid/column#headertemplate) property to apply custom HTML content to the header cell.
@@ -55,20 +42,7 @@ The [headerTemplate](../../api/grid/column#headertemplate) property is used to c
 
 In this demo, the custom element is rendered for both **CustomerID** and **OrderDate** column headers.
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/headertemplate-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/headertemplate-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/headertemplate-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -80,7 +54,7 @@ In this demo, the custom element is rendered for both **CustomerID** and **Order
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/headertemplate-cs1" %}
-{% endif %}
+
 
 >* The `headerTemplate` property is only applicable to Grid columns that have a header element.
 >* You can use any HTML or JavaScript control in the header template to add additional functionality to the header element.
@@ -91,20 +65,7 @@ In Grid, you can group multiple levels of column headers by stacking the Grid co
 
 You can customize the appearance of the stacked header elements by using the headerTemplate property. This property accepts an id reference, which allows you to define custom HTML elements or JavaScript control to the header element. Here's an example of how to use stacked headers with a custom `headerTemplate` in Syncfusion<sup style="font-size:70%">&reg;</sup> Grid.
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/stackedheader-cs1-c/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/stackedheader-cs1-c/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/stackedheader-cs1-c" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -116,7 +77,7 @@ You can customize the appearance of the stacked header elements by using the hea
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/stackedheader-cs1-c" %}
-{% endif %}
+
 
 ## Align the text of header text
 
@@ -129,20 +90,7 @@ You can horizontally align the text in column headers of the Grid control using 
 
 The following example demonstrates how to dynamically change the alignment of the header text based on DropDown change:
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/AlignText-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/AlignText-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/AlignText-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -154,7 +102,7 @@ The following example demonstrates how to dynamically change the alignment of th
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/AlignText-cs1" %}
-{% endif %}
+
 
 >* The `headerTextAlign` property only changes the alignment of the text in the column header, and not the content of the column. If you want to align both the column header and content, you can use the [textAlign](../../api/grid/column#textalign) property.
 >* You can also use the `headerTextAlign` property with the stacked header feature in Syncfusion<sup style="font-size:70%">&reg;</sup> Grid. The property will align the header text in the sub-headers as well.
@@ -177,20 +125,7 @@ Grid provides the below three options for configuring:
 
 The following example demonstrates how to dynamically change the auto-wrap of the header text based on DropDown change.
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/column-header-autowrap/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/column-header-autowrap/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/column-header-autowrap" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -202,7 +137,7 @@ The following example demonstrates how to dynamically change the auto-wrap of th
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/column-header-autowrap" %}
-{% endif %}
+
 
 ## Change the height of header
 
@@ -222,20 +157,7 @@ You can use CSS to override the default height of the **.e-grid .e-headercell** 
 
 To change the height of the header dynamically, you can use the [getHeaderContent](../../api/grid#getheadercontent) method to get the header content element of the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid. Then, you can use the **querySelectorAll** method to get all the header cell elements with the class **e-headercell**. Finally, you can loop through each header cell element and set its style property to adjust the height.
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/column-header-height/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/column-header-height/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/column-header-height" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -247,7 +169,7 @@ To change the height of the header dynamically, you can use the [getHeaderConten
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/column-header-height" %}
-{% endif %}
+
 
 >* You can also use the [getHeaderTable](../../api/grid#getheadertable) method to get the table element of the header, and then adjust the height.
 >* You cannot change the height of row below the default height of 42px using the **e-columnheader** class.
@@ -290,20 +212,7 @@ The Grid control provides several methods that allow you to change the column he
 
 Here is an example of how to change the header text of a column using the `getColumnByField` method:
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/change-header-text-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/change-header-text-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/change-header-text-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -315,7 +224,7 @@ Here is an example of how to change the header text of a column using the `getCo
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/change-header-text-cs1" %}
-{% endif %}
+
 
 **Changing header text using headerValueAccessor property**
 
@@ -334,20 +243,7 @@ To enable the `headerValueAccessor` property, you need to set the `headerValueAc
   
 Here's an example of how to use the `headerValueAccessor` property to change the header text of a column:
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/column-header-property/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/column-header-property/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/column-header-property" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -359,26 +255,13 @@ Here's an example of how to use the `headerValueAccessor` property to change the
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/column-header-property" %}
-{% endif %}
+
 
 **Changing the header text of all columns**
 
 If you want to change the header text of all columns in the grid, you can loop through the Columns collection of the grid and set the `headerText` property for each column. Here is an example:
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/column-header-allcolumn/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/column-header-allcolumn/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/column-header-allcolumn" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -390,7 +273,7 @@ If you want to change the header text of all columns in the grid, you can loop t
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/column-header-allcolumn" %}
-{% endif %}
+
 
 ## Change the orientation of header text
 
@@ -422,19 +305,7 @@ For example, to add the orientation css class to the Freight column, you can use
 
 After adding the custom CSS class to a column, you need to resize the header cell height so that the rotated header text is fully visible. You can do this by using the following code:
 
-{% if page.publishingplatform == "typescript" %}
- 
-```ts
-function setHeaderHeight() {
-  let textWidth: number = (<HTMLElement>document.querySelector('.orientationcss > div')).scrollWidth;
-  //Obtain the width of the headerText content.
-  let headerCell: NodeList = document.querySelectorAll('.e-headercell');
-  for (let i: number = 0; i < headerCell.length; i++) {
-    (<HTMLElement>headerCell.item(i)).style.height = textWidth + 'px'; //Assign the obtained textWidth as the height of the headerCell.
-  }
-}
-```
-{% elsif page.publishingplatform == "javascript" %}
+
  
 ```js
 function setHeaderHeight() {
@@ -446,24 +317,11 @@ function setHeaderHeight() {
   }
 }
 ```
-{% endif %}
+
 
 The following example demonstrates how to change the orientation of the **Freight** column header text to 90 degrees:
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/orientation-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/orientation-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/orientation-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -475,7 +333,7 @@ The following example demonstrates how to change the orientation of the **Freigh
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/orientation-cs1" %}
-{% endif %}
+
 
 ## Custom tooltip for header 
 
@@ -485,20 +343,7 @@ To enable custom tooltips for headers, you can use the [beforeRender](../../api/
 
 Here's an example of how to use the `beforeRender` event to add a custom tooltip to a header cell:
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/column-header-tooltip/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/column-header-tooltip/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/column-header-tooltip" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -510,7 +355,7 @@ Here's an example of how to use the `beforeRender` event to add a custom tooltip
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/column-header-tooltip" %}
-{% endif %}
+
 
 > * The [headerCellInfo](../../api/grid#headercellinfo) event can also be used to customize the header tooltip. This event is triggered for each header cell after it is rendered.
 
@@ -531,20 +376,7 @@ You can apply styles to the header cells using CSS selectors. The Grid provides 
 
 Here's an example that demonstrates how to customize the appearance of a specific column header in the Grid using **className**.
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/column-header-stylescss/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/column-header-stylescss/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/column-header-stylescss" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -556,7 +388,7 @@ Here's an example that demonstrates how to customize the appearance of a specifi
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/column-header-stylescss" %}
-{% endif %}
+
 
 ### Using property 
 
@@ -581,20 +413,7 @@ Step 2: Set the `customAttributes` property of the desired column to an object t
 
 The following example demonstrates how to customize the appearance of the **OrderID** and **Freight** columns using custom attributes.
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/column-header-stylesproperty/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/column-header-stylesproperty/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/column-header-stylesproperty" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -606,7 +425,7 @@ The following example demonstrates how to customize the appearance of the **Orde
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/column-header-stylesproperty" %}
-{% endif %}
+
 
 ### Using method 
 
@@ -624,20 +443,7 @@ The Syncfusion<sup style="font-size:70%">&reg;</sup> Grid provides methods to cu
 
 Here's an example of how to use these methods to change the style of a specific column header:
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/column-header-stylesmethods/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/column-header-stylesmethods/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/column-header-stylesmethods" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -649,7 +455,7 @@ Here's an example of how to use these methods to change the style of a specific 
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/column-header-stylesmethods" %}
-{% endif %}
+
 >* The unique identifier(UID) is automatically generated by the Grid control and may change whenever the grid is refreshed or updated.
 
 ### Using event
@@ -658,20 +464,7 @@ To customize the appearance of the grid header, you can handle the [headerCellIn
 
 The following example demonstrates how to add a `headerCellInfo` event handler to the grid. In the event handler, checked whether the current header column is **Order Date** field and then applied the appropriate CSS class to the cell based on its value.
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/column-header-stylesevents/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/column-header-stylesevents/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/column-header-stylesevents" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -683,7 +476,7 @@ The following example demonstrates how to add a `headerCellInfo` event handler t
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/column-header-stylesevents" %}
-{% endif %}
+
 
 ## How to refresh header 
 
@@ -693,20 +486,7 @@ To use the refresh header feature, you can call the [refreshHeader](../../api/gr
 
 The following example demonstrates how to use the `refreshHeader` method to update the grid header:
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/column-header-refreshHeader/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/column-header-refreshHeader/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/column-header-refreshHeader" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -718,7 +498,7 @@ The following example demonstrates how to use the `refreshHeader` method to upda
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/column-header-refreshHeader" %}
-{% endif %}
+
 
 >* The `refreshHeader` method updates only the grid header and not the entire grid.
 >* If you want to refresh the entire grid, you can use the `refresh` method instead.

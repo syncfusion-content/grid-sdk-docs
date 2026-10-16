@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Print in JavaScript Grid control | Syncfusion
 description: Learn here all about Print in Syncfusion JavaScript Grid control of Syncfusion Essential JS 2 and more.
@@ -15,20 +15,7 @@ The printing feature in Syncfusion<sup style="font-size:70%">&reg;</sup> Grid al
 
 To add the printing option to the grid's toolbar, simply include the [toolbar](../api/grid#toolbar) property in your grid configuration and add the **Print** as toolbar item. This will allow you to directly initiate the printing process while click on the Print item from the toolbar.
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/grid-cs152/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/grid-cs152/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grid-cs152" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -40,7 +27,7 @@ To add the printing option to the grid's toolbar, simply include the [toolbar](.
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grid-cs152" %}
-{% endif %}
+
 
 ## Page setup
 
@@ -55,20 +42,7 @@ When printing a webpage, some print options, such as layout, paper size, and mar
 
 You can print the grid's content using an external button by utilizing the [print](../api/grid#print) method. This method allows you to trigger the printing process programmatically.
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/print-method-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/print-method-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/print-method-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -80,26 +54,13 @@ You can print the grid's content using an external button by utilizing the [prin
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/print-method-cs1" %}
-{% endif %}
+
 
 ## Print visible Page
 
 By default, the JavaScript Grid prints all the pages of the grid. The [printMode](../api/grid#printmode) property within the grid grants you control over the printing process. However, if you want to print only the current visible page, you can achieve this by setting the [printMode](../api/grid#printmode) property to **CurrentPage**.
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/grid-cs153/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/grid-cs153/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grid-cs153" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -111,7 +72,7 @@ By default, the JavaScript Grid prints all the pages of the grid. The [printMode
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grid-cs153" %}
-{% endif %}
+
 
 ## Print only selected records
 
@@ -119,20 +80,7 @@ By default, the JavaScript Grid prints all the data bound to its dataSource. How
 
 Below is an example code that demonstrates how to print only the selected records from the JavaScript Grid:
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/print-record-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/print-record-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/print-record-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -144,7 +92,7 @@ Below is an example code that demonstrates how to print only the selected record
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/print-record-cs1" %}
-{% endif %}
+
 
 ## Print the hierarchy grid
 
@@ -158,20 +106,7 @@ The `hierarchyPrintMode` property in the JavaScript Grid lets you control the pr
 | All      | Prints the parent grid with all the child grids, whether expanded or collapsed.  |
 | None     | Prints the parent grid alone.                                                    |
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/hierarchy-print-cs3/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/hierarchy-print-cs3/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/hierarchy-print-cs3" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -183,7 +118,7 @@ The `hierarchyPrintMode` property in the JavaScript Grid lets you control the pr
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/hierarchy-print-cs3" %}
-{% endif %}
+
 
 ## Print the master detail grid
 
@@ -191,20 +126,7 @@ The JavaScript Grid provides the option to visualize details of a record in anot
 
 The [beforePrint](../api/grid#beforeprint) event in the JavaScript Grid is triggered before the actual printing process begins. You can handle this event to customize the print output. By adding the detail grid to the `element` argument of the `beforePrint` event, you can ensure that both the master and detail grids are printed on the page.
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/printmastergrid-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/printmastergrid-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/printmastergrid-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -216,7 +138,7 @@ The [beforePrint](../api/grid#beforeprint) event in the JavaScript Grid is trigg
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/printmastergrid-cs1" %}
-{% endif %}
+
 
 ## Print large number of columns
 
@@ -236,20 +158,7 @@ In the `printComplete` event, the column visibility state is reset back to its o
 
 Here's a code example that demonstrates how to show a hidden column (CustomerID) and hide a visible column (ShipCity) during printing and then reset their visibility after printing:
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/showhideColumns-print-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/showhideColumns-print-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/showhideColumns-print-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -261,7 +170,7 @@ Here's a code example that demonstrates how to show a hidden column (CustomerID)
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/showhideColumns-print-cs1" %}
-{% endif %}
+
 
 ## Print the expanded state from other pages
 
@@ -269,20 +178,7 @@ By default, when printing, the Syncfusion<sup style="font-size:70%">&reg;</sup> 
 
 The following example demonstrates how to print the expanded child Grids from other pages:
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/print-expanded-state/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/print-expanded-state/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/print-expanded-state" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -294,7 +190,7 @@ The following example demonstrates how to print the expanded child Grids from ot
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/print-expanded-state" %}
-{% endif %}
+
 
 ## Limitations of printing large data
 
@@ -306,20 +202,7 @@ If printing all the data remains a requirement, an alternative approach is recom
 
 The JavaScript Grid provides a [beforePrint](../api/grid#beforeprint) event that allows you to customize the appearance and styles of the grid before it is sent to the printer. By handling this event, you can ensure that the grid retains its styles and appearance while printing.
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/print-style-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/print-style-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/print-style-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -331,7 +214,7 @@ The JavaScript Grid provides a [beforePrint](../api/grid#beforeprint) event that
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/print-style-cs1" %}
-{% endif %}
+
 
 ## Print grid along with other controls
 
@@ -339,20 +222,7 @@ To print the JavaScript Grid along with another control, such as a chart, you ca
 
 Here is an example of how to print grid along with chart control:
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/print-component-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/print-component-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/print-component-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -364,7 +234,7 @@ Here is an example of how to print grid along with chart control:
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/print-component-cs1" %}
-{% endif %}
+
 
 ## Add a title to the header while printing
 
@@ -372,20 +242,7 @@ You can add a title to the header when printing the Syncfusion<sup style="font-s
 
 Here’s an example of how to add a title to your Grid when using the print function:
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/titleprint-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/titleprint-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/titleprint-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -397,7 +254,7 @@ Here’s an example of how to add a title to your Grid when using the print func
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/titleprint-cs1" %}
-{% endif %}
+
 
 ## See Also
 

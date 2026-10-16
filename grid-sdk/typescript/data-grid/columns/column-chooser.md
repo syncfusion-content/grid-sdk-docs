@@ -15,7 +15,7 @@ The column chooser feature in the TypeScript Grid control allows you to dynamica
 
 To use the column chooser, inject the **ColumnChooser** module in the grid.
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -28,19 +28,7 @@ To use the column chooser, inject the **ColumnChooser** module in the grid.
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/columnchooser-cs1" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/columnchooser-cs1/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/columnchooser-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/columnchooser-cs1" %}
-{% endif %}
 
 > The column chooser dialog displays the header text of each column by default. If the header text is not defined for a column, the corresponding column field name is displayed instead.
 
@@ -50,7 +38,7 @@ You can hide the column names in column chooser by defining the [columns->showIn
 
 In this example, the `columns->showInColumnChooser` property is set to false for the **Order ID** column. As a result, the **Order ID** column will not be displayed in the column chooser dialog.
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -63,19 +51,7 @@ In this example, the `columns->showInColumnChooser` property is set to false for
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/columnchooser-hide-column-cs1" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/columnchooser-hide-column-cs1/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/columnchooser-hide-column-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/columnchooser-hide-column-cs1" %}
-{% endif %}
 
 > * The `columns.showInColumnChooser` property is applied to each column element individually. By setting it to false, you can hide specific columns from the column chooser dialog.
 > * To work with showing and hiding columns, it is necessary to have at least one column of the grid in a visible state
@@ -86,7 +62,7 @@ The TypeScript Grid provides the flexibility to open the column chooser dialog o
 
 Here's an example of how to open the column chooser in the Grid using an external button:
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -99,19 +75,7 @@ Here's an example of how to open the column chooser in the Grid using an externa
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/columnchooser-method-cs1" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/columnchooser-method-cs1/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/columnchooser-method-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/columnchooser-method-cs1" %}
-{% endif %}
 
 ## Customize column chooser dialog size
 	
@@ -129,7 +93,7 @@ To customize the column chooser dialog size, you can use the following CSS style
 }
 ```
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -142,19 +106,7 @@ To customize the column chooser dialog size, you can use the following CSS style
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/customize-columnchooser-cs1" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/customize-columnchooser-cs1/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/customize-columnchooser-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/customize-columnchooser-cs1" %}
-{% endif %}
 
 ## Customizing the order of columns in the column chooser
 
@@ -176,7 +128,7 @@ Descending | Columns are sorted in descending alphabetical order (Z → A).
 
 Here is an example of how to sort the column chooser list based on sort direction:
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -189,19 +141,7 @@ Here is an example of how to sort the column chooser list based on sort directio
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/columnchooser-sorting-cs1" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/columnchooser-sorting-cs1/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/columnchooser-sorting-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/columnchooser-sorting-cs1" %}
-{% endif %}
 
 ### Displaying specific columns in the column chooser
 
@@ -211,7 +151,7 @@ To achieve this, you can specify which columns should appear in the column choos
 
 Here is an example of how to show only specific columns in the column chooser:
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -224,19 +164,7 @@ Here is an example of how to show only specific columns in the column chooser:
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/specific-columnchooser-cs1" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/specific-columnchooser-cs1/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/specific-columnchooser-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/specific-columnchooser-cs1" %}
-{% endif %}
 
 ## Change default search operator of the column chooser 
 
@@ -246,7 +174,7 @@ To change the default search operator of the column chooser in Syncfusion<sup st
 
 Here's an example of how to change the default search operator of the column chooser to **contains** in the TypeScript Grid:
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -259,19 +187,7 @@ Here's an example of how to change the default search operator of the column cho
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/columnchooser-changeoperator-cs1" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/columnchooser-changeoperator-cs1/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/columnchooser-changeoperator-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/columnchooser-changeoperator-cs1" %}
-{% endif %}
 
 ## Diacritics searching in column chooser
 
@@ -279,7 +195,7 @@ By default, the grid ignores diacritic characters when performing a search in th
 
 Here is an example that demonstrates the usage of the `ignoreAccent` property to include diacritic characters for searching in the column chooser:
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -292,19 +208,7 @@ Here is an example that demonstrates the usage of the `ignoreAccent` property to
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/columnchooser-diacriticsSearch-cs1" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/columnchooser-diacriticsSearch-cs1/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/columnchooser-diacriticsSearch-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/columnchooser-diacriticsSearch-cs1" %}
-{% endif %}
 
 ## Column Chooser Template in TypeScript Grid
 
@@ -324,7 +228,7 @@ In this example, a Syncfusion TreeView component is rendered inside the column c
 
 The column chooser footer is customized using `columnChooserSettings.footerTemplate`, replacing the default buttons with customized **Apply** and **Close** buttons. The **Apply** button updates column visibility based on selection, while the **Close** button closes the column chooser via the `onClick` event. Additionally, the header is customized using `columnChooserSettings.headerTemplate` to include a title and an icon.
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -337,19 +241,7 @@ The column chooser footer is customized using `columnChooserSettings.footerTempl
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/column-chooser-template" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/column-chooser-template/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/column-chooser-template/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/column-chooser-template" %}
-{% endif %}
 
 ## Enable and disable search option
 
@@ -359,7 +251,7 @@ The search option is enabled by default in the column chooser. However, you can 
 
 The following example demonstrates how to enable or disable the search option dynamically using a [Switch](../../switch/getting-started) and its [change](../../api/switch#change) event in the Grid.
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -371,17 +263,3 @@ The following example demonstrates how to enable or disable the search option dy
 {% endtabs %}
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/columnchooser-enable-disable" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/columnchooser-enable-disable/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/columnchooser-enable-disable/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/columnchooser-enable-disable" %}
-{% endif %}

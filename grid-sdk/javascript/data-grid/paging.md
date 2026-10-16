@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Paging in JavaScript Grid control | Syncfusion
 description: Learn here all about Paging in Syncfusion JavaScript Grid control of Syncfusion Essential JS 2 and more.
@@ -31,20 +31,7 @@ The Syncfusion<sup style="font-size:70%">&reg;</sup> Grid allows you to control 
 
 The following example demonstrates how to change the page size of a Grid using an external button click based on **TextBox** input.
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/grid-cs134/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/grid-cs134/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grid-cs134" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -56,7 +43,7 @@ The following example demonstrates how to change the page size of a Grid using a
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grid-cs134" %}
-{% endif %}
+
 
 ### Change the page count 
 
@@ -66,20 +53,7 @@ To change the page count in the Syncfusion<sup style="font-size:70%">&reg;</sup>
 
 The following example demonstrates how to change the page count of a Grid using an external button click based on **TextBox** input.
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/grid-cs135/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/grid-cs135/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grid-cs135" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -91,7 +65,7 @@ The following example demonstrates how to change the page count of a Grid using 
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grid-cs135" %}
-{% endif %}
+
 
 ### Change the current page
 
@@ -101,20 +75,7 @@ To change the current page in the Syncfusion<sup style="font-size:70%">&reg;</su
 
 The following example demonstrates how to dynamically change the current page using an external button click based on **TextBox** input:
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/grid-cs136/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/grid-cs136/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grid-cs136" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -126,7 +87,7 @@ The following example demonstrates how to dynamically change the current page us
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grid-cs136" %}
-{% endif %}
+
 
 ### Add current page in URL as a query string 
 
@@ -136,30 +97,13 @@ To add the current page detail to the URL as a query string in the Syncfusion<su
 
 > By enabling the `enableQueryString` property, you can easily copy the URL of the current page and share it with others. When the shared URL is opened, it will load the grid with the exact page that was originally shared.
 
-{% if page.publishingplatform == "typescript" %}
- 
-In the following example, the [EJ2 Toggle Switch Button](../switch/getting-started) control is added to enable or disable the addition of the current page to the URL as a query string. When the switch is toggled, the [change](../api/switch#change) event is triggered and the `enableQueryString` property of the grid is updated accordingly.
 
- {% elsif page.publishingplatform == "javascript" %}
  
 In the following example, the [EJ2 Toggle Switch Button](../switch/es5-getting-started) control is added to enable or disable the addition of the current page to the URL as a query string. When the switch is toggled, the [change](../api/switch#change) event is triggered and the `enableQueryString` property of the grid is updated accordingly.
 
-{% endif %}
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/grid-cs200/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/grid-cs200/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grid-cs200" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -171,7 +115,7 @@ In the following example, the [EJ2 Toggle Switch Button](../switch/es5-getting-s
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grid-cs200" %}
-{% endif %}
+
 
 ## Pager template
 
@@ -181,19 +125,7 @@ To use the pager template, you need to specify the [template](../api/grid/pageSe
 
 The following example demonstrates how to render a **NumericTextBox** control in the pager using the `template` property:
 
-{% if page.publishingplatform == "typescript" %}
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/pager-template-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/pager-template-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/pager-template-cs1" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -205,7 +137,7 @@ The following example demonstrates how to render a **NumericTextBox** control in
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/pager-template-cs1" %}
-{% endif %}
+
 
 ## Pager with page size dropdown
 
@@ -215,20 +147,7 @@ To enable the page size Dropdown feature in the Syncfusion<sup style="font-size:
 
 The following example that demonstrates how to integrate the page size Dropdown feature by configuring the `pageSizes` property:
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/grid-cs201/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/grid-cs201/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grid-cs201" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -240,7 +159,7 @@ The following example that demonstrates how to integrate the page size Dropdown 
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grid-cs201" %}
-{% endif %}
+
 
 > If the pageSizes property is set to a boolean value like 'true' or 'false,' the page size dropdown defaults to an array of strings containing options such as ['All', '5', '10', '15', '20'].
 
@@ -250,20 +169,7 @@ The Syncfusion<sup style="font-size:70%">&reg;</sup> Grid allows you to customiz
 
 The following example demonstrate how to customize the default values of the pager dropdown using the `pageSizes` property:
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/grid-cs202/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/grid-cs202/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grid-cs202" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -275,7 +181,7 @@ The following example demonstrate how to customize the default values of the pag
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grid-cs202" %}
-{% endif %}
+
 
 > The pageSizes property can be configured with either an array of strings or a boolean value.
 
@@ -287,20 +193,7 @@ To achieve page navigation, you can use the [goToPage](../api/grid#gotopage) met
 
 The following example demonstrates how to dynamically navigate to a particular page using the `goToPage` method triggered by an external button click based on **TextBox** input:
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/grid-cs203/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/grid-cs203/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grid-cs203" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -312,7 +205,7 @@ The following example demonstrates how to dynamically navigate to a particular p
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grid-cs203" %}
-{% endif %}
+
 
 ## How to get the pager element
 
@@ -332,20 +225,7 @@ To achieve page size calculation based on an element's height in the Grid, you c
 
 The following example demonstrates how to calculate the page size based on element height using the `calculatePageSizeByParentHeight` method triggered by a change event based on the **NumericTextBox** input:
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/grid-cs204/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/grid-cs204/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grid-cs204" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -357,7 +237,7 @@ The following example demonstrates how to calculate the page size based on eleme
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grid-cs204" %}
-{% endif %}
+
 
 ## Render pager at the top of the grid 
 
@@ -365,20 +245,7 @@ The Grid control provides built-in support for rendering a pager at the bottom o
 
 Here's an example that demonstrates how to render the pager at the top of the grid using the `dataBound` event:
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/grid-cs205/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/grid-cs205/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grid-cs205" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -390,7 +257,7 @@ Here's an example that demonstrates how to render the pager at the top of the gr
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grid-cs205" %}
-{% endif %}
+
 
 > During the paging action, the pager control triggers the below three events.
 > * The [created](../api/pager/pagerModel#created) event triggers when Pager is created.
@@ -407,20 +274,7 @@ The Syncfusion<sup style="font-size:70%">&reg;</sup> Grid control triggers two p
 
 The following example that example demonstrates how to use these events to display notification messages to indicate the current and next page during paging actions in the JavaScript Grid:
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/grid-cs206/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/grid-cs206/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grid-cs206" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -432,7 +286,7 @@ The following example that example demonstrates how to use these events to displ
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grid-cs206" %}
-{% endif %}
+
 
 ## See Also
 

@@ -31,7 +31,7 @@ To achieve this, you can utilize the [loadingIndicator.indicatorType](../../api/
 
 The following example demonstrates how to set the `loadingIndicator.indicatorType` property based on changing the dropdown value using the [change](../../api/drop-down-list#change) event of the `DropDownList` control. The [refreshColumns](../../api/grid#refreshcolumns) method is used to apply the changes and display the updated loading indicator type. 
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -44,19 +44,7 @@ The following example demonstrates how to set the `loadingIndicator.indicatorTyp
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/data-binding-cs1" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/data-binding-cs1/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/data-binding-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/data-binding-cs1" %}
-{% endif %}
 
 ## Refresh the datasource using property
 
@@ -75,25 +63,18 @@ grid.dataSource.splice(selectedRow, 1); // Delete a record.
 
 **Step 2**:  Refresh the datasource after changes by invoking the `setProperties` method.
 
-{% if page.publishingplatform == "typescript" %}
+
  
 ```ts
 (grid as Grid).setProperties({ dataSource:  (grid as Grid).dataSource as object[] });
 
 ```
 
- {% elsif page.publishingplatform == "javascript" %}
  
-```js
-grid.setProperties({dataSource: grid.dataSource});
-
-```
-
-{% endif %}
 
 The following example demonstrates adding a new record to the data source through an external button:
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -106,19 +87,7 @@ The following example demonstrates adding a new record to the data source throug
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/data-binding-cs2" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/data-binding-cs2/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/data-binding-cs2/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/data-binding-cs2" %}
-{% endif %}
 
 ## Dynamically change the datasource or columns or both
 
@@ -206,7 +175,7 @@ The following code demonstrates, how to use the `changeDataSource` method to bin
     gridInstance.changeDataSource(employeeData);
 ```
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -219,29 +188,13 @@ The following code demonstrates, how to use the `changeDataSource` method to bin
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/data-binding-cs3" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/data-binding-cs3/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/data-binding-cs3/index.html %}
-{% endhighlight %}
-{% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/data-binding-cs3" %}
-{% endif %}
 
-{% if page.publishingplatform == "typescript" %}
 >* The Grid state persistence feature does not support the  `changeDataSource` method. 
 >* In this document, the above sample uses the local data for `changeDataSource` method. For those using a remote data source, refer to the [FlexibleData](https://ej2.syncfusion.com/demos/#/bootstrap5/grid/flexible-data.html) resource. 
  
-{% elsif page.publishingplatform == "javascript" %}
- >* The Grid state persistence feature does not support the  `changeDataSource` method.
->* In this document, the above sample uses the local data for `changeDataSource` method. For those using a remote data source, refer to the [FlexibleData](https://ej2.syncfusion.com/javascript/demos/#/bootstrap5/grid/flexible-data.html) resource. 
- 
-{% endif %}
+
 
 ## Prevent to convert local time zone format for date column
 
@@ -251,7 +204,7 @@ To prevent timezone conversion for a date column, use the `serverTimezoneOffset`
 
 The following example demonstrates how to prevent local time zone conversion for date columns in TypeScript Grid by using the `DataUtil.serverTimezoneOffset` property:
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -264,19 +217,7 @@ The following example demonstrates how to prevent local time zone conversion for
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/prevent-timezone-cs1" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/prevent-timezone-cs1/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/prevent-timezone-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/prevent-timezone-cs1" %}
-{% endif %}
 
 ## How to set custom headers using a custom adaptor
 
@@ -288,7 +229,7 @@ To achieve this, the `WebApiAdaptor` can be extended to create the custom adapto
 
 The following example demonstrates how to set custom headers using the custom adaptor in Syncfusion TypeScript Grid.
 
-{% if page.publishingplatform == "typescript" %}
+
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -301,19 +242,7 @@ The following example demonstrates how to set custom headers using the custom ad
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/custom-headers-cs1" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/custom-headers-cs1/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/custom-headers-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/custom-headers-cs1" %}
-{% endif %}
 
 ## See Also
 

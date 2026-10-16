@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: In line editing in JavaScript Grid control | Syncfusion
 description: Learn here all about In line editing in Syncfusion JavaScript Grid control of Syncfusion Essential JS 2 and more.
@@ -14,20 +14,7 @@ The JavaScript Grid control provides a powerful in-line editing feature that all
 
 To enable in-line editing in the grid control, you need to set the [editSettings->mode](../../api/grid/editSettings#mode) property of the Grid's configuration to **Normal**. This property determines the editing mode of the Grid.
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/grid-cs40/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/grid-cs40/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grid-cs40" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -39,7 +26,7 @@ To enable in-line editing in the grid control, you need to set the [editSettings
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grid-cs40" %}
-{% endif %}
+
 
 > Normal edit mode is default mode of editing.
 > When enabling editing, it is necessary to set the [isPrimaryKey](../../api/grid/columnModel#isprimarykey) property value to **true** for the unique column.
@@ -50,20 +37,7 @@ You can automatically update the value of a column based on the edited value of 
 
 In the following example, the **TotalCost** column value is updated based on changes to the **UnitPrice** and **UnitsInStock** columns during batch editing.
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/grid-cs41/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/grid-cs41/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grid-cs41" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -75,7 +49,7 @@ In the following example, the **TotalCost** column value is updated based on cha
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grid-cs41" %}
-{% endif %}
+
 
 ## Cancel edit based on condition
 
@@ -85,20 +59,7 @@ To cancel the edit operation based on a specific condition, you can handle the `
 
 In the below demo, prevent the CRUD operation based on the **Role** column value. If the Role Column is **Admin**, then edit/delete action is prevented for that row.
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/grid-cs42/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/grid-cs42/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grid-cs42" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -110,7 +71,7 @@ In the below demo, prevent the CRUD operation based on the **Role** column value
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grid-cs42" %}
-{% endif %}
+
 
 ## Perform CRUD action programmatically
 
@@ -130,20 +91,7 @@ Performing CRUD actions programmatically refers to the ability to create, read, 
 
 > In both normal and dialog editing modes, these methods can be used.
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/programmaticedit-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/programmaticedit-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/programmaticedit-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -155,7 +103,7 @@ Performing CRUD actions programmatically refers to the ability to create, read, 
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/programmaticedit-cs1" %}
-{% endif %}
+
 
 ## Show confirmation dialog while deleting
 
@@ -163,20 +111,7 @@ Displaying a confirmation dialog adds an extra layer of confirmation when deleti
 
 To enable the confirmation dialog for the delete operation in the Grid, you can set the [showDeleteConfirmDialog](../../api/grid/editSettings#showdeleteconfirmdialog) property of the `editSettings` configuration to **true**. By default, this property is set to **false**.
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/grid-cs43/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/grid-cs43/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grid-cs43" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -188,7 +123,7 @@ To enable the confirmation dialog for the delete operation in the Grid, you can 
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grid-cs43" %}
-{% endif %}
+
 
 > The **showDeleteConfirmDialog** supports all type of edit modes.
 
@@ -200,20 +135,7 @@ To set a default value for a specific column in the Grid, you can use the [defau
 
 Here's an example of how to set a default value for a column:
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/grid-cs44/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/grid-cs44/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grid-cs44" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -225,7 +147,7 @@ Here's an example of how to set a default value for a column:
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grid-cs44" %}
-{% endif %}
+
 
 ## Delete multiple rows
 
@@ -237,20 +159,7 @@ The grid control provides a user-friendly interface for performing various actio
 
 To delete multiple selected records in the grid, first you need to select multiple rows in the grid by highlighting or checking the corresponding checkboxes. Once the desired rows are selected, you can click on the delete icon located in the toolbar. This action will initiate the deletion process and remove the selected records from the grid.
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/inline-delete-rows/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/inline-delete-rows/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/inline-delete-rows" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -262,7 +171,7 @@ To delete multiple selected records in the grid, first you need to select multip
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/inline-delete-rows" %}
-{% endif %}
+
 
 > Also delete the selected records using keyboard shortcut key **delete**.
 
@@ -288,20 +197,7 @@ You can delete multiple rows programmatically by using following method.
 > The `selectionSettings.type` property is set to **Multiple** to enable multiple row selection.
 > To prevent accidental or undesired deletions, it is recommended to enable the `showDeleteConfirmDialog` property of the `editSettings` configuration
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/inline-method-delete/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/inline-method-delete/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/inline-method-delete" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -313,7 +209,7 @@ You can delete multiple rows programmatically by using following method.
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/inline-method-delete" %}
-{% endif %}
+
 
 ## Adding a new row at the bottom of the grid
 
@@ -323,20 +219,7 @@ By default, when adding a new row in the grid control, the row is inserted at th
 
 Here's an example of how to enable adding new rows at the bottom of the grid:
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/grid-cs45/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/grid-cs45/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grid-cs45" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -348,7 +231,7 @@ Here's an example of how to enable adding new rows at the bottom of the grid:
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grid-cs45" %}
-{% endif %}
+
 
 >* Add `newRowPosition` is supported for **Normal** and **Batch** editing modes.
 >* If you set `newRowPosition` as **Bottom**, the grid will display a blank row form at the bottom by default, allowing you to enter data for the new record. However, when the data is saved or updated, it will be inserted at the top of the grid. 
@@ -359,20 +242,7 @@ The Syncfusion<sup style="font-size:70%">&reg;</sup> Grid simplifies the additio
 
 The following sample demonstrates how to add a new record continuously using `showAddNewRow` property.
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/grid-cs183/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/grid-cs183/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grid-cs183" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -384,7 +254,7 @@ The following sample demonstrates how to add a new record continuously using `sh
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grid-cs183" %}
-{% endif %}
+
 
 > To save the newly added records, you can either hit the **Enter** key or click on the **Update** button located on the toolbar after filling in the new add form.
 
@@ -402,20 +272,7 @@ To achieve this functionality, you can leverage the [recordDoubleClick](../../ap
 
 Here's an example of how to use the `recordDoubleClick` event to move the focus to a particular cell:
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/focus-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/focus-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/focus-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -427,7 +284,7 @@ Here's an example of how to use the `recordDoubleClick` event to move the focus 
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/focus-cs1" %}
-{% endif %}
+
 
 ## Enable editing in single click
 
@@ -437,20 +294,7 @@ To implement this feature, you need to bind the `mouseup` event for the Grid and
 
 The following sample demonstrates how to enable editing in a single click using the `mouseup` event along with the `load` event:
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/inline-single-click/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/inline-single-click/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/inline-single-click" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -462,7 +306,7 @@ The following sample demonstrates how to enable editing in a single click using 
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/inline-single-click" %}
-{% endif %}
+
 
 ## Disable editing for a particular row
 
@@ -472,20 +316,7 @@ To disable editing for a particular row, use the [actionBegin](../../api/grid#ac
 
 In the below demo, the rows which are having the value for **ShipCountry** column as **France** is prevented from editing.
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/inline-particular-row/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/inline-particular-row/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/inline-particular-row" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -497,4 +328,4 @@ In the below demo, the rows which are having the value for **ShipCountry** colum
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/inline-particular-row" %}
-{% endif %}
+

@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Custom aggregate in JavaScript Grid control | Syncfusion
 description: Learn here all about Custom aggregate in Syncfusion JavaScript Grid control of Syncfusion Essential JS 2 and more.
@@ -24,20 +24,7 @@ The custom aggregate function will be invoked differently for total and group ag
 
 Here's an example that demonstrates how to use the custom aggregate feature in the JavaScript Grid control:
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/aggregates-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/aggregates-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/aggregates-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -49,7 +36,7 @@ Here's an example that demonstrates how to use the custom aggregate feature in t
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/aggregates-cs1" %}
-{% endif %}
+
 
 > To access the custom aggregate value inside template, use the key as **Custom**
 
@@ -59,20 +46,7 @@ You can calculate the count of distinct values in an aggregate row by using cust
 
 Here's an example that demonstrates how to show the count of distinct values for the **ShipCountry** column using a custom aggregate.
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/custom-agg-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/custom-agg-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/custom-agg-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -84,6 +58,6 @@ Here's an example that demonstrates how to show the count of distinct values for
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/custom-agg-cs1" %}
-{% endif %}
+
 
 > To display the aggregate value of the current column in another column, you can use the [columnName](../../api/grid/aggregateColumn#columnname) property. If the `columnName` property is not defined, the field name value will be assigned to the `columnName` property.

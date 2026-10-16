@@ -23,7 +23,7 @@ To use the Excel or CSV export feature, you need to inject the **ExcelExport** m
 
 The following example demonstrates how to perform a Excel or CSV export action in the grid:
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -36,19 +36,7 @@ The following example demonstrates how to perform a Excel or CSV export action i
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/grid-cs59" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/grid-cs59/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/grid-cs59/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/grid-cs59" %}
-{% endif %}
 
 ## Show spinner while exporting
 
@@ -62,7 +50,7 @@ To hide the spinner after the exporting is completed, bind the [excelExportCompl
 
 The following example demonstrates how to show and hide the spinner during Excel export in a grid.
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -75,19 +63,7 @@ The following example demonstrates how to show and hide the spinner during Excel
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/grid-cs60" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/grid-cs60/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/grid-cs60/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/grid-cs60" %}
-{% endif %}
 
 ## Binding custom data source while exporting
 
@@ -97,7 +73,7 @@ To export data, you need to define the [dataSource](../../api/grid/excelExportPr
 
 The following example demonstrates how to render custom dataSource during Excel export. By calling the [excelExport](../../api/grid#excelexport) method and passing the `excelExportProperties` object through the grid instance, the grid data will be exported to a Excel using the dynamically defined data source.
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -110,19 +86,7 @@ The following example demonstrates how to render custom dataSource during Excel 
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/grid-cs61" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/grid-cs61/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/grid-cs61/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/grid-cs61" %}
-{% endif %}
 
 ## Exporting with custom aggregate
 
@@ -134,7 +98,7 @@ Within the **customAggregateFn** function, it takes an input data that contains 
 
 The following example shows how to export the grid with a custom aggregate that shows the calculation of the **Brazil** count of the **ShipCountry** column.
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -147,19 +111,7 @@ The following example shows how to export the grid with a custom aggregate that 
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/export-aggregate-cs1" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/export-aggregate-cs1/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/export-aggregate-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/export-aggregate-cs1" %}
-{% endif %}
 
 ## Exporting with cell and row spanning 
 
@@ -169,7 +121,7 @@ To achieve this, you can utilize the [rowSpan](../../api/grid/queryCellInfoEvent
 
 The following example demonstrates how to perform export with cell and row spanning using `queryCellInfo` and `excelQueryCellInfo` events of the Grid.
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -182,19 +134,7 @@ The following example demonstrates how to perform export with cell and row spann
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/export-spanning-cs1" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/export-spanning-cs1/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/export-spanning-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/export-spanning-cs1" %}
-{% endif %}
 
 * The [updateCell](../../api/grid#updatecell) method does not support row and column spanning.
 
@@ -206,7 +146,7 @@ To apply a custom date format to grid columns during the export, you can utilize
 
 The following example demonstrates how to export the grid with custom date format. In the example, the formatOptions object is used as the `format` property for the **OrderDate** column. This custom date `format` displays the date in the format of day-of-the-week, month abbreviation, day, and 2-digit year (e.g., Sun, May 8, '23).
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -219,19 +159,7 @@ The following example demonstrates how to export the grid with custom date forma
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/excel-exporting-date-cs1" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/excel-exporting-date-cs1/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/excel-exporting-date-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/excel-exporting-date-cs1" %}
-{% endif %}
 
 ## Exporting multiple grids
 
@@ -247,7 +175,7 @@ Additionally, you have an option to include blank rows between the data of each 
 
 The following example demonstrates how to export multiple grids to the same page in a Excel file when a toolbar item is clicked.
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -260,19 +188,7 @@ The following example demonstrates how to export multiple grids to the same page
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/excel-exporting-cs1" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/excel-exporting-cs1/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/excel-exporting-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/excel-exporting-cs1" %}
-{% endif %}
 
 >By default, **multipleExport.blankRows** value is 5.
 
@@ -290,7 +206,7 @@ To achieve this, you can follow these steps:
 
 The following example demonstrates how to export multiple grids to a Excel file when a toolbar item is clicked.
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -303,19 +219,7 @@ The following example demonstrates how to export multiple grids to a Excel file 
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/excel-exporting-cs2" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/excel-exporting-cs2/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/excel-exporting-cs2/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/excel-exporting-cs2" %}
-{% endif %}
 
 ### Limitations
 
@@ -335,7 +239,7 @@ To achieve this, you can customize the exporting behavior by using the `ExcelExp
 
 The following example demonstrates how to export hierarchical grid to Excel document. Also change the `excelExportProperties.hierarchyExportMode` property by using [value](../../api/switch#value) property of the DropDownList control:
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -348,19 +252,7 @@ The following example demonstrates how to export hierarchical grid to Excel docu
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/hierarchy-print-cs1" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/hierarchy-print-cs1/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/hierarchy-print-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/hierarchy-print-cs1" %}
-{% endif %}
 
 ### Format the child Grid columns before exporting
 
@@ -368,7 +260,7 @@ The Syncfusion TypeScript Grid allows customization of the child Grid's Excel ex
 
 In the following example, the `exportDetailDataBound` event is used to modify the **OrderDate** column of the child Grid. By setting the column's [format](https://ej2.syncfusion.com/documentation/api/grid/column#format) property, the date values are formatted as `dd/MM/yyyy` when exported to Excel document.
 
-{% if page.publishingplatform == "typescript" %}
+
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -381,19 +273,7 @@ In the following example, the `exportDetailDataBound` event is used to modify th
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/hierarchy-export-cs1" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/hierarchy-export-cs1/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/hierarchy-export-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/hierarchy-export-cs1" %}
-{% endif %}
 
 ### Limitations
 
@@ -405,7 +285,7 @@ When exporting data from the TypeScript Grid, you have an option to remove the h
 
 The following example demonstrates how to perform an export without the header by using the `excelHeaderQueryCellInfo` event to clear cell content in the header row and the [created](../../api/grid#created) event to remove the header row from the Grid:
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -418,19 +298,7 @@ The following example demonstrates how to perform an export without the header b
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/excel-exporting-cs3" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/excel-exporting-cs3/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/excel-exporting-cs3/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/excel-exporting-cs3" %}
-{% endif %}
 
 ## How to add formula for the cell while exporting
 
@@ -440,7 +308,7 @@ To add formulas to cells during the export process, you can utilize the [valueAc
 
 In the following example, the [toolbarClick](../../api/grid#toolbarclick) function handles a toolbar button click event. When the Excel Export button is clicked, it triggers the Excel export process. Inside this function, an [excelExportProperties](../../api/grid/excelExportProperties) object is defined, specifying that hidden columns should be included in the export. Inside the `excelQueryCellInfo` event, the `valueAccessor` method generates formulas for the desired cells and assigns these formulas to the cell's formula property, ensuring that the calculated values are exported to the Excel document:
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -453,19 +321,7 @@ In the following example, the [toolbarClick](../../api/grid#toolbarclick) functi
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/excel-exporting-cs4" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/excel-exporting-cs4/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/excel-exporting-cs4/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/excel-exporting-cs4" %}
-{% endif %}
 
 ## Passing additional parameters to the server when exporting
 
@@ -475,7 +331,7 @@ You can achieve this by utilizing the [query](../../api/grid#query) property and
 
 The following example demonstrates how to pass additional parameters to the server when Excel exporting within the `toolbarClick` event. Within the event, the additional parameters, specifically **recordcount** as **15**, are passed using the `addParams` method and displayed as a message.
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -488,19 +344,7 @@ The following example demonstrates how to pass additional parameters to the serv
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/additonal-parameter-cs1" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/additonal-parameter-cs1/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/additonal-parameter-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/additonal-parameter-cs1" %}
-{% endif %}
 
 ## Merge duplicate cells in a specific column before exporting
 
@@ -508,7 +352,7 @@ You can merge duplicate cells (based on their values) in a specific column of th
 
 Here’s an example demonstrating how to merge duplicate cells in the OrderID column in both Grid view and export:
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -521,19 +365,7 @@ Here’s an example demonstrating how to merge duplicate cells in the OrderID co
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/custom-cellmerge-export-cs2" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/custom-cellmerge-export-cs2/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/custom-cellmerge-export-cs2/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/custom-cellmerge-export-cs2" %}
-{% endif %}
 
 ## Limitations
 

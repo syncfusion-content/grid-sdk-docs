@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Command column editing in JavaScript Grid control | Syncfusion
 description: Learn here all about Command column editing in Syncfusion JavaScript Grid control of Syncfusion Essential JS 2 and more.
@@ -27,20 +27,7 @@ The available built-in command buttons are:
 
 Here's an example that demonstrates how to add CRUD action buttons in a column using the `command` column property : 
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/command-column-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/command-column-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/command-column-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -52,7 +39,7 @@ Here's an example that demonstrates how to add CRUD action buttons in a column u
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/command-column-cs1" %}
-{% endif %}
+
 
 ## Custom command column
 
@@ -62,20 +49,7 @@ To add custom command buttons in a column, you can utilize the [column->commands
 
 Here's an example that demonstrates how to add custom command buttons using the `commands` property and customize the button click behavior to display grid details in a dialog using the `commandClick` event:
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/command-column-cs2/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/command-column-cs2/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/command-column-cs2" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -87,4 +61,3 @@ Here's an example that demonstrates how to add custom command buttons using the 
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/command-column-cs2" %}
-{% endif %}

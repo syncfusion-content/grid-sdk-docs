@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Exporting grid in cordova application in JavaScript Grid control | Syncfusion
 description: Learn here all about Exporting grid in cordova application in Syncfusion JavaScript Grid control of Syncfusion Essential JS 2 and more.
@@ -14,20 +14,7 @@ Exporting the JavaScript Grid in a Cordova application can be beneficial in vari
 
 The following example illustrates how to export a JavaScript Grid in a Cordova application. It utilizes the [excelExportComplete](../../api/grid#excelexportcomplete) and [pdfExportComplete](../../api/grid#pdfexportcomplete) events to manage the export process for Excel and PDF formats and obtain the Blob stream. The `exportBlob` function is responsible for creating a downloadable link for the exported file.
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/exporting-blob-data-cs2/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/exporting-blob-data-cs2/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/exporting-blob-data-cs2" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -39,4 +26,4 @@ The following example illustrates how to export a JavaScript Grid in a Cordova a
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/exporting-blob-data-cs2" %}
-{% endif %}
+

@@ -51,7 +51,7 @@ control|Edit Type |Description|Example Customized edit params
 
 The following sample code demonstrates the customization applied to TextBox control of **CustomerID** Grid column:
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -64,19 +64,7 @@ The following sample code demonstrates the customization applied to TextBox cont
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/grid-cs26" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/grid-cs26/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/grid-cs26/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/grid-cs26" %}
-{% endif %}
 
 ## Customize NumericTextBox control of numericedit type 
 
@@ -88,7 +76,7 @@ control| Edit Type |Description |Example Customized edit params
 
 The following sample code demonstrates the customization applied to NumericTextBox control of **Freight** Grid column:
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -101,19 +89,7 @@ The following sample code demonstrates the customization applied to NumericTextB
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/edit-customize-numerictextbox" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/edit-customize-numerictextbox/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/edit-customize-numerictextbox/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/edit-customize-numerictextbox" %}
-{% endif %}
 
 ### Restrict to type decimal points in a NumericTextBox while editing the numeric column
 
@@ -125,7 +101,7 @@ The `decimals` property specifies the number of decimal places to be displayed i
 
 In the below demo, while editing the row the decimal point value is restricted to type in the NumericTextBox of **Freight** column.
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -138,19 +114,7 @@ In the below demo, while editing the row the decimal point value is restricted t
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/prevent-decimal-points-cs1" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/prevent-decimal-points-cs1/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/prevent-decimal-points-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/prevent-decimal-points-cs1" %}
-{% endif %}
 
 ## Customize DropDownList control of DropDownEdit type 
 
@@ -162,7 +126,7 @@ Control|Edit Type |Description| Example Customized edit params
 
 The following sample code demonstrates the customization applied to DropDownList control  of **ShipCity** Grid column:
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -175,19 +139,7 @@ The following sample code demonstrates the customization applied to DropDownList
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/edit-numeric-column" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/edit-numeric-column/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/edit-numeric-column/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/edit-numeric-column" %}
-{% endif %}
 
 ### Provide custom data source for DropDownList control
 
@@ -199,7 +151,7 @@ When setting a new data source using the edit params, you need to specify a new 
 
 In the below demo, DropDownList is rendered with custom data source for the **ShipCountry** column.
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -212,19 +164,7 @@ In the below demo, DropDownList is rendered with custom data source for the **Sh
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/grid-cs27" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/grid-cs27/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/grid-cs27/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/grid-cs27" %}
-{% endif %}
 
 ### Apply filtering for DropDownList control
 
@@ -234,7 +174,7 @@ To enable filtering, set the [allowFiltering](../../api/drop-down-list/#allowfil
 
 In the following demo, filtering is enabled for the **ShipCountry** column.
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -247,19 +187,7 @@ In the following demo, filtering is enabled for the **ShipCountry** column.
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/grid-cs28" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/grid-cs28/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/grid-cs28/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/grid-cs28" %}
-{% endif %}
 
 ### Open popup while focusing in the edit cell
 
@@ -271,7 +199,7 @@ To ensure that the dropdown column is the clicked edit target, you need to set a
 
 The following sample demonstrates how to open the popup when focusing on the edit cell using the `actionComplete` and `load` events:
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -284,19 +212,7 @@ The following sample demonstrates how to open the popup when focusing on the edi
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/grid-cs29" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/grid-cs29/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/grid-cs29/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/grid-cs29" %}
-{% endif %}
 
 ## Customize CheckBox control of booleanedit type 
 
@@ -308,7 +224,7 @@ Control| Edit Type |Description |Example Customized edit params
 
 The following sample code demonstrates the customization applied to CheckBox control of **Verified** Grid column:
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -321,19 +237,7 @@ The following sample code demonstrates the customization applied to CheckBox con
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/edit-checkbox-boolean" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/edit-checkbox-boolean/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/edit-checkbox-boolean/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/edit-checkbox-boolean" %}
-{% endif %}
 
 ## Customize DatePicker control of datepickeredit type 
 
@@ -345,7 +249,7 @@ control| Edit Type |Description|Example Customized edit params
  
 The following sample code demonstrates the customization applied to DatePicker control of **OrderDate** Grid column:
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -358,19 +262,7 @@ The following sample code demonstrates the customization applied to DatePicker c
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/edit-datepicker-control" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/edit-datepicker-control/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/edit-datepicker-control/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/edit-datepicker-control" %}
-{% endif %}
 
 ### Disable the date value prior to the selected date value in DatePicker control
 
@@ -378,7 +270,7 @@ The Syncfusion<sup style="font-size:70%">&reg;</sup> Grid allows configuring the
 
 The following example demonstrates how to configure the `DatePicker` control within the grid using the **edit** parameters of a column. This setup dynamically restricts the selection of dates in the DatePicker's calendar based on the data in the current row.
 
-{% if page.publishingplatform == "typescript" %}
+
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -391,19 +283,7 @@ The following example demonstrates how to configure the `DatePicker` control wit
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/hide-dates-cs1" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/hide-dates-cs1/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/hide-dates-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/hide-dates-cs1" %}
-{% endif %}
 
 ## Customize DateTimePicker control of datetimepickeredit type 
 
@@ -415,7 +295,7 @@ control|Edit Type |Description |Example Customized edit params
  
 The following sample code demonstrates the customization applied to DateTimePicker control of **OrderDate** Grid column:
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -428,19 +308,7 @@ The following sample code demonstrates the customization applied to DateTimePick
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/edit-datetimepicker-control" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/edit-datetimepicker-control/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/edit-datetimepicker-control/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/edit-datetimepicker-control" %}
-{% endif %}
 
 ## Access editor controls using instance
 
@@ -450,7 +318,7 @@ To access the control instance from the control element, you can use the **ej2_i
 
 In the below demo, you can access the editor control instance while adding or editing actions in the `actionComplete` event.
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -463,19 +331,7 @@ In the below demo, you can access the editor control instance while adding or ed
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/edit-access-control" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/edit-access-control/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/edit-access-control/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/edit-access-control" %}
-{% endif %}
 
 ## Render custom cell editors using external function 
 
@@ -501,7 +357,7 @@ To render a textArea in the edit form, you need to define a cell edit template f
 
 The following example demonstrates how to render a textArea control in the **ShipAddress** column of the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid. The [valueAccessor](../../api/grid/valueAccessor/) property is utilized to split the text into multiple lines within the grid column:
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -514,19 +370,7 @@ The following example demonstrates how to render a textArea control in the **Shi
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/edit-textarea-control" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/edit-textarea-control/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/edit-textarea-control/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/edit-textarea-control" %}
-{% endif %}
 
 **Prevent the enter key functionality in multiline textbox while editing** 
 
@@ -536,7 +380,7 @@ To achieve this behavior, you can utilize the `stopPropagation` method along wit
 
 The following example demonstrates how to prevent the enter key functionality in multiline textbox during editing by utilizing the `focus` event:
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -549,19 +393,7 @@ The following example demonstrates how to prevent the enter key functionality in
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/edit-textbox-control" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/edit-textbox-control/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/edit-textbox-control/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/edit-textbox-control" %}
-{% endif %}
 
 ### Render MaskedTextBox control in edit form 
 
@@ -571,7 +403,7 @@ To render a MaskedTextBox control in the edit form, you need to define a cell ed
 
 Here's an example of how to render a MaskedTextBox control in the **CustomerNumber** column of the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid.
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -584,19 +416,7 @@ Here's an example of how to render a MaskedTextBox control in the **CustomerNumb
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/edit-maskedtextbox-control" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/edit-maskedtextbox-control/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/edit-maskedtextbox-control/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/edit-maskedtextbox-control" %}
-{% endif %}
 
 ### Render DropDownList control in edit form 
 
@@ -606,7 +426,7 @@ To render a DropDownList control in the edit form,  you need to define a cell ed
 
 The following example demonstrates how to render a DropDownList control in the **ShipCountry** column of the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid.
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -619,19 +439,7 @@ The following example demonstrates how to render a DropDownList control in the *
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/edit-dropdownlist-control" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/edit-dropdownlist-control/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/edit-dropdownlist-control/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/edit-dropdownlist-control" %}
-{% endif %}
 
 ### Render images in the DropDownList editor control using the item template 
 
@@ -643,7 +451,7 @@ To display an image in the DropDownList editor control, you can utilize the [ite
 
 The following example demonstrates how to render images in the DropDownList editor control using the `itemTemplate` within the **EmployeeName** column of the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid. 
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -656,19 +464,7 @@ The following example demonstrates how to render images in the DropDownList edit
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/edit-images-dropdownlist" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/edit-images-dropdownlist/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/edit-images-dropdownlist/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/edit-images-dropdownlist" %}
-{% endif %}
 
 ### Render Multiple columns in DropDownList control  
 
@@ -680,7 +476,7 @@ The DropDownList has been provided with several options to customize each list i
 
 The following example demonstrates how to render a DropDownList control with multiple columns within in the **ShipCountry** column.
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -693,19 +489,7 @@ The following example demonstrates how to render a DropDownList control with mul
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/edit-columns-dropdownlist" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/edit-columns-dropdownlist/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/edit-columns-dropdownlist/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/edit-columns-dropdownlist" %}
-{% endif %}
 
 ### Render ComboBox control in edit form 
 
@@ -715,7 +499,7 @@ To render a comboBox control in the edit form, you need to define a cell edit te
 
 The following example demonstrates how to render a ComboBox control in the **ShipCountry** column of the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid. 
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -728,19 +512,7 @@ The following example demonstrates how to render a ComboBox control in the **Shi
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/edit-comboBox-control" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/edit-comboBox-control/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/edit-comboBox-control/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/edit-comboBox-control" %}
-{% endif %}
 
 ### Render TimePicker control in edit form 
 
@@ -750,7 +522,7 @@ To render a TimePicker control in the edit form, you need to define a cell edit 
 
 The following example demonstrates how to render a TimePicker control in the **OrderDate** column of the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid.
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -763,19 +535,7 @@ The following example demonstrates how to render a TimePicker control in the **O
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/edit-timepicker-control" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/edit-timepicker-control/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/edit-timepicker-control/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/edit-timepicker-control" %}
-{% endif %}
 
 ### Render MultiSelect control in edit form
 
@@ -785,7 +545,7 @@ To render a MultiSelect control in the edit form, you need to define a cell edit
 
 The following example demonstrates how to render a MultiSelect control in the **ShipCity** column of the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid. The `actionBegin` event is handled to update the edited value in the grid when the save button is clicked:
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -798,19 +558,7 @@ The following example demonstrates how to render a MultiSelect control in the **
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/grid-cs31" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/grid-cs31/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/grid-cs31/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/grid-cs31" %}
-{% endif %}
 
 ### Render RichTextEditor control in edit form
 
@@ -822,7 +570,7 @@ Additionally, you need set the [allowTextWrap](../../api/grid/#allowtextwrap) pr
 
 The following example demonstrates how to render a RichTextEditor control in the **ShipAddress** column of the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid.
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -835,19 +583,7 @@ The following example demonstrates how to render a RichTextEditor control in the
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/grid-cs33" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/grid-cs33/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/grid-cs33/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/grid-cs33" %}
-{% endif %}
 
 ### Render Upload control in edit form  
 
@@ -857,7 +593,7 @@ To render Upload control in edit form, you need to define a cell edit template f
 
 The following example demonstrates how to render a Upload control in the **Employee Image** column of the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid. The `actionBegin` event is handled to update the edited value in the grid when the save button is clicked:
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -870,19 +606,7 @@ The following example demonstrates how to render a Upload control in the **Emplo
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/grid-cs32" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/grid-cs32/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/grid-cs32/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/grid-cs32" %}
-{% endif %}
 
 > By default, the grid saves the cell when clicking outside the editor component. If your components, like multiple popups, are dynamically rendered, the grid may not recognize them, causing the editor to close when the popup is clicked. To prevent this, apply the `edit-custom-template` class to both your main component and sub-components. If you are using Syncfusion<sup style="font-size:70%">&reg;</sup> components, set their `cssClass` property to include the `edit-custom-template` class.
 
@@ -894,7 +618,7 @@ To achieve this, you need to define the cell edit template for the column using 
 
 The following example demonstrates how to render a Autocomplete in the **CustomerID** column:
 
-{% if page.publishingplatform == "typescript" %}
+
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -910,22 +634,7 @@ The following example demonstrates how to render a Autocomplete in the **Custome
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/grid-cs30" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-
-{% include code-snippet/grid-sdk/typescript/grid/grid-cs30/index.js %}
-{% endhighlight %}
-
-{% highlight html tabtitle="index.html" %}
-
-{% include code-snippet/grid-sdk/typescript/grid/grid-cs30/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/grid-cs30" %}
-{% endif %}
 
 ### Render cascading DropDownList in edit form
 
@@ -935,7 +644,7 @@ To achieve this, you need to define the cell edit template for the column using 
 
 In the below demo, cascading DropDownList rendered for **ShipCountry** and **ShipState** column.
 
-{% if page.publishingplatform == "typescript" %}
+
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -950,20 +659,3 @@ In the below demo, cascading DropDownList rendered for **ShipCountry** and **Shi
 {% endtabs %}
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/grid-cs34" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-
-{% include code-snippet/grid-sdk/typescript/grid/grid-cs34/index.js %}
-{% endhighlight %}
-
-{% highlight html tabtitle="index.html" %}
-
-{% include code-snippet/grid-sdk/typescript/grid/grid-cs34/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/grid-cs34" %}
-{% endif %}

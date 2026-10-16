@@ -17,7 +17,7 @@ Once column resizing is enabled, columns width can be resized by clicking and dr
 
 To use the column resize, inject **Resize** module in the grid.
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -30,19 +30,7 @@ To use the column resize, inject **Resize** module in the grid.
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/row-template-cs10" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/row-template-cs10/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/row-template-cs10/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/row-template-cs10" %}
-{% endif %}
 
 >* You can disable Resizing for a particular column, by specifying [columns->allowResizing](../../api/grid/column/#allowresizing) to **false**.
 >* In RTL mode, you can click and drag the left edge of header cell to resize the column.
@@ -56,7 +44,7 @@ To enable this feature, you can define the [columns->minWidth](../../api/grid/co
 
 In the below code, **OrderID**, **Ship Name** and **Ship Country** columns are defined with minimum and maximum width. The **OrderID** column is set to have a minimum width of 100 pixels and a maximum width of 200 pixels. Similarly, the **ShipName** column is set to have a minimum width of 150 pixels and a maximum width of 300 pixels. The **ShipCountry** column is set to have a minimum width of 120 pixels and a maximum width of 280 pixels.
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -69,19 +57,7 @@ In the below code, **OrderID**, **Ship Name** and **Ship Country** columns are d
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/row-template-cs11" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/row-template-cs11/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/row-template-cs11/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/row-template-cs11" %}
-{% endif %}
 
 >* The [columns->minWidth](../../api/grid/column/#minwidth) and [columns->maxWidth](../../api/grid/column/#maxwidth) properties will be considered only when the user resizes the column. When resizing the window, these properties will not be considered. This is because columns cannot be re-rendered when resizing the window.
 >* When setting the `minWidth` and `maxWidth` properties, ensure that the values are appropriate for your data and layout requirements.
@@ -93,7 +69,7 @@ The Grid control provides the ability to prevent resizing for a particular colum
 
 You can disable resizing for a particular column by setting the [allowResizing](../../api/grid/column/#allowresizing) property of the column to **false**. The following example demonstrates, how to disable resizing for the **Customer ID** column.
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -106,19 +82,7 @@ You can disable resizing for a particular column by setting the [allowResizing](
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/row-template-prevent" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/row-template-prevent/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/row-template-prevent/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/row-template-prevent" %}
-{% endif %}
 
 > You can also prevent resizing by setting `args.cancel` to **true** in the [resizeStart](../../api/grid/#resizestart) event.
 
@@ -128,7 +92,7 @@ Grid control allows to resize stacked columns by clicking and dragging the right
 
 In this below code, we have disabled resize for **Ship City** column.
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -141,19 +105,7 @@ In this below code, we have disabled resize for **Ship City** column.
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/row-template-header" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/row-template-header/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/row-template-header/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/row-template-header" %}
-{% endif %}
 
 ## Resizing modes
 
@@ -165,7 +117,7 @@ The Syncfusion<sup style="font-size:70%">&reg;</sup> Grid control provides a [Re
 
 The following example demonstrates how to set the [resizeSettings->mode](../../api/grid/resizeSettingsModel/#mode) property to **Normal** and **Auto** on changing the dropdown value using the [change](../../api/drop-down-list/#change) event of the DropDownList control.
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -178,19 +130,7 @@ The following example demonstrates how to set the [resizeSettings->mode](../../a
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/row-template-resizing" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/row-template-resizing/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/row-template-resizing/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/row-template-resizing" %}
-{% endif %}
 
 > When the [autoFit](../../api/grid/#autofit) property is set to **true**, the Grid will automatically adjust its column width based on the content inside them. In `normal` resize mode, if the `autoFit` property is set to **true**, the Grid will maintain any empty space that is left over after resizing the columns. However, in `auto` resize mode, the Grid will ignore any empty space.
 
@@ -218,7 +158,7 @@ Grid provides the ability to resize columns using an external button click. This
 
 The following example demonstrates how to resize the columns in a grid. This is done by using the [change](../../api/drop-down-list/#change) event of the DropDownList control by changing the [width](../../api/grid/column/#width) property of the selected column. This is accomplished using the  [getColumnByField](../../api/grid/#getcolumnbyfield) on external button click. Then, the [refreshColumns](../..api/grid#refreshcolumns) method is called on the grid control to update the displayed columns based on user interaction.
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -231,19 +171,7 @@ The following example demonstrates how to resize the columns in a grid. This is 
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/row-template-cs12" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/row-template-cs12/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/row-template-cs12/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/row-template-cs12" %}
-{% endif %}
 
 >  The [refreshColumns](../../api/grid#refreshcolumns) method is used to refresh the grid after the column widths are updated. Column resizing externally is useful when you want to provide a custom interface to the user for resizing columns.
 
@@ -259,7 +187,7 @@ During the resizing action, the grid control triggers the below three events.
 
 The following is an example of using the resizing events, the [resizeStart](../../api/grid/#resizestart) event is used to cancel the resizing of the **OrderID** column. The [resizeStop](../../api/grid/#resizestop) event is used to apply custom CSS attributes to the resized column.
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -272,18 +200,6 @@ The following is an example of using the resizing events, the [resizeStart](../.
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/row-template-cs13" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/row-template-cs13/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/row-template-cs13/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/row-template-cs13" %}
-{% endif %}
 
 >The ResizeArgs object passed to the events contains information such as the current column width, new column width, column index, and the original event. The [resizing](../../api/grid/#resizing) event is triggered multiple times during a single resize operation, so be careful when performing heavy operations in this event.

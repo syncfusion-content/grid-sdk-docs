@@ -272,7 +272,7 @@ Run the application in Visual Studio. It will be accessible on a URL like **http
 
 After running the application, you can verify that the server-side API controller is successfully returning the order data in the URL(https://localhost:xxxx/api/Orders). Here **xxxx** denotes the port number.
 
-{% if page.publishingplatform == "typescript" %}
+
 
 **Connecting syncfusion<sup style="font-size:70%">&reg;</sup> grid to an api service**
 
@@ -487,109 +487,3 @@ The `wwwroot/index.html` file is served at **https://localhost:xxxx**.
 With these steps, you have integrated the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid control with your ASP.NET Core project and set up the necessary client-side configuration using Webpack and TypeScript. This will allow the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid to fetch data from your API and display it accordingly.
 
 > You can find the complete sample for the RemoteSaveAdaptor in [GitHub](https://github.com/SyncfusionExamples/Binding-data-from-remote-service-to-typescript-data-grid) repository.
-
-{% elsif page.publishingplatform == "javascript" %}
-
-**Connecting syncfusion<sup style="font-size:70%">&reg;</sup> grid to an api service**
-
-**Step 1:** Create wwwroot folder
-
-Create a folder named `wwwroot` in the project root directory. This folder will contain static files served by the web server.
-
-**Step 2:** Create JS and CSS Folders
-
-Inside the wwwroot folder, create js and css folders to hold script and CSS files, respectively.
-
-**Step 3:** Create index.html File
-
-Create an `index.html` file under the `wwwroot` folder and add the necessary HTML structure along with CSS and JavaScript links to include Syncfusion<sup style="font-size:70%">&reg;</sup> Grid dependencies.
-
-```html
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <title>EJ2 Grid</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Javascript Grid Control">
-    <meta name="author" content="Syncfusion">
-    <link href="css/index.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/35.1.37/material3.css" rel="stylesheet">
-
-    <script src="https://cdn.syncfusion.com/ej2/35.1.37/dist/ej2.min.js" type="text/javascript"></script>
-    <script src="https://cdn.syncfusion.com/ej2/syncfusion-helper.js" type="text/javascript"></script>
-</head>
-<body>
-
-    <div id="container">
-        <div id="Grid"></div>
-    </div>
-    <script src="js/index.js" type="text/javascript"></script>
-</body>
-</html>
-```
-
-**Step 4:** Create JavaScript File
-
-In this step, you will create a new JavaScript file (js/index.js) and add the necessary code to set up and configure the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid with `RemoteSaveAdaptor`. The Syncfusion<sup style="font-size:70%">&reg;</sup> Grid will fetch data from a remote API and support various features such as paging, sorting, filtering, and CRUD operations.
-
-***CRUD Operations Mapping:*** CRUD operations within the grid can be mapped to server-side controller actions using specific properties:
-
-* **insertUrl**: Specifies the URL for inserting new data.
-* **removeUrl**: Specifies the URL for removing existing data.
-* **updateUrl**: Specifies the URL for updating existing data.
-* **crudUrl**: Specifies a single URL for all CRUD operations.
-* **batchUrl**: Specifies the URL for batch editing.
-
-```js
-ej.grids.Grid.Inject(ej.grids.Toolbar, ej.grids.Edit, ej.grids.Filter, ej.grids.Page, ej.grids.Sort);
-
-load();
-var data;
-
-function load() {
-    fetch('https://localhost:7035/api/Orders')
-        .then(response => {
-            if (!response.ok) {
-                throw new Error(`Unable to Fetch Data. Please check URL or network connectivity.`);
-            }
-            return response.json();
-        })
-        .then(jsonValue => {
-            data = new ej.data.DataManager({
-                json: jsonValue,
-                insertUrl: 'https://localhost:7035/api/Orders/Insert',
-                updateUrl: 'https://localhost:7035/api/Orders/Update',
-                removeUrl: 'https://localhost:7035/api/Orders/Remove',
-                adaptor: new ej.data.RemoteSaveAdaptor()
-            });
-            createGrid();
-        });
-}
-
-function createGrid() {
-    var grid = new ej.grids.Grid({
-        dataSource: data,
-        allowPaging: true,
-        allowSorting: true,
-        allowFiltering: true,
-        toolbar: ['Add', 'Edit', 'Delete', 'Update', 'Cancel', 'Search'],
-        editSettings: { allowEditing: true, allowAdding: true, allowDeleting: true, mode: 'Normal' },
-        columns: [
-            { field: 'OrderID', headerText: 'Order ID', textAlign: 'Right', width: 120, isPrimaryKey: true, type: 'number' },
-            { field: 'CustomerID', width: 140, headerText: 'Customer ID', type: 'string' },
-            { field: 'ShipCity', headerText: 'ShipCity', width: 140 },
-            { field: 'ShipCountry', headerText: 'ShipCountry', width: 140 }
-        ]
-    });
-    grid.appendTo('#Grid');
-}
-```
-
-**Step 5:** Run the Project
-
-Now, run the project to see the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid connected to the API service in action.
-
-> You can find the complete sample for the RemoteSaveAdaptor in [GitHub](https://github.com/SyncfusionExamples/Binding-data-from-remote-service-to-javascript-data-grid) repository.
-
-{% endif %}

@@ -37,7 +37,7 @@ Refresh the grid after the data source change by using the [`refresh`](../api/gr
 
 ```
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -50,19 +50,7 @@ Refresh the grid after the data source change by using the [`refresh`](../api/gr
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/refresh-grid-cs2" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/refresh-grid-cs2/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/refresh-grid-cs2/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/refresh-grid-cs2" %}
-{% endif %}
 
 ## Toolbar
 
@@ -91,7 +79,7 @@ To render the DropDownList component, use the [`dataBound`](../api/grid/#databou
 
 * You can select the grid row index based on the selected data in the DropDownList. The output will appear as follows.
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -104,19 +92,7 @@ To render the DropDownList component, use the [`dataBound`](../api/grid/#databou
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/toolbar-dropdown-cs2" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/toolbar-dropdown-cs2/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/toolbar-dropdown-cs2/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/toolbar-dropdown-cs2" %}
-{% endif %}
 
 ## Enable/Disable Grid and its actions
 
@@ -159,7 +135,7 @@ Add/Remove the CSS class to the Grid in the click event handler of Button.
 
 In the below demo, the button click will enable/disable the Grid and its actions.
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -172,19 +148,7 @@ In the below demo, the button click will enable/disable the Grid and its actions
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/disablegrid-cs1" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/disablegrid-cs1/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/disablegrid-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/disablegrid-cs1" %}
-{% endif %}
 
 ## Columns
 
@@ -214,7 +178,7 @@ grid.refreshHeader();
 
 ```
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -227,19 +191,7 @@ grid.refreshHeader();
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/change-header-text-cs2" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/change-header-text-cs2/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/change-header-text-cs2/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/change-header-text-cs2" %}
-{% endif %}
 
 ### Customize column styles
 
@@ -277,7 +229,7 @@ Add the custom CSS class to the specified column by using the [`customAttributes
 
 ```
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -290,19 +242,7 @@ Add the custom CSS class to the specified column by using the [`customAttributes
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/custom-column-cs2" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/custom-column-cs2/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/custom-column-cs2/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/custom-column-cs2" %}
-{% endif %}
 
 ### Display custom tooltip for columns in grid
 
@@ -319,7 +259,7 @@ function tooltip (args: QueryCellInfoEventArgs) {
 
 ```
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -332,19 +272,7 @@ function tooltip (args: QueryCellInfoEventArgs) {
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/custom-tooltip-cs2" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/custom-tooltip-cs2/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/custom-tooltip-cs2/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/custom-tooltip-cs2" %}
-{% endif %}
 
 ### Render other components in a column
 
@@ -380,7 +308,7 @@ Using the [`queryCellInfo`](../api/grid/#querycellinfo) event, you can render th
 
 ```
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -393,19 +321,7 @@ Using the [`queryCellInfo`](../api/grid/#querycellinfo) event, you can render th
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/column-sync-comp-cs2" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/column-sync-comp-cs2/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/column-sync-comp-cs2/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/column-sync-comp-cs2" %}
-{% endif %}
 
 ### Change the orientation of the header text
 
@@ -448,7 +364,7 @@ function setHeaderHeight(args) {
 
 ```
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -461,19 +377,7 @@ function setHeaderHeight(args) {
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/orientation-cs2" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/orientation-cs2/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/orientation-cs2/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/orientation-cs2" %}
-{% endif %}
 
 ### Customize the icon for column menu
 
@@ -487,7 +391,7 @@ You can customize the column menu icon by overriding the default grid class `.e-
 
 In the below sample, grid is rendered with a customized column menu icon.
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -500,19 +404,7 @@ In the below sample, grid is rendered with a customized column menu icon.
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/custom-column-menu-icon-cs2" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/custom-column-menu-icon-cs2/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/custom-column-menu-icon-cs2/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/custom-column-menu-icon-cs2" %}
-{% endif %}
 
 ## Editing
 
@@ -522,7 +414,7 @@ You can edit the template column value by defining the `field` for that particul
 
 In the below demo, the `ShipCountry` column is rendered with the template.
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -535,19 +427,7 @@ In the below demo, the `ShipCountry` column is rendered with the template.
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/edit-column-template-cs2" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/edit-column-template-cs2/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/edit-column-template-cs2/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/edit-column-template-cs2" %}
-{% endif %}
 
 ### Customize the edit dialog
 
@@ -555,7 +435,7 @@ You can customize the appearance of the edit dialog in the [`actionComplete`](..
 
 In the following example, the dialog's header text has been changed for editing and adding the records.
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -568,19 +448,7 @@ In the following example, the dialog's header text has been changed for editing 
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/customizedialog-cs1" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/customizedialog-cs1/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/customizedialog-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/customizedialog-cs1" %}
-{% endif %}
 
 ### Show or Hide columns in Dialog editing
 
@@ -592,7 +460,7 @@ In the `actionComplete` event, based on `requestType` as `save`. We can reset th
 
 In the below example, we have rendered the grid columns `CustomerID` as hidden column and `ShipCountry` as visible column. In the edit mode, we have changed the `CustomerID` column to visible state and `ShipCountry` column to hidden state.
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -605,19 +473,7 @@ In the below example, we have rendered the grid columns `CustomerID` as hidden c
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/grid-cs91" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/grid-cs91/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/grid-cs91/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/grid-cs91" %}
-{% endif %}
 
 ### Cascading drop-down list with grid editing
 
@@ -625,7 +481,7 @@ You can achieve the Cascading DropDownList with grid Editing by using the Cell E
 
 In the below demo, Cascading DropDownList is rendered for the `ShipCountry` and `ShipState` column.
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -638,19 +494,7 @@ In the below demo, Cascading DropDownList is rendered for the `ShipCountry` and 
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/grid-cs92" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/grid-cs92/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/grid-cs92/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/grid-cs92" %}
-{% endif %}
 
 ### Provide custom data source and enabling filtering to DropDownList
 
@@ -673,7 +517,7 @@ You can also enable filtering for the dropdownlist by passing the `allowFilterin
 
 In the below demo, DropDownList is rendered with custom Datasource for the `ShipCountry` column and enabled filtering to search dropdownlist items.
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -686,19 +530,7 @@ In the below demo, DropDownList is rendered with custom Datasource for the `Ship
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/grid-cs93" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/grid-cs93/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/grid-cs93/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/grid-cs93" %}
-{% endif %}
 
 ### Access Editor components
 
@@ -706,7 +538,7 @@ You can access the component instance from the component element using the `ej2_
 
 In the below demo, you can access the Editor component instance while adding or editing actions on the [`actionComplete`](../api/grid/#actioncomplete) event.
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -719,19 +551,7 @@ In the below demo, you can access the Editor component instance while adding or 
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/grid-cs94" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/grid-cs94/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/grid-cs94/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/grid-cs94" %}
-{% endif %}
 
 ### Use Wizard like Dialog Editing
 
@@ -739,7 +559,7 @@ Wizard helps you to create intuitive step-by-step forms to fill. You can achieve
 
 The following example demonstrates the wizard-like editing in the grid with obtrusive validation.
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -752,19 +572,7 @@ The following example demonstrates the wizard-like editing in the grid with obtr
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/wizardtemplate-cs2" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/wizardtemplate-cs2/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/wizardtemplate-cs2/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/wizardtemplate-cs2" %}
-{% endif %}
 
 ### Using the tab inside the dialog template
 
@@ -838,7 +646,7 @@ To render the tab component, use the [`actionComplete`](../api/grid/#databound) 
 
 The following example demonstrates rendering the tab control inside the edit dialog. The tab control contains two tabs. You can fill the first tab and then navigate to the second tab. The validation for first tab will be done before navigating to the second tab.
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -851,19 +659,7 @@ The following example demonstrates rendering the tab control inside the edit dia
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/tabtemplate-cs1" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/tabtemplate-cs1/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/tabtemplate-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/tabtemplate-cs1" %}
-{% endif %}
 
 ### Disable editing for a particular row/cell
 
@@ -871,7 +667,7 @@ You can disable the editing for a particular row by using the [`actionBegin`](..
 
 In the below demo, the rows which are having the value for `ShipCountry` column as "France" is prevented from editing.
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -884,23 +680,11 @@ In the below demo, the rows which are having the value for `ShipCountry` column 
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/grid-cs95" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/grid-cs95/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/grid-cs95/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/grid-cs95" %}
-{% endif %}
 
 For batch mode of editing, you can use [`cellEdit`](../api/grid/#celledit) event of Grid. In the below demo, the cells which are having the value as "France" is prevented from editing.
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -913,19 +697,7 @@ For batch mode of editing, you can use [`cellEdit`](../api/grid/#celledit) event
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/grid-cs96" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/grid-cs96/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/grid-cs96/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/grid-cs96" %}
-{% endif %}
 
 ### Perform Grid actions by keyboard shortcut keys
 
@@ -935,7 +707,7 @@ In addition, You can also perform grid actions with custom keyboard shortcuts. T
 
 The following example demonstrates on `Adding` a new row when `Enter` key is pressed in the grid.
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -948,19 +720,7 @@ The following example demonstrates on `Adding` a new row when `Enter` key is pre
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/grid-cs97" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/grid-cs97/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/grid-cs97/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/grid-cs97" %}
-{% endif %}
 
 ### Make a cell editable on a single click with batch editing
 
@@ -968,7 +728,7 @@ You can make a cell editable on a single click with `batch` mode of editing in G
 
 Bind the click event for Grid and in the click event handler call the [`editCell`](../api/grid/edit/#editcell) method, based on the clicked target element.
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -981,19 +741,7 @@ Bind the click event for Grid and in the click event handler call the [`editCell
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/grid-cs98" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/grid-cs98/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/grid-cs98/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/grid-cs98" %}
-{% endif %}
 
 ## Filter
 
@@ -1008,7 +756,7 @@ The available options are:
 
 The following sample illustrates customizing the string filter operators.
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -1021,19 +769,7 @@ The following sample illustrates customizing the string filter operators.
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/grid-cs99" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/grid-cs99/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/grid-cs99/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/grid-cs99" %}
-{% endif %}
 
 ## Sort
 
@@ -1060,7 +796,7 @@ To perform multi-column sorting, you need to push the columns to be sorted into 
 
 In the below demo, click on the corresponding button to perform single-column or multi-column sorting.
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -1073,19 +809,7 @@ In the below demo, click on the corresponding button to perform single-column or
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/sort-how-to-cs1" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/sort-how-to-cs1/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/sort-how-to-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/sort-how-to-cs1" %}
-{% endif %}
 
 ### Dynamically clear sort for particular/entire sorted columns in Grid
 
@@ -1115,7 +839,7 @@ To clear sorting for all the sorted columns, use the [`clearSorting`](../api/gri
 
 In the below demo, click on the corresponding button to clear sort for particular or entire sorted columns in Grid.
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -1128,19 +852,7 @@ In the below demo, click on the corresponding button to clear sort for particula
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/clear-sort-how-to-cs1" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/clear-sort-how-to-cs1/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/clear-sort-how-to-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/clear-sort-how-to-cs1" %}
-{% endif %}
 
 ## Foreign Key
 
@@ -1150,7 +862,7 @@ By default, the foreign key column uses the drop-down component for editing. You
 
 In the following code example, the `Employee Name` is a foreign key column. When editing, the AutoComplete component is rendered instead of drop-down list.
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -1163,19 +875,7 @@ In the following code example, the `Employee Name` is a foreign key column. When
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/foreign-key-cs7" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/foreign-key-cs7/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/foreign-key-cs7/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/foreign-key-cs7" %}
-{% endif %}
 
 ### Customize filter UI in foreign key column
 
@@ -1183,7 +883,7 @@ You can create your own filtering UI by using [`column.filter`](../api/grid/colu
 
 In the following example, The `Employee Name` is a foreign key column. DropDownList is rendered using Filter UI.
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -1196,19 +896,7 @@ In the following example, The `Employee Name` is a foreign key column. DropDownL
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/foreign-key-cs3" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/foreign-key-cs3/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/foreign-key-cs3/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/foreign-key-cs3" %}
-{% endif %}
 
 ### Use filter bar template in foreign key column
 
@@ -1216,7 +904,7 @@ You can use the filter bar template in foreign key column by defining the [`colu
 
 In the following example, The `Employee Name` is a foreign key column. This column header shows the custom filter bar template and you can select filter value by using the `DropDown` options.
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -1229,19 +917,7 @@ In the following example, The `Employee Name` is a foreign key column. This colu
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/foreign-key-cs9" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/foreign-key-cs9/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/foreign-key-cs9/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/foreign-key-cs9" %}
-{% endif %}
 
 ### Perform aggregation in Foreign Key Column
 
@@ -1249,7 +925,7 @@ Default aggregations are not supported in a foreign key column. You can achieve 
 
 In the following example, The `Employee Name` is a foreign key column and the aggregation for the foreign column was calculated in customAggregateFn.
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -1262,25 +938,13 @@ In the following example, The `Employee Name` is a foreign key column and the ag
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/foreign-key-cs5" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/foreign-key-cs5/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/foreign-key-cs5/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/foreign-key-cs5" %}
-{% endif %}
 
 ### Bind foreign key dataSource on dropdown edit
 
 When editing, you can bind foreign key datasource to a dropdown list by using [`column.dataSource`](../api/grid/column/#datasource) property.
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -1293,19 +957,7 @@ When editing, you can bind foreign key datasource to a dropdown list by using [`
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/grid-cs100" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/grid-cs100/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/grid-cs100/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/grid-cs100" %}
-{% endif %}
 
 > * By default, the foreign key column's `editType` will be set as `dropdownedit`.
 
@@ -1315,7 +967,7 @@ When editing, you can bind foreign key datasource to a dropdown list by using [`
 
 Cordova application does not support direct file download. So we have to use the Blob stream to export the Grid. You can use corresponding exporting methods and exportComplete events to get the Blob stream.
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -1328,19 +980,7 @@ Cordova application does not support direct file download. So we have to use the
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/exporting-blob-data-cs1" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/exporting-blob-data-cs1/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/exporting-blob-data-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/exporting-blob-data-cs1" %}
-{% endif %}
 
 ### Exporting Filtered Data Only
 
@@ -1348,7 +988,7 @@ You can export the filtered data by defining the resulted data in `exportPropert
 
 In the below Pdf exporting demo, We have gotten the filtered data by applying filter query to the grid data and then defines the resulted data in `exportProperties.dataSource` and pass it to `pdfExport` method.
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -1361,19 +1001,7 @@ In the below Pdf exporting demo, We have gotten the filtered data by applying fi
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/exporting-filtered-data-cs1" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/exporting-filtered-data-cs1/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/exporting-filtered-data-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/exporting-filtered-data-cs1" %}
-{% endif %}
 
 ## Pager
 
@@ -1381,7 +1009,7 @@ In the below Pdf exporting demo, We have gotten the filtered data by applying fi
 
 To customize the default values of pager drop-down, you need to define the [`pageSizes`](../api/grid/pageSettingsModel/#pagesizes) as array of strings.
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -1394,19 +1022,7 @@ To customize the default values of pager drop-down, you need to define the [`pag
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/pagerdropdown-cs2" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/pagerdropdown-cs2/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/pagerdropdown-cs2/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/pagerdropdown-cs2" %}
-{% endif %}
 
 ## Hide the expand/collapse icon in parent row with no record in child grid
 
@@ -1450,7 +1066,7 @@ Add the CSS class to the Grid in the [`rowDataBound`](../api/grid/#rowdatabound)
 
 In the below demo, the expand/collapse icon in the row with `EmployeeID` as `1` is hidden as it does not have record in child Grid.
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -1463,19 +1079,7 @@ In the below demo, the expand/collapse icon in the row with `EmployeeID` as `1` 
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/grid-cs101" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/grid-cs101/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/grid-cs101/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/grid-cs101" %}
-{% endif %}
 
 ## Render images in the dropdownList editor component using the item template
 
@@ -1483,7 +1087,7 @@ To display an image in the DropDownList editor component, you can utilize the `i
 
 The below example shows how to use the itemTemplate property in the DropDownList editor component to display an image in the dropdown list. Here, we render the image for each item in the dropdown list of the foreign key column `Employee Name`.
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -1495,17 +1099,3 @@ The below example shows how to use the itemTemplate property in the DropDownList
 {% endtabs %}
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/grid-cs102" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/grid-cs102/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/grid-cs102/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/grid-cs102" %}
-{% endif %}

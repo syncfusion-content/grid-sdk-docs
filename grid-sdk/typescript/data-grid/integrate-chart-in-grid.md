@@ -37,7 +37,7 @@ Below is the list of minimum dependencies required to integrate Chart functional
 
 ### Setup for local development
 
-{% if page.publishingplatform == "typescript" %}
+
 
 Open the command prompt from the required directory, and run the following command to clone the Syncfusion JavaScript (Essential JS 2) quickstart project from [GitHub](https://github.com/SyncfusionExamples/ej2-quickstart-webpack-).
 
@@ -59,19 +59,9 @@ cd ej2-quickstart
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-Refer to the following steps to set up your local environment.
 
-**Step 1:** Create a root folder named **my-app** for your application.
 
-**Step 2:** Create a **my-app/resources** folder to store local scripts and styles files.
-
-**Step 3:** Open Visual Studio Code and create **my-app/index.js** and **my-app/index.html** files for initializing the Essential JS 2 Syncfusion control.
-
-{% endif %}
-
-{% if page.publishingplatform == "typescript" %}
 
 ### Add Syncfusion JavaScript packages
 
@@ -111,16 +101,7 @@ To apply a theme, you can import the required CSS files from the node_modules di
 
 ```
 
-{% elsif page.publishingplatform == "javascript" %}
 
-### Adding Syncfusion resources
-
-The Essential JS 2 Grid and GridChart can be initialized by using either of the following ways.
-
-* [Using local script and style](../../documentation/getting-started/quick-start#using-local-scripts-and-styles).
-* [Using CDN link for script and style](../../documentation/getting-started/quick-start#using-cdn-link-for-scripts-and-styles).
-
-{% endif %}
 
 ### Chart integration via Context Menu in Grid
 
@@ -130,7 +111,7 @@ For example, in a sales dashboard, you can select sales records for specific pro
 
 Steps to be followed to integrate Chart into Grid via contextmenu:
 
-{% if page.publishingplatform == "typescript" %}
+
 
 **Step 1. Inject required modules:**
 
@@ -236,105 +217,11 @@ Use the [contextMenuClick](../api/grid#contextmenuclick) event to detect which C
 
 ```
 
-{% elsif page.publishingplatform == "javascript" %}
 
-**Step 1: Define Chart options to Grid Context Menu:**
-
-Add Chart visualization options as context menu items within the Grid configuration using [contextMenuItems](../api/grid#contextmenuitems) property. These items allow  you to right-click on selected rows and choose a Chart type to visualize the data.
-
-```ts
-
-contextMenuItems: [
-  'Bar', 'StackingBar', 'StackingBar100',
-  'Pie','Column', 'StackingColumn', 'StackingColumn100',
-  'Line', 'StackingLine', 'StackingLine100',
-  'Area', 'StackingArea', 'StackingArea100','Scatter'
-]
-
-```
-
-**Step 2: Initialize GridChart instance on Grid creation:**
-
-Inside the Grid’s [created](../api/grid#created) event, instantiate a **GridChart** object. This instance will be used to render Charts dynamically based on the selected Grid data.
-
-```ts
-created: () => {
-  gridChart = new GridChart({
-    enableRtl: grid.enableRtl,
-    locale: grid.locale
-  });
-}
-
-```
-
-This ensures that the Chart instance is ready as soon as the Grid is initialized, allowing seamless interaction through the context menu.
-
-**Step 3: Handle context menu click to render Chart:**
-
-Use the [contextMenuClick](../api/grid#contextmenuclick) event to detect which Chart type was selected and render the Chart accordingly using the `GridChart.render()` method.
-
-`ContextMenuClick` event passes the below arguments:
-
-  * `args.chartType:` The selected Chart type.
-
-  * `args.gridInstance:` The current Grid instance.
-
-  * `args.records:` The selected data records to be visualized in the Chart.
-
-* Use the `gridChart.render` to render the Chart. It accepts three arguments discussed below:
-
-  * `chartArgs`: Contains Grid instance, [Chart type](../../documentation/chart/chart-types), and selected records.
-
-  * `chartModel:` This specifies various Chart configurations related to the appearance and behavior of the Chart. The model allows you to configure axes, labels, legends, tooltips, and other Chart attributes. Refer to Syncfusion's [Chart Model](../api/chart/chartmodel) for detailed configurations, options, and customization possibilities.
-
-  * `categorySeries:` This specifies the fields in your data used for [categories](../chart/category-axis) and [series](../chart/chart-series) in the Chart.
-
-    * Category fields: Define the grouping axis.
-    * Series fields: Define the actual values plotted on the Chart.
-
-```ts
-
-  contextMenuClick: (args) => {
-    // Check if the Chart type is defined in the clicked context menu item.
-    if (args.chartType) {
-      
-      // Prepare the Chart arguments including the Grid instance, Chart type, and records to plot.
-      const chartArgs = {
-        gridInstance: args.gridInstance,
-        chartType: args.chartType,
-        records: args.records 
-      };
-
-      // Set up the Chart model configurations.
-      const chartModel = {
-        primaryXAxis: {
-          valueType: 'Category',
-          labelRotation: 315
-        },
-      };
-
-      // Combine both Chart models into a single model for rendering.
-      const model = { chart: chartModel, accumulationChart: {} };
-
-      // Determine fields for category and series data in the Chart.
-      const categorySeries = {
-        category: ['Product', 'Month'], 
-        series: ['Online', 'Retail'] 
-      };
-
-      // Render the Chart using the configured arguments and models.
-      // The render function uses the defined chartArgs, model, and categorySeries to display the Chart.
-      gridChart.render(chartArgs, model, categorySeries);
-    }
-}
-
-```
-
-{% endif %}
 
 The following complete example demonstrates how to integrate Charts into a Grid context menu using the `contextMenuClick` event with `gridChart.render` method:
 
-{% if page.publishingplatform == "typescript" %}
+
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -347,19 +234,7 @@ The following complete example demonstrates how to integrate Charts into a Grid 
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/chart-integration" %}
         
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/chart-integration/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/chart-integration/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/chart-integration" %}
-{% endif %}
 
 ## Enable export functionality in GridChart
 
@@ -421,7 +296,7 @@ To customize [Accumulation Charts](../../documentation/accumulation-chart/gettin
 
 The following code snippets demonstrate how to achieve this:
 
-{% if page.publishingplatform == "typescript" %}
+
 
 ```ts
 contextMenuClick: (args: ContextMenuClickEventArgs) => {
@@ -469,60 +344,13 @@ contextMenuClick: (args: ContextMenuClickEventArgs) => {
 
 ```
 
-{% elsif page.publishingplatform == "javascript" %}
 
-```ts
-contextMenuClick: (args) => {
-  if (args.chartType) {
-    const chartModel = {
-      primaryXAxis: {
-      valueType: 'Category',
-      labelRotation: 315,
-    },
-    margin: {
-      top: 20,
-      bottom: 20,
-      right: 20,
-      left: 20
-    },
-    tooltip: {
-      enable: true,
-      textStyle: {
-        size: '16px',
-        fontFamily: 'Arial, Helvetica, sans-serif'
-      }
-    },
-    title: 'Sales Data',
-    titleStyle: {
-      size: '24px',
-      fontFamily: 'Arial, Helvetica, sans-serif',
-      fontWeight: 'Bold'
-    },
-    subTitle: 'Sales data for various products over the months',
-    load: (args) => {
-      if (args.chart.titleStyle) {
-        args.chart.titleStyle.color = '#1976d2';
-      }
-    }
-  };
-  const accumulationChartModel = {
-    title :'Sales Distribution'
-  };
-  const model = {
-    chart: chartModel,
-      accumulationChart: accumulationChartModel
-    };
-  }
-}
-```
-
-{% endif %}
 
 You can also programmatically update the Chart’s appearance using the `updateChartSettings(args: UpdateChartArgs)` event provided by the **GridChart** integration. This event is triggered when you modify Chart properties through the Chart popup’s property panel. This is useful for applying custom themes, adjusting axis settings, or modifying series styles.
 
 The following code snippet demonstrates how to dynamically customize chart margins and restrict their values to a minimum of 20 using the `updateChartSettings` event.
 
-{% if page.publishingplatform == "typescript" %}
+
 
 ```ts
 created: () => {
@@ -548,37 +376,11 @@ function updateChartSettings(args: UpdateChartArgs): void {
 
 ```
 
-{% elsif page.publishingplatform == "javascript" %}
 
-```ts
-created: () => {
-  gridChart = new GridChart({
-    enablePropertyPanel: true,
-    updateChartSettings: updateChartSettings
-  });
-});
-
-function updateChartSettings(args) {
-  const chart = args.changes?.chart;
-  if (!chart) return;
-
-  // Restrict margin values to minimum 20.
-  const margin = chart.margin;
-  if (margin) {
-    if ( margin.top < 20) margin.top = 20;
-    if (margin.bottom < 20) margin.bottom = 20;
-    if (margin.left < 20) margin.left = 20;
-    if (margin.right < 20) margin.right = 20;
-  }
-}
-
-```
-
-{% endif %}
 
 The following complete example demonstrates how to enable the property panel by setting `enablePropertyPanel` to **true**, customize the chart using the `chartModel` within `contextMenuClick` event, and dynamically control or customize the behavior of the `updateChartSettings` event.
 
-{% if page.publishingplatform == "typescript" %}
+
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -590,17 +392,3 @@ The following complete example demonstrates how to enable the property panel by 
 {% endtabs %}
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/chart-integration2" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/chart-integration2/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/chart-integration2/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/chart-integration2" %}
-{% endif %}

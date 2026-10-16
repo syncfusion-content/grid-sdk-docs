@@ -34,7 +34,7 @@ The following table shows built-in toolbar items and its actions.
 | PdfExport | Exports the grid to PDF.|
 | WordExport | Exports the grid to Word.|
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -47,19 +47,7 @@ The following table shows built-in toolbar items and its actions.
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/grid-cs169" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/grid-cs169/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/grid-cs169/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/grid-cs169" %}
-{% endif %}
 
 > * The [`toolbar`](../api/grid/#toolbar) has options to define both built-in and custom toolbar items.
 
@@ -70,7 +58,7 @@ Actions for this customized toolbar items are defined in the [`toolbarClick`](..
 
 By default, Custom toolbar items are in position `Left`. You can change the position by using the [`align`](../api/toolbar/itemModel/) property. In the below sample, we have applied position `Right` for the `Collapse All` toolbar item.
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -83,19 +71,7 @@ By default, Custom toolbar items are in position `Left`. You can change the posi
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/custom-toolbar-cs1" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/custom-toolbar-cs1/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/custom-toolbar-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/custom-toolbar-cs1" %}
-{% endif %}
 
 > * The [`toolbar`](../api/grid/#toolbar) has options to define both built-in and custom toolbar items.
 > * If a toolbar item does not match the built-in items, it will be treated as a custom toolbar item.
@@ -106,7 +82,7 @@ Grid have an option to use both built-in and custom toolbar items at same time.
 
 In the below example, `Add`, `Edit`, `Delete`, `Update`, `Cancel` are built-in toolbar items and `Click` is custom toolbar item.
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -119,26 +95,14 @@ In the below example, `Add`, `Edit`, `Delete`, `Update`, `Cancel` are built-in t
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/grid-cs170" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/grid-cs170/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/grid-cs170/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/grid-cs170" %}
-{% endif %}
 
 ## Custom toolbar
 
 Custom toolbar is used to customize the whole toolbar. It can be added by defining `toolbarTemplate` as an HTML element ID.
 Actions for this toolbar template items are defined in the [`toolbarClick`](../api/grid/#toolbarclick) event.
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -151,25 +115,13 @@ Actions for this toolbar template items are defined in the [`toolbarClick`](../a
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/toolbar-template-cs1" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/toolbar-template-cs1/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/toolbar-template-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/toolbar-template-cs1" %}
-{% endif %}
 
 ## Enable/disable toolbar items
 
 You can enable/disable toolbar items by using the `enableItems` method.
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -182,19 +134,7 @@ You can enable/disable toolbar items by using the `enableItems` method.
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/toolbar-enable-cs1" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/toolbar-enable-cs1/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/toolbar-enable-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/toolbar-enable-cs1" %}
-{% endif %}
 
 ## See Also
 

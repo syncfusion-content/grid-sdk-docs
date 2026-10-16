@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Foreign key column in JavaScript Grid control | Syncfusion
 description: Learn here all about Foreign key column in Syncfusion JavaScript Grid control of Syncfusion Essential JS 2 and more.
@@ -16,20 +16,12 @@ To enable and integrate the foreign key column in the JavaScript Grid control, f
 
  1.Inject the ForeignKeyService in the Grid
 
- {% if page.publishingplatform == "typescript" %}
-  
- ```typescript
- import { ForeignKey } from '@syncfusion/ej2-grids';
-
- Grid.Inject(ForeignKey);
-```
-
-{% elsif page.publishingplatform == "javascript" %}
+ 
   
 ```js
  ej.grids.Grid.Inject(ej.grids.ForeignKey);
 ```  
- {% endif %}
+ 
 
 2.Define the foreign key column in the grid using the following properties:
 
@@ -53,20 +45,7 @@ The Syncfusion<sup style="font-size:70%">&reg;</sup> Grid control provides a con
 
 In this example, **data** is the local data source for the Grid, and **employeeData** is the local data source for the foreign key column. The `field` property of the column is set to **EmployeeID** which represents the foreign key value in the **data**. The `foreignKeyValue` property is set to **FirstName** which represents the field name in the **employeeData** that you want to display in the foreign key column.
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/foreign-key-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/foreign-key-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/foreign-key-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -78,7 +57,7 @@ In this example, **data** is the local data source for the Grid, and **employeeD
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/foreign-key-cs1" %}
-{% endif %}
+
 
 ## Binding remote data
 
@@ -86,20 +65,7 @@ The Foreign key column in Syncfusion<sup style="font-size:70%">&reg;</sup> Grid 
 
 This example demonstrates how to use the foreign key column with remote data binding using the [ODataV4Adaptor](../../grid/data-binding/remote-data#odata-v4-adaptor---binding-odata-v4-service) in the grid:
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/foreign-key-cs1remote/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/foreign-key-cs1remote/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/foreign-key-cs1remote" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -111,7 +77,7 @@ This example demonstrates how to use the foreign key column with remote data bin
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/foreign-key-cs1remote" %}
-{% endif %}
+
 
 > * For remote data, the sorting and grouping is done based on [column.foreignKeyField](../../api/grid/column#foreignkeyfield) instead of [column.foreignKeyValue](../../api/grid/column#foreignkeyvalue).
 > * If [column.foreignKeyField](../../api/grid/column#foreignkeyfield) is not defined, then the column uses [column.field](../../api/grid/column#field).
@@ -120,29 +86,12 @@ This example demonstrates how to use the foreign key column with remote data bin
 
 The Syncfusion<sup style="font-size:70%">&reg;</sup> Grid provides support for using an edit template in a foreign key column. By default, a dropdown control is used for editing foreign key column. However, you can render a different control for editing by using the [column.edit](../../api/grid/column#edit) property. Here's an example that demonstrates how to use an edit template in a foreign key column:
 
-{% if page.publishingplatform == "typescript" %}
- 
-In this example, an [AutoComplete](https://ej2.syncfusion.com/demos/#/bootstrap5/auto-complete/default.html) control is rendered as the edit template for the **"EmployeeID"** foreign key column. The [dataSource](../../api/auto-complete#datasource) property of the `AutoComplete` control is set to the employees data, and the fields property is configured to display the **"FirstName"** field as the value.
 
-{% elsif page.publishingplatform == "javascript" %}
  
 In this example, an [AutoComplete](https://ej2.syncfusion.com/javascript/demos/#/bootstrap5/auto-complete/default.html) control is rendered as the edit template for the **"EmployeeID"** foreign key column. The [dataSource](../../api/auto-complete#datasource) property of the `AutoComplete` control is set to the employees data, and the fields property is configured to display the **"FirstName"** field as the value.  
-{% endif %}
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/foreign-key-cs2/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/foreign-key-cs2/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/foreign-key-cs2" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -154,36 +103,19 @@ In this example, an [AutoComplete](https://ej2.syncfusion.com/javascript/demos/#
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/foreign-key-cs2" %}
-{% endif %}
+
 
 ## Customize filter UI in foreignkey column
 
 The Syncfusion<sup style="font-size:70%">&reg;</sup> Grid allows you to customize the filtering user interface (UI) for foreign key columns by using the [column.filter](../../api/grid/column#filter) property. By default, a dropdown control is used for filtering foreign key columns. However, you can create your own custom filtering UI by specifying a template function for the `column.filter` property. Here's an example that demonstrates how to create a custom filtering UI in a foreign key column:
 
-{% if page.publishingplatform == "typescript" %}
- 
-In this example, a [DropDownList](https://ej2.syncfusion.com/demos/#/bootstrap5/drop-down-list/default.html) control is rendered as the filter UI for the **"EmployeeID"** foreign key column. The [dataSource](../../api/drop-down-list#datasource) property of the DropDownList control is set to the employees data, and the fields property is configured to display the **FirstName** field as the [text](../../api/drop-down-list#text) and **EmployeeID** field as the [value](../../api/drop-down-list#value). The `value` property is set to the current filter value of the column.
 
- {% elsif page.publishingplatform == "javascript" %}
  
 In this example, a [DropDownList](https://ej2.syncfusion.com/javascript/demos/#/bootstrap5/drop-down-list/default.html) control is rendered as the filter UI for the **"EmployeeID"** foreign key column. The [dataSource](../../api/drop-down-list#datasource) property of the DropDownList control is set to the employees data, and the fields property is configured to display the **FirstName** field as the [text](../../api/drop-down-list#text) and **EmployeeID** field as the [value](../../api/drop-down-list#value). The `value` property is set to the current filter value of the column.
 
-{% endif %}
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/foreign-key-cs3/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/foreign-key-cs3/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/foreign-key-cs3" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -195,7 +127,7 @@ In this example, a [DropDownList](https://ej2.syncfusion.com/javascript/demos/#/
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/foreign-key-cs3" %}
-{% endif %}
+
 
 ## Use filter bar template in foreignkey column
 
@@ -203,20 +135,7 @@ You can use the filter bar template in a foreign key column in Grid by defining 
 
 In this example, the **"EmployeeID"** column is a foreign key column, and the **filter** function is used as the filter bar template for this column. The `filter` function can be defined in your control code and should return the desired control or HTML template for the filter bar. The column header shows the custom filter bar template and you can select filter value by using the **DropDown** options.
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/foreign-key-cs4/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/foreign-key-cs4/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/foreign-key-cs4" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -228,7 +147,7 @@ In this example, the **"EmployeeID"** column is a foreign key column, and the **
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/foreign-key-cs4" %}
-{% endif %}
+
 
 ## Perform aggregation in foreignkey column
 
@@ -244,20 +163,7 @@ Here's an example that demonstrates how to perform aggregation in a foreign key 
 
 In the provided example, the `customAggregateFn` function is used to filter the data based on the **FirstName** field of the foreign key column, using the `getForeignData` internal function. The function then counts the occurrences of **Margaret**. The result is displayed in the grid's footer template using the `footerTemplate`.
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/foreign-key-cs5/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/foreign-key-cs5/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/foreign-key-cs5" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -269,7 +175,7 @@ In the provided example, the `customAggregateFn` function is used to filter the 
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/foreign-key-cs5" %}
-{% endif %}
+
 
 ## Render foreign key value in column template
 
@@ -279,20 +185,7 @@ To render foreign key values in a column template, you need to define a [templat
 
 The following example demonstrates how to render foreign key values in a column template within the Grid:
 
-{% if page.publishingplatform == "typescript" %}
 
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/foreignkey-column-template/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/foreignkey-column-template/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/foreignkey-column-template" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -304,7 +197,7 @@ The following example demonstrates how to render foreign key values in a column 
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/foreignkey-column-template" %}
-{% endif %}
+
 
 ## Enable multiple foreign key columns
 
@@ -312,20 +205,7 @@ The Syncfusion<sup style="font-size:70%">&reg;</sup> Grid control supports the f
 
 In the following example, **Customer Name** and **Ship City** are foreign key columns that display the **ContactName** and **City** columns from foreign data.
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/foreign-key-cs6/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/foreign-key-cs6/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/foreign-key-cs6" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -337,7 +217,7 @@ In the following example, **Customer Name** and **Ship City** are foreign key co
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/foreign-key-cs6" %}
-{% endif %}
+
 
 ## Edit template in foreign key column using remote data
 
@@ -345,107 +225,7 @@ The JavaScript Grid allows you to customize the edit template for foreign key co
 
 This example demonstrates how to use an edit template in a foreign key column with remote data. In this case, an [AutoComplete](../../auto-complete/getting-started) control is rendered as the edit template for the **EmployeeID** foreign key column. The [dataSource](../../api/auto-complete#datasource) property of the **AutoComplete** control is set to the employees data, and the [field](../../api/grid/column#field) property is configured to display the **FirstName** field as the value. Follow the steps below to achieve this:
 
-{% if page.publishingplatform == "typescript" %}
 
-**Step 1:** Open Visual Studio and create an project using following [link](https://ej2.syncfusion.com/documentation/grid/connecting-to-adaptors/web-api-adaptor#creating-an-api-service) and named **EditTemplate**.
-
-**Step 2 :** Create a simple JavaScript Grid by following the [Getting Started](../../grid/getting-started.md) documentation link.
-
-**Step 3:**  In your JavaScript control HTML file (e.g., **index.html**), define the  Grid and include the necessary Syncfusion<sup style="font-size:70%">&reg;</sup> styles:
-
-```html
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <title>EJ2 Grid</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Typescript Grid Control" />
-    <meta name="author" content="Syncfusion" />
-    <link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/material3.css" rel="stylesheet" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
-    <script src="https://cdn.syncfusion.com/ej2/syncfusion-helper.js" type="text/javascript"></script>
-</head>
-<body>
-    <div id='container'>
-        <div id='Grid'></div>
-    </div>
-</body>
-</html>
-```
-**Step 4:** In your JavaScript control (e.g., **index.ts**), define the Syncfusion<sup style="font-size:70%">&reg;</sup> React Grid with the necessary configurations, including a foreign key column for **EmployeeID**:
-
-```ts
-import { Grid, Toolbar, Edit, Page, ForeignKey, ActionEventArgs, EditMode } from '@syncfusion/ej2-grids';
-import { DataManager, UrlAdaptor } from '@syncfusion/ej2-data';
-import { AutoComplete, ChangeEventArgs, FieldSettingsModel } from '@syncfusion/ej2-dropdowns';
-import { createElement } from '@syncfusion/ej2-base';
-
-Grid.Inject(Toolbar, Edit, Page, ForeignKey);
-
-let data: DataManager = new DataManager({
-    url: 'https://localhost:****/api/Grid', // Replace your hosted link.
-    insertUrl: 'https://localhost:****/api/Grid/Insert',
-    updateUrl: 'https://localhost:****/api/Grid/Update',
-    removeUrl: 'https://localhost:****/api/Grid/Remove',
-    adaptor: new UrlAdaptor(),
-     crossDomain: true
-});
-let employeeData: DataManager = new DataManager({
-    url: 'https://localhost:****/api/Grid/employees', 
-    adaptor: new UrlAdaptor(),
-    crossDomain: true,
-});
-
-let editSettings = { allowEditing: true, allowAdding: true, allowDeleting: true, mode: 'Normal' as EditMode };
-let toolbar: string[] = ['Add', 'Edit', 'Delete', 'Update', 'Cancel'];
-let orderIDRules = { required: true };
-let autoComplete: AutoComplete;
-let editTemplate = {
-    create: (args: any): HTMLInputElement => {
-        return createElement('input') as HTMLInputElement;
-    },
-    destroy: (args: any): void => {
-        if (autoComplete) autoComplete.destroy();
-    },
-    read: (args: any): any => {
-        return autoComplete?.value;
-    },
-    write: (args: any): void => {
-        let selectedValue: string = args.rowData ? args.rowData.EmployeeID : '';
-
-        autoComplete = new AutoComplete({
-            dataSource: employeeData,
-            fields: { value: 'EmployeeID', text: 'FirstName' } as FieldSettingsModel,
-            value: selectedValue,
-            change: (e: ChangeEventArgs) => {
-                if (e.itemData) {
-                    args.rowData.EmployeeID = ((e.itemData) as any).EmployeeID;
-                }
-            }
-        });
-        autoComplete.appendTo(args.element);
-    }
-};
-
-let grid: Grid = new Grid({
-    dataSource: data,
-    editSettings: editSettings,
-    toolbar: toolbar,
-    height: 250,
-    columns: [
-        { field: 'OrderID', headerText: 'Order ID', isPrimaryKey: true, width: 100, textAlign: 'Right', validationRules: orderIDRules },
-        { field: 'EmployeeID', headerText: 'Employee Name', foreignKeyValue: 'FirstName', foreignKeyField: 'EmployeeID', dataSource: employeeData, edit: editTemplate, width: 120 },
-        { field: 'Freight', headerText: 'Freight', format: 'C2', editType: 'numericedit', width: 100 },
-        { field: 'ShipCity', headerText: 'Ship City', width: 150 }
-    ],
-    allowPaging: true
-});
-
-grid.appendTo('#Grid');
-```
-
-{% elsif page.publishingplatform == "javascript" %}
 
 **Step 1:** Open Visual Studio and create an project using following [link](https://ej2.syncfusion.com/javascript/documentation/grid/connecting-to-adaptors/web-api-adaptor#creating-an-api-service) and named **EditTemplate**.
 
@@ -537,7 +317,7 @@ var grid = new ej.grids.Grid({
 });
 grid.appendTo('#Grid');
 ```
-{% endif %}
+
 
 **Step 5:** On the server side, create a controller named **GridController.cs** under the **Controllers** folder to handle API requests:
 
