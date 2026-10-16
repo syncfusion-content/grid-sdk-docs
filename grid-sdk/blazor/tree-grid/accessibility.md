@@ -51,6 +51,8 @@ The Blazor Tree Grid component followed the [WAI-ARIA](https://www.w3.org/WAI/AR
 | `aria-grabbed` | Provides accessibility information for users interacting with draggable elements |
 | `aria-owns` | Establishing relationships between an element and the elements it owns or controls. |
 | `aria-label` | Provides an accessible name for the close icon. |
+| `aria-describedby` | References one or more elements that provide a description for the element. |
+| `aria-hidden` | Hides an element and its descendants from assistive technologies without visually hiding them. Avoid using it on focusable content. |
 
 ## Keyboard interaction
 
