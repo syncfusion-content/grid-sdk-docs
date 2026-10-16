@@ -18,20 +18,7 @@ When the grid is in batch editing mode, the aggregate values in the footer, grou
 
 Here's an example code snippet demonstrating how to auto update aggregate value in batch editing:
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/aggregates-cs6/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/aggregates-cs6/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/aggregates-cs6" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -43,7 +30,7 @@ Here's an example code snippet demonstrating how to auto update aggregate value 
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/aggregates-cs6" %}
-{% endif %}
+
 
 > Adding a new record to the grouped grid will not refresh the aggregate values.
 
@@ -53,20 +40,7 @@ By default, reactive aggregate update is not supported by inline and dialog edit
 
 In the following code, the input event for the Freight column editor has been registered and the aggregate value has been refreshed manually.
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/aggregates-cs7/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/aggregates-cs7/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/aggregates-cs7" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -78,4 +52,3 @@ In the following code, the input event for the Freight column editor has been re
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/aggregates-cs7" %}
-{% endif %}

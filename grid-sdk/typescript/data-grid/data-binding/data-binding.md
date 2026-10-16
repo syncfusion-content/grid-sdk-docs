@@ -4,7 +4,6 @@ title: Data binding in TypeScript Grid control | Syncfusion
 description: Learn here all about Data binding in Syncfusion TypeScript Grid control of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Data binding 
-publishingplatform: grid-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
@@ -13,7 +12,7 @@ domainurl: https://help.syncfusion.com/grid-sdk
 
 Data binding is a fundamental technique that empowers the Grid control to integrate data into its interface, enabling the creation of dynamic and interactive grid views. This feature is particularly valuable when working with large datasets or when data needs to be fetched remotely. 
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Grid utilizes the **DataManager**, which supports both local binding with JavaScript object arrays and remote binding with RESTful JSON data services. The key property, [dataSource](../../api/grid#datasource), can be assigned to a DataManager instance or a collection of JavaScript object arrays.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Grid utilizes the **DataManager**, which supports both local binding with JavaScript object arrays and remote binding with RESTful JSON data services. The key property, [dataSource](https://ej2.syncfusion.com/documentation/api/grid#datasource), can be assigned to a DataManager instance or a collection of JavaScript object arrays.
 
 It supports two kinds of data binding methods:
 
@@ -24,14 +23,14 @@ It supports two kinds of data binding methods:
 
 The Syncfusion<sup style="font-size:70%">&reg;</sup> TypeScript  Grid offers a loading animation feature, which makes it easy to identify when data is being loaded or refreshed. This feature provides a clear understanding of the grid's current state and actions, such as sorting, filtering, grouping, and more.
 
-To achieve this, you can utilize the [loadingIndicator.indicatorType](../../api/grid/loadingIndicatorModel) property of the grid, which supports two types of indicators:
+To achieve this, you can utilize the [loadingIndicator.indicatorType](https://ej2.syncfusion.com/documentation/api/grid/loadingIndicatorModel) property of the grid, which supports two types of indicators:
 
 * Spinner (default indicator)
 * Shimmer
 
-The following example demonstrates how to set the `loadingIndicator.indicatorType` property based on changing the dropdown value using the [change](../../api/drop-down-list#change) event of the `DropDownList` control. The [refreshColumns](../../api/grid#refreshcolumns) method is used to apply the changes and display the updated loading indicator type. 
+The following example demonstrates how to set the `loadingIndicator.indicatorType` property based on changing the dropdown value using the [change](https://ej2.syncfusion.com/documentation/api/drop-down-list#change) event of the `DropDownList` control. The [refreshColumns](https://ej2.syncfusion.com/documentation/api/grid#refreshcolumns) method is used to apply the changes and display the updated loading indicator type. 
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -44,25 +43,13 @@ The following example demonstrates how to set the `loadingIndicator.indicatorTyp
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/data-binding-cs1" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/data-binding-cs1/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/data-binding-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/data-binding-cs1" %}
-{% endif %}
 
 ## Refresh the datasource using property
 
 Refreshing the data source in a Syncfusion<sup style="font-size:70%">&reg;</sup> Grid involves updating the data that the grid displays dynamically. This operation is Essential<sup style="font-size:70%">&reg;</sup> when you need to reflect changes in the underlying data without reloading the entire page or control.
 
-To achieve this, you can make use of the [datasource](../../api/grid#datasource) property in conjunction with the `setProperties` method. This ensures that the grid reflects the changes in the data source without requiring a complete page or control reload.
+To achieve this, you can make use of the [datasource](https://ej2.syncfusion.com/documentation/api/grid#datasource) property in conjunction with the `setProperties` method. This ensures that the grid reflects the changes in the data source without requiring a complete page or control reload.
 
 For example, if you add or delete data source records, follow these steps:
 
@@ -75,25 +62,18 @@ grid.dataSource.splice(selectedRow, 1); // Delete a record.
 
 **Step 2**:  Refresh the datasource after changes by invoking the `setProperties` method.
 
-{% if page.publishingplatform == "typescript" %}
+
  
 ```ts
 (grid as Grid).setProperties({ dataSource:  (grid as Grid).dataSource as object[] });
 
 ```
 
- {% elsif page.publishingplatform == "javascript" %}
  
-```js
-grid.setProperties({dataSource: grid.dataSource});
-
-```
-
-{% endif %}
 
 The following example demonstrates adding a new record to the data source through an external button:
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -106,31 +86,19 @@ The following example demonstrates adding a new record to the data source throug
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/data-binding-cs2" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/data-binding-cs2/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/data-binding-cs2/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/data-binding-cs2" %}
-{% endif %}
 
 ## Dynamically change the datasource or columns or both
 
 The Grid control in Syncfusion<sup style="font-size:70%">&reg;</sup> allows dynamic modification of the data source, columns, or both . This feature is particularly valuable when you need to refresh the grid's content and structure without requiring a complete page reload.
 
-To achieve dynamic changes, you can utilize the [changeDataSource](../../api/grid#changedatasource) method. This method enables you to update the data source, columns, or both, based on your application's requirements. However, it is important to note that during the changing process for the data source and columns, the grid's existing actions such as sorting, filtering, grouping, aggregation, and searching will be reset. The `changeDataSource` method has two optional arguments: the first argument represents the data source, and the second argument represents the columns. The various uses of the `changeDataSource` method are explained in the following topic.
+To achieve dynamic changes, you can utilize the [changeDataSource](https://ej2.syncfusion.com/documentation/api/grid#changedatasource) method. This method enables you to update the data source, columns, or both, based on your application's requirements. However, it is important to note that during the changing process for the data source and columns, the grid's existing actions such as sorting, filtering, grouping, aggregation, and searching will be reset. The `changeDataSource` method has two optional arguments: the first argument represents the data source, and the second argument represents the columns. The various uses of the `changeDataSource` method are explained in the following topic.
 
 **1. Change both data source and columns:**
 
 To modify both the existing columns and the data source, you need to pass the both arguments to the `changeDataSource` method. The following example demonstrates how to change both the data source and columns.
 
-You can assign a JavaScript object array to the [dataSource](../../api/grid#datasource) property to bind local data to the grid. The code below provides an example of how to create a data source for the grid.
+You can assign a JavaScript object array to the [dataSource](https://ej2.syncfusion.com/documentation/api/grid#datasource) property to bind local data to the grid. The code below provides an example of how to create a data source for the grid.
 
 ```typescript
     export let data: Object[] = [
@@ -148,7 +116,7 @@ You can assign a JavaScript object array to the [dataSource](../../api/grid#data
     }];
 ```
 
-The following code demonstrates how to create the [columns](../../grid/columns/columns) for the grid, which are based on the provided grid data source.
+The following code demonstrates how to create the [columns](../columns/columns) for the grid, which are based on the provided grid data source.
 
 ```typescript
     public newColumn: ColumnModel[] = [
@@ -165,7 +133,7 @@ The following code demonstrates updating the data source and columns defined abo
 
 **2. Modify only the existing columns:**
 
-To modify the existing columns in a grid, you can either add or remove columns or change the entire set of columns using the [changeDataSource](../../api/grid#changedatasource) method. To use this method, you should set the first parameter to null and provide the new columns as the second parameter. However, please note that if a column field is not specified in the data source, its corresponding column values will be empty. The following example illustrates how to modify existing columns.
+To modify the existing columns in a grid, you can either add or remove columns or change the entire set of columns using the [changeDataSource](https://ej2.syncfusion.com/documentation/api/grid#changedatasource) method. To use this method, you should set the first parameter to null and provide the new columns as the second parameter. However, please note that if a column field is not specified in the data source, its corresponding column values will be empty. The following example illustrates how to modify existing columns.
 
 The following code demonstrates how to add new columns with existing grid columns ('newColumn') by using `changeDataSource` method.
 
@@ -206,7 +174,7 @@ The following code demonstrates, how to use the `changeDataSource` method to bin
     gridInstance.changeDataSource(employeeData);
 ```
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -219,29 +187,13 @@ The following code demonstrates, how to use the `changeDataSource` method to bin
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/data-binding-cs3" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/data-binding-cs3/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/data-binding-cs3/index.html %}
-{% endhighlight %}
-{% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/data-binding-cs3" %}
-{% endif %}
 
-{% if page.publishingplatform == "typescript" %}
 >* The Grid state persistence feature does not support the  `changeDataSource` method. 
 >* In this document, the above sample uses the local data for `changeDataSource` method. For those using a remote data source, refer to the [FlexibleData](https://ej2.syncfusion.com/demos/#/bootstrap5/grid/flexible-data.html) resource. 
  
-{% elsif page.publishingplatform == "javascript" %}
- >* The Grid state persistence feature does not support the  `changeDataSource` method.
->* In this document, the above sample uses the local data for `changeDataSource` method. For those using a remote data source, refer to the [FlexibleData](https://ej2.syncfusion.com/javascript/demos/#/bootstrap5/grid/flexible-data.html) resource. 
- 
-{% endif %}
+
 
 ## Prevent to convert local time zone format for date column
 
@@ -251,7 +203,7 @@ To prevent timezone conversion for a date column, use the `serverTimezoneOffset`
 
 The following example demonstrates how to prevent local time zone conversion for date columns in TypeScript Grid by using the `DataUtil.serverTimezoneOffset` property:
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -264,19 +216,7 @@ The following example demonstrates how to prevent local time zone conversion for
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/prevent-timezone-cs1" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/prevent-timezone-cs1/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/prevent-timezone-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/prevent-timezone-cs1" %}
-{% endif %}
 
 ## How to set custom headers using a custom adaptor
 
@@ -288,7 +228,7 @@ To achieve this, the `WebApiAdaptor` can be extended to create the custom adapto
 
 The following example demonstrates how to set custom headers using the custom adaptor in Syncfusion TypeScript Grid.
 
-{% if page.publishingplatform == "typescript" %}
+
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -301,19 +241,7 @@ The following example demonstrates how to set custom headers using the custom ad
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/custom-headers-cs1" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/custom-headers-cs1/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/custom-headers-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/custom-headers-cs1" %}
-{% endif %}
 
 ## See Also
 

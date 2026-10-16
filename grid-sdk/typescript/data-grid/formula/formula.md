@@ -14,9 +14,9 @@ Formula cells in the Syncfusion TypeScript Data Grid enable spreadsheet-like cal
 
 ## Enable formula
 
-Formula support is enabled by setting the [allowFormula](../../api/grid/column#allowformula) property at the column level. When `allowFormula` is enabled, the data source must include the formula definition for the corresponding column. The Data Grid evaluates the formula and automatically updates the calculated value when dependent data changes.
+Formula support is enabled by setting the [allowFormula](https://ej2.syncfusion.com/documentation/api/grid/column#allowformula) property at the column level. When `allowFormula` is enabled, the data source must include the formula definition for the corresponding column. The Data Grid evaluates the formula and automatically updates the calculated value when dependent data changes.
 
-To use formula functionality, inject the [Formula](../../api/grid/formula) module into the **Grid**.
+To use formula functionality, inject the [Formula](https://ej2.syncfusion.com/documentation/api/grid/formula) module into the **Grid**.
 
 **For example:**
 
@@ -39,7 +39,7 @@ let productData: Object[] = [
 
 In this demo, formulas are applied to the "GrossAmount", "TaxAmount", and "TotalAmount" columns, allowing values to be computed and updated automatically based on the defined expressions in the datasource.
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -52,19 +52,7 @@ In this demo, formulas are applied to the "GrossAmount", "TaxAmount", and "Total
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/formula-cs1" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/formula-cs1/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/formula-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/formula-cs1" %}
-{% endif %}
 
 ### Formula settings
 
@@ -127,7 +115,7 @@ Formulas support built-in functions for performing calculations and data operati
 
 The following example shows a formula-enabled column that calculates the product of the price and quantity using the built-in `PRODUCT` function. This formula multiplies the values in the selected cells and updates the result automatically whenever either referenced value changes.
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -140,19 +128,7 @@ The following example shows a formula-enabled column that calculates the product
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/formula-cs3" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/formula-cs3/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/formula-cs3/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/formula-cs3" %}
-{% endif %}
 
 ## See also
 

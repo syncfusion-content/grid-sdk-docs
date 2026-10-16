@@ -106,4 +106,4 @@ The following error codes are returned when a formula contains invalid reference
 - [Formulas](./formula)
 - [Formula Editor](./formula-editor)
 - [Custom formula functions](./custom-formula)
-- [Editing](../editing/cell-editing)
+- [Editing](../editing/edit)

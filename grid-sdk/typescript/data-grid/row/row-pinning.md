@@ -4,7 +4,6 @@ title: Row pinning in TypeScript Grid control | Syncfusion
 description: Learn here all about Row pinning in Syncfusion TypeScript Grid control of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Row Pinning
-publishingplatform: grid-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
@@ -13,13 +12,13 @@ domainurl: https://help.syncfusion.com/grid-sdk
 
 The Syncfusion <sup style="font-size:70%">&reg;</sup> TypeScript Grid control provides option to pin specific rows at the top, ensuring important information remains visible while scrolling vertically. This feature is useful when you want to keep specific rows always visible for quick reference or priority viewing, regardless of user interactions.
 
-To enable the row pinning feature, configure the [isRowPinned](../../api/grid#isrowpinned) callback function, which returns **true** or **false** based on the required condition. The function receives each row's data as input, allowing the pinning logic to be determined. It executes only during initial rendering, ensuring that any condition defined within it is evaluated during that initial stage.
+To enable the row pinning feature, configure the [isRowPinned](https://ej2.syncfusion.com/documentation/api/grid#isrowpinned) callback function, which returns **true** or **false** based on the required condition. The function receives each row's data as input, allowing the pinning logic to be determined. It executes only during initial rendering, ensuring that any condition defined within it is evaluated during that initial stage.
 
 This functionality does not change the grid's overall content height, keeping the content area fully visible and scrollable even when multiple rows are pinned. This behavior prevents pinned rows from overlapping or obscuring the scrollable content, maintaining a consistent layout and smooth scrolling experience. Pinned rows are displayed in a fixed region above the content area, while the grid preserves its original height and continues to provide unobstructed interaction with all other rows.
  
 The following example pins rows with "Critical" priority and "Open" status at the top using the `isRowPinned` callback function.
 
-{% if page.publishingplatform == "typescript" %}
+
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -32,27 +31,15 @@ The following example pins rows with "Critical" priority and "Open" status at th
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/rows-pinning-cs1" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/rows-pinning-cs1/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/rows-pinning-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/rows-pinning-cs1" %}
-{% endif %}
-
-> Pinning rows requires a primary key column for mapping the pinned rows to their original records. To define the primary key, set [columns->isPrimaryKey](../../api/grid/column#isprimarykey) to **true** in particular column.
+> Pinning rows requires a primary key column for mapping the pinned rows to their original records. To define the primary key, set [columns->isPrimaryKey](https://ej2.syncfusion.com/documentation/api/grid/column#isprimarykey) to **true** in particular column.
 
 ## Paging with row pinning
 
-Row pinning in the Grid control keeps important rows visible at the top while navigating through pages. Pinned rows are not counted as part of the page size and remain fixed at the top of the grid. For example, if  [pageSettings->pageSize](../../api/grid/pagesettings#pagesize) is set to "10" and "2" rows are pinned, those "2" rows stay at the top, and the grid displays "10" additional rows beneath them. When moving to another page, the pinned rows remain fixed at the top, and the next set of  "10" records is rendered below.
+Row pinning in the Grid control keeps important rows visible at the top while navigating through pages. Pinned rows are not counted as part of the page size and remain fixed at the top of the grid. For example, if  [pageSettings->pageSize](https://ej2.syncfusion.com/documentation/api/grid/pagesettings#pagesize) is set to "10" and "2" rows are pinned, those "2" rows stay at the top, and the grid displays "10" additional rows beneath them. When moving to another page, the pinned rows remain fixed at the top, and the next set of  "10" records is rendered below.
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -65,25 +52,13 @@ Row pinning in the Grid control keeps important rows visible at the top while na
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/rows-pinning-cs1" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/rows-pinning-cs2/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/rows-pinning-cs2/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/rows-pinning-cs2" %}
-{% endif %}
 
 ## Pinned rows selection
 
 Pinned rows can be selected in the same way as regular rows. Their selection state is always synchronized with the corresponding data rows through the primary key value. This ensures consistent behavior during all grid operations, including paging, sorting, and filtering. Whether selection is performed using the mouse, keyboard, or checkbox selection, pinned rows always display the same selection state as their associated data rows.
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -96,21 +71,9 @@ Pinned rows can be selected in the same way as regular rows. Their selection sta
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/rows-pinning-cs4" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/rows-pinning-cs4/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/rows-pinning-cs4/index.html %}
-{% endhighlight %}
-{% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/rows-pinning-cs4" %}
-{% endif %}
-
-> The [selectionSettings->persistSelection](../../api/grid/selectionsettings#persistselection) will be automatically enabled when pinning the rows using the `isRowPinned` callback function.
+> The [selectionSettings->persistSelection](https://ej2.syncfusion.com/documentation/api/grid/selectionsettings#persistselection) will be automatically enabled when pinning the rows using the `isRowPinned` callback function.
 
 ## Filtering and sorting with pinned rows
 
@@ -118,7 +81,7 @@ Row pinning remains fully compatible with filtering and sorting operations in th
  
 When sorting is applied to any column, pinned rows are reordered using the same sorting rules while remaining fixed at the top of the grid. This ensures that pinned rows stay visible and correctly positioned, even as the rest of the data is reorganized. The combined behavior provides a smooth and intuitive experience, allowing data to be refined and analyzed without losing visibility of important pinned records.
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -131,26 +94,14 @@ When sorting is applied to any column, pinned rows are reordered using the same 
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/rows-pinning-cs3" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/rows-pinning-cs3/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/rows-pinning-cs3/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/rows-pinning-cs3" %}
-{% endif %}
 
 
 ## CRUD operations with row pinning
 
 Row pinning fully supports CRUD operations by keeping pinned rows and their corresponding original rows synchronized. Any edit, update, or deletion applied to a pinned row is immediately reflected in the original row, and any change made to the original row is likewise mirrored in the pinned row. This ensures consistent and accurate data across both views.
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -163,25 +114,13 @@ Row pinning fully supports CRUD operations by keeping pinned rows and their corr
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/rows-pinning-cs5" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/rows-pinning-cs5/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/rows-pinning-cs5/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/rows-pinning-cs5" %}
-{% endif %}
 
 ## Dynamic row pinning
 
 Row pinning provides dynamic control through the built-in context menu, allowing quick actions to pin or remove pinned rows. Using options such as `PinRow` and `UnpinRow`, any row can be right-clicked to pin it to the top or quickly remove it from the pinned section.
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -194,19 +133,7 @@ Row pinning provides dynamic control through the built-in context menu, allowing
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/rows-pinning-cs6" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/rows-pinning-cs6/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/rows-pinning-cs6/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/rows-pinning-cs6" %}
-{% endif %}
 
 ## Limitation
 

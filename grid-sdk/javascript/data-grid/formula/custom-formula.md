@@ -15,7 +15,7 @@ The formula engine supports custom functions in addition to the built-in functio
 
 ## Custom function API
 
-Use the [formulaSettings.customFunctions](../../api/grid/formulasettingsmodel#customfunctions)  property to define the custom formulas available in the Grid. Each custom function has a unique name, and its calculation logic is defined using a function that returns the computed result.
+Use the [formulaSettings.customFunctions](https://ej2.syncfusion.com/javascript/documentation/api/grid/formulasettingsmodel#customfunctions)  property to define the custom formulas available in the Grid. Each custom function has a unique name, and its calculation logic is defined using a function that returns the computed result.
 
 | Property | Type | Description |
 | --- | --- | --- |
@@ -41,20 +41,7 @@ You can register custom formula functions with the `formulaSettings.customFuncti
 
 The following example registers a custom function named `CUSTOMSUM`. It accepts multiple values, including cell ranges, and returns the total of all provided values.
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/formula-cs4/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/formula-cs4/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/formula-cs4" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -66,7 +53,7 @@ The following example registers a custom function named `CUSTOMSUM`. It accepts 
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/formula-cs4" %}
-{% endif %}
+
 
 ## Add and remove formulas in programmatic way
 
@@ -93,4 +80,4 @@ Use `addFormula` to dynamically add custom formulas when needed. Use `removeForm
 - [Formulas](./formula)
 - [Formula reference](./formula-reference)
 - [Formula Editor](./formula-editor)
-- [Editing](../editing/cell-editing)
+- [Editing](../editing/edit)

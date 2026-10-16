@@ -14,24 +14,11 @@ In JavaScript, lazy loading refers to the technique of loading data dynamically 
 
 Lazy load grouping in Syncfusion<sup style="font-size:70%">&reg;</sup> Grid allows you to load and display grouped data efficiently by fetching only the required data on demand. This feature is useful when dealing with large datasets where loading all the data at once might affect performance. The Grid will render only the initial level caption rows in the collapsed state at grouping. The child rows of each caption will be fetched in on demand and render in the Grid when you expand the caption row.
 
-To enable this feature, need to set the [groupSettings->enableLazyLoading](../../api/grid/groupSettings#enableLazyLoading) property to **true**.
+To enable this feature, need to set the [groupSettings->enableLazyLoading](https://ej2.syncfusion.com/javascript/documentation/api/grid/groupSettings#enableLazyLoading) property to **true**.
 
 The following example demonstrates how to enable the lazy load grouping feature by setting `groupSettings.enableLazyLoading` property.
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/lazy-load-group-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/lazy-load-group-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/lazy-load-group-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -43,11 +30,11 @@ The following example demonstrates how to enable the lazy load grouping feature 
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/lazy-load-group-cs1" %}
-{% endif %}
+
 
 ## Handling the lazy load grouping at server-side
 
-When using the lazy load grouping feature of the Grid, you can use the [UrlAdaptor](../../data/adaptors#url-adaptor) of `DataManager` when binding remote data to handle the lazy load grouping at the server-side. Along with the default server request, this feature will additionally send the following details to handle the lazy load grouping:
+When using the lazy load grouping feature of the Grid, you can use the [UrlAdaptor](https://ej2.syncfusion.com/javascript/documentation/data/adaptors#url-adaptor) of `DataManager` when binding remote data to handle the lazy load grouping at the server-side. Along with the default server request, this feature will additionally send the following details to handle the lazy load grouping:
 
 Property Name |Description
 -----|-----
@@ -124,24 +111,11 @@ Lazy loading grouping with infinite scrolling is a valuable feature in scenarios
 
 3. Infinite scrolling enables the Grid to load additional data as the user scrolls to the end of the scrollbar.
 
-To enable this feature, you need to set the [groupSettings->enableLazyLoading](../../api/grid/groupSettings#enableLazyLoading) and [enableInfiniteScrolling](../../api/grid#enableinfinitescrolling) properties to **true**.
+To enable this feature, you need to set the [groupSettings->enableLazyLoading](https://ej2.syncfusion.com/javascript/documentation/api/grid/groupSettings#enableLazyLoading) and [enableInfiniteScrolling](https://ej2.syncfusion.com/javascript/documentation/api/grid#enableinfinitescrolling) properties to **true**.
 
 The following example demonstrates how to enable the lazy load grouping with infinite scrolling feature using the `groupSettings.enableLazyLoading` and `enableInfiniteScrolling` properties.
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/lazy-load-group-cs2/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/lazy-load-group-cs2/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/lazy-load-group-cs2" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -153,10 +127,10 @@ The following example demonstrates how to enable the lazy load grouping with inf
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/lazy-load-group-cs2" %}
-{% endif %}
 
-> * The [enableInfiniteScrolling](../../api/grid#enableinfinitescrolling) property is optional and can be set to **true** or **false** based on the requirement.
-> * When enabling the `enableInfiniteScrolling` feature, it is necessary to define the [height](../../api/grid#height) property.
+
+> * The [enableInfiniteScrolling](https://ej2.syncfusion.com/javascript/documentation/api/grid#enableinfinitescrolling) property is optional and can be set to **true** or **false** based on the requirement.
+> * When enabling the `enableInfiniteScrolling` feature, it is necessary to define the [height](https://ej2.syncfusion.com/javascript/documentation/api/grid#height) property.
 
 ## Lazy load grouping with virtual scrolling
 
@@ -170,24 +144,11 @@ The lazy load grouping with virtual scrolling feature in the JavaScript Grid all
 
 3. Virtual scrolling allows the Grid to load and display a buffered set of records while scrolling vertically.
 
-To enable this feature, you need to set the [groupSettings->enableLazyLoading](../../api/grid/groupSettings#enableLazyLoading) and [enableVirtualization](../../api/grid#enablevirtualization) properties to **true**.
+To enable this feature, you need to set the [groupSettings->enableLazyLoading](https://ej2.syncfusion.com/javascript/documentation/api/grid/groupSettings#enableLazyLoading) and [enableVirtualization](https://ej2.syncfusion.com/javascript/documentation/api/grid#enablevirtualization) properties to **true**.
 
 The following example demonstrates how to enable the lazy load grouping with virtual scrolling feature using the `groupSettings.enableLazyLoading` and `enableVirtualization` properties.
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/lazy-load-group-virtualscroll/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/lazy-load-group-virtualscroll/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/lazy-load-group-virtualscroll" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -199,14 +160,14 @@ The following example demonstrates how to enable the lazy load grouping with vir
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/lazy-load-group-virtualscroll" %}
-{% endif %}
 
-> When using the `enableVirtualization` feature, it is necessary to define the [height](../../documentation/api/grid#height) property.
+
+> When using the `enableVirtualization` feature, it is necessary to define the [height](https://ej2.syncfusion.com/javascript/documentation/api/grid#height) property.
 
 ## Limitations for lazy load grouping
 
 * Due to the element height limitation in browsers, the maximum number of records loaded by the grid is limited due to the browser capability.
-* Lazy load grouping is only supported by the [UrlAdaptor](../../data/adaptors#url-adaptor) and [JsonAdaptor](../../data/adaptors#json-adaptor) adaptors.
+* Lazy load grouping is only supported by the [UrlAdaptor](https://ej2.syncfusion.com/javascript/documentation/data/adaptors#url-adaptor) and [JsonAdaptor](https://ej2.syncfusion.com/javascript/documentation/data/adaptors#json-adaptor) adaptors.
 * Lazy load grouping is not compatible with the following features
     * Batch editing
     * Row template

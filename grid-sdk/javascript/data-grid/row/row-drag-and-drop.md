@@ -4,7 +4,6 @@ title: Row drag and drop in JavaScript Grid control | Syncfusion
 description: Learn here all about Row drag and drop in Syncfusion JavaScript Grid control of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Row drag and drop 
-publishingplatform: grid-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
@@ -13,28 +12,15 @@ domainurl: https://help.syncfusion.com/grid-sdk
 
 The JavaScript Grid control provides built-in support for row drag and drop functionality. This feature allows you to easily rearrange rows within the grid by dragging and dropping them to new positions. Additionally, you can also drag and drop rows from one grid to another grid, as well as drag and drop rows to custom controls.
 
-To use the row drag and drop feature in Grid control, you need to inject the **RowDD** module in the grid. The **RowDD** is responsible for handling the row drag and drop functionality in the grid control. Once you have injected the **RowDD**, you can then use the [allowRowDragAndDrop](../../api/grid#allowrowdraganddrop) and [targetID](../../api/grid/rowDropSettings#targetid) properties to enable and configure the row drag and drop feature in the Grid.
+To use the row drag and drop feature in Grid control, you need to inject the **RowDD** module in the grid. The **RowDD** is responsible for handling the row drag and drop functionality in the grid control. Once you have injected the **RowDD**, you can then use the [allowRowDragAndDrop](https://ej2.syncfusion.com/javascript/documentation/api/grid#allowrowdraganddrop) and [targetID](https://ej2.syncfusion.com/javascript/documentation/api/grid/rowDropSettings#targetid) properties to enable and configure the row drag and drop feature in the Grid.
 
 ## Drag and drop within grid
 
-The drag and drop feature allows you to rearrange rows within the grid by dragging them using a drag icon. This feature can be enabled by setting the [allowRowDragAndDrop](../../api/grid#allowrowdraganddrop) property to **true**. This property is a boolean value that determines whether row drag and drop is enabled or not. By default, it is set to **false**, which means that row drag and drop is disabled.
+The drag and drop feature allows you to rearrange rows within the grid by dragging them using a drag icon. This feature can be enabled by setting the [allowRowDragAndDrop](https://ej2.syncfusion.com/javascript/documentation/api/grid#allowrowdraganddrop) property to **true**. This property is a boolean value that determines whether row drag and drop is enabled or not. By default, it is set to **false**, which means that row drag and drop is disabled.
 
 Here's an example of how to enable drag and drop within the Grid:
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/draganddrop-single-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/draganddrop-single-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/draganddrop-single-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -46,30 +32,17 @@ Here's an example of how to enable drag and drop within the Grid:
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/draganddrop-single-cs1" %}
-{% endif %}
+
 
 ## Drag and drop to grid 
 
-The grid row drag and drop allows you to drag grid rows and drop to another grid. This feature can be enabled by setting the [allowRowDragAndDrop](../../api/grid#allowrowdraganddrop) property to **true** in the Grid control. This property specifies whether to enable or disable the row drag and drop feature in the Grid. By default, this property is set to **false**, which means that row drag and drop functionality is not enabled.
+The grid row drag and drop allows you to drag grid rows and drop to another grid. This feature can be enabled by setting the [allowRowDragAndDrop](https://ej2.syncfusion.com/javascript/documentation/api/grid#allowrowdraganddrop) property to **true** in the Grid control. This property specifies whether to enable or disable the row drag and drop feature in the Grid. By default, this property is set to **false**, which means that row drag and drop functionality is not enabled.
 
-To specify the target control where the grid rows should be dropped, use the [targetID](../../api/grid/rowDropSettings#targetid) property of the [rowDropSettings](../../api/grid/rowDropSettings/) object. The `targetID` property takes the ID of the target control as its value.
+To specify the target control where the grid rows should be dropped, use the [targetID](https://ej2.syncfusion.com/javascript/documentation/api/grid/rowDropSettings#targetid) property of the [rowDropSettings](https://ej2.syncfusion.com/javascript/documentation/api/grid/rowDropSettings) object. The `targetID` property takes the ID of the target control as its value.
 
 Here's an example code snippet that demonstrates how to enable Row drag and drop another Grid control:
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/draganddrop-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/draganddrop-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/draganddrop-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -81,31 +54,18 @@ Here's an example code snippet that demonstrates how to enable Row drag and drop
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/draganddrop-cs1" %}
-{% endif %}
+
 
 > * The row drag and drop feature is not supported in virtual scrolling and frozen rows and columns mode.
 > * In order to use row drag and drop, you need to inject the **RowDD** module in the grid.
 
 ## Drag and drop to custom control
 
-The Grid provides the feature to drag and drop grid rows to any custom control. This feature allows you to easily move rows from one control to another without having to manually copy and paste data. To enable row drag and drop, you need to set the [allowRowDragAndDrop](../../api/grid#allowrowdraganddrop) property to **true** and defining the custom control ID in the [targetID](../../api/grid/rowDropSettings#targetid) property of the `rowDropSettings` object. The ID provided in `targetID` should correspond to the ID of the target control where the rows are to be dropped.
+The Grid provides the feature to drag and drop grid rows to any custom control. This feature allows you to easily move rows from one control to another without having to manually copy and paste data. To enable row drag and drop, you need to set the [allowRowDragAndDrop](https://ej2.syncfusion.com/javascript/documentation/api/grid#allowrowdraganddrop) property to **true** and defining the custom control ID in the [targetID](https://ej2.syncfusion.com/javascript/documentation/api/grid/rowDropSettings#targetid) property of the `rowDropSettings` object. The ID provided in `targetID` should correspond to the ID of the target control where the rows are to be dropped.
 
-In the below example, the selected grid row is dragged and dropped in to the TreeGrid control by using [rowDrop](../../api/grid#rowdrop) event. Once the row is dropped into the TreeGrid control, we have removed the corresponding grid row from grid and its data inserted in custom control.
+In the below example, the selected grid row is dragged and dropped in to the TreeGrid control by using [rowDrop](https://ej2.syncfusion.com/javascript/documentation/api/grid#rowdrop) event. Once the row is dropped into the TreeGrid control, we have removed the corresponding grid row from grid and its data inserted in custom control.
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/draganddrop-custom-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/draganddrop-custom-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/draganddrop-custom-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -117,32 +77,19 @@ In the below example, the selected grid row is dragged and dropped in to the Tre
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/draganddrop-custom-cs1" %}
-{% endif %}
+
 
 > * The `rowDrop` event is fired when a row is dropped onto a custom control, regardless of whether the drop is successful or not. You can use the `args.cancel` property to prevent the default action.
 
 ## Drag and drop rows without drag icon
 
-By default, when performing a drag and drop operation in the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid, drag icons are displayed. However, in some cases, you may want to hide these drag icons. This can be achieved by setting the [targetID](../../api/grid/rowDropSettings#targetid) property of the [rowDropSettings](../../api/grid/rowDropSettings/) object to the current Grid's ID.
+By default, when performing a drag and drop operation in the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid, drag icons are displayed. However, in some cases, you may want to hide these drag icons. This can be achieved by setting the [targetID](https://ej2.syncfusion.com/javascript/documentation/api/grid/rowDropSettings#targetid) property of the [rowDropSettings](https://ej2.syncfusion.com/javascript/documentation/api/grid/rowDropSettings) object to the current Grid's ID.
 
-By setting the `targetID`, the Grid will render without a helper icon for row dragging. You can then customize the drag and drop action by binding to the [rowDrop](../../api/grid#rowdrop) event of the Grid. In the `rowDrop` event, you can prevent the default action by setting `args.cancel` to **true**, and reorder the rows using the [reorderRows](../../api/grid#reorderrows) method of the Grid.
+By setting the `targetID`, the Grid will render without a helper icon for row dragging. You can then customize the drag and drop action by binding to the [rowDrop](https://ej2.syncfusion.com/javascript/documentation/api/grid#rowdrop) event of the Grid. In the `rowDrop` event, you can prevent the default action by setting `args.cancel` to **true**, and reorder the rows using the [reorderRows](https://ej2.syncfusion.com/javascript/documentation/api/grid#reorderrows) method of the Grid.
 
 Here's an example of how to hide the drag and drop icon in the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid:
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/draganddrop-single-cs2/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/draganddrop-single-cs2/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/draganddrop-single-cs2" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -154,37 +101,24 @@ Here's an example of how to hide the drag and drop icon in the Syncfusion<sup st
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/draganddrop-single-cs2" %}
-{% endif %}
+
 
 > * The selection feature must be enabled in the Grid to allow users to select rows before performing the drag and drop operation.
-> * Multiple rows can be selected by clicking and dragging inside the grid. For multiple row selection, the [type](../../api/grid/selectionSettings#type) property must be set to **Multiple**.
+> * Multiple rows can be selected by clicking and dragging inside the grid. For multiple row selection, the [type](https://ej2.syncfusion.com/javascript/documentation/api/grid/selectionSettings#type) property must be set to **Multiple**.
 
 ## Drag and drop events
 
 The Grid control provides a set of events that are triggered during drag and drop operations on grid rows. These events allow you to customize the drag element, track the progress of the dragging operation, and perform actions when a row is dropped on a target element. The following events are available:
 
-1. [rowDragStartHelper](../../api/grid#rowdragstarthelper): This event is triggered when a click occurs on the drag icon or a grid row. It allows you to customize the drag element based on specific criteria.
+1. [rowDragStartHelper](https://ej2.syncfusion.com/javascript/documentation/api/grid#rowdragstarthelper): This event is triggered when a click occurs on the drag icon or a grid row. It allows you to customize the drag element based on specific criteria.
 
-2. [rowDragStart](../../api/grid#rowdragstart): This event is triggered when the dragging of a grid row starts.
+2. [rowDragStart](https://ej2.syncfusion.com/javascript/documentation/api/grid#rowdragstart): This event is triggered when the dragging of a grid row starts.
 
-3. [rowDrag](../../api/grid#rowdrag): This event is triggered continuously while the grid row is being dragged.
+3. [rowDrag](https://ej2.syncfusion.com/javascript/documentation/api/grid#rowdrag): This event is triggered continuously while the grid row is being dragged.
 
-4. [rowDrop](../../api/grid#rowdrop): This event is triggered when a drag element is dropped onto a target element.
+4. [rowDrop](https://ej2.syncfusion.com/javascript/documentation/api/grid#rowdrop): This event is triggered when a drag element is dropped onto a target element.
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/draganddrop-event-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/draganddrop-event-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/draganddrop-event-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -196,7 +130,7 @@ The Grid control provides a set of events that are triggered during drag and dro
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/draganddrop-event-cs1" %}
-{% endif %}
+
 
 ## Limitations
 

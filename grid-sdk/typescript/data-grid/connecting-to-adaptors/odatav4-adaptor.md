@@ -15,7 +15,7 @@ The `ODataV4Adaptor` in the Syncfusion<sup style="font-size:70%">&reg;</sup> Gri
 
 This section describes a step-by-step process for retrieving data using ODataV4Adaptor, then binding it to the TypeScript Grid control to facilitate data and CRUD operations.
 
-{% if page.publishingplatform == "typescript" %}
+
 
 ## Creating an ODataV4 service
 
@@ -358,234 +358,7 @@ The `wwwroot/index.html` file is served at **https://localhost:xxxx**.
 
 With these steps, you have integrated the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid control with your ASP.NET Core project and set up the necessary client-side configuration using Webpack and TypeScript. This will allow the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid to fetch data from your API and display it accordingly.
 
-{% elsif page.publishingplatform == "javascript" %}
 
-## Creating an ODataV4 service
-
-**Step 1:** Create a New ASP.NET Core Project
-
-To create a new ASP.NET Core Web API project named ODataV4Adaptor, follow these steps:
-
-* Open Visual Studio.
-* Select "Create a new project"
-* Choose **ASP.NET Core Web API** project template.
-* Name the project **ODataV4Adaptor**.
-* Click "Create"
-
-**Step 2:** Install NuGet Packages
-
-Using the NuGet package manager in Visual Studio (Tools → NuGet Package Manager → Manage NuGet Packages for Solution), install the Microsoft.AspNetCore.OData NuGet package.
-
-**Step 3:** Configure the server
-
-In the `Program.cs` file of your project, configure the server to serve static files by adding the following code:
-
-```cs
-var app = builder.Build();
-
-app.UseDefaultFiles();
-app.UseStaticFiles();
-```
-
-Additionally, comment out the following line in the `launchSettings.json` file:
-
-```json
-    "https": {
-      "commandName": "Project",
-      "dotnetRunMessages": true,
-      "launchBrowser": true,
-     // "launchUrl": "swagger",
-      "applicationUrl": "https://localhost:xxxx;http://localhost:xxxx",
-      "environmentVariables": {
-        "ASPNETCORE_ENVIRONMENT": "Development"
-      }
-    },
-```
-
-This configuration enables the server to locate and serve the `index.html` file.
-
-**Step 4:** Model Class Creation
-
-Create a model class named **OrdersDetails.cs** in the server-side **Models** folder to represent the order data.
-
-{% tabs %}
-{% highlight cs tabtitle="OrdersDetails.cs" %}
-using System.ComponentModel.DataAnnotations;
-
-namespace ODataV4Adaptor.Models
-{
-    public class OrdersDetails
-    {
-        public static List<OrdersDetails> order = new List<OrdersDetails>();
-        public OrdersDetails()
-        {
-
-        }
-        public OrdersDetails(
-        int OrderID, string CustomerId, int EmployeeId, string ShipCountry)
-        {
-            this.OrderID = OrderID;
-            this.CustomerID = CustomerId;
-            this.EmployeeID = EmployeeId;
-            this.ShipCountry = ShipCountry;
-        }
-
-        public static List<OrdersDetails> GetAllRecords()
-        {
-            if (order.Count() == 0)
-            {
-                int code = 10000;
-                for (int i = 1; i < 10; i++)
-                {
-                    order.Add(new OrdersDetails(code + 1, "ALFKI", i + 0, "Denmark"));
-                    order.Add(new OrdersDetails(code + 2, "ANATR", i + 2, "Brazil"));
-                    order.Add(new OrdersDetails(code + 3, "ANTON", i + 1, "Germany"));
-                    order.Add(new OrdersDetails(code + 4, "BLONP", i + 3, "Austria"));
-                    order.Add(new OrdersDetails(code + 5, "BOLID", i + 4, "Switzerland"));
-                    code += 5;
-                }
-            }
-            return order;
-        }
-        [Key]
-        public int? OrderID { get; set; }
-        public string? CustomerID { get; set; }
-        public int? EmployeeID { get; set; }
-        public string? ShipCountry { get; set; }
-    }
-}
-{% endhighlight %}
-{% endtabs %}
-
-**Step 5:** Build the Entity Data Model**
-
-To construct the Entity Data Model for your ODataV4 service, utilize the `ODataConventionModelBuilder` to define the model's structure. Start by creating an instance of the `ODataConventionModelBuilder`, then register the entity set **Orders** using the `EntitySet<T>` method, where `OrdersDetails` represents the CLR type containing order details. 
-
-```cs
-[program.cs]
-using Microsoft.OData.ModelBuilder;
-
-// Create an ODataConventionModelBuilder to build the OData model
-var modelBuilder = new ODataConventionModelBuilder();
-
-// Register the "Orders" entity set with the OData model builder
-modelBuilder.EntitySet<OrdersDetails>("Orders");
-```
-
-**Step 6:** Register the ODataV4 Services
-
-Once the Entity Data Model is built, you need to register the ODataV4 services in your ASP.NET Core application. Here's how:
-
-```cs
-// Add controllers with OData support to the service collection
-builder.Services.AddControllers().AddOData(
-    options => options
-        .Count()
-        .AddRouteComponents("odata", modelBuilder.GetEdmModel()));
-```
-**Step 7:** Add controllers
-
-Finally, add controllers to expose the OData endpoints. Here's an example:
-
-```cs
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.OData.Query;
-using ODataV4Adaptor.Models;
-
-namespace ODataV4Adaptor.Controllers
-{
-    [Route("[controller]")]
-    [ApiController]
-    public class OrdersController : ControllerBase
-    {
-        /// <summary>
-        /// Retrieves all orders.
-        /// </summary>
-        /// <returns>The collection of orders.</returns>
-        [HttpGet]
-        [EnableQuery]
-        public IActionResult Get()
-        {
-            var data = OrdersDetails.GetAllRecords().AsQueryable();
-            return Ok(data);
-        }
-    }
-}
-```
-
-**Step 8:** Run the Application 
-
-Run the application in Visual Studio. It will be accessible on a URL like **https://localhost:xxxx**. 
-
-After running the application, you can verify that the server-side API controller is successfully returning the order data in the URL(https://localhost:xxxx/odata/Orders). Here **xxxx** denotes the port number.
-
-## Connecting syncfusion<sup style="font-size:70%">&reg;</sup> grid to an odataV4 service
-
-**Step 1:** Create wwwroot folder
-
-Create a folder named `wwwroot` in the project root directory. This folder will contain static files served by the web server.
-
-**Step 2:** Create JS and CSS Folders
-
-Inside the wwwroot folder, create js and css folders to hold script and CSS files, respectively.
-
-**Step 3:** Create index.html File
-
-Create an `index.html` file under the `wwwroot` folder and add the necessary HTML structure along with CSS and JavaScript links to include Syncfusion<sup style="font-size:70%">&reg;</sup> Grid dependencies.
-
-```html
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <title>EJ2 Grid</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Javascript Grid Control">
-    <meta name="author" content="Syncfusion">
-    <link href="css/index.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/35.1.37/material3.css" rel="stylesheet">
-
-    <script src="https://cdn.syncfusion.com/ej2/35.1.37/dist/ej2.min.js" type="text/javascript"></script>
-    <script src="https://cdn.syncfusion.com/ej2/syncfusion-helper.js" type="text/javascript"></script>
-</head>
-<body>
-
-    <div id="container">
-        <div id="Grid"></div>
-    </div>
-    <script src="js/index.js" type="text/javascript"></script>
-</body>
-</html>
-```
-
-**Step 4:** Create JavaScript File
-
-Create a index.js file under the `wwwroot/js` folder and add the JavaScript code to initialize the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid with data from the API service.
-
-```js
-var data = new ej.data.DataManager({
-    url: 'https://localhost:xxxx/odata/orders', // Here xxxx represents the port number
-    adaptor: new ej.data.ODataV4Adaptor()
-});
-
-var grid = new ej.grids.Grid({
-    dataSource: data,
-    columns: [
-        { field: 'OrderID', headerText: 'Order ID', textAlign: 'Right', width: 120, isPrimaryKey: true, type: 'number' },
-        { field: 'CustomerID', width: 140, headerText: 'Customer ID', type: 'string' },
-        { field: 'EmployeeID', headerText: 'Employee ID', width: 140 },
-        { field: 'ShipCountry', headerText: 'ShipCountry', width: 140 }
-    ]
-});
-
-grid.appendTo('#Grid');
-```
-
-**Step 5:** Run the Project
-
-Now, run the project to see the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid connected to the API service in action.
-
-{% endif %}
 
 ## Handling searching operation
 
@@ -611,7 +384,7 @@ builder.Services.AddControllers().AddOData(
         .Filter() //searching
         .AddRouteComponents("odata", modelBuilder.GetEdmModel()));
 {% endhighlight %}
-{% if page.publishingplatform == "typescript" %}
+
 {% highlight ts tabtitle="index.ts" %}
 import { Grid, Toolbar } from '@syncfusion/ej2-grids';
 import { DataManager, ODataV4Adaptor } from '@syncfusion/ej2-data';
@@ -634,27 +407,7 @@ let grid: Grid = new Grid({
 
 grid.appendTo('#Grid');
 {% endhighlight %}
-{% elsif page.publishingplatform == "javascript" %}
-{% highlight js tabtitle="index.js" %}
-var data = new ej.data.DataManager({
-    url: 'https://localhost:xxxx/odata/orders', // Here xxxx represents the port number
-    adaptor: new ej.data.ODataV4Adaptor()
-});
-ej.grids.Grid.Inject(ej.grids.Toolbar);
-var grid = new ej.grids.Grid({
-    dataSource: data,
-    toolbar:['Search'],
-    columns: [
-        { field: 'OrderID', headerText: 'Order ID', textAlign: 'Right', width: 120, isPrimaryKey: true, type: 'number' },
-        { field: 'CustomerID', width: 140, headerText: 'Customer ID', type: 'string' },
-        { field: 'EmployeeID', headerText: 'Employee ID', width: 140 },
-        { field: 'ShipCountry', headerText: 'ShipCountry', width: 140 }
-    ]
-});
 
-grid.appendTo('#Grid');
-{% endhighlight %}
-{% endif %}
 {% endtabs %}
 
 ![Searching query](../images/odatav4-adaptor-searching.png)
@@ -683,7 +436,7 @@ builder.Services.AddControllers().AddOData(
         .Filter() // filtering
         .AddRouteComponents("odata", modelBuilder.GetEdmModel()));
 {% endhighlight %}
-{% if page.publishingplatform == "typescript" %}
+
 {% highlight ts tabtitle="index.ts" %}
 import { Grid, Filter } from '@syncfusion/ej2-grids';
 import { DataManager, ODataV4Adaptor } from '@syncfusion/ej2-data';
@@ -706,27 +459,7 @@ let grid: Grid = new Grid({
 
 grid.appendTo('#Grid');
 {% endhighlight %}
-{% elsif page.publishingplatform == "javascript" %}
-{% highlight js tabtitle="index.js" %}
-var data = new ej.data.DataManager({
-    url: 'https://localhost:xxxx/odata/orders', // Here xxxx represents the port number
-    adaptor: new ej.data.ODataV4Adaptor()
-});
-ej.grids.Grid.Inject(ej.grids.Filter);
-var grid = new ej.grids.Grid({
-    dataSource: data,
-    allowFiltering:true,
-    columns: [
-        { field: 'OrderID', headerText: 'Order ID', textAlign: 'Right', width: 120, isPrimaryKey: true, type: 'number' },
-        { field: 'CustomerID', width: 140, headerText: 'Customer ID', type: 'string' },
-        { field: 'EmployeeID', headerText: 'Employee ID', width: 140 },
-        { field: 'ShipCountry', headerText: 'ShipCountry', width: 140 }
-    ]
-});
 
-grid.appendTo('#Grid');
-{% endhighlight %}
-{% endif %}
 {% endtabs %}
 
 Single column filtering
@@ -758,7 +491,7 @@ builder.Services.AddControllers().AddOData(
         .OrderBy() // sorting
         .AddRouteComponents("odata", modelBuilder.GetEdmModel()));
 {% endhighlight %}
-{% if page.publishingplatform == "typescript" %}
+
 {% highlight ts tabtitle="index.ts" %}
 import { Grid, Sort} from '@syncfusion/ej2-grids';
 import { DataManager, ODataV4Adaptor } from '@syncfusion/ej2-data';
@@ -781,27 +514,7 @@ let grid: Grid = new Grid({
 
 grid.appendTo('#Grid');
 {% endhighlight %}
-{% elsif page.publishingplatform == "javascript" %}
-{% highlight js tabtitle="index.js" %}
-var data = new ej.data.DataManager({
-    url: 'https://localhost:xxxx/odata/orders', // Here xxxx represents the port number
-    adaptor: new ej.data.ODataV4Adaptor()
-});
-ej.grids.Grid.Inject(ej.grids.Sort);
-var grid = new ej.grids.Grid({
-    dataSource: data,
-    allowSorting:true,
-    columns: [
-        { field: 'OrderID', headerText: 'Order ID', textAlign: 'Right', width: 120, isPrimaryKey: true, type: 'number' },
-        { field: 'CustomerID', width: 140, headerText: 'Customer ID', type: 'string' },
-        { field: 'EmployeeID', headerText: 'Employee ID', width: 140 },
-        { field: 'ShipCountry', headerText: 'ShipCountry', width: 140 }
-    ]
-});
 
-grid.appendTo('#Grid');
-{% endhighlight %}
-{% endif %}
 {% endtabs %}
 
 *Single column sorting*
@@ -843,7 +556,7 @@ builder.Services.AddControllers().AddOData(
         modelBuilder.GetEdmModel()));
 
 {% endhighlight %}
-{% if page.publishingplatform == "typescript" %}
+
 {% highlight ts tabtitle="index.ts" %}
 import { Grid, Page} from '@syncfusion/ej2-grids';
 import { DataManager, ODataV4Adaptor } from '@syncfusion/ej2-data';
@@ -866,28 +579,7 @@ let grid: Grid = new Grid({
 
 grid.appendTo('#Grid');
 {% endhighlight %}
-{% elsif page.publishingplatform == "javascript" %}
 
-{% highlight js tabtitle="index.js" %}
-var data = new ej.data.DataManager({
-    url: 'https://localhost:xxxx/odata/orders', // Here xxxx represents the port number
-    adaptor: new ej.data.ODataV4Adaptor()
-});
-ej.grids.Grid.Inject(ej.grids.Page);
-var grid = new ej.grids.Grid({
-    dataSource: data,
-    allowPaging: true,
-    columns: [
-        { field: 'OrderID', headerText: 'Order ID', textAlign: 'Right', width: 120, isPrimaryKey: true, type: 'number' },
-        { field: 'CustomerID', width: 140, headerText: 'Customer ID', type: 'string' },
-        { field: 'EmployeeID', headerText: 'Employee ID', width: 140 },
-        { field: 'ShipCountry', headerText: 'ShipCountry', width: 140 }
-    ]
-});
-
-grid.appendTo('#Grid');
-{% endhighlight %}
-{% endif %}
 {% endtabs %}
 
 ![paging query](../images/odatav4-adaptor-paging.png)
@@ -899,7 +591,7 @@ To manage CRUD (Create, Read, Update, Delete) operations using the ODataV4Adapto
 To enable CRUD operations in the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid control, follow the below steps:
 
 {% tabs %}
-{% if page.publishingplatform == "typescript" %}
+
 
 {% highlight ts tabtitle="index.ts" %}
 import { Grid, Edit, Toolbar } from '@syncfusion/ej2-grids';
@@ -924,34 +616,10 @@ let grid: Grid = new Grid({
 
 grid.appendTo('#Grid');
 {% endhighlight %}
-{% elsif page.publishingplatform == "javascript" %}
 
-{% highlight js tabtitle="index.js" %}
-var data = new ej.data.DataManager({
-    url: 'https://localhost:xxxx/odata/orders', // Here xxxx represents the port number
-    adaptor: new ej.data.ODataV4Adaptor()
-});
-ej.grids.Grid.Inject(ej.grids.Toolbar, ej.grids.Filter, ej.grids.Sort, ej.grids.Page, ej.grids.Edit);
-var grid = new ej.grids.Grid({
-    dataSource: data,
-    allowFiltering: true,
-    allowSorting:true,
-    toolbar: ['Add', 'Edit', 'Update', 'Delete', 'Cancel', 'Search'],
-    editSettings: { allowAdding: true, allowDeleting: true, allowEditing: true },
-    columns: [
-        { field: 'OrderID', headerText: 'Order ID', textAlign: 'Right', width: 120, isPrimaryKey: true, type: 'number' },
-        { field: 'CustomerID', width: 140, headerText: 'Customer ID', type: 'string' },
-        { field: 'EmployeeID', headerText: 'Employee ID', width: 140 },
-        { field: 'ShipCountry', headerText: 'ShipCountry', width: 140 }
-    ]
-});
-
-grid.appendTo('#Grid');
-{% endhighlight %}
-{% endif %}
 {% endtabs %}
 
-> Normal/Inline editing is the default edit [mode](../../api/grid/editSettings#mode) for the Grid control. To enable CRUD operations, ensure that the [isPrimaryKey](../../api/grid/column#isprimarykey) property is set to **true** for a specific Grid column, ensuring that its value is unique.
+> Normal/Inline editing is the default edit [mode](https://ej2.syncfusion.com/documentation/api/grid/editSettings#mode) for the Grid control. To enable CRUD operations, ensure that the [isPrimaryKey](https://ej2.syncfusion.com/documentation/api/grid/column#isprimarykey) property is set to **true** for a specific Grid column, ensuring that its value is unique.
 
 **Insert Record**
 
@@ -1032,13 +700,11 @@ public IActionResult Delete(int key)
 ```
 ![ODataV4Adaptor-Delete-record](../images/odatav4-adaptor-delete-record.png)
 
-{% if page.publishingplatform == "typescript" %}
-> You can find the complete sample for the ODataV4Adaptor in [GitHub](https://github.com/SyncfusionExamples/Binding-data-from-remote-service-to-typescript-data-grid) link.
-{% elsif page.publishingplatform == "javascript" %}
-> You can find the complete sample for the ODataV4Adaptor in [GitHub](https://github.com/SyncfusionExamples/Binding-data-from-remote-service-to-javascript-data-grid) link.
-{% endif %}
 
-## Odata with custom url
+> You can find the complete sample for the ODataV4Adaptor in [GitHub](https://github.com/SyncfusionExamples/Binding-data-from-remote-service-to-typescript-data-grid) link.
+
+
+## OData with custom url
 
 The Syncfusion<sup style="font-size:70%">&reg;</sup> ODataV4 adaptor extends support for calling customized URLs to accommodate data retrieval and CRUD actions as per your application's requirements. However, when utilizing a custom URL with the ODataV4 adaptor, it's Essential<sup style="font-size:70%">&reg;</sup> to modify the routing configurations in your application's route configuration file to align with your custom URL. You can invoke the custom URL by the following methods in the Datamanager
 
@@ -1056,7 +722,7 @@ To work with custom URLs for CRUD operations in the Syncfusion<sup style="font-s
 The following code example describes the above behavior.
 
 {% tabs %}
-{% if page.publishingplatform == "typescript" %}
+
 
 {% highlight ts tabtitle="index.ts" %}
 import { Grid, Edit, Toolbar } from '@syncfusion/ej2-grids';
@@ -1085,38 +751,13 @@ let grid: Grid = new Grid({
 grid.appendTo('#Grid');
 {% endhighlight %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% highlight js tabtitle="index.js" %}
-var data = new ej.data.DataManager({
-    url: 'https://localhost:xxxx/odata/orders', // xxxx denotes port number
-    updateUrl: 'https://localhost:xxxx/odata/orders/Update', // custom URL to update the record
-    insertUrl: 'https://localhost:xxxx/odata/orders/Insert', // custom URL to insert new record
-    removeUrl: 'https://localhost:xxxx/odata/orders/Delete', // custom URL to delete the record
-    adaptor: new ej.data.ODataV4Adaptor()
-});
-ej.grids.Grid.Inject(ej.grids.Toolbar, ej.grids.Edit);
-var grid = new ej.grids.Grid({
-    dataSource: data,
-    toolbar: ['Add', 'Edit', 'Update', 'Delete', 'Cancel'],
-    editSettings: { allowAdding: true, allowDeleting: true, allowEditing: true },
-    columns: [
-        { field: 'OrderID', headerText: 'Order ID', textAlign: 'Right', width: 120, isPrimaryKey: true, type: 'number' },
-        { field: 'CustomerID', width: 140, headerText: 'Customer ID', type: 'string' },
-        { field: 'EmployeeID', headerText: 'Employee ID', width: 140 },
-        { field: 'ShipCountry', headerText: 'ShipCountry', width: 140 }
-    ]
-});
-
-grid.appendTo('#Grid');
-{% endhighlight %}
-{% endif %}
 {% endtabs %}
 
 For batch editing, you can specify a custom batch URL as follows:
 
 {% tabs %}
-{% if page.publishingplatform == "typescript" %}
+
 
 {% highlight ts tabtitle="index.ts" %}
 import { Grid, Edit, Toolbar } from '@syncfusion/ej2-grids';
@@ -1143,29 +784,6 @@ let grid: Grid = new Grid({
 grid.appendTo('#Grid');
 {% endhighlight %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% highlight js tabtitle="index.js" %}
-var data = new ej.data.DataManager({
-    url: 'https://localhost:xxxx/odata/orders', // xxxx denotes port number
-    batchUrl: 'https://localhost:xxxx/odata/orders/BatchUpdate', // custom URL for batch update
-    adaptor: new ej.data.ODataV4Adaptor()
-});
-ej.grids.Grid.Inject(ej.grids.Toolbar, ej.grids.Edit);
-var grid = new ej.grids.Grid({
-    dataSource: data,
-    toolbar: ['Add', 'Edit', 'Update', 'Delete', 'Cancel'],
-    editSettings: { allowAdding: true, allowDeleting: true, allowEditing: true, mode: 'Batch' },
-    columns: [
-        { field: 'OrderID', headerText: 'Order ID', textAlign: 'Right', width: 120, isPrimaryKey: true, type: 'number' },
-        { field: 'CustomerID', width: 140, headerText: 'Customer ID', type: 'string' },
-        { field: 'EmployeeID', headerText: 'Employee ID', width: 140 },
-        { field: 'ShipCountry', headerText: 'ShipCountry', width: 140 }
-    ]
-});
-
-grid.appendTo('#Grid');
-{% endhighlight %}
-{% endif %}
 {% endtabs %}
 

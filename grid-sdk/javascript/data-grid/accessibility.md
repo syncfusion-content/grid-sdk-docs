@@ -4,7 +4,6 @@ title: Accessibility in JavaScript Grid control | Syncfusion
 description: Learn here all about Accessibility in Syncfusion JavaScript Grid control of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Accessibility 
-publishingplatform: grid-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
@@ -17,15 +16,15 @@ The accessibility compliance for the Grid control is outlined below.
 
 | Accessibility Criteria | Compatibility |
 | -- | -- |
-| [WCAG 2.2 Support](../common/accessibility#accessibility-standards) | <img src="https://cdn.syncfusion.com/content/images/documentation/partial.png" alt="Intermediate"> |
-| [Section 508 Support](../common/accessibility#accessibility-standards) | <img src="https://cdn.syncfusion.com/content/images/documentation/partial.png" alt="Intermediate"> |
-| [Screen Reader Support](../common/accessibility#screen-reader-support) | <img src="https://cdn.syncfusion.com/content/images/landing-page/yes.png" alt="Yes">  |
-| [Right-To-Left Support](../common/accessibility#right-to-left-support) | <img src="https://cdn.syncfusion.com/content/images/landing-page/yes.png" alt="Yes"> |
-| [Color Contrast](../common/accessibility#color-contrast) | <img src="https://cdn.syncfusion.com/content/images/landing-page/yes.png" alt="Yes"> |
-| [Mobile Device Support](../common/accessibility#mobile-device-support) | <img src="https://cdn.syncfusion.com/content/images/landing-page/yes.png" alt="Yes"> |
-| [Keyboard Navigation Support](../common/accessibility#keyboard-navigation-support) |<img src="https://cdn.syncfusion.com/content/images/documentation/partial.png" alt="Intermediate"> |
-| [Accessibility Checker Validation](../common/accessibility#ensuring-accessibility) | <img src="https://cdn.syncfusion.com/content/images/documentation/partial.png" alt="Intermediate"> |
-| [Axe-core Accessibility Validation](../common/accessibility#ensuring-accessibility) | <img src="https://cdn.syncfusion.com/content/images/documentation/partial.png" alt="Intermediate"> |
+| [WCAG 2.2 Support](https://ej2.syncfusion.com/javascript/documentation/common/accessibility#accessibility-standards) | <img src="https://cdn.syncfusion.com/content/images/documentation/partial.png" alt="Intermediate"> |
+| [Section 508 Support](https://ej2.syncfusion.com/javascript/documentation/common/accessibility#accessibility-standards) | <img src="https://cdn.syncfusion.com/content/images/documentation/partial.png" alt="Intermediate"> |
+| [Screen Reader Support](https://ej2.syncfusion.com/javascript/documentation/common/accessibility#screen-reader-support) | <img src="https://cdn.syncfusion.com/content/images/landing-page/yes.png" alt="Yes">  |
+| [Right-To-Left Support](https://ej2.syncfusion.com/javascript/documentation/common/accessibility#right-to-left-support) | <img src="https://cdn.syncfusion.com/content/images/landing-page/yes.png" alt="Yes"> |
+| [Color Contrast](https://ej2.syncfusion.com/javascript/documentation/common/accessibility#color-contrast) | <img src="https://cdn.syncfusion.com/content/images/landing-page/yes.png" alt="Yes"> |
+| [Mobile Device Support](https://ej2.syncfusion.com/javascript/documentation/common/accessibility#mobile-device-support) | <img src="https://cdn.syncfusion.com/content/images/landing-page/yes.png" alt="Yes"> |
+| [Keyboard Navigation Support](https://ej2.syncfusion.com/javascript/documentation/common/accessibility#keyboard-navigation-support) |<img src="https://cdn.syncfusion.com/content/images/documentation/partial.png" alt="Intermediate"> |
+| [Accessibility Checker Validation](https://ej2.syncfusion.com/javascript/documentation/common/accessibility#ensuring-accessibility) | <img src="https://cdn.syncfusion.com/content/images/documentation/partial.png" alt="Intermediate"> |
+| [Axe-core Accessibility Validation](https://ej2.syncfusion.com/javascript/documentation/common/accessibility#ensuring-accessibility) | <img src="https://cdn.syncfusion.com/content/images/documentation/partial.png" alt="Intermediate"> |
 
 <style>
     .post .post-content img {
@@ -211,24 +210,11 @@ The Grid control followed the [keyboard interaction](https://www.w3.org/WAI/ARIA
 
 The JavaScript Grid provides flexibility to prevent the default key action behavior based on your requirements. This enables you to intercept and customize the behavior when specific keys are pressed within a web application
 
-To prevent the default key action behavior in the grid, you can utilize the [keyPressed](../api/grid#keypressed) event. This event is triggered for every key press, allowing you to customize the behavior based on the pressed key.
+To prevent the default key action behavior in the grid, you can utilize the [keyPressed](https://ej2.syncfusion.com/javascript/documentation/api/grid#keypressed) event. This event is triggered for every key press, allowing you to customize the behavior based on the pressed key.
 
 The following example demonstrates how to prevent the default behavior of the **"ENTER"** key using the `keyPressed` event.
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/keyboard-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/keyboard-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/keyboard-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -240,13 +226,13 @@ The following example demonstrates how to prevent the default behavior of the **
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/keyboard-cs1" %}
-{% endif %}
+
 
 ### Custom shortcut keys to perform grid actions
 
-The JavaScript Grid control enables you to enhance the usablity of keyboard shortcuts for various grid actions and navigation. In addition to the built-in keyboard navigation capabilities, you can implement custom keyboard shortcuts to execute specific actions.
+The JavaScript Grid control enables you to enhance the usability of keyboard shortcuts for various grid actions and navigation. In addition to the built-in keyboard navigation capabilities, you can implement custom keyboard shortcuts to execute specific actions.
 
-To achieve this, you can utilize the [keyPressed](../api/grid#keypressed) event of the grid. This event is triggered for every key press, allowing you to customize the behavior based on the pressed key.
+To achieve this, you can utilize the [keyPressed](https://ej2.syncfusion.com/javascript/documentation/api/grid#keypressed) event of the grid. This event is triggered for every key press, allowing you to customize the behavior based on the pressed key.
 
 The following example demonstrates how to perform grid actions using shortcut keys through the `keyPressed` event. Within the event, define the following custom shortcuts to perform various grid actions:
 
@@ -266,20 +252,7 @@ And prevented the default actions associated with the following keyboard shortcu
 
 You can add more custom shortcuts and actions as needed to enhance the functionality of your JavaScript Grid control.
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/keyboard-cs2/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/keyboard-cs2/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/keyboard-cs2" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -291,7 +264,7 @@ You can add more custom shortcuts and actions as needed to enhance the functiona
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/keyboard-cs2" %}
-{% endif %}
+
 
 ## Ensuring accessibility
 
@@ -299,20 +272,7 @@ The Grid control's accessibility levels are ensured through an [accessibility-ch
 
 The accessibility compliance of the Grid control is shown in the following sample. Open the [sample](https://ej2.syncfusion.com/accessibility/grid.html) in a new window to evaluate the accessibility of the Grid control with accessibility tools.
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/ensuring-accessibility-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/ensuring-accessibility-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/ensuring-accessibility-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -324,8 +284,8 @@ The accessibility compliance of the Grid control is shown in the following sampl
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/ensuring-accessibility-cs1" %}
-{% endif %}
+
 
 ## See also
 
-* [Accessibility in Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript controls](../common/accessibility)
+* [Accessibility in Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript controls](https://ej2.syncfusion.com/javascript/documentation/common/accessibility)

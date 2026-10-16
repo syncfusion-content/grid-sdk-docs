@@ -210,4 +210,4 @@ Match the JavaScript Data Grid to the application's visual design using [built-i
 - **Code Examples?** Browse [Data Grid demos](https://ej2.syncfusion.com/javascript/demos/#/tailwind3/grid/grid-overview.html) and samples
 - **API Details?** See [Data Grid API reference](https://ej2.syncfusion.com/javascript/documentation/api/grid/index-default)
 - **Community?** Join the [Syncfusion community forum](https://www.syncfusion.com/forums/essential-js2)
-- **What's New?** Check [Release notes](../../Release-Notes)
+- **What's New?** Check [Release notes](https://ej2.syncfusion.com/javascript/documentation/release-notes/)
