@@ -1218,27 +1218,29 @@ In this configuration, add, edit, and save operations are handled using the [Row
                             </td>
                         </tr>
                         <tr>
-                            <div class="image" style="margin-top: 10px; width: 300px">
-                                <SfUploader ID="uploadFiles" AllowedExtensions=".jpg,.png,.jpeg">
-                                    <UploaderEvents ValueChange="OnChange" FileSelected="Selected"></UploaderEvents>
-                                    <UploaderTemplates>
-                                        <Template Context="HttpContext">
-                                            @{
-                                                <table>
-                                                    <tr>
-                                                        <td>
-                                                            <span>Updated Employee Image</span>
-                                                        </td>
-                                                        <td>
-                                                            <img class="upload-image" style="margin-left:10px;" src="@(files.Count >0 ? files.Where(item=>item.Name == HttpContext.Name)?.FirstOrDefault()?.Path : string.Empty)">
-                                                        </td>
-                                                    </tr>
-                                                </table>
-                                            }
-                                        </Template>
-                                    </UploaderTemplates>
-                                </SfUploader>
-                            </div>
+                            <td>
+                                <div class="image" style="margin-top: 10px; width: 300px">
+                                    <SfUploader ID="uploadFiles" AllowedExtensions=".jpg,.png,.jpeg">
+                                        <UploaderEvents ValueChange="OnChange" FileSelected="Selected"></UploaderEvents>
+                                        <UploaderTemplates>
+                                            <Template Context="HttpContext">
+                                                @{
+                                                    <table>
+                                                        <tr>
+                                                            <td>
+                                                                <span>Updated Employee Image</span>
+                                                            </td>
+                                                            <td>
+                                                                <img class="upload-image" style="margin-left:10px;" src="@(files.Count > 0 ? files.FirstOrDefault(item => item.Name == HttpContext.Name)?.Path : string.Empty)">
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                }
+                                            </Template>
+                                        </UploaderTemplates>
+                                    </SfUploader>
+                                </div>
+                            </td>
                         </tr>
                     </tbody>
                 </table>
@@ -1246,7 +1248,7 @@ In this configuration, add, edit, and save operations are handled using the [Row
         </Template>
     </GridEditSettings>
     <GridColumns>
-        <GridColumn Field=@nameof(EmployeeDetails.EmployeeID) HeaderText="Employee ID" IsPrimaryKey="true" ValidationRules="@(new ValidationRules{ Required=true})" TextAlign="@TextAlign.Right" Width="140"></GridColumn>
+        <GridColumn Field=@nameof(EmployeeDetails.EmployeeID) HeaderText="Employee ID" IsPrimaryKey="true" ValidationRules="@(new ValidationRules { Required = true })" TextAlign="@TextAlign.Right" Width="140"></GridColumn>
         <GridColumn Field=@nameof(EmployeeDetails.EmployeeName) HeaderText="Employee Name" Width="140"></GridColumn>
         <GridColumn Field="ImageUrl" HeaderText="Employee Image" Width="200">
             <Template>
@@ -1260,6 +1262,7 @@ In this configuration, add, edit, and save operations are handled using the [Row
         </GridColumn>
     </GridColumns>
 </SfGrid>
+
 <style>
     .image img {
         height: 55px;
@@ -1268,56 +1271,71 @@ In this configuration, add, edit, and save operations are handled using the [Row
         box-shadow: inset 0 0 1px #e0e0e0, inset 0 0 14px rgba(0, 0, 0, 0.2);
     }
 </style>
+
 @code {
+
     public List<fileInfo> files = new List<fileInfo>();
     public SfGrid<EmployeeDetails> Grid { get; set; }
     public string UploadedFile { get; set; }
     public List<EmployeeDetails> EmployeeData { get; set; }
-   
+
     public void RowAddingHandler(RowCreatingEventArgs<EmployeeDetails> args)
     {
         Grid.PreventRender(false);
     }
     public void RowEditingHandler(RowEditingEventArgs<EmployeeDetails> args)
     {
-         Grid.PreventRender(false);
+        Grid.PreventRender(false);
     }
     public void RowUpdatingHandler(RowUpdatingEventArgs<EmployeeDetails> args)
     {
-       args.Data.ImageUrl = "scripts/Images/Employees/" + UploadedFile;
+        args.Data.ImageUrl = "scripts/Images/Employees/" + UploadedFile;
     }
-    public void OnChange(UploadChangeEventArgs args)
+
+    public async Task OnChange(UploadChangeEventArgs args)
     {
         files = new List<fileInfo>();
+
         foreach (var file in args.Files)
         {
-            var path = Path.GetFullPath("wwwroot\\scripts\\Images\\Employees\\") + file.FileInfo.Name;
-            FileStream filestream = new FileStream(path, FileMode.Create, FileAccess.Write);
-            file.Stream.WriteTo(filestream);
-            filestream.Close();
-            file.Stream.Close();
-            files.Add(new fileInfo() { Path = "scripts/Images/Employees/" + file.FileInfo.Name, Name = file.FileInfo.Name, Size = file.FileInfo.Size });
+            var path = Path.Combine( "wwwroot", "scripts", "Images", "Employees", file.FileInfo.Name);
+
+            await using FileStream fileStream =
+                new FileStream(path, FileMode.Create, FileAccess.Write);
+
+            await file.File.OpenReadStream(long.MaxValue).CopyToAsync(fileStream);
+
+            files.Add(new fileInfo()
+            {
+                Path = "scripts/Images/Employees/" + file.FileInfo.Name,
+                Name = file.FileInfo.Name,
+                Size = file.FileInfo.Size
+            });
         }
     }
+
     public void Selected(SelectedEventArgs Args)
     {
         UploadedFile = Args.FilesData[0].Name;
     }
+
     protected override void OnInitialized()
     {
         EmployeeData = Enumerable.Range(1, 9).Select(x => new EmployeeDetails()
-            {
-                EmployeeID = x,
-                EmployeeName = (new string[] { "ALFKI", "ANANTR", "ANTON", "BLONP", "BOLID" })[new Random().Next(5)],
-                ImageUrl = "scripts/Images/Employees/" + x + ".png",
-            }).ToList();
+        {
+            EmployeeID = x,
+            EmployeeName = (new string[] { "ALFKI", "ANANTR", "ANTON", "BLONP", "BOLID" })[new Random().Next(5)],
+            ImageUrl = "scripts/Images/Employees/" + x + ".png",
+        }).ToList();
     }
+
     public class EmployeeDetails
     {
         public int EmployeeID { get; set; }
         public string EmployeeName { get; set; }
         public string ImageUrl { get; set; }
     }
+
     public class fileInfo
     {
         public string Path { get; set; }
