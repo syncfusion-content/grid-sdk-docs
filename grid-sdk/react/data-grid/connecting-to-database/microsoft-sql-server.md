@@ -1692,7 +1692,7 @@ namespace Grid_MSSQL.Server.Controllers
 
 **Step 2: Run the React client:**
 
-From the client folder, install dependencies and start the React dev server:
+From the client folder, install dependencies and start the React development server:
 
     ```bash
     npm run dev

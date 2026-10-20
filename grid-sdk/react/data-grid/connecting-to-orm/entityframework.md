@@ -396,7 +396,7 @@ The connection string has been successfully configured.
 
 ### Step 7: Register services in Program.cs file
 
-The **Program.cs** file is the entry point for configuring and bootstrapping the ASP.NET Core application. This is where all required services and middleware are registered, including CORS (Cross-Origin Resource Sharing), Entity Framework Core DbContext, JSON serialization, and controllers.
+The **Program.cs** file is the entry point for configuring and bootstrapping the ASP.NET Core application. This is where all required services and request-processing components are registered, including CORS (Cross-Origin Resource Sharing), Entity Framework Core DbContext, JSON serialization, and controllers.
 
 **Instructions:**
 
@@ -426,7 +426,7 @@ builder.Services.AddDbContext<TicketsDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("TicketsDb"))
 );
 
-// CORS if you call from React dev server
+// CORS if you call from React development server
 builder.Services.AddCors(opts =>
 {
     opts.AddPolicy("dev", p => p.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod());
@@ -445,8 +445,8 @@ app.Run();
 - `NullValueHandling.Ignore`: Critical setting that prevents null values from being serialized to value types (like `int`), avoiding deserialization errors. This prevents issues when the Grid sends partial data updates.
 - `AddDbContext<TicketsDbContext>()`: Registers the Entity Framework Core DbContext with dependency injection, making it available for controllers via constructor injection.
 - `UseSqlServer()`: Specifies SQL Server as the database provider and retrieves the connection string from **appsettings.json**.
-- `AddCors("dev")`: Configures CORS policy with `AllowAnyOrigin()`, `AllowAnyHeader()`, and `AllowAnyMethod()` for development purposes. This allows the React app to make HTTP requests to the API from any port.
-- `UseCors("dev")`: Applies the CORS policy to the middleware pipeline. **Must be called before MapControllers()**.
+- `AddCors("dev")`: Configures a development CORS policy with `AllowAnyOrigin()`, `AllowAnyHeader()`, and `AllowAnyMethod()`. This allows the React app to make HTTP requests to the API from any port.
+- `UseCors("dev")`: Applies the CORS policy to the request-processing pipeline. **Must be called before MapControllers()**.
 - `MapControllers()`: Maps controller action methods to HTTP endpoints.
 - `app.Run()`: Starts the Kestrel web server and listens for incoming HTTP requests.
 
@@ -524,7 +524,7 @@ export default App;
 
 The Syncfusion React Grid can bind data from a **SQL Server** database using [DataManager](https://ej2.syncfusion.com/react/documentation/data/getting-started) and set the `adaptor` property to `CustomAdaptor` for scenarios that require full control over data operations.
 
-The `CustomAdaptor` (client-side) is a bridge between the React Grid and the ASP.NET Core backend. It extends the `UrlAdaptor` and handles all data operation requests by constructing HTTP POST calls to corresponding server endpoints. When the Grid performs operations like reading, searching, filtering, sorting, paging, and CRUD operations, the CustomAdaptor intercepts these actions and formats them into HTTP requests. These requests are sent to the ASP.NET Core Web API controller on the server, which processes the `DataManagerRequest` using Entity Framework Core to query the SQL Server database and return the results.
+The `CustomAdaptor` (client-side) is a bridge between the React Grid and the ASP.NET Core back end. It extends the `UrlAdaptor` and handles all data operation requests by constructing HTTP POST calls to corresponding server endpoints. When the Grid performs operations like reading, searching, filtering, sorting, paging, and CRUD operations, the CustomAdaptor intercepts these actions and formats them into HTTP requests. These requests are sent to the ASP.NET Core Web API controller on the server, which processes the `DataManagerRequest` using Entity Framework Core to query the SQL Server database and return the results.
 
 **Instructions:**
 
