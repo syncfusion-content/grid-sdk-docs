@@ -341,7 +341,7 @@ npm i -D -E clean-webpack-plugin css-loader html-webpack-plugin mini-css-extract
 
 **Step 4:** Create a folder named `wwwroot` in the project root directory. This folder will contain static files served by the web server.
 
-**Step 5:** Create a file named `webpack.config.js` in the project root, with the following code to configure the bundler:
+**Step 5:** Create the bundler configuration file in the project root by using the following code:
 
 ```js
 const path = require("path");

@@ -50,10 +50,10 @@ To achieve real-time data binding with SignalR in your Grid, follow the steps be
 
 2. In the Add Client-Side Library dialog:
 
-* Choose **unpkg** as the provider.
-* Type `@microsoft/signalr@latest` in the library field.
-* Choose Select specific files, expand dist/browser, and check `signalr.js` and `signalr.min.js`.
-* Specify `wwwroot/js/signalr/*` as the target location.
+* Choose the CDN provider documented on [this provider page](https://unpkg.com).
+* Enter the package identifier shown on the [latest client package page](https://www.npmjs.com/package/@microsoft/signalr) in the library field.
+* Choose Select specific files, expand dist/browser, and select the [browser script](https://unpkg.com/@microsoft/signalr@latest/dist/browser/signalr.js) and [minified browser script](https://unpkg.com/@microsoft/signalr@latest/dist/browser/signalr.min.js).
+* Specify `wwwroot/js` as the target location.
 * Click Install.
 
 **Step 4:** Add the **Microsoft.AspNetCore.SignalR** NuGet package to the project:

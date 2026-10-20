@@ -90,7 +90,7 @@ npm init -y
 npm i -D -E clean-webpack-plugin css-loader html-webpack-plugin mini-css-extract-plugin ts-loader typescript webpack webpack-cli
 ```
 
-**Step 8:** Create a file named `webpack.config.js` in the project root, with the following code to configure the bundler:
+**Step 8:** Create the bundler configuration file in the project root by using the following code:
 
 ```js
 const path = require("path");
@@ -658,10 +658,10 @@ The wwwroot/index.html file is served at https://localhost:xxxx.
 
 2. In the Add Client-Side Library dialog:
 
-   * Choose **unpkg** as the provider.
-   * Type `@microsoft/signalr@latest` in the library field.
-   * Choose Select specific files, expand dist/browser, and check `signalr.js` and `signalr.min.js`.
-   * Specify `wwwroot/js/signalr/*` as the target location.
+   * Choose the CDN provider documented on [this provider page](https://unpkg.com).
+   * Enter the package identifier shown on the [latest client package page](https://www.npmjs.com/package/@microsoft/signalr) in the library field.
+   * Choose Select specific files, expand dist/browser, and select the [browser script](https://unpkg.com/@microsoft/signalr@latest/dist/browser/signalr.js) and [minified browser script](https://unpkg.com/@microsoft/signalr@latest/dist/browser/signalr.min.js).
+   * Specify `wwwroot/js` as the target location.
    * Click Install.
 
 **Step 4:** Create an **index.html** file under the **wwwroot** folder and add the following code:
@@ -1259,7 +1259,7 @@ npm init -y
 npm i -D -E clean-webpack-plugin css-loader html-webpack-plugin mini-css-extract-plugin ts-loader typescript webpack webpack-cli
 ```
 
-**Step 8:** Create a file named `webpack.config.js` in the project root, with the following code to configure the bundler:
+**Step 8:** Create the bundler configuration file in the project root by using the following code:
 
 {% tabs %}
 {% highlight js tabtitle="webpack.config.js" %}
@@ -2210,7 +2210,7 @@ npm init -y
 npm i -D -E clean-webpack-plugin css-loader html-webpack-plugin mini-css-extract-plugin ts-loader typescript webpack webpack-cli
 ```
 
-**Step 8:** Create a file named `webpack.config.js` in the project root, with the following code to configure the bundler:
+**Step 8:** Create the bundler configuration file in the project root by using the following code:
 
 {% tabs %}
 {% highlight js tabtitle="webpack.config.js" %}

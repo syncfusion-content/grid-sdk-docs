@@ -219,7 +219,7 @@ Create a folder named `wwwroot` in the project root directory. This folder will 
 
 **Step 5:** Create the bundler configuration file
 
-Create a file named `webpack.config.js` in the project root, with the following code to configure the bundler:
+Create the bundler configuration file in the project root by using the following code:
 
 ```js
 const path = require("path");
