@@ -664,7 +664,7 @@ The wwwroot/index.html file is served at https://localhost:xxxx.
    * Specify wwwroot/js/signalr/* as the target location.
    * Click Install.
 
-**Step 4:** Create an **index.html** file under the **wwwroot** folde and add the following code:
+**Step 4:** Create an **index.html** file under the **wwwroot** folder and add the following code:
 
 {% tabs %}
 {% highlight html tabtitle="index.html" %}
@@ -1766,7 +1766,7 @@ app.Run();
 
 **Step 4:** Create a folder named **wwwroot** in the project root directory. This folder will contain static files served by the web server.
 
-**Step 5:** Create an **index.html** file under the **wwwroot** folde and add the following code:
+**Step 5:** Create an **index.html** file under the **wwwroot** folder and add the following code:
 
 {% tabs %}
 {% highlight html tabtitle="index.html" %}
@@ -2719,7 +2719,7 @@ app.Run();
 
 **Step 4:** Create a folder named **wwwroot** in the project root directory. This folder will contain static files served by the web server.
 
-**Step 5:** Create an **index.html** file under the **wwwroot** folde and add the following code::
+**Step 5:** Create an **index.html** file under the **wwwroot** folder and add the following code:
 
 {% tabs %}
 {% highlight html tabtitle="index.html" %}

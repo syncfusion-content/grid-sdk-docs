@@ -32,7 +32,7 @@ Ensure the following software and packages are installed before proceeding:
 | Software/Package | Version | Purpose |
 |-----------------|---------|---------|
 | Visual Studio | 2022 or later | Development IDE with Angular and ASP.NET Core workload |
-| .NET SDK | .NET 10.0 or later | Runtime and build tools for backend API |
+| .NET SDK | .NET 10.0 or later | Runtime and build tools for the back-end API |
 | Node.js | 18.x or later | JavaScript runtime for Angular development |
 | Angular CLI | 18.x or later | Angular command-line interface |
 | SQL Server | 2019 or later | Database server |
@@ -752,7 +752,7 @@ export class AppComponent {
 
 The Angular Data Grid can bind data from a **SQL Server** database using [DataManager](https://ej2.syncfusion.com/angular/documentation/data/getting-started) and set the `adaptor` property to `CustomAdaptor` for scenarios that require full control over data operations.
 
-The `CustomAdaptor` (client-side) is a bridge between the Angular Grid and the ASP.NET Core backend. It extends the `UrlAdaptor` and handles all data operation requests by constructing HTTP POST calls to corresponding server endpoints. When the Grid performs operations like reading, searching, filtering, sorting, paging, and CRUD operations, the CustomAdaptor intercepts these actions and formats them into HTTP requests. These requests are sent to the ASP.NET Core Web API controller on the server, which processes the `DataManagerRequest` using Dapper to query the SQL Server database and return the results.
+The `CustomAdaptor` (client-side) is a bridge between the Angular Grid and the ASP.NET Core back end. It extends the `UrlAdaptor` and handles all data operation requests by constructing HTTP POST calls to corresponding server endpoints. When the Grid performs operations like reading, searching, filtering, sorting, paging, and CRUD operations, the CustomAdaptor intercepts these actions and formats them into HTTP requests. These requests are sent to the ASP.NET Core Web API controller on the server, which processes the `DataManagerRequest` using Dapper to query the SQL Server database and return the results.
 
 **Instructions:**
 
@@ -1818,18 +1818,18 @@ namespace Grid_Dapper.Server.Controllers
 
 ## Running the application
 
-Follow the steps below to set up and run both the backend server and the Angular frontend client.
+Follow the steps below to set up and run both the back-end server and the Angular front-end client.
 
-### Running the ASP.NET Core backend server
+### Running the ASP.NET Core back-end server
 
-- Open a terminal or Package Manager Console, navigate to the **Grid_Dapper.Server** project directory, and run the following commands to build and start the backend server:
+- Open a terminal or Package Manager Console, navigate to the **Grid_Dapper.Server** project directory, and run the following commands to build and start the back-end server:
 
     ```bash
     dotnet build
     dotnet run
     ```
 
-- The backend server should start and listen on **https://localhost:7000** (or the port shown in the terminal).
+- The back-end server should start and listen on **https://localhost:7000** (or the port shown in the terminal).
 - Test the API endpoint by opening **https://localhost:7000/api/rooms/ping** in a browser, where you should see a JSON response similar to `{\"ok\": true, \"time\": \"2025-03-02T10:30:00Z\"}`.
 
 ### Running the Angular frontend client
@@ -1842,7 +1842,7 @@ Execute the following command:
 ng serve
 ```
 
-- Navigate to **http://localhost:4200** (Angular default port), where the application automatically connects to the backend API at **https://localhost:7000/api/rooms**.
+- Navigate to **http://localhost:4200** (Angular default port), where the application automatically connects to the back-end API at **https://localhost:7000/api/rooms**.
 
 
 **Available features:**
