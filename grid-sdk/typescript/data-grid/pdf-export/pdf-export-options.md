@@ -23,7 +23,7 @@ To export the current page of the grid to a PDF document, you need to specify th
 
 The following example demonstrates how to export current page to a PDF document when a toolbar item is clicked.
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -36,19 +36,7 @@ The following example demonstrates how to export current page to a PDF document 
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/grid-cs141" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/grid-cs141/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/grid-cs141/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/grid-cs141" %}
-{% endif %}
 
 ## Export selected records
 
@@ -68,7 +56,7 @@ To export the selected records from the grid to a PDF file, you can follow these
 
 The following example demonstrates how to export the selected records to a PDF document.
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -81,19 +69,7 @@ The following example demonstrates how to export the selected records to a PDF d
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/grid-cs142" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/grid-cs142/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/grid-cs142/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/grid-cs142" %}
-{% endif %}
 
 ## Export filtered records
 
@@ -113,7 +89,7 @@ To export only the filtered data from the grid to a PDF file, you can follow the
 
 The following example demonstrates how to export the filtered records to a PDF document.
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -126,19 +102,7 @@ The following example demonstrates how to export the filtered records to a PDF d
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/exporting-filtered-data-cs2" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/exporting-filtered-data-cs2/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/exporting-filtered-data-cs2/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/exporting-filtered-data-cs2" %}
-{% endif %}
 
 ## Export with hidden columns
 
@@ -146,17 +110,13 @@ Exporting hidden columns in the TypeScript Grid allows you to include hidden col
 
 To export hidden columns of the grid to a PDF file, you need to set the [includeHiddenColumn](../../api/grid/pdfExportProperties/#includehiddencolumn) property as **true** in the [pdfExportProperties](../../api/grid/pdfExportProperties) property.
 
-{% if page.publishingplatform == "typescript" %}
+
  
 The following example demonstrates how to export hidden columns to a PDF file. In this example, the **ShipCity** column, which is not visible in the UI, is exported to the PDF document. You can also export the grid by changing the `pdfExportProperties.includeHiddenColumn` property based on the switch toggle using the [checked](../../api/switch/#checked) property of the [EJ2 Toggle Switch Button](../../switch/getting-started) control.
 
- {% elsif page.publishingplatform == "javascript" %}
  
-The following example demonstrates how to export hidden columns to a PDF file. In this example, the **ShipCity** column, which is not visible in the UI, is exported to the PDF document. You can also export the grid by changing the `pdfExportProperties.includeHiddenColumn` property based on the switch toggle using the [checked](../../api/switch/#checked) property of the [EJ2 Toggle Switch Button](../../switch/es5-getting-started) control.
 
-{% endif %}
 
-{% if page.publishingplatform == "typescript" %}
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -169,19 +129,7 @@ The following example demonstrates how to export hidden columns to a PDF file. I
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/grid-cs143" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/grid-cs143/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/grid-cs143/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/grid-cs143" %}
-{% endif %}
 
 ## Show or hide columns while exporting
 
@@ -199,7 +147,7 @@ To show or hide columns based on user interaction during the export process, you
 
 In the following example, the **CustomerID** is initially a hidden column in the grid. However, during the export process, the **CustomerID** column is made visible, while the **ShipCity** column is hidden.
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -212,19 +160,7 @@ In the following example, the **CustomerID** is initially a hidden column in the
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/grid-cs144" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/grid-cs144/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/grid-cs144/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/grid-cs144" %}
-{% endif %}
 
 ## Show or hide columns while exporting with stacked header
 
@@ -242,7 +178,7 @@ To implement the show or hide columns feature during PDF export in the Syncfusio
 
 In the following example, the **ShipName** is initially a hidden column in the Syncfusion TypeScript Grid. However, during the PDF export process, the **ShipName** column is made visible, while the **OrderDate** column is hidden:
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -255,19 +191,7 @@ In the following example, the **ShipName** is initially a hidden column in the S
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/pdf-stackedheader" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/pdf-stackedheader/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/pdf-stackedheader/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/pdf-stackedheader" %}
-{% endif %}
 
 ## Change page orientation
 
@@ -283,7 +207,7 @@ The supported `pageOrientation` options are:
 
 The following example demonstrates how to export the grid into PDF document by setting the `pdfExportProperties.pageOrientation` property using the [value](../../api/drop-down-list#value) property of the `DropDownList` control.
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -296,19 +220,7 @@ The following example demonstrates how to export the grid into PDF document by s
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/grid-cs145" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/grid-cs145/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/grid-cs145/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/grid-cs145" %}
-{% endif %}
 
 ## Change page size
 
@@ -348,7 +260,7 @@ Supported `pdfPageSize` are:
 
 The following example demonstrates how to export the grid into PDF document by setting the `pdfExportProperties.pageSize` property by using [value](../../api/drop-down-list#value) property of the `DropDownList` control.
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -361,19 +273,7 @@ The following example demonstrates how to export the grid into PDF document by s
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/grid-cs146" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/grid-cs146/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/grid-cs146/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/grid-cs146" %}
-{% endif %}
 
 ## Define file name
 
@@ -383,7 +283,7 @@ To assign a custom file name for the exported document, you can set the [fileNam
 
 The following example demonstrates how to define a file name using `pdfExportProperties.fileName` property when exporting to PDF, based on the entered value as the file name. 
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -396,19 +296,7 @@ The following example demonstrates how to define a file name using `pdfExportPro
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/grid-cs147" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/grid-cs147/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/grid-cs147/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/grid-cs147" %}
-{% endif %}
 
 ## Enabling horizontal overflow
 
@@ -416,17 +304,13 @@ The TypeScript Grid control allows you to display all defined grid columns on a 
 
 You can achieve this by utilizing the [pdfExportProperties->allowHorizontalOverflow](../../api/grid/pdfExportProperties/#allowhorizontaloverflow) property of the grid.
 
-{% if page.publishingplatform == "typescript" %}
+
  
 In the following example, the [EJ2 Toggle Switch Button](../../switch/getting-started) control is added to enable and disable the `pdfExportProperties.allowHorizontalOverflow` property. Based on the switch toggle, the `pdfExportProperties.allowHorizontalOverflow` property is updated using the [checked](../../api/switch/#checked) property, and the export action is performed accordingly when the toolbar is clicked.
 
- {% elsif page.publishingplatform == "javascript" %}
  
-In the following example, the [EJ2 Toggle Switch Button](../../switch/es5-getting-started) control is added to enable and disable the `pdfExportProperties.allowHorizontalOverflow` property. Based on the switch toggle, the `pdfExportProperties.allowHorizontalOverflow` property is updated using the [checked](../../api/switch/#checked) property, and the export action is performed accordingly when the toolbar is clicked.
 
-{% endif %}
 
-{% if page.publishingplatform == "typescript" %}
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -439,19 +323,7 @@ In the following example, the [EJ2 Toggle Switch Button](../../switch/es5-gettin
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/grid-horizontal-overflow" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/grid-horizontal-overflow/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/grid-horizontal-overflow/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/grid-horizontal-overflow" %}
-{% endif %}
 
 ## Customizing columns on export
 
@@ -467,7 +339,7 @@ To customize the grid columns, you can follow these steps:
 
 The following example demonstrates how to customize the grid columns when exporting a document. In this scenario, the attributes for different columns have been customized: **OrderID** with `textAlign` set to **Right**, **CustomerID** with `headerText` as **"Customer Name"**, and **Freight** with a center-aligned `textAlign` property, which is not rendered in the grid columns.
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -480,19 +352,7 @@ The following example demonstrates how to customize the grid columns when export
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/grid-customize-column" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/grid-customize-column/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/grid-customize-column/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/grid-customize-column" %}
-{% endif %}
 
 ## Font and color customization
 
@@ -518,7 +378,7 @@ To change the default font, you can follow these steps:
 
 The following example demonstrates, how to change the default font when exporting a document.
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -531,19 +391,7 @@ The following example demonstrates, how to change the default font when exportin
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/grid-default-fonts" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/grid-default-fonts/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/grid-default-fonts/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/grid-default-fonts" %}
-{% endif %}
 
 ### Add custom font
 
@@ -553,7 +401,7 @@ When using a custom font, it's important to provide the font in a format that ca
 
 The following example demonstrates how to use the custom **Algeria** font for exporting the grid. The **base64AlgeriaFont** variable contains the base64 encoded string representing the **Algeria** font file. This encoded font data is used in the PDF export properties to specify the custom font.
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -566,19 +414,7 @@ The following example demonstrates how to use the custom **Algeria** font for ex
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/gridcustomfont-cs1" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/gridcustomfont-cs1/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/gridcustomfont-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/gridcustomfont-cs1" %}
-{% endif %}
 
 > **PdfTrueTypeFont** accepts base64 format of the custom font.
 
@@ -590,7 +426,7 @@ To implement conditional cell formatting, you can utilize the [pdfQueryCellInfo]
 
 The following example demonstrate how to customize the background color of the **Freight** column in the exported PDF document using the **args.cell** and **backgroundColor** properties of the `pdfQueryCellInfo` event.
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -603,19 +439,7 @@ The following example demonstrate how to customize the background color of the *
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/gridcustomfont-cs2" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/gridcustomfont-cs2/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/gridcustomfont-cs2/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/gridcustomfont-cs2" %}
-{% endif %}
 
 ## Export grid as blob
 
@@ -623,7 +447,7 @@ The Grid offers an option to export the data as a Blob instead of downloading it
 
 The following example demonstrates how to obtain the blob data of the exported grid by executing the promise in the `pdfExportComplete` event.
 
-{% if page.publishingplatform == "typescript" %}
+
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -635,17 +459,3 @@ The following example demonstrates how to obtain the blob data of the exported g
 {% endtabs %}
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/export-grid-as-blob-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/export-grid-as-blob-cs1/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/export-grid-as-blob-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/export-grid-as-blob-cs1" %}
-{% endif %}

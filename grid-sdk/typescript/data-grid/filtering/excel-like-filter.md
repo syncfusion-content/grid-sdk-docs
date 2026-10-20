@@ -15,7 +15,7 @@ The Syncfusion<sup style="font-size:70%">&reg;</sup> Grid control offers an Exce
 
 Here is an example that showcasing how to render the excel like filter within the TypeScript Grid:
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -28,19 +28,7 @@ Here is an example that showcasing how to render the excel like filter within th
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/grid-cs63" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/grid-cs63/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/grid-cs63/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/grid-cs63" %}
-{% endif %}
 
 >* The Excel-like filter feature supports various filter conditions, including text-based, number-based, date-based, and boolean-based filters.
 >* The filter dialog provides additional options, such as sorting filter values, searching for specific values, and clearing applied filters.
@@ -51,7 +39,7 @@ The checkbox filtering feature in TypeScript Grid enables you to filter data bas
 
 Here is an example that showcasing how to render the check box filter within the TypeScript Grid:
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -64,19 +52,7 @@ Here is an example that showcasing how to render the check box filter within the
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/excel-filter-cs1" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/excel-filter-cs1/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/excel-filter-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/excel-filter-cs1" %}
-{% endif %}
 
 ## Customize the filter choice count
 
@@ -88,7 +64,7 @@ However, you have the flexibility to increase or decrease the filter choice coun
 
 The following example demonstrates how to customize the filter choice count in the checkbox list of the filter dialog. In the [actionBegin](../../api/grid/#actionbegin) event, you need to check if the [requestType](../../api/grid/filterEventArgs/#requesttype) is either `filterChoiceRequest` or `filterSearchBegin`, and then you can set the `filterChoiceCount` property to the desired value.
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -101,19 +77,7 @@ The following example demonstrates how to customize the filter choice count in t
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/excel-filter-cs2" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/excel-filter-cs2/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/excel-filter-cs2/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/excel-filter-cs2" %}
-{% endif %}
 
 > The specified filter choice count value determines the display of unique items as a checkbox list in the Excel/checkbox type filter dialog. This can result in a delay in rendering these checkbox items when opening the filter dialog. Therefore, it is advisable to set a restricted filter choice count value.
 
@@ -133,7 +97,7 @@ To customize the text in the Excel/Checkbox filter, you can define a `itemTempla
 
 In the example below, you can see how you can customize the text displayed in the filter checkbox list for the **Delivered** column. This is achieved by defining a `itemTemplate` within the element for that specific column. Inside the template, you can use TypeScript's template syntax to conditionally display **Delivered** if the data value is true and **Not delivered** if the value is false.  
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -146,19 +110,7 @@ In the example below, you can see how you can customize the text displayed in th
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/excel-filter-cs3" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/excel-filter-cs3/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/excel-filter-cs3/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/excel-filter-cs3" %}
-{% endif %}
 
 ## Show template in checkbox list data
 
@@ -166,7 +118,7 @@ The `itemTemplate` property in the TypeScript Grid allows you to customize the a
 
 In this example, you can see how to use the `itemTemplate` to render icons along with the category names in the filter checkbox list for the **Category Name** column.
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -179,19 +131,7 @@ In this example, you can see how to use the `itemTemplate` to render icons along
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/excel-filter-cs4" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/excel-filter-cs4/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/excel-filter-cs4/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/excel-filter-cs4" %}
-{% endif %}
 
 ## Customize the excel filter dialog using CSS
 
@@ -210,7 +150,7 @@ The excel filter dialog includes several features such as **context menu**, **se
 
 The following example demonstrates how to remove the context menu option in the excel filter dialog using above mentioned CSS
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -223,19 +163,7 @@ The following example demonstrates how to remove the context menu option in the 
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/excel-filter-cs5" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/excel-filter-cs5/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/excel-filter-cs5/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/excel-filter-cs5" %}
-{% endif %}
 
 ## Bind custom remote datasource for excel/checkbox filtering
 
@@ -243,7 +171,7 @@ The TypeScript Grid allows you to dynamically change the filter data source for 
 
 The following example demonstrates how to dynamically change the remote custom data source for all columns in the Excel or checkbox filter dialog using a `DataManager` with `WebApiAdaptor`.
 
-{% if page.publishingplatform == "typescript" %}
+
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -256,19 +184,7 @@ The following example demonstrates how to dynamically change the remote custom d
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/filtering-custom-datasource-cs1" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/filtering-custom-datasource-cs1/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/filtering-custom-datasource-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/filtering-custom-datasource-cs1" %}
-{% endif %}
 
 ## Hide sorting option in filter dialog
 
@@ -284,7 +200,7 @@ The Excel-like filter dialog in the TypeScript Grid includes built-in sorting op
 
 Here is a simple example demonstrating how to hide the sorting options in the Excel filter dialog:
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -297,19 +213,7 @@ Here is a simple example demonstrating how to hide the sorting options in the Ex
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/grid-sorting" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/grid-sorting/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/grid-sorting/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/grid-sorting" %}
-{% endif %}
 
 ## Render checkbox list data in on-demand for excel/checkbox filtering
 
@@ -339,7 +243,7 @@ grid.filterSettings = { enableInfiniteScrolling = true, loadingIndicator = 'Spin
 
 In the provided example, On-Demand Excel filter has been enabled for the TypeScript Grid
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -352,19 +256,7 @@ In the provided example, On-Demand Excel filter has been enabled for the TypeScr
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/checkbox-excel-filter" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/checkbox-excel-filter/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/checkbox-excel-filter/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/checkbox-excel-filter" %}
-{% endif %}
 
 ## See also
 

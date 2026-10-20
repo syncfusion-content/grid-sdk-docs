@@ -24,7 +24,7 @@ To perform the multi-selection, press and hold CTRL key and click the desired ro
 
 To select range of rows or cells or columns, press and hold the SHIFT key and click the rows or cells or columns.
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -37,19 +37,7 @@ To select range of rows or cells or columns, press and hold the SHIFT key and cl
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/grid-cs164" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/grid-cs164/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/grid-cs164/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/grid-cs164" %}
-{% endif %}
 
 > By default, the Grid will be rendered with only the basic features such as Grid rendering and selection. The default module, including the `SelectionService`, is automatically loaded. Therefore, there is no need to inject the `SelectionService` module separately as it will be injected by default.
 
@@ -67,7 +55,7 @@ To enable selection mode, you can set the [selectionSettings->mode](../../api/gr
 
 The following example, demonstrates how to dynamically enable and change the `selectionSettings.mode` using the `DropDownList` control:
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -80,19 +68,7 @@ The following example, demonstrates how to dynamically enable and change the `se
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/grid-cs165" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/grid-cs165/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/grid-cs165/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/grid-cs165" %}
-{% endif %}
 
 ## Touch interaction
 
@@ -128,7 +104,7 @@ To enable the toggle selection feature, you need to set the [selectionSettings->
 
 The following example demonstrates how to enable the toggle selection for both cells and rows in a Grid using the `selectionSettings.enableToggle` property.
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -141,19 +117,7 @@ The following example demonstrates how to enable the toggle selection for both c
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/Selection-grid-toggle" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/Selection-grid-toggle/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/Selection-grid-toggle/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/Selection-grid-toggle" %}
-{% endif %}
 
 > * If multi selection is enabled, then first click on any selected row (without pressing Ctrl key), it will clear the multi selection and in second click on the same row, it will be unselected.
 >* Toggle selection is a feature that can be applied to all types of selections. When the `checkboxOnly` property is set to **true**, it restricts the ability to select or deselect rows or cells by clicking on them.
@@ -166,7 +130,7 @@ To clear the selection in the control programmatically, you can use the [clearSe
 
 In the following example, it demonstrates how to clear all selection by calling the [clearSelection](../../api/grid/#clearselection) method in the button click event.
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -179,19 +143,7 @@ In the following example, it demonstrates how to clear all selection by calling 
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/grid-cs180" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/grid-cs180/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/grid-cs180/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/grid-cs180" %}
-{% endif %}
 
 > In **Both** mode, if you call [clearCellSelection](../../api/grid/#clearcellselection) first, it will clear cell selections, and then if you call [clearRowSelection](../../api/grid/#clearrowselection), it will clear row selections. The order of method calls determines which type of selection is cleared first.
 > To remove a specific selection in a row, cell, or column, utilize the following methods: `clearRowSelection` for clearing row selections, `clearCellSelection` for clearing cell selections, and `clearColumnSelection` for clearing column selections.
@@ -208,7 +160,7 @@ To enable persist selection, set the [selectionSettings->persistSelection](../..
 
 In the following example, it demonstrates how to enable the persist selection feature for both rows and columns using the `selectionSettings.persistSelection` property :
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -220,17 +172,3 @@ In the following example, it demonstrates how to enable the persist selection fe
 {% endtabs %}
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/grid-cs181" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/grid-cs181/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/grid-cs181/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/grid-cs181" %}
-{% endif %}

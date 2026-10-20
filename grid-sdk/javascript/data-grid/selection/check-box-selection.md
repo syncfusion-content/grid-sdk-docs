@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Check box selection in JavaScript Grid control | Syncfusion
 description: Learn here all about Check box selection in Syncfusion JavaScript Grid control of Syncfusion Essential JS 2 and more.
@@ -17,20 +17,7 @@ To render checkbox in each grid row, you need to use checkbox column with type a
 
 Here's an example of how to enable check box selection using `type` property in the Grid control:
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/grid-cs159/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/grid-cs159/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grid-cs159" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -42,7 +29,7 @@ Here's an example of how to enable check box selection using `type` property in 
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grid-cs159" %}
-{% endif %}
+
 
 > * By default selection is allowed by clicking a grid row or checkbox in that row. To allow selection only through checkbox, you can set [selectionSettings->checkboxOnly](../../api/grid/selectionSettings#checkboxonly) property to **true**.
 > * Selection can be persisted on all the operations using [selectionSettings->persistSelection](../../api/grid/selectionSettings#persistselection) property. For persisting selection on the Grid, any one of the column should be defined as a primary key using [columns->isPrimaryKey](../../api/grid/column#isprimarykey) property.
@@ -56,20 +43,7 @@ The checkbox selection mode in the Grid allows you to select rows either by clic
 
 In the following example, it demonstrates how to dynamically enable and change the `checkboxMode` using the `DropDownList` control:
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/grid-cs160/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/grid-cs160/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grid-cs160" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -81,7 +55,7 @@ In the following example, it demonstrates how to dynamically enable and change t
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grid-cs160" %}
-{% endif %}
+
 
 ## Hide select-all checkbox in column header 
 
@@ -91,20 +65,7 @@ By default, when you set the column type as [checkbox](../../api/grid/column#typ
 
 Here's an example of how to hide selectall checkbox in column header using empty `HeaderTemplate` directive in the Grid control:
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/hide-checkbox-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/hide-checkbox-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/hide-checkbox-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -116,7 +77,7 @@ Here's an example of how to hide selectall checkbox in column header using empty
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/hide-checkbox-cs1" %}
-{% endif %}
+
 
 ## Conditional row selection
 
@@ -128,20 +89,7 @@ The `isRowSelectable` callback determines which rows in the Data Grid can be sel
 
 In the example below, it prevents selection of rows with canceled orders.
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/prevent-checkbox-selection/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/prevent-checkbox-selection/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/prevent-checkbox-selection" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -153,7 +101,7 @@ In the example below, it prevents selection of rows with canceled orders.
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/prevent-checkbox-selection" %}
-{% endif %}
+
 
 ## Select single row in checkbox selection mode
 
@@ -165,20 +113,7 @@ To achieve single-row selection in checkbox selection mode within the Grid, you 
 
 Here's an example of how to select a single row in checkbox selection mode using the `clearSelection` method along with the `rowSelecting` event:
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/checkbox-single-row-selection-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/checkbox-single-row-selection-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/checkbox-single-row-selection-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -190,7 +125,7 @@ Here's an example of how to select a single row in checkbox selection mode using
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/checkbox-single-row-selection-cs1" %}
-{% endif %}
+
 
 ## Allow selection only through checkbox click
 
@@ -198,20 +133,7 @@ By default, the Grid control allows selection by clicking either a grid row or t
 
 Here's an example of how to enable selection only through checkbox click using `checkboxOnly` property:
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/checkbox-single-selectionmode-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/checkbox-single-selectionmode-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/checkbox-single-selectionmode-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -223,4 +145,3 @@ Here's an example of how to enable selection only through checkbox click using `
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/checkbox-single-selectionmode-cs1" %}
-{% endif %}

@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Clipboard in JavaScript Grid control | Syncfusion
 description: Learn here all about Clipboard in Syncfusion JavaScript Grid control of Syncfusion Essential JS 2 and more.
@@ -22,20 +22,7 @@ By using these keyboard shortcuts, you can quickly copy data from the grid to th
 
 To enable the clipboard feature, you can use the grid control with your data source and selection property. 
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/grid-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/grid-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grid-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -47,7 +34,7 @@ To enable the clipboard feature, you can use the grid control with your data sou
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grid-cs1" %}
-{% endif %}
+
 
 ## Copy to clipboard by external buttons
 
@@ -55,20 +42,7 @@ Copying data to the clipboard by using external buttons in the JavaScript Grid a
 
 To copy selected rows or cells data into the clipboard with the help of external buttons, you can utilize the [copy](../api/grid/clipboard#copy) method available in the grid control. This is demonstrated in the following example,
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/copy-method-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/copy-method-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/copy-method-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -80,7 +54,7 @@ To copy selected rows or cells data into the clipboard with the help of external
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/copy-method-cs1" %}
-{% endif %}
+
 
 ## AutoFill
 
@@ -100,20 +74,7 @@ This feature is enabled by defining [enableAutoFill](../api/grid#enableautofill)
 
 The following example demonstrates, how to enable autofill feature in the grid.
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/grid-cs2/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/grid-cs2/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grid-cs2" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -125,7 +86,7 @@ The following example demonstrates, how to enable autofill feature in the grid.
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grid-cs2" %}
-{% endif %}
+
 
 > * If [enableAutoFill](../api/grid#enableautofill) is set to **true**, then the autofill icon will be displayed on cell selection to copy cells.
 > * It requires the selection `mode` to be **Cell**,  `cellSelectionMode` to be **Box** and also `editMode` to be **Batch** .
@@ -152,20 +113,7 @@ Follow the steps below to use the Paste feature in the grid:
 
 4. Press the <kbd>Ctrl + V</kbd> shortcut key to paste the copied content into the target cells.
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/grid-cs3/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/grid-cs3/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grid-cs3" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -177,7 +125,7 @@ Follow the steps below to use the Paste feature in the grid:
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grid-cs3" %}
-{% endif %}
+
 
 > To perform paste functionality, it requires the selection **mode** to be **Cell**,  **cellSelectionMode** to be **Box** and also Batch Editing should be enabled.
 

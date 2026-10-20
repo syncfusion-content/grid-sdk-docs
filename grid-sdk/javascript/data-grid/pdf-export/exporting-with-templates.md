@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Exporting Grid with Templates in JavaScript Grid control | Syncfusion
 description: Learn here all about Exporting grids with templates in Syncfusion JavaScript Grid control of Syncfusion Essential JS 2 and more.
@@ -20,20 +20,7 @@ In the following sample, the hyperlinks and images are exported to PDF using [hy
 
 > PDF Export supports base64 string to export the images.
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/column-template-export-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/column-template-export-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/column-template-export-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -45,7 +32,7 @@ In the following sample, the hyperlinks and images are exported to PDF using [hy
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/column-template-export-cs1" %}
-{% endif %}
+
 
 ![ColumnTemplateExport](../images/colTemp_pdf_expt.gif)
 
@@ -66,20 +53,7 @@ In the following sample, the detail row content is formatted by specifying the [
 > If `columnCount` is not provided, the columns in the detail row of the PDF grid will be generated based on the count of the `columnHeader`/`rows` first row's [cells](../../api/grid/detailTemplateRow#cells).
 > When using [rowSpan](../../api/grid/detailTemplateCell#rowspan), it is Essential<sup style="font-size:70%">&reg;</sup> to provide the cell's [index](../../api/grid/detailTemplateCell#index) for proper functionality.
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/detail-template-export-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/detail-template-export-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/detail-template-export-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -91,7 +65,7 @@ In the following sample, the detail row content is formatted by specifying the [
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/detail-template-export-cs1" %}
-{% endif %}
+
 
 ![DetailTemplateExport](../images/detailTemp_pdf_expt.gif)
 
@@ -101,20 +75,7 @@ The PDF export feature enables exporting of Grid with a caption template to an P
 
 In the following sample, the customized caption text is exported to PDF using [captionText](../../api/grid/exportGroupCaptionEventArgs#captiontext) property in the [exportGroupCaption](../../api/grid#exportgroupcaption) event.
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/caption-template-export-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/caption-template-export-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/caption-template-export-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -126,6 +87,6 @@ In the following sample, the customized caption text is exported to PDF using [c
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/caption-template-export-cs1" %}
-{% endif %}
+
 
 ![CaptionTemplateExport](../images/captionTemp_pdf_expt.gif)

@@ -15,7 +15,7 @@ The column spanning feature in the Syncfusion<sup style="font-size:70%">&reg;</s
 
 In the following demo, Employee **Davolio** doing analysis from 9.00 AM to 10.00 AM, so that cells have spanned.
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -28,25 +28,13 @@ In the following demo, Employee **Davolio** doing analysis from 9.00 AM to 10.00
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/column-spanning-cs1" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/column-spanning-cs1/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/column-spanning-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/column-spanning-cs1" %}
-{% endif %}
 
 ## Change the border color while column spanning
 
 You can change the border color for the spanned cells by the using [queryCellInfo](../../api/grid/#querycellinfo) event. This event triggers before the cell element is appended to the Grid element.
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -59,19 +47,7 @@ You can change the border color for the spanned cells by the using [queryCellInf
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/column-spanning-cs3" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/column-spanning-cs3/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/column-spanning-cs3/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/column-spanning-cs3" %}
-{% endif %}
 
 ## Limitations
 
@@ -90,7 +66,7 @@ When the `enableColumnSpan` property is enabled, the Grid automatically merges c
 
 Here is an example of how to use the `enableColumnSpan` property to merge cells horizontally:
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -103,19 +79,7 @@ Here is an example of how to use the `enableColumnSpan` property to merge cells 
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/column-spanning-cs4" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/column-spanning-cs4/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/column-spanning-cs4/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/column-spanning-cs4" %}
-{% endif %}
 
 > You can also control spanning at the column level. To prevent merging for specific columns, set `enableColumnSpan` to **false** in the column definition.
 

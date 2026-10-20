@@ -40,7 +40,7 @@ You can register custom formula functions with the `formulaSettings.customFuncti
 
 The following example registers a custom function named `CUSTOMSUM`. It accepts multiple values, including cell ranges, and returns the total of all provided values.
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -53,19 +53,7 @@ The following example registers a custom function named `CUSTOMSUM`. It accepts 
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/formula-cs4" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/formula-cs4/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/formula-cs4/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/formula-cs4" %}
-{% endif %}
 
 ## Add and remove formulas in programmatic way
 

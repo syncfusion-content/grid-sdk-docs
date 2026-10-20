@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Infinite scrolling in JavaScript Grid control | Syncfusion
 description: Learn here all about Infinite scrolling in Syncfusion JavaScript Grid control of Syncfusion Essential JS 2 and more.
@@ -22,20 +22,7 @@ To enable infinite scrolling, you need to define [enableInfiniteScrolling](../..
 
 The following an example that demonstrates how to enable infinite scroll in the Grid:
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/grid-cs113/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/grid-cs113/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grid-cs113" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -47,7 +34,7 @@ The following an example that demonstrates how to enable infinite scroll in the 
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grid-cs113" %}
-{% endif %}
+
 
 ## Number of blocks rendered during initial loading
 
@@ -57,20 +44,7 @@ You can define the initial loading pages count by using [infiniteScrollSettings-
 
 The following an example of how you can use the `initialBlocks` property to set the initial loading pages based on **DropDownList** input:
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/grid-cs114/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/grid-cs114/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grid-cs114" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -82,7 +56,7 @@ The following an example of how you can use the `initialBlocks` property to set 
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grid-cs114" %}
-{% endif %}
+
 
 ## Efficient data caching and DOM management in grid cache mode
 
@@ -92,30 +66,13 @@ To enable cache mode, you need to define [enableCache](../../api/grid/infiniteSc
 
 To enable maximum blocks, you need to define `maxBlocks` count of [infiniteScrollSettings](../../api/grid/infiniteScrollSettings), By default this property value is 3.
 
-{% if page.publishingplatform == "typescript" %}
- 
-The following example that demonstrates how to enable/disable cache mode in infinite scrolling of the grid based on a [Switch](../../switch/getting-started) control [change](../../api/switch#change) event :
 
- {% elsif page.publishingplatform == "javascript" %}
  
 The following example that demonstrates how to enable/disable cache mode in infinite scrolling of the grid based on a [Switch](../../switch/es5-getting-started) control [change](../../api/switch#change) event :
 
-{% endif %}
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/grid-cs115/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/grid-cs115/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grid-cs115" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -127,7 +84,7 @@ The following example that demonstrates how to enable/disable cache mode in infi
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grid-cs115" %}
-{% endif %}
+
 
 > If [Hierarchy Grid](../hierarchy-grid) or [Detail Template](../row/detail-template) feature is enabled along with infinite scrolling without defining the height property, it will take a default height of **300px**. Since the [height](../../api/grid#height) property is mandatory for the hierarchy grid and detail template features, ensure to define it accordingly. 
 

@@ -33,7 +33,7 @@ The `ProcessQuery` method handles the execution of a query sent to a [dataSource
 
 ![Query](../images/custom-adaptor-query.png)
 
-{% if page.publishingplatform == "typescript" %}
+
 
 ```ts
 public override processQuery(dm: DataManager, query: Query): Object {
@@ -43,17 +43,7 @@ public override processQuery(dm: DataManager, query: Query): Object {
 }
 ```
 
-{% elsif page.publishingplatform == "javascript" %}
 
-```js
-public override processQuery(dm, query) {
-    dm.dataSource.url = 'https://localhost:xxxx/odata/orders'; // Here xxxx represents the port number.
-    query.addParams('Syncfusion in TypeScript Grid', 'true'); // Add the additional parameter.
-    return super.processQuery.apply(this, arguments);
-}
-```
-
-{% endif %}
 
 ### beforeSend
 
@@ -77,7 +67,7 @@ The `beforeSend` method is executed before a request is sent to the server. This
 
 ![Settings](../images/custom-adaptor-fetch.png)
 
-{% if page.publishingplatform == "typescript" %}
+
 
 ```ts
 public override beforeSend(dm: DataManager, request: Request, settings?: any) {
@@ -86,22 +76,13 @@ public override beforeSend(dm: DataManager, request: Request, settings?: any) {
 }
 ```
 
-{% elsif page.publishingplatform == "javascript" %}
 
-```js
-public override beforeSend(dm, request, settings) {
-  request.headers.set('Authorization', `true`);
-  super.beforeSend(dm, request, settings);
-}
-```
-
-{% endif %}
 
 ### processResponse
 
 The `processResponse` method handles the response received from the server after an asynchronous request. It is responsible for parsing the response data, managing errors, and preparing the data for further processing. This method can accept multiple optional arguments, allowing customization based on specific requirements.
 
-{% if page.publishingplatform == "typescript" %}
+
 
 ```ts
 public override processResponse() {
@@ -114,21 +95,7 @@ public override processResponse() {
     return original;
 }
 ```
-{% elsif page.publishingplatform == "javascript" %}
 
-```js
-public override processResponse() {
-   let i = 0;
-    const original= super.processResponse.apply(this, arguments);
-    // Adding serial number.
-    if (original.result) {
-      original.result.forEach((item) => ej.base.setValue('SNo', ++i, item));
-    }
-    return original;
-}
-```
-
-{% endif %}
 
 This guide provides detailed instructions on binding data and performing CRUD (Create, Read, Update, Delete) actions using the `CustomAdaptor` by extending the `ODataV4Adaptor` in your Syncfusion TypeScript Grid.
 
@@ -136,7 +103,7 @@ This guide provides detailed instructions on binding data and performing CRUD (C
 
 To configure a server with Syncfusion TypeScript Grid, you need to follow the below steps:
 
-{% if page.publishingplatform == "typescript" %}
+
 
 **Step 1:** Set up your development environment:
 
@@ -538,278 +505,7 @@ The `wwwroot/index.html` file is served at **https://localhost:xxxx**.
 With these steps, you have integrated the Syncfusion TypeScript Grid control with your ASP.NET Core project and set up the necessary client-side configuration using Webpack and TypeScript. This will allow the Grid to fetch data from your API and display it accordingly.
 
 
-{% elsif page.publishingplatform == "javascript" %}
 
-**Step 1:** Create a new ASP.NET Core project:
-
-To create a new ASP.NET Core Web API project named CustomAdaptor, follow these steps:
-
-* Open Visual Studio.
-* Select "Create a new project"
-* Choose **ASP.NET Core Web API** project template.
-* Name the project **CustomAdaptor**.
-* Click "Create"
-
-**Step 2:** Install NuGet packages:
-
-Using the NuGet package manager in Visual Studio (Tools → NuGet Package Manager → Manage NuGet Packages for Solution), install the Microsoft.AspNetCore.OData NuGet package.
-
-**Step 3:** Configure the server:
-
-In the `Program.cs` file of your project, configure the server to serve static files by adding the following code.
-
-```cs
-var app = builder.Build();
-
-app.UseDefaultFiles();
-app.UseStaticFiles();
-```
-
-Additionally, comment out the following line in the `launchSettings.json` file:
-
-```json
-    "https": {
-      "commandName": "Project",
-      "dotnetRunMessages": true,
-      "launchBrowser": true,
-     // "launchUrl": "swagger",
-      "applicationUrl": "https://localhost:xxxx;http://localhost:xxxx",
-      "environmentVariables": {
-        "ASPNETCORE_ENVIRONMENT": "Development"
-      }
-    },
-```
-
-This configuration enables the server to locate and serve the `index.html` file.
-
-**Step 4:** Model class creation:
-
-Create a model class named **OrdersDetails.cs** in the server-side **Models** folder to represent the order data.
-
-{% tabs %}
-{% highlight cs tabtitle="OrdersDetails.cs" %}
-
-using System.ComponentModel.DataAnnotations;
-
-namespace CustomAdaptor.Models
-{
-    public class OrdersDetails
-    {
-        public static List<OrdersDetails> order = new List<OrdersDetails>();
-        public OrdersDetails()
-        {
-
-        }
-        public OrdersDetails(
-        int OrderID, string CustomerId, int EmployeeId, string ShipCountry)
-        {
-            this.OrderID = OrderID;
-            this.CustomerID = CustomerId;
-            this.EmployeeID = EmployeeId;
-            this.ShipCountry = ShipCountry;
-        }
-
-        public static List<OrdersDetails> GetAllRecords()
-        {
-            if (order.Count() == 0)
-            {
-                int code = 10000;
-                for (int i = 1; i < 10; i++)
-                {
-                    order.Add(new OrdersDetails(code + 1, "ALFKI", i + 0, "Denmark"));
-                    order.Add(new OrdersDetails(code + 2, "ANATR", i + 2, "Brazil"));
-                    order.Add(new OrdersDetails(code + 3, "ANTON", i + 1, "Germany"));
-                    order.Add(new OrdersDetails(code + 4, "BLONP", i + 3, "Austria"));
-                    order.Add(new OrdersDetails(code + 5, "BOLID", i + 4, "Switzerland"));
-                    code += 5;
-                }
-            }
-            return order;
-        }
-        [Key]
-        public int? OrderID { get; set; }
-        public string? CustomerID { get; set; }
-        public int? EmployeeID { get; set; }
-        public string? ShipCountry { get; set; }
-    }
-}
-
-{% endhighlight %}
-{% endtabs %}
-
-
-**Step 5:** Build the entity data model:
-
-To construct the entity data model for your ODataV4 service, utilize the `ODataConventionModelBuilder` to define the model's structure. Start by creating an instance of the `ODataConventionModelBuilder`, then register the entity set **Orders** using the `EntitySet<T>` method, where `OrdersDetails` represents the CLR type containing order details. 
-
-```cs
-[program.cs]
-using Microsoft.OData.ModelBuilder;
-
-// Create an ODataConventionModelBuilder to build the OData model.
-var modelBuilder = new ODataConventionModelBuilder();
-
-// Register the orders entity set with the OData model builder.
-modelBuilder.EntitySet<OrdersDetails>("Orders");
-```
-
-**Step 6:** Register the ODataV4 services:
-
-Once the entity data model is built, you need to register the ODataV4 services in your ASP.NET Core application. Here's how:
-
-```cs
-// Add controllers with OData support to the service collection.
-builder.Services.AddControllers().AddOData(
-    options => options
-        .Count()
-        .AddRouteComponents("odata", modelBuilder.GetEdmModel()));
-```
-**Step 7:** Add controllers:
-
-Finally, add controllers to expose the OData endpoints. Here's an example:
-
-```cs
-using CustomAdaptor.Models;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.OData.Query;
-
-namespace CustomAdaptor.Controllers
-{
-    [Route("[controller]")]
-    [ApiController]
-    public class OrdersController : ControllerBase
-    {
-        /// <summary>
-        /// Retrieves all orders.
-        /// </summary>
-        /// <returns>The collection of orders.</returns>
-        [HttpGet]
-        [EnableQuery]
-        public IActionResult Get()
-        {
-            var data = OrdersDetails.GetAllRecords().AsQueryable();
-            return Ok(data);
-        }
-    }
-}
-```
-
-**Step 8:** Run the Application 
-
-Run the application in Visual Studio. It will be accessible on a URL like **https://localhost:xxxx**. 
-
-After running the application, you can verify that the server-side API controller is successfully returning the order data in the URL(https://localhost:xxxx/odata/Orders). Here **xxxx** denotes the port number.
-
-## Connecting Syncfusion TypeScript Grid to an custom service extending the ODataV4 service
-
-To integrate the Syncfusion TypeScript Grid into your Javascript and ASP.NET Core project using Visual Studio, follow these steps:
-
-**Step 1:** Create wwwroot folder:
-
-Create a folder named `wwwroot` in the project root directory. This folder will contain static files served by the web server.
-
-**Step 2:** Create JS folder:
-
-Inside the wwwroot folder, create js folder to hold script file, respectively.
-
-**Step 3:** Create index.html file:
-
-Create an `index.html` file under the `wwwroot` folder and add the necessary HTML structure along with CSS and javaScript links to include Syncfusion TypeScript Grid dependencies.
-
-```html
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <title>EJ2 Grid</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Javascript Grid Control">
-    <meta name="author" content="Syncfusion">
-    <link href="css/index.css" rel="stylesheet">
-    <link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/material3.css" rel="stylesheet" />
-
-    <script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/dist/ej2.min.js" type="text/javascript"></script>
-    <script src="https://cdn.syncfusion.com/ej2/syncfusion-helper.js" type="text/javascript"></script>
-</head>
-<body>
-    <div id="container">
-        <div id="Grid"></div>
-    </div>
-    <script type="module" src="js/index.js"></script>
-</body>
-</html>
-```
-
-
-**Step 4:** Adding custom adaptor:
-
-Create a `CustomAdaptor.js` file under the `wwwroot/js` folder. Then extend the `ej.data.ODataV4Adaptor` class to define custom adaptor. This adaptor implements three key methods: `processQuery`, `beforeSend`, and `processResponse`.
-
-* The `processQuery` method modifies the API endpoint URL and sets additional parameters required for executing the query.
-
-* The `beforeSend` method adds custom headers, such as the `Authorization` header, before sending the request.
-
-* The `processResponse` method customizes the response by modifying data, such as adding a new field (`SNo`) to the dataset.
-
-{% tabs %}
-{% highlight js tabtitle="CustomAdaptor.js" %}
-
-export class CustomAdaptor extends ej.data.ODataV4Adaptor {
-    processQuery(dm, query) {
-        dm.dataSource.url = 'https://localhost:xxxx/odata/orders'; // Here xxxx represents the port number.
-        query.addParams('Syncfusion Grid', 'true'); // Add the additional parameter.
-        return super.processQuery.apply(this, arguments);
-    }
-
-    beforeSend(dm, request, settings) {
-        request.headers.set('Authorization', `true`);
-        super.beforeSend(dm, request, settings);
-    }
-
-    processResponse() {
-        let i = 0;
-        const original = super.processResponse.apply(this, arguments);
-        // Adding serial number.
-        if (original.result) {
-            original.result.forEach((item) => ej.base.setValue('SNo', ++i, item));
-        }
-        return original;
-    }
-}
-
-{% endhighlight %}
-{% endtabs %}
-
-**Step 5:** Adding Syncfusion Component:
-
-Create a `index.js` file under the `wwwroot/js` folder. Create a [DataManager](../../data/getting-started) instance specifying the URL of your API endpoint(https://localhost:xxxx/odata/Orders) using the `url` property. Then, set `CustomAdaptor` as the adaptor to handle data requests.
-
-```js
-import { CustomAdaptor } from './CustomAdaptor.js';
-
-var data = new ej.data.DataManager({
-    url: 'https://localhost:xxxx/odata/orders', // Here xxxx represents the port number.
-    adaptor: new CustomAdaptor()
-});
-
-var grid = new ej.grids.Grid({
-    dataSource: data,
-    columns: [
-        { field: 'OrderID', headerText: 'Order ID', textAlign: 'Right', width: 120, type: 'number' },
-        { field: 'CustomerID', width: 140, headerText: 'Customer ID', type: 'string' },
-        { field: 'EmployeeID', headerText: 'Employee ID', width: 140 },
-        { field: 'ShipCountry', headerText: 'ShipCountry', width: 140 }
-    ]
-});
-
-grid.appendTo('#Grid');
-```
-
-**Step 5:** Run the project:
-
-Now, run the project to see the Syncfusion TypeScript Grid connected to the API service in action.
-
-{% endif %}
 
 
 ## Handling filtering operation
@@ -837,7 +533,7 @@ builder.Services.AddControllers().AddOData(
 
 {% endhighlight %}
 
-{% if page.publishingplatform == "typescript" %}
+
 {% highlight ts tabtitle="index.ts" %}
 
 import { Grid, Filter } from '@syncfusion/ej2-grids';
@@ -865,34 +561,7 @@ let grid: Grid = new Grid({
 grid.appendTo('#Grid');
 
 {% endhighlight %}
-{% elsif page.publishingplatform == "javascript" %}
 
-{% highlight js tabtitle="index.js" %}
-
-import { CustomAdaptor } from './CustomAdaptor.js';
-
-ej.grids.Grid.Inject(ej.grids.Filter);
-
-var data = new ej.data.DataManager({
-    url: 'https://localhost:xxxx/odata/orders', // Here xxxx represents the port number.
-    adaptor: new CustomAdaptor()
-});
-
-var grid = new ej.grids.Grid({
-    dataSource: data,
-    allowFiltering: true,
-    columns: [
-        { field: 'OrderID', headerText: 'Order ID', textAlign: 'Right', width: 120, type: 'number' },
-        { field: 'CustomerID', width: 140, headerText: 'Customer ID', type: 'string' },
-        { field: 'EmployeeID', headerText: 'Employee ID', width: 140 },
-        { field: 'ShipCountry', headerText: 'ShipCountry', width: 140 }
-    ]
-});
-
-grid.appendTo('#Grid');
-
-{% endhighlight %}
-{% endif %}
 {% endtabs %}
 
 **Single column filtering**
@@ -928,7 +597,7 @@ builder.Services.AddControllers().AddOData(
 
 {% endhighlight %}
 
-{% if page.publishingplatform == "typescript" %}
+
 {% highlight ts tabtitle="index.ts" %}
 
 import { Grid, Toolbar } from '@syncfusion/ej2-grids';
@@ -958,33 +627,7 @@ grid.appendTo('#Grid');
 {% endhighlight %}
 
 
-{% elsif page.publishingplatform == "javascript" %}
-{% highlight js tabtitle="index.js" %}
 
-import { CustomAdaptor } from './CustomAdaptor.js';
-
-ej.grids.Grid.Inject(ej.grids.Toolbar)
-
-var data = new ej.data.DataManager({
-    url: 'https://localhost:xxxx/odata/orders', // Here xxxx represents the port number.
-    adaptor: new CustomAdaptor()
-});
-
-var grid = new ej.grids.Grid({
-    dataSource: data,
-    toolbar: ['Search'],
-    columns: [
-        { field: 'OrderID', headerText: 'Order ID', textAlign: 'Right', width: 120, type: 'number' },
-        { field: 'CustomerID', width: 140, headerText: 'Customer ID', type: 'string' },
-        { field: 'EmployeeID', headerText: 'Employee ID', width: 140 },
-        { field: 'ShipCountry', headerText: 'ShipCountry', width: 140 }
-    ]
-});
-
-grid.appendTo('#Grid');
-
-{% endhighlight %}
-{% endif %}
 {% endtabs %}
 
 ![Searching query](../images/custom-adaptor-searching.png)
@@ -1014,7 +657,7 @@ builder.Services.AddControllers().AddOData(
 
 {% endhighlight %}
 
-{% if page.publishingplatform == "typescript" %}
+
 {% highlight ts tabtitle="index.ts" %}
 
 import { Grid, Sort } from '@syncfusion/ej2-grids';
@@ -1043,33 +686,7 @@ grid.appendTo('#Grid');
 
 {% endhighlight %}
 
-{% elsif page.publishingplatform == "javascript" %}
-{% highlight js tabtitle="index.js" %}
 
-import { CustomAdaptor } from './CustomAdaptor.js';
-
-ej.grids.Grid.Inject(ej.grids.Sort);
-
-var data = new ej.data.DataManager({
-    url: 'https://localhost:xxxx/odata/orders', // Here xxxx represents the port number.
-    adaptor: new CustomAdaptor()
-});
-
-var grid = new ej.grids.Grid({
-    dataSource: data,
-    allowSorting: true,
-    columns: [
-        { field: 'OrderID', headerText: 'Order ID', textAlign: 'Right', width: 120, type: 'number' },
-        { field: 'CustomerID', width: 140, headerText: 'Customer ID', type: 'string' },
-        { field: 'EmployeeID', headerText: 'Employee ID', width: 140 },
-        { field: 'ShipCountry', headerText: 'ShipCountry', width: 140 }
-    ]
-});
-
-grid.appendTo('#Grid');
-
-{% endhighlight %}
-{% endif %}
 {% endtabs %}
 
 **Single column sorting**
@@ -1105,7 +722,7 @@ builder.Services.AddControllers().AddOData(
 
 {% endhighlight %}
 
-{% if page.publishingplatform == "typescript" %}
+
 {% highlight ts tabtitle="index.ts" %}
 
 import { Grid, Page } from '@syncfusion/ej2-grids';
@@ -1134,33 +751,7 @@ grid.appendTo('#Grid');
 
 {% endhighlight %}
 
-{% elsif page.publishingplatform == "javascript" %}
-{% highlight js tabtitle="index.js" %}
 
-import { CustomAdaptor } from './CustomAdaptor.js';
-
-ej.grids.Grid.Inject(ej.grids.Page);
-
-var data = new ej.data.DataManager({
-    url: 'https://localhost:xxxx/odata/orders', // Here xxxx represents the port number.
-    adaptor: new CustomAdaptor()
-});
-
-var grid = new ej.grids.Grid({
-    dataSource: data,
-    allowPaging:true,
-    columns: [
-        { field: 'OrderID', headerText: 'Order ID', textAlign: 'Right', width: 120, type: 'number' },
-        { field: 'CustomerID', width: 140, headerText: 'Customer ID', type: 'string' },
-        { field: 'EmployeeID', headerText: 'Employee ID', width: 140 },
-        { field: 'ShipCountry', headerText: 'ShipCountry', width: 140 }
-    ]
-});
-
-grid.appendTo('#Grid');
-
-{% endhighlight %}
-{% endif %}
 {% endtabs %}
 
 ![paging query](../images/custom-adaptor-paging.png)
@@ -1172,7 +763,7 @@ To manage CRUD (Create, Read, Update, and Delete) operations using `CustomAdapto
 To enable CRUD operations in the Syncfusion TypeScript Grid within an Angular application, follow the below steps:
 
 {% tabs %}
-{% if page.publishingplatform == "typescript" %}
+
 {% highlight ts tabtitle="index.ts" %}
 
 import { Grid, Edit, Toolbar } from '@syncfusion/ej2-grids';
@@ -1202,35 +793,7 @@ grid.appendTo('#Grid');
 
 {% endhighlight %}
 
-{% elsif page.publishingplatform == "javascript" %}
-{% highlight js tabtitle="index.js" %}
 
-
-import { CustomAdaptor } from './CustomAdaptor.js';
-
-ej.grids.Grid.Inject(ej.grids.Toolbar,ej.grids.Edit);
-
-var data = new ej.data.DataManager({
-    url: 'https://localhost:xxxx/odata/orders', // Here xxxx represents the port number.
-    adaptor: new CustomAdaptor()
-});
-
-var grid = new ej.grids.Grid({
-    dataSource: data,
-    toolbar: ['Add', 'Edit', 'Update', 'Delete', 'Cancel'],
-    editSettings: { allowAdding: true, allowDeleting: true, allowEditing: true },
-    columns: [
-        { field: 'OrderID', headerText: 'Order ID', textAlign: 'Right', width: 120, isPrimaryKey: true, type: 'number' },
-        { field: 'CustomerID', width: 140, headerText: 'Customer ID', type: 'string' },
-        { field: 'EmployeeID', headerText: 'Employee ID', width: 140 },
-        { field: 'ShipCountry', headerText: 'ShipCountry', width: 140 }
-    ]
-});
-
-grid.appendTo('#Grid');
-
-{% endhighlight %}
-{% endif %}
 {% endtabs %}
 
 > Normal/Inline editing is the default edit [mode](../../api/grid/editSettings#mode) for the Syncfusion TypeScript Grid. To enable CRUD operations, ensure that the [isPrimaryKey](../../api/grid/column#isprimarykey) property is set to **true** for a specific Grid column, ensuring that its value is unique.

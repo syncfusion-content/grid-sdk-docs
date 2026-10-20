@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Virtual scrolling in JavaScript Grid control | Syncfusion
 description: Learn here all about Virtual scrolling in Syncfusion JavaScript Grid control of Syncfusion Essential JS 2 and more.
@@ -25,20 +25,7 @@ The number of records displayed in the Grid is implicitly determined by the heig
 
 The following example enable row virtualization using `enableVirtualization` property.
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/grid-cs178/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/grid-cs178/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grid-cs178" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -50,7 +37,7 @@ The following example enable row virtualization using `enableVirtualization` pro
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grid-cs178" %}
-{% endif %}
+
 
 ### Limitations 
 
@@ -85,20 +72,7 @@ To enable column virtualization, you need to set the [enableColumnVirtualization
 
 The following example enable using `enableColumnVirtualization` property.
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/grid-cs179/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/grid-cs179/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grid-cs179" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -110,7 +84,7 @@ The following example enable using `enableColumnVirtualization` property.
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grid-cs179" %}
-{% endif %}
+
 
 > Column's [width](../../api/grid/column#width) is required for column virtualization. If column's width is not defined then Grid will consider its value as **200px**.
 
@@ -197,23 +171,7 @@ Let's see the step by step procedure for how we can overcome the limitation in t
 
 2. Render the grid by define the following features.
 
-{% if page.publishingplatform == "typescript" %}
- 
-    ```ts
-        let grid: Grid = new Grid({
-            dataSource: data,
-            enableVirtualization: true,
-            pageSettings: {pageSize: 50},
-            height: 360,
-            beforeDataBound: beforeDataBound,
-            columns: [
-                { field: 'OrderID', headerText: 'Order ID', textAlign: 'Right', width: 100 }
-                ......
-                ......
-            ]
-        });
-    ```
-{% elsif page.publishingplatform == "javascript" %}
+
  
 ```js
         var grid = new ej.grids.Grid({
@@ -230,7 +188,7 @@ Let's see the step by step procedure for how we can overcome the limitation in t
         });
 
 ```
-{% endif %}
+
 
 3. In the beforeDataBound event, we set the args.count as 0.5 million to perform scrolling with 0.5 million records and all the data operations are performed with whole records which is handled using the custom adaptor. And also particular segment records count is less than 0.5 million means it will directly assigned the original segmented count instead of 0.5 million.
 
@@ -246,35 +204,7 @@ Let's see the step by step procedure for how we can overcome the limitation in t
 
 4. Render “Load Next Set” button and “Load Previous Set” button at bottom and top of the grid control.
 
-{% if page.publishingplatform == "typescript" %}
- 
-    ```ts
-    let button: Button = new Button({
-        cssClass: 'e-info prevbtn',
-        onClick: prevBtnClick,
-        content: 'Load Previous Set...'
-    });
 
-    let grid: Grid = new Grid({
-        dataSource: data,
-        enableVirtualization: true,
-        pageSettings: {pageSize: 50},
-        height: 360,
-        beforeDataBound: beforeDataBound,
-        columns: [
-            { field: 'OrderID', headerText: 'Order ID', textAlign: 'Right', width: 100 }
-            ......
-            ......
-        ]
-    });
-
-    let button: Button = new Button({
-        cssClass: 'e-info nxtbtn',
-        onClick: nxtBtnClick,
-        content: 'Load Next Set...'
-    });
-    ```
-{% elsif page.publishingplatform == "javascript" %}
  
 ```js
     var button = new ej.buttons.Button({
@@ -303,7 +233,7 @@ Let's see the step by step procedure for how we can overcome the limitation in t
     });
 
 ```
-{% endif %}
+
 
 5. While click on the `Load Next Set` / `Load Previous Set` button corresponding page data set is loaded to view remaining records of total 2 millions records after doing some simple calculation.
 

@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Aggregates in JavaScript Grid control | Syncfusion
 description: Learn here all about Aggregates in Syncfusion JavaScript Grid control of Syncfusion Essential JS 2 and more.
@@ -24,20 +24,7 @@ By default, the aggregate values are displayed in the footer, group, and caption
 
 * **[groupCaptionTemplate](../../api/grid/aggregateColumn#groupcaptiontemplate):** Use this property to display the aggregate value in the group caption cell. You can define a custom template to format the aggregate value.
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/aggregates-values-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/aggregates-values-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/aggregates-values-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -49,7 +36,7 @@ By default, the aggregate values are displayed in the footer, group, and caption
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/aggregates-values-cs1" %}
-{% endif %}
+
 
 > * When using local data, the total summary is calculated based on the entire dataset available in the grid. The aggregate values will reflect calculations across all the rows in the grid.
 
@@ -71,20 +58,7 @@ The available built-in aggregate types are:
 
 Here is an example that demonstrates how to use built-in aggregates types in the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid:
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/aggregates-buildin-type-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/aggregates-buildin-type-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/aggregates-buildin-type-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -96,7 +70,7 @@ Here is an example that demonstrates how to use built-in aggregates types in the
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/aggregates-buildin-type-cs1" %}
-{% endif %}
+
 
 ## Multiple aggregates for a column
 
@@ -108,20 +82,7 @@ You can use multiple aggregates for a single column in the JavaScript Grid by sp
 
 Here's an example of how to use multiple aggregates in the JavaScript Grid:
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/aggregates-multiple-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/aggregates-multiple-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/aggregates-multiple-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -133,4 +94,3 @@ Here's an example of how to use multiple aggregates in the JavaScript Grid:
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/aggregates-multiple-cs1" %}
-{% endif %}

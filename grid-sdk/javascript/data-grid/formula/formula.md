@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Formula Cells in JavaScript Grid control | Syncfusion
 description: Learn here all about Formula cells in Syncfusion JavaScript Grid control of Syncfusion Essential JS 2 and more.
@@ -40,20 +40,7 @@ let productData: Object[] = [
 
 In this demo, formulas are applied to the "GrossAmount", "TaxAmount", and "TotalAmount" columns, allowing values to be computed and updated automatically based on the defined expressions in the datasource.
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/formula-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/formula-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/formula-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -65,7 +52,7 @@ In this demo, formulas are applied to the "GrossAmount", "TaxAmount", and "Total
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/formula-cs1" %}
-{% endif %}
+
 
 ### Formula settings
 
@@ -128,20 +115,7 @@ Formulas support built-in functions for performing calculations and data operati
 
 The following example shows a formula-enabled column that calculates the product of the price and quantity using the built-in `PRODUCT` function. This formula multiplies the values in the selected cells and updates the result automatically whenever either referenced value changes.
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/formula-cs3/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/formula-cs3/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/formula-cs3" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -153,7 +127,7 @@ The following example shows a formula-enabled column that calculates the product
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/formula-cs3" %}
-{% endif %}
+
 
 ## See also
 

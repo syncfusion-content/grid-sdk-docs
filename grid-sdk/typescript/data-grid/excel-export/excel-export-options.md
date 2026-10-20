@@ -26,7 +26,7 @@ To export the current page of the grid to an Excel or CSV document, you need to 
 
 The following example demonstrates how to export current page to a Excel document when a toolbar item is clicked.
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -39,19 +39,7 @@ The following example demonstrates how to export current page to a Excel documen
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/grid-cs52" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/grid-cs52/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/grid-cs52/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/grid-cs52" %}
-{% endif %}
 
 ## Export the selected records 
 
@@ -71,7 +59,7 @@ To export the selected records from the grid to a Excel or CSV file, you can fol
 
 The following example demonstrates how to export the selected records to a Excel document when a toolbar item is clicked.
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -84,19 +72,7 @@ The following example demonstrates how to export the selected records to a Excel
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/grid-cs53" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/grid-cs53/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/grid-cs53/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/grid-cs53" %}
-{% endif %}
 
 ## Exporting grouped records
 
@@ -106,7 +82,7 @@ To achieve this functionality, you need to enable grouping in the Grid by settin
 
 The following example demonstrates how to export grouped records to an Excel document when a toolbar item is clicked:
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -119,19 +95,7 @@ The following example demonstrates how to export grouped records to an Excel doc
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/exporting-cs1" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/exporting-cs1/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/exporting-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/exporting-cs1" %}
-{% endif %}
 
 ## Export with hidden columns
 
@@ -139,17 +103,13 @@ Exporting hidden columns in the TypeScript Grid allows you to include hidden col
 
 To export hidden columns of the grid to a Excel or CSV file, you need to set the [includeHiddenColumn](../../api/grid/excelExportProperties#includehiddencolumn) property as **true** in the [excelExportProperties](../../api/grid/excelExportProperties) property.
 
-{% if page.publishingplatform == "typescript" %}
+
  
 The following example demonstrates how to export hidden columns to a Excel file. In this example, the **ShipCity** column, which is not visible in the UI, is exported to the Excel document. You can also export the grid by changing the `excelExportProperties.includeHiddenColumn` property based on the switch toggle using the [checked](../../api/switch#checked) property of the [EJ2 Toggle Switch Button](../../switch/getting-started) control.
 
- {% elsif page.publishingplatform == "javascript" %}
  
-The following example demonstrates how to export hidden columns to a Excel file. In this example, the **ShipCity** column, which is not visible in the UI, is exported to the Excel document. You can also export the grid by changing the `excelExportProperties.includeHiddenColumn` property based on the switch toggle using the [checked](../../api/switch#checked) property of the [EJ2 Toggle Switch Button](../../switch/es5-getting-started) control.
 
-{% endif %}
 
-{% if page.publishingplatform == "typescript" %}
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -162,19 +122,7 @@ The following example demonstrates how to export hidden columns to a Excel file.
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/grid-cs54" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/grid-cs54/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/grid-cs54/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/grid-cs54" %}
-{% endif %}
 
 ## Show or hide columns while exporting
 
@@ -192,7 +140,7 @@ To show or hide columns based on user interaction during the export process, you
 
 In the following example, the **CustomerID** is initially a hidden column in the grid. However, during the export process, the **CustomerID** column is made visible, while the **ShipCity** column is hidden.
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -205,19 +153,7 @@ In the following example, the **CustomerID** is initially a hidden column in the
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/grid-cs55" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/grid-cs55/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/grid-cs55/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/grid-cs55" %}
-{% endif %}
 
 ## Show or hide columns while exporting with stacked header
 
@@ -235,7 +171,7 @@ To implement the show or hide columns feature during Excel export in the Syncfus
 
 In the following example, the **ShipName** is initially a hidden column in the Syncfusion TypeScript Grid. However, during the Excel export process, the **ShipName** column is made visible, while the **OrderDate** column is hidden:
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -248,19 +184,7 @@ In the following example, the **ShipName** is initially a hidden column in the S
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/excel-stackedheader" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/excel-stackedheader/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/excel-stackedheader/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/excel-stackedheader" %}
-{% endif %}
 
 ## Enable filtering in the exported excel file
 
@@ -270,7 +194,7 @@ To enable this feature, you should set the [enableFilter](../../api/grid/excelEx
 
 The following example demonstrates how to export data with filter options to an Excel document when a toolbar item is clicked:
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -283,19 +207,7 @@ The following example demonstrates how to export data with filter options to an 
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/grid-cs56" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/grid-cs56/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/grid-cs56/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/grid-cs56" %}
-{% endif %}
 
 ## Define file name
 
@@ -305,7 +217,7 @@ To assign a custom file name for the exported document, you can set the [fileNam
 
 The following example demonstrates how to define a file name using `ExcelExportProperties.fileName` property when exporting to Excel, based on the entered value as the file name.
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -318,19 +230,7 @@ The following example demonstrates how to define a file name using `ExcelExportP
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/grid-cs58" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/grid-cs58/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/grid-cs58/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/grid-cs58" %}
-{% endif %}
 
 ## Export the master detail grid
 
@@ -340,7 +240,7 @@ To export the master-detail grid on the same sheet, you need to set the [multipl
 
 The following example demonstrates how to export master detail grid to the same page in a Excel file when a toolbar item is clicked. The [rowSelected](../../api/grid#rowselected) event dynamically updates the detail grid based on the selected master record:
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -353,19 +253,7 @@ The following example demonstrates how to export master detail grid to the same 
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/exportmastergrid-cs1" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/exportmastergrid-cs1/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/exportmastergrid-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/exportmastergrid-cs1" %}
-{% endif %}
 
 ## Customizing columns on export
 
@@ -381,7 +269,7 @@ To customize the grid columns, you can follow these steps:
 
 The following example demonstrates how to customize the grid columns when exporting a document. In this scenario, the attributes for different columns have been customized: **OrderID** with `textAlign` set to Right, **CustomerID** with headerText as **Customer Name**, and **Freight** with a center-aligned `textAlign` property, which is not rendered in the grid columns:
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -394,19 +282,7 @@ The following example demonstrates how to customize the grid columns when export
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/exporting-cs2" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/exporting-cs2/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/exporting-cs2/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/exporting-cs2" %}
-{% endif %}
 
 ## Font and color customization 
 
@@ -422,7 +298,7 @@ To apply a theme to the exported Excel document, you can define the [theme](../.
 
 In the following example, apply font styling to the caption, header, and record in the Excel file using the **theme** property:
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -435,19 +311,7 @@ In the following example, apply font styling to the caption, header, and record 
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/grid-cs51" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/grid-cs51/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/grid-cs51/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/grid-cs51" %}
-{% endif %}
 
 >By default, material theme is applied to exported excel document.
 
@@ -459,7 +323,7 @@ To achieve this requirement, use the [excelHeaderQueryCellInfo](../../api/grid#e
 
 In the following demo, using the `rotation` property of the style argument in the `excelHeaderQueryCellInfo` event, you can rotate the header text of the column header in the excel exported document.
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -472,19 +336,7 @@ In the following demo, using the `rotation` property of the style argument in th
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/toolbar-dropdown-cs1" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/toolbar-dropdown-cs1/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/toolbar-dropdown-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/toolbar-dropdown-cs1" %}
-{% endif %}
 
 ## Conditional cell formatting
 
@@ -494,7 +346,7 @@ To achieve this feature, you need to use the [excelQueryCellInfo](../../api/grid
 
 The following example demonstrate how to customize the background color of the Freight column in the exported Excel document using the **args.cell** and **backgroundColor** properties of the `excelQueryCellInfo` event.
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -507,19 +359,7 @@ The following example demonstrate how to customize the background color of the F
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/grid-cs50" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/grid-cs50/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/grid-cs50/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/grid-cs50" %}
-{% endif %}
 
 ## Adding header and footer in the exported Excel file
 
@@ -529,7 +369,7 @@ To achieve this, you can use [toolbarClick](../../api/grid#toolbarclick) event a
 
 The following example demonstrates how to add a header and footer to the exported grid:
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -542,19 +382,7 @@ The following example demonstrates how to add a header and footer to the exporte
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/grid-cs49" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/grid-cs49/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/grid-cs49/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/grid-cs49" %}
-{% endif %}
 
 ## Export grid as blob
 
@@ -562,7 +390,7 @@ The Grid offers an option to export the data as a Blob instead of downloading it
 
 The following example demonstrates how to obtain the blob data of the exported grid by executing the promise in the `excelExportComplete` event.
 
-{% if page.publishingplatform == "typescript" %}
+
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -574,17 +402,3 @@ The following example demonstrates how to obtain the blob data of the exported g
 {% endtabs %}
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/exporting-cs3" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/exporting-cs3/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/exporting-cs3/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/exporting-cs3" %}
-{% endif %}

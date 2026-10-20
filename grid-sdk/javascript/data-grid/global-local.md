@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Global local in JavaScript Grid control | Syncfusion
 description: Learn here all about Global local in Syncfusion JavaScript Grid control of Syncfusion Essential JS 2 and more.
@@ -235,20 +235,7 @@ This feature allows you to specify translation objects for specific cultures, su
 
 The following example demonstrates how to load a translation object for **Deutsch (de)** culture, by using the **load** function of **L10n** class from the **ej2-base** module and by defining the [locale](../api/grid#locale) to **de-DE**.
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/grid-cs77/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/grid-cs77/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grid-cs77" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -260,7 +247,7 @@ The following example demonstrates how to load a translation object for **Deutsc
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grid-cs77" %}
-{% endif %}
+
 
 ### Loading translations for fr culture 
 
@@ -268,20 +255,7 @@ The Loading translations feature allows you to specify translation objects for d
 
 The following example demonstrates how to load a translation object for **French (fr)** culture, by defining the [locale](../api/grid#locale) to **fr-FR** and by using the **load** function of **L10n** class from the **ej2-base** module.
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/localization-cs2/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/localization-cs2/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/localization-cs2" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -293,7 +267,7 @@ The following example demonstrates how to load a translation object for **French
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/localization-cs2" %}
-{% endif %}
+
 
 ### Switch the different localization
 
@@ -317,20 +291,7 @@ loadCldr(
 
 To switch to the **French** culture and set the currency code as **EUR**, you can use the `setCulture` method and the `setCurrencyCode` method of the Grid on external button click. This is demonstrated below: 
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/localization-cs3/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/localization-cs3/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/localization-cs3" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -342,7 +303,7 @@ To switch to the **French** culture and set the currency code as **EUR**, you ca
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/localization-cs3" %}
-{% endif %}
+
 
 ### Set different Locale text for two Grids in same page
 
@@ -352,21 +313,7 @@ In this setup, each Grid can display text in a different language based on its a
 
 For example, when the first Grid is set to use the **fr-FR** Locale, it applies the French translations loaded via **L10n.load**. The second Grid, set to **en-US**, retains the default English text. This demonstrates how localization can be customized per Grid without affecting other components on the page.
 
-{% if page.publishingplatform == "typescript" %}
 
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/grid-cs213/index.ts %}
-{% endhighlight %}
-
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/grid-cs213/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grid-cs213" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -379,7 +326,7 @@ For example, when the first Grid is set to use the **fr-FR** Locale, it applies 
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grid-cs213" %}
-{% endif %}
+
 
 ## Internationalization
 
@@ -389,20 +336,7 @@ The Internationalization library in the JavaScript Grid provides a localized dis
 
 You need to load the culture format files corresponding to the desired locale. This ensures that the Grid control uses the correct format strings for number, date, and time values based on the selected culture. This can be demonstrated in the below example,
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/grid-cs78/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/grid-cs78/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grid-cs78" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -414,7 +348,7 @@ You need to load the culture format files corresponding to the desired locale. T
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grid-cs78" %}
-{% endif %}
+
 
 > * In the above sample, **Freight** column is formatted using the [NumberFormatOptions](../common/internationalization#manipulating-numbers).
 > * By default, [locale](../api/grid#locale) value is **en-US**. If you wish to change the culture to something other than **en-US**, you can simply set the `locale` property accordingly.
@@ -425,30 +359,13 @@ The Right to Left (RTL) feature in the JavaScript Grid allows you to switch the 
 
 To enable RTL in the Grid, you need to set the [enableRtl](../api/grid#enablertl) property to **true**. By setting `enableRtl`, the grid control's text direction and layout will be adjusted to support right-to-left languages.
 
-{% if page.publishingplatform == "typescript" %}
- 
-In the following example, the [EJ2 Toggle Switch Button](../switch/getting-started) control is added to enable or diable the Right to Left (RTL) feature for the **Arabic (ar-AE)** locale. When the switch is toggled, the [change](../api/switch#change) event is triggered and the `enableRtl` property of the grid is updated accordingly. 
 
- {% elsif page.publishingplatform == "javascript" %}
  
 In the following example, the [EJ2 Toggle Switch Button](../switch/es5-getting-started) control is added to enable or diable the Right to Left (RTL) feature for the **Arabic (ar-AE)** locale. When the switch is toggled, the [change](../api/switch#change) event is triggered and the `enableRtl` property of the grid is updated accordingly. 
 
-{% endif %}
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/grid-cs79/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/grid-cs79/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grid-cs79" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -460,7 +377,7 @@ In the following example, the [EJ2 Toggle Switch Button](../switch/es5-getting-s
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grid-cs79" %}
-{% endif %}
+
 
 ## See Also
 

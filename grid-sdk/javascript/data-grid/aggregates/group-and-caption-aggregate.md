@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Group and caption aggregate in JavaScript Grid | Syncfusion
 description: Learn here all about Group and caption aggregate in Syncfusion JavaScript Grid control of Syncfusion Essential JS 2 and more.
@@ -21,20 +21,7 @@ Group footer aggregates are displayed in the footer cells of each group. These c
 
 Here's an example that demonstrates how to use group footer aggregates in the JavaScript Grid control:
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/aggregates-cs5/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/aggregates-cs5/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/aggregates-cs5" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -46,7 +33,7 @@ Here's an example that demonstrates how to use group footer aggregates in the Ja
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/aggregates-cs5" %}
-{% endif %}
+
 
 > * Use the template reference variable name as **groupFooterTemplate** to specify the group footer template and as **groupCaptionTemplate** to specify the group caption template.
 > * The aggregate values must be accessed inside the template using their corresponding [type](../../api/grid/aggregateColumn#type) name.
@@ -57,20 +44,7 @@ Group caption aggregates are displayed in the caption cells of each group. These
 
 Here's an example that demonstrates how to use group and caption aggregates in the JavaScript Grid control:
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/aggregates-group-caption-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/aggregates-group-caption-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/aggregates-group-caption-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -82,7 +56,7 @@ Here's an example that demonstrates how to use group and caption aggregates in t
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/aggregates-group-caption-cs1" %}
-{% endif %}
+
 
 > * The group total summary in Syncfusion<sup style="font-size:70%">&reg;</sup> Grid is calculated based on the current page records for each group by default.
 > * If you require aggregates for all the data in the grid, you can enable the [disablePageWiseAggregates](../../api/grid/groupSettings#disablepagewiseaggregates) property.
@@ -91,20 +65,7 @@ Here's an example that demonstrates how to use group and caption aggregates in t
 
 In some cases, you may want to disable the page-wise aggregates for grouping in the JavaScript Grid control. By default, when grouping is enabled with paging, the grid calculates the aggregates for each page separately. However, you can choose to disable this behavior and calculate aggregates for the entire grouped data instead. This can be achieved by setting the [disablePageWiseAggregates](../../api/grid/groupSettings#disablepagewiseaggregates) property to **true**.
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/aggregates-grouping-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/aggregates-grouping-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/aggregates-grouping-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -116,7 +77,7 @@ In some cases, you may want to disable the page-wise aggregates for grouping in 
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/aggregates-grouping-cs1" %}
-{% endif %}
+
 
 ## See also
 

@@ -19,7 +19,7 @@ In some cases, you need to add the new field editors in the dialog which are not
 
 In the following sample, grid enabled with dialog template editing.
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -32,19 +32,7 @@ In the following sample, grid enabled with dialog template editing.
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/dialogtemplate-cs1" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/dialogtemplate-cs1/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/dialogtemplate-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/dialogtemplate-cs1" %}
-{% endif %}
 
 > The template form editors should have **name** attribute.
 
@@ -88,7 +76,7 @@ You can convert the form editors to EJ2 controls in the [actionComplete](../../a
 
 The following code example illustrates rendering the drop-down list control in the `actionComplete` event.
 
-{% if page.publishingplatform == "typescript" %}
+
  
 ```ts
 
@@ -102,21 +90,7 @@ The following code example illustrates rendering the drop-down list control in t
 
 ```
 
- {% elsif page.publishingplatform == "javascript" %}
  
-```js
-
-    actionComplete: (args) => {
-        if ((args.requestType === 'beginEdit' || args.requestType === 'add')) {
-            let countryData: {}[] = DataUtil.distinct(data, 'ShipCountry', true);
-            new DropDownList({value: args.rowData.ShipCountry, popupHeight: '200px', floatLabelType: 'Always',
-                dataSource: countryData, fields: {text: 'ShipCountry', value: 'ShipCountry'}, placeholder: 'Ship Country'}, args.form.elements.namedItem('ShipCountry'));
-        }
-    }
-
-```
-
-{% endif %}
 
 
 
@@ -126,7 +100,7 @@ You can read, format, and update the current editor value in the [actionBegin](.
 
 In the following code example, the `freight` value has been formatted and updated.
 
-{% if page.publishingplatform == "typescript" %}
+
  
 ```ts
     actionBegin: (args: SaveEventArgs) => {
@@ -138,25 +112,13 @@ In the following code example, the `freight` value has been formatted and update
 
 ```
 
- {% elsif page.publishingplatform == "javascript" %}
  
-```js
-    actionBegin: (args) => {
-        if (args.requestType === 'save') {
-            // cast string to integer value.
-            args.data['Freight'] = parseFloat(args.form.querySelector("#Freight").value);
-        }
-    }
-
-```
-
-{% endif %}
 
 ## Set focus to editor
 
 By default, the first input element in the dialog will be focused while opening the dialog. If the first input element is in disabled or hidden state, focus the valid input element in the [actionComplete](../../api/grid/#actioncomplete) event based on **requestType** as **beginEdit**.
 
-{% if page.publishingplatform == "typescript" %}
+
  
 ```ts
 
@@ -169,26 +131,13 @@ By default, the first input element in the dialog will be focused while opening 
 
 ```
 
- {% elsif page.publishingplatform == "javascript" %}
  
-```js
-
-    actionComplete: (args) => {
-        // Set initail Focus
-        if (args.requestType === 'beginEdit') {
-            (args.form.elements.namedItem('CustomerID')).focus();
-        }
-    }
-
-```
-
-{% endif %}
 
 ## Disable form validation
 
 If you need to disable the default validation rules in  the [actionComplete](../../api/grid/#actioncomplete) event.
 
-{% if page.publishingplatform == "typescript" %}
+
  
 ```typescript
 
@@ -201,26 +150,13 @@ If you need to disable the default validation rules in  the [actionComplete](../
 
 ```
 
- {% elsif page.publishingplatform == "javascript" %}
  
-```js
-
-    actionComplete: (args) => {
-        if ((args.requestType === 'beginEdit' || args.requestType === 'add')) {
-            // Disable the Validation Rules
-            args.form.ej2_instances[0].rules = {};
-        }
-    }
-
-```
-
-{% endif %}
 
 ## Adding validation rules for custom editors
 
 If you have interested to use our default form validation, the validation rules for the fields which are not present in the column model need to be add in  the [actionComplete](../../api/grid/#actioncomplete) event.
 
-{% if page.publishingplatform == "typescript" %}
+
  
 ```ts
 
@@ -233,20 +169,7 @@ If you have interested to use our default form validation, the validation rules 
 
 ```
 
- {% elsif page.publishingplatform == "javascript" %}
  
-```js
-
-    actionComplete: (args) => {
-        if ((args.requestType === 'beginEdit' || args.requestType === 'add')) {
-            // Add Validation Rules
-            args.form.ej2_instances[0].addRules('Freight', {max: 500});
-        }
-    }
-
-``` 
-
-{% endif %}
 
 ## Render tab control inside the dialog template
 
@@ -302,7 +225,7 @@ To include tab controls in the Dialog, please ensure the following steps:
 
 To render the tab control, use the [actionComplete](../../api/grid/#actionComplete) event of the grid.
 
-{% if page.publishingplatform == "typescript" %}
+
  
 ```ts
 
@@ -318,27 +241,11 @@ To render the tab control, use the [actionComplete](../../api/grid/#actionComple
 
 ```
 
- {% elsif page.publishingplatform == "javascript" %}
  
-```js
-
-     var tabObj = new ej.navigations.Tab({
-          showCloseButton: false,
-          selecting:  (e) => {if(e.isSwiped) {e.cancel = true;} if(e.selectingIndex === 1) {e.cancel = !validate(1)}},
-          items: [
-              { header: { 'text': 'Details' }, content: '#tab1' },
-              { header: { 'text': 'Verify' }, content: '#tab2' },
-          ]
-      });
-      tabObj.appendTo('#edittab');
-
-```
-
-{% endif %}
 
 The following example, we have rendered tab control inside the edit dialog. The tab control has two tabs and once you fill the first tab and navigate to second one. The validation for first tab was done before navigate to second.
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -350,17 +257,3 @@ The following example, we have rendered tab control inside the edit dialog. The 
 {% endtabs %}
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/tabtemplate-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/tabtemplate-cs1/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/tabtemplate-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/tabtemplate-cs1" %}
-{% endif %}

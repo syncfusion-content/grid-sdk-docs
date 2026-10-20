@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Caption template in JavaScript Grid control | Syncfusion
 description: Learn here all about Caption template in Syncfusion JavaScript Grid control of Syncfusion Essential JS 2 and more.
@@ -16,20 +16,7 @@ To achieve this customization, you can utilize the [captionTemplate](../../api/g
 
 The following example demonstrates how to customize the group header caption in the Grid by utilizing  the `captionTemplate` property. It displays the **headerText**, **key** and **count** of the grouped columns.
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/captiontemplate-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/captiontemplate-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/captiontemplate-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -41,7 +28,7 @@ The following example demonstrates how to customize the group header caption in 
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/captiontemplate-cs1" %}
-{% endif %}
+
 
 ## Adding custom text in group caption
 
@@ -49,20 +36,7 @@ The Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript  Grid allows you
 
 The following example demonstrates how to add a custom text to the group caption using the `captionTemplate` property. The data parameter is utilized to display the  **key**, **count** and **headerText** of the grouped columns along with the custom text. 
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/customText-captiontemplate-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/customText-captiontemplate-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/customText-captiontemplate-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -74,7 +48,7 @@ The following example demonstrates how to add a custom text to the group caption
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/customText-captiontemplate-cs1" %}
-{% endif %}
+
 
 ## Customize group caption text using locale
 
@@ -84,20 +58,7 @@ To achieve this, you can utilize the `L10n` and `setCulture` methods from the `@
 
 The following example demonstrates, how to customize group caption text based on **"ar"** locale.
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/captiontemplate-cs2/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/captiontemplate-cs2/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/captiontemplate-cs2" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -109,7 +70,7 @@ The following example demonstrates, how to customize group caption text based on
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/captiontemplate-cs2" %}
-{% endif %}
+
 
 ## Render custom control in group caption
 
@@ -119,20 +80,7 @@ To render custom control in the group caption, you can utilize the [captionTempl
 
 The following example demonstrates how to add a custom control to the group caption using the `captionTemplate` property. In the template, the [Chips](../../chips/getting-started) control is utilized, with the text content set as the group key.
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/customComponent-captiontemplate-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/customComponent-captiontemplate-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/customComponent-captiontemplate-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -144,4 +92,3 @@ The following example demonstrates how to add a custom control to the group capt
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/customComponent-captiontemplate-cs1" %}
-{% endif %}

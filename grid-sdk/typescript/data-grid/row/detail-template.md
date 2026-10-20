@@ -15,7 +15,7 @@ The detail template in the Grid control allows you to display additional informa
 
 Here's an example of using the `detailTemplate` property in the grid control:
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -28,19 +28,7 @@ Here's an example of using the `detailTemplate` property in the grid control:
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/detail-template-cs1" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/detail-template-cs1/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/detail-template-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/detail-template-cs1" %}
-{% endif %}
 
 ## Rendering custom control
 
@@ -52,7 +40,7 @@ The `detailDataBound` event is an event that is triggered after a detail row is 
 
 For example, to render grid inside the detail row, place an HTML div element as the `detailTemplate` and render the DIV element as grid control in the `detailDataBound` event.
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -65,19 +53,7 @@ For example, to render grid inside the detail row, place an HTML div element as 
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/detail-template-childgrid-cs1" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/detail-template-childgrid-cs1/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/detail-template-childgrid-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/detail-template-childgrid-cs1" %}
-{% endif %}
 
 ## Expand by external button
 
@@ -87,7 +63,7 @@ To achieve expanding the detail row of a grid using an external button, you need
 
 Here is an example of how to use the `expand` method to expand a detail row:
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -100,19 +76,7 @@ Here is an example of how to use the `expand` method to expand a detail row:
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/detail-template-method-cs1" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/detail-template-method-cs1/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/detail-template-method-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/detail-template-method-cs1" %}
-{% endif %}
 
 ## Customize detail template icon
 
@@ -132,7 +96,7 @@ The detail template icon in the Syncfusion<sup style="font-size:70%">&reg;</sup>
 
 Here is an example of how to customize the detail template icon:
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -145,19 +109,7 @@ Here is an example of how to customize the detail template icon:
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/detail-template-icon-cs1" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/detail-template-icon-cs1/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/detail-template-icon-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/detail-template-icon-cs1" %}
-{% endif %}
 
 ## Limitations 
 

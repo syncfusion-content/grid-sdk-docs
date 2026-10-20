@@ -1,4 +1,4 @@
----
+﻿---
 layout: post
 title: Exporting grid in server in JavaScript Grid control | Syncfusion
 description: Learn here all about Exporting grid in server in Syncfusion JavaScript Grid control of Syncfusion Essential JS 2 and more.
@@ -61,41 +61,7 @@ public IActionResult UrlDatasource([FromBody]DataManagerRequest dm)
 }
 
 ```
-{% if page.publishingplatform == "typescript" %}
- 
-```ts
-import { Grid, Toolbar } from '@syncfusion/ej2-grids';
-import { DataManager, UrlAdaptor } from '@syncfusion/ej2-data';
-import { ClickEventArgs } from '@syncfusion/ej2-navigations';
-Grid.Inject(Toolbar);
 
-let data: DataManager = new DataManager({
-    url: "Home/DataSource",
-    adaptor: new UrlAdaptor
-});
-
-let grid: Grid = new Grid({
-    dataSource: data,
-    toolbar: ['PdfExport'],
-    columns: [
-        { field: 'OrderID', headerText: 'Order ID', textAlign: 'Right', width: 120 },
-        { field: 'CustomerID', headerText: 'Customer ID', width: 150 },
-        { field: 'ShipCity', headerText: 'Ship City', width: 150 },
-        { field: 'ShipName', headerText: 'Ship Name', width: 150 }
-    ],
-    height: 273
-});
-grid.appendTo('#Grid');
-
-grid.toolbarClick = (args: ClickEventArgs) => {
-    if (args['item'].id === 'Grid_pdfexport') {  // 'Grid_pdfexport' -> Grid control id + _ + toolbar item name
-        grid.serverPdfExport("Home/PdfExport");
-    }
-}
-
-```
-
- {% elsif page.publishingplatform == "javascript" %}
  
 ```js
 ej.grids.Grid.Inject(ej.grids.Toolbar);
@@ -125,7 +91,7 @@ grid.toolbarClick = (args) => {
 }
 
 ```
-{% endif %}
+
 
 >Note: Refer to the GitHub sample for quick implementation and testing from [here](https://github.com/SyncfusionExamples/TypeScript-EJ2-Grid-server-side-exporting).
 
@@ -337,20 +303,7 @@ You can achieve this by utilizing the [query](../../api/grid#query) property and
 
 The following example demonstrates how to pass additional parameters to the server when PDF exporting within the `toolbarClick` event. Within the event, the additional parameters, specifically **recordcount** as **15**, are passed using the addParams method and displayed as a message.
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/pdf-server-cs2/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/pdf-server-cs2/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/pdf-server-cs2" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -362,7 +315,7 @@ The following example demonstrates how to pass additional parameters to the serv
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/pdf-server-cs2" %}
-{% endif %}
+
 
 ## Limitations
 
