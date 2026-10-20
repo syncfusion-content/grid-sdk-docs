@@ -881,7 +881,7 @@ When you run the application, the resultant Grid will look like this
 
 ## Binding data from Microsoft SQL Server using Entity Framework with CustomAdaptor
 
-This section describes step by step process how to retrieve data from a Microsoft SQL Server using [CustomAdaptor](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/connecting-to-adaptors/custom-adaptor) and bind it to the Syncfusion ASP.NET MVC Grid.
+This section describes step by step process how to use Entity Framework to retrieve data from a Microsoft SQL Server using [CustomAdaptor](https://help.syncfusion.com/grid-sdk/asp-net-core/data-grid/connecting-to-adaptors/custom-adaptor) and bind it to the Syncfusion AsP.NET Core Grid.
 
 **1.** To create a simple Grid, the procedure is explained in the above-mentioned topic on [Connecting Syncfusion ASP.NET MVC Grid to an API service](##connecting-syncfusion-aspnet-mvc-grid-to-an-api-service)
 
