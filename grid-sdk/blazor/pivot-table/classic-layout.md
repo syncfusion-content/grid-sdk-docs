@@ -2,7 +2,7 @@
 layout: post
 title: Classic Layout in Blazor Pivot Table | Syncfusion
 description: Learn how the Blazor Pivot Table renders row fields side by side in a tabular layout with subtotals beneath each group and grand totals at the end.
-platform: Blazor
+platform: grid-sdk
 control: Classic Layout
 control: Pivot Table
 documentation: ug
@@ -91,6 +91,6 @@ To enable the classic layout, set the `Layout` property in the [PivotViewGridSet
 
 ## See also
 
-* [Row and column](https://blazor.syncfusion.com/documentation/pivot-table/row-and-column)
-* [Show/Hide Totals](https://blazor.syncfusion.com/documentation/pivot-table/show-hide-totals)
-* [Grouping bar](https://blazor.syncfusion.com/documentation/pivot-table/grouping-bar)
+* [Row and column](https://help.syncfusion.com/grid-sdk/blazor/pivot-table/row-and-column)
+* [Show/Hide Totals](https://help.syncfusion.com/grid-sdk/blazor/pivot-table/show-hide-totals)
+* [Grouping bar](https://help.syncfusion.com/grid-sdk/blazor/pivot-table/grouping-bar)

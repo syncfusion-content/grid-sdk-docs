@@ -166,7 +166,7 @@ bootstrapApplication(App, appConfig)
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/treegrid/getting-started-cs1" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/getting-started-cs1" %}
 
 ## Run the application
 

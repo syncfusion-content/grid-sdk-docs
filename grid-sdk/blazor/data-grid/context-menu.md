@@ -448,7 +448,7 @@ public class OrderData
 
 The Blazor DataGrid allows restricting the context menu for individual columns, which is useful when dealing with **sensitive** or **read-only** data.
 
-This behavior is controlled using the [ContextMenuOpen](https://blazor.syncfusion.com/documentation/datagrid/events#contextmenuopen) event. The event is triggered before the context menu appears and provides access to column details. By checking the column's **Field** property, the context menu can be conditionally disabled.
+This behavior is controlled using the [ContextMenuOpen](https://help.syncfusion.com/grid-sdk/blazor/data-grid/events#contextmenuopen) event. The event is triggered before the context menu appears and provides access to column details. By checking the column's **Field** property, the context menu can be conditionally disabled.
 
 To disable the context menu for a specific column:
 
@@ -557,9 +557,9 @@ public class OrderData
 
 The Blazor DataGrid allows dynamic control over the availability of context menu items using the [Disabled](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Navigations.MenuItem.html#Syncfusion_Blazor_Navigations_MenuItem_Disabled) property. This feature is useful for conditionally restricting actions such as **Edit** or **Delete**, based on the column, row data, or custom logic.
 
-To achieve this, handle the [ContextMenuOpen](https://blazor.syncfusion.com/documentation/datagrid/events#contextmenuopen) event. The event is triggered before the context menu is displayed and allows enabling or disabling menu items dynamically based on conditions.
+To achieve this, handle the [ContextMenuOpen](https://help.syncfusion.com/grid-sdk/blazor/data-grid/events#contextmenuopen) event. The event is triggered before the context menu is displayed and allows enabling or disabling menu items dynamically based on conditions.
 
-1. Handle the [ContextMenuOpen](https://blazor.syncfusion.com/documentation/datagrid/events#contextmenuopen) event of the grid.
+1. Handle the [ContextMenuOpen](https://help.syncfusion.com/grid-sdk/blazor/data-grid/events#contextmenuopen) event of the grid.
 2. Use the **args.ContextMenu.Items** collection to access the menu items.
 3. Set the **Disabled** property of the required item(s) to **true** or **false** based on the defined logic.
 
@@ -662,11 +662,11 @@ public class OrderData
 
 The Blazor DataGrid allows dynamically showing or hiding specific context menu items using the [Hidden](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Navigations.MenuItem.html#Syncfusion_Blazor_Navigations_MenuItem_Hidden) property. This feature is useful for conditionally restricting actions such as **Edit** or **Delete**, based on the column, row data, or custom logic.
 
-To achieve this, handle the [ContextMenuOpen](https://blazor.syncfusion.com/documentation/datagrid/events#contextmenuopen) event. The event is triggered before the context menu is displayed and allows dynamic modification of menu item visibility based on defined conditions.
+To achieve this, handle the [ContextMenuOpen](https://help.syncfusion.com/grid-sdk/blazor/data-grid/events#contextmenuopen) event. The event is triggered before the context menu is displayed and allows dynamic modification of menu item visibility based on defined conditions.
 
 To control the visibility of context menu items:
 
-1. Handle the [ContextMenuOpen](https://blazor.syncfusion.com/documentation/datagrid/events#contextmenuopen) event of the grid.
+1. Handle the [ContextMenuOpen](https://help.syncfusion.com/grid-sdk/blazor/data-grid/events#contextmenuopen) event of the grid.
 2. Use the **args.ContextMenu.Items** collection to access the menu items.
 3. Set the [Hidden](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Navigations.MenuItem.html#Syncfusion_Blazor_Navigations_MenuItem_Hidden) property of the required item(s) to **true** or **false** based on the defined logic.
 
@@ -869,4 +869,4 @@ public class OrderData
 
 {% previewsample "https://blazorplayground.syncfusion.com/embed/LXBSMXVazHjnCzPv?appbar=false&editor=false&result=true&errorlist=false&theme=bootstrap5" %}
 
-N> Refer to the [Blazor DataGrid](https://www.syncfusion.com/blazor-components/blazor-datagrid) feature tour for a detailed overview of available capabilities. Explore the [Blazor DataGrid example](https://blazor.syncfusion.com/demos/datagrid/overview?theme=bootstrap5) to understand data presentation and manipulation.
+N> Refer to the [Blazor DataGrid](https://www.syncfusion.com/blazor-components/blazor-datagrid) feature tour for a detailed overview of available capabilities. Explore the [Blazor DataGrid example](https://blazor.syncfusion.com/demos/datagrid/overview?theme=fluent2) to understand data presentation and manipulation.

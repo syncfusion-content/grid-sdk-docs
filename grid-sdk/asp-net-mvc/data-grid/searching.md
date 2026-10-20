@@ -4,7 +4,6 @@ title: Searching in Syncfusion ASP.NET MVC Grid Component
 description: Learn here all about Searching in Syncfusion ASP.NET MVC Grid component of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Searching
-publishingplatform: grid-sdk
 documentation: ug
 ---
 
@@ -275,7 +274,7 @@ The following example demonstrates how to retrieve searched records using an ext
 
 ## See also
 
-* [How to perform search by using Wildcard and LIKE operator filter](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/filtering/filtering#wildcard-and-like-operator-filter)
+* [How to perform search by using Wildcard and LIKE operator filter](https://help.syncfusion.com/grid-sdk/asp-net-mvc/data-grid/filtering/filtering#wildcard-and-like-operator-filter)
 
 * [Add clear icon in search in ASP.NET MVC  Grid](https://www.syncfusion.com/forums/139361/add-clear-icon-in-search-in-asp-net-mvc-grid)
 

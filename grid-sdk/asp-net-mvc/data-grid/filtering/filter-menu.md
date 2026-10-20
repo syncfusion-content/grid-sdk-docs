@@ -4,7 +4,6 @@ title: Filter Menu in Syncfusion ASP.NET MVC Grid Component
 description: Learn here all about Filter Menu in Syncfusion ASP.NET MVC Grid component of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Filter Menu
-publishingplatform: grid-sdk
 documentation: ug
 ---
 # Filter menu in  ASP.NET MVC Grid component
@@ -124,8 +123,8 @@ You have the flexibility to customize the default settings of input components w
 | String      | [AutoComplete](https://ej2.syncfusion.com/aspnetmvc/documentation/auto-complete/getting-started)    | Eg: { params: { autofill: false }}       | [AutoComplete API](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DropDowns.AutoComplete.html#properties) |
 | Number      | [NumericTextBox](https://ej2.syncfusion.com/aspnetmvc/documentation/numerictextbox/getting-started) | Eg: { params: { showSpinButton: false }} | [NumericTextBox API](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Inputs.NumericTextBox.html#properties)                 |
 | Boolean     | [DropDownList](https://ej2.syncfusion.com/aspnetmvc/documentation/drop-down-list/getting-started)   | Eg: { params: { sortOrder:'Ascending'}}  | [DropDownList API](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.DropDowns.DropDownList.html#properties)                   |
-| Date        | [DatePicker](https://ej2.syncfusion.com/aspnetmvc/documentation/datepicker/getting-started)         | Eg: { params: { weekNumber: true }}      | [DatePicker API](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Calendars.DatePicker.html#properties)                         |
-| DateTime    | [DateTimePicker](https://ej2.syncfusion.com/aspnetmvc/documentation/datetimepicker/getting-started) | Eg: { params: { showClearButton: true }} | [DateTimePicker API](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Calendars.DateTimePicker.html#properties)                 |
+| Date        | [DatePicker](https://help.syncfusion.com/scheduler-sdk/asp-net-mvc/date-picker/getting-started)         | Eg: { params: { weekNumber: true }}      | [DatePicker API](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Calendars.DatePicker.html#properties)                         |
+| DateTime    | [DateTimePicker](https://help.syncfusion.com/scheduler-sdk/asp-net-mvc/datetime-picker/getting-started) | Eg: { params: { showClearButton: true }} | [DateTimePicker API](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Calendars.DateTimePicker.html#properties)                 |
 
 > To know more about the feature, refer to the Getting Started documentation and API Reference
 
@@ -209,4 +208,4 @@ When using the filter menu, the UI displays operators for all columns based on t
 
 ## See also
 
-* [How to perform filter by using Wildcard and LIKE operator filter](./filtering/#wildcard-and-like-operator-filter)
+* [How to perform filter by using Wildcard and LIKE operator filter](./filtering#wildcard-and-like-operator-filter)

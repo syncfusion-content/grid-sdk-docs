@@ -836,7 +836,7 @@ The Home component has been updated successfully with a basic Blazor DataGrid.
 
 ### Step 3: Implement the CustomAdaptor
 
-The Blazor DataGrid can bind data from **Elasticsearch** using [DataManager](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Data.SfDataManager.html) and set the [Adaptor](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Adaptors.html) property to [CustomAdaptor](https://blazor.syncfusion.com/documentation/datagrid/connecting-to-adaptors/custom-adaptor) for scenarios that require full control over data operations.
+The Blazor DataGrid can bind data from **Elasticsearch** using [DataManager](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Data.SfDataManager.html) and set the [Adaptor](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Adaptors.html) property to [CustomAdaptor](https://help.syncfusion.com/grid-sdk/blazor/data-grid/connecting-to-adaptors/custom-adaptor) for scenarios that require full control over data operations.
 
 The `CustomAdaptor` is a bridge between the Blazor DataGrid and Elasticsearch. It handles all data operations including reading, searching, filtering, sorting, paging, and CRUD operations.
 
@@ -1954,7 +1954,7 @@ public class CustomAdaptor : DataAdaptor
 }
 ```
 
-> This method is triggered when the Blazor DataGrid is operating in [Batch](https://blazor.syncfusion.com/documentation/datagrid/batch-editing) Edit mode.
+> This method is triggered when the Blazor DataGrid is operating in [Batch](https://help.syncfusion.com/grid-sdk/blazor/data-grid/batch-editing) Edit mode.
 
 **What happens behind the scenes:**
 

@@ -34,7 +34,7 @@ The default column menu items are displayed in the following table:
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/treegrid/column-menu-cs1" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/column-menu-cs1" %}
 
 > Column menu can be disabled for a particular column by defining the [column.showColumnMenu](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column#showcolumnmenu) as false.
 
@@ -55,7 +55,7 @@ The following example demonstrates how to add a custom column menu item to clear
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/treegrid/column-menu-cs2" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/column-menu-cs2" %}
 
 ## Customize menu items for particular columns
 
@@ -72,7 +72,7 @@ In the following example, the **Filter** item is hidden in the column menu when 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/treegrid/column-menu-cs3" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/column-menu-cs3" %}
 
 > * Column menu can be disabled for a particular column by defining the [column.showColumnMenu](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column#showcolumnmenu) as false.
 
@@ -108,7 +108,7 @@ The following example demonstrates how to customize the column menu icon in the 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/treegrid/column-menu-cs5" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/column-menu-cs5" %}
 
 ## Render nested column menu
 
@@ -127,7 +127,7 @@ The following example demonstrates how to configure the `columnMenuItems` proper
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/treegrid/column-menu-cs4" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/column-menu-cs4" %}
 
 ## Column menu events
 
@@ -145,4 +145,4 @@ The column menu in the Syncfusion<sup style="font-size:70%">&reg;</sup> Angular 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/treegrid/column-menu-cs6" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/column-menu-cs6" %}

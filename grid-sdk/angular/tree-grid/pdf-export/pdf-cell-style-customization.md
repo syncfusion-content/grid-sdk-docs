@@ -26,7 +26,7 @@ In the example below, the background color of the `Duration` column in the expor
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/treegrid/pdf-export-cs2" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/pdf-export-cs2" %}
 
 ## Theme
 
@@ -44,6 +44,6 @@ To apply a theme during PDF export, define the `theme` property in `exportProper
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/treegrid/pdf-export-cs3" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/pdf-export-cs3" %}
 
 > By default, the material theme is applied to the exported PDF document.

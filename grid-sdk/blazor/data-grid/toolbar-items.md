@@ -24,7 +24,10 @@ Add them by defining the [Toolbar](https://help.syncfusion.com/cr/blazor/Syncfus
 | Update | Saves changes made during edit mode. |
 | Delete | Deletes the selected record. |
 | Cancel | Discards changes made during edit mode. |
+| Undo   | Reverts the recent changes made during batch editing. |
+| Redo   | Reapplies the previously undone changes during batch editing. |
 | Search | Displays a search box to filter the records. |
+| Find   | Displays a find box to locate and highlight matching text across the Blazor DataGrid. |
 | Print | Prints the Blazor DataGrid content. |
 | ColumnChooser | Opens the Column Chooser to toggle column visibility. |
 | PdfExport | Exports Blazor DataGrid data to a PDF file. |
@@ -283,7 +286,7 @@ public class OrderData
 
 Adding custom toolbar items to the Blazor DataGrid enables personalized functionality.
 
-Define custom items by setting the [Toolbar](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.SfGrid-1.html#Syncfusion_Blazor_Grids_SfGrid_1_Toolbar) property to a collection of [ItemModel](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Navigations.ItemModel.html#Syncfusion_Blazor_Navigations_ItemModel__ctor) objects, and handle actions in the [OnToolbarClick](https://blazor.syncfusion.com/documentation/datagrid/events#ontoolbarclick) event.
+Define custom items by setting the [Toolbar](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.SfGrid-1.html#Syncfusion_Blazor_Grids_SfGrid_1_Toolbar) property to a collection of [ItemModel](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Navigations.ItemModel.html#Syncfusion_Blazor_Navigations_ItemModel__ctor) objects, and handle actions in the [OnToolbarClick](https://help.syncfusion.com/grid-sdk/blazor/data-grid/events#ontoolbarclick) event.
 
 By default, custom toolbar items are positioned on the **left** side. Change the position using the [Align](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Navigations.ItemModel.html#Syncfusion_Blazor_Navigations_ItemModel_Align) property of ItemModel.
 

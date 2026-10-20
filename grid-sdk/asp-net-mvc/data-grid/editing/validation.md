@@ -4,7 +4,6 @@ title: Validation in ASP.NET MVC Grid Control | Syncfusion
 description: Learn here all about Validation in Syncfusion ASP.NET MVC Grid component of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Validation
-publishingplatform: grid-sdk
 documentation: ug
 ---
 
@@ -50,7 +49,7 @@ In the below demo, custom validation applied for **CustomerID** column.
 
 The Custom validation feature in the Grid allows you to apply validation rules and messages to a column based on the value of another column in edit mode. This feature is particularly useful when you need to enforce specific validation criteria that depend on the selection made in a dropdown column.
 
-In the following sample, the `dropdownedit` edit type is used for the **Role** and **Salary** columns. You can apply custom validation to the **Salary** column based on the value selected in the **Role** column.
+In the following sample, DropDownList edit type is used for the **Role** and **Salary** columns. Here, you can apply the custom validation in the **Salary** column based on the value selected in the **Role** column.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -341,7 +340,7 @@ To prevent adding duplicate rows in the Grid, follow these steps:
 
 3. Handle Validation in the [ActionBegin](https://help.syncfusion.com/cr/aspnetmvc-js2/syncfusion.ej2.grids.grid.html#Syncfusion_EJ2_Grids_Grid_ActionBegin) event: In the `ActionBegin` event, check if the **requestType** is **save**. Apply the validation rule before saving and cancel the action `args.cancel = true` if the validation fails.
 
-For server-side validation to prevent adding duplicate rows, you can refer to the detailed guidance provided in our [knowledge base](https://support.syncfusion.com/kb/article/11608/how-to-do-server-side-validation-for-grid-in-asp-net-mvc-application). If you want to display the Grid's validation tooltip instead of the alert used in our knowledge base, you can call the `grid.editModule.formObj.validate()` method in the `Ajax/Fetch` success function to display the Grid's tooltip validation for the server side.
+For server-side validation to prevent adding duplicate rows, you can refer to the detailed guidance provided in our [knowledge base](https://support.syncfusion.com/kb/article/11608/how-to-do-server-side-validation-for-grid-in-aspnet-mvc-application). If you want to display the Grid's validation tooltip instead of the alert used in our knowledge base, you can call the `grid.editModule.formObj.validate()` method in the `Ajax/Fetch` success function to display the Grid's tooltip validation for the server side.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}

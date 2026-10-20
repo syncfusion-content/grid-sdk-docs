@@ -364,7 +364,7 @@ Syncfusion is a library that provides pre-built UI components like Blazor DataGr
 
 For this project, the **fluent** theme is used. A different theme can be selected or customized based on project requirements. Refer to the [Blazor Components Appearance](https://blazor.syncfusion.com/documentation/appearance/themes) documentation to learn more about theming and customization options.
 
-Blazor components are now configured and ready to use. For additional guidance, refer to the Blazor Grid component's [getting‑started](https://blazor.syncfusion.com/documentation/datagrid/getting-started-with-web-app) documentation.
+Blazor components are now configured and ready to use. For additional guidance, refer to the Blazor Grid component's [getting‑started](https://help.syncfusion.com/grid-sdk/blazor/data-grid/getting-started-with-web-app) documentation.
 
 ### Step 2: Update the Blazor DataGrid
 
@@ -1111,6 +1111,6 @@ The application now provides a complete solution for managing orders with a mode
 
 ## Alternative Approach: Custom Adaptor
 
-For a client-side data operations approach without REST API endpoints, refer to the [Blazor DataGrid with SQL Server using Entity Framework and Custom Adaptor](https://blazor.syncfusion.com/documentation/datagrid/connecting-to-database/microsoft-sql-server) documentation. This approach executes search, filter, sort, and grouping operations directly in the Blazor component, providing a tightly integrated alternative to the REST API pattern.
+For a client-side data operations approach without REST API endpoints, refer to the [Blazor DataGrid with SQL Server using Entity Framework and Custom Adaptor](https://help.syncfusion.com/grid-sdk/blazor/data-grid/connecting-to-database/microsoft-sql-server) documentation. This approach executes search, filter, sort, and grouping operations directly in the Blazor component, providing a tightly integrated alternative to the REST API pattern.
 
 ---

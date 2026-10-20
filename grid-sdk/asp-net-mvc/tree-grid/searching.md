@@ -10,20 +10,7 @@ documentation: ug
 
 # Searching in ASP.NET MVC TreeGrid
 
-You can search records in a TreeGrid, by using the [`search`](https://ej2.syncfusion.com/documentation/api/treegrid#search) method with search key as a parameter. This also provides an option to integrate search text box in treegrid's toolbar by adding **search** item to the [`Toolbar`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGrid~Toolbar.html).
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/searching/default-searching/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="DefaultSearching.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/searching/default-searching/defaultSearching.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
+You can search records in a TreeGrid, by using the [`search`](https://ej2.syncfusion.com/documentation/api/treegrid/index-default#search) method with search key as a parameter. This also provides an option to integrate search text box in treegrid's toolbar by adding **search** item to the [`Toolbar`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGrid.html#Syncfusion_EJ2_TreeGrid_TreeGrid_Toolbar).
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -33,26 +20,10 @@ You can search records in a TreeGrid, by using the [`search`](https://ej2.syncfu
 {% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/searching/default-searching/defaultSearching.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
-
-
 
 ## Initial search
 
-To apply search at initial rendering, set the fields, operator, key, and ignoreCase in the [`SearchSettings`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGrid~SearchSettings.html).
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/searching/initial-search/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Initialsearch.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/searching/initial-search/initialsearch.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
+To apply search at initial rendering, set the fields, operator, key, and ignoreCase in the [`SearchSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGrid.html#Syncfusion_EJ2_TreeGrid_TreeGrid_SearchSettings).
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -62,15 +33,12 @@ To apply search at initial rendering, set the fields, operator, key, and ignoreC
 {% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/searching/initial-search/initialsearch.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
-
-
-N> By default, treegrid searches all the bound column values. To customize this behavior define the [`SearchSettings.Fields`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridSearchSettings~Fields.html) property.
+N> By default, treegrid searches all the bound column values. To customize this behavior define the [`SearchSettings.Fields`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGridSearchSettings.html#Syncfusion_EJ2_TreeGrid_TreeGridSearchSettings_Fields) property.
 
 ## Search operators
 
-The search operator can be defined in the [`Operators`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGridSearchSettings.html#Syncfusion_EJ2_TreeGrid_TreeGridSearchSettings_Operator) property of [`SearchSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.TreeGrid.TreeGridSearchSettings.html) to configure specific searching.
+The search operator can be defined in the [`Operators`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGridSearchSettings.html#Syncfusion_EJ2_TreeGrid_TreeGridSearchSettings_Operator) property of [`SearchSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGridSearchSettings.html) to configure specific searching.
 
 The following operators are supported in searching:
 
@@ -86,20 +54,7 @@ notEqual |Checks for values not equal to the specified value.
 
 ## Search by external button
 
-To search treegrid records from an external button, invoke the [`search`](https://ej2.syncfusion.com/documentation/api/treegrid#search) method.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/searching/search-external/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="SearchExternal.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/searching/search-external/searchExternal.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
+To search treegrid records from an external button, invoke the [`search`](https://ej2.syncfusion.com/documentation/api/treegrid/index-default#search) method.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -109,26 +64,10 @@ To search treegrid records from an external button, invoke the [`search`](https:
 {% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/searching/search-external/searchExternal.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
-
-
 
 ## Search specific columns
 
-By default, treegrid searches all visible columns. You can search specific columns by defining the specific column's field names in the [`Fields`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridSearchSettings~Fields.html) property of [`SearchSettings`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGridSearchSettings.html).
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/searching/search-columns/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="SearchColumns.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/searching/search-columns/searchColumns.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
+By default, treegrid searches all visible columns. You can search specific columns by defining the specific column's field names in the [`Fields`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGridSearchSettings.html#Syncfusion_EJ2_TreeGrid_TreeGridSearchSettings_Fields) property of [`SearchSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGridSearchSettings.html).
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -138,8 +77,5 @@ By default, treegrid searches all visible columns. You can search specific colum
 {% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/searching/search-columns/searchColumns.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
-
-
-N> You can refer to our [`ASP.NET MVC Tree Grid`](https://www.syncfusion.com/aspnet-mvc-ui-controls/tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our [`ASP.NET MVC Tree Grid example`](https://ej2.syncfusion.com/aspnetmvc/TreeGrid/Overview#/material) to knows how to present and manipulate data.
+N> You can refer to our [`ASP.NET MVC Tree Grid`](https://www.syncfusion.com/aspnet-mvc-ui-controls/tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our [`ASP.NET MVC Tree Grid example`](https://ej2.syncfusion.com/aspnetmvc/treegrid/overview#/fluent2) to knows how to present and manipulate data.

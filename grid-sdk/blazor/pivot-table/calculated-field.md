@@ -2,7 +2,7 @@
 layout: post
 title: Calculated Field in Blazor Pivot Table | Syncfusion
 description: Learn how the Blazor Pivot Table creates custom value fields from existing fields with formulas via the built-in dialog or the API.
-platform: Blazor
+platform: grid-sdk
 control: Pivot Table
 documentation: ug
 ---
@@ -204,7 +204,7 @@ To reuse an existing formula:
 
 Formatting calculated field values enhances the readability and insight of your data in the pivot table. You can apply different formats using the calculated field dialog in the UI or programmatically through code.
 
-To format calculated field values in your code, use the [PivotViewFormatSettings](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.PivotView.PivotViewFormatSetting.html) class. For more information about supported number formats, refer to the documentation [here](https://blazor.syncfusion.com/documentation/pivot-table/number-formatting).
+To format calculated field values in your code, use the [PivotViewFormatSettings](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.PivotView.PivotViewFormatSetting.html) class. For more information about supported number formats, refer to the documentation [here](https://help.syncfusion.com/grid-sdk/blazor/pivot-table/number-formatting).
 
 ### Formatting through the user interface
 
@@ -459,8 +459,8 @@ The event provides the following parameters to help you handle these interaction
 
 | Action | Action Name|
 |----------------|-------------|
-| [Calculated field button](https://blazor.syncfusion.com/documentation/pivot-table/calculated-field)| Open calculated field dialog|
-| [Edit icon in calculated field](https://blazor.syncfusion.com/documentation/pivot-table/calculated-field#editing-through-the-field-list-and-the-groupingbar)| Edit calculated field|
+| [Calculated field button](https://help.syncfusion.com/grid-sdk/blazor/pivot-table/calculated-field)| Open calculated field dialog|
+| [Edit icon in calculated field](https://help.syncfusion.com/grid-sdk/blazor/pivot-table/calculated-field#editing-through-the-field-list-and-grouping-bar)| Edit calculated field|
 | [Context menu in the tree view inside the calculated field dialog](./calculated-field)| Calculated field context menu|
 
 - [FieldInfo](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.PivotView.PivotActionBeginEventArgs.html#Syncfusion_Blazor_PivotView_PivotActionBeginEventArgs_FieldInfo): Provides information about the selected field when the action involves a specific field.
@@ -535,8 +535,8 @@ The event provides the following parameters to help you handle completed operati
 
 | Action | Action Name|
 |----------------|-------------|
-| [Calculated field button](https://blazor.syncfusion.com/documentation/pivot-table/calculated-field)| Calculated field applied|
-| [Edit icon in calculated field](https://blazor.syncfusion.com/documentation/pivot-table/calculated-field#editing-through-the-field-list-and-the-groupingbar)| Calculated field edited|
+| [Calculated field button](https://help.syncfusion.com/grid-sdk/blazor/pivot-table/calculated-field)| Calculated field applied|
+| [Edit icon in calculated field](https://help.syncfusion.com/grid-sdk/blazor/pivot-table/calculated-field#editing-through-the-field-list-and-grouping-bar)| Calculated field edited|
 
 - [FieldInfo](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.PivotView.PivotActionCompleteEventArgs-1.html#Syncfusion_Blazor_PivotView_PivotActionCompleteEventArgs_1_FieldInfo): Provides information about the selected field when the action involves a specific field.
 
@@ -605,7 +605,7 @@ The [OnActionFailure](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Pi
 | Action | Action Name|
 |----------------|-------------|
 | [Calculated field button](./calculated-field)| Open calculated field dialog|
-| [Edit icon in calculated field](https://blazor.syncfusion.com/documentation/pivot-table/calculated-field#editing-through-the-field-list-and-the-groupingbar)| Edit calculated field|
+| [Edit icon in calculated field](https://help.syncfusion.com/grid-sdk/blazor/pivot-table/calculated-field#editing-through-the-field-list-and-grouping-bar)| Edit calculated field|
 | [Context menu in the tree view inside the calculated field dialog](./calculated-field)| Calculated field context menu|
 
 * [ErrorInfo](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.PivotView.PivotActionFailureEventArgs.html#Syncfusion_Blazor_PivotView_PivotActionFailureEventArgs_ErrorInfo): It holds the error information of the current UI action.

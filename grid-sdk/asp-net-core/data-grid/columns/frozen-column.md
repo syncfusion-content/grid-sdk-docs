@@ -4,7 +4,6 @@ title: Column pinning (Frozen) in Syncfusion ASP.NET Core Grid Component
 description: Learn here all about Column pinning (Frozen) in Syncfusion ASP.NET Core Grid component of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Column pinning (Frozen)
-publishingplatform: grid-sdk
 documentation: ug
 ---
 
@@ -125,7 +124,7 @@ The following example demonstrates how to change the default frozen line color u
 
 ## Render DatePicker in frozen columns in Grid
 
-The Syncfusion Grid allows rendering a [DatePicker](https://ej2.syncfusion.com/aspnetcore/documentation/datepicker/getting-started) inside frozen columns during editing. This is achieved using the `edit` property, where a custom editor (DatePicker) is assigned to the specific column.
+The Syncfusion Grid allows rendering a [DatePicker](https://help.syncfusion.com/scheduler-sdk/asp-net-core/date-picker/getting-started) inside frozen columns during editing. This is achieved using the `edit` property, where a custom editor (DatePicker) is assigned to the specific column.
 
 To integrate a `DatePicker` in a frozen column, configure the column’s `edit` property with custom `create`, `write`, `read`, and `destroy` methods. These methods ensure that the `DatePicker` initializes, retrieves, and destroys correctly within the frozen column.
 

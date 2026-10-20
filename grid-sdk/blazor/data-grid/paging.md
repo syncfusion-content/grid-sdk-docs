@@ -440,7 +440,7 @@ public class OrderData
 {% previewsample "https://blazorplayground.syncfusion.com/embed/BNheXEKNqEnQEOmc?appbar=false&editor=false&result=true&errorlist=false&theme=bootstrap5" %}
 
 > * Inside the `Template` RenderFragment, access parameters using the implicit parameter named context, which is of type [PagerTemplateContext](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Navigations.PagerTemplateContext.html) API.
-> * Refer to the [Blazor Grid Pager Template](https://blazor.syncfusion.com/demos/datagrid/pager-template) online demo showcasing the Pager Template feature in the Blazor DataGrid.
+> * Refer to the [Blazor Grid Pager Template](https://help.syncfusion.com/grid-sdk/blazor/data-grid/paging#pager-template) online demo showcasing the Pager Template feature in the Blazor DataGrid.
 
 ## Pager with page size dropdown
 
@@ -524,7 +524,7 @@ public class OrderData
 
 > * If the PageSizes property is set to a boolean value (true or false), the page size dropdown defaults to options such as [‘All’, ‘5’, ‘10’, ‘15’, ‘20’].
 > * Refer to the [Blazor Grid Paging](https://www.syncfusion.com/blazor-components/blazor-datagrid/paging) feature tour for an overview of paging.
-> * Refer to the Blazor DataGrid feature tour and the [Blazor DataGrid example](https://blazor.syncfusion.com/demos/datagrid/overview?theme=bootstrap5) to understand data presentation and manipulation.
+> * Refer to the Blazor DataGrid feature tour and the [Blazor DataGrid example](https://blazor.syncfusion.com/demos/datagrid/overview?theme=fluent2) to understand data presentation and manipulation.
 
 ### Customize page size dropdown
 

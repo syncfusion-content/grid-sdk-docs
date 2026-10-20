@@ -1,10 +1,9 @@
 ---
 layout: post
-title: Local Data in ASP.NET Core Grid Component
-description: Learn here all about Local Data in Syncfusion ASP.NET Core Grid component of Syncfusion Essential JS 2 and more.
+title: Local Data in ASP.NET Core Grid Control | Syncfusion
+description: Learn here all about Local Data in Syncfusion ASP.NET Core Grid control of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Local Data
-publishingplatform: grid-sdk
 documentation: ug
 ---
 
@@ -43,7 +42,7 @@ To achieve real-time data binding with SignalR in your Grid, follow the steps be
 * Name the project **signalR**.
 * Click “Create”
 
-**Step 2:**  Create a simple Grid by following the [Getting Started documentation link](https://ej2.syncfusion.com/aspnetcore/documentation/grid/getting-started-core).
+**Step 2:**  Create a simple Grid by following the [Getting Started documentation link](https://help.syncfusion.com/grid-sdk/asp-net-core/data-grid/getting-started-core).
 
 **Step 3:** Install the SignalR Client Library by following these steps:
 
@@ -323,9 +322,7 @@ app.Run();
 
 The following screenshot represents the addition, editing, and deletion operations performed, reflecting changes across all client sides:
 
-![Data binding with SignalR ](../images/data-binding/signalRImage.gif)
-
-> You can find a complete sample for signalR on [GitHub](https://github.com/SyncfusionExamples/Binding-data-with-SignalR-in-ej2-aspcore-grid).
+![Data binding with SignalR ](../images/data-binding/signalRImage.webp)
 
 ## Binding data from excel file
 
@@ -348,7 +345,7 @@ The following example demonstrates how to import Excel data into the Grid by uti
 {% endhighlight %}
 {% endtabs %}
 
-![Local data](../images/data-binding/local-data-upload.gif)
+![Local data](../images/data-binding/local-data-upload.webp)
 
 ## Binding data and performing CRUD actions via Fetch request
 
@@ -364,7 +361,7 @@ To achieve data binding and perform CRUD actions using Fetch requests in the Gri
 * Name the project **FetchRequest**.
 * Click “Create”
 
-**Step 2:**  Create a simple Grid by following the [Getting Started documentation link](https://ej2.syncfusion.com/aspnetcore/documentation/grid/getting-started-core).
+**Step 2:**  Create a simple Grid by following the [Getting Started documentation link](https://help.syncfusion.com/grid-sdk/asp-net-core/data-grid/getting-started-core).
 
 **Step 3:**  In the **Pages/Index.cshtml** file, follow the steps below.
 
@@ -644,9 +641,7 @@ app.Run();
 
 The following screenshot represents loading data when the button is clicked and CRUD operations are performed:
 
-![Binding data and performing CRUD actions via Fetch request](../images/data-binding/requestFetch.gif)
-
-> You can find a complete sample for Fetch request on [GitHub](https://github.com/SyncfusionExamples/Binding-data-and-perform-action-in-ej2-aspnetcore-grid-using-Fetch-request).
+![Binding data and performing CRUD actions via Fetch request](../images/data-binding/requestFetch.webp)
 
 ### Display the loading indicator with local data
 
@@ -678,7 +673,7 @@ To achieve data binding and perform CRUD actions using AJAX requests in the Grid
 * Choose ASP.NET Core Web App(Razor Pages) project template.
 * Name the project **AJAXRequest**.
 * Click “Create”
-**Step 2:**  Create a simple Grid by following the [Getting Started documentation link](https://ej2.syncfusion.com/aspnetcore/documentation/grid/getting-started-core).
+**Step 2:**  Create a simple Grid by following the [Getting Started documentation link](https://help.syncfusion.com/grid-sdk/asp-net-core/data-grid/getting-started-core).
 
 **Step 3:**  In the **Pages/Index.cshtml** file, follow the steps below.
 
@@ -959,8 +954,6 @@ The following screenshot represents loading data when the button is clicked and 
 
 ![Binding data and performing CRUD actions via AJAX request](../images/data-binding/ajaxrequest.gif)
 
-> You can find a complete sample for AJAX request on [GitHub](https://github.com/SyncfusionExamples/Binding-data-and-perform-action-in-ej2-aspnetcore-grid-using-Ajax-request).
-
 ### Display the loading indicator using AJAX
 
 The Syncfusion ASP.NET Core Grid allows you to display a loading indicator while loading data using AJAX. This feature is useful when there is a delay in loading data from data , and you want to inform the you that the data is being fetched. This is particularly beneficial when working with large datasets or under conditions of slower internet connections.
@@ -999,7 +992,7 @@ The following example demonstrates how to show and hide the spinner during data 
 
 ## Immutable mode  
 
-Immutable mode in the Syncfusion ASP.NET Core Grid is designed to optimize re-rendering performance by utilizing the object reference and [deep compare](https://dmitripavlutin.com/how-to-compare-objects-in-javascript/#4-deep-equality) concept. This mode ensures that when performing Grid actions, only the modified or newly added rows are re-rendered, preventing unnecessary re-rendering of unchanged rows. 
+Immutable mode in the Syncfusion ASP.NET Core Grid is designed to optimize re-rendering performance by utilizing the object reference and deep compare concept. This mode ensures that when performing Grid actions, only the modified or newly added rows are re-rendered, preventing unnecessary re-rendering of unchanged rows. 
 
 To enable this feature, you need to set the [enableImmutableMode](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_EnableImmutableMode) property as **true**.
 

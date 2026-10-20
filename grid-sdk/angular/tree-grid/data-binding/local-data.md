@@ -39,7 +39,7 @@ The following code example shows how to bind hierarchical local data to the Tree
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/treegrid/data-binding-cs2" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/data-binding-cs2" %}
 
 > * Remote data binding is not supported for hierarchical data sources.
 
@@ -62,7 +62,7 @@ The TreeGrid can render data from self-referential (flat) data structures by spe
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/treegrid/data-binding-cs3" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/data-binding-cs3" %}
 
 > Below is a list of reserved properties used internally by TreeGrid. To avoid conflicts, do not use these property names in your data models.
 
@@ -118,7 +118,7 @@ this.treegrid.refresh(); // Refresh the TreeGrid.
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/treegrid/refresh-datasource-cs1" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/refresh-datasource-cs1" %}
 
 ## Immutable mode
 
@@ -138,7 +138,7 @@ The following example demonstrates how to enable immutable mode:
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/treegrid/immutable-cs1" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/immutable-cs1" %}
 
 > * This feature uses the primary key value for data comparison. Set the [isPrimaryKey](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column#isprimarykey) column to ensure correct row identification.
 

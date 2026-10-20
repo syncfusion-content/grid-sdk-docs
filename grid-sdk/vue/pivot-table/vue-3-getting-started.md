@@ -221,7 +221,7 @@ export default {
 </script>
 
 <style>
-@import "../node_modules/@syncfusion/ej2-tailwind3-theme/styles/pivotview/index.css";
+@import '../node_modules/@syncfusion/ej2-tailwind3-theme/styles/pivotview/index.css';
 </style>
 
 {% endhighlight %}

@@ -2,7 +2,7 @@
 layout: post
 title: How to display string values in Blazor Pivot Table | Syncfusion
 description: Step-by-step example showing how to display string values in the Blazor Pivot Table, using CellTemplate to set AxisSet.FormattedText per value cell.
-platform: Blazor
+platform: grid-sdk
 control: Pivot Table
 documentation: ug
 ---

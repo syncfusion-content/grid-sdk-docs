@@ -2,7 +2,7 @@
 layout: post
 title: Getting Started with Blazor Pivot Table | Syncfusion
 description: Check out and learn about getting started with Blazor Pivot Table component in Blazor WebAssembly Application.
-platform: Blazor
+platform: grid-sdk
 control: Pivot Table
 documentation: ug
 ---

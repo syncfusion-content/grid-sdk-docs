@@ -24,7 +24,7 @@ To select a row when the TreeGrid first renders, set the [`selectedRowIndex`](ht
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/treegrid/selection-cs4" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/selection-cs4" %}
 
 ## Get selected row indexes
 
@@ -40,7 +40,7 @@ Obtain selected row indexes using the [`getSelectedRowIndexes`](https://ej2.sync
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/treegrid/selection-cs5" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/selection-cs5" %}
 
 ## Clear selection programmatically
 
@@ -58,7 +58,7 @@ In the demo below, the third row is selected initially using [`selectedRowIndex`
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/treegrid/selection-cs6" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/selection-cs6" %}
 
 ## Get selected records on various pages
 
@@ -76,7 +76,7 @@ Get the selected records using the [`getSelectedRecords`](https://ej2.syncfusion
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/treegrid/selection-cs7" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/selection-cs7" %}
 
 > To persist selection, at least one column must be defined as a primary key using the [`columns.isPrimaryKey`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column#isprimarykey) property.
 
@@ -94,4 +94,4 @@ Retrieve selected row elements using the [`getSelectedRows`](https://ej2.syncfus
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/treegrid/selection-cs13" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/selection-cs13" %}

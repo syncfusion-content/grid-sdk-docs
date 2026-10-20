@@ -3,7 +3,7 @@ layout: post
 title: "Oracle Data Binding in Blazor Pivot Table | Syncfusion"
 component: "Pivot Table"
 description: "Learn how to bind the Blazor Pivot Table to an Oracle database using Oracle.ManagedDataAccess, either directly or through a Web API service."
-platform: Blazor
+platform: grid-sdk
 documentation: ug
 ---
 

@@ -25,7 +25,7 @@ The following example demonstrates column reordering in the TreeGrid component:
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/treegrid/reorder-cs1" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/reorder-cs1" %}
 
 >* The appearance of the column headers during drag and drop can be customized using the [columnDrag](https://ej2.syncfusion.com/angular/documentation/api/treegrid#columndrag) and [columnDrop](https://ej2.syncfusion.com/angular/documentation/api/treegrid#columndrop) events.
 >* When columns are reordered, the position of the corresponding column data will also be changed. Ensure that any additional code or logic that relies on the order of the column data is updated accordingly.
@@ -47,7 +47,7 @@ In this example, the **startDate** column is prevented from being reordered by s
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/treegrid/reorder-cs2" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/reorder-cs2" %}
 
 ## Reorder columns externally
 
@@ -75,7 +75,7 @@ In this example, the column at index **1** is moved to index **3**.
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/treegrid/reorder-cs3" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/reorder-cs3" %}
 
 ### Reorder column based on field names
 
@@ -95,7 +95,7 @@ The following example demonstrates how to use the `reorderColumns` method to reo
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/treegrid/reorder-cs5" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/reorder-cs5" %}
 
 ### Reorder column based on target index
 
@@ -115,7 +115,7 @@ The following example demonstrates how to use the `reorderColumnByTargetIndex` m
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/treegrid/reorder-cs4" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/reorder-cs4" %}
 
 ## Reorder events
 
@@ -141,4 +141,4 @@ The following example demonstrates the implementation of `columnDragStart`, `col
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/treegrid/reorder-cs6" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/reorder-cs6" %}

@@ -2,7 +2,7 @@
 layout: post
 title: SQLite in Blazor Pivot Table | Syncfusion
 description: Learn how to load and edit SQLite data in the Blazor Pivot Table through an ASP.NET Core API that uses Microsoft.Data.Sqlite and the Syncfusion URL adaptor.
-platform: Blazor
+platform: grid-sdk
 control: PivotTable
 documentation: ug
 ---
@@ -723,8 +723,8 @@ SQLite is ideal for local development, embedded scenarios, and small-to-medium w
 | Antiforgery validation fails | Configure the adaptor to send the expected request token, or use an appropriate non-cookie API authentication scheme. |
 | Large datasets are slow | Process `DataManagerRequest` operations on the server instead of returning the entire table. |
 
-For current component behavior, see the [Pivot Table editing documentation](https://blazor.syncfusion.com/documentation/pivot-table/editing) and [Pivot Table data-binding documentation](https://blazor.syncfusion.com/documentation/pivot-table/data-binding).
+For current component behavior, see the [Pivot Table editing documentation](https://help.syncfusion.com/grid-sdk/blazor/pivot-table/editing) and [Pivot Table data-binding documentation](https://help.syncfusion.com/grid-sdk/blazor/pivot-table/data-binding).
 
 ## Complete Sample Repository
 
-A complete, working sample implementation is available in the [GitHub repository](https://github.com/SyncfusionExamples/syncfusion-blazor-pivot-table-sqlite-database-binding-sample/tree/master).
+A complete, working sample implementation is available in the [GitHub repository](https://github.com/SyncfusionExamples/syncfusion-blazor-pivot-table-sqlite/tree/master).

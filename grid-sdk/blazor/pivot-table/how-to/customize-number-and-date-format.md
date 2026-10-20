@@ -2,7 +2,7 @@
 layout: post
 title: How to format numbers and dates in Blazor Pivot Table | Syncfusion
 description: Step-by-step example showing how to format numbers and dates in the Blazor Pivot Table, using PivotViewFormatSettings with Name and Format per field.
-platform: Blazor
+platform: grid-sdk
 control: Pivot Table
 documentation: ug
 ---

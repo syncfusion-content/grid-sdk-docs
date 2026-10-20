@@ -826,7 +826,7 @@ public class OrderData
 
 {% previewsample "https://blazorplayground.syncfusion.com/embed/VjrfDsjKqkAfFfop?appbar=false&editor=false&result=true&errorlist=false&theme=bootstrap5" %}
 
-> Collapsing every grouped record can take time on large datasets. For large data, use [lazy-load grouping](https://blazor.syncfusion.com/documentation/datagrid/lazy-load-grouping). The same consideration applies to [ExpandAllGroupAsync](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.SfGrid-1.html#Syncfusion_Blazor_Grids_SfGrid_1_ExpandAllGroupAsync).
+> Collapsing every grouped record can take time on large datasets. For large data, use [lazy-load grouping](https://help.syncfusion.com/grid-sdk/blazor/data-grid/lazy-load-grouping). The same consideration applies to [ExpandAllGroupAsync](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.SfGrid-1.html#Syncfusion_Blazor_Grids_SfGrid_1_ExpandAllGroupAsync).
 
 ## Group or Ungroup column externally
 
@@ -1257,6 +1257,6 @@ public class OrderData
 
 ## See Also
 
-- [Exporting grouped records](https://blazor.syncfusion.com/documentation/datagrid/excel-exporting#exporting-grouped-records)
+- [Exporting grouped records](https://help.syncfusion.com/grid-sdk/blazor/data-grid/excel-export-options#exporting-grouped-records)
 
-> Refer to the [Blazor DataGrid](https://www.syncfusion.com/blazor-components/blazor-datagrid) feature tour for an overview of capabilities. Explore the [Blazor DataGrid example](https://blazor.syncfusion.com/demos/datagrid/overview?theme=bootstrap5) to learn how to present and manipulate data.
+> Refer to the [Blazor DataGrid](https://www.syncfusion.com/blazor-components/blazor-datagrid) feature tour for an overview of capabilities. Explore the [Blazor DataGrid example](https://blazor.syncfusion.com/demos/datagrid/overview?theme=fluent2) to learn how to present and manipulate data.

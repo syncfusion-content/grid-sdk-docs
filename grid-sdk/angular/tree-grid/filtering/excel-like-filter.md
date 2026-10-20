@@ -26,7 +26,7 @@ Here is an example showcasing how to render the Excel-like filter within the Tre
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/treegrid/filtering-cs1" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/filtering-cs1" %}
 
 >* The Excel-like filter feature supports various filter conditions, including text-based, number-based, date-based, and boolean-based filters.
 >* The filter dialog provides additional options, such as sorting filter values, searching for specific values, and clearing applied filters.
@@ -49,7 +49,7 @@ Here is an example showcasing how to render the checkbox filter within the TreeG
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/treegrid/excel-filtering-cs1" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/excel-filtering-cs1" %}
 
 ## Customize the filter choice count
 
@@ -73,7 +73,7 @@ The following example demonstrates how to customize the filter choice count in t
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/treegrid/excel-filtering-cs2" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/excel-filtering-cs2" %}
 
 > The specified filter choice count value determines the display of unique items as a checkbox list in the Excel/checkbox type filter dialog. This can result in a delay in rendering these checkbox items when opening the filter dialog. Therefore, it is advisable to set a restricted filter choice count value.
 
@@ -143,7 +143,7 @@ export class AppComponent implements OnInit {
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/treegrid/excel-filtering-cs3" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/excel-filtering-cs3" %}
 
 ## Show template in checkbox list data
 
@@ -163,7 +163,7 @@ In this example, the `filterItemTemplate` is used to render icons along with the
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/treegrid/excel-filtering-cs4" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/excel-filtering-cs4" %}
 
 ## Customize the Excel filter dialog using CSS
 
@@ -194,7 +194,7 @@ The following example demonstrates how to remove the context menu option in the 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/treegrid/excel-filtering-cs5" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/excel-filtering-cs5" %}
 
 ## Render checkbox list data in on-demand for Excel/checkbox filtering
 
@@ -284,4 +284,4 @@ The following example demonstrates how to hide the sorting option in the Excel f
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/treegrid/excel-filtering-cs6" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/excel-filtering-cs6" %}

@@ -77,7 +77,7 @@ To make virtual scrolling work with a static field list:
 * Date formatting, which takes additional time to convert date format.
 * Date formatting with sorting requires the full date-time format to perform sorting along with the provided date format, which lags performance.
 * When using OLAP data, subtotals and grand totals are only displayed when measures are bound at the last position in the [`rows`](https://ej2.syncfusion.com/react/documentation/api/pivotview/dataSourceSettingsModel#rows) or [`columns`](https://ej2.syncfusion.com/react/documentation/api/pivotview/dataSourceSettingsModel#columns) axis. Otherwise, the Pivot Table will show data without summary totals.
-* Even with virtual scrolling, the current viewport data plus the immediate previous and next pages are all retrieved. As a result, when the user scrolls slightly ahead or behind, the next or previous page data is shown immediately. **Note:** Large `width` and `height` values increase the loading count across the current, previous, and next viewports, which can affect performance.
+* Even with virtual scrolling, the current viewport data plus the immediate previous and next pages are all retrieved. As a result, when the user scrolls slightly ahead or behind, the next or previous page data is shown immediately. **Note:** Large `width` and `height` values increase the loading count across the current, previous, and next viewport, which can affect performance.
 
 ## See Also
 

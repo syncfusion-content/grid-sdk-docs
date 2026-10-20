@@ -51,7 +51,7 @@ Row virtualization is ideal for datasets with many rows (10,000+) but manageable
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/treegrid/dom-virtualization-cs1" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/dom-virtualization-cs1" %}
 
 ## Viewport buffer configuration
 
@@ -68,7 +68,7 @@ The following example demonstrates how to configure the buffer size with an inte
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/treegrid/dom-virtualization-cs2" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/dom-virtualization-cs2" %}
 
 > Buffer Tuning: Larger buffers (5-10) reduce visible gaps during fast scrolling but increase DOM nodes and memory. Smaller buffers (2-3) minimize DOM nodes but may show gaps during very fast scrolling. Start with default values and adjust based on scroll speed and device constraints.
 

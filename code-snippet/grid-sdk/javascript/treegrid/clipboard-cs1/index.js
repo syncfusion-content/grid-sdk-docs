@@ -1,5 +1,5 @@
 var treeGridObj = new ej.treegrid.TreeGrid({
-    dataSource: var sampleData,
+    dataSource: sampleData,
     childMapping: 'subtasks',
     allowSelection: true,
     selectionSettings: { type: 'Multiple', mode: 'Row' },

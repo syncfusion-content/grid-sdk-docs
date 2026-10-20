@@ -212,4 +212,4 @@ export class AppComponent implements OnInit {
 ![Pivot Table bound with Snowflake database](../images/snowflake-data-binding.png)
 
 ### Additional Resources
-Explore a complete example of the Angular Pivot Table integrated with an ASP.NET Core Web Application to fetch data from a Snowflake database in this [GitHub](https://github.com/SyncfusionExamples/how-to-bind-Snowflake-database-to-pivot-table) repository.
+For a complete example of the Angular Pivot Table integrated with an ASP.NET Core Web Application that fetches data from a Snowflake database, see this [GitHub](https://github.com/SyncfusionExamples/how-to-bind-Snowflake-database-to-pivot-table) repository.

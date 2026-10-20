@@ -2,7 +2,7 @@
 layout: post
 title: Toolbar in Blazor Pivot Table | Syncfusion
 description: Learn how the Blazor Pivot Table exposes a toolbar with built-in options for new, save, load, grid-chart switching, exporting, and conditional formatting.
-platform: Blazor
+platform: grid-sdk
 control: Pivot Table
 documentation: ug
 ---
@@ -169,7 +169,7 @@ By default, the dropdown menu in the toolbar displays all available chart types.
 
 For example, if you want the dropdown menu to show only the Column, Bar, Line, and Area chart types, you can set the [ChartTypes](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.PivotView.SfPivotView-1.html#Syncfusion_Blazor_PivotView_SfPivotView_1_ChartTypes) property to include these specific options. This makes the pivot chart easier to use by limiting the choices to those most relevant for your data.
 
-To learn more about the supported chart types, see the [Pivot Chart documentation](https://blazor.syncfusion.com/documentation/pivot-table/pivot-chart#chart-types).
+To learn more about the supported chart types, see the [Pivot Chart documentation](https://help.syncfusion.com/grid-sdk/blazor/pivot-table/pivot-chart#chart-types).
 
 ```cshtml
 @using Syncfusion.Blazor.PivotView
@@ -221,7 +221,7 @@ To learn more about the supported chart types, see the [Pivot Chart documentatio
 
 ## Switch the chart to multiple axes
 
-In the pivot chart, users can switch between a single axis and multiple axes using a built-in checkbox located in the chart type dropdown menu on the toolbar. This option allows users to display data on multiple axes for better visualization. For more details, [refer here](https://blazor.syncfusion.com/documentation/pivot-table/pivot-chart#multi-axis).
+In the pivot chart, users can switch between a single axis and multiple axes using a built-in checkbox located in the chart type dropdown menu on the toolbar. This option allows users to display data on multiple axes for better visualization. For more details, [refer here](https://help.syncfusion.com/grid-sdk/blazor/pivot-table/pivot-chart#multiple-axis).
 
 ![Displaying Multiple Axes in Blazor PivotTable DropDown Menu](images/blazor-pivotchart-show-multiple-axes.webp)
 

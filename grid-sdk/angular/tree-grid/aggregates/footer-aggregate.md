@@ -22,7 +22,7 @@ Footer aggregate values are calculated for all rows and displayed in the footer 
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/treegrid/aggregate-cs3" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/aggregate-cs3" %}
 
 > Access aggregate values inside the template by referring to the corresponding [`type`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/aggregateColumnModel#type) property name, such as Sum, Average, etc.
 > Obtain the footer content element programmatically using the [`getFooterContent`](https://ej2.syncfusion.com/angular/documentation/api/treegrid#getfootercontent) method of the TreeGrid instance.
@@ -42,4 +42,4 @@ Format the aggregate value result by using the [`format`](https://ej2.syncfusion
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/treegrid/aggregate-cs4" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/aggregate-cs4" %}

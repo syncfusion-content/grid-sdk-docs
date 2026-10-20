@@ -33,7 +33,7 @@ The following example demonstrates how to define columns manually in the TreeGri
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/treegrid/columns-render-cs1" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/columns-render-cs1" %}
 
 ## Auto generated columns
 
@@ -50,7 +50,7 @@ The following example demonstrates auto-generated columns in the TreeGrid:
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/treegrid/auto-generated-cs1" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/auto-generated-cs1" %}
 
 >* When columns are auto-generated, the column [type](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column#type) is determined from the first record of the [dataSource](https://ej2.syncfusion.com/angular/documentation/api/treegrid#datasource).
 >* For large datasets, auto-generating columns can result in performance issues. In such cases, it is recommended to specify columns manually in the columns property during initialization or use column virtualization by setting [enableColumnVirtualization](https://ej2.syncfusion.com/angular/documentation/api/treegrid#enablecolumnvirtualization) property to **true**.
@@ -72,7 +72,7 @@ The following example demonstrates how to set a primary key for an auto-generate
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/treegrid/auto-generated-cs2" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/auto-generated-cs2" %}
 
 If the column [field](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column#field) name is known, the [getColumnByField](https://ej2.syncfusion.com/angular/documentation/api/treegrid#getcolumnbyfield) method can be used to retrieve the column object. Then, the `isPrimaryKey` property can be set to **true** for that column, as demonstrated below:
 
@@ -100,7 +100,7 @@ In the following example, `width` is set for **taskID** column, **date** `type` 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/treegrid/auto-generated-cs3" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/auto-generated-cs3" %}
 
 ## Dynamic column generation 
 
@@ -121,7 +121,7 @@ The following example demonstrates dynamic column generation in the TreeGrid usi
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/treegrid/dynamic-column-cs1" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/dynamic-column-cs1" %}
 
 ### Using valueAccessor property
 
@@ -142,7 +142,7 @@ In the following example, the **currencyFormatter** function takes the price val
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/treegrid/dynamic-column-cs2" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/dynamic-column-cs2" %}
 
 > The `valueAccessor` function can have performance implications if used to access a large number of data records or perform complex data manipulations. To avoid performance issues, enable the virtualization feature while using the valueAccessor property. This ensures that only the visible rows are rendered, resulting in faster rendering times.
 
@@ -163,7 +163,7 @@ This displays the concatenated value of **FirstName** and **LastName** in the **
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/treegrid/dynamic-column-cs3" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/dynamic-column-cs3" %}
 
 >Since customized values are displayed in the **Name** column, data operations such as sorting and filtering cannot be performed for this column.
 
@@ -182,7 +182,7 @@ In this example, the TreeGrid has columns **orderID**, **orderName**, **units**,
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/treegrid/expression-cs1" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/expression-cs1" %}
 
 >Since customized values are displayed in the **Total Price** column, data operations such as sorting and filtering cannot be performed for this column.
 
@@ -203,7 +203,7 @@ The following example demonstrates how to display serial numbers in a TreeGrid u
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/treegrid/expression-cs2" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/expression-cs2" %}
 
 >Since customized values are displayed in the **S.No** column, data operations such as sorting and filtering cannot be performed for this column.
 
@@ -226,7 +226,7 @@ In the following example, the nested **Task** object's **firstName** and **lastN
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/treegrid/complex-data-cs1" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/complex-data-cs1" %}
 
 >Since customized values are displayed in the column, data operations such as sorting and filtering cannot be performed for this column.
 
@@ -326,6 +326,6 @@ The following example demonstrates how to set complex field for datasource havin
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/treegrid/complex-data-cs2" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/complex-data-cs2" %}
 
 >Since customized values are displayed in the column, data operations such as sorting and filtering cannot be performed for this column.

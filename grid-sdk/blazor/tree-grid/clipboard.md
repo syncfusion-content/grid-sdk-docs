@@ -394,4 +394,4 @@ Events are triggered when performing a copy or paste action on TreeGrid.
 
 * [BeforeCellPaste](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.TreeGrid.TreeGridEvents-1.html#Syncfusion_Blazor_TreeGrid_TreeGridEvents_1_BeforeCellPaste) : This event is triggered before pasting the copied cell value for each cell, and you can cancel the pasting action for a particular cell or change the value by using this event.
 
-> To know more, you can refer the [BeforeCopyPaste](https://blazor.syncfusion.com/documentation/treegrid/events#beforecopypaste) and [BeforeCellPaste](https://blazor.syncfusion.com/documentation/treegrid/events#beforecellpaste) events.
+> To know more, you can refer the [BeforeCopyPaste](https://help.syncfusion.com/grid-sdk/blazor/tree-grid/events#beforecopypaste) and [BeforeCellPaste](https://help.syncfusion.com/grid-sdk/blazor/tree-grid/events#beforecellpaste) events.

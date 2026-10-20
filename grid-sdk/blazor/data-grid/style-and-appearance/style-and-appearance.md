@@ -158,7 +158,7 @@ internal sealed class OrderData
 
 ## Customize alternate rows with frozen columns
 
-The **.e-altrow .e-rowcell** selector styles cells in alternate rows when [Frozen columns](https://blazor.syncfusion.com/documentation/datagrid/frozen-column) are enabled in the Blazor DataGrid.
+The **.e-altrow .e-rowcell** selector styles cells in alternate rows when [Frozen columns](https://help.syncfusion.com/grid-sdk/blazor/data-grid/frozen-column) are enabled in the Blazor DataGrid.
 
 ```css
 .e-grid .e-altrow .e-rowcell {

@@ -1,7 +1,7 @@
 ej.treegrid.TreeGrid.Inject(ej.treegrid.VirtualScroll);
-var dataSource();
+dataSource();
 var treegrid = new ej.treegrid.TreeGrid({
-        dataSource: var virtualData,
+        dataSource: virtualData,
         enableVirtualization: true,
         enableColumnVirtualization: true,
         height: 317,

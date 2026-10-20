@@ -2,7 +2,7 @@
 layout: post
 title: Events in Blazor Pivot Table | Syncfusion
 description: Learn how the Blazor Pivot Table exposes events for cell rendering, drill actions, member editing, save and load reports, and engine updates.
-platform: Blazor
+platform: grid-sdk
 control: Pivot Table
 documentation: ug
 ---

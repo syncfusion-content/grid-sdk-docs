@@ -122,7 +122,7 @@ The following example demonstrates the TreeGrid localized to `Deutsch` culture.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/treegrid/internationalization-cs1" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/internationalization-cs1" %}
 
 ### Localization of dependent components in TreeGrid
 
@@ -201,7 +201,7 @@ The [`Internationalization`](https://ej2.syncfusion.com/angular/documentation/co
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/treegrid/internationalization-cs2" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/internationalization-cs2" %}
 
 > In the above sample, the `Price` column is formatted using `NumberFormatOptions`.
 > By default, the [`locale`](https://ej2.syncfusion.com/angular/documentation/api/treegrid#locale) value is `en-US`. To use another culture, update the `locale` property accordingly.
@@ -220,7 +220,7 @@ RTL support allows the TreeGrid's text direction and layout to switch from left 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/treegrid/internationalization-cs3" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/internationalization-cs3" %}
 
 ## See also
 

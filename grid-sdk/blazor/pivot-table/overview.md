@@ -26,11 +26,11 @@ The [Blazor Pivot Table](https://www.syncfusion.com/blazor-components/blazor-piv
 | **Human Resources & Workforce** | Report on headcount, employee turnover, department payroll distributions, compensation benchmarks, and performance ratings | [Custom Aggregation](./aggregation), [Batch Editing](./editing#batch), [Paging](./paging), [Toolbar](./tool-bar) |
 | **Executive Dashboards & BI** | Build interactive enterprise portals allowing executives to switch between tabular summaries and analytical charts on the fly | [Pivot Chart](./pivot-chart), [Built-in Toolbar](./tool-bar), [Smart Pivot Table](./smart-pivot), [Report Persistence](./tool-bar#save-and-load-reports-to-a-sql-database) |
 
-## Data Connectivity
+## Data connectivity
 
 The [Blazor Pivot Table](https://www.syncfusion.com/blazor-components/blazor-pivot-table) enables multiple data binding approaches, offering flexibility in choosing the right strategy for different application architectures. It can work with in-memory collections, connect to remote services for scalable applications, bind to enterprise OLAP cubes, or offload processing to high-performance server side engines.
 
-**Data Binding Approaches**
+**Data binding approaches**
 
 - **[In-Memory Data](./data-binding#list-binding)** - Bind pivot tables directly to local C# collections, `List<T>`, `IEnumerable<T>`, and [ObservableCollection](./data-binding#observable-collection) for instant client-side data binding without external dependencies.
 - **[JSON & CSV Data](./data-binding#json)** - Ingest raw data in both standard [JSON object arrays](./data-binding#json) and lightweight [CSV text payloads](./data-binding#csv) for optimized bandwidth utilization.
@@ -38,7 +38,7 @@ The [Blazor Pivot Table](https://www.syncfusion.com/blazor-components/blazor-piv
 - **[OLAP Cubes](./olap)** - Connect natively to Microsoft SQL Server Analysis Services (SSAS) multi dimensional cubes and tabular models using XMLA protocols, honoring cube dimensions, measures, KPIs, named sets, and hierarchies.
 - **[Server-Side Pivot Engine](./server-side-pivot-engine)** - Offload multi dimensional calculations, aggregations, and layout operations to a dedicated ASP.NET Core server side engine to handle massive enterprise datasets containing tens of millions of records.
 
-**Database Compatibility**
+**Database compatibility**
 
 The [Blazor Pivot Table](https://www.syncfusion.com/blazor-components/blazor-pivot-table) integrates seamlessly with various relational and modern database systems:
 
@@ -51,7 +51,7 @@ The [Blazor Pivot Table](https://www.syncfusion.com/blazor-components/blazor-piv
 | **[Oracle](./connecting-to-data-source/oracledb)** | High throughput enterprise data warehousing | Mission critical financial and ERP systems |
 | **[Snowflake](./connecting-to-data-source/snowflakedb)** | Cloud data warehouse with elastic scalability | Massive cloud data analytics |
 
-**Modern databases & cloud platforms**
+**Modern databases & Cloud platforms**
 
 Connect your pivot table application to modern cloud data platforms and real time stores:
 
@@ -84,7 +84,7 @@ The [Blazor Pivot Table](https://www.syncfusion.com/blazor-components/blazor-piv
 | **[GraphQL Adaptor](./connecting-to-adaptors/graphql-adaptor)** | Flexible and precise field querying | Modern APIs, optimized payloads |
 | **[Custom Adaptor](./connecting-to-adaptors/custom-adaptor)** | Full control over request/response pipeline | Proprietary backends, specialized protocols |
 
-## Data Shaping & Operations
+## Data shaping & Operations
 
 The [Blazor Pivot Table](https://www.syncfusion.com/blazor-components/blazor-pivot-table) provides comprehensive data manipulation capabilities that empower users to slice, dice, analyze, and reorganize multi dimensional information efficiently:
 
@@ -101,7 +101,7 @@ The [Blazor Pivot Table](https://www.syncfusion.com/blazor-components/blazor-piv
 | **[Drill Through](./drill-through)** | Inspect the underlying raw transactional records behind any aggregated cell | Complete transparency into summary metrics |
 | **[Editing](./editing)** | Modify transactional records directly in cell or dialog editors and auto-update totals | Real time what-if analysis and CRUD data correction |
 
-## Report Manipulation & User Interface
+## Report manipulation & User interface
 
 The [Blazor Pivot Table](https://www.syncfusion.com/blazor-components/blazor-pivot-table) provides rich interactive UI tools that allow end users to customize and reconstruct reports at runtime:
 
@@ -114,7 +114,7 @@ The [Blazor Pivot Table](https://www.syncfusion.com/blazor-components/blazor-piv
 | **[Report Persistence](./tool-bar#save-and-load-reports-to-a-sql-database)** | Save and retrieve report definitions to and from SQL databases or local storage | Reusable, personalized user reports |
 | **[State Persistence](./state-persistence)** | Maintain component layout, expanded states, and filters across user sessions | Consistent user workflow and state restoration |
 
-## Analytical Visualization & Layout
+## Analytical visualization & Layout
 
 Transform raw pivot numbers into intuitive graphical charts and customized spreadsheet layouts:
 
@@ -127,7 +127,7 @@ Transform raw pivot numbers into intuitive graphical charts and customized sprea
 | **[Row and Column](./row-and-column)** | Adjust header dimensions, configure auto-fit, and control header freezing | Tailored table structure and dimension sizing |
 | **[Show/Hide Totals](./show-hide-totals)** | Toggle visibility of subtotals and grand totals for rows and columns | Clean, organized executive presentations |
 
-## Data Formatting & Cell Customization
+## Data formatting & Cell customization
 
 Tailor cell values and visual presentations to match corporate branding and domain standards:
 
@@ -160,7 +160,7 @@ The [Blazor Pivot Table](https://www.syncfusion.com/blazor-components/blazor-piv
 | **[CSV Exporting](./excel-export#csv-export)** | Export raw cross tabulated data to lightweight CSV format | Bulk data exchange and external pipeline ingestion |
 | **[PDF Exporting](./pdf-export)** | Generate formatted PDF documents with custom page orientation, table and chart layouts, and page numbers | Executive presentations, compliance reporting, and document archiving |
 
-## Artificial Intelligence (AI) Features
+## Artificial Intelligence (AI) features
 
 The [Blazor Pivot Table](https://www.syncfusion.com/blazor-components/blazor-pivot-table) integrates seamlessly with modern generative AI services (OpenAI, Azure OpenAI, Ollama):
 
@@ -168,7 +168,7 @@ The [Blazor Pivot Table](https://www.syncfusion.com/blazor-components/blazor-piv
 |---------|---------|-------------|
 | **[Smart Pivot Table](./smart-pivot)** | Natural language report generation, automatic data summarization, and dimension/measure prediction | Instant business intelligence insights through plain English prompts |
 
-## Accessibility & Keyboard Navigation
+## Accessibility & Keyboard navigation
 
 The [Blazor Pivot Table](https://www.syncfusion.com/blazor-components/blazor-pivot-table) is fully accessible and compliant with Web Content Accessibility Guidelines (WCAG) standards:
 
@@ -198,7 +198,7 @@ The [Blazor Pivot Table](https://www.syncfusion.com/blazor-components/blazor-piv
 - [Blazor WebAssembly Guide](./getting-started)
 - [Blazor Hybrid MAUI Guide](./getting-started-with-maui-app)
 
-**Popular Features:**
+**Popular features:**
 - [Data Binding](./data-binding) - In-memory, CSV, JSON, and remote data binding
 - [Server-Side Pivot Engine](./server-side-pivot-engine) - High performance engine for large datasets
 - [Pivot Chart](./pivot-chart) - Interactive chart visualizer with 20+ types

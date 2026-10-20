@@ -1045,4 +1045,4 @@ The following list outlines the features that are not compatible with column spa
 
 ## See also
 
-* [Row Spanning in TreeGrid](https://blazor.syncfusion.com/documentation/treegrid/rows/row-spanning)
+* [Row Spanning in TreeGrid](https://help.syncfusion.com/grid-sdk/blazor/tree-grid/rows/row-spanning)

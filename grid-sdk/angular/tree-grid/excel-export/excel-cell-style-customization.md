@@ -26,7 +26,7 @@ In the example below, the background color is set for the `Duration` column in t
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/treegrid/excel-export-cs2" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/excel-export-cs2" %}
 
 ## Theme
 
@@ -44,6 +44,6 @@ To apply a theme in the exported Excel file, define the `theme` property in the 
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/treegrid/excel-export-cs3" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/excel-export-cs3" %}
 
 > By default, the material theme is applied to the exported Excel document.

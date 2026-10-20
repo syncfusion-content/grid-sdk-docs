@@ -33,7 +33,8 @@
     "rxjs": "7.8.0",
     "tslib": "2.3.0",
     "zone.js": "0.14.3",
-    "@syncfusion/ej2-pivotview": "*"
+    "@syncfusion/ej2-pivotview": "*",
+    "@syncfusion/ej2-tailwind3-theme": "*"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "17.1.2",

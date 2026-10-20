@@ -17,13 +17,13 @@ The [TreeGridColumn.EditType](https://help.syncfusion.com/cr/blazor/Syncfusion.B
 
 * [DropDownList](https://blazor.syncfusion.com/documentation/dropdown-list/getting-started-with-web-app) component for list data type.
 
-* [DatePicker](https://blazor.syncfusion.com/documentation/datepicker/getting-started-with-web-app) component for date values.
+* [DatePicker](https://help.syncfusion.com/scheduler-sdk/blazor/date-picker/getting-started-with-web-app) component for date values.
 
-* [DateTimePicker](https://blazor.syncfusion.com/documentation/datetime-picker/getting-started-with-web-app) component for datetime type.
+* [DateTimePicker](https://help.syncfusion.com/scheduler-sdk/blazor/datetime-picker/getting-started-with-web-app) component for datetime type.
 
 * [Checkbox](https://blazor.syncfusion.com/documentation/check-box/getting-started-with-web-app) component for boolean type.
 
-* [TimePickerEdit](https://blazor.syncfusion.com/documentation/timepicker/getting-started-webapp) component for TimeOnly data type.
+* [TimePickerEdit](https://help.syncfusion.com/scheduler-sdk/blazor/time-picker/getting-started-webapp) component for TimeOnly data type.
 
 Also, the model of the [TreeGridColumn.EditType](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.TreeGrid.TreeGridColumn.html#Syncfusion_Blazor_TreeGrid_TreeGridColumn_EditType) component can be customized through the [TreeGridColumn.Edit.params](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.TreeGrid.TreeGridColumn.html#Syncfusion_Blazor_TreeGrid_TreeGridColumn_Edit).
 
@@ -34,10 +34,10 @@ Component |Example
 [NumericTextBox](https://blazor.syncfusion.com/documentation/numeric-textbox/getting-started-webapp) | @(new { @params = new { format = "n"} })
 [TextBox](https://blazor.syncfusion.com/documentation/textbox/getting-started-webapp) | -
 [DropDownList](https://blazor.syncfusion.com/documentation/dropdown-list/getting-started-with-web-app) | @(new { @params = new { value = "Germany"} })
-[DatePicker](https://blazor.syncfusion.com/documentation/datepicker/getting-started-with-web-app) | @(new { @params = new { format = "yyyy-MM-dd"} })
-[DateTimePicker](https://blazor.syncfusion.com/documentation/datetime-picker/getting-started-with-web-app) | @(new { @params = new { strictMode = true} })
+[DatePicker](https://help.syncfusion.com/scheduler-sdk/blazor/date-picker/getting-started-with-web-app) | @(new { @params = new { format = "yyyy-MM-dd"} })
+[DateTimePicker](https://help.syncfusion.com/scheduler-sdk/blazor/datetime-picker/getting-started-with-web-app) | @(new { @params = new { strictMode = true} })
 [Checkbox](https://blazor.syncfusion.com/documentation/check-box/getting-started-with-web-app) | @(new { @params = new { checked = true} })
-[TimePickerEdit](https://blazor.syncfusion.com/documentation/timepicker/getting-started-webapp) | @(new { @params = new { format = "HH:mm:ss"} })
+[TimePickerEdit](https://help.syncfusion.com/scheduler-sdk/blazor/time-picker/getting-started-webapp) | @(new { @params = new { format = "HH:mm:ss"} })
 
 {% tabs %}
 

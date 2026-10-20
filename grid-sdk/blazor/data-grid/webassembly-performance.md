@@ -11,7 +11,7 @@ documentation: ug
 
 This section outlines performance guidelines for using the [Blazor DataGrid](https://www.syncfusion.com/blazor-components/blazor-datagrid) efficiently in Blazor WebAssembly applications. General Blazor WebAssembly performance guidance is available in the [Microsoft documentation](https://learn.microsoft.com/en-us/aspnet/core/blazor/performance/?view=aspnetcore-9.0).
 
-N> Refer to Getting Started for configuration details: [Blazor Server DataGrid](https://blazor.syncfusion.com/documentation/getting-started/blazor-server-side-visual-studio) and [Blazor WebAssembly DataGrid](https://blazor.syncfusion.com/documentation/datagrid/how-to/blazor-webassembly-datagrid-using-visual-studio)  using Visual Studio.
+N> Refer to Getting Started for configuration details: [Blazor Server DataGrid](https://help.syncfusion.com/grid-sdk/blazor/data-grid/getting-started-with-server-app) and [Blazor WebAssembly DataGrid](https://help.syncfusion.com/grid-sdk/blazor/data-grid/getting-started)  using Visual Studio.
 
 ## Avoid unnecessary component renders
 
@@ -118,7 +118,7 @@ When callback methods are assigned to Blazor DataGrid events, the parent compone
 
 In the following example:
 
-- [RowSelected](https://blazor.syncfusion.com/documentation/datagrid/events#rowselected) invokes a callback that would normally trigger `StateHasChanged` in the parent.
+- [RowSelected](https://help.syncfusion.com/grid-sdk/blazor/data-grid/events#rowselected) invokes a callback that would normally trigger `StateHasChanged` in the parent.
 - Setting `RowSelectEventArgs<Order>.PreventRender` to **true** prevents the Blazor DataGrid from participating in that re-render.
 
 {% tabs %}
@@ -206,7 +206,7 @@ public class OrderData
 {% previewsample "https://blazorplayground.syncfusion.com/embed/LjBoDIWnqvasLQsp?appbar=false&editor=false&result=true&errorlist=false&theme=bootstrap5" %}
 
 > - `args.PreventRender` affects rendering only for the event-triggered cycle and does not change component state beyond that cycle.
-> - Prefer setting `PreventRender` to **true** for user-interactive events (for example, [RowSelected](https://blazor.syncfusion.com/documentation/datagrid/events#rowselected), [RowSelecting](https://blazor.syncfusion.com/documentation/datagrid/events#rowselecting)) to reduce UI latency. For events without args (for example, [DataBound](https://blazor.syncfusion.com/documentation/datagrid/events#databound)), call the Blazor Grid’s `PreventRender` method.
+> - Prefer setting `PreventRender` to **true** for user-interactive events (for example, [RowSelected](https://help.syncfusion.com/grid-sdk/blazor/data-grid/events#rowselected), [RowSelecting](https://help.syncfusion.com/grid-sdk/blazor/data-grid/events#rowselecting)) to reduce UI latency. For events without args (for example, [DataBound](https://help.syncfusion.com/grid-sdk/blazor/data-grid/events#databound)), call the Blazor Grid’s `PreventRender` method.
 
 ## Use paging or virtualization to load only visible rows
 

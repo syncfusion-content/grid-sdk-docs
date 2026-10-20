@@ -28,7 +28,7 @@ Here is an example that demonstrates the usage of the filter menu in the TreeGri
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/treegrid/filtering-cs6" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/filtering-cs6" %}
 
 > * [allowFiltering](https://ej2.syncfusion.com/angular/documentation/api/treegrid#allowfiltering) must be set as true to enable filter menu.
 > * By setting [columns.allowFiltering](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column#allowfiltering) as false will prevent filter menu rendering for a particular column.
@@ -59,7 +59,7 @@ Here is a sample code demonstrating how to render a dropdownlist component for t
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/treegrid/filtering-menu-cs1" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/filtering-menu-cs1" %}
 
 ## Show 24-hour time format in filter dialog
 
@@ -81,7 +81,7 @@ Here is an example that demonstrates how to show 24-hour time format in filter d
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/treegrid/filtering-menu-cs2" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/filtering-menu-cs2" %}
 
 ## Customizing filter menu operators list
 
@@ -108,7 +108,7 @@ Here is an example of how to customize the filter operators list in the TreeGrid
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/treegrid/filtering-cs7" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/filtering-cs7" %}
 
 ## Filter by multiple keywords using filter menu
 
@@ -128,7 +128,7 @@ Here is an example that demonstrates how to perform filtering by multiple keywor
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/treegrid/filtering-menu-cs3" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/filtering-menu-cs3" %}
 
 ## Customize the default input component of filter menu dialog
 
@@ -158,7 +158,7 @@ In the example provided below, the **Task ID** and **Duration** columns are nume
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/treegrid/filtering-menu-cs4" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/filtering-menu-cs4" %}
 
 ### Prevent autofill option in autocomplete of menu filter
 
@@ -180,7 +180,7 @@ Here's an example that demonstrates how to prevent autofill options in the autoc
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/treegrid/filtering-menu-cs5" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/filtering-menu-cs5" %}
 
 ## Filter menu events
 
@@ -277,7 +277,7 @@ export class AppComponent implements OnInit {
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/treegrid/filtering-menu-cs6" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/filtering-menu-cs6" %}
 
 ## Troubleshoot filter menu operator issue
 

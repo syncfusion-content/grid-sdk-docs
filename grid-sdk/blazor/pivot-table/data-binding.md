@@ -2,7 +2,7 @@
 layout: post
 title: Data Binding in Blazor Pivot Table | Syncfusion
 description: Learn how the Blazor Pivot Table binds to local JSON, remote services, and custom data sources via PivotViewDataSourceSettings with CRUD-enabled adaptors.
-platform: Blazor
+platform: grid-sdk
 control: Pivot Table
 documentation: ug
 ---
@@ -1324,8 +1324,8 @@ The load event provides the following parameters:
 
 ## See also
 
-* [Aggregation](https://blazor.syncfusion.com/documentation/pivot-table/aggregation)
-* [Server Side Pivot Engine](https://blazor.syncfusion.com/documentation/pivot-table/server-side-pivot-engine)
-* [How to convert complex data to flat data and assign it to the Blazor Pivot Table](https://blazor.syncfusion.com/documentation/pivot-table/how-to/bind-complex-data-to-the-pivot-table)
+* [Aggregation](https://help.syncfusion.com/grid-sdk/blazor/pivot-table/aggregation)
+* [Server Side Pivot Engine](https://help.syncfusion.com/grid-sdk/blazor/pivot-table/server-side-pivot-engine)
+* [How to convert complex data to flat data and assign it to the Blazor Pivot Table](https://help.syncfusion.com/grid-sdk/blazor/pivot-table/how-to/bind-complex-data-to-the-pivot-table)
 
 N> You can also explore our [Blazor Pivot Table example](https://blazor.syncfusion.com/demos/pivot-table/default-functionalities?theme=fluent2) to know how to render and configure the pivot table.

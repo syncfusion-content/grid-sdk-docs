@@ -25,7 +25,7 @@ By default, custom toolbar items are positioned on the `left`. You can change th
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/treegrid/edit-toolbar-cs36" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/edit-toolbar-cs36" %}
 
 > * The [`toolbar`](https://ej2.syncfusion.com/angular/documentation/api/treegrid#toolbar) property can include both built-in and custom items.
 > * If a toolbar item does not match a built-in item, it is treated as a custom toolbar item.
@@ -46,4 +46,4 @@ In the example below, `ExpandAll` and `CollapseAll` are built-in toolbar items, 
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/treegrid/edit-toolbar-cs37" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/edit-toolbar-cs37" %}

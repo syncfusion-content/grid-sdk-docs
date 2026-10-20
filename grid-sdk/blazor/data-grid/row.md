@@ -413,11 +413,11 @@ public class OrderData
 
 > The `RowHeight` property sets the height for all Grid rows. It does not configure individual cell heights.
 > The `RowHeight` setting applies to header and footer rows as well.
-> Row height for a specific row can be customized by adding a row-level CSS class in the [RowDataBound](https://blazor.syncfusion.com/documentation/datagrid/events#rowdatabound) event.
+> Row height for a specific row can be customized by adding a row-level CSS class in the [RowDataBound](https://help.syncfusion.com/grid-sdk/blazor/data-grid/events#rowdatabound) event.
 
 ### Customize row height for particular row
 
-Customize the row height for a specific row when a single record needs additional space or emphasis. Use the [RowHeight](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.SfGrid-1.html#Syncfusion_Blazor_Grids_SfGrid_1_RowHeight) property in combination with the [RowDataBound](https://blazor.syncfusion.com/documentation/datagrid/events#rowdatabound) event to apply a CSS class conditionally.
+Customize the row height for a specific row when a single record needs additional space or emphasis. Use the [RowHeight](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.SfGrid-1.html#Syncfusion_Blazor_Grids_SfGrid_1_RowHeight) property in combination with the [RowDataBound](https://help.syncfusion.com/grid-sdk/blazor/data-grid/events#rowdatabound) event to apply a CSS class conditionally.
 
 {% tabs %}
 {% highlight razor tabtitle="Index.razor" %}

@@ -38,6 +38,11 @@ var button4 = new ej.buttons.Button({
 });
 button4.appendTo('#Updatecell');
 
+var button5 = new ej.buttons.Button({
+    content: 'Bulk save',
+});
+button5.appendTo('#save');
+
 document.getElementById('Edit').onclick = function () {
     grid.startEdit();
 };
@@ -58,6 +63,9 @@ document.getElementById('Updaterow').onclick = function () {
 };
 document.getElementById('Updatecell').onclick = function () {
     grid.setCellValue((grid.currentViewData[0]).OrderID, 'CustomerID', 'Value Changed');
+};
+document.getElementById('save').onclick = function () {
+    grid.saveBulkChanges({ShipName: 'Island Trading', ShipCity: 'Tokyo'}, grid.getCurrentViewRecords().slice(0,3), () => { grid.refresh(); });
 };
 
 function generateCustomerId() {

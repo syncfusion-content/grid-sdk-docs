@@ -2,7 +2,7 @@
 layout: post
 title: Filtering in Blazor Pivot Table | Syncfusion
 description: Learn how the Blazor Pivot Table applies member, label, and value filtering via the field list, the grouping bar, or PivotViewFilterSettings.
-platform: Blazor
+platform: grid-sdk
 control: Pivot Table
 documentation: ug
 ---

@@ -2,7 +2,7 @@
 layout: post
 title: Drill Through in Blazor Pivot Table | Syncfusion
 description: Learn how the Blazor Pivot Table shows the raw, unaggregated records behind any aggregated value cell in a separate data grid when AllowDrillThrough is true.
-platform: Blazor
+platform: grid-sdk
 control: Pivot Table
 documentation: ug
 ---

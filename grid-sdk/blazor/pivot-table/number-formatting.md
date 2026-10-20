@@ -2,7 +2,7 @@
 layout: post
 title: Number Formatting in Blazor Pivot Table | Syncfusion
 description: Learn how the Blazor Pivot Table formats numeric values as Number, Currency, Percentage, or custom patterns via PivotViewFormatSettings applied per field.
-platform: Blazor
+platform: grid-sdk
 control: Pivot Table
 documentation: ug
 ---

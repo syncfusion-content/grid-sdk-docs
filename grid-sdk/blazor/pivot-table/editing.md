@@ -2,7 +2,7 @@
 layout: post
 title: Editing in Blazor Pivot Table | Syncfusion
 description: Learn how the Blazor Pivot Table enables CRUD editing of value cells in a data grid popup with add, edit, delete, dialog, batch, and inline modes.
-platform: Blazor
+platform: grid-sdk
 control: Pivot Table
 documentation: ug
 ---

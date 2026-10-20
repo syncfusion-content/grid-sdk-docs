@@ -26,7 +26,7 @@ Rendering large collections in the Blazor DataGrid can impact performance becaus
 
 ### Optimizing performance with paging 
 
-[Paging](https://blazor.syncfusion.com/documentation/datagrid/paging) divides large collections into smaller, manageable segments, reducing the number of rows rendered at once. This approach improves initial load time and enhances overall responsiveness.
+[Paging](https://help.syncfusion.com/grid-sdk/blazor/data-grid/paging) divides large collections into smaller, manageable segments, reducing the number of rows rendered at once. This approach improves initial load time and enhances overall responsiveness.
 
 * **Enable paging in the Blazor DataGrid**
 
@@ -36,7 +36,7 @@ Rendering large collections in the Blazor DataGrid can impact performance becaus
 
     `Paging` works seamlessly with **grouping**, **sorting**, and **editing**, ensuring consistent functionality while improving performance.
 
-For detailed implementation, refer to the paging [documentation](https://blazor.syncfusion.com/documentation/datagrid/paging).
+For detailed implementation, refer to the paging [documentation](https://help.syncfusion.com/grid-sdk/blazor/data-grid/paging).
 
 ### Optimizing performance with row virtualization or infinite scrolling
 
@@ -46,23 +46,23 @@ Rendering large collections in a single view can significantly impact performanc
 
 Virtualization renders only the rows visible within the viewport instead of the entire collection. This approach minimizes DOM elements and improves responsiveness.
 
-For more information on implementing row virtualization, refer to the [documentation](https://blazor.syncfusion.com/documentation/datagrid/virtualization).
+For more information on implementing row virtualization, refer to the [documentation](https://help.syncfusion.com/grid-sdk/blazor/data-grid/virtual-scrolling#row-virtualization).
 
 **2. Infinite scrolling**
 
 Infinite scrolling loads additional data blocks as the user scrolls vertically. This **“load-on-demand”** approach prevents rendering all rows at once and ensures smooth scrolling.
 
-For more information on implementing infinite scrolling, refer to the [documentation](https://blazor.syncfusion.com/documentation/datagrid/infinite-scrolling).
+For more information on implementing infinite scrolling, refer to the [documentation](https://help.syncfusion.com/grid-sdk/blazor/data-grid/infinite-scrolling).
 
 Both techniques are effective for handling large collections without compromising performance.
 
 ### Optimizing performance with column virtualization in large no of columns
 
-[Column virtualization](https://blazor.syncfusion.com/documentation/datagrid/virtualization#column-virtualization) in the Blazor DataGrid optimizes rendering by displaying only the columns currently visible within the viewport. Additional columns are loaded dynamically as the user scrolls horizontally. This approach significantly reduces initial load time and improves responsiveness when working with grids that contain a large number of columns.
+[Column virtualization](https://help.syncfusion.com/grid-sdk/blazor/data-grid/virtual-scrolling#column-virtualization) in the Blazor DataGrid optimizes rendering by displaying only the columns currently visible within the viewport. Additional columns are loaded dynamically as the user scrolls horizontally. This approach significantly reduces initial load time and improves responsiveness when working with grids that contain a large number of columns.
 
 Both **row** and **column** virtualization can be enabled together to handle large collections efficiently. This combination ensures that only visible rows and columns are rendered, minimizing DOM elements and enhancing overall performance.
 
-For more information on implementing column virtualization, refer to the [documentation](https://blazor.syncfusion.com/documentation/datagrid/virtualization#column-virtualization).
+For more information on implementing column virtualization, refer to the [documentation](https://help.syncfusion.com/grid-sdk/blazor/data-grid/virtual-scrolling#column-virtualization).
 
 ### How to overcome browser height limitation in virtual scrolling
 
@@ -82,9 +82,9 @@ This limitation is a browser constraint, not specific to the Blazor DataGrid. It
 
 * **Use paging instead of virtual scrolling**
 
-    [Paging](https://blazor.syncfusion.com/documentation/datagrid/paging) loads data on demand and avoids height limitations while maintaining compatibility with features such as **Grouping** and **Editing**, **Sorting**, and **Filtering**.
+    [Paging](https://help.syncfusion.com/grid-sdk/blazor/data-grid/paging) loads data on demand and avoids height limitations while maintaining compatibility with features such as **Grouping** and **Editing**, **Sorting**, and **Filtering**.
 
-For more details, refer to the paging [documentation](https://blazor.syncfusion.com/documentation/datagrid/paging) and the virtual scrolling [documentation](https://blazor.syncfusion.com/documentation/datagrid/virtual-scrolling).
+For more details, refer to the paging [documentation](https://help.syncfusion.com/grid-sdk/blazor/data-grid/paging) and the virtual scrolling [documentation](https://help.syncfusion.com/grid-sdk/blazor/data-grid/virtual-scrolling).
 
 ### Preventing connection errors when persistence is enabled
 
@@ -105,11 +105,11 @@ The Blazor DataGrid can be optimized for efficient rendering in Blazor WebAssemb
 
 **Recommended Practices**
 
-1. [Avoid unnecessary component renders](https://blazor.syncfusion.com/documentation/datagrid/webassembly-performance#avoid-unnecessary-component-renders)
+1. [Avoid unnecessary component renders](https://help.syncfusion.com/grid-sdk/blazor/data-grid/webassembly-performance#avoid-unnecessary-component-renders)
 
     * Prevent redundant rendering operations to improve performance.
 
-2. [Avoid unnecessary component renders after grid events](https://blazor.syncfusion.com/documentation/datagrid/webassembly-performance#avoid-unnecessary-component-renders-after-grid-events)
+2. [Avoid unnecessary component renders after grid events](https://help.syncfusion.com/grid-sdk/blazor/data-grid/webassembly-performance#avoid-unnecessary-component-renders-after-blazor-datagrid-events)
 
     * Ensure grid events do not trigger unnecessary re-renders.
 
@@ -131,8 +131,8 @@ When binding data from a service to the Blazor DataGrid, consider the following 
 
 For detailed guidance, refer to:
 
-* [Custom Binding](https://blazor.syncfusion.com/documentation/datagrid/connecting-to-adaptors/custom-adaptor)
-* [Injecting Service into CustomAdaptor](https://blazor.syncfusion.com/documentation/datagrid/connecting-to-adaptors/custom-adaptor#inject-service-into-custom-adaptor)
+* [Custom Binding](https://help.syncfusion.com/grid-sdk/blazor/data-grid/connecting-to-adaptors/custom-adaptor)
+* [Injecting Service into CustomAdaptor](https://help.syncfusion.com/grid-sdk/blazor/data-grid/connecting-to-adaptors/custom-adaptor#inject-service-into-custom-adaptor)
 
 ## How to improve loading performance by referring individual script and CSS
 
@@ -142,8 +142,8 @@ The consolidated package includes resources for all Blazor components, which inc
 
 For more details, refer to:
 
-* [Install Blazor Grid NuGet Package](https://blazor.syncfusion.com/documentation/datagrid/getting-started-with-web-app#install-syncfusion-blazor-grid-and-themes-nuget-in-the-blazor-web-app)
-* [Add Stylesheet and Script Resources](https://blazor.syncfusion.com/documentation/datagrid/getting-started-with-web-app#add-stylesheet-and-script-resources)
+* [Install Blazor Grid NuGet Package](https://help.syncfusion.com/grid-sdk/blazor/data-grid/getting-started-with-web-app#install-the-required-blazor-packages)
+* [Add Stylesheet and Script Resources](https://help.syncfusion.com/grid-sdk/blazor/data-grid/getting-started-with-web-app#add-stylesheet-and-script-resources)
 
 ## How to update cell values without frequent server calls 
 
@@ -167,7 +167,7 @@ public async Task OnClick()
 
 ## How to optimize server-side data operations with adaptors
 
-The Blazor DataGrid supports multiple adaptors such as [OData](https://blazor.syncfusion.com/documentation/datagrid/data-binding/remote-data#binding-with-odata-services), [ODataV4](https://blazor.syncfusion.com/documentation/datagrid/connecting-to-adaptors/odatav4-adaptor), [WebAPI](https://blazor.syncfusion.com/documentation/datagrid/connecting-to-adaptors/web-api-adaptor), and [URL](https://blazor.syncfusion.com/documentation/datagrid/connecting-to-adaptors/url-adaptor) for performing server-side data operations and CRUD actions. These adaptors work with the [SfDataManager](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Data.SfDataManager.html) component to bind remote data sources and execute operations efficiently.
+The Blazor DataGrid supports multiple adaptors such as [OData](https://help.syncfusion.com/grid-sdk/blazor/data-grid/data-binding/remote-data#binding-with-odata-services), [ODataV4](https://help.syncfusion.com/grid-sdk/blazor/data-grid/connecting-to-adaptors/odatav4-adaptor), [WebAPI](https://help.syncfusion.com/grid-sdk/blazor/data-grid/connecting-to-adaptors/web-api-adaptor), and [URL](https://help.syncfusion.com/grid-sdk/blazor/data-grid/connecting-to-adaptors/url-adaptor) for performing server-side data operations and CRUD actions. These adaptors work with the [SfDataManager](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Data.SfDataManager.html) component to bind remote data sources and execute operations efficiently.
 
 During actions like **filtering**, **sorting**, **paging**, and **grouping**, the Blazor Grid generates queries based on the adaptor configuration. The application must process these queries and return the appropriate data to the Blazor Grid. For optimal performance, handle operations in the following order:
 
@@ -177,11 +177,11 @@ During actions like **filtering**, **sorting**, **paging**, and **grouping**, th
 * Paging
 * Grouping
 
-For more details, refer to the [Remote Data Binding](https://blazor.syncfusion.com/documentation/datagrid/data-binding/remote-data) documentation.
+For more details, refer to the [Remote Data Binding](https://help.syncfusion.com/grid-sdk/blazor/data-grid/data-binding/remote-data) documentation.
 
 ## Strategic approaches to addressing latency challenges
 
-When using dialog-oriented features such as [Filtering](https://blazor.syncfusion.com/documentation/datagrid/filtering) or [Dialog Editing](https://blazor.syncfusion.com/documentation/datagrid/dialog-editing), client-to-server communication can introduce delays if the server is hosted in a distant region. Increased network latency impacts responsiveness and overall performance.
+When using dialog-oriented features such as [Filtering](https://help.syncfusion.com/grid-sdk/blazor/data-grid/filtering) or [Dialog Editing](https://help.syncfusion.com/grid-sdk/blazor/data-grid/dialog-editing), client-to-server communication can introduce delays if the server is hosted in a distant region. Increased network latency impacts responsiveness and overall performance.
 
 **Recommended Solution**
 
@@ -197,4 +197,4 @@ Microsoft Excel supports a maximum of 1,048,576 rows per worksheet. Exporting mi
 
 For large datasets, use alternative formats such as **CSV** (Comma-Separated Values) or other file types that can handle extensive data efficiently.
 
-For more details, refer to the documentation:[ Excel Specifications and Limits](https://support.microsoft.com/en-gb/office/excel-specifications-and-limits-1672b34d-7043-467e-8e27-269d656771c3)
+For more details, refer to the documentation:[ Excel Specifications and Limits](https://support.microsoft.com/en-gb/excel/excel-specifications-and-limits)

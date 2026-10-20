@@ -1,10 +1,9 @@
 ---
 layout: post
-title: Template Editing in ASP.NET Core Grid Component
-description: Learn here all about Template Editing in Syncfusion ASP.NET Core Grid component of Syncfusion Essential JS 2 and more.
+title: Template Editing in ASP.NET Core Grid Control | Syncfusion
+description: Learn here all about Template Editing in Syncfusion ASP.NET Core Grid control of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Template Editing
-publishingplatform: grid-sdk
 documentation: ug
 ---
 
@@ -54,7 +53,7 @@ In the following sample, grid enabled with dialog template editing.
 
 You can enhance the customization of your grid's edit forms by utilizing template contexts, such as accessing row details inside template, rendering editors as components, getting values from editors, setting focus to editors, and disabling default form validation, and adding custom validation. These features are applicable in both **inline** and **dialog** editing modes.
 
-The following template context topics are demonstrated through a practical example in the [Render tab component inside the dialog template](https://ej2.syncfusion.com/aspnetcore/documentation/grid/editing/template-editing#render-tab-component-inside-the-dialog-template) topic.
+The following template context topics are demonstrated through a practical example in the [Render tab component inside the dialog template](https://help.syncfusion.com/grid-sdk/asp-net-core/data-grid/editing/template-editing#render-tab-control-inside-the-dialog-template) topic.
 
 ### Access row details inside template using template context
 

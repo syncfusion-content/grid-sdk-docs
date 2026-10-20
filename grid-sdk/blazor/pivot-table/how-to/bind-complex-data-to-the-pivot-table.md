@@ -2,7 +2,7 @@
 layout: post
 title: How to bind complex data in Blazor Pivot Table | Syncfusion
 description: Step-by-step example showing how to bind complex data in the Blazor Pivot Table by flattening nested objects into a flat structure with ExpandoObject.
-platform: Blazor
+platform: grid-sdk
 control: Pivot Table
 documentation: ug
 ---

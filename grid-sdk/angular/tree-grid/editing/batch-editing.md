@@ -27,7 +27,7 @@ Example to enable batch editing:
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/treegrid/batch-edit-cs1" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/batch-edit-cs1" %}
 
 ## Automatically update a column based on another column's edited value
 
@@ -42,7 +42,7 @@ You can update the value of a column dynamically based on the edited value of an
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/treegrid/batch-edit-cs2" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/batch-edit-cs2" %}
 
 ## Cancel edit based on a condition
 
@@ -57,7 +57,7 @@ The TreeGrid supports conditional cancelation of CRUD operations (Edit, Add, Del
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/treegrid/batch-edit-cs3" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/batch-edit-cs3" %}
 
 ## Confirmation dialog
 
@@ -78,7 +78,7 @@ Example to toggle the confirmation dialog:
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/treegrid/batch-edit-cs4" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/batch-edit-cs4" %}
 
 ## Enable editing by single click and arrow keys
 
@@ -99,7 +99,7 @@ Example for single-click editing and arrow key navigation:
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/treegrid/batch-edit-cs5" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/batch-edit-cs5" %}
 
 ## Disable editing for specific cells
 
@@ -116,7 +116,7 @@ Example for disabling editing for specific values:
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/treegrid/batch-edit-cs6" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/batch-edit-cs6" %}
 
 ## Immediate save/update in batch mode
 
@@ -135,7 +135,7 @@ Example to save or update changes immediately:
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/treegrid/batch-edit-cs7" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/batch-edit-cs7" %}
 
 ## Save all batch changes programmatically
 
@@ -152,5 +152,5 @@ Example for programmatic save:
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/treegrid/batch-edit-cs8" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/batch-edit-cs8" %}
 

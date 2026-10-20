@@ -8,9 +8,9 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# How to customize number, date, time values in Angular Pivot Table
+# How to customize number and date values in Pivot Table
 
-You can format the number, date, and time values for each field using the [`formatSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/datasourcesettings#formatsettings) option under [`dataSourceSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/datasourcesettings). This configuration is applied during component initialization to ensure consistent data presentation across the pivot view.
+You can format the number, date, and time values for each field using the [`formatSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/datasourcesettings#formatsettings) option under [`dataSourceSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/datasourcesettings). This configuration is applied during component initialization to ensure consistent data presentation across the pivot table.
 
 ## Number formatting
 

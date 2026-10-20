@@ -28,7 +28,7 @@ Excel export enables the inclusion of hidden columns from the TreeGrid in the ex
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/treegrid/excel-export-cs4" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/excel-export-cs4" %}
 
 ### Show or hide columns in exported Excel
 
@@ -50,7 +50,7 @@ In the following example, the `Duration` column is hidden in the TreeGrid. While
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/treegrid/excel-export-cs5" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/excel-export-cs5" %}
 
 ### File name for the exported document
 
@@ -66,7 +66,7 @@ Assign a specific file name to the exported document by defining the `fileName` 
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/treegrid/excel-export-cs6" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/excel-export-cs6" %}
 
 ### Exporting selected data only
 
@@ -96,4 +96,4 @@ The following example demonstrates how to export the selected records to a Excel
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/treegrid/refresh-cs9" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/refresh-cs9" %}

@@ -24,7 +24,7 @@ PDF export provides an option to export only the current page to a PDF document.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/treegrid/pdf-export-cs4" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/pdf-export-cs4" %}
 
 ## Export selected records only
 
@@ -42,7 +42,7 @@ In the following demo, the selected records are retrieved using the [`getSelecte
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/treegrid/pdf-export-cs5" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/pdf-export-cs5" %}
 
 ## Export hidden columns
 
@@ -58,7 +58,7 @@ PDF export provides an option to include hidden columns in the exported PDF by s
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/treegrid/pdf-export-cs6" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/pdf-export-cs6" %}
 
 ## Show or hide columns in exported PDF
 
@@ -80,7 +80,7 @@ In the example below, the `Duration` column is hidden in the TreeGrid. While exp
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/treegrid/pdf-export-cs7" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/pdf-export-cs7" %}
 
 ## Change page orientation
 
@@ -96,7 +96,7 @@ You can change the page orientation of the exported PDF to Landscape (the defaul
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/treegrid/pdf-export-cs8" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/pdf-export-cs8" %}
 
 ## Change page size
 
@@ -140,7 +140,7 @@ The page size of the exported PDF document can be customized using the `exportPr
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/treegrid/pdf-export-cs9" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/pdf-export-cs9" %}
 
 ## PDF export customization
 
@@ -160,7 +160,7 @@ You can specify the file name for the exported document by setting the `fileName
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/treegrid/pdf-export-cs10" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/pdf-export-cs10" %}
 
 ### Default fonts for PDF exporting
 
@@ -205,6 +205,6 @@ In the following example, the Advent Pro font is used to export the TreeGrid wit
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/treegrid/pdf-export-cs11" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/pdf-export-cs11" %}
 
 > `PdfTrueTypeFont` accepts the base64 format of the custom font.

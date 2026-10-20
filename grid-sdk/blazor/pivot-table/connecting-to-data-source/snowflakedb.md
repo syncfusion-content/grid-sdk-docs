@@ -3,7 +3,7 @@ layout: post
 title: "Snowflake Data Binding in Blazor Pivot Table | Syncfusion"
 component: "Pivot Table"
 description: "Learn how to connect the Blazor Pivot Table to a Snowflake database using the Snowflake.Data NuGet package, either directly or through a Web API service."
-platform: Blazor
+platform: grid-sdk
 documentation: ug
 ---
 

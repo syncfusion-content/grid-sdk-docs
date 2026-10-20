@@ -272,8 +272,6 @@ This option lets users easily adjust the PDF layout to fit their specific needs 
 
 You can adjust the size of the exported PDF document by setting the [`height`](https://ej2.syncfusion.com/documentation/api/pivotview/beforeExportEventArgs#height) and [`width`](https://ej2.syncfusion.com/documentation/api/pivotview/beforeExportEventArgs#width) options in the [`beforeExport`](https://ej2.syncfusion.com/documentation/api/pivotview/index-default#beforeexport) event. This allows you to specify the dimensions of the PDF before creating it.
 
-> Note: This option is available only when [`enableVirtualization`](https://ej2.syncfusion.com/documentation/api/pivotview/index-default#enablevirtualization) is set to **true**. Also, make sure that both the `VirtualScroll` and `PDFExport` modules are added to the Pivot Table.
-
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/grid-sdk/typescript/pivot-table/pdf-export-cs31/index.ts %}
@@ -288,8 +286,6 @@ You can adjust the size of the exported PDF document by setting the [`height`](h
 ### Customize the table column count while exporting
 
 Users can control how many Pivot Table columns appear on each page of the exported PDF by setting the [`columnSize`](https://ej2.syncfusion.com/documentation/api/pivotview/beforeExportEventArgs#columnsize) option in the [`beforeExport`](https://ej2.syncfusion.com/documentation/api/pivotview/index-default#beforeexport) event. This allows users to split Pivot Table columns across multiple pages when exporting large tables to PDF, making the output easier to read.
-
-> Note: This option works only when [`enableVirtualization`](https://ej2.syncfusion.com/documentation/api/pivotview/index-default#enablevirtualization) is enabled in the Pivot Table settings. Also, make sure that both `VirtualScroll` and `PDFExport` modules are injected into the Pivot Table.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}

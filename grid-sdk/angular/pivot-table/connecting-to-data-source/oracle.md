@@ -207,4 +207,4 @@ export class AppComponent implements OnInit {
 ![Pivot Table bound with Oracle database](../images/oracle-data-binding.png)
 
 ### Additional Resources
-Explore a complete example of the Angular Pivot Table integrated with an ASP.NET Core Web Application to fetch data from an Oracle database in this [GitHub](https://github.com/SyncfusionExamples/how-to-bind-Oracle-database-to-pivot-table) repository.
+For a complete example of the Angular Pivot Table integrated with an ASP.NET Core Web Application that fetches data from an Oracle database, see this [GitHub](https://github.com/SyncfusionExamples/how-to-bind-Oracle-database-to-pivot-table) repository.

@@ -2,7 +2,7 @@
 layout: post
 title: Tooltip in Blazor Pivot Table | Syncfusion
 description: Learn how the Blazor Pivot Table shows contextual tooltips on value cells, including row and column header information, controlled by the ShowTooltip property.
-platform: Blazor
+platform: grid-sdk
 control: Pivot Table
 documentation: ug
 ---

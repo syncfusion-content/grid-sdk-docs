@@ -465,7 +465,7 @@ Run the application to display the Blazor DataGrid with localized content and fo
 
 **Step 1: Complete Initial Localization Setup**
 
-Complete **steps 1** through **5** from the [Switching Localization](https://blazor.syncfusion.com/documentation/datagrid/global-local#switch-the-different-localization) guide to set up the Blazor Web App, install NuGet packages, register services, and include theme resources.
+Complete **steps 1** through **5** from the [Switching Localization](https://help.syncfusion.com/grid-sdk/blazor/data-grid/global-local#switch-the-different-localization) guide to set up the Blazor Web App, install NuGet packages, register services, and include theme resources.
 
 **Step 2: Configure ~/Program.cs**
 

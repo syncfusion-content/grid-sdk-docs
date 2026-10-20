@@ -521,7 +521,7 @@ The [FilterTemplate](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Gri
 
 The Blazor DataGrid supports integration of the following specialized components within the filter bar:
 
-* [DatePicker](https://blazor.syncfusion.com/documentation/datepicker/getting-started) - For date-based filtering
+* [DatePicker](https://help.syncfusion.com/scheduler-sdk/blazor/date-picker/getting-started) - For date-based filtering
 * [NumericTextBox](https://blazor.syncfusion.com/documentation/numeric-textbox/getting-started) - For numeric value filtering  
 * [ComboBox](https://blazor.syncfusion.com/documentation/combobox/getting-started-with-web-app) - For predefined selection filtering
 * [MultiSelect Dropdown](https://blazor.syncfusion.com/documentation/multiselect-dropdown/getting-started-webapp) - For multi-value filtering

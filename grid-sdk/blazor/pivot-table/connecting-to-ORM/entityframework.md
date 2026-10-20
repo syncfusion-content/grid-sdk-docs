@@ -2,14 +2,14 @@
 layout: post
 title: Entity Framework in Blazor Pivot Table | Syncfusion
 description: Learn how to connect the Blazor Pivot Table to SQL Server with Entity Framework Core for strongly typed models and a maintainable DbContext-based data layer.
-platform: Blazor
+platform: grid-sdk
 control: Pivot Table
 documentation: ug
 ---
 
 # Entity Framework in Blazor Pivot Table
 
-The [Blazor Pivot Table](https://www.syncfusion.com/blazor-components/blazor-pivottable) can be connected to a Microsoft SQL Server database using Entity Framework Core. This approach provides a clean and maintainable data-access layer for Blazor applications while keeping the Pivot Table integration simple and scalable.
+The [Blazor Pivot Table](https://www.syncfusion.com/blazor-components/blazor-pivot-table) can be connected to a Microsoft SQL Server database using Entity Framework Core. This approach provides a clean and maintainable data-access layer for Blazor applications while keeping the Pivot Table integration simple and scalable.
 
 **What is Entity Framework Core?**
 
@@ -590,7 +590,7 @@ The Home component has been updated successfully with the Pivot Table.
 - The `BeginDrillThrough` event is essential for CRUD because it marks `OrderID` as the primary key of the edit dialog grid so update and delete operations can target the correct record.
 - The field arrangement in `PivotViewDataSourceSettings` defines the default layout that the Pivot Table uses when it first renders.
 
-Pivot Table editing applies to relational data sources. Double-click a value cell to open its drill-through grid; use that grid's Add, Edit, Delete, Update, and Cancel commands. See [Editing in the Blazor Pivot Table](https://blazor.syncfusion.com/documentation/pivot-table/editing) for supported modes and limitations.
+Pivot Table editing applies to relational data sources. Double-click a value cell to open its drill-through grid; use that grid's Add, Edit, Delete, Update, and Cancel commands. See [Editing in the Blazor Pivot Table](https://help.syncfusion.com/grid-sdk/blazor/pivot-table/editing) for supported modes and limitations.
 
 **Component explanation**
 
@@ -876,7 +876,7 @@ This step is required so the URL Adaptor knows which column to send as the key f
 
 ## Complete Sample Repository
 
-A complete sample implementation is available in the [GitHub repository](https://github.com/SyncfusionExamples/syncfusion-blazor-pivot-table-entity-framework-multi-database-binding-sample/tree/master). Verify package versions in the repository before comparing it with this article.
+A complete sample implementation is available in the [GitHub repository](https://github.com/SyncfusionExamples/syncfusion-blazor-pivot-table-entity-framework/tree/master). Verify package versions in the repository before comparing it with this article.
 
 ## Summary
 

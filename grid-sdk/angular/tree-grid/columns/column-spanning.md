@@ -23,7 +23,7 @@ In the following example, Employee **Davolio** is scheduled for analysis from "9
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/treegrid/spanning-cs1" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/spanning-cs1" %}
 
 ## Change the border color while column spanning
 
@@ -38,7 +38,7 @@ The border color for the spanned cells can be changed by using the [queryCellInf
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/treegrid/spanning-cs2" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/spanning-cs2" %}
 
 ## Limitations
 
@@ -66,7 +66,7 @@ The column spanning feature in the Syncfusion Angular TreeGrid can be enabled us
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/treegrid/spanning-cs3" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/spanning-cs3" %}
 
 > In the sample, column spanning is disabled at the column level for the price based columns such as "Planned Budget" and "Actual Spend" by setting each column's `enableColumnSpan` property to **false**.
 

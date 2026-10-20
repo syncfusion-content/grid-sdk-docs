@@ -37,8 +37,6 @@ The following table lists the built-in toolbar options and their actions:
 
 > The order of toolbar options can be changed by simply moving the position of items in the **ToolbarItems** collection. Also if end user wants to remove any toolbar option from getting displayed, it can be simply ignored from adding into the **ToolbarItems** collection.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/toolbar/toolbar/tagHelper %}
@@ -48,20 +46,6 @@ The following table lists the built-in toolbar options and their actions:
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/toolbar/toolbar/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Toolbar.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/toolbar/toolbar/Toolbar.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
-
 ![Pivot table toolbar](images/toolbar.png)
 
 ## Show desired chart types in the dropdown menu
@@ -70,9 +54,7 @@ By default, the dropdown menu in the toolbar displays all available chart types.
 
 For example, if you want the dropdown menu to show only the Column, Bar, Line, and Area chart types, you can set the [`chartTypes`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_ChartTypes) property to include these specific options. This makes the pivot chart easier to use by limiting the choices to those most relevant for your data.
 
-To learn more about the supported chart types, see the [Pivot Chart documentation](https://ej2.syncfusion.com/aspnetcore/documentation/pivot-table/pivot-chart#chart-types).
-
-{% if page.publishingplatform == "aspnet-core" %}
+To learn more about the supported chart types, see the [Pivot Chart documentation](https://help.syncfusion.com/grid-sdk/asp-net-core/pivot-table/pivot-chart#chart-types).
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -83,25 +65,11 @@ To learn more about the supported chart types, see the [Pivot Chart documentatio
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/toolbar/toolbar-charttypes/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Toolbar.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/toolbar/toolbar-charttypes/Toolbar.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
-
 ![Chart type dropdown options](images/charttype-property.png)
 
 ## Switch the chart to multiple axes
 
-In the pivot chart, users can switch between a single axis and multiple axes using a built-in checkbox located in the chart type dropdown menu on the toolbar. This option allows users to display data on multiple axes for better visualization. For more details, [refer here](https://ej2.syncfusion.com/aspnetcore/documentation/pivot-table/pivot-chart#multiple-axis).
+In the pivot chart, users can switch between a single axis and multiple axes using a built-in checkbox located in the chart type dropdown menu on the toolbar. This option allows users to display data on multiple axes for better visualization. For more details, [refer here](https://help.syncfusion.com/grid-sdk/asp-net-core/pivot-table/pivot-chart#multiple-axis).
 
 ![Switching to multiple axes](images/chart-option.png)
 
@@ -121,8 +89,6 @@ You can add new items to the toolbar in the ASP.NET Core Pivot Table component b
 
 Here’s an example of how to add a custom toolbar item:
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/toolbar/toolbar-customize/tagHelper %}
@@ -132,20 +98,6 @@ Here’s an example of how to add a custom toolbar item:
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/toolbar/toolbar-customize/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="ToolbarCustomize.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/toolbar/toolbar-customize/ToolbarCustomize.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
-
 ![Custom toolbar item example](images/add-custom-toolbar.png)
 
 ### Toolbar Template
@@ -153,8 +105,6 @@ Here’s an example of how to add a custom toolbar item:
 You can customize the entire toolbar panel by using the [`toolbarTemplate`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_ToolbarTemplate) property. This allows you to design the toolbar with HTML elements and include any custom control, such as buttons or dropdowns, as toolbar items. The HTML structure for the toolbar is defined separately and linked to the Pivot Table by setting the `id` of the HTML element in the [`toolbarTemplate`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_ToolbarTemplate) property.
 
 Below is an example of a custom toolbar with buttons to expand or collapse all rows in the Pivot Table:
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -165,25 +115,9 @@ Below is an example of a custom toolbar with buttons to expand or collapse all r
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/toolbar/toolbar-template/tool-temp/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="ToolbarCustomize.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/toolbar/toolbar-template/tool-temp/ToolbarCustomize.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
-
 ![Toolbar template example](images/tool-temp.png)
 
 Another option allows framing a custom toolbar item using HTML elements and including it in the toolbar panel at the desired position. Custom toolbar items can be declared as a control **instance** or element **ID** in the [`toolbar`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_Toolbar) property in the pivot table.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -193,20 +127,6 @@ Another option allows framing a custom toolbar item using HTML elements and incl
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/toolbar/toolbar-template/tool-temp-rtl/ToolbarCustomize.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/toolbar/toolbar-template/tool-temp-rtl/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="ToolbarCustomize.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/toolbar/toolbar-template/tool-temp-rtl/ToolbarCustomize.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
 
 ![Toolbar template with custom controls](images/tool-temp-rtl.png)
 
@@ -220,8 +140,6 @@ To save a report, use the `getPersistData` method to retrieve the current Pivot 
 
 The following code example shows how to save and load a Pivot Table report as a JSON file. By clicking an external "Save" button, the `saveData` method is triggered to save the current report settings as a JSON file. Similarly, clicking an external "Load" button triggers the `readBlob` method to load a JSON file and restore the report settings.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/toolbar/save-load-json/tagHelper %}
@@ -230,18 +148,6 @@ The following code example shows how to save and load a Pivot Table report as a 
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/toolbar/save-load-json/save-load-json.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/toolbar/save-load-json/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Save-load-json.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/toolbar/save-load-json/save-load-json.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 ## Save and load reports to a SQL database
 
@@ -955,7 +861,7 @@ Below points need to be considered when saving the report to SQL Server database
 * **Hyperlinks**: Option to link external facts via pivot table cells won't be saved and loaded from the database.
 * The pivot table should always load reports from the SQL database based on the data source that is currently bound to it.
 
-> In [this](https://github.com/SyncfusionExamples/Save-and-load-report-from-SQL-database-to-pivot-table) GitHub repository, you can find our ASP.NET Core Pivot Table sample and ASP.NET Core Web Application to save and load reports from SQL Server database.
+> In [this](https://github.com/SyncfusionExamples/web-Save-and-load-report-from-SQL-database-to-pivot-table) GitHub repository, you can find our ASP.NET Core Pivot Table sample and ASP.NET Core Web Application to save and load reports from SQL Server database.
 
 ## Events
 
@@ -983,8 +889,6 @@ The [`removeReport`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ
 
 The [`saveReport`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_SaveReport) event triggers when a user clicks the save report icon in the toolbar. It allows the user to save changes made to the current report. The event includes two parameters: `report`, which contains the report details, and `reportName`, which specifies the name of the saved report.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/toolbar/toolbar/tagHelper %}
@@ -994,27 +898,11 @@ The [`saveReport`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/toolbar/toolbar/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Toolbar.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/toolbar/toolbar/Toolbar.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
-
 ![output](images/toolbar.png)
 
 ### ToolbarRender
 
-The [`toolbarRender`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_ToolbarRender) event triggers when the toolbar is displayed in the Pivot Table. It includes the `customToolbar` parameter, which allows users to modify existing toolbar items or [add new toolbar items](https://ej2.syncfusion.com/aspnetcore/documentation/pivot-table/tool-bar#adding-custom-option-to-the-toolbar).
-
-{% if page.publishingplatform == "aspnet-core" %}
+The [`toolbarRender`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_ToolbarRender) event triggers when the toolbar is displayed in the Pivot Table. It includes the `customToolbar` parameter, which allows users to modify existing toolbar items or [add new toolbar items](https://help.syncfusion.com/grid-sdk/asp-net-core/pivot-table/tool-bar#adding-custom-option-to-the-toolbar).
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -1025,20 +913,6 @@ The [`toolbarRender`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.E
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/toolbar/toolbar-customize-inbuilt/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="ToolbarCustomize.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/toolbar/toolbar-customize-inbuilt/ToolbarCustomize.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
-
 ![output](images/toolbar-customize-inbuilt.png)
 
 ### BeforeExport
@@ -1046,8 +920,6 @@ The [`toolbarRender`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.E
 The Pivot Table component allows users to export data as PDF, Excel, or CSV files using the toolbar options. The [`beforeExport`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_BeforeExport) event lets users customize settings for the exported document before the export process begins. For instance, users can add a header or footer to a PDF document by setting the `header` and `footer` properties in the `pdfExportProperties` object within this event. Similarly, for Excel exports, users can define headers using the `excelExportProperties` object.
 
 Here’s an example of how to use the `beforeExport` event to customize headers and footers for both PDF and Excel exports:
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -1057,20 +929,6 @@ Here’s an example of how to use the `beforeExport` event to customize headers 
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/toolbar/toolbar-export/ToolbarExport.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/toolbar/toolbar-export/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="ToolbarExport.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/toolbar/toolbar-export/ToolbarExport.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
-
 
 ![output](images/toolbar-customize.png)
 
@@ -1102,8 +960,6 @@ The [`actionBegin`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2
 
 In the example below, the [`actionBegin`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_ActionBegin) event is used to prevent the "Add new report" and "Save current report" actions by setting `args.cancel` to **true**. This stops these specific toolbar actions from proceeding. The code demonstrates how to control toolbar interactions effectively.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/action-event/actionBegin-toolbar/tagHelper %}
@@ -1112,18 +968,6 @@ In the example below, the [`actionBegin`](https://help.syncfusion.com/cr/aspnetc
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/action-event/actionBegin-toolbar/actionBegin-aggregation.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/action-event/actionBegin-toolbar/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="ActionBegin-aggregation.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/action-event/actionBegin-toolbar/actionBegin-aggregation.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 ### ActionComplete
 
@@ -1150,8 +994,6 @@ The [`actionComplete`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.
 
 - `actionInfo`: Provides specific details about the completed action, such as the report name when adding a new report.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/action-event/actionComplete-toolbar/tagHelper %}
@@ -1160,18 +1002,6 @@ The [`actionComplete`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/action-event/actionComplete-toolbar/actionComplete-aggregation.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/action-event/actionComplete-toolbar/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="ActionComplete-aggregation.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/action-event/actionComplete-toolbar/actionComplete-aggregation.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 ### ActionFailure
 
@@ -1198,8 +1028,6 @@ The [`actionFailure`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.E
 
 - `errorInfo`: Provides details about the error that occurred for the specific user action.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/action-event/actionFailure-toolbar/tagHelper %}
@@ -1208,16 +1036,3 @@ The [`actionFailure`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.E
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/action-event/actionFailure-toolbar/actionFailure-aggregation.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/action-event/actionFailure-toolbar/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="ActionFailure-aggregation.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/action-event/actionFailure-toolbar/actionFailure-aggregation.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-

@@ -30,7 +30,7 @@ The following example demonstrates how to enable infinite scroll in the TreeGrid
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/treegrid/infinite-scroll-cs1" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/infinite-scroll-cs1" %}
 
 ## Number of blocks rendered during initial loading
 
@@ -49,7 +49,7 @@ The following an example of how you can use the `initialBlocks` property to set 
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/treegrid/infinite-scroll-cs2" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/infinite-scroll-cs2" %}
 
 ## Efficient data caching and DOM management in cache mode
 
@@ -68,7 +68,7 @@ The following example demonstrates enabling or disabling cache mode using a [Swi
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/treegrid/infinite-scroll-cs3" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/infinite-scroll-cs3" %}
 
 ## Limitations
 

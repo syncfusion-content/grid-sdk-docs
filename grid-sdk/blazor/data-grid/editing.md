@@ -112,7 +112,7 @@ public class OrderData
 
 ## Toolbar with edit option
 
-The toolbar editing feature in the Blazor DataGrid provides a [built-in toolbar](https://blazor.syncfusion.com/documentation/datagrid/toolbar-items#built-in-toolbar-item) that includes predefined items for executing editing actions. This functionality enables efficient modification of Grid data, including updating cell values, saving changes, and canceling edits.
+The toolbar editing feature in the Blazor DataGrid provides a [built-in toolbar](https://help.syncfusion.com/grid-sdk/blazor/data-grid/toolbar-items#built-in-toolbar-item) that includes predefined items for executing editing actions. This functionality enables efficient modification of Grid data, including updating cell values, saving changes, and canceling edits.
 To activate this feature, configure the [Toolbar](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.SfGrid-1.html#Syncfusion_Blazor_Grids_SfGrid_1_Toolbar) property of the Blazor Data Grid. This property defines the items displayed in the Blazor Data Table toolbar. Including items such as **Edit**, **Add**, **Delete**, **Update**, and **Cancel** within the `Toolbar` property enables the corresponding editing actions.
 
 {% tabs %}
@@ -320,7 +320,7 @@ public class OrderData
 {% previewsample "https://blazorplayground.syncfusion.com/embed/LtByjysAfpJUHTUr?appbar=false&editor=false&result=true&errorlist=false&theme=bootstrap5" %}
 
 > * When the [IsPrimaryKey](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridColumn.html#Syncfusion_Blazor_Grids_GridColumn_IsPrimaryKey) property is set to **true** for a column, editing is automatically disabled for that column.
-> * To disable editing for a specific row, use the [RowEditing](https://blazor.syncfusion.com/documentation/datagrid/events#rowediting) event.
+> * To disable editing for a specific row, use the [RowEditing](https://help.syncfusion.com/grid-sdk/blazor/data-grid/events#rowediting) event.
 > * To disable editing for a specific cell, use the [OnCellEdit](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridEvents-1.html#Syncfusion_Blazor_Grids_GridEvents_1_OnCellEdit) event. The event triggers when a cell enters edit mode during batch editing, allowing cancellation of editing for that cell based on custom conditions.
 
 ## Editing template column
@@ -582,7 +582,7 @@ public class OrderData
 
 The Blazor DataGrid supports updating boolean column values with a single click in normal editing mode. This feature streamlines the process of toggling boolean values directly within the Blazor Grid, improving interaction efficiency.
 
-This behavior can be achieved using the [column template](https://blazor.syncfusion.com/documentation/datagrid/column-template) feature. The column template allows custom UI elements, such as checkboxes, to be rendered for specific columns. By configuring the [Template](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridColumn.html#Syncfusion_Blazor_Grids_GridColumn_Template) property, a checkbox can be rendered in the desired column, and its change event can be handled to update the value with a single click.
+This behavior can be achieved using the [column template](https://help.syncfusion.com/grid-sdk/blazor/data-grid/column-template) feature. The column template allows custom UI elements, such as checkboxes, to be rendered for specific columns. By configuring the [Template](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridColumn.html#Syncfusion_Blazor_Grids_GridColumn_Template) property, a checkbox can be rendered in the desired column, and its change event can be handled to update the value with a single click.
 
 {% tabs %}
 {% highlight razor tabtitle="Index.razor" %}
@@ -748,7 +748,7 @@ In the example below, the [DropDownList](https://blazor.syncfusion.com/documenta
 
 ## Edit complex column
 
-The [EditTemplate](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridColumn.html#Syncfusion_Blazor_Grids_GridColumn_EditTemplate) feature for complex columns in the Blazor DataGrid enables customization of the editing experience when working with nested data structures. Before performing CRUD operations involving complex objects, refer to the [Complex Data Binding](https://blazor.syncfusion.com/documentation/datagrid/column-rendering#complex-data-generation) documentation.
+The [EditTemplate](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridColumn.html#Syncfusion_Blazor_Grids_GridColumn_EditTemplate) feature for complex columns in the Blazor DataGrid enables customization of the editing experience when working with nested data structures. Before performing CRUD operations involving complex objects, refer to the [Complex Data Binding](https://help.syncfusion.com/grid-sdk/blazor/data-grid/column-rendering#complex-data-generation) documentation.
 To customize the default EditForm input component, define an `EditTemplate` within the GridColumn for the complex field. Two-way binding (**@bind-Value**) can be used inside the `EditTemplate` to reflect changes in the Blazor DataGrid.
 For proper focus management and validation, the `ID` attribute of input elements inside the `EditTemplate` must match the [Field](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridColumn.html#Syncfusion_Blazor_Grids_GridColumn_Field) value of the corresponding GridColumn. When referencing complex fields, use a double underscore **(__)** instead of the dot **(.)** operator. For example, if the field is **Name.FirstName**, the `ID` should be defined as **Name__FirstName**.
 

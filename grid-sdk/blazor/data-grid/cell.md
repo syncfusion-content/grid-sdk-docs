@@ -1037,7 +1037,7 @@ public class OrdersDetails
 
 The Blazor DataGrid supports displaying custom tooltips for columns using the [SfTooltip](https://blazor.syncfusion.com/documentation/tooltip/getting-started) component. This feature enables the presentation of additional contextual information when hovering over column content.
 
-To enable custom tooltips, use the [Column Template](https://blazor.syncfusion.com/documentation/datagrid/column-template) feature and render the tooltip component within the template definition.
+To enable custom tooltips, use the [Column Template](https://help.syncfusion.com/grid-sdk/blazor/data-grid/column-template) feature and render the tooltip component within the template definition.
 
 {% tabs %}
 {% highlight razor tabtitle="Index.razor" %}

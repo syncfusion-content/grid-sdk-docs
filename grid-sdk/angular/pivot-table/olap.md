@@ -3,7 +3,7 @@ layout: post
 title: OLAP in Angular Pivot Table | Syncfusion
 description: Learn how the Angular Pivot Table connects to OLAP cube sources like SSAS with providerType, catalog, cube, and axes configuration.
 platform: ej2-angular
-control: Olap 
+control: Pivot Table
 documentation: ug
 domainurl: ##DomainURL##
 ---
@@ -12,154 +12,99 @@ domainurl: ##DomainURL##
 
 ## Getting started
 
-This section explain steps to create a simple **Pivot Table** with OLAP data source in an Angular environment.
+This section explains the steps to create a simple **Pivot Table** with an OLAP data source in an Angular environment.
 
-### Dependencies
+### Prerequisites
 
-Understanding the dependency structure helps you identify the required packages for implementing the Pivot Table component effectively in your Angular application. The Pivot Table component relies on a structured hierarchy of dependencies that provide essential functionality for data processing, user interface elements, and export capabilities.
-
-The following dependency tree shows the required packages for the Angular Pivot Table component:
-
-```javascript
-|-- @syncfusion/ej2-angular-pivotview
-    |-- @syncfusion/ej2-pivotview
-    |-- @syncfusion/ej2-base
-    |-- @syncfusion/ej2-data
-    |-- @syncfusion/ej2-excel-export
-        |-- @syncfusion/ej2-file-utils
-        |-- @syncfusion/ej2-compression
-    |-- @syncfusion/ej2-pdf-export
-        |-- @syncfusion/ej2-file-utils
-        |-- @syncfusion/ej2-compression
-    |-- @syncfusion/ej2-calendars
-    |-- @syncfusion/ej2-charts
-        |-- @syncfusion/ej2-svg-base
-    |-- @syncfusion/ej2-inputs
-    |-- @syncfusion/ej2-buttons
-    |-- @syncfusion/ej2-dropdowns
-    |-- @syncfusion/ej2-lists
-    |-- @syncfusion/ej2-popups
-    |-- @syncfusion/ej2-navigations
-    |-- @syncfusion/ej2-grids
-|-- @syncfusion/ej2-angular-base
-```
-
-The main package `@syncfusion/ej2-angular-pivotview` serves as the primary Angular wrapper for the Pivot Table component. This package automatically includes all the necessary sub-dependencies shown in the tree structure above. When you install the main package, npm will automatically resolve and install these dependencies, ensuring your Pivot Table component functions properly with all its supported operations, including data binding, user interactions, and export options.
+Ensure your development environment meets the [System Requirements for Syncfusion<sup style="font-size:70%">&reg;</sup> Angular UI Components](https://ej2.syncfusion.com/angular/documentation/system-requirement).
 
 ### Setup Angular Environment
 
-Setting up the Angular environment properly ensures smooth development and deployment of your Pivot Table application. To streamline this process, you can use the [`Angular CLI`](https://github.com/angular/angular-cli), which provides a comprehensive toolkit for Angular application development.
-
-Install Angular CLI globally on your system using the following command:
+A straightforward approach to beginning with Angular is to create a new application using the [Angular CLI](https://github.com/angular/angular-cli). Install Angular CLI globally with the following command:
 
 ```bash
 npm install -g @angular/cli
 ```
 
+> **Angular 21 Standalone Architecture:** Standalone components are the default in Angular 21. This guide uses the modern standalone architecture. If you need more information about the standalone architecture, refer to the [Standalone Guide](https://ej2.syncfusion.com/angular/documentation/getting-started/angular-standalone).
+
 ### Create an Angular Application
 
-Creating a new Angular application provides the foundation for integrating the Syncfusion Angular Pivot Table component. With Angular CLI installed, you can now generate a new project using the command below:
+With Angular CLI installed, execute this command to generate a new application:
 
 ```bash
-ng new my-app
+ng new syncfusion-angular-app
 ```
 
-This command will prompt you for a few settings for the new project, such as whether to add Angular routing and which stylesheet format to use.
-
-![Initial setup](../images/Initial-setup.png)
-
-By default, it creates a CSS-based application. Once the project is created, navigate to the project folder to begin working with your new Angular application:
+* This command will prompt you to configure settings like enabling Angular routing and choosing a stylesheet format.
 
 ```bash
-cd my-app
+
+? Which stylesheet format would you like to use? (Use arrow keys)
+> CSS             [ https://developer.mozilla.org/docs/Web/CSS                     ]
+  Sass (SCSS)     [ https://sass-lang.com/documentation/syntax#scss                ]
+  Sass (Indented) [ https://sass-lang.com/documentation/syntax#the-indented-syntax ]
+  Less            [ http://lesscss.org                                             ]
+
 ```
 
-### Adding Syncfusion<sup style="font-size:70%">&reg;</sup> PivotView package
+* By default, a CSS-based application is created. Use SCSS if required:
 
-To build interactive PivotTable in Angular, you need to install the Syncfusion<sup style="font-size:70%">&reg;</sup> PivotTable package. Syncfusion packages are available on npm as `@syncfusion` scoped packages. You can find all Syncfusion Angular packages in the npm [`registry`](https://www.npmjs.com/search?q=%40syncfusion%2Fej2-angular-).
+```bash
+ng new syncfusion-angular-app --style=scss
+```
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> offers two distinct package structures to accommodate different Angular development environments and ensure compatibility across various Angular versions:
+* During project setup, when prompted for the Server-side rendering (SSR) option, choose the appropriate configuration.
 
-1. **Ivy Library Distribution Package** - Modern format for Angular 12 and above
-2. **Angular Compatibility Compiler (ngcc) Package** - Legacy support for Angular versions below 12
+![Initial_setup](../images/SSR.png)
 
-#### Ivy library distribution package
+* Select the required AI tool or 'none' if you do not need any AI tool.
 
-The Ivy library distribution package represents the modern approach to Angular development, designed specifically for the Angular [`Ivy`](https://angular.dev/tools/libraries/creating-libraries) rendering engine. This package format offers improved performance, smaller bundle sizes, and an enhanced development experience for applications built with Angular 12 and later versions.
+![Initial_setup](../images/Ai.png)
 
-Syncfusion<sup style="font-size:70%">&reg;</sup> Angular packages (version 20.2.36 and above) utilize the Ivy distribution format to ensure full compatibility with Angular's latest rendering capabilities. To install the Ivy-compatible package, add the [`@syncfusion/ej2-angular-pivotview`](https://www.npmjs.com/package/@syncfusion/ej2-angular-pivotview/v/20.2.38) package to your application using the following command:
+* Navigate to your newly created application directory:
+
+```bash
+cd syncfusion-angular-app
+```
+
+> Note: In Angular 19 and below, it uses `app.component.ts`, `app.component.html`, `app.component.css` etc. In Angular 20+, the CLI generates a simpler structure with `src/app/app.ts`, `app.html`, and `app.css` (no `.component.` suffixes).
+
+### Adding Syncfusion<sup style="font-size:70%">&reg;</sup> Angular Pivot Table package
+
+To install the Pivot Table component, use the following command:
 
 ```bash
 npm install @syncfusion/ej2-angular-pivotview --save
 ```
 
-> The **--save** will instruct NPM to include the pivot table package inside the `dependencies` section of the `package.json`.
-
-#### Angular compatibility compiled package(ngcc)
-
-For projects using Angular versions below 12, the Angular Compatibility Compiler (ngcc) package ensures seamless integration with the legacy Angular compilation and rendering pipeline. This package maintains full functionality while supporting older Angular environments that have not yet migrated to the Ivy rendering engine.
-
-To install the ngcc-compatible package, add the [`@syncfusion/ej2-angular-pivotview@ngcc`](https://www.npmjs.com/package/@syncfusion/ej2-angular-pivotview/v/20.2.38-ngcc) package to your application:
-
-```bash
-npm install @syncfusion/ej2-angular-pivotview@ngcc --save
-```
-
-When specifying the ngcc package in your `package.json` file, include the `-ngcc` suffix with the package version as shown below:
-
-```json
-"@syncfusion/ej2-angular-pivotview": "20.2.38-ngcc"
-```
-
-> **Note**: Installing the package without the `-ngcc` suffix will automatically install the Ivy library package, which may generate compatibility warnings in Angular versions below 12.
-
-### Registering PivotView Module
-
-To use the Pivot Table in your Angular application, you need to add the `PivotViewModule` from the `@syncfusion/ej2-angular-pivotview` package to your project. Open the **src/app/app.module.ts** file and import the `PivotViewModule`. Then, include `PivotViewModule` in the imports array of your `@NgModule` decorator, as shown below:
-
-```typescript
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-// Import the PivotViewModule for the Pivot Table component
-import { PivotViewModule } from '@syncfusion/ej2-angular-pivotview';
-import { AppComponent }  from './app.component';
-
-@NgModule({
-  //declaration of ej2-angular-pivotview module into NgModule
-  imports:      [ BrowserModule, PivotViewModule ],
-  declarations: [ AppComponent ],
-  bootstrap:    [ AppComponent ]
-})
-export class AppModule { }
-```
-
 ### Adding CSS reference
 
-Adding the required CSS files ensures that your Angular Pivot Table component displays with the proper styling and visual elements. These CSS files contain the necessary styles for all dependent components to render correctly.
+Syncfusion<sup style="font-size:70%">&reg;</sup> Angular component themes can be applied using CSS or SASS from the [npm theme packages](https://ej2.syncfusion.com/angular/documentation/appearance/overview#theme-packages) — or, alternatively, via CDN, CRG, or [Theme Studio](https://ej2.syncfusion.com/angular/documentation/appearance/theme-studio). For more information, refer to the [themes documentation](https://ej2.syncfusion.com/angular/documentation/appearance/overview).
 
-The following CSS files are available in the `../node_modules/@syncfusion` package folder. Add these CSS imports to your `src/styles.css` file to apply the tailwind3 theme styling:
+This example uses the `Material 3` theme for the Pivot Table component from the theme package. To install the [Material 3](https://www.npmjs.com/package/@syncfusion/ej2-material3-theme) theme package, use the following command:
+
+{% tabs %}
+{% highlight bash tabtitle="npm" %}
+
+npm install @syncfusion/ej2-material3-theme --save
+
+{% endhighlight %}
+{% endtabs %}
+
+Add the required styles for the Pivot Table component to the `src/styles.css` file as shown below:
 
 ```css
-@import '../node_modules/@syncfusion/ej2-base/styles/tailwind3.css';
-@import '../node_modules/@syncfusion/ej2-buttons/styles/tailwind3.css';
-@import '../node_modules/@syncfusion/ej2-dropdowns/styles/tailwind3.css';
-@import '../node_modules/@syncfusion/ej2-grids/styles/tailwind3.css';
-@import '../node_modules/@syncfusion/ej2-inputs/styles/tailwind3.css';
-@import '../node_modules/@syncfusion/ej2-lists/styles/tailwind3.css';
-@import '../node_modules/@syncfusion/ej2-navigations/styles/tailwind3.css';
-@import '../node_modules/@syncfusion/ej2-popups/styles/tailwind3.css';
-@import "../node_modules/@syncfusion/ej2-splitbuttons/styles/tailwind3.css";
-@import '../node_modules/@syncfusion/ej2-calendars/styles/tailwind3.css';
-@import '../node_modules/@syncfusion/ej2-angular-pivotview/styles/tailwind3.css';
+@import '../node_modules/@syncfusion/ej2-material3-theme/styles/pivotview/index.css';
 ```
 
-> You can also refer other themes like bootstrap, fabric, high-contrast etc. To know about individual component CSS, please refer [here](../../appearance/theme).
+For using SCSS styles, refer to [this guide](https://ej2.syncfusion.com/angular/documentation/common/how-to/sass).
 
 ### Add pivot table component
 
 Setting up the Pivot Table component in your Angular application is straightforward and allows you to create powerful data analysis interfaces with minimal configuration. The component integrates seamlessly with Angular's component architecture and provides a robust foundation for data visualization.
 
-To initialize the Pivot Table component, add the following code to your `src/app/app.component.ts` file. This example demonstrates how to set up the basic component structure using the `<ejs-pivotview>` selector:
+To initialize the Pivot Table component, add the following code to your `src/app/app.ts` file. This example demonstrates how to set up the basic component structure using the `<ejs-pivotview>` selector:
 
 ```typescript
 import { Component } from '@angular/core';
@@ -174,7 +119,7 @@ export class AppComponent {
 
 ```
 
-Once the Pivot Table is added, you need to bind it to an OLAP data source. Update the `src/app/app.component.ts` file by defining the [`dataSourceSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettingsModel) property and setting it as an input to the Pivot Table component. For more details about OLAP data binding, refer to [this section](#data-binding).
+Once the Pivot Table is added, you need to bind it to an OLAP data source. Update the `src/app/app.ts` file by defining the [`dataSourceSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettingsModel) property and setting it as an input to the Pivot Table component. For more details about OLAP data binding, refer to [this section](#data-binding).
 
 ```typescript
 import { Component, OnInit } from '@angular/core';
@@ -222,16 +167,23 @@ To specify each [OLAP cube element](#olap-cube-elements) in the required axis, s
 For example, in the sample below, the element "Product Categories" is assigned to the columns axis, "Customer Geography" is assigned to the rows axis, and both "Customer Count" and "Internet Sales Amount" are set in the values axis.
 
 {% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs189/src/app.component.ts %}
+{% highlight ts tabtitle="app.ts" %}
+{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs343/src/app/app.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs189/src/main.ts %}
+{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs343/src/main.ts %}
 {% endhighlight %}
+
 {% endtabs %}
-  
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs189" %}
+
+### Run the application
+
+Use the following command to run the application:
+
+```bash
+ng serve --open
+```
 
 ### Applying formatting to a value field
 
@@ -500,28 +452,6 @@ To enable virtual scrolling, set the [`enableVirtualization`](https://ej2.syncfu
 - With OLAP data, subtotals and grand totals are shown only when measures are placed at the end of the [`rows`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/datasourcesettings#row) or [`columns`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/datasourcesettings#columns) axes within [`dataSourceSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/datasourcesettings). If measures appear elsewhere, data will display without summary totals.
 - If the width and height of the Pivot Table are set to large values, the amount of data loaded in the current, previous, and next pages increases. This may impact loading performance during scrolling.
 
-### Run the application
-
-Running the Pivot Table application allows you to see your changes and data in real time directly in the browser, making it easy to check your results.
-
-To start the application, open a command prompt in your project folder and run the following command. This will compile the project and automatically open it in your browser.
-
-```sh
-ng serve --open
-```
-
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs196/src/app.component.ts %}
-{% endhighlight %}
-
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs196/src/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-  
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs196" %}
-
 ## Data Binding
 
 To connect an OLAP data source to the Pivot Table, use the [`dataSourceSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings#datasourcesettings) property. Several options within `dataSourceSettings` must be specified to bind data correctly:
@@ -569,7 +499,7 @@ Alternatively, you can set up the measure directly in your code by configuring t
 
 #### Measures in different positions
 
-You can choose where to place measures on either the row or column axis thorough code behind or the user interface. In this example, the **measures** are set before the dimension field on the column axis. To achieve this, specify the order of the fields within the [`dataSourceSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/dataSourceSettings#datasourcesettings) property.
+You can choose where to place measures on either the row or column axis through code behind or the user interface. In this example, the **measures** are set before the dimension field on the column axis. To achieve this, specify the order of the fields within the [`dataSourceSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/datasourcesettings#datasourcesettings) property.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -798,7 +728,7 @@ The [`beforeServiceInvoke`](https://ej2.syncfusion.com/angular/documentation/api
 * This event allows you to inject custom properties or additional parameters dynamically before a request is made to the OLAP server.
 * It is particularly useful for passing contextual data such as user tokens, custom filters, or localization information along with the original server request.
 
-When the [`beforeServiceInvoke`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/pivotViewModel#beforeserviceinvoke) event is triggered, the event argument provides access to the request details and includes a [`customProperties`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/beforeServiceInvokeEventArgs#customproperties) field.
+The event argument provides access to the request details, including a [`customProperties`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/beforeserviceinvokeeventargs#customproperties) field. See the Syncfusion API for the full list of available parameters.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -814,12 +744,12 @@ When the [`beforeServiceInvoke`](https://ej2.syncfusion.com/angular/documentatio
 
 ### AfterServiceInvoke
 
-The [`afterServiceInvoke`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/pivotViewModel#afterserviceinvoke) event is triggered in the Pivot Table and Field List components during the onSuccess phase of every OLAP service request.
+The [`afterServiceInvoke`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/pivotviewmodel#afterserviceinvoke) event is triggered in the Pivot Table and Field List components during the success phase of every OLAP service request.
 
 * This event is useful for performing post-processing, logging actions, or updating the UI after receiving a successful response from the OLAP server.
 * You may use it to audit data, trigger notifications, or handle custom response-handling logic.
 
-When the [`afterServiceInvoke`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/pivotViewModel#afterserviceinvoke) event is triggered, the event argument provides access to the server response details, including properties such as the action performed and the result data returned from the OLAP server.
+The event argument provides access to the server response details, including properties such as the action performed and the result data returned from the OLAP server. See the Syncfusion API for the full list of available parameters.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

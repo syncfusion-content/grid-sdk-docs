@@ -215,4 +215,4 @@ export class AppComponent implements OnInit {
 ![PivotTable bound with MongoDB database](../images/mongodb-data-binding.png)
 
 ### Additional Resources
-Explore a complete example of the Angular Pivot Table integrated with an ASP.NET Core Web Application to fetch data from a MongoDB database in this [GitHub](https://github.com/SyncfusionExamples/how-to-bind-MongoDB-to-pivot-table) repository.
+For a complete example of the Angular Pivot Table integrated with an ASP.NET Core Web Application that fetches data from a MongoDB database, see this [GitHub](https://github.com/SyncfusionExamples/how-to-bind-MongoDB-to-pivot-table) repository.

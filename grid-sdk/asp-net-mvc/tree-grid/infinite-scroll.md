@@ -16,19 +16,6 @@ To use Infinite scrolling, set `EnableInfiniteScrolling` property as true.
 
 N> * In this feature, Tree Grid will not make a new data request when you visit the same page again.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/infinite-scroll/infinite/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Infinitescroll.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/infinite-scroll/infinite/infinitescroll.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/infinite-scroll/infinite/razor %}
@@ -37,28 +24,12 @@ N> * In this feature, Tree Grid will not make a new data request when you visit 
 {% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/infinite-scroll/infinite/infinitescroll.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
-
-
 
 ## InitialBlocks
 
 You can define the initial loading pages count by using `InitialBlocks` property of `InfiniteScrollSettings`. By default, this feature loads three pages in initial rendering.
 
 In the below demo, we have changed this property value to load five page records instead of three.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/infinite-scroll/initialblocks/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Infinitescroll.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/infinite-scroll/initialblocks/infinitescroll.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -68,28 +39,12 @@ In the below demo, we have changed this property value to load five page records
 {% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/infinite-scroll/initialblocks/infinitescroll.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
-
-
 
 ## Cache Mode
 
 Cache is used to store the loaded rows object in the Tree Grid instance which can be reused for creating the row elements whenever you scroll to already visited page. Also, this mode maintains row elements based on the `MaxBlocks` count value of `InfiniteScrollSettings`, once this limit exceeds then it will remove row elements from DOM for new rows.
 
 To enable the cache mode in Infinite scrolling, set `EnableCache` property of `InfiniteScrollSettings` as true.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/infinite-scroll/cache/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Infinitescroll.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/infinite-scroll/cache/infinitescroll.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -99,9 +54,6 @@ To enable the cache mode in Infinite scrolling, set `EnableCache` property of `I
 {% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/infinite-scroll/cache/infinitescroll.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
-
-
 
 ## Limitations for Infinite Scrolling
 
@@ -113,4 +65,4 @@ To enable the cache mode in Infinite scrolling, set `EnableCache` property of `I
 * Programmatic selection using the [`selectRows`](../api/treegrid#selectrows) and [`selectRow`](../api/treegrid#selectrow) method is not supported in infinite scrolling.
 * Infinite scrolling does not support rendering records in a collapsed state. All records must be fully expanded at initial rendering for proper functionality.
 
-N> You can refer to our [`ASP.NET MVC Tree Grid`](https://www.syncfusion.com/aspnet-mvc-ui-controls/tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our [`ASP.NET MVC Tree Grid example`](https://ej2.syncfusion.com/aspnetmvc/TreeGrid/Overview#/material) to knows how to present and manipulate data.
+N> You can refer to our [`ASP.NET MVC Tree Grid`](https://www.syncfusion.com/aspnet-mvc-ui-controls/tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our [`ASP.NET MVC Tree Grid example`](https://ej2.syncfusion.com/aspnetmvc/treegrid/overview#/fluent2) to knows how to present and manipulate data.

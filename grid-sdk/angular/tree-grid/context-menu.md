@@ -45,7 +45,7 @@ The following table lists the default context menu items:
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/treegrid/context-menu-cs1" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/context-menu-cs1" %}
 
 ## Custom context menu items
 
@@ -63,7 +63,7 @@ In the sample below, a context menu item is added for parent rows to expand or c
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/treegrid/context-menu-cs2" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/context-menu-cs2" %}
 
 ## Enable and disable context menu items dynamically
 
@@ -79,7 +79,7 @@ Context menu items can be enabled or disabled dynamically using the [`enableItem
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/treegrid/context-menu-cs3" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/context-menu-cs3" %}
 
 > To show or hide a context menu item for specific areas within the TreeGrid, use the [`target`](https://ej2.syncfusion.com/angular/documentation/api/grid/contextMenuItemModel/#target) property.
 > For a complete overview of features, visit the [Angular TreeGrid feature tour](https://www.syncfusion.com/angular-components/angular-tree-grid). Explore the [Angular TreeGrid example](https://ej2.syncfusion.com/angular/demos/#/material/treegrid/treegrid-overview) to see how data can be presented and manipulated.

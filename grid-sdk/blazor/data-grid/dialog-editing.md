@@ -176,7 +176,7 @@ public class OrderDetails
 {% previewsample "https://blazorplayground.syncfusion.com/embed/VDVyZWjvKbTMIaIU?appbar=false&editor=false&result=true&errorlist=false&theme=bootstrap5" %}
 
 > * The Blazor DataGrid add or edit dialog element includes a max-height property, which is calculated based on the available window height. In a standard window size of **1920×1080** pixels, the dialog height can be set up to **658px**.
-> * Refer to the Blazor DataGrid feature tour for a broad overview. Explore the [Blazor DataGrid example](https://blazor.syncfusion.com/demos/datagrid/overview?theme=bootstrap5) to understand data presentation and manipulation.
+> * Refer to the Blazor DataGrid feature tour for a broad overview. Explore the [Blazor DataGrid example](https://blazor.syncfusion.com/demos/datagrid/overview?theme=fluent2) to understand data presentation and manipulation.
 
 ## Show or hide columns in dialog editing
 
@@ -776,4 +776,4 @@ public class ProductDetails
 
 {% previewsample "https://blazorplayground.syncfusion.com/embed/LDLyXsZxfZTvqDJz?appbar=false&editor=false&result=true&errorlist=false&theme=bootstrap5" %}
 
-> For details about events triggered during **Dialog editing**, refer to the supported events [documentation](https://blazor.syncfusion.com/documentation/datagrid/in-line-editing#supported-events-for-inline-and-dialog-editing).
+> For details about events triggered during **Dialog editing**, refer to the supported events [documentation](https://help.syncfusion.com/grid-sdk/blazor/data-grid/in-line-editing#supported-events-for-inline-and-dialog-editing).

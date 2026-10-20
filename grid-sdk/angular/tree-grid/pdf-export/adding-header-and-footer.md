@@ -132,4 +132,4 @@ The following code illustrates PDF export customization.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/treegrid/pdf-export-cs1" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/pdf-export-cs1" %}

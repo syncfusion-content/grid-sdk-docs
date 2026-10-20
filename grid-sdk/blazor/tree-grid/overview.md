@@ -27,11 +27,11 @@ The [Blazor TreeGrid](https://www.syncfusion.com/blazor-components/blazor-tree-g
 | **Analytics Dashboards** | Visualize hierarchical KPIs with drill-down exploration | Filtering, Sorting, State Management |
 
 
-## Data Connectivity
+## Data connectivity
 
 The [Blazor TreeGrid](https://www.syncfusion.com/blazor-components/blazor-tree-grid) enables multiple data binding approaches for rendering parent-child relationships, offering flexibility in choosing the right strategy for different application architectures. The TreeGrid can work with in-memory collections for self-referential or hierarchical records, or connect to remote services for scalable applications.
 
-**Data Binding Approaches**
+**Data binding approaches**
 
 - **[Self-Referential Data (Flat Data)](./data-binding)** - Bind grids to local record lists where each row references its parent through [IdMapping](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.TreeGrid.SfTreeGrid-1.html#Syncfusion_Blazor_TreeGrid_SfTreeGrid_1_IdMapping) and [ParentIdMapping](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.TreeGrid.SfTreeGrid-1.html#Syncfusion_Blazor_TreeGrid_SfTreeGrid_1_ParentIdMapping) fields. Ideal for flat database tables with hierarchical semantics.
 - **[Hierarchical Data](./data-binding)** - Bind nested object collections where child records are contained within parent objects. Perfect for JSON documents with tree structures.
@@ -40,7 +40,7 @@ The [Blazor TreeGrid](https://www.syncfusion.com/blazor-components/blazor-tree-g
   - [GraphQL Adaptor](./graphql) - Query modern APIs with optimized payloads
   - [Custom Binding](./custom-binding) - Handle data operations manually when services require custom processing
 
-**Data Connectors**
+**Data connectors**
 
 | Feature | Key Benefit | Best For |
 |---------|---------------|----------|
@@ -50,7 +50,7 @@ The [Blazor TreeGrid](https://www.syncfusion.com/blazor-components/blazor-tree-g
 
 N> To learn about the adaptors supported by the TreeGrid and all remote data binding scenarios, refer to [Data Binding](./data-binding).
 
-## Data Operations
+## Data operations
 
 The [Blazor TreeGrid](https://www.syncfusion.com/blazor-components/blazor-tree-grid) provides comprehensive data manipulation capabilities that enable users to analyze, organize, and understand their hierarchical data efficiently:
 
@@ -76,7 +76,7 @@ The [Blazor TreeGrid](https://www.syncfusion.com/blazor-components/blazor-tree-g
 | **[Managing Records Count](./virtualization#managing-records-count)** | Control additional records loaded per block during virtualization | Deep tree structures | Controlled memory usage |
 | **[Paging](./paging)** | Divide the tree data across pages with page options | Browsing large forests | Navigable dataset segments |
 
-## Editing & CRUD Operations
+## Editing & CRUD operations
 
 The [Blazor TreeGrid](https://www.syncfusion.com/blazor-components/blazor-tree-grid) enables seamless Create, Read, Update, and Delete (CRUD) operations directly within the grid interface, with full support for adding child rows to any tree node. Data modification occurs inline with immediate visual feedback, improving productivity and reducing context switching.
 
@@ -170,7 +170,7 @@ Templating & Customization allows developers to personalize the TreeGrid's heade
 | **[Detail Template](./rows/detail-template)** | Expandable row sections for additional information | Hierarchical data display |
 | **[Globalization](./globalization)** | Culture aware formatting and right-to-left rendering | Global application support |
 
-**Accessibility & Keyboard Navigation**
+**Accessibility & Keyboard navigation**
 
 The [Blazor TreeGrid](https://www.syncfusion.com/blazor-components/blazor-tree-grid) is fully accessible and compliant with Web Content Accessibility Guidelines (WCAG) standards:
 
@@ -205,7 +205,7 @@ The [Blazor TreeGrid](https://www.syncfusion.com/blazor-components/blazor-tree-g
 | **[Global/Local Formatting](./globalization)** | Consistent or column specific formatting | Currency, dates, numbers, text | Professional presentation |
 | **[Events](./events)** | Event handlers for every user and API action in the TreeGrid | Custom workflows and integrations | Deep integration points |
 
-**Enterprise Patterns**
+**Enterprise patterns**
 
 For specific implementation patterns, refer to feature documentation:
 - **Large Enterprises** - Use [State Management](./state-management) and [Row Drag and Drop](./rows/row-drag-and-drop) to reorganize large trees
@@ -229,7 +229,7 @@ The [Blazor TreeGrid](https://www.syncfusion.com/blazor-components/blazor-tree-g
 - [Blazor Server App Guide](./getting-started-with-server-app)
 - [Blazor Hybrid MAUI App Guide](./getting-started-with-maui-app)
 
-**Popular Features:**
+**Popular features:**
 - [Row Drag and Drop](./rows/row-drag-and-drop) - Reorganize tree structures interactively
 - [Filtering & Searching](./filter) - Search and filter capabilities
 - [Sorting](./sorting) - Data organization and analysis

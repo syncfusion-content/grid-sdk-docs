@@ -22,4 +22,4 @@ Excel export in the TreeGrid component allows including custom header and footer
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/treegrid/excel-export-cs1" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/excel-export-cs1" %}
