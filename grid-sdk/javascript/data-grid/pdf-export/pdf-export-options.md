@@ -4,7 +4,6 @@ title: Pdf export options in JavaScript Grid control | Syncfusion
 description: Learn here all about Pdf export options in Syncfusion JavaScript Grid control of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Pdf export options 
-publishingplatform: grid-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
@@ -13,30 +12,17 @@ domainurl: https://help.syncfusion.com/grid-sdk
 
 The JavaScript Grid control allows you to customize the PDF export options functionality. This flexibility enables you to have greater control over the exported content and layout to meet your specific requirements.
 
-The PDF export action can be customized based on your requirements using the [pdfExportProperties](../../api/grid/pdfExportProperties) property. By using the `pdfExportProperties` property, you can export the current page records, selected records, or filtered records. Additionally, you can customize the page alignments using the `pdfExportProperties` property.
+The PDF export action can be customized based on your requirements using the [pdfExportProperties](https://ej2.syncfusion.com/javascript/documentation/api/grid/pdfExportProperties) property. By using the `pdfExportProperties` property, you can export the current page records, selected records, or filtered records. Additionally, you can customize the page alignments using the `pdfExportProperties` property.
 
 ## Export current page records
 
 Exporting the current page in JavaScript Grid to a PDF document provides the ability to export the currently displayed page records. This feature allows for generating PDF documents that specifically include the content from the current page of the grid.
 
-To export the current page of the grid to a PDF document, you need to specify the [exportType](../../api/grid/pdfExportProperties#exporttype) property as **CurrentPage**.
+To export the current page of the grid to a PDF document, you need to specify the [exportType](https://ej2.syncfusion.com/javascript/documentation/api/grid/pdfExportProperties#exporttype) property as **CurrentPage**.
 
 The following example demonstrates how to export current page to a PDF document when a toolbar item is clicked.
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/grid-cs141/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/grid-cs141/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grid-cs141" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -48,40 +34,27 @@ The following example demonstrates how to export current page to a PDF document 
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grid-cs141" %}
-{% endif %}
+
 
 ## Export selected records
 
 Exporting only the selected records from the JavaScript Grid allows generating PDF document that include only the desired data from the Grid. This feature provides the flexibility to export specific records that are relevant to the needs, enabling more focused and targeted PDF exports.
 
-To export only the selected records by utilizing the [exportProperties->dataSource](../../api/grid/pdfExportProperties#datasource) property in the [toolbarClick](../../api/grid#toolbarclick) event. 
+To export only the selected records by utilizing the [exportProperties->dataSource](https://ej2.syncfusion.com/javascript/documentation/api/grid/pdfExportProperties#datasource) property in the [toolbarClick](https://ej2.syncfusion.com/javascript/documentation/api/grid#toolbarclick) event. 
 
 To export the selected records from the grid to a PDF file, you can follow these steps:
 
 1. Handle the `toolbarClick` event of the Grid.
 
-2. Retrieve the selected records using the [getSelectedRecords](../../api/grid#getselectedrecords) method.
+2. Retrieve the selected records using the [getSelectedRecords](https://ej2.syncfusion.com/javascript/documentation/api/grid#getselectedrecords) method.
 
 3. Assign the selected data to the `exportProperties.dataSource `property.
 
-4. Trigger the export operation using the [pdfExport](../../api/grid#pdfexport) method.
+4. Trigger the export operation using the [pdfExport](https://ej2.syncfusion.com/javascript/documentation/api/grid#pdfexport) method.
 
 The following example demonstrates how to export the selected records to a PDF document.
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/grid-cs142/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/grid-cs142/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grid-cs142" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -93,40 +66,27 @@ The following example demonstrates how to export the selected records to a PDF d
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grid-cs142" %}
-{% endif %}
+
 
 ## Export filtered records
 
 Exporting only the filtered records from the JavaScript Grid allows you to generate PDF document that include only the data that matches your applied filters. This feature is useful when you want to export a subset of data based on specific criteria.
 
-This can be achieved by defining the filtered data in the [exportProperties->dataSource](../../api/grid/excelExportProperties#datasource) property before initiating the export.
+This can be achieved by defining the filtered data in the [exportProperties->dataSource](https://ej2.syncfusion.com/javascript/documentation/api/grid/excelExportProperties#datasource) property before initiating the export.
 
 To export only the filtered data from the grid to a PDF file, you can follow these steps:
 
 1. Apply the desired filter to the grid data.
 
-2. Get the filtered data using the [getFilteredRecords](../../api/grid#getfilteredrecords) method.
+2. Get the filtered data using the [getFilteredRecords](https://ej2.syncfusion.com/javascript/documentation/api/grid#getfilteredrecords) method.
 
 3. Assign the filtered data to the `exportProperties.dataSource` property.
 
-4. Trigger the export operation using the [pdfExport](../../api/grid#pdfexport) method.
+4. Trigger the export operation using the [pdfExport](https://ej2.syncfusion.com/javascript/documentation/api/grid#pdfexport) method.
 
 The following example demonstrates how to export the filtered records to a PDF document.
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/exporting-filtered-data-cs2/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/exporting-filtered-data-cs2/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/exporting-filtered-data-cs2" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -138,38 +98,21 @@ The following example demonstrates how to export the filtered records to a PDF d
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/exporting-filtered-data-cs2" %}
-{% endif %}
+
 
 ## Export with hidden columns
 
 Exporting hidden columns in the JavaScript Grid allows you to include hidden columns in the exported PDF document. This feature is useful when you have columns that are hidden in the UI but still need to be included in the exported document.
 
-To export hidden columns of the grid to a PDF file, you need to set the [includeHiddenColumn](../../api/grid/pdfExportProperties#includehiddencolumn) property as **true** in the [pdfExportProperties](../../api/grid/pdfExportProperties) property.
+To export hidden columns of the grid to a PDF file, you need to set the [includeHiddenColumn](https://ej2.syncfusion.com/javascript/documentation/api/grid/pdfExportProperties#includehiddencolumn) property as **true** in the [pdfExportProperties](https://ej2.syncfusion.com/javascript/documentation/api/grid/pdfExportProperties) property.
 
-{% if page.publishingplatform == "typescript" %}
+
  
-The following example demonstrates how to export hidden columns to a PDF file. In this example, the **ShipCity** column, which is not visible in the UI, is exported to the PDF document. You can also export the grid by changing the `pdfExportProperties.includeHiddenColumn` property based on the switch toggle using the [checked](../../api/switch#checked) property of the [EJ2 Toggle Switch Button](../../switch/getting-started) control.
+The following example demonstrates how to export hidden columns to a PDF file. In this example, the **ShipCity** column, which is not visible in the UI, is exported to the PDF document. You can also export the grid by changing the `pdfExportProperties.includeHiddenColumn` property based on the switch toggle using the [checked](https://ej2.syncfusion.com/javascript/documentation/api/switch#checked) property of the [EJ2 Toggle Switch Button](https://ej2.syncfusion.com/javascript/documentation/switch/es5-getting-started) control.
 
- {% elsif page.publishingplatform == "javascript" %}
- 
-The following example demonstrates how to export hidden columns to a PDF file. In this example, the **ShipCity** column, which is not visible in the UI, is exported to the PDF document. You can also export the grid by changing the `pdfExportProperties.includeHiddenColumn` property based on the switch toggle using the [checked](../../api/switch#checked) property of the [EJ2 Toggle Switch Button](../../switch/es5-getting-started) control.
 
-{% endif %}
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/grid-cs143/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/grid-cs143/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grid-cs143" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -181,7 +124,7 @@ The following example demonstrates how to export hidden columns to a PDF file. I
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grid-cs143" %}
-{% endif %}
+
 
 ## Show or hide columns while exporting
 
@@ -189,30 +132,17 @@ The JavaScript Grid control provides the functionality to show or hide columns d
 
 To show or hide columns based on user interaction during the export process, you can follow these steps:
 
-1. Handle the [toolbarClick](../../api/grid#toolbarclick) event of the Grid control.
+1. Handle the [toolbarClick](https://ej2.syncfusion.com/javascript/documentation/api/grid#toolbarclick) event of the Grid control.
 
-2. Update the visibility of the desired columns by setting the [visible](../../api/grid/column#visible) property of the column to **true** or **false**.
+2. Update the visibility of the desired columns by setting the [visible](https://ej2.syncfusion.com/javascript/documentation/api/grid/column#visible) property of the column to **true** or **false**.
 
 3. Export the grid to PDF.
 
-4. Handle the [pdfExportComplete](../../api/grid#pdfexportcomplete) event to restore the column visibility to its original state.
+4. Handle the [pdfExportComplete](https://ej2.syncfusion.com/javascript/documentation/api/grid#pdfexportcomplete) event to restore the column visibility to its original state.
 
 In the following example, the **CustomerID** is initially a hidden column in the grid. However, during the export process, the **CustomerID** column is made visible, while the **ShipCity** column is hidden.
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/grid-cs144/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/grid-cs144/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grid-cs144" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -224,7 +154,7 @@ In the following example, the **CustomerID** is initially a hidden column in the
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grid-cs144" %}
-{% endif %}
+
 
 ## Show or hide columns while exporting with stacked header
 
@@ -232,30 +162,17 @@ The Syncfusion JavaScript Grid allows you to control the visibility of columns d
 
 To implement the show or hide columns feature during PDF export in the Syncfusion JavaScript Grid, follow these steps:
 
-1. Handle the [toolbarClick](../../api/grid#toolbarclick) event of the Syncfusion JavaScript Grid.
+1. Handle the [toolbarClick](https://ej2.syncfusion.com/javascript/documentation/api/grid#toolbarclick) event of the Syncfusion JavaScript Grid.
 
-2. Update the visibility of the desired columns by setting the [visible](../../api/grid/column#visible) property of the column to **true** or **false**.
+2. Update the visibility of the desired columns by setting the [visible](https://ej2.syncfusion.com/javascript/documentation/api/grid/column#visible) property of the column to **true** or **false**.
 
-3. Export the Syncfusion JavaScript Grid to PDF document using [pdfExport](../../api/grid#pdfexport) method.
+3. Export the Syncfusion JavaScript Grid to PDF document using [pdfExport](https://ej2.syncfusion.com/javascript/documentation/api/grid#pdfexport) method.
 
-4. Handle the [pdfExportComplete](../../api/grid#pdfexportcomplete) event to restore the column visibility to its original state.
+4. Handle the [pdfExportComplete](https://ej2.syncfusion.com/javascript/documentation/api/grid#pdfexportcomplete) event to restore the column visibility to its original state.
 
 In the following example, the **ShipName** is initially a hidden column in the Syncfusion JavaScript Grid. However, during the PDF export process, the **ShipName** column is made visible, while the **OrderDate** column is hidden:
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/pdf-stackedheader/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/pdf-stackedheader/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/pdf-stackedheader" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -267,13 +184,13 @@ In the following example, the **ShipName** is initially a hidden column in the S
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/pdf-stackedheader" %}
-{% endif %}
+
 
 ## Change page orientation
 
 The JavaScript Grid control allows you to change the page orientation of the exported PDF document from the default portrait mode to landscape mode. This feature provides the flexibility to adjust the layout and presentation of the exported PDF according to your needs.
 
-To change the page orientation to landscape for the exported document, you can set the [pageOrientation](../../api/grid/pdfExportProperties#pageorientation) property of the [pdfExportProperties](../../api/grid/pdfExportProperties) property. 
+To change the page orientation to landscape for the exported document, you can set the [pageOrientation](https://ej2.syncfusion.com/javascript/documentation/api/grid/pdfExportProperties#pageorientation) property of the [pdfExportProperties](https://ej2.syncfusion.com/javascript/documentation/api/grid/pdfExportProperties) property. 
 
 The supported `pageOrientation` options are:
 
@@ -281,22 +198,9 @@ The supported `pageOrientation` options are:
 
 2. **Portrait**: Exports the grid with a portrait PDF page orientation.
 
-The following example demonstrates how to export the grid into PDF document by setting the `pdfExportProperties.pageOrientation` property using the [value](../../api/drop-down-list#value) property of the `DropDownList` control.
+The following example demonstrates how to export the grid into PDF document by setting the `pdfExportProperties.pageOrientation` property using the [value](https://ej2.syncfusion.com/javascript/documentation/api/drop-down-list#value) property of the `DropDownList` control.
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/grid-cs145/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/grid-cs145/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grid-cs145" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -308,13 +212,13 @@ The following example demonstrates how to export the grid into PDF document by s
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grid-cs145" %}
-{% endif %}
+
 
 ## Change page size
 
 The JavaScript Grid control allows you to customize the page size of the exported PDF document according to your requirements. This feature provides the flexibility to adjust the layout and dimensions of the exported PDF to fit different paper sizes or printing needs. 
 
-To customize the page size for the exported document, you can set the [pageSize](../../api/grid/pdfExportProperties#pagesize) property of the [pdfExportProperties](../../api/grid/pdfExportProperties) property to the desired page size. 
+To customize the page size for the exported document, you can set the [pageSize](https://ej2.syncfusion.com/javascript/documentation/api/grid/pdfExportProperties#pagesize) property of the [pdfExportProperties](https://ej2.syncfusion.com/javascript/documentation/api/grid/pdfExportProperties) property to the desired page size. 
 
 Supported `pdfPageSize` are:
 * Letter
@@ -346,22 +250,9 @@ Supported `pdfPageSize` are:
 * Letter11x17
 * Ledger
 
-The following example demonstrates how to export the grid into PDF document by setting the `pdfExportProperties.pageSize` property by using [value](../../api/drop-down-list#value) property of the `DropDownList` control.
+The following example demonstrates how to export the grid into PDF document by setting the `pdfExportProperties.pageSize` property by using [value](https://ej2.syncfusion.com/javascript/documentation/api/drop-down-list#value) property of the `DropDownList` control.
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/grid-cs146/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/grid-cs146/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grid-cs146" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -373,30 +264,17 @@ The following example demonstrates how to export the grid into PDF document by s
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grid-cs146" %}
-{% endif %}
+
 
 ## Define file name
 
 The JavaScript Grid control allows you to specify a custom file name for the exported PDF document. This feature enables you to provide a meaningful and descriptive name for the exported file, making it easier to identify and manage the exported data.
 
-To assign a custom file name for the exported document, you can set the [fileName](../../api/grid/pdfExportProperties#filename) property of the [pdfExportProperties](../../api/grid/pdfExportProperties) property to the desired file name.
+To assign a custom file name for the exported document, you can set the [fileName](https://ej2.syncfusion.com/javascript/documentation/api/grid/pdfExportProperties#filename) property of the [pdfExportProperties](https://ej2.syncfusion.com/javascript/documentation/api/grid/pdfExportProperties) property to the desired file name.
 
 The following example demonstrates how to define a file name using `pdfExportProperties.fileName` property when exporting to PDF, based on the entered value as the file name. 
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/grid-cs147/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/grid-cs147/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grid-cs147" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -408,38 +286,21 @@ The following example demonstrates how to define a file name using `pdfExportPro
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grid-cs147" %}
-{% endif %}
+
 
 ## Enabling horizontal overflow
 
 The JavaScript Grid control allows you to display all defined grid columns on a single page even when the number of columns exceeds the maximum limits for columns in the exported PDF document. This ensures that your exported PDF maintains its readability and comprehensiveness.
 
-You can achieve this by utilizing the [pdfExportProperties->allowHorizontalOverflow](../../api/grid/pdfExportProperties#allowhorizontaloverflow) property of the grid.
+You can achieve this by utilizing the [pdfExportProperties->allowHorizontalOverflow](https://ej2.syncfusion.com/javascript/documentation/api/grid/pdfExportProperties#allowhorizontaloverflow) property of the grid.
 
-{% if page.publishingplatform == "typescript" %}
+
  
-In the following example, the [EJ2 Toggle Switch Button](../../switch/getting-started) control is added to enable and disable the `pdfExportProperties.allowHorizontalOverflow` property. Based on the switch toggle, the `pdfExportProperties.allowHorizontalOverflow` property is updated using the [checked](../../api/switch#checked) property, and the export action is performed accordingly when the toolbar is clicked.
+In the following example, the [EJ2 Toggle Switch Button](https://ej2.syncfusion.com/javascript/documentation/switch/es5-getting-started) control is added to enable and disable the `pdfExportProperties.allowHorizontalOverflow` property. Based on the switch toggle, the `pdfExportProperties.allowHorizontalOverflow` property is updated using the [checked](https://ej2.syncfusion.com/javascript/documentation/api/switch#checked) property, and the export action is performed accordingly when the toolbar is clicked.
 
- {% elsif page.publishingplatform == "javascript" %}
- 
-In the following example, the [EJ2 Toggle Switch Button](../../switch/es5-getting-started) control is added to enable and disable the `pdfExportProperties.allowHorizontalOverflow` property. Based on the switch toggle, the `pdfExportProperties.allowHorizontalOverflow` property is updated using the [checked](../../api/switch#checked) property, and the export action is performed accordingly when the toolbar is clicked.
 
-{% endif %}
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/grid-horizontal-overflow/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/grid-horizontal-overflow/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grid-horizontal-overflow" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -451,7 +312,7 @@ In the following example, the [EJ2 Toggle Switch Button](../../switch/es5-gettin
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grid-horizontal-overflow" %}
-{% endif %}
+
 
 ## Customizing columns on export
 
@@ -459,7 +320,7 @@ The JavaScript Grid control allows you to customize the appearance of grid colum
 
 To customize the grid columns, you can follow these steps:
 
-1. Access the [pdfExportProperties->column](../../api/grid/pdfExportProperties#columns) of the Grid control.
+1. Access the [pdfExportProperties->column](https://ej2.syncfusion.com/javascript/documentation/api/grid/pdfExportProperties#columns) of the Grid control.
 
 2. Set the `column` object with attributes such as `field`, `headerText`, and `textAlign` to define the desired format.
 
@@ -467,20 +328,7 @@ To customize the grid columns, you can follow these steps:
 
 The following example demonstrates how to customize the grid columns when exporting a document. In this scenario, the attributes for different columns have been customized: **OrderID** with `textAlign` set to **Right**, **CustomerID** with `headerText` as **"Customer Name"**, and **Freight** with a center-aligned `textAlign` property, which is not rendered in the grid columns.
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/grid-customize-column/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/grid-customize-column/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grid-customize-column" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -492,7 +340,7 @@ The following example demonstrates how to customize the grid columns when export
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grid-customize-column" %}
-{% endif %}
+
 
 ## Font and color customization
 
@@ -500,7 +348,7 @@ The JavaScript Grid control provides the ability to customize the font in the ex
 
 ### Default fonts
 
-By default, the Grid uses the **Helvetica** font in the exported document. However, you can change the default font by utilizing the [pdfExportProperties->theme](../../api/grid/pdfExportProperties#theme) property. The available default fonts that you can choose from are:
+By default, the Grid uses the **Helvetica** font in the exported document. However, you can change the default font by utilizing the [pdfExportProperties->theme](https://ej2.syncfusion.com/javascript/documentation/api/grid/pdfExportProperties#theme) property. The available default fonts that you can choose from are:
 
 * Helvetica
 * TimesRoman
@@ -517,20 +365,7 @@ To change the default font, you can follow these steps:
 
 The following example demonstrates, how to change the default font when exporting a document.
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/grid-default-fonts/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/grid-default-fonts/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grid-default-fonts" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -542,30 +377,17 @@ The following example demonstrates, how to change the default font when exportin
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grid-default-fonts" %}
-{% endif %}
+
 
 ### Add custom font
 
-In addition to changing the default font, the JavaScript Grid allows you to use a custom font for the Grid header, content, and caption cells in the exported document. This can be achieved by utilizing the [pdfExportProperties->theme](../../api/grid/pdfExportProperties#theme) property.
+In addition to changing the default font, the JavaScript Grid allows you to use a custom font for the Grid header, content, and caption cells in the exported document. This can be achieved by utilizing the [pdfExportProperties->theme](https://ej2.syncfusion.com/javascript/documentation/api/grid/pdfExportProperties#theme) property.
 
 When using a custom font, it's important to provide the font in a format that can be easily embedded in the exported document. This is typically done by encoding the font file into a base64 string. This base64 encoded font data can then be used within the export settings to ensure the custom font is applied to the exported PDF.
 
 The following example demonstrates how to use the custom **Algeria** font for exporting the grid. The **base64AlgeriaFont** variable contains the base64 encoded string representing the **Algeria** font file. This encoded font data is used in the PDF export properties to specify the custom font.
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/gridcustomfont-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/gridcustomfont-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/gridcustomfont-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -577,7 +399,7 @@ The following example demonstrates how to use the custom **Algeria** font for ex
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/gridcustomfont-cs1" %}
-{% endif %}
+
 
 > **PdfTrueTypeFont** accepts base64 format of the custom font.
 
@@ -585,24 +407,11 @@ The following example demonstrates how to use the custom **Algeria** font for ex
 
 When exporting data from the JavaScript Grid, you have an option to conditionally format the cells in the exported PDF document. This allows you to customize the appearance of specific cells based on their values or other criteria.
 
-To implement conditional cell formatting, you can utilize the [pdfQueryCellInfo](../../api/grid#pdfquerycellinfo) event of the Grid. Within this event, you can access the cell object using the `args.cell` property and modify its properties, such as the background color, based on your desired conditions.
+To implement conditional cell formatting, you can utilize the [pdfQueryCellInfo](https://ej2.syncfusion.com/javascript/documentation/api/grid#pdfquerycellinfo) event of the Grid. Within this event, you can access the cell object using the `args.cell` property and modify its properties, such as the background color, based on your desired conditions.
 
 The following example demonstrate how to customize the background color of the **Freight** column in the exported PDF document using the **args.cell** and **backgroundColor** properties of the `pdfQueryCellInfo` event.
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/gridcustomfont-cs2/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/gridcustomfont-cs2/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/gridcustomfont-cs2" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -614,28 +423,15 @@ The following example demonstrate how to customize the background color of the *
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/gridcustomfont-cs2" %}
-{% endif %}
+
 
 ## Export grid as blob
 
-The Grid offers an option to export the data as a Blob instead of downloading it as a file in the browser. To export the grid as a Blob, set the `isBlob` parameter to **true** in the [pdfExport](../../api/grid#pdfexport) method. The grid returns the promise of a blob in the [pdfExportComplete](../../api/grid#pdfexportcomplete) event.
+The Grid offers an option to export the data as a Blob instead of downloading it as a file in the browser. To export the grid as a Blob, set the `isBlob` parameter to **true** in the [pdfExport](https://ej2.syncfusion.com/javascript/documentation/api/grid#pdfexport) method. The grid returns the promise of a blob in the [pdfExportComplete](https://ej2.syncfusion.com/javascript/documentation/api/grid#pdfexportcomplete) event.
 
 The following example demonstrates how to obtain the blob data of the exported grid by executing the promise in the `pdfExportComplete` event.
 
-{% if page.publishingplatform == "typescript" %}
 
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/export-grid-as-blob-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/export-grid-as-blob-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/export-grid-as-blob-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -647,4 +443,4 @@ The following example demonstrates how to obtain the blob data of the exported g
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/export-grid-as-blob-cs1" %}
-{% endif %}
+

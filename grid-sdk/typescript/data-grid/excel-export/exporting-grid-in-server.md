@@ -4,7 +4,6 @@ title: Exporting grid in server in TypeScript Grid control | Syncfusion
 description: Learn here all about Exporting grid in server in Syncfusion TypeScript Grid control of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Exporting grid in server 
-publishingplatform: grid-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
@@ -33,7 +32,7 @@ To export the grid data to a Excel document on the server side, you need to perf
 
 2. Define a controller action that handles the server-side Excel export. This action should receive the Grid properties from the client-side and initiate the Excel export operation on the server.
 
-3. Use the [serverExcelExport](../../api/grid/#serverexcelexport) method to pass the Grid properties to the server exporting action. This method allows you to specify the server action URL and other export options.
+3. Use the [serverExcelExport](https://ej2.syncfusion.com/documentation/api/grid#serverexcelexport) method to pass the Grid properties to the server exporting action. This method allows you to specify the server action URL and other export options.
 
 The following code snippet shows server configuration using ASP.NET Core Controller Action.
 
@@ -69,7 +68,7 @@ public ActionResult DataSource(DataManager dm)
 
 ```
 
-{% if page.publishingplatform == "typescript" %}
+
  
 ```ts
 import { Grid, Toolbar } from '@syncfusion/ej2-grids';
@@ -102,44 +101,15 @@ grid.toolbarClick = (args: Object) => {
 
 ```
 
- {% elsif page.publishingplatform == "javascript" %}
  
-```js
-ej.grids.Grid.Inject(ej.grids.Toolbar);
-var data = new ej.data.DataManager({
-    url: "Home/DataSource",
-    adaptor: new ej.data.UrlAdaptor
-});
-
-var grid = new ej.grids.Grid({
-    dataSource: data,
-    toolbar: ['ExcelExport'],
-    columns: [
-        { field: 'OrderID', headerText: 'Order ID', textAlign: 'Right', width: 100 },
-        { field: 'CustomerID', headerText: 'Customer ID', width: 120 },
-        { field: 'Freight', headerText: 'Freight', textAlign: 'Right', width: 120, format: 'C2' },
-        { field: 'ShipCountry', headerText: 'Ship Country', width: 150 }
-    ],
-    height: 265
-});
-grid.appendTo('#Grid');
-
-grid.toolbarClick = (args) => {
-    if (args['item'].id === 'Grid_excelexport') {
-        grid.serverExcelExport("Home/ExcelExport");
-    }
-}
-
-```
-{% endif %}
 
 >Note: Refer to the GitHub sample for quick implementation and testing from [here](https://github.com/SyncfusionExamples/TypeScript-EJ2-Grid-server-side-exporting).
 
 ## CSV Export in server side
 
-To perform CSV export on the server-side, you can use the [serverCsvExport](../../api/grid/#servercsvexport) method, which sends the Grid properties to the server for processing and generating the CSV file.
+To perform CSV export on the server-side, you can use the [serverCsvExport](https://ej2.syncfusion.com/documentation/api/grid#servercsvexport) method, which sends the Grid properties to the server for processing and generating the CSV file.
 
-To initiate the CSV export, you can invoke the `serverCsvExport` method within the [toolbarClick](../../api/grid/#toolbarclick) event. Upon triggering the event, the server will deserialize the Grid properties and pass them to the `CsvExport` method, which will handle exporting the properties to the CSV format.
+To initiate the CSV export, you can invoke the `serverCsvExport` method within the [toolbarClick](https://ej2.syncfusion.com/documentation/api/grid#toolbarclick) event. Upon triggering the event, the server will deserialize the Grid properties and pass them to the `CsvExport` method, which will handle exporting the properties to the CSV format.
 
 Here's an example of how you can accomplish CSV export on the server-side:
 
@@ -169,7 +139,7 @@ public ActionResult DataSource(DataManager dm)
 }
 
 ```
-{% if page.publishingplatform == "typescript" %}
+
  
 ```ts
 import { Grid, Toolbar } from '@syncfusion/ej2-grids';
@@ -202,37 +172,7 @@ grid.toolbarClick = (args: Object) => {
 
 ```
 
- {% elsif page.publishingplatform == "javascript" %}
  
-```js
-ej.grids.Grid.Inject(ej.grids.Toolbar);
-var data = new ej.data.DataManager({
-    url: "Home/DataSource",
-    adaptor: new ej.data.UrlAdaptor
-});
-
-var grid = new ej.grids.Grid({
-    dataSource: data,
-    toolbar: ['CsvExport'],
-    columns: [
-        { field: 'OrderID', headerText: 'Order ID', textAlign: 'Right', width: 100 },
-        { field: 'CustomerID', headerText: 'Customer ID', width: 120 },
-        { field: 'Freight', headerText: 'Freight', textAlign: 'Right', width: 120, format: 'C2' },
-        { field: 'ShipCountry', headerText: 'Ship Country', width: 150 }
-    ],
-    height: 265
-});
-grid.appendTo('#Grid');
-
-grid.toolbarClick = (args: Object) => {
-    if (args['item'].id === 'Grid_csvexport') {
-        grid.serverCsvExport("Home/CsvGridExport");
-    }
-}
-
-```
-
-{% endif %}
 
 ## Export grid as memory stream
 
@@ -422,7 +362,7 @@ public ActionResult ExcelExport(string gridModel)
 
 The Grid provides support to customize the column header styles, including changing text orientation, font color, and other visual aspects, in the exported Excel file on the server-side. This feature is particularly useful when you want to enhance the appearance of the exported data and create a unique representation of the Grid in the Excel document.
 
-To achieve this requirement, you can use the [excelHeaderQueryCellInfo](../../api/grid/#excelheaderquerycellinfo) event of the Grid. This event is triggered when creating column headers for the Excel document to be exported on the server-side. In this event, you can collect the column header details and handle customizations.
+To achieve this requirement, you can use the [excelHeaderQueryCellInfo](https://ej2.syncfusion.com/documentation/api/grid#excelheaderquerycellinfo) event of the Grid. This event is triggered when creating column headers for the Excel document to be exported on the server-side. In this event, you can collect the column header details and handle customizations.
 
 In the following demo, using the `HeaderCellRotate` method of the `GridExcelExport` class in the `ServerExcelHeaderQueryCellInfo` event, you can rotate the header text of the column header in the excel exported document.
 

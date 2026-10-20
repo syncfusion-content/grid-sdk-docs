@@ -171,7 +171,7 @@ Now, run the **index.html** in web browser, it will render the Essential<sup sty
 
 ## Registering Syncfusion license
 
-The Syncfusion® Data Grid requires a valid license key to be registered in the application. To prevent license validation warnings, refer to the [Syncfusion licensing](https://ej2.syncfusion.com/javascript/documentation/licensing/overview) documentation.
+The SyncfusionÂ® Data Grid requires a valid license key to be registered in the application. To prevent license validation warnings, refer to the [Syncfusion licensing](https://ej2.syncfusion.com/javascript/documentation/licensing/overview) documentation.
 
 ## Troubleshooting
 

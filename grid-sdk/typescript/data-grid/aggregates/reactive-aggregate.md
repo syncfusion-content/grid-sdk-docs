@@ -4,7 +4,6 @@ title: Reactive aggregate in TypeScript Grid control | Syncfusion
 description: Learn here all about Reactive aggregate in Syncfusion TypeScript Grid control of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Reactive aggregate 
-publishingplatform: grid-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
@@ -19,7 +18,7 @@ When the grid is in batch editing mode, the aggregate values in the footer, grou
 
 Here's an example code snippet demonstrating how to auto update aggregate value in batch editing:
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -32,19 +31,7 @@ Here's an example code snippet demonstrating how to auto update aggregate value 
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/aggregates-cs6" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/aggregates-cs6/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/aggregates-cs6/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/aggregates-cs6" %}
-{% endif %}
 
 > Adding a new record to the grouped grid will not refresh the aggregate values.
 
@@ -54,7 +41,7 @@ By default, reactive aggregate update is not supported by inline and dialog edit
 
 In the following code, the input event for the Freight column editor has been registered and the aggregate value has been refreshed manually.
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -66,17 +53,3 @@ In the following code, the input event for the Freight column editor has been re
 {% endtabs %}
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/aggregates-cs7" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/aggregates-cs7/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/aggregates-cs7/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/aggregates-cs7" %}
-{% endif %}

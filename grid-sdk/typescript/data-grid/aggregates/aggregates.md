@@ -4,14 +4,13 @@ title: Aggregates in TypeScript Grid control | Syncfusion
 description: Learn here all about Aggregates in Syncfusion TypeScript Grid control of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Aggregates 
-publishingplatform: grid-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
 # Aggregates in TypeScript Grid control
 
-The Aggregates feature in the TypeScript Grid control allows you to display aggregate values in the footer, group footer, and group caption of the grid. With this feature, you can easily perform calculations on specific columns and show summary information. This feature can be configured using the `aggregates` property. To represent an aggregate column, you need to specify the minimum required properties, such as [field](../../api/grid/aggregateColumn#field) and [type](../../api/grid/aggregateColumn#type).
+The Aggregates feature in the TypeScript Grid control allows you to display aggregate values in the footer, group footer, and group caption of the grid. With this feature, you can easily perform calculations on specific columns and show summary information. This feature can be configured using the `aggregates` property. To represent an aggregate column, you need to specify the minimum required properties, such as [field](https://ej2.syncfusion.com/documentation/api/grid/aggregateColumn#field) and [type](https://ej2.syncfusion.com/documentation/api/grid/aggregateColumn#type).
 
 To use aggregate feature, you need to inject the `Aggregate` module.
 
@@ -19,13 +18,13 @@ To use aggregate feature, you need to inject the `Aggregate` module.
 
 By default, the aggregate values are displayed in the footer, group, and caption cells of the grid. However, you can choose to display the aggregate value in any of these cells by using the following properties:
 
-* **[footerTemplate](../../api/grid/aggregateColumn#footertemplate):** Use this property to display the aggregate value in the footer cell. You can define a custom template to format the aggregate value as per your requirements.
+* **[footerTemplate](https://ej2.syncfusion.com/documentation/api/grid/aggregateColumn#footertemplate):** Use this property to display the aggregate value in the footer cell. You can define a custom template to format the aggregate value as per your requirements.
 
-* **[groupFooterTemplate](../../api/grid/aggregateColumn#groupfootertemplate):** Use this property to display the aggregate value in the group footer cell. Similar to the footerTemplate, you can provide a custom template to format the aggregate value.
+* **[groupFooterTemplate](https://ej2.syncfusion.com/documentation/api/grid/aggregateColumn#groupfootertemplate):** Use this property to display the aggregate value in the group footer cell. Similar to the footerTemplate, you can provide a custom template to format the aggregate value.
 
-* **[groupCaptionTemplate](../../api/grid/aggregateColumn#groupcaptiontemplate):** Use this property to display the aggregate value in the group caption cell. You can define a custom template to format the aggregate value.
+* **[groupCaptionTemplate](https://ej2.syncfusion.com/documentation/api/grid/aggregateColumn#groupcaptiontemplate):** Use this property to display the aggregate value in the group caption cell. You can define a custom template to format the aggregate value.
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -38,19 +37,7 @@ By default, the aggregate values are displayed in the footer, group, and caption
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/aggregates-values-cs1" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/aggregates-values-cs1/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/aggregates-values-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/aggregates-values-cs1" %}
-{% endif %}
 
 > * When using local data, the total summary is calculated based on the entire dataset available in the grid. The aggregate values will reflect calculations across all the rows in the grid.
 
@@ -58,7 +45,7 @@ By default, the aggregate values are displayed in the footer, group, and caption
 
 ## Built-in aggregate types
 
-The TypeScript Grid control provides several built-in aggregate types that can be specified in the [type](../../api/grid/aggregateColumn#type) property to configure an aggregate column.
+The TypeScript Grid control provides several built-in aggregate types that can be specified in the [type](https://ej2.syncfusion.com/documentation/api/grid/aggregateColumn#type) property to configure an aggregate column.
 
 The available built-in aggregate types are:
 
@@ -72,7 +59,7 @@ The available built-in aggregate types are:
 
 Here is an example that demonstrates how to use built-in aggregates types in the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid:
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -85,19 +72,7 @@ Here is an example that demonstrates how to use built-in aggregates types in the
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/aggregates-buildin-type-cs1" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/aggregates-buildin-type-cs1/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/aggregates-buildin-type-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/aggregates-buildin-type-cs1" %}
-{% endif %}
 
 ## Multiple aggregates for a column
 
@@ -105,11 +80,11 @@ Multiple aggregates for a column allows you to calculate and display different s
 
 However, in scenarios where you need to display multiple summary values for the same column, multiple aggregates come into play. This feature enables you to calculate and display various aggregate values, such as sum, average, minimum, maximum, or custom calculations, concurrently for a specific column.
 
-You can use multiple aggregates for a single column in the TypeScript Grid by specifying the aggregate [type](../../api/grid/aggregateColumn#type) as an array.
+You can use multiple aggregates for a single column in the TypeScript Grid by specifying the aggregate [type](https://ej2.syncfusion.com/documentation/api/grid/aggregateColumn#type) as an array.
 
 Here's an example of how to use multiple aggregates in the TypeScript Grid:
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -121,17 +96,3 @@ Here's an example of how to use multiple aggregates in the TypeScript Grid:
 {% endtabs %}
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/aggregates-multiple-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/aggregates-multiple-cs1/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/aggregates-multiple-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/aggregates-multiple-cs1" %}
-{% endif %}

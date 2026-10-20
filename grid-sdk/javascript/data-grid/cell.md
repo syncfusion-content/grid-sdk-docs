@@ -4,7 +4,6 @@ title: Cell in JavaScript Grid Control | Syncfusion
 description: Learn here all about cell support in Syncfusion JavaScript Grid control, it's elements, and more.
 platform: grid-sdk
 control: Cell 
-publishingplatform: grid-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
@@ -17,32 +16,9 @@ The Grid control allows you to customize the appearance and behavior of cells us
 
 ## Displaying the HTML content
 
-Displaying HTML content in a Grid can be useful in scenarios where you want to display formatted content, such as images, links, or tables, in a tabular format. Grid control allows you to display HTML tags in the Grid header and content. By default, the HTML content is encoded to prevent potential security vulnerabilities. However, you can enable the [disableHtmlEncode](../api/grid/column#disablehtmlencode) property by setting the value as false to display HTML tags without encoding. This feature is useful when you want to display HTML content in a grid cell.
+Displaying HTML content in a Grid can be useful in scenarios where you want to display formatted content, such as images, links, or tables, in a tabular format. Grid control allows you to display HTML tags in the Grid header and content. By default, the HTML content is encoded to prevent potential security vulnerabilities. However, you can enable the [disableHtmlEncode](https://ej2.syncfusion.com/javascript/documentation/api/grid/column#disablehtmlencode) property by setting the value as false to display HTML tags without encoding. This feature is useful when you want to display HTML content in a grid cell.
 
-{% if page.publishingplatform == "typescript" %}
- 
-In the following example, the [EJ2 Toggle Switch Button](../switch/getting-started) control is added  to enable and disable the [disableHtmlEncode](../api/grid/column#disablehtmlencode) property. When the switch is toggled, the [change](../api/switch#change) event is triggered and the `disableHtmlEncode` property of the column is updated accordingly. The [refreshColumns](../api/grid#refreshcolumns) method is called to refresh the grid and display the updated content.
-
- {% elsif page.publishingplatform == "javascript" %}
- 
-In the following example, the [EJ2 Toggle Switch Button](../switch/es5-getting-started) control is added  to enable and disable the [disableHtmlEncode](../api/grid/column#disablehtmlencode) property. When the switch is toggled, the [change](../api/switch#change) event is triggered and the `disableHtmlEncode` property of the column is updated accordingly. The [refreshColumns](../api/grid#refreshcolumns) method is called to refresh the grid and display the updated content.
-
-{% endif %}
-
-{% if page.publishingplatform == "typescript" %}
-
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/cell-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/cell-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/cell-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
+In the following example, the [EJ2 Toggle Switch Button](https://ej2.syncfusion.com/javascript/documentation/switch/es5-getting-started) control is added  to enable and disable the [disableHtmlEncode](https://ej2.syncfusion.com/javascript/documentation/api/grid/column#disablehtmlencode) property. When the switch is toggled, the [change](https://ej2.syncfusion.com/javascript/documentation/api/switch#change) event is triggered and the `disableHtmlEncode` property of the column is updated accordingly. The [refreshColumns](https://ej2.syncfusion.com/javascript/documentation/api/grid#refreshcolumns) method is called to refresh the grid and display the updated content.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -54,14 +30,14 @@ In the following example, the [EJ2 Toggle Switch Button](../switch/es5-getting-s
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/cell-cs1" %}
-{% endif %}
 
-> * The [disableHtmlEncode](../api/grid/column#disablehtmlencode) property disables HTML encoding for the corresponding column in the grid. 
+
+> * The [disableHtmlEncode](https://ej2.syncfusion.com/javascript/documentation/api/grid/column#disablehtmlencode) property disables HTML encoding for the corresponding column in the grid. 
 > * If the property is set to **true**, any HTML tags in the column's data will be displayed. 
 > * If the property is set to **false**, the HTML tags will be removed and displayed as plain text.
 > * Disabling HTML encoding can potentially introduce security vulnerabilities, so use caution when enabling this feature.
-> * If [enableHtmlSanitizer](../api/grid#enablehtmlsanitizer) property of grid is set to true, then the content is sanitized to prevent any potential security vulnerabilities.
-> * You can also disable the `disableHtmlEncode` property of the column using [getColumns](../api/grid#getcolumns) method on [change](../api/switch#change) event of Switch control.This is demonstrated in the below code snippet, 
+> * If [enableHtmlSanitizer](https://ej2.syncfusion.com/javascript/documentation/api/grid#enablehtmlsanitizer) property of grid is set to true, then the content is sanitized to prevent any potential security vulnerabilities.
+> * You can also disable the `disableHtmlEncode` property of the column using [getColumns](https://ej2.syncfusion.com/javascript/documentation/api/grid#getcolumns) method on [change](https://ej2.syncfusion.com/javascript/documentation/api/switch#change) event of Switch control.This is demonstrated in the below code snippet, 
 
 ```typescript
 change(args) {
@@ -76,9 +52,9 @@ change(args) {
 
 ## Autowrap the grid content
 
-The auto wrap feature allows the cell content in the grid to wrap to the next line when it exceeds the boundary of the specified cell width. The cell content wrapping works based on the position of white space between words. To support the Autowrap functionality in Syncfusion<sup style="font-size:70%">&reg;</sup> Grid, you should set the appropriate [width](../api/grid/column#width) for the columns. The column width defines the maximum width of a column and helps to wrap the content automatically.
+The auto wrap feature allows the cell content in the grid to wrap to the next line when it exceeds the boundary of the specified cell width. The cell content wrapping works based on the position of white space between words. To support the Autowrap functionality in Syncfusion<sup style="font-size:70%">&reg;</sup> Grid, you should set the appropriate [width](https://ej2.syncfusion.com/javascript/documentation/api/grid/column#width) for the columns. The column width defines the maximum width of a column and helps to wrap the content automatically.
 
-To enable auto wrap, set the [allowTextWrap](../api/grid#allowtextwrap) property to **true**. You can also configure the wrap mode by setting the [textWrapSettings.wrapMode](../api/grid/textWrapSettings#wrapmode) property.
+To enable auto wrap, set the [allowTextWrap](https://ej2.syncfusion.com/javascript/documentation/api/grid#allowtextwrap) property to **true**. You can also configure the wrap mode by setting the [textWrapSettings.wrapMode](https://ej2.syncfusion.com/javascript/documentation/api/grid/textWrapSettings#wrapmode) property.
 
 Grid provides the below three options for configuring:
 
@@ -86,22 +62,7 @@ Grid provides the below three options for configuring:
 * **Header** - With this option, only the grid header text is wrapped.
 * **Content** - With this option, only the grid content is wrapped.
 
-The following example demonstrates how to set the `allowTextWrap` property to **true** and specify the wrap mode as **Content** by setting the `textWrapSettings.wrapMode` property. Also change the `textWrapSettings.wrapMode` property to **Content** and **Both** on changing the dropdown value using the [change](../api/drop-down-list#change) event of the DropDownList control.
-
-{% if page.publishingplatform == "typescript" %}
-
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/autowrap-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/autowrap-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/autowrap-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
+The following example demonstrates how to set the `allowTextWrap` property to **true** and specify the wrap mode as **Content** by setting the `textWrapSettings.wrapMode` property. Also change the `textWrapSettings.wrapMode` property to **Content** and **Both** on changing the dropdown value using the [change](https://ej2.syncfusion.com/javascript/documentation/api/drop-down-list#change) event of the DropDownList control.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -113,11 +74,11 @@ The following example demonstrates how to set the `allowTextWrap` property to **
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/autowrap-cs1" %}
-{% endif %}
+
 
 > * If a column width is not specified, then the Autowrap of columns will be adjusted with respect to the grid's width.
 > * If a column's header text contains no white space, the text may not be wrapped.
-> * If the content of a cell contains HTML tags, the Autowrap functionality may not work as expected. In such cases, you can use the [headerTemplate](../api/grid/column#headertemplate) and [template](../api/grid/column#template) properties of the column to customize the appearance of the header and cell content.
+> * If the content of a cell contains HTML tags, the Autowrap functionality may not work as expected. In such cases, you can use the [headerTemplate](https://ej2.syncfusion.com/javascript/documentation/api/grid/column#headertemplate) and [template](https://ej2.syncfusion.com/javascript/documentation/api/grid/column#template) properties of the column to customize the appearance of the header and cell content.
 
 ## Customize cell styles
 
@@ -125,24 +86,9 @@ Customizing the grid cell styles allows you to modify the appearance of cells in
 
 ### Using event
 
-To customize the appearance of the grid cell, you can use the [queryCellInfo](../api/grid#querycellinfo) event of the grid. This event is triggered when each header cell is rendered in the grid, and provides an object that contains information about the header cell. You can use this object to modify the styles of the header cell.
+To customize the appearance of the grid cell, you can use the [queryCellInfo](https://ej2.syncfusion.com/javascript/documentation/api/grid#querycellinfo) event of the grid. This event is triggered when each header cell is rendered in the grid, and provides an object that contains information about the header cell. You can use this object to modify the styles of the header cell.
 
 The following example demonstrates how to add a `queryCellInfo` event handler to the grid. In the event handler, checked whether the current column is **Freight** field and then applied the appropriate CSS class to the cell based on its value.
-
-{% if page.publishingplatform == "typescript" %}
-
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/custom-cell-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/custom-cell-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/custom-cell-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -154,9 +100,9 @@ The following example demonstrates how to add a `queryCellInfo` event handler to
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/custom-cell-cs1" %}
-{% endif %}
 
-> * The [queryCellInfo](../api/grid#querycellinfo) event is triggered for every cell of the grid, so it may impact the performance of the grid whether used to modify a large number of cells.
+
+> * The [queryCellInfo](https://ej2.syncfusion.com/javascript/documentation/api/grid#querycellinfo) event is triggered for every cell of the grid, so it may impact the performance of the grid whether used to modify a large number of cells.
 
 ### Using CSS
 
@@ -171,21 +117,6 @@ You can apply styles to the cells using CSS selectors. The Grid provides a class
 
 The following example demonstrates how to customize the appearance of a specific row in the grid on selection using `className`.
 
-{% if page.publishingplatform == "typescript" %}
-
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/cell-cs2/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/cell-cs2/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/cell-cs2" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
 {% include code-snippet/grid-sdk/javascript/grid/cell-cs2/index.js %}
@@ -196,11 +127,11 @@ The following example demonstrates how to customize the appearance of a specific
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/cell-cs2" %}
-{% endif %}
+
 
 ### Using property
 
-To customize the style of grid cells, define [customAttributes](../api/grid/column#customattributes) property to the column definition object. The `customAttributes` property takes an object with the name-value pair to customize the CSS properties for grid cells. You can also set multiple CSS properties to the custom class using the customAttributes property.
+To customize the style of grid cells, define [customAttributes](https://ej2.syncfusion.com/javascript/documentation/api/grid/column#customattributes) property to the column definition object. The `customAttributes` property takes an object with the name-value pair to customize the CSS properties for grid cells. You can also set multiple CSS properties to the custom class using the customAttributes property.
 
 ```CSS
 .custom-css {
@@ -218,21 +149,6 @@ Here, setting the customAttributes property of the **ShipCity** column to an obj
 ```
 The following example demonstrates how to customize the appearance of the **OrderID** and **ShipCity** columns using custom attributes. 
 
-{% if page.publishingplatform == "typescript" %}
-
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/cell-cs3/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/cell-cs3/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/cell-cs3" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
 {% include code-snippet/grid-sdk/javascript/grid/cell-cs3/index.js %}
@@ -243,7 +159,7 @@ The following example demonstrates how to customize the appearance of the **Orde
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/cell-cs3" %}
-{% endif %}
+
 
 > Custom attributes can be used to customize any cell in the grid, including header and footer cells.
 
@@ -251,26 +167,11 @@ The following example demonstrates how to customize the appearance of the **Orde
 
 The Grid provides below methods to customize the appearance of the grid columns header and cell:
 
-1. [getHeaderContent](../api/grid#getheadercontent): The `getHeaderContent` method is used to customize the appearance of the column header in the grid and accessing the header element using the `querySelector` method and applying the style using the style property of the cell element.
+1. [getHeaderContent](https://ej2.syncfusion.com/javascript/documentation/api/grid#getheadercontent): The `getHeaderContent` method is used to customize the appearance of the column header in the grid and accessing the header element using the `querySelector` method and applying the style using the style property of the cell element.
 
-2. [getCellFromIndex](../api/grid#getcellfromindex): The `getCellFromIndex` method is used to customize the appearance of a specific cell in the grid by specifying the index of the row and column for which you want to customize the appearance.
+2. [getCellFromIndex](https://ej2.syncfusion.com/javascript/documentation/api/grid#getcellfromindex): The `getCellFromIndex` method is used to customize the appearance of a specific cell in the grid by specifying the index of the row and column for which you want to customize the appearance.
 
-The following example demonstrates how to use [getColumnHeaderByIndex](../api/grid#getcolumnheaderbyindex) and [getCellFromIndex](../api/grid#getcellfromindex) methods to customize the appearance of the **CustomerID** column header and specific cell inside the [dataBound](../api/grid#databound) event of the grid.
-
-{% if page.publishingplatform == "typescript" %}
-
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/cell-cs4/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/cell-cs4/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/cell-cs4" %}
-
-{% elsif page.publishingplatform == "javascript" %}
+The following example demonstrates how to use [getColumnHeaderByIndex](https://ej2.syncfusion.com/javascript/documentation/api/grid#getcolumnheaderbyindex) and [getCellFromIndex](https://ej2.syncfusion.com/javascript/documentation/api/grid#getcellfromindex) methods to customize the appearance of the **CustomerID** column header and specific cell inside the [dataBound](https://ej2.syncfusion.com/javascript/documentation/api/grid#databound) event of the grid.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -282,36 +183,21 @@ The following example demonstrates how to use [getColumnHeaderByIndex](../api/gr
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/cell-cs4" %}
-{% endif %}
 
-> Make sure to pass the correct row and column indices to [getCellFromIndex](../api/grid#getcellfromindex) method, or else the appearance of the wrong cell might get customized.
+
+> Make sure to pass the correct row and column indices to [getCellFromIndex](https://ej2.syncfusion.com/javascript/documentation/api/grid#getcellfromindex) method, or else the appearance of the wrong cell might get customized.
 
 ## Clip Mode
 
-The clip mode feature is useful when you have a long text or content in a grid cell, which overflows the cell's width or height. It provides options to display the overflow content by either truncating it, displaying an ellipsis or displaying an ellipsis with a tooltip. You can enable this feature by setting [columns.clipMode](../api/grid/column#clipmode) property to one of the below available options.
+The clip mode feature is useful when you have a long text or content in a grid cell, which overflows the cell's width or height. It provides options to display the overflow content by either truncating it, displaying an ellipsis or displaying an ellipsis with a tooltip. You can enable this feature by setting [columns.clipMode](https://ej2.syncfusion.com/javascript/documentation/api/grid/column#clipmode) property to one of the below available options.
 
-There are three types of [clipMode](../api/grid/column#clipmode) available:
+There are three types of [clipMode](https://ej2.syncfusion.com/javascript/documentation/api/grid/column#clipmode) available:
 
 * **Clip**: Truncates the cell content when it overflows its area.
 * **Ellipsis**: Displays ellipsis when the cell content overflows its area.
 * **EllipsisWithTooltip**: Displays ellipsis when the cell content overflows its area, also it will display the tooltip while hover on ellipsis is applied. Also it will display the tooltip while hover on ellipsis is applied.
 
-The following example demonstrates, how to set the [clipMode](../api/grid/column#clipmode) property to **Clip** , **Ellipsis** and **EllipsisWithTooltip** for the **Main Fields of Invention** column, on changing the dropdown value using the [change](../api/drop-down-list#change) event of the `DropDownList` control. The [refresh](../api/grid#refresh) method is used to refresh the grid and display the updated content.
-
-{% if page.publishingplatform == "typescript" %}
-
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/cell-cs5/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/cell-cs5/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/cell-cs5" %}
-
-{% elsif page.publishingplatform == "javascript" %}
+The following example demonstrates, how to set the [clipMode](https://ej2.syncfusion.com/javascript/documentation/api/grid/column#clipmode) property to **Clip** , **Ellipsis** and **EllipsisWithTooltip** for the **Main Fields of Invention** column, on changing the dropdown value using the [change](https://ej2.syncfusion.com/javascript/documentation/api/drop-down-list#change) event of the `DropDownList` control. The [refresh](https://ej2.syncfusion.com/javascript/documentation/api/grid#refresh) method is used to refresh the grid and display the updated content.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -323,10 +209,10 @@ The following example demonstrates, how to set the [clipMode](../api/grid/column
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/cell-cs5" %}
-{% endif %}
 
-> * By default, [columns.clipMode](../api/grid/column#clipmode) value is **Ellipsis**.
-> * If you set the [width](../api/grid/column#width) property of a column, the clip mode feature will be automatically applied to that column if the content exceeds the specified width.
+
+> * By default, [columns.clipMode](https://ej2.syncfusion.com/javascript/documentation/api/grid/column#clipmode) value is **Ellipsis**.
+> * If you set the [width](https://ej2.syncfusion.com/javascript/documentation/api/grid/column#width) property of a column, the clip mode feature will be automatically applied to that column if the content exceeds the specified width.
 > * Be careful when using the Clip mode, as it may result in important information being cut off. It is generally recommended to use the Ellipsis or EllipsisWithTooltip modes instead.
 
 ## Tooltip
@@ -339,7 +225,7 @@ The Grid control allows rendering Bootstrap tooltips in the cells. To enable thi
 
 This is demonstrated in the sample code below which shows how to enable Bootstrap tooltip for the **CustomerID** field using `template` property in grid cells,
 
-Step 1: Add the CDN link of Boostrap in the index.html file. Place the `link` tag in the `head` for the CSS, and the `script` tag for the JavaScript bundle before the closing `body`. 
+Step 1: Add the CDN link of Bootstrap in the index.html file. Place the `link` tag in the `head` for the CSS, and the `script` tag for the JavaScript bundle before the closing `body`. 
 
 ```html
 
@@ -359,29 +245,6 @@ $(document).ready(function(){
 ```
 
 Step 2: The following code demonstrates how to render Bootstrap tooltip for the **CustomerID** field with `template` on grid cells.
-
-{% if page.publishingplatform == "typescript" %}
- 
-```ts
-import { Grid, Page } from '@syncfusion/ej2-grids';
-
-Grid.Inject(Page);
-
-let grid: Grid = new Grid({
-  dataSource: data,
-  allowPaging: true,
-  columns: [
-      { field: 'OrderID', headerText: 'Order ID', textAlign: 'Right', width: 90 },
-      { field: 'CustomerID', headerText: 'Customer ID', template: '#template', width: 120 },
-      { field: 'Freight', headerText: 'Freight', format: 'C2', textAlign: 'Right', width: 90 },
-      { field: 'OrderDate', headerText: 'Order Date', textAlign: 'Right', format: 'yMd', width: 120 }
-  ]
-});
-grid.appendTo('#Grid');
-
-```
-
- {% elsif page.publishingplatform == "javascript" %}
  
 ```js
 
@@ -399,8 +262,6 @@ grid.appendTo('#Grid');
 
 ``` 
 
-{% endif %}
-
 The following screenshot represents the Bootstrap tooltip for the **CustomerID** field,
 
 ![Bootstrap tooltip in JavaScript Grid.](./images/javascript-grid-bootstrap-tooltip.gif)
@@ -408,32 +269,12 @@ The following screenshot represents the Bootstrap tooltip for the **CustomerID**
 > * The Bootstrap CDN link must be added to the HTML file.
 
 ### Display custom tooltip for columns
-
-{% if page.publishingplatform == "typescript" %}
  
-The Grid provides a feature to display custom tooltips for its columns using the [EJ2 Tooltip](../tooltip/getting-started) control. This allows you to provide additional information about the columns when the user hovers over them.
-
- {% elsif page.publishingplatform == "javascript" %}
- 
-The Grid provides a feature to display custom tooltips for its columns using the [EJ2 Tooltip](../tooltip/es5-getting-started) control. This allows you to provide additional information about the columns when the user hovers over them.
-
-{% endif %}
+The Grid provides a feature to display custom tooltips for its columns using the [EJ2 Tooltip](https://ej2.syncfusion.com/javascript/documentation/tooltip/es5-getting-started) control. This allows you to provide additional information about the columns when the user hovers over them.
 
 To enable custom tooltips for columns in the Grid, you can render the Grid control inside the Tooltip control and set the target as `.e-rowcell`. This will display the tooltip when hovering over the grid cells.
 
-Change the tooltip content for the grid cells by using the following code in the [beforeRender](../api/tooltip#beforerender) event.
-
-{% if page.publishingplatform == "typescript" %}
-
-```ts
-function beforeRender(args: TooltipEventArgs) {
-    if (args.target.classList.contains('e-rowcell')) {
-        tooltip.content = 'The value is "' + args.target.innerText + '" ';
-    }
-}
-```
-
-{% elsif page.publishingplatform == "javascript" %}
+Change the tooltip content for the grid cells by using the following code in the [beforeRender](https://ej2.syncfusion.com/javascript/documentation/api/tooltip#beforerender) event.
 
 ```js
   function beforeRender(args) {
@@ -444,25 +285,7 @@ function beforeRender(args: TooltipEventArgs) {
 }
 ```
 
-{% endif %}
-
-The following example demonstrates how to customize the tooltip content for the grid cells by using the [beforeRender](../api/tooltip#beforerender) event of the EJ2 Tooltip control.
-
-
-{% if page.publishingplatform == "typescript" %}
-
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/cell-cs6/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/cell-cs6/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/cell-cs6" %}
-
-{% elsif page.publishingplatform == "javascript" %}
+The following example demonstrates how to customize the tooltip content for the grid cells by using the [beforeRender](https://ej2.syncfusion.com/javascript/documentation/api/tooltip#beforerender) event of the EJ2 Tooltip control.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -474,11 +297,11 @@ The following example demonstrates how to customize the tooltip content for the 
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/cell-cs6" %}
-{% endif %}
+
 
 ## Grid lines
 
-The [gridLines](../api/grid#gridlines) in a grid are used to separate the cells with horizontal and vertical lines for better readability. You can enable the grid lines by setting the [gridLines](../api/grid#gridlines) property to one of the following values:
+The [gridLines](https://ej2.syncfusion.com/javascript/documentation/api/grid#gridlines) in a grid are used to separate the cells with horizontal and vertical lines for better readability. You can enable the grid lines by setting the [gridLines](https://ej2.syncfusion.com/javascript/documentation/api/grid#gridlines) property to one of the following values:
 
 | Modes | Actions |
 |-------|---------|
@@ -488,22 +311,7 @@ The [gridLines](../api/grid#gridlines) in a grid are used to separate the cells 
 | Vertical | Displays the vertical grid lines only.|
 | Default | Displays grid lines based on the theme.|
 
-The following example demonstrates how to set the [gridLines](../api/grid#gridlines) property based on changing the dropdown value using the [change](../api/drop-down-list#change) event of the DropDownList control.
-
-{% if page.publishingplatform == "typescript" %}
-
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/row-template-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/row-template-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/row-template-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
+The following example demonstrates how to set the [gridLines](https://ej2.syncfusion.com/javascript/documentation/api/grid#gridlines) property based on changing the dropdown value using the [change](https://ej2.syncfusion.com/javascript/documentation/api/drop-down-list#change) event of the DropDownList control.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -515,7 +323,7 @@ The following example demonstrates how to set the [gridLines](../api/grid#gridli
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/row-template-cs1" %}
-{% endif %}
+
 
 >By default, the grid renders with **Default** mode.
 

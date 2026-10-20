@@ -4,7 +4,6 @@ title: Hierarchy grid in JavaScript Grid control | Syncfusion
 description: Learn here all about Hierarchy grid in Syncfusion JavaScript Grid control of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Hierarchy grid 
-publishingplatform: grid-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
@@ -13,7 +12,7 @@ domainurl: https://help.syncfusion.com/grid-sdk
 
 The Hierarchy Grid in an JavaScript Grid control is typically used when you need to display hierarchical data in a tabular format with expandable and collapsible rows. It allows you to represent parent and child relationships within the grid, making it easier for you to navigate and understand the data.
 
-This feature can be enabled by utilizing the [childGrid](../api/grid#childgrid) and [childGrid.queryString](../api/grid#querystring) properties of the grid control.
+This feature can be enabled by utilizing the [childGrid](https://ej2.syncfusion.com/javascript/documentation/api/grid#childgrid) and [childGrid.queryString](https://ej2.syncfusion.com/javascript/documentation/api/grid#querystring) properties of the grid control.
 
 To enable the Hierarchy Grid feature:
 
@@ -25,20 +24,7 @@ To enable the Hierarchy Grid feature:
 
 The following example demonstrates how to enable the hierarchy feature in the grid
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/grid-cs85/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/grid-cs85/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grid-cs85" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -50,33 +36,20 @@ The following example demonstrates how to enable the hierarchy feature in the gr
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grid-cs85" %}
-{% endif %}
+
 
 > * Grid supports n level of child grids.
-> * Hierarchical binding is not supported when [DetailTemplate](../api/grid#detailtemplate) is enabled.
+> * Hierarchical binding is not supported when [DetailTemplate](https://ej2.syncfusion.com/javascript/documentation/api/grid#detailtemplate) is enabled.
 
 ## Bind hierarchy grid with different field
 
 By default, the parent and child grids have the same field name to map and render a hierarchical grid. However, the control supports establishing a parent-child relationship between grids with different field names. This feature is beneficial when you want to create a parent-child relationship between grids but need to use distinct field names for mapping the data. As a result, you can easily establish the desired relationship between the parent and child grids, even with different field names for data mapping.
 
-By default, the parent and child grid relation is maintained using the [queryString](../api/grid#querystring) property, which requires the same field name for both grids. However, to achieve the parent and child relation with different fields, you need to modify the mapping value in the [load](../api/grid#load) event of child grid. 
+By default, the parent and child grid relation is maintained using the [queryString](https://ej2.syncfusion.com/javascript/documentation/api/grid#querystring) property, which requires the same field name for both grids. However, to achieve the parent and child relation with different fields, you need to modify the mapping value in the [load](https://ej2.syncfusion.com/javascript/documentation/api/grid#load) event of child grid. 
 
 In the following example, the `load` event is utilized to customize the mapping value for the child grid. By accessing the `parentDetails` property and its **parentKeyFieldValue**, you can set the desired mapping value. The `parentRowData` property contains the data of the parent row, and by using the **EmployeeID** field name, you can extract the corresponding value from the parent row data.
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/grid-cs88/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/grid-cs88/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grid-cs88" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -88,7 +61,7 @@ In the following example, the `load` event is utilized to customize the mapping 
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grid-cs88" %}
-{% endif %}
+
 
 > Make sure to adjust the field name according to your specific scenario.
 
@@ -96,24 +69,11 @@ In the following example, the `load` event is utilized to customize the mapping 
 
 Expanding the child grid initially in the Data Grid control is helpful when you want to display the child rows of the hierarchical grid expanded by default upon grid load. This can be beneficial in scenarios where you want to provide immediate visibility into the hierarchical data without requiring you to manually expand each child row.
 
-To achieve this, you can use the [expand](../api/grid/detailRow#expand) method with the desired target index (number) in the [dataBound](../api/grid#databound) event of the grid. 
+To achieve this, you can use the [expand](https://ej2.syncfusion.com/javascript/documentation/api/grid/detailRow#expand) method with the desired target index (number) in the [dataBound](https://ej2.syncfusion.com/javascript/documentation/api/grid#databound) event of the grid. 
 
 In the provided example, expand the third record of the grid by utilizing the `expand` method within the `dataBound` event.
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/grid-cs86/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/grid-cs86/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grid-cs86" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -125,7 +85,7 @@ In the provided example, expand the third record of the grid by utilizing the `e
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grid-cs86" %}
-{% endif %}
+
 
 > Index values begin with **"0"**, allowing you to provide the desired target index to expand a specific child grid initially.
 
@@ -133,24 +93,11 @@ In the provided example, expand the third record of the grid by utilizing the `e
 
 Dynamically load child grid data in Data Grid helps improve performance, optimize data transmission, and enhance the your experience by providing on-demand access to relevant information. Additionally, it offers flexibility in data presentation, which helps improve the overall efficiency of your application.
 
-To dynamically load the `dataSource` of a child grid in the Grid, you can utilize the [load](../api/grid#load) event of parent grid. This event allows you to customize the loading behavior of the child grid based on the data of parent grid.
+To dynamically load the `dataSource` of a child grid in the Grid, you can utilize the [load](https://ej2.syncfusion.com/javascript/documentation/api/grid#load) event of parent grid. This event allows you to customize the loading behavior of the child grid based on the data of parent grid.
 
 The following example demonstrates how to dynamically load child grid data using the `load` event.
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/grid-cs87/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/grid-cs87/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grid-cs87" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -162,30 +109,17 @@ The following example demonstrates how to dynamically load child grid data using
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grid-cs87" %}
-{% endif %}
+
 
 ## Dynamically bind data to child grid based on parent row Data
 
 Dynamically binding data to a child grid based on the parent row data in the Data Grid control is useful when you want to display child grid data that is specific to each parent row. This feature allows for a dynamic and contextual representation of data within the child grid.
 
-To dynamically bind data to the child grid based on the parent row data instead of using the [queryString](../api/grid#querystring) property, you can utilize the [detailDataBound](../api/grid#detaildatabound) event of the grid. This event is triggered when expanding the child grid.
+To dynamically bind data to the child grid based on the parent row data instead of using the [queryString](https://ej2.syncfusion.com/javascript/documentation/api/grid#querystring) property, you can utilize the [detailDataBound](https://ej2.syncfusion.com/javascript/documentation/api/grid#detaildatabound) event of the grid. This event is triggered when expanding the child grid.
 
 In the `detailDataBound` event handler, you can filter the child grid's dataSource based on the **EmployeeID** column value of the parent row data. This can be achieved by using the `DataManager` plugin and applying a filter to the child grid's dataSource. The filtered data can be assigned as the new dataSource for the child grid. This can be demonstrated by the following sample.
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/grid-cs90/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/grid-cs90/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grid-cs90" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -197,30 +131,17 @@ In the `detailDataBound` event handler, you can filter the child grid's dataSour
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grid-cs90" %}
-{% endif %}
+
 
 ## Adding record in child grid
 
 Adding a record in a child grid within the Data Grid control is useful when you want to provide the ability to add new records to the child grid. This feature allows you to input and save additional data specific to each parent row.
 
-To maintain the parent-child relationship in the Grid when adding a record to the child grid, you need to set the value for the `queryString` in the added data. This can be done using the [actionBegin](../api/grid#actionbegin) event.
+To maintain the parent-child relationship in the Grid when adding a record to the child grid, you need to set the value for the `queryString` in the added data. This can be done using the [actionBegin](https://ej2.syncfusion.com/javascript/documentation/api/grid#actionbegin) event.
 
 In the following example, the parent and child grids are related by the **EmployeeID** field. To add a new record in the child grid, the **EmployeeID** field needs to be set with the value of the parent record's `queryString` in the `actionBegin` event. 
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/grid-cs89/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/grid-cs89/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grid-cs89" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -232,30 +153,17 @@ In the following example, the parent and child grids are related by the **Employ
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grid-cs89" %}
-{% endif %}
+
 
 ## Template column in child grid
 
 A template column in a child grid within the Data Grid control is valuable when you want to customize the appearance and functionality of specific columns in the child grid. It is useful for incorporating interactive elements, custom formatting, or complex data representation within specific columns of the child grid.
 
-To achieve this, you can utilize the [template](../api/grid/column#template) property of a column to display a custom element instead of a field value in the Grid. 
+To achieve this, you can utilize the [template](https://ej2.syncfusion.com/javascript/documentation/api/grid/column#template) property of a column to display a custom element instead of a field value in the Grid. 
 
 The following example demonstrates, how to show a custom image in the **Employee Image** column of the child grid by utilizing the `template` property of the column.
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/hierarchygrid-templatecolumn-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/hierarchygrid-templatecolumn-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/hierarchygrid-templatecolumn-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -267,30 +175,17 @@ The following example demonstrates, how to show a custom image in the **Employee
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/hierarchygrid-templatecolumn-cs1" %}
-{% endif %}
+
 
 ## How to get parent detail in child grid
 
 Getting parent details in a child grid in an Data Grid control is useful when you want to display and utilize information from the parent row within the child grid. This can be beneficial in scenarios where you need to provide additional context or perform calculations based on the parent row's data
 
-To achieve this, you can utilize the [created](../api/grid#created) event. This event is triggered when the child grid is created and can be used to handle the child grid.
+To achieve this, you can utilize the [created](https://ej2.syncfusion.com/javascript/documentation/api/grid#created) event. This event is triggered when the child grid is created and can be used to handle the child grid.
 
 The following example demonstrates how to obtain parent details in a child grid using the `created` event. Within the `created` event, you can access the parent row data using `this.parentDetails.parentRowData` and display the desired details in the message.
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/hierarchygrid-parentdetails-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/hierarchygrid-parentdetails-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/hierarchygrid-parentdetails-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -302,7 +197,7 @@ The following example demonstrates how to obtain parent details in a child grid 
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/hierarchygrid-parentdetails-cs1" %}
-{% endif %}
+
 
 ## Render aggregates in child grid
 
@@ -313,20 +208,7 @@ Rendering aggregates in a child grid involves displaying summary data at the foo
 The following example demonstrates how to render aggregates in a child grid to display the sum and maximum values of the **Freight** column.
 
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/grid-hierarchygrid-render/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/grid-hierarchygrid-render/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grid-hierarchygrid-render" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -338,30 +220,17 @@ The following example demonstrates how to render aggregates in a child grid to d
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grid-hierarchygrid-render" %}
-{% endif %}
+
 
 ## Expand all by external button
 
 The Hierarchy Grid in the Data Grid control allows you to expand all child grid rows using an external button. This feature provides you with a convenient overview of all the hierarchical data within the grid, eliminating the need to manually expand each row individually.
 
-By default, Grid renders all child grid rows in collapsed state. To expand all child grid rows in the Grid using an external button, you can utilize the [expandAll](../api/grid/detailRow#expandall) method provided by the DetailRow module. Similarly, to collapse all grid rows, you can use the [collapseAll](../api/grid/detailRow#collapseall) method. 
+By default, Grid renders all child grid rows in collapsed state. To expand all child grid rows in the Grid using an external button, you can utilize the [expandAll](https://ej2.syncfusion.com/javascript/documentation/api/grid/detailRow#expandall) method provided by the DetailRow module. Similarly, to collapse all grid rows, you can use the [collapseAll](https://ej2.syncfusion.com/javascript/documentation/api/grid/detailRow#collapseall) method. 
 
 The following example demonstrates how to expand and collapse the hierarchy grid using an external button click function.
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/hierarchy-method-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/hierarchy-method-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/hierarchy-method-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -373,7 +242,7 @@ The following example demonstrates how to expand and collapse the hierarchy grid
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/hierarchy-method-cs1" %}
-{% endif %}
+
 
 > The `expandAll` and `collapseAll` methods are not recommended for large datasets due to the considerable time it takes to update the changes in the UI.
 
@@ -381,7 +250,7 @@ The following example demonstrates how to expand and collapse the hierarchy grid
 
 The Data Grid allows you to hide the expand/collapse icon in the parent row when there are no records in the child grid. However, in certain scenarios, you may want to hide the expand/collapse icon for parent rows that do not have any child records, providing a cleaner and more intuitive interface by eliminating unnecessary icons in empty parent rows.
 
-To achieve this, you can utilize the [rowDataBound](../api/grid#rowdatabound) event to hide the icon when there are no records in the child grid.
+To achieve this, you can utilize the [rowDataBound](https://ej2.syncfusion.com/javascript/documentation/api/grid#rowdatabound) event to hide the icon when there are no records in the child grid.
 
 To hide the expand/collapse icon in parent row when no records in child grid, follow the given steps:
 
@@ -399,24 +268,7 @@ To hide the expand/collapse icon in parent row when no records in child grid, fo
 
 2. **Implement the rowDataBound Event Handler:** This event is triggered for each row in the grid when data is bound, allowing you to customize the row's appearance and behavior. In the provided code, the handler checks if the current row has any child records associated with it. If not, it hides the content of the first element, which contains the expand/collapse icon, and applies a custom CSS class (e-customizedexpandcell) to modify its appearance.
 
-{% if page.publishingplatform == "typescript" %}
- 
-```ts
-    function rowDataBound(args: RowDataBoundEventArgs) {
-        let parentData: number = (args.data as Employee)['EmployeeID'];
-        let childrecord: object[] = new DataManager(childData as JSON[]).
-            executeLocal(new Query().where('EmployeeID', 'equal', parentData, true));
-        if (childrecord.length === 0) {
-            // Here hide which parent row has no child records
-            let rowElement = args.row as HTMLTableRowElement;
-            let cellElement= rowElement.querySelector('td') as HTMLTableCellElement
-            cellElement.innerHTML = ' '; 
-            cellElement.className = 'e-customizedexpandcell';
-        }
-    }
-```
 
- {% elsif page.publishingplatform == "javascript" %}
  
 ```js
 function rowDataBound(args){
@@ -432,24 +284,11 @@ function rowDataBound(args){
 }
 ```
 
-{% endif %}
+
 
 The following example demonstrates how to hide the expand/collapse icon in the row with **EmployeeID** as **1**, which does not have record in child Grid.
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/hierarchy-grid-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/hierarchy-grid-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/hierarchy-grid-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -461,7 +300,7 @@ The following example demonstrates how to hide the expand/collapse icon in the r
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/hierarchy-grid-cs1" %}
-{% endif %}
+
 
 ## Customize hierarchy grid icons
 
@@ -481,20 +320,7 @@ You can customize the default expand/collapse icons in the Hierarchy Grid of Syn
 
 In the demo below, the expand/collapse icons have been changed to arrow-down and arrow-right icons.
 
-{% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/changeicon-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/changeicon-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/changeicon-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -506,7 +332,7 @@ In the demo below, the expand/collapse icons have been changed to arrow-down and
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/changeicon-cs1" %}
-{% endif %}
+
 
 ## Detail row events
 
@@ -521,20 +347,7 @@ The Grid provides detail row events that enable control over actions before expa
 
 In the example below, expansion is prevented for the "Nancy" row using `detailExpand` event, collapse is prevented for the "Andrew" row using `detailCollapse` event, and expanded and collapsed row details are logged using the `detailExpanded` and `detailCollapsed` events.
 
-{% if page.publishingplatform == "typescript" %}
 
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/detail-row-events/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/detail-row-events/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/detail-row-events" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -546,7 +359,7 @@ In the example below, expansion is prevented for the "Nancy" row using `detailEx
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/detail-row-events" %}
-{% endif %}
+
 
 ## Customize the child grid
 
@@ -690,7 +503,7 @@ In this example, the **.e-currentitem** class targets the current page numeric i
 
 ### Sorting
 
-You can customize the appearance of the sorting icons and multi sorting icons in the child grid using CSS.You can use the available Syncfusion<sup style="font-size:70%">&reg;</sup> [icons](../appearance/icons#material) based on your theme. Here's how to do it:
+You can customize the appearance of the sorting icons and multi sorting icons in the child grid using CSS.You can use the available Syncfusion<sup style="font-size:70%">&reg;</sup> [icons](https://ej2.syncfusion.com/javascript/documentation/appearance/icons#material) based on your theme. Here's how to do it:
 
 **Customizing the child grid sorting icon**
 

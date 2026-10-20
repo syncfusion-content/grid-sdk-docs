@@ -4,7 +4,6 @@ title: Virtual scrolling in TypeScript Grid control | Syncfusion
 description: Learn here all about Virtual scrolling in Syncfusion TypeScript Grid control of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Virtual scrolling 
-publishingplatform: grid-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
@@ -19,13 +18,13 @@ To enable virtualization in the Grid, you need to inject the **VirtualScroll**. 
 
 Row virtualization is a feature in the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid that allows you to load and render rows only in the content viewport. It provides an alternative way of paging where data is loaded dynamically while scrolling vertically, rather than loading all the data at once. This is particularly useful when dealing with large datasets, as it improves the performance and reduces the initial load time.
 
-To set up row virtualization, you need to define the [enableVirtualization](../../api/grid#enablevirtualization) property as **true** and specify the content height using the [height](../../api/grid#height) property in the Grid configuration.
+To set up row virtualization, you need to define the [enableVirtualization](https://ej2.syncfusion.com/documentation/api/grid#enablevirtualization) property as **true** and specify the content height using the [height](https://ej2.syncfusion.com/documentation/api/grid#height) property in the Grid configuration.
 
-The number of records displayed in the Grid is implicitly determined by the height of the content area. Additionally, you have an option to explicitly define the visible number of records using the [pageSettings->pageSize](../../api/grid/pageSettingsModel#pagesize) property. The loaded data will be cached and reused when needed in the future.
+The number of records displayed in the Grid is implicitly determined by the height of the content area. Additionally, you have an option to explicitly define the visible number of records using the [pageSettings->pageSize](https://ej2.syncfusion.com/documentation/api/grid/pageSettingsModel#pagesize) property. The loaded data will be cached and reused when needed in the future.
 
 The following example enable row virtualization using `enableVirtualization` property.
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -38,19 +37,7 @@ The following example enable row virtualization using `enableVirtualization` pro
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/grid-cs178" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/grid-cs178/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/grid-cs178/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/grid-cs178" %}
-{% endif %}
 
 ### Limitations 
 
@@ -74,18 +61,18 @@ The following example enable row virtualization using `enableVirtualization` pro
         height: 2em;
     }
     ```
-* Since data is virtualized in grid, the aggregated information and total group items are displayed based on the current view items. To get these information regardless of the view items, refer to the [Group with paging](../../grid/grouping/grouping#group-with-paging) topic. 
+* Since data is virtualized in grid, the aggregated information and total group items are displayed based on the current view items. To get these information regardless of the view items, refer to the [Group with paging](../grouping/grouping#group-with-paging) topic. 
 * It is necessary to set a static height for the control or its parent container when using row virtualization. The 100% height will work only if the control height is set to 100%, and its parent container has a static height.
 
 ## Column virtualization
 
 Column virtualization feature in the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid that allows you to optimize the rendering of columns by displaying only the columns that are currently within the viewport. It allows horizontal scrolling to view additional columns. This feature is particularly useful when dealing with grids that have a large number of columns, as it helps to improve the performance and reduce the initial loading time.
 
-To enable column virtualization, you need to set the [enableColumnVirtualization](../../api/grid#enablecolumnvirtualization) property of the Grid to **true**. This configuration instructs the Grid to only render the columns that are currently visible in the viewport. 
+To enable column virtualization, you need to set the [enableColumnVirtualization](https://ej2.syncfusion.com/documentation/api/grid#enablecolumnvirtualization) property of the Grid to **true**. This configuration instructs the Grid to only render the columns that are currently visible in the viewport. 
 
 The following example enable using `enableColumnVirtualization` property.
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -98,21 +85,9 @@ The following example enable using `enableColumnVirtualization` property.
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/grid-cs179" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/grid-cs179/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/grid-cs179/index.html %}
-{% endhighlight %}
-{% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/grid-cs179" %}
-{% endif %}
-
-> Column's [width](../../api/grid/column#width) is required for column virtualization. If column's width is not defined then Grid will consider its value as **200px**.
+> Column's [width](https://ej2.syncfusion.com/documentation/api/grid/column#width) is required for column virtualization. If column's width is not defined then Grid will consider its value as **200px**.
 
 ### Limitations 
 
@@ -140,7 +115,7 @@ The following example enable using `enableColumnVirtualization` property.
 
 ## Browser height limitation in virtual scrolling and solution
 
-You can load millions of records in the Grid by using virtual scrolling, where the grid loads and renders rows on-demand while scrolling vertically. As a result, Grid lightens the browser’s load by minimizing the DOM elements and rendering elements visible in the viewport. The height of the grid is calculated using the Total Records Count * [Row Height](../../api/grid#rowheight) property.
+You can load millions of records in the Grid by using virtual scrolling, where the grid loads and renders rows on-demand while scrolling vertically. As a result, Grid lightens the browser’s load by minimizing the DOM elements and rendering elements visible in the viewport. The height of the grid is calculated using the Total Records Count * [Row Height](https://ej2.syncfusion.com/documentation/api/grid#rowheight) property.
 
 The browser has some maximum pixel height limitations for the scroll bar element. The content placed above the maximum height can't be scrolled if the element height is greater than the browser's maximum height limit. The browser height limit affects the virtual scrolling of the grid. When a large number of records are bound to the Grid, it can only display the records until the maximum height limit of the browser. Once the browser's height limit is reached while scrolling, the user won't able to scroll further to view the remaining records.
 
@@ -197,7 +172,7 @@ Let's see the step by step procedure for how we can overcome the limitation in t
 
 2. Render the grid by define the following features.
 
-{% if page.publishingplatform == "typescript" %}
+
  
     ```ts
         let grid: Grid = new Grid({
@@ -213,24 +188,7 @@ Let's see the step by step procedure for how we can overcome the limitation in t
             ]
         });
     ```
-{% elsif page.publishingplatform == "javascript" %}
- 
-```js
-        var grid = new ej.grids.Grid({
-            dataSource: data,
-            enableVirtualization: true,
-            pageSettings: {pageSize: 50},
-            height: 360,
-            beforeDataBound: beforeDataBound,
-            columns: [
-                { field: 'OrderID', headerText: 'Order ID', textAlign: 'Right', width: 100 }
-                ......
-                ......
-            ]
-        });
 
-```
-{% endif %}
 
 3. In the beforeDataBound event, we set the args.count as 0.5 million to perform scrolling with 0.5 million records and all the data operations are performed with whole records which is handled using the custom adaptor. And also particular segment records count is less than 0.5 million means it will directly assigned the original segmented count instead of 0.5 million.
 
@@ -246,7 +204,7 @@ Let's see the step by step procedure for how we can overcome the limitation in t
 
 4. Render “Load Next Set” button and “Load Previous Set” button at bottom and top of the grid control.
 
-{% if page.publishingplatform == "typescript" %}
+
  
     ```ts
     let button: Button = new Button({
@@ -274,36 +232,7 @@ Let's see the step by step procedure for how we can overcome the limitation in t
         content: 'Load Next Set...'
     });
     ```
-{% elsif page.publishingplatform == "javascript" %}
- 
-```js
-    var button = new ej.buttons.Button({
-        cssClass: 'e-info prevbtn',
-        onClick: prevBtnClick,
-        content: 'Load Previous Set...'
-    });
 
-    var grid = new ej.grids.Grid({
-        dataSource: data,
-        enableVirtualization: true,
-        pageSettings: {pageSize: 50},
-        height: 360,
-        beforeDataBound: beforeDataBound,
-        columns: [
-            { field: 'OrderID', headerText: 'Order ID', textAlign: 'Right', width: 100 }
-            ......
-            ......
-        ]
-    });
-
-   var button = new ej.buttons.Button({
-        cssClass: 'e-info nxtbtn',
-        onClick: nxtBtnClick,
-        content: 'Load Next Set...'
-    });
-
-```
-{% endif %}
 
 5. While click on the `Load Next Set` / `Load Previous Set` button corresponding page data set is loaded to view remaining records of total 2 millions records after doing some simple calculation.
 
@@ -324,7 +253,7 @@ Let's see the step by step procedure for how we can overcome the limitation in t
 
 ### Solution 2: Using RowHeight property
 
-You can reduce the [row height](../../grid/row/row-height) using the [rowHeight](../../api/grid#rowheight) property of the Grid. It will reduce the overall height to accommodate more rows. But this approach optimizes the limitation, but if the height limit is reached after reducing row height also, you have to opt for the previous solution or use paging.
+You can reduce the [row height](../row/row#row-height) using the [rowHeight](https://ej2.syncfusion.com/documentation/api/grid#rowheight) property of the Grid. It will reduce the overall height to accommodate more rows. But this approach optimizes the limitation, but if the height limit is reached after reducing row height also, you have to opt for the previous solution or use paging.
 
 In the following image, you can see how many records will be scrollable when setting rowHeight to "36px" and "30px".
 
@@ -332,7 +261,7 @@ In the following image, you can see how many records will be scrollable when set
 
 ### Solution 3: Using paging instead of virtual scrolling
 
-Similar to virtual scrolling, the [paging](../../grid/paging) feature also loads the data in an on-demand concept. Pagination is also compatible with all the other features(Grouping, Editing, etc.) in Grid. So, use the paging feature instead of virtual scrolling to view a large number of records in the Grid without any kind of performance degradation or browser height limitation.
+Similar to virtual scrolling, the [paging](../paging) feature also loads the data in an on-demand concept. Pagination is also compatible with all the other features(Grouping, Editing, etc.) in Grid. So, use the paging feature instead of virtual scrolling to view a large number of records in the Grid without any kind of performance degradation or browser height limitation.
 
 ## See also
 

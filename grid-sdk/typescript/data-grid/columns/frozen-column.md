@@ -4,7 +4,6 @@ title: Column pinning (Frozen) in TypeScript Grid control | Syncfusion
 description: Learn here all about Column pinning (Frozen) in Syncfusion TypeScript Grid control of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Column pinning (Frozen) 
-publishingplatform: grid-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
@@ -13,9 +12,9 @@ domainurl: https://help.syncfusion.com/grid-sdk
 
 In the TypeScript Grid control, you have the capability to **freeze** columns, ensuring they remain visible as you scroll through extensive datasets. This functionality significantly improves user experience by keeping critical information constantly within view, even when navigating through large volumes of data. This means that important columns remain fixed in their positions, making it easier to access and reference key data points while working with the grid.
 
-In the following example, the [frozenColumns](../../api/grid#frozencolumns) property is set to **2**. This configuration freezes the left two columns of the grid, and they will remain fixed in their positions while the rest of the columns grid can be scrolled horizontally.
+In the following example, the [frozenColumns](https://ej2.syncfusion.com/documentation/api/grid#frozencolumns) property is set to **2**. This configuration freezes the left two columns of the grid, and they will remain fixed in their positions while the rest of the columns grid can be scrolled horizontally.
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -28,35 +27,23 @@ In the following example, the [frozenColumns](../../api/grid#frozencolumns) prop
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/frozen-columns-cs1" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/frozen-columns-cs1/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/frozen-columns-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/frozen-columns-cs1" %}
-{% endif %}
 
 > * Frozen columns should not be set outside the grid view port.
 > * Frozen Grid support column virtualization feature, which helps to improve the Grid performance while loading a large dataset.
 > * The frozen feature is supported only for the columns that are visible in the current view.
-> * You can use both `frozenColumns` property and [frozenRows](../../api/grid#frozenrows) property in the same application.
+> * You can use both `frozenColumns` property and [frozenRows](https://ej2.syncfusion.com/documentation/api/grid#frozenrows) property in the same application.
 > * When both frozen Columns and column virtualization are enabled, horizontal scrolling using touchpad gestures (e.g., two-finger swipe) is not supported. Users must use the horizontal scrollbar to scroll the Grid content.
 
 ## Freeze particular columns
 
 The TypeScript Grid provides a valuable feature that enables you to freeze specific columns, significantly enhancing data visibility and improving your overall user experience. This functionality allows you to select particular columns and freeze them by positioning them at the leftmost side of the grid, ensuring they remain fixed in place while the remaining grid columns can still be scrolled horizontally. While the `frozenColumns` property freezes columns in the order they are initialized in the grid, you can also use the `isFrozen` property at the column level to freeze a specific column at any desired index on the left side, offering flexibility in managing which columns are frozen.
 
-To freeze a particular column in the grid, you can utilize the [isFrozen](../../api/grid/column#isfrozen) property of the grid control as **true**.
+To freeze a particular column in the grid, you can utilize the [isFrozen](https://ej2.syncfusion.com/documentation/api/grid/column#isfrozen) property of the grid control as **true**.
 
-The following example demonstrates how to freeze particular column in grid using `isFrozen` property. This is achieved by the [change](../../api/drop-down-list#change) event of the `DropDownList` control. Within the change event, you can modify the `isFrozen` property of the selected column using the [getColumnByField](../../api/grid#getcolumnbyfield) method. Afterward, you can use the [refreshColumns](../../api/grid#refreshcolumns) method to update the displayed columns based on your interaction.
+The following example demonstrates how to freeze particular column in grid using `isFrozen` property. This is achieved by the [change](https://ej2.syncfusion.com/documentation/api/drop-down-list#change) event of the `DropDownList` control. Within the change event, you can modify the `isFrozen` property of the selected column using the [getColumnByField](https://ej2.syncfusion.com/documentation/api/grid#getcolumnbyfield) method. Afterward, you can use the [refreshColumns](https://ej2.syncfusion.com/documentation/api/grid#refreshcolumns) method to update the displayed columns based on your interaction.
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -69,25 +56,13 @@ The following example demonstrates how to freeze particular column in grid using
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/frozen-columns-cs2" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/frozen-columns-cs2/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/frozen-columns-cs2/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/frozen-columns-cs2" %}
-{% endif %}
 
 ## Freeze direction
 
 In the TypeScript Grid, the "freeze direction" feature serves to reposition frozen columns either to the left, right, or in a fixed position, while still allowing the remaining columns to be horizontally movable. This feature is designed to optimize user experience by ensuring that critical information remains visible even during horizontal scrolling. By default, when you set the `frozenColumns` property of the grid or the `isFrozen` property of individual columns, it results in freezing those columns on the left side of the grid. This helps in keeping important data readily accessible as you navigate through your dataset.
 
-To achieve this, you can utilize the [column.freeze](../../api/grid/column#freeze) property. This property is used to specify the freeze direction for individual columns. The grid will adjust the column positions based on the `column.freeze` value.
+To achieve this, you can utilize the [column.freeze](https://ej2.syncfusion.com/documentation/api/grid/column#freeze) property. This property is used to specify the freeze direction for individual columns. The grid will adjust the column positions based on the `column.freeze` value.
 
 The types of the `column.freeze` directions:
 
@@ -97,9 +72,9 @@ The types of the `column.freeze` directions:
 
 * **Fixed**: The Fixed direction locks a column at a fixed position within the grid. This ensures that the column is always visible during horizontal scroll.
 
-In the following example, the **ShipCountry** column is frozen on the left side, the **CustomerID** column is frozen on the right side and the **Freight** column is frozen on the fixed of the content table. Additionally, you can modify the `column.freeze` property to **Left**, **Right** and **Fixed** based on the selected column by utilizing the [change](../../api/drop-down-list#change) event of the `DropDownList` control.
+In the following example, the **ShipCountry** column is frozen on the left side, the **CustomerID** column is frozen on the right side and the **Freight** column is frozen on the fixed of the content table. Additionally, you can modify the `column.freeze` property to **Left**, **Right** and **Fixed** based on the selected column by utilizing the [change](https://ej2.syncfusion.com/documentation/api/drop-down-list#change) event of the `DropDownList` control.
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -112,21 +87,9 @@ In the following example, the **ShipCountry** column is frozen on the left side,
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/frozen-columns-cs3" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/frozen-columns-cs3/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/frozen-columns-cs3/index.html %}
-{% endhighlight %}
-{% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/frozen-columns-cs3" %}
-{% endif %}
-
-> * Freeze Direction is not compatible with the [isFrozen](../../api/grid/column#isfrozen) and [frozenColumns](../../api/grid#frozencolumns) properties.
+> * Freeze Direction is not compatible with the [isFrozen](https://ej2.syncfusion.com/documentation/api/grid/column#isfrozen) and [frozenColumns](https://ej2.syncfusion.com/documentation/api/grid#frozencolumns) properties.
 
 ## Change default frozen line color
 
@@ -161,7 +124,7 @@ For fixed frozen columns, you need to specify both left and right border as ment
 ```
 The following example demonstrates how to change the default frozen line color using CSS.
 
-{% if page.publishingplatform == "typescript" %}
+
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -174,19 +137,7 @@ The following example demonstrates how to change the default frozen line color u
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/frozen-columns-cs4" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/frozen-columns-cs4/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/frozen-columns-cs4/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/frozen-columns-cs4" %}
-{% endif %}
 
 ## Render DatePicker in frozen columns in Grid
 
@@ -196,7 +147,7 @@ To integrate a `DatePicker` in a frozen column, configure the column’s `edit` 
 
 The following example demonstrates how to render the `DatePicker` in the **OrderDate** column while keeping it frozen. Here the datepicker object is appended to the corresponding input element in the editing row.
 
-{% if page.publishingplatform == "typescript" %}
+
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -209,19 +160,7 @@ The following example demonstrates how to render the `DatePicker` in the **Order
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/frozen-columns-cs5" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/frozen-columns-cs5/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/frozen-columns-cs5/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/frozen-columns-cs5" %}
-{% endif %}
 
 ## Deprecated methods 
 
