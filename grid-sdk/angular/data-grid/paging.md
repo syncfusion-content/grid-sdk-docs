@@ -71,7 +71,7 @@ The following example demonstrates modifying the page size dynamically using a t
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/paging1-cs10" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/paging1-cs10" %}
 
 ### Change page count 
 
@@ -89,7 +89,7 @@ The example below demonstrates updating the page count dynamically using a textb
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/paging1-cs11" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/paging1-cs11" %}
 
 ### Change current page
 
@@ -107,7 +107,7 @@ The following example demonstrates dynamically changing the current page using a
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/paging1-cs12" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/paging1-cs12" %}
 
 ### Add current page in URL as query string 
 
@@ -125,7 +125,7 @@ The following example demonstrates toggling this behavior using an [EJ2 Toggle S
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/paging1-cs13" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/paging1-cs13" %}
 
 ## Pager template
 
@@ -196,7 +196,7 @@ export class AppComponent {
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/pager-template-cs1" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/pager-template-cs1" %}
 
 ## Pager with page size dropdown
 
@@ -214,7 +214,7 @@ When enabled, the pager displays a dropdown that allows selecting the preferred 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/paging1-cs6" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/paging1-cs6" %}
 
 > If the `pageSizes` property is set to a boolean value such as `true` or `false`, the page size dropdown defaults to an array of strings containing options such as ['All', '5', '10', '15', '20']. The `All` option denotes rendering all data in a single page.
 
@@ -234,7 +234,7 @@ The following example demonstrates configuring custom values for the pager dropd
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/paging1-cs14" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/paging1-cs14" %}
 
 > The `pageSizes` property can be configured with either an array of strings or a boolean value.
 
@@ -254,7 +254,7 @@ The example below demonstrates navigating to a specific page by using `goToPage`
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/paging1-cs16" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/paging1-cs16" %}
 
 ## Get the pager element
 
@@ -282,7 +282,7 @@ The following example demonstrates updating the page size dynamically using the 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/paging1-cs18" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/paging1-cs18" %}
 
 ## Render pager at the top of the grid 
 
@@ -298,7 +298,7 @@ By default, pager displayed at the bottom of the grid. It is also possible to di
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/paging1-cs7" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/paging1-cs7" %}
 
 > During paging actions, the pager component triggers the following three events:
 > * The [created](https://ej2.syncfusion.com/angular/documentation/api/pager/pagerModel#created) event triggers when Pager is created.
@@ -373,7 +373,7 @@ export class AppComponent implements OnInit {
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/paging1-cs19" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/paging1-cs19" %}
 
 ## See Also
 

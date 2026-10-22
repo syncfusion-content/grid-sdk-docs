@@ -35,7 +35,7 @@ The following example demonstrates performing the Excel export action in the gri
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/excel-exporting-cs10" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/excel-exporting-cs10" %}
 
 ## Show spinner while exporting 
 
@@ -59,7 +59,7 @@ The following example demonstrates displaying the spinner during Excel export in
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/exporting-cs1" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/exporting-cs1" %}
 
 ## Bind custom data source while exporting
 
@@ -77,7 +77,7 @@ Export custom data to Excel or CSV even if not currently used in the Grid by spe
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/excel-exporting-cs11" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/excel-exporting-cs11" %}
 
 ## Exporting with custom aggregate
 
@@ -168,7 +168,7 @@ export class AppComponent {
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/excel-exporting-aggregate" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/excel-exporting-aggregate" %}
 
 ## Export with cell and row spanning 
 
@@ -188,7 +188,7 @@ The following example demonstrates performing export with cell and row spanning 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/excel-span" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/excel-span" %}
 
 > The [updateCell](https://ej2.syncfusion.com/angular/documentation/api/grid#updatecell) method does not support row and column spanning.
 
@@ -210,7 +210,7 @@ The following example demonstrates exporting the grid with custom date format. I
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/excel-exporting-date" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/excel-exporting-date" %}
 
 ## Merge duplicate cells on export
 
@@ -228,7 +228,7 @@ The following example demonstrates merging duplicate cells in the "Order ID" col
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/excel-exporting-merge" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/excel-exporting-merge" %}
 
 ## Exporting multiple grids
 
@@ -254,7 +254,7 @@ The following example demonstrates exporting multiple grids to the same page in 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/excel-exporting-cs12" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/excel-exporting-cs12" %}
 
 > By default, `multipleExport.blankRows` value is "5".
 
@@ -282,7 +282,7 @@ The following example demonstrates exporting multiple grids to an Excel file whe
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/excel-exporting-cs13" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/excel-exporting-cs13" %}
 
 ### Limitations
 
@@ -312,7 +312,7 @@ The following example demonstrates exporting hierarchical grid to Excel document
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/excel-exporting-cs14" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/excel-exporting-cs14" %}
 
 ### Format the child grid columns before exporting
 
@@ -330,7 +330,7 @@ In the following example, the `exportDetailDataBound` event is used to modify th
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/excel-exporting-cs15" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/excel-exporting-cs15" %}
 
 ### Limitations
 
@@ -350,7 +350,7 @@ Remove the header row from the exported file by clearing header cells in the [ex
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/excel-exporting-delete" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/excel-exporting-delete" %}
 
 ## Add formula for the cell while exporting
 
@@ -370,7 +370,7 @@ In the following example, the [toolbarClick](https://ej2.syncfusion.com/angular/
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/excel-exporting-formula" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/excel-exporting-formula" %}
 
 ## Pass additional parameters to the server when exporting
 
@@ -390,7 +390,7 @@ The following example demonstrates to pass additional parameters to the server w
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/addtional-parameter-cs1" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/addtional-parameter-cs1" %}
 
 ## Limitations
 

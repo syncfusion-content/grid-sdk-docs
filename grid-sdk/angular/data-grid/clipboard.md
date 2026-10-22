@@ -29,7 +29,7 @@ Examples below show grid configuration for clipboard operations. Configure the g
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/copy" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/copy" %}
 
 ## Copy to clipboard by external buttons
 
@@ -47,7 +47,7 @@ To copy selected rows or cells data to the clipboard using external buttons, uti
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/copy-with-header" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/copy-with-header" %}
 
 ## AutoFill
 

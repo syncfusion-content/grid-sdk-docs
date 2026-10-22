@@ -24,4 +24,4 @@ The following example demonstrates how to configure a complex field and bind a d
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/complex-data-cs1" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/complex-data-cs1" %}

@@ -371,13 +371,7 @@ namespace SelectRecord.Controllers
             // Handling filtering operation.
             if (DataManagerRequest.Where != null && DataManagerRequest.Where.Count > 0)
             {
-                foreach (var condition in DataManagerRequest.Where)
-                {
-                    foreach (var predicate in condition.predicates)
-                    {
-                        DataSource = queryableOperation.PerformFiltering(DataSource, DataManagerRequest.Where, predicate.Operator);
-                    }
-                }
+                DataSource = queryableOperation.PerformFiltering(DataSource, DataManagerRequest.Where, DataManagerRequest.Where[0].Condition);
             }
             // Handling sorting operation.
             if (DataManagerRequest.Sorted != null && DataManagerRequest.Sorted.Count > 0)
@@ -575,13 +569,7 @@ namespace SelectRecord.Controllers
             // Handling filtering operation.
             if (DataManagerRequest.Where != null && DataManagerRequest.Where.Count > 0)
             {
-                foreach (var condition in DataManagerRequest.Where)
-                {
-                    foreach (var predicate in condition.predicates)
-                    {
-                        DataSource = queryableOperation.PerformFiltering(DataSource, DataManagerRequest.Where, predicate.Operator);
-                    }
-                }
+                DataSource = queryableOperation.PerformFiltering(DataSource, DataManagerRequest.Where, DataManagerRequest.Where[0].Condition);
             }
             // Handling sorting operation.
             if (DataManagerRequest.Sorted != null && DataManagerRequest.Sorted.Count > 0)

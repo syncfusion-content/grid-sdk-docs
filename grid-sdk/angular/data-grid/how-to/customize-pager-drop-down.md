@@ -22,4 +22,4 @@ You can customize the default values available in the pager dropdown of the Sync
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/custom-column-cs4" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/custom-column-cs4" %}

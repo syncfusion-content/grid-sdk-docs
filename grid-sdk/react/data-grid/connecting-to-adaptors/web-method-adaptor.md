@@ -10,13 +10,13 @@ domainurl: https://help.syncfusion.com/grid-sdk
 
 # Remote Data Binding with REST API using WebMethod in React Data Grid
 
-The `WebMethodAdaptor` in React Data Grid facilitates data binding from remote services using web methods. This powerful feature enables efficient communication between the client-side application and the server. The `WebMethodAdaptor`, like the `URLAdaptor`, sends query parameters encapsulated within an object named `value`. Within this `value` object, various datamanager properties such as `requiresCounts`, `skip`, `take`, `sorted`, and `where` queries are included.
+The `WebMethodAdaptor` in React Data Grid facilitates data binding from remote services using web methods. This powerful feature enables efficient communication between the client-side application and the server. The `WebMethodAdaptor`, like the `URLAdaptor`, sends query parameters encapsulated within an object named `value`. Within this `value` object, various `DataManager` properties such as `requiresCounts`, `skip`, `take`, `sorted`, and `where` queries are included.
  
-![Webmethod Adaptor](../images/web-method-adaptor-value.png)
+![Web method adaptor](../images/web-method-adaptor-value.png)
 
-For complete server‑side configuration and additional implementation details, refer to the [DataManager Webmethod Adaptor documentation](https://ej2.syncfusion.com/react/documentation/data/adaptors/web-method-adaptor), which covers endpoint setup, query processing, and best practices for integrating WebMethod‑based services.
+For complete server‑side configuration and additional implementation details, refer to the [DataManager Web method adaptor documentation](https://ej2.syncfusion.com/react/documentation/data/adaptors/web-method-adaptor), which covers endpoint setup, query processing, and best practices for integrating Web method‑based services.
 
-Once the project creation and backend setup are complete, the next step is to render the React Data Grid Component on the client side.
+Once the project creation and back-end setup are complete, the next step is to render the React Data Grid Component on the client side.
 
 **Project structure:**
 
@@ -35,7 +35,7 @@ WebMethodAdaptor/
 
 ## React Grid frontend setup using Syncfusion WebMethodAdaptor
 
-After finishing the backend setup for the **WebMethodAdaptor** ASP.NET Core project, next step is to integrate the React Data Grid on the client side by following these instructions.
+After finishing the back-end setup for the **WebMethodAdaptor** ASP.NET Core project, next step is to integrate the React Data Grid on the client side by following these instructions.
 
 ### Step 1: Install Syncfusion packages
 
@@ -55,7 +55,7 @@ Navigate to the **src** folder and open (or create) the stylesheet such as **sty
 @import '../node_modules/@syncfusion/ej2-material3-theme/styles/grid/index.css';
 ```
 
-Import the **App.css** in the application entry point(**App.jsx**).
+Import **App.css** into the React application entry point.
 
 ```js
 import "./App.css";
@@ -266,13 +266,7 @@ public object Post([FromBody] DataManager DataManagerRequest)
     if (DataManagerParams.Where != null && DataManagerParams.Where.Count > 0)
     {
         // Handling filtering operation
-        foreach (var condition in DataManagerParams.Where)
-        {
-            foreach (var predicate in condition.predicates)
-            {
-                DataSource = queryableOperation.PerformFiltering(DataSource, DataManagerParams.Where, predicate.Operator);
-            }
-        }
+        DataSource = queryableOperation.PerformFiltering(DataSource, DataManagerParams.Where, DataManagerParams.Where[0].Condition);
     }
     // Get the total records count
     int totalRecordsCount = DataSource.Count();
@@ -750,7 +744,7 @@ if (batchOperation.deleted != null)
 
 ## Run the application
 
-Run the application in Visual Studio, accessible on a URL like **https://localhost:xxxx**. Verify the API returns order data at **https://localhost:xxxx/api/grid**, where **xxxx** is the port. Grid displays order data fetched from the backend API:
+Run the application in Visual Studio, accessible on a URL like **https://localhost:xxxx**. Verify the API returns order data at **https://localhost:xxxx/api/grid**, where **xxxx** is the port. Grid displays order data fetched from the back-end API:
 
 ![WebMethodAdaptor](../images/adaptor.gif)
 
@@ -759,8 +753,8 @@ Run the application in Visual Studio, accessible on a URL like **https://localho
 | Issue               | Resolution                                                                                     |
 |---------------------|-------------------------------------------------------------------------------------------------|
 | **Empty Grid**      | Check the browser console for errors and verify that the API URL is correct.                   |
-| **CORS Error**      | Ensure the backend has proper CORS configuration in **Program.cs**.                             |
-| **Network Error**   | Confirm the backend service is running and accessible.                                          |
+| **CORS Error**      | Ensure the back end has proper CORS configuration in **Program.cs**.                            |
+| **Network Error**   | Confirm the back-end service is running and accessible.                                          |
 | **Wrong Data Format** | API responses must return JSON in the format `{ result: [...], count: number }`.              |
 
 ## Complete sample repository

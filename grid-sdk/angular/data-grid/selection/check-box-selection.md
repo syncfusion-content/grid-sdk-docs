@@ -26,7 +26,7 @@ Here's an example of enabling checkbox selection using the `type` property in th
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/selection-cs3" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/selection-cs3" %}
 
 > Selection can be persisted on all the operations using [selectionSettings.persistSelection](https://ej2.syncfusion.com/angular/documentation/api/grid/selectionSettings#persistselection) property. For persisting selection on the grid, any one of the column should be defined as a primary key using [isPrimaryKey](https://ej2.syncfusion.com/angular/documentation/api/grid/column#isprimarykey) property.
 
@@ -49,7 +49,7 @@ In the following example, it demonstrates dynamically configuring the `checkboxM
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/selection-cs4" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/selection-cs4" %}
 
 ## Hide select-all checkbox in column header
 
@@ -67,7 +67,7 @@ Here's an example of hiding selectall checkbox in column header using empty `Hea
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/selection-checkbox-cs2" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/selection-checkbox-cs2" %}
 
 ## Conditional row selection
 
@@ -88,7 +88,7 @@ The example below prevents selection of rows with canceled orders:
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/prevent-checkbox-selection" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/prevent-checkbox-selection" %}
 
 ## Select a single row in checkbox selection mode
 
@@ -110,7 +110,7 @@ Here's an example of selecting a single row in checkbox selection mode using the
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/selection-single-cs1" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/selection-single-cs1" %}
 
 ## Allow selection only through checkbox click
 
@@ -126,4 +126,4 @@ By default, the Grid component allows selection by clicking either a grid row or
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/selection-checkbox-cs1" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/selection-checkbox-cs1" %}

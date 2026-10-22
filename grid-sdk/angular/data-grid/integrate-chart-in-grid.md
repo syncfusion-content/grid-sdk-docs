@@ -214,7 +214,7 @@ The following complete example demonstrates chart integration into grid context 
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/chart-intergration-cs1" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/chart-intergration-cs1" %}
 
 ### Enable export functionality in GridChart
 
@@ -358,4 +358,4 @@ The following example demonstrates enabling the property panel by setting `enabl
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/chart-intergration-cs2" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/chart-intergration-cs2" %}
