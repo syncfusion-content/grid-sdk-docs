@@ -100,7 +100,7 @@ After executing this script, the asset records are stored in the "asset" table w
 
 ### Step 2: Create a new ASP.NET Core with Angular project
 
-Before installing NuGet packages, a new ASP.NET Core Web Application with Angular must be created. This template creates a full-stack application with both the ASP.NET Core backend server and Angular frontend client in a single solution.
+Before installing NuGet packages, a new ASP.NET Core Web Application with Angular must be created. This template creates a full-stack application with both the ASP.NET Core back-end server and Angular front-end client in a single solution.
 
 **Instructions:**
 
@@ -120,7 +120,7 @@ Before installing NuGet packages, a new ASP.NET Core Web Application with Angula
 8. Click **Create**.
 
 Visual Studio will create a solution with two projects:
-- **Grid_SQLite.Server**: The ASP.NET Core backend with Controllers, and configuration files.
+- **Grid_SQLite.Server**: The ASP.NET Core back end with Controllers and configuration files.
 - **grid_sqlite.client**: The Angular + Vite frontend client application.
 
 ### Step 3: Install required NuGet packages
@@ -162,7 +162,7 @@ Install-Package Syncfusion.EJ2.AspNet.Core -Version 32.2.3
    - **Microsoft.EntityFrameworkCore.Tools** (version 9.0.0)
    - **Syncfusion.EJ2.AspNet.Core** (version 32.2.3)
 
-All required packages are now installed. Verify the installation by checking the project's **.csproj** file or using `dotnet list package` command.
+All required packages are now installed. Verify the installation by checking the project's **.csproj** file or by using the .NET CLI.
 
 
 ### Step 4: Create the data model
@@ -434,7 +434,7 @@ The database connection string has been configured successfully.
 
 ### Step 7: Register services in Program.cs file
 
-The **Program.cs** file is the entry point for configuring and bootstrapping the ASP.NET Core application. This is where all required services and middleware are registered, including CORS (Cross-Origin Resource Sharing), Entity Framework Core `DbContext`, JSON serialization, and controllers.
+The **Program.cs** file is the entry point for configuring and bootstrapping the ASP.NET Core application. It registers the required services and configures request processing, including CORS (Cross-Origin Resource Sharing), Entity Framework Core `DbContext`, JSON serialization, and controllers.
 
 **Instructions:**
 
@@ -590,7 +590,7 @@ export class AppComponent {
 
 The Angular Data Grid can bind data from a **SQLite database**  using [DataManager](https://ej2.syncfusion.com/angular/documentation/data/getting-started) and set the `adaptor` property to `CustomAdaptor` for scenarios that require full control over data operations.
 
-The `CustomAdaptor` (client-side) is a bridge between the Angular Grid and the ASP.NET Core backend. It extends the `UrlAdaptor` and handles all data operation requests by constructing HTTP POST calls to corresponding server endpoints. When the Grid performs operations like reading, searching, filtering, sorting, paging, and CRUD operations, the CustomAdaptor intercepts these actions and formats them into HTTP requests. These requests are sent to the ASP.NET Core Web API controller on the server, which processes the `DataManagerRequest` using Entity Framework Core to query the SQLite database and return the results.
+The `CustomAdaptor` (client-side) is a bridge between the Angular Grid and the ASP.NET Core back end. It extends the `UrlAdaptor` and handles all data operation requests by constructing HTTP POST calls to corresponding server endpoints. When the Grid performs operations like reading, searching, filtering, sorting, paging, and CRUD operations, the CustomAdaptor intercepts these actions and formats them into HTTP requests. These requests are sent to the ASP.NET Core Web API controller on the server, which processes the `DataManagerRequest` using Entity Framework Core to query the SQLite database and return the results.
 
 **Instructions:**
 
@@ -1002,7 +1002,7 @@ namespace Grid_SQLite.Server.Controllers
             var op = new DataOperations();
 
             if (dm.Where?.Count > 0)
-                query = op.PerformFiltering(query, dm.Where, dm.Where[0].Operator)
+                query = op.PerformFiltering(query, dm.Where, dm.Where[0].Condition)
                     .Cast<Asset>()
                     .AsQueryable();
 
@@ -1559,7 +1559,7 @@ namespace Grid_SQLite.Server.Controllers
                 query = op.PerformSearching(query, dm.Search).Cast<Asset>().AsQueryable();
 
             if (dm.Where?.Count > 0)
-                query = op.PerformFiltering(query, dm.Where, dm.Where[0].Operator)
+                query = op.PerformFiltering(query, dm.Where, dm.Where[0].Condition)
                     .Cast<Asset>()
                     .AsQueryable();
 
@@ -1671,7 +1671,7 @@ namespace Grid_SQLite.Server.Controllers
 
 ## Running the application
 
-Since the project is created using the ASP.NET Core with Angular template, both the backend and frontend are configured to run together automatically. Visual Studio handles the build and launch process for both projects.
+Since the project is created using the ASP.NET Core with Angular template, both the back end and front end are configured to run together automatically. Visual Studio handles the build and launch process for both projects.
 
 **Step 1: Open the solution**
 
@@ -1681,14 +1681,14 @@ Since the project is created using the ASP.NET Core with Angular template, both 
 **Step 2: Set startup project**
 
 1. Ensure **Grid_SQLite.Server** is set as the startup project (it should be by default).
-2. The solution is configured to automatically launch both the backend server and the Angular development server.
+2. The solution is configured to automatically launch both the back-end server and the Angular development server.
 
 **Step 3: Run the application**
 
 1. Press <kbd>F5</kbd> or click the **Start** button in Visual Studio.
 2. Visual Studio will:
    - Build the **Grid_SQLite.Server** project
-   - Start the ASP.NET Core backend server (typically on **https://localhost:7066**)
+   - Start the ASP.NET Core back-end server (typically on **https://localhost:7066**)
    - Automatically start the Angular development server in the background
    - Open a browser window with the application
 
@@ -1696,7 +1696,7 @@ Since the project is created using the ASP.NET Core with Angular template, both 
 
 - The application should open automatically in the default browser
 - The Angular frontend will be served through the ASP.NET Core server
-- All API calls to **https://localhost:7066/api/asset/** will be handled by the backend
+- All API calls to **https://localhost:7066/api/asset/** will be handled by the back end.
 
 The asset management application is now running and ready to use.
 

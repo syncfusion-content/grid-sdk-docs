@@ -50,10 +50,10 @@ To achieve real-time data binding with SignalR in your Grid, follow the steps be
 
 2. In the Add Client-Side Library dialog:
 
-* Choose **unpkg** as the provider.
-* Type **@microsoft/signalr@latest** in the library field.
-* Choose Select specific files, expand dist/browser, and check **signalr.js** and **signalr.min.js**.
-* Specify wwwroot/js/signalr/* as the target location.
+* Choose the CDN provider documented on [this provider page](https://unpkg.com).
+* Enter the package identifier shown on the [latest client package page](https://www.npmjs.com/package/@microsoft/signalr) in the library field.
+* Choose Select specific files, expand dist/browser, and select the [browser script](https://unpkg.com/@microsoft/signalr@latest/dist/browser/signalr.js) and [minified browser script](https://unpkg.com/@microsoft/signalr@latest/dist/browser/signalr.min.js).
+* Specify `wwwroot/js` as the target location.
 * Click Install.
 
 **Step 4:** Add the **Microsoft.AspNetCore.SignalR** NuGet package to the project:
@@ -97,7 +97,7 @@ namespace signalR.Pages
             }
             if (dataManagerRequest.Where != null && dataManagerRequest.Where.Count > 0)
             {
-                DataSource = operation.PerformFiltering(DataSource, dataManagerRequest.Where, dataManagerRequest.Where[0].Operator);
+                DataSource = operation.PerformFiltering(DataSource, dataManagerRequest.Where, dataManagerRequest.Where[0].Condition);
             }
             int count = DataSource.Cast<OrdersDetails>().Count();
             if (dataManagerRequest.Skip != 0)
@@ -111,7 +111,7 @@ namespace signalR.Pages
             return dataManagerRequest.RequiresCounts ? new JsonResult(new { result = DataSource, count = count }) : new JsonResult(DataSource);
         }
 
-        public JsonResult OnPostGetdata()
+        public JsonResult OnPostGetData()
         {
             IEnumerable DataSource = OrdersDetails.GetAllRecords();
             return new JsonResult(DataSource);
@@ -393,7 +393,7 @@ C. In the Fetch success event, you have the flexibility to utilize the Grid `end
     document.getElementById('sample').onclick = function () {
         var grid = document.getElementById("grid").ej2_instances[0];
         const fetchRequest = new ej.base.Fetch({
-            url: '@fullUrl?handler=Getdata',
+            url: '@fullUrl?handler=GetData',
             type: "POST",
             beforeSend: function (args) {
                 args.fetchRequest.headers.set('XSRF-TOKEN', document.querySelector('input[type = "hidden"][name = "__RequestVerificationToken"]').value);
@@ -483,7 +483,7 @@ C. In the Fetch success event, you have the flexibility to utilize the Grid `end
 
 ```
 
-**Step 5:**  In the **Index.cshtml.cs** file, there is a method named **OnPostGetdata** that provides the data source for the Grid. When the button is clicked, an Fetch request is sent to retrieve the data from the server and bind it to the Grid. Additionally, implement server-side logic to perform add, edit, and delete operations. Add the following code:
+**Step 5:** In the **Index.cshtml.cs** file, the **OnPostGetData** method provides the Grid's data source. When the button is clicked, a fetch request retrieves data from the server and binds it to the Grid. Add the following code to implement the server-side logic for adding, editing, and deleting records:
 
 ```cs
 using Microsoft.AspNetCore.Mvc;
@@ -501,7 +501,7 @@ namespace FetchRequest.Pages
 
         }
 
-        public ActionResult OnPostGetdata()
+        public ActionResult OnPostGetData()
         {
             IEnumerable DataSource = OrdersDetails.GetAllRecords();
             return new JsonResult(DataSource);
@@ -705,7 +705,7 @@ C. In the AJAX success event, you have the flexibility to utilize the Grid `endE
     document.getElementById('sample').onclick = function () {
         var grid = document.getElementById("grid").ej2_instances[0];
         const ajax = new ej.base.Ajax({
-            url: '@fullUrl?handler=Getdata',
+            url: '@fullUrl?handler=GetData',
             type: "POST",
             beforeSend: function (xhr) {
                 ajax.httpRequest.setRequestHeader("XSRF-TOKEN",document.querySelector('input[type="hidden"][name="__RequestVerificationToken"]').value);
@@ -796,7 +796,7 @@ C. In the AJAX success event, you have the flexibility to utilize the Grid `endE
 
 ```
 
-**Step 5:**  In the **Index.cshtml.cs** file, there is a method named **OnPostGetdata** that provides the data source for the Grid. When the button is clicked, an AJAX request is sent to retrieve the data from the server and bind it to the Grid. Additionally, implement server-side logic to perform add, edit, and delete operations. Add the following code:
+**Step 5:** In the **Index.cshtml.cs** file, the **OnPostGetData** method provides the Grid's data source. When the button is clicked, an AJAX request retrieves data from the server and binds it to the Grid. Add the following code to implement the server-side logic for adding, editing, and deleting records:
 
 ```cs
 using Microsoft.AspNetCore.Mvc;
@@ -814,7 +814,7 @@ namespace AJAXRequest.Pages
 
         }
 
-        public ActionResult OnPostGetdata()
+        public ActionResult OnPostGetData()
         {
             IEnumerable DataSource = OrdersDetails.GetAllRecords();
             return new JsonResult(DataSource);
@@ -1107,4 +1107,3 @@ The following features are not supported in the immutable mode:
 * Clipboard
 * AutoFit
 * Filtering
-

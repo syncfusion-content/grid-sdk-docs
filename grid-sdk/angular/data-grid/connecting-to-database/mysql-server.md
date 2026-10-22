@@ -446,7 +446,7 @@ And update (**src/app/app.component.html**):
 
 The Angular Data Grid can bind data from a **MySQL server** database using [DataManager](https://ej2.syncfusion.com/angular/documentation/data/getting-started) and set the `adaptor` property to `CustomAdaptor` for scenarios that require full control over data operations.
 
-The `CustomAdaptor` (client-side) is a bridge between the Angular Grid and the ASP.NET Core backend. It extends the `UrlAdaptor` and handles all data operation requests by constructing HTTP POST calls to corresponding server endpoints. When the Grid performs operations like reading, searching, filtering, sorting, paging, and CRUD operations, the CustomAdaptor intercepts these actions and formats them into HTTP requests. These requests are sent to the ASP.NET Core Web API controller on the server, which processes the `DataManagerRequest` using LINQ2DB to query the MySQL database and return the results.
+The `CustomAdaptor` (client-side) is a bridge between the Angular Grid and the ASP.NET Core back end. It extends the `UrlAdaptor` and handles all data operation requests by constructing HTTP POST calls to corresponding server endpoints. When the Grid performs operations like reading, searching, filtering, sorting, paging, and CRUD operations, the CustomAdaptor intercepts these actions and formats them into HTTP requests. These requests are sent to the ASP.NET Core Web API controller on the server, which processes the `DataManagerRequest` using LINQ2DB to query the MySQL database and return the results.
 
 **Instructions:**
 
@@ -891,7 +891,7 @@ Update the "UrlDatasource" method in the **GridController.cs** file to handle fi
 
                 // Filtering
                 if (dm.Where != null && dm.Where.Count > 0)
-                    query = operation.PerformFiltering(query, dm.Where, dm.Where[0].Operator);
+                    query = operation.PerformFiltering(query, dm.Where, dm.Where[0].Condition);
 
                 // Other action code goes here
 
@@ -1446,7 +1446,7 @@ namespace Grid_MySQL.Server.Controllers
 
                 // Filtering
                 if (dm.Where != null && dm.Where.Count > 0)
-                    query = operation.PerformFiltering(query, dm.Where, dm.Where[0].Operator);
+                    query = operation.PerformFiltering(query, dm.Where, dm.Where[0].Condition);
 
                 // Sorting
                 if (dm.Sorted != null && dm.Sorted.Count > 0)
@@ -1580,7 +1580,7 @@ namespace Grid_MySQL.Server.Controllers
 
 ## Running the application
 
-The application consists of two parts: the ASP.NET Core backend server and the Angular frontend client. Both need to be running for the complete application to work.
+The application consists of two parts: the ASP.NET Core back-end server and the Angular front-end client. Both need to be running for the complete application to work.
 
 **Run the Server:**
 

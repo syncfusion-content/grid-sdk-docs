@@ -11,7 +11,7 @@ domainurl: https://help.syncfusion.com/grid-sdk
 
 # Remote Data Binding with REST API using WebMethod in Data Grid
 
-The WebMethodAdaptor in TypeScript Grid facilitates data binding from remote services using web methods. This powerful feature enables efficient communication between the client-side application and the server. The WebMethodAdaptor, like the URL adaptor, sends query parameters encapsulated within an object named **value**. Within this **value** object, various datamanager properties such as **requiresCounts**, **skip**, **take**, **sorted**, and **where** queries are included.
+The WebMethodAdaptor in TypeScript Grid facilitates data binding from remote services using web methods. This powerful feature enables efficient communication between the client-side application and the server. The WebMethodAdaptor, like the URL adaptor, sends query parameters encapsulated within an object named **value**. Within this **value** object, various DataManager properties such as **requiresCounts**, **skip**, **take**, **sorted**, and **where** queries are included.
 
 ![Webmethod Adaptor](../images/web-method-adaptor-value.png)
 
@@ -707,13 +707,7 @@ public object Post([FromBody] DataManager DataManagerRequest)
     if (DataManagerParams.Where != null && DataManagerParams.Where.Count > 0)
     {
         // Handling filtering operation
-        foreach (var condition in DataManagerParams.Where)
-        {
-            foreach (var predicate in condition.predicates)
-            {
-                DataSource = queryableOperation.PerformFiltering(DataSource, DataManagerParams.Where, predicate.Operator);
-            }
-        }
+        DataSource = queryableOperation.PerformFiltering(DataSource, DataManagerParams.Where, DataManagerParams.Where[0].Condition);
     }
     // Get the total records count
     int totalRecordsCount = DataSource.Count();

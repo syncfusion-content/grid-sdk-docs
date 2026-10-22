@@ -17,7 +17,7 @@ Microsoft SQL Server database can be bound to the Syncfusion TypeScript Grid in 
 
 **1. Using UrlAdaptor**
 
-The [UrlAdaptor](../../grid/connecting-to-adaptors/url-adaptor) serves as the base adaptor for facilitating communication between remote data services and an UI component. It enables the remote binding of data to the Syncfusion TypeScript Grid by connecting to an existing pre-configured API service linked to the Microsoft SQL Server databaset. While the Grid supports various adaptors to fulfill this requirement, including [Web API](../../grid/connecting-to-adaptors/web-api-adaptor), [ODataV4](../../grid/connecting-to-adaptors/odatav4-adaptor), [UrlAdaptor](../../grid/connecting-to-adaptors/url-adaptor), and [GraphQL](../../grid/connecting-to-adaptors/graphql-adaptor), the `UrlAdaptor` is particularly useful for the scenarios where a custom API service with unique logic for handling data and CRUD operations is in place. This approach allows for custom handling of data and CRUD operations, and the resultant data returned in the `result` and `count` format for display in the Grid.
+The [UrlAdaptor](../../grid/connecting-to-adaptors/url-adaptor) serves as the base adaptor for facilitating communication between remote data services and a UI component. It enables the remote binding of data to the Syncfusion TypeScript Grid by connecting to an existing pre-configured API service linked to the Microsoft SQL Server database. While the Grid supports various adaptors to fulfill this requirement, including [Web API](../../grid/connecting-to-adaptors/web-api-adaptor), [ODataV4](../../grid/connecting-to-adaptors/odatav4-adaptor), [UrlAdaptor](../../grid/connecting-to-adaptors/url-adaptor), and [GraphQL](../../grid/connecting-to-adaptors/graphql-adaptor), the `UrlAdaptor` is particularly useful for scenarios where a custom API service with unique logic for handling data and CRUD operations is in place. This approach allows for custom handling of data and CRUD operations, and the resulting data is returned in the `result` and `count` format for display in the Grid.
 
 **2. Using CustomAdaptor**
 
@@ -803,14 +803,7 @@ public object Post([FromBody] DataManagerRequest DataManagerRequest)
   // Handling filtering operation.
   if (DataManagerRequest.Where != null && DataManagerRequest.Where.Count > 0)
   {
-    foreach (WhereFilter condition in DataManagerRequest.Where)
-    {
-      foreach (WhereFilter predicate in condition.predicates)
-      {
-        DataSource = queryableOperation.PerformFiltering(DataSource, DataManagerRequest.Where, predicate.Operator);
-        // Add custom logic here if needed and remove above method.
-      }
-    }
+    DataSource = queryableOperation.PerformFiltering(DataSource, DataManagerRequest.Where, DataManagerRequest.Where[0].Condition);
   }
 
   // Get the total count of records.
@@ -1750,14 +1743,7 @@ public object Post([FromBody] DataManagerRequest DataManagerRequest)
   // Handling filtering operation.
   if (DataManagerRequest.Where != null && DataManagerRequest.Where.Count > 0) 
   {
-    foreach (WhereFilter condition in DataManagerRequest.Where) 
-    {
-      foreach (WhereFilter predicate in condition.predicates) 
-      {
-        DataSource = queryableOperation.PerformFiltering(DataSource, DataManagerRequest.Where, predicate.Operator);
-        // Add custom logic here if needed and remove above method.
-      }
-    }
+    DataSource = queryableOperation.PerformFiltering(DataSource, DataManagerRequest.Where, DataManagerRequest.Where[0].Condition);
   }
 
   // Get the total count of records.

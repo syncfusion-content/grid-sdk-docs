@@ -4,7 +4,7 @@ title: Lazy Load Grouping in Syncfusion ASP.NET MVC Grid Component
 description: Learn here all about Lazy Load Grouping in Syncfusion ASP.NET MVC Grid component of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Lazy Load Grouping
-publishingplatform: grid-sdk
+publishingplatform: asp-net-mvc
 documentation: ug
 ---
 
@@ -59,7 +59,7 @@ public IActionResult UrlDataSource([FromBody] DataManagerRequest dataRequest)
     }
     if (dataRequest.Where != null && dataRequest.Where.Count > 0) //Filtering
     {
-        dataSource = operation.PerformFiltering(dataSource, dataRequest.Where, dataRequest.Where[0].Operator);
+        dataSource = operation.PerformFiltering(dataSource, dataRequest.Where, dataRequest.Where[0].Condition);
     }
     int count = dataSource.Cast<Customers>().Count();
     if (dataRequest.IsLazyLoad == false && dataRequest.Sorted != null && dataRequest.Sorted.Count > 0) //Sorting for grouping

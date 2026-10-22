@@ -82,7 +82,7 @@ In the below demo, custom validation applied for **CustomerID** column.
 
 The Custom validation feature in the Grid allows you to apply validation rules and messages to a column based on the value of another column in edit mode. This feature is particularly useful when you need to enforce specific validation criteria that depend on the selection made in a dropdown column.
 
-In the following sample, dropdownlist edit type is used for the **Role** and **Salary** columns. Here, you can apply the custom validation in the **Salary** column based on the value selected in the **Role** column.
+In the following sample, the drop-down list edit type is used for the **Role** and **Salary** columns. You can apply custom validation to the **Salary** column based on the value selected in the **Role** column.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -334,13 +334,7 @@ namespace UrlAdaptor.Controllers
             // Handling filtering operation.
             if (DataManagerRequest.Where != null && DataManagerRequest.Where.Count > 0)
             {
-                foreach (var condition in DataManagerRequest.Where)
-                {
-                    foreach (var predicate in condition.predicates)
-                    {
-                        DataSource = queryableOperation.PerformFiltering(DataSource, DataManagerRequest.Where, predicate.Operator);
-                    }
-                }
+                DataSource = queryableOperation.PerformFiltering(DataSource, DataManagerRequest.Where, DataManagerRequest.Where[0].Condition);
             }
 
             // Handling sorting operation.
@@ -648,13 +642,7 @@ namespace UrlAdaptor.Controllers
             // Handling filtering operation.
             if (DataManagerRequest.Where != null && DataManagerRequest.Where.Count > 0)
             {
-                foreach (var condition in DataManagerRequest.Where)
-                {
-                    foreach (var predicate in condition.predicates)
-                    {
-                        DataSource = queryableOperation.PerformFiltering(DataSource, DataManagerRequest.Where, predicate.Operator);
-                    }
-                }
+                DataSource = queryableOperation.PerformFiltering(DataSource, DataManagerRequest.Where, DataManagerRequest.Where[0].Condition);
             }
 
             // Handling sorting operation.

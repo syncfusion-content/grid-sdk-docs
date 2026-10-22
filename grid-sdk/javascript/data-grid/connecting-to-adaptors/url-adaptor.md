@@ -185,7 +185,7 @@ Run the following command in the project root to create a `package.json` file:
 npm init -y
 ```
 
-**Step 2:** Install Webpack and Other Dependencies
+**Step 2:** Install the bundler and other dependencies
 
 ```bash
 npm i -D -E clean-webpack-plugin css-loader html-webpack-plugin mini-css-extract-plugin ts-loader typescript webpack webpack-cli
@@ -207,9 +207,9 @@ Replace the **scripts** property of `package.json` file with the following code:
 
 Create a folder named `wwwroot` in the project root directory. This folder will contain static files served by the web server.
 
-**Step 5:** Create webpack.config.js
+**Step 5:** Create the bundler configuration file
 
-Create a file named `webpack.config.js` in the project root, with the following code to configure the Webpack compilation process:
+Create the bundler configuration file in the project root by using the following code:
 
 ```js
 const path = require("path");
@@ -342,7 +342,7 @@ Run the project in Visual Studio.
 
 The `wwwroot/index.html` file is served at **https://localhost:xxxx**.
 
-With these steps, you have integrated the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid control with your ASP.NET Core project and set up the necessary client-side configuration using Webpack and JavaScript. This will allow the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid to fetch data from your API and display it accordingly.
+With these steps, you have integrated the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid control with your ASP.NET Core project and set up the necessary client-side configuration using the bundler and JavaScript. This allows the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid to fetch data from your API and display it.
 
 {% elsif page.publishingplatform == "javascript" %}
 
@@ -684,13 +684,7 @@ public object Post([FromBody] DataManagerRequest DataManagerRequest)
   if (DataManagerRequest.Where != null && DataManagerRequest.Where.Count > 0)
   {
     // Handling filtering operation
-    foreach (var condition in DataManagerRequest.Where)
-    {
-      foreach (var predicate in condition.predicates)
-      {
-        DataSource = queryableOperation.PerformFiltering(DataSource, DataManagerRequest.Where, predicate.Operator);
-      }
-    }
+    DataSource = queryableOperation.PerformFiltering(DataSource, DataManagerRequest.Where, DataManagerRequest.Where[0].Condition);
   }
   // Get the total records count
   int totalRecordsCount = DataSource.Count();
@@ -1406,7 +1400,7 @@ public object Post([FromBody] DataManagerRequest DataManagerRequest)
   // Handling filtering operation
   if (DataManagerRequest.Where != null && DataManagerRequest.Where.Count > 0)
   {
-    DataSource = operation.PerformFiltering(DataSource, DataManagerRequest.Where, DataManagerRequest.Where[0].Operator);
+    DataSource = operation.PerformFiltering(DataSource, DataManagerRequest.Where, DataManagerRequest.Where[0].Condition);
   }
 
   // Get the total count of records.

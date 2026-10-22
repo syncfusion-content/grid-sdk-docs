@@ -84,13 +84,13 @@ npm init -y
 
 **Step 6:** Create a folder named `wwwroot` in the project root directory. This folder will contain static files served by the web server.
 
-**Step 7:** Install Webpack and Other Dependencies
+**Step 7:** Install the bundler and other dependencies
 
 ```bash
 npm i -D -E clean-webpack-plugin css-loader html-webpack-plugin mini-css-extract-plugin ts-loader typescript webpack webpack-cli
 ```
 
-**Step 8:** Create a file named `webpack.config.js` in the project root, with the following code to configure the Webpack compilation process:
+**Step 8:** Create the bundler configuration file in the project root by using the following code:
 
 ```js
 const path = require("path");
@@ -421,13 +421,7 @@ namespace siagnalR.Controllers
             // Handling filtering operation
             if (DataManagerRequest.Where != null && DataManagerRequest.Where.Count > 0)
             {
-                foreach (var condition in DataManagerRequest.Where)
-                {
-                    foreach (var predicate in condition.predicates)
-                    {
-                        DataSource = queryableOperation.PerformFiltering(DataSource, DataManagerRequest.Where, predicate.Operator);
-                    }
-                }
+                DataSource = queryableOperation.PerformFiltering(DataSource, DataManagerRequest.Where, DataManagerRequest.Where[0].Condition);
             }
 
             // Handling sorting operation
@@ -664,13 +658,13 @@ The wwwroot/index.html file is served at https://localhost:xxxx.
 
 2. In the Add Client-Side Library dialog:
 
-   * Choose **unpkg** as the provider.
-   * Type **@microsoft/signalr@latest** in the library field.
-   * Choose Select specific files, expand dist/browser, and check **signalr.js** and **signalr.min.js**.
-   * Specify wwwroot/js/signalr/* as the target location.
+   * Choose the CDN provider documented on [this provider page](https://unpkg.com).
+   * Enter the package identifier shown on the [latest client package page](https://www.npmjs.com/package/@microsoft/signalr) in the library field.
+   * Choose Select specific files, expand dist/browser, and select the [browser script](https://unpkg.com/@microsoft/signalr@latest/dist/browser/signalr.js) and [minified browser script](https://unpkg.com/@microsoft/signalr@latest/dist/browser/signalr.min.js).
+   * Specify `wwwroot/js` as the target location.
    * Click Install.
 
-**Step 4:** Create an **index.html** file under the **wwwroot** folde and add the following code:
+**Step 4:** Create an **index.html** file under the **wwwroot** folder and add the following code:
 
 {% tabs %}
 {% highlight html tabtitle="index.html" %}
@@ -925,13 +919,7 @@ namespace siagnalR.Controllers
             // Handling filtering operation
             if (DataManagerRequest.Where != null && DataManagerRequest.Where.Count > 0)
             {
-                foreach (var condition in DataManagerRequest.Where)
-                {
-                    foreach (var predicate in condition.predicates)
-                    {
-                        DataSource = queryableOperation.PerformFiltering(DataSource, DataManagerRequest.Where, predicate.Operator);
-                    }
-                }
+                DataSource = queryableOperation.PerformFiltering(DataSource, DataManagerRequest.Where, DataManagerRequest.Where[0].Condition);
             }
 
             // Handling sorting operation
@@ -1265,13 +1253,13 @@ npm init -y
 
 **Step 6:** Create a folder named `wwwroot` in the project root directory. This folder will contain static files served by the web server.
 
-**Step 7:** Install Webpack and Other Dependencies
+**Step 7:** Install the bundler and other dependencies
 
 ```bash
 npm i -D -E clean-webpack-plugin css-loader html-webpack-plugin mini-css-extract-plugin ts-loader typescript webpack webpack-cli
 ```
 
-**Step 8:** Create a file named `webpack.config.js` in the project root, with the following code to configure the Webpack compilation process:
+**Step 8:** Create the bundler configuration file in the project root by using the following code:
 
 {% tabs %}
 {% highlight js tabtitle="webpack.config.js" %}
@@ -1777,7 +1765,7 @@ app.Run();
 
 **Step 4:** Create a folder named **wwwroot** in the project root directory. This folder will contain static files served by the web server.
 
-**Step 5:** Create an **index.html** file under the **wwwroot** folde and add the following code:
+**Step 5:** Create an **index.html** file under the **wwwroot** folder and add the following code:
 
 {% tabs %}
 {% highlight html tabtitle="index.html" %}
@@ -2216,13 +2204,13 @@ npm init -y
 
 **Step 6:** Create a folder named `wwwroot` in the project root directory. This folder will contain static files served by the web server.
 
-**Step 7:** Install Webpack and Other Dependencies
+**Step 7:** Install the bundler and other dependencies
 
 ```bash
 npm i -D -E clean-webpack-plugin css-loader html-webpack-plugin mini-css-extract-plugin ts-loader typescript webpack webpack-cli
 ```
 
-**Step 8:** Create a file named `webpack.config.js` in the project root, with the following code to configure the Webpack compilation process:
+**Step 8:** Create the bundler configuration file in the project root by using the following code:
 
 {% tabs %}
 {% highlight js tabtitle="webpack.config.js" %}
@@ -2729,7 +2717,7 @@ app.Run();
 
 **Step 4:** Create a folder named **wwwroot** in the project root directory. This folder will contain static files served by the web server.
 
-**Step 5:** Create an **index.html** file under the **wwwroot** folde and add the following code::
+**Step 5:** Create an **index.html** file under the **wwwroot** folder and add the following code:
 
 {% tabs %}
 {% highlight html tabtitle="index.html" %}
