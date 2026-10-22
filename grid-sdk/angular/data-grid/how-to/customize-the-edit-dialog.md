@@ -26,4 +26,4 @@ Additionally, localization for the **Save** and **Cancel** buttons is achieved b
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/edit-cs48" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/edit-cs48" %}

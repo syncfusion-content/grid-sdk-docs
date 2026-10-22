@@ -64,7 +64,7 @@ For instance, if an order has "EmployeeID: 1", the Grid looks up the employee wi
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/grid-cs19" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/grid-cs19" %}
 
 > If `foreignKeyField` is not defined, the column uses [field](https://ej2.syncfusion.com/angular/documentation/api/grid/column#field).
 
@@ -84,7 +84,7 @@ The following example demonstrates foreign key column implementation with remote
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/foreignkey-cs12" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/foreignkey-cs12" %}
 
 > * For remote data, sorting and grouping are performed based on [column.foreignKeyField](https://ej2.syncfusion.com/angular/documentation/api/grid/column#foreignkeyfield) instead of [column.foreignKeyValue](https://ej2.syncfusion.com/angular/documentation/api/grid/column#foreignkeyvalue).
 > * If [column.foreignKeyField](https://ej2.syncfusion.com/angular/documentation/api/grid/column#foreignkeyfield) is not defined, the column uses [column.field](https://ej2.syncfusion.com/angular/documentation/api/grid/column#field).
@@ -110,7 +110,7 @@ In the following example, an [AutoComplete](https://ej2.syncfusion.com/angular/d
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/foreignkey-cs1" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/foreignkey-cs1" %}
 
 ## Customize filter UI of foreign key column
 
@@ -133,7 +133,7 @@ In the following example, a [DropDownList](https://ej2.syncfusion.com/angular/do
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/foreignkey-cs2" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/foreignkey-cs2" %}
 
 ## Use filter bar template in foreign key column
 
@@ -155,7 +155,7 @@ In the following example, the "EmployeeID" column is a foreign key column with t
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/foreignkey-cs3" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/foreignkey-cs3" %}
 
 ## Perform aggregation in foreign key column
 
@@ -242,7 +242,7 @@ export class AppComponent implements OnInit {
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/foreignkey-cs4" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/foreignkey-cs4" %}
 
 ## Render foreign key value in column template
 
@@ -262,7 +262,7 @@ The following example demonstrates rendering foreign key values in a column temp
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/column-foreign-template" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/column-foreign-template" %}
 
 ## Enable multiple foreign key columns
 
@@ -280,7 +280,7 @@ In the following example, "Customer Name" and "Ship City" are foreign key column
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/foreignkey-cs5" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/foreignkey-cs5" %}
 
 ## Edit template in foreign key column using remote data
 

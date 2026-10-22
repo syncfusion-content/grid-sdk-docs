@@ -24,7 +24,7 @@ To enable column resizing, set the [`allowResizing`](https://ej2.syncfusion.com/
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/resize-cs2" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/resize-cs2" %}
 
 > * Resizing can be disabled for a particular column by specifying [columns.allowResizing](https://ej2.syncfusion.com/angular/documentation/api/grid/columnDirective#allowresizing) to `false`.
 > * In RTL mode, click and drag the left edge of the header cell to resize the column.
@@ -57,7 +57,7 @@ In the following example, resize constraints are applied to multiple columns:
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/resize-cs3" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/resize-cs3" %}
 
 > * The [columns.minWidth](https://ej2.syncfusion.com/angular/documentation/api/grid/columnDirective#minwidth) and [columns.maxWidth](https://ej2.syncfusion.com/angular/documentation/api/grid/columnDirective#maxwidth) properties are applied only during column resizing. They are not considered when resizing the window, as columns cannot be re-rendered dynamically during that process.
 > * When setting the `minWidth` and `maxWidth` properties, ensure that the values are appropriate for the data and layout requirements.
@@ -79,7 +79,7 @@ The following example demonstrates disabling resize functionality for the "Custo
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/resize-cs7" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/resize-cs7" %}
 
 > Resizing can also be prevented by setting `args.cancel` to `true` in the [resizeStart](https://ej2.syncfusion.com/angular/documentation/api/grid#resizestart) event.
 
@@ -106,7 +106,7 @@ In the following code, resizing is disabled for the "Ship City" column:
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/resize-cs4" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/resize-cs4" %}
 
 ## Resizing modes
 
@@ -134,7 +134,7 @@ The following example demonstrates dynamically switching between `Normal` and `A
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/resize-cs8" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/resize-cs8" %}
 
 > When the [autoFit](https://ej2.syncfusion.com/angular/documentation/api/grid#autofit) property is set to `true`, the Grid will automatically adjust its column width based on the content inside them. In `normal` resize mode, if the `autoFit` property is set to `true`, the Grid will maintain any empty space that is left over after resizing the columns. However, in `auto` resize mode, the Grid will ignore any empty space.
 
@@ -176,7 +176,7 @@ Programmatic column resizing involves two steps:
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/resize-cs6" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/resize-cs6" %}
 
 > The [refreshColumns](https://ej2.syncfusion.com/angular/documentation/api/grid#refreshcolumns)  method is essential for applying width changes made through the column object. Without calling this method, width changes will not be reflected in the grid display.
 
@@ -269,7 +269,7 @@ export class AppComponent implements OnInit {
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/resize-cs5" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/resize-cs5" %}
 
 > * The `ResizeArgs` object provides comprehensive information such as the current column width, new column width, column index, and the original DOM event.
 > * The `resizing` event is triggered continuously during drag operations, potentially triggering dozens of times per second. Avoid heavy computations or DOM manipulations in this event handler to maintain smooth performance.
