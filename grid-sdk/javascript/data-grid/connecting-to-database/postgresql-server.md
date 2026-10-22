@@ -331,7 +331,7 @@ To integrate Syncfusion JavaScript Grid into your JavaScript and ASP.NET Core pr
 npm init -y
 ```
 
-**Step 2:** Install webpack and other dependencies.
+**Step 2:** Install the bundler and other dependencies.
 
 ```bash
 npm i -D -E clean-webpack-plugin css-loader html-webpack-plugin mini-css-extract-plugin ts-loader typescript webpack webpack-cli
@@ -349,7 +349,7 @@ npm i -D -E clean-webpack-plugin css-loader html-webpack-plugin mini-css-extract
 
 **Step 4:** Create a folder named `wwwroot` in the project root directory. This folder will contain static files served by the web server.
 
-**Step 5:** Create a file named `webpack.config.js` in the project root, with the following code to configure the Webpack compilation process:
+**Step 5:** Create the bundler configuration file in the project root by using the following code:
 
 ```js
 const path = require("path");

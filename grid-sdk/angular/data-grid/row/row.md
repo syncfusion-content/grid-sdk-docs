@@ -246,7 +246,7 @@ The `emptyRecordMode` property determines how the empty record row is displayed 
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/empty-record-mode" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/empty-record-mode" %}
 
 ## Row Number in Data Grid
 
@@ -266,7 +266,7 @@ The Grid automatically updates row numbers when operations such as paging, sorti
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/rownumber" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/rownumber" %}
 
 ## Row pinning (Frozen)
 

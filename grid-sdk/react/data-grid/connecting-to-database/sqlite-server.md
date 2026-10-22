@@ -162,7 +162,7 @@ Install-Package Syncfusion.EJ2.AspNet.Core -Version 32.2.3
    - **Microsoft.EntityFrameworkCore.Tools** (version 9.0.0)
    - **Syncfusion.EJ2.AspNet.Core** (version 32.2.3)
 
-All required packages are now installed. Verify the installation by checking the project's **.csproj** file or by running `dotnet list package` with the .NET CLI.
+All required packages are now installed. Verify the installation by checking the project's **.csproj** file or by using the .NET CLI.
 
 
 ### Step 4: Create the data model
@@ -1743,7 +1743,7 @@ namespace Grid_SQLite.Server.Controllers
 
 ## Running the application
 
-Since the project is created using the ASP.NET Core with React template, both the backend and frontend are configured to run together automatically. Visual Studio handles the build and launch process for both projects.
+Since the project is created using the ASP.NET Core with React template, both the back end and front end are configured to run together automatically. Visual Studio handles the build and launch process for both projects.
 
 **Step 1: Open the solution**
 
@@ -1753,14 +1753,14 @@ Since the project is created using the ASP.NET Core with React template, both th
 **Step 2: Set startup project**
 
 1. Ensure **Grid_SQLite.Server** is set as the startup project (it should be by default).
-2. The solution is configured to automatically launch both the backend server and the React development server.
+2. The solution is configured to automatically launch both the back-end server and the React development server.
 
 **Step 3: Run the application**
 
 1. Press <kbd>F5</kbd> or click the **Start** button in Visual Studio.
 2. Visual Studio will:
    - Build the **Grid_SQLite.Server** project
-   - Start the ASP.NET Core backend server (typically on **https://localhost:7116**)
+   - Start the ASP.NET Core back-end server (typically on **https://localhost:7116**)
    - Automatically start the React development server in the background
    - Open a browser window with the application
 
@@ -1768,7 +1768,7 @@ Since the project is created using the ASP.NET Core with React template, both th
 
 - The application should open automatically in the default browser
 - The React frontend will be served through the ASP.NET Core server
-- All API calls to **https://localhost:7116/api/asset** will be handled by the backend
+- All API calls to **https://localhost:7116/api/asset** will be handled by the back end.
 
 The asset management application is now running and ready to use.
 

@@ -429,11 +429,11 @@ builder.Services.AddDbContext<TicketsDbContext>(options =>
 // CORS if you call from React development server
 builder.Services.AddCors(opts =>
 {
-    opts.AddPolicy("dev", p => p.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod());
+    opts.AddPolicy("development", p => p.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod());
 });
 
 var app = builder.Build();
-app.UseCors("dev");
+app.UseCors("development");
 app.MapControllers();
 app.Run();
 
@@ -445,8 +445,8 @@ app.Run();
 - `NullValueHandling.Ignore`: Critical setting that prevents null values from being serialized to value types (like `int`), avoiding deserialization errors. This prevents issues when the Grid sends partial data updates.
 - `AddDbContext<TicketsDbContext>()`: Registers the Entity Framework Core DbContext with dependency injection, making it available for controllers via constructor injection.
 - `UseSqlServer()`: Specifies SQL Server as the database provider and retrieves the connection string from **appsettings.json**.
-- `AddCors("dev")`: Configures a development CORS policy with `AllowAnyOrigin()`, `AllowAnyHeader()`, and `AllowAnyMethod()`. This allows the React app to make HTTP requests to the API from any port.
-- `UseCors("dev")`: Applies the CORS policy to the request-processing pipeline. **Must be called before MapControllers()**.
+- `AddCors("development")`: Configures a development CORS policy with `AllowAnyOrigin()`, `AllowAnyHeader()`, and `AllowAnyMethod()`. This allows the React app to make HTTP requests to the API from any port.
+- `UseCors("development")`: Applies the CORS policy to the request-processing pipeline. **Must be called before MapControllers()**.
 - `MapControllers()`: Maps controller action methods to HTTP endpoints.
 - `app.Run()`: Starts the Kestrel web server and listens for incoming HTTP requests.
 
@@ -1479,11 +1479,11 @@ namespace Grid_EntityFramework.Server.Controllers
 
 ## Running the application
 
-Follow the steps below to set up and run both the backend server and the React frontend client.
+Follow the steps below to set up and run both the back-end server and the React front-end client.
 
-### Running the ASP.NET Core backend server
+### Running the ASP.NET Core back-end server
 
-**Step 1: Build the backend:**
+**Step 1: Build the back end:**
 
 1. Open the terminal or Package Manager Console.
 2. Navigate to the **Grid_EntityFramework.Server** project directory.
@@ -1493,7 +1493,7 @@ Follow the steps below to set up and run both the backend server and the React f
 dotnet build
 ```
 
-**Step 2: Run the backend server:**
+**Step 2: Run the back-end server:**
 
 Execute the following command:
 
@@ -1501,9 +1501,9 @@ Execute the following command:
 dotnet run
 ```
 
-**Step 3: Verify backend is Running:**
+**Step 3: Verify the back end is running:**
 
-- The backend server should start and listen on **http://localhost:5018** (or the port shown in the terminal).
+- The back-end server should start and listen on **http://localhost:5018** (or the port shown in the terminal).
 - Test the API endpoint: **http://localhost:5018/api/tickets/url**
 
 ### Running the React frontend client
@@ -1521,7 +1521,7 @@ npm run dev
 
 1. Open a web browser.
 2. Navigate to **http://localhost:5173** (Vite default) or the port shown in the terminal.
-3. The application will automatically connect to the backend API at **http://localhost:5018/api/tickets/url**.
+3. The application will automatically connect to the back-end API at **http://localhost:5018/api/tickets/url**.
 4. The ticket management application is now running and ready to use.
 
 **Available Features:**

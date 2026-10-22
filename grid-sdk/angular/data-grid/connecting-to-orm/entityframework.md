@@ -397,7 +397,7 @@ The connection string has been successfully configured.
 
 ### Step 7: Register services
 
-The **Program.cs** file is the entry point for configuring and bootstrapping the ASP.NET Core application. This is where all required services and middleware are registered, including CORS (Cross-Origin Resource Sharing), Entity Framework Core DbContext, JSON serialization, and controllers.
+The **Program.cs** file is the entry point for configuring and bootstrapping the ASP.NET Core application. It registers the required services and configures request processing, including CORS (Cross-Origin Resource Sharing), Entity Framework Core DbContext, JSON serialization, and controllers.
 
 **Instructions:**
 
@@ -447,7 +447,7 @@ app.Run();
 - `AddDbContext<TicketsDbContext>()`: Registers the Entity Framework Core DbContext with dependency injection, making it available for controllers via constructor injection.
 - `UseSqlServer()`: Specifies SQL Server as the database provider and retrieves the connection string from **appsettings.json**.
 - `AddCors("dev")`: Configures CORS policy with `AllowAnyOrigin()`, `AllowAnyHeader()`, and `AllowAnyMethod()` for development purposes. This allows the Angular app to make HTTP requests to the API from any port.
-- `UseCors("dev")`: Applies the CORS policy to the middleware pipeline. **Must be called before MapControllers()**.
+- `UseCors("dev")`: Applies the CORS policy to the request-processing pipeline. **Must be called before MapControllers()**.
 - `MapControllers()`: Maps controller action methods to HTTP endpoints.
 - `app.Run()`: Starts the Kestrel web server and listens for incoming HTTP requests.
 
@@ -536,7 +536,7 @@ export class AppComponent implements OnInit {
 
 The Angular Data Grid can bind data from a **SQL Server** database using [DataManager](https://ej2.syncfusion.com/angular/documentation/data/getting-started) and set the `adaptor` property to `CustomAdaptor` for scenarios that require full control over data operations.
 
-The `CustomAdaptor` (client-side) is a bridge between the Angular Grid and the ASP.NET Core backend. It extends the `UrlAdaptor` and handles all data operation requests by constructing HTTP POST calls to corresponding server endpoints. When the Grid performs operations like reading, searching, filtering, sorting, paging, and CRUD operations, the CustomAdaptor intercepts these actions and formats them into HTTP requests. These requests are sent to the ASP.NET Core Web API controller on the server, which processes the `DataManagerRequest` using Entity Framework Core to query the SQL Server database and return the results.
+The `CustomAdaptor` (client-side) is a bridge between the Angular Grid and the ASP.NET Core back end. It extends the `UrlAdaptor` and handles all data operation requests by constructing HTTP POST calls to corresponding server endpoints. When the Grid performs operations like reading, searching, filtering, sorting, paging, and CRUD operations, the CustomAdaptor intercepts these actions and formats them into HTTP requests. These requests are sent to the ASP.NET Core Web API controller on the server, which processes the `DataManagerRequest` using Entity Framework Core to query the SQL Server database and return the results.
 
 **Instructions:**
 
@@ -1604,15 +1604,15 @@ namespace Grid_EntityFramework.Server.Controllers
 
 ## Running the application
 
-### Running the ASP.NET Core backend server
+### Running the ASP.NET Core back-end server
 
-- Open a terminal or Package Manager Console, navigate to the **Grid_EntityFramework.Server** project directory, and run the following commands to build and start the backend server:
+- Open a terminal or Package Manager Console, navigate to the **Grid_EntityFramework.Server** project directory, and run the following commands to build and start the back-end server:
 
 ```powershell
 dotnet build
 dotnet run
 ```
-- The backend server starts on **http://localhost:5018** (or the displayed port), and the API can be tested at **http://localhost:5018/api/tickets/url**.
+- The back-end server starts on **http://localhost:5018** (or the displayed port), and the API can be tested at **http://localhost:5018/api/tickets/url**.
 
 ### Running the Angular frontend Client
 

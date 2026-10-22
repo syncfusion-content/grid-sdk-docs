@@ -23,6 +23,7 @@ Syncfusion Angular Grid modules help optimize your application’s bundle size b
 | [Editing](./editing/edit) | `EditService` | Inject this module to use editing feature. |
 | [Formula](./formula/formula) | `FormulaService` | Inject this module to use formula feature. |
 | [Aggregates](./aggregates/aggregates) | `AggregateService` | Inject this module to use aggregate feature. |
+| [Formula](./formula/formula) | `FormulaService` | Inject this module to use formula feature. |
 | [Column Chooser](./columns/column-chooser) | `ColumnChooserService` | Inject this module to use column chooser feature. |
 | [Column Menu](./columns/column-menu) | `ColumnMenuService` | Inject this module to use column menu feature. |
 | [Command Column](./editing/command-column-editing) | `CommandColumnService` | Inject this module to use command column feature. |
