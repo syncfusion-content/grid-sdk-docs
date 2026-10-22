@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Pivot Chart in React Pivot Table
 
-The Pivot Chart in the Syncfusion React Pivot Table component visualizes aggregated values in a graphical format. It provides essential options like drill down and drill up operations, 21 chart types, and various display settings for series, axes, legends, export, print, and tooltips. The main purpose of the Pivot Chart is to present Pivot Table data in a way that is easy to understand and interact with.
+The Pivot Chart in the Syncfusion React Pivot Table component visualizes aggregated values in a graphical format. It provides essential options like drill down and drill up operations, 25 chart types, and various display settings for series, axes, legends, export, print, and tooltips. The main purpose of the Pivot Chart is to present Pivot Table data in a way that is easy to understand and interact with.
 
 Users can display the pivot chart component individually with pivot values and modify the report dynamically using the field list and grouping bar. The [`displayOption`](https://ej2.syncfusion.com/react/documentation/api/pivotview/displayoptionmodel) property in the Pivot Table allows users to control the visibility of both the grid and chart components. This property includes the following options:
 
@@ -50,21 +50,21 @@ The Pivot Chart offers 21 different chart types. You can choose any of these cha
 - Column
 - Area
 - Bar
-- StepArea
-- StackingLine
 - StackingColumn
 - StackingArea
 - StackingBar
+- StackingLine
 - StepLine
-- Pareto
+- StepArea
 - Bubble
 - Scatter
 - Spline
 - SplineArea
-- StackingLine100
 - StackingColumn100
 - StackingBar100
 - StackingArea100
+- StackingLine100
+- Pareto
 - Polar
 - Radar
 

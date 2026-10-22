@@ -188,18 +188,18 @@ In the following sample, title of y-axis and x-axis are customized.
 
 ## Pivot Chart types
 
-It supports 19 different types of pivot charts as follows:
+It supports 21 different types of pivot charts as follows:
 
 * Line
 * Column
 * Area
 * Bar
-* StepArea
 * StackingColumn
 * StackingArea
 * StackingBar
+* StackingLine
 * StepLine
-* Pareto
+* StepArea
 * Bubble
 * Scatter
 * Spline
@@ -207,6 +207,8 @@ It supports 19 different types of pivot charts as follows:
 * StackingColumn100
 * StackingBar100
 * StackingArea100
+* StackingLine100
+* Pareto
 * Polar
 * Radar
 
