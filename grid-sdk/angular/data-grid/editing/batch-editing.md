@@ -26,7 +26,7 @@ The following example demonstrates enabling batch editing in the Angular Grid co
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/edit-cs3" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/edit-cs3" %}
 
 ## Automatically update a column based on changes in another column
 
@@ -44,7 +44,7 @@ In the following example, the "Total Cost" column value is updated based on chan
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/edit-cs4" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/edit-cs4" %}
 
 > The [updateCell](https://ej2.syncfusion.com/angular/documentation/api/grid#updatecell) method enables programmatic updates to cells in batch mode.
 
@@ -74,7 +74,7 @@ In the following demo, CRUD operations are prevented based on the "Role" column 
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/edit-cs5" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/edit-cs5" %}
 
 ## Adding a new row at the bottom of the grid
 
@@ -98,7 +98,7 @@ The following example illustrates to enable the addition of new rows at the bott
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/edit-batch-add-cs1" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/edit-batch-add-cs1" %}
 
 ## Confirmation dialog
 
@@ -128,7 +128,7 @@ The following example demonstrates enabling or disabling the confirmation dialog
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/edit-cs6" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/edit-cs6" %}
 
 ## Single-click editing and navigation with arrow keys
 
@@ -150,7 +150,7 @@ Below is an example showing both single-click editing and arrow key navigation b
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/batch-edit" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/batch-edit" %}
 
 ## Disable editing for specific cells
 
@@ -170,7 +170,7 @@ For example, the following illustrates disabling editing for cells with the valu
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/edit-cs22" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/edit-cs22" %}
 
 ## Immediate save or update of changes
 
@@ -199,4 +199,4 @@ The following example demonstrates immediate saving or updating using the `cellS
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/edit-batch-cs1" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/edit-batch-cs1" %}

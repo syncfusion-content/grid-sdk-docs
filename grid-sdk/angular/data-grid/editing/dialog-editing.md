@@ -26,7 +26,7 @@ The following example demonstrates to enable dialog editing in the Angular Grid 
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/edit-cs7" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/edit-cs7" %}
 
 ## Customize the edit dialog
 
@@ -60,7 +60,7 @@ The following example demonstrates to customize the edit dialog using the `actio
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/edit-cs8" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/edit-cs8" %}
 
 > The Grid's add or edit dialog element applies a max-height property that is calculated based on the available window height. For typical screens (1920 x 1080), the dialog's maximum height can be set up to 658px.
 
@@ -87,7 +87,7 @@ In the following example, the "Customer ID" column is rendered as a hidden colum
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/edit-cs9" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/edit-cs9" %}
 
 ## Wizard-like dialog editing
 
@@ -113,7 +113,7 @@ The example below demonstrates the wizard-like dialog editing in the grid using 
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/wizardtemplate-cs1" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/wizardtemplate-cs1" %}
 
 ## Customize add/edit dialog footer
 
@@ -131,4 +131,4 @@ In the following sample, using the `dialog` argument of the `actionComplete` eve
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/edit-cs10" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/edit-cs10" %}

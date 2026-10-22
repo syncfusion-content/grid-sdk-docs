@@ -304,7 +304,7 @@ The following example demonstrates passing additional parameters to the server w
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/passing-parameters-on-server" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/passing-parameters-on-server" %}
 
 ## Limitations
 

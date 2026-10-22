@@ -77,7 +77,7 @@ The DataGrid components support two size modes to optimize user experience acros
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/style-appearance-cs2" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/style-appearance-cs2" %}
 
 ## Theme Customization
 
@@ -156,7 +156,7 @@ The Fluent 2 theme leverages modern CSS custom properties to provide a clean and
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/style-appearance-cs1" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/style-appearance-cs1" %}
 
 ### Using Theme Studio
 

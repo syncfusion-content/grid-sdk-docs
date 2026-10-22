@@ -59,7 +59,7 @@ export class AppComponent implements OnInit {
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/template-cs1" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/template-cs1" %}
 
 > The [template](https://ej2.syncfusion.com/angular/documentation/api/grid/column#template) property supports any valid HTML content within a column. Ensure the `alt` attribute is descriptive for screen reader accessibility.
 
@@ -115,7 +115,7 @@ export class AppComponent implements OnInit {
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/template-cs5" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/template-cs5" %}
 
 > The `window.open()` method is a built-in JavaScript function that opens a new browser window or tab with the specified URL.
 
@@ -205,7 +205,7 @@ export class AppComponent implements OnInit {
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/template-cs8" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/template-cs8" %}
 
 ### Render ColorPicker component in a column
 
@@ -227,7 +227,7 @@ The Syncfusion<sup style="font-size:70%">&reg;</sup> [ColorPicker](https://ej2.s
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/template-cs6" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/template-cs6" %}
 
 ### Render DropDownList component in a column
 
@@ -251,7 +251,7 @@ The following example shows the DropDownList component in the Grid "Order Status
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/column-sync-comp-cs1" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/column-sync-comp-cs1" %}
 
 ### Render Chip component in a column
 
@@ -275,7 +275,7 @@ The following example shows the Chips component in the Grid "First Name" column.
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/template-cs7" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/template-cs7" %}
 
 ### Render ProgressBar component in a column
 
@@ -300,7 +300,7 @@ The following example shows the Progress Bar component in the Grid "Freight" col
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/template-cs9" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/template-cs9" %}
 
 ### Render RadioButton in a column 
 
@@ -325,7 +325,7 @@ The following example demonstrates rendering a RadioButton in the "Order Status"
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/template-radiobutton" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/template-radiobutton" %}
 
 ## Using conditional template
 
@@ -355,7 +355,7 @@ The following example demonstrates rendering a checkbox conditionally based on t
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/condition-template-cs1" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/condition-template-cs1" %}
 
 > Any template element or custom component can be used in a conditional template based on application requirements.
 
@@ -428,7 +428,7 @@ export class AppComponent implements OnInit {
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/template-cs2" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/template-cs2" %}
 
 ## Use custom helper inside the template
 
@@ -479,7 +479,7 @@ export class AppComponent implements OnInit {
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/custom-helper-template" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/custom-helper-template" %}
 
 > Custom helpers can only be used inside the `ng-template` method of a column.
 
@@ -499,7 +499,7 @@ The following example demonstrates adding a template column using an external bu
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/template-cs10" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/template-cs10" %}
 
 ## Enhancing Grid performance by enabling or disabling Aria Labels
 
@@ -561,6 +561,6 @@ export class AppComponent implements OnInit {
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/template-cs11" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/template-cs11" %}
 
 > When using template columns, test the rendering across different screen sizes and devices to ensure responsiveness, especially for complex components like DropDownList or LineChart.

@@ -36,7 +36,7 @@ The following example demonstrates row spanning in action:
 {% endhighlight %}
 {% endtabs %}
   
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/spanning-cs2" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/spanning-cs2" %}
 
 > * Spanning can be disabled for a particular Grid page by using the `requestType` value from the `queryCellInfo` event argument.
 > * The `rowSpan` and `colSpan` attributes can be used together to merge cells both vertically and horizontally.
@@ -79,7 +79,7 @@ This example demonstrates the `enableRowSpan` property for merging cells vertica
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/grid/row-spanning-cs1" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/row-spanning-cs1" %}
 
 > Row spanning can also be controlled at the column level. Set `enableRowSpan` to `false` in a column definition to disable merging for that column.
 
