@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Pivot Chart in ASP.NET Core Pivot Table | Syncfusion
-description: Learn how the ASP.NET Core Pivot Table pairs with a Pivot Chart that supports 25+ chart types, drill down/up, and grid-or-chart display via e-displayOption.
+description: Learn how the ASP.NET Core Pivot Table pairs with a Pivot Chart that supports 25 chart types, drill down/up, and grid-or-chart display via e-displayOption.
 platform: grid-sdk
 control: Pivot Chart
 publishingplatform: ##Platform_Name##
@@ -11,7 +11,7 @@ documentation: ug
 
 # Pivot Chart in ASP.NET Core Pivot Table
 
-The Pivot Chart in the Syncfusion ASP.NET Core Pivot Table component helps users visualize aggregated values in a clear and graphical format. It provides essential options like drill down and drill up operations, over 25 chart types, and various display settings for series, axes, legends, export, print, and tooltips. The main purpose of the Pivot Chart is to present Pivot Table data in a way that is easy to understand and interact with.
+The Pivot Chart in the Syncfusion ASP.NET Core Pivot Table component helps users visualize aggregated values in a clear and graphical format. It provides essential options like drill down and drill up operations, 25 chart types, and various display settings for series, axes, legends, export, print, and tooltips. The main purpose of the Pivot Chart is to present Pivot Table data in a way that is easy to understand and interact with.
 
 Users can display the pivot chart component individually with pivot values and modify the report dynamically using the field list and grouping bar. The [`e-displayOption`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewDisplayOption.html) property in the Pivot Table allows users to control the visibility of both the grid and chart components. This property includes the following options:
 
