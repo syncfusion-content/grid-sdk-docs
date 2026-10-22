@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Pivot Chart in Blazor Pivot Table | Syncfusion
-description: Learn how the Blazor Pivot Table visualizes aggregated values with an integrated Pivot Chart supporting 15+ chart types, drill down, and configurable display.
+description: Learn how the Blazor Pivot Table visualizes aggregated values with an integrated Pivot Chart supporting 25+ chart types, drill down, and configurable display.
 platform: grid-sdk
 control: Pivot Table
 documentation: ug
@@ -9,7 +9,7 @@ documentation: ug
 
 # Pivot Chart in Blazor Pivot Table
 
-The Pivot Chart in the [Blazor Pivot Table](https://www.syncfusion.com/blazor-components/blazor-pivot-table) component helps users visualize aggregated values in a clear and graphical format. It provides essential options like drill down and drill up operations, over 15 chart types, and various display settings for series, axes, legends, export, print, and tooltips. The main purpose of the Pivot Chart is to present Pivot Table data in a way that is easy to understand and interact with.
+The Pivot Chart in the [Blazor Pivot Table](https://www.syncfusion.com/blazor-components/blazor-pivot-table) component helps users visualize aggregated values in a clear and graphical format. It provides essential options like drill down and drill up operations, over 25 chart types, and various display settings for series, axes, legends, export, print, and tooltips. The main purpose of the Pivot Chart is to present Pivot Table data in a way that is easy to understand and interact with.
 
 To have a quick glance about Pivot Chart in the [Blazor Pivot Table](https://www.syncfusion.com/blazor-components/blazor-pivot-table), watch this video:
 
@@ -68,18 +68,18 @@ The Pivot Table component supports both local and remote data binding options to
 
 ## Chart Types
 
-The Pivot Chart offers 19 different chart types, allowing users to visualize and analyze data in various ways. You can choose any of these chart types based on your needs:
+The Pivot Chart offers 21 different chart types, allowing users to visualize and analyze data in various ways. You can choose any of these chart types based on your needs:
 
 * Line
 * Column
 * Area
 * Bar
-* StepArea
 * StackingColumn
 * StackingArea
 * StackingBar
+* StackingLine
 * StepLine
-* Pareto
+* StepArea
 * Bubble
 * Scatter
 * Spline
@@ -87,6 +87,8 @@ The Pivot Chart offers 19 different chart types, allowing users to visualize and
 * StackingColumn100
 * StackingBar100
 * StackingArea100
+* StackingLine100
+* Pareto
 * Polar
 * Radar
 
