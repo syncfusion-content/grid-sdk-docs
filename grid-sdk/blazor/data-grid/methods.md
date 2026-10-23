@@ -139,12 +139,6 @@ internal sealed class OrderData
 
 {% previewsample "https://blazorplayground.syncfusion.com/embed/TODO?appbar=false&editor=false&result=true&errorlist=false&theme=fluent2" %}
 
-What each button does:
-- `PrintAsync` opens the print dialog.
-- `ExportToExcelAsync` exports the grid to Excel.
-- `ExportToCsvAsync` exports the grid to CSV.
-- `ExportToPdfAsync` exports the grid to PDF.
-
 > The export methods use the current grid state.
 
 ## Grouping
@@ -237,13 +231,6 @@ internal sealed class OrderData
 {% endtabs %}
 
 {% previewsample "https://blazorplayground.syncfusion.com/embed/TODO?appbar=false&editor=false&result=true&errorlist=false&theme=fluent2" %}
-
-What each button does:
-- `GroupColumnAsync` groups the `ShipCity` column.
-- `UngroupColumnAsync` removes grouping from the `ShipCity` column.
-- `ExpandAllGroupAsync` expands every group.
-- `CollapseAllGroupAsync` collapses every group.
-- `ClearGroupingAsync` removes all grouped columns.
 
 ## Selection
 
@@ -357,14 +344,6 @@ internal sealed class OrderData
 
 {% previewsample "https://blazorplayground.syncfusion.com/embed/TODO?appbar=false&editor=false&result=true&errorlist=false&theme=fluent2" %}
 
-What each button does:
-- `SelectRowAsync` selects a row.
-- `SelectRowsByRangeAsync` selects a row range.
-- `SelectCellAsync` selects one cell.
-- `SelectCellsAsync` selects multiple cells.
-- `SelectCellsByRangeAsync` selects a cell range.
-- `ClearSelectionAsync` clears the selection.
-
 > Set `AllowSelection="true"` before you call the selection methods.
 
 ## Searching
@@ -383,14 +362,6 @@ Prerequisites:
 | `FindPreviousHighlightAsync` | Moves to the previous highlight. | None | `Task` |
 | `FindGoToAsync` | Jumps to the highlighted match number. | `int matchNumber` | `Task` |
 | `ResetFindAsync` | Clears the search highlight state. | None | `Task` |
-
-What each button does:
-- `SearchAsync` finds the entered text in the grid.
-- `FindHighlightAsync` highlights search matches.
-- `FindNextHighlightAsync` and `FindPreviousHighlightAsync` move through matches.
-- `ResetFindAsync` clears the find state.
-
-
 
 {% tabs %}
 {% highlight razor tabtitle="Index.razor" %}
@@ -469,13 +440,6 @@ internal sealed class OrderData
 
 {% previewsample "https://blazorplayground.syncfusion.com/embed/TODO?appbar=false&editor=false&result=true&errorlist=false&theme=fluent2" %}
 
-What each button does:
-- `SearchAsync` searches for the text.
-- `FindHighlightAsync` highlights the matches.
-- `FindNextHighlightAsync` moves to the next match.
-- `FindPreviousHighlightAsync` moves to the previous match.
-- `ResetFindAsync` clears the highlight state.
-
 ## Sorting and filtering
 
 Use these methods to sort columns and clear applied sort or filter criteria.
@@ -491,15 +455,7 @@ Prerequisites:
 | `ClearSortingAsync` | Clears sorting. | `List<string> fieldNames = null` | `Task` |
 | `FilterByColumnAsync` | Filters a column by field name and operator. | `string fieldName`, `string filterOperator`, `object filterValue`, `string predicate = null`, `bool? matchCase = null`, `bool? ignoreAccent = null`, `object actualFilterValue = null`, `object actualOperator = null`, `string columnUid = null` | `Task` |
 | `ClearFilteringAsync` | Clears filtering. | `()` or `string fieldName` or `List<string> fieldNames` | `Task` |
-
-What each button does:
-- `SortColumnAsync` sorts one column.
-- `SortColumnsAsync` applies multi-column sorting.
-- `ClearSortingAsync` removes sort criteria.
-- `FilterByColumnAsync` applies a filter.
-- `ClearFilteringAsync` removes filters.
-
-
+| `GetFilteredRecordsAsync` | Returns the records that match the current filters. | `bool isStrictFiltering = false` | `Task<object>` |
 
 {% tabs %}
 {% highlight razor tabtitle="Index.razor" %}
@@ -511,6 +467,7 @@ What each button does:
 <SfButton Content="Clear Sorting" OnClick="ClearSortContent" />
 <SfButton Content="Filter City" OnClick="FilterContent" />
 <SfButton Content="Clear Filtering" OnClick="ClearFilterContent" />
+<SfButton Content="Get Filtered Records" OnClick="GetFilteredRecordsContent" />
 
 <SfGrid @ref="DefaultGrid" DataSource="@Orders" AllowSorting="true" AllowFiltering="true">
     <GridColumns>
@@ -537,6 +494,11 @@ What each button does:
     private async Task ClearSortContent() => await DefaultGrid.ClearSortingAsync();
     private async Task FilterContent() => await DefaultGrid.FilterByColumnAsync(nameof(OrderData.ShipCity), "startswith", "R");
     private async Task ClearFilterContent() => await DefaultGrid.ClearFilteringAsync();
+    private async Task GetFilteredRecordsContent()
+    {
+        var filteredRecords = await DefaultGrid.GetFilteredRecordsAsync();
+        LastAction = filteredRecords?.GetType().Name;
+    }
 }
 {% endhighlight %}
 {% highlight c# tabtitle="OrderData.cs" %}
@@ -580,12 +542,6 @@ internal sealed class OrderData
 
 {% previewsample "https://blazorplayground.syncfusion.com/embed/TODO?appbar=false&editor=false&result=true&errorlist=false&theme=fluent2" %}
 
-What each button does:
-- `SortColumnAsync` sorts the grid by `OrderID`.
-- `ClearSortingAsync` removes the sort.
-- `FilterByColumnAsync` filters rows where `ShipCity` starts with `R`.
-- `ClearFilteringAsync` clears the filter.
-
 ## State persistence
 
 Use these methods to save, restore, or clear the persisted grid state.
@@ -598,13 +554,6 @@ Prerequisites:
 | `GetPersistDataAsync` | Returns the current persisted state string. | None | `Task<string>` |
 | `SetPersistDataAsync` | Applies a persisted state string. | `string properties` | `Task` |
 | `ResetPersistDataAsync` | Clears persisted state. | None | `Task` |
-
-What each button does:
-- `GetPersistDataAsync` reads the current persisted grid state.
-- `SetPersistDataAsync` restores a saved grid state.
-- `ResetPersistDataAsync` clears the saved state.
-
-
 
 {% tabs %}
 {% highlight razor tabtitle="Index.razor" %}
@@ -677,11 +626,6 @@ internal sealed class OrderData
 
 {% previewsample "https://blazorplayground.syncfusion.com/embed/TODO?appbar=false&editor=false&result=true&errorlist=false&theme=fluent2" %}
 
-What each button does:
-- `GetPersistDataAsync` saves the current grid state string.
-- `SetPersistDataAsync` restores the saved state.
-- `ResetPersistDataAsync` clears persisted state.
-
 ## Clipboard
 
 Use the clipboard methods to copy or paste grid data.
@@ -694,12 +638,6 @@ Prerequisites:
 |--------|-------------|------------|---------|
 | `CopyAsync` | Copies the selected rows or cells to the clipboard. | `bool? withHeader = null` | `Task` |
 | `PasteAsync` | Pastes clipboard data into the grid. | None | `Task` |
-
-What each button does:
-- `CopyAsync` copies the current selection to the clipboard.
-- `PasteAsync` pastes clipboard data into the grid.
-
-
 
 {% tabs %}
 {% highlight razor tabtitle="Index.razor" %}
@@ -771,10 +709,6 @@ internal sealed class OrderData
 
 {% previewsample "https://blazorplayground.syncfusion.com/embed/TODO?appbar=false&editor=false&result=true&errorlist=false&theme=fluent2" %}
 
-What each button does:
-- `CopyAsync` copies the current selection.
-- `PasteAsync` pastes clipboard data.
-
 ## Cell merging
 
 Use these methods to merge and unmerge grid cells.
@@ -841,15 +775,6 @@ Use these methods to add a new row, begin editing, save or cancel the edit, and 
 
 The add and delete methods have overloads, so the examples below show both the simple and the data-driven forms.
 
-What each button does:
-- `AddRecordAsync` inserts a blank row.
-- `AddRecordAsync(data, index)` inserts a row at a specific position.
-- `StartEditAsync` opens the selected row for editing.
-- `EndEditAsync` saves the active edit.
-- `CloseEditAsync` cancels the active edit.
-- `DeleteRecordAsync` removes the selected row.
-- `DeleteRecordAsync(fieldName, data)` removes a row by key value.
-
 | Method | Description | Parameters | Returns |
 |--------|-------------|------------|---------|
 | `AddRecordAsync` | Starts adding a new row in the grid. | None or `TValue data, int? index = null` | `Task` |
@@ -908,6 +833,8 @@ Batch editing methods are shown in the batch section below.
 }
 {% endhighlight %}
 {% endtabs %}
+
+{% previewsample "https://blazorplayground.syncfusion.com/embed/TODO?appbar=false&editor=false&result=true&errorlist=false&theme=fluent2" %}
 
 ## Batch editing, batch changes, and undo
 
