@@ -375,6 +375,7 @@ Prerequisites:
 <SfButton Content="Clear Cell Selection" OnClick="ClearCellSelectionContent" />
 <SfButton Content="Get Selected Records" OnClick="GetSelectedRecordsContent" />
 <SfButton Content="Get Selected Indexes" OnClick="GetSelectedIndexesContent" />
+<SfButton Content="Get Selected Cell Indexes" OnClick="GetSelectedCellIndexesContent" />
 <SfButton Content="Clear Selection" OnClick="ClearSelectionContent" />
 
 <SfGrid @ref="DefaultGrid" DataSource="@Orders" AllowSelection="true">
@@ -403,6 +404,7 @@ Prerequisites:
     private async Task ClearCellSelectionContent() => await DefaultGrid.ClearCellSelectionAsync();
     private async Task GetSelectedRecordsContent() => _ = await DefaultGrid.GetSelectedRecordsAsync();
     private async Task GetSelectedIndexesContent() => _ = await DefaultGrid.GetSelectedRowIndexesAsync();
+    private async Task GetSelectedCellIndexesContent() => _ = await DefaultGrid.GetSelectedRowCellIndexesAsync();
     private async Task ClearSelectionContent() => await DefaultGrid.ClearSelectionAsync();
 }
 {% endhighlight %}
@@ -1309,7 +1311,9 @@ Prerequisites:
 @using Syncfusion.Blazor.Buttons
 
 <SfButton Content="Hide Ship City" OnClick="HideColumnContent" />
+<SfButton Content="Hide Ship City and Name" OnClick="HideColumnsContent" />
 <SfButton Content="Show Ship City" OnClick="ShowColumnContent" />
+<SfButton Content="Show Ship City and Name" OnClick="ShowColumnsContent" />
 <SfButton Content="Open Chooser" OnClick="OpenChooserContent" />
 
 <SfGrid @ref="DefaultGrid" DataSource="@Orders" ShowColumnChooser="true">
@@ -1325,8 +1329,10 @@ Prerequisites:
     private SfGrid<OrderData> DefaultGrid;
     private List<OrderData> Orders { get; set; }
     protected override void OnInitialized() => Orders = OrderData.GetAllRecords();
-    private async Task HideColumnContent() => await DefaultGrid.HideColumnAsync(nameof(OrderData.ShipCity));
-    private async Task ShowColumnContent() => await DefaultGrid.ShowColumnAsync(nameof(OrderData.ShipCity));
+    private async Task HideColumnContent() => await DefaultGrid.HideColumnAsync(nameof(OrderData.ShipCity), "Field");
+    private async Task HideColumnsContent() => await DefaultGrid.HideColumnsAsync(new[] { nameof(OrderData.ShipCity), nameof(OrderData.ShipName) }, "Field");
+    private async Task ShowColumnContent() => await DefaultGrid.ShowColumnAsync(nameof(OrderData.ShipCity), "Field");
+    private async Task ShowColumnsContent() => await DefaultGrid.ShowColumnsAsync(new[] { nameof(OrderData.ShipCity), nameof(OrderData.ShipName) }, "Field");
     private async Task OpenChooserContent() => await DefaultGrid.OpenColumnChooserAsync();
 }
 {% endhighlight %}
@@ -1360,7 +1366,12 @@ Prerequisites:
 @using Syncfusion.Blazor.Buttons
 
 <SfButton Content="Auto Fit Order ID" OnClick="AutoFitColumnContent" />
+<SfButton Content="Auto Fit All" OnClick="AutoFitColumnsContent" />
 <SfButton Content="Move Ship City" OnClick="ReorderColumnContent" />
+<SfButton Content="Move By Index" OnClick="ReorderByIndexContent" />
+<SfButton Content="Move By Target Index" OnClick="ReorderByTargetIndexContent" />
+<SfButton Content="Move Multiple Columns" OnClick="ReorderColumnsContent" />
+<SfButton Content="Move Row" OnClick="ReorderRowContent" />
 
 <SfGrid @ref="DefaultGrid" DataSource="@Orders" AllowReordering="true">
     <GridColumns>
@@ -1376,7 +1387,12 @@ Prerequisites:
     private List<OrderData> Orders { get; set; }
     protected override void OnInitialized() => Orders = OrderData.GetAllRecords();
     private async Task AutoFitColumnContent() => await DefaultGrid.AutoFitColumnAsync(nameof(OrderData.OrderID));
+    private async Task AutoFitColumnsContent() => await DefaultGrid.AutoFitColumnsAsync();
     private async Task ReorderColumnContent() => await DefaultGrid.ReorderColumnAsync(nameof(OrderData.ShipCity), nameof(OrderData.CustomerID));
+    private async Task ReorderByIndexContent() => await DefaultGrid.ReorderColumnByIndexAsync(2, 1);
+    private async Task ReorderByTargetIndexContent() => await DefaultGrid.ReorderColumnByTargetIndexAsync(nameof(OrderData.ShipCity), 1);
+    private async Task ReorderColumnsContent() => await DefaultGrid.ReorderColumnsAsync(new List<string> { nameof(OrderData.ShipCity), nameof(OrderData.ShipName) }, nameof(OrderData.CustomerID));
+    private async Task ReorderRowContent() => await DefaultGrid.ReorderRowAsync(0, 1);
 }
 {% endhighlight %}
 {% highlight c# tabtitle="OrderData.cs" %}
@@ -1434,6 +1450,19 @@ Prerequisites:
     private async Task ShowInfoContent()
     {
         var value = await DefaultGrid.GetCellValueByIndexAsync(0, 0);
+        var columns = await DefaultGrid.GetColumnsAsync();
+        var fields = await DefaultGrid.GetColumnFieldNamesAsync();
+        var visible = await DefaultGrid.GetVisibleColumnsAsync();
+        var hidden = await DefaultGrid.GetHiddenColumnsAsync();
+        var primaryKeys = await DefaultGrid.GetPrimaryKeyFieldNamesAsync();
+        var foreignKeyColumns = await DefaultGrid.GetForeignKeyColumnsAsync();
+        var currentRecords = await DefaultGrid.GetCurrentViewRecordsAsync();
+        var firstColumn = await DefaultGrid.GetColumnByFieldAsync(nameof(OrderData.OrderID));
+        var firstColumnByUid = await DefaultGrid.GetColumnByUidAsync(firstColumn.Uid);
+        var columnIndex = await DefaultGrid.GetColumnIndexByFieldAsync(nameof(OrderData.OrderID));
+        var columnIndexByUid = await DefaultGrid.GetColumnIndexByUidAsync(firstColumn.Uid);
+        var uid = await DefaultGrid.GetUidByColumnFieldAsync(nameof(OrderData.OrderID));
+        var rowIndex = await DefaultGrid.GetRowIndexByPrimaryKeyAsync(10250);
     }
     private async Task FindRowContent() => await DefaultGrid.GetRowIndexByPrimaryKeyAsync(10250);
 }
@@ -1467,6 +1496,8 @@ Prerequisites:
 
 <SfButton Content="Show Spinner" OnClick="ShowSpinnerContent" />
 <SfButton Content="Refresh" OnClick="RefreshContent" />
+<SfButton Content="Refresh Columns" OnClick="RefreshColumnsContent" />
+<SfButton Content="Refresh Header" OnClick="RefreshHeaderContent" />
 <SfButton Content="Hide Spinner" OnClick="HideSpinnerContent" />
 
 <SfGrid @ref="DefaultGrid" DataSource="@Orders">
@@ -1484,6 +1515,8 @@ Prerequisites:
     protected override void OnInitialized() => Orders = OrderData.GetAllRecords();
     private async Task ShowSpinnerContent() => await DefaultGrid.ShowSpinnerAsync();
     private async Task RefreshContent() => await DefaultGrid.Refresh();
+    private async Task RefreshColumnsContent() => await DefaultGrid.RefreshColumnsAsync();
+    private async Task RefreshHeaderContent() => await DefaultGrid.RefreshHeaderAsync();
     private async Task HideSpinnerContent() => await DefaultGrid.HideSpinnerAsync();
 }
 {% endhighlight %}
@@ -1514,7 +1547,9 @@ Prerequisites:
 @using Syncfusion.Blazor.Buttons
 
 <SfButton Content="Focus Grid" OnClick="FocusContent" />
+<SfButton Content="Enable Toolbar Items" OnClick="ToolbarContent" />
 <SfButton Content="Show Message" OnClick="MessageContent" />
+<SfButton Content="Load WebMCP Tools" OnClick="WebMcpContent" />
 
 <SfGrid @ref="DefaultGrid" DataSource="@Orders" Toolbar="@(new List<string>() { "Add", "Edit", "Delete" })">
     <GridColumns>
@@ -1530,7 +1565,9 @@ Prerequisites:
     private List<OrderData> Orders { get; set; }
     protected override void OnInitialized() => Orders = OrderData.GetAllRecords();
     private async Task FocusContent() => await DefaultGrid.FocusAsync();
+    private async Task ToolbarContent() => await DefaultGrid.EnableToolbarItemsAsync(new List<string> { "Add", "Edit" }, true);
     private async Task MessageContent() => await DefaultGrid.UpdateExternalMessageAsync("Grid is ready.");
+    private async Task WebMcpContent() => _ = await DefaultGrid.GetWebMcpToolsAsync();
 }
 {% endhighlight %}
 {% highlight c# tabtitle="OrderData.cs" %}
