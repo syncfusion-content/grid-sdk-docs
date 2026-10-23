@@ -44,9 +44,9 @@ Use these methods to print the grid or export it to Excel, CSV, or PDF. The expo
 | Method | Description | Parameters | Returns |
 |--------|-------------|------------|---------|
 | `PrintAsync` | Opens the browser print dialog for the grid content. | None | `Task` |
-| `ExportToExcelAsync` | Exports the grid to an Excel file. | `ExcelExportProperties excelExportProperties = null` | `Task` |
-| `ExportToPdfAsync` | Exports the grid to a PDF file. | `PdfExportProperties pdfExportProperties = null` | `Task` |
-| `ExportToCsvAsync` | Exports the grid to a CSV file. | `bool isMultipleExport = false`, `ExcelExportProperties excelExportProperties = null` | `Task` |
+| `ExportToExcelAsync` | Exports the grid to an Excel file. | `bool asMemoryStream = false`, `ExcelExportProperties excelExportProperties = null` | `Task` |
+| `ExportToPdfAsync` | Exports the grid to a PDF file. | `bool asMemoryStream = false`, `PdfExportProperties pdfExportProperties = null` | `Task` |
+| `ExportToCsvAsync` | Exports the grid to a CSV file. | `bool asMemoryStream = false`, `ExcelExportProperties excelExportProperties = null` | `Task` |
 
 Prerequisites:
 - Set `AllowExcelExport="true"` for Excel and CSV export.
@@ -451,7 +451,7 @@ Prerequisites:
 
 | Method | Description | Parameters | Returns |
 |--------|-------------|------------|---------|
-| `SearchAsync` | Searches the grid for the supplied text. | `string key` | `Task` |
+| `SearchAsync` | Searches the grid for the supplied text. | `string searchText` | `Task` |
 | `FindHighlightAsync` | Highlights matches for a search text. | `string text` | `Task` |
 | `FindNextHighlightAsync` | Moves to the next highlight. | None | `Task` |
 | `FindPreviousHighlightAsync` | Moves to the previous highlight. | None | `Task` |
@@ -656,7 +656,7 @@ Use these methods to fetch filtered records after applying grid filters.
 
 | Method | Description | Parameters | Returns |
 |--------|-------------|------------|---------|
-| `GetFilteredRecordsAsync` | Returns the records that match the current filters. | `bool predicate = true` | `Task<object>` |
+| `GetFilteredRecordsAsync` | Returns the records that match the current filters. | `bool predicate = true` | `Task<IEnumerable<TValue>>` |
 
 Prerequisites:
 - Apply at least one filter before calling the method.
