@@ -913,6 +913,107 @@ What each button does:
 - `HideSpinnerAsync` hides the loading indicator.
 
 
+## Add, edit and delete examples
+
+Use these methods to add a new row, begin editing, save or cancel the edit, and remove a record. These actions are the usual starting point for beginners who build CRUD grids.
+
+| Method | Description | Parameters | Returns |
+|--------|-------------|------------|---------|
+| `AddRecordAsync` | Starts adding a new row in the grid. | None or `TValue data, int? index = null` | `Task` |
+| `StartEditAsync` | Starts editing the selected row. | None | `Task` |
+| `EndEditAsync` | Saves the current edit. | None | `Task` |
+| `CloseEditAsync` | Cancels the current edit. | None | `Task` |
+| `DeleteRecordAsync` | Deletes the selected record or a record by field value. | None or `string fieldName, TValue data` | `Task` |
+| `EditCellAsync` | Puts one cell into edit mode. | `int index, string fieldName` | `Task` |
+| `SaveCellAsync` | Saves the edited cell in batch mode. | None | `Task` |
+| `GetEditContextAsync` | Gets the current edit context. | None | `Task<EditContext>` |
+
+Prerequisites:
+- Set `AllowAdding="true"`, `AllowEditing="true"`, and `AllowDeleting="true"` as needed.
+- Use a primary key column for delete and update scenarios.
+- Select a row before calling `StartEditAsync()`.
+
+{% tabs %}
+{% highlight razor tabtitle="Index.razor" %}
+@using Syncfusion.Blazor.Grids
+@using Syncfusion.Blazor.Buttons
+
+<SfButton Content="Add Row" OnClick="AddRowContent" />
+<SfButton Content="Edit First Row" OnClick="StartEditContent" />
+<SfButton Content="Save Edit" OnClick="SaveEditContent" />
+<SfButton Content="Cancel Edit" OnClick="CloseEditContent" />
+<SfButton Content="Delete Selected" OnClick="DeleteRowContent" />
+
+<SfGrid @ref="DefaultGrid" DataSource="@Orders" AllowAdding="true" AllowEditing="true" AllowDeleting="true">
+    <GridEditSettings Mode="EditMode.Normal"></GridEditSettings>
+    <GridColumns>
+        <GridColumn Field=@nameof(OrderData.OrderID) HeaderText="Order ID" IsPrimaryKey="true" Width="120" TextAlign="TextAlign.Right"></GridColumn>
+        <GridColumn Field=@nameof(OrderData.CustomerID) HeaderText="Customer ID" Width="120"></GridColumn>
+        <GridColumn Field=@nameof(OrderData.ShipCity) HeaderText="Ship City" Width="130"></GridColumn>
+        <GridColumn Field=@nameof(OrderData.ShipName) HeaderText="Ship Name" Width="120"></GridColumn>
+    </GridColumns>
+</SfGrid>
+
+@code {
+    private SfGrid<OrderData> DefaultGrid;
+    private List<OrderData> Orders { get; set; }
+    protected override void OnInitialized() => Orders = OrderData.GetAllRecords();
+    private async Task AddRowContent() => await DefaultGrid.AddRecordAsync();
+    private async Task StartEditContent() => await DefaultGrid.StartEditAsync();
+    private async Task SaveEditContent() => await DefaultGrid.EndEditAsync();
+    private async Task CloseEditContent() => await DefaultGrid.CloseEditAsync();
+    private async Task DeleteRowContent() => await DefaultGrid.DeleteRecordAsync();
+}
+{% endhighlight %}
+{% endtabs %}
+
+## Update rows and cells examples
+
+Use these methods when you need to change a value after the row is already on screen. This is helpful when a user edits one field and you want to refresh the row without rebuilding the grid.
+
+| Method | Description | Parameters | Returns |
+|--------|-------------|------------|---------|
+| `SetCellValueAsync` | Updates one or more cells by primary key. | `IReadOnlyList<CellUpdate> cellValueUpdates` or `object key, string fieldName, object value` | `Task` |
+| `SetRowDataAsync` | Replaces a row by primary key. | `object primaryKeyValue, TValue rowData` or `object primaryKeyValue, TValue rowData, bool preventDataUpdate` | `Task` |
+| `UpdateBatchRowAsync` | Updates the current batch-edited row. | `TValue data` | `Task` |
+| `UpdateCellAsync` | Updates one cell without opening edit mode. | `int rowIndex, string field, object value` | `Task` |
+| `UpdateRowAsync` | Replaces a row without edit mode. | `int index, TValue data` | `Task` |
+
+Prerequisites:
+- Define a primary key column for row and cell updates.
+- Use batch edit mode for `UpdateBatchRowAsync()` and `UpdateCellAsync()`.
+
+## Batch changes and dirty state examples
+
+Use these methods when you want to read or apply pending batch edits before they are saved to the data source.
+
+| Method | Description | Parameters | Returns |
+|--------|-------------|------------|---------|
+| `ApplyBatchChangesAsync` | Applies a batch of added, edited, and deleted records to the grid UI. | `BatchChanges<TValue> batchChanges` | `Task` |
+| `GetBatchChangesAsync` | Gets pending batch changes. | None | `Task<BatchChanges<TValue>>` |
+| `IsDirtyAsync` | Checks whether batch changes exist. | None | `Task<bool>` |
+
+Prerequisites:
+- Set `EditMode.Batch`.
+- Make changes before calling `GetBatchChangesAsync()`.
+
+## Undo and redo examples
+
+Use these methods when batch editing is enabled and you want to undo or redo user changes step by step.
+
+| Method | Description | Parameters | Returns |
+|--------|-------------|------------|---------|
+| `ClearUndoRedoAsync` | Clears the undo and redo history. | None | `Task` |
+| `RedoAllAsync` | Redoes all undone batch operations. | None | `Task` |
+| `RedoAsync` | Redoes the last undone batch operation. | None | `Task` |
+| `UndoAllAsync` | Undoes all recorded batch operations. | None | `Task` |
+| `UndoAsync` | Undoes the last batch operation. | None | `Task` |
+
+Prerequisites:
+- Set `EnableUndoRedo="true"`.
+- Use batch editing.
+
+
 ## Additional method groups from the verified inventory
 
 The following method groups are present in the API reference but were not covered in the first draft samples. They are listed here so the page matches the verified inventory.
@@ -998,9 +1099,7 @@ The following method groups are present in the API reference but were not covere
 |--------|-------------|------------|---------|
 | `EnableToolbarItemsAsync` | Enables or disables toolbar items. | `List<string> items`, `bool isEnable` | `Task` |
 | `FocusAsync` | Focuses the grid element. | None | `Task` |
-| `GetClass` | Returns the container class name. | None | `string` |
 | `GetWebMcpToolsAsync` | Gets WebMCP tools for the grid. | `IEnumerable<string>? toolNames = null` | `Task<IReadOnlyList<IGridWebMcpTool>>` |
-| `PreventRender` | Prevents rendering. | `bool preventRender = true` | `void` |
 | `UpdateExternalMessageAsync` | Updates the external message text. | `string message` | `Task` |
 
 
@@ -1357,9 +1456,7 @@ These methods are less common, but they are useful when you need to control tool
 |--------|-------------|------------|---------|
 | `EnableToolbarItemsAsync` | Enables or disables toolbar items. | `List<string> items`, `bool isEnable` | `Task` |
 | `FocusAsync` | Focuses the grid element. | None | `Task` |
-| `GetClass` | Returns the container class name. | None | `string` |
 | `GetWebMcpToolsAsync` | Gets WebMCP tools for the grid. | `IEnumerable<string>? toolNames = null` | `Task<IReadOnlyList<IGridWebMcpTool>>` |
-| `PreventRender` | Prevents rendering. | `bool preventRender = true` | `void` |
 | `UpdateExternalMessageAsync` | Updates the external message text. | `string message` | `Task` |
 
 Prerequisites:
