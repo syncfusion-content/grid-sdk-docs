@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Blazor Grid Methods | Syncfusion®
+title: Blazor Grid Methods Reference | Syncfusion®
 description: Learn about the public methods of the Blazor Data Grid, grouped by task, with usage examples.
 platform: grid-sdk
 control: DataGrid
@@ -248,6 +248,85 @@ Use these methods to move between pages and change page size.
 Prerequisites:
 - Set `AllowPaging="true"` for paging methods.
 
+
+{% tabs %}
+{% highlight razor tabtitle="Index.razor" %}
+@using Syncfusion.Blazor.Grids
+@using Syncfusion.Blazor.Buttons
+
+<SfButton Content="Go to Page 2" OnClick="GoToPageContent" />
+<SfButton Content="Set Page Size 12" OnClick="UpdatePageSizeContent" />
+<SfButton Content="Go To Row 8" OnClick="FindGoToContent" />
+
+<SfGrid @ref="DefaultGrid" DataSource="@Orders" AllowPaging="true">
+    <GridPageSettings PageSize="6"></GridPageSettings>
+    <GridColumns>
+        <GridColumn Field=@nameof(OrderData.OrderID) HeaderText="Order ID" Width="120" TextAlign="TextAlign.Right"></GridColumn>
+        <GridColumn Field=@nameof(OrderData.CustomerID) HeaderText="Customer ID" Width="120"></GridColumn>
+        <GridColumn Field=@nameof(OrderData.ShipCity) HeaderText="Ship City" Width="130"></GridColumn>
+        <GridColumn Field=@nameof(OrderData.ShipName) HeaderText="Ship Name" Width="120"></GridColumn>
+    </GridColumns>
+</SfGrid>
+
+@code {
+    private SfGrid<OrderData> DefaultGrid;
+    private List<OrderData> Orders { get; set; }
+
+    protected override void OnInitialized() => Orders = OrderData.GetAllRecords();
+
+    private async Task GoToPageContent() => await DefaultGrid.GoToPageAsync(2);
+    private async Task UpdatePageSizeContent() => await DefaultGrid.UpdatePageSizeAsync(12);
+    private async Task FindGoToContent() => await DefaultGrid.FindGoToAsync(8);
+}
+{% endhighlight %}
+{% highlight c# tabtitle="OrderData.cs" %}
+internal sealed class OrderData
+{
+    private static readonly List<OrderData> Data = new();
+
+    public OrderData(int orderID, string customerID, string shipCity, string shipName)
+    {
+        OrderID = orderID;
+        CustomerID = customerID;
+        ShipCity = shipCity;
+        ShipName = shipName;
+    }
+
+    internal static List<OrderData> GetAllRecords()
+    {
+        if (Data.Count == 0)
+        {
+            Data.Add(new OrderData(10248, "VINET", "Reims", "Vins et alcools Cheval"));
+            Data.Add(new OrderData(10249, "TOMSP", "Münster", "Toms Spezialitäten"));
+            Data.Add(new OrderData(10250, "HANAR", "Rio de Janeiro", "Hanari Carnes"));
+            Data.Add(new OrderData(10251, "VICTE", "Lyon", "Victuailles en stock"));
+            Data.Add(new OrderData(10252, "SUPRD", "Charleroi", "Suprêmes délices"));
+            Data.Add(new OrderData(10253, "HANAR", "Rio de Janeiro", "Hanari Carnes"));
+            Data.Add(new OrderData(10254, "CHOPS", "Bern", "Chop-suey Chinese"));
+            Data.Add(new OrderData(10255, "RICSU", "Genève", "Richter Supermarkt"));
+            Data.Add(new OrderData(10256, "WELLI", "Resende", "Wellington Importado"));
+        }
+
+        return Data;
+    }
+
+    public int OrderID { get; set; }
+    public string CustomerID { get; set; }
+    public string ShipCity { get; set; }
+    public string ShipName { get; set; }
+}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "https://blazorplayground.syncfusion.com/embed/TODO?appbar=false&editor=false&result=true&errorlist=false&theme=fluent2" %}
+
+What each button does:
+- `GoToPageAsync` moves to the requested page.
+- `UpdatePageSizeAsync` changes the visible row count.
+- `FindGoToAsync` jumps to a row in the current view.
+
+> Set `AllowPaging="true"` before you call the paging methods.
+
 ## Searching
 
 Use the search methods to find text, move between search highlights, and clear the current search.
@@ -259,6 +338,12 @@ Use the search methods to find text, move between search highlights, and clear t
 | `FindNextHighlightAsync` | Moves to the next highlight. | None | `Task` |
 | `FindPreviousHighlightAsync` | Moves to the previous highlight. | None | `Task` |
 | `ResetFindAsync` | Clears the search highlight state. | None | `Task` |
+
+What each button does:
+- `SearchAsync` finds the entered text in the grid.
+- `FindHighlightAsync` highlights search matches.
+- `FindNextHighlightAsync` and `FindPreviousHighlightAsync` move through matches.
+- `ResetFindAsync` clears the find state.
 
 ## Sorting and filtering
 
@@ -272,6 +357,13 @@ Use these methods to sort columns and clear applied sort or filter criteria.
 | `FilterByColumnAsync` | Filters a column by field name and operator. | `string fieldName`, `string filterOperator`, `object value`, `string predicate = "and"`, `bool? matchCase = null`, `bool? ignoreAccent = null`, `object actualValue = null`, `object actualOperator = null`, `string columnName = null` | `Task` |
 | `ClearFilteringAsync` | Clears filtering. | `string fieldName = null` or `List<string> fields = null` | `Task` |
 
+What each button does:
+- `SortColumnAsync` sorts one column.
+- `SortColumnsAsync` applies multi-column sorting.
+- `ClearSortingAsync` removes sort criteria.
+- `FilterByColumnAsync` applies a filter.
+- `ClearFilteringAsync` removes filters.
+
 ## State persistence
 
 Use these methods to save, restore, or clear the persisted grid state.
@@ -282,6 +374,11 @@ Use these methods to save, restore, or clear the persisted grid state.
 | `SetPersistDataAsync` | Applies a persisted state string. | `string persistData` | `Task` |
 | `ResetPersistDataAsync` | Clears persisted state. | None | `Task` |
 
+What each button does:
+- `GetPersistDataAsync` reads the current persisted grid state.
+- `SetPersistDataAsync` restores a saved grid state.
+- `ResetPersistDataAsync` clears the saved state.
+
 ## Clipboard
 
 Use the clipboard methods to copy or paste grid data.
@@ -290,6 +387,10 @@ Use the clipboard methods to copy or paste grid data.
 |--------|-------------|------------|---------|
 | `CopyAsync` | Copies the selected rows or cells to the clipboard. | `bool? includeHeader = null` | `Task` |
 | `PasteAsync` | Pastes clipboard data into the grid. | None | `Task` |
+
+What each button does:
+- `CopyAsync` copies the current selection to the clipboard.
+- `PasteAsync` pastes clipboard data into the grid.
 
 ## Layout and refresh
 
@@ -305,5 +406,12 @@ Use these methods to adjust column layout and refresh the grid UI.
 | `RefreshHeaderAsync` | Refreshes the header area. | None | `Task` |
 | `ShowSpinnerAsync` | Shows the loading spinner. | None | `Task` |
 | `HideSpinnerAsync` | Hides the loading spinner. | None | `Task` |
+
+What each button does:
+- `AutoFitColumnAsync` fits one column.
+- `AutoFitColumnsAsync` fits all or selected columns.
+- `ReorderColumnAsync` moves one column before another.
+- `RefreshAsync`, `RefreshColumnsAsync`, and `RefreshHeaderAsync` redraw the grid.
+- `ShowSpinnerAsync` and `HideSpinnerAsync` control the loading indicator.
 
 API reference: https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.SfGrid-1.html
