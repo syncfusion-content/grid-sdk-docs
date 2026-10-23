@@ -828,11 +828,88 @@ Use these methods to adjust column layout and refresh the grid UI.
 | `ShowSpinnerAsync` | Shows the loading spinner. | None | `Task` |
 | `HideSpinnerAsync` | Hides the loading spinner. | None | `Task` |
 
+{% tabs %}
+{% highlight razor tabtitle="Index.razor" %}
+@using Syncfusion.Blazor.Grids
+@using Syncfusion.Blazor.Buttons
+
+<SfButton Content="Auto Fit Order ID" OnClick="AutoFitColumnContent" />
+<SfButton Content="Auto Fit All Columns" OnClick="AutoFitColumnsContent" />
+<SfButton Content="Reorder City" OnClick="ReorderColumnContent" />
+<SfButton Content="Refresh" OnClick="RefreshContent" />
+<SfButton Content="Show Spinner" OnClick="ShowSpinnerContent" />
+<SfButton Content="Hide Spinner" OnClick="HideSpinnerContent" />
+
+<SfGrid @ref="DefaultGrid" DataSource="@Orders" AllowResizing="true">
+    <GridColumns>
+        <GridColumn Field=@nameof(OrderData.OrderID) HeaderText="Order ID" Width="120" TextAlign="TextAlign.Right"></GridColumn>
+        <GridColumn Field=@nameof(OrderData.CustomerID) HeaderText="Customer ID" Width="120"></GridColumn>
+        <GridColumn Field=@nameof(OrderData.ShipCity) HeaderText="Ship City" Width="130"></GridColumn>
+        <GridColumn Field=@nameof(OrderData.ShipName) HeaderText="Ship Name" Width="120"></GridColumn>
+    </GridColumns>
+</SfGrid>
+
+@code {
+    private SfGrid<OrderData> DefaultGrid;
+    private List<OrderData> Orders { get; set; }
+
+    protected override void OnInitialized() => Orders = OrderData.GetAllRecords();
+
+    private async Task AutoFitColumnContent() => await DefaultGrid.AutoFitColumnAsync(nameof(OrderData.OrderID));
+    private async Task AutoFitColumnsContent() => await DefaultGrid.AutoFitColumnsAsync();
+    private async Task ReorderColumnContent() => await DefaultGrid.ReorderColumnAsync(nameof(OrderData.ShipCity), nameof(OrderData.CustomerID));
+    private async Task RefreshContent() => await DefaultGrid.RefreshAsync();
+    private async Task ShowSpinnerContent() => await DefaultGrid.ShowSpinnerAsync();
+    private async Task HideSpinnerContent() => await DefaultGrid.HideSpinnerAsync();
+}
+{% endhighlight %}
+{% highlight c# tabtitle="OrderData.cs" %}
+internal sealed class OrderData
+{
+    private static readonly List<OrderData> Data = new();
+
+    public OrderData(int orderID, string customerID, string shipCity, string shipName)
+    {
+        OrderID = orderID;
+        CustomerID = customerID;
+        ShipCity = shipCity;
+        ShipName = shipName;
+    }
+
+    internal static List<OrderData> GetAllRecords()
+    {
+        if (Data.Count == 0)
+        {
+            Data.Add(new OrderData(10248, "VINET", "Reims", "Vins et alcools Cheval"));
+            Data.Add(new OrderData(10249, "TOMSP", "Münster", "Toms Spezialitäten"));
+            Data.Add(new OrderData(10250, "HANAR", "Rio de Janeiro", "Hanari Carnes"));
+            Data.Add(new OrderData(10251, "VICTE", "Lyon", "Victuailles en stock"));
+            Data.Add(new OrderData(10252, "SUPRD", "Charleroi", "Suprêmes délices"));
+            Data.Add(new OrderData(10253, "HANAR", "Rio de Janeiro", "Hanari Carnes"));
+            Data.Add(new OrderData(10254, "CHOPS", "Bern", "Chop-suey Chinese"));
+            Data.Add(new OrderData(10255, "RICSU", "Genève", "Richter Supermarkt"));
+            Data.Add(new OrderData(10256, "WELLI", "Resende", "Wellington Importado"));
+        }
+
+        return Data;
+    }
+
+    public int OrderID { get; set; }
+    public string CustomerID { get; set; }
+    public string ShipCity { get; set; }
+    public string ShipName { get; set; }
+}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "https://blazorplayground.syncfusion.com/embed/TODO?appbar=false&editor=false&result=true&errorlist=false&theme=fluent2" %}
+
 What each button does:
-- `AutoFitColumnAsync` fits one column.
-- `AutoFitColumnsAsync` fits all or selected columns.
-- `ReorderColumnAsync` moves one column before another.
-- `RefreshAsync`, `RefreshColumnsAsync`, and `RefreshHeaderAsync` redraw the grid.
-- `ShowSpinnerAsync` and `HideSpinnerAsync` control the loading indicator.
+- `AutoFitColumnAsync` fits the `OrderID` column.
+- `AutoFitColumnsAsync` fits all columns.
+- `ReorderColumnAsync` moves `ShipCity` before `CustomerID`.
+- `RefreshAsync` redraws the grid.
+- `ShowSpinnerAsync` shows the loading indicator.
+- `HideSpinnerAsync` hides the loading indicator.
 
 API reference: https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.SfGrid-1.html
