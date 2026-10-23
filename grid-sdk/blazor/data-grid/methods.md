@@ -26,6 +26,10 @@ Use `@ref` to access an `SfGrid<TValue>` instance and call its methods after the
 | [State persistence](#state-persistence) | `GetPersistDataAsync`, `SetPersistDataAsync`, `ResetPersistDataAsync` |
 | [Clipboard](#clipboard) | `CopyAsync`, `PasteAsync` |
 | [Layout and refresh](#layout-and-refresh) | `AutoFitColumnAsync`, `AutoFitColumnsAsync`, `ReorderColumnAsync`, `RefreshAsync`, `RefreshColumnsAsync`, `RefreshHeaderAsync`, `ShowSpinnerAsync`, `HideSpinnerAsync` |
+| [Add, edit and delete](#add-edit-and-delete-examples) | `AddRecordAsync`, `StartEditAsync`, `EndEditAsync`, `CloseEditAsync`, `DeleteRecordAsync`, `EditCellAsync`, `SaveCellAsync`, `GetEditContextAsync` |
+| [Update rows and cells](#update-rows-and-cells-examples) | `SetRowDataAsync`, `UpdateCellAsync`, `UpdateCellValueAsync` |
+| [Batch changes and dirty state](#batch-changes-and-dirty-state-examples) | `GetBatchChangesAsync`, `GetCurrentEditedDataAsync`, `IsDirtyAsync`, `SetCellValueAsync` |
+| [Undo and redo](#undo-and-redo-examples) | `UndoAsync`, `RedoAsync`, `CanUndoAsync`, `CanRedoAsync` |
 
 ## Export and print
 
