@@ -7,8 +7,6 @@ control: DataGrid
 documentation: ug
 ---
 
-<!-- markdownlint-disable MD033 -->
-
 # Methods in Blazor Data Grid
 
 Use `@ref` to access an `SfGrid<TValue>` instance and call its methods after the grid has rendered. You can call the methods from a button click handler or `OnAfterRenderAsync`. All methods in this page are asynchronous and must be awaited.
@@ -19,17 +17,17 @@ Use `@ref` to access an `SfGrid<TValue>` instance and call its methods after the
 |-------|---------|
 | [Export and print](#export-and-print) | `PrintAsync`, `ExportToExcelAsync`, `ExportToPdfAsync`, `ExportToCsvAsync` |
 | [Grouping](#grouping) | `GroupColumnAsync`, `UngroupColumnAsync`, `ExpandAllGroupAsync`, `CollapseAllGroupAsync`, `ClearGroupingAsync` |
-| [Paging and navigation](#paging-and-navigation) | `GoToPageAsync`, `UpdatePageSizeAsync`, `FindGoToAsync` |
+| [Paging and navigation](#paging-and-navigation) | `GoToPageAsync`, `UpdatePageSizeAsync` |
 | [Selection](#selection) | `SelectRowAsync`, `SelectRowsAsync`, `SelectRowsByRangeAsync`, `SelectCellAsync`, `SelectCellsAsync`, `SelectCellsByRangeAsync`, `ClearSelectionAsync`, `ClearRowSelectionAsync`, `ClearCellSelectionAsync`, `GetSelectedRecordsAsync`, `GetSelectedRowIndexesAsync`, `GetSelectedRowCellIndexesAsync` |
 | [Searching](#searching) | `SearchAsync`, `FindHighlightAsync`, `FindNextHighlightAsync`, `FindPreviousHighlightAsync`, `ResetFindAsync` |
 | [Sorting and filtering](#sorting-and-filtering) | `SortColumnAsync`, `SortColumnsAsync`, `ClearSortingAsync`, `FilterByColumnAsync`, `ClearFilteringAsync` |
 | [State persistence](#state-persistence) | `GetPersistDataAsync`, `SetPersistDataAsync`, `ResetPersistDataAsync` |
 | [Clipboard](#clipboard) | `CopyAsync`, `PasteAsync` |
-| [Layout and refresh](#layout-and-refresh) | `AutoFitColumnAsync`, `AutoFitColumnsAsync`, `ReorderColumnAsync`, `RefreshAsync`, `RefreshColumnsAsync`, `RefreshHeaderAsync`, `ShowSpinnerAsync`, `HideSpinnerAsync` |
+| [Layout and refresh](#layout-and-refresh) | `AutoFitColumnAsync`, `AutoFitColumnsAsync`, `ReorderColumnAsync`, `Refresh`, `RefreshColumnsAsync`, `RefreshHeaderAsync`, `ShowSpinnerAsync`, `HideSpinnerAsync` |
 | [Add, edit and delete](#add-edit-and-delete-examples) | `AddRecordAsync`, `StartEditAsync`, `EndEditAsync`, `CloseEditAsync`, `DeleteRecordAsync`, `EditCellAsync`, `SaveCellAsync`, `GetEditContextAsync` |
-| [Update rows and cells](#update-rows-and-cells-examples) | `SetRowDataAsync`, `UpdateCellAsync`, `UpdateCellValueAsync` |
-| [Batch changes and dirty state](#batch-changes-and-dirty-state-examples) | `GetBatchChangesAsync`, `GetCurrentEditedDataAsync`, `IsDirtyAsync`, `SetCellValueAsync` |
-| [Undo and redo](#undo-and-redo-examples) | `UndoAsync`, `RedoAsync`, `CanUndoAsync`, `CanRedoAsync` |
+| [Update rows and cells](#update-rows-and-cells) | `SetCellValueAsync`, `SetRowDataAsync`, `UpdateBatchRowAsync`, `UpdateCellAsync`, `UpdateRowAsync` |
+| [Batch changes and dirty state](#batch-changes-and-dirty-state) | `ApplyBatchChangesAsync`, `GetBatchChangesAsync`, `IsDirtyAsync` |
+| [Undo and redo](#undo-and-redo) | `ClearUndoRedoAsync`, `RedoAllAsync`, `RedoAsync`, `UndoAllAsync`, `UndoAsync` |
 
 ## Export and print
 
@@ -382,7 +380,7 @@ Prerequisites:
 
     private async Task SelectRowContent() => await DefaultGrid.SelectRowAsync(1);
     private async Task SelectRowsRangeContent() => await DefaultGrid.SelectRowsByRangeAsync(1, 3);
-    private async Task SelectCellContent() => await DefaultGrid.SelectCellAsync(1, 1);
+    private async Task SelectCellContent() => await DefaultGrid.SelectCellAsync((1, 1));
     private async Task ClearSelectionContent() => await DefaultGrid.ClearSelectionAsync();
 }
 {% endhighlight %}
@@ -438,6 +436,10 @@ What each button does:
 ## Searching
 
 Use the search methods to find text, move between search highlights, and clear the current search.
+
+Prerequisites:
+- Set `AllowSearching="true"`.
+- Use the search box or call the methods after the grid renders.
 
 | Method | Description | Parameters | Returns |
 |--------|-------------|------------|---------|
@@ -541,6 +543,10 @@ What each button does:
 
 Use these methods to sort columns and clear applied sort or filter criteria.
 
+Prerequisites:
+- Set `AllowSorting="true"` for the sort methods.
+- Set `AllowFiltering="true"` for the filter methods.
+
 | Method | Description | Parameters | Returns |
 |--------|-------------|------------|---------|
 | `SortColumnAsync` | Sorts a column by field name. | `string fieldName`, `SortDirection direction`, `bool? isMultiSort = null` | `Task` |
@@ -640,6 +646,9 @@ What each button does:
 
 Use these methods to save, restore, or clear the persisted grid state.
 
+Prerequisites:
+- Set `EnablePersistence="true"`.
+
 | Method | Description | Parameters | Returns |
 |--------|-------------|------------|---------|
 | `GetPersistDataAsync` | Returns the current persisted state string. | None | `Task<string>` |
@@ -732,6 +741,10 @@ What each button does:
 ## Clipboard
 
 Use the clipboard methods to copy or paste grid data.
+
+Prerequisites:
+- Set `AllowClipboard="true"`.
+- Enable selection before calling `CopyAsync` or `PasteAsync`.
 
 | Method | Description | Parameters | Returns |
 |--------|-------------|------------|---------|
@@ -826,7 +839,7 @@ Use these methods to adjust column layout and refresh the grid UI.
 | `AutoFitColumnAsync` | Fits one column to its content. | `string fieldName` | `Task` |
 | `AutoFitColumnsAsync` | Fits all columns or a set of columns. | None or `string[] fields` | `Task` |
 | `ReorderColumnAsync` | Moves one column before another column. | `string fromField`, `string toField` | `Task` |
-| `RefreshAsync` | Refreshes the grid. | `bool isDataRefresh = false` | `Task` |
+| `Refresh` | Refreshes the grid. | `bool isModelRefresh = false` | `Task` |
 | `RefreshColumnsAsync` | Refreshes column state. | None | `Task` |
 | `RefreshHeaderAsync` | Refreshes the header area. | None | `Task` |
 | `ShowSpinnerAsync` | Shows the loading spinner. | None | `Task` |
@@ -844,7 +857,7 @@ Use these methods to adjust column layout and refresh the grid UI.
 <SfButton Content="Show Spinner" OnClick="ShowSpinnerContent" />
 <SfButton Content="Hide Spinner" OnClick="HideSpinnerContent" />
 
-<SfGrid @ref="DefaultGrid" DataSource="@Orders" AllowResizing="true">
+<SfGrid @ref="DefaultGrid" DataSource="@Orders" AllowReordering="true">
     <GridColumns>
         <GridColumn Field=@nameof(OrderData.OrderID) HeaderText="Order ID" Width="120" TextAlign="TextAlign.Right"></GridColumn>
         <GridColumn Field=@nameof(OrderData.CustomerID) HeaderText="Customer ID" Width="120"></GridColumn>
@@ -862,7 +875,7 @@ Use these methods to adjust column layout and refresh the grid UI.
     private async Task AutoFitColumnContent() => await DefaultGrid.AutoFitColumnAsync(nameof(OrderData.OrderID));
     private async Task AutoFitColumnsContent() => await DefaultGrid.AutoFitColumnsAsync();
     private async Task ReorderColumnContent() => await DefaultGrid.ReorderColumnAsync(nameof(OrderData.ShipCity), nameof(OrderData.CustomerID));
-    private async Task RefreshContent() => await DefaultGrid.RefreshAsync();
+    private async Task RefreshContent() => await DefaultGrid.Refresh();
     private async Task ShowSpinnerContent() => await DefaultGrid.ShowSpinnerAsync();
     private async Task HideSpinnerContent() => await DefaultGrid.HideSpinnerAsync();
 }
@@ -912,7 +925,7 @@ What each button does:
 - `AutoFitColumnAsync` fits the `OrderID` column.
 - `AutoFitColumnsAsync` fits all columns.
 - `ReorderColumnAsync` moves `ShipCity` before `CustomerID`.
-- `RefreshAsync` redraws the grid.
+- `Refresh` redraws the grid.
 - `ShowSpinnerAsync` shows the loading indicator.
 - `HideSpinnerAsync` hides the loading indicator.
 
@@ -967,18 +980,12 @@ Prerequisites:
     private List<OrderData> Orders { get; set; }
     protected override void OnInitialized() => Orders = OrderData.GetAllRecords();
     private async Task AddBlankRowContent() => await DefaultGrid.AddRecordAsync();
-    private async Task AddRowAtTopContent() => await DefaultGrid.AddRecordAsync(new OrderData
-    {
-        OrderID = 10248,
-        CustomerID = "VINET",
-        ShipCity = "Reims",
-        ShipName = "Vins et alcools Chevalier"
-    }, 0);
+    private async Task AddRowAtTopContent() => await DefaultGrid.AddRecordAsync(Orders[0], 0);
     private async Task StartEditContent() => await DefaultGrid.StartEditAsync();
     private async Task SaveEditContent() => await DefaultGrid.EndEditAsync();
     private async Task CloseEditContent() => await DefaultGrid.CloseEditAsync();
     private async Task DeleteSelectedRowContent() => await DefaultGrid.DeleteRecordAsync();
-    private async Task DeleteFirstByKeyContent() => await DefaultGrid.DeleteRecordAsync(nameof(OrderData.OrderID), 10248);
+    private async Task DeleteFirstByKeyContent() => await DefaultGrid.DeleteRecordAsync(nameof(OrderData.OrderID), Orders[0]);
 }
 {% endhighlight %}
 {% endtabs %}
@@ -1028,96 +1035,6 @@ Use these methods when batch editing is enabled and you want to undo or redo use
 Prerequisites:
 - Set `EnableUndoRedo="true"`.
 - Use batch editing.
-
-
-## Additional method groups from the verified inventory
-
-The following method groups are present in the API reference but were not covered in the first draft samples. They are listed here so the page matches the verified inventory.
-
-### Paging and scrolling
-
-| Method | Description | Parameters | Returns |
-|--------|-------------|------------|---------|
-| `GoToPageAsync` | Moves to a page number. | `int pageNo` | `Task` |
-| `ScrollIntoViewAsync` | Scrolls a row or column into view. | `int columnIndex = -1`, `int rowIndex = -1`, `int rowHeight = -1` | `Task` |
-| `UpdatePageSizeAsync` | Changes the page size or refreshes virtualization based on height. | `int pageSize` or `int height, int rowHeight = 0` | `Task` |
-
-### Detail rows
-
-| Method | Description | Parameters | Returns |
-|--------|-------------|------------|---------|
-| `CollapseAllDetailRowAsync` | Collapses all detail rows. | None | `Task` |
-| `ExpandAllDetailRowAsync` | Expands all detail rows. | None | `Task` |
-| `ExpandCollapseDetailRowAsync` | Expands or collapses a detail row by field name and value, or by row data. | `string fieldName, object value` or `TValue data` | `Task` |
-
-### Cell merging
-
-| Method | Description | Parameters | Returns |
-|--------|-------------|------------|---------|
-| `MergeCellsAsync` | Merges one or more visible cell ranges. | `MergeCellInfo info` or `IEnumerable<MergeCellInfo> infos` | `Task` |
-| `UnmergeAllAsync` | Removes all merged regions in the current view. | None | `Task` |
-| `UnmergeCellsAsync` | Removes merged areas by anchor cell. | `UnmergeCellInfo info` or `IEnumerable<UnmergeCellInfo> infos` | `Task` |
-
-### Column visibility and chooser
-
-| Method | Description | Parameters | Returns |
-|--------|-------------|------------|---------|
-| `HideColumnAsync` | Hides a column. | `string columnName`, `string hideBy = "HeaderText"` | `Task` |
-| `HideColumnsAsync` | Hides multiple columns. | `string[] columnNames`, `string hideBy = "HeaderText"` | `Task` |
-| `OpenColumnChooserAsync` | Opens the column chooser popup. | `double? x = null`, `double? y = null` | `Task` |
-| `ShowColumnAsync` | Shows a column. | `string columnName`, `string showBy = "HeaderText"` | `Task` |
-| `ShowColumnsAsync` | Shows multiple columns. | `string[] columnNames`, `string showBy = "HeaderText"` | `Task` |
-
-### Column layout and reorder
-
-| Method | Description | Parameters | Returns |
-|--------|-------------|------------|---------|
-| `AutoFitColumnAsync` | Fits one column to its content. | `string fieldName` | `Task` |
-| `AutoFitColumnsAsync` | Fits all or selected columns. | None or `string[] fieldNames` | `Task` |
-| `ReorderColumnAsync` | Moves one column before another. | `string fromFieldName`, `string toFieldName` | `Task` |
-| `ReorderColumnByIndexAsync` | Reorders columns by index. | `int fromIndex`, `int toIndex` | `Task` |
-| `ReorderColumnByTargetIndexAsync` | Moves a column to a target index. | `string fieldName`, `int toIndex` | `Task` |
-| `ReorderColumnsAsync` | Reorders multiple columns. | `List<string> fromFieldNames, string toFieldName` or `string[] fromFieldNames, string toFieldName` | `Task` |
-| `ReorderRowAsync` | Reorders rows. | `int fromIndex`, `int toIndex` | `Task` |
-
-### Column and data information
-
-| Method | Description | Parameters | Returns |
-|--------|-------------|------------|---------|
-| `GetCellValueByIndexAsync` | Gets a cell value by row and column indexes. | `int rowIndex`, `int columnIndex` | `Task<object>` |
-| `GetColumnByFieldAsync` | Gets a column by field name. | `string fieldName` | `Task<GridColumn>` |
-| `GetColumnByUidAsync` | Gets a column by UID. | `string uid` | `Task<GridColumn>` |
-| `GetColumnFieldNamesAsync` | Gets the bound column field names. | None | `Task<List<string>>` |
-| `GetColumnIndexByFieldAsync` | Gets a column index by field name. | `string fieldName` | `Task<int>` |
-| `GetColumnIndexByUidAsync` | Gets a column index by UID. | `string uid` | `Task<int>` |
-| `GetColumnsAsync` | Gets the grid columns. | `bool? isRefresh = null` | `Task<List<GridColumn>>` |
-| `GetCurrentViewRecordsAsync` | Gets the visible records. | None | `Task<List<TValue>>` |
-| `GetForeignKeyColumnsAsync` | Gets foreign key columns. | None | `Task<List<GridColumn>>` |
-| `GetHiddenColumnsAsync` | Gets hidden columns. | None | `Task<List<GridColumn>>` |
-| `GetPrimaryKeyFieldNamesAsync` | Gets primary key field names. | None | `Task<List<string>>` |
-| `GetRowIndexByPrimaryKeyAsync` | Gets a row index by primary key. | `object value`, `bool searchAcrossRecords = false` | `Task<int>` |
-| `GetUidByColumnFieldAsync` | Gets a UID by field name. | `string fieldName` | `Task<string>` |
-| `GetVisibleColumnsAsync` | Gets visible columns. | None | `Task<List<GridColumn>>` |
-
-### Refresh and spinner
-
-| Method | Description | Parameters | Returns |
-|--------|-------------|------------|---------|
-| `HideSpinnerAsync` | Hides the loading spinner. | None | `Task` |
-| `Refresh` | Refreshes the grid header and content. | `bool isModelRefresh = false` | `Task` |
-| `RefreshColumnsAsync` | Refreshes the grid after external column changes. | None | `Task` |
-| `RefreshHeaderAsync` | Refreshes the grid header. | None | `Task` |
-| `ShowSpinnerAsync` | Shows the spinner. | None | `Task` |
-
-### Toolbar, focus and other
-
-| Method | Description | Parameters | Returns |
-|--------|-------------|------------|---------|
-| `EnableToolbarItemsAsync` | Enables or disables toolbar items. | `List<string> items`, `bool isEnable` | `Task` |
-| `FocusAsync` | Focuses the grid element. | None | `Task` |
-| `GetWebMcpToolsAsync` | Gets WebMCP tools for the grid. | `IEnumerable<string>? toolNames = null` | `Task<IReadOnlyList<IGridWebMcpTool>>` |
-| `UpdateExternalMessageAsync` | Updates the external message text. | `string message` | `Task` |
-
 
 
 ## Paging and scrolling examples
@@ -1322,7 +1239,7 @@ Use these methods to resize or move columns. This section helps new users unders
 | `ReorderRowAsync` | Reorders rows. | `int fromIndex`, `int toIndex` | `Task` |
 
 Prerequisites:
-- Set `AllowResizing="true"` for autofit behavior.
+- Set `AllowReordering="true"` for autofit behavior.
 
 {% tabs %}
 {% highlight razor tabtitle="Index.razor" %}
@@ -1332,7 +1249,7 @@ Prerequisites:
 <SfButton Content="Auto Fit Order ID" OnClick="AutoFitColumnContent" />
 <SfButton Content="Move Ship City" OnClick="ReorderColumnContent" />
 
-<SfGrid @ref="DefaultGrid" DataSource="@Orders" AllowResizing="true">
+<SfGrid @ref="DefaultGrid" DataSource="@Orders" AllowReordering="true">
     <GridColumns>
         <GridColumn Field=@nameof(OrderData.OrderID) HeaderText="Order ID" Width="120" TextAlign="TextAlign.Right"></GridColumn>
         <GridColumn Field=@nameof(OrderData.CustomerID) HeaderText="Customer ID" Width="120"></GridColumn>
@@ -1453,7 +1370,7 @@ Prerequisites:
     private List<OrderData> Orders { get; set; }
     protected override void OnInitialized() => Orders = OrderData.GetAllRecords();
     private async Task ShowSpinnerContent() => await DefaultGrid.ShowSpinnerAsync();
-    private async Task RefreshContent() => await DefaultGrid.RefreshAsync();
+    private async Task RefreshContent() => await DefaultGrid.Refresh();
     private async Task HideSpinnerContent() => await DefaultGrid.HideSpinnerAsync();
 }
 {% endhighlight %}
