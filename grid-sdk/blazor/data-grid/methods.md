@@ -73,6 +73,7 @@ Prerequisites:
 @code {
     private SfGrid<OrderData> DefaultGrid;
     private List<OrderData> Orders { get; set; }
+    private string LastAction { get; set; }
 
     protected override void OnInitialized() => Orders = OrderData.GetAllRecords();
 
@@ -152,8 +153,8 @@ Use the grouping methods to group and ungroup columns, or to expand and collapse
 
 | Method | Description | Parameters | Returns |
 |--------|-------------|------------|---------|
-| `GroupColumnAsync` | Groups a column by field name. | `string fieldName` | `Task` |
-| `UngroupColumnAsync` | Removes grouping for a column by field name. | `string fieldName` | `Task` |
+| `GroupColumnAsync` | Groups a column by field name. | `string columnName` | `Task` |
+| `UngroupColumnAsync` | Removes grouping for a column by field name. | `string columnName` | `Task` |
 | `ExpandAllGroupAsync` | Expands all grouped rows. | None | `Task` |
 | `CollapseAllGroupAsync` | Collapses all grouped rows. | None | `Task` |
 | `ClearGroupingAsync` | Clears all grouped columns. | None | `Task` |
@@ -185,6 +186,7 @@ Prerequisites:
 @code {
     private SfGrid<OrderData> DefaultGrid;
     private List<OrderData> Orders { get; set; }
+    private string LastAction { get; set; }
 
     protected override void OnInitialized() => Orders = OrderData.GetAllRecords();
 
@@ -277,6 +279,7 @@ Prerequisites:
 @code {
     private SfGrid<OrderData> DefaultGrid;
     private List<OrderData> Orders { get; set; }
+    private string LastAction { get; set; }
 
     protected override void OnInitialized() => Orders = OrderData.GetAllRecords();
 
@@ -341,8 +344,8 @@ Use these methods to select rows or cells, clear the selection, and read the sel
 | `SelectRowsAsync` | Selects multiple rows by indexes. | `int[] rowIndexes` | `Task` |
 | `SelectRowsByRangeAsync` | Selects a row range. | `int startIndex`, `int endIndex` | `Task` |
 | `SelectCellAsync` | Selects a cell by row and column indexes. | `int rowIndex`, `int cellIndex` | `Task` |
-| `SelectCellsAsync` | Selects multiple cells by row and column indexes. | `(int rowIndex, int cellIndex)[] cellIndexes` | `Task` |
-| `SelectCellsByRangeAsync` | Selects a cell range. | `(int rowIndex, int cellIndex) startCell`, `(int rowIndex, int cellIndex) endCell` | `Task` |
+| `SelectCellsAsync` | Selects multiple cells by row and column indexes. | `(int rowIndex, int cellIndex)[] rowCellIndexes` | `Task` |
+| `SelectCellsByRangeAsync` | Selects a cell range. | `(int rowIndex, int cellIndex) startIndex`, `(int rowIndex, int cellIndex)? endIndex = null` | `Task` |
 | `ClearSelectionAsync` | Clears all selected rows and cells. | None | `Task` |
 | `ClearRowSelectionAsync` | Clears selected rows. | None | `Task` |
 | `ClearCellSelectionAsync` | Clears selected cells. | None | `Task` |
@@ -385,6 +388,7 @@ Prerequisites:
 @code {
     private SfGrid<OrderData> DefaultGrid;
     private List<OrderData> Orders { get; set; }
+    private string LastAction { get; set; }
 
     protected override void OnInitialized() => Orders = OrderData.GetAllRecords();
 
@@ -502,6 +506,7 @@ What each button does:
 @code {
     private SfGrid<OrderData> DefaultGrid;
     private List<OrderData> Orders { get; set; }
+    private string LastAction { get; set; }
 
     protected override void OnInitialized() => Orders = OrderData.GetAllRecords();
 
@@ -574,7 +579,7 @@ Prerequisites:
 | `SortColumnAsync` | Sorts a column by field name. | `string columnName`, `SortDirection direction`, `bool? isMultiSort = null` | `Task` |
 | `SortColumnsAsync` | Sorts multiple columns. | `List<SortColumn> columns` or `List<SortColumn> columns, bool clearPreviousSort` | `Task` |
 | `ClearSortingAsync` | Clears sorting. | `List<string> fieldNames = null` | `Task` |
-| `FilterByColumnAsync` | Filters a column by field name and operator. | `string fieldName`, `string filterOperator`, `object filterValue`, `string predicate = "and"`, `bool? matchCase = null`, `bool? ignoreAccent = null`, `object actualFilterValue = null`, `object actualOperator = null`, `string value = null` | `Task` |
+| `FilterByColumnAsync` | Filters a column by field name and operator. | `string fieldName`, `string filterOperator`, `object filterValue`, `string predicate = null`, `bool? matchCase = null`, `bool? ignoreAccent = null`, `object actualFilterValue = null`, `object actualOperator = null`, `string columnUid = null` | `Task` |
 | `ClearFilteringAsync` | Clears filtering. | `()` or `string fieldName` or `List<string> fieldNames` | `Task` |
 
 What each button does:
@@ -609,6 +614,7 @@ What each button does:
 @code {
     private SfGrid<OrderData> DefaultGrid;
     private List<OrderData> Orders { get; set; }
+    private string LastAction { get; set; }
 
     protected override void OnInitialized() => Orders = OrderData.GetAllRecords();
 
@@ -755,7 +761,7 @@ Prerequisites:
 | Method | Description | Parameters | Returns |
 |--------|-------------|------------|---------|
 | `GetPersistDataAsync` | Returns the current persisted state string. | None | `Task<string>` |
-| `SetPersistDataAsync` | Applies a persisted state string. | `string persistData` | `Task` |
+| `SetPersistDataAsync` | Applies a persisted state string. | `string properties` | `Task` |
 | `ResetPersistDataAsync` | Clears persisted state. | None | `Task` |
 
 What each button does:
@@ -881,6 +887,7 @@ What each button does:
 @code {
     private SfGrid<OrderData> DefaultGrid;
     private List<OrderData> Orders { get; set; }
+    private string LastAction { get; set; }
 
     protected override void OnInitialized() => Orders = OrderData.GetAllRecords();
 
@@ -933,6 +940,54 @@ What each button does:
 - `CopyAsync` copies the current selection.
 - `PasteAsync` pastes clipboard data.
 
+## Cell merging
+
+Use these methods to merge and unmerge grid cells.
+
+| Method | Description | Parameters | Returns |
+|--------|-------------|------------|---------|
+| `MergeCellsAsync` | Merges a range of cells. | `(int rowIndex, int cellIndex) startIndex`, `(int rowIndex, int cellIndex) endIndex` | `Task` |
+| `UnmergeCellsAsync` | Unmerges a range of cells. | `(int rowIndex, int cellIndex) startIndex`, `(int rowIndex, int cellIndex) endIndex` | `Task` |
+| `UnmergeAllAsync` | Unmerges all merged cells in the grid. | None | `Task` |
+
+Prerequisites:
+- Enable cell selection if you want to merge a visible selection.
+
+{% tabs %}
+{% highlight razor tabtitle="Index.razor" %}
+@using Syncfusion.Blazor.Grids
+@using Syncfusion.Blazor.Buttons
+
+<SfButton Content="Merge Cells" OnClick="MergeCellsContent" />
+<SfButton Content="Unmerge Cells" OnClick="UnmergeCellsContent" />
+<SfButton Content="Unmerge All" OnClick="UnmergeAllContent" />
+
+<SfGrid @ref="DefaultGrid" DataSource="@Orders" AllowSelection="true">
+    <GridSelectionSettings Type="SelectionType.Multiple" Mode="SelectionMode.Cell"></GridSelectionSettings>
+    <GridColumns>
+        <GridColumn Field=@nameof(OrderData.OrderID) HeaderText="Order ID" Width="120" TextAlign="TextAlign.Right"></GridColumn>
+        <GridColumn Field=@nameof(OrderData.CustomerID) HeaderText="Customer ID" Width="120"></GridColumn>
+        <GridColumn Field=@nameof(OrderData.ShipCity) HeaderText="Ship City" Width="130"></GridColumn>
+        <GridColumn Field=@nameof(OrderData.ShipName) HeaderText="Ship Name" Width="120"></GridColumn>
+    </GridColumns>
+</SfGrid>
+
+@code {
+    private SfGrid<OrderData> DefaultGrid;
+    private List<OrderData> Orders { get; set; }
+    protected override void OnInitialized() => Orders = OrderData.GetAllRecords();
+    private async Task MergeCellsContent() => await DefaultGrid.MergeCellsAsync((0, 0), (0, 1));
+    private async Task UnmergeCellsContent() => await DefaultGrid.UnmergeCellsAsync((0, 0), (0, 1));
+    private async Task UnmergeAllContent() => await DefaultGrid.UnmergeAllAsync();
+}
+{% endhighlight %}
+{% highlight c# tabtitle="OrderData.cs" %}
+internal sealed class OrderData { /* same as above */ }
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "https://blazorplayground.syncfusion.com/embed/TODO?appbar=false&editor=false&result=true&errorlist=false&theme=fluent2" %}
+
 ## Layout and refresh
 
 Use these methods to adjust column layout and refresh the grid UI.
@@ -962,6 +1017,8 @@ Use these methods to adjust column layout and refresh the grid UI.
 <SfButton Content="Show Spinner" OnClick="ShowSpinnerContent" />
 <SfButton Content="Hide Spinner" OnClick="HideSpinnerContent" />
 
+<p>@InfoOutput</p>
+
 <SfGrid @ref="DefaultGrid" DataSource="@Orders">
     <GridColumns>
         <GridColumn Field=@nameof(OrderData.OrderID) HeaderText="Order ID" Width="120" TextAlign="TextAlign.Right"></GridColumn>
@@ -974,6 +1031,7 @@ Use these methods to adjust column layout and refresh the grid UI.
 @code {
     private SfGrid<OrderData> DefaultGrid;
     private List<OrderData> Orders { get; set; }
+    private string LastAction { get; set; }
 
     protected override void OnInitialized() => Orders = OrderData.GetAllRecords();
 
@@ -1071,6 +1129,8 @@ Prerequisites:
 
 Batch editing methods are shown in the batch section below.
 
+<p>@LastAction</p>
+
 <SfGrid @ref="DefaultGrid" DataSource="@Orders">
     <GridEditSettings Mode="EditMode.Normal" AllowAdding="true" AllowEditing="true" AllowDeleting="true"></GridEditSettings>
     <GridColumns>
@@ -1157,16 +1217,17 @@ Prerequisites:
 @code {
     private SfGrid<OrderData> DefaultGrid;
     private List<OrderData> Orders { get; set; }
+    private string LastAction { get; set; }
 
     protected override void OnInitialized() => Orders = OrderData.GetAllRecords();
-    private async Task SetCellValueContent() => await DefaultGrid.SetCellValueAsync(10248, nameof(OrderData.CustomerID), "UPDATED");
+    private async Task SetCellValueContent() { await DefaultGrid.SetCellValueAsync(10248, nameof(OrderData.CustomerID), "UPDATED"); LastAction = "SetCellValueAsync"; }
     private async Task SetRowDataContent() => await DefaultGrid.SetRowDataAsync(10248, Orders[0]);
     private async Task UpdateBatchRowContent() => await DefaultGrid.UpdateBatchRowAsync(Orders[0]);
     private async Task UpdateCellContent() => await DefaultGrid.UpdateCellAsync(0, nameof(OrderData.CustomerID), "UPDATED");
     private async Task UpdateRowContent() => await DefaultGrid.UpdateRowAsync(0, Orders[0]);
     private async Task ApplyBatchChangesContent() => await DefaultGrid.ApplyBatchChangesAsync(await DefaultGrid.GetBatchChangesAsync());
-    private async Task GetBatchChangesContent() => _ = await DefaultGrid.GetBatchChangesAsync();
-    private async Task IsDirtyContent() => _ = await DefaultGrid.IsDirtyAsync();
+    private async Task GetBatchChangesContent() { _ = await DefaultGrid.GetBatchChangesAsync(); LastAction = "GetBatchChangesAsync"; }
+    private async Task IsDirtyContent() { _ = await DefaultGrid.IsDirtyAsync(); LastAction = "IsDirtyAsync"; }
     private async Task ClearUndoRedoContent() => await DefaultGrid.ClearUndoRedoAsync();
     private async Task RedoAllContent() => await DefaultGrid.RedoAllAsync();
     private async Task RedoContent() => await DefaultGrid.RedoAsync();
@@ -1193,7 +1254,7 @@ Use these methods to move to a page, update the page size, or scroll a cell into
 
 Prerequisites:
 - Set `AllowPaging="true"` for page navigation.
-- Use virtualization only if you want to scroll by row height.
+- Set `EnableVirtualization="true"` for `ScrollIntoViewAsync()` and the height overload of `UpdatePageSizeAsync()`.
 
 {% tabs %}
 {% highlight razor tabtitle="Index.razor" %}
@@ -1217,6 +1278,7 @@ Prerequisites:
 @code {
     private SfGrid<OrderData> DefaultGrid;
     private List<OrderData> Orders { get; set; }
+    private string LastAction { get; set; }
 
     protected override void OnInitialized() => Orders = OrderData.GetAllRecords();
 
@@ -1379,7 +1441,7 @@ Use these methods to resize or move columns. This section helps new users unders
 | Method | Description | Parameters | Returns |
 |--------|-------------|------------|---------|
 | `AutoFitColumnAsync` | Fits one column to its content. | `string fieldName` | `Task` |
-| `AutoFitColumnsAsync` | Fits all or selected columns. | None or `string[] fields` | `Task` |
+| `AutoFitColumnsAsync` | Fits all or selected columns. | None or `string[] fieldNames` | `Task` |
 | `ReorderColumnAsync` | Moves one column before another. | `string fromFieldName`, `string toFieldName` | `Task` |
 | `ReorderColumnByIndexAsync` | Reorders by index. | `int fromIndex`, `int toIndex` | `Task` |
 | `ReorderColumnByTargetIndexAsync` | Moves a column to a target index. | `string fieldName`, `int toIndex` | `Task` |
@@ -1387,7 +1449,7 @@ Use these methods to resize or move columns. This section helps new users unders
 | `ReorderRowAsync` | Reorders rows. | `int fromIndex`, `int toIndex` | `Task` |
 
 Prerequisites:
-- Set `AllowReordering="true"` for autofit behavior.
+- Set `AllowReordering="true"` for the reorder methods.
 
 {% tabs %}
 {% highlight razor tabtitle="Index.razor" %}
@@ -1401,6 +1463,8 @@ Prerequisites:
 <SfButton Content="Move By Target Index" OnClick="ReorderByTargetIndexContent" />
 <SfButton Content="Move Multiple Columns" OnClick="ReorderColumnsContent" />
 <SfButton Content="Move Row" OnClick="ReorderRowContent" />
+
+<p>@InfoOutput</p>
 
 <SfGrid @ref="DefaultGrid" DataSource="@Orders">
     <GridColumns>
@@ -1463,6 +1527,8 @@ Prerequisites:
 <SfButton Content="Show Selected Info" OnClick="ShowInfoContent" />
 <SfButton Content="Find Order 10250" OnClick="FindRowContent" />
 
+<p>@InfoOutput</p>
+
 <SfGrid @ref="DefaultGrid" DataSource="@Orders">
     <GridColumns>
         <GridColumn Field=@nameof(OrderData.OrderID) HeaderText="Order ID" Width="120" TextAlign="TextAlign.Right"></GridColumn>
@@ -1476,6 +1542,8 @@ Prerequisites:
     private SfGrid<OrderData> DefaultGrid;
     private List<OrderData> Orders { get; set; }
     protected override void OnInitialized() => Orders = OrderData.GetAllRecords();
+    private string InfoOutput { get; set; }
+
     private async Task ShowInfoContent()
     {
         var value = await DefaultGrid.GetCellValueByIndexAsync(0, 0);
@@ -1492,6 +1560,7 @@ Prerequisites:
         var columnIndexByUid = await DefaultGrid.GetColumnIndexByUidAsync(firstColumn.Uid);
         var uid = await DefaultGrid.GetUidByColumnFieldAsync(nameof(OrderData.OrderID));
         var rowIndex = await DefaultGrid.GetRowIndexByPrimaryKeyAsync(10250);
+        InfoOutput = $"{columns.Count} columns, {fields.Count} fields, {visible.Count} visible, {hidden.Count} hidden, {primaryKeys.Count} keys, {foreignKeyColumns.Count} foreign keys, {currentRecords.Count} records, row {rowIndex}";
     }
     private async Task FindRowContent() => await DefaultGrid.GetRowIndexByPrimaryKeyAsync(10250);
 }
@@ -1528,6 +1597,8 @@ Prerequisites:
 <SfButton Content="Refresh Columns" OnClick="RefreshColumnsContent" />
 <SfButton Content="Refresh Header" OnClick="RefreshHeaderContent" />
 <SfButton Content="Hide Spinner" OnClick="HideSpinnerContent" />
+
+<p>@InfoOutput</p>
 
 <SfGrid @ref="DefaultGrid" DataSource="@Orders">
     <GridColumns>
@@ -1568,6 +1639,7 @@ These methods are less common, but they are useful when you need to control tool
 | `UpdateExternalMessageAsync` | Updates the external message text. | `string message` | `Task` |
 
 Prerequisites:
+- Set `EnableWebMcp="true"` for `GetWebMcpToolsAsync()`.
 - The grid must be rendered before calling these methods.
 
 {% tabs %}
