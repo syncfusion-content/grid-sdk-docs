@@ -1003,4 +1003,398 @@ The following method groups are present in the API reference but were not covere
 | `PreventRender` | Prevents rendering. | `bool preventRender = true` | `void` |
 | `UpdateExternalMessageAsync` | Updates the external message text. | `string message` | `Task` |
 
+
+
+## Paging and scrolling examples
+
+Use these methods to move to a page, update the page size, or scroll a cell into view. They are helpful when you work with large data sets.
+
+| Method | Description | Parameters | Returns |
+|--------|-------------|------------|---------|
+| `GoToPageAsync` | Moves to the requested page. | `int pageNo` | `Task` |
+| `ScrollIntoViewAsync` | Scrolls a row or column into view. | `int columnIndex = -1`, `int rowIndex = -1`, `int rowHeight = -1` | `Task` |
+| `UpdatePageSizeAsync` | Updates the page size or refreshes virtualization height. | `int pageSize` or `int height, int rowHeight = 0` | `Task` |
+
+Prerequisites:
+- Set `AllowPaging="true"` for page navigation.
+- Use virtualization only if you want to scroll by row height.
+
+{% tabs %}
+{% highlight razor tabtitle="Index.razor" %}
+@using Syncfusion.Blazor.Grids
+@using Syncfusion.Blazor.Buttons
+
+<SfButton Content="Page 2" OnClick="GoToPageContent" />
+<SfButton Content="Show Row 8" OnClick="ScrollIntoViewContent" />
+<SfButton Content="Page Size 12" OnClick="UpdatePageSizeContent" />
+
+<SfGrid @ref="DefaultGrid" DataSource="@Orders" AllowPaging="true" Height="300">
+    <GridPageSettings PageSize="5"></GridPageSettings>
+    <GridColumns>
+        <GridColumn Field=@nameof(OrderData.OrderID) HeaderText="Order ID" Width="120" TextAlign="TextAlign.Right"></GridColumn>
+        <GridColumn Field=@nameof(OrderData.CustomerID) HeaderText="Customer ID" Width="120"></GridColumn>
+        <GridColumn Field=@nameof(OrderData.ShipCity) HeaderText="Ship City" Width="130"></GridColumn>
+        <GridColumn Field=@nameof(OrderData.ShipName) HeaderText="Ship Name" Width="120"></GridColumn>
+    </GridColumns>
+</SfGrid>
+
+@code {
+    private SfGrid<OrderData> DefaultGrid;
+    private List<OrderData> Orders { get; set; }
+
+    protected override void OnInitialized() => Orders = OrderData.GetAllRecords();
+
+    private async Task GoToPageContent() => await DefaultGrid.GoToPageAsync(2);
+    private async Task ScrollIntoViewContent() => await DefaultGrid.ScrollIntoViewAsync(rowIndex: 7);
+    private async Task UpdatePageSizeContent() => await DefaultGrid.UpdatePageSizeAsync(12);
+}
+{% endhighlight %}
+{% highlight c# tabtitle="OrderData.cs" %}
+internal sealed class OrderData
+{
+    private static readonly List<OrderData> Data = new();
+
+    public OrderData(int orderID, string customerID, string shipCity, string shipName)
+    {
+        OrderID = orderID;
+        CustomerID = customerID;
+        ShipCity = shipCity;
+        ShipName = shipName;
+    }
+
+    internal static List<OrderData> GetAllRecords()
+    {
+        if (Data.Count == 0)
+        {
+            Data.Add(new OrderData(10248, "VINET", "Reims", "Vins et alcools Cheval"));
+            Data.Add(new OrderData(10249, "TOMSP", "Münster", "Toms Spezialitäten"));
+            Data.Add(new OrderData(10250, "HANAR", "Rio de Janeiro", "Hanari Carnes"));
+            Data.Add(new OrderData(10251, "VICTE", "Lyon", "Victuailles en stock"));
+            Data.Add(new OrderData(10252, "SUPRD", "Charleroi", "Suprêmes délices"));
+            Data.Add(new OrderData(10253, "HANAR", "Rio de Janeiro", "Hanari Carnes"));
+            Data.Add(new OrderData(10254, "CHOPS", "Bern", "Chop-suey Chinese"));
+            Data.Add(new OrderData(10255, "RICSU", "Genève", "Richter Supermarkt"));
+            Data.Add(new OrderData(10256, "WELLI", "Resende", "Wellington Importado"));
+        }
+
+        return Data;
+    }
+
+    public int OrderID { get; set; }
+    public string CustomerID { get; set; }
+    public string ShipCity { get; set; }
+    public string ShipName { get; set; }
+}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "https://blazorplayground.syncfusion.com/embed/TODO?appbar=false&editor=false&result=true&errorlist=false&theme=fluent2" %}
+
+## Detail rows examples
+
+Use these methods when your grid shows master-detail rows. They let new users expand or collapse details from a button click.
+
+| Method | Description | Parameters | Returns |
+|--------|-------------|------------|---------|
+| `CollapseAllDetailRowAsync` | Collapses all detail rows. | None | `Task` |
+| `ExpandAllDetailRowAsync` | Expands all detail rows. | None | `Task` |
+| `ExpandCollapseDetailRowAsync` | Expands or collapses one detail row. | `string fieldName, object value` or `TValue data` | `Task` |
+
+Prerequisites:
+- Add a detail template to the grid.
+- Use a field and value that match the current row data.
+
+{% tabs %}
+{% highlight razor tabtitle="Index.razor" %}
+@using Syncfusion.Blazor.Grids
+@using Syncfusion.Blazor.Buttons
+
+<SfButton Content="Expand All" OnClick="ExpandAllContent" />
+<SfButton Content="Collapse All" OnClick="CollapseAllContent" />
+<SfButton Content="Toggle First Row" OnClick="ToggleFirstRowContent" />
+
+<SfGrid @ref="DefaultGrid" DataSource="@Orders">
+    <GridTemplates>
+        <DetailTemplate Context="order">
+            <div style="padding:10px">Customer: @((order as OrderData).CustomerID), Ship City: @((order as OrderData).ShipCity)</div>
+        </DetailTemplate>
+    </GridTemplates>
+    <GridColumns>
+        <GridColumn Field=@nameof(OrderData.OrderID) HeaderText="Order ID" Width="120" TextAlign="TextAlign.Right"></GridColumn>
+        <GridColumn Field=@nameof(OrderData.CustomerID) HeaderText="Customer ID" Width="120"></GridColumn>
+        <GridColumn Field=@nameof(OrderData.ShipCity) HeaderText="Ship City" Width="130"></GridColumn>
+        <GridColumn Field=@nameof(OrderData.ShipName) HeaderText="Ship Name" Width="120"></GridColumn>
+    </GridColumns>
+</SfGrid>
+
+@code {
+    private SfGrid<OrderData> DefaultGrid;
+    private List<OrderData> Orders { get; set; }
+    protected override void OnInitialized() => Orders = OrderData.GetAllRecords();
+    private async Task ExpandAllContent() => await DefaultGrid.ExpandAllDetailRowAsync();
+    private async Task CollapseAllContent() => await DefaultGrid.CollapseAllDetailRowAsync();
+    private async Task ToggleFirstRowContent() => await DefaultGrid.ExpandCollapseDetailRowAsync(nameof(OrderData.OrderID), 10248);
+}
+{% endhighlight %}
+{% highlight c# tabtitle="OrderData.cs" %}
+internal sealed class OrderData { /* same as above */ }
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "https://blazorplayground.syncfusion.com/embed/TODO?appbar=false&editor=false&result=true&errorlist=false&theme=fluent2" %}
+
+## Column visibility and chooser examples
+
+Use these methods to hide or show columns and open the column chooser for beginners who want to customize the grid view.
+
+| Method | Description | Parameters | Returns |
+|--------|-------------|------------|---------|
+| `HideColumnAsync` | Hides one column. | `string columnName`, `string hideBy = "HeaderText"` | `Task` |
+| `HideColumnsAsync` | Hides multiple columns. | `string[] columnNames`, `string hideBy = "HeaderText"` | `Task` |
+| `OpenColumnChooserAsync` | Opens the chooser popup. | `double? x = null`, `double? y = null` | `Task` |
+| `ShowColumnAsync` | Shows one column. | `string columnName`, `string showBy = "HeaderText"` | `Task` |
+| `ShowColumnsAsync` | Shows multiple columns. | `string[] columnNames`, `string showBy = "HeaderText"` | `Task` |
+
+Prerequisites:
+- Set `ShowColumnChooser="true"` if you want the chooser button to work.
+
+{% tabs %}
+{% highlight razor tabtitle="Index.razor" %}
+@using Syncfusion.Blazor.Grids
+@using Syncfusion.Blazor.Buttons
+
+<SfButton Content="Hide Ship City" OnClick="HideColumnContent" />
+<SfButton Content="Show Ship City" OnClick="ShowColumnContent" />
+<SfButton Content="Open Chooser" OnClick="OpenChooserContent" />
+
+<SfGrid @ref="DefaultGrid" DataSource="@Orders" ShowColumnChooser="true">
+    <GridColumns>
+        <GridColumn Field=@nameof(OrderData.OrderID) HeaderText="Order ID" Width="120" TextAlign="TextAlign.Right"></GridColumn>
+        <GridColumn Field=@nameof(OrderData.CustomerID) HeaderText="Customer ID" Width="120"></GridColumn>
+        <GridColumn Field=@nameof(OrderData.ShipCity) HeaderText="Ship City" Width="130"></GridColumn>
+        <GridColumn Field=@nameof(OrderData.ShipName) HeaderText="Ship Name" Width="120"></GridColumn>
+    </GridColumns>
+</SfGrid>
+
+@code {
+    private SfGrid<OrderData> DefaultGrid;
+    private List<OrderData> Orders { get; set; }
+    protected override void OnInitialized() => Orders = OrderData.GetAllRecords();
+    private async Task HideColumnContent() => await DefaultGrid.HideColumnAsync(nameof(OrderData.ShipCity));
+    private async Task ShowColumnContent() => await DefaultGrid.ShowColumnAsync(nameof(OrderData.ShipCity));
+    private async Task OpenChooserContent() => await DefaultGrid.OpenColumnChooserAsync();
+}
+{% endhighlight %}
+{% highlight c# tabtitle="OrderData.cs" %}
+internal sealed class OrderData { /* same as above */ }
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "https://blazorplayground.syncfusion.com/embed/TODO?appbar=false&editor=false&result=true&errorlist=false&theme=fluent2" %}
+
+## Column layout and reorder examples
+
+Use these methods to resize or move columns. This section helps new users understand how to make the grid easier to scan.
+
+| Method | Description | Parameters | Returns |
+|--------|-------------|------------|---------|
+| `AutoFitColumnAsync` | Fits one column to its content. | `string fieldName` | `Task` |
+| `AutoFitColumnsAsync` | Fits all or selected columns. | None or `string[] fields` | `Task` |
+| `ReorderColumnAsync` | Moves one column before another. | `string fromFieldName`, `string toFieldName` | `Task` |
+| `ReorderColumnByIndexAsync` | Reorders by index. | `int fromIndex`, `int toIndex` | `Task` |
+| `ReorderColumnByTargetIndexAsync` | Moves a column to a target index. | `string fieldName`, `int toIndex` | `Task` |
+| `ReorderColumnsAsync` | Reorders multiple columns. | `List<string> fromFieldNames`, `string toFieldName` or `string[] fromFieldNames`, `string toFieldName` | `Task` |
+| `ReorderRowAsync` | Reorders rows. | `int fromIndex`, `int toIndex` | `Task` |
+
+Prerequisites:
+- Set `AllowResizing="true"` for autofit behavior.
+
+{% tabs %}
+{% highlight razor tabtitle="Index.razor" %}
+@using Syncfusion.Blazor.Grids
+@using Syncfusion.Blazor.Buttons
+
+<SfButton Content="Auto Fit Order ID" OnClick="AutoFitColumnContent" />
+<SfButton Content="Move Ship City" OnClick="ReorderColumnContent" />
+
+<SfGrid @ref="DefaultGrid" DataSource="@Orders" AllowResizing="true">
+    <GridColumns>
+        <GridColumn Field=@nameof(OrderData.OrderID) HeaderText="Order ID" Width="120" TextAlign="TextAlign.Right"></GridColumn>
+        <GridColumn Field=@nameof(OrderData.CustomerID) HeaderText="Customer ID" Width="120"></GridColumn>
+        <GridColumn Field=@nameof(OrderData.ShipCity) HeaderText="Ship City" Width="130"></GridColumn>
+        <GridColumn Field=@nameof(OrderData.ShipName) HeaderText="Ship Name" Width="120"></GridColumn>
+    </GridColumns>
+</SfGrid>
+
+@code {
+    private SfGrid<OrderData> DefaultGrid;
+    private List<OrderData> Orders { get; set; }
+    protected override void OnInitialized() => Orders = OrderData.GetAllRecords();
+    private async Task AutoFitColumnContent() => await DefaultGrid.AutoFitColumnAsync(nameof(OrderData.OrderID));
+    private async Task ReorderColumnContent() => await DefaultGrid.ReorderColumnAsync(nameof(OrderData.ShipCity), nameof(OrderData.CustomerID));
+}
+{% endhighlight %}
+{% highlight c# tabtitle="OrderData.cs" %}
+internal sealed class OrderData { /* same as above */ }
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "https://blazorplayground.syncfusion.com/embed/TODO?appbar=false&editor=false&result=true&errorlist=false&theme=fluent2" %}
+
+## Column and data information examples
+
+Use these methods when you need to read the current grid state from code. They are useful for advanced scenarios and for learning how the grid stores its data and columns.
+
+| Method | Description | Parameters | Returns |
+|--------|-------------|------------|---------|
+| `GetCellValueByIndexAsync` | Gets a cell value by row and column index. | `int rowIndex`, `int columnIndex` | `Task<object>` |
+| `GetColumnByFieldAsync` | Gets a column by field name. | `string fieldName` | `Task<GridColumn>` |
+| `GetColumnByUidAsync` | Gets a column by UID. | `string uid` | `Task<GridColumn>` |
+| `GetColumnFieldNamesAsync` | Gets bound column field names. | None | `Task<List<string>>` |
+| `GetColumnIndexByFieldAsync` | Gets a column index by field name. | `string fieldName` | `Task<int>` |
+| `GetColumnIndexByUidAsync` | Gets a column index by UID. | `string uid` | `Task<int>` |
+| `GetColumnsAsync` | Gets the grid columns. | `bool? isRefresh = null` | `Task<List<GridColumn>>` |
+| `GetCurrentViewRecordsAsync` | Gets the visible records. | None | `Task<List<TValue>>` |
+| `GetForeignKeyColumnsAsync` | Gets foreign key columns. | None | `Task<List<GridColumn>>` |
+| `GetHiddenColumnsAsync` | Gets hidden columns. | None | `Task<List<GridColumn>>` |
+| `GetPrimaryKeyFieldNamesAsync` | Gets primary key field names. | None | `Task<List<string>>` |
+| `GetRowIndexByPrimaryKeyAsync` | Gets a row index by primary key. | `object value`, `bool searchAcrossRecords = false` | `Task<int>` |
+| `GetUidByColumnFieldAsync` | Gets a column UID by field name. | `string fieldName` | `Task<string>` |
+| `GetVisibleColumnsAsync` | Gets visible columns. | None | `Task<List<GridColumn>>` |
+
+Prerequisites:
+- No special grid settings are required.
+
+{% tabs %}
+{% highlight razor tabtitle="Index.razor" %}
+@using Syncfusion.Blazor.Grids
+@using Syncfusion.Blazor.Buttons
+
+<SfButton Content="Show Selected Info" OnClick="ShowInfoContent" />
+<SfButton Content="Find Order 10250" OnClick="FindRowContent" />
+
+<SfGrid @ref="DefaultGrid" DataSource="@Orders">
+    <GridColumns>
+        <GridColumn Field=@nameof(OrderData.OrderID) HeaderText="Order ID" Width="120" TextAlign="TextAlign.Right"></GridColumn>
+        <GridColumn Field=@nameof(OrderData.CustomerID) HeaderText="Customer ID" Width="120"></GridColumn>
+        <GridColumn Field=@nameof(OrderData.ShipCity) HeaderText="Ship City" Width="130"></GridColumn>
+        <GridColumn Field=@nameof(OrderData.ShipName) HeaderText="Ship Name" Width="120"></GridColumn>
+    </GridColumns>
+</SfGrid>
+
+@code {
+    private SfGrid<OrderData> DefaultGrid;
+    private List<OrderData> Orders { get; set; }
+    protected override void OnInitialized() => Orders = OrderData.GetAllRecords();
+    private async Task ShowInfoContent()
+    {
+        var value = await DefaultGrid.GetCellValueByIndexAsync(0, 0);
+    }
+    private async Task FindRowContent() => await DefaultGrid.GetRowIndexByPrimaryKeyAsync(10250);
+}
+{% endhighlight %}
+{% highlight c# tabtitle="OrderData.cs" %}
+internal sealed class OrderData { /* same as above */ }
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "https://blazorplayground.syncfusion.com/embed/TODO?appbar=false&editor=false&result=true&errorlist=false&theme=fluent2" %}
+
+## Refresh and spinner examples
+
+Use these methods to redraw the grid or show a loading indicator while work is running.
+
+| Method | Description | Parameters | Returns |
+|--------|-------------|------------|---------|
+| `HideSpinnerAsync` | Hides the loading spinner. | None | `Task` |
+| `Refresh` | Refreshes the grid header and content. | `bool isModelRefresh = false` | `Task` |
+| `RefreshColumnsAsync` | Refreshes the grid after external column changes. | None | `Task` |
+| `RefreshHeaderAsync` | Refreshes the grid header. | None | `Task` |
+| `ShowSpinnerAsync` | Shows the spinner. | None | `Task` |
+
+Prerequisites:
+- No special settings are required.
+
+{% tabs %}
+{% highlight razor tabtitle="Index.razor" %}
+@using Syncfusion.Blazor.Grids
+@using Syncfusion.Blazor.Buttons
+
+<SfButton Content="Show Spinner" OnClick="ShowSpinnerContent" />
+<SfButton Content="Refresh" OnClick="RefreshContent" />
+<SfButton Content="Hide Spinner" OnClick="HideSpinnerContent" />
+
+<SfGrid @ref="DefaultGrid" DataSource="@Orders">
+    <GridColumns>
+        <GridColumn Field=@nameof(OrderData.OrderID) HeaderText="Order ID" Width="120" TextAlign="TextAlign.Right"></GridColumn>
+        <GridColumn Field=@nameof(OrderData.CustomerID) HeaderText="Customer ID" Width="120"></GridColumn>
+        <GridColumn Field=@nameof(OrderData.ShipCity) HeaderText="Ship City" Width="130"></GridColumn>
+        <GridColumn Field=@nameof(OrderData.ShipName) HeaderText="Ship Name" Width="120"></GridColumn>
+    </GridColumns>
+</SfGrid>
+
+@code {
+    private SfGrid<OrderData> DefaultGrid;
+    private List<OrderData> Orders { get; set; }
+    protected override void OnInitialized() => Orders = OrderData.GetAllRecords();
+    private async Task ShowSpinnerContent() => await DefaultGrid.ShowSpinnerAsync();
+    private async Task RefreshContent() => await DefaultGrid.RefreshAsync();
+    private async Task HideSpinnerContent() => await DefaultGrid.HideSpinnerAsync();
+}
+{% endhighlight %}
+{% highlight c# tabtitle="OrderData.cs" %}
+internal sealed class OrderData { /* same as above */ }
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "https://blazorplayground.syncfusion.com/embed/TODO?appbar=false&editor=false&result=true&errorlist=false&theme=fluent2" %}
+
+## Toolbar, focus and other examples
+
+These methods are less common, but they are useful when you need to control toolbar buttons, focus the grid, or use WebMCP integration.
+
+| Method | Description | Parameters | Returns |
+|--------|-------------|------------|---------|
+| `EnableToolbarItemsAsync` | Enables or disables toolbar items. | `List<string> items`, `bool isEnable` | `Task` |
+| `FocusAsync` | Focuses the grid element. | None | `Task` |
+| `GetClass` | Returns the container class name. | None | `string` |
+| `GetWebMcpToolsAsync` | Gets WebMCP tools for the grid. | `IEnumerable<string>? toolNames = null` | `Task<IReadOnlyList<IGridWebMcpTool>>` |
+| `PreventRender` | Prevents rendering. | `bool preventRender = true` | `void` |
+| `UpdateExternalMessageAsync` | Updates the external message text. | `string message` | `Task` |
+
+Prerequisites:
+- The grid must be rendered before calling these methods.
+
+{% tabs %}
+{% highlight razor tabtitle="Index.razor" %}
+@using Syncfusion.Blazor.Grids
+@using Syncfusion.Blazor.Buttons
+
+<SfButton Content="Focus Grid" OnClick="FocusContent" />
+<SfButton Content="Show Message" OnClick="MessageContent" />
+
+<SfGrid @ref="DefaultGrid" DataSource="@Orders" Toolbar="@(new List<string>() { "Add", "Edit", "Delete" })">
+    <GridColumns>
+        <GridColumn Field=@nameof(OrderData.OrderID) HeaderText="Order ID" Width="120" TextAlign="TextAlign.Right"></GridColumn>
+        <GridColumn Field=@nameof(OrderData.CustomerID) HeaderText="Customer ID" Width="120"></GridColumn>
+        <GridColumn Field=@nameof(OrderData.ShipCity) HeaderText="Ship City" Width="130"></GridColumn>
+        <GridColumn Field=@nameof(OrderData.ShipName) HeaderText="Ship Name" Width="120"></GridColumn>
+    </GridColumns>
+</SfGrid>
+
+@code {
+    private SfGrid<OrderData> DefaultGrid;
+    private List<OrderData> Orders { get; set; }
+    protected override void OnInitialized() => Orders = OrderData.GetAllRecords();
+    private async Task FocusContent() => await DefaultGrid.FocusAsync();
+    private async Task MessageContent() => await DefaultGrid.UpdateExternalMessageAsync("Grid is ready.");
+}
+{% endhighlight %}
+{% highlight c# tabtitle="OrderData.cs" %}
+internal sealed class OrderData { /* same as above */ }
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "https://blazorplayground.syncfusion.com/embed/TODO?appbar=false&editor=false&result=true&errorlist=false&theme=fluent2" %}
+
 API reference: https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.SfGrid-1.html
