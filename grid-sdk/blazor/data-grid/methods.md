@@ -28,12 +28,10 @@ Use `@ref` to access an `SfGrid<TValue>` instance and call its methods after the
 | [Selection](#selection) | `SelectRowAsync`, `SelectRowsAsync`, `SelectRowsByRangeAsync`, `SelectCellAsync`, `SelectCellsAsync`, `SelectCellsByRangeAsync`, `ClearSelectionAsync`, `ClearRowSelectionAsync`, `ClearCellSelectionAsync`, `GetSelectedRecordsAsync`, `GetSelectedRowIndexesAsync`, `GetSelectedRowCellIndexesAsync` |
 | [Searching](#searching) | `SearchAsync`, `FindHighlightAsync`, `FindNextHighlightAsync`, `FindPreviousHighlightAsync`, `FindGoToAsync`, `ResetFindAsync` |
 | [Sorting and filtering](#sorting-and-filtering) | `SortColumnAsync`, `SortColumnsAsync`, `ClearSortingAsync`, `FilterByColumnAsync`, `ClearFilteringAsync` |
-| [Filtering](#filtering) | `GetFilteredRecordsAsync` |
 | [State persistence](#state-persistence) | `GetPersistDataAsync`, `SetPersistDataAsync`, `ResetPersistDataAsync` |
 | [Clipboard](#clipboard) | `CopyAsync`, `PasteAsync` |
-| [Layout and refresh](#layout-and-refresh) | `AutoFitColumnAsync`, `AutoFitColumnsAsync`, `ReorderColumnAsync`, `Refresh`, `RefreshColumnsAsync`, `RefreshHeaderAsync`, `ShowSpinnerAsync`, `HideSpinnerAsync` |
 | [Add, edit and delete](#add-edit-and-delete) | `AddRecordAsync`, `StartEditAsync`, `EndEditAsync`, `CloseEditAsync`, `DeleteRecordAsync` |
-| [Batch editing, batch changes, and undo](#batch-editing-batch-changes-and-undo) | `SetCellValueAsync`, `SetRowDataAsync`, `UpdateBatchRowAsync`, `UpdateCellAsync`, `UpdateRowAsync`, `ApplyBatchChangesAsync`, `GetBatchChangesAsync`, `IsDirtyAsync`, `ClearUndoRedoAsync`, `RedoAllAsync`, `RedoAsync`, `UndoAllAsync`, `UndoAsync` |
+| [Batch editing, batch changes, and undo](#batch-editing-batch-changes-and-undo) | `SetCellValueAsync`, `SetRowDataAsync`, `UpdateBatchRowAsync`, `EditCellAsync`, `SaveCellAsync`, `GetEditContextAsync`, `UpdateCellAsync`, `UpdateRowAsync`, `ApplyBatchChangesAsync`, `GetBatchChangesAsync`, `IsDirtyAsync`, `ClearUndoRedoAsync`, `RedoAllAsync`, `RedoAsync`, `UndoAllAsync`, `UndoAsync` |
 
 ## Export and print
 
@@ -345,7 +343,7 @@ Use these methods to select rows or cells, clear the selection, and read the sel
 | `SelectRowAsync` | Selects a row by index. | `int index`, `bool selectAcrossPages = false` | `Task` |
 | `SelectRowsAsync` | Selects multiple rows by indexes. | `int[] rowIndexes` | `Task` |
 | `SelectRowsByRangeAsync` | Selects a row range. | `int startIndex`, `int endIndex` | `Task` |
-| `SelectCellAsync` | Selects a cell by row and column indexes. | `int rowIndex`, `int cellIndex`, `bool? isToggle = null` | `Task` |
+| `SelectCellAsync` | Selects a cell by row and column indexes. | `(int, int) cellIndex`, `bool? isToggle = null` | `Task` |
 | `SelectCellsAsync` | Selects multiple cells by row and column indexes. | `(int rowIndex, int cellIndex)[] rowCellIndexes` | `Task` |
 | `SelectCellsByRangeAsync` | Selects a cell range. | `(int rowIndex, int cellIndex) startIndex`, `(int rowIndex, int cellIndex)? endIndex = null` | `Task` |
 | `ClearSelectionAsync` | Clears all selected rows and cells. | None | `Task` |
@@ -752,9 +750,6 @@ internal sealed class OrderData
 
 {% previewsample "https://blazorplayground.syncfusion.com/embed/TODO?appbar=false&editor=false&result=true&errorlist=false&theme=fluent2" %}
 
-What each button does:
-- This example shows the buttons listed above.
-
 ## State persistence
 
 Use these methods to save, restore, or clear the persisted grid state.
@@ -1004,9 +999,6 @@ internal sealed class OrderData { /* same as above */ }
 
 {% previewsample "https://blazorplayground.syncfusion.com/embed/TODO?appbar=false&editor=false&result=true&errorlist=false&theme=fluent2" %}
 
-What each button does:
-- This example shows the buttons listed above.
-
 ## Layout and refresh
 
 Use these methods to adjust column layout and refresh the grid UI.
@@ -1120,6 +1112,15 @@ Use these methods to add a new row, begin editing, save or cancel the edit, and 
 
 The add and delete methods have overloads, so the examples below show both the simple and the data-driven forms.
 
+What each button does:
+- `AddRecordAsync` inserts a blank row.
+- `AddRecordAsync(data, index)` inserts a row at a specific position.
+- `StartEditAsync` opens the selected row for editing.
+- `EndEditAsync` saves the active edit.
+- `CloseEditAsync` cancels the active edit.
+- `DeleteRecordAsync` removes the selected row.
+- `DeleteRecordAsync(fieldName, data)` removes a row by key value.
+
 | Method | Description | Parameters | Returns |
 |--------|-------------|------------|---------|
 | `AddRecordAsync` | Starts adding a new row in the grid. | None or `TValue data, int? index = null` | `Task` |
@@ -1188,9 +1189,9 @@ Use these methods when batch editing is enabled and you want to update cells, in
 | `SetCellValueAsync` | Updates one or more cells by primary key. | `IReadOnlyList<CellUpdate> cellValueUpdates` or `object key, string fieldName, object value` | `Task` |
 | `SetRowDataAsync` | Replaces a row by primary key. | `object primaryKeyValue, TValue rowData` or `object primaryKeyValue, TValue rowData, bool preventDataUpdate` | `Task` |
 | `UpdateBatchRowAsync` | Updates the current batch-edited row. | `TValue data` | `Task` |
-| `EditCellAsync` | Opens a cell in batch edit mode. | `int rowIndex, string field` | `Task` |
+| `EditCellAsync` | Opens a cell in batch edit mode. | `int index, string fieldName` | `Task` |
 | `SaveCellAsync` | Saves the current batch-edited cell. | None | `Task` |
-| `GetEditContextAsync` | Gets the current edit context. | None | `Task<object>` |
+| `GetEditContextAsync` | Gets the current edit context. | None | `Task<EditContext>` |
 | `UpdateCellAsync` | Updates one cell without opening edit mode. | `int rowIndex, string field, object value` | `Task` |
 | `UpdateRowAsync` | Replaces a row without edit mode. | `int index, TValue data` | `Task` |
 | `ApplyBatchChangesAsync` | Applies a batch of added, edited, and deleted records to the grid UI. | `BatchChanges<TValue> batchChanges` | `Task` |
@@ -1250,7 +1251,11 @@ Prerequisites:
     private async Task UpdateBatchRowContent() => await DefaultGrid.UpdateBatchRowAsync(Orders[0]);
     private async Task EditCellContent() => await DefaultGrid.EditCellAsync(0, nameof(OrderData.CustomerID));
     private async Task SaveCellContent() => await DefaultGrid.SaveCellAsync();
-    private async Task GetEditContextContent() => await DefaultGrid.GetEditContextAsync();
+    private async Task GetEditContextContent()
+    {
+        var editContext = await DefaultGrid.GetEditContextAsync();
+        LastAction = editContext?.GetType().Name;
+    }
     private async Task UpdateCellContent() => await DefaultGrid.UpdateCellAsync(0, nameof(OrderData.CustomerID), "UPDATED");
     private async Task UpdateRowContent() => await DefaultGrid.UpdateRowAsync(0, Orders[0]);
     private async Task ApplyBatchChangesContent() => await DefaultGrid.ApplyBatchChangesAsync(await DefaultGrid.GetBatchChangesAsync());
@@ -1269,9 +1274,6 @@ internal sealed class OrderData { /* same as above */ }
 {% endtabs %}
 
 {% previewsample "https://blazorplayground.syncfusion.com/embed/TODO?appbar=false&editor=false&result=true&errorlist=false&theme=fluent2" %}
-
-What each button does:
-- This example shows the buttons listed above.
 
 ## Paging and scrolling
 
@@ -1359,9 +1361,6 @@ internal sealed class OrderData
 
 {% previewsample "https://blazorplayground.syncfusion.com/embed/TODO?appbar=false&editor=false&result=true&errorlist=false&theme=fluent2" %}
 
-What each button does:
-- This example shows the buttons listed above.
-
 ## Detail rows
 
 Use these methods when your grid shows master-detail rows. They let new users expand or collapse details from a button click.
@@ -1415,9 +1414,6 @@ internal sealed class OrderData { /* same as above */ }
 
 {% previewsample "https://blazorplayground.syncfusion.com/embed/TODO?appbar=false&editor=false&result=true&errorlist=false&theme=fluent2" %}
 
-What each button does:
-- This example shows the buttons listed above.
-
 ## Column visibility and chooser
 
 Use these methods to hide or show columns and open the column chooser for beginners who want to customize the grid view.
@@ -1470,9 +1466,6 @@ internal sealed class OrderData { /* same as above */ }
 {% endtabs %}
 
 {% previewsample "https://blazorplayground.syncfusion.com/embed/TODO?appbar=false&editor=false&result=true&errorlist=false&theme=fluent2" %}
-
-What each button does:
-- This example shows the buttons listed above.
 
 ## Column layout and reorder
 
@@ -1534,9 +1527,6 @@ internal sealed class OrderData { /* same as above */ }
 {% endtabs %}
 
 {% previewsample "https://blazorplayground.syncfusion.com/embed/TODO?appbar=false&editor=false&result=true&errorlist=false&theme=fluent2" %}
-
-What each button does:
-- This example shows the buttons listed above.
 
 ## Column and data information
 
@@ -1615,9 +1605,6 @@ internal sealed class OrderData { /* same as above */ }
 
 {% previewsample "https://blazorplayground.syncfusion.com/embed/TODO?appbar=false&editor=false&result=true&errorlist=false&theme=fluent2" %}
 
-What each button does:
-- This example shows the buttons listed above.
-
 ## Refresh and spinner
 
 Use these methods to redraw the grid or show a loading indicator while work is running.
@@ -1673,9 +1660,6 @@ internal sealed class OrderData { /* same as above */ }
 
 {% previewsample "https://blazorplayground.syncfusion.com/embed/TODO?appbar=false&editor=false&result=true&errorlist=false&theme=fluent2" %}
 
-What each button does:
-- This example shows the buttons listed above.
-
 ## Toolbar, focus and other
 
 These methods are less common, but they are useful when you need to control toolbar buttons, focus the grid, or use WebMCP integration.
@@ -1726,8 +1710,5 @@ internal sealed class OrderData { /* same as above */ }
 {% endtabs %}
 
 {% previewsample "https://blazorplayground.syncfusion.com/embed/TODO?appbar=false&editor=false&result=true&errorlist=false&theme=fluent2" %}
-
-What each button does:
-- This example shows the buttons listed above.
 
 API reference: https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.SfGrid-1.html
