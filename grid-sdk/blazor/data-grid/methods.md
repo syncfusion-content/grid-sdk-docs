@@ -366,8 +366,15 @@ Prerequisites:
 @using Syncfusion.Blazor.Buttons
 
 <SfButton Content="Select Row 1" OnClick="SelectRowContent" />
+<SfButton Content="Select Rows" OnClick="SelectRowsContent" />
 <SfButton Content="Select Row Range" OnClick="SelectRowsRangeContent" />
 <SfButton Content="Select Cell" OnClick="SelectCellContent" />
+<SfButton Content="Select Cells" OnClick="SelectCellsContent" />
+<SfButton Content="Select Cells Range" OnClick="SelectCellsRangeContent" />
+<SfButton Content="Clear Row Selection" OnClick="ClearRowSelectionContent" />
+<SfButton Content="Clear Cell Selection" OnClick="ClearCellSelectionContent" />
+<SfButton Content="Get Selected Records" OnClick="GetSelectedRecordsContent" />
+<SfButton Content="Get Selected Indexes" OnClick="GetSelectedIndexesContent" />
 <SfButton Content="Clear Selection" OnClick="ClearSelectionContent" />
 
 <SfGrid @ref="DefaultGrid" DataSource="@Orders" AllowSelection="true">
@@ -387,8 +394,15 @@ Prerequisites:
     protected override void OnInitialized() => Orders = OrderData.GetAllRecords();
 
     private async Task SelectRowContent() => await DefaultGrid.SelectRowAsync(1);
+    private async Task SelectRowsContent() => await DefaultGrid.SelectRowsAsync(new[] { 0, 2 });
     private async Task SelectRowsRangeContent() => await DefaultGrid.SelectRowsByRangeAsync(1, 3);
     private async Task SelectCellContent() => await DefaultGrid.SelectCellAsync((1, 1));
+    private async Task SelectCellsContent() => await DefaultGrid.SelectCellsAsync(new[] { 0, 1 }, new[] { 0, 2 });
+    private async Task SelectCellsRangeContent() => await DefaultGrid.SelectCellsByRangeAsync(0, 0, 1, 1);
+    private async Task ClearRowSelectionContent() => await DefaultGrid.ClearRowSelectionAsync();
+    private async Task ClearCellSelectionContent() => await DefaultGrid.ClearCellSelectionAsync();
+    private async Task GetSelectedRecordsContent() => _ = await DefaultGrid.GetSelectedRecordsAsync();
+    private async Task GetSelectedIndexesContent() => _ = await DefaultGrid.GetSelectedRowIndexesAsync();
     private async Task ClearSelectionContent() => await DefaultGrid.ClearSelectionAsync();
 }
 {% endhighlight %}
@@ -578,6 +592,7 @@ What each button does:
 @using Syncfusion.Blazor.Buttons
 
 <SfButton Content="Sort Order ID" OnClick="SortContent" />
+<SfButton Content="Sort Multiple Columns" OnClick="SortMultipleContent" />
 <SfButton Content="Clear Sorting" OnClick="ClearSortContent" />
 <SfButton Content="Filter City" OnClick="FilterContent" />
 <SfButton Content="Clear Filtering" OnClick="ClearFilterContent" />
@@ -598,6 +613,11 @@ What each button does:
     protected override void OnInitialized() => Orders = OrderData.GetAllRecords();
 
     private async Task SortContent() => await DefaultGrid.SortColumnAsync(nameof(OrderData.OrderID), Syncfusion.Blazor.Grids.SortDirection.Descending);
+    private async Task SortMultipleContent() => await DefaultGrid.SortColumnsAsync(new List<SortColumn>
+    {
+        new SortColumn { Field = nameof(OrderData.ShipCity), Direction = Syncfusion.Blazor.Grids.SortDirection.Ascending },
+        new SortColumn { Field = nameof(OrderData.CustomerID), Direction = Syncfusion.Blazor.Grids.SortDirection.Descending }
+    });
     private async Task ClearSortContent() => await DefaultGrid.ClearSortingAsync();
     private async Task FilterContent() => await DefaultGrid.FilterByColumnAsync(nameof(OrderData.ShipCity), "startswith", "R");
     private async Task ClearFilterContent() => await DefaultGrid.ClearFilteringAsync();
@@ -937,6 +957,8 @@ Use these methods to adjust column layout and refresh the grid UI.
 <SfButton Content="Auto Fit All Columns" OnClick="AutoFitColumnsContent" />
 <SfButton Content="Reorder City" OnClick="ReorderColumnContent" />
 <SfButton Content="Refresh" OnClick="RefreshContent" />
+<SfButton Content="Refresh Columns" OnClick="RefreshColumnsContent" />
+<SfButton Content="Refresh Header" OnClick="RefreshHeaderContent" />
 <SfButton Content="Show Spinner" OnClick="ShowSpinnerContent" />
 <SfButton Content="Hide Spinner" OnClick="HideSpinnerContent" />
 
@@ -959,6 +981,8 @@ Use these methods to adjust column layout and refresh the grid UI.
     private async Task AutoFitColumnsContent() => await DefaultGrid.AutoFitColumnsAsync();
     private async Task ReorderColumnContent() => await DefaultGrid.ReorderColumnAsync(nameof(OrderData.ShipCity), nameof(OrderData.CustomerID));
     private async Task RefreshContent() => await DefaultGrid.Refresh();
+    private async Task RefreshColumnsContent() => await DefaultGrid.RefreshColumnsAsync();
+    private async Task RefreshHeaderContent() => await DefaultGrid.RefreshHeaderAsync();
     private async Task ShowSpinnerContent() => await DefaultGrid.ShowSpinnerAsync();
     private async Task HideSpinnerContent() => await DefaultGrid.HideSpinnerAsync();
 }
@@ -1043,6 +1067,9 @@ Prerequisites:
 <SfButton Content="Add Blank Row" OnClick="AddBlankRowContent" />
 <SfButton Content="Add Row At Top" OnClick="AddRowAtTopContent" />
 <SfButton Content="Edit First Row" OnClick="StartEditContent" />
+<SfButton Content="Edit Cell" OnClick="EditCellContent" />
+<SfButton Content="Save Cell" OnClick="SaveCellContent" />
+<SfButton Content="Get Edit Context" OnClick="GetEditContextContent" />
 <SfButton Content="Save Edit" OnClick="SaveEditContent" />
 <SfButton Content="Cancel Edit" OnClick="CloseEditContent" />
 <SfButton Content="Delete Selected" OnClick="DeleteSelectedRowContent" />
@@ -1065,6 +1092,9 @@ Prerequisites:
     private async Task AddBlankRowContent() => await DefaultGrid.AddRecordAsync();
     private async Task AddRowAtTopContent() => await DefaultGrid.AddRecordAsync(new OrderData(10257, "ALFKI", "Berlin", "Alfreds Futterkiste"), 0);
     private async Task StartEditContent() => await DefaultGrid.StartEditAsync();
+    private async Task EditCellContent() => await DefaultGrid.EditCellAsync(1, nameof(OrderData.CustomerID));
+    private async Task SaveCellContent() => await DefaultGrid.SaveCellAsync();
+    private async Task GetEditContextContent() => _ = await DefaultGrid.GetEditContextAsync();
     private async Task SaveEditContent() => await DefaultGrid.EndEditAsync();
     private async Task CloseEditContent() => await DefaultGrid.CloseEditAsync();
     private async Task DeleteSelectedRowContent() => await DefaultGrid.DeleteRecordAsync();
@@ -1073,9 +1103,9 @@ Prerequisites:
 {% endhighlight %}
 {% endtabs %}
 
-## Update rows and cells examples
+## Update rows and cells
 
-Use these methods when you need to change a value after the row is already on screen. This is helpful when a user edits one field and you want to refresh the row without rebuilding the grid.
+Use these methods when you need to change values after a row is already on screen.
 
 | Method | Description | Parameters | Returns |
 |--------|-------------|------------|---------|
