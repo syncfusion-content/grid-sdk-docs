@@ -18,6 +18,14 @@ Use `@ref` to access an `SfGrid<TValue>` instance and call its methods after the
 | [Export and print](#export-and-print) | `PrintAsync`, `ExportToExcelAsync`, `ExportToPdfAsync`, `ExportToCsvAsync` |
 | [Grouping](#grouping) | `GroupColumnAsync`, `UngroupColumnAsync`, `ExpandAllGroupAsync`, `CollapseAllGroupAsync`, `ClearGroupingAsync` |
 | [Paging and navigation](#paging-and-navigation) | `GoToPageAsync`, `UpdatePageSizeAsync` |
+| [Paging and scrolling](#paging-and-scrolling-examples) | `GoToPageAsync`, `ScrollIntoViewAsync`, `UpdatePageSizeAsync` |
+| [Detail rows](#detail-rows-examples) | `CollapseAllDetailRowAsync`, `ExpandAllDetailRowAsync`, `ExpandCollapseDetailRowAsync` |
+| [Cell merging](#cell-merging-examples) | `MergeCellsAsync`, `UnmergeAllAsync`, `UnmergeCellsAsync` |
+| [Column visibility and chooser](#column-visibility-and-chooser-examples) | `HideColumnAsync`, `HideColumnsAsync`, `OpenColumnChooserAsync`, `ShowColumnAsync`, `ShowColumnsAsync` |
+| [Column layout and reorder](#column-layout-and-reorder-examples) | `AutoFitColumnAsync`, `AutoFitColumnsAsync`, `ReorderColumnAsync`, `ReorderColumnByIndexAsync`, `ReorderColumnByTargetIndexAsync`, `ReorderColumnsAsync`, `ReorderRowAsync` |
+| [Column and data information](#column-and-data-information-examples) | `GetCellValueByIndexAsync`, `GetColumnByFieldAsync`, `GetColumnByUidAsync`, `GetColumnFieldNamesAsync`, `GetColumnIndexByFieldAsync`, `GetColumnIndexByUidAsync`, `GetColumnsAsync`, `GetCurrentViewRecordsAsync`, `GetForeignKeyColumnsAsync`, `GetHiddenColumnsAsync`, `GetPrimaryKeyFieldNamesAsync`, `GetRowIndexByPrimaryKeyAsync`, `GetUidByColumnFieldAsync`, `GetVisibleColumnsAsync` |
+| [Refresh and spinner](#refresh-and-spinner-examples) | `Refresh`, `RefreshColumnsAsync`, `RefreshHeaderAsync`, `ShowSpinnerAsync`, `HideSpinnerAsync` |
+| [Toolbar, focus and other](#toolbar-focus-and-other-examples) | `EnableToolbarItemsAsync`, `FocusAsync`, `GetWebMcpToolsAsync`, `UpdateExternalMessageAsync` |
 | [Selection](#selection) | `SelectRowAsync`, `SelectRowsAsync`, `SelectRowsByRangeAsync`, `SelectCellAsync`, `SelectCellsAsync`, `SelectCellsByRangeAsync`, `ClearSelectionAsync`, `ClearRowSelectionAsync`, `ClearCellSelectionAsync`, `GetSelectedRecordsAsync`, `GetSelectedRowIndexesAsync`, `GetSelectedRowCellIndexesAsync` |
 | [Searching](#searching) | `SearchAsync`, `FindHighlightAsync`, `FindNextHighlightAsync`, `FindPreviousHighlightAsync`, `ResetFindAsync` |
 | [Sorting and filtering](#sorting-and-filtering) | `SortColumnAsync`, `SortColumnsAsync`, `ClearSortingAsync`, `FilterByColumnAsync`, `ClearFilteringAsync` |
@@ -642,6 +650,81 @@ What each button does:
 - `FilterByColumnAsync` filters rows where `ShipCity` starts with `R`.
 - `ClearFilteringAsync` clears the filter.
 
+## Filtering
+
+Use these methods to fetch filtered records after applying grid filters.
+
+| Method | Description | Parameters | Returns |
+|--------|-------------|------------|---------|
+| `GetFilteredRecordsAsync` | Returns the records that match the current filters. | `bool predicate = true` | `Task<object>` |
+
+Prerequisites:
+- Apply at least one filter before calling the method.
+- Cast the result to the grid row type you bound to the grid.
+
+{% tabs %}
+{% highlight razor tabtitle="Index.razor" %}
+@using Syncfusion.Blazor.Grids
+@using Syncfusion.Blazor.Buttons
+
+<SfButton Content="Apply Filter" OnClick="FilterContent" />
+<SfButton Content="Get Filtered Records" OnClick="GetFilteredRecordsContent" />
+
+<SfGrid @ref="DefaultGrid" DataSource="@Orders" AllowFiltering="true">
+    <GridColumns>
+        <GridColumn Field=@nameof(OrderData.OrderID) HeaderText="Order ID" Width="120" TextAlign="TextAlign.Right"></GridColumn>
+        <GridColumn Field=@nameof(OrderData.CustomerID) HeaderText="Customer ID" Width="120"></GridColumn>
+        <GridColumn Field=@nameof(OrderData.ShipCity) HeaderText="Ship City" Width="130"></GridColumn>
+        <GridColumn Field=@nameof(OrderData.ShipName) HeaderText="Ship Name" Width="120"></GridColumn>
+    </GridColumns>
+</SfGrid>
+
+@code {
+    private SfGrid<OrderData> DefaultGrid;
+    private List<OrderData> Orders { get; set; }
+    private IEnumerable<OrderData> FilteredOrders { get; set; }
+
+    protected override void OnInitialized() => Orders = OrderData.GetAllRecords();
+
+    private async Task FilterContent() => await DefaultGrid.FilterByColumnAsync(nameof(OrderData.ShipCity), "startswith", "R");
+    private async Task GetFilteredRecordsContent() => FilteredOrders = (IEnumerable<OrderData>)await DefaultGrid.GetFilteredRecordsAsync();
+}
+{% endhighlight %}
+{% highlight c# tabtitle="OrderData.cs" %}
+internal sealed class OrderData
+{
+    private static readonly List<OrderData> Data = new();
+
+    public OrderData(int orderID, string customerID, string shipCity, string shipName)
+    {
+        OrderID = orderID;
+        CustomerID = customerID;
+        ShipCity = shipCity;
+        ShipName = shipName;
+    }
+
+    internal static List<OrderData> GetAllRecords()
+    {
+        if (Data.Count == 0)
+        {
+            Data.Add(new OrderData(10248, "VINET", "Reims", "Vins et alcools Cheval"));
+            Data.Add(new OrderData(10249, "TOMSP", "Münster", "Toms Spezialitäten"));
+            Data.Add(new OrderData(10250, "HANAR", "Rio de Janeiro", "Hanari Carnes"));
+            Data.Add(new OrderData(10251, "VICTE", "Lyon", "Victuailles en stock"));
+        }
+        return Data;
+    }
+
+    public int OrderID { get; set; }
+    public string CustomerID { get; set; }
+    public string ShipCity { get; set; }
+    public string ShipName { get; set; }
+}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "https://blazorplayground.syncfusion.com/embed/TODO?appbar=false&editor=false&result=true&errorlist=false&theme=fluent2" %}
+
 ## State persistence
 
 Use these methods to save, restore, or clear the persisted grid state.
@@ -980,12 +1063,12 @@ Prerequisites:
     private List<OrderData> Orders { get; set; }
     protected override void OnInitialized() => Orders = OrderData.GetAllRecords();
     private async Task AddBlankRowContent() => await DefaultGrid.AddRecordAsync();
-    private async Task AddRowAtTopContent() => await DefaultGrid.AddRecordAsync(Orders[0], 0);
+    private async Task AddRowAtTopContent() => await DefaultGrid.AddRecordAsync(new OrderData(10257, "ALFKI", "Berlin", "Alfreds Futterkiste"), 0);
     private async Task StartEditContent() => await DefaultGrid.StartEditAsync();
     private async Task SaveEditContent() => await DefaultGrid.EndEditAsync();
     private async Task CloseEditContent() => await DefaultGrid.CloseEditAsync();
     private async Task DeleteSelectedRowContent() => await DefaultGrid.DeleteRecordAsync();
-    private async Task DeleteFirstByKeyContent() => await DefaultGrid.DeleteRecordAsync(nameof(OrderData.OrderID), Orders[0]);
+    private async Task DeleteFirstByKeyContent() => await DefaultGrid.DeleteRecordAsync(nameof(OrderData.OrderID), 10248);
 }
 {% endhighlight %}
 {% endtabs %}
