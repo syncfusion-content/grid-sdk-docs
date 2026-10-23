@@ -17,7 +17,6 @@ Use `@ref` to access an `SfGrid<TValue>` instance and call its methods after the
 |-------|---------|
 | [Export and print](#export-and-print) | `PrintAsync`, `ExportToExcelAsync`, `ExportToPdfAsync`, `ExportToCsvAsync` |
 | [Grouping](#grouping) | `GroupColumnAsync`, `UngroupColumnAsync`, `ExpandAllGroupAsync`, `CollapseAllGroupAsync`, `ClearGroupingAsync` |
-| [Paging and navigation](#paging-and-navigation) | `GoToPageAsync`, `UpdatePageSizeAsync` |
 | [Paging and scrolling](#paging-and-scrolling-examples) | `GoToPageAsync`, `ScrollIntoViewAsync`, `UpdatePageSizeAsync` |
 | [Detail rows](#detail-rows-examples) | `CollapseAllDetailRowAsync`, `ExpandAllDetailRowAsync`, `ExpandCollapseDetailRowAsync` |
 | [Cell merging](#cell-merging-examples) | `MergeCellsAsync`, `UnmergeAllAsync`, `UnmergeCellsAsync` |
@@ -27,15 +26,14 @@ Use `@ref` to access an `SfGrid<TValue>` instance and call its methods after the
 | [Refresh and spinner](#refresh-and-spinner-examples) | `Refresh`, `RefreshColumnsAsync`, `RefreshHeaderAsync`, `ShowSpinnerAsync`, `HideSpinnerAsync` |
 | [Toolbar, focus and other](#toolbar-focus-and-other-examples) | `EnableToolbarItemsAsync`, `FocusAsync`, `GetWebMcpToolsAsync`, `UpdateExternalMessageAsync` |
 | [Selection](#selection) | `SelectRowAsync`, `SelectRowsAsync`, `SelectRowsByRangeAsync`, `SelectCellAsync`, `SelectCellsAsync`, `SelectCellsByRangeAsync`, `ClearSelectionAsync`, `ClearRowSelectionAsync`, `ClearCellSelectionAsync`, `GetSelectedRecordsAsync`, `GetSelectedRowIndexesAsync`, `GetSelectedRowCellIndexesAsync` |
-| [Searching](#searching) | `SearchAsync`, `FindHighlightAsync`, `FindNextHighlightAsync`, `FindPreviousHighlightAsync`, `ResetFindAsync` |
+| [Searching](#searching) | `SearchAsync`, `FindHighlightAsync`, `FindNextHighlightAsync`, `FindPreviousHighlightAsync`, `FindGoToAsync`, `ResetFindAsync` |
 | [Sorting and filtering](#sorting-and-filtering) | `SortColumnAsync`, `SortColumnsAsync`, `ClearSortingAsync`, `FilterByColumnAsync`, `ClearFilteringAsync` |
+| [Filtering](#filtering) | `GetFilteredRecordsAsync` |
 | [State persistence](#state-persistence) | `GetPersistDataAsync`, `SetPersistDataAsync`, `ResetPersistDataAsync` |
 | [Clipboard](#clipboard) | `CopyAsync`, `PasteAsync` |
 | [Layout and refresh](#layout-and-refresh) | `AutoFitColumnAsync`, `AutoFitColumnsAsync`, `ReorderColumnAsync`, `Refresh`, `RefreshColumnsAsync`, `RefreshHeaderAsync`, `ShowSpinnerAsync`, `HideSpinnerAsync` |
-| [Add, edit and delete](#add-edit-and-delete-examples) | `AddRecordAsync`, `StartEditAsync`, `EndEditAsync`, `CloseEditAsync`, `DeleteRecordAsync`, `EditCellAsync`, `SaveCellAsync`, `GetEditContextAsync` |
-| [Update rows and cells](#update-rows-and-cells) | `SetCellValueAsync`, `SetRowDataAsync`, `UpdateBatchRowAsync`, `UpdateCellAsync`, `UpdateRowAsync` |
-| [Batch changes and dirty state](#batch-changes-and-dirty-state) | `ApplyBatchChangesAsync`, `GetBatchChangesAsync`, `IsDirtyAsync` |
-| [Undo and redo](#undo-and-redo) | `ClearUndoRedoAsync`, `RedoAllAsync`, `RedoAsync`, `UndoAllAsync`, `UndoAsync` |
+| [Add, edit and delete](#add-edit-and-delete-examples) | `AddRecordAsync`, `StartEditAsync`, `EndEditAsync`, `CloseEditAsync`, `DeleteRecordAsync` |
+| [Batch editing, batch changes, and undo](#batch-editing-batch-changes-and-undo-examples) | `SetCellValueAsync`, `SetRowDataAsync`, `UpdateBatchRowAsync`, `UpdateCellAsync`, `UpdateRowAsync`, `ApplyBatchChangesAsync`, `GetBatchChangesAsync`, `IsDirtyAsync`, `ClearUndoRedoAsync`, `RedoAllAsync`, `RedoAsync`, `UndoAllAsync`, `UndoAsync` |
 
 ## Export and print
 
@@ -252,8 +250,7 @@ Use these methods to move between pages and change page size.
 | Method | Description | Parameters | Returns |
 |--------|-------------|------------|---------|
 | `GoToPageAsync` | Moves to a page number. | `int pageNo` | `Task` |
-| `UpdatePageSizeAsync` | Changes the page size. | `int pageSize` or `int pageSize, int currentPage` | `Task` |
-| `FindGoToAsync` | Jumps to a row index in the current view. | `int index` | `Task` |
+| `UpdatePageSizeAsync` | Changes the page size. | `int pageSize` or `int height, int rowHeight = 0` | `Task` |
 
 Prerequisites:
 - Set `AllowPaging="true"` for paging methods.
@@ -266,7 +263,6 @@ Prerequisites:
 
 <SfButton Content="Go to Page 2" OnClick="GoToPageContent" />
 <SfButton Content="Set Page Size 12" OnClick="UpdatePageSizeContent" />
-<SfButton Content="Go To Row 8" OnClick="FindGoToContent" />
 
 <SfGrid @ref="DefaultGrid" DataSource="@Orders" AllowPaging="true">
     <GridPageSettings PageSize="6"></GridPageSettings>
@@ -286,7 +282,6 @@ Prerequisites:
 
     private async Task GoToPageContent() => await DefaultGrid.GoToPageAsync(2);
     private async Task UpdatePageSizeContent() => await DefaultGrid.UpdatePageSizeAsync(12);
-    private async Task FindGoToContent() => await DefaultGrid.FindGoToAsync(8);
 }
 {% endhighlight %}
 {% highlight c# tabtitle="OrderData.cs" %}
@@ -333,7 +328,6 @@ internal sealed class OrderData
 What each button does:
 - `GoToPageAsync` moves to the requested page.
 - `UpdatePageSizeAsync` changes the visible row count.
-- `FindGoToAsync` jumps to a row in the current view.
 
 > Set `AllowPaging="true"` before you call the paging methods.
 
@@ -343,22 +337,22 @@ Use these methods to select rows or cells, clear the selection, and read the sel
 
 | Method | Description | Parameters | Returns |
 |--------|-------------|------------|---------|
-| `SelectRowAsync` | Selects a row by index. | `int rowIndex`, `bool? isToggle = null` | `Task` |
+| `SelectRowAsync` | Selects a row by index. | `int index`, `bool selectAcrossPages = false` | `Task` |
 | `SelectRowsAsync` | Selects multiple rows by indexes. | `int[] rowIndexes` | `Task` |
 | `SelectRowsByRangeAsync` | Selects a row range. | `int startIndex`, `int endIndex` | `Task` |
 | `SelectCellAsync` | Selects a cell by row and column indexes. | `int rowIndex`, `int cellIndex` | `Task` |
-| `SelectCellsAsync` | Selects multiple cells by row and column indexes. | `int[] rowIndexes`, `int[] cellIndexes` | `Task` |
-| `SelectCellsByRangeAsync` | Selects a cell range. | `int startRowIndex`, `int startCellIndex`, `int endRowIndex`, `int endCellIndex` | `Task` |
+| `SelectCellsAsync` | Selects multiple cells by row and column indexes. | `(int rowIndex, int cellIndex)[] cellIndexes` | `Task` |
+| `SelectCellsByRangeAsync` | Selects a cell range. | `(int rowIndex, int cellIndex) startCell`, `(int rowIndex, int cellIndex) endCell` | `Task` |
 | `ClearSelectionAsync` | Clears all selected rows and cells. | None | `Task` |
 | `ClearRowSelectionAsync` | Clears selected rows. | None | `Task` |
 | `ClearCellSelectionAsync` | Clears selected cells. | None | `Task` |
-| `GetSelectedRecordsAsync` | Returns the selected records. | None | `Task<IEnumerable<TValue>>` |
-| `GetSelectedRowIndexesAsync` | Returns the selected row indexes. | None | `Task<int[]>` |
-| `GetSelectedRowCellIndexesAsync` | Returns the selected cell indexes. | None | `Task<List<CellIndex>>` |
+| `GetSelectedRecordsAsync` | Returns the selected records. | None | `Task<List<TValue>>` |
+| `GetSelectedRowIndexesAsync` | Returns the selected row indexes. | None | `Task<List<int>>` |
+| `GetSelectedRowCellIndexesAsync` | Returns the selected cell indexes. | None | `Task<List<(int, int)>>` |
 
 Prerequisites:
 - Set `AllowSelection="true"`.
-- Use a selection mode that matches the type of selection you want.
+- Set `GridSelectionSettings Mode="SelectionMode.Cell"` for cell-selection methods and `SelectionType.Multiple` for multi-row selection.
 
 {% tabs %}
 {% highlight razor tabtitle="Index.razor" %}
@@ -379,7 +373,7 @@ Prerequisites:
 <SfButton Content="Clear Selection" OnClick="ClearSelectionContent" />
 
 <SfGrid @ref="DefaultGrid" DataSource="@Orders" AllowSelection="true">
-    <GridSelectionSettings Type="SelectionType.Multiple"></GridSelectionSettings>
+    <GridSelectionSettings Type="SelectionType.Multiple" Mode="SelectionMode.Cell"></GridSelectionSettings>
     <GridColumns>
         <GridColumn Field=@nameof(OrderData.OrderID) HeaderText="Order ID" Width="120" TextAlign="TextAlign.Right"></GridColumn>
         <GridColumn Field=@nameof(OrderData.CustomerID) HeaderText="Customer ID" Width="120"></GridColumn>
@@ -398,8 +392,8 @@ Prerequisites:
     private async Task SelectRowsContent() => await DefaultGrid.SelectRowsAsync(new[] { 0, 2 });
     private async Task SelectRowsRangeContent() => await DefaultGrid.SelectRowsByRangeAsync(1, 3);
     private async Task SelectCellContent() => await DefaultGrid.SelectCellAsync((1, 1));
-    private async Task SelectCellsContent() => await DefaultGrid.SelectCellsAsync(new[] { 0, 1 }, new[] { 0, 2 });
-    private async Task SelectCellsRangeContent() => await DefaultGrid.SelectCellsByRangeAsync(0, 0, 1, 1);
+    private async Task SelectCellsContent() => await DefaultGrid.SelectCellsAsync(new (int, int)[] { (0, 0), (1, 2) });
+    private async Task SelectCellsRangeContent() => await DefaultGrid.SelectCellsByRangeAsync((0, 0), (1, 1));
     private async Task ClearRowSelectionContent() => await DefaultGrid.ClearRowSelectionAsync();
     private async Task ClearCellSelectionContent() => await DefaultGrid.ClearCellSelectionAsync();
     private async Task GetSelectedRecordsContent() => _ = await DefaultGrid.GetSelectedRecordsAsync();
@@ -453,6 +447,8 @@ What each button does:
 - `SelectRowAsync` selects a row.
 - `SelectRowsByRangeAsync` selects a row range.
 - `SelectCellAsync` selects one cell.
+- `SelectCellsAsync` selects multiple cells.
+- `SelectCellsByRangeAsync` selects a cell range.
 - `ClearSelectionAsync` clears the selection.
 
 > Set `AllowSelection="true"` before you call the selection methods.
@@ -467,10 +463,11 @@ Prerequisites:
 
 | Method | Description | Parameters | Returns |
 |--------|-------------|------------|---------|
-| `SearchAsync` | Searches the grid for the supplied text. | `string searchText` | `Task` |
-| `FindHighlightAsync` | Highlights matches for a search text. | `string text` | `Task` |
+| `SearchAsync` | Searches the grid for the supplied text. | `string searchString` | `Task` |
+| `FindHighlightAsync` | Highlights matches for a search text. | `string findKey` | `Task` |
 | `FindNextHighlightAsync` | Moves to the next highlight. | None | `Task` |
 | `FindPreviousHighlightAsync` | Moves to the previous highlight. | None | `Task` |
+| `FindGoToAsync` | Jumps to the highlighted match number. | `int matchNumber` | `Task` |
 | `ResetFindAsync` | Clears the search highlight state. | None | `Task` |
 
 What each button does:
@@ -512,6 +509,7 @@ What each button does:
     private async Task HighlightContent() => await DefaultGrid.FindHighlightAsync("VINET");
     private async Task NextContent() => await DefaultGrid.FindNextHighlightAsync();
     private async Task PreviousContent() => await DefaultGrid.FindPreviousHighlightAsync();
+    private async Task GoToMatchContent() => await DefaultGrid.FindGoToAsync(1);
     private async Task ResetFindContent() => await DefaultGrid.ResetFindAsync();
 }
 {% endhighlight %}
@@ -573,11 +571,11 @@ Prerequisites:
 
 | Method | Description | Parameters | Returns |
 |--------|-------------|------------|---------|
-| `SortColumnAsync` | Sorts a column by field name. | `string fieldName`, `SortDirection direction`, `bool? isMultiSort = null` | `Task` |
-| `SortColumnsAsync` | Sorts multiple columns. | `List<SortColumn> columns` or `List<SortColumn> columns, bool isMultiSort` | `Task` |
-| `ClearSortingAsync` | Clears sorting. | `List<string> fields = null` | `Task` |
-| `FilterByColumnAsync` | Filters a column by field name and operator. | `string fieldName`, `string filterOperator`, `object value`, `string predicate = "and"`, `bool? matchCase = null`, `bool? ignoreAccent = null`, `object actualValue = null`, `object actualOperator = null`, `string columnName = null` | `Task` |
-| `ClearFilteringAsync` | Clears filtering. | `string fieldName = null` or `List<string> fields = null` | `Task` |
+| `SortColumnAsync` | Sorts a column by field name. | `string columnName`, `SortDirection direction`, `bool? isMultiSort = null` | `Task` |
+| `SortColumnsAsync` | Sorts multiple columns. | `List<SortColumn> columns` or `List<SortColumn> columns, bool clearPreviousSort` | `Task` |
+| `ClearSortingAsync` | Clears sorting. | `List<string> fieldNames = null` | `Task` |
+| `FilterByColumnAsync` | Filters a column by field name and operator. | `string fieldName`, `string filterOperator`, `object filterValue`, `string predicate = "and"`, `bool? matchCase = null`, `bool? ignoreAccent = null`, `object actualFilterValue = null`, `object actualOperator = null`, `string value = null` | `Task` |
+| `ClearFilteringAsync` | Clears filtering. | `()` or `string fieldName` or `List<string> fieldNames` | `Task` |
 
 What each button does:
 - `SortColumnAsync` sorts one column.
@@ -678,7 +676,7 @@ Use these methods to fetch filtered records after applying grid filters.
 
 | Method | Description | Parameters | Returns |
 |--------|-------------|------------|---------|
-| `GetFilteredRecordsAsync` | Returns the records that match the current filters. | `bool predicate = true` | `Task<IEnumerable<TValue>>` |
+| `GetFilteredRecordsAsync` | Returns the records that match the current filters. | `bool isStrictFiltering = false` | `Task<object>` |
 
 Prerequisites:
 - Apply at least one filter before calling the method.
@@ -704,12 +702,12 @@ Prerequisites:
 @code {
     private SfGrid<OrderData> DefaultGrid;
     private List<OrderData> Orders { get; set; }
-    private IEnumerable<OrderData> FilteredOrders { get; set; }
+    private object FilteredOrders { get; set; }
 
     protected override void OnInitialized() => Orders = OrderData.GetAllRecords();
 
     private async Task FilterContent() => await DefaultGrid.FilterByColumnAsync(nameof(OrderData.ShipCity), "startswith", "R");
-    private async Task GetFilteredRecordsContent() => FilteredOrders = (IEnumerable<OrderData>)await DefaultGrid.GetFilteredRecordsAsync();
+    private async Task GetFilteredRecordsContent() => FilteredOrders = await DefaultGrid.GetFilteredRecordsAsync();
 }
 {% endhighlight %}
 {% highlight c# tabtitle="OrderData.cs" %}
@@ -853,7 +851,7 @@ Prerequisites:
 
 | Method | Description | Parameters | Returns |
 |--------|-------------|------------|---------|
-| `CopyAsync` | Copies the selected rows or cells to the clipboard. | `bool? includeHeader = null` | `Task` |
+| `CopyAsync` | Copies the selected rows or cells to the clipboard. | `bool? withHeader = null` | `Task` |
 | `PasteAsync` | Pastes clipboard data into the grid. | None | `Task` |
 
 What each button does:
@@ -871,7 +869,7 @@ What each button does:
 <SfButton Content="Paste" OnClick="PasteContent" />
 
 <SfGrid @ref="DefaultGrid" DataSource="@Orders" AllowSelection="true" AllowClipboard="true">
-    <GridSelectionSettings Type="SelectionType.Multiple"></GridSelectionSettings>
+    <GridSelectionSettings Type="SelectionType.Multiple" Mode="SelectionMode.Cell"></GridSelectionSettings>
     <GridColumns>
         <GridColumn Field=@nameof(OrderData.OrderID) HeaderText="Order ID" Width="120" TextAlign="TextAlign.Right"></GridColumn>
         <GridColumn Field=@nameof(OrderData.CustomerID) HeaderText="Customer ID" Width="120"></GridColumn>
@@ -886,7 +884,7 @@ What each button does:
 
     protected override void OnInitialized() => Orders = OrderData.GetAllRecords();
 
-    private async Task CopyContent() => await DefaultGrid.CopyAsync(true);
+    private async Task CopyContent() => await DefaultGrid.CopyAsync(withHeader: true);
     private async Task PasteContent() => await DefaultGrid.PasteAsync();
 }
 {% endhighlight %}
@@ -942,8 +940,8 @@ Use these methods to adjust column layout and refresh the grid UI.
 | Method | Description | Parameters | Returns |
 |--------|-------------|------------|---------|
 | `AutoFitColumnAsync` | Fits one column to its content. | `string fieldName` | `Task` |
-| `AutoFitColumnsAsync` | Fits all columns or a set of columns. | None or `string[] fields` | `Task` |
-| `ReorderColumnAsync` | Moves one column before another column. | `string fromField`, `string toField` | `Task` |
+| `AutoFitColumnsAsync` | Fits all columns or a set of columns. | None or `string[] fieldNames` | `Task` |
+| `ReorderColumnAsync` | Moves one column before another column. | `string fromFieldName`, `string toFieldName` | `Task` |
 | `Refresh` | Refreshes the grid. | `bool isModelRefresh = false` | `Task` |
 | `RefreshColumnsAsync` | Refreshes column state. | None | `Task` |
 | `RefreshHeaderAsync` | Refreshes the header area. | None | `Task` |
@@ -964,7 +962,7 @@ Use these methods to adjust column layout and refresh the grid UI.
 <SfButton Content="Show Spinner" OnClick="ShowSpinnerContent" />
 <SfButton Content="Hide Spinner" OnClick="HideSpinnerContent" />
 
-<SfGrid @ref="DefaultGrid" DataSource="@Orders" AllowReordering="true">
+<SfGrid @ref="DefaultGrid" DataSource="@Orders">
     <GridColumns>
         <GridColumn Field=@nameof(OrderData.OrderID) HeaderText="Order ID" Width="120" TextAlign="TextAlign.Right"></GridColumn>
         <GridColumn Field=@nameof(OrderData.CustomerID) HeaderText="Customer ID" Width="120"></GridColumn>
@@ -1052,9 +1050,6 @@ The add and delete methods have overloads, so the examples below show both the s
 | `EndEditAsync` | Saves the current edit. | None | `Task` |
 | `CloseEditAsync` | Cancels the current edit. | None | `Task` |
 | `DeleteRecordAsync` | Deletes the selected record or a record by field value. | None or `string fieldName, TValue data` | `Task` |
-| `EditCellAsync` | Puts one cell into edit mode. | `int index, string fieldName` | `Task` |
-| `SaveCellAsync` | Saves the edited cell in batch mode. | None | `Task` |
-| `GetEditContextAsync` | Gets the current edit context. | None | `Task<EditContext>` |
 
 Prerequisites:
 - Set `AllowAdding="true"`, `AllowEditing="true"`, and `AllowDeleting="true"` as needed.
@@ -1069,16 +1064,15 @@ Prerequisites:
 <SfButton Content="Add Blank Row" OnClick="AddBlankRowContent" />
 <SfButton Content="Add Row At Top" OnClick="AddRowAtTopContent" />
 <SfButton Content="Edit First Row" OnClick="StartEditContent" />
-<SfButton Content="Edit Cell" OnClick="EditCellContent" />
-<SfButton Content="Save Cell" OnClick="SaveCellContent" />
-<SfButton Content="Get Edit Context" OnClick="GetEditContextContent" />
 <SfButton Content="Save Edit" OnClick="SaveEditContent" />
 <SfButton Content="Cancel Edit" OnClick="CloseEditContent" />
 <SfButton Content="Delete Selected" OnClick="DeleteSelectedRowContent" />
 <SfButton Content="Delete First By Key" OnClick="DeleteFirstByKeyContent" />
 
-<SfGrid @ref="DefaultGrid" DataSource="@Orders" AllowAdding="true" AllowEditing="true" AllowDeleting="true">
-    <GridEditSettings Mode="EditMode.Normal"></GridEditSettings>
+Batch editing methods are shown in the batch section below.
+
+<SfGrid @ref="DefaultGrid" DataSource="@Orders">
+    <GridEditSettings Mode="EditMode.Normal" AllowAdding="true" AllowEditing="true" AllowDeleting="true"></GridEditSettings>
     <GridColumns>
         <GridColumn Field=@nameof(OrderData.OrderID) HeaderText="Order ID" IsPrimaryKey="true" Width="120" TextAlign="TextAlign.Right"></GridColumn>
         <GridColumn Field=@nameof(OrderData.CustomerID) HeaderText="Customer ID" Width="120"></GridColumn>
@@ -1093,33 +1087,18 @@ Prerequisites:
     protected override void OnInitialized() => Orders = OrderData.GetAllRecords();
     private async Task AddBlankRowContent() => await DefaultGrid.AddRecordAsync();
     private async Task AddRowAtTopContent() => await DefaultGrid.AddRecordAsync(new OrderData(10257, "ALFKI", "Berlin", "Alfreds Futterkiste"), 0);
-    private async Task StartEditContent() => await DefaultGrid.StartEditAsync();
-    private async Task EditCellContent() => await DefaultGrid.EditCellAsync(1, nameof(OrderData.CustomerID));
-    private async Task SaveCellContent() => await DefaultGrid.SaveCellAsync();
-    private async Task GetEditContextContent() => _ = await DefaultGrid.GetEditContextAsync();
+    private async Task StartEditContent()
+    {
+        await DefaultGrid.SelectRowAsync(0);
+        await DefaultGrid.StartEditAsync();
+    }
     private async Task SaveEditContent() => await DefaultGrid.EndEditAsync();
     private async Task CloseEditContent() => await DefaultGrid.CloseEditAsync();
     private async Task DeleteSelectedRowContent() => await DefaultGrid.DeleteRecordAsync();
-    private async Task DeleteFirstByKeyContent() => await DefaultGrid.DeleteRecordAsync(nameof(OrderData.OrderID), 10248);
+    private async Task DeleteFirstByKeyContent() => await DefaultGrid.DeleteRecordAsync(nameof(OrderData.OrderID), Orders[0]);
 }
 {% endhighlight %}
 {% endtabs %}
-
-## Update rows and cells
-
-Use these methods when you need to change values after a row is already on screen.
-
-| Method | Description | Parameters | Returns |
-|--------|-------------|------------|---------|
-| `SetCellValueAsync` | Updates one or more cells by primary key. | `IReadOnlyList<CellUpdate> cellValueUpdates` or `object key, string fieldName, object value` | `Task` |
-| `SetRowDataAsync` | Replaces a row by primary key. | `object primaryKeyValue, TValue rowData` or `object primaryKeyValue, TValue rowData, bool preventDataUpdate` | `Task` |
-| `UpdateBatchRowAsync` | Updates the current batch-edited row. | `TValue data` | `Task` |
-| `UpdateCellAsync` | Updates one cell without opening edit mode. | `int rowIndex, string field, object value` | `Task` |
-| `UpdateRowAsync` | Replaces a row without edit mode. | `int index, TValue data` | `Task` |
-
-Prerequisites:
-- Define a primary key column for row and cell updates.
-- Use batch edit mode for `UpdateBatchRowAsync()` and `UpdateCellAsync()`.
 
 ## Batch editing, batch changes, and undo examples
 
@@ -1201,37 +1180,6 @@ internal sealed class OrderData { /* same as above */ }
 {% endtabs %}
 
 {% previewsample "https://blazorplayground.syncfusion.com/embed/TODO?appbar=false&editor=false&result=true&errorlist=false&theme=fluent2" %}
-
-## Batch changes and dirty state examples
-
-Use these methods when you want to read or apply pending batch edits before they are saved to the data source.
-
-| Method | Description | Parameters | Returns |
-|--------|-------------|------------|---------|
-| `ApplyBatchChangesAsync` | Applies a batch of added, edited, and deleted records to the grid UI. | `BatchChanges<TValue> batchChanges` | `Task` |
-| `GetBatchChangesAsync` | Gets pending batch changes. | None | `Task<BatchChanges<TValue>>` |
-| `IsDirtyAsync` | Checks whether batch changes exist. | None | `Task<bool>` |
-
-Prerequisites:
-- Set `EditMode.Batch`.
-- Make changes before calling `GetBatchChangesAsync()`.
-
-## Undo and redo examples
-
-Use these methods when batch editing is enabled and you want to undo or redo user changes step by step.
-
-| Method | Description | Parameters | Returns |
-|--------|-------------|------------|---------|
-| `ClearUndoRedoAsync` | Clears the undo and redo history. | None | `Task` |
-| `RedoAllAsync` | Redoes all undone batch operations. | None | `Task` |
-| `RedoAsync` | Redoes the last undone batch operation. | None | `Task` |
-| `UndoAllAsync` | Undoes all recorded batch operations. | None | `Task` |
-| `UndoAsync` | Undoes the last batch operation. | None | `Task` |
-
-Prerequisites:
-- Set `EnableUndoRedo="true"`.
-- Use batch editing.
-
 
 ## Paging and scrolling examples
 
@@ -1454,7 +1402,7 @@ Prerequisites:
 <SfButton Content="Move Multiple Columns" OnClick="ReorderColumnsContent" />
 <SfButton Content="Move Row" OnClick="ReorderRowContent" />
 
-<SfGrid @ref="DefaultGrid" DataSource="@Orders" AllowReordering="true">
+<SfGrid @ref="DefaultGrid" DataSource="@Orders">
     <GridColumns>
         <GridColumn Field=@nameof(OrderData.OrderID) HeaderText="Order ID" Width="120" TextAlign="TextAlign.Right"></GridColumn>
         <GridColumn Field=@nameof(OrderData.CustomerID) HeaderText="Customer ID" Width="120"></GridColumn>
