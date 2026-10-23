@@ -327,6 +327,110 @@ What each button does:
 
 > Set `AllowPaging="true"` before you call the paging methods.
 
+## Selection
+
+Use these methods to select rows or cells, clear the selection, and read the selected records or indexes. They work when grid selection is enabled.
+
+| Method | Description | Parameters | Returns |
+|--------|-------------|------------|---------|
+| `SelectRowAsync` | Selects a row by index. | `int rowIndex`, `bool? isToggle = null` | `Task` |
+| `SelectRowsAsync` | Selects multiple rows by indexes. | `int[] rowIndexes` | `Task` |
+| `SelectRowsByRangeAsync` | Selects a row range. | `int startIndex`, `int endIndex` | `Task` |
+| `SelectCellAsync` | Selects a cell by row and column indexes. | `int rowIndex`, `int cellIndex` | `Task` |
+| `SelectCellsAsync` | Selects multiple cells by row and column indexes. | `int[] rowIndexes`, `int[] cellIndexes` | `Task` |
+| `SelectCellsByRangeAsync` | Selects a cell range. | `int startRowIndex`, `int startCellIndex`, `int endRowIndex`, `int endCellIndex` | `Task` |
+| `ClearSelectionAsync` | Clears all selected rows and cells. | None | `Task` |
+| `ClearRowSelectionAsync` | Clears selected rows. | None | `Task` |
+| `ClearCellSelectionAsync` | Clears selected cells. | None | `Task` |
+| `GetSelectedRecordsAsync` | Returns the selected records. | None | `Task<IEnumerable<TValue>>` |
+| `GetSelectedRowIndexesAsync` | Returns the selected row indexes. | None | `Task<int[]>` |
+| `GetSelectedRowCellIndexesAsync` | Returns the selected cell indexes. | None | `Task<List<CellIndex>>` |
+
+Prerequisites:
+- Set `AllowSelection="true"`.
+- Use a selection mode that matches the type of selection you want.
+
+{% tabs %}
+{% highlight razor tabtitle="Index.razor" %}
+@using Syncfusion.Blazor.Grids
+@using Syncfusion.Blazor.Buttons
+
+<SfButton Content="Select Row 1" OnClick="SelectRowContent" />
+<SfButton Content="Select Row Range" OnClick="SelectRowsRangeContent" />
+<SfButton Content="Select Cell" OnClick="SelectCellContent" />
+<SfButton Content="Clear Selection" OnClick="ClearSelectionContent" />
+
+<SfGrid @ref="DefaultGrid" DataSource="@Orders" AllowSelection="true">
+    <GridSelectionSettings Type="SelectionType.Multiple"></GridSelectionSettings>
+    <GridColumns>
+        <GridColumn Field=@nameof(OrderData.OrderID) HeaderText="Order ID" Width="120" TextAlign="TextAlign.Right"></GridColumn>
+        <GridColumn Field=@nameof(OrderData.CustomerID) HeaderText="Customer ID" Width="120"></GridColumn>
+        <GridColumn Field=@nameof(OrderData.ShipCity) HeaderText="Ship City" Width="130"></GridColumn>
+        <GridColumn Field=@nameof(OrderData.ShipName) HeaderText="Ship Name" Width="120"></GridColumn>
+    </GridColumns>
+</SfGrid>
+
+@code {
+    private SfGrid<OrderData> DefaultGrid;
+    private List<OrderData> Orders { get; set; }
+
+    protected override void OnInitialized() => Orders = OrderData.GetAllRecords();
+
+    private async Task SelectRowContent() => await DefaultGrid.SelectRowAsync(1);
+    private async Task SelectRowsRangeContent() => await DefaultGrid.SelectRowsByRangeAsync(1, 3);
+    private async Task SelectCellContent() => await DefaultGrid.SelectCellAsync(1, 1);
+    private async Task ClearSelectionContent() => await DefaultGrid.ClearSelectionAsync();
+}
+{% endhighlight %}
+{% highlight c# tabtitle="OrderData.cs" %}
+internal sealed class OrderData
+{
+    private static readonly List<OrderData> Data = new();
+
+    public OrderData(int orderID, string customerID, string shipCity, string shipName)
+    {
+        OrderID = orderID;
+        CustomerID = customerID;
+        ShipCity = shipCity;
+        ShipName = shipName;
+    }
+
+    internal static List<OrderData> GetAllRecords()
+    {
+        if (Data.Count == 0)
+        {
+            Data.Add(new OrderData(10248, "VINET", "Reims", "Vins et alcools Cheval"));
+            Data.Add(new OrderData(10249, "TOMSP", "Münster", "Toms Spezialitäten"));
+            Data.Add(new OrderData(10250, "HANAR", "Rio de Janeiro", "Hanari Carnes"));
+            Data.Add(new OrderData(10251, "VICTE", "Lyon", "Victuailles en stock"));
+            Data.Add(new OrderData(10252, "SUPRD", "Charleroi", "Suprêmes délices"));
+            Data.Add(new OrderData(10253, "HANAR", "Rio de Janeiro", "Hanari Carnes"));
+            Data.Add(new OrderData(10254, "CHOPS", "Bern", "Chop-suey Chinese"));
+            Data.Add(new OrderData(10255, "RICSU", "Genève", "Richter Supermarkt"));
+            Data.Add(new OrderData(10256, "WELLI", "Resende", "Wellington Importado"));
+        }
+
+        return Data;
+    }
+
+    public int OrderID { get; set; }
+    public string CustomerID { get; set; }
+    public string ShipCity { get; set; }
+    public string ShipName { get; set; }
+}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "https://blazorplayground.syncfusion.com/embed/TODO?appbar=false&editor=false&result=true&errorlist=false&theme=fluent2" %}
+
+What each button does:
+- `SelectRowAsync` selects a row.
+- `SelectRowsByRangeAsync` selects a row range.
+- `SelectCellAsync` selects one cell.
+- `ClearSelectionAsync` clears the selection.
+
+> Set `AllowSelection="true"` before you call the selection methods.
+
 ## Searching
 
 Use the search methods to find text, move between search highlights, and clear the current search.
