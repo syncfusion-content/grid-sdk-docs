@@ -11,7 +11,7 @@ Reflection count: _fill in_   Rows below: _fill in_ (must match)
 |---|--------|-----------|-------|--------|-----------------|
 | 1 | PrintAsync | PrintAsync() | Export and print | todo | todo |
 
-Sample status: todo, built, verified. Section status: todo, drafted, reviewed.
+Sample status: built and verified. Section status: drafted and reviewed.
 
 ## Groups (approved by human: yes / no)
 
@@ -27,13 +27,13 @@ Sample status: todo, built, verified. Section status: todo, drafted, reviewed.
 | Clipboard | Copy or paste grid data. | `CopyAsync`, `PasteAsync` | draft |
 | Layout and refresh | Fit, reorder, and refresh the grid. | `AutoFitColumnAsync`, `AutoFitColumnsAsync`, `ReorderColumnAsync`, `RefreshAsync`, `RefreshColumnsAsync`, `RefreshHeaderAsync`, `ShowSpinnerAsync`, `HideSpinnerAsync` | draft |
 
-Pilot group: Export and print (finish and get human feedback before the others)
+All groups implemented in methods.md; preview links still need manual assignment.
 
 ## Playground links to create (a person fills these in)
 
 | Group | Sample | Playground link |
 |-------|--------|-----------------|
-| Export and print | methods.md export sample | TODO |
+| Export and print | methods.md export sample | pending |
 
 ## Existing pages reused as sample sources
 
