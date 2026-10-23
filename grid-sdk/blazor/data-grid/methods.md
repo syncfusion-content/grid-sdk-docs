@@ -1,0 +1,309 @@
+---
+layout: post
+title: Blazor Grid Methods | Syncfusion®
+description: Learn about the public methods of the Blazor Data Grid, grouped by task, with usage examples.
+platform: grid-sdk
+control: DataGrid
+documentation: ug
+---
+
+<!-- markdownlint-disable MD033 -->
+
+# Methods in Blazor Data Grid
+
+Use `@ref` to access an `SfGrid<TValue>` instance and call its methods after the grid has rendered. You can call the methods from a button click handler or `OnAfterRenderAsync`. All methods in this page are asynchronous and must be awaited.
+
+## Quick index
+
+| Group | Methods |
+|-------|---------|
+| [Export and print](#export-and-print) | `PrintAsync`, `ExportToExcelAsync`, `ExportToPdfAsync`, `ExportToCsvAsync` |
+| [Grouping](#grouping) | `GroupColumnAsync`, `UngroupColumnAsync`, `ExpandAllGroupAsync`, `CollapseAllGroupAsync`, `ClearGroupingAsync` |
+| [Paging and navigation](#paging-and-navigation) | `GoToPageAsync`, `UpdatePageSizeAsync`, `FindGoToAsync` |
+| [Selection](#selection) | `SelectRowAsync`, `SelectRowsAsync`, `SelectRowsByRangeAsync`, `SelectCellAsync`, `SelectCellsAsync`, `SelectCellsByRangeAsync`, `ClearSelectionAsync`, `ClearRowSelectionAsync`, `ClearCellSelectionAsync`, `GetSelectedRecordsAsync`, `GetSelectedRowIndexesAsync`, `GetSelectedRowCellIndexesAsync` |
+| [Searching](#searching) | `SearchAsync`, `FindHighlightAsync`, `FindNextHighlightAsync`, `FindPreviousHighlightAsync`, `ResetFindAsync` |
+| [Sorting and filtering](#sorting-and-filtering) | `SortColumnAsync`, `SortColumnsAsync`, `ClearSortingAsync`, `FilterByColumnAsync`, `ClearFilteringAsync` |
+| [State persistence](#state-persistence) | `GetPersistDataAsync`, `SetPersistDataAsync`, `ResetPersistDataAsync` |
+| [Clipboard](#clipboard) | `CopyAsync`, `PasteAsync` |
+| [Layout and refresh](#layout-and-refresh) | `AutoFitColumnAsync`, `AutoFitColumnsAsync`, `ReorderColumnAsync`, `RefreshAsync`, `RefreshColumnsAsync`, `RefreshHeaderAsync`, `ShowSpinnerAsync`, `HideSpinnerAsync` |
+
+## Export and print
+
+Use these methods to print the grid or export it to Excel, CSV, or PDF. The export methods reflect the current grid state.
+
+| Method | Description | Parameters | Returns |
+|--------|-------------|------------|---------|
+| `PrintAsync` | Opens the browser print dialog for the grid content. | None | `Task` |
+| `ExportToExcelAsync` | Exports the grid to an Excel file. | `ExcelExportProperties excelExportProperties = null` | `Task` |
+| `ExportToPdfAsync` | Exports the grid to a PDF file. | `PdfExportProperties pdfExportProperties = null` | `Task` |
+| `ExportToCsvAsync` | Exports the grid to a CSV file. | `bool isMultipleExport = false`, `ExcelExportProperties excelExportProperties = null` | `Task` |
+
+Prerequisites:
+- Set `AllowExcelExport="true"` for Excel and CSV export.
+- Set `AllowPdfExport="true"` for PDF export.
+- Add the `Print` toolbar item or call the method from a button.
+
+{% tabs %}
+{% highlight razor tabtitle="Index.razor" %}
+@using Syncfusion.Blazor.Grids
+@using Syncfusion.Blazor.Buttons
+
+<SfButton Content="Print" OnClick="PrintContent" />
+<SfButton Content="Export to Excel" OnClick="ExportToExcelContent" />
+<SfButton Content="Export to CSV" OnClick="ExportToCsvContent" />
+<SfButton Content="Export to PDF" OnClick="ExportToPdfContent" />
+
+<SfGrid @ref="DefaultGrid" DataSource="@Orders" AllowExcelExport="true" AllowPdfExport="true">
+    <GridColumns>
+        <GridColumn Field=@nameof(OrderData.OrderID) HeaderText="Order ID" Width="120" TextAlign="TextAlign.Right"></GridColumn>
+        <GridColumn Field=@nameof(OrderData.CustomerID) HeaderText="Customer ID" Width="120"></GridColumn>
+        <GridColumn Field=@nameof(OrderData.ShipCity) HeaderText="Ship City" Width="130"></GridColumn>
+        <GridColumn Field=@nameof(OrderData.ShipName) HeaderText="Ship Name" Width="120"></GridColumn>
+    </GridColumns>
+</SfGrid>
+
+@code {
+    private SfGrid<OrderData> DefaultGrid;
+    private List<OrderData> Orders { get; set; }
+
+    protected override void OnInitialized() => Orders = OrderData.GetAllRecords();
+
+    private async Task PrintContent()
+    {
+        await DefaultGrid.PrintAsync();
+    }
+
+    private async Task ExportToExcelContent()
+    {
+        await DefaultGrid.ExportToExcelAsync();
+    }
+
+    private async Task ExportToCsvContent()
+    {
+        await DefaultGrid.ExportToCsvAsync();
+    }
+
+    private async Task ExportToPdfContent()
+    {
+        await DefaultGrid.ExportToPdfAsync();
+    }
+}
+{% endhighlight %}
+{% highlight c# tabtitle="OrderData.cs" %}
+internal sealed class OrderData
+{
+    private static readonly List<OrderData> Data = new();
+
+    public OrderData(int orderID, string customerID, string shipCity, string shipName)
+    {
+        OrderID = orderID;
+        CustomerID = customerID;
+        ShipCity = shipCity;
+        ShipName = shipName;
+    }
+
+    internal static List<OrderData> GetAllRecords()
+    {
+        if (Data.Count == 0)
+        {
+            Data.Add(new OrderData(10248, "VINET", "Reims", "Vins et alcools Cheval"));
+            Data.Add(new OrderData(10249, "TOMSP", "Münster", "Toms Spezialitäten"));
+            Data.Add(new OrderData(10250, "HANAR", "Rio de Janeiro", "Hanari Carnes"));
+            Data.Add(new OrderData(10251, "VICTE", "Lyon", "Victuailles en stock"));
+            Data.Add(new OrderData(10252, "SUPRD", "Charleroi", "Suprêmes délices"));
+            Data.Add(new OrderData(10253, "HANAR", "Rio de Janeiro", "Hanari Carnes"));
+            Data.Add(new OrderData(10254, "CHOPS", "Bern", "Chop-suey Chinese"));
+            Data.Add(new OrderData(10255, "RICSU", "Genève", "Richter Supermarkt"));
+            Data.Add(new OrderData(10256, "WELLI", "Resende", "Wellington Importado"));
+        }
+
+        return Data;
+    }
+
+    public int OrderID { get; set; }
+    public string CustomerID { get; set; }
+    public string ShipCity { get; set; }
+    public string ShipName { get; set; }
+}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "https://blazorplayground.syncfusion.com/embed/TODO?appbar=false&editor=false&result=true&errorlist=false&theme=fluent2" %}
+
+What each button does:
+- `PrintAsync` opens the print dialog.
+- `ExportToExcelAsync` exports the grid to Excel.
+- `ExportToCsvAsync` exports the grid to CSV.
+- `ExportToPdfAsync` exports the grid to PDF.
+
+> The export methods use the current grid state.
+
+## Grouping
+
+Use the grouping methods to group and ungroup columns, or to expand and collapse grouped rows.
+
+| Method | Description | Parameters | Returns |
+|--------|-------------|------------|---------|
+| `GroupColumnAsync` | Groups a column by field name. | `string fieldName` | `Task` |
+| `UngroupColumnAsync` | Removes grouping for a column by field name. | `string fieldName` | `Task` |
+| `ExpandAllGroupAsync` | Expands all grouped rows. | None | `Task` |
+| `CollapseAllGroupAsync` | Collapses all grouped rows. | None | `Task` |
+| `ClearGroupingAsync` | Clears all grouped columns. | None | `Task` |
+
+Prerequisites:
+- Set `AllowGrouping="true"`.
+- Call the methods after the grid renders.
+
+{% tabs %}
+{% highlight razor tabtitle="Index.razor" %}
+@using Syncfusion.Blazor.Grids
+@using Syncfusion.Blazor.Buttons
+
+<SfButton Content="Group Ship City" OnClick="GroupContent" />
+<SfButton Content="Ungroup Ship City" OnClick="UngroupContent" />
+<SfButton Content="Expand All" OnClick="ExpandContent" />
+<SfButton Content="Collapse All" OnClick="CollapseContent" />
+<SfButton Content="Clear Grouping" OnClick="ClearContent" />
+
+<SfGrid @ref="DefaultGrid" DataSource="@Orders" AllowGrouping="true">
+    <GridColumns>
+        <GridColumn Field=@nameof(OrderData.OrderID) HeaderText="Order ID" Width="120"></GridColumn>
+        <GridColumn Field=@nameof(OrderData.CustomerID) HeaderText="Customer ID" Width="120"></GridColumn>
+        <GridColumn Field=@nameof(OrderData.ShipCity) HeaderText="Ship City" Width="130"></GridColumn>
+        <GridColumn Field=@nameof(OrderData.ShipName) HeaderText="Ship Name" Width="120"></GridColumn>
+    </GridColumns>
+</SfGrid>
+
+@code {
+    private SfGrid<OrderData> DefaultGrid;
+    private List<OrderData> Orders { get; set; }
+
+    protected override void OnInitialized() => Orders = OrderData.GetAllRecords();
+
+    private async Task GroupContent() => await DefaultGrid.GroupColumnAsync(nameof(OrderData.ShipCity));
+    private async Task UngroupContent() => await DefaultGrid.UngroupColumnAsync(nameof(OrderData.ShipCity));
+    private async Task ExpandContent() => await DefaultGrid.ExpandAllGroupAsync();
+    private async Task CollapseContent() => await DefaultGrid.CollapseAllGroupAsync();
+    private async Task ClearContent() => await DefaultGrid.ClearGroupingAsync();
+}
+{% endhighlight %}
+{% highlight c# tabtitle="OrderData.cs" %}
+internal sealed class OrderData
+{
+    private static readonly List<OrderData> Data = new();
+
+    public OrderData(int orderID, string customerID, string shipCity, string shipName)
+    {
+        OrderID = orderID;
+        CustomerID = customerID;
+        ShipCity = shipCity;
+        ShipName = shipName;
+    }
+
+    internal static List<OrderData> GetAllRecords()
+    {
+        if (Data.Count == 0)
+        {
+            Data.Add(new OrderData(10248, "VINET", "Reims", "Vins et alcools Cheval"));
+            Data.Add(new OrderData(10249, "TOMSP", "Münster", "Toms Spezialitäten"));
+            Data.Add(new OrderData(10250, "HANAR", "Rio de Janeiro", "Hanari Carnes"));
+            Data.Add(new OrderData(10251, "VICTE", "Lyon", "Victuailles en stock"));
+            Data.Add(new OrderData(10252, "SUPRD", "Charleroi", "Suprêmes délices"));
+            Data.Add(new OrderData(10253, "HANAR", "Rio de Janeiro", "Hanari Carnes"));
+            Data.Add(new OrderData(10254, "CHOPS", "Bern", "Chop-suey Chinese"));
+            Data.Add(new OrderData(10255, "RICSU", "Genève", "Richter Supermarkt"));
+            Data.Add(new OrderData(10256, "WELLI", "Resende", "Wellington Importado"));
+        }
+
+        return Data;
+    }
+
+    public int OrderID { get; set; }
+    public string CustomerID { get; set; }
+    public string ShipCity { get; set; }
+    public string ShipName { get; set; }
+}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "https://blazorplayground.syncfusion.com/embed/TODO?appbar=false&editor=false&result=true&errorlist=false&theme=fluent2" %}
+
+What each button does:
+- `GroupColumnAsync` groups the `ShipCity` column.
+- `UngroupColumnAsync` removes grouping from the `ShipCity` column.
+- `ExpandAllGroupAsync` expands every group.
+- `CollapseAllGroupAsync` collapses every group.
+- `ClearGroupingAsync` removes all grouped columns.
+
+## Paging and navigation
+
+Use these methods to move between pages and change page size.
+
+| Method | Description | Parameters | Returns |
+|--------|-------------|------------|---------|
+| `GoToPageAsync` | Moves to a page number. | `int pageNo` | `Task` |
+| `UpdatePageSizeAsync` | Changes the page size. | `int pageSize` or `int pageSize, int currentPage` | `Task` |
+| `FindGoToAsync` | Jumps to a row index in the current view. | `int index` | `Task` |
+
+Prerequisites:
+- Set `AllowPaging="true"` for paging methods.
+
+## Searching
+
+Use the search methods to find text, move between search highlights, and clear the current search.
+
+| Method | Description | Parameters | Returns |
+|--------|-------------|------------|---------|
+| `SearchAsync` | Searches the grid for the supplied text. | `string key` | `Task` |
+| `FindHighlightAsync` | Highlights matches for a search text. | `string text` | `Task` |
+| `FindNextHighlightAsync` | Moves to the next highlight. | None | `Task` |
+| `FindPreviousHighlightAsync` | Moves to the previous highlight. | None | `Task` |
+| `ResetFindAsync` | Clears the search highlight state. | None | `Task` |
+
+## Sorting and filtering
+
+Use these methods to sort columns and clear applied sort or filter criteria.
+
+| Method | Description | Parameters | Returns |
+|--------|-------------|------------|---------|
+| `SortColumnAsync` | Sorts a column by field name. | `string fieldName`, `SortDirection direction`, `bool? isMultiSort = null` | `Task` |
+| `SortColumnsAsync` | Sorts multiple columns. | `List<SortColumn> columns` or `List<SortColumn> columns, bool isMultiSort` | `Task` |
+| `ClearSortingAsync` | Clears sorting. | `List<string> fields = null` | `Task` |
+| `FilterByColumnAsync` | Filters a column by field name and operator. | `string fieldName`, `string filterOperator`, `object value`, `string predicate = "and"`, `bool? matchCase = null`, `bool? ignoreAccent = null`, `object actualValue = null`, `object actualOperator = null`, `string columnName = null` | `Task` |
+| `ClearFilteringAsync` | Clears filtering. | `string fieldName = null` or `List<string> fields = null` | `Task` |
+
+## State persistence
+
+Use these methods to save, restore, or clear the persisted grid state.
+
+| Method | Description | Parameters | Returns |
+|--------|-------------|------------|---------|
+| `GetPersistDataAsync` | Returns the current persisted state string. | None | `Task<string>` |
+| `SetPersistDataAsync` | Applies a persisted state string. | `string persistData` | `Task` |
+| `ResetPersistDataAsync` | Clears persisted state. | None | `Task` |
+
+## Clipboard
+
+Use the clipboard methods to copy or paste grid data.
+
+| Method | Description | Parameters | Returns |
+|--------|-------------|------------|---------|
+| `CopyAsync` | Copies the selected rows or cells to the clipboard. | `bool? includeHeader = null` | `Task` |
+| `PasteAsync` | Pastes clipboard data into the grid. | None | `Task` |
+
+## Layout and refresh
+
+Use these methods to adjust column layout and refresh the grid UI.
+
+| Method | Description | Parameters | Returns |
+|--------|-------------|------------|---------|
+| `AutoFitColumnAsync` | Fits one column to its content. | `string fieldName` | `Task` |
+| `AutoFitColumnsAsync` | Fits all columns or a set of columns. | None or `string[] fields` | `Task` |
+| `ReorderColumnAsync` | Moves one column before another column. | `string fromField`, `string toField` | `Task` |
+| `RefreshAsync` | Refreshes the grid. | `bool isDataRefresh = false` | `Task` |
+| `RefreshColumnsAsync` | Refreshes column state. | None | `Task` |
+| `RefreshHeaderAsync` | Refreshes the header area. | None | `Task` |
+| `ShowSpinnerAsync` | Shows the loading spinner. | None | `Task` |
+| `HideSpinnerAsync` | Hides the loading spinner. | None | `Task` |
+
+API reference: https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.SfGrid-1.html
