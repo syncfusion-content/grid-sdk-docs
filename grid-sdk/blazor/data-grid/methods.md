@@ -912,4 +912,95 @@ What each button does:
 - `ShowSpinnerAsync` shows the loading indicator.
 - `HideSpinnerAsync` hides the loading indicator.
 
+
+## Additional method groups from the verified inventory
+
+The following method groups are present in the API reference but were not covered in the first draft samples. They are listed here so the page matches the verified inventory.
+
+### Paging and scrolling
+
+| Method | Description | Parameters | Returns |
+|--------|-------------|------------|---------|
+| `GoToPageAsync` | Moves to a page number. | `int pageNo` | `Task` |
+| `ScrollIntoViewAsync` | Scrolls a row or column into view. | `int columnIndex = -1`, `int rowIndex = -1`, `int rowHeight = -1` | `Task` |
+| `UpdatePageSizeAsync` | Changes the page size or refreshes virtualization based on height. | `int pageSize` or `int height, int rowHeight = 0` | `Task` |
+
+### Detail rows
+
+| Method | Description | Parameters | Returns |
+|--------|-------------|------------|---------|
+| `CollapseAllDetailRowAsync` | Collapses all detail rows. | None | `Task` |
+| `ExpandAllDetailRowAsync` | Expands all detail rows. | None | `Task` |
+| `ExpandCollapseDetailRowAsync` | Expands or collapses a detail row by field name and value, or by row data. | `string fieldName, object value` or `TValue data` | `Task` |
+
+### Cell merging
+
+| Method | Description | Parameters | Returns |
+|--------|-------------|------------|---------|
+| `MergeCellsAsync` | Merges one or more visible cell ranges. | `MergeCellInfo info` or `IEnumerable<MergeCellInfo> infos` | `Task` |
+| `UnmergeAllAsync` | Removes all merged regions in the current view. | None | `Task` |
+| `UnmergeCellsAsync` | Removes merged areas by anchor cell. | `UnmergeCellInfo info` or `IEnumerable<UnmergeCellInfo> infos` | `Task` |
+
+### Column visibility and chooser
+
+| Method | Description | Parameters | Returns |
+|--------|-------------|------------|---------|
+| `HideColumnAsync` | Hides a column. | `string columnName`, `string hideBy = "HeaderText"` | `Task` |
+| `HideColumnsAsync` | Hides multiple columns. | `string[] columnNames`, `string hideBy = "HeaderText"` | `Task` |
+| `OpenColumnChooserAsync` | Opens the column chooser popup. | `double? x = null`, `double? y = null` | `Task` |
+| `ShowColumnAsync` | Shows a column. | `string columnName`, `string showBy = "HeaderText"` | `Task` |
+| `ShowColumnsAsync` | Shows multiple columns. | `string[] columnNames`, `string showBy = "HeaderText"` | `Task` |
+
+### Column layout and reorder
+
+| Method | Description | Parameters | Returns |
+|--------|-------------|------------|---------|
+| `AutoFitColumnAsync` | Fits one column to its content. | `string fieldName` | `Task` |
+| `AutoFitColumnsAsync` | Fits all or selected columns. | None or `string[] fieldNames` | `Task` |
+| `ReorderColumnAsync` | Moves one column before another. | `string fromFieldName`, `string toFieldName` | `Task` |
+| `ReorderColumnByIndexAsync` | Reorders columns by index. | `int fromIndex`, `int toIndex` | `Task` |
+| `ReorderColumnByTargetIndexAsync` | Moves a column to a target index. | `string fieldName`, `int toIndex` | `Task` |
+| `ReorderColumnsAsync` | Reorders multiple columns. | `List<string> fromFieldNames, string toFieldName` or `string[] fromFieldNames, string toFieldName` | `Task` |
+| `ReorderRowAsync` | Reorders rows. | `int fromIndex`, `int toIndex` | `Task` |
+
+### Column and data information
+
+| Method | Description | Parameters | Returns |
+|--------|-------------|------------|---------|
+| `GetCellValueByIndexAsync` | Gets a cell value by row and column indexes. | `int rowIndex`, `int columnIndex` | `Task<object>` |
+| `GetColumnByFieldAsync` | Gets a column by field name. | `string fieldName` | `Task<GridColumn>` |
+| `GetColumnByUidAsync` | Gets a column by UID. | `string uid` | `Task<GridColumn>` |
+| `GetColumnFieldNamesAsync` | Gets the bound column field names. | None | `Task<List<string>>` |
+| `GetColumnIndexByFieldAsync` | Gets a column index by field name. | `string fieldName` | `Task<int>` |
+| `GetColumnIndexByUidAsync` | Gets a column index by UID. | `string uid` | `Task<int>` |
+| `GetColumnsAsync` | Gets the grid columns. | `bool? isRefresh = null` | `Task<List<GridColumn>>` |
+| `GetCurrentViewRecordsAsync` | Gets the visible records. | None | `Task<List<TValue>>` |
+| `GetForeignKeyColumnsAsync` | Gets foreign key columns. | None | `Task<List<GridColumn>>` |
+| `GetHiddenColumnsAsync` | Gets hidden columns. | None | `Task<List<GridColumn>>` |
+| `GetPrimaryKeyFieldNamesAsync` | Gets primary key field names. | None | `Task<List<string>>` |
+| `GetRowIndexByPrimaryKeyAsync` | Gets a row index by primary key. | `object value`, `bool searchAcrossRecords = false` | `Task<int>` |
+| `GetUidByColumnFieldAsync` | Gets a UID by field name. | `string fieldName` | `Task<string>` |
+| `GetVisibleColumnsAsync` | Gets visible columns. | None | `Task<List<GridColumn>>` |
+
+### Refresh and spinner
+
+| Method | Description | Parameters | Returns |
+|--------|-------------|------------|---------|
+| `HideSpinnerAsync` | Hides the loading spinner. | None | `Task` |
+| `Refresh` | Refreshes the grid header and content. | `bool isModelRefresh = false` | `Task` |
+| `RefreshColumnsAsync` | Refreshes the grid after external column changes. | None | `Task` |
+| `RefreshHeaderAsync` | Refreshes the grid header. | None | `Task` |
+| `ShowSpinnerAsync` | Shows the spinner. | None | `Task` |
+
+### Toolbar, focus and other
+
+| Method | Description | Parameters | Returns |
+|--------|-------------|------------|---------|
+| `EnableToolbarItemsAsync` | Enables or disables toolbar items. | `List<string> items`, `bool isEnable` | `Task` |
+| `FocusAsync` | Focuses the grid element. | None | `Task` |
+| `GetClass` | Returns the container class name. | None | `string` |
+| `GetWebMcpToolsAsync` | Gets WebMCP tools for the grid. | `IEnumerable<string>? toolNames = null` | `Task<IReadOnlyList<IGridWebMcpTool>>` |
+| `PreventRender` | Prevents rendering. | `bool preventRender = true` | `void` |
+| `UpdateExternalMessageAsync` | Updates the external message text. | `string message` | `Task` |
+
 API reference: https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.SfGrid-1.html
