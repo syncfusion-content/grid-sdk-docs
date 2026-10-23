@@ -921,6 +921,8 @@ What each button does:
 
 Use these methods to add a new row, begin editing, save or cancel the edit, and remove a record. These actions are the usual starting point for beginners who build CRUD grids.
 
+The add and delete methods have overloads, so the examples below show both the simple and the data-driven forms.
+
 | Method | Description | Parameters | Returns |
 |--------|-------------|------------|---------|
 | `AddRecordAsync` | Starts adding a new row in the grid. | None or `TValue data, int? index = null` | `Task` |
@@ -942,11 +944,13 @@ Prerequisites:
 @using Syncfusion.Blazor.Grids
 @using Syncfusion.Blazor.Buttons
 
-<SfButton Content="Add Row" OnClick="AddRowContent" />
+<SfButton Content="Add Blank Row" OnClick="AddBlankRowContent" />
+<SfButton Content="Add Row At Top" OnClick="AddRowAtTopContent" />
 <SfButton Content="Edit First Row" OnClick="StartEditContent" />
 <SfButton Content="Save Edit" OnClick="SaveEditContent" />
 <SfButton Content="Cancel Edit" OnClick="CloseEditContent" />
-<SfButton Content="Delete Selected" OnClick="DeleteRowContent" />
+<SfButton Content="Delete Selected" OnClick="DeleteSelectedRowContent" />
+<SfButton Content="Delete First By Key" OnClick="DeleteFirstByKeyContent" />
 
 <SfGrid @ref="DefaultGrid" DataSource="@Orders" AllowAdding="true" AllowEditing="true" AllowDeleting="true">
     <GridEditSettings Mode="EditMode.Normal"></GridEditSettings>
@@ -962,11 +966,19 @@ Prerequisites:
     private SfGrid<OrderData> DefaultGrid;
     private List<OrderData> Orders { get; set; }
     protected override void OnInitialized() => Orders = OrderData.GetAllRecords();
-    private async Task AddRowContent() => await DefaultGrid.AddRecordAsync();
+    private async Task AddBlankRowContent() => await DefaultGrid.AddRecordAsync();
+    private async Task AddRowAtTopContent() => await DefaultGrid.AddRecordAsync(new OrderData
+    {
+        OrderID = 10248,
+        CustomerID = "VINET",
+        ShipCity = "Reims",
+        ShipName = "Vins et alcools Chevalier"
+    }, 0);
     private async Task StartEditContent() => await DefaultGrid.StartEditAsync();
     private async Task SaveEditContent() => await DefaultGrid.EndEditAsync();
     private async Task CloseEditContent() => await DefaultGrid.CloseEditAsync();
-    private async Task DeleteRowContent() => await DefaultGrid.DeleteRecordAsync();
+    private async Task DeleteSelectedRowContent() => await DefaultGrid.DeleteRecordAsync();
+    private async Task DeleteFirstByKeyContent() => await DefaultGrid.DeleteRecordAsync(nameof(OrderData.OrderID), 10248);
 }
 {% endhighlight %}
 {% endtabs %}
