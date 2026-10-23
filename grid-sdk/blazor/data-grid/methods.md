@@ -17,14 +17,14 @@ Use `@ref` to access an `SfGrid<TValue>` instance and call its methods after the
 |-------|---------|
 | [Export and print](#export-and-print) | `PrintAsync`, `ExportToExcelAsync`, `ExportToPdfAsync`, `ExportToCsvAsync` |
 | [Grouping](#grouping) | `GroupColumnAsync`, `UngroupColumnAsync`, `ExpandAllGroupAsync`, `CollapseAllGroupAsync`, `ClearGroupingAsync` |
-| [Paging and scrolling](#paging-and-scrolling-examples) | `GoToPageAsync`, `ScrollIntoViewAsync`, `UpdatePageSizeAsync` |
-| [Detail rows](#detail-rows-examples) | `CollapseAllDetailRowAsync`, `ExpandAllDetailRowAsync`, `ExpandCollapseDetailRowAsync` |
-| [Cell merging](#cell-merging-examples) | `MergeCellsAsync`, `UnmergeAllAsync`, `UnmergeCellsAsync` |
-| [Column visibility and chooser](#column-visibility-and-chooser-examples) | `HideColumnAsync`, `HideColumnsAsync`, `OpenColumnChooserAsync`, `ShowColumnAsync`, `ShowColumnsAsync` |
-| [Column layout and reorder](#column-layout-and-reorder-examples) | `AutoFitColumnAsync`, `AutoFitColumnsAsync`, `ReorderColumnAsync`, `ReorderColumnByIndexAsync`, `ReorderColumnByTargetIndexAsync`, `ReorderColumnsAsync`, `ReorderRowAsync` |
-| [Column and data information](#column-and-data-information-examples) | `GetCellValueByIndexAsync`, `GetColumnByFieldAsync`, `GetColumnByUidAsync`, `GetColumnFieldNamesAsync`, `GetColumnIndexByFieldAsync`, `GetColumnIndexByUidAsync`, `GetColumnsAsync`, `GetCurrentViewRecordsAsync`, `GetForeignKeyColumnsAsync`, `GetHiddenColumnsAsync`, `GetPrimaryKeyFieldNamesAsync`, `GetRowIndexByPrimaryKeyAsync`, `GetUidByColumnFieldAsync`, `GetVisibleColumnsAsync` |
-| [Refresh and spinner](#refresh-and-spinner-examples) | `Refresh`, `RefreshColumnsAsync`, `RefreshHeaderAsync`, `ShowSpinnerAsync`, `HideSpinnerAsync` |
-| [Toolbar, focus and other](#toolbar-focus-and-other-examples) | `EnableToolbarItemsAsync`, `FocusAsync`, `GetWebMcpToolsAsync`, `UpdateExternalMessageAsync` |
+| [Paging and scrolling](#paging-and-scrolling) | `GoToPageAsync`, `ScrollIntoViewAsync`, `UpdatePageSizeAsync` |
+| [Detail rows](#detail-rows) | `CollapseAllDetailRowAsync`, `ExpandAllDetailRowAsync`, `ExpandCollapseDetailRowAsync` |
+| [Cell merging](#cell-merging) | `MergeCellsAsync`, `UnmergeAllAsync`, `UnmergeCellsAsync` |
+| [Column visibility and chooser](#column-visibility-and-chooser) | `HideColumnAsync`, `HideColumnsAsync`, `OpenColumnChooserAsync`, `ShowColumnAsync`, `ShowColumnsAsync` |
+| [Column layout and reorder](#column-layout-and-reorder) | `AutoFitColumnAsync`, `AutoFitColumnsAsync`, `ReorderColumnAsync`, `ReorderColumnByIndexAsync`, `ReorderColumnByTargetIndexAsync`, `ReorderColumnsAsync`, `ReorderRowAsync` |
+| [Column and data information](#column-and-data-information) | `GetCellValueByIndexAsync`, `GetColumnByFieldAsync`, `GetColumnByUidAsync`, `GetColumnFieldNamesAsync`, `GetColumnIndexByFieldAsync`, `GetColumnIndexByUidAsync`, `GetColumnsAsync`, `GetCurrentViewRecordsAsync`, `GetForeignKeyColumnsAsync`, `GetHiddenColumnsAsync`, `GetPrimaryKeyFieldNamesAsync`, `GetRowIndexByPrimaryKeyAsync`, `GetUidByColumnFieldAsync`, `GetVisibleColumnsAsync` |
+| [Refresh and spinner](#refresh-and-spinner) | `Refresh`, `RefreshColumnsAsync`, `RefreshHeaderAsync`, `ShowSpinnerAsync`, `HideSpinnerAsync` |
+| [Toolbar, focus and other](#toolbar-focus-and-other) | `EnableToolbarItemsAsync`, `FocusAsync`, `GetWebMcpToolsAsync`, `UpdateExternalMessageAsync` |
 | [Selection](#selection) | `SelectRowAsync`, `SelectRowsAsync`, `SelectRowsByRangeAsync`, `SelectCellAsync`, `SelectCellsAsync`, `SelectCellsByRangeAsync`, `ClearSelectionAsync`, `ClearRowSelectionAsync`, `ClearCellSelectionAsync`, `GetSelectedRecordsAsync`, `GetSelectedRowIndexesAsync`, `GetSelectedRowCellIndexesAsync` |
 | [Searching](#searching) | `SearchAsync`, `FindHighlightAsync`, `FindNextHighlightAsync`, `FindPreviousHighlightAsync`, `FindGoToAsync`, `ResetFindAsync` |
 | [Sorting and filtering](#sorting-and-filtering) | `SortColumnAsync`, `SortColumnsAsync`, `ClearSortingAsync`, `FilterByColumnAsync`, `ClearFilteringAsync` |
@@ -32,8 +32,8 @@ Use `@ref` to access an `SfGrid<TValue>` instance and call its methods after the
 | [State persistence](#state-persistence) | `GetPersistDataAsync`, `SetPersistDataAsync`, `ResetPersistDataAsync` |
 | [Clipboard](#clipboard) | `CopyAsync`, `PasteAsync` |
 | [Layout and refresh](#layout-and-refresh) | `AutoFitColumnAsync`, `AutoFitColumnsAsync`, `ReorderColumnAsync`, `Refresh`, `RefreshColumnsAsync`, `RefreshHeaderAsync`, `ShowSpinnerAsync`, `HideSpinnerAsync` |
-| [Add, edit and delete](#add-edit-and-delete-examples) | `AddRecordAsync`, `StartEditAsync`, `EndEditAsync`, `CloseEditAsync`, `DeleteRecordAsync` |
-| [Batch editing, batch changes, and undo](#batch-editing-batch-changes-and-undo-examples) | `SetCellValueAsync`, `SetRowDataAsync`, `UpdateBatchRowAsync`, `UpdateCellAsync`, `UpdateRowAsync`, `ApplyBatchChangesAsync`, `GetBatchChangesAsync`, `IsDirtyAsync`, `ClearUndoRedoAsync`, `RedoAllAsync`, `RedoAsync`, `UndoAllAsync`, `UndoAsync` |
+| [Add, edit and delete](#add-edit-and-delete) | `AddRecordAsync`, `StartEditAsync`, `EndEditAsync`, `CloseEditAsync`, `DeleteRecordAsync` |
+| [Batch editing, batch changes, and undo](#batch-editing-batch-changes-and-undo) | `SetCellValueAsync`, `SetRowDataAsync`, `UpdateBatchRowAsync`, `UpdateCellAsync`, `UpdateRowAsync`, `ApplyBatchChangesAsync`, `GetBatchChangesAsync`, `IsDirtyAsync`, `ClearUndoRedoAsync`, `RedoAllAsync`, `RedoAsync`, `UndoAllAsync`, `UndoAsync` |
 
 ## Export and print
 
@@ -136,6 +136,8 @@ internal sealed class OrderData
 }
 {% endhighlight %}
 {% endtabs %}
+
+{% previewsample "https://blazorplayground.syncfusion.com/embed/TODO?appbar=false&editor=false&result=true&errorlist=false&theme=fluent2" %}
 
 {% previewsample "https://blazorplayground.syncfusion.com/embed/TODO?appbar=false&editor=false&result=true&errorlist=false&theme=fluent2" %}
 
@@ -343,7 +345,7 @@ Use these methods to select rows or cells, clear the selection, and read the sel
 | `SelectRowAsync` | Selects a row by index. | `int index`, `bool selectAcrossPages = false` | `Task` |
 | `SelectRowsAsync` | Selects multiple rows by indexes. | `int[] rowIndexes` | `Task` |
 | `SelectRowsByRangeAsync` | Selects a row range. | `int startIndex`, `int endIndex` | `Task` |
-| `SelectCellAsync` | Selects a cell by row and column indexes. | `int rowIndex`, `int cellIndex` | `Task` |
+| `SelectCellAsync` | Selects a cell by row and column indexes. | `int rowIndex`, `int cellIndex`, `bool? isToggle = null` | `Task` |
 | `SelectCellsAsync` | Selects multiple cells by row and column indexes. | `(int rowIndex, int cellIndex)[] rowCellIndexes` | `Task` |
 | `SelectCellsByRangeAsync` | Selects a cell range. | `(int rowIndex, int cellIndex) startIndex`, `(int rowIndex, int cellIndex)? endIndex = null` | `Task` |
 | `ClearSelectionAsync` | Clears all selected rows and cells. | None | `Task` |
@@ -375,8 +377,7 @@ Prerequisites:
 <SfButton Content="Get Selected Cell Indexes" OnClick="GetSelectedCellIndexesContent" />
 <SfButton Content="Clear Selection" OnClick="ClearSelectionContent" />
 
-<SfGrid @ref="DefaultGrid" DataSource="@Orders" AllowSelection="true">
-    <GridSelectionSettings Type="SelectionType.Multiple" Mode="SelectionMode.Cell"></GridSelectionSettings>
+<SfGrid @ref="DefaultGrid" DataSource="@Orders">
     <GridColumns>
         <GridColumn Field=@nameof(OrderData.OrderID) HeaderText="Order ID" Width="120" TextAlign="TextAlign.Right"></GridColumn>
         <GridColumn Field=@nameof(OrderData.CustomerID) HeaderText="Customer ID" Width="120"></GridColumn>
@@ -751,6 +752,9 @@ internal sealed class OrderData
 
 {% previewsample "https://blazorplayground.syncfusion.com/embed/TODO?appbar=false&editor=false&result=true&errorlist=false&theme=fluent2" %}
 
+What each button does:
+- This example shows the buttons listed above.
+
 ## State persistence
 
 Use these methods to save, restore, or clear the persisted grid state.
@@ -946,12 +950,15 @@ Use these methods to merge and unmerge grid cells.
 
 | Method | Description | Parameters | Returns |
 |--------|-------------|------------|---------|
-| `MergeCellsAsync` | Merges a range of cells. | `(int rowIndex, int cellIndex) startIndex`, `(int rowIndex, int cellIndex) endIndex` | `Task` |
-| `UnmergeCellsAsync` | Unmerges a range of cells. | `(int rowIndex, int cellIndex) startIndex`, `(int rowIndex, int cellIndex) endIndex` | `Task` |
+| `MergeCellsAsync` | Merges a range of cells. | `MergeCellInfo info` or `IEnumerable<MergeCellInfo> infos` | `Task` |
+| `UnmergeCellsAsync` | Unmerges merged cells by anchor cell. | `UnmergeCellInfo info` or `IEnumerable<UnmergeCellInfo> infos` | `Task` |
 | `UnmergeAllAsync` | Unmerges all merged cells in the grid. | None | `Task` |
 
 Prerequisites:
-- Enable cell selection if you want to merge a visible selection.
+- Works on the current visible view only.
+- Use data-row and visible leaf-column indexes only; header, command, checkbox, and template-only columns are not supported.
+- Each merged area must remain within one frozen section, and merged areas cannot overlap.
+- Results can change after paging, sorting, filtering, or column changes.
 
 {% tabs %}
 {% highlight razor tabtitle="Index.razor" %}
@@ -962,8 +969,7 @@ Prerequisites:
 <SfButton Content="Unmerge Cells" OnClick="UnmergeCellsContent" />
 <SfButton Content="Unmerge All" OnClick="UnmergeAllContent" />
 
-<SfGrid @ref="DefaultGrid" DataSource="@Orders" AllowSelection="true">
-    <GridSelectionSettings Type="SelectionType.Multiple" Mode="SelectionMode.Cell"></GridSelectionSettings>
+<SfGrid @ref="DefaultGrid" DataSource="@Orders">
     <GridColumns>
         <GridColumn Field=@nameof(OrderData.OrderID) HeaderText="Order ID" Width="120" TextAlign="TextAlign.Right"></GridColumn>
         <GridColumn Field=@nameof(OrderData.CustomerID) HeaderText="Customer ID" Width="120"></GridColumn>
@@ -976,8 +982,18 @@ Prerequisites:
     private SfGrid<OrderData> DefaultGrid;
     private List<OrderData> Orders { get; set; }
     protected override void OnInitialized() => Orders = OrderData.GetAllRecords();
-    private async Task MergeCellsContent() => await DefaultGrid.MergeCellsAsync((0, 0), (0, 1));
-    private async Task UnmergeCellsContent() => await DefaultGrid.UnmergeCellsAsync((0, 0), (0, 1));
+    private async Task MergeCellsContent() => await DefaultGrid.MergeCellsAsync(new MergeCellInfo
+    {
+        RowIndex = 0,
+        ColumnIndex = 0,
+        RowSpan = 1,
+        ColumnSpan = 2
+    });
+    private async Task UnmergeCellsContent() => await DefaultGrid.UnmergeCellsAsync(new UnmergeCellInfo
+    {
+        RowIndex = 0,
+        ColumnIndex = 0
+    });
     private async Task UnmergeAllContent() => await DefaultGrid.UnmergeAllAsync();
 }
 {% endhighlight %}
@@ -987,6 +1003,9 @@ internal sealed class OrderData { /* same as above */ }
 {% endtabs %}
 
 {% previewsample "https://blazorplayground.syncfusion.com/embed/TODO?appbar=false&editor=false&result=true&errorlist=false&theme=fluent2" %}
+
+What each button does:
+- This example shows the buttons listed above.
 
 ## Layout and refresh
 
@@ -1095,7 +1114,7 @@ What each button does:
 - `HideSpinnerAsync` hides the loading indicator.
 
 
-## Add, edit and delete examples
+## Add, edit and delete
 
 Use these methods to add a new row, begin editing, save or cancel the edit, and remove a record. These actions are the usual starting point for beginners who build CRUD grids.
 
@@ -1160,7 +1179,7 @@ Batch editing methods are shown in the batch section below.
 {% endhighlight %}
 {% endtabs %}
 
-## Batch editing, batch changes, and undo examples
+## Batch editing, batch changes, and undo
 
 Use these methods when batch editing is enabled and you want to update cells, inspect pending changes, or undo and redo edits.
 
@@ -1169,6 +1188,9 @@ Use these methods when batch editing is enabled and you want to update cells, in
 | `SetCellValueAsync` | Updates one or more cells by primary key. | `IReadOnlyList<CellUpdate> cellValueUpdates` or `object key, string fieldName, object value` | `Task` |
 | `SetRowDataAsync` | Replaces a row by primary key. | `object primaryKeyValue, TValue rowData` or `object primaryKeyValue, TValue rowData, bool preventDataUpdate` | `Task` |
 | `UpdateBatchRowAsync` | Updates the current batch-edited row. | `TValue data` | `Task` |
+| `EditCellAsync` | Opens a cell in batch edit mode. | `int rowIndex, string field` | `Task` |
+| `SaveCellAsync` | Saves the current batch-edited cell. | None | `Task` |
+| `GetEditContextAsync` | Gets the current edit context. | None | `Task<object>` |
 | `UpdateCellAsync` | Updates one cell without opening edit mode. | `int rowIndex, string field, object value` | `Task` |
 | `UpdateRowAsync` | Replaces a row without edit mode. | `int index, TValue data` | `Task` |
 | `ApplyBatchChangesAsync` | Applies a batch of added, edited, and deleted records to the grid UI. | `BatchChanges<TValue> batchChanges` | `Task` |
@@ -1193,6 +1215,9 @@ Prerequisites:
 <SfButton Content="Set Cell Value" OnClick="SetCellValueContent" />
 <SfButton Content="Set Row Data" OnClick="SetRowDataContent" />
 <SfButton Content="Update Batch Row" OnClick="UpdateBatchRowContent" />
+<SfButton Content="Edit Cell" OnClick="EditCellContent" />
+<SfButton Content="Save Cell" OnClick="SaveCellContent" />
+<SfButton Content="Get Edit Context" OnClick="GetEditContextContent" />
 <SfButton Content="Update Cell" OnClick="UpdateCellContent" />
 <SfButton Content="Update Row" OnClick="UpdateRowContent" />
 <SfButton Content="Apply Batch Changes" OnClick="ApplyBatchChangesContent" />
@@ -1223,6 +1248,9 @@ Prerequisites:
     private async Task SetCellValueContent() { await DefaultGrid.SetCellValueAsync(10248, nameof(OrderData.CustomerID), "UPDATED"); LastAction = "SetCellValueAsync"; }
     private async Task SetRowDataContent() => await DefaultGrid.SetRowDataAsync(10248, Orders[0]);
     private async Task UpdateBatchRowContent() => await DefaultGrid.UpdateBatchRowAsync(Orders[0]);
+    private async Task EditCellContent() => await DefaultGrid.EditCellAsync(0, nameof(OrderData.CustomerID));
+    private async Task SaveCellContent() => await DefaultGrid.SaveCellAsync();
+    private async Task GetEditContextContent() => await DefaultGrid.GetEditContextAsync();
     private async Task UpdateCellContent() => await DefaultGrid.UpdateCellAsync(0, nameof(OrderData.CustomerID), "UPDATED");
     private async Task UpdateRowContent() => await DefaultGrid.UpdateRowAsync(0, Orders[0]);
     private async Task ApplyBatchChangesContent() => await DefaultGrid.ApplyBatchChangesAsync(await DefaultGrid.GetBatchChangesAsync());
@@ -1242,7 +1270,10 @@ internal sealed class OrderData { /* same as above */ }
 
 {% previewsample "https://blazorplayground.syncfusion.com/embed/TODO?appbar=false&editor=false&result=true&errorlist=false&theme=fluent2" %}
 
-## Paging and scrolling examples
+What each button does:
+- This example shows the buttons listed above.
+
+## Paging and scrolling
 
 Use these methods to move to a page, update the page size, or scroll a cell into view. They are helpful when you work with large data sets.
 
@@ -1328,7 +1359,10 @@ internal sealed class OrderData
 
 {% previewsample "https://blazorplayground.syncfusion.com/embed/TODO?appbar=false&editor=false&result=true&errorlist=false&theme=fluent2" %}
 
-## Detail rows examples
+What each button does:
+- This example shows the buttons listed above.
+
+## Detail rows
 
 Use these methods when your grid shows master-detail rows. They let new users expand or collapse details from a button click.
 
@@ -1381,7 +1415,10 @@ internal sealed class OrderData { /* same as above */ }
 
 {% previewsample "https://blazorplayground.syncfusion.com/embed/TODO?appbar=false&editor=false&result=true&errorlist=false&theme=fluent2" %}
 
-## Column visibility and chooser examples
+What each button does:
+- This example shows the buttons listed above.
+
+## Column visibility and chooser
 
 Use these methods to hide or show columns and open the column chooser for beginners who want to customize the grid view.
 
@@ -1434,7 +1471,10 @@ internal sealed class OrderData { /* same as above */ }
 
 {% previewsample "https://blazorplayground.syncfusion.com/embed/TODO?appbar=false&editor=false&result=true&errorlist=false&theme=fluent2" %}
 
-## Column layout and reorder examples
+What each button does:
+- This example shows the buttons listed above.
+
+## Column layout and reorder
 
 Use these methods to resize or move columns. This section helps new users understand how to make the grid easier to scan.
 
@@ -1495,7 +1535,10 @@ internal sealed class OrderData { /* same as above */ }
 
 {% previewsample "https://blazorplayground.syncfusion.com/embed/TODO?appbar=false&editor=false&result=true&errorlist=false&theme=fluent2" %}
 
-## Column and data information examples
+What each button does:
+- This example shows the buttons listed above.
+
+## Column and data information
 
 Use these methods when you need to read the current grid state from code. They are useful for advanced scenarios and for learning how the grid stores its data and columns.
 
@@ -1572,7 +1615,10 @@ internal sealed class OrderData { /* same as above */ }
 
 {% previewsample "https://blazorplayground.syncfusion.com/embed/TODO?appbar=false&editor=false&result=true&errorlist=false&theme=fluent2" %}
 
-## Refresh and spinner examples
+What each button does:
+- This example shows the buttons listed above.
+
+## Refresh and spinner
 
 Use these methods to redraw the grid or show a loading indicator while work is running.
 
@@ -1627,7 +1673,10 @@ internal sealed class OrderData { /* same as above */ }
 
 {% previewsample "https://blazorplayground.syncfusion.com/embed/TODO?appbar=false&editor=false&result=true&errorlist=false&theme=fluent2" %}
 
-## Toolbar, focus and other examples
+What each button does:
+- This example shows the buttons listed above.
+
+## Toolbar, focus and other
 
 These methods are less common, but they are useful when you need to control toolbar buttons, focus the grid, or use WebMCP integration.
 
@@ -1677,5 +1726,8 @@ internal sealed class OrderData { /* same as above */ }
 {% endtabs %}
 
 {% previewsample "https://blazorplayground.syncfusion.com/embed/TODO?appbar=false&editor=false&result=true&errorlist=false&theme=fluent2" %}
+
+What each button does:
+- This example shows the buttons listed above.
 
 API reference: https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.SfGrid-1.html
