@@ -1121,6 +1121,87 @@ Prerequisites:
 - Define a primary key column for row and cell updates.
 - Use batch edit mode for `UpdateBatchRowAsync()` and `UpdateCellAsync()`.
 
+## Batch editing, batch changes, and undo examples
+
+Use these methods when batch editing is enabled and you want to update cells, inspect pending changes, or undo and redo edits.
+
+| Method | Description | Parameters | Returns |
+|--------|-------------|------------|---------|
+| `SetCellValueAsync` | Updates one or more cells by primary key. | `IReadOnlyList<CellUpdate> cellValueUpdates` or `object key, string fieldName, object value` | `Task` |
+| `SetRowDataAsync` | Replaces a row by primary key. | `object primaryKeyValue, TValue rowData` or `object primaryKeyValue, TValue rowData, bool preventDataUpdate` | `Task` |
+| `UpdateBatchRowAsync` | Updates the current batch-edited row. | `TValue data` | `Task` |
+| `UpdateCellAsync` | Updates one cell without opening edit mode. | `int rowIndex, string field, object value` | `Task` |
+| `UpdateRowAsync` | Replaces a row without edit mode. | `int index, TValue data` | `Task` |
+| `ApplyBatchChangesAsync` | Applies a batch of added, edited, and deleted records to the grid UI. | `BatchChanges<TValue> batchChanges` | `Task` |
+| `GetBatchChangesAsync` | Gets pending batch changes. | None | `Task<BatchChanges<TValue>>` |
+| `IsDirtyAsync` | Checks whether batch changes exist. | None | `Task<bool>` |
+| `ClearUndoRedoAsync` | Clears the undo and redo history. | None | `Task` |
+| `RedoAllAsync` | Redoes all undone batch operations. | None | `Task` |
+| `RedoAsync` | Redoes the last undone batch operation. | None | `Task` |
+| `UndoAllAsync` | Undoes all recorded batch operations. | None | `Task` |
+| `UndoAsync` | Undoes the last batch operation. | None | `Task` |
+
+Prerequisites:
+- Set `EditMode.Batch`.
+- Set `EnableUndoRedo="true"` to use undo and redo methods.
+- Define a primary key column for row and cell updates.
+
+{% tabs %}
+{% highlight razor tabtitle="Index.razor" %}
+@using Syncfusion.Blazor.Grids
+@using Syncfusion.Blazor.Buttons
+
+<SfButton Content="Set Cell Value" OnClick="SetCellValueContent" />
+<SfButton Content="Set Row Data" OnClick="SetRowDataContent" />
+<SfButton Content="Update Batch Row" OnClick="UpdateBatchRowContent" />
+<SfButton Content="Update Cell" OnClick="UpdateCellContent" />
+<SfButton Content="Update Row" OnClick="UpdateRowContent" />
+<SfButton Content="Apply Batch Changes" OnClick="ApplyBatchChangesContent" />
+<SfButton Content="Get Batch Changes" OnClick="GetBatchChangesContent" />
+<SfButton Content="Check Dirty" OnClick="IsDirtyContent" />
+<SfButton Content="Clear Undo/Redo" OnClick="ClearUndoRedoContent" />
+<SfButton Content="Redo All" OnClick="RedoAllContent" />
+<SfButton Content="Redo Last" OnClick="RedoContent" />
+<SfButton Content="Undo All" OnClick="UndoAllContent" />
+<SfButton Content="Undo Last" OnClick="UndoContent" />
+
+<SfGrid @ref="DefaultGrid" DataSource="@Orders" AllowEditing="true">
+    <GridEditSettings Mode="EditMode.Batch" EnableUndoRedo="true"></GridEditSettings>
+    <GridColumns>
+        <GridColumn Field=@nameof(OrderData.OrderID) HeaderText="Order ID" IsPrimaryKey="true" Width="120" TextAlign="TextAlign.Right"></GridColumn>
+        <GridColumn Field=@nameof(OrderData.CustomerID) HeaderText="Customer ID" Width="120"></GridColumn>
+        <GridColumn Field=@nameof(OrderData.ShipCity) HeaderText="Ship City" Width="130"></GridColumn>
+        <GridColumn Field=@nameof(OrderData.ShipName) HeaderText="Ship Name" Width="120"></GridColumn>
+    </GridColumns>
+</SfGrid>
+
+@code {
+    private SfGrid<OrderData> DefaultGrid;
+    private List<OrderData> Orders { get; set; }
+
+    protected override void OnInitialized() => Orders = OrderData.GetAllRecords();
+    private async Task SetCellValueContent() => await DefaultGrid.SetCellValueAsync(10248, nameof(OrderData.CustomerID), "UPDATED");
+    private async Task SetRowDataContent() => await DefaultGrid.SetRowDataAsync(10248, Orders[0]);
+    private async Task UpdateBatchRowContent() => await DefaultGrid.UpdateBatchRowAsync(Orders[0]);
+    private async Task UpdateCellContent() => await DefaultGrid.UpdateCellAsync(0, nameof(OrderData.CustomerID), "UPDATED");
+    private async Task UpdateRowContent() => await DefaultGrid.UpdateRowAsync(0, Orders[0]);
+    private async Task ApplyBatchChangesContent() => await DefaultGrid.ApplyBatchChangesAsync(await DefaultGrid.GetBatchChangesAsync());
+    private async Task GetBatchChangesContent() => _ = await DefaultGrid.GetBatchChangesAsync();
+    private async Task IsDirtyContent() => _ = await DefaultGrid.IsDirtyAsync();
+    private async Task ClearUndoRedoContent() => await DefaultGrid.ClearUndoRedoAsync();
+    private async Task RedoAllContent() => await DefaultGrid.RedoAllAsync();
+    private async Task RedoContent() => await DefaultGrid.RedoAsync();
+    private async Task UndoAllContent() => await DefaultGrid.UndoAllAsync();
+    private async Task UndoContent() => await DefaultGrid.UndoAsync();
+}
+{% endhighlight %}
+{% highlight c# tabtitle="OrderData.cs" %}
+internal sealed class OrderData { /* same as above */ }
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "https://blazorplayground.syncfusion.com/embed/TODO?appbar=false&editor=false&result=true&errorlist=false&theme=fluent2" %}
+
 ## Batch changes and dirty state examples
 
 Use these methods when you want to read or apply pending batch edits before they are saved to the data source.
