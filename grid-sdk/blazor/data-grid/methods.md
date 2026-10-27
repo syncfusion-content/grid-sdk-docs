@@ -40,9 +40,9 @@ Use these methods to print the grid or export it to Excel, CSV, or PDF. The expo
 | Method | Description | Parameters | Returns |
 |--------|-------------|------------|---------|
 | `PrintAsync` | Opens the browser print dialog for the grid content. | None | `Task` |
-| `ExportToExcelAsync` | Exports the grid to an Excel file. | `bool asMemoryStream = false`, `ExcelExportProperties excelExportProperties = null` | `Task` |
-| `ExportToPdfAsync` | Exports the grid to a PDF file. | `bool asMemoryStream = false`, `PdfExportProperties pdfExportProperties = null` | `Task` |
-| `ExportToCsvAsync` | Exports the grid to a CSV file. | `bool asMemoryStream = false`, `ExcelExportProperties excelExportProperties = null` | `Task` |
+| `ExportToExcelAsync` | Exports the grid to an Excel file. | `ExcelExportProperties excelExportProperties = null` | `Task` |
+| `ExportToPdfAsync` | Exports the grid to a PDF file. | `PdfExportProperties pdfExportProperties = null` | `Task` |
+| `ExportToCsvAsync` | Exports the grid to a CSV file. | `ExcelExportProperties excelExportProperties = null` | `Task` |
 
 Prerequisites:
 - Set `AllowExcelExport="true"` for Excel and CSV export.
@@ -238,7 +238,7 @@ Use these methods to select rows or cells, clear the selection, and read the sel
 
 | Method | Description | Parameters | Returns |
 |--------|-------------|------------|---------|
-| `SelectRowAsync` | Selects a row by index. | `int index`, `bool selectAcrossPages = false` | `Task` |
+| `SelectRowAsync` | Selects a row by index. | `int index`, `bool? isToggle = null`, `bool selectAcrossPages = false` | `Task` |
 | `SelectRowsAsync` | Selects multiple rows by indexes. | `int[] rowIndexes` | `Task` |
 | `SelectRowsByRangeAsync` | Selects a row range. | `int startIndex`, `int endIndex` | `Task` |
 | `SelectCellAsync` | Selects a cell by row and column indexes. | `(int, int) cellIndex`, `bool? isToggle = null` | `Task` |
