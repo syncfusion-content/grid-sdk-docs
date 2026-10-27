@@ -61,7 +61,7 @@ Prerequisites:
 
 <SfGrid @ref="DefaultGrid" DataSource="@Orders" AllowExcelExport="true" AllowPdfExport="true">
     <GridColumns>
-        <GridColumn Field=@nameof(OrderData.OrderID) HeaderText="Order ID" IsPrimaryKey="true" Width="120" TextAlign="TextAlign.Right"></GridColumn>
+        <GridColumn Field=@nameof(OrderData.OrderID) HeaderText="Order ID" Width="120" TextAlign="TextAlign.Right"></GridColumn>
         <GridColumn Field=@nameof(OrderData.CustomerID) HeaderText="Customer ID" Width="120"></GridColumn>
         <GridColumn Field=@nameof(OrderData.ShipCity) HeaderText="Ship City" Width="130"></GridColumn>
         <GridColumn Field=@nameof(OrderData.ShipName) HeaderText="Ship Name" Width="120"></GridColumn>
@@ -965,8 +965,6 @@ Prerequisites:
 <SfButton Content="Delete Selected" OnClick="DeleteSelectedRowContent" />
 <SfButton Content="Delete First By Key" OnClick="DeleteFirstByKeyContent" />
 
-<p>@LastAction</p>
-
 <SfGrid @ref="DefaultGrid" DataSource="@Orders" AllowSelection="true">
     <GridEditSettings Mode="EditMode.Normal" AllowAdding="true" AllowEditing="true" AllowDeleting="true"></GridEditSettings>
     <GridColumns>
@@ -982,7 +980,7 @@ Prerequisites:
     private List<OrderData> Orders { get; set; }
     protected override void OnInitialized() => Orders = OrderData.GetAllRecords();
     private async Task AddBlankRowContent() => await DefaultGrid.AddRecordAsync();
-    private async Task AddRowAtTopContent() => await DefaultGrid.AddRecordAsync(new OrderData(10269, "ALFKI", "Berlin", "Alfreds Futterkiste"), 0);
+    private async Task AddRowAtTopContent() => await DefaultGrid.AddRecordAsync(new OrderData(10270, "ALFKI", "Berlin", "Alfreds Futterkiste"), 0);
     private async Task StartEditContent()
     {
         await DefaultGrid.SelectRowAsync(0);
@@ -992,6 +990,60 @@ Prerequisites:
     private async Task CloseEditContent() => await DefaultGrid.CloseEditAsync();
     private async Task DeleteSelectedRowContent() => await DefaultGrid.DeleteRecordAsync();
     private async Task DeleteFirstByKeyContent() => await DefaultGrid.DeleteRecordAsync(nameof(OrderData.OrderID), Orders[0]);
+}
+{% endhighlight %}
+{% highlight c# tabtitle="OrderData.cs" %}
+internal sealed class OrderData
+{
+    private static readonly List<OrderData> Data = new();
+
+    public OrderData()
+    {
+    }
+
+    public OrderData(int orderID, string customerID, string shipCity, string shipName)
+    {
+        OrderID = orderID;
+        CustomerID = customerID;
+        ShipCity = shipCity;
+        ShipName = shipName;
+    }
+
+    internal static List<OrderData> GetAllRecords()
+    {
+        if (Data.Count == 0)
+        {
+            Data.Add(new OrderData(10248, "VINET", "Reims", "Vins et alcools Cheval"));
+            Data.Add(new OrderData(10249, "TOMSP", "Münster", "Toms Spezialitäten"));
+            Data.Add(new OrderData(10250, "HANAR", "Rio de Janeiro", "Hanari Carnes"));
+            Data.Add(new OrderData(10251, "VICTE", "Lyon", "Victuailles en stock"));
+            Data.Add(new OrderData(10252, "SUPRD", "Charleroi", "Suprêmes délices"));
+            Data.Add(new OrderData(10253, "HANAR", "Rio de Janeiro", "Hanari Carnes"));
+            Data.Add(new OrderData(10254, "CHOPS", "Bern", "Chop-suey Chinese"));
+            Data.Add(new OrderData(10255, "RICSU", "Genève", "Richter Supermarkt"));
+            Data.Add(new OrderData(10256, "WELLI", "Resende", "Wellington Importado"));
+            Data.Add(new OrderData(10257, "ALFKI", "Berlin", "Alfreds Futterkiste"));
+            Data.Add(new OrderData(10258, "TRADH", "London", "Tradição Hipermercados"));
+            Data.Add(new OrderData(10259, "VINET", "Madrid", "Victorias Finest"));
+            Data.Add(new OrderData(10260, "MORGK", "Lisboa", "Morgenstern Delikatessen"));
+            Data.Add(new OrderData(10261, "SUPRD", "Bruxelles", "Suprêmes délices"));
+            Data.Add(new OrderData(10262, "FURIB", "Paris", "Furia Bacana"));
+            Data.Add(new OrderData(10263, "OLDWO", "Seattle", "Old World Delicatessen"));
+            Data.Add(new OrderData(10264, "ERNSH", "Graz", "Ernst Handel"));
+            Data.Add(new OrderData(10265, "CENTC", "Helsinki", "Centro comercial"));
+            Data.Add(new OrderData(10266, "BOTTM", "Oslo", "Bottom-Dollar Markets"));
+            Data.Add(new OrderData(10267, "FRANK", "Bern", "Frankenversand"));
+            Data.Add(new OrderData(10268, "GROSR", "Genève", "Grossery Mart"));
+            Data.Add(new OrderData(10269, "BONAP", "Marseille", "Bon app"));
+        }
+
+        return Data;
+    }
+
+    public int OrderID { get; set; }
+    public string CustomerID { get; set; }
+    public string ShipCity { get; set; }
+    public string ShipName { get; set; }
 }
 {% endhighlight %}
 {% endtabs %}
@@ -1584,7 +1636,7 @@ Use these methods when you need to read the current grid state from code. They a
 | `GetVisibleColumnsAsync` | Gets visible columns. | None | `Task<List<GridColumn>>` |
 
 Prerequisites:
-- No special grid settings are required.
+- Set `IsPrimaryKey="true"` on the primary key column.
 
 {% tabs %}
 {% highlight razor tabtitle="Index.razor" %}
@@ -1627,7 +1679,7 @@ Prerequisites:
         var columnIndexByUid = await DefaultGrid.GetColumnIndexByUidAsync(firstColumn.Uid);
         var uid = await DefaultGrid.GetUidByColumnFieldAsync(nameof(OrderData.OrderID));
         var rowIndex = await DefaultGrid.GetRowIndexByPrimaryKeyAsync(10250);
-        InfoOutput = $"{columns.Count} columns, {fields.Count} fields, {visible.Count} visible, {hidden.Count} hidden, {primaryKeys.Count} keys, {foreignKeyColumns.Count} foreign keys, {currentRecords.Count} records, row {rowIndex}, value {value}, uid {uid}, column {columnIndex}, columnByUid {columnIndexByUid}";
+        InfoOutput = $"{columns.Count} columns, {fields.Count} fields, {visible.Count} visible, {hidden.Count} hidden, {primaryKeys.Count} keys, {foreignKeyColumns.Count} foreign keys, {currentRecords.Count} records, row {rowIndex}, value {value}, uid {uid}, column {columnIndex}, columnByUid {columnIndexByUid}, firstColumnByUid {firstColumnByUid.Field}";
     }
     private async Task FindRowContent() { var rowIndex = await DefaultGrid.GetRowIndexByPrimaryKeyAsync(10250); InfoOutput = $"Row index: {rowIndex}"; }
 }
