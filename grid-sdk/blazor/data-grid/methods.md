@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Methods in Blazor DataGrid | Syncfusion®
-description: Learn about the public methods of the Blazor Data Grid, grouped by task, with usage examples.
+description: Learn about the public methods of the Blazor Data Grid, grouped by task, with practical examples, prerequisites, and usage notes.
 platform: grid-sdk
 control: DataGrid
 documentation: ug
@@ -1856,17 +1856,17 @@ internal sealed class OrderData
 
 ## Toolbar, focus and other
 
-These methods are less common, but they are useful when you need to control toolbar buttons, focus the grid, or use WebMCP integration.
+These methods are less common, but they are useful when you need to control toolbar buttons, focus the grid, or use Web MCP integration.
 
 | Method | Description | Parameters | Returns |
 |--------|-------------|------------|---------|
 | `EnableToolbarItemsAsync` | Enables or disables toolbar items. | `List<string> items`, `bool isEnable` | `Task` |
 | `FocusAsync` | Focuses the grid element. | None | `Task` |
-| `GetWebMcpToolsAsync` | Gets WebMCP tools for the grid. | `IEnumerable<string>? toolNames = null` | `Task<IReadOnlyList<IGridWebMcpTool>>` |
+| `GetWebMcpToolsAsync` | Gets Web MCP tools for the grid. | `IEnumerable<string>? toolNames = null` | `Task<IReadOnlyList<IGridWebMcpTool>>` |
 | `UpdateExternalMessageAsync` | Updates the external message text. | `string message` | `Task` |
 
 Prerequisites:
-- Set `EnableWebMcp="true"` for `GetWebMcpToolsAsync()`.
+- Set `EnableWebMcp="true"` for `GetWebMcpToolsAsync()` to enable Web MCP support.
 - The grid must be rendered before calling these methods.
 
 {% tabs %}
