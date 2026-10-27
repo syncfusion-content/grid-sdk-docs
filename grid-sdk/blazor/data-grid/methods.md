@@ -17,21 +17,21 @@ Use `@ref` to access an `SfGrid<TValue>` instance and call its methods after the
 |-------|---------|
 | [Export and print](#export-and-print) | `PrintAsync`, `ExportToExcelAsync`, `ExportToPdfAsync`, `ExportToCsvAsync` |
 | [Grouping](#grouping) | `GroupColumnAsync`, `UngroupColumnAsync`, `ExpandAllGroupAsync`, `CollapseAllGroupAsync`, `ClearGroupingAsync` |
+| [Selection](#selection) | `SelectRowAsync`, `SelectRowsAsync`, `SelectRowsByRangeAsync`, `SelectCellAsync`, `SelectCellsAsync`, `SelectCellsByRangeAsync`, `ClearSelectionAsync`, `ClearRowSelectionAsync`, `ClearCellSelectionAsync`, `GetSelectedRecordsAsync`, `GetSelectedRowIndexesAsync`, `GetSelectedRowCellIndexesAsync` |
+| [Searching](#searching) | `SearchAsync`, `FindHighlightAsync`, `FindNextHighlightAsync`, `FindPreviousHighlightAsync`, `FindGoToAsync`, `ResetFindAsync` |
+| [Sorting and filtering](#sorting-and-filtering) | `SortColumnAsync`, `SortColumnsAsync`, `ClearSortingAsync`, `FilterByColumnAsync`, `ClearFilteringAsync`, `GetFilteredRecordsAsync` |
+| [State persistence](#state-persistence) | `GetPersistDataAsync`, `SetPersistDataAsync`, `ResetPersistDataAsync` |
+| [Clipboard](#clipboard) | `CopyAsync`, `PasteAsync` |
+| [Cell merging](#cell-merging) | `MergeCellsAsync`, `UnmergeAllAsync`, `UnmergeCellsAsync` |
+| [Add, edit and delete](#add-edit-and-delete) | `AddRecordAsync`, `StartEditAsync`, `EndEditAsync`, `CloseEditAsync`, `DeleteRecordAsync` |
+| [Batch editing, batch changes, and undo](#batch-editing-batch-changes-and-undo) | `SetCellValueAsync`, `SetRowDataAsync`, `UpdateBatchRowAsync`, `EditCellAsync`, `SaveCellAsync`, `GetEditContextAsync`, `UpdateCellAsync`, `UpdateRowAsync`, `ApplyBatchChangesAsync`, `GetBatchChangesAsync`, `IsDirtyAsync`, `ClearUndoRedoAsync`, `RedoAllAsync`, `RedoAsync`, `UndoAllAsync`, `UndoAsync` |
 | [Paging and scrolling](#paging-and-scrolling) | `GoToPageAsync`, `ScrollIntoViewAsync`, `UpdatePageSizeAsync` |
 | [Detail rows](#detail-rows) | `CollapseAllDetailRowAsync`, `ExpandAllDetailRowAsync`, `ExpandCollapseDetailRowAsync` |
-| [Cell merging](#cell-merging) | `MergeCellsAsync`, `UnmergeAllAsync`, `UnmergeCellsAsync` |
 | [Column visibility and chooser](#column-visibility-and-chooser) | `HideColumnAsync`, `HideColumnsAsync`, `OpenColumnChooserAsync`, `ShowColumnAsync`, `ShowColumnsAsync` |
 | [Column layout and reorder](#column-layout-and-reorder) | `AutoFitColumnAsync`, `AutoFitColumnsAsync`, `ReorderColumnAsync`, `ReorderColumnByIndexAsync`, `ReorderColumnByTargetIndexAsync`, `ReorderColumnsAsync`, `ReorderRowAsync` |
 | [Column and data information](#column-and-data-information) | `GetCellValueByIndexAsync`, `GetColumnByFieldAsync`, `GetColumnByUidAsync`, `GetColumnFieldNamesAsync`, `GetColumnIndexByFieldAsync`, `GetColumnIndexByUidAsync`, `GetColumnsAsync`, `GetCurrentViewRecordsAsync`, `GetForeignKeyColumnsAsync`, `GetHiddenColumnsAsync`, `GetPrimaryKeyFieldNamesAsync`, `GetRowIndexByPrimaryKeyAsync`, `GetUidByColumnFieldAsync`, `GetVisibleColumnsAsync` |
 | [Refresh and spinner](#refresh-and-spinner) | `Refresh`, `RefreshColumnsAsync`, `RefreshHeaderAsync`, `ShowSpinnerAsync`, `HideSpinnerAsync` |
 | [Toolbar, focus and other](#toolbar-focus-and-other) | `EnableToolbarItemsAsync`, `FocusAsync`, `GetWebMcpToolsAsync`, `UpdateExternalMessageAsync` |
-| [Selection](#selection) | `SelectRowAsync`, `SelectRowsAsync`, `SelectRowsByRangeAsync`, `SelectCellAsync`, `SelectCellsAsync`, `SelectCellsByRangeAsync`, `ClearSelectionAsync`, `ClearRowSelectionAsync`, `ClearCellSelectionAsync`, `GetSelectedRecordsAsync`, `GetSelectedRowIndexesAsync`, `GetSelectedRowCellIndexesAsync` |
-| [Searching](#searching) | `SearchAsync`, `FindHighlightAsync`, `FindNextHighlightAsync`, `FindPreviousHighlightAsync`, `FindGoToAsync`, `ResetFindAsync` |
-| [Sorting and filtering](#sorting-and-filtering) | `SortColumnAsync`, `SortColumnsAsync`, `ClearSortingAsync`, `FilterByColumnAsync`, `ClearFilteringAsync` |
-| [State persistence](#state-persistence) | `GetPersistDataAsync`, `SetPersistDataAsync`, `ResetPersistDataAsync` |
-| [Clipboard](#clipboard) | `CopyAsync`, `PasteAsync` |
-| [Add, edit and delete](#add-edit-and-delete) | `AddRecordAsync`, `StartEditAsync`, `EndEditAsync`, `CloseEditAsync`, `DeleteRecordAsync` |
-| [Batch editing, batch changes, and undo](#batch-editing-batch-changes-and-undo) | `SetCellValueAsync`, `SetRowDataAsync`, `UpdateBatchRowAsync`, `EditCellAsync`, `SaveCellAsync`, `GetEditContextAsync`, `UpdateCellAsync`, `UpdateRowAsync`, `ApplyBatchChangesAsync`, `GetBatchChangesAsync`, `IsDirtyAsync`, `ClearUndoRedoAsync`, `RedoAllAsync`, `RedoAsync`, `UndoAllAsync`, `UndoAsync` |
 
 ## Export and print
 
@@ -71,7 +71,6 @@ Prerequisites:
 @code {
     private SfGrid<OrderData> DefaultGrid;
     private List<OrderData> Orders { get; set; }
-    private string LastAction { get; set; }
 
     protected override void OnInitialized() => Orders = OrderData.GetAllRecords();
 
@@ -195,7 +194,6 @@ Prerequisites:
 @code {
     private SfGrid<OrderData> DefaultGrid;
     private List<OrderData> Orders { get; set; }
-    private string LastAction { get; set; }
 
     protected override void OnInitialized() => Orders = OrderData.GetAllRecords();
 
@@ -317,7 +315,6 @@ Prerequisites:
 @code {
     private SfGrid<OrderData> DefaultGrid;
     private List<OrderData> Orders { get; set; }
-    private string LastAction { get; set; }
 
     protected override void OnInitialized() => Orders = OrderData.GetAllRecords();
 
@@ -398,10 +395,6 @@ internal sealed class OrderData
 
 Use the search methods to find text, move between search highlights, and clear the current search.
 
-Prerequisites:
-- Set `AllowSearching="true"`.
-- Use the search box or call the methods after the grid renders.
-
 | Method | Description | Parameters | Returns |
 |--------|-------------|------------|---------|
 | `SearchAsync` | Searches the grid for the supplied text. | `string searchString` | `Task` |
@@ -410,6 +403,10 @@ Prerequisites:
 | `FindPreviousHighlightAsync` | Moves to the previous highlight. | None | `Task` |
 | `FindGoToAsync` | Jumps to the highlighted match number. | `int matchNumber` | `Task` |
 | `ResetFindAsync` | Clears the search highlight state. | None | `Task` |
+
+Prerequisites:
+- Set `AllowSearching="true"`.
+- Use the search box or call the methods after the grid renders.
 
 {% tabs %}
 {% highlight razor tabtitle="Index.razor" %}
@@ -422,6 +419,8 @@ Prerequisites:
 <SfButton Content="Previous Match" OnClick="PreviousContent" />
 <SfButton Content="Go To Match 1" OnClick="GoToMatchContent" />
 <SfButton Content="Reset Find" OnClick="ResetFindContent" />
+
+<p>@LastAction</p>
 
 <SfGrid @ref="DefaultGrid" DataSource="@Orders" AllowSearching="true">
     <GridSearchSettings IgnoreCase="true"></GridSearchSettings>
@@ -509,10 +508,6 @@ internal sealed class OrderData
 
 Use these methods to sort columns and clear applied sort or filter criteria.
 
-Prerequisites:
-- Set `AllowSorting="true"` for the sort methods.
-- Set `AllowFiltering="true"` for the filter methods.
-
 | Method | Description | Parameters | Returns |
 |--------|-------------|------------|---------|
 | `SortColumnAsync` | Sorts a column by field name. | `string columnName`, `SortDirection direction`, `bool? isMultiSort = null` | `Task` |
@@ -521,6 +516,10 @@ Prerequisites:
 | `FilterByColumnAsync` | Filters a column by field name and operator. | `string fieldName`, `string filterOperator`, `object filterValue`, `string predicate = null`, `bool? matchCase = null`, `bool? ignoreAccent = null`, `object actualFilterValue = null`, `object actualOperator = null`, `string columnUid = null` | `Task` |
 | `ClearFilteringAsync` | Clears filtering. | `()` or `string fieldName` or `List<string> fieldNames` | `Task` |
 | `GetFilteredRecordsAsync` | Returns the records that match the current filters. | `bool isStrictFiltering = false` | `Task<object>` |
+
+Prerequisites:
+- Set `AllowSorting="true"` for the sort methods.
+- Set `AllowFiltering="true"` for the filter methods.
 
 {% tabs %}
 {% highlight razor tabtitle="Index.razor" %}
@@ -533,6 +532,8 @@ Prerequisites:
 <SfButton Content="Filter City" OnClick="FilterContent" />
 <SfButton Content="Clear Filtering" OnClick="ClearFilterContent" />
 <SfButton Content="Get Filtered Records" OnClick="GetFilteredRecordsContent" />
+
+<p>@LastAction</p>
 
 <SfGrid @ref="DefaultGrid" DataSource="@Orders" AllowSorting="true" AllowFiltering="true">
     <GridColumns>
@@ -627,14 +628,14 @@ internal sealed class OrderData
 
 Use these methods to save, restore, or clear the persisted grid state.
 
-Prerequisites:
-- Set `EnablePersistence="true"`.
-
 | Method | Description | Parameters | Returns |
 |--------|-------------|------------|---------|
 | `GetPersistDataAsync` | Returns the current persisted state string. | None | `Task<string>` |
 | `SetPersistDataAsync` | Applies a persisted state string. | `string properties` | `Task` |
 | `ResetPersistDataAsync` | Clears persisted state. | None | `Task` |
+
+Prerequisites:
+- Set `EnablePersistence="true"`.
 
 {% tabs %}
 {% highlight razor tabtitle="Index.razor" %}
@@ -662,7 +663,13 @@ Prerequisites:
     protected override void OnInitialized() => Orders = OrderData.GetAllRecords();
 
     private async Task GetStateContent() => PersistData = await DefaultGrid.GetPersistDataAsync();
-    private async Task SetStateContent() => await DefaultGrid.SetPersistDataAsync(PersistData);
+    private async Task SetStateContent()
+    {
+        if (!string.IsNullOrEmpty(PersistData))
+        {
+            await DefaultGrid.SetPersistDataAsync(PersistData);
+        }
+    }
     private async Task ResetStateContent() => await DefaultGrid.ResetPersistDataAsync();
 }
 {% endhighlight %}
@@ -727,14 +734,14 @@ internal sealed class OrderData
 
 Use the clipboard methods to copy or paste grid data.
 
-Prerequisites:
-- Set `AllowClipboard="true"`.
-- Enable selection before calling `CopyAsync` or `PasteAsync`.
-
 | Method | Description | Parameters | Returns |
 |--------|-------------|------------|---------|
 | `CopyAsync` | Copies the selected rows or cells to the clipboard. | `bool? withHeader = null` | `Task` |
 | `PasteAsync` | Pastes clipboard data into the grid. | None | `Task` |
+
+Prerequisites:
+- Set `AllowClipboard="true"`.
+- Enable selection before calling `CopyAsync` or `PasteAsync`.
 
 {% tabs %}
 {% highlight razor tabtitle="Index.razor" %}
@@ -757,7 +764,6 @@ Prerequisites:
 @code {
     private SfGrid<OrderData> DefaultGrid;
     private List<OrderData> Orders { get; set; }
-    private string LastAction { get; set; }
 
     protected override void OnInitialized() => Orders = OrderData.GetAllRecords();
 
@@ -832,7 +838,7 @@ Use these methods to merge and unmerge grid cells.
 | `UnmergeCellsAsync` | Unmerges merged cells by anchor cell. | `UnmergeCellInfo info` or `IEnumerable<UnmergeCellInfo> infos` | `Task` |
 | `UnmergeAllAsync` | Unmerges all merged cells in the grid. | None | `Task` |
 
-Prerequisites:
+Restrictions:
 - Works on the current visible view only.
 - Use data-row and visible leaf-column indexes only; header, command, checkbox, and template-only columns are not supported.
 - Each merged area must remain within one frozen section, and merged areas cannot overlap.
@@ -859,7 +865,6 @@ Prerequisites:
 @code {
     private SfGrid<OrderData> DefaultGrid;
     private List<OrderData> Orders { get; set; }
-    private string InfoOutput { get; set; }
     protected override void OnInitialized() => Orders = OrderData.GetAllRecords();
     private async Task MergeCellsContent() => await DefaultGrid.MergeCellsAsync(new MergeCellInfo
     {
@@ -935,7 +940,7 @@ internal sealed class OrderData
 
 ## Add, edit and delete
 
-Use these methods to add a new row, begin editing, save or cancel the edit, and remove a record. These actions are the usual starting point for beginners who build CRUD grids.
+Use these methods to add a new row, begin editing, save or cancel the edit, and remove a record. These actions cover the basic create, update, and delete operations of a CRUD grid.
 
 The add and delete methods have overloads, so the examples below show both the simple and the data-driven forms.
 
@@ -1099,6 +1104,8 @@ Prerequisites:
 <SfButton Content="Undo All" OnClick="UndoAllContent" />
 <SfButton Content="Undo Last" OnClick="UndoContent" />
 
+<p>@LastAction</p>
+
 <SfGrid @ref="DefaultGrid" DataSource="@Orders" AllowEditing="true">
     <GridEditSettings Mode="EditMode.Batch" EnableUndoRedo="true"></GridEditSettings>
     <GridColumns>
@@ -1207,6 +1214,7 @@ Use these methods to move to a page, update the page size, or scroll a cell into
 Prerequisites:
 - Set `AllowPaging="true"` for page navigation.
 - Set `EnableVirtualization="true"` for `ScrollIntoViewAsync()` and the height overload of `UpdatePageSizeAsync()`.
+- To call the height overload of `UpdatePageSizeAsync()`, pass both `height` and `rowHeight`. A single `int` argument resolves to the `pageSize` overload.
 
 {% tabs %}
 {% highlight razor tabtitle="Index.razor" %}
@@ -1230,7 +1238,6 @@ Prerequisites:
 @code {
     private SfGrid<OrderData> DefaultGrid;
     private List<OrderData> Orders { get; set; }
-    private string LastAction { get; set; }
 
     protected override void OnInitialized() => Orders = OrderData.GetAllRecords();
 
@@ -1298,7 +1305,7 @@ internal sealed class OrderData
 
 ## Detail rows
 
-Use these methods when your grid shows master-detail rows. They let new users expand or collapse details from a button click.
+Use these methods when your grid shows master-detail rows. They expand or collapse detail rows from code, for example in a button click handler.
 
 | Method | Description | Parameters | Returns |
 |--------|-------------|------------|---------|
@@ -1401,7 +1408,7 @@ internal sealed class OrderData
 
 ## Column visibility and chooser
 
-Use these methods to hide or show columns and open the column chooser for beginners who want to customize the grid view.
+Use these methods to hide or show columns and open the column chooser to customize the grid view.
 
 | Method | Description | Parameters | Returns |
 |--------|-------------|------------|---------|
@@ -1504,7 +1511,7 @@ internal sealed class OrderData
 
 ## Column layout and reorder
 
-Use these methods to resize or move columns. This section helps new users understand how to make the grid easier to scan.
+Use these methods to resize or move columns. Resizing and reordering columns makes the grid easier to scan.
 
 | Method | Description | Parameters | Returns |
 |--------|-------------|------------|---------|
@@ -1616,7 +1623,7 @@ internal sealed class OrderData
 
 ## Column and data information
 
-Use these methods when you need to read the current grid state from code. They are useful for advanced scenarios and for learning how the grid stores its data and columns.
+Use these methods when you need to read the current grid state from code. They are useful for advanced scenarios that depend on the current columns, records, and primary keys.
 
 | Method | Description | Parameters | Returns |
 |--------|-------------|------------|---------|
@@ -1650,7 +1657,7 @@ Prerequisites:
 
 <SfGrid @ref="DefaultGrid" DataSource="@Orders">
     <GridColumns>
-        <GridColumn Field=@nameof(OrderData.OrderID) HeaderText="Order ID" Width="120" TextAlign="TextAlign.Right"></GridColumn>
+        <GridColumn Field=@nameof(OrderData.OrderID) HeaderText="Order ID" IsPrimaryKey="true" Width="120" TextAlign="TextAlign.Right"></GridColumn>
         <GridColumn Field=@nameof(OrderData.CustomerID) HeaderText="Customer ID" Width="120"></GridColumn>
         <GridColumn Field=@nameof(OrderData.ShipCity) HeaderText="Ship City" Width="130"></GridColumn>
         <GridColumn Field=@nameof(OrderData.ShipName) HeaderText="Ship Name" Width="120"></GridColumn>
@@ -1949,4 +1956,3 @@ internal sealed class OrderData
 
 
 API reference: https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.SfGrid-1.html
-.html
