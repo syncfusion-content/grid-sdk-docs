@@ -61,7 +61,7 @@ Prerequisites:
 
 <SfGrid @ref="DefaultGrid" DataSource="@Orders" AllowExcelExport="true" AllowPdfExport="true">
     <GridColumns>
-        <GridColumn Field=@nameof(OrderData.OrderID) HeaderText="Order ID" Width="120" TextAlign="TextAlign.Right"></GridColumn>
+        <GridColumn Field=@nameof(OrderData.OrderID) HeaderText="Order ID" IsPrimaryKey="true" Width="120" TextAlign="TextAlign.Right"></GridColumn>
         <GridColumn Field=@nameof(OrderData.CustomerID) HeaderText="Customer ID" Width="120"></GridColumn>
         <GridColumn Field=@nameof(OrderData.ShipCity) HeaderText="Ship City" Width="130"></GridColumn>
         <GridColumn Field=@nameof(OrderData.ShipName) HeaderText="Ship Name" Width="120"></GridColumn>
@@ -101,6 +101,10 @@ internal sealed class OrderData
 {
     private static readonly List<OrderData> Data = new();
 
+    public OrderData()
+    {
+    }
+
     public OrderData(int orderID, string customerID, string shipCity, string shipName)
     {
         OrderID = orderID;
@@ -134,6 +138,7 @@ internal sealed class OrderData
             Data.Add(new OrderData(10266, "BOTTM", "Oslo", "Bottom-Dollar Markets"));
             Data.Add(new OrderData(10267, "FRANK", "Bern", "Frankenversand"));
             Data.Add(new OrderData(10268, "GROSR", "Genève", "Grossery Mart"));
+            Data.Add(new OrderData(10269, "BONAP", "Marseille", "Bon app"));
         }
 
         return Data;
@@ -206,6 +211,10 @@ internal sealed class OrderData
 {
     private static readonly List<OrderData> Data = new();
 
+    public OrderData()
+    {
+    }
+
     public OrderData(int orderID, string customerID, string shipCity, string shipName)
     {
         OrderID = orderID;
@@ -239,6 +248,7 @@ internal sealed class OrderData
             Data.Add(new OrderData(10266, "BOTTM", "Oslo", "Bottom-Dollar Markets"));
             Data.Add(new OrderData(10267, "FRANK", "Bern", "Frankenversand"));
             Data.Add(new OrderData(10268, "GROSR", "Genève", "Grossery Mart"));
+            Data.Add(new OrderData(10269, "BONAP", "Marseille", "Bon app"));
         }
 
         return Data;
@@ -274,7 +284,7 @@ Use these methods to select rows or cells, clear the selection, and read the sel
 
 Prerequisites:
 - Set `AllowSelection="true"`.
-- Set `GridSelectionSettings Mode="SelectionMode.Cell"` for cell-selection methods and `SelectionType.Multiple` for multi-row selection.
+- Set `GridSelectionSettings Mode="SelectionMode.Both"` when you use both row and cell selection methods, and `SelectionType.Multiple` for multi-row selection.
 
 {% tabs %}
 {% highlight razor tabtitle="Index.razor" %}
@@ -295,7 +305,7 @@ Prerequisites:
 <SfButton Content="Clear Selection" OnClick="ClearSelectionContent" />
 
 <SfGrid @ref="DefaultGrid" DataSource="@Orders" AllowSelection="true">
-    <GridSelectionSettings Type="SelectionType.Multiple" Mode="SelectionMode.Cell"></GridSelectionSettings>
+    <GridSelectionSettings Type="SelectionType.Multiple" Mode="SelectionMode.Both"></GridSelectionSettings>
     <GridColumns>
         <GridColumn Field=@nameof(OrderData.OrderID) HeaderText="Order ID" Width="120" TextAlign="TextAlign.Right"></GridColumn>
         <GridColumn Field=@nameof(OrderData.CustomerID) HeaderText="Customer ID" Width="120"></GridColumn>
@@ -330,6 +340,10 @@ internal sealed class OrderData
 {
     private static readonly List<OrderData> Data = new();
 
+    public OrderData()
+    {
+    }
+
     public OrderData(int orderID, string customerID, string shipCity, string shipName)
     {
         OrderID = orderID;
@@ -363,6 +377,7 @@ internal sealed class OrderData
             Data.Add(new OrderData(10266, "BOTTM", "Oslo", "Bottom-Dollar Markets"));
             Data.Add(new OrderData(10267, "FRANK", "Bern", "Frankenversand"));
             Data.Add(new OrderData(10268, "GROSR", "Genève", "Grossery Mart"));
+            Data.Add(new OrderData(10269, "BONAP", "Marseille", "Bon app"));
         }
 
         return Data;
@@ -405,6 +420,7 @@ Prerequisites:
 <SfButton Content="Highlight VINET" OnClick="HighlightContent" />
 <SfButton Content="Next Match" OnClick="NextContent" />
 <SfButton Content="Previous Match" OnClick="PreviousContent" />
+<SfButton Content="Go To Match 1" OnClick="GoToMatchContent" />
 <SfButton Content="Reset Find" OnClick="ResetFindContent" />
 
 <SfGrid @ref="DefaultGrid" DataSource="@Orders" AllowSearching="true">
@@ -428,7 +444,7 @@ Prerequisites:
     private async Task HighlightContent() => await DefaultGrid.FindHighlightAsync("VINET");
     private async Task NextContent() => await DefaultGrid.FindNextHighlightAsync();
     private async Task PreviousContent() => await DefaultGrid.FindPreviousHighlightAsync();
-    private async Task GoToMatchContent() => await DefaultGrid.FindGoToAsync(1);
+    private async Task GoToMatchContent() { await DefaultGrid.FindGoToAsync(1); LastAction = "FindGoToAsync"; }
     private async Task ResetFindContent() => await DefaultGrid.ResetFindAsync();
 }
 {% endhighlight %}
@@ -436,6 +452,10 @@ Prerequisites:
 internal sealed class OrderData
 {
     private static readonly List<OrderData> Data = new();
+
+    public OrderData()
+    {
+    }
 
     public OrderData(int orderID, string customerID, string shipCity, string shipName)
     {
@@ -470,6 +490,7 @@ internal sealed class OrderData
             Data.Add(new OrderData(10266, "BOTTM", "Oslo", "Bottom-Dollar Markets"));
             Data.Add(new OrderData(10267, "FRANK", "Bern", "Frankenversand"));
             Data.Add(new OrderData(10268, "GROSR", "Genève", "Grossery Mart"));
+            Data.Add(new OrderData(10269, "BONAP", "Marseille", "Bon app"));
         }
 
         return Data;
@@ -550,6 +571,10 @@ internal sealed class OrderData
 {
     private static readonly List<OrderData> Data = new();
 
+    public OrderData()
+    {
+    }
+
     public OrderData(int orderID, string customerID, string shipCity, string shipName)
     {
         OrderID = orderID;
@@ -583,6 +608,7 @@ internal sealed class OrderData
             Data.Add(new OrderData(10266, "BOTTM", "Oslo", "Bottom-Dollar Markets"));
             Data.Add(new OrderData(10267, "FRANK", "Bern", "Frankenversand"));
             Data.Add(new OrderData(10268, "GROSR", "Genève", "Grossery Mart"));
+            Data.Add(new OrderData(10269, "BONAP", "Marseille", "Bon app"));
         }
 
         return Data;
@@ -645,6 +671,10 @@ internal sealed class OrderData
 {
     private static readonly List<OrderData> Data = new();
 
+    public OrderData()
+    {
+    }
+
     public OrderData(int orderID, string customerID, string shipCity, string shipName)
     {
         OrderID = orderID;
@@ -678,6 +708,7 @@ internal sealed class OrderData
             Data.Add(new OrderData(10266, "BOTTM", "Oslo", "Bottom-Dollar Markets"));
             Data.Add(new OrderData(10267, "FRANK", "Bern", "Frankenversand"));
             Data.Add(new OrderData(10268, "GROSR", "Genève", "Grossery Mart"));
+            Data.Add(new OrderData(10269, "BONAP", "Marseille", "Bon app"));
         }
 
         return Data;
@@ -714,7 +745,7 @@ Prerequisites:
 <SfButton Content="Paste" OnClick="PasteContent" />
 
 <SfGrid @ref="DefaultGrid" DataSource="@Orders" AllowSelection="true" AllowClipboard="true">
-    <GridSelectionSettings Type="SelectionType.Multiple" Mode="SelectionMode.Cell"></GridSelectionSettings>
+    <GridSelectionSettings Type="SelectionType.Multiple" Mode="SelectionMode.Both"></GridSelectionSettings>
     <GridColumns>
         <GridColumn Field=@nameof(OrderData.OrderID) HeaderText="Order ID" Width="120" TextAlign="TextAlign.Right"></GridColumn>
         <GridColumn Field=@nameof(OrderData.CustomerID) HeaderText="Customer ID" Width="120"></GridColumn>
@@ -738,6 +769,10 @@ Prerequisites:
 internal sealed class OrderData
 {
     private static readonly List<OrderData> Data = new();
+
+    public OrderData()
+    {
+    }
 
     public OrderData(int orderID, string customerID, string shipCity, string shipName)
     {
@@ -772,6 +807,7 @@ internal sealed class OrderData
             Data.Add(new OrderData(10266, "BOTTM", "Oslo", "Bottom-Dollar Markets"));
             Data.Add(new OrderData(10267, "FRANK", "Bern", "Frankenversand"));
             Data.Add(new OrderData(10268, "GROSR", "Genève", "Grossery Mart"));
+            Data.Add(new OrderData(10269, "BONAP", "Marseille", "Bon app"));
         }
 
         return Data;
@@ -823,6 +859,7 @@ Prerequisites:
 @code {
     private SfGrid<OrderData> DefaultGrid;
     private List<OrderData> Orders { get; set; }
+    private string InfoOutput { get; set; }
     protected override void OnInitialized() => Orders = OrderData.GetAllRecords();
     private async Task MergeCellsContent() => await DefaultGrid.MergeCellsAsync(new MergeCellInfo
     {
@@ -843,6 +880,10 @@ Prerequisites:
 internal sealed class OrderData
 {
     private static readonly List<OrderData> Data = new();
+
+    public OrderData()
+    {
+    }
 
     public OrderData(int orderID, string customerID, string shipCity, string shipName)
     {
@@ -877,6 +918,7 @@ internal sealed class OrderData
             Data.Add(new OrderData(10266, "BOTTM", "Oslo", "Bottom-Dollar Markets"));
             Data.Add(new OrderData(10267, "FRANK", "Bern", "Frankenversand"));
             Data.Add(new OrderData(10268, "GROSR", "Genève", "Grossery Mart"));
+            Data.Add(new OrderData(10269, "BONAP", "Marseille", "Bon app"));
         }
 
         return Data;
@@ -923,8 +965,6 @@ Prerequisites:
 <SfButton Content="Delete Selected" OnClick="DeleteSelectedRowContent" />
 <SfButton Content="Delete First By Key" OnClick="DeleteFirstByKeyContent" />
 
-Batch editing methods are shown in the batch section below.
-
 <p>@LastAction</p>
 
 <SfGrid @ref="DefaultGrid" DataSource="@Orders" AllowSelection="true">
@@ -942,7 +982,7 @@ Batch editing methods are shown in the batch section below.
     private List<OrderData> Orders { get; set; }
     protected override void OnInitialized() => Orders = OrderData.GetAllRecords();
     private async Task AddBlankRowContent() => await DefaultGrid.AddRecordAsync();
-    private async Task AddRowAtTopContent() => await DefaultGrid.AddRecordAsync(new OrderData(10257, "ALFKI", "Berlin", "Alfreds Futterkiste"), 0);
+    private async Task AddRowAtTopContent() => await DefaultGrid.AddRecordAsync(new OrderData(10269, "ALFKI", "Berlin", "Alfreds Futterkiste"), 0);
     private async Task StartEditContent()
     {
         await DefaultGrid.SelectRowAsync(0);
@@ -1050,6 +1090,10 @@ internal sealed class OrderData
 {
     private static readonly List<OrderData> Data = new();
 
+    public OrderData()
+    {
+    }
+
     public OrderData(int orderID, string customerID, string shipCity, string shipName)
     {
         OrderID = orderID;
@@ -1083,6 +1127,7 @@ internal sealed class OrderData
             Data.Add(new OrderData(10266, "BOTTM", "Oslo", "Bottom-Dollar Markets"));
             Data.Add(new OrderData(10267, "FRANK", "Bern", "Frankenversand"));
             Data.Add(new OrderData(10268, "GROSR", "Genève", "Grossery Mart"));
+            Data.Add(new OrderData(10269, "BONAP", "Marseille", "Bon app"));
         }
 
         return Data;
@@ -1147,6 +1192,10 @@ internal sealed class OrderData
 {
     private static readonly List<OrderData> Data = new();
 
+    public OrderData()
+    {
+    }
+
     public OrderData(int orderID, string customerID, string shipCity, string shipName)
     {
         OrderID = orderID;
@@ -1180,6 +1229,7 @@ internal sealed class OrderData
             Data.Add(new OrderData(10266, "BOTTM", "Oslo", "Bottom-Dollar Markets"));
             Data.Add(new OrderData(10267, "FRANK", "Bern", "Frankenversand"));
             Data.Add(new OrderData(10268, "GROSR", "Genève", "Grossery Mart"));
+            Data.Add(new OrderData(10269, "BONAP", "Marseille", "Bon app"));
         }
 
         return Data;
@@ -1245,6 +1295,10 @@ internal sealed class OrderData
 {
     private static readonly List<OrderData> Data = new();
 
+    public OrderData()
+    {
+    }
+
     public OrderData(int orderID, string customerID, string shipCity, string shipName)
     {
         OrderID = orderID;
@@ -1278,6 +1332,7 @@ internal sealed class OrderData
             Data.Add(new OrderData(10266, "BOTTM", "Oslo", "Bottom-Dollar Markets"));
             Data.Add(new OrderData(10267, "FRANK", "Bern", "Frankenversand"));
             Data.Add(new OrderData(10268, "GROSR", "Genève", "Grossery Mart"));
+            Data.Add(new OrderData(10269, "BONAP", "Marseille", "Bon app"));
         }
 
         return Data;
@@ -1343,6 +1398,10 @@ internal sealed class OrderData
 {
     private static readonly List<OrderData> Data = new();
 
+    public OrderData()
+    {
+    }
+
     public OrderData(int orderID, string customerID, string shipCity, string shipName)
     {
         OrderID = orderID;
@@ -1376,6 +1435,7 @@ internal sealed class OrderData
             Data.Add(new OrderData(10266, "BOTTM", "Oslo", "Bottom-Dollar Markets"));
             Data.Add(new OrderData(10267, "FRANK", "Bern", "Frankenversand"));
             Data.Add(new OrderData(10268, "GROSR", "Genève", "Grossery Mart"));
+            Data.Add(new OrderData(10269, "BONAP", "Marseille", "Bon app"));
         }
 
         return Data;
@@ -1434,20 +1494,25 @@ Prerequisites:
 @code {
     private SfGrid<OrderData> DefaultGrid;
     private List<OrderData> Orders { get; set; }
+    private string InfoOutput { get; set; }
     protected override void OnInitialized() => Orders = OrderData.GetAllRecords();
-    private async Task AutoFitColumnContent() => await DefaultGrid.AutoFitColumnAsync(nameof(OrderData.OrderID));
-    private async Task AutoFitColumnsContent() => await DefaultGrid.AutoFitColumnsAsync();
-    private async Task ReorderColumnContent() => await DefaultGrid.ReorderColumnAsync(nameof(OrderData.ShipCity), nameof(OrderData.CustomerID));
-    private async Task ReorderByIndexContent() => await DefaultGrid.ReorderColumnByIndexAsync(2, 1);
-    private async Task ReorderByTargetIndexContent() => await DefaultGrid.ReorderColumnByTargetIndexAsync(nameof(OrderData.ShipCity), 1);
-    private async Task ReorderColumnsContent() => await DefaultGrid.ReorderColumnsAsync(new List<string> { nameof(OrderData.ShipCity), nameof(OrderData.ShipName) }, nameof(OrderData.CustomerID));
-    private async Task ReorderRowContent() => await DefaultGrid.ReorderRowAsync(0, 1);
+    private async Task AutoFitColumnContent() { await DefaultGrid.AutoFitColumnAsync(nameof(OrderData.OrderID)); InfoOutput = "AutoFitColumnAsync"; }
+    private async Task AutoFitColumnsContent() { await DefaultGrid.AutoFitColumnsAsync(); InfoOutput = "AutoFitColumnsAsync"; }
+    private async Task ReorderColumnContent() { await DefaultGrid.ReorderColumnAsync(nameof(OrderData.ShipCity), nameof(OrderData.CustomerID)); InfoOutput = "ReorderColumnAsync"; }
+    private async Task ReorderByIndexContent() { await DefaultGrid.ReorderColumnByIndexAsync(2, 1); InfoOutput = "ReorderColumnByIndexAsync"; }
+    private async Task ReorderByTargetIndexContent() { await DefaultGrid.ReorderColumnByTargetIndexAsync(nameof(OrderData.ShipCity), 1); InfoOutput = "ReorderColumnByTargetIndexAsync"; }
+    private async Task ReorderColumnsContent() { await DefaultGrid.ReorderColumnsAsync(new List<string> { nameof(OrderData.ShipCity), nameof(OrderData.ShipName) }, nameof(OrderData.CustomerID)); InfoOutput = "ReorderColumnsAsync"; }
+    private async Task ReorderRowContent() { await DefaultGrid.ReorderRowAsync(0, 1); InfoOutput = "ReorderRowAsync"; }
 }
 {% endhighlight %}
 {% highlight c# tabtitle="OrderData.cs" %}
 internal sealed class OrderData
 {
     private static readonly List<OrderData> Data = new();
+
+    public OrderData()
+    {
+    }
 
     public OrderData(int orderID, string customerID, string shipCity, string shipName)
     {
@@ -1457,7 +1522,8 @@ internal sealed class OrderData
         ShipName = shipName;
     }
 
-    internal staal static List<OrderData> GetAllReco    {
+    internal static List<OrderData> GetAllRecords()
+    {
         if (Data.Count == 0)
         {
             Data.Add(new OrderData(10248, "VINET", "Reims", "Vins et alcools Cheval"));
@@ -1481,6 +1547,7 @@ internal sealed class OrderData
             Data.Add(new OrderData(10266, "BOTTM", "Oslo", "Bottom-Dollar Markets"));
             Data.Add(new OrderData(10267, "FRANK", "Bern", "Frankenversand"));
             Data.Add(new OrderData(10268, "GROSR", "Genève", "Grossery Mart"));
+            Data.Add(new OrderData(10269, "BONAP", "Marseille", "Bon app"));
         }
 
         return Data;
@@ -1560,15 +1627,19 @@ Prerequisites:
         var columnIndexByUid = await DefaultGrid.GetColumnIndexByUidAsync(firstColumn.Uid);
         var uid = await DefaultGrid.GetUidByColumnFieldAsync(nameof(OrderData.OrderID));
         var rowIndex = await DefaultGrid.GetRowIndexByPrimaryKeyAsync(10250);
-        InfoOutput = $"{columns.Count} columns, {fields.Count} fields, {visible.Count} visible, {hidden.Count} hidden, {primaryKeys.Count} keys, {foreignKeyColumns.Count} foreign keys, {currentRecords.Count} records, row {rowIndex}";
+        InfoOutput = $"{columns.Count} columns, {fields.Count} fields, {visible.Count} visible, {hidden.Count} hidden, {primaryKeys.Count} keys, {foreignKeyColumns.Count} foreign keys, {currentRecords.Count} records, row {rowIndex}, value {value}, uid {uid}, column {columnIndex}, columnByUid {columnIndexByUid}";
     }
-    private async Task FindRowContent() => await DefaultGrid.GetRowIndexByPrimaryKeyAsync(10250);
+    private async Task FindRowContent() { var rowIndex = await DefaultGrid.GetRowIndexByPrimaryKeyAsync(10250); InfoOutput = $"Row index: {rowIndex}"; }
 }
 {% endhighlight %}
 {% highlight c# tabtitle="OrderData.cs" %}
 internal sealed class OrderData
 {
     private static readonly List<OrderData> Data = new();
+
+    public OrderData()
+    {
+    }
 
     public OrderData(int orderID, string customerID, string shipCity, string shipName)
     {
@@ -1603,6 +1674,7 @@ internal sealed class OrderData
             Data.Add(new OrderData(10266, "BOTTM", "Oslo", "Bottom-Dollar Markets"));
             Data.Add(new OrderData(10267, "FRANK", "Bern", "Frankenversand"));
             Data.Add(new OrderData(10268, "GROSR", "Genève", "Grossery Mart"));
+            Data.Add(new OrderData(10269, "BONAP", "Marseille", "Bon app"));
         }
 
         return Data;
@@ -1657,18 +1729,23 @@ Prerequisites:
 @code {
     private SfGrid<OrderData> DefaultGrid;
     private List<OrderData> Orders { get; set; }
+    private string InfoOutput { get; set; }
     protected override void OnInitialized() => Orders = OrderData.GetAllRecords();
-    private async Task ShowSpinnerContent() => await DefaultGrid.ShowSpinnerAsync();
-    private async Task RefreshContent() => await DefaultGrid.Refresh();
-    private async Task RefreshColumnsContent() => await DefaultGrid.RefreshColumnsAsync();
-    private async Task RefreshHeaderContent() => await DefaultGrid.RefreshHeaderAsync();
-    private async Task HideSpinnerContent() => await DefaultGrid.HideSpinnerAsync();
+    private async Task ShowSpinnerContent() { await DefaultGrid.ShowSpinnerAsync(); InfoOutput = "ShowSpinnerAsync"; }
+    private async Task RefreshContent() { await DefaultGrid.Refresh(); InfoOutput = "Refresh"; }
+    private async Task RefreshColumnsContent() { await DefaultGrid.RefreshColumnsAsync(); InfoOutput = "RefreshColumnsAsync"; }
+    private async Task RefreshHeaderContent() { await DefaultGrid.RefreshHeaderAsync(); InfoOutput = "RefreshHeaderAsync"; }
+    private async Task HideSpinnerContent() { await DefaultGrid.HideSpinnerAsync(); InfoOutput = "HideSpinnerAsync"; }
 }
 {% endhighlight %}
 {% highlight c# tabtitle="OrderData.cs" %}
 internal sealed class OrderData
 {
     private static readonly List<OrderData> Data = new();
+
+    public OrderData()
+    {
+    }
 
     public OrderData(int orderID, string customerID, string shipCity, string shipName)
     {
@@ -1703,6 +1780,7 @@ internal sealed class OrderData
             Data.Add(new OrderData(10266, "BOTTM", "Oslo", "Bottom-Dollar Markets"));
             Data.Add(new OrderData(10267, "FRANK", "Bern", "Frankenversand"));
             Data.Add(new OrderData(10268, "GROSR", "Genève", "Grossery Mart"));
+            Data.Add(new OrderData(10269, "BONAP", "Marseille", "Bon app"));
         }
 
         return Data;
@@ -1766,6 +1844,10 @@ internal sealed class OrderData
 {
     private static readonly List<OrderData> Data = new();
 
+    public OrderData()
+    {
+    }
+
     public OrderData(int orderID, string customerID, string shipCity, string shipName)
     {
         OrderID = orderID;
@@ -1799,6 +1881,7 @@ internal sealed class OrderData
             Data.Add(new OrderData(10266, "BOTTM", "Oslo", "Bottom-Dollar Markets"));
             Data.Add(new OrderData(10267, "FRANK", "Bern", "Frankenversand"));
             Data.Add(new OrderData(10268, "GROSR", "Genève", "Grossery Mart"));
+            Data.Add(new OrderData(10269, "BONAP", "Marseille", "Bon app"));
         }
 
         return Data;
