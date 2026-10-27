@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Blazor Grid Methods Reference | Syncfusion®
+title: Methods in Blazor DataGrid | Syncfusion®
 description: Learn about the public methods of the Blazor Data Grid, grouped by task, with usage examples.
 platform: grid-sdk
 control: DataGrid
@@ -136,7 +136,7 @@ internal sealed class OrderData
             Data.Add(new OrderData(10265, "CENTC", "Helsinki", "Centro comercial"));
             Data.Add(new OrderData(10266, "BOTTM", "Oslo", "Bottom-Dollar Markets"));
             Data.Add(new OrderData(10267, "FRANK", "Bern", "Frankenversand"));
-            Data.Add(new OrderData(10268, "GROSR", "Genève", "Grossery Mart"));
+            Data.Add(new OrderData(10268, "GROSR", "Genève", "Grocery Mart"));
             Data.Add(new OrderData(10269, "BONAP", "Marseille", "Bon app"));
         }
 
@@ -245,7 +245,7 @@ internal sealed class OrderData
             Data.Add(new OrderData(10265, "CENTC", "Helsinki", "Centro comercial"));
             Data.Add(new OrderData(10266, "BOTTM", "Oslo", "Bottom-Dollar Markets"));
             Data.Add(new OrderData(10267, "FRANK", "Bern", "Frankenversand"));
-            Data.Add(new OrderData(10268, "GROSR", "Genève", "Grossery Mart"));
+            Data.Add(new OrderData(10268, "GROSR", "Genève", "Grocery Mart"));
             Data.Add(new OrderData(10269, "BONAP", "Marseille", "Bon app"));
         }
 
@@ -373,7 +373,7 @@ internal sealed class OrderData
             Data.Add(new OrderData(10265, "CENTC", "Helsinki", "Centro comercial"));
             Data.Add(new OrderData(10266, "BOTTM", "Oslo", "Bottom-Dollar Markets"));
             Data.Add(new OrderData(10267, "FRANK", "Bern", "Frankenversand"));
-            Data.Add(new OrderData(10268, "GROSR", "Genève", "Grossery Mart"));
+            Data.Add(new OrderData(10268, "GROSR", "Genève", "Grocery Mart"));
             Data.Add(new OrderData(10269, "BONAP", "Marseille", "Bon app"));
         }
 
@@ -488,7 +488,7 @@ internal sealed class OrderData
             Data.Add(new OrderData(10265, "CENTC", "Helsinki", "Centro comercial"));
             Data.Add(new OrderData(10266, "BOTTM", "Oslo", "Bottom-Dollar Markets"));
             Data.Add(new OrderData(10267, "FRANK", "Bern", "Frankenversand"));
-            Data.Add(new OrderData(10268, "GROSR", "Genève", "Grossery Mart"));
+            Data.Add(new OrderData(10268, "GROSR", "Genève", "Grocery Mart"));
             Data.Add(new OrderData(10269, "BONAP", "Marseille", "Bon app"));
         }
 
@@ -608,7 +608,7 @@ internal sealed class OrderData
             Data.Add(new OrderData(10265, "CENTC", "Helsinki", "Centro comercial"));
             Data.Add(new OrderData(10266, "BOTTM", "Oslo", "Bottom-Dollar Markets"));
             Data.Add(new OrderData(10267, "FRANK", "Bern", "Frankenversand"));
-            Data.Add(new OrderData(10268, "GROSR", "Genève", "Grossery Mart"));
+            Data.Add(new OrderData(10268, "GROSR", "Genève", "Grocery Mart"));
             Data.Add(new OrderData(10269, "BONAP", "Marseille", "Bon app"));
         }
 
@@ -714,7 +714,7 @@ internal sealed class OrderData
             Data.Add(new OrderData(10265, "CENTC", "Helsinki", "Centro comercial"));
             Data.Add(new OrderData(10266, "BOTTM", "Oslo", "Bottom-Dollar Markets"));
             Data.Add(new OrderData(10267, "FRANK", "Bern", "Frankenversand"));
-            Data.Add(new OrderData(10268, "GROSR", "Genève", "Grossery Mart"));
+            Data.Add(new OrderData(10268, "GROSR", "Genève", "Grocery Mart"));
             Data.Add(new OrderData(10269, "BONAP", "Marseille", "Bon app"));
         }
 
@@ -812,7 +812,7 @@ internal sealed class OrderData
             Data.Add(new OrderData(10265, "CENTC", "Helsinki", "Centro comercial"));
             Data.Add(new OrderData(10266, "BOTTM", "Oslo", "Bottom-Dollar Markets"));
             Data.Add(new OrderData(10267, "FRANK", "Bern", "Frankenversand"));
-            Data.Add(new OrderData(10268, "GROSR", "Genève", "Grossery Mart"));
+            Data.Add(new OrderData(10268, "GROSR", "Genève", "Grocery Mart"));
             Data.Add(new OrderData(10269, "BONAP", "Marseille", "Bon app"));
         }
 
@@ -922,7 +922,7 @@ internal sealed class OrderData
             Data.Add(new OrderData(10265, "CENTC", "Helsinki", "Centro comercial"));
             Data.Add(new OrderData(10266, "BOTTM", "Oslo", "Bottom-Dollar Markets"));
             Data.Add(new OrderData(10267, "FRANK", "Bern", "Frankenversand"));
-            Data.Add(new OrderData(10268, "GROSR", "Genève", "Grossery Mart"));
+            Data.Add(new OrderData(10268, "GROSR", "Genève", "Grocery Mart"));
             Data.Add(new OrderData(10269, "BONAP", "Marseille", "Bon app"));
         }
 
@@ -1038,7 +1038,7 @@ internal sealed class OrderData
             Data.Add(new OrderData(10265, "CENTC", "Helsinki", "Centro comercial"));
             Data.Add(new OrderData(10266, "BOTTM", "Oslo", "Bottom-Dollar Markets"));
             Data.Add(new OrderData(10267, "FRANK", "Bern", "Frankenversand"));
-            Data.Add(new OrderData(10268, "GROSR", "Genève", "Grossery Mart"));
+            Data.Add(new OrderData(10268, "GROSR", "Genève", "Grocery Mart"));
             Data.Add(new OrderData(10269, "BONAP", "Marseille", "Bon app"));
         }
 
@@ -1185,7 +1185,7 @@ internal sealed class OrderData
             Data.Add(new OrderData(10265, "CENTC", "Helsinki", "Centro comercial"));
             Data.Add(new OrderData(10266, "BOTTM", "Oslo", "Bottom-Dollar Markets"));
             Data.Add(new OrderData(10267, "FRANK", "Bern", "Frankenversand"));
-            Data.Add(new OrderData(10268, "GROSR", "Genève", "Grossery Mart"));
+            Data.Add(new OrderData(10268, "GROSR", "Genève", "Grocery Mart"));
             Data.Add(new OrderData(10269, "BONAP", "Marseille", "Bon app"));
         }
 
@@ -1287,7 +1287,7 @@ internal sealed class OrderData
             Data.Add(new OrderData(10265, "CENTC", "Helsinki", "Centro comercial"));
             Data.Add(new OrderData(10266, "BOTTM", "Oslo", "Bottom-Dollar Markets"));
             Data.Add(new OrderData(10267, "FRANK", "Bern", "Frankenversand"));
-            Data.Add(new OrderData(10268, "GROSR", "Genève", "Grossery Mart"));
+            Data.Add(new OrderData(10268, "GROSR", "Genève", "Grocery Mart"));
             Data.Add(new OrderData(10269, "BONAP", "Marseille", "Bon app"));
         }
 
@@ -1390,7 +1390,7 @@ internal sealed class OrderData
             Data.Add(new OrderData(10265, "CENTC", "Helsinki", "Centro comercial"));
             Data.Add(new OrderData(10266, "BOTTM", "Oslo", "Bottom-Dollar Markets"));
             Data.Add(new OrderData(10267, "FRANK", "Bern", "Frankenversand"));
-            Data.Add(new OrderData(10268, "GROSR", "Genève", "Grossery Mart"));
+            Data.Add(new OrderData(10268, "GROSR", "Genève", "Grocery Mart"));
             Data.Add(new OrderData(10269, "BONAP", "Marseille", "Bon app"));
         }
 
@@ -1493,7 +1493,7 @@ internal sealed class OrderData
             Data.Add(new OrderData(10265, "CENTC", "Helsinki", "Centro comercial"));
             Data.Add(new OrderData(10266, "BOTTM", "Oslo", "Bottom-Dollar Markets"));
             Data.Add(new OrderData(10267, "FRANK", "Bern", "Frankenversand"));
-            Data.Add(new OrderData(10268, "GROSR", "Genève", "Grossery Mart"));
+            Data.Add(new OrderData(10268, "GROSR", "Genève", "Grocery Mart"));
             Data.Add(new OrderData(10269, "BONAP", "Marseille", "Bon app"));
         }
 
@@ -1605,7 +1605,7 @@ internal sealed class OrderData
             Data.Add(new OrderData(10265, "CENTC", "Helsinki", "Centro comercial"));
             Data.Add(new OrderData(10266, "BOTTM", "Oslo", "Bottom-Dollar Markets"));
             Data.Add(new OrderData(10267, "FRANK", "Bern", "Frankenversand"));
-            Data.Add(new OrderData(10268, "GROSR", "Genève", "Grossery Mart"));
+            Data.Add(new OrderData(10268, "GROSR", "Genève", "Grocery Mart"));
             Data.Add(new OrderData(10269, "BONAP", "Marseille", "Bon app"));
         }
 
@@ -1732,7 +1732,7 @@ internal sealed class OrderData
             Data.Add(new OrderData(10265, "CENTC", "Helsinki", "Centro comercial"));
             Data.Add(new OrderData(10266, "BOTTM", "Oslo", "Bottom-Dollar Markets"));
             Data.Add(new OrderData(10267, "FRANK", "Bern", "Frankenversand"));
-            Data.Add(new OrderData(10268, "GROSR", "Genève", "Grossery Mart"));
+            Data.Add(new OrderData(10268, "GROSR", "Genève", "Grocery Mart"));
             Data.Add(new OrderData(10269, "BONAP", "Marseille", "Bon app"));
         }
 
@@ -1838,7 +1838,7 @@ internal sealed class OrderData
             Data.Add(new OrderData(10265, "CENTC", "Helsinki", "Centro comercial"));
             Data.Add(new OrderData(10266, "BOTTM", "Oslo", "Bottom-Dollar Markets"));
             Data.Add(new OrderData(10267, "FRANK", "Bern", "Frankenversand"));
-            Data.Add(new OrderData(10268, "GROSR", "Genève", "Grossery Mart"));
+            Data.Add(new OrderData(10268, "GROSR", "Genève", "Grocery Mart"));
             Data.Add(new OrderData(10269, "BONAP", "Marseille", "Bon app"));
         }
 
@@ -1939,7 +1939,7 @@ internal sealed class OrderData
             Data.Add(new OrderData(10265, "CENTC", "Helsinki", "Centro comercial"));
             Data.Add(new OrderData(10266, "BOTTM", "Oslo", "Bottom-Dollar Markets"));
             Data.Add(new OrderData(10267, "FRANK", "Bern", "Frankenversand"));
-            Data.Add(new OrderData(10268, "GROSR", "Genève", "Grossery Mart"));
+            Data.Add(new OrderData(10268, "GROSR", "Genève", "Grocery Mart"));
             Data.Add(new OrderData(10269, "BONAP", "Marseille", "Bon app"));
         }
 
