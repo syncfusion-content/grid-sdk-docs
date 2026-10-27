@@ -273,7 +273,8 @@ Prerequisites:
 <SfButton Content="Get Selected Cell Indexes" OnClick="GetSelectedCellIndexesContent" />
 <SfButton Content="Clear Selection" OnClick="ClearSelectionContent" />
 
-<SfGrid @ref="DefaultGrid" DataSource="@Orders">
+<SfGrid @ref="DefaultGrid" DataSource="@Orders" AllowSelection="true">
+    <GridSelectionSettings Type="SelectionType.Multiple" Mode="SelectionMode.Cell"></GridSelectionSettings>
     <GridColumns>
         <GridColumn Field=@nameof(OrderData.OrderID) HeaderText="Order ID" Width="120" TextAlign="TextAlign.Right"></GridColumn>
         <GridColumn Field=@nameof(OrderData.CustomerID) HeaderText="Customer ID" Width="120"></GridColumn>
@@ -763,7 +764,41 @@ Prerequisites:
 }
 {% endhighlight %}
 {% highlight c# tabtitle="OrderData.cs" %}
-internal sealed class OrderData { /* same as above */ }
+internal sealed class OrderData
+{
+    private static readonly List<OrderData> Data = new();
+
+    public OrderData(int orderID, string customerID, string shipCity, string shipName)
+    {
+        OrderID = orderID;
+        CustomerID = customerID;
+        ShipCity = shipCity;
+        ShipName = shipName;
+    }
+
+    internal static List<OrderData> GetAllRecords()
+    {
+        if (Data.Count == 0)
+        {
+            Data.Add(new OrderData(10248, "VINET", "Reims", "Vins et alcools Cheval"));
+            Data.Add(new OrderData(10249, "TOMSP", "Münster", "Toms Spezialitäten"));
+            Data.Add(new OrderData(10250, "HANAR", "Rio de Janeiro", "Hanari Carnes"));
+            Data.Add(new OrderData(10251, "VICTE", "Lyon", "Victuailles en stock"));
+            Data.Add(new OrderData(10252, "SUPRD", "Charleroi", "Suprêmes délices"));
+            Data.Add(new OrderData(10253, "HANAR", "Rio de Janeiro", "Hanari Carnes"));
+            Data.Add(new OrderData(10254, "CHOPS", "Bern", "Chop-suey Chinese"));
+            Data.Add(new OrderData(10255, "RICSU", "Genève", "Richter Supermarkt"));
+            Data.Add(new OrderData(10256, "WELLI", "Resende", "Wellington Importado"));
+        }
+
+        return Data;
+    }
+
+    public int OrderID { get; set; }
+    public string CustomerID { get; set; }
+    public string ShipCity { get; set; }
+    public string ShipName { get; set; }
+}
 {% endhighlight %}
 {% endtabs %}
 
@@ -805,7 +840,7 @@ Batch editing methods are shown in the batch section below.
 
 <p>@LastAction</p>
 
-<SfGrid @ref="DefaultGrid" DataSource="@Orders">
+<SfGrid @ref="DefaultGrid" DataSource="@Orders" AllowSelection="true">
     <GridEditSettings Mode="EditMode.Normal" AllowAdding="true" AllowEditing="true" AllowDeleting="true"></GridEditSettings>
     <GridColumns>
         <GridColumn Field=@nameof(OrderData.OrderID) HeaderText="Order ID" IsPrimaryKey="true" Width="120" TextAlign="TextAlign.Right"></GridColumn>
@@ -925,7 +960,41 @@ Prerequisites:
 }
 {% endhighlight %}
 {% highlight c# tabtitle="OrderData.cs" %}
-internal sealed class OrderData { /* same as above */ }
+internal sealed class OrderData
+{
+    private static readonly List<OrderData> Data = new();
+
+    public OrderData(int orderID, string customerID, string shipCity, string shipName)
+    {
+        OrderID = orderID;
+        CustomerID = customerID;
+        ShipCity = shipCity;
+        ShipName = shipName;
+    }
+
+    internal static List<OrderData> GetAllRecords()
+    {
+        if (Data.Count == 0)
+        {
+            Data.Add(new OrderData(10248, "VINET", "Reims", "Vins et alcools Cheval"));
+            Data.Add(new OrderData(10249, "TOMSP", "Münster", "Toms Spezialitäten"));
+            Data.Add(new OrderData(10250, "HANAR", "Rio de Janeiro", "Hanari Carnes"));
+            Data.Add(new OrderData(10251, "VICTE", "Lyon", "Victuailles en stock"));
+            Data.Add(new OrderData(10252, "SUPRD", "Charleroi", "Suprêmes délices"));
+            Data.Add(new OrderData(10253, "HANAR", "Rio de Janeiro", "Hanari Carnes"));
+            Data.Add(new OrderData(10254, "CHOPS", "Bern", "Chop-suey Chinese"));
+            Data.Add(new OrderData(10255, "RICSU", "Genève", "Richter Supermarkt"));
+            Data.Add(new OrderData(10256, "WELLI", "Resende", "Wellington Importado"));
+        }
+
+        return Data;
+    }
+
+    public int OrderID { get; set; }
+    public string CustomerID { get; set; }
+    public string ShipCity { get; set; }
+    public string ShipName { get; set; }
+}
 {% endhighlight %}
 {% endtabs %}
 
@@ -954,7 +1023,7 @@ Prerequisites:
 <SfButton Content="Show Row 8" OnClick="ScrollIntoViewContent" />
 <SfButton Content="Page Size 12" OnClick="UpdatePageSizeContent" />
 
-<SfGrid @ref="DefaultGrid" DataSource="@Orders" AllowPaging="true" Height="300">
+<SfGrid @ref="DefaultGrid" DataSource="@Orders" AllowPaging="true" EnableVirtualization="true" Height="300">
     <GridPageSettings PageSize="5"></GridPageSettings>
     <GridColumns>
         <GridColumn Field=@nameof(OrderData.OrderID) HeaderText="Order ID" Width="120" TextAlign="TextAlign.Right"></GridColumn>
@@ -1064,7 +1133,41 @@ Prerequisites:
 }
 {% endhighlight %}
 {% highlight c# tabtitle="OrderData.cs" %}
-internal sealed class OrderData { /* same as above */ }
+internal sealed class OrderData
+{
+    private static readonly List<OrderData> Data = new();
+
+    public OrderData(int orderID, string customerID, string shipCity, string shipName)
+    {
+        OrderID = orderID;
+        CustomerID = customerID;
+        ShipCity = shipCity;
+        ShipName = shipName;
+    }
+
+    internal static List<OrderData> GetAllRecords()
+    {
+        if (Data.Count == 0)
+        {
+            Data.Add(new OrderData(10248, "VINET", "Reims", "Vins et alcools Cheval"));
+            Data.Add(new OrderData(10249, "TOMSP", "Münster", "Toms Spezialitäten"));
+            Data.Add(new OrderData(10250, "HANAR", "Rio de Janeiro", "Hanari Carnes"));
+            Data.Add(new OrderData(10251, "VICTE", "Lyon", "Victuailles en stock"));
+            Data.Add(new OrderData(10252, "SUPRD", "Charleroi", "Suprêmes délices"));
+            Data.Add(new OrderData(10253, "HANAR", "Rio de Janeiro", "Hanari Carnes"));
+            Data.Add(new OrderData(10254, "CHOPS", "Bern", "Chop-suey Chinese"));
+            Data.Add(new OrderData(10255, "RICSU", "Genève", "Richter Supermarkt"));
+            Data.Add(new OrderData(10256, "WELLI", "Resende", "Wellington Importado"));
+        }
+
+        return Data;
+    }
+
+    public int OrderID { get; set; }
+    public string CustomerID { get; set; }
+    public string ShipCity { get; set; }
+    public string ShipName { get; set; }
+}
 {% endhighlight %}
 {% endtabs %}
 
@@ -1117,7 +1220,41 @@ Prerequisites:
 }
 {% endhighlight %}
 {% highlight c# tabtitle="OrderData.cs" %}
-internal sealed class OrderData { /* same as above */ }
+internal sealed class OrderData
+{
+    private static readonly List<OrderData> Data = new();
+
+    public OrderData(int orderID, string customerID, string shipCity, string shipName)
+    {
+        OrderID = orderID;
+        CustomerID = customerID;
+        ShipCity = shipCity;
+        ShipName = shipName;
+    }
+
+    internal static List<OrderData> GetAllRecords()
+    {
+        if (Data.Count == 0)
+        {
+            Data.Add(new OrderData(10248, "VINET", "Reims", "Vins et alcools Cheval"));
+            Data.Add(new OrderData(10249, "TOMSP", "Münster", "Toms Spezialitäten"));
+            Data.Add(new OrderData(10250, "HANAR", "Rio de Janeiro", "Hanari Carnes"));
+            Data.Add(new OrderData(10251, "VICTE", "Lyon", "Victuailles en stock"));
+            Data.Add(new OrderData(10252, "SUPRD", "Charleroi", "Suprêmes délices"));
+            Data.Add(new OrderData(10253, "HANAR", "Rio de Janeiro", "Hanari Carnes"));
+            Data.Add(new OrderData(10254, "CHOPS", "Bern", "Chop-suey Chinese"));
+            Data.Add(new OrderData(10255, "RICSU", "Genève", "Richter Supermarkt"));
+            Data.Add(new OrderData(10256, "WELLI", "Resende", "Wellington Importado"));
+        }
+
+        return Data;
+    }
+
+    public int OrderID { get; set; }
+    public string CustomerID { get; set; }
+    public string ShipCity { get; set; }
+    public string ShipName { get; set; }
+}
 {% endhighlight %}
 {% endtabs %}
 
@@ -1155,7 +1292,7 @@ Prerequisites:
 
 <p>@InfoOutput</p>
 
-<SfGrid @ref="DefaultGrid" DataSource="@Orders">
+<SfGrid @ref="DefaultGrid" DataSource="@Orders" AllowReordering="true">
     <GridColumns>
         <GridColumn Field=@nameof(OrderData.OrderID) HeaderText="Order ID" Width="120" TextAlign="TextAlign.Right"></GridColumn>
         <GridColumn Field=@nameof(OrderData.CustomerID) HeaderText="Customer ID" Width="120"></GridColumn>
@@ -1178,7 +1315,40 @@ Prerequisites:
 }
 {% endhighlight %}
 {% highlight c# tabtitle="OrderData.cs" %}
-internal sealed class OrderData { /* same as above */ }
+internal sealed class OrderData
+{
+    private static readonly List<OrderData> Data = new();
+
+    public OrderData(int orderID, string customerID, string shipCity, string shipName)
+    {
+        OrderID = orderID;
+        CustomerID = customerID;
+        ShipCity = shipCity;
+        ShipName = shipName;
+    }
+
+    internal staal static List<OrderData> GetAllReco    {
+        if (Data.Count == 0)
+        {
+            Data.Add(new OrderData(10248, "VINET", "Reims", "Vins et alcools Cheval"));
+            Data.Add(new OrderData(10249, "TOMSP", "Münster", "Toms Spezialitäten"));
+            Data.Add(new OrderData(10250, "HANAR", "Rio de Janeiro", "Hanari Carnes"));
+            Data.Add(new OrderData(10251, "VICTE", "Lyon", "Victuailles en stock"));
+            Data.Add(new OrderData(10252, "SUPRD", "Charleroi", "Suprêmes délices"));
+            Data.Add(new OrderData(10253, "HANAR", "Rio de Janeiro", "Hanari Carnes"));
+            Data.Add(new OrderData(10254, "CHOPS", "Bern", "Chop-suey Chinese"));
+            Data.Add(new OrderData(10255, "RICSU", "Genève", "Richter Supermarkt"));
+            Data.Add(new OrderData(10256, "WELLI", "Resende", "Wellington Importado"));
+        }
+
+        return Data;
+    }
+
+    public int OrderID { get; set; }
+    public string CustomerID { get; set; }
+    public string ShipCity { get; set; }
+    public string ShipName { get; set; }
+}
 {% endhighlight %}
 {% endtabs %}
 
@@ -1255,7 +1425,41 @@ Prerequisites:
 }
 {% endhighlight %}
 {% highlight c# tabtitle="OrderData.cs" %}
-internal sealed class OrderData { /* same as above */ }
+internal sealed class OrderData
+{
+    private static readonly List<OrderData> Data = new();
+
+    public OrderData(int orderID, string customerID, string shipCity, string shipName)
+    {
+        OrderID = orderID;
+        CustomerID = customerID;
+        ShipCity = shipCity;
+        ShipName = shipName;
+    }
+
+    internal static List<OrderData> GetAllRecords()
+    {
+        if (Data.Count == 0)
+        {
+            Data.Add(new OrderData(10248, "VINET", "Reims", "Vins et alcools Cheval"));
+            Data.Add(new OrderData(10249, "TOMSP", "Münster", "Toms Spezialitäten"));
+            Data.Add(new OrderData(10250, "HANAR", "Rio de Janeiro", "Hanari Carnes"));
+            Data.Add(new OrderData(10251, "VICTE", "Lyon", "Victuailles en stock"));
+            Data.Add(new OrderData(10252, "SUPRD", "Charleroi", "Suprêmes délices"));
+            Data.Add(new OrderData(10253, "HANAR", "Rio de Janeiro", "Hanari Carnes"));
+            Data.Add(new OrderData(10254, "CHOPS", "Bern", "Chop-suey Chinese"));
+            Data.Add(new OrderData(10255, "RICSU", "Genève", "Richter Supermarkt"));
+            Data.Add(new OrderData(10256, "WELLI", "Resende", "Wellington Importado"));
+        }
+
+        return Data;
+    }
+
+    public int OrderID { get; set; }
+    public string CustomerID { get; set; }
+    public string ShipCity { get; set; }
+    public string ShipName { get; set; }
+}
 {% endhighlight %}
 {% endtabs %}
 
@@ -1310,7 +1514,41 @@ Prerequisites:
 }
 {% endhighlight %}
 {% highlight c# tabtitle="OrderData.cs" %}
-internal sealed class OrderData { /* same as above */ }
+internal sealed class OrderData
+{
+    private static readonly List<OrderData> Data = new();
+
+    public OrderData(int orderID, string customerID, string shipCity, string shipName)
+    {
+        OrderID = orderID;
+        CustomerID = customerID;
+        ShipCity = shipCity;
+        ShipName = shipName;
+    }
+
+    internal static List<OrderData> GetAllRecords()
+    {
+        if (Data.Count == 0)
+        {
+            Data.Add(new OrderData(10248, "VINET", "Reims", "Vins et alcools Cheval"));
+            Data.Add(new OrderData(10249, "TOMSP", "Münster", "Toms Spezialitäten"));
+            Data.Add(new OrderData(10250, "HANAR", "Rio de Janeiro", "Hanari Carnes"));
+            Data.Add(new OrderData(10251, "VICTE", "Lyon", "Victuailles en stock"));
+            Data.Add(new OrderData(10252, "SUPRD", "Charleroi", "Suprêmes délices"));
+            Data.Add(new OrderData(10253, "HANAR", "Rio de Janeiro", "Hanari Carnes"));
+            Data.Add(new OrderData(10254, "CHOPS", "Bern", "Chop-suey Chinese"));
+            Data.Add(new OrderData(10255, "RICSU", "Genève", "Richter Supermarkt"));
+            Data.Add(new OrderData(10256, "WELLI", "Resende", "Wellington Importado"));
+        }
+
+        return Data;
+    }
+
+    public int OrderID { get; set; }
+    public string CustomerID { get; set; }
+    public string ShipCity { get; set; }
+    public string ShipName { get; set; }
+}
 {% endhighlight %}
 {% endtabs %}
 
@@ -1341,7 +1579,7 @@ Prerequisites:
 <SfButton Content="Show Message" OnClick="MessageContent" />
 <SfButton Content="Load WebMCP Tools" OnClick="WebMcpContent" />
 
-<SfGrid @ref="DefaultGrid" DataSource="@Orders" Toolbar="@(new List<string>() { "Add", "Edit", "Delete" })">
+<SfGrid @ref="DefaultGrid" DataSource="@Orders" Toolbar="@(new List<string>() { "Add", "Edit", "Delete" })" EnableWebMcp="true">
     <GridColumns>
         <GridColumn Field=@nameof(OrderData.OrderID) HeaderText="Order ID" Width="120" TextAlign="TextAlign.Right"></GridColumn>
         <GridColumn Field=@nameof(OrderData.CustomerID) HeaderText="Customer ID" Width="120"></GridColumn>
@@ -1361,10 +1599,45 @@ Prerequisites:
 }
 {% endhighlight %}
 {% highlight c# tabtitle="OrderData.cs" %}
-internal sealed class OrderData { /* same as above */ }
+internal sealed class OrderData
+{
+    private static readonly List<OrderData> Data = new();
+
+    public OrderData(int orderID, string customerID, string shipCity, string shipName)
+    {
+        OrderID = orderID;
+        CustomerID = customerID;
+        ShipCity = shipCity;
+        ShipName = shipName;
+    }
+
+    internal static List<OrderData> GetAllRecords()
+    {
+        if (Data.Count == 0)
+        {
+            Data.Add(new OrderData(10248, "VINET", "Reims", "Vins et alcools Cheval"));
+            Data.Add(new OrderData(10249, "TOMSP", "Münster", "Toms Spezialitäten"));
+            Data.Add(new OrderData(10250, "HANAR", "Rio de Janeiro", "Hanari Carnes"));
+            Data.Add(new OrderData(10251, "VICTE", "Lyon", "Victuailles en stock"));
+            Data.Add(new OrderData(10252, "SUPRD", "Charleroi", "Suprêmes délices"));
+            Data.Add(new OrderData(10253, "HANAR", "Rio de Janeiro", "Hanari Carnes"));
+            Data.Add(new OrderData(10254, "CHOPS", "Bern", "Chop-suey Chinese"));
+            Data.Add(new OrderData(10255, "RICSU", "Genève", "Richter Supermarkt"));
+            Data.Add(new OrderData(10256, "WELLI", "Resende", "Wellington Importado"));
+        }
+
+        return Data;
+    }
+
+    public int OrderID { get; set; }
+    public string CustomerID { get; set; }
+    public string ShipCity { get; set; }
+    public string ShipName { get; set; }
+}
 {% endhighlight %}
 {% endtabs %}
 
 {% previewsample "https://blazorplayground.syncfusion.com/embed/TODO?appbar=false&editor=false&result=true&errorlist=false&theme=fluent2" %}
 
 API reference: https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.SfGrid-1.html
+.html
