@@ -1,15 +1,15 @@
 ---
 layout: post
 title: Methods in Blazor DataGrid | Syncfusion®
-description: Learn about the public methods of the Blazor Data Grid, grouped by task, with practical examples, prerequisites, and usage notes.
+description: Learn about the public methods of the Blazor DataGrid, grouped by task, with practical examples, prerequisites, and usage notes.
 platform: grid-sdk
 control: DataGrid
 documentation: ug
 ---
 
-# Methods in Blazor Data Grid
+# Methods in Blazor DataGrid
 
-Use `@ref` to access an `SfGrid<TValue>` instance and call its methods after the grid has rendered. You can call the methods from a button click handler or `OnAfterRenderAsync`. All methods in this page are asynchronous and must be awaited.
+Use `@ref` to access an `SfGrid<TValue>` instance and call its methods after the DataGrid has rendered. You can call the methods from a button click handler or `OnAfterRenderAsync`. All methods in this page are asynchronous and must be awaited.
 
 ## Quick index
 
@@ -35,14 +35,14 @@ Use `@ref` to access an `SfGrid<TValue>` instance and call its methods after the
 
 ## Export and print
 
-Use these methods to print the grid or export it to Excel, CSV, or PDF. The export methods reflect the current grid state.
+Use these methods to print the DataGrid or export it to Excel, CSV, or PDF. The export methods reflect the current DataGrid state.
 
 | Method | Description | Parameters | Returns |
 |--------|-------------|------------|---------|
-| `PrintAsync` | Opens the browser print dialog for the grid content. | None | `Task` |
-| `ExportToExcelAsync` | Exports the grid to an Excel file. | `ExcelExportProperties excelExportProperties = null` | `Task` |
-| `ExportToPdfAsync` | Exports the grid to a PDF file. | `PdfExportProperties pdfExportProperties = null` | `Task` |
-| `ExportToCsvAsync` | Exports the grid to a CSV file. | `ExcelExportProperties excelExportProperties = null` | `Task` |
+| `PrintAsync` | Opens the browser print dialog for the DataGrid content. | None | `Task` |
+| `ExportToExcelAsync` | Exports the DataGrid to an Excel file. | `ExcelExportProperties excelExportProperties = null` | `Task` |
+| `ExportToPdfAsync` | Exports the DataGrid to a PDF file. | `PdfExportProperties pdfExportProperties = null` | `Task` |
+| `ExportToCsvAsync` | Exports the DataGrid to a CSV file. | `ExcelExportProperties excelExportProperties = null` | `Task` |
 
 Prerequisites:
 - Set `AllowExcelExport="true"` for Excel and CSV export.
@@ -153,7 +153,7 @@ internal sealed class OrderData
 
 
 
-> The export methods use the current grid state.
+> The export methods use the current DataGrid state.
 
 ## Grouping
 
@@ -169,7 +169,7 @@ Use the grouping methods to group and ungroup columns, or to expand and collapse
 
 Prerequisites:
 - Set `AllowGrouping="true"`.
-- Call the methods after the grid renders.
+- Call the methods after the DataGrid renders.
 
 {% tabs %}
 {% highlight razor tabtitle="Index.razor" %}
@@ -263,7 +263,7 @@ internal sealed class OrderData
 
 ## Selection
 
-Use these methods to select rows or cells, clear the selection, and read the selected records or indexes. They work when grid selection is enabled.
+Use these methods to select rows or cells, clear the selection, and read the selected records or indexes. They work when DataGrid selection is enabled.
 
 | Method | Description | Parameters | Returns |
 |--------|-------------|------------|---------|
@@ -397,7 +397,7 @@ Use the search methods to find text, move between search highlights, and clear t
 
 | Method | Description | Parameters | Returns |
 |--------|-------------|------------|---------|
-| `SearchAsync` | Searches the grid for the supplied text. | `string searchString` | `Task` |
+| `SearchAsync` | Searches the DataGrid for the supplied text. | `string searchString` | `Task` |
 | `FindHighlightAsync` | Highlights matches for a search text. | `string findKey` | `Task` |
 | `FindNextHighlightAsync` | Moves to the next highlight. | None | `Task` |
 | `FindPreviousHighlightAsync` | Moves to the previous highlight. | None | `Task` |
@@ -406,7 +406,7 @@ Use the search methods to find text, move between search highlights, and clear t
 
 Prerequisites:
 - Set `AllowSearching="true"`.
-- Use the search box or call the methods after the grid renders.
+- Use the search box or call the methods after the DataGrid renders.
 
 {% tabs %}
 {% highlight razor tabtitle="Index.razor" %}
@@ -626,7 +626,7 @@ internal sealed class OrderData
 
 ## State persistence
 
-Use these methods to save, restore, or clear the persisted grid state.
+Use these methods to save, restore, or clear the persisted DataGrid state.
 
 | Method | Description | Parameters | Returns |
 |--------|-------------|------------|---------|
@@ -732,12 +732,12 @@ internal sealed class OrderData
 
 ## Clipboard
 
-Use the clipboard methods to copy or paste grid data.
+Use the clipboard methods to copy or paste DataGrid data.
 
 | Method | Description | Parameters | Returns |
 |--------|-------------|------------|---------|
 | `CopyAsync` | Copies the selected rows or cells to the clipboard. | `bool? withHeader = null` | `Task` |
-| `PasteAsync` | Pastes clipboard data into the grid. | None | `Task` |
+| `PasteAsync` | Pastes clipboard data into the DataGrid. | None | `Task` |
 
 Prerequisites:
 - Set `AllowClipboard="true"`.
@@ -830,13 +830,13 @@ internal sealed class OrderData
 
 ## Cell merging
 
-Use these methods to merge and unmerge grid cells.
+Use these methods to merge and unmerge DataGrid cells.
 
 | Method | Description | Parameters | Returns |
 |--------|-------------|------------|---------|
 | `MergeCellsAsync` | Merges a range of cells. | `MergeCellInfo info` or `IEnumerable<MergeCellInfo> infos` | `Task` |
 | `UnmergeCellsAsync` | Unmerges merged cells by anchor cell. | `UnmergeCellInfo info` or `IEnumerable<UnmergeCellInfo> infos` | `Task` |
-| `UnmergeAllAsync` | Unmerges all merged cells in the grid. | None | `Task` |
+| `UnmergeAllAsync` | Unmerges all merged cells in the DataGrid. | None | `Task` |
 
 Restrictions:
 - Works on the current visible view only.
@@ -940,13 +940,13 @@ internal sealed class OrderData
 
 ## Add, edit and delete
 
-Use these methods to add a new row, begin editing, save or cancel the edit, and remove a record. These actions cover the basic create, update, and delete operations of a CRUD grid.
+Use these methods to add a new row, begin editing, save or cancel the edit, and remove a record. These actions cover the basic create, update, and delete operations of a CRUD DataGrid.
 
 The add and delete methods have overloads, so the examples below show both the simple and the data-driven forms.
 
 | Method | Description | Parameters | Returns |
 |--------|-------------|------------|---------|
-| `AddRecordAsync` | Starts adding a new row in the grid. | None or `TValue data, int? index = null` | `Task` |
+| `AddRecordAsync` | Starts adding a new row in the DataGrid. | None or `TValue data, int? index = null` | `Task` |
 | `StartEditAsync` | Starts editing the selected row. | None | `Task` |
 | `EndEditAsync` | Saves the current edit. | None | `Task` |
 | `CloseEditAsync` | Cancels the current edit. | None | `Task` |
@@ -1068,7 +1068,7 @@ Use these methods when batch editing is enabled and you want to update cells, in
 | `GetEditContextAsync` | Gets the current edit context. | None | `Task<EditContext>` |
 | `UpdateCellAsync` | Updates one cell without opening edit mode. | `int rowIndex, string field, object value` | `Task` |
 | `UpdateRowAsync` | Replaces a row without edit mode. | `int index, TValue data` | `Task` |
-| `ApplyBatchChangesAsync` | Applies a batch of added, edited, and deleted records to the grid UI. | `BatchChanges<TValue> batchChanges` | `Task` |
+| `ApplyBatchChangesAsync` | Applies a batch of added, edited, and deleted records to the DataGrid UI. | `BatchChanges<TValue> batchChanges` | `Task` |
 | `GetBatchChangesAsync` | Gets pending batch changes. | None | `Task<BatchChanges<TValue>>` |
 | `IsDirtyAsync` | Checks whether batch changes exist. | None | `Task<bool>` |
 | `ClearUndoRedoAsync` | Clears the undo and redo history. | None | `Task` |
@@ -1305,7 +1305,7 @@ internal sealed class OrderData
 
 ## Detail rows
 
-Use these methods when your grid shows master-detail rows. They expand or collapse detail rows from code, for example in a button click handler.
+Use these methods when your DataGrid shows master-detail rows. They expand or collapse detail rows from code, for example in a button click handler.
 
 | Method | Description | Parameters | Returns |
 |--------|-------------|------------|---------|
@@ -1314,7 +1314,7 @@ Use these methods when your grid shows master-detail rows. They expand or collap
 | `ExpandCollapseDetailRowAsync` | Expands or collapses one detail row. | `string fieldName, object value` or `TValue data` | `Task` |
 
 Prerequisites:
-- Add a detail template to the grid.
+- Add a detail template to the DataGrid.
 - Use a field and value that match the current row data.
 
 {% tabs %}
@@ -1408,7 +1408,7 @@ internal sealed class OrderData
 
 ## Column visibility and chooser
 
-Use these methods to hide or show columns and open the column chooser to customize the grid view.
+Use these methods to hide or show columns and open the column chooser to customize the DataGrid view.
 
 | Method | Description | Parameters | Returns |
 |--------|-------------|------------|---------|
@@ -1511,7 +1511,7 @@ internal sealed class OrderData
 
 ## Column layout and reorder
 
-Use these methods to resize or move columns. Resizing and reordering columns makes the grid easier to scan.
+Use these methods to resize or move columns. Resizing and reordering columns makes the DataGrid easier to scan.
 
 | Method | Description | Parameters | Returns |
 |--------|-------------|------------|---------|
@@ -1623,7 +1623,7 @@ internal sealed class OrderData
 
 ## Column and data information
 
-Use these methods when you need to read the current grid state from code. They are useful for advanced scenarios that depend on the current columns, records, and primary keys.
+Use these methods when you need to read the current DataGrid state from code. They are useful for advanced scenarios that depend on the current columns, records, and primary keys.
 
 | Method | Description | Parameters | Returns |
 |--------|-------------|------------|---------|
@@ -1633,7 +1633,7 @@ Use these methods when you need to read the current grid state from code. They a
 | `GetColumnFieldNamesAsync` | Gets bound column field names. | None | `Task<List<string>>` |
 | `GetColumnIndexByFieldAsync` | Gets a column index by field name. | `string fieldName` | `Task<int>` |
 | `GetColumnIndexByUidAsync` | Gets a column index by UID. | `string uid` | `Task<int>` |
-| `GetColumnsAsync` | Gets the grid columns. | `bool? isRefresh = null` | `Task<List<GridColumn>>` |
+| `GetColumnsAsync` | Gets the DataGrid columns. | `bool? isRefresh = null` | `Task<List<GridColumn>>` |
 | `GetCurrentViewRecordsAsync` | Gets the visible records. | None | `Task<List<TValue>>` |
 | `GetForeignKeyColumnsAsync` | Gets foreign key columns. | None | `Task<List<GridColumn>>` |
 | `GetHiddenColumnsAsync` | Gets hidden columns. | None | `Task<List<GridColumn>>` |
@@ -1750,14 +1750,14 @@ internal sealed class OrderData
 
 ## Refresh and spinner
 
-Use these methods to redraw the grid or show a loading indicator while work is running.
+Use these methods to redraw the DataGrid or show a loading indicator while work is running.
 
 | Method | Description | Parameters | Returns |
 |--------|-------------|------------|---------|
 | `HideSpinnerAsync` | Hides the loading spinner. | None | `Task` |
-| `Refresh` | Refreshes the grid header and content. | `bool isModelRefresh = false` | `Task` |
-| `RefreshColumnsAsync` | Refreshes the grid after external column changes. | None | `Task` |
-| `RefreshHeaderAsync` | Refreshes the grid header. | None | `Task` |
+| `Refresh` | Refreshes the DataGrid header and content. | `bool isModelRefresh = false` | `Task` |
+| `RefreshColumnsAsync` | Refreshes the DataGrid after external column changes. | None | `Task` |
+| `RefreshHeaderAsync` | Refreshes the DataGrid header. | None | `Task` |
 | `ShowSpinnerAsync` | Shows the spinner. | None | `Task` |
 
 Prerequisites:
@@ -1856,25 +1856,25 @@ internal sealed class OrderData
 
 ## Toolbar, focus and other
 
-These methods are less common, but they are useful when you need to control toolbar buttons, focus the grid, or use Web MCP integration.
+These methods are less common, but they are useful when you need to control toolbar buttons, focus the DataGrid, or use Web MCP integration.
 
 | Method | Description | Parameters | Returns |
 |--------|-------------|------------|---------|
 | `EnableToolbarItemsAsync` | Enables or disables toolbar items. | `List<string> items`, `bool isEnable` | `Task` |
-| `FocusAsync` | Focuses the grid element. | None | `Task` |
-| `GetWebMcpToolsAsync` | Gets Web MCP tools for the grid. | `IEnumerable<string>? toolNames = null` | `Task<IReadOnlyList<IGridWebMcpTool>>` |
+| `FocusAsync` | Focuses the DataGrid element. | None | `Task` |
+| `GetWebMcpToolsAsync` | Gets Web MCP tools for the DataGrid. | `IEnumerable<string>? toolNames = null` | `Task<IReadOnlyList<IGridWebMcpTool>>` |
 | `UpdateExternalMessageAsync` | Updates the external message text. | `string message` | `Task` |
 
 Prerequisites:
 - Set `EnableWebMcp="true"` for `GetWebMcpToolsAsync()` to enable Web MCP support.
-- The grid must be rendered before calling these methods.
+- The DataGrid must be rendered before calling these methods.
 
 {% tabs %}
 {% highlight razor tabtitle="Index.razor" %}
 @using Syncfusion.Blazor.Grids
 @using Syncfusion.Blazor.Buttons
 
-<SfButton Content="Focus Grid" OnClick="FocusContent" />
+<SfButton Content="Focus DataGrid" OnClick="FocusContent" />
 <SfButton Content="Enable Toolbar Items" OnClick="ToolbarContent" />
 <SfButton Content="Show Message" OnClick="MessageContent" />
 <SfButton Content="Load WebMCP Tools" OnClick="WebMcpContent" />
@@ -1894,7 +1894,7 @@ Prerequisites:
     protected override void OnInitialized() => Orders = OrderData.GetAllRecords();
     private async Task FocusContent() => await DefaultGrid.FocusAsync();
     private async Task ToolbarContent() => await DefaultGrid.EnableToolbarItemsAsync(new List<string> { "Add", "Edit" }, true);
-    private async Task MessageContent() => await DefaultGrid.UpdateExternalMessageAsync("Grid is ready.");
+    private async Task MessageContent() => await DefaultGrid.UpdateExternalMessageAsync("DataGrid is ready.");
     private async Task WebMcpContent() => _ = await DefaultGrid.GetWebMcpToolsAsync();
 }
 {% endhighlight %}
@@ -1955,4 +1955,3 @@ internal sealed class OrderData
 {% endtabs %}
 
 
-API reference: https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.SfGrid-1.html
