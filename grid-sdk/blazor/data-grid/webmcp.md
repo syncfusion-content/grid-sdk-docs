@@ -22,25 +22,25 @@ Ensure the following before integrating WebMCP:
 
 ## Getting Started
 
-### Step 1: Configure the Browser
+### Step 1: Configure the browser
 
 Before using WebMCP in a local environment, enable the feature flag and install the browser extension:
 
-1. **Enable WebMCP Flag**
+1. **Enable WebMCP flag**
    - Enable WebMCP for testing via `chrome://flags/`
    - Click **"Relaunch"** to restart Chrome
 
-2. **Install WebMCP Extension**
+2. **Install WebMCP extension**
    - Search for **"WebMCP - Model Context Tool Inspector"** in [Chrome Web Store](https://chromewebstore.google.com/detail/webmcp-model-context-tool/gbpdfapgefenggkahomfgkhfehlcenpd)
    - Click **"Add to Chrome"**
    - Pin the extension icon to the toolbar.
 
-3. **Configure Gemini API Key**
+3. **Configure Gemini API key**
    - Visit [Google AI Studio](https://aistudio.google.com/app/apikey) to create or copy an API key
    - Open the WebMCP extension → paste the API key
    - Extension is now ready to use
 
-### Step 2: Import the Required Namespace
+### Step 2: Import the required namespace
 
 Add the following namespace to the Razor component:
 
@@ -61,7 +61,7 @@ Set the `EnableWebMcp` property to `true` in the SfGrid configuration:
 </SfGrid>
 ```
 
-### Step 4: Register Tools
+### Step 4: Register tools
 
 Set the `GridWebMcpSettings` property to register the available tools in the control level:
 
@@ -82,7 +82,7 @@ Set the `GridWebMcpSettings` property to register the available tools in the con
 </SfGrid>
 ```
 
-### Step 5: Test the Setup
+### Step 5: Test the setup
 
 **Test with a Local Setup**
 - Run the application locally and open it in a Chromium-based browser.
@@ -111,24 +111,27 @@ Export the currently filtered grid data to an Excel file named "SalesReport"
 {% endpromptcard %}
 {% endpromptcards %}
 
-## Tool Reference
+## Tool reference
 
 WebMCP tools are organized by category. The tables below provide an overview of all available tools. For complete input/output schemas, call `GetWebMcpToolsAsync()` programmatically.
 
-## Data Retrieval Tools
+**Data retrieval tools**
 
 | Tool Name | Type | Condition | Description |
 |-----------|------|-----------|-------------|
 | getSelectedRecords | Read | Always | Get selected row records from the grid. |
 | getSelectedRowIndexes | Read | Always | Get indexes of selected rows. |
+| getSelectedRowCellIndexes | Read | Always | Get indexes of selected cells by row and column. |
 | getFilteredRecords | Read | Always | Get records matching current filters. |
 | getCurrentViewRecords | Read | Always | Get visible records after sort, filter, and grouping. |
 | getColumnByField | Read | Always | Get column definition by field name. |
 | getVisibleColumns | Read | Always | Get list of visible columns. |
+| getHiddenColumns | Read | Always | Get list of hidden columns. |
+| getColumnByUid | Read | Always | Get column definition by its unique identifier. |
 
 ---
 
-## Filtering Tools
+**Filtering tools**
 
 | Tool Name | Type | Condition | Description |
 |-----------|------|-----------|-------------|
@@ -137,7 +140,7 @@ WebMCP tools are organized by category. The tables below provide an overview of 
 
 ---
 
-## Navigation Tools
+**Navigation tools**
 
 | Tool Name | Type | Condition | Description |
 |-----------|------|-----------|-------------|
@@ -145,11 +148,12 @@ WebMCP tools are organized by category. The tables below provide an overview of 
 
 ---
 
-## Selection Tools
+**Selection tools**
 
 | Tool Name | Type | Condition | Description |
 |-----------|------|-----------|-------------|
 | selectRows | Write | Always | Select one or more rows by positional index or field-value lookup. Supports both single and multiple selection modes. |
+| selectRowsByRange | Write | Always | Select rows within a specified range. |
 | selectCell | Write | Always | Select a single cell by row and column 1-based indexes. Requires SelectionMode.Cell or Both. |
 | selectCells | Write | Always | Select multiple cells by (row, column) 1-based indexes. Each entry includes rowIndex and cellIndex. |
 | selectCellsByRange | Write | Always | Select a rectangular range of cells from start to end index (1-based, inclusive). |
@@ -158,27 +162,31 @@ WebMCP tools are organized by category. The tables below provide an overview of 
 
 ---
 
-## Data Editing Tools
+**Editing tools**
 
 | Tool Name | Type | Condition | Description |
 |-----------|------|-----------|-------------|
 | setCellValue | Write | Always | Set one cell by primary key and field, or apply bulk cell updates. The grid must define a primary-key column. |
 | setRowData | Write | Always | Update entire row data by key and rowData object. Set preventDataUpdate=true to refresh UI without updating data source. |
+| editCell | Write | Always | Place a cell into edit mode. |
+| saveCell | Write | Always | Save the current cell edit. |
 | crudLifecycle | Write | Always | Execute CRUD lifecycle actions: startEdit, endEdit, closeEdit, addRecord, deleteRecord. |
 | deleteRow | Write | Requires AllowDeleting=true | Delete a row from the data view using its 1-based data-row index. |
+| updateGridData | Write | Always | Update row or cell data without entering edit mode. |
 
 ---
 
-## Export Tools
+**Export tools**
 
 | Tool Name | Type | Condition | Description |
 |-----------|------|-----------|-------------|
 | excelExport | Read | Always | Export grid data as xlsx or csv. Optional asMemoryStream=true returns base64 bytes instead of triggering browser download. |
 | pdfExport | Read | Requires AllowPdfExport=true | Export the grid to PDF with optional settings for page selection, headers, and column overflow. |
+| printGrid | Read | Always | Print the grid with optional page and formatting settings. |
 
 ---
 
-## Rendering Control Tools
+**Rendering control tools**
 
 | Tool Name | Type | Condition | Description |
 |-----------|------|-----------|-------------|
@@ -186,7 +194,7 @@ WebMCP tools are organized by category. The tables below provide an overview of 
 
 ---
 
-## Sorting Tools
+**Sorting tools**
 
 | Tool Name | Type | Condition | Description |
 |-----------|------|-----------|-------------|
@@ -198,7 +206,7 @@ WebMCP tools are organized by category. The tables below provide an overview of 
 
 ---
 
-## Search & Highlight Tools
+**Search & Highlight tools**
 
 | Tool Name | Type | Condition | Description |
 |-----------|------|-----------|-------------|
@@ -207,40 +215,48 @@ WebMCP tools are organized by category. The tables below provide an overview of 
 
 ---
 
-## Grouping Tools
+**Grouping tools**
 
 | Tool Name | Type | Condition | Description |
 |-----------|------|-----------|-------------|
 | groupColumn | Write | Requires AllowGrouping=true | Group grid by a column. |
+| ungroupColumn | Write | Requires AllowGrouping=true | Remove grouping from the specified column. |
+| expandAllGroups | Write | Requires AllowGrouping=true | Expand all grouped rows. |
+| collapseAllGroups | Write | Requires AllowGrouping=true | Collapse all grouped rows. |
+| clearGrouping | Write | Requires AllowGrouping=true | Remove all grouping applied to the grid. |
 
 ---
 
-## Batch Editing Tools
+**Batch editing tools**
 
 | Tool Name | Type | Condition | Description |
 |-----------|------|-----------|-------------|
-| batchEdit | Write | Requires EditMode.Batch | Execute batch edit actions: inspect (get dirty rows), isDirty (check state), updateRow (set cell), apply (save changes). |
+| batchEditWorkflow | Write | Requires EditMode.Batch | Execute batch edit actions: inspect (get dirty rows), isDirty (check state), updateRow (set cell), apply (save changes). |
 
 ---
 
-## State Management Tools
+**State management tools**
 
 | Tool Name | Type | Condition | Description |
 |-----------|------|-----------|-------------|
-| undoRedo | Write | Requires EnableUndoRedo=true | Manage undo/redo: action='undoAll' undoes all changes, 'redoAll' redoes all, 'clear' clears the stack. |
-| persistence | Write | Always | Get, set, or reset grid state persistence. action='get' (read current state), 'set' (apply saved state), 'reset' (clear saved state). |
+| undoRedoHistory | Write | Requires EnableUndoRedo=true | Manage undo/redo: action='undoAll' undoes all changes, 'redoAll' redoes all, 'clear' clears the stack. |
+| persistGridState | Write | Always | Get, set, or reset grid state persistence. action='get' (read current state), 'set' (apply saved state), 'reset' (clear saved state). |
 
 ---
 
-## Column Reordering Tools
+**Column reordering tools**
 
 | Tool Name | Type | Condition | Description |
 |-----------|------|-----------|-------------|
-| reorderColumns | Write | Requires AllowReordering=true | Reorder columns by field name. Pass fromFieldName and toFieldName for single move, or fromFieldNames (array) and toFieldName for bulk moves. |
+| reorderColumn | Write | Requires AllowReordering=true | Reorder a single column relative to another column. |
+| reorderColumns | Write | Requires AllowReordering=true | Reorder multiple columns by field name. Pass fromFieldName and toFieldName for single move, or fromFieldNames (array) and toFieldName for bulk moves. |
+| reorderColumnByIndex | Write | Requires AllowReordering=true | Reorder a column from one index to another. |
+| reorderColumnByTargetIndex | Write | Requires AllowReordering=true | Reorder a column to the specified target index. |
+| reorderRow | Write | Always | Reorder a row within the current view. |
 
 ---
 
-## Column Visibility Tools
+**Column Visibility tools**
 
 | Tool Name | Type | Condition | Description |
 |-----------|------|-----------|-------------|
@@ -249,11 +265,80 @@ WebMCP tools are organized by category. The tables below provide an overview of 
 
 ---
 
-## Column Resizing Tools
+**Column management tools**
 
 | Tool Name | Type | Condition | Description |
 |-----------|------|-----------|-------------|
-| setColumnWidth | Write | Always | Set the width of a column by field name. Width is in pixels (e.g., 200). |
+| autoFitColumns | Write | Always | Automatically adjust column widths to fit their content. |
+| getColumnIndexByField | Read | Always | Get the index of a column by its field name. |
+| getUidByColumnField | Read | Always | Get the unique identifier of a column by its field name. |
+| getColumnByUid | Read | Always | Get column definition by its unique identifier. |
+| getColumnFieldNames | Read | Always | Get the field names of all grid columns. |
+| getCellValue | Read | Always | Get the formatted value of a cell in the current view. |
+
+---
+
+**ColumnChooser tools**
+
+| Tool Name | Type | Condition | Description |
+|-----------|------|-----------|-------------|
+| openColumnChooser | Write | Always | Open the column chooser dialog. |
+
+---
+
+**Clipboard tools**
+
+| Tool Name | Type | Condition | Description |
+|-----------|------|-----------|-------------|
+| copyToClipboard | Write | Always | Copy selected rows or cells to the clipboard. |
+| pasteFromClipboard | Write | Always | Paste clipboard content into the grid. |
+
+---
+
+**UI & refresh tools**
+
+| Tool Name | Type | Condition | Description |
+|-----------|------|-----------|-------------|
+| showSpinner | Write | Always | Display the grid's loading indicator. |
+| hideSpinner | Write | Always | Hide the grid's loading spinner. |
+| refreshGrid | Write | Always | Refresh the grid data and UI. |
+| refreshColumns | Write | Always | Refresh the grid's column definitions. |
+| refreshHeader | Write | Always | Refresh the grid header. |
+| focusGrid | Write | Always | Move focus to the grid. |
+| scrollIntoView | Write | Always | Scroll the grid to bring the specified cell into view. |
+
+---
+
+**Detail row tools**
+
+| Tool Name | Type | Condition | Description |
+|-----------|------|-----------|-------------|
+| expandCollapseDetailRow | Write | Always | Expand or collapse the detail row associated with a record. |
+| expandAllDetailRows | Write | Always | Expand all detail rows. |
+| collapseAllDetailRows | Write | Always | Collapse all detail rows. |
+
+---
+
+**Cell merging tools**
+
+| Tool Name | Type | Condition | Description |
+|-----------|------|-----------|-------------|
+| mergeCells | Write | Always | Merge the specified rectangular range of cells. |
+| mergeCellsBulk | Write | Always | Merge multiple cell ranges. |
+| unmergeCells | Write | Always | Remove the merged region anchored at the specified cell. |
+| unmergeCellsBulk | Write | Always | Remove multiple merged regions. |
+| unmergeAll | Write | Always | Remove all merged regions. |
+
+---
+
+**State & Data tools**
+
+| Tool Name | Type | Condition | Description |
+|-----------|------|-----------|-------------|
+| getEditState | Read | Always | Get metadata about the active edit context. |
+| isDirty | Read | Always | Check whether the grid has pending batch edits. |
+| updatePageSize | Write | Always | Update the grid page size. |
+| updateExternalMessage | Write | Always | Update the pager's external message. |
 
 ---
 
