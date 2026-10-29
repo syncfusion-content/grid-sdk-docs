@@ -53,8 +53,7 @@ Add the following namespace to the Razor component:
 Set the `EnableWebMcp` property to `true` in the SfGrid configuration:
 
 ```
-<SfGrid
-    DataSource="@Orders"
+<SfGrid DataSource="@Orders"
     EnableWebMcp="true"
     AllowSorting="true"
     AllowFiltering="true">
@@ -66,18 +65,16 @@ Set the `EnableWebMcp` property to `true` in the SfGrid configuration:
 Set the `GridWebMcpSettings` property to register the available tools in the control level:
 
 ```
-<SfGrid
-    DataSource="@Orders"
-    EnableWebMcp="true"
-    AllowSorting="true"
-    AllowFiltering="true">
-
+<SfGrid DataSource="@Orders" EnableWebMcp="true" AllowSorting="true" AllowFiltering="true" AllowPaging="true">
     <GridWebMcpSettings Name="SalesGrid" />
+    <GridPageSettings PageSize="10"></GridPageSettings>
+    <GridSelectionSettings Mode="SelectionMode.Both" Type="SelectionType.Multiple"></GridSelectionSettings>
 
     <GridColumns>
         <GridColumn Field="OrderID" HeaderText="Order ID" IsPrimaryKey="true" Width="120"></GridColumn>
         <GridColumn Field="CustomerID" HeaderText="Customer" Width="150"></GridColumn>
         <GridColumn Field="ShipCountry" HeaderText="Country" Width="150"></GridColumn>
+        <GridColumn Field="Freight" HeaderText="Freight" Width="120"></GridColumn>
     </GridColumns>
 </SfGrid>
 ```
@@ -95,7 +92,7 @@ Here are realistic natural language prompts can be test with the WebMCP extensio
 
 {% promptcards %}
 {% promptcard Filter Records %}
-Filter the grid to show all orders from the USA and then display the first 5 records
+Filter the grid to show all orders from the Reims
 {% endpromptcard %}
 {% endpromptcards %}
 
@@ -107,7 +104,7 @@ Sort the grid by OrderID in descending order and select the top 3 records
 
 {% promptcards %}
 {% promptcard Export Data %}
-Export the currently filtered grid data to an Excel file named "SalesReport"
+Arrange the displayed orders by freight amount from highest to lowest
 {% endpromptcard %}
 {% endpromptcards %}
 
@@ -436,6 +433,22 @@ Configure WebMCP tools with custom descriptions and enable/disable specific tool
         }
 
         await Task.CompletedTask;
+    }
+    private List<Order> Orders { get; set; } = new()
+    {
+        new() { OrderID = 10248, CustomerID = "VINET", ShipCountry = "Reims" },
+        new() { OrderID = 10249, CustomerID = "TOMSP", ShipCountry = "Münster"},
+        new() { OrderID = 10250, CustomerID = "HANAR", ShipCountry = "Reims"},
+        new() { OrderID = 10251, CustomerID = "VICTE", ShipCountry = "Lyon"},
+        new() { OrderID = 10252, CustomerID = "SUPRD", ShipCountry = "Charleroi"},
+        new() { OrderID = 10253, CustomerID = "HANAR", ShipCountry = "Rio de Janeiro"}
+    };
+
+    public class Order
+    {
+        public int OrderID { get; set; }
+        public string CustomerID { get; set; } = string.Empty;
+        public string ShipCountry { get; set; } = string.Empty;
     }
 }
 ```
