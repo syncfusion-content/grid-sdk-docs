@@ -351,6 +351,8 @@ WebMCP tools are organized by category. The tables below provide an overview of 
 Configure WebMCP tools with custom descriptions and enable or disable specific tools.
 
 ```razor
+@using Syncfusion.Blazor.Grids
+
 <SfGrid DataSource="@Orders" EnableWebMcp="true">
     <GridWebMcpSettings Name="CustomGrid">
         <GridWebMcpTools>
@@ -359,9 +361,7 @@ Configure WebMCP tools with custom descriptions and enable or disable specific t
             <GridWebMcpTool Command="GridWebMcpToolCommand.Custom" Name="getOrderSummary" Description="Returns a custom order summary" InputSchema="@customSchema" />
         </GridWebMcpTools>
     </GridWebMcpSettings>
-
     <GridEvents TValue="Order" OnWebMcpExecute="HandleWebMcpToolExecution"></GridEvents>
-
     <GridColumns>
         <GridColumn Field="OrderID" HeaderText="Order ID" IsPrimaryKey="true" Width="120"></GridColumn>
         <GridColumn Field="CustomerID" HeaderText="Customer" Width="150"></GridColumn>
