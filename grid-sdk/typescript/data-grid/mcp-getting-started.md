@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
  
-# WebMCP Tools Integration for Syncfusion® Typescript DataGrid
+# WebMCP Tools Integration for Syncfusion® Typescript Data Grid
  
 WebMCP allows AI assistants running in the browser to interact directly with Syncfusion® controls through natural language prompts.
  
@@ -44,11 +44,11 @@ The WebMCP extension is now configured and ready to interact with WebMCP-enabled
 
 ## Integrating WebMCP tools
 
-Follow these steps to integrate WebMCP support into Syncfusion® Typescript controls. The following example uses the DataGrid control.
+Follow these steps to integrate WebMCP support into Syncfusion® Typescript controls. The following example uses the Data Grid control.
 
 ### Step 1: Create an application
 
-Create an application and integrate the Syncfusion® Typescript DataGrid control by following the [Getting Started with Typescript DataGrid](https://help.syncfusion.com/grid-sdk/typescript/data-grid/getting-started) guide. After completing the setup, follow the steps below to enable WebMCP integration.
+Create an application and integrate the Syncfusion® Typescript Data Grid control by following the [Getting Started with Typescript Data Grid](https://help.syncfusion.com/grid-sdk/typescript/data-grid/getting-started) guide. After completing the setup, follow the steps below to enable WebMCP integration.
 
 ### Step 2: Enable WebMCP support
 
@@ -93,7 +93,7 @@ Set the [enableWebMcp](https://ej2.syncfusion.com/documentation/api/grid/index-d
 
 When `enableWebMcp` is enabled, supported control tools are automatically registered with the WebMCP runtime and become discoverable by authorized WebMCP clients.
 
-For example, a DataGrid control may expose tools such as:
+For example, a Data Grid control may expose tools such as:
 
 - getSelectedRecords
 - sortByColumn
@@ -214,4 +214,4 @@ grid.appendTo('#Grid');
 
 ## Explore the demo
 
-Explore the Syncfusion® Typescript DataGrid control with WebMCP integration through this [demo](https://demos.syncfusion.com/grid-sdk/data-grid/webmcp/index.html).
+Explore the Syncfusion® Typescript Data Grid control with WebMCP integration through this [demo](https://demos.syncfusion.com/grid-sdk/data-grid/webmcp/index.html).
