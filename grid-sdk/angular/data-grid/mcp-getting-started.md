@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
  
-# WebMCP Tools Integration for Syncfusion® DataGrid
+# WebMCP Tools Integration for Syncfusion® Data Grid
  
 WebMCP allows AI assistants running in the browser to interact directly with Syncfusion® components through natural language prompts.
  
@@ -44,11 +44,11 @@ The WebMCP extension is now configured and ready to interact with WebMCP-enabled
 
 ## Integrating WebMCP tools
 
-Follow these steps to integrate WebMCP support into Syncfusion® Angular components. The following example uses the DataGrid component.
+Follow these steps to integrate WebMCP support into Syncfusion® Angular components. The following example uses the Data Grid component.
 
 ### Step 1: Create an application
 
-Create an Angular application and integrate the Syncfusion® Angular DataGrid component by following the [Getting Started with Angular DataGrid](https://help.syncfusion.com/grid-sdk/angular/data-grid/getting-started) guide. After completing the setup, follow the steps below to enable WebMCP integration.
+Create an Angular application and integrate the Syncfusion® Angular Data Grid component by following the [Getting Started with Angular Data Grid](https://help.syncfusion.com/grid-sdk/angular/data-grid/getting-started) guide. After completing the setup, follow the steps below to enable WebMCP integration.
 
 ### Step 2: Enable WebMCP support
 
@@ -92,7 +92,7 @@ Set the [enableWebMcp](https://ej2.syncfusion.com/angular/documentation/api/grid
 
 When `enableWebMcp` is enabled, supported component tools are automatically registered with the WebMCP runtime and become discoverable by authorized WebMCP clients.
 
-For example, a DataGrid component may expose tools such as:
+For example, a Data Grid component may expose tools such as:
 
 - getSelectedRecords
 - sortByColumn
@@ -256,4 +256,4 @@ export class AppComponent {
 
 ## Explore the demo
 
-Explore the Syncfusion® Angular DataGrid component with WebMCP integration through this [demo](https://demos.syncfusion.com/grid-sdk/data-grid/webmcp/index.html).
+Explore the Syncfusion® Angular Data Grid component with WebMCP integration through this [demo](https://demos.syncfusion.com/grid-sdk/data-grid/webmcp/index.html).

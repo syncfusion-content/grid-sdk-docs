@@ -8,7 +8,7 @@ documentation: ug
 domainurl: ##DomainURL##
 ---
  
-# WebMCP Tools Integration for Syncfusion® React DataGrid
+# WebMCP Tools Integration for Syncfusion® React Data Grid
  
 WebMCP allows AI assistants running in the browser to interact directly with Syncfusion® components through natural language prompts.
  
@@ -44,11 +44,11 @@ The WebMCP extension is now configured and ready to interact with WebMCP-enabled
 
 ## Integrating WebMCP tools
 
-Follow these steps to integrate WebMCP support into Syncfusion® React components. The following example uses the DataGrid component.
+Follow these steps to integrate WebMCP support into Syncfusion® React components. The following example uses the Data Grid component.
 
 ### Step 1: Set up the Vite project
 
-Create a React Vite application and integrate the Syncfusion® React DataGrid component by following the [Getting Started with React DataGrid](https://help.syncfusion.com/grid-sdk/react/data-grid/getting-started) guide. After completing the setup, follow the steps below to enable WebMCP integration.
+Create a React Vite application and integrate the Syncfusion® React Data Grid component by following the [Getting Started with React Data Grid](https://help.syncfusion.com/grid-sdk/react/data-grid/getting-started) guide. After completing the setup, follow the steps below to enable WebMCP integration.
 
 ### Step 2: Enable WebMCP support
 
@@ -83,7 +83,7 @@ Set the [enableWebMcp](https://ej2.syncfusion.com/react/documentation/api/grid/i
 
 When `enableWebMcp` is enabled, supported component tools are automatically registered with the WebMCP runtime and become discoverable by authorized WebMCP clients.
 
-For example, a DataGrid component may expose tools such as:
+For example, a Data Grid component may expose tools such as:
 
 - getSelectedRecords
 - sortByColumn
@@ -212,4 +212,4 @@ export default App;
 
 ## Explore the demo
 
-Explore the Syncfusion® React DataGrid component with WebMCP integration through this [demo](https://demos.syncfusion.com/grid-sdk/data-grid/webmcp/index.html).
+Explore the Syncfusion® React Data Grid component with WebMCP integration through this [demo](https://demos.syncfusion.com/grid-sdk/data-grid/webmcp/index.html).
