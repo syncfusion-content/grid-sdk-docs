@@ -50,30 +50,14 @@ Add the following namespace to the Razor component:
 
 ### Step 3: Enable WebMCP
 
-Set the `EnableWebMcp` property to `true` in the `SfGrid` configuration:
-
-```razor
-<SfGrid DataSource="@Orders"
-    EnableWebMcp="true"
-    AllowSorting="true"
-    AllowFiltering="true">
-</SfGrid>
-```
-
-### Step 4: Register tools
-
-Set the `GridWebMcpSettings` property to register the available tools at the control level:
+Enable WebMCP by setting `EnableWebMcp` to `true`. Optionally, define a `Name` in `WebMcpSettings` to keep tool names unique on the page.
 
 ```razor
 @using Syncfusion.Blazor.Grids
 
-    <SfGrid DataSource="@Orders" EnableWebMcp="true" AllowSorting="true" AllowFiltering="true" AllowPaging="true">
-        <GridWebMcpSettings Name="SalesGrid">
-            <GridWebMcpTool Command="GridWebMcpToolCommand.GetVisibleColumns" Description="List visible Data Grid columns." />
-        </GridWebMcpSettings>
-        <GridPageSettings PageSize="10"></GridPageSettings>
-        <GridSelectionSettings Mode="SelectionMode.Both" Type="SelectionType.Multiple"></GridSelectionSettings>
-
+    <SfGrid DataSource="@Orders" EnableWebMcp="true" AllowPaging="true">
+        <GridWebMcpSettings Name="SalesGrid"/>
+        <GridPageSettings PageSize="5"></GridPageSettings>
         <GridColumns>
             <GridColumn Field="OrderID" HeaderText="Order ID" IsPrimaryKey="true" Width="120"></GridColumn>
             <GridColumn Field="CustomerID" HeaderText="Customer" Width="150"></GridColumn>
@@ -103,7 +87,7 @@ Set the `GridWebMcpSettings` property to register the available tools at the con
 }
 ```
 
-### Step 5: Test the setup
+### Step 4: Test the setup
 
 **Test locally:**
 - Run the application locally and open it in a Chromium-based browser.
