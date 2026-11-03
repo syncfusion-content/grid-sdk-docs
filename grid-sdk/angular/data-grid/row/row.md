@@ -189,6 +189,42 @@ In the following example, the row height for the row with "OrderID" as "10249" i
 > * The row height of multiple rows can be customized by checking the relevant criteria in the `rowDataBound` event and setting the `rowHeight` property accordingly.
 > * In the `rowDataBound` event handler, the current row can be accessed using the [args.row](https://ej2.syncfusion.com/angular/documentation/api/grid/rowDataBoundEventArgs#row) property and the `rowHeight` property can be set for that row using the `setAttribute` method.
 
+### Dynamic row height
+
+The [setRowHeight](https://ej2.syncfusion.com/angular/documentation/api/grid#setrowheight) callback enables dynamic row height customization based on row data when DOM virtualization is enabled. The callback is invoked for each row rendered in the viewport and returns the row height in pixels without modifying the underlying data source.
+
+To enable dynamic row heights, inject the `DomVirtualizationService`, configure `enableDomVirtualization` as "true", and assign the `setRowHeight` callback to return row heights based on the row data.
+
+The following example demonstrates an issue tracker where row heights are dynamically adjusted based on issue priority. Critical priority issues receive increased row height (60px) for better visibility, while high priority issues get 50px, and lower priority issues use the default row height.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/grid-sdk/angular/grid/dynamic-row-height-cs1/src/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/grid-sdk/angular/grid/dynamic-row-height-cs1/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/dynamic-row-height-cs1" %}
+
+## Enable full width rows
+
+Enable full width rows by defining the [colSpan](https://ej2.syncfusion.com/angular/documentation/api/grid/queryCellInfoEventArgs#colspan) attribute within the [QueryCellInfo](https://ej2.syncfusion.com/angular/documentation/api/grid/queryCellInfoEventArgs) event, which determines whether a record is rendered using the standard row layout or spans the entire width of the grid.
+
+In this demo, records for unavailable doctors are rendered as full-width rows, while all other records are displayed using the default grid row layout.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/grid-sdk/angular/grid/full-row-width-cs1/src/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/grid-sdk/angular/grid/full-row-width-cs1/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/full-row-width-cs1" %}
+
 ## Row hover
 
 Row hover functionality provides visual feedback during mouse interaction, enhancing data readability and user experience. The [enableHover](https://ej2.syncfusion.com/documentation/api/grid#enablehover) property controls hover effect availability across the entire Grid.
