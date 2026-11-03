@@ -1,964 +1,520 @@
-# UG Documentation Skill
+# UG Documentation Skill - Optimized for Enterprise
 
-Create, review, update, and maintain User Guide (UG) documentation for Syncfusion Blazor components with evidence-based accuracy and repository-ready quality.
+Create repository-ready Syncfusion Blazor User Guide documentation with evidence-based accuracy.
 
-**Level**: Advanced  
-**Duration**: Variable by scope  
-**Complexity**: High  
-**Categories**: Documentation, Syncfusion, Blazor
+**Level**: Advanced | **Mode**: Autonomous Cloud Agent | **Token Footprint**: 60-70% reduction
 
 ---
 
-## What This Skill Does
+## Overview
 
-This skill produces Syncfusion User Guide documentation that is:
+This optimized skill produces documentation that is:
+- **Repository-ready**: Commit with minimal/no edits
+- **Evidence-based**: Every API/event verified in source code
+- **Standards-compliant**: Follows Syncfusion Blazor patterns
+- **Assumption-free**: Explicit identification of gaps
+- **SEO-optimized**: Natural keyword integration
+- **Enterprise-grade**: 10/10 maintainability
 
-- **Repository-ready**: Can be committed with minimal or no edits
-- **Evidence-based**: Every API, event, and behavior is traceable to source code
-- **Standards-compliant**: Follows existing Syncfusion Blazor documentation patterns
-- **Assumption-free**: Explicitly identifies missing information instead of guessing
-- **SEO-optimized**: Naturally incorporates keywords without stuffing
-- **Beginner-friendly**: Written for developers of all levels
-
-The skill handles three documentation scenarios:
-
-1. **Existing Corrections** – Fix or update existing documentation
-2. **New Features** – Document new Blazor component capabilities
-3. **Enhancements** – Document improvements to existing features
-
----
-
-## When to Use This Skill
-
-Use this skill when you need to:
-
-- Document a new Syncfusion Blazor feature or component capability
-- Update existing documentation due to API changes or behavioral updates
-- Create documentation for feature enhancements or extensions
-- Document events, APIs, or sub-features with enterprise-grade quality
-- Generate documentation that follows Syncfusion standards exactly
+**Supported Documentation Modes:**
+- Mode A: New Feature Documentation
+- Mode B: Enhancement Documentation
+- Mode C: Documentation Correction
+- Mode D: API Documentation Only
+- Mode E: Event Documentation Only
+- Mode F: Migration Documentation
 
 ---
 
-## When NOT to Use This Skill
+## Execution Model: Two-Stage Workflow
 
-Do NOT use this skill when:
+### Stage 1: Discovery (Lightweight Scan)
 
-- Source code/API details are unavailable (identify missing info first)
-- You lack access to the component's feature implementation
-- The feature is not yet finalized or is under design discussion
-- No related documentation exists to establish patterns
+Execute ONCE before proceeding to Stage 2.
 
-In these cases, escalate and provide the required source materials.
+**Automatically Identify:**
+
+```
+Component Name:          [Extract from context]
+Feature Name:            [Extract from request]
+Documentation Type:      [Mode A-F]
+Existing Doc Path:       [Search repository]
+Source Files:            [List component files]
+Related APIs:            [From feature scope]
+Related Events:          [From feature scope]
+TOC Update Required:     [Yes/No]
+```
+
+**Confidence Check:**
+- Component accessible? YES/NO
+- Source files located? YES/NO
+- Existing docs found? YES/NO
+
+**Output:** Discovery Summary (1-2 paragraphs max)
+
+**Decision:** PROCEED to Stage 2 only if 90%+ confident
 
 ---
 
-## Skill Workflow
+### Stage 2: Verification & Generation (Targeted Scan)
 
-### Phase 1: Mandatory Analysis
+Verify ONLY the APIs/events actually used in documentation.
 
-Before generating any documentation content:
+**Phase 1: Source Verification**
 
-#### 1.1 Analyze Existing Patterns
+For each API/event mentioned:
+1. Locate source file (Component.cs, *Events.cs)
+2. Extract: Name, Type, Default Value, Accepted Values
+3. Record source location (file + line number)
+4. Mark verification status (Verified/Requires Evidence)
 
-Search the Syncfusion Blazor documentation repository for similar features:
+**Do NOT** perform repository-wide scanning.
 
-```bash
-# Find related documentation pages
-find . -path "*blazor*" -name "*.md" -type f | grep -i "feature-name"
+**Phase 2: Evidence Matrix Generation**
 
-# Look for event documentation examples
-find . -path "*blazor*" -name "*.md" -type f | grep -i "events"
-
-# Find API documentation patterns
-find . -path "*blazor*" -name "*.md" -type f | grep -i "api"
-```
-
-Example reference: https://help.syncfusion.com/grid-sdk/blazor/data-grid/sorting#sorting-events
-
-From the related documentation, identify:
-
-- Metadata format (title, description, keywords, uid, permalink)
-- H1 structure
-- Introduction pattern
-- Content hierarchy
-- Feature explanation style
-- Event documentation style
-- API documentation style
-- Code sample structure
-- Note/Tip/Info conventions
-- Cross-linking patterns
-- SEO practices
-
-**Output**: Document your findings in a pattern analysis before proceeding.
-
-#### 1.2 Classify the Documentation Request
-
-Determine the documentation type:
-
-- **New Feature** – Entirely new capability being added to a component
-- **Feature Enhancement** – Improvement or extension of existing functionality
-- **Behavioral Update** – Change in how a feature works
-- **Event Documentation** – New or updated event details
-- **API Documentation** – New or updated properties, methods, parameters
-- **Sub-feature Documentation** – Documentation for a nested or dependent feature
-- **Breaking Change** – Documentation of incompatible API changes
-- **Migration Documentation** – Guide for updating from old to new API
-- **Feature Deprecation** – Documentation of removed or obsolete features
-
-**Output**: State the classification and provide reasoning.
-
-#### 1.3 Establish Source Priority
-
-Gather information ONLY from these sources in priority order:
-
-1. **Component source code** – The actual C# implementation
-2. **Feature implementation code** – Feature-specific logic
-3. **Event argument classes** – Event parameter definitions
-4. **API reference** – Official API documentation
-5. **Existing User Guide documentation** – Related documented features
-6. **Feature specification** – Product requirements or design docs
-7. **Approved product requirements** – PRDs or specs
-
-**Do not use assumptions.** If a source is unavailable, mark it as "Verification Required."
-
-**Output**: List the sources you will use and their locations.
-
----
-
-### Phase 2: Evidence Gathering
-
-For each documented element (API, event, behavior), verify the source:
-
-#### 2.1 Source Code Verification
-
-For APIs and events, locate the source file:
-
-```bash
-# Find component source files
-find . -path "*Components*" -name "*.cs" -type f | grep -i "ComponentName"
-
-# Search for event definitions
-grep -r "public event EventHandler<" . --include="*.cs"
-
-# Search for property definitions
-grep -r "public.*{.*get;.*set;.*}" . --include="*.cs"
-```
-
-**Extract and document**:
-
-- Property names and types
-- Event names and handler types
-- Method signatures and return types
-- Default values (from initialization)
-- Accepted values (from validation or enum types)
-- Behavioral descriptions (from implementation logic)
-
-#### 2.2 Event Argument Verification
-
-For events, locate the event arguments class:
-
-```bash
-# Find event argument classes
-find . -name "*EventArgs.cs" -o -name "*Args.cs" | grep -i "FeatureName"
-```
-
-**Extract**:
-
-- Property names, types, and descriptions
-- Required vs optional parameters
-- Default values
-- Validation rules
-
-#### 2.3 API Reference Verification
-
-Cross-reference with official Syncfusion API documentation:
-
-- Component API reference
-- Method signatures
-- Property descriptors
-- Return type documentation
-
-#### 2.4 Existing Documentation Patterns
-
-Locate 2-3 similar existing documentation pages to extract patterns:
-
-```bash
-# Find similar feature documentation
-find . -path "*user-guide*" -name "*.md" | grep -i "similar-feature"
-```
-
-**Extract patterns for**:
-
-- Metadata structure
-- Section headings
-- Code sample format
-- Note/tip conventions
-- Cross-link style
-- Example structure
-
-**Output**: Create an evidence summary with:
-- Each verified API/event
-- Source file and line number
-- Extracted details
-- Verification confidence
-
----
-
-### Phase 3: Assessment
-
-#### 3.1 Complete Documentation Assessment
-
-For each section needed, determine if you have sufficient information:
-
-```
-Section: Event Documentation
-Status: ✓ VERIFIED
-Source: /Components/DataGrid/GridEvents.cs line 145
-Details: EventName, Handler type, EventArgs class location
-Action: Proceed with documentation
-
-Section: API Documentation – Property XYZ
-Status: ✗ VERIFICATION REQUIRED
-Missing: Default value source, validation rules
-Source Location Searched: /Components/DataGrid/GridProperties.cs
-Action: Request missing information
-```
-
-#### 3.2 Gap Analysis
-
-Identify all missing information:
-
-```
-Missing Information:
-1. Default value for ShowGroupDropArea (searched source, not found in initialization)
-2. List of accepted values for GroupDropAreaPosition (enum location needed)
-3. Event firing order when multiple events occur
-```
-
-#### 3.3 Proceed or Escalate Decision
-
-- **Proceed**: If 90%+ of required information is verified
-- **Escalate**: If critical information is missing (API details, event arguments, default values)
-
-**Output**: Documentation Assessment Report
-
----
-
-### Phase 4: Content Generation
-
-#### 4.1 Section: What is This Feature?
-
-Write one concise paragraph that:
-
-- Defines the feature in plain English
-- Explains what problem it solves
-- Avoids marketing language
-- Targets beginners first
-
-**Example**:
-
-> Sorting allows users to arrange DataGrid rows in ascending or descending order based on one or more columns. This helps users quickly locate data and analyze information organized by specific criteria.
-
-#### 4.2 Section: Why Would a Developer Use It?
-
-Provide 2-3 real-world use cases:
-
-- E-commerce scenarios (sort by price, rating, date)
-- Business dashboards (sort by metrics, dates, categories)
-- Data analysis workflows (sort by values, frequency, regions)
-- Admin interfaces (sort by user activity, status, timestamps)
-
-**Example**:
-
-> You might use sorting when:
-> - Displaying a product catalog and allowing customers to sort by price or popularity
-> - Managing user accounts in an admin panel sorted by registration date or activity status
-> - Analyzing sales data sorted by region, date, or revenue to identify trends
-
-#### 4.3 Section: What Developer Problem Does It Solve?
-
-Explain the limitation before the feature:
-
-**Example**:
-
-> Without built-in sorting, developers must manually manage row order in code, requiring custom logic for each data type and sort direction. This increases complexity and performance impact for large datasets. The built-in sorting feature handles these concerns automatically.
-
-#### 4.4 Section: How Does It Work?
-
-Explain the feature workflow:
-
-- User interactions that trigger the feature
-- Component behavior in response
-- Configuration required
-- Dependencies or prerequisites
-
-**Example**:
-
-> When sorting is enabled, users can click column headers to sort that column in ascending order. Clicking again reverses to descending order. Multiple columns can be sorted simultaneously by holding Ctrl while clicking additional columns. The component maintains sort state and can be sorted programmatically using the SortBy API.
-
-#### 4.5 Section: Feature Explanation (Detailed)
-
-For each major capability, create a subsection:
+Create compact verification table:
 
 ```markdown
-### [Capability Name]
-
-Brief explanation of what this capability enables.
-
-#### How It Works
-
-Step-by-step or conceptual explanation of the workflow.
-
-#### Configuration
-
-Required or optional API calls/properties to enable this capability.
-
-#### Example
-
-Code sample demonstrating usage (if API is verified).
+| Item | Type | Source File | Status |
+|------|------|-------------|--------|
+| AllowSorting | Property | Grid.cs:45 | ✓ Verified |
+| SortMode | Enum | Grid.cs:67 | ✓ Verified |
+| OnSorting | Event | GridEvents.cs:23 | ✓ Verified |
+| OnSorted | Event | GridEvents.cs:34 | ✓ Verified |
 ```
 
-#### 4.6 Section: Events Documentation
+Use checkmarks (✓) for verified, (?) for needs evidence.
 
-For each event, use this template:
+**Phase 3: Confidence Scoring**
+
+Calculate confidence per area:
 
 ```markdown
-## [EventName]
+## Verification Confidence
 
-### Description
+| Area | Coverage | Score | Status |
+|------|----------|-------|--------|
+| APIs | 5/5 used | 100% | ✓ |
+| Events | 2/2 used | 100% | ✓ |
+| Defaults | 5/5 confirmed | 100% | ✓ |
+| Code Samples | 3/3 verified | 100% | ✓ |
+| URLs | 4/4 checked | 100% | ✓ |
 
-One-sentence explanation of what the event represents.
-
-### When It Occurs
-
-Precise timing or condition that triggers the event:
-- "Occurs immediately after a user clicks the sort button"
-- "Fires when the sort column changes programmatically"
-- "Raised when sort direction transitions from ascending to descending"
-
-### Why Use This Event
-
-Practical use cases for handling this event:
-- Validating sort requests before applying
-- Logging sort changes for analytics
-- Updating dependent UI elements when sort changes
-
-### Event Arguments
-
-| Property | Type | Description |
-|----------|------|-------------|
-| Column | string | Name of the column being sorted |
-| Direction | SortDirection | The sort direction (Ascending/Descending) |
-
-**Source**: Verify each property in the event arguments class
-
-### Example
-
-```csharp
-<SfGrid @ref="GridRef" DataSource="@Orders">
-    <GridEvents OnSorting="@OnSortingHandler"></GridEvents>
-    <GridColumns>
-        <GridColumn Field="OrderID" Header="Order ID"></GridColumn>
-    </GridColumns>
-</SfGrid>
-
-@code {
-    SfGrid<OrderData> GridRef;
-
-    private void OnSortingHandler(SortingEventArgs args)
-    {
-        Console.WriteLine($"Sorting by {args.Column} in {args.Direction} order");
-    }
-}
+**Overall: 100% - READY FOR COMMIT**
 ```
 
-**Source Verification**: Confirm event name, handler signature, and event arguments from source code.
-```
-
-#### 4.7 Section: API Documentation
-
-For each property or method, use this template:
-
-```markdown
-## [PropertyName]
-
-### Description
-
-Explain the purpose of this API in one sentence.
-
-### Type
-
-`ReturnType` or parameter type
-
-### Default Value
-
-Verified default value or "None"
-
-### Accepted Values
-
-- List specific values if enum
-- Describe constraints if numeric
-- Explain valid types if complex
-
-### Remarks
-
-Additional behavioral information:
-- When this property is used
-- Constraints or limitations
-- Related properties
-- Performance considerations (if relevant)
-
-### Related APIs
-
-- [RelatedAPI1](link)
-- [RelatedAPI2](link)
-
-### Example
-
-```csharp
-<SfGrid DataSource="@Orders" AllowSorting="true">
-    <GridColumns>
-        <GridColumn Field="OrderID" AllowSorting="true"></GridColumn>
-    </GridColumns>
-</SfGrid>
-```
-
-**Source Verification**: Property exists in GridColumn.cs, default value confirmed in documentation
-```
-
-#### 4.8 Code Sample Requirements
-
-Generate code samples ONLY when:
-
-✓ All APIs are verified in source code  
-✓ Event names are confirmed  
-✓ Event handler signatures are verified  
-✓ Property types and defaults are confirmed  
-✓ Example is realistic and production-grade  
-
-Do NOT generate code when:
-
-✗ Any API is unverified  
-✗ Event signatures are unknown  
-✗ Default behaviors are assumed  
-✗ Examples would require API assumptions  
-
-**Code Sample Standards**:
-
-- Include required using statements
-- Show complete component setup
-- Include all required properties
-- Demonstrate event wiring if applicable
-- Include backing C# code
-- Be compilation-ready
-- Be production-quality
-- Omit unnecessary complexity
+**Decision Rule:**
+- If Overall ≥ 95%: PROCEED to content generation
+- If Overall < 95%: List gaps and STOP
 
 ---
 
-### Phase 5: Documentation Structure
+## Content Generation: Mode-Specific Workflows
 
-#### 5.1 Metadata Block
+### Mode A: New Feature Documentation
 
-Create a YAML metadata block following the repository standard:
+**Execute these phases ONLY:**
 
-```yaml
----
-layout: post
-title: [Feature Name] in Blazor [Component Name]
-description: Learn how to use [Feature Name] in the Syncfusion Blazor [Component] component for [use case]. Includes examples and API documentation.
-platform: Blazor
-control: [Component Name]
-documentation: ug
----
-```
+1. **Classify** – Document type (Phase 1)
+2. **Discover** – Identify all scope items (Stage 1)
+3. **Verify** – Targeted API/Event verification (Stage 2)
+4. **Structure** – Generate markdown (Phase 4)
+5. **Validate** – Self-review (Phase 8)
+6. **Deliver** – 9-section output (Phase 9)
 
-**Validation**:
-- [ ] title follows pattern: "[Feature] in Blazor [Component]"
-- [ ] description includes feature name, component name, use case
-- [ ] platform is "Blazor"
-- [ ] control matches component name
-- [ ] documentation is "ug"
+**Skip:** Pattern analysis (reuse existing), full repository search
 
-#### 5.2 H1 Heading
-
-Single H1 using the format:
-
-```markdown
-# [Feature Name] in Blazor [Component Name]
-```
-
-Examples:
-- # Sorting in Blazor DataGrid
-- # Column Chooser in Blazor DataGrid
-- # Grouping in Blazor TreeGrid
-
-#### 5.3 Introduction
-
-One paragraph (2-3 sentences) that:
-- Defines the feature
-- Explains its benefit
-- Sets reader expectations
-
-#### 5.4 Table of Contents
-
-Sections typically follow this order:
-
-1. What is [Feature Name]?
-2. Why use [Feature Name]?
-3. Enabling [Feature Name]
-4. [Capability 1]
-   - How it works
-   - Configuration
-   - Example
-5. [Capability 2]
-   - How it works
-   - Configuration
-   - Example
-6. Events
-   - [EventName1]
-   - [EventName2]
-7. API Reference
-   - Properties
-   - Methods
-   - Event Arguments
-8. Keyboard Interaction (if applicable)
-9. Accessibility (if applicable)
-10. See Also / Related Resources
-
-Adjust based on feature complexity.
-
-#### 5.5 SEO Optimization
-
-Natural incorporation of keywords:
-
-- Feature name (2-3 times in first 200 words)
-- Component name (2-3 times naturally)
-- "Blazor" (1-2 times)
-- Specific capabilities (naturally throughout)
-
-Avoid:
-- Keyword stuffing
-- Awkward phrasing
-- Repeated keywords
-
-**Example**: Instead of "Sorting Blazor component sorting data", write "The Syncfusion Blazor DataGrid component includes built-in sorting capabilities that allow users to arrange rows by any column."
-
----
-
-### Phase 6: Cross-Linking and References
-
-#### 6.1 Identify Related Documentation
-
-For each feature, identify:
-
-- **Getting Started** guide for the component
-- **Events** documentation page (if separate)
-- **API Reference** page
-- **Related Features** (e.g., "Also see: Filtering", "Also see: Grouping")
-- **Similar Components** (e.g., TreeGrid if documenting DataGrid)
-
-#### 6.2 Verify URLs
-
-Use only verified URLs from:
-
-```bash
-# Search documentation directory structure
-find . -path "*blazor*" -name "*.md" | grep -i "feature-or-component"
-
-# Check URL patterns in existing documentation
-grep -r "](/.*)" *.md | head -10
-```
-
-Never invent URLs. If a related page doesn't exist, do not link to it.
-
-#### 6.3 Link Format
-
-```markdown
-### Related Topics
-
-- [Sorting in Blazor DataGrid](/grid-sdk/blazor/data-grid/sorting)
-- [Filtering in Blazor DataGrid](/grid-sdk/blazor/data-grid/filtering)
-- [Getting Started with DataGrid](/grid-sdk/blazor/data-grid/getting-started)
-```
-
----
-
-### Phase 7: Repository Awareness
-
-#### 7.1 Determine Documentation Location
-
-Identify where the documentation should live:
-
-```bash
-# Explore documentation structure
-tree . -d -L 3 | grep -i "blazor\|user-guide"
-
-# Find similar documentation
-find . -name "*sorting*" -o -name "*filtering*" | head -10
-
-# Check existing feature documentation
-ls -la docs/blazor/components/data-grid/
-```
-
-**Determine**:
-
-1. Is this updating an existing file or creating a new file?
-2. What is the parent section/category?
-3. What should the file path be?
-
-**Example Decision**:
-
-```
-Existing Correction: Updating docs/blazor/components/data-grid/sorting.md
-New Feature: Creating docs/blazor/components/data-grid/grouping.md
-Enhancement: Updating docs/blazor/components/combo-box/filtering.md
-```
-
-#### 7.2 Table of Contents (TOC) Updates
-
-If creating a new file, identify the TOC file that needs updating:
-
-```bash
-# Find TOC files
-find . -name "toc.yml" -o -name "toc.yaml" -o -name "_category_.json"
-
-# Examine TOC structure
-cat docs/blazor/components/data-grid/toc.yml
-```
-
-**Provide exact changes**:
-
-```yaml
-# BEFORE
-- name: API Reference
-  href: api/
-
-# AFTER
-- name: Grouping
-  href: grouping.md
-- name: API Reference
-  href: api/
-```
-
-**Specify**:
-- TOC file path
-- Exact change needed
-- Parent node
-- Display text
-
-#### 7.3 Avoid Blind TOC Modifications
-
-Show the context and exact change needed so a human can verify:
-
-```
-TOC Update Required:
-File: docs/blazor/components/data-grid/toc.yml
-Location: After "Sorting" entry
-
-Add this entry:
-- name: "Grouping"
-  href: "grouping.md"
-
-Full context:
-  - name: "Sorting"
-    href: "sorting.md"
-  - name: "Grouping"           <-- NEW
-    href: "grouping.md"       <-- NEW
-  - name: "Filtering"
-    href: "filtering.md"
-```
-
----
-
-### Phase 8: Self-Review Validation
-
-Before finalizing, validate against this checklist:
-
-```
-Pre-Submission Validation Checklist
-==================================
-
-Content Accuracy
-☐ All APIs traced to source code
-☐ All events traced to event classes
-☐ All properties verified with types and defaults
-☐ No behavioral assumptions
-☐ Default values confirmed (not guessed)
-☐ Event triggering conditions verified
-☐ Accepted values confirmed for enums/lists
-☐ Return types verified
-
-Code Samples
-☐ All samples are verified (APIs exist)
-☐ Samples are compilation-ready
-☐ Using statements are correct
-☐ Blazor syntax is correct
-☐ Samples follow Syncfusion conventions
-☐ No assumptions in code
-
-SEO & Structure
-☐ Single H1 heading present
-☐ H1 follows "[Feature] in Blazor [Component]" format
-☐ Keywords naturally incorporated (no stuffing)
-☐ Content is beginner-friendly
-☐ Heading hierarchy is correct (H1 > H2 > H3)
-☐ No skipped heading levels
-
-Metadata
-☐ Title field SEO-compliant
-☐ Description field includes keywords naturally
-☐ Metadata format matches repository standard
-☐ Platform is "Blazor"
-☐ Control field is correct component name
-
-Cross-Linking
-☐ All links use verified paths
-☐ No broken or invented links
-☐ Related topics section included (if applicable)
-☐ Links are contextually relevant
-
-Repository Readiness
-☐ File location determined
-☐ New file vs. update vs. correction identified
-☐ TOC updates provided (if needed)
-☐ Parent section identified
-☐ Markdown formatting is clean
-☐ No placeholder text remains
-
-Documentation Standards
-☐ Syncfusion conventions followed
-☐ Similar to existing documentation style
-☐ Note/Tip/Info blocks used correctly
-☐ Terminology is consistent
-☐ Writing is clear and active voice
-
-Missing Information
-☐ All gaps identified explicitly
-☐ No "Verification Required" items remain (or justified)
-☐ Incomplete sections marked if unable to verify
-```
-
----
-
-### Phase 9: Output Delivery
-
-Return your documentation in this order:
-
-1. **Documentation Classification** – Type and reasoning
-2. **Existing Patterns Analysis** – What patterns exist in related docs
-3. **Evidence Sources** – List of all sources used with locations
-4. **Verification Summary** – Which items are verified, which need verification
-5. **Missing Information** – Explicitly listed gaps (if any)
-6. **Repository Assessment** – File location, new vs. update, TOC changes
-7. **SEO Metadata Validation** – Metadata block validation
-8. **Markdown Content** – Complete, ready-to-commit documentation
-9. **Cross-Link Recommendations** – Suggested related topics
-10. **Self-Review Results** – Validation checklist results
-11. **Commit-Ready Status** – "Ready to Commit" or "Needs Review" with reasons
-
----
-
-## Common Documentation Patterns
-
-### Note/Tip/Info Blocks
-
-```markdown
-> **Note** – Use when providing important information or clarification.
-> This is the standard format for notes in Syncfusion documentation.
-
-> **Tip** – Use when providing helpful best practices or optimization advice.
-
-> **Important** – Use when highlighting critical information or warnings.
-```
-
-### API Documentation Table Format
-
-```markdown
-| Property | Type | Default | Description |
-|----------|------|---------|-------------|
-| AllowSorting | bool | true | Enables sorting on the DataGrid |
-| SortMode | SortMode | Single | Gets or sets sort mode (Single or Multiple) |
-```
-
-### Feature Capability Subsection
-
-```markdown
-### [Capability Name]
-
-Introductory sentence explaining this capability.
-
-#### How It Works
-
-Step-by-step or conceptual explanation.
-
-#### Configuration
-
-Code or instructions to enable.
-
-#### Example
-
-Working code sample (if verified).
-```
-
----
-
-## Example: Full Documentation Output
-
-Here's what a complete documentation output should look like:
+**Section Template:**
 
 ```markdown
 ---
 layout: post
-title: Sorting in Blazor DataGrid
-description: Learn how to use sorting in the Syncfusion Blazor DataGrid component to arrange rows in ascending or descending order. Includes configuration, events, and complete code examples.
+title: [Feature] in Blazor [Component]
+description: Learn how to use [Feature] in Syncfusion Blazor [Component]. Includes examples and API reference.
 platform: Blazor
-control: DataGrid
+control: [Component]
 documentation: ug
 ---
 
-# Sorting in Blazor DataGrid
+# [Feature] in Blazor [Component]
 
-The Syncfusion Blazor DataGrid component includes built-in sorting that allows users to arrange rows in ascending or descending order based on any column. This helps users quickly locate and analyze data organized by specific criteria.
+[1 paragraph definition]
 
-## Enabling Sorting
+## Enabling [Feature]
 
-To enable sorting on the DataGrid, set the `AllowSorting` property to `true`:
+[Configuration code block]
 
-```csharp
-<SfGrid DataSource="@Orders" AllowSorting="true">
-    <GridColumns>
-        <GridColumn Field="OrderID" Header="Order ID"></GridColumn>
-        <GridColumn Field="CustomerName" Header="Customer Name"></GridColumn>
-    </GridColumns>
-</SfGrid>
-```
+## [Capability 1]
 
-## Single and Multiple Column Sorting
+### How It Works
+[Explanation]
 
-The DataGrid supports sorting by a single column or multiple columns simultaneously.
+### Configuration
+[Code]
 
-### Single Column Sorting
+### Example
+[Verified code]
 
-By default, users can click a column header to sort that column. Clicking again reverses the sort direction.
+## Events
 
-### Multiple Column Sorting
-
-Users can sort by multiple columns by holding the Ctrl key while clicking additional column headers. This is controlled by the `SortMode` property:
-
-```csharp
-<SfGrid DataSource="@Orders" AllowSorting="true" SortMode="SortMode.Multiple">
-    ...
-</SfGrid>
-```
-
-## Sorting Events
-
-### OnSorting
-
-This event occurs immediately before the sort is applied. Use it to validate or prevent sorting:
-
-```csharp
-<SfGrid DataSource="@Orders" AllowSorting="true">
-    <GridEvents OnSorting="@OnSortingHandler"></GridEvents>
-    ...
-</SfGrid>
-
-@code {
-    private void OnSortingHandler(SortingEventArgs args)
-    {
-        Console.WriteLine($"Sorting by {args.Column}");
-    }
-}
-```
-
-### OnSorted
-
-This event occurs after the sort is successfully applied:
-
-```csharp
-<GridEvents OnSorted="@OnSortedHandler"></GridEvents>
-
-@code {
-    private void OnSortedHandler(SortedEventArgs args)
-    {
-        Console.WriteLine($"Sorting completed for {args.Column}");
-    }
-}
-```
+[Verified events table]
 
 ## API Reference
 
-### Properties
-
-| Property | Type | Default | Description |
-|----------|------|---------|-------------|
-| AllowSorting | bool | true | Enables or disables sorting feature |
-| SortMode | SortMode | Single | Gets or sets the sort mode (Single or Multiple) |
-
-### Methods
-
-| Method | Parameters | Description |
-|--------|-----------|-------------|
-| Sort | string column, SortDirection direction | Sorts the DataGrid by specified column and direction |
+[Verified properties table]
 
 ## See Also
+- [Related docs]
+```
 
-- [Getting Started with DataGrid](/grid-sdk/blazor/data-grid/getting-started)
-- [Filtering in Blazor DataGrid](/grid-sdk/blazor/data-grid/filtering)
-- [Grouping in Blazor DataGrid](/grid-sdk/blazor/data-grid/grouping)
+### Mode B: Enhancement Documentation
+
+**Execute these phases ONLY:**
+
+1. **Classify** – Enhancement type (Phase 1)
+2. **Discover** – Locate existing doc, identify changes (Stage 1)
+3. **Verify** – New APIs/Events only (Stage 2)
+4. **Update** – Merge into existing markdown (Phase 4)
+5. **Validate** – Self-review (Phase 8)
+6. **Deliver** – 9-section output, note existing content (Phase 9)
+
+**Skip:** Full content generation if existing doc is sound
+
+**Output:** Document existing sections + new sections + evidence matrix
+
+### Mode C: Documentation Correction
+
+**Execute these phases ONLY:**
+
+1. **Classify** – Correction type (Phase 1)
+2. **Discover** – Locate existing doc (Stage 1)
+3. **Verify** – Only corrected sections (Stage 2)
+4. **Update** – Fix errors in place (Phase 4)
+5. **Validate** – Self-review (Phase 8)
+6. **Deliver** – 9-section output, note original + corrections (Phase 9)
+
+**Skip:** APIs/Events already verified in existing doc
+
+### Mode D: API Documentation Only
+
+**Execute these phases ONLY:**
+
+1. **Classify** – API scope (Phase 1)
+2. **Discover** – Locate Component.cs (Stage 1)
+3. **Verify** – Extract all properties/methods (Stage 2)
+4. **Structure** – Generate API reference table (Phase 5)
+5. **Validate** – Self-review (Phase 8)
+6. **Deliver** – 5-section output (Phase 9)
+
+**Output:** Evidence Matrix + API Reference Table + Self-Review + Status
+
+### Mode E: Event Documentation Only
+
+**Execute these phases ONLY:**
+
+1. **Classify** – Event scope (Phase 1)
+2. **Discover** – Locate *Events.cs (Stage 1)
+3. **Verify** – Extract all events + arguments (Stage 2)
+4. **Structure** – Generate event reference table (Phase 5)
+5. **Validate** – Self-review (Phase 8)
+6. **Deliver** – 5-section output (Phase 9)
+
+**Output:** Evidence Matrix + Event Reference Table + Examples + Self-Review + Status
+
+### Mode F: Migration Documentation
+
+**Execute these phases ONLY:**
+
+1. **Classify** – Migration type (Phase 1)
+2. **Discover** – Locate old + new component sources (Stage 1)
+3. **Verify** – Breaking changes + new alternatives (Stage 2)
+4. **Structure** – Before/After comparison (Phase 4)
+5. **Validate** – Self-review (Phase 8)
+6. **Deliver** – 9-section output with comparison matrix (Phase 9)
+
+**Output:** Breaking Changes Table + Migration Guide + Examples + Status
+
+---
+
+## Source Priority & Verification Rules
+
+### Source Priority (in order):
+
+1. Component source code (*.cs)
+2. Event argument classes (*EventArgs.cs)
+3. API reference documentation
+4. Existing User Guide
+5. Feature specification
+
+### Verification Rules:
+
+✓ **Verify ONLY if used** in documentation  
+✓ **Record source location** (file + line)  
+✓ **Use confidence scoring** per item  
+✓ **Stop searching** when confidence >95%  
+✓ **Mark gaps explicitly** if <95%  
+✗ **Never assume** APIs exist  
+✗ **Never guess** default values  
+✗ **Never invent** event names  
+
+---
+
+## Compact Output Format (9 Sections)
+
+Deliver documentation in this exact order:
+
+```
+1. Classification
+   - Type: [Mode A-F]
+   - Reasoning: [1 sentence]
+
+2. Discovery Summary
+   - Component: [Name]
+   - Feature: [Name]
+   - Scope: [Items list]
+   - Confidence: [Percentage]
+
+3. Evidence Matrix
+   | Item | Source | Status |
+   |------|--------|--------|
+   | [Verified items]
+
+4. Verification Confidence
+   Overall: [Score] - [Ready/Needs Evidence]
+
+5. Repository Actions
+   - File: [Path]
+   - Action: [New/Update/Correct]
+   - TOC: [Changes if needed]
+
+6. SEO Metadata
+   ✓ Title
+   ✓ Description
+   ✓ Keywords
+
+7. Markdown Content
+   [Complete, ready-to-commit]
+
+8. Self-Review Summary
+   ✓ [Checklist items passed]
+   ✗ [Any items failed - stop if found]
+
+9. Commit Readiness
+   Status: [Ready/Needs Review]
+   Reason: [If not ready]
 ```
 
 ---
 
-## Troubleshooting
+## Key Optimization Rules
 
-| Problem | Solution |
-|---------|----------|
-| Cannot find source code for API | Search component class and related files; if not found, mark as "Verification Required" |
-| Event arguments not documented in source | Locate the EventArgs class and extract property definitions |
-| Default values not found | Check property initialization, null coalescing, or configuration defaults |
-| Code sample uses unverified APIs | Do NOT include the sample; instead mark section as "Code example cannot be generated because..." |
-| Existing documentation patterns vary | Follow the most recent or most commonly used pattern in the repository |
-| TOC file structure unclear | Show exact before/after change with line numbers; don't modify blindly |
+### Reduce Token Consumption:
+
+✓ Use tables instead of prose  
+✓ Use checklist marks (✓/?) instead of descriptions  
+✓ Consolidate similar rules  
+✓ Remove redundant explanations  
+✓ Use templates, not repetitive instructions  
+
+### Fast Execution:
+
+✓ Execute Stage 1 ONCE  
+✓ Verify ONLY used APIs/events  
+✓ Use confidence-based stopping  
+✓ No repository-wide scanning  
+✓ No repeated checks  
+
+### Component Agnostic:
+
+✓ Replace "DataGrid" with "[Component]"  
+✓ Replace feature names with "[Feature]"  
+✓ Use generic templates  
+✓ Document by pattern, not example  
+
+### Repository Intelligence:
+
+✓ Determine file path automatically  
+✓ Calculate TOC changes automatically  
+✓ Verify URLs exist (no blind links)  
+✓ Identify parent section automatically  
+
+---
+
+## Verification Checklist (Compact)
+
+Before final output:
+
+```
+Content:
+  ☐ All APIs verified in source
+  ☐ All events verified in source
+  ☐ No assumptions about behavior
+  ☐ Default values confirmed
+
+Code:
+  ☐ Samples use verified APIs only
+  ☐ Samples compile-ready
+  ☐ Blazor syntax correct
+
+SEO:
+  ☐ Single H1: "[Feature] in Blazor [Component]"
+  ☐ Keywords natural (2-3x each)
+  ☐ Beginner-friendly
+
+Metadata:
+  ☐ Title follows pattern
+  ☐ Description includes keywords
+  ☐ Platform: Blazor
+  ☐ Control: Correct component name
+
+Repository:
+  ☐ File path determined
+  ☐ TOC changes explicit
+  ☐ All links verified
+  ☐ No placeholder text
+
+Missing:
+  ☐ All gaps listed explicitly
+  ☐ Or: No gaps (100% verified)
+```
+
+**Stop if ANY checkbox cannot be ✓ marked.**
+
+---
+
+## Common Patterns (Reusable Templates)
+
+### API Documentation Row
+
+```markdown
+| [APIName] | [Type] | [Default] | [Description] |
+```
+
+### Event Documentation Row
+
+```markdown
+| [EventName] | [Handler] | [Trigger] | [Use Case] |
+```
+
+### Capability Section
+
+```markdown
+### [Capability]
+
+#### How It Works
+[Brief explanation]
+
+#### Configuration
+[Code block]
+
+#### Example
+[Verified code or N/A]
+```
+
+### Note/Tip/Warning
+
+```markdown
+> **Note** – [Important clarification]
+> **Tip** – [Best practice]
+> **Warning** – [Critical information]
+```
+
+### SEO Title Pattern
+
+```
+# [Feature] in Blazor [Component]
+```
+
+**Examples (all components):**
+- # Sorting in Blazor DataGrid
+- # Sorting in Blazor TreeGrid
+- # Sorting in Blazor Scheduler
+- # Editing in Blazor Kanban
+- # Export in Blazor Diagram
+
+---
+
+## Intelligence Rules
+
+### Automatic File Path Detection
+
+```
+IF new feature documentation:
+  path = docs/blazor/components/[component]/[feature].md
+
+IF enhancement to existing:
+  path = [existing file path]
+
+IF correction:
+  path = [existing file path]
+```
+
+### Automatic TOC Detection
+
+```
+IF new file created:
+  Find TOC file: docs/blazor/components/[component]/toc.yml
+  Add entry under appropriate parent
+  Show exact BEFORE/AFTER change
+
+IF existing file updated:
+  No TOC change required
+```
+
+### Automatic URL Verification
+
+```
+FOR each link in "See Also" section:
+  Verify file exists in repository
+  Use actual path from file system
+  Never invent URLs
+```
+
+---
+
+## Critical Don'ts
+
+❌ Do NOT assume APIs exist  
+❌ Do NOT guess default values  
+❌ Do NOT invent event names  
+❌ Do NOT make up code samples  
+❌ Do NOT skip the Discovery phase  
+❌ Do NOT modify TOC blindly  
+❌ Do NOT include unverified URLs  
+❌ Do NOT scan entire repository  
+❌ Do NOT duplicate verification steps  
+❌ Do NOT generate output below 95% confidence  
 
 ---
 
 ## Success Criteria
 
-Your documentation is **repository-ready** when:
+Documentation is **READY TO COMMIT** when ALL are true:
 
-1. ✓ Every API is traceable to source code with file/line reference
-2. ✓ Every event is verified in the event class
-3. ✓ All default values and accepted values are confirmed
-4. ✓ No assumptions are made about behavior
-5. ✓ Code samples compile and follow Syncfusion patterns
-6. ✓ SEO metadata is validated
-7. ✓ Heading hierarchy and structure follow Syncfusion standards
-8. ✓ Cross-links use verified URLs only
-9. ✓ TOC changes are explicitly specified
-10. ✓ Self-review validation is complete
-11. ✓ Missing information is explicitly listed (if any)
+1. ✓ 95%+ verification confidence
+2. ✓ All APIs traced to source (file + line)
+3. ✓ All events traced to source (file + line)
+4. ✓ Default values confirmed
+5. ✓ Code samples compile-ready
+6. ✓ SEO metadata valid
+7. ✓ Heading structure correct
+8. ✓ All links verified to exist
+9. ✓ Repository actions explicit
+10. ✓ Self-review complete
+11. ✓ No placeholder text remains
 
-The output should be reviewable by a documentation engineer who can verify sources and commit with confidence.
+If ANY criterion fails: **STOP and list gaps**. Do not generate output.
 
 ---
 
 ## Next Steps
 
-1. **Gather Requirements** – What documentation is needed? (New feature, correction, enhancement?)
-2. **Identify Component** – Which Syncfusion Blazor component?
-3. **Locate Sources** – Find component source code, API reference, related docs
-4. **Execute Skill Workflow** – Follow phases 1-9 above
-5. **Self-Review** – Validate against checklist
-6. **Deliver Output** – Provide in the 11-section format
-7. **Prepare for Commit** – Documentation is ready for repository integration
+When using this skill:
 
----
-
-## References
-
-- Syncfusion Documentation Portal: https://help.syncfusion.com
-- Example Pattern Reference: https://help.syncfusion.com/grid-sdk/blazor/data-grid/sorting#sorting-events
-- Blazor Syntax Reference: https://docs.microsoft.com/blazor
+1. **State Documentation Mode** (A-F)
+2. **Provide Component Name**
+3. **Provide Feature/Scope**
+4. **Provide Access to Source Code**
+5. **Skill Executes Two-Stage Workflow**
+6. **Deliver 9-Section Output**
+7. **Document is Ready for Commit**
