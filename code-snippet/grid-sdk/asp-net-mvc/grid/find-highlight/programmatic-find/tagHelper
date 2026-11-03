@@ -1,0 +1,21 @@
+<div style="padding: 0 0 20px 0">
+    <ejs-textbox id="findText" placeholder="Enter text to find" width="220"></ejs-textbox>
+    <ejs-button id="highlight" content="Highlight" style="margin-left: 10px"></ejs-button>
+</div>
+<ejs-grid id="FindGrid" dataSource="@ViewBag.datasource" height="272px" >
+    <e-grid-findsettings enabled="true"></e-grid-findsettings>
+    <e-grid-columns>
+        <e-grid-column field="OrderID" headerText="Order ID" textAlign="Right" width="90"></e-grid-column>
+        <e-grid-column field="CustomerID" headerText="Customer ID" textAlign="Left" width="110"></e-grid-column>
+        <e-grid-column field="ShipCity" headerText="Ship City" textAlign="Left" width="120"></e-grid-column>
+        <e-grid-column field="ShipCountry" headerText="Ship Country" textAlign="Left" width="120"></e-grid-column>
+        <e-grid-column field="Freight" headerText="Freight" textAlign="Right" width="90" format="C2"></e-grid-column>
+    </e-grid-columns>
+</ejs-grid>
+<script>
+    document.getElementById('highlight').addEventListener('click', function () {
+        var gridObj = document.getElementById('FindGrid').ej2_instances[0];
+        var text = document.getElementById('findText').ej2_instances[0].value;
+        gridObj.find(text);
+    });
+</script>
