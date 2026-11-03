@@ -104,8 +104,58 @@ Calculate confidence per area:
 ```
 
 **Decision Rule:**
-- If Overall ≥ 95%: PROCEED to content generation
+- If Overall ≥ 95%: PROCEED to Stage 4.5
 - If Overall < 95%: List gaps and STOP
+
+---
+
+### Stage 4.5: Sample Validation (Compile & Verify)
+
+Execute ONLY if documentation includes code examples.
+
+**Phase 1: Namespace Validation**
+
+For each code sample:
+1. Extract `using` statements
+2. Verify namespaces are correct:
+   - `using Syncfusion.Blazor.Grids;` (DataGrid)
+   - `using Syncfusion.Blazor.TreeGrid;` (TreeGrid)
+   - `using Syncfusion.Blazor.Schedules;` (Scheduler)
+   - etc.
+3. Verify no missing namespaces
+4. Record status: ✓ Valid or ? Missing
+
+**Phase 2: API Usage Validation**
+
+For each code sample:
+1. Verify all APIs used exist in source code
+2. Verify property names match source exactly
+3. Verify event names match source exactly
+4. Verify method signatures are correct
+5. Record status: ✓ Valid or ? Invalid API
+
+**Phase 3: Compilation Check**
+
+For each code sample:
+1. Verify Blazor syntax is correct
+2. Verify type declarations are valid
+3. Verify event bindings are correct
+4. Verify component hierarchy is valid
+5. Record status: ✓ Compiles or ? Syntax Error
+
+**Validation Matrix:**
+
+```markdown
+| Sample # | Namespaces | API Usage | Compilation | Status |
+|----------|-----------|-----------|-------------|--------|
+| 1 | ✓ | ✓ | ✓ | ✓ Valid |
+| 2 | ✓ | ✓ | ✓ | ✓ Valid |
+| 3 | ? | ✓ | ✗ | ? Needs Fix |
+```
+
+**Decision Rule:**
+- If ALL samples ✓ Valid: PROCEED to Stage 8.5
+- If ANY sample ✗ Invalid: List errors and STOP (do not proceed)
 
 ---
 
@@ -337,6 +387,136 @@ Deliver documentation in this exact order:
 ✓ Calculate TOC changes automatically  
 ✓ Verify URLs exist (no blind links)  
 ✓ Identify parent section automatically  
+
+---
+
+### Stage 8.5: Global Standards Check
+
+Execute BEFORE final output delivery.
+
+**Phase 1: Accessibility Validation**
+
+Check documentation meets accessibility standards:
+
+1. **Images**: All images have alt text descriptions
+2. **Links**: All links have descriptive text (not "click here")
+3. **Color**: No information conveyed by color alone
+4. **Headings**: Proper hierarchy (H1 → H2 → H3, no gaps)
+5. **Code Blocks**: Syntax highlighting present
+6. **Tables**: Header row marked properly
+7. **Lists**: Proper formatting (bullets, numbers)
+
+**Checklist:**
+```markdown
+✓ All images have alt text
+✓ All links descriptive
+✓ Information accessible without color
+✓ Heading hierarchy correct
+✓ Code blocks highlighted
+✓ Tables have headers
+✓ Lists properly formatted
+```
+
+**Phase 2: Localization Readiness**
+
+Check documentation is localizable:
+
+1. **No hardcoded strings** in code samples
+2. **Strings use resource keys** (if applicable)
+3. **Numbers/dates in locale-neutral format**
+4. **No culture-specific examples** (when possible)
+5. **UI labels match component** (Syncfusion convention)
+6. **RTL compatibility** considered for UI text
+
+**Checklist:**
+```markdown
+✓ No hardcoded UI strings
+✓ Resource keys used
+✓ Locale-neutral formatting
+✓ Culture-neutral examples
+✓ Labels consistent
+✓ RTL considerations noted
+```
+
+**Phase 3: SEO Compliance**
+
+Verify SEO optimization:
+
+1. **Title**: "[Feature] in Blazor [Component]" (60 chars max)
+2. **Description**: Includes feature, component, use case (160 chars)
+3. **H1**: Single, matches title
+4. **Keywords**: Feature (2-3x), Component (2-3x), Blazor (1-2x)
+5. **Word count**: Minimum 500 words (best practice)
+6. **Readability**: Grade level 8-10 (Flesch score)
+7. **Internal links**: 3-5 relevant links to related docs
+
+**Validation Table:**
+```markdown
+| Element | Requirement | Status |
+|---------|------------|--------|
+| Title | 60 chars max | ✓ |
+| Description | 160 chars, keywords | ✓ |
+| H1 | Single, matches title | ✓ |
+| Keywords | Naturally used 2-3x | ✓ |
+| Word Count | ≥500 words | ✓ |
+| Readability | Grade 8-10 | ✓ |
+| Links | 3-5 internal | ✓ |
+```
+
+**Phase 4: Cross-Link Validation**
+
+Verify all links are correct:
+
+1. **Existence**: All links reference files that exist
+2. **Format**: Links use correct format:
+   - `[Text](/blazor/component/feature)` for same repo
+   - `[Text](https://help.syncfusion.com/...)` for external
+3. **Relevance**: Links are contextually appropriate
+4. **No duplicates**: Related section doesn't repeat links
+5. **Anchor links**: If using `#section`, verify section exists
+
+**Link Validation Matrix:**
+```markdown
+| Link | Target | Exists | Format | Status |
+|------|--------|--------|--------|--------|
+| Sorting | /blazor/data-grid/sorting | ✓ | ✓ | ✓ |
+| Filtering | /blazor/data-grid/filtering | ✓ | ✓ | ✓ |
+| Getting Started | /blazor/data-grid/getting-started | ✓ | ✓ | ✓ |
+```
+
+**Phase 5: Heading Consistency**
+
+Verify heading structure across documentation:
+
+1. **Single H1**: Only one `#` in entire document
+2. **Hierarchy**: H1 → H2 → H3 (no H4 without H3)
+3. **Pattern**: Use consistent heading patterns:
+   - `## [Feature Name]` for main sections
+   - `### How It Works` for subsections
+   - `### Configuration` for settings
+   - `### Example` for code samples
+4. **No orphaned headings**: Every H2 has multiple H3s or content
+5. **Length**: Headings clear and descriptive (3-8 words)
+
+**Heading Validation:**
+```markdown
+# [Feature] in Blazor [Component]          (H1) ✓
+## Enabling [Feature]                       (H2) ✓
+### How It Works                            (H3) ✓
+### Configuration                           (H3) ✓
+### Example                                 (H3) ✓
+## [Capability Name]                        (H2) ✓
+### How It Works                            (H3) ✓
+### Configuration                           (H3) ✓
+### Example                                 (H3) ✓
+## Events                                   (H2) ✓
+## API Reference                            (H2) ✓
+## See Also                                 (H2) ✓
+```
+
+**Decision Rule:**
+- If ALL phases ✓ Pass: PROCEED to final output
+- If ANY phase ✗ Fails: List issues and request fix (can proceed if minor)
 
 ---
 
