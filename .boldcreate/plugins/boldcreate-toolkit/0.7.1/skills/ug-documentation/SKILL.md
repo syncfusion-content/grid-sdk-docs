@@ -1,945 +1,518 @@
-# UG Documentation Skill - Strict Validation with Autonomous Execution
+# UG Documentation Skill - Production-Grade Syncfusion Documentation Generator
 
-Create production-ready user guide documentation by extracting explicit user input and proceeding autonomously when sufficient information exists.
+Generate production-ready Syncfusion User Guide documentation by extracting explicit user input, enforcing strict validation gates, and maintaining documentation integrity through reference-based authoring.
 
-**Level**: Advanced | **Mode**: Autonomous Cloud Agent | **Scope**: Platform-agnostic, all components
+**Level**: Advanced | **Mode**: Autonomous Cloud Agent | **Output**: Customer-facing documentation
 
 ---
 
 ## Core Philosophy
 
-**EXTRACTION ≠ ASSUMPTION**
+**EXTRACTION ≠ ASSUMPTION | SPECIFICATION ≠ DOCUMENTATION | REFERENCE ≠ CONTENT**
 
 ```
-✓ EXTRACT: Information explicitly provided by user (use immediately)
-✗ ASSUME: Information missing, inferred, or guessed (NEVER do this)
-✓ PROCEED: When all required information available (act autonomously)
-✗ CONFIRM: Unnecessary confirmation loops (eliminate these)
-```
-
----
-
-## Documentation Types
-
-- New Feature Documentation
-- Feature Enhancement Documentation
-- Documentation Correction
-- API Documentation Only
-- Event Documentation Only
-- Migration Documentation
-
----
-
-## Execution Model: Extract, Validate, Proceed
-
-### Step 1: Automatic Context Extraction (No Questions Yet)
-
-**When user provides request, extract ALL explicitly stated information:**
-
-```
-User Input:
-"Create documentation for Foreign Key feature using PR #2456."
-
-EXTRACT (Do NOT question):
-  ✓ Feature: Foreign Key (explicitly stated)
-  ✓ Source: PR #2456 (explicitly stated)
-  ✓ Type: New Feature (inferred from context as reasonable default)
-
-NO QUESTIONS ASKED YET
-```
-
-**Extraction Rules:**
-- Extract platform if explicitly named
-- Extract component if explicitly named
-- Extract feature if explicitly named
-- Extract source if URL, PR, or path provided
-- Infer type from context as default (New Feature, Enhancement, etc.)
-- Do NOT question what is explicitly provided
-
----
-
-### Step 2: Identify Missing Required Information
-
-**Check if all required fields are available:**
-
-```
-Required Fields:
-  ✓ Platform: Available?
-  ✓ Component: Available?
-  ✓ Feature: Available?
-  ✓ Source of Truth: Available?
-
-Optional Fields (infer if needed):
-  • Request Type: Can infer from context
-  • Feature Scope: Can use defaults
+✓ EXTRACT: Information explicitly provided by user
+✓ VERIFY: Feature content from specifications/source
+✓ REFERENCE: Structure/style from existing documentation
+✗ INVENT: Never generate unverified content
+✗ INFER: Never assume structure, style, or organization
 ```
 
 ---
 
-### Step 3: Request Clarification (ONLY for Missing Fields)
+## Required Inputs (User Must Provide)
 
-**If any required field is missing, ask ONLY for missing fields:**
+1. **Feature Name** - What feature is being documented?
+2. **Feature Source** - Specification, PR, source code, or design document
+3. **Documentation Reference** - Existing UG article, component docs, or authoring guideline
 
-```
-IF Feature unclear AND Source missing:
-
-Request:
-"Additional information required:
-
-□ Feature Name
-  (What feature is being documented?)
-
-□ Source of Truth
-  (Specification | PR | Code Repository | Design Document | Other)"
-
-WAIT for response with ONLY the missing information.
-
-Do NOT ask for already-provided information again.
-```
-
-**Clarification Rule:**
-- Ask only for genuinely missing information
-- Never ask for information already provided
-- Provide context for what is requested
+All three are mandatory. Documentation generation stops if any is missing.
 
 ---
 
-### Step 4: Proceed Autonomously (NO Confirmation Step)
-
-**When all required information is available, proceed immediately:**
+## Execution Workflow (Non-Bypassable)
 
 ```
-Required Information Available:
-  ✓ Platform: Blazor
-  ✓ Component: TreeGrid
-  ✓ Feature: Foreign Key
-  ✓ Source: PR #2456
-
-ACTION: Begin documentation generation immediately
-        (NO confirmation step needed)
+Step 1: Input Extraction & Validation
+Step 2: Feature Source Sufficiency Validation
+Step 3: Supported Feature Combination Validation
+Step 4: Documentation Reference Enforcement
+Step 5: Documentation Pattern Analysis
+Step 6: Feature Content Verification
+Step 7: Runnable Sample Validation
+Step 8: Documentation Generation
+Step 9: Syncfusion UG Quality Gate
+Step 10: Final Output
 ```
 
-**Proceed Automatically When:**
-- ✓ Platform available
-- ✓ Component available
-- ✓ Feature available
-- ✓ Source of Truth available
-
-**Do NOT ask:** "Is this correct? YES/NO" - This step is eliminated.
+Each step must complete before proceeding to the next.
 
 ---
 
-## Strict No-Assumption Policy
+## Step 1: Input Extraction & Validation
 
-### What NEVER to Assume
-
+**Extract:**
 ```
-❌ Never assume Feature Scope
-   User says "Create documentation"
-   → CANNOT assume all sections
-   → Use default scope or ask if ambiguous
-
-❌ Never assume Request Type
-   User says "Create documentation for feature"
-   → Can infer as New Feature (reasonable default)
-   → OK to proceed with inference
-
-❌ Never assume APIs/Events
-   → ONLY verify from provided source
-   → Never invent API names
-
-❌ Never assume Behavior
-   → Only document verified behavior from source
-   → Report gaps transparently
-
-❌ Never assume Feature Interactions
-   → Only from source verification
-   → Never infer from similar features
+✓ Feature Name: Explicitly stated
+✓ Feature Source: URL, PR, path, or reference
+✓ Documentation Reference: Existing article or guideline
 ```
 
-### What CAN Infer (Reasonably)
-
+**Validate:**
 ```
-✓ CAN infer Request Type from context
-  "Create X" → Probably New Feature
-  "Update X" → Probably Enhancement
-  "Fix X" → Probably Correction
+✓ All three mandatory inputs provided
+✓ Feature name is clear and unambiguous
+✓ Feature source is accessible or described
+✓ Documentation reference is accessible or described
+```
 
-✓ CAN infer Scope with defaults
-  No scope specified → Use standard sections
+**If missing:**
+```
+REQUEST (all missing information at once):
+"Please provide:
+□ Feature Name (exact, unambiguous)
+□ Feature Source (Spec URL | PR | Code path | Design doc | Other)
+□ Documentation Reference (Existing UG article | Component docs | Guidelines)"
 
-✓ CAN infer Type from component behavior
-  "Sorting in DataGrid" → Feature Enhancement (likely)
-
-✓ CAN infer implementation patterns
-  "Blazor DataGrid" → Use Razor/C# patterns
+WAIT for all three before proceeding.
 ```
 
 ---
 
-## Source Access Rules
+## Step 2: Feature Source Sufficiency Validation
 
-### Sources User Can Provide
-
-When user provides ANY of these, they are pre-approved for analysis:
-
+**Required feature information:**
 ```
-✓ Specification Document (URL or path)
-✓ Technical Design (URL or path)
-✓ Pull Request (PR number or URL)
-✓ Repository Path (code location)
-✓ Source Code File (direct or path)
-✓ Documentation Reference (URL)
+✓ Feature purpose (What does it do?)
+✓ Feature behavior (How does it work?)
+✓ Public APIs (Properties, Methods, Events if applicable)
+✓ Supported scenarios (What can users do?)
+✓ Limitations/restrictions (What doesn't work?)
 ```
 
-### Analysis Without Re-Permission
-
-**If user provides a source, analyze it immediately:**
-
+**Validation rules:**
 ```
-User: "Create Blazor DataGrid sorting documentation using PR #2456."
-
-Provided: PR #2456
-
-ACTION: Analyze PR #2456 immediately
-        (NO additional permission needed)
-        (Source is already approved)
+✓ ALL present → Continue
+◐ PARTIAL → Identify gaps, request only missing details
+✗ CRITICAL missing → STOP, request complete source
 ```
 
-**Rule:**
-- Provided sources are considered approved
-- Do not re-ask for permission
-- Analyze without additional confirmation
+**Critical rule:**
+```
+Never invent undocumented behavior.
+Never fill gaps using assumptions.
+```
+
+---
+
+## Step 3: Supported Feature Combination Validation
+
+**Validate feature interactions using feature source only:**
+
+```
+For target feature, verify:
+  ✓ Feature + Filtering (if applicable)
+  ✓ Feature + Sorting (if applicable)
+  ✓ Feature + Editing (if applicable)
+  ✓ Feature + Exporting (if applicable)
+  [Other relevant interactions]
+
+Validation rules:
+  ✓ Verified Supported → Document as supported
+  ✗ Verified Not Supported → Document as limitation
+  ? Unable to Verify → Flag "Requires Validation", do NOT document
+```
+
+**Critical rule:**
+```
+NEVER document interactions without source verification.
+NEVER infer feature parity with similar features.
+```
+
+---
+
+## Step 4: Documentation Reference Enforcement (CRITICAL)
+
+**This is the most critical gate. Do NOT skip or minimize.**
+
+**Purpose:** Extract documentation structure from existing documentation, NOT from inference or assumptions.
+
+**Required inputs:**
+```
+✓ Documentation Reference (existing UG article, component docs, or guideline)
+```
+
+**If missing:**
+```
+REQUEST:
+"Please provide a documentation reference:
+□ Existing User Guide article for this component
+□ Documentation for similar feature in same component
+□ Repository documentation standard/template
+□ Component authoring guideline"
+
+ANALYSIS CANNOT PROCEED WITHOUT REFERENCE.
+```
+
+**Analysis to extract:**
+```
+From reference document, analyze and document:
+  1. Heading hierarchy (H1, H2, H3 levels)
+  2. Section ordering (What comes first, second, etc.)
+  3. Learning flow (How topics are introduced)
+  4. Sample placement (When samples appear)
+  5. API reference placement (Where APIs documented)
+  6. Note formatting (Style for notes)
+  7. Warning formatting (Style for warnings)
+  8. Cross-reference structure (How links are formatted)
+  9. See Also section structure (How related topics listed)
+  10. Terminology (Specific terms used in component docs)
+```
+
+**Create Documentation Blueprint:**
+```
+From analysis, create explicit blueprint showing:
+  ✓ Exact heading levels to use
+  ✓ Exact section order
+  ✓ Exact note format
+  ✓ Exact warning format
+  ✓ Exact sample structure
+  ✓ Exact API placement
+```
+
+**Critical separation:**
+```
+Documentation Reference provides: Structure, style, organization ONLY
+Feature Source provides: All feature content (APIs, events, behavior, samples)
+
+NEVER use documentation reference for:
+  ✗ APIs (use feature source)
+  ✗ Events (use feature source)
+  ✗ Properties (use feature source)
+  ✗ Behaviors (use feature source)
+  ✗ Limitations (use feature source)
+  ✗ Sample logic (use feature source)
+```
+
+---
+
+## Step 5: Documentation Pattern Analysis
+
+**Input:** Documentation Reference (analyzed in Step 4)
+
+**Output:** Documentation Blueprint showing:
+
+```
+Heading Hierarchy:
+  # [Feature Name]
+  ## [Section Name]
+  ### [Subsection Name]
+  [etc.]
+
+Section Order:
+  1. [First section]
+  2. [Second section]
+  3. [Third section]
+  [etc.]
+
+Sample Placement:
+  [Where in document samples appear]
+
+API Reference Placement:
+  [Where API documentation appears]
+
+Note Format:
+  [Exact markdown/HTML format for notes]
+
+Warning Format:
+  [Exact markdown/HTML format for warnings]
+
+Terminology Mapping:
+  [Terms used in reference for specific concepts]
+```
+
+**Generation blocked until blueprint exists.**
+
+---
+
+## Step 6: Feature Content Verification
+
+**Verify every claimed feature against source:**
+
+```
+For every statement in documentation:
+  ✓ Trace to: Specification, source code, PR, test, or verified documentation
+  ✓ Verify: Statement accurately reflects source
+  
+If source cannot be found:
+  ✗ REMOVE the statement
+  ✗ Do NOT invent or assume
+```
+
+**Never generate without source backing:**
+```
+✗ Best practices (unless in source)
+✗ Recommendations (unless in source)
+✗ Performance tips (unless in source)
+✗ Migration advice (unless in source)
+✗ Known behaviors (unless in source)
+```
+
+---
+
+## Step 7: Runnable Sample Validation
+
+**Documentation samples must be runnable, not illustrative.**
+
+**Sample source priority:**
+```
+Priority 1: Existing UG sample (from same or similar feature)
+Priority 2: Existing product sample
+Priority 3: Existing test case
+Priority 4: Existing implementation pattern in source code
+Priority 5: Generated sample (last resort only)
+```
+
+**Before generating sample, verify:**
+```
+✓ All APIs referenced exist in source
+✓ All events referenced exist in source
+✓ All properties referenced exist in source
+✓ All models referenced exist in source
+✓ Feature combination verified as supported
+✓ Syntax valid for target platform
+```
+
+**Generated sample must:**
+```
+✓ Be self-contained (can run independently)
+✓ Include required imports/declarations
+✓ Include required model definitions
+✓ Include required datasource setup
+✓ Be conceptually compilable
+✓ Demonstrate the feature clearly
+```
+
+**Avoid:**
+```
+✗ Partial snippets (unless specifically showing code snippet)
+✗ Pseudo-code (use real, valid code)
+✗ Code without required setup
+✗ Code missing imports or models
+```
+
+---
+
+## Step 8: Documentation Generation
+
+**Generate using Documentation Blueprint from Step 5.**
+
+**Rules:**
+```
+✓ Use ONLY verified content from Steps 2-7
+✓ Follow exact structure from blueprint
+✓ Use exact formatting from blueprint
+✓ Use terminology from blueprint
+✓ Include only verified feature combinations
+✓ Use only backed samples
+```
+
+**Never:**
+```
+✗ Infer sections not in blueprint
+✗ Reorder sections from blueprint
+✗ Add content without source verification
+✗ Use different formatting than blueprint
+```
+
+---
+
+## Step 9: Syncfusion UG Quality Gate
+
+**Before final output, verify generated documentation:**
+
+```
+✓ Looks like a Syncfusion User Guide article
+✓ User scenarios presented before APIs
+✓ Examples presented before API reference
+✓ Structure matches documentation blueprint exactly
+✓ Terminology matches reference documentation
+✓ Samples are source-backed and runnable
+✓ All claims are verified from source
+✓ No invented content exists
+✓ No hallucinated sections exist
+```
+
+**Reject if resembles:**
+```
+✗ Technical Design document
+✗ Enhancement Proposal
+✗ Feature Specification
+✗ API Reference Only
+✗ Release Notes
+✗ Engineering documentation
+✗ Generic AI-generated content
+```
+
+**If quality gate fails:**
+```
+IDENTIFY: What failed and why
+REGENERATE: Address specific failure
+RE-VERIFY: Against quality criteria
+OR REPORT: Gaps preventing successful generation
+```
+
+---
+
+## Step 10: Final Output
+
+**Deliver:**
+```
+1. Documentation Content (markdown)
+   - Follows blueprint structure
+   - Source-backed content
+   - Runnable samples
+   - Verified interactions
+
+2. References Used
+   - Feature specification/source
+   - Documentation reference used
+   - Sample sources
+   - Verified feature combinations
+
+3. Known Gaps
+   - Content that could not be verified
+   - Interactions requiring clarification
+   - Samples requiring testing
+   - Areas needing validation
+
+4. Documentation Blueprint Used
+   - Structure applied
+   - Style conventions used
+   - Terminology mapping
+```
+
+---
+
+## Strict Content Verification Rules
+
+**For every content element:**
+
+```
+Heading: Must match blueprint structure
+Paragraph: Must trace to specification or source
+API: Must exist in source code
+Event: Must exist in source code
+Property: Must exist in source code
+Sample: Must use verified APIs from source
+Note: Must be formatted per blueprint
+Warning: Must be formatted per blueprint
+Example: Must demonstrate verified feature combination
+Limitation: Must be documented in source
+```
+
+**Hallucination Prevention:**
+```
+Before including any content:
+  ✓ Can I trace this to the feature source?
+  ✓ Is this actually documented or is it my inference?
+  ✓ Would a Syncfusion engineer recognize this?
+  
+If "maybe" or "probably":
+  → REMOVE and flag as gap
+  
+Never guess about feature behavior.
+Never invent best practices.
+Never assume interactions work.
+```
 
 ---
 
 ## Source Priority (When Conflicts Exist)
 
-**Use in this strict order:**
-
 ```
-Priority 1: Approved Specification Document
-Priority 2: Approved Technical Design Document
-Priority 3: Implemented Source Code
-Priority 4: Approved Pull Request
-Priority 5: Existing Documentation
-Priority 6: User Description/Narrative
+Priority 1: Specification document (approved, formal)
+Priority 2: Technical design document (approved, detailed)
+Priority 3: Source code (implemented truth)
+Priority 4: Pull request (includes changes and reasoning)
+Priority 5: Test cases (demonstrate behavior)
+Priority 6: Existing documentation (proven patterns)
+Priority 7: User explanation (if all above unavailable)
 ```
 
-**Conflict Resolution:**
-- Use highest-priority source
-- Report conflict under "Known Gaps"
-- Document discrepancy for user review
+**When sources conflict:**
+```
+✓ Use highest-priority source
+✓ Report conflict transparently
+✓ Flag for review
+```
 
 ---
 
-## Decision Matrix for Autonomous Execution
+## Decision Matrix
 
 | Situation | Action |
 |-----------|--------|
-| Feature clear, Source provided | **PROCEED IMMEDIATELY** |
-| Source missing | Ask ONLY for source |
-| Feature ambiguous | Ask for clarification (minimal) |
-| Information complete | **PROCEED IMMEDIATELY** |
-| Conflicting sources | Use highest priority, report conflict |
-| Minor verification gap | Generate and report gap |
-| Major source ambiguity | Request clarification before proceeding |
-
----
-
-## Interaction Pattern Examples
-
-### Example 1: Complete Request (Proceed Immediately)
-
-```
-User Input:
-"Create documentation for Foreign Key Column feature.
-Type: New Feature.
-Scope: APIs and Events.
-Source: PR #2456 with specification."
-
-Extract:
-  ✓ Feature: Foreign Key Column
-  ✓ Type: New Feature
-  ✓ Scope: APIs and Events
-  ✓ Source: PR #2456
-
-ACTION: Proceed immediately (no confirmation, no questions)
-
-Output: [Generate documentation directly]
-```
-
-### Example 2: Partial Request (Ask Only Missing)
-
-```
-User Input:
-"Create documentation for Foreign Key Column feature."
-
-Extract:
-  ✓ Feature: Foreign Key Column
-  ✗ Source: (NOT stated)
-
-ACTION: Ask only for missing information
-
-Request:
-"I found: Feature = Foreign Key Column
-
-Please provide:
-□ Source of Truth (Spec | PR | Code | Other)"
-
-(Do NOT ask for Feature again - already provided)
-```
-
-### Example 3: Ambiguous Request (Minimal Clarification)
-
-```
-User Input:
-"Create documentation for sorting feature."
-
-Extract:
-  ✓ Feature: Sorting
-  ✗ Source: (NOT stated)
-
-ACTION: Ask only missing required information
-
-Request:
-"Feature: Sorting detected
-
-Please provide:
-□ Source of Truth (Spec | PR | Code | Other)"
-
-(Minimal clarification, maximum extraction)
-```
-
----
-
-## Output Format (4 Sections)
-
-```
-1. Documentation Content
-   (Production-ready markdown)
-
-2. References Used
-   (Sources verified)
-
-3. Known Gaps
-   (Unresolved items, if any)
-
-4. Suggested Repository Updates
-   (File paths, TOC changes)
-```
-
----
-
-## Verification Status (No Confidence Percentages)
-
-When documenting verification, use:
-
-```
-✓ Verified       (Confirmed in source)
-◐ Partially Verified (Partial confirmation found)
-? Requires Validation (Mentioned but not verified)
-✗ Unable to Verify (Not found in sources)
-```
-
----
-
-## When to Proceed vs. When to Clarify
-
-### PROCEED Immediately When
-
-```
-✓ Feature: [Name provided]
-✓ Source: [Reference provided]
-
-→ All required fields present
-→ Begin documentation generation immediately
-```
-
-### REQUEST Clarification When
-
-```
-✗ Feature ambiguous ("that feature"?)
-✗ Source missing (no reference provided)
-✗ Information conflicts (sources disagree)
-
-→ Ask for missing/conflicting information ONLY
-→ Do not re-confirm already-provided information
-```
-
----
-
-## Rules Summary
-
-### Extraction Rules
-```
-✓ Extract all explicitly provided information
-✓ Use extracted information immediately
-✓ Do NOT question explicit user input
-✓ Do NOT ask user to repeat provided information
-```
-
-### Assumption Rules
-```
-❌ Never assume Feature Scope
-❌ Never assume APIs/Events
-❌ Never assume Behavior
-❌ Never assume Feature Interactions
-✓ Can infer Request Type as reasonable default
-✓ Can infer Scope with defaults
-```
-
-### Clarification Rules
-```
-✓ Ask ONLY for genuinely missing information
-✓ Ask ONLY for ambiguous information
-✓ Ask ONLY for conflicting information
-✗ Do NOT ask for complete info again
-✗ Do NOT ask for confirmation after all info collected
-```
-
-### Autonomy Rules
-```
-✓ Proceed immediately when all required info available
-✓ Analyze provided sources without re-permission
-✓ Use source priority when conflicts exist
-✓ Report gaps and conflicts transparently
-✗ Do NOT wait for confirmation
-✗ Do NOT repeat information collection
-```
-
----
-
-## Mandatory Validation Gates (Before Documentation Generation)
-
-**CRITICAL: All gates must be verified before proceeding to documentation generation. Do not bypass any gate.**
-
----
-
-### Gate 1: Supported Combination Validation
-
-**Purpose:** Ensure feature interactions are verified, not assumed.
-
-**Before generating documentation:**
-
-1. **Identify target feature**
-   ```
-   Example: Foreign Key Column
-   ```
-
-2. **Identify major related features** (for this component)
-   ```
-   Example for TreeGrid:
-     • Filtering
-     • Searching
-     • Sorting
-     • Editing
-     • Grouping
-     • Exporting
-     • Templates
-     • Virtualization
-   ```
-
-3. **Validate interactions using source-of-truth**
-   ```
-   For each feature combination:
-     TreeGrid + ForeignKey + Filtering → ✓/✗/? (VERIFY from source)
-     TreeGrid + ForeignKey + Sorting   → ✓/✗/? (VERIFY from source)
-     TreeGrid + ForeignKey + Editing   → ✓/✗/? (VERIFY from source)
-     etc.
-   ```
-
-**Validation Rules:**
-
-```
-✓ Verified Supported
-  → Include in documentation
-  → Example: "Foreign Key Column works with Filtering"
-
-✗ Verified Not Supported
-  → Document as limitation
-  → Example: "Foreign Key Column does not support GroupCaption templates"
-
-? Unable to Verify
-  → Flag as "Requires Validation"
-  → Do NOT document without verification
-  → Request additional source information
-```
-
-**Critical Rule:**
-```
-NEVER document cross-feature support without verification from 
-an approved source. Do NOT assume compatibility based on similar components.
-Do NOT infer behavior from DataGrid, Scheduler, Gantt, or any other component.
-```
-
-**Supported Interaction Examples (Validate Each):**
-
-- Filtering + Feature
-- Searching + Feature
-- Sorting + Feature
-- Editing + Feature
-- Grouping + Feature
-- Paging + Feature
-- Virtualization + Feature
-- Infinite Scrolling + Feature
-- Exporting + Feature
-- Templates + Feature
-- Aggregates + Feature
-- Row Drag and Drop + Feature
-- Lazy Loading + Feature
-- Custom Adaptor + Feature
-
----
-
-### Gate 2: Source Sufficiency Validation
-
-**Purpose:** Ensure provided source contains enough information for accurate documentation.
-
-**Before documentation generation:**
-
-1. **Verify source contains minimum required information**
-
-```
-Required Information:
-  ✓ Feature purpose (What does this feature do?)
-  ✓ Feature behavior (How does it work?)
-  ✓ Public APIs (Properties, methods, events)
-  ✓ Supported scenarios (What can users do with it?)
-  ✓ Limitations/restrictions (What doesn't work?)
-```
-
-2. **Accept source hierarchy** (highest priority first)
-
-```
-Priority 1: Specification
-Priority 2: Technical Design
-Priority 3: Approved Pull Request
-Priority 4: Source Code
-Priority 5: Existing Documentation
-Priority 6: User Explanation
-```
-
-**Validation Rules:**
-
-```
-✓ ALL required information available
-  → Continue to documentation generation
-
-◐ PARTIAL information available
-  → Identify missing sections
-  → Request ONLY missing details
-  → Do NOT proceed without critical information
-
-✗ CRITICAL information missing
-  → Stop documentation generation
-  → Request complete source information
-  → Never invent undocumented behavior
-  → Never fill gaps using assumptions
-```
-
-**What Counts as Source Insufficiency:**
-
-```
-❌ Behavior unclear or ambiguous
-❌ API signatures incomplete
-❌ Feature interactions undocumented
-❌ Limitations not stated
-❌ Source examples missing or incomplete
-❌ Conflicting information in source
-```
-
-**Gate Action:**
-
-```
-Before proceeding, explicitly verify:
-  ✓ Source is clear and unambiguous?
-  ✓ All required information present?
-  ✓ Conflicting information resolved?
-  
-If any answer is NO:
-  → Do NOT proceed
-  → Request clarification or additional source
-```
-
----
-
-### Gate 3: Documentation Standards Compliance
-
-**Purpose:** Ensure generated documentation matches target platform and component standards.
-
-**Before finalizing documentation:**
-
-1. **Verify documentation structure matches target**
-
-```
-Target Standard Elements:
-  ✓ Correct section ordering
-  ✓ Correct heading levels
-  ✓ Consistent terminology
-  ✓ Consistent formatting
-  ✓ Consistent sample structure
-  ✓ Consistent note/warning formatting
-  ✓ Consistent limitation formatting
-  ✓ Repository-specific authoring standards
-  ✓ Markdown conventions used in target
-```
-
-2. **Reference Standards Checklist**
-
-```
-HEADING HIERARCHY:
-  ✓ Follow existing documentation heading levels
-  ✓ Match section structure of similar features
-  
-TERMINOLOGY:
-  ✓ Use terms from existing component documentation
-  ✓ Use terms from existing platform documentation
-  ✓ Maintain consistency throughout documentation
-  
-FORMATTING:
-  ✓ Code block formatting matches repository
-  ✓ Note/warning formatting matches existing docs
-  ✓ Table formatting matches existing docs
-  ✓ List formatting matches existing docs
-  
-SAMPLES:
-  ✓ Sample structure matches platform conventions
-  ✓ Sample coding style matches platform standards
-  ✓ Sample naming matches platform conventions
-  ✓ Complete, working samples (not fragments)
-  
-LIMITATIONS:
-  ✓ Limitations section format matches docs
-  ✓ Clear statement of unsupported scenarios
-  ✓ Clear statement of unsupported combinations
-```
-
-3. **Validation Checklist (Before Finalizing)**
-
-```
-Section Ordering:
-  ✓ Introduction/Overview
-  ✓ APIs/Properties (if applicable)
-  ✓ Events (if applicable)
-  ✓ Supported Scenarios
-  ✓ Code Examples
-  ✓ Limitations/Restrictions
-  ✓ Related Topics (if applicable)
-  
-Heading Levels:
-  ✓ H1: Feature name
-  ✓ H2: Major sections
-  ✓ H3: Subsections
-  ✓ Match existing documentation pattern
-  
-Terminology:
-  ✓ Component name usage consistent
-  ✓ Feature name usage consistent
-  ✓ Platform terminology consistent
-  ✓ No conflicting terminology
-  
-Formatting:
-  ✓ Code samples properly formatted
-  ✓ Notes properly formatted
-  ✓ Warnings properly formatted
-  ✓ Tables properly formatted
-  ✓ Lists properly formatted
-```
-
-4. **If Documentation Reference Unavailable**
-
-```
-DO NOT guess the required structure.
-
-REQUEST:
-  ✓ Target documentation example
-  ✓ Reference document (existing similar feature)
-  ✓ Style guide or standards document
-  ✓ Repository authoring guidelines
-
-THEN:
-  → Generate documentation matching provided reference
-  → Verify compliance with provided standard
-  → Ensure consistency with provided reference
-```
-
-**Critical Rule:**
-```
-Documentation generation must NOT be completed unless 
-documentation standards compliance has been verified.
-
-If standards reference is not available:
-  ✗ Do NOT proceed with documentation generation
-  → Request standards reference/example document
-  → Wait for reference before generating
-```
-
----
-
-## Mandatory Validation Gate Sequence
-
-**EXECUTION ORDER (Do NOT skip any gate):**
-
-```
-Step 1: Gather and Validate Required Inputs
-         └─→ Extract: Platform, Component, Feature, Source
-
-Step 2: Verify Source Sufficiency
-         └─→ Check: Purpose, Behavior, APIs, Scenarios, Limitations
-         └─→ Action: If insufficient, request missing information
-         └─→ Status: Continue only if sufficient
-
-Step 3: Verify Supported Feature Combinations
-         └─→ Check: Feature interactions with other component features
-         └─→ Action: Validate each combination from source
-         └─→ Status: Document only verified combinations
-
-Step 4: Generate Documentation
-         └─→ Action: Create documentation using verified information
-         └─→ Constraint: Use ONLY verified information
-         └─→ Constraint: Do NOT invent or assume features
-
-Step 5: Verify Documentation Standards Compliance
-         └─→ Check: Structure, Headings, Terminology, Formatting
-         └─→ Action: Compare against target standard/reference
-         └─→ Status: Adjust if not compliant
-
-Step 6: Produce Final Output
-         └─→ Action: Deliver verified, standards-compliant documentation
-         └─→ Include: References, Gaps, Standards applied
-```
-
-**Gate Decision Logic:**
-
-```
-For each validation gate:
-  
-PASS (✓):
-  → Continue to next gate
-  
-FAIL (✗):
-  → STOP documentation generation
-  → Identify what failed
-  → Request necessary information or resources
-  → Wait for user input
-  
-PARTIAL (◐):
-  → Identify incomplete/insufficient areas
-  → Request ONLY missing information
-  → Continue only after insufficiency resolved
-```
-
----
-
-## Component-Specific Context Enforcement
-
-**CRITICAL RULE: Once Component is identified, operate in component isolation mode.**
-
-### Feature-Source Isolation Principle
-
-```
-After Feature and Source identified:
-
-Feature = [Feature Name]
-Source = [Provided Source]
-↓
-ALL analysis, verification, documentation, examples, 
-and recommendations MUST be based on PROVIDED SOURCE ONLY
-
-Do NOT import, copy, inherit, or assume behavior from:
-  ❌ Similar features
-  ❌ Other implementations
-  ❌ Undocumented sources
-  ❌ Inferred behavior
-
-UNLESS provided source explicitly states additional information
-```
-
-### Feature Interaction Validation (Pre-Generation)
-
-Before generating documentation, validate feature interactions based on provided source:
-
-```
-Example:
-  Feature: Foreign Key Column
-  Source: PR #2456
-
-Validate from source:
-  ✓ Foreign Key + Filtering?
-  ✓ Foreign Key + Sorting?
-  ✓ Foreign Key + Editing?
-  ✓ Foreign Key + Exporting?
-  
-Do NOT validate:
-  ✗ Features not in source
-  ✗ Assumed interactions (without source verification)
-  ✗ Inferred behavior
-```
-
-### Source-Based API Verification
-
-```
-RULE: Verify all APIs from provided source only
-
-Mandatory source-based verification:
-
-Include ONLY:
-  ✓ Properties documented in source
-  ✓ Events documented in source
-  ✓ Methods documented in source
-  ✓ Interfaces defined in source
-  ✓ Models/Enums defined in source
-
-Exclude UNLESS verified:
-  ❌ APIs not in provided source
-  ❌ Behavior not documented in source
-  ❌ Inferred or assumed APIs
-```
-
-### Source-Based Sample Generation
-
-```
-Rule: All samples MUST be based on provided source
-
-Example:
-  Feature: Foreign Key Column
-  Source: PR #2456 with code samples
-  
-Generate:
-  Use samples and patterns from provided source
-  Match syntax and conventions shown in source
-  
-Do NOT generate:
-  ❌ Samples not in source
-  ❌ Features not documented in source
-  ❌ Code using different patterns
-  
-Only use what is explicitly shown in provided source
-```
-
-### Source-Based Verification Checklist
-
-Before publishing documentation, verify ALL items are from provided source:
-
-```
-Verification Checklist:
-  ✓ Sample code matches source?
-  ✓ API references from source?
-  ✓ Event references from source?
-  ✓ Property references from source?
-  ✓ Behavioral statements match source?
-  ✓ Feature limitations verified from source?
-  ✓ Supported scenarios verified from source?
-  
-If any item fails verification:
-  → Remove from documentation
-  → Re-verify from provided source
-  → Report gap if verification impossible
-```
-
-### Feature Compatibility Matrix (Source-Based)
-
-Generate compatibility matrix based on provided source:
-
-```
-Example:
-Feature:     Foreign Key Column
-Source:      PR #2456
-
-Supported Combinations (verified from source):
-  ✓ Filtering + Foreign Key Column
-  ✓ Sorting + Foreign Key Column
-  ✓ Editing + Foreign Key Column
-  ✓ Searching + Foreign Key Column
-
-Partially Supported (verified from source):
-  ◐ Virtualization + Foreign Key Column
-
-Not Supported (verified from source):
-  ✗ Group Caption Templates
-  ✗ DetailRow Templates with Foreign Keys
-
-Note: Include ONLY what is documented in provided source
-```
-
-### Documentation Accuracy Rule (Source-Based)
-
-```
-Documentation must represent:
-
-[Feature] using provided [Source]
-
-Verify: All documented information comes from provided source
-```
-
-
-
----
-
-## Mandatory Validation Before Final Output
-
-**Component-Specific Accuracy Check (CRITICAL)**
-
-Before publishing documentation, confirm ALL of the following:
-
-```
-COMPONENT VERIFICATION:
-  ✓ All documented APIs belong to [Target Component]?
-  ✓ All documented Events belong to [Target Component]?
-  ✓ All samples use [Target Component] exclusively?
-  ✓ All supported combinations verified for [Target Component]?
-  ✓ No cross-component assumptions exist?
-  ✓ No content copied from another component without verification?
-
-If ANY verification item fails:
-  → Remove the problematic item from documentation
-  → Re-verify from component-specific source
-  → Report as gap if verification impossible
-  
-PLATFORM VERIFICATION:
-  ✓ Sample code syntax matches [Target Platform]?
-  ✓ API usage patterns match [Target Platform]?
-  ✓ Code conventions follow [Target Platform] standards?
-
-FEATURE VERIFICATION:
-  ✓ Feature behavior matches provided source?
-  ✓ All documented scenarios are verified?
-  ✓ Limitations explicitly stated from source?
-```
+| All inputs provided | PROCEED to Step 2 |
+| Feature source missing | REQUEST: "Feature source?" |
+| Documentation reference missing | REQUEST: "Documentation reference?" |
+| Feature behaviors unclear in source | REQUEST: "Clarify: [specific behavior]?" |
+| Feature combination unverified | FLAG: "Requires validation" |
+| Documentation blueprint missing | CREATE: Analyze reference first |
+| Sample cannot be sourced | FLAG: "Unable to source, requires manual creation" |
+| Content unverifiable | REMOVE: "No source available" |
+| Quality gate fails | REPORT: Specific failures, DO NOT force output |
 
 ---
 
 ## Success Criteria
 
-Documentation generation is complete when:
+Generated documentation must:
 
-1. ✓ All required information explicitly provided or extracted
-2. ✓ No invalid assumptions made
-3. ✓ Source(s) analyzed using priority order
-4. ✓ APIs/Events verified from component-specific source
-5. ✓ Code samples verified against component APIs
-6. ✓ All items belong to target component (verified)
-7. ✓ No cross-component content included
-8. ✓ Gaps reported transparently
-9. ✓ Output ready for repository commit
-10. ✓ Verification status clear (✓/◐/?/✗)
+```
+✓ Follow Syncfusion documentation standards exactly
+✓ Use reference only for structure and style (not content)
+✓ Source all feature content from specifications/source/PRs/tests
+✓ Provide source-backed, runnable samples
+✓ Prevent generic AI-generated documentation
+✓ Prevent hallucinated sections
+✓ Produce customer-facing UG documentation
+✓ Be indistinguishable from existing Syncfusion articles
+✓ Remain fully traceable to sources
+✓ Include transparent gap reporting
+```
 
 ---
 
-## Next Steps for User
+## Non-Bypassable Gates
 
-When requesting documentation:
+Documentation generation can ONLY proceed through these gates in order:
 
-**Provide explicitly:**
-- Platform (if requesting specific platform)
-- Component (if requesting specific component)
-- Feature or scope
-- Source (spec, PR, code path, etc.)
+1. ✓ Input Extraction & Validation
+2. ✓ Feature Source Sufficiency
+3. ✓ Supported Combinations
+4. ✓ Documentation Reference Enforcement (CRITICAL)
+5. ✓ Documentation Pattern Analysis
+6. ✓ Feature Content Verification
+7. ✓ Runnable Sample Validation
+8. ✓ Documentation Generation
+9. ✓ Syncfusion UG Quality Gate
+10. ✓ Final Output Delivery
 
-**The skill will then:**
-1. Extract your explicit information
-2. Identify any missing required fields
-3. Ask ONLY for genuinely missing information
-4. Proceed immediately when complete
-5. Generate and deliver documentation
+**No shortcuts. No skipping. No bypasses.**
+
+---
+
+## When to STOP (Do Not Proceed)
+
+```
+✗ Feature source missing or insufficient → Request source
+✗ Documentation reference missing → REQUEST reference
+✗ Feature behaviors cannot be verified → Request clarification
+✗ Feature combination unverifiable → Flag for manual verification
+✗ Sample cannot be sourced → Request sample or reference
+✗ Content cannot be traced to source → Remove content
+✗ Quality gate fails → Report failures, do NOT force output
+```
+
+**STOP means STOP. Do not force output. Report what's missing.**
