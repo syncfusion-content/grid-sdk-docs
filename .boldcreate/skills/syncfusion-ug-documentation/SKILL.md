@@ -104,6 +104,304 @@ Classify the request as one of:
 
 ---
 
+## Mandatory Validation Gates
+
+**Four mandatory validation gates must execute in sequence before any documentation generation begins. A failed gate stops execution immediately and requires the missing information from the user. Do not progress to the next phase when a gate fails.**
+
+### Gate 1: Strict Input Validation Gate
+
+**Objective:** Prevent documentation generation from insufficient inputs.
+
+Before analyzing documentation, verify that the request contains all mandatory context.
+
+#### Required Inputs
+
+All of the following must be explicitly provided by the user:
+
+- **Platform** – Blazor, Angular, React, Vue, WinForms, WPF, or other
+- **Component** – Specific component name (e.g., DataGrid, TreeGrid, DatePicker)
+- **Request Type** – New Feature, Enhancement, Event, API, Sub-feature, Breaking Change, Migration, Deprecation
+- **Feature Name** – Exact feature or API to document
+- **Feature Scope** – What is included/excluded in this documentation request
+- **Source of Truth** – At least one verified source:
+  - Approved Specification
+  - Approved Technical Design
+  - Merged Source Implementation
+  - Active Implementation PR
+  - Verified Component Source Code
+  - Existing Related Documentation
+
+#### Strict Validation Rules
+
+**These are non-negotiable. Do NOT infer or assume:**
+
+❌ Do not infer Platform  
+❌ Do not infer Component  
+❌ Do not infer Feature Name  
+❌ Do not infer Feature Scope  
+❌ Do not infer Documentation Intent  
+❌ Do not infer Source of Truth  
+
+#### Gate Response
+
+**If all required inputs are provided:**
+```
+✓ Gate 1 PASSED
+Proceed to Component Documentation Analysis
+```
+
+**If any required input is missing:**
+```
+✗ Gate 1 FAILED
+STOP.
+Request the missing information immediately.
+
+Missing Information:
+• [List each missing item]
+
+Do not begin any of:
+- Documentation analysis
+- Source verification
+- Documentation generation
+- TOC planning
+- Sample generation
+
+Until all mandatory inputs are available.
+```
+
+---
+
+### Gate 2: Source Sufficiency Gate
+
+**Objective:** Prevent documentation generation from insufficient evidence.
+
+Before attempting to verify or generate documentation, ensure there is adequate evidence available to accurately document the feature.
+
+#### Minimum Evidence Requirements
+
+At least **one** of the following must be available:
+
+- Approved specification (written, complete)
+- Approved technical design document
+- Merged source implementation (in component source code)
+- Active implementation PR (linked to request)
+- Verified component source code (API, behavior, events)
+- Existing related documentation (shows pattern)
+
+#### Evidence Must Cover
+
+The available evidence must be sufficient to verify:
+
+- Feature behavior (what it does)
+- User workflow (how to use it)
+- All APIs (properties, methods, parameters)
+- All events (event names, when triggered)
+- Event arguments (all args, types, descriptions)
+- Parameters (names, types, defaults, accepted values)
+- Limitations (what it cannot do)
+- Configuration requirements (setup, dependencies)
+- Sample implementation (runnable code patterns)
+
+#### Gate Response
+
+**If evidence is sufficient:**
+```
+✓ Gate 2 PASSED
+Evidence is sufficient to generate accurate documentation.
+Proceed to Source Verification.
+```
+
+**If evidence is incomplete or insufficient:**
+```
+✗ Gate 2 FAILED
+STOP.
+
+Missing Information Report:
+
+Evidence Status: INSUFFICIENT
+
+Current Evidence Available:
+• [List what IS available]
+
+Missing Evidence:
+• [List what is NOT available]
+
+Cannot Generate Documentation Because:
+• [Explain why evidence is insufficient]
+• [List what cannot be documented without evidence]
+
+Request the following from the user:
+• [Specific missing items needed]
+
+Verification Rule:
+Never generate placeholder documentation.
+Never speculate about undocumented behavior.
+Verification takes priority over completeness.
+```
+
+---
+
+### Gate 3: Supported Combination Validation Gate
+
+**Objective:** Prevent documentation that assumes undocumented feature combinations.
+
+Before documenting any feature, identify and verify all feature interactions and supported combinations with other component capabilities.
+
+#### Feature Combination Analysis
+
+Investigate the feature's behavior with all related component capabilities.
+
+For every feature being documented, identify and verify:
+
+- **Supported combinations** – Which features work together
+- **Unsupported combinations** – Which features cannot be used together
+- **Known limitations** – Edge cases, constraints, special conditions
+- **Behavioral differences** – How feature behaves differently in different contexts
+- **Special configuration requirements** – Setup needed for specific combinations
+
+#### Required Output
+
+For every feature documented, include a section documenting:
+
+```markdown
+## Supported Combinations
+
+### Works With:
+- Feature A
+- Feature B
+- Feature C
+
+### Does Not Work With:
+- Feature X (reason)
+- Feature Y (reason)
+
+### Known Limitations:
+- [Limitation 1]
+- [Limitation 2]
+
+### Configuration Requirements:
+- [If using Feature A, configure X]
+- [If using Feature B, configure Y]
+```
+
+#### Gate Response
+
+**If combinations can be verified:**
+```
+✓ Gate 3 PASSED
+Feature combinations verified.
+Proceed to documentation generation.
+
+Verified Combinations:
+• [List supported combinations]
+
+Known Limitations:
+• [List any limitations]
+```
+
+**If combination support cannot be verified:**
+```
+✗ Gate 3 FAILED (Non-blocking)
+
+Verification Required – Combination support not verified.
+
+Cannot Verify These Combinations:
+• [List combinations that cannot be verified]
+
+Action:
+• Mark these sections as "Verification Required – Combination support not verified"
+• Request confirmation from user or component owner
+
+Never assume cross-feature compatibility.
+
+You may proceed with documenting verified combinations only.
+```
+
+---
+
+### Gate 4: Component-Specific Documentation Validation Gate
+
+**Objective:** Ensure documentation follows component-specific conventions.
+
+Documentation must follow the exact conventions established by existing documentation for the target component. The generated output must be indistinguishable from existing component documentation.
+
+#### Repository Convention Analysis
+
+Before generating any documentation, analyze existing documentation for **the same component**.
+
+Identify and document:
+
+- **Naming conventions** – How features are named in this component
+- **Existing terminology** – Technical terms, abbreviations used
+- **Documentation hierarchy** – How content is organized (sections, subsections)
+- **Feature categorization** – How similar features are grouped
+- **File organization** – Where documentation files are located
+- **Navigation structure** – How readers move between topics
+- **Sample architecture** – How code samples are structured
+- **API presentation style** – How properties/methods are documented
+- **Event presentation style** – How events are documented
+- **Cross-linking patterns** – How related topics link to each other
+- **TOC placement patterns** – Where new docs fit in table of contents
+
+#### Documentation Format Reference Rule
+
+**Repository documentation conventions always override generic skill guidance.**
+
+**Priority Hierarchy:**
+1. Follow repository conventions (definitive source of truth)
+2. Follow component-specific conventions
+3. Use skill guidance only when no repository pattern exists
+
+#### Examples
+
+**TreeGrid Documentation**
+- Must follow TreeGrid documentation patterns
+- Cannot copy structures from DataGrid docs (even if similar)
+- Must match TreeGrid TOC organization
+- Must match TreeGrid terminology
+
+**DataGrid Documentation**
+- Must follow DataGrid documentation patterns
+- Cannot copy structures from TreeGrid docs
+- Must match DataGrid TOC organization
+- Must match DataGrid API naming conventions
+
+#### Gate Response
+
+**If conventions can be verified and followed:**
+```
+✓ Gate 4 PASSED
+Component documentation conventions identified and will be followed.
+
+Conventions to Follow:
+• [Naming convention: describe]
+• [Hierarchy: describe]
+• [File organization: describe]
+• [Sample architecture: describe]
+• [Cross-linking: describe]
+
+Proceed to documentation generation.
+```
+
+**If conventions are unclear or conflict with skill guidance:**
+```
+⚠️ Gate 4 CONFLICT DETECTED
+
+Repository Pattern: [Description]
+Skill Guidance: [Description]
+
+Resolution:
+Repository pattern takes priority.
+
+Action:
+Follow repository pattern exactly.
+Ignore conflicting skill guidance.
+
+Proceed with repository-aligned documentation.
+```
+
+---
+
 ## Documentation Structure & Templates
 
 ### Required Metadata (YAML Frontmatter)
@@ -559,42 +857,227 @@ Before finalizing **any** documentation, verify:
 
 ## Documentation Generation Workflow
 
-### Phase 1: Intake & Verification (Required)
+**The workflow consists of 9 mandatory phases. A failed gate stops execution and requires user action. Do not progress to the next phase when the current phase fails.**
 
-1. **Clarify request** – Component, platform, feature
-2. **Analyze patterns** – Study related docs
-3. **Verify sources** – Check component code/CR
-4. **Classify type** – New feature, enhancement, etc.
-5. **Flag missing info** – Identify gaps early
+### Phase 1: Strict Input Validation Gate
 
-### Phase 2: Documentation Structure
+**Objective:** Verify all required inputs are available.
 
-1. **Create metadata** – YAML frontmatter
-2. **Write introduction** – What, why, how
-3. **Plan sections** – Outline based on feature
-4. **Identify examples** – What code samples are needed
+**Tasks:**
+1. Request clarification on Component, Platform, Request Type, Feature Name, Feature Scope, Source of Truth
+2. Execute Gate 1: Strict Input Validation (see Gate 1 section above)
+3. If Gate 1 FAILED → STOP and request missing information
+4. If Gate 1 PASSED → Proceed to Phase 2
 
-### Phase 3: Content Creation
+**Stop Conditions:**
+- Platform unclear or missing
+- Component unclear or missing
+- Feature name not specified
+- Feature scope undefined
+- Source of truth not identified
 
-1. **Write feature explanation** – Verified only
-2. **Add code examples** – Compile-ready
-3. **Document events** – Using event template
-4. **Document APIs** – Using API template
-5. **Add cross-links** – Valid URLs only
+---
 
-### Phase 4: Quality Assurance
+### Phase 2: Component Documentation Analysis
 
-1. **Review checklist** – All items verified
-2. **Check samples** – Compile-ready, production-quality
-3. **Validate metadata** – SEO compliance
-4. **Proof tone** – Professional, beginner-friendly
-5. **Test links** – All URLs valid
+**Objective:** Analyze existing documentation patterns for the component.
 
-### Phase 5: Repository Integration
+**Tasks:**
+1. Locate existing documentation for the component in repository
+2. Analyze and document:
+   - Metadata format patterns
+   - H1/H2/H3 hierarchy conventions
+   - Introduction section style
+   - Event documentation format (if applicable)
+   - API documentation format
+   - Code sample structure
+   - Cross-linking patterns
+   - File naming and organization
+   - TOC structure
+3. Document all patterns for reference during generation
 
-1. **Determine file location** – Correct path
-2. **Update TOC** – Show exact changes
-3. **Commit ready** – Zero or minimal edits needed
+**Output:**
+- Component-specific pattern guide (documented for Phase 4)
+
+**Proceed to Phase 3**
+
+---
+
+### Phase 3: Source Sufficiency Gate
+
+**Objective:** Verify adequate evidence is available for accurate documentation.
+
+**Tasks:**
+1. Execute Gate 2: Source Sufficiency (see Gate 2 section above)
+2. Identify available evidence:
+   - Specification documents
+   - Technical design documents
+   - Source code (location)
+   - Implementation PRs
+   - Existing related documentation
+3. Verify evidence covers all required areas (behavior, APIs, events, samples, limitations)
+4. If Gate 2 FAILED → STOP and request missing evidence
+5. If Gate 2 PASSED → Proceed to Phase 4
+
+**Stop Conditions:**
+- No approved specification or design
+- Source code not accessible
+- No existing related documentation
+- Evidence does not cover required areas
+
+---
+
+### Phase 4: Source Verification
+
+**Objective:** Verify all documented items against authoritative sources.
+
+**Tasks:**
+1. For each API/property/method to document:
+   - Locate in component source code or CR
+   - Verify name, type, default value, accepted values
+   - Document verification source
+2. For each event to document:
+   - Locate in EventArgs class
+   - Verify all event arguments and types
+   - Document verification source
+3. For each behavior/limitation:
+   - Verify in source code or specification
+   - Document verification source
+4. Flag any items that cannot be verified
+5. Proceed to Phase 5
+
+**Output:**
+- List of verified items with sources
+- List of unverifiable items (marked for user)
+
+---
+
+### Phase 5: Supported Combination Validation Gate
+
+**Objective:** Verify and document feature combinations.
+
+**Tasks:**
+1. Execute Gate 3: Supported Combination Validation (see Gate 3 section above)
+2. Identify all related component features
+3. For each related feature, verify:
+   - Does it work with the current feature?
+   - Any special configuration needed?
+   - Any known limitations or edge cases?
+4. Document supported and unsupported combinations
+5. Document any configuration requirements
+6. If Gate 3 FAILED (non-blocking) → Mark unverifiable combinations
+7. Proceed to Phase 6
+
+**Output:**
+- Supported combinations list
+- Unsupported combinations list
+- Configuration requirements
+- Known limitations and edge cases
+
+---
+
+### Phase 6: Component-Specific Validation Gate
+
+**Objective:** Ensure documentation follows component-specific conventions.
+
+**Tasks:**
+1. Execute Gate 4: Component-Specific Documentation Validation (see Gate 4 section above)
+2. Apply component-specific naming conventions
+3. Match component-specific terminology
+4. Follow component documentation hierarchy
+5. Use component-standard feature categorization
+6. Place documentation in correct component file structure
+7. Match component cross-linking patterns
+8. Identify correct TOC placement for component
+9. If conflicts with skill guidance → Repository pattern takes priority
+10. Proceed to Phase 7
+
+**Output:**
+- Documentation structure validated for component
+- TOC placement identified
+- All conventions documented
+
+---
+
+### Phase 7: Documentation Creation
+
+**Objective:** Generate documentation using verified information and component conventions.
+
+**Tasks:**
+1. **Metadata:** Create YAML frontmatter with SEO keywords
+2. **Introduction:** Write beginner-friendly explanation
+3. **Content:** Add feature sections with verified information only
+4. **Examples:** Create compile-ready code samples (verified platforms)
+5. **Events:** Document using event template (if applicable)
+6. **APIs:** Document using API template (if applicable)
+7. **Combinations:** Add supported/unsupported combinations section
+8. **Cross-links:** Add valid links to related features
+9. **Limitations:** Document any known limitations
+10. Proceed to Phase 8
+
+**Output:**
+- Complete documentation markdown
+- All samples compile-ready
+- All links verified
+- All APIs/events verified
+
+---
+
+### Phase 8: Quality Assurance
+
+**Objective:** Validate documentation before repository integration.
+
+**Tasks:**
+1. **Self-Review Checklist:**
+   - [ ] No API assumptions
+   - [ ] No event assumptions
+   - [ ] No behavior assumptions
+   - [ ] All verified items have source attribution
+   - [ ] All unverifiable items marked "Verification Required"
+   - [ ] Metadata SEO-compliant
+   - [ ] Single H1, correct hierarchy
+   - [ ] Code samples compile-ready
+   - [ ] All links valid (no 404s)
+   - [ ] Professional tone, no marketing language
+   - [ ] Component conventions followed
+   - [ ] Repository patterns matched exactly
+   - [ ] No undocumented assumptions
+
+2. **Validation Results:**
+   - All items ✓ → Proceed to Phase 9
+   - Any items ✗ → Return to Phase 7 for fixes
+
+**Output:**
+- Self-review checklist (all ✓)
+
+---
+
+### Phase 9: Repository Integration
+
+**Objective:** Prepare documentation for repository commit.
+
+**Tasks:**
+1. **Determine file location:**
+   - Existing feature → Add to existing file
+   - New independent feature → Create new `.md` file
+   - Sub-feature → Create subdirectory or subsection
+2. **Update TOC:**
+   - Identify parent section
+   - Create new TOC node
+   - Show exact TOC changes needed
+3. **Final checks:**
+   - Zero or minimal edits required
+   - Follows all repository patterns
+   - Ready for immediate commit
+   - All verification complete
+
+**Output:**
+- Complete documentation ready to commit
+- Exact file path
+- Exact TOC changes needed
+- Ready for repository integration
+
+**Workflow Complete** → Documentation ready for commit
 
 ---
 
@@ -677,6 +1160,8 @@ Generate documentation in this exact order:
 
 ## Success Criteria
 
+### Core Success Criteria
+
 ✓ Documentation engineer can review output without additional context  
 ✓ All cited sources are verifiable  
 ✓ Documentation can be committed with zero or minimal edits  
@@ -684,6 +1169,44 @@ Generate documentation in this exact order:
 ✓ No assumptions about undocumented features  
 ✓ SEO-compliant and professional tone  
 ✓ Repository-ready quality  
+
+### Validation Gate Success Criteria
+
+✓ **Gate 1 Compliance:**
+  - No documentation generated from insufficient inputs
+  - All required inputs explicitly provided and verified
+  - No inferred or assumed information
+
+✓ **Gate 2 Compliance:**
+  - No documentation generated from insufficient evidence
+  - All documented items verified against authoritative sources
+  - Unverifiable items explicitly flagged as "Verification Required"
+
+✓ **Gate 3 Compliance:**
+  - Supported and unsupported feature combinations documented
+  - Cross-feature limitations documented
+  - No undocumented compatibility assumptions
+  - Configuration requirements specified
+
+✓ **Gate 4 Compliance:**
+  - Component-specific documentation conventions followed exactly
+  - Output indistinguishable from existing component documentation
+  - Repository documentation patterns are authoritative source
+  - All naming, terminology, hierarchy match component standards
+
+✓ **Documentation Behavior Accuracy:**
+  - Documentation behavior matches actual component capabilities
+  - All events verified to exist in component
+  - All APIs verified in component source or CR
+  - All defaults verified against component source
+  - All accepted values verified
+  - No undocumented internal implementation details exposed
+
+✓ **Overall Quality:**
+  - 9-phase workflow completed successfully
+  - All gates passed or failures resolved
+  - Self-review checklist 100% ✓
+  - Repository-ready for immediate commit  
 
 ---
 
