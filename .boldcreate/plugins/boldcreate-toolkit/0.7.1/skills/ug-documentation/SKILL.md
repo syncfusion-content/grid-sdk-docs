@@ -1,20 +1,26 @@
-# UG Documentation Skill - Optimized for Enterprise
+# UG Documentation Skill - Platform-Agnostic & Enterprise-Grade
 
-Create repository-ready Syncfusion Blazor User Guide documentation with evidence-based accuracy.
+Create repository-ready Syncfusion User Guide documentation for any platform with evidence-based accuracy.
 
-**Level**: Advanced | **Mode**: Autonomous Cloud Agent | **Token Footprint**: 60-70% reduction
+**Level**: Advanced | **Mode**: Autonomous Cloud Agent | **Token Footprint**: 60-70% reduction | **Platforms**: All Syncfusion
 
 ---
 
 ## Overview
 
-This optimized skill produces documentation that is:
+This platform-agnostic skill produces documentation that is:
 - **Repository-ready**: Commit with minimal/no edits
 - **Evidence-based**: Every API/event verified in source code
-- **Standards-compliant**: Follows Syncfusion Blazor patterns
+- **Standards-compliant**: Follows platform-specific standards
 - **Assumption-free**: Explicit identification of gaps
 - **SEO-optimized**: Natural keyword integration
 - **Enterprise-grade**: 10/10 maintainability
+- **Platform-aware**: Supports all Syncfusion platforms
+
+**Supported Platforms:**
+- Blazor, JavaScript, Angular, React, Vue
+- ASP.NET Core, ASP.NET MVC, MAUI
+- WinForms, WPF, Flutter, Xamarin
 
 **Supported Documentation Modes:**
 - Mode A: New Feature Documentation
@@ -26,15 +32,99 @@ This optimized skill produces documentation that is:
 
 ---
 
-## Execution Model: Two-Stage Workflow
+## Pre-Discovery: Information Collection Gate
 
-### Stage 1: Discovery (Lightweight Scan)
+**STOP if any required information is missing.**
 
-Execute ONCE before proceeding to Stage 2.
+### Required Information Checklist
+
+**Before proceeding to Discovery, validate:**
+
+```
+☐ Platform specified (Blazor, Angular, React, Vue, etc.)
+☐ Component identified (DataGrid, TreeGrid, Scheduler, etc.)
+☐ Request type known (New Feature, Enhancement, Correction, etc.)
+☐ Feature scope defined (APIs, Events, Capabilities documented)
+☐ Source of truth available (Spec, Code, PR, Requirements)
+```
+
+### Clarification Questions (Ask if missing)
+
+**Platform**
+```
+What platform is this documentation for?
+
+Options:
+- Blazor
+- JavaScript
+- Angular
+- React
+- Vue
+- ASP.NET Core
+- ASP.NET MVC
+- MAUI
+- WinForms
+- WPF
+- Flutter
+- Xamarin
+```
+
+**Component**
+```
+Which Syncfusion component is being documented?
+
+Examples: DataGrid, TreeGrid, Scheduler, Kanban, Gantt, Diagram, Chart, etc.
+```
+
+**Request Type**
+```
+What type of documentation is requested?
+
+- New Feature Documentation
+- Feature Enhancement Documentation
+- Existing Documentation Update
+- Existing Documentation Correction
+- API Documentation Only
+- Event Documentation Only
+- Migration Documentation
+```
+
+**Additional Info (if New Feature/Enhancement)**
+```
+Provide the following:
+
+1. Feature Name: [Name]
+2. Feature Summary: [Brief description]
+3. Specification Details: [URL or attachment]
+4. Implementation Details: [Available?]
+5. Feature PR/Branch: [If available]
+6. Supported Scenarios: [List]
+7. Related APIs: [List]
+8. Related Events: [List]
+9. Sample Requirements: [Yes/No]
+```
+
+**Source of Truth Priority**
+
+Use sources in this order:
+
+1. Approved Specification Document
+2. Approved Technical Design Document
+3. Source Code Implementation
+4. Feature Pull Request
+5. Existing Documentation (for reference only)
+6. User-Provided Requirements
+
+---
+
+## Stage 1: Discovery (Lightweight Scan)
+
+Execute ONCE after information collection.
 
 **Automatically Identify:**
 
 ```
+Platform:                [Blazor/Angular/React/Vue/etc.]
 Component Name:          [Extract from context]
 Feature Name:            [Extract from request]
 Documentation Type:      [Mode A-F]
@@ -43,49 +133,82 @@ Source Files:            [List component files]
 Related APIs:            [From feature scope]
 Related Events:          [From feature scope]
 TOC Update Required:     [Yes/No]
+Platform Standards Path: [Locate existing docs]
 ```
 
 **Confidence Check:**
+- Platform known? YES/NO
 - Component accessible? YES/NO
 - Source files located? YES/NO
 - Existing docs found? YES/NO
 
 **Output:** Discovery Summary (1-2 paragraphs max)
 
-**Decision:** PROCEED to Stage 2 only if 90%+ confident
+**Decision:** PROCEED to Stage 2 only if 90%+ confident. If <90%: STOP and request clarification.
 
 ---
 
-### Stage 2: Verification & Generation (Targeted Scan)
+## Stage 2: Verification & Generation (Targeted Scan)
 
 Verify ONLY the APIs/events actually used in documentation.
 
-**Phase 1: Source Verification**
+**Phase 1: Platform Standards Extraction**
+
+Before generating, locate and review existing documentation for the same platform:
+
+1. Find 2-3 similar features in the platform's existing documentation
+2. Extract:
+   - Documentation structure (sections, hierarchy)
+   - Terminology (platform-specific naming)
+   - Code sample format (language, syntax, conventions)
+   - Formatting style (tables, code blocks, notes)
+   - SEO patterns (titles, metadata, keywords)
+   - API documentation style (properties, methods, events format)
+   - Repository organization (file paths, naming conventions)
+
+**IMPORTANT:** Use only as reference patterns. Never copy content, examples, or descriptions.
+
+**Phase 2: Source Verification**
 
 For each API/event mentioned:
-1. Locate source file (Component.cs, *Events.cs)
+1. Locate source file (Component.cs, *Events.cs, index.js, component.ts, etc.)
 2. Extract: Name, Type, Default Value, Accepted Values
 3. Record source location (file + line number)
 4. Mark verification status (Verified/Requires Evidence)
 
 **Do NOT** perform repository-wide scanning.
 
-**Phase 2: Evidence Matrix Generation**
+**Platform-Specific Source File Patterns:**
+
+| Platform | File Pattern | Notes |
+|----------|-------------|-------|
+| Blazor | Component.cs, *Events.cs | C# implementation |
+| JavaScript | component.js, component.d.ts | JS/TS files |
+| Angular | component.ts, *.events.ts | TypeScript |
+| React | component.tsx, component.ts | TypeScript/JSX |
+| Vue | component.vue, component.ts | Vue SFC or TS |
+| ASP.NET Core | Component.cs | C# implementation |
+| MAUI | Handler.cs, Component.cs | C# implementation |
+| WinForms | Component.cs, Designer.cs | C# implementation |
+| WPF | Component.cs, Attached.cs | C# implementation |
+| Flutter | component.dart | Dart implementation |
+| Xamarin | Component.cs | C# implementation |
+
+**Phase 3: Evidence Matrix Generation**
 
 Create compact verification table:
 
 ```markdown
 | Item | Type | Source File | Status |
 |------|------|-------------|--------|
-| AllowSorting | Property | Grid.cs:45 | ✓ Verified |
-| SortMode | Enum | Grid.cs:67 | ✓ Verified |
-| OnSorting | Event | GridEvents.cs:23 | ✓ Verified |
-| OnSorted | Event | GridEvents.cs:34 | ✓ Verified |
+| PropertyName | Property | Component.cs:45 | ✓ Verified |
+| EventName | Event | Component.events.ts:23 | ✓ Verified |
+| MethodName | Method | Component.ts:67 | ✓ Verified |
 ```
 
 Use checkmarks (✓) for verified, (?) for needs evidence.
 
-**Phase 3: Confidence Scoring**
+**Phase 4: Confidence Scoring**
 
 Calculate confidence per area:
 
@@ -113,23 +236,29 @@ Calculate confidence per area:
 
 Execute ONLY if documentation includes code examples.
 
-**Phase 1: Namespace Validation**
+**Phase 1: Language-Specific Syntax Validation**
 
-For each code sample:
-1. Extract `using` statements
-2. Verify namespaces are correct:
-   - `using Syncfusion.Blazor.Grids;` (DataGrid)
-   - `using Syncfusion.Blazor.TreeGrid;` (TreeGrid)
-   - `using Syncfusion.Blazor.Schedules;` (Scheduler)
-   - etc.
-3. Verify no missing namespaces
-4. Record status: ✓ Valid or ? Missing
+For each code sample, validate language-specific requirements:
+
+| Platform | Validates |
+|----------|-----------|
+| Blazor | using statements, Razor syntax, @code block |
+| JavaScript | require/import, variable declarations, callbacks |
+| Angular | imports, decorators, TypeScript types, services |
+| React | imports, JSX syntax, hooks, prop types |
+| Vue | template, script, style syntax, SFC format |
+| ASP.NET Core | using statements, async/await, dependency injection |
+| MAUI | using statements, XAML (if applicable), C# syntax |
+| WinForms | using statements, event handlers, control hierarchy |
+| WPF | using statements, XAML, data binding syntax |
+| Flutter | import statements, Dart syntax, widgets |
+| Xamarin | using statements, XAML, C# syntax |
 
 **Phase 2: API Usage Validation**
 
 For each code sample:
 1. Verify all APIs used exist in source code
-2. Verify property names match source exactly
+2. Verify property/method names match source exactly
 3. Verify event names match source exactly
 4. Verify method signatures are correct
 5. Record status: ✓ Valid or ? Invalid API
@@ -137,7 +266,7 @@ For each code sample:
 **Phase 3: Compilation Check**
 
 For each code sample:
-1. Verify Blazor syntax is correct
+1. Verify syntax is correct for the platform
 2. Verify type declarations are valid
 3. Verify event bindings are correct
 4. Verify component hierarchy is valid
@@ -146,8 +275,8 @@ For each code sample:
 **Validation Matrix:**
 
 ```markdown
-| Sample # | Namespaces | API Usage | Compilation | Status |
-|----------|-----------|-----------|-------------|--------|
+| Sample # | Syntax | API Usage | Compilation | Status |
+|----------|--------|-----------|-------------|--------|
 | 1 | ✓ | ✓ | ✓ | ✓ Valid |
 | 2 | ✓ | ✓ | ✓ | ✓ Valid |
 | 3 | ? | ✓ | ✗ | ? Needs Fix |
@@ -156,6 +285,112 @@ For each code sample:
 **Decision Rule:**
 - If ALL samples ✓ Valid: PROCEED to Stage 8.5
 - If ANY sample ✗ Invalid: List errors and STOP (do not proceed)
+
+---
+
+### Stage 8.5: Global Standards Check
+
+Execute BEFORE final output delivery.
+
+**Phase 1: Platform Accessibility Compliance**
+
+Check documentation meets platform accessibility standards:
+
+| Platform | Accessibility Standards |
+|----------|------------------------|
+| Blazor | WCAG 2.1 AA (web standard) |
+| JavaScript | WCAG 2.1 AA (web standard) |
+| Angular | WCAG 2.1 AA (web standard) |
+| React | WCAG 2.1 AA (web standard) |
+| Vue | WCAG 2.1 AA (web standard) |
+| ASP.NET Core | WCAG 2.1 AA (web standard) |
+| ASP.NET MVC | WCAG 2.1 AA (web standard) |
+| MAUI | MAUI Accessibility Guidelines |
+| WinForms | WCAG 2.1 AA (desktop adapted) |
+| WPF | WCAG 2.1 AA (desktop adapted) |
+| Flutter | Flutter Accessibility Guidelines |
+| Xamarin | Xamarin Accessibility Guidelines |
+
+**Checklist:**
+```markdown
+✓ All images have alt text
+✓ All links descriptive
+✓ Information accessible without color
+✓ Heading hierarchy correct
+✓ Code blocks highlighted
+✓ Tables have headers
+✓ Lists properly formatted
+✓ Keyboard navigation (if applicable)
+✓ Screen reader compatible
+```
+
+**Phase 2: Localization Readiness**
+
+Check documentation is localizable:
+
+1. **No hardcoded strings** in code samples
+2. **Strings use resource keys/i18n** (if applicable)
+3. **Numbers/dates in locale-neutral format**
+4. **No culture-specific examples** (when possible)
+5. **UI labels match component** (Platform convention)
+6. **RTL compatibility** considered for UI text
+
+**Checklist:**
+```markdown
+✓ No hardcoded UI strings
+✓ Resource keys used (if applicable)
+✓ Locale-neutral formatting
+✓ Culture-neutral examples
+✓ Labels consistent
+✓ RTL considerations noted
+```
+
+**Phase 3: Platform-Specific SEO**
+
+Verify SEO optimization for platform documentation:
+
+1. **Title**: "[Feature] in [Platform] [Component]" (60 chars max)
+   - Examples:
+     - Sorting in Blazor DataGrid
+     - Sorting in React DataGrid
+     - Sorting in Angular DataGrid
+
+2. **Description**: Includes feature, platform, component, use case (160 chars)
+3. **H1**: Single, matches title
+4. **Keywords**: Feature (2-3x), Platform (1-2x), Component (2-3x)
+5. **Word count**: Minimum 500 words (best practice)
+6. **Readability**: Grade level 8-10
+7. **Internal links**: 3-5 relevant links to related docs
+
+**Phase 4: Cross-Link Validation**
+
+Verify all links are correct for the platform:
+
+1. **Existence**: All links reference existing files in platform-specific path
+2. **Format**: Correct format for same-repo/external links
+3. **Relevance**: Links are contextually appropriate
+4. **No Duplicates**: Related section doesn't repeat links
+5. **Anchor Links**: Verify referenced sections exist
+
+**Example Platform Link Formats:**
+- Blazor: `/blazor/components/data-grid/sorting`
+- Angular: `/angular/components/data-grid/sorting`
+- React: `/react/components/data-grid/sorting`
+- Vue: `/vue/components/data-grid/sorting`
+
+**Phase 5: Heading Consistency**
+
+Verify heading structure matches platform standards:
+
+1. **Single H1**: Only one `#` in entire document
+2. **Hierarchy**: H1 → H2 → H3 (no gaps, matches platform pattern)
+3. **Pattern**: Consistent heading patterns across platform
+4. **No Orphans**: Every H2 has content or H3s
+5. **Length**: Clear and descriptive (3-8 words)
+
+**Decision Rule:**
+- If ALL phases ✓ pass: PROCEED to Stage 9
+- If ANY phase ✗ fails: REQUEST FIX (can proceed if minor)
 
 ---
 
@@ -168,54 +403,11 @@ For each code sample:
 1. **Classify** – Document type (Phase 1)
 2. **Discover** – Identify all scope items (Stage 1)
 3. **Verify** – Targeted API/Event verification (Stage 2)
-4. **Structure** – Generate markdown (Phase 4)
-5. **Validate** – Self-review (Phase 8)
-6. **Deliver** – 9-section output (Phase 9)
-
-**Skip:** Pattern analysis (reuse existing), full repository search
-
-**Section Template:**
-
-```markdown
----
-layout: post
-title: [Feature] in Blazor [Component]
-description: Learn how to use [Feature] in Syncfusion Blazor [Component]. Includes examples and API reference.
-platform: Blazor
-control: [Component]
-documentation: ug
----
-
-# [Feature] in Blazor [Component]
-
-[1 paragraph definition]
-
-## Enabling [Feature]
-
-[Configuration code block]
-
-## [Capability 1]
-
-### How It Works
-[Explanation]
-
-### Configuration
-[Code]
-
-### Example
-[Verified code]
-
-## Events
-
-[Verified events table]
-
-## API Reference
-
-[Verified properties table]
-
-## See Also
-- [Related docs]
-```
+4. **Validate Samples** – Code compilation (Stage 4.5)
+5. **Structure** – Generate markdown (Phase 4)
+6. **Standards Check** – Accessibility, SEO, links (Stage 8.5)
+7. **Self-Review** – Final validation (Phase 8)
+8. **Deliver** – 9-section output (Phase 9)
 
 ### Mode B: Enhancement Documentation
 
@@ -224,13 +416,11 @@ documentation: ug
 1. **Classify** – Enhancement type (Phase 1)
 2. **Discover** – Locate existing doc, identify changes (Stage 1)
 3. **Verify** – New APIs/Events only (Stage 2)
-4. **Update** – Merge into existing markdown (Phase 4)
-5. **Validate** – Self-review (Phase 8)
-6. **Deliver** – 9-section output, note existing content (Phase 9)
-
-**Skip:** Full content generation if existing doc is sound
-
-**Output:** Document existing sections + new sections + evidence matrix
+4. **Validate Samples** – New code compilation (Stage 4.5)
+5. **Update** – Merge into existing markdown (Phase 4)
+6. **Standards Check** – Full standards validation (Stage 8.5)
+7. **Self-Review** – Final validation (Phase 8)
+8. **Deliver** – 9-section output, note existing content (Phase 9)
 
 ### Mode C: Documentation Correction
 
@@ -239,73 +429,78 @@ documentation: ug
 1. **Classify** – Correction type (Phase 1)
 2. **Discover** – Locate existing doc (Stage 1)
 3. **Verify** – Only corrected sections (Stage 2)
-4. **Update** – Fix errors in place (Phase 4)
-5. **Validate** – Self-review (Phase 8)
-6. **Deliver** – 9-section output, note original + corrections (Phase 9)
-
-**Skip:** APIs/Events already verified in existing doc
+4. **Validate Samples** – Corrected code only (Stage 4.5)
+5. **Update** – Fix errors in place (Phase 4)
+6. **Standards Check** – Corrected sections (Stage 8.5)
+7. **Self-Review** – Final validation (Phase 8)
+8. **Deliver** – 9-section output, note original + corrections (Phase 9)
 
 ### Mode D: API Documentation Only
 
 **Execute these phases ONLY:**
 
 1. **Classify** – API scope (Phase 1)
-2. **Discover** – Locate Component.cs (Stage 1)
+2. **Discover** – Locate Component source (Stage 1)
 3. **Verify** – Extract all properties/methods (Stage 2)
 4. **Structure** – Generate API reference table (Phase 5)
-5. **Validate** – Self-review (Phase 8)
-6. **Deliver** – 5-section output (Phase 9)
-
-**Output:** Evidence Matrix + API Reference Table + Self-Review + Status
+5. **Standards Check** – SEO, links (Stage 8.5)
+6. **Self-Review** – Final validation (Phase 8)
+7. **Deliver** – 5-section output (Phase 9)
 
 ### Mode E: Event Documentation Only
 
 **Execute these phases ONLY:**
 
 1. **Classify** – Event scope (Phase 1)
-2. **Discover** – Locate *Events.cs (Stage 1)
+2. **Discover** – Locate *Events source (Stage 1)
 3. **Verify** – Extract all events + arguments (Stage 2)
-4. **Structure** – Generate event reference table (Phase 5)
-5. **Validate** – Self-review (Phase 8)
-6. **Deliver** – 5-section output (Phase 9)
-
-**Output:** Evidence Matrix + Event Reference Table + Examples + Self-Review + Status
+4. **Validate Samples** – Event handler examples (Stage 4.5)
+5. **Structure** – Generate event reference table (Phase 5)
+6. **Standards Check** – Accessibility, links (Stage 8.5)
+7. **Self-Review** – Final validation (Phase 8)
+8. **Deliver** – 5-section output (Phase 9)
 
 ### Mode F: Migration Documentation
 
 **Execute these phases ONLY:**
 
 1. **Classify** – Migration type (Phase 1)
-2. **Discover** – Locate old + new component sources (Stage 1)
-3. **Verify** – Breaking changes + new alternatives (Stage 2)
-4. **Structure** – Before/After comparison (Phase 4)
-5. **Validate** – Self-review (Phase 8)
-6. **Deliver** – 9-section output with comparison matrix (Phase 9)
-
-**Output:** Breaking Changes Table + Migration Guide + Examples + Status
+2. **Discover** – Locate old + new sources (Stage 1)
+3. **Verify** – Breaking changes + alternatives (Stage 2)
+4. **Validate Samples** – Before/after code (Stage 4.5)
+5. **Structure** – Before/After comparison (Phase 4)
+6. **Standards Check** – Full standards (Stage 8.5)
+7. **Self-Review** – Final validation (Phase 8)
+8. **Deliver** – 9-section output with comparison (Phase 9)
 
 ---
 
-## Source Priority & Verification Rules
+## Critical Rules
 
-### Source Priority (in order):
+### Assumption Prevention (NEVER DO)
 
-1. Component source code (*.cs)
-2. Event argument classes (*EventArgs.cs)
-3. API reference documentation
-4. Existing User Guide
-5. Feature specification
+❌ Invent APIs  
+❌ Invent events  
+❌ Invent default values  
+❌ Invent behaviors  
+❌ Invent platform support  
+❌ Copy content from another component  
+❌ Copy examples from another component  
+❌ Copy API descriptions from another component  
+❌ Assume unverified feature behaviors  
+❌ Proceed without sufficient information  
 
-### Verification Rules:
+### Information Collection (ALWAYS DO)
 
-✓ **Verify ONLY if used** in documentation  
-✓ **Record source location** (file + line)  
-✓ **Use confidence scoring** per item  
-✓ **Stop searching** when confidence >95%  
-✓ **Mark gaps explicitly** if <95%  
-✗ **Never assume** APIs exist  
-✗ **Never guess** default values  
-✗ **Never invent** event names  
+✓ Collect platform, component, scope before starting  
+✓ Verify source of truth is available  
+✓ Extract platform standards from existing docs  
+✓ Use reference patterns ONLY (no copying)  
+✓ Verify every API against source code  
+✓ Verify every event against source code  
+✓ Stop if confidence falls below 95%  
+✓ Mark all gaps explicitly  
+✓ Request clarification for ambiguities  
 
 ---
 
@@ -316,9 +511,11 @@ Deliver documentation in this exact order:
 ```
 1. Classification
    - Type: [Mode A-F]
+   - Platform: [Blazor/Angular/React/etc.]
    - Reasoning: [1 sentence]
 
 2. Discovery Summary
+   - Platform: [Name]
    - Component: [Name]
    - Feature: [Name]
    - Scope: [Items list]
@@ -333,14 +530,17 @@ Deliver documentation in this exact order:
    Overall: [Score] - [Ready/Needs Evidence]
 
 5. Repository Actions
+   - Platform Path: [Path]
    - File: [Path]
    - Action: [New/Update/Correct]
    - TOC: [Changes if needed]
 
-6. SEO Metadata
-   ✓ Title
-   ✓ Description
-   ✓ Keywords
+6. Platform Standards Validation
+   ✓ Accessibility
+   ✓ Localization
+   ✓ SEO
+   ✓ Cross-links
+   ✓ Headings
 
 7. Markdown Content
    [Complete, ready-to-commit]
@@ -351,319 +551,10 @@ Deliver documentation in this exact order:
 
 9. Commit Readiness
    Status: [Ready/Needs Review]
+   Platform: [Confirmed]
+   Confidence: [Score]
    Reason: [If not ready]
 ```
-
----
-
-## Key Optimization Rules
-
-### Reduce Token Consumption:
-
-✓ Use tables instead of prose  
-✓ Use checklist marks (✓/?) instead of descriptions  
-✓ Consolidate similar rules  
-✓ Remove redundant explanations  
-✓ Use templates, not repetitive instructions  
-
-### Fast Execution:
-
-✓ Execute Stage 1 ONCE  
-✓ Verify ONLY used APIs/events  
-✓ Use confidence-based stopping  
-✓ No repository-wide scanning  
-✓ No repeated checks  
-
-### Component Agnostic:
-
-✓ Replace "DataGrid" with "[Component]"  
-✓ Replace feature names with "[Feature]"  
-✓ Use generic templates  
-✓ Document by pattern, not example  
-
-### Repository Intelligence:
-
-✓ Determine file path automatically  
-✓ Calculate TOC changes automatically  
-✓ Verify URLs exist (no blind links)  
-✓ Identify parent section automatically  
-
----
-
-### Stage 8.5: Global Standards Check
-
-Execute BEFORE final output delivery.
-
-**Phase 1: Accessibility Validation**
-
-Check documentation meets accessibility standards:
-
-1. **Images**: All images have alt text descriptions
-2. **Links**: All links have descriptive text (not "click here")
-3. **Color**: No information conveyed by color alone
-4. **Headings**: Proper hierarchy (H1 → H2 → H3, no gaps)
-5. **Code Blocks**: Syntax highlighting present
-6. **Tables**: Header row marked properly
-7. **Lists**: Proper formatting (bullets, numbers)
-
-**Checklist:**
-```markdown
-✓ All images have alt text
-✓ All links descriptive
-✓ Information accessible without color
-✓ Heading hierarchy correct
-✓ Code blocks highlighted
-✓ Tables have headers
-✓ Lists properly formatted
-```
-
-**Phase 2: Localization Readiness**
-
-Check documentation is localizable:
-
-1. **No hardcoded strings** in code samples
-2. **Strings use resource keys** (if applicable)
-3. **Numbers/dates in locale-neutral format**
-4. **No culture-specific examples** (when possible)
-5. **UI labels match component** (Syncfusion convention)
-6. **RTL compatibility** considered for UI text
-
-**Checklist:**
-```markdown
-✓ No hardcoded UI strings
-✓ Resource keys used
-✓ Locale-neutral formatting
-✓ Culture-neutral examples
-✓ Labels consistent
-✓ RTL considerations noted
-```
-
-**Phase 3: SEO Compliance**
-
-Verify SEO optimization:
-
-1. **Title**: "[Feature] in Blazor [Component]" (60 chars max)
-2. **Description**: Includes feature, component, use case (160 chars)
-3. **H1**: Single, matches title
-4. **Keywords**: Feature (2-3x), Component (2-3x), Blazor (1-2x)
-5. **Word count**: Minimum 500 words (best practice)
-6. **Readability**: Grade level 8-10 (Flesch score)
-7. **Internal links**: 3-5 relevant links to related docs
-
-**Validation Table:**
-```markdown
-| Element | Requirement | Status |
-|---------|------------|--------|
-| Title | 60 chars max | ✓ |
-| Description | 160 chars, keywords | ✓ |
-| H1 | Single, matches title | ✓ |
-| Keywords | Naturally used 2-3x | ✓ |
-| Word Count | ≥500 words | ✓ |
-| Readability | Grade 8-10 | ✓ |
-| Links | 3-5 internal | ✓ |
-```
-
-**Phase 4: Cross-Link Validation**
-
-Verify all links are correct:
-
-1. **Existence**: All links reference files that exist
-2. **Format**: Links use correct format:
-   - `[Text](/blazor/component/feature)` for same repo
-   - `[Text](https://help.syncfusion.com/...)` for external
-3. **Relevance**: Links are contextually appropriate
-4. **No duplicates**: Related section doesn't repeat links
-5. **Anchor links**: If using `#section`, verify section exists
-
-**Link Validation Matrix:**
-```markdown
-| Link | Target | Exists | Format | Status |
-|------|--------|--------|--------|--------|
-| Sorting | /blazor/data-grid/sorting | ✓ | ✓ | ✓ |
-| Filtering | /blazor/data-grid/filtering | ✓ | ✓ | ✓ |
-| Getting Started | /blazor/data-grid/getting-started | ✓ | ✓ | ✓ |
-```
-
-**Phase 5: Heading Consistency**
-
-Verify heading structure across documentation:
-
-1. **Single H1**: Only one `#` in entire document
-2. **Hierarchy**: H1 → H2 → H3 (no H4 without H3)
-3. **Pattern**: Use consistent heading patterns:
-   - `## [Feature Name]` for main sections
-   - `### How It Works` for subsections
-   - `### Configuration` for settings
-   - `### Example` for code samples
-4. **No orphaned headings**: Every H2 has multiple H3s or content
-5. **Length**: Headings clear and descriptive (3-8 words)
-
-**Heading Validation:**
-```markdown
-# [Feature] in Blazor [Component]          (H1) ✓
-## Enabling [Feature]                       (H2) ✓
-### How It Works                            (H3) ✓
-### Configuration                           (H3) ✓
-### Example                                 (H3) ✓
-## [Capability Name]                        (H2) ✓
-### How It Works                            (H3) ✓
-### Configuration                           (H3) ✓
-### Example                                 (H3) ✓
-## Events                                   (H2) ✓
-## API Reference                            (H2) ✓
-## See Also                                 (H2) ✓
-```
-
-**Decision Rule:**
-- If ALL phases ✓ Pass: PROCEED to final output
-- If ANY phase ✗ Fails: List issues and request fix (can proceed if minor)
-
----
-
-## Verification Checklist (Compact)
-
-Before final output:
-
-```
-Content:
-  ☐ All APIs verified in source
-  ☐ All events verified in source
-  ☐ No assumptions about behavior
-  ☐ Default values confirmed
-
-Code:
-  ☐ Samples use verified APIs only
-  ☐ Samples compile-ready
-  ☐ Blazor syntax correct
-
-SEO:
-  ☐ Single H1: "[Feature] in Blazor [Component]"
-  ☐ Keywords natural (2-3x each)
-  ☐ Beginner-friendly
-
-Metadata:
-  ☐ Title follows pattern
-  ☐ Description includes keywords
-  ☐ Platform: Blazor
-  ☐ Control: Correct component name
-
-Repository:
-  ☐ File path determined
-  ☐ TOC changes explicit
-  ☐ All links verified
-  ☐ No placeholder text
-
-Missing:
-  ☐ All gaps listed explicitly
-  ☐ Or: No gaps (100% verified)
-```
-
-**Stop if ANY checkbox cannot be ✓ marked.**
-
----
-
-## Common Patterns (Reusable Templates)
-
-### API Documentation Row
-
-```markdown
-| [APIName] | [Type] | [Default] | [Description] |
-```
-
-### Event Documentation Row
-
-```markdown
-| [EventName] | [Handler] | [Trigger] | [Use Case] |
-```
-
-### Capability Section
-
-```markdown
-### [Capability]
-
-#### How It Works
-[Brief explanation]
-
-#### Configuration
-[Code block]
-
-#### Example
-[Verified code or N/A]
-```
-
-### Note/Tip/Warning
-
-```markdown
-> **Note** – [Important clarification]
-> **Tip** – [Best practice]
-> **Warning** – [Critical information]
-```
-
-### SEO Title Pattern
-
-```
-# [Feature] in Blazor [Component]
-```
-
-**Examples (all components):**
-- # Sorting in Blazor DataGrid
-- # Sorting in Blazor TreeGrid
-- # Sorting in Blazor Scheduler
-- # Editing in Blazor Kanban
-- # Export in Blazor Diagram
-
----
-
-## Intelligence Rules
-
-### Automatic File Path Detection
-
-```
-IF new feature documentation:
-  path = docs/blazor/components/[component]/[feature].md
-
-IF enhancement to existing:
-  path = [existing file path]
-
-IF correction:
-  path = [existing file path]
-```
-
-### Automatic TOC Detection
-
-```
-IF new file created:
-  Find TOC file: docs/blazor/components/[component]/toc.yml
-  Add entry under appropriate parent
-  Show exact BEFORE/AFTER change
-
-IF existing file updated:
-  No TOC change required
-```
-
-### Automatic URL Verification
-
-```
-FOR each link in "See Also" section:
-  Verify file exists in repository
-  Use actual path from file system
-  Never invent URLs
-```
-
----
-
-## Critical Don'ts
-
-❌ Do NOT assume APIs exist  
-❌ Do NOT guess default values  
-❌ Do NOT invent event names  
-❌ Do NOT make up code samples  
-❌ Do NOT skip the Discovery phase  
-❌ Do NOT modify TOC blindly  
-❌ Do NOT include unverified URLs  
-❌ Do NOT scan entire repository  
-❌ Do NOT duplicate verification steps  
-❌ Do NOT generate output below 95% confidence  
 
 ---
 
@@ -671,19 +562,69 @@ FOR each link in "See Also" section:
 
 Documentation is **READY TO COMMIT** when ALL are true:
 
-1. ✓ 95%+ verification confidence
-2. ✓ All APIs traced to source (file + line)
-3. ✓ All events traced to source (file + line)
-4. ✓ Default values confirmed
-5. ✓ Code samples compile-ready
-6. ✓ SEO metadata valid
-7. ✓ Heading structure correct
-8. ✓ All links verified to exist
-9. ✓ Repository actions explicit
-10. ✓ Self-review complete
-11. ✓ No placeholder text remains
+1. ✓ Platform information confirmed
+2. ✓ 95%+ verification confidence
+3. ✓ All APIs traced to source (file + line)
+4. ✓ All events traced to source (file + line)
+5. ✓ Default values confirmed
+6. ✓ Code samples compile-ready & platform-correct
+7. ✓ Accessibility standards met
+8. ✓ SEO metadata valid for platform
+9. ✓ Heading structure correct
+10. ✓ All links verified to exist
+11. ✓ Repository actions explicit
 
 If ANY criterion fails: **STOP and list gaps**. Do not generate output.
+
+---
+
+## Using This Skill
+
+1. **State Documentation Mode** (A-F)
+2. **Provide Platform Name**
+3. **Provide Component Name**
+4. **Provide Feature/Scope**
+5. **Provide Source Code Access**
+6. **Skill Validates Information Checklist**
+7. **Skill Executes Two-Stage Workflow**
+8. **Deliver 9-Section Output**
+9. **Documentation is Ready for Commit**
+
+---
+
+## Platform-Specific Notes
+
+### Blazor
+
+- Follow Syncfusion Blazor User Guide standards
+- C# component files (Component.cs, *Events.cs)
+- Razor markup syntax
+- Using statements for Syncfusion.Blazor.*
+- Refer to existing Blazor documentation for patterns
+
+### JavaScript/TypeScript Platforms (Angular, React, Vue)
+
+- Follow platform-specific documentation standards
+- JavaScript/TypeScript source files (.ts, .tsx, .vue, .js)
+- Platform-specific import/require syntax
+- Platform-specific code sample conventions
+- Refer to existing platform-specific documentation for patterns
+
+### Desktop Platforms (WinForms, WPF, MAUI)
+
+- Follow platform documentation standards
+- C# implementation files
+- Designer files (if applicable)
+- XAML files (if applicable)
+- Refer to existing platform documentation for patterns
+
+### Mobile Platforms (Flutter, Xamarin)
+
+- Follow platform documentation standards
+- Dart (.dart) or C# (.cs) source files
+- Platform-specific package/using syntax
+- Mobile-specific code sample conventions
+- Refer to existing platform documentation for patterns
 
 ---
 
@@ -691,10 +632,13 @@ If ANY criterion fails: **STOP and list gaps**. Do not generate output.
 
 When using this skill:
 
-1. **State Documentation Mode** (A-F)
-2. **Provide Component Name**
-3. **Provide Feature/Scope**
-4. **Provide Access to Source Code**
-5. **Skill Executes Two-Stage Workflow**
-6. **Deliver 9-Section Output**
-7. **Document is Ready for Commit**
+1. **Validate Required Information** (information collection gate)
+2. **Extract Platform Standards** (from existing docs)
+3. **Execute Discovery** (Stage 1)
+4. **Execute Verification** (Stage 2)
+5. **Validate Samples** (Stage 4.5, if applicable)
+6. **Generate Content** (Modes A-F)
+7. **Global Standards Check** (Stage 8.5)
+8. **Self-Review** (Stage 8)
+9. **Deliver Output** (9 sections)
+10. **Documentation Ready for Commit**
