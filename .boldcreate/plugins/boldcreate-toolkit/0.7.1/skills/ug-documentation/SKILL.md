@@ -20,16 +20,17 @@ Generate production-ready Syncfusion User Guide documentation by extracting expl
 
 ---
 
-## Required Inputs (All Six Mandatory - No Exceptions)
+## Required Inputs (Five Mandatory - No Exceptions)
 
 1. **Platform** - Blazor, EJ2 JavaScript, Angular, React, Vue, ASP.NET Core, MAUI, WinUI, WPF, or other
 2. **Component** - Grid, TreeGrid, Scheduler, Gantt, Diagram, Kanban, Pivot Table, Charts, or other
 3. **Request Type** - New Feature Documentation, Existing Documentation Update, API Documentation Update, Feature Enhancement Documentation, Migration Documentation, Bug Behavior Documentation, Cross-Feature Documentation, or Other
 4. **Feature Name** - Exact feature being documented (specific, unambiguous)
 5. **Feature Source** - Specification, Design Document, PR, Source Code, Work Item, Test Cases, or other approved source
-6. **Documentation Reference** - Existing UG article, component documentation, documentation template, authoring guideline, or approved documentation reference
 
-**All six inputs are mandatory.** Documentation generation cannot proceed until all six are explicitly provided by the user. No assumptions. No inferences. No defaults.
+**All five inputs are mandatory.** Documentation generation cannot proceed until all five are explicitly provided by the user. No assumptions. No inferences. No defaults.
+
+**Documentation Reference:** Determined automatically during Step 4 (Documentation Reference Enforcement).
 
 ---
 
@@ -144,25 +145,6 @@ IF MISSING or VAGUE: STOP
 REQUEST: "What is the feature source?"
 ```
 
-**Documentation Reference Validation:**
-```
-✓ Must identify existing documentation to use as structure template
-✓ Must be one of: Existing UG article, component documentation,
-                  documentation template, authoring guideline,
-                  approved documentation reference
-✓ Must be accessible or clearly described
-✗ REJECT: Missing documentation reference
-✗ REJECT: "Follow standard documentation"
-✗ REJECT: "Use documentation patterns"
-
-ACCEPT: "Reference: TreeGrid column editing UG article",
-        "Template: /docs/templates/feature-documentation.md",
-        "Guideline: Syncfusion Angular documentation style guide"
-
-IF MISSING: STOP
-REQUEST: "What is the documentation reference?"
-```
-
 ### Anti-Assumption Enforcement
 
 Before proceeding to Step 2, verify:
@@ -187,10 +169,6 @@ Can Feature Name be PROVEN from user input?
 Can Feature Source be PROVEN from user input?
   ✓ YES → Continue
   ✗ NO → STOP, REQUEST: "Please specify feature source explicitly"
-
-Can Documentation Reference be PROVEN from user input?
-  ✓ YES → Continue
-  ✗ NO → STOP, REQUEST: "Please specify documentation reference"
 ```
 
 ### Mandatory Missing Input Gate
@@ -220,13 +198,12 @@ Please provide all of the following:
 □ Feature Source (Specification | Design Document | PR | Source Code | 
                  Work Item | Test Cases | Other - must be specific)
 
-□ Documentation Reference (Existing UG article | Component docs | 
-                          Template | Authoring guideline | Other - must be specific)
-
 Documentation generation cannot proceed until all mandatory inputs are supplied.
 ```
 
-**WAIT for user response with all six inputs before proceeding to Step 2.**
+**WAIT for user response with all five inputs before proceeding to Step 2.**
+
+Note: Documentation Reference will be automatically determined during Step 4.
 
 ### Step 1 Success Criteria
 
@@ -237,13 +214,14 @@ All of the following must be true:
 ✓ Request Type is explicitly stated and verifiable
 ✓ Feature Name is specific and unambiguous
 ✓ Feature Source is identified and accessible
-✓ Documentation Reference is identified and accessible
 ✓ No assumptions made for any input
 ✓ No inference used for any input
 ✓ All inputs are explicit user-provided values
 
 If all criteria met: Continue to Step 2
 If any criterion not met: STOP and request missing information
+
+Note: Documentation Reference determination is deferred to Step 4.
 
 ---
 
