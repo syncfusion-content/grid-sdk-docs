@@ -6,6 +6,343 @@ Create repository-ready Syncfusion User Guide documentation for any platform wit
 
 ---
 
+## 🛑 **MANDATORY: Information Collection Gate - FIRST STEP**
+
+**CRITICAL RULE: Do not proceed to Discovery until this gate is complete.**
+
+---
+
+### Information Completeness Validation
+
+**BEFORE performing ANY of the following:**
+- ❌ Start Discovery
+- ❌ Analyze repositories
+- ❌ Analyze source code
+- ❌ Search existing documentation
+- ❌ Search similar features
+- ❌ Search similar components
+- ❌ Extract platform standards
+- ❌ Generate documentation plans
+- ❌ Generate documentation drafts
+
+**FIRST: Validate that sufficient information is available.**
+
+---
+
+### Vague Request Detection
+
+If ANY required information is missing, incomplete, ambiguous, or cannot be confidently determined:
+
+**STOP IMMEDIATELY**
+
+Do NOT infer, assume, or fill gaps. Instead:
+
+1. **Identify** which information is missing
+2. **Ask the user** for the missing information
+3. **Wait** for the user response
+4. **Validate** completeness before proceeding
+
+---
+
+### Processing Rule (MANDATORY)
+
+```
+Step 1: Information Collection
+         ↓
+Step 2: Validate Completeness
+         ↓
+Step 3: Confirm All Required Inputs Available
+         ↓
+Step 4: Begin Discovery
+         ↓
+Step 5: Extract Platform Standards
+         ↓
+Step 6: Verify Evidence
+         ↓
+Step 7: Generate Documentation
+```
+
+**DISCOVERY MUST NEVER BEGIN BEFORE STEP 3 IS COMPLETE**
+
+---
+
+### Golden Rule
+
+**If required information is missing, ask the user immediately.**
+
+Never attempt to:
+- ❌ Fill gaps using assumptions
+- ❌ Infer details from existing documentation
+- ❌ Use similar components as reference
+- ❌ Infer behavior from related features
+- ❌ Assume repository patterns
+- ❌ Assume platform-specific details
+
+**User-provided information ALWAYS takes precedence over assumptions.**
+
+---
+
+### Required Information Checklist
+
+**VALIDATE ALL items before proceeding:**
+
+```
+☐ Platform specified
+   (Blazor, Angular, React, Vue, JavaScript, ASP.NET Core, ASP.NET MVC, MAUI, WinForms, WPF, Flutter, Xamarin)
+
+☐ Component identified
+   (DataGrid, TreeGrid, Scheduler, Kanban, Gantt, Diagram, Chart, etc.)
+
+☐ Request type known
+   (New Feature, Enhancement, Correction, API Only, Event Only, Migration)
+
+☐ Feature scope clearly defined
+   (What APIs, Events, Capabilities to document)
+
+☐ Source of truth available
+   (Spec, Design Doc, Source Code, PR, Requirements, or Documentation)
+```
+
+**If ANY item is UNCHECKED: STOP and collect missing information**
+
+---
+
+### Information Collection Questions
+
+**Ask ONLY for missing fields:**
+
+#### 1. Platform (REQUIRED)
+
+```
+What platform is this documentation for?
+
+Options:
+  • Blazor (C#, Razor)
+  • JavaScript (JS/TS)
+  • Angular (TypeScript)
+  • React (TypeScript/JSX)
+  • Vue (Vue SFC, TypeScript)
+  • ASP.NET Core (C#)
+  • ASP.NET MVC (C#)
+  • MAUI (C#)
+  • WinForms (C#)
+  • WPF (C#)
+  • Flutter (Dart)
+  • Xamarin (C#)
+```
+
+#### 2. Component (REQUIRED)
+
+```
+Which Syncfusion component is being documented?
+
+Examples: DataGrid, TreeGrid, Scheduler, Kanban, Gantt, Diagram, Chart, Pivot Table, Splitter, etc.
+
+Provide the exact component name.
+```
+
+#### 3. Request Type (REQUIRED)
+
+```
+What type of documentation is requested?
+
+  A) New Feature Documentation
+     → Feature is new, not in existing component
+     → Requires full documentation (all sections)
+
+  B) Feature Enhancement Documentation
+     → Feature enhancement to existing component
+     → May require updates to existing documentation
+
+  C) Documentation Correction
+     → Fix errors in existing documentation
+     → Clarify ambiguous documentation
+     → Update outdated information
+
+  D) API Documentation Only
+     → Document APIs/Properties only
+     → No narrative sections needed
+
+  E) Event Documentation Only
+     → Document events only
+     → No narrative sections needed
+
+  F) Migration Documentation
+     → Document migration path
+     → Before/After comparison
+     → Breaking changes
+
+Select one: A, B, C, D, E, or F
+```
+
+#### 4. Feature Scope (REQUIRED)
+
+```
+What is the scope of this documentation?
+
+For New Feature (A) or Enhancement (B), provide:
+
+1. Feature Name: [Name of feature being documented]
+
+2. What should be documented?
+   - All related APIs/properties?
+   - All related events?
+   - Step-by-step usage?
+   - Configuration examples?
+   - Advanced scenarios?
+
+3. Related APIs to document: [List]
+   Example: AllowSorting, SortMode, Sort(), ClearSorting()
+
+4. Related Events to document: [List]
+   Example: OnSorting, OnSorted, SortingEventArgs
+
+5. Code samples required? [Yes/No]
+```
+
+#### 5. Source of Truth (REQUIRED)
+
+```
+What is the authoritative source for this feature?
+
+Priority order (use highest available):
+
+1. Approved Specification Document
+   - URL or path to specification
+
+2. Approved Technical Design Document
+   - URL or path to design doc
+
+3. Source Code Implementation
+   - Component file path
+   - Repository location
+
+4. Feature Pull Request
+   - PR number or URL
+   - Branch name
+
+5. Existing Documentation
+   - Link to existing docs (reference only)
+
+6. User-Provided Requirements
+   - Detailed requirements in request
+
+Which source(s) are available?
+```
+
+#### 6. Additional Info (if New Feature or Enhancement)
+
+```
+For New Feature or Enhancement documentation, provide:
+
+1. Feature Summary: [1-2 sentence description]
+
+2. Specification Details: [URL/attachment or "Not available"]
+
+3. Implementation Details: [Available? Yes/No]
+
+4. Feature PR/Branch: [Number/URL or "N/A"]
+
+5. Supported Scenarios: [List or "Covered in spec"]
+
+6. Unsupported Scenarios: [List or "None identified"]
+
+7. Limitations: [Any known limitations?]
+
+8. Browser/Platform Support: [All platforms or specific ones?]
+```
+
+---
+
+### Information Validation Response Template
+
+**After collecting information, confirm:**
+
+```
+✓ Platform:          [Confirmed Platform]
+✓ Component:         [Confirmed Component]
+✓ Request Type:      [Type A-F]
+✓ Feature:           [Feature Name]
+✓ Scope:             [APIs, Events, Capabilities list]
+✓ Source of Truth:   [Primary source identified]
+✓ Confidence:        [Complete/Ready to proceed]
+
+Ready to begin Discovery? [YES/NO]
+```
+
+**If any item shows ✗ or uncertainty: ASK for clarification**
+
+---
+
+### Source of Truth Priority (STRICT ORDER)
+
+Use sources in this exact order:
+
+1. **Approved Specification Document** (highest priority)
+   - Use when available
+   - Definitive source for behavior
+   - May override other sources
+
+2. **Approved Technical Design Document**
+   - Use if specification not available
+   - Authoritative for architecture
+   - Defines implementation approach
+
+3. **Source Code Implementation**
+   - Use for API verification
+   - Use for default values
+   - Use for actual behavior
+   - Reference file paths and line numbers
+
+4. **Feature Pull Request**
+   - Use for implementation details
+   - Use for review comments
+   - Use for testing information
+
+5. **Existing Documentation** (reference only)
+   - Use ONLY for pattern/format reference
+   - Never copy content
+   - Never copy examples
+   - Never copy descriptions
+   - Use to understand repository style
+
+6. **User-Provided Requirements** (lowest priority)
+   - Use only if no higher source available
+   - Combine with verification from source code
+   - Confirm before using
+
+**When conflicts exist: Higher-priority source wins**
+
+---
+
+### Assumption Prevention (MANDATORY)
+
+Never:
+- ❌ Assume platform details
+- ❌ Assume component capabilities
+- ❌ Assume API existence
+- ❌ Assume event existence
+- ❌ Assume default values
+- ❌ Assume behavior
+- ❌ Assume limitations
+- ❌ Assume scenarios
+- ❌ Assume platform support
+- ❌ Assume implementation details
+- ❌ Assume user intentions
+- ❌ Copy content from other components
+- ❌ Copy examples from other components
+- ❌ Copy API descriptions from other components
+
+Always:
+- ✓ Collect required information
+- ✓ Verify against source of truth
+- ✓ Ask for clarification
+- ✓ Mark gaps explicitly
+- ✓ Stop if confidence < 95%
+- ✓ Use only user-provided information
+
+---
+
 ## Overview
 
 This platform-agnostic skill produces documentation that is:
@@ -16,6 +353,7 @@ This platform-agnostic skill produces documentation that is:
 - **SEO-optimized**: Natural keyword integration
 - **Enterprise-grade**: 10/10 maintainability
 - **Platform-aware**: Supports all Syncfusion platforms
+- **Information-gated**: Requires complete information before Discovery
 
 **Supported Platforms:**
 - Blazor, JavaScript, Angular, React, Vue
@@ -29,91 +367,6 @@ This platform-agnostic skill produces documentation that is:
 - Mode D: API Documentation Only
 - Mode E: Event Documentation Only
 - Mode F: Migration Documentation
-
----
-
-## Pre-Discovery: Information Collection Gate
-
-**STOP if any required information is missing.**
-
-### Required Information Checklist
-
-**Before proceeding to Discovery, validate:**
-
-```
-☐ Platform specified (Blazor, Angular, React, Vue, etc.)
-☐ Component identified (DataGrid, TreeGrid, Scheduler, etc.)
-☐ Request type known (New Feature, Enhancement, Correction, etc.)
-☐ Feature scope defined (APIs, Events, Capabilities documented)
-☐ Source of truth available (Spec, Code, PR, Requirements)
-```
-
-### Clarification Questions (Ask if missing)
-
-**Platform**
-```
-What platform is this documentation for?
-
-Options:
-- Blazor
-- JavaScript
-- Angular
-- React
-- Vue
-- ASP.NET Core
-- ASP.NET MVC
-- MAUI
-- WinForms
-- WPF
-- Flutter
-- Xamarin
-```
-
-**Component**
-```
-Which Syncfusion component is being documented?
-
-Examples: DataGrid, TreeGrid, Scheduler, Kanban, Gantt, Diagram, Chart, etc.
-```
-
-**Request Type**
-```
-What type of documentation is requested?
-
-- New Feature Documentation
-- Feature Enhancement Documentation
-- Existing Documentation Update
-- Existing Documentation Correction
-- API Documentation Only
-- Event Documentation Only
-- Migration Documentation
-```
-
-**Additional Info (if New Feature/Enhancement)**
-```
-Provide the following:
-
-1. Feature Name: [Name]
-2. Feature Summary: [Brief description]
-3. Specification Details: [URL or attachment]
-4. Implementation Details: [Available?]
-5. Feature PR/Branch: [If available]
-6. Supported Scenarios: [List]
-7. Related APIs: [List]
-8. Related Events: [List]
-9. Sample Requirements: [Yes/No]
-```
-
-**Source of Truth Priority**
-
-Use sources in this order:
-
-1. Approved Specification Document
-2. Approved Technical Design Document
-3. Source Code Implementation
-4. Feature Pull Request
-5. Existing Documentation (for reference only)
-6. User-Provided Requirements
 
 ---
 
