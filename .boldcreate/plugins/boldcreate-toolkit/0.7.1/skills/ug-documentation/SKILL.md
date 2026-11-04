@@ -20,13 +20,16 @@ Generate production-ready Syncfusion User Guide documentation by extracting expl
 
 ---
 
-## Required Inputs (User Must Provide)
+## Required Inputs (All Six Mandatory - No Exceptions)
 
-1. **Feature Name** - What feature is being documented?
-2. **Feature Source** - Specification, PR, source code, or design document
-3. **Documentation Reference** - Existing UG article, component docs, or authoring guideline
+1. **Platform** - Blazor, EJ2 JavaScript, Angular, React, Vue, ASP.NET Core, MAUI, WinUI, WPF, or other
+2. **Component** - Grid, TreeGrid, Scheduler, Gantt, Diagram, Kanban, Pivot Table, Charts, or other
+3. **Request Type** - New Feature Documentation, Existing Documentation Update, API Documentation Update, Feature Enhancement Documentation, Migration Documentation, Bug Behavior Documentation, Cross-Feature Documentation, or Other
+4. **Feature Name** - Exact feature being documented (specific, unambiguous)
+5. **Feature Source** - Specification, Design Document, PR, Source Code, Work Item, Test Cases, or other approved source
+6. **Documentation Reference** - Existing UG article, component documentation, documentation template, authoring guideline, or approved documentation reference
 
-All three are mandatory. Documentation generation stops if any is missing.
+**All six inputs are mandatory.** Documentation generation cannot proceed until all six are explicitly provided by the user. No assumptions. No inferences. No defaults.
 
 ---
 
@@ -49,33 +52,198 @@ Each step must complete before proceeding to the next.
 
 ---
 
-## Step 1: Input Extraction & Validation
+## Step 1: Input Extraction & Validation (Mandatory Gate - Zero Assumptions)
 
-**Extract:**
-```
-✓ Feature Name: Explicitly stated
-✓ Feature Source: URL, PR, path, or reference
-✓ Documentation Reference: Existing article or guideline
-```
+### Extract (From User Input Only)
 
-**Validate:**
 ```
-✓ All three mandatory inputs provided
-✓ Feature name is clear and unambiguous
-✓ Feature source is accessible or described
-✓ Documentation reference is accessible or described
+✓ Platform: Explicitly stated (never inferred)
+✓ Component: Explicitly stated (never inferred)
+✓ Request Type: Explicitly stated (never inferred)
+✓ Feature Name: Explicitly stated (never inferred)
+✓ Feature Source: Explicitly stated (never inferred)
+✓ Documentation Reference: Explicitly stated (never inferred)
 ```
 
-**If missing:**
-```
-REQUEST (all missing information at once):
-"Please provide:
-□ Feature Name (exact, unambiguous)
-□ Feature Source (Spec URL | PR | Code path | Design doc | Other)
-□ Documentation Reference (Existing UG article | Component docs | Guidelines)"
+### Validate Each Input
 
-WAIT for all three before proceeding.
+**Platform Validation:**
 ```
+✓ Must be explicitly supplied by user
+✓ Cannot be inferred from feature name, component, or repository
+✓ Must be one of: Blazor, EJ2 JavaScript, Angular, React, Vue, 
+                  ASP.NET Core, MAUI, WinUI, WPF, or clearly stated
+✗ REJECT: "modern platform", "web framework", "your platform"
+✗ REJECT: Implied from component name or documentation reference
+
+IF MISSING: STOP
+REQUEST: "Which platform?"
+```
+
+**Component Validation:**
+```
+✓ Must be explicitly supplied by user
+✓ Cannot be inferred from feature name or documentation reference
+✓ Must be one of: Grid, TreeGrid, Scheduler, Gantt, Diagram, Kanban,
+                  Pivot Table, Charts, or clearly stated
+✗ REJECT: "grid component", "data component", "your component"
+✗ REJECT: Implied from feature name or repository
+
+IF MISSING: STOP
+REQUEST: "Which component?"
+```
+
+**Request Type Validation:**
+```
+✓ Must be explicitly supplied by user
+✓ Cannot be inferred from wording or context
+✓ Must be one of: New Feature Documentation, Existing Documentation Update,
+                  API Documentation Update, Feature Enhancement Documentation,
+                  Migration Documentation, Bug Behavior Documentation,
+                  Cross-Feature Documentation, Other
+✗ REJECT: "create documentation", "update docs", "generate article"
+✗ REJECT: Inferred from feature description
+
+IF MISSING: STOP
+REQUEST: "What type of documentation?"
+```
+
+**Feature Name Validation:**
+```
+✓ Must be explicitly supplied and specific
+✓ Must be exact feature name (not generic category)
+✗ REJECT: "Foreign Key" (which feature? Column? Filter? Both?)
+✗ REJECT: "Grid documentation"
+✗ REJECT: "Update feature docs"
+✗ REJECT: "Improve documentation"
+✗ REJECT: "TreeGrid enhancement"
+✗ REJECT: "Create samples"
+
+ACCEPT: "Foreign Key Column", "Custom Editing", "Virtual Scrolling"
+
+IF MISSING or VAGUE: STOP
+REQUEST: "What is the exact feature name?"
+```
+
+**Feature Source Validation:**
+```
+✓ Must identify where feature behavior is documented/implemented
+✓ Must be one of: Specification, Design Document, PR, Source Code,
+                  Work Item, Test Cases, other approved source
+✓ Must be accessible or clearly described
+✗ REJECT: "Just create documentation"
+✗ REJECT: "Use repository"
+✗ REJECT: "Refer to code"
+✗ REJECT: "No specific source"
+
+ACCEPT: "PR #2456", "Specification URL: https://...", 
+        "Source code: /src/features/ForeignKey.ts",
+        "Test file: tests/ForeignKey.test.ts"
+
+IF MISSING or VAGUE: STOP
+REQUEST: "What is the feature source?"
+```
+
+**Documentation Reference Validation:**
+```
+✓ Must identify existing documentation to use as structure template
+✓ Must be one of: Existing UG article, component documentation,
+                  documentation template, authoring guideline,
+                  approved documentation reference
+✓ Must be accessible or clearly described
+✗ REJECT: Missing documentation reference
+✗ REJECT: "Follow standard documentation"
+✗ REJECT: "Use documentation patterns"
+
+ACCEPT: "Reference: TreeGrid column editing UG article",
+        "Template: /docs/templates/feature-documentation.md",
+        "Guideline: Syncfusion Angular documentation style guide"
+
+IF MISSING: STOP
+REQUEST: "What is the documentation reference?"
+```
+
+### Anti-Assumption Enforcement
+
+Before proceeding to Step 2, verify:
+
+```
+Can Platform be PROVEN from user input?
+  ✓ YES → Continue
+  ✗ NO → STOP, REQUEST: "Please specify platform explicitly"
+
+Can Component be PROVEN from user input?
+  ✓ YES → Continue
+  ✗ NO → STOP, REQUEST: "Please specify component explicitly"
+
+Can Request Type be PROVEN from user input?
+  ✓ YES → Continue
+  ✗ NO → STOP, REQUEST: "Please specify request type explicitly"
+
+Can Feature Name be PROVEN from user input?
+  ✓ YES → Continue
+  ✗ NO → STOP, REQUEST: "Please specify feature name exactly"
+
+Can Feature Source be PROVEN from user input?
+  ✓ YES → Continue
+  ✗ NO → STOP, REQUEST: "Please specify feature source explicitly"
+
+Can Documentation Reference be PROVEN from user input?
+  ✓ YES → Continue
+  ✗ NO → STOP, REQUEST: "Please specify documentation reference"
+```
+
+### Mandatory Missing Input Gate
+
+If ANY required input is missing:
+
+**STOP immediately.**
+
+Request ALL missing information in a single response:
+
+```
+Please provide all of the following:
+
+□ Platform (Blazor | EJ2 JavaScript | Angular | React | Vue | 
+           ASP.NET Core | MAUI | WinUI | WPF | Other)
+
+□ Component (Grid | TreeGrid | Scheduler | Gantt | Diagram | 
+            Kanban | Pivot Table | Charts | Other)
+
+□ Request Type (New Feature Documentation | Existing Documentation Update |
+               API Documentation Update | Feature Enhancement Documentation |
+               Migration Documentation | Bug Behavior Documentation |
+               Cross-Feature Documentation | Other)
+
+□ Feature Name (exact, specific feature name - not generic)
+
+□ Feature Source (Specification | Design Document | PR | Source Code | 
+                 Work Item | Test Cases | Other - must be specific)
+
+□ Documentation Reference (Existing UG article | Component docs | 
+                          Template | Authoring guideline | Other - must be specific)
+
+Documentation generation cannot proceed until all mandatory inputs are supplied.
+```
+
+**WAIT for user response with all six inputs before proceeding to Step 2.**
+
+### Step 1 Success Criteria
+
+All of the following must be true:
+
+✓ Platform is explicitly stated and verifiable
+✓ Component is explicitly stated and verifiable
+✓ Request Type is explicitly stated and verifiable
+✓ Feature Name is specific and unambiguous
+✓ Feature Source is identified and accessible
+✓ Documentation Reference is identified and accessible
+✓ No assumptions made for any input
+✓ No inference used for any input
+✓ All inputs are explicit user-provided values
+
+If all criteria met: Continue to Step 2
+If any criterion not met: STOP and request missing information
 
 ---
 
