@@ -163,7 +163,7 @@ The Blazor TreeGrid supports binding remote data to a foreign key column using [
 
 ![Blazor TreeGrid with foreign key column and remote data](../images/treegrid-foreign-key-column-remote.webp)
 
-> * For remote data, **sorting** and **grouping** operations are performed based on the [ForeignKeyField](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.TreeGrid.TreeGridColumn.html#Syncfusion_Blazor_TreeGrid_TreeGridColumn_ForeignKeyField) property rather than the [ForeignKeyValue](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.TreeGrid.TreeGridColumn.html#Syncfusion_Blazor_TreeGrid_TreeGridColumn_ForeignKeyValue) property.
+> * For remote data, **sorting** operations are performed based on the [ForeignKeyField](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.TreeGrid.TreeGridColumn.html#Syncfusion_Blazor_TreeGrid_TreeGridColumn_ForeignKeyField) property rather than the [ForeignKeyValue](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.TreeGrid.TreeGridColumn.html#Syncfusion_Blazor_TreeGrid_TreeGridColumn_ForeignKeyValue) property.
 > * If `ForeignKeyField` is not defined, the column uses the [Field](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.TreeGrid.TreeGridColumn.html#Syncfusion_Blazor_TreeGrid_TreeGridColumn_Field) property of the [TreeGridColumn](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.TreeGrid.TreeGridColumn.html) directive.
 
 ## Display behavior
@@ -809,7 +809,7 @@ The [ForeignDataSourceChanged](https://help.syncfusion.com/cr/blazor/Syncfusion.
 
 ## Known limitations
 
-* Foreign key columns do not support [grouping](../grouping.md).
+
 * Complex field paths (e.g., `Employee.Name`) are not supported in foreign key columns.
 
 ## See also
