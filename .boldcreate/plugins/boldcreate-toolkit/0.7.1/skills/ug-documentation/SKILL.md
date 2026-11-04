@@ -1,680 +1,726 @@
-# UG Documentation Skill - Platform-Agnostic & Enterprise-Grade
+# UG Documentation Skill - Practical & Autonomous
 
-Create repository-ready Syncfusion User Guide documentation for any platform with evidence-based accuracy.
+Create production-ready Syncfusion User Guide documentation for any platform with evidence-based accuracy.
 
-**Level**: Advanced | **Mode**: Autonomous Cloud Agent | **Token Footprint**: 60-70% reduction | **Platforms**: All Syncfusion
-
----
-
-## 🛑 **STEP 0: INTERACTIVE INFORMATION COLLECTION (MANDATORY)**
-
-**THIS IS THE FIRST STEP. NOTHING ELSE HAPPENS UNTIL THIS IS COMPLETE.**
+**Level**: Advanced | **Mode**: Autonomous Cloud Agent | **Platforms**: 12 Syncfusion frameworks
 
 ---
 
-### Vague Request Detection Algorithm
+## Overview
 
-**FIRST: Analyze the user's request for completeness.**
+This skill generates repository-ready documentation by:
+- **Extracting context** from user requests automatically
+- **Requesting missing information once** (single consolidated prompt)
+- **Verifying evidence** transparently without artificial confidence metrics
+- **Generating clean output** without internal workflow details
+- **Handling gaps gracefully** while maintaining quality standards
+- **Operating autonomously** without excessive human interaction
 
-```
-IF request is vague (missing any of the following):
-  ✗ Platform not specified OR unclear
-  ✗ Component name not specified OR unclear
-  ✗ Request type not specified OR unclear
-  ✗ Feature scope not defined
-  ✗ Any field is ambiguous
+**Supported Platforms:**
+Blazor, JavaScript, Angular, React, Vue, ASP.NET Core, ASP.NET MVC, MAUI, WinForms, WPF, Flutter, Xamarin
 
-THEN:
-  → STOP immediately
-  → Do NOT proceed to Discovery
-  → Do NOT analyze repositories
-  → Do NOT analyze source code
-  → Proceed to "Interactive Information Collection" below
-  
-OTHERWISE (ALL fields clear):
-  → Proceed to "Information Validation" section
-```
-
-**KEY: If you cannot confidently answer all 5 questions below from the user's request, the request is VAGUE.**
+**Supported Documentation Types:**
+- New Feature Documentation
+- Feature Enhancement Documentation
+- Documentation Correction
+- API Documentation Only
+- Event Documentation Only
+- Migration Documentation
 
 ---
 
-### Interactive Information Collection (If Vague)
+## Execution Model: Single-Pass Information Collection
 
-**When request is vague, ask the user these questions in order. Wait for responses. Collect ALL answers before proceeding.**
+### Step 1: Autonomous Context Extraction
+
+Automatically extract all information from the user request:
+
+```
+FROM: "Create Blazor DataGrid sorting documentation using spec PR #1234"
+
+EXTRACT:
+✓ Platform: Blazor
+✓ Component: DataGrid
+✓ Feature: Sorting
+✓ Source: PR #1234
+✓ Request Type: New Feature (inferred from context)
+
+NO QUESTIONS ASKED YET
+```
+
+**Rules:**
+- Extract platform, component, feature name when explicitly stated
+- Extract source of truth from URLs, PR numbers, file paths provided
+- Infer request type from request context (new/enhancement/correction/etc)
+- Do NOT assume information that is not directly stated
 
 ---
 
-#### **QUESTION 1: PLATFORM (Required)**
+### Step 2: Gap Detection
+
+**If any required information is missing after extraction, ask once:**
 
 ```
-❓ MISSING INFORMATION: Platform not specified
+The request does not contain enough information to generate accurate documentation.
 
-What platform is this documentation for?
+Please provide the following missing details:
 
-Please select ONE:
+□ Platform
+  (Blazor, JavaScript, Angular, React, Vue, ASP.NET Core, ASP.NET MVC, MAUI, WinForms, WPF, Flutter, Xamarin)
 
-1. Blazor (C#, Razor components)
-2. JavaScript (Vanilla JS/TypeScript)
-3. Angular (TypeScript, Angular framework)
-4. React (TypeScript/JSX, React framework)
-5. Vue (Vue SFC, TypeScript)
-6. ASP.NET Core (C#, server-side)
-7. ASP.NET MVC (C#, MVC pattern)
-8. MAUI (C#, cross-platform)
-9. WinForms (C#, desktop)
-10. WPF (C#, desktop, XAML)
-11. Flutter (Dart)
-12. Xamarin (C#, mobile)
+□ Component
+  (DataGrid, TreeGrid, Scheduler, Kanban, Gantt, Chart, Diagram, etc.)
 
-👉 Please respond with the number (1-12) or platform name:
+□ Request Type
+  □ New Feature Documentation
+  □ Feature Enhancement Documentation
+  □ Documentation Correction
+  □ API Documentation Only
+  □ Event Documentation Only
+  □ Migration Documentation
+
+□ Feature Name
+  (What is the specific feature being documented?)
+
+□ Feature Scope
+  (What sections: Setup? Usage? APIs? Events? Examples?)
+
+□ Related APIs (if known)
+  (Optional: AllowSorting, SortMode, Sort(), etc.)
+
+□ Related Events (if known)
+  (Optional: OnSorting, OnSorted, etc.)
+
+□ Source of Truth
+  (Where is the authoritative source? Specification? PR? Code? Requirements?)
+
+After providing these details, documentation generation will begin immediately.
 ```
 
-**WAIT for user response. Record exactly as provided.**
+**Rules:**
+- Ask once - collect ALL missing information in single prompt
+- Do NOT ask one question at a time
+- Only request fields genuinely missing from request
+- Wait for complete response before proceeding
 
 ---
 
-#### **QUESTION 2: COMPONENT (Required)**
+## Internal Processing: Discovery, Verification, Validation
+
+### Discovery Phase (Internal)
+
+**Platform-aware scope identification:**
 
 ```
-❓ MISSING INFORMATION: Component name not specified
-
-Which Syncfusion component is being documented?
-
-Common examples:
-• DataGrid
-• TreeGrid
-• Scheduler
-• Kanban
-• Gantt Chart
-• Diagram
-• Chart
-• Pivot Table
-• Splitter
-• Accordion
-• Carousel
-• Rating
-• Slider
-• TextBox
-
-👉 Please provide the exact component name:
+Platform:           [Extracted or Provided]
+Component:          [Extracted or Provided]
+Feature:            [Extracted or Provided]
+Request Type:       [Extracted or Provided]
+Source of Truth:    [Extracted or Provided]
+Existing Docs:      [Repository search - internal]
+Related Features:   [From scope - internal]
 ```
 
-**WAIT for user response. Record exactly as provided.**
+### Verification Phase (Internal)
+
+For each API/Event mentioned in scope:
+
+```
+API: AllowSorting
+
+Source File:        Grid.cs
+Status:             ✓ Verified
+Type:               Property
+Purpose:            Enable/disable sorting capability
+```
+
+**Verification Status Values (NOT percentages):**
+- ✓ Verified (confirmed in source)
+- ◐ Partially Verified (found, some details unconfirmed)
+- ? Requires User Validation (mentioned in requirements, not in source)
+- ✗ Unable to Verify (not found in provided sources)
+
+**Rules:**
+- Report source file (path) only - line numbers optional
+- Do NOT report confidence percentages (90%, 95%, etc)
+- Do NOT calculate readiness scores
+- Do NOT estimate verification levels
+
+### Validation Phase (Internal)
+
+- Sample code compiles against source APIs
+- Platform-specific syntax is correct
+- Documentation follows platform conventions
+- All internal links resolve
 
 ---
 
-#### **QUESTION 3: REQUEST TYPE (Required)**
+## Output Structure: User-Facing (Simplified)
+
+**Default output contains ONLY:**
 
 ```
-❓ MISSING INFORMATION: Request type not specified
+1. Documentation Content
+   └─ Complete, production-ready markdown
 
-What type of documentation is needed?
+2. References Used
+   └─ Sources verified for this documentation
 
-Select ONE:
+3. Known Gaps
+   └─ Unresolved verification items (if any)
 
-A) NEW FEATURE DOCUMENTATION
-   → Documenting a completely new feature
-   → Not in existing component documentation
-   → Requires full sections (intro, usage, API, events, samples)
-
-B) FEATURE ENHANCEMENT DOCUMENTATION
-   → Enhancing existing component feature
-   → Updating existing documentation with new capability
-   → May add new sections or update existing ones
-
-C) DOCUMENTATION CORRECTION
-   → Fixing errors in existing documentation
-   → Clarifying ambiguous sections
-   → Updating outdated information
-
-D) API DOCUMENTATION ONLY
-   → Document properties, methods, enumerations only
-   → No narrative content or examples needed
-   → Just API reference table
-
-E) EVENT DOCUMENTATION ONLY
-   → Document events and event arguments only
-   → No narrative content needed
-   → Just event reference table
-
-F) MIGRATION DOCUMENTATION
-   → Document migration path (e.g., v1 to v2)
-   → Before/After comparison
-   → Breaking changes and workarounds
-
-👉 Please respond with letter (A, B, C, D, E, or F):
+4. Suggested Repository Updates
+   └─ File paths, TOC changes (if needed)
 ```
 
-**WAIT for user response. Record exactly as provided.**
-
----
-
-#### **QUESTION 4: FEATURE SCOPE (Required)**
-
-```
-❓ MISSING INFORMATION: Feature scope not clearly defined
-
-What is the scope of this documentation?
-
-Please provide:
-
-1. FEATURE NAME (what are you documenting?)
-   Example: "Sorting", "Filtering", "Grouping", "Real-time Data Updates"
-   👉 Feature name: _______________
-
-2. WHAT SHOULD BE DOCUMENTED? (select all that apply)
-   ☐ Configuration/setup
-   ☐ Step-by-step usage guide
-   ☐ API properties/methods
-   ☐ Events and event handling
-   ☐ Code samples/examples
-   ☐ Advanced scenarios
-   ☐ Troubleshooting/FAQs
-   ☐ Limitations/known issues
-   
-   👉 Which sections? _______________
-
-3. LIST ALL RELATED APIS TO DOCUMENT
-   Example: "AllowSorting, SortMode, Sort(), ClearSorting(), SortedColumn"
-   👉 APIs: _______________
-
-4. LIST ALL RELATED EVENTS TO DOCUMENT
-   Example: "OnSorting, OnSorted, SortingEventArgs"
-   👉 Events: _______________
-
-5. CODE SAMPLES REQUIRED?
-   ☐ Yes (provide working examples)
-   ☐ No (reference only)
-   
-   👉 Response: _______________
-```
-
-**WAIT for all 5 sub-responses. Record each answer.**
-
----
-
-#### **QUESTION 5: SOURCE OF TRUTH (Required)**
-
-```
-❓ MISSING INFORMATION: Source of truth not identified
-
-What is the authoritative source for this feature?
-
-Select the HIGHEST priority source available:
-
-1. APPROVED SPECIFICATION DOCUMENT ⭐ (highest priority)
-   - Comprehensive specification document
-   - Feature behavior defined
-   - 👉 URL/path: _______________
-
-2. APPROVED TECHNICAL DESIGN DOCUMENT
-   - Architecture and design decisions
-   - Implementation approach
-   - 👉 URL/path: _______________
-
-3. SOURCE CODE IMPLEMENTATION
-   - Component source files
-   - Implementation details
-   - 👉 Repository path/file: _______________
-
-4. FEATURE PULL REQUEST
-   - PR implementation
-   - Review comments
-   - 👉 PR number/URL: _______________
-
-5. EXISTING DOCUMENTATION
-   - Current docs (reference only, don't copy)
-   - 👉 Documentation URL: _______________
-
-6. USER-PROVIDED REQUIREMENTS
-   - Detailed requirements in your request
-   - 👉 Details: _______________
-
-Which source(s) are available? (List in priority order)
-
-👉 Primary source: _______________
-👉 Secondary sources (if any): _______________
-```
-
-**WAIT for user response. Record exactly as provided.**
-
----
-
-### Interactive Collection - Response Validation
-
-**After collecting all 5 pieces of information, confirm with user:**
-
-```
-═══════════════════════════════════════════════════════════════════════════
-INFORMATION COLLECTED - PLEASE CONFIRM
-═══════════════════════════════════════════════════════════════════════════
-
-✓ Platform:           [USER_PROVIDED_PLATFORM]
-✓ Component:          [USER_PROVIDED_COMPONENT]
-✓ Request Type:       [USER_PROVIDED_TYPE] (A/B/C/D/E/F)
-✓ Feature Name:       [USER_PROVIDED_FEATURE]
-✓ Feature Scope:      [USER_PROVIDED_SCOPE]
-✓ Source of Truth:    [USER_PROVIDED_SOURCE]
-
-═══════════════════════════════════════════════════════════════════════════
-
-Is this information correct? [YES / NO]
-
-If NO → Please clarify which information is incorrect
-If YES → Proceeding to Discovery Phase
-```
-
-**WAIT for confirmation. If NO, ask them to clarify the incorrect fields.**
-
----
-
-### Information Validation Checklist
-
-**Before proceeding to Discovery, verify:**
-
-```
-✓ Platform:           [COLLECTED AND CONFIRMED] ✓
-✓ Component:          [COLLECTED AND CONFIRMED] ✓
-✓ Request Type:       [COLLECTED AND CONFIRMED] ✓
-✓ Feature Scope:      [COLLECTED AND CONFIRMED] ✓
-✓ Source of Truth:    [COLLECTED AND CONFIRMED] ✓
-
-ALL ITEMS CONFIRMED: ✅ YES → PROCEED TO DISCOVERY
-
-If ANY item shows ❌ NO: ASK FOR CLARIFICATION
-```
-
----
-
-### Critical Rules for Interactive Collection
-
-**MANDATORY:**
-
-1. ✓ **Ask questions ONE AT A TIME**
-   - Ask Question 1 (Platform)
-   - Wait for response
-   - Ask Question 2 (Component)
-   - Wait for response
-   - (continue for all 5)
-
-2. ✓ **Wait for user responses after each question**
-   - Do NOT assume answers
-   - Do NOT infer missing details
-   - Do NOT proceed without user input
-
-3. ✓ **Use user's exact terminology**
-   - Record platform name as provided
-   - Record component name as provided
-   - Record feature name as provided
-   - Do NOT normalize or change names
-
-4. ✓ **Confirm all information before proceeding**
-   - Show collected information to user
-   - Ask for explicit confirmation
-   - Wait for user approval
-   - Do NOT assume confirmation
-
-5. ✗ **NEVER:**
-   - Assume the platform
-   - Assume the component
-   - Assume the request type
-   - Assume the feature scope
-   - Assume the source of truth
-   - Skip any question
-   - Proceed without confirmation
-
----
-
-### Golden Rule: Interactive Collection
-
-```
-┌─────────────────────────────────────────────────────────────┐
-│                                                             │
-│  If ANY required information is missing:                    │
-│                                                             │
-│  1. ASK the user for that information                       │
-│  2. WAIT for the user's response                            │
-│  3. RECORD the user's exact response                        │
-│  4. CONFIRM all information with the user                   │
-│  5. Get explicit approval to proceed                        │
-│                                                             │
-│  THEN and ONLY THEN:                                        │
-│  → Proceed to Discovery                                     │
-│  → Analyze repositories                                     │
-│  → Extract source information                               │
-│  → Generate documentation                                   │
-│                                                             │
-│  NEVER:                                                     │
-│  ✗ Skip questions                                           │
-│  ✗ Assume answers                                           │
-│  ✗ Infer missing information                                │
-│  ✗ Proceed without all information                          │
-│  ✗ Proceed without user confirmation                        │
-│                                                             │
-└─────────────────────────────────────────────────────────────┘
-```
-
----
-
-## Stage 1: Discovery (After Information Collection Complete)
-
-**Execute ONCE after ALL information collected and confirmed.**
-
-**Automatically Identify:**
-
-```
-Platform:                [From user input]
-Component Name:          [From user input]
-Feature Name:            [From user input]
-Documentation Type:      [From user input - Mode A-F]
-Existing Doc Path:       [Search repository]
-Source Files:            [List component files]
-Related APIs:            [From feature scope]
-Related Events:          [From feature scope]
-TOC Update Required:     [Yes/No]
-Platform Standards Path: [Locate existing docs]
-```
-
-**Confidence Check:**
-- Platform confirmed? YES
-- Component accessible? YES/NO
-- Source files located? YES/NO
-- Existing docs found? YES/NO
-
-**Output:** Discovery Summary (1-2 paragraphs max)
-
-**Decision:** PROCEED to Stage 2 only if 90%+ confident. If <90%: STOP and request clarification.
-
----
-
-## Stage 2: Verification & Generation (Targeted Scan)
-
-Verify ONLY the APIs/events actually used in documentation.
-
-**Phase 1: Platform Standards Extraction**
-
-Before generating any content:
-1. Find 2-3 existing features in platform documentation
-2. Extract patterns: structure, terminology, code format, API style
-3. Use ONLY as reference patterns (never copy content)
-4. Document which existing features were used as reference
-
-**Phase 2: Source Verification**
-
-For each API/event mentioned:
-1. Locate source file (platform-specific)
-2. Extract: Name, Type, Default Value, Accepted Values
-3. Record source location (file + line number)
-4. Mark verification status (Verified/Requires Evidence)
-
-**Do NOT** perform repository-wide scanning.
-
-**Phase 3: Evidence Matrix Generation**
-
-Create compact verification table:
+**Example Output:**
 
 ```markdown
-| Item | Type | Source File | Status |
-|------|------|-------------|--------|
-| [API Name] | Property | ComponentName.cs:45 | ✓ Verified |
+# Sorting in Blazor DataGrid
+
+## Overview
+Sorting allows users to organize data...
+
+## Enabling Sorting
+```csharp
+<GridColumn Field="Name" AllowSorting="true" />
 ```
 
-**Phase 4: Confidence Scoring**
+## Sorting Modes
+The SortMode property controls sort behavior...
 
-```markdown
-## Verification Confidence
-
-| Area | Coverage | Score | Status |
-|------|----------|-------|--------|
-| APIs | 5/5 used | 100% | ✓ |
-| Events | 2/2 used | 100% | ✓ |
-| Defaults | 5/5 confirmed | 100% | ✓ |
-
-Overall: 100% - READY FOR COMMIT
-```
-
-**Decision Rule:**
-- If Overall ≥ 95%: PROCEED to Stage 4.5
-- If Overall < 95%: List gaps and STOP
+[... full documentation content ...]
 
 ---
 
-## Stage 4.5: Sample Validation (Compile & Verify)
+## References Used
 
-Execute ONLY if documentation includes code examples.
+- GridColumn.cs (Property definitions)
+- GridEvents.cs (Event definitions)
+- Specification: PR #1234
 
-**Phase 1: Language-Specific Syntax Validation**
+## Known Gaps
 
-For each code sample, verify platform-specific syntax:
-- Blazor: using statements, Razor syntax, @code block
-- JavaScript: imports, callbacks, variable declarations
-- Angular: imports, decorators, TypeScript types
-- React: imports, JSX, hooks, prop types
-- Vue: template, script, style, SFC format
-- (etc. for all 12 platforms)
+- SortingEventArgs inheritance chain not verified in provided code
+- Browser compatibility notes not available in source
 
-**Phase 2: API Usage Validation**
+## Suggested Repository Updates
 
-For each code sample:
-1. Verify all APIs exist in source code
-2. Verify property names match source exactly
-3. Verify event names match source exactly
-4. Verify method signatures are correct
-
-**Phase 3: Compilation Check**
-
-For each code sample:
-1. Verify platform-specific syntax correct
-2. Verify type declarations valid
-3. Verify event bindings correct
-4. Verify component hierarchy valid
-
-**Validation Matrix:**
-
-```markdown
-| Sample # | Syntax | API Usage | Compilation | Status |
-|----------|--------|-----------|-------------|--------|
-| 1 | ✓ | ✓ | ✓ | ✓ Valid |
+- File: docs/blazor/components/datagrid/sorting.md
+- Action: Create new file
+- TOC: Add under "Data Operations" section in toc.yml
 ```
 
-**Decision Rule:**
-- If ALL samples ✓ Valid: PROCEED to Stage 8.5
-- If ANY sample ✗ Invalid: List errors and STOP
+### Optional: Detailed Reports
+
+User can request verification reports:
+
+```
+User: "Show me the verification report and evidence matrix"
+
+RESPONSE:
+[Verification Report]
+[Evidence Matrix]
+[Audit Log]
+[Internal Workflow Summary]
+```
 
 ---
 
-## Stage 8.5: Global Standards Check
+## Decision Rules (Internal - Not Exposed)
 
-Execute BEFORE final output delivery.
+### Should Generation Proceed?
 
-**Phase 1: Accessibility Validation**
-- Images have alt text
-- Links have descriptive text
-- Headings proper hierarchy
-- Code blocks highlighted
-- Tables have headers
-- Lists properly formatted
+**YES** if:
+- ✓ Primary feature behavior verified
+- ✓ Core APIs verified
+- ✓ Code samples compile
+- ✓ Platform conventions followed
 
-**Phase 2: Localization Readiness**
-- No hardcoded UI strings
-- Resource keys used
-- Locale-neutral formatting
-- Culture-neutral examples
-- RTL considerations noted
+**NO** if:
+- ✗ Core feature behavior unverified
+- ✗ Source not accessible
+- ✗ Request fundamentally ambiguous
 
-**Phase 3: SEO Compliance**
-- Title format: "[Feature] in [Platform] [Component]"
-- Description includes feature, platform, component
-- H1: Single, matches title
-- Keywords: Feature (2-3x), Platform (1-2x), Component (2-3x)
-- Word count: 500+ words
-- Internal links: 3-5 relevant
+### What About Gaps?
 
-**Phase 4: Cross-Link Validation**
-- All links exist (verify paths)
-- Links correctly formatted
-- Links contextually relevant
-- No duplicate links
+**Minor gaps (proceed with generation):**
+- Event argument types unconfirmed
+- Some default values unknown
+- Optional API details missing
+- → Generate documentation, report gaps
 
-**Phase 5: Heading Consistency**
-- Single H1 only
-- Proper hierarchy (H1 → H2 → H3)
-- Consistent patterns
-- No orphan headings
-
-**Decision Rule:**
-- If ALL phases ✓ pass: PROCEED to Stage 9
-- If ANY phase fails: List issues (can proceed if minor)
+**Major gaps (request clarification):**
+- Feature behavior unclear
+- Core APIs not found
+- Source of truth unavailable
+- → Stop, request clarification
 
 ---
 
-## Content Generation: Mode-Specific Workflows
+## Platform-Specific Processing (Internal)
+
+For each platform, automatically:
+
+1. **Identify source file patterns**
+   - Blazor: Component.cs, *Events.cs
+   - JavaScript: component.d.ts, component.js
+   - Angular: component.ts, *.events.ts
+   - (etc. for all platforms)
+
+2. **Extract existing documentation standards**
+   - Find 2-3 similar features in platform docs
+   - Extract: structure, terminology, code format, SEO patterns
+   - Use ONLY as reference (never copy)
+
+3. **Validate platform-specific syntax**
+   - Stage 4.5: Language-specific compilation check
+   - Example: Blazor @code blocks, React JSX, Vue templates
+
+4. **Apply platform standards**
+   - Stage 8.5: Accessibility (WCAG for web, platform-specific for desktop/mobile)
+   - SEO: "[Feature] in [Platform] [Component]"
+   - Links: Platform-specific repository paths
+
+---
+
+## Documentation Modes
 
 ### Mode A: New Feature Documentation
+```
+Stages: Discovery → Verification → Generation → Validation → Output
+Sections: Overview, Setup, Capabilities, API Reference, Events, Examples, See Also
+```
 
-Execute phases:
-1. Classify – Document type
-2. Discover – Identify all scope items (Stage 1)
-3. Verify – Targeted API/Event verification (Stage 2)
-4. Structure – Generate markdown
-5. Validate – Sample validation (Stage 4.5)
-6. Standards – Global check (Stage 8.5)
-7. Deliver – 9-section output
-
-### Mode B: Enhancement Documentation
-
-Execute phases:
-1. Classify – Enhancement type
-2. Discover – Locate existing doc, identify changes (Stage 1)
-3. Verify – New APIs/Events only (Stage 2)
-4. Update – Merge into existing markdown
-5. Validate – Sample validation (Stage 4.5)
-6. Standards – Global check (Stage 8.5)
-7. Deliver – 9-section output
+### Mode B: Feature Enhancement
+```
+Stages: Discovery → Verification (new APIs only) → Merge with Existing → Validation → Output
+Sections: Add new sections to existing doc
+```
 
 ### Mode C: Documentation Correction
-
-Execute phases:
-1. Classify – Correction type
-2. Discover – Locate existing doc (Stage 1)
-3. Verify – Only corrected sections (Stage 2)
-4. Update – Fix errors in place
-5. Validate – Sample validation (Stage 4.5)
-6. Standards – Global check (Stage 8.5)
-7. Deliver – 9-section output
+```
+Stages: Discovery → Identify Error → Verification (corrected sections only) → Update → Output
+Sections: Fix specific errors, maintain existing good content
+```
 
 ### Mode D: API Documentation Only
-
-1. Classify – API scope
-2. Discover – Locate source (Stage 1)
-3. Verify – Extract all properties/methods (Stage 2)
-4. Structure – Generate API table
-5. Standards – Global check (Stage 8.5)
-6. Deliver – 5-section output
+```
+Stages: Discovery → Verification → Generate API Table → Output
+Sections: API Reference table, examples
+```
 
 ### Mode E: Event Documentation Only
-
-1. Classify – Event scope
-2. Discover – Locate events source (Stage 1)
-3. Verify – Extract all events (Stage 2)
-4. Structure – Generate event table
-5. Standards – Global check (Stage 8.5)
-6. Deliver – 5-section output
+```
+Stages: Discovery → Verification → Generate Event Table → Output
+Sections: Event Reference table, examples
+```
 
 ### Mode F: Migration Documentation
-
-1. Classify – Migration type
-2. Discover – Locate old + new sources (Stage 1)
-3. Verify – Breaking changes + alternatives (Stage 2)
-4. Structure – Before/After comparison
-5. Standards – Global check (Stage 8.5)
-6. Deliver – 9-section output
-
----
-
-## Compact Output Format (9 Sections)
-
 ```
-1. Classification
-2. Discovery Summary
-3. Evidence Matrix
-4. Verification Confidence
-5. Repository Actions
-6. Platform Standards Validation
-7. Markdown Content
-8. Self-Review Summary
-9. Commit Readiness
+Stages: Discovery → Verification (old + new) → Generate Comparison → Output
+Sections: Breaking Changes, Migration Path, Examples
 ```
 
 ---
 
-## Verification Checklist (Compact)
+## Evidence Handling
+
+### When Source Code Is Available
 
 ```
-Content:
-  ☐ All APIs verified in source
-  ☐ All events verified in source
-  ☐ No assumptions about behavior
-  ☐ Default values confirmed
+API: AllowSorting
 
-Code:
-  ☐ Samples use verified APIs only
-  ☐ Samples platform-correct
-  ☐ Syntax correct
+Source:          GridColumn.cs
+Type:            Property (bool)
+Default:         false
+Setter:          Public
+Getter:          Public
+Status:          ✓ Verified
+```
 
-SEO:
-  ☐ Single H1: "[Feature] in [Platform] [Component]"
-  ☐ Keywords natural
-  ☐ Beginner-friendly
+### When Source Code Is NOT Available
 
-Metadata:
-  ☐ Title follows pattern
-  ☐ Description includes keywords
-  ☐ Platform: Correct
-  ☐ Control: Correct component name
+```
+API: AllowSorting
 
-Repository:
-  ☐ File path determined
-  ☐ TOC changes explicit
-  ☐ All links verified
-  ☐ No placeholder text
+Source:          User Requirements / PR #1234 Description
+Type:            Property (from spec)
+Purpose:         Enable/disable sorting capability
+Status:          ? Requires User Validation
+Note:            Not verified against source code
+```
 
-Missing:
-  ☐ All gaps listed explicitly
-  ☐ Or: No gaps (100% verified)
+**Rules:**
+- Do NOT block documentation for unverified source
+- Mark status clearly (Verified / Partially Verified / Requires Validation)
+- Report in "Known Gaps" section
+- Generate documentation anyway if feature behavior is clear
+
+### Line Numbers: Optional, Not Required
+
+```
+GOOD:
+Source: Grid.cs
+Status: ✓ Verified
+
+ALSO GOOD:
+Source: Grid.cs (line 245)
+Status: ✓ Verified
+
+NEITHER REQUIRED NOR BLOCKING
+```
+
+---
+
+## Autonomous Context Resolution
+
+### Example 1: Platform + Component Explicit
+
+```
+User: "Blazor TreeGrid"
+
+EXTRACT:
+Platform:   Blazor
+Component:  TreeGrid
+
+RESULT: No questions about platform/component
+```
+
+### Example 2: Feature + Source Explicit
+
+```
+User: "Create documentation for ForeignKey columns using spec PR #2456"
+
+EXTRACT:
+Feature:    ForeignKey columns
+Source:     PR #2456
+
+RESULT: No questions about these
+```
+
+### Example 3: Partial Information - Ask Once
+
+```
+User: "Create Blazor documentation for the new export feature"
+
+EXTRACT:
+Platform:   Blazor
+Feature:    Export (new feature = Mode A)
+Component:  [MISSING]
+
+REQUEST (single, consolidated):
+"Missing component name. Which component: DataGrid? TreeGrid? Other?"
+
+RESULT: User provides component name. Proceed immediately.
+```
+
+**Rules:**
+- Extract all explicitly stated information
+- Only ask for genuinely missing information
+- Ask once in consolidated format
+- Do NOT ask twice for same information
+- Do NOT ask for information user already provided
+
+---
+
+## Verification Output Format
+
+**When user requests verification details:**
+
+```
+VERIFICATION SUMMARY
+════════════════════════════════════════════════════════════════
+
+APIs Verified:
+✓ AllowSorting      GridColumn.cs
+✓ SortMode          GridColumn.cs
+✓ Sort()            Grid.cs
+✓ ClearSort()       Grid.cs
+
+Events Verified:
+✓ OnSorting         GridEvents.cs
+✓ OnSorted          GridEvents.cs
+
+Defaults Verified:
+◐ AllowSorting default (not in source)
+✓ SortMode default: Ascending
+
+Code Samples:
+✓ Sample 1 compiles
+✓ Sample 2 compiles
+? Sample 3 needs user validation
+
+Known Gaps:
+- SortingEventArgs.SortDescriptors type
+- Browser compatibility matrix
+```
+
+---
+
+## Gap Handling Strategy
+
+### Minor Gaps (Generate & Report)
+
+```
+Known Gaps:
+
+- Event argument structure not verified in provided source
+- Performance impact data not available
+- Mobile browser compatibility not documented
+
+Documentation generated with available information.
+These gaps noted for future verification.
+```
+
+### Major Gaps (Request Clarification)
+
+```
+Cannot generate documentation. Missing critical information:
+
+- Core feature behavior not described in provided sources
+- Component not found in repository
+- Request type ambiguous
+
+Please provide:
+1. Specification document or clear feature description
+2. Source code access
+3. Clarification on request intent
+```
+
+---
+
+## Generation Workflow (Simplified)
+
+```
+User Request
+    ↓
+Extract Context
+    ↓
+Any Missing Info?
+    ├─ YES: Ask Once (single prompt)
+    │        Wait for response
+    │        Proceed with complete information
+    │
+    └─ NO: Proceed immediately
+    
+    ↓
+[INTERNAL] Discovery
+[INTERNAL] Verification
+[INTERNAL] Validation
+    ↓
+Generate Documentation
+    ↓
+Default Output:
+1. Content
+2. References
+3. Known Gaps
+4. Repository Updates
+
+Optional: Detailed Reports (if requested)
+```
+
+---
+
+## Rules for Autonomous Execution
+
+**EXTRACT automatically:**
+- ✓ Platform name (if stated)
+- ✓ Component name (if stated)
+- ✓ Feature name (if stated)
+- ✓ Source indicators (PR, spec, file path)
+- ✓ Request type (from context)
+
+**ASK ONCE for missing:**
+- Platform (if not stated)
+- Component (if not stated)
+- Feature name (if vague)
+- Source of truth (if not indicated)
+- Feature scope (if not clear)
+
+**DO NOT:**
+- ✗ Ask same question twice
+- ✗ Ask for info already provided
+- ✗ Calculate confidence percentages
+- ✗ Require line numbers
+- ✗ Block on minor gaps
+- ✗ Expose internal workflow steps
+- ✗ Ask questions one-at-a-time
+
+**DO:**
+- ✓ Extract all available context
+- ✓ Ask once for missing information
+- ✓ Report verification status clearly
+- ✓ Transparently report gaps
+- ✓ Generate gracefully with partial info
+- ✓ Output clean, focused documentation
+- ✓ Remain autonomous and efficient
+
+---
+
+## Output Examples
+
+### Example 1: Complete Request
+
+```
+User: "Create Blazor DataGrid filtering documentation using the spec in PR #1234"
+
+EXTRACT:
+Platform: Blazor
+Component: DataGrid
+Feature: Filtering
+Source: PR #1234
+Type: New Feature (inferred)
+
+ACTION: Generate immediately (no questions)
+
+OUTPUT:
+[Documentation content]
+References Used: PR #1234
+Known Gaps: None
+Repository Updates: Create docs/blazor/components/datagrid/filtering.md
+```
+
+### Example 2: Partial Request
+
+```
+User: "Create Blazor documentation for the new feature"
+
+EXTRACT:
+Platform: Blazor
+Feature: (generic - "new feature")
+Component: MISSING
+Source: MISSING
+
+ACTION: Ask once for missing info
+
+PROMPT:
+"Please provide:
+- Component (DataGrid? TreeGrid? Other?)
+- Feature name
+- Source (spec doc? PR? Code?)
+
+After you provide these, documentation will be generated immediately."
+
+[User responds]
+
+ACTION: Generate (no further questions)
+```
+
+### Example 3: Very Vague Request
+
+```
+User: "Create documentation"
+
+EXTRACT: None
+
+ACTION: Ask once for all information
+
+PROMPT:
+"The request does not contain enough information.
+
+Please provide:
+- Platform
+- Component
+- Feature name
+- Request type
+- Feature scope
+- Source of truth
+
+[checklist as shown in Step 2 above]"
+
+[User responds with details]
+
+ACTION: Generate (no further questions)
 ```
 
 ---
 
 ## Success Criteria
 
-Documentation is **READY TO COMMIT** when ALL are true:
+After refactoring, the skill:
 
-1. ✓ All 5 required information items collected from user
-2. ✓ User confirmed all information
-3. ✓ 95%+ verification confidence (overall)
-4. ✓ All APIs traced to source file + line number
-5. ✓ All events traced to source file + line number
-6. ✓ Default values confirmed from source
-7. ✓ Code samples compile-ready & platform-correct
-8. ✓ Accessibility standards met
-9. ✓ SEO metadata valid for platform
-10. ✓ Heading structure correct
-11. ✓ All links verified to exist
+✓ **Reduces interactions by 70-80%**
+  - Single consolidated prompt instead of sequential questions
+  - Automatic context extraction
+  - No repeated requests
 
-If ANY criterion fails: **STOP and list gaps**. Do not generate output.
+✓ **Eliminates confidence hallucinations**
+  - No "95% confidence" or similar metrics
+  - Clear verification status (Verified / Partially Verified / etc)
+  - Transparent gap reporting
+
+✓ **Handles incomplete information gracefully**
+  - Generates documentation with available data
+  - Reports gaps transparently
+  - Does NOT block on minor missing details
+
+✓ **Produces clean, focused output**
+  - No internal workflow details
+  - Only user-relevant sections
+  - Detailed reports available on request
+
+✓ **Operates autonomously**
+  - Extracts context automatically
+  - Asks for missing info once
+  - Proceeds immediately after
+  - No excessive back-and-forth
+
+✓ **Maintains enterprise quality**
+  - Evidence-based verification
+  - Platform-aware generation
+  - Production-ready output
+  - Transparent methodology
 
 ---
 
-## Next Steps
+## Quick Reference
 
-When using this skill:
+| Aspect | Before | After |
+|--------|--------|-------|
+| User interactions | 5-7 sequential questions | 1 consolidated prompt |
+| Context extraction | Asked each time | Automatic |
+| Confidence reporting | "95% confidence" | "✓ Verified" status |
+| Output structure | 9+ sections with internals | 4 user-facing sections |
+| Line number requirement | Mandatory | Optional |
+| Gap handling | Blocks generation | Reports & continues |
+| Token efficiency | ~60-70% reduction | Improved further |
+| Autonomous execution | Limited | Maximum |
 
-1. **User provides request** (may or may not include all details)
-2. **Skill analyzes completeness** (vague request detection)
-3. **If vague: Skill asks for missing information** (Questions 1-5)
-4. **User provides responses**
-5. **Skill confirms all information with user**
-6. **User approves**
-7. **Skill begins Discovery → Verification → Generation**
+---
+
+## When to Request Detailed Reports
+
+User can explicitly request:
+
+```
+"Show me the verification report"
+"Include evidence matrix"
+"Show discovery details"
+"Include audit log"
+```
+
+These will include:
+- Discovery Summary
+- Verification Report with Evidence Matrix
+- Validation Details
+- Internal Processing Log
+
+But these are NOT shown by default - only on request.
+
+---
+
+## Final Notes
+
+This skill now operates as a practical, autonomous tool that:
+
+1. **Extracts context automatically** from user requests
+2. **Requests missing information once** in consolidated format
+3. **Generates documentation** with evidence-based verification
+4. **Reports transparently** about what was verified and what gaps remain
+5. **Produces clean output** without internal workflow noise
+6. **Remains autonomous** without excessive human interaction
+7. **Handles incomplete information** gracefully
+8. **Maintains enterprise quality** standards
+
+The focus is on **practical efficiency** while preserving **evidence-based accuracy**.
