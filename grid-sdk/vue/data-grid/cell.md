@@ -74,6 +74,24 @@ The following example demonstrates how to set the `allowTextWrap` property to **
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/grid/cell/autowrap-cs1" %}
 
+## Enable or disable cell text selection
+
+The Data Grid supports cell text selection by default, allowing users to select text within grid cells, group captions, and summary rows using standard browser text selection features. However, in some scenarios, text selection may need to be disabled to help protect sensitive information and prevent users from copying important data. To disable cell text selection, set the `allowTextSelection` property to `false`.
+
+In the following example, the [Switch](https://ej2.syncfusion.com/vue/documentation/switch/getting-started) component is added to enable and disable the [allowTextSelection](https://ej2.syncfusion.com/vue/documentation/api/grid#allowtextselection) property.
+
+{% tabs %}
+{% highlight html tabtitle="Composition API (~/src/App.vue)" %}
+{% include code-snippet/grid-sdk/vue/grid/text-selection-cs1/app-composition.vue %}
+{% endhighlight %}
+{% highlight html tabtitle="Options API (~/src/App.vue)" %}
+{% include code-snippet/grid-sdk/vue/grid/text-selection-cs1/app.vue %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/grid/text-selection-cs1" %}
+
+
 ## Customize cell styles
 
 Customizing the grid cell styles allows you to modify the appearance of cells in the Grid control to meet your design requirements. You can customize the font, background color, and other styles of the cells. To customize the cell styles in the grid, you can use grid event, css, property or method support.
