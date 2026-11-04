@@ -88,6 +88,29 @@ The following example demonstrates setting the [allowTextWrap](https://ej2.syncf
 
  {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/grid/autowrap-cs1" %}
 
+## Enable or disable cell text selection
+
+The Data Grid supports cell text selection by default, allowing users to select text within grid cells, group captions, and summary rows using standard browser text selection features. However, in some scenarios, text selection may need to be disabled to help protect sensitive information and prevent users from copying important data. To disable cell text selection, set the `allowTextSelection` property to `false`.
+
+In the following example, the [Switch](https://ej2.syncfusion.com/react/documentation/switch/getting-started) component is added to enable and disable the `allowTextSelection` property.
+
+{% tabs %}
+{% highlight js tabtitle="App.jsx" %}
+{% include code-snippet/grid-sdk/react/grid/text-selection-cs1/app/App.jsx %}
+{% endhighlight %}
+{% highlight ts tabtitle="App.tsx" %}
+{% include code-snippet/grid-sdk/react/grid/text-selection-cs1/app/App.tsx %}
+{% endhighlight %}
+{% highlight js tabtitle="datasource.jsx" %}
+{% include code-snippet/grid-sdk/react/grid/text-selection-cs1/app/datasource.jsx %}
+{% endhighlight %}
+{% highlight ts tabtitle="datasource.tsx" %}
+{% include code-snippet/grid-sdk/react/grid/text-selection-cs1/app/datasource.tsx %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/grid/text-selection-cs1" %}
+
 ## Customize cell styles
 
 Customizing grid cell styles allows modification of cell appearance in the Grid control to meet specific design requirements. The font, background color, and other cell styles can be customized using grid events, CSS, properties, or method support.

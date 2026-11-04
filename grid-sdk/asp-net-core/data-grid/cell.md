@@ -78,6 +78,21 @@ The following example demonstrates how to set the `allowTextWrap` property to **
 > * If a column's header text contains no white space, the text may not be wrapped.
 > * If the content of a cell contains HTML tags, the Autowrap functionality may not work as expected. In such cases, you can use the `headerTemplate` and `template` properties of the column to customize the appearance of the header and cell content.
 
+## Enable or disable cell text selection
+
+The Data Grid supports cell text selection by default, allowing users to select text within grid cells, group captions, and summary rows using standard browser text selection features. However, in some scenarios, text selection may need to be disabled to help protect sensitive information and prevent users from copying important data. To disable cell text selection, set the `allowTextSelection` property to `false`.
+
+In the following example, the [EJ2 Toggle Switch Button](https://ej2.syncfusion.com/aspnetcore/documentation/switch/getting-started) control is added to enable and disable the `allowTextSelection` property.
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/grid-sdk/asp-net-core/grid/cell/text-selection/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="TextSelection.cs" %}
+{% include code-snippet/grid-sdk/asp-net-core/grid/cell/text-selection/text-selection.cs %}
+{% endhighlight %}
+{% endtabs %}
+
 ## Customize cell styles
 
 Customizing the grid cell styles allows you to modify the appearance of cells in the Grid control to meet your design requirements. You can customize the font, background color, and other styles of the cells. To customize the cell styles in the grid, you can use grid event, css, property or method support.

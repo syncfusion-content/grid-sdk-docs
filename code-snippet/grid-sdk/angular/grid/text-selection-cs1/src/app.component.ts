@@ -1,19 +1,19 @@
 import { data } from './datasource';
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { GridComponent, GridModule, GroupService, GroupSettingsModel, FindService } from '@syncfusion/ej2-angular-grids';
+import { GridComponent, GridModule, GroupService, GroupSettingsModel } from '@syncfusion/ej2-angular-grids';
 import { ChangeEventArgs, ButtonModule, CheckBoxModule, RadioButtonModule, SwitchModule } from '@syncfusion/ej2-angular-buttons';
 
 @Component({
   selector: 'app-root',
   standalone: true,
   imports: [GridModule, ButtonModule, CheckBoxModule, RadioButtonModule, SwitchModule],
-  providers: [GroupService, FindService],
+  providers: [GroupService],
   template: `
     <div style="display: flex; align-items: center; gap: 10px; padding: 10px 10px">
       <label>Enable or disable text selection property</label>
       <ejs-switch id="switch" (change)="onSwitchChange($event)" checked="true"></ejs-switch>
     </div>
-    <ejs-grid #grid [dataSource]="data" [allowGrouping]="false" [groupSettings]="groupSettings" height="315">
+    <ejs-grid #grid [dataSource]="data" [allowGrouping]="true" [groupSettings]="groupSettings" height="315">
       <e-columns>
         <e-column field="OrderID" headerText="Order ID" textAlign="Right" width="120">
         </e-column>
