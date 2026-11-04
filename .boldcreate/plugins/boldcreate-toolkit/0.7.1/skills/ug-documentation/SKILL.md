@@ -449,6 +449,328 @@ When documenting verification, use:
 
 ---
 
+## Mandatory Validation Gates (Before Documentation Generation)
+
+**CRITICAL: All gates must be verified before proceeding to documentation generation. Do not bypass any gate.**
+
+---
+
+### Gate 1: Supported Combination Validation
+
+**Purpose:** Ensure feature interactions are verified, not assumed.
+
+**Before generating documentation:**
+
+1. **Identify target feature**
+   ```
+   Example: Foreign Key Column
+   ```
+
+2. **Identify major related features** (for this component)
+   ```
+   Example for TreeGrid:
+     • Filtering
+     • Searching
+     • Sorting
+     • Editing
+     • Grouping
+     • Exporting
+     • Templates
+     • Virtualization
+   ```
+
+3. **Validate interactions using source-of-truth**
+   ```
+   For each feature combination:
+     TreeGrid + ForeignKey + Filtering → ✓/✗/? (VERIFY from source)
+     TreeGrid + ForeignKey + Sorting   → ✓/✗/? (VERIFY from source)
+     TreeGrid + ForeignKey + Editing   → ✓/✗/? (VERIFY from source)
+     etc.
+   ```
+
+**Validation Rules:**
+
+```
+✓ Verified Supported
+  → Include in documentation
+  → Example: "Foreign Key Column works with Filtering"
+
+✗ Verified Not Supported
+  → Document as limitation
+  → Example: "Foreign Key Column does not support GroupCaption templates"
+
+? Unable to Verify
+  → Flag as "Requires Validation"
+  → Do NOT document without verification
+  → Request additional source information
+```
+
+**Critical Rule:**
+```
+NEVER document cross-feature support without verification from 
+an approved source. Do NOT assume compatibility based on similar components.
+Do NOT infer behavior from DataGrid, Scheduler, Gantt, or any other component.
+```
+
+**Supported Interaction Examples (Validate Each):**
+
+- Filtering + Feature
+- Searching + Feature
+- Sorting + Feature
+- Editing + Feature
+- Grouping + Feature
+- Paging + Feature
+- Virtualization + Feature
+- Infinite Scrolling + Feature
+- Exporting + Feature
+- Templates + Feature
+- Aggregates + Feature
+- Row Drag and Drop + Feature
+- Lazy Loading + Feature
+- Custom Adaptor + Feature
+
+---
+
+### Gate 2: Source Sufficiency Validation
+
+**Purpose:** Ensure provided source contains enough information for accurate documentation.
+
+**Before documentation generation:**
+
+1. **Verify source contains minimum required information**
+
+```
+Required Information:
+  ✓ Feature purpose (What does this feature do?)
+  ✓ Feature behavior (How does it work?)
+  ✓ Public APIs (Properties, methods, events)
+  ✓ Supported scenarios (What can users do with it?)
+  ✓ Limitations/restrictions (What doesn't work?)
+```
+
+2. **Accept source hierarchy** (highest priority first)
+
+```
+Priority 1: Specification
+Priority 2: Technical Design
+Priority 3: Approved Pull Request
+Priority 4: Source Code
+Priority 5: Existing Documentation
+Priority 6: User Explanation
+```
+
+**Validation Rules:**
+
+```
+✓ ALL required information available
+  → Continue to documentation generation
+
+◐ PARTIAL information available
+  → Identify missing sections
+  → Request ONLY missing details
+  → Do NOT proceed without critical information
+
+✗ CRITICAL information missing
+  → Stop documentation generation
+  → Request complete source information
+  → Never invent undocumented behavior
+  → Never fill gaps using assumptions
+```
+
+**What Counts as Source Insufficiency:**
+
+```
+❌ Behavior unclear or ambiguous
+❌ API signatures incomplete
+❌ Feature interactions undocumented
+❌ Limitations not stated
+❌ Source examples missing or incomplete
+❌ Conflicting information in source
+```
+
+**Gate Action:**
+
+```
+Before proceeding, explicitly verify:
+  ✓ Source is clear and unambiguous?
+  ✓ All required information present?
+  ✓ Conflicting information resolved?
+  
+If any answer is NO:
+  → Do NOT proceed
+  → Request clarification or additional source
+```
+
+---
+
+### Gate 3: Documentation Standards Compliance
+
+**Purpose:** Ensure generated documentation matches target platform and component standards.
+
+**Before finalizing documentation:**
+
+1. **Verify documentation structure matches target**
+
+```
+Target Standard Elements:
+  ✓ Correct section ordering
+  ✓ Correct heading levels
+  ✓ Consistent terminology
+  ✓ Consistent formatting
+  ✓ Consistent sample structure
+  ✓ Consistent note/warning formatting
+  ✓ Consistent limitation formatting
+  ✓ Repository-specific authoring standards
+  ✓ Markdown conventions used in target
+```
+
+2. **Reference Standards Checklist**
+
+```
+HEADING HIERARCHY:
+  ✓ Follow existing documentation heading levels
+  ✓ Match section structure of similar features
+  
+TERMINOLOGY:
+  ✓ Use terms from existing component documentation
+  ✓ Use terms from existing platform documentation
+  ✓ Maintain consistency throughout documentation
+  
+FORMATTING:
+  ✓ Code block formatting matches repository
+  ✓ Note/warning formatting matches existing docs
+  ✓ Table formatting matches existing docs
+  ✓ List formatting matches existing docs
+  
+SAMPLES:
+  ✓ Sample structure matches platform conventions
+  ✓ Sample coding style matches platform standards
+  ✓ Sample naming matches platform conventions
+  ✓ Complete, working samples (not fragments)
+  
+LIMITATIONS:
+  ✓ Limitations section format matches docs
+  ✓ Clear statement of unsupported scenarios
+  ✓ Clear statement of unsupported combinations
+```
+
+3. **Validation Checklist (Before Finalizing)**
+
+```
+Section Ordering:
+  ✓ Introduction/Overview
+  ✓ APIs/Properties (if applicable)
+  ✓ Events (if applicable)
+  ✓ Supported Scenarios
+  ✓ Code Examples
+  ✓ Limitations/Restrictions
+  ✓ Related Topics (if applicable)
+  
+Heading Levels:
+  ✓ H1: Feature name
+  ✓ H2: Major sections
+  ✓ H3: Subsections
+  ✓ Match existing documentation pattern
+  
+Terminology:
+  ✓ Component name usage consistent
+  ✓ Feature name usage consistent
+  ✓ Platform terminology consistent
+  ✓ No conflicting terminology
+  
+Formatting:
+  ✓ Code samples properly formatted
+  ✓ Notes properly formatted
+  ✓ Warnings properly formatted
+  ✓ Tables properly formatted
+  ✓ Lists properly formatted
+```
+
+4. **If Documentation Reference Unavailable**
+
+```
+DO NOT guess the required structure.
+
+REQUEST:
+  ✓ Target documentation example
+  ✓ Reference document (existing similar feature)
+  ✓ Style guide or standards document
+  ✓ Repository authoring guidelines
+
+THEN:
+  → Generate documentation matching provided reference
+  → Verify compliance with provided standard
+  → Ensure consistency with provided reference
+```
+
+**Critical Rule:**
+```
+Documentation generation must NOT be completed unless 
+documentation standards compliance has been verified.
+
+If standards reference is not available:
+  ✗ Do NOT proceed with documentation generation
+  → Request standards reference/example document
+  → Wait for reference before generating
+```
+
+---
+
+## Mandatory Validation Gate Sequence
+
+**EXECUTION ORDER (Do NOT skip any gate):**
+
+```
+Step 1: Gather and Validate Required Inputs
+         └─→ Extract: Platform, Component, Feature, Source
+
+Step 2: Verify Source Sufficiency
+         └─→ Check: Purpose, Behavior, APIs, Scenarios, Limitations
+         └─→ Action: If insufficient, request missing information
+         └─→ Status: Continue only if sufficient
+
+Step 3: Verify Supported Feature Combinations
+         └─→ Check: Feature interactions with other component features
+         └─→ Action: Validate each combination from source
+         └─→ Status: Document only verified combinations
+
+Step 4: Generate Documentation
+         └─→ Action: Create documentation using verified information
+         └─→ Constraint: Use ONLY verified information
+         └─→ Constraint: Do NOT invent or assume features
+
+Step 5: Verify Documentation Standards Compliance
+         └─→ Check: Structure, Headings, Terminology, Formatting
+         └─→ Action: Compare against target standard/reference
+         └─→ Status: Adjust if not compliant
+
+Step 6: Produce Final Output
+         └─→ Action: Deliver verified, standards-compliant documentation
+         └─→ Include: References, Gaps, Standards applied
+```
+
+**Gate Decision Logic:**
+
+```
+For each validation gate:
+  
+PASS (✓):
+  → Continue to next gate
+  
+FAIL (✗):
+  → STOP documentation generation
+  → Identify what failed
+  → Request necessary information or resources
+  → Wait for user input
+  
+PARTIAL (◐):
+  → Identify incomplete/insufficient areas
+  → Request ONLY missing information
+  → Continue only after insufficiency resolved
+```
+
+---
+
 ## Component-Specific Context Enforcement
 
 **CRITICAL RULE: Once Component is identified, operate in component isolation mode.**
