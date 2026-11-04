@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <ejs-grid ref="grid" :dataSource='data' :findSettings='findSettings' height='272px' :toolbar='toolbarOptions'>
+    <ejs-grid ref="grid" :dataSource='data' height='272px' :toolbar='toolbarOptions'>
       <e-columns>
         <e-column field='TicketID' headerText='Ticket ID' textAlign='Right' width=90></e-column>
         <e-column field='Customer' headerText='Customer' textAlign='Left' width=120></e-column>
@@ -15,7 +15,6 @@
 import { provide, ref } from "vue";
 import { GridComponent as EjsGrid, ColumnDirective as EColumn, ColumnsDirective as EColumns, Find, Toolbar } from "@syncfusion/ej2-vue-grids";
 import { data } from './datasource.js'
-const findSettings = { enabled: true };
 const toolbarOptions = ['Find'];
 provide('grid', [Find, Toolbar]);
 </script>

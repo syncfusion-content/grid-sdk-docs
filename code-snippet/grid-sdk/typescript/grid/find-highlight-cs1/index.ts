@@ -5,7 +5,6 @@ Grid.Inject(Find, Toolbar);
 
 var grid: Grid = new Grid({
     dataSource: data,
-    findSettings: { enabled: true },
     toolbar: ['Find'],
     columns: [
         { field: 'TicketID', headerText: 'Ticket ID', textAlign: 'Right', width: 90 },

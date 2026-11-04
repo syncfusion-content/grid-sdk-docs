@@ -6,7 +6,6 @@ Grid.Inject(Find);
 
 var grid: Grid = new Grid({
     dataSource: data,
-    findSettings: { enabled: true },
     columns: [
         { field: 'OrderID', headerText: 'Order ID', textAlign: 'Right', width: 90 },
         { field: 'CustomerID', headerText: 'Customer ID', textAlign: 'Left', width: 110 },
@@ -18,9 +17,36 @@ var grid: Grid = new Grid({
 });
 grid.appendTo('#Grid');
 
-var highlightButton = new Button();
-highlightButton.appendTo('#highlight');
-document.getElementById('highlight')!.addEventListener('click', function () {
-    var text = (document.getElementById('findText') as HTMLInputElement).value;
-    grid.find(text);
+var findButton = new Button({ disabled: true });
+var findNextButton = new Button({ disabled: true });
+var findPreviousButton = new Button({ disabled: true });
+var clearFindButton = new Button({ disabled: true });
+findButton.appendTo('#find');
+findNextButton.appendTo('#findNext');
+findPreviousButton.appendTo('#findPrevious');
+clearFindButton.appendTo('#clearFind');
+
+var findTextInput = document.getElementById('findText') as HTMLInputElement;
+var findButtons = [findButton, findNextButton, findPreviousButton, clearFindButton];
+findTextInput.addEventListener('input', function () {
+    var disabled = !findTextInput.value.trim();
+    findButtons.forEach(function (button) {
+        button.disabled = disabled;
+    });
+});
+document.getElementById('find')!.addEventListener('click', function () {
+    grid.find(findTextInput.value);
+});
+document.getElementById('findNext')!.addEventListener('click', function () {
+    grid.findNext();
+});
+document.getElementById('findPrevious')!.addEventListener('click', function () {
+    grid.findPrevious();
+});
+document.getElementById('clearFind')!.addEventListener('click', function () {
+    grid.clearFind();
+    findTextInput.value = '';
+    findButtons.forEach(function (button) {
+        button.disabled = true;
+    });
 });

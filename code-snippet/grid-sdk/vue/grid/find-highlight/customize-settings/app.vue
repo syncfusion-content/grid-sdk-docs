@@ -24,7 +24,7 @@ export default {
   data() {
     return {
       data: data,
-      findSettings: { enabled: true, caseSensitive: true, currentPageOnly: true },
+      findSettings: { caseSensitive: true, currentPageOnly: true },
       toolbarOptions: ['Find'],
       pageSettings: { pageSize: 8 },
     };

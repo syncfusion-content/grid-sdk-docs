@@ -5,19 +5,32 @@ import { ButtonComponent } from '@syncfusion/ej2-react-buttons';
 import { data } from './datasource';
 
 function App() {
-  const findSettings = { enabled: true };
-  let grid: GridComponent | null;
-  let findInput: HTMLInputElement | null;
-  const highlight = () => {
-    (grid as GridComponent).find((findInput as HTMLInputElement).value);
+  const grid = React.useRef<GridComponent | null>(null);
+  const [findText, setFindText] = React.useState('');
+  const hasQuery = findText.trim().length > 0;
+  const find = () => {
+    grid.current?.find(findText);
+  };
+  const findNext = () => {
+    grid.current?.findNext();
+  };
+  const findPrevious = () => {
+    grid.current?.findPrevious();
+  };
+  const clearFind = () => {
+    grid.current?.clearFind();
+    setFindText('');
   };
   return (
     <div>
         <div style={{ paddingBottom: '20px' }}>
-          <input type="text" className="e-input" placeholder="Enter text to find" style={{ width: '220px', display: 'inline-block' }} ref={i => findInput = i} />
-          <ButtonComponent style={{ marginLeft: '10px' }} onClick={highlight}>Highlight</ButtonComponent>
+          <input type="text" className="e-input" placeholder="Enter text to find" style={{ width: '220px', display: 'inline-block' }} value={findText} onChange={event => setFindText(event.target.value)} />
+          <ButtonComponent style={{ marginLeft: '10px' }} disabled={!hasQuery} onClick={find}>Find</ButtonComponent>
+          <ButtonComponent style={{ marginLeft: '10px' }} disabled={!hasQuery} onClick={findNext}>Next</ButtonComponent>
+          <ButtonComponent style={{ marginLeft: '10px' }} disabled={!hasQuery} onClick={findPrevious}>Previous</ButtonComponent>
+          <ButtonComponent style={{ marginLeft: '10px' }} disabled={!hasQuery} onClick={clearFind}>Clear</ButtonComponent>
         </div>
-        <GridComponent ref={g => grid = g} dataSource={data} findSettings={findSettings} height={272}>
+        <GridComponent ref={g => grid = g} dataSource={data} height={272}>
           <ColumnsDirective>
               <ColumnDirective field='OrderID' headerText='Order ID' width='90' textAlign="Right"/>
               <ColumnDirective field='CustomerID' headerText='Customer ID' width='110' textAlign="Left"/>

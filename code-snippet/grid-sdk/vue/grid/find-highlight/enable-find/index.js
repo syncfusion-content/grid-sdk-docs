@@ -8,7 +8,7 @@ new Vue({
   el: '#app',
   template: `
     <div id="app">
-        <ejs-grid ref="grid" :dataSource='data' :findSettings='findSettings' height='272px' :toolbar='toolbarOptions'>
+        <ejs-grid ref="grid" :dataSource='data' height='272px' :toolbar='toolbarOptions'>
             <e-columns>
               <e-column field='TicketID' headerText='Ticket ID' textAlign='Right' width=90></e-column>
               <e-column field='Customer' headerText='Customer' textAlign='Left' width=120></e-column>
@@ -22,7 +22,6 @@ new Vue({
   data() {
     return {
       data: data,
-      findSettings: { enabled: true },
       toolbarOptions: ['Find'],
     };
   },

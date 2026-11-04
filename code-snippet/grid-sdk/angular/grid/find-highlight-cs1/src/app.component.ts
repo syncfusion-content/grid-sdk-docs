@@ -7,7 +7,7 @@ import { GridModule, FindService, ToolbarItems, ToolbarService } from '@syncfusi
     providers: [FindService, ToolbarService],
     standalone: true,
     selector: 'app-root',
-    template: `<ejs-grid [dataSource]='data' [findSettings]='findSettings' height='272px' [toolbar]='toolbarOptions'>
+    template: `<ejs-grid [dataSource]='data' height='272px' [toolbar]='toolbarOptions'>
                 <e-columns>
                     <e-column field='TicketID' headerText='Ticket ID' textAlign='Right' width=90></e-column>
                     <e-column field='Customer' headerText='Customer' textAlign='Left' width=120></e-column>
@@ -20,13 +20,10 @@ import { GridModule, FindService, ToolbarItems, ToolbarService } from '@syncfusi
 export class AppComponent implements OnInit {
 
     public data?: object[];
-    public findSettings?: object;
     public toolbarOptions?: ToolbarItems[];
 
     ngOnInit(): void {
         this.data = data;
-        this.findSettings = { enabled: true };
         this.toolbarOptions = ['Find'];
-
     }
 }

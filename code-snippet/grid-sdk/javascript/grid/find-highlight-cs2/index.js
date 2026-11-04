@@ -1,7 +1,7 @@
 ej.grids.Grid.Inject(ej.grids.Find, ej.grids.Toolbar, ej.grids.Page);
 var grid = new ej.grids.Grid({
     dataSource: data,
-    findSettings: { enabled: true, caseSensitive: true, currentPageOnly: true },
+    findSettings: { caseSensitive: true, currentPageOnly: true },
     toolbar: ['Find'],
     allowPaging: true,
     pageSettings: { pageSize: 8 },

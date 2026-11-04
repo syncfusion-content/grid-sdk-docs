@@ -1,4 +1,4 @@
-@Html.EJS().Grid("FindGrid").DataSource((IEnumerable<object>)ViewBag.datasource).Height("272px").FindSettings(f => f.Enabled(true).CaseSensitive(true).CurrentPageOnly(true)).Toolbar(new List<string>() { "Find" }).AllowPaging().PageSettings(page => page.PageSize(8)).Columns(col =>
+@Html.EJS().Grid("FindGrid").DataSource((IEnumerable<object>)ViewBag.datasource).Height("272px").FindSettings(f => f.CaseSensitive(true).CurrentPageOnly(true)).Toolbar(new List<string>() { "Find" }).AllowPaging().PageSettings(page => page.PageSize(8)).Columns(col =>
 {
     col.Field("TicketID").HeaderText("Ticket ID").Width("90").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
     col.Field("Customer").HeaderText("Customer").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Left).Add();

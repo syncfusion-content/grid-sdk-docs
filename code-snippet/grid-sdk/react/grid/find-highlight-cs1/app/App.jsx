@@ -5,9 +5,8 @@ import { data } from './datasource';
 
 function App() {
   const toolbarOptions = ['Find'];
-  const findSettings = { enabled: true };
   return (
-    <GridComponent dataSource={data} findSettings={findSettings} height={272} toolbar={toolbarOptions}>
+    <GridComponent dataSource={data} height={272} toolbar={toolbarOptions}>
           <ColumnsDirective>
               <ColumnDirective field='TicketID' headerText='Ticket ID' width='90' textAlign="Right"/>
               <ColumnDirective field='Customer' headerText='Customer' width='120' textAlign="Left"/>

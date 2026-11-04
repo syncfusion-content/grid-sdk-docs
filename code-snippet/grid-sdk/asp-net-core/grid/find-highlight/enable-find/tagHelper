@@ -1,5 +1,4 @@
 <ejs-grid id="FindGrid" dataSource="@ViewBag.datasource" height="272px"  toolbar="@(new List<string>() { "Find" })">
-    <e-grid-findsettings enabled="true"></e-grid-findsettings>
     <e-grid-columns>
         <e-grid-column field="TicketID" headerText="Ticket ID" textAlign="Right" width="90"></e-grid-column>
         <e-grid-column field="Customer" headerText="Customer" textAlign="Left" width="120"></e-grid-column>

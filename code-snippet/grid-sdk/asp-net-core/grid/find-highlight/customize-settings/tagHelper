@@ -1,5 +1,5 @@
 <ejs-grid id="FindGrid" dataSource="@ViewBag.datasource" height="272px"  toolbar="@(new List<string>() { "Find" })" allowPaging="true">
-    <e-grid-findsettings enabled="true" caseSensitive="true" currentPageOnly="true"></e-grid-findsettings>
+    <e-grid-findsettings caseSensitive="true" currentPageOnly="true"></e-grid-findsettings>
     <e-grid-pagesettings pageSize="8"></e-grid-pagesettings>
     <e-grid-columns>
         <e-grid-column field="TicketID" headerText="Ticket ID" textAlign="Right" width="90"></e-grid-column>

@@ -15,7 +15,7 @@
 import { provide, ref } from "vue";
 import { GridComponent as EjsGrid, ColumnDirective as EColumn, ColumnsDirective as EColumns, Find, Toolbar, Page } from "@syncfusion/ej2-vue-grids";
 import { data } from './datasource.js'
-const findSettings = { enabled: true, caseSensitive: true, currentPageOnly: true };
+const findSettings = { caseSensitive: true, currentPageOnly: true };
 const toolbarOptions = ['Find'];
 const pageSettings = { pageSize: 8 };
 provide('grid', [Find, Toolbar, Page]);

@@ -15,9 +15,9 @@ Find operates independently of the grid's Search functionality. While Search fil
 
 ## Enable find
 
-To enable the find feature, add the `Find` item to the grid [toolbar](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.GridBuilder-1.html#Syncfusion_EJ2_Grids_GridBuilder_1_Toolbar_System_Collections_Generic_List_System_String__), and configure the [findSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.GridFindSettingsBuilder.html) property with `enabled` set to `true`.
+To enable the find feature, add the `Find` item to the grid [toolbar](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.GridBuilder-1.html#Syncfusion_EJ2_Grids_GridBuilder_1_Toolbar_System_Collections_Generic_List_System_String__).
 
-The following example demonstrates enabling the find toolbar in the Grid. Matching values are highlighted and the **Previous** and **Next** buttons navigate between matches.
+The following example demonstrates enabling the find toolbar in the grid. Matching values are highlighted and the "Previous" and "Next" buttons navigate between matches.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -30,12 +30,13 @@ The following example demonstrates enabling the find toolbar in the Grid. Matchi
 
 ## Customize find settings
 
-Use the [findSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.GridFindSettingsBuilder.html) property to customize the find feature. Configure `findSettings` to control search behavior, including case sensitivity and the page scope of the search.
+Use the `findSettings` property to customize the find feature. Configure `findSettings` to control search behavior, including case sensitivity.
 
 | Property | Description |
 |----------|-------------|
-| `findSettings.currentPageOnly` | Restricts find operations to records displayed on the current page. |
-| `findSettings.caseSensitive` | Determines whether character casing is considered when matching values. |
+| `FindSettings.Key` | Specifies the current Find text. An empty string clears the Find state. |
+| `FindSettings.CurrentPageOnly` | Restricts find operations to records displayed on the current page. |
+| `FindSettings.CaseSensitive` | Determines whether character casing is considered when matching values. |
 
 The following sample demonstrates the find feature with case-sensitive matching and highlights matching content on the currently displayed page.
 
@@ -54,15 +55,16 @@ The Data Grid provides methods for performing find operations programmatically. 
 
 | Method | Description |
 |--------|-------------|
-| `find(query)` | Finds and highlights matches for the specified text. |
-| `findNext()` | Moves focus to the next matching result. |
-| `findPrevious()` | Moves focus to the previous matching result. |
-| `findGoTo(matchNumber)` | Navigates directly to the specified match. |
-| `findClearActive()` | Clears the active match selection. |
-| `findGetTotalMatches()` | Returns the total number of matches found. |
-| `findGetActiveMatch()` | Returns the currently active match index. |
+| `find(query)` | Finds and highlights every occurrence of the specified text in the Grid. An empty string clears the Find state. | 
+| `findNext()` | Moves to the next match, wrapping from the last match to the first. |
+| `findPrevious()` | Moves to the previous match, wrapping from the first match to the last. |
+| `goToMatch(matchNumber)` | Activates the match at the specified 1-based position. Invalid values leave the active match unchanged. |
+| `clearActiveMatch()` | Clears only the active match marker. Other matches stay highlighted and the Find query is unchanged. |
+| `clearFind()` | Clears the Find query, highlights, match count and active match. It does not change Search, filter, sort or selection. |
+| `getTotalMatches()` | Returns the number of occurrences found in the client-enumerable result set. |
+| `getActiveMatch()` | Returns the active match, or `null` when no match is active. |
 
-The following example demonstrates an external search box and Highlight button that uses the `find` method to highlight matches inside the Grid.
+The following example demonstrates how to programmatically perform a find operation using an external input, along with Find, Next, Previous, and Clear buttons.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}

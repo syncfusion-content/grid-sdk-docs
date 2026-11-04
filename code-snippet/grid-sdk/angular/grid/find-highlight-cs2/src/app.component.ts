@@ -1,5 +1,5 @@
 import { data } from './datasource';
-import { Component, OnInit, ViewChild } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { GridModule, FindService, PageService, ToolbarItems, ToolbarService } from '@syncfusion/ej2-angular-grids';
 
 @Component({
@@ -26,7 +26,7 @@ export class AppComponent implements OnInit {
 
     ngOnInit(): void {
         this.data = data;
-        this.findSettings = { enabled: true, caseSensitive: true, currentPageOnly: true };
+        this.findSettings = { caseSensitive: true, currentPageOnly: true };
         this.toolbarOptions = ['Find'];
         this.pageSettings = { pageSize: 8 };
     }

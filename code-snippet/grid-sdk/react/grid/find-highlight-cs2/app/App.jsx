@@ -5,7 +5,7 @@ import { data } from './datasource';
 
 function App() {
   const toolbarOptions = ['Find'];
-  const findSettings = { enabled: true, caseSensitive: true, currentPageOnly: true };
+  const findSettings = { caseSensitive: true, currentPageOnly: true };
   const pageSettings = { pageSize: 8 };
   return (
     <GridComponent dataSource={data} findSettings={findSettings} height={272} toolbar={toolbarOptions} allowPaging={true} pageSettings={pageSettings}>

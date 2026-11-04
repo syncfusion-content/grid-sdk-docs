@@ -1,7 +1,6 @@
 ej.grids.Grid.Inject(ej.grids.Find, ej.grids.Toolbar);
 var grid = new ej.grids.Grid({
     dataSource: data,
-    findSettings: { enabled: true },
     toolbar: ['Find'],
     columns: [
         { field: 'TicketID', headerText: 'Ticket ID', textAlign: 'Right', width: 90 },
