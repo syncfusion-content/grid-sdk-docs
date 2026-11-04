@@ -449,6 +449,156 @@ When documenting verification, use:
 
 ---
 
+## Component-Specific Context Enforcement
+
+**CRITICAL RULE: Once Component is identified, operate in component isolation mode.**
+
+### Component Isolation Principle
+
+```
+After Component identification:
+
+Component = TreeGrid
+↓
+ALL analysis, verification, documentation, examples, 
+and recommendations MUST be restricted to TreeGrid ONLY
+
+Do NOT import, copy, inherit, or assume behavior from:
+  ❌ DataGrid
+  ❌ Scheduler
+  ❌ Gantt
+  ❌ Kanban
+  ❌ Diagram
+  ❌ Chart
+  ❌ Any other component
+
+UNLESS source explicitly states shared behavior
+```
+
+### Component-Specific Validation (Pre-Generation)
+
+Before generating documentation, validate feature compatibility ONLY for target component:
+
+```
+Example:
+  Component: TreeGrid
+  Feature: Foreign Key Column
+
+Validate ONLY TreeGrid support:
+  ✓ TreeGrid + ForeignKey + Filtering?
+  ✓ TreeGrid + ForeignKey + Sorting?
+  ✓ TreeGrid + ForeignKey + Editing?
+  ✓ TreeGrid + ForeignKey + Exporting?
+  
+Do NOT validate:
+  ✗ DataGrid + ForeignKey (different component)
+  ✗ Grid family patterns (overgeneralization)
+```
+
+### Component-Specific API Verification
+
+```
+RULE: Property exists in DataGrid ≠ Property exists in TreeGrid
+
+Mandatory component-specific verification:
+
+Include ONLY:
+  ✓ Properties belonging to target component
+  ✓ Events belonging to target component
+  ✓ Methods belonging to target component
+  ✓ Interfaces for target component
+  ✓ Models/Enums for target component
+
+Exclude UNLESS verified:
+  ❌ APIs from other components
+  ❌ Behavior from similar components
+  ❌ Inherited APIs without verification
+```
+
+### Component-Specific Sample Generation
+
+```
+Rule: All samples MUST use target component exclusively
+
+Example:
+  Component: TreeGrid
+  Feature: Foreign Key Column
+  
+Generate:
+  <SfTreeGrid>...</SfTreeGrid>
+  
+Do NOT generate:
+  ❌ <SfGrid>...</SfGrid>
+  ❌ <SfDataGrid>...</SfDataGrid>
+  ❌ Generic "grid" code
+  
+Even if similar functionality exists in other components
+```
+
+### Cross-Component Verification Checklist
+
+Before publishing documentation, verify ALL items belong to target component:
+
+```
+Verification Checklist:
+  ✓ Sample code uses target component?
+  ✓ API references belong to component?
+  ✓ Event references belong to component?
+  ✓ Property references belong to component?
+  ✓ Behavioral statements match component docs?
+  ✓ Feature limitations verified from component?
+  ✓ Supported scenarios verified from component?
+  
+If any item fails verification:
+  → Remove from documentation
+  → Re-verify from component source
+  → Report gap if verification impossible
+```
+
+### Feature Compatibility Matrix (Component-Specific)
+
+Generate compatibility matrix for IDENTIFIED COMPONENT ONLY:
+
+```
+Example:
+Feature:     Foreign Key Column
+Component:   TreeGrid
+Platform:    Blazor
+
+Supported Combinations (verified from TreeGrid source):
+  ✓ Filtering + Foreign Key Column
+  ✓ Sorting + Foreign Key Column
+  ✓ Editing + Foreign Key Column
+  ✓ Searching + Foreign Key Column
+
+Partially Supported (verified from TreeGrid source):
+  ◐ Virtualization + Foreign Key Column
+
+Not Supported (verified from TreeGrid source):
+  ✗ Group Caption Templates
+  ✗ DetailRow Templates with Foreign Keys
+
+Note: Do NOT include DataGrid or other components
+      unless TreeGrid source explicitly confirms feature parity
+```
+
+### Documentation Accuracy Rule (Component-Specific)
+
+```
+Documentation must represent:
+
+[Target Platform] + [Target Component] + [Target Feature]
+
+Correct:
+  "Blazor TreeGrid Foreign Key Column Documentation"
+
+Incorrect:
+  "Grid Family Foreign Key Documentation"
+  (This implies cross-component applicability that may not exist)
+```
+
+---
+
 ## Platform-Specific Standards
 
 When information available, automatically apply platform-specific standards:
@@ -467,6 +617,39 @@ Mobile     → Platform-specific patterns
 
 ---
 
+## Mandatory Validation Before Final Output
+
+**Component-Specific Accuracy Check (CRITICAL)**
+
+Before publishing documentation, confirm ALL of the following:
+
+```
+COMPONENT VERIFICATION:
+  ✓ All documented APIs belong to [Target Component]?
+  ✓ All documented Events belong to [Target Component]?
+  ✓ All samples use [Target Component] exclusively?
+  ✓ All supported combinations verified for [Target Component]?
+  ✓ No cross-component assumptions exist?
+  ✓ No content copied from another component without verification?
+
+If ANY verification item fails:
+  → Remove the problematic item from documentation
+  → Re-verify from component-specific source
+  → Report as gap if verification impossible
+  
+PLATFORM VERIFICATION:
+  ✓ Sample code syntax matches [Target Platform]?
+  ✓ API usage patterns match [Target Platform]?
+  ✓ Code conventions follow [Target Platform] standards?
+
+FEATURE VERIFICATION:
+  ✓ Feature behavior matches provided source?
+  ✓ All documented scenarios are verified?
+  ✓ Limitations explicitly stated from source?
+```
+
+---
+
 ## Success Criteria
 
 Documentation generation is complete when:
@@ -474,11 +657,13 @@ Documentation generation is complete when:
 1. ✓ All required information explicitly provided or extracted
 2. ✓ No invalid assumptions made
 3. ✓ Source(s) analyzed using priority order
-4. ✓ APIs/Events verified from source
-5. ✓ Code samples verified against source APIs
-6. ✓ Gaps reported transparently
-7. ✓ Output ready for repository commit
-8. ✓ Verification status clear (✓/◐/?/✗)
+4. ✓ APIs/Events verified from component-specific source
+5. ✓ Code samples verified against component APIs
+6. ✓ All items belong to target component (verified)
+7. ✓ No cross-component content included
+8. ✓ Gaps reported transparently
+9. ✓ Output ready for repository commit
+10. ✓ Verification status clear (✓/◐/?/✗)
 
 ---
 
