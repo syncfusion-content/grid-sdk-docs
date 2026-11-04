@@ -29,30 +29,133 @@ Blazor, JavaScript, Angular, React, Vue, ASP.NET Core, ASP.NET MVC, MAUI, WinFor
 
 ---
 
+## 🛑 **CRITICAL RULE: REQUEST USER INPUT FIRST - NEVER READ FILES WITHOUT PERMISSION**
+
+**MANDATORY BEFORE ANY FILE OPERATIONS:**
+
+```
+❌ DO NOT read files autonomously
+❌ DO NOT search repositories
+❌ DO NOT browse documentation
+❌ DO NOT analyze code
+❌ DO NOT list files
+❌ DO NOT make assumptions about file structure
+
+✓ DO ask user for all required information FIRST
+✓ DO collect Platform, Component, Feature, Type, Scope
+✓ DO get explicit source from user (spec URL, PR, code path)
+✓ DO wait for user response before ANY file access
+```
+
+**The skill must verbally ask the user before reading any files or repositories.**
+
+---
+
 ## Execution Model: Single-Pass Information Collection
 
-### Step 1: Autonomous Context Extraction
+### Step 1: Request User Input (BEFORE ANY FILE OPERATIONS)
 
-Automatically extract all information from the user request:
+**FIRST ACTION: Ask user for information. Do NOT read files yet.**
+
+```
+User Request: "Create Blazor DataGrid documentation"
+
+IMMEDIATE ACTION:
+  ✗ DO NOT read files
+  ✗ DO NOT search repository
+  ✓ DO ask user for information
+```
+
+**If user request is vague or missing information:**
+
+```
+The request does not contain enough information. Please provide:
+
+- Platform (Blazor, Angular, React, etc.)
+- Component (DataGrid, TreeGrid, etc.)
+- Feature Name
+- Request Type
+- Feature Scope
+- Source of Truth (Spec URL? PR? Code path?)
+
+After you provide these details, I will proceed with verification.
+```
+
+**If user request is complete:**
 
 ```
 FROM: "Create Blazor DataGrid sorting documentation using spec PR #1234"
 
-EXTRACT:
-✓ Platform: Blazor
-✓ Component: DataGrid
-✓ Feature: Sorting
-✓ Source: PR #1234
-✓ Request Type: New Feature (inferred from context)
+UNDERSTAND:
+✓ Platform: Blazor (stated)
+✓ Component: DataGrid (stated)
+✓ Feature: Sorting (stated)
+✓ Source: PR #1234 (stated)
+✓ Type: New Feature (inferred)
 
-NO QUESTIONS ASKED YET
+CONFIRM WITH USER:
+"I understood you need:
+ • Platform: Blazor
+ • Component: DataGrid
+ • Feature: Sorting
+ • Source: PR #1234
+
+Is this correct? [YES/NO]"
+
+[WAIT FOR USER RESPONSE]
+
+If YES: Proceed to verification phase
+If NO: Ask for clarification
 ```
 
 **Rules:**
-- Extract platform, component, feature name when explicitly stated
-- Extract source of truth from URLs, PR numbers, file paths provided
-- Infer request type from request context (new/enhancement/correction/etc)
-- Do NOT assume information that is not directly stated
+- **FIRST**: Ask user for information
+- **ALWAYS**: Confirm understanding with user
+- **WAIT**: For user approval before file access
+- **NEVER**: Read files without explicit user permission
+
+---
+
+## 🛑 **FILE ACCESS RULES (MANDATORY)**
+
+### When File Reading Is Prohibited
+
+```
+NEVER read or access files:
+  ❌ Before collecting user input
+  ❌ Before confirming user requirements
+  ❌ Without explicit source path from user
+  ❌ To "understand existing structure"
+  ❌ To "look for similar documentation"
+  ❌ To "extract platform standards"
+  ❌ To explore the repository
+  ❌ Before user says "YES, proceed"
+```
+
+### When File Reading Is Allowed
+
+```
+ONLY read files:
+  ✓ After collecting all required information
+  ✓ After user confirms requirements
+  ✓ When user explicitly provides source (PR, spec URL, code path)
+  ✓ When user says "YES, proceed with verification"
+  ✓ To verify APIs in source code (ONLY if user provided source)
+  ✓ To verify events in source code (ONLY if user provided source)
+  ✓ To extract specifications (ONLY if user provided spec)
+```
+
+### Required User Approval Before File Access
+
+```
+User provides information → Skill confirms understanding → User approves → File access allowed
+
+Example:
+User: "Create Blazor DataGrid sorting documentation using PR #1234"
+Skill: "Confirming: Platform=Blazor, Component=DataGrid, Feature=Sorting, Source=PR #1234. Correct?"
+User: "Yes, proceed"
+Skill: "Accessing PR #1234 for verification..."
+```
 
 ---
 
