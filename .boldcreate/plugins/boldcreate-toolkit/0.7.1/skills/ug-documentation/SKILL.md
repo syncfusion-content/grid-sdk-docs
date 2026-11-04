@@ -29,56 +29,202 @@ Blazor, JavaScript, Angular, React, Vue, ASP.NET Core, ASP.NET MVC, MAUI, WinFor
 
 ---
 
-## 🛑 **CRITICAL RULE: REQUEST USER INPUT FIRST - NEVER READ FILES WITHOUT PERMISSION**
+## 🛑 **ZERO-TOLERANCE RULE: NO ASSUMPTIONS, NO FILE ACCESS, EXPLICIT USER INPUT REQUIRED**
 
-**MANDATORY BEFORE ANY FILE OPERATIONS:**
+**ABSOLUTE RULES (No Exceptions):**
 
 ```
-❌ DO NOT read files autonomously
-❌ DO NOT search repositories
-❌ DO NOT browse documentation
-❌ DO NOT analyze code
-❌ DO NOT list files
-❌ DO NOT make assumptions about file structure
+❌ NEVER assume platform (even if obvious from context)
+❌ NEVER assume component (even if mentioned in passing)
+❌ NEVER assume feature scope (even if partially implied)
+❌ NEVER assume request type (even if context suggests it)
+❌ NEVER assume source of truth location (even if mentioned vaguely)
+❌ NEVER read the skill file from environment
+❌ NEVER search existing documentation
+❌ NEVER browse repository structure
+❌ NEVER analyze code without explicit permission
+❌ NEVER infer missing details from vague wording
+❌ NEVER read files autonomously
+❌ NEVER make ANY decision without explicit user input
 
-✓ DO ask user for all required information FIRST
-✓ DO collect Platform, Component, Feature, Type, Scope
-✓ DO get explicit source from user (spec URL, PR, code path)
-✓ DO wait for user response before ANY file access
+✓ ONLY use explicitly stated information
+✓ ONLY ask user for every missing required field
+✓ ONLY proceed after explicit user confirmation
+✓ ONLY read files after user permission
 ```
 
-**The skill must verbally ask the user before reading any files or repositories.**
+**Example of VAGUE REQUEST (REJECT immediately):**
+
+```
+Request: "Read the ug documentation skill in this environment and create 
+UG documentation for foreign key column feature"
+
+Problems:
+  ❌ Platform not stated (Blazor? React? Vue? Angular? JavaScript?)
+  ❌ Component not stated (DataGrid? TreeGrid? Other?)
+  ❌ Feature type not stated (New? Enhancement? Correction?)
+  ❌ Scope not defined (APIs? Events? Setup? Examples?)
+  ❌ Source of truth not provided (Spec? PR? Code?)
+  ❌ Request assumes skill should read from environment
+  ❌ Request assumes documentation structure knowledge
+  ❌ Request assumes "foreign key column" is on DataGrid
+
+ACTION: REJECT with explicit required fields
+```
 
 ---
 
-## Execution Model: Single-Pass Information Collection
+## 🚨 **VAGUE REQUEST REJECTION RULES**
 
-### Step 1: Request User Input (BEFORE ANY FILE OPERATIONS)
-
-**FIRST ACTION: Ask user for information. Do NOT read files yet.**
+**When to REJECT a request immediately:**
 
 ```
-User Request: "Create Blazor DataGrid documentation"
-
-IMMEDIATE ACTION:
-  ✗ DO NOT read files
-  ✗ DO NOT search repository
-  ✓ DO ask user for information
+❌ REJECT if Platform is not explicitly stated
+❌ REJECT if Component is not explicitly stated  
+❌ REJECT if Feature Name is not explicitly stated
+❌ REJECT if Feature Scope is not explicitly defined
+❌ REJECT if Request Type is not explicitly specified
+❌ REJECT if Source of Truth is not explicitly provided
+❌ REJECT if request contains any assumptions
+❌ REJECT if request assumes file reading from environment
+❌ REJECT if request assumes existing documentation structure
+❌ REJECT if request uses vague wording like "for foreign key column feature"
 ```
 
-**If user request is vague or missing information:**
+**REJECTION Response Template:**
 
 ```
-The request does not contain enough information. Please provide:
+I cannot generate documentation because the request is too vague. 
+I do not make assumptions or infer missing details.
 
-- Platform (Blazor, Angular, React, etc.)
-- Component (DataGrid, TreeGrid, etc.)
-- Feature Name
-- Request Type
-- Feature Scope
-- Source of Truth (Spec URL? PR? Code path?)
+Please provide ALL of the following explicitly:
 
-After you provide these details, I will proceed with verification.
+□ PLATFORM (Required, must be explicit)
+  Which platform? State clearly:
+  - Blazor
+  - JavaScript
+  - Angular
+  - React
+  - Vue
+  - ASP.NET Core
+  - ASP.NET MVC
+  - MAUI
+  - WinForms
+  - WPF
+  - Flutter
+  - Xamarin
+
+□ COMPONENT (Required, must be explicit)
+  Which component? State clearly:
+  - DataGrid
+  - TreeGrid
+  - Scheduler
+  - Kanban
+  - Gantt
+  - Diagram
+  - Chart
+  - Other (specify)
+
+□ FEATURE NAME (Required, must be explicit)
+  What is the feature? Examples:
+  - Foreign Key Column
+  - Sorting
+  - Filtering
+  - Grouping
+  - Exporting
+  - Other (specify)
+
+□ REQUEST TYPE (Required, must be explicit)
+  What type of documentation?
+  - New Feature Documentation (completely new)
+  - Feature Enhancement Documentation (enhancement to existing)
+  - Documentation Correction (fix existing docs)
+  - API Documentation Only (properties/methods only)
+  - Event Documentation Only (events only)
+  - Migration Documentation (migration path)
+
+□ FEATURE SCOPE (Required, must be explicit)
+  What should be documented? Select all that apply:
+  - Configuration and Setup
+  - Step-by-step Usage
+  - API Reference (properties/methods)
+  - Events and Event Handling
+  - Code Examples
+  - Advanced Scenarios
+  - Troubleshooting
+  - Other (specify)
+
+□ SOURCE OF TRUTH (Required, must be explicit)
+  Where is authoritative information?
+  - Specification Document URL
+  - Technical Design Document URL
+  - Source Code File Path
+  - Pull Request Number/URL
+  - Requirements Document
+  - Other (specify)
+
+After providing ALL of the above explicitly, documentation generation will begin.
+```
+
+---
+
+## Execution Model: Strict Single-Pass Information Collection
+
+### Step 1: Evaluate Request Completeness (BEFORE ANY FILE OPERATIONS)
+
+**FIRST ACTION: Check if request has ALL required information explicitly stated.**
+
+```
+User Request: "Read the ug documentation skill in this environment and create 
+UG documentation for foreign key column feature"
+
+EVALUATION:
+  ❌ Platform: NOT STATED (not Blazor? React? Vue?)
+  ❌ Component: NOT STATED (not DataGrid? TreeGrid?)
+  ❌ Feature Name: VAGUE ("foreign key column" - unclear)
+  ❌ Request Type: NOT STATED (New? Enhancement? Correction?)
+  ❌ Scope: NOT STATED (APIs? Events? Setup? All?)
+  ❌ Source: NOT PROVIDED (no spec, PR, or code path)
+
+ACTION: REJECT - Ask for all missing information
+NO FILE READING
+NO ASSUMPTIONS
+NO INFERENCES
+```
+
+**If request is COMPLETE (ALL fields explicitly stated):**
+
+```
+User Request: "Create Blazor DataGrid foreign key column documentation. 
+Request Type: New Feature. Source: PR #5678 with specification."
+
+EVALUATION:
+  ✓ Platform: Blazor (explicitly stated)
+  ✓ Component: DataGrid (explicitly stated)
+  ✓ Feature: Foreign Key Column (explicitly stated)
+  ✓ Type: New Feature (explicitly stated)
+  ✓ Source: PR #5678 (explicitly provided)
+
+ACTION: Confirm with user, wait for approval, THEN read files
+```
+
+**If request is INCOMPLETE (ANY field missing or vague):**
+
+```
+User Request: "Create Blazor documentation for the new feature"
+
+EVALUATION:
+  ✓ Platform: Blazor (stated)
+  ❌ Component: NOT STATED (which component?)
+  ❌ Feature: NOT STATED (which feature?)
+  ❌ Type: NOT STATED (New? Enhancement?)
+  ❌ Scope: NOT STATED (what sections?)
+  ❌ Source: NOT PROVIDED (spec? PR? code?)
+
+ACTION: REJECT - Ask for all missing information explicitly
+DO NOT MAKE ASSUMPTIONS
+DO NOT READ FILES
+DO NOT INFER DETAILS
 ```
 
 **If user request is complete:**
