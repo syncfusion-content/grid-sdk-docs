@@ -171,6 +171,45 @@ In the below example, the row height for the row with **OrderID** as '10249' is 
 > * You can customize the row height of multiple rows by checking the relevant criteria in the `RowDataBound` event and setting the `RowHeight` property accordingly.
 > * In the `RowDataBound` event handler, you can access the current row using the `args.row` property and set the `RowHeight` property for that row using the setAttribute method.
 
+### Dynamic row height
+
+The [SetRowHeight](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_SetRowHeight) callback enables dynamic row height customization based on row data when DOM virtualization is enabled. The callback is invoked for each row rendered in the viewport and returns the row height in pixels without modifying the underlying data source.
+
+To enable dynamic row heights, configure [EnableDomVirtualization](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_EnableDomVirtualization) as "true", and assign the `SetRowHeight` callback to return row heights based on the row data.
+
+The following example demonstrates an issue tracker where row heights are dynamically adjusted based on issue priority. Critical priority issues receive increased row height (60px) for better visibility, while high priority issues get 50px, and lower priority issues use the default row height.
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/grid-sdk/asp-net-mvc/grid/row/dynamic-row-height-cs1/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Dynamic-row-height.cs" %}
+{% include code-snippet/grid-sdk/asp-net-mvc/grid/row/dynamic-row-height-cs1/dynamic-row-height.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+![Dynamic row height](../images/row/grid-set-row-height.png)
+
+## Enable full width rows
+
+Enable full width rows by defining the `colSpan` attribute within the [QueryCellInfo](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_QueryCellInfo) event, which determines whether a record is rendered using the standard row layout or spans the entire width of the grid.
+
+In this demo, records for unavailable doctors are rendered as full-width rows, while all other records are displayed using the default grid row layout.
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/grid-sdk/asp-net-mvc/grid/row/full-row-width-cs1/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Full-row-width.cs" %}
+{% include code-snippet/grid-sdk/asp-net-mvc/grid/row/full-row-width-cs1/full-row-width.cs %}
+{% endhighlight %}
+{% highlight c# tabtitle="ShiftPlan.cs" %}
+{% include code-snippet/grid-sdk/asp-net-mvc/grid/row/full-row-width-cs1/datasource.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+![Full row width](../images/row/full-row-width.png)
+
 ## Row hover
 
 The Row Hover feature in Grid provides a visual effect when the mouse pointer hovers over the rows, making it easy to highlight and identify the selected row. This feature can also improve the readability of data in the grid. The row hover effect can be enabled or disabled using the [EnableHover](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_EnableHover) property of the Grid component.

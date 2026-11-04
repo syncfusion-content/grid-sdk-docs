@@ -215,6 +215,54 @@ In the following example, the row height for the row with "OrderID" as "10249" i
 >* The row height of multiple rows can be customized by checking the relevant criteria in the `rowDataBound` event and setting the `rowHeight` property accordingly.
 >* In the `rowDataBound` event handler, the current row can be accessed using the [args.row](https://ej2.syncfusion.com/react/documentation/api/grid/rowDataBoundEventArgs#row) property and the `rowHeight` property can be set for that row using the `setAttribute` method.
 
+### Dynamic row height
+
+The [setRowHeight](https://ej2.syncfusion.com/react/documentation/api/grid#setrowheight) callback enables dynamic row height customization based on row data when DOM virtualization is enabled. The callback is invoked for each row rendered in the viewport and returns the row height in pixels without modifying the underlying data source.
+
+To enable dynamic row heights, inject the `DomVirtualization` module, configure `enableDomVirtualization` as "true", and assign the `setRowHeight` callback to return row heights based on the row data.
+
+The following example demonstrates an issue tracker where row heights are dynamically adjusted based on issue priority. Critical priority issues receive increased row height (60px) for better visibility, while high priority issues get 50px, and lower priority issues use the default row height.
+
+{% tabs %}
+{% highlight js tabtitle="App.jsx" %}
+{% include code-snippet/grid-sdk/react/grid/dynamic-row-height-cs1/app/App.jsx %}
+{% endhighlight %}
+{% highlight ts tabtitle="App.tsx" %}
+{% include code-snippet/grid-sdk/react/grid/dynamic-row-height-cs1/app/App.tsx %}
+{% endhighlight %}
+{% highlight js tabtitle="datasource.jsx" %}
+{% include code-snippet/grid-sdk/react/grid/dynamic-row-height-cs1/app/datasource.jsx %}
+{% endhighlight %}
+{% highlight ts tabtitle="datasource.tsx" %}
+{% include code-snippet/grid-sdk/react/grid/dynamic-row-height-cs1/app/datasource.tsx %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/grid/dynamic-row-height-cs1" %}
+
+## Enable full width rows
+
+Enable full width rows by defining the [colSpan](https://ej2.syncfusion.com/react/documentation/api/grid/queryCellInfoEventArgs#colspan) attribute within the [queryCellInfo](https://ej2.syncfusion.com/react/documentation/api/grid#querycellinfo) event, which determines whether a record is rendered using the standard row layout or spans the entire width of the grid.
+
+In this demo, records for unavailable doctors are rendered as full-width rows, while all other records are displayed using the default grid row layout.
+
+{% tabs %}
+{% highlight js tabtitle="App.jsx" %}
+{% include code-snippet/grid-sdk/react/grid/full-row-width-cs1/app/App.jsx %}
+{% endhighlight %}
+{% highlight ts tabtitle="App.tsx" %}
+{% include code-snippet/grid-sdk/react/grid/full-row-width-cs1/app/App.tsx %}
+{% endhighlight %}
+{% highlight js tabtitle="datasource.jsx" %}
+{% include code-snippet/grid-sdk/react/grid/full-row-width-cs1/app/datasource.jsx %}
+{% endhighlight %}
+{% highlight ts tabtitle="datasource.tsx" %}
+{% include code-snippet/grid-sdk/react/grid/full-row-width-cs1/app/datasource.tsx %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/grid/full-row-width-cs1" %}
+
 ## Row hover
 
 The Row Hover feature in Grid provides a visual effect when the mouse pointer hovers over the rows, making it easy to highlight and identify the selected row. This feature can also improve the readability of data in the grid. The row hover effect can be enabled or disabled using the [enableHover](https://ej2.syncfusion.com/react/documentation/api/grid#enablehover) property of the Grid component.
