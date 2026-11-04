@@ -1,8 +1,8 @@
 # UG Documentation Skill - Strict Validation with Autonomous Execution
 
-Create production-ready Syncfusion User Guide documentation by extracting explicit user input and proceeding autonomously when sufficient information exists.
+Create production-ready user guide documentation by extracting explicit user input and proceeding autonomously when sufficient information exists.
 
-**Level**: Advanced | **Mode**: Autonomous Cloud Agent | **Platforms**: 12 Syncfusion frameworks
+**Level**: Advanced | **Mode**: Autonomous Cloud Agent | **Scope**: Platform-agnostic, all components
 
 ---
 
@@ -16,12 +16,6 @@ Create production-ready Syncfusion User Guide documentation by extracting explic
 ✓ PROCEED: When all required information available (act autonomously)
 ✗ CONFIRM: Unnecessary confirmation loops (eliminate these)
 ```
-
----
-
-## Supported Platforms (12)
-
-Blazor, JavaScript, Angular, React, Vue, ASP.NET Core, ASP.NET MVC, MAUI, WinForms, WPF, Flutter, Xamarin
 
 ---
 
@@ -44,11 +38,9 @@ Blazor, JavaScript, Angular, React, Vue, ASP.NET Core, ASP.NET MVC, MAUI, WinFor
 
 ```
 User Input:
-"Create Blazor TreeGrid Foreign Key documentation using PR #2456."
+"Create documentation for Foreign Key feature using PR #2456."
 
 EXTRACT (Do NOT question):
-  ✓ Platform: Blazor (explicitly stated)
-  ✓ Component: TreeGrid (explicitly stated)
   ✓ Feature: Foreign Key (explicitly stated)
   ✓ Source: PR #2456 (explicitly stated)
   ✓ Type: New Feature (inferred from context as reasonable default)
@@ -89,17 +81,10 @@ Optional Fields (infer if needed):
 **If any required field is missing, ask ONLY for missing fields:**
 
 ```
-IF Platform missing AND Component missing AND Source missing:
+IF Feature unclear AND Source missing:
 
 Request:
 "Additional information required:
-
-□ Platform
-  (Blazor | JavaScript | Angular | React | Vue | ASP.NET Core | 
-   ASP.NET MVC | MAUI | WinForms | WPF | Flutter | Xamarin)
-
-□ Component
-  (DataGrid | TreeGrid | Scheduler | Kanban | Gantt | Chart | Diagram | Other)
 
 □ Feature Name
   (What feature is being documented?)
@@ -109,7 +94,7 @@ Request:
 
 WAIT for response with ONLY the missing information.
 
-Do NOT ask for Platform, Component, Source again if already provided.
+Do NOT ask for already-provided information again.
 ```
 
 **Clarification Rule:**
@@ -149,23 +134,13 @@ ACTION: Begin documentation generation immediately
 ### What NEVER to Assume
 
 ```
-❌ Never assume Platform
-   User says "Create documentation for grid"
-   → CANNOT assume Blazor (Could be React, Vue, Angular, etc.)
-   → MUST ask: "Which platform?"
-
-❌ Never assume Component
-   User says "Create documentation for foreign key feature"
-   → CANNOT assume DataGrid (Could be TreeGrid, etc.)
-   → MUST ask: "Which component?"
-
 ❌ Never assume Feature Scope
    User says "Create documentation"
    → CANNOT assume all sections
    → Use default scope or ask if ambiguous
 
 ❌ Never assume Request Type
-   User says "Create documentation for sorting"
+   User says "Create documentation for feature"
    → Can infer as New Feature (reasonable default)
    → OK to proceed with inference
 
@@ -176,6 +151,10 @@ ACTION: Begin documentation generation immediately
 ❌ Never assume Behavior
    → Only document verified behavior from source
    → Report gaps transparently
+
+❌ Never assume Feature Interactions
+   → Only from source verification
+   → Never infer from similar features
 ```
 
 ### What CAN Infer (Reasonably)
@@ -258,11 +237,8 @@ Priority 6: User Description/Narrative
 
 | Situation | Action |
 |-----------|--------|
-| Platform explicit, Component explicit, Feature clear, Source provided | **PROCEED IMMEDIATELY** |
-| Platform missing | Ask ONLY for platform |
-| Component missing | Ask ONLY for component |
-| Both Platform & Component missing | Ask for both (not all fields) |
-| Source missing | Ask for source |
+| Feature clear, Source provided | **PROCEED IMMEDIATELY** |
+| Source missing | Ask ONLY for source |
 | Feature ambiguous | Ask for clarification (minimal) |
 | Information complete | **PROCEED IMMEDIATELY** |
 | Conflicting sources | Use highest priority, report conflict |
@@ -277,14 +253,12 @@ Priority 6: User Description/Narrative
 
 ```
 User Input:
-"Create Blazor TreeGrid Foreign Key Column documentation.
+"Create documentation for Foreign Key Column feature.
 Type: New Feature.
 Scope: APIs and Events.
 Source: PR #2456 with specification."
 
 Extract:
-  ✓ Platform: Blazor
-  ✓ Component: TreeGrid
   ✓ Feature: Foreign Key Column
   ✓ Type: New Feature
   ✓ Scope: APIs and Events
@@ -303,8 +277,6 @@ User Input:
 
 Extract:
   ✓ Feature: Foreign Key Column
-  ✗ Platform: (NOT stated)
-  ✗ Component: (NOT stated)
   ✗ Source: (NOT stated)
 
 ACTION: Ask only for missing information
@@ -313,8 +285,6 @@ Request:
 "I found: Feature = Foreign Key Column
 
 Please provide:
-□ Platform (Blazor | JavaScript | Angular | React | Vue | etc.)
-□ Component (DataGrid | TreeGrid | Other)
 □ Source of Truth (Spec | PR | Code | Other)"
 
 (Do NOT ask for Feature again - already provided)
@@ -324,23 +294,18 @@ Please provide:
 
 ```
 User Input:
-"Create documentation for grid sorting."
+"Create documentation for sorting feature."
 
 Extract:
   ✓ Feature: Sorting
-  ✓ Component: Grid (generic, likely DataGrid)
-  ✗ Platform: (NOT stated)
   ✗ Source: (NOT stated)
 
 ACTION: Ask only missing required information
 
 Request:
-"Feature: Sorting
-Component appears to be DataGrid (grid = DataGrid?)
+"Feature: Sorting detected
 
-Please confirm or provide:
-□ Platform (Blazor | JavaScript | Angular | React | Vue | etc.)
-□ Exact Component if different (DataGrid | TreeGrid | Other)
+Please provide:
 □ Source of Truth (Spec | PR | Code | Other)"
 
 (Minimal clarification, maximum extraction)
@@ -384,10 +349,8 @@ When documenting verification, use:
 ### PROCEED Immediately When
 
 ```
-✓ Platform: Blazor (or any of 12)
-✓ Component: DataGrid (or any valid component)
 ✓ Feature: [Name provided]
-✓ Source: PR #1234 (or spec URL or code path)
+✓ Source: [Reference provided]
 
 → All required fields present
 → Begin documentation generation immediately
@@ -396,8 +359,6 @@ When documenting verification, use:
 ### REQUEST Clarification When
 
 ```
-✗ Platform missing ("modern platform"?)
-✗ Component missing ("for a component"?)
 ✗ Feature ambiguous ("that feature"?)
 ✗ Source missing (no reference provided)
 ✗ Information conflicts (sources disagree)
@@ -420,10 +381,10 @@ When documenting verification, use:
 
 ### Assumption Rules
 ```
-❌ Never assume Platform
-❌ Never assume Component
+❌ Never assume Feature Scope
 ❌ Never assume APIs/Events
 ❌ Never assume Behavior
+❌ Never assume Feature Interactions
 ✓ Can infer Request Type as reasonable default
 ✓ Can infer Scope with defaults
 ```
@@ -775,167 +736,144 @@ PARTIAL (◐):
 
 **CRITICAL RULE: Once Component is identified, operate in component isolation mode.**
 
-### Component Isolation Principle
+### Feature-Source Isolation Principle
 
 ```
-After Component identification:
+After Feature and Source identified:
 
-Component = TreeGrid
+Feature = [Feature Name]
+Source = [Provided Source]
 ↓
 ALL analysis, verification, documentation, examples, 
-and recommendations MUST be restricted to TreeGrid ONLY
+and recommendations MUST be based on PROVIDED SOURCE ONLY
 
 Do NOT import, copy, inherit, or assume behavior from:
-  ❌ DataGrid
-  ❌ Scheduler
-  ❌ Gantt
-  ❌ Kanban
-  ❌ Diagram
-  ❌ Chart
-  ❌ Any other component
+  ❌ Similar features
+  ❌ Other implementations
+  ❌ Undocumented sources
+  ❌ Inferred behavior
 
-UNLESS source explicitly states shared behavior
+UNLESS provided source explicitly states additional information
 ```
 
-### Component-Specific Validation (Pre-Generation)
+### Feature Interaction Validation (Pre-Generation)
 
-Before generating documentation, validate feature compatibility ONLY for target component:
+Before generating documentation, validate feature interactions based on provided source:
 
 ```
 Example:
-  Component: TreeGrid
   Feature: Foreign Key Column
+  Source: PR #2456
 
-Validate ONLY TreeGrid support:
-  ✓ TreeGrid + ForeignKey + Filtering?
-  ✓ TreeGrid + ForeignKey + Sorting?
-  ✓ TreeGrid + ForeignKey + Editing?
-  ✓ TreeGrid + ForeignKey + Exporting?
+Validate from source:
+  ✓ Foreign Key + Filtering?
+  ✓ Foreign Key + Sorting?
+  ✓ Foreign Key + Editing?
+  ✓ Foreign Key + Exporting?
   
 Do NOT validate:
-  ✗ DataGrid + ForeignKey (different component)
-  ✗ Grid family patterns (overgeneralization)
+  ✗ Features not in source
+  ✗ Assumed interactions (without source verification)
+  ✗ Inferred behavior
 ```
 
-### Component-Specific API Verification
+### Source-Based API Verification
 
 ```
-RULE: Property exists in DataGrid ≠ Property exists in TreeGrid
+RULE: Verify all APIs from provided source only
 
-Mandatory component-specific verification:
+Mandatory source-based verification:
 
 Include ONLY:
-  ✓ Properties belonging to target component
-  ✓ Events belonging to target component
-  ✓ Methods belonging to target component
-  ✓ Interfaces for target component
-  ✓ Models/Enums for target component
+  ✓ Properties documented in source
+  ✓ Events documented in source
+  ✓ Methods documented in source
+  ✓ Interfaces defined in source
+  ✓ Models/Enums defined in source
 
 Exclude UNLESS verified:
-  ❌ APIs from other components
-  ❌ Behavior from similar components
-  ❌ Inherited APIs without verification
+  ❌ APIs not in provided source
+  ❌ Behavior not documented in source
+  ❌ Inferred or assumed APIs
 ```
 
-### Component-Specific Sample Generation
+### Source-Based Sample Generation
 
 ```
-Rule: All samples MUST use target component exclusively
+Rule: All samples MUST be based on provided source
 
 Example:
-  Component: TreeGrid
   Feature: Foreign Key Column
+  Source: PR #2456 with code samples
   
 Generate:
-  <SfTreeGrid>...</SfTreeGrid>
+  Use samples and patterns from provided source
+  Match syntax and conventions shown in source
   
 Do NOT generate:
-  ❌ <SfGrid>...</SfGrid>
-  ❌ <SfDataGrid>...</SfDataGrid>
-  ❌ Generic "grid" code
+  ❌ Samples not in source
+  ❌ Features not documented in source
+  ❌ Code using different patterns
   
-Even if similar functionality exists in other components
+Only use what is explicitly shown in provided source
 ```
 
-### Cross-Component Verification Checklist
+### Source-Based Verification Checklist
 
-Before publishing documentation, verify ALL items belong to target component:
+Before publishing documentation, verify ALL items are from provided source:
 
 ```
 Verification Checklist:
-  ✓ Sample code uses target component?
-  ✓ API references belong to component?
-  ✓ Event references belong to component?
-  ✓ Property references belong to component?
-  ✓ Behavioral statements match component docs?
-  ✓ Feature limitations verified from component?
-  ✓ Supported scenarios verified from component?
+  ✓ Sample code matches source?
+  ✓ API references from source?
+  ✓ Event references from source?
+  ✓ Property references from source?
+  ✓ Behavioral statements match source?
+  ✓ Feature limitations verified from source?
+  ✓ Supported scenarios verified from source?
   
 If any item fails verification:
   → Remove from documentation
-  → Re-verify from component source
+  → Re-verify from provided source
   → Report gap if verification impossible
 ```
 
-### Feature Compatibility Matrix (Component-Specific)
+### Feature Compatibility Matrix (Source-Based)
 
-Generate compatibility matrix for IDENTIFIED COMPONENT ONLY:
+Generate compatibility matrix based on provided source:
 
 ```
 Example:
 Feature:     Foreign Key Column
-Component:   TreeGrid
-Platform:    Blazor
+Source:      PR #2456
 
-Supported Combinations (verified from TreeGrid source):
+Supported Combinations (verified from source):
   ✓ Filtering + Foreign Key Column
   ✓ Sorting + Foreign Key Column
   ✓ Editing + Foreign Key Column
   ✓ Searching + Foreign Key Column
 
-Partially Supported (verified from TreeGrid source):
+Partially Supported (verified from source):
   ◐ Virtualization + Foreign Key Column
 
-Not Supported (verified from TreeGrid source):
+Not Supported (verified from source):
   ✗ Group Caption Templates
   ✗ DetailRow Templates with Foreign Keys
 
-Note: Do NOT include DataGrid or other components
-      unless TreeGrid source explicitly confirms feature parity
+Note: Include ONLY what is documented in provided source
 ```
 
-### Documentation Accuracy Rule (Component-Specific)
+### Documentation Accuracy Rule (Source-Based)
 
 ```
 Documentation must represent:
 
-[Target Platform] + [Target Component] + [Target Feature]
+[Feature] using provided [Source]
 
-Correct:
-  "Blazor TreeGrid Foreign Key Column Documentation"
-
-Incorrect:
-  "Grid Family Foreign Key Documentation"
-  (This implies cross-component applicability that may not exist)
+Verify: All documented information comes from provided source
 ```
 
----
 
-## Platform-Specific Standards
-
-When information available, automatically apply platform-specific standards:
-
-```
-Blazor     → C#, Razor, async/await patterns
-JavaScript → TypeScript/JS, callback patterns
-Angular    → TypeScript, decorators, modules
-React      → TypeScript/JSX, hooks, functional
-Vue        → Vue SFC, Composition API
-ASP.NET    → C#, dependency injection patterns
-MAUI       → C#, cross-platform XAML
-Desktop    → C# (WinForms/WPF), UI patterns
-Mobile     → Platform-specific patterns
-```
 
 ---
 
