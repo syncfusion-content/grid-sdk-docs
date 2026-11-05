@@ -1,10 +1,9 @@
 ---
 layout: post
 title: Cell in TypeScript Grid Control | Syncfusion
-description: Learn here all about cell support in Syncfusion TypeScript Grid control, it's elements, and more.
+description: Learn how to customize TypeScript Data Grid cells with HTML content, text wrapping, cell styling, clip modes, tooltips, and grid lines.
 platform: grid-sdk
-control: Cell 
-publishingplatform: grid-sdk
+control: Cell
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
@@ -356,7 +355,7 @@ The Grid control allows rendering Bootstrap tooltips in the cells. To enable thi
 
 This is demonstrated in the sample code below which shows how to enable Bootstrap tooltip for the **CustomerID** field using `template` property in grid cells,
 
-Step 1: Add the CDN link of Boostrap in the index.html file. Place the `link` tag in the `head` for the CSS, and the `script` tag for the JavaScript bundle before the closing `body`. 
+Step 1: Add the CDN link of Bootstrap in the index.html file. Place the `link` tag in the `head` for the CSS, and the `script` tag for the JavaScript bundle before the closing `body`. 
 
 ```html
 
