@@ -76,7 +76,7 @@ export default {
 }
 
 .e-grid .e-rowcell.full-width-row {
-  background-color: #8b4242;
+  background-color: #d0ecf5;
   color: #333;
   font-weight: 500;
 }

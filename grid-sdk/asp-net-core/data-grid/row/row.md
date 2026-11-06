@@ -177,7 +177,7 @@ The [SetRowHeight](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.
 
 To enable dynamic row heights, configure [EnableDomVirtualization](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_EnableDomVirtualization) as "true", and assign the `SetRowHeight` callback to return row heights based on the row data.
 
-The following example demonstrates an issue tracker where row heights are dynamically adjusted based on issue priority. Critical priority issues receive increased row height (60px) for better visibility, while high priority issues get 50px, and lower priority issues use the default row height.
+The following example demonstrates an issue tracker where row heights are dynamically adjusted based on issue priority. Critical priority issues receive increased row height "60px" for better visibility, while high priority issues get "50px", and lower priority issues use the default row height.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -194,7 +194,7 @@ The following example demonstrates an issue tracker where row heights are dynami
 
 Enable full width rows by defining the `colSpan` attribute within the [QueryCellInfo](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_QueryCellInfo) event, which determines whether a record is rendered using the standard row layout or spans the entire width of the grid.
 
-In this demo, records for unavailable doctors are rendered as full-width rows, while all other records are displayed using the default grid row layout.
+In this demo, records for "unavailable doctors" are rendered as full-width rows, while all other records are displayed using the default grid row layout.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}

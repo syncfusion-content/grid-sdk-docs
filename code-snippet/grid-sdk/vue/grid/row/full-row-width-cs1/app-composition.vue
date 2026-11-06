@@ -62,8 +62,8 @@ const textWrapSettings = { wrapMode: "Content" };
 }
 
 .e-grid .e-rowcell.full-width-row {
-  background-color: #8b4242;
-  color: #333;
+  background-color: #d0ecf5;
+  color: #666666;
   font-weight: 500;
 }
 </style>

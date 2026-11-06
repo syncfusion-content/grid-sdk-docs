@@ -44,6 +44,11 @@ import { EmitType } from '@syncfusion/ej2-base';
       color: #7f8c8d;
       font-weight: normal;
     }
+    .e-grid .e-rowcell.full-width-row {
+      background-color: #d0ecf5;
+      color: #333;
+      font-weight: 500;
+    }
   `]
 })
 export class AppComponent implements OnInit {

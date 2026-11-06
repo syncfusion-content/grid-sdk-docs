@@ -292,7 +292,7 @@ The [setRowHeight](https://ej2.syncfusion.com/javascript/documentation/api/grid#
 
 To enable dynamic row heights, inject the `DomVirtualization` module, configure [enableDomVirtualization](https://ej2.syncfusion.com/javascript/documentation/api/grid#enabledomvirtualization) as "true", and assign the `setRowHeight` callback to return row heights based on the row data.
 
-The following example demonstrates an issue tracker where row heights are dynamically adjusted based on issue priority. Critical priority issues receive increased row height (60px) for better visibility, while high priority issues get 50px, and lower priority issues use the default row height.
+The following example demonstrates an issue tracker where row heights are dynamically adjusted based on issue priority. Critical priority issues receive increased row height "60px" for better visibility, while high priority issues get "50px", and lower priority issues use the default row height.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
