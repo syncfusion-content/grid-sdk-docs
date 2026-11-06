@@ -1,7 +1,7 @@
 ---
 layout: post
 title: ASP.NET Core Grid Find and Highlight | Syncfusion
-description: Learn the Find and Highlight feature in ASP.NET Core Data Grid. Locate text matches, highlight them across visible columns, and navigate between results without changing the view.
+description: Learn the Find and Highlight feature in ASP.NET Core Data Grid. Search and highlight matching text across visible columns and move between results.
 platform: grid-sdk
 control: DataGrid
 documentation: ug
