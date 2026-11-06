@@ -15,7 +15,7 @@ Find operates independently of the grid's Search functionality. While Search fil
 
 ## Enable find
 
-To enable the find feature, add the `Find` item to the grid [toolbar](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.GridBuilder-1.html#Syncfusion_EJ2_Grids_GridBuilder_1_Toolbar_System_Collections_Generic_List_System_String__).
+To enable the find feature, add the `Find` item to the grid [Toolbar](https://help.syncfusion.com/cr/aspnetmvc-js2/syncfusion.ej2.grids.grid.html#Syncfusion_EJ2_Grids_Grid_Toolbar).
 
 The following example demonstrates enabling the find toolbar in the grid. Matching values are highlighted and the "Previous" and "Next" buttons navigate between matches.
 
@@ -30,7 +30,7 @@ The following example demonstrates enabling the find toolbar in the grid. Matchi
 
 ## Customize find settings
 
-Use the `findSettings` property to customize the find feature. Configure `findSettings` to control search behavior, including case sensitivity.
+Use the `FindSettings` property to customize the find feature. Configure `FindSettings` to control search behavior, including case sensitivity.
 
 | Property | Description |
 |----------|-------------|
@@ -64,7 +64,7 @@ The Data Grid provides methods for performing find operations programmatically. 
 | `getTotalMatches()` | Returns the number of occurrences found in the client-enumerable result set. |
 | `getActiveMatch()` | Returns the active match, or `null` when no match is active. |
 
-The following example demonstrates how to programmatically perform a find operation using an external input, along with Find, Next, Previous, and Clear buttons.
+The following example demonstrates how to programmatically perform a find operation using an external input, along with "Find", "Next", "Previous", and "Clear" buttons.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}

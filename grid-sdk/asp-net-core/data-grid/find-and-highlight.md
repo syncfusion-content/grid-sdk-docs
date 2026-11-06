@@ -15,7 +15,7 @@ Find operates independently of the grid's Search functionality. While Search fil
 
 ## Enable find
 
-To enable the find feature, add the `Find` item to the grid [toolbar](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_Toolbar).
+To enable the find feature, add the `Find` item to the grid [toolbar](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.grids.grid.html#Syncfusion_EJ2_Grids_Grid_Toolbar).
 
 The following example demonstrates enabling the find toolbar in the grid. Matching values are highlighted and the "Previous" and "Next" buttons navigate between matches.
 
@@ -64,7 +64,7 @@ The Data Grid provides methods for performing find operations programmatically. 
 | `getTotalMatches()` | Returns the number of occurrences found in the client-enumerable result set. |
 | `getActiveMatch()` | Returns the active match, or `null` when no match is active. |
 
-The following example demonstrates how to programmatically perform a find operation using an external input, along with Find, Next, Previous, and Clear buttons.
+The following example demonstrates how to programmatically perform a find operation using an external input, along with "Find", "Next", "Previous", and "Clear" buttons.
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}

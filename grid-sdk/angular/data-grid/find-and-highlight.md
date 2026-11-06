@@ -16,7 +16,7 @@ Find operates independently of the grid's Search functionality. While Search fil
 
 ## Enable find
 
-To enable the find feature, add the `Find` item to the grid toolbar, import the `FindService`, include it in the grid's `providers` section.
+To enable the find feature, add the `Find` item to the grid [toolbar](https://ej2.syncfusion.com/angular/documentation/api/grid#toolbar), import the `FindService`, include it in the grid's `providers` section.
 
 The following example demonstrates enabling the find toolbar in the grid. Matching values are highlighted and the "Previous" and "Next" buttons navigate between matches.
 
@@ -75,7 +75,7 @@ The Data Grid provides methods for performing find operations programmatically. 
 | `getTotalMatches()` | Returns the number of occurrences found in the client-enumerable result set. |
 | `getActiveMatch()` | Returns the active match, or `null` when no match is active. |
 
-The following example demonstrates how to programmatically perform a find operation using an external input, along with Find, Next, Previous, and Clear buttons.
+The following example demonstrates how to programmatically perform a find operation using an external input, along with "Find", "Next", "Previous", and "Clear" buttons.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
