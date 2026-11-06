@@ -32,7 +32,7 @@ Once connected, an AI assistant can perform tasks such as:
  
 ## WebMCP setup
  
-Before you can use WebMCP locally, enable the feature flag and install the browser extension:
+Before using WebMCP locally, enable the feature flag and install the browser extension:
  
 1. Enable `WebMCP for testing` flag via `chrome://flags/`. Click **"Relaunch"** to restart Chrome.
  
@@ -48,7 +48,7 @@ Follow these steps to integrate WebMCP support into Syncfusion® Angular compone
 
 ### Step 1: Create an application
 
-Create an Angular application and integrate the Syncfusion® Angular Data Grid component by following the [Getting Started with Angular Data Grid](https://help.syncfusion.com/grid-sdk/angular/data-grid/getting-started) guide. After completing the setup, follow the steps below to enable WebMCP integration.
+Create an Angular application and integrate the Syncfusion® Angular Data Grid component using the [getting started](https://help.syncfusion.com/grid-sdk/angular/data-grid/getting-started) guide. After completing the setup, follow the steps below to enable WebMCP integration.
 
 ### Step 2: Enable WebMCP support
 
@@ -183,11 +183,11 @@ export class AppComponent {
 }
 ```
 
-> Use the `exposedTo` property to restrict WebMCP access to trusted domains. This helps prevent unauthorized WebMCP clients from interacting with your component tools.
+> Use the `exposedTo` property to restrict WebMCP access to trusted domains. This helps prevent unauthorized WebMCP clients from interacting with component tools.
 
 ### Step 5: Monitor and control tool execution
 
-The [beforeWebMcpToolExecute](https://ej2.syncfusion.com/angular/documentation/api/grid/index-default#beforewebmcptoolexecute) event is triggered before a tool is executed. This event allows you to:
+The [beforeWebMcpToolExecute](https://ej2.syncfusion.com/angular/documentation/api/grid/index-default#beforewebmcptoolexecute) event is triggered before a tool is executed. This event allows:
 
 - Audit tool usage.
 - Validate incoming requests.
@@ -233,7 +233,7 @@ export class AppComponent {
     exposedTo: ['https://www.syncfusion.com/']
   };
 
-  public beforeWebMcpToolExecute(args: any): void {
+  public beforeWebMcpToolExecute(args: WebMcpToolExecuteEventArgs): void {
     if (args.toolName.includes('clearFiltering')) {
       const hour = new Date().getHours();
 
@@ -248,7 +248,7 @@ export class AppComponent {
 
 ## Best practices
 
-- Expose only the tools required by your application.
+- Expose only the tools required by the application.
 - Use the `name` property when multiple component instances exist on the same page.
 - Configure `exposedTo` to limit access to trusted domains.
 - Monitor tool activity through the `beforeWebMcpToolExecute` event.

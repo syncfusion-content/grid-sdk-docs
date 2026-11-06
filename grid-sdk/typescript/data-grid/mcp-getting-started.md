@@ -32,7 +32,7 @@ Once connected, an AI assistant can perform tasks such as:
  
 ## WebMCP setup
  
-Before you can use WebMCP locally, enable the feature flag and install the browser extension:
+Before using WebMCP locally, enable the feature flag and install the browser extension:
  
 1. Enable `WebMCP for testing` flag via `chrome://flags/`. Click **"Relaunch"** to restart Chrome.
  
@@ -48,7 +48,7 @@ Follow these steps to integrate WebMCP support into Syncfusion® Typescript cont
 
 ### Step 1: Create an application
 
-Create an application and integrate the Syncfusion® Typescript Data Grid control by following the [Getting Started with Typescript Data Grid](https://help.syncfusion.com/grid-sdk/typescript/data-grid/getting-started) guide. After completing the setup, follow the steps below to enable WebMCP integration.
+Create an application and integrate the Syncfusion® Typescript Data Grid control using the [getting started](https://help.syncfusion.com/grid-sdk/typescript/data-grid/getting-started) guide. After completing the setup, follow the steps below to enable WebMCP integration.
 
 ### Step 2: Enable WebMCP support
 
@@ -154,11 +154,11 @@ grid.appendTo('#Grid');
 </script>
 ```
 
-> Use the `exposedTo` property to restrict WebMCP access to trusted domains. This helps prevent unauthorized WebMCP clients from interacting with your control tools.
+> Use the `exposedTo` property to restrict WebMCP access to trusted domains. This helps prevent unauthorized WebMCP clients from interacting with control tools.
 
 ### Step 5: Monitor and control tool execution
 
-The [beforeWebMcpToolExecute](https://ej2.syncfusion.com/documentation/api/grid/index-default#beforewebmcptoolexecute) event is triggered before a tool is executed. This event allows you to:
+The [beforeWebMcpToolExecute](https://ej2.syncfusion.com/documentation/api/grid/index-default#beforewebmcptoolexecute) event is triggered before a tool is executed. This event allows:
 
 - Audit tool usage.
 - Validate incoming requests.
@@ -206,7 +206,7 @@ grid.appendTo('#Grid');
 
 ## Best practices
 
-- Expose only the tools required by your application.
+- Expose only the tools required by the application.
 - Use the `name` property when multiple control instances exist on the same page.
 - Configure `exposedTo` to limit access to trusted domains.
 - Monitor tool activity through the `beforeWebMcpToolExecute` event.
