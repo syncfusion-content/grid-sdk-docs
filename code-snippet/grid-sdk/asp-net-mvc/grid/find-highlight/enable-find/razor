@@ -1,0 +1,8 @@
+@Html.EJS().Grid("FindGrid").DataSource((IEnumerable<object>)ViewBag.datasource).Height("272px").Toolbar(new List<string>() { "Find" }).Columns(col =>
+{
+    col.Field("TicketID").HeaderText("Ticket ID").Width("90").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("Customer").HeaderText("Customer").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Left).Add();
+    col.Field("Subject").HeaderText("Subject").Width("200").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Left).Add();
+    col.Field("Status").HeaderText("Status").Width("100").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Left).Add();
+    col.Field("Priority").HeaderText("Priority").Width("90").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Left).Add();
+}).Render()
