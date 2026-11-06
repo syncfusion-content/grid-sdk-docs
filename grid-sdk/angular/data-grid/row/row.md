@@ -195,7 +195,7 @@ The [setRowHeight](https://ej2.syncfusion.com/angular/documentation/api/grid#set
 
 To enable dynamic row heights, inject the `DomVirtualizationService`, configure `enableDomVirtualization` as "true", and assign the `setRowHeight` callback to return row heights based on the row data.
 
-The following example demonstrates an issue tracker where row heights are dynamically adjusted based on issue priority. Critical priority issues receive increased row height (60px) for better visibility, while high priority issues get 50px, and lower priority issues use the default row height.
+The following example demonstrates an issue tracker where row heights are dynamically adjusted based on issue priority. Critical priority issues receive increased row height "60px" for better visibility, while high priority issues get "50px", and lower priority issues use the default row height.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -212,7 +212,7 @@ The following example demonstrates an issue tracker where row heights are dynami
 
 Enable full width rows by defining the [colSpan](https://ej2.syncfusion.com/angular/documentation/api/grid/queryCellInfoEventArgs#colspan) attribute within the [QueryCellInfo](https://ej2.syncfusion.com/angular/documentation/api/grid/queryCellInfoEventArgs) event, which determines whether a record is rendered using the standard row layout or spans the entire width of the grid.
 
-In this demo, records for unavailable doctors are rendered as full-width rows, while all other records are displayed using the default grid row layout.
+In this demo, records for "unavailable doctors" are rendered as full-width rows, while all other records are displayed using the default grid row layout.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
