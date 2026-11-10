@@ -670,6 +670,26 @@ The following code example demonstrates how to export all records on the client 
 {% endhighlight %}
 {% endtabs %}
 
+## Custom Binding with Caching
+
+The ASP.NET Core Data Grid provides the `EnableCache` option for custom data binding. When enabled, the data retrieved from the server is stored on the client and reused for subsequent data operations whenever possible. This reduces redundant data requests, improves responsiveness and enhances performance with large datasets.
+
+The custom binding cache works with infinite scrolling, minimizing unnecessary server requests while keeping navigation smooth. The `DataStateChange` event is triggered only when the requested data is not already available in the cache.
+
+The following example demonstrates custom binding with `enableCache` enabled in the existing custom binding sample.
+
+{% tabs %}
+{% highlight razor tabtitle="Index.cshtml" %}
+{% include code-snippet/grid-sdk/asp-net-core/grid/data-binding/remote-custom-handle/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Index.cshtml.cs" %}
+{% include code-snippet/grid-sdk/asp-net-core/grid/data-binding/remote-custom-handle/custombindingcore.cs %}
+{% endhighlight %}
+{% highlight c# tabtitle="OrdersDetails.cs" %}
+{% include code-snippet/grid-sdk/asp-net-core/grid/data-binding/remote-custom-handle/OrdersDetails.cs %}
+{% endhighlight %}
+{% endtabs %}
+
 ## Offline mode
 
 On remote data binding, all grid actions such as paging, sorting, editing, grouping, filtering, etc, will be processed on server-side. To avoid post back for every action, set the grid to load all data on initialization and make the actions process in client-side. To enable this behavior, use the `Offline` property of `e-data-manager` tag helper.

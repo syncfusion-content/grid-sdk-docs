@@ -6,9 +6,9 @@
     string fullUrl = $"{Request.Scheme}://{Request.Host}{Request.PathBase}{Request.Path}";
 }
 @Html.AntiForgeryToken()
-<ejs-grid id="grid" created="created" allowPaging="true" allowGrouping="true" dataSourceChanged="dataSourceChanged" dataStateChange="dataStateChange" allowSorting="true" allowFiltering="true" toolbar="@(new List<string>() {"Add", "Edit", "Delete", "Update", "Cancel","Search"})">
+<ejs-grid id="grid" created="created" enableInfiniteScrolling="true" dataSourceChanged="dataSourceChanged" dataStateChange="dataStateChange" allowSorting="true" allowFiltering="true" toolbar="@(new List<string>() {"Add", "Edit", "Delete", "Update", "Cancel","Search"})">
     <e-grid-editSettings allowAdding="true" allowDeleting="true" allowEditing="true"></e-grid-editSettings>
-    <e-grid-groupSettings enableLazyLoading="true" showGroupedColumn="true" columns="@(new string[] {"ProductName"})"></e-grid-groupSettings>    
+    <e-grid-infiniteScrollSettings enableCache="true"></e-grid-infiniteScrollSettings>
     <e-grid-sortsettings columns="sortOptions"></e-grid-sortsettings>
     <e-grid-filterSettings columns="filterColumns"></e-grid-filterSettings>
     <e-grid-columns>
@@ -22,12 +22,7 @@
     var gridData;
     var state = {
         skip: 0,
-        take: 12,
-        group: {
-            enableLazyLoading: true,
-            columns: ["ProductName"],
-            showGroupedColumn: true
-        },
+        take: 36,
         sort: { columns: [{ field: 'ProductID', direction: 'Descending' }] },
         filter: { columns: [{ field: 'CustomerName', matchCase: false, operator: 'startswith', predicate: 'and', value: 'Maria' }] }
     };
