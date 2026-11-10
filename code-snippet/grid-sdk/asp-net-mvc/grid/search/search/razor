@@ -1,7 +1,15 @@
-@Html.EJS().Grid("Search").DataSource((IEnumerable<object>)ViewBag.datasource).Height("350px").Columns(col =>
-{
-  col.Field("OrderID").HeaderText("Order ID").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Width("160").Add();
-  col.Field("CustomerID").HeaderText("Customer ID").Width("170").Add();
-  col.Field("Freight").HeaderText("Freight").Width("170").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Format("C2").Add();
-  col.Field("OrderDate").HeaderText("Order Date").Width("170").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Format("yMd").Add();
-}).Toolbar(new List<string>() { "Search" }).Render();
+<ejs-dropdownlist id="searchMode" dataSource="@(new List<object>() { new { text = "OnEnter", value = "OnEnter" }, new { text = "Immediate", value = "Immediate" } })" fields="@(new Syncfusion.EJ2.DropDowns.DropDownListFieldSettings { Text = "text", Value = "value" })" value="OnEnter" change="searchModeChange"></ejs-dropdownlist>
+<ejs-grid id="Grid" dataSource="@ViewBag.datasource" height="350px" toolbar="@(new List<string>() { "Search"})" searchSettings="@(new Syncfusion.EJ2.Grids.GridSearchSettings { Mode = Syncfusion.EJ2.Grids.SearchMode.OnEnter })"> 
+    <e-grid-columns>
+        <e-grid-column field="OrderID" headerText="Order ID" type="number" textAlign="Right" width="120"></e-grid-column>
+        <e-grid-column field="CustomerID" headerText="Customer ID" type="string" width="140"></e-grid-column>
+        <e-grid-column field="Freight" headerText="Freight" textAlign="Right" format="C2" width="120"></e-grid-column>
+        <e-grid-column field="OrderDate" headerText="Order Date" format='yMd' textAlign="Right" width="140"></e-grid-column>
+    </e-grid-columns>
+</ejs-grid>
+<script>
+    function searchModeChange(args) {
+        var grid = document.getElementById('Grid').ej2_instances[0];
+        grid.searchSettings = args.value === 'Immediate' ? { mode: 'Immediate', immediateModeDelay: 1500 } : { mode: 'OnEnter' };
+    }
+</script>
