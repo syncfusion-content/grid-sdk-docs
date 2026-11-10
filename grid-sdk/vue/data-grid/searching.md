@@ -150,11 +150,11 @@ The example below uses a dropdown to switch between the two modes at runtime. Wh
 
 {% tabs %}
 {% highlight vue tabtitle="app.vue" %}
-{% include code-snippet/grid-sdk/vue/grid/search/default-cs1/app.vue %}
+{% include code-snippet/grid-sdk/vue/grid/search/default-cs8/app.vue %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/grid/search/default-cs1" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/grid/search/default-cs8" %}
 ```
 
 

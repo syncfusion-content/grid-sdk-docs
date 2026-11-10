@@ -275,14 +275,14 @@ The example below uses a dropdown to switch between the two modes at runtime. Wh
 
 {% tabs %}
 {% highlight tsx tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/grid/searching-cs8/app/App.tsx %}
+{% include code-snippet/grid-sdk/react/grid/searching-cs6/app/App.tsx %}
 {% endhighlight %}
-{% highlight tsx tabtitle="index.tsx" %}
-{% include code-snippet/grid-sdk/react/grid/searching-cs8/app/index.tsx %}
+{% highlight tsx tabtitle="datasource.tsx" %}
+{% include code-snippet/grid-sdk/react/grid/searching-cs6/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/grid/searching-cs8" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/grid/searching-cs6" %}
 
 ## Search based on formatted column values
 

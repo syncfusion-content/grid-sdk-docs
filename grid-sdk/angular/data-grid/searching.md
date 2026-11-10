@@ -172,11 +172,15 @@ The example below uses a dropdown to switch between the two modes at runtime. Wh
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid-sdk/angular/grid/searching-cs8/src/app.component.ts %}
+{% include code-snippet/grid-sdk/angular/grid/searching-cs6/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/grid-sdk/angular/grid/searching-cs6/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/searching-cs8" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/searching-cs6" %}
 
 ## Perform search based on column formatting
 

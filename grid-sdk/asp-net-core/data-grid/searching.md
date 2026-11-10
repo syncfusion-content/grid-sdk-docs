@@ -149,14 +149,14 @@ The example below uses a dropdown to switch between the two modes at runtime. Wh
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/grid/search/search/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-core/grid/search/search-each-key/tagHelper %}
 {% endhighlight %}
-{% highlight c# tabtitle="search.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/grid/search/search/search.cs %}
+{% highlight c# tabtitle="search-each-key.cs" %}
+{% include code-snippet/grid-sdk/asp-net-core/grid/search/search-each-key/search-each-key.cs %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/asp-net-core/grid/search/search" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/asp-net-core/grid/search/search-each-key" %}
 
 ## Perform search based on column formatting
 

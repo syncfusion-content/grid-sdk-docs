@@ -1,13 +1,18 @@
 import { data } from './datasource';
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { GridComponent, GridModule, SearchService, ToolbarItems, ToolbarService } from '@syncfusion/ej2-angular-grids';
+import { DropDownListModule, ChangeEventArgs } from '@syncfusion/ej2-angular-dropdowns';
+import { GridComponent, GridModule, SearchSettingsModel, SearchService, ToolbarItems, ToolbarService } from '@syncfusion/ej2-angular-grids';
 
 @Component({
-    imports: [GridModule ],
+    imports: [GridModule, DropDownListModule],
     providers: [SearchService, ToolbarService],
     standalone: true,
     selector: 'app-root',
-    template: `<ejs-grid #grid [dataSource]='data' [toolbar]='toolbarOptions' (created)='created()' height='273' width='100%'>
+    template: `<div style="display: flex; align-items: center; gap: 12px; margin-bottom: 12px;">
+                <label for="searchMode">Search Mode</label>
+                <ejs-dropdownlist id="searchMode" [dataSource]="searchModes" [fields]="ddlFields" value="Default" (change)="searchModeChange($event)" width="140px"></ejs-dropdownlist>
+               </div>
+               <ejs-grid #grid [dataSource]='data' [toolbar]='toolbarOptions' [searchSettings]='searchSettings' (created)='created()' height='273' width='100%'>
                 <e-columns>
                     <e-column field='OrderID' headerText='Order ID' textAlign='Right' width=90></e-column>
                     <e-column field='CustomerID' headerText='Customer ID' width=100></e-column>
@@ -22,6 +27,12 @@ export class AppComponent implements OnInit {
 
     public data?: object[];
     public toolbarOptions?: ToolbarItems[];
+    public searchModes = [
+        { text: 'Default', value: 'Default' },
+        { text: 'Immediate', value: 'Immediate' }
+    ];
+    public ddlFields = { text: 'text', value: 'value' };
+    public searchSettings: SearchSettingsModel = { mode: 'Default' };
     @ViewChild('grid')
     public grid?: GridComponent;
 
@@ -33,5 +44,9 @@ export class AppComponent implements OnInit {
         (document.getElementById((this.grid as GridComponent).element.id + "_searchbar") as Element).addEventListener('keyup', () => {
             (this.grid as GridComponent).search(((event as MouseEvent).target as HTMLInputElement).value)
         });
+    }
+    searchModeChange(args: ChangeEventArgs) {
+        const mode = args.value as 'Default' | 'Immediate';
+        this.searchSettings = mode === 'Immediate' ? { mode, immediateModeDelay: 1500 } : { mode };
     }
 }

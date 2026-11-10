@@ -1,11 +1,26 @@
 import { Grid, Search, Toolbar } from '@syncfusion/ej2-grids';
+import { DropDownList, ChangeEventArgs } from '@syncfusion/ej2-dropdowns';
 import { data } from './datasource.ts';
 
 Grid.Inject(Search, Toolbar);
 
+let searchSettings = {
+  mode: 'Default',
+  immediateModeDelay: 1500
+};
+
+function searchModeChange(args: ChangeEventArgs) {
+  searchSettings = {
+    mode: args.value as string,
+    immediateModeDelay: args.value === 'Immediate' ? 1500 : 0
+  };
+  grid.searchSettings = searchSettings;
+}
+
 let grid: Grid = new Grid({
     dataSource: data,
     toolbar: ['Search'],
+    searchSettings: searchSettings,
     columns: [
         { field: 'OrderID', headerText: 'Order ID', textAlign: 'Right', width: 90 },
         { field: 'CustomerID', headerText: 'Customer ID', width: 100 },
@@ -22,3 +37,15 @@ let grid: Grid = new Grid({
     }
 });
 grid.appendTo('#Grid');
+
+let ddl: DropDownList = new DropDownList({
+    dataSource: [
+        { text: 'Default', value: 'Default' },
+        { text: 'Immediate', value: 'Immediate' }
+    ],
+    fields: { text: 'text', value: 'value' },
+    value: 'Default',
+    change: searchModeChange,
+    width: '140px'
+});
+ddl.appendTo('#searchMode');

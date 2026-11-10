@@ -240,22 +240,22 @@ The example below uses a dropdown to switch between the two modes at runtime. Wh
 {% tabs %}
 {% if page.publishingplatform == "typescript" %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/typescript/grid/search-method-cs1/index.ts %}
+{% include code-snippet/grid-sdk/typescript/grid/column-search-cs2/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/search-method-cs1/index.html %}
+{% include code-snippet/grid-sdk/javascript/grid/column-search-cs2/index.html %}
 {% endhighlight %}
 {% elsif page.publishingplatform == "javascript" %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/search-method-cs1/index.js %}
+{% include code-snippet/grid-sdk/javascript/grid/column-search-cs2/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/search-method-cs1/index.html %}
+{% include code-snippet/grid-sdk/javascript/grid/column-search-cs2/index.html %}
 {% endhighlight %}
 {% endif %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/search-method-cs1" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/column-search-cs2" %}
 
 ## Perform search based on column formatting
 

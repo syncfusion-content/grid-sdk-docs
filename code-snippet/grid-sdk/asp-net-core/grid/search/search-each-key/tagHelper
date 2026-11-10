@@ -1,4 +1,8 @@
-<ejs-grid id="Grid" dataSource="@ViewBag.datasource" height='400' width='100%' created="created" toolbar="@(new List<string>() { "Search"})"> 
+<div style="display: flex; align-items: center; gap: 12px; margin-bottom: 12px;">
+    <label for="searchMode">Search Mode</label>
+    <ejs-dropdownlist id="searchMode" dataSource="@ViewBag.searchModes" fields="@(new { text = "text", value = "value" })" value="Default" change="onSearchModeChange" width="140px"></ejs-dropdownlist>
+</div>
+<ejs-grid id="Grid" dataSource="@ViewBag.datasource" height='400' width='100%' created="created" searchSettings="@ViewBag.searchSettings" toolbar="@(new List<string>() { "Search"})"> 
     <e-grid-columns>
         <e-grid-column field="OrderID" headerText="Order ID" textAlign="Right" width="120"></e-grid-column>
         <e-grid-column field="CustomerID" headerText="Customer ID"  width="150"></e-grid-column>
@@ -7,10 +11,20 @@
     </e-grid-columns>
 </ejs-grid>
 <script>
+    var currentSearchSettings = { mode: 'Default' };
+    
     function created() {
         var grid = document.getElementById("Grid").ej2_instances[0];
         document.getElementById(grid.element.id + "_searchbar").addEventListener('keyup', () => {
             grid.search(event.target.value)
         });
+    }
+
+    function onSearchModeChange(args) {
+        var grid = document.getElementById("Grid").ej2_instances[0];
+        grid.searchSettings = {
+            mode: args.value,
+            immediateModeDelay: args.value === 'Immediate' ? 1500 : 0
+        };
     }
 </script>
