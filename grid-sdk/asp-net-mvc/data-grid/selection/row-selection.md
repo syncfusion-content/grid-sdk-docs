@@ -266,6 +266,23 @@ The following example demonstrates how to clear row selection by calling the `cl
 
 ![Clear row selection programmatically ](../images/selection/row-clear-selection.gif)
 
+## Prevent row deselection
+
+The Grid lets you keep specific rows selected by using the `isRowNonDeselectable` callback in `selectionSettings`. Return `true` for rows that should remain selected and `false` for rows that can be deselected. In the following example, rows whose `Category` value is `Fruits` cannot be deselected.
+
+```cshtml
+@Html.EJS().Grid("Grid").DataSource(ViewBag.DataSource).Height("315").SelectionSettings(select => select.Type(Syncfusion.EJ2.Grids.SelectionType.Multiple).IsRowNonDeselectable("isRowNonDeselectable")).Render()
+
+<script>
+    function isRowNonDeselectable(data) {
+        if (data.Category === 'Fruits') {
+            return true;
+        }
+        return false;
+    }
+</script>
+```
+
 ## Row selection events 
 
 The Grid provides several events related to row selection that allow you to respond to and customize the behavior of row selection. These events give you control over various aspects of row selection. Here are the available row selection events:

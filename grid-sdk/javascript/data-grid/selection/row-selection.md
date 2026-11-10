@@ -475,6 +475,42 @@ The following example demonstrates how to clear row selection by calling the [cl
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/clear-selection-cs1" %}
 {% endif %}
 
+## Prevent row deselection
+
+The Grid lets you keep specific rows selected by using the `isRowNonDeselectable` callback in `selectionSettings`. Return `true` for rows that should remain selected and `false` for rows that can be deselected. In the following example, rows whose `Category` value is `Fruits` cannot be deselected.
+
+{% if page.publishingplatform == "typescript" %}
+
+```ts
+const selectionSettings = {
+    mode: 'Row',
+    type: 'Multiple',
+    isRowNonDeselectable: function (data: Object): boolean {
+        if ((data as { Category?: string }).Category === 'Fruits') {
+            return true;
+        }
+        return false;
+    }
+};
+```
+
+{% elsif page.publishingplatform == "javascript" %}
+
+```js
+const selectionSettings = {
+    mode: 'Row',
+    type: 'Multiple',
+    isRowNonDeselectable: function (data) {
+        if (data.Category === 'Fruits') {
+            return true;
+        }
+        return false;
+    }
+};
+```
+
+{% endif %}
+
 ## Row selection events 
 
 The Grid provides several events related to row selection that allow you to respond to and customize the behavior of row selection. These events give you control over various aspects of row selection. Here are the available row selection events:

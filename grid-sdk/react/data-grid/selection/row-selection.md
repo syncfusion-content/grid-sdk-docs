@@ -751,6 +751,23 @@ The following example demonstrates clearing row selection by calling the `clearR
 
  {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/grid/selection-cs11" %}
 
+## Prevent row deselection
+
+The Grid lets you keep specific rows selected by using the `isRowNonDeselectable` callback in `selectionSettings`. Return `true` for rows that should remain selected and `false` for rows that can be deselected. In the following example, rows whose `Category` value is `Fruits` cannot be deselected.
+
+```tsx
+const selectionSettings = {
+  mode: 'Row',
+  type: 'Multiple',
+  isRowNonDeselectable: (data: any) => {
+    if (data.Category === 'Fruits') {
+      return true;
+    }
+    return false;
+  },
+};
+```
+
 ## Row selection events 
 
 The Grid provides several events related to row selection that allow responding to and customizing the behavior of row selection. These events provide control over various aspects of row selection. The following are the available row selection events:
