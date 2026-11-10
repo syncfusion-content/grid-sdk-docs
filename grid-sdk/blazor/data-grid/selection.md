@@ -542,12 +542,6 @@ public class OrderDetails
 
 ## Programmatic deselection
 
-### Deselect row or rows programmatically
-
-Use the `deselectRow` and `deselectRows` methods to programmatically deselect selected rows.
-
-### Clear all selection programmatically
-
 The Blazor DataGrid provides a method to programmatically deselect selected rows or cells. This feature is useful when resetting selection states based on user actions or custom logic.
 
 To deselect items in the Blazor Grid, use the [ClearSelectionAsync](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.SfGrid-1.html#Syncfusion_Blazor_Grids_SfGrid_1_ClearSelectionAsync) method.
