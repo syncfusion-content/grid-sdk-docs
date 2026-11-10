@@ -155,6 +155,26 @@ The following screenshot represents the column resizing on the touch device:
 
 ![Touch Interaction](../images/column-resizing.jpg)
 
+## Resize columns using keyboard
+
+The Angular Data Grid supports keyboard-based column resizing to improve accessibility and keyboard navigation. The width adjustment applied for each key press is controlled by the `resizeStep` property.
+
+When a resize handle receives focus:
+
+- Press the <kbd>Alt + →</kbd> key to decrease the column width.
+- Press the <kbd>Alt + ←</kbd> key to increase the column width.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/grid-sdk/angular/grid/resize-cs9/src/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/grid-sdk/angular/grid/resize-cs9/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/resize-cs9" %}
+
 ## Resizing column externally
 
 The Grid supports programmatic column resizing through external controls or application logic. This enables creating custom interfaces for column width management, implementing preset column layouts, or responding to application state changes.
