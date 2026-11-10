@@ -24,8 +24,6 @@ To further enhance the search functionality, you can integrate a search text box
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/asp-net-core/grid/search/search" %}
-
 ![search](images/search/search.png)
 
 > The clear icon is shown in the Data Grid search text box when it is focused on search text or after typing the single character in the search text box. A single click of the clear icon clears the text in the search box as well as the search results in the Grid.
