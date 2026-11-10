@@ -1,7 +1,7 @@
 import { CrudService } from './crud.service';
 import { CommonModule } from '@angular/common';
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { CommandColumnService, DataSourceChangedEventArgs, DataStateChangeEventArgs, EditService, FilterService, GridAllModule, GridComponent, isComplexField, PageService, SearchService, SortService, ToolbarService } from '@syncfusion/ej2-angular-grids';
+import { CommandColumnService, DataSourceChangedEventArgs, DataStateChangeEventArgs, EditService, FilterService, GridAllModule, GridComponent, isComplexField, InfiniteScrollService, SearchService, SortService, ToolbarService } from '@syncfusion/ej2-angular-grids';
 import { Query } from '@syncfusion/ej2-data';
 import { Observable } from 'rxjs';
 
@@ -9,7 +9,7 @@ import { Observable } from 'rxjs';
   selector: 'app-root',
   template: `
   <div>
-    <ejs-grid #grid [dataSource]='data | async' allowPaging="true" allowGrouping="true" [groupSettings]="groupOptions" 
+    <ejs-grid #grid [dataSource]='data | async' enableInfiniteScrolling="true" [infiniteScrollSettings]="infiniteScrollOptions" 
     allowSorting="true" [sortSettings]="sortOptions" allowFiltering="true" [filterSettings]="filterOptions" [editSettings]='editSettings' [toolbar]='toolbar'
     (dataSourceChanged)='dataSourceChanged($event)' (dataStateChange)= 'dataStateChange($event)' height='150px'>
       <e-columns>
@@ -25,7 +25,7 @@ import { Observable } from 'rxjs';
     CommonModule,
     GridAllModule,
   ],
-  providers: [ToolbarService, SortService, EditService, FilterService, PageService, CommandColumnService, SearchService, CrudService]
+  providers: [ToolbarService, SortService, EditService, FilterService, InfiniteScrollService, CommandColumnService, SearchService, CrudService]
 })
 export class AppComponent implements OnInit {
   public data?: Observable<any>;
@@ -35,7 +35,7 @@ export class AppComponent implements OnInit {
   public orderIDRules?: object;
   @ViewChild('grid')
   public grid?: GridComponent;
-  public groupOptions?: object;  
+  public infiniteScrollOptions?: object;
   public filterOptions?: object;
   public sortOptions?: object;
   constructor(public crudService: CrudService) {
@@ -74,10 +74,10 @@ export class AppComponent implements OnInit {
   }
 
   public ngOnInit(): void {
-    this.groupOptions = { columns: ['ProductName'], enableLazyLoading: true, showGroupedColumn: true, };
+    this.infiniteScrollOptions = { enableCache: true };
     this.filterOptions = { columns: [{ field: 'CustomerName', matchCase: false, operator: 'startswith', predicate: 'and', value: 'Maria' }] }
     this.sortOptions = { columns: [{ field: 'ProductID', direction: 'Descending' }] }
-    const state = { skip: 0, take: 12, group: this.groupOptions, filter:this.filterOptions, sorted:this.sortOptions };
+    const state = { skip: 0, take: 36, filter:this.filterOptions, sorted:this.sortOptions };
     this.toolbar = ['Add', 'Edit', 'Delete', 'Update', 'Cancel', 'Search'];
     this.editSettings = {
       allowEditing: true,

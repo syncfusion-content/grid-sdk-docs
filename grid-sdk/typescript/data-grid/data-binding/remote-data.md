@@ -1516,6 +1516,55 @@ The following example demonstrates how to send additional parameters to the serv
 
 ![AdditionalParameters](../images/databining/remote-additional-params.png)
 
+## Custom Binding with Caching
+
+The TypeScript Data Grid provides the [enableCache](https://ej2.syncfusion.com/javascript/documentation/api/grid/infiniteScrollSettings#enablecache) option for custom data binding. When enabled, the data retrieved from the server is stored on the client and reused for subsequent data operations whenever possible. This reduces redundant data requests, improves responsiveness and enhances performance with large datasets.
+
+The custom binding cache works with infinite scrolling, minimizing unnecessary server requests while keeping navigation smooth. The `dataStateChange` event is triggered only when the requested data is not already available in the cache.
+
+The following example demonstrates custom binding with `enableCache` enabled in the existing custom binding sample.
+
+{% if page.publishingplatform == "typescript" %}
+  {% tabs %}
+    {% highlight ts tabtitle="app.ts" %}
+    {% include code-snippet/grid-sdk/typescript/grid/remote-custom-binding/app.ts %}
+    {% endhighlight %}
+    {% highlight html tabtitle="index.html" %}
+    {% include code-snippet/grid-sdk/typescript/grid/remote-custom-binding/index.html %}
+    {% endhighlight %}
+    {% highlight css tabtitle="styles.css" %}
+    {% include code-snippet/grid-sdk/typescript/grid/remote-custom-binding/styles.css %}
+    {% endhighlight %}
+    {% highlight ts tabtitle="server.ts" %}
+    {% include code-snippet/grid-sdk/typescript/grid/remote-custom-binding/server.ts %}
+    {% endhighlight %}
+    {% highlight ts tabtitle="orderService.ts" %}
+    {% include code-snippet/grid-sdk/typescript/grid/remote-custom-binding/orderService.ts %}
+    {% endhighlight %}
+    {% highlight ts tabtitle="datasource.ts" %}
+    {% include code-snippet/grid-sdk/typescript/grid/remote-custom-binding/datasource.ts %}
+    {% endhighlight %}
+  {% endtabs %}
+{% elsif page.publishingplatform == "javascript" %}
+  {% tabs %}
+    {% highlight js tabtitle="index.js" %}
+    {% include code-snippet/grid-sdk/typescript/grid/remote-custom-binding2/index.js %}
+    {% endhighlight %}
+    {% highlight html tabtitle="index.html" %}
+    {% include code-snippet/grid-sdk/typescript/grid/remote-custom-binding2/index.html %}
+    {% endhighlight %}
+    {% highlight js tabtitle="server.js" %}
+    {% include code-snippet/grid-sdk/typescript/grid/remote-custom-binding2/server.js %}
+    {% endhighlight %}
+    {% highlight js tabtitle="orderService.js" %}
+    {% include code-snippet/grid-sdk/typescript/grid/remote-custom-binding2/orderService.js %}
+    {% endhighlight %}
+    {% highlight js tabtitle="datasource.js" %}
+    {% include code-snippet/grid-sdk/typescript/grid/remote-custom-binding2/datasource.js %}
+    {% endhighlight %}
+  {% endtabs %}
+{% endif %}
+
 ## Offline mode
 
 On remote data binding, all grid actions such as paging, sorting, editing, grouping, filtering, etc, will be processed on server-side. To avoid post back for every action, set the grid to load all data on initialization and make the actions process in client-side. To enable this behavior, use the `offline` property of [DataManager](../../data).
