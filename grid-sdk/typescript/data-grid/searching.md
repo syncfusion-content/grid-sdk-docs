@@ -238,21 +238,12 @@ Search Modes lets you choose how the Grid applies search results. Use this secti
 The example below uses a dropdown to switch between the two modes at runtime. When **Immediate** is selected, the Grid updates `searchSettings.mode` to `Immediate` and sets `immediateModeDelay` to `1500`. When **Default** is selected, the Grid updates `searchSettings.mode` to `Default`.
 
 {% tabs %}
-{% if page.publishingplatform == "typescript" %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/grid-sdk/typescript/grid/column-search-cs2/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/grid-sdk/typescript/grid/column-search-cs2/index.html %}
 {% endhighlight %}
-{% elsif page.publishingplatform == "javascript" %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/javascript/grid/column-search-cs2/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/column-search-cs2/index.html %}
-{% endhighlight %}
-{% endif %}
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/column-search-cs2" %}
