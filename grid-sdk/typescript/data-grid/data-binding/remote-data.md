@@ -1516,6 +1516,90 @@ The following example demonstrates how to send additional parameters to the serv
 
 ![AdditionalParameters](../images/databining/remote-additional-params.png)
 
+## Custom Binding with Caching
+
+The TypeScript Data Grid supports caching of the data retrieved through custom binding. When the [infiniteScrollSettings.enableCache](https://ej2.syncfusion.com/documentation/api/grid/infiniteScrollSettings#enablecache) property is enabled, the data loaded from the server is stored on the client and reused for subsequent data operations whenever possible. This reduces redundant server requests, improves responsiveness and enhances performance when working with large datasets.
+
+### How caching works with custom binding
+
+In custom binding, the grid does not fetch data on its own. Every grid action raises the [dataStateChange](https://ej2.syncfusion.com/documentation/api/grid#datastatechange) event, where the application requests the data from the server and assigns the result to the grid. With `enableCache` set to `true`, the grid keeps the blocks of records that were already loaded:
+
+* On initial load, the grid requests the first blocks of records, and the [dataStateChange](https://ej2.syncfusion.com/documentation/api/grid#datastatechange) event is triggered to fetch them from the server.
+* When scrolling to a block that is not yet loaded, the event is triggered again and only that block is requested from the server.
+* When scrolling back to a block that is already cached, the grid reuses the cached records and no server request is made.
+* The number of blocks kept in memory is controlled by the `maxBlocks` property. When the limit is exceeded, the oldest block is removed from the cache and is requested again from the server the next time it is needed.
+* Actions such as sorting, filtering or searching change the result set, so the `dataStateChange` event is triggered again and the new data is requested from the server.
+
+### Benefits
+
+* Reduces the number of server requests while scrolling through a large dataset.
+* Improves responsiveness because cached records are displayed without waiting for the server.
+* Limits memory usage because only the number of blocks defined by `maxBlocks` is maintained.
+
+The following example demonstrates custom binding with a large customer dataset and caching enabled through `infiniteScrollSettings.enableCache`. The number of requests made to the server is displayed above the grid. Scroll down to load more records, then scroll back up and observe that the request count does not increase for the cached blocks.
+
+{% if page.publishingplatform == "typescript" %}
+{% tabs %}
+{% highlight ts tabtitle="app.ts" %}
+{% include code-snippet/grid-sdk/typescript/grid/remote-custom-cache/app.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/grid-sdk/typescript/grid/remote-custom-cache/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/grid-sdk/typescript/grid/remote-custom-cache/styles.css %}
+{% endhighlight %}
+{% highlight ts tabtitle="server.ts" %}
+{% include code-snippet/grid-sdk/typescript/grid/remote-custom-cache/server.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="orderService.ts" %}
+{% include code-snippet/grid-sdk/typescript/grid/remote-custom-cache/orderService.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/grid-sdk/typescript/grid/remote-custom-cache/datasource.ts %}
+{% endhighlight %}
+{% endtabs %}
+{% elsif page.publishingplatform == "javascript" %}
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/grid-sdk/typescript/grid/remote-custom-cache2/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/grid-sdk/typescript/grid/remote-custom-cache2/index.html %}
+{% endhighlight %}
+{% highlight js tabtitle="server.js" %}
+{% include code-snippet/grid-sdk/typescript/grid/remote-custom-cache2/server.js %}
+{% endhighlight %}
+{% highlight js tabtitle="orderService.js" %}
+{% include code-snippet/grid-sdk/typescript/grid/remote-custom-cache2/orderService.js %}
+{% endhighlight %}
+{% highlight js tabtitle="dataSource.js" %}
+{% include code-snippet/grid-sdk/typescript/grid/remote-custom-cache2/dataSource.js %}
+{% endhighlight %}
+{% endtabs %}
+{% endif %}
+
+> The `enableCache` option is available as `infiniteScrollSettings.enableCache`, so custom binding with caching is used together with infinite scrolling. Server data operations such as sorting and filtering still need to be handled in the `dataStateChange` event.
+
+### API reference
+
+| Property | Description |
+|----------|-------------|
+| `enableInfiniteScrolling` | Enables infinite scrolling in the grid. |
+| `infiniteScrollSettings.enableCache` | Caches the loaded data blocks so that they are reused instead of being requested again. |
+| `infiniteScrollSettings.initialBlocks` | Defines the number of blocks rendered initially. |
+| `infiniteScrollSettings.maxBlocks` | Defines the maximum number of blocks maintained in the cache. |
+
+| Event | Description |
+|-------|-------------|
+| `dataStateChange` | Triggers when the requested data is not available on the client, so the data is fetched from the server. |
+
+### Related topics
+
+* [Infinite scrolling](../scrolling/infinite-scrolling)
+* [Sending additional parameters to the server](#sending-additional-parameters-to-the-server)
+* [Offline mode](#offline-mode)
+
 ## Offline mode
 
 On remote data binding, all grid actions such as paging, sorting, editing, grouping, filtering, etc, will be processed on server-side. To avoid post back for every action, set the grid to load all data on initialization and make the actions process in client-side. To enable this behavior, use the `offline` property of [DataManager](../../data).
