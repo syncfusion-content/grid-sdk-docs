@@ -255,7 +255,7 @@ The example below uses a dropdown to switch between the two modes at runtime. Wh
 {% endif %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/column-search-cs2" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/column-search-cs2" %}
 
 ## Perform search based on column formatting
 
