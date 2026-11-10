@@ -147,10 +147,14 @@ Search Modes lets you choose how the Grid applies search results. Use this secti
 
 The example below uses a dropdown to switch between the two modes at runtime. When **Immediate** is selected, the Grid updates `SearchSettings.Mode` to `Immediate` and sets `ImmediateModeDelay` to `1500`. When **Default** is selected, the Grid updates `SearchSettings.Mode` to `Default`.
 
-```cshtml
-@Html.EJS().DropDownList("searchModes").DataSource(Model.SearchModes).Value("Default").Change("onSearchModeChange")
-@Html.EJS().Grid("Grid").SearchSettings(Model.SearchOptions)
-```
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/grid-sdk/asp-net-mvc/grid/search/search/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="search.cs" %}
+{% include code-snippet/grid-sdk/asp-net-mvc/grid/search/search/search.cs %}
+{% endhighlight %}
+{% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/asp-net-mvc/grid/search/search" %}
 

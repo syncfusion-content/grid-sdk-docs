@@ -273,21 +273,14 @@ Search Modes lets you choose how the Grid applies search results. Use this secti
 
 The example below uses a dropdown to switch between the two modes at runtime. When **Immediate** is selected, the Grid updates `searchSettings.mode` to `Immediate` and sets `immediateModeDelay` to `1500`. When **Default** is selected, the Grid updates `searchSettings.mode` to `Default`.
 
-```tsx
-const [searchSettings, setSearchSettings] = useState({ mode: 'Default' });
-
-const searchModeChange = (args) => {
-  setSearchSettings({
-    mode: args.value,
-    immediateModeDelay: args.value === 'Immediate' ? 1500 : 0
-  });
-};
-```
-
-```tsx
-<DropDownListComponent dataSource={searchModes} value="Default" change={searchModeChange} />
-<GridComponent searchSettings={searchSettings} toolbar={['Search']} />
-```
+{% tabs %}
+{% highlight tsx tabtitle="App.tsx" %}
+{% include code-snippet/grid-sdk/react/grid/searching-cs8/app/App.tsx %}
+{% endhighlight %}
+{% highlight tsx tabtitle="index.tsx" %}
+{% include code-snippet/grid-sdk/react/grid/searching-cs8/app/index.tsx %}
+{% endhighlight %}
+{% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/grid/searching-cs8" %}
 

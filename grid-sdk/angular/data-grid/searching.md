@@ -170,24 +170,11 @@ Search Modes lets you choose how the Grid applies search results. Use this secti
 
 The example below uses a dropdown to switch between the two modes at runtime. When **Immediate** is selected, the Grid updates `searchSettings.mode` to `Immediate` and sets `immediateModeDelay` to `1500`. When **Default** is selected, the Grid updates `searchSettings.mode` to `Default`.
 
-```ts
-public searchOptions: SearchSettingsModel = {
-  mode: 'Default',
-  immediateModeDelay: 1500
-};
-
-public searchModeChange(args: ChangeEventArgs): void {
-  this.searchOptions = {
-    mode: args.value as SearchMode,
-    immediateModeDelay: args.value === 'Immediate' ? 1500 : 0
-  };
-}
-```
-
-```html
-<ejs-dropdownlist [dataSource]="searchModes" [value]="'Default'" (change)="searchModeChange($event)"></ejs-dropdownlist>
-<ejs-grid [searchSettings]="searchOptions" [toolbar]="toolbar"></ejs-grid>
-```
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/grid-sdk/angular/grid/searching-cs8/src/app.component.ts %}
+{% endhighlight %}
+{% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/searching-cs8" %}
 

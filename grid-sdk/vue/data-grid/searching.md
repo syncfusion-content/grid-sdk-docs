@@ -148,29 +148,11 @@ Search Modes lets you choose how the Grid applies search results. Use this secti
 
 The example below uses a dropdown to switch between the two modes at runtime. When **Immediate** is selected, the Grid updates `searchSettings.mode` to `Immediate` and sets `immediateModeDelay` to `1500`. When **Default** is selected, the Grid updates `searchSettings.mode` to `Default`.
 
-```vue
-<template>
-  <ejs-dropdownlist :dataSource="searchModes" :value="'Default'" :change="searchModeChange"></ejs-dropdownlist>
-  <ejs-grid :searchSettings="searchOptions" :toolbar="toolbar"></ejs-grid>
-</template>
-
-<script>
-export default {
-  data() {
-    return {
-      searchOptions: { mode: 'Default' }
-    };
-  },
-  methods: {
-    searchModeChange(args) {
-      this.searchOptions = {
-        mode: args.value,
-        immediateModeDelay: args.value === 'Immediate' ? 1500 : 0
-      };
-    }
-  }
-};
-</script>
+{% tabs %}
+{% highlight vue tabtitle="app.vue" %}
+{% include code-snippet/grid-sdk/vue/grid/search/default-cs1/app.vue %}
+{% endhighlight %}
+{% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/grid/search/default-cs1" %}
 ```
