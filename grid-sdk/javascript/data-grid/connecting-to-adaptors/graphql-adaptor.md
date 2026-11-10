@@ -256,17 +256,7 @@ npm install
 **Step 3:** Import the Syncfusion<sup style="font-size:70%">&reg;</sup> CSS styles
 
 ```css
-
-@import '../node_modules/@syncfusion/ej2-base/styles/bootstrap5.css';  
-@import '../node_modules/@syncfusion/ej2-buttons/styles/bootstrap5.css';  
-@import '../node_modules/@syncfusion/ej2-calendars/styles/bootstrap5.css';  
-@import '../node_modules/@syncfusion/ej2-dropdowns/styles/bootstrap5.css';  
-@import '../node_modules/@syncfusion/ej2-inputs/styles/bootstrap5.css';  
-@import '../node_modules/@syncfusion/ej2-navigations/styles/bootstrap5.css';
-@import '../node_modules/@syncfusion/ej2-popups/styles/bootstrap5.css';
-@import '../node_modules/@syncfusion/ej2-splitbuttons/styles/bootstrap5.css';
-@import '../node_modules/@syncfusion/ej2-notifications/styles/bootstrap5.css';
-@import '../node_modules/@syncfusion/ej2-grids/styles/bootstrap5.css';
+@import "../node_modules/@syncfusion/ej2-bootstrap5-theme/styles/grid/index.css";
 
 ```
 
