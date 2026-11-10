@@ -134,70 +134,45 @@ The following example demonstrates how to search specific columns such as **Cust
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/grid/search/default-cs6" %}
 
-## Immediate Search Support
+## Search Modes
 
-Immediate Search Support in Vue Data Grid enables you to control when search is applied by configuring `searchSettings.mode` and `searchSettings.immediateModeDelay`. Set `searchSettings.mode` to `Immediate` to search on every keystroke, or to `OnEnter` to wait until the user presses <kbd>Enter</kbd>. When `Immediate` mode is used, `searchSettings.immediateModeDelay` controls the delay, in milliseconds, before the search runs after typing stops.
+Search Modes lets you choose how the Grid applies search results. Use this section to switch between the two supported modes at runtime:
+
+- **OnEnter Mode**: Search is executed only when the user presses the <kbd>Enter</kbd> key.
+- **Immediate Mode**: Search is executed automatically while typing based on the configured `immediateModeDelay`.
 
 | Property | Accepted values | Behavior |
 |---|---|---|
-| `searchSettings.mode` | `Immediate`, `OnEnter` | Determines whether the search runs immediately or only after <kbd>Enter</kbd> is pressed. |
-| `searchSettings.immediateModeDelay` | Number in milliseconds | Adds a delay before the search is applied in `Immediate` mode. |
+| `searchSettings.mode` | `OnEnter`, `Immediate` | Controls whether search waits for <kbd>Enter</kbd> or runs automatically while typing. |
+| `searchSettings.immediateModeDelay` | Number in milliseconds | Sets the delay before search is triggered in `Immediate` mode. |
 
-{% tabs %}
-{% highlight html tabtitle="Composition API (~/src/App.vue)" %}
+The example below uses a dropdown to switch between the two modes at runtime. When **Immediate** is selected, the Grid updates `searchSettings.mode` to `Immediate` and sets `immediateModeDelay` to `1500`. When **OnEnter** is selected, the Grid updates `searchSettings.mode` to `OnEnter`.
+
+```vue
 <template>
-  <ejs-grid :searchSettings="searchOptions" :toolbar="toolbar">
-  </ejs-grid>
+  <ejs-dropdownlist :dataSource="searchModes" :value="'OnEnter'" :change="searchModeChange"></ejs-dropdownlist>
+  <ejs-grid :searchSettings="searchOptions" :toolbar="toolbar"></ejs-grid>
 </template>
 
 <script>
 export default {
   data() {
     return {
-      searchOptions: {
-        mode: 'Immediate',
-        immediateModeDelay: 300
-      }
+      searchOptions: { mode: 'OnEnter', immediateModeDelay: 1500 }
     };
+  },
+  methods: {
+    searchModeChange(args) {
+      this.searchOptions = {
+        mode: args.value,
+        immediateModeDelay: args.value === 'Immediate' ? 1500 : 0
+      };
+    }
   }
 };
 </script>
-{% endhighlight %}
-{% highlight html tabtitle="Options API (~/src/App.vue)" %}
-<template>
-  <ejs-grid :searchSettings="searchOptions" :toolbar="toolbar">
-  </ejs-grid>
-</template>
+```
 
-<script>
-export default {
-  data() {
-    return {
-      searchOptions: {
-        mode: 'Immediate',
-        immediateModeDelay: 300
-      }
-    };
-  }
-};
-</script>
-{% endhighlight %}
-{% endtabs %}
-
-To achieve this, you need to bind the `keyup` event to the search input element inside the [created](https://ej2.syncfusion.com/vue/documentation/api/grid#created) event of the grid component. 
-
-In the following example, the `created` event is bound to the grid component, and inside the event handler, the `keyup` event is bound to the [search](https://ej2.syncfusion.com/vue/documentation/api/grid#search) input element. Whenever the `keyup` event is triggered, the current `search` string is obtained from the `search` input element, and the `search` method is invoked on the grid instance with the current search string as a parameter. This allows the search results to be displayed in real-time as you type in the search box.
-
-{% tabs %}
-{% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/grid/search/default-cs8/app-composition.vue %}
-{% endhighlight %}
-{% highlight html tabtitle="Options API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/grid/search/default-cs8/app.vue %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/grid/search/default-cs8" %}
 
 ## Perform search based on column formatting
 

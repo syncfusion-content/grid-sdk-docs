@@ -156,53 +156,39 @@ The following example searches only the "Customer ID", "Freight", and "Ship Coun
   
 {% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/searching-cs4" %}
 
-## Immediate Search Support
+## Search Modes
 
-Immediate Search Support enables searching as each keystroke is entered into the search box. This provides immediate, dynamic search results without requiring pressing <kbd>Enter</kbd> or clicking a button.
+Search Modes lets you choose how the Grid applies search results. Use this section to switch between the two supported modes at runtime:
 
-### Search mode configuration
-
-Use `searchSettings.mode` to choose how the Grid handles search input. Set it to `Immediate` to search on every keystroke, or `OnEnter` to wait until the user presses <kbd>Enter</kbd>. When `Immediate` mode is enabled, `searchSettings.immediateModeDelay` controls the delay, in milliseconds, before the search runs after typing stops.
+- **OnEnter Mode**: Search is executed only when the user presses the <kbd>Enter</kbd> key.
+- **Immediate Mode**: Search is executed automatically while typing based on the configured `immediateModeDelay`.
 
 | Property | Accepted values | Behavior |
 |---|---|---|
-| `searchSettings.mode` | `Immediate`, `OnEnter` | Determines whether the search runs immediately or only after <kbd>Enter</kbd> is pressed. |
-| `searchSettings.immediateModeDelay` | Number in milliseconds | Adds a delay before the search is applied in `Immediate` mode. |
+| `searchSettings.mode` | `OnEnter`, `Immediate` | Controls whether search waits for <kbd>Enter</kbd> or runs automatically while typing. |
+| `searchSettings.immediateModeDelay` | Number in milliseconds | Sets the delay before search is triggered in `Immediate` mode. |
 
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-searchOptions = {
-  mode: 'Immediate',
-  immediateModeDelay: 300
+The example below uses a dropdown to switch between the two modes at runtime. When **Immediate** is selected, the Grid updates `searchSettings.mode` to `Immediate` and sets `immediateModeDelay` to `1500`. When **OnEnter** is selected, the Grid updates `searchSettings.mode` to `OnEnter`.
+
+```ts
+public searchOptions: SearchSettingsModel = {
+  mode: 'OnEnter',
+  immediateModeDelay: 1500
 };
-{% endhighlight %}
-{% highlight html tabtitle="app.component.html" %}
-<ejs-grid [searchSettings]="searchOptions" [toolbar]="toolbar">
-</ejs-grid>
-{% endhighlight %}
-{% endtabs %}
 
-Implementation of real-time search:
+public searchModeChange(args: ChangeEventArgs): void {
+  this.searchOptions = {
+    mode: args.value as SearchMode,
+    immediateModeDelay: args.value === 'Immediate' ? 1500 : 0
+  };
+}
+```
 
-1. Bind the `keyup` event to the search input element inside the grid's [created](https://ej2.syncfusion.com/angular/documentation/api/grid#created) event.
-2. The `keyup` event triggers the search method on each keystroke.
-3. The grid results update in real-time as typing occurs.
+```html
+<ejs-dropdownlist [dataSource]="searchModes" [value]="'OnEnter'" (change)="searchModeChange($event)"></ejs-dropdownlist>
+<ejs-grid [searchSettings]="searchOptions" [toolbar]="toolbar"></ejs-grid>
+```
 
-In the following example, the `created` event of the grid binds the `keyup` event to the search input element. When typing occurs, the `keyup` event fires, retrieves the current search text from the input, and calls the grid's [search](https://ej2.syncfusion.com/angular/documentation/api/grid#search) method with the new text. This produces real-time filtering as typing happens.
-
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid-sdk/angular/grid/searching-cs6/src/app.component.ts %}
-{% endhighlight %}
-
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid-sdk/angular/grid/searching-cs6/src/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-  
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/searching-cs6" %}
-
-> Search on each key stroke approach may affect the performance of the application when dealing with a large number of records.
 
 ## Perform search based on column formatting
 

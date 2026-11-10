@@ -223,60 +223,42 @@ The following example demonstrates how to search specific columns such as **Cust
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/column-search-cs1" %}
 {% endif %}
 
-## Immediate Search Support
+## Search Modes
 
-Immediate Search Support in Syncfusion<sup style="font-size:70%">&reg;</sup> Grid enables you to control when search is applied by configuring `searchSettings.mode` and `searchSettings.immediateModeDelay`. Set `searchSettings.mode` to `Immediate` to search on every keystroke, or to `OnEnter` to wait until the user presses <kbd>Enter</kbd>. When `Immediate` mode is used, `searchSettings.immediateModeDelay` controls the delay, in milliseconds, before the search runs after typing stops.
+Search Modes lets you choose how the Grid applies search results. Use this section to switch between the two supported modes at runtime:
+
+- **OnEnter Mode**: Search is executed only when the user presses the <kbd>Enter</kbd> key.
+- **Immediate Mode**: Search is executed automatically while typing based on the configured `immediateModeDelay`.
 
 | Property | Accepted values | Behavior |
 |---|---|---|
-| `searchSettings.mode` | `Immediate`, `OnEnter` | Determines whether the search runs immediately or only after <kbd>Enter</kbd> is pressed. |
-| `searchSettings.immediateModeDelay` | Number in milliseconds | Adds a delay before the search is applied in `Immediate` mode. |
+| `searchSettings.mode` | `OnEnter`, `Immediate` | Controls whether search waits for <kbd>Enter</kbd> or runs automatically while typing. |
+| `searchSettings.immediateModeDelay` | Number in milliseconds | Sets the delay before search is triggered in `Immediate` mode. |
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-const searchSettings = {
-  mode: 'Immediate',
-  immediateModeDelay: 300
+The example below uses a dropdown to switch between the two modes at runtime. When **Immediate** is selected, the Grid updates `searchSettings.mode` to `Immediate` and sets `immediateModeDelay` to `1500`. When **OnEnter** is selected, the Grid updates `searchSettings.mode` to `OnEnter`.
+
+```js
+var searchSettings = {
+  mode: 'OnEnter',
+  immediateModeDelay: 1500
 };
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-<ejs-grid searchSettings="searchSettings" toolbar="toolbar">
-</ejs-grid>
-{% endhighlight %}
-{% endtabs %}
 
-To achieve this, you need to bind the `keyup` event to the search input element inside the [created](../api/grid#created) event of the grid control. 
+function searchModeChange(args) {
+  searchSettings = {
+    mode: args.value,
+    immediateModeDelay: args.value === 'Immediate' ? 1500 : 0
+  };
+  gridObj.searchSettings = searchSettings;
+}
+```
 
-In the following example, the `created` event is bound to the grid control, and inside the event handler, the `keyup` event is bound to the [search](../api/grid#search) input element. Whenever the `keyup` event is triggered, the current `search` string is obtained from the `search` input element, and the `search` method is invoked on the grid instance with the current search string as a parameter. This allows the search results to be displayed in real-time as you type in the search box.
+```html
+<select onchange="searchModeChange({ value: this.value })">
+  <option>OnEnter</option>
+  <option>Immediate</option>
+</select>
+```
 
-{% if page.publishingplatform == "typescript" %}
-
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/column-search-cs2/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/column-search-cs2/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/column-search-cs2" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/javascript/grid/column-search-cs2/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/column-search-cs2/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/column-search-cs2" %}
-{% endif %}
-
-> Search on each key stroke approach may affect the performance of the application when dealing with a large number of records.
 
 ## Perform search based on column formatting
 
