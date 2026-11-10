@@ -670,61 +670,6 @@ The following code example demonstrates how to export all records on the client 
 {% endhighlight %}
 {% endtabs %}
 
-## Custom Binding with Caching
-
-The ASP.NET Core Data Grid supports caching of the data retrieved through custom binding. When the `EnableCache` property is enabled, the data loaded from the server is stored on the client and reused for subsequent data operations whenever possible. This reduces redundant server requests, improves responsiveness and enhances performance when working with large datasets.
-
-### How caching works with custom binding
-
-In custom binding, the grid does not fetch data on its own. Every grid action raises the `DataStateChange` event, where the application requests the data from the server and assigns the result to the grid. With `EnableCache` set to `true`, the grid keeps the blocks of records that were already loaded:
-
-* On initial load, the grid requests the first blocks of records, and the `DataStateChange` event is triggered to fetch them from the server.
-* When scrolling to a block that is not yet loaded, the event is triggered again and only that block is requested from the server.
-* When scrolling back to a block that is already cached, the grid reuses the cached records and no server request is made.
-* The number of blocks kept in memory is controlled by the `MaxBlocks` property. When the limit is exceeded, the oldest block is removed from the cache and is requested again from the server the next time it is needed.
-* Actions such as sorting, filtering or searching change the result set, so the `DataStateChange` event is triggered again and the new data is requested from the server.
-
-### Benefits
-
-* Reduces the number of server requests while scrolling through a large dataset.
-* Improves responsiveness because cached records are displayed without waiting for the server.
-* Limits memory usage because only the number of blocks defined by `MaxBlocks` is maintained.
-
-The following example demonstrates custom binding with a large customer dataset and caching enabled through `InfiniteScrollSettings.EnableCache`. The number of requests made to the server is displayed above the grid. Scroll down to load more records, then scroll back up and observe that the request count does not increase for the cached blocks.
-
-{% tabs %}
-{% highlight razor tabtitle="Index.cshtml" %}
-{% include code-snippet/grid-sdk/asp-net-core/grid/data-binding/remote-custom-cache/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Index.cshtml.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/grid/data-binding/remote-custom-cache/custombindingcore.cs %}
-{% endhighlight %}
-{% highlight c# tabtitle="OrdersDetails.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/grid/data-binding/remote-custom-cache/OrdersDetails.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-> The `EnableCache` option is available as `InfiniteScrollSettings.EnableCache`, so custom binding with caching is used together with infinite scrolling. Server data operations such as sorting and filtering still need to be handled in the `DataStateChange` event.
-
-### API reference
-
-| Property | Description |
-|----------|-------------|
-| `EnableInfiniteScrolling` | Enables infinite scrolling in the grid. |
-| `InfiniteScrollSettings.EnableCache` | Caches the loaded data blocks so that they are reused instead of being requested again. |
-| `InfiniteScrollSettings.InitialBlocks` | Defines the number of blocks rendered initially. |
-| `InfiniteScrollSettings.MaxBlocks` | Defines the maximum number of blocks maintained in the cache. |
-
-| Event | Description |
-|-------|-------------|
-| `DataStateChange` | Triggers when the requested data is not available on the client, so the data is fetched from the server. |
-
-### Related topics
-
-* [Infinite scrolling](../scrolling/infinite-scrolling)
-* [Sending additional parameters to the server](#sending-additional-parameters-to-the-server)
-* [Offline mode](#offline-mode)
-
 ## Offline mode
 
 On remote data binding, all grid actions such as paging, sorting, editing, grouping, filtering, etc, will be processed on server-side. To avoid post back for every action, set the grid to load all data on initialization and make the actions process in client-side. To enable this behavior, use the `Offline` property of `e-data-manager` tag helper.
