@@ -243,7 +243,7 @@ The example below uses a dropdown to switch between the two modes at runtime. Wh
 {% include code-snippet/grid-sdk/typescript/grid/column-search-cs2/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/column-search-cs2/index.html %}
+{% include code-snippet/grid-sdk/typescript/grid/column-search-cs2/index.html %}
 {% endhighlight %}
 {% elsif page.publishingplatform == "javascript" %}
 {% highlight js tabtitle="index.js" %}
