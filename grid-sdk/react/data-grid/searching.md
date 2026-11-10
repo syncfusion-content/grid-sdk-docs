@@ -289,6 +289,7 @@ const searchModeChange = (args) => {
 <GridComponent searchSettings={searchSettings} toolbar={['Search']} />
 ```
 
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/grid/searching-cs8" %}
 
 ## Search based on formatted column values
 

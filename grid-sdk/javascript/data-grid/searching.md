@@ -259,6 +259,7 @@ function searchModeChange(args) {
 </select>
 ```
 
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/search-method-cs1" %}
 
 ## Perform search based on column formatting
 

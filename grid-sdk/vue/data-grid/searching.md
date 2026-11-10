@@ -171,6 +171,8 @@ export default {
   }
 };
 </script>
+
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/grid/search/default-cs1" %}
 ```
 
 

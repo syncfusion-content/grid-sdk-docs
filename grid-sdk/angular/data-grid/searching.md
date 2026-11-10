@@ -189,6 +189,7 @@ public searchModeChange(args: ChangeEventArgs): void {
 <ejs-grid [searchSettings]="searchOptions" [toolbar]="toolbar"></ejs-grid>
 ```
 
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/searching-cs8" %}
 
 ## Perform search based on column formatting
 

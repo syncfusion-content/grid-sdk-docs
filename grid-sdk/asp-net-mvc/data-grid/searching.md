@@ -152,6 +152,7 @@ The example below uses a dropdown to switch between the two modes at runtime. Wh
 @Html.EJS().Grid("Grid").SearchSettings(Model.SearchOptions)
 ```
 
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/asp-net-mvc/grid/search/search" %}
 
 ## Perform search based on column formatting
 

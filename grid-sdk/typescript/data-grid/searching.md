@@ -256,6 +256,7 @@ const searchModeChange = (args: ChangeEventArgs) => {
 <GridComponent searchSettings={searchOptions} toolbar={toolbar} />
 ```
 
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/search-method-cs1" %}
 
 ## Perform search based on column formatting
 
