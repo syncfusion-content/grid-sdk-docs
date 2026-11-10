@@ -10,7 +10,7 @@ import { Column, GridComponent, GridModule, SearchSettingsModel, SearchService, 
     selector: 'app-root',
     template: `<div style="display: flex; align-items: center; gap: 12px; margin-bottom: 12px;">
                 <label for="searchMode">Search Mode</label>
-                <ejs-dropdownlist id="searchMode" [dataSource]="searchModes" [fields]="ddlFields" value="OnEnter" (change)="searchModeChange($event)" width="140px"></ejs-dropdownlist>
+                <ejs-dropdownlist id="searchMode" [dataSource]="searchModes" [fields]="ddlFields" value="Default" (change)="searchModeChange($event)" width="140px"></ejs-dropdownlist>
                </div>
                <ejs-grid #grid [dataSource]='data' [toolbar]='toolbarOptions' [searchSettings]='searchSettings' height='273' width='100%'>
                 <e-columns>
@@ -27,11 +27,11 @@ export class AppComponent implements OnInit {
     public data?: object[];
     public toolbarOptions?: ToolbarItems[];
     public searchModes = [
-        { text: 'OnEnter', value: 'OnEnter' },
+        { text: 'Default', value: 'Default' },
         { text: 'Immediate', value: 'Immediate' }
     ];
     public ddlFields = { text: 'text', value: 'value' };
-    public searchSettings: SearchSettingsModel = { mode: 'OnEnter' };
+    public searchSettings: SearchSettingsModel = { mode: 'Default' };
     @ViewChild('grid') public grid?: GridComponent;
 
     ngOnInit(): void {
@@ -39,7 +39,7 @@ export class AppComponent implements OnInit {
         this.toolbarOptions = ['Search'];
     }
     searchModeChange(args: ChangeEventArgs) {
-        const mode = args.value as 'OnEnter' | 'Immediate';
+        const mode = args.value as 'Default' | 'Immediate';
         this.searchSettings = mode === 'Immediate' ? { mode, immediateModeDelay: 1500 } : { mode };
     }
 }

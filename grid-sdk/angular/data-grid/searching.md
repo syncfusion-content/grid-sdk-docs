@@ -160,19 +160,19 @@ The following example searches only the "Customer ID", "Freight", and "Ship Coun
 
 Search Modes lets you choose how the Grid applies search results. Use this section to switch between the two supported modes at runtime:
 
-- **OnEnter Mode**: Search is executed only when the user presses the <kbd>Enter</kbd> key.
+- **Default Mode**: Search is executed only when the user presses the <kbd>Enter</kbd> key.
 - **Immediate Mode**: Search is executed automatically while typing based on the configured `immediateModeDelay`.
 
 | Property | Accepted values | Behavior |
 |---|---|---|
-| `searchSettings.mode` | `OnEnter`, `Immediate` | Controls whether search waits for <kbd>Enter</kbd> or runs automatically while typing. |
+| `searchSettings.mode` | `Default`, `Immediate` | Controls whether search waits for <kbd>Enter</kbd> or runs automatically while typing. |
 | `searchSettings.immediateModeDelay` | Number in milliseconds | Sets the delay before search is triggered in `Immediate` mode. |
 
-The example below uses a dropdown to switch between the two modes at runtime. When **Immediate** is selected, the Grid updates `searchSettings.mode` to `Immediate` and sets `immediateModeDelay` to `1500`. When **OnEnter** is selected, the Grid updates `searchSettings.mode` to `OnEnter`.
+The example below uses a dropdown to switch between the two modes at runtime. When **Immediate** is selected, the Grid updates `searchSettings.mode` to `Immediate` and sets `immediateModeDelay` to `1500`. When **Default** is selected, the Grid updates `searchSettings.mode` to `Default`.
 
 ```ts
 public searchOptions: SearchSettingsModel = {
-  mode: 'OnEnter',
+  mode: 'Default',
   immediateModeDelay: 1500
 };
 
@@ -185,7 +185,7 @@ public searchModeChange(args: ChangeEventArgs): void {
 ```
 
 ```html
-<ejs-dropdownlist [dataSource]="searchModes" [value]="'OnEnter'" (change)="searchModeChange($event)"></ejs-dropdownlist>
+<ejs-dropdownlist [dataSource]="searchModes" [value]="'Default'" (change)="searchModeChange($event)"></ejs-dropdownlist>
 <ejs-grid [searchSettings]="searchOptions" [toolbar]="toolbar"></ejs-grid>
 ```
 

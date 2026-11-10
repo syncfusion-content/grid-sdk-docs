@@ -1,5 +1,5 @@
-<ejs-dropdownlist id="searchMode" dataSource="@(new List<object>() { new { text = "OnEnter", value = "OnEnter" }, new { text = "Immediate", value = "Immediate" } })" fields="@(new Syncfusion.EJ2.DropDowns.DropDownListFieldSettings { Text = "text", Value = "value" })" value="OnEnter" change="searchModeChange"></ejs-dropdownlist>
-<ejs-grid id="Grid" dataSource="@ViewBag.datasource" height="350px" toolbar="@(new List<string>() { "Search"})" searchSettings="@(new Syncfusion.EJ2.Grids.GridSearchSettings { Mode = Syncfusion.EJ2.Grids.SearchMode.OnEnter })"> 
+<ejs-dropdownlist id="searchMode" dataSource="@(new List<object>() { new { text = "Default", value = "Default" }, new { text = "Immediate", value = "Immediate" } })" fields="@(new Syncfusion.EJ2.DropDowns.DropDownListFieldSettings { Text = "text", Value = "value" })" value="Default" change="searchModeChange"></ejs-dropdownlist>
+<ejs-grid id="Grid" dataSource="@ViewBag.datasource" height="350px" toolbar="@(new List<string>() { "Search"})" searchSettings="@(new Syncfusion.EJ2.Grids.GridSearchSettings { Mode = Syncfusion.EJ2.Grids.SearchMode.Default })"> 
     <e-grid-columns>
         <e-grid-column field="OrderID" headerText="Order ID" type="number" textAlign="Right" width="120"></e-grid-column>
         <e-grid-column field="CustomerID" headerText="Customer ID" type="string" width="140"></e-grid-column>
@@ -10,6 +10,6 @@
 <script>
     function searchModeChange(args) {
         var grid = document.getElementById('Grid').ej2_instances[0];
-        grid.searchSettings = args.value === 'Immediate' ? { mode: 'Immediate', immediateModeDelay: 1500 } : { mode: 'OnEnter' };
+        grid.searchSettings = args.value === 'Immediate' ? { mode: 'Immediate', immediateModeDelay: 1500 } : { mode: 'Default' };
     }
 </script>

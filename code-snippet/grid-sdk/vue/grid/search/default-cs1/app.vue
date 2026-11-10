@@ -2,7 +2,7 @@
     <div id="app">
         <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 12px;">
             <label for="searchMode">Search Mode</label>
-            <ejs-dropdownlist id="searchMode" :dataSource="searchModes" :fields="ddlFields" value="OnEnter" @change="searchModeChange"></ejs-dropdownlist>
+            <ejs-dropdownlist id="searchMode" :dataSource="searchModes" :fields="ddlFields" value="Default" @change="searchModeChange"></ejs-dropdownlist>
         </div>
         <div style='height:350px;'>
             <ejs-grid ref='grid' :dataSource='data' :searchSettings='searchSettings' :toolbar='toolbarOptions' enableStickyHeader=true>
@@ -34,11 +34,11 @@ components: {
       data: data,
       toolbarOptions: ['Search'],
       searchModes: [
-        { text: 'OnEnter', value: 'OnEnter' },
+        { text: 'Default', value: 'Default' },
         { text: 'Immediate', value: 'Immediate' }
       ],
       ddlFields: { text: 'text', value: 'value' },
-      searchSettings: { mode: 'OnEnter' }
+      searchSettings: { mode: 'Default' }
     };
   },
   methods: {

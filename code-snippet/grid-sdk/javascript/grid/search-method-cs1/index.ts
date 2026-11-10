@@ -6,7 +6,7 @@ Grid.Inject(Search, Toolbar);
 
 let grid: Grid = new Grid({
     dataSource: data,
-    searchSettings: { mode: 'OnEnter' },
+    searchSettings: { mode: 'Default' },
     columns: [
         { field: 'OrderID', headerText: 'Order ID', textAlign: 'Right', width: 90 },
         { field: 'CustomerID', headerText: 'Customer ID', width: 100 },
@@ -20,13 +20,13 @@ grid.appendTo('#Grid');
 
 let searchMode = new DropDownList({
     dataSource: [
-        { text: 'OnEnter', value: 'OnEnter' },
+        { text: 'Default', value: 'Default' },
         { text: 'Immediate', value: 'Immediate' }
     ],
     fields: { text: 'text', value: 'value' },
-    value: 'OnEnter',
+    value: 'Default',
     change: () => {
-        const mode = searchMode.value as 'OnEnter' | 'Immediate';
+        const mode = searchMode.value as 'Default' | 'Immediate';
         grid.searchSettings = mode === 'Immediate' ? { mode, immediateModeDelay: 1500 } : { mode };
     }
 });
