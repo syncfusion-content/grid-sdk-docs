@@ -1,0 +1,43 @@
+@(Html.EJS().TreeGrid("TreeGrid")
+        .AllowRowDragAndDrop(true)
+        .RowDropSettings(new Syncfusion.EJ2.TreeGrid.TreeGridRowDropSettings() { TargetID = new string[] { "destTree", "thirdTree" } })
+        .Height(275)
+        .DataSource((IEnumerable<object>
+        )ViewBag.datasource)
+        .SelectionSettings(selection => selection.Type(Syncfusion.EJ2.TreeGrid.SelectionType.Multiple))
+        .Columns(col =>
+        {
+            col.Field("TaskId").HeaderText("Task ID").Width(110).TextAlign(TextAlign.Right).Add();
+            col.Field("TaskName").HeaderText("Task Name").Width(210).Add();
+            col.Field("StartDate").HeaderText("Start Date").TextAlign(TextAlign.Right).Format("yMd").Width(210).Add();
+            col.Field("Duration").HeaderText("Duration").TextAlign(TextAlign.Right).Width(190).Add();
+        })
+        .ChildMapping("Children").TreeColumnIndex(1).Render())
+
+@(Html.EJS().TreeGrid("destTree")
+        .AllowRowDragAndDrop(true)
+        .RowDropSettings(drop => drop.TargetID(new string[] { "TreeGrid", "thirdTree" }))
+        .Height(275)
+        .SelectionSettings(selection => selection.Type(Syncfusion.EJ2.TreeGrid.SelectionType.Multiple))
+        .Columns(col =>
+        {
+            col.Field("TaskId").HeaderText("Task ID").Width(110).TextAlign(TextAlign.Right).Add();
+            col.Field("TaskName").HeaderText("Task Name").Width(210).Add();
+            col.Field("StartDate").HeaderText("Start Date").TextAlign(TextAlign.Right).Format("yMd").Width(210).Add();
+            col.Field("Duration").HeaderText("Duration").TextAlign(TextAlign.Right).Width(190).Add();
+        })
+        .ChildMapping("Children").TreeColumnIndex(1).Render())
+
+@(Html.EJS().TreeGrid("thirdTree")
+        .AllowRowDragAndDrop(true)
+        .RowDropSettings(drop => drop.TargetID(new string[] { "TreeGrid", "destTree" }))
+        .Height(275)
+        .SelectionSettings(selection => selection.Type(Syncfusion.EJ2.TreeGrid.SelectionType.Multiple))
+        .Columns(col =>
+        {
+            col.Field("TaskId").HeaderText("Task ID").Width(110).TextAlign(TextAlign.Right).Add();
+            col.Field("TaskName").HeaderText("Task Name").Width(210).Add();
+            col.Field("StartDate").HeaderText("Start Date").TextAlign(TextAlign.Right).Format("yMd").Width(210).Add();
+            col.Field("Duration").HeaderText("Duration").TextAlign(TextAlign.Right).Width(190).Add();
+        })
+        .ChildMapping("Children").TreeColumnIndex(1).Render())
