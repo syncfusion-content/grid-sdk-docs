@@ -223,9 +223,27 @@ The following example demonstrates how to search specific columns such as **Cust
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/column-search-cs1" %}
 {% endif %}
 
-## Search on each key stroke
+## Immediate Search Support
 
-The search on each keystroke feature in Syncfusion<sup style="font-size:70%">&reg;</sup> Grid enables you to perform real-time searching of grid data as they type in the search text box. This functionality provides a seamless and interactive searching experience, allowing you to see the search results dynamically updating in real time as they enter each keystroke in the search box
+Immediate Search Support in Syncfusion<sup style="font-size:70%">&reg;</sup> Grid enables you to control when search is applied by configuring `searchSettings.mode` and `searchSettings.immediateModeDelay`. Set `searchSettings.mode` to `Immediate` to search on every keystroke, or to `OnEnter` to wait until the user presses <kbd>Enter</kbd>. When `Immediate` mode is used, `searchSettings.immediateModeDelay` controls the delay, in milliseconds, before the search runs after typing stops.
+
+| Property | Accepted values | Behavior |
+|---|---|---|
+| `searchSettings.mode` | `Immediate`, `OnEnter` | Determines whether the search runs immediately or only after <kbd>Enter</kbd> is pressed. |
+| `searchSettings.immediateModeDelay` | Number in milliseconds | Adds a delay before the search is applied in `Immediate` mode. |
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+const searchOptions = {
+  mode: 'Immediate',
+  immediateModeDelay: 300
+};
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+<ejs-grid [searchSettings]="searchOptions" [toolbar]="toolbar">
+</ejs-grid>
+{% endhighlight %}
+{% endtabs %}
 
 To achieve this, you need to bind the `keyup` event to the search input element inside the [created](../api/grid/#created) event of the grid control. 
 

@@ -259,9 +259,27 @@ The following example searches only the "Customer ID", "Freight", and "Ship Coun
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/grid/searching-cs4" %}
 
-## Perform real-time search while typing
+## Immediate Search Support
 
-The real-time search feature enables searching as each keystroke is entered into the search box. This provides immediate, dynamic search results without requiring pressing <kbd>Enter</kbd> or clicking a button.
+Immediate Search Support lets you control when search is applied by configuring `searchSettings.mode` and `searchSettings.immediateModeDelay`. Set `searchSettings.mode` to `Immediate` to search on every keystroke, or to `OnEnter` to wait until the user presses <kbd>Enter</kbd>. When `Immediate` mode is selected, `searchSettings.immediateModeDelay` adds a delay in milliseconds before the search runs after typing stops.
+
+| Property | Accepted values | Behavior |
+|---|---|---|
+| `searchSettings.mode` | `Immediate`, `OnEnter` | Determines whether the search runs immediately or only after <kbd>Enter</kbd> is pressed. |
+| `searchSettings.immediateModeDelay` | Number in milliseconds | Adds a delay before the search is applied in `Immediate` mode. |
+
+{% tabs %}
+{% highlight ts tabtitle="App.tsx" %}
+const searchSettings = {
+  mode: 'Immediate',
+  immediateModeDelay: 300
+};
+{% endhighlight %}
+{% highlight ts tabtitle="App.jsx" %}
+<GridComponent searchSettings={searchSettings} toolbar={['Search']}>
+</GridComponent>
+{% endhighlight %}
+{% endtabs %}
 
 Implementation of real-time search:
 

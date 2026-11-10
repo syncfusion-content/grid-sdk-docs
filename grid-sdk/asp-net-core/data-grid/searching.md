@@ -133,9 +133,28 @@ The following example demonstrates how to search specific columns such as **Cust
 
 ![Search specific columns](images/search/search-specific.gif)
 
-## Search on each key stroke
+## Immediate Search Support
 
-The search on each keystroke feature in Syncfusion<sup style="font-size:70%">&reg;</sup> Grid enables you to perform real-time searching of grid data as they type in the search text box. This functionality provides a seamless and interactive searching experience, allowing you to see the search results dynamically updating in real time as they enter each keystroke in the search box
+Immediate Search Support in Syncfusion<sup style="font-size:70%">&reg;</sup> Grid enables you to control when search is applied by configuring `SearchSettings.Mode` and `SearchSettings.ImmediateModeDelay`. Set `SearchSettings.Mode` to `Immediate` to search on every keystroke, or to `OnEnter` to wait until the user presses <kbd>Enter</kbd>. When `Immediate` mode is used, `SearchSettings.ImmediateModeDelay` controls the delay, in milliseconds, before the search runs after typing stops.
+
+| Property | Accepted values | Behavior |
+|---|---|---|
+| `SearchSettings.Mode` | `Immediate`, `OnEnter` | Determines whether the search runs immediately or only after <kbd>Enter</kbd> is pressed. |
+| `SearchSettings.ImmediateModeDelay` | Number in milliseconds | Adds a delay before the search is applied in `Immediate` mode. |
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+<ejs-grid id="Grid" dataSource="@Model.DataSource" toolbar="@Model.Toolbar" SearchSettings="new Syncfusion.EJ2.Grids.GridSearchSettings() { Mode = Syncfusion.EJ2.Grids.SearchMode.Immediate, ImmediateModeDelay = 300 }">
+</ejs-grid>
+{% endhighlight %}
+{% highlight c# tabtitle="Grid.cs" %}
+public class GridModel
+{
+    public object DataSource { get; set; }
+    public string[] Toolbar { get; set; }
+}
+{% endhighlight %}
+{% endtabs %}
 
 To achieve this, you need to bind the `keyup` event to the search input element inside the [created](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_Created) event of the grid component. 
 

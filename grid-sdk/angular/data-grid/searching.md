@@ -156,9 +156,31 @@ The following example searches only the "Customer ID", "Freight", and "Ship Coun
   
 {% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/searching-cs4" %}
 
-## Search on each key stroke
+## Immediate Search Support
 
-The real-time search feature enables searching as each keystroke is entered into the search box. This provides immediate, dynamic search results without requiring pressing <kbd>Enter</kbd> or clicking a button.
+Immediate Search Support enables searching as each keystroke is entered into the search box. This provides immediate, dynamic search results without requiring pressing <kbd>Enter</kbd> or clicking a button.
+
+### Search mode configuration
+
+Use `searchSettings.mode` to choose how the Grid handles search input. Set it to `Immediate` to search on every keystroke, or `OnEnter` to wait until the user presses <kbd>Enter</kbd>. When `Immediate` mode is enabled, `searchSettings.immediateModeDelay` controls the delay, in milliseconds, before the search runs after typing stops.
+
+| Property | Accepted values | Behavior |
+|---|---|---|
+| `searchSettings.mode` | `Immediate`, `OnEnter` | Determines whether the search runs immediately or only after <kbd>Enter</kbd> is pressed. |
+| `searchSettings.immediateModeDelay` | Number in milliseconds | Adds a delay before the search is applied in `Immediate` mode. |
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+searchOptions = {
+  mode: 'Immediate',
+  immediateModeDelay: 300
+};
+{% endhighlight %}
+{% highlight html tabtitle="app.component.html" %}
+<ejs-grid [searchSettings]="searchOptions" [toolbar]="toolbar">
+</ejs-grid>
+{% endhighlight %}
+{% endtabs %}
 
 Implementation of real-time search:
 
