@@ -5,20 +5,24 @@ import { data } from './datasource';
 import { DropDownListComponent, ChangeEventArgs } from '@syncfusion/ej2-react-dropdowns'
 
 function App() {
-  const [searchOptions, setSearchOptions] = useState<SearchSettingsModel>({ mode: 'Default' });
+  const [searchOptions, setSearchOptions] = useState<SearchSettingsModel>({ operator: 'contains' });
   const toolbarOptions: ToolbarItems[] = ['Search'];
   const ddlData: { [key: string]: Object; }[] = [
-    { text: 'Default', value: 'Default' },
-    { text: 'Immediate', value: 'Immediate' },
+    { text: 'startswith', value: 'startswith' },
+    { text: 'endswith', value: 'endswith' },
+    { text: 'wildcard', value: 'wildcard' },
+    { text: 'like', value: 'like' },
+    { text: 'equal', value: 'equal' },
+    { text: 'notequal', value: 'notequal' },
   ];
 
   const valueChange = (args: ChangeEventArgs) => {
-    const mode = args.value as 'Default' | 'Immediate';
-    setSearchOptions(mode === 'Immediate' ? { mode, immediateModeDelay: 1500 } : { mode });
+    const searchOperator: SearchSettingsModel = { operator: args.value };
+    setSearchOptions(searchOperator);
   }
   return (<div>
-    <label style={{ padding: "10px 10px 26px 0" }}>Search Mode:</label>
-    <DropDownListComponent id="value" index={0} width={120} dataSource={ddlData} value="Default" change={valueChange}></DropDownListComponent>
+    <label style={{ padding: "10px 10px 26px 0" }}>Change the search operators:</label>
+    <DropDownListComponent id="value" index={0} width={100} dataSource={ddlData} change={valueChange}></DropDownListComponent>
     <GridComponent dataSource={data} toolbar={toolbarOptions} searchSettings={searchOptions}
       height={272}>
       <ColumnsDirective>
