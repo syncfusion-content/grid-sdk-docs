@@ -9,26 +9,68 @@ documentation: ug
 
 # Row Drag and Drop Between Multiple TreeGrids in ASP.NET Core TreeGrid
 
-The TreeGrid rows can be moved between three or more TreeGrid instances. Each TreeGrid declares the destination it accepts rows into through the [`targetID`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.TreeGrid.TreeGridRowDropSettings.html#Syncfusion_EJ2_TreeGrid_TreeGridRowDropSettings_TargetID) property of the [`rowDropSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.TreeGrid.TreeGridRowDropSettings.html) object, so a row can be dragged from one TreeGrid into another without copying and pasting the data manually.
+The Row Drag and Drop Between Multiple TreeGrids feature allows users to drag rows from one TreeGrid and drop them into another connected TreeGrid. This feature enables moving records between hierarchical datasets while maintaining the TreeGrid structure.
 
-## Configure the target TreeGrid for each instance
+## Feature overview
 
-The [`targetID`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.TreeGrid.TreeGridRowDropSettings.html#Syncfusion_EJ2_TreeGrid_TreeGridRowDropSettings_TargetID) property accepts the ID of a single destination TreeGrid. Because each TreeGrid owns its own [`rowDropSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.TreeGrid.TreeGridRowDropSettings.html) object, a row can only be dropped into the TreeGrid that the dragged TreeGrid points to.
+To enable row drag and drop between TreeGrids:
 
-To connect three or more TreeGrids, specify the ID of the destination TreeGrid in the [`targetID`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.TreeGrid.TreeGridRowDropSettings.html#Syncfusion_EJ2_TreeGrid_TreeGridRowDropSettings_TargetID) property of every TreeGrid that should accept rows. The following table shows the configuration used in the sample that follows.
+- Enable row drag and drop using the [`allowRowDragAndDrop`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.TreeGrid.TreeGrid.html#Syncfusion_EJ2_TreeGrid_TreeGrid_AllowRowDragAndDrop) property.
+- Configure the destination TreeGrid using the [`targetID`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.TreeGrid.TreeGridRowDropSettings.html#Syncfusion_EJ2_TreeGrid_TreeGridRowDropSettings_TargetID) property of the [`rowDropSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.TreeGrid.TreeGridRowDropSettings.html) object.
+- Users can drag selected rows from a source TreeGrid and drop them into the configured destination TreeGrid.
+- Rows can be dropped above, below, or as a child of an existing row in the destination TreeGrid.
 
-| TreeGrid ID | targetID value | Rows can be dropped into |
-|---|---|---|
-| `TreeGrid1` | `TreeGrid2` | `TreeGrid2` |
-| `TreeGrid2` | `TreeGrid3` | `TreeGrid3` |
-| `TreeGrid3` | `TreeGrid1` | `TreeGrid1` |
+```cshtml
+<e-treegrid-rowdropsettings targetID="TreeGrid2"></e-treegrid-rowdropsettings>
+```
 
-This creates a cycle, so a row can be moved from `TreeGrid1` to `TreeGrid2`, from `TreeGrid2` to `TreeGrid3`, and from `TreeGrid3` back to `TreeGrid1`.
+## Supported scenarios
+
+### Single target TreeGrid
+
+A source TreeGrid can be configured to drop rows into a single target TreeGrid.
+
+```cshtml
+<e-treegrid-rowdropsettings targetID="TreeGrid2"></e-treegrid-rowdropsettings>
+```
+
+**Behavior**
+
+- Rows from `TreeGrid1` can be dropped into `TreeGrid2`.
+- Rows cannot be dropped into any other TreeGrid unless it is configured as a target.
+
+### Three or more TreeGrids
+
+Multiple TreeGrids can participate in row drag-and-drop operations by configuring the appropriate target relationships. Each TreeGrid declares one destination, and the relationships are combined so that a row can travel through every TreeGrid on the page.
+
+```cshtml
+TreeGrid1 -> TreeGrid2
+TreeGrid2 -> TreeGrid3
+TreeGrid3 -> TreeGrid1
+```
+
+**Behavior**
+
+- Rows can be moved between any connected TreeGrid.
+- Each TreeGrid can act as both a source and a destination.
+- Drag-and-drop operations are allowed only between explicitly configured TreeGrids.
 
 To let several TreeGrids feed rows into a single destination, point each of them at the same TreeGrid ID. For example, setting the [`targetID`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.TreeGrid.TreeGridRowDropSettings.html#Syncfusion_EJ2_TreeGrid_TreeGridRowDropSettings_TargetID) property of `TreeGrid1` and `TreeGrid2` to `TreeGrid3` allows both of them to drop rows into `TreeGrid3`.
 
-N> * The [`targetID`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.TreeGrid.TreeGridRowDropSettings.html#Syncfusion_EJ2_TreeGrid_TreeGridRowDropSettings_TargetID) property must contain the ID of the destination TreeGrid, and the ID must be unique across the page.
+In the following example, `TreeGrid1` and `TreeGrid2` both target `TreeGrid3`, so rows can be dragged into `TreeGrid3` from either of them, and `TreeGrid3` sends its rows back to `TreeGrid1`.
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/grid-sdk/asp-net-core/tree-grid/row/row-drag-multiple-shared/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Dragdrop.cs" %}
+{% include code-snippet/grid-sdk/asp-net-core/tree-grid/row/row-drag-multiple-shared/dragdrop.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+N> * The [`targetID`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.TreeGrid.TreeGridRowDropSettings.html#Syncfusion_EJ2_TreeGrid_TreeGridRowDropSettings_TargetID) property accepts a single TreeGrid ID. To enable a TreeGrid as the destination of more than one source, configure the same destination ID on each source TreeGrid.
 <br/> * The order in which the TreeGrids are rendered does not affect the drag and drop behavior. The destination TreeGrid can be created before or after the source TreeGrid.
+<br/> * The destination TreeGrid does not need its own [`targetID`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.TreeGrid.TreeGridRowDropSettings.html#Syncfusion_EJ2_TreeGrid_TreeGridRowDropSettings_TargetID) configuration to accept rows from another TreeGrid.
 
 ## Enable row drag and drop between three TreeGrids
 
@@ -43,9 +85,8 @@ The following example enables the [`allowRowDragAndDrop`](https://help.syncfusio
 {% endhighlight %}
 {% endtabs %}
 
-N> * Selection feature must be enabled for row drag and drop.
-<br/> * For multiple row selection, the [`type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.TreeGrid.TreeGridSelectionSettings.html#Syncfusion_EJ2_TreeGrid_TreeGridSelectionSettings_Type) property must be set to `multiple`.
-<br/> * The [`isPrimaryKey`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.TreeGrid.TreeGridColumn.html#Syncfusion_EJ2_TreeGrid_TreeGridColumn_IsPrimaryKey) property is necessary to perform the row drag and drop operation.
+N> * The [`isPrimaryKey`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.TreeGrid.TreeGridColumn.html#Syncfusion_EJ2_TreeGrid_TreeGridColumn_IsPrimaryKey) property is necessary to perform row drag and drop operation.
+<br/> * The selection feature must be enabled for row drag and drop. For multiple row selection, the [`type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.TreeGrid.TreeGridSelectionSettings.html#Syncfusion_EJ2_TreeGrid_TreeGridSelectionSettings_Type) property must be set to `multiple`.
 
 ## Drop positions
 
@@ -91,29 +132,42 @@ To handle the event in ASP.NET Core, bind the JavaScript handler name to the [`R
         <e-treegrid-column field="Duration" headerText="Duration" textAlign="Right" width="80"></e-treegrid-column>
     </e-treegrid-columns>
 </ejs-treegrid>
+```
 
-<script>
-    function rowDropHandler(args) {
-        var targetGrid = args.target.closest('.e-treegrid');
-        var destinationID = targetGrid ? targetGrid.id : '';
-        console.log('Row dropped into ' + destinationID + ' at position ' + args.dropPosition + '.');
-    }
-</script>
+```javascript
+function rowDropHandler(args) {
+    var targetGrid = args.target.closest('.e-treegrid');
+    var destinationID = targetGrid ? targetGrid.id : '';
+    console.log('Row dropped into ' + destinationID + ' at position ' + args.dropPosition + '.');
+}
 ```
 
 ## Supported combinations
 
-### Works with:
+### Works with
 
-- The [`allowRowDragAndDrop`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.TreeGrid.TreeGrid.html#Syncfusion_EJ2_TreeGrid_TreeGrid_AllowRowDragAndDrop) property, which must be enabled on the source and the destination TreeGrid.
-- The [`type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.TreeGrid.TreeGridSelectionSettings.html#Syncfusion_EJ2_TreeGrid_TreeGridSelectionSettings_Type) property set to `multiple`, which enables moving several rows in one drag operation.
-- The [`isPrimaryKey`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.TreeGrid.TreeGridColumn.html#Syncfusion_EJ2_TreeGrid_TreeGridColumn_IsPrimaryKey) property, which is required for the drop to be applied.
-- The [`RowDrop`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.TreeGrid.TreeGrid.html#Syncfusion_EJ2_TreeGrid_TreeGrid_RowDrop) event, which allows the drop to be cancelled or the drop position to be inspected.
+- Row selection, including the `multiple` selection type for transferring several rows at once.
+- The **Above**, **Below**, and **Child** drop positions.
+- Parent and child records, which are transferred together with their hierarchy intact.
+- Remote data binding, where the record movement is handled on the server through the [`RowDrop`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.TreeGrid.TreeGrid.html#Syncfusion_EJ2_TreeGrid_TreeGrid_RowDrop) event.
 
-### Known limitations:
+### Does not work with
 
-- The [`targetID`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.TreeGrid.TreeGridRowDropSettings.html#Syncfusion_EJ2_TreeGrid_TreeGridRowDropSettings_TargetID) property holds a single destination ID, so a row can only be dropped into the TreeGrid that the source TreeGrid points to. A TreeGrid cannot accept rows from several sources and forward them elsewhere in the same operation.
-- When the [`targetID`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.TreeGrid.TreeGridRowDropSettings.html#Syncfusion_EJ2_TreeGrid_TreeGridRowDropSettings_TargetID) property is set, the TreeGrid does not render the drag icon column, and the drag is performed using the selected row.
-- The row drag and drop feature does not have built-in support for the row template and detail template features of the TreeGrid.
+- An array of target IDs in the [`targetID`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.TreeGrid.TreeGridRowDropSettings.html#Syncfusion_EJ2_TreeGrid_TreeGridRowDropSettings_TargetID) property. The property accepts a single TreeGrid ID. To share one destination between several sources, configure the same destination ID on each source TreeGrid.
+- Row template and detail template features of the TreeGrid.
 
-N> You can refer to our [`ASP.NET Core Tree Grid`](https://www.syncfusion.com/aspnet-core-ui-controls/tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our ASP.NET Core Tree Grid example [`ASP.NET Core Tree Grid example`](https://ej2.syncfusion.com/aspnetcore/treegrid/overview#/fluent2) to know how to present and manipulate data.
+### Known limitations
+
+- A drop is accepted only by the TreeGrid named in the [`targetID`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.TreeGrid.TreeGridRowDropSettings.html#Syncfusion_EJ2_TreeGrid_TreeGridRowDropSettings_TargetID) property of the source TreeGrid. Dropping into any other TreeGrid on the page has no effect.
+- When the [`targetID`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.TreeGrid.TreeGridRowDropSettings.html#Syncfusion_EJ2_TreeGrid_TreeGridRowDropSettings_TargetID) property is set, the drag helper icon is not rendered in the row. The row itself is used to start the drag operation.
+
+### Configuration requirements
+
+- Set [`allowRowDragAndDrop`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.TreeGrid.TreeGrid.html#Syncfusion_EJ2_TreeGrid_TreeGrid_AllowRowDragAndDrop) to **true** on every TreeGrid that takes part in the operation.
+- Set [`isPrimaryKey`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.TreeGrid.TreeGridColumn.html#Syncfusion_EJ2_TreeGrid_TreeGridColumn_IsPrimaryKey) on a column of every TreeGrid that takes part in the operation.
+- Enable selection on the source TreeGrid, and set the [`type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.TreeGrid.TreeGridSelectionSettings.html#Syncfusion_EJ2_TreeGrid_TreeGridSelectionSettings_Type) property to `multiple` to move more than one row at a time.
+
+## See also
+
+[Row drag and drop in the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core TreeGrid](https://ej2.syncfusion.com/aspnetcore/treegrid/row-drag-and-drop)
+[Selection in the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core TreeGrid](https://ej2.syncfusion.com/aspnetcore/treegrid/selection)

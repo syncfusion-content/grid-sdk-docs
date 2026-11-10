@@ -1,0 +1,64 @@
+import * as React from 'react';
+import * as ReactDOM from 'react-dom';
+import { TreeGridComponent, RowDD, ColumnsDirective, ColumnDirective, Inject } from '@syncfusion/ej2-react-treegrid';
+import { sampleData } from './datasource';
+
+class Source extends React.Component {
+    data = sampleData;
+    rowDropSettings = { targetID: 'TreeGrid3' };
+    selectionSettings = { type: 'Multiple' };
+    render() {
+        return <TreeGridComponent id='TreeGrid1' dataSource={this.data} treeColumnIndex={1} allowRowDragAndDrop={true} rowDropSettings={this.rowDropSettings} selectionSettings={this.selectionSettings} childMapping='subtasks' height='275'>
+                <ColumnsDirective>
+              <ColumnDirective field='taskID' headerText='Task ID' width='90' textAlign='Right'></ColumnDirective>
+              <ColumnDirective field='taskName' headerText='Task Name' width='180'></ColumnDirective>
+              <ColumnDirective field='startDate' headerText='Start Date' width='90' format='yMd' textAlign='Right' type='date'/>
+              <ColumnDirective field='duration' headerText='Duration' width='80' textAlign='Right'/>
+            </ColumnsDirective>
+            <Inject services={[RowDD]}/>
+          </TreeGridComponent >;
+    }
+}
+
+class SecondSource extends React.Component {
+    data = [];
+    rowDropSettings = { targetID: 'TreeGrid3' };
+    selectionSettings = { type: 'Multiple' };
+    render() {
+        return <TreeGridComponent id='TreeGrid2' dataSource={this.data} treeColumnIndex={1} allowRowDragAndDrop={true} rowDropSettings={this.rowDropSettings} selectionSettings={this.selectionSettings} childMapping='subtasks' height='275'>
+        <ColumnsDirective>
+        <ColumnDirective field='taskID' headerText='Task ID' width='90' textAlign='Right'></ColumnDirective>
+        <ColumnDirective field='taskName' headerText='Task Name' width='180'></ColumnDirective>
+        <ColumnDirective field='startDate' headerText='Start Date' width='90' format='yMd' textAlign='Right' type='date'/>
+        <ColumnDirective field='duration' headerText='Duration' width='80' textAlign='Right'/>
+      </ColumnsDirective>
+      <Inject services={[RowDD]}/>
+</TreeGridComponent>;
+    }
+}
+
+class Target extends React.Component {
+    data = [];
+    rowDropSettings = { targetID: 'TreeGrid1' };
+    selectionSettings = { type: 'Multiple' };
+    render() {
+        return <TreeGridComponent id='TreeGrid3' dataSource={this.data} treeColumnIndex={1} allowRowDragAndDrop={true} rowDropSettings={this.rowDropSettings} selectionSettings={this.selectionSettings} childMapping='subtasks' height='275'>
+        <ColumnsDirective>
+        <ColumnDirective field='taskID' headerText='Task ID' width='90' textAlign='Right'></ColumnDirective>
+        <ColumnDirective field='taskName' headerText='Task Name' width='180'></ColumnDirective>
+        <ColumnDirective field='startDate' headerText='Start Date' width='90' format='yMd' textAlign='Right' type='date'/>
+        <ColumnDirective field='duration' headerText='Duration' width='80' textAlign='Right'/>
+      </ColumnsDirective>
+      <Inject services={[RowDD]}/>
+</TreeGridComponent>;
+    }
+}
+
+function App() {
+    return <div>
+            <Source></Source>
+            <SecondSource></SecondSource>
+            <Target></Target>
+           </div>;
+}
+ReactDOM.render(<App />, document.getElementById('treegrid'));
