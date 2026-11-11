@@ -766,22 +766,22 @@ This sample demonstrates how to prevent specific rows from being deselected by u
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/grid/selection-row-cs8/app/App.jsx %}
+{% include code-snippet/grid-sdk/react/grid/selection-row-prevent-deselection/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/grid/selection-row-cs8/app/App.tsx %}
+{% include code-snippet/grid-sdk/react/grid/selection-row-prevent-deselection/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/grid-sdk/react/grid/selection-row-cs8/app/datasource.jsx %}
+{% include code-snippet/grid-sdk/react/grid/selection-row-prevent-deselection/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/grid-sdk/react/grid/selection-row-cs8/app/datasource.tsx %}
+{% include code-snippet/grid-sdk/react/grid/selection-row-prevent-deselection/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
 ### Preview
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/grid/selection-row-cs8" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/grid/selection-row-prevent-deselection" %}
 
 The preview includes an option to open the sample in StackBlitz.
 
