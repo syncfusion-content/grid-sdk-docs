@@ -281,17 +281,17 @@ This sample demonstrates how to prevent specific rows from being deselected by u
 
 {% tabs %}
 {% highlight cshtml tabtitle="Razor" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/grid/selection/row-clear-selection/razor %}
+{% include code-snippet/grid-sdk/asp-net-mvc/grid/selection/selection-row-cs8/razor %}
 {% endhighlight %}
 
 {% highlight c# tabtitle="Controller" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/grid/selection/row-clear-selection/row-selection.cs %}
+{% include code-snippet/grid-sdk/asp-net-mvc/grid/selection/selection-row-cs8/row-selection.cs %}
 {% endhighlight %}
 {% endtabs %}
 
 ### Preview
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/asp-net-mvc/grid/selection/row-clear-selection" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/asp-net-mvc/grid/selection/selection-row-cs8" %}
 
 The preview includes an option to open the sample in StackBlitz.
 

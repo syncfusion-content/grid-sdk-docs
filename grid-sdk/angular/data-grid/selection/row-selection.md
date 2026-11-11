@@ -472,17 +472,17 @@ This sample demonstrates how to prevent specific rows from being deselected by u
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid-sdk/angular/grid/selection-row-cs4/src/app.component.ts %}
+{% include code-snippet/grid-sdk/angular/grid/selection-row-cs8/src/app.component.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid-sdk/angular/grid/selection-row-cs4/src/main.ts %}
+{% include code-snippet/grid-sdk/angular/grid/selection-row-cs8/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
 
 ### Preview
 
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/selection-row-cs4" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/angular/grid/selection-row-cs8" %}
 
 The preview includes an option to open the sample in StackBlitz.
 
