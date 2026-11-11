@@ -459,7 +459,12 @@ The following example demonstrates clearing row selection by calling the `clearR
 
 ## Prevent row deselection
 
-The Grid lets you keep specific rows selected by using the `isRowNonDeselectable` callback in `selectionSettings`. Return `true` for rows that should remain selected and `false` for rows that can be deselected. In the following example, rows whose `Category` value is `Fruits` cannot be deselected.
+The Grid provides support for preventing specific rows from being deselected based on custom criteria. This feature helps maintain the selection state of important records and prevents users from accidentally removing them from the current selection.
+
+To define non-deselectable rows, use the `isRowNonDeselectable` callback property. The callback receives the row data and returns a boolean value indicating whether the row should be prevented from being deselected.
+
+Return `true` to prevent the row from being deselected.
+Return `false` to allow normal deselection behavior.
 
 ```ts
 public selectionOptions: SelectionSettingsModel = {
