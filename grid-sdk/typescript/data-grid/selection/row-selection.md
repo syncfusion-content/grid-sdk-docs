@@ -490,17 +490,17 @@ This sample demonstrates how to prevent rows with Ship Country equal to France f
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/typescript/grid/clear-selection-cs1/index.ts %}
+{% include code-snippet/grid-sdk/typescript/grid/selection-row-cs8/index.ts %}
 {% endhighlight %}
 
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/clear-selection-cs1/index.html %}
+{% include code-snippet/grid-sdk/typescript/grid/selection-row-cs8/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
 ### Preview
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/clear-selection-cs1" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/selection-row-cs8" %}
 
 The preview includes an option to open the sample in StackBlitz.
 

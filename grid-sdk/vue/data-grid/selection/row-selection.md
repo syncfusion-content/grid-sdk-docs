@@ -496,17 +496,17 @@ This sample demonstrates how to prevent rows with Ship Country equal to France f
 
 {% tabs %}
 {% highlight vue tabtitle="App.vue" %}
-{% include code-snippet/grid-sdk/vue/grid/select/selection-row-clear/app.vue %}
+{% include code-snippet/grid-sdk/vue/grid/select/selection-row-cs8/app.vue %}
 {% endhighlight %}
 
 {% highlight vue tabtitle="App-composition.vue" %}
-{% include code-snippet/grid-sdk/vue/grid/select/selection-row-clear/app-composition.vue %}
+{% include code-snippet/grid-sdk/vue/grid/select/selection-row-cs8/app-composition.vue %}
 {% endhighlight %}
 {% endtabs %}
 
 ### Preview
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/grid/select/selection-row-clear" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/grid/select/selection-row-cs8" %}
 
 The preview includes an option to open the sample in StackBlitz.
 
