@@ -700,15 +700,15 @@ The following example demonstrates how to bind custom data to handle grid action
 {% raw %}
 <script setup>
 import { ref, onMounted, provide } from "vue";
-import { GridComponent as EjsGrid, ColumnsDirective as EColumns, ColumnDirective as EColumn, InfiniteScroll, Sort, Filter, Toolbar, Edit, Search, } from '@syncfusion/ej2-vue-grids';
+import { GridComponent as EjsGrid, ColumnsDirective as EColumns, ColumnDirective as EColumn, Page, Sort, Filter, Group, LazyLoadGroup, Toolbar, Edit, Search, } from '@syncfusion/ej2-vue-grids';
 import { getOrders, addRecord, updateRecord, deleteRecord } from './orderService';
 
 const data = ref([]);
 const grid = ref([]);
-const infiniteScrollSettings = { enableCache: true };
+const groupSettings = { enableLazyLoading: true, columns: ['ProductName'], showGroupedColumn: true, };
 const filterSettings = { columns: [{ field: 'CustomerName', matchCase: false, operator: 'startswith', predicate: 'and', value: 'Maria' }] };
 const sortSettings = { columns: [{ field: 'ProductID', direction: 'Descending' }] }
-const state = { skip: 0, take: 36, sort: sortSettings, filter: filterSettings };
+const state = { skip: 0, take: 12, group: groupSettings, sort: sortSettings, filter: filterSettings };
 const editSettings = { allowEditing: true, allowAdding: true, allowDeleting: true, newRowPosition: 'Top', };
 const toolbar = ['Add', 'Edit', 'Delete', 'Update', 'Cancel', 'Search'];
 const OrderIDRules = { required: true };
@@ -734,12 +734,12 @@ onMounted(() => {
   dataStateChange(state);
 });
 
-provide('grid', [InfiniteScroll, Filter, Sort, Toolbar, Edit, Search]);
+provide('grid', [Page, Filter, Sort, Group, LazyLoadGroup, Toolbar, Edit, Search]);
 </script>
 
 <template>
-  <ejs-grid ref="grid" :dataSource='data' :enableInfiniteScrolling='true' :infiniteScrollSettings='infiniteScrollSettings' :allowFiltering='true' :filterSettings='filterSettings'
-    :allowSorting='true' :sortSettings='sortSettings'
+  <ejs-grid ref="grid" :dataSource='data' :allowPaging='true' :allowFiltering='true' :filterSettings='filterSettings'
+    :allowSorting='true' :sortSettings='sortSettings' :allowGrouping='true' :groupSettings='groupSettings'
     :toolbar='toolbar' :editSettings='editSettings' :dataStateChange="dataStateChange"
     :dataSourceChanged="dataSourceChanged">
     <e-columns>
@@ -760,7 +760,7 @@ provide('grid', [InfiniteScroll, Filter, Sort, Toolbar, Edit, Search]);
 {% highlight html tabtitle="Options API ~/src/App.vue" %}
 {% raw %}
 <script>
-import { GridComponent, ColumnDirective, ColumnsDirective, InfiniteScroll, Sort, Filter, Toolbar, Edit, Search, } from '@syncfusion/ej2-vue-grids';
+import { GridComponent, ColumnDirective, ColumnsDirective, Page, Sort, Filter, Group, LazyLoadGroup, Toolbar, Edit, Search, } from '@syncfusion/ej2-vue-grids';
 import { getOrders, addRecord, updateRecord, deleteRecord } from './orderService';
 
 export default {
@@ -773,7 +773,7 @@ export default {
   data() {
     return {
       data: [],
-      infiniteScrollSettings: { enableCache: true },
+      groupSettings: { enableLazyLoading: true, columns: ['ProductName'], showGroupedColumn: true },
       filterSettings: { columns: [{ field: 'CustomerName', matchCase: false, operator: 'startswith', predicate: 'and', value: 'Maria' }] },
       sortSettings: { columns: [{ field: 'ProductID', direction: 'Descending' }] },
       editSettings: { allowEditing: true, allowAdding: true, allowDeleting: true, newRowPosition: 'Top' },
@@ -782,7 +782,7 @@ export default {
     };
   },
   mounted() {
-    let state= { skip: 0, take: 36, sort: this.sortSettings, filter: this.filterSettings };
+    let state= { skip: 0, take: 12, group: this.groupSettings, sort: this.sortSettings, filter: this.filterSettings };
     this.dataStateChange(state);
   },
   methods: {
@@ -807,15 +807,15 @@ export default {
   },
   provide() {
     return {
-      grid: [InfiniteScroll, Filter, Sort, Toolbar, Edit, Search]
+      grid: [Page, Filter, Sort, Group, LazyLoadGroup, Toolbar, Edit, Search]
     };
   }
 };
 </script>
 
 <template>
-  <ejs-grid ref="grid" :dataSource='data' :enableInfiniteScrolling='true' :infiniteScrollSettings='infiniteScrollSettings' :allowFiltering='true' :filterSettings='filterSettings'
-    :allowSorting='true' :sortSettings='sortSettings'
+  <ejs-grid ref="grid" :dataSource='data' :allowPaging='true' :allowFiltering='true' :filterSettings='filterSettings'
+    :allowSorting='true' :sortSettings='sortSettings' :allowGrouping='true' :groupSettings='groupSettings'
     :toolbar='toolbar' :editSettings='editSettings' :dataStateChange="dataStateChange"
     :dataSourceChanged="dataSourceChanged">
     <e-columns>
@@ -1775,13 +1775,11 @@ export default data;
 {% endhighlight %}
 {% endtabs %}
 
-## Custom Binding with Caching
+## Custom binding with caching
 
 The Vue Data Grid provides the [enableCache](https://ej2.syncfusion.com/vue/documentation/api/grid/infiniteScrollSettings#enablecache) option for custom data binding. When enabled, the data retrieved from the server is stored on the client and reused for subsequent data operations whenever possible. This reduces redundant data requests, improves responsiveness and enhances performance with large datasets.
 
 The custom binding cache works with infinite scrolling, minimizing unnecessary server requests while keeping navigation smooth. The `dataStateChange` event is triggered only when the requested data is not already available in the cache.
-
-The following example demonstrates custom binding with `enableCache` enabled in the existing custom binding sample.
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
@@ -1845,6 +1843,7 @@ provide('grid', [InfiniteScroll, Filter, Sort, Toolbar, Edit, Search]);
 </style>
 {% endraw %}
 {% endhighlight %}
+
 {% highlight html tabtitle="Options API ~/src/App.vue" %}
 {% raw %}
 <script>

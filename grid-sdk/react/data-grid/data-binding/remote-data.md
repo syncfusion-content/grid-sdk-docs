@@ -792,38 +792,36 @@ The following example demonstrates the process of sending additional parameters 
 
 ![AdditionalParameters](../images/additional-parameter.png)
 
-## Custom Binding with Caching
+## Custom binding with caching
 
 The React Data Grid provides the [enableCache](https://ej2.syncfusion.com/react/documentation/api/grid/infiniteScrollSettings#enablecache) option for custom data binding. When enabled, the data retrieved from the server is stored on the client and reused for subsequent data operations whenever possible. This reduces redundant data requests, improves responsiveness and enhances performance with large datasets.
 
 The custom binding cache works with infinite scrolling, minimizing unnecessary server requests while keeping navigation smooth. The `dataStateChange` event is triggered only when the requested data is not already available in the cache.
 
-The following example demonstrates custom binding with `enableCache` enabled in the existing custom binding sample.
-
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/grid/custom-binding-cs1/app/App.jsx %}
+{% include code-snippet/grid-sdk/react/grid/custom-binding-cache-cs1/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/grid/custom-binding-cs1/app/App.tsx %}
+{% include code-snippet/grid-sdk/react/grid/custom-binding-cache-cs1/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="Reducer.jsx" %}
-{% include code-snippet/grid-sdk/react/grid/custom-binding-cs1/app/reducer/reducer.jsx %}
+{% include code-snippet/grid-sdk/react/grid/custom-binding-cache-cs1/app/reducer/reducer.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="Reducer.tsx" %}
-{% include code-snippet/grid-sdk/react/grid/custom-binding-cs1/app/reducer/reducer.tsx %}
+{% include code-snippet/grid-sdk/react/grid/custom-binding-cache-cs1/app/reducer/reducer.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="Action.jsx" %}
-{% include code-snippet/grid-sdk/react/grid/custom-binding-cs1/app/reducer/action.jsx %}
+{% include code-snippet/grid-sdk/react/grid/custom-binding-cache-cs1/app/reducer/action.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="Action.tsx" %}
-{% include code-snippet/grid-sdk/react/grid/custom-binding-cs1/app/reducer/action.tsx %}
+{% include code-snippet/grid-sdk/react/grid/custom-binding-cache-cs1/app/reducer/action.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/grid-sdk/react/grid/custom-binding-cs1/app/datasource.jsx %}
+{% include code-snippet/grid-sdk/react/grid/custom-binding-cache-cs1/app/datasource.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/grid-sdk/react/grid/custom-binding-cs1/app/datasource.tsx %}
+{% include code-snippet/grid-sdk/react/grid/custom-binding-cache-cs1/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 

@@ -1,17 +1,19 @@
 import { getOrders, addRecord, updateRecord, deleteRecord } from './orderService.js';
 
-ej.grids.Grid.Inject(ej.grids.InfiniteScroll,ej.grids.Filter,ej.grids.Sort,ej.grids.Toolbar,ej.grids.Edit,ej.grids.Search);
+ej.grids.Grid.Inject(ej.grids.Group,ej.grids.Filter,ej.grids.Sort,ej.grids.Toolbar,ej.grids.Edit,ej.grids.Search, ej.grids.LazyLoadGroup, ej.grids.Filter);
 
+const groupSettings= { enableLazyLoading: true, columns: ['ProductName'], showGroupedColumn: true, };
 const filterSettings= { columns: [{ field: 'CustomerName', matchCase: false, operator: 'startswith', predicate: 'and', value: 'Maria' }] };
 const sortSettings = { columns: [{ field: 'ProductID', direction: 'Descending' }] }
-const state = { skip: 0, take: 36,sort: sortSettings,filter: filterSettings};
+const state = { skip: 0, take: 12,group: groupSettings,sort: sortSettings,filter: filterSettings};
 
 let grid= new ej.grids.Grid({
-    enableInfiniteScrolling: true,
-    infiniteScrollSettings: { enableCache: true },
+    allowPaging: true,
     allowFiltering:true,
     allowSorting:true,
+    allowGrouping:true,
     created:created,
+    groupSettings:groupSettings,
     sortSettings:sortSettings,
     filterSettings:filterSettings,
     dataStateChange: dataStateChange,

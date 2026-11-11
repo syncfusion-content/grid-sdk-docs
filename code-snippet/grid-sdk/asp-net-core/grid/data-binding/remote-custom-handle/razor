@@ -11,13 +11,18 @@
     col.Field("CustomerName").HeaderText("Customer Name").Width("150").Add();
     col.Field("ProductID").HeaderText("Product ID").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Width("120").Add();
     col.Field("ProductName").HeaderText("Product Name").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Width("120").Add();
-}).DataSourceChanged("dataSourceChanged").SortSettings(sort => sort.Columns(sortOptions)).FilterSettings(filter => filter.Columns(filterColumns)).EnableInfiniteScrolling(true).InfiniteScrollSettings(scroll => scroll.EnableCache(true)).AllowFiltering().AllowSorting().DataStateChange("dataStateChange").Created("created").EditSettings(edit => { edit.AllowAdding(true).AllowEditing(true).AllowDeleting(true).Mode(Syncfusion.EJ2.Grids.EditMode.Normal); }).Toolbar(new List<string>() { "Add", "Edit", "Delete", "Update", "Cancel", "Search" }).Render()
+}).DataSourceChanged("dataSourceChanged").SortSettings(sort => sort.Columns(sortOptions)).FilterSettings(filter => filter.Columns(filterColumns)).GroupSettings(group => { group.EnableLazyLoading(true).ShowGroupedColumn(true).Columns(new string[] { "ProductName" }); }).AllowPaging().AllowFiltering().AllowSorting().AllowGrouping().DataStateChange("dataStateChange").Created("created").EditSettings(edit => { edit.AllowAdding(true).AllowEditing(true).AllowDeleting(true).Mode(Syncfusion.EJ2.Grids.EditMode.Normal); }).Toolbar(new List<string>() { "Add", "Edit", "Delete", "Update", "Cancel", "Search" }).Render()
 <script>
     const baseUrl = "https://localhost:****/Home";// Here xxxx denotes the port number.
     var gridData;
     var state = {
         skip: 0,
-        take: 36,
+        take: 12,
+        group: {
+            enableLazyLoading: true,
+            columns: ["ProductName"],
+            showGroupedColumn: true
+        },
         sort: { columns: [{ field: 'ProductID', direction: 'Descending' }] },
         filter: { columns: [{ field: 'CustomerName', matchCase: false, operator: 'startswith', predicate: 'and', value: 'Maria' }] }
     };

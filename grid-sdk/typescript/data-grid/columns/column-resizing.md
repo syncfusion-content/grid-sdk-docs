@@ -214,14 +214,12 @@ The following screenshot represents the column resizing on the touch device.
 
 ## Resize columns using keyboard
 
-The TypeScript Data Grid supports keyboard-based column resizing to improve accessibility and keyboard navigation. The width adjustment applied for each key press is controlled by the `resizeStep` property.
+The Data Grid supports keyboard-based column resizing to improve accessibility and keyboard navigation. The width adjustment applied for each key press is controlled by the `resizeSettings.resizeStep` property.
 
 When a resize handle receives focus:
 
 - Press the <kbd>Alt + →</kbd> key to decrease the column width.
 - Press the <kbd>Alt + ←</kbd> key to increase the column width.
-
-{% if page.publishingplatform == "typescript" %}
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -233,20 +231,6 @@ When a resize handle receives focus:
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/resize-keyboard" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/resize-keyboard/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/resize-keyboard/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/resize-keyboard" %}
-{% endif %}
 
 ## Resizing column externally
 

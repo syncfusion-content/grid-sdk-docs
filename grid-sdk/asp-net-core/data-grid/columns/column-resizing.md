@@ -129,7 +129,7 @@ The following screenshot represents the column resizing on the touch device.
 
 ## Resize columns using keyboard
 
-The ASP.NET Core Data Grid supports keyboard-based column resizing to improve accessibility and keyboard navigation. The width adjustment applied for each key press is controlled by the `resizeStep` property.
+The Data Grid supports keyboard-based column resizing to improve accessibility and keyboard navigation. The width adjustment applied for each key press is controlled by the `resizeSettings.resizeStep` property.
 
 When a resize handle receives focus:
 
@@ -144,6 +144,8 @@ When a resize handle receives focus:
 {% include code-snippet/grid-sdk/asp-net-core/grid/columns/resize-keyboard/resize.cs %}
 {% endhighlight %}
 {% endtabs %}
+
+![Keyboard resizing](../images/column-resize/keyboard-resizing.gif)
 
 ## Resizing column externally
 

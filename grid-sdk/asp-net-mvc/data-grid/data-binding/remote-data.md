@@ -686,23 +686,21 @@ The following example demonstrates how to send additional parameters to the serv
 
 ![AdditionalParameters](../images/databinding/remote-params.png)
 
-## Custom Binding with Caching
+## Custom binding with caching
 
 The ASP.NET MVC Data Grid provides the `EnableCache` option for custom data binding. When enabled, the data retrieved from the server is stored on the client and reused for subsequent data operations whenever possible. This reduces redundant data requests, improves responsiveness and enhances performance with large datasets.
 
 The custom binding cache works with infinite scrolling, minimizing unnecessary server requests while keeping navigation smooth. The `DataStateChange` event is triggered only when the requested data is not already available in the cache.
 
-The following example demonstrates custom binding with `enableCache` enabled in the existing custom binding sample.
-
 {% tabs %}
 {% highlight razor tabtitle="Index.cshtml" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/grid/data-binding/remote-custom-handle/razor %}
+{% include code-snippet/grid-sdk/asp-net-mvc/grid/data-binding/remote-custom-handle-cache/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="HomeController.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/grid/data-binding/remote-custom-handle/custombinding.cs %}
+{% include code-snippet/grid-sdk/asp-net-mvc/grid/data-binding/remote-custom-handle-cache/custombinding.cs %}
 {% endhighlight %}
 {% highlight c# tabtitle="OrdersDetails.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/grid/data-binding/remote-custom-handle/OrdersDetails.cs %}
+{% include code-snippet/grid-sdk/asp-net-mvc/grid/data-binding/remote-custom-handle-cache/OrdersDetails.cs %}
 {% endhighlight %}
 {% endtabs %}
 
