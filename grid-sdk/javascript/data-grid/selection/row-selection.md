@@ -488,6 +488,16 @@ Return `false` to allow normal deselection behavior.
 
 This sample demonstrates how to prevent rows with Ship Country equal to France from being deselected by using the `isRowNonDeselectable` callback.
 
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/grid-sdk/javascript/grid/clear-selection-cs1/index.ts %}
+{% endhighlight %}
+
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/grid-sdk/javascript/grid/clear-selection-cs1/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
 ### Preview
 
 {% if page.publishingplatform == "typescript" %}

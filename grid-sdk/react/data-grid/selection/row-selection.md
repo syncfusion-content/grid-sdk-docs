@@ -764,6 +764,21 @@ Return `false` to allow normal deselection behavior.
 
 This sample demonstrates how to prevent rows with Ship Country equal to France from being deselected by using the `isRowNonDeselectable` callback.
 
+{% tabs %}
+{% highlight js tabtitle="App.jsx" %}
+{% include code-snippet/grid-sdk/react/grid/selection-row-cs8/app/App.jsx %}
+{% endhighlight %}
+{% highlight ts tabtitle="App.tsx" %}
+{% include code-snippet/grid-sdk/react/grid/selection-row-cs8/app/App.tsx %}
+{% endhighlight %}
+{% highlight js tabtitle="datasource.jsx" %}
+{% include code-snippet/grid-sdk/react/grid/selection-row-cs8/app/datasource.jsx %}
+{% endhighlight %}
+{% highlight ts tabtitle="datasource.tsx" %}
+{% include code-snippet/grid-sdk/react/grid/selection-row-cs8/app/datasource.tsx %}
+{% endhighlight %}
+{% endtabs %}
+
 ### Preview
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/grid/selection-row-cs8" %}

@@ -279,6 +279,16 @@ Return `false` to allow normal deselection behavior.
 
 This sample demonstrates how to prevent rows with Ship Country equal to France from being deselected by using the `isRowNonDeselectable` callback.
 
+{% tabs %}
+{% highlight cshtml tabtitle="Razor" %}
+{% include code-snippet/grid-sdk/asp-net-core/grid/selection/row-clear-selection/razor %}
+{% endhighlight %}
+
+{% highlight c# tabtitle="Controller" %}
+{% include code-snippet/grid-sdk/asp-net-core/grid/selection/row-clear-selection/row-selection.cs %}
+{% endhighlight %}
+{% endtabs %}
+
 ### Preview
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/asp-net-core/grid/selection/row-clear-selection" %}
