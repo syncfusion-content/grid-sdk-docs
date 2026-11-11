@@ -24,10 +24,10 @@ In the following sample, the Data Grid renders only the rows currently visible w
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/grid/view-port-row-model-cs1/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-core/grid/scrolling/view-port-row-model-cs1/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="view-port-row-model-cs1.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/grid/view-port-row-model-cs1/view-port-row-model-cs1.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/grid/scrolling/view-port-row-model-cs1/view-port-row-model-cs1.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -39,10 +39,10 @@ The number of buffered rows is configured through the `rowBuffer` property of `d
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/grid/view-port-row-model-cs2/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-core/grid/scrolling/view-port-row-model-cs2/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="view-port-row-model-cs2.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/grid/view-port-row-model-cs2/view-port-row-model-cs2.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/grid/scrolling/view-port-row-model-cs2/view-port-row-model-cs2.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -56,10 +56,10 @@ In the following sample, a local in-memory data source simulates the server. Cus
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/grid/view-port-row-model-cs3/tagHelper %}
+{% include code-snippet/grid-sdk/asp-net-core/grid/scrolling/view-port-row-model-cs3/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="view-port-row-model-cs3.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/grid/view-port-row-model-cs3/view-port-row-model-cs3.cs %}
+{% include code-snippet/grid-sdk/asp-net-core/grid/scrolling/view-port-row-model-cs3/view-port-row-model-cs3.cs %}
 {% endhighlight %}
 {% endtabs %}
 

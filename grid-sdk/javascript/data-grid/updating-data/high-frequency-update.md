@@ -6,7 +6,6 @@ control: High Frequency Update
 platform: grid-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
-publishingplatform: grid-sdk
 ---
 
 # High Frequency Cell Updates in JavaScript Data Grid

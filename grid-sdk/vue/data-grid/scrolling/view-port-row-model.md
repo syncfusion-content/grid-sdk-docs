@@ -16,7 +16,7 @@ The Data Grid extends this viewport-driven rendering mechanism to remote data so
 
 As scrolling updates the viewport, the Data Grid retrieves the required row range and refreshes the rendered content accordingly. DOM virtualization ensures that only rows within the active viewport are maintained in the DOM.
 
-[Paging](https://ej2.syncfusion.com/vue/documentation/grid/paging), [infinite scrolling](https://ej2.syncfusion.com/vue/documentation/grid/scrolling/infinite-scrolling), and [virtual scrolling](https://ej2.syncfusion.com/vue/documentation/grid/scrolling/virtual-scrolling) are built on this viewport-driven rendering mechanism. By rendering only the rows required for the active viewport, the Data Grid reduces rendering overhead, minimizes client-side memory consumption, and maintains consistent performance regardless of dataset size.
+[Paging](https://ej2.syncfusion.com/vue/documentation/grid/paging), [infinite scrolling](https://ej2.syncfusion.com/vue/documentation/grid/scrolling/infinite-scroll), and [virtual scrolling](https://ej2.syncfusion.com/vue/documentation/grid/scrolling/virtual-scroll) are built on this viewport-driven rendering mechanism. By rendering only the rows required for the active viewport, the Data Grid reduces rendering overhead, minimizes client-side memory consumption, and maintains consistent performance regardless of dataset size.
 
 ![Vue Data Grid viewport row model overview](../images/vue-data-grid-viewport-row-model-overview.png)
 

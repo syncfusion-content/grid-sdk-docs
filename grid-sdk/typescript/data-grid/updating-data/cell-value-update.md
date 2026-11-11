@@ -4,7 +4,6 @@ title: TypeScript Grid Cell Value Update | Syncfusion
 description: Update cell value programmatically in TypeScript Grid using setCellValue and setCellValueAsync to refresh only affected cells.
 platform: grid-sdk
 control: Cell Value Update
-publishingplatform: grid-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---

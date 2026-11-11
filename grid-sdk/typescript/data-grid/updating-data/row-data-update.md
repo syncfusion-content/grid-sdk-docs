@@ -4,7 +4,6 @@ title: TypeScript Grid Row Data Update | Syncfusion
 description: Update row data programmatically in TypeScript Grid using setRowData and setRowDataAsync to refresh affected rows.
 platform: grid-sdk
 control: Row Data Update
-publishingplatform: grid-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---

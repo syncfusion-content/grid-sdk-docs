@@ -6,7 +6,6 @@ control: Row Data Update
 platform: grid-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
-publishingplatform: grid-sdk
 ---
 
 # Row Data Update in JavaScript Data Grid

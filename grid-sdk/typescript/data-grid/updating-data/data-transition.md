@@ -4,7 +4,6 @@ title: TypeScript Grid Data Transition | Syncfusion
 description: Add, update, and delete records programmatically in TypeScript Grid using synchronous and asynchronous methods for data transition.
 platform: grid-sdk
 control: Data Transition
-publishingplatform: grid-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---

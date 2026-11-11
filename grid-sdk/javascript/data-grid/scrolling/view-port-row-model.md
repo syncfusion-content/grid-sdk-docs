@@ -6,7 +6,6 @@ platform: grid-sdk
 control: Viewport Row Model
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
-publishingplatform: grid-sdk
 ---
 
 # Viewport Row Model in JavaScript Data Grid

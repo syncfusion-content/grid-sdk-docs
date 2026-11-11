@@ -4,7 +4,6 @@ title: TypeScript Grid Viewport Row Model | Syncfusion
 description: Learn how the Viewport Row Model in the TypeScript Grid renders only visible rows with DOM virtualization, server-side operations, and buffer settings.
 platform: grid-sdk
 control: Viewport Row Model
-publishingplatform: grid-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---

@@ -12,12 +12,12 @@ domainurl: https://help.syncfusion.com/grid-sdk
 
 The ASP.NET MVC Data Grid provides methods to add, edit, and delete records programmatically, without direct interaction with the grid interface. These methods support both synchronous and asynchronous execution, enabling flexible control over record editing.
 
-* [addRecord](https://ej2.syncfusion.com/documentation/api/grid/#addrecord): Starts a new entry. If no data is passed, a blank form opens for input.
-* [startEdit](https://ej2.syncfusion.com/documentation/api/grid/#startedit): Enables edit mode for the selected row.
-* [deleteRecord](https://ej2.syncfusion.com/documentation/api/grid/#deleterecord): Removes the selected row.
-* [addRecordAsync](https://ej2.syncfusion.com/documentation/api/grid/#addrecordasync): Adds a new record asynchronously to the grid by passing the new data object.
-* [updateRowAsync](https://ej2.syncfusion.com/documentation/api/grid/#updaterowasync): Updates a specific row asynchronously by passing the new data object for that row.
-* [deleteRecordAsync](https://ej2.syncfusion.com/documentation/api/grid/#deleterecordasync): Removes a record asynchronously from the grid by passing the primary key value and the corresponding data to identify the row.
+* `addRecord`: Starts a new entry. If no data is passed, a blank form opens for input.
+* `startEdit`: Enables edit mode for the selected row.
+* `deleteRecord`: Removes the selected row.
+* `addRecordAsync`: Adds a new record asynchronously to the grid by passing the new data object.
+* `updateRowAsync`: Updates a specific row asynchronously by passing the new data object for that row.
+* `deleteRecordAsync`: Removes a record asynchronously from the grid by passing the primary key value and the corresponding data to identify the row.
 
 A single record is added synchronously using `addRecord`, while two records are added asynchronously using `addRecordAsync`. Additionally, the record at index "1" is updated asynchronously using `updateRowAsync`.
 

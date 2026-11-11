@@ -6,7 +6,6 @@ control: Data Transition
 platform: grid-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
-publishingplatform: grid-sdk
 ---
 
 # Data Transition in JavaScript Data Grid

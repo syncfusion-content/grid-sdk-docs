@@ -6,7 +6,6 @@ control: Cell Value Update
 platform: grid-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
-publishingplatform: grid-sdk
 ---
 
 # Cell Value Update in JavaScript Data Grid

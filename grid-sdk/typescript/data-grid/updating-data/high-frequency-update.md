@@ -4,7 +4,6 @@ title: TypeScript Grid High Frequency Update | Syncfusion
 description: Demonstrate synchronous and asynchronous cell updates in TypeScript Grid with performance measurement for high-frequency scenarios.
 platform: grid-sdk
 control: High Frequency Update
-publishingplatform: grid-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
