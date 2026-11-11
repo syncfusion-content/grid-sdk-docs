@@ -85,6 +85,8 @@ The following example demonstrates infinite scrolling with an unknown record cou
 {% endhighlight %}
 {% endtabs %}
 
+![Countless scrolling](../images/scrolling/countless-scroll.png)
+
 ## Limitations
 
 * Due to the element height limitation in browsers, the maximum number of records loaded by the grid is limited due to the browser capability.
