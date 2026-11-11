@@ -13,7 +13,7 @@ import { TextBoxModule } from '@syncfusion/ej2-angular-inputs';
                 <button ejs-button id="button" (click)='click()'>clear Row Selection</button>
                 </div>
                 <div style="padding: 20px 0px 0px 0px">
-                    <ejs-grid #grid [dataSource]='data' [selectedRowIndex]=0 allowPaging=true
+                    <ejs-grid #grid [dataSource]='data' [selectedRowIndex]=2 allowPaging=true 
                     [selectionSettings]='selectionOptions' [pageSettings]='pageOptions'>
                         <e-columns>
                             <e-column field='OrderID' headerText='Order ID' textAlign='Right'
@@ -39,16 +39,7 @@ export class AppComponent implements OnInit {
 
     ngOnInit(): void {
         this.data = data;
-        this.selectionOptions = {
-            mode: 'Row',
-            type: 'Multiple',
-            isRowNonDeselectable: function (data: Object) {
-                if ((<{ ShipCountry?: string }>data).ShipCountry === 'France') {
-                    return true;
-                }
-                return false;
-            }
-        };
+        this.selectionOptions = { mode: 'Row', type: 'Multiple' };
         this.pageOptions = { pageSize: 5 };
     }
     click(): void {

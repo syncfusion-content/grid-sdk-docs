@@ -468,7 +468,7 @@ Return `false` to allow normal deselection behavior.
 
 ## Sample
 
-This sample demonstrates how to prevent rows with Ship Country equal to France from being deselected by using the `isRowNonDeselectable` callback.
+This sample demonstrates how to prevent specific rows from being deselected by using the `isRowNonDeselectable` callback.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

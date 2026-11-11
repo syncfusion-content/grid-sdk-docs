@@ -1,5 +1,5 @@
 import Vue from "vue";
-import { GridPlugin ,Page, Selection} from "@syncfusion/ej2-vue-grids";
+import { GridPlugin ,Page} from "@syncfusion/ej2-vue-grids";
 import { ButtonPlugin } from '@syncfusion/ej2-vue-buttons';
 import { data } from './datasource.js';
 
@@ -15,7 +15,7 @@ new Vue({
       <ejs-button @click.native='onClick'>clear Row Selection</ejs-button>
     </div>
     <div style="padding: 20px 0px 0px 0px">
-      <ejs-grid ref="grid" :dataSource='data' :selectedRowIndex=0 allowPaging=true
+      <ejs-grid ref="grid" :dataSource='data' :selectedRowIndex=2 allowPaging=true 
       :selectionSettings='selectionOptions' :pageSettings='pageOptions'>
         <e-columns>
           <e-column field='OrderID' headerText='Order ID' textAlign='Right'
@@ -35,16 +35,7 @@ new Vue({
 data() {
   return {
     data: data,
-    selectionOptions: {
-      mode: "Row",
-      type: "Multiple",
-      isRowNonDeselectable: function (data) {
-        if (data.ShipCountry === "France") {
-          return true;
-        }
-        return false;
-      }
-    },
+    selectionOptions: { mode: "Row", type: "Multiple" },
     pageOptions: { pageSize: 5 },
   };
 },
@@ -54,7 +45,7 @@ methods: {
   },
 },
 provide: {
-  grid: [Page, Selection],
+  grid: [Page],
 }
 
 });

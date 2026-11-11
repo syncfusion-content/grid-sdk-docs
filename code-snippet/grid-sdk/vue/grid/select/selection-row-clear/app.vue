@@ -4,7 +4,7 @@
       <ejs-button @click='onClick'>clear Row Selection</ejs-button>
     </div>
     <div style="padding: 20px 0px 0px 0px">
-      <ejs-grid ref="grid" :dataSource='data' :selectedRowIndex=0 allowPaging=true
+      <ejs-grid ref="grid" :dataSource='data' :selectedRowIndex=2 allowPaging=true 
       :selectionSettings='selectionOptions' :pageSettings='pageOptions'>
         <e-columns>
           <e-column field='OrderID' headerText='Order ID' textAlign='Right'
@@ -21,7 +21,7 @@
   </div>
 </template>
 <script>
-import { GridComponent, ColumnsDirective, ColumnDirective, Page, Selection } from "@syncfusion/ej2-vue-grids";
+import { GridComponent, ColumnsDirective, ColumnDirective, Page } from "@syncfusion/ej2-vue-grids";
 import { ButtonComponent } from "@syncfusion/ej2-vue-buttons";
 import { data } from "./datasource.js";
 export default {
@@ -35,16 +35,7 @@ components: {
   data() {
     return {
       data: data,
-      selectionOptions: {
-        mode: "Row",
-        type: "Multiple",
-        isRowNonDeselectable: function (data) {
-          if (data.ShipCountry === "France") {
-            return true;
-          }
-          return false;
-        }
-      },
+      selectionOptions: { mode: "Row", type: "Multiple" },
       pageOptions: { pageSize: 5 },
     };
   },
@@ -54,7 +45,7 @@ components: {
     },
   },
   provide: {
-    grid: [Page, Selection]
+    grid: [Page]
   },
 };
 </script>

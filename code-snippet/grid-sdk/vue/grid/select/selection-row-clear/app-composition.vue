@@ -4,7 +4,7 @@
       <ejs-button @click='onClick'>clear Row Selection</ejs-button>
     </div>
     <div style="padding: 20px 0px 0px 0px">
-      <ejs-grid ref="grid" :dataSource='data' :selectedRowIndex=0 allowPaging=true
+      <ejs-grid ref="grid" :dataSource='data' :selectedRowIndex=2 allowPaging=true 
       :selectionSettings='selectionOptions' :pageSettings='pageOptions'>
         <e-columns>
           <e-column field='OrderID' headerText='Order ID' textAlign='Right'
@@ -22,26 +22,17 @@
 </template>
 <script setup>
 import { provide } from "vue";
-import { GridComponent as EjsGrid, ColumnDirective as EColumn, ColumnsDirective as EColumns, Page, Selection } from "@syncfusion/ej2-vue-grids";
+import { GridComponent as EjsGrid, ColumnDirective as EColumn, ColumnsDirective as EColumns, Page } from "@syncfusion/ej2-vue-grids";
 import { ButtonComponent as EjsButton } from "@syncfusion/ej2-vue-buttons";
 import { data } from "./datasource.js";
 import { ref } from "vue";
 const grid = ref(null);
-const selectionOptions = {
-  type: "Multiple",
-  mode: "Row",
-  isRowNonDeselectable: function (data) {
-    if (data.ShipCountry === "France") {
-      return true;
-    }
-    return false;
-  }
-};
+const selectionOptions = { type: "Multiple", mode: "Row" };
 const pageOptions = { pageSize: 5 };
 const onClick = function () {
   grid.value.clearRowSelection();
 };
-provide('grid',  [Page, Selection]);
+provide('grid',  [Page]);
 </script>
 <style>
 @import "../node_modules/@syncfusion/ej2-material3-theme/styles/grid/index.css";
