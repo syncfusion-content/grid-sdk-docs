@@ -17,6 +17,7 @@ var grid = new ej.grids.Grid({
         type: 'Multiple'
     },
     columns: [
+        { type: 'checkbox', width: 50 },
         { field: 'OrderID', headerText: 'Order ID', textAlign: 'Right', width: 120 },
         { field: 'CustomerID', headerText: 'Customer ID', width: 150, textAlign: 'Right' },
         { field: 'ShipCountry', headerText: 'Ship Country', width: 150, textAlign: 'Right' },

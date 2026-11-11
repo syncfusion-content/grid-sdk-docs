@@ -3,10 +3,11 @@ import { Component, OnInit, ViewChild } from '@angular/core';
 import { ButtonModule } from '@syncfusion/ej2-angular-buttons';
 import { EditService, FilterService, GridComponent, GridModule, PageService, PageSettingsModel, SelectionSettingsModel, ToolbarService } from '@syncfusion/ej2-angular-grids';
 import { TextBoxModule } from '@syncfusion/ej2-angular-inputs';
+import { CheckBoxSelectionService } from '@syncfusion/ej2-angular-grids';
 
 @Component({
     imports: [ GridModule,  TextBoxModule, ButtonModule ],
-    providers: [EditService, ToolbarService, PageService, FilterService],
+    providers: [EditService, ToolbarService, PageService, FilterService, CheckBoxSelectionService],
     standalone: true,
     selector: 'app-root',
     template: `<div style="padding: 20px 0px 0px 0px">
@@ -15,6 +16,7 @@ import { TextBoxModule } from '@syncfusion/ej2-angular-inputs';
                     <ejs-grid #grid [dataSource]='data' [selectedRowIndex]=0 allowPaging=true
                     [isRowNonDeselectable]='isRowNonDeselectable' [selectionSettings]='selectionOptions' [pageSettings]='pageOptions'>
                         <e-columns>
+                            <e-column type='checkbox' width=50></e-column>
                             <e-column field='OrderID' headerText='Order ID' textAlign='Right'
                             width=120></e-column>
                             <e-column field='CustomerID' headerText='Customer ID' width=120>

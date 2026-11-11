@@ -6,6 +6,7 @@
       <ejs-grid ref="grid" :dataSource='data' :selectedRowIndex=0 allowPaging=true
       :isRowNonDeselectable='isRowNonDeselectable' :selectionSettings='selectionOptions' :pageSettings='pageOptions'>
         <e-columns>
+          <e-column type='checkbox' width=50></e-column>
           <e-column field='OrderID' headerText='Order ID' textAlign='Right'
           width=120></e-column>
           <e-column field='CustomerID' headerText='Customer ID' width=120>
@@ -20,7 +21,7 @@
   </div>
 </template>
 <script>
-import { GridComponent, ColumnsDirective, ColumnDirective, Page, Selection } from "@syncfusion/ej2-vue-grids";
+import { GridComponent, ColumnsDirective, ColumnDirective, Page, Selection, CheckBoxSelection } from "@syncfusion/ej2-vue-grids";
 import { data } from "./datasource.js";
 export default {
 name: "App",
@@ -46,7 +47,7 @@ components: {
     };
   },
   provide: {
-    grid: [Page, Selection]
+    grid: [Page, Selection, CheckBoxSelection]
   },
 };
 </script>

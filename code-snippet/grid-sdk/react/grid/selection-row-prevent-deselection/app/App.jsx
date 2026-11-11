@@ -1,6 +1,7 @@
 import { ButtonComponent } from '@syncfusion/ej2-react-buttons';
 import * as React from 'react';
 import { GridComponent, ColumnsDirective, ColumnDirective, Page, Selection, Inject, PageSettingsModel, SelectionSettingsModel } from '@syncfusion/ej2-react-grids';
+import { CheckBoxSelection } from '@syncfusion/ej2-react-grids';
 import { data } from './datasource';
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
     <div>
       <GridComponent dataSource={data} allowPaging={true} selectedRowIndex={0} isRowNonDeselectable={isRowNonDeselectable} selectionSettings={selectionSettings} pageSettings={pageOptions} ref={g => grid = g}>
         <ColumnsDirective>
+          <ColumnDirective type="checkbox" width="50"></ColumnDirective>
           <ColumnDirective field="OrderID" headerText="Order ID" isPrimaryKey={true} width="120" textAlign="Right"></ColumnDirective>
           <ColumnDirective field="CustomerID" headerText="Customer ID" width="120">
           </ColumnDirective>
@@ -29,7 +31,7 @@ function App() {
           <ColumnDirective field="Freight" headerText="Freight" format='C2' width="100" textAlign="Right">
           </ColumnDirective>
         </ColumnsDirective>
-        <Inject services={[Page, Selection]} />
+        <Inject services={[Page, Selection, CheckBoxSelection]} />
       </GridComponent>
     </div>
   );

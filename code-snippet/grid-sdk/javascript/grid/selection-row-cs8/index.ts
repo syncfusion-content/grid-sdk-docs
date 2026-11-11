@@ -1,8 +1,8 @@
 import { Button } from '@syncfusion/ej2-buttons';
-import { Grid, Page, Selection } from '@syncfusion/ej2-grids';
+import { Grid, Page, Selection, CheckBoxSelection } from '@syncfusion/ej2-grids';
 import { data } from './datasource.ts';
 
-Grid.Inject(Page, Selection);
+Grid.Inject(Page, Selection, CheckBoxSelection);
 
 const isRowNonDeselectable = function (data: Object) {
     if ((<{ ShipCountry?: string }>data).ShipCountry === 'France') {
@@ -22,6 +22,7 @@ let grid: Grid = new Grid({
         type: 'Multiple'
     },
     columns: [
+        { type: 'checkbox', width: 50 },
         { field: 'OrderID', headerText: 'Order ID', textAlign: 'Right', width: 120 },
         { field: 'CustomerID', headerText: 'Customer ID', width: 150, textAlign: 'Right' },
         { field: 'ShipCountry', headerText: 'Ship Country', width: 150, textAlign: 'Right' },

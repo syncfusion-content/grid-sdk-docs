@@ -6,6 +6,7 @@
       <ejs-grid ref="grid" :dataSource='data' :selectedRowIndex=0 allowPaging=true
       :isRowNonDeselectable='isRowNonDeselectable' :selectionSettings='selectionOptions' :pageSettings='pageOptions'>
         <e-columns>
+          <e-column type='checkbox' width=50></e-column>
           <e-column field='OrderID' headerText='Order ID' textAlign='Right'
           width=120></e-column>
           <e-column field='CustomerID' headerText='Customer ID' width=120>
@@ -21,7 +22,7 @@
 </template>
 <script setup>
 import { provide } from "vue";
-import { GridComponent as EjsGrid, ColumnDirective as EColumn, ColumnsDirective as EColumns, Page, Selection } from "@syncfusion/ej2-vue-grids";
+import { GridComponent as EjsGrid, ColumnDirective as EColumn, ColumnsDirective as EColumns, Page, Selection, CheckBoxSelection } from "@syncfusion/ej2-vue-grids";
 import { data } from "./datasource.js";
 import { ref } from "vue";
 const grid = ref(null);
@@ -36,7 +37,7 @@ const isRowNonDeselectable = function (data) {
   }
   return false;
 };
-provide('grid',  [Page, Selection]);
+provide('grid',  [Page, Selection, CheckBoxSelection]);
 </script>
 <style>
 @import "../node_modules/@syncfusion/ej2-material3-theme/styles/grid/index.css";
