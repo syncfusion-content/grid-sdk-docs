@@ -74,6 +74,23 @@ The following example that demonstrates how to enable/disable cache mode in infi
 
 > If [Hierarchy Grid](https://ej2.syncfusion.com/vue/documentation/grid/hierarchy-grid) or [Detail Template](https://ej2.syncfusion.com/vue/documentation/grid/row/detail-template) feature is enabled along with infinite scrolling without defining the height property, it will take a default height of **300px**. Since the [height](https://ej2.syncfusion.com/vue/documentation/api/grid#height) property is mandatory for the hierarchy grid and detail template features, ensure to define it accordingly. 
 
+## Infinite Scrolling with Unknown Count
+
+Infinite scrolling typically relies on a known total record count to determine how many data blocks can be requested. When the server does not return the total record count, the Vue Data Grid can continue requesting data blocks while scrolling until no more records are returned. This behavior is enabled by setting `infiniteScrollSettings.enableCountLessMode` to `true`, and is useful when working with APIs that do not expose a total count.
+
+The following example demonstrates infinite scrolling with an unknown record count using a `DataManager` with `UrlAdaptor` and `enableCountLessMode` enabled:
+
+{% tabs %}
+{% highlight html tabtitle="Composition API (~/src/App.vue)" %}
+{% include code-snippet/grid-sdk/vue/grid/virtualscroll/infinite-scroll-countless/app-composition.vue %}
+{% endhighlight %}
+{% highlight html tabtitle="Options API (~/src/App.vue)" %}
+{% include code-snippet/grid-sdk/vue/grid/virtualscroll/infinite-scroll-countless/app.vue %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/grid/virtualscroll/infinite-scroll-countless" %}
+
 ## Limitations
 
 * Due to the element height limitation in browsers, the maximum number of records loaded by the grid is limited due to the browser capability.
