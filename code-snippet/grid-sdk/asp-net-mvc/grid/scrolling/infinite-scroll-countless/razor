@@ -1,0 +1,7 @@
+@Html.EJS().Grid("grid").DataSource(dataManager => { dataManager.Url("https://services.syncfusion.com/js/production/api/UrlDataSource").Adaptor("UrlAdaptor"); }).EnableInfiniteScrolling().Height("300").Columns(col =>
+{
+    col.Field("OrderID").HeaderText("Order ID").Width("100").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("CustomerID").HeaderText("Customer ID").Width("120").Add();
+    col.Field("ShipCity").HeaderText("Ship City").Width("120").Add();
+    col.Field("ShipCountry").HeaderText("Ship Country").Width("130").Add();
+}).PageSettings(page => { page.PageSize(50); }).InfiniteScrollSettings(scroll => { scroll.EnableCountLessMode(true); }).Render()
