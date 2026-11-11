@@ -1,4 +1,4 @@
-export let data: Object[] = [
+export let data = [
     { Symbol: 'AAPL', Company: 'Apple Inc.', Price: 189.84, Volume: 52310000 },
     { Symbol: 'MSFT', Company: 'Microsoft Corp.', Price: 411.22, Volume: 21870000 },
     { Symbol: 'GOOG', Company: 'Alphabet Inc.', Price: 141.8, Volume: 19450000 },

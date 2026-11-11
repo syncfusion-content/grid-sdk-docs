@@ -1,4 +1,4 @@
-export let data: Object[] = [
+export let data = [
     { Account: 'ACC-101', Desk: 'Equities', Rating: 'AA', Exposure: 1250000, Risk: 'Low' },
     { Account: 'ACC-102', Desk: 'Bonds', Rating: 'A', Exposure: 830000, Risk: 'Low' },
     { Account: 'ACC-103', Desk: 'Derivatives', Rating: 'BBB', Exposure: 2140000, Risk: 'High' },
