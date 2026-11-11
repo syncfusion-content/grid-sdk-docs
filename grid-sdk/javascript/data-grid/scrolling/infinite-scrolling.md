@@ -3,8 +3,7 @@ layout: post
 title: Infinite scrolling in JavaScript Grid control | Syncfusion
 description: Learn here all about Infinite scrolling in Syncfusion JavaScript Grid control of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
-control: Infinite scrolling 
-publishingplatform: grid-sdk
+control: Infinite scrolling
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
@@ -88,7 +87,7 @@ The following an example of how you can use the `initialBlocks` property to set 
 
 In Grid cache mode, cached data blocks are reused when revisiting them, reducing the need for frequent data requests while navigating the same block. This mode also manages DOM row elements based on the [infiniteScrollSettings->maxBlocks](../../api/grid/infiniteScrollSettings#maxblocks) count value. If this limit is exceeded, it removes a block of row elements to create new rows.
 
-To enable cache mode, you need to define [enableCache](../../api/grid/infiniteScrollSettings#enablecache) property of [infiniteScrollSettings](../../api/grid/infinitescrollsettings/) as **true**.
+To enable cache mode, you need to define [enableCache](../../api/grid/infiniteScrollSettings#enablecache) property of [infiniteScrollSettings](../../api/grid/infinitescrollsettings) as **true**.
 
 To enable maximum blocks, you need to define `maxBlocks` count of [infiniteScrollSettings](../../api/grid/infiniteScrollSettings), By default this property value is 3.
 
