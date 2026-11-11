@@ -275,20 +275,15 @@ To define non-deselectable rows, use the `isRowNonDeselectable` callback propert
 Return `true` to prevent the row from being deselected.
 Return `false` to allow normal deselection behavior.
 
-```cshtml
-<ejs-grid id="Grid" dataSource="@ViewBag.DataSource" height="315">
-    <e-grid-selectionsettings mode="Row" type="Multiple" isRowNonDeselectable="isRowNonDeselectable"></e-grid-selectionsettings>
-</ejs-grid>
+## Sample
 
-<script>
-    function isRowNonDeselectable(data) {
-        if (data.Category === 'Fruits') {
-            return true;
-        }
-        return false;
-    }
-</script>
-```
+This sample demonstrates how to prevent specific rows from being deselected by using the `isRowNonDeselectable` callback.
+
+### Preview
+
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/asp-net-core/grid/selection/row-clear-selection" %}
+
+The preview includes an option to open the sample in StackBlitz.
 
 ## Row selection events 
 

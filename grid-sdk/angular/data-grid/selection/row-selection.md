@@ -466,18 +466,15 @@ To define non-deselectable rows, use the `isRowNonDeselectable` callback propert
 Return `true` to prevent the row from being deselected.
 Return `false` to allow normal deselection behavior.
 
-```ts
-public selectionOptions: SelectionSettingsModel = {
-  mode: 'Row',
-  type: 'Multiple',
-  isRowNonDeselectable: (data: Object) => {
-    if ((data as { Category?: string }).Category === 'Fruits') {
-      return true;
-    }
-    return false;
-  },
-};
-```
+## Sample
+
+This sample demonstrates how to prevent specific rows from being deselected by using the `isRowNonDeselectable` callback.
+
+### Preview
+
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/selection-row-cs4" %}
+
+The preview includes an option to open the sample in StackBlitz.
 
 ## Row selection events
 
