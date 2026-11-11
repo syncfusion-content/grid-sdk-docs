@@ -71,6 +71,18 @@ The following example that demonstrates how to enable/disable cache mode in infi
 
 > If [Hierarchy Grid](https://help.syncfusion.com/grid-sdk/asp-net-mvc/data-grid/hierarchy-grid) or [Detail Template](https://help.syncfusion.com/grid-sdk/asp-net-mvc/data-grid/row/detail-template) feature is enabled along with infinite scrolling without defining the height property, it will take a default height of **300px**. Since the [height](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_Height) property is mandatory for the hierarchy grid and detail template features, ensure to define it accordingly.
 
+## Infinite Scrolling with Unknown Count
+
+Infinite scrolling typically relies on a known total record count to determine how many data blocks can be requested. When the server does not return the total record count, the ASP.NET MVC Data Grid can continue requesting data blocks while scrolling until no more records are returned. This behavior is enabled by setting `InfiniteScrollSettings.EnableCountLessMode` to `true`, and is useful when working with APIs that do not expose a total count.
+
+The following example demonstrates infinite scrolling with an unknown record count using a `DataManager` with `UrlAdaptor` and `EnableCountLessMode` enabled:
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/grid-sdk/asp-net-mvc/grid/scrolling/infinite-scroll-countless/razor %}
+{% endhighlight %}
+{% endtabs %}
+
 ## Limitations
 
 * Due to the element height limitation in browsers, the maximum number of records loaded by the grid is limited due to the browser capability.
