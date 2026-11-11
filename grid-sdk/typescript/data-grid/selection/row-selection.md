@@ -475,6 +475,35 @@ The following example demonstrates how to clear row selection by calling the [cl
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/clear-selection-cs1" %}
 {% endif %}
 
+## Prevent row deselection
+
+The Grid provides support for preventing specific rows from being deselected based on custom criteria. This feature helps maintain the selection state of important records and prevents users from accidentally removing them from the current selection.
+
+To define non-deselectable rows, use the `isRowNonDeselectable` callback property. The callback receives the row data and returns a boolean value indicating whether the row should be prevented from being deselected.
+
+Return `true` to prevent the row from being deselected.
+Return `false` to allow normal deselection behavior.
+
+## Sample
+
+This sample demonstrates how to prevent specific rows from being deselected by using the `isRowNonDeselectable` callback.
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/grid-sdk/typescript/grid/selection-row-cs8/index.ts %}
+{% endhighlight %}
+
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/grid-sdk/typescript/grid/selection-row-cs8/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+### Preview
+
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/selection-row-cs8" %}
+
+The preview includes an option to open the sample in StackBlitz.
+
 ## Row selection events 
 
 The Grid provides several events related to row selection that allow you to respond to and customize the behavior of row selection. These events give you control over various aspects of row selection. Here are the available row selection events:

@@ -1,0 +1,39 @@
+import { ButtonComponent } from '@syncfusion/ej2-react-buttons';
+import * as React from 'react';
+import { GridComponent, ColumnsDirective, ColumnDirective, Page, Selection, Inject, PageSettingsModel, SelectionSettingsModel } from '@syncfusion/ej2-react-grids';
+import { CheckBoxSelection } from '@syncfusion/ej2-react-grids';
+import { data } from './datasource';
+
+function App() {
+  let grid;
+  const selectionSettings = {
+    type: 'Multiple'
+  };
+  const isRowNonDeselectable = function (data) {
+    if (data.ShipCountry === 'France') {
+      return true;
+    }
+    return false;
+  };
+  const pageOptions = {
+    pageSize: 5
+  };
+  return (
+    <div>
+      <GridComponent dataSource={data} allowPaging={true} selectedRowIndex={0} isRowNonDeselectable={isRowNonDeselectable} selectionSettings={selectionSettings} pageSettings={pageOptions} ref={g => grid = g}>
+        <ColumnsDirective>
+          <ColumnDirective type="checkbox" width="50"></ColumnDirective>
+          <ColumnDirective field="OrderID" headerText="Order ID" isPrimaryKey={true} width="120" textAlign="Right"></ColumnDirective>
+          <ColumnDirective field="CustomerID" headerText="Customer ID" width="120">
+          </ColumnDirective>
+          <ColumnDirective field="ShipCountry" headerText="Ship Country" width="120">
+          </ColumnDirective>
+          <ColumnDirective field="Freight" headerText="Freight" format='C2' width="100" textAlign="Right">
+          </ColumnDirective>
+        </ColumnsDirective>
+        <Inject services={[Page, Selection, CheckBoxSelection]} />
+      </GridComponent>
+    </div>
+  );
+}
+export default App;
