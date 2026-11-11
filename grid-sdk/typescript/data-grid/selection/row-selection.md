@@ -477,15 +477,16 @@ The following example demonstrates how to clear row selection by calling the [cl
 
 ## Deselect rows programmatically
 
-Deselecting rows programmatically in the Grid control allows you to remove specific rows from the current selection without requiring user interaction. This feature is useful when implementing custom selection logic, clearing selections based on business rules, or responding to application events.
+The Grid provides methods to programmatically deselect rows without requiring user interaction. This is useful when implementing custom selection logic, clearing selections based on business rules, or responding to application events.
 
-> The deselection methods work only when row selection is enabled with [selectionSettings.mode](../../api/grid/selectionSettings#mode) property set to **Row** or **Both**. Both **Single** and **Multiple** selection types are supported.
+The Grid offers two methods for deselecting rows:
 
-### Deselect a single row
+- [deselectRow](../../api/grid/selection#deselectrow): Deselects a single row by passing its row index.
+- [deselectRows](../../api/grid/selection#deselectrows): Deselects multiple rows by passing an array of row indexes.
 
-To deselect a single row, use the [deselectRow](../../api/grid/selection#deselectrow) method and pass the row index as an argument. This method triggers the [rowDeselecting](../../api/grid#rowdeselecting) event before deselection and the [rowDeselected](../../api/grid#rowdeselected) event after deselection, allowing you to intercept or respond to the deselection process.
+> The deselection methods work only when row selection is enabled with [selectionSettings.mode](../../api/grid/selectionSettings#mode) property set to **Row** or **Both**. Both **Single** and **Multiple** selection types are supported. The methods use **view row indexes** (not record keys), and deselection is ignored during editing mode.
 
-The following example demonstrates deselecting a single row by clicking a button:
+The following example demonstrates deselecting rows programmatically:
 
  {% if page.publishingplatform == "typescript" %}
 
@@ -497,7 +498,7 @@ The following example demonstrates deselecting a single row by clicking a button
 {% include code-snippet/grid-sdk/typescript/grid/deselect-row-single/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/deselect-row-single" %}
 
 {% elsif page.publishingplatform == "javascript" %}
@@ -513,74 +514,6 @@ The following example demonstrates deselecting a single row by clicking a button
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/deselect-row-single" %}
 {% endif %}
-
-### Deselect multiple rows
-
-To deselect multiple rows at once, use the [deselectRows](../../api/grid/selection#deselectrows) method and pass an array of row indexes. For each deselected row, the [rowDeselecting](../../api/grid#rowdeselecting) and [rowDeselected](../../api/grid#rowdeselected) events are triggered in sequence.
-
-The following example demonstrates deselecting multiple rows by clicking a button:
-
- {% if page.publishingplatform == "typescript" %}
-
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/typescript/grid/deselect-row-multiple/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/deselect-row-multiple/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/deselect-row-multiple" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/deselect-row-multiple/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/deselect-row-multiple/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/deselect-row-multiple" %}
-{% endif %}
-
-### Cancel deselection using events
-
-You can prevent deselection of specific rows by canceling the [rowDeselecting](../../api/grid#rowdeselecting) event. When you set the cancel property to `true`, the deselection operation is canceled and the [rowDeselected](../../api/grid#rowdeselected) event will not fire.
-
-The following example demonstrates preventing deselection of rows based on specific criteria:
-
- {% if page.publishingplatform == "typescript" %}
-
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/typescript/grid/deselect-row-event/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/deselect-row-event/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/deselect-row-event" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/deselect-row-event/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/deselect-row-event/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/deselect-row-event" %}
-{% endif %}
-
-> The deselection methods use **view row indexes** (not record keys), so ensure the row is in the current view before deselection. When using with [persistSelection](../../api/grid/selectionSettings#persistselection), the deselection state is maintained across pages. The methods do not fire any events if the row is not currently selected or if an invalid index is provided.
 
 ## Row selection events 
 

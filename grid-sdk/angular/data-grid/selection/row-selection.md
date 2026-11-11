@@ -459,15 +459,16 @@ The following example demonstrates clearing row selection by calling the `clearR
 
 ## Deselect rows programmatically
 
-Deselecting rows programmatically in the Grid component allows you to remove specific rows from the current selection without requiring user interaction. This feature is useful when implementing custom selection logic, clearing selections based on business rules, or responding to application events.
+The Grid provides methods to programmatically deselect rows without requiring user interaction. This is useful when implementing custom selection logic, clearing selections based on business rules, or responding to application events.
 
-> The deselection methods work only when row selection is enabled with [selectionSettings.mode](https://ej2.syncfusion.com/angular/documentation/api/grid/selectionSettings#mode) set to `Row` or `Both`. Both `Single` and `Multiple` selection types are supported.
+The Grid offers two methods for deselecting rows:
 
-### Deselect a single row
+- [deselectRow](https://ej2.syncfusion.com/angular/documentation/api/grid/selection#deselectrow): Deselects a single row by passing its row index.
+- [deselectRows](https://ej2.syncfusion.com/angular/documentation/api/grid/selection#deselectrows): Deselects multiple rows by passing an array of row indexes.
 
-To deselect a single row, use the [deselectRow](https://ej2.syncfusion.com/angular/documentation/api/grid/selection#deselectrow) method and pass the row index as an argument. This method triggers the [rowDeselecting](https://ej2.syncfusion.com/angular/documentation/api/grid#rowdeselecting) event before deselection and the [rowDeselected](https://ej2.syncfusion.com/angular/documentation/api/grid#rowdeselected) event after deselection, allowing you to intercept or respond to the deselection process.
+> The deselection methods work only when row selection is enabled with [selectionSettings.mode](https://ej2.syncfusion.com/angular/documentation/api/grid/selectionSettings#mode) set to `Row` or `Both`. Both `Single` and `Multiple` selection types are supported. The methods use **view row indexes** (not record keys), and deselection is ignored during editing mode.
 
-The following example demonstrates deselecting a single row by clicking a button:
+The following example demonstrates deselecting rows programmatically:
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -480,44 +481,6 @@ The following example demonstrates deselecting a single row by clicking a button
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/deselect-row-single" %}
-
-### Deselect multiple rows
-
-To deselect multiple rows at once, use the [deselectRows](https://ej2.syncfusion.com/angular/documentation/api/grid/selection#deselectrows) method and pass an array of row indexes. For each deselected row, the [rowDeselecting](https://ej2.syncfusion.com/angular/documentation/api/grid#rowdeselecting) and [rowDeselected](https://ej2.syncfusion.com/angular/documentation/api/grid#rowdeselected) events are triggered in sequence.
-
-The following example demonstrates deselecting multiple rows by clicking a button:
-
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid-sdk/angular/grid/deselect-row-multiple/src/app.component.ts %}
-{% endhighlight %}
-
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid-sdk/angular/grid/deselect-row-multiple/src/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/deselect-row-multiple" %}
-
-### Cancel deselection using events
-
-You can prevent deselection of specific rows by canceling the [rowDeselecting](https://ej2.syncfusion.com/angular/documentation/api/grid#rowdeselecting) event. When you set `args.cancel` to `true`, the deselection operation is canceled and the [rowDeselected](https://ej2.syncfusion.com/angular/documentation/api/grid#rowdeselected) event will not fire.
-
-The following example demonstrates preventing deselection of rows based on specific criteria:
-
-{% tabs %}
-{% highlight ts tabtitle="app.component.ts" %}
-{% include code-snippet/grid-sdk/angular/grid/deselect-row-event/src/app.component.ts %}
-{% endhighlight %}
-
-{% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid-sdk/angular/grid/deselect-row-event/src/main.ts %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/deselect-row-event" %}
-
-> The deselection methods use **view row indexes** (not record keys), so ensure the row is in the current view before deselection. When using with [persistSelection](https://ej2.syncfusion.com/angular/documentation/api/grid/selectionSettings#persistselection), the deselection state is maintained across pages. The methods do not fire any events if the row is not currently selected or if an invalid index is provided.
 
 ## Row selection events
 

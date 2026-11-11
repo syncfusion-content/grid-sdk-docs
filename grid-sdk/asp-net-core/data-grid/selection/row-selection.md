@@ -268,15 +268,16 @@ The following example demonstrates how to clear row selection by calling the `cl
 
 ## Deselect rows programmatically
 
-Deselecting rows programmatically in the Grid component allows you to remove specific rows from the current selection without requiring user interaction. This feature is useful when implementing custom selection logic, clearing selections based on business rules, or responding to application events.
+The Grid provides methods to programmatically deselect rows without requiring user interaction. This is useful when implementing custom selection logic, clearing selections based on business rules, or responding to application events.
 
-> The deselection methods work only when row selection is enabled with [selectionSettings.mode](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridSelectionSettings.html#Syncfusion_EJ2_Grids_GridSelectionSettings_Mode) property set to **Row** or **Both**. Both **Single** and **Multiple** selection types are supported.
+The Grid offers two methods for deselecting rows:
 
-### Deselect a single row
+- `deselectRow`: Deselects a single row by passing its row index.
+- `deselectRows`: Deselects multiple rows by passing an array of row indexes.
 
-To deselect a single row, use the `deselectRow` method and pass the row index as an argument. This method triggers the [rowDeselecting](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_RowDeselecting) event before deselection and the [rowDeselected](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_RowDeselected) event after deselection, allowing you to intercept or respond to the deselection process.
+> The deselection methods work only when row selection is enabled with [selectionSettings.mode](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridSelectionSettings.html#Syncfusion_EJ2_Grids_GridSelectionSettings_Mode) property set to **Row** or **Both**. Both **Single** and **Multiple** selection types are supported. The methods use **view row indexes** (not record keys), and deselection is ignored during editing mode.
 
-The following example demonstrates deselecting a single row by clicking a button:
+The following example demonstrates deselecting rows programmatically:
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -287,43 +288,7 @@ The following example demonstrates deselecting a single row by clicking a button
 {% endhighlight %}
 {% endtabs %}
 
-![Deselect a single row](../images/selection/row-deselect-single.gif)
-
-### Deselect multiple rows
-
-To deselect multiple rows at once, use the `deselectRows` method and pass an array of row indexes. For each deselected row, the [rowDeselecting](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_RowDeselecting) and [rowDeselected](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_RowDeselected) events are triggered in sequence.
-
-The following example demonstrates deselecting multiple rows by clicking a button:
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/grid/deselect-row-multiple/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="row-deselection.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/grid/deselect-row-multiple/row-deselection.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-![Deselect multiple rows](../images/selection/row-deselect-multiple.gif)
-
-### Cancel deselection using events
-
-You can prevent deselection of specific rows by canceling the [rowDeselecting](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_RowDeselecting) event. When you set the cancel property to `true`, the deselection operation is canceled and the [rowDeselected](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_RowDeselected) event will not fire.
-
-The following example demonstrates preventing deselection of rows based on specific criteria:
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/grid/deselect-row-event/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="row-deselection.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/grid/deselect-row-event/row-deselection.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-![Cancel deselection using events](../images/selection/row-deselect-event.gif)
-
-> The deselection methods use **view row indexes** (not record keys), so ensure the row is in the current view before deselection. When using with [persistSelection](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridSelectionSettings.html#Syncfusion_EJ2_Grids_GridSelectionSettings_PersistSelection), the deselection state is maintained across pages. The methods do not fire any events if the row is not currently selected or if an invalid index is provided.
+![Deselect rows programmatically](../images/selection/row-deselect-single.gif)
 
 ## Row selection events 
 
