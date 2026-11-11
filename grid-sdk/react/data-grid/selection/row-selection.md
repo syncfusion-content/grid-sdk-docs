@@ -766,7 +766,7 @@ This sample demonstrates how to prevent rows with Ship Country equal to France f
 
 ### Preview
 
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/react/data-grid/selection-cs11" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/grid/selection-row-cs8" %}
 
 The preview includes an option to open the sample in StackBlitz.
 
