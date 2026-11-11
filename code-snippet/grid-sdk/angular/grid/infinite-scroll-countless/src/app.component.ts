@@ -9,10 +9,11 @@ import { DataManager, UrlAdaptor } from '@syncfusion/ej2-data';
     selector: 'app-root',
     template: `<ejs-grid [dataSource]='data' height=300 [enableInfiniteScrolling]='true' [pageSettings]='pageSettings' [infiniteScrollSettings]='infiniteScrollSettings'>
                 <e-columns>
-                    <e-column field='OrderID' headerText='Order ID' textAlign='Right' width=100></e-column>
-                    <e-column field='CustomerID' headerText='Customer ID' width=120></e-column>
-                    <e-column field='ShipCity' headerText='Ship City' width=120></e-column>
-                    <e-column field='ShipCountry' headerText='Ship Country' width=130></e-column>
+                    <e-column field='EmployeeID' headerText='Employee ID' textAlign='Right' width=100></e-column>
+                    <e-column field='Employees' headerText='Employee Name' width=120></e-column>
+                    <e-column field='Designation' headerText='Designation' width=100></e-column>
+                    <e-column field='Location' headerText='Location' width=100></e-column>
+                    <e-column field='CurrentSalary' headerText='Salary' format='C2' textAlign='Right' width=100></e-column>
                 </e-columns>
                 </ejs-grid>`
 })

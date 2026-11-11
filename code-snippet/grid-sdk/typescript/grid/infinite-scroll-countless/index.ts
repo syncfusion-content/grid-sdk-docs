@@ -14,10 +14,11 @@ let grid: Grid = new Grid({
     pageSettings: { pageSize: 50 },
     infiniteScrollSettings: { enableCountLessMode: true },
     columns: [
-        { field: 'OrderID', headerText: 'Order ID', textAlign: 'Right', width: 100 },
-        { field: 'CustomerID', headerText: 'Customer ID', width: 120 },
-        { field: 'ShipCity', headerText: 'Ship City', width: 120 },
-        { field: 'ShipCountry', headerText: 'Ship Country', width: 130 }
+        { field: 'EmployeeID', headerText: 'Employee ID', textAlign: 'Right', width: 100 },
+        { field: 'Employees', headerText: 'Employee Name', width: 120 },
+        { field: 'Designation', headerText: 'Designation', width: 100 },
+        { field: 'Location', headerText: 'Location', width: 100 },
+        { field: 'CurrentSalary', headerText: 'Salary', format: 'C2', textAlign: 'Right', width: 100 }
     ]
 });
 grid.appendTo('#Grid');
