@@ -1,7 +1,6 @@
 ej.grids.Grid.Inject(ej.grids.Toolbar);
 var searchSettings = {
-  mode: 'Default',
-  immediateModeDelay: 1500
+  mode: 'Default'
 };
 
 function searchModeChange(args) {

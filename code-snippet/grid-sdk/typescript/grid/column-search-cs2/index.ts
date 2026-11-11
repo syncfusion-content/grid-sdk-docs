@@ -5,8 +5,7 @@ import { data } from './datasource.ts';
 Grid.Inject(Search, Toolbar);
 
 let searchSettings = {
-  mode: 'Default',
-  immediateModeDelay: 1500
+  mode: 'Default'
 };
 
 function searchModeChange(args: ChangeEventArgs) {
