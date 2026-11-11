@@ -191,10 +191,17 @@ const reducer = (state = initialState, action) => {
             if (initialSorting.columns.length) {
                 applySorting(query, initialSorting.columns);
             }
+            // initial grouping
+            if (initialGrouping.columns.length) {
+                applyGrouping(query, initialGrouping.columns);
+            }
+            if (initialGrouping.enableLazyLoading) {
+                query.lazyLoad.push({ key: 'isLazyLoad', value: true })
+            }
             // initial paging
             if (initialPaging.allowPaging) {
                 const pageSkip = 1;
-                const pageTake = 36;
+                const pageTake = 12;
                 query.page(pageSkip, pageTake);
             }
             // To get the count of the data

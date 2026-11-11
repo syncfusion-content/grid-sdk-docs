@@ -259,6 +259,32 @@ The following screenshot illustrates column resizing on a touch device:
 > * Touch resizing works identically across iOS, Android, and Windows touch devices.
 > * In RTL mode, the floating handler appears on the left edge of columns.
 
+## Resize columns using keyboard
+
+The Data Grid supports keyboard-based column resizing to improve accessibility and keyboard navigation. The width adjustment applied for each key press is controlled by the `resizeSettings.resizeStep` property.
+
+When a resize handle receives focus:
+
+- Press the <kbd>Alt + →</kbd> key to decrease the column width.
+- Press the <kbd>Alt + ←</kbd> key to increase the column width.
+
+{% tabs %}
+{% highlight js tabtitle="App.jsx" %}
+{% include code-snippet/grid-sdk/react/grid/resize-cs4/app/App.jsx %}
+{% endhighlight %}
+{% highlight ts tabtitle="App.tsx" %}
+{% include code-snippet/grid-sdk/react/grid/resize-cs4/app/App.tsx %}
+{% endhighlight %}
+{% highlight js tabtitle="datasource.jsx" %}
+{% include code-snippet/grid-sdk/react/grid/resize-cs4/app/datasource.jsx %}
+{% endhighlight %}
+{% highlight ts tabtitle="datasource.tsx" %}
+{% include code-snippet/grid-sdk/react/grid/resize-cs4/app/datasource.tsx %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/grid/resize-cs4" %}
+
 ## Resizing columns programmatically
 
 The Grid supports programmatic column resizing through external controls or application logic. This enables creating custom interfaces for column width management, implementing preset column layouts, or responding to application state changes.

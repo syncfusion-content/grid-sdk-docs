@@ -1,23 +1,25 @@
 import { DataSourceChangedEventArgs, DataStateChangeEventArgs, Grid ,SortSettingsModel,FilterSettingsModel} from '@syncfusion/ej2-grids';
 import { getOrders, addRecord, updateRecord, deleteRecord } from '../orderService';
-import { InfiniteScroll, Filter, Sort, Toolbar, Edit, Search } from '@syncfusion/ej2-grids';
+import { Page, Filter, Sort, Group, LazyLoadGroup, Toolbar, Edit, Search } from '@syncfusion/ej2-grids';
 
-Grid.Inject(InfiniteScroll, Filter, Sort, Toolbar, Edit, Search);
+Grid.Inject(Page, Filter, Sort, Group, LazyLoadGroup, Toolbar, Edit, Search);
 
 interface CustomDataStateChangeEventArgs extends DataStateChangeEventArgs {
   sort?: SortSettingsModel;
   filter?: FilterSettingsModel;
 }
+const groupSettings: object= { enableLazyLoading: true, columns: ['ProductName'], showGroupedColumn: true, };
 const filterSettings: object = { columns: [{ field: 'CustomerName', matchCase: false, operator: 'startswith', predicate: 'and', value: 'Maria' }] };
 const sortSettings: object = { columns: [{ field: 'ProductID', direction: 'Descending' }] }
-const state:CustomDataStateChangeEventArgs= { skip: 0, take: 36, sort: sortSettings,filter: filterSettings};
+const state:CustomDataStateChangeEventArgs= { skip: 0, take: 12, group: groupSettings as string[],sort: sortSettings,filter: filterSettings};
 
 let grid: Grid = new Grid({
-    enableInfiniteScrolling: true,
-    infiniteScrollSettings: { enableCache: true },
+    allowPaging: true,
     allowFiltering:true,
     allowSorting:true,
+    allowGrouping:true,
     created:created,
+    groupSettings:groupSettings,
     sortSettings:sortSettings,
     filterSettings:filterSettings,
     dataStateChange: dataStateChange,

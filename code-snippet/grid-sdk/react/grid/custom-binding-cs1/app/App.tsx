@@ -1,6 +1,6 @@
 import React, { useEffect} from 'react';
 import { useDispatch, useSelector } from "react-redux";
-import { ColumnDirective, ColumnsDirective, Filter, GridComponent, DataStateChangeEventArgs, Inject, InfiniteScroll, Sort, Edit, Toolbar, InfiniteScrollSettingsModel, SortSettingsModel, FilterSettingsModel, DataSourceChangedEventArgs, ToolbarItems, EditSettingsModel } from '@syncfusion/ej2-react-grids'
+import { ColumnDirective, ColumnsDirective, Filter, GridComponent, DataStateChangeEventArgs, LazyLoadGroup, Inject, Page, Sort, Edit, Toolbar, GroupSettingsModel, Group, SortSettingsModel, FilterSettingsModel, DataSourceChangedEventArgs, ToolbarItems, EditSettingsModel } from '@syncfusion/ej2-react-grids'
 import { addRow, deleteRow, fetchData, updateRow } from './reducer/action';
 
 export interface gridState{
@@ -13,7 +13,7 @@ const App = () => {
   var gridInstance: GridComponent|null;
   const toolbar: ToolbarItems[] = ['Add', 'Edit', 'Delete',  'Update', 'Cancel', 'Search'];
   const editSettings: EditSettingsModel = {allowAdding: true, allowDeleting: true, allowEditing: true};
-  const infiniteScrollSettings: InfiniteScrollSettingsModel = {enableCache: true};
+  const groupSettings: GroupSettingsModel={enableLazyLoading: true, columns:['ProductName'], showGroupedColumn: true};
   const filterSettings:FilterSettingsModel = {columns: [{field: 'CustomerName', matchCase: false, operator: 'startswith', predicate: 'and', value: 'Maria'}]}
   const sortSettings:SortSettingsModel = {columns: [{ field: 'ProductID', direction: 'Descending' }]}
   const state = useSelector((state: gridState) => state);
@@ -46,9 +46,10 @@ const App = () => {
   
   return (
       <GridComponent ref={grid => gridInstance = grid} allowSorting={true} allowFiltering={true} 
-      enableInfiniteScrolling={true}
-      infiniteScrollSettings={infiniteScrollSettings}
+      allowPaging={true} 
+      allowGrouping={true}
       filterSettings={filterSettings}
+      groupSettings={groupSettings}
       sortSettings={sortSettings}
       toolbar={toolbar}
       editSettings={editSettings}
@@ -61,7 +62,7 @@ const App = () => {
         <ColumnDirective field='ProductID' headerText='Product ID' textAlign="Right" width='120' />
         <ColumnDirective field='CustomerName' headerText='Customer Name' width='160' />
       </ColumnsDirective>
-      <Inject services={[InfiniteScroll, Sort, Filter, Edit, Toolbar]} />
+      <Inject services={[Page, Sort, Filter, Group, LazyLoadGroup, Edit, Toolbar]} />
       </GridComponent>
   )
 }
