@@ -3,8 +3,7 @@ layout: post
 title: Infinite scrolling in JavaScript Grid control | Syncfusion
 description: Learn here all about Infinite scrolling in Syncfusion JavaScript Grid control of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
-control: Infinite scrolling 
-publishingplatform: grid-sdk
+control: Infinite scrolling
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
@@ -88,7 +87,7 @@ The following an example of how you can use the `initialBlocks` property to set 
 
 In Grid cache mode, cached data blocks are reused when revisiting them, reducing the need for frequent data requests while navigating the same block. This mode also manages DOM row elements based on the [infiniteScrollSettings->maxBlocks](../../api/grid/infiniteScrollSettings#maxblocks) count value. If this limit is exceeded, it removes a block of row elements to create new rows.
 
-To enable cache mode, you need to define [enableCache](../../api/grid/infiniteScrollSettings#enablecache) property of [infiniteScrollSettings](../../api/grid/infinitescrollsettings/) as **true**.
+To enable cache mode, you need to define [enableCache](../../api/grid/infiniteScrollSettings#enablecache) property of [infiniteScrollSettings](../../api/grid/infinitescrollsettings) as **true**.
 
 To enable maximum blocks, you need to define `maxBlocks` count of [infiniteScrollSettings](../../api/grid/infiniteScrollSettings), By default this property value is 3.
 
@@ -130,6 +129,25 @@ The following example that demonstrates how to enable/disable cache mode in infi
 {% endif %}
 
 > If [Hierarchy Grid](../hierarchy-grid) or [Detail Template](../row/detail-template) feature is enabled along with infinite scrolling without defining the height property, it will take a default height of **300px**. Since the [height](../../api/grid#height) property is mandatory for the hierarchy grid and detail template features, ensure to define it accordingly. 
+
+## Infinite scrolling with unknown record count
+
+Infinite scrolling requires a total record count to determine the number of data blocks to request. When the server does not return the total record count, the grid continues requesting data blocks as the user scrolls until no more records are available.
+
+To enable this behavior, set the `infiniteScrollSettings.enableCountLessMode` property to `true`. This is useful when working with data services that do not provide a total record count.
+
+The following example demonstrates infinite scrolling with an unknown record count using a `DataManager` with `UrlAdaptor` and the `enableCountLessMode` property:
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/grid-sdk/javascript/grid/infinite-scroll-countless/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/grid-sdk/javascript/grid/infinite-scroll-countless/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/infinite-scroll-countless" %}
 
 ## Limitations
 
