@@ -4,7 +4,6 @@ title: Column Resizing in Syncfusion ASP.NET MVC Grid Component
 description: Learn here all about Column Resizing in Syncfusion ASP.NET MVC Grid component of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Column Resizing
-publishingplatform: grid-sdk
 documentation: ug
 ---
 
@@ -126,6 +125,26 @@ To resize columns on a touch device:
 The following screenshot represents the column resizing on the touch device.
 
 ![Touch Interaction](../images/column-resizing.jpg)
+
+## Resize columns using keyboard
+
+The Data Grid supports keyboard-based column resizing to improve accessibility and keyboard navigation. The width adjustment applied for each key press is controlled by the `ResizeSettings.ResizeStep` property.
+
+When a resize handle receives focus:
+
+- Press the <kbd>Alt + →</kbd> key to decrease the column width.
+- Press the <kbd>Alt + ←</kbd> key to increase the column width.
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/grid-sdk/asp-net-mvc/grid/columns/resize-keyboard/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Resize.cs" %}
+{% include code-snippet/grid-sdk/asp-net-mvc/grid/columns/resize-keyboard/resize.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+![Keyboard resizing](../images/column-resize/keyboard-resizing.gif)
 
 ## Resizing column externally
 

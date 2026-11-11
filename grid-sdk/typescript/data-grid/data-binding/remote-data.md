@@ -1516,6 +1516,33 @@ The following example demonstrates how to send additional parameters to the serv
 
 ![AdditionalParameters](../images/databining/remote-additional-params.png)
 
+## Custom binding with caching
+
+The TypeScript Data Grid provides the [enableCache](https://ej2.syncfusion.com/javascript/documentation/api/grid/infiniteScrollSettings#enablecache) option for custom data binding. When enabled, the data retrieved from the server is stored on the client and reused for subsequent data operations whenever possible. This reduces redundant data requests, improves responsiveness and enhances performance with large datasets.
+
+The custom binding cache works with infinite scrolling, minimizing unnecessary server requests while keeping navigation smooth. The `dataStateChange` event is triggered only when the requested data is not already available in the cache.
+
+{% tabs %}
+{% highlight ts tabtitle="app.ts" %}
+{% include code-snippet/grid-sdk/typescript/grid/remote-custom-binding-cache/app.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/grid-sdk/typescript/grid/remote-custom-binding-cache/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/grid-sdk/typescript/grid/remote-custom-binding-cache/styles.css %}
+{% endhighlight %}
+{% highlight ts tabtitle="server.ts" %}
+{% include code-snippet/grid-sdk/typescript/grid/remote-custom-binding-cache/server.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="orderService.ts" %}
+{% include code-snippet/grid-sdk/typescript/grid/remote-custom-binding-cache/orderService.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/grid-sdk/typescript/grid/remote-custom-binding-cache/datasource.ts %}
+{% endhighlight %}
+{% endtabs %}
+
 ## Offline mode
 
 On remote data binding, all grid actions such as paging, sorting, editing, grouping, filtering, etc, will be processed on server-side. To avoid post back for every action, set the grid to load all data on initialization and make the actions process in client-side. To enable this behavior, use the `offline` property of [DataManager](../../data).
