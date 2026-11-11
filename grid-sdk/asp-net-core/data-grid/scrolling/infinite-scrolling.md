@@ -71,11 +71,13 @@ The following example that demonstrates how to enable/disable cache mode in infi
 
 > If [Hierarchy Grid](https://help.syncfusion.com/grid-sdk/asp-net-core/data-grid/hierarchy-grid) or [Detail Template](https://help.syncfusion.com/grid-sdk/asp-net-core/data-grid/row/detail-template) feature is enabled along with infinite scrolling without defining the height property, it will take a default height of **300px**. Since the [height](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_Height) property is mandatory for the hierarchy grid and detail template features, ensure to define it accordingly.
 
-## Infinite Scrolling with Unknown Count
+## Infinite scrolling with unknown record count
 
-Infinite scrolling typically relies on a known total record count to determine how many data blocks can be requested. When the server does not return the total record count, the ASP.NET Core Data Grid can continue requesting data blocks while scrolling until no more records are returned. This behavior is enabled by setting `InfiniteScrollSettings.EnableCountLessMode` to `true`, and is useful when working with APIs that do not expose a total count.
+Infinite scrolling requires a total record count to determine the number of data blocks to request. When the server does not return the total record count, the grid continues requesting data blocks as the user scrolls until no more records are available.
 
-The following example demonstrates infinite scrolling with an unknown record count using a `DataManager` with `UrlAdaptor` and `EnableCountLessMode` enabled:
+To enable this behavior, set the `infiniteScrollSettings.enableCountLessMode` property to `true`. This is useful when working with data services that do not provide a total record count.
+
+The following example demonstrates infinite scrolling with an unknown record count using a `DataManager` with `UrlAdaptor` and the `enableCountLessMode` property:
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
