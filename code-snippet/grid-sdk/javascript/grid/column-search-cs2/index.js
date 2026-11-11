@@ -23,12 +23,7 @@ var grid = new ej.grids.Grid({
         { field: 'ShipCountry', headerText: 'Ship Country', width: 100 },
         { field: 'ShipName', headerText: 'Ship Name', width: 120 }
     ],
-    height: 400,
-    created: () => {
-        document.getElementById(grid.element.id + "_searchbar").addEventListener('keyup', () => {
-                grid.search(event.target.value)
-        });
-    }
+    height: 400
 });
 grid.appendTo('#Grid');
 

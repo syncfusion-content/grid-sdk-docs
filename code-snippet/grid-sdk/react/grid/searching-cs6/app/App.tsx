@@ -12,12 +12,6 @@ function App() {
     { text: 'Immediate', value: 'Immediate' }
   ];
 
-  const created = () => {
-        (document.getElementById((grid as GridComponent).element.id + "_searchbar") as HTMLElement).addEventListener('keyup', (event) => {
-          (grid as GridComponent).search((event.target as HTMLInputElement).value)
-        });
-    }
-
   const handleSearchModeChange = (args: ChangeEventArgs) => {
     setSearchSettings({
       mode: args.value as string,
@@ -38,7 +32,7 @@ function App() {
       />
     </div>
     <GridComponent dataSource={data} height={280} searchSettings={searchSettings} toolbar={['Search']}
-        ref={g => grid = g} created={created}>
+        ref={g => grid = g}>
         <ColumnsDirective>
             <ColumnDirective field='OrderID' headerText='Order ID' width='100' textAlign="Right"/>
             <ColumnDirective field='CustomerID' headerText='Customer ID' width='100'/>

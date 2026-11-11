@@ -12,7 +12,7 @@ import { GridComponent, GridModule, SearchSettingsModel, SearchService, ToolbarI
                 <label for="searchMode">Search Mode</label>
                 <ejs-dropdownlist id="searchMode" [dataSource]="searchModes" [fields]="ddlFields" value="Default" (change)="searchModeChange($event)" width="140px"></ejs-dropdownlist>
                </div>
-               <ejs-grid #grid [dataSource]='data' [toolbar]='toolbarOptions' [searchSettings]='searchSettings' (created)='created()' height='273' width='100%'>
+               <ejs-grid #grid [dataSource]='data' [toolbar]='toolbarOptions' [searchSettings]='searchSettings' height='273' width='100%'>
                 <e-columns>
                     <e-column field='OrderID' headerText='Order ID' textAlign='Right' width=90></e-column>
                     <e-column field='CustomerID' headerText='Customer ID' width=100></e-column>
@@ -39,11 +39,6 @@ export class AppComponent implements OnInit {
     ngOnInit(): void {
         this.data = data;
         this.toolbarOptions = ['Search'];
-    }
-    created(): void {
-        (document.getElementById((this.grid as GridComponent).element.id + "_searchbar") as Element).addEventListener('keyup', () => {
-            (this.grid as GridComponent).search(((event as MouseEvent).target as HTMLInputElement).value)
-        });
     }
     searchModeChange(args: ChangeEventArgs) {
         const mode = args.value as 'Default' | 'Immediate';

@@ -4,7 +4,7 @@
           <label for="searchMode">Search Mode</label>
           <ejs-dropdownlist id="searchMode" :dataSource="searchModes" :fields="ddlFields" value="Default" @change="searchModeChange" width="140px"></ejs-dropdownlist>
         </div>
-        <ejs-grid ref='grid' id='grid' :dataSource='data' :toolbar='toolbarOptions' :searchSettings='searchSettings' height='262px' :created='created'>
+        <ejs-grid ref='grid' id='grid' :dataSource='data' :toolbar='toolbarOptions' :searchSettings='searchSettings' height='262px'>
             <e-columns>
               <e-column field='OrderID' headerText='Order ID' textAlign='Right' width=100></e-column>
               <e-column field='CustomerID' headerText='Customer ID' width=120></e-column>
@@ -42,11 +42,6 @@ components: {
     };
   },
   methods: {
-    created: function() {
-        document.getElementById(this.$refs.grid.$el.id + "_searchbar").addEventListener('keyup', () => {
-          this.$refs.grid.search(event.target.value)
-        });
-    },
     searchModeChange: function(args) {
       this.searchSettings = {
         mode: args.value,
