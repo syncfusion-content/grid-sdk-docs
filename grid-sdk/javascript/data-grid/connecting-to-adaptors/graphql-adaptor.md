@@ -106,7 +106,7 @@ Here's how you can define a schema for the Syncfusion<sup style="font-size:70%">
   }
   ```
 
-* **Define Queries:** Define queries that can be made to retrieve data from the server. In the case of a Grid, you may define a query to fetch orders, accepting parameters such as `DataManager` for advanced data operations. To utilize `Datamanager`, you need to install packages from `@syncfusion/ej2-data`
+* **Define Queries:** Define queries that can be made to retrieve data from the server. In the case of a Grid, you may define a query to fetch orders, accepting parameters such as `DataManager` for advanced data operations. To utilize `DataManager`, you need to install packages from `@syncfusion/ej2-data`
 
   ```
   type Query {
@@ -256,17 +256,7 @@ npm install
 **Step 3:** Import the Syncfusion<sup style="font-size:70%">&reg;</sup> CSS styles
 
 ```css
-
-@import '../node_modules/@syncfusion/ej2-base/styles/bootstrap5.css';  
-@import '../node_modules/@syncfusion/ej2-buttons/styles/bootstrap5.css';  
-@import '../node_modules/@syncfusion/ej2-calendars/styles/bootstrap5.css';  
-@import '../node_modules/@syncfusion/ej2-dropdowns/styles/bootstrap5.css';  
-@import '../node_modules/@syncfusion/ej2-inputs/styles/bootstrap5.css';  
-@import '../node_modules/@syncfusion/ej2-navigations/styles/bootstrap5.css';
-@import '../node_modules/@syncfusion/ej2-popups/styles/bootstrap5.css';
-@import '../node_modules/@syncfusion/ej2-splitbuttons/styles/bootstrap5.css';
-@import '../node_modules/@syncfusion/ej2-notifications/styles/bootstrap5.css';
-@import '../node_modules/@syncfusion/ej2-grids/styles/bootstrap5.css';
+@import "../node_modules/@syncfusion/ej2-bootstrap5-theme/styles/grid/index.css";
 
 ```
 
