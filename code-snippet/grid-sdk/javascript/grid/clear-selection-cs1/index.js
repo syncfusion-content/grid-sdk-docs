@@ -2,9 +2,18 @@ var grid = new ej.grids.Grid({
     dataSource: data,
     allowPaging: true,
     allowSelection: true,
-    selectedRowIndex: 2,
+    selectedRowIndex: 0,
     pageOptions: { pageSize: 5 },
-    selectionSettings: { mode: 'Row', type: 'Multiple' },
+    selectionSettings: {
+        mode: 'Row',
+        type: 'Multiple',
+        isRowNonDeselectable: function (data) {
+            if (data.ShipCountry === 'France') {
+                return true;
+            }
+            return false;
+        }
+    },
     columns: [
         { field: 'OrderID', headerText: 'Order ID', textAlign: 'Right', width: 120 },
         { field: 'CustomerID', headerText: 'Customer ID', width: 150, textAlign: 'Right' },

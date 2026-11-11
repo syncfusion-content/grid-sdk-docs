@@ -2,7 +2,7 @@
    @Html.EJS().Button("buttons").CssClass("e-primary").Content("Clear Row Selection").Render()
 </div>
 <p style="color:red;text-align:center" id="message"></p>
-@Html.EJS().Grid("grid").DataSource((IEnumerable<object>)ViewBag.dataSource).SelectedRowIndex(2).Height("348px").Columns(col =>
+@Html.EJS().Grid("grid").DataSource((IEnumerable<object>)ViewBag.dataSource).SelectedRowIndex(0).Height("348px").Columns(col =>
 {
   col.Field("OrderID").HeaderText("Order ID").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
   col.Field("CustomerID").HeaderText("Customer Name").Width("150").Add();
@@ -11,8 +11,15 @@
   col.Field("ShipCountry").HeaderText("Ship Country").Width("120").Add();
 }).AllowPaging().PageSettings(page => { page.PageSize(10); }).SelectionSettings(select => select.Type(Syncfusion.EJ2.Grids.SelectionType.Multiple).Mode(Syncfusion.EJ2.Grids.SelectionMode.Row)).Render()
 <script>
+   function isRowNonDeselectable(data) {
+      if (data.ShipCountry == 'France') {
+         return true;
+      }
+      return false;
+   }
+   var grid = document.getElementById("grid").ej2_instances[0];
+   grid.selectionModule.isRowNonDeselectable = isRowNonDeselectable;
    document.getElementById('buttons').onclick = function () {
-      var grid = document.getElementById("grid").ej2_instances[0];
       grid.selectionModule.clearRowSelection();
    };
 </script>

@@ -8,8 +8,17 @@ let grid: Grid = new Grid({
     dataSource: data,
     allowPaging: true,
     allowSelection: true,
-    selectedRowIndex: 2,
-    selectionSettings: { mode: 'Row', type: 'Multiple' },
+    selectedRowIndex: 0,
+    selectionSettings: {
+        mode: 'Row',
+        type: 'Multiple',
+        isRowNonDeselectable: function (data: Object) {
+            if ((<{ ShipCountry?: string }>data).ShipCountry === 'France') {
+                return true;
+            }
+            return false;
+        }
+    },
     columns: [
         { field: 'OrderID', headerText: 'Order ID', textAlign: 'Right', width: 120 },
         { field: 'CustomerID', headerText: 'Customer ID', width: 150, textAlign: 'Right' },
