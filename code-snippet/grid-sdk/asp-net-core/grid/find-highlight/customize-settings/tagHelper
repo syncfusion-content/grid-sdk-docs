@@ -1,0 +1,11 @@
+<ejs-grid id="FindGrid" dataSource="@ViewBag.datasource" height="272px"  toolbar="@(new List<string>() { "Find" })" allowPaging="true">
+    <e-grid-findsettings caseSensitive="true" currentPageOnly="true"></e-grid-findsettings>
+    <e-grid-pagesettings pageSize="8"></e-grid-pagesettings>
+    <e-grid-columns>
+        <e-grid-column field="TicketID" headerText="Ticket ID" textAlign="Right" width="90"></e-grid-column>
+        <e-grid-column field="Customer" headerText="Customer" textAlign="Left" width="120"></e-grid-column>
+        <e-grid-column field="Subject" headerText="Subject" textAlign="Left" width="200"></e-grid-column>
+        <e-grid-column field="Status" headerText="Status" textAlign="Left" width="100"></e-grid-column>
+        <e-grid-column field="Priority" headerText="Priority" textAlign="Left" width="90"></e-grid-column>
+    </e-grid-columns>
+</ejs-grid>

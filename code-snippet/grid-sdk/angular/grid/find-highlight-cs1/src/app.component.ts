@@ -1,0 +1,29 @@
+import { data } from './datasource';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { GridModule, FindService, ToolbarItems, ToolbarService } from '@syncfusion/ej2-angular-grids';
+
+@Component({
+    imports: [ GridModule ],
+    providers: [FindService, ToolbarService],
+    standalone: true,
+    selector: 'app-root',
+    template: `<ejs-grid [dataSource]='data' height='272px' [toolbar]='toolbarOptions'>
+                <e-columns>
+                    <e-column field='TicketID' headerText='Ticket ID' textAlign='Right' width=90></e-column>
+                    <e-column field='Customer' headerText='Customer' textAlign='Left' width=120></e-column>
+                    <e-column field='Subject' headerText='Subject' textAlign='Left' width=200></e-column>
+                    <e-column field='Status' headerText='Status' textAlign='Left' width=100></e-column>
+                    <e-column field='Priority' headerText='Priority' textAlign='Left' width=90></e-column>
+                </e-columns>
+                </ejs-grid>`
+})
+export class AppComponent implements OnInit {
+
+    public data?: object[];
+    public toolbarOptions?: ToolbarItems[];
+
+    ngOnInit(): void {
+        this.data = data;
+        this.toolbarOptions = ['Find'];
+    }
+}
