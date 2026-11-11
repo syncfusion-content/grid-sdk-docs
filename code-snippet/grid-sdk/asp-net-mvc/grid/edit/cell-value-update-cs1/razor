@@ -1,0 +1,60 @@
+
+<div style="margin: 10px">
+    @Html.EJS().Button("updateOne").Content("Update One Cell").CssClass("e-outline").Render()
+    @Html.EJS().Button("updateMultiple").Content("Update Multiple Cells").CssClass("e-outline").Render()
+</div>
+@Html.EJS().Grid("grid").DataSource((IEnumerable<object>)ViewBag.dataSource).Columns(col =>
+{
+    col.Field("TaskNumber").HeaderText("Task ID").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Width("100").IsPrimaryKey(true).Add();
+    col.Field("TaskName").HeaderText("Title").Width("130").ClipMode(Syncfusion.EJ2.Grids.ClipMode.EllipsisWithTooltip).Add();
+    col.Field("AssignedTo").HeaderText("Assignee").Width("110").ClipMode(Syncfusion.EJ2.Grids.ClipMode.EllipsisWithTooltip).Add();
+    col.Field("Priority").HeaderText("Priority").Width("100").Add();
+    col.Field("Progress").HeaderText("Progress").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Template("#progressTemplate").Format("P").Width("110").Add();
+    col.Field("Status").HeaderText("State").Width("110").Add();
+    col.Field("Department").HeaderText("Department").Width("130").ClipMode(Syncfusion.EJ2.Grids.ClipMode.EllipsisWithTooltip).Add();
+    col.Field("AssignedDate").HeaderText("Assigned Date").Width("130").Type("date").Format("yMd").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("Deadline").HeaderText("Deadline").Width("120").Type("date").Format("yMd").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+}).AllowSorting().AllowFiltering().FilterSettings(f => f.Type(Syncfusion.EJ2.Grids.FilterType.Excel)).AllowPaging().PageSettings(p => p.PageSize(8).PageCount(4)).Render()
+
+<script type="text/x-template" id="progressTemplate">
+    <div class="progress-cell ${getProgressClass(data.Progress)}">${formatProgress(data.Progress)}%</div>
+</script>
+<script>
+    function getGrid() {
+        return document.getElementById('grid').ej2_instances[0];
+    }
+    function formatProgress(progress) {
+        return ((progress == null ? 0 : progress) * 100).toFixed(0);
+    }
+    function getProgressClass(progress) {
+        progress = progress == null ? 0 : progress;
+        if (progress >= 0.9) return 'progress-excellent';
+        if (progress >= 0.75) return 'progress-high';
+        if (progress >= 0.5) return 'progress-medium';
+        if (progress >= 0.25) return 'progress-low';
+        return 'progress-very-low';
+    }
+    document.getElementById('updateOne').addEventListener('click', function () {
+        var grid = getGrid();
+        grid.setCellValue(grid.dataSource[2].TaskNumber, 'Progress', Math.random());
+        grid.renderTemplates();
+    });
+    document.getElementById('updateMultiple').addEventListener('click', async function () {
+        var grid = getGrid();
+        var updates = [0, 1, 3].map(function (index) {
+            return { key: grid.dataSource[index].TaskNumber, field: 'Progress', value: Math.random() };
+        });
+        for (var update of updates) {
+            await grid.setCellValueAsync(update.key, update.field, update.value, 0);
+            grid.renderTemplates();
+        }
+    });
+</script>
+<style>
+    .progress-cell { text-align: right; padding-right: 8px; font-weight: 600; }
+    .progress-very-low { color: #991b1b; }
+    .progress-low { color: #ef4444; }
+    .progress-medium { color: #f59e0b; }
+    .progress-high { color: #22c55e; }
+    .progress-excellent { color: #0ea5e9; }
+</style>

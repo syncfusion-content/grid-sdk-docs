@@ -1,0 +1,62 @@
+<style>
+    .price-cell { text-align: right; padding-right: 8px; font-weight: 600; }
+    .price-low { color: #ef4444; }
+    .price-mid { color: #f59e0b; }
+    .price-mid-high { color: #3b82f6; }
+    .price-high { color: #22c55e; }
+    .price-premium { color: #9333ea; }
+</style>
+<div style="margin: 10px">
+    @Html.EJS().Button("updateSingle").Content("Update Single Data").CssClass("e-outline").Render()
+    @Html.EJS().Button("updateMultiple").Content("Update Multiple Data").CssClass("e-outline").Render()
+</div>
+@Html.EJS().Grid("grid").DataSource((IEnumerable<object>)ViewBag.dataSource).Columns(col =>
+{
+    col.Field("ItemID").HeaderText("Item ID").Width("100").IsPrimaryKey(true).Add();
+    col.Field("ItemName").HeaderText("Dish Name").Width("130").ClipMode(Syncfusion.EJ2.Grids.ClipMode.EllipsisWithTooltip).Add();
+    col.Field("Category").HeaderText("Category").Width("120").Add();
+    col.Field("Price").HeaderText("Cost").Width("100").Format("C2").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Template("#priceTemplate").Add();
+    col.Field("SpiceLevel").HeaderText("Spiciness").Width("110").Add();
+    col.Field("Description").HeaderText("Description").Width("260").ClipMode(Syncfusion.EJ2.Grids.ClipMode.EllipsisWithTooltip).Add();
+}).AllowSorting().AllowFiltering().FilterSettings(f => f.Type(Syncfusion.EJ2.Grids.FilterType.Excel)).AllowPaging().PageSettings(p => p.PageSize(8).PageCount(4)).Render()
+
+<script type="text/x-template" id="priceTemplate">
+    <div class="price-cell ${getPriceClass(data.Price)}">$${formatPrice(data.Price)}</div>
+</script>
+
+<script>
+    function randomPrice(price) {
+        return Number(Math.min(Math.max(price + (12 * Math.random() - 6), 4), 32).toFixed(2));
+    }
+    function getGrid() {
+        return document.getElementById('grid').ej2_instances[0];
+    }
+    function findItem(id) {
+        return getGrid().dataSource.find(function (item) { return item.ItemID === id; });
+    }
+    function formatPrice(price) {
+        return Number(price == null ? 0 : price).toFixed(2);
+    }
+    function getPriceClass(price) {
+        price = price == null ? 0 : price;
+        if (price > 25) return 'price-premium';
+        if (price > 20) return 'price-high';
+        if (price > 15) return 'price-mid-high';
+        if (price > 10) return 'price-mid';
+        return 'price-low';
+    }
+    document.getElementById('updateSingle').addEventListener('click', function () {
+        var item = findItem('ITEM-1002');
+        getGrid().setRowData('ITEM-1002', Object.assign({}, item, { Price: randomPrice(item.Price), Description: item.Description }));
+    });
+    document.getElementById('updateMultiple').addEventListener('click', async function () {
+        var updates = [
+            Object.assign({}, findItem('ITEM-1001'), { Price: randomPrice(findItem('ITEM-1001').Price), Description: 'Spicy Paneer Tikka Masala' }),
+            Object.assign({}, findItem('ITEM-1002'), { Price: randomPrice(findItem('ITEM-1002').Price), Description: 'Caesar Salad' }),
+            Object.assign({}, findItem('ITEM-1003'), { Price: randomPrice(findItem('ITEM-1003').Price), Description: 'Cheesecake with honey' })
+        ];
+        for (var row of updates) {
+            await getGrid().setRowDataAsync(row.ItemID, row, 0);
+        }
+    });
+</script>

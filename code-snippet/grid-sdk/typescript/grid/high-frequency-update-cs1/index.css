@@ -1,0 +1,20 @@
+#container {
+    visibility: hidden;
+}
+
+#loader {
+  color: #008cff;
+  font-family: 'Helvetica Neue','calibiri';
+  font-size: 14px;
+  height: 40px;
+  left: 45%;
+  position: absolute;
+  top: 45%;
+  width: 30%;
+}
+
+.revenue-cell {  align-items: center; display: inline-flex; gap: 4px; }
+.above-0 { color: #00a653; }
+.below-0 { color: #ff3740; }
+.rowcell-left { align-items: center; font-weight: 700; }
+.rowcell-right { color: #ff3740; font-size: .8em; }

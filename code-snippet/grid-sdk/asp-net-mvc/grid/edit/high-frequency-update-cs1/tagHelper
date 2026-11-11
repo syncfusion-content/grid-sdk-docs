@@ -1,0 +1,74 @@
+<style>
+    .revenue-cell {  align-items: center; display: inline-flex; gap: 4px; }
+    .above-0 { color: #00a653; }
+    .below-0 { color: #ff3740; }
+    .rowcell-left { align-items: center; font-weight: 700; }
+    .rowcell-right { color: #ff3740; font-size: .8em; }
+</style>
+<div style="display: flex; gap: 20px; margin: 5px; align-items: center">
+    <ejs-button id="normalUpdate" content="Normal update" cssClass="e-outline"></ejs-button>
+    <span id="syncTime" style="font-weight: bold; color: #555"></span>
+    <ejs-button id="asyncUpdate" content="Async update" cssClass="e-outline"></ejs-button>
+    <span id="asyncTime" style="font-weight: bold; color: #555"></span>
+</div>
+<script type="text/x-template" id="revenueTemplate">
+    ${getRevenueHtml(data.StationID, data.Revenue)}
+</script>
+<script>
+    var previousRevenue = new Map();
+    function getRevenueHtml(stationId, revenue) {
+        revenue = revenue == null ? 0 : revenue;
+        var previousValue = previousRevenue.get(stationId);
+        var previous = previousValue == null ? revenue : previousValue;
+        var isUp = revenue - previous >= 0;
+        return '<div class="revenue-cell ' + (isUp ? 'above-0' : 'below-0') + '">' +
+            '<span class="rowcell-left"><svg width="12" height="12" viewBox="0 0 24 24" fill="' + (isUp ? 'green' : 'red') + '">' +
+            '<path d="' + (isUp ? 'M12 4l-8 8h6v8h4v-8h6z' : 'M12 20l8-8h-6V4h-4v8H4z') + '" /></svg>$' + revenue.toFixed(2) + '</span>' +
+            '<span class="rowcell-right">Prev: $' + previous.toFixed(2) + '</span></div>';
+    }
+</script>
+<ejs-grid id="grid" dataSource="@ViewBag.dataSource" height="480" enableVirtualization="true">
+    <e-grid-columns>
+        <e-grid-column field="StationID" headerText="Station ID" isPrimaryKey="true" width="120"></e-grid-column>
+        <e-grid-column field="City" headerText="Station Location" width="160"></e-grid-column>
+        <e-grid-column field="ChargingSpeed" headerText="Charging Speed" width="160"></e-grid-column>
+        <e-grid-column field="ActiveSessions" headerText="Active Slots" textAlign="Right" width="130"></e-grid-column>
+        <e-grid-column field="AvailableSlots" headerText="Available Slots" textAlign="Right" width="150"></e-grid-column>
+        <e-grid-column field="Revenue" headerText="Revenue" textAlign="Center" template="#revenueTemplate" format="C2" width="180"></e-grid-column>
+        <e-grid-column field="LastMaintenanceDate" headerText="Maintenance Date" textAlign="Right" type="date" format="dd/MM/yyyy" width="140"></e-grid-column>
+    </e-grid-columns>
+</ejs-grid>
+
+<script>
+    function getGrid() {
+        return document.getElementById('grid').ej2_instances[0];
+    }
+    document.getElementById('normalUpdate').addEventListener('click', function () {
+        var grid = getGrid();
+        var start = performance.now();
+        var visibleStations = grid.getCurrentViewRecords();
+        grid.dataSource.forEach(function (station) {
+            previousRevenue.set(station.StationID, station.Revenue);
+            station.Revenue = station.Revenue + 10;
+        });
+        setTimeout(function () {
+            visibleStations.forEach(function (station) {
+                grid.setCellValue(station.StationID, 'Revenue', station.Revenue);
+            });
+            document.getElementById('syncTime').textContent = 'Sync Update took ' + (performance.now() - start).toFixed(2) + ' ms';
+        });
+    });
+    document.getElementById('asyncUpdate').addEventListener('click', async function () {
+        var grid = getGrid();
+        var start = performance.now();
+        var visibleStations = grid.getCurrentViewRecords();
+        grid.dataSource.forEach(function (station) {
+            previousRevenue.set(station.StationID, station.Revenue);
+            station.Revenue = station.Revenue + 20;
+        });
+        await Promise.all(visibleStations.map(function (station) {
+            return grid.setCellValueAsync(station.StationID, 'Revenue', station.Revenue, 0);
+        }));
+        document.getElementById('asyncTime').textContent = 'Async Update took ' + (performance.now() - start).toFixed(2) + ' ms';
+    });
+</script>
