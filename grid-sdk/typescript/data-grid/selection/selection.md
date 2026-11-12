@@ -158,11 +158,17 @@ The following example demonstrates how to enable the toggle selection for both c
 > * If multi selection is enabled, then first click on any selected row (without pressing Ctrl key), it will clear the multi selection and in second click on the same row, it will be unselected.
 >* Toggle selection is a feature that can be applied to all types of selections. When the `checkboxOnly` property is set to **true**, it restricts the ability to select or deselect rows or cells by clicking on them.
 
-## Clear all selection programmatically
+## Programmatic deselection
 
-The clear selection programmatically feature is particularly useful when you need to remove the selected rows or cells or columns from the Grid control.
+### Deselect row or rows programmatically
 
-To clear the selection in the control programmatically, you can use the [clearSelection](../../api/grid/#clearselection)  method. 
+Use the `deselectRow` and `deselectRows` methods to programmatically deselect selected rows.
+
+### Clear all selection programmatically
+
+The programmatic deselection feature is particularly useful when you need to remove selected rows, cells, or columns from the Grid control.
+
+To deselect items in the control programmatically, you can use the [clearSelection](../../api/grid/#clearselection)  method. 
 
 In the following example, it demonstrates how to clear all selection by calling the [clearSelection](../../api/grid/#clearselection) method in the button click event.
 
