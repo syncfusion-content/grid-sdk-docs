@@ -1,0 +1,6 @@
+.progress-cell { text-align: right; padding-right: 8px; font-weight: 600; }
+.progress-very-low { color: #991b1b; }
+.progress-low { color: #ef4444; }
+.progress-medium { color: #f59e0b; }
+.progress-high { color: #22c55e; }
+.progress-excellent { color: #0ea5e9; }

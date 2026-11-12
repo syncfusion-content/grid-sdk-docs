@@ -1,0 +1,38 @@
+---
+layout: post
+title: Angular Grid Data Transition | Syncfusion
+description: Add, update, and delete records programmatically in Angular Data Grid using synchronous and asynchronous methods for data transition.
+control: Data Transition
+platform: grid-sdk
+documentation: ug
+domainurl: https://help.syncfusion.com/grid-sdk
+---
+
+# Data Transition in Angular Data Grid
+
+The Angular Data Grid provides methods to add, edit, and delete records programmatically, without direct interaction with the grid interface. These methods support both synchronous and asynchronous execution, enabling flexible control over record editing.
+
+* [addRecord](https://ej2.syncfusion.com/angular/documentation/api/grid#addrecord): Starts a new entry. If no data is passed, a blank form opens for input.
+* [startEdit](https://ej2.syncfusion.com/angular/documentation/api/grid#startedit): Enables edit mode for the selected row.
+* [deleteRecord](https://ej2.syncfusion.com/angular/documentation/api/grid#deleterecord): Removes the selected row.
+* [addRecordAsync](https://ej2.syncfusion.com/angular/documentation/api/grid#addrecordasync): Adds a new record asynchronously to the grid by passing the new data object.
+* [updateRowAsync](https://ej2.syncfusion.com/angular/documentation/api/grid#updaterowasync): Updates a specific row asynchronously by passing the new data object for that row.
+* [deleteRecordAsync](https://ej2.syncfusion.com/angular/documentation/api/grid#deleterecordasync): Removes a record asynchronously from the grid by passing the primary key value and the corresponding data to identify the row.
+
+A single record is added synchronously using `addRecord`, while two records are added asynchronously using `addRecordAsync`. Additionally, the record at index "1" is updated asynchronously using `updateRowAsync`.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/grid-sdk/angular/grid/data-transition-cs1/src/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/grid-sdk/angular/grid/data-transition-cs1/src/datasource.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/grid-sdk/angular/grid/data-transition-cs1/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/data-transition-cs1" %}
+
+> `addRecordAsync`, `updateRowAsync` and `deleteRecordAsync` return a `Promise` that resolves after the update is complete, including any data request. Use these methods when adding or removing a record, or updating an existing row involves a server call, or a following action should wait until it finishes.

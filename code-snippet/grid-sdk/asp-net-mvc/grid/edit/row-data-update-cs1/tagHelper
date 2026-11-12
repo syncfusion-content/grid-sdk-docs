@@ -1,0 +1,67 @@
+<style>
+    .price-cell { text-align: right; padding-right: 8px; font-weight: 600; }
+    .price-low { color: #ef4444; }
+    .price-mid { color: #f59e0b; }
+    .price-mid-high { color: #3b82f6; }
+    .price-high { color: #22c55e; }
+    .price-premium { color: #9333ea; }
+</style>
+<div style="margin: 10px">
+    <ejs-button id="updateSingle" content="Update Single Data" cssClass="e-outline" style="margin-right: 10px"></ejs-button>
+    <ejs-button id="updateMultiple" content="Update Multiple Data" cssClass="e-outline"></ejs-button>
+</div>
+<script type="text/x-template" id="priceTemplate">
+    <div class="price-cell ${getPriceClass(data.Price)}">$${formatPrice(data.Price)}</div>
+</script>
+<script>
+    function formatPrice(price) {
+        return Number(price == null ? 0 : price).toFixed(2);
+    }
+    function getPriceClass(price) {
+        price = price == null ? 0 : price;
+        if (price > 25) return 'price-premium';
+        if (price > 20) return 'price-high';
+        if (price > 15) return 'price-mid-high';
+        if (price > 10) return 'price-mid';
+        return 'price-low';
+    }
+</script>
+<ejs-grid id="grid" dataSource="@ViewBag.dataSource" allowSorting="true" allowFiltering="true" allowPaging="true">
+
+    <e-grid-filterSettings type="Excel"></e-grid-filterSettings>
+    <e-grid-pageSettings pageSize="8" pageCount="4"></e-grid-pageSettings>
+    <e-grid-columns>
+        <e-grid-column field="ItemID" headerText="Item ID" width="100" isPrimaryKey="true"></e-grid-column>
+        <e-grid-column field="ItemName" headerText="Dish Name" width="130" clipMode="EllipsisWithTooltip"></e-grid-column>
+        <e-grid-column field="Category" headerText="Category" width="120"></e-grid-column>
+        <e-grid-column field="Price" headerText="Cost" width="100" format="C2" textAlign="Right" template="#priceTemplate"></e-grid-column>
+        <e-grid-column field="SpiceLevel" headerText="Spiciness" width="110"></e-grid-column>
+        <e-grid-column field="Description" headerText="Description" width="260" clipMode="EllipsisWithTooltip"></e-grid-column>
+    </e-grid-columns>
+</ejs-grid>
+
+<script>
+    function randomPrice(price) {
+        return Number(Math.min(Math.max(price + (12 * Math.random() - 6), 4), 32).toFixed(2));
+    }
+    function getGrid() {
+        return document.getElementById('grid').ej2_instances[0];
+    }
+    function findItem(id) {
+        return getGrid().dataSource.find(function (item) { return item.ItemID === id; });
+    }
+    document.getElementById('updateSingle').addEventListener('click', function () {
+        var item = findItem('ITEM-1002');
+        getGrid().setRowData('ITEM-1002', Object.assign({}, item, { Price: randomPrice(item.Price), Description: item.Description }));
+    });
+    document.getElementById('updateMultiple').addEventListener('click', async function () {
+        var updates = [
+            Object.assign({}, findItem('ITEM-1001'), { Price: randomPrice(findItem('ITEM-1001').Price), Description: 'Spicy Paneer Tikka Masala' }),
+            Object.assign({}, findItem('ITEM-1002'), { Price: randomPrice(findItem('ITEM-1002').Price), Description: 'Caesar Salad' }),
+            Object.assign({}, findItem('ITEM-1003'), { Price: randomPrice(findItem('ITEM-1003').Price), Description: 'Cheesecake with honey' })
+        ];
+        for (var row of updates) {
+            await getGrid().setRowDataAsync(row.ItemID, row, 0);
+        }
+    });
+</script>

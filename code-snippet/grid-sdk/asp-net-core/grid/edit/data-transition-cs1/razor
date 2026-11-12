@@ -1,0 +1,54 @@
+<div style="display: flex; gap: 10px; flex-wrap: wrap; margin: 5px">
+    @Html.EJS().Button("addRecord").Content("Add Record").CssClass("e-outline").Render()
+    @Html.EJS().Button("deleteRecord").Content("Delete Selected Record").CssClass("e-outline").Render()
+    @Html.EJS().Button("addRecordAsync").Content("Add Record (Async)").CssClass("e-outline").Render()
+    @Html.EJS().Button("updateRecordAsync").Content("Update Record (Async)").CssClass("e-outline").Render()
+    @Html.EJS().Button("deleteRecordAsync").Content("Delete Selected Record (Async)").CssClass("e-outline").Render()
+</div>
+@Html.EJS().Grid("grid").DataSource((IEnumerable<object>)ViewBag.dataSource).Columns(col =>
+{
+    col.Field("SaleID").HeaderText("Sale ID").Width("100").IsPrimaryKey(true).TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("ProductName").HeaderText("Product Name").Width("120").Add();
+    col.Field("Category").HeaderText("Category").ClipMode(Syncfusion.EJ2.Grids.ClipMode.EllipsisWithTooltip).Width("100").Add();
+    col.Field("SalesPerson").HeaderText("Sales Person").Width("110").Add();
+    col.Field("UnitsSold").HeaderText("Units Sold").Width("100").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("UnitPrice").HeaderText("Unit Price").Format("C2").Width("110").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("TotalRevenue").HeaderText("Revenue").Format("C2").Width("110").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+}).AllowSorting().AllowFiltering().FilterSettings(f => f.Type(Syncfusion.EJ2.Grids.FilterType.Excel)).AllowPaging().PageSettings(p => p.PageSize(8).PageCount(4)).EditSettings(e => e.AllowEditing(true).AllowAdding(true).AllowDeleting(true)).Render()
+
+<script>
+    function getGrid() {
+        return document.getElementById('grid').ej2_instances[0];
+    }
+    function randomId() {
+        return 'S-' + Math.floor(1000 * Math.random());
+    }
+    document.getElementById('addRecord').addEventListener('click', function () {
+        getGrid().addRecord({
+            SaleID: randomId(), ProductName: 'Smart Lamp', UnitsSold: Math.floor(20 * Math.random()) + 1,
+            UnitPrice: 120.5, TotalRevenue: 2410, IsDiscounted: false, Category: 'Home Tech', Region: 'Central', SalesPerson: 'Bob'
+        });
+    });
+    document.getElementById('deleteRecord').addEventListener('click', function () {
+        getGrid().deleteRecord();
+    });
+    document.getElementById('addRecordAsync').addEventListener('click', async function () {
+        var records = [
+            { SaleID: randomId(), ProductName: 'Smart Watch', UnitsSold: 12, UnitPrice: 250, TotalRevenue: 3000, IsDiscounted: false, Category: 'Wearables', Region: 'East', SalesPerson: 'Julia' },
+            { SaleID: randomId(), ProductName: 'Gaming Laptop', UnitsSold: 6, UnitPrice: 1200, TotalRevenue: 7200, IsDiscounted: true, Category: 'Electronics', Region: 'West', SalesPerson: 'Charlie' }
+        ];
+        await Promise.all(records.map(function (record) { return getGrid().addRecordAsync(record); }));
+    });
+    document.getElementById('updateRecordAsync').addEventListener('click', async function () {
+        var row = getGrid().getCurrentViewRecords()[1];
+        await getGrid().updateRowAsync(1, {
+            SaleID: row.SaleID,
+            ProductName: 'Phone Pro',
+            UnitsSold: Math.floor(5 * Math.random()) + 1,
+            UnitPrice: Math.floor(1000 * Math.random()) + 500
+        });
+    });
+    document.getElementById('deleteRecordAsync').addEventListener('click', async function () {
+        await getGrid().deleteRecordAsync();
+    });
+</script>

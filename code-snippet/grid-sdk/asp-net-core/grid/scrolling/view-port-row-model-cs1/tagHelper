@@ -1,0 +1,113 @@
+<style>
+    .e-grid .e-row {
+        line-height: 40px;
+    }
+    
+    .e-grid .e-headercell {
+        background-color: #f5f5f5;
+        font-weight: 600;
+    }
+    
+    .e-grid {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    
+    .e-toolbar {
+        padding: 8px 12px;
+    }
+    
+    .e-toolbar .e-toolbar-item {
+        margin-right: 8px;
+    }
+    
+    .vp-ellipsis { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+    .vp-badge { display: inline-flex; gap: 6px; align-items: center; padding: 2px 8px; border-radius: 12px; background: #eef2f7; font-size: 13px; }
+    .vp-status-Active { background: #dcfce7; color: #166534; }
+    .vp-status-Inactive { background: #f3f4f6; color: #4b5563; }
+    .vp-status-OnLeave { background: #fef3c7; color: #92400e; }
+    .vp-status-Retired { background: #fee2e2; color: #991b1b; }
+    .vp-trust-Perfect { background: #dcfce7; color: #166534; }
+    .vp-trust-Sufficient { background: #fef3c7; color: #92400e; }
+    .vp-trust-Insufficient { background: #fee2e2; color: #991b1b; }
+    .vp-progress { display: flex; align-items: center; gap: 6px; }
+    .vp-progress-bar { flex: 1; height: 6px; background: #e5e7eb; border-radius: 3px; overflow: hidden; }
+    .vp-progress-bar div { height: 100%; }
+    .vp-salary { font-weight: 600; color: #059669; }
+</style>
+<ejs-grid id="grid" height="440" query="query" clipMode="EllipsisWithTooltip" enableDomVirtualization="true" enableVirtualMaskRow="true"
+          allowPaging="true" allowSorting="true" allowFiltering="true" toolbar="@(new List<string>() { "Search" })">
+    <e-data-manager url="https://services.syncfusion.com/js/production/api/UrlDataSource" adaptor="UrlAdaptor"></e-data-manager>
+    <e-grid-domVirtualizationSettings rowBuffer="5"></e-grid-domVirtualizationSettings>
+    <e-grid-pageSettings pageSize="50"></e-grid-pageSettings>
+    <e-grid-filterSettings type="CheckBox"></e-grid-filterSettings>
+    <e-grid-columns>
+        <e-grid-column field="EmployeeID" headerText="Employee ID" width="110" textAlign="Right" clipMode="EllipsisWithTooltip" isPrimaryKey="true" type="number" template="#empIdTemplate"></e-grid-column>
+        <e-grid-column field="Employees" headerText="Employee Name" width="160" textAlign="Left" clipMode="EllipsisWithTooltip" template="#empNameTemplate"></e-grid-column>
+        <e-grid-column field="Designation" headerText="Designation" width="140" textAlign="Left" clipMode="EllipsisWithTooltip" template="#desigTemplate"></e-grid-column>
+        <e-grid-column field="Mail" headerText="Email" width="190" textAlign="Left" clipMode="EllipsisWithTooltip"></e-grid-column>
+        <e-grid-column field="Address" headerText="Address" width="190" textAlign="Left" clipMode="EllipsisWithTooltip"></e-grid-column>
+        <e-grid-column field="Location" headerText="Location" width="130" textAlign="Center" clipMode="EllipsisWithTooltip" template="#locTemplate"></e-grid-column>
+        <e-grid-column field="Status" headerText="Status" width="120" textAlign="Center" clipMode="EllipsisWithTooltip" template="#statusTemplate"></e-grid-column>
+        <e-grid-column field="Trustworthiness" headerText="Trustworthiness" width="140" textAlign="Center" clipMode="EllipsisWithTooltip" template="#trustTemplate"></e-grid-column>
+        <e-grid-column field="Software" headerText="Software Skills" width="130" textAlign="Right" clipMode="EllipsisWithTooltip" type="number" template="#softTemplate"></e-grid-column>
+        <e-grid-column field="Rating" headerText="Performance Rating" width="140" textAlign="Center" clipMode="EllipsisWithTooltip" type="number" template="#ratingTemplate"></e-grid-column>
+        <e-grid-column field="CurrentSalary" headerText="Current Salary" width="140" textAlign="Right" clipMode="EllipsisWithTooltip" type="number" template="#salaryTemplate"></e-grid-column>
+    </e-grid-columns>
+</ejs-grid>
+
+<script type="text/x-template" id="empIdTemplate">
+    <span>${EmployeeID}</span>
+</script>
+<script type="text/x-template" id="empNameTemplate">
+    <span class="vp-ellipsis">${Employees}</span>
+</script>
+<script type="text/x-template" id="desigTemplate">
+    <span class="vp-ellipsis">${Designation}</span>
+</script>
+<script type="text/x-template" id="locTemplate">
+    <span class="vp-ellipsis">${Location}</span>
+</script>
+<script type="text/x-template" id="statusTemplate">
+    ${getStatusHtml(Status)}
+</script>
+<script type="text/x-template" id="trustTemplate">
+    <div class="vp-badge vp-trust-${Trustworthiness}">${Trustworthiness}</div>
+</script>
+<script type="text/x-template" id="softTemplate">
+    ${getSoftwareHtml(Software, Trustworthiness)}
+</script>
+<script type="text/x-template" id="ratingTemplate">
+    ${getRatingHtml(Rating, Trustworthiness)}
+</script>
+<script type="text/x-template" id="salaryTemplate">
+    <span class="vp-salary">${formatSalary(CurrentSalary)}</span>
+</script>
+
+<script>
+    var query = new ej.data.Query().addParams('dataCount', '100000');
+
+    function getStatusHtml(status) {
+        var icons = { Active: '●', Inactive: '○', 'On Leave': '⊘', Retired: '✕' };
+        var cls = (status || 'Active').replace(' ', '');
+        return '<div class="vp-badge vp-status-' + cls + '"><span>' + (icons[status] || icons.Active) + '</span><span>' + status + '</span></div>';
+    }
+    function getSoftwareHtml(software, trust) {
+        var v = Math.round(Math.min(100, Math.max(0, Number(software == null ? 0 : software))));
+        if (trust === 'Perfect' && v < 70) v = 70;
+        else if (trust === 'Sufficient') v = Math.min(69, Math.max(40, v));
+        else if (trust === 'Insufficient' && v > 39) v = 39;
+        var color = v < 40 ? '#dc2626' : v < 70 ? '#f59e0b' : '#059669';
+        return '<div class="vp-progress"><div class="vp-progress-bar"><div style="width:' + v + '%;background-color:' + color + '"></div></div><span>' + v + '%</span></div>';
+    }
+    function getRatingHtml(rating, trust) {
+        var r = Math.min(5, Math.max(0, Number(rating == null ? 0 : rating)));
+        if (trust === 'Perfect') r = Math.min(5, Math.max(4, r));
+        else if (trust === 'Sufficient') r = 3;
+        else if (trust === 'Insufficient') r = Math.min(2, Math.max(1, r));
+        var color = r >= 4 ? '#059669' : r >= 3 ? '#f59e0b' : '#dc2626';
+        return '<span style="color:' + color + ';font-weight:600">★ ' + r.toFixed(1) + '</span>';
+    }
+    function formatSalary(value) {
+        return new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' }).format(value || 0);
+    }
+</script>
