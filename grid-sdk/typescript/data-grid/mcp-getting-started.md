@@ -42,6 +42,70 @@ Before using WebMCP locally, enable the feature flag and install the browser ext
  
 The WebMCP extension is now configured and ready to interact with WebMCP-enabled Syncfusion® controls.
 
+## Tools
+
+| Tool | What it does | Changes | On by default | Needs confirmation |
+|---|---|---|---|---|
+| `getSettings` | Returns the Grid feature switches and settings (paging, sorting, filtering, grouping, selection, editing, frozen layout, primary keys). | ReadOnly | Yes | No |
+| `getColumns` | Returns the column definitions: field, headerText, type, visible, isPrimaryKey, allowEditing, allowSorting, allowFiltering. | ReadOnly | Yes | No |
+| `getSelectedRecords` | Returns the selected records (at most maxItems) with the total selected count. | ReadOnly | Yes | No |
+| `getSelectedRowIndexes` | Returns the 0-based indexes of the selected rows. | ReadOnly | Yes | No |
+| `getSelectedCells` | Returns the selected cells (row and cell indexes) and the records of the rows that contain them. | ReadOnly | No | No |
+| `getCurrentViewRecords` | Returns the records on the current page (raw data read; at most maxItems). | ReadOnly | No | No |
+| `getFilteredRecords` | Returns the records that match the active filters (raw data read; at most maxItems). | ReadOnly | No | No |
+| `getBatchChanges` | Returns the pending batch-edit changes (added, changed, deleted records). Requires editSettings.mode Batch. | ReadOnly | No | No |
+| `getRowIndex` | Returns the 0-based row index of the record with the given primary key in the current view, or -1. | ReadOnly | Yes | No |
+| `getFindState` | Returns the find-in-grid state: total matches and the active match. | ReadOnly | No | No |
+| `getAdvancedFilter` | Returns the applied advanced-filter rule and whether one is applied. | ReadOnly | No | No |
+| `getCellFormula` | Returns the formula, its computed value and whether the cell has a formula. Requires formulaSettings. | ReadOnly | No | No |
+| `navigateToPage` | Navigates to a 1-based page and returns the current page. Requires allowPaging. | ViewStateMutation | Yes | No |
+| `sortByColumn` | Sorts by a column and returns the sort descriptors. Requires allowSorting. | ViewStateMutation | Yes | No |
+| `clearSorting` | Clears all sorting. Requires allowSorting. | ViewStateMutation | Yes | No |
+| `filterByColumn` | Filters a column and returns the active filters. Operators and their aliases are normalised. Requires allowFiltering. | ViewStateMutation | Yes | No |
+| `clearFiltering` | Clears filters on the given fields, or all filters when none are given. | ViewStateMutation | Yes | No |
+| `search` | Searches all searchable columns and returns the search text. | ViewStateMutation | Yes | No |
+| `groupColumn` | Groups by a column and returns the grouped columns. Requires allowGrouping. | ViewStateMutation | Yes | No |
+| `ungroupColumn` | Removes grouping by a column and returns the grouped columns. | ViewStateMutation | Yes | No |
+| `selectRows` | Selects rows by 0-based index and returns the selected indexes. Requires allowSelection. | ViewStateMutation | Yes | No |
+| `clearSelection` | Clears all row and cell selections. | ViewStateMutation | Yes | No |
+| `clearGrouping` | Removes all grouping. Requires allowGrouping. | ViewStateMutation | Yes | No |
+| `setAllGroupsExpanded` | Expands or collapses every group. Requires allowGrouping. | ViewStateMutation | No | No |
+| `selectCells` | Selects cells by row index and cell indexes (both 0-based). Requires selectionSettings.mode Cell or Both. | ViewStateMutation | No | No |
+| `deselectRows` | Deselects rows by 0-based index and returns the remaining selection. | ViewStateMutation | Yes | No |
+| `showColumns` | Shows hidden columns found by field name (or by headerText with showBy) and returns the visible fields. | ViewStateMutation | Yes | No |
+| `hideColumns` | Hides columns found by field name (or by headerText with hideBy) and returns the visible fields. | ViewStateMutation | Yes | No |
+| `reorderColumns` | Moves columns before a target column by field name. Requires allowReordering. | ViewStateMutation | No | No |
+| `reorderColumnByIndex` | Moves a column from one 0-based index to another. Requires allowReordering. | ViewStateMutation | No | No |
+| `autoFitColumns` | Auto-fits column widths to their content; all columns when no fields are given. | ViewStateMutation | No | No |
+| `refreshView` | Re-renders the Grid, its columns or its header. | ViewStateMutation | No | No |
+| `setSpinnerVisibility` | Shows or hides the Grid loading spinner. | ViewStateMutation | No | No |
+| `openColumnChooser` | Opens the column chooser dialog. Requires showColumnChooser. | ViewStateMutation | No | No |
+| `findText` | Finds a text in the Grid, highlights the matches and returns the match count. Requires the Find module. | ViewStateMutation | No | No |
+| `navigateFindMatch` | Moves to the next or previous match, or to a 1-based match number, and returns the active match. | ViewStateMutation | No | No |
+| `clearFind` | Clears the find highlights. | ViewStateMutation | No | No |
+| `applyAdvancedFilter` | Applies an advanced-filter rule tree {condition, rules:[{field, operator, value}]}. Requires allowAdvancedFiltering. | ViewStateMutation | Yes | No |
+| `clearAdvancedFilter` | Clears the advanced filter. | ViewStateMutation | Yes | No |
+| `setAllDetailRowsExpanded` | Expands or collapses every detail row. Requires a detailTemplate or childGrid. | ViewStateMutation | No | No |
+| `pinRows` | Pins rows of the current view to the top by primary key. Requires a primary key. | ViewStateMutation | No | No |
+| `unpinRows` | Unpins pinned rows by primary key. | ViewStateMutation | No | No |
+| `enableToolbarItems` | Enables or disables toolbar items by id. Requires a toolbar. | ViewStateMutation | No | No |
+| `cancelEdit` | Cancels the current edit and discards the unsaved changes. Requires editing. | ViewStateMutation | No | No |
+| `setCellValue` | Updates one cell by primary key and field and returns the key; dryRun previews. Needs the field in webMcpSettings.writableFields. | DataMutation | Yes | Yes |
+| `setRowData` | Updates fields of one record by primary key; dryRun previews. Needs every field in webMcpSettings.writableFields. | DataMutation | Yes | Yes |
+| `addRecord` | Inserts a record at an optional 0-based index; dryRun previews. Needs every field in webMcpSettings.writableFields and editSettings.allowAdding. | DataMutation | Yes | Yes |
+| `deleteRecord` | Deletes one record by primary key or by record data; dryRun previews. Requires editSettings.allowDeleting. Not limited by writableFields. | DataMutation | Yes | Yes |
+| `saveBulkChanges` | Sets the same field values on several records in one step (default: the selected rows); dryRun previews. Needs every changed field in webMcpSettings.writableFields. | DataMutation | Yes | Yes |
+| `changeDataSource` | Replaces the data with an array of records (never a URL) and optional column fields. | DataMutation | No | Yes |
+| `setCellFormula` | Sets or clears a cell formula by primary key and field. Needs the field in webMcpSettings.writableFields; dryRun previews. | DataMutation | No | Yes |
+| `startEdit` | Starts editing the selected row, or a given row and field in batch mode. Requires editSettings.allowEditing. | DataMutation | No | No |
+| `endEdit` | Saves the open edit and returns whether an edit is still open. | DataMutation | No | No |
+| `undoEdit` | Undoes the last edit. Requires editSettings.enableUndoRedo. | DataMutation | No | No |
+| `redoEdit` | Redoes the last undone edit. Requires editSettings.enableUndoRedo. | DataMutation | No | No |
+| `reorderRows` | Moves rows by 0-based index to a new position. Requires allowRowDragAndDrop. | DataMutation | No | No |
+| `exportGrid` | Exports the Grid to Excel, CSV or PDF through the normal download path. Requires the matching export module. | ExternalExport | Yes | Yes |
+| `printData` | Prints the Grid through the browser print dialog. | ExternalExport | No | Yes |
+| `copySelection` | Copies the selected rows or cells to the clipboard, optionally with headers. Requires the Clipboard module. | ExternalExport | No | Yes |
+
 ## Integrating WebMCP tools
 
 Follow these steps to integrate WebMCP support into Syncfusion® Typescript controls. The following example uses the Data Grid control.
