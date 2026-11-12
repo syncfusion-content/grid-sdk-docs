@@ -996,7 +996,7 @@ The following recommendations help maintain a reliable integration between the S
 
 - Verify that the requested record exists before performing update or delete operations.
 - Return `404 Not Found` with a clear error message when a record cannot be found.
-- Reject malformed JSON, missing required fields, nonnumeric values, and duplicate `ProductID` values with `400 Bad Request` or `409 Conflict` as appropriate.
+- Reject malformed JSON, missing required fields, non-numeric values, and duplicate `ProductID` values with `400 Bad Request` or `409 Conflict` as appropriate.
 - Guard conversions and data-file parsing so malformed input does not become an unhandled `500` response.
 - Handle API request failures in the React application, restore server-backed data, and display an actionable message to the user.
 

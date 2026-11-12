@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Pdf export options in React TreeGrid | Syncfusion
-description: Learn here all about Pdf export options in Syncfusion React TreeGrid component of Syncfusion Essential JS 2 and more.
+title: PDF export options in React TreeGrid | Syncfusion
+description: Learn here all about PDF export options in Syncfusion React TreeGrid component of Syncfusion Essential JS 2 and more.
 control: Pdf export options 
 platform: grid-sdk
 documentation: ug

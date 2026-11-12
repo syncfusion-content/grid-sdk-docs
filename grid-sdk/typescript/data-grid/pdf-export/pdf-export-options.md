@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Pdf export options in TypeScript Grid control | Syncfusion
-description: Learn here all about Pdf export options in Syncfusion TypeScript Grid control of Syncfusion Essential JS 2 and more.
+title: PDF export options in TypeScript Grid control | Syncfusion
+description: Learn here all about PDF export options in Syncfusion TypeScript Grid control of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Pdf export options 
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Pdf Export Options in TypeScript Grid control
+# PDF Export Options in TypeScript Grid control
 
 The TypeScript Grid control allows you to customize the PDF export options functionality. This flexibility enables you to have greater control over the exported content and layout to meet your specific requirements.
 

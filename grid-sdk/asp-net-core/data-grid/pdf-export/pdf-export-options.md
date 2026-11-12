@@ -7,7 +7,7 @@ control: PDF Export Options
 documentation: ug
 ---
 
-# Pdf Export Options in ASP.NET Core Grid component
+# PDF Export Options in ASP.NET Core Grid component
 
 The Syncfusion ASP.NET Core Grid component allows you to customize the PDF export options functionality. This flexibility enables you to have greater component over the exported content and layout to meet your specific requirements.
 

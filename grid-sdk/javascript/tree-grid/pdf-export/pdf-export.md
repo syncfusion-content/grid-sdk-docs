@@ -41,8 +41,7 @@ PDF export provides an option for exporting multiple treegrids to same file. In 
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/treegrid/multiplepdfexport-cs1" %}
-{% endif %} -->
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/treegrid/multiplepdfexport-cs1" %} -->
 
 <!--  Export current page
 
@@ -58,8 +57,7 @@ PDF export provides an option to export the current page into PDF. To export cur
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/treegrid/pdfexport-cs11" %}
-{% endif %} -->
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/treegrid/pdfexport-cs11" %} -->
 
 ## Custom data source
 

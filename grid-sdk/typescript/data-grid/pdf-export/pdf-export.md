@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Pdf export in TypeScript Grid control | Syncfusion
-description: Learn here all about Pdf export in Syncfusion TypeScript Grid control of Syncfusion Essential JS 2 and more.
+title: PDF export in TypeScript Grid control | Syncfusion
+description: Learn here all about PDF export in Syncfusion TypeScript Grid control of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Pdf export 
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Pdf export in TypeScript Grid control
+# PDF export in TypeScript Grid control
 
 The PDF export feature in the TypeScript Grid allows you to export grid data to a PDF document, providing the ability to generate printable reports or share data in a standardized format.
 

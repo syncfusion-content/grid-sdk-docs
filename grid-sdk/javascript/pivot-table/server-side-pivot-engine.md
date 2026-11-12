@@ -37,7 +37,7 @@ This section explains how to connect the Pivot Table to the server-side Pivot En
 Run the **PivotController** application (downloaded and installed in the previous section) in Visual Studio. This hosts the server-side Pivot Engine on a local server, typically at a URL like `https://localhost:44350/api/pivot/post`. Ensure the application is running before proceeding.
 
 2. **Configure the Pivot Table for server-side mode**  
-In your Javascript application, update the Pivot Table’s settings to connect to the server-side Pivot Engine. Set the [`mode`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/datasourcesettingsmodel#mode) property in the [`dataSourceSettings`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/datasourcesettings) to `Server`. Then, specify the URL of the running **PivotController** application in the [`url`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/datasourcesettings#url) property.
+In your JavaScript application, update the Pivot Table’s settings to connect to the server-side Pivot Engine. Set the [`mode`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/datasourcesettingsmodel#mode) property in the [`dataSourceSettings`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/datasourcesettings) to `Server`. Then, specify the URL of the running **PivotController** application in the [`url`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/datasourcesettings#url) property.
 
 ```javascript
 var pivotObj = new ej.pivotview.PivotView({
@@ -79,14 +79,14 @@ pivotObj.appendTo('#PivotTable');
 
 ```
 
-4. **Run the Javascript application**  
-Launch your Javascript application to view the Pivot Table. The Pivot Table will connect to the server-side Pivot Engine, retrieve the processed data, and display the results based on the configured report.
+4. **Run the JavaScript application**  
+Launch your JavaScript application to view the Pivot Table. The Pivot Table will connect to the server-side Pivot Engine, retrieve the processed data, and display the results based on the configured report.
 
 ![Pivot Table demo using server-side pivot engine](./images/server-side-demo.png)
 
 ## Available configurations in Server-side application
 
-This section explains how to set up and use different data sources with the server-side Pivot Engine in the Javascript [Pivot Table](https://ej2.syncfusion.com/javascript/documentation/pivotview/getting-started).
+This section explains how to set up and use different data sources with the server-side Pivot Engine in the JavaScript [Pivot Table](https://ej2.syncfusion.com/javascript/documentation/pivotview/getting-started).
 
 ### Supportive Data Sources
 

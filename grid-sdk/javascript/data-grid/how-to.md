@@ -895,7 +895,7 @@ Cordova application does not support direct file download. So we have to use the
 
 You can export the filtered data by defining the resulted data in `exportProperties.dataSource` before export.
 
-In the below Pdf exporting demo, We have gotten the filtered data by applying filter query to the grid data and then defines the resulted data in `exportProperties.dataSource` and pass it to `pdfExport` method.
+In the below PDF exporting demo, We have gotten the filtered data by applying filter query to the grid data and then defines the resulted data in `exportProperties.dataSource` and pass it to `pdfExport` method.
 
 
 {% tabs %}

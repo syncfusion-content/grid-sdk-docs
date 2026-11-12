@@ -114,9 +114,9 @@ In the **PivotController.cs** file, define a **Get** method that calls **FetchSQ
 
 This section explains how to connect the Pivot Table component to a Microsoft SQL Server database by retrieving data from the Web API service created in the previous section.
 
-### Step 1: Set Up the Javascript Pivot Table
-1. Download the Javascript Pivot Table sample from the [GitHub](https://github.com/SyncfusionExamples/how-to-bind-SQL-database-to-pivot-table) repository.
-2. Ensure your Javascript project is configured with the necessary EJ2 Pivot Table dependencies by following the [Getting Started](https://ej2.syncfusion.com/javascript/documentation/pivotview/getting-started) documentation.
+### Step 1: Set Up the JavaScript Pivot Table
+1. Download the JavaScript Pivot Table sample from the [GitHub](https://github.com/SyncfusionExamples/how-to-bind-SQL-database-to-pivot-table) repository.
+2. Ensure your JavaScript project is configured with the necessary EJ2 Pivot Table dependencies by following the [Getting Started](https://ej2.syncfusion.com/javascript/documentation/pivotview/getting-started) documentation.
 
 ### Step 2: Configure the Web API URL in the Pivot Table
 1. In the **index.js** file, configure the Pivot Table to use the hosted Web API URL (`https://localhost:7139/pivot`) by setting the [url](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/dataSourceSettings#url) property within the [dataSourceSettings](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/dataSourceSettings) object.
@@ -160,11 +160,11 @@ pivotObj.appendTo('#PivotView');
 ```
 
 ### Step 4: Run and Verify the Pivot Table
-1. Run the Javascript application.
+1. Run the JavaScript application.
 2. The Pivot Table will display the data fetched from the SQL Server database via the Web API, structured according to the defined report.
 3. The resulting Pivot Table will look like this:
 
 ![Pivot Table bound with SQL database](../images/sql-data-binding.png)
 
 ### Additional Resources
-Explore a complete example of the Javascript Pivot Table integrated with an ASP.NET Core Web Application to fetch data from a SQL Server database in the [GitHub](https://github.com/SyncfusionExamples/how-to-bind-SQL-database-to-pivot-table) repository.
+Explore a complete example of the JavaScript Pivot Table integrated with an ASP.NET Core Web Application to fetch data from a SQL Server database in the [GitHub](https://github.com/SyncfusionExamples/how-to-bind-SQL-database-to-pivot-table) repository.

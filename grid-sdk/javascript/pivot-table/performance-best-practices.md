@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Performance Best Practices in ##Platform_Name## Pivot Table
 
-Performance optimization is crucial when working with large datasets in the [Syncfusion<sup style="font-size:70%">&reg;</sup> Javascript Pivot Table](https://www.syncfusion.com/javascript-ui-controls/js-pivot-table). This documentation provides some best practices to empower your data analysis and enhance the user experience.
+Performance optimization is crucial when working with large datasets in the [Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript Pivot Table](https://www.syncfusion.com/javascript-ui-controls/js-pivot-table). This documentation provides some best practices to empower your data analysis and enhance the user experience.
 
 ## How do I improve the loading performance of the Pivot Table?
 
@@ -58,7 +58,7 @@ For more information on implementing the data compression in the Pivot Table, yo
 
 ### Defer layout update
 
-The Defer Layout Update feature in the Pivot Table allows end-users to perform various operations, such as adding, removing, and rearranging fields, filtering, sorting, changing aggregation types, and more, without immediately updating the Pivot Table. The efficiency of this process lies in allowing end-users to complete their modifications. The final application of these changes occurs when end-users click the **Apply** button in the Field List UI. This action triggers the Pivot Table to update based on the last modified report. By deferring the layout update until precisely requested, the Javascript Pivot Table remains unchanged initially, ensuring minimal resource utilization and avoiding frequent re-rendering until the end-user explicitly applies the modifications.
+The Defer Layout Update feature in the Pivot Table allows end-users to perform various operations, such as adding, removing, and rearranging fields, filtering, sorting, changing aggregation types, and more, without immediately updating the Pivot Table. The efficiency of this process lies in allowing end-users to complete their modifications. The final application of these changes occurs when end-users click the **Apply** button in the Field List UI. This action triggers the Pivot Table to update based on the last modified report. By deferring the layout update until precisely requested, the JavaScript Pivot Table remains unchanged initially, ensuring minimal resource utilization and avoiding frequent re-rendering until the end-user explicitly applies the modifications.
 
 For more information on defer layout updates, you can refer to the documentation [here](https://ej2.syncfusion.com/javascript/documentation/pivotview/defer-update).
 
