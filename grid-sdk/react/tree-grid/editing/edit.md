@@ -140,4 +140,4 @@ In the following example, editing is disabled for the *Start Date* column.
 
 Editing relies on the primary key value of the selected row. If [columns.isPrimaryKey](https://ej2.syncfusion.com/react/documentation/api/treegrid/column#isprimarykey) is not defined, edit or delete actions target the first row.
 
-> Refer to the [React TreeGrid](https://www.syncfusion.com/react-ui-components/react-tree-grid) feature tour for key capabilities. Explore the [React TreeGrid example](https://ej2.syncfusion.com/react/demos#/material/treegrid/treegrid-overview) to learn how to present and manipulate data.
+> Refer to the [React TreeGrid](https://www.syncfusion.com/react-ui-components/react-tree-grid) feature tour for key capabilities. Explore the [React TreeGrid example](https://ej2.syncfusion.com/react/demos/#material/treegrid/treegrid-overview) to learn how to present and manipulate data.

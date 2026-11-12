@@ -49,4 +49,4 @@ Aggregate values for child rows are calculated and displayed in the parent row f
 {% endtabs %}
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/treegrid/aggregate-cs1" %}
 
-> Refer to the [React TreeGrid](https://www.syncfusion.com/react-ui-components/react-tree-grid) feature tour page for feature highlights. Explore the [React TreeGrid example](https://ej2.syncfusion.com/react/demos#/material/treegrid/treegrid-overview) to learn how to present and manipulate data.
+> Refer to the [React TreeGrid](https://www.syncfusion.com/react-ui-components/react-tree-grid) feature tour page for feature highlights. Explore the [React TreeGrid example](https://ej2.syncfusion.com/react/demos/#material/treegrid/treegrid-overview) to learn how to present and manipulate data.

@@ -119,7 +119,7 @@ The Grid supports custom edit templates for foreign key columns. By default, a `
 - **`read`**: Retrieves the selected value from the component when editing ends.
 - **`destroy`**: Cleans up the component when editing ends.
 
-In the following example, an [AutoComplete](https://ej2.syncfusion.com/react/demos#/bootstrap5/auto-complete/default) component is rendered as the edit template for the "EmployeeID" foreign key column. The [dataSource](https://ej2.syncfusion.com/react/documentation/api/auto-complete#datasource) property of the `AutoComplete` component is set to the employees data, and the `fields` property is configured to display the "FirstName" field as the value.
+In the following example, an [AutoComplete](https://ej2.syncfusion.com/react/demos/#bootstrap5/auto-complete/default) component is rendered as the edit template for the "EmployeeID" foreign key column. The [dataSource](https://ej2.syncfusion.com/react/documentation/api/auto-complete#datasource) property of the `AutoComplete` component is set to the employees data, and the `fields` property is configured to display the "FirstName" field as the value.
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
@@ -146,7 +146,7 @@ The Grid supports customization of the filtering UI for foreign key columns usin
 - **`ui.write`**: Initializes the filter component with existing filter values.
 - **`ui.read`**: Extracts the filter value when filtering is applied.
 
-In the following example, a [DropDownList](https://ej2.syncfusion.com/react/demos#/bootstrap5/drop-down-list/default) component is rendered as the filter UI for the "EmployeeID" foreign key column. The [dataSource](https://ej2.syncfusion.com/react/documentation/api/drop-down-list#datasource) property of the `DropDownList` component is set to the employees data, with the `fields` property configured to display the "FirstName" field as the `text` and the "EmployeeID" field as the `value`. The `value` property is bound to the current filter value of the column.
+In the following example, a [DropDownList](https://ej2.syncfusion.com/react/demos/#bootstrap5/drop-down-list/default) component is rendered as the filter UI for the "EmployeeID" foreign key column. The [dataSource](https://ej2.syncfusion.com/react/documentation/api/drop-down-list#datasource) property of the `DropDownList` component is set to the employees data, with the `fields` property configured to display the "FirstName" field as the `text` and the "EmployeeID" field as the `value`. The `value` property is bound to the current filter value of the column.
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}

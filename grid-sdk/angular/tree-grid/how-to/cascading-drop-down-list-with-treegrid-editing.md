@@ -26,4 +26,4 @@ In the following example, cascading DropDownLists are rendered for the **Priorit
 
 {% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/refresh-cs2" %}
 
-> For more details, refer to the [`Angular TreeGrid`](https://www.syncfusion.com/angular-components/angular-tree-grid) feature tour page. You can also explore the [`Angular TreeGrid example`](https://ej2.syncfusion.com/angular/demos#/material/treegrid/treegrid-overview) to learn how to present and manipulate data.
+> For more details, refer to the [`Angular TreeGrid`](https://www.syncfusion.com/angular-components/angular-tree-grid) feature tour page. You can also explore the [`Angular TreeGrid example`](https://ej2.syncfusion.com/angular/demos/#material/treegrid/treegrid-overview) to learn how to present and manipulate data.

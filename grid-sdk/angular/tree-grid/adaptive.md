@@ -29,4 +29,4 @@ The following example demonstrates adaptive dialog rendering:
 
 {% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/adaptive-cs1" %}
 
-For more information on TreeGrid features, see the [Angular TreeGrid feature tour](https://www.syncfusion.com/angular-components/angular-tree-grid) or explore the [TreeGrid live example](https://ej2.syncfusion.com/angular/demos#/material/treegrid/treegrid-overview) to see adaptive UI functionality in action.
+For more information on TreeGrid features, see the [Angular TreeGrid feature tour](https://www.syncfusion.com/angular-components/angular-tree-grid) or explore the [TreeGrid live example](https://ej2.syncfusion.com/angular/demos/#material/treegrid/treegrid-overview) to see adaptive UI functionality in action.

@@ -52,4 +52,4 @@ You can add a toolbar to the bottom of the TreeGrid by configuring it within the
 
 * [Toolbar Component Getting Started](../../toolbar/getting-started)
 
-> Refer to Syncfusion<sup style="font-size:70%">&reg;</sup> [`Angular Tree Grid`](https://www.syncfusion.com/angular-components/angular-tree-grid) feature tour page for its groundbreaking feature representations. Also, explore Syncfusion<sup style="font-size:70%">&reg;</sup> [`Angular Tree Grid example`](https://ej2.syncfusion.com/angular/demos#/material/treegrid/treegrid-overview) to know how to present and manipulate data.
+> Refer to Syncfusion<sup style="font-size:70%">&reg;</sup> [`Angular Tree Grid`](https://www.syncfusion.com/angular-components/angular-tree-grid) feature tour page for its groundbreaking feature representations. Also, explore Syncfusion<sup style="font-size:70%">&reg;</sup> [`Angular Tree Grid example`](https://ej2.syncfusion.com/angular/demos/#material/treegrid/treegrid-overview) to know how to present and manipulate data.

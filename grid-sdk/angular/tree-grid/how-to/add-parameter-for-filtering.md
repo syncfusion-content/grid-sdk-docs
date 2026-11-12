@@ -26,4 +26,4 @@ In the following example, the `TaskID` and `Duration` columns are numeric column
 
 {% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/refresh-cs1" %}
 
-> Refer to the [`Angular TreeGrid`](https://www.syncfusion.com/angular-components/angular-tree-grid) feature tour page for more information about available features. You can also view the [`Angular TreeGrid example`](https://ej2.syncfusion.com/angular/demos#/material/treegrid/treegrid-overview) to learn how to present and manipulate data.
+> Refer to the [`Angular TreeGrid`](https://www.syncfusion.com/angular-components/angular-tree-grid) feature tour page for more information about available features. You can also view the [`Angular TreeGrid example`](https://ej2.syncfusion.com/angular/demos/#material/treegrid/treegrid-overview) to learn how to present and manipulate data.

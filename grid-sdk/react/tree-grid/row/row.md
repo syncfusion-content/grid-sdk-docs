@@ -87,4 +87,4 @@ In the following example, the row with `TaskID` as **3** is set to **90px** usin
 
  {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/treegrid/rows-cs2" %}
 
-> Refer to the [React TreeGrid](https://www.syncfusion.com/react-ui-components/react-tree-grid) feature tour for key capabilities. Explore the [React TreeGrid examples](https://ej2.syncfusion.com/react/demos#/material/treegrid/treegrid-overview) to see data presentation and manipulation.
+> Refer to the [React TreeGrid](https://www.syncfusion.com/react-ui-components/react-tree-grid) feature tour for key capabilities. Explore the [React TreeGrid examples](https://ej2.syncfusion.com/react/demos/#material/treegrid/treegrid-overview) to see data presentation and manipulation.

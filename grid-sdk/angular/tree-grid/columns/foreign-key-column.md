@@ -26,4 +26,4 @@ To display foreign key values during initial rendering, utilize the [queryCellIn
 
 {% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/refresh-cs7" %}
 
-> For feature highlights and additional guidance, see the [Angular TreeGrid feature tour page](https://www.syncfusion.com/angular-components/angular-tree-grid). More comprehensive demonstrations for data presentation and manipulation are available in the [Angular TreeGrid example](https://ej2.syncfusion.com/angular/demos#/material/treegrid/treegrid-overview).
+> For feature highlights and additional guidance, see the [Angular TreeGrid feature tour page](https://www.syncfusion.com/angular-components/angular-tree-grid). More comprehensive demonstrations for data presentation and manipulation are available in the [Angular TreeGrid example](https://ej2.syncfusion.com/angular/demos/#material/treegrid/treegrid-overview).

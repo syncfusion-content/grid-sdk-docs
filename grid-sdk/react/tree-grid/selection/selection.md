@@ -65,4 +65,4 @@ The following screenshot illustrates touch selection on a device.
 <img src="../images/touch-selection.png" alt="Touch interaction" style="width:320px;height: 620px">
 <!-- markdownlint-enable MD033 -->
 
-> For feature highlights, see the [React TreeGrid](https://www.syncfusion.com/react-ui-components/react-tree-grid) feature tour. Examples are available in the [React TreeGrid example](https://ej2.syncfusion.com/react/demos#/material/treegrid/treegrid-overview) demos showcasing data presentation and manipulation.
+> For feature highlights, see the [React TreeGrid](https://www.syncfusion.com/react-ui-components/react-tree-grid) feature tour. Examples are available in the [React TreeGrid example](https://ej2.syncfusion.com/react/demos/#material/treegrid/treegrid-overview) demos showcasing data presentation and manipulation.

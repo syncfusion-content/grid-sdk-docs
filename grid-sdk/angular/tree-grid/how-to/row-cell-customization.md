@@ -26,4 +26,4 @@ In the demonstration below, command buttons are customized and shown only for pa
 
 {% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/refresh-cs15" %}
 
-> For comprehensive feature overviews, visit the [`Angular TreeGrid feature tour page`](https://www.syncfusion.com/angular-components/angular-tree-grid). Additional practical examples are available in the [`Angular TreeGrid example`](https://ej2.syncfusion.com/angular/demos#/material/treegrid/treegrid-overview).
+> For comprehensive feature overviews, visit the [`Angular TreeGrid feature tour page`](https://www.syncfusion.com/angular-components/angular-tree-grid). Additional practical examples are available in the [`Angular TreeGrid example`](https://ej2.syncfusion.com/angular/demos/#material/treegrid/treegrid-overview).

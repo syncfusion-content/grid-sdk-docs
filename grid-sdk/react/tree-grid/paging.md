@@ -91,4 +91,4 @@ By default, the pager is rendered at the bottom. Render the pager at the top usi
 > * [created](https://ej2.syncfusion.com/react/documentation/api/pager#created): Triggered when the pager is created.
 > * [click](https://ej2.syncfusion.com/react/documentation/api/pager#click): Triggered when numeric items are clicked.
 > * [dropDownChanged](https://ej2.syncfusion.com/react/documentation/api/pager#dropdownchanged): Triggered when the pageSize dropdown value changes.
-> Refer to the [React TreeGrid](https://www.syncfusion.com/react-ui-components/react-tree-grid) feature tour for key capabilities. Explore the [React TreeGrid example](https://ej2.syncfusion.com/react/demos#/material/treegrid/treegrid-overview) to learn how to present and manipulate data.
+> Refer to the [React TreeGrid](https://www.syncfusion.com/react-ui-components/react-tree-grid) feature tour for key capabilities. Explore the [React TreeGrid example](https://ej2.syncfusion.com/react/demos/#material/treegrid/treegrid-overview) to learn how to present and manipulate data.

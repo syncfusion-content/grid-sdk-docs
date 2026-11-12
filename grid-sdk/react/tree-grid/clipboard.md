@@ -107,4 +107,4 @@ Copy the content of a cell or a group of cells with <kbd>Ctrl + C</kbd> and past
 
 * Since the string values are not parsed to number and date type, so when the copied string type cells are pasted to number type cells then it will display as **NaN**. For date type cells, when the copied string format cells are pasted to date type cells then it will display as an **empty cell**.
 
-> Refer to the [React TreeGrid](https://www.syncfusion.com/react-ui-components/react-tree-grid) feature tour page for highlights. Explore the [React TreeGrid example](https://ej2.syncfusion.com/react/demos#/material/treegrid/treegrid-overview) to learn how to present and manipulate data.
+> Refer to the [React TreeGrid](https://www.syncfusion.com/react-ui-components/react-tree-grid) feature tour page for highlights. Explore the [React TreeGrid example](https://ej2.syncfusion.com/react/demos/#material/treegrid/treegrid-overview) to learn how to present and manipulate data.

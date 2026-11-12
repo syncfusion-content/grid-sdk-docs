@@ -227,4 +227,4 @@ RTL support allows the TreeGrid's text direction and layout to switch from left 
 * [Internationalization](https://ej2.syncfusion.com/angular/documentation/common/globalization/internationalization)
 * [Localization](https://ej2.syncfusion.com/angular/documentation/common/globalization/localization)
 
-> To discover more features, see the [Angular TreeGrid feature tour](https://www.syncfusion.com/angular-components/angular-tree-grid). Explore the [Angular TreeGrid example](https://ej2.syncfusion.com/angular/demos#/tailwind3/treegrid/treegrid-overview) for usage and data manipulation.
+> To discover more features, see the [Angular TreeGrid feature tour](https://www.syncfusion.com/angular-components/angular-tree-grid). Explore the [Angular TreeGrid example](https://ej2.syncfusion.com/angular/demos/#tailwind3/treegrid/treegrid-overview) for usage and data manipulation.

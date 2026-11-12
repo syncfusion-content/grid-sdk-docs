@@ -178,4 +178,4 @@ The following example demonstrates how to add and delete records from datasource
 
 {% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/refresh-datasource-cs2" %}
 
-> For further details, visit the [`Angular TreeGrid feature tour`](https://www.syncfusion.com/angular-components/angular-tree-grid) to explore its advanced capabilities. Additionally, explore the [`Angular TreeGrid example`](https://ej2.syncfusion.com/angular/demos#/material/treegrid/treegrid-overview) to see data presentation and manipulation in action.
+> For further details, visit the [`Angular TreeGrid feature tour`](https://www.syncfusion.com/angular-components/angular-tree-grid) to explore its advanced capabilities. Additionally, explore the [`Angular TreeGrid example`](https://ej2.syncfusion.com/angular/demos/#material/treegrid/treegrid-overview) to see data presentation and manipulation in action.

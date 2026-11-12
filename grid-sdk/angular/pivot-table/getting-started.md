@@ -131,7 +131,7 @@ Use the following command to run the application:
 ng serve --open
 ```
 
-> You can also explore our [Angular Pivot Table example](https://ej2.syncfusion.com/angular/demos#/tailwind3/pivot-table/default) to see an interactive sample with drill-up and drill-down options, and [API documentation](https://ej2.syncfusion.com/angular/documentation/api/pivotview/index-default) for more properties and methods.
+> You can also explore our [Angular Pivot Table example](https://ej2.syncfusion.com/angular/demos/#tailwind3/pivot-table/default) to see an interactive sample with drill-up and drill-down options, and [API documentation](https://ej2.syncfusion.com/angular/documentation/api/pivotview/index-default) for more properties and methods.
 
 ## See also
 

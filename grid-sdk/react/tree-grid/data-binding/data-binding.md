@@ -732,4 +732,4 @@ The following example demonstrates how to add and delete records from the dataso
 
  {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/treegrid/refresh-cs8" %}
 
-> Refer to our [React TreeGrid](https://www.syncfusion.com/react-ui-components/react-tree-grid) feature tour page for key feature highlights. Explore our [React TreeGrid example](https://ej2.syncfusion.com/react/demos#/material/treegrid/treegrid-overview) to learn how to present and manipulate data.
+> Refer to our [React TreeGrid](https://www.syncfusion.com/react-ui-components/react-tree-grid) feature tour page for key feature highlights. Explore our [React TreeGrid example](https://ej2.syncfusion.com/react/demos/#material/treegrid/treegrid-overview) to learn how to present and manipulate data.

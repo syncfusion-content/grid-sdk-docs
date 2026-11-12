@@ -82,4 +82,4 @@ Context menu items can be enabled or disabled dynamically using the [`enableItem
 {% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/context-menu-cs3" %}
 
 > To show or hide a context menu item for specific areas within the TreeGrid, use the [`target`](https://ej2.syncfusion.com/angular/documentation/api/grid/contextMenuItemModel#target) property.
-> For a complete overview of features, visit the [Angular TreeGrid feature tour](https://www.syncfusion.com/angular-components/angular-tree-grid). Explore the [Angular TreeGrid example](https://ej2.syncfusion.com/angular/demos#/material/treegrid/treegrid-overview) to see how data can be presented and manipulated.
+> For a complete overview of features, visit the [Angular TreeGrid feature tour](https://www.syncfusion.com/angular-components/angular-tree-grid). Explore the [Angular TreeGrid example](https://ej2.syncfusion.com/angular/demos/#material/treegrid/treegrid-overview) to see how data can be presented and manipulated.

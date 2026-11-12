@@ -182,7 +182,7 @@ It provides two parameters:
 * `data`: Contains detailed information about the clicked cell, including its value, row and column headers, position, and whether it’s a summary cell.
 * `nativeEvent`: Represents the original browser event triggered by the click, useful for advanced event handling.
 
-In the example below, when a hyperlink cell is clicked, a custom attribute (**data-url**) is added to the cell to redirect users to the Syncfusion ASP.NET MVC Pivot Table Hyperlink [Demo](https://ej2.syncfusion.com/demos#/tailwind3/pivot-table/hyper-link.html). The `cancel` property is set to **false** to enable this interaction.
+In the example below, when a hyperlink cell is clicked, a custom attribute (**data-url**) is added to the cell to redirect users to the Syncfusion ASP.NET MVC Pivot Table Hyperlink [Demo](https://ej2.syncfusion.com/demos/#tailwind3/pivot-table/hyper-link.html). The `cancel` property is set to **false** to enable this interaction.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}

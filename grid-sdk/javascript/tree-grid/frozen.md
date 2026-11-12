@@ -88,4 +88,4 @@ Freeze Direction feature has the below limitations, along with the above mention
 * Infinite scroll cache mode
 * Freeze direction in the stacked header is not compatible with column reordering.
 
-> You can refer to our [`JavaScript Tree Grid`](https://www.syncfusion.com/javascript-ui-controls/js-tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our JavaScript tree grid example [`JavaScript Tree Grid example`](https://ej2.syncfusion.com/demos#/material/tree-grid/treegrid-overview.html) to knows how to present and manipulate data.
+> You can refer to our [`JavaScript Tree Grid`](https://www.syncfusion.com/javascript-ui-controls/js-tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our JavaScript tree grid example [`JavaScript Tree Grid example`](https://ej2.syncfusion.com/demos/#material/tree-grid/treegrid-overview.html) to knows how to present and manipulate data.

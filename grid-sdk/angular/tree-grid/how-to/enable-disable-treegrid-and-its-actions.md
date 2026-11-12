@@ -60,4 +60,4 @@ In the demo below, clicking the button enables or disables the TreeGrid and its 
 
 {% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/enable-disable-actions-cs1" %}
 
-> For detailed feature information, refer to the [`Angular TreeGrid feature tour page`](https://www.syncfusion.com/angular-components/angular-tree-grid). More examples on presenting and manipulating data are available in the [`Angular TreeGrid example`](https://ej2.syncfusion.com/angular/demos#/material/treegrid/treegrid-overview).
+> For detailed feature information, refer to the [`Angular TreeGrid feature tour page`](https://www.syncfusion.com/angular-components/angular-tree-grid). More examples on presenting and manipulating data are available in the [`Angular TreeGrid example`](https://ej2.syncfusion.com/angular/demos/#material/treegrid/treegrid-overview).

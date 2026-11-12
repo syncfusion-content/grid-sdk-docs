@@ -52,4 +52,4 @@ Aggregate values can be calculated for child rows and displayed in the parent ro
   
 {% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/aggregate-cs1" %}
 
-> For more on TreeGrid's groundbreaking features, refer to the [`Angular TreeGrid feature tour`](https://www.syncfusion.com/angular-components/angular-tree-grid). For sample demonstrations, explore the [`Angular TreeGrid example`](https://ej2.syncfusion.com/angular/demos#/material/treegrid/treegrid-overview) to see data presentation and manipulation in action.
+> For more on TreeGrid's groundbreaking features, refer to the [`Angular TreeGrid feature tour`](https://www.syncfusion.com/angular-components/angular-tree-grid). For sample demonstrations, explore the [`Angular TreeGrid example`](https://ej2.syncfusion.com/angular/demos/#material/treegrid/treegrid-overview) to see data presentation and manipulation in action.

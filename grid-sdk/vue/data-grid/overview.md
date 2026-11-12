@@ -207,7 +207,7 @@ Match the Vue Data Grid to the application's visual design using [built-in theme
 ## Support and resources
 
 - **Questions?** Visit the [Syncfusion support portal](https://www.syncfusion.com/support)
-- **Code Examples?** Browse [Data Grid demos](https://ej2.syncfusion.com/vue/demos#/tailwind3/grid/grid-overview) and samples
+- **Code Examples?** Browse [Data Grid demos](https://ej2.syncfusion.com/vue/demos/#tailwind3/grid/grid-overview) and samples
 - **API Details?** See [Data Grid API reference](https://ej2.syncfusion.com/vue/documentation/api/grid/index-default)
 - **Community?** Join the [Syncfusion community forum](https://www.syncfusion.com/forums/vue)
 - **What's New?** Check [Release Notes](../../Release-Notes)

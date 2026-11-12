@@ -180,7 +180,7 @@ this.gridInstance.changeDataSource(employeeData);
 {% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/data-datasource" %}
 
 > * The Grid state persistence feature does not support the `changeDataSource` method.
-> * In this document, the above sample uses local data for the `changeDataSource` method. For those using remote data sources, refer to the [FlexibleData](https://ej2.syncfusion.com/angular/demos#/bootstrap5/grid/flexible-data) resource.
+> * In this document, the above sample uses local data for the `changeDataSource` method. For those using remote data sources, refer to the [FlexibleData](https://ej2.syncfusion.com/angular/demos/#bootstrap5/grid/flexible-data) resource.
 
 ## Prevent converting local time zone format for date column
 
