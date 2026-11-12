@@ -2,7 +2,7 @@
 layout: post
 title: Properties in .NET MAUI Smart Data Grid | Syncfusion®
 description: Reference for properties, methods, and events of the Syncfusion® .NET MAUI SmartDataGrid, including AI assist, views, toolbar, and commands.
-platform: grid-sdk
+platform: maui
 control: SfSmartDataGrid
 documentation: ug
 ---
