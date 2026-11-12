@@ -266,7 +266,7 @@ The following example demonstrates how to load a translation object for **French
 
 ### Switch the different localization
 
-The Synfusion JavaScript Grid allows you to switch the localization from one culture to another culture. This will be useful when you want to change the localization based on your requirements. 
+The Syncfusion JavaScript Grid allows you to switch the localization from one culture to another culture. This will be useful when you want to change the localization based on your requirements. 
 
 To switch to a different localization, follow these steps:
 
@@ -349,7 +349,7 @@ The Right to Left (RTL) feature in the JavaScript Grid allows you to switch the 
 To enable RTL in the Grid, you need to set the [enableRtl](https://ej2.syncfusion.com/javascript/documentation/api/grid#enablertl) property to **true**. By setting `enableRtl`, the grid control's text direction and layout will be adjusted to support right-to-left languages.
 
  
-In the following example, the [EJ2 Toggle Switch Button](../switch/es5-getting-started) control is added to enable or diable the Right to Left (RTL) feature for the **Arabic (ar-AE)** locale. When the switch is toggled, the [change](https://ej2.syncfusion.com/javascript/documentation/api/switch#change) event is triggered and the `enableRtl` property of the grid is updated accordingly. 
+In the following example, the [EJ2 Toggle Switch Button](../switch/es5-getting-started) control is added to enable or disable the Right to Left (RTL) feature for the **Arabic (ar-AE)** locale. When the switch is toggled, the [change](https://ej2.syncfusion.com/javascript/documentation/api/switch#change) event is triggered and the `enableRtl` property of the grid is updated accordingly. 
 
 
 

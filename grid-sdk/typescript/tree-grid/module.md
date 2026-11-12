@@ -21,7 +21,7 @@ The available TreeGrid modules are:
 | [`Filter`](../treegrid/filtering) | `Filter` | Inject this module to use filtering feature.|
 | [`Edit`](../treegrid/editing) | `Edit` | Inject this module to use editing feature.|
 | [`Aggregate`](../treegrid/aggregates) | `Aggregate` | Inject this module to use aggregate feature.|
-| [`ColumnChooser`](https://ej2.syncfusion.com/documentation/api/treegrid/columns/column-chooser) | `ColumnChooser` | Inject this module to use column chooser feature.|
+| [`ColumnChooser`](../tree-grid/columns/column-chooser) | `ColumnChooser` | Inject this module to use column chooser feature.|
 | [`ColumnMenu`](../treegrid/columns/column-menu) | `ColumnMenu` | Inject this module to use column menu feature.|
 | [`CommandColumn`](../treegrid/editing/command-column-editing) | `CommandColumn` | Inject this module to use command column feature.|
 | [`ContextMenu`](../treegrid/context-menu) | `ContextMenu` | Inject this module to use context menu feature.|

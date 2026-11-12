@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Sorting in ASP.NET MVC Grid Component
+title: Sorting in ASP.NET MVC Grid | Syncfusion
 description: Learn here all about Sorting in Syncfusion ASP.NET MVC Grid component of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Sorting
@@ -9,7 +9,7 @@ documentation: ug
 
 # Sorting in ASP.NET MVC Grid component
 
-You can customize the appearance of the sorting icons and multi sorting icons in the Syncfusion ASP.NET MVC Grid component using CSS. You can use the available Syncfusion [icons](../../appearance/icons/#material) based on your theme. Here's how to do it:
+You can customize the appearance of the sorting icons and multi sorting icons in the Syncfusion ASP.NET MVC Grid component using CSS. You can use the available Syncfusion [icons](https://ej2.syncfusion.com/aspnetmvc/documentation/appearance/icons#material) based on your theme. Here's how to do it:
 
 ## Customizing the grid sorting icon
 

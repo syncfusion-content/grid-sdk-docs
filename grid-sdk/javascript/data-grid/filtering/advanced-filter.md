@@ -16,7 +16,7 @@ The Syncfusion<sup style="font-size:70%">&reg;</sup> Grid component provides adv
 
 Advanced filtering is enabled by setting the `allowAdvancedFiltering` property to `true`. This adds an **Filter** button to the toolbar, which opens the Query Builder dialog for creating advanced filter conditions.
 
-To use advanced filtering, inject the [AdvancedFilter](https://ej2.syncfusion.com/javascript/documentation/api/grid/advancedfilter) module into the Grid along with the other required modules.
+To use advanced filtering, inject the `AdvancedFilter` module into the Grid along with the other required modules.
 
 
 {% tabs %}

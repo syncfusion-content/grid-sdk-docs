@@ -16,32 +16,32 @@ The available Grid modules are:
 
 | Feature | Module | Description |
 |---------|--------|-------------|
-| [Page](https://ej2.syncfusion.com/documentation/api/grid/page) | `Page` | Inject this module to use paging feature. |
-| [Sort](https://ej2.syncfusion.com/documentation/api/grid/sort) | `Sort` | Inject this module to use sorting feature. |
-| [Filter](https://ej2.syncfusion.com/documentation/api/grid/filter) | `Filter` | Inject this module to use filtering feature. |
-| [AdvancedFilter](https://ej2.syncfusion.com/documentation/api/grid/advancedfilter)| Inject this module to use advanced filtering feature. |
-| [Group](https://ej2.syncfusion.com/documentation/api/grid/group) | `Group` | Inject this module to use grouping feature. |
-| [LazyLoadGroup](https://ej2.syncfusion.com/documentation/api/grid/lazyLoadGroup) | `LazyLoadGroup` | Inject this module to use lazy load grouping feature. |
-| [Edit](https://ej2.syncfusion.com/documentation/api/grid/edit) | `Edit` | Inject this module to use editing feature. |
-| [Formula](https://ej2.syncfusion.com/documentation/api/grid/formula) | `Formula` | Inject this module to use formula feature. |
-| [Aggregate](https://ej2.syncfusion.com/documentation/api/grid/aggregate) | `Aggregate` | Inject this module to use aggregate feature. |
-| [ColumnChooser](https://ej2.syncfusion.com/documentation/api/grid/columnChooser) | `ColumnChooser` | Inject this module to use column chooser feature. |
-| [ColumnMenu](https://ej2.syncfusion.com/documentation/api/grid/columnmenumodule) | `ColumnMenu` | Inject this module to use column menu feature. |
-| [CommandColumn](https://ej2.syncfusion.com/documentation/api/grid/commandColumn) | `CommandColumn` | Inject this module to use command column feature. |
-| [ContextMenu](https://ej2.syncfusion.com/documentation/api/grid/contextMenu) | `ContextMenu` | Inject this module to use context menu feature. |
-| [DetailRow](https://ej2.syncfusion.com/documentation/api/grid/detailRow) | `DetailRow` | Inject this module to use detail template feature. |
-| [ForeignKey](https://ej2.syncfusion.com/documentation/api/grid/foreignkey) | `ForeignKey` | Inject this module to use foreign key feature. |
-| [Freeze](https://ej2.syncfusion.com/documentation/api/grid/freeze) | `Freeze` | Inject this module to use frozen rows and columns feature. |
-| [Resize](https://ej2.syncfusion.com/documentation/api/grid/resize) | `Resize` | Inject this module to use resize feature. |
-| [Reorder](https://ej2.syncfusion.com/documentation/api/grid/reorder) | `Reorder` | Inject this module to use reorder feature. |
-| [RowDD](https://ej2.syncfusion.com/documentation/api/grid/rowdd) | `RowDD` | Inject this module to use row drag and drop feature. |
-| [Search](https://ej2.syncfusion.com/documentation/api/grid/search) | `Search` | Inject this module to use search feature and this is a default injected module. |
-| [Selection](https://ej2.syncfusion.com/documentation/api/grid/selection) | `Selection` | Inject this module to use selection feature and this is a default injected module. |
-| [VirtualScroll](https://ej2.syncfusion.com/documentation/api/grid/virtualscroll) | `VirtualScroll` | Inject this module to use virtual scrolling feature. |
-| [InfiniteScroll](https://ej2.syncfusion.com/documentation/api/grid/infinitescroll) | `InfiniteScroll` | Inject this module to use infinite scrolling feature. |
-| [Toolbar](https://ej2.syncfusion.com/documentation/api/grid/toolbarmodule) | `Toolbar` | Inject this module to use toolbar feature. |
-| [ExcelExport](https://ej2.syncfusion.com/documentation/api/grid/excelexportmodule) | `ExcelExport` | Inject this module to use excel export feature. |
-| [PdfExport](https://ej2.syncfusion.com/documentation/api/grid/pdfexportmodule) | `PdfExport` | Inject this module to use PDF export feature. |
+| [Page](./paging) | `Page` | Inject this module to use paging feature. |
+| [Sort](./sorting.md) | `Sort` | Inject this module to use sorting feature. |
+| [Filter](././filtering/filtering) | `Filter` | Inject this module to use filtering feature. |
+| [AdvancedFilter](././filtering/advanced-filter)| Inject this module to use advanced filtering feature. |
+| [Group](././grouping/grouping) | `Group` | Inject this module to use grouping feature. |
+| [LazyLoadGroup](././grouping/lazy-load-grouping) | `LazyLoadGroup` | Inject this module to use lazy load grouping feature. |
+| [Edit](././editing/edit) | `Edit` | Inject this module to use editing feature. |
+| [Formula](././formula/formula) | `Formula` | Inject this module to use formula feature. |
+| [Aggregate](././aggregates/aggregates) | `Aggregate` | Inject this module to use aggregate feature. |
+| [ColumnChooser](././columns/column-chooser) | `ColumnChooser` | Inject this module to use column chooser feature. |
+| [ColumnMenu](././columns/column-menu) | `ColumnMenu` | Inject this module to use column menu feature. |
+| [CommandColumn](././editing/command-column-editing) | `CommandColumn` | Inject this module to use command column feature. |
+| [ContextMenu](./context-menu) | `ContextMenu` | Inject this module to use context menu feature. |
+| [DetailRow](././row/detail-template) | `DetailRow` | Inject this module to use detail template feature. |
+| [ForeignKey](././columns/foreign-key-column) | `ForeignKey` | Inject this module to use foreign key feature. |
+| [Freeze](././columns/frozen-column) | `Freeze` | Inject this module to use frozen rows and columns feature. |
+| [Resize](././columns/column-resizing) | `Resize` | Inject this module to use resize feature. |
+| [Reorder](././columns/column-reorder) | `Reorder` | Inject this module to use reorder feature. |
+| [RowDD](././row/row-drag-and-drop) | `RowDD` | Inject this module to use row drag and drop feature. |
+| [Search](./searching) | `Search` | Inject this module to use search feature and this is a default injected module. |
+| [Selection](././selection/selection) | `Selection` | Inject this module to use selection feature and this is a default injected module. |
+| [VirtualScroll](././scrolling/virtual-scrolling) | `VirtualScroll` | Inject this module to use virtual scrolling feature. |
+| [InfiniteScroll](././scrolling/infinite-scrolling) | `InfiniteScroll` | Inject this module to use infinite scrolling feature. |
+| [Toolbar](././tool-bar/tool-bar) | `Toolbar` | Inject this module to use toolbar feature. |
+| [ExcelExport](././excel-export/excel-exporting) | `ExcelExport` | Inject this module to use excel export feature. |
+| [PdfExport](././pdf-export/pdf-export) | `PdfExport` | Inject this module to use PDF export feature. |
 
 ## Enabling basic features
 

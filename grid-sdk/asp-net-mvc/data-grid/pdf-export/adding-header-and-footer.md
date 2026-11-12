@@ -25,7 +25,7 @@ To add text in the header or footer of the exported PDF document, follow these s
 2. Set the `Header` or `Footer` property to a string value representing the desired text.
 3. Trigger the PDF export operation.
 
-The following code example demostrates how to add the header in the exported PDF document. 
+The following code example demonstrates how to add the header in the exported PDF document. 
 
 ```typescript
 
@@ -60,7 +60,7 @@ This can be achieved using the `PdfExportProperties` property of the Grid. You c
 
 To add a line in the header or footer of the exported PDF document, you can access the `Header.Contents` or `Footer.Contents` property of the `Header` or `Footer` in the `PdfExportProperties` property of the grid. 
 
-The following code example demostrates how to draw a line in the header of the exported PDF document. 
+The following code example demonstrates how to draw a line in the header of the exported PDF document. 
 
 ```typescript
 
@@ -106,7 +106,7 @@ This can be achieved using the `PdfExportProperties` property of the Grid. You c
 
 To add a page number in the header or footer of the exported PDF document, you can access the `Header.Contents` or `Footer.Contents` property of the `Header` or `Footer` in the `PdfExportProperties` property of the grid. 
 
-The following code example demostrates how to add a page number in the footer of the exported PDF document.
+The following code example demonstrates how to add a page number in the footer of the exported PDF document.
 
 ```typescript
 

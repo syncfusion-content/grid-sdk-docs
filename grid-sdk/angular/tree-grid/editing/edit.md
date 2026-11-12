@@ -149,7 +149,7 @@ import { CommonModule } from '@angular/common';import { DropDownListComponent } 
                             <e-column field='taskName' headerText='Task Name' textAlign='Left' width=180></e-column>
                             <e-column field='priority' headerText='Priority' width=90>
                                 <ng-template #template let-data>
-                                    <a href="#">{{data.priority}}</a>
+                                    <a href="#" aria-label="task priority detail">{{data.priority}}</a>
                                 </ng-template>
                                 <ng-template #editTemplate let-data>
                                     <ejs-dropdownlist [dataSource]='selectDatasource' [(ngModel)]='taskData.priority' [fields]="fields" popupHeight="150px"></ejs-dropdownlist>

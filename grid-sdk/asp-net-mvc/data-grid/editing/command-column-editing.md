@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Command Column Editing in ASP.NET MVC Grid Component
+title: Command Column Editing in ASP.NET MVC Grid | Syncfusion
 description: Learn here all about Command Column Editing in Syncfusion ASP.NET MVC Grid component of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Command Column Editing

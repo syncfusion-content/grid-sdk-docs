@@ -4,7 +4,7 @@ title: Exporting Grid with Templates in JavaScript Grid control | Syncfusion
 description: Learn here all about Exporting grids with templates in Syncfusion JavaScript Grid control of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Exporting grid with templates
-documentation: ugs
+documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 

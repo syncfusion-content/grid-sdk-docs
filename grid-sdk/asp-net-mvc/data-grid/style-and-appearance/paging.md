@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Paging in ASP.NET MVC Grid Component
+title: Paging in ASP.NET MVC Grid | Syncfusion
 description: Learn here all about Paging in Syncfusion ASP.NET MVC Grid component of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Paging

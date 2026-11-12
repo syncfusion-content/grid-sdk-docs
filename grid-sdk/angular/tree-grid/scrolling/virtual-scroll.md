@@ -224,7 +224,7 @@ In the following image, you can see how many records will be scrollable when set
 
 ### Solution 3: Using paging instead of virtual scrolling
 
-Similar to virtual scrolling, the [paging](https://ej2.syncfusion.com/angular/documentation/treegrid/paging/) feature also loads the data in an on-demand concept. Pagination is also compatible with all the other features in tree grid. So, use the paging feature instead of virtual scrolling to view a large number of records in the tree grid without any kind of performance degradation or browser height limitation.
+Similar to virtual scrolling, the [paging](https://ej2.syncfusion.com/angular/documentation/treegrid/paging) feature also loads the data in an on-demand concept. Pagination is also compatible with all the other features in tree grid. So, use the paging feature instead of virtual scrolling to view a large number of records in the tree grid without any kind of performance degradation or browser height limitation.
 
 ## See also
 

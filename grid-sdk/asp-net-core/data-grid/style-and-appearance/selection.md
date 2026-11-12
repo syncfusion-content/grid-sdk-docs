@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Selection in ASP.NET Core Grid Component
+title: Selection in ASP.NET Core Grid | Syncfusion
 description: Learn here all about Selection in Syncfusion ASP.NET Core Grid component of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Selection

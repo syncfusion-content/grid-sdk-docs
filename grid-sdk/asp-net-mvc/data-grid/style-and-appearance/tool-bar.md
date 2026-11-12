@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Toolbar in ASP.NET MVC Grid Component
+title: Toolbar in ASP.NET MVC Grid | Syncfusion
 description: Learn here all about Toolbar in Syncfusion ASP.NET MVC Grid component of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Toolbar

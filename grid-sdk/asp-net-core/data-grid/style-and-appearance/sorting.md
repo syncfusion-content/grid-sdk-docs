@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Sorting in ASP.NET Core Grid Component
+title: Sorting in ASP.NET Core Grid | Syncfusion
 description: Learn here all about Sorting in Syncfusion ASP.NET Core Grid component of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Sorting
@@ -9,7 +9,7 @@ documentation: ug
 
 # Sorting in ASP.NET Core Grid component
 
-You can customize the appearance of the sorting icons and multi sorting icons in the Syncfusion ASP.NET Core Grid component using CSS. You can use the available Syncfusion [icons](../../appearance/icons/#material) based on your theme. Here's how to do it:
+You can customize the appearance of the sorting icons and multi sorting icons in the Syncfusion ASP.NET Core Grid component using CSS. You can use the available Syncfusion [icons](https://ej2.syncfusion.com/aspnetcore/documentation/appearance/icons#material) based on your theme. Here's how to do it:
 
 ## Customizing the grid sorting icon
 

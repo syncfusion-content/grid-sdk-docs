@@ -74,7 +74,7 @@ To display more columns, adjust the scale option in the print setup panel accord
 
 ## Show or hide columns while printing
 
-You can control column visibility during printing by handling the [`toolbarClick`](../api/treegrid/#toolbarclick) and [`printComplete`](https://ej2.syncfusion.com/angular/documentation/api/treegrid#printcomplete) events. 
+You can control column visibility during printing by handling the [`toolbarClick`](https://ej2.syncfusion.com/angular/documentation/api/treegrid#toolbarclick) and [`printComplete`](https://ej2.syncfusion.com/angular/documentation/api/treegrid#printcomplete) events. 
 
 In the `toolbarClick` event, based on `args.item.text` as `Print`. We can show or hide columns by setting `column.visible` property to `true` or `false` respectively.
 

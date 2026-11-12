@@ -33,7 +33,7 @@ The following keyboard shortcuts are supported in the TreeGrid for clipboard ope
 
 ## Copy to clipboard using external buttons
 
-To copy selected rows or cell data to the clipboard with an external button, use the [`copy`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/clipboard#copy) method.
+To copy selected rows or cell data to the clipboard with an external button, use the [`copy`](https://ej2.syncfusion.com/angular/documentation/api/treegrid#copy) method.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

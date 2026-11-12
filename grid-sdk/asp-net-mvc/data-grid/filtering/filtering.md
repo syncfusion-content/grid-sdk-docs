@@ -261,7 +261,7 @@ Programmatic filtering in the Syncfusion<sup style="font-size:70%">&reg;</sup> A
 
 This can be achieved by utilizing the `filterByColumn` method of the Grid.
 
-The following example demostrates, how to programmatically filter the Grid using single and multiple values for the **OrderID** and **CustomerID** columns. This is accomplished by calling the `filterByColumn` method within an external button click function.
+The following example demonstrates, how to programmatically filter the Grid using single and multiple values for the **OrderID** and **CustomerID** columns. This is accomplished by calling the `filterByColumn` method within an external button click function.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
