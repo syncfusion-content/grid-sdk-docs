@@ -1,35 +1,22 @@
-import { Grid, StatusBar } from '@syncfusion/ej2-grids';
+import { Grid, Filter, Sort, StatusBar } from '@syncfusion/ej2-grids';
+import { groceryProducts } from './datasource';
 
-Grid.Inject(StatusBar);
-
-const statusBarValueFormatter = (params: any): string => {
-  const value = params.value;
-  if (value >= 1000000) {
-    return (value / 1000000) + 'M';
-  }
-  if (value >= 1000) {
-    return (value / 1000) + 'K';
-  }
-  return value.toString();
-};
+Grid.Inject(Filter, Sort, StatusBar);
 
 const grid = new Grid({
-  dataSource: data,
+  dataSource: groceryProducts,
+  allowFiltering: true,
+  filterSettings: { type: 'Excel' },
+  allowSorting: true,
   enableStatusBar: true,
   statusBarSettings: {
     items: [
-      {
-        key: 'totalRows',
-        type: 'TotalRowCount',
-        position: 'Left',
-        statusPanelParams: { valueFormatter: statusBarValueFormatter }
-      },
       {
         key: 'custom',
         type: 'Custom',
         position: 'Right',
         statusPanelParams: {
-          template: (context: any) => {
+          template: (context: { totalCount: number }): HTMLElement => {
             const panel = document.createElement('div');
             panel.textContent = 'Total Revenue: ' + context.totalCount;
             return panel;
@@ -37,7 +24,15 @@ const grid = new Grid({
         }
       }
     ]
-  }
+  },
+  columns: [
+    { field: 'ProductID', headerText: 'Product ID', textAlign: 'Right', width: 120 },
+    { field: 'ProductName', headerText: 'Product Name', width: 160 },
+    { field: 'Category', headerText: 'Category', width: 140 },
+    { field: 'PurchasePrice', headerText: 'Purchase Price', format: 'C2', textAlign: 'Right', width: 140 },
+    { field: 'SellingPrice', headerText: 'Selling Price', format: 'C2', textAlign: 'Right', width: 140 },
+    { field: 'AvailableStock', headerText: 'Available Stock', textAlign: 'Right', width: 150 }
+  ]
 });
 
 grid.appendTo('#Grid');

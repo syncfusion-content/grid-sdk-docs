@@ -1,10 +1,12 @@
-import { Grid, Filter, StatusBar } from '@syncfusion/ej2-grids';
+ej.grids.Grid.Inject(ej.grids.Filter, ej.grids.Selection, ej.grids.Sort, ej.grids.StatusBar);
 
-Grid.Inject(Filter, StatusBar);
-
-const grid = new Grid({
+var grid = new ej.grids.Grid({
   dataSource: data,
   allowFiltering: true,
+  filterSettings: { type: 'Excel' },
+  allowSorting: true,
+  allowSelection: true,
+  selectionSettings: { mode: 'Row', type: 'Multiple' },
   enableStatusBar: true,
   statusBarSettings: {
     items: [
@@ -15,10 +17,12 @@ const grid = new Grid({
     ]
   },
   columns: [
-    { field: 'OrderID', headerText: 'Order ID', textAlign: 'Right', width: 120 },
-    { field: 'CustomerID', headerText: 'Customer ID', width: 150 },
-    { field: 'Freight', headerText: 'Freight', textAlign: 'Right', width: 150 },
-    { field: 'ShipCountry', headerText: 'Ship Country', width: 150 }
+    { field: 'ProductID', headerText: 'Product ID', textAlign: 'Right', width: 120 },
+    { field: 'ProductName', headerText: 'Product Name', width: 160 },
+    { field: 'Category', headerText: 'Category', width: 140 },
+    { field: 'PurchasePrice', headerText: 'Purchase Price', format: 'C2', textAlign: 'Right', width: 140 },
+    { field: 'SellingPrice', headerText: 'Selling Price', format: 'C2', textAlign: 'Right', width: 140 },
+    { field: 'AvailableStock', headerText: 'Available Stock', textAlign: 'Right', width: 150 }
   ]
 });
 

@@ -1,27 +1,29 @@
+ej.grids.Grid.Inject(ej.grids.Filter, ej.grids.Selection, ej.grids.Sort, ej.grids.StatusBar);
+
 var grid = new ej.grids.Grid({
-  dataSource: [
-    { OrderID: 10248, CustomerID: 'VINET', Freight: 99999, ShipCountry: 'France' },
-    { OrderID: 10249, CustomerID: 'TOMSP', Freight: 350, ShipCountry: 'Germany' }
-  ],
+  dataSource: data,
   allowFiltering: true,
+  filterSettings: { type: 'Excel' },
+  allowSorting: true,
   allowSelection: true,
-  selectionSettings: { mode: 'Cell', type: 'Multiple' },
+  selectionSettings: { mode: 'Row', type: 'Multiple' },
   enableStatusBar: true,
   statusBarSettings: {
     items: [
-      { key: 'totalRows', type: 'TotalRowCount', position: 'Left', statusPanelParams: { valueFormatter: function (params) { return params.value > 1000 ? (params.value / 1000) + ' K' : params.value.toString(); } } },
+      { key: 'totalRows', type: 'TotalRowCount', position: 'Left' },
       { key: 'filteredRows', type: 'FilteredRowCount', position: 'Left' },
-      { key: 'totalAndFilteredRows', type: 'TotalAndFilteredRowCount', position: 'Right' },
-      { key: 'selectedCount', type: 'SelectedRowCount', position: 'Center' },
-      { key: 'selectedAgg', type: 'SelectedCellAggregates', position: 'Center', statusPanelParams: { aggFuncs: ['Sum', 'Avg'] } },
-      { key: 'custom', type: 'Custom', position: 'Right', statusPanelParams: { label: 'Total Revenue: ', template: function (context) { var button = document.createElement('button'); button.textContent = 'Refresh (' + context.totalCount + ')'; return button; } } }
+      { key: 'filteredTotalRows', type: 'TotalAndFilteredRowCount', position: 'Right' },
+      { key: 'selectedCount', type: 'SelectedRowCount', position: 'Center' }
     ]
   },
   columns: [
-    { field: 'OrderID', headerText: 'Order ID', textAlign: 'Right', width: 120 },
-    { field: 'CustomerID', headerText: 'Customer ID', width: 150 },
-    { field: 'Freight', headerText: 'Freight', textAlign: 'Right', format: 'C2', width: 150 },
-    { field: 'ShipCountry', headerText: 'Ship Country', width: 150 }
+    { field: 'ProductID', headerText: 'Product ID', textAlign: 'Right', width: 120 },
+    { field: 'ProductName', headerText: 'Product Name', width: 160 },
+    { field: 'Category', headerText: 'Category', width: 140 },
+    { field: 'PurchasePrice', headerText: 'Purchase Price', format: 'C2', textAlign: 'Right', width: 140 },
+    { field: 'SellingPrice', headerText: 'Selling Price', format: 'C2', textAlign: 'Right', width: 140 },
+    { field: 'AvailableStock', headerText: 'Available Stock', textAlign: 'Right', width: 150 }
   ]
 });
+
 grid.appendTo('#Grid');

@@ -1,27 +1,35 @@
-import { Grid, Selection, StatusBar } from '@syncfusion/ej2-grids';
+ej.grids.Grid.Inject(ej.grids.Filter, ej.grids.Selection, ej.grids.Sort, ej.grids.StatusBar);
 
-Grid.Inject(Selection, StatusBar);
-
-const grid = new Grid({
+var grid = new ej.grids.Grid({
   dataSource: data,
+  allowFiltering: true,
+  filterSettings: { type: 'Excel' },
+  allowSorting: true,
   allowSelection: true,
-  selectionSettings: { mode: 'Cell', type: 'Multiple' },
+  selectionSettings: { mode: 'Row', type: 'Multiple' },
   enableStatusBar: true,
   statusBarSettings: {
     items: [
       {
-        key: 'selectedAgg',
-        type: 'SelectedCellAggregates',
-        position: 'Center',
+        key: 'totalRows',
+        type: 'TotalRowCount',
+        position: 'Left',
         statusPanelParams: {
-          aggFuncs: ['Sum', 'Average', 'Min', 'Max', 'Count']
+          valueFormatter: function (params) {
+            return params.value.toLocaleString();
+          }
         }
-      }
+      },
+      { key: 'selectedCount', type: 'SelectedRowCount', position: 'Center' }
     ]
   },
   columns: [
-    { field: 'OrderID', headerText: 'Order ID', textAlign: 'Right', width: 120 },
-    { field: 'Freight', headerText: 'Freight', textAlign: 'Right', width: 150 }
+    { field: 'ProductID', headerText: 'Product ID', textAlign: 'Right', width: 120 },
+    { field: 'ProductName', headerText: 'Product Name', width: 160 },
+    { field: 'Category', headerText: 'Category', width: 140 },
+    { field: 'PurchasePrice', headerText: 'Purchase Price', format: 'C2', textAlign: 'Right', width: 140 },
+    { field: 'SellingPrice', headerText: 'Selling Price', format: 'C2', textAlign: 'Right', width: 140 },
+    { field: 'AvailableStock', headerText: 'Available Stock', textAlign: 'Right', width: 150 }
   ]
 });
 
