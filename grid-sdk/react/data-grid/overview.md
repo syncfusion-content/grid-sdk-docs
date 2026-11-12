@@ -207,7 +207,7 @@ Match the React Data Grid to the application's visual design using [built-in the
 ## Support and resources
 
 - **Questions?** Visit the [Syncfusion support portal](https://www.syncfusion.com/support)
-- **Code examples?** Browse [Data Grid demos](https://ej2.syncfusion.com/react/demos/#tailwind3/grid/over-view) and samples
+- **Code examples?** Browse [Data Grid demos](https://ej2.syncfusion.com/react/demos/#/tailwind3/grid/over-view) and samples
 - **API details?** See [Data Grid API reference](https://ej2.syncfusion.com/react/documentation/api/grid/index-default)
 - **Community?** Join the [Syncfusion community forum](https://www.syncfusion.com/forums/react-js2)
 - **What's new?** Check [Release notes](../../Release-Notes)

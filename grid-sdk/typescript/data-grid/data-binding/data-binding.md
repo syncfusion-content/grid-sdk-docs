@@ -182,7 +182,7 @@ The following code demonstrates, how to use the `changeDataSource` method to bin
 
 
 >* The Grid state persistence feature does not support the  `changeDataSource` method. 
->* In this document, the above sample uses the local data for `changeDataSource` method. For those using a remote data source, refer to the [FlexibleData](https://ej2.syncfusion.com/demos/#bootstrap5/grid/flexible-data.html) resource. 
+>* In this document, the above sample uses the local data for `changeDataSource` method. For those using a remote data source, refer to the [FlexibleData](https://ej2.syncfusion.com/demos/#/bootstrap5/grid/flexible-data.html) resource. 
  
 
 ## Prevent to convert local time zone format for date column

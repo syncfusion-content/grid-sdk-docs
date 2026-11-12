@@ -14,4 +14,4 @@ State persistence allows the TreeGrid component to maintain its state in the bro
 
 State persistence in TreeGrid ensures that key properties such as column settings, sorting, filtering, expanded or collapsed states, and paging—are remembered and restored even after the page is reloaded or revisited.
 
-> For more details on TreeGrid's advanced features, visit the [`Angular TreeGrid feature tour`](https://www.syncfusion.com/angular-components/angular-tree-grid). To explore practical demonstrations, see the [`Angular TreeGrid example`](https://ej2.syncfusion.com/angular/demos/#material/treegrid/treegrid-overview) to understand how to present and manipulate data.
+> For more details on TreeGrid's advanced features, visit the [`Angular TreeGrid feature tour`](https://www.syncfusion.com/angular-components/angular-tree-grid). To explore practical demonstrations, see the [`Angular TreeGrid example`](https://ej2.syncfusion.com/angular/demos/#/material/treegrid/treegrid-overview) to understand how to present and manipulate data.

@@ -83,4 +83,4 @@ The screenshot below shows TreeGrid touch selection in a device context:
 
 ![Touch Interaction](../images/touch-selection.jpg)
 
-> For more about TreeGrid features, visit the [Angular TreeGrid feature tour](https://www.syncfusion.com/angular-components/angular-tree-grid). For live examples, see the [Angular TreeGrid demo](https://ej2.syncfusion.com/angular/demos/#material/treegrid/treegrid-overview).
+> For more about TreeGrid features, visit the [Angular TreeGrid feature tour](https://www.syncfusion.com/angular-components/angular-tree-grid). For live examples, see the [Angular TreeGrid demo](https://ej2.syncfusion.com/angular/demos/#/material/treegrid/treegrid-overview).

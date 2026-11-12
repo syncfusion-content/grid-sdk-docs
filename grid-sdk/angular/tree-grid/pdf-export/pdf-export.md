@@ -98,4 +98,4 @@ In the provided example, the `customAggregateFn` function computes the item coun
   
 {% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/pdf-export-cs16" %}
 
-> You can refer to our [`Angular TreeGrid`](https://www.syncfusion.com/angular-components/angular-tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our [`Angular TreeGrid example`](https://ej2.syncfusion.com/angular/demos/#tailwind3/treegrid/treegrid-overview) to learn how to present and manipulate data.
+> You can refer to our [`Angular TreeGrid`](https://www.syncfusion.com/angular-components/angular-tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our [`Angular TreeGrid example`](https://ej2.syncfusion.com/angular/demos/#/tailwind3/treegrid/treegrid-overview) to learn how to present and manipulate data.

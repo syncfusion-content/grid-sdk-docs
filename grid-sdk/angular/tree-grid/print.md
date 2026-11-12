@@ -99,4 +99,4 @@ Printing a TreeGrid containing large volumes of data at once is not optimal for 
 
 If it is necessary to print all data, consider exporting the TreeGrid to Excel, CSV, or PDF, and then printing from a dedicated application.
 
-> For more information on TreeGrid capabilities, visit the [Angular TreeGrid feature tour](https://www.syncfusion.com/angular-components/angular-tree-grid) or try the [TreeGrid interactive demo](https://ej2.syncfusion.com/angular/demos/#material/treegrid/treegrid-overview) to explore real-world data manipulation and presentation.
+> For more information on TreeGrid capabilities, visit the [Angular TreeGrid feature tour](https://www.syncfusion.com/angular-components/angular-tree-grid) or try the [TreeGrid interactive demo](https://ej2.syncfusion.com/angular/demos/#/material/treegrid/treegrid-overview) to explore real-world data manipulation and presentation.

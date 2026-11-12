@@ -165,6 +165,6 @@ AI assistance is an application integration pattern rather than a built-in Pivot
 ## Quick links
 
 * [Getting started](./getting-started)
-* [Live Pivot Table demos](https://ej2.syncfusion.com/angular/demos/#tailwind3/pivot-table/overview)
+* [Live Pivot Table demos](https://ej2.syncfusion.com/angular/demos/#/tailwind3/pivot-table/overview)
 * [Pivot Table API reference](https://ej2.syncfusion.com/angular/documentation/api/pivotview/index-default)
 * [Release notes](https://ej2.syncfusion.com/angular/documentation/release-notes)

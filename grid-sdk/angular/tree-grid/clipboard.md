@@ -118,4 +118,4 @@ Content copied from TreeGrid cells can be pasted into other cells using <kbd>Ctr
 
 ---
 
-For more details, visit the [`Angular TreeGrid`](https://www.syncfusion.com/angular-components/angular-tree-grid) feature tour or explore the [`Angular TreeGrid example`](https://ej2.syncfusion.com/angular/demos/#material/treegrid/treegrid-overview) for usage scenarios and data manipulation demonstrations.
+For more details, visit the [`Angular TreeGrid`](https://www.syncfusion.com/angular-components/angular-tree-grid) feature tour or explore the [`Angular TreeGrid example`](https://ej2.syncfusion.com/angular/demos/#/material/treegrid/treegrid-overview) for usage scenarios and data manipulation demonstrations.

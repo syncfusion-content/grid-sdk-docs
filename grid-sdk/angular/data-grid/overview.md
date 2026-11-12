@@ -207,7 +207,7 @@ Match the Angular Data Grid to the application's visual design using [built-in t
 ## Support and resources
 
 - **Questions?** Visit the [Syncfusion support portal](https://www.syncfusion.com/support)
-- **Code examples?** Browse [Data Grid demos](https://ej2.syncfusion.com/angular/demos/#tailwind3/grid/over-view) and samples
+- **Code examples?** Browse [Data Grid demos](https://ej2.syncfusion.com/angular/demos/#/tailwind3/grid/over-view) and samples
 - **API details?** See [Data Grid API reference](https://ej2.syncfusion.com/angular/documentation/api/grid/index-default)
 - **Community?** Join the [Syncfusion community forum](https://www.syncfusion.com/forums/angular-js2)
 - **What's new?** Check [Release notes](../../Release-Notes)

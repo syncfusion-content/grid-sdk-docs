@@ -151,4 +151,4 @@ The available modes are:
  {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/treegrid/cell-cs3" %}
 
 > By default, the TreeGrid renders in **Default** mode.
-> Refer to the [React Tree Grid](https://www.syncfusion.com/react-ui-components/react-tree-grid) feature tour for key capabilities. Explore the [React Tree Grid example](https://ej2.syncfusion.com/react/demos/#material/treegrid/treegrid-overview) to learn how to present and manipulate data.
+> Refer to the [React Tree Grid](https://www.syncfusion.com/react-ui-components/react-tree-grid) feature tour for key capabilities. Explore the [React Tree Grid example](https://ej2.syncfusion.com/react/demos/#/material/treegrid/treegrid-overview) to learn how to present and manipulate data.
