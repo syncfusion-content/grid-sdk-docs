@@ -1,9 +1,9 @@
 ---
 layout: post
-title: WebMCP Integration in Blazor Grid | Syncfusion®
-description: WebMCP integration in Blazor DataGrid explains setup, tool registration, configuration, and API reference with code examples.
+title: WebMCP Integration in Blazor DataGrid | Syncfusion
+description: Learn how to integrate WebMCP with the Blazor DataGrid to enable AI interaction, configure tools, and call grid APIs from the browser.
 platform: grid-sdk
-control: WebMCP
+control: DataGrid
 documentation: ug
 ---
 
@@ -44,33 +44,39 @@ Before using WebMCP in a local environment, enable the feature flag and install 
 
 Add the following namespace to the Razor component:
 
-```razor
+{% tabs %}
+{% highlight razor tabtitle="Index.razor" %}
+
 @using Syncfusion.Blazor.Grids
-```
+
+{% endhighlight %}
+{% endtabs %}
 
 ### Step 3: Enable WebMCP
 
 Enable WebMCP by setting `EnableWebMcp` to `true`. Optionally, define a `Name` in `WebMcpSettings` to keep tool names unique on the page.
 
-```razor
+{% tabs %}
+{% highlight razor tabtitle="Index.razor" %}
+
 @using Syncfusion.Blazor.Grids
 
-    <SfGrid DataSource="@Orders" EnableWebMcp="true" AllowPaging="true">
-        <GridWebMcpSettings Name="SalesGrid"/>
-        <GridPageSettings PageSize="5"></GridPageSettings>
-        <GridColumns>
-            <GridColumn Field="OrderID" HeaderText="Order ID" IsPrimaryKey="true" Width="120"></GridColumn>
-            <GridColumn Field="CustomerID" HeaderText="Customer" Width="150"></GridColumn>
-            <GridColumn Field="ShipCountry" HeaderText="Country" Width="150"></GridColumn>
-            <GridColumn Field="Freight" HeaderText="Freight" Width="120"></GridColumn>
-        </GridColumns>
-    </SfGrid>
+<SfGrid DataSource="@Orders" EnableWebMcp="true" AllowPaging="true">
+    <GridWebMcpSettings Name="SalesGrid"/>
+    <GridPageSettings PageSize="5"></GridPageSettings>
+    <GridColumns>
+        <GridColumn Field="OrderID" HeaderText="Order ID" IsPrimaryKey="true" Width="120"></GridColumn>
+        <GridColumn Field="CustomerID" HeaderText="Customer" Width="150"></GridColumn>
+        <GridColumn Field="ShipCountry" HeaderText="Country" Width="150"></GridColumn>
+        <GridColumn Field="Freight" HeaderText="Freight" Width="120"></GridColumn>
+    </GridColumns>
+</SfGrid>
 
 @code {
-  private List<Order> Orders { get; set; } = new()
+    private List<Order> Orders { get; set; } = new()
     {
         new() { OrderID = 10248, CustomerID = "VINET", ShipCountry = "Reims", Freight = 32.38 },
-        new() { OrderID = 10249, CustomerID = "TOMSP", ShipCountry = "Münster", Freight = 11.61 },
+        new() { OrderID = 10249, CustomerID = "TOMSP", ShipCountry = "Munster", Freight = 11.61 },
         new() { OrderID = 10250, CustomerID = "HANAR", ShipCountry = "Reims", Freight = 65.83 },
         new() { OrderID = 10251, CustomerID = "VICTE", ShipCountry = "Lyon", Freight = 41.34 },
         new() { OrderID = 10252, CustomerID = "SUPRD", ShipCountry = "Charleroi", Freight = 51.30 },
@@ -85,7 +91,9 @@ Enable WebMCP by setting `EnableWebMcp` to `true`. Optionally, define a `Name` i
         public double Freight { get; set; }
     }
 }
-```
+
+{% endhighlight %}
+{% endtabs %}
 
 ### Step 4: Test the setup
 
@@ -96,25 +104,14 @@ Enable WebMCP by setting `EnableWebMcp` to `true`. Optionally, define a `Name` i
 - Try a sample prompt that matches the data scenario to validate tool execution and response behavior.
 
 **Sample prompts:**
-Here are some realistic natural-language prompts you can try with the WebMCP extension:
 
-{% promptcards %}
-{% promptcard Filter Records %}
-Filter the Data Grid to show all orders from Reims.
-{% endpromptcard %}
-{% endpromptcards %}
+Here are some natural-language prompts you can try with the WebMCP extension:
 
-{% promptcards %}
-{% promptcard Sorting and Selection %}
-Sort the Data Grid by `OrderID` in descending order and select the top three records.
-{% endpromptcard %}
-{% endpromptcards %}
-
-{% promptcards %}
-{% promptcard Sort Data %}
-Arrange the displayed orders by freight amount, from highest to lowest.
-{% endpromptcard %}
-{% endpromptcards %}
+| Prompt | Example |
+|--------|---------|
+| Filter records | Filter the Data Grid to show all orders from Reims. |
+| Sorting and selection | Sort the Data Grid by `OrderID` in descending order and select the top three records. |
+| Sort data | Arrange the displayed orders by freight amount, from highest to lowest. |
 
 ## Tool reference
 
@@ -350,7 +347,9 @@ WebMCP tools are organized by category. The tables below provide an overview of 
 
 Configure WebMCP tools with custom descriptions and enable or disable specific tools.
 
-```razor
+{% tabs %}
+{% highlight razor tabtitle="Index.razor" %}
+
 @using Syncfusion.Blazor.Grids
 
 <SfGrid DataSource="@Orders" EnableWebMcp="true">
@@ -390,14 +389,15 @@ Configure WebMCP tools with custom descriptions and enable or disable specific t
 
         await Task.CompletedTask;
     }
+
     private List<Order> Orders { get; set; } = new()
     {
         new() { OrderID = 10248, CustomerID = "VINET", ShipCountry = "Reims" },
-        new() { OrderID = 10249, CustomerID = "TOMSP", ShipCountry = "Münster"},
-        new() { OrderID = 10250, CustomerID = "HANAR", ShipCountry = "Reims"},
-        new() { OrderID = 10251, CustomerID = "VICTE", ShipCountry = "Lyon"},
-        new() { OrderID = 10252, CustomerID = "SUPRD", ShipCountry = "Charleroi"},
-        new() { OrderID = 10253, CustomerID = "HANAR", ShipCountry = "Rio de Janeiro"}
+        new() { OrderID = 10249, CustomerID = "TOMSP", ShipCountry = "Munster" },
+        new() { OrderID = 10250, CustomerID = "HANAR", ShipCountry = "Reims" },
+        new() { OrderID = 10251, CustomerID = "VICTE", ShipCountry = "Lyon" },
+        new() { OrderID = 10252, CustomerID = "SUPRD", ShipCountry = "Charleroi" },
+        new() { OrderID = 10253, CustomerID = "HANAR", ShipCountry = "Rio de Janeiro" }
     };
 
     public class Order
@@ -407,7 +407,9 @@ Configure WebMCP tools with custom descriptions and enable or disable specific t
         public string ShipCountry { get; set; } = string.Empty;
     }
 }
-```
+
+{% endhighlight %}
+{% endtabs %}
 
 ## See also
 
