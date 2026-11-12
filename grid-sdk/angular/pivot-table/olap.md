@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: OLAP in Angular Pivot Table | Syncfusion
 description: Learn how the Angular Pivot Table connects to OLAP cube sources like SSAS with providerType, catalog, cube, and axes configuration.

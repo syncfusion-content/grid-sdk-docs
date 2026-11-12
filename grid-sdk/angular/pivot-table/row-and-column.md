@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Row and Column in Angular Pivot Table | Syncfusion
 description: Learn how the Angular Pivot Table configures row and column axes with field options for width, alignment, and formatting.

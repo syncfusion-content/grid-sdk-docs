@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: "MongoDB in Angular Pivot Table | Syncfusion"
 component: "Pivot Table"

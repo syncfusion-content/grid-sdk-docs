@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: "Snowflake in Angular Pivot Table | Syncfusion"
 component: "Pivot Table"

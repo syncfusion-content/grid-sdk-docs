@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Use older theme styles in Angular Pivot Table | Syncfusion
 description: Step-by-step example showing how to switch to older themes style in the Angular Pivot Table, with code snippets and property references.

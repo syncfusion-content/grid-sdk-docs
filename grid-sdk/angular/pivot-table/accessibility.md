@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Accessibility in Angular Pivot Table | Syncfusion
 description: Learn how the Angular Pivot Table supports WAI-ARIA roles, keyboard navigation, and screen reader support that align with WCAG 2.2 and Section 508 guidelines.

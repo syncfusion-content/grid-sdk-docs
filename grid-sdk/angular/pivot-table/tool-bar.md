@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: Toolbar in Angular Pivot Table | Syncfusion
 description: Learn how the Angular Pivot Table shows a built-in toolbar for switching between grid and chart, conditional formatting, and exports.

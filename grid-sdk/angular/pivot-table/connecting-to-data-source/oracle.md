@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title: "Oracle in Angular Pivot Table | Syncfusion"
 component: "Pivot Table"
