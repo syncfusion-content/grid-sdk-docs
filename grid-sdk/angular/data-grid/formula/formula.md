@@ -2,7 +2,7 @@
 layout: post
 title: Angular Grid Formula Cells | Syncfusion
 description: Learn how to use spreadsheet-style formulas in the Angular Data Grid with built-in functions, custom formulas, and automatic recalculation.
-platform: ej2-angular
+platform: grid-sdk
 control: Formula
 documentation: ug
 domainurl: ##DomainURL##

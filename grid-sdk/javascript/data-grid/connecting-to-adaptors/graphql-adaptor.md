@@ -234,113 +234,6 @@ The server will be hosted at **http://localhost:xxxx/**. (where xxxx represents 
 
 ## Connecting grid to an GraphQL service
 
-{% if page.publishingplatform == "typescript" %}
-
-To integrate GraphQL with the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid in your JavaScript application, follow the below steps:
-
-**Step 1:** Set up development environment
-
-Open the command prompt from the required directory, and run the following command to clone the Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript (Essential<sup style="font-size:70%">&reg;</sup> JS 2) quickstart project from GitHub.
-
-```bash
-git clone https://github.com/SyncfusionExamples/ej2-quickstart-webpack- GridClient
-cd GridClient
-```
-
-**Step 2:** Add Syncfusion<sup style="font-size:70%">&reg;</sup> Grid packages
-
-```bash
-npm install
-```
-
-**Step 3:** Import the Syncfusion<sup style="font-size:70%">&reg;</sup> CSS styles
-
-```css
-@import "../node_modules/@syncfusion/ej2-bootstrap5-theme/styles/grid/index.css";
-
-```
-
-**Step 3:** Adding Grid control
-To get started, add the grid control in `app.ts` and `index.html` files using the following code.
-
-Place the following grid code in the `app.ts`.
-
-```ts
-import { Grid } from '@syncfusion/ej2-grids';
-import { DataManager, GraphQLAdaptor } from '@syncfusion/ej2-data';
-
-let data: DataManager = new DataManager({
-    url: "http://localhost:xxxx",  // Replace your hosted server link
-    adaptor: new GraphQLAdaptor({
-        response: {
-            result: 'getOrders.result',
-            count: 'getOrders.count'
-        },
-        query: `query getOrders($datamanager: DataManager) {
-        getOrders(datamanager: $datamanager) {
-         count,
-         result{
-          OrderID, CustomerID, ShipCity, ShipCountry}
-         }
-        }`,
-    }),
-});
-
-let grid: Grid = new Grid({
-    dataSource: data,
-    columns: [
-        { field: 'OrderID', headerText: 'Order ID', textAlign: 'Right', width: 120, type: 'number', isPrimaryKey: true },
-        { field: 'CustomerID', width: 140, headerText: 'Customer ID', type: 'string' },
-        { field: 'ShipCity', headerText: 'Ship City', textAlign: 'Right', width: 120 },
-        { field: 'ShipCountry', headerText: 'Ship Country', width: 140 }
-    ],
-
-});
-
-grid.appendTo('#Grid');
-```
-
-Now, add an HTML div element with its ID attribute set to Grid in your `index.html` using the following code.
-
-```html
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <title>EJ2 Grid</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Typescript Grid Control" />
-    <meta name="author" content="Syncfusion" />
-    <link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/material3.css" rel="stylesheet" />
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.19.38/system.js"></script>
-<script src="https://cdn.syncfusion.com/ej2/syncfusion-helper.js" type ="text/javascript"></script>
-</head>
-
-<body>
-    <div id='container'>
-        <div id='Grid'></div>
-    </div>
-</body>
-
-</html>
-```
-
-
-**Step 5: Run the Application:**
-
-Once the GraphQL server is running, assign its URL (e.g., http://localhost:xxxx/) to the `dataManager.url` property of the `DataManager` in your application.
-
-```bash
-npm start
-```
-
-By following these steps, you will successfully integrate GraphQL with the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid in your JavaScript application. Ensure that the GraphQL server is running smoothly and is accessible at the specified URL.
-
-You can find the complete `GraphQLAdaptor` sample in the [GitHub](https://github.com/SyncfusionExamples/Binding-data-from-remote-service-to-typescript-data-grid) link.
-
-{% elsif page.publishingplatform == "javascript" %}
 
 To integrate GraphQL with the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid in your JavaScript application, follow the below steps:
 
@@ -419,7 +312,6 @@ By following these steps, you will successfully integrate GraphQL with the Syncf
 
 You can find the complete `GraphQLAdaptor` sample in the [GitHub](https://github.com/SyncfusionExamples/Binding-data-from-remote-service-to-javascript-data-grid) link.
 
-{% endif %}
 
 ## Handling searching operation
 
@@ -457,44 +349,6 @@ const resolvers = {
 
 export default resolvers;
 {% endhighlight %}
-{% if page.publishingplatform == "typescript" %}
-{% highlight ts tabtitle="index.ts" %}
-import { Grid, Toolbar } from '@syncfusion/ej2-grids';
-import { DataManager, GraphQLAdaptor } from '@syncfusion/ej2-data';
-
-let data: DataManager = new DataManager({
-    url: "http://localhost:xxxx", adaptor: new GraphQLAdaptor({
-        response: {
-            result: 'getOrders.result',
-            count: 'getOrders.count'
-        },
-        query: `query getOrders($datamanager: DataManager) {
-        getOrders(datamanager: $datamanager) {
-         count,
-         result{
-          OrderID, CustomerID, ShipCity, ShipCountry}
-         }
-        }`,
-    }),
-});
-
-Grid.Inject(Toolbar);
-
-let grid: Grid = new Grid({
-    dataSource: data,
-    toolbar: ['Search'],
-    columns: [
-        { field: 'OrderID', headerText: 'Order ID', textAlign: 'Right', width: 120, type: 'number', isPrimaryKey: true },
-        { field: 'CustomerID', width: 140, headerText: 'Customer ID', type: 'string' },
-        { field: 'ShipCity', headerText: 'Ship City', textAlign: 'Right', width: 120 },
-        { field: 'ShipCountry', headerText: 'Ship Country', width: 140 }
-    ],
-
-});
-
-grid.appendTo('#Grid');
-{% endhighlight %}
-{% elsif page.publishingplatform == "javascript" %}
 {% highlight js tabtitle="index.js" %}
 var data = new ej.data.DataManager({
     url: "http://localhost:xxxx/",  // xxxx represents the port number
@@ -527,7 +381,6 @@ var grid = new ej.grids.Grid({
 
 grid.appendTo('#Grid');
 {% endhighlight %}
-{% endif %}
 {% endtabs %}
 
 ## Handling filtering operation
@@ -573,44 +426,6 @@ const resolvers = {
 
 export default resolvers;
 {% endhighlight %}
-{% if page.publishingplatform == "typescript" %}
-{% highlight ts tabtitle="index.ts" %}
-import { Grid, Filter } from '@syncfusion/ej2-grids';
-import { DataManager, GraphQLAdaptor } from '@syncfusion/ej2-data';
-
-let data: DataManager = new DataManager({
-    url: "http://localhost:xxxx", adaptor: new GraphQLAdaptor({
-        response: {
-            result: 'getOrders.result',
-            count: 'getOrders.count'
-        },
-        query: `query getOrders($datamanager: DataManager) {
-        getOrders(datamanager: $datamanager) {
-         count,
-         result{
-          OrderID, CustomerID, ShipCity, ShipCountry}
-         }
-        }`,
-    }),
-});
-
-Grid.Inject(Filter);
-
-let grid: Grid = new Grid({
-    dataSource: data,
-    allowFiltering: true,
-    columns: [
-        { field: 'OrderID', headerText: 'Order ID', textAlign: 'Right', width: 120, type: 'number', isPrimaryKey: true },
-        { field: 'CustomerID', width: 140, headerText: 'Customer ID', type: 'string' },
-        { field: 'ShipCity', headerText: 'Ship City', textAlign: 'Right', width: 120 },
-        { field: 'ShipCountry', headerText: 'Ship Country', width: 140 }
-    ],
-
-});
-
-grid.appendTo('#Grid');
-{% endhighlight %}
-{% elsif page.publishingplatform == "javascript" %}
 {% highlight js tabtitle="index.js" %}
 var data = new ej.data.DataManager({
     url: "http://localhost:xxxx/",  // xxxx represents the port number
@@ -643,7 +458,6 @@ var grid = new ej.grids.Grid({
 
 grid.appendTo('#Grid');
 {% endhighlight %}
-{% endif %}
 {% endtabs %}
 
 ## Handling sorting operation
@@ -685,43 +499,6 @@ const resolvers = {
 
 export default resolvers;
 {% endhighlight %}
-{% if page.publishingplatform == "typescript" %}
-{% highlight ts tabtitle="index.ts" %}
-import { Grid, Sort } from '@syncfusion/ej2-grids';
-import { DataManager, GraphQLAdaptor } from '@syncfusion/ej2-data';
-
-let data: DataManager = new DataManager({
-    url: "http://localhost:xxxx", adaptor: new GraphQLAdaptor({
-        response: {
-            result: 'getOrders.result',
-            count: 'getOrders.count'
-        },
-        query: `query getOrders($datamanager: DataManager) {
-        getOrders(datamanager: $datamanager) {
-         count,
-         result{
-          OrderID, CustomerID, ShipCity, ShipCountry}
-         }
-        }`,
-    }),
-});
-
-Grid.Inject(Sort);
-
-let grid: Grid = new Grid({
-    dataSource: data,
-    allowSorting:true,
-    columns: [
-        { field: 'OrderID', headerText: 'Order ID', textAlign: 'Right', width: 120, type: 'number', isPrimaryKey: true },
-        { field: 'CustomerID', width: 140, headerText: 'Customer ID', type: 'string' },
-        { field: 'ShipCity', headerText: 'Ship City', textAlign: 'Right', width: 120 },
-        { field: 'ShipCountry', headerText: 'Ship Country', width: 140 }
-    ],
-});
-
-grid.appendTo('#Grid');
-{% endhighlight %}
-{% elsif page.publishingplatform == "javascript" %}
 {% highlight js tabtitle="index.js" %}
 var data = new ej.data.DataManager({
     url: "http://localhost:xxxx/",  // xxxx represents the port number
@@ -754,7 +531,6 @@ var grid = new ej.grids.Grid({
 
 grid.appendTo('#Grid');
 {% endhighlight %}
-{% endif %}
 {% endtabs %}
 
 ## Handling paging operation
@@ -793,45 +569,6 @@ const resolvers = {
 
 export default resolvers;
 {% endhighlight %}
-{% if page.publishingplatform == "typescript" %}
-{% highlight ts tabtitle="index.ts" %}
-import { Grid, Group, Filter, Page, Sort, Edit, Toolbar } from '@syncfusion/ej2-grids';
-import { DataManager, GraphQLAdaptor } from '@syncfusion/ej2-data';
-
-let data: DataManager = new DataManager({
-    url: "http://localhost:xxxx", adaptor: new GraphQLAdaptor({
-        response: {
-            result: 'getOrders.result',
-            count: 'getOrders.count'
-        },
-        query: `query getOrders($datamanager: DataManager) {
-        getOrders(datamanager: $datamanager) {
-         count,
-         result{
-          OrderID, CustomerID, ShipCity, ShipCountry}
-         }
-        }`,
-    }),
-});
-
-Grid.Inject(Page);
-
-let grid: Grid = new Grid({
-    dataSource: data,
-    allowPaging: true,
-    columns: [
-        { field: 'OrderID', headerText: 'Order ID', textAlign: 'Right', width: 120, type: 'number', isPrimaryKey: true },
-        { field: 'CustomerID', width: 140, headerText: 'Customer ID', type: 'string' },
-        { field: 'ShipCity', headerText: 'Ship City', textAlign: 'Right', width: 120 },
-        { field: 'ShipCountry', headerText: 'Ship Country', width: 140 }
-    ],
-
-});
-
-grid.appendTo('#Grid');
-
-{% endhighlight %}
-{% elsif page.publishingplatform == "javascript" %}
 {% highlight js tabtitle="index.js" %}
 var data = new ej.data.DataManager({
     url: "http://localhost:xxxx/",  // xxxx represents the port number
@@ -864,7 +601,6 @@ var grid = new ej.grids.Grid({
 
 grid.appendTo('#Grid');
 {% endhighlight %}
-{% endif %}
 {% endtabs %}
 
 ## Handling CRUD operations
@@ -907,21 +643,6 @@ Adding a new record to the database involves the following steps:
   ```
 * Configure the **getMutation** function in your `GraphQLAdaptor` to return the appropriate GraphQL mutation query string based on the insert action. This query string should reference the **createOrder** mutation defined in your schema.
 
-{% if page.publishingplatform == "typescript" %}
-  ```ts
-  [index.ts]
-
-  // mutation for performing insert operation
-  getMutation: function (action: string) {
-    if (action === 'insert') {
-      return `mutation CreateOrderMutation($value: OrderInput!){
-      createOrder(value: $value){
-      OrderID, CustomerID, Freight, ShipCity, ShipCountry
-      }}`;
-    }
-  }
-  ```
-{% elsif page.publishingplatform == "javascript" %}
   ```js
   [index.js]
 
@@ -935,7 +656,6 @@ Adding a new record to the database involves the following steps:
     }
   }
   ```
-  {% endif %}
 
 **Update Operation**
 
@@ -987,21 +707,6 @@ Updating an existing record in the database involves the following steps:
   }
   ```
 * Configure the **getMutation** function in your GraphQLAdaptor to return the appropriate GraphQL mutation query string based on the update action. This query string should reference the **updateOrder** mutation defined in your schema.
-  {% if page.publishingplatform == "typescript" %}
-  ```ts
-  [index.ts]
-
-  // mutation for performing update operation
-  getMutation: function (action: any): string {
-    if (action === 'update') {
-      return `mutation UpdateOrderMutation($key: Int!, $keyColumn: String,$value: OrderInput){
-      updateOrder(key: $key, keyColumn: $keyColumn, value: $value) {
-      OrderID, CustomerID, Freight, ShipCity, ShipCountry
-      }}`;
-    }
-  }
-  ```
-  {% elsif page.publishingplatform == "javascript" %}
   ```js
   [index.js]
 
@@ -1015,7 +720,6 @@ Updating an existing record in the database involves the following steps:
     }
   }
   ```
-  {% endif %}
 
 **Delete Operation**
 
@@ -1059,20 +763,7 @@ Deleting a record from the database involves the following steps:
   }
   ```
 * Configure the **getMutation** function in your GraphQL adaptor to return the appropriate GraphQL mutation query string based on the delete action. This query string should reference the **deleteOrder** mutation defined in your schema.
-.{% if page.publishingplatform == "typescript" %}
-  ```ts
-  [index.ts]
-  // mutation for performing delete operation
-  getMutation: function (action: string) {
-    if (action === 'delete') {
-      return `mutation RemoveOrderMutation($key: Int!, $keyColumn: String, $value: OrderInput){
-      deleteOrder(key: $key, keyColumn: $keyColumn, value: $value) {
-      OrderID, CustomerID, Freight, ShipCity, ShipCountry
-      }}`;
-    }
-  }
-  ```
-  {% elsif page.publishingplatform == "javascript" %}
+.
   ```js
     [index.js]
   // mutation for performing delete operation
@@ -1085,9 +776,8 @@ Deleting a record from the database involves the following steps:
     }
   }
   ```
-  {% endif %}
 
-> Normal/Inline editing is the default edit [mode](../../api/grid/editSettings#mode) for the Grid control. To enable CRUD operations, ensure that the [isPrimaryKey](../../api/grid/column#isprimarykey) property is set to **true** for a specific grid column, ensuring that its value is unique.
+> Normal/Inline editing is the default edit [mode](https://ej2.syncfusion.com/javascript/documentation/api/grid/editSettings#mode) for the Grid control. To enable CRUD operations, ensure that the [isPrimaryKey](https://ej2.syncfusion.com/javascript/documentation/api/grid/column#isprimarykey) property is set to **true** for a specific grid column, ensuring that its value is unique.
 
 {% tabs %}
 {% highlight js tabtitle="resolver.js" %}
@@ -1191,68 +881,7 @@ type Mutation {
   deleteOrder(key: Int!, keyColumn: String, value: OrderInput): Order!
 }
 {% endhighlight %}
-.{% if page.publishingplatform == "typescript" %}
-{% highlight ts tabtitle="index.ts" %}
-import { Grid, Edit, Toolbar } from '@syncfusion/ej2-grids';
-import { DataManager, GraphQLAdaptor } from '@syncfusion/ej2-data';
-
-let data: DataManager = new DataManager({
-    url: "http://localhost:xxxx", adaptor: new GraphQLAdaptor({
-        response: {
-            result: 'getOrders.result',
-            count: 'getOrders.count'
-        },
-        query: `query getOrders($datamanager: DataManager) {
-        getOrders(datamanager: $datamanager) {
-         count,
-         result{
-          OrderID, CustomerID, ShipCity, ShipCountry}
-         }
-        }`,
-        // mutation for performing CRUD
-        getMutation: function (action: any): string {
-            if (action === 'insert') {
-                return `mutation CreateOrderMutation($value: OrderInput!){
-           createOrder(value: $value){
-            OrderID, CustomerID, ShipCity, ShipCountry
-           }}`;
-            }
-            if (action === 'update') {
-                return `mutation UpdateOrderMutation($key: Int!, $keyColumn: String,$value: OrderInput){
-           updateOrder(key: $key, keyColumn: $keyColumn, value: $value) {
-            OrderID, CustomerID, ShipCity, ShipCountry
-           }
-         }`;
-            } else {
-                return `mutation RemoveOrderMutation($key: Int!, $keyColumn: String, $value: OrderInput){
-           deleteOrder(key: $key, keyColumn: $keyColumn, value: $value) {
-            OrderID, CustomerID, ShipCity, ShipCountry
-           }
-          }`;
-            }
-        }
-    }),
-});
-
-Grid.Inject(Group, Filter, Page, Sort, Edit, Toolbar);
-
-let grid: Grid = new Grid({
-    dataSource: data,
-    toolbar: ['Add', 'Edit', 'Update', 'Delete', 'Search'],
-    editSettings: { allowAdding: true, allowDeleting: true, allowEditing: true },
-    columns: [
-        { field: 'OrderID', headerText: 'Order ID', textAlign: 'Right', width: 120, type: 'number', isPrimaryKey: true },
-        { field: 'CustomerID', width: 140, headerText: 'Customer ID', type: 'string' },
-        { field: 'ShipCity', headerText: 'Ship City', textAlign: 'Right', width: 120 },
-        { field: 'ShipCountry', headerText: 'Ship Country', width: 140 }
-    ],
-
-});
-
-grid.appendTo('#Grid');
-
-{% endhighlight %}
-{% elsif page.publishingplatform == "javascript" %}
+.
 {% highlight js tabtitle="index.js" %}
 var data = new ej.data.DataManager({
     url: "http://localhost:xxxx/",  // xxxx represents the port number
@@ -1312,13 +941,8 @@ var grid = new ej.grids.Grid({
 
 grid.appendTo('#Grid');
 {% endhighlight %}
-{% endif %}
 {% endtabs %}
 
 ![GraphQLAdaptor](../images/GraphQLAdaptor.gif)
 
-{% if page.publishingplatform == "typescript" %}
-> You can find the complete sample for the GraphQLAdaptor in [GitHub](https://github.com/SyncfusionExamples/Binding-data-from-remote-service-to-typescript-data-grid) link.
-{% elsif page.publishingplatform == "javascript" %}
 > You can find the complete sample for the GraphQLAdaptor in [GitHub](https://github.com/SyncfusionExamples/Binding-data-from-remote-service-to-javascript-data-grid) link.
-{% endif %}

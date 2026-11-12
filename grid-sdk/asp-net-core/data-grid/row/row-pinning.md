@@ -4,7 +4,6 @@ title: Row Pinning in Syncfusion ASP.NET Core Grid Component
 description: Learn here all about Row Pinning in Syncfusion ASP.NET Core Grid component of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Row Pinning
-publishingplatform: grid-sdk
 documentation: ug
 ---
 

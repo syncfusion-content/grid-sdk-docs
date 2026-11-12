@@ -4,7 +4,6 @@ title: Render Both Ej1 And Ej2 Grids In Same Application in ASP.NET MVC Grid Com
 description: Learn here all about Render Both Ej1 And Ej2 Grids In Same Application in Syncfusion ASP.NET MVC Grid component of syncfusion and more.
 platform: grid-sdk
 control: Render Both Ej1 And Ej2 Grids In Same Application
-publishingplatform: grid-sdk
 documentation: ug
 ---
 

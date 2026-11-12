@@ -2,9 +2,8 @@
 layout: post
 title: Customize the icons for pivot table in Javascript | Syncfusion
 description: Learn here all about Customize the icons for pivot table in Syncfusion ##Platform_Name## Pivot Table component of Syncfusion Essential JS 2 and more.
-platform: ej2-javascript
+platform: grid-sdk
 control: Customize the icons for pivot table 
-publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
@@ -36,7 +35,6 @@ The Unicode value `'\e337'` represents a specific icon from the [Syncfusion icon
 
 The following sample demonstrates a pivot table rendered with customized field list icon:
 
-{% if page.publishingplatform == "typescript" %}
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -48,17 +46,3 @@ The following sample demonstrates a pivot table rendered with customized field l
 {% endtabs %}
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/pivot-table/icon-customize-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/icon-customize-cs1/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/icon-customize-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/pivot-table/icon-customize-cs1" %}
-{% endif %}

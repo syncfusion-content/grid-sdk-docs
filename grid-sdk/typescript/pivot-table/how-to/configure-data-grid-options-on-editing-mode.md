@@ -2,9 +2,8 @@
 layout: post
 title: Configure data grid options on editing mode in Javascript | Syncfusion
 description: Learn here all about Configure data grid options on editing mode in Syncfusion ##Platform_Name## Pivotview control of Syncfusion Essential JS 2 and more.
-platform: ej2-javascript
+platform: grid-sdk
 control: Configure data grid options on editing mode 
-publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
@@ -19,7 +18,6 @@ The [`beginDrillThrough`](https://ej2.syncfusion.com/documentation/api/pivotview
 
 > Grid features are segregated into individual feature-wise modules. For example, to use the sorting feature, the `Sort` module must be injected using the `Grid.Inject(Sort)` method.
 
-{% if page.publishingplatform == "typescript" %}
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -32,16 +30,3 @@ The [`beginDrillThrough`](https://ej2.syncfusion.com/documentation/api/pivotview
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs73" %}
 
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs73/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs73/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs73" %}
-{% endif %}

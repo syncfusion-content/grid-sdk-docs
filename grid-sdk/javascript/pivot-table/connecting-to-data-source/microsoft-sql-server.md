@@ -2,9 +2,8 @@
 layout: post
 title: Microsoft SQL Server in ##Platform_Name## Pivot Table | Syncfusion
 description: Learn how the ##Platform_Name## Pivot Table connects to Microsoft SQL Server via Microsoft SqlClient and a Web API controller to fetch and bind data at runtime.
-platform: ej2-javascript
+platform: grid-sdk
 control: Microsoft SQL Server
-publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---

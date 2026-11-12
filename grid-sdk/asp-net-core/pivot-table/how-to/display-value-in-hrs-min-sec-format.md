@@ -5,7 +5,6 @@ description: Learn how to render custom string values in ASP.NET Core Pivot Tabl
 platform: grid-sdk
 control: Display string value to pivot table values
 documentation: ug
-publishingplatform: ##Platform_Name##
 ---
 
 # How to Display String Values in ASP.NET Core Pivot Table

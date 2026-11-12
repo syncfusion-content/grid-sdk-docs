@@ -4,21 +4,20 @@ title: Columns in JavaScript Grid control | Syncfusion
 description: Learn here all about Columns in Syncfusion JavaScript Grid control of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Columns 
-publishingplatform: grid-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
 # Columns in JavaScript Grid control
 
-The column definitions are used as the [`dataSource`](../api/grid#datasource) schema in the Grid. This plays a vital role in rendering column values in the required format. The grid operations such as sorting, filtering and grouping etc. are performed based on column definitions. The [`field`](../api/grid/column#field) property of the [`columns`](../api/grid/column) is necessary to map the data source values in Grid columns.
+The column definitions are used as the [`dataSource`](https://ej2.syncfusion.com/javascript/documentation/api/grid#datasource) schema in the Grid. This plays a vital role in rendering column values in the required format. The grid operations such as sorting, filtering and grouping etc. are performed based on column definitions. The [`field`](https://ej2.syncfusion.com/javascript/documentation/api/grid/column#field) property of the [`columns`](https://ej2.syncfusion.com/javascript/documentation/api/grid/column) is necessary to map the data source values in Grid columns.
  
-> 1. If the column [`field`](../api/grid/column#field) is not specified in the dataSource, the column values will be empty.
-> 2. If the [`field`](../api/grid/column#field) name contains “dot” operator, it is considered as complex binding.
+> 1. If the column [`field`](https://ej2.syncfusion.com/javascript/documentation/api/grid/column#field) is not specified in the dataSource, the column values will be empty.
+> 2. If the [`field`](https://ej2.syncfusion.com/javascript/documentation/api/grid/column#field) name contains “dot” operator, it is considered as complex binding.
 
 ## Auto generation
 
-The [`columns`](../api/grid/column) are automatically generated when [`columns`](../api/grid/column) declaration is empty or undefined while initializing the grid. All the columns in the [`dataSource`](../api/grid#datasource) are bound as grid columns.
+The [`columns`](https://ej2.syncfusion.com/javascript/documentation/api/grid/column) are automatically generated when [`columns`](https://ej2.syncfusion.com/javascript/documentation/api/grid/column) declaration is empty or undefined while initializing the grid. All the columns in the [`dataSource`](https://ej2.syncfusion.com/javascript/documentation/api/grid#datasource) are bound as grid columns.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -31,11 +30,11 @@ The [`columns`](../api/grid/column) are automatically generated when [`columns`]
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/row-template-cs18" %}
 
-> When columns are auto-generated, the column [`type`](../api/grid/column#type) will be determined from the first record of the [`dataSource`](../api/grid#datasource).
+> When columns are auto-generated, the column [`type`](https://ej2.syncfusion.com/javascript/documentation/api/grid/column#type) will be determined from the first record of the [`dataSource`](https://ej2.syncfusion.com/javascript/documentation/api/grid#datasource).
 
 ### Set isPrimaryKey for auto generated columns when editing is enabled
 
-Primary key can be defined in the declaration of column object of the grid. When we didn't declare the columns, the grid will generate the columns automatically. For these auto generated columns, you can set [`isPrimaryKey`](../api/grid/column#isprimarykey) column property as true by any one of the following two ways,
+Primary key can be defined in the declaration of column object of the grid. When we didn't declare the columns, the grid will generate the columns automatically. For these auto generated columns, you can set [`isPrimaryKey`](https://ej2.syncfusion.com/javascript/documentation/api/grid/column#isprimarykey) column property as true by any one of the following two ways,
 
 If Primary key "column index" is known then refer the following code example
 
@@ -85,9 +84,9 @@ grid.dataBound = function() {
 
 ### Set column options to auto generated columns
 
-You can set column options such as [`format`](../api/grid/column#format), [`width`](../api/grid/column#width) to the auto generated columns by using [`dataBound`](../api/grid#databound) event of the grid.
+You can set column options such as [`format`](https://ej2.syncfusion.com/javascript/documentation/api/grid/column#format), [`width`](https://ej2.syncfusion.com/javascript/documentation/api/grid/column#width) to the auto generated columns by using [`dataBound`](https://ej2.syncfusion.com/javascript/documentation/api/grid#databound) event of the grid.
 
-In the below example, [`width`](../api/grid/column#width) is set for **OrderID** column, **date** type is set for **OrderDate** column and **numeric** type is set for **Freight** column.
+In the below example, [`width`](https://ej2.syncfusion.com/javascript/documentation/api/grid/column#width) is set for **OrderID** column, **date** type is set for **OrderDate** column and **numeric** type is set for **Freight** column.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -102,7 +101,7 @@ In the below example, [`width`](../api/grid/column#width) is set for **OrderID**
 
 ## Complex data binding
 
-You can achieve complex data binding in the grid by using the dot(.) operator in the [`column.field`](../api/grid/column#field).
+You can achieve complex data binding in the grid by using the dot(.) operator in the [`column.field`](https://ej2.syncfusion.com/javascript/documentation/api/grid/column#field).
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -115,7 +114,7 @@ You can achieve complex data binding in the grid by using the dot(.) operator in
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/complex-binding-cs3" %}
 
-For OData and ODataV4 adaptors, you need to add [`expand`](../api/data/query#expand) query to the [`query`](../api/grid#query) property (of Grid), to eager load the complex data.
+For OData and ODataV4 adaptors, you need to add [`expand`](https://ej2.syncfusion.com/javascript/documentation/api/data/query#expand) query to the [`query`](https://ej2.syncfusion.com/javascript/documentation/api/grid#query) property (of Grid), to eager load the complex data.
 
 ```ts
  let  data = new ej.data.DataManager({
@@ -142,11 +141,11 @@ grid.appendTo('#Grid');
 
 ## Foreign Key Column
 
-Foreign key column can be enabled by using [`column.dataSource`](../api/grid/column#datasource), [`column.foreignKeyField`](../api/grid/column#foreignkeyfield) and [`column.foreignKeyValue`](../api/grid/column#foreignkeyvalue) properties.
+Foreign key column can be enabled by using [`column.dataSource`](https://ej2.syncfusion.com/javascript/documentation/api/grid/column#datasource), [`column.foreignKeyField`](https://ej2.syncfusion.com/javascript/documentation/api/grid/column#foreignkeyfield) and [`column.foreignKeyValue`](https://ej2.syncfusion.com/javascript/documentation/api/grid/column#foreignkeyvalue) properties.
 
-* [`column.dataSource`](../api/grid/column#datasource) - Defines the foreign data.
-* [`column.foreignKeyField`](../api/grid/column#foreignkeyfield) - Defines the mapping column name to the foreign data.
-* [`column.foreignKeyValue`](../api/grid/column#foreignkeyvalue) - Defines the display field from the foreign data.
+* [`column.dataSource`](https://ej2.syncfusion.com/javascript/documentation/api/grid/column#datasource) - Defines the foreign data.
+* [`column.foreignKeyField`](https://ej2.syncfusion.com/javascript/documentation/api/grid/column#foreignkeyfield) - Defines the mapping column name to the foreign data.
+* [`column.foreignKeyValue`](https://ej2.syncfusion.com/javascript/documentation/api/grid/column#foreignkeyvalue) - Defines the display field from the foreign data.
 
 In the following example, **Employee Name** is a foreign column which shows **FirstName** column from foreign data.
 
@@ -161,12 +160,12 @@ In the following example, **Employee Name** is a foreign column which shows **Fi
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/foreign-key-cs12" %}
 
-> * For remote data, the sorting and grouping is done based on [`column.foreignKeyField`](../api/grid/column#foreignkeyfield) instead of [`column.foreignKeyValue`](../api/grid/column#foreignkeyvalue).
-> * If `column.foreignKeyField` is not defined, then the column uses [`column.field`](../api/grid/column#field).
+> * For remote data, the sorting and grouping is done based on [`column.foreignKeyField`](https://ej2.syncfusion.com/javascript/documentation/api/grid/column#foreignkeyfield) instead of [`column.foreignKeyValue`](https://ej2.syncfusion.com/javascript/documentation/api/grid/column#foreignkeyvalue).
+> * If `column.foreignKeyField` is not defined, then the column uses [`column.field`](https://ej2.syncfusion.com/javascript/documentation/api/grid/column#field).
 
 ## Header Template
 
-You can customize the header element by using the [`headerTemplate`](../api/grid/column#headerTemplate) property. In this demo, the custom element is rendered for both EmployeeID and BirthDate column headers.
+You can customize the header element by using the [`headerTemplate`](https://ej2.syncfusion.com/javascript/documentation/api/grid/column#headerTemplate) property. In this demo, the custom element is rendered for both EmployeeID and BirthDate column headers.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -181,7 +180,7 @@ You can customize the header element by using the [`headerTemplate`](../api/grid
 
 ## Header text
 
-By default, column header title is displayed from column [`field`](../api/grid/column#field) value. To override the default header title, you have to define the [`headerText`](../api/grid/column#headertext) value.
+By default, column header title is displayed from column [`field`](https://ej2.syncfusion.com/javascript/documentation/api/grid/column#field) value. To override the default header title, you have to define the [`headerText`](https://ej2.syncfusion.com/javascript/documentation/api/grid/column#headertext) value.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -194,12 +193,12 @@ By default, column header title is displayed from column [`field`](../api/grid/c
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/grid-cs116" %}
 
-> * If both the [`field`](../api/grid/column#field) and [`headerText`](../api/grid/column#headertext)
+> * If both the [`field`](https://ej2.syncfusion.com/javascript/documentation/api/grid/column#field) and [`headerText`](https://ej2.syncfusion.com/javascript/documentation/api/grid/column#headertext)
 are not defined in the column, the column renders with “empty” header text.
 
 ## Format
 
-To format cell values based on specific culture, use the [`columns.format`](../api/grid/column#format) property. The grid uses[Internalization](../common/internationalization/) library to format [`number`](../common/internationalization#number-formatting) and [`date`](../common/internationalization#date-formatting)
+To format cell values based on specific culture, use the [`columns.format`](https://ej2.syncfusion.com/javascript/documentation/api/grid/column#format) property. The grid uses[Internalization](../common/internationalization/) library to format [`number`](../common/internationalization#number-formatting) and [`date`](../common/internationalization#date-formatting)
 values.
 
 {% tabs %}
@@ -231,7 +230,7 @@ Please refer to the link to know more about [`Number formatting`](../common/inte
 
 You can format date values either using built-in date format string or custom format string.
 
-For built-in date format you can specify [`columns.format`](../api/grid/column#format) property as string   (Example: **yMd**). Please refer to the link to know more about [`Date formatting`](../common/internationalization#date-formatting).
+For built-in date format you can specify [`columns.format`](https://ej2.syncfusion.com/javascript/documentation/api/grid/column#format) property as string   (Example: **yMd**). Please refer to the link to know more about [`Date formatting`](../common/internationalization#date-formatting).
 
 You can also use custom format string to format the date values. Some of the custom formats and the formatted date values are given in the below table.
 
@@ -256,7 +255,7 @@ Format | Formatted value
 
 ## Visibility
 
-You can hide any particular column in Grid before rendering by defining [`visible`](../api/grid/column#visible) property as false. In the below sample **ShipCity** column is defined as visible false.
+You can hide any particular column in Grid before rendering by defining [`visible`](https://ej2.syncfusion.com/javascript/documentation/api/grid/column#visible) property as false. In the below sample **ShipCity** column is defined as visible false.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -271,9 +270,9 @@ You can hide any particular column in Grid before rendering by defining [`visibl
 
 ## AutoFit specific columns
 
-The [`autoFitColumns`](../api/grid#autofitcolumns) method resizes the column to fit the widest cell's content without wrapping. You can autofit a specific column at initial rendering by invoking the [`autoFitColumns`](../api/grid#autofitcolumns) method in [`dataBound`](../api/grid#dataBound) event.
+The [`autoFitColumns`](https://ej2.syncfusion.com/javascript/documentation/api/grid#autofitcolumns) method resizes the column to fit the widest cell's content without wrapping. You can autofit a specific column at initial rendering by invoking the [`autoFitColumns`](https://ej2.syncfusion.com/javascript/documentation/api/grid#autofitcolumns) method in [`dataBound`](https://ej2.syncfusion.com/javascript/documentation/api/grid#dataBound) event.
 
-To use the [`autoFitColumns`](../api/grid#autofitcolumns) method, inject the **Resize** module in the grid.
+To use the [`autoFitColumns`](https://ej2.syncfusion.com/javascript/documentation/api/grid#autofitcolumns) method, inject the **Resize** module in the grid.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -286,13 +285,13 @@ To use the [`autoFitColumns`](../api/grid#autofitcolumns) method, inject the **R
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/autofit-columns-cs2" %}
 
-> You can autofit all the columns by invoking the [`autoFitColumns`](../api/grid#autofitcolumns) method without column names.
+> You can autofit all the columns by invoking the [`autoFitColumns`](https://ej2.syncfusion.com/javascript/documentation/api/grid#autofitcolumns) method without column names.
 
 ## Reorder
 
-Reordering can be done by drag and drop of a particular column header from one index to another index within the grid. To enable reordering, set the [`allowReordering`](../api/grid#allowreordering) to true.
+Reordering can be done by drag and drop of a particular column header from one index to another index within the grid. To enable reordering, set the [`allowReordering`](https://ej2.syncfusion.com/javascript/documentation/api/grid#allowreordering) to true.
 
-To use reordering, inject the [`Reorder`](../api/grid/reorder) module in the grid.
+To use reordering, inject the [`Reorder`](https://ej2.syncfusion.com/javascript/documentation/api/grid/reorder) module in the grid.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -305,11 +304,11 @@ To use reordering, inject the [`Reorder`](../api/grid/reorder) module in the gri
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/row-template-cs20" %}
 
-> You can disable reordering a particular column by setting the [`columns.allowReordering`](../api/grid/column#allowreordering) to **false**.
+> You can disable reordering a particular column by setting the [`columns.allowReordering`](https://ej2.syncfusion.com/javascript/documentation/api/grid/column#allowreordering) to **false**.
 
 ### Reorder Single Column
 
-Grid have option to reorder Columns either by Interaction or by using the [`reorderColumns`](../api/grid/reorder#reordercolumns)method. In the below sample, **ShipCity** column is reordered to last column position by using the method.
+Grid have option to reorder Columns either by Interaction or by using the [`reorderColumns`](https://ej2.syncfusion.com/javascript/documentation/api/grid/reorder#reordercolumns)method. In the below sample, **ShipCity** column is reordered to last column position by using the method.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -324,7 +323,7 @@ Grid have option to reorder Columns either by Interaction or by using the [`reor
 
 ### Reorder Multiple Columns
 
-User can reorder a single column at a time by Interaction. Sometimes we need to have reorder multiple columns at the same time, It can be achieved through programmatically by using [`reorderColumns`](../api/grid/reorder#reordercolumns) method.
+User can reorder a single column at a time by Interaction. Sometimes we need to have reorder multiple columns at the same time, It can be achieved through programmatically by using [`reorderColumns`](https://ej2.syncfusion.com/javascript/documentation/api/grid/reorder#reordercolumns) method.
 
 In the below sample, **Ship City** and **Ship Region** column is reordered to last column position.
 
@@ -343,9 +342,9 @@ In the below sample, **Ship City** and **Ship Region** column is reordered to la
 
 During the reorder action, the grid component triggers the below three events.
 
-1. The [`columnDragStart`](../api/grid#columndragstart) event triggers when column header element drag (move) starts.
-2. The [`columnDrag`](../api/grid#columndrag) event triggers when column header element is dragged (moved) continuously.
-3. The [`columnDrop`](../api/grid#columndrop) event triggers when a column header element is dropped on the target column.
+1. The [`columnDragStart`](https://ej2.syncfusion.com/javascript/documentation/api/grid#columndragstart) event triggers when column header element drag (move) starts.
+2. The [`columnDrag`](https://ej2.syncfusion.com/javascript/documentation/api/grid#columndrag) event triggers when column header element is dragged (moved) continuously.
+3. The [`columnDrop`](https://ej2.syncfusion.com/javascript/documentation/api/grid#columndrop) event triggers when a column header element is dropped on the target column.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -360,7 +359,7 @@ During the reorder action, the grid component triggers the below three events.
 
 ## Lock Columns
 
-You can lock columns by using [`column.lockColumn`](../api/grid/column#lockColumn) property. The locked columns will be moved to the first position. Also you can’t reorder its position.
+You can lock columns by using [`column.lockColumn`](https://ej2.syncfusion.com/javascript/documentation/api/grid/column#lockColumn) property. The locked columns will be moved to the first position. Also you can’t reorder its position.
 
 In the below example, **Ship City** column is locked and its reordering functionality is disabled.
 
@@ -377,7 +376,7 @@ In the below example, **Ship City** column is locked and its reordering function
 
 ## Column resizing
 
-Column width can be resized by clicking and dragging the right edge of the column header. While dragging, the width of the respective column will be resized immediately. Each column can be auto resized by double-clicking the right edge of the column header to fit the width of that column based on the widest cell content. To enable column resize, set the [`allowResizing`](../api/grid#allowresizing) property to true.
+Column width can be resized by clicking and dragging the right edge of the column header. While dragging, the width of the respective column will be resized immediately. Each column can be auto resized by double-clicking the right edge of the column header to fit the width of that column based on the widest cell content. To enable column resize, set the [`allowResizing`](https://ej2.syncfusion.com/javascript/documentation/api/grid#allowresizing) property to true.
 
 To use the column resize, inject **Resize** module in the grid.
 
@@ -392,12 +391,12 @@ To use the column resize, inject **Resize** module in the grid.
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/row-template-cs22" %}
 
-> * You can disable resizing for a particular column by setting the [`columns.allowResizing`](../api/grid/column#allowresizing) to false.
+> * You can disable resizing for a particular column by setting the [`columns.allowResizing`](https://ej2.syncfusion.com/javascript/documentation/api/grid/column#allowresizing) to false.
 > * In RTL mode, you can click and drag the left edge of the header cell to resize the column.
 
 ### Column Resizing Externally
 
-To resize a column, set width to that particular column and then refresh the grid header by using the [`refreshHeader()`](../api/grid#refreshheader) method. Please refer the below code
+To resize a column, set width to that particular column and then refresh the grid header by using the [`refreshHeader()`](https://ej2.syncfusion.com/javascript/documentation/api/grid#refreshheader) method. Please refer the below code
 
 ```ts
 
@@ -413,7 +412,7 @@ grid.refreshHeader();
 
 ### Min and max width
 
-Column resize can be restricted between minimum and maximum width by defining the [`columns->minWidth`](../api/grid/column#minwidth) and [`columns->maxWidth`](../api/grid/column#maxwidth).
+Column resize can be restricted between minimum and maximum width by defining the [`columns->minWidth`](https://ej2.syncfusion.com/javascript/documentation/api/grid/column#minwidth) and [`columns->maxWidth`](https://ej2.syncfusion.com/javascript/documentation/api/grid/column#maxwidth).
 
 In the following sample, minimum and maximum width are defined for **OrderID**, **Ship Name**, and **Ship Country** columns.
 
@@ -430,7 +429,7 @@ In the following sample, minimum and maximum width are defined for **OrderID**, 
 
 ### Resize Stacked Column
 
-Stacked columns can be resized by clicking and dragging the right edge of the stacked column header. While dragging, the width of the respective child columns will be resized at the same time. You can disable resize for any particular stacked column by setting [`allowResizing`](../api/grid#allowresizing) as **false** to its columns.
+Stacked columns can be resized by clicking and dragging the right edge of the stacked column header. While dragging, the width of the respective child columns will be resized at the same time. You can disable resize for any particular stacked column by setting [`allowResizing`](https://ej2.syncfusion.com/javascript/documentation/api/grid#allowresizing) as **false** to its columns.
 
 In this example, we have disabled resize for **Ship City** column.
 
@@ -457,9 +456,9 @@ The following screenshot represents the column resizing in touch device.
 
 During the resizing action, the grid component triggers the below three events.
 
-1. The [`resizeStart`](../api/grid#resizestart) event triggers when column resize starts.
-2. The [`resizing`](../api/grid#resizing) event triggers when column header element is dragged (moved) continuously..
-3. The [`resizeStop`](../api/grid#resizestop) event triggers when column resize ends.
+1. The [`resizeStart`](https://ej2.syncfusion.com/javascript/documentation/api/grid#resizestart) event triggers when column resize starts.
+2. The [`resizing`](https://ej2.syncfusion.com/javascript/documentation/api/grid#resizing) event triggers when column header element is dragged (moved) continuously..
+3. The [`resizeStop`](https://ej2.syncfusion.com/javascript/documentation/api/grid#resizestop) event triggers when column resize ends.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -474,7 +473,7 @@ During the resizing action, the grid component triggers the below three events.
 
 ## Column template
 
-The column [`template`](../api/grid/column#template) has options to display custom element instead of a field value in the column.
+The column [`template`](https://ej2.syncfusion.com/javascript/documentation/api/grid/column#template) has options to display custom element instead of a field value in the column.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -486,7 +485,7 @@ The column [`template`](../api/grid/column#template) has options to display cust
 {% endtabs %}
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/column-template-cs2" %}
-> Grid actions such as editing, grouping, filtering and sorting etc. will depend upon the column [`field`](../api/grid/column#field). If the [`field`](../api/grid/column#field) is not specified in the template column, the grid actions cannot be performed.
+> Grid actions such as editing, grouping, filtering and sorting etc. will depend upon the column [`field`](https://ej2.syncfusion.com/javascript/documentation/api/grid/column#field). If the [`field`](https://ej2.syncfusion.com/javascript/documentation/api/grid/column#field) is not specified in the template column, the grid actions cannot be performed.
 
 ### Using condition template
 
@@ -517,9 +516,9 @@ In the following code, checkbox is rendered based on **Discontinued** field valu
 
 ## Column type
 
-Column type can be specified using the [`columns.type`](../api/grid/column#type) property. It specifies the type of data the column binds.
+Column type can be specified using the [`columns.type`](https://ej2.syncfusion.com/javascript/documentation/api/grid/column#type) property. It specifies the type of data the column binds.
 
-If the [`format`](../api/grid/column#format)  is defined for a column, the column uses [`type`](../api/grid/column#type) to select the appropriate format option ([number](../common/internationalization#number-formatting) or [date](../common/internationalization#manipulating-datetime)).
+If the [`format`](https://ej2.syncfusion.com/javascript/documentation/api/grid/column#format)  is defined for a column, the column uses [`type`](https://ej2.syncfusion.com/javascript/documentation/api/grid/column#type) to select the appropriate format option ([number](../common/internationalization#number-formatting) or [date](../common/internationalization#manipulating-datetime)).
 
 Grid column supports the following types:
 * string
@@ -528,12 +527,12 @@ Grid column supports the following types:
 * date
 * datetime
 
-> If the [`type`](../api/grid/column#type) is not defined, it will be determined from the first record of the [`dataSource`](../api/grid#datasource).
-> Incase if the first record of the [`dataSource`](../api/grid#datasource) is null/blank value for a column then it is necessary to define the `type` for that column.
+> If the [`type`](https://ej2.syncfusion.com/javascript/documentation/api/grid/column#type) is not defined, it will be determined from the first record of the [`dataSource`](https://ej2.syncfusion.com/javascript/documentation/api/grid#datasource).
+> Incase if the first record of the [`dataSource`](https://ej2.syncfusion.com/javascript/documentation/api/grid#datasource) is null/blank value for a column then it is necessary to define the `type` for that column.
 
 ## Column chooser
 
-The column chooser has options to show or hide columns dynamically. It can be enabled by defining the [`showColumnChooser`](../api/grid#showcolumnchooser) as true.
+The column chooser has options to show or hide columns dynamically. It can be enabled by defining the [`showColumnChooser`](https://ej2.syncfusion.com/javascript/documentation/api/grid#showcolumnchooser) as true.
 
 To use the column chooser, inject the **ColumnChooser** module in the grid.
 
@@ -548,11 +547,11 @@ To use the column chooser, inject the **ColumnChooser** module in the grid.
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/columnchooser-cs2" %}
 
-> You can hide the column names in column chooser by defining the [`columns.showInColumnChooser`](../api/grid/column#showincolumnchooser) as false.
+> You can hide the column names in column chooser by defining the [`columns.showInColumnChooser`](https://ej2.syncfusion.com/javascript/documentation/api/grid/column#showincolumnchooser) as false.
 
 ### Open column chooser by external button
 
-The Column chooser can be displayed on a page through external button by invoking the [`openColumnChooser`](../api/grid/columnChooser) method with **X** and **Y** axis positions.
+The Column chooser can be displayed on a page through external button by invoking the [`openColumnChooser`](https://ej2.syncfusion.com/javascript/documentation/api/grid/columnChooser) method with **X** and **Y** axis positions.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -567,7 +566,7 @@ The Column chooser can be displayed on a page through external button by invokin
 
 ## Column menu
 
-The column menu has options to integrate features like sorting, grouping, filtering, column chooser, and autofit. It will show a menu with the integrated feature when users click on multiple icon of the column. To enable column menu, you need to define the [`showColumnMenu`](../api/grid#showcolumnmenu) property as true.
+The column menu has options to integrate features like sorting, grouping, filtering, column chooser, and autofit. It will show a menu with the integrated feature when users click on multiple icon of the column. To enable column menu, you need to define the [`showColumnMenu`](https://ej2.syncfusion.com/javascript/documentation/api/grid#showcolumnmenu) property as true.
 
 To use the column menu, inject the **ColumnMenu** module in the grid.
 
@@ -582,7 +581,7 @@ The default items are displayed in following table.
 | **AutoFit** | Auto fit the current column. |
 | **AutoFitAll** | Auto fit all columns. |
 | **ColumnChooser** | Choose the column visibility. |
-| **Filter** | Show the filter option as given in [`filterSettings.type`](../api/grid/filterSettings#type) |
+| **Filter** | Show the filter option as given in [`filterSettings.type`](https://ej2.syncfusion.com/javascript/documentation/api/grid/filterSettings#type) |
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -595,15 +594,15 @@ The default items are displayed in following table.
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/row-template-cs26" %}
 
-> * You can disable column menu for a particular column by defining the [`columns.showColumnMenu`](../api/grid/column#showcolumnmenu) as false.
-> * You can customize the default items by defining the [`columnMenuItems`](../api/grid#columnmenuitems) with required items.
+> * You can disable column menu for a particular column by defining the [`columns.showColumnMenu`](https://ej2.syncfusion.com/javascript/documentation/api/grid/column#showcolumnmenu) as false.
+> * You can customize the default items by defining the [`columnMenuItems`](https://ej2.syncfusion.com/javascript/documentation/api/grid#columnmenuitems) with required items.
 
 ### Column menu events
 
 During the resizing action, the grid component triggers the below two events.
 
-1. The [`columnMenuOpen`](../api/grid#columnmenuopen) event triggers before the column menu opens.
-2. The [`columnMenuClick`](../api/grid#columnmenuclick) event triggers when the user clicks the column menu of the grid.
+1. The [`columnMenuOpen`](https://ej2.syncfusion.com/javascript/documentation/api/grid#columnmenuopen) event triggers before the column menu opens.
+2. The [`columnMenuClick`](https://ej2.syncfusion.com/javascript/documentation/api/grid#columnmenuclick) event triggers when the user clicks the column menu of the grid.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -618,7 +617,7 @@ During the resizing action, the grid component triggers the below two events.
 
 ### Custom Column Menu Item
 
-Custom column menu items can be added by defining the [`columnMenuItems`](../api/grid#columnmenuitems) as collection of the [`columnMenuItemModel`](../api/grid/columnMenuItemModel). Actions for this customized items can be defined in the [`columnMenuClick`](../api/grid#columnmenuclick) event.
+Custom column menu items can be added by defining the [`columnMenuItems`](https://ej2.syncfusion.com/javascript/documentation/api/grid#columnmenuitems) as collection of the [`columnMenuItemModel`](https://ej2.syncfusion.com/javascript/documentation/api/grid/columnMenuItemModel). Actions for this customized items can be defined in the [`columnMenuClick`](https://ej2.syncfusion.com/javascript/documentation/api/grid#columnmenuclick) event.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -633,7 +632,7 @@ Custom column menu items can be added by defining the [`columnMenuItems`](../api
 
 ### Customize menu items for particular columns
 
-Sometimes, you have a scenario that to hide an item from column menu for particular columns. In that case, you need to define the [`columnMenuOpenEventArgs.hide`](../api/grid/columnMenuOpenEventArgs) as true in the [`columnMenuOpen`](../api/grid#columnmenuopen) event.
+Sometimes, you have a scenario that to hide an item from column menu for particular columns. In that case, you need to define the [`columnMenuOpenEventArgs.hide`](https://ej2.syncfusion.com/javascript/documentation/api/grid/columnMenuOpenEventArgs) as true in the [`columnMenuOpen`](https://ej2.syncfusion.com/javascript/documentation/api/grid#columnmenuopen) event.
 
 The following sample, **Filter** item was hidden in column menu when opens for the **OrderID** column.
 
@@ -650,7 +649,7 @@ The following sample, **Filter** item was hidden in column menu when opens for t
 
 ## Column spanning
 
-The grid has option to span the adjacent cells. You need to define the [`colSpan`](../api/grid/queryCellInfoEventArgs#colspan) attribute to span cells in the [`QueryCellInfo`](../api/grid/queryCellInfoEventArgs) event.
+The grid has option to span the adjacent cells. You need to define the [`colSpan`](https://ej2.syncfusion.com/javascript/documentation/api/grid/queryCellInfoEventArgs#colspan) attribute to span cells in the [`QueryCellInfo`](https://ej2.syncfusion.com/javascript/documentation/api/grid/queryCellInfoEventArgs) event.
 
 In the following demo, employee **Davolio** is doing analysis from 9.00 A.M. to 10.00 A.M. so that the cells have been spanned.
 
@@ -668,9 +667,9 @@ In the following demo, employee **Davolio** is doing analysis from 9.00 A.M. to 
 ## Responsive columns
 
 You can toggle column visibility based on media queries which are defined
-at the [`hideAtMedia`](../api/grid/column#hideatmedia).
-The [`hideAtMedia`](../api/grid/column#hideatmedia) accepts valid
-[Media Queries]( http://cssmediaqueries.com/what-are-css-media-queries.html ). In the below sample, for **OrderID** column, [`hideAtMedia`](../api/grid/column#hideatmedia) property value is set as **(min-width: 700px)** so that **OrderID** column will gets hidden when the browser screen width is lessthan 700px.
+at the [`hideAtMedia`](https://ej2.syncfusion.com/javascript/documentation/api/grid/column#hideatmedia).
+The [`hideAtMedia`](https://ej2.syncfusion.com/javascript/documentation/api/grid/column#hideatmedia) accepts valid
+[Media Queries]( http://cssmediaqueries.com/what-are-css-media-queries.html ). In the below sample, for **OrderID** column, [`hideAtMedia`](https://ej2.syncfusion.com/javascript/documentation/api/grid/column#hideatmedia) property value is set as **(min-width: 700px)** so that **OrderID** column will gets hidden when the browser screen width is lessthan 700px.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -685,8 +684,8 @@ The [`hideAtMedia`](../api/grid/column#hideatmedia) accepts valid
 
 ## Controlling Grid actions
 
-You can enable or disable grid action for a particular column by setting the [`allowFiltering`](../api/grid#allowfiltering),
-[`allowGrouping`](../api/grid#allowgrouping), [`allowSorting`](../api/grid#allowsorting), [`allowReordering`](../api/grid#allowreordering), and [`allowEditing`](../api/grid#editsettings) properties.
+You can enable or disable grid action for a particular column by setting the [`allowFiltering`](https://ej2.syncfusion.com/javascript/documentation/api/grid#allowfiltering),
+[`allowGrouping`](https://ej2.syncfusion.com/javascript/documentation/api/grid#allowgrouping), [`allowSorting`](https://ej2.syncfusion.com/javascript/documentation/api/grid#allowsorting), [`allowReordering`](https://ej2.syncfusion.com/javascript/documentation/api/grid#allowreordering), and [`allowEditing`](https://ej2.syncfusion.com/javascript/documentation/api/grid#editsettings) properties.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -701,7 +700,7 @@ You can enable or disable grid action for a particular column by setting the [`a
 
 ## Show/hide columns by external button
 
-You can show or hide grid columns dynamically using external buttons by invoking the [`showColumns`](../api/grid#showcolumns) or [`hideColumns`](../api/grid#hidecolumns) method.
+You can show or hide grid columns dynamically using external buttons by invoking the [`showColumns`](https://ej2.syncfusion.com/javascript/documentation/api/grid#showcolumns) or [`hideColumns`](https://ej2.syncfusion.com/javascript/documentation/api/grid#hidecolumns) method.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -716,7 +715,7 @@ You can show or hide grid columns dynamically using external buttons by invoking
 
 ## ValueAccessor
 
-The [`valueAccessor`](../api/grid/column#valueaccessor) is used to access/manipulate the value of display data. You can achieve custom value formatting by using the [`valueAccessor`](../api/grid/column#valueaccessor).
+The [`valueAccessor`](https://ej2.syncfusion.com/javascript/documentation/api/grid/column#valueaccessor) is used to access/manipulate the value of display data. You can achieve custom value formatting by using the [`valueAccessor`](https://ej2.syncfusion.com/javascript/documentation/api/grid/column#valueaccessor).
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -731,7 +730,7 @@ The [`valueAccessor`](../api/grid/column#valueaccessor) is used to access/manipu
 
 ### Display array type columns
 
-You can bind an array of objects in a column by using the [`valueAccessor`](../api/grid/column#valueaccessor) property. In this example, the name field has an array of two objects, FirstName and LastName. These two objects are joined and bound to a column using the [`valueAccessor`](../api/grid/column#valueaccessor).
+You can bind an array of objects in a column by using the [`valueAccessor`](https://ej2.syncfusion.com/javascript/documentation/api/grid/column#valueaccessor) property. In this example, the name field has an array of two objects, FirstName and LastName. These two objects are joined and bound to a column using the [`valueAccessor`](https://ej2.syncfusion.com/javascript/documentation/api/grid/column#valueaccessor).
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -746,7 +745,7 @@ You can bind an array of objects in a column by using the [`valueAccessor`](../a
 
 ### Expression column
 
-You can achieve the expression column by using the [`valueAccessor`](../api/grid/column#valueaccessor) property.
+You can achieve the expression column by using the [`valueAccessor`](https://ej2.syncfusion.com/javascript/documentation/api/grid/column#valueaccessor) property.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -761,7 +760,7 @@ You can achieve the expression column by using the [`valueAccessor`](../api/grid
 
 ## Render boolean values as checkbox
 
-To render boolean values as checkbox in columns, you need to set [`displayAsCheckBox`](../api/grid/column#displayascheckbox) property as **true**.
+To render boolean values as checkbox in columns, you need to set [`displayAsCheckBox`](https://ej2.syncfusion.com/javascript/documentation/api/grid/column#displayascheckbox) property as **true**.
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}

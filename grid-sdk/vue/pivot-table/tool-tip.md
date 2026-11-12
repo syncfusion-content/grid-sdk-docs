@@ -3,7 +3,7 @@ layout: post
 title: Tooltip in Vue Pivot Table | Syncfusion
 description: Learn how the Vue Pivot Table shows hover tooltips on value cells with row, column, and measure context, and supports custom tooltip templates per cell.
 control: Tool tip 
-platform: ej2-vue
+platform: grid-sdk
 documentation: ug
 domainurl: ##DomainURL##
 ---

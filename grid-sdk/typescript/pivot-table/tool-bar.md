@@ -2,9 +2,8 @@
 layout: post
 title: Tool Bar in ##Platform_Name## Pivot Table | Syncfusion
 description: Learn how the ##Platform_Name## Pivot Table shows a built-in toolbar for new, save, export, and field list via `showToolbar`.
-platform: ej2-javascript
+platform: grid-sdk
 control: Tool bar
-publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---

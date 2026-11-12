@@ -2,7 +2,7 @@
 layout: post
 title: Angular Grid Advanced Filter | Syncfusion
 description: Learn how to use Advanced Filtering in Angular Data Grid with Query Builder, multiple conditions, and logical operators.
-platform: ej2-angular
+platform: grid-sdk
 control: Advanced filter 
 documentation: ug
 domainurl: ##DomainURL##

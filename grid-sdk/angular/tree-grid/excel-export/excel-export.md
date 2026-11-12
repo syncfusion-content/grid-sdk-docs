@@ -125,4 +125,4 @@ The following example demonstrates how to pass additional parameters to the serv
 
 {% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/refresh-cs11" %}
 
-> For more information, refer to the [`Angular TreeGrid`](https://www.syncfusion.com/angular-components/angular-tree-grid) feature tour page. You can also explore the [`Angular TreeGrid example`](https://ej2.syncfusion.com/angular/demos/#/tailwind3/treegrid/treegrid-overview) to discover how to present and manipulate data.
+> For more information, refer to the [`Angular TreeGrid`](https://www.syncfusion.com/angular-components/angular-tree-grid) feature tour page. You can also explore the [`Angular TreeGrid example`](https://ej2.syncfusion.com/angular/demos#/tailwind3/treegrid/treegrid-overview) to discover how to present and manipulate data.

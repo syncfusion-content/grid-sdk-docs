@@ -4,7 +4,6 @@ title: PDF Export Options in ASP.NET MVC Syncfusion Grid Component
 description: Learn here all about PDF Export Options in Syncfusion ASP.NET MVC Grid component of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: PDF Export Options
-publishingplatform: grid-sdk
 documentation: ug
 ---
 

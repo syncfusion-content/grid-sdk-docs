@@ -2,9 +2,8 @@
 layout: post
 title: Row and Column in ##Platform_Name## Pivot Table | Syncfusion
 description: Learn how the ##Platform_Name## Pivot Table sets `height` and `width` in pixel, percentage, or auto formats, with a 400px minimum width for proper display.
-platform: ej2-javascript
+platform: grid-sdk
 control: Row and column
-publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---

@@ -4,7 +4,6 @@ title: Sorting in ASP.NET MVC Pivot Table | Syncfusion
 description: Learn how the ASP.NET MVC Pivot Table sorts field members and aggregated values via EnableSorting, the SortSettings property, or sort icons in the UI.
 platform: grid-sdk
 control: Sorting
-publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 

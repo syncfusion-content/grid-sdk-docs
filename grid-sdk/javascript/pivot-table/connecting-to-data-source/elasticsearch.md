@@ -2,9 +2,8 @@
 layout: post
 title: Elasticsearch in ##Platform_Name## Pivot Table | Syncfusion
 description: Learn how the ##Platform_Name## Pivot Table connects to Elasticsearch via the NEST library and a Web API controller to fetch and bind data at runtime.
-platform: ej2-javascript
+platform: grid-sdk
 control: Elasticsearch
-publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---

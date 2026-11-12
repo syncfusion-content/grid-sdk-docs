@@ -4,7 +4,6 @@ title: Group and Caption Aggregate in ASP.NET Core Grid Component
 description: Learn here all about Group and Caption Aggregate in Syncfusion ASP.NET Core Grid component of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Group and Caption Aggregate
-publishingplatform: grid-sdk
 documentation: ug
 ---
 

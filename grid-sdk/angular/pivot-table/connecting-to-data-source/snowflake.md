@@ -2,7 +2,7 @@
 layout: post
 title: "Snowflake in Angular Pivot Table | Syncfusion"
 component: "Pivot Table"
-platform: ej2-angular
+platform: grid-sdk
 description: Learn how the Angular Pivot Table binds to a Snowflake data warehouse through an ASP.NET Core Web API and the Snowflake.Data driver.
 ---
 

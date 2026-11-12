@@ -2,7 +2,7 @@
 layout: post
 title: Angular Grid Custom Formula Functions | Syncfusion
 description: Learn how to create and use custom formula functions in Angular Data Grid for your own business rules and calculations.
-platform: ej2-angular
+platform: grid-sdk
 control: Formula
 documentation: ug
 domainurl: ##DomainURL##

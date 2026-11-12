@@ -10,11 +10,10 @@ domainurl: https://help.syncfusion.com/grid-sdk
 
 # Column Chooser in TypeScript TreeGrid
 
-The column chooser has options to show or hide columns dynamically. It can be enabled by defining the [`showColumnChooser`](../../api/treegrid#showcolumnchooser) as true.
+The column chooser has options to show or hide columns dynamically. It can be enabled by defining the [`showColumnChooser`](https://ej2.syncfusion.com/documentation/api/treegrid#showcolumnchooser) as true.
 
 To use the column chooser, inject the **Column Chooser** module in the treegrid.
 
-{% if page.publishingplatform == "typescript" %}
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -27,28 +26,14 @@ To use the column chooser, inject the **Column Chooser** module in the treegrid.
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/treegrid/columns-cs2" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/treegrid/columns-cs2/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/treegrid/columns-cs2/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/treegrid/columns-cs2" %}
-{% endif %}
-
-> You can hide the column names in column chooser by defining the [`columns.showInColumnChooser`](../../api/treegrid/column#showincolumnchooser) as false.
+> You can hide the column names in column chooser by defining the [`columns.showInColumnChooser`](https://ej2.syncfusion.com/documentation/api/treegrid/column#showincolumnchooser) as false.
 
 ## Open column chooser by external button
 
 The Column chooser can be displayed on a page through external button by invoking
-the [`openColumnChooser`](../../api/treegrid#opencolumnchooser) method with **X** and **Y** axis positions.
+the [`openColumnChooser`](https://ej2.syncfusion.com/documentation/api/treegrid#opencolumnchooser) method with **X** and **Y** axis positions.
 
-{% if page.publishingplatform == "typescript" %}
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -61,23 +46,10 @@ the [`openColumnChooser`](../../api/treegrid#opencolumnchooser) method with **X*
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/treegrid/columnchooser-method-cs1" %}
 
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/treegrid/columnchooser-method-cs1/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/treegrid/columnchooser-method-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/treegrid/columnchooser-method-cs1" %}
-{% endif %}
 
 ## Column chooser template in Syncfusion TypeScript TreeGrid
 
-The column chooser template feature allows full customization of the column chooser’s header, content, and footer, making it easier to manage column visibility. To enable the column chooser, set [showColumnChooser](../../api/treegrid#showcolumnmenu) to **true** and add **ColumnChooser** to the [toolbar](../../api/treegrid#toolbar) property.
+The column chooser template feature allows full customization of the column chooser’s header, content, and footer, making it easier to manage column visibility. To enable the column chooser, set [showColumnChooser](https://ej2.syncfusion.com/documentation/api/treegrid#showcolumnmenu) to **true** and add **ColumnChooser** to the [toolbar](https://ej2.syncfusion.com/documentation/api/treegrid#toolbar) property.
 
 To implement a custom column chooser template in the TreeGrid, use the following properties:
 
@@ -89,11 +61,10 @@ To implement a custom column chooser template in the TreeGrid, use the following
 
 * **columnChooserSettings.renderCustomColumnChooser** -  Allows you to override the default column chooser UI with a fully customized layout.
 
-In this example, a Syncfusion TreeView component is rendered inside the column chooser. To use the TreeView component, install the Syncfusion TreeView package as described in the [documentation](../../treeview/getting-started). The `columnChooserSettings.template` property defines a element with the `id` set to **tree**, providing as a container for the TreeView component. The `columnChooserSettings.renderCustomColumnChooser` method initializes the TreeView with checkboxes and appends it to this template. Checkbox selection is handled using the [nodeClicked](../../api/treeview#nodeclicked) and [keyPress](../../api/treeview#keypress) events, which organize columns into **Task Info**, **Schedule**, and **Progress**.
+In this example, a Syncfusion TreeView component is rendered inside the column chooser. To use the TreeView component, install the Syncfusion TreeView package as described in the [documentation](../../treeview/getting-started). The `columnChooserSettings.template` property defines a element with the `id` set to **tree**, providing as a container for the TreeView component. The `columnChooserSettings.renderCustomColumnChooser` method initializes the TreeView with checkboxes and appends it to this template. Checkbox selection is handled using the [nodeClicked](https://ej2.syncfusion.com/documentation/api/treeview#nodeclicked) and [keyPress](https://ej2.syncfusion.com/documentation/api/treeview#keypress) events, which organize columns into **Task Info**, **Schedule**, and **Progress**.
 
 The column chooser footer is customized using `columnChooserSettings.footerTemplate`, replacing the default buttons with customized **Apply** and **Close** buttons. The **Apply** button updates column visibility based on selection, while the **Close** button closes the column chooser via the `onClick` event. Additionally, the header is customized using `columnChooserSettings.headerTemplate` to include a title and an icon.
 
-{% if page.publishingplatform == "typescript" %}
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -105,17 +76,3 @@ The column chooser footer is customized using `columnChooserSettings.footerTempl
 {% endtabs %}
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/treegrid/column-chooser-template" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/treegrid/column-chooser-template/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/treegrid/column-chooser-template/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/treegrid/column-chooser-template" %}
-{% endif %}

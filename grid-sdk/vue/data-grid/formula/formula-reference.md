@@ -2,7 +2,7 @@
 layout: post
 title: Vue Grid Formula Reference | Syncfusion
 description: Reference for supported operators, built-in functions, and formula errors in the Vue Data Grid Formula Cell feature.
-platform: ej2-javascript
+platform: grid-sdk
 control: Formula Reference
 documentation: ug
 domainurl: ##DomainURL##

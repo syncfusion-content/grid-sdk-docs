@@ -5,7 +5,6 @@ description: Learn how to hide a specific column in the ASP.NET Core Pivot Table
 platform: grid-sdk
 control: Hide specific columns in pivot table 
 documentation: ug
-publishingplatform: ##Platform_Name##
 ---
 
 # How to Hide Specific Columns in ASP.NET Core Pivot Table

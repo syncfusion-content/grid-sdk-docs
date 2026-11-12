@@ -4,7 +4,6 @@ title: Header in ASP.NET MVC Grid Component
 description: Learn here all about Header in Syncfusion ASP.NET MVC Grid component of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Header
-publishingplatform: grid-sdk
 documentation: ug
 ---
 

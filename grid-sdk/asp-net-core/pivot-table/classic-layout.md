@@ -4,7 +4,6 @@ title: Classic Layout in ASP.NET Core Pivot Table | Syncfusion
 description: Learn how the ASP.NET Core Pivot Table's classic (tabular) layout shows row-axis fields side by side in separate columns for easier reading.
 platform: grid-sdk
 control: Classic Layout
-publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 

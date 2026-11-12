@@ -4,7 +4,6 @@ title: Avoid TypeScript Compilation in the Syncfusion Grid Component for ASP.NET
 description: Learn here all about Avoid Typescript Compilation in Syncfusion ASP.NET MVC Grid component of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Avoid Typescript Compilation
-publishingplatform: grid-sdk
 documentation: ug
 ---
 

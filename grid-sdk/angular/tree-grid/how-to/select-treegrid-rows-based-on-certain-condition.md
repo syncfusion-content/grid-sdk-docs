@@ -10,7 +10,7 @@ domainurl: https://help.syncfusion.com/grid-sdk
 
 # Select TreeGrid rows based on certain condition in Angular TreeGrid component
 
-Rows can be selected in the TreeGrid based on specific conditions by using the [`selectRows`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#selectrows) method within the [`dataBound`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#databound) event of the TreeGrid.
+Rows can be selected in the TreeGrid based on specific conditions by using the [`selectRows`](https://ej2.syncfusion.com/angular/documentation/api/treegrid#selectrows) method within the [`dataBound`](https://ej2.syncfusion.com/angular/documentation/api/treegrid#databound) event of the TreeGrid.
 
 In the following example, only TreeGrid rows with a *Duration* column value greater than *4* are selected.
 
@@ -26,4 +26,4 @@ In the following example, only TreeGrid rows with a *Duration* column value grea
 
 {% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/refresh-cs16" %}
 
-> For comprehensive feature tours, visit the [`Angular TreeGrid feature tour page`](https://www.syncfusion.com/angular-components/angular-tree-grid). Additional practical examples are available in the [`Angular TreeGrid example`](https://ej2.syncfusion.com/angular/demos/#/material/treegrid/treegrid-overview).
+> For comprehensive feature tours, visit the [`Angular TreeGrid feature tour page`](https://www.syncfusion.com/angular-components/angular-tree-grid). Additional practical examples are available in the [`Angular TreeGrid example`](https://ej2.syncfusion.com/angular/demos#/material/treegrid/treegrid-overview).

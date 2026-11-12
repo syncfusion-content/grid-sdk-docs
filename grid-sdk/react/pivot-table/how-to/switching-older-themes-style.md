@@ -3,7 +3,7 @@ layout: post
 title: How to switch to the older Pivot Table theme | Syncfusion
 description: Step-by-step example showing how to switch to the older theme style in the React Pivot Table, with CSS overrides and row-height changes.
 control: Pivot Table
-platform: ej2-react
+platform: grid-sdk
 documentation: ug
 domainurl: ##DomainURL##
 ---

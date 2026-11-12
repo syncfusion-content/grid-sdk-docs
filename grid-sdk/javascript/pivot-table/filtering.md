@@ -2,9 +2,8 @@
 layout: post
 title: Filtering in ##Platform_Name## Pivot Table | Syncfusion
 description: Learn how the ##Platform_Name## Pivot Table filters data using member, label, and value filters applied through the Field List, Grouping Bar, or code-behind.
-platform: ej2-javascript
+platform: grid-sdk
 control: Filtering
-publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---

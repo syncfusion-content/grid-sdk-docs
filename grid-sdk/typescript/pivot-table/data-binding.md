@@ -2,9 +2,8 @@
 layout: post
 title: Data Binding in ##Platform_Name## Pivot Table | Syncfusion
 description: Learn how the ##Platform_Name## Pivot Table binds JSON, CSV, and remote data via `dataSourceSettings.dataSource`, with `DataManager` support.
-platform: ej2-javascript
+platform: grid-sdk
 control: Data binding
-publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---

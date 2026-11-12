@@ -3,7 +3,7 @@ layout: post
 title: Getting Started with React Pivot Table in Preact | Syncfusion
 description: Learn how to get started with the React Pivot Table in a Preact application. Explore setup, features, examples, and customization options.
 control: Pivot Table
-platform: ej2-react
+platform: grid-sdk
 documentation: ug
 domainurl: ##DomainURL##
 ---

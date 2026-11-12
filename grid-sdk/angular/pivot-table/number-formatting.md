@@ -2,7 +2,7 @@
 layout: post
 title: Number Formatting in Angular Pivot Table | Syncfusion
 description: Learn how the Angular Pivot Table formats numeric value cells using number, currency, percent, and custom format strings.
-platform: ej2-angular
+platform: grid-sdk
 control: Number formatting 
 documentation: ug
 domainurl: ##DomainURL##

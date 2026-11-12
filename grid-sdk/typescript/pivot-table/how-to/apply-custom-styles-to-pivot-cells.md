@@ -2,9 +2,8 @@
 layout: post
 title: Apply custom style to pivot cells in Javascript | Syncfusion
 description: Learn here all about Apply custom style to pivot cells in Syncfusion ##Platform_Name## Pivot Table component of Syncfusion Essential JS 2 and more.
-platform: ej2-javascript
+platform: grid-sdk
 control: Apply custom style to pivot cells 
-publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
@@ -28,7 +27,6 @@ The following example shows how to apply styles to:
 - The row header **"Germany"** and its aggregated values using the [`queryCellInfo`](https://ej2.syncfusion.com/documentation/api/grid#querycellinfo) event.
 - Styles are applied by adding the **"e-custom"** CSS class to the cell elements.
 
-{% if page.publishingplatform == "typescript" %}
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -41,18 +39,5 @@ The following example shows how to apply styles to:
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs492" %}
 
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs492/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs492/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs492" %}
-{% endif %}
 
 N> The **dot(.)** character in **FY 2016.Sold Amount** is used by default to identify the header levels in the pivot table's row and column. It can be changed by setting the [`headerDelimiter`](https://helpej2.syncfusion.com/documentation/api/pivotview/valueSortSettingsModel#headerdelimiter) in the [`valueSortSettings`](https://helpej2.syncfusion.com/documentation/api/pivotview/dataSourceSettings#valuesortsettings) property to any other delimiter instead of the default separator.

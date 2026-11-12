@@ -10,12 +10,11 @@ domainurl: https://help.syncfusion.com/grid-sdk
 
 # Custom Toolbar in TypeScript TreeGrid
 
-Custom toolbar items can be added by defining the [`toolbar`](../../api/treegrid#toolbar) as a collection of [`ItemModels`](../../api/toolbar#item).
-Actions for this customized toolbar items are defined in the [`toolbarClick`](../../api/treegrid#toolbarclick) event.
+Custom toolbar items can be added by defining the [`toolbar`](https://ej2.syncfusion.com/documentation/api/treegrid#toolbar) as a collection of [`ItemModels`](https://ej2.syncfusion.com/documentation/api/toolbar#item).
+Actions for this customized toolbar items are defined in the [`toolbarClick`](https://ej2.syncfusion.com/documentation/api/treegrid#toolbarclick) event.
 
-By default, Custom toolbar items are in position `Left`. You can change the position by using the [`align`](../../api/toolbar#item) property. In the below sample, we have applied position `Right` for the `Quick Filter` toolbar item.
+By default, Custom toolbar items are in position `Left`. You can change the position by using the [`align`](https://ej2.syncfusion.com/documentation/api/toolbar#item) property. In the below sample, we have applied position `Right` for the `Quick Filter` toolbar item.
 
-{% if page.publishingplatform == "typescript" %}
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -28,21 +27,8 @@ By default, Custom toolbar items are in position `Left`. You can change the posi
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/treegrid/toolbar-cs1" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/treegrid/toolbar-cs1/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/treegrid/toolbar-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/treegrid/toolbar-cs1" %}
-{% endif %}
-
-> * The [`toolbar`](../../api/treegrid#toolbar) has options to define both built-in and custom toolbar items.
+> * The [`toolbar`](https://ej2.syncfusion.com/documentation/api/treegrid#toolbar) has options to define both built-in and custom toolbar items.
 > * If a toolbar item does not match the built-in items, it will be treated as a custom toolbar item.
 
 ## Built-in and custom items in toolbar
@@ -51,7 +37,6 @@ TreeGrid have an option to use both built-in and custom toolbar items at same ti
 
 In the below example, `ExpandAll`, `CollapseAll` are built-in toolbar items and `Click` is custom toolbar item.
 
-{% if page.publishingplatform == "typescript" %}
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -64,18 +49,5 @@ In the below example, `ExpandAll`, `CollapseAll` are built-in toolbar items and 
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/treegrid/toolbar-cs2" %}
 
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/treegrid/toolbar-cs2/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/treegrid/toolbar-cs2/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/treegrid/toolbar-cs2" %}
-{% endif %}
 
     

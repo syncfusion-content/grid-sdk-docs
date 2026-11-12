@@ -2,9 +2,8 @@
 layout: post
 title: Excel Export in ##Platform_Name## Pivot Table | Syncfusion
 description: Learn how the ##Platform_Name## Pivot Table exports pivot data to .xlsx and .csv files via `excelExport` and `csvExport`, preserving formatting and structure.
-platform: ej2-javascript
+platform: grid-sdk
 control: Excel export
-publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---

@@ -2,7 +2,7 @@
 layout: post
 title: Binding a React Pivot Table to a Flask API Backend | Syncfusion
 description: Learn how to integrate the Syncfusion React Pivot Table with a Flask REST API backend to load and process data from remote services.
-platform: ej2-react
+platform: grid-sdk
 documentation: ug
 domainurl: ##DomainURL##
 ---

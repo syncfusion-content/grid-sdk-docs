@@ -2,9 +2,8 @@
 layout: post
 title: Performance Tips in ##Platform_Name## Pivot Table | Syncfusion
 description: Learn how the ##Platform_Name## Pivot Table improves loading on large datasets with virtual scrolling, paging, server-side engine and data compression.
-platform: ej2-javascript
+platform: grid-sdk
 control: Performance best practices
-publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---

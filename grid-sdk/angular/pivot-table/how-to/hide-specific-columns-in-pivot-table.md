@@ -2,7 +2,7 @@
 layout: post
 title: How to Hide Specific Columns in Angular Pivot Table | Syncfusion
 description: Step-by-step example showing how to hide specific columns in the Angular Pivot Table, with code snippets and property references.
-platform: ej2-angular
+platform: grid-sdk
 control: Pivot Table
 documentation: ug
 domainurl: ##DomainURL##

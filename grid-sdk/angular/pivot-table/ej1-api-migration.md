@@ -2,7 +2,7 @@
 layout: post
 title: Migration from EJ1 in Angular Pivot Table | Syncfusion
 description: Learn how the Angular Pivot Table maps properties, methods, and events from Essential JS 1 PivotGrid to the EJ2 Pivot Table component.
-platform: ej2-angular
+platform: grid-sdk
 control: Pivot Table
 documentation: ug
 domainurl: ##DomainURL##

@@ -34,4 +34,4 @@ Modify the TreeGrid appearance by overriding its default CSS. The following tabl
 |             | `e-summaryrow`          | Applied to summary rows.                                              |
 |             | `e-summarycell`         | Applied to summary cells; customize summary background color.         |
 
-> Refer to the [React TreeGrid](https://www.syncfusion.com/react-ui-components/react-tree-grid) feature tour page for highlights. Explore the [React TreeGrid example](https://ej2.syncfusion.com/react/demos/#/material/treegrid/treegrid-overview) to learn how to present and manipulate data.
+> Refer to the [React TreeGrid](https://www.syncfusion.com/react-ui-components/react-tree-grid) feature tour page for highlights. Explore the [React TreeGrid example](https://ej2.syncfusion.com/react/demos#/material/treegrid/treegrid-overview) to learn how to present and manipulate data.

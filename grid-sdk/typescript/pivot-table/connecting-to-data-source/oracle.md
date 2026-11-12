@@ -2,9 +2,8 @@
 layout: post
 title: Oracle Data Binding in ##Platform_Name## Pivot Table | Syncfusion
 description: Learn how the ##Platform_Name## Pivot Table connects to Oracle via the Oracle.ManagedDataAccess library and a Web API controller.
-platform: ej2-javascript
+platform: grid-sdk
 control: Oracle
-publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---

@@ -2,7 +2,7 @@
 layout: post
 title: Pivot Chart in Angular Pivot Table | Syncfusion
 description: Learn how the Angular Pivot Table renders 25 chart types, accumulation charts, drill operations, and label customization alongside the grid.
-platform: ej2-angular
+platform: grid-sdk
 control: Pivot Table
 documentation: ug
 domainurl: ##DomainURL##

@@ -2,9 +2,8 @@
 layout: post
 title: MySQL in ##Platform_Name## Pivot Table | Syncfusion
 description: Learn how the ##Platform_Name## Pivot Table connects to MySQL via the MySql.Data library and a Web API controller to fetch and bind data at runtime.
-platform: ej2-javascript
+platform: grid-sdk
 control: MySQL
-publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---

@@ -98,7 +98,7 @@ The Grid supports custom edit templates for foreign key columns. By default, a `
 - **`read`**: Retrieves the selected value from the component when editing ends.
 - **`destroy`**: Cleans up the component when editing ends.
 
-In the following example, an [AutoComplete](https://ej2.syncfusion.com/angular/demos/#/bootstrap5/auto-complete/default) component is rendered as the edit template for the "EmployeeID" foreign key column. The [dataSource](https://ej2.syncfusion.com/angular/documentation/api/auto-complete#datasource) property of the `AutoComplete` component is set to the employees data, and the `fields` property is configured to display the "FirstName" field as the value.
+In the following example, an [AutoComplete](https://ej2.syncfusion.com/angular/demos#/bootstrap5/auto-complete/default) component is rendered as the edit template for the "EmployeeID" foreign key column. The [dataSource](https://ej2.syncfusion.com/angular/documentation/api/auto-complete#datasource) property of the `AutoComplete` component is set to the employees data, and the `fields` property is configured to display the "FirstName" field as the value.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

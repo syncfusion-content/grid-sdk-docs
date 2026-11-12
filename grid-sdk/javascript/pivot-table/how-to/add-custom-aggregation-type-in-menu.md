@@ -2,9 +2,8 @@
 layout: post
 title: Add custom aggregation type to the menu in Javascript | Syncfusion
 description: Learn here all about how to add custom aggregation type to the menu in Syncfusion ##Platform_Name## Pivot Table component of Syncfusion Essential JS 2 and more.
-platform: ej2-javascript
+platform: grid-sdk
 control: Add custom aggregation type to the menu 
-publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
@@ -32,20 +31,6 @@ The calculation logic for these custom aggregation types is implemented using th
 - [`aggregateType`](https://ej2.syncfusion.com/documentation/api/pivotview/aggregateEventArgs#aggregatetype) - Holds the aggregate type of the cell.
 - [`skipFormatting`](https://ej2.syncfusion.com/documentation/api/pivotview/aggregateEventArgs#skipformatting) - Boolean property that allows skipping formatting if applied.
 
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs498/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs498/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs498" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -57,4 +42,3 @@ The calculation logic for these custom aggregation types is implemented using th
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs498" %}
-{% endif %}

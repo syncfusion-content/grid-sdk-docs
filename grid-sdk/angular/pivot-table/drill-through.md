@@ -2,7 +2,7 @@
 layout: post
 title: Drill Through in Angular Pivot Table | Syncfusion
 description: Learn how the Angular Pivot Table drill-through shows the raw, unaggregated rows behind any aggregated cell in a popup data grid.
-platform: ej2-angular
+platform: grid-sdk
 control: Pivot Table
 documentation: ug
 domainurl: ##DomainURL##

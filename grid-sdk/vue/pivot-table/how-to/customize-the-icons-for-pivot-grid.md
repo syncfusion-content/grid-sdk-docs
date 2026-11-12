@@ -3,7 +3,7 @@ layout: post
 title: How to customize the pivot table icons in Vue Pivot Table | Syncfusion
 description: Step-by-step example showing how to customize the field-list toggle icon in the Vue Pivot Table by overriding the .pivot-button CSS class with custom content.
 control: Customize the icons for pivot grid 
-platform: ej2-vue
+platform: grid-sdk
 documentation: ug
 domainurl: ##DomainURL##
 ---

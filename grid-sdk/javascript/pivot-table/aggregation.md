@@ -2,9 +2,8 @@
 layout: post
 title: Aggregation in ##Platform_Name## Pivot Table | Syncfusion
 description: Learn how the ##Platform_Name## Pivot Table applies aggregation types like Sum, Count, and Average to value fields, with custom aggregations at runtime.
-platform: ej2-javascript
+platform: grid-sdk
 control: Aggregation
-publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---

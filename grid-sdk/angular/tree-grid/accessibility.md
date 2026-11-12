@@ -103,4 +103,4 @@ To evaluate accessibility in real scenarios, view the TreeGrid accessibility [sa
 
 * [Accessibility in Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components](../common/accessibility)
 
-> For additional feature highlights, see the [Angular TreeGrid feature tour](https://www.syncfusion.com/angular-components/angular-tree-grid) or explore the [TreeGrid live example](https://ej2.syncfusion.com/angular/demos/#/bootstrap5/treegrid/treegrid-overview) for interactive data presentation and accessibility configurations.
+> For additional feature highlights, see the [Angular TreeGrid feature tour](https://www.syncfusion.com/angular-components/angular-tree-grid) or explore the [TreeGrid live example](https://ej2.syncfusion.com/angular/demos#/bootstrap5/treegrid/treegrid-overview) for interactive data presentation and accessibility configurations.

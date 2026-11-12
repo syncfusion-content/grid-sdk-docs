@@ -4,7 +4,6 @@ title: Show Field List when Empty in ASP.NET Core Pivot Table | Syncfusion
 description: Learn how to auto-open the ASP.NET Core Pivot Table's Field List when no fields are configured, via the dataBound event and the onShowFieldList method.
 platform: grid-sdk
 control: Show Field List When Pivot Table Empty
-publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 

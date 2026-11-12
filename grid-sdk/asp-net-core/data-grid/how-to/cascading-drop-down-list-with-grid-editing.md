@@ -4,7 +4,6 @@ title: Cascading Drop Down List With Grid Editing in ASP.NET Core Grid Component
 description: Learn here all about Cascading Drop Down List With Grid Editing in Syncfusion ASP.NET Core Grid component of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Cascading Drop Down List With Grid Editing
-publishingplatform: grid-sdk
 documentation: ug
 ---
 

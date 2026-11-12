@@ -2,7 +2,7 @@
 layout: post
 title: "Oracle in Angular Pivot Table | Syncfusion"
 component: "Pivot Table"
-platform: ej2-angular
+platform: grid-sdk
 description: Learn how the Angular Pivot Table binds to an Oracle database through an ASP.NET Core Web API and Oracle Managed Data Access.
 control: Oracle Data Binding
 documentation: ug

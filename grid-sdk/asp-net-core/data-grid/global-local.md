@@ -4,7 +4,6 @@ title: Global Local in Syncfusion ASP.NET Core Grid Component
 description: Learn here all about Global Local in Syncfusion ASP.NET Core Grid component of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Global Local
-publishingplatform: grid-sdk
 documentation: ug
 ---
 

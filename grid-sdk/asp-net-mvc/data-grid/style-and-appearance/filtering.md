@@ -4,7 +4,6 @@ title: Filtering in ASP.NET MVC Grid Component
 description: Learn here all about Filtering in Syncfusion ASP.NET MVC Grid component of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Filtering
-publishingplatform: grid-sdk
 documentation: ug
 ---
 

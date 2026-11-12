@@ -66,4 +66,4 @@ To enable cache mode in Infinite scrolling, set the `infiniteScrollSettings.enab
 * Programmatic selection using the [selectRows](https://ej2.syncfusion.com/react/documentation/api/treegrid#selectrows) and [selectRow](https://ej2.syncfusion.com/react/documentation/api/treegrid#selectrow) methods is not supported with Infinite scrolling.
 * Infinite scrolling does not support rendering records in a collapsed state. All records must be fully expanded at initial rendering.
 
-> Refer to the [React TreeGrid](https://www.syncfusion.com/react-ui-components/react-tree-grid) feature tour page for feature highlights. Explore the [React TreeGrid example](https://ej2.syncfusion.com/react/demos/#/material/treegrid/treegrid-overview) to learn how to present and manipulate data.
+> Refer to the [React TreeGrid](https://www.syncfusion.com/react-ui-components/react-tree-grid) feature tour page for feature highlights. Explore the [React TreeGrid example](https://ej2.syncfusion.com/react/demos#/material/treegrid/treegrid-overview) to learn how to present and manipulate data.

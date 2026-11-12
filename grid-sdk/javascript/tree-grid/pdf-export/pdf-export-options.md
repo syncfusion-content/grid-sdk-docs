@@ -14,20 +14,6 @@ domainurl: https://help.syncfusion.com/grid-sdk
 
 PDF export provides an option to export hidden columns of TreeGrid by defining the `includeHiddenColumn` as `true`.
 
-{% if page.publishingplatform == "typescript" %}
-
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/treegrid/pdfexport-cs4/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/treegrid/pdfexport-cs4/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/treegrid/pdfexport-cs4" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -39,11 +25,10 @@ PDF export provides an option to export hidden columns of TreeGrid by defining t
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/treegrid/pdfexport-cs4" %}
-{% endif %}
 
 ## Show or hide columns on exported PDF
 
-You can show a hidden column or hide a visible column while exporting the treegrid using [`toolbarClick`](../../api/treegrid#toolbarclick) and [`pdfExportComplete`](../../api/treegrid#pdfExportComplete) events.
+You can show a hidden column or hide a visible column while exporting the treegrid using [`toolbarClick`](https://ej2.syncfusion.com/javascript/documentation/api/treegrid#toolbarclick) and [`pdfExportComplete`](https://ej2.syncfusion.com/javascript/documentation/api/treegrid#pdfExportComplete) events.
 
 In the `toolbarClick` event, based on `args.item.text` as `PDF Export`. We can show or hide columns by setting `column.visible` property to `true` or `false` respectively.
 
@@ -51,20 +36,6 @@ In the pdfExportComplete event, We have reversed the state back to the previous 
 
 In the below example, we have `Duration` as a hidden column in the treegrid. While exporting, we have changed `Duration` to visible column and `StartDate` as hidden column.
 
-{% if page.publishingplatform == "typescript" %}
-
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/treegrid/pdfexport-cs5/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/treegrid/pdfexport-cs5/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/treegrid/pdfexport-cs5" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -76,26 +47,11 @@ In the below example, we have `Duration` as a hidden column in the treegrid. Whi
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/treegrid/pdfexport-cs5" %}
-{% endif %}
 
 ## How to change page orientation
 
 Page orientation can be changed Landscape(Default Portrait) for the exported document using the `exportProperties`.
 
-{% if page.publishingplatform == "typescript" %}
-
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/treegrid/pdfexport-cs6/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/treegrid/pdfexport-cs6/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/treegrid/pdfexport-cs6" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -107,7 +63,6 @@ Page orientation can be changed Landscape(Default Portrait) for the exported doc
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/treegrid/pdfexport-cs6" %}
-{% endif %}
 
 ## How to change page size
 
@@ -142,20 +97,6 @@ Supported page sizes are:
 * Letter11x17
 * Ledger
 
-{% if page.publishingplatform == "typescript" %}
-
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/treegrid/pdfexport-cs7/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/treegrid/pdfexport-cs7/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/treegrid/pdfexport-cs7" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -167,7 +108,6 @@ Supported page sizes are:
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/treegrid/pdfexport-cs7" %}
-{% endif %}
 
 ## To customize PDF export
 
@@ -177,20 +117,6 @@ PDF export provides an option to customize mapping of treegrid to exported PDF d
 
 You can assign the file name for the exported document by defining `fileName` property in `PdfExportProperties`.
 
-{% if page.publishingplatform == "typescript" %}
-
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/treegrid/pdfexport-cs8/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/treegrid/pdfexport-cs8/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/treegrid/pdfexport-cs8" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -202,7 +128,6 @@ You can assign the file name for the exported document by defining `fileName` pr
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/treegrid/pdfexport-cs8" %}
-{% endif %}
 
 ## Font customization
 
@@ -238,20 +163,6 @@ You can change the default font of TreeGrid header, content and caption cells in
 
 In the following example, we have used Advent Pro font to export the treegrid with Hungarian fonts.
 
-{% if page.publishingplatform == "typescript" %}
-
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/treegrid/pdfexport-cs9/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/treegrid/pdfexport-cs9/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/treegrid/pdfexport-cs9" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -263,6 +174,5 @@ In the following example, we have used Advent Pro font to export the treegrid wi
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/treegrid/pdfexport-cs9" %}
-{% endif %}
 
 > `PdfTrueTypeFont` accepts base 64 format of the Custom Font.

@@ -4,7 +4,6 @@ title: Grouping in ASP.NET MVC Pivot Table | Syncfusion
 description: Learn how the ASP.NET MVC Pivot Table groups date, number, and string fields into year, quarter, or numeric ranges via AllowGrouping.
 platform: grid-sdk
 control: Grouping
-publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 

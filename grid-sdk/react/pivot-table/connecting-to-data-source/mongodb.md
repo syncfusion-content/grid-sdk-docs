@@ -2,7 +2,7 @@
 layout: post
 title: MongoDB data binding in React Pivot Table | Syncfusion
 description: Learn how the React Pivot Table retrieves data from a MongoDB database through a Web API controller and binds it as the pivot data source.
-platform: ej2-react
+platform: grid-sdk
 control: Pivot Table
 documentation: ug
 domainurl: ##DomainURL##

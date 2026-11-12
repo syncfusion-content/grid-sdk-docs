@@ -4,7 +4,6 @@ title: Enable Disable Grid And Its Actions in ASP.NET MVC Grid Component
 description: Learn here all about Enable Disable Grid And Its Actions in Syncfusion ASP.NET MVC Grid component of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Enable Disable Grid And Its Actions
-publishingplatform: grid-sdk
 documentation: ug
 ---
 

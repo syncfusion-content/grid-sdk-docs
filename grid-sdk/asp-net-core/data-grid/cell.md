@@ -4,7 +4,6 @@ title: Cell in Syncfusion ASP.NET Core Grid Component
 description: Learn here all about Cell in Syncfusion ASP.NET Core Grid component of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Cell
-publishingplatform: grid-sdk
 documentation: ug
 ---
 

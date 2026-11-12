@@ -3,7 +3,7 @@ layout: post
 title: Overview of JavaScript Pivot Table | Syncfusion
 description: Explore the JavaScript Pivot Table overview and feature matrix for data analysis, sources, layouts, performance, exporting, accessibility, and AI.
 control: Pivot Table
-platform: ej2-javascript
+platform: grid-sdk
 documentation: ug
 domainurl: ##DomainURL##
 ---
@@ -162,6 +162,6 @@ AI assistance is an application integration pattern rather than a built-in Pivot
 ## Quick links
 
 * [Getting started](./getting-started)
-* [Live Pivot Table demos](https://ej2.syncfusion.com/javascript/demos/#/tailwind3/pivot-table/overview)
+* [Live Pivot Table demos](https://ej2.syncfusion.com/javascript/demos#/tailwind3/pivot-table/overview)
 * [Pivot Table API reference](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/index-default)
 * [Release notes](https://ej2.syncfusion.com/javascript/documentation/release-notes)

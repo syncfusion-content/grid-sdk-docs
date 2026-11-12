@@ -10,7 +10,7 @@ domainurl: https://help.syncfusion.com/grid-sdk
 
 # Print in Angular TreeGrid component
 
-To print the TreeGrid, call the [`print`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#print) method of the TreeGrid instance. The print option can also be added to the [`toolbar`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#toolbar) by including the `print` toolbar item.
+To print the TreeGrid, call the [`print`](https://ej2.syncfusion.com/angular/documentation/api/treegrid#print) method of the TreeGrid instance. The print option can also be added to the [`toolbar`](https://ej2.syncfusion.com/angular/documentation/api/treegrid#toolbar) by including the `print` toolbar item.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -34,7 +34,7 @@ Certain print options, such as layout, paper size, and page margins, are control
 
 ## Print using an external button
 
-To print the TreeGrid with an external button, invoke the [`print`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#print) method programmatically.
+To print the TreeGrid with an external button, invoke the [`print`](https://ej2.syncfusion.com/angular/documentation/api/treegrid#print) method programmatically.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -49,7 +49,7 @@ To print the TreeGrid with an external button, invoke the [`print`](https://ej2.
 
 ## Print the visible page
 
-By default, TreeGrid prints all pages. To print only the current page, set the [`printMode`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#printmode) property to `CurrentPage`.
+By default, TreeGrid prints all pages. To print only the current page, set the [`printMode`](https://ej2.syncfusion.com/angular/documentation/api/treegrid#printmode) property to `CurrentPage`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -74,7 +74,7 @@ To display more columns, adjust the scale option in the print setup panel accord
 
 ## Show or hide columns while printing
 
-You can control column visibility during printing by handling the [`toolbarClick`](../api/treegrid/#toolbarclick) and [`printComplete`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#printcomplete) events. 
+You can control column visibility during printing by handling the [`toolbarClick`](../api/treegrid/#toolbarclick) and [`printComplete`](https://ej2.syncfusion.com/angular/documentation/api/treegrid#printcomplete) events. 
 
 In the `toolbarClick` event, based on `args.item.text` as `Print`. We can show or hide columns by setting `column.visible` property to `true` or `false` respectively.
 
@@ -99,4 +99,4 @@ Printing a TreeGrid containing large volumes of data at once is not optimal for 
 
 If it is necessary to print all data, consider exporting the TreeGrid to Excel, CSV, or PDF, and then printing from a dedicated application.
 
-> For more information on TreeGrid capabilities, visit the [Angular TreeGrid feature tour](https://www.syncfusion.com/angular-components/angular-tree-grid) or try the [TreeGrid interactive demo](https://ej2.syncfusion.com/angular/demos/#/material/treegrid/treegrid-overview) to explore real-world data manipulation and presentation.
+> For more information on TreeGrid capabilities, visit the [Angular TreeGrid feature tour](https://www.syncfusion.com/angular-components/angular-tree-grid) or try the [TreeGrid interactive demo](https://ej2.syncfusion.com/angular/demos#/material/treegrid/treegrid-overview) to explore real-world data manipulation and presentation.

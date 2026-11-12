@@ -2,9 +2,8 @@
 layout: post
 title: Field List in ##Platform_Name## Pivot Table | Syncfusion
 description: Learn how the ##Platform_Name## Pivot Table shows a Field List to add, remove, and rearrange fields across axes, in either popup or stand-alone mode.
-platform: ej2-javascript
+platform: grid-sdk
 control: Field list
-publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---

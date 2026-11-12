@@ -4,7 +4,6 @@ title: List Of Array Of Objects in ASP.NET MVC Grid Component
 description: Learn here all about List Of Array Of Objects in Syncfusion ASP.NET MVC Grid component of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: List Of Array Of Objects
-publishingplatform: grid-sdk
 documentation: ug
 ---
 

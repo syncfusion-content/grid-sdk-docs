@@ -2,7 +2,7 @@
 layout: post
 title: Virtual Scrolling in Angular Pivot Table | Syncfusion
 description: Learn how the Angular Pivot Table loads large datasets on demand using virtual scrolling for rows and columns.
-platform: ej2-angular
+platform: grid-sdk
 control: Pivot Table
 documentation: ug
 domainurl: ##DomainURL##

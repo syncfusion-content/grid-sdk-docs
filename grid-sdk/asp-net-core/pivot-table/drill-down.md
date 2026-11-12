@@ -4,7 +4,6 @@ title: Drill Down in ASP.NET Core Pivot Table | Syncfusion
 description: Learn how the ASP.NET Core Pivot Table expands or collapses hierarchical row and column members on demand for relational data sources.
 platform: grid-sdk
 control: Drill Down
-publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 

@@ -10,22 +10,8 @@ domainurl: https://help.syncfusion.com/grid-sdk
 
 # Print in JavaScript TreeGrid
 
-To print the TreeGrid, use the [`print`](../api/treegrid#print) method from treegrid instance. The print option can be displayed on the [`toolbar`](../api/treegrid#toolbar) by adding the `print` toolbar item.
+To print the TreeGrid, use the [`print`](https://ej2.syncfusion.com/javascript/documentation/api/treegrid#print) method from treegrid instance. The print option can be displayed on the [`toolbar`](https://ej2.syncfusion.com/javascript/documentation/api/treegrid#toolbar) by adding the `print` toolbar item.
 
-{% if page.publishingplatform == "typescript" %}
-
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/treegrid/print-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/treegrid/print-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/treegrid/print-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -37,7 +23,6 @@ To print the TreeGrid, use the [`print`](../api/treegrid#print) method from tree
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/treegrid/print-cs1" %}
-{% endif %}
 
 ## Page setup
 
@@ -50,22 +35,8 @@ Some of the print options cannot be configured through JavaScript code. So, you 
 
 ## Print using an external button
 
-To print the treegrid from an external button, invoke the [`print`](../api/treegrid#print) method.
+To print the treegrid from an external button, invoke the [`print`](https://ej2.syncfusion.com/javascript/documentation/api/treegrid#print) method.
 
-{% if page.publishingplatform == "typescript" %}
-
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/treegrid/print-button-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/treegrid/print-button-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/treegrid/print-button-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -77,26 +48,11 @@ To print the treegrid from an external button, invoke the [`print`](../api/treeg
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/treegrid/print-button-cs1" %}
-{% endif %}
 
 ## Print the visible page
 
-By default, the treegrid prints all the pages. To print the current page alone, set the [`printMode`](../api/treegrid#printmode) to `CurrentPage`.
+By default, the treegrid prints all the pages. To print the current page alone, set the [`printMode`](https://ej2.syncfusion.com/javascript/documentation/api/treegrid#printmode) to `CurrentPage`.
 
-{% if page.publishingplatform == "typescript" %}
-
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/treegrid/print-cs2/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/treegrid/print-cs2/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/treegrid/print-cs2" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -108,7 +64,6 @@ By default, the treegrid prints all the pages. To print the current page alone, 
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/treegrid/print-cs2" %}
-{% endif %}
 
 ## Print large number of columns
 
@@ -120,7 +75,7 @@ To show large number of columns when printing, adjust the scale option from prin
 
 ## Show or Hide columns while Printing
 
-You can show a hidden column or hide a visible column while printing the treegrid using [`toolbarClick`](../api/treegrid#toolbarclick) and [`printComplete`](../api/treegrid#printcomplete) events.
+You can show a hidden column or hide a visible column while printing the treegrid using [`toolbarClick`](https://ej2.syncfusion.com/javascript/documentation/api/treegrid#toolbarclick) and [`printComplete`](https://ej2.syncfusion.com/javascript/documentation/api/treegrid#printcomplete) events.
 
 In the `toolbarClick` event, based on `args.item.text` as `Print`. We can show or hide columns by setting `column.visible` property to `true` or `false` respectively.
 
@@ -128,20 +83,6 @@ In the printComplete event, We have reversed the state back to the previous stat
 
 In the below example, we have `Duration` as a hidden column in the treegrid. While printing, we have changed `Duration` to visible column and `StartDate` as hidden column.
 
-{% if page.publishingplatform == "typescript" %}
-
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/treegrid/print-cs3/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/treegrid/print-cs3/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/treegrid/print-cs3" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -153,7 +94,6 @@ In the below example, we have `Duration` as a hidden column in the treegrid. Whi
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/treegrid/print-cs3" %}
-{% endif %}
 
 ## Limitations of Printing Large Data
 
@@ -161,4 +101,4 @@ When treegrid contains large number of data, printing all the data at once is no
 
 If printing of all the data is still needed, we suggest to Export the treegrid to `Excel` or `CSV` or `Pdf` and then print it from another non-web based application.
 
-> You can refer to our [`JavaScript Tree Grid`](https://www.syncfusion.com/javascript-ui-controls/js-tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our JavaScript Tree Grid example [`JavaScript Tree Grid example`](https://ej2.syncfusion.com/demos/#/material/tree-grid/treegrid-overview.html) to knows how to present and manipulate data.
+> You can refer to our [`JavaScript Tree Grid`](https://www.syncfusion.com/javascript-ui-controls/js-tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our JavaScript Tree Grid example [`JavaScript Tree Grid example`](https://ej2.syncfusion.com/demos#/material/tree-grid/treegrid-overview.html) to knows how to present and manipulate data.

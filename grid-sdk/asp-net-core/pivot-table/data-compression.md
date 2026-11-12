@@ -4,7 +4,6 @@ title: Data Compression in ASP.NET Core Pivot Table | Syncfusion
 description: Learn how the ASP.NET Core Pivot Table uses allowDataCompression with virtual scrolling to dedupe raw input data and speed up rendering on large datasets.
 platform: grid-sdk
 control: Data Compression
-publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 

@@ -3,7 +3,7 @@ layout: post
 title: How to hide empty headers in React Pivot Table | Syncfusion
 description: Step-by-step example showing how to hide empty headers in the React Pivot Table by setting showHeaderWhenEmpty to false.
 control: Pivot Table
-platform: ej2-react
+platform: grid-sdk
 documentation: ug
 domainurl: ##DomainURL##
 ---

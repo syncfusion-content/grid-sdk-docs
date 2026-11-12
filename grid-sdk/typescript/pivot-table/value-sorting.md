@@ -4,7 +4,6 @@ title: Value sorting in TypeScript Pivotview control | Syncfusion
 description: Learn here all about Value sorting in Syncfusion TypeScript Pivotview control of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Value sorting 
-publishingplatform: grid-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
@@ -18,7 +17,6 @@ Value sorting can be configured using the `valueSortSettings` option through cod
 * `headerDelimiter`: It allows to set the delimiters string to separate the given header text.
 * `sortOrder`: It allows to set the sort direction of the value field.
 
-{% if page.publishingplatform == "typescript" %}
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -31,19 +29,6 @@ Value sorting can be configured using the `valueSortSettings` option through cod
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs488" %}
 
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs488/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs488/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs488" %}
-{% endif %}
 
 ## See Also
 

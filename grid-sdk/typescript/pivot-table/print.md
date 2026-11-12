@@ -2,9 +2,8 @@
 layout: post
 title: Print in ##Platform_Name## Pivot Table | Syncfusion
 description: Learn how the ##Platform_Name## Pivot Table prints the current state of the pivot table or pivot chart via the underlying Grid's `print` method.
-platform: ej2-javascript
+platform: grid-sdk
 control: Print
-publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---

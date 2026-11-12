@@ -4,7 +4,6 @@ title: Getting Started with Syncfusion ASP.NET Core DataGrid Control
 description: Checkout and learn about getting started with ASP.NET Core DataGrid control of Syncfusion Essential JS 2 and more details.
 platform: grid-sdk
 control: Getting Started Core
-publishingplatform: grid-sdk
 documentation: ug
 ---
 

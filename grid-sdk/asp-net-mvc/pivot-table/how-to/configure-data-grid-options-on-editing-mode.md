@@ -4,7 +4,6 @@ title: How to Configure Grid in ASP.NET MVC Pivot Table | Syncfusion
 description: Learn how to configure sort, group, and filter on the ASP.NET MVC Pivot Table's drill-through data grid via the BeginDrillThrough event.
 platform: grid-sdk
 control: Configure Data Grid Options On Editing Mode
-publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 

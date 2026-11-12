@@ -4,7 +4,6 @@ title: OLAP in ASP.NET Core Pivot Table | Syncfusion
 description: Learn how to configure the ASP.NET Core Pivot Table with OLAP cube data sources, including license registration and project setup in Visual Studio.
 platform: grid-sdk
 control: Olap
-publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 

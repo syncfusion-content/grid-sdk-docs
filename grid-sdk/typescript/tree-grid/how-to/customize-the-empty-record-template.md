@@ -16,7 +16,6 @@ To activate this feature, set the `emptyRecordTemplate` property of the TreeGrid
 
 In the following example, an image and text have been rendered as a template to indicate that the TreeGrid has no data to display.
 
-{% if page.publishingplatform == "typescript" %}
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -28,17 +27,3 @@ In the following example, an image and text have been rendered as a template to 
 {% endtabs %}
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/treegrid/empty-records-template" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/treegrid/empty-records-template/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/treegrid/empty-records-template/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/treegrid/empty-records-template" %}
-{% endif %}

@@ -3,7 +3,7 @@ layout: post
 title: WebMCP tool integration for React components | Syncfusion
 description: Learn how to integrate WebMCP with Syncfusion React components to enable AI interaction, configure tools, manage access, and monitor execution.
 control: WebMCP
-platform: ej2-react
+platform: grid-sdk
 documentation: ug
 domainurl: ##DomainURL##
 ---

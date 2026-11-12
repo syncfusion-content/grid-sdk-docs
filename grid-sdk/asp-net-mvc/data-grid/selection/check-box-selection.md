@@ -4,7 +4,6 @@ title: Checkbox Selection in Syncfusion ASP.NET MVC Grid Component
 description: Learn here all about Checkbox Selection in Syncfusion ASP.NET MVC Grid component of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Checkbox Selection
-publishingplatform: grid-sdk
 documentation: ug
 ---
 

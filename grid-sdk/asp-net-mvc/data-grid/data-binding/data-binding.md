@@ -4,7 +4,6 @@ title: Data Binding in ASP.NET MVC Grid Control | Syncfusion
 description: Learn here all about Data Binding in Syncfusion ASP.NET MVC Grid component of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Data Binding
-publishingplatform: grid-sdk
 documentation: ug
 ---
 

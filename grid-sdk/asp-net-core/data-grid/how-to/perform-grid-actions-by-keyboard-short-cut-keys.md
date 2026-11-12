@@ -4,7 +4,6 @@ title: Perform Grid Actions By Keyboard Short Cut Keys in ASP.NET Core Grid Comp
 description: Learn here all about Perform Grid Actions By Keyboard Short Cut Keys in Syncfusion ASP.NET Core Grid component of syncfusion and more.
 platform: grid-sdk
 control: Perform Grid Actions By Keyboard Short Cut Keys
-publishingplatform: grid-sdk
 documentation: ug
 ---
 

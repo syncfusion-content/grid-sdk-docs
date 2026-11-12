@@ -2,9 +2,8 @@
 layout: post
 title: PDF Export in ##Platform_Name## Pivot Table | Syncfusion
 description: Learn how the ##Platform_Name## Pivot Table exports to PDF via `pdfExport`, with multiple Pivot Tables supported in a single document using `pivotTableIds`.
-platform: ej2-javascript
+platform: grid-sdk
 control: PDF export
-publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---

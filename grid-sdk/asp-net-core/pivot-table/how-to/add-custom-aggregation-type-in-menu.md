@@ -4,7 +4,6 @@ title: How to Add Custom Aggregation in ASP.NET Core Pivot Table | Syncfusion
 description: Learn how to add a custom aggregation type to the ASP.NET Core Pivot Table's aggregate menu via the aggregateCellInfo event.
 platform: grid-sdk
 control: Add custom aggregation type to the menu
-publishingplatform: ##Platform_Name## 
 documentation: ug
 ---
 

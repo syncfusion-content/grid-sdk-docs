@@ -26,4 +26,4 @@ In the following example, the Shimmer indicator is shown while the TreeGrid load
   
 {% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/loading-animation-cs1" %}
 
-> For a complete overview of features, visit the [Angular TreeGrid feature tour](https://www.syncfusion.com/angular-components/angular-tree-grid). Explore the [Angular TreeGrid example](https://ej2.syncfusion.com/angular/demos/#/material/treegrid/treegrid-overview) to see available data presentation options.
+> For a complete overview of features, visit the [Angular TreeGrid feature tour](https://www.syncfusion.com/angular-components/angular-tree-grid). Explore the [Angular TreeGrid example](https://ej2.syncfusion.com/angular/demos#/material/treegrid/treegrid-overview) to see available data presentation options.

@@ -4,7 +4,6 @@ title: Value sorting in JavaScript Pivotview control | Syncfusion
 description: Learn here all about Value sorting in Syncfusion JavaScript Pivotview control of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Value sorting 
-publishingplatform: grid-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
@@ -18,20 +17,6 @@ Value sorting can be configured using the `valueSortSettings` option through cod
 * `headerDelimiter`: It allows to set the delimiters string to separate the given header text.
 * `sortOrder`: It allows to set the sort direction of the value field.
 
-{% if page.publishingplatform == "typescript" %}
-
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs488/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs488/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs488" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -43,7 +28,6 @@ Value sorting can be configured using the `valueSortSettings` option through cod
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs488" %}
-{% endif %}
 
 ## See Also
 

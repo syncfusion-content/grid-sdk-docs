@@ -3,7 +3,7 @@ layout: post
 title: Data compression in React Pivot Table | Syncfusion
 description: Learn how the React Pivot Table compresses repeated members in rows and columns to reduce render time on large relational data sources.
 control: Pivot Table
-platform: ej2-react
+platform: grid-sdk
 documentation: ug
 domainurl: ##DomainURL##
 ---

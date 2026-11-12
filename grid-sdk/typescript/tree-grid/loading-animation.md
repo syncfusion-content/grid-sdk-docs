@@ -16,7 +16,6 @@ The tree grid supports two indicator types, which can be enabled by setting the 
 
 In the following sample, the Shimmer indicator is displayed while the tree grid is loading and refreshing when using the remote data.
 
-{% if page.publishingplatform == "typescript" %}
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -29,16 +28,3 @@ In the following sample, the Shimmer indicator is displayed while the tree grid 
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/treegrid/indicator-cs1" %}
 
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/treegrid/indicator-cs1/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/treegrid/indicator-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/treegrid/indicator-cs1" %}
-{% endif %}

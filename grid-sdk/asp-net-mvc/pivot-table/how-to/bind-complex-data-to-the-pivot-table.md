@@ -5,7 +5,6 @@ description: Learn how to flatten complex nested JSON and bind it to the ASP.NET
 platform: grid-sdk
 control: Convert complex JSON to flat JSON and assign it to the pivot table 
 documentation: ug
-publishingplatform: ##Platform_Name## 
 ---
 
 <!-- markdownlint-disable MD009 -->

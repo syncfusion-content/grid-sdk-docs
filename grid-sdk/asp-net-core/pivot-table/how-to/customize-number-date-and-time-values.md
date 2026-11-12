@@ -4,7 +4,6 @@ title: Format Number, Date, Time in ASP.NET Core Pivot Table | Syncfusion
 description: Learn how to apply number, date, and time formats to ASP.NET Core Pivot Table fields via e-formatsettings, including Intl numberFormatOptions.
 platform: grid-sdk
 control: Customize Number Date And Time Values
-publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 

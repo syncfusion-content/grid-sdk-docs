@@ -4,7 +4,6 @@ title: Conditional Formatting in ASP.NET Core Pivot Table | Syncfusion
 description: Learn how the ASP.NET Core Pivot Table applies conditional formatting to value cells via the toolbar dialog or e-conditionalformatsettings, with custom colors.
 platform: grid-sdk
 control: Conditional Formatting
-publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 

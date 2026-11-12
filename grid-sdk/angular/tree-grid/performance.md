@@ -35,10 +35,10 @@ Both row and column virtualization can be combined, dynamically loading only vis
 
 ## Using column templates for efficient custom cell content
 
-When customizing TreeGrid columns with images or templates, use the column template feature to avoid rendering delays. Relying on [rowDataBound](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#rowdatabound) or [queryCellInfo](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#querycellinfo) events can slow down rendering with large data. 
+When customizing TreeGrid columns with images or templates, use the column template feature to avoid rendering delays. Relying on [rowDataBound](https://ej2.syncfusion.com/angular/documentation/api/treegrid#rowdatabound) or [queryCellInfo](https://ej2.syncfusion.com/angular/documentation/api/treegrid#querycellinfo) events can slow down rendering with large data. 
 
 #### Why choose column templates instead of events?
-1.  **Performance Optimization**: The [rowDataBound](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#rowdatabound) and [queryCellInfo](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#querycellinfo) events are triggered for each row and cell rendering, which can introduce significant delays, especially with large hierarchical datasets.
+1.  **Performance Optimization**: The [rowDataBound](https://ej2.syncfusion.com/angular/documentation/api/treegrid#rowdatabound) and [queryCellInfo](https://ej2.syncfusion.com/angular/documentation/api/treegrid#querycellinfo) events are triggered for each row and cell rendering, which can introduce significant delays, especially with large hierarchical datasets.
 2.  **Avoid Persistent Elements**: Rendering custom elements using events can lead to the persistence of previously rendered elements, potentially increasing rendering times over time.
 3.  **Streamlined Rendering**: Column templates enable customization without impacting rendering performance, ensuring a smoother and faster experience.
 The Column Template feature allows efficient customization of TreeGrid columns while maintaining optimal performance and rendering speed.
@@ -47,7 +47,7 @@ For detailed guidance, refer to the [Tree Grid Column Template Documentation](ht
 
 ## Updating cell values without frequent server calls
 
-For live updates or batch editing scenarios, use the [setCellValue](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#setcellvalue) method to update cell values directly in the UI after initial data binding. This method updates the value in the TreeGrid without sending requests to the server or database, maintaining both performance and a responsive interface.
+For live updates or batch editing scenarios, use the [setCellValue](https://ej2.syncfusion.com/angular/documentation/api/treegrid#setcellvalue) method to update cell values directly in the UI after initial data binding. This method updates the value in the TreeGrid without sending requests to the server or database, maintaining both performance and a responsive interface.
 
 ## Optimizing server-side data operations with adaptors
 

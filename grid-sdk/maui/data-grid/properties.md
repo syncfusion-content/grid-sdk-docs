@@ -2,7 +2,7 @@
 layout: post
 title: Properties of .NET MAUI Data Grid control | Syncfusion®
 description: This section explains the properties, events, and methods with Syncfusion® MAUI Data Grid (SfDataGrid) control.
-platform: maui
+platform: grid-sdk
 control: SfDataGrid
 documentation: ug
 keywords: .net maui datagrid, .net maui sfdatagrid, syncfusion datagrid, datagrid maui, .net maui grid, .net grid maui.

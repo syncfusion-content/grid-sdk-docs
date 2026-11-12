@@ -3,7 +3,7 @@ layout: post
 title: Vue Grid Advanced Filtering | Syncfusion
 description: Learn how to use Advanced Filtering in Vue Data Grid with Query Builder, multiple conditions, and logical operators.
 control: Advanced filter
-platform: ej2-vue
+platform: grid-sdk
 documentation: ug
 domainurl: ##DomainURL##
 ---

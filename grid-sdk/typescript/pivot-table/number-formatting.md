@@ -2,9 +2,8 @@
 layout: post
 title: Number Formatting in ##Platform_Name## Pivot Table | Syncfusion
 description: Learn how the ##Platform_Name## Pivot Table formats values as Number, Currency, Percentage, or custom patterns via `formatSettings` and N, C, P codes.
-platform: ej2-javascript
+platform: grid-sdk
 control: Number formatting
-publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---

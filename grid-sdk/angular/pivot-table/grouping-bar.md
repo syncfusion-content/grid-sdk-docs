@@ -2,7 +2,7 @@
 layout: post
 title: Grouping Bar in Angular Pivot Table | Syncfusion
 description: Learn how the Angular Pivot Table uses the grouping bar to drag and drop fields between row, column, value, and filter axes.
-platform: ej2-angular
+platform: grid-sdk
 control: Pivot Table
 documentation: ug
 domainurl: ##DomainURL##

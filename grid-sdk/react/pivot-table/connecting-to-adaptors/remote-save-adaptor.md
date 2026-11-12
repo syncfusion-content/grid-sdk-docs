@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Remote Save Adaptor in React Pivot Table | Syncfusion"
-platform: ej2-react
+platform: grid-sdk
 description: "Learn how the React Pivot Table combines client-side data loading with server-side persistence through the RemoteSaveAdaptor for hybrid data binding."
 control: Pivot Table
 documentation: ug

@@ -2,7 +2,7 @@
 layout: post
 title: Print in Vue Pivot Table | Syncfusion
 description: Learn how the Vue Pivot Table prints the current pivot table or chart with applied filters, sorting, and formatting using the underlying Grid print method.
-platform: ej2-vue
+platform: grid-sdk
 control: Print 
 documentation: ug
 domainurl: ##DomainURL##

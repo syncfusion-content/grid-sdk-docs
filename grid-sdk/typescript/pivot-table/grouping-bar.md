@@ -2,9 +2,8 @@
 layout: post
 title: Grouping Bar in ##Platform_Name## Pivot Table | Syncfusion
 description: Learn how the ##Platform_Name## Pivot Table shows a Grouping Bar for drag-and-drop field manipulation, with `showGroupingBar` and field-panel options.
-platform: ej2-javascript
+platform: grid-sdk
 control: Grouping bar
-publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---

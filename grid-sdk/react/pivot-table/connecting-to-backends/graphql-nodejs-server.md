@@ -3,7 +3,7 @@ layout: post
 title: Node.js GraphQL backend in React Pivot Table | Syncfusion
 description: Learn how the React Pivot Table integrates with a Node.js GraphQL backend through the GraphQLAdaptor for selective data fetching.
 control: Pivot Table
-platform: ej2-react
+platform: grid-sdk
 documentation: ug
 domainurl: ##DomainURL##
 ---

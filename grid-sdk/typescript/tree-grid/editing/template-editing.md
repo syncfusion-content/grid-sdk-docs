@@ -12,13 +12,12 @@ domainurl: https://help.syncfusion.com/grid-sdk
 
 ## Dialog template
 
-The dialog template editing provides an option to customize the default behavior of dialog editing. Using the dialog template, you can render your own editors by defining the [`editSettings.mode`](../../api/treegrid/editSettingsModel#mode) as `Dialog` and [`template`](../../api/treegrid/editSettingsModel#template) as SCRIPT element ID or HTML string which holds the template.
+The dialog template editing provides an option to customize the default behavior of dialog editing. Using the dialog template, you can render your own editors by defining the [`editSettings.mode`](https://ej2.syncfusion.com/documentation/api/treegrid/editSettingsModel#mode) as `Dialog` and [`template`](https://ej2.syncfusion.com/documentation/api/treegrid/editSettingsModel#template) as SCRIPT element ID or HTML string which holds the template.
 
 In some cases, you need to add the new field editors in the dialog which are not present in the column model. In that situation, the dialog template will help you to customize the default edit dialog.
 
 In the following sample, treegrid enabled with dialog template editing.
 
-{% if page.publishingplatform == "typescript" %}
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -31,19 +30,6 @@ In the following sample, treegrid enabled with dialog template editing.
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/treegrid/dialog-template-cs1" %}
 
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/treegrid/dialog-template-cs1/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/treegrid/dialog-template-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/treegrid/dialog-template-cs1" %}
-{% endif %}
 
 > The template form editors should have **name** attribute.
 
@@ -85,7 +71,7 @@ ${/if}
 
 ### Render editors as components
 
-You can convert the form editors to EJ2 controls in the [`actionComplete`](../../api/treegrid#actioncomplete) event based on the `requestType` as `beginEdit` or `add`.
+You can convert the form editors to EJ2 controls in the [`actionComplete`](https://ej2.syncfusion.com/documentation/api/treegrid#actioncomplete) event based on the `requestType` as `beginEdit` or `add`.
 
 The following code example illustrates rendering the drop-down list control in the `actionComplete` event.
 
@@ -103,7 +89,7 @@ The following code example illustrates rendering the drop-down list control in t
 
 ### Get value from editor
 
-You can read, format, and update the current editor value in the [`actionBegin`](../../api/treegrid#actionbegin) event at the time of setting `requestType` to `save`.
+You can read, format, and update the current editor value in the [`actionBegin`](https://ej2.syncfusion.com/documentation/api/treegrid#actionbegin) event at the time of setting `requestType` to `save`.
 
 In the following code example, the `progress` value has been formatted and updated.
 
@@ -120,7 +106,7 @@ In the following code example, the `progress` value has been formatted and updat
 ### Set focus to editor
 
 By default, the first input element in the dialog will be focused while opening the dialog.
-If the first input element is in disabled or hidden state, focus the valid input element in the [`actionComplete`](../../api/treegrid#actioncomplete) event based on `requestType` as `beginEdit`.
+If the first input element is in disabled or hidden state, focus the valid input element in the [`actionComplete`](https://ej2.syncfusion.com/documentation/api/treegrid#actioncomplete) event based on `requestType` as `beginEdit`.
 
 ```ts
 
@@ -135,7 +121,7 @@ If the first input element is in disabled or hidden state, focus the valid input
 
 ### Adding validation rules for custom editors
 
-If you have used additional fields that are not present in the column model, then add the validation rules to the [`actionComplete`](../../api/treegrid#actioncomplete) event.
+If you have used additional fields that are not present in the column model, then add the validation rules to the [`actionComplete`](https://ej2.syncfusion.com/documentation/api/treegrid#actioncomplete) event.
 
 ```ts
 

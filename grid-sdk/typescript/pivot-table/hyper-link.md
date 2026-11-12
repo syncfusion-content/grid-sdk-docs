@@ -2,9 +2,8 @@
 layout: post
 title: Hyper Link in ##Platform_Name## Pivot Table | Syncfusion
 description: Learn how the ##Platform_Name## Pivot Table adds hyperlinks to row headers, column headers, value cells, and summary cells via `hyperlinkSettings`.
-platform: ej2-javascript
+platform: grid-sdk
 control: Hyper link
-publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
@@ -167,7 +166,7 @@ It provides two parameters:
 * [`data`](https://ej2.syncfusion.com/documentation/api/pivotview/hyperCellClickEventArgs#data): Contains detailed information about the clicked cell, including its value, row and column headers, position, and whether it’s a summary cell.
 * [`nativeEvent`](https://ej2.syncfusion.com/documentation/api/pivotview/hyperCellClickEventArgs#nativeevent): Represents the original browser event triggered by the click, useful for advanced event handling.
 
-In the example below, when a hyperlink cell is clicked, a custom attribute (**data-url**) is added to the cell to redirect users to the Syncfusion Typescript Pivot Table Hyperlink [Demo](https://ej2.syncfusion.com/demos/#/tailwind3/pivot-table/hyper-link.html). The [`cancel`](https://ej2.syncfusion.com/documentation/api/pivotview/hyperCellClickEventArgs#cancel) property is set to **false** to enable this interaction.
+In the example below, when a hyperlink cell is clicked, a custom attribute (**data-url**) is added to the cell to redirect users to the Syncfusion Typescript Pivot Table Hyperlink [Demo](https://ej2.syncfusion.com/demos#/tailwind3/pivot-table/hyper-link.html). The [`cancel`](https://ej2.syncfusion.com/documentation/api/pivotview/hyperCellClickEventArgs#cancel) property is set to **false** to enable this interaction.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}

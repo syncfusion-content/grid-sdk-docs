@@ -2,7 +2,7 @@
 layout: post
 title: Angular Grid Formula Editor | Syncfusion
 description: Learn how the default formula editor works in Angular Data Grid and how to allow or prevent editing in formula-enabled columns.
-platform: ej2-angular
+platform: grid-sdk
 control: Formula
 documentation: ug
 domainurl: ##DomainURL##

@@ -3,7 +3,7 @@ layout: post
 title: PDF Export in Vue Pivot Table | Syncfusion
 description: Learn how the Vue Pivot Table exports data as a PDF document via the pdfExport method, with custom fonts, headers, footers, and file-name configuration.
 control: Pdf export 
-platform: ej2-vue
+platform: grid-sdk
 documentation: ug
 domainurl: ##DomainURL##
 ---

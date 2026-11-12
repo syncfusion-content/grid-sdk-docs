@@ -2,7 +2,7 @@
 layout: post
 title: How to apply custom styles to pivot cells in Vue Pivot | Syncfusion
 description: Step-by-step example showing how to apply custom styles to pivot cells in the Vue Pivot Table via the queryCellInfo and headerCellInfo events in gridSettings.
-platform: ej2-vue
+platform: grid-sdk
 control: Apply custom style to pivot cells 
 documentation: ug
 domainurl: ##DomainURL##

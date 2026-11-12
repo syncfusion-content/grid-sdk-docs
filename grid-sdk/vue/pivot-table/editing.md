@@ -3,7 +3,7 @@ layout: post
 title: Editing in Vue Pivot Table | Syncfusion
 description: Learn how the Vue Pivot Table enables cell editing in normal, dialog, batch, and command-column modes, with editSettings for CRUD.
 control: Editing 
-platform: ej2-vue
+platform: grid-sdk
 documentation: ug
 domainurl: ##DomainURL##
 ---

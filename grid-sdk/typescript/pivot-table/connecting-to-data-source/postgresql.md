@@ -2,9 +2,8 @@
 layout: post
 title: PostgreSQL in ##Platform_Name## Pivot Table | Syncfusion
 description: Learn how the ##Platform_Name## Pivot Table connects to PostgreSQL via Npgsql.EntityFrameworkCore.PostgreSQL and a Web API controller to fetch data.
-platform: ej2-javascript
+platform: grid-sdk
 control: PostgreSQL
-publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---

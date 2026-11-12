@@ -2,9 +2,8 @@
 layout: post
 title: Paging in ##Platform_Name## Pivot Table | Syncfusion
 description: Learn how the ##Platform_Name## Pivot Table paginates large row and column data via `enablePaging` and `pageSettings`, with a built-in pager UI for navigation.
-platform: ej2-javascript
+platform: grid-sdk
 control: Paging
-publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---

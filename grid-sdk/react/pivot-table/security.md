@@ -3,7 +3,7 @@ layout: post
 title: Security in React Pivot Table | Syncfusion
 description: Learn security practices for React Pivot Table data sources, templates, server APIs, reports, drill-through, persistence, and exports.
 control: Pivot Table
-platform: ej2-react
+platform: grid-sdk
 documentation: ug
 domainurl: ##DomainURL##
 ---

@@ -3,7 +3,7 @@ layout: post
 title: Drill Through in Vue Pivot Table | Syncfusion
 description: Learn how the Vue Pivot Table shows raw rows behind any aggregated cell with drill-through and caps OLAP results with maxRowsInDrillThrough.
 control: Drill through 
-platform: ej2-vue
+platform: grid-sdk
 documentation: ug
 domainurl: ##DomainURL##
 ---

@@ -2,7 +2,7 @@
 layout: post
 title: Modules in Angular Pivot Table | Syncfusion
 description: Learn about the Angular Pivot Table feature modules, their provider services, relationships, and how to enable common features.
-platform: ej2-angular
+platform: grid-sdk
 control: Pivot Table
 documentation: ug
 domainurl: ##DomainURL##

@@ -2,9 +2,8 @@
 layout: post
 title: Tool Tip in ##Platform_Name## Pivot Table | Syncfusion
 description: Learn how the ##Platform_Name## Pivot Table shows contextual cell tooltips on hover via `showTooltip`, with `tooltipTemplate` for custom HTML using placeholders.
-platform: ej2-javascript
+platform: grid-sdk
 control: Tool tip
-publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---

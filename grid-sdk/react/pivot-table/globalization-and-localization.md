@@ -3,7 +3,7 @@ layout: post
 title: Globalization in React Pivot Table | Syncfusion
 description: Learn how the React Pivot Table supports globalization and localization for culture-specific number, date, and currency formats, plus translated UI strings.
 control: Pivot Table
-platform: ej2-react
+platform: grid-sdk
 documentation: ug
 domainurl: ##DomainURL##
 ---

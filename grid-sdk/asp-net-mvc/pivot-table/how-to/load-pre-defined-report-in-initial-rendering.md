@@ -5,7 +5,6 @@ description: Learn how to load a specific report from the ASP.NET MVC Pivot Tabl
 platform: grid-sdk
 control: Load desired report from the report list as default 
 documentation: ug
-publishingplatform: ##Platform_Name##
 ---
 
 <!-- markdownlint-disable MD009 -->

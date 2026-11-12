@@ -2,9 +2,8 @@
 layout: post
 title: Classic Layout in ##Platform_Name## Pivot Table | Syncfusion
 description: Learn how the ##Platform_Name## Pivot Table renders the classic (tabular) layout by setting `gridSettings.layout` to Tabular.
-platform: ej2-javascript
+platform: grid-sdk
 control: Classic Layout
-publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---

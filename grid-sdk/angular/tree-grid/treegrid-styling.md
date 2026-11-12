@@ -43,4 +43,4 @@ Section|CSS class|Purpose of CSS class
 }
 ```
 
-> For more on TreeGrid features, see the [Angular TreeGrid feature tour](https://www.syncfusion.com/angular-components/angular-tree-grid) or the [TreeGrid live example](https://ej2.syncfusion.com/angular/demos/#/material/treegrid/treegrid-overview) to explore data presentation and styling options.
+> For more on TreeGrid features, see the [Angular TreeGrid feature tour](https://www.syncfusion.com/angular-components/angular-tree-grid) or the [TreeGrid live example](https://ej2.syncfusion.com/angular/demos#/material/treegrid/treegrid-overview) to explore data presentation and styling options.

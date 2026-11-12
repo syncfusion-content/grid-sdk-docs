@@ -10,9 +10,8 @@ domainurl: https://help.syncfusion.com/grid-sdk
 
 # Column Template in TypeScript TreeGrid
 
-The column [`template`](../../api/treegrid/column#template) has options to display custom element instead of a field value in the column.
+The column [`template`](https://ej2.syncfusion.com/documentation/api/treegrid/column#template) has options to display custom element instead of a field value in the column.
 
-{% if page.publishingplatform == "typescript" %}
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -25,20 +24,7 @@ The column [`template`](../../api/treegrid/column#template) has options to displ
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/treegrid/column-template-cs1" %}
 
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/treegrid/column-template-cs1/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/treegrid/column-template-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/treegrid/column-template-cs1" %}
-{% endif %}
-> TreeGrid actions such as editing, filtering and sorting etc. will depend upon the column [`field`](../../api/treegrid/column#field). If the [`field`](../../api/treegrid/column#field) is not specified in the template column, the treegrid actions cannot be performed.
+> TreeGrid actions such as editing, filtering and sorting etc. will depend upon the column [`field`](https://ej2.syncfusion.com/documentation/api/treegrid/column#field). If the [`field`](https://ej2.syncfusion.com/documentation/api/treegrid/column#field) is not specified in the template column, the treegrid actions cannot be performed.
 
 ## Using condition template
 
@@ -56,7 +42,6 @@ In the following code, checkbox is rendered based on `Approved` field value.
         </script>
 ```
 
-{% if page.publishingplatform == "typescript" %}
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -68,17 +53,3 @@ In the following code, checkbox is rendered based on `Approved` field value.
 {% endtabs %}
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/treegrid/condition-inside-template-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/treegrid/condition-inside-template-cs1/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/treegrid/condition-inside-template-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/treegrid/condition-inside-template-cs1" %}
-{% endif %}

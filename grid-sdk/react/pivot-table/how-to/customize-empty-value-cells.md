@@ -3,7 +3,7 @@ layout: post
 title: How to customize empty value cells in React Pivot Table | Syncfusion
 description: Step-by-step example showing how to customize empty value cells in the React Pivot Table with custom text and styling.
 control: Pivot Table
-platform: ej2-react
+platform: grid-sdk
 documentation: ug
 domainurl: ##DomainURL##
 ---

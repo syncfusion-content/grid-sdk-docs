@@ -4,7 +4,6 @@ title: Filtering in ASP.NET Core Pivot Table | Syncfusion
 description: Learn how the ASP.NET Core Pivot Table applies member, label, and value filtering on row, column, and filter axes via the Field List or e-filtersettings.
 platform: grid-sdk
 control: Filtering
-publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 

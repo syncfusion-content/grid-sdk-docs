@@ -4,7 +4,6 @@ title: Editing in ASP.NET Core Pivot Table | Syncfusion
 description: Learn how the ASP.NET Core Pivot Table allows CRUD editing of raw data in value cells through Normal, Dialog, Batch, and Command Column modes of e-editSettings.
 platform: grid-sdk
 control: Editing
-publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 

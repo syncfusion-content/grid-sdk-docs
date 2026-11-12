@@ -2,7 +2,7 @@
 layout: post
 title: Drill Down in Angular Pivot Table | Syncfusion
 description: Learn how the Angular Pivot Table expands and collapses hierarchical members with drill position, expandAll, drilledMembers, and drill events.
-platform: ej2-angular
+platform: grid-sdk
 control: Pivot Table
 documentation: ug
 domainurl: ##DomainURL##

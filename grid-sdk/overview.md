@@ -230,16 +230,16 @@ Explore live demos of the Grid SDK components:
 
 | Component | Platform | Documentation | Demo |
 |-----------|----------|---------------|------|
-| DataGrid | JavaScript | [View UG](https://ej2.syncfusion.com/documentation/grid/getting-started) | [View Demos](https://ej2.syncfusion.com/javascript/demos/#/tailwind3/grid/overview.html) |
-| DataGrid | React | [View UG](https://ej2.syncfusion.com/react/documentation/grid/getting-started) | [View Demos](https://ej2.syncfusion.com/react/demos/#/tailwind3/grid/overview) |
-| DataGrid | Angular | [View UG](https://ej2.syncfusion.com/angular/documentation/grid/getting-started) | [View Demos](https://ej2.syncfusion.com/angular/demos/#/tailwind3/grid/overview) |
-| DataGrid | Vue | [View UG](https://ej2.syncfusion.com/vue/documentation/grid/getting-started) | [View Demos](https://ej2.syncfusion.com/vue/demos/#/tailwind3/grid/overview.html) |
+| DataGrid | JavaScript | [View UG](https://ej2.syncfusion.com/documentation/grid/getting-started) | [View Demos](https://ej2.syncfusion.com/javascript/demos#/tailwind3/grid/overview.html) |
+| DataGrid | React | [View UG](https://ej2.syncfusion.com/react/documentation/grid/getting-started) | [View Demos](https://ej2.syncfusion.com/react/demos#/tailwind3/grid/overview) |
+| DataGrid | Angular | [View UG](https://ej2.syncfusion.com/angular/documentation/grid/getting-started) | [View Demos](https://ej2.syncfusion.com/angular/demos#/tailwind3/grid/overview) |
+| DataGrid | Vue | [View UG](https://ej2.syncfusion.com/vue/documentation/grid/getting-started) | [View Demos](https://ej2.syncfusion.com/vue/demos#/tailwind3/grid/overview.html) |
 | DataGrid | Blazor | [View UG](https://blazor.syncfusion.com/documentation/datagrid/getting-started) | [View Demos](https://blazor.syncfusion.com/demos/datagrid/overview?theme=fluent2) |
 | DataGrid | ASP.NET Core | [View UG](https://ej2.syncfusion.com/aspnetcore/documentation/grid/getting-started) | [View Demos](https://ej2.syncfusion.com/aspnetcore/grid/overview#/fluent2) |
 | DataGrid | ASP.NET MVC | [View UG](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/getting-started) | [View Demos](https://ej2.syncfusion.com/aspnetmvc/grid/overview#/fluent2) |
-| TreeGrid | JavaScript | [View UG](https://ej2.syncfusion.com/documentation/treegrid/getting-started) | [View Demos](https://ej2.syncfusion.com/javascript/demos/#/tailwind3/treegrid/overview.html) |
+| TreeGrid | JavaScript | [View UG](https://ej2.syncfusion.com/documentation/treegrid/getting-started) | [View Demos](https://ej2.syncfusion.com/javascript/demos#/tailwind3/treegrid/overview.html) |
 | TreeGrid | Blazor | [View UG](https://blazor.syncfusion.com/documentation/treegrid/getting-started) | [View Demos](https://blazor.syncfusion.com/demos/treegrid/overview?theme=fluent2) |
-| Pivot Table | JavaScript | [View UG](https://ej2.syncfusion.com/documentation/pivotview/getting-started) | [View Demos](https://ej2.syncfusion.com/javascript/demos/#/tailwind3/pivot-table/default.html) |
+| Pivot Table | JavaScript | [View UG](https://ej2.syncfusion.com/documentation/pivotview/getting-started) | [View Demos](https://ej2.syncfusion.com/javascript/demos#/tailwind3/pivot-table/default.html) |
 | Pivot Table | Blazor | [View UG](https://blazor.syncfusion.com/documentation/pivot-table/getting-started) | [View Demos](https://blazor.syncfusion.com/demos/pivot-table/overview?theme=fluent2) |
 
 ---

@@ -4,7 +4,6 @@ title: Caption Template in ASP.NET Core Grid Component
 description: Learn here all about Caption Template in Syncfusion ASP.NET Core Grid component of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Caption Template
-publishingplatform: grid-sdk
 documentation: ug
 ---
 

@@ -4,7 +4,6 @@ title: Ej1 api migration in TypeScript Grid control | Syncfusion
 description: Learn here all about Ej1 api migration in Syncfusion TypeScript Grid control of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Ej1 api migration 
-publishingplatform: grid-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---

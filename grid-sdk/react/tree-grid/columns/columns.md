@@ -230,4 +230,4 @@ The Syncfusion React TreeGrid provides a built-in feature to toggle column visib
 
  {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/treegrid/column-cs22" %}
 
-> Refer to our [React TreeGrid](https://www.syncfusion.com/react-components/react-tree-grid) feature tour page for its groundbreaking feature representations. Explore our [React TreeGrid example](https://ej2.syncfusion.com/react/demos/#/bootstrap5/treegrid/treegrid-overview) to knows how to present and manipulate data.
+> Refer to our [React TreeGrid](https://www.syncfusion.com/react-components/react-tree-grid) feature tour page for its groundbreaking feature representations. Explore our [React TreeGrid example](https://ej2.syncfusion.com/react/demos#/bootstrap5/treegrid/treegrid-overview) to knows how to present and manipulate data.

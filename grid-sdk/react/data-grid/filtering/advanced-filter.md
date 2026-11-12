@@ -3,7 +3,7 @@ layout: post
 title: React Grid Advanced Filter | Syncfusion
 description: Learn how to use Advanced Filtering in React Data Grid with Query Builder, multiple conditions, and logical operators.
 control: Advanced filter 
-platform: ej2-react
+platform: grid-sdk
 documentation: ug
 domainurl: ##DomainURL##
 ---

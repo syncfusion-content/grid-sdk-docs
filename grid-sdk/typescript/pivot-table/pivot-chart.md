@@ -2,9 +2,8 @@
 layout: post
 title: Pivot Chart in ##Platform_Name## Pivot Table | Syncfusion
 description: Learn how the ##Platform_Name## Pivot Table renders 15+ Pivot Chart types with drill down, axis options, and series, legend, export, and tooltip settings.
-platform: ej2-javascript
+platform: grid-sdk
 control: Pivot chart
-publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---

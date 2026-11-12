@@ -4,7 +4,6 @@ title: Scaffolding in ASP.NET Core Grid Component
 description: Learn here all about Scaffolding in Syncfusion ASP.NET Core Grid component of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Scaffolding
-publishingplatform: grid-sdk
 documentation: ug
 ---
 
@@ -52,4 +51,4 @@ N> * Ensure at least one Entity Framework model has been exists and the applicat
 
 Refer to the following UG links to render Syncfusion<sup style="font-size:70%">&reg;</sup> control after performed scaffolding.
 
-**MVC5:** [`Configure Essential<sup style="font-size:70%">&reg;</sup> JS 2 using Syncfusion.EJ2.MVC5 package`](https://ej2.syncfusion.com/aspnetmvc/documentation/getting-started/visual-studio-2017/#configure-essential-js-2-in-the-application)
+**MVC5:** [`Configure Essential<sup style="font-size:70%">&reg;</sup> JS 2 using Syncfusion.EJ2.MVC5 package`](https://ej2.syncfusion.com/aspnetmvc/documentation/getting-started/visual-studio-2017#configure-essential-js-2-in-the-application)

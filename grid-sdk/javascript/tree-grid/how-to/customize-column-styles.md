@@ -10,7 +10,7 @@ domainurl: https://help.syncfusion.com/grid-sdk
 
 # Customize Column Styles in JavaScript TreeGrid
 
-You can customize the appearance of the header and content of a particular column using the [`customAttributes`](../../api/treegrid/column#customattributes) property.
+You can customize the appearance of the header and content of a particular column using the [`customAttributes`](https://ej2.syncfusion.com/javascript/documentation/api/treegrid/column#customattributes) property.
 
 To customize the Tree Grid column, follow the given steps:
 
@@ -37,27 +37,13 @@ Create a CSS class with custom style to override the default style for row cell 
 
 **Step 2**:
 
-Add the custom CSS class to the specified column by using the [`customAttributes`](../../api/treegrid/column#customattributes) property.
+Add the custom CSS class to the specified column by using the [`customAttributes`](https://ej2.syncfusion.com/javascript/documentation/api/treegrid/column#customattributes) property.
 
 ```ts
 { field: 'taskName', headerText: 'Task Name', customAttributes: {class: 'customcss'}, width: 100 },
 
 ```
 
-{% if page.publishingplatform == "typescript" %}
-
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/treegrid/columnstyle-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/treegrid/columnstyle-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/treegrid/columnstyle-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -69,6 +55,5 @@ Add the custom CSS class to the specified column by using the [`customAttributes
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/treegrid/columnstyle-cs1" %}
-{% endif %}
 
-> You can refer to our [`JavaScript Tree Grid`](https://www.syncfusion.com/javascript-ui-controls/js-tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our JavaScript Tree Grid example [`JavaScript Tree Grid example`](https://ej2.syncfusion.com/demos/#/material/tree-grid/treegrid-overview.html) to knows how to present and manipulate data.
+> You can refer to our [`JavaScript Tree Grid`](https://www.syncfusion.com/javascript-ui-controls/js-tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our JavaScript Tree Grid example [`JavaScript Tree Grid example`](https://ej2.syncfusion.com/demos#/material/tree-grid/treegrid-overview.html) to knows how to present and manipulate data.

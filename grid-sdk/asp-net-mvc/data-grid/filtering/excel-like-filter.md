@@ -4,7 +4,6 @@ title: Excel Like Filter in Syncfusion ASP.NET MVC Grid
 description: Learn here all about Excel Like Filter in Syncfusion ASP.NET MVC Grid of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Excel Like Filter
-publishingplatform: grid-sdk
 documentation: ug
 ---
 

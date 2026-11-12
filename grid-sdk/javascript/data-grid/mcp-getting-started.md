@@ -3,7 +3,7 @@ layout: post
 title: WebMCP tool integration for JavaScript (ES5) controls | Syncfusion
 description: Learn how to integrate WebMCP with Syncfusion JavaScript (ES5) controls to enable AI interaction, configure tools, manage access, and monitor execution.
 control: WebMCP
-platform: ej2-javascript
+platform: grid-sdk
 documentation: ug
 domainurl: ##DomainURL##
 ---

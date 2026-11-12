@@ -2,9 +2,8 @@
 layout: post
 title: Editing in ##Platform_Name## Pivot Table | Syncfusion
 description: Learn how the ##Platform_Name## Pivot Table edits underlying values via `editSettings`, with add, update, delete, inline edit, and command column support.
-platform: ej2-javascript
+platform: grid-sdk
 control: Editing
-publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---

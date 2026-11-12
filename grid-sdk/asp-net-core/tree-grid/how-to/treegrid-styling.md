@@ -4,7 +4,6 @@ title: ASP.NET Core TreeGrid Styling | Syncfusion
 description: Learn how to customize the appearance of ASP.NET Core TreeGrid using CSS classes, Theme Studio, and advanced styling techniques.
 platform: grid-sdk
 control: Treegrid Styling
-publishingplatform: grid-sdk
 documentation: ug
 ---
 

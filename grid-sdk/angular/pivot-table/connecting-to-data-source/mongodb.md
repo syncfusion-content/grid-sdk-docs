@@ -2,7 +2,7 @@
 layout: post
 title: "MongoDB in Angular Pivot Table | Syncfusion"
 component: "Pivot Table"
-platform: ej2-angular
+platform: grid-sdk
 description: Learn how the Angular Pivot Table binds to a MongoDB database through an ASP.NET Core Web API and the MongoDB.Driver library.
 control: MongoDB Data Binding
 documentation: ug

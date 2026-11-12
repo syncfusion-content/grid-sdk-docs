@@ -4,7 +4,6 @@ title: Accessibility in Syncfusion ASP.NET MVC Pivot Table Component
 description: Learn here all about Accessibility in Syncfusion ASP.NET MVC Pivot Table component of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Accessibility
-publishingplatform: grid-sdk
 documentation: ug
 ---
 

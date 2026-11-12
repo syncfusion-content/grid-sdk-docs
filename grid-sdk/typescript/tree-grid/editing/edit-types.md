@@ -12,8 +12,8 @@ domainurl: https://help.syncfusion.com/grid-sdk
 
 ## Cell edit type and its params
 
-The [`columns.editType`](../../api/treegrid/column#edittype) is used to customize the edit type of the particular column.
-You can set the [`columns.editType`](../../api/treegrid/column#edittype) based on data type of the column.
+The [`columns.editType`](https://ej2.syncfusion.com/documentation/api/treegrid/column#edittype) is used to customize the edit type of the particular column.
+You can set the [`columns.editType`](https://ej2.syncfusion.com/documentation/api/treegrid/column#edittype) based on data type of the column.
 
 * `numericedit` - [`NumericTextBox`](../../numerictextbox) component for integers, double, and decimal data types.
 
@@ -27,7 +27,7 @@ You can set the [`columns.editType`](../../api/treegrid/column#edittype) based o
 
 * `datetimepickeredit` - [`DateTimePicker`](../../datetimepicker) component for date time data type.
 
-Also, you can customize model of the [`columns.editType`](../../api/treegrid/column#edittype) component through the [`columns.edit.params`](../../api/treegrid/column#edit).
+Also, you can customize model of the [`columns.editType`](https://ej2.syncfusion.com/documentation/api/treegrid/column#edittype) component through the [`columns.edit.params`](https://ej2.syncfusion.com/documentation/api/treegrid/column#edit).
 
 The following table describes cell edit type component and their corresponding edit params of the column.
 
@@ -40,7 +40,6 @@ Component |Example
 [`DatePicker`](../../datepicker) | params: { format:'dd.MM.yyyy' }
 [`DateTimePicker`](../../datetimepicker) | params: { value: new Date() }
 
-{% if page.publishingplatform == "typescript" %}
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -53,19 +52,6 @@ Component |Example
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/treegrid/edit-cs6" %}
 
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/treegrid/edit-cs6/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/treegrid/edit-cs6/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/treegrid/edit-cs6" %}
-{% endif %}
 
 > If edit type is not defined in the column, then it will be considered as the `stringedit` type (Textbox component).
 
@@ -81,7 +67,6 @@ The cell edit template is used to add a custom component for a particular column
 
 * `destroy` - It is used to destroy the component.
 
-{% if page.publishingplatform == "typescript" %}
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -93,17 +78,3 @@ The cell edit template is used to add a custom component for a particular column
 {% endtabs %}
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/treegrid/edit-cs7" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/treegrid/edit-cs7/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/treegrid/edit-cs7/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/treegrid/edit-cs7" %}
-{% endif %}

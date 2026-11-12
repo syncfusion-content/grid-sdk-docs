@@ -10,9 +10,9 @@ domainurl: https://help.syncfusion.com/grid-sdk
 
 # Column Menu in TypeScript TreeGrid
 
-The column menu has options to integrate features like sorting, filtering, and autofit. It will show a menu with the integrated feature when users click on multiple icon of the column. To enable column menu, you need to define the [`showColumnMenu`](../../api/treegrid#showcolumnmenu) property as true.
+The column menu has options to integrate features like sorting, filtering, and autofit. It will show a menu with the integrated feature when users click on multiple icon of the column. To enable column menu, you need to define the [`showColumnMenu`](https://ej2.syncfusion.com/documentation/api/treegrid#showcolumnmenu) property as true.
 
-By default, column menu is enabled for all columns and you can disable column menu for a particular column by defining the [`showColumnMenu`](../../api/treegrid/column#showcolumnmenu) as false in [`columns`](../../api/treegrid#column) property.
+By default, column menu is enabled for all columns and you can disable column menu for a particular column by defining the [`showColumnMenu`](https://ej2.syncfusion.com/documentation/api/treegrid/column#showcolumnmenu) as false in [`columns`](https://ej2.syncfusion.com/documentation/api/treegrid#column) property.
 
 To use the column menu, inject the `ColumnMenu` module in the treegrid.
 
@@ -26,7 +26,6 @@ The default items are displayed in following table.
 | `AutoFitAll` | Auto fit all columns. |
 | `Filter` | Show the filter option as given in `filterSettings.type` |
 
-{% if page.publishingplatform == "typescript" %}
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -39,19 +38,6 @@ The default items are displayed in following table.
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/treegrid/columns-cs3" %}
 
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/treegrid/columns-cs3/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/treegrid/columns-cs3/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/treegrid/columns-cs3" %}
-{% endif %}
 
 ## Custom column menu item
 
@@ -61,7 +47,6 @@ The action for custom column menu items can be performed using [`columnMenuClick
 
 In the below example, clear sorting action was performed through `columnMenuItems` by using [`clearSorting`](https://ej2.syncfusion.com/documentation/api/treegrid#clearsorting) method of the Tree Grid.
 
-{% if page.publishingplatform == "typescript" %}
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -74,27 +59,13 @@ In the below example, clear sorting action was performed through `columnMenuItem
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/treegrid/columns-cs4" %}
 
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/treegrid/columns-cs4/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/treegrid/columns-cs4/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/treegrid/columns-cs4" %}
-{% endif %}
 
 ## Customize menu items for particular columns
 
-It is possible to customize specific items from the column menu for particular [`columns`](../../api/treegrid#column) using [`columnMenuOpen`](https://ej2.syncfusion.com/documentation/api/treegrid#columnmenuopen) event. `columnMenuOpen` event can be utilized to determine which items to customize in column menu.
+It is possible to customize specific items from the column menu for particular [`columns`](https://ej2.syncfusion.com/documentation/api/treegrid#column) using [`columnMenuOpen`](https://ej2.syncfusion.com/documentation/api/treegrid#columnmenuopen) event. `columnMenuOpen` event can be utilized to determine which items to customize in column menu.
 
 The following example shows how to hide the built-in **Filter** menu item when the column menu is opened for the **taskName** column, while allowing it to remain visible for all other columns.
 
-{% if page.publishingplatform == "typescript" %}
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -107,16 +78,3 @@ The following example shows how to hide the built-in **Filter** menu item when t
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/treegrid/columns-cs5" %}
 
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/treegrid/columns-cs5/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/treegrid/columns-cs5/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/treegrid/columns-cs5" %}
-{% endif %}

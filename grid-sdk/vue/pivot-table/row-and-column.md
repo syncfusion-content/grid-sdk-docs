@@ -3,7 +3,7 @@ layout: post
 title: Row and Column in Vue Pivot Table | Syncfusion
 description: Learn how the Vue Pivot Table sets row and column dimensions via height, width, and gridSettings, with pixel, percentage, and auto size modes.
 control: Row and column 
-platform: ej2-vue
+platform: grid-sdk
 documentation: ug
 domainurl: ##DomainURL##
 ---

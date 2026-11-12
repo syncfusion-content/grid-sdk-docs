@@ -2,9 +2,8 @@
 layout: post
 title: CSS Customization in ##Platform_Name## Pivot Table | Syncfusion
 description: Learn how the ##Platform_Name## Pivot Table uses CSS classes to style row headers, axes, and Field List areas.
-platform: ej2-javascript
+platform: grid-sdk
 control: CSS customization
-publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---

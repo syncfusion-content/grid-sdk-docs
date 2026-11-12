@@ -3,7 +3,7 @@ layout: post
 title: Overview of Vue Pivot Table | Syncfusion
 description: Explore the Vue Pivot Table overview and feature matrix for data analysis, data sources, layouts, performance, exporting, accessibility, and AI integration.
 control: Pivot Table
-platform: ej2-vue
+platform: grid-sdk
 documentation: ug
 domainurl: ##DomainURL##
 ---
@@ -164,6 +164,6 @@ AI assistance is an application integration pattern rather than a built-in Pivot
 ## Quick links
 
 * [Getting started](./getting-started)
-* [Live Pivot Table demos](https://ej2.syncfusion.com/vue/demos/#/tailwind3/pivot-table/overview)
+* [Live Pivot Table demos](https://ej2.syncfusion.com/vue/demos#/tailwind3/pivot-table/overview)
 * [Pivot Table API reference](https://ej2.syncfusion.com/vue/documentation/api/pivotview/index-default)
 * [Release notes](https://ej2.syncfusion.com/vue/documentation/release-notes)

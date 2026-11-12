@@ -2,7 +2,7 @@
 layout: post
 title: Vue Grid Formula Editor | Syncfusion
 description: Learn how the default formula editor works in Vue Data Grid and how to allow or prevent editing in formula-enabled columns.
-platform: ej2-javascript
+platform: grid-sdk
 control: Formula Editor
 documentation: ug
 domainurl: ##DomainURL##

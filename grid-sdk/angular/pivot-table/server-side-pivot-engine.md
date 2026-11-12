@@ -2,7 +2,7 @@
 layout: post
 title: Server-side Pivot Engine in Angular Pivot Table | Syncfusion
 description: Learn how the Angular Pivot Table uses the Syncfusion.Pivot.Engine assembly to offload aggregation, filtering, and sorting to a server.
-platform: ej2-angular
+platform: grid-sdk
 control: Pivot Table
 documentation: ug
 domainurl: ##DomainURL##

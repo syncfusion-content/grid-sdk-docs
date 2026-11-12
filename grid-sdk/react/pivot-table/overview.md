@@ -3,7 +3,7 @@ layout: post
 title: Overview of React Pivot Table | Syncfusion
 description: Explore the React Pivot Table overview and feature matrix for data analysis, data sources, layouts, performance, exporting, accessibility, and AI integration.
 control: Pivot Table
-platform: ej2-react
+platform: grid-sdk
 documentation: ug
 domainurl: ##DomainURL##
 ---
@@ -165,6 +165,6 @@ AI assistance is an application integration pattern rather than a built-in Pivot
 ## Quick links
 
 * [Getting started](./getting-started)
-* [Live Pivot Table demos](https://ej2.syncfusion.com/react/demos/#/tailwind3/pivot-table/overview)
+* [Live Pivot Table demos](https://ej2.syncfusion.com/react/demos#/tailwind3/pivot-table/overview)
 * [Pivot Table API reference](https://ej2.syncfusion.com/react/documentation/api/pivotview)
 * [Release notes](https://ej2.syncfusion.com/react/documentation/release-notes)

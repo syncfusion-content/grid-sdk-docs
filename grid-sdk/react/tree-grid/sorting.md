@@ -118,4 +118,4 @@ The following image shows TreeGrid touch sorting.
 <img src="images/touch-sorting.jpg" alt="TreeGrid touch sorting example" style="width:320px;height: 620px">
 <!-- markdownlint-enable MD033 -->
 
-> Refer to the [React TreeGrid](https://www.syncfusion.com/react-ui-components/react-tree-grid) feature tour for key capabilities. Explore the [React TreeGrid example](https://ej2.syncfusion.com/react/demos/#/material/treegrid/treegrid-overview) to learn how to present and manipulate data.
+> Refer to the [React TreeGrid](https://www.syncfusion.com/react-ui-components/react-tree-grid) feature tour for key capabilities. Explore the [React TreeGrid example](https://ej2.syncfusion.com/react/demos#/material/treegrid/treegrid-overview) to learn how to present and manipulate data.

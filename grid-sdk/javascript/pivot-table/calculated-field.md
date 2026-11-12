@@ -2,9 +2,8 @@
 layout: post
 title: Calculated Field in ##Platform_Name## Pivot Table | Syncfusion
 description: Learn how the ##Platform_Name## Pivot Table creates calculated fields via the dialog or `calculatedFieldSettings`.
-platform: ej2-javascript
+platform: grid-sdk
 control: Calculated field
-publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---

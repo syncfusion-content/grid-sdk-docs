@@ -4,7 +4,6 @@ title: Value filtering in JavaScript Pivotview control | Syncfusion
 description: Learn here all about Value filtering in Syncfusion JavaScript Pivotview control of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Value filtering 
-publishingplatform: grid-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
@@ -43,20 +42,6 @@ Operators that can be used in label filtering are:
 | Between| Displays the pivot table that records between start and end values.|
 | NotBetween| Displays the pivot table that does not record between start and end values.|
 
-{% if page.publishingplatform == "typescript" %}
-
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs487/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs487/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs487" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -68,7 +53,6 @@ Operators that can be used in label filtering are:
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs487" %}
-{% endif %}
 
 ## See Also
 

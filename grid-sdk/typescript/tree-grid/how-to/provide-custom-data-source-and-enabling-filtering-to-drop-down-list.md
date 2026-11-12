@@ -10,7 +10,7 @@ domainurl: https://help.syncfusion.com/grid-sdk
 
 # Custom Data Source for Filterable DropDownList in JavaScript TreeGrid
 
-You can provide data source to the DropDownList by using the **params** of [`columns.edit`](../api/treegrid/column#edit) property.
+You can provide data source to the DropDownList by using the **params** of [`columns.edit`](https://ej2.syncfusion.com/documentation/api/treegrid/column#edit) property.
 
 While setting new data source using edit params, you must specify a new **query** property for the DropDownList as follows,
 
@@ -26,11 +26,10 @@ While setting new data source using edit params, you must specify a new **query*
       }
 ```
 
-You can also enable filtering for the DropDownList by passing the [`allowFiltering`](../../api/drop-down-list#allowfiltering) as **true** to the edit params.
+You can also enable filtering for the DropDownList by passing the [`allowFiltering`](https://ej2.syncfusion.com/documentation/api/drop-down-list#allowfiltering) as **true** to the edit params.
 
-In the below demo, DropDownList is rendered with custom [`dataSource`](../../api/drop-down-list#datasource) for the *Priority* column and enabled filtering to search DropDownList items.
+In the below demo, DropDownList is rendered with custom [`dataSource`](https://ej2.syncfusion.com/documentation/api/drop-down-list#datasource) for the *Priority* column and enabled filtering to search DropDownList items.
 
-{% if page.publishingplatform == "typescript" %}
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -43,18 +42,5 @@ In the below demo, DropDownList is rendered with custom [`dataSource`](../../api
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/treegrid/custom-data-cs1" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/treegrid/custom-data-cs1/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/treegrid/custom-data-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/treegrid/custom-data-cs1" %}
-{% endif %}
-
-> You can refer to our [`JavaScript Tree Grid`](https://www.syncfusion.com/javascript-ui-controls/js-tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our JavaScript Tree Grid example [`JavaScript Tree Grid example`](https://ej2.syncfusion.com/demos/#/material/tree-grid/treegrid-overview.html) to knows how to present and manipulate data.
+> You can refer to our [`JavaScript Tree Grid`](https://www.syncfusion.com/javascript-ui-controls/js-tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our JavaScript Tree Grid example [`JavaScript Tree Grid example`](https://ej2.syncfusion.com/demos#/material/tree-grid/treegrid-overview.html) to knows how to present and manipulate data.

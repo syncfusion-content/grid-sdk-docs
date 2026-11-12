@@ -3,7 +3,7 @@ layout: post
 title: Filtering in Vue Pivot Table | Syncfusion
 description: Learn how the Vue Pivot Table applies member, label, and value filtering through the field list and grouping bar with custom operators.
 control: Filtering 
-platform: ej2-vue
+platform: grid-sdk
 documentation: ug
 domainurl: ##DomainURL##
 ---

@@ -2,7 +2,7 @@
 layout: post
 title: How to export Pivot Table and Chart to a PDF document | Syncfusion
 description: Step-by-step example showing how to export the table and the chart into the same PDF document in the React Pivot Table using the pdfExport method.
-platform: ej2-react
+platform: grid-sdk
 control: Pivot Table
 documentation: ug
 domainurl: ##DomainURL##

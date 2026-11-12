@@ -3,7 +3,7 @@ layout: post
 title: Summary Customization in Vue Pivot Table | Syncfusion
 description: Learn how the Vue Pivot Table shows or hides grand totals and subtotals per row or column, and repositions them to the top or bottom via dataSourceSettings.
 control: Summary customization 
-platform: ej2-vue
+platform: grid-sdk
 documentation: ug
 domainurl: ##DomainURL##
 ---

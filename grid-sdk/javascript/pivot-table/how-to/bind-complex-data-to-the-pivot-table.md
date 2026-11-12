@@ -2,9 +2,8 @@
 layout: post
 title: Complex JSON to flat JSON in Javascript | Syncfusion
 description: Learn here all about how to convert complex JSON to flat JSON and assign it to the pivot table in Syncfusion Javascript of Syncfusion Essential JS 2 and more.
-platform: ej2-javascript
+platform: grid-sdk
 control: Convert complex JSON to flat JSON and assign it to the pivot table 
-publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
@@ -66,20 +65,6 @@ You can convert complex JSON to flat JSON programmatically and bind it to the pi
 
 In the following example, the **complexToFlatJson()** method is used to convert complex JSON to flat JSON and bind it to the pivot table using the [`dataSource`](https://ej2.syncfusion.com/documentation/api/pivotview/dataSourceSettings#datasource) property, then modifying the field names in the [`rows`](https://ej2.syncfusion.com/documentation/api/pivotview/dataSourceSettingsModel#rows) and [`columns`](https://ej2.syncfusion.com/documentation/api/pivotview/dataSourceSettingsModel#columns) based on the converted flat JSON under [`dataSourceSettings`](https://ej2.syncfusion.com/documentation/api/pivotview/index-default#datasourcesettings) in the [`load`](https://ej2.syncfusion.com/documentation/api/pivotview/index-default#load) event.
 
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs499/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs499/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs499" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -91,4 +76,3 @@ In the following example, the **complexToFlatJson()** method is used to convert 
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs499" %}
-{% endif %}

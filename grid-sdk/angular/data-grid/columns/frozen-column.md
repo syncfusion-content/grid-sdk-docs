@@ -43,7 +43,7 @@ The following example sets the [frozenColumns](https://ej2.syncfusion.com/angula
 The Grid provides a straightforward way to freeze individual columns on the left side using the [`isFrozen`](https://ej2.syncfusion.com/angular/documentation/api/grid/column#isfrozen) property in the column definition. When this property is set to `true`, the chosen column is locked at the leftmost position of the Grid and remains visible while scrolling horizontally.
 
 
-The following example demonstrates freezing a particular column using the `isFrozen` property. Initially, the "OrderID" column is frozen. The [`change`](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list#change) event of the [`DropDownList`](https://ej2.syncfusion.com/angular/demos/#bootstrap5/drop-down-list/default) component allows dynamically changing which column is frozen. The selected column's `isFrozen` property is modified using the [`getColumnByField`](https://ej2.syncfusion.com/angular/documentation/api/grid#getcolumnbyfield) method, and the [`refreshColumns`](https://ej2.syncfusion.com/angular/documentation/api/grid#refreshcolumns) method updates the display.
+The following example demonstrates freezing a particular column using the `isFrozen` property. Initially, the "OrderID" column is frozen. The [`change`](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list#change) event of the [`DropDownList`](https://ej2.syncfusion.com/angular/demos#bootstrap5/drop-down-list/default) component allows dynamically changing which column is frozen. The selected column's `isFrozen` property is modified using the [`getColumnByField`](https://ej2.syncfusion.com/angular/documentation/api/grid#getcolumnbyfield) method, and the [`refreshColumns`](https://ej2.syncfusion.com/angular/documentation/api/grid#refreshcolumns) method updates the display.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -133,7 +133,7 @@ The following example demonstrates changing the default frozen line color using 
 
 ## Render custom editors in frozen columns
 
-Custom edit controls, such as a [DatePicker](https://ej2.syncfusion.com/angular/demos/#bootstrap5/datepicker/default), can be rendered inside frozen columns during editing. This is achieved using the [edit](https://ej2.syncfusion.com/angular/documentation/api/grid/column#edit) property of the column definition, which accepts an object with custom editor methods.
+Custom edit controls, such as a [DatePicker](https://ej2.syncfusion.com/angular/demos#bootstrap5/datepicker/default), can be rendered inside frozen columns during editing. This is achieved using the [edit](https://ej2.syncfusion.com/angular/documentation/api/grid/column#edit) property of the column definition, which accepts an object with custom editor methods.
 
 **Custom editor methods:**
 

@@ -2,7 +2,7 @@
 layout: post
 title: Smart Pivot Table in React | Syncfusion
 description: Learn how the React Pivot Table works with AI AssistView to apply validated natural-language actions that change exactly one report setting at a time.
-platform: ej2-react
+platform: grid-sdk
 control: Pivot Table
 documentation: ug
 domainurl: ##DomainURL##

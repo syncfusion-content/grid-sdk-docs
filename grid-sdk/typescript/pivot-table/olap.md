@@ -2,9 +2,8 @@
 layout: post
 title: OLAP in ##Platform_Name## Pivot Table | Syncfusion
 description: Learn how the ##Platform_Name## Pivot Table connects to OLAP data sources and supports MDX queries with axis configuration.
-platform: ej2-javascript
+platform: grid-sdk
 control: OLAP
-publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---

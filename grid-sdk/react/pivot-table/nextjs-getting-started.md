@@ -3,7 +3,7 @@ layout: post
 title: Getting Started with React Pivot Table in Next.js | Syncfusion
 description: Learn how to get started with the React Pivot Table in a Next.js application. Explore setup, features, examples, and customization options.
 control: Pivot Table
-platform: ej2-react
+platform: grid-sdk
 documentation: ug
 domainurl: ##DomainURL##
 ---
@@ -232,7 +232,7 @@ Open your browser and navigate to `http://localhost:3000` to view the running ap
 ## Resources
 
 * [Next.js Pivot Table sample on GitHub](https://github.com/SyncfusionExamples/ej2-nextjs-pivotview) — Full source of the application built in this guide.
-* [Live Next.js Pivot Table demos](https://ej2.syncfusion.com/react/demos/#/tailwind3/pivot-table/overview) — Browse interactive samples and customize them.
+* [Live Next.js Pivot Table demos](https://ej2.syncfusion.com/react/demos#/tailwind3/pivot-table/overview) — Browse interactive samples and customize them.
 * [Next.js documentation](https://nextjs.org/docs) — Reference for App Router, layouts, and server actions.
 
 ## See Also

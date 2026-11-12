@@ -4,7 +4,6 @@ title: Set Drill-Through Edit Type in ASP.NET MVC Pivot Table | Syncfusion
 description: Learn how to set the cell edit type on the ASP.NET MVC Pivot Table's drill-through grid via the DrillThrough event.
 platform: grid-sdk
 control: Drill Through Grid Cell Edit Type
-publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
