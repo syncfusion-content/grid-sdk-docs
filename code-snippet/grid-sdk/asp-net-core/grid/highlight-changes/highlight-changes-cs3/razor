@@ -1,0 +1,30 @@
+<div class="controls" style="padding: 10px 0">
+    <button class="e-btn" id="flashRows">Flash selected row</button>
+    <button class="e-btn" id="flashColumn">Flash Exposure column</button>
+    <button class="e-btn" id="flashCells">Flash cells</button>
+</div>
+@Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)ViewBag.DataSource).EnableHighlightOnDataChange(true).Height("300").Columns(col =>
+{
+	col.Field("Account").HeaderText("Account").IsPrimaryKey(true).Width("110").Add();
+	col.Field("Desk").HeaderText("Desk").Width("150").Add();
+	col.Field("Rating").HeaderText("Rating").Width("100").Add();
+	col.Field("Exposure").HeaderText("Exposure").Format("C0").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Width("140").Add();
+	col.Field("Risk").HeaderText("Risk level").Width("110").Add();
+}).Render()
+<script>
+    document.getElementById('flashRows').addEventListener('click', function () {
+        var grid = document.getElementById('Grid').ej2_instances[0];
+        var rows = grid.getSelectedRowIndexes();
+        if (rows.length) {
+            grid.flashCells({ rowNodes: rows });
+        }
+    });
+    document.getElementById('flashColumn').addEventListener('click', function () {
+        var grid = document.getElementById('Grid').ej2_instances[0];
+        grid.flashCells({ columns: ['Exposure'] });
+    });
+    document.getElementById('flashCells').addEventListener('click', function () {
+        var grid = document.getElementById('Grid').ej2_instances[0];
+        grid.flashCells({ rowNodes: [0, 2], columns: ['Rating', 'Exposure'] });
+    });
+</script>

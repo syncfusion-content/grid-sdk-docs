@@ -1,0 +1,10 @@
+@import "node_modules/@syncfusion/ej2-material3-theme/styles/grid/index.css";
+@import "node_modules/@syncfusion/ej2-material3-theme/styles/button/index.css";
+
+.controls {
+    padding: 10px 0;
+}
+
+.controls label {
+    margin-right: 12px;
+}
