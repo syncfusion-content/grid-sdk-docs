@@ -1775,6 +1775,153 @@ export default data;
 {% endhighlight %}
 {% endtabs %}
 
+## Custom binding with caching
+
+The Vue Data Grid provides the [enableCache](https://ej2.syncfusion.com/vue/documentation/api/grid/infiniteScrollSettings#enablecache) option for custom data binding. When enabled, the data retrieved from the server is stored on the client and reused for subsequent data operations whenever possible. This reduces redundant data requests, improves responsiveness and enhances performance with large datasets.
+
+The custom binding cache works with infinite scrolling, minimizing unnecessary server requests while keeping navigation smooth. The `dataStateChange` event is triggered only when the requested data is not already available in the cache.
+
+{% tabs %}
+{% highlight html tabtitle="Composition API (~/src/App.vue)" %}
+{% raw %}
+<script setup>
+import { ref, onMounted, provide } from "vue";
+import { GridComponent as EjsGrid, ColumnsDirective as EColumns, ColumnDirective as EColumn, InfiniteScroll, Sort, Filter, Toolbar, Edit, Search, } from '@syncfusion/ej2-vue-grids';
+import { getOrders, addRecord, updateRecord, deleteRecord } from './orderService';
+
+const data = ref([]);
+const grid = ref([]);
+const infiniteScrollSettings = { enableCache: true };
+const filterSettings = { columns: [{ field: 'CustomerName', matchCase: false, operator: 'startswith', predicate: 'and', value: 'Maria' }] };
+const sortSettings = { columns: [{ field: 'ProductID', direction: 'Descending' }] }
+const state = { skip: 0, take: 36, sort: sortSettings, filter: filterSettings };
+const editSettings = { allowEditing: true, allowAdding: true, allowDeleting: true, newRowPosition: 'Top', };
+const toolbar = ['Add', 'Edit', 'Delete', 'Update', 'Cancel', 'Search'];
+const OrderIDRules = { required: true };
+
+const dataStateChange = function (state) {
+    const query = grid.value.getDataModule().generateQuery();
+    getOrders(state, query).then(gridData => {
+      data.value = gridData.result; // Assign the result to the data property
+    });
+  }
+
+const dataSourceChanged = function (state) {
+  if (state.action === 'add') {
+    addRecord(state.data, state); state.endEdit();
+  } else if (state.action === 'edit') {
+    updateRecord(state.data, state); state.endEdit();
+  } else if (state.requestType === 'delete') {
+    deleteRecord(state.data[0].OrderID, state); state.endEdit();
+  }
+}
+
+onMounted(() => {
+  dataStateChange(state);
+});
+
+provide('grid', [InfiniteScroll, Filter, Sort, Toolbar, Edit, Search]);
+</script>
+
+<template>
+  <ejs-grid ref="grid" :dataSource='data' :enableInfiniteScrolling='true' :infiniteScrollSettings='infiniteScrollSettings' :allowFiltering='true' :filterSettings='filterSettings'
+    :allowSorting='true' :sortSettings='sortSettings'
+    :toolbar='toolbar' :editSettings='editSettings' :dataStateChange="dataStateChange"
+    :dataSourceChanged="dataSourceChanged">
+    <e-columns>
+      <e-column field='OrderID' headerText='Order ID' width='90' textAlign='Right' isPrimaryKey='true'
+        :validationRules="OrderIDRules"></e-column>
+      <e-column field="CustomerName" headerText="Customer Name" width="100"></e-column>
+      <e-column field='ProductID' headerText='Product ID' width=100></e-column>
+      <e-column field='ProductName' headerText='Product Name' format='C2' width=100></e-column>
+    </e-columns>
+  </ejs-grid>
+</template>
+
+<style>
+@import "../node_modules/@syncfusion/ej2-material3-theme/styles/grid/index.css";
+</style>
+{% endraw %}
+{% endhighlight %}
+
+{% highlight html tabtitle="Options API ~/src/App.vue" %}
+{% raw %}
+<script>
+import { GridComponent, ColumnDirective, ColumnsDirective, InfiniteScroll, Sort, Filter, Toolbar, Edit, Search, } from '@syncfusion/ej2-vue-grids';
+import { getOrders, addRecord, updateRecord, deleteRecord } from './orderService';
+
+export default {
+  components: {
+    'ejs-grid': GridComponent,
+    'e-column': ColumnDirective,
+    'e-columns': ColumnsDirective
+  },
+  name: 'App',
+  data() {
+    return {
+      data: [],
+      infiniteScrollSettings: { enableCache: true },
+      filterSettings: { columns: [{ field: 'CustomerName', matchCase: false, operator: 'startswith', predicate: 'and', value: 'Maria' }] },
+      sortSettings: { columns: [{ field: 'ProductID', direction: 'Descending' }] },
+      editSettings: { allowEditing: true, allowAdding: true, allowDeleting: true, newRowPosition: 'Top' },
+      toolbar: ['Add', 'Edit', 'Delete', 'Update', 'Cancel', 'Search'],
+      OrderIDRules: { required: true }
+    };
+  },
+  mounted() {
+    let state= { skip: 0, take: 36, sort: this.sortSettings, filter: this.filterSettings };
+    this.dataStateChange(state);
+  },
+  methods: {
+    dataStateChange(state) {
+      const query = this.$refs.grid.getDataModule().generateQuery();
+      getOrders(state, query).then(gridData => {
+        this.data = gridData.result;
+      });
+    },
+    dataSourceChanged(state) {
+      if (state.action === 'add') {
+        addRecord(state.data, state);
+        state.endEdit();
+      } else if (state.action === 'edit') {
+        updateRecord(state.data, state);
+        state.endEdit();
+      } else if (state.requestType === 'delete') {
+        deleteRecord(state.data[0].OrderID, state);
+        state.endEdit();
+      }
+    }
+  },
+  provide() {
+    return {
+      grid: [InfiniteScroll, Filter, Sort, Toolbar, Edit, Search]
+    };
+  }
+};
+</script>
+
+<template>
+  <ejs-grid ref="grid" :dataSource='data' :enableInfiniteScrolling='true' :infiniteScrollSettings='infiniteScrollSettings' :allowFiltering='true' :filterSettings='filterSettings'
+    :allowSorting='true' :sortSettings='sortSettings'
+    :toolbar='toolbar' :editSettings='editSettings' :dataStateChange="dataStateChange"
+    :dataSourceChanged="dataSourceChanged">
+    <e-columns>
+      <e-column field='OrderID' headerText='Order ID' width='90' textAlign='Right' isPrimaryKey='true'
+        :validationRules="OrderIDRules"></e-column>
+      <e-column field="CustomerName" headerText="Customer Name" width="100"></e-column>
+      <e-column field='ProductID' headerText='Product ID' width=100></e-column>
+      <e-column field='ProductName' headerText='Product Name' format='C2' width=100></e-column>
+    </e-columns>
+  </ejs-grid>
+</template>
+
+<style>
+@import "../node_modules/@syncfusion/ej2-material3-theme/styles/grid/index.css";
+</style>
+{% endraw %}
+{% endhighlight %}
+{% endtabs %}
+
 ## Offline mode
 
 On remote data binding, all grid actions such as paging, sorting, editing, grouping, filtering, etc, will be processed on server-side. To avoid post back for every action, set the grid to load all data on initialization and make the actions process in client-side. To enable this behavior, use the `offline` property of [DataManager](https://ej2.syncfusion.com/vue/documentation/data/vue-3-getting-started).
