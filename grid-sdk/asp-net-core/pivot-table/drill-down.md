@@ -24,8 +24,6 @@ The drill-down and drill-up features allow you to expand or collapse data for a 
 
 ![Drill at specific position](images/drill_position.png)
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/drill-down/expand-all/tagHelper %}
@@ -34,18 +32,6 @@ The drill-down and drill-up features allow you to expand or collapse data for a 
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/drill-down/expand-all/ExpandAll.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/drill-down/expand-all/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="ExpandAll.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/drill-down/expand-all/ExpandAll.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 
 ## Expand All
@@ -54,8 +40,6 @@ The drill-down and drill-up features allow you to expand or collapse data for a 
 
 The Pivot Table component allows users to interactively expand or collapse all field members displayed in the row and column axes. To display all hierarchical members in an expanded state, set the [`expandAll`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html#Syncfusion_EJ2_PivotView_PivotViewDataSourceSettings_ExpandAll) property of [`e-datasourcesettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettingsBuilder.html) to **true**. To collapse all headers, set this property to **false**. By default, [`expandAll`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html#Syncfusion_EJ2_PivotView_PivotViewDataSourceSettings_ExpandAll) is set to **false**, so only the top-level field members are shown until the user expands them manually.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/drill-down/expand-all/tagHelper %}
@@ -64,18 +48,6 @@ The Pivot Table component allows users to interactively expand or collapse all f
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/drill-down/expand-all/ExpandAll.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/drill-down/expand-all/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="ExpandAll.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/drill-down/expand-all/ExpandAll.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 
 
@@ -89,8 +61,6 @@ The Pivot Table provides an option to expand or collapse all headers for specifi
 
 The following code demonstrates how to configure a Pivot Table with the [`expandAll`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html#Syncfusion_EJ2_PivotView_PivotViewDataSourceSettings_FieldMapping_expandAll) property enabled for specific fields. In this example, all headers for the **Year** field in the columns and the **Country** field in the rows are expanded.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/drill-down/expand-all-headers/tagHelper %}
@@ -99,18 +69,6 @@ The following code demonstrates how to configure a Pivot Table with the [`expand
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/drill-down/expand-all-headers/ExpandAll.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/drill-down/expand-all-headers/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="ExpandAll.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/drill-down/expand-all-headers/ExpandAll.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 
 
@@ -127,8 +85,6 @@ The Pivot Table component supports expanding or collapsing all headers except fo
 
 The following example demonstrates how to configure a Pivot Table where all headers are expanded except for the **France** member in the **Country** field, which remains collapsed.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/drill-down/drilled-members/tagHelper %}
@@ -137,18 +93,6 @@ The following example demonstrates how to configure a Pivot Table where all head
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/drill-down/drilled-members/DrilledMembers.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/drill-down/drilled-members/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="DrilledMembers.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/drill-down/drilled-members/DrilledMembers.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 
 
@@ -164,8 +108,6 @@ The Pivot Table component enables users to programmatically expand or collapse s
 
 The following code demonstrates how to configure the Pivot Table to expand specific members using the [`e-drilledmembers`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewDrilledMember.html) property. In this example, only the **FY 2015** and **FY 2016** members in the **Year** field, and the **Q1** member under **FY 2015** in the **Quarter** field are expanded, while other members remain collapsed. The [`delimiter`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewDrilledMember.html#Syncfusion_EJ2_PivotView_PivotViewDrilledMember_Delimiter) property is used for the **Quarter** field to specify the separator (`~~`) for hierarchical member items.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/drill-down/expand-specific/tagHelper %}
@@ -174,18 +116,6 @@ The following code demonstrates how to configure the Pivot Table to expand speci
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/drill-down/expand-specific/DrilledMembers.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/drill-down/expand-specific/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="DrilledMembers.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/drill-down/expand-specific/DrilledMembers.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 
 
@@ -201,8 +131,6 @@ The [`drill`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Pivot
 * `pivotview`: A reference to the Pivot Table component instance.
 * `cancel`: Specifies whether to prevent the current drill operation. Set this property to true in the event handler to cancel the action.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/drill-down/drill-event/tagHelper %}
@@ -211,18 +139,6 @@ The [`drill`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Pivot
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/drill-down/drill-event/DrillEvent.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/drill-down/drill-event/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="DrillEvent.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/drill-down/drill-event/DrillEvent.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 ### ActionBegin
 
@@ -240,8 +156,6 @@ The [`actionBegin`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2
 
 In the below sample, drill down and drill up action can be restricted by setting the **args.cancel** option to **true** in the [`actionBegin`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_ActionBegin) event.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/action-event/actionBegin-drill/tagHelper %}
@@ -250,18 +164,6 @@ In the below sample, drill down and drill up action can be restricted by setting
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/action-event/actionBegin-drill/actionBegin-drill.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/action-event/actionBegin-drill/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="ActionBegin-drill.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/action-event/actionBegin-drill/actionBegin-drill.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 ### ActionComplete
 
@@ -278,8 +180,6 @@ The event [`actionComplete`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncf
 
 * `actionInfo`: It holds the unique information about the current UI action. For example, if drill down action is completed, the event argument contains information such as field name and the drill information.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/action-event/actionComplete-drill/tagHelper %}
@@ -288,18 +188,6 @@ The event [`actionComplete`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncf
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/action-event/actionComplete-drill/actionComplete-drill.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/action-event/actionComplete-drill/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="ActionComplete-drill.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/action-event/actionComplete-drill/actionComplete-drill.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 
 ### ActionFailure
@@ -316,8 +204,6 @@ The event [`actionFailure`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfu
 
 * `errorInfo`: Contains details about the error that caused the action to fail.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/action-event/actionFailure-drill/tagHelper %}
@@ -326,15 +212,3 @@ The event [`actionFailure`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfu
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/action-event/actionFailure-drill/actionFailure-drill.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/action-event/actionFailure-drill/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="ActionFailure-drill.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/action-event/actionFailure-drill/actionFailure-drill.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}

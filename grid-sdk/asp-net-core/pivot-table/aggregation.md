@@ -51,8 +51,6 @@ For each value field, the aggregation type can be set using the property [`type`
 * [`baseField`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewRow.html#Syncfusion_EJ2_PivotView_PivotViewRow_BaseField): It allows to set the specific field to aggregate the values.
 * [`baseItem`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewRow.html#Syncfusion_EJ2_PivotView_PivotViewRow_BaseItem): It allows to set the specific member to aggregate the values.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/aggregation/aggregation/tagHelper %}
@@ -61,18 +59,6 @@ For each value field, the aggregation type can be set using the property [`type`
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/aggregation/aggregation/aggregation.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/aggregation/aggregation/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Aggregation.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/aggregation/aggregation/aggregation.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 
 
@@ -96,8 +82,6 @@ By default, the dropdown menu for value fields includes all available aggregatio
 
 The following code demonstrates how to configure the pivot table component to display only the **DistinctCount**, **Average**, and **Product** aggregation types in the dropdown menu.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/aggregation/aggregationTypes/tagHelper %}
@@ -106,18 +90,6 @@ The following code demonstrates how to configure the pivot table component to di
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/aggregation/aggregationTypes/aggregation.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/aggregation/aggregationTypes/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Aggregation.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/aggregation/aggregationTypes/aggregation.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 
 
@@ -129,8 +101,6 @@ By default, each field in the value axis is displayed with its name and aggregat
 
 This customization enhances the clarity of the pivot table’s interface by simplifying the button text, making it more concise and user-friendly.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/aggregation/aggregation-button/tagHelper %}
@@ -139,18 +109,6 @@ This customization enhances the clarity of the pivot table’s interface by simp
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/aggregation/aggregation-button/aggregation.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/aggregation/aggregation-button/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Aggregation.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/aggregation/aggregation-button/aggregation.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 
 
@@ -165,8 +123,6 @@ By default, the dropdown icon to change the aggregation type is visible in the g
 
 > The aggregation type icon can only be hidden in the Grouping Bar, not in the Field List.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/aggregation/aggregation-icon/tagHelper %}
@@ -175,18 +131,6 @@ By default, the dropdown icon to change the aggregation type is visible in the g
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/aggregation/aggregation-icon/aggregation.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/aggregation/aggregation-icon/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Aggregation.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/aggregation/aggregation-icon/aggregation.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 
 
@@ -208,8 +152,6 @@ The [`aggregateCellInfo`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusi
 * `aggregateType` - It holds aggregate type of the cell.
 * `skipFormatting` - boolean property, it allows to skip formatting if applied.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/aggregation/aggregation-icon/tagHelper %}
@@ -218,18 +160,6 @@ The [`aggregateCellInfo`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusi
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/aggregation/aggregation-icon/aggregation.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/aggregation/aggregation-icon/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Aggregation.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/aggregation/aggregation-icon/aggregation.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 ### ActionBegin
 
@@ -247,8 +177,6 @@ The event [`actionBegin`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusi
 
 In the following example, an action taken during aggregation type selection via the dropdown icon can be prevented by setting the **args.cancel** option to **true** in the [`actionBegin`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_ActionBegin) event.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/action-event/actionBegin-aggregation/tagHelper %}
@@ -257,18 +185,6 @@ In the following example, an action taken during aggregation type selection via 
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/action-event/actionBegin-aggregation/actionBegin-aggregation.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/action-event/actionBegin-aggregation/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="ActionBegin-aggregation.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/action-event/actionBegin-aggregation/actionBegin-aggregation.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 ### ActionComplete
 
@@ -281,8 +197,6 @@ The [`actionComplete`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.
 
 > Note: This event is triggered only when field-based UI actions are performed, such as filtering, sorting, removing a field from the grouping bar, editing, or changing the aggregation type.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/action-event/actionComplete-aggregation/tagHelper %}
@@ -292,26 +206,12 @@ The [`actionComplete`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/action-event/actionComplete-aggregation/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="ActionComplete-aggregation.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/action-event/actionComplete-aggregation/actionComplete-aggregation.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
 ### ActionFailure
 
 The [`actionFailure`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_ActionFailure) event is triggered when a UI action fails to produce the expected result. This event provides detailed information about the failure through the following parameters:
 
 * `actionName`: Specifies the name of the failed action. For example, if the failure occurs during aggregation, the action name will be **Aggregate field**.
 * `errorInfo`: Contains detailed error information related to the failed UI action.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -321,15 +221,3 @@ The [`actionFailure`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.E
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/action-event/actionFailure-aggregation/actionFailure-aggregation.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/action-event/actionFailure-aggregation/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="ActionFailure-aggregation.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/action-event/actionFailure-aggregation/actionFailure-aggregation.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}

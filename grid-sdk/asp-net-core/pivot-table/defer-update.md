@@ -21,8 +21,6 @@ The field list can be displayed in two different formats to interact with the pi
 
 To enable deferred updates in the pivot table, set the [`allowDeferLayoutUpdate`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_AllowDeferLayoutUpdate) in [`ejs-pivotview`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html) as **true**. Note that the defer update option can be controlled only via Field List during runtime.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/defer-update/popup/tagHelper %}
@@ -31,18 +29,6 @@ To enable deferred updates in the pivot table, set the [`allowDeferLayoutUpdate`
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/defer-update/popup/DeferUpdate.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/defer-update/popup/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="DeferUpdate.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/defer-update/popup/DeferUpdate.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 
 
@@ -56,8 +42,6 @@ To enable deferred updates in the static fieldlist, set the [`allowDeferLayoutUp
 
 > To make the field list interact with the pivot table, use the **updateView** and **update** methods to synchronize data source updates between both the field list and pivot table components simultaneously.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/defer-update/static/tagHelper %}
@@ -66,18 +50,6 @@ To enable deferred updates in the static fieldlist, set the [`allowDeferLayoutUp
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/defer-update/static/Static.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/defer-update/static/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Static.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/defer-update/static/Static.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 
 

@@ -53,19 +53,6 @@ The above code snippet, the **.e-grid** class targets the root element of the Sy
 
 In the following sample, the font family of grid content is changed to **cursive**, and the background color of rows, selected rows, alternate rows, and row hovering color is modified using the below CSS styles.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/grid/style-and-appearance/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Style-and-appearance.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/grid/style-and-appearance/style-and-appearance.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-mvc/grid/style-and-appearance/razor %}
@@ -74,6 +61,5 @@ In the following sample, the font family of grid content is changed to **cursive
 {% include code-snippet/grid-sdk/asp-net-mvc/grid/style-and-appearance/style-and-appearance.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ![grid style and appearance](../images/style-and-appearance/style-and-appearance.png)

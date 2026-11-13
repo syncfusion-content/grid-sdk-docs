@@ -26,8 +26,6 @@ The following example shows how to apply styles to:
 - The row header **"Germany"** and its aggregated values using the [`queryCellInfo`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_QueryCellInfo) event.
 - Styles are applied by adding the **"e-custom"** CSS class to the cell elements.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/apply-custom-styles/tagHelper %}
@@ -36,18 +34,6 @@ The following example shows how to apply styles to:
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/apply-custom-styles/CustomStyles.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/apply-custom-styles/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="CustomStyles.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/apply-custom-styles/CustomStyles.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 ![Apply custom style to pivot cells](../images/apply-custom-styles.png)
 

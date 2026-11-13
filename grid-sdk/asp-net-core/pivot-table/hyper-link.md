@@ -43,8 +43,6 @@ The pivot table provides an option to display hyperlinks across **all cells** cu
 
 Once enabled, hyperlinks will be shown consistently in row headers, column headers, value cells, and summary cells.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/hyper-link/all-cells/tagHelper %}
@@ -54,18 +52,6 @@ Once enabled, hyperlinks will be shown consistently in row headers, column heade
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/hyper-link/all-cells/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="AllCells.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/hyper-link/all-cells/AllCells.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
 
 
 ![Hyperlink enabled for all cells](images/hyperlink.png)
@@ -73,8 +59,6 @@ Once enabled, hyperlinks will be shown consistently in row headers, column heade
 ## Hyperlink for row headers
 
 The pivot table provides a way to display hyperlinks specifically in **row header cells** that are currently visible. To enable this functionality, set the [`showRowHeaderHyperlink`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewHyperlinkSettings.html#Syncfusion_EJ2_PivotView_PivotViewHyperlinkSettings_ShowRowHeaderHyperlink) property to **true** within the [`e-hyperlinkSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewHyperlinkSettings.html). This ensures that only the row headers will display hyperlinks, while other cell types remain unaffected.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -85,18 +69,6 @@ The pivot table provides a way to display hyperlinks specifically in **row heade
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/hyper-link/row-header/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="RowHeader.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/hyper-link/row-header/RowHeader.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
 
 
 ![Row header hyperlink](images/hyperlink-rowheader.png)
@@ -104,8 +76,6 @@ The pivot table provides a way to display hyperlinks specifically in **row heade
 ## Hyperlink for column headers
 
 The pivot table provides an option to display hyperlinks specifically in column header cells that are currently visible. To enable this functionality, set the [`showColumnHeaderHyperlink`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewHyperlinkSettings.html#Syncfusion_EJ2_PivotView_PivotViewHyperlinkSettings_ShowColumnHeaderHyperlink) property to **true** within the [`e-hyperlinkSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewHyperlinkSettings.html) object. This ensures that only the column headers will display hyperlinks, while other cell types remain unaffected.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -116,18 +86,6 @@ The pivot table provides an option to display hyperlinks specifically in column 
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/hyper-link/column-header/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="ColumnHeader.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/hyper-link/column-header/ColumnHeader.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
 
 
 ![Column header hyperlink](images/hyperlink-columnheader.png)
@@ -135,8 +93,6 @@ The pivot table provides an option to display hyperlinks specifically in column 
 ## Hyperlink for value cells
 
 The pivot table provides support for displaying hyperlinks specifically in value cells that are currently visible. To enable this option, set the [`showValueCellHyperlink`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewHyperlinkSettings.html#Syncfusion_EJ2_PivotView_PivotViewHyperlinkSettings_ShowValueCellHyperlink) property to **true** within the [`e-hyperlinkSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewHyperlinkSettings.html) object. This ensures that only the value cells will display hyperlinks, while other cell types remain unaffected.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -147,18 +103,6 @@ The pivot table provides support for displaying hyperlinks specifically in value
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/hyper-link/value-cells/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="ValueCells.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/hyper-link/value-cells/ValueCells.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
 
 
 ![Value cell hyperlink](images/hyperlink-value.png)
@@ -166,8 +110,6 @@ The pivot table provides support for displaying hyperlinks specifically in value
 ## Hyperlink for summary cells
 
 The pivot table provides support for displaying hyperlinks specifically in summary cells that are currently visible. To enable this option, set the [`showSummaryCellHyperlink`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewHyperlinkSettings.html#Syncfusion_EJ2_PivotView_PivotViewHyperlinkSettings_ShowSummaryCellHyperlink) property to **true** within the [`e-hyperlinkSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewHyperlinkSettings.html) object. This ensures that only the summary cells will display hyperlinks, while other cell types remain unaffected.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -177,18 +119,6 @@ The pivot table provides support for displaying hyperlinks specifically in summa
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/hyper-link/summary-cells/SummaryCells.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/hyper-link/summary-cells/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="SummaryCells.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/hyper-link/summary-cells/SummaryCells.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 
 
@@ -205,8 +135,6 @@ The pivot table supports displaying hyperlinks in specific cells based on define
 
 In the example below, the pivot table is configured to display hyperlinks only in cells where the "Units Sold" field value is between **150** and **500**. This highlights specific aggregated values that meet the given condition.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/hyper-link/conditions/tagHelper %}
@@ -215,18 +143,6 @@ In the example below, the pivot table is configured to display hyperlinks only i
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/hyper-link/conditions/Conditions.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/hyper-link/conditions/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Conditions.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/hyper-link/conditions/Conditions.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 
 
@@ -241,8 +157,6 @@ You can apply conditions for specific row or column using [`label`](https://help
 * [`value1`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewConditionalSetting.html#Syncfusion_EJ2_PivotView_PivotViewConditionalSetting_Value1): Specifies the start value.
 * [`value2`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewConditionalSetting.html#Syncfusion_EJ2_PivotView_PivotViewConditionalSetting_Value2): Specifies the end value.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/hyper-link/label-conditions/tagHelper %}
@@ -251,18 +165,6 @@ You can apply conditions for specific row or column using [`label`](https://help
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/hyper-link/label-conditions/LabelConditions.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/hyper-link/label-conditions/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="LabelConditions.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/hyper-link/label-conditions/LabelConditions.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 
 ## Header based hyperlink
@@ -273,8 +175,6 @@ In the below code example, the value **FY 2015.Q1.Units Sold** is assigned to [`
 
 N> The **dot(.)** character in **FY 2015.Q1.Units Sold** is used by default to identify the header levels in the pivot table's row and column. It can be changed by setting the `headerDelimiter` in the `valueSortSettings` property to any other delimiter instead of the default separator.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/hyper-link/headers/tagHelper %}
@@ -283,18 +183,6 @@ N> The **dot(.)** character in **FY 2015.Q1.Units Sold** is used by default to i
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/hyper-link/headers/Headers.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/hyper-link/headers/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Headers.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/hyper-link/headers/Headers.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 
 
@@ -313,8 +201,6 @@ It provides two parameters:
 
 In the example below, when a hyperlink cell is clicked, a custom attribute (**data-url**) is added to the cell to redirect users to the Syncfusion ASP.NET Core Pivot Table Hyperlink [Demo](https://ej2.syncfusion.com/aspnetcore/pivottable/hyperlink#/tailwind3). The `cancel` property is set to **false** to enable this interaction.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/hyper-link/event/tagHelper %}
@@ -323,15 +209,3 @@ In the example below, when a hyperlink cell is clicked, a custom attribute (**da
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/hyper-link/event/Event.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/hyper-link/event/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Event.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/hyper-link/event/Event.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}

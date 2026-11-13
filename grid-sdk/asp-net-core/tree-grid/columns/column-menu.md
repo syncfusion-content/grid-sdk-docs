@@ -20,8 +20,6 @@ The default items are displayed in following table.
 | `AutoFitAll` | Auto fit all columns. |
 | `Filter` | Show the filter option as given in `FilterSettings.Type` |
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-core/tree-grid/columns-core/column-menu/tagHelper %}
@@ -30,15 +28,6 @@ The default items are displayed in following table.
 {% include code-snippet/grid-sdk/asp-net-core/tree-grid/columns-core/column-menu/default.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight c# tabtitle="Default.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/tree-grid/columns-core/column-menu/default.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 
 

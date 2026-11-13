@@ -12,8 +12,6 @@ documentation: ug
 
 Footer aggregate value is calculated for all the rows, and it is displayed in the footer cells. Use the [`footerTemplate`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.TreeGrid.TreeGridAggregateColumn.html#Syncfusion_EJ2_TreeGrid_TreeGridAggregateColumn_FooterTemplate) property of [`e-treegrid-aggregate-column`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.TreeGrid.TreeGridAggregateColumn.html) tag helper to render the aggregate value in footer cells.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-core/tree-grid/aggregates/footer-aggregate/tagHelper %}
@@ -23,18 +21,6 @@ Footer aggregate value is calculated for all the rows, and it is displayed in th
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/tree-grid/aggregates/footer-aggregate/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="FooterAggregate.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/tree-grid/aggregates/footer-aggregate/footerAggregate.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
 
 
 N> The aggregate values must be accessed inside the template using their corresponding [`type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.TreeGrid.TreeGridAggregateColumn.html#Syncfusion_EJ2_TreeGrid_TreeGridAggregateColumn_Type) name.
@@ -42,8 +28,6 @@ N> The aggregate values must be accessed inside the template using their corresp
 ## How to format aggregate value
 
 You can format the aggregate value result by using the [`format`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.TreeGrid.TreeGridAggregateColumn.html#Syncfusion_EJ2_TreeGrid_TreeGridAggregateColumn_Format) property of [`e-treegrid-aggregate-column`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.TreeGrid.TreeGridAggregateColumn.html) tag helper.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -53,18 +37,6 @@ You can format the aggregate value result by using the [`format`](https://help.s
 {% include code-snippet/grid-sdk/asp-net-core/tree-grid/aggregates/format-Aggregate/formatAggregate.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/tree-grid/aggregates/format-Aggregate/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="FormatAggregate.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/tree-grid/aggregates/format-Aggregate/formatAggregate.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 
 

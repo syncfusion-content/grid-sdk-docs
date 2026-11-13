@@ -16,7 +16,7 @@ You can also check on this video for Observable binding in Tree Grid:
 
 {% youtube "https://www.youtube.com/watch?v=iq_A00-068k" %}
 
-### Observable binding using Async pipe
+## Observable binding using Async pipe
 
 TreeGrid data can be consumed from an `Observable` object by piping it through an `async` pipe. The `async` pipe is used to subscribe the observable object and resolve with the latest value emitted by it.
 

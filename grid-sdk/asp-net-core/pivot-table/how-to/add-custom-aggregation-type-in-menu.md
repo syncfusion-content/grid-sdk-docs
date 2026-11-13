@@ -30,8 +30,6 @@ The calculation logic for these custom aggregation types is implemented using th
 - `aggregateType` - Holds the aggregate type of the cell.
 - `skipFormatting` - Boolean property that allows skipping formatting if applied.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/add-custom-aggregation/tagHelper %}
@@ -40,17 +38,5 @@ The calculation logic for these custom aggregation types is implemented using th
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/add-custom-aggregation/CustomAggregation.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/add-custom-aggregation/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="CustomAggregation.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/add-custom-aggregation/CustomAggregation.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 ![Add custom aggregation type to the menu](../images/add-custom-aggregation-type-in-menu.png)

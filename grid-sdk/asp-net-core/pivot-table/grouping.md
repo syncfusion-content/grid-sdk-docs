@@ -26,8 +26,6 @@ To use the grouping feature, you need to inject the `Grouping` module in the Piv
 
 > Similar to Excel, only one type of grouping can be applied to a field at a time.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/grouping/group-ui/tagHelper %}
@@ -37,23 +35,9 @@ To use the grouping feature, you need to inject the `Grouping` module in the Piv
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grouping/group-ui/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Grouping.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grouping/group-ui/Grouping.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
 ## Number Grouping
 
 Number grouping allows users to organize numerical data into different ranges, such as 1–5, 6–10, and so on. This can be configured via the UI by right-clicking a number-based header in the Pivot Table and selecting the **Group** option from the context menu.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -63,18 +47,6 @@ Number grouping allows users to organize numerical data into different ranges, s
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/grouping/number-group-ui/Grouping.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grouping/number-group-ui/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Grouping.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grouping/number-group-ui/Grouping.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 
 
@@ -106,8 +78,6 @@ You can configure number grouping through code-behind using the [`e-groupsetting
 
 > If starting and ending numbers specified in [`startingAt`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewGroupSetting.html#Syncfusion_EJ2_PivotView_PivotViewGroupSetting_StartingAt) and [`endingAt`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewGroupSetting.html#Syncfusion_EJ2_PivotView_PivotViewGroupSetting_EndingAt) properties are in-between the number range, then rest of the numbers will be grouped and placed in “Out of Range” section introduced specific to this feature.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/grouping/number-group/tagHelper %}
@@ -116,18 +86,6 @@ You can configure number grouping through code-behind using the [`e-groupsetting
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/grouping/number-group/Grouping.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grouping/number-group/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Grouping.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grouping/number-group/Grouping.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 
 
@@ -143,8 +101,6 @@ To remove an applied number grouping, simply right-click on the grouped header i
 
 Date grouping organizes date and time data into hierarchical segments, such as years, quarters, months, days, hours, minutes, or seconds. Users can configure date grouping through the UI by right-clicking a date or time-based header in the Pivot Table and selecting **Group** option from the context menu. A dialog will appear, allowing users to choose the desired grouping intervals.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/grouping/date-group-ui/tagHelper %}
@@ -153,18 +109,6 @@ Date grouping organizes date and time data into hierarchical segments, such as y
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/grouping/date-group-ui/Grouping.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grouping/date-group-ui/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Grouping.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grouping/date-group-ui/Grouping.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 
 
@@ -203,8 +147,6 @@ You can configure date grouping programmatically using the [`e-groupsettings`](h
 
 > For example, if your date format is "YYYY-DD-MM HH:MM:SS" and you want to group only by year and month, set the `groupInterval` property with just **Years** and **Months**. You can also rearrange the order of the intervals (Year, Quarter, Month, Day, etc.) as needed—this order will reflect in the Pivot Table display.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/grouping/date-group/tagHelper %}
@@ -213,18 +155,6 @@ You can configure date grouping programmatically using the [`e-groupsettings`](h
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/grouping/date-group/Grouping.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grouping/date-group/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Grouping.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grouping/date-group/Grouping.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 Furthermore, in the field list UI, these date group fields **Years (Date)**, **Quarters (Date)**, **Months (Date)**, etc... will be automatically grouped and displayed under the **Date** folder name.
 
@@ -240,8 +170,6 @@ To remove a previously applied date grouping, simply right-click the relevant da
 
 Custom grouping is an option that enables users to group data types (date, time, number, or string) into custom fields based on specific requirements. This functionality can be accessed through the user interface by right-clicking a header in the Pivot Table.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/grouping/custom-group-ui/tagHelper %}
@@ -250,18 +178,6 @@ Custom grouping is an option that enables users to group data types (date, time,
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/grouping/custom-group-ui/Grouping.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grouping/custom-group-ui/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Grouping.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grouping/custom-group-ui/Grouping.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 ### Creating a Custom Group
 
@@ -313,8 +229,6 @@ The [`e-customGroups`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.
 
 Here’s an example of configuring custom grouping programmatically:
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/grouping/custom-group/tagHelper %}
@@ -323,18 +237,6 @@ Here’s an example of configuring custom grouping programmatically:
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/grouping/custom-group/Grouping.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grouping/custom-group/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Grouping.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/grouping/custom-group/Grouping.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 
 

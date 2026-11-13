@@ -15,8 +15,6 @@ The Data Annotation can be enabled by referencing the **System.ComponentModel.Da
 
 N> The DataGrid Property has more priority than the Data Annotation. For Instance, if the DisplayName Attribute is set to a Field in the DataGrid model class and the HeaderText is set to the same DataGrid column property, the value of the HeaderText property will be considered and shown in the DataGrid header.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-core/grid/data-annotation/annotation/tagHelper %}
@@ -25,16 +23,3 @@ N> The DataGrid Property has more priority than the Data Annotation. For Instanc
 {% include code-snippet/grid-sdk/asp-net-core/grid/data-annotation/annotation/annotation.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/grid/data-annotation/annotation/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Annotation.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/grid/data-annotation/annotation/annotation.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-

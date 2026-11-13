@@ -11,8 +11,6 @@ documentation: ug
 
 The autoFitColumns method resizes the column to fit the widest cell's content without wrapping. You can autofit a specific column at initial rendering by invoking the **autoFitColumns** method in [`dataBound`](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.treegrid.treegrid.html#Syncfusion_EJ2_TreeGrid_TreeGrid_DataBound) event.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-core/tree-grid/columns-core/auto-fit/tagHelper %}
@@ -21,15 +19,6 @@ The autoFitColumns method resizes the column to fit the widest cell's content wi
 {% include code-snippet/grid-sdk/asp-net-core/tree-grid/columns-core/auto-fit/autofit.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight c# tabtitle="Autofit.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/tree-grid/columns-core/auto-fit/autofit.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 
 

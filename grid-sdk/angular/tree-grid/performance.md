@@ -37,7 +37,7 @@ Both row and column virtualization can be combined, dynamically loading only vis
 
 When customizing TreeGrid columns with images or templates, use the column template feature to avoid rendering delays. Relying on [rowDataBound](https://ej2.syncfusion.com/angular/documentation/api/treegrid#rowdatabound) or [queryCellInfo](https://ej2.syncfusion.com/angular/documentation/api/treegrid#querycellinfo) events can slow down rendering with large data. 
 
-#### Why choose column templates instead of events?
+### Why choose column templates instead of events?
 1.  **Performance Optimization**: The [rowDataBound](https://ej2.syncfusion.com/angular/documentation/api/treegrid#rowdatabound) and [queryCellInfo](https://ej2.syncfusion.com/angular/documentation/api/treegrid#querycellinfo) events are triggered for each row and cell rendering, which can introduce significant delays, especially with large hierarchical datasets.
 2.  **Avoid Persistent Elements**: Rendering custom elements using events can lead to the persistence of previously rendered elements, potentially increasing rendering times over time.
 3.  **Streamlined Rendering**: Column templates enable customization without impacting rendering performance, ensuring a smoother and faster experience.

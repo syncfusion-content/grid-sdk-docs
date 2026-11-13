@@ -18,19 +18,6 @@ The visibility of the row, column, value, and filter axis areas in both the Fiel
 
 The following code example demonstrates how to hide the column axis in both the Grouping Bar and Field List within the Pivot Table. The CSS includes necessary height and spacing adjustments to prevent layout gaps and maintain visual consistency:
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/css-axis/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Axis.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/css-axis/axis.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/css-axis/razor %}
@@ -39,7 +26,6 @@ The following code example demonstrates how to hide the column axis in both the 
 {% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/css-axis/axis.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 
 **Note:** The CSS selectors above assume the Pivot Table component has the ID **PivotView**. Replace this with your actual component ID or use appropriate class-based selectors for your implementation.
@@ -54,19 +40,6 @@ The CSS selectors target the following Pivot Table elements:
 
 The alignment of text inside row headers, column headers, value cells, and summary cells can be customized using CSS styling. The following example demonstrates how to center-align text in value cells:
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/css-align/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Text-align.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/css-align/text-align.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/css-align/razor %}
@@ -75,7 +48,6 @@ The alignment of text inside row headers, column headers, value cells, and summa
 {% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/css-align/text-align.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 
 
@@ -85,19 +57,6 @@ The Pivot Table component elements including header cells, value cells, and summ
 
 The following code sample demonstrates how to apply custom background colors to different cell types:
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/css-pivot/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Axis.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/css-pivot/axis.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/css-pivot/razor %}
@@ -106,7 +65,6 @@ The following code sample demonstrates how to apply custom background colors to 
 {% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/css-pivot/axis.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 
 

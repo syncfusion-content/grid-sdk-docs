@@ -17,7 +17,6 @@ To enable DOM virtualization in the ASP.NET Core Tree Grid, you need to inject t
 
 DOM virtualization can be enabled by setting the [enableDomVirtualization](../../api/treegrid#enabledomvirtualization) property to `true`. 
 
-{% if page.publishingplatform == "aspnet-core" %}
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 <ejs-treegrid id="TreeGrid" enableDomVirtualization="true" height="500" childMapping="subtasks" dataSource="@ViewBag.data">
@@ -28,28 +27,6 @@ DOM virtualization can be enabled by setting the [enableDomVirtualization](../..
 </ejs-treegrid>
 {% endhighlight %}
 {% endtabs %}
-
-
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-{% tabs %}
-{% highlight razor tabtitle="Razor" %}
-@(Html.EJS().TreeGrid("TreeGrid")
-	.EnableDomVirtualization(true)
-	.Height(500)
-	.ChildMapping("subtasks")
-	.DataSource(ViewBag.data)
-	.Columns(columns =>
-	{
-		columns.Field("taskID").HeaderText("Task ID").Width(100).Add();
-		columns.Field("taskName").HeaderText("Task Name").Width(150).Add();
-	})
-	.Render())
-{% endhighlight %}
-{% endtabs %}
-
-
-{% endif %}
 
 ## Height configuration requirement
 
@@ -75,8 +52,6 @@ DOM row virtualization renders only rows visible in the viewport, plus configura
 
 Row virtualization is ideal for datasets with many rows (10,000+) but manageable column counts (fewer than 30). It simplifies horizontal scrolling since no columns are hidden, and ensures all columns remain accessible.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-core/tree-grid/dom-virtual/domvirtualization1/tagHelper %}
@@ -86,24 +61,10 @@ Row virtualization is ideal for datasets with many rows (10,000+) but manageable
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/tree-grid/dom-virtual/domvirtualization1/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="domvirtualization1.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/tree-grid/dom-virtual/domvirtualization1/domvirtualization1.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
 
 ## Viewport buffer configuration
 
 Buffer configuration defines how many extra rows the Tree Grid renders beyond the visible viewport. The [rowBuffer](../../api/treegrid/domVirtualizationSettings#rowbuffer) property controls this behavior. The default buffer value is `rowBuffer: 5`, which balances scroll smoothness against DOM size.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -113,18 +74,6 @@ Buffer configuration defines how many extra rows the Tree Grid renders beyond th
 {% include code-snippet/grid-sdk/asp-net-core/tree-grid/dom-virtual/domvirtualization2/domvirtualization2.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/tree-grid/dom-virtual/domvirtualization2/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="domvirtualization2.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/tree-grid/dom-virtual/domvirtualization2/domvirtualization2.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 > Buffer Tuning: Larger buffers (5-10) reduce visible gaps during fast scrolling but increase DOM nodes and memory. Smaller buffers (2-3) minimize DOM nodes but may show gaps during very fast scrolling. Start with default values and adjust based on scroll speed and device constraints.
 
@@ -161,8 +110,6 @@ These behaviors are inherent to lazy height calculation and occur because height
 
 Use the [setRowHeight](../../api/treegrid#setrowheight) callback to programmatically define row heights based on row data. This approach provides control over row sizing logic without DOM measurement overhead.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 <ejs-treegrid id="TreeGrid" enableDomVirtualization="true" setRowHeight="setRowHeight" height="500" dataSource="@ViewBag.data">
@@ -175,26 +122,6 @@ Use the [setRowHeight](../../api/treegrid#setrowheight) callback to programmatic
 </script>
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="Razor" %}
-@(Html.EJS().TreeGrid("TreeGrid")
-	.EnableDomVirtualization(true)
-	.SetRowHeight("setRowHeight")
-	.Height(500)
-	.DataSource(ViewBag.data)
-	.Render())
-
-<script>
-	function setRowHeight(row) {
-		return row.data.Priority === 'High' ? 80 : 40;
-	}
-</script>
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 ## Limit maximum rendered rows
 

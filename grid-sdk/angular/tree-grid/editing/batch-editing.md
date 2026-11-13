@@ -46,7 +46,7 @@ You can update the value of a column dynamically based on the edited value of an
 
 ## Cancel edit based on a condition
 
-The TreeGrid supports conditional cancelation of CRUD operations (Edit, Add, Delete) in batch edit mode. Use the [cellEdit](https://ej2.syncfusion.com/angular/documentation/api/treegrid#celledit), [beforeBatchAdd](https://ej2.syncfusion.com/angular/documentation/api/treegrid#beforeBatchAdd), and [beforeBatchDelete](https://ej2.syncfusion.com/angular/documentation/api/treegrid#beforeBatchDelete) events and set `args.cancel` to **true** to prevent editing, adding, or deleting based on custom logic. In the demo below, CRUD is prevented for rows where the **Priority** column value is **Normal**.
+The TreeGrid supports conditional cancellation of CRUD operations (Edit, Add, Delete) in batch edit mode. Use the [cellEdit](https://ej2.syncfusion.com/angular/documentation/api/treegrid#celledit), [beforeBatchAdd](https://ej2.syncfusion.com/angular/documentation/api/treegrid#beforeBatchAdd), and [beforeBatchDelete](https://ej2.syncfusion.com/angular/documentation/api/treegrid#beforeBatchDelete) events and set `args.cancel` to **true** to prevent editing, adding, or deleting based on custom logic. In the demo below, CRUD is prevented for rows where the **Priority** column value is **Normal**.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

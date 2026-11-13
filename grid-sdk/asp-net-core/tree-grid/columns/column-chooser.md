@@ -11,8 +11,6 @@ documentation: ug
 
 The column chooser has options to show or hide columns dynamically. It can be enabled by defining the `showColumnChooser` as true.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-core/tree-grid/columns-core/columnchooser/tagHelper %}
@@ -22,15 +20,6 @@ The column chooser has options to show or hide columns dynamically. It can be en
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight c# tabtitle="Columnchooser.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/tree-grid/columns-core/columnchooser/columnchooser.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
 
 
 N> You can hide the column names in column chooser by defining the `showInColumnChooser` property of [`e-treegrid-column`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.TreeGrid.TreeGridColumn.html) tag helper as false.
@@ -38,8 +27,6 @@ N> You can hide the column names in column chooser by defining the `showInColumn
 ## Open column chooser by external button
 
 The Column chooser can be displayed on a page through external button by invoking the **openColumnChooser** method with X and Y axis positions.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -49,15 +36,6 @@ The Column chooser can be displayed on a page through external button by invokin
 {% include code-snippet/grid-sdk/asp-net-core/tree-grid/columns-core/externalbutton/externalbutton.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight c# tabtitle="Externalbutton.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/tree-grid/columns-core/externalbutton/externalbutton.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 ## Column chooser template in Syncfusion ASP.NET Core TreeGrid
 

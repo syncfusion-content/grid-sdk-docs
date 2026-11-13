@@ -23,8 +23,6 @@ The pivot table automatically sets appropriate default minimum width values base
 
 To customize the minimum width according to specific layout requirements, configure the `minWidth` property with the desired pixel value:
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/min-width/tagHelper %}
@@ -33,17 +31,5 @@ To customize the minimum width according to specific layout requirements, config
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/min-width/MinWidth.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/min-width/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="MinWidth.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/min-width/MinWidth.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 ![Configuring the minimum width in the Pivot Table control](../images/min-width.png)
