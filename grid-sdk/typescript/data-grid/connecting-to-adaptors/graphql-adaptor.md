@@ -13,7 +13,7 @@ domainurl: https://help.syncfusion.com/grid-sdk
 
 GraphQL is a powerful query language for APIs, designed to provide a more efficient alternative to traditional REST APIs. It allows you to precisely fetch the data you need, reducing over-fetching and under-fetching of data. GraphQL provides a flexible and expressive syntax for querying, enabling clients to request only the specific data they require.
 
-Syncfusion's<sup style="font-size:70%">&reg;</sup> Grid control seamlessly integrates with GraphQL servers using the [GraphQLAdaptor](../../data/adaptors#graphql-adaptor) in the [DataManager](../../data/getting-started). This specialized adaptor simplifies the interaction between the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid and GraphQL servers, allowing efficient data retrieval with support for various operations like CRUD (Create, Read, Update, Delete), paging, sorting, and filtering.
+Syncfusion's<sup style="font-size:70%">&reg;</sup> Grid control seamlessly integrates with GraphQL servers using the [GraphQLAdaptor](https://ej2.syncfusion.com/documentation/data/adaptors#graphql-adaptor) in the [DataManager](https://ej2.syncfusion.com/documentation/data/getting-started). This specialized adaptor simplifies the interaction between the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid and GraphQL servers, allowing efficient data retrieval with support for various operations like CRUD (Create, Read, Update, Delete), paging, sorting, and filtering.
 
 This section describes a step-by-step process for retrieving data from GraphQL service using `GraphQLAdaptor`, then binding it to the Grid control to facilitate data and CRUD operations.
 

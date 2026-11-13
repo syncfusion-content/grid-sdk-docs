@@ -20,12 +20,12 @@ The available default edit types are as follows:
 
 Control|Edit Type value |Description
 ----|-----|-----
-[TextBox](../../textbox/getting-started)|stringedit	|  The  `stringedit` type renders a TextBox control for string data type columns. 
-[NumericTextBox](../../numerictextbox/getting-started)|numericedit	| The `numericedit` type renders a NumericTextBox control for integers,double,float ,short ,byte ,long ,long double and decimal data types columns.
-[DropDownList](../../drop-down-list/getting-started)|dropdownedit	| The `dropdownedit` type renders a DropdownList control for string data type columns.
-[Checkbox](../../check-box/getting-started)|booleanedit	| The `booleanedit` type renders a CheckBox control for boolean data type columns.
-[DatePicker](../../datepicker/getting-started)|datepickeredit	|The `datepickeredit` type renders a DatePicker control for date data type columns.
-[DateTimePicker](../../datetimepicker/getting-started)|datetimepickeredit	| The `datetimepickeredit` type renders a DateTimePicker control for date time data type columns.
+[TextBox](https://ej2.syncfusion.com/documentation/textbox/getting-started)|stringedit	|  The  `stringedit` type renders a TextBox control for string data type columns. 
+[NumericTextBox](https://ej2.syncfusion.com/documentation/numerictextbox/getting-started)|numericedit	| The `numericedit` type renders a NumericTextBox control for integers,double,float ,short ,byte ,long ,long double and decimal data types columns.
+[DropDownList](https://ej2.syncfusion.com/documentation/drop-down-list/getting-started)|dropdownedit	| The `dropdownedit` type renders a DropdownList control for string data type columns.
+[Checkbox](https://ej2.syncfusion.com/documentation/check-box/getting-started)|booleanedit	| The `booleanedit` type renders a CheckBox control for boolean data type columns.
+[DatePicker](https://ej2.syncfusion.com/documentation/datepicker/getting-started)|datepickeredit	|The `datepickeredit` type renders a DatePicker control for date data type columns.
+[DateTimePicker](https://ej2.syncfusion.com/documentation/datetimepicker/getting-started)|datetimepickeredit	| The `datetimepickeredit` type renders a DateTimePicker control for date time data type columns.
 
 The following example demonstrates how to define the `editType` for grid columns:
 
@@ -46,7 +46,7 @@ You can customize the default TextBox control in Grid edit form using its proper
 
 control|Edit Type |Description|Example Customized edit params
 -----|---|-----|-----|
-[TextBox](../../textbox/getting-started) |stringedit| The `stringedit` type renders a TextBox control for string data type columns. To customize the `TextBox` control, refer to the [TextBox API documentation](https://ej2.syncfusion.com/documentation/api/textbox) for detailed information on available properties | params: { showClearButton : true}
+[TextBox](https://ej2.syncfusion.com/documentation/textbox/getting-started) |stringedit| The `stringedit` type renders a TextBox control for string data type columns. To customize the `TextBox` control, refer to the [TextBox API documentation](https://ej2.syncfusion.com/documentation/api/textbox) for detailed information on available properties | params: { showClearButton : true}
 
 The following sample code demonstrates the customization applied to TextBox control of **CustomerID** Grid column:
 
@@ -69,7 +69,7 @@ You can customize the `NumericTextBox` control in Grid edit form using its prope
 
 control| Edit Type |Description |Example Customized edit params
 -----|-----|-----|----|
-[NumericTextBox](../../numerictextbox/getting-started)|numericedit| The `numericedit` type renders a NumericTextBox control for integers, double, float, short, byte, long, long double and decimal data types columns. To customize the **NumericTextBox** control, refer to the [NumericTextBox API documentation](https://ej2.syncfusion.com/documentation/api/numerictextbox) for detailed information on available properties. | params: { decimals: 2, value: 5 }
+[NumericTextBox](https://ej2.syncfusion.com/documentation/numerictextbox/getting-started)|numericedit| The `numericedit` type renders a NumericTextBox control for integers, double, float, short, byte, long, long double and decimal data types columns. To customize the **NumericTextBox** control, refer to the [NumericTextBox API documentation](https://ej2.syncfusion.com/documentation/api/numerictextbox) for detailed information on available properties. | params: { decimals: 2, value: 5 }
 
 The following sample code demonstrates the customization applied to NumericTextBox control of **Freight** Grid column:
 
@@ -115,7 +115,7 @@ You can customize the `DropDownList` control in Grid edit form using its propert
 
 Control|Edit Type |Description| Example Customized edit params
 -----|-----|-----|----|
-[DropDownList](../../drop-down-list/getting-started)|DropDownEdit|  The `dropdownedit` type renders a DropDownList control for string data type columns. To customize the DropDownList control, refer to the [DropDownList API documentation](https://ej2.syncfusion.com/documentation/api/drop-down-list) for detailed information on available properties.  | params: { value: ‘Germany’ }
+[DropDownList](https://ej2.syncfusion.com/documentation/drop-down-list/getting-started)|DropDownEdit|  The `dropdownedit` type renders a DropDownList control for string data type columns. To customize the DropDownList control, refer to the [DropDownList API documentation](https://ej2.syncfusion.com/documentation/api/drop-down-list) for detailed information on available properties.  | params: { value: ‘Germany’ }
 
 The following sample code demonstrates the customization applied to DropDownList control  of **ShipCity** Grid column:
 
@@ -205,7 +205,7 @@ You can customize the CheckBox control in Grid edit form using its property. Thi
 
 Control| Edit Type |Description |Example Customized edit params
 -----|-----|-----|----|
-[CheckBox](../../check-box/getting-started)| booleanedit | The `booleanedit` type renders a **CheckBox** control for boolean data type. To customize the CheckBox control, refer to the [CheckBox API documentation](https://ej2.syncfusion.com/documentation/api/check-box) for detailed information on available properties. | params: { checked: true}
+[CheckBox](https://ej2.syncfusion.com/documentation/check-box/getting-started)| booleanedit | The `booleanedit` type renders a **CheckBox** control for boolean data type. To customize the CheckBox control, refer to the [CheckBox API documentation](https://ej2.syncfusion.com/documentation/api/check-box) for detailed information on available properties. | params: { checked: true}
 
 The following sample code demonstrates the customization applied to CheckBox control of **Verified** Grid column:
 
@@ -228,7 +228,7 @@ You can customize the DatePicker control in Grid edit form using its property. T
 
 control| Edit Type |Description|Example Customized edit params
 -----|-----|-----|----|
-[DatePicker](../../datepicker/getting-started)| datepickeredit | The `datepickeredit` type renders a **DatePicker** control for date data type columns. To customize the DatePicker control, refer to the [DatePicker API documentation](https://ej2.syncfusion.com/documentation/api/datepicker) for detailed information on available properties. | params: { format:'dd.MM.yyyy' }
+[DatePicker](https://ej2.syncfusion.com/documentation/datepicker/getting-started)| datepickeredit | The `datepickeredit` type renders a **DatePicker** control for date data type columns. To customize the DatePicker control, refer to the [DatePicker API documentation](https://ej2.syncfusion.com/documentation/api/datepicker) for detailed information on available properties. | params: { format:'dd.MM.yyyy' }
  
 The following sample code demonstrates the customization applied to DatePicker control of **OrderDate** Grid column:
 
@@ -247,7 +247,7 @@ The following sample code demonstrates the customization applied to DatePicker c
 
 ### Disable the date value prior to the selected date value in DatePicker control
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Grid allows configuring the [DatePicker](../../datepicker/getting-started) control to dynamically set a minimum date for selection. This feature ensures that users can select dates only from a specified minimum date onward, based on the context of each row's data. This functionality is particularly useful in maintaining data accuracy by preventing users from selecting invalid or illogical dates.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Grid allows configuring the [DatePicker](https://ej2.syncfusion.com/documentation/datepicker/getting-started) control to dynamically set a minimum date for selection. This feature ensures that users can select dates only from a specified minimum date onward, based on the context of each row's data. This functionality is particularly useful in maintaining data accuracy by preventing users from selecting invalid or illogical dates.
 
 The following example demonstrates how to configure the `DatePicker` control within the grid using the **edit** parameters of a column. This setup dynamically restricts the selection of dates in the DatePicker's calendar based on the data in the current row.
 
@@ -270,7 +270,7 @@ You can customize the DateTimePicker control in Grid edit form using its propert
 
 control|Edit Type |Description |Example Customized edit params
 -----|-----|-----|----|
-[DateTimePicker](../../datetimepicker/getting-started)| datetimepickeredit | The `datetimepickeredit` type renders a **DateTimePicker** control for date time data type columns. You can customize the DateTimePicker control, refer to the [DateTimePicker API documentation](https://ej2.syncfusion.com/documentation/api/datetimepicker) for detailed information on available properties. | params: { value: new Date() }
+[DateTimePicker](https://ej2.syncfusion.com/documentation/datetimepicker/getting-started)| datetimepickeredit | The `datetimepickeredit` type renders a **DateTimePicker** control for date time data type columns. You can customize the DateTimePicker control, refer to the [DateTimePicker API documentation](https://ej2.syncfusion.com/documentation/api/datetimepicker) for detailed information on available properties. | params: { value: new Date() }
  
 The following sample code demonstrates the customization applied to DateTimePicker control of **OrderDate** Grid column:
 

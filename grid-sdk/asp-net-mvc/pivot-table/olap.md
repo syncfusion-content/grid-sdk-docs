@@ -43,7 +43,7 @@ Follow below steps to create ASP.NET MVC Application.
 
 **Step 1:** Add the [`Syncfusion.EJ2.MVC5`](https://www.nuget.org/packages/Syncfusion.EJ2.MVC5/) NuGet package to the new application by using the Nuget Package Manager. Right-click the project and select **Manage NuGet Packages...**.
 
-N> Refer to [this article](../../EJ2_ASP.MVC/nuget-packages) to learn more details about installing Essential<sup style="font-size:70%">&reg;</sup> JS 2 NuGet packages in various OS environment.
+N> Refer to [this article](https://ej2.syncfusion.com/aspnetmvc/documentation/nuget-packages) to learn more details about installing Essential<sup style="font-size:70%">&reg;</sup> JS 2 NuGet packages in various OS environment.
 
 ![aspnetmvc5 manage nuget packages](images/aspnetmvc5-manage-nuget.png)
 

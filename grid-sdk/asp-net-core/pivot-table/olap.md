@@ -37,7 +37,7 @@ The official prerequisites to create and run an ASP.NET Core 2.x application on 
 
 **Step 1:** Add the [`Syncfusion.EJ2.AspNet.Core`](https://www.nuget.org/packages/Syncfusion.EJ2.AspNet.Core) NuGet package to the new application by using the Nuget Package Manager. Right-click the project and select **Manage NuGet Packages...**.
 
-N> Refer to [this article](../nuget-packages) to learn more details about installing Essential<sup style="font-size:70%">&reg;</sup> JS 2 NuGet packages in various OS environment.
+N> Refer to [this article](https://ej2.syncfusion.com/aspnetcore/documentation/nuget-packages) to learn more details about installing Essential<sup style="font-size:70%">&reg;</sup> JS 2 NuGet packages in various OS environment.
 
 ![aspnetcore2.x manage nuget packages](images/aspnetcore2x-manage-nuget.png)
 

@@ -20,12 +20,12 @@ The available default edit types are as follows:
 
 Component | Edit Type value | Description
 ----|-----|-----
-[TextBox](../../textbox/getting-started) |`stringedit`|  Renders a `TextBox` component for string data type columns. 
-[NumericTextBox](../../numerictextbox/getting-started) |`numericedit`| Renders a `NumericTextBox` component for integers, double, float, short, byte, long, long double, and decimal data types.
-[DropDownList](../../drop-down-list/getting-started) |`dropdownedit`| Renders a `DropDownList` component for string data type columns with predefined options.
-[Checkbox](../../check-box/getting-started) |`booleanedit`| Renders a `CheckBox` component for boolean data type columns.
-[DatePicker](../../datepicker/getting-started) |`datepickeredit`| Renders a `DatePicker` component for date data type columns.
-[DateTimePicker](../../datetimepicker/getting-started) |`datetimepickeredit`| Renders a `DateTimePicker` component for date-time data type columns.
+[TextBox](https://ej2.syncfusion.com/angular/documentation/textbox/getting-started) |`stringedit`|  Renders a `TextBox` component for string data type columns. 
+[NumericTextBox](https://ej2.syncfusion.com/angular/documentation/numerictextbox/getting-started) |`numericedit`| Renders a `NumericTextBox` component for integers, double, float, short, byte, long, long double, and decimal data types.
+[DropDownList](https://ej2.syncfusion.com/angular/documentation/drop-down-list/getting-started) |`dropdownedit`| Renders a `DropDownList` component for string data type columns with predefined options.
+[Checkbox](https://ej2.syncfusion.com/angular/documentation/check-box/getting-started) |`booleanedit`| Renders a `CheckBox` component for boolean data type columns.
+[DatePicker](https://ej2.syncfusion.com/angular/documentation/datepicker/getting-started) |`datepickeredit`| Renders a `DatePicker` component for date data type columns.
+[DateTimePicker](https://ej2.syncfusion.com/angular/documentation/datetimepicker/getting-started) |`datetimepickeredit`| Renders a `DateTimePicker` component for date-time data type columns.
 
 The following example demonstrates to define the `editType` for grid columns:
 
@@ -46,7 +46,7 @@ The `TextBox` component for string columns can be customized using its API. Conf
 
 Component|Edit Type |Description|Example Customized edit params
 -----|---|-----|-----|
-[TextBox](../../textbox/getting-started) |stringedit| The `stringedit` type renders a TextBox component for string data type columns. To customize the `TextBox` component, refer to the [TextBox API documentation](https://ej2.syncfusion.com/angular/documentation/api/textbox) for detailed information on available properties | params: { showClearButton : true}
+[TextBox](https://ej2.syncfusion.com/angular/documentation/textbox/getting-started) |stringedit| The `stringedit` type renders a TextBox component for string data type columns. To customize the `TextBox` component, refer to the [TextBox API documentation](https://ej2.syncfusion.com/angular/documentation/api/textbox) for detailed information on available properties | params: { showClearButton : true}
 
 The following sample code demonstrates the customization applied to `TextBox` component of "Customer ID" grid column:
 
@@ -68,7 +68,7 @@ Customize the `NumericTextBox` component for numeric columns using its API and t
 
 Component| Edit Type |Description |Example Customized edit params
 -----|-----|-----|----|
-[NumericTextBox](../../numerictextbox/getting-started)|numericedit| The `numericedit` type renders a NumericTextBox component for integers, double, float, short, byte, long, long double and decimal data types columns. To customize the `NumericTextBox` component, refer to the [NumericTextBox API documentation](https://ej2.syncfusion.com/angular/documentation/api/numerictextbox) for detailed information on available properties. | params: { decimals: 2, value: 5 }
+[NumericTextBox](https://ej2.syncfusion.com/angular/documentation/numerictextbox/getting-started)|numericedit| The `numericedit` type renders a NumericTextBox component for integers, double, float, short, byte, long, long double and decimal data types columns. To customize the `NumericTextBox` component, refer to the [NumericTextBox API documentation](https://ej2.syncfusion.com/angular/documentation/api/numerictextbox) for detailed information on available properties. | params: { decimals: 2, value: 5 }
 
 The following sample code demonstrates the customization applied to `NumericTextBox` component of "Freight" grid column:
 
@@ -108,7 +108,7 @@ Customize the `DropDownList` editor via [columns->edit->params](https://ej2.sync
 
 Component | Edit Type | Description | Example edit params
 -----|-----|-----|----
-[DropDownList](../../drop-down-list/getting-started) | dropdownedit | The `dropdownedit` type renders a DropDownList component for string data type columns. To customize the DropDownList component, refer to the [DropDownList API documentation](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list) for detailed information on available properties.  | params: { value: 'Germany' }
+[DropDownList](https://ej2.syncfusion.com/angular/documentation/drop-down-list/getting-started) | dropdownedit | The `dropdownedit` type renders a DropDownList component for string data type columns. To customize the DropDownList component, refer to the [DropDownList API documentation](https://ej2.syncfusion.com/angular/documentation/api/drop-down-list) for detailed information on available properties.  | params: { value: 'Germany' }
 
 The following sample code demonstrates the customization applied to `DropDownList` component of "Ship City" grid column:
 
@@ -194,7 +194,7 @@ Customize the `CheckBox` component using the [columns->edit->params](https://ej2
 
 Component | Edit Type | Description | Example edit params
 -----|-----|-----|----
-[CheckBox](../../check-box/getting-started)| booleanedit | The `booleanedit` type renders a `CheckBox` component for boolean data type. To customize the CheckBox component, refer to the [CheckBox API documentation](https://ej2.syncfusion.com/angular/documentation/api/check-box) for detailed information on available properties. | params: { checked: true }
+[CheckBox](https://ej2.syncfusion.com/angular/documentation/check-box/getting-started)| booleanedit | The `booleanedit` type renders a `CheckBox` component for boolean data type. To customize the CheckBox component, refer to the [CheckBox API documentation](https://ej2.syncfusion.com/angular/documentation/api/check-box) for detailed information on available properties. | params: { checked: true }
 
 The following sample code demonstrates the customization applied to `CheckBox` component of "Verified" grid column:
 
@@ -212,11 +212,11 @@ The following sample code demonstrates the customization applied to `CheckBox` c
 
 ## Customizing the DatePicker for datepickeredit type 
 
-Enhance the [DatePicker](../../datepicker/getting-started) component in grid edit form by customizing its properties. This enables configuration of various DatePicker features, tailoring its behavior and appearance to match specific requirements within the grid. Fine-tune the editor component behavior through the [columns->edit->params](https://ej2.syncfusion.com/angular/documentation/api/grid/column#edit) property for powerful date selection control.
+Enhance the [DatePicker](https://ej2.syncfusion.com/angular/documentation/datepicker/getting-started) component in grid edit form by customizing its properties. This enables configuration of various DatePicker features, tailoring its behavior and appearance to match specific requirements within the grid. Fine-tune the editor component behavior through the [columns->edit->params](https://ej2.syncfusion.com/angular/documentation/api/grid/column#edit) property for powerful date selection control.
 
 Component | Edit Type | Description | Example edit params
 -----|-----|-----|----
-[DatePicker](../../datepicker/getting-started)| datepickeredit | The `datepickeredit` type renders a `DatePicker` component for date data type columns. To customize the DatePicker component, refer to the [DatePicker API documentation](https://ej2.syncfusion.com/angular/documentation/api/datepicker) for detailed information on available properties. | params: { format:'dd.MM.yyyy' }
+[DatePicker](https://ej2.syncfusion.com/angular/documentation/datepicker/getting-started)| datepickeredit | The `datepickeredit` type renders a `DatePicker` component for date data type columns. To customize the DatePicker component, refer to the [DatePicker API documentation](https://ej2.syncfusion.com/angular/documentation/api/datepicker) for detailed information on available properties. | params: { format:'dd.MM.yyyy' }
 
 The following sample code demonstrates the customization applied to `DatePicker` component of "Order Date" grid column:
 
@@ -238,7 +238,7 @@ Enhance the `DateTimePicker` component in grid edit form by customizing its prop
 
 Component | Edit Type | Description | Example edit params
 -----|-----|-----|----
-[DateTimePicker](../../datetimepicker/getting-started) | datetimepickeredit |  The `datetimepickeredit` type renders a `DateTimePicker` component for date time data type columns. Customize the DateTimePicker component by referring to the  [DateTimePicker API documentation](https://ej2.syncfusion.com/angular/documentation/api/datetimepicker) for detailed information on available properties. | params: { value: new Date() }
+[DateTimePicker](https://ej2.syncfusion.com/angular/documentation/datetimepicker/getting-started) | datetimepickeredit |  The `datetimepickeredit` type renders a `DateTimePicker` component for date time data type columns. Customize the DateTimePicker component by referring to the  [DateTimePicker API documentation](https://ej2.syncfusion.com/angular/documentation/api/datetimepicker) for detailed information on available properties. | params: { value: new Date() }
 
 The following sample code demonstrates the customization applied to DateTimePicker component of "Order Date" grid column:
 
@@ -686,7 +686,7 @@ The following example demonstrates to render a `MultiSelect` component in the "S
 
 ### Render RichTextEditor component in edit form
 
-The Angular Data Grid allows rendering the [RichTextEditor](../../rich-text-editor/getting-started) component within the edit form. This enables formatting and styling text content using bold, italic, underline, bullet lists, numbered lists, and other formatting options.
+The Angular Data Grid allows rendering the [RichTextEditor](https://ej2.syncfusion.com/angular/documentation/rich-text-editor/getting-started) component within the edit form. This enables formatting and styling text content using bold, italic, underline, bullet lists, numbered lists, and other formatting options.
 
 Define an [editTemplate](https://ej2.syncfusion.com/angular/documentation/api/grid/column#edittemplate) for the column using `ng-template`. The `editTemplate` property specifies the cell edit template used as an editor for a particular column and can accept either a template string or an HTML element ID.
 
@@ -708,7 +708,7 @@ The following example demonstrates to render a `RichTextEditor` component in the
 
 ### Render Upload component in edit form  
 
-The Angular Data Grid allows rendering an [Uploader](../../uploader/getting-started) component within the grid's edit form. This enables uploading and managing files or images in a specific column during data editing.
+The Angular Data Grid allows rendering an [Uploader](https://ej2.syncfusion.com/angular/documentation/uploader/getting-started) component within the grid's edit form. This enables uploading and managing files or images in a specific column during data editing.
 
 Define an [editTemplate](https://ej2.syncfusion.com/angular/documentation/api/grid/column#edittemplate) for the column using `ng-template`. The `editTemplate` property specifies the cell edit template used as an editor for a particular column and can accept either a template string or an HTML element ID.
 

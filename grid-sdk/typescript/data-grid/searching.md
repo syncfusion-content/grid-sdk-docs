@@ -87,7 +87,7 @@ notequal |Checks whether a value not equal to the specified value.
 These operators provide flexibility in defining the search behavior and allow you to perform different types of comparisons based on your requirements.
 
  
-The following example demonstrates how to set the `searchSettings->operator` property based on changing the dropdown value using the [change](https://ej2.syncfusion.com/documentation/api/drop-down-list#change) event of the [DropDownList](../drop-down-list/getting-started) control.
+The following example demonstrates how to set the `searchSettings->operator` property based on changing the dropdown value using the [change](https://ej2.syncfusion.com/documentation/api/drop-down-list#change) event of the [DropDownList](https://ej2.syncfusion.com/documentation/drop-down-list/getting-started) control.
 
 
 
@@ -216,7 +216,7 @@ On the other hand, the [actionComplete](https://ej2.syncfusion.com/documentation
 By default, the searching operation in the Grid control does not ignore diacritic characters or accents. However, there are cases where ignoring diacritic characters becomes necessary. This feature enhances the search experience by enabling data searching without considering accents, ensuring a more comprehensive and accurate search  and it can be achieved by utilizing the [searchSettings->ignoreAccent](https://ej2.syncfusion.com/documentation/api/grid/searchSettings#ignoreaccent) property of the Grid control as **true**.
 
  
-The following example demonstrates how to define the `ignoreAccent` property within the [searchSettings](https://ej2.syncfusion.com/documentation/api/grid#searchsettings) property of the grid. Additionally, the [EJ2 Toggle Switch Button](../switch/getting-started) control is included to modify the value of the `searchSettings->ignoreAccent` property. When the switch is toggled, the [change](https://ej2.syncfusion.com/documentation/api/switch#change) event is triggered, and the `searchSettings->ignoreAccent` property is updated accordingly. This functionality helps to visualize the impact of the `searchSettings->ignoreAccent` setting when performing search operations.
+The following example demonstrates how to define the `ignoreAccent` property within the [searchSettings](https://ej2.syncfusion.com/documentation/api/grid#searchsettings) property of the grid. Additionally, the [EJ2 Toggle Switch Button](https://ej2.syncfusion.com/documentation/switch/getting-started) control is included to modify the value of the `searchSettings->ignoreAccent` property. When the switch is toggled, the [change](https://ej2.syncfusion.com/documentation/api/switch#change) event is triggered, and the `searchSettings->ignoreAccent` property is updated accordingly. This functionality helps to visualize the impact of the `searchSettings->ignoreAccent` setting when performing search operations.
 
 
 

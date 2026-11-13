@@ -38,7 +38,7 @@ To use CRUD, inject the [Edit](https://ej2.syncfusion.com/javascript/documentati
 
 ## Toolbar with edit option
 
-The toolbar with edit option feature in the Grid control provides a [built-in toolbar](../../toolbar/item-configuration) that includes various items for executing editing actions. This feature allows you to easily perform edit operations on the grid data, such as modifying cell values, updating changes, and canceling edits. 
+The toolbar with edit option feature in the Grid control provides a [built-in toolbar](https://ej2.syncfusion.com/javascript/documentation/toolbar/item-configuration) that includes various items for executing editing actions. This feature allows you to easily perform edit operations on the grid data, such as modifying cell values, updating changes, and canceling edits. 
 
 To enable this feature, you need to configure the [toolbar](https://ej2.syncfusion.com/javascript/documentation/api/grid#toolbar) property of the Grid control. This property allows you to define the items that will be displayed in the grid toolbar. By including the relevant items like **Edit**, **Add**, **Delete**, **Update**, and **Cancel** within the `toolbar` property, you can enable the edit options in the toolbar.
 

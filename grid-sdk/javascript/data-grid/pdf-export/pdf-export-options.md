@@ -101,7 +101,7 @@ Exporting hidden columns in the JavaScript Grid allows you to include hidden col
 To export hidden columns of the grid to a PDF file, you need to set the [includeHiddenColumn](https://ej2.syncfusion.com/javascript/documentation/api/grid/pdfExportProperties#includehiddencolumn) property as **true** in the [pdfExportProperties](https://ej2.syncfusion.com/javascript/documentation/api/grid/pdfExportProperties) property.
 
  
-The following example demonstrates how to export hidden columns to a PDF file. In this example, the **ShipCity** column, which is not visible in the UI, is exported to the PDF document. You can also export the grid by changing the `pdfExportProperties.includeHiddenColumn` property based on the switch toggle using the [checked](https://ej2.syncfusion.com/javascript/documentation/api/switch#checked) property of the [EJ2 Toggle Switch Button](../../switch/es5-getting-started) control.
+The following example demonstrates how to export hidden columns to a PDF file. In this example, the **ShipCity** column, which is not visible in the UI, is exported to the PDF document. You can also export the grid by changing the `pdfExportProperties.includeHiddenColumn` property based on the switch toggle using the [checked](https://ej2.syncfusion.com/javascript/documentation/api/switch#checked) property of the [EJ2 Toggle Switch Button](https://ej2.syncfusion.com/javascript/documentation/switch/es5-getting-started) control.
 
 
 
@@ -275,7 +275,7 @@ The JavaScript Grid control allows you to display all defined grid columns on a 
 You can achieve this by utilizing the [pdfExportProperties->allowHorizontalOverflow](https://ej2.syncfusion.com/javascript/documentation/api/grid/pdfExportProperties#allowhorizontaloverflow) property of the grid.
 
  
-In the following example, the [EJ2 Toggle Switch Button](../../switch/es5-getting-started) control is added to enable and disable the `pdfExportProperties.allowHorizontalOverflow` property. Based on the switch toggle, the `pdfExportProperties.allowHorizontalOverflow` property is updated using the [checked](https://ej2.syncfusion.com/javascript/documentation/api/switch#checked) property, and the export action is performed accordingly when the toolbar is clicked.
+In the following example, the [EJ2 Toggle Switch Button](https://ej2.syncfusion.com/javascript/documentation/switch/es5-getting-started) control is added to enable and disable the `pdfExportProperties.allowHorizontalOverflow` property. Based on the switch toggle, the `pdfExportProperties.allowHorizontalOverflow` property is updated using the [checked](https://ej2.syncfusion.com/javascript/documentation/api/switch#checked) property, and the export action is performed accordingly when the toolbar is clicked.
 
 
 

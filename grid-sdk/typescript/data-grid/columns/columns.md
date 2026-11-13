@@ -14,7 +14,7 @@ In TypeScript Grid, Columns are fundamental elements that play a pivotal role in
 
 ## Column types
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Grid control allows you to specify the type of data that a column binds using the [columns->type](https://ej2.syncfusion.com/documentation/api/grid/column#type) property. The `type` property is used to determine the appropriate [format](https://ej2.syncfusion.com/documentation/api/grid/column#format), such as [number](../../common/internationalization#number-formatting) or [date](../../common/internationalization#manipulating-datetime), for displaying the column data. 
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Grid control allows you to specify the type of data that a column binds using the [columns->type](https://ej2.syncfusion.com/documentation/api/grid/column#type) property. The `type` property is used to determine the appropriate [format](https://ej2.syncfusion.com/documentation/api/grid/column#format), such as [number](https://ej2.syncfusion.com/documentation/common/internationalization#number-formatting) or [date](https://ej2.syncfusion.com/documentation/common/internationalization#manipulating-datetime), for displaying the column data. 
 
 Grid supports the following column types:
 
@@ -124,8 +124,8 @@ You can use the [columns->format](https://ej2.syncfusion.com/documentation/api/g
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/column-formatting-cs1" %}
 
 
->* The grid uses the [Internalization](../../common/internationalization) library to format values based on the specified format and culture.
->* By default, the [number](../../common/internationalization#number-formatting) and [date](../../common/internationalization#date-formatting) values are formatted in **en-US** locale. You can localize the currency and date in different locale as explained [here](../../common/localization).
+>* The grid uses the [Internalization](https://ej2.syncfusion.com/documentation/common/internationalization) library to format values based on the specified format and culture.
+>* By default, the [number](https://ej2.syncfusion.com/documentation/common/internationalization#number-formatting) and [date](https://ej2.syncfusion.com/documentation/common/internationalization#date-formatting) values are formatted in **en-US** locale. You can localize the currency and date in different locale as explained [here](https://ej2.syncfusion.com/documentation/common/localization).
 >* The available format codes may vary depending on the data type of the column.
 >* You can also customize the formatting further by providing a custom function to the `format` property, instead of a format string.
 >* Make sure that the format string is valid and compatible with the data type of the column, to avoid unexpected results.
@@ -155,7 +155,7 @@ The following example code demonstrates the formatting of data for **Mark 1** an
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/column-numberformat-cs1" %}
 
 
->To learn more about number formatting, you can refer to the [number](../../common/internationalization#number-formatting) section.
+>To learn more about number formatting, you can refer to the [number](https://ej2.syncfusion.com/documentation/common/internationalization#number-formatting) section.
 
 ### Date formatting
 
@@ -184,7 +184,7 @@ Format | Formatted value
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/pagerdropdown-cs1" %}
 
 
->To learn more about date formatting, you can refer to [Date formatting](../../common/internationalization#date-formatting). 
+>To learn more about date formatting, you can refer to [Date formatting](https://ej2.syncfusion.com/documentation/common/internationalization#date-formatting). 
 
 ### Format the date column based on localization 
 
@@ -243,7 +243,7 @@ In the below example, the **numberFormatOptions** object is used as the `format`
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/custom-formatting-cs1" %}
 
 
->To learn more about custom formatting, you can refer to [Custom Date formatting](../../common/internationalization#custom-formats) and [Custom Number formatting](../../common/internationalization#custom-number-formatting-and-parsing). 
+>To learn more about custom formatting, you can refer to [Custom Date formatting](https://ej2.syncfusion.com/documentation/common/internationalization#custom-formats) and [Custom Number formatting](https://ej2.syncfusion.com/documentation/common/internationalization#custom-number-formatting-and-parsing). 
 
 ## Align the text of content
 
@@ -428,7 +428,7 @@ The Syncfusion<sup style="font-size:70%">&reg;</sup> Grid control allows you to 
 You can show or hide columns in the TypeScript Grid using the [visible](https://ej2.syncfusion.com/documentation/api/grid/column#visible) property of each column. By setting the `visible` property to **true** or **false**, you can control whether the column should be visible or hidden in the grid. Here's an example of how to show or hide a column in the TypeScript Grid using the visible property:
 
 
-In the following example, the [EJ2 Toggle Switch Button](../../switch/getting-started) component is added to enable and disable the `visible` property. When the switch is toggled, the [change](https://ej2.syncfusion.com/documentation/api/switch#change) event is triggered and the `visible` property of the **ShipCity** column is updated accordingly. The [refreshColumns](https://ej2.syncfusion.com/documentation/api/grid#refreshcolumns) method is called to refresh the grid and display the updated content. 
+In the following example, the [EJ2 Toggle Switch Button](https://ej2.syncfusion.com/documentation/switch/getting-started) component is added to enable and disable the `visible` property. When the switch is toggled, the [change](https://ej2.syncfusion.com/documentation/api/switch#change) event is triggered and the `visible` property of the **ShipCity** column is updated accordingly. The [refreshColumns](https://ej2.syncfusion.com/documentation/api/grid#refreshcolumns) method is called to refresh the grid and display the updated content. 
  
 
 

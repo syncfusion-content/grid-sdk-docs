@@ -1183,4 +1183,4 @@ The [`actionFailure`](https://ej2.syncfusion.com/angular/documentation/api/pivot
 
 ## See Also
 
-* [Toolbar Component](../toolbar/getting-started)
+* [Toolbar Component](https://ej2.syncfusion.com/angular/documentation/toolbar/getting-started)

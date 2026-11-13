@@ -14,7 +14,7 @@ In [Vue Data Grid](https://www.syncfusion.com/vue-components/vue-grid), Columns 
 
 ## Column types
 
-The Vue Data Grid component allows you to specify the type of data that a column binds using the [columns.type](https://ej2.syncfusion.com/vue/documentation/api/grid/column#type) property. The `type` property is used to determine the appropriate [format](https://ej2.syncfusion.com/vue/documentation/api/grid/column#format), such as [number](../../common/internationalization#number-formatting) or [date](../../common/internationalization#manipulating-datetime), for displaying the column data. 
+The Vue Data Grid component allows you to specify the type of data that a column binds using the [columns.type](https://ej2.syncfusion.com/vue/documentation/api/grid/column#type) property. The `type` property is used to determine the appropriate [format](https://ej2.syncfusion.com/vue/documentation/api/grid/column#format), such as [number](https://ej2.syncfusion.com/vue/documentation/common/internationalization#number-formatting) or [date](https://ej2.syncfusion.com/vue/documentation/common/internationalization#manipulating-datetime), for displaying the column data. 
 
 Grid supports the following column types:
 

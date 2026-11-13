@@ -202,7 +202,7 @@ To integrate Syncfusion JavaScript Grid into your JavaScript and ASP.NET Core pr
 </html>
 ```
 
-**Step 4:** Create a **index.js** file under the `wwwroot/js` folder . In this file, Create a [DataManager](../../data/getting-started) instance specifying the URL of your API endpoint(https:localhost:xxxx/api/Grid) using the `url` property and set the adaptor `UrlAdaptor`.
+**Step 4:** Create a **index.js** file under the `wwwroot/js` folder . In this file, Create a [DataManager](https://ej2.syncfusion.com/javascript/documentation/data/getting-started) instance specifying the URL of your API endpoint(https:localhost:xxxx/api/Grid) using the `url` property and set the adaptor `UrlAdaptor`.
 
 **Step 5:** The `DataManager` offers multiple adaptor options to connect with remote database based on an API service. Below is an example of the `UrlAdaptor` configuration where an API service are set up to return the resulting data in the `result` and `count` format.
 

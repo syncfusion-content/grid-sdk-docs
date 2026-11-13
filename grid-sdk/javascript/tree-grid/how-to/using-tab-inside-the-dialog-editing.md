@@ -10,7 +10,7 @@ domainurl: https://help.syncfusion.com/grid-sdk
 
 # Using Tabs Inside Dialog Editing in JavaScript TreeGrid
 
-You can use [`tab`](../../../tab) component inside dialog edit UI using dialog template feature. The dialog template feature can be enabled by defining [`editSettings.mode`](https://ej2.syncfusion.com/javascript/documentation/api/treegrid/editSettings#mode) as `Dialog` and [`editSetting.template`](https://ej2.syncfusion.com/javascript/documentation/api/treegrid/editSettings#template) as SCRIPT element ID or HTML string which holds the template.
+You can use [`tab`](https://ej2.syncfusion.com/javascript/documentation/tab) component inside dialog edit UI using dialog template feature. The dialog template feature can be enabled by defining [`editSettings.mode`](https://ej2.syncfusion.com/javascript/documentation/api/treegrid/editSettings#mode) as `Dialog` and [`editSetting.template`](https://ej2.syncfusion.com/javascript/documentation/api/treegrid/editSettings#template) as SCRIPT element ID or HTML string which holds the template.
 
 The following example demonstrate the usage of tab control inside the dialog template.
 

@@ -15,17 +15,17 @@ domainurl: https://help.syncfusion.com/grid-sdk
 The [`columns.editType`](https://ej2.syncfusion.com/javascript/documentation/api/treegrid/column#edittype) is used to customize the edit type of the particular column.
 You can set the [`columns.editType`](https://ej2.syncfusion.com/javascript/documentation/api/treegrid/column#edittype) based on data type of the column.
 
-* `numericedit` - [`NumericTextBox`](../../numerictextbox) component for integers, double, and decimal data types.
+* `numericedit` - [`NumericTextBox`](https://ej2.syncfusion.com/javascript/documentation/numerictextbox) component for integers, double, and decimal data types.
 
-* `defaultedit` - [`TextBox`](../../textbox) component for string data type.
+* `defaultedit` - [`TextBox`](https://ej2.syncfusion.com/javascript/documentation/textbox) component for string data type.
 
-* `dropdownedit` - [`DropDownList`](../../drop-down-list) component for list data type.
+* `dropdownedit` - [`DropDownList`](https://ej2.syncfusion.com/javascript/documentation/drop-down-list) component for list data type.
 
-* `booleanedit` - [`CheckBox`](../../check-box) component for boolean data type.
+* `booleanedit` - [`CheckBox`](https://ej2.syncfusion.com/javascript/documentation/check-box) component for boolean data type.
 
-* `datepickeredit` - [`DatePicker`](../../datepicker) component for date data type.
+* `datepickeredit` - [`DatePicker`](https://ej2.syncfusion.com/javascript/documentation/datepicker) component for date data type.
 
-* `datetimepickeredit` - [`DateTimePicker`](../../datetimepicker) component for date time data type.
+* `datetimepickeredit` - [`DateTimePicker`](https://ej2.syncfusion.com/javascript/documentation/datetimepicker) component for date time data type.
 
 Also, you can customize model of the [`columns.editType`](https://ej2.syncfusion.com/javascript/documentation/api/treegrid/column#edittype) component through the [`columns.edit.params`](https://ej2.syncfusion.com/javascript/documentation/api/treegrid/column#edit).
 
@@ -33,12 +33,12 @@ The following table describes cell edit type component and their corresponding e
 
 Component |Example
 -----|-----
-[`NumericTextBox`](../../numerictextbox) | params: { decimals: 2, value: 5 }
-[`TextBox`](../../textbox) | -
-[`DropDownList`](../../drop-down-list) | params: { value: 'Germany' }
-[`Checkbox`](../../check-box) | params: { checked: true}
-[`DatePicker`](../../datepicker) | params: { format:'dd.MM.yyyy' }
-[`DateTimePicker`](../../datetimepicker) | params: { value: new Date() }
+[`NumericTextBox`](https://ej2.syncfusion.com/javascript/documentation/numerictextbox) | params: { decimals: 2, value: 5 }
+[`TextBox`](https://ej2.syncfusion.com/javascript/documentation/textbox) | -
+[`DropDownList`](https://ej2.syncfusion.com/javascript/documentation/drop-down-list) | params: { value: 'Germany' }
+[`Checkbox`](https://ej2.syncfusion.com/javascript/documentation/check-box) | params: { checked: true}
+[`DatePicker`](https://ej2.syncfusion.com/javascript/documentation/datepicker) | params: { format:'dd.MM.yyyy' }
+[`DateTimePicker`](https://ej2.syncfusion.com/javascript/documentation/datetimepicker) | params: { value: new Date() }
 
 
 {% tabs %}

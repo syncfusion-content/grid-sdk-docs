@@ -94,7 +94,7 @@ Exporting hidden columns in the JavaScript Grid allows you to include hidden col
 To export hidden columns of the grid to a Excel or CSV file, you need to set the [includeHiddenColumn](https://ej2.syncfusion.com/javascript/documentation/api/grid/excelExportProperties#includehiddencolumn) property as **true** in the [excelExportProperties](https://ej2.syncfusion.com/javascript/documentation/api/grid/excelExportProperties) property.
 
  
-The following example demonstrates how to export hidden columns to a Excel file. In this example, the **ShipCity** column, which is not visible in the UI, is exported to the Excel document. You can also export the grid by changing the `excelExportProperties.includeHiddenColumn` property based on the switch toggle using the [checked](https://ej2.syncfusion.com/javascript/documentation/api/switch#checked) property of the [EJ2 Toggle Switch Button](../../switch/es5-getting-started) control.
+The following example demonstrates how to export hidden columns to a Excel file. In this example, the **ShipCity** column, which is not visible in the UI, is exported to the Excel document. You can also export the grid by changing the `excelExportProperties.includeHiddenColumn` property based on the switch toggle using the [checked](https://ej2.syncfusion.com/javascript/documentation/api/switch#checked) property of the [EJ2 Toggle Switch Button](https://ej2.syncfusion.com/javascript/documentation/switch/es5-getting-started) control.
 
 
 
