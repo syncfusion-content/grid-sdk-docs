@@ -106,7 +106,7 @@ Here's how you can define a schema for the Syncfusion<sup style="font-size:70%">
   }
   ```
 
-* **Define Queries:** Define queries that can be made to retrieve data from the server. In the case of a Grid, you may define a query to fetch orders, accepting parameters such as `DataManager` for advanced data operations. To utilize `Datamanager`, you need to install packages from `@syncfusion/ej2-data`
+* **Define Queries:** Define queries that can be made to retrieve data from the server. In the case of a Grid, you may define a query to fetch orders, accepting parameters such as `DataManager` for advanced data operations. To utilize `DataManager`, you need to install packages from `@syncfusion/ej2-data`
 
   ```
   type Query {
