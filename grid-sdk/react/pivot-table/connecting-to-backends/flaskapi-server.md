@@ -1016,7 +1016,7 @@ The following recommendations help maintain a reliable integration between the S
 ### 5. Security and deployment
 
 - Restrict access to API endpoints when the application is deployed.
-- Replace unrestricted `CORS(app)` with an origin allowlist containing the deployed React application URL.
+- Replace unrestricted `CORS(app)` with an origin allow list containing the deployed React application URL.
 - Use HTTPS in production environments to secure data transfer.
 - Store sensitive settings, such as API URLs and credentials, outside the source code.
 - Do not deploy Flask's debug development server; run the application with a supported production WSGI server and disable debug mode.

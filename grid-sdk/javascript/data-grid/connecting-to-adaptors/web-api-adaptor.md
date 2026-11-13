@@ -128,7 +128,7 @@ Create a model class named **OrdersDetails.cs** in the **Models** folder to repr
 
 **Step 4:** API Controller Creation
 
-Create a file named `GridController.cs` under the **Controllers** folder. This controller will handle data communication with the Javscript Grid component. Implement the **Get** method in the controller to return the data in JSON format, including the **Items** and **Count** properties as required by `WebApiAdaptor`.
+Create a file named `GridController.cs` under the **Controllers** folder. This controller will handle data communication with the JavaScript Grid component. Implement the **Get** method in the controller to return the data in JSON format, including the **Items** and **Count** properties as required by `WebApiAdaptor`.
 
 
 {% tabs %}

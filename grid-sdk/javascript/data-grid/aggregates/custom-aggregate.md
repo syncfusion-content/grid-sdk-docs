@@ -12,7 +12,7 @@ domainurl: https://help.syncfusion.com/grid-sdk
 
 The custom aggregate feature in JavaScript Grid control allows you to calculate aggregate values using your own aggregate function. This feature can be useful in scenarios where the built-in aggregate functions do not meet your specific requirements. To use the custom aggregate option, follow the steps below:
 
-* Set the [type](https://ej2.syncfusion.com/javascript/documentation/api/grid/aggregateColumn#type) property to **Custom** in the [AggregateColumnn](https://ej2.syncfusion.com/javascript/documentation/api/grid/aggregateColumn)
+* Set the [type](https://ej2.syncfusion.com/javascript/documentation/api/grid/aggregateColumn#type) property to **Custom** in the [AggregateColumn](https://ej2.syncfusion.com/javascript/documentation/api/grid/aggregateColumn)
 
 * Provide your custom aggregate function in the [customAggregate](https://ej2.syncfusion.com/javascript/documentation/api/grid/aggregateColumn#customaggregate) property.
 

@@ -29,7 +29,7 @@ To use PDF export, inject the `PdfExport` module in treegrid.
 
 <!-- Multiple exporting
 
-PDF export provides an option for exporting multiple treegrids to same file. In this exported document, each treegrid will be exported to new page of document in same file.
+PDF export provides an option for exporting multiple treegrid to same file. In this exported document, each treegrid will be exported to new page of document in same file.
 
 
 {% tabs %}

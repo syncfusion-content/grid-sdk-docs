@@ -322,7 +322,7 @@ The Syncfusion<sup style="font-size:70%">&reg;</sup> Grid control allows you to 
 Dynamically adding template columns involves creating and inserting columns with custom templates after the grid has been initialized. This approach provides flexibility in presenting data in a highly customizable manner.
 
  
-The following example demonstrates how to add template column using external button click. In this example, the **ShipCountry** column with a [Dropdownlist](../../drop-down-list/es5-getting-started) is added in column [template](https://ej2.syncfusion.com/javascript/documentation/api/grid/column#template), and an icon is displayed using the [headerTemplate](https://ej2.syncfusion.com/javascript/documentation/api/grid/column#headertemplate) for the **ShipCountry** column. 
+The following example demonstrates how to add template column using external button click. In this example, the **ShipCountry** column with a [DropDownlist](https://ej2.syncfusion.com/javascript/documentation/drop-down-list/es5-getting-started) is added in column [template](https://ej2.syncfusion.com/javascript/documentation/api/grid/column#template), and an icon is displayed using the [headerTemplate](https://ej2.syncfusion.com/javascript/documentation/api/grid/column#headertemplate) for the **ShipCountry** column. 
 
 
 

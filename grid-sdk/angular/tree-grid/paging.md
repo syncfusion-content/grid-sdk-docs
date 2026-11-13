@@ -16,7 +16,7 @@ Enable paging by setting the [allowPaging](https://ej2.syncfusion.com/angular/do
 
 To use paging, inject the **PageService** into your AppModule providers. The PageService supplies functionality and events necessary for handling pagination.
 
-Configure paging options with the [pageSettings](https://ej2.syncfusion.com/angular/documentation/api/treegrid/pageSettings) property. The `pageSettings` object allows control over the page size, current page, page count, query string enablement, and other paging behaviors.
+Configure paging options with the [pageSettings](https://ej2.syncfusion.com/angular/documentation/api/treegrid/pageSettings) property. The `pageSettings` object allows control over the page size, current page, page count, enabling query string, and other paging behaviors.
 
 > For improved performance, paging can be used to load only a set number of records from the data source at a time.
 

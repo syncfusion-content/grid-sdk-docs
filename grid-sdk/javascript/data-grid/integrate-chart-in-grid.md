@@ -62,7 +62,7 @@ This section explains how to dynamically render Charts based on user interaction
 
 For example, in a sales dashboard, you can select sales records for specific products and instantly view a comparative bar or pie Chart illustrating online sales versus retail sales or revenue trends over several month. This functionality helps improve decision-making by providing immediate visual feedback.
 
-Steps to be followed to integrate Chart into Grid via contextmenu:
+Steps to be followed to integrate Chart into Grid via context menu:
 
 
 **Step 1: Define Chart options to Grid Context Menu:**

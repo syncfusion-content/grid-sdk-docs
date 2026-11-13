@@ -229,7 +229,7 @@ The following example demonstrates how to prevent the default behavior of the **
 
 ### Custom shortcut keys to perform grid actions
 
-The TypeScript Grid control enables you to enhance the usablity of keyboard shortcuts for various grid actions and navigation. In addition to the built-in keyboard navigation capabilities, you can implement custom keyboard shortcuts to execute specific actions.
+The TypeScript Grid control enables you to enhance the usability of keyboard shortcuts for various grid actions and navigation. In addition to the built-in keyboard navigation capabilities, you can implement custom keyboard shortcuts to execute specific actions.
 
 To achieve this, you can utilize the [keyPressed](https://ej2.syncfusion.com/documentation/api/grid#keypressed) event of the grid. This event is triggered for every key press, allowing you to customize the behavior based on the pressed key.
 

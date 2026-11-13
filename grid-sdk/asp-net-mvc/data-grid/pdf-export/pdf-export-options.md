@@ -34,7 +34,7 @@ The following example demonstrates how to export current page to a PDF document 
 
 Exporting only the selected records from the Syncfusion ASP.NET MVC Grid allows generating PDF document that include only the desired data from the Grid. This feature provides the flexibility to export specific records that are relevant to the needs, enabling more focused and targeted PDF exports.
 
-To export only the selected records by utilizing tthe `ExportProperties->DataSource` property in the [ToolbarClick](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ToolbarClick) event. 
+To export only the selected records by utilizing the `ExportProperties->DataSource` property in the [ToolbarClick](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ToolbarClick) event. 
 
 To export the selected records from the grid to a PDF file, you can follow these steps:
 

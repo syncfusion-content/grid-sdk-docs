@@ -115,7 +115,7 @@ function colorPicker(args: QueryCellInfoEventArgs) {
 ### Render DropDownList control in a column
 
 
-To render a custom control in a grid column, you need to define a [template](https://ej2.syncfusion.com/documentation/api/grid/column#template) for the column using the `template` property. In the following code, we rendered the [DropDownList](../../drop-down-list/getting-started) control in the **Order Status** column by defining the `template` property.
+To render a custom control in a grid column, you need to define a [template](https://ej2.syncfusion.com/documentation/api/grid/column#template) for the column using the `template` property. In the following code, we rendered the [DropDownList](https://ej2.syncfusion.com/documentation/drop-down-list/getting-started) control in the **Order Status** column by defining the `template` property.
 
 
  

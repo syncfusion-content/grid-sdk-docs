@@ -30,7 +30,7 @@ The following example demonstrates, how to render the custom toolbar using `tool
 
 Render an image with text in custom toolbar in Syncfusion ASP.NET Core Grid allows easily render an image along with text in the toolbar of the Grid. This feature enhances the visual presentation of the Grid, providing additional context and improving the overall experience.
 
-To render an image with text in custom toolbar, This can be achieved by utilizing the [toolbarTemplate](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ToolbarTemplate)property.
+To render an image with text in custom toolbar, This can be achieved by utilizing the [toolbarTemplate](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ToolbarTemplate) property.
 
 The following example demonstrates how to render an image in the toolbar of the grid using `toolbarTemplate`.
 

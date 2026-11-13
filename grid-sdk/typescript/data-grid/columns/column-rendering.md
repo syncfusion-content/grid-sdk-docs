@@ -185,7 +185,7 @@ In this example, we have a grid with columns **Food Name**, **Protein**, **Fat**
 
 To display serial number in the grid for every rows, you can use the [rowDataBound](https://ej2.syncfusion.com/documentation/api/grid#rowdatabound) event. The `rowDataBound` event is triggered for each row in the grid when the data is bound to the grid.
 
-Within the event handler, the [pagesize](https://ej2.syncfusion.com/documentation/api/grid/pageSettingsModel#pagesize) and [currentPage](https://ej2.syncfusion.com/documentation/api/grid/pageSettingsModel#currentpage) index can be obtained from the grid's [pageSettings](https://ej2.syncfusion.com/documentation/api/grid#pagesettings) property. Using these values, the serial number can be calculated based on the page size, current page, and row index. Finally, the calculated serial number can be set as the innerHTML of the corresponding row cell.
+Within the event handler, the [pageSize](https://ej2.syncfusion.com/documentation/api/grid/pageSettingsModel#pagesize) and [currentPage](https://ej2.syncfusion.com/documentation/api/grid/pageSettingsModel#currentpage) index can be obtained from the grid's [pageSettings](https://ej2.syncfusion.com/documentation/api/grid#pagesettings) property. Using these values, the serial number can be calculated based on the page size, current page, and row index. Finally, the calculated serial number can be set as the innerHTML of the corresponding row cell.
 
 Here is an example code snippet that demonstrates how to display serial numbers in a Syncfusion<sup style="font-size:70%">&reg;</sup> Grid using `rowDataBound` event:
 
