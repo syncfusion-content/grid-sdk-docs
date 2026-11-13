@@ -1,0 +1,33 @@
+@using Syncfusion.EJ2.Grids
+<script>
+  ej.grids.Grid.Inject(ej.grids.Filter, ej.grids.Sort, ej.grids.StatusBar);
+</script>
+@Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)ViewBag.DataSource).AllowFiltering().FilterSettings(filter => filter.Type(Syncfusion.EJ2.Grids.FilterType.Excel)).AllowSorting().Columns(col =>
+{
+    col.Field("ProductID").HeaderText("Product ID").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).IsPrimaryKey(true).Add();
+    col.Field("ProductName").HeaderText("Product Name").Width("160").Add();
+    col.Field("Category").HeaderText("Category").Width("140").Add();
+    col.Field("PurchasePrice").HeaderText("Purchase Price").Width("140").Format("C2").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("SellingPrice").HeaderText("Selling Price").Width("140").Format("C2").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("AvailableStock").HeaderText("Available Stock").Width("150").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+}).Height("320px").Render()
+<script>
+  window.addEventListener('load', function () {
+    var grid = document.getElementById('Grid').ej2_instances[0];
+    grid.enableStatusBar = true;
+    grid.statusBarSettings = {
+  items: [{
+    key: 'custom',
+    type: 'Custom',
+    position: 'Right',
+    statusPanelParams: {
+      template: function (context) {
+        var panel = document.createElement('div');
+        panel.textContent = 'Total Revenue: ' + context.totalCount;
+        return panel;
+      }
+    }
+  }]    };
+    grid.dataBind();
+  });
+</script>

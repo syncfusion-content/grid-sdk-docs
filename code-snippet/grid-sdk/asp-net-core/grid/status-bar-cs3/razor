@@ -1,0 +1,32 @@
+@using Syncfusion.EJ2.Grids
+<script>
+  ej.grids.Grid.Inject(ej.grids.Filter, ej.grids.Sort, ej.grids.Selection, ej.grids.StatusBar);
+</script>
+@Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)ViewBag.DataSource).AllowFiltering().FilterSettings(filter => filter.Type(Syncfusion.EJ2.Grids.FilterType.Excel)).AllowSorting().AllowSelection().Columns(col =>
+{
+    col.Field("ProductID").HeaderText("Product ID").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).IsPrimaryKey(true).Add();
+    col.Field("ProductName").HeaderText("Product Name").Width("160").Add();
+    col.Field("Category").HeaderText("Category").Width("140").Add();
+    col.Field("PurchasePrice").HeaderText("Purchase Price").Width("140").Format("C2").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("SellingPrice").HeaderText("Selling Price").Width("140").Format("C2").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("AvailableStock").HeaderText("Available Stock").Width("150").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+}).Height("320px").Render()
+<script>
+  window.addEventListener('load', function () {
+    var grid = document.getElementById('Grid').ej2_instances[0];
+    grid.enableStatusBar = true;
+    grid.statusBarSettings = {
+  items: [
+    {
+      key: 'totalRows',
+      type: 'TotalRowCount',
+      position: 'Left',
+      statusPanelParams: { valueFormatter: function (params) { return params.value.toLocaleString(); } }
+    },
+    { key: 'selectedCount', type: 'SelectedRowCount', position: 'Center' }
+  ]    };
+  grid.allowSelection = true;
+  grid.selectionSettings = { mode: 'Row', type: 'Multiple' };
+    grid.dataBind();
+  });
+</script>

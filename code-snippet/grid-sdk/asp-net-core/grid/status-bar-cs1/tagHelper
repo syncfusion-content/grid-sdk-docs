@@ -1,0 +1,33 @@
+@using Syncfusion.EJ2.Grids
+@{ var data = ViewBag.DataSource; }
+<script>
+  ej.grids.Grid.Inject(ej.grids.Filter, ej.grids.Sort, ej.grids.Selection, ej.grids.StatusBar);
+</script>
+<ejs-grid id="Grid" dataSource="@(data)" allowFiltering="true" allowSorting="true" allowSelection="true" enableStatusBar="true" height="320">
+    <e-grid-filterSettings type="Excel"></e-grid-filterSettings>
+    <e-grid-selectionsettings mode="Row" type="Multiple"></e-grid-selectionsettings>
+    <e-grid-columns>
+        <e-grid-column field="ProductID" headerText="Product ID" width="120" textAlign="Right" isPrimaryKey="true"></e-grid-column>
+        <e-grid-column field="ProductName" headerText="Product Name" width="160"></e-grid-column>
+        <e-grid-column field="Category" headerText="Category" width="140"></e-grid-column>
+        <e-grid-column field="PurchasePrice" headerText="Purchase Price" width="140" format="C2" textAlign="Right"></e-grid-column>
+        <e-grid-column field="SellingPrice" headerText="Selling Price" width="140" format="C2" textAlign="Right"></e-grid-column>
+        <e-grid-column field="AvailableStock" headerText="Available Stock" width="150" textAlign="Right"></e-grid-column>
+    </e-grid-columns>
+</ejs-grid>
+<script>
+  window.addEventListener('load', function () {
+    var grid = document.getElementById('Grid').ej2_instances[0];
+    grid.enableStatusBar = true;
+    grid.statusBarSettings = {
+  items: [
+    { key: 'totalRows', type: 'TotalRowCount', position: 'Left' },
+    { key: 'filteredRows', type: 'FilteredRowCount', position: 'Left' },
+    { key: 'filteredTotalRows', type: 'TotalAndFilteredRowCount', position: 'Right' },
+    { key: 'selectedCount', type: 'SelectedRowCount', position: 'Center' }
+  ]    };
+  grid.allowSelection = true;
+  grid.selectionSettings = { mode: 'Row', type: 'Multiple' };
+    grid.dataBind();
+  });
+</script>
