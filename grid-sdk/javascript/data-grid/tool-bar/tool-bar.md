@@ -35,7 +35,7 @@ Enabling or disabling toolbar items dynamically in JavaScript Grid is to provide
 You can enable or disable toolbar items dynamically by using the [enableToolbarItems](https://ej2.syncfusion.com/javascript/documentation/api/grid#enabletoolbaritems) method. This method allows you to control the availability of specific toolbar items based on your application logic.
 
  
-In the following example, the [EJ2 Toggle Switch Button control](../../switch/es5-getting-started) is added to enable and disable the toolbar items using `enableToolbarItems` method. When the switch is toggled, the [change](https://ej2.syncfusion.com/javascript/documentation/api/switch#change) event is triggered and the toolbar items are updated accordingly.
+In the following example, the [EJ2 Toggle Switch Button control](https://ej2.syncfusion.com/javascript/documentation/switch/es5-getting-started) is added to enable and disable the toolbar items using `enableToolbarItems` method. When the switch is toggled, the [change](https://ej2.syncfusion.com/javascript/documentation/api/switch#change) event is triggered and the toolbar items are updated accordingly.
 
 
 
@@ -99,5 +99,5 @@ The following example demonstrates how to change the background color of the `Ad
 
 ## See Also
 
-* [Toolbar Control](../../toolbar/getting-started)
+* [Toolbar Control](https://ej2.syncfusion.com/javascript/documentation/toolbar/getting-started)
 * [How to set overflow mode in Grid toolbar](https://support.syncfusion.com/kb/article/9929/how-to-set-overflow-mode-in-grid-toolbar)

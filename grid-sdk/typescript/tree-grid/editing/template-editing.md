@@ -67,7 +67,7 @@ ${/if}
 
 ```
 
-> The dialog template syntax supports the ES6 expression string literals, and you can refer to the [`Template Engine`](../../common/template-engine) for more template syntax.
+> The dialog template syntax supports the ES6 expression string literals, and you can refer to the [`Template Engine`](https://ej2.syncfusion.com/documentation/common/template-engine) for more template syntax.
 
 ### Render editors as components
 

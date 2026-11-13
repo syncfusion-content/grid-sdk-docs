@@ -121,7 +121,7 @@ With the JavaScript Grid, you have the ability to manage the activation or deact
 This can be achieved using the [enableItems](https://ej2.syncfusion.com/javascript/documentation/api/context-menu#enableitems) method of the context menu. By setting the enable parameter in the enableItems method to **true**, you can enable context menu items, and by setting it to **false**, you can disable them. Based on your specific condition or requirements, you can enable or disable the context menu item using the `enableItems` method.
 
  
-In the following example, the [EJ2 Toggle Switch Button](../switch/es5-getting-started) control is added to enable and disable the context menu items using `enableItems` method. When the switch is toggled, the [change](https://ej2.syncfusion.com/javascript/documentation/api/switch#change) event is triggered, and the **Copy** items is updated accordingly. 
+In the following example, the [EJ2 Toggle Switch Button](https://ej2.syncfusion.com/javascript/documentation/switch/es5-getting-started) control is added to enable and disable the context menu items using `enableItems` method. When the switch is toggled, the [change](https://ej2.syncfusion.com/javascript/documentation/api/switch#change) event is triggered, and the **Copy** items is updated accordingly. 
 
 
 
@@ -143,7 +143,7 @@ The JavaScript Grid provides the flexibility to show or hide both default and cu
 This can be achieved using the [showItems](https://ej2.syncfusion.com/javascript/documentation/api/context-menu#showitems) and [hideItems](https://ej2.syncfusion.com/javascript/documentation/api/context-menu#hideitems) methods of the context menu by specifying the item you want to show or hide as an argument. 
 
  
-In the following example, the [EJ2 Toggle Switch Button](../switch/es5-getting-started) control is added to show or hide the context menu items using `showItems` and `hideItems` methods. When the switch is toggled, the [change](https://ej2.syncfusion.com/javascript/documentation/api/switch#change) event is triggered, and the **Copy** items is updated accordingly. 
+In the following example, the [EJ2 Toggle Switch Button](https://ej2.syncfusion.com/javascript/documentation/switch/es5-getting-started) control is added to show or hide the context menu items using `showItems` and `hideItems` methods. When the switch is toggled, the [change](https://ej2.syncfusion.com/javascript/documentation/api/switch#change) event is triggered, and the **Copy** items is updated accordingly. 
 
 
 

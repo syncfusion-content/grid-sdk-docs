@@ -71,7 +71,7 @@ To explore available edit modes and types in Angular Grid, refer to the followin
 
 ## Toolbar with edit options
 
-The toolbar with edit option feature provides a [built-in toolbar](../../toolbar/item-configuration) that includes items for editing actions. Using the toolbar, users can easily modify, update, or cancel grid data edits.
+The toolbar with edit option feature provides a [built-in toolbar](https://ej2.syncfusion.com/angular/documentation/toolbar/item-configuration) that includes items for editing actions. Using the toolbar, users can easily modify, update, or cancel grid data edits.
 
 Configure the [toolbar](https://ej2.syncfusion.com/angular/documentation/api/grid#toolbar) property of the Grid component to enable this feature. The toolbar property defines the items displayed in the grid toolbar. Include relevant items like `Edit`, `Add`, `Delete`, `Update`, and `Cancel` within the `toolbar` property to enable edit options in the toolbar.
 

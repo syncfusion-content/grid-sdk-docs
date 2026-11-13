@@ -341,7 +341,7 @@ export class CustomAdaptor extends ej.data.ODataV4Adaptor {
 
 **Step 5:** Adding Syncfusion Component:
 
-Create a `index.js` file under the `wwwroot/js` folder. Create a [DataManager](../../data/getting-started) instance specifying the URL of your API endpoint(https://localhost:xxxx/odata/Orders) using the `url` property. Then, set `CustomAdaptor` as the adaptor to handle data requests.
+Create a `index.js` file under the `wwwroot/js` folder. Create a [DataManager](https://ej2.syncfusion.com/javascript/documentation/data/getting-started) instance specifying the URL of your API endpoint(https://localhost:xxxx/odata/Orders) using the `url` property. Then, set `CustomAdaptor` as the adaptor to handle data requests.
 
 ```js
 import { CustomAdaptor } from './CustomAdaptor.js';

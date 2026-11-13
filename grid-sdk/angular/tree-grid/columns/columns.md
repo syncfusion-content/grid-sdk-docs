@@ -16,7 +16,7 @@ The column definitions are used as the [dataSource](https://ej2.syncfusion.com/a
 
 ## Column types
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> TreeGrid component allows specifying the type of data that a column binds using the [column.type](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column#type) property. The `type` property is used to determine the appropriate [format](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column#format), such as [number](../../common/internationalization#number-formatting) or [date](../../common/internationalization#manipulating-datetime), for displaying the column data.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> TreeGrid component allows specifying the type of data that a column binds using the [column.type](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column#type) property. The `type` property is used to determine the appropriate [format](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column#format), such as [number](https://ej2.syncfusion.com/angular/documentation/common/internationalization#number-formatting) or [date](https://ej2.syncfusion.com/angular/documentation/common/internationalization#manipulating-datetime), for displaying the column data.
 
 TreeGrid supports the following column types:
 

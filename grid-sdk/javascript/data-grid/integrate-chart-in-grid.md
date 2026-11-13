@@ -10,7 +10,7 @@ domainurl: https://help.syncfusion.com/grid-sdk
 
 # Integrate Chart in EJ2 JavaScript Grid
 
-The Grid and Chart Integration feature in Syncfusion allows users to visualize tabular data in a graphical format by linking the Grid with the Chart.This feature allows seamless integration with Charts to visualize selected data interactively. You can generate various Chart types such as bar, line, or pie directly from Grid data using the [ContextMenu](../../documentation/grid/context-menu) feature. This feature is particularly useful in scenarios where tabular data can be better understood through graphical representation.
+The Grid and Chart Integration feature in Syncfusion allows users to visualize tabular data in a graphical format by linking the Grid with the Chart.This feature allows seamless integration with Charts to visualize selected data interactively. You can generate various Chart types such as bar, line, or pie directly from Grid data using the [ContextMenu](https://ej2.syncfusion.com/javascript/documentation/grid/context-menu) feature. This feature is particularly useful in scenarios where tabular data can be better understood through graphical representation.
 
 This feature is particularly useful in dashboards, reporting tools, and data-driven applications where both tabular and visual representations of data are required.
 
@@ -52,8 +52,8 @@ Refer to the following steps to set up your local environment.
 
 The Essential JS 2 Grid and GridChart can be initialized by using either of the following ways.
 
-* [Using local script and style](../../documentation/getting-started/quick-start#using-local-scripts-and-styles).
-* [Using CDN link for script and style](../../documentation/getting-started/quick-start#using-cdn-link-for-scripts-and-styles).
+* [Using local script and style](https://ej2.syncfusion.com/javascript/documentation/getting-started/quick-start#using-local-scripts-and-styles).
+* [Using CDN link for script and style](https://ej2.syncfusion.com/javascript/documentation/getting-started/quick-start#using-cdn-link-for-scripts-and-styles).
 
 
 ### Chart integration via Context Menu in Grid
@@ -110,11 +110,11 @@ Use the [contextMenuClick](https://ej2.syncfusion.com/javascript/documentation/a
 
 * Use the `gridChart.render` to render the Chart. It accepts three arguments discussed below:
 
-  * `chartArgs`: Contains Grid instance, [Chart type](../../documentation/chart/chart-types), and selected records.
+  * `chartArgs`: Contains Grid instance, [Chart type](https://ej2.syncfusion.com/javascript/documentation/chart/chart-types), and selected records.
 
   * `chartModel:` This specifies various Chart configurations related to the appearance and behavior of the Chart. The model allows you to configure axes, labels, legends, tooltips, and other Chart attributes. Refer to Syncfusion's [Chart Model](https://ej2.syncfusion.com/javascript/documentation/api/chart/chartmodel) for detailed configurations, options, and customization possibilities.
 
-  * `categorySeries:` This specifies the fields in your data used for [categories](../chart/category-axis) and [series](../chart/chart-series) in the Chart.
+  * `categorySeries:` This specifies the fields in your data used for [categories](https://ej2.syncfusion.com/javascript/documentation/chart/category-axis) and [series](https://ej2.syncfusion.com/javascript/documentation/chart/chart-series) in the Chart.
 
     * Category fields: Define the grouping axis.
     * Series fields: Define the actual values plotted on the Chart.
@@ -226,9 +226,9 @@ When enabled, the property panel appears alongside the Chart popup and offers th
 
 **customize the Chart model:**   
 
-You can customize the [Chart](../../documentation/chart/getting-started) by defining a [chartModel](https://ej2.syncfusion.com/javascript/documentation/api/chart/chartModel) object in the `chart` property of the `model` object within the [contextMenuClick](https://ej2.syncfusion.com/javascript/documentation/api/grid#contextmenuclick) event .This allows you to configure various Chart properties such as axes, margins, tooltips, titles, and more. Additionally, you can use the [events](../../documentation/api/chart#events) of the Chart within the `chartModel` configuration to apply further customizations when the Chart is rendered. 
+You can customize the [Chart](https://ej2.syncfusion.com/javascript/documentation/chart/getting-started) by defining a [chartModel](https://ej2.syncfusion.com/javascript/documentation/api/chart/chartModel) object in the `chart` property of the `model` object within the [contextMenuClick](https://ej2.syncfusion.com/javascript/documentation/api/grid#contextmenuclick) event .This allows you to configure various Chart properties such as axes, margins, tooltips, titles, and more. Additionally, you can use the [events](https://ej2.syncfusion.com/javascript/documentation/api/chart#events) of the Chart within the `chartModel` configuration to apply further customizations when the Chart is rendered. 
 
-To customize [Accumulation Charts](../../documentation/accumulation-chart/getting-started) (such as Pie), use the `accumulationChart` property of the `model` object. This property allows you to configure Chart options like titles, legends, data labels, and visual styles tailored for accumulation-type visualizations.  You can also use Accumulation Chart [events](../../documentation/api/accumulation-chart#events) to apply additional customizations when the Chart is rendered.
+To customize [Accumulation Charts](https://ej2.syncfusion.com/javascript/documentation/accumulation-chart/getting-started) (such as Pie), use the `accumulationChart` property of the `model` object. This property allows you to configure Chart options like titles, legends, data labels, and visual styles tailored for accumulation-type visualizations.  You can also use Accumulation Chart [events](https://ej2.syncfusion.com/javascript/documentation/api/accumulation-chart#events) to apply additional customizations when the Chart is rendered.
 
 The following code snippets demonstrate how to achieve this:
 

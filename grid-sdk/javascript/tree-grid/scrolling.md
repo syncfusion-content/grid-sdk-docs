@@ -59,7 +59,7 @@ For example, in a project management application, users often need to scroll thr
 
 To enable sticky headers in the TreeGrid, you can simply set the `enableStickyHeader` property to **true**. This makes the column headers stick to the top of the TreeGrid container or its parent scrolling container when you scroll vertically.
 
-The following sample demonstrates how to enable or disable the sticky header in the TreeGrid using a [Switch](../../switch/getting-started) and its [change](https://ej2.syncfusion.com/javascript/documentation/api/switch#change) event:
+The following sample demonstrates how to enable or disable the sticky header in the TreeGrid using a [Switch](https://ej2.syncfusion.com/javascript/documentation/switch/getting-started) and its [change](https://ej2.syncfusion.com/javascript/documentation/api/switch#change) event:
 
 
 {% tabs %}

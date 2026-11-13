@@ -12,7 +12,7 @@ domainurl: https://help.syncfusion.com/grid-sdk
 
 Edited data in the TreeGrid component can be persisted to a database via RESTful web services.
 
-All CRUD operations in the TreeGrid are performed using [DataManager](../../data), which provides options for binding and persisting data to the server side.
+All CRUD operations in the TreeGrid are performed using [DataManager](https://ej2.syncfusion.com/angular/documentation/data), which provides options for binding and persisting data to the server side.
 
 > The ODataAdaptor persists data on the server according to the OData protocol.
 
@@ -20,11 +20,11 @@ You can also view a video tutorial about persisting data on the server.
 
 {% youtube "https://www.youtube.com/watch?v=UuD7_W2yIVs" %}
 
-The following sections explain how to get edited data details on the server side using [UrlAdaptor](../../data/adaptors#url-adaptor) and other available adaptors with the `dataManager` property. See the [adaptors documentation](https://ej2.syncfusion.com/angular/documentation/data/adaptors) for details.
+The following sections explain how to get edited data details on the server side using [UrlAdaptor](https://ej2.syncfusion.com/angular/documentation/data/adaptors#url-adaptor) and other available adaptors with the `dataManager` property. See the [adaptors documentation](https://ej2.syncfusion.com/angular/documentation/data/adaptors) for details.
 
 ## Using URL adaptor
 
-Use the [UrlAdaptor](../../data/adaptors#url-adaptor) of [DataManager](../../data) to bind data from a remote service. The initial data load and subsequent CRUD actions can be managed through various URL properties of the DataManager.
+Use the [UrlAdaptor](https://ej2.syncfusion.com/angular/documentation/data/adaptors#url-adaptor) of [DataManager](https://ej2.syncfusion.com/angular/documentation/data) to bind data from a remote service. The initial data load and subsequent CRUD actions can be managed through various URL properties of the DataManager.
 
 When using `UrlAdaptor`, operations such as paging, filtering, sorting, and editing should be handled on the server.
 

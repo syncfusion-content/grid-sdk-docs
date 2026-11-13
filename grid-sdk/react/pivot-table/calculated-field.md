@@ -139,7 +139,7 @@ To reuse an existing formula:
 
 Calculated field values can be formatted in the calculated field dialog or in code, which keeps numeric output readable and consistent with the rest of the table.
 
-In code, formatting is set through the [`formatSettings`](https://ej2.syncfusion.com/react/documentation/api/pivotview/formatsettings) property. The full list of supported number formats is described in [Number formatting](./number-formatting).
+In code, formatting is set through the [`formatSettings`](https://ej2.syncfusion.com/react/documentation/api/pivotview/formatsettings) property. The full list of supported number formats is described in [Number formatting](https://ej2.syncfusion.com/react/documentation/number-formatting).
 
 ### Formatting through the user interface
 

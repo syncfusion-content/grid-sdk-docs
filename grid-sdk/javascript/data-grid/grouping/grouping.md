@@ -72,7 +72,7 @@ By default, the Grid provides a drop area for grouping columns. This drop area a
 To hide the drop area in the JavaScript Grid, you can set the [groupSettings->showDropArea](https://ej2.syncfusion.com/javascript/documentation/api/grid/groupSettings#showdroparea) property to **false**. 
 
  
-In the following example, the [EJ2 Toggle Switch Button](../../switch/es5-getting-started) control is added to hide or show the drop area. When the switch is toggled, the [change](https://ej2.syncfusion.com/javascript/documentation/api/switch#change) event is triggered and the `groupSettings.showDropArea` property of the grid is updated accordingly. 
+In the following example, the [EJ2 Toggle Switch Button](https://ej2.syncfusion.com/javascript/documentation/switch/es5-getting-started) control is added to hide or show the drop area. When the switch is toggled, the [change](https://ej2.syncfusion.com/javascript/documentation/api/switch#change) event is triggered and the `groupSettings.showDropArea` property of the grid is updated accordingly. 
 
 
 
@@ -94,7 +94,7 @@ In the following example, the [EJ2 Toggle Switch Button](../../switch/es5-gettin
 The JavaScript Grid has a default behavior where the grouped column is hidden, to provide a cleaner and more focused view of your data. However, if you prefer to show the grouped column in the grid, you can achieve this by setting the [groupSettings->showGroupedColumn](https://ej2.syncfusion.com/javascript/documentation/api/grid/groupSettings#showgroupedcolumn) property to **true**.
 
  
-In the following example, the [EJ2 Toggle Switch Button](../../switch/es5-getting-started) control is added to hide or show the grouped columns. When the switch is toggled, the [change](https://ej2.syncfusion.com/javascript/documentation/api/switch#change) event is triggered and the `groupSettings.showGroupedColumn` property of the grid is updated accordingly.
+In the following example, the [EJ2 Toggle Switch Button](https://ej2.syncfusion.com/javascript/documentation/switch/es5-getting-started) control is added to hide or show the grouped columns. When the switch is toggled, the [change](https://ej2.syncfusion.com/javascript/documentation/api/switch#change) event is triggered and the `groupSettings.showGroupedColumn` property of the grid is updated accordingly.
 
 
 
@@ -208,7 +208,7 @@ The following example demonstrates how to collapse all grouped rows at the initi
 By default, the Syncfusion<sup style="font-size:70%">&reg;</sup> Grid supports interaction-oriented column grouping, where users manually group columns by dragging and dropping them into the grouping area of the grid. Grid provides an ability to group and ungroup a column using [groupColumn](https://ej2.syncfusion.com/javascript/documentation/api/grid#groupcolumn) and [ungroupColumn](https://ej2.syncfusion.com/javascript/documentation/api/grid#ungroupcolumn) methods. These methods provide a programmatic approach to perform column grouping and ungrouping.
 
  
-The following example demonstrates how to group and upgroup the columns in a grid. It utilizes the [DropDownList](../../drop-down-list/es5-getting-started) control to select the column. When an external button is clicked, the `groupColumn` and `ungroupColumn` methods are called to group or ungroup the selected column.
+The following example demonstrates how to group and upgroup the columns in a grid. It utilizes the [DropDownList](https://ej2.syncfusion.com/javascript/documentation/drop-down-list/es5-getting-started) control to select the column. When an external button is clicked, the `groupColumn` and `ungroupColumn` methods are called to group or ungroup the selected column.
 
 
 
@@ -232,7 +232,7 @@ The JavaScript Grid offers a convenient feature to expand or collapse grouped ro
 Grid provides an ability to expand or collapse grouped rows using [groupExpandAll](https://ej2.syncfusion.com/javascript/documentation/api/grid#groupexpandall) and [groupCollapseAll](https://ej2.syncfusion.com/javascript/documentation/api/grid#groupcollapseall) methods respectively.
 
  
-In the following example, the [EJ2 Toggle Switch Button](../../switch/es5-getting-started) control is added to expand or collapse grouped rows. When the switch is toggled, the [change](https://ej2.syncfusion.com/javascript/documentation/api/switch#change) event is triggered and the `groupExpandAll` and `groupCollapseAll` methods are called to expand or collapse grouped rows.
+In the following example, the [EJ2 Toggle Switch Button](https://ej2.syncfusion.com/javascript/documentation/switch/es5-getting-started) control is added to expand or collapse grouped rows. When the switch is toggled, the [change](https://ej2.syncfusion.com/javascript/documentation/api/switch#change) event is triggered and the `groupExpandAll` and `groupCollapseAll` methods are called to expand or collapse grouped rows.
 
 
 

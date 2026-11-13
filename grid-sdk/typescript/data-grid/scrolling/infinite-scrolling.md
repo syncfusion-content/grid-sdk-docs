@@ -64,7 +64,7 @@ To enable cache mode, you need to define [enableCache](https://ej2.syncfusion.co
 To enable maximum blocks, you need to define `maxBlocks` count of [infiniteScrollSettings](https://ej2.syncfusion.com/documentation/api/grid/infiniteScrollSettings), By default this property value is 3.
 
  
-The following example that demonstrates how to enable/disable cache mode in infinite scrolling of the grid based on a [Switch](../../switch/getting-started) control [change](https://ej2.syncfusion.com/documentation/api/switch#change) event :
+The following example that demonstrates how to enable/disable cache mode in infinite scrolling of the grid based on a [Switch](https://ej2.syncfusion.com/documentation/switch/getting-started) control [change](https://ej2.syncfusion.com/documentation/api/switch#change) event :
 
 
 
