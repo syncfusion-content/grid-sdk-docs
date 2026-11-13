@@ -1,8 +1,8 @@
-﻿---
+---
 layout: post
 title: Sorting in Angular Pivot Table | Syncfusion
 description: Learn how the Angular Pivot Table sorts field members in row and column axes and sorts value fields in ascending or descending order.
-platform: ej2-angular
+platform: grid-sdk
 control: Pivot Table 
 documentation: ug
 domainurl: ##DomainURL##

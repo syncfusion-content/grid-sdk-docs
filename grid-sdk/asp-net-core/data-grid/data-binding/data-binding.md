@@ -4,7 +4,6 @@ title: Data Binding in ASP.NET Core Grid Control | Syncfusion
 description: Learn here all about Data Binding in Syncfusion ASP.NET Core Grid component of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Data Binding
-publishingplatform: grid-sdk
 documentation: ug
 ---
 
@@ -196,7 +195,7 @@ Here's how to bind a `DataTable` to the Grid:
 {% endhighlight %}
 {% endtabs %}
 
-N> `DataTable` will be supported from .Net Core 2.0. 
+N> `DataTable` will be supported from .NET Core 2.0. 
 
 ### DataTable with on-demand Grid actions
 

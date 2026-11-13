@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Editing in ##Platform_Name## Pivot Table | Syncfusion
-description: Learn how the ##Platform_Name## Pivot Table edits underlying values via `editSettings`, with add, update, delete, inline edit, and command column support.
-platform: ej2-javascript
+title: Editing in TypeScript Pivot Table | Syncfusion
+description: Learn how the TypeScript Pivot Table edits underlying values via `editSettings`, with add, update, delete, inline edit, and command column support.
+platform: grid-sdk
 control: Editing
-publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Editing in ##Platform_Name## Pivot Table
+# Editing in TypeScript Pivot Table
 
 > This feature is applicable only for the relational data source.
 

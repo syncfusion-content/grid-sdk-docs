@@ -16,20 +16,6 @@ To use Infinite scrolling, set `enableInfiniteScrolling` property as true and in
 
 > * In this feature, Tree Grid will not make a new data request when you visit the same page again.
 
-{% if page.publishingplatform == "typescript" %}
-
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/treegrid/infinite-scroll-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/treegrid/infinite-scroll-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/treegrid/infinite-scroll-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -41,7 +27,6 @@ To use Infinite scrolling, set `enableInfiniteScrolling` property as true and in
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/treegrid/infinite-scroll-cs1" %}
-{% endif %}
 
 ## InitialBlocks
 
@@ -49,20 +34,6 @@ You can define the initial loading pages count by using `infiniteScrollSettings.
 
 In the below demo, we have changed this property value to load five page records instead of three.
 
-{% if page.publishingplatform == "typescript" %}
-
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/treegrid/infinite-scroll-cs2/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/treegrid/infinite-scroll-cs2/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/treegrid/infinite-scroll-cs2" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -74,7 +45,6 @@ In the below demo, we have changed this property value to load five page records
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/treegrid/infinite-scroll-cs2" %}
-{% endif %}
 
 ## Cache Mode
 
@@ -82,20 +52,6 @@ Cache is used to store the loaded rows object in the Tree Grid instance which ca
 
 To enable the cache mode in Infinite scrolling, set `infiniteScrollSettings.enableCache` property as true.
 
-{% if page.publishingplatform == "typescript" %}
-
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/treegrid/infinite-scroll-cs3/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/treegrid/infinite-scroll-cs3/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/treegrid/infinite-scroll-cs3" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -107,7 +63,6 @@ To enable the cache mode in Infinite scrolling, set `infiniteScrollSettings.enab
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/treegrid/infinite-scroll-cs3" %}
-{% endif %}
 
 ## Limitations for Infinite Scrolling
 
@@ -116,7 +71,7 @@ To enable the cache mode in Infinite scrolling, set `infiniteScrollSettings.enab
 * Cell selection will not be persisted in cache mode.
 * Infinite scrolling is not compatible with batch editing, cell editing, detail template and hierarchy features.
 * The aggregated information and total group items are displayed based on the current view items. To get these information regardless of the view items, refer to the
-* Programmatic selection using the [`selectRows`](../api/treegrid#selectrows) and [`selectRow`](../api/treegrid#selectrow) method is not supported in infinite scrolling.
+* Programmatic selection using the [`selectRows`](https://ej2.syncfusion.com/javascript/documentation/api/treegrid#selectrows) and [`selectRow`](https://ej2.syncfusion.com/javascript/documentation/api/treegrid#selectrow) method is not supported in infinite scrolling.
 * Infinite scrolling does not support rendering records in a collapsed state. All records must be fully expanded at initial rendering for proper functionality.
 
 > You can refer to our [`JavaScript Tree Grid`](https://www.syncfusion.com/javascript-ui-controls/js-tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our JavaScript Tree Grid example [`JavaScript Tree Grid example`](https://ej2.syncfusion.com/demos/#/bootstrap5/tree-grid/treegrid-overview.html) to knows how to present and manipulate data.

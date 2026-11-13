@@ -1,17 +1,16 @@
 ---
 layout: post
-title: Row and Column in ##Platform_Name## Pivot Table | Syncfusion
-description: Learn how the ##Platform_Name## Pivot Table sets `height` and `width` in pixel, percentage, or auto formats, with a 400px minimum width for proper display.
-platform: ej2-javascript
+title: Row and Column in TypeScript Pivot Table | Syncfusion
+description: Learn how the TypeScript Pivot Table sets `height` and `width` in pixel, percentage, or auto formats, with a 400px minimum width for proper display.
+platform: grid-sdk
 control: Row and column
-publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
 <!-- markdownlint-disable MD012 -->
 
-# Row and Column in ##Platform_Name## Pivot Table
+# Row and Column in TypeScript Pivot Table
 
 ## Width and Height
 

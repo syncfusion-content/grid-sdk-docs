@@ -10,11 +10,10 @@ domainurl: https://help.syncfusion.com/grid-sdk
 
 # Searching in TypeScript TreeGrid
 
-You can search records in a TreeGrid, by using the [`search`](../api/treegrid#search) method with search key as a parameter. This also provides an option to integrate search text box in treegrid's toolbar by adding `search` item to the [`toolbar`](../api/treegrid#toolbar).
+You can search records in a TreeGrid, by using the [`search`](https://ej2.syncfusion.com/documentation/api/treegrid#search) method with search key as a parameter. This also provides an option to integrate search text box in treegrid's toolbar by adding `search` item to the [`toolbar`](https://ej2.syncfusion.com/documentation/api/treegrid#toolbar).
 
-To search records, inject the [`Filter`](../api/treegrid#fitermodule) module in the treegrid.
+To search records, inject the [`Filter`](https://ej2.syncfusion.com/documentation/api/treegrid#fitermodule) module in the treegrid.
 
-{% if page.publishingplatform == "typescript" %}
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -27,25 +26,11 @@ To search records, inject the [`Filter`](../api/treegrid#fitermodule) module in 
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/treegrid/searching-cs1" %}
 
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/treegrid/searching-cs1/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/treegrid/searching-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/treegrid/searching-cs1" %}
-{% endif %}
 
 ## Initial search
 
-To apply search at initial rendering, set the fields, operator, key, and ignoreCase in the [`searchSettings`](../api/treegrid#searchsettings).
+To apply search at initial rendering, set the fields, operator, key, and ignoreCase in the [`searchSettings`](https://ej2.syncfusion.com/documentation/api/treegrid#searchsettings).
 
-{% if page.publishingplatform == "typescript" %}
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -58,25 +43,12 @@ To apply search at initial rendering, set the fields, operator, key, and ignoreC
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/treegrid/searching-cs2" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/treegrid/searching-cs2/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/treegrid/searching-cs2/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/treegrid/searching-cs2" %}
-{% endif %}
-
-> By default, treegrid searches all the bound column values. To customize this behavior define the [`searchSettings.fields`](../api/treegrid/searchSettingsModel#fields) property.
+> By default, treegrid searches all the bound column values. To customize this behavior define the [`searchSettings.fields`](https://ej2.syncfusion.com/documentation/api/treegrid/searchSettingsModel#fields) property.
 
 ## Search operators
 
-The search operator can be defined in the [`searchSettings.operator`](../api/treegrid/searchSettingsModel#operator) property to configure specific searching.
+The search operator can be defined in the [`searchSettings.operator`](https://ej2.syncfusion.com/documentation/api/treegrid/searchSettingsModel#operator) property to configure specific searching.
 
 The following operators are supported in searching:
 
@@ -88,13 +60,12 @@ contains |Checks whether a value contains the specified value.
 equal |Checks whether a value is equal to the specified value.
 notEqual |Checks for values not equal to the specified value.
 
-> By default, the [`searchSettings.operator`](../api/treegrid/searchSettingsModel#operator) value is `contains`.
+> By default, the [`searchSettings.operator`](https://ej2.syncfusion.com/documentation/api/treegrid/searchSettingsModel#operator) value is `contains`.
 
 ## Search by external button
 
-To search treegrid records from an external button, invoke the [`search`](../api/treegrid#search) method.
+To search treegrid records from an external button, invoke the [`search`](https://ej2.syncfusion.com/documentation/api/treegrid#search) method.
 
-{% if page.publishingplatform == "typescript" %}
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -107,25 +78,11 @@ To search treegrid records from an external button, invoke the [`search`](../api
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/treegrid/search-method-cs1" %}
 
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/treegrid/search-method-cs1/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/treegrid/search-method-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/treegrid/search-method-cs1" %}
-{% endif %}
 
 ## Search specific columns
 
-By default, treegrid searches all visible columns. You can search specific columns by defining the specific column's field names in the [`searchSettings.fields`](../api/treegrid/searchSettingsModel#fields) property.
+By default, treegrid searches all visible columns. You can search specific columns by defining the specific column's field names in the [`searchSettings.fields`](https://ej2.syncfusion.com/documentation/api/treegrid/searchSettingsModel#fields) property.
 
-{% if page.publishingplatform == "typescript" %}
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -138,18 +95,5 @@ By default, treegrid searches all visible columns. You can search specific colum
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/treegrid/searching-cs3" %}
 
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/treegrid/searching-cs3/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/treegrid/searching-cs3/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/treegrid/searching-cs3" %}
-{% endif %}
 
 > You can refer to our [`JavaScript Tree Grid`](https://www.syncfusion.com/javascript-ui-controls/js-tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our JavaScript Tree Grid example [`JavaScript Tree Grid example`](https://ej2.syncfusion.com/demos/#/material/tree-grid/treegrid-overview.html) to knows how to present and manipulate data.

@@ -1,8 +1,8 @@
-﻿---
+---
 layout: post
 title: Tooltip in Angular Pivot Table | Syncfusion
 description: Learn how the Angular Pivot Table shows tooltips on value cells with row, column, and measure info via the showTooltip property.
-platform: ej2-angular
+platform: grid-sdk
 control: Pivot Table
 documentation: ug
 domainurl: ##DomainURL##

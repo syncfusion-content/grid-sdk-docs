@@ -5,7 +5,6 @@ description: Learn how to style cells in the ASP.NET MVC Pivot Table via the Que
 platform: grid-sdk
 control: Apply custom style to pivot cells 
 documentation: ug
-publishingplatform: ##Platform_Name## 
 ---
 
 # How to Apply Custom Styles to Pivot Cells in ASP.NET MVC Pivot Table

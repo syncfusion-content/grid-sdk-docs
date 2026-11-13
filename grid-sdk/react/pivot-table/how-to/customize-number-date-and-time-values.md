@@ -3,7 +3,7 @@ layout: post
 title: How to customize number and date values in Pivot Table | Syncfusion
 description: Step-by-step example showing how to customize number and date values in the React Pivot Table using formatSettings and culture.
 control: Pivot Table
-platform: ej2-react
+platform: grid-sdk
 documentation: ug
 domainurl: ##DomainURL##
 ---

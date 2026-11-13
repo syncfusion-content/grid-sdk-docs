@@ -13,7 +13,7 @@ domainurl: https://help.syncfusion.com/grid-sdk
 
 This section describes how to connect and retrieve data from a SQLite Server database using [Microsoft.Data.Sqlite](https://www.nuget.org/packages/Microsoft.Data.Sqlite/) and bind it to the Syncfusion TypeScript Grid.
 
-SQLite Server database can be bound to the Grid in different ways (i.e.) using [dataSource](../../api/grid#datasource) property, custom adaptor and remote data binding using various adaptors. In this documentation, two approaches will be examined to connect a SQLite Server database to a Grid. Both the approaches have capability to handle data and CRUD operations with built-in methods as well as can be customized as per your own.
+SQLite Server database can be bound to the Grid in different ways (i.e.) using [dataSource](https://ej2.syncfusion.com/documentation/api/grid#datasource) property, custom adaptor and remote data binding using various adaptors. In this documentation, two approaches will be examined to connect a SQLite Server database to a Grid. Both the approaches have capability to handle data and CRUD operations with built-in methods as well as can be customized as per your own.
 
 * **Using UrlAdaptor**
 
@@ -27,7 +27,6 @@ The **CustomAdaptor** serves as a mediator between the UI component and the data
 
 This section describes step by step process how to retrieve data from a SQLite Server using an API service and bind it to the Grid.
 
-{% if page.publishingplatform == "typescript" %}
 
 ### Creating an API service
 
@@ -171,151 +170,11 @@ namespace Grid_SQLite.Server.Controllers
 
 ![Hosted API URL](../images/Ms-Sql-data.png)
 
-{% elsif page.publishingplatform == "javascript" %}
-
-**Step 1:** To create a new ASP.NET Core Web API project named **Grid_SQLite_JS**, follow these steps:
-
-    * Open Visual Studio.
-    * Select "Create a new project".
-    * Choose **ASP.NET Core Web API** project template.
-    * Name the project **Grid_SQLite_JS**.
-    * Click "Create".
-
-**Step 2:** In `Program.cs`, call `UseDefaultFiles` and `UseStaticFiles`.
-
-```cs
-var app = builder.Build();
-app.UseDefaultFiles();
-app.UseStaticFiles();
-```
-
-Comment out the below line in `launchSettings.json`:
-
-```json
-"https": {
-  "commandName": "Project",
-  "dotnetRunMessages": true,
-  "launchBrowser": true,
-  // "launchUrl": "swagger",
-  "applicationUrl": "https://localhost:xxxx;http://localhost:xxxx",
-  "environmentVariables": {
-    "ASPNETCORE_ENVIRONMENT": "Development"
-  }
-}
-```
-This configuration enables the server to locate and serve the `index.html` file.
-
-**Step 3:** To connect a SQLite Server database using the SQLite driver in your application, you need to install the [Microsoft.Data.Sqlite](https://www.nuget.org/packages/Microsoft.Data.Sqlite/) NuGet package. To add **Microsoft.Data.Sqlite** in the app, open the NuGet package manager in Visual Studio (Tools → NuGet Package Manager → Manage NuGet Packages for Solution), search and install it.
-
-**Step 4:** Create an API controller (aka, GridController.cs) file under **Controllers** folder that helps to establish data communication with the Grid.
-
-**Step 5:** In an API controller (aka, GridController), connect to SQLite Server. In the **GetOrderData()** method **SqliteConnection** helps to connect the SQLite Server database. Next, the **SqliteCommand** is used to retrieve the desired collection from the database. Then populate the data collection from the **SqliteCommand** into a list using the **Read** method of **SqliteDataReader** as shown in the following code snippet.
-
-{% tabs %}
-{% highlight cs tabtitle="GridController.cs" %}
-
-using Microsoft.AspNetCore.Mvc;
-using System.ComponentModel.DataAnnotations;
-using System.Data;
-using Syncfusion.EJ2.Base;
-using Microsoft.Data.Sqlite;
-
-namespace Grid_SQLite.Server.Controllers
-{
-  [ApiController]
-  public class GridController : ControllerBase
-  {
-    string ConnectionString = @"<Enter a valid connection string>";
-
-    /// <summary>
-    /// Processes the DataManager request to perform searching, filtering, sorting, and paging operations.
-    /// </summary>
-    /// <param name="DataManagerRequest">Contains the details of the data operation requested.</param>
-    /// <returns>Returns a JSON object along with the total record count.</returns>
-    [HttpPost]
-    [Route("api/[controller]")]
-    public object Post([FromBody] DataManagerRequest DataManagerRequest)
-    {
-      // Retrieve data from the data source (e.g., database).
-      IQueryable<Orders> DataSource = GetOrderData().AsQueryable();
-
-      // Get the total count of records.
-      int totalRecordsCount = DataSource.Count();
-
-      // Return data based on the request.
-      return new { result = DataSource, count = totalRecordsCount };
-    }
-
-    /// <summary>
-    /// Retrieves the order data from the database.
-    /// </summary>
-    /// <returns>Returns a list of orders fetched from the database.</returns>
-    [HttpGet]
-    [Route("api/[controller]")]
-    public List<Orders> GetOrderData()
-    {
-      // SQL query to fetch all records from the orders table and sort them by OrderID.
-      string queryStr = "SELECT * FROM Orders ORDER BY OrderID;";
-
-      // Creates an empty list to store the retrieved orders from the database.
-      List<Orders> DataSource = new List<Orders>();
-
-      // Establishes a connection to the SQLite database using the provided connection string.
-      SqliteConnection Connection = new SqliteConnection(ConnectionString);
-
-      // Opens the database connection to enable SQL queries.
-      Connection.Open();
-
-      //Using SqliteCommand and query create connection with database.
-      SqliteCommand Command = new SqliteCommand(queryStr, Connection);
-
-      // Execute the SQLite command and retrieve data using SqliteDataReader.
-      using (SqliteDataReader reader = Command.ExecuteReader())
-      {
-        while (reader.Read())
-        {
-          Orders order = new Orders
-          {
-            OrderID = reader.GetInt32(reader.GetOrdinal("OrderID")),
-            CustomerID = reader.GetString(reader.GetOrdinal("CustomerID")),
-            EmployeeID = reader.GetInt32(reader.GetOrdinal("EmployeeID")),
-            ShipCity = reader.GetString(reader.GetOrdinal("ShipCity")),
-            Freight = reader.GetDecimal(reader.GetOrdinal("Freight"))
-          };
-          DataSource.Add(order);
-        }
-      }
-      return DataSource;
-    }
-
-    public class Orders
-    {
-      [Key]
-      public int? OrderID { get; set; }
-      public string? CustomerID { get; set; }
-      public int? EmployeeID { get; set; }
-      public decimal? Freight { get; set; }
-      public string? ShipCity { get; set; }
-    }
-  }
-}
-
-{% endhighlight %}
-{% endtabs %}
-
-**5.** Run the application and it will be hosted within the URL `https://localhost:xxxx`.
-
-**6.** Finally, the retrieved data from SQLite Server database which is in the form of list can be found in an API controller available in the URL link `https://localhost:xxxx/api/Grid`, as shown in the browser page below.
-
-![Hosted API URL](../images/Ms-Sql-data.png)
-
-{% endif %}
 
 ### Connecting Syncfusion TypeScript Grid to an API service
 
 To integrate Syncfusion TypeScript Grid into your TypeScript and ASP.NET Core project using Visual Studio, follow the below steps:
 
-{% if page.publishingplatform == "typescript" %}
 
 **Step 1:** Run the following command in the project root to create a `package.json` file:
 
@@ -418,7 +277,7 @@ npm install @syncfusion/ej2-data --save
 </html>
 ```
 
-**Step 9:**  Create `src/index.ts` . In this file, import `DataManager` and `UrlAdaptor` from `@syncfusion/ej2-data`. Create a [DataManager](../../data/getting-started) instance specifying the URL of your API endpoint(https:localhost:xxxx/api/Grid) using the `url` property and set the adaptor `UrlAdaptor`.
+**Step 9:**  Create `src/index.ts` . In this file, import `DataManager` and `UrlAdaptor` from `@syncfusion/ej2-data`. Create a [DataManager](https://ej2.syncfusion.com/documentation/data/getting-started) instance specifying the URL of your API endpoint(https:localhost:xxxx/api/Grid) using the `url` property and set the adaptor `UrlAdaptor`.
 
 **Step 10** The `DataManager` offers multiple adaptor options to connect with remote database based on an API service. Below is an example of the `UrlAdaptor` configuration where an API service are set up to return the resulting data in the `result` and `count` format.
 
@@ -564,167 +423,12 @@ npm i @types/node
 npm run build
 ```
 
-{% elsif page.publishingplatform == "javascript" %}
-
-**Step 1:** Create a folder named `wwwroot` in the project root directory. This folder will contain static files served by the web server.
-
-**Step 2:** Inside the **wwwroot** folder, create **js** to hold script file, respectively.
-
-**Step 3:** Create an `index.html` file under the `wwwroot` folder and add the necessary HTML structure along with CSS and JavaScript links to include Syncfusion Grid dependencies.
-
-```html
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <title>EJ2 Grid</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Javascript Grid Control">
-    <meta name="author" content="Syncfusion">
-    <link href="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/material3.css" rel="stylesheet" />
-
-    <script src="https://cdn.syncfusion.com/ej2/{{ site.ej2version }}/dist/ej2.min.js" type="text/javascript"></script>
-    <script src="https://cdn.syncfusion.com/ej2/syncfusion-helper.js" type="text/javascript"></script>
-</head>
-<body>
-    <div id="container">
-        <div id="Grid"></div>
-    </div>
-    <script  src="js/index.js" type="text/javascript"></script>
-</body>
-</html>
-```
-
-**Step 4:** Create a **index.js** file under the `wwwroot/js` folder . In this file, Create a [DataManager](../../data/getting-started) instance specifying the URL of your API endpoint(https:localhost:xxxx/api/Grid) using the `url` property and set the adaptor `UrlAdaptor`.
-
-**Step 5:** The `DataManager` offers multiple adaptor options to connect with remote database based on an API service. Below is an example of the `UrlAdaptor` configuration where an API service are set up to return the resulting data in the `result` and `count` format.
-
-**Step 6:** The `UrlAdaptor` acts as the base adaptor for interacting with remote data service. Most of the built-in adaptors are derived from the `UrlAdaptor`.
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-
-let data = new ej.data.DataManager({
-  url: 'https://localhost:xxxx/api/Grid', // Replace your hosted link.
-  adaptor: new ej.data.UrlAdaptor()
-});
-
-var grid = new ej.grids.Grid({
-    dataSource: data,
-    height:"348px",
-    columns: [
-        { field: 'OrderID', headerText: 'Order ID', textAlign: 'Right', width: 120 },
-        { field: 'CustomerID', width: 140, headerText: 'Customer ID' },
-        { field: 'EmployeeID', headerText: 'Employee ID', width: 120, textAlign: 'Right' },
-        { field: 'Freight', headerText: 'Freight', width: 90, format: 'C2', textAlign: 'Right' },
-        { field: 'ShipCity', headerText: 'ShipCity', width: 140 },
-    ]
-});
-grid.appendTo('#Grid');
-
-{% endhighlight %}
-
-{% highlight cs tabtitle="GridController.cs" %}
-
-using Microsoft.AspNetCore.Mvc;
-using System.ComponentModel.DataAnnotations;
-using System.Data;
-using Syncfusion.EJ2.Base;
-using Microsoft.Data.Sqlite;
-
-namespace Grid_SQLite.Server.Controllers
-{
-  [ApiController]
-  public class GridController : ControllerBase
-  {
-    string ConnectionString = @"<Enter a valid connection string>";
-
-    /// <summary>
-    /// Processes the DataManager request to perform searching, filtering, sorting, and paging operations.
-    /// </summary>
-    /// <param name="DataManagerRequest">Contains the details of the data operation requested.</param>
-    /// <returns>Returns a JSON object along with the total record count.</returns>
-    [HttpPost]
-    [Route("api/[controller]")]
-    public object Post([FromBody] DataManagerRequest DataManagerRequest)
-    {
-      // Retrieve data from the data source (e.g., database).
-      IQueryable<Orders> DataSource = GetOrderData().AsQueryable();
-
-      // Return data based on the request.
-      return new { result = DataSource, count = totalRecordsCount };
-    }
-
-    /// <summary>
-    /// Retrieves the order data from the database.
-    /// </summary>
-    /// <returns>Returns a list of orders fetched from the database.</returns>
-    [HttpGet]
-    [Route("api/[controller]")]
-    public List<Orders> GetOrderData()
-    {
-      // SQL query to fetch all records from the orders table and sort them by OrderID.
-      string queryStr = "SELECT * FROM Orders ORDER BY OrderID;";
-
-      // Creates an empty list to store the retrieved orders from the database.
-      List<Orders> DataSource = new List<Orders>();
-
-      // Establishes a connection to the SQLite database using the provided connection string.
-      SqliteConnection Connection = new SqliteConnection(ConnectionString);
-
-      // Opens the database connection to enable SQL queries.
-      Connection.Open();
-
-      //Using SqliteCommand and query create connection with database.
-      SqliteCommand Command = new SqliteCommand(queryStr, Connection);
-
-      // Execute the SQLite command and retrieve data using SqliteDataReader.
-      using (SqliteDataReader reader = Command.ExecuteReader())
-      {
-        while (reader.Read())
-        {
-          Orders order = new Orders
-          {
-            OrderID = reader.GetInt32(reader.GetOrdinal("OrderID")),
-            CustomerID = reader.GetString(reader.GetOrdinal("CustomerID")),
-            EmployeeID = reader.GetInt32(reader.GetOrdinal("EmployeeID")),
-            ShipCity = reader.GetString(reader.GetOrdinal("ShipCity")),
-            Freight = reader.GetDecimal(reader.GetOrdinal("Freight"))
-          };
-          DataSource.Add(order);
-        }
-      }
-      return DataSource;
-    }
-
-    public class Orders
-    {
-      [Key]
-      public int? OrderID { get; set; }
-      public string? CustomerID { get; set; }
-      public int? EmployeeID { get; set; }
-      public decimal? Freight { get; set; }
-      public string? ShipCity { get; set; }
-    }
-  }
-}
-
-{% endhighlight %}
-{% endtabs %}
-
-{% endif %}
 
 > Replace https://localhost:xxxx/api/Grid with the actual **URL** of your API endpoint that provides the data in a consumable format (e.g., JSON).
 
-{% if page.publishingplatform == "typescript" %}
 
 **Step 14:** Run the application in Visual Studio. It will be accessible via a URL like **https://localhost:xxxx**.
 
-{% elsif page.publishingplatform == "javascript" %}
-
-**Step 7:** Run the application in Visual Studio. It will be accessible via a URL like **https://localhost:xxxx**.
-
-{% endif %}
 
 > * The Syncfusion TypeScript Grid provides built-in support for handling various data operations such as searching, sorting, filtering, aggregate and paging on the server-side. These operations can be handled using methods such as `PerformSearching`, `PerformFiltering`, `PerformSorting`, `PerformTake` and `PerformSkip` available in the [Syncfusion.EJ2.AspNet.Core](https://www.nuget.org/packages/Syncfusion.EJ2.AspNet.Core) package. Let’s explore how to manage these data operations using the `UrlAdaptor`.
 > * In an API service project, add `Syncfusion.EJ2.AspNet.Core` by opening the NuGet package manager in Visual Studio (Tools → NuGet Package Manager → Manage NuGet Packages for Solution), search and install it.
@@ -768,7 +472,6 @@ public object Post([FromBody] DataManagerRequest DataManagerRequest)
 
 {% endhighlight %}
 
-{% if page.publishingplatform == "typescript" %}
 
 {% highlight ts tabtitle="index.ts" %}
 
@@ -799,33 +502,6 @@ grid.appendTo('#Grid');
 
 {% endhighlight %}
 
-{% elsif page.publishingplatform == "javascript" %}
-
-{% highlight js tabtitle="index.js" %}
-
-ej.grids.Grid.Inject(ej.grids.Toolbar);
-
-let data = new ej.data.DataManager({
-  url: 'https://localhost:xxxx/api/Grid', // Replace your hosted link.
-  adaptor: new ej.data.UrlAdaptor()
-});
-
-var grid = new ej.grids.Grid({
-    dataSource: data,
-    height:"348px",
-    toolbar: ['Search'],
-    columns: [
-        { field: 'OrderID', headerText: 'Order ID', textAlign: 'Right', width: 120 },
-        { field: 'CustomerID', width: 140, headerText: 'Customer ID'},
-        { field: 'EmployeeID', headerText: 'Employee ID', width: 120, textAlign: 'Right' },
-        { field: 'Freight', headerText: 'Freight', width: 90, format: 'C2', textAlign: 'Right'},
-        { field: 'ShipCity', headerText: 'ShipCity', width: 140 },
-    ]
-});
-grid.appendTo('#Grid');
-
-{% endhighlight %}
-{% endif %}
 
 {% endtabs %}
 
@@ -866,7 +542,6 @@ public object Post([FromBody] DataManagerRequest DataManagerRequest)
 
 {% endhighlight %}
 
-{% if page.publishingplatform == "typescript" %}
 
 {% highlight ts tabtitle="index.ts" %}
 
@@ -897,33 +572,6 @@ grid.appendTo('#Grid');
 
 {% endhighlight %}
 
-{% elsif page.publishingplatform == "javascript" %}
-
-{% highlight js tabtitle="index.js" %}
-
-ej.grids.Grid.Inject(ej.grids.Filter);
-
-let data = new ej.data.DataManager({
-  url: 'https://localhost:xxxx/api/Grid', // Replace your hosted link.
-  adaptor: new ej.data.UrlAdaptor()
-});
-
-var grid = new ej.grids.Grid({
-    dataSource: data,
-    height:"348px",
-    allowFiltering: true,
-    columns: [
-        { field: 'OrderID', headerText: 'Order ID', textAlign: 'Right', width: 120 },
-        { field: 'CustomerID', width: 140, headerText: 'Customer ID'},
-        { field: 'EmployeeID', headerText: 'Employee ID', width: 120, textAlign: 'Right' },
-        { field: 'Freight', headerText: 'Freight', width: 90, format: 'C2', textAlign: 'Right'},
-        { field: 'ShipCity', headerText: 'ShipCity', width: 140 },
-    ]
-});
-grid.appendTo('#Grid');
-
-{% endhighlight %}
-{% endif %}
 
 {% endtabs %}
 
@@ -966,7 +614,6 @@ public object Post([FromBody] DataManagerRequest DataManagerRequest)
 
 {% endhighlight %}
 
-{% if page.publishingplatform == "typescript" %}
 
 {% highlight ts tabtitle="index.ts" %}
 
@@ -997,32 +644,6 @@ grid.appendTo('#Grid');
 
 {% endhighlight %}
 
-{% elsif page.publishingplatform == "javascript" %}
-
-{% highlight js tabtitle="index.js" %}
-
-ej.grids.Grid.Inject(ej.grids.Sort);
-
-let data = new ej.data.DataManager({
-  url: 'https://localhost:xxxx/api/Grid', // Replace your hosted link.
-  adaptor: new ej.data.UrlAdaptor()
-});
-
-var grid = new ej.grids.Grid({
-    dataSource: data,
-    allowSorting: true,
-    columns: [
-        { field: 'OrderID', headerText: 'Order ID', textAlign: 'Right', width: 120 },
-        { field: 'CustomerID', width: 140, headerText: 'Customer ID' },
-        { field: 'EmployeeID', headerText: 'Employee ID', width: 120, textAlign: 'Right' },
-        { field: 'Freight', headerText: 'Freight', width: 90, format: 'C2', textAlign: 'Right'},
-        { field: 'ShipCity', headerText: 'ShipCity', width: 140 },
-    ]
-});
-grid.appendTo('#Grid');
-
-{% endhighlight %}
-{% endif %}
 
 {% endtabs %}
 
@@ -1069,7 +690,6 @@ public object Post([FromBody] DataManagerRequest DataManagerRequest)
 
 {% endhighlight %}
 
-{% if page.publishingplatform == "typescript" %}
 {% highlight ts tabtitle="index.ts" %}
 
 import { Grid, Page } from '@syncfusion/ej2-grids';
@@ -1099,32 +719,6 @@ grid.appendTo('#Grid');
 
 {% endhighlight %}
 
-{% elsif page.publishingplatform == "javascript" %}
-
-{% highlight js tabtitle="index.js" %}
-
-ej.grids.Grid.Inject(ej.grids.Page);
-
-let data = new ej.data.DataManager({
-  url: 'https://localhost:xxxx/api/Grid', // Replace your hosted link.
-  adaptor: new ej.data.UrlAdaptor()
-});
-
-var grid = new ej.grids.Grid({
-    dataSource: data,
-    allowPaging: true,
-    columns: [
-        { field: 'OrderID', headerText: 'Order ID', textAlign: 'Right', width: 120 },
-        { field: 'CustomerID', width: 140, headerText: 'Customer ID' },
-        { field: 'EmployeeID', headerText: 'Employee ID', width: 120, textAlign: 'Right' },
-        { field: 'Freight', headerText: 'Freight', width: 90, format: 'C2', textAlign: 'Right'},
-        { field: 'ShipCity', headerText: 'ShipCity', width: 140 },
-    ]
-});
-grid.appendTo('#Grid');
-
-{% endhighlight %}
-{% endif %}
 
 {% endtabs %}
 
@@ -1141,10 +735,9 @@ CRUD operations within the Grid can be mapped to server-side controller actions 
 3. **updateUrl**: Specifies the URL for updating existing data.
 4. **batchUrl**: Specifies the URL for batch editing.
 
-To enable editing in Grid, refer to the editing [documentation](../../grid/editing/edit). In the below example, the inline edit [mode](../../api/grid/editSettings#mode) is enabled and [toolbar](../../api/grid#toolbar) property is configured to display toolbar items for editing purposes.
+To enable editing in Grid, refer to the editing [documentation](../../grid/editing/edit). In the below example, the inline edit [mode](https://ej2.syncfusion.com/documentation/api/grid/editSettings#mode) is enabled and [toolbar](https://ej2.syncfusion.com/documentation/api/grid#toolbar) property is configured to display toolbar items for editing purposes.
 
 {% tabs %}
-{% if page.publishingplatform == "typescript" %}
 {% highlight ts tabtitle="index.ts" %}
 
 import { Grid, Edit, Toolbar } from '@syncfusion/ej2-grids';
@@ -1179,43 +772,11 @@ grid.appendTo('#Grid');
 
 {% endhighlight %}
 
-{% elsif page.publishingplatform == "javascript" %}
-
-{% highlight js tabtitle="index.js" %}
-
-ej.grids.Grid.Inject(ej.grids.Edit, ej.grids.Toolbar);
-
-let data = new ej.data.DataManager({
-  url: 'https://localhost:xxxx/api/Grid', // Replace your hosted link.
-  insertUrl: 'https://localhost:xxxx/api/Grid/Insert',
-  updateUrl: 'https://localhost:xxxx/api/Grid/Update',
-  removeUrl: 'https://localhost:xxxx/api/Grid/Remove',
-  // Enable batch URL when batch editing is enabled.
-  //batchUrl: 'https://localhost:xxxx/api/Grid/BatchUpdate',
-  adaptor: new ej.data.UrlAdaptor()
-});
-
-var grid = new ej.grids.Grid({
-    dataSource: data,
-    toolbar: ['Add', 'Edit', 'Delete', 'Update', 'Cancel', 'Search'],
-    editSettings: { allowEditing: true, allowAdding: true, allowDeleting: true, mode: 'Normal' },
-    columns: [
-        { field: 'OrderID', headerText: 'Order ID', textAlign: 'Right', width: 120, isIdentity: true, isPrimaryKey: true },
-        { field: 'CustomerID', width: 140, headerText: 'Customer ID' },
-        { field: 'EmployeeID', headerText: 'Employee ID', width: 120, textAlign: 'Right' },
-        { field: 'Freight', headerText: 'Freight', width: 90, format: 'C2', textAlign: 'Right' },
-        { field: 'ShipCity', headerText: 'ShipCity', width: 140 },
-    ]
-});
-grid.appendTo('#Grid');
-
-{% endhighlight %}
-{% endif %}
 
 {% endtabs %}
 
-> * Normal/Inline editing is the default edit [mode](../../api/grid/editSettings#mode) for the Grid. To enable CRUD operations, ensure that the [isPrimaryKey](../../api/grid/column#isprimarykey) property is set to **true** for a specific Grid column, ensuring that its value is unique.
-> * If database has an auto generated column, ensure to define [isIdentity](../../api/grid/column#isidentity) property of Grid column to disable them during adding or editing operations.
+> * Normal/Inline editing is the default edit [mode](https://ej2.syncfusion.com/documentation/api/grid/editSettings#mode) for the Grid. To enable CRUD operations, ensure that the [isPrimaryKey](https://ej2.syncfusion.com/documentation/api/grid/column#isprimarykey) property is set to **true** for a specific Grid column, ensuring that its value is unique.
+> * If database has an auto generated column, ensure to define [isIdentity](https://ej2.syncfusion.com/documentation/api/grid/column#isidentity) property of Grid column to disable them during adding or editing operations.
 
 **Insert Operation:**
 
@@ -1375,7 +936,7 @@ public class CRUDModel<T> where T : class
 
 **Batch Operation:**
 
-To perform batch operation, define the edit [mode](h../../api/grid/editSettings/#mode) as **Batch** and specify the `batchUrl` property in the `DataManager`. Use the **Add** toolbar button to insert new row in batch editing mode. To edit a cell, double-click the desired cell and update the value as required. To delete a record, simply select the record and press the **Delete** toolbar button. Now, all CRUD operations will be executed in batch editing mode. Clicking the **Update** toolbar button will update the newly added, edited, or deleted records from the **Orders** table using a single API **POST** request.
+To perform batch operation, define the edit [mode](https://ej2.syncfusion.com/documentation/api/grid/editSettings#mode) as **Batch** and specify the `batchUrl` property in the `DataManager`. Use the **Add** toolbar button to insert new row in batch editing mode. To edit a cell, double-click the desired cell and update the value as required. To delete a record, simply select the record and press the **Delete** toolbar button. Now, all CRUD operations will be executed in batch editing mode. Clicking the **Update** toolbar button will update the newly added, edited, or deleted records from the **Orders** table using a single API **POST** request.
 
 {% tabs %}
 {% highlight cs tabtitle="GridController.cs" %}
@@ -1486,15 +1047,9 @@ When you run the application, the resultant Grid will look like this
 
 ![Grid bound with SQLite Server data](../images/connecting-micro-curd.gif)
 
-{% if page.publishingplatform == "typescript" %}
 
 > Please find the sample in this [GitHub location](https://github.com/SyncfusionExamples/connecting-databases-typescript-grid/tree/master/Binding%20SQLite%20using%20UrlAdaptor).
 
-{% elsif page.publishingplatform == "javascript" %}
-
-> Please find the sample in this [GitHub location](https://github.com/SyncfusionExamples/connecting-databases-javascript-grid/tree/master/Binding%20SQLite%20using%20UrlAdaptor).
-
-{% endif %}
 
 ## Binding data from SQLite Server using CustomAdaptor
 
@@ -1517,7 +1072,6 @@ This section describes step by step process how to retrieve data from a SQLite S
   * Finally, return the response as a `result` and `count` pair object in the `processResponse` method to bind the data to the Grid.
 
 {% tabs %}
-{% if page.publishingplatform == "typescript" %}
 {% highlight ts tabtitle="index.ts" %}
 
 import { Grid } from '@syncfusion/ej2-grids';
@@ -1559,41 +1113,6 @@ export class CustomAdaptor extends UrlAdaptor
 
 {% endhighlight %}
 
-{% elsif page.publishingplatform == "javascript" %}
-
-{% highlight js tabtitle="index.js" %}
-
-let data = new ej.data.DataManager({
-  url: 'https://localhost:xxxx/api/Grid', // Replace your hosted link.
-  adaptor: new ej.data.UrlAdaptor()
-});
-
-var grid = new ej.grids.Grid({
-    dataSource: data,
-    columns: [
-        { field: 'OrderID', headerText: 'Order ID', textAlign: 'Right', width: 120 },
-        { field: 'CustomerID', width: 140, headerText: 'Customer ID' },
-        { field: 'EmployeeID', headerText: 'Employee ID', width: 120, textAlign: 'Right' },
-        { field: 'Freight', headerText: 'Freight', width: 90, format: 'C2', textAlign: 'Right' },
-        { field: 'ShipCity', headerText: 'ShipCity', width: 140 },
-    ]
-});
-grid.appendTo('#Grid');
-
-{% endhighlight %}
-
-{% highlight js tabtitle="CustomAdaptor.js" %}
-
-export class CustomAdaptor extends ej.data.UrlAdaptor {
-    processResponse() {
-        // Calling base class processResponse function.
-        const original = super.processResponse.apply(this, arguments);
-        return original;
-    }
-}  
-
-{% endhighlight %}
-{% endif %}
 
 {% highlight cs tabtitle="GridController.cs" %}
 
@@ -1728,7 +1247,6 @@ public object Post([FromBody] DataManagerRequest DataManagerRequest)
 
 {% endhighlight %}
 
-{% if page.publishingplatform == "typescript" %}
 {% highlight ts tabtitle="index.ts" %}
 
 import { Grid, Toolbar } from '@syncfusion/ej2-grids';
@@ -1774,47 +1292,6 @@ export class CustomAdaptor extends UrlAdaptor
 
 {% endhighlight %}
 
-{% elsif page.publishingplatform == "javascript" %}
-
-{% highlight js tabtitle="index.js" %}
-
-import { CustomAdaptor } from './CustomAdaptor.js';
-
-ej.grids.Grid.Inject(ej.grids.Toolbar);
-
-let data = new ej.data.DataManager({
-  url: 'https://localhost:xxxx/api/Grid', // Replace your hosted link.
-  adaptor: new ej.data.CustomAdaptor()
-});
-
-var grid = new ej.grids.Grid({
-    dataSource: data,
-    height:"348px",
-    toolbar: ['Search'],
-    columns: [
-        { field: 'OrderID', headerText: 'Order ID', textAlign: 'Right', width: 120 },
-        { field: 'CustomerID', width: 140, headerText: 'Customer ID'},
-        { field: 'EmployeeID', headerText: 'Employee ID', width: 120, textAlign: 'Right' },
-        { field: 'Freight', headerText: 'Freight', width: 90, format: 'C2', textAlign: 'Right'},
-        { field: 'ShipCity', headerText: 'ShipCity', width: 140 },
-    ]
-});
-grid.appendTo('#Grid');
-
-{% endhighlight %}
-
-{% highlight js tabtitle="CustomAdaptor.js" %}
-
-export class CustomAdaptor extends ej.data.UrlAdaptor {
-    processResponse() {
-        // Calling base class processResponse function.
-        const original = super.processResponse.apply(this, arguments);
-        return original;
-    }
-}  
-
-{% endhighlight %}
-{% endif %}
 
 {% endtabs %}
 
@@ -1857,7 +1334,6 @@ public object Post([FromBody] DataManagerRequest DataManagerRequest)
 
 {% endhighlight %}
 
-{% if page.publishingplatform == "typescript" %}
 {% highlight ts tabtitle="index.ts" %}
 
 import { Grid, Filter} from '@syncfusion/ej2-grids';
@@ -1903,46 +1379,6 @@ export class CustomAdaptor extends UrlAdaptor
 
 {% endhighlight %}
 
-{% elsif page.publishingplatform == "javascript" %}
-
-{% highlight js tabtitle="index.js" %}
-
-import { CustomAdaptor } from './CustomAdaptor.js';
-
-ej.grids.Grid.Inject(ej.grids.Filter);
-
-let data = new ej.data.DataManager({
-  url: 'https://localhost:xxxx/api/Grid', // Replace your hosted link.
-  adaptor: new CustomAdaptor()
-});
-
-var grid = new ej.grids.Grid({
-    dataSource: data,
-    height:"348px",
-    allowFiltering: true,
-    columns: [
-        { field: 'OrderID', headerText: 'Order ID', textAlign: 'Right', width: 120 },
-        { field: 'CustomerID', width: 140, headerText: 'Customer ID'},
-        { field: 'EmployeeID', headerText: 'Employee ID', width: 120, textAlign: 'Right' },
-        { field: 'Freight', headerText: 'Freight', width: 90, format: 'C2', textAlign: 'Right'},
-        { field: 'ShipCity', headerText: 'ShipCity', width: 140 },
-    ]
-});
-grid.appendTo('#Grid');
-
-{% endhighlight %}
-
-{% highlight js tabtitle="CustomAdaptor.js" %}
-
-export class CustomAdaptor extends ej.data.UrlAdaptor {
-    processResponse() {
-        // Calling base class processResponse function.
-        const original = super.processResponse.apply(this, arguments);
-        return original;
-    }
-}  
-{% endhighlight %}
-{% endif %}
 
 {% endtabs %}
 
@@ -1986,7 +1422,6 @@ public object Post([FromBody] DataManagerRequest DataManagerRequest)
 
 {% endhighlight %}
 
-{% if page.publishingplatform == "typescript" %}
 {% highlight ts tabtitle="index.ts" %}
 
 import { Grid, Sort} from '@syncfusion/ej2-grids';
@@ -2032,46 +1467,6 @@ export class CustomAdaptor extends UrlAdaptor
 
 {% endhighlight %}
 
-{% elsif page.publishingplatform == "javascript" %}
-
-{% highlight js tabtitle="index.js" %}
-
-import { CustomAdaptor } from './CustomAdaptor.js';
-
-ej.grids.Grid.Inject(ej.grids.Sort);
-
-let data = new ej.data.DataManager({
-  url: 'https://localhost:xxxx/api/Grid', // Replace your hosted link.
-  adaptor: new CustomAdaptor()
-});
-
-var grid = new ej.grids.Grid({
-    dataSource: data,
-    allowSorting: true,
-    columns: [
-        { field: 'OrderID', headerText: 'Order ID', textAlign: 'Right', width: 120 },
-        { field: 'CustomerID', width: 140, headerText: 'Customer ID' },
-        { field: 'EmployeeID', headerText: 'Employee ID', width: 120, textAlign: 'Right' },
-        { field: 'Freight', headerText: 'Freight', width: 90, format: 'C2', textAlign: 'Right'},
-        { field: 'ShipCity', headerText: 'ShipCity', width: 140 },
-    ]
-});
-grid.appendTo('#Grid');
-
-{% endhighlight %}
-
-{% highlight js tabtitle="CustomAdaptor.js" %}
-
-export class CustomAdaptor extends ej.data.UrlAdaptor {
-    processResponse() {
-        // Calling base class processResponse function.
-        const original = super.processResponse.apply(this, arguments);
-        return original;
-    }
-}  
-
-{% endhighlight %}
-{% endif %}
 
 {% endtabs %}
 
@@ -2120,7 +1515,6 @@ public object Post([FromBody] DataManagerRequest DataManagerRequest)
 
 {% endhighlight %}
 
-{% if page.publishingplatform == "typescript" %}
 {% highlight ts tabtitle="index.ts" %}
 
 import { Grid, Page } from '@syncfusion/ej2-grids';
@@ -2166,57 +1560,16 @@ export class CustomAdaptor extends UrlAdaptor
 
 {% endhighlight %}
 
-{% elsif page.publishingplatform == "javascript" %}
-
-{% highlight js tabtitle="index.js" %}
-
-import { CustomAdaptor } from './CustomAdaptor.js';
-
-ej.grids.Grid.Inject(ej.grids.Page);
-
-let data = new ej.data.DataManager({
-  url: 'https://localhost:xxxx/api/Grid', // Replace your hosted link.
-  adaptor: new CustomAdaptor()
-});
-
-var grid = new ej.grids.Grid({
-    dataSource: data,
-    allowPaging: true,
-    columns: [
-        { field: 'OrderID', headerText: 'Order ID', textAlign: 'Right', width: 120 },
-        { field: 'CustomerID', width: 140, headerText: 'Customer ID' },
-        { field: 'EmployeeID', headerText: 'Employee ID', width: 120, textAlign: 'Right' },
-        { field: 'Freight', headerText: 'Freight', width: 90, format: 'C2', textAlign: 'Right'},
-        { field: 'ShipCity', headerText: 'ShipCity', width: 140 },
-    ]
-});
-grid.appendTo('#Grid');
-
-{% endhighlight %}
-
-{% highlight js tabtitle="CustomAdaptor.js" %}
-
-export class CustomAdaptor extends ej.data.UrlAdaptor {
-    processResponse() {
-        // Calling base class processResponse function.
-        const original = super.processResponse.apply(this, arguments);
-        return original;
-    }
-}  
-
-{% endhighlight %}
-{% endif %}
 
 {% endtabs %}
 
 ### Handling CRUD operations
 
-To enable editing in the Syncfusion TypeScript Grid, utilize the [editSettings](../../api/grid/editSettings) property. The Grid offers multiple edit modes including the **Inline/Normal**, **Dialog** and **Batch** editing. For more details, refer to the Grid [editing](../../grid/editing/edit) documentation.
+To enable editing in the Syncfusion TypeScript Grid, utilize the [editSettings](https://ej2.syncfusion.com/documentation/api/grid/editSettings) property. The Grid offers multiple edit modes including the **Inline/Normal**, **Dialog** and **Batch** editing. For more details, refer to the Grid [editing](../../grid/editing/edit) documentation.
 
-In this scenario, the inline edit [mode](../../api/grid/editSettings#mode) and [toolbar](../../api/grid#toolbar) property configured to display toolbar items for editing purpose.
+In this scenario, the inline edit [mode](https://ej2.syncfusion.com/documentation/api/grid/editSettings#mode) and [toolbar](https://ej2.syncfusion.com/documentation/api/grid#toolbar) property configured to display toolbar items for editing purpose.
 
 {% tabs %}
-{% if page.publishingplatform == "typescript" %}
 {% highlight ts tabtitle="index.ts" %}
 
 import { Grid, Edit, Toolbar} from '@syncfusion/ej2-grids';
@@ -2267,57 +1620,11 @@ export class CustomAdaptor extends UrlAdaptor
 
 {% endhighlight %}
 
-{% elsif page.publishingplatform == "javascript" %}
-
-{% highlight js tabtitle="index.js" %}
-
-import { CustomAdaptor } from './CustomAdaptor.js';
-
-ej.grids.Grid.Inject(ej.grids.Edit, ej.grids.Toolbar);
-
-let data = new ej.data.DataManager({ 
-  url: 'https://localhost:xxxx/api/Grid', // Replace your hosted link.
-  insertUrl: 'https://localhost:xxxx/api/Grid/Insert',
-  updateUrl: 'https://localhost:xxxx/api/Grid/Update',
-  removeUrl: 'https://localhost:xxxx/api/Grid/Remove',
-  // Enable batch URL when batch editing is enabled.
-  //batchUrl: 'https://localhost:xxxx/api/Grid/BatchUpdate',
-  adaptor: new CustomAdaptor()
-});
-
-var grid = new ej.grids.Grid({
-    dataSource: data,
-    toolbar: ['Add', 'Edit', 'Delete', 'Update', 'Cancel', 'Search'],
-    editSettings: { allowEditing: true, allowAdding: true, allowDeleting: true, mode: 'Normal' },
-    columns: [
-        { field: 'OrderID', headerText: 'Order ID', textAlign: 'Right', width: 120, isIdentity: true, isPrimaryKey: true },
-        { field: 'CustomerID', width: 140, headerText: 'Customer ID' },
-        { field: 'EmployeeID', headerText: 'Employee ID', width: 120, textAlign: 'Right' },
-        { field: 'Freight', headerText: 'Freight', width: 90, format: 'C2', textAlign: 'Right' },
-        { field: 'ShipCity', headerText: 'ShipCity', width: 140 },
-    ]
-});
-grid.appendTo('#Grid');
-
-{% endhighlight %}
-
-{% highlight js tabtitle="CustomAdaptor.js" %}
-
-export class CustomAdaptor extends ej.data.UrlAdaptor {
-    processResponse() {
-        // Calling base class processResponse function.
-        const original = super.processResponse.apply(this, arguments);
-        return original;
-    }
-}    
-
-{% endhighlight %}
-{% endif %}
 
 {% endtabs %}
 
-> * Normal/Inline editing is the default edit `mode` for the Grid. To enable CRUD operations, ensure that the [isPrimaryKey](../../api/grid/column#isprimarykey) property is set to **true** for a specific Grid column, ensuring that its value is unique.
-> * If database has an auto generated column, ensure to define [isIdentity](../../api/grid/column#isidentity) property of Grid column to disable them during adding or editing operations.
+> * Normal/Inline editing is the default edit `mode` for the Grid. To enable CRUD operations, ensure that the [isPrimaryKey](https://ej2.syncfusion.com/documentation/api/grid/column#isprimarykey) property is set to **true** for a specific Grid column, ensuring that its value is unique.
+> * If database has an auto generated column, ensure to define [isIdentity](https://ej2.syncfusion.com/documentation/api/grid/column#isidentity) property of Grid column to disable them during adding or editing operations.
 
 The CRUD operations can be performed and customized on our own by overriding the following CRUD methods of the `UrlAdaptor` 
 
@@ -2333,7 +1640,6 @@ Let’s see how to perform CRUD operation using SQLite Server data with Grid.
 To execute the insert operation, you will need to override the `insert` method of the `CustomAdaptor`. Then, integrate the following code snippet into the `CustomAdaptor` class. The below code snippet demonstrated how to handle the insertion of new records within the `insert` method of `CustomAdaptor`. Modify the logic within this method according to the requirements of your application.
 
 {% tabs %}
-{% if page.publishingplatform == "typescript" %}
 {% highlight ts tabtitle="CustomAdaptor.ts" %}
 
 import { UrlAdaptor } from '@syncfusion/ej2-data';
@@ -2362,31 +1668,6 @@ export class CustomAdaptor extends UrlAdaptor
 
 {% endhighlight %}
 
-{% elsif page.publishingplatform == "javascript" %}
-
-{% highlight js tabtitle="CustomAdaptor.js" %}
-
-export class CustomAdaptor extends ej.data.UrlAdaptor {
-    processResponse() {
-        // Calling base class processResponse function.
-        const original = super.processResponse.apply(this, arguments);
-        return original;
-    }
-    insert(dm, data) {
-        return {
-            url: dm.dataSource.insertUrl || dm.dataSource.url,
-            data: JSON.stringify({
-                __RequestVerificationToken: "Syncfusion",
-                value: data,
-                action: 'insert'
-            }),
-            type: 'POST'
-        };
-    }
-}
-
-{% endhighlight %}
-{% endif %}
 
 {% highlight cs tabtitle="GridController.cs" %}
 
@@ -2440,7 +1721,6 @@ public class CRUDModel<T> where T : class
 To execute the update operation, override the `update` method of the `CustomAdaptor`. Then, integrate the following code snippet into the `CustomAdaptor` class. The below code snippet demonstrated how to handle the updating of existing records within the `update` method of the `CustomAdaptor`. Modify the logic within this method according to the requirements of your application.
 
 {% tabs %}
-{% if page.publishingplatform == "typescript" %}
 {% highlight ts tabtitle="CustomAdaptor.ts" %}
 
 import { UrlAdaptor } from '@syncfusion/ej2-data';
@@ -2467,31 +1747,6 @@ export class CustomAdaptor extends UrlAdaptor {
 
 {% endhighlight %}
 
-{% elsif page.publishingplatform == "javascript" %}
-
-{% highlight js tabtitle="CustomAdaptor.js" %}
-
-export class CustomAdaptor extends ej.data.UrlAdaptor {
-    processResponse() {
-        // Calling base class processResponse function.
-        const original = super.processResponse.apply(this, arguments);
-        return original;
-    }
-    update(dm, keyField, value) {
-        return {
-            url: dm.dataSource.updateUrl || dm.dataSource.url,
-            data: JSON.stringify({
-                __RequestVerificationToken: "Syncfusion",
-                value: value,
-                action: 'update'
-            }),
-            type: 'POST'
-        };
-    }
-}    
-
-{% endhighlight %}
-{% endif %}
 
 {% highlight cs tabtitle="GridController.cs" %}
 
@@ -2545,7 +1800,6 @@ public class CRUDModel<T> where T : class
 To perform the delete operation, you need to override the `remove` method of the `CustomAdaptor`. Below is the code snippet that you can add to `CustomAdaptor` class. The below code snippet demonstrated how to handle the deletion of existing records within the `remove` method of `CustomAdaptor`. Modify the logic within this method according to the requirements of your application.
 
 {% tabs %}
-{% if page.publishingplatform == "typescript" %}
 {% highlight ts tabtitle="CustomAdaptor.ts" %}
 
 import { UrlAdaptor } from '@syncfusion/ej2-data';
@@ -2573,31 +1827,6 @@ export class CustomAdaptor extends UrlAdaptor {
 }
 {% endhighlight %}
 
-{% elsif page.publishingplatform == "javascript" %}
-
-{% highlight js tabtitle="CustomAdaptor.js" %}
-
-export class CustomAdaptor extends ej.data.UrlAdaptor {
-    processResponse() {
-        // Calling base class processResponse function.
-        const original = super.processResponse.apply(this, arguments);
-        return original;
-    }
-    remove(dm, keyField, value) {
-        return {
-            url: dm.dataSource.removeUrl || dm.dataSource.url,
-            data: JSON.stringify({
-                __RequestVerificationToken: "Syncfusion",
-                key: value,
-                keyColumn: keyField,
-                action: 'remove'
-            }),
-            type: 'POST'
-        };
-    }
-}
-{% endhighlight %}
-{% endif %}
 
 {% highlight cs tabtitle="GridController.cs" %}
 
@@ -2651,7 +1880,6 @@ public class CRUDModel<T> where T : class
 To perform the batch operation, override the **batchRequest** method of the `CustomAdaptor` and add the following code in the `CustomAdaptor`. The below code snippet demonstrated how to handle the batch update request within the **batchRequest** method of `CustomAdaptor`. Modify the logic within this method according to the requirements of your application.
 
 {% tabs %}
-{% if page.publishingplatform == "typescript" %}
 {% highlight ts tabtitle="CustomAdaptor.ts" %}
 
 import { UrlAdaptor } from '@syncfusion/ej2-data';
@@ -2681,35 +1909,6 @@ export class CustomAdaptor extends UrlAdaptor {
 
 {% endhighlight %}
 
-{% elsif page.publishingplatform == "javascript" %}
-
-{% highlight js tabtitle="CustomAdaptor.js" %}
-
-export class CustomAdaptor extends ej.data.UrlAdaptor {
-    processResponse() {
-        // Calling base class processResponse function.
-        const original = super.processResponse.apply(this, arguments);
-        return original;
-    }  
-
-    batchRequest(dm, changes, e, query, original) {
-        return {
-            url: dm.dataSource.batchUrl || dm.dataSource.url,
-            data: JSON.stringify({
-                __RequestVerificationToken: "Syncfusion",
-                added: changes.addedRecords,
-                changed: changes.changedRecords,
-                deleted: changes.deletedRecords,
-                key: e.key,
-                action: 'batch'
-            }),
-            type: 'POST'
-        };
-    }
-}
-
-{% endhighlight %}
-{% endif %}
 
 {% highlight cs tabtitle="GridController.cs" %}
 
@@ -2817,12 +2016,6 @@ public class CRUDModel<T> where T : class
 
 ![Grid bound with SQLite Server data](../images/connecting-micro-curd.gif)
 
-{% if page.publishingplatform == "typescript" %}
 
 > Please find the sample in this [GitHub location](https://github.com/SyncfusionExamples/connecting-databases-typescript-grid/tree/master/Binding%20SQLite%20using%20CustomAdaptor).
 
-{% elsif page.publishingplatform == "javascript" %}
-
-> Please find the sample in this [GitHub location](https://github.com/SyncfusionExamples/connecting-databases-javascript-grid/tree/master/Binding%20SQLite%20using%20CustomAdaptor).
-
-{% endif %}

@@ -3,7 +3,7 @@ layout: post
 title: PDF export in React Pivot Table | Syncfusion
 description: Learn how the React Pivot Table exports pivot data to PDF using the PdfExport module, with options to customize page size, orientation, and styling.
 control: Pivot Table
-platform: ej2-react
+platform: grid-sdk
 documentation: ug
 domainurl: ##DomainURL##
 ---

@@ -4,7 +4,6 @@ title: EJ1 API Migration in ASP.NET MVC Pivot Table | Syncfusion
 description: Learn how to migrate Pivot Grid API usage from Essential JS 1 to the ASP.NET MVC Pivot Table by mapping data source, rows, columns, and values.
 platform: grid-sdk
 control: Ej1 Api Migration
-publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
@@ -141,7 +140,7 @@ This article describes the API migration process of Pivot Grid component from Es
 | **Behavior** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 1** | **API in Essential<sup style="font-size:70%">&reg;</sup> JS 2** |
 | --- | --- | --- |
 |Enable/disable sorting|Not Applicable|**property:** enableSorting<br/><br/>`@Html.EJS().PivotView("PivotView").EnableSorting(true).Render()`|
-|Sort settings|**property:** sortOrder<br/><br/>`@Html.EJ().Pivot().PivotGrid("PivotGrid").DataSource(dataSource => dataSource.Rows(rows => { rows.FieldName("Country").FieldCaption("Country").SortOrder(SortOrder.Descending).Add(); }))`|**property:** sortSettings<br/><br/>`@Html.EJS().PivotView("PivotView").DataSourceSettings(dataSource => dataSource.SortSettings(sortsettings =>{ sortsettings.Name("company").Order("Descending").Add();})).Render()`|
+|Sort settings|**property:** sortOrder<br/><br/>`@Html.EJ().Pivot().PivotGrid("PivotGrid").DataSource(dataSource => dataSource.Rows(rows => { rows.FieldName("Country").FieldCaption("Country").SortOrder(SortOrder.Descending).Add(); }))`|**property:** sortSettings<br/><br/>`@Html.EJS().PivotView("PivotView").DataSourceSettings(dataSource => dataSource.SortSettings(sortSettings =>{ sortSettings.Name("company").Order("Descending").Add();})).Render()`|
 
 ## Value Sorting
 

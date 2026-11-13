@@ -10,24 +10,10 @@ domainurl: https://help.syncfusion.com/grid-sdk
 
 # Filtering in JavaScript TreeGrid
 
-Filtering allows you to view specific or related records based on filter criteria. To enable filtering in the TreeGrid, set the [`allowFiltering`](../../api/treegrid#allowfiltering) to true. Filtering options can be configured through [`filterSettings`](../../api/treegrid#filtersettings).
+Filtering allows you to view specific or related records based on filter criteria. To enable filtering in the TreeGrid, set the [`allowFiltering`](https://ej2.syncfusion.com/javascript/documentation/api/treegrid#allowfiltering) to true. Filtering options can be configured through [`filterSettings`](https://ej2.syncfusion.com/javascript/documentation/api/treegrid#filtersettings).
 
 To use filter, inject the `Filter` module in the treegrid.
 
-{% if page.publishingplatform == "typescript" %}
-
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/treegrid/filtering-cs9/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/treegrid/filtering-cs9/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/treegrid/filtering-cs9" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -39,15 +25,14 @@ To use filter, inject the `Filter` module in the treegrid.
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/treegrid/filtering-cs9" %}
-{% endif %}
 
-> * You can apply and clear filtering by using [`filterByColumn`](../../api/treegrid#filterbycolumn) and [`clearFiltering`](../../api/treegrid#clearfiltering) methods.
+> * You can apply and clear filtering by using [`filterByColumn`](https://ej2.syncfusion.com/javascript/documentation/api/treegrid#filterbycolumn) and [`clearFiltering`](https://ej2.syncfusion.com/javascript/documentation/api/treegrid#clearfiltering) methods.
 > * To disable filtering for a particular column, set
-[`columns.allowFiltering`](../../api/treegrid/column#allowfiltering) to false.
+[`columns.allowFiltering`](https://ej2.syncfusion.com/javascript/documentation/api/treegrid/column#allowfiltering) to false.
 
 ## Filter hierarchy modes
 
-TreeGrid provides support for a set of filtering modes with [`filterSettings.filterHierarchyMode`](../../api/treegrid/filterSettingsModel#hierarchymode) property.
+TreeGrid provides support for a set of filtering modes with [`filterSettings.filterHierarchyMode`](https://ej2.syncfusion.com/javascript/documentation/api/treegrid/filterSettingsModel#hierarchymode) property.
 The below are the type of filter mode available in TreeGrid.
 
 * **Parent** : This is the default filter hierarchy mode in TreeGrid. The filtered records are displayed with its parent records, if the filtered records not have any parent record then the filtered records only displayed.
@@ -58,20 +43,6 @@ The below are the type of filter mode available in TreeGrid.
 
 * **None** : The filtered records are only displayed.
 
-{% if page.publishingplatform == "typescript" %}
-
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/treegrid/hierarchy-filtering-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/treegrid/hierarchy-filtering-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/treegrid/hierarchy-filtering-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -83,27 +54,12 @@ The below are the type of filter mode available in TreeGrid.
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/treegrid/hierarchy-filtering-cs1" %}
-{% endif %}
 
 ## Initial filter
 
 To apply the filter at initial rendering, set the filter `predicate` object in
-[`filterSettings.columns`](../../api/treegrid/filterSettingsModel#columns).
+[`filterSettings.columns`](https://ej2.syncfusion.com/javascript/documentation/api/treegrid/filterSettingsModel#columns).
 
-{% if page.publishingplatform == "typescript" %}
-
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/treegrid/filtering-cs10/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/treegrid/filtering-cs10/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/treegrid/filtering-cs10" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -115,7 +71,6 @@ To apply the filter at initial rendering, set the filter `predicate` object in
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/treegrid/filtering-cs10" %}
-{% endif %}
 
 ## Filter operators
 
@@ -139,24 +94,10 @@ lessthanorequal |Checks whether the value is less than or equal to the specifie
 
 ## Diacritics
 
-By default, treegrid ignores diacritic characters while filtering. To include diacritic characters, set the [`filterSettings.ignoreAccent`](../../api/treegrid/filterSettingsModel#ignoreaccent) as `true`.
+By default, treegrid ignores diacritic characters while filtering. To include diacritic characters, set the [`filterSettings.ignoreAccent`](https://ej2.syncfusion.com/javascript/documentation/api/treegrid/filterSettingsModel#ignoreaccent) as `true`.
 
 In the following sample, type **aero** in `Name` column to filter diacritic characters.
 
-{% if page.publishingplatform == "typescript" %}
-
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/treegrid/filtering-cs11/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/treegrid/filtering-cs11/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/treegrid/filtering-cs11" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -168,6 +109,5 @@ In the following sample, type **aero** in `Name` column to filter diacritic char
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/treegrid/filtering-cs11" %}
-{% endif %}
 
-> You can refer to our [`JavaScript Tree Grid`](https://www.syncfusion.com/javascript-ui-controls/js-tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our JavaScript Tree Grid example [`JavaScript Tree Grid example`](https://ej2.syncfusion.com/demos#/material/tree-grid/treegrid-overview.html) to knows how to present and manipulate data.
+> You can refer to our [`JavaScript Tree Grid`](https://www.syncfusion.com/javascript-ui-controls/js-tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our JavaScript Tree Grid example [`JavaScript Tree Grid example`](https://ej2.syncfusion.com/demos/#/tailwind3/tree-grid/treegrid-overview.html) to knows how to present and manipulate data.

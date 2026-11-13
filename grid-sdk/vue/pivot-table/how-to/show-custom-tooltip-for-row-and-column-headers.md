@@ -2,7 +2,7 @@
 layout: post
 title: Show custom header tooltips in Vue Pivot Table | Syncfusion
 description: Step-by-step example showing how to show custom tooltips for row and column headers in the Vue Pivot Table by initializing a Tooltip component in dataBound.
-platform: ej2-vue
+platform: grid-sdk
 control: Show tooltip for row and column headers 
 documentation: ug
 domainurl: ##DomainURL##

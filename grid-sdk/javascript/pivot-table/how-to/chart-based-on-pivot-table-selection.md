@@ -1,10 +1,9 @@
 ---
 layout: post
 title: Chart based on pivot table selection in Javascript | Syncfusion
-description: Learn here all about Chart based on pivot table selection in Syncfusion ##Platform_Name## Pivot Table component of Syncfusion Essential JS 2 and more.
-platform: ej2-javascript
+description: Learn here all about Chart based on pivot table selection in Syncfusion JavaScript Pivot Table component of Syncfusion Essential JS 2 and more.
+platform: grid-sdk
 control: Chart based on pivot table selection 
-publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
@@ -21,20 +20,6 @@ Cell selection is enabled using the [`allowSelection`](https://ej2.syncfusion.co
 
 The [`cellSelected`](https://ej2.syncfusion.com/documentation/api/pivotview/index-default#cellselected) event triggers when cells are selected in the pivot table. This event provides selected cell information including row header name, column header name, measure name, and values. Using this data, the [`chart`](https://ej2.syncfusion.com/documentation/chart/getting-started) control can be plotted accordingly.
 
-{% if page.publishingplatform == "typescript" %}
-
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/chart-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/chart-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/pivot-table/chart-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -46,4 +31,3 @@ The [`cellSelected`](https://ej2.syncfusion.com/documentation/api/pivotview/inde
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/pivot-table/chart-cs1" %}
-{% endif %}

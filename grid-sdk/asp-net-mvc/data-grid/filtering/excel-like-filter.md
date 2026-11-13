@@ -4,7 +4,6 @@ title: Excel Like Filter in Syncfusion ASP.NET MVC Grid
 description: Learn here all about Excel Like Filter in Syncfusion ASP.NET MVC Grid of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Excel Like Filter
-publishingplatform: grid-sdk
 documentation: ug
 ---
 
@@ -223,4 +222,4 @@ In the provided example, On-Demand Excel filter has been enabled for the ASP.NET
 
 ## See also
 
-* [How to perform filter by using Wildcard and LIKE operator filter](./filtering/#wildcard-and-like-operator-filter)
+* [How to perform filter by using Wildcard and LIKE operator filter](./filtering#wildcard-and-like-operator-filter)

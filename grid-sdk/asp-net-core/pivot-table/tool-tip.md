@@ -4,7 +4,6 @@ title: Tooltip in ASP.NET Core Pivot Table | Syncfusion
 description: Learn how the ASP.NET Core Pivot Table displays contextual tooltips on value cells via the showTooltip property, including row and column header info on hover.
 platform: grid-sdk
 control: Tool Tip
-publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
@@ -12,8 +11,6 @@ documentation: ug
 # Tooltip in ASP.NET Core Pivot Table
 
 The tooltip displays contextual information when users hover over value cells in the pivot table. It can be enabled or disabled by setting the [`showTooltip`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_ShowTooltip) property to **true** or **false**. By default, tooltip is enabled in the pivot table and shows the cell value along with row and column header information.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -23,18 +20,6 @@ The tooltip displays contextual information when users hover over value cells in
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/pivot-tooltip/ToolTip.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pivot-tooltip/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="ToolTip.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/pivot-tooltip/ToolTip.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 ## Tooltip Template
 
@@ -52,8 +37,6 @@ Tooltip customization can be applied to both pivot table and pivot chart togethe
 
 The example below shows how to define the Pivot Table tooltip template in `index.html` and assign it to the [`tooltipTemplate`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_TooltipTemplate) property. The Pivot Chart tooltip is customized by setting an HTML string in the `tooltip` property of [`e-chartSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewChartSettings.html).
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/tooltip-template/tagHelper %}
@@ -62,18 +45,6 @@ The example below shows how to define the Pivot Table tooltip template in `index
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/tooltip-template/tooltip-template.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/tooltip-template/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Tooltip-template.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/tooltip-template/tooltip-template.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 
 

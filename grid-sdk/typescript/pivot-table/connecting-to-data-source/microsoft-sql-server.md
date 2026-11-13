@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Microsoft SQL Server in ##Platform_Name## Pivot Table | Syncfusion
-description: Learn how the ##Platform_Name## Pivot Table connects to Microsoft SQL Server via Microsoft SqlClient and a Web API controller to fetch and bind data at runtime.
-platform: ej2-javascript
+title: Microsoft SQL Server in TypeScript Pivot Table | Syncfusion
+description: Learn how the TypeScript Pivot Table connects to Microsoft SQL Server via Microsoft SqlClient and a Web API controller to fetch and bind data at runtime.
+platform: grid-sdk
 control: Microsoft SQL Server
-publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Microsoft SQL Server in ##Platform_Name## Pivot Table
+# Microsoft SQL Server in TypeScript Pivot Table
 
 This section describes how to retrieve data from SQL Server database using [Microsoft SqlClient](https://learn.microsoft.com/en-us/dotnet/api/system.data.sqlclient?view=dotnet-plat-ext-7.0) and bind it to the Pivot Table via a Web API controller.
 

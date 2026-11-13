@@ -2,7 +2,7 @@
 layout: post
 title: Vue Grid Formula Cells | Syncfusion
 description: Learn how to use spreadsheet-style formulas in the Vue Data Grid with built-in functions, custom formulas, and automatic recalculation.
-platform: ej2-javascript
+platform: grid-sdk
 control: Formula
 documentation: ug
 domainurl: ##DomainURL##
@@ -14,9 +14,9 @@ Formula cells in the Syncfusion Vue Data Grid enable spreadsheet-like calculatio
 
 ## Enable formula
 
-Formula support is enabled by setting the [allowFormula](../../api/grid/column#allowformula) property at the column level. When `allowFormula` is enabled, the data source must include the formula definition for the corresponding column. The Data Grid evaluates the formula and automatically updates the calculated value when dependent data changes.
+Formula support is enabled by setting the [allowFormula](https://ej2.syncfusion.com/vue/documentation/api/grid/column#allowformula) property at the column level. When `allowFormula` is enabled, the data source must include the formula definition for the corresponding column. The Data Grid evaluates the formula and automatically updates the calculated value when dependent data changes.
 
-To use formula functionality, inject the [Formula](../../api/grid/formula) module into the **Grid**.
+To use formula functionality, inject the [Formula](https://ej2.syncfusion.com/vue/documentation/api/grid/formula) module into the **Grid**.
 
 **For example:**
 

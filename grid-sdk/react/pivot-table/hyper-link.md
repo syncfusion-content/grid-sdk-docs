@@ -3,7 +3,7 @@ layout: post
 title: Hyperlink in React Pivot Table | Syncfusion
 description: Learn how the React Pivot Table adds hyperlinks to row, column, and value cells through hyperlinkSettings for interactive navigation and drill-through.
 control: Pivot Table
-platform: ej2-react
+platform: grid-sdk
 documentation: ug
 domainurl: ##DomainURL##
 ---

@@ -5,7 +5,6 @@ description: Learn how the ASP.NET MVC Pivot Table prints the current pivot repo
 platform: grid-sdk
 control: Print 
 documentation: ug
-publishingplatform: ##Platform_Name##
 ---
 
 # Print in ASP.NET MVC Pivot Table

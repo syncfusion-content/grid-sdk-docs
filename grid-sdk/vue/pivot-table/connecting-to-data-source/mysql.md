@@ -3,7 +3,7 @@ layout: post
 title: "MySQL in Vue Pivot Table | Syncfusion"
 description: "Learn how the Vue Pivot Table binds MySQL data via the MySqlClient library and a Web API controller."
 component: "Pivot Table"
-platform: ej2-vue
+platform: grid-sdk
 documentation: ug
 ---
 

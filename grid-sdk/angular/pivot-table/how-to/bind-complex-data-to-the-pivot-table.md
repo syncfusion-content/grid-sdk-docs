@@ -2,7 +2,7 @@
 layout: post
 title: How to Flatten Complex JSON in Angular Pivot Table | Syncfusion
 description: Step-by-step example showing how to convert complex JSON to flat JSON in the Angular Pivot Table, with code snippets and property references.
-platform: ej2-angular
+platform: grid-sdk
 control: Convert complex JSON to flat JSON and assign it to the pivot table 
 documentation: ug
 domainurl: ##DomainURL##

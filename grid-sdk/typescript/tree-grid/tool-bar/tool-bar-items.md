@@ -12,7 +12,7 @@ domainurl: https://help.syncfusion.com/grid-sdk
 
 ## Built-in toolbar items
 
-Built-in toolbar items execute standard actions of the treegrid, and it can be added by defining the [`toolbar`](../../api/treegrid#toolbar) as a collection of built-in items. It renders the button with icon and text.
+Built-in toolbar items execute standard actions of the treegrid, and it can be added by defining the [`toolbar`](https://ej2.syncfusion.com/documentation/api/treegrid#toolbar) as a collection of built-in items. It renders the button with icon and text.
 
 The following table shows built-in toolbar items and its actions.
 
@@ -33,7 +33,6 @@ The following table shows built-in toolbar items and its actions.
 | Indent | Indents the record to one level of hierarchy.|
 | Outdent | Outdents the record to one level of hierarchy.|
 
-{% if page.publishingplatform == "typescript" %}
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -46,27 +45,13 @@ The following table shows built-in toolbar items and its actions.
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/treegrid/toolbar-cs3" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/treegrid/toolbar-cs3/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/treegrid/toolbar-cs3/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/treegrid/toolbar-cs3" %}
-{% endif %}
-
-> * The [`toolbar`](../../api/treegrid#toolbar) has options to define both built-in and custom toolbar items.
+> * The [`toolbar`](https://ej2.syncfusion.com/documentation/api/treegrid#toolbar) has options to define both built-in and custom toolbar items.
 
 ## Enable or disable toolbar items
 
 You can enable/disable toolbar items by using the `enableItems` method.
 
-{% if page.publishingplatform == "typescript" %}
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -78,17 +63,3 @@ You can enable/disable toolbar items by using the `enableItems` method.
 {% endtabs %}
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/treegrid/toolbar-enable-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/treegrid/toolbar-enable-cs1/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/treegrid/toolbar-enable-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/treegrid/toolbar-enable-cs1" %}
-{% endif %}

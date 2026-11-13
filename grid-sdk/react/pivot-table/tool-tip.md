@@ -3,7 +3,7 @@ layout: post
 title: Tooltip in React Pivot Table | Syncfusion
 description: Learn how the React Pivot Table shows contextual tooltips on value cells and headers, with the showTooltip property to enable or disable them.
 control: Pivot Table
-platform: ej2-react
+platform: grid-sdk
 documentation: ug
 domainurl: ##DomainURL##
 ---

@@ -3,7 +3,7 @@ layout: post
 title: OLAP in Vue Pivot Table | Syncfusion
 description: Learn how the Vue Pivot Table connects to OLAP data sources like SSAS, configures connect settings, and supports drill-up, drill-down, and member analysis.
 control: OLAP 
-platform: ej2-vue
+platform: grid-sdk
 documentation: ug
 domainurl: ##DomainURL##
 ---

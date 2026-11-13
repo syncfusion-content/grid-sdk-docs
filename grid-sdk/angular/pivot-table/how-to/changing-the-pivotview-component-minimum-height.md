@@ -2,7 +2,7 @@
 layout: post
 title: How to Change the Minimum Height in Angular Pivot Table | Syncfusion
 description: Step-by-step example showing how to change the minimum height in the Angular Pivot Table, with code snippets and property references.
-platform: ej2-angular
+platform: grid-sdk
 control: Pivotview minimum height 
 documentation: ug
 domainurl: ##DomainURL##

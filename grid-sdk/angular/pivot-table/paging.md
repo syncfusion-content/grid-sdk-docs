@@ -2,7 +2,7 @@
 layout: post
 title: Paging in Angular Pivot Table | Syncfusion
 description: Learn how the Angular Pivot Table paginates rows and columns with pageSettings to navigate large reports.
-platform: ej2-angular
+platform: grid-sdk
 control: Paging 
 documentation: ug
 domainurl: ##DomainURL##

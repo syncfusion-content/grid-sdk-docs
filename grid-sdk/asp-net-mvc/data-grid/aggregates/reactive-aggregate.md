@@ -1,16 +1,15 @@
 ---
 layout: post
-title: Reactive Aggregate in ASP.NET MVC Grid Component
+title: Reactive Aggregate in ASP.NET MVC Grid Component | Syncfusion
 description: Learn here all about Reactive Aggregate in Syncfusion ASP.NET MVC Grid component of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Reactive Aggregate
-publishingplatform: grid-sdk
 documentation: ug
 ---
 
-# Reactive aggregate in ASP.Net MVC Grid component
+# Reactive aggregate in ASP.NET MVC Grid component
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.Net MVC Grid component provides support for reactive aggregates, which allow you to update the aggregate values dynamically as the data changes. Reactive aggregates automatically recalculate their values when there are changes in the underlying data, providing real-time updates to the aggregate values in the grid.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Grid component provides support for reactive aggregates, which allow you to update the aggregate values dynamically as the data changes. Reactive aggregates automatically recalculate their values when there are changes in the underlying data, providing real-time updates to the aggregate values in the grid.
 
 ## Auto update aggregate value in batch editing
 

@@ -3,7 +3,7 @@ layout: post
 title: How to integrate D3.js with React Pivot Table | Syncfusion
 description: Step-by-step example showing how to integrate D3.js with the React Pivot Table to render custom visualizations that stay in sync with pivot report changes.
 control: Pivot Table
-platform: ej2-react
+platform: grid-sdk
 documentation: ug
 domainurl: ##DomainURL##
 ---

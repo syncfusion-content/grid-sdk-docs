@@ -2,7 +2,7 @@
 layout: post
 title: Style and Appearance in Angular Pivot Table | Syncfusion
 description: Learn how the Angular Pivot Table styles row headers, column headers, value cells, and the field list with theme CSS overrides.
-platform: ej2-angular
+platform: grid-sdk
 control: Pivot Table 
 documentation: ug
 domainurl: ##DomainURL##

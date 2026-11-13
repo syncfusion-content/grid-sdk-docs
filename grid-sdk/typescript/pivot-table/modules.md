@@ -4,7 +4,6 @@ title: Modules in TypeScript Pivot Table | Syncfusion
 description: Learn about TypeScript Pivot Table feature modules, their API configuration, and how to inject modules into a Pivot Table.
 platform: grid-sdk
 control: Pivot Table modules
-publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
@@ -21,7 +20,7 @@ Import a module from `@syncfusion/ej2-pivotview`, register it through `PivotView
 | [Field list](./field-list) | `FieldList` | [`showFieldList`](https://ej2.syncfusion.com/documentation/api/pivotview/index-default#showfieldlist) | Relational and OLAP |
 | [Calculated field](./calculated-field) | `CalculatedField` | [`allowCalculatedField`](https://ej2.syncfusion.com/documentation/api/pivotview/index-default#allowcalculatedfield) | Relational and OLAP; formula syntax differs |
 | [Conditional formatting](./conditional-formatting) | `ConditionalFormatting` | [`allowConditionalFormatting`](https://ej2.syncfusion.com/documentation/api/pivotview/index-default#allowconditionalformatting) | Relational and OLAP |
-| [Number formatting](./number-formatting) | `NumberFormatting` | [`allowNumberFormatting`](https://ej2.syncfusion.com/documentation/api/pivotview/index-default#allownumberformatting) | Relational and OLAP |
+| [Number formatting](https://ej2.syncfusion.com/documentation/number-formatting) | `NumberFormatting` | [`allowNumberFormatting`](https://ej2.syncfusion.com/documentation/api/pivotview/index-default#allownumberformatting) | Relational and OLAP |
 | [Grouping](./grouping) | `Grouping` | [`allowGrouping`](https://ej2.syncfusion.com/documentation/api/pivotview/index-default#allowgrouping) | Relational |
 | [Drill through](./drill-through) | `DrillThrough` | [`allowDrillThrough`](https://ej2.syncfusion.com/documentation/api/pivotview/index-default#allowdrillthrough) | Relational and OLAP; OLAP access depends on cube permissions |
 | [Toolbar](./tool-bar) | `Toolbar` | [`showToolbar`](https://ej2.syncfusion.com/documentation/api/pivotview/index-default#showtoolbar) and [`toolbar`](https://ej2.syncfusion.com/documentation/api/pivotview/index-default#toolbar) | Relational and OLAP |

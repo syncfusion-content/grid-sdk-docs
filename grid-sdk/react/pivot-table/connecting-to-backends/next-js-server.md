@@ -2,7 +2,7 @@
 layout: post
 title: Connect React Pivot Table to a Next.js Backend | Syncfusion
 description: Learn how to connect a React Pivot Table to a Next.js Route Handler, load server data, and synchronize create, update, and delete operations.
-platform: ej2-react
+platform: grid-sdk
 documentation: ug
 domainurl: ##DomainURL##
 ---

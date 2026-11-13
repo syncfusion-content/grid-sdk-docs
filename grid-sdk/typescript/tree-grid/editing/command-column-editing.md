@@ -10,7 +10,7 @@ domainurl: https://help.syncfusion.com/grid-sdk
 
 # Command Column Editing in TypeScript TreeGrid
 
-The command column provides an option to add CRUD action buttons in a column. This can be defined by the [`column.commands`](../../api/treegrid/column#commands) property.
+The command column provides an option to add CRUD action buttons in a column. This can be defined by the [`column.commands`](https://ej2.syncfusion.com/documentation/api/treegrid/column#commands) property.
 
 The available built-in command buttons are:
 
@@ -21,7 +21,6 @@ The available built-in command buttons are:
 | Save | Update the edited row.|
 | Cancel | Cancel the edited state. |
 
-{% if page.publishingplatform == "typescript" %}
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -34,25 +33,11 @@ The available built-in command buttons are:
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/treegrid/edit-cs3" %}
 
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/treegrid/edit-cs3/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/treegrid/edit-cs3/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/treegrid/edit-cs3" %}
-{% endif %}
 
 ## Custom command
 
- The custom command buttons can be added in a column by using the [`column.commands`](../../api/treegrid/column#commands) property and the action for the custom buttons can be defined in the [`buttonOption.click`](../../api/grid/commandButtonOptions#click) event.
+ The custom command buttons can be added in a column by using the [`column.commands`](https://ej2.syncfusion.com/documentation/api/treegrid/column#commands) property and the action for the custom buttons can be defined in the [`buttonOption.click`](https://ej2.syncfusion.com/documentation/api/grid/commandButtonOptions#click) event.
 
-{% if page.publishingplatform == "typescript" %}
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -64,17 +49,3 @@ The available built-in command buttons are:
 {% endtabs %}
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/treegrid/edit-cs4" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/treegrid/edit-cs4/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/treegrid/edit-cs4/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/treegrid/edit-cs4" %}
-{% endif %}

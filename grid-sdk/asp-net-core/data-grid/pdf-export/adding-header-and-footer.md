@@ -1,10 +1,9 @@
 ---
 layout: post
-title: Adding Header and Footer in ASP.NET Core Grid Component
+title: Adding Header and Footer in ASP.NET Core Grid Component | Syncfusion
 description: Learn here all about Adding Header and Footer in Syncfusion ASP.NET Core Grid component of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Adding Header and Footer
-publishingplatform: grid-sdk
 documentation: ug
 ---
 
@@ -26,7 +25,7 @@ To add text in the header or footer of the exported PDF document, follow these s
 2. Set the `header` or `footer` property to a string value representing the desired text.
 3. Trigger the PDF export operation.
 
-The following code example demostrates how to add the header in the exported PDF document. 
+The following code example demonstrates how to add the header in the exported PDF document. 
 
 ```typescript
 
@@ -61,7 +60,7 @@ This can be achieved using the `pdfExportProperties` property of the Grid. You c
 
 To add a line in the header or footer of the exported PDF document, you can access the `header.contents` or `footer.contents` property of the `header` or `footer` in the `pdfExportProperties` property of the grid. 
 
-The following code example demostrates how to draw a line in the header of the exported PDF document. 
+The following code example demonstrates how to draw a line in the header of the exported PDF document. 
 
 ```typescript
 
@@ -107,7 +106,7 @@ This can be achieved using the `pdfExportProperties` property of the Grid. You c
 
 To add a page number in the header or footer of the exported PDF document, you can access the `header.contents` or `footer.contents` property of the `header` or `footer` in the `pdfExportProperties` property of the grid. 
 
-The following code example demostrates how to add a page number in the footer of the exported PDF document.
+The following code example demonstrates how to add a page number in the footer of the exported PDF document.
 
 ```typescript
 

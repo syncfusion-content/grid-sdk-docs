@@ -3,7 +3,7 @@ layout: post
 title: Microsoft SQL Server in Vue Pivot Table | Syncfusion
 description: Learn how the Vue Pivot Table binds Microsoft SQL Server data via Microsoft SqlClient and a Web API controller.
 control: Microsoft sql server 
-platform: ej2-vue
+platform: grid-sdk
 documentation: ug
 domainurl: ##DomainURL##
 ---

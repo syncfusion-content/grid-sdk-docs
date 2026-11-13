@@ -4,7 +4,6 @@ title: Column Rendering in Syncfusion ASP.NET Core Grid Component
 description: Learn here all about Column Rendering in Syncfusion ASP.NET Core Grid component of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Column Rendering
-publishingplatform: grid-sdk
 documentation: ug
 ---
 
@@ -164,7 +163,7 @@ In this example, we have a grid with columns **Food Name**, **Protein**, **Fat**
 
 To display serial number in the grid for every rows, you can use the [rowDataBound](https://help.syncfusion.com/cr/aspnetcore-js2/syncfusion.ej2.grids.grid.html#Syncfusion_EJ2_Grids_Grid_RowDataBound) event. The `rowDataBound` event is triggered for each row in the grid when the data is bound to the grid.
 
-Within the event handler, the [pagesize](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridPageSettings.html#Syncfusion_EJ2_Grids_GridPageSettings_PageSize) and [currentPage](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridPageSettings.html#Syncfusion_EJ2_Grids_GridPageSettings_CurrentPage) index can be obtained from the grid's [pageSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridPageSettings.html) property. Using these values, the serial number can be calculated based on the page size, current page, and row index. Finally, the calculated serial number can be set as the innerHTML of the corresponding row cell.
+Within the event handler, the [pageSize](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridPageSettings.html#Syncfusion_EJ2_Grids_GridPageSettings_PageSize) and [currentPage](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridPageSettings.html#Syncfusion_EJ2_Grids_GridPageSettings_CurrentPage) index can be obtained from the grid's [pageSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridPageSettings.html) property. Using these values, the serial number can be calculated based on the page size, current page, and row index. Finally, the calculated serial number can be set as the innerHTML of the corresponding row cell.
 
 Here is an example code snippet that demonstrates how to display serial numbers in a Syncfusion<sup style="font-size:70%">&reg;</sup> Grid using `rowDataBound` event:
 

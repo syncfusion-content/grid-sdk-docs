@@ -1,17 +1,16 @@
 ---
 layout: post
-title: Pivot Chart in ##Platform_Name## Pivot Table | Syncfusion
-description: Learn how the ##Platform_Name## Pivot Table renders 15+ Pivot Chart types with drill down, axis options, and series, legend, export, and tooltip settings.
-platform: ej2-javascript
+title: Pivot Chart in JavaScript Pivot Table | Syncfusion
+description: Learn how the JavaScript Pivot Table renders 15+ Pivot Chart types with drill down, axis options, and series, legend, export, and tooltip settings.
+platform: grid-sdk
 control: Pivot chart
-publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Pivot Chart in ##Platform_Name## Pivot Table
+# Pivot Chart in JavaScript Pivot Table
 
-The Pivot Chart in the Syncfusion Javascript Pivot Table component helps users visualize aggregated values in a clear and graphical format. It provides essential options like drill down and drill up operations, 25 chart types, and various display settings for series, axes, legends, export, print, and tooltips. The main purpose of the Pivot Chart is to present Pivot Table data in a way that is easy to understand and interact with.
+The Pivot Chart in the Syncfusion JavaScript Pivot Table component helps users visualize aggregated values in a clear and graphical format. It provides essential options like drill down and drill up operations, 25 chart types, and various display settings for series, axes, legends, export, print, and tooltips. The main purpose of the Pivot Chart is to present Pivot Table data in a way that is easy to understand and interact with.
 
 Users can display the pivot chart component individually with pivot values and modify the report dynamically using the field list and grouping bar. The [`displayOption`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/displayOptionModel) property in the Pivot Table allows users to control the visibility of both the grid and chart components. This property includes the following options:
 
@@ -35,7 +34,7 @@ The following sample shows the pivot chart component based on the pivot report b
 
 ## Data Binding
 
-The Pivot Table component supports both local and remote data binding options to populate data in the pivot chart. Users can bind data to the component using the [`dataSource`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/dataSourceSettings#datasource) property, which accepts either an instance of [`DataManager`](https://ej2.syncfusion.com/documentation/api/data/dataManager) for remote data sources or a Javascript object array collection for local data. For further details, [refer here](./data-binding).
+The Pivot Table component supports both local and remote data binding options to populate data in the pivot chart. Users can bind data to the component using the [`dataSource`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/dataSourceSettings#datasource) property, which accepts either an instance of [`DataManager`](https://ej2.syncfusion.com/documentation/api/data/dataManager) for remote data sources or a JavaScript object array collection for local data. For further details, [refer here](./data-binding).
 
 ## Chart Types
 

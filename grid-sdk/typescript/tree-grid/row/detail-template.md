@@ -10,11 +10,10 @@ domainurl: https://help.syncfusion.com/grid-sdk
 
 # Detail Template in TypeScript TreeGrid
 
-The detail template provides additional information about a particular row. By expanding the parent row the child rows are expanded along with their detail template. The [`detailTemplate`](../../api/treegrid#detailtemplate) property accepts either the template string or HTML element ID.
+The detail template provides additional information about a particular row. By expanding the parent row the child rows are expanded along with their detail template. The [`detailTemplate`](https://ej2.syncfusion.com/documentation/api/treegrid#detailtemplate) property accepts either the template string or HTML element ID.
 
 To use detail template, inject the DetailRow module in the TreeGrid.
 
-{% if page.publishingplatform == "typescript" %}
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -26,17 +25,3 @@ To use detail template, inject the DetailRow module in the TreeGrid.
 {% endtabs %}
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/treegrid/detail-template-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/treegrid/detail-template-cs1/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/treegrid/detail-template-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/treegrid/detail-template-cs1" %}
-{% endif %}

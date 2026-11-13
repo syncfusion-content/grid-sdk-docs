@@ -3,7 +3,7 @@ layout: post
 title: Modules in React Pivot Table | Syncfusion
 description: Learn about every React Pivot Table feature module and how to import, inject, and configure modules for relational and OLAP reports.
 control: Pivot Table
-platform: ej2-react
+platform: grid-sdk
 documentation: ug
 domainurl: ##DomainURL##
 ---
@@ -20,7 +20,7 @@ Import a module from `@syncfusion/ej2-react-pivotview`, register it through the 
 | [Field list](./field-list) | `FieldList` | `showFieldList` | Relational and OLAP |
 | [Calculated field](./calculated-field) | `CalculatedField` | `allowCalculatedField` | Relational and OLAP; formula syntax differs |
 | [Conditional formatting](./conditional-formatting) | `ConditionalFormatting` | `allowConditionalFormatting` | Relational and OLAP |
-| [Number formatting](./number-formatting) | `NumberFormatting` | `allowNumberFormatting` | Relational and OLAP |
+| [Number formatting](https://ej2.syncfusion.com/react/documentation/number-formatting) | `NumberFormatting` | `allowNumberFormatting` | Relational and OLAP |
 | [Grouping](./grouping) | `Grouping` | `allowGrouping` | Relational |
 | [Drill through](./drill-through) | `DrillThrough` | `allowDrillThrough` | Relational and OLAP; OLAP access depends on cube permissions |
 | [Toolbar](./tool-bar) | `Toolbar` | `showToolbar` and `toolbar` | Relational and OLAP |

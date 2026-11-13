@@ -1,10 +1,9 @@
 ---
 layout: post  
 title: Configure minimum width in Javascript | Syncfusion
-description: Learn all about configuring the minimum width in the Syncfusion ##Platform_Name## Pivot Table component of Syncfusion Essential JS 2, and more.  
-platform: ej2-javascript  
+description: Learn all about configuring the minimum width in the Syncfusion JavaScript Pivot Table component of Syncfusion Essential JS 2, and more.  
+platform: grid-sdk
 control: Configuring the minimum width in the Pivot Table component  
-publishingplatform: ##Platform_Name##  
 documentation: ug  
 domainurl: ##DomainURL##  
 ---
@@ -26,20 +25,6 @@ The pivot table automatically sets appropriate default minimum width values base
 
 To customize the minimum width according to specific layout requirements, configure the `minWidth` property with the desired pixel value:
 
-{% if page.publishingplatform == "typescript" %}
-
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs503/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs503/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs503" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -51,4 +36,3 @@ To customize the minimum width according to specific layout requirements, config
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs503" %}
-{% endif %}

@@ -1,17 +1,16 @@
 ---
 layout: post
-title: Data Compression in ##Platform_Name## Pivot Table | Syncfusion
-description: Learn how the ##Platform_Name## Pivot Table compresses unique raw data via `allowDataCompression` to speed up rendering on large datasets.
-platform: ej2-javascript
+title: Data Compression in JavaScript Pivot Table | Syncfusion
+description: Learn how the JavaScript Pivot Table compresses unique raw data via `allowDataCompression` to speed up rendering on large datasets.
+platform: grid-sdk
 control: Data Compression
-publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
 <!-- markdownlint-disable MD036 -->
 
-# Data Compression in ##Platform_Name## Pivot Table
+# Data Compression in JavaScript Pivot Table
 
 > This property is applicable only for the relational data source.
 

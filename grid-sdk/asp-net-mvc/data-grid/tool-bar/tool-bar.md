@@ -4,7 +4,6 @@ title: Tool Bar in Syncfusion ASP.NET MVC Grid Component
 description: Learn here all about Tool Bar in Syncfusion ASP.NET MVC Grid component of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Tool Bar
-publishingplatform: grid-sdk
 documentation: ug
 ---
 
@@ -52,7 +51,7 @@ By adding the toolbar at the bottom of the Syncfusion ASP.NET MVC Grid, importan
 
 To add the toolbar at the bottom of the Grid, you can utilize the [Created](https://help.syncfusion.com/cr/aspnetmvc-js2/syncfusion.ej2.grids.grid.html#Syncfusion_EJ2_Grids_Grid_Created) event. By handling this event, you can dynamically insert the toolbar items at the desired position in the grid layout.
 
-The following example shows how to add the toolbar items at the bootom using `Created` event of the grid.
+The following example shows how to add the toolbar items at the bottom using `Created` event of the grid.
  
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}

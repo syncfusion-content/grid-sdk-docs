@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Oracle in ##Platform_Name## Pivot Table | Syncfusion
-description: Learn how the ##Platform_Name## Pivot Table connects to Oracle via the Oracle.ManagedDataAccess library and a Web API controller.
-platform: ej2-javascript
+title: Oracle in JavaScript Pivot Table | Syncfusion
+description: Learn how the JavaScript Pivot Table connects to Oracle via the Oracle.ManagedDataAccess library and a Web API controller.
+platform: grid-sdk
 control: Oracle
-publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Oracle in ##Platform_Name## Pivot Table
+# Oracle in JavaScript Pivot Table
 
 This guide explains how to retrieve data from an Oracle database using the [Oracle Managed Data Access](https://www.nuget.org/packages/Oracle.ManagedDataAccess) library and bind it to the Pivot Table through a Web API controller.
 
@@ -126,9 +125,9 @@ In the **PivotController.cs** file, define a **Get** method that calls **FetchOr
 
 This section explains how to connect the Pivot Table component to an Oracle database by retrieving data from the Web API service created in the previous section.
 
-### Step 1: Create a Pivot Table in Javascript
-1. Set up a basic Javascript Pivot Table by following the [Getting Started](../getting-started) documentation.
-2. Ensure your Javascript project is configured with the necessary EJ2 Pivot Table dependencies.
+### Step 1: Create a Pivot Table in JavaScript
+1. Set up a basic JavaScript Pivot Table by following the [Getting Started](../getting-started) documentation.
+2. Ensure your JavaScript project is configured with the necessary EJ2 Pivot Table dependencies.
 
 ### Step 2: Configure the Web API URL in the Pivot Table
 1. In the **index.js** file, map the Web API URL (`https://localhost:44346/Pivot`) to the Pivot Table using the [url](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/dataSourceSettings#url) property within the [dataSourceSettings](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/dataSourceSettings).
@@ -182,11 +181,11 @@ pivotObj.appendTo('#PivotView');
 ```
 
 ### Step 4: Run and Verify the Pivot Table
-1. Run the Javascript application.
+1. Run the JavaScript application.
 2. The Pivot Table will display the data fetched from the Oracle database via the Web API, structured according to the defined report.
 3. The resulting Pivot Table will look like this:
 
 ![Pivot Table bound with Oracle database](../images/oracle-data-binding.png)
 
 ### Additional Resources
-Explore a complete example of the Javascript Pivot Table integrated with an ASP.NET Core Web Application to fetch data from an Oracle database in this [GitHub](https://github.com/SyncfusionExamples/how-to-bind-Oracle-database-to-pivot-table) repository.
+Explore a complete example of the JavaScript Pivot Table integrated with an ASP.NET Core Web Application to fetch data from an Oracle database in this [GitHub](https://github.com/SyncfusionExamples/how-to-bind-Oracle-database-to-pivot-table) repository.

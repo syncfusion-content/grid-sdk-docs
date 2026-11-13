@@ -1,14 +1,13 @@
 ---
 layout: post
-title: Pdf Export in Syncfusion ASP.NET Core Grid Component
-description: Learn here all about Pdf Export in Syncfusion ASP.NET Core Grid component of Syncfusion Essential JS 2 and more.
+title: PDF Export in Syncfusion ASP.NET Core Grid Component
+description: Learn here all about PDF Export in Syncfusion ASP.NET Core Grid component of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Pdf Export
-publishingplatform: grid-sdk
 documentation: ug
 ---
 
-# Pdf export in ASP.NET Core Grid component
+# PDF export in ASP.NET Core Grid component
 
 The PDF export feature in the Syncfusion ASP.NET Core Grid allows you to export grid data to a PDF document, providing the ability to generate printable reports or share data in a standardized format.
 

@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Grouping Bar in ##Platform_Name## Pivot Table | Syncfusion
-description: Learn how the ##Platform_Name## Pivot Table shows a Grouping Bar for drag-and-drop field manipulation, with `showGroupingBar` and field-panel options.
-platform: ej2-javascript
+title: Grouping Bar in JavaScript Pivot Table | Syncfusion
+description: Learn how the JavaScript Pivot Table shows a Grouping Bar for drag-and-drop field manipulation, with `showGroupingBar` and field-panel options.
+platform: grid-sdk
 control: Grouping bar
-publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Grouping Bar in ##Platform_Name## Pivot Table
+# Grouping Bar in JavaScript Pivot Table
 
 The Grouping Bar option in the Pivot Table automatically displays fields from the bound data source. It allows users to drag and drop fields between different axes such as columns, rows, values, and filters to create a pivot table at runtime. You can enable it by setting the [`showGroupingBar`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/index-default#showgroupingbar) property to **true**.
 

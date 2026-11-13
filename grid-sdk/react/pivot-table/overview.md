@@ -3,7 +3,7 @@ layout: post
 title: Overview of React Pivot Table | Syncfusion
 description: Explore the React Pivot Table overview and feature matrix for data analysis, data sources, layouts, performance, exporting, accessibility, and AI integration.
 control: Pivot Table
-platform: ej2-react
+platform: grid-sdk
 documentation: ug
 domainurl: ##DomainURL##
 ---
@@ -129,7 +129,7 @@ Editing changes the underlying raw records and is available only for relational 
 | Cell hyperlinks | Configurable | Relational and OLAP | [Hyperlinks](./hyper-link) |
 | Cell tooltips | Built-in | Relational and OLAP | [Tooltips](./tool-tip) |
 | Flexible width and height | Configurable | Relational and OLAP | [Width and height](./row-and-column#width-and-height) |
-| Number, currency, percentage, and custom formatting | Configurable | Relational and OLAP | [Number formatting](./number-formatting) |
+| Number, currency, percentage, and custom formatting | Configurable | Relational and OLAP | [Number formatting](https://ej2.syncfusion.com/react/documentation/number-formatting) |
 | Date and time formatting | Configurable | Relational; OLAP member captions and formats are supplied by the cube | [Customize date and time values](./how-to/customize-number-date-and-time-values#date-and-time-formatting) |
 | Theme and style customization | Configurable | Relational and OLAP | [Style and appearance](./css-customization) |
 
@@ -139,9 +139,9 @@ Editing changes the underlying raw records and is available only for relational 
 | --- | --- | --- | --- |
 | Save and load report settings | Configurable | Relational and OLAP | [Save and load report](./save-and-load) |
 | Browser state persistence | Configurable | Relational and OLAP | [State persistence](./state-persistence) |
-| Localization | Configurable | Relational and OLAP | [Globalization and localization](./globalization-and-localization) |
-| Culture-aware number and date formatting | Configurable | Relational and OLAP | [Globalization and localization](./globalization-and-localization) |
-| Right-to-left rendering | Configurable | Relational and OLAP | [Right-to-left support](./globalization-and-localization#right-to-left-rtl) |
+| Localization | Configurable | Relational and OLAP | [Globalization and localization](https://ej2.syncfusion.com/react/documentation/globalization-and-localization) |
+| Culture-aware number and date formatting | Configurable | Relational and OLAP | [Globalization and localization](https://ej2.syncfusion.com/react/documentation/globalization-and-localization) |
+| Right-to-left rendering | Configurable | Relational and OLAP | [Right-to-left support](https://ej2.syncfusion.com/react/documentation/globalization-and-localization#right-to-left-rtl) |
 
 ### Accessibility
 

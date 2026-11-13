@@ -3,7 +3,7 @@ layout: post
 title: How to configure the minimum width in React Pivot Table | Syncfusion
 description: Step-by-step example showing how to configure the minimum width in the React Pivot Table using the minWidth property.
 control: Pivot Table
-platform: ej2-react
+platform: grid-sdk
 documentation: ug
 domainurl: ##DomainURL##
 ---

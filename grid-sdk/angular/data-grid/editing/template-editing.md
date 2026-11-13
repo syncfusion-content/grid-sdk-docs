@@ -172,7 +172,7 @@ To add validation rules, utilize the [actionComplete](https://ej2.syncfusion.com
 
 ## Render tab component inside the dialog template
 
-Rendering a [Tab](../../../tab/index.html) component inside the dialog template enhances the grid editing experience. This feature is especially useful for presenting multiple editing sections or categories in a tabbed layout, ensuring a more intuitive and easily navigable interface for data editing.
+Rendering a [Tab](https://ej2.syncfusion.com/angular/documentation/tab/index.html) component inside the dialog template enhances the grid editing experience. This feature is especially useful for presenting multiple editing sections or categories in a tabbed layout, ensuring a more intuitive and easily navigable interface for data editing.
 
 Enable dialog mode with [editSettings.mode](https://ej2.syncfusion.com/angular/documentation/api/grid/editSettings#mode) set to `Dialog`. Place the `Tab` component inside [editSettingsTemplate](https://ej2.syncfusion.com/angular/documentation/api/grid/editSettings#template).
 

@@ -176,7 +176,7 @@ For specific implementation patterns, refer to feature documentation:
 
 ## Themes and styling
 
-Match the ASP.NET Core Data Grid to the application's visual design using [built-in themes](../appearance-and-styling/appearance-styling) and customization options. Supported themes are:
+Match the ASP.NET Core Data Grid to the application's visual design using [built-in themes](https://ej2.syncfusion.com/aspnetcore/documentation/appearance-and-styling/appearance-styling) and customization options. Supported themes are:
 
 - Fluent 2
 - Material 3

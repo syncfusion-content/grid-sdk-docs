@@ -3,7 +3,7 @@ layout: post
 title: React Pivot Table with Express.js Server Integration | Syncfusion
 description: Learn how to connect the Syncfusion React Pivot Table to an Express.js server for remote data binding and server-side data retrieval.
 control: Pivot Table
-platform: ej2-react
+platform: grid-sdk
 documentation: ug
 domainurl: ##DomainURL##
 ---

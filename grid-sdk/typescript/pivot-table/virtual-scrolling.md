@@ -1,17 +1,16 @@
 ---
 layout: post
-title: Virtual Scrolling in ##Platform_Name## Pivot Table | Syncfusion
-description: Learn how the ##Platform_Name## Pivot Table renders only visible rows and columns for large datasets via `enableVirtualization`.
-platform: ej2-javascript
+title: Virtual Scrolling in TypeScript Pivot Table | Syncfusion
+description: Learn how the TypeScript Pivot Table renders only visible rows and columns for large datasets via `enableVirtualization`.
+platform: grid-sdk
 control: Virtual scrolling
-publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
 <!-- markdownlint-disable MD036 -->
 
-# Virtual Scrolling in ##Platform_Name## Pivot Table
+# Virtual Scrolling in TypeScript Pivot Table
 
 ## Virtual Scrolling
 

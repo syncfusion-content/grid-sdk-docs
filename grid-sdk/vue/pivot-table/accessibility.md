@@ -3,7 +3,7 @@ layout: post
 title: Accessibility in Vue Pivot Table | Syncfusion
 description: Learn how the Vue Pivot Table supports accessibility with WAI-ARIA roles, full keyboard navigation, and screen reader integration.
 control: Accessibility 
-platform: ej2-vue
+platform: grid-sdk
 documentation: ug
 domainurl: ##DomainURL##
 ---
@@ -246,4 +246,4 @@ The accessibility compliance of the pivot table component is shown in the follow
 
 ## See also
 
-* [Accessibility in Syncfusion<sup style="font-size:70%">&reg;</sup> Vue components](../common/accessibility)
+* [Accessibility in Syncfusion<sup style="font-size:70%">&reg;</sup> Vue components](https://ej2.syncfusion.com/vue/documentation/common/accessibility)

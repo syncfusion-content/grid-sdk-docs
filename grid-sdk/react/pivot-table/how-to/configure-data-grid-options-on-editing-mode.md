@@ -3,7 +3,7 @@ layout: post
 title: How to configure data grid in Pivot Table editing mode | Syncfusion
 description: Step-by-step example showing how to configure data grid options on editing mode in the React Pivot Table using the beginDrillThrough event.
 control: Pivot Table
-platform: ej2-react
+platform: grid-sdk
 documentation: ug
 domainurl: ##DomainURL##
 ---

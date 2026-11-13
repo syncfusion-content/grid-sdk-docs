@@ -12,7 +12,7 @@ domainurl: https://help.syncfusion.com/grid-sdk
 
 ## Localization
 
-The [Localization](../common/localization) library allows you to localize default text content of the TreeGrid. The treegrid component has static text on some features (like toolbar area text, filter menu text, pager information text, etc.) that can be changed to other cultures (Arabic, Deutsch, French, etc.) by defining the
+The [Localization](https://ej2.syncfusion.com/react/documentation/common/localization) library allows you to localize default text content of the TreeGrid. The treegrid component has static text on some features (like toolbar area text, filter menu text, pager information text, etc.) that can be changed to other cultures (Arabic, Deutsch, French, etc.) by defining the
 [locale](https://ej2.syncfusion.com/react/documentation/api/treegrid#locale) value and translation object.
 
 The following list of properties and its values are used in the treegrid.
@@ -109,7 +109,7 @@ All | All
 
 ### Loading translations
 
-To load translation object in an application, use [load](https://ej2.syncfusion.com/documentation/api/base/l10n#load) function of the [L10n](https://ej2.syncfusion.com/documentation/api/base/l10n/) class.
+To load translation object in an application, use [load](https://ej2.syncfusion.com/documentation/api/base/l10n#load) function of the [L10n](https://ej2.syncfusion.com/documentation/api/base/l10n) class.
 
 The following example demonstrates the TreeGrid in *Deutsch* culture.
 
@@ -195,7 +195,7 @@ When localizing TreeGrid, it's important to include dependent components like Da
 
 ## Internationalization
 
-The [Internationalization](../common/internationalization) library is used to globalize number, date, and time values in treegrid component using format strings in the [columns.format](https://ej2.syncfusion.com/react/documentation/api/treegrid/column#format).
+The [Internationalization](https://ej2.syncfusion.com/react/documentation/common/internationalization) library is used to globalize number, date, and time values in treegrid component using format strings in the [columns.format](https://ej2.syncfusion.com/react/documentation/api/treegrid/column#format).
 
 {% tabs %}
 {% highlight js tabtitle="app.jsx" %}
@@ -228,7 +228,7 @@ RTL provides an option to switch the text direction and layout of the TreeGrid c
 
 ## See Also
 
-* [Internationalization](../common/internationalization)
-* [Localization](../common/localization)
+* [Internationalization](https://ej2.syncfusion.com/react/documentation/common/internationalization)
+* [Localization](https://ej2.syncfusion.com/react/documentation/common/localization)
 
 > You can refer to our [React Tree Grid](https://www.syncfusion.com/react-ui-components/react-tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our [React Tree Grid example](https://ej2.syncfusion.com/react/demos/#/material/treegrid/treegrid-overview) to knows how to present and manipulate data.

@@ -4,7 +4,6 @@ title: Set Drill-Through Edit Type in ASP.NET Core Pivot Table | Syncfusion
 description: Learn how to set the cell edit type on the ASP.NET Core Pivot Table's drill-through grid via the drillThrough event.
 platform: grid-sdk
 control: Drill Through Grid Cell Edit Type
-publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
@@ -31,8 +30,6 @@ The following edit types are available for different data types:
 
 The following example demonstrates how to set the **Country** column to use a `DropDownList` edit type in the drill-through grid:
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/summary-customization/edit-type/tagHelper %}
@@ -41,18 +38,6 @@ The following example demonstrates how to set the **Country** column to use a `D
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/summary-customization/edit-type/EditType.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/summary-customization/edit-type/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="EditType.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/summary-customization/edit-type/EditType.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 
 

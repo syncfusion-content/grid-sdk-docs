@@ -1,16 +1,15 @@
 ---
 layout: post
-title: Group and Caption Aggregate in ASP.NET MVC Grid Component
+title: Group and Caption Aggregate in ASP.NET MVC Grid Component | Syncfusion
 description: Learn here all about Group and Caption Aggregate in Syncfusion ASP.NET MVC Grid component of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Group and Caption Aggregate
-publishingplatform: grid-sdk
 documentation: ug
 ---
 
-# Group and caption aggregate in ASP.Net MVC Grid component
+# Group and caption aggregate in ASP.NET MVC Grid component
 
-Group footer and caption aggregates in the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.Net MVC Grid component allow you to calculate aggregate values based on the current group items. These aggregate values can be displayed in the group footer cells and group caption cells, respectively. To achieve this, you can use the `GroupFooterTemplate` and `GroupCaptionTemplate` properties of the `AggregateColumn`.
+Group footer and caption aggregates in the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Grid component allow you to calculate aggregate values based on the current group items. These aggregate values can be displayed in the group footer cells and group caption cells, respectively. To achieve this, you can use the `GroupFooterTemplate` and `GroupCaptionTemplate` properties of the `AggregateColumn`.
 
 > When working with group aggregates in Syncfusion<sup style="font-size:70%">&reg;</sup> Grid, it is important to set the property [AllowGrouping](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_AllowGrouping) of the `Column` to **true**. 
 > To maintain grouped columns in the grid after grouping, set [ShowGroupedColumn](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.GridGroupSettings.html#Syncfusion_EJ2_Grids_GridGroupSettings_ShowGroupedColumn) to **true**.

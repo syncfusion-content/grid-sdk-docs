@@ -10,32 +10,18 @@ domainurl: https://help.syncfusion.com/grid-sdk
 
 # Scrolling in JavaScript TreeGrid
 
-The scrollbar will be displayed in the treegrid when content exceeds the element [`width`](../api/treegrid#width) or [`height`](../api/treegrid#height). The vertical and horizontal scrollbars will be displayed based on the following criteria:
+The scrollbar will be displayed in the treegrid when content exceeds the element [`width`](https://ej2.syncfusion.com/javascript/documentation/api/treegrid#width) or [`height`](https://ej2.syncfusion.com/javascript/documentation/api/treegrid#height). The vertical and horizontal scrollbars will be displayed based on the following criteria:
 
 * The vertical scrollbar appears when the total height of rows present in the treegrid exceeds its element height.
 * The horizontal scrollbar appears when the sum of columns width exceeds the treegrid element width.
-* The [`height`](../api/treegrid#height) and [`width`](../api/treegrid#width) are used to set the treegrid height and width, respectively.
+* The [`height`](https://ej2.syncfusion.com/javascript/documentation/api/treegrid#height) and [`width`](https://ej2.syncfusion.com/javascript/documentation/api/treegrid#width) are used to set the treegrid height and width, respectively.
 
-> The default value for [`height`](../api/treegrid#height) and [`width`](../api/treegrid#width) is `auto`.
+> The default value for [`height`](https://ej2.syncfusion.com/javascript/documentation/api/treegrid#height) and [`width`](https://ej2.syncfusion.com/javascript/documentation/api/treegrid#width) is `auto`.
 
 ## Set width and height
 
-To specify the [`width`](../api/treegrid#width) and [`height`](../api/treegrid#height) of the scroller in the pixel, set the pixel value to a number.
+To specify the [`width`](https://ej2.syncfusion.com/javascript/documentation/api/treegrid#width) and [`height`](https://ej2.syncfusion.com/javascript/documentation/api/treegrid#height) of the scroller in the pixel, set the pixel value to a number.
 
-{% if page.publishingplatform == "typescript" %}
-
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/treegrid/scrolling-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/treegrid/scrolling-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/treegrid/scrolling-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -47,27 +33,12 @@ To specify the [`width`](../api/treegrid#width) and [`height`](../api/treegrid#h
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/treegrid/scrolling-cs1" %}
-{% endif %}
 
 ## Responsive with parent container
 
-Specify the [`width`](../api/treegrid#width) and [`height`](../api/treegrid#height) as `100%` to make the treegrid element fill its parent container.
-Setting the [`height`](../api/treegrid#height) to `100%` requires the treegrid parent element to have explicit height.
+Specify the [`width`](https://ej2.syncfusion.com/javascript/documentation/api/treegrid#width) and [`height`](https://ej2.syncfusion.com/javascript/documentation/api/treegrid#height) as `100%` to make the treegrid element fill its parent container.
+Setting the [`height`](https://ej2.syncfusion.com/javascript/documentation/api/treegrid#height) to `100%` requires the treegrid parent element to have explicit height.
 
-{% if page.publishingplatform == "typescript" %}
-
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/treegrid/responsive-scrolling-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/treegrid/responsive-scrolling-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/treegrid/responsive-scrolling-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -79,7 +50,6 @@ Setting the [`height`](../api/treegrid#height) to `100%` requires the treegrid p
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/treegrid/responsive-scrolling-cs1" %}
-{% endif %}
 
 ## Sticky header
 
@@ -89,22 +59,8 @@ For example, in a project management application, users often need to scroll thr
 
 To enable sticky headers in the TreeGrid, you can simply set the `enableStickyHeader` property to **true**. This makes the column headers stick to the top of the TreeGrid container or its parent scrolling container when you scroll vertically.
 
-The following sample demonstrates how to enable or disable the sticky header in the TreeGrid using a [Switch](../../switch/getting-started) and its [change](../api/switch#change) event:
+The following sample demonstrates how to enable or disable the sticky header in the TreeGrid using a [Switch](https://ej2.syncfusion.com/javascript/documentation/switch/getting-started) and its [change](https://ej2.syncfusion.com/javascript/documentation/api/switch#change) event:
 
-{% if page.publishingplatform == "typescript" %}
-
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/treegrid/scrolling-sticky-header/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/treegrid/scrolling-sticky-header/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/treegrid/scrolling-sticky-header" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -116,26 +72,11 @@ The following sample demonstrates how to enable or disable the sticky header in 
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/treegrid/scrolling-sticky-header" %}
-{% endif %}
 
 ## Scroll to selected row
 
-You can scroll the treegrid content to the selected row position by using the [`rowSelected`](../api/treegrid#rowselected) event.
+You can scroll the treegrid content to the selected row position by using the [`rowSelected`](https://ej2.syncfusion.com/javascript/documentation/api/treegrid#rowselected) event.
 
-{% if page.publishingplatform == "typescript" %}
-
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/treegrid/scroll-to-select-row-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/treegrid/scroll-to-select-row-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/treegrid/scroll-to-select-row-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -147,4 +88,3 @@ You can scroll the treegrid content to the selected row position by using the [`
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/treegrid/scroll-to-select-row-cs1" %}
-{% endif %}

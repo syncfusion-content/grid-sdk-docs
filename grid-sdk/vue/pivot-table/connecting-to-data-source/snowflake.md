@@ -3,7 +3,7 @@ layout: post
 title: "Snowflake in Vue Pivot Table | Syncfusion"
 component: "Pivot Table"
 description: "Learn how the Vue Pivot Table binds Snowflake data via the Snowflake.Data library and a Web API controller."
-platform: ej2-vue
+platform: grid-sdk
 documentation: ug
 ---
 

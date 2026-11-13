@@ -2,7 +2,7 @@
 layout: post
 title: Microsoft SQL Server in Angular Pivot Table | Syncfusion
 description: Learn how the Angular Pivot Table binds to a Microsoft SQL Server database through an ASP.NET Core Web API and Microsoft SqlClient.
-platform: ej2-angular
+platform: grid-sdk
 control: Microsoft SQL Server Data Binding
 documentation: ug
 domainurl: ##DomainURL##

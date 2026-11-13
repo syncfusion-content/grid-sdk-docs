@@ -2,7 +2,7 @@
 layout: post
 title: Modules in Angular Pivot Table | Syncfusion
 description: Learn about the Angular Pivot Table feature modules, their provider services, relationships, and how to enable common features.
-platform: ej2-angular
+platform: grid-sdk
 control: Pivot Table
 documentation: ug
 domainurl: ##DomainURL##
@@ -20,7 +20,7 @@ The following table lists all Pivot Table feature service modules exported by th
 | [Field List](./field-list) | `FieldListService` | [`showFieldList`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/index-default#showfieldlist) | Relational and OLAP |
 | [Calculated Field](./calculated-field) | `CalculatedFieldService` | [`allowCalculatedField`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/index-default#allowcalculatedfield) | Relational and OLAP; formula syntax differs |
 | [Conditional Formatting](./conditional-formatting) | `ConditionalFormattingService` | [`allowConditionalFormatting`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/index-default#allowconditionalformatting) | Relational and OLAP |
-| [Number Formatting](./number-formatting) | `NumberFormattingService` | [`allowNumberFormatting`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/index-default#allownumberformatting) | Relational and OLAP |
+| [Number Formatting](https://ej2.syncfusion.com/angular/documentation/number-formatting) | `NumberFormattingService` | [`allowNumberFormatting`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/index-default#allownumberformatting) | Relational and OLAP |
 | [Grouping](./grouping) | `GroupingService` | [`allowGrouping`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/index-default#allowgrouping) | Relational |
 | [Drill Through](./drill-through) | `DrillThroughService` | [`allowDrillThrough`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/index-default#allowdrillthrough) | Relational and OLAP; OLAP access depends on cube permissions |
 | [Toolbar](./tool-bar) | `ToolbarService` | [`showToolbar`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/index-default#showtoolbar) and [`toolbar`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/index-default#toolbar) | Relational and OLAP |

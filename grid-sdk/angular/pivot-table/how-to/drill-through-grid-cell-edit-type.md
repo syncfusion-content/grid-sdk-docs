@@ -2,7 +2,7 @@
 layout: post
 title: Set drill-through cell edit types in Angular Pivot Table | Syncfusion
 description: Step-by-step example showing how to configure drill-through cell edit type in the Angular Pivot Table, with code snippets and property references.
-platform: ej2-angular
+platform: grid-sdk
 control: Drill through grid cell edit type 
 documentation: ug
 domainurl: ##DomainURL##

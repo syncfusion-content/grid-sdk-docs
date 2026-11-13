@@ -3,7 +3,7 @@ layout: post
 title: Virtual scrolling in React Pivot Table | Syncfusion
 description: Learn how the React Pivot Table renders only the rows and columns visible in the viewport using enableVirtualization, for efficient large-dataset rendering.
 control: Pivot Table
-platform: ej2-react
+platform: grid-sdk
 documentation: ug
 domainurl: ##DomainURL##
 ---

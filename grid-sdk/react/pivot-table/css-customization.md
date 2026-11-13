@@ -3,7 +3,7 @@ layout: post
 title: CSS customization in React Pivot Table | Syncfusion
 description: Learn how the React Pivot Table exposes CSS classes for styling row headers, column headers, value cells, field list, and grouping bar areas.
 control: Pivot Table
-platform: ej2-react
+platform: grid-sdk
 documentation: ug
 domainurl: ##DomainURL##
 ---

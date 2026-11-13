@@ -3,7 +3,7 @@ layout: post
 title: Grouping in Vue Pivot Table | Syncfusion
 description: Learn how the Vue Pivot Table groups date, number, and string fields into year, quarter, range, or custom categories through the right-click Group action.
 control: Grouping 
-platform: ej2-vue
+platform: grid-sdk
 documentation: ug
 domainurl: ##DomainURL##
 ---

@@ -4,7 +4,6 @@ title: SQL Server Data Binding in ASP.NET Core Pivot Table | Syncfusion
 description: Learn how to bind Microsoft SQL Server data to the ASP.NET Core Pivot Table using SqlClient in a Web API controller, with a PivotController and Database1.mdf.
 platform: grid-sdk
 control: Microsoft SQL Server Data Binding
-publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 

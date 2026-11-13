@@ -2,7 +2,7 @@
 layout: post
 title: Hyperlink in Angular Pivot Table | Syncfusion
 description: Learn how the Angular Pivot Table enables hyperlinks on row, column, summary, and value cells using columnRender and cellClick.
-platform: ej2-angular
+platform: grid-sdk
 control: Pivot Table
 documentation: ug
 domainurl: ##DomainURL##

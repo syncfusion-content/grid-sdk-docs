@@ -2,9 +2,8 @@
 layout: post
 title: How to add a custom aggregation type in Vue Pivot Table | Syncfusion
 description: Step-by-step example showing how to add a custom aggregation type to the Vue Pivot Table menu via dataBound, with logic in aggregateCellInfo.
-platform: ej2-vue
+platform: grid-sdk
 control: Add custom aggregation type to the menu 
-publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---

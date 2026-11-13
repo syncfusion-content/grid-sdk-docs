@@ -4,7 +4,6 @@ title: Global Local in Syncfusion ASP.NET Core Grid Component
 description: Learn here all about Global Local in Syncfusion ASP.NET Core Grid component of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Global Local
-publishingplatform: grid-sdk
 documentation: ug
 ---
 
@@ -264,7 +263,7 @@ The following example demonstrates how to load a translation object for **French
 
 ### Switch the different localization
 
-The Synfusion ASP.NET Core Grid allows you to switch the localization from one culture to another culture. This will be useful when you want to change the localization based on your requirements. 
+The Syncfusion ASP.NET Core Grid allows you to switch the localization from one culture to another culture. This will be useful when you want to change the localization based on your requirements. 
 
 To switch to a different localization, follow these steps:
 
@@ -341,7 +340,7 @@ The Right to Left (RTL) feature in the Syncfusion ASP.NET Core Grid allows you t
 
 To enable RTL in the Grid, you need to set the [enableRtl](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_EnableRtl) property to **true**. By setting `enableRtl`, the grid control's text direction and layout will be adjusted to support right-to-left languages.
 
-In the following example, the [EJ2 Toggle Switch Button](https://ej2.syncfusion.com/aspnetcore/documentation/switch/getting-started) control is added to enable or diable the Right to Left (RTL) feature for the **Arabic (ar-AE)** locale. When the switch is toggled, the `change` event is triggered and the `enableRtl` property of the grid is updated accordingly. 
+In the following example, the [EJ2 Toggle Switch Button](https://ej2.syncfusion.com/aspnetcore/documentation/switch/getting-started) control is added to enable or disable the Right to Left (RTL) feature for the **Arabic (ar-AE)** locale. When the switch is toggled, the `change` event is triggered and the `enableRtl` property of the grid is updated accordingly. 
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}

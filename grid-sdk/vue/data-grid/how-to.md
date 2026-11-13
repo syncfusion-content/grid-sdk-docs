@@ -512,7 +512,7 @@ In the following sample, we have customized string filter operators.
 
 You can perform single-column or multi-column sorting dynamically through an external button.
 
-To perform single-column sorting, use the [`sortColumn`](../api/grid#sortcolumn) method of Grid.
+To perform single-column sorting, use the [`sortColumn`](https://ej2.syncfusion.com/vue/documentation/api/grid#sortcolumn) method of Grid.
 
 ```ts
     singleSort: function() {

@@ -2,8 +2,7 @@
 layout: post
 title: Export table and chart to one Vue Pivot Table document | Syncfusion
 description: Step-by-step example showing how to export table and chart into the same PDF from the Vue Pivot Table via pdfExport with exportBothTableAndChart.
-platform: ej2-vue
-publishingplatform: ##Platform_Name##
+platform: grid-sdk
 documentation: ug
 domainurl: ##DomainURL##
 ---

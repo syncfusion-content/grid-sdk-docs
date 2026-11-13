@@ -14,12 +14,12 @@ domainurl: https://help.syncfusion.com/grid-sdk
 
 The [columns.editType](https://ej2.syncfusion.com/react/documentation/api/treegrid/column#edittype) property customizes the editor used for a column. Set the edit type based on the column’s data type.
 
-* `numericedit` - [NumericTextBox](../../numerictextbox) component for integer, double, and decimal types.
-* `defaultedit` - [TextBox](../../textbox) component for string type.
-* `dropdownedit` - [DropDownList](../../drop-down-list) component for list type.
-* `booleanedit` - [CheckBox](../../check-box) component for boolean type.
-* `datepickeredit` - [DatePicker](../../datepicker) component for date type.
-* `datetimepickeredit` - [DateTimePicker](../../datetimepicker) component for date and time type.
+* `numericedit` - [NumericTextBox](https://ej2.syncfusion.com/react/documentation/numerictextbox) component for integer, double, and decimal types.
+* `defaultedit` - [TextBox](https://ej2.syncfusion.com/react/documentation/textbox) component for string type.
+* `dropdownedit` - [DropDownList](https://ej2.syncfusion.com/react/documentation/drop-down-list) component for list type.
+* `booleanedit` - [CheckBox](https://ej2.syncfusion.com/react/documentation/check-box) component for boolean type.
+* `datepickeredit` - [DatePicker](https://ej2.syncfusion.com/react/documentation/datepicker) component for date type.
+* `datetimepickeredit` - [DateTimePicker](https://ej2.syncfusion.com/react/documentation/datetimepicker) component for date and time type.
 
 Customize the editor model through [columns.edit.params](https://ej2.syncfusion.com/react/documentation/api/treegrid/column#edit).
 
@@ -27,12 +27,12 @@ The following table lists editor components and example params.
 
 Component | Example
 -----|-----
-[NumericTextBox](../../numerictextbox) | params: { decimals: 2, value: 5 }
-[TextBox](../../textbox) | -
-[DropDownList](../../drop-down-list) | params: { value: 'Germany' }
-[CheckBox](../../check-box) | params: { checked: true }
-[DatePicker](../../datepicker) | params: { format: 'dd.MM.yyyy' }
-[DateTimePicker](../../datetimepicker) | params: { value: new Date() }
+[NumericTextBox](https://ej2.syncfusion.com/react/documentation/numerictextbox) | params: { decimals: 2, value: 5 }
+[TextBox](https://ej2.syncfusion.com/react/documentation/textbox) | -
+[DropDownList](https://ej2.syncfusion.com/react/documentation/drop-down-list) | params: { value: 'Germany' }
+[CheckBox](https://ej2.syncfusion.com/react/documentation/check-box) | params: { checked: true }
+[DatePicker](https://ej2.syncfusion.com/react/documentation/datepicker) | params: { format: 'dd.MM.yyyy' }
+[DateTimePicker](https://ej2.syncfusion.com/react/documentation/datetimepicker) | params: { value: new Date() }
 
 {% tabs %}
 {% highlight js tabtitle="app.jsx" %}

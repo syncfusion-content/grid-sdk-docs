@@ -3,7 +3,7 @@ layout: post
 title: Defer update in React Pivot Table | Syncfusion
 description: Learn how the React Pivot Table defers layout recalculation in the field list until the user clicks Apply, improving performance on large reports.
 control: Pivot Table
-platform: ej2-react
+platform: grid-sdk
 documentation: ug
 domainurl: ##DomainURL##
 ---

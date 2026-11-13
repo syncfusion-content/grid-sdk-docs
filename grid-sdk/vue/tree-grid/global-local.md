@@ -12,7 +12,7 @@ domainurl: https://help.syncfusion.com/grid-sdk
 
 ## Localization
 
-The [`Localization`](../common/localization) library allows you to localize default text content of the TreeGrid. The treegrid component has static text on some features (like toolbar area text, filter menu text, pager information text, etc.) that can be changed to other cultures (Arabic, Deutsch, French, etc.) by defining the
+The [`Localization`](https://ej2.syncfusion.com/vue/documentation/common/localization) library allows you to localize default text content of the TreeGrid. The treegrid component has static text on some features (like toolbar area text, filter menu text, pager information text, etc.) that can be changed to other cultures (Arabic, Deutsch, French, etc.) by defining the
 [`locale`](https://ej2.syncfusion.com/vue/documentation/api/treegrid#locale) value and translation object.
 
 The following list of properties and its values are used in the treegrid.
@@ -164,7 +164,7 @@ When localizing TreeGrid, it's important to include dependent components like Da
 
 
 
-    Below is an example JSON snippet consolidating the localization keys for dependent components used in TreeGrid using  [`load`](https://ej2.syncfusion.com/documentation/api/base/l10n#load) function of the [`L10n`](https://ej2.syncfusion.com/documentation/api/base/l10n/) class and update the `locale` property of treegrid with the culture name used in the `load` function:
+    Below is an example JSON snippet consolidating the localization keys for dependent components used in TreeGrid using  [`load`](https://ej2.syncfusion.com/documentation/api/base/l10n#load) function of the [`L10n`](https://ej2.syncfusion.com/documentation/api/base/l10n) class and update the `locale` property of treegrid with the culture name used in the `load` function:
 
     ```json
     L10n.load({
@@ -196,7 +196,7 @@ When localizing TreeGrid, it's important to include dependent components like Da
 
 ## Internationalization
 
-The [`Internationalization`](../common/internationalization/) library is used to globalize number, date, and time values in treegrid component using format strings in the [`columns.format`](https://ej2.syncfusion.com/vue/documentation/api/treegrid/column#format).
+The [`Internationalization`](https://ej2.syncfusion.com/vue/documentation/common/internationalization) library is used to globalize number, date, and time values in treegrid component using format strings in the [`columns.format`](https://ej2.syncfusion.com/vue/documentation/api/treegrid/column#format).
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}

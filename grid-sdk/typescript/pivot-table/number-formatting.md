@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Number Formatting in ##Platform_Name## Pivot Table | Syncfusion
-description: Learn how the ##Platform_Name## Pivot Table formats values as Number, Currency, Percentage, or custom patterns via `formatSettings` and N, C, P codes.
-platform: ej2-javascript
+title: Number Formatting in TypeScript Pivot Table | Syncfusion
+description: Learn how the TypeScript Pivot Table formats values as Number, Currency, Percentage, or custom patterns via `formatSettings` and N, C, P codes.
+platform: grid-sdk
 control: Number formatting
-publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Number Formatting in ##Platform_Name## Pivot Table
+# Number Formatting in TypeScript Pivot Table
 
 The Pivot Table component provides comprehensive number formatting capabilities, allowing you to display numeric values in various formats. This enhances data readability and ensures values are displayed accurately to meet your specific needs.
 

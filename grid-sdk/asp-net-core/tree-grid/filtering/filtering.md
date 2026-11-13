@@ -1,18 +1,16 @@
 ---
 layout: post
-title: ##Platform_Name## TreeGrid Filtering | Syncfusion
-description: Learn how to use filtering in ##Platform_Name## TreeGrid, including filter bar, menu, Excel-like filtering, operators, and custom filter options.
+title: ASP.NET Core TreeGrid Filtering | Syncfusion
+description: Learn how to use filtering in ASP.NET Core TreeGrid, including filter bar, menu, Excel-like filtering, operators, and custom filter options.
 platform: grid-sdk
 control: Filtering
 documentation: ug
 ---
 
 
-# Filtering in ##Platform_Name## TreeGrid
+# Filtering in ASP.NET Core TreeGrid
 
 Filtering allows you to view specific or related records based on filter criteria. To enable filtering in the TreeGrid, set the [`allowFiltering`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.TreeGrid.TreeGrid.html#Syncfusion_EJ2_TreeGrid_TreeGrid_AllowFiltering) to true. Filtering options can be configured through [`FilterSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.TreeGrid.TreeGridFilterSettings.html) tag helper.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -22,18 +20,6 @@ Filtering allows you to view specific or related records based on filter criteri
 {% include code-snippet/grid-sdk/asp-net-core/tree-grid/filtering/default-filtering/defaultFiltering.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/tree-grid/filtering/default-filtering/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="DefaultFiltering.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/tree-grid/filtering/default-filtering/defaultFiltering.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 
 
@@ -53,8 +39,6 @@ The below are the type of filter mode available in TreeGrid.
 
 * **None** : The filtered records are only displayed.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-core/tree-grid/filtering/filter-modes/tagHelper %}
@@ -64,25 +48,11 @@ The below are the type of filter mode available in TreeGrid.
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/tree-grid/filtering/filter-modes/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="FilterModes.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/tree-grid/filtering/filter-modes/filterModes.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
 
 
 ## Initial filter
 
 To apply the filter at initial rendering, set the filter **Predicate** object in [`columns`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.TreeGrid.TreeGridFilterSettings.html#Syncfusion_EJ2_TreeGrid_TreeGridFilterSettings_Columns) property of [`e-treegrid-filterSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.TreeGrid.TreeGridFilterSettings.html) tag helper.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -92,18 +62,6 @@ To apply the filter at initial rendering, set the filter **Predicate** object in
 {% include code-snippet/grid-sdk/asp-net-core/tree-grid/filtering/initial-filter/initialFilter.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/tree-grid/filtering/initial-filter/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="InitialFilter.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/tree-grid/filtering/initial-filter/initialFilter.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 
 

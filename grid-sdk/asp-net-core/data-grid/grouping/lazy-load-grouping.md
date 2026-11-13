@@ -4,7 +4,6 @@ title: Lazy Load Grouping in Syncfusion ASP.NET Core Grid Component
 description: Learn here all about Lazy Load Grouping in Syncfusion ASP.NET Core Grid component of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Lazy Load Grouping
-publishingplatform: grid-sdk
 documentation: ug
 ---
  

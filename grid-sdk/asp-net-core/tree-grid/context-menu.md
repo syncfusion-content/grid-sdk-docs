@@ -22,7 +22,7 @@ Items| Description
 `Delete` | Delete the current record.
 `Save` | Save the edited record.
 `Cancel` | Cancel the edited state.
-`PdfExport` | Export the treegrid data as Pdf document.
+`PdfExport` | Export the treegrid data as PDF document.
 `ExcelExport` | Export the treegrid data as Excel document.
 `CsvExport` | Export the treegrid data as CSV document.
 `SortAscending` | Sort the current column in ascending order.

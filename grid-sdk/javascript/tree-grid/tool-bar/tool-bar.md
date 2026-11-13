@@ -10,7 +10,7 @@ domainurl: https://help.syncfusion.com/grid-sdk
 
 # Toolbar in JavaScript TreeGrid
 
-The TreeGrid provides ToolBar support to handle treegrid actions. The [`toolbar`](../../api/treegrid#toolbar) property accepts either the collection of built-in toolbar items and [`ItemModel`](../../api/toolbar#item) objects for custom toolbar items or HTML element ID for toolbar template.
+The TreeGrid provides ToolBar support to handle treegrid actions. The [`toolbar`](https://ej2.syncfusion.com/javascript/documentation/api/treegrid#toolbar) property accepts either the collection of built-in toolbar items and [`ItemModel`](https://ej2.syncfusion.com/javascript/documentation/api/toolbar#item) objects for custom toolbar items or HTML element ID for toolbar template.
 
 To use ToolBar, inject `Toolbar` module in the treegrid.
 

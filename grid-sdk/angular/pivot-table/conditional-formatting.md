@@ -2,7 +2,7 @@
 layout: post
 title: Conditional Formatting in Angular Pivot Table | Syncfusion
 description: Learn how the Angular Pivot Table applies conditional formatting to value cells via font, color, and background based on rules.
-platform: ej2-angular
+platform: grid-sdk
 control: Pivot Table 
 documentation: ug
 domainurl: ##DomainURL##

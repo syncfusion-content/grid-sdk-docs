@@ -1,15 +1,14 @@
 ---
 layout: post
-title: MySQL in ##Platform_Name## Pivot Table | Syncfusion
-description: Learn how the ##Platform_Name## Pivot Table connects to MySQL via the MySql.Data library and a Web API controller to fetch and bind data at runtime.
-platform: ej2-javascript
+title: MySQL in JavaScript Pivot Table | Syncfusion
+description: Learn how the JavaScript Pivot Table connects to MySQL via the MySql.Data library and a Web API controller to fetch and bind data at runtime.
+platform: grid-sdk
 control: MySQL
-publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# MySQL in ##Platform_Name## Pivot Table
+# MySQL in JavaScript Pivot Table
 
 This guide explains how to retrieve data from a MySQL database using the [MySqlClient](https://mysqlclient.readthedocs.io) library and bind it to the Pivot Table through a Web API controller.
 
@@ -126,9 +125,9 @@ In the **PivotController.cs** file, define a **Get** method that calls **GetMySQ
 
 This section explains how to connect the Pivot Table to a MySQL database by fetching data from the Web API service created above.
 
-### Step 1: Create a Pivot Table in Javascript
-1. Set up a Javascript project with the Pivot Table by following the [Getting Started](../getting-started) documentation.
-2. Ensure all necessary Syncfusion EJ2 Pivot Table dependencies are installed in your Javascript project.
+### Step 1: Create a Pivot Table in JavaScript
+1. Set up a JavaScript project with the Pivot Table by following the [Getting Started](../getting-started) documentation.
+2. Ensure all necessary Syncfusion EJ2 Pivot Table dependencies are installed in your JavaScript project.
 
 ### Step 2: Configure the Web API URL in the Pivot Table
 1. In the **index.js** file, map the Web API URL (`https://localhost:7146/Pivot`) to the Pivot Table using the [url](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/dataSourceSettings#url) property within the [dataSourceSettings](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/dataSourceSettings).
@@ -166,11 +165,11 @@ pivotObj.appendTo('#PivotView');
 ```
 
 ### Step 4: Run and Verify the Pivot Table
-1. Run the Javascript application.
+1. Run the JavaScript application.
 2. The Pivot Table will display the data fetched from the MySQL database via the Web API, structured according to the defined report.
 3. The resulting Pivot Table will look like this:
 
 ![Pivot Table bound with MySQL database](../images/pivottable-with-mysql-data.png)
 
 ### Additional Resources
-Explore a complete example of the Javascript Pivot Table integrated with an ASP.NET Core Web Application to fetch data from a MySQL database in this [GitHub](https://github.com/SyncfusionExamples/how-to-bind-MySQL-database-to-pivot-table) repository.
+Explore a complete example of the JavaScript Pivot Table integrated with an ASP.NET Core Web Application to fetch data from a MySQL database in this [GitHub](https://github.com/SyncfusionExamples/how-to-bind-MySQL-database-to-pivot-table) repository.

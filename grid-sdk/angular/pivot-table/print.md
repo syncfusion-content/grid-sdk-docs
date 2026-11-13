@@ -1,8 +1,8 @@
-﻿---
+---
 layout: post
 title: Printing in Angular Pivot Table | Syncfusion
 description: Learn how the Angular Pivot Table prints the current grid or pivot chart view to a hard copy via the print method.
-platform: ej2-angular
+platform: grid-sdk
 control: Pivot Table
 documentation: ug
 domainurl: ##DomainURL##

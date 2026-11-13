@@ -3,7 +3,7 @@ layout: post
 title: Getting Started with React Pivot Table | Syncfusion
 description: Learn how to get started with the React Pivot Table. Explore setup, features, examples, and customization options.
 control: Pivot Table
-platform: ej2-react
+platform: grid-sdk
 documentation: ug
 domainurl: ##DomainURL##
 ---
@@ -87,10 +87,10 @@ The Pivot Table code should be placed in the **src/App.tsx** file (or **src/App.
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/react/pivot-table/react/pivot-table/getting-started-cs1/app/App.jsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/getting-started-cs1/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/react/pivot-table/react/pivot-table/getting-started-cs1/app/App.tsx %}
+{% include code-snippet/grid-sdk/react/pivot-table/getting-started-cs1/app/App.tsx %}
 {% endhighlight %}
 {% endtabs %}
 

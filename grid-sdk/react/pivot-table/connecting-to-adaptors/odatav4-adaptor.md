@@ -3,7 +3,7 @@ layout: post
 title: ODataV4 Adaptor in React Pivot Table | Syncfusion
 description: Learn how the React Pivot Table binds to OData V4 services through the ODataV4Adaptor, which converts CRUD operations into OData-compliant requests.
 control: Pivot Table
-platform: ej2-react
+platform: grid-sdk
 documentation: ug
 domainurl: ##DomainURL##
 ---

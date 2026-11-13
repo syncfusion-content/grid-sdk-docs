@@ -124,7 +124,7 @@ The following example demonstrates the TreeGrid in **Deutsch** culture.
 
 When localizing TreeGrid, it's important to include dependent components like DatePicker, Form Validator, and Grid, as they have their own static text that requires localization. Follow these steps to localize these components:
 
-1. **DatePicker**: Localize placeholders, "today" text, etc., using the [DatePicker localization keys](../datepicker/globalization)
+1. **DatePicker**: Localize placeholders, "today" text, etc., using the [DatePicker localization keys](https://ej2.syncfusion.com/aspnetmvc/documentation/datepicker/globalization)
 
     Example localization keys for the date picker:
     ```json
@@ -145,7 +145,7 @@ When localizing TreeGrid, it's important to include dependent components like Da
         "minLength": "Please enter at least {0} characters"
     }
     ```
-3. **Grid Keys**: For additional TreeGrid-related keys, use the  [Grid localization keys](../grid/global-local).
+3. **Grid Keys**: For additional TreeGrid-related keys, use the  [Grid localization keys](https://ej2.syncfusion.com/aspnetmvc/documentation/grid/global-local).
 
    Example keys for grid keys localization:
     ```json
@@ -193,7 +193,7 @@ When localizing TreeGrid, it's important to include dependent components like Da
 
 ## Internationalization
 
-The [`Internationalization`](../../common/internationalization) library is used to globalize number, date, and time values in treegrid component using format strings in the [`Format`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGridColumn.html#Syncfusion_EJ2_TreeGrid_TreeGridColumn_Format) property of [`Column`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGridColumn.html).
+The [`Internationalization`](https://ej2.syncfusion.com/aspnetmvc/documentation/common/internationalization) library is used to globalize number, date, and time values in treegrid component using format strings in the [`Format`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGridColumn.html#Syncfusion_EJ2_TreeGrid_TreeGridColumn_Format) property of [`Column`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGridColumn.html).
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -222,7 +222,7 @@ RTL provides an option to switch the text direction and layout of the TreeGrid c
 
 ## See Also
 
-* [Internationalization](../../common/internationalization)
-* [Localization](../../common/localization)
+* [Internationalization](https://ej2.syncfusion.com/aspnetmvc/documentation/common/internationalization)
+* [Localization](https://ej2.syncfusion.com/aspnetmvc/documentation/common/localization)
 
 N> You can refer to our [`ASP.NET MVC Tree Grid`](https://www.syncfusion.com/aspnet-mvc-ui-controls/tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our [`ASP.NET MVC Tree Grid example`](https://ej2.syncfusion.com/aspnetmvc/treegrid/overview#/fluent2) to knows how to present and manipulate data.

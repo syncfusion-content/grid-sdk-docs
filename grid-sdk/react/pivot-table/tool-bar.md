@@ -2,7 +2,7 @@
 layout: post
 title: Toolbar in React Pivot Table | Syncfusion
 description: Learn how the React Pivot Table exposes a toolbar for switching between table and chart views, exporting, conditional formatting, and report management.
-platform: ej2-react
+platform: grid-sdk
 control: Pivot Table
 documentation: ug
 domainurl: ##DomainURL##

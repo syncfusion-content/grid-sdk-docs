@@ -3,7 +3,7 @@ layout: post
 title: Data binding in React Pivot Table | Syncfusion
 description: Learn how the React Pivot Table binds local JSON arrays, remote services, and OLAP cubes for data visualization and analysis.
 control: Pivot Table
-platform: ej2-react
+platform: grid-sdk
 documentation: ug
 domainurl: ##DomainURL##
 ---

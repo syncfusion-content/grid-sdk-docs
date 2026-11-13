@@ -12,9 +12,8 @@ domainurl: https://help.syncfusion.com/grid-sdk
 
 ## Header text
 
-By default, column header title is displayed from column [`field`](../../api/treegrid/column#field) value. To override the default header title, you have to define the [`headerText`](../../api/treegrid/column#headertext) value.
+By default, column header title is displayed from column [`field`](https://ej2.syncfusion.com/documentation/api/treegrid/column#field) value. To override the default header title, you have to define the [`headerText`](https://ej2.syncfusion.com/documentation/api/treegrid/column#headertext) value.
 
-{% if page.publishingplatform == "typescript" %}
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -27,27 +26,13 @@ By default, column header title is displayed from column [`field`](../../api/tre
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/treegrid/columns-cs17" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/treegrid/columns-cs17/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/treegrid/columns-cs17/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/treegrid/columns-cs17" %}
-{% endif %}
-
-> * If both the [`field`](../../api/treegrid/column#field) and [`headerText`](../../api/treegrid/column#headertext) are not defined in the column, the column renders with “empty” header text.
+> * If both the [`field`](https://ej2.syncfusion.com/documentation/api/treegrid/column#field) and [`headerText`](https://ej2.syncfusion.com/documentation/api/treegrid/column#headertext) are not defined in the column, the column renders with “empty” header text.
 
 ## Header template
 
-You can customize the header element by using the [`headerTemplate`](../../api/treegrid/column#headerTemplate) property.
+You can customize the header element by using the [`headerTemplate`](https://ej2.syncfusion.com/documentation/api/treegrid/column#headerTemplate) property.
 
-{% if page.publishingplatform == "typescript" %}
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -59,17 +44,3 @@ You can customize the header element by using the [`headerTemplate`](../../api/t
 {% endtabs %}
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/treegrid/header-template-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/treegrid/header-template-cs1/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/treegrid/header-template-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/treegrid/header-template-cs1" %}
-{% endif %}

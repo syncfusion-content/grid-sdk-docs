@@ -22,19 +22,6 @@ The cell edit template is used to add a custom component for a particular column
 
 * **destroy** - It is used to destroy the component.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/editing/edit-template/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="EditTemplate.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/editing/edit-template/editTemplate.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/editing/edit-template/razor %}
@@ -43,7 +30,6 @@ The cell edit template is used to add a custom component for a particular column
 {% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/editing/edit-template/editTemplate.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 
 

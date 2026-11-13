@@ -2,9 +2,8 @@
 layout: post
 title: Performance Best Practices in Angular Pivot Table | Syncfusion
 description: Learn how the Angular Pivot Table improves load and render performance with virtual scrolling, paging, and data compression tips.
-platform: ej2-angular
+platform: grid-sdk
 control: Performance best practices
-publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---

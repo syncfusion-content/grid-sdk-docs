@@ -3,7 +3,7 @@ layout: post
 title: OLAP in React Pivot Table | Syncfusion
 description: Learn how the React Pivot Table connects to OLAP cubes and analyzes multidimensional data with MDX queries, axes, measures, and drill operations.
 control: Pivot Table
-platform: ej2-react
+platform: grid-sdk
 documentation: ug
 domainurl: ##DomainURL##
 ---

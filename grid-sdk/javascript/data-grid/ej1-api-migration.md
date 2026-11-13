@@ -4,7 +4,6 @@ title: Ej1 api migration in JavaScript Grid control | Syncfusion
 description: Learn here all about Ej1 api migration in Syncfusion JavaScript Grid control of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Ej1 api migration 
-publishingplatform: grid-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
@@ -282,7 +281,7 @@ This article describes the API migration process of Grid component from Essentia
 |Get Column Index By headerText | **Method:** *getColumnIndexByHeaderText(headerText, [field])* <br><br> `var gridObj = $("#Grid").data("ejGrid");` <br> `gridObj.getColumnIndexByHeaderText("Order ID");`| The Column Index for a corresponding headerText can be get by iterating the gridObj.columns with the headerText
 |Set Width to columns | **Method:** *setWidthToColumns()* <br><br> `var gridObj = $("#Grid").data("ejGrid");` <br> `gridObj.setWidthToColumns();`| **Method:** *widthService.setWidthToColumns()* <br><br> `var gridObj = document.getElementById('Grid')`<br>`.ej2_instances[0]` <br>`gridObj.widthService.setWidthToColumns()`
 |Get HeaderText By FieldName | **Method:** *getHeaderTextByFieldName()* <br><br> `var gridObj = $("#Grid").data("ejGrid");` <br> `gridObj.getHeaderTextByFieldName("OrderID");`| Not Applicable
-|Get Hidden Columnname | **Method:** *getHiddenColumnNames()* <br><br> `var gridObj = $("#Grid").data("ejGrid");` <br> `gridObj.getHiddenColumnNames();`| Not Applicable
+|Get Hidden Column name | **Method:** *getHiddenColumnNames()* <br><br> `var gridObj = $("#Grid").data("ejGrid");` <br> `gridObj.getHiddenColumnNames();`| Not Applicable
 |Get Visible Columns/Names| **Method:** *getVisibleColumnNames()* <br><br> `var gridObj = $("#Grid").data("ejGrid");` <br> `gridObj.getVisibleColumnNames();`| **Method:** *getVisibleColumns()* <br><br> `var gridObj = document.getElementById('Grid')`<br>`.ej2_instances[0]` <br> `gridObj.getVisibleColumns();`
 |Select Columns | **Method:** *selectColumns(fromIndex)* <br><br> `var gridObj = $("#Grid").data("ejGrid");` <br> `gridObj.selectColumns(1,4);`| Not Applicable
 |Select Specific Columns based on Index | **Method:** *selectColumns(columnIndex,[toIndex])* <br><br> `var gridObj = $("#Grid").data("ejGrid");` <br> `gridObj.selectColumns(1,4);`| Not Applicable

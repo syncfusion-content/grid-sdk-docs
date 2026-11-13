@@ -4,7 +4,6 @@ title: Customize Loading Spinner in ASP.NET Core Pivot Table | Syncfusion
 description: Learn how to customize the ASP.NET Core Pivot Table's loading spinner via the spinnerTemplate property, accepting an HTML string for custom styling.
 platform: grid-sdk
 control: Customizing Loading Indicator
-publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
@@ -14,8 +13,6 @@ You can customize the appearance of the loading indicator in the pivot table by 
 
 The [`spinnerTemplate`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_SpinnerTemplate) property accepts an HTML string that defines the custom loading indicator appearance. This enables control over the visual presentation, including custom styling and animations.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/loading-indicator/tagHelper %}
@@ -24,16 +21,4 @@ The [`spinnerTemplate`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/loading-indicator/fieldlist.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/loading-indicator/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Fieldlist.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/loading-indicator/fieldlist.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 

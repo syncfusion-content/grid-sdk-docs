@@ -3,7 +3,7 @@ layout: post
 title: How to render a chart on cell selection in Pivot Table | Syncfusion
 description: Step-by-step example showing how to render a chart from cell selection in the React Pivot Table using the cellSelected event.
 control: Pivot Table
-platform: ej2-react
+platform: grid-sdk
 documentation: ug
 domainurl: ##DomainURL##
 ---

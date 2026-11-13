@@ -3,7 +3,7 @@ layout: post
 title: Hyperlink in Vue Pivot Table | Syncfusion
 description: Learn how the Vue Pivot Table displays hyperlinks in row, column, value, and summary cells via the hyperlinkSettings property with per-cell-type controls.
 control: Hyper link 
-platform: ej2-vue
+platform: grid-sdk
 documentation: ug
 domainurl: ##DomainURL##
 ---

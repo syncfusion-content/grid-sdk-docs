@@ -107,7 +107,7 @@ This can be achieved using the [pdfExportProperties](https://ej2.syncfusion.com/
 
 To add a page number in the header or footer of the exported PDF document, you can access the `header.contents` or `footer.contents` property of the [header](https://ej2.syncfusion.com/vue/documentation/api/grid/pdfExportProperties#header) or [footer](https://ej2.syncfusion.com/vue/documentation/api/grid/pdfExportProperties#footer) in the `pdfExportProperties` property of the grid. 
 
-The following code example demostrates how to add a page number in the footer of the exported PDF document.
+The following code example demonstrates how to add a page number in the footer of the exported PDF document.
 
 ```typescript
  let pdfExportProperties = {

@@ -2,9 +2,8 @@
 layout: post
 title: Getting Started with TypeScript Pivot Table using Vite | Syncfusion
 description: Learn how to create a TypeScript Pivot Table component using Vite for fast development with optimized builds.
-platform: ej2-javascript
+platform: grid-sdk
 control: Getting started
-publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---

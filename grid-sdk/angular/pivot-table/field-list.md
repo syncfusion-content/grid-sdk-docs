@@ -2,7 +2,7 @@
 layout: post
 title: Field List in Angular Pivot Table | Syncfusion
 description: Learn how the Angular Pivot Table field list lets users add, remove, and rearrange fields between axes with sort and filter options.
-platform: ej2-angular
+platform: grid-sdk
 control: Pivot Table
 documentation: ug
 domainurl: ##DomainURL##

@@ -4,7 +4,6 @@ title: Frozen in Syncfusion ASP.NET MVC Grid Component
 description: Learn here all about Frozen in Syncfusion ASP.NET MVC Grid component of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Frozen
-publishingplatform: grid-sdk
 documentation: ug
 ---
 
@@ -14,19 +13,6 @@ Frozen rows and columns provides an option to make rows and columns always visib
 
 In this demo, the [`FrozenColumns`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_FrozenColumns) is set as **2** and the [`FrozenRows`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_FrozenRows) is set as **3**. Hence, the left two columns and top three rows are frozen.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/grid/scrolling/freeze-row-column/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Freeze-row-column.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/grid/scrolling/freeze-row-column/freeze-row-column.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-mvc/grid/scrolling/freeze-row-column/razor %}
@@ -35,7 +21,6 @@ In this demo, the [`FrozenColumns`](https://help.syncfusion.com/cr/aspnetcore-js
 {% include code-snippet/grid-sdk/asp-net-mvc/grid/scrolling/freeze-row-column/freeze-row-column.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 
 
@@ -56,19 +41,6 @@ To freeze particular column in the grid, the [`IsFrozen`](https://help.syncfusio
 
 In this demo, the columns with field name **OrderID** and **CustomerID** is frozen using the [`IsFrozen`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridColumn.html#Syncfusion_EJ2_Grids_GridColumn_IsFrozen) property.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/grid/scrolling/freeze-column/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Freeze-column.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/grid/scrolling/freeze-column/freeze-column.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-mvc/grid/scrolling/freeze-column/razor %}
@@ -77,7 +49,6 @@ In this demo, the columns with field name **OrderID** and **CustomerID** is froz
 {% include code-snippet/grid-sdk/asp-net-mvc/grid/scrolling/freeze-column/freeze-column.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 
 
@@ -93,19 +64,6 @@ Types of the [`column.freeze`](https://help.syncfusion.com/cr/aspnetcore-js2/Syn
 
 In this demo, the **ShipCountry** column is frozen at the left and the **CustomerID** column is frozen at the right side of the content table.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/grid/scrolling/column-level-frozen/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Freeze-column.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/grid/scrolling/column-level-frozen/freeze-column.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-mvc/grid/scrolling/column-level-frozen/razor %}
@@ -114,7 +72,6 @@ In this demo, the **ShipCountry** column is frozen at the left and the **Custome
 {% include code-snippet/grid-sdk/asp-net-mvc/grid/scrolling/column-level-frozen/freeze-column.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 
 

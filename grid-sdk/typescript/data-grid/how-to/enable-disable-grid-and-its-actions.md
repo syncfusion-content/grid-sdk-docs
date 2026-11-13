@@ -1,10 +1,9 @@
 ---
 layout: post
-title: Enable disable grid and its actions in TypeScript Grid control | Syncfusion
+title: Enable or Disable TypeScript Grid Actions | Syncfusion
 description: Learn here all about Enable disable grid and its actions in Syncfusion TypeScript Grid control of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Enable disable grid and its actions 
-publishingplatform: grid-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
@@ -30,7 +29,7 @@ Create CSS class with custom style to override the default style of Grid.
 
 **Step 2**:
 
-Add/Remove the CSS class to the Grid in the [click](../../api/button#click) event handler of Button.
+Add/Remove the CSS class to the Grid in the [click](https://ej2.syncfusion.com/documentation/api/button#click) event handler of Button.
 
 ```ts
     document.getElementById('primarybtn').addEventListener('click', () => {
@@ -48,7 +47,6 @@ Add/Remove the CSS class to the Grid in the [click](../../api/button#click) even
 
 In the example below, clicking the button will toggle the enable/disable state of the Grid and its actions:
 
-{% if page.publishingplatform == "typescript" %}
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -60,17 +58,3 @@ In the example below, clicking the button will toggle the enable/disable state o
 {% endtabs %}
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/disablegrid-cs2" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/grid/disablegrid-cs2/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/disablegrid-cs2/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/disablegrid-cs2" %}
-{% endif %}

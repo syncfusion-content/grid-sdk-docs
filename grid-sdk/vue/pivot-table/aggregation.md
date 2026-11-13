@@ -3,7 +3,7 @@ layout: post
 title: Aggregation in Vue Pivot Table | Syncfusion
 description: Learn how the Vue Pivot Table aggregates value fields with built-in types like Sum, Count, Average, Min, Max, and running totals at runtime.
 control: Aggregation 
-platform: ej2-vue
+platform: grid-sdk
 documentation: ug
 domainurl: ##DomainURL##
 ---

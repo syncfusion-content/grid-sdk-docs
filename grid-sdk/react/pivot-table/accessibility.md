@@ -3,7 +3,7 @@ layout: post
 title: Accessibility in React Pivot Table | Syncfusion
 description: Learn how the React Pivot Table supports WAI-ARIA roles, keyboard navigation, and screen reader support that align with WCAG 2.2 and Section 508 guidelines.
 control: Pivot Table
-platform: ej2-react
+platform: grid-sdk
 documentation: ug
 domainurl: ##DomainURL##
 ---
@@ -267,5 +267,5 @@ The following sample demonstrates the accessibility compliance of the Pivot Tabl
 
 ## See Also
 
-* [Accessibility in Syncfusion<sup style="font-size:70%">&reg;</sup> React components](../common/accessibility) — Cross-component accessibility guidance that applies to all Syncfusion React controls.
-* [Globalization and localization in React Pivot Table](./globalization-and-localization) — Configure RTL, culture, and localization settings, which affect accessibility for non-English users.
+* [Accessibility in Syncfusion<sup style="font-size:70%">&reg;</sup> React components](https://ej2.syncfusion.com/react/documentation/common/accessibility) — Cross-component accessibility guidance that applies to all Syncfusion React controls.
+* [Globalization and localization in React Pivot Table](https://ej2.syncfusion.com/react/documentation/globalization-and-localization) — Configure RTL, culture, and localization settings, which affect accessibility for non-English users.

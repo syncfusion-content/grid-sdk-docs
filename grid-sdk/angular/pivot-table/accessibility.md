@@ -1,9 +1,9 @@
-﻿---
+---
 layout: post
 title: Accessibility in Angular Pivot Table | Syncfusion
 description: Learn how the Angular Pivot Table supports WAI-ARIA roles, keyboard navigation, and screen reader support that align with WCAG 2.2 and Section 508 guidelines.
 control: Pivot Table
-platform: ej2-angular
+platform: grid-sdk
 documentation: ug
 domainurl: ##DomainURL##
 ---
@@ -268,5 +268,5 @@ The following sample demonstrates the accessibility compliance of the Pivot Tabl
 
 ## See also
 
-* [Accessibility in Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components](../common/accessibility) — Cross-component accessibility guidance that applies to all Syncfusion Angular controls.
-* [Globalization and localization in Angular Pivot Table](./globalization-and-localization) — Configure RTL, culture, and localization settings, which affect accessibility for non-English users.
+* [Accessibility in Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components](https://ej2.syncfusion.com/angular/documentation/common/accessibility) — Cross-component accessibility guidance that applies to all Syncfusion Angular controls.
+* [Globalization and localization in Angular Pivot Table](https://ej2.syncfusion.com/angular/documentation/globalization-and-localization) — Configure RTL, culture, and localization settings, which affect accessibility for non-English users.

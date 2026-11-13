@@ -14,32 +14,32 @@ The available Grid modules are:
 
 | Feature | Module | Description |
 |---------|--------|-------------|
-| [Page](../api/grid/page) | `Page` | This module is used for the paging feature. |
-| [Sort](../api/grid/sort) | `Sort` | This module is used for the sorting feature. |
-| [Filter](../api/grid/filter) | `Filter` | This module is used for the filtering feature. |
-| [AdvancedFilter](../api/grid/advancedfilter)| Inject this module to use advanced filtering feature. |
-| [Group](../api/grid/group) | `Group` | This module is used for the grouping feature. |
-| [LazyLoadGroup](../api/grid/lazyLoadGroup) | `LazyLoadGroup` | This module is used for the lazy load grouping feature. |
-| [Edit](../api/grid/edit) | `Edit` | This module is used for the editing feature. |
-| [Formula](../api/grid/formula) | `Formula` | This module is used for the formula feature. |
-| [Aggregate](../api/grid/aggregate) | `Aggregate` | This module is used for the aggregate feature. |
-| [ColumnChooser](../api/grid/columnChooser) | `ColumnChooser` | This module is used for the column chooser feature. |
-| [ColumnMenu](../api/grid/columnmenumodule) | `ColumnMenu` | This module is used for the column menu feature. |
-| [CommandColumn](../api/grid/commandColumn) | `CommandColumn` | This module is used for the command column feature. |
-| [ContextMenu](../api/grid/contextMenu) | `ContextMenu` | This module is used for the context menu feature. |
-| [DetailRow](../api/grid/detailRow) | `DetailRow` | This module is used for the detail template feature. |
-| [ForeignKey](../api/grid/foreignkey) | `ForeignKey` | This module is used for the foreign key feature. |
-| [Freeze](../api/grid/freeze) | `Freeze` | This module is used for the frozen rows and columns feature. |
-| [Resize](../api/grid/resize) | `Resize` | This module is used for the resize feature. |
-| [Reorder](../api/grid/reorder) | `Reorder` | This module is used for the reorder feature. |
-| [RowDD](../api/grid/rowdd) | `RowDD` | This module is used for the row drag and drop feature. |
-| [Search](../api/grid/search) | `Search` | This module is used for the search feature and this is a default injected module. |
-| [Selection](../api/grid/selection) | `Selection` | This module is used for the selection feature and this is a default injected module. |
-| [VirtualScroll](../api/grid/virtualscroll) | `VirtualScroll` | This module is used for the virtual scrolling feature. |
-| [InfiniteScroll](../api/grid/infinitescroll) | `InfiniteScroll` | This module is used for the infinite scrolling feature. |
-| [Toolbar](../api/grid/toolbarmodule) | `Toolbar` | This module is used for the toolbar feature. |
-| [ExcelExport](../api/grid/excelexportmodule) | `ExcelExport` | This module is used for the excel export feature. |
-| [PdfExport](../api/grid/pdfexportmodule) | `PdfExport` | This module is used for the PDF export feature. |
+| [Page](./paging) | `Page` | This module is used for the paging feature. |
+| [Sort](./sorting) | `Sort` | This module is used for the sorting feature. |
+| [Filter](././filtering/filtering) | `Filter` | This module is used for the filtering feature. |
+| [AdvancedFilter](././filtering/advanced-filter)| Inject this module to use advanced filtering feature. |
+| [Group](././grouping/grouping) | `Group` | This module is used for the grouping feature. |
+| [LazyLoadGroup](././grouping/lazy-load-grouping) | `LazyLoadGroup` | This module is used for the lazy load grouping feature. |
+| [Edit](././editing/edit) | `Edit` | This module is used for the editing feature. |
+| [Formula](././formula/formula) | `Formula` | This module is used for the formula feature. |
+| [Aggregate](././aggregates/aggregates) | `Aggregate` | This module is used for the aggregate feature. |
+| [ColumnChooser](././columns/column-chooser) | `ColumnChooser` | This module is used for the column chooser feature. |
+| [ColumnMenu](././columns/column-menu) | `ColumnMenu` | This module is used for the column menu feature. |
+| [CommandColumn](././editing/command-column-editing) | `CommandColumn` | This module is used for the command column feature. |
+| [ContextMenu](./context-menu) | `ContextMenu` | This module is used for the context menu feature. |
+| [DetailRow](././row/detail-template) | `DetailRow` | This module is used for the detail template feature. |
+| [ForeignKey](././columns/foreign-key-column) | `ForeignKey` | This module is used for the foreign key feature. |
+| [Freeze](././columns/frozen-column) | `Freeze` | This module is used for the frozen rows and columns feature. |
+| [Resize](././columns/column-resizing) | `Resize` | This module is used for the resize feature. |
+| [Reorder](././columns/column-reorder) | `Reorder` | This module is used for the reorder feature. |
+| [RowDD](././row/row-drag-and-drop) | `RowDD` | This module is used for the row drag and drop feature. |
+| [Search](./searching) | `Search` | This module is used for the search feature and this is a default injected module. |
+| [Selection](././selection/selection) | `Selection` | This module is used for the selection feature and this is a default injected module. |
+| [VirtualScroll](././scrolling/virtual-scrolling) | `VirtualScroll` | This module is used for the virtual scrolling feature. |
+| [InfiniteScroll](././scrolling/infinite-scrolling) | `InfiniteScroll` | This module is used for the infinite scrolling feature. |
+| [Toolbar](././tool-bar/tool-bar) | `Toolbar` | This module is used for the toolbar feature. |
+| [ExcelExport](././excel-export/excel-exporting) | `ExcelExport` | This module is used for the excel export feature. |
+| [PdfExport](././pdf-export/pdf-export) | `PdfExport` | This module is used for the PDF export feature. |
 
 ## Enabling basic features
 

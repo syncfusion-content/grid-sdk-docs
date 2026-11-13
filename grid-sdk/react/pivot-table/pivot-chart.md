@@ -2,7 +2,7 @@
 layout: post
 title: Pivot Chart in React Pivot Table | Syncfusion
 description: Learn how the React Pivot Table visualizes aggregated values with a Pivot Chart that supports bar, line, pie, and other chart types, with drill and export.
-platform: ej2-react
+platform: grid-sdk
 control: Pivot Table
 documentation: ug
 domainurl: ##DomainURL##

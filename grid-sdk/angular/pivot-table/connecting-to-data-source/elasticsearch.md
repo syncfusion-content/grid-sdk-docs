@@ -2,7 +2,7 @@
 layout: post
 title: "Elasticsearch in Angular Pivot Table | Syncfusion"
 component: "Pivot Table"
-platform: ej2-angular
+platform: grid-sdk
 description: Learn how the Angular Pivot Table binds to an Elasticsearch index through an ASP.NET Core Web API and the NEST client library.
 control: Elasticsearch Data Binding
 documentation: ug

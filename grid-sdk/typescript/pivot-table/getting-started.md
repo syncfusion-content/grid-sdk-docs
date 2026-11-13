@@ -2,9 +2,8 @@
 layout: post
 title: Getting Started with TypeScript Pivot Table | Syncfusion
 description: Learn how to get started with the TypeScript Pivot Table. Explore setup, features, examples, and customization options.
-platform: ej2-javascript
+platform: grid-sdk
 control: Getting started
-publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---

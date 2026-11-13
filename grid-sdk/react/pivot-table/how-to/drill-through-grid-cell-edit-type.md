@@ -3,7 +3,7 @@ layout: post
 title: How to set the drill-through edit type in Pivot Table | Syncfusion
 description: Step-by-step example showing how to set the drill-through cell edit type in the React Pivot Table using the drillThrough event.
 control: Pivot Table
-platform: ej2-react
+platform: grid-sdk
 documentation: ug
 domainurl: ##DomainURL##
 ---

@@ -2,7 +2,7 @@
 layout: post
 title: "MySQL Data Binding in React Pivot Table component | Syncfusion"
 component: "Pivot Table"
-platform: ej2-react
+platform: grid-sdk
 description: "Connect MySQL to the React Pivot Table using ASP.NET Core Web API and MySqlConnector. Learn data binding, CRUD operations, and server-side integration."
 control: MySQL Data Binding
 documentation: ug

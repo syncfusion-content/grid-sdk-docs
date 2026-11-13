@@ -2,9 +2,8 @@
 layout: post
 title: Export table, chart to same document in Javascript | Syncfusion
 description: Learn here all about how to export table and chart into the same document using toolbar in Syncfusion Javascript of Syncfusion Essential JS 2 and more.
-platform: ej2-javascript
+platform: grid-sdk
 control: Export table and chart into the same document using toolbar 
-publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
@@ -27,7 +26,6 @@ Follow these steps to enable combined table and chart export:
 
 The following example demonstrates how to restrict the built-in export action by setting the [`args.cancel`](https://ej2.syncfusion.com/documentation/api/pivotview/pivotActionBeginEventArgs#cancel) option to **true** in the [`actionBegin`](https://ej2.syncfusion.com/documentation/api/pivotview/index-default#actionbegin) event, and then export both the table and the chart by calling the [`pdfExport`](https://ej2.syncfusion.com/documentation/api/pivotview/index-default#pdfexport) method with the `exportBothTableAndChart` argument set to **true**.
 
-{% if page.publishingplatform == "typescript" %}
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -39,17 +37,3 @@ The following example demonstrates how to restrict the built-in export action by
 {% endtabs %}
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs493" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs493/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs493/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs493" %}
-{% endif %}

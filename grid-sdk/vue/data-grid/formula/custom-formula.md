@@ -2,7 +2,7 @@
 layout: post
 title: Vue Grid Custom Formula Functions | Syncfusion
 description: Learn how to create and use custom formula functions in Vue Data Grid for your own business rules and calculations.
-platform: ej2-javascript
+platform: grid-sdk
 control: Custom Formula
 documentation: ug
 domainurl: ##DomainURL##
@@ -14,7 +14,7 @@ The formula engine supports custom functions in addition to the built-in functio
 
 ## Custom function API
 
-Use the [formulaSettings.customFunctions](../../api/grid/formulasettingsmodel#customfunctions)  property to define the custom formulas available in the Grid. Each custom function has a unique name, and its calculation logic is defined using a function that returns the computed result.
+Use the [formulaSettings.customFunctions](https://ej2.syncfusion.com/vue/documentation/api/grid/formulasettingsmodel#customfunctions)  property to define the custom formulas available in the Grid. Each custom function has a unique name, and its calculation logic is defined using a function that returns the computed result.
 
 | Property | Type | Description |
 | --- | --- | --- |

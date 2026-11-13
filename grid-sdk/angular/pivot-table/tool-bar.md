@@ -1,8 +1,8 @@
-﻿---
+---
 layout: post
 title: Toolbar in Angular Pivot Table | Syncfusion
 description: Learn how the Angular Pivot Table shows a built-in toolbar for switching between grid and chart, conditional formatting, and exports.
-platform: ej2-angular
+platform: grid-sdk
 control: Pivot Table
 documentation: ug
 domainurl: ##DomainURL##
@@ -72,7 +72,7 @@ To learn more about the supported chart types, see the [Pivot Chart documentatio
 
 In the pivot chart, users can switch between a single axis and multiple axes using a built-in checkbox located in the chart type dropdown menu on the toolbar. This option allows users to display data on multiple axes for better visualization. For more details, [refer here](https://ej2.syncfusion.com/angular/documentation/pivotview/pivot-chart#multiple-axis).
 
-![Switching to multiple axes](../images/chart-option.jpg)
+![Switching to multiple axes](../images/chart-option.png)
 
 The pivot chart supports three modes for multiple axes: `Stacked`, `Single`, and `Combined`. Users can select a mode from the "Multiple Axis Mode" dropdown list, which appears after clicking the **More...** option in the chart type dropdown menu.
 
@@ -1183,4 +1183,4 @@ The [`actionFailure`](https://ej2.syncfusion.com/angular/documentation/api/pivot
 
 ## See Also
 
-* [Toolbar Component](../toolbar/getting-started)
+* [Toolbar Component](https://ej2.syncfusion.com/angular/documentation/toolbar/getting-started)

@@ -4,7 +4,6 @@ title: Grouping Bar in ASP.NET Core Pivot Table | Syncfusion
 description: Learn how the ASP.NET Core Pivot Table Grouping Bar lets users drag fields between axes, apply sort and filter, and rearrange the pivot report at runtime.
 platform: grid-sdk
 control: Grouping Bar
-publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 

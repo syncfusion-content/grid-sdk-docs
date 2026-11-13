@@ -3,7 +3,7 @@ layout: post
 title: How to hide empty headers in Vue Pivot Table | Syncfusion
 description: Step-by-step example showing how to hide empty (Undefined) headers in the Vue Pivot Table by setting showHeaderWhenEmpty to false in dataSourceSettings.
 control: Hide empty headers 
-platform: ej2-vue
+platform: grid-sdk
 documentation: ug
 domainurl: ##DomainURL##
 ---

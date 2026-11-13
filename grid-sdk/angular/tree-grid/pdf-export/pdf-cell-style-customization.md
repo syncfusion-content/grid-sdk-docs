@@ -1,6 +1,6 @@
 ---
 layout: post
-title: PDF cell style customization in Angular TreeGrid component | Syncfusion
+title: PDF Cell Style Customization | Syncfusion
 description: Learn how to customize PDF cell styles in the Syncfusion Angular TreeGrid component, including conditional formatting and theme options for PDF export.
 platform: grid-sdk
 control: PDF cell style customization 
@@ -12,7 +12,7 @@ domainurl: https://help.syncfusion.com/grid-sdk
 
 ## Conditional cell formatting
 
-TreeGrid cells in the exported PDF can be customized or formatted using the [`pdfQueryCellInfo`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#pdfQueryCellInfo) event. This event allows conditional formatting of TreeGrid cells in the exported PDF document based on the column's cell values.
+TreeGrid cells in the exported PDF can be customized or formatted using the [`pdfQueryCellInfo`](https://ej2.syncfusion.com/angular/documentation/api/treegrid#pdfQueryCellInfo) event. This event allows conditional formatting of TreeGrid cells in the exported PDF document based on the column's cell values.
 
 In the example below, the background color of the `Duration` column in the exported PDF document is customized by setting the `backgroundColor` property of `args.cell` in the event handler.
 

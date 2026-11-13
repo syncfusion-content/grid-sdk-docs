@@ -4,7 +4,6 @@ title: Conditional Formatting in ASP.NET Core Pivot Table | Syncfusion
 description: Learn how the ASP.NET Core Pivot Table applies conditional formatting to value cells via the toolbar dialog or e-conditionalformatsettings, with custom colors.
 platform: grid-sdk
 control: Conditional Formatting
-publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
@@ -17,8 +16,6 @@ The conditional formatting can be applied at runtime through the built-in dialog
 
 > To use the conditional formatting feature, you need to inject the `ConditionalFormatting` module in Pivot Table.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/conditional-formatting/tool-bar/tagHelper %}
@@ -27,18 +24,6 @@ The conditional formatting can be applied at runtime through the built-in dialog
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/conditional-formatting/tool-bar/Formatting.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/conditional-formatting/tool-bar/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Formatting.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/conditional-formatting/tool-bar/Formatting.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 
 
@@ -76,8 +61,6 @@ The [`e-field-style`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.E
 ## Opening conditional formatting dialog programmatically
 
 Users can also access the conditional formatting dialog through external UI elements by calling the `showConditionalFormattingDialog` method. In the following example, an external button is used to open the conditional formatting dialog programmatically.
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/conditional-formatting/ui/tagHelper %}
@@ -86,18 +69,6 @@ Users can also access the conditional formatting dialog through external UI elem
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/conditional-formatting/ui/Formatting.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/conditional-formatting/ui/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Formatting.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/conditional-formatting/ui/Formatting.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 
 
@@ -112,8 +83,6 @@ The Pivot Table component allows you to apply conditional formatting to all valu
 To format all value fields together, use the 
 Conditional formatting can also be included in the pivot table through code-behind using the [`e-conditionalformatsettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewConditionalFormatSetting.html) property without specifying the [`measure`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewConditionalFormatSetting.html#Syncfusion_EJ2_PivotView_PivotViewConditionalFormatSetting_Measure) property. When the [`measure`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewConditionalFormatSetting.html#Syncfusion_EJ2_PivotView_PivotViewConditionalFormatSetting_Measure) property is omitted, the formatting rules are automatically applied to every value field in your Pivot Table, resulting in a uniform appearance for all value cells.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/conditional-formatting/code-behind/tagHelper %}
@@ -122,18 +91,6 @@ Conditional formatting can also be included in the pivot table through code-behi
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/conditional-formatting/code-behind/Formatting.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/conditional-formatting/code-behind/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Formatting.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/conditional-formatting/code-behind/Formatting.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 
 
@@ -144,8 +101,6 @@ Conditional formatting can also be included in the pivot table through code-behi
 To apply conditional formatting exclusively to a particular value field, set the [`measure`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewConditionalFormatSetting.html#Syncfusion_EJ2_PivotView_PivotViewConditionalFormatSetting_Measure) property with the specific value field name in 
 Conditional formatting can also be included in the pivot table through code-behind using the [`e-conditionalformatsettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewConditionalFormatSetting.html).
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/conditional-formatting/code-behind-specific/tagHelper %}
@@ -154,18 +109,6 @@ Conditional formatting can also be included in the pivot table through code-behi
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/conditional-formatting/code-behind-specific/Formatting.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/conditional-formatting/code-behind-specific/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Formatting.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/conditional-formatting/code-behind-specific/Formatting.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 
 
@@ -181,8 +124,6 @@ You can apply conditional formatting for specific row or column using [`label`](
 * [`value2`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewConditionalFormatSetting.html#Syncfusion_EJ2_PivotView_PivotViewConditionalFormatSetting_Value2): Specifies the end value.
 * [`style`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewStyle.html): Specifies the style for the cell.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/conditional-formatting/label/tagHelper %}
@@ -191,18 +132,6 @@ You can apply conditional formatting for specific row or column using [`label`](
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/conditional-formatting/label/LabelFormatting.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/conditional-formatting/label/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="LabelFormatting.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/conditional-formatting/label/LabelFormatting.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 
 ## Editing and removing existing conditional format
@@ -225,8 +154,6 @@ The `conditionalFormatting` event is triggered when the “ADD CONDITION” butt
 * `value1` - Allows to set the start value for applying conditional formatting.
 * `value2` - Allows to set the end value for applying conditional formatting. This property is applicable only for conditions like **Between** and **NotBetween**.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/conditional-formatting/event/tagHelper %}
@@ -235,15 +162,3 @@ The `conditionalFormatting` event is triggered when the “ADD CONDITION” butt
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/conditional-formatting/event/Formatting.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/conditional-formatting/event/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Formatting.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/conditional-formatting/event/Formatting.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}

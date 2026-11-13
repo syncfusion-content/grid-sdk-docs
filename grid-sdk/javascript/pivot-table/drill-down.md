@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Drill Down in ##Platform_Name## Pivot Table | Syncfusion
-description: Learn how the ##Platform_Name## Pivot Table expands or collapses hierarchical data with drill down, drill position, and `expandAll`.
-platform: ej2-javascript
+title: Drill Down in JavaScript Pivot Table | Syncfusion
+description: Learn how the JavaScript Pivot Table expands or collapses hierarchical data with drill down, drill position, and `expandAll`.
+platform: grid-sdk
 control: Drill down
-publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Drill Down in ##Platform_Name## Pivot Table
+# Drill Down in JavaScript Pivot Table
 
 ## Drill down and drill up
 

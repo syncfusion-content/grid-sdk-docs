@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Field List in ##Platform_Name## Pivot Table | Syncfusion
-description: Learn how the ##Platform_Name## Pivot Table shows a Field List to add, remove, and rearrange fields across axes, in either popup or stand-alone mode.
-platform: ej2-javascript
+title: Field List in TypeScript Pivot Table | Syncfusion
+description: Learn how the TypeScript Pivot Table shows a Field List to add, remove, and rearrange fields across axes, in either popup or stand-alone mode.
+platform: grid-sdk
 control: Field list
-publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Field List in ##Platform_Name## Pivot Table
+# Field List in TypeScript Pivot Table
 
 The Field List makes it easy to organize and analyze data in your Pivot Table. It provides a user-friendly interface similar to Microsoft Excel that allows you to add or remove fields and move them between different axes like columns, rows, values, and filters. You can also apply sorting and filtering options while working with your data.
 

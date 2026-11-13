@@ -5,7 +5,6 @@ description: Learn how to show custom tooltips on ASP.NET Core Pivot Table row a
 platform: grid-sdk
 control: Show tooltip for row and column headers 
 documentation: ug
-publishingplatform: ##Platform_Name##
 ---
 
 # How to Add Custom Tooltip to Headers in ASP.NET Core Pivot Table

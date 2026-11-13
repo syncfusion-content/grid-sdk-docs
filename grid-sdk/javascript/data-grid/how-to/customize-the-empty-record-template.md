@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Customize the Empty Record Template in JavaScript Grid control | Syncfusion
+title: Customize Empty Record Templates in JavaScript | Syncfusion
 description: Learn here all about Customize the Empty Record Template in Syncfusion JavaScript Grid control of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Customize the Empty Record Template
@@ -16,20 +16,6 @@ To activate this feature, set the `emptyRecordTemplate` property of the Grid. Th
 
 In the following example, an image and text have been rendered as a template to indicate that the grid has no data to display.
 
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/empty-record-template-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/empty-record-template-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/empty-record-template-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -41,4 +27,3 @@ In the following example, an image and text have been rendered as a template to 
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/empty-record-template-cs1" %}
-{% endif %}

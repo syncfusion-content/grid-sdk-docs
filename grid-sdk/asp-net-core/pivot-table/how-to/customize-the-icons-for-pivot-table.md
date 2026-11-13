@@ -1,10 +1,9 @@
 ---
 layout: post
-title: Customize The Icons For Pivot Table in ASP.NET Core Pivot Table Component
+title: Customize Pivot Table Icons in ASP.NET Core | Syncfusion
 description: Learn here all about Customize The Icons For Pivot Table in Syncfusion ASP.NET Core Pivot Table component of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Customize The Icons For Pivot Table
-publishingplatform: grid-sdk
 documentation: ug
 ---
 
@@ -24,8 +23,6 @@ You can customize the pivot button icons in the pivot table by overriding the cl
 
 In the below sample, pivot table is rendered with a customized pivot button icons.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/icon-customize/customize/tagHelper %}
@@ -34,17 +31,5 @@ In the below sample, pivot table is rendered with a customized pivot button icon
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/icon-customize/customize/IconCustomize.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/icon-customize/customize/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="IconCustomize.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/icon-customize/customize/IconCustomize.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 

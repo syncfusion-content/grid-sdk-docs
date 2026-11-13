@@ -4,7 +4,6 @@ title: Paging in ASP.NET Core Pivot Table | Syncfusion
 description: Learn how the ASP.NET Core Pivot Table splits large row and column datasets into pages via enablePaging and e-pageSettings, with a configurable pager UI.
 platform: grid-sdk
 control: Paging
-publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
@@ -31,8 +30,6 @@ You can also change the position, visibility, compact view, and template of the 
 
 > In order to see and use the pager UI, insert the `Pager` module into the pivot table using the `services` tag.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/paging/default/tagHelper %}
@@ -42,18 +39,6 @@ You can also change the position, visibility, compact view, and template of the 
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/paging/default/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Paging.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/paging/default/Paging.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
 ![Normal mode of Pager UI](images/Paging_UI.png)
 
 ### Show pager UI at top or bottom
@@ -61,8 +46,6 @@ You can also change the position, visibility, compact view, and template of the 
 The Pivot Table component allows you to configure the placement of the pager UI to match your layout preferences. You can display the pager UI either at the top or bottom of the pivot table by setting the [`position`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewPagerSettings.html#Syncfusion_EJ2_PivotView_PivotViewPagerSettings_Position) property within the [`e-pagerSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_PagerSettings) configuration. By default, the pager UI appears at the bottom, but setting the position property to **Top** places it above the pivot table. This can be ideal for layouts where navigation controls are preferred at the top for better visibility or alignment with other UI elements.
 
 The following code demonstrates how to configure the pager UI to appear at the top of the pivot table:
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -73,25 +56,11 @@ The following code demonstrates how to configure the pager UI to appear at the t
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/paging/position/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Paging.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/paging/position/Paging.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
 ![Pager UI at Top position](images/PagerPosition.png)
 
 ### Inverse pager
 
 The Pivot Table allows you to toggle the positions of the row and column pagers in the pager UI. By default, the row pager appears on the left side of the pager UI, and the column pager appears on the right. To swap these positions—displaying the column pager on the left and the row pager on the right—set the [`isInversed`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewPagerSettings.html#Syncfusion_EJ2_PivotView_PivotViewPagerSettings_IsInversed) property to **true** within the [`e-pagerSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_PagerSettings) configuration.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -102,25 +71,11 @@ The Pivot Table allows you to toggle the positions of the row and column pagers 
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/paging/inverse-pager/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Paging.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/paging/inverse-pager/Paging.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
 ![Inverse pager UI](images/PagerInverse.png)
 
 ### Compact view
 
 The Pivot Table provides a compact view for the pager UI, displaying only the previous and next navigation buttons to minimize the interface. To enable the compact view, set the [`enableCompactView`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewPagerSettings.html#Syncfusion_EJ2_PivotView_PivotViewPagerSettings_EnableCompactView) property to **true** within the [`e-pagerSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_PagerSettings) configuration. This streamlined layout focuses on essential navigation controls, ideal for layouts requiring a simplified paging experience.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -131,18 +86,6 @@ The Pivot Table provides a compact view for the pager UI, displaying only the pr
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/paging/compact-view/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Paging.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/paging/compact-view/Paging.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
 ![Compact view of pager UI](images/PagerCompactView.png)
 
 ### Show or hide paging option
@@ -150,8 +93,6 @@ The Pivot Table provides a compact view for the pager UI, displaying only the pr
 The Pivot Table allows you to control the visibility of the row and column pagers in the pager UI using the [`showRowPager`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewPagerSettings.html#Syncfusion_EJ2_PivotView_PivotViewPagerSettings_ShowRowPager) and [`showColumnPager`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewPagerSettings.html#Syncfusion_EJ2_PivotView_PivotViewPagerSettings_ShowColumnPager) properties within the [`e-pagerSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_PagerSettings) configuration. By default, both row and column pagers are visible in the pager UI. To hide either the row pager or the column pager, set the corresponding property to **false**. This allows you to display only the necessary navigation controls based on your layout requirements.
 
 The following code demonstrates how to hide the row pager by setting the [`showRowPager`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewPagerSettings.html#Syncfusion_EJ2_PivotView_PivotViewPagerSettings_ShowRowPager) property to **false**:
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -162,25 +103,11 @@ The following code demonstrates how to hide the row pager by setting the [`showR
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/paging/show-hide-pager/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Paging.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/paging/show-hide-pager/Paging.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
 ![Hided Row paging option](images/PagerHide.png)
 
 ### Show or hide page size
 
 The Pivot Table allows you to control the visibility of the "Rows per page" and "Columns per page" dropdowns in the pager UI using the [`showRowPageSize`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewPagerSettings.html#Syncfusion_EJ2_PivotView_PivotViewPagerSettings_ShowRowPageSize) and [`showColumnPageSize`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewPagerSettings.html#Syncfusion_EJ2_PivotView_PivotViewPagerSettings_ShowColumnPageSize) properties within the [`e-pagerSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_PagerSettings) configuration. These dropdowns display a list of predefined or user-defined page sizes, enabling you to adjust the number of rows or columns displayed per page at runtime. By default, both dropdowns are visible in the pager UI. To hide either the "Rows per page" or "Columns per page" dropdown, set the corresponding property to **false**.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -191,18 +118,6 @@ The Pivot Table allows you to control the visibility of the "Rows per page" and 
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/paging/show-hide-page-size/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Paging.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/paging/show-hide-page-size/Paging.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
 ![Hided Row and Column Page sizes](images/PagerSizeHide.png)
 
 ### Customize page size
@@ -210,8 +125,6 @@ The Pivot Table allows you to control the visibility of the "Rows per page" and 
 The Pivot Table allows you to specify a list of page sizes for the "Rows per page" and "Columns per page" dropdowns in the pager UI using the [`rowPageSizes`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewPagerSettings.html#Syncfusion_EJ2_PivotView_PivotViewPagerSettings_RowPageSizes) and [`columnPageSizes`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewPagerSettings.html#Syncfusion_EJ2_PivotView_PivotViewPagerSettings_ColumnPageSizes) properties within the [`e-pagerSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_PagerSettings) configuration. By default, the "Rows per page" dropdown includes page sizes of 10, 50, 100, and 200, while the "Columns per page" dropdown includes page sizes of 5, 10, 20, 50, and 100. To define a different set of page sizes, assign an array of numbers to the [`rowPageSizes`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewPagerSettings.html#Syncfusion_EJ2_PivotView_PivotViewPagerSettings_RowPageSizes) or [`columnPageSizes`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewPagerSettings.html#Syncfusion_EJ2_PivotView_PivotViewPagerSettings_ColumnPageSizes) properties.
 
 The following example sets the "Rows per page" dropdown with page sizes of 10, 20, 30, 40, and 50, and the "Columns per page" dropdown with page sizes of 5, 10, 15, 20, and 30:
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -222,18 +135,6 @@ The following example sets the "Rows per page" dropdown with page sizes of 10, 2
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/paging/page-size/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Paging.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/paging/page-size/Paging.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
 ![Customizing page size](images/PagerSize.png)
 
 ### Template
@@ -241,8 +142,6 @@ The following example sets the "Rows per page" dropdown with page sizes of 10, 2
 The Pivot Table allows you to define a custom layout for the pager UI using the [`template`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewPagerSettings.html#Syncfusion_EJ2_PivotView_PivotViewPagerSettings_Template) property within the [`e-pagerSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_PagerSettings) configuration. By default, the pager UI displays built-in navigation controls. To replace these with custom HTML elements, assign the ID of the custom elements to the [`template`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewPagerSettings.html#Syncfusion_EJ2_PivotView_PivotViewPagerSettings_Template) property. This enables you to create a unique pager interface that aligns with your application’s design requirements.
 
 This following example shows how to create a custom template for both row and column pagers. The HTML code is embedded within the JSX or TSX file and assigned to the [`template`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewPagerSettings.html#Syncfusion_EJ2_PivotView_PivotViewPagerSettings_Template) property. Then, during the [`dataBound`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_DataBound) event, the Syncfusion `Pager` control is appended to the designated HTML elements. You can configure the pager by setting properties like `pageSize`, `totalRecordsCount`, and `currentPage`. When you click on a custom row or column pager, the [`currentRowPage`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewPageSettings.html#Syncfusion_EJ2_PivotView_PivotViewPageSettings_CurrentRowPage) and [`currentColumnPage`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewPageSettings.html#Syncfusion_EJ2_PivotView_PivotViewPageSettings_CurrentColumnPage) properties in [`e-pageSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_PageSettings) are updated, enabling navigation with the custom pager.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -252,17 +151,5 @@ This following example shows how to create a custom template for both row and co
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/paging/template/Paging.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/paging/template/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Paging.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/paging/template/Paging.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 ![Pager UI customized by Template property](images/PagerTemplate.png)

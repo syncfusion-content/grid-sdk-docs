@@ -10,7 +10,7 @@ domainurl: https://help.syncfusion.com/grid-sdk
 
 # Filter Bar in JavaScript TreeGrid
 
-By setting the [`allowFiltering`](../../api/treegrid#allowfiltering) to true, the filter bar row will render next to the header, which allows you to filter data. You can filter the records with different expressions depending upon the column type.
+By setting the [`allowFiltering`](https://ej2.syncfusion.com/javascript/documentation/api/treegrid#allowfiltering) to true, the filter bar row will render next to the header, which allows you to filter data. You can filter the records with different expressions depending upon the column type.
 
  **Filter bar expressions:**
 
@@ -29,20 +29,6 @@ Expression |Example |Description |Column Type
 N/A |N/A | `Equal` operator will always be used for date filter. |Date
 N/A |N/A |`Equal` operator will always be used for Boolean filter. |Boolean
 
-{% if page.publishingplatform == "typescript" %}
-
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/treegrid/filtering-cs3/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/treegrid/filtering-cs3/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/treegrid/filtering-cs3" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -54,30 +40,15 @@ N/A |N/A |`Equal` operator will always be used for Boolean filter. |Boolean
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/treegrid/filtering-cs3" %}
-{% endif %}
 
 ## Filter bar template with custom component
 
-The [`filterBarTemplate`](../../api/treegrid/column#filterbartemplate) is used to add custom components to a particular column, and does the following functions:
+The [`filterBarTemplate`](https://ej2.syncfusion.com/javascript/documentation/api/treegrid/column#filterbartemplate) is used to add custom components to a particular column, and does the following functions:
   * `create`: Creates custom components.
   * `write`: Wires events for custom components.
 
 In the following sample, the dropdown is used as a custom component in the Duration column.
 
-{% if page.publishingplatform == "typescript" %}
-
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/treegrid/filtering-cs4/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/treegrid/filtering-cs4/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/treegrid/filtering-cs4" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -89,28 +60,13 @@ In the following sample, the dropdown is used as a custom component in the Durat
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/treegrid/filtering-cs4" %}
-{% endif %}
 
 ## Change default filter bar operator
 
-You can change the default filter operator by extending [`filterModule.filterOperators`](../../api/treegrid/filterSettings#operators) property in [`dataBound`](../../api/treegrid#databound) event.
+You can change the default filter operator by extending [`filterModule.filterOperators`](https://ej2.syncfusion.com/javascript/documentation/api/treegrid/filterSettings#operators) property in [`dataBound`](https://ej2.syncfusion.com/javascript/documentation/api/treegrid#databound) event.
 
 In the following sample, we have changed the default operator for string typed columns as `contains` from `startsWith`.
 
-{% if page.publishingplatform == "typescript" %}
-
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/treegrid/filtering-cs5/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/treegrid/filtering-cs5/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/treegrid/filtering-cs5" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -122,4 +78,3 @@ In the following sample, we have changed the default operator for string typed c
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/treegrid/filtering-cs5" %}
-{% endif %}

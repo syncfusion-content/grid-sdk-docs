@@ -12,7 +12,7 @@ domainurl: https://help.syncfusion.com/grid-sdk
 
 The TreeGrid component uses a hierarchical data binding approach and does not provide built-in support for foreign key datasources.
 
-To display foreign key values during initial rendering, utilize the [queryCellInfo](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#querycellinfo) event of the TreeGrid component. Additionally, by using the [editType](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column/#edittype) and [columns.edit](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column/#edit) properties of the TreeGrid Column, it is possible to render a DropDownList with an external or foreign datasource.
+To display foreign key values during initial rendering, utilize the [queryCellInfo](https://ej2.syncfusion.com/angular/documentation/api/treegrid#querycellinfo) event of the TreeGrid component. Additionally, by using the [editType](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column#edittype) and [columns.edit](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column#edit) properties of the TreeGrid Column, it is possible to render a DropDownList with an external or foreign datasource.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

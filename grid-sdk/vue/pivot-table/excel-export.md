@@ -3,7 +3,7 @@ layout: post
 title: Excel Export in Vue Pivot Table | Syncfusion
 description: Learn how the Vue Pivot Table exports data to Excel and CSV, exports multiple tables to one workbook, and applies custom cell styles and aggregates.
 control: Excel export 
-platform: ej2-vue
+platform: grid-sdk
 documentation: ug
 domainurl: ##DomainURL##
 ---

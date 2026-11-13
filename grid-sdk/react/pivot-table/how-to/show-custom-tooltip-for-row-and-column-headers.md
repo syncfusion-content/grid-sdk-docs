@@ -2,7 +2,7 @@
 layout: post
 title: How to add custom tooltips to Pivot Table headers | Syncfusion
 description: Step-by-step example showing how to add custom tooltips to headers in the React Pivot Table using the tooltipText event.
-platform: ej2-react
+platform: grid-sdk
 control: Pivot Table
 documentation: ug
 domainurl: ##DomainURL##

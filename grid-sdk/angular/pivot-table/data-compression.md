@@ -2,7 +2,7 @@
 layout: post
 title: Data Compression in Angular Pivot Table | Syncfusion
 description: Learn how the Angular Pivot Table uses allowDataCompression to compress raw data and render large datasets faster.
-platform: ej2-angular
+platform: grid-sdk
 control: Pivot Table 
 documentation: ug
 domainurl: ##DomainURL##

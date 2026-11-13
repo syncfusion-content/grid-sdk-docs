@@ -155,7 +155,7 @@ Here's how you can use the `addRules` method to add validation rules for custom 
 
 ## Render tab component inside the dialog template
 
-You can enhance the editing experience in the Grid by rendering a [Tab](../../../tab/index.html) component inside the dialog template. This feature is especially useful when you want to present multiple editing sections or categories in a tabbed layout, ensuring a more intuitive and easily navigable interface for data editing.
+You can enhance the editing experience in the Grid by rendering a [Tab](https://ej2.syncfusion.com/vue/documentation/tab/index.html) component inside the dialog template. This feature is especially useful when you want to present multiple editing sections or categories in a tabbed layout, ensuring a more intuitive and easily navigable interface for data editing.
 
 To enable this functionality, you need to set the [editSettings.mode](https://ej2.syncfusion.com/vue/documentation/api/grid/editSettings#mode) property of the Grid to **Dialog**. This configures the Grid to use the dialog editing mode. Additionally, you can use the [editSetting.template](https://ej2.syncfusion.com/vue/documentation/api/grid/editsettings#template) property to define a template variable that contains the `Tab` component and its corresponding content.
 

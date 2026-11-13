@@ -2,7 +2,7 @@
 layout: post
 title: How to Configure the Minimum Width in Angular Pivot Table | Syncfusion
 description: Step-by-step example showing how to configure the minimum width in the Angular Pivot Table, with code snippets and property references.
-platform: ej2-angular
+platform: grid-sdk
 control: Configuring the minimum width in the Pivot Table component
 documentation: ug
 domainurl: ##DomainURL##

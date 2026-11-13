@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Export TreeGrid on the server in Angular TreeGrid component | Syncfusion
-description: Learn how to perform server-side export of data in the Syncfusion Angular TreeGrid component of Essential JS 2, including Excel and CSV exporting, server configuration, and header rotation.
+title: Server-Side TreeGrid Export in Angular | Syncfusion
+description: Export Syncfusion Angular TreeGrid data to Excel or CSV on the server, configure export settings, and rotate column headers.
 platform: grid-sdk
 control: Exporting tree grid in server 
 documentation: ug
@@ -23,7 +23,7 @@ Server-side export functionality is provided in the Syncfusion.EJ2.TreeGridExpor
 
 The code snippet below demonstrates server configuration using an ASP.NET Core Controller Action.
 
-To export TreeGrid data on the server side, use the [`serverExcelExport`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#serverexcelexport) method to pass TreeGrid properties to the server export action.
+To export TreeGrid data on the server side, use the [`serverExcelExport`](https://ej2.syncfusion.com/angular/documentation/api/treegrid#serverexcelexport) method to pass TreeGrid properties to the server export action.
 
 ```typescript
 public IActionResult ServerSideExporting()
@@ -99,9 +99,9 @@ export class AppComponent implements OnInit {
 
 ## CSV export on the server side
 
-Export TreeGrid data to CSV by using the [`serverCsvExport`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#servercsvexport) method, which passes TreeGrid properties to the server.
+Export TreeGrid data to CSV by using the [`serverCsvExport`](https://ej2.syncfusion.com/angular/documentation/api/treegrid#servercsvexport) method, which passes TreeGrid properties to the server.
 
-The following demo demonstrates invoking this method in the [`toolbarClick`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#toolbarclick) event. On the server side, the TreeGrid properties are deserialized and passed to the [`ExportToCsv`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGridExport.TreeGridExcelExport.html#Syncfusion_EJ2_TreeGridExport_TreeGridExcelExport_ExportToCsv__1_Syncfusion_EJ2_TreeGrid_TreeGrid_System_Collections_IEnumerable_Syncfusion_EJ2_TreeGridExport_ExcelExportProperties_) method, exporting the data to CSV format.
+The following demo demonstrates invoking this method in the [`toolbarClick`](https://ej2.syncfusion.com/angular/documentation/api/treegrid#toolbarclick) event. On the server side, the TreeGrid properties are deserialized and passed to the [`ExportToCsv`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGridExport.TreeGridExcelExport.html#Syncfusion_EJ2_TreeGridExport_TreeGridExcelExport_ExportToCsv__1_Syncfusion_EJ2_TreeGrid_TreeGrid_System_Collections_IEnumerable_Syncfusion_EJ2_TreeGridExport_ExcelExportProperties_) method, exporting the data to CSV format.
 
 ```typescript
 public IActionResult ServerSideExporting()

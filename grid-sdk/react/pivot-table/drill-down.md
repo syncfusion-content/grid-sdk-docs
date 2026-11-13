@@ -3,7 +3,7 @@ layout: post
 title: Drill down in React Pivot Table | Syncfusion
 description: Learn how the React Pivot Table expands and collapses row and column members for hierarchical data exploration using built-in drill down and drill up.
 control: Pivot Table
-platform: ej2-react
+platform: grid-sdk
 documentation: ug
 domainurl: ##DomainURL##
 ---

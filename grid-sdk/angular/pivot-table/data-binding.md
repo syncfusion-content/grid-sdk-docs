@@ -2,7 +2,7 @@
 layout: post
 title: Data Binding in Angular Pivot Table | Syncfusion
 description: Learn how the Angular Pivot Table binds to JSON, CSV, and remote data sources like OData via DataManager and REST endpoints.
-platform: ej2-angular
+platform: grid-sdk
 control: Pivot Table 
 documentation: ug
 domainurl: ##DomainURL##

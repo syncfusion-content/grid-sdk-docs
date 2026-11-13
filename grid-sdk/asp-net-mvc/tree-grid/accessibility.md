@@ -102,4 +102,4 @@ The accessibility compliance of the Tree Grid component is shown in the followin
 {% previewsample "https://ej2.syncfusion.com/accessibility/tree-grid.html" %}
 
 ## See also
-* [Accessibility in Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC components](../common/accessibility)
+* [Accessibility in Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC components](https://ej2.syncfusion.com/aspnetmvc/documentation/common/accessibility)

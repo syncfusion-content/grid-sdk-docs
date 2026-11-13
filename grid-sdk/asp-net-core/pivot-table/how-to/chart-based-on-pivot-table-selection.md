@@ -4,7 +4,6 @@ title: How to Plot Chart from Cells in ASP.NET Core Pivot Table | Syncfusion
 description: Learn how to plot an ASP.NET Core Chart control from cells selected in the ASP.NET Core Pivot Table, using the cellSelected event and e-selectionSettings.
 platform: grid-sdk
 control: Chart Based On Pivot Table Selection
-publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 

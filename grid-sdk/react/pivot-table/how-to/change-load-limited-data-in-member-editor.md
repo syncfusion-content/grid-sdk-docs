@@ -3,7 +3,7 @@ layout: post
 title: How to limit member editor data in React Pivot Table | Syncfusion
 description: Step-by-step example showing how to limit data loaded in the member editor of the React Pivot Table using maxNodeLimitInMemberEditor.
 control: Pivot Table
-platform: ej2-react
+platform: grid-sdk
 documentation: ug
 domainurl: ##DomainURL##
 ---

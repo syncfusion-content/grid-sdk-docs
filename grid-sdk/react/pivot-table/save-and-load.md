@@ -3,7 +3,7 @@ layout: post
 title: Save and load report in React Pivot Table | Syncfusion
 description: Learn how the React Pivot Table exports the current report to JSON and reloads it later through custom toolbar options.
 control: Pivot Table
-platform: ej2-react
+platform: grid-sdk
 documentation: ug
 domainurl: ##DomainURL##
 ---

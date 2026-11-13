@@ -2,7 +2,7 @@
 layout: post
 title: "Microsoft SQL Server Data Binding in React Pivot Table | Syncfusion"
 component: "Pivot Table"
-platform: ej2-react
+platform: grid-sdk
 description: "Connect SQL Server to React Pivot Table using ASP.NET Core Web API. Learn data binding, CRUD operations, and server-side integration."
 control: Microsoft SQL Server Data Binding
 documentation: ug

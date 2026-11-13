@@ -2,7 +2,7 @@
 layout: post
 title: Print in React Pivot Table | Syncfusion
 description: Learn how the React Pivot Table prints pivot table and pivot chart content directly from the browser with options to control the print layout.
-platform: ej2-react
+platform: grid-sdk
 control: Pivot Table
 documentation: ug
 domainurl: ##DomainURL##
