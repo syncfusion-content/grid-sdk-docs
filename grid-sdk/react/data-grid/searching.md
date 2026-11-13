@@ -259,36 +259,30 @@ The following example searches only the "Customer ID", "Freight", and "Ship Coun
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/grid/searching-cs4" %}
 
-## Perform real-time search while typing
+## Search Modes
 
-The real-time search feature enables searching as each keystroke is entered into the search box. This provides immediate, dynamic search results without requiring pressing <kbd>Enter</kbd> or clicking a button.
+Search Modes lets you choose how the Grid applies search results. Use this section to switch between the two supported modes at runtime:
 
-Implementation of real-time search:
+- **Default Mode**: Search is executed only when the user presses the <kbd>Enter</kbd> key or clicking a button.
+- **Immediate Mode**: Search is executed automatically while typing based on the configured `immediateModeDelay`.
 
-1. Bind the `keyup` event to the search input element inside the grid's [created](https://ej2.syncfusion.com/react/documentation/api/grid#created) event.
-2. The `keyup` event triggers the search method on each keystroke.
-3. The grid results update in real-time as typing occurs.
+| Property | Accepted values | Behavior |
+|---|---|---|
+| `searchSettings.mode` | `Default`, `Immediate` | Controls whether search waits for <kbd>Enter</kbd> or runs automatically while typing. |
+| `searchSettings.immediateModeDelay` | Number in milliseconds | Sets the delay before search is triggered in `Immediate` mode. |
 
-In the following example, the `created` event of the grid binds the `keyup` event to the search input element. When typing occurs, the `keyup` event fires, retrieves the current search text from the input, and calls the grid's [search](https://ej2.syncfusion.com/react/documentation/api/grid#search) method with the new text. This produces real-time filtering as typing happens.
+The example below uses a dropdown to switch between the two modes at runtime. When **Immediate** is selected, the Grid updates `searchSettings.mode` to `Immediate` and sets `immediateModeDelay` to `1500`. When **Default** is selected, the Grid updates `searchSettings.mode` to `Default`.
 
 {% tabs %}
-{% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/grid/searching-cs6/app/App.jsx %}
-{% endhighlight %}
-{% highlight ts tabtitle="App.tsx" %}
+{% highlight tsx tabtitle="App.tsx" %}
 {% include code-snippet/grid-sdk/react/grid/searching-cs6/app/App.tsx %}
 {% endhighlight %}
-{% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/grid-sdk/react/grid/searching-cs6/app/datasource.jsx %}
-{% endhighlight %}
-{% highlight ts tabtitle="datasource.tsx" %}
+{% highlight tsx tabtitle="datasource.tsx" %}
 {% include code-snippet/grid-sdk/react/grid/searching-cs6/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/grid/searching-cs6" %}
-
-> Real-time search on keystroke may impact performance when the application works with large datasets (thousands of rows). Consider implementing a delayed search trigger or using initial search combined with external buttons for better performance with large data.
 
 ## Search based on formatted column values
 
