@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Excel Export Options in Syncfusion ASP.NET Core Grid Control | Syncfusion
+title: Excel Export Options in ASP.NET Core | Syncfusion
 description: Learn here all about Excel Export Options in Syncfusion ASP.NET Core Grid component of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Excel Export Options

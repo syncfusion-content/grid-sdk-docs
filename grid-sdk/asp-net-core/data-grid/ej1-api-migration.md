@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Ej1 Api Migration in ASP.NET Core Grid Component
+title: Ej1 Api Migration in ASP.NET Core Grid Component | Syncfusion
 description: Learn here all about Ej1 Api Migration in Syncfusion ASP.NET Core Grid component of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Ej1 Api Migration

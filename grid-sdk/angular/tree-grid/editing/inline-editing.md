@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Inline editing in Angular TreeGrid component | Syncfusion
-description: Learn how to use inline editing in the Syncfusion Angular TreeGrid component, including cell, row, and programmatic editing along with advanced editing features.
+description: Edit cells and rows in the Syncfusion Angular TreeGrid, perform CRUD operations programmatically, and configure confirmation dialogs.
 platform: grid-sdk
 control: Inline editing 
 documentation: ug

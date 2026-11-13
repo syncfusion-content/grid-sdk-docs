@@ -7,7 +7,7 @@ control: Cell
 documentation: ug
 ---
 
-# Cell in ASP.NET Core Syncfusion<sup style="font-size:70%">&reg;</sup> Grid component
+# Cell in Syncfusion ASP.NET Core Grid
 
 In the [ASP.NET Core DataGrid](https://www.syncfusion.com/aspnet-core-ui-controls/grid), a **cell** refers to an individual data point or a unit within a grid column that displays data. It represents the intersection of a row and a column, and it contains specific information associated with that row and column. Each cell can display text, numbers, or other content related to the data it represents. 
 

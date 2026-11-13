@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Show tooltip for headers in Javascript | Syncfusion
-description: Learn here all about Show tooltip for row and column headers in Syncfusion ##Platform_Name## Pivot Table component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Show tooltip for row and column headers in Syncfusion JavaScript Pivot Table component of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Show tooltip for row and column headers 
 documentation: ug

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Data Compression in ##Platform_Name## Pivot Table | Syncfusion
-description: Learn how the ##Platform_Name## Pivot Table compresses unique raw data via `allowDataCompression` to speed up rendering on large datasets.
+title: Data Compression in TypeScript Pivot Table | Syncfusion
+description: Learn how the TypeScript Pivot Table compresses unique raw data via `allowDataCompression` to speed up rendering on large datasets.
 platform: grid-sdk
 control: Data Compression
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Data Compression in ##Platform_Name## Pivot Table
+# Data Compression in TypeScript Pivot Table
 
 > This property is applicable only for the relational data source.
 

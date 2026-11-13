@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Add custom aggregation type to the menu in Javascript | Syncfusion
-description: Learn here all about how to add custom aggregation type to the menu in Syncfusion ##Platform_Name## Pivot Table component of Syncfusion Essential JS 2 and more.
+description: Learn here all about how to add custom aggregation type to the menu in Syncfusion JavaScript Pivot Table component of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Add custom aggregation type to the menu 
 documentation: ug

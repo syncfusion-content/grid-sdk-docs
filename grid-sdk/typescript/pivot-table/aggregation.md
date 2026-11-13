@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Aggregation in ##Platform_Name## Pivot Table | Syncfusion
-description: Learn how the ##Platform_Name## Pivot Table applies aggregation types like Sum, Count, and Average to value fields, with custom aggregations at runtime.
+title: Aggregation in TypeScript Pivot Table | Syncfusion
+description: Learn how the TypeScript Pivot Table applies aggregation types like Sum, Count, and Average to value fields, with custom aggregations at runtime.
 platform: grid-sdk
 control: Aggregation
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Aggregation in ##Platform_Name## Pivot Table
+# Aggregation in TypeScript Pivot Table
 
 > This feature is applicable only for the relational data source.
 

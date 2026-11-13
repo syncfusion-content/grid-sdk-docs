@@ -1,14 +1,14 @@
 ---
 layout: post
-title: EJ1 API Migration in ##Platform_Name## Pivot Table | Syncfusion
-description: Learn how the ##Platform_Name## Pivot Table migrates from Essential JS 1 to JS 2 with `dataSourceSettings`.
+title: EJ1 API Migration in JavaScript Pivot Table | Syncfusion
+description: Learn how the JavaScript Pivot Table migrates from Essential JS 1 to JS 2 with `dataSourceSettings`.
 platform: grid-sdk
 control: EJ1 API migration
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# EJ1 API Migration in ##Platform_Name## Pivot Table
+# EJ1 API Migration in JavaScript Pivot Table
 
 This article describes the API migration process of pivot table component from Essential<sup style="font-size:70%">&reg;</sup> JS 1 to Essential<sup style="font-size:70%">&reg;</sup> JS 2.
 

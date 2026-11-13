@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Performance best practices for Angular TreeGrid Component | Syncfusion
-description: Learn best practices for optimizing performance and fast data loading in the Syncfusion Angular TreeGrid component when working with large and complex hierarchical datasets.
+description: Improve Syncfusion Angular TreeGrid performance with data loading and rendering practices for large hierarchical datasets.
 platform: grid-sdk
 control: TreeGrid
 documentation: ug

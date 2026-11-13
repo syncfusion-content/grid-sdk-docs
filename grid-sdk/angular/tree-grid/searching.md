@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Searching in Angular TreeGrid component | Syncfusion
-description: Learn how to enable and customize searching in the Syncfusion Angular TreeGrid component, including search settings, operators, column-specific search, and advanced scenarios.
+description: Configure Syncfusion Angular TreeGrid search settings, operators, column-specific queries, and options for advanced search scenarios.
 platform: grid-sdk
 control: Searching 
 documentation: ug

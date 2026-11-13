@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Cell Selection in ASP.NET MVC Grid Component
+title: Cell Selection in ASP.NET MVC Grid Component | Syncfusion
 description: Learn here all about Cell Selection in Syncfusion ASP.NET MVC Grid component of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Cell Selection

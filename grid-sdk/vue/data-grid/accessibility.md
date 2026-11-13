@@ -453,4 +453,4 @@ components: {
 
 ## See also
 
-* [Accessibility in Syncfusion<sup style="font-size:70%">&reg;</sup> Vue components](../common/accessibility)
+* [Accessibility in Syncfusion<sup style="font-size:70%">&reg;</sup> Vue components](https://ej2.syncfusion.com/vue/documentation/common/accessibility)

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Enable Disable Grid And Its Actions in ASP.NET Core Grid Component
+title: Enable or Disable ASP.NET Core Grid Actions | Syncfusion
 description: Learn here all about Enable Disable Grid And Its Actions in Syncfusion ASP.NET Core Grid component of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Enable Disable Grid And Its Actions

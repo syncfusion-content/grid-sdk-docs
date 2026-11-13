@@ -1,16 +1,16 @@
 ---
 layout: post
-title: ##Platform_Name## Tree Grid DOM Virtualization | Syncfusion
-description: Learn how DOM virtualization in ##Platform_Name## Tree Grid improves large dataset performance through viewport rendering, and efficient scrolling.
+title: JavaScript Tree Grid DOM Virtualization | Syncfusion
+description: Learn how DOM virtualization in JavaScript Tree Grid improves large dataset performance through viewport rendering, and efficient scrolling.
 platform: grid-sdk
 control: DOM virtualization
 documentation: ug
 domainurl: ##DomainURL##
 ---
  
-# DOM Virtualization in ##Platform_Name## Tree Grid
+# DOM Virtualization in JavaScript Tree Grid
  
-DOM virtualization is a rendering technique that improves performance by displaying only the visible portion of data in the viewport, plus a configurable buffer zone. The Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## Tree Grid implements DOM virtualization to handle datasets ranging from thousands to millions of rows while maintaining smooth Tree Grid interactions.
+DOM virtualization is a rendering technique that improves performance by displaying only the visible portion of data in the viewport, plus a configurable buffer zone. The Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript Tree Grid implements DOM virtualization to handle datasets ranging from thousands to millions of rows while maintaining smooth Tree Grid interactions.
  
 Rendering every row and column in the DOM creates performance and memory challenges. Consider a dataset with 100,000 rows and 50 columns: without virtualization, the Tree Grid would create 5 million DOM elements. Modern browsers impose limits on DOM div heights (approximately 17.5-33.5 million pixels depending on the browser), constraining the maximum number of rows displayable at once. DOM virtualization addresses these constraints by rendering only cells within the current viewport, plus configurable buffer rows. Memory and processing requirements remain constant regardless of dataset size since only viewport and buffer cells render at any given time.
  

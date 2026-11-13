@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Cell in TypeScript Grid Control | Syncfusion
-description: Learn here all about cell support in Syncfusion TypeScript Grid control, it's elements, and more.
+description: Learn how to access and customize cells in the Syncfusion TypeScript Grid, including cell elements and supported cell interactions.
 platform: grid-sdk
 control: Cell 
 documentation: ug

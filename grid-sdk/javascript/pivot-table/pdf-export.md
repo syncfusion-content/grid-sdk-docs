@@ -1,14 +1,14 @@
 ---
 layout: post
-title: PDF Export in ##Platform_Name## Pivot Table | Syncfusion
-description: Learn how the ##Platform_Name## Pivot Table exports to PDF via `pdfExport`, with multiple Pivot Tables supported in a single document using `pivotTableIds`.
+title: PDF Export in JavaScript Pivot Table | Syncfusion
+description: Learn how the JavaScript Pivot Table exports to PDF via `pdfExport`, with multiple Pivot Tables supported in a single document using `pivotTableIds`.
 platform: grid-sdk
 control: PDF export
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# PDF Export in ##Platform_Name## Pivot Table
+# PDF Export in JavaScript Pivot Table
 
 The JavaScript Pivot Table lets users easily export their pivot table data as a PDF document. By setting the [`allowPdfExport`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/index-default#allowpdfexport) property to **true** in the Pivot Table configuration, users can enable PDF export. Once enabled, you can use the [`pdfExport`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/index-default#pdfexport) method to generate and download the PDF file.
 

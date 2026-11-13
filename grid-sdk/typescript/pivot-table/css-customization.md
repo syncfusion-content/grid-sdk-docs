@@ -1,14 +1,14 @@
 ---
 layout: post
-title: CSS Customization in ##Platform_Name## Pivot Table | Syncfusion
-description: Learn how the ##Platform_Name## Pivot Table uses CSS classes to style row headers, axes, and Field List areas.
+title: CSS Customization in TypeScript Pivot Table | Syncfusion
+description: Learn how the TypeScript Pivot Table uses CSS classes to style row headers, axes, and Field List areas.
 platform: grid-sdk
 control: CSS customization
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# CSS Customization in ##Platform_Name## Pivot Table
+# CSS Customization in TypeScript Pivot Table
 
 The TypeScript Pivot Table component provides extensive CSS customization options, allowing users to modify the visual appearance and layout of various pivot table elements. This includes styling row headers, column headers, value cells, summary cells, Field List components, and Grouping Bar areas to match application themes and design requirements.
 

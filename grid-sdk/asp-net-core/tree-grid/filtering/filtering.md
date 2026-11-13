@@ -1,14 +1,14 @@
 ---
 layout: post
-title: ##Platform_Name## TreeGrid Filtering | Syncfusion
-description: Learn how to use filtering in ##Platform_Name## TreeGrid, including filter bar, menu, Excel-like filtering, operators, and custom filter options.
+title: ASP.NET Core TreeGrid Filtering | Syncfusion
+description: Learn how to use filtering in ASP.NET Core TreeGrid, including filter bar, menu, Excel-like filtering, operators, and custom filter options.
 platform: grid-sdk
 control: Filtering
 documentation: ug
 ---
 
 
-# Filtering in ##Platform_Name## TreeGrid
+# Filtering in ASP.NET Core TreeGrid
 
 Filtering allows you to view specific or related records based on filter criteria. To enable filtering in the TreeGrid, set the [`allowFiltering`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.TreeGrid.TreeGrid.html#Syncfusion_EJ2_TreeGrid_TreeGrid_AllowFiltering) to true. Filtering options can be configured through [`FilterSettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.TreeGrid.TreeGridFilterSettings.html) tag helper.
 

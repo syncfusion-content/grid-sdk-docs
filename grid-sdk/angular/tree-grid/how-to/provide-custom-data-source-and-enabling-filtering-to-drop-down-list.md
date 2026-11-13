@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Provide custom data source and enable filtering for DropDownList in Angular TreeGrid component | Syncfusion
+title: Filter DropDownList Data in Angular TreeGrid | Syncfusion
 description: Learn how to provide a custom data source and enable filtering for DropDownList in the Syncfusion Angular TreeGrid component with column edit parameters.
 platform: grid-sdk
 control: Provide custom data source and enabling filtering to drop down list 
@@ -8,7 +8,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Provide custom data source and enable filtering for DropDownList in Angular TreeGrid component
+# Filter DropDownList Data in Angular TreeGrid
 
 A custom data source can be provided to the DropDownList by using the **params** property within [`columns.edit`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/column#edit) settings.
 

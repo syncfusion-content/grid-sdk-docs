@@ -1,14 +1,14 @@
 ---
 layout: post
-title: PostgreSQL in ##Platform_Name## Pivot Table | Syncfusion
-description: Learn how the ##Platform_Name## Pivot Table connects to PostgreSQL via Npgsql.EntityFrameworkCore.PostgreSQL and a Web API controller to fetch data.
+title: PostgreSQL in JavaScript Pivot Table | Syncfusion
+description: Learn how the JavaScript Pivot Table connects to PostgreSQL via Npgsql.EntityFrameworkCore.PostgreSQL and a Web API controller to fetch data.
 platform: grid-sdk
 control: PostgreSQL
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# PostgreSQL in ##Platform_Name## Pivot Table
+# PostgreSQL in JavaScript Pivot Table
 
 This guide explains how to retrieve data from a PostgreSQL database using the [Microsoft Npgsql](https://www.npgsql.org/doc/index.html) library and bind it to the Pivot Table through a Web API controller.
 

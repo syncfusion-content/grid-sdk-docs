@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Select TreeGrid rows based on certain condition in Angular TreeGrid component | Syncfusion
+title: Select TreeGrid Rows by Condition | Syncfusion
 description: Learn how to select TreeGrid rows based on specific conditions using the selectRows method in the Syncfusion Angular TreeGrid component.
 platform: grid-sdk
 control: Select treegrid rows based on certain condition 
@@ -8,7 +8,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Select TreeGrid rows based on certain condition in Angular TreeGrid component
+# Select TreeGrid Rows by Condition
 
 Rows can be selected in the TreeGrid based on specific conditions by using the [`selectRows`](https://ej2.syncfusion.com/angular/documentation/api/treegrid#selectrows) method within the [`dataBound`](https://ej2.syncfusion.com/angular/documentation/api/treegrid#databound) event of the TreeGrid.
 

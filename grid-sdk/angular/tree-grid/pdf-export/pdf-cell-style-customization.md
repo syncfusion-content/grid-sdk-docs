@@ -1,6 +1,6 @@
 ---
 layout: post
-title: PDF cell style customization in Angular TreeGrid component | Syncfusion
+title: PDF Cell Style Customization | Syncfusion
 description: Learn how to customize PDF cell styles in the Syncfusion Angular TreeGrid component, including conditional formatting and theme options for PDF export.
 platform: grid-sdk
 control: PDF cell style customization 

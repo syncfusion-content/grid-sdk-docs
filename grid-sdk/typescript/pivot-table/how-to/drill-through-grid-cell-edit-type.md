@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Drill through grid cell edit type in Javascript | Syncfusion
-description: Learn here all about Drill through grid cell edit type in Syncfusion ##Platform_Name## Pivot Table component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Drill through grid cell edit type in Syncfusion TypeScript Pivot Table component of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Drill through grid cell edit type 
 documentation: ug

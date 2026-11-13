@@ -1,14 +1,14 @@
 ---
 layout: post
-title: MongoDB in ##Platform_Name## Pivot Table | Syncfusion
-description: Learn how the ##Platform_Name## Pivot Table connects to MongoDB via the MongoDB.Driver library and a Web API controller.
+title: MongoDB in JavaScript Pivot Table | Syncfusion
+description: Learn how the JavaScript Pivot Table connects to MongoDB via the MongoDB.Driver library and a Web API controller.
 platform: grid-sdk
 control: MongoDB
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# MongoDB in ##Platform_Name## Pivot Table
+# MongoDB in JavaScript Pivot Table
 
 This guide explains how to retrieve data from a MongoDB database using the [MongoDB.Driver](https://www.nuget.org/packages/MongoDB.Driver) and [MongoDB.Bson](https://www.nuget.org/packages/MongoDB.Bson) libraries and bind it to the Pivot Table through a Web API controller.
 

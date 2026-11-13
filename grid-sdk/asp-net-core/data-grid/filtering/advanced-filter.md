@@ -1,7 +1,7 @@
 ---
 layout: post
-title: ##Platform_Name## Grid Advanced Filter | Syncfusion
-description: Learn how to use Advanced Filter in ##Platform_Name## Data Grid with Query Builder, multiple conditions, and logical operators.
+title: ASP.NET Core Grid Advanced Filter | Syncfusion
+description: Learn how to use Advanced Filter in ASP.NET Core Data Grid with Query Builder, multiple conditions, and logical operators.
 platform: grid-sdk
 control: Advanced Filter
 documentation: ug

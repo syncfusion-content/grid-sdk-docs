@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Row and Column in ##Platform_Name## Pivot Table | Syncfusion
-description: Learn how the ##Platform_Name## Pivot Table sets `height` and `width` in pixel, percentage, or auto formats, with a 400px minimum width for proper display.
+title: Row and Column in JavaScript Pivot Table | Syncfusion
+description: Learn how the JavaScript Pivot Table sets `height` and `width` in pixel, percentage, or auto formats, with a 400px minimum width for proper display.
 platform: grid-sdk
 control: Row and column
 documentation: ug
@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 <!-- markdownlint-disable MD012 -->
 
-# Row and Column in ##Platform_Name## Pivot Table
+# Row and Column in JavaScript Pivot Table
 
 ## Width and Height
 

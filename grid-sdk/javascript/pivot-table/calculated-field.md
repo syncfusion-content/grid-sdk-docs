@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Calculated Field in ##Platform_Name## Pivot Table | Syncfusion
-description: Learn how the ##Platform_Name## Pivot Table creates calculated fields via the dialog or `calculatedFieldSettings`.
+title: Calculated Field in JavaScript Pivot Table | Syncfusion
+description: Learn how the JavaScript Pivot Table creates calculated fields via the dialog or `calculatedFieldSettings`.
 platform: grid-sdk
 control: Calculated field
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Calculated Field in ##Platform_Name## Pivot Table
+# Calculated Field in JavaScript Pivot Table
 
 The calculated field feature enables users to create custom value fields using mathematical formulas and existing fields from their data source. Users can perform complex calculations with basic arithmetic operators and seamlessly integrate these custom fields into their pivot table for enhanced data visualization and reporting.
 

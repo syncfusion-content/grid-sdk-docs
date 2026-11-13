@@ -282,4 +282,4 @@ The accessibility compliance of the Grid control is shown in the following sampl
 
 ## See also
 
-* [Accessibility in Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript controls](../common/accessibility)
+* [Accessibility in Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript controls](https://ej2.syncfusion.com/javascript/documentation/common/accessibility)

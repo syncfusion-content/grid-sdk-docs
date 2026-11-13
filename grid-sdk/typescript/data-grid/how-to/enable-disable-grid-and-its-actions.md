@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Enable disable grid and its actions in TypeScript Grid control | Syncfusion
+title: Enable or Disable TypeScript Grid Actions | Syncfusion
 description: Learn here all about Enable disable grid and its actions in Syncfusion TypeScript Grid control of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Enable disable grid and its actions 

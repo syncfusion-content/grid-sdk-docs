@@ -210,30 +210,9 @@ The Grid component followed the [keyboard interaction](https://www.w3.org/WAI/AR
 
 The Syncfusion ASP.NET MVC Grid provides flexibility to prevent the default key action behavior based on your requirements. This enables you to intercept and customize the behavior when specific keys are pressed within a web application
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-To prevent the default key action behavior in the grid, you can utilize the [keyPressed](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_KeyPressed) event. This event is triggered for every key press, allowing you to customize the behavior based on the pressed key.
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 To prevent the default key action behavior in the grid, you can utilize the [KeyPressed](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_KeyPressed) event. This event is triggered for every key press, allowing you to customize the behavior based on the pressed key.
 
-{% endif %}
-
 The following example demonstrates how to prevent the default behavior of the **"ENTER"** key using the `keyPressed` event. 
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/grid/accessibility/prevent-key/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Accessibility.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/grid/accessibility/prevent-key/prevent-key.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -243,21 +222,12 @@ The following example demonstrates how to prevent the default behavior of the **
 {% include code-snippet/grid-sdk/asp-net-mvc/grid/accessibility/prevent-key/prevent-key.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ### Custom shortcut keys to perform grid actions
 
 The Syncfusion ASP.NET MVC Grid component enables you to enhance the usability of keyboard shortcuts for various grid actions and navigation. In addition to the built-in keyboard navigation capabilities, you can implement custom keyboard shortcuts to execute specific actions.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-To achieve this, you can utilize the [keyPressed](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_KeyPressed) event of the grid. This event is triggered for every key press, allowing you to customize the behavior based on the pressed key.
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 To achieve this, you can utilize the [keyPressed](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_KeyPressed) event of the grid. This event is triggered for every key press, allowing you to customize the behavior based on the pressed key.
-
-{% endif %}
 
 The following example demonstrates how to perform grid actions using shortcut keys through the `keyPressed` event. Within the event, define the following custom shortcuts to perform various grid actions:
 
@@ -277,19 +247,6 @@ And prevented the default actions associated with the following keyboard shortcu
 
 You can add more custom shortcuts and actions as needed to enhance the functionality of your Syncfusion ASP.NET MVC Grid component.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/grid/accessibility/shortcut-key/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Accessibility.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/grid/accessibility/shortcut-key/shortcut-key.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-mvc/grid/accessibility/shortcut-key/razor %}
@@ -298,26 +255,12 @@ You can add more custom shortcuts and actions as needed to enhance the functiona
 {% include code-snippet/grid-sdk/asp-net-mvc/grid/accessibility/shortcut-key/shortcut-key.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 ## Ensuring accessibility
 
 The Grid component's accessibility levels are ensured through an [accessibility-checker](https://www.npmjs.com/package/accessibility-checker) and [axe-core](https://www.npmjs.com/package/axe-core) software tools during automated testing.
 
 The accessibility compliance of the Grid component is shown in the following sample. Open the [sample](https://ej2.syncfusion.com/accessibility/grid.html) in a new window to evaluate the accessibility of the Grid component with accessibility tools.
-
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/grid/accessibility/ensuring-accessibility/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Accessibility.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/grid/accessibility/ensuring-accessibility/ensuring-accessibility.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -327,10 +270,9 @@ The accessibility compliance of the Grid component is shown in the following sam
 {% include code-snippet/grid-sdk/asp-net-mvc/grid/accessibility/ensuring-accessibility/ensuring-accessibility.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 {% previewsample "https://ej2.syncfusion.com/accessibility/grid.html" %}
 
 ## See also
 
-* [Accessibility in Syncfusion<sup style="font-size:70%">&reg;</sup> Grid control](../common/accessibility)
+* [Accessibility in Syncfusion<sup style="font-size:70%">&reg;</sup> Grid control](https://ej2.syncfusion.com/aspnetmvc/documentation/common/accessibility)

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Customize column styles in Angular TreeGrid component | Syncfusion
-description: Learn how to customize column styles in the Syncfusion Angular TreeGrid component of Essential JS 2, including applying custom CSS to header and content cells using customAttributes.
+description: Style Syncfusion Angular TreeGrid header and content cells with custom CSS by configuring the column customAttributes property.
 platform: grid-sdk
 control: Customize column styles 
 documentation: ug

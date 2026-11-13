@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Summary Customization in ##Platform_Name## Pivot Table | Syncfusion
-description: Learn how the ##Platform_Name## Pivot Table shows or hides grand totals and sub-totals via `showGrandTotals` and `showSubTotals` row and column flags.
+title: Summary Customization in JavaScript Pivot Table | Syncfusion
+description: Learn how the JavaScript Pivot Table shows or hides grand totals and sub-totals via `showGrandTotals` and `showSubTotals` row and column flags.
 platform: grid-sdk
 control: Summary customization
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Summary Customization in ##Platform_Name## Pivot Table
+# Summary Customization in JavaScript Pivot Table
 
 ## Show or hide grand totals
 

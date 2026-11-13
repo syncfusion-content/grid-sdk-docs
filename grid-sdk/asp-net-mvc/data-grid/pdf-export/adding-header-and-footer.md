@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Adding Header and Footer in ASP.NET MVC Grid Component
+title: Adding Header and Footer in ASP.NET MVC Grid Component | Syncfusion
 description: Learn here all about Adding Header and Footer in Syncfusion ASP.NET MVC Grid component of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Adding Header and Footer

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Getting Started with ##Platform_Name## Pivot Table | Syncfusion
-description: Learn how to get started with the ##Platform_Name## Pivot Table. Explore setup, features, examples, and customization options.
+title: Getting Started with JavaScript Pivot Table | Syncfusion
+description: Learn how to get started with the JavaScript Pivot Table. Explore setup, features, examples, and customization options.
 platform: grid-sdk
 control: Getting started
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Getting Started with ##Platform_Name## Pivot Table
+# Getting Started with JavaScript Pivot Table
 
 This section explains the steps required to create a simple Essential<sup style="font-size:70%">&reg;</sup> JS 2 Pivot Table and demonstrate the basic usage of the Pivot Table control in a JavaScript application.
 

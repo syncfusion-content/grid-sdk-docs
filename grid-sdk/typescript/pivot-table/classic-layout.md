@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Classic Layout in ##Platform_Name## Pivot Table | Syncfusion
-description: Learn how the ##Platform_Name## Pivot Table renders the classic (tabular) layout by setting `gridSettings.layout` to Tabular.
+title: Classic Layout in TypeScript Pivot Table | Syncfusion
+description: Learn how the TypeScript Pivot Table renders the classic (tabular) layout by setting `gridSettings.layout` to Tabular.
 platform: grid-sdk
 control: Classic Layout
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Classic Layout in ##Platform_Name## Pivot Table
+# Classic Layout in TypeScript Pivot Table
 
 N> The classic layout is compatible only with relational data sources and operates in both client-side and server-side engines.
 

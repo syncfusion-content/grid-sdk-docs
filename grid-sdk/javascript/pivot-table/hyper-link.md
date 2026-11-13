@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Hyper Link in ##Platform_Name## Pivot Table | Syncfusion
-description: Learn how the ##Platform_Name## Pivot Table adds hyperlinks to row headers, column headers, value cells, and summary cells via `hyperlinkSettings`.
+title: Hyper Link in JavaScript Pivot Table | Syncfusion
+description: Learn how the JavaScript Pivot Table adds hyperlinks to row headers, column headers, value cells, and summary cells via `hyperlinkSettings`.
 platform: grid-sdk
 control: Hyper link
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Hyper Link in ##Platform_Name## Pivot Table
+# Hyper Link in JavaScript Pivot Table
 
 The Pivot Table component provides built-in support for displaying hyperlinks within individual cells. This feature allows users to link data in specific cells, enhancing interactivity and navigation.
 

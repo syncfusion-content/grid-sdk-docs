@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Paging in ##Platform_Name## Pivot Table | Syncfusion
-description: Learn how the ##Platform_Name## Pivot Table paginates large row and column data via `enablePaging` and `pageSettings`, with a built-in pager UI for navigation.
+title: Paging in JavaScript Pivot Table | Syncfusion
+description: Learn how the JavaScript Pivot Table paginates large row and column data via `enablePaging` and `pageSettings`, with a built-in pager UI for navigation.
 platform: grid-sdk
 control: Paging
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Paging in ##Platform_Name## Pivot Table
+# Paging in JavaScript Pivot Table
 
 The paging feature in the Pivot Table component is designed to handle large datasets efficiently by dividing the data into manageable pages. This prevents performance issues associated with rendering large amounts of data at once, allowing users to navigate through rows and columns page by page.
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Resize the Syncfusion Grid in Various Dimensions in ASP.NET Core Grid Component
+title: Resize the ASP.NET Core Grid | Syncfusion
 description: Learn here all about Resize the Grid in various dimension in Syncfusion ASP.NET Core Grid component of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Resize the Grid in various dimension

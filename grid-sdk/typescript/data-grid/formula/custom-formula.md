@@ -8,7 +8,7 @@ documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Custom Formula Functions in ##Platform_Name## Data Grid
+# Custom Formula Functions in TypeScript Data Grid
 
 The formula engine supports custom functions in addition to the built-in functions. Registered functions can be used in formulas to perform custom calculations.
 

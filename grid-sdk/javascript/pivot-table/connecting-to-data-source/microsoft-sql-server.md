@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Microsoft SQL Server in ##Platform_Name## Pivot Table | Syncfusion
-description: Learn how the ##Platform_Name## Pivot Table connects to Microsoft SQL Server via Microsoft SqlClient and a Web API controller to fetch and bind data at runtime.
+title: Microsoft SQL Server in JavaScript Pivot Table | Syncfusion
+description: Learn how the JavaScript Pivot Table connects to Microsoft SQL Server via Microsoft SqlClient and a Web API controller to fetch and bind data at runtime.
 platform: grid-sdk
 control: Microsoft SQL Server
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Microsoft SQL Server in ##Platform_Name## Pivot Table
+# Microsoft SQL Server in JavaScript Pivot Table
 
 This section describes how to retrieve data from SQL Server database using [Microsoft SqlClient](https://learn.microsoft.com/en-us/dotnet/api/system.data.sqlclient?view=dotnet-plat-ext-7.0) and bind it to the Pivot Table via a Web API controller.
 

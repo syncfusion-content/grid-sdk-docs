@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Exporting grid in cordova application in TypeScript Grid control | Syncfusion
+title: Export TypeScript Grid in Cordova | Syncfusion
 description: Learn here all about Exporting grid in cordova application in Syncfusion TypeScript Grid control of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Exporting grid in cordova application 

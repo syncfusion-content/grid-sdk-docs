@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Context menu in Angular TreeGrid component | Syncfusion
-description: Learn about the context menu in the Syncfusion Angular TreeGrid component, including default and custom menu items, dynamic enable/disable, and API integration for advanced actions.
+description: Configure default and custom context-menu items in Syncfusion Angular TreeGrid, including dynamic enablement and custom actions.
 platform: grid-sdk
 control: Context menu 
 documentation: ug

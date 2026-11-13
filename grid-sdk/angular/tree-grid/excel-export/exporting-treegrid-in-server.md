@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Export TreeGrid on the server in Angular TreeGrid component | Syncfusion
-description: Learn how to perform server-side export of data in the Syncfusion Angular TreeGrid component of Essential JS 2, including Excel and CSV exporting, server configuration, and header rotation.
+title: Server-Side TreeGrid Export in Angular | Syncfusion
+description: Export Syncfusion Angular TreeGrid data to Excel or CSV on the server, configure export settings, and rotate column headers.
 platform: grid-sdk
 control: Exporting tree grid in server 
 documentation: ug

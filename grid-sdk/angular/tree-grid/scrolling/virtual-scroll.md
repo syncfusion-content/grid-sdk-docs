@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Virtual scroll in Angular TreeGrid component | Syncfusion
-description: Learn how to use virtual scroll in the Syncfusion Angular TreeGrid component, including efficient handling of large datasets, configuration of row and column virtualization, browser limits, and performance tips.
+description: Use row and column virtualization to handle large Syncfusion Angular TreeGrid datasets, configure virtual scrolling, and improve performance.
 platform: grid-sdk
 control: Virtual scroll
 documentation: ug

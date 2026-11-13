@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Reactive Aggregate in ASP.NET Core Grid Component
+title: Reactive Aggregate in ASP.NET Core Grid Component | Syncfusion
 description: Learn here all about Reactive Aggregate in Syncfusion ASP.NET Core Grid component of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Reactive Aggregate

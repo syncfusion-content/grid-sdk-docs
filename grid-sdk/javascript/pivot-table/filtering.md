@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Filtering in ##Platform_Name## Pivot Table | Syncfusion
-description: Learn how the ##Platform_Name## Pivot Table filters data using member, label, and value filters applied through the Field List, Grouping Bar, or code-behind.
+title: Filtering in JavaScript Pivot Table | Syncfusion
+description: Learn how the JavaScript Pivot Table filters data using member, label, and value filters applied through the Field List, Grouping Bar, or code-behind.
 platform: grid-sdk
 control: Filtering
 documentation: ug
@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 <!-- markdownlint-disable MD012 -->
 
-# Filtering in ##Platform_Name## Pivot Table
+# Filtering in JavaScript Pivot Table
 
 Filtering helps you focus on specific data by showing only the records you need in the Pivot Table. This allows you to analyze relevant information more effectively by including or excluding specific members through the user interface or programmatically.
 

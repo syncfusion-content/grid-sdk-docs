@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Refresh The Field List in ASP.NET Core Pivot Table Component
+title: Refresh Pivot Table Field List | Syncfusion
 description: Learn here all about Refresh The Field List in Syncfusion ASP.NET Core Pivot Table component of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Refresh The Field List

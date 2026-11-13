@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Accessibility in ##Platform_Name## Pivot Table | Syncfusion
-description: Learn how the ##Platform_Name## Pivot Table supports WAI-ARIA roles, full keyboard navigation, and screen reader support that comply with WCAG 2.2.
+title: Accessibility in TypeScript Pivot Table | Syncfusion
+description: Learn how the TypeScript Pivot Table supports WAI-ARIA roles, full keyboard navigation, and screen reader support that comply with WCAG 2.2.
 control: Accessibility
 platform: grid-sdk
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Accessibility in ##Platform_Name## Pivot Table
+# Accessibility in TypeScript Pivot Table
 
 The pivot table component followed the accessibility guidelines and standards, including [ADA](https://www.ada.gov/), [Section 508](https://www.section508.gov/), [WCAG 2.2](https://www.w3.org/TR/WCAG22/) standards, and [WCAG roles](https://www.w3.org/TR/wai-aria/#roles) that are commonly used to evaluate accessibility.
 

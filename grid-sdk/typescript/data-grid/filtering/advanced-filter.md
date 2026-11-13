@@ -1,14 +1,14 @@
 ---
 layout: post
-title: ##Platform_Name## Grid Advanced Filtering | Syncfusion
-description: Learn how to use Advanced Filtering in ##Platform_Name## Data Grid with Query Builder, multiple conditions, and logical operators.
+title: TypeScript Grid Advanced Filtering | Syncfusion
+description: Learn how to use Advanced Filtering in TypeScript Data Grid with Query Builder, multiple conditions, and logical operators.
 platform: grid-sdk
 control: Advanced filter
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Advanced Filtering in ##Platform_Name## Data Grid
+# Advanced Filtering in TypeScript Data Grid
 
 The Syncfusion<sup style="font-size:70%">&reg;</sup> Grid component provides advanced filtering functionality through the Query Builder interface, which enables the creation of complex filtering conditions with multiple criteria and logical operators.
 

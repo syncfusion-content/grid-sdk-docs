@@ -1,7 +1,7 @@
-https://help.syncfusion.com/samples/grid-sdk/angular/treegridhttps://help.syncfusion.com/samples/grid-sdk/angular/treegridhttps://help.syncfusion.com/samples/grid-sdk/angular/treegrid---
+---
 layout: post
 title: Paging in Angular TreeGrid component | Syncfusion
-description: Learn how to use paging in the Syncfusion Angular TreeGrid component, including configuration, customization, and advanced pagination features for handling large datasets.
+description: Configure paging in the Syncfusion Angular TreeGrid to navigate large datasets, customize page settings, and manage pagination behavior.
 platform: grid-sdk
 control: Paging 
 documentation: ug

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Globalization and localization in TypeScript Pivotview control | Syncfusion
+title: Globalization in TypeScript Pivot Table | Syncfusion
 description: Learn here all about Globalization and localization in Syncfusion TypeScript Pivotview control of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Globalization and localization 

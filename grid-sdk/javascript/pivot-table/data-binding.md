@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Data Binding in ##Platform_Name## Pivot Table | Syncfusion
-description: Learn how the ##Platform_Name## Pivot Table binds JSON, CSV, and remote data via `dataSourceSettings.dataSource`, with `DataManager` and `CsvAdaptor` support.
+title: Data Binding in JavaScript Pivot Table | Syncfusion
+description: Learn how the JavaScript Pivot Table binds JSON, CSV, and remote data via `dataSourceSettings.dataSource`, with `DataManager` and `CsvAdaptor` support.
 platform: grid-sdk
 control: Data binding
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Data Binding in ##Platform_Name## Pivot Table
+# Data Binding in JavaScript Pivot Table
 
 ## JSON
 

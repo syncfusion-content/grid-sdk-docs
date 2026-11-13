@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Scaffolding in ASP.NET Core Grid Component
+title: Scaffolding in ASP.NET Core Grid Component | Syncfusion
 description: Learn here all about Scaffolding in Syncfusion ASP.NET Core Grid component of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Scaffolding
@@ -8,7 +8,7 @@ documentation: ug
 ---
 
 
-# Scaffolding
+# ASP.NET Core Grid Scaffolding
 
 Syncfusion<sup style="font-size:70%">&reg;</sup> provides the **Visual Studio Scaffolding** for the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC platform to quickly add code that interacts with data models and reduce the amount of time to develop with data operation in your project. Scaffolding provides an easier way to create Views and Controller action methods for Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC DataGrid controls.
 

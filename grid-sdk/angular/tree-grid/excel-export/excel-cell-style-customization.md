@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Excel cell style customization in Angular TreeGrid component | Syncfusion
+title: Excel Cell Style Customization | Syncfusion
 description: Learn how to customize Excel cell styles in the Syncfusion Angular TreeGrid component of Essential JS 2, including conditional formatting and theming options.
 platform: grid-sdk
 control: Excel cell style customization 

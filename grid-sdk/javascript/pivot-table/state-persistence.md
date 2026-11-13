@@ -1,14 +1,14 @@
 ---
 layout: post
-title: State Persistence in ##Platform_Name## Pivot Table | Syncfusion
-description: Learn how the ##Platform_Name## Pivot Table retains layout, fields, and filters across refreshes via `enablePersistence`.
+title: State Persistence in JavaScript Pivot Table | Syncfusion
+description: Learn how the JavaScript Pivot Table retains layout, fields, and filters across refreshes via `enablePersistence`.
 platform: grid-sdk
 control: State persistence
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# State Persistence in ##Platform_Name## Pivot Table
+# State Persistence in JavaScript Pivot Table
 
 State persistence enables users to automatically retain the entire configuration of the Pivot Table component in the browser's local storage (cookies). This includes the current layout, field arrangements, sorting, applied filters, and the expanded or collapsed states of fields. By enabling the [`enablePersistence`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/index-default#enablepersistence) property in the Pivot Table component, all these interactive states and settings are saved automatically. As a result, users can refresh the browser or navigate to different pages and return at any time, knowing that all modified report settings will be retained—ensuring a seamless and uninterrupted data analysis experience.
 

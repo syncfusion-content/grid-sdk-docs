@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Customize number date and time values in Javascript | Syncfusion
-description: Learn here all about Customize number date and time values in Syncfusion ##Platform_Name## Pivot Table component of Syncfusion Essential JS 2 and more.
+description: Learn here all about Customize number date and time values in Syncfusion TypeScript Pivot Table component of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Customize number date and time values 
 documentation: ug

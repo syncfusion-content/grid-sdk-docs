@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Customize The Icons For Pivot Table in ASP.NET Core Pivot Table Component
+title: Customize Pivot Table Icons in ASP.NET Core | Syncfusion
 description: Learn here all about Customize The Icons For Pivot Table in Syncfusion ASP.NET Core Pivot Table component of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Customize The Icons For Pivot Table

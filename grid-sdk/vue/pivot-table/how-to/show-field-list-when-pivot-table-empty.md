@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to show field list when pivot table is empty in Vue Pivot Table | Syncfusion
+title: Show Field List for an Empty Vue Pivot Table | Syncfusion
 description: Step-by-step example showing how to automatically show the field list when the Vue Pivot Table is empty, by calling onShowFieldList in the dataBound event.
 control: Show field list when pivot table empty 
 platform: grid-sdk

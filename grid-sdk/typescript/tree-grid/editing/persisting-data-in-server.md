@@ -1,14 +1,14 @@
 ---
 layout: post
-title: ##Platform_Name## TreeGrid Persisting Data in Server | Syncfusion
-description: Learn how to persist edited data in a database using RESTful services and DataManager in the ##Platform_Name## TreeGrid.
+title: TypeScript TreeGrid Persisting Data in Server | Syncfusion
+description: Learn how to persist edited data in a database using RESTful services and DataManager in the TypeScript TreeGrid.
 platform: grid-sdk
 control: Persisting data in server
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Persisting data in Server in ##Platform_Name## TreeGrid
+# Persisting data in Server in TypeScript TreeGrid
 
 Edited data can be persisted in the database using the RESTful web services.
 

@@ -1,14 +1,14 @@
 ---
 layout: post
-title: OLAP in ##Platform_Name## Pivot Table | Syncfusion
-description: Learn how the ##Platform_Name## Pivot Table connects to OLAP data sources and supports MDX queries with axis configuration.
+title: OLAP in TypeScript Pivot Table | Syncfusion
+description: Learn how the TypeScript Pivot Table connects to OLAP data sources and supports MDX queries with axis configuration.
 platform: grid-sdk
 control: OLAP
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# OLAP in ##Platform_Name## Pivot Table
+# OLAP in TypeScript Pivot Table
 
 ## Getting Started
 

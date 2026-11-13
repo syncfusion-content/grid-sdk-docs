@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Changing PivotView minimum height in Javascript | Syncfusion
-description: Learn here all about Changing the pivotview component minimum height in Syncfusion ##Platform_Name## Pivot Table component of Syncfusion Essential JS 2 and more.
+description: Set the minimum height of the Syncfusion JavaScript Pivot Table to control its layout in responsive applications.
 platform: grid-sdk
 control: Changing the pivotview component minimum height 
 documentation: ug

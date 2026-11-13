@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Grouping in ##Platform_Name## Pivot Table | Syncfusion
-description: Learn how the ##Platform_Name## Pivot Table groups date, number, and string fields into ranges, with date, number, and custom grouping via `allowGrouping`.
+title: Grouping in JavaScript Pivot Table | Syncfusion
+description: Learn how the JavaScript Pivot Table groups date, number, and string fields into ranges, with date, number, and custom grouping via `allowGrouping`.
 platform: grid-sdk
 control: Grouping
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Grouping in ##Platform_Name## Pivot Table
+# Grouping in JavaScript Pivot Table
 
 > This feature is applicable only for the relational data source.
 

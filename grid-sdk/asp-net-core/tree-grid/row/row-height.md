@@ -1,13 +1,13 @@
 ---
 layout: post
-title: ##Platform_Name## TreeGrid Row Height | Syncfusion
-description: Learn how to use Row Height in ##Platform_Name## TreeGrid to customize row size, improve data readability, and adjust grid layout based on content.
+title: ASP.NET Core TreeGrid Row Height | Syncfusion
+description: Learn how to use Row Height in ASP.NET Core TreeGrid to customize row size, improve data readability, and adjust grid layout based on content.
 platform: grid-sdk
 control: Row Height
 documentation: ug
 ---
 
-# Row Height in ##Platform_Name## TreeGrid
+# Row Height in ASP.NET Core TreeGrid
 
 You can customize the row height of treegrid rows through the [`rowHeight`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.TreeGrid.TreeGrid.html#Syncfusion_EJ2_TreeGrid_TreeGrid_RowHeight) property. The [`rowHeight`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.TreeGrid.TreeGrid.html#Syncfusion_EJ2_TreeGrid_TreeGrid_RowHeight) property is used to change the row height of entire treegrid rows.
 

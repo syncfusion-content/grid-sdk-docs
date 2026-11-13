@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Tool Tip in ##Platform_Name## Pivot Table | Syncfusion
-description: Learn how the ##Platform_Name## Pivot Table shows contextual cell tooltips on hover via `showTooltip`, with `tooltipTemplate` for custom HTML using placeholders.
+title: Tool Tip in JavaScript Pivot Table | Syncfusion
+description: Show contextual cell tooltips in Syncfusion JavaScript Pivot Table with showTooltip and customize content using tooltipTemplate.
 platform: grid-sdk
 control: Tool tip
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Tool Tip in ##Platform_Name## Pivot Table
+# Tool Tip in JavaScript Pivot Table
 
 The tooltip displays contextual information when users hover over value cells in the pivot table. It can be enabled or disabled by setting the [`showTooltip`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/index-default#showtooltip) property to **true** or **false**. By default, tooltip is enabled in the pivot table and shows the cell value along with row and column header information.
 

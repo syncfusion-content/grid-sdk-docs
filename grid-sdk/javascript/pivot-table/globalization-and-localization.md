@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Globalization and localization in JavaScript Pivotview control | Syncfusion
+title: Globalization in JavaScript Pivot Table | Syncfusion
 description: Learn here all about Globalization and localization in Syncfusion JavaScript Pivotview control of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Globalization and localization 

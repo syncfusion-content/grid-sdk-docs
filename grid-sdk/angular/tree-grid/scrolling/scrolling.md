@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Scrolling in Angular TreeGrid component | Syncfusion
-description: Learn how to enable and configure scrolling in the Syncfusion Angular TreeGrid component, including responsive sizing, sticky headers, scroll-to-row, and hiding scrollbars.
+description: Configure Syncfusion Angular TreeGrid scrolling with responsive sizing, sticky headers, scroll-to-row behavior, and hidden scrollbars.
 platform: grid-sdk
 control: Scrolling
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Print in Angular TreeGrid component | Syncfusion
-description: Learn how to print the Syncfusion Angular TreeGrid component, including toolbar integration, printing modes, page setup, column visibility customization, and performance considerations.
+description: Print the Syncfusion Angular TreeGrid with toolbar commands, page settings, custom column visibility, and print-mode options.
 platform: grid-sdk
 control: Print 
 documentation: ug

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Changing The Pivotview Component Minimum Height in ASP.NET Core Pivot Table Component
+title: Set Pivot Table Height in ASP.NET Core | Syncfusion
 description: Learn here all about Changing The Pivotview Component Minimum Height in Syncfusion ASP.NET Core Pivot Table component of syncfusion and more.
 platform: grid-sdk
 control: Changing The Pivotview Component Minimum Height

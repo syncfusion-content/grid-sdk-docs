@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Virtual Scrolling in ##Platform_Name## Pivot Table | Syncfusion
-description: Learn how the ##Platform_Name## Pivot Table renders only visible rows and columns for large datasets via `enableVirtualization`.
+title: Virtual Scrolling in JavaScript Pivot Table | Syncfusion
+description: Learn how the JavaScript Pivot Table renders only visible rows and columns for large datasets via `enableVirtualization`.
 platform: grid-sdk
 control: Virtual scrolling
 documentation: ug
@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 <!-- markdownlint-disable MD036 -->
 
-# Virtual Scrolling in ##Platform_Name## Pivot Table
+# Virtual Scrolling in JavaScript Pivot Table
 
 ## Virtual Scrolling
 
