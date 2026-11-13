@@ -1,6 +1,6 @@
 @(Html.EJS().TreeGrid("TreeGrid")
         .AllowRowDragAndDrop(true)
-        .RowDropSettings(new Syncfusion.EJ2.TreeGrid.TreeGridRowDropSettings() { TargetID = new string[] { "destTree", "thirdTree" } })
+        .RowDropSettings(new Syncfusion.EJ2.TreeGrid.TreeGridRowDropSettings() { TargetID = new string[] { "secondTree", "thirdTree" } })
         .Height(275)
         .DataSource((IEnumerable<object>
         )ViewBag.datasource)
@@ -14,7 +14,7 @@
         })
         .ChildMapping("Children").TreeColumnIndex(1).Render())
 
-@(Html.EJS().TreeGrid("destTree")
+@(Html.EJS().TreeGrid("secondTree")
         .AllowRowDragAndDrop(true)
         .RowDropSettings(drop => drop.TargetID(new string[] { "TreeGrid", "thirdTree" }))
         .Height(275)
@@ -30,7 +30,7 @@
 
 @(Html.EJS().TreeGrid("thirdTree")
         .AllowRowDragAndDrop(true)
-        .RowDropSettings(drop => drop.TargetID(new string[] { "TreeGrid", "destTree" }))
+        .RowDropSettings(drop => drop.TargetID(new string[] { "TreeGrid", "secondTree" }))
         .Height(275)
         .SelectionSettings(selection => selection.Type(Syncfusion.EJ2.TreeGrid.SelectionType.Multiple))
         .Columns(col =>

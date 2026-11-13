@@ -23,7 +23,7 @@ import { sampleData } from './datasource';
                         </ejs-treegrid>
                     </div>
                     <div style="float:left;width:32%">
-                        <ejs-treegrid id='destTree' height='250' [allowRowDragAndDrop]='true' [treeColumnIndex]='1' [rowDropSettings]='second_treeDrop' childMapping='subtasks'
+                        <ejs-treegrid id='secondTree' height='250' [allowRowDragAndDrop]='true' [treeColumnIndex]='1' [rowDropSettings]='second_treeDrop' childMapping='subtasks'
                             [selectionSettings]='selectionSettings'>
                             <e-columns>
                                 <e-column field='taskID' headerText='Task ID' [isPrimaryKey]='true' textAlign='Right' width=90></e-column>
@@ -55,8 +55,8 @@ export class AppComponent implements OnInit {
     ngOnInit(): void {
         this.data = sampleData;
         this.selectionSettings = { type: 'Multiple' };
-        this.first_treeDrop = { targetID: ['destTree', 'thirdTree'] };
+        this.first_treeDrop = { targetID: ['secondTree', 'thirdTree'] };
         this.second_treeDrop = { targetID: ['TreeGrid', 'thirdTree'] };
-        this.third_treeDrop = { targetID: ['TreeGrid', 'destTree'] };
+        this.third_treeDrop = { targetID: ['TreeGrid', 'secondTree'] };
     }
 }

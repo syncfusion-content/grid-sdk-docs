@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Row drag and drop between multiple TreeGrids in ASP.NET Core TreeGrid | Syncfusion
+title: ASP.NET Core TreeGrid Row Drag and Drop Between TreeGrids | Syncfusion
 description: Learn how to drag and drop rows between three or more ASP.NET Core TreeGrids using the RowDropSettings TargetID array configuration.
 platform: grid-sdk
 control: Row drag and drop between multiple TreeGrids
@@ -20,7 +20,7 @@ Render each TreeGrid inside its own container element on the page. The element `
 ```html
 <div>
     <ejs-treegrid id="TreeGrid"></ejs-treegrid>
-    <ejs-treegrid id="destTree"></ejs-treegrid>
+    <ejs-treegrid id="secondTree"></ejs-treegrid>
     <ejs-treegrid id="thirdTree"></ejs-treegrid>
 </div>
 ```
@@ -44,10 +44,10 @@ The three TreeGrids above render on the same page. Each `<ejs-treegrid>` element
 Enable row drag and drop by setting the [AllowRowDragAndDrop](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.TreeGrid.TreeGrid.html#Syncfusion_EJ2_TreeGrid_TreeGrid_AllowRowDragAndDrop) property to **true**. To allow rows from a TreeGrid to be dropped into more than one destination, assign an array of element IDs to the [TargetID](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.TreeGrid.TreeGridRowDropSettings.html#Syncfusion_EJ2_TreeGrid_TreeGridRowDropSettings_TargetID) property of [RowDropSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.TreeGrid.TreeGridRowDropSettings.html).
 
 ```csharp
-new TreeGridRowDropSettings { TargetID = new[] { "destTree", "thirdTree" } }
+new TreeGridRowDropSettings { TargetID = new[] { "secondTree", "thirdTree" } }
 ```
 
-In this configuration, rows from the source TreeGrid can be dropped into both `destTree` and `thirdTree`.
+In this configuration, rows from the source TreeGrid can be dropped into both `secondTree` and `thirdTree`.
 
 ### Configure three connected TreeGrids
 
@@ -55,20 +55,20 @@ The following example configures three TreeGrids so that rows can move between a
 
 ```csharp
 TreeGrid:
-RowDropSettings = new TreeGridRowDropSettings { TargetID = new[] { "destTree", "thirdTree" } }
+RowDropSettings = new TreeGridRowDropSettings { TargetID = new[] { "secondTree", "thirdTree" } }
 
-destTree:
+secondTree:
 RowDropSettings = new TreeGridRowDropSettings { TargetID = new[] { "TreeGrid", "thirdTree" } }
 
 thirdTree:
-RowDropSettings = new TreeGridRowDropSettings { TargetID = new[] { "TreeGrid", "destTree" } }
+RowDropSettings = new TreeGridRowDropSettings { TargetID = new[] { "TreeGrid", "secondTree" } }
 ```
 
 The behavior of this configuration is as follows:
 
-- TreeGrid can drop rows into `destTree` and `thirdTree`.
-- `destTree` can drop rows into `TreeGrid` and `thirdTree`.
-- `thirdTree` can drop rows into `TreeGrid` and `destTree`.
+- TreeGrid can drop rows into `secondTree` and `thirdTree`.
+- `secondTree` can drop rows into `TreeGrid` and `thirdTree`.
+- `thirdTree` can drop rows into `TreeGrid` and `secondTree`.
 - Every TreeGrid can act as both a source and a destination.
 
 N> * The selection feature must be enabled to drag and drop rows between multiple TreeGrids.

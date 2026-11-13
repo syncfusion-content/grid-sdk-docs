@@ -6,7 +6,7 @@ var treeGridObj = new ej.treegrid.TreeGrid({
     height: 275,
     treeColumnIndex: 1,
     allowRowDragAndDrop: true,
-    rowDropSettings: { targetID: ['destTree', 'thirdTree'] },
+    rowDropSettings: { targetID: ['secondTree', 'thirdTree'] },
     selectionSettings: { type: 'Multiple' },
     columns: [
             { field: 'taskID', headerText: 'Task ID', isPrimaryKey: true, width: 90, textAlign: 'Right' },
@@ -20,7 +20,7 @@ var treeGridObj = new ej.treegrid.TreeGrid({
 
 treeGridObj.appendTo('#TreeGrid');
 
-var destTree = new ej.treegrid.TreeGrid({
+var secondTree = new ej.treegrid.TreeGrid({
     dataSource: [],
     childMapping: 'subtasks',
     height: 275,
@@ -38,7 +38,7 @@ var destTree = new ej.treegrid.TreeGrid({
     ]
 });
 
-destTree.appendTo('#destTree');
+secondTree.appendTo('#secondTree');
 
 var thirdTree = new ej.treegrid.TreeGrid({
     dataSource: [],
@@ -46,7 +46,7 @@ var thirdTree = new ej.treegrid.TreeGrid({
     height: 275,
     treeColumnIndex: 1,
     allowRowDragAndDrop: true,
-    rowDropSettings: { targetID: ['TreeGrid', 'destTree'] },
+    rowDropSettings: { targetID: ['TreeGrid', 'secondTree'] },
     selectionSettings: { type: 'Multiple' },
     columns: [
             { field: 'taskID', headerText: 'Task ID', isPrimaryKey: true, width: 90, textAlign: 'Right' },

@@ -8,7 +8,7 @@
                 <e-column field='startDate' headerText='Start Date' textAlign='Right' format='yMd' width=120></e-column>
                 <e-column field="duration" headerText="Duration" width="90"></e-column></e-columns>
         </ejs-treegrid>
-        <ejs-treegrid id='destTree' :allowRowDragAndDrop='true' height='315' :treeColumnIndex='1' :rowDropSettings='rowDrops' :selectionSettings='selectionSettings' childMapping='subtasks' >
+        <ejs-treegrid id='secondTree' :allowRowDragAndDrop='true' height='315' :treeColumnIndex='1' :rowDropSettings='rowDrops' :selectionSettings='selectionSettings' childMapping='subtasks' >
             <e-columns>
                 <e-column field="taskID" headerText="Task ID" width="120" isPrimaryKey="true"></e-column>
                 <e-column field="taskName" headerText="Task Name" width="220"></e-column>
@@ -39,11 +39,11 @@ const data = sampleData;
 
 const selectionSettings = { type: 'Multiple' };
 
-const rowDrop = { targetID: ['destTree', 'thirdTree'] };
+const rowDrop = { targetID: ['secondTree', 'thirdTree'] };
 
 const rowDrops = { targetID: ['TreeGrid', 'thirdTree'] };
 
-const rowDropsThird = { targetID: ['TreeGrid', 'destTree'] };
+const rowDropsThird = { targetID: ['TreeGrid', 'secondTree'] };
 
 provide('treegrid',  [RowDD, Selection]);
 

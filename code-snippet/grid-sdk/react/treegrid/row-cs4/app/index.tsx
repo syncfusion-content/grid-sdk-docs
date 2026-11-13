@@ -5,7 +5,7 @@ import { sampleData } from './datasource';
 
 class Source extends React.Component<{}, {}>{
     public data: Object[] = sampleData;
-    public rowDropSettings: RowDropSettingsModel = { targetID: ['destTree', 'thirdTree'] };
+    public rowDropSettings: RowDropSettingsModel = { targetID: ['secondTree', 'thirdTree'] };
     public selectionSettings: SelectionSettingsModel = { type: 'Multiple' };
     public style = { marginBottom: '20px' };
     render() {
@@ -28,7 +28,7 @@ class Target extends React.Component<{}, {}>{
     public rowDropSettings: RowDropSettingsModel = { targetID: ['TreeGrid', 'thirdTree'] };
     public selectionSettings: SelectionSettingsModel = { type: 'Multiple' };
     render() {
-        return <TreeGridComponent treeColumnIndex={1} id='destTree' allowRowDragAndDrop={true}
+        return <TreeGridComponent treeColumnIndex={1} id='secondTree' allowRowDragAndDrop={true}
         rowDropSettings={this.rowDropSettings} selectionSettings={this.selectionSettings}
          childMapping='subtasks' height='275'>
             <ColumnsDirective>
@@ -44,7 +44,7 @@ class Target extends React.Component<{}, {}>{
 
 class Third extends React.Component<{}, {}>{
     public data: Object[] = [];
-    public rowDropSettings: RowDropSettingsModel = { targetID: ['TreeGrid', 'destTree'] };
+    public rowDropSettings: RowDropSettingsModel = { targetID: ['TreeGrid', 'secondTree'] };
     public selectionSettings: SelectionSettingsModel = { type: 'Multiple' };
     render() {
         return <TreeGridComponent treeColumnIndex={1} id='thirdTree' allowRowDragAndDrop={true}

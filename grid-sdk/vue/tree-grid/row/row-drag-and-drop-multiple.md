@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Row drag and drop between multiple TreeGrids in Vue TreeGrid | Syncfusion
+title: Vue TreeGrid Row Drag and Drop Between TreeGrids | Syncfusion
 description: Learn how to drag and drop rows between three or more Vue TreeGrids using the rowDropSettings targetID array configuration.
 platform: grid-sdk
 control: Row drag and drop between multiple TreeGrids
@@ -22,7 +22,7 @@ Render each TreeGrid inside its own container element on the page. The element `
 
 ```html
 <div id="TreeGrid"></div>
-<div id="destTree"></div>
+<div id="secondTree"></div>
 <div id="thirdTree"></div>
 ```
 
@@ -45,11 +45,11 @@ Enable row drag and drop by setting the [`allowRowDragAndDrop`](https://ej2.sync
 
 ```js
 rowDropSettings: {
-    targetID: ['destTree', 'thirdTree']
+    targetID: ['secondTree', 'thirdTree']
 }
 ```
 
-In this configuration, rows from the source TreeGrid can be dropped into both `destTree` and `thirdTree`.
+In this configuration, rows from the source TreeGrid can be dropped into both `secondTree` and `thirdTree`.
 
 ### Configure three connected TreeGrids
 
@@ -58,25 +58,25 @@ The following example configures three TreeGrids so that rows can move between a
 ```js
 TreeGrid:
 rowDropSettings: {
-    targetID: ['destTree', 'thirdTree']
+    targetID: ['secondTree', 'thirdTree']
 }
 
-destTree:
+secondTree:
 rowDropSettings: {
     targetID: ['TreeGrid', 'thirdTree']
 }
 
 thirdTree:
 rowDropSettings: {
-    targetID: ['TreeGrid', 'destTree']
+    targetID: ['TreeGrid', 'secondTree']
 }
 ```
 
 The behavior of this configuration is as follows:
 
-- TreeGrid can drop rows into `destTree` and `thirdTree`.
-- `destTree` can drop rows into `TreeGrid` and `thirdTree`.
-- `thirdTree` can drop rows into `TreeGrid` and `destTree`.
+- TreeGrid can drop rows into `secondTree` and `thirdTree`.
+- `secondTree` can drop rows into `TreeGrid` and `thirdTree`.
+- `thirdTree` can drop rows into `TreeGrid` and `secondTree`.
 - Every TreeGrid can act as both a source and a destination.
 
 > * The selection feature must be enabled to drag and drop rows between multiple TreeGrids. For multiple row selection, set the [`type`](https://ej2.syncfusion.com/vue/documentation/api/treegrid/selectionSettings#type) property of [`selectionSettings`](https://ej2.syncfusion.com/vue/documentation/api/treegrid/selectionSettings) to `multiple`.
