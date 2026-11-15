@@ -19,8 +19,11 @@ The Status Bar updates automatically when grid data, filtering, or selection cha
 Enable the Status Bar by setting `enableStatusBar` to **true** and configure built-in panels through `statusBarSettings.items`.
 
 {% tabs %}
-{% highlight cshtml tabtitle="Index.cshtml" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/grid/status-bar-cs1/Index.cshtml %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/grid-sdk/asp-net-mvc/grid/status-bar/status-bar-cs1/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="status-bar.cs" %}
+{% include code-snippet/grid-sdk/asp-net-mvc/grid/status-bar/status-bar-cs1/status-bar.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -57,8 +60,11 @@ Each panel is registered using the configured `key`, which enables runtime acces
 The `SelectedCellAggregates` panel displays aggregate values for selected numeric cells. Enable cell selection, select multiple cells, and the Status Bar updates with values such as Sum, Average, Min, Max, or Count.
 
 {% tabs %}
-{% highlight cshtml tabtitle="Index.cshtml" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/grid/status-bar-cs2/Index.cshtml %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/grid-sdk/asp-net-mvc/grid/status-bar/status-bar-cs2/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="status-bar.cs" %}
+{% include code-snippet/grid-sdk/asp-net-mvc/grid/status-bar/status-bar-cs2/status-bar.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -74,8 +80,11 @@ For example:
 - `85.25%`
 
 {% tabs %}
-{% highlight cshtml tabtitle="Index.cshtml" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/grid/status-bar-cs3/Index.cshtml %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/grid-sdk/asp-net-mvc/grid/status-bar/status-bar-cs3/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="status-bar.cs" %}
+{% include code-snippet/grid-sdk/asp-net-mvc/grid/status-bar/status-bar-cs3/status-bar.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -84,7 +93,10 @@ For example:
 Create a custom Status Bar panel when you need to display application-specific information. Register the custom panel in `statusBarSettings.items` and render your own content in the template.
 
 {% tabs %}
-{% highlight cshtml tabtitle="Index.cshtml" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/grid/status-bar-cs4/Index.cshtml %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/grid-sdk/asp-net-mvc/grid/status-bar/status-bar-cs4/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="status-bar.cs" %}
+{% include code-snippet/grid-sdk/asp-net-mvc/grid/status-bar/status-bar-cs4/status-bar.cs %}
 {% endhighlight %}
 {% endtabs %}

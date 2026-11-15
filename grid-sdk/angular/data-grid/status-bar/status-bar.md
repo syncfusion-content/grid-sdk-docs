@@ -22,9 +22,6 @@ Enable the Status Bar by setting `enableStatusBar` to **true** and configure bui
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid-sdk/angular/grid/status-bar-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight html tabtitle="app.template.html" %}
-{% include code-snippet/grid-sdk/angular/grid/status-bar-cs1/src/app.template.html %}
-{% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid-sdk/angular/grid/status-bar-cs1/src/main.ts %}
 {% endhighlight %}
@@ -68,9 +65,6 @@ The `SelectedCellAggregates` panel displays aggregate values for selected numeri
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid-sdk/angular/grid/status-bar-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight html tabtitle="app.template.html" %}
-{% include code-snippet/grid-sdk/angular/grid/status-bar-cs2/src/app.template.html %}
-{% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid-sdk/angular/grid/status-bar-cs2/src/main.ts %}
 {% endhighlight %}
@@ -93,9 +87,6 @@ For example:
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid-sdk/angular/grid/status-bar-cs3/src/app.component.ts %}
 {% endhighlight %}
-{% highlight html tabtitle="app.template.html" %}
-{% include code-snippet/grid-sdk/angular/grid/status-bar-cs3/src/app.template.html %}
-{% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid-sdk/angular/grid/status-bar-cs3/src/main.ts %}
 {% endhighlight %}
@@ -110,9 +101,6 @@ Create a custom Status Bar panel when you need to display application-specific i
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid-sdk/angular/grid/status-bar-cs4/src/app.component.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="app.template.html" %}
-{% include code-snippet/grid-sdk/angular/grid/status-bar-cs4/src/app.template.html %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid-sdk/angular/grid/status-bar-cs4/src/main.ts %}
