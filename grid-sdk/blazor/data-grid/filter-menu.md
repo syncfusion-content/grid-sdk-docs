@@ -1460,11 +1460,11 @@ When using the filter menu in the Blazor DataGrid, the UI may display filter ope
 
 The Blazor DataGrid provides the [EnableTemporalValidation](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridFilterSettings.html#Syncfusion_Blazor_Grids_GridFilterSettings_EnableTemporalValidation) property to prevent invalid date values from being applied through Menu and Excel filter dialogs. By default, this property is set to **false**, preserving the existing filtering behavior.
 
-When `EnableTemporalValidation` is enabled, the Grid validates date values entered in date filter editors before applying filter predicates. If an invalid date value is entered, a validation message is displayed and the filter action is disabled until the value is corrected or cleared.
+When `EnableTemporalValidation` is enabled, the Grid validates date values entered in the filter editor before applying the filter. Invalid date values include dates outside the acceptable range or malformed date formats. If an invalid date is entered, a validation message is displayed and the filter action is disabled until the value is corrected or cleared.
 
 This validation is supported only for Menu and Excel filter types and does not apply to FilterBar filtering.
 
-### Using EnableTemporalValidation
+### Example: Enable date validation in filter dialogs
 
 The following example demonstrates how to enable date validation in filter dialogs:
 
@@ -1503,7 +1503,7 @@ public class OrderData
     public static List<OrderData> Orders = new List<OrderData>();
     public OrderData() { }
 
-    public OrderData(int? OrderID, string CustomerID, string ShipCity, string ShipName, string OrderDate)
+    public OrderData(int? OrderID, string CustomerID, string ShipCity, string ShipName, DateTime? OrderDate)
     {
         this.OrderID = OrderID;
         this.CustomerID = CustomerID;
@@ -1519,15 +1519,15 @@ public class OrderData
             int OrderID = 10247;
             for (int i = 1; i < 2; i++)
             {
-                Orders.Add(new OrderData(OrderID + 1, "VINET", "Reims", "Vins et alcools Chevali", "2026-01-01"));
-                Orders.Add(new OrderData(OrderID + 2, "TOMSP", "Münster", "Toms Spezialitäten", "2026-01-02"));
-                Orders.Add(new OrderData(OrderID + 3, "HANAR", "Rio de Janeiro", "Hanari Carnes", "2026-01-03"));
-                Orders.Add(new OrderData(OrderID + 4, "VICTE", "Lyon", "Victuailles en stock", "2026-01-04"));
-                Orders.Add(new OrderData(OrderID + 5, "SUPRD", "Charleroi", "Suprêmes délices", "2026-01-05"));
-                Orders.Add(new OrderData(OrderID + 6, "HANAR", "Lyon", "Hanari Carnes", "2026-01-06"));
-                Orders.Add(new OrderData(OrderID + 7, "CHOPS", "Rio de Janeiro", "Chop-suey Chinese", "2026-01-07"));
-                Orders.Add(new OrderData(OrderID + 8, "ERNSH", "Münster", "Richter Supermarkt", "2026-01-08"));
-                Orders.Add(new OrderData(OrderID + 9, "WELLI", "Reims", "Wellington Import", "2026-01-09"));
+                Orders.Add(new OrderData(OrderID + 1, "VINET", "Reims", "Vins et alcools Chevali", new DateTime(2026, 1, 1)));
+                Orders.Add(new OrderData(OrderID + 2, "TOMSP", "Münster", "Toms Spezialitäten", new DateTime(2026, 1, 2)));
+                Orders.Add(new OrderData(OrderID + 3, "HANAR", "Rio de Janeiro", "Hanari Carnes", new DateTime(2026, 1, 3)));
+                Orders.Add(new OrderData(OrderID + 4, "VICTE", "Lyon", "Victuailles en stock", new DateTime(2026, 1, 4)));
+                Orders.Add(new OrderData(OrderID + 5, "SUPRD", "Charleroi", "Suprêmes délices", new DateTime(2026, 1, 5)));
+                Orders.Add(new OrderData(OrderID + 6, "HANAR", "Lyon", "Hanari Carnes", new DateTime(2026, 1, 6)));
+                Orders.Add(new OrderData(OrderID + 7, "CHOPS", "Rio de Janeiro", "Chop-suey Chinese", new DateTime(2026, 1, 7)));
+                Orders.Add(new OrderData(OrderID + 8, "ERNSH", "Münster", "Richter Supermarkt", new DateTime(2026, 1, 8)));
+                Orders.Add(new OrderData(OrderID + 9, "WELLI", "Reims", "Wellington Import", new DateTime(2026, 1, 9)));
                 OrderID += 9;
             }
         }
@@ -1538,7 +1538,7 @@ public class OrderData
     public string CustomerID { get; set; }
     public string ShipCity { get; set; }
     public string ShipName { get; set; }
-    public string OrderDate { get; set; }   
+    public DateTime? OrderDate { get; set; }   
 }
 
 {% endhighlight %}
