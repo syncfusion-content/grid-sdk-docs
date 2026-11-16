@@ -110,12 +110,23 @@ The supported keyboard shortcuts are listed below.
 | <kbd>Tab</kbd> | Move focus to the next pager item. |
 | <kbd>Shift</kbd> + <kbd>Tab</kbd> | Move focus to the previous pager item. |
 | <kbd>Enter</kbd> / <kbd>Space</kbd> | Select the currently focused page. |
-| <kbd>Page Up</kbd> | Goes to the previous page of items or scrolls one page up when using virtual scrolling. |
-| <kbd>Page Down</kbd> | Goes to the next page of items or scrolls one page down when using virtual scrolling. |
+| <kbd>PageUp</kbd> | Navigate to the previous page of items. |
+| <kbd>PageDown</kbd> | Navigate to the next page of items. |
 | <kbd>Home</kbd> | Navigate to the first page. |
 | <kbd>End</kbd> | Navigate to the last page. |
 | <kbd>←</kbd> (Left Arrow) | Navigate to the previous page. |
 | <kbd>→</kbd> (Right Arrow) | Navigate to the next page. |
+
+**Virtualization alone**
+
+> **Note:** These keyboard shortcuts apply only when virtualization is enabled via the `EnableVirtualization` property. These shortcuts have no effect when virtualization is disabled.
+
+| Windows                           | Mac                                         | Actions                                                    |
+|-----------------------------------|---------------------------------------------|------------------------------------------------------------|
+| <kbd>Page Up</kbd>                | <kbd>Page Up</kbd>                          | Scrolls up by one full viewport. The selected/focused row maintains its relative position within the viewport. |
+| <kbd>Page Down</kbd>              | <kbd>Page Down</kbd>                        | Scrolls down by one full visible viewport. The selected/focused row maintains its relative position within the viewport. |
+| <kbd>Ctrl</kbd> + <kbd>↑</kbd>    | <kbd>⌘</kbd> + <kbd>↑</kbd>                 | Moves the focused cell to the first row while maintaining the focused column, regardless of the currently focused row position (first, middle, or last row). |
+| <kbd>Ctrl</kbd> + <kbd>↓</kbd>    | <kbd>⌘</kbd> + <kbd>↓</kbd>                 | Moves the focused cell to the last row while maintaining the focused column, regardless of the currently focused row position. The focused column index is always preserved during navigation. |
 
 <b>Focus Elements</b>
 
@@ -131,15 +142,6 @@ The supported keyboard shortcuts are listed below.
 | <kbd>←</kbd>                      | <kbd>←</kbd>                                | Move the cell focus left from the focused cell.            |
 | <kbd>Alt</kbd> + <kbd>J</kbd>     | <kbd>⌥</kbd> + <kbd>J</kbd>                 | Move focus to the Blazor Data Grid.                                    |
 | <kbd>Alt</kbd> + <kbd>W</kbd>     | <kbd>⌥</kbd> + <kbd>W</kbd>                 | Move focus to the Blazor Data Grid content element.                    |
-
-**Virtualization Support**
-
-| Windows                           | Mac                                         | Actions                                                    |
-|-----------------------------------|---------------------------------------------|------------------------------------------------------------|
-| <kbd>Page Up</kbd>                | <kbd>Page Up</kbd>                          | Scrolls up by one full viewport. Selection/focus moves accordingly. The selected/focused row remains in the same relative position within the viewport. |
-| <kbd>Page Down</kbd>              | <kbd>Page Down</kbd>                        | Scrolls down by one full visible viewport (set of rows). After scrolling, the selected/focused row remains in the same relative position within the viewport. |
-| <kbd>Ctrl</kbd> + <kbd>↑</kbd>    | <kbd>⌘</kbd> + <kbd>↑</kbd>                 | Move the focused cell directly to the first row while maintaining the currently focused column. Navigation works regardless of whether the currently focused row is the first row, a middle row, or the last row. |
-| <kbd>Ctrl</kbd> + <kbd>↓</kbd>    | <kbd>⌘</kbd> + <kbd>↓</kbd>                 | Move the focused cell directly to the last row while maintaining the currently focused column. The focused column index is always preserved during navigation. |
 
 <b>Selection</b>
 
