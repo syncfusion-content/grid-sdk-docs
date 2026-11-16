@@ -132,6 +132,15 @@ The supported keyboard shortcuts are listed below.
 | <kbd>Alt</kbd> + <kbd>J</kbd>     | <kbd>⌥</kbd> + <kbd>J</kbd>                 | Move focus to the Blazor Data Grid.                                    |
 | <kbd>Alt</kbd> + <kbd>W</kbd>     | <kbd>⌥</kbd> + <kbd>W</kbd>                 | Move focus to the Blazor Data Grid content element.                    |
 
+**Virtualization Support**
+
+| Windows                           | Mac                                         | Actions                                                    |
+|-----------------------------------|---------------------------------------------|------------------------------------------------------------|
+| <kbd>Page Up</kbd>                | <kbd>Page Up</kbd>                          | Scrolls up by one full viewport. Selection/focus moves accordingly. The selected/focused row remains in the same relative position within the viewport. |
+| <kbd>Page Down</kbd>              | <kbd>Page Down</kbd>                        | Scrolls down by one full visible viewport (set of rows). After scrolling, the selected/focused row remains in the same relative position within the viewport. |
+| <kbd>Ctrl</kbd> + <kbd>↑</kbd>    | <kbd>⌘</kbd> + <kbd>↑</kbd>                 | Move the focused cell directly to the first row while maintaining the currently focused column. Navigation works regardless of whether the currently focused row is the first row, a middle row, or the last row. |
+| <kbd>Ctrl</kbd> + <kbd>↓</kbd>    | <kbd>⌘</kbd> + <kbd>↓</kbd>                 | Move the focused cell directly to the last row while maintaining the currently focused column. The focused column index is always preserved during navigation. |
+
 <b>Selection</b>
 
 | Windows                             | Mac                             | Actions                                    |
