@@ -103,21 +103,7 @@ The supported keyboard shortcuts are listed below.
 | <kbd>Home</kbd> / <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>PageUp</kbd>  | <kbd>Fn</kbd> + <kbd>←</kbd>        | Navigate to the first page.            |
 | <kbd>End</kbd> / <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>PageDown</kbd> | <kbd>Fn</kbd> + <kbd>→</kbd>        | Navigate to the last page.             |
 
-**Pager Keyboard Interaction**
-
-| Keyboard Shortcut | Action |
-|---|---|
-| <kbd>Tab</kbd> | Move focus to the next pager item. |
-| <kbd>Shift</kbd> + <kbd>Tab</kbd> | Move focus to the previous pager item. |
-| <kbd>Enter</kbd> / <kbd>Space</kbd> | Select the currently focused page. |
-| <kbd>PageUp</kbd> | Navigate to the previous page of items. |
-| <kbd>PageDown</kbd> | Navigate to the next page of items. |
-| <kbd>Home</kbd> | Navigate to the first page. |
-| <kbd>End</kbd> | Navigate to the last page. |
-| <kbd>←</kbd> (Left Arrow) | Navigate to the previous page. |
-| <kbd>→</kbd> (Right Arrow) | Navigate to the next page. |
-
-**Virtualization alone**
+**Virtualization**
 
 > **Note:** These keyboard shortcuts apply only when virtualization is enabled via the `EnableVirtualization` property. These shortcuts have no effect when virtualization is disabled.
 
