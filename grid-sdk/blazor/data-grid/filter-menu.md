@@ -1466,17 +1466,6 @@ If an invalid date value is entered, such as a date outside the supported range 
 
 This feature is useful for improving filtering accuracy when working with date columns.
 
-## Keyboard Navigation
-
-The DataGrid provides keyboard navigation support for efficient filtering and data interaction. Use the following keyboard shortcuts to navigate and interact with the filter menu:
-
-| Windows | Mac | Actions |
-|---------|-----|---------|
-| Page Up | Page Up | Scrolls up by one viewport while keeping the focused row in the same relative position. |
-| Page Down | Page Down | Scrolls down by one viewport while keeping the focused row in the same relative position. |
-| Ctrl + ↑ | ⌘ + ↑ | Moves focus to the first row of the current column. |
-| Ctrl + ↓ | ⌘ + ↓ | Moves focus to the last row of the current column. |
-
 > **Note**
 > * This feature is applicable only to Menu and Excel filter dialogs.
 > * In Excel filtering, validation is applied to all date input editors, including operators that require multiple values such as Between.
