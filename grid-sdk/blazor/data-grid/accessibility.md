@@ -103,6 +103,20 @@ The supported keyboard shortcuts are listed below.
 | <kbd>Home</kbd> / <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>PageUp</kbd>  | <kbd>Fn</kbd> + <kbd>←</kbd>        | Navigate to the first page.            |
 | <kbd>End</kbd> / <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>PageDown</kbd> | <kbd>Fn</kbd> + <kbd>→</kbd>        | Navigate to the last page.             |
 
+**Pager Keyboard Interaction**
+
+| Keyboard Shortcut | Action |
+|---|---|
+| <kbd>Tab</kbd> | Move focus to the next pager item. |
+| <kbd>Shift</kbd> + <kbd>Tab</kbd> | Move focus to the previous pager item. |
+| <kbd>Enter</kbd> / <kbd>Space</kbd> | Select the currently focused page. |
+| <kbd>Page Up</kbd> | Goes to the previous page of items or scrolls one page up when using virtual scrolling. |
+| <kbd>Page Down</kbd> | Goes to the next page of items or scrolls one page down when using virtual scrolling. |
+| <kbd>Home</kbd> | Navigate to the first page. |
+| <kbd>End</kbd> | Navigate to the last page. |
+| <kbd>←</kbd> (Left Arrow) | Navigate to the previous page. |
+| <kbd>→</kbd> (Right Arrow) | Navigate to the next page. |
+
 <b>Focus Elements</b>
 
 | Windows                           | Mac                                         | Actions                                                    |
