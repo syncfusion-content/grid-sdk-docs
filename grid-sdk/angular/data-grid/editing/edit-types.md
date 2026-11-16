@@ -626,7 +626,7 @@ export class AppComponent implements OnInit {
 
 ### Render ComboBox component in edit form
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Grid supports rendering a [ComboBox](https://helpstaging.syncfusion.com/ej2-angular/combo-box/getting-started) component within the Grid's edit form for a specific column. This feature is useful for providing a drop-down selection with auto-suggestions for data entry.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Grid supports rendering a [ComboBox](https://ej2.syncfusion.com/angular/documentation/combo-box/getting-started) component within the Grid's edit form for a specific column. This feature is useful for providing a drop-down selection with auto-suggestions for data entry.
 
 Define an [editTemplate](https://ej2.syncfusion.com/angular/documentation/api/grid/column#edittemplate) for the column using `ng-template`. The `editTemplate` property specifies the cell edit template used as an editor for a particular column and can accept either a template string or an HTML element ID.
 

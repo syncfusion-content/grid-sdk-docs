@@ -18,7 +18,7 @@ Cell selection is enabled using the [`allowSelection`](https://ej2.syncfusion.co
 
 ## Implementation
 
-The [`cellSelected`](https://ej2.syncfusion.com/documentation/api/pivotview/index-default#cellselected) event triggers when cells are selected in the pivot table. This event provides selected cell information including row header name, column header name, measure name, and values. Using this data, the [`chart`](https://ej2.syncfusion.com/documentation/chart/getting-started) control can be plotted accordingly.
+The [`cellSelected`](https://ej2.syncfusion.com/documentation/api/pivotview/index-default#cellselected) event triggers when cells are selected in the pivot table. This event provides selected cell information including row header name, column header name, measure name, and values. Using this data, the [`chart`](https://help.syncfusion.com/chart-sdk/javascript/charts/es5-getting-started) control can be plotted accordingly.
 
 
 {% tabs %}

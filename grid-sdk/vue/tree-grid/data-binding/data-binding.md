@@ -237,8 +237,8 @@ export default defineComponent({
         state.childData = childData;
         state.childDataBind();
       } else {
-        const treedata = await this.execute(state);
-        this.dataSource = treedata as any[];
+        const treeData = await this.execute(state);
+        this.dataSource = treeData as any[];
       }
     },
   },
@@ -361,8 +361,8 @@ export default defineComponent({
         state.childData = childData;
         state.childDataBind();
       } else {
-        const treedata = await this.execute(state);
-        this.dataSource = treedata as any[];
+        const treeData = await this.execute(state);
+        this.dataSource = treeData as any[];
       }
     },
   },
@@ -476,8 +476,8 @@ export default defineComponent({
       }
     },
     async dataStateChange(state: any) {
-      const treedata = await this.execute(state);
-      this.dataSource = treedata as any[];
+      const treeData = await this.execute(state);
+      this.dataSource = treeData as any[];
     },
   },
   mounted() {
@@ -621,8 +621,8 @@ export default defineComponent({
         state.childData = childData;
         state.childDataBind();
       } else {
-        const treedata = await this.execute(state);
-        this.dataSource = treedata as any[];
+        const treeData = await this.execute(state);
+        this.dataSource = treeData as any[];
       }
     },
     async dataSourceChanged(state: any) {
@@ -747,8 +747,8 @@ export default defineComponent({
           state.dataSource(data.result);
         }
       } else {
-        const treedata = await this.execute(state);
-        this.dataSource = treedata as any[];
+        const treeData = await this.execute(state);
+        this.dataSource = treeData as any[];
       }
     },
   },

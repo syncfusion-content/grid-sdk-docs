@@ -269,4 +269,4 @@ The following sample demonstrates the accessibility compliance of the Pivot Tabl
 ## See also
 
 * [Accessibility in Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components](https://ej2.syncfusion.com/angular/documentation/common/accessibility) — Cross-component accessibility guidance that applies to all Syncfusion Angular controls.
-* [Globalization and localization in Angular Pivot Table](https://ej2.syncfusion.com/angular/documentation/globalization-and-localization) — Configure RTL, culture, and localization settings, which affect accessibility for non-English users.
+* [Globalization and localization in Angular Pivot Table](https://help.syncfusion.com/grid-sdk/angular/pivot-table/globalization-and-localization) — Configure RTL, culture, and localization settings, which affect accessibility for non-English users.
