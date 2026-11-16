@@ -91,22 +91,6 @@ The Blazor Data Grid supports keyboard navigation based on the ARIA grid [keyboa
 
 The supported keyboard shortcuts are listed below.
 
-**API Reference:** **[EnableVirtualization](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridFilterSettings.html#Syncfusion_Blazor_Grids_GridFilterSettings_EnableTemporalValidation)**
-
-### Enable Virtualization
-
-To enable virtualization in the Blazor DataGrid, set the `EnableVirtualization` property to `true`:
-
-```razor
-<SfGrid DataSource="@GridData" EnableVirtualization="true">
-    <GridColumns>
-        <GridColumn Field="OrderID" HeaderText="Order ID" Width="120"></GridColumn>
-        <GridColumn Field="CustomerName" HeaderText="Customer Name" Width="150"></GridColumn>
-        <GridColumn Field="TotalAmount" HeaderText="Total Amount" Width="120"></GridColumn>
-    </GridColumns>
-</SfGrid>
-```
-
 <b>Pager</b>
 
 | Windows                                                                 | Mac                                 | Actions                                |
