@@ -107,12 +107,14 @@ The supported keyboard shortcuts are listed below.
 
 > **Note:** These keyboard shortcuts apply only when virtualization is enabled via the `EnableVirtualization` property. These shortcuts have no effect when virtualization is disabled.
 
-| Windows                           | Mac                                         | Actions                                                    |
-|-----------------------------------|---------------------------------------------|------------------------------------------------------------|
-| <kbd>Page Up</kbd>                | <kbd>Page Up</kbd>                          | Scrolls up by one full viewport. The selected/focused row maintains its relative position within the viewport. |
-| <kbd>Page Down</kbd>              | <kbd>Page Down</kbd>                        | Scrolls down by one full visible viewport. The selected/focused row maintains its relative position within the viewport. |
-| <kbd>Ctrl</kbd> + <kbd>↑</kbd>    | <kbd>⌘</kbd> + <kbd>↑</kbd>                 | Moves the focused cell to the first row while maintaining the focused column, regardless of the currently focused row position (first, middle, or last row). |
-| <kbd>Ctrl</kbd> + <kbd>↓</kbd>    | <kbd>⌘</kbd> + <kbd>↓</kbd>                 | Moves the focused cell to the last row while maintaining the focused column, regardless of the currently focused row position. The focused column index is always preserved during navigation. |
+| Windows                        | Mac                         | Actions                                                    |
+|--------------------------------|-----------------------------|------------|
+| <kbd>Page Up</kbd>             | <kbd>Page Up</kbd>          | Scrolls up by one viewport while keeping the focused row in the same relative position. |
+| <kbd>Page Down</kbd>           | <kbd>Page Down</kbd>        | Scrolls down by one viewport while keeping the focused row in the same relative position. |
+| <kbd>Ctrl</kbd> + <kbd>↑</kbd> | <kbd>⌘</kbd> + <kbd>↑</kbd> | Moves focus to the first row of the current column. |
+| <kbd>Ctrl</kbd> + <kbd>↓</kbd> | <kbd>⌘</kbd> + <kbd>↓</kbd> | Moves focus to the last row of the current column. |
+
+> **Note:** On touch devices, use two-finger tap gestures to trigger equivalent actions for keyboard shortcuts.
 
 <b>Focus Elements</b>
 
