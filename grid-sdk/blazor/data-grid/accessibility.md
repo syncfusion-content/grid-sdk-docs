@@ -105,8 +105,6 @@ The supported keyboard shortcuts are listed below.
 
 **Virtualization**
 
-> **Note:** These keyboard shortcuts apply only when virtualization is enabled via the `EnableVirtualization` property. These shortcuts have no effect when virtualization is disabled.
-
 | Windows                        | Mac                         | Actions                                                    |
 |--------------------------------|-----------------------------|------------|
 | <kbd>Page Up</kbd>             | <kbd>Page Up</kbd>          | Scrolls up by one viewport while keeping the focused row in the same relative position. |
@@ -114,7 +112,7 @@ The supported keyboard shortcuts are listed below.
 | <kbd>Ctrl</kbd> + <kbd>↑</kbd> | <kbd>⌘</kbd> + <kbd>↑</kbd> | Moves focus to the first row of the current column. |
 | <kbd>Ctrl</kbd> + <kbd>↓</kbd> | <kbd>⌘</kbd> + <kbd>↓</kbd> | Moves focus to the last row of the current column. |
 
-> **Note:** On touch devices, use two-finger tap gestures to trigger equivalent actions for keyboard shortcuts.
+> **Note:** These keyboard shortcuts apply only when virtualization is enabled via the `EnableVirtualization` property. These shortcuts have no effect when virtualization is disabled.
 
 <b>Focus Elements</b>
 
