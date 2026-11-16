@@ -1458,7 +1458,7 @@ When using the filter menu in the Blazor DataGrid, the UI may display filter ope
 
 ## Prevent applying invalid date values in filter dialogs
 
-The Blazor DataGrid provides the [EnableTemporalValidation](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridFilterSettings.html#Syncfusion_Blazor_Grids_GridFilterSettings_EnableTemporalValidation) property to prevent invalid date values from being applied through Menu and Excel filter dialogs. By default, this property is set to **false**, preserving the existing filtering behavior.
+The Blazor DataGrid provides the **EnableTemporalValidation** property to prevent invalid date values from being applied through Menu and Excel filter dialogs. By default, this property is set to **false**, preserving the existing filtering behavior.
 
 When EnableTemporalValidation is enabled, the Grid validates the date value entered in the filter editor before applying the filter. This validation helps ensure that only valid date values are used for filtering and prevents unexpected filtering results caused by invalid or incorrectly formatted dates.
 
