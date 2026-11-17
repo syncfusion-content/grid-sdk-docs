@@ -216,7 +216,7 @@ For example:
 
 The Blazor DataGrid supports replacing the default built-in keyboard shortcuts or adding new ones that perform the same actions. This allows you to customize the keyboard experience to match your application's conventions or accessibility requirements.
 
-To configure custom keyboard shortcuts, set the **[KeyboardShortcuts](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.SfGrid-1.html#Syncfusion_Blazor_Grids_SfGrid_1_KeyboardShortcuts)** property on the `SfGrid` component with a `GridCustomKeyboardShortcuts` object. Each action category (DataCell, Header, EditCell, GroupRow, DetailRow, and Common) contains a dictionary mapping `GridKeyboardAction` enum values to custom key combinations.
+To configure custom keyboard shortcuts, set the **KeyboardShortcuts** property on the `SfGrid` component with a `GridCustomKeyboardShortcuts` object. Each action category (DataCell, Header, EditCell, GroupRow, DetailRow, and Common) contains a dictionary mapping `GridKeyboardAction` enum values to custom key combinations.
 
 **DataCell**
 
