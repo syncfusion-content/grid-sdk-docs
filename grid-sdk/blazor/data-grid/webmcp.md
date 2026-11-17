@@ -17,7 +17,7 @@ WebMCP can be integrated into a [Blazor Data Grid](https://www.syncfusion.com/bl
 
 Ensure the following before integrating WebMCP:
 
-- The Syncfusion Data Grid component is installed and configured as described in [Getting Started](./getting-started-with-web-app).
+- The Syncfusion Data Grid component is installed and configured as described in [Getting Started](https://help.syncfusion.com/grid-sdk/blazor/data-grid/getting-started-with-web-app).
 - A Chromium-based browser with either the WebMCP origin trial or the `chrome://flags/#enable-webmcp` flag enabled. Because the API is experimental, verify browser-version support.
 
 ## Getting Started
@@ -413,4 +413,4 @@ Configure WebMCP tools with custom descriptions and enable or disable specific t
 
 ## See also
 
-- [Getting Started](./getting-started-with-web-app)
+- [Getting Started](https://help.syncfusion.com/grid-sdk/blazor/data-grid/getting-started-with-web-app)
