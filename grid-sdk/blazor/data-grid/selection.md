@@ -540,11 +540,11 @@ public class OrderDetails
 
 > Drag selection is not compatible with [AutoFill](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.SfGrid-1.html#Syncfusion_Blazor_Grids_SfGrid_1_EnableAutoFill) feature.
 
-## Clear selection via programmatically
+## Programmatic deselection
 
-The Blazor DataGrid provides a method to programmatically clear selected rows or cells. This feature is useful when resetting selection states based on user actions or custom logic.
+The Blazor DataGrid provides a method to programmatically deselect selected rows or cells. This feature is useful when resetting selection states based on user actions or custom logic.
 
-To clear selection in the Blazor Grid, use the [ClearSelectionAsync](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.SfGrid-1.html#Syncfusion_Blazor_Grids_SfGrid_1_ClearSelectionAsync) method.
+To deselect items in the Blazor Grid, use the [ClearSelectionAsync](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.SfGrid-1.html#Syncfusion_Blazor_Grids_SfGrid_1_ClearSelectionAsync) method.
 
 {% tabs %}
 {% highlight razor tabtitle="Index.razor" %}

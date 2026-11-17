@@ -320,7 +320,13 @@ export default App;
 > * If multi selection is enabled, then first click on any selected row (without pressing Ctrl key), it will clear the multi selection and in second click on the same row, it will be unselected.
 > * Toggle selection is a feature that can be applied to all types of selections. When the [checkboxOnly](https://ej2.syncfusion.com/react/documentation/api/grid/selectionsettings#checkboxonly) property restricts row or cell selection to only occur through checkbox clicks. When this property is set to `true`, users cannot select rows or cells by clicking directly on them; instead, selection is only possible by clicking the corresponding checkboxes. Refer to the [Checkbox Selection](./check-box-selection#allow-selection-only-through-checkbox-click) feature to learn more about implementing checkbox-only selection.
 
-## Clear selection programmatically
+## Programmatic deselection
+
+### Deselect row or rows programmatically
+
+Use the `deselectRow` and `deselectRows` methods to programmatically deselect selected rows.
+
+### Clear all selection programmatically
 
 Use the [clearSelection](https://ej2.syncfusion.com/react/documentation/api/grid#clearselection) method to programmatically clear selected rows, cells, or columns.
 

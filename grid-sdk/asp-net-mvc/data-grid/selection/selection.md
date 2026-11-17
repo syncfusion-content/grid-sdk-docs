@@ -109,11 +109,17 @@ The following example demonstrates how to enable the toggle selection for both c
 > * If multi selection is enabled, then first click on any selected row (without pressing Ctrl key), it will clear the multi selection and in second click on the same row, it will be unselected.
 >* Toggle selection is a feature that can be applied to all types of selections. When the [CheckboxOnly](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.GridSelectionSettings.html#Syncfusion_EJ2_Grids_GridSelectionSettings_CheckboxOnly) property is set to **true**, it restricts the ability to select or deselect rows or cells by clicking on them.
 
-## Clear all selection programmatically
+## Programmatic deselection
 
-The clear selection programmatically feature is particularly useful when you need to remove the selected rows or cells or columns from the Grid component.
+### Deselect row or rows programmatically
 
-To clear the selection in the component programmatically, you can use the `clearSelection` method. 
+Use the `deselectRow` and `deselectRows` methods to programmatically deselect selected rows.
+
+### Clear all selection programmatically
+
+The programmatic deselection feature is particularly useful when you need to remove selected rows, cells, or columns from the Grid component.
+
+To deselect items in the component programmatically, you can use the `clearSelection` method. 
 
 In the following example, it demonstrates how to clear all selection by calling the `clearSelection` method in the button `onclick` event.
 
