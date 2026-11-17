@@ -45,7 +45,7 @@ Before using WebMCP in a local environment, enable the feature flag and install 
 Add the following namespace to the Razor component:
 
 {% tabs %}
-{% highlight razor tabtitle="Index.razor" %}
+{% highlight html tabtitle="Index.razor" %}
 
 @using Syncfusion.Blazor.Grids
 
@@ -57,7 +57,7 @@ Add the following namespace to the Razor component:
 Enable WebMCP by setting `EnableWebMcp` to `true`. Optionally, define a `Name` in `WebMcpSettings` to keep tool names unique on the page.
 
 {% tabs %}
-{% highlight razor tabtitle="Index.razor" %}
+{% highlight html tabtitle="Index.razor" %}
 
 @using Syncfusion.Blazor.Grids
 
@@ -348,7 +348,7 @@ WebMCP tools are organized by category. The tables below provide an overview of 
 Configure WebMCP tools with custom descriptions and enable or disable specific tools.
 
 {% tabs %}
-{% highlight razor tabtitle="Index.razor" %}
+{% highlight html tabtitle="Index.razor" %}
 
 @using Syncfusion.Blazor.Grids
 
