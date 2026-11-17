@@ -12,60 +12,20 @@ domainurl: https://help.syncfusion.com/grid-sdk
 
 Edited data can be persisted in the database using the RESTful web services.
 
-All the CRUD operations in the treegrid are done through [`DataManager`](../../data). The `DataManager` has an option to bind all the CRUD related data in server-side.
+All the CRUD operations in the treegrid are done through [`DataManager`](https://ej2.syncfusion.com/javascript/documentation/data). The `DataManager` has an option to bind all the CRUD related data in server-side.
 
 > For your information, the ODataAdaptor persists data in the server as per OData protocol.
 
-In the following section, we have explained how to perform CRUD operation in server-side using the [`UrlAdaptor`](../../data/adaptors.html#url-adaptor) and `RemoteSave Adaptor`.
+In the following section, we have explained how to perform CRUD operation in server-side using the [`UrlAdaptor`](https://ej2.syncfusion.com/javascript/documentation/data/adaptors.html#url-adaptor) and `RemoteSave Adaptor`.
 
 ## URL adaptor
 
-You can use the [`UrlAdaptor`](../../data/adaptors.html#url-adaptor) of `DataManager` when binding data source from remote data.
+You can use the [`UrlAdaptor`](https://ej2.syncfusion.com/javascript/documentation/data/adaptors.html#url-adaptor) of `DataManager` when binding data source from remote data.
 In the initial load of treegrid, data are fetched from remote data and bound to the treegrid using `url` property of `DataManager`.
 You can map The CRUD operation in treegrid can be mapped to server-side Controller actions using the properties `insertUrl`, `removeUrl`, `updateUrl` and `batchUrl`.
 
 The following code example describes the above behavior.
 
-{% if page.publishingplatform == "typescript" %}
-
-```ts
-import { TreeGrid, Edit, Toolbar } from '@syncfusion/ej2-treegrid';
-import { DataManager, UrlAdaptor } from '@syncfusion/ej2-data';
-
-TreeGrid.Inject(Edit, Toolbar);
-
-let data: DataManager = new DataManager({
-    url: "Home/DataSource",
-    updateUrl: "Home/Update",
-    insertUrl: "Home/Insert",
-    removeUrl: "Home/Delete",
-    batchUrl: "Home/Remove",
-    adaptor: new UrlAdaptor
-});
-
-let treeGridObj: TreeGrid = new TreeGrid({
-    dataSource: data,
-    idMapping: 'TaskID',
-    parentIdMapping: 'parentItem',
-    hasChildMapping: 'isParent',
-    toolbar: ['Add', 'Edit', 'Delete', 'Update', 'Cancel'],
-    editSettings: { allowEditing: true, allowAdding: true, allowDeleting: true, mode: 'Row', newRowPosition: 'Below' },
-    treeColumnIndex: 1,
-    columns: [
-        { field: 'TaskID', headerText: 'Task ID', isPrimaryKey: true, width: 90, textAlign: 'Right'},
-        { field: 'TaskName', headerText: 'Task Name', width: 180 },
-        {
-            field: 'StartDate', headerText: 'Start Date', width: 90, textAlign: 'Right', editType: 'datepickeredit', type: 'date', format: 'yMd'
-        },
-        { field: 'Priority', headerText: 'Priority', width: 80, validationRules: { required: true } }
-    ],
-    height: 270
-});
-
-treeGridObj.appendTo('#TreeGrid');
-```
-
-{% elsif page.publishingplatform == "javascript" %}
 
 ```js
 ej.treegrid.TreeGrid.Inject(ej.treegrid.Edit, ej.treegrid.Toolbar);
@@ -100,7 +60,6 @@ var treeGridObj = new ej.treegrid.TreeGrid({
 treeGridObj.appendTo('#TreeGrid');
 ```
 
-{% endif %}
 
 Also, when using the `UrlAdaptor`, you need to return the data as JSON from the controller action and the JSON object must contain a property as `result` with dataSource as its value and one more property `count` with the dataSource total records count as its value.
 
@@ -238,46 +197,6 @@ Datasource must be set to **json** property and set **RemoteSaveAdaptor** to the
 
 You can use the following code example to use **RemoteSaveAdaptor** in TreeGrid.
 
-{% if page.publishingplatform == "typescript" %}
-
-```ts
-import { TreeGrid, Edit, Toolbar } from '@syncfusion/ej2-treegrid';
-import { DataManager, RemoteSaveAdaptor } from '@syncfusion/ej2-data';
-
-TreeGrid.Inject(Edit, Toolbar);
-
-let dataSource: DataManager = new DataManager({
-    json:window.griddata,
-    updateUrl: "Home/Update",
-    insertUrl: "Home/Insert",
-    removeUrl: "Home/Delete",
-    batchUrl: "Home/Remove",
-    adaptor: new RemoteSaveAdaptor
-});
-
-let treeGridObj: TreeGrid = new TreeGrid({
-    dataSource: dataSource,
-    idMapping: 'TaskID',
-    parentIdMapping: 'parentItem',
-    hasChildMapping: 'isParent',
-    toolbar: ['Add', 'Edit', 'Delete', 'Update', 'Cancel'],
-    editSettings: { allowEditing: true, allowAdding: true, allowDeleting: true, mode: 'Row' },
-    treeColumnIndex: 1,
-    columns: [
-        { field: 'TaskID', headerText: 'Task ID', isPrimaryKey: true, width: 90, textAlign: 'Right'},
-        { field: 'TaskName', headerText: 'Task Name', width: 180 },
-        {
-            field: 'StartDate', headerText: 'Start Date', width: 90, textAlign: 'Right', editType: 'datepickeredit', type: 'date', format: 'yMd'
-        },
-        { field: 'Priority', headerText: 'Priority', width: 80, validationRules: { required: true } }
-    ],
-    height: 270
-});
-
-treeGridObj.appendTo('#TreeGrid');
-```
-
-{% elsif page.publishingplatform == "javascript" %}
 
 ```js
 ej.treegrid.TreeGrid.Inject(ej.treegrid.Edit, ej.treegrid.Toolbar);
@@ -312,7 +231,6 @@ var treeGridObj = new ej.treegrid.TreeGrid({
 treeGridObj.appendTo('#TreeGrid');
 ```
 
-{% endif %}
 
 The following code example describes how to fetch the data from `ViewBag` in angular.
 

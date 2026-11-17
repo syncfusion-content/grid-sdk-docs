@@ -10,7 +10,7 @@ domainurl: https://help.syncfusion.com/grid-sdk
 
 # Persisting data in server in JavaScript Grid component
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript  Grid component allows data edited within the grid to be persisted in a database using RESTful web services. All CRUD (Create, Read, Update, Delete) operations within the grid are handled by the [DataManager](../../data), which can bind server-side data and send updates to the server. This capability is Essential<sup style="font-size:70%">&reg;</sup> for maintaining data integrity and ensuring that changes made in the UI are reflected in the backend.
+The Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript  Grid component allows data edited within the grid to be persisted in a database using RESTful web services. All CRUD (Create, Read, Update, Delete) operations within the grid are handled by the [DataManager](https://ej2.syncfusion.com/javascript/documentation/data), which can bind server-side data and send updates to the server. This capability is Essential<sup style="font-size:70%">&reg;</sup> for maintaining data integrity and ensuring that changes made in the UI are reflected in the backend.
 
 > For your information, the ODataAdaptor persists data in the server as per OData protocol.
 

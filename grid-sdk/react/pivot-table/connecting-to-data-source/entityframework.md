@@ -2,7 +2,7 @@
 layout: post
 title: "EF Core Data Binding in React Pivot Table | Syncfusion"
 component: "Pivot Table"
-platform: ej2-react
+platform: grid-sdk
 description: "Connect SQL Server to React Pivot Table using Entity Framework Core. Learn data binding, CRUD operations, and server-side integration."
 control: Entity Framework Core Data Binding
 documentation: ug

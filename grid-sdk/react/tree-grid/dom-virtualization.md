@@ -3,7 +3,7 @@ layout: post
 title: React Tree Grid DOM Virtualization | Syncfusion
 description: Learn how DOM virtualization in React Tree Grid improves large dataset performance through viewport rendering and efficient scrolling.
 control: DOM Virtualization
-platform: ej2-react
+platform: grid-sdk
 documentation: ug
 domainurl: ##DomainURL##
 ---

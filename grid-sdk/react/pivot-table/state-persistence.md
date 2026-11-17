@@ -3,7 +3,7 @@ layout: post
 title: State persistence in React Pivot Table | Syncfusion
 description: Learn how the React Pivot Table retains the current report, filters, and expanded state across browser refreshes using enablePersistence.
 control: Pivot Table
-platform: ej2-react
+platform: grid-sdk
 documentation: ug
 domainurl: ##DomainURL##
 ---

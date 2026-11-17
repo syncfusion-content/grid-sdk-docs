@@ -3,7 +3,7 @@ layout: post
 title: WebMCP tool integration for React components | Syncfusion
 description: Learn how to integrate WebMCP with Syncfusion React components to enable AI interaction, configure tools, manage access, and monitor execution.
 control: WebMCP
-platform: ej2-react
+platform: grid-sdk
 documentation: ug
 domainurl: ##DomainURL##
 ---
@@ -105,7 +105,7 @@ Follow these steps to integrate WebMCP support into Syncfusion® React component
 
 ### Step 1: Set up the Vite project
 
-Create a React Vite application and integrate the Syncfusion® React Data Grid component using the [getting started](https://help.syncfusion.com/grid-sdk/react/data-grid/getting-started) guide. After completing the setup, follow the steps below to enable WebMCP integration.
+Create a React Vite application and integrate the Syncfusion® React Data Grid component using the [getting started](./getting-started) guide. After completing the setup, follow the steps below to enable WebMCP integration.
 
 ### Step 2: Enable WebMCP support
 

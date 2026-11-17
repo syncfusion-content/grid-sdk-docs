@@ -14,7 +14,7 @@ In [Vue Data Grid](https://www.syncfusion.com/vue-components/vue-grid), Columns 
 
 ## Column types
 
-The Vue Data Grid component allows you to specify the type of data that a column binds using the [columns.type](https://ej2.syncfusion.com/vue/documentation/api/grid/column#type) property. The `type` property is used to determine the appropriate [format](https://ej2.syncfusion.com/vue/documentation/api/grid/column#format), such as [number](../../common/internationalization#number-formatting) or [date](../../common/internationalization#manipulating-datetime), for displaying the column data. 
+The Vue Data Grid component allows you to specify the type of data that a column binds using the [columns.type](https://ej2.syncfusion.com/vue/documentation/api/grid/column#type) property. The `type` property is used to determine the appropriate [format](https://ej2.syncfusion.com/vue/documentation/api/grid/column#format), such as [number](https://ej2.syncfusion.com/vue/documentation/common/internationalization#number-formatting) or [date](https://ej2.syncfusion.com/vue/documentation/common/internationalization#manipulating-datetime), for displaying the column data. 
 
 Grid supports the following column types:
 
@@ -667,7 +667,7 @@ grid.refreshColumns();
 
 ## Responsive columns
 
-The Vue Data Grid provides a built-in feature to toggle the visibility of columns based on media queries using the [hideAtMedia](https://ej2.syncfusion.com/vue/documentation/api/grid/column#hideatmedia) property of the column object. The `hideAtMedia` accepts valid [Media Queries](http://cssmediaqueries.com/what-are-css-media-queries.html). 
+The Vue Data Grid provides a built-in feature to toggle the visibility of columns based on media queries using the [hideAtMedia](https://ej2.syncfusion.com/vue/documentation/api/grid/column#hideatmedia) property of the column object. The `hideAtMedia` accepts valid media queries. 
 
 In this example, we have a Grid that displays data with three columns: **Order ID, Customer ID, and Freight**. We have set the `hideAtMedia` property of the **OrderID** column to (min-width: 700px) which means that this column will be hidden when the browser screen width is less than or equal to 700px.
 

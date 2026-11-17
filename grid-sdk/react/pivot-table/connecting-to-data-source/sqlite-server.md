@@ -2,7 +2,7 @@
 layout: post
 title: "SQLite Data Binding in React Pivot Table component | Syncfusion"
 component: "Pivot Table"
-platform: ej2-react
+platform: grid-sdk
 description: "Connect SQLite to the React Pivot Table using ASP.NET Core Web API. Learn data binding, CRUD operations, and server-side integration."
 control: SQLite Data Binding
 documentation: ug

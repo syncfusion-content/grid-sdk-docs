@@ -2,7 +2,7 @@
 layout: post
 title: Binding a React Pivot Table to a Flask API Backend | Syncfusion
 description: Learn how to integrate the Syncfusion React Pivot Table with a Flask REST API backend to load and process data from remote services.
-platform: ej2-react
+platform: grid-sdk
 documentation: ug
 domainurl: ##DomainURL##
 ---
@@ -996,7 +996,7 @@ The following recommendations help maintain a reliable integration between the S
 
 - Verify that the requested record exists before performing update or delete operations.
 - Return `404 Not Found` with a clear error message when a record cannot be found.
-- Reject malformed JSON, missing required fields, nonnumeric values, and duplicate `ProductID` values with `400 Bad Request` or `409 Conflict` as appropriate.
+- Reject malformed JSON, missing required fields, non-numeric values, and duplicate `ProductID` values with `400 Bad Request` or `409 Conflict` as appropriate.
 - Guard conversions and data-file parsing so malformed input does not become an unhandled `500` response.
 - Handle API request failures in the React application, restore server-backed data, and display an actionable message to the user.
 
@@ -1016,7 +1016,7 @@ The following recommendations help maintain a reliable integration between the S
 ### 5. Security and deployment
 
 - Restrict access to API endpoints when the application is deployed.
-- Replace unrestricted `CORS(app)` with an origin allowlist containing the deployed React application URL.
+- Replace unrestricted `CORS(app)` with an origin allow list containing the deployed React application URL.
 - Use HTTPS in production environments to secure data transfer.
 - Store sensitive settings, such as API URLs and credentials, outside the source code.
 - Do not deploy Flask's debug development server; run the application with a supported production WSGI server and disable debug mode.

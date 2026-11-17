@@ -3,7 +3,7 @@ layout: post
 title: WebMCP tool integration for Vue components | Syncfusion
 description: Learn how to integrate WebMCP with Syncfusion Vue components to enable AI interaction, configure tools, manage access, and monitor execution.
 control: WebMCP
-platform: ej2-vue
+platform: grid-sdk
 documentation: ug
 domainurl: ##DomainURL##
 ---

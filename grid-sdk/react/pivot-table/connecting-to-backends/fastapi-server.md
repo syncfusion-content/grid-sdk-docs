@@ -3,7 +3,7 @@ layout: post
 title: React Pivot Table with Python FastAPI REST Backend | Syncfusion
 description: Learn how to connect the Syncfusion React Pivot Table to a Python FastAPI REST backend and retrieve data for client-side Pivot Table processing.
 control: Pivot Table
-platform: ej2-react
+platform: grid-sdk
 documentation: ug
 domainurl: ##DomainURL##
 ---

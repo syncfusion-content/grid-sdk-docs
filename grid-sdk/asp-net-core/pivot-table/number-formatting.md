@@ -4,7 +4,6 @@ title: Number Formatting in ASP.NET Core Pivot Table | Syncfusion
 description: Learn how the ASP.NET Core Pivot Table formats numeric, currency, and percentage values via e-formatsettings using format codes N, C, and P.
 platform: grid-sdk
 control: Number Formatting
-publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 

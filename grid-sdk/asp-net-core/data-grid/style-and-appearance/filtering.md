@@ -1,10 +1,9 @@
 ---
 layout: post
-title: Filtering in ASP.NET Core Grid Component
+title: Filtering in ASP.NET Core Grid | Syncfusion
 description: Learn here all about Filtering in Syncfusion ASP.NET Core Grid component of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Filtering
-publishingplatform: grid-sdk
 documentation: ug
 ---
 

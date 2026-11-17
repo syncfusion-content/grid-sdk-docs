@@ -2,7 +2,7 @@
 layout: post
 title: How to Style Pivot Cells in Angular Pivot Table | Syncfusion
 description: Step-by-step example showing how to apply custom styles to pivot cells in the Angular Pivot Table, with code snippets and property references.
-platform: ej2-angular
+platform: grid-sdk
 control: Apply custom style to pivot cells 
 documentation: ug
 domainurl: ##DomainURL##

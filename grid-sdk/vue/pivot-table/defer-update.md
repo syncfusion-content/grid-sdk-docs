@@ -3,7 +3,7 @@ layout: post
 title: Defer Update in Vue Pivot Table | Syncfusion
 description: Learn how the Vue Pivot Table defers layout updates so report changes are batched until the Apply button is clicked in the field list.
 control: Defer update 
-platform: ej2-vue
+platform: grid-sdk
 documentation: ug
 domainurl: ##DomainURL##
 ---

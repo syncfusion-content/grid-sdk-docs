@@ -3,7 +3,7 @@ layout: post
 title: Calculated Field in Vue Pivot Table | Syncfusion
 description: Learn how the Vue Pivot Table adds calculated fields via the Field List dialog or programmatically with arithmetic formulas and formatting.
 control: Calculated field 
-platform: ej2-vue
+platform: grid-sdk
 documentation: ug
 domainurl: ##DomainURL##
 ---

@@ -15,11 +15,10 @@ To sort a column, click the column header.
 
 To sort multiple columns, press and hold the CTRL key and click the column header.  You can clear sorting of any one of the multi-sorted columns by pressing and holding the SHIFT key and clicking the specific column header.
 
-To enable sorting in the TreeGrid, set the [`allowSorting`](../api/treegrid#allowsorting) to true. Sorting options can be configured through the [`sortSettings`](../api/treegrid/sortSettings).
+To enable sorting in the TreeGrid, set the [`allowSorting`](https://ej2.syncfusion.com/documentation/api/treegrid#allowsorting) to true. Sorting options can be configured through the [`sortSettings`](https://ej2.syncfusion.com/documentation/api/treegrid/sortSettings).
 
-To sort, inject the [`Sort`](../api/treegrid#sortmodule) module in the treegrid.
+To sort, inject the [`Sort`](https://ej2.syncfusion.com/documentation/api/treegrid#sortmodule) module in the treegrid.
 
-{% if page.publishingplatform == "typescript" %}
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -32,29 +31,15 @@ To sort, inject the [`Sort`](../api/treegrid#sortmodule) module in the treegrid.
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/treegrid/sorting-cs1" %}
 
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/treegrid/sorting-cs1/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/treegrid/sorting-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/treegrid/sorting-cs1" %}
-{% endif %}
 
 > * TreeGrid columns are sorted in the `Ascending` order. If you click the already sorted column, the sort direction toggles.
-> * You can apply and clear sorting by invoking [`sortByColumn`](../api/treegrid#sortbycolumn) and [`clearSorting`](../api/treegrid#clearsorting) methods.
-> * To disable sorting for a particular column, set the [`columns.allowSorting`](../api/treegrid/column#allowSorting) to false.
+> * You can apply and clear sorting by invoking [`sortByColumn`](https://ej2.syncfusion.com/documentation/api/treegrid#sortbycolumn) and [`clearSorting`](https://ej2.syncfusion.com/documentation/api/treegrid#clearsorting) methods.
+> * To disable sorting for a particular column, set the [`columns.allowSorting`](https://ej2.syncfusion.com/documentation/api/treegrid/column#allowSorting) to false.
 
 ## Initial sort
 
-To sort at initial rendering, set the [`field`](../api/treegrid/sortDescriptorModel#field) and [`direction`](../api/treegrid/sortDescriptorModel#direction) in the `sortSettings.columns`.
+To sort at initial rendering, set the [`field`](https://ej2.syncfusion.com/documentation/api/treegrid/sortDescriptorModel#field) and [`direction`](https://ej2.syncfusion.com/documentation/api/treegrid/sortDescriptorModel#direction) in the `sortSettings.columns`.
 
-{% if page.publishingplatform == "typescript" %}
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -67,25 +52,11 @@ To sort at initial rendering, set the [`field`](../api/treegrid/sortDescriptorMo
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/treegrid/sorting-cs2" %}
 
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/treegrid/sorting-cs2/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/treegrid/sorting-cs2/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/treegrid/sorting-cs2" %}
-{% endif %}
 
 ## Sorting events
 
-During the sort action, the treegrid component triggers two events. The [`actionBegin`](../api/treegrid#actionbegin) event triggers before the sort action starts, and the [`actionComplete`](../api/treegrid#actioncomplete) event triggers after the sort action is completed. Using these events you can perform the needed actions.
+During the sort action, the treegrid component triggers two events. The [`actionBegin`](https://ej2.syncfusion.com/documentation/api/treegrid#actionbegin) event triggers before the sort action starts, and the [`actionComplete`](https://ej2.syncfusion.com/documentation/api/treegrid#actioncomplete) event triggers after the sort action is completed. Using these events you can perform the needed actions.
 
-{% if page.publishingplatform == "typescript" %}
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -98,29 +69,15 @@ During the sort action, the treegrid component triggers two events. The [`action
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/treegrid/sorting-cs3" %}
 
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/treegrid/sorting-cs3/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/treegrid/sorting-cs3/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/treegrid/sorting-cs3" %}
-{% endif %}
 
 > The `args.requestType` is the current action name. For example, in sorting the `args.requestType` value is 'sorting'.
 
 <!--  Custom sort comparer
 
-You can customize the default sort action for a column by defining the [`column.sortComparer`](../api/treegrid/column#sortcomparer) property. The sort comparer function has the same functionality like [`Array.sort`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort) sort comparer.
+You can customize the default sort action for a column by defining the [`column.sortComparer`](https://ej2.syncfusion.com/documentation/api/treegrid/column#sortcomparer) property. The sort comparer function has the same functionality like [`Array.sort`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort) sort comparer.
 
 In the following example, custom sort comparer function was defined in the `Category` column.
 
-{% if page.publishingplatform == "typescript" %}
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -133,19 +90,6 @@ In the following example, custom sort comparer function was defined in the `Cate
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/treegrid/sorting-cs4" %}
 
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/treegrid/sorting-cs4/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/treegrid/sorting-cs4/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/treegrid/sorting-cs4" %}
-{% endif %}
 
 > The sort comparer function will work only for the local data. -->
 

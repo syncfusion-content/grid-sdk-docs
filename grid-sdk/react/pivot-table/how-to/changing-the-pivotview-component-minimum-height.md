@@ -3,7 +3,7 @@ layout: post
 title: How to change the minimum height in React Pivot Table | Syncfusion
 description: Step-by-step example showing how to change the minimum height in the React Pivot Table using the minHeight property.
 control: Pivot Table
-platform: ej2-react
+platform: grid-sdk
 documentation: ug
 domainurl: ##DomainURL##
 ---

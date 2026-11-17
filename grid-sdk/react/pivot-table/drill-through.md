@@ -3,7 +3,7 @@ layout: post
 title: Drill through in React Pivot Table | Syncfusion
 description: Learn how the React Pivot Table shows the raw, unaggregated records behind any aggregated value cell on double-click through the drill-through grid.
 control: Pivot Table
-platform: ej2-react
+platform: grid-sdk
 documentation: ug
 domainurl: ##DomainURL##
 ---

@@ -102,6 +102,6 @@ Accessibility is validated using automated tools such as [accessibility-checker]
 {% previewsample "https://ej2.syncfusion.com/accessibility/tree-grid.html" %}
 
 ## See also
-* [Accessibility in Syncfusion<sup style="font-size:70%">&reg;</sup> React components](../common/accessibility)
+* [Accessibility in Syncfusion<sup style="font-size:70%">&reg;</sup> React components](https://ej2.syncfusion.com/react/documentation/common/accessibility)
 
 > Refer to the [React TreeGrid](https://www.syncfusion.com/react-ui-components/react-tree-grid) feature tour page for highlights. Explore the [React TreeGrid example](https://ej2.syncfusion.com/react/demos/#/material/treegrid/treegrid-overview) to learn how to present and manipulate data.

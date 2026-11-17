@@ -2,9 +2,8 @@
 layout: post
 title: How to bind complex data in Vue Pivot Table | Syncfusion
 description: Step-by-step example showing how to bind complex nested JSON to the Vue Pivot Table by converting it to flat JSON in the load event.
-platform: ej2-vue
+platform: grid-sdk
 control: Convert complex JSON to flat JSON and assign it to the pivot table 
-publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---

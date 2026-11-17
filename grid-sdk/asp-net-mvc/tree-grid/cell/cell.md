@@ -42,19 +42,6 @@ There are three types of `wrapMode`. They are:
 
 In the following example, the `textWrapSettings.wrapMode` is set to `Content`.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/cell/auto-wrap/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="AutoWrap.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/cell/auto-wrap/autoWrap.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/cell/auto-wrap/razor %}
@@ -63,7 +50,6 @@ In the following example, the `textWrapSettings.wrapMode` is set to `Content`.
 {% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/cell/auto-wrap/autoWrap.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 
 
@@ -79,19 +65,6 @@ You can customize the treegrid cells by adding a CSS class to the [`customAttrib
 
 In the below example, we have customized the cells of `TaskID` and `StartDate` columns.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/cell/custom-attr/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="CustomAttr.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/cell/custom-attr/customAttr.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/cell/custom-attr/razor %}
@@ -100,7 +73,6 @@ In the below example, we have customized the cells of `TaskID` and `StartDate` c
 {% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/cell/custom-attr/customAttr.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 
 
@@ -118,19 +90,6 @@ The available modes of grid lines are:
 | Vertical | Displays the vertical grid lines only.|
 | Default | Displays grid lines based on the theme.|
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/cell/grid-lines/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="GridLines.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/cell/grid-lines/gridLines.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/cell/grid-lines/razor %}
@@ -139,7 +98,6 @@ The available modes of grid lines are:
 {% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/cell/grid-lines/gridLines.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 
 
@@ -155,19 +113,6 @@ There are three types of [`clipMode`](https://help.syncfusion.com/cr/cref_files/
 * **`Ellipsis`**: Displays ellipsis when the cell content overflows its area.
 * **`EllipsisWithTooltip`**: Displays ellipsis when the cell content overflows its area, also it will display the tooltip while hover on ellipsis is applied.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/cell/clip-mode/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="ClipMode.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/cell/clip-mode/clipMode.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/cell/clip-mode/razor %}
@@ -176,7 +121,6 @@ There are three types of [`clipMode`](https://help.syncfusion.com/cr/cref_files/
 {% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/cell/clip-mode/clipMode.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
 
 
 

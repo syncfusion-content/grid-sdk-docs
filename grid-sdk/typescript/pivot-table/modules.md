@@ -4,7 +4,6 @@ title: Modules in TypeScript Pivot Table | Syncfusion
 description: Learn about TypeScript Pivot Table feature modules, their API configuration, and how to inject modules into a Pivot Table.
 platform: grid-sdk
 control: Pivot Table modules
-publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---

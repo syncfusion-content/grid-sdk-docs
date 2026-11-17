@@ -4,7 +4,6 @@ title: Toolbar in ASP.NET Core Pivot Table | Syncfusion
 description: Learn how the ASP.NET Core Pivot Table Toolbar exposes built-in actions like New, Save, Export, and chart switching via showToolbar.
 platform: grid-sdk
 control: Tool Bar
-publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 

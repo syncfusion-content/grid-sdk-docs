@@ -1,16 +1,15 @@
 ---
 layout: post
-title: Enable Disable Grid And Its Actions in ASP.NET MVC Grid Component
+title: Enable or Disable ASP.NET MVC Grid Actions | Syncfusion
 description: Learn here all about Enable Disable Grid And Its Actions in Syncfusion ASP.NET MVC Grid component of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Enable Disable Grid And Its Actions
-publishingplatform: grid-sdk
 documentation: ug
 ---
 
-# Enable disable grid and its actions in ASP.Net MVC Grid component
+# Enable disable grid and its actions in ASP.NET MVC Grid component
 
-You can enable or disable the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.Net MVC Grid and its actions by applying or removing specific CSS styles. This functionality is particularly useful in scenarios where interactions need to be restricted. Follow the steps below to implement this feature.
+You can enable or disable the Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Grid and its actions by applying or removing specific CSS styles. This functionality is particularly useful in scenarios where interactions need to be restricted. Follow the steps below to implement this feature.
 
 **Step 1**: Create CSS class with custom style to override the default style of Grid.
 

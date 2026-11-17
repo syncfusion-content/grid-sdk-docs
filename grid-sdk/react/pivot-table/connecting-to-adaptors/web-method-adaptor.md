@@ -3,7 +3,7 @@ layout: post
 title: Web Method Adaptor in React Pivot Table | Syncfusion
 description: Learn how the React Pivot Table calls server-side web methods through the WebMethodAdaptor for remote data operations.
 control: Pivot Table
-platform: ej2-react
+platform: grid-sdk
 documentation: ug
 domainurl: ##DomainURL##
 ---

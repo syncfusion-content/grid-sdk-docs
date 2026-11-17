@@ -1,16 +1,15 @@
 ---
 layout: post
-title: Custom Aggregate in ASP.NET MVC Grid Component
+title: Custom Aggregate in ASP.NET MVC Grid Component | Syncfusion
 description: Learn here all about Custom Aggregate in Syncfusion ASP.NET MVC Grid component of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Custom Aggregate
-publishingplatform: grid-sdk
 documentation: ug
 ---
 
-# Custom aggregate in ASP.Net MVC Grid component
+# Custom aggregate in ASP.NET MVC Grid component
 
-The custom aggregate feature in Syncfusion's ASP.Net MVC Grid component allows you to calculate aggregate values using your own aggregate function. This feature can be useful in scenarios where the built-in aggregate functions do not meet your specific requirements. To use the custom aggregate option, follow the steps below:
+The custom aggregate feature in Syncfusion's ASP.NET MVC Grid component allows you to calculate aggregate values using your own aggregate function. This feature can be useful in scenarios where the built-in aggregate functions do not meet your specific requirements. To use the custom aggregate option, follow the steps below:
 
 * Set the `Type` property to **Custom** in the `AggregateColumn`.
 
@@ -22,7 +21,7 @@ The custom aggregate function will be invoked differently for total and group ag
 
 **Group Aggregation:** The custom aggregate function will be called with the current group details and the aggregate column object as arguments.
 
-Here's an example that demonstrates how to use the custom aggregate feature in the ASP.Net MVC Grid component:
+Here's an example that demonstrates how to use the custom aggregate feature in the ASP.NET MVC Grid component:
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}

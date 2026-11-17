@@ -3,7 +3,7 @@ layout: post
 title: Custom Adaptor in React Pivot Table | Syncfusion
 description: Learn how the React Pivot Table extends existing adaptors through the Custom Adaptor to transform requests and responses for custom backends.
 control: Pivot Table
-platform: ej2-react
+platform: grid-sdk
 documentation: ug
 domainurl: ##DomainURL##
 ---
