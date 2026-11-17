@@ -1,9 +1,9 @@
 ---
 layout: post
 title: Cell in TypeScript Grid Control | Syncfusion
-description: Learn how to access and customize cells in the Syncfusion TypeScript Grid, including cell elements and supported cell interactions.
+description: Learn how to customize TypeScript Data Grid cells with HTML content, text wrapping, cell styling, clip modes, tooltips, and grid lines.
 platform: grid-sdk
-control: Cell 
+control: Cell
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
@@ -83,6 +83,23 @@ The following example demonstrates how to set the `allowTextWrap` property to **
 > * If a column width is not specified, then the Autowrap of columns will be adjusted with respect to the grid's width.
 > * If a column's header text contains no white space, the text may not be wrapped.
 > * If the content of a cell contains HTML tags, the Autowrap functionality may not work as expected. In such cases, you can use the [headerTemplate](https://ej2.syncfusion.com/documentation/api/grid/column#headertemplate) and [template](https://ej2.syncfusion.com/documentation/api/grid/column#template) properties of the column to customize the appearance of the header and cell content.
+
+## Enable or disable cell text selection
+
+The Data Grid supports cell text selection by default, allowing users to select text within grid cells, group captions, and summary rows using standard browser text selection features. However, in some scenarios, text selection may need to be disabled to help protect sensitive information and prevent users from copying important data. To disable cell text selection, set the `allowTextSelection` property to `false`.
+
+In the following example, the [Switch](https://ej2.syncfusion.com/documentation/switch/getting-started) control is added to enable and disable the `allowTextSelection` property.
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/grid-sdk/typescript/grid/text-selection-cs1/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/grid-sdk/typescript/grid/text-selection-cs1/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/text-selection-cs1" %}
 
 ## Customize cell styles
 
