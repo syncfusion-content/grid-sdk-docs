@@ -10,9 +10,8 @@ domainurl: https://help.syncfusion.com/grid-sdk
 
 # Custom Aggregate in TypeScript TreeGrid
 
-To calculate the aggregate value with your own aggregate functions, use the custom aggregate option. To use custom aggregation, specify the [`type`](../../api/treegrid/aggregateColumnModel#type) as `Custom`, and provide the custom aggregate function in the [`customAggregate`](../../api/treegrid/aggregateColumnModel#customaggregate) property.
+To calculate the aggregate value with your own aggregate functions, use the custom aggregate option. To use custom aggregation, specify the [`type`](https://ej2.syncfusion.com/documentation/api/treegrid/aggregateColumnModel#type) as `Custom`, and provide the custom aggregate function in the [`customAggregate`](https://ej2.syncfusion.com/documentation/api/treegrid/aggregateColumnModel#customaggregate) property.
 
-{% if page.publishingplatform == "typescript" %}
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -25,18 +24,5 @@ To calculate the aggregate value with your own aggregate functions, use the cust
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/treegrid/aggregates-cs2" %}
 
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/treegrid/aggregates-cs2/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/treegrid/aggregates-cs2/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/treegrid/aggregates-cs2" %}
-{% endif %}
 
 > To access the custom aggregate value inside the template, use the key as `Custom`.

@@ -1,8 +1,8 @@
-﻿---
+---
 layout: post
 title: Globalization and Localization in Angular Pivot Table | Syncfusion
 description: Learn how the Angular Pivot Table localizes culture, date, number, and currency formats with locale and L10n resources.
-platform: ej2-angular
+platform: grid-sdk
 control: Pivot Table 
 documentation: ug
 domainurl: ##DomainURL##

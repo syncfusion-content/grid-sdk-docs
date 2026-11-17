@@ -1,0 +1,20 @@
+<ejs-grid id="Grid" dataSource="@ViewBag.DataSource" enableDomVirtualization="true" height="400px" setRowHeight="setRowHeight">
+    <e-grid-columns>
+        <e-grid-column field="IssueId" headerText="Issue ID" width="130" textAlign="Left"></e-grid-column>
+        <e-grid-column field="Title" headerText="Title" width="260" textAlign="Left"></e-grid-column>
+        <e-grid-column field="Priority" headerText="Priority" width="100" textAlign="Center"></e-grid-column>
+        <e-grid-column field="Status" headerText="Status" width="110" textAlign="Center"></e-grid-column>
+        <e-grid-column field="Reporter" headerText="Reported By" width="150" textAlign="Left"></e-grid-column>
+    </e-grid-columns>
+</ejs-grid>
+
+<script>
+    function setRowHeight(row) {
+        if (row.data.Priority === 'Critical') {
+            return 60;
+        } else if (row.data.Priority === 'High') {
+            return 50;
+        }
+        return 36;
+    }
+</script>

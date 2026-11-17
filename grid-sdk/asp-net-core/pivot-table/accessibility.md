@@ -4,7 +4,6 @@ title: Accessibility in Syncfusion ASP.NET Core Pivot Table Component
 description: Learn here all about Accessibility in Syncfusion ASP.NET Core Pivot Table component of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Accessibility
-publishingplatform: grid-sdk
 documentation: ug
 ---
 
@@ -237,4 +236,4 @@ The accessibility compliance of the pivot table component is shown in the follow
 
 ## See also
 
-* [Accessibility in Syncfusion<sup style="font-size:70%">&reg;</sup> Pivot control](../common/accessibility)
+* [Accessibility in Syncfusion<sup style="font-size:70%">&reg;</sup> Pivot control](https://ej2.syncfusion.com/aspnetcore/documentation/common/accessibility)

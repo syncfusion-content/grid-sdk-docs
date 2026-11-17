@@ -3,7 +3,7 @@ layout: post
 title: Grouping Bar in Vue Pivot Table | Syncfusion
 description: Learn how the Vue Pivot Table shows a grouping bar for drag-and-drop field rearrangement across axes, with runtime sort, filter, and remove operations.
 control: Grouping bar 
-platform: ej2-vue
+platform: grid-sdk
 documentation: ug
 domainurl: ##DomainURL##
 ---

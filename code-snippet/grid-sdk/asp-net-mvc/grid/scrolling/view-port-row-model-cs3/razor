@@ -1,0 +1,72 @@
+@Html.EJS().Grid("grid").DataSource((object)ViewBag.dataSource).DataStateChange("processRequest").Height("400").EnableInfiniteScrolling().DomVirtualizationSettings(d => d.RowBuffer(5)).PageSettings(p => p.PageSize(50)).AllowSorting().AllowFiltering().FilterSettings(f => f.Type(Syncfusion.EJ2.Grids.FilterType.CheckBox)).Columns(col =>
+{
+    col.Field("StationID").HeaderText("Station ID").Width("120").IsPrimaryKey(true).Add();
+    col.Field("City").HeaderText("Station Location").Width("160").Add();
+    col.Field("ChargingSpeed").HeaderText("Charging Speed").Width("160").Add();
+    col.Field("ActiveSessions").HeaderText("Active Slots").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Width("130").Add();
+    col.Field("AvailableSlots").HeaderText("Available Slots").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Width("150").Add();
+    col.Field("LastMaintenanceDate").HeaderText("Maintenance Date").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Type("date").Format("dd/MM/yyyy").Width("170").AllowFiltering(false).Add();
+    col.Field("Revenue").HeaderText("Revenue").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Format("C2").Width("110").Add();
+}).Render()
+
+<script>
+    var pageSize = 50;
+    var chargingStationData = @Html.Raw(Newtonsoft.Json.JsonConvert.SerializeObject(ViewBag.allData));
+    chargingStationData.forEach(function (item) { item.LastMaintenanceDate = new Date(item.LastMaintenanceDate); });
+
+    function buildPredicate(item) {
+        if (!item.isComplex) {
+            return new ej.data.Predicate(item.field, item.operator, item.value, item.ignoreCase, item.ignoreAccent);
+        }
+        var result = null;
+        (item.predicates || []).forEach(function (sub) {
+            var p = buildPredicate(sub);
+            result = result === null ? p : (item.condition || 'and').toLowerCase() === 'or' ? result.or(p) : result.and(p);
+        });
+        return result;
+    }
+
+    // Simulates a server: applies filter, sort, and paging on the local dataset
+    // and returns only the rows requested by the viewport.
+    function processRequest(request) {
+        var grid = document.getElementById('grid').ej2_instances[0];
+        var manager = new ej.data.DataManager(chargingStationData);
+        var requestType = request.action && request.action.requestType;
+        if (request.dataSource && ['filterchoicerequest', 'filterSearchBegin', 'stringfilterrequest'].indexOf(requestType) !== -1) {
+            if (request.action.query) {
+                manager.executeQuery(request.action.query).then(function (e) {
+                    request.dataSource(e.result);
+                });
+            } else {
+                var field = request.action.field;
+                var seenValues = {};
+                var choices = [];
+                chargingStationData.forEach(function (item) {
+                    var value = item[field];
+                    var key = value instanceof Date ? 'date:' + value.getTime() : typeof value + ':' + value;
+                    if (!seenValues[key]) {
+                        seenValues[key] = true;
+                        var choice = {};
+                        choice[field] = value;
+                        choices.push(choice);
+                    }
+                });
+                request.dataSource(choices);
+            }
+            return;
+        }
+        var query = new ej.data.Query();
+        if (request.where && request.where.length) {
+            query.where(buildPredicate(request.where[0]));
+        }
+        if (request.sorted && request.sorted.length) {
+            request.sorted.forEach(function (s) { query.sortBy(s.name, s.direction); });
+        }
+        var skip = request.skip || 0;
+        var take = request.take || pageSize;
+        query.page(Math.floor(skip / take) + 1, take).requiresCount();
+        manager.executeQuery(query).then(function (e) {
+            grid.dataSource = { result: e.result, count: e.count };
+        });
+    }
+</script>

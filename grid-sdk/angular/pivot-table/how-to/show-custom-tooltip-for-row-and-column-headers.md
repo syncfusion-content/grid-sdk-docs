@@ -2,7 +2,7 @@
 layout: post
 title: Show custom header tooltips in Angular Pivot Table | Syncfusion
 description: Step-by-step example showing how to show custom tooltip for row and column headers in the Angular Pivot Table, with code snippets and property references.
-platform: ej2-angular
+platform: grid-sdk
 control: Show tooltip for row and column headers 
 documentation: ug
 domainurl: ##DomainURL##

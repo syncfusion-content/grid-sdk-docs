@@ -4,7 +4,6 @@ title: State Persistence in ASP.NET MVC Pivot Table | Syncfusion
 description: Learn how the ASP.NET MVC Pivot Table retains the full report state in browser storage via the EnablePersistence property.
 platform: grid-sdk
 control: State Persistence
-publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 

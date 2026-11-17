@@ -1,0 +1,63 @@
+
+<div style="margin: 10px">
+    <ejs-button id="updateOne" content="Update One Cell" cssClass="e-outline" style="margin-right: 10px"></ejs-button>
+    <ejs-button id="updateMultiple" content="Update Multiple Cells" cssClass="e-outline"></ejs-button>
+</div>
+<ejs-grid id="grid" dataSource="@ViewBag.dataSource" allowSorting="true" allowFiltering="true" allowPaging="true">
+
+    <e-grid-filterSettings type="Excel"></e-grid-filterSettings>
+    <e-grid-pageSettings pageSize="8" pageCount="4"></e-grid-pageSettings>
+    <e-grid-columns>
+        <e-grid-column field="TaskNumber" headerText="Task ID" textAlign="Right" width="100" isPrimaryKey="true"></e-grid-column>
+        <e-grid-column field="TaskName" headerText="Title" width="130" clipMode="EllipsisWithTooltip"></e-grid-column>
+        <e-grid-column field="AssignedTo" headerText="Assignee" width="110" clipMode="EllipsisWithTooltip"></e-grid-column>
+        <e-grid-column field="Priority" headerText="Priority" width="100"></e-grid-column>
+        <e-grid-column field="Progress" headerText="Progress" textAlign="Right" template="#progressTemplate" format="P" width="110"></e-grid-column>
+        <e-grid-column field="Status" headerText="State" width="110"></e-grid-column>
+        <e-grid-column field="Department" headerText="Department" width="130" clipMode="EllipsisWithTooltip"></e-grid-column>
+        <e-grid-column field="AssignedDate" headerText="Assigned Date" width="130" type="date" format="yMd" textAlign="Right"></e-grid-column>
+        <e-grid-column field="Deadline" headerText="Deadline" width="120" type="date" format="yMd" textAlign="Right"></e-grid-column>
+    </e-grid-columns>
+</ejs-grid>
+<script type="text/x-template" id="progressTemplate">
+    <div class="progress-cell ${getProgressClass(data.Progress)}">${formatProgress(data.Progress)}%</div>
+</script>
+<script>
+    function getGrid() {
+        return document.getElementById('grid').ej2_instances[0];
+    }
+    function formatProgress(progress) {
+        return ((progress == null ? 0 : progress) * 100).toFixed(0);
+    }
+    function getProgressClass(progress) {
+        progress = progress == null ? 0 : progress;
+        if (progress >= 0.9) return 'progress-excellent';
+        if (progress >= 0.75) return 'progress-high';
+        if (progress >= 0.5) return 'progress-medium';
+        if (progress >= 0.25) return 'progress-low';
+        return 'progress-very-low';
+    }
+    document.getElementById('updateOne').addEventListener('click', function () {
+        var grid = getGrid();
+        grid.setCellValue(grid.dataSource[2].TaskNumber, 'Progress', Math.random());
+        grid.renderTemplates();
+    });
+    document.getElementById('updateMultiple').addEventListener('click', async function () {
+        var grid = getGrid();
+        var updates = [0, 1, 3].map(function (index) {
+            return { key: grid.dataSource[index].TaskNumber, field: 'Progress', value: Math.random() };
+        });
+        for (var update of updates) {
+            await grid.setCellValueAsync(update.key, update.field, update.value, 0);
+            grid.renderTemplates();
+        }
+    });
+</script>
+<style>
+    .progress-cell { text-align: right; padding-right: 8px; font-weight: 600; }
+    .progress-very-low { color: #991b1b; }
+    .progress-low { color: #ef4444; }
+    .progress-medium { color: #f59e0b; }
+    .progress-high { color: #22c55e; }
+    .progress-excellent { color: #0ea5e9; }
+</style>

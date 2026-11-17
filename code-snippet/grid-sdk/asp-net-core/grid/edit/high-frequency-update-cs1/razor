@@ -1,0 +1,81 @@
+<style>
+    .revenue-cell {  align-items: center; display: inline-flex; gap: 4px; }
+    .above-0 { color: #00a653; }
+    .below-0 { color: #ff3740; }
+    .rowcell-left { align-items: center; font-weight: 700; }
+    .rowcell-right { color: #ff3740; font-size: .8em; }
+</style>
+<div style="display: flex; gap: 20px; margin: 5px; align-items: center">
+    @Html.EJS().Button("normalUpdate").Content("Normal update").CssClass("e-outline").Render()
+    <span id="syncTime" style="font-weight: bold; color: #555"></span>
+    @Html.EJS().Button("asyncUpdate").Content("Async update").CssClass("e-outline").Render()
+    <span id="asyncTime" style="font-weight: bold; color: #555"></span>
+</div>
+@Html.EJS().Grid("grid").DataSource((IEnumerable<object>)ViewBag.dataSource).Height("480").EnableVirtualization().Columns(col =>
+{
+    col.Field("StationID").HeaderText("Station ID").IsPrimaryKey(true).Width("120").Add();
+    col.Field("City").HeaderText("Station Location").Width("160").Add();
+    col.Field("ChargingSpeed").HeaderText("Charging Speed").Width("160").Add();
+    col.Field("ActiveSessions").HeaderText("Active Slots").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Width("130").Add();
+    col.Field("AvailableSlots").HeaderText("Available Slots").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Width("150").Add();
+    col.Field("Revenue").HeaderText("Revenue").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Center).Template("#revenueTemplate").Format("C2").Width("180").Add();
+    col.Field("LastMaintenanceDate").HeaderText("Maintenance Date").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Type("date").Format("dd/MM/yyyy").Width("140").Add();
+}).Render()
+
+<script type="text/x-template" id="revenueTemplate">
+    ${getRevenueHtml(data.StationID, data.Revenue)}
+</script>
+
+<script>
+    var previousRevenue = new Map();
+
+    function getGrid() {
+        return document.getElementById('grid').ej2_instances[0];
+    }
+    function setCellValueAsyncCompat(grid, key, field, value) {
+        if (typeof grid.setCellValueAsync === 'function') {
+            return grid.setCellValueAsync(key, field, value, 0);
+        }
+        return Promise.resolve().then(function () {
+            grid.setCellValue(key, field, value);
+        });
+    }
+    function getRevenueHtml(stationId, revenue) {
+        revenue = revenue == null ? 0 : revenue;
+        var previousValue = previousRevenue.get(stationId);
+        var previous = previousValue == null ? revenue : previousValue;
+        var isUp = revenue - previous >= 0;
+        return '<div class="revenue-cell ' + (isUp ? 'above-0' : 'below-0') + '">' +
+            '<span class="rowcell-left"><svg width="12" height="12" viewBox="0 0 24 24" fill="' + (isUp ? 'green' : 'red') + '">' +
+            '<path d="' + (isUp ? 'M12 4l-8 8h6v8h4v-8h6z' : 'M12 20l8-8h-6V4h-4v8H4z') + '" /></svg>$' + revenue.toFixed(2) + '</span>' +
+            '<span class="rowcell-right">Prev: $' + previous.toFixed(2) + '</span></div>';
+    }
+    document.getElementById('normalUpdate').addEventListener('click', function () {
+        var grid = getGrid();
+        var start = performance.now();
+        var visibleStations = grid.getCurrentViewRecords();
+        grid.dataSource.forEach(function (station) {
+            previousRevenue.set(station.StationID, station.Revenue);
+            station.Revenue = station.Revenue + 10;
+        });
+        setTimeout(function () {
+            visibleStations.forEach(function (station) {
+                grid.setCellValue(station.StationID, 'Revenue', station.Revenue);
+            });
+            document.getElementById('syncTime').textContent = 'Sync Update took ' + (performance.now() - start).toFixed(2) + ' ms';
+        });
+    });
+    document.getElementById('asyncUpdate').addEventListener('click', async function () {
+        var grid = getGrid();
+        var start = performance.now();
+        var visibleStations = grid.getCurrentViewRecords();
+        grid.dataSource.forEach(function (station) {
+            previousRevenue.set(station.StationID, station.Revenue);
+            station.Revenue = station.Revenue + 20;
+        });
+        await Promise.all(visibleStations.map(function (station) {
+            return setCellValueAsyncCompat(grid, station.StationID, 'Revenue', station.Revenue);
+        }));
+        document.getElementById('asyncTime').textContent = 'Async Update took ' + (performance.now() - start).toFixed(2) + ' ms';
+    });
+</script>

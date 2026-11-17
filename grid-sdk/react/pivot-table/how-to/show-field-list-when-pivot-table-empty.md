@@ -3,7 +3,7 @@ layout: post
 title: How to show the field list for empty pivot tables | Syncfusion
 description: Step-by-step example showing how to show the field list for an empty pivot table in React by handling the dataBound event.
 control: Pivot Table
-platform: ej2-react
+platform: grid-sdk
 documentation: ug
 domainurl: ##DomainURL##
 ---

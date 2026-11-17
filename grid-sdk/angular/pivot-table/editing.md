@@ -2,7 +2,7 @@
 layout: post
 title: Editing in Angular Pivot Table | Syncfusion
 description: Learn how the Angular Pivot Table lets users add, update, and delete raw data in value cells via the editSettings drill-through grid.
-platform: ej2-angular
+platform: grid-sdk
 control: Pivot Table
 documentation: ug
 domainurl: ##DomainURL##

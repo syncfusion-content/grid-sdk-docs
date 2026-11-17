@@ -2,7 +2,7 @@
 layout: post
 title: State Persistence in Angular Pivot Table | Syncfusion
 description: Learn how the Angular Pivot Table persists the report state, filters, and sort in browser local storage with enablePersistence.
-platform: ej2-angular
+platform: grid-sdk
 control: State persistence 
 documentation: ug
 domainurl: ##DomainURL##

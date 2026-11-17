@@ -3,7 +3,7 @@ layout: post
 title: Excel export in React Pivot Table | Syncfusion
 description: Learn how the React Pivot Table exports pivot data to Excel and CSV using the ExcelExport module, with options to customize file and cell appearance.
 control: Pivot Table
-platform: ej2-react
+platform: grid-sdk
 documentation: ug
 domainurl: ##DomainURL##
 ---

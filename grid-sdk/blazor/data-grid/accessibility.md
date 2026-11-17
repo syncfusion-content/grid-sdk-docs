@@ -103,6 +103,17 @@ The supported keyboard shortcuts are listed below.
 | <kbd>Home</kbd> / <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>PageUp</kbd>  | <kbd>Fn</kbd> + <kbd>←</kbd>        | Navigate to the first page.            |
 | <kbd>End</kbd> / <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>PageDown</kbd> | <kbd>Fn</kbd> + <kbd>→</kbd>        | Navigate to the last page.             |
 
+**Virtualization**
+
+| Windows                        | Mac                         | Actions                                                    |
+|--------------------------------|-----------------------------|------------|
+| <kbd>Page Up</kbd>             | <kbd>Page Up</kbd>          | Scrolls up by one viewport while keeping the focused row in the same relative position. |
+| <kbd>Page Down</kbd>           | <kbd>Page Down</kbd>        | Scrolls down by one viewport while keeping the focused row in the same relative position. |
+| <kbd>Ctrl</kbd> + <kbd>↑</kbd> | <kbd>⌘</kbd> + <kbd>↑</kbd> | Moves focus to the first row of the current column. |
+| <kbd>Ctrl</kbd> + <kbd>↓</kbd> | <kbd>⌘</kbd> + <kbd>↓</kbd> | Moves focus to the last row of the current column. |
+
+> **Note:** These keyboard shortcuts apply only when virtualization is enabled via the `EnableVirtualization` property. These shortcuts have no effect when virtualization is disabled.
+
 <b>Focus Elements</b>
 
 | Windows                           | Mac                                         | Actions                                                    |

@@ -14,17 +14,17 @@ documentation: ug
 
 The [`editType`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.TreeGrid.TreeGridColumn.html#Syncfusion_EJ2_TreeGrid_TreeGridColumn_EditType) of [`e-treegrid-column`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.TreeGrid.TreeGridColumn.html) tag helper is used to customize the edit type of the particular column. You can set the [`editType`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.TreeGrid.TreeGridColumn.html#Syncfusion_EJ2_TreeGrid_TreeGridColumn_EditType) based on data type of the column.
 
-* `numericedit` - [`NumericTextBox`](../numerictextbox) component for integers, double, and decimal data types.
+* `numericedit` - [`NumericTextBox`](https://ej2.syncfusion.com/aspnetcore/documentation/numerictextbox) component for integers, double, and decimal data types.
 
-* `defaultedit` - [`TextBox`](../textbox) component for string data type.
+* `defaultedit` - [`TextBox`](https://ej2.syncfusion.com/aspnetcore/documentation/textbox) component for string data type.
 
-* `dropdownedit` - [`DropDownList`](../drop-down-list) component for list data type.
+* `dropdownedit` - [`DropDownList`](https://ej2.syncfusion.com/aspnetcore/documentation/drop-down-list) component for list data type.
 
-* `booleanedit` - [`CheckBox`](../check-box) component for boolean data type.
+* `booleanedit` - [`CheckBox`](https://ej2.syncfusion.com/aspnetcore/documentation/check-box) component for boolean data type.
 
-* `datepickeredit` - [`DatePicker`](../datepicker) component for date data type.
+* `datepickeredit` - [`DatePicker`](https://ej2.syncfusion.com/aspnetcore/documentation/datepicker) component for date data type.
 
-* `datetimepickeredit` - [`DateTimePicker`](../datetimepicker) component for date time data type.
+* `datetimepickeredit` - [`DateTimePicker`](https://ej2.syncfusion.com/aspnetcore/documentation/datetimepicker) component for date time data type.
 
 Also, you can customize model of the [`editType`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.TreeGrid.TreeGridColumn.html#Syncfusion_EJ2_TreeGrid_TreeGridColumn_EditType) component through the params in [`edit`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.TreeGrid.TreeGridColumn.html#Syncfusion_EJ2_TreeGrid_TreeGridColumn_Edit) property of [`e-treegrid-column`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.TreeGrid.TreeGridColumn.html) tag helper.
 
@@ -32,12 +32,12 @@ The following table describes cell edit type component and their corresponding e
 
 Component |Example
 -----|-----
-[`NumericTextBox`](../numerictextbox) | params: { decimals: 2, value: 5 }
-[`TextBox`](../textbox) | -
-[`DropDownList`](../drop-down-list) | params: { value: 'Germany' }
-[`Checkbox`](../check-box) | params: { checked: true}
-[`DatePicker`](../datepicker) | params: { format:'dd.MM.yyyy' }
-[`DateTimePicker`](../datetimepicker) | params: { value: new Date() }
+[`NumericTextBox`](https://ej2.syncfusion.com/aspnetcore/documentation/numerictextbox) | params: { decimals: 2, value: 5 }
+[`TextBox`](https://ej2.syncfusion.com/aspnetcore/documentation/textbox) | -
+[`DropDownList`](https://ej2.syncfusion.com/aspnetcore/documentation/drop-down-list) | params: { value: 'Germany' }
+[`Checkbox`](https://ej2.syncfusion.com/aspnetcore/documentation/check-box) | params: { checked: true}
+[`DatePicker`](https://ej2.syncfusion.com/aspnetcore/documentation/datepicker) | params: { format:'dd.MM.yyyy' }
+[`DateTimePicker`](https://ej2.syncfusion.com/aspnetcore/documentation/datetimepicker) | params: { value: new Date() }
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}

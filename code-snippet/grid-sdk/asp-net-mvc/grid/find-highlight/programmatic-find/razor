@@ -1,0 +1,59 @@
+<div style="padding: 0 0 20px 0">
+    @Html.EJS().TextBox("findText").Placeholder("Enter text to find").Width("220px").Render()
+    @Html.EJS().Button("find").Content("Find").Disabled(true).CssClass("custom").Render()
+    @Html.EJS().Button("findNext").Content("Next").Disabled(true).CssClass("custom").Render()
+    @Html.EJS().Button("findPrevious").Content("Previous").Disabled(true).CssClass("custom").Render()
+    @Html.EJS().Button("clearFind").Content("Clear").Disabled(true).CssClass("custom").Render()
+</div>
+@Html.EJS().Grid("FindGrid").DataSource((IEnumerable<object>)ViewBag.datasource).Height("272px").Columns(col =>
+{
+    col.Field("OrderID").HeaderText("Order ID").Width("90").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("CustomerID").HeaderText("Customer ID").Width("110").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Left).Add();
+    col.Field("ShipCity").HeaderText("Ship City").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Left).Add();
+    col.Field("ShipCountry").HeaderText("Ship Country").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Left).Add();
+    col.Field("Freight").HeaderText("Freight").Width("90").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Format("C2").Add();
+}).Render()
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var gridObj = document.getElementById('FindGrid').ej2_instances[0];
+        var findTextInput = document.getElementById('findText').ej2_instances[0];
+        var findButtonIds = ['find', 'findNext', 'findPrevious', 'clearFind'];
+
+        function toggleButtons(disabled) {
+            findButtonIds.forEach(function (id) {
+                var button = document.getElementById(id).ej2_instances[0];
+                button.disabled = disabled;
+            });
+        }
+
+        // Enable when there is text, disable when empty
+        document.getElementById('findText').addEventListener('input', function (event) {
+            var query = event.target.value;
+            toggleButtons(query.trim().length === 0);
+        });
+
+        document.getElementById('find').addEventListener('click', function () {
+            gridObj.find(findTextInput.value);
+        });
+
+        document.getElementById('findNext').addEventListener('click', function () {
+            gridObj.findNext();
+        });
+
+        document.getElementById('findPrevious').addEventListener('click', function () {
+            gridObj.findPrevious();
+        });
+
+        document.getElementById('clearFind').addEventListener('click', function () {
+            gridObj.clearFind();
+            findTextInput.value = '';
+            findTextInput.element.value = '';
+            toggleButtons(true);
+        });
+    });
+</script>
+<style>
+    .custom {
+        margin-left: 20px;
+    }
+</style>

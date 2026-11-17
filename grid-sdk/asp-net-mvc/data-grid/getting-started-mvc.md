@@ -4,7 +4,6 @@ title: Getting Started with ASP.NET MVC DataGrid Control | Syncfusion
 description: Checkout and learn about getting started with ASP.NET MVC DataGrid control of Syncfusion Essential JS 2 and more details.
 platform: grid-sdk
 control: Getting Started Mvc
-publishingplatform: grid-sdk
 documentation: ug
 ---
 

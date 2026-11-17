@@ -3,7 +3,7 @@ layout: post
 title: Overview of React Pivot Table | Syncfusion
 description: Explore the React Pivot Table overview and feature matrix for data analysis, data sources, layouts, performance, exporting, accessibility, and AI integration.
 control: Pivot Table
-platform: ej2-react
+platform: grid-sdk
 documentation: ug
 domainurl: ##DomainURL##
 ---
@@ -139,7 +139,7 @@ Editing changes the underlying raw records and is available only for relational 
 | --- | --- | --- | --- |
 | Save and load report settings | Configurable | Relational and OLAP | [Save and load report](./save-and-load) |
 | Browser state persistence | Configurable | Relational and OLAP | [State persistence](./state-persistence) |
-| Localization | Configurable | Relational and OLAP | [Globalization and localization](./globalization-and-localization) |
+| Localization | Configurable | Relational and OLAP | [Globalization and localization](./globalization-and-localization#localization) |
 | Culture-aware number and date formatting | Configurable | Relational and OLAP | [Globalization and localization](./globalization-and-localization) |
 | Right-to-left rendering | Configurable | Relational and OLAP | [Right-to-left support](./globalization-and-localization#right-to-left-rtl) |
 

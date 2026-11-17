@@ -2,7 +2,7 @@
 layout: post
 title: How to apply custom styles to Pivot Table cells | Syncfusion
 description: Step-by-step example showing how to apply custom styles to pivot cells in the React Pivot Table using event handlers.
-platform: ej2-react
+platform: grid-sdk
 control: Pivot Table
 documentation: ug
 domainurl: ##DomainURL##

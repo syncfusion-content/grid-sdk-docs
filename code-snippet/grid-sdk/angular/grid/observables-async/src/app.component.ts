@@ -90,3 +90,4 @@ export class AppComponent implements OnInit {
     this.crudService.execute(state, query);
   }
 }
+

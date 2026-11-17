@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Conditional Formatting in ##Platform_Name## Pivot Table | Syncfusion
-description: Learn how the ##Platform_Name## Pivot Table applies conditional formatting to value cells via the toolbar dialog or `conditionalFormatSettings`.
-platform: ej2-javascript
+title: Conditional Formatting in JavaScript Pivot Table | Syncfusion
+description: Learn how the JavaScript Pivot Table applies conditional formatting to value cells via the toolbar dialog or `conditionalFormatSettings`.
+platform: grid-sdk
 control: Conditional formatting
-publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Conditional Formatting in ##Platform_Name## Pivot Table
+# Conditional Formatting in JavaScript Pivot Table
 
 The conditional formatting feature enables users to customize the appearance of Pivot Table value cells by modifying background color, font color, font family, and font size based on specific conditions. This powerful visualization feature helps highlight important value cells and makes them stand out in the Pivot Table.
 

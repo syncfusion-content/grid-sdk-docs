@@ -2,7 +2,7 @@
 layout: post
 title: How to hide specific columns in React Pivot Table | Syncfusion
 description: Step-by-step example showing how to hide specific columns in the React Pivot Table using the columnRender event in gridSettings.
-platform: ej2-react
+platform: grid-sdk
 control: Pivot Table
 documentation: ug
 domainurl: ##DomainURL##

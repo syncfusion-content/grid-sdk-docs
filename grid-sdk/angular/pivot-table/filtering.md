@@ -2,7 +2,7 @@
 layout: post
 title: Filtering in Angular Pivot Table | Syncfusion
 description: Learn how the Angular Pivot Table filters members using label, value, and date filters with include or exclude modes at runtime.
-platform: ej2-angular
+platform: grid-sdk
 control: Pivot Table 
 documentation: ug
 domainurl: ##DomainURL##

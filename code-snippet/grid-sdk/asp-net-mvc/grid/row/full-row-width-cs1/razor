@@ -1,0 +1,59 @@
+@using Syncfusion.EJ2
+
+@Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)ViewBag.DataSource).GridLines(Syncfusion.EJ2.Grids.GridLine.Both).AllowTextWrap(true).TextWrapSettings(new Syncfusion.EJ2.Grids.GridTextWrapSettings { WrapMode = Syncfusion.EJ2.Grids.WrapMode.Content }).Height("315").Width("auto").QueryCellInfo("queryCellInfo").Columns(col =>
+{
+    col.Field("Name").HeaderText("Doctor Name").Width("170").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Center).Template("#doctorTemplate").Add();
+    col.Field("Time9AM").HeaderText("9:00 AM").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Center).Add();
+    col.Field("Time10AM").HeaderText("10:00 AM").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Center).Add();
+    col.Field("Time11AM").HeaderText("11:00 AM").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Center).Add();
+    col.Field("Time12PM").HeaderText("12:00 PM").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Center).Add();
+    col.Field("Time1PM").HeaderText("1:00 PM").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Center).Add();
+    col.Field("Time2PM").HeaderText("2:00 PM").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Center).Add();
+    col.Field("Time3PM").HeaderText("3:00 PM").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Center).Add();
+    col.Field("Time4PM").HeaderText("4:00 PM").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Center).Add();
+    col.Field("Time5PM").HeaderText("5:00 PM").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Center).Add();
+    col.Field("Time6PM").HeaderText("6:00 PM").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Center).Add();
+    col.Field("Time7PM").HeaderText("7:00 PM").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Center).Add();
+}).Render()
+
+<script type="text/x-template" id="doctorTemplate">
+    <div class="doctor-name">${Name}</div>
+    <div class="doctor-designation">${Designation}</div>
+    ${if(window.isFullWidthStatus(Status))}<div>${Status}</div>${/if}
+</script>
+
+<style>
+    .doctor-name {
+        margin-bottom: 5px;
+    }
+
+    .doctor-designation {
+        font-size: 12px;
+        color: #7f8c8d;
+        font-weight: normal;
+    }
+
+    .e-grid .e-rowcell.full-width-row {
+        background-color: #d0ecf5;
+        color: #333;
+        font-weight: 500;
+    }
+</style>
+
+<script>
+    function isFullWidthStatus(status) {
+        if (!status) {
+            return false;
+        }
+        var normalizedStatus = status.trim().toLowerCase().replace(/[-_]/g, ' ');
+        return normalizedStatus === 'not available' || normalizedStatus === 'leave' ||
+            normalizedStatus === 'on leave' || normalizedStatus === 'resigned';
+    }
+
+    function queryCellInfo(args) {
+        if (args.column.field === 'Name' && isFullWidthStatus(args.data.Status)) {
+            args.colSpan = 12;
+            args.cell.classList.add('full-width-row');
+        }
+    }
+</script>

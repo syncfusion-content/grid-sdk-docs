@@ -1,10 +1,9 @@
 ---
 layout: post
-title: Sorting in Syncfusion ASP.NET Core Grid Component | Learn Sorting Features
+title: Sorting in ASP.NET Core | Syncfusion
 description: Learn here all about Sorting in Syncfusion ASP.NET Core Grid component of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Sorting
-publishingplatform: grid-sdk
 documentation: ug
 ---
 
