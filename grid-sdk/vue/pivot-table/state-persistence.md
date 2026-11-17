@@ -3,7 +3,7 @@ layout: post
 title: State Persistence in Vue Pivot Table | Syncfusion
 description: Learn how the Vue Pivot Table retains the current layout, field arrangements, and sort states in cookies via enablePersistence, and saves or loads a report.
 control: State persistence 
-platform: ej2-vue
+platform: grid-sdk
 documentation: ug
 domainurl: ##DomainURL##
 ---

@@ -11,8 +11,8 @@ domainurl: https://help.syncfusion.com/grid-sdk
 # Auto Wrap in TypeScript TreeGrid
 
 The auto wrap allows the cell content of the treegrid to wrap to the next line when it exceeds the boundary of the cell width. The Cell Content wrapping works based on the position of white space between words.
-To enable auto wrap, set the [`allowTextWrap`](../../api/treegrid#allowtextwrap) property to `true`.
-You can configure the auto wrap mode by setting the [`textWrapSettings.wrapMode`](../../api/treegrid#textwrapsettings) property.
+To enable auto wrap, set the [`allowTextWrap`](https://ej2.syncfusion.com/documentation/api/treegrid#allowtextwrap) property to `true`.
+You can configure the auto wrap mode by setting the [`textWrapSettings.wrapMode`](https://ej2.syncfusion.com/documentation/api/treegrid#textwrapsettings) property.
 
 There are three types of `wrapMode`. They are:
 
@@ -24,7 +24,6 @@ Note: When a column width is not specified, then auto wrap of columns will be ad
 
 In the following example, the `textWrapSettings.wrapMode` is set to `Content`.
 
-{% if page.publishingplatform == "typescript" %}
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -36,17 +35,3 @@ In the following example, the `textWrapSettings.wrapMode` is set to `Content`.
 {% endtabs %}
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/treegrid/cell-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/treegrid/cell-cs1/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/treegrid/cell-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/treegrid/cell-cs1" %}
-{% endif %}

@@ -4,7 +4,6 @@ title: How to Switch to Older Theme in ASP.NET Core Pivot Table | Syncfusion
 description: Learn how to switch the ASP.NET Core Pivot Table to the pre-2020 theme style by overriding background colors via CSS and setting a custom pivot table height.
 platform: grid-sdk
 control: Switching Older Themes Style
-publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
@@ -57,8 +56,6 @@ In current theme, to make the component compact we have reduced the height of ea
 
 In the below code sample, we replicate the older theme style.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/switch-theme/tagHelper %}
@@ -67,18 +64,6 @@ In the below code sample, we replicate the older theme style.
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/switch-theme/SwitchTheme.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/switch-theme/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="SwitchTheme.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/switch-theme/SwitchTheme.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 
 

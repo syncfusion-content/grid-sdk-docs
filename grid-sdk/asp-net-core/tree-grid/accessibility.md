@@ -1,10 +1,9 @@
 ---
 layout: post
-title: Accessibility in ASP.NET Core Tree Grid Component
+title: Accessibility in ASP.NET Core Tree Grid Component | Syncfusion
 description: Learn here all about Accessibility in Syncfusion ASP.NET Core Tree Grid component of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Accessibility
-publishingplatform: grid-sdk
 documentation: ug
 ---
 
@@ -103,4 +102,4 @@ The accessibility compliance of the Tree Grid component is shown in the followin
 {% previewsample "https://ej2.syncfusion.com/accessibility/tree-grid.html" %}
 
 ## See also
-* [Accessibility in Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core components](../common/accessibility)
+* [Accessibility in Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET Core components](https://ej2.syncfusion.com/aspnetcore/documentation/common/accessibility)

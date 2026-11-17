@@ -34,8 +34,6 @@ N> Multiple types for a column is supported only when one of the aggregate templ
 
 Aggregate value is calculated for child rows, and it is displayed in the parent row footer. Use the [`showChildSummary`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.TreeGrid.TreeGridAggregate.html#Syncfusion_EJ2_TreeGrid_TreeGridAggregate_ShowChildSummary) property to render the child rows aggregate value.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-core/tree-grid/aggregates/child-aggregate/tagHelper %}
@@ -44,18 +42,6 @@ Aggregate value is calculated for child rows, and it is displayed in the parent 
 {% include code-snippet/grid-sdk/asp-net-core/tree-grid/aggregates/child-aggregate/childAggregate.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/tree-grid/aggregates/child-aggregate/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="ChildAggregate.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/tree-grid/aggregates/child-aggregate/childAggregate.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 
 

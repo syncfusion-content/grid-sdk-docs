@@ -10,22 +10,8 @@ domainurl: https://help.syncfusion.com/grid-sdk
 
 # Complex Data Binding in JavaScript TreeGrid
 
-You can achieve complex data binding in the treegrid by using the dot(.) operator in the [`column.field`](../../api/treegrid/column#field).
+You can achieve complex data binding in the treegrid by using the dot(.) operator in the [`column.field`](https://ej2.syncfusion.com/javascript/documentation/api/treegrid/column#field).
 
-{% if page.publishingplatform == "typescript" %}
-
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/treegrid/columns-cs16/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/treegrid/columns-cs16/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/treegrid/columns-cs16" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -37,4 +23,3 @@ You can achieve complex data binding in the treegrid by using the dot(.) operato
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/treegrid/columns-cs16" %}
-{% endif %}

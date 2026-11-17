@@ -4,7 +4,6 @@ title: Performance Best Practices in ASP.NET MVC Pivot Table | Syncfusion
 description: Learn how to improve the ASP.NET MVC Pivot Table's loading performance with virtual scrolling, paging, server-side engine, and data compression.
 platform: grid-sdk
 control: Performance best practices
-publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---

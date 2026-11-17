@@ -10,7 +10,7 @@ domainurl: https://help.syncfusion.com/grid-sdk
 
 # Change Header Text Orientation in TypeScript TreeGrid
 
-You can change the orientation of the header text by using the [`customAttributes`](../../api/treegrid/column#customattributes) property.
+You can change the orientation of the header text by using the [`customAttributes`](https://ej2.syncfusion.com/documentation/api/treegrid/column#customattributes) property.
 
 Ensure the following steps:
 
@@ -27,7 +27,7 @@ Create a CSS class with orientation style for the treegrid header cell.
 
 **Step 2**:
 
-Add the custom CSS class to a particular column by using the [`customAttributes`](../../api/treegrid/column#customattributes) property.
+Add the custom CSS class to a particular column by using the [`customAttributes`](https://ej2.syncfusion.com/documentation/api/treegrid/column#customattributes) property.
 
 ```ts
     { field: 'taskName', headerText: 'Task Name', textAlign: 'Center', customAttributes: {class: 'orientationcss'}, width: 80 }
@@ -49,7 +49,6 @@ function setHeaderHeight(args) {
 
 ```
 
-{% if page.publishingplatform == "typescript" %}
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -62,18 +61,5 @@ function setHeaderHeight(args) {
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/treegrid/orientation-cs1" %}
 
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/treegrid/orientation-cs1/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/treegrid/orientation-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/treegrid/orientation-cs1" %}
-{% endif %}
 
 > You can refer to our [`JavaScript Tree Grid`](https://www.syncfusion.com/javascript-ui-controls/js-tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our JavaScript Tree Grid example [`JavaScript Tree Grid example`](https://ej2.syncfusion.com/demos/#/material/tree-grid/treegrid-overview.html) to knows how to present and manipulate data.

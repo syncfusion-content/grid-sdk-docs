@@ -3,7 +3,7 @@ layout: post
 title: Classic layout in React Pivot Table | Syncfusion
 description: Learn how the React Pivot Table renders row fields side by side in separate columns using the classic tabular layout for easier data analysis.
 control: Pivot Table
-platform: ej2-react
+platform: grid-sdk
 documentation: ug
 domainurl: ##DomainURL##
 ---

@@ -3,7 +3,7 @@ layout: post
 title: How to customize pivot table icons in React Pivot Table | Syncfusion
 description: Step-by-step example showing how to customize the icons for pivot table in the React Pivot Table by overriding CSS classes with custom Unicode.
 control: Pivot Table
-platform: ej2-react
+platform: grid-sdk
 documentation: ug
 domainurl: ##DomainURL##
 ---

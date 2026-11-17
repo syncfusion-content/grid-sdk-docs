@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "URL Adaptor in React Pivot Table | Syncfusion"
-platform: ej2-react
+platform: grid-sdk
 description: "Learn how the React Pivot Table connects to a REST API through the UrlAdaptor for remote data binding and CRUD."
 control: Pivot Table
 documentation: ug

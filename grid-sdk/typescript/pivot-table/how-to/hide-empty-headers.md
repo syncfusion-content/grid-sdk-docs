@@ -1,10 +1,9 @@
 ---
 layout: post
 title: Hide empty headers in Javascript Pivotview component | Syncfusion
-description: Learn here all about Hide empty headers in Syncfusion ##Platform_Name## Pivot Table component of Syncfusion Essential JS 2 and more.
-platform: ej2-javascript
+description: Learn here all about Hide empty headers in Syncfusion TypeScript Pivot Table component of Syncfusion Essential JS 2 and more.
+platform: grid-sdk
 control: Hide empty headers 
-publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
@@ -17,7 +16,6 @@ For example, when the raw data contains **"United Kingdom"** for the 'Country' f
 
 > By default, this property is set to **true**.
 
-{% if page.publishingplatform == "typescript" %}
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -29,17 +27,3 @@ For example, when the raw data contains **"United Kingdom"** for the 'Country' f
 {% endtabs %}
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs80" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs80/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs80/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/pivot-table/pivot-table-cs80" %}
-{% endif %}

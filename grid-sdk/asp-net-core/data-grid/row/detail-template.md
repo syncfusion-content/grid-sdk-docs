@@ -4,7 +4,6 @@ title: Detail Template in Syncfusion ASP.NET Core Grid Component
 description: Learn here all about Detail Template in Syncfusion ASP.NET Core Grid component of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Detail Template
-publishingplatform: grid-sdk
 documentation: ug
 ---
 

@@ -8,9 +8,9 @@ documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Formula Reference in ##Platform_Name## Data Grid
+# Formula Reference in TypeScript Data Grid
 
-The formula reference provides the cell reference syntax, supported operators, built-in functions, and error codes available in formula-enabled columns of the Syncfusion ##Platform_Name## Data Grid.
+The formula reference provides the cell reference syntax, supported operators, built-in functions, and error codes available in formula-enabled columns of the Syncfusion TypeScript Data Grid.
 
 ## Operators
 

@@ -3,7 +3,7 @@ layout: post
 title: How to add condition-based hyperlinks in Pivot Table | Syncfusion
 description: Step-by-step example showing how to apply a condition-based hyperlink in the React Pivot Table using conditionalSettings in hyperlinkSettings.
 control: Pivot Table
-platform: ej2-react
+platform: grid-sdk
 documentation: ug
 domainurl: ##DomainURL##
 ---

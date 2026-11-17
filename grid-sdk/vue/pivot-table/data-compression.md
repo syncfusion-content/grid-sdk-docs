@@ -3,7 +3,7 @@ layout: post
 title: Data Compression in Vue Pivot Table | Syncfusion
 description: Learn how the Vue Pivot Table compresses raw relational data to reduce looping complexity and speed up rendering, with trade-offs for some aggregates.
 control: Data Compression 
-platform: ej2-vue
+platform: grid-sdk
 documentation: ug
 domainurl: ##DomainURL##
 ---

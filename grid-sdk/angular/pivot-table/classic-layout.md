@@ -2,7 +2,7 @@
 layout: post
 title: Classic Layout in Angular Pivot Table | Syncfusion
 description: Learn how the Angular Pivot Table renders a tabular classic layout with row fields side by side and configurable subtotal positions.
-platform: ej2-angular
+platform: grid-sdk
 control: Pivot Table
 documentation: ug
 domainurl: ##DomainURL##

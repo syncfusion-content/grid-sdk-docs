@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Accessibility in Angular TreeGrid component | Syncfusion
-description: Learn how the Syncfusion Angular TreeGrid component supports accessibility standards, WAI-ARIA roles, keyboard navigation, and compliance with ADA, Section 508, and WCAG guidelines.
+description: Learn how to use accessibility features in Angular TreeGrid with keyboard navigation, ARIA attributes, screen reader support, and accessibility standards.
 platform: grid-sdk
 control: Accessibility
 documentation: ug
@@ -101,6 +101,6 @@ To evaluate accessibility in real scenarios, view the TreeGrid accessibility [sa
 
 ## See also
 
-* [Accessibility in Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components](../common/accessibility)
+* [Accessibility in Syncfusion<sup style="font-size:70%">&reg;</sup> Angular components](https://ej2.syncfusion.com/angular/documentation/common/accessibility)
 
 > For additional feature highlights, see the [Angular TreeGrid feature tour](https://www.syncfusion.com/angular-components/angular-tree-grid) or explore the [TreeGrid live example](https://ej2.syncfusion.com/angular/demos/#/bootstrap5/treegrid/treegrid-overview) for interactive data presentation and accessibility configurations.

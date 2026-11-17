@@ -2,7 +2,7 @@
 layout: post
 title: Export table and chart in Angular Pivot Table | Syncfusion
 description: Step-by-step example showing how to export table and chart into the same document in the Angular Pivot Table, with code snippets and property references.
-platform: ej2-angular
+platform: grid-sdk
 control: Export table and chart into the same PDF document using toolbar.
 documentation: ug
 domainurl: ##DomainURL##

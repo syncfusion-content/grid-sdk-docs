@@ -11,8 +11,6 @@ documentation: ug
 
 The HTML tags can be displayed in the TreeGrid header and content by enabling the [`disableHtmlEncode`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.TreeGrid.TreeGridColumn.html#Syncfusion_EJ2_TreeGrid_TreeGridColumn_DisableHtmlEncode) property.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-core/tree-grid/cell/html-encode/tagHelper %}
@@ -21,18 +19,6 @@ The HTML tags can be displayed in the TreeGrid header and content by enabling th
 {% include code-snippet/grid-sdk/asp-net-core/tree-grid/cell/html-encode/htmlEncode.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/tree-grid/cell/html-encode/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="HtmlEncode.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/tree-grid/cell/html-encode/htmlEncode.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 
 

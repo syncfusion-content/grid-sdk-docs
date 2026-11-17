@@ -3,7 +3,7 @@ layout: post
 title: Modules in React Pivot Table | Syncfusion
 description: Learn about every React Pivot Table feature module and how to import, inject, and configure modules for relational and OLAP reports.
 control: Pivot Table
-platform: ej2-react
+platform: grid-sdk
 documentation: ug
 domainurl: ##DomainURL##
 ---

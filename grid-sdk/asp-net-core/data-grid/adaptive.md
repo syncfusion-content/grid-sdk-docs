@@ -4,7 +4,6 @@ title: Adaptive in Syncfusion ASP.NET Core Grid Component
 description: Learn here all about Adaptive in Syncfusion ASP.NET Core Grid component of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Adaptive
-publishingplatform: grid-sdk
 documentation: ug
 ---
 

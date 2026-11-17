@@ -2,7 +2,7 @@
 layout: post
 title: Excel Export in Angular Pivot Table | Syncfusion
 description: Learn how the Angular Pivot Table exports aggregated data to Excel and CSV files using the ExcelExportService and allowExcelExport.
-platform: ej2-angular
+platform: grid-sdk
 control: Pivot Table 
 documentation: ug
 domainurl: ##DomainURL##

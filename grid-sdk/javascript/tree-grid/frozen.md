@@ -16,23 +16,9 @@ Frozen rows and columns provides an option to make rows and columns always visib
 
 To use frozen rows and columns support, inject the `Freeze` module in the tree grid.
 
-In this demo, the [`frozenColumns`](../api/treegrid#frozencolumns) is set as '2' and the [`frozenRows`](../api/treegrid#frozenrows)
+In this demo, the [`frozenColumns`](https://ej2.syncfusion.com/javascript/documentation/api/treegrid#frozencolumns) is set as '2' and the [`frozenRows`](https://ej2.syncfusion.com/javascript/documentation/api/treegrid#frozenrows)
 is set as '3'. Hence, the left two columns and top three rows are frozen.
 
-{% if page.publishingplatform == "typescript" %}
-
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/treegrid/frozencolumns-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/treegrid/frozencolumns-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/treegrid/frozencolumns-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -44,29 +30,14 @@ is set as '3'. Hence, the left two columns and top three rows are frozen.
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/treegrid/frozencolumns-cs1" %}
-{% endif %}
 
 ### Freeze particular columns
 
-You can use [`isFrozen`](../api/treegrid/column#isfrozen) property to freeze selected columns in tree grid.
+You can use [`isFrozen`](https://ej2.syncfusion.com/javascript/documentation/api/treegrid/column#isfrozen) property to freeze selected columns in tree grid.
 
 In this demo, the columns with field name `taskName` and `startDate` is frozen using
 the `isFrozen` property.
 
-{% if page.publishingplatform == "typescript" %}
-
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/treegrid/frozencolumns-cs2/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/treegrid/frozencolumns-cs2/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/treegrid/frozencolumns-cs2" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -78,33 +49,18 @@ the `isFrozen` property.
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/treegrid/frozencolumns-cs2" %}
-{% endif %}
 
 ### Freeze direction
 
-You can freeze the tree grid columns on the left or right side by using the [`column.freeze`](../api/treegrid/column#freeze) property and the remaining columns will be movable. The tree grid will automatically move the columns to the left or right position based on the [`column.freeze`](../api/treegrid/column#freeze) value.
+You can freeze the tree grid columns on the left or right side by using the [`column.freeze`](https://ej2.syncfusion.com/javascript/documentation/api/treegrid/column#freeze) property and the remaining columns will be movable. The tree grid will automatically move the columns to the left or right position based on the [`column.freeze`](https://ej2.syncfusion.com/javascript/documentation/api/treegrid/column#freeze) value.
 
-Types of the [`column.freeze`](../api/treegrid/column#freeze) directions:
+Types of the [`column.freeze`](https://ej2.syncfusion.com/javascript/documentation/api/treegrid/column#freeze) directions:
 
 * **`Left`**: Allows you to freeze the columns at the left.
 * **`Right`**: Allows you to freeze the columns at the right.
 
 In this demo, the **Task Name** column is frozen at the left and the **Priority** column is frozen at the right side of the content table.
 
-{% if page.publishingplatform == "typescript" %}
-
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/treegrid/freezedirections-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/treegrid/freezedirections-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/treegrid/freezedirections-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -116,9 +72,8 @@ In this demo, the **Task Name** column is frozen at the left and the **Priority*
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/treegrid/freezedirections-cs1" %}
-{% endif %}
 
-> * Freeze Direction is not compatible with the [`isFrozen`](../api/treegrid/column#isfrozen) and [`frozenColumns`](../api/treegrid#frozencolumns) properties.
+> * Freeze Direction is not compatible with the [`isFrozen`](https://ej2.syncfusion.com/javascript/documentation/api/treegrid/column#isfrozen) and [`frozenColumns`](https://ej2.syncfusion.com/javascript/documentation/api/treegrid#frozencolumns) properties.
 
 ### Limitations of frozen tree grid
 

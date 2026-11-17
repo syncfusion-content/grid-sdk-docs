@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Elasticsearch in ##Platform_Name## Pivot Table | Syncfusion
-description: Learn how the ##Platform_Name## Pivot Table connects to Elasticsearch via the NEST library and a Web API controller to fetch and bind data at runtime.
-platform: ej2-javascript
+title: Elasticsearch in JavaScript Pivot Table | Syncfusion
+description: Learn how the JavaScript Pivot Table connects to Elasticsearch via the NEST library and a Web API controller to fetch and bind data at runtime.
+platform: grid-sdk
 control: Elasticsearch
-publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Elasticsearch in ##Platform_Name## Pivot Table
+# Elasticsearch in JavaScript Pivot Table
 
 This guide explains how to connect an Elasticsearch database to the Pivot Table component using the [NEST](https://www.nuget.org/packages/Nest) library and a Web API controller to fetch and bind data to the Pivot Table.
 
@@ -92,9 +91,9 @@ Here’s the sample code for the **PivotController.cs** file:
 
 This section explains how to connect the Pivot Table component to an Elasticsearch database by retrieving data from the Web API service created in the previous section.
 
-### Step 1: Create a Pivot Table in Javascript
-1. Set up a basic Javascript Pivot Table by following the [Getting Started](../getting-started) documentation.
-2. Ensure your Javascript project is configured with the necessary EJ2 Pivot Table dependencies.
+### Step 1: Create a Pivot Table in JavaScript
+1. Set up a basic JavaScript Pivot Table by following the [Getting Started](../getting-started) documentation.
+2. Ensure your JavaScript project is configured with the necessary EJ2 Pivot Table dependencies.
 
 ### Step 2: Configure the Web API URL in the Pivot Table
 1. In the **index.js** file, map the Web API URL (`https://localhost:44323/Pivot`) to the Pivot Table using the [url](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/dataSourceSettings#url) property within the [dataSourceSettings](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/dataSourceSettings).
@@ -138,11 +137,11 @@ pivotObj.appendTo('#PivotView');
 ```
 
 ### Step 4: Run and Verify the Pivot Table
-1. Run the Javascript application.
+1. Run the JavaScript application.
 2. The Pivot Table will display the data fetched from the Elasticsearch database via the Web API, structured according to the defined report.
 3. The resulting Pivot Table will look like this:
 
 ![Pivot Table bound with Elasticsearch database](../images/elasticsearch-data-binding.png)
 
 ### Additional Resources
-Explore a complete example of the Javascript Pivot Table integrated with an ASP.NET Core Web Application to fetch data from an Elasticsearch database in this [GitHub](https://github.com/SyncfusionExamples/how-to-bind-Elasticsearch-database-to-pivot-table) repository.
+Explore a complete example of the JavaScript Pivot Table integrated with an ASP.NET Core Web Application to fetch data from an Elasticsearch database in this [GitHub](https://github.com/SyncfusionExamples/how-to-bind-Elasticsearch-database-to-pivot-table) repository.

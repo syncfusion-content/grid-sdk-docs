@@ -1,15 +1,14 @@
 ---
 layout: post
-title: OLAP in ##Platform_Name## Pivot Table | Syncfusion
-description: Learn how the ##Platform_Name## Pivot Table connects to OLAP data sources and supports MDX queries with axis configuration.
-platform: ej2-javascript
+title: OLAP in TypeScript Pivot Table | Syncfusion
+description: Learn how the TypeScript Pivot Table connects to OLAP data sources and supports MDX queries with axis configuration.
+platform: grid-sdk
 control: OLAP
-publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# OLAP in ##Platform_Name## Pivot Table
+# OLAP in TypeScript Pivot Table
 
 ## Getting Started
 
@@ -111,7 +110,7 @@ Combined CSS files are available in the Essential<sup style="font-size:70%">&reg
 @import '../../node_modules/@syncfusion/ej2/tailwind3.css';
 ```
 
-> You can also refer other themes like bootstrap, fabric, high-contrast etc. To know about individual component CSS, please refer [here](../../appearance/theme).
+> You can also refer other themes like bootstrap, fabric, high-contrast etc. To know about individual component CSS, please refer [here](https://ej2.syncfusion.com/documentation/appearance/theme).
 
 ### Adding pivot table control
 

@@ -3,7 +3,7 @@ layout: post
 title: Grouping bar in React Pivot Table | Syncfusion
 description: Learn how the React Pivot Table exposes a grouping bar for dragging, dropping, filtering, and sorting fields interactively at runtime.
 control: Pivot Table
-platform: ej2-react
+platform: grid-sdk
 documentation: ug
 domainurl: ##DomainURL##
 ---

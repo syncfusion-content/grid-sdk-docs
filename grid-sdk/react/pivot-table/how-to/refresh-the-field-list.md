@@ -3,7 +3,7 @@ layout: post
 title: How to refresh the field list in React Pivot Table | Syncfusion
 description: Step-by-step example showing how to refresh the field list in the React Pivot Table when the underlying data source changes at runtime.
 control: Pivot Table
-platform: ej2-react
+platform: grid-sdk
 documentation: ug
 domainurl: ##DomainURL##
 ---

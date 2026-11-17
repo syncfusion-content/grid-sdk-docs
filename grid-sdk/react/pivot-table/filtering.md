@@ -2,7 +2,7 @@
 layout: post
 title: Filtering in React Pivot Table | Syncfusion
 description: Learn how the React Pivot Table filters rows and columns using member, label, and value filtering for focused data analysis.
-platform: ej2-react
+platform: grid-sdk
 control: Pivot Table
 documentation: ug
 domainurl: ##DomainURL##

@@ -14,7 +14,7 @@ The TreeGrid user interface is designed for optimal viewing and improved usabili
 
 ## Render adaptive dialogs
 
-Enable the [`enableAdaptiveUI`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#enableadaptiveui) property to allow the TreeGrid to render filter, sort, and edit dialogs in full-screen mode. This adaptive behavior enhances the user experience on devices with limited screen space.
+Enable the [`enableAdaptiveUI`](https://ej2.syncfusion.com/angular/documentation/api/treegrid#enableadaptiveui) property to allow the TreeGrid to render filter, sort, and edit dialogs in full-screen mode. This adaptive behavior enhances the user experience on devices with limited screen space.
 
 The following example demonstrates adaptive dialog rendering:
 

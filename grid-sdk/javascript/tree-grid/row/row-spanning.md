@@ -14,20 +14,6 @@ The row spanning feature in the Syncfusion<sup style="font-size:70%">&reg;</sup>
 
 In the following demo, the **Lunch Break** cell spans multiple rows in the "1:00 PM" column.
 
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/treegrid/row-spanning-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/treegrid/row-spanning-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/treegrid/row-spanning-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -39,7 +25,6 @@ In the following demo, the **Lunch Break** cell spans multiple rows in the "1:00
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/treegrid/row-spanning-cs1" %}
-{% endif %}
 
 ## Limitations
 
@@ -58,20 +43,6 @@ The Syncfusion TreeGrid provides an API-based approach to vertically merge cells
 
 The row spanning feature in the Syncfusion TreeGrid can be enabled using `enableRowSpan` property to **true** in the TreeGrid configuration, which significantly enhances readability and delivers a cleaner layout by eliminating repetitive data in columns such as "Status", "Permit Status", "Inspection Status" and "Punch List Status".
 
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/treegrid/row-spanning-cs2/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/treegrid/row-spanning-cs2/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/treegrid/row-spanning-cs2" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -83,7 +54,6 @@ The row spanning feature in the Syncfusion TreeGrid can be enabled using `enable
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/treegrid/row-spanning-cs2" %}
-{% endif %}
 
 > In the sample, row spanning is disabled at the column level for the price based columns such as "Planned Budget" and "Actual Spend" by setting each column's `enableRowSpan` property to **false**.
 

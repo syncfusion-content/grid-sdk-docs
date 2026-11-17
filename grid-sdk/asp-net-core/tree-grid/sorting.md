@@ -62,7 +62,7 @@ N> The **args.requestType** is the current action name. For example, in sorting 
 
 <!--  Custom sort comparer
 
-You can customize the default sort action for a column by defining the [`column.sortComparer`](../../api/treegrid/column#sortcomparer) property. The sort comparer function has the same functionality like [`Array.sort`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort) sort comparer.
+You can customize the default sort action for a column by defining the [`column.sortComparer`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.TreeGrid.TreeGridColumn.html#Syncfusion_EJ2_TreeGrid_TreeGridColumn_SortComparer) property. The sort comparer function has the same functionality like [`Array.sort`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort) sort comparer.
 
 In the following example, custom sort comparer function was defined in the `Category` column.
 

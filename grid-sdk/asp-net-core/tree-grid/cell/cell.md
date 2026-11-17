@@ -14,8 +14,6 @@ documentation: ug
 
 The appearance of cells can be customized by using the [`queryCellInfo`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.TreeGrid.TreeGrid.html#Syncfusion_EJ2_TreeGrid_TreeGrid_QueryCellInfo) event. The [`queryCellInfo`](https://help.syncfusion.com/cr/cref_files/aspnetcore-js2/Syncfusion.EJ2~Syncfusion.EJ2.TreeGrid.TreeGrid~QueryCellInfo.html) event triggers for every cell. In that event handler, you can get **QueryCellInfoEventArgs** that contains the details of the cell.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-core/tree-grid/cell/query-cell/tagHelper %}
@@ -24,18 +22,6 @@ The appearance of cells can be customized by using the [`queryCellInfo`](https:/
 {% include code-snippet/grid-sdk/asp-net-core/tree-grid/cell/query-cell/queryCell.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/tree-grid/cell/query-cell/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="QueryCell.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/tree-grid/cell/query-cell/queryCell.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 
 

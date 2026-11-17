@@ -2,7 +2,7 @@
 layout: post
 title: PDF Export in Angular Pivot Table | Syncfusion
 description: Learn how the Angular Pivot Table exports the grid and chart to PDF documents using the PDFExportService and pdfExport method.
-platform: ej2-angular
+platform: grid-sdk
 control: Pivot Table 
 documentation: ug
 domainurl: ##DomainURL##

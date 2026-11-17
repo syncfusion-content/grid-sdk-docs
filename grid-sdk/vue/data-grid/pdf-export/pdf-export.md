@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Pdf export in Vue Grid component | Syncfusion
-description: Learn here all about Pdf export in Syncfusion Vue Grid component of Syncfusion Essential JS 2 and more.
+title: PDF export in Vue Grid component | Syncfusion
+description: Learn here all about PDF export in Syncfusion Vue Grid component of Syncfusion Essential JS 2 and more.
 control: Pdf export 
 platform: grid-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
 
-# Pdf export in Vue Grid component
+# PDF export in Vue Grid component
 
 The PDF export feature in the [Vue Data Grid](https://www.syncfusion.com/vue-components/vue-grid) allows you to export grid data to a PDF document, providing the ability to generate printable reports or share data in a standardized format.
 

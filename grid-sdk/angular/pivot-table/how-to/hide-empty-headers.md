@@ -2,7 +2,7 @@
 layout: post
 title: How to Hide Empty Headers in Angular Pivot Table | Syncfusion
 description: Step-by-step example showing how to hide empty headers in the Angular Pivot Table, with code snippets and property references.
-platform: ej2-angular
+platform: grid-sdk
 control: Hide empty headers 
 documentation: ug
 domainurl: ##DomainURL##

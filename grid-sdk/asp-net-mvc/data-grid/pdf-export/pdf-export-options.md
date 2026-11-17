@@ -4,11 +4,10 @@ title: PDF Export Options in ASP.NET MVC Syncfusion Grid Component
 description: Learn here all about PDF Export Options in Syncfusion ASP.NET MVC Grid component of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: PDF Export Options
-publishingplatform: grid-sdk
 documentation: ug
 ---
 
-# Pdf Export Options in ASP.NET MVC Grid component
+# PDF Export Options in ASP.NET MVC Grid component
 
 The Syncfusion ASP.NET MVC Grid component allows you to customize the PDF export options functionality. This flexibility enables you to have greater component over the exported content and layout to meet your specific requirements.
 
@@ -35,7 +34,7 @@ The following example demonstrates how to export current page to a PDF document 
 
 Exporting only the selected records from the Syncfusion ASP.NET MVC Grid allows generating PDF document that include only the desired data from the Grid. This feature provides the flexibility to export specific records that are relevant to the needs, enabling more focused and targeted PDF exports.
 
-To export only the selected records by utilizing tthe `ExportProperties->DataSource` property in the [ToolbarClick](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ToolbarClick) event. 
+To export only the selected records by utilizing the `ExportProperties->DataSource` property in the [ToolbarClick](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ToolbarClick) event. 
 
 To export the selected records from the grid to a PDF file, you can follow these steps:
 

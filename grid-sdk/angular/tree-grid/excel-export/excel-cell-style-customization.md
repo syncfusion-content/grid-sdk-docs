@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Excel cell style customization in Angular TreeGrid component | Syncfusion
+title: Excel Cell Style Customization | Syncfusion
 description: Learn how to customize Excel cell styles in the Syncfusion Angular TreeGrid component of Essential JS 2, including conditional formatting and theming options.
 platform: grid-sdk
 control: Excel cell style customization 
@@ -12,7 +12,7 @@ domainurl: https://help.syncfusion.com/grid-sdk
 
 ## Conditional cell formatting
 
-Cells in the exported Excel file from the TreeGrid component can be customized or formatted using the [`excelQueryCellInfo`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#excelQueryCellInfo) event. This event allows formatting of TreeGrid cells in the exported Excel document based on the corresponding column cell value.
+Cells in the exported Excel file from the TreeGrid component can be customized or formatted using the [`excelQueryCellInfo`](https://ej2.syncfusion.com/angular/documentation/api/treegrid#excelQueryCellInfo) event. This event allows formatting of TreeGrid cells in the exported Excel document based on the corresponding column cell value.
 
 In the example below, the background color is set for the `Duration` column in the exported Excel file by using `args.cell` and the `backgroundColor` property.
 
