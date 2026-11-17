@@ -14,26 +14,68 @@ In React Grid component, binding remote data is a fundamental aspect that enhanc
 
 Additionally, leverage the power for data retrieval and operations, enhancing event handling, asynchronous programming, and concurrent value management in React applications.
 
-## Custom binding
+## Custom binding with SSRM
 
-The custom binding feature in the React Grid enables managing a custom API for handling data processing externally and then binding the resulting data to the Grid.This allows implementing custom data logic tailored to the application's requirements. When using custom binding, the Grid expects the result of the custom logic to be an object with properties `result` and `count`.
+The custom binding feature in the React Grid enables managing a custom API for handling data processing externally and binding the processed data to the grid. This allows implementing application-specific data logic and supports the Server-Side Row Model (SSRM) workflow by using the `dataStateChange` event to send the current grid state to the server. The Grid then binds the returned data and expects the response to be an object containing the `result` and `count` properties.
 
-- `result` -  This property should contain the array of records that will be displayed in the Grid. 
+- `result` -  This property should contain the array of records that will be displayed in the Data Grid. 
 - `count` - This property should indicate the total number of records available in the entire dataset.
 
-To utilize custom binding, the application can handle the [DataManager](https://ej2.syncfusion.com/react/documentation/data/getting-started). The DataManager integrates seamlessly with the React Grid to manage custom data processing and binding. 
+The [Data Grid](https://www.syncfusion.com/react-components/react-data-grid) component offers a range of powerful features for handling grid actions such as **paging**, **grouping**, **sorting** and **filtering**. These actions trigger the [dataStateChange](https://ej2.syncfusion.com/react/documentation/api/grid/index-default#datastatechange) event. The feature for CRUD action such as **Create**, **Read**, **Update**, **Delete** operations. This action trigger the [dataSourceChanged](https://ej2.syncfusion.com/react/documentation/api/grid/index-default#datasourcechanged) event. This event provides the opportunity to manage and manipulate data according to the individual's interactions.
 
-The [React Data Grid](https://www.syncfusion.com/react-components/react-data-grid) component offers a range of powerful features for handling grid actions such as **paging**, **grouping**, **sorting** and **filtering**. These actions trigger the [dataStateChange](https://ej2.syncfusion.com/react/documentation/api/grid/index-default#datastatechange) event. The feature for CRUD action such as **Create**, **Read**, **Update**, **Delete** operations. This action trigger the [dataSourceChanged](https://ej2.syncfusion.com/react/documentation/api/grid/index-default#datasourcechanged) event. This event provides the opportunity to manage and manipulate data according to the individual's interactions.
+### Client-side vs server-side data processing
 
-**Using the `dataStateChange` event**
+Data Grid applications can process data using either a client-side or server-side approach.
 
-The `dataStateChange` event is triggered whenever actions that modify the grid's data state are performed, such as paging, sorting, or grouping. This event provides detailed information about the action performed and the current state of the grid, including parameters like page number, sorting details, and filtering criteria.
+In a client-side model, the complete dataset is loaded into the browser and all data operations, such as paging, sorting, filtering, grouping, searching, and aggregation, are performed on the client.
+
+![Client side data rendering](../images/client-side-rendering.jpg)
+
+In a Server-Side Row Model (SSRM), the complete dataset remains on the server. The Grid requests only the records required for the current view and processes data operations to the server. This approach reduces browser memory usage and improves performance when working with large datasets.
+
+![Server side data rendering](../images/server-side-rendering.jpg)
+
+The following workflow illustrates the SSRM process:
+
+1. The Grid requests data based on its current state.
+2. The current state is sent through the `dataStateChange` event and includes information such as paging, sorting, filtering, searching, grouping, and aggregation.
+3. The server processes the request against the complete dataset.
+4. The server returns only the required records along with the total record count.
+5. The Grid renders the returned records and uses the total count to maintain paging and data navigation.
+
+A typical server response contains the following properties:
+
+```ts
+{
+  result: [...],
+  count: 100000
+}
+```
+
+The following table compares client-side processing and server-side processing in the grid.
+
+| Aspect | Client-side processing | Server-side processing (custom binding) |
+|--------|------------------------|-----------------------------------------|
+| Data loaded in browser | Complete dataset | Current page or block only |
+| Data ownership | Browser | Server |
+| Data operations | Executed in the browser | Executed on the server |
+| Suitable data size | Small to medium | Large (hundreds of thousands to millions of records) |
+| Browser memory usage | Increases as data size grows | Lower and predictable |
+| Network request | Single request on initial load | Request for each grid action |
+
+> Custom binding is suitable when data requests must be fully controlled by the application, such as with Redux or an external API. When the server follows a standard protocol, use the [DataManager](https://ej2.syncfusion.com/react/documentation/data/getting-started) with a built-in adaptor such as [UrlAdaptor](../connecting-to-adaptors/url-adaptor), [WebApiAdaptor](../connecting-to-adaptors/webapi-adaptor), [ODataV4Adaptor](../connecting-to-adaptors/odatav4-adaptor), or [GraphQLAdaptor](../connecting-to-adaptors/graphql-adaptor), which sends grid actions to the server automatically without handling the `dataStateChange` and `dataSourceChanged` events.
+
+### Handle the dataStateChange event
+
+In the SSRM workflow, the `dataStateChange` event acts as the communication point between the Grid and the server. This event triggers whenever actions modify the grid's data state, such as changing pages, applying sorting, or grouping. This event provides detailed information about the performed action and current grid state, including parameters like page number, sorting details, and filtering criteria.
 
 To implement the `dataStateChange` event, follow these steps:
 
 1. **Subscribe to the event:** In the component code, subscribe to the `dataStateChange` event using the appropriate event handler function. This function is executed whenever the grid is interacted with.
 
-2. **Handle data state:** Inside the event handler function, the event arguments can be accessed to determine the specific actions and intentions. The action property of the event arguments indicates the type of action performed (e.g., paging, sorting, grouping).
+2. **Handle data state:** Inside the event handler function, the event arguments can be accessed to determine the specific actions and intentions. The `action` property of the event arguments indicates the type of action performed (e.g., paging, sorting, grouping).
+
+3. **Return the result:** Assign the processed `result` and `count` to the grid's `dataSource` property to render the requested records.
 
 > The `dataStateChange` event will not be triggered during the initial rendering.
 
@@ -279,7 +321,7 @@ const reducer = (state = initialState, action) => {
 
 **Lazy load grouping**
 
-In React, lazy loading refers to the technique of loading data dynamically when they are needed, instead of loading everything upfront. Lazy load grouping enables efficient loading and display of grouped data by fetching only the required data on demand.
+Lazy load grouping extends the SSRM pattern by retrieving group child records only when a group is expanded. Instead of loading all records for every group during the initial request, the Grid requests the child records for a specific group on demand. This reduces initial data transfer and improves performance when working with large grouped datasets.
 
 To enable this feature, the [groupSettings.enableLazyLoading](https://ej2.syncfusion.com/react/documentation/api/grid/groupsettings#enableLazyLoading) property must be set to `true`. In addition, the state must be managed based on the initial grid action as follows.
 
@@ -348,7 +390,7 @@ const reducer = (state = initialState, action) => {
 
 > Further information can be accessed in the respective documentation for [lazy load grouping](https://ej2.syncfusion.com/react/documentation/grid/grouping/lazy-load-grouping).
 
-The complete example is available in the [handling CRUD operations topic](#perform-crud-operations).
+The complete example is available in the [handling CRUD operations topic](#handling-crud-operations).
 
 ### Handling CRUD operations
 
@@ -365,6 +407,8 @@ To implement CRUD operations using Syncfusion<sup style="font-size:70%">&reg;</s
 3. **Execute CRUD operations:** Within the event handler for [dataSourceChanged](https://ej2.syncfusion.com/react/documentation/api/grid/index-default#datasourcechanged), implement logic to handle various CRUD actions based on the action or requestType property of the event arguments.
 
 4. **Call endEdit method:** After performing CRUD operations (adding, editing, or deleting), call the [endEdit](https://ej2.syncfusion.com/react/documentation/api/grid/index-default#endedit) method to signal the completion of the operation and update the grid accordingly.
+
+> After the `endEdit` method is called, the grid triggers the `dataStateChange` event to request the updated data for the current view from the server.
 
 **Insert operation**
 
@@ -509,7 +553,7 @@ According to Redux documentation, the Redux [actions](https://redux.js.org/tutor
 
 The action type defines the name of the action that will be performed from the application. Each action type is a string that describes the specific operation being executed.
 
-The following example demonstrates a Redux action definition for a sort operation. This code can be added to the **action.tsx** file:
+The following example demonstrates a Redux action definition for a data fetch operation. This code can be added to the **action.tsx** file:
 
 ```ts
 export const Grid_FetchData = "Grid_FetchData";
@@ -525,7 +569,7 @@ export const fetchData = (state: any, query: Query) => ({
 
 According to the Redux documentation, the Redux [reducers](https://redux.js.org/tutorials/fundamentals/part-3-state-actions-reducers#writing-reducers) are functions responsible for handling actions and updating the state of the application. Reducers specify the way the state should change in response to different actions dispatched to the Redux store.
 
-Here is an example of a Redux reducer definition for sorting operations. The reducer code can be added to the **reducer.tsx** file.
+Here is an example of a Redux reducer definition for paging operations. The reducer code can be added to the **reducer.tsx** file.
 
 ```ts
 const initialState = {
@@ -573,7 +617,7 @@ const reducer = (state = initialState, action) => {
 export default reducer;
 ```
 
-> The grid expects an object as result and count format.
+> The grid expects an object with `result` and `count` properties.
 
 **Step 6: Create a Dispatch**
 
@@ -649,7 +693,7 @@ The following example demonstrates the process of binding custom data to handle 
 
 Export all records is especially beneficial when dealing with large datasets that need to be exported for offline analysis or sharing.
 
-By default, the Syncfusion React Grid component exports only the records available on the current page. However, the Grid component also supports exporting all records—including those spanning multiple pages by configuring the [pdfExportProperties](https://ej2.syncfusion.com/react/documentation/api/grid/pdfExportProperties) and [excelExportProperties](https://ej2.syncfusion.com/react/documentation/api/grid/excelExportProperties).
+By default, the Syncfusion Data Grid component exports only the records available on the current page. However, the Data Grid component allows exporting all records, including those from multiple pages, by configuring the [pdfExportProperties](https://ej2.syncfusion.com/react/documentation/api/grid/pdfExportProperties) and [excelExportProperties](https://ej2.syncfusion.com/react/documentation/api/grid/excelExportProperties).
 
 To export all records, including those from multiple pages, configure the [pdfExportProperties.dataSource](https://ej2.syncfusion.com/react/documentation/api/grid/pdfexportproperties#datasource) for PDF exporting and [excelExportProperties.dataSource](https://ej2.syncfusion.com/react/documentation/api/grid/excelexportproperties#datasource) for Excel exporting within the [toolbarClick](https://ej2.syncfusion.com/react/documentation/api/grid#toolbarclick) event handler. Inside this event, set the `dataSource` property of `pdfExportProperties` and `excelExportProperties` for PDF and Excel exporting to include all records.
 
@@ -694,7 +738,7 @@ To export the complete Grid data to Excel document, utilize the `excelExportProp
 
 **PDF Exporting**
 
-To export the complete Grid data to PDF document, utilize the `pdfExportProperties.dataSource` when initiating the PDF export. Use the following code snippet to export all records within the Grid:
+To export the complete grid data to PDF document, utilize the `pdfExportProperties.dataSource` when initiating the PDF export. Use the following code snippet to export all records within the grid:
 
 ```ts
 
@@ -714,7 +758,7 @@ To export the complete Grid data to PDF document, utilize the `pdfExportProperti
 
 ```
 
-> For further customization on Grid export, refer to the respective documentation for [PDF exporting](https://ej2.syncfusion.com/react/documentation/grid/pdf-export/pdf-export-options) and [Excel exporting](https://ej2.syncfusion.com/react/documentation/grid/excel-export/excel-export-options)
+> For further customization on Grid export, refer to the respective documentation for [PDF exporting](https://ej2.syncfusion.com/react/documentation/grid/pdf-export/pdf-export-options) and [Excel exporting](https://ej2.syncfusion.com/react/documentation/grid/excel-export/excel-export-options).
 
 The following code example shows the process of exporting all records on the client side:
 
@@ -747,7 +791,7 @@ The following code example shows the process of exporting all records on the cli
 
 ## Sending additional parameters to the server
 
-The React Data Grid component allows custom parameters to be included in data requests. This feature is particularly useful when additional information must be provided to the server for enhanced processing.
+The Data Grid component allows custom parameters to be included in data requests. This feature is particularly useful when additional information must be provided to the server for enhanced processing.
 
 By using the [query](https://ej2.syncfusion.com/react/documentation/api/grid/index-default#query) property of the Grid together with the `addParams` method of the Query class, custom parameters can be seamlessly incorporated into data requests for every grid action.
 
@@ -859,7 +903,7 @@ export default App;
 
 ## Fetch result from the DataManager query using external button 
 
-By default, the Syncfusion React Grid automatically binds a remote data source using the [DataManager](https://ej2.syncfusion.com/react/documentation/data/getting-started). However, in certain scenarios, data may need to be fetched dynamically from the server using a query triggered by an external button. This approach provides greater control over when data is loaded into the Grid.
+By default, Data Grid automatically binds a remote data source using the [DataManager](https://ej2.syncfusion.com/react/documentation/data/getting-started). However, in certain scenarios, data may need to be fetched dynamically from the server using a query triggered by an external button. This approach provides greater control over when data is loaded into the grid.
 
 To achieve this, the `executeQuery` method of `DataManager` can be used along with a query object. This method enables running a custom query and retrieving results dynamically.
 
