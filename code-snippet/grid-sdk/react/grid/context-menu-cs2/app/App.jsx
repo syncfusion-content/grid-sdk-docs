@@ -15,10 +15,10 @@ function App() {
     return (<div>
       <GridComponent dataSource={employeeData} allowPaging={true} contextMenuItems={contextMenuItems} ref={g => grid = g} contextMenuClick={contextMenuClick}>
         <ColumnsDirective>
-          <ColumnDirective field='OrderID' headerText='Order ID' width='140' textAlign='Right'/>
-          <ColumnDirective field='CustomerID' headerText='Customer ID' width='140'/>
-          <ColumnDirective field='Freight' headerText='Freight' format='C2' textAlign='Right' width='140'/>
-          <ColumnDirective field='ShipName' headerText='Ship Name' width='200'/>
+          <ColumnDirective field='EmployeeID' headerText='Employee ID' width='140' textAlign='Right' isPrimaryKey={true}/>
+          <ColumnDirective field='FirstName' headerText='First Name' width='140' />
+          <ColumnDirective field='LastName' headerText='Last Name' textAlign='Right' width='140' />
+          <ColumnDirective field='City' headerText='City' width='200' />
         </ColumnsDirective>
         <Inject services={[ContextMenu, Page]}/>
       </GridComponent>
