@@ -3,8 +3,7 @@ layout: post
 title: Infinite scrolling in JavaScript Grid control | Syncfusion
 description: Learn here all about Infinite scrolling in Syncfusion JavaScript Grid control of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
-control: Infinite scrolling 
-publishingplatform: grid-sdk
+control: Infinite scrolling
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
