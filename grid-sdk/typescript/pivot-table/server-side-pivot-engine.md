@@ -939,6 +939,12 @@ For example, this configuration uses a PFX certificate:
     "Enabled": true,
     "PfxPath": "certificates/server.pfx",
     "PfxPassword": "SET_A_SECRET",
+    "PemCertPath": null,
+    "PemKeyPath": null,
+    "StoreLocation": "CurrentUser",
+    "StoreName": "My",
+    "Thumbprint": null,
+    "SubjectName": null,
     "Protocols": "HTTP1_AND_HTTP2"
   }
 }
