@@ -1,10 +1,9 @@
 ---
 layout: post
-title: Data Annotation in ASP.NET MVC Grid Component
+title: Data Annotation in ASP.NET MVC Grid Component | Syncfusion
 description: Learn here all about Data Annotation in Syncfusion ASP.NET MVC Grid component of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Data Annotation
-publishingplatform: grid-sdk
 documentation: ug
 ---
 
@@ -16,19 +15,6 @@ The Data Annotation can be enabled by referencing the **System.ComponentModel.Da
 
 N> The DataGrid Property has more priority than the Data Annotation. For Instance, if the DisplayName Attribute is set to a Field in the DataGrid model class and the HeaderText is set to the same DataGrid column property, the value of the HeaderText property will be considered and shown in the DataGrid header.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
-{% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/grid/data-annotation/annotation/tagHelper %}
-{% endhighlight %}
-{% highlight c# tabtitle="Annotation.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/grid/data-annotation/annotation/annotation.cs %}
-{% endhighlight %}
-{% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-mvc/grid/data-annotation/annotation/razor %}
@@ -37,5 +23,3 @@ N> The DataGrid Property has more priority than the Data Annotation. For Instanc
 {% include code-snippet/grid-sdk/asp-net-mvc/grid/data-annotation/annotation/annotation.cs %}
 {% endhighlight %}
 {% endtabs %}
-{% endif %}
-

@@ -4,7 +4,6 @@ title: Server-Side Pivot Engine in ASP.NET Core Pivot Table | Syncfusion
 description: Learn how the ASP.NET Core Pivot Table connects to a server-side pivot engine via Syncfusion.Pivot.Engine and a Web API to reduce network traffic.
 platform: grid-sdk
 control: Server Side Pivot Engine
-publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 

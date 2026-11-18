@@ -3,7 +3,7 @@ layout: post
 title: How to apply conditional formatting in Pivot Table | Syncfusion
 description: Step-by-step example showing how to apply conditional formatting to a specific row or column in the React Pivot Table using conditionalFormatSettings.
 control: Pivot Table
-platform: ej2-react
+platform: grid-sdk
 documentation: ug
 domainurl: ##DomainURL##
 ---

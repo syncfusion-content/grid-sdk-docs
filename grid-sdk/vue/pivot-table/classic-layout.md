@@ -3,7 +3,7 @@ layout: post
 title: Classic Layout in Vue Pivot Table | Syncfusion
 description: Learn how the Vue Pivot Table switches to a tabular classic layout where row fields appear side by side with subtotals per group.
 control: Classic Layout
-platform: ej2-vue
+platform: grid-sdk
 documentation: ug
 domainurl: ##DomainURL##
 ---

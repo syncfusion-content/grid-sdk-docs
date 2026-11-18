@@ -2,7 +2,7 @@
 layout: post
 title: Editing in React Pivot Table | Syncfusion
 description: Learn how the React Pivot Table enables inline editing of value cells to add, update, and delete raw data through the drill-through grid.
-platform: ej2-react
+platform: grid-sdk
 control: Pivot Table
 documentation: ug
 domainurl: ##DomainURL##

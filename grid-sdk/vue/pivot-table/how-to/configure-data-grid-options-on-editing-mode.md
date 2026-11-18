@@ -3,7 +3,7 @@ layout: post
 title: Configure grid options in editing mode in Vue Pivot Table | Syncfusion
 description: Step-by-step example showing how to configure Sort, Filter, and Group options in the drill-through grid of the Vue Pivot Table via the beginDrillThrough event.
 control: Configure data grid options on editing mode 
-platform: ej2-vue
+platform: grid-sdk
 documentation: ug
 domainurl: ##DomainURL##
 ---

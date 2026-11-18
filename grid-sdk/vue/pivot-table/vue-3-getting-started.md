@@ -3,7 +3,7 @@ layout: post
 title: Getting Started with Vue 3 Pivot Table | Syncfusion
 description: Learn to set up a Vue 3 Pivot Table with Vite and create your first pivot report using the Composition or Options API.
 control: Vue 3 getting started
-platform: ej2-vue
+platform: grid-sdk
 documentation: ug
 domainurl: ##DomainURL##
 ---

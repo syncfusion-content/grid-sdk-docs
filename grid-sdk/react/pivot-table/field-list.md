@@ -3,7 +3,7 @@ layout: post
 title: Field list in React Pivot Table | Syncfusion
 description: Learn how the React Pivot Table exposes a field list panel to add, remove, and rearrange fields across rows, columns, values, and filters at runtime.
 control: Pivot Table
-platform: ej2-react
+platform: grid-sdk
 documentation: ug
 domainurl: ##DomainURL##
 ---

@@ -1,10 +1,9 @@
 ---
 layout: post
-title: Aggregate in ASP.NET MVC Grid Component
+title: Aggregate in ASP.NET MVC Grid | Syncfusion
 description: Learn here all about Aggregate in Syncfusion ASP.NET MVC Grid component of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Aggregate
-publishingplatform: grid-sdk
 documentation: ug
 ---
 

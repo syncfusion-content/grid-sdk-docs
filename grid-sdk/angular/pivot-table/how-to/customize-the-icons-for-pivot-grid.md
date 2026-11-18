@@ -2,7 +2,7 @@
 layout: post
 title: How to Customize Pivot Table Icons in Angular Pivot Table | Syncfusion
 description: Step-by-step example showing how to customize pivot table icons in the Angular Pivot Table, with code snippets and property references.
-platform: ej2-angular
+platform: grid-sdk
 control: Customize the icons for pivot grid 
 documentation: ug
 domainurl: ##DomainURL##

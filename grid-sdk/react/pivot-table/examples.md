@@ -3,7 +3,7 @@ layout: post
 title: React Pivot Table Examples and Code Samples | Syncfusion
 description: Explore runnable React Pivot Table examples for data binding, reporting, charts, customization, exporting, performance, OLAP, and more in StackBlitz.
 control: Pivot Table
-platform: ej2-react
+platform: grid-sdk
 documentation: ug
 domainurl: ##DomainURL##
 ---

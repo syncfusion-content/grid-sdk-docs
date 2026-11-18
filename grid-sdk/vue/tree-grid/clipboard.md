@@ -110,7 +110,7 @@ You can able to copy the content of a cell or a group of cells by selecting the 
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/treegrid/clipboard/default-cs5" %}
 
-> To perform paste functionality, it requires the selection [`mode`](https://ej2.syncfusion.com/vue/documentation/api/treegrid/selectionMode/) to be **Cell**,  [`cellSelectionMode`](https://ej2.syncfusion.com/vue/documentation/api/treegrid/cellSelectionMode/) to be **Box** and also Batch Editing should be enabled.
+> To perform paste functionality, it requires the selection [`mode`](https://ej2.syncfusion.com/vue/documentation/api/treegrid/selectionMode) to be **Cell**,  [`cellSelectionMode`](https://ej2.syncfusion.com/vue/documentation/api/treegrid/cellSelectionMode) to be **Box** and also Batch Editing should be enabled.
 
 ### Limitations of Paste Functionality
 

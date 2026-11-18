@@ -5,7 +5,6 @@ description: Learn how to export the ASP.NET MVC Pivot Table's grid and chart to
 platform: grid-sdk
 control: Export table and chart into the same document using toolbar 
 documentation: ug
-publishingplatform: ##Platform_Name##
 ---
 
 # How to Export Both Table and Chart in ASP.NET MVC Pivot Table

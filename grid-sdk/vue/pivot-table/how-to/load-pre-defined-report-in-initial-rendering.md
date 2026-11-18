@@ -2,9 +2,8 @@
 layout: post
 title: How to load a pre-defined report in Vue Pivot Table | Syncfusion
 description: Step-by-step example showing how to load a pre-defined report as the default in the Vue Pivot Table by setting the desired report name in the dataBound event.
-platform: ej2-vue
+platform: grid-sdk
 control: Load desired report from the report list as default 
-publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---

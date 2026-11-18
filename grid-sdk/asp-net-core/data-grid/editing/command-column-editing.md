@@ -1,10 +1,9 @@
 ---
 layout: post
-title: Command Column Editing in ASP.NET Core Grid Component
+title: Command Column Editing in ASP.NET Core Grid | Syncfusion
 description: Learn here all about Command Column Editing in Syncfusion ASP.NET Core Grid component of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Command Column Editing
-publishingplatform: grid-sdk
 documentation: ug
 ---
 

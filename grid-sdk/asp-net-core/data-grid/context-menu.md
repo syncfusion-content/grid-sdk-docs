@@ -4,7 +4,6 @@ title: Context Menu in Syncfusion ASP.NET Core Grid Control
 description: Learn here all about Context Menu in Syncfusion ASP.NET Core Grid component of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Context Menu
-publishingplatform: grid-sdk
 documentation: ug
 ---
 

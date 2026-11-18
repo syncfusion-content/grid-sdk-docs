@@ -16,7 +16,7 @@ This article provides a step-by-step guide for setting up a [Preact](https://pre
 
 ## Prerequisites
 
-[System requirements for Syncfusion<sup style="font-size:70%">&reg;</sup> React UI components](../system-requirement)
+[System requirements for Syncfusion<sup style="font-size:70%">&reg;</sup> React UI components](https://ej2.syncfusion.com/react/documentation/system-requirement)
 
 ## Set up the Preact project
 

@@ -1,27 +1,26 @@
 ---
 layout: post
-title: ##Platform_Name## Tree Grid DOM Virtualization | Syncfusion
-description: Learn how DOM virtualization in ##Platform_Name## Tree Grid improves large dataset performance through viewport rendering, and efficient scrolling.
-platform: ej2-javascript
+title: JavaScript Tree Grid DOM Virtualization | Syncfusion
+description: Learn how DOM virtualization in JavaScript Tree Grid improves large dataset performance through viewport rendering, and efficient scrolling.
+platform: grid-sdk
 control: DOM virtualization
-publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
  
-# DOM Virtualization in ##Platform_Name## Tree Grid
+# DOM Virtualization in JavaScript Tree Grid
  
-DOM virtualization is a rendering technique that improves performance by displaying only the visible portion of data in the viewport, plus a configurable buffer zone. The Syncfusion<sup style="font-size:70%">&reg;</sup> ##Platform_Name## Tree Grid implements DOM virtualization to handle datasets ranging from thousands to millions of rows while maintaining smooth Tree Grid interactions.
+DOM virtualization is a rendering technique that improves performance by displaying only the visible portion of data in the viewport, plus a configurable buffer zone. The Syncfusion<sup style="font-size:70%">&reg;</sup> JavaScript Tree Grid implements DOM virtualization to handle datasets ranging from thousands to millions of rows while maintaining smooth Tree Grid interactions.
  
 Rendering every row and column in the DOM creates performance and memory challenges. Consider a dataset with 100,000 rows and 50 columns: without virtualization, the Tree Grid would create 5 million DOM elements. Modern browsers impose limits on DOM div heights (approximately 17.5-33.5 million pixels depending on the browser), constraining the maximum number of rows displayable at once. DOM virtualization addresses these constraints by rendering only cells within the current viewport, plus configurable buffer rows. Memory and processing requirements remain constant regardless of dataset size since only viewport and buffer cells render at any given time.
  
 To enable DOM virtualization in the Tree Grid, you need to inject the **DomVirtualization** module. This module is responsible for managing the DOM pooling behavior and optimizing the rendering of data to enhance performance.
  
-DOM virtualization can be enabled by setting the [enableDomVirtualization](../../api/treegrid/index-default#enableDomVirtualization) property to `true`.
+DOM virtualization can be enabled by setting the [enableDomVirtualization](https://ej2.syncfusion.com/javascript/documentation/api/treegrid/index-default#enableDomVirtualization) property to `true`.
  
 ## Height configuration requirement
  
-You must define a fixed height using the [height](../../api/treegrid/index-default#height) property in the Tree Grid configuration. The height property is mandatory for DOM virtualization because virtualization calculations depend on a defined viewport height to determine how many rows are visible.
+You must define a fixed height using the [height](https://ej2.syncfusion.com/javascript/documentation/api/treegrid/index-default#height) property in the Tree Grid configuration. The height property is mandatory for DOM virtualization because virtualization calculations depend on a defined viewport height to determine how many rows are visible.
  
 ## DOM virtualization settings
  
@@ -41,20 +40,6 @@ DOM row virtualization renders only rows visible in the viewport, plus configura
  
 Row virtualization is ideal for datasets with many rows (10,000+) but manageable column counts (fewer than 30). It simplifies horizontal scrolling since no columns are hidden, and ensures all columns remain accessible.
  
-{% if page.publishingplatform == "typescript" %}
- 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/treegrid/dom-virtual-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/treegrid/dom-virtual-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-       
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/treegrid/dom-virtual-cs1" %}
- 
-{% elsif page.publishingplatform == "javascript" %}
  
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -66,26 +51,11 @@ Row virtualization is ideal for datasets with many rows (10,000+) but manageable
 {% endtabs %}
  
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/treegrid/dom-virtual-cs1" %}
-{% endif %}
  
 ## Viewport buffer configuration
  
-Buffer configuration defines how many extra rows the Tree Grid renders beyond the visible viewport. The [rowBuffer](../../api/treegrid/domVirtualizationSettings#rowbuffer) property controls this behavior. The default buffer value is `rowBuffer: 5`, which balances scroll smoothness against DOM size.
+Buffer configuration defines how many extra rows the Tree Grid renders beyond the visible viewport. The [rowBuffer](https://ej2.syncfusion.com/javascript/documentation/api/treegrid/domVirtualizationSettings#rowbuffer) property controls this behavior. The default buffer value is `rowBuffer: 5`, which balances scroll smoothness against DOM size.
  
-{% if page.publishingplatform == "typescript" %}
- 
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/treegrid/dom-virtual-cs2/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/treegrid/dom-virtual-cs2/index.html %}
-{% endhighlight %}
-{% endtabs %}
-       
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/treegrid/dom-virtual-cs2" %}
- 
-{% elsif page.publishingplatform == "javascript" %}
  
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -97,7 +67,6 @@ Buffer configuration defines how many extra rows the Tree Grid renders beyond th
 {% endtabs %}
  
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/treegrid/dom-virtual-cs2" %}
-{% endif %}
  
 > Buffer Tuning: Larger buffers (5-10) reduce visible gaps during fast scrolling but increase DOM nodes and memory. Smaller buffers (2-3) minimize DOM nodes but may show gaps during very fast scrolling. Start with default values and adjust based on scroll speed and device constraints.
  
@@ -107,7 +76,7 @@ Row height configuration affects how virtualization performs. Different row heig
  
 ### Static row height
  
-The [rowHeight](../../api/treegrid#rowheight) property allows you to set a fixed height for all rows in the Tree Grid. This performs virtualization calculations instantly without measurement overhead, ideal for large datasets since all rows have equal height.
+The [rowHeight](https://ej2.syncfusion.com/javascript/documentation/api/treegrid#rowheight) property allows you to set a fixed height for all rows in the Tree Grid. This performs virtualization calculations instantly without measurement overhead, ideal for large datasets since all rows have equal height.
  
 ### Dynamic row height with lazy height calculation
  
@@ -115,7 +84,7 @@ DOM virtualization also supports variable row heights through automatic height m
  
 #### Automatic row height measurement
  
-Enable [autoRowHeight](../../api/treegrid/domVirtualizationSettings#autorowheight) to have the Tree Grid automatically measure each visible row's height after rendering. This is useful when using column templates or text wrap features that result in varying row heights.
+Enable [autoRowHeight](https://ej2.syncfusion.com/javascript/documentation/api/treegrid/domVirtualizationSettings#autorowheight) to have the Tree Grid automatically measure each visible row's height after rendering. This is useful when using column templates or text wrap features that result in varying row heights.
  
 **Scenarios with lazy height calculation:**
  
@@ -132,7 +101,7 @@ These behaviors are inherent to lazy height calculation and occur because height
  
 #### Custom row height callback
  
-Use the [setRowHeight](../../api/treegrid#setrowheight) callback to programmatically define row heights based on row data. This approach provides control over row sizing logic without DOM measurement overhead.
+Use the [setRowHeight](https://ej2.syncfusion.com/javascript/documentation/api/treegrid#setrowheight) callback to programmatically define row heights based on row data. This approach provides control over row sizing logic without DOM measurement overhead.
  
 ```javascript
 var treeGrid = new ej.treegrid.TreeGrid({
@@ -147,7 +116,7 @@ treeGrid.appendTo('#TreeGrid');
  
 ## Limit maximum rendered rows
  
-The [maxPoolSize](../../api/treegrid/domVirtualizationSettings#maxpoolsize) property sets a hard cap on the maximum number of DOM rows rendered at any time, preventing performance issues from excessive DOM nodes. The default value is `500`.
+The [maxPoolSize](https://ej2.syncfusion.com/javascript/documentation/api/treegrid/domVirtualizationSettings#maxpoolsize) property sets a hard cap on the maximum number of DOM rows rendered at any time, preventing performance issues from excessive DOM nodes. The default value is `500`.
  
 When `maxPoolSize: 500` (default), the Tree Grid automatically limits DOM rendering to 500 rows maximum. If `rowBuffer` is set, calculated buffer rows are capped at 500.
  
@@ -159,7 +128,7 @@ Configuration options:
  
 ## Scroll event throttling
  
-The [scrollThrottle](../../api/treegrid/domVirtualizationSettings#scrollthrottle) property controls the debounce delay for scroll events in milliseconds, reducing re-render frequency during fast scrolling. The default value is `0` (synchronous, no throttle).
+The [scrollThrottle](https://ej2.syncfusion.com/javascript/documentation/api/treegrid/domVirtualizationSettings#scrollthrottle) property controls the debounce delay for scroll events in milliseconds, reducing re-render frequency during fast scrolling. The default value is `0` (synchronous, no throttle).
  
 When `scrollThrottle: 0` (default), DOM virtualization uses synchronous scroll handling for immediate responsiveness, ideal for local data on modern devices.
  
@@ -173,15 +142,15 @@ Configuration options:
  
 ## Virtual scroll mode
  
-Virtual scroll mode seamlessly enables server-side data loading for handling massive datasets by calculating row positions mathematically and loading only visible data from the server. Set [enableVirtualization](../../api/treegrid#enablevirtualization) to `true` when working with datasets exceeding browser DOM height limits or implementing server-side pagination.
+Virtual scroll mode seamlessly enables server-side data loading for handling massive datasets by calculating row positions mathematically and loading only visible data from the server. Set [enableVirtualization](https://ej2.syncfusion.com/javascript/documentation/api/treegrid#enablevirtualization) to `true` when working with datasets exceeding browser DOM height limits or implementing server-side pagination.
  
 ### Configuration
  
-Virtual scroll mode calculates all row positions mathematically without rendering rows initially. Set [enableVirtualization](../../api/treegrid#enablevirtualization) to `true` to enable server-side data loading for massive datasets.
+Virtual scroll mode calculates all row positions mathematically without rendering rows initially. Set [enableVirtualization](https://ej2.syncfusion.com/javascript/documentation/api/treegrid#enablevirtualization) to `true` to enable server-side data loading for massive datasets.
  
 #### Request size configuration
  
-Request size configuration controls the batch size of requests (rows fetched per scroll request) using [pageSettings.pageSize](../../api/treegrid/pageSettings#pagesize).
+Request size configuration controls the batch size of requests (rows fetched per scroll request) using [pageSettings.pageSize](https://ej2.syncfusion.com/javascript/documentation/api/treegrid/pageSettings#pagesize).
  
 Configuration guidance:
  
@@ -200,7 +169,7 @@ This section describes recommended patterns for achieving robust server-side vir
  
 ## Detail template support
  
-DOM virtualization supports detail templates with proper height configuration. You must specify the [detailTemplateHeight](../../api/treegrid#detailtemplateheight) property in pixels to ensure correct virtual height calculations.
+DOM virtualization supports detail templates with proper height configuration. You must specify the [detailTemplateHeight](https://ej2.syncfusion.com/javascript/documentation/api/treegrid#detailtemplateheight) property in pixels to ensure correct virtual height calculations.
  
 The `detailTemplateHeight` property is required when using detail templates with DOM virtualization because the Tree Grid needs to know the height of detail rows to calculate scroll positions and determine which rows to render in the viewport.
  
@@ -225,7 +194,7 @@ When datasets exceed these browser limits, virtualization alone is insufficient.
  
 Massive row count handling is a core DOM virtualization capability. The Tree Grid uses row offset calculations to map logical row positions to physical screen positions, enabling support for 100,000+ rows while remaining within browser DOM height constraints.
  
-Configuration approach: Enable DOM row virtualization with minimal buffer size using the [rowBuffer](../../api/treegrid/domVirtualizationSettings#rowbuffer) property to reduce DOM node count while maintaining smooth scrolling performance.
+Configuration approach: Enable DOM row virtualization with minimal buffer size using the [rowBuffer](https://ej2.syncfusion.com/javascript/documentation/api/treegrid/domVirtualizationSettings#rowbuffer) property to reduce DOM node count while maintaining smooth scrolling performance.
  
 ### Constraints with massive datasets
  
@@ -258,7 +227,7 @@ This section provides solutions to common issues encountered when using DOM virt
  
 **Cause**: Buffer size configured too small for current scroll pattern.
  
-**Solution**: Increase [rowBuffer](../../api/treegrid/domVirtualizationSettings#rowbuffer) property to 8-10 rows.
+**Solution**: Increase [rowBuffer](https://ej2.syncfusion.com/javascript/documentation/api/treegrid/domVirtualizationSettings#rowbuffer) property to 8-10 rows.
  
 ### Tree Grid freezes or becomes unresponsive
  
@@ -266,7 +235,7 @@ This section provides solutions to common issues encountered when using DOM virt
  
 **Cause**: Too many DOM nodes being rendered due to buffer being too large.
  
-**Solution**: For datasets exceeding 100,000 rows, reduce [rowBuffer](../../api/treegrid/domVirtualizationSettings#rowbuffer) property to 2-3.
+**Solution**: For datasets exceeding 100,000 rows, reduce [rowBuffer](https://ej2.syncfusion.com/javascript/documentation/api/treegrid/domVirtualizationSettings#rowbuffer) property to 2-3.
  
 ### Scrollbar position appears incorrect
  
@@ -274,7 +243,7 @@ This section provides solutions to common issues encountered when using DOM virt
  
 **Cause**: Row heights are inconsistent or dynamic height calculations conflict with virtualization.
  
-**Solution**: Use consistent row heights with fixed [rowHeight](../../api/treegrid#rowheight) property or implement [setRowHeight](../../api/treegrid#setrowheight) callback that returns consistent values based on row data.
+**Solution**: Use consistent row heights with fixed [rowHeight](https://ej2.syncfusion.com/javascript/documentation/api/treegrid#rowheight) property or implement [setRowHeight](https://ej2.syncfusion.com/javascript/documentation/api/treegrid#setrowheight) callback that returns consistent values based on row data.
  
 ### Memory usage increases during extended scrolling
  
@@ -282,7 +251,7 @@ This section provides solutions to common issues encountered when using DOM virt
  
 **Cause**: Buffer size too large.
  
-**Solution**: Reduce [rowBuffer](../../api/treegrid/domVirtualizationSettings#rowbuffer) property to 2-3 for very large datasets.
+**Solution**: Reduce [rowBuffer](https://ej2.syncfusion.com/javascript/documentation/api/treegrid/domVirtualizationSettings#rowbuffer) property to 2-3 for very large datasets.
  
 ### Data misalignment after sorting or filtering
  
@@ -290,4 +259,4 @@ This section provides solutions to common issues encountered when using DOM virt
  
 **Cause**: Virtualization state not synchronized with data changes.
  
-**Solution**: Force Tree Grid re-render by calling the [refresh](../../api/treegrid#refresh) method when data changes.
+**Solution**: Force Tree Grid re-render by calling the [refresh](https://ej2.syncfusion.com/javascript/documentation/api/treegrid#refresh) method when data changes.

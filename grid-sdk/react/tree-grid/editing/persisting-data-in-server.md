@@ -12,15 +12,15 @@ domainurl: https://help.syncfusion.com/grid-sdk
 
 Edited data can be persisted to a database using RESTful web services.
 
-All CRUD operations in the TreeGrid are performed through the [DataManager](../../data). The `DataManager` can bind CRUD requests to server-side endpoints.
+All CRUD operations in the TreeGrid are performed through the [DataManager](https://ej2.syncfusion.com/react/documentation/data). The `DataManager` can bind CRUD requests to server-side endpoints.
 
 > The ODataAdaptor persists data on the server according to the OData protocol.
 
-The following sections explain how to perform server-side CRUD using the [UrlAdaptor](../../../data/adaptors.html#url-adaptor) and the `RemoteSaveAdaptor`.
+The following sections explain how to perform server-side CRUD using the [UrlAdaptor](https://ej2.syncfusion.com/react/documentation/data/adaptors.html#url-adaptor) and the `RemoteSaveAdaptor`.
 
 ## URL adaptor
 
-Use the [UrlAdaptor](../../../data/adaptors.html#url-adaptor) when binding a data source from a remote service. On initial load, data is fetched from the remote endpoint specified in the `url` property of `DataManager` and bound to the TreeGrid. Map CRUD operations to server-side controller actions using `insertUrl`, `removeUrl`, `updateUrl`, and `batchUrl`.
+Use the [UrlAdaptor](https://ej2.syncfusion.com/react/documentation/data/adaptors.html#url-adaptor) when binding a data source from a remote service. On initial load, data is fetched from the remote endpoint specified in the `url` property of `DataManager` and bound to the TreeGrid. Map CRUD operations to server-side controller actions using `insertUrl`, `removeUrl`, `updateUrl`, and `batchUrl`.
 
 The following example demonstrates this behavior.
 

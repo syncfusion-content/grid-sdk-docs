@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Elasticsearch in ##Platform_Name## Pivot Table | Syncfusion
-description: Learn how the ##Platform_Name## Pivot Table connects to Elasticsearch via the NEST library and a Web API controller to fetch and bind data at runtime.
-platform: ej2-javascript
+title: Elasticsearch in TypeScript Pivot Table | Syncfusion
+description: Learn how the TypeScript Pivot Table connects to Elasticsearch via the NEST library and a Web API controller to fetch and bind data at runtime.
+platform: grid-sdk
 control: Elasticsearch
-publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Elasticsearch in ##Platform_Name## Pivot Table
+# Elasticsearch in TypeScript Pivot Table
 
 This guide explains how to connect an Elasticsearch database to the Pivot Table component using the [NEST](https://www.nuget.org/packages/Nest) library and a Web API controller to fetch and bind data to the Pivot Table.
 

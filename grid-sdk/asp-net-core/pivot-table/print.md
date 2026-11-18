@@ -5,7 +5,6 @@ description: Learn how the ASP.NET Core Pivot Table prints the current pivot rep
 platform: grid-sdk
 control: Print 
 documentation: ug
-publishingplatform: ##Platform_Name##
 ---
 
 # Print in ASP.NET Core Pivot Table

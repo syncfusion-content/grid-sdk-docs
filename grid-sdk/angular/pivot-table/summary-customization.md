@@ -2,7 +2,7 @@
 layout: post
 title: Summary Customization in Angular Pivot Table | Syncfusion
 description: Learn how the Angular Pivot Table shows, hides, and positions grand totals and sub-totals for rows and columns.
-platform: ej2-angular
+platform: grid-sdk
 control: Summary customization 
 documentation: ug
 domainurl: ##DomainURL##

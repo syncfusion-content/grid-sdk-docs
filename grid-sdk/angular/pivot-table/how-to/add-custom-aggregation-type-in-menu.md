@@ -2,7 +2,7 @@
 layout: post
 title: How to Add a Custom Aggregation in Angular Pivot Table | Syncfusion
 description: Step-by-step example showing how to add a custom aggregation type to the menu in the Angular Pivot Table, with code snippets and property references.
-platform: ej2-angular
+platform: grid-sdk
 control: Add custom aggregation type to the menu 
 documentation: ug
 domainurl: ##DomainURL##

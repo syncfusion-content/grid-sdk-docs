@@ -10,24 +10,10 @@ domainurl: https://help.syncfusion.com/grid-sdk
 
 # Column Reorder in JavaScript TreeGrid
 
-Reordering can be done by drag and drop of a particular column header from one index to another index within the treegrid. To enable reordering, set the [`allowReordering`](../../api/treegrid#allowreordering) to true.
+Reordering can be done by drag and drop of a particular column header from one index to another index within the treegrid. To enable reordering, set the [`allowReordering`](https://ej2.syncfusion.com/javascript/documentation/api/treegrid#allowreordering) to true.
 
-To use reordering, inject the [`Reorder`](../../api/treegrid#reordermodule) module in the treegrid.
+To use reordering, inject the [`Reorder`](https://ej2.syncfusion.com/javascript/documentation/api/treegrid#reordermodule) module in the treegrid.
 
-{% if page.publishingplatform == "typescript" %}
-
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/treegrid/columns-cs6/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/treegrid/columns-cs6/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/treegrid/columns-cs6" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -39,28 +25,13 @@ To use reordering, inject the [`Reorder`](../../api/treegrid#reordermodule) modu
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/treegrid/columns-cs6" %}
-{% endif %}
 
-> You can disable reordering a particular column by setting the [`columns.allowReordering`](../../api/treegrid/column#reordermodule) to false.
+> You can disable reordering a particular column by setting the [`columns.allowReordering`](https://ej2.syncfusion.com/javascript/documentation/api/treegrid/column#reordermodule) to false.
 
 ## Reorder multiple columns
 
-Multiple columns can be reordered at a time by using the [`reorderColumns`](../../api/treegrid/column#reordercolumns) method.
+Multiple columns can be reordered at a time by using the [`reorderColumns`](https://ej2.syncfusion.com/javascript/documentation/api/treegrid/column#reordercolumns) method.
 
-{% if page.publishingplatform == "typescript" %}
-
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/treegrid/reorder-columns-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/treegrid/reorder-columns-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/treegrid/reorder-columns-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -72,4 +43,3 @@ Multiple columns can be reordered at a time by using the [`reorderColumns`](../.
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/treegrid/reorder-columns-cs1" %}
-{% endif %}

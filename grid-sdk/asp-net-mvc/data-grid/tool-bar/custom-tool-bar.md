@@ -4,7 +4,6 @@ title: Custom Toolbar in Syncfusion ASP.NET MVC Grid Component
 description: Learn here all about Custom Toolbar in Syncfusion ASP.NET MVC Grid component of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Custom Toolbar
-publishingplatform: grid-sdk
 documentation: ug
 ---
 
@@ -31,7 +30,7 @@ The following example demonstrates, how to render the custom toolbar using `Tool
 
 Render an image with text in custom toolbar in Syncfusion ASP.NET MVC Grid allows easily render an image along with text in the toolbar of the Grid. This feature enhances the visual presentation of the Grid, providing additional context and improving the overall experience.
 
-To render an image with text in custom toolbar, This can be achieved by utilizing the [ToolbarTemplate](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ToolbarTemplate)property.
+To render an image with text in custom toolbar, This can be achieved by utilizing the [ToolbarTemplate](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_ToolbarTemplate) property.
 
 The following example demonstrates how to render an image in the toolbar of the grid using `ToolbarTemplate`.
 

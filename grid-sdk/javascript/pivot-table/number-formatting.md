@@ -4,7 +4,6 @@ title: Number formatting in JavaScript Pivotview control | Syncfusion
 description: Learn here all about Number formatting in Syncfusion JavaScript Pivotview control of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Number formatting 
-publishingplatform: grid-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
@@ -18,10 +17,10 @@ Allows you to specify the required display format that should be used in values 
 * Percentage
 * Custom
 
-You can apply format for the numeric values using the following properties in the [`formatSettings`](https://ej2.syncfusion.com/documentation/api/pivotview/dataSourceSettings/#formatsettings).
+You can apply format for the numeric values using the following properties in the [`formatSettings`](https://ej2.syncfusion.com/documentation/api/pivotview/dataSourceSettings#formatsettings).
 
-* [`name`](https://ej2.syncfusion.com/documentation/api/pivotview/formatSettingsModel/#name): It allows to specify the field name.
-* [`format`](https://ej2.syncfusion.com/documentation/api/pivotview/formatSettingsModel/#format): It allows to specify the format of the respective field.
+* [`name`](https://ej2.syncfusion.com/documentation/api/pivotview/formatSettingsModel#name): It allows to specify the field name.
+* [`format`](https://ej2.syncfusion.com/documentation/api/pivotview/formatSettingsModel#format): It allows to specify the format of the respective field.
 
 Possible formatting values are:
 
@@ -33,23 +32,9 @@ Possible formatting values are:
 
 Other properties include:
 
-* [`useGrouping`](https://ej2.syncfusion.com/documentation/api/pivotview/formatSettingsModel/#usegrouping): It allows to enable or disable the separator, for example, $100,000,000 or $100000000 respectively. By default, it will be set as **true**.
-* [`currency`](https://ej2.syncfusion.com/documentation/api/pivotview/formatSettingsModel/#currency): It allows to set the currency code which needs to considered for the currency formatting.
+* [`useGrouping`](https://ej2.syncfusion.com/documentation/api/pivotview/formatSettingsModel#usegrouping): It allows to enable or disable the separator, for example, $100,000,000 or $100000000 respectively. By default, it will be set as **true**.
+* [`currency`](https://ej2.syncfusion.com/documentation/api/pivotview/formatSettingsModel#currency): It allows to set the currency code which needs to considered for the currency formatting.
 
-{% if page.publishingplatform == "typescript" %}
-
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs271/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs271/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs271" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -61,15 +46,14 @@ Other properties include:
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs271" %}
-{% endif %}
 
-You can also format the values at runtime using the formatting dialog. This option can be enabled by setting the [`allowNumberFormatting`](https://ej2.syncfusion.com/documentation/api/pivotview/#allownumberformatting) property to **true**. The same has been discussed in some of the upcoming topics.
+You can also format the values at runtime using the formatting dialog. This option can be enabled by setting the [`allowNumberFormatting`](https://ej2.syncfusion.com/documentation/api/pivotview#allownumberformatting) property to **true**. The same has been discussed in some of the upcoming topics.
 
 > To use the formatting dialog, inject the `NumberFormatting` module into the pivot table.
 
 ## Custom format
 
-You can add any custom format directly to the [`format`](https://ej2.syncfusion.com/documentation/api/pivotview/formatSettingsModel/#format) property in the [`formatSettings`](https://ej2.syncfusion.com/documentation/api/pivotview/dataSourceSettings/#formatsettings). Custom format can be achieved by using one or more format specifiers listed in the below table.
+You can add any custom format directly to the [`format`](https://ej2.syncfusion.com/documentation/api/pivotview/formatSettingsModel#format) property in the [`formatSettings`](https://ej2.syncfusion.com/documentation/api/pivotview/dataSourceSettings#formatsettings). Custom format can be achieved by using one or more format specifiers listed in the below table.
 
 | Specifier | Description | Input | Format Output |
 | ------- |--------------- | ---------------- | --------------- |
@@ -81,22 +65,8 @@ You can add any custom format directly to the [`format`](https://ej2.syncfusion.
 | ; | Denotes separate formats for positive, negative and zero values. | { format: '###.##;(###.00);-0' } | '(120.00)'    |
 | 'String' (single Quotes) | Denotes the characters that are enclosed in the single quote (') to be replaced in the resulting string. | { format: "####.00 '@'" } | "123.00 @"    |
 
->NOTE: If custom format is defined, certain properties such as [`useGrouping`](https://ej2.syncfusion.com/documentation/api/pivotview/formatSettingsModel/#usegrouping) and [`currency`](https://ej2.syncfusion.com/documentation/api/pivotview/formatSettingsModel/#currency) will not be considered.
+>NOTE: If custom format is defined, certain properties such as [`useGrouping`](https://ej2.syncfusion.com/documentation/api/pivotview/formatSettingsModel#usegrouping) and [`currency`](https://ej2.syncfusion.com/documentation/api/pivotview/formatSettingsModel#currency) will not be considered.
 
-{% if page.publishingplatform == "typescript" %}
-
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs272/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs272/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs272" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -108,26 +78,11 @@ You can add any custom format directly to the [`format`](https://ej2.syncfusion.
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs272" %}
-{% endif %}
 
 ## Toolbar
 
-You can enable formatting dialog option in the toolbar by adding `NumberFormatting` in the [`toolbar`](https://ej2.syncfusion.com/documentation/api/pivotview/#toolbar). After that, you can see the option to invoke the formatting dialog in the toolbar.
+You can enable formatting dialog option in the toolbar by adding `NumberFormatting` in the [`toolbar`](https://ej2.syncfusion.com/documentation/api/pivotview#toolbar). After that, you can see the option to invoke the formatting dialog in the toolbar.
 
-{% if page.publishingplatform == "typescript" %}
-
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs273/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs273/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs273" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -139,26 +94,11 @@ You can enable formatting dialog option in the toolbar by adding `NumberFormatti
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs273" %}
-{% endif %}
 
 ## Invoking formatting dialog through external button
 
 You can invoke the formatting dialog by clicking an external button using the `ShowNumberFormattingDialog` method.
 
-{% if page.publishingplatform == "typescript" %}
-
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/number-formatting-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/number-formatting-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/pivot-table/number-formatting-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -170,36 +110,21 @@ You can invoke the formatting dialog by clicking an external button using the `S
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/pivot-table/number-formatting-cs1" %}
-{% endif %}
 
 ## Events
 
 ### NumberFormatting
 
-The event [`numberFormatting`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/#numberformatting) fires while closing the number formatting dialog on "OK" button click. It allows the user to restrict the customization settings done by the user. It has the following parameters
+The event [`numberFormatting`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview#numberformatting) fires while closing the number formatting dialog on "OK" button click. It allows the user to restrict the customization settings done by the user. It has the following parameters
 
 * `formatName`: It holds the name of the field.
 
-* [`formatSettings`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/dataSourceSettings/#formatsettings): It holds the [`formatSettings`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/dataSourceSettings/#formatsettings) property of the pivot report.
+* [`formatSettings`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/dataSourceSettings#formatsettings): It holds the [`formatSettings`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/dataSourceSettings#formatsettings) property of the pivot report.
 
 * `cancel`: It is a boolean property and by setting this to true , the customization done in number formatting dialog won’t be applied.
 
 In the below sample, the customization done in number formatting dialog for the field "Amount" won’t be applied.
 
-{% if page.publishingplatform == "typescript" %}
-
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/number-formatting-cs2/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/number-formatting-cs2/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/pivot-table/number-formatting-cs2" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -211,7 +136,6 @@ In the below sample, the customization done in number formatting dialog for the 
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/pivot-table/number-formatting-cs2" %}
-{% endif %}
 
 ## See Also
 

@@ -128,7 +128,7 @@ The following example demonstrates using the `ignoreAccent` property to include 
 {% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/columns-chooser-cs6" %}
 
 ## Column Chooser Template in Syncfusion Angular TreeGrid component
-The Column Chooser Template feature allows full customization of the column chooser’s header, content, and footer, making it easier to manage column visibility. To enable the column chooser, set [showColumnChooser](../../api/treegrid#showcolumnmenu) to **true** and add **ColumnChooser** to the [toolbar](../../api/treegrid#toolbar) property.
+The Column Chooser Template feature allows full customization of the column chooser’s header, content, and footer, making it easier to manage column visibility. To enable the column chooser, set [showColumnChooser](https://ej2.syncfusion.com/angular/documentation/api/treegrid#showcolumnmenu) to **true** and add **ColumnChooser** to the [toolbar](https://ej2.syncfusion.com/angular/documentation/api/treegrid#toolbar) property.
 
 To implement a custom column chooser template in the TreeGrid, use the following properties:
 
@@ -140,7 +140,7 @@ To implement a custom column chooser template in the TreeGrid, use the following
 
 * **columnChooserSettings.renderCustomColumnChooser** -  Allows you to override the default column chooser UI with a fully customized layout.
 
-In this example, a Syncfusion TreeView component is rendered inside the column chooser. To use the TreeView component, install the Syncfusion TreeView package as described in the [documentation](../../treeview/getting-started). The `columnChooserSettings.template` property defines a element with the `id` set to **tree**, providing as a container for the TreeView component. The `columnChooserSettings.renderCustomColumnChooser` method initializes the TreeView with checkboxes and appends it to this template. Checkbox selection is handled using the [nodeClicked](../../api/treeview#nodeclicked) and [keyPress](../../api/treeview#keypress) events, which organize columns into **Task Info**, **Schedule**, and **Progress**.
+In this example, a Syncfusion TreeView component is rendered inside the column chooser. To use the TreeView component, install the Syncfusion TreeView package as described in the [documentation](https://ej2.syncfusion.com/angular/documentation/treeview/getting-started). The `columnChooserSettings.template` property defines a element with the `id` set to **tree**, providing as a container for the TreeView component. The `columnChooserSettings.renderCustomColumnChooser` method initializes the TreeView with checkboxes and appends it to this template. Checkbox selection is handled using the [nodeClicked](https://ej2.syncfusion.com/angular/documentation/api/treeview#nodeclicked) and [keyPress](https://ej2.syncfusion.com/angular/documentation/api/treeview#keypress) events, which organize columns into **Task Info**, **Schedule**, and **Progress**.
 
 The column chooser footer is customized using `columnChooserSettings.footerTemplate`, replacing the default buttons with customized **Apply** and **Close** buttons. The **Apply** button updates column visibility based on selection, while the **Close** button closes the column chooser via the `onClick` event. Additionally, the header is customized using `columnChooserSettings.headerTemplate` to include a title and an icon.
 

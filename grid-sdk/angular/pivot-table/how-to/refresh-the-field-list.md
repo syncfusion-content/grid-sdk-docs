@@ -2,7 +2,7 @@
 layout: post
 title: How to Refresh the Field List in Angular Pivot Table | Syncfusion
 description: Step-by-step example showing how to refresh the field list in the Angular Pivot Table, with code snippets and property references.
-platform: ej2-angular
+platform: grid-sdk
 control: Refresh the field list 
 documentation: ug
 domainurl: ##DomainURL##
