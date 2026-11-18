@@ -1320,9 +1320,6 @@ The following example demonstrates how to bind custom data to handle grid action
     {% highlight html tabtitle="index.html" %}
     {% include code-snippet/grid-sdk/javascript/grid/remote-custom-binding/index.html %}
     {% endhighlight %}
-    {% highlight css tabtitle="styles.css" %}
-    {% include code-snippet/grid-sdk/javascript/grid/remote-custom-binding/styles.css %}
-    {% endhighlight %}
     {% highlight ts tabtitle="server.ts" %}
     {% include code-snippet/grid-sdk/javascript/grid/remote-custom-binding/server.ts %}
     {% endhighlight %}
@@ -1430,9 +1427,6 @@ The following code example shows how to export all records in client side:
     {% highlight html tabtitle="index.html" %}
     {% include code-snippet/grid-sdk/javascript/grid/remote-custom-export/index.html %}
     {% endhighlight %}
-    {% highlight css tabtitle="styles.css" %}
-    {% include code-snippet/grid-sdk/javascript/grid/remote-custom-export/styles.css %}
-    {% endhighlight %}
     {% highlight ts tabtitle="server.ts" %}
     {% include code-snippet/grid-sdk/javascript/grid/remote-custom-export/server.ts %}
     {% endhighlight %}
@@ -1488,9 +1482,6 @@ The following example demonstrates how to send additional parameters to the serv
     {% endhighlight %}
     {% highlight html tabtitle="index.html" %}
     {% include code-snippet/grid-sdk/javascript/grid/remote-add-params/index.html %}
-    {% endhighlight %}
-    {% highlight css tabtitle="styles.css" %}
-    {% include code-snippet/grid-sdk/javascript/grid/remote-add-params/styles.css %}
     {% endhighlight %}
     {% highlight ts tabtitle="server.ts" %}
     {% include code-snippet/grid-sdk/javascript/grid/remote-add-params/server.ts %}
