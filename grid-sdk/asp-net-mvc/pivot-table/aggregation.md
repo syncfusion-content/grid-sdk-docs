@@ -129,6 +129,41 @@ By default, the dropdown icon to change the aggregation type is visible in the g
 
 ![Aggregation type icon hidden in Grouping Bar](images/value-type-icon-gb.png)
 
+## Multiple Instances of the Same Field in Values
+
+> This feature is applicable only for relational data sources.
+
+The Pivot Table component supports adding the same field to the `Values` collection of `DataSourceSettings` more than once, with each instance configured independently using a distinct aggregation type and a distinct caption. For example, you can add the **Amount** field twice: one instance aggregated as **Sum of Amount** and another aggregated as **Average of Amount**.
+
+Each instance is treated as a separate configuration and maintains its own:
+
+* Aggregation type (`type`)
+* Display caption (`caption`)
+* Number format (resolved independently in the number formatting dialog)
+* Base field (`baseField`)
+* Base item (`baseItem`)
+
+At runtime, every instance is rendered as its own entry in the user interface:
+
+* As a separate button in the Grouping Bar.
+* As a separate value column in the Pivot Table.
+* As a separate series in the Pivot Chart.
+
+Changing an aggregation type from the context menu in the Grouping Bar only affects the selected instance; other instances of the same field remain unchanged. In the number formatting dialog, each instance is listed and formatted separately. Value sorting, filtering, and conditional formatting always resolve to the selected instance, ensuring that operations on one instance do not impact the others.
+
+Instances can be reordered or removed individually using the Grouping Bar buttons without affecting the other instances of the same field.
+
+The following example demonstrates configuring two instances of the **Amount** field in the `Values` collection, alongside the **Sold** field.
+
+{% tabs %}
+{% highlight razor tabtitle="Razor" %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/aggregation/multiple-instances/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Aggregation.cs" %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/aggregation/multiple-instances/aggregation.cs %}
+{% endhighlight %}
+{% endtabs %}
+
 ## Event
 
 ### AggregateCellInfo
