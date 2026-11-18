@@ -846,6 +846,8 @@ let pivotObj: PivotView = new PivotView({
 pivotObj.appendTo('#PivotTable');
 ```
 
+![Pivot Table connected to the Custom Data Server](./images/custom-data-server-pivot-table.png)
+
 > The URL uses the port set in `General:Port` (`6885` in the sample). If you enable HTTPS, use `https://` in the URL. If you change the port, update the URL.
 
 To select a different configured index, add its identifier to the endpoint URL, for example `http://localhost:6885/api/pivot/post?index=Data-Csv`. Use field names that exist in that index for [`rows`](https://ej2.syncfusion.com/documentation/api/pivotview/datasourcesettingsmodel#rows), [`columns`](https://ej2.syncfusion.com/documentation/api/pivotview/datasourcesettingsmodel#columns), [`values`](https://ej2.syncfusion.com/documentation/api/pivotview/datasourcesettingsmodel#values), and filters. If the Pivot Table is hosted on a different origin, add that origin to `Security:CORS:AllowOrigin`. An unknown index returns HTTP 404 with the list of valid index identifiers.
@@ -900,7 +902,6 @@ These settings control index loading, refresh behavior, and server-side caching:
 | `RetryAttempts` | Number of times the server retries after the first failed attempt to load an index. Set to `0` to disable retries. Valid values are `0` to `30`. **Default:** `3`. |
 | `CacheSizeLimit` | Maximum number of cached server responses for each index. When the limit is reached, the least recently used response is removed first. Set to `0` to disable caching. Changing it requires a restart. **Default:** `100`. |
 | `KeepDataOnRefresh` | When `true`, the previously loaded data stays available if a reload fails. Keeping old data while new data loads can use more RAM. **Default:** `true`. |
-| `MaxCacheItemSizeBytes` | Maximum size, in bytes, of the cached data of one index. Data larger than this value is not cached. Set to `0` for no limit. Changing it requires a restart. **Default:** `0`. |
 
 `RetryAttempts` and `KeepDataOnRefresh` take effect immediately when changed through `PUT /api/config/datastorage`. To see which indexes are currently cached, call `GET /api/config/datastorage/cache-stats`.
 
