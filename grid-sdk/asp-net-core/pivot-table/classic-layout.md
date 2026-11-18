@@ -42,23 +42,13 @@ To enable it, set the [layout](https://help.syncfusion.com/cr/aspnetcore-js2/Syn
 N> The Flat layout is supported only for relational data sources; OLAP is not supported. Switching layouts preserves the original pivot report state.
 
 {% tabs %}
-{% highlight cshtml tabtitle="CSHTML" %}
-<ejs-pivotview id="pivotview" height="350">
-    <e-datasourcesettings dataSource="@ViewBag.Data"></e-datasourcesettings>
-    <e-gridSettings layout="Flat"></e-gridSettings>
-    <e-flatSettings allowSorting="true" allowFiltering="true" allowPaging="true">
-        <e-flatpagesettings pageSize="10"></e-flatpagesettings>
-        <e-flatcolumns>
-            <e-flatcolumn field="Product" headerText="Product" width="140"></e-flatcolumn>
-            <e-flatcolumn field="Country" headerText="Country" width="140"></e-flatcolumn>
-            <e-flatcolumn field="Year" headerText="Year" width="120"></e-flatcolumn>
-            <e-flatcolumn field="Sold" headerText="Units Sold" width="120"></e-flatcolumn>
-            <e-flatcolumn field="Amount" headerText="Sold Amount" width="140"></e-flatcolumn>
-        </e-flatcolumns>
-    </e-flatSettings>
-</ejs-pivotview>
-<script>
-    ej.pivotview.PivotView.Inject(ej.pivotview.FlatLayout);
-</script>
+{% highlight c# tabtitle="Razor" %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/classic-layout/flat-layout/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Tag Helper" %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/classic-layout/flat-layout/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="ClassicLayout.cs" %}
+{% include code-snippet/grid-sdk/asp-net-core/pivot-table/classic-layout/flat-layout/ClassicLayout.cs %}
 {% endhighlight %}
 {% endtabs %}

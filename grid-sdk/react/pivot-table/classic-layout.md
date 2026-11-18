@@ -46,42 +46,21 @@ To enable it, set the [layout](https://ej2.syncfusion.com/react/documentation/ap
 N> The Flat layout is supported only for relational data sources; OLAP is not supported. Switching layouts preserves the original pivot report state.
 
 {% tabs %}
+{% highlight js tabtitle="App.jsx" %}
+{% include code-snippet/grid-sdk/react/pivot-table/flat-layout-cs1/app/App.jsx %}
+{% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-import { PivotViewComponent, Inject, FlatLayout } from '@syncfusion/ej2-react-pivotview';
-import * as React from 'react';
-
-const dataSourceSettings = {
-    dataSource: [
-        { Product: 'Bike', Country: 'France', Year: 'FY 2023', Sold: 12, Amount: 3600 },
-        { Product: 'Helmet', Country: 'Germany', Year: 'FY 2024', Sold: 30, Amount: 1500 },
-        { Product: 'Gloves', Country: 'Canada', Year: 'FY 2024', Sold: 18, Amount: 540 }
-    ]
-};
-const gridSettings = { layout: 'Flat' } as any;
-const flatSettings = {
-    columns: [
-        { field: 'Product', headerText: 'Product', width: 140 },
-        { field: 'Country', headerText: 'Country', width: 140 },
-        { field: 'Year', headerText: 'Year', width: 120 },
-        { field: 'Sold', headerText: 'Units Sold', width: 120 },
-        { field: 'Amount', headerText: 'Sold Amount', width: 140 }
-    ],
-    allowSorting: true,
-    allowFiltering: true,
-    allowPaging: true,
-    pageSettings: { pageSize: 10 }
-} as any;
-
-function App() {
-    return (
-        <PivotViewComponent id='PivotView' dataSourceSettings={dataSourceSettings} gridSettings={gridSettings} flatSettings={flatSettings}>
-            <Inject services={[FlatLayout]} />
-        </PivotViewComponent>
-    );
-}
-export default App;
+{% include code-snippet/grid-sdk/react/pivot-table/flat-layout-cs1/app/App.tsx %}
+{% endhighlight %}
+{% highlight js tabtitle="datasource.jsx" %}
+{% include code-snippet/grid-sdk/react/pivot-table/flat-layout-cs1/app/datasource.jsx %}
+{% endhighlight %}
+{% highlight ts tabtitle="datasource.tsx" %}
+{% include code-snippet/grid-sdk/react/pivot-table/flat-layout-cs1/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/flat-layout-cs1" %}
 
 ## See also
 

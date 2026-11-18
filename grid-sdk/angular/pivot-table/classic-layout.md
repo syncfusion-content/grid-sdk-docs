@@ -42,47 +42,14 @@ N> The Flat layout is supported only for relational data sources; OLAP is not su
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-import { Component, OnInit } from '@angular/core';
-import { PivotViewAllModule, FlatLayoutService } from '@syncfusion/ej2-angular-pivotview';
-
-@Component({
-    imports: [PivotViewAllModule],
-    standalone: true,
-    selector: 'app-container',
-    providers: [FlatLayoutService],
-    template: `<ejs-pivotview #pivotview id='PivotView' [dataSourceSettings]="dataSourceSettings" [gridSettings]="gridSettings" [flatSettings]="flatSettings"></ejs-pivotview>`
-})
-export class AppComponent implements OnInit {
-    public dataSourceSettings: any;
-    public gridSettings: any;
-    public flatSettings: any;
-
-    ngOnInit(): void {
-        this.dataSourceSettings = {
-            dataSource: [
-                { Product: 'Bike', Country: 'France', Year: 'FY 2023', Sold: 12, Amount: 3600 },
-                { Product: 'Helmet', Country: 'Germany', Year: 'FY 2024', Sold: 30, Amount: 1500 },
-                { Product: 'Gloves', Country: 'Canada', Year: 'FY 2024', Sold: 18, Amount: 540 }
-            ]
-        };
-        this.gridSettings = { layout: 'Flat' };
-        this.flatSettings = {
-            columns: [
-                { field: 'Product', headerText: 'Product', width: 140 },
-                { field: 'Country', headerText: 'Country', width: 140 },
-                { field: 'Year', headerText: 'Year', width: 120 },
-                { field: 'Sold', headerText: 'Units Sold', width: 120 },
-                { field: 'Amount', headerText: 'Sold Amount', width: 140 }
-            ],
-            allowSorting: true,
-            allowFiltering: true,
-            allowPaging: true,
-            pageSettings: { pageSize: 10 }
-        };
-    }
-}
+{% include code-snippet/grid-sdk/angular/pivot-table/flat-layout-cs1/src/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/grid-sdk/angular/pivot-table/flat-layout-cs1/src/datasource.ts %}
 {% endhighlight %}
 {% endtabs %}
+
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/flat-layout-cs1" %}
 
 ## See also
 

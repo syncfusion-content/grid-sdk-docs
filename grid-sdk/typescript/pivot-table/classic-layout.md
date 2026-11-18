@@ -41,37 +41,17 @@ N> The Flat layout is supported only for relational data sources; OLAP is not su
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-import { PivotView, FlatLayout } from '@syncfusion/ej2-pivotview';
-
-PivotView.Inject(FlatLayout);
-
-let pivotObj: PivotView = new PivotView({
-    dataSourceSettings: {
-        dataSource: [
-        { Product: 'Bike', Country: 'France', Year: 'FY 2023', Sold: 12, Amount: 3600 },
-        { Product: 'Helmet', Country: 'Germany', Year: 'FY 2024', Sold: 30, Amount: 1500 },
-        { Product: 'Gloves', Country: 'Canada', Year: 'FY 2024', Sold: 18, Amount: 540 }
-    ]
-    },
-    gridSettings: { layout: 'Flat' },
-    flatSettings: {
-        columns: [
-            { field: 'Product', headerText: 'Product', width: 140 },
-            { field: 'Country', headerText: 'Country', width: 140 },
-            { field: 'Year', headerText: 'Year', width: 120 },
-            { field: 'Sold', headerText: 'Units Sold', width: 120 },
-            { field: 'Amount', headerText: 'Sold Amount', width: 140 }
-        ],
-        allowSorting: true,
-        allowFiltering: true,
-        allowPaging: true,
-        pageSettings: { pageSize: 10 }
-    },
-    height: 350
-});
-pivotObj.appendTo('#PivotView');
+{% include code-snippet/grid-sdk/typescript/pivot-table/flat-layout-cs1/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/grid-sdk/typescript/pivot-table/flat-layout-cs1/index.html %}
+{% endhighlight %}
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/grid-sdk/typescript/pivot-table/flat-layout-cs1/datasource.ts %}
 {% endhighlight %}
 {% endtabs %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/pivot-table/flat-layout-cs1" %}
 
 {% tabs %}
 {% highlight html tabtitle="index.html" %}

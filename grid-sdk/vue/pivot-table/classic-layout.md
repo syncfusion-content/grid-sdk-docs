@@ -40,45 +40,15 @@ To enable it, set the [layout](https://ej2.syncfusion.com/vue/documentation/api/
 N> The Flat layout is supported only for relational data sources; OLAP is not supported. Switching layouts preserves the original pivot report state.
 
 {% tabs %}
-{% highlight html tabtitle="Options API (~/src/App.vue)" %}
-<template>
-  <ejs-pivotview id="PivotView" :dataSourceSettings="dataSourceSettings" :gridSettings="gridSettings" :flatSettings="flatSettings"></ejs-pivotview>
-</template>
-
-<script>
-import { PivotViewComponent, FlatLayout } from '@syncfusion/ej2-vue-pivotview';
-
-export default {
-  components: { 'ejs-pivotview': PivotViewComponent },
-  data() {
-    return {
-      dataSourceSettings: {
-        dataSource: [
-            { Product: 'Bike', Country: 'France', Year: 'FY 2023', Sold: 12, Amount: 3600 },
-            { Product: 'Helmet', Country: 'Germany', Year: 'FY 2024', Sold: 30, Amount: 1500 },
-            { Product: 'Gloves', Country: 'Canada', Year: 'FY 2024', Sold: 18, Amount: 540 }
-        ]
-      },
-      gridSettings: { layout: 'Flat' },
-      flatSettings: {
-        columns: [
-            { field: 'Product', headerText: 'Product', width: 140 },
-            { field: 'Country', headerText: 'Country', width: 140 },
-            { field: 'Year', headerText: 'Year', width: 120 },
-            { field: 'Sold', headerText: 'Units Sold', width: 120 },
-            { field: 'Amount', headerText: 'Sold Amount', width: 140 }
-        ],
-        allowSorting: true,
-        allowFiltering: true,
-        allowPaging: true,
-        pageSettings: { pageSize: 10 }
-      }
-    };
-  },
-  provide: {
-    pivotview: [FlatLayout]
-  }
-};
-</script>
+{% highlight html tabtitle="app.vue" %}
+{% include code-snippet/grid-sdk/vue/pivot-table/flat-layout-cs1/app.vue %}
+{% endhighlight %}
+{% highlight html tabtitle="app-composition.vue" %}
+{% include code-snippet/grid-sdk/vue/pivot-table/flat-layout-cs1/app-composition.vue %}
+{% endhighlight %}
+{% highlight js tabtitle="pivotData.js" %}
+{% include code-snippet/grid-sdk/vue/pivot-table/flat-layout-cs1/pivotData.js %}
 {% endhighlight %}
 {% endtabs %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/flat-layout-cs1" %}
