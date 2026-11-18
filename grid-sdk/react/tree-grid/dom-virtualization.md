@@ -89,7 +89,7 @@ Buffer configuration defines how many extra rows the Tree Grid renders beyond th
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample ""https://help.syncfusion.com/code-snippet/grid-sdk/react/treegrid/dom-virtualization-cs2" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/treegrid/dom-virtualization-cs2" %}
 
 > Buffer Tuning: Larger buffers (5-10) reduce visible gaps during fast scrolling but increase DOM nodes and memory. Smaller buffers (2-3) minimize DOM nodes but may show gaps during very fast scrolling. Start with default values and adjust based on scroll speed and device constraints.
 

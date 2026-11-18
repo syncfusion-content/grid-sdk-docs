@@ -1,0 +1,30 @@
+#container {
+    visibility: hidden;
+}
+
+#loader {
+  color: #008cff;
+  font-family: 'Helvetica Neue','calibiri';
+  font-size: 14px;
+  height: 40px;
+  left: 45%;
+  position: absolute;
+  top: 45%;
+  width: 30%;
+}
+
+#Grid .emp-id-cell,
+#Grid .emp-name-cell,
+#Grid .designation-cell,
+#Grid .location-cell {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+#Grid .emp-id-cell svg,
+#Grid .emp-name-cell svg,
+#Grid .designation-cell svg,
+#Grid .location-cell svg {
+    flex-shrink: 0;
+        }
