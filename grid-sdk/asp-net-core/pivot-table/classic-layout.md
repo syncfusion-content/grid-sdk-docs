@@ -32,3 +32,33 @@ To enable the classic layout, set the [layout](https://help.syncfusion.com/cr/as
 **Limitations**
 
 * Subtotals at the "Top" position are not supported for row subtotals.
+
+## Flat Analytical Table View
+
+By default, the Pivot Table aggregates relational data in the Compact or Tabular layout. The `Flat` layout instead displays the raw, unaggregated relational records in a tabular view without altering the pivot report configuration. It works directly on the [dataSource](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html) of the `dataSourceSettings` and does not trigger any pivot engine population events.
+
+To enable it, set the [layout](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewGridSettings.html#Syncfusion_EJ2_PivotView_PivotViewGridSettings_Layout) property in `gridSettings` to **Flat** and inject the `FlatLayout` module by calling `ej.pivotview.PivotView.Inject(ej.pivotview.FlatLayout)` in a script block. Configure the flat view independently using [flatSettings](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html), which supports `columns`, `allowSorting`, `sortSettings`, `allowFiltering`, `filterSettings`, `allowAdvancedFiltering`, `searchSettings`, `allowPaging`, `pageSettings`, `enableVirtualization`, `aggregates`, `totalsPosition` and `showColumnChooser`. When the toolbar is enabled, add the `Layout` item to the `toolbar` array to let users switch between the Compact, Tabular and Flat layouts.
+
+N> The Flat layout is supported only for relational data sources; OLAP is not supported. Switching layouts preserves the original pivot report state.
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+<ejs-pivotview id="pivotview" height="350">
+    <e-datasourcesettings dataSource="@ViewBag.Data"></e-datasourcesettings>
+    <e-gridSettings layout="Flat"></e-gridSettings>
+    <e-flatSettings allowSorting="true" allowFiltering="true" allowPaging="true">
+        <e-flatpagesettings pageSize="10"></e-flatpagesettings>
+        <e-flatcolumns>
+            <e-flatcolumn field="Product" headerText="Product" width="140"></e-flatcolumn>
+            <e-flatcolumn field="Country" headerText="Country" width="140"></e-flatcolumn>
+            <e-flatcolumn field="Year" headerText="Year" width="120"></e-flatcolumn>
+            <e-flatcolumn field="Sold" headerText="Units Sold" width="120"></e-flatcolumn>
+            <e-flatcolumn field="Amount" headerText="Sold Amount" width="140"></e-flatcolumn>
+        </e-flatcolumns>
+    </e-flatSettings>
+</ejs-pivotview>
+<script>
+    ej.pivotview.PivotView.Inject(ej.pivotview.FlatLayout);
+</script>
+{% endhighlight %}
+{% endtabs %}

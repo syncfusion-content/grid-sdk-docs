@@ -30,3 +30,51 @@ To enable the classic layout, set the [layout](https://ej2.syncfusion.com/docume
 **Limitations**
 
 * Subtotals at the "Top" position are not supported for row subtotals.
+
+## Flat Analytical Table View
+
+By default, the Pivot Table aggregates relational data in the Compact or Tabular layout. The `Flat` layout instead displays the raw, unaggregated relational records in a tabular view without altering the pivot report configuration. It works directly on the [dataSource](https://ej2.syncfusion.com/documentation/api/pivotview/datasourcesettings#datasource) of the `dataSourceSettings` and does not trigger any pivot engine population events.
+
+To enable it, set the [layout](https://ej2.syncfusion.com/documentation/api/pivotview/gridSettings#layout) property in `gridSettings` to **Flat** and inject the `FlatLayout` module, for example, `PivotView.Inject(FlatLayout)`. Configure the flat view independently using [flatSettings](https://ej2.syncfusion.com/documentation/api/pivotview/flatSettings), which supports `columns`, `allowSorting`, `sortSettings`, `allowFiltering`, `filterSettings`, `allowAdvancedFiltering`, `searchSettings`, `allowPaging`, `pageSettings`, `enableVirtualization`, `aggregates`, `totalsPosition` and `showColumnChooser`. When the toolbar is enabled, add the `Layout` item to the `toolbar` array to let users switch between the Compact, Tabular and Flat layouts.
+
+N> The Flat layout is supported only for relational data sources; OLAP is not supported. Switching layouts preserves the original pivot report state.
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+import { PivotView, FlatLayout } from '@syncfusion/ej2-pivotview';
+
+PivotView.Inject(FlatLayout);
+
+let pivotObj: PivotView = new PivotView({
+    dataSourceSettings: {
+        dataSource: [
+        { Product: 'Bike', Country: 'France', Year: 'FY 2023', Sold: 12, Amount: 3600 },
+        { Product: 'Helmet', Country: 'Germany', Year: 'FY 2024', Sold: 30, Amount: 1500 },
+        { Product: 'Gloves', Country: 'Canada', Year: 'FY 2024', Sold: 18, Amount: 540 }
+    ]
+    },
+    gridSettings: { layout: 'Flat' },
+    flatSettings: {
+        columns: [
+            { field: 'Product', headerText: 'Product', width: 140 },
+            { field: 'Country', headerText: 'Country', width: 140 },
+            { field: 'Year', headerText: 'Year', width: 120 },
+            { field: 'Sold', headerText: 'Units Sold', width: 120 },
+            { field: 'Amount', headerText: 'Sold Amount', width: 140 }
+        ],
+        allowSorting: true,
+        allowFiltering: true,
+        allowPaging: true,
+        pageSettings: { pageSize: 10 }
+    },
+    height: 350
+});
+pivotObj.appendTo('#PivotView');
+{% endhighlight %}
+{% endtabs %}
+
+{% tabs %}
+{% highlight html tabtitle="index.html" %}
+<div id="PivotView"></div>
+{% endhighlight %}
+{% endtabs %}

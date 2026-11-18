@@ -30,3 +30,39 @@ To enable the classic layout, set the [Layout](https://help.syncfusion.com/cr/as
 **Limitations**
 
 * Subtotals at the "Top" position are not supported for row subtotals.
+
+## Flat Analytical Table View
+
+By default, the Pivot Table aggregates relational data in the Compact or Tabular layout. The `Flat` layout instead displays the raw, unaggregated relational records in a tabular view without altering the pivot report configuration. It works directly on the [dataSource](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html) of the `dataSourceSettings` and does not trigger any pivot engine population events.
+
+To enable it, set the [layout](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewGridSettings.html#Syncfusion_EJ2_PivotView_PivotViewGridSettings_Layout) property in `gridSettings` to **Flat** and inject the `FlatLayout` module by calling `ej.pivotview.PivotView.Inject(ej.pivotview.FlatLayout)` in a script block. Configure the flat view independently using [flatSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html), which supports `columns`, `allowSorting`, `sortSettings`, `allowFiltering`, `filterSettings`, `allowAdvancedFiltering`, `searchSettings`, `allowPaging`, `pageSettings`, `enableVirtualization`, `aggregates`, `totalsPosition` and `showColumnChooser`. When the toolbar is enabled, add the `Layout` item to the `toolbar` array to let users switch between the Compact, Tabular and Flat layouts.
+
+N> The Flat layout is supported only for relational data sources; OLAP is not supported. Switching layouts preserves the original pivot report state.
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+@using Syncfusion.EJ2.PivotView
+
+@Html.EJS().PivotView("pivotview").Height("350")
+    .DataSourceSettings(ds => ds.DataSource((IEnumerable<object>)ViewBag.Data))
+    .GridSettings(new PivotViewGridSettings { Layout = GridLayout.Flat })
+    .FlatSettings(new PivotViewFlatSettings
+    {
+        AllowSorting = true,
+        AllowFiltering = true,
+        AllowPaging = true,
+        PageSettings = new PivotViewFlatPageSettings { PageSize = 10 },
+        Columns = new List<PivotViewFlatColumn>
+        {
+            new PivotViewFlatColumn { Field = "Product", HeaderText = "Product", Width = "140" },
+            new PivotViewFlatColumn { Field = "Country", HeaderText = "Country", Width = "140" },
+            new PivotViewFlatColumn { Field = "Year", HeaderText = "Year", Width = "120" },
+            new PivotViewFlatColumn { Field = "Sold", HeaderText = "Units Sold", Width = "120" },
+            new PivotViewFlatColumn { Field = "Amount", HeaderText = "Sold Amount", Width = "140" }
+        }
+    }).Render()
+<script>
+    ej.pivotview.PivotView.Inject(ej.pivotview.FlatLayout);
+</script>
+{% endhighlight %}
+{% endtabs %}
