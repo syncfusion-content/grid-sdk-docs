@@ -2,9 +2,8 @@
 layout: post
 title: Display values in HH:MM:SS format in Vue Pivot Table | Syncfusion
 description: Step-by-step example showing how to display values in HH:MM:SS time format in the Vue Pivot Table by overriding the aggregated value via aggregateCellInfo.
-platform: ej2-vue
+platform: grid-sdk
 control: Display string value to pivot table values 
-publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---

@@ -12,8 +12,6 @@ documentation: ug
 
 To calculate the aggregate value with your own aggregate functions, use the custom aggregate option. To use custom aggregation, specify the [`type`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.TreeGrid.TreeGridAggregateColumn.html#Syncfusion_EJ2_TreeGrid_TreeGridAggregateColumn_Type) as **Custom**, and provide the custom aggregate function in the [`customAggregate`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.TreeGrid.TreeGridAggregateColumn.html#Syncfusion_EJ2_TreeGrid_TreeGridAggregateColumn_CustomAggregate) property.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-core/tree-grid/aggregates/custom-Aggregate/tagHelper %}
@@ -22,18 +20,6 @@ To calculate the aggregate value with your own aggregate functions, use the cust
 {% include code-snippet/grid-sdk/asp-net-core/tree-grid/aggregates/custom-Aggregate/customAggregate.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/tree-grid/aggregates/custom-Aggregate/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="CustomAggregate.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/tree-grid/aggregates/custom-Aggregate/customAggregate.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 
 

@@ -10,13 +10,12 @@ domainurl: https://help.syncfusion.com/grid-sdk
 
 # Immutable Mode in TypeScript TreeGrid
 
-The immutable mode optimizes the Tree Grid re-rendering performance by using the object reference and [`deep compare`](https://dmitripavlutin.com/how-to-compare-objects-in-javascript#4-deep-equality) concept. When performing the Tree Grid actions, it will only re-render the modified or newly added rows and prevent the re-rendering of the unchanged rows.
+The immutable mode optimizes the Tree Grid re-rendering performance by using the object reference and deep compare concept. When performing the Tree Grid actions, it will only re-render the modified or newly added rows and prevent the re-rendering of the unchanged rows.
 
-To enable this feature, you have to set the [`enableImmutableMode`](../api/treegrid#enableimmutablemode) property as **true**.
+To enable this feature, you have to set the [`enableImmutableMode`](https://ej2.syncfusion.com/documentation/api/treegrid#enableimmutablemode) property as **true**.
 
->* This feature uses the primary key value for data comparison. So, you need to provide the [`isPrimaryKey`](../api/treegrid/column#isprimarykey) column.
+>* This feature uses the primary key value for data comparison. So, you need to provide the [`isPrimaryKey`](https://ej2.syncfusion.com/documentation/api/treegrid/column#isprimarykey) column.
 
-{% if page.publishingplatform == "typescript" %}
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -29,19 +28,6 @@ To enable this feature, you have to set the [`enableImmutableMode`](../api/treeg
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/treegrid/immutable-cs1" %}
 
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/treegrid/immutable-cs1/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/treegrid/immutable-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/treegrid/immutable-cs1" %}
-{% endif %}
 
 ## Limitations
 

@@ -3,7 +3,7 @@ layout: post
 title: Globalization in Vue Pivot Table | Syncfusion
 description: Learn how the Vue Pivot Table supports internationalization with CLDR data for number, date, and time formatting and culture-specific localization.
 control: Globalization and localization 
-platform: ej2-vue
+platform: grid-sdk
 documentation: ug
 domainurl: ##DomainURL##
 ---

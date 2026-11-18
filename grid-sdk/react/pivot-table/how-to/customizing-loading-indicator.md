@@ -3,7 +3,7 @@ layout: post
 title: How to customize the Pivot Table loading indicator | Syncfusion
 description: Step-by-step example showing how to customize the loading indicator in the React Pivot Table using the spinnerTemplate property.
 control: Pivot Table
-platform: ej2-react
+platform: grid-sdk
 documentation: ug
 domainurl: ##DomainURL##
 ---

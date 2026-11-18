@@ -3,7 +3,7 @@ layout: post
 title: Overview of Vue Pivot Table | Syncfusion
 description: Explore the Vue Pivot Table overview and feature matrix for data analysis, data sources, layouts, performance, exporting, accessibility, and AI integration.
 control: Pivot Table
-platform: ej2-vue
+platform: grid-sdk
 documentation: ug
 domainurl: ##DomainURL##
 ---
@@ -138,7 +138,7 @@ Editing changes the underlying raw records and is available only for relational 
 | Feature | Availability | Applies to | Learn more |
 | --- | --- | --- | --- |
 | Browser state persistence | Configurable | Relational and OLAP | [State persistence](./state-persistence) |
-| Localization | Configurable | Relational and OLAP | [Globalization and localization](./globalization-and-localization) |
+| Localization | Configurable | Relational and OLAP | [Globalization and localization](./globalization-and-localization#localization) |
 | Culture-aware number and date formatting | Configurable | Relational and OLAP | [Globalization and localization](./globalization-and-localization) |
 | Right-to-left rendering | Configurable | Relational and OLAP | [Right-to-left support](./globalization-and-localization#right-to-left-rtl) |
 

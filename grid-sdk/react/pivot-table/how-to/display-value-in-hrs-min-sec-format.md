@@ -2,7 +2,7 @@
 layout: post
 title: How to display values in HH:MM:SS in Pivot Table | Syncfusion
 description: Step-by-step example showing how to display numeric values as a custom time string in value cells of the React Pivot Table using the aggregateCellInfo event.
-platform: ej2-react
+platform: grid-sdk
 control: Pivot Table
 documentation: ug
 domainurl: ##DomainURL##

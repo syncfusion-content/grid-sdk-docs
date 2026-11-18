@@ -20,8 +20,6 @@ The number of records displayed in the TreeGrid is determined implicitly by heig
 
 Expand and Collapse state of any child record will be persisted.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-core/tree-grid/virtual/rowvirtual/tagHelper %}
@@ -30,18 +28,6 @@ Expand and Collapse state of any child record will be persisted.
 {% include code-snippet/grid-sdk/asp-net-core/tree-grid/virtual/rowvirtual/rowvirtual.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/tree-grid/virtual/rowvirtual/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Rowvirtual.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/tree-grid/virtual/rowvirtual/rowvirtual.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 ### Limitations 
 
@@ -74,8 +60,6 @@ Column virtualization allows you to virtualize columns. It will render column on
 
 To setup the column virtualization, set the [`EnableVirtualization`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.TreeGrid.TreeGrid.html#Syncfusion_EJ2_TreeGrid_TreeGrid_EnableVirtualization) and [`EnableColumnVirtualization`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.TreeGrid.TreeGrid.html#Syncfusion_EJ2_TreeGrid_TreeGrid_EnableColumnVirtualization) properties as `true`.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-core/tree-grid/virtual/columnvirtual/tagHelper %}
@@ -84,18 +68,6 @@ To setup the column virtualization, set the [`EnableVirtualization`](https://hel
 {% include code-snippet/grid-sdk/asp-net-core/tree-grid/virtual/columnvirtual/columnvirtual.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/tree-grid/virtual/columnvirtual/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Columnvirtual.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/tree-grid/virtual/columnvirtual/columnvirtual.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 
 

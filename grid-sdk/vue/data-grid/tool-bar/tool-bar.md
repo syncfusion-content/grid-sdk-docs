@@ -94,6 +94,6 @@ The following example demonstrates how to change the background color of the `Ad
 
 ## See Also
 
-* [Toolbar Component](../../toolbar/getting-started)
+* [Toolbar Component](https://ej2.syncfusion.com/vue/documentation/toolbar/getting-started)
 * [How to apply overflowMode to grid toolbar in Vue Grid](https://www.syncfusion.com/forums/157193/how-to-apply-overflowmode-to-grid-toolbar-in-vue-grid)
 * [How to show the  toolbar in both top and bottom of the Vue Grid](https://www.syncfusion.com/forums/163079/how-to-show-the-toolbar-in-both-top-and-bottom-of-the-vue-grid)

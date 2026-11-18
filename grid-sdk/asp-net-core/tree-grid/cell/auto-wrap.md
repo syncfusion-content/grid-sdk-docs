@@ -13,8 +13,6 @@ The auto wrap allows the cell content of the treegrid to wrap to the next line w
 
 N> When a column width is not specified, then auto wrap of columns will be adjusted with respect to the treegrid's width.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-core/tree-grid/cell/auto-wrap/tagHelper %}
@@ -23,18 +21,6 @@ N> When a column width is not specified, then auto wrap of columns will be adjus
 {% include code-snippet/grid-sdk/asp-net-core/tree-grid/cell/auto-wrap/autoWrap.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/tree-grid/cell/auto-wrap/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="AutoWrap.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/tree-grid/cell/auto-wrap/autoWrap.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 
 

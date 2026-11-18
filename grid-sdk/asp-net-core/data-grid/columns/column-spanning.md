@@ -4,7 +4,6 @@ title: Column Spanning in Syncfusion ASP.NET Core Grid
 description: Learn here all about Column Spanning in Syncfusion ASP.NET Core Grid of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Column Spanning
-publishingplatform: grid-sdk
 documentation: ug
 ---
 

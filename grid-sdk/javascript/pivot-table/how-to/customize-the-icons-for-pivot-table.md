@@ -1,15 +1,14 @@
 ---
 layout: post
 title: Customize the icons for pivot table in Javascript | Syncfusion
-description: Learn here all about Customize the icons for pivot table in Syncfusion ##Platform_Name## Pivot Table component of Syncfusion Essential JS 2 and more.
-platform: ej2-javascript
+description: Learn here all about Customize the icons for pivot table in Syncfusion JavaScript Pivot Table component of Syncfusion Essential JS 2 and more.
+platform: grid-sdk
 control: Customize the icons for pivot table 
-publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Customize the icons within the ##Platform_Name## Pivot Table component
+# Customize the icons within the JavaScript Pivot Table component
 
 The Typescript Pivot Table component supports the customization of various icons across its interface. This includes icons for the field list, expand/collapse actions, and other interactive elements. You can customize these icons by overriding the default CSS classes with custom Unicode values.
 
@@ -36,20 +35,6 @@ The Unicode value `'\e337'` represents a specific icon from the [Syncfusion icon
 
 The following sample demonstrates a pivot table rendered with customized field list icon:
 
-{% if page.publishingplatform == "typescript" %}
-
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/icon-customize-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/pivot-table/icon-customize-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/pivot-table/icon-customize-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -61,4 +46,3 @@ The following sample demonstrates a pivot table rendered with customized field l
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/pivot-table/icon-customize-cs1" %}
-{% endif %}

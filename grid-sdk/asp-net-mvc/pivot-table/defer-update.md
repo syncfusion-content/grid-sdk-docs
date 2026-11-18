@@ -4,7 +4,6 @@ title: Defer Update in ASP.NET MVC Pivot Table | Syncfusion
 description: Learn how the ASP.NET MVC Pivot Table defers report rendering until the user clicks Apply, improving performance during drag-drop and filter operations.
 platform: grid-sdk
 control: Defer Update
-publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 

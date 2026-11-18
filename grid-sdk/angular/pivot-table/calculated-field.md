@@ -3,7 +3,7 @@ layout: post
 title: Calculated field in Angular Pivot Table | Syncfusion
 description: Learn how the Angular Pivot Table calculates new value fields at runtime using custom formulas, arithmetic operators, and the calculatedFieldSettings property.
 control: Pivot Table
-platform: ej2-angular
+platform: grid-sdk
 documentation: ug
 domainurl: ##DomainURL##
 ---

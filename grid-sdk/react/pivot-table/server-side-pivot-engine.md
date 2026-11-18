@@ -2,7 +2,7 @@
 layout: post
 title: Server-side pivot engine in React Pivot Table | Syncfusion
 description: Learn how the React Pivot Table offloads aggregation, filtering, sorting, and grouping to a server-side engine for processing very large datasets.
-platform: ej2-react
+platform: grid-sdk
 control: Pivot Table
 documentation: ug
 domainurl: ##DomainURL##

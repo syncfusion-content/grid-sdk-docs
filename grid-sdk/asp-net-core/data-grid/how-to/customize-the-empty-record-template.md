@@ -1,10 +1,9 @@
 ---
 layout: post
-title: Customize the Empty Record Template in Syncfusion ASP.NET Core Grid Component
+title: Customize Empty Record Templates | Syncfusion
 description: Learn here all about Customize the Empty Record Template in Syncfusion ASP.NET Core Grid component of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Customize the Empty Record Template
-publishingplatform: grid-sdk
 documentation: ug
 ---
 

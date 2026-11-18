@@ -3,7 +3,7 @@ layout: post
 title: Conditional Formatting in Vue Pivot Table | Syncfusion
 description: Learn how the Vue Pivot Table applies conditional formatting to value cells via the dialog or conditionalFormatSettings for all or specific fields.
 control: Conditional formatting 
-platform: ej2-vue
+platform: grid-sdk
 documentation: ug
 domainurl: ##DomainURL##
 ---

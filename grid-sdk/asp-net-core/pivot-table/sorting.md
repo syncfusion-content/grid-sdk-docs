@@ -4,7 +4,6 @@ title: Sorting in ASP.NET Core Pivot Table | Syncfusion
 description: Learn how the ASP.NET Core Pivot Table sorts field members and aggregated values via enableSorting, the e-sortsettings property, or sort icons in the UI.
 platform: grid-sdk
 control: Sorting
-publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 

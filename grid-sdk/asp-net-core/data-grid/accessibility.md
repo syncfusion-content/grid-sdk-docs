@@ -4,7 +4,6 @@ title: Accessibility in Syncfusion ASP.NET Core Grid Component
 description: Learn here all about Accessibility in Syncfusion ASP.NET Core Grid component of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Accessibility
-publishingplatform: grid-sdk
 documentation: ug
 ---
 
@@ -16,14 +15,14 @@ The accessibility compliance for the Grid component is outlined below.
 
 | Accessibility Criteria | Compatibility |
 | -- | -- |
-| [WCAG 2.2 Support](../common/accessibility#accessibility-standards) | AA |
-| [Section 508 Support](../common/accessibility#accessibility-standards) | <img src="https://cdn.syncfusion.com/content/images/documentation/partial.png" alt="Intermediate"> |
-| [Screen Reader Support](../common/accessibility#screen-reader-support) | <img src="https://cdn.syncfusion.com/content/images/landing-page/yes.png" alt="Yes">  |
-| [Right-To-Left Support](../common/accessibility#right-to-left-support) | <img src="https://cdn.syncfusion.com/content/images/landing-page/yes.png" alt="Yes"> |
-| [Color Contrast](../common/accessibility#color-contrast) | <img src="https://cdn.syncfusion.com/content/images/landing-page/yes.png" alt="Yes"> |
-| [Mobile Device Support](../common/accessibility#mobile-device-support) | <img src="https://cdn.syncfusion.com/content/images/landing-page/yes.png" alt="Yes"> |
-| [Keyboard Navigation Support](../common/accessibility#keyboard-navigation-support) |<img src="https://cdn.syncfusion.com/content/images/documentation/partial.png" alt="Intermediate"> |
-| [Accessibility Checker Validation](../common/accessibility#ensuring-accessibility) | <img src="https://cdn.syncfusion.com/content/images/documentation/partial.png" alt="Intermediate"> |
+| [WCAG 2.2 Support](https://ej2.syncfusion.com/aspnetcore/documentation/common/accessibility#accessibility-standards) | AA |
+| [Section 508 Support](https://ej2.syncfusion.com/aspnetcore/documentation/common/accessibility#accessibility-standards) | <img src="https://cdn.syncfusion.com/content/images/documentation/partial.png" alt="Intermediate"> |
+| [Screen Reader Support](https://ej2.syncfusion.com/aspnetcore/documentation/common/accessibility#screen-reader-support) | <img src="https://cdn.syncfusion.com/content/images/landing-page/yes.png" alt="Yes">  |
+| [Right-To-Left Support](https://ej2.syncfusion.com/aspnetcore/documentation/common/accessibility#right-to-left-support) | <img src="https://cdn.syncfusion.com/content/images/landing-page/yes.png" alt="Yes"> |
+| [Color Contrast](https://ej2.syncfusion.com/aspnetcore/documentation/common/accessibility#color-contrast) | <img src="https://cdn.syncfusion.com/content/images/landing-page/yes.png" alt="Yes"> |
+| [Mobile Device Support](https://ej2.syncfusion.com/aspnetcore/documentation/common/accessibility#mobile-device-support) | <img src="https://cdn.syncfusion.com/content/images/landing-page/yes.png" alt="Yes"> |
+| [Keyboard Navigation Support](https://ej2.syncfusion.com/aspnetcore/documentation/common/accessibility#keyboard-navigation-support) |<img src="https://cdn.syncfusion.com/content/images/documentation/partial.png" alt="Intermediate"> |
+| [Accessibility Checker Validation](https://ej2.syncfusion.com/aspnetcore/documentation/common/accessibility#ensuring-accessibility) | <img src="https://cdn.syncfusion.com/content/images/documentation/partial.png" alt="Intermediate"> |
 
 <style>
     .post .post-content img {
@@ -211,19 +210,9 @@ The Grid component followed the [keyboard interaction](https://www.w3.org/WAI/AR
 
 The Syncfusion ASP.NET Core Grid provides flexibility to prevent the default key action behavior based on your requirements. This enables you to intercept and customize the behavior when specific keys are pressed within a web application
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 To prevent the default key action behavior in the grid, you can utilize the [keyPressed](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_KeyPressed) event. This event is triggered for every key press, allowing you to customize the behavior based on the pressed key.
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-To prevent the default key action behavior in the grid, you can utilize the [KeyPressed](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_KeyPressed) event. This event is triggered for every key press, allowing you to customize the behavior based on the pressed key.
-
-{% endif %}
-
 The following example demonstrates how to prevent the default behavior of the **"ENTER"** key using the `keyPressed` event. 
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -234,31 +223,11 @@ The following example demonstrates how to prevent the default behavior of the **
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/grid/accessibility/prevent-key/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Accessibility.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/grid/accessibility/prevent-key/prevent-key.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
 ### Custom shortcut keys to perform grid actions
 
 The Syncfusion ASP.NET Core Grid component enables you to enhance the usability of keyboard shortcuts for various grid actions and navigation. In addition to the built-in keyboard navigation capabilities, you can implement custom keyboard shortcuts to execute specific actions.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 To achieve this, you can utilize the [keyPressed](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_KeyPressed) event of the grid. This event is triggered for every key press, allowing you to customize the behavior based on the pressed key.
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-To achieve this, you can utilize the [keyPressed](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_KeyPressed) event of the grid. This event is triggered for every key press, allowing you to customize the behavior based on the pressed key.
-
-{% endif %}
 
 The following example demonstrates how to perform grid actions using shortcut keys through the `keyPressed` event. Within the event, define the following custom shortcuts to perform various grid actions:
 
@@ -278,8 +247,6 @@ And prevented the default actions associated with the following keyboard shortcu
 
 You can add more custom shortcuts and actions as needed to enhance the functionality of your Syncfusion ASP.NET Core Grid component.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-core/grid/accessibility/shortcut-key/tagHelper %}
@@ -289,25 +256,11 @@ You can add more custom shortcuts and actions as needed to enhance the functiona
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/grid/accessibility/shortcut-key/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Accessibility.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/grid/accessibility/shortcut-key/shortcut-key.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
 ## Ensuring accessibility
 
 The Grid component's accessibility levels are ensured through an [accessibility-checker](https://www.npmjs.com/package/accessibility-checker) and [axe-core](https://www.npmjs.com/package/axe-core) software tools during automated testing.
 
 The accessibility compliance of the Grid component is shown in the following sample. Open the [sample](https://ej2.syncfusion.com/accessibility/grid.html) in a new window to evaluate the accessibility of the Grid component with accessibility tools.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -318,20 +271,8 @@ The accessibility compliance of the Grid component is shown in the following sam
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/grid/accessibility/ensuring-accessibility/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Accessibility.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/grid/accessibility/ensuring-accessibility/ensuring-accessibility.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
 {% previewsample "https://ej2.syncfusion.com/accessibility/grid.html" %}
 
 ## See also
 
-* [Accessibility in Syncfusion<sup style="font-size:70%">&reg;</sup> Grid control](../common/accessibility)
+* [Accessibility in Syncfusion<sup style="font-size:70%">&reg;</sup> Grid control](https://ej2.syncfusion.com/aspnetcore/documentation/common/accessibility)

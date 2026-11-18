@@ -2,7 +2,7 @@
 layout: post
 title: How to customize loading indicator in Angular Pivot Table | Syncfusion
 description: Step-by-step example showing how to customize the loading indicator in the Angular Pivot Table, with code snippets and property references.
-platform: ej2-angular
+platform: grid-sdk
 control: Customizing loading indicator 
 documentation: ug
 domainurl: ##DomainURL##

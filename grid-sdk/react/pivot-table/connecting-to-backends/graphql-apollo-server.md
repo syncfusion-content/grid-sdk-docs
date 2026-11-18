@@ -3,7 +3,7 @@ layout: post
 title: Apollo GraphQL backend in React Pivot Table | Syncfusion
 description: Learn how the React Pivot Table connects to a GraphQL backend through Apollo Server and the GraphQLAdaptor for selective data fetching.
 control: Pivot Table
-platform: ej2-react
+platform: grid-sdk
 documentation: ug
 domainurl: ##DomainURL##
 ---
