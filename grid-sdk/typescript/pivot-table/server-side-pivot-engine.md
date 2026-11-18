@@ -660,6 +660,400 @@ let pivotObj: PivotView = new PivotView({
 
 ![Server-Side Pivot Engine using Dynamic Objects](./images/server-side-with-dynamic-object.png)
 
+### Custom Data Server Configuration
+
+The Custom Data Server is an optional backend configuration layer in the ASP.NET Core **PivotController** application. It lets you register one or more file-based or database-based data sources as indexes, and control how the server loads, caches, secures, and serves them. Configure it in **PivotController/appsettings.json** or by using the configuration and index APIs of the controller. The Pivot Table continues to use server mode and the `/api/pivot/post` endpoint; it does not connect directly to the configured data source.
+
+#### Architecture and request flow
+
+1. The Pivot Table posts its report definition and the requested action to `/api/pivot/post`.
+2. The controller selects the index from the `index` value in the request body, the `index` query-string parameter, or `DataServer:DefaultIndexId`, in that order.
+3. `IndexManager` loads the selected index from its configured JSON file, CSV file, or database. It also maintains the index status and the server-side data and engine-response caches.
+4. For JSON and CSV indexes, the controller applies the configured field type mappings, and then passes the report and the indexed data to the server-side Pivot Engine.
+5. The controller returns the Pivot Engine response to the Pivot Table. The response contains the processed result, not the complete source data.
+6. When the application starts, it reads the following sections of **appsettings.json**:
+   - `DataServer`
+   - `General`
+   - `DataStorage`
+   - `DatabaseQuery`
+   - `Https`
+   - `Security`
+   - `ReportSharingOptions`
+
+#### Configure an index
+
+An index tells the controller which data source to load for the Pivot Table. Add the data source details to `DataServer:Indexes` in **appsettings.json**. All enabled indexes are loaded when the application starts.
+
+##### Configure a JSON index
+
+```json
+{
+  "DataServer": {
+    "DefaultIndexId": "Sales-Json",
+    "Indexes": [
+      {
+        "Index": "Sales-Json",
+        "Name": "Sales analysis",
+        "SourceType": "Json",
+        "SourcePath": "sales-analysis.json",
+        "Enabled": true,
+        "AutoReload": true,
+        "ReloadIntervalMinutes": 20,
+        "MappingEnabled": false,
+        "FieldMappings": []
+      }
+    ]
+  }
+}
+```
+
+The JSON file must contain an array of objects, with each object representing one record. A relative `SourcePath` is resolved against the folder set in `General:DataFolder`. In the sample application, this is **PivotController/DataSource**.
+
+Each index name must be unique, ignoring uppercase and lowercase differences. An index name can contain up to 64 characters, and only letters, numbers, periods (`.`), underscores (`_`), and hyphens (`-`).
+
+##### Common index properties
+
+These properties apply to all supported source types:
+
+| Property | Purpose and behavior |
+|---|---|
+| `DefaultIndexId` | The index used to process a request when the request does not specify an index. Set it to the identifier of an enabled index. Otherwise, requests without an index return HTTP 404 (not found) or HTTP 423 (disabled). This property is set once under `DataServer`, not for each index. |
+| `Indexes` | Collection of data source index definitions. |
+| `Index` | Unique identifier used by Pivot Table requests and the index management APIs. |
+| `Name` | A readable label that helps you recognize the index. It does not select the data source. |
+| `SourceType` | Identifies the data source. Use `Json` for JSON files, `Csv` for CSV files, or `Database` for a database. For a database index, use `DatabaseType` to choose the database. |
+| `SourcePath` | File path of a JSON or CSV source. Required for these source types. |
+| `Enabled` | Controls whether the index can serve requests. A disabled index returns HTTP 423 when requested. **Default:** `true`. |
+| `AutoReload` | Set to `true` to reload the data source automatically at the interval set in `ReloadIntervalMinutes`. **Default:** `false`. |
+| `ReloadIntervalMinutes` | Time, in minutes, between scheduled reloads. Must be greater than `0` when `AutoReload` is `true`. |
+| `MappingEnabled` | Applies to JSON and CSV indexes. Field types are detected automatically by default. Set to `true` to use the types defined in `FieldMappings`. |
+| `FieldMappings` | Optional field names and data types for JSON and CSV indexes. See [Field Mapping](#field-mapping). |
+
+##### Configure a CSV index
+
+For a CSV index, set `SourceType` to `Csv`. The CSV file must contain a header row. Set the parsing options to match the file. Add an object like the following to the `Indexes` array:
+
+```json
+{
+  "Index": "Data-Csv",
+  "Name": "Data CSV",
+  "SourceType": "Csv",
+  "SourcePath": "data.csv",
+  "CsvDelimiter": ";",
+  "CsvDecimalSeparator": "Comma",
+  "CsvThousandsSeparator": "Dot",
+  "AutoReload": false,
+  "ReloadIntervalMinutes": 1,
+  "Enabled": true
+}
+```
+
+| CSV property | Purpose and accepted values |
+|---|---|
+| `CsvDelimiter` | Character between columns, such as `,`, `;`, or a vertical bar. **Default:** `,`. |
+| `CsvDecimalSeparator` | Decimal character. Use `Dot` (or `.`) or `Comma` (or `,`). **Default:** `Dot`. |
+| `CsvThousandsSeparator` | Digit grouping character. Use `Comma` (or `,`), `Dot` (or `.`), or `Space` (or a space character). **Default:** `Comma`. |
+
+##### Configure a database index
+
+To connect a database, add its index definition to the `DataServer:Indexes` array. Set `SourceType` to `Database`, choose the database with `DatabaseType`, and provide the connection details and a read-only query. The `DatabaseType` values are as follows:
+
+| Database | `DatabaseType` value |
+|---|---|
+| MySQL | `MySql` |
+| MariaDB | `MariaDB` |
+| Microsoft SQL Server | `MSSQL` |
+| PostgreSQL | `PostgreSQL` |
+| Oracle | `Oracle` |
+| SQLite | `Sqlite` |
+
+> The sample controller includes providers for PostgreSQL and SQLite only. The other database types are valid configuration values, but they need a provider package and implementation to be registered before they can connect. Without one, the connection test returns HTTP 501.
+
+The following example adds a PostgreSQL index. Replace the connection string placeholders with values for your database:
+
+```json
+{
+  "Index": "Sales-Db",
+  "Name": "PostgreSQL sales database",
+  "SourceType": "Database",
+  "DatabaseType": "PostgreSQL",
+  "ConnectionString": "Host=localhost;Port=5432;Database=salesdb;Username=YOUR_USER;Password=YOUR_PASSWORD",
+  "Query": "SELECT * FROM salesdata",
+  "ReloadIntervalMinutes": 1,
+  "AutoReload": false,
+  "Enabled": true
+}
+```
+
+| Property | Purpose and behavior |
+|---|---|
+| `SourceType` | Set to `Database` for every database index. |
+| `DatabaseType` | Selects the database provider. Required for database indexes. |
+| `ConnectionString` | Connection details for the database. If both `ConnectionString` and `ConnectionStringName` are set, `ConnectionString` takes precedence. Keep real credentials out of source control. |
+| `ConnectionStringName` | Name of a connection string in the top-level `ConnectionStrings` section of **appsettings.json**. Use it instead of placing the connection string in the index. Either `ConnectionString` or `ConnectionStringName` is required. |
+| `Query` | A single read-only query that selects the data to load. It must start with `SELECT` or `WITH`. The controller rejects queries that contain a semicolon or the keywords `INSERT`, `UPDATE`, `DELETE`, `MERGE`, `CREATE`, `ALTER`, `DROP`, `GRANT`, `TRUNCATE`, or `REPLACE`. |
+
+Connection string rules vary by database provider. If a password contains special characters, follow the rules of the selected provider and test the connection.
+
+To test a database index without loading its data, call `POST /api/indexes/{index}/test-connection`. To test settings before creating an index, call `POST /api/indexes/test-connection` with `databaseType`, `connectionString` (or `connectionStringName`), and `query` in the request body.
+
+#### Field Mapping
+
+Field type mapping is supported only for JSON and CSV indexes. The controller detects field types when it loads a source. If a detected type is not appropriate for Pivot Table operations, set the following properties in the index definition:
+
+```json
+{
+  "MappingEnabled": true,
+  "FieldMappings": [
+    { "FieldName": "ProCost", "Type": "Number" },
+    { "FieldName": "Date", "Type": "Date" },
+    { "FieldName": "Sector", "Type": "String" }
+  ]
+}
+```
+
+The supported mapping types are `Number`, `Date`, and `String`. Each `FieldName` must exist in the JSON or CSV source. The controller applies the mappings to every Pivot Table request for the index, so they affect operations such as aggregation, sorting, and grouping. The Pivot Table does not need to repeat the mappings.
+
+Use the following APIs to inspect and change mappings:
+
+| Endpoint | Purpose |
+|---|---|
+| `GET /api/indexes/{index}/fields` | Lists each field with its detected, mapped, and effective type. |
+| `PUT /api/indexes/{index}/fields/{fieldName}` | Sets the type of one field. The request body is `{ "type": "Number" }`, `{ "type": "String" }`, or `{ "type": "Date" }`. |
+| `DELETE /api/indexes/{index}/fields/{fieldName}` | Removes the mapping so the field uses its detected type. |
+
+#### Connect the Pivot Table and verify the index
+
+1. Save the settings and start the **PivotController** application. The controller loads the enabled indexes at startup.
+2. Call `GET /api/indexes`. The response reports each index's status (`Ready`, `Refreshing`, `Failed`, or `Disabled`), row count, load time, and last error. Resolve a `Failed` status before connecting the Pivot Table.
+3. Point the Pivot Table to the server endpoint. In this example, `DataServer:DefaultIndexId` is `Sales-Json`, which loads **sales-analysis.json**. Because the request does not specify another index, the controller uses `Sales-Json`. Set the report fields to names that exist in that file. For example, use `Sector` in the [`rows`](https://ej2.syncfusion.com/documentation/api/pivotview/datasourcesettingsmodel#rows) axis, `EnerType` in the [`columns`](https://ej2.syncfusion.com/documentation/api/pivotview/datasourcesettingsmodel#columns) axis, and `PowUnits` and `ProCost` in the [`values`](https://ej2.syncfusion.com/documentation/api/pivotview/datasourcesettingsmodel#values) axis of [`dataSourceSettings`](https://ej2.syncfusion.com/documentation/api/pivotview/datasourcesettings):
+
+```ts
+import { PivotView } from '@syncfusion/ej2-pivotview';
+
+let pivotObj: PivotView = new PivotView({
+    dataSourceSettings: {
+        url: 'http://localhost:6885/api/pivot/post',
+        mode: 'Server',
+        rows: [{ name: 'Sector' }],
+        columns: [{ name: 'EnerType', caption: 'Energy Type' }],
+        values: [
+            { name: 'PowUnits', caption: 'Power Units' },
+            { name: 'ProCost', caption: 'Production Cost' }
+        ]
+    }
+});
+pivotObj.appendTo('#PivotTable');
+```
+
+> The URL uses the port set in `General:Port` (`6885` in the sample). If you enable HTTPS, use `https://` in the URL. If you change the port, update the URL.
+
+To select a different configured index, add its identifier to the endpoint URL, for example `http://localhost:6885/api/pivot/post?index=Data-Csv`. Use field names that exist in that index for [`rows`](https://ej2.syncfusion.com/documentation/api/pivotview/datasourcesettingsmodel#rows), [`columns`](https://ej2.syncfusion.com/documentation/api/pivotview/datasourcesettingsmodel#columns), [`values`](https://ej2.syncfusion.com/documentation/api/pivotview/datasourcesettingsmodel#values), and filters. If the Pivot Table is hosted on a different origin, add that origin to `Security:CORS:AllowOrigin`. An unknown index returns HTTP 404 with the list of valid index identifiers.
+
+#### Manage indexes
+
+Use the following APIs to manage indexes at runtime. Index changes made through these APIs are persisted in **indexes.json** in the `General:DataFolder` folder.
+
+| Endpoint | Purpose |
+|---|---|
+| `GET /api/indexes` | Lists all indexes with their status. |
+| `GET /api/indexes/{index}` | Returns the status of one index. |
+| `POST /api/indexes` | Creates an index from an index definition in the request body. Returns HTTP 409 if the index already exists. |
+| `PUT /api/indexes/{index}` | Edits an index. Only the properties in the request body are changed. |
+| `POST /api/indexes/{index}/reload` | Reloads the data source immediately. |
+| `POST /api/indexes/{index}/enable` | Enables the index and loads its data. |
+| `POST /api/indexes/{index}/disable` | Disables the index. Requests for it return HTTP 423. |
+| `DELETE /api/indexes/{index}` | Deletes the index and its cached data. |
+
+#### Data Server Settings
+
+The following settings control how the server runs and handles data. Configure them in the matching section at the root of **PivotController/appsettings.json**.
+
+##### General Settings
+
+The `General` section controls the server port, log messages, and data folder. For example:
+
+```json
+{
+  "General": {
+    "Port": 6885,
+    "MinimumLogLevel": "Info",
+    "DataFolder": "DataSource"
+  }
+}
+```
+
+| Setting | What it does |
+|---|---|
+| `Port` | Port the server listens on. Use a value from `1` to `65535`. If you change the port, restart the server and update the port in the Pivot Table endpoint URL. |
+| `MinimumLogLevel` | Sets which server messages are written to the log. Choose `Info`, `Warn`, `Error`, or `Fatal`. A higher level writes fewer messages. A change made through the configuration API takes effect immediately. |
+| `DataFolder` | Folder used for data files and saved server settings. A relative path is based on the application folder, and the path must stay inside it. Changing it requires a restart. |
+
+The sample uses `DataFolder: "DataSource"`, so its data files are stored in **PivotController/DataSource**. You can read or update these settings with `GET` and `PUT /api/config/general`. A `PUT` request can include only the settings to change. Changes to the port and data folder need a restart; the log level does not.
+
+##### DataStorage Settings
+
+These settings control index loading, refresh behavior, and server-side caching:
+
+| Setting | What it does |
+|---|---|
+| `RetryAttempts` | Number of times the server retries after the first failed attempt to load an index. Set to `0` to disable retries. Valid values are `0` to `30`. **Default:** `3`. |
+| `CacheSizeLimit` | Maximum number of cached server responses for each index. When the limit is reached, the least recently used response is removed first. Set to `0` to disable caching. Changing it requires a restart. **Default:** `100`. |
+| `KeepDataOnRefresh` | When `true`, the previously loaded data stays available if a reload fails. Keeping old data while new data loads can use more RAM. **Default:** `true`. |
+| `MaxCacheItemSizeBytes` | Maximum size, in bytes, of the cached data of one index. Data larger than this value is not cached. Set to `0` for no limit. Changing it requires a restart. **Default:** `0`. |
+
+`RetryAttempts` and `KeepDataOnRefresh` take effect immediately when changed through `PUT /api/config/datastorage`. To see which indexes are currently cached, call `GET /api/config/datastorage/cache-stats`.
+
+##### DatabaseQuery Settings
+
+These settings control how long the Data Server waits for a database query. They apply only to indexes that use the `Database` source type.
+
+| Setting | What it does |
+|---|---|
+| `CommandTimeoutEnabled` | Enables the Data Server query time limit. When `false`, the timeout of the database driver is used. **Default:** `false`. |
+| `CommandTimeLimit` | Maximum time, in seconds, that the Data Server waits for a query when `CommandTimeoutEnabled` is `true`. When the limit is reached, the query is canceled and the index load reports an error. Set to `0` for no limit. Negative values are not allowed. **Default:** `150`. |
+
+For example:
+
+```json
+{
+  "DatabaseQuery": {
+    "CommandTimeoutEnabled": true,
+    "CommandTimeLimit": 150
+  }
+}
+```
+
+Changes made through `GET` or `PUT /api/config/databasequery` take effect on the next database query.
+
+##### HTTPS Settings
+
+The `Https` section controls whether the server accepts HTTPS connections and which certificate it uses. HTTPS is disabled by default. To enable it, set `Enabled` to `true` and configure exactly one certificate source: a PFX file, a PEM certificate and key pair, or a certificate from a certificate store. There is no separate certificate type property. The type is determined by the properties you set, so leave the other source properties empty.
+
+For example, this configuration uses a PFX certificate:
+
+```json
+{
+  "Https": {
+    "Enabled": true,
+    "PfxPath": "certificates/server.pfx",
+    "PfxPassword": "SET_A_SECRET",
+    "Protocols": "HTTP1_AND_HTTP2"
+  }
+}
+```
+
+| Setting | What it does |
+|---|---|
+| `Enabled` | Enables or disables HTTPS. **Default:** `false`. |
+| `PfxPath` | Path to the `.pfx` certificate file. |
+| `PfxPassword` | Password of the PFX file, if it requires one. Keep it secret. The HTTPS settings API does not return or save it. |
+| `PemCertPath` | Path to the PEM certificate file. Set it together with `PemKeyPath`. |
+| `PemKeyPath` | Path to the PEM file that contains the private key of the certificate. |
+| `Thumbprint` | Thumbprint used to find a certificate in the certificate store. Use either this or `SubjectName`. |
+| `SubjectName` | Subject name used to find a certificate in the certificate store, for example `CN=localhost`. Use either this or `Thumbprint`. |
+| `StoreLocation` | Certificate store location: `CurrentUser` or `LocalMachine`. **Default:** `CurrentUser`. |
+| `StoreName` | Name of the certificate store to search. **Default:** `My`. |
+| `Protocols` | Protocols accepted by the server: `HTTP1`, `HTTP2`, or `HTTP1_AND_HTTP2`. **Default:** `HTTP1_AND_HTTP2`. |
+
+For a PEM certificate, set `PemCertPath` and `PemKeyPath`. For a certificate store, set `Thumbprint` or `SubjectName`. Do not configure more than one certificate source.
+
+The certificate must be accessible to the server and include its private key. If the certificate cannot be used, the server starts with HTTP only and writes the reason to the console. Changes to the HTTPS settings require a restart. After enabling HTTPS, use `https://` and the configured port in the Pivot Table endpoint URL, and make sure the client trusts the certificate. You can read or update these settings with `GET` and `PUT /api/config/https`.
+
+##### Security Settings
+
+Use the `Security` section to protect API requests and to choose which websites can call the Data Server from a browser:
+
+```json
+{
+  "Security": {
+    "Authorization": {
+      "Enabled": true,
+      "Username": "YOUR_SERVER_USER",
+      "Password": "SET_A_SECRET"
+    },
+    "CORS": {
+      "AllowOrigin": "https://pivot.example.com"
+    }
+  }
+}
+```
+
+| Setting | What it does |
+|---|---|
+| `Authorization:Enabled` | Turns Basic Authentication on or off. When on, every request to an `/api` endpoint must include the configured username and password. **Default:** `false`. |
+| `Authorization:Username` / `Authorization:Password` | The credentials that the server checks. Required when authorization is enabled. Keep real credentials out of client-side code and source control. |
+| `CORS:AllowOrigin` | Website origins that browsers can use to send requests to the Data Server. Use `*` to allow any origin when Basic Authentication is off. When it is on, list specific origins separated by commas. `*` is not allowed with Basic Authentication, and the server does not start with an invalid combination. **Default:** `*`. |
+
+Enter each origin with its `http://` or `https://` scheme and host. Include the port if the website uses one, and do not include a page path. For example, use `https://pivot.example.com`, not `https://pivot.example.com/dashboard`.
+
+When `Authorization:Enabled` is `true`, each request must include an `Authorization` header that uses the `Basic` scheme. To add the header to Pivot Table requests, use the [`beforeServiceInvoke`](https://ej2.syncfusion.com/documentation/api/pivotview/beforeserviceinvokeeventargs) event as described in [Secure server requests with beforeServiceInvoke](#secure-server-requests-with-beforeserviceinvoke). That section uses a Bearer token example. The Data Server does not accept Bearer tokens, so use the `Basic` scheme instead:
+
+```ts
+beforeServiceInvoke: function (args: any) {
+    const credentials: string = getServerCredentials(); // "username:password", obtained securely at runtime
+    args.internalProperties = args.internalProperties || {};
+    args.internalProperties.headers = {
+        ...(args.internalProperties.headers || {}),
+        'Authorization': `Basic ${btoa(credentials)}`
+    };
+}
+```
+
+Do not hard-code server credentials in client-side code. Use HTTPS and a protected sign-in flow or a server-side proxy.
+
+You can read or update the authorization state and the allowed origins with `GET` and `PUT /api/config/security`. The username and password are configured only in the server settings, and the API never returns the password.
+
+##### Report Sharing Settings
+
+Report sharing lets applications save and retrieve Pivot Table reports through the Data Server. It is disabled by default. Configure it in the `ReportSharingOptions` section:
+
+```json
+{
+  "ReportSharingOptions": {
+    "EndpointEnabled": false,
+    "PathToFolder": "DataServer/reports",
+    "ReportExpirationTime": 0,
+    "MaxSizeOfFolder": 0,
+    "AutoDeletingEnabled": false
+  }
+}
+```
+
+| Setting | What it does |
+|---|---|
+| `EndpointEnabled` | Turns the report sharing endpoints on or off. When on, the server also saves the report settings sent with Pivot Table requests. When off, report sharing requests return HTTP 404. **Default:** `false`. |
+| `PathToFolder` | Folder where report files are saved. A relative path is based on `General:DataFolder`. An absolute path can also be used. Paths that contain `..` are rejected. With the sample `DataFolder` value of `DataSource`, the default resolves to **PivotController/DataSource/DataServer/reports**. Changing it requires a restart. **Default:** `DataServer/reports`. |
+| `ReportExpirationTime` | Number of minutes that reports are kept. Set to `0` to keep reports permanently. **Default:** `0`. |
+| `MaxSizeOfFolder` | Maximum total size of the report folder, in MB. Set to `0` for no limit. **Default:** `0`. |
+| `AutoDeletingEnabled` | Controls what happens when saving a report would exceed `MaxSizeOfFolder`. When `true`, the server deletes the oldest reports until there is room. If the new report still does not fit, it is not saved. When `false`, the new report is not saved. This setting does not affect expiration cleanup. **Default:** `false`. |
+
+When `EndpointEnabled` is `true`, the server saves the report configuration sent to `POST /api/pivot/post` automatically. The Pivot Table does not need to send a separate save request. Applications can use the following endpoints to manage saved reports:
+
+| Endpoint | Purpose |
+|---|---|
+| `POST /api/reportsharing/reports` | Saves a report. |
+| `GET /api/reportsharing/reports` | Lists saved reports. |
+| `GET /api/reportsharing/reports/{reportId}` | Retrieves a saved report. |
+| `DELETE /api/reportsharing/reports/{reportId}` | Deletes a saved report. |
+
+If `ReportExpirationTime` is greater than `0`, expired reports are removed automatically, regardless of `AutoDeletingEnabled`.
+
+##### Update Settings and Persistence
+
+Use the following endpoints to read or update the settings. A `PUT` request can include only the properties to change:
+
+| Endpoint | Settings |
+|---|---|
+| `GET/PUT /api/config/general` | Port, log level, and data folder. |
+| `GET/PUT /api/config/datastorage` | Retry, cache, and data retention settings. |
+| `GET/PUT /api/config/databasequery` | Database query timeout settings. |
+| `GET/PUT /api/config/security` | Authorization enabled state and allowed origins. Credentials are configured in the server settings, not through this API. |
+| `GET/PUT /api/config/https` | HTTPS listener and certificate settings. |
+| `GET/PUT /api/config/reportsharing` | Report sharing settings. |
+
+Changes made through these APIs are saved as JSON files in the `General:DataFolder` folder, for example **security.json**, **https.json**, and **reportsharing.json**. When such a file exists, its values override the matching values in **appsettings.json** at the next startup. Delete the file to configure the section from **appsettings.json** only.
+
 ### Controller Configuration
 
 #### Memory Cache
