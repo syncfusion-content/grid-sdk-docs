@@ -64,6 +64,7 @@ function dataBound() {
 }
 </script>
 {% endhighlight %}
+{% endtabs %}
 
 > * The level starts from `1`. A level of `0` collapses all the groups.
 > * Expanding by level works on the groups rendered in the current view. For large datasets, use [lazy load grouping](./lazy-load-grouping) instead.
