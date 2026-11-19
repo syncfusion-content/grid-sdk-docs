@@ -1,0 +1,16 @@
+var pivotTableObj = new ej.pivotview.PivotView({
+    dataSourceSettings: {
+        dataSource: pivotData,
+        drilledMembers: [{ name: 'Country', items: ['France'] }],
+        columns: [{ name: 'Year', caption: 'Production Year' }, { name: 'Quarter' }],
+        values: [
+            { name: 'Sold', caption: 'Units Sold' },
+            { name: 'Amount', caption: 'Sum of Amount', type: 'Sum' },
+            { name: 'Amount', caption: 'Average of Amount', type: 'Avg' }
+        ],
+        rows: [{ name: 'Country' }, { name: 'Products' }],
+        filters: []
+    },
+    height: 350
+});
+pivotTableObj.appendTo('#PivotTable');
