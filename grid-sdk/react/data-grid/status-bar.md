@@ -19,10 +19,16 @@ The Status Bar updates automatically when grid data, filtering, or selection cha
 Enable the Status Bar by setting `enableStatusBar` to **true** and configure built-in panels through `statusBarSettings.items`.
 
 {% tabs %}
-{% highlight tsx tabtitle="App.tsx" %}
+{% highlight js tabtitle="App.jsx" %}
+{% include code-snippet/grid-sdk/react/grid/status-bar-cs1/app/App.jsx %}
+{% endhighlight %}
+{% highlight ts tabtitle="App.tsx" %}
 {% include code-snippet/grid-sdk/react/grid/status-bar-cs1/app/App.tsx %}
 {% endhighlight %}
-{% highlight tsx tabtitle="datasource.tsx" %}
+{% highlight js tabtitle="datasource.jsx" %}
+{% include code-snippet/grid-sdk/react/grid/status-bar-cs1/app/datasource.jsx %}
+{% endhighlight %}
+{% highlight ts tabtitle="datasource.tsx" %}
 {% include code-snippet/grid-sdk/react/grid/status-bar-cs1/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
@@ -62,10 +68,16 @@ Each panel is registered using the configured `key`, which enables runtime acces
 The `SelectedCellAggregates` panel displays aggregate values for selected numeric cells. Enable cell selection, select multiple cells, and the Status Bar updates with values such as Sum, Average, Min, Max, or Count.
 
 {% tabs %}
-{% highlight tsx tabtitle="App.tsx" %}
+{% highlight js tabtitle="App.jsx" %}
+{% include code-snippet/grid-sdk/react/grid/status-bar-cs2/app/App.jsx %}
+{% endhighlight %}
+{% highlight ts tabtitle="App.tsx" %}
 {% include code-snippet/grid-sdk/react/grid/status-bar-cs2/app/App.tsx %}
 {% endhighlight %}
-{% highlight tsx tabtitle="datasource.tsx" %}
+{% highlight js tabtitle="datasource.jsx" %}
+{% include code-snippet/grid-sdk/react/grid/status-bar-cs2/app/datasource.jsx %}
+{% endhighlight %}
+{% highlight ts tabtitle="datasource.tsx" %}
 {% include code-snippet/grid-sdk/react/grid/status-bar-cs2/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
@@ -84,10 +96,16 @@ For example:
 - `85.25%`
 
 {% tabs %}
-{% highlight tsx tabtitle="App.tsx" %}
+{% highlight js tabtitle="App.jsx" %}
+{% include code-snippet/grid-sdk/react/grid/status-bar-cs3/app/App.jsx %}
+{% endhighlight %}
+{% highlight ts tabtitle="App.tsx" %}
 {% include code-snippet/grid-sdk/react/grid/status-bar-cs3/app/App.tsx %}
 {% endhighlight %}
-{% highlight tsx tabtitle="datasource.tsx" %}
+{% highlight js tabtitle="datasource.jsx" %}
+{% include code-snippet/grid-sdk/react/grid/status-bar-cs3/app/datasource.jsx %}
+{% endhighlight %}
+{% highlight ts tabtitle="datasource.tsx" %}
 {% include code-snippet/grid-sdk/react/grid/status-bar-cs3/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
@@ -99,10 +117,16 @@ For example:
 Create a custom Status Bar panel when you need to display application-specific information. Register the custom panel in `statusBarSettings.items` and render your own content in the template.
 
 {% tabs %}
-{% highlight tsx tabtitle="App.tsx" %}
+{% highlight js tabtitle="App.jsx" %}
+{% include code-snippet/grid-sdk/react/grid/status-bar-cs4/app/App.jsx %}
+{% endhighlight %}
+{% highlight ts tabtitle="App.tsx" %}
 {% include code-snippet/grid-sdk/react/grid/status-bar-cs4/app/App.tsx %}
 {% endhighlight %}
-{% highlight tsx tabtitle="datasource.tsx" %}
+{% highlight js tabtitle="datasource.jsx" %}
+{% include code-snippet/grid-sdk/react/grid/status-bar-cs4/app/datasource.jsx %}
+{% endhighlight %}
+{% highlight ts tabtitle="datasource.tsx" %}
 {% include code-snippet/grid-sdk/react/grid/status-bar-cs4/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
