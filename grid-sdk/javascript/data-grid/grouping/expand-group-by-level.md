@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Expand group by level in JavaScript Grid control | Syncfusion
-description: Learn how to expand grouped rows by level, expand specific groups using a callback, and keep group caption rows sticky in the Syncfusion JavaScript Grid control.
+description: Learn how to expand grouped rows by level, expand groups using a callback, and keep group captions sticky in the Syncfusion JavaScript Grid control.
 control: Expand group by level
 platform: grid-sdk
 documentation: ug

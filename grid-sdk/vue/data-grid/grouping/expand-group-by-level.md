@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Expand group by level in Vue Grid component | Syncfusion
-description: Learn how to expand grouped rows by level, expand specific groups using a callback, and keep group caption rows sticky in the Syncfusion Vue Grid component.
+description: Learn how to expand grouped rows by level, expand groups using a callback, and keep group captions sticky in the Syncfusion Vue Grid component.
 control: Expand group by level
 platform: grid-sdk
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Expand group by level in Angular Data Grid | Syncfusion
-description: Learn how to expand grouped rows by level, expand specific groups using a callback, and keep group caption rows sticky in the Syncfusion Angular Data Grid.
+description: Learn how to expand grouped rows by level, expand groups using a callback, and keep group captions sticky in the Syncfusion Angular Data Grid.
 control: Expand group by level
 platform: grid-sdk
 documentation: ug

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Expand group by level in ASP.NET Core Grid component | Syncfusion
-description: Learn how to expand grouped rows by level, expand specific groups using a callback, and keep group caption rows sticky in the Syncfusion ASP.NET Core Grid component.
+description: Learn how to expand grouped rows by level, expand groups using a callback, and keep group captions sticky in the Syncfusion ASP.NET Core Grid.
 control: Expand group by level
 platform: grid-sdk
 documentation: ug
@@ -60,4 +60,4 @@ The following example expands the first level of groups and keeps the caption ro
 {% endhighlight %}
 {% endtabs %}
 
-> The Grid must have a fixed [height](https://ej2.syncfusion.com/aspnetcore/documentation/api/grid#height) so that the content area is scrollable and the sticky caption row can be observed.
+> The Grid must have a fixed [height](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.Grid.html#Syncfusion_EJ2_Grids_Grid_Height) so that the content area is scrollable and the sticky caption row can be observed.
