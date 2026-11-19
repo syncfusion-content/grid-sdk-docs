@@ -385,5 +385,4 @@ The following example demonstrates setting the `gridLines` property based on cha
 
 ## See Also
 
-* [Is it possible to apply gradient color based on min and max value in Angular Grid?](https://www.syncfusion.com/forums/160346/is-it-possible-to-apply-gradient-color-based-on-min-and-max-value-in-angular-grid)
 * [How to customize the header cell styles using methods](columns/headers#using-methods)
