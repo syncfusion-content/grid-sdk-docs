@@ -211,6 +211,26 @@ The following screenshot represents the column resizing on the touch device.
 
 ![Touch interaction image](../images/column-resizing.jpg)
 
+## Resize columns using keyboard
+
+The Data Grid supports keyboard-based column resizing to improve accessibility and keyboard navigation. The width adjustment applied for each key press is controlled by the `resizeSettings.resizeStep` property.
+
+When a resize handle receives focus:
+
+- Press the <kbd>Alt + →</kbd> key to decrease the column width.
+- Press the <kbd>Alt + ←</kbd> key to increase the column width.
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/grid-sdk/javascript/grid/resize-keyboard/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/grid-sdk/javascript/grid/resize-keyboard/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/resize-keyboard" %}
+
 ## Resizing column externally
 
 Grid provides the ability to resize columns using an external button click. This can be achieved by changing the [width](../../api/grid/column#width) property of the column and refreshing the grid using the [refreshColumns](../../api/grid#refreshcolumns) method in the external button click function.

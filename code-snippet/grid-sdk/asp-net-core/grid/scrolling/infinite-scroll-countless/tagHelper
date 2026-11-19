@@ -1,0 +1,12 @@
+<ejs-grid id="grid" enableInfiniteScrolling="true" height="300">
+    <e-data-manager url="https://services.syncfusion.com/js/production/api/UrlDataSource" adaptor="UrlAdaptor"></e-data-manager>
+    <e-grid-pageSettings pageSize="50"></e-grid-pageSettings>
+    <e-grid-infiniteScrollSettings enableCountLessMode="true"></e-grid-infiniteScrollSettings>
+    <e-grid-columns>
+        <e-grid-column field="EmployeeID" headerText="Employee ID" textAlign="Right" width="100"></e-grid-column>
+        <e-grid-column field="Employees" headerText="Employee Name" width="120"></e-grid-column>
+        <e-grid-column field="Designation" headerText="Designation" width="100"></e-grid-column>
+        <e-grid-column field="Location" headerText="Location" width="100"></e-grid-column>
+        <e-grid-column field="CurrentSalary" headerText="Salary" format="C2" textAlign="Right" width="100"></e-grid-column>
+    </e-grid-columns>
+</ejs-grid>
