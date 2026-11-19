@@ -213,6 +213,8 @@ Master-details view allows you to search the data by using `SearchHelper.Search`
 {% endhighlight %}
 {% endtabs %}
 
+![WinUI DataGrid displays Searched Data](Search_images/winui-datagrid-search-data.png)
+
 ### Navigating cells based on search text in DetailsViewDataGrid
 
 You can navigate to the cells contains the SearchText using `SearchHelper.FindNext` and `SearchHelper.FindPrevious` methods in [ViewDefinition.DataGrid](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.GridViewDefinition.html#Syncfusion_UI_Xaml_DataGrid_GridViewDefinition_DataGrid).
@@ -225,8 +227,6 @@ You can navigate to the cells contains the SearchText using `SearchHelper.FindNe
 
 {% endhighlight %}
 {% endtabs %}
-
-![WinUI DataGrid displays Searched Data](Search_images/winui-datagrid-search-data.png)
 
 N> It is not possible to Navigate with the two DataGrid at a time.
 
@@ -269,7 +269,7 @@ this.dataGrid.SelectedIndex = recordIndex;
 
 Search highlights text only in cells that display a `TextBlock`. `GridComboBoxColumn` loads a `ContentControl` in display mode, so its cells are not searched by default. To search a `GridComboBoxColumn`, create a column and a renderer that display a `TextBlock`.
 
-**Step 1:** Derive from `GridComboBoxColumn` and set a new cell type. Set `UseBindingValue` to `true` so that the search compares the text with the displayed text instead of the underlying `SelectedValuePath` value.
+**Step 1:** Derive from `GridComboBoxColumn` and set a new cell type. 
 
 {% tabs %}
 {% highlight c# %}
@@ -278,7 +278,6 @@ public class ComboBoxColumnExt : GridComboBoxColumn
     public ComboBoxColumnExt()
     {
         SetCellType("ComboBoxExt");
-        UseBindingValue = true;
     }
 }
 {% endhighlight %}
@@ -290,36 +289,87 @@ public class ComboBoxColumnExt : GridComboBoxColumn
 {% highlight c# %}
 public class ComboBoxRendererExt : GridVirtualizingCellRenderer<TextBlock, SfComboBox>
 {
-    public override void OnInitializeDisplayElement(DataColumnBase dataColumn, TextBlock uiElement, object dataContext)
-    {
-        var column = dataColumn.GridColumn;
-        uiElement.SetBinding(TextBlock.TextProperty, column.DisplayBinding);
-        uiElement.VerticalAlignment = VerticalAlignment.Center;
-        uiElement.Margin = new Thickness(12, 0, 12, 0);
-    }
 
-    public override void OnInitializeEditElement(DataColumnBase dataColumn, SfComboBox uiElement, object dataContext)
+    public ComboBoxRendererExt()
     {
-        var column = (GridComboBoxColumn)dataColumn.GridColumn;
-        var source = (Binding)column.ValueBinding;
-
-        uiElement.SetBinding(SfComboBox.SelectedValueProperty,
-            new Binding { Path = source.Path, Mode = BindingMode.TwoWay, Converter = source.Converter });
-        uiElement.SetBinding(SfComboBox.ItemsSourceProperty,
-            new Binding { Path = new PropertyPath("ItemsSource"), Source = column });
-        uiElement.SetBinding(SfComboBox.DisplayMemberPathProperty,
-            new Binding { Path = new PropertyPath("DisplayMemberPath"), Source = column });
-        uiElement.SetBinding(SfComboBox.TextMemberPathProperty,
-            new Binding { Path = new PropertyPath("DisplayMemberPath"), Source = column });
-        uiElement.SetBinding(SfComboBox.SelectedValuePathProperty,
-            new Binding { Path = new PropertyPath("SelectedValuePath"), Source = column });
     }
 
     public override object GetControlValue()
     {
+
         if (!HasCurrentCellState)
             return null;
         return CurrentCellRendererElement.GetValue(IsInEditing ? SfComboBox.SelectedValueProperty : TextBlock.TextProperty);
+    }
+
+    // Creates the binding to the Edit-element
+
+    private void InitializeEditBinding(SfComboBox uiElement, GridColumn column)
+    {
+        var comboBoxColumn = (GridComboBoxColumn)column;
+        var source = comboBoxColumn.ValueBinding as Binding;
+
+        // Creates the bind element to the edit-element.
+        var bind = new Binding
+        {
+            Mode = BindingMode.TwoWay,
+            Path = source.Path,
+            
+        };
+
+        uiElement.SetBinding(ComboBox.SelectedValueProperty, bind);
+
+        // Binding the ItemSource to the GridComboBox.
+        var itemsSourceBinding = new Binding { Path = new PropertyPath("ItemsSource"), Mode = BindingMode.TwoWay, Source = comboBoxColumn };
+        uiElement.SetBinding(ComboBox.ItemsSourceProperty, itemsSourceBinding);
+        var displayMemberBinding = new Binding { Path = new PropertyPath("DisplayMemberPath"), Mode = BindingMode.TwoWay, Source = comboBoxColumn };
+        uiElement.SetBinding(ComboBox.DisplayMemberPathProperty, displayMemberBinding);
+        var selectedValuePathBinding = new Binding { Path = new PropertyPath("SelectedValuePath"), Mode = BindingMode.TwoWay, Source = comboBoxColumn };
+        uiElement.SetBinding(ComboBox.SelectedValuePathProperty, selectedValuePathBinding);
+        var isEditableBinding = new Binding { Path = new PropertyPath("IsEditable"), Mode = BindingMode.TwoWay, Source = comboBoxColumn };
+        uiElement.SetBinding(ComboBox.IsEditableProperty, isEditableBinding);
+        var itemTemplateBinding = new Binding { Path = new PropertyPath("ItemTemplate"), Mode = BindingMode.TwoWay, Source = comboBoxColumn };
+        uiElement.SetBinding(ComboBox.ItemTemplateProperty, itemTemplateBinding);
+    }
+
+    // This will be invoke when the editing is triggered.
+
+    public override void OnInitializeEditElement(DataColumnBase dataColumn, SfComboBox uiElement, object dataContext)
+    {
+        GridColumn column = dataColumn.GridColumn;
+        InitializeEditBinding(uiElement, column);
+        var textAlignment = new Binding { Path = new PropertyPath("TextAlignment"), Mode = BindingMode.OneWay, Source = column, Converter = new TextAlignmentToHorizontalAlignmentConverter() };
+        uiElement.SetBinding(Control.HorizontalContentAlignmentProperty, textAlignment);
+        var verticalAlignment = new Binding { Path = new PropertyPath("VerticalAlignment"), Mode = BindingMode.TwoWay, Source = column };
+        uiElement.SetBinding(Control.VerticalContentAlignmentProperty, verticalAlignment);
+    }
+
+    // Display Element initialized for required properties
+
+    public override void OnInitializeDisplayElement(Syncfusion.UI.Xaml.DataGrid.DataColumnBase dataColumn, TextBlock uiElement, object dataContext)
+    {
+        var column = dataColumn.GridColumn;
+        var gridColumn = column as GridComboBoxColumn;
+        uiElement.SetBinding(TextBlock.TextProperty, column.DisplayBinding);
+        var textAlignment = new Binding { Path = new PropertyPath("TextAlignment"), Mode = BindingMode.OneWay, Source = column, Converter = new TextAlignmentToHorizontalAlignmentConverter() };
+        uiElement.SetBinding(Control.HorizontalAlignmentProperty, textAlignment);
+        var verticalAlignment = new Binding { Path = new PropertyPath("VerticalAlignment"), Mode = BindingMode.TwoWay, Source = column };
+        uiElement.SetBinding(Control.VerticalAlignmentProperty, verticalAlignment);
+        uiElement.Margin = new Thickness(3, 0, 1, 0);
+    }
+
+    // This Display Binding has to be set with the TextBlock.TextProperty.
+
+    private static void SetDisplayBinding(TextBlock element, GridColumn column, object dataContext)
+    {
+        var customColumn = (ComboBoxColumnExt)column;
+        var binding = new Binding
+        {
+            Path = new PropertyPath(customColumn.MappingName),
+            Mode = BindingMode.TwoWay,
+            UpdateSourceTrigger = UpdateSourceTrigger.PropertyChanged,
+        };
+        element.SetBinding(TextBlock.TextProperty, binding);
     }
 }
 {% endhighlight %}
@@ -335,9 +385,7 @@ public class ComboBoxRendererExt : GridVirtualizingCellRenderer<TextBlock, SfCom
     <dataGrid:SfDataGrid.Columns>
         <local:ComboBoxColumnExt MappingName="CustomerID"
                                  HeaderText="Customer"
-                                 ItemsSource="{Binding Customers}"
-                                 DisplayMemberPath="CustomerName"
-                                 SelectedValuePath="CustomerID" />
+                                 ItemsSource="{Binding Customers}" />
     </dataGrid:SfDataGrid.Columns>
 </dataGrid:SfDataGrid>
 {% endhighlight %}
