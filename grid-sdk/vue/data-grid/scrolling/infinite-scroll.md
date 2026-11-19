@@ -98,8 +98,3 @@ The following example that demonstrates how to enable/disable cache mode in infi
     1. In cache mode, the grid refreshes automatically if the content's **tr** element count exceeds the cache limit of the grid's content after the drop action.
     2. When performing row drag and drop with lazy load grouping, the grid will refresh automatically.
     3. In remote data, changes are applied only in the UI. They will be lost once the grid is refreshed. To restore them, you need to update the changes in your database. By using the [rowDrop](https://ej2.syncfusion.com/vue/documentation/api/grid#rowdrop) event, you can send the request to the server and apply the changes in your database. After this, you need to refresh the grid to show the updated data.
-
-## See Also
-
-* [How to fetch the data when the scrollbar reaches the end of the scroller in vue Grid](https://www.syncfusion.com/forums/156622/how-to-fetch-the-data-when-the-scrollbar-reaches-the-end-of-the-scroller-in-vue-grid)
-* [Lazy loading in vue Grid](https://www.syncfusion.com/forums/160679/lazy-loading-in-vue-grid)

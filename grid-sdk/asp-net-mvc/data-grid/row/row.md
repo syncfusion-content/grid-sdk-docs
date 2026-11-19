@@ -395,6 +395,3 @@ Grid provides several methods to retrieve row data and elements. This feature is
     const selectedRowElements = grid.getSelectedRows();
     ```
 
-## See Also
-
-* [How to set textbox and Grid in one row in ASP.NET MVC Grid](https://www.syncfusion.com/forums/164975/how-to-set-textbox-and-grid-in-one-row-in-asp-net-mvc-grid)

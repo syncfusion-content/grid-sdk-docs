@@ -501,9 +501,3 @@ Grid provides several methods to retrieve row data and elements. This feature is
 
 These methods can be combined for comprehensive row data access and manipulation scenarios, providing complete control over Grid row interactions and customization.
 
-## See Also
-
-* [Customizing row height in Angular Grid](https://www.syncfusion.com/forums/138140/how-to-customize-the-row-height-in-angular-grid)
-* [Setting font size and padding of Angular Grid's toolbar and filter bar](https://www.syncfusion.com/forums/150181/how-to-set-font-size-and-padding-of-angular-grids-toolbar-and-filter-bar)
-* [Displaying serial number in Angular Grid](https://www.syncfusion.com/forums/166563/how-to-displaying-serial-number-in-angular-grid)
-* [Adding/updating a new row programmatically in Angular Grid](https://www.syncfusion.com/forums/144356/how-to-add-update-a-new-row-programmatically-in-angular-grid)
