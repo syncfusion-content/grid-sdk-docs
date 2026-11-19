@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Expand group by level in Vue Grid component | Syncfusion
-description: Learn how to expand grouped rows up to a specific level in the Syncfusion Vue Grid component using the group module.
+description: Learn how to expand grouped rows by level, expand specific groups using a callback, and keep group caption rows sticky in the Syncfusion Vue Grid component.
 control: Expand group by level
 platform: grid-sdk
 documentation: ug
@@ -10,16 +10,18 @@ domainurl: https://help.syncfusion.com/grid-sdk
 
 # Expand group by level in Vue Grid component
 
-When data is grouped by multiple columns, the Grid renders a hierarchy of group caption rows. Expanding every group is not always desirable. Expanding only up to a chosen level gives a summarized view while deeper levels stay collapsed.
+When data is grouped by multiple columns, the Grid renders a hierarchy of group caption rows. By default, all groups are rendered in an expanded state. The [groupSettings](https://ej2.syncfusion.com/vue/documentation/api/grid/groupSettings) property provides options to control which groups are open initially and to keep the caption row of an expanded group visible while scrolling.
 
-The Grid has no dedicated property for this, so it is achieved by collapsing all groups with the [groupCollapseAll](https://ej2.syncfusion.com/vue/documentation/api/grid#groupcollapseall) method and then expanding the caption rows level by level with the [expandCollapseRows](https://ej2.syncfusion.com/vue/documentation/api/grid/group#expandcollapserows) method of the Group module. The level of a caption row is the number of indent cells it contains.
+## Expanding by group level
 
-In the following example, the Grid is grouped by `ShipCountry` and `ShipCity`, and only the first level (`ShipCountry`) is expanded after the data is bound, so the `ShipCity` groups remain collapsed. Change the level passed to `expandByLevel` to expand deeper levels.
+Use the [defaultExpanded](https://ej2.syncfusion.com/vue/documentation/api/grid/groupSettings#defaultexpanded) property to expand the groups down to a specific level. A group level starts from `1` for the first grouped column. Providing a number expands all groups down to that level, and the groups below it remain collapsed. Providing `-1` expands all the groups, and `0` collapses all of them.
+
+In the following example, the Grid is grouped by `ShipCountry` and `ShipCity`. Setting `defaultExpanded` to `1` expands the `ShipCountry` groups, while the `ShipCity` groups remain collapsed.
 
 {% tabs %}
 {% highlight html tabtitle="App.vue" %}
 <template>
-  <ejs-grid ref="grid" :dataSource="data" :allowGrouping="true" :groupSettings="groupOptions" :dataBound="dataBound">
+  <ejs-grid :dataSource="data" :allowGrouping="true" :groupSettings="groupOptions">
     <e-columns>
       <e-column field="OrderID" headerText="Order ID" width="120"></e-column>
       <e-column field="CustomerID" headerText="Customer ID" width="140"></e-column>
@@ -30,41 +32,77 @@ In the following example, the Grid is grouped by `ShipCountry` and `ShipCity`, a
 </template>
 
 <script setup>
-import { ref, provide } from 'vue';
+import { provide } from 'vue';
 import { GridComponent as EjsGrid, ColumnsDirective as EColumns, ColumnDirective as EColumn, Group } from '@syncfusion/ej2-vue-grids';
+import { data } from './datasource';
 
-const grid = ref(null);
-const data = [/* orders data */];
-const groupOptions = { columns: ['ShipCountry', 'ShipCity'] };
-let applied = false;
+const groupOptions = { columns: ['ShipCountry', 'ShipCity'], defaultExpanded: 1 };
 provide('grid', [Group]);
-
-function expandByLevel(grid, level) {
-    grid.groupCollapseAll();
-    // Caption rows are rendered top-down, so a parent is always expanded before its children are queried.
-    var depth = 0;
-    while (depth < level) {
-        var captions = grid.getContentTable().querySelectorAll('tr.e-groupcaption');
-        for (var i = 0; i < captions.length; i++) {
-            var row = captions[i];
-            var icon = row.querySelector('.e-recordpluscollapse');
-            if (icon && row.querySelectorAll('.e-indentcell').length === depth) {
-                grid.groupModule.expandCollapseRows(icon);
-            }
-        }
-        depth++;
-    }
-}
-
-function dataBound() {
-  if (!applied) {
-    applied = true;
-    expandByLevel(grid.value, 1);
-  }
-}
 </script>
 {% endhighlight %}
 {% endtabs %}
 
-> * The level starts from `1`. A level of `0` collapses all the groups.
-> * Expanding by level works on the groups rendered in the current view. For large datasets, use [lazy load grouping](./lazy-load-grouping) instead.
+## Expanding via callback
+
+To decide granularly which groups should be expanded, use the [isGroupOpenByDefault](https://ej2.syncfusion.com/vue/documentation/api/grid/groupSettings#isgroupopenbydefault) callback. The callback is invoked for each group caption row and returns `true` to expand the group, or `false` to keep it collapsed. The callback argument provides the `field`, `key` and `level` of the group being rendered.
+
+In the following example, only the `Germany` group at the first level is expanded by default.
+
+{% tabs %}
+{% highlight html tabtitle="App.vue" %}
+<template>
+  <ejs-grid :dataSource="data" :allowGrouping="true" :groupSettings="groupOptions">
+    <e-columns>
+      <e-column field="OrderID" headerText="Order ID" width="120"></e-column>
+      <e-column field="CustomerID" headerText="Customer ID" width="140"></e-column>
+      <e-column field="ShipCity" headerText="Ship City" width="140"></e-column>
+      <e-column field="ShipCountry" headerText="Ship Country" width="140"></e-column>
+    </e-columns>
+  </ejs-grid>
+</template>
+
+<script setup>
+import { provide } from 'vue';
+import { GridComponent as EjsGrid, ColumnsDirective as EColumns, ColumnDirective as EColumn, Group } from '@syncfusion/ej2-vue-grids';
+import { data } from './datasource';
+
+const groupOptions = { columns: ['ShipCountry', 'ShipCity'], isGroupOpenByDefault: (args: any) => args.level === 1 && args.key === 'Germany' };
+provide('grid', [Group]);
+</script>
+{% endhighlight %}
+{% endtabs %}
+
+> * Group keys are unique only within their parent group. Check the `level` along with the `key`, as shown above, to identify a group exactly.
+> * When `isGroupOpenByDefault` is defined, it takes precedence over `defaultExpanded` for the groups it is invoked for.
+
+## Sticky group caption row
+
+When scrolling through an expanded group, the `enableSticky` property of [groupSettings](https://ej2.syncfusion.com/vue/documentation/api/grid/groupSettings#enablesticky) keeps the caption row of the current group fixed at the top of the content area, so the user always knows which group the visible records belong to. Set it to `true` to enable the behavior.
+
+The following example expands the first level of groups and keeps the caption row sticky while scrolling.
+
+{% tabs %}
+{% highlight html tabtitle="App.vue" %}
+<template>
+  <ejs-grid :dataSource="data" :allowGrouping="true" :groupSettings="groupOptions">
+    <e-columns>
+      <e-column field="OrderID" headerText="Order ID" width="120"></e-column>
+      <e-column field="CustomerID" headerText="Customer ID" width="140"></e-column>
+      <e-column field="ShipCity" headerText="Ship City" width="140"></e-column>
+      <e-column field="ShipCountry" headerText="Ship Country" width="140"></e-column>
+    </e-columns>
+  </ejs-grid>
+</template>
+
+<script setup>
+import { provide } from 'vue';
+import { GridComponent as EjsGrid, ColumnsDirective as EColumns, ColumnDirective as EColumn, Group } from '@syncfusion/ej2-vue-grids';
+import { data } from './datasource';
+
+const groupOptions = { columns: ['ShipCountry', 'ShipCity'], defaultExpanded: 1, enableSticky: true };
+provide('grid', [Group]);
+</script>
+{% endhighlight %}
+{% endtabs %}
+
+> The Grid must have a fixed [height](https://ej2.syncfusion.com/vue/documentation/api/grid#height) so that the content area is scrollable and the sticky caption row can be observed.
