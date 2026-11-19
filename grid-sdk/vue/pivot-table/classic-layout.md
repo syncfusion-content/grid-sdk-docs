@@ -1,14 +1,28 @@
 ---
 layout: post
-title: Classic Layout in Vue Pivot Table | Syncfusion
-description: Learn how the Vue Pivot Table switches to a tabular classic layout where row fields appear side by side with subtotals per group.
-control: Classic Layout
+title: Layout in Vue Pivot Table | Syncfusion
+description: Learn about the layouts supported in the Vue Pivot Table, including default compact, classic (tabular), and flat analytical table view.
+control: Pivot Table
 platform: grid-sdk
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Classic Layout in Vue Pivot Table
+# Layout in Vue Pivot Table
+
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Vue Pivot Table supports three visual layouts to present data according to different analytical needs:
+
+* **Default Compact**: Displays row fields hierarchically in a stepped, tree-like structure within a single column.
+* **Classic (Tabular)**: Displays row fields side by side in separate columns with subtotals per group and grand totals.
+* **Flat**: Displays raw, unaggregated relational records directly in a flat tabular grid view.
+
+## Default Compact Layout
+
+The compact layout is the default visual presentation of the Pivot Table. In this layout, fields placed on the row axis are rendered in a single column using an expandable and collapsible stepped hierarchy, which saves horizontal space while preserving the parent-child relationships between grouped rows.
+
+The compact layout is active by default. You can also explicitly specify it by setting the [layout](https://ej2.syncfusion.com/vue/documentation/api/pivotview/gridSettings#layout) property in [gridSettings](https://ej2.syncfusion.com/vue/documentation/api/pivotview/gridSettings) to **Compact**.
+
+## Classic Layout
 
 N> The classic layout is compatible only with relational data sources and operates in both client-side and server-side engines.
 
@@ -27,7 +41,7 @@ To enable the classic layout, set the [layout](https://ej2.syncfusion.com/vue/do
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/classic-layout-cs1" %}
 
-**Limitations**
+### Limitations
 
 * Subtotals at the "Top" position are not supported for row subtotals.
 

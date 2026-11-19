@@ -1,14 +1,27 @@
 ---
 layout: post
-title: Classic Layout in ASP.NET MVC Pivot Table | Syncfusion
-description: Learn how the ASP.NET MVC Pivot Table's classic (tabular) layout shows row-axis fields side by side in separate columns for easier reading.
+title: Layout in ASP.NET MVC Pivot Table | Syncfusion
+description: Learn about the layouts supported in the ASP.NET MVC Pivot Table, including default compact, classic (tabular), and flat analytical table view.
 platform: grid-sdk
-control: Classic Layout
+control: Pivot Table
 documentation: ug
 ---
 
+# Layout in ASP.NET MVC Pivot Table
 
-# Classic Layout in ASP.NET MVC Pivot Table
+The Syncfusion<sup style="font-size:70%">&reg;</sup> ASP.NET MVC Pivot Table supports three visual layouts to present data according to different analytical needs:
+
+* **Default Compact**: Displays row fields hierarchically in a stepped, tree-like structure within a single column.
+* **Classic (Tabular)**: Displays row fields side by side in separate columns with subtotals per group and grand totals.
+* **Flat**: Displays raw, unaggregated relational records directly in a flat tabular grid view.
+
+## Default Compact Layout
+
+The compact layout is the default visual presentation of the Pivot Table. In this layout, fields placed on the row axis are rendered in a single column using an expandable and collapsible stepped hierarchy, which saves horizontal space while preserving the parent-child relationships between grouped rows.
+
+The compact layout is active by default. You can also explicitly specify it by setting the [Layout](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewGridSettings.html#Syncfusion_EJ2_PivotView_PivotViewGridSettings_Layout) property in the [PivotViewGridSettings](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewGridSettings.html) of the Pivot Table to **Compact**.
+
+## Classic Layout
 
 N> The classic layout is compatible only with relational data sources and operates in both client-side and server-side engines.
 
@@ -27,7 +40,7 @@ To enable the classic layout, set the [Layout](https://help.syncfusion.com/cr/as
 
 ![Classic Layout](images/classic-layout.png)
 
-**Limitations**
+### Limitations
 
 * Subtotals at the "Top" position are not supported for row subtotals.
 
