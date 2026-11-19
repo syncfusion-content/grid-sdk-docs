@@ -128,9 +128,9 @@ The following events are triggered while drag and drop the treegrid rows.
 
 ## Prevent reordering a row as child to another row
 
-You can prevent the default behavior of dropping rows as children to the target by setting the `cancel` property to `true` in [rowDrop](https://ej2.syncfusion.com/vue/documentation/api/treegrid#rowdrop) event argument. You can also change the drop position after cancelling using [reorderRows](https://ej2.syncfusion.com/vue/documentation/api/treegrid#reorderrows) method.
+You can prevent the default behavior of dropping rows as children to the target by setting the `cancel` property to `true` in [rowDrop](https://ej2.syncfusion.com/vue/documentation/api/treegrid#rowdrop) event argument. You can also change the drop position after canceling using [reorderRows](https://ej2.syncfusion.com/vue/documentation/api/treegrid#reorderrows) method.
 
-In the below example drop action is cancelled and dropped above to target row.
+In the below example drop action is canceled and dropped above to target row.
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
