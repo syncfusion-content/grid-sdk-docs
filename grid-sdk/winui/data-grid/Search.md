@@ -23,7 +23,7 @@ this.sfDataGrid.SearchHelper.Search(searchTextBox.Text);
 {% endhighlight %}
 {% endtabs %}
 
-The `Search` method highlights the matching text in the cells that are currently rendered. Highlighting is applied only to cells whose display element is a `TextBlock`.
+![WinUI DataGrid with Search Panel](Search_images/winui-datagrid-search-panel.png)
 
 N> If `SearchHelper.AllowSearching` is `false` and no column sets `GridColumn.AllowSearching` to `true`, the `Search`, `FindNext` and `FindPrevious` methods do nothing.
 
@@ -91,30 +91,38 @@ this.sfDataGrid.SearchHelper.Search(searchTextBox.Text);
 {% endhighlight %}
 {% endtabs %}
 
+![Enabling Filter based on Search in WinUI DataGrid](Search_images/winui-datagrid-filter-based-on-search.png)
+
 N> Setting `AllowFiltering` assigns the search filter to `SfDataGrid.View.Filter`. Setting it back to `false` removes the view filter.
 
-## Customizing search highlight
+## Changing Search Highlight Background
 
-The matching text is highlighted by using the following properties of `SearchHelper`.
-
-| Property | Description | Default |
-|---|---|---|
-| `SearchBrush` | Background of the matching text. | `Yellow` |
-| `SearchForegroundBrush` | Foreground of the matching text. Applied only when the property is explicitly set. | `Black` |
-| `SearchHighlightBrush` | Background of the current match navigated by `FindNext` or `FindPrevious`. | `LightSalmon` |
-| `SearchForegroundHighlightBrush` | Foreground of the current match. Applied only when the property is explicitly set. | `Black` |
-| `CanHighlightSearchText` | Specifies whether the matching text is highlighted. | `true` |
+In WinUI DataGrid (SfDatagrid), you can change the search text highlighting color by setting `SearchHelper.SearchBrush` property. 
 
 {% tabs %}
 {% highlight c# %}
-this.sfDataGrid.SearchHelper.SearchBrush = new SolidColorBrush(Colors.LightGreen);
-this.sfDataGrid.SearchHelper.SearchForegroundBrush = new SolidColorBrush(Colors.DarkGreen);
-this.sfDataGrid.SearchHelper.SearchHighlightBrush = new SolidColorBrush(Colors.Orange);
-this.sfDataGrid.SearchHelper.SearchForegroundHighlightBrush = new SolidColorBrush(Colors.White);
+
+this.sfdataGrid.SearchHelper.SearchBrush = new SolidColorBrush(Colors.Red);
+this.sfdataGrid.SearchHelper.Search(TextBox.Text);
+
 {% endhighlight %}
 {% endtabs %}
 
-N> Changing any of the brush properties re-runs the search when search text is already applied.
+![Changing Search Text Highlighting Color in WinUI DataGrid](Search_images/winui-datagrid-highlight-search-color.png)
+
+## Changing foreground for search highlight
+
+In WinUI DataGrid (SfDatagrid), you can change the foreground color for search text by setting the `SearchHelper.SearchForegroundBrush` property. 
+
+{% tabs %}
+{% highlight c# %}
+
+this.sfDataGrid.SearchHelper.SearchForegroundBrush = new SolidColorBrush(Colors.Red);
+
+{% endhighlight %}
+{% endtabs %}
+
+![Changing Fore Color of Search Text  in WinUI DataGrid](Search_images/winui-datagrid-search-text-fore-color.png)
 
 ## Navigating between matches
 
@@ -129,6 +137,31 @@ this.sfDataGrid.SearchHelper.FindPrevious(searchTextBox.Text);
 {% endtabs %}
 
 The position of the current match is available in the `SearchHelper.CurrentRowColumnIndex` property.
+
+You can highlight the currently navigated search text using `SearchHelper.SearchHighlightBrush` property.
+
+{% tabs %}
+{% highlight c# %}
+
+this.sfdataGrid.SearchHelper.SearchHighlightBrush = new SolidColorBrush(Colors.Red);
+this.sfdataGrid.SearchHelper.FindNext("TextBox.Text ");
+
+{% endhighlight %}
+{% endtabs %}
+
+![Highlighting Navigated Search Text in WinUI DataGrid](Search_images/winui-datagrid-highlight-navigate-search-text.png)
+
+You can highlight the foreground color of current navigated search text by using the `SearchHelper.SearchForegroundHighlightBrush` property.
+
+{% tabs %}
+{% highlight c# %}
+
+this.sfdataGrid.SearchHelper.SearchForegroundHighlightBrush = new SolidColorBrush(Colors.Red);
+
+{% endhighlight %}
+{% endtabs %}
+
+![Highlighting Current Navigated Search Text Color in WinUI DataGrid](Search_images/winui-datagrid-navigated-search-text-color.png)
 
 ### Moving the current cell to the match
 
@@ -193,6 +226,8 @@ You can navigate to the cells contains the SearchText using `SearchHelper.FindNe
 {% endhighlight %}
 {% endtabs %}
 
+![WinUI DataGrid displays Searched Data](Search_images/winui-datagrid-search-data.png)
+
 N> It is not possible to Navigate with the two DataGrid at a time.
 
 ## Search customization
@@ -227,6 +262,8 @@ this.dataGrid.SelectedIndex = recordIndex;
 
 {% endhighlight %}
 {% endtabs %}
+
+![Select Record based on SearchText in WinUI DataGrid](Search_images/winui-datagrid-select-record-based-on-search.png)
 
 ### Search in GridComboBoxColumn
 
