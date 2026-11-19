@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Vue TreeGrid Row Drag and Drop | Syncfusion
-description: Learn here all about Row drag and drop in Vue TreeGrid of Essential JS 2 and more.
+description: Learn how to drag and drop rows in Vue TreeGrid within the same grid, between two TreeGrids, or between multiple TreeGrids for advanced data movement.
 control: Row drag and drop 
 platform: grid-sdk
 documentation: ug
