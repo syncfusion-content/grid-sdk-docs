@@ -161,7 +161,7 @@ The filter criteria and panel state are updated when filtering is performed thro
 * [Advanced Filter UI](wpf/DataGrid/filtering).
 * [Filter Row](wpf/DataGrid/filterrow).
 * [GridColumn Filter Predicates](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.GridColumn.html#Syncfusion_UI_Xaml_Grid_GridColumn_FilterPredicates).
-* Filter Editor.
+* [Filter Editor](https://help.syncfusion.com/wpf/datagrid/filtereditor)
 
 When the filtering state changes:
 
@@ -203,11 +203,12 @@ The `Background`, `Foreground`, `BorderBrush` and `BorderThickness` properties a
 {% highlight xaml %}
 <Window.Resources>
     <Style x:Key="customFilterEditorStyle" TargetType="filtereditor:SfFilterEditor">
-        <Setter Property="Background" Value="#FFF7F7FB" />
-        <Setter Property="FieldForeground" Value="DarkSlateBlue" />
-        <Setter Property="OperatorForeground" Value="DarkGreen" />
-        <Setter Property="ValueForeground" Value="Black" />
-        <Setter Property="ConnectorBrush" Value="SlateGray" />
+        <Setter Property="Background" Value="AliceBlue" />
+        <Setter Property="Foreground" Value="HotPink" />
+        <Setter Property="FieldForeground" Value="RoyalBlue" />
+        <Setter Property="OperatorForeground" Value="MediumOrchid" />
+        <Setter Property="ValueForeground" Value="DarkSlateGray" />
+        <Setter Property="ConnectorBrush" Value="CornflowerBlue" />
         <Setter Property="ValidationBrush" Value="Crimson" />
     </Style>
 </Window.Resources>
@@ -226,6 +227,8 @@ this.dataGrid.FilterEditorStyle = this.FindResource("customFilterEditorStyle") a
 
 N> Add the `xmlns:filtereditor="clr-namespace:Syncfusion.Data.FilterEditor;assembly=Syncfusion.Data.WPF"` namespace to the window. The `Syncfusion.Data.WPF` assembly is required.
 
+![Filter Editor Style](Filter-Editor-images\wpf-datagrid-filter-editor-style.png)
+
 ### Customize the Filter Editor Panel
 
 You can set the `SfDataGrid.FilterPanelStyle` property to customize the Filter Editor Panel without replacing the panel instance. The style is reapplied when the Grid template is reapplied. Setting the property to `null` restores the default style.
@@ -243,11 +246,13 @@ The `FilterEditorPanel` control exposes the following properties for the filter 
 {% highlight xaml %}
 <Window.Resources>
     <Style x:Key="customFilterPanelStyle" TargetType="filtereditor:FilterEditorPanel">
-        <Setter Property="Background" Value="#FFF7F7FB" />
-        <Setter Property="Foreground" Value="#FF202020" />
-        <Setter Property="BorderBrush" Value="SlateGray" />
-        <Setter Property="MemberBackground" Value="LightSteelBlue" />
-        <Setter Property="ValueBackground" Value="Honeydew" />
+        <Setter Property="Background" Value="GhostWhite" />
+        <Setter Property="Foreground" Value="DarkBlue" />
+        <Setter Property="BorderBrush" Value="RoyalBlue" />
+        <Setter Property="MemberBackground" Value="CornflowerBlue" />
+        <Setter Property="MemberForeground" Value="White" />
+        <Setter Property="ValueBackground" Value="LightSteelBlue" />
+        <Setter Property="ValueForeground" Value="DarkSlateGray" />
     </Style>
 </Window.Resources>
 
@@ -264,35 +269,50 @@ this.dataGrid.FilterPanelStyle = this.FindResource("customFilterPanelStyle") as 
 {% endhighlight %}
 {% endtabs %}
 
-### Customize using resource keys
+![Filter Panel Style](Filter-Editor-images\wpf-datagrid-filter-panel-style.png)
 
-The default appearance is defined by brush resources. You can override these resource keys in the application or window resources.
+### Customize the Filter Editor Panel at runtime
 
-| Resource key | Applies to |
-|--------------|------------|
-| `FilterEditorPanelBackground`, `FilterEditorPanelBorderBrush`, `FilterEditorPanelForeground` | Filter Editor Panel |
-| `FilterEditorPanelButtonForeground`, `FilterEditorPanelButtonHoverBackground`, `FilterEditorPanelButtonPressedBackground` | Panel icon buttons |
-| `FilterExpressionMemberBackground`, `FilterExpressionMemberForeground`, `FilterExpressionValueBackground`, `FilterExpressionValueForeground` | Expression tokens |
+You can access the Filter Editor Panel hosted by the DataGrid through the read-only `SfDataGrid.FilterPanel` property and customize its appearance at runtime.
 
-Verification Required – Source information unavailable: whether overriding these keys in application resources takes effect when a Syncfusion theme is applied. Applied themes define their own `SfFilterEditor.*` keys and styles.
+The Filter Editor Panel instance is created and managed by the DataGrid and cannot be replaced. However, you can modify its public appearance properties after the panel is created.
 
-### Customize the control template
+{% highlight c# %}
 
-Verification Required – Source information unavailable: a supported, documented scenario for replacing the `SfFilterEditor` or `FilterEditorPanel` template through `FilterEditorStyle` or `FilterPanelStyle`.
+private void UpdateFilterPanelAppearance()
+{
+    FilterEditorPanel panel = this.dataGrid.FilterPanel;
 
-The default `SfFilterEditor` template defines the following parts, which the control looks up by name: `PART_RootGroupControl`, `PART_ApplyButton`, `PART_OkButton` and `PART_CancelButton`. A custom template should retain these parts.
+    if (panel == null)
+        return;
 
-N> The `FilterEditorStyle` and `FilterPanelStyle` properties customize the Filter Editor and Filter Editor Panel only. They do not change the appearance of the column filter popup.
+    panel.Background = Brushes.GhostWhite;
+    panel.Foreground = Brushes.DarkBlue;
+    panel.BorderBrush = Brushes.RoyalBlue;
+    panel.BorderThickness = new Thickness(1);
+    panel.MemberBackground = Brushes.CornflowerBlue;
+    panel.MemberForeground = Brushes.White;
+    panel.ValueBackground = Brushes.LightSteelBlue;
+    panel.ValueForeground = Brushes.DarkSlateGray;
+}
+
+{% endhighlight %}
+
+Use the `FilterPanelStyle` property to apply a reusable predefined style. Use the `FilterPanel` property to customize individual appearance properties directly at runtime.
+
+N> The `FilterPanel` property returns `null` when the Filter Editor Panel is unavailable, such as when `FilterPanelPosition` is set to `None` or before the DataGrid template creates the panel.
 
 ## Theme Support
 
-The Filter Editor and Filter Editor Panel support the built-in Syncfusion themes. Apply a theme to the Grid by using [SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager). The Filter Editor and Filter Editor Panel then use the theme styles and colors without additional configuration.
+The Filter Editor and Filter Editor Panel support the built-in Syncfusion themes. Refer to the below links to apply themes for the SfDataGrid,
+* [Apply a theme to the Grid by using SfSkinManager](https://help.syncfusion.com/wpf/themes/skin-manager).
+* [Create a custom theme using ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme)
 
 {% tabs %}
 {% highlight xaml %}
 <Window xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
         xmlns:sfskin="clr-namespace:Syncfusion.SfSkinManager;assembly=Syncfusion.SfSkinManager.WPF"
-        sfskin:SfSkinManager.Theme="{sfskin:SkinManager ThemeName=FluentLight}">
+        sfskin:SfSkinManager.Theme="{sfskin:SkinManager ThemeName=FluentDark}">
     <syncfusion:SfDataGrid x:Name="dataGrid"
                            AllowFiltering="True"
                            AutoGenerateColumns="True"
@@ -302,41 +322,41 @@ The Filter Editor and Filter Editor Panel support the built-in Syncfusion themes
 </Window>
 {% endhighlight %}
 {% highlight c# %}
-SfSkinManager.SetTheme(this, new Theme("FluentLight"));
+SfSkinManager.SetTheme(this, new Theme("FluentDark"));
 {% endhighlight %}
 {% endtabs %}
 
-N> Reference the theme assembly, for example `Syncfusion.Themes.FluentLight.WPF`, in the project.
+![Theme applied to Filter Panel](Filter-Editor-images\wpf-datagrid-filter-panel-theme.png)
 
-### Supported themes
+N> The Filter Editor Panel uses the theme applied to the `SfDataGrid`. The Filter Editor window requires the current Grid theme to be applied separately because it is created as a separate window.
 
-The Filter Editor theme resources are available in the following themes:
 
-* Fluent Light and Fluent Dark
-* Material 3 Light and Material 3 Dark
-* Material Light, Material Dark, Material Light Blue and Material Dark Blue
-* Office 2019 Black, Colorful, Dark Gray, White, High Contrast and High Contrast White
-* Windows 11 Light and Windows 11 Dark
-* System Theme
+### Apply the theme to the Filter Editor window
 
-### Customize themes using ThemeStudio
+The Filter Editor is hosted in a separate window. Hence, the theme applied to the `SfDataGrid` is not automatically applied to the Filter Editor window.
 
-You can create a custom theme by using [ThemeStudio](https://help.syncfusion.com/wpf/themes/theme-studio#creating-custom-theme). The Filter Editor is included in the ThemeStudio `SfFilterEditor` resources. The following semantic keys are available for customization.
+You can apply the current `SfDataGrid` theme to the Filter Editor window by handling the `FilterEditorWindow.Loaded` event and calling the `SfSkinManager.SetTheme` method.
 
-| Resource key | Description |
-|--------------|-------------|
-| `SfFilterEditor.Static.Background`, `SfFilterEditor.Static.Foreground`, `SfFilterEditor.Static.Border` | Editor background, foreground and border. |
-| `SfFilterEditor.Static.PopupBorder`, `SfFilterEditor.PopupFallback.Background` | Dropdown popup border and fallback background. |
-| `SfFilterEditor.Static.IconForeground`, `SfFilterEditor.Static.Underline` | Icon and underline colors. |
-| `SfFilterEditor.MouseOver.Background`, `SfFilterEditor.Pressed.Background` | Interaction states. |
-| `SfFilterEditor.Validation.Border`, `SfFilterEditor.Group.Static.Border` | Validation and group borders. |
-| `SfFilterEditor.CaseSensitive.Active.Background`, `SfFilterEditor.CaseSensitive.Active.Foreground` | Active case-sensitive button. |
-| `SfFilterEditor.FilterPanel.Static.Background`, `SfFilterEditor.FilterPanel.Static.Foreground`, `SfFilterEditor.FilterPanel.Static.Border` | Filter Editor Panel. |
-| `SfFilterEditor.FilterPanel.Button.Static.Foreground`, `SfFilterEditor.FilterPanel.Button.MouseOver.Background`, `SfFilterEditor.FilterPanel.Button.Pressed.Background` | Panel icon buttons. |
-| `SfFilterEditor.Expression.Member.Background`, `SfFilterEditor.Expression.Member.Foreground`, `SfFilterEditor.Expression.Value.Background`, `SfFilterEditor.Expression.Value.Foreground` | Expression tokens. |
-| `SfFilterEditor.Window.CloseButton.MouseOver.Background`, `SfFilterEditor.Window.CloseButton.Pressed.Background` | Filter Editor window close button. |
+The theme applied to the `SfDataGrid` can be retrieved by using the `SfSkinManager.GetTheme` method and applied to the Filter Editor window when it is loaded.
 
-Verification Required – Source information unavailable: runtime theme switching of an already-open Filter Editor window.
+{% tabs %}
+{% highlight c# %}
+
+this.dataGrid.FilterEditorWindowLoaded += OnFilterEditorWindowLoaded ;
+
+private void OnFilterEditorWindowLoaded(object sender, FilterEditorWindowEventArgs e)
+{
+    Theme currentTheme = SfSkinManager.GetTheme(this.dataGrid);
+    if (currentTheme != null)
+    {
+        SfSkinManager.SetTheme(e.FilterEditorWindow, currentTheme);
+    }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+![Theme applied to Filter Editor Window](Filter-Editor-images\wpf-datagrid-filter-editor-window-theme.png)
 
 ## Limitations
 
