@@ -19,26 +19,21 @@ Use the [defaultExpanded](https://ej2.syncfusion.com/react/documentation/api/gri
 In the following example, the Grid is grouped by `ShipCountry` and `ShipCity`. Setting `defaultExpanded` to `1` expands the `ShipCountry` groups, while the `ShipCity` groups remain collapsed.
 
 {% tabs %}
-{% highlight tsx tabtitle="App.tsx" %}
-import { ColumnDirective, ColumnsDirective, GridComponent, Group, Inject } from '@syncfusion/ej2-react-grids';
-import { data } from './datasource';
-
-export default function App() {
-  const groupSettings: object = { columns: ['ShipCountry', 'ShipCity'], defaultExpanded: 1 };
-  return (
-    <GridComponent dataSource={data} allowGrouping={true} groupSettings={groupSettings}>
-      <ColumnsDirective>
-        <ColumnDirective field="OrderID" headerText="Order ID" width="120" />
-        <ColumnDirective field="CustomerID" headerText="Customer ID" width="140" />
-        <ColumnDirective field="ShipCity" headerText="Ship City" width="140" />
-        <ColumnDirective field="ShipCountry" headerText="Ship Country" width="140" />
-      </ColumnsDirective>
-      <Inject services={[Group]} />
-    </GridComponent>
-  );
-}
+{% highlight js tabtitle="App.jsx" %}
+{% include code-snippet/grid-sdk/react/grid/group-expand-level-cs1/app/App.jsx %}
+{% endhighlight %}
+{% highlight ts tabtitle="App.tsx" %}
+{% include code-snippet/grid-sdk/react/grid/group-expand-level-cs1/app/App.tsx %}
+{% endhighlight %}
+{% highlight js tabtitle="datasource.jsx" %}
+{% include code-snippet/grid-sdk/react/grid/group-expand-level-cs1/app/datasource.jsx %}
+{% endhighlight %}
+{% highlight ts tabtitle="datasource.tsx" %}
+{% include code-snippet/grid-sdk/react/grid/group-expand-level-cs1/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/grid/group-expand-level-cs1" %}
 
 ## Expanding via callback
 
@@ -47,26 +42,21 @@ To decide granularly which groups should be expanded, use the [isGroupOpenByDefa
 In the following example, only the `Germany` group at the first level is expanded by default.
 
 {% tabs %}
-{% highlight tsx tabtitle="App.tsx" %}
-import { ColumnDirective, ColumnsDirective, GridComponent, Group, Inject } from '@syncfusion/ej2-react-grids';
-import { data } from './datasource';
-
-export default function App() {
-  const groupSettings: object = { columns: ['ShipCountry', 'ShipCity'], isGroupOpenByDefault: (args: any) => args.level === 1 && args.key === 'Germany' };
-  return (
-    <GridComponent dataSource={data} allowGrouping={true} groupSettings={groupSettings}>
-      <ColumnsDirective>
-        <ColumnDirective field="OrderID" headerText="Order ID" width="120" />
-        <ColumnDirective field="CustomerID" headerText="Customer ID" width="140" />
-        <ColumnDirective field="ShipCity" headerText="Ship City" width="140" />
-        <ColumnDirective field="ShipCountry" headerText="Ship Country" width="140" />
-      </ColumnsDirective>
-      <Inject services={[Group]} />
-    </GridComponent>
-  );
-}
+{% highlight js tabtitle="App.jsx" %}
+{% include code-snippet/grid-sdk/react/grid/group-expand-callback-cs1/app/App.jsx %}
+{% endhighlight %}
+{% highlight ts tabtitle="App.tsx" %}
+{% include code-snippet/grid-sdk/react/grid/group-expand-callback-cs1/app/App.tsx %}
+{% endhighlight %}
+{% highlight js tabtitle="datasource.jsx" %}
+{% include code-snippet/grid-sdk/react/grid/group-expand-callback-cs1/app/datasource.jsx %}
+{% endhighlight %}
+{% highlight ts tabtitle="datasource.tsx" %}
+{% include code-snippet/grid-sdk/react/grid/group-expand-callback-cs1/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/grid/group-expand-callback-cs1" %}
 
 > * Group keys are unique only within their parent group. Check the `level` along with the `key`, as shown above, to identify a group exactly.
 > * When `isGroupOpenByDefault` is defined, it takes precedence over `defaultExpanded` for the groups it is invoked for.
@@ -78,25 +68,20 @@ When scrolling through an expanded group, the `enableSticky` property of [groupS
 The following example expands the first level of groups and keeps the caption row sticky while scrolling.
 
 {% tabs %}
-{% highlight tsx tabtitle="App.tsx" %}
-import { ColumnDirective, ColumnsDirective, GridComponent, Group, Inject } from '@syncfusion/ej2-react-grids';
-import { data } from './datasource';
-
-export default function App() {
-  const groupSettings: object = { columns: ['ShipCountry', 'ShipCity'], defaultExpanded: 1, enableSticky: true };
-  return (
-    <GridComponent dataSource={data} allowGrouping={true} groupSettings={groupSettings}>
-      <ColumnsDirective>
-        <ColumnDirective field="OrderID" headerText="Order ID" width="120" />
-        <ColumnDirective field="CustomerID" headerText="Customer ID" width="140" />
-        <ColumnDirective field="ShipCity" headerText="Ship City" width="140" />
-        <ColumnDirective field="ShipCountry" headerText="Ship Country" width="140" />
-      </ColumnsDirective>
-      <Inject services={[Group]} />
-    </GridComponent>
-  );
-}
+{% highlight js tabtitle="App.jsx" %}
+{% include code-snippet/grid-sdk/react/grid/group-sticky-caption-cs1/app/App.jsx %}
+{% endhighlight %}
+{% highlight ts tabtitle="App.tsx" %}
+{% include code-snippet/grid-sdk/react/grid/group-sticky-caption-cs1/app/App.tsx %}
+{% endhighlight %}
+{% highlight js tabtitle="datasource.jsx" %}
+{% include code-snippet/grid-sdk/react/grid/group-sticky-caption-cs1/app/datasource.jsx %}
+{% endhighlight %}
+{% highlight ts tabtitle="datasource.tsx" %}
+{% include code-snippet/grid-sdk/react/grid/group-sticky-caption-cs1/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/grid/group-sticky-caption-cs1" %}
 
 > The Grid must have a fixed [height](https://ej2.syncfusion.com/react/documentation/api/grid#height) so that the content area is scrollable and the sticky caption row can be observed.

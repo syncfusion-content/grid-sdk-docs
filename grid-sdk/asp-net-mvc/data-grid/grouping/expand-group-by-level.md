@@ -19,14 +19,11 @@ Use the [defaultExpanded](https://ej2.syncfusion.com/aspnetmvc/documentation/api
 In the following example, the Grid is grouped by `ShipCountry` and `ShipCity`. Setting `defaultExpanded` to `1` expands the `ShipCountry` groups, while the `ShipCity` groups remain collapsed.
 
 {% tabs %}
-{% highlight cshtml tabtitle="Index.cshtml" %}
-@Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)ViewBag.DataSource).AllowGrouping().GroupSettings(group => group.Columns(new string[] { "ShipCountry", "ShipCity" }).DefaultExpanded(1)).Columns(col =>
-{
-    col.Field("OrderID").HeaderText("Order ID").Width("120").Add();
-    col.Field("CustomerID").HeaderText("Customer ID").Width("140").Add();
-    col.Field("ShipCity").HeaderText("Ship City").Width("140").Add();
-    col.Field("ShipCountry").HeaderText("Ship Country").Width("140").Add();
-}).Render()
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/grid-sdk/asp-net-mvc/grid/grouping/group-expand-level-cs1/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="group-expand-level-cs1.cs" %}
+{% include code-snippet/grid-sdk/asp-net-mvc/grid/grouping/group-expand-level-cs1/group-expand-level-cs1.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -37,21 +34,11 @@ To decide granularly which groups should be expanded, use the [isGroupOpenByDefa
 In the following example, only the `Germany` group at the first level is expanded by default.
 
 {% tabs %}
-{% highlight cshtml tabtitle="Index.cshtml" %}
-@Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)ViewBag.DataSource).AllowGrouping().GroupSettings(group => group.Columns(new string[] { "ShipCountry", "ShipCity" }).IsGroupOpenByDefault("isGroupOpen")).Columns(col =>
-{
-    col.Field("OrderID").HeaderText("Order ID").Width("120").Add();
-    col.Field("CustomerID").HeaderText("Customer ID").Width("140").Add();
-    col.Field("ShipCity").HeaderText("Ship City").Width("140").Add();
-    col.Field("ShipCountry").HeaderText("Ship Country").Width("140").Add();
-}).Render()
-
-<script>
-    function isGroupOpen(args) {
-        // Open only the 'Germany' group; its child groups stay collapsed.
-        return args.level === 1 && args.key === 'Germany';
-    }
-</script>
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/grid-sdk/asp-net-mvc/grid/grouping/group-expand-callback-cs1/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="group-expand-callback-cs1.cs" %}
+{% include code-snippet/grid-sdk/asp-net-mvc/grid/grouping/group-expand-callback-cs1/group-expand-callback-cs1.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -65,14 +52,11 @@ When scrolling through an expanded group, the `enableSticky` property of [groupS
 The following example expands the first level of groups and keeps the caption row sticky while scrolling.
 
 {% tabs %}
-{% highlight cshtml tabtitle="Index.cshtml" %}
-@Html.EJS().Grid("Grid").DataSource((IEnumerable<object>)ViewBag.DataSource).AllowGrouping().GroupSettings(group => group.Columns(new string[] { "ShipCountry", "ShipCity" }).DefaultExpanded(1).EnableSticky(true)).Columns(col =>
-{
-    col.Field("OrderID").HeaderText("Order ID").Width("120").Add();
-    col.Field("CustomerID").HeaderText("Customer ID").Width("140").Add();
-    col.Field("ShipCity").HeaderText("Ship City").Width("140").Add();
-    col.Field("ShipCountry").HeaderText("Ship Country").Width("140").Add();
-}).Render()
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/grid-sdk/asp-net-mvc/grid/grouping/group-sticky-caption-cs1/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="group-sticky-caption-cs1.cs" %}
+{% include code-snippet/grid-sdk/asp-net-mvc/grid/grouping/group-sticky-caption-cs1/group-sticky-caption-cs1.cs %}
 {% endhighlight %}
 {% endtabs %}
 

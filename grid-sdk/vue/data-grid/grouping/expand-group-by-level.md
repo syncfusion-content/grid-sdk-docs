@@ -19,28 +19,18 @@ Use the [defaultExpanded](https://ej2.syncfusion.com/vue/documentation/api/grid/
 In the following example, the Grid is grouped by `ShipCountry` and `ShipCity`. Setting `defaultExpanded` to `1` expands the `ShipCountry` groups, while the `ShipCity` groups remain collapsed.
 
 {% tabs %}
-{% highlight html tabtitle="App.vue" %}
-<template>
-  <ejs-grid :dataSource="data" :allowGrouping="true" :groupSettings="groupOptions">
-    <e-columns>
-      <e-column field="OrderID" headerText="Order ID" width="120"></e-column>
-      <e-column field="CustomerID" headerText="Customer ID" width="140"></e-column>
-      <e-column field="ShipCity" headerText="Ship City" width="140"></e-column>
-      <e-column field="ShipCountry" headerText="Ship Country" width="140"></e-column>
-    </e-columns>
-  </ejs-grid>
-</template>
-
-<script setup>
-import { provide } from 'vue';
-import { GridComponent as EjsGrid, ColumnsDirective as EColumns, ColumnDirective as EColumn, Group } from '@syncfusion/ej2-vue-grids';
-import { data } from './datasource';
-
-const groupOptions = { columns: ['ShipCountry', 'ShipCity'], defaultExpanded: 1 };
-provide('grid', [Group]);
-</script>
+{% highlight html tabtitle="Composition API (~/src/App.vue)" %}
+{% include code-snippet/grid-sdk/vue/grid/group/group-expand-level-cs1/app-composition.vue %}
+{% endhighlight %}
+{% highlight html tabtitle="Options API (~/src/App.vue)" %}
+{% include code-snippet/grid-sdk/vue/grid/group/group-expand-level-cs1/app.vue %}
+{% endhighlight %}
+{% highlight js tabtitle="datasource.js" %}
+{% include code-snippet/grid-sdk/vue/grid/group/group-expand-level-cs1/datasource.js %}
 {% endhighlight %}
 {% endtabs %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/grid/group/group-expand-level-cs1" %}
 
 ## Expanding via callback
 
@@ -49,28 +39,18 @@ To decide granularly which groups should be expanded, use the [isGroupOpenByDefa
 In the following example, only the `Germany` group at the first level is expanded by default.
 
 {% tabs %}
-{% highlight html tabtitle="App.vue" %}
-<template>
-  <ejs-grid :dataSource="data" :allowGrouping="true" :groupSettings="groupOptions">
-    <e-columns>
-      <e-column field="OrderID" headerText="Order ID" width="120"></e-column>
-      <e-column field="CustomerID" headerText="Customer ID" width="140"></e-column>
-      <e-column field="ShipCity" headerText="Ship City" width="140"></e-column>
-      <e-column field="ShipCountry" headerText="Ship Country" width="140"></e-column>
-    </e-columns>
-  </ejs-grid>
-</template>
-
-<script setup>
-import { provide } from 'vue';
-import { GridComponent as EjsGrid, ColumnsDirective as EColumns, ColumnDirective as EColumn, Group } from '@syncfusion/ej2-vue-grids';
-import { data } from './datasource';
-
-const groupOptions = { columns: ['ShipCountry', 'ShipCity'], isGroupOpenByDefault: (args: any) => args.level === 1 && args.key === 'Germany' };
-provide('grid', [Group]);
-</script>
+{% highlight html tabtitle="Composition API (~/src/App.vue)" %}
+{% include code-snippet/grid-sdk/vue/grid/group/group-expand-callback-cs1/app-composition.vue %}
+{% endhighlight %}
+{% highlight html tabtitle="Options API (~/src/App.vue)" %}
+{% include code-snippet/grid-sdk/vue/grid/group/group-expand-callback-cs1/app.vue %}
+{% endhighlight %}
+{% highlight js tabtitle="datasource.js" %}
+{% include code-snippet/grid-sdk/vue/grid/group/group-expand-callback-cs1/datasource.js %}
 {% endhighlight %}
 {% endtabs %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/grid/group/group-expand-callback-cs1" %}
 
 > * Group keys are unique only within their parent group. Check the `level` along with the `key`, as shown above, to identify a group exactly.
 > * When `isGroupOpenByDefault` is defined, it takes precedence over `defaultExpanded` for the groups it is invoked for.
@@ -82,27 +62,17 @@ When scrolling through an expanded group, the `enableSticky` property of [groupS
 The following example expands the first level of groups and keeps the caption row sticky while scrolling.
 
 {% tabs %}
-{% highlight html tabtitle="App.vue" %}
-<template>
-  <ejs-grid :dataSource="data" :allowGrouping="true" :groupSettings="groupOptions">
-    <e-columns>
-      <e-column field="OrderID" headerText="Order ID" width="120"></e-column>
-      <e-column field="CustomerID" headerText="Customer ID" width="140"></e-column>
-      <e-column field="ShipCity" headerText="Ship City" width="140"></e-column>
-      <e-column field="ShipCountry" headerText="Ship Country" width="140"></e-column>
-    </e-columns>
-  </ejs-grid>
-</template>
-
-<script setup>
-import { provide } from 'vue';
-import { GridComponent as EjsGrid, ColumnsDirective as EColumns, ColumnDirective as EColumn, Group } from '@syncfusion/ej2-vue-grids';
-import { data } from './datasource';
-
-const groupOptions = { columns: ['ShipCountry', 'ShipCity'], defaultExpanded: 1, enableSticky: true };
-provide('grid', [Group]);
-</script>
+{% highlight html tabtitle="Composition API (~/src/App.vue)" %}
+{% include code-snippet/grid-sdk/vue/grid/group/group-sticky-caption-cs1/app-composition.vue %}
+{% endhighlight %}
+{% highlight html tabtitle="Options API (~/src/App.vue)" %}
+{% include code-snippet/grid-sdk/vue/grid/group/group-sticky-caption-cs1/app.vue %}
+{% endhighlight %}
+{% highlight js tabtitle="datasource.js" %}
+{% include code-snippet/grid-sdk/vue/grid/group/group-sticky-caption-cs1/datasource.js %}
 {% endhighlight %}
 {% endtabs %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/grid/group/group-sticky-caption-cs1" %}
 
 > The Grid must have a fixed [height](https://ej2.syncfusion.com/vue/documentation/api/grid#height) so that the content area is scrollable and the sticky caption row can be observed.

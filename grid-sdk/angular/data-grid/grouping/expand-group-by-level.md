@@ -20,35 +20,17 @@ In the following example, the Grid is grouped by `ShipCountry` and `ShipCity`. S
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-import { Component, OnInit } from '@angular/core';
-import { GridModule, GroupService } from '@syncfusion/ej2-angular-grids';
-import { data } from './datasource';
-
-@Component({
-    imports: [GridModule],
-    providers: [GroupService],
-    standalone: true,
-    selector: 'app-root',
-    template: `<ejs-grid [dataSource]='data' [allowGrouping]='true' [groupSettings]='groupOptions'>
-        <e-columns>
-            <e-column field='OrderID' headerText='Order ID' width='120'></e-column>
-            <e-column field='CustomerID' headerText='Customer ID' width='140'></e-column>
-            <e-column field='ShipCity' headerText='Ship City' width='140'></e-column>
-            <e-column field='ShipCountry' headerText='Ship Country' width='140'></e-column>
-        </e-columns>
-    </ejs-grid>`
-})
-export class AppComponent implements OnInit {
-    public data?: object[];
-    public groupOptions?: object;
-
-    ngOnInit(): void {
-        this.data = data;
-        this.groupOptions = { columns: ['ShipCountry', 'ShipCity'], defaultExpanded: 1 };
-    }
-}
+{% include code-snippet/grid-sdk/angular/grid/group-expand-level-cs1/src/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/grid-sdk/angular/grid/group-expand-level-cs1/src/main.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/grid-sdk/angular/grid/group-expand-level-cs1/src/datasource.ts %}
 {% endhighlight %}
 {% endtabs %}
+
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/group-expand-level-cs1" %}
 
 ## Expanding via callback
 
@@ -58,35 +40,17 @@ In the following example, only the `Germany` group at the first level is expande
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-import { Component, OnInit } from '@angular/core';
-import { GridModule, GroupService } from '@syncfusion/ej2-angular-grids';
-import { data } from './datasource';
-
-@Component({
-    imports: [GridModule],
-    providers: [GroupService],
-    standalone: true,
-    selector: 'app-root',
-    template: `<ejs-grid [dataSource]='data' [allowGrouping]='true' [groupSettings]='groupOptions'>
-        <e-columns>
-            <e-column field='OrderID' headerText='Order ID' width='120'></e-column>
-            <e-column field='CustomerID' headerText='Customer ID' width='140'></e-column>
-            <e-column field='ShipCity' headerText='Ship City' width='140'></e-column>
-            <e-column field='ShipCountry' headerText='Ship Country' width='140'></e-column>
-        </e-columns>
-    </ejs-grid>`
-})
-export class AppComponent implements OnInit {
-    public data?: object[];
-    public groupOptions?: object;
-
-    ngOnInit(): void {
-        this.data = data;
-        this.groupOptions = { columns: ['ShipCountry', 'ShipCity'], isGroupOpenByDefault: (args: any) => args.level === 1 && args.key === 'Germany' };
-    }
-}
+{% include code-snippet/grid-sdk/angular/grid/group-expand-callback-cs1/src/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/grid-sdk/angular/grid/group-expand-callback-cs1/src/main.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/grid-sdk/angular/grid/group-expand-callback-cs1/src/datasource.ts %}
 {% endhighlight %}
 {% endtabs %}
+
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/group-expand-callback-cs1" %}
 
 > * Group keys are unique only within their parent group. Check the `level` along with the `key`, as shown above, to identify a group exactly.
 > * When `isGroupOpenByDefault` is defined, it takes precedence over `defaultExpanded` for the groups it is invoked for.
@@ -99,34 +63,16 @@ The following example expands the first level of groups and keeps the caption ro
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
-import { Component, OnInit } from '@angular/core';
-import { GridModule, GroupService } from '@syncfusion/ej2-angular-grids';
-import { data } from './datasource';
-
-@Component({
-    imports: [GridModule],
-    providers: [GroupService],
-    standalone: true,
-    selector: 'app-root',
-    template: `<ejs-grid [dataSource]='data' [allowGrouping]='true' [groupSettings]='groupOptions'>
-        <e-columns>
-            <e-column field='OrderID' headerText='Order ID' width='120'></e-column>
-            <e-column field='CustomerID' headerText='Customer ID' width='140'></e-column>
-            <e-column field='ShipCity' headerText='Ship City' width='140'></e-column>
-            <e-column field='ShipCountry' headerText='Ship Country' width='140'></e-column>
-        </e-columns>
-    </ejs-grid>`
-})
-export class AppComponent implements OnInit {
-    public data?: object[];
-    public groupOptions?: object;
-
-    ngOnInit(): void {
-        this.data = data;
-        this.groupOptions = { columns: ['ShipCountry', 'ShipCity'], defaultExpanded: 1, enableSticky: true };
-    }
-}
+{% include code-snippet/grid-sdk/angular/grid/group-sticky-caption-cs1/src/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/grid-sdk/angular/grid/group-sticky-caption-cs1/src/main.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/grid-sdk/angular/grid/group-sticky-caption-cs1/src/datasource.ts %}
 {% endhighlight %}
 {% endtabs %}
+
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/group-sticky-caption-cs1" %}
 
 > The Grid must have a fixed [height](https://ej2.syncfusion.com/angular/documentation/api/grid#height) so that the content area is scrollable and the sticky caption row can be observed.

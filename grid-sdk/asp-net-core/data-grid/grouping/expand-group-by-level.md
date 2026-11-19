@@ -19,16 +19,11 @@ Use the [defaultExpanded](https://ej2.syncfusion.com/aspnetcore/documentation/ap
 In the following example, the Grid is grouped by `ShipCountry` and `ShipCity`. Setting `defaultExpanded` to `1` expands the `ShipCountry` groups, while the `ShipCity` groups remain collapsed.
 
 {% tabs %}
-{% highlight cshtml tabtitle="Index.cshtml" %}
-<ejs-grid id="Grid" dataSource="@ViewBag.DataSource" allowGrouping="true">
-    <e-grid-groupsettings columns="@(new string[] { "ShipCountry", "ShipCity" })" defaultExpanded="1"></e-grid-groupsettings>
-    <e-grid-columns>
-        <e-grid-column field="OrderID" headerText="Order ID" width="120"></e-grid-column>
-        <e-grid-column field="CustomerID" headerText="Customer ID" width="140"></e-grid-column>
-        <e-grid-column field="ShipCity" headerText="Ship City" width="140"></e-grid-column>
-        <e-grid-column field="ShipCountry" headerText="Ship Country" width="140"></e-grid-column>
-    </e-grid-columns>
-</ejs-grid>
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/grid-sdk/asp-net-core/grid/grouping/group-expand-level-cs1/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="group-expand-level-cs1.cs" %}
+{% include code-snippet/grid-sdk/asp-net-core/grid/grouping/group-expand-level-cs1/group-expand-level-cs1.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -39,23 +34,11 @@ To decide granularly which groups should be expanded, use the [isGroupOpenByDefa
 In the following example, only the `Germany` group at the first level is expanded by default.
 
 {% tabs %}
-{% highlight cshtml tabtitle="Index.cshtml" %}
-<ejs-grid id="Grid" dataSource="@ViewBag.DataSource" allowGrouping="true">
-    <e-grid-groupsettings columns="@(new string[] { "ShipCountry", "ShipCity" })" isGroupOpenByDefault="isGroupOpen" defaultExpanded="0"></e-grid-groupsettings>
-    <e-grid-columns>
-        <e-grid-column field="OrderID" headerText="Order ID" width="120"></e-grid-column>
-        <e-grid-column field="CustomerID" headerText="Customer ID" width="140"></e-grid-column>
-        <e-grid-column field="ShipCity" headerText="Ship City" width="140"></e-grid-column>
-        <e-grid-column field="ShipCountry" headerText="Ship Country" width="140"></e-grid-column>
-    </e-grid-columns>
-</ejs-grid>
-
-<script>
-    function isGroupOpen(args) {
-        // Open only the 'Germany' group; its child groups stay collapsed.
-        return args.level === 1 && args.key === 'Germany';
-    }
-</script>
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/grid-sdk/asp-net-core/grid/grouping/group-expand-callback-cs1/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="group-expand-callback-cs1.cs" %}
+{% include code-snippet/grid-sdk/asp-net-core/grid/grouping/group-expand-callback-cs1/group-expand-callback-cs1.cs %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -69,16 +52,11 @@ When scrolling through an expanded group, the `enableSticky` property of [groupS
 The following example expands the first level of groups and keeps the caption row sticky while scrolling.
 
 {% tabs %}
-{% highlight cshtml tabtitle="Index.cshtml" %}
-<ejs-grid id="Grid" dataSource="@ViewBag.DataSource" allowGrouping="true">
-    <e-grid-groupsettings columns="@(new string[] { "ShipCountry", "ShipCity" })" defaultExpanded="1" enableSticky="true"></e-grid-groupsettings>
-    <e-grid-columns>
-        <e-grid-column field="OrderID" headerText="Order ID" width="120"></e-grid-column>
-        <e-grid-column field="CustomerID" headerText="Customer ID" width="140"></e-grid-column>
-        <e-grid-column field="ShipCity" headerText="Ship City" width="140"></e-grid-column>
-        <e-grid-column field="ShipCountry" headerText="Ship Country" width="140"></e-grid-column>
-    </e-grid-columns>
-</ejs-grid>
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/grid-sdk/asp-net-core/grid/grouping/group-sticky-caption-cs1/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="group-sticky-caption-cs1.cs" %}
+{% include code-snippet/grid-sdk/asp-net-core/grid/grouping/group-sticky-caption-cs1/group-sticky-caption-cs1.cs %}
 {% endhighlight %}
 {% endtabs %}
 
