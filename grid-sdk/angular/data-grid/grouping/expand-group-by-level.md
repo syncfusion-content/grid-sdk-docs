@@ -25,9 +25,6 @@ In the following example, the Grid is grouped by `ShipCountry` and `ShipCity`. S
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid-sdk/angular/grid/group-expand-level-cs1/src/main.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="datasource.ts" %}
-{% include code-snippet/grid-sdk/angular/grid/group-expand-level-cs1/src/datasource.ts %}
-{% endhighlight %}
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/group-expand-level-cs1" %}
@@ -44,9 +41,6 @@ In the following example, only the `Germany` group at the first level is expande
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid-sdk/angular/grid/group-expand-callback-cs1/src/main.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="datasource.ts" %}
-{% include code-snippet/grid-sdk/angular/grid/group-expand-callback-cs1/src/datasource.ts %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -67,9 +61,6 @@ The following example expands the first level of groups and keeps the caption ro
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid-sdk/angular/grid/group-sticky-caption-cs1/src/main.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="datasource.ts" %}
-{% include code-snippet/grid-sdk/angular/grid/group-sticky-caption-cs1/src/datasource.ts %}
 {% endhighlight %}
 {% endtabs %}
 

@@ -25,9 +25,6 @@ In the following example, the Grid is grouped by `ShipCountry` and `ShipCity`. S
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/grid-sdk/javascript/grid/group-expand-level-cs1/index.html %}
 {% endhighlight %}
-{% highlight js tabtitle="datasource.js" %}
-{% include code-snippet/grid-sdk/javascript/grid/group-expand-level-cs1/es5-datasource.js %}
-{% endhighlight %}
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/group-expand-level-cs1" %}
@@ -44,9 +41,6 @@ In the following example, only the `Germany` group at the first level is expande
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/grid-sdk/javascript/grid/group-expand-callback-cs1/index.html %}
-{% endhighlight %}
-{% highlight js tabtitle="datasource.js" %}
-{% include code-snippet/grid-sdk/javascript/grid/group-expand-callback-cs1/es5-datasource.js %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -67,9 +61,6 @@ The following example expands the first level of groups and keeps the caption ro
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/grid-sdk/javascript/grid/group-sticky-caption-cs1/index.html %}
-{% endhighlight %}
-{% highlight js tabtitle="datasource.js" %}
-{% include code-snippet/grid-sdk/javascript/grid/group-sticky-caption-cs1/es5-datasource.js %}
 {% endhighlight %}
 {% endtabs %}
 
