@@ -26,9 +26,10 @@ export default {
         formatSettings: [{ name: 'Amount', format: 'C0' }],
         filters: [],
         fieldMapping: [
-          { name: 'Quarter', groupName: 'Product category' },
-          { name: 'Products', groupName: 'Product category' },
-          { name: 'Amount', groupName: 'Product category', caption: 'Sold Amount' },
+          { name: 'Quarter' },
+          { name: 'Products', groupName: 'Products' },
+          { name: 'Amount', groupName: 'Sales/Regional', caption: 'Sold Amount' },
+          { name: 'Sold', groupName: 'Sales/Domestic' },
         ]
       },
       height: 350,
