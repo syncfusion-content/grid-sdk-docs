@@ -3,7 +3,7 @@ layout: post
 title: How to show or hide tooltip in React Pivot Table | Syncfusion
 description: Step-by-step example showing how to show or hide the tooltip in the React Pivot Table using the showTooltip property.
 control: Pivot Table
-platform: ej2-react
+platform: grid-sdk
 documentation: ug
 domainurl: ##DomainURL##
 ---

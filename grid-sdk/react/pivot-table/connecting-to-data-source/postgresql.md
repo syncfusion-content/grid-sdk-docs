@@ -2,7 +2,7 @@
 layout: post
 title: PostgreSQL data binding in React Pivot Table | Syncfusion
 description: Learn how the React Pivot Table connects to PostgreSQL through an ASP.NET Core Web API and Npgsql for data binding, CRUD, and server-side integration.
-platform: ej2-react
+platform: grid-sdk
 control: Pivot Table
 documentation: ug
 domainurl: ##DomainURL##

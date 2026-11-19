@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Print in ##Platform_Name## Pivot Table | Syncfusion
-description: Learn how the ##Platform_Name## Pivot Table prints the current state of the pivot table or pivot chart via the underlying Grid's `print` method.
-platform: ej2-javascript
+title: Print in TypeScript Pivot Table | Syncfusion
+description: Learn how the TypeScript Pivot Table prints the current state of the pivot table or pivot chart via the underlying Grid's `print` method.
+platform: grid-sdk
 control: Print
-publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Print in ##Platform_Name## Pivot Table
+# Print in TypeScript Pivot Table
 
 The TypeScript Pivot Table component supports print functionality, allowing users to print the current state of the pivot table or pivot chart. This feature enables users to generate hard copies of pivot table reports for convenient review and data sharing.
 

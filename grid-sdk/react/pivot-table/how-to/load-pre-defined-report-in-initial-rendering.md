@@ -2,7 +2,7 @@
 layout: post
 title: How to load a saved report in Pivot Table on startup | Syncfusion
 description: Step-by-step example showing how to load a pre-defined report from a saved report collection on the initial render of the Pivot Table using the dataBound event.
-platform: ej2-react
+platform: grid-sdk
 control: Pivot Table
 documentation: ug
 domainurl: ##DomainURL##

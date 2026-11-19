@@ -3,7 +3,7 @@ layout: post
 title: Aggregation in React Pivot Table | Syncfusion
 description: Learn how the React Pivot Table aggregates grouped values using built-in types like Sum, Count, Average, Min, Max, Product, Median, and more.
 control: Pivot Table
-platform: ej2-react
+platform: grid-sdk
 documentation: ug
 domainurl: ##DomainURL##
 ---

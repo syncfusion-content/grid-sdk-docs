@@ -1,0 +1,59 @@
+<div style="display: flex; gap: 10px; flex-wrap: wrap; margin: 5px">
+    <ejs-button id="addRecord" content="Add Record" cssClass="e-outline"></ejs-button>
+    <ejs-button id="deleteRecord" content="Delete Selected Record" cssClass="e-outline"></ejs-button>
+    <ejs-button id="addRecordAsync" content="Add Record (Async)" cssClass="e-outline"></ejs-button>
+    <ejs-button id="updateRecordAsync" content="Update Record (Async)" cssClass="e-outline"></ejs-button>
+    <ejs-button id="deleteRecordAsync" content="Delete Selected Record (Async)" cssClass="e-outline"></ejs-button>
+</div>
+<ejs-grid id="grid" dataSource="@ViewBag.dataSource" allowSorting="true" allowFiltering="true" allowPaging="true">
+
+    <e-grid-filterSettings type="Excel"></e-grid-filterSettings>
+    <e-grid-pageSettings pageSize="8" pageCount="4"></e-grid-pageSettings>
+    <e-grid-editSettings allowEditing="true" allowAdding="true" allowDeleting="true"></e-grid-editSettings>
+    <e-grid-columns>
+        <e-grid-column field="SaleID" headerText="Sale ID" width="100" isPrimaryKey="true" textAlign="Right"></e-grid-column>
+        <e-grid-column field="ProductName" headerText="Product Name" width="120"></e-grid-column>
+        <e-grid-column field="Category" headerText="Category" clipMode="EllipsisWithTooltip" width="100"></e-grid-column>
+        <e-grid-column field="SalesPerson" headerText="Sales Person" width="110"></e-grid-column>
+        <e-grid-column field="UnitsSold" headerText="Units Sold" width="100" textAlign="Right"></e-grid-column>
+        <e-grid-column field="UnitPrice" headerText="Unit Price" format="C2" width="110" textAlign="Right"></e-grid-column>
+        <e-grid-column field="TotalRevenue" headerText="Revenue" format="C2" width="110" textAlign="Right"></e-grid-column>
+    </e-grid-columns>
+</ejs-grid>
+
+<script>
+    function getGrid() {
+        return document.getElementById('grid').ej2_instances[0];
+    }
+    function randomId() {
+        return 'S-' + Math.floor(1000 * Math.random());
+    }
+    document.getElementById('addRecord').addEventListener('click', function () {
+        getGrid().addRecord({
+            SaleID: randomId(), ProductName: 'Smart Lamp', UnitsSold: Math.floor(20 * Math.random()) + 1,
+            UnitPrice: 120.5, TotalRevenue: 2410, IsDiscounted: false, Category: 'Home Tech', Region: 'Central', SalesPerson: 'Bob'
+        });
+    });
+    document.getElementById('deleteRecord').addEventListener('click', function () {
+        getGrid().deleteRecord();
+    });
+    document.getElementById('addRecordAsync').addEventListener('click', async function () {
+        var records = [
+            { SaleID: randomId(), ProductName: 'Smart Watch', UnitsSold: 12, UnitPrice: 250, TotalRevenue: 3000, IsDiscounted: false, Category: 'Wearables', Region: 'East', SalesPerson: 'Julia' },
+            { SaleID: randomId(), ProductName: 'Gaming Laptop', UnitsSold: 6, UnitPrice: 1200, TotalRevenue: 7200, IsDiscounted: true, Category: 'Electronics', Region: 'West', SalesPerson: 'Charlie' }
+        ];
+        await Promise.all(records.map(function (record) { return getGrid().addRecordAsync(record); }));
+    });
+    document.getElementById('updateRecordAsync').addEventListener('click', async function () {
+        var row = getGrid().getCurrentViewRecords()[1];
+        await getGrid().updateRowAsync(1, {
+            SaleID: row.SaleID,
+            ProductName: 'Phone Pro',
+            UnitsSold: Math.floor(5 * Math.random()) + 1,
+            UnitPrice: Math.floor(1000 * Math.random()) + 500
+        });
+    });
+    document.getElementById('deleteRecordAsync').addEventListener('click', async function () {
+        await getGrid().deleteRecordAsync();
+    });
+</script>

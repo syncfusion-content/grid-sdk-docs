@@ -5,7 +5,6 @@ description: Learn how to render custom string values (e.g. seconds as HH:MM:SS)
 platform: grid-sdk
 control: Display string value to pivot table values
 documentation: ug
-publishingplatform: ##Platform_Name## 
 ---
 # How to Display String Values in ASP.NET MVC Pivot Table
 

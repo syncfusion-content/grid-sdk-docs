@@ -11,8 +11,6 @@ documentation: ug
 
 The column chooser has options to show or hide columns dynamically. It can be enabled by defining the `showColumnChooser` as true.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-core/tree-grid/columns-core/columnchooser/tagHelper %}
@@ -22,15 +20,6 @@ The column chooser has options to show or hide columns dynamically. It can be en
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight c# tabtitle="Columnchooser.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/tree-grid/columns-core/columnchooser/columnchooser.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
 
 
 N> You can hide the column names in column chooser by defining the `showInColumnChooser` property of [`e-treegrid-column`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.TreeGrid.TreeGridColumn.html) tag helper as false.
@@ -38,8 +27,6 @@ N> You can hide the column names in column chooser by defining the `showInColumn
 ## Open column chooser by external button
 
 The Column chooser can be displayed on a page through external button by invoking the **openColumnChooser** method with X and Y axis positions.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -49,15 +36,6 @@ The Column chooser can be displayed on a page through external button by invokin
 {% include code-snippet/grid-sdk/asp-net-core/tree-grid/columns-core/externalbutton/externalbutton.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight c# tabtitle="Externalbutton.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/tree-grid/columns-core/externalbutton/externalbutton.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 ## Column chooser template in Syncfusion ASP.NET Core TreeGrid
 
@@ -73,7 +51,7 @@ To implement a custom column chooser template in the TreeGrid, use the following
 
 * **columnChooserSettings.renderCustomColumnChooser** -  Allows you to override the default column chooser UI with a fully customized layout.
 
-In this example, a Syncfusion TreeView component is rendered inside the column chooser. To use the TreeView component, install the Syncfusion TreeView package as described in the [documentation](../../treeview/getting-started). The `columnChooserSettings.template` property defines a element with the `id` set to **tree**, providing as a container for the TreeView component. The `columnChooserSettings.renderCustomColumnChooser` method initializes the TreeView with checkboxes and appends it to this template. Checkbox selection is handled using the [nodeClicked](../../api/treeview#nodeclicked) and [keyPress](../../api/treeview#keypress) events, which organize columns into **Task Info**, **Schedule**, and **Progress**.
+In this example, a Syncfusion TreeView component is rendered inside the column chooser. To use the TreeView component, install the Syncfusion TreeView package as described in the [documentation](https://ej2.syncfusion.com/aspnetcore/documentation/treeview/getting-started). The `columnChooserSettings.template` property defines a element with the `id` set to **tree**, providing as a container for the TreeView component. The `columnChooserSettings.renderCustomColumnChooser` method initializes the TreeView with checkboxes and appends it to this template. Checkbox selection is handled using the [nodeClicked](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.TreeView.html#Syncfusion_EJ2_Navigations_TreeView_NodeClicked) and [keyPress](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Navigations.TreeView.html#Syncfusion_EJ2_Navigations_TreeView_KeyPress) events, which organize columns into **Task Info**, **Schedule**, and **Progress**.
 
 The column chooser footer is customized using `columnChooserSettings.footerTemplate`, replacing the default buttons with customized **Apply** and **Close** buttons. The **Apply** button updates column visibility based on selection, while the **Close** button closes the column chooser via the `onClick` event. Additionally, the header is customized using `columnChooserSettings.headerTemplate` to include a title and an icon.
 

@@ -16,7 +16,7 @@ You can also check on this video for Observable binding in Tree Grid:
 
 {% youtube "https://www.youtube.com/watch?v=iq_A00-068k" %}
 
-### Observable binding using Async pipe
+## Observable binding using Async pipe
 
 TreeGrid data can be consumed from an `Observable` object by piping it through an `async` pipe. The `async` pipe is used to subscribe the observable object and resolve with the latest value emitted by it.
 
@@ -163,9 +163,9 @@ export class DataService extends Subject<Object> {
 
 ### Handling child data
 
-Using the custom binding feature you can bind the child data for a parent record as per your custom logic. When a parent record is expanded, [`dataStateChange`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#datastatechange) event is triggered in which you can assign your custom data to the `childData` property of the [`dataStateChange`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#datastatechange) event arguments.
+Using the custom binding feature you can bind the child data for a parent record as per your custom logic. When a parent record is expanded, [`dataStateChange`](https://ej2.syncfusion.com/angular/documentation/api/treegrid#datastatechange) event is triggered in which you can assign your custom data to the `childData` property of the [`dataStateChange`](https://ej2.syncfusion.com/angular/documentation/api/treegrid#datastatechange) event arguments.
 After assigning the child data, `childDataBind` method should be called from the
-[`dataStateChange`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#datastatechange) event arguments to indicate that the data is bound.
+[`dataStateChange`](https://ej2.syncfusion.com/angular/documentation/api/treegrid#datastatechange) event arguments to indicate that the data is bound.
 
 ```
 
@@ -311,7 +311,7 @@ export class AppComponent implements OnInit {
 
 ### Perform CRUD operations
 
-The [`dataSourceChanged`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#datasourcechanged) event is triggered to update the treegrid data. You can perform the save operation based on the event arguments, and you need to call the [`endEdit`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#endedit) method to indicate the completion of save operation.
+The [`dataSourceChanged`](https://ej2.syncfusion.com/angular/documentation/api/treegrid#datasourcechanged) event is triggered to update the treegrid data. You can perform the save operation based on the event arguments, and you need to call the [`endEdit`](https://ej2.syncfusion.com/angular/documentation/api/treegrid#endedit) method to indicate the completion of save operation.
 
 ```
 import { Component, OnInit, ViewChild } from '@angular/core';
@@ -566,9 +566,9 @@ To bind observable data without using the async pipe in the TreeGrid, follow the
 
 ### Data binding
 
-The custom binding feature of the Syncfusion Angular TreeGrid enables binding child data to a parent record based on application-specific logic, such as fetching from a server or filtering local data. When a parent record is expanded, the [dataStateChange](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#datastatechange) event is triggered. Within this event, assign an array of records matching the TreeGrid’s data model (e.g., with fields like `TicketID` and `ParentTicketID`) to the `childData` property of the event arguments. Then, call the `childDataBind` method to indicate that the data is bound. For robust applications, handle potential errors during data retrieval, such as failed server requests.
+The custom binding feature of the Syncfusion Angular TreeGrid enables binding child data to a parent record based on application-specific logic, such as fetching from a server or filtering local data. When a parent record is expanded, the [dataStateChange](https://ej2.syncfusion.com/angular/documentation/api/treegrid#datastatechange) event is triggered. Within this event, assign an array of records matching the TreeGrid’s data model (e.g., with fields like `TicketID` and `ParentTicketID`) to the `childData` property of the event arguments. Then, call the `childDataBind` method to indicate that the data is bound. For robust applications, handle potential errors during data retrieval, such as failed server requests.
 
-After assigning the child data, `childDataBind` method should be called from the [`dataStateChange`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#datastatechange) event arguments to indicate that the data is bound.
+After assigning the child data, `childDataBind` method should be called from the [`dataStateChange`](https://ej2.syncfusion.com/angular/documentation/api/treegrid#datastatechange) event arguments to indicate that the data is bound.
 
 ```
 import { Component, OnInit, ViewChild } from '@angular/core';
@@ -688,7 +688,7 @@ export class TaskService extends Subject<DataStateChangeEventArgs> {
 
 ### Handling child data
 
-Using the custom binding feature, child data can be bound to a parent record based on custom logic. When a parent record is expanded, the [`dataStateChange`](https://ej2.syncfusion.com/angular/documentation/api/treegrid/#datastatechange) event is triggered. Assign the child data to the `childData` property of the event arguments and call the `childDataBind` method to indicate that the data is bound. For real-world applications, child data is typically fetched from a server.
+Using the custom binding feature, child data can be bound to a parent record based on custom logic. When a parent record is expanded, the [`dataStateChange`](https://ej2.syncfusion.com/angular/documentation/api/treegrid#datastatechange) event is triggered. Assign the child data to the `childData` property of the event arguments and call the `childDataBind` method to indicate that the data is bound. For real-world applications, child data is typically fetched from a server.
 
 ```
 import { Component, OnInit, ViewChild } from '@angular/core';

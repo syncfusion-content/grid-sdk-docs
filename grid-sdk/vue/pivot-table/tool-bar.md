@@ -3,7 +3,7 @@ layout: post
 title: Toolbar in Vue Pivot Table | Syncfusion
 description: Learn how the Vue Pivot Table shows a built-in toolbar with New, Save, Load, Grid, Chart, Export, and toggles for grand totals and sub-totals at runtime.
 control: Tool bar 
-platform: ej2-vue
+platform: grid-sdk
 documentation: ug
 domainurl: ##DomainURL##
 ---

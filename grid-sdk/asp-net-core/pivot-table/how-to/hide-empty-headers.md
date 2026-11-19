@@ -4,7 +4,6 @@ title: How to Hide Empty Headers in ASP.NET Core Pivot Table | Syncfusion
 description: Learn how to hide "Undefined" headers in the ASP.NET Core Pivot Table by setting the showHeaderWhenEmpty property under e-datasourcesettings to false.
 platform: grid-sdk
 control: Hide Empty Headers
-publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
@@ -16,8 +15,6 @@ For example, when the raw data contains **"United Kingdom"** for the 'Country' f
 
 > By default, this property is set to **true**.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/hide-headers/tagHelper %}
@@ -26,17 +23,5 @@ For example, when the raw data contains **"United Kingdom"** for the 'Country' f
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/hide-headers/fieldlist.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/hide-headers/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Fieldlist.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/hide-headers/fieldlist.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 

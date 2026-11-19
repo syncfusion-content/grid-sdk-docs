@@ -74,7 +74,7 @@ The following example demonstrates wizard-like dialog editing with unobtrusive v
 
 ## Using Tab inside the dialog editing
 
-The [Tab](../../tab/getting-started) component can be used inside the dialog edit UI via the dialog template feature. Enable the feature by setting [editSettings.mode](https://ej2.syncfusion.com/react/documentation/api/treegrid/editSettings#mode) to **Dialog** and [editSettings.template](https://ej2.syncfusion.com/react/documentation/api/treegrid/editSettings#template) to a react component.
+The [Tab](https://ej2.syncfusion.com/react/documentation/tab/getting-started) component can be used inside the dialog edit UI via the dialog template feature. Enable the feature by setting [editSettings.mode](https://ej2.syncfusion.com/react/documentation/api/treegrid/editSettings#mode) to **Dialog** and [editSettings.template](https://ej2.syncfusion.com/react/documentation/api/treegrid/editSettings#template) to a react component.
 
 The following example demonstrates using Tab inside the dialog template:
 

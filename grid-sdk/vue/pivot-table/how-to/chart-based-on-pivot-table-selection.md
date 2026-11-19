@@ -3,7 +3,7 @@ layout: post
 title: Render a chart from selected cells in Vue Pivot Table | Syncfusion
 description: Step-by-step example showing how to render a chart from selected cells in the Vue Pivot Table, using the cellSelected event to pass data to a Chart.
 control: Chart based on pivot table selection 
-platform: ej2-vue
+platform: grid-sdk
 documentation: ug
 domainurl: ##DomainURL##
 ---

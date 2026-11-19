@@ -10,9 +10,8 @@ domainurl: https://help.syncfusion.com/grid-sdk
 
 # Row Template in TypeScript TreeGrid
 
-The [`rowTemplate`](../../api/treegrid#rowtemplate) has an option to customize the look and behavior of the treegrid rows. The [`rowTemplate`](../../api/treegrid#rowtemplate) property accepts either the template string or HTML element ID.
+The [`rowTemplate`](https://ej2.syncfusion.com/documentation/api/treegrid#rowtemplate) has an option to customize the look and behavior of the treegrid rows. The [`rowTemplate`](https://ej2.syncfusion.com/documentation/api/treegrid#rowtemplate) property accepts either the template string or HTML element ID.
 
-{% if page.publishingplatform == "typescript" %}
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -25,27 +24,13 @@ The [`rowTemplate`](../../api/treegrid#rowtemplate) has an option to customize t
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/treegrid/row-template-cs1" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/treegrid/row-template-cs1/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/treegrid/row-template-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/treegrid/row-template-cs1" %}
-{% endif %}
-
-The [`rowTemplate`](../../api/treegrid#rowtemplate) property accepts only the TR element.
+The [`rowTemplate`](https://ej2.syncfusion.com/documentation/api/treegrid#rowtemplate) property accepts only the TR element.
 
 ## Row template with formatting
 
-If the [`rowTemplate`](../../api/treegrid#rowtemplate) is used, the value cannot be  formatted  inside the template using the [`columns.format`](../../api/treegrid/column#format) property. In that case, a function should be defined globally to format the value and invoke it inside the template.
+If the [`rowTemplate`](https://ej2.syncfusion.com/documentation/api/treegrid#rowtemplate) is used, the value cannot be  formatted  inside the template using the [`columns.format`](https://ej2.syncfusion.com/documentation/api/treegrid/column#format) property. In that case, a function should be defined globally to format the value and invoke it inside the template.
 
-{% if page.publishingplatform == "typescript" %}
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -58,19 +43,6 @@ If the [`rowTemplate`](../../api/treegrid#rowtemplate) is used, the value cannot
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/treegrid/row-template-formatting-cs1" %}
 
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/treegrid/row-template-formatting-cs1/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/treegrid/row-template-formatting-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/treegrid/row-template-formatting-cs1" %}
-{% endif %}
 
 ## Limitations
 

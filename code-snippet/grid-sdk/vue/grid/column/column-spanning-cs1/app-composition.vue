@@ -33,16 +33,7 @@ provide('grid', [Freeze, Sort]);
 </script>
 
 <style>
-@import "https://cdn.syncfusion.com/ej2/30.2.4/ej2-base/styles/bootstrap5.css";
-@import "https://cdn.syncfusion.com/ej2/30.2.4/ej2-buttons/styles/bootstrap5.css";
-@import "https://cdn.syncfusion.com/ej2/30.2.4/ej2-popups/styles/bootstrap5.css";
-@import "https://cdn.syncfusion.com/ej2/30.2.4/ej2-navigations/styles/bootstrap5.css";
-@import "https://cdn.syncfusion.com/ej2/30.2.4/ej2-dropdowns/styles/bootstrap5.css";
-@import "https://cdn.syncfusion.com/ej2/30.2.4/ej2-lists/styles/bootstrap5.css";
-@import "https://cdn.syncfusion.com/ej2/30.2.4/ej2-inputs/styles/bootstrap5.css";
-@import "https://cdn.syncfusion.com/ej2/30.2.4/ej2-calendars/styles/bootstrap5.css";
-@import "https://cdn.syncfusion.com/ej2/30.2.4/ej2-splitbuttons/styles/bootstrap5.css";
-@import "https://cdn.syncfusion.com/ej2/30.2.4/ej2-grids/styles/bootstrap5.css";
+@import "../node_modules/@syncfusion/ej2-material3-theme/styles/grid/index.css";
 
 .doctor-designation {
   font-size: 12px;

@@ -1,10 +1,9 @@
 ---
 layout: post
-title: Custom Aggregate in ASP.NET Core Grid Component
+title: Custom Aggregate in ASP.NET Core Grid Component | Syncfusion
 description: Learn here all about Custom Aggregate in Syncfusion ASP.NET Core Grid component of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Custom Aggregate
-publishingplatform: grid-sdk
 documentation: ug
 ---
 

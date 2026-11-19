@@ -2,7 +2,7 @@
 layout: post
 title: Angular Tree Grid DOM Virtualization | Syncfusion
 description: Learn how DOM virtualization in Tree Grid improves large dataset performance through viewport rendering, and efficient scrolling.
-platform: ej2-angular
+platform: grid-sdk
 control: DOM Virtualization
 documentation: ug
 domainurl: ##DomainURL##

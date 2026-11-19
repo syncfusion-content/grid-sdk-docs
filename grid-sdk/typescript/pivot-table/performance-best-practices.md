@@ -1,15 +1,14 @@
 ---
 layout: post
-title: Performance Tips in ##Platform_Name## Pivot Table | Syncfusion
-description: Learn how the ##Platform_Name## Pivot Table improves loading on large datasets with virtual scrolling, paging, server-side engine and data compression.
-platform: ej2-javascript
+title: Performance Tips in TypeScript Pivot Table | Syncfusion
+description: Learn how the TypeScript Pivot Table improves loading on large datasets with virtual scrolling, paging, server-side engine and data compression.
+platform: grid-sdk
 control: Performance best practices
-publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# Performance Best Practices in ##Platform_Name## Pivot Table
+# Performance Best Practices in TypeScript Pivot Table
 
 Performance optimization is crucial when working with large datasets in the [Syncfusion<sup style="font-size:70%">&reg;</sup> Typescript Pivot Table](https://www.syncfusion.com/javascript-ui-controls/js-pivot-table). This documentation provides some best practices to empower your data analysis and enhance the user experience.
 

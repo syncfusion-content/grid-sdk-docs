@@ -19,8 +19,6 @@ Interaction keys |Description
 <kbd>Ctrl + C</kbd> |Copy selected rows or cells data into clipboard.
 <kbd>Ctrl + Shift + H</kbd> |Copy selected rows or cells data with header into clipboard.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-core/tree-grid/clipboard/copy/tagHelper %}
@@ -30,25 +28,11 @@ Interaction keys |Description
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/tree-grid/clipboard/copy/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Copy.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/tree-grid/clipboard/copy/copy.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
 
 
 ## Copy to clipboard by external buttons
 
 To copy selected rows or cells data into the clipboard with help of external buttons, you need to invoke the `copy` method.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -58,18 +42,6 @@ To copy selected rows or cells data into the clipboard with help of external but
 {% include code-snippet/grid-sdk/asp-net-core/tree-grid/clipboard/copyButtons/copybuttons.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/tree-grid/clipboard/copyButtons/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Copybuttons.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/tree-grid/clipboard/copyButtons/copybuttons.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 
 
@@ -86,8 +58,6 @@ The below are the type of filter mode available in TreeGrid.
 
 * **None** : Only the Selected records will be in clipboard.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-core/tree-grid/clipboard/hierarchyMode/tagHelper %}
@@ -97,25 +67,11 @@ The below are the type of filter mode available in TreeGrid.
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/tree-grid/clipboard/hierarchyMode/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Hierarchy.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/tree-grid/clipboard/hierarchyMode/hierarchy.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
 
 
 ## AutoFill
 
 AutoFill Feature allows you to copy the data of selected cells and paste it to another cells by just dragging the autofill icon of the selected cells up to required cells. This feature is enabled by defining `enableAutoFill` property as true.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -125,18 +81,6 @@ AutoFill Feature allows you to copy the data of selected cells and paste it to a
 {% include code-snippet/grid-sdk/asp-net-core/tree-grid/clipboard/autofill/autofill.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/tree-grid/clipboard/autofill/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Autofill.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/tree-grid/clipboard/autofill/autofill.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 
 
@@ -152,8 +96,6 @@ N> * If `enableAutoFill` is set to true, then the autofill icon will be displaye
 
 You can able to copy the content of a cell or a group of cells by selecting the cells and pressing <kbd>Ctrl + C</kbd> shortcut key and paste it to another set of cells by selecting the cells and pressing <kbd>Ctrl + V</kbd> shortcut key.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-core/tree-grid/clipboard/paste/tagHelper %}
@@ -162,18 +104,6 @@ You can able to copy the content of a cell or a group of cells by selecting the 
 {% include code-snippet/grid-sdk/asp-net-core/tree-grid/clipboard/paste/paste.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/tree-grid/clipboard/paste/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Paste.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/tree-grid/clipboard/paste/paste.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 
 

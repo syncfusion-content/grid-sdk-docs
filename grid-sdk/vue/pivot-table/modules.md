@@ -3,7 +3,7 @@ layout: post
 title: Modules in Vue Pivot Table | Syncfusion
 description: Learn about Vue Pivot Table feature modules, provider registration, module relationships, and how to enable common features.
 control: Pivot Table
-platform: ej2-vue
+platform: grid-sdk
 documentation: ug
 domainurl: ##DomainURL##
 ---

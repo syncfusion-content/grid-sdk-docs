@@ -2,7 +2,7 @@
 layout: post
 title: How to add a custom aggregation in React Pivot Table | Syncfusion
 description: Step-by-step example showing how to add a custom aggregation type to the menu in the React Pivot Table through the aggregation menu.
-platform: ej2-react
+platform: grid-sdk
 control: Pivot Table
 documentation: ug
 domainurl: ##DomainURL##

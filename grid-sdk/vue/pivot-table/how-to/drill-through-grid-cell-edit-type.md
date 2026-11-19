@@ -3,7 +3,7 @@ layout: post
 title: Set drill-through grid cell edit types in Vue Pivot Table | Syncfusion
 description: Step-by-step example showing how to set the edit type of drill-through grid cells in the Vue Pivot Table via the drillThrough event and gridColumns.editType.
 control: Drill through grid cell edit type 
-platform: ej2-vue
+platform: grid-sdk
 documentation: ug
 domainurl: ##DomainURL##
 ---

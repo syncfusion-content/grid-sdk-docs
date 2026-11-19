@@ -4,7 +4,6 @@ title: Cell in Syncfusion ASP.NET MVC Grid Component
 description: Learn here all about Cell in Syncfusion ASP.NET MVC Grid component of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Cell
-publishingplatform: grid-sdk
 documentation: ug
 ---
 
@@ -77,6 +76,21 @@ The following example demonstrates how to set the `AllowTextWrap` property to **
 > * If a column width is not specified, then the Autowrap of columns will be adjusted with respect to the grid's width.
 > * If a column's header text contains no white space, the text may not be wrapped.
 > * If the content of a cell contains HTML tags, the Autowrap functionality may not work as expected. In such cases, you can use the `HeaderTemplate` and `Template` properties of the column to customize the appearance of the header and cell content.
+
+## Enable or disable cell text selection
+
+The Data Grid supports cell text selection by default, allowing users to select text within grid cells, group captions, and summary rows using standard browser text selection features. However, in some scenarios, text selection may need to be disabled to help protect sensitive information and prevent users from copying important data. To disable cell text selection, set the `AllowTextSelection` property to `false`.
+
+In the following example, the [EJ2 Toggle Switch Button](https://ej2.syncfusion.com/aspnetmvc/documentation/switch/getting-started) control is added to enable and disable the `AllowTextSelection` property.
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/grid-sdk/asp-net-mvc/grid/cell/text-selection/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="TextSelection.cs" %}
+{% include code-snippet/grid-sdk/asp-net-mvc/grid/cell/text-selection/text-selection.cs %}
+{% endhighlight %}
+{% endtabs %}
 
 ## Customize cell styles
 

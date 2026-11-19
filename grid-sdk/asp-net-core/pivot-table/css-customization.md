@@ -4,7 +4,6 @@ title: CSS Customization in ASP.NET Core Pivot Table | Syncfusion
 description: Learn how the ASP.NET Core Pivot Table uses CSS to hide axes, align text in headers and value cells, and style the Field List and Grouping Bar UI elements.
 platform: grid-sdk
 control: Css Customization
-publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
@@ -19,8 +18,6 @@ The visibility of the row, column, value, and filter axis areas in both the Fiel
 
 The following code example demonstrates how to hide the column axis in both the Grouping Bar and Field List within the Pivot Table. The CSS includes necessary height and spacing adjustments to prevent layout gaps and maintain visual consistency:
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/css-axis/tagHelper %}
@@ -29,18 +26,6 @@ The following code example demonstrates how to hide the column axis in both the 
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/css-axis/axis.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/css-axis/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Axis.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/css-axis/axis.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 **Note:** The CSS selectors above assume the Pivot Table component has the ID **PivotView**. Replace this with your actual component ID or use appropriate class-based selectors for your implementation.
 
@@ -54,8 +39,6 @@ The CSS selectors target the following Pivot Table elements:
 
 The alignment of text inside row headers, column headers, value cells, and summary cells can be customized using CSS styling. The following example demonstrates how to center-align text in value cells:
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/css-align/tagHelper %}
@@ -65,25 +48,11 @@ The alignment of text inside row headers, column headers, value cells, and summa
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/css-align/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Text-align.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/css-align/text-align.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
 ## Customize header, value and summary cell styles
 
 The Pivot Table component elements including header cells, value cells, and summary cells can be styled using built-in CSS class names. This enables comprehensive visual customization of the component's appearance to match application themes and design requirements.
 
 The following code sample demonstrates how to apply custom background colors to different cell types:
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -93,18 +62,6 @@ The following code sample demonstrates how to apply custom background colors to 
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/css-pivot/axis.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/css-pivot/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Axis.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/css-pivot/axis.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 
 

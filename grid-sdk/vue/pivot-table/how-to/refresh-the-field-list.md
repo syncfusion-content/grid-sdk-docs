@@ -3,7 +3,7 @@ layout: post
 title: How to refresh the field list in Vue Pivot Table | Syncfusion
 description: Step-by-step example showing how to refresh the Vue Pivot Table and field list with new data on a button click, by resetting fieldList and assigning a dataset.
 control: Refresh the field list 
-platform: ej2-vue
+platform: grid-sdk
 documentation: ug
 domainurl: ##DomainURL##
 ---

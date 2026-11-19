@@ -197,7 +197,7 @@ treeGridObj.appendTo('#TreeGrid');
 
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/tree-grid/help.syncfusion.com/code-snippet/grid-sdk/javascript/tree-grid/help.syncfusion.com/code-snippet/grid-sdk/javascript/tree-grid/tree-grid-cs4" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/treegrid/tree-grid-cs4" %}
 
 ## Run the application
 

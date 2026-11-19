@@ -1,0 +1,6 @@
+.price-cell { text-align: right; padding-right: 8px; font-weight: 600; }
+.price-low { color: #ef4444; }
+.price-mid { color: #f59e0b; }
+.price-mid-high { color: #3b82f6; }
+.price-high { color: #22c55e; }
+.price-premium { color: #9333ea; }

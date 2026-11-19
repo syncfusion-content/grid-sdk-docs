@@ -2,7 +2,7 @@
 layout: post
 title: How to Load a Pre-defined Report in Angular Pivot Table | Syncfusion
 description: Step-by-step example showing how to load a pre-defined report in the Angular Pivot Table, with code snippets and property references.
-platform: ej2-angular
+platform: grid-sdk
 control: Load desired report from the report list as default 
 documentation: ug
 domainurl: ##DomainURL##

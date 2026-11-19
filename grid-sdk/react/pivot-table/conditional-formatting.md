@@ -3,7 +3,7 @@ layout: post
 title: Conditional formatting in React Pivot Table | Syncfusion
 description: Learn how the React Pivot Table highlights value cells by applying conditional formatting with custom background color, font, and rules.
 control: Pivot Table
-platform: ej2-react
+platform: grid-sdk
 documentation: ug
 domainurl: ##DomainURL##
 ---

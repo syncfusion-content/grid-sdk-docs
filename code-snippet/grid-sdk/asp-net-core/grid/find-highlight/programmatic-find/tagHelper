@@ -1,0 +1,55 @@
+<div style="padding: 0 0 20px 0">
+    <ejs-textbox id="findText" placeholder="Enter text to find" width="220"></ejs-textbox>
+    <ejs-button id="find" content="Find" disabled="true" style="margin-left: 10px"></ejs-button>
+    <ejs-button id="findNext" content="Next" disabled="true" style="margin-left: 10px"></ejs-button>
+    <ejs-button id="findPrevious" content="Previous" disabled="true" style="margin-left: 10px"></ejs-button>
+    <ejs-button id="clearFind" content="Clear" disabled="true" style="margin-left: 10px"></ejs-button>
+</div>
+<ejs-grid id="FindGrid" dataSource="@ViewBag.datasource" height="272px" >
+    <e-grid-columns>
+        <e-grid-column field="OrderID" headerText="Order ID" textAlign="Right" width="90"></e-grid-column>
+        <e-grid-column field="CustomerID" headerText="Customer ID" textAlign="Left" width="110"></e-grid-column>
+        <e-grid-column field="ShipCity" headerText="Ship City" textAlign="Left" width="120"></e-grid-column>
+        <e-grid-column field="ShipCountry" headerText="Ship Country" textAlign="Left" width="120"></e-grid-column>
+        <e-grid-column field="Freight" headerText="Freight" textAlign="Right" width="90" format="C2"></e-grid-column>
+    </e-grid-columns>
+</ejs-grid>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var gridObj = document.getElementById('FindGrid').ej2_instances[0];
+        var findTextInput = document.getElementById('findText').ej2_instances[0];
+        var findButtonIds = ['find', 'findNext', 'findPrevious', 'clearFind'];
+
+        function toggleButtons(disabled) {
+            findButtonIds.forEach(function (id) {
+                var button = document.getElementById(id).ej2_instances[0];
+                button.disabled = disabled;
+            });
+        }
+
+        // Enable when there is text, disable when empty
+        document.getElementById('findText').addEventListener('input', function (event) {
+            var query = event.target.value;
+            toggleButtons(query.trim().length === 0);
+        });
+
+        document.getElementById('find').addEventListener('click', function () {
+            gridObj.find(findTextInput.value);
+        });
+
+        document.getElementById('findNext').addEventListener('click', function () {
+            gridObj.findNext();
+        });
+
+        document.getElementById('findPrevious').addEventListener('click', function () {
+            gridObj.findPrevious();
+        });
+
+        document.getElementById('clearFind').addEventListener('click', function () {
+            gridObj.clearFind();
+            findTextInput.value = '';
+            findTextInput.element.value = '';
+            toggleButtons(true);
+        });
+    });
+</script>

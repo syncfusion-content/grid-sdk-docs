@@ -3,7 +3,7 @@ layout: post
 title: Style and Appearance in Vue Pivot Table | Syncfusion
 description: Learn how the Vue Pivot Table customizes its appearance with CSS, including hiding axis areas in the field list and grouping bar using theme-aligned selectors.
 control: Css customization 
-platform: ej2-vue
+platform: grid-sdk
 documentation: ug
 domainurl: ##DomainURL##
 ---

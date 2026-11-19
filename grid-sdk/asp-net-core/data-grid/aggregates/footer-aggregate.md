@@ -4,7 +4,6 @@ title: Footer Aggregate in Syncfusion ASP.NET Core Grid Component
 description: Learn here all about Footer Aggregate in Syncfusion ASP.NET Core Grid component of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Footer Aggregate
-publishingplatform: grid-sdk
 documentation: ug
 ---
 

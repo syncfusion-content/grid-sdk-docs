@@ -4,7 +4,6 @@ title: Toolbar in ASP.NET MVC Pivot Table | Syncfusion
 description: Learn how the ASP.NET MVC Pivot Table Toolbar exposes built-in actions like New, Save, Export, and chart switching via ShowToolbar.
 platform: grid-sdk
 control: Tool Bar
-publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 

@@ -2,7 +2,7 @@
 layout: post
 title: "Dapper Data Binding in React Pivot Table component | Syncfusion"
 component: "Pivot Table"
-platform: ej2-react
+platform: grid-sdk
 description: "Connect SQL Server to the React Pivot Table using ASP.NET Core Web API and Dapper. Learn data binding, CRUD operations, and lightweight ORM integration."
 control: Dapper Data Binding
 documentation: ug

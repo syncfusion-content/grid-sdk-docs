@@ -3,7 +3,7 @@ layout: post
 title: Row and column in React Pivot Table | Syncfusion
 description: Learn how the React Pivot Table configures row and column axes, including field placement, width, height, scrollbar behavior, and layout options.
 control: Pivot Table
-platform: ej2-react
+platform: grid-sdk
 documentation: ug
 domainurl: ##DomainURL##
 ---

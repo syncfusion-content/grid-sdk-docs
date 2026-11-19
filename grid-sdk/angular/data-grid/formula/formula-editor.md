@@ -2,7 +2,7 @@
 layout: post
 title: Angular Grid Formula Editor | Syncfusion
 description: Learn how the default formula editor works in Angular Data Grid and how to allow or prevent editing in formula-enabled columns.
-platform: ej2-angular
+platform: grid-sdk
 control: Formula
 documentation: ug
 domainurl: ##DomainURL##
@@ -14,7 +14,7 @@ The formula editor is used for editing values in formula-enabled columns. Openin
 
 ## Enabling default editor
 
-To enable formula editing, register the `EditModule`, set [editSettings.allowEditing](../../api/grid/editsettingsmodel#allowediting) to `true`, enable formulas through set [allowFormula](../../api/grid/column#allowformula) to `true` for the required columns.
+To enable formula editing, register the `EditModule`, set [editSettings.allowEditing](https://ej2.syncfusion.com/angular/documentation/api/grid/editsettingsmodel#allowediting) to `true`, enable formulas through set [allowFormula](https://ej2.syncfusion.com/angular/documentation/api/grid/column#allowformula) to `true` for the required columns.
 
 The default editor is automatically available for formula-enabled columns in an editable grid. Opening a formula-enabled cell for editing displays the formula expression in column-letter and row-number notation, such as **=D1*E1**.
 
@@ -29,7 +29,7 @@ Cells and ranges referenced by the formula are highlighted while editing. Select
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/formula-cs3" %}
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/formula-cs2" %}
 
 ## Preventing formula cell editor
 

@@ -3,7 +3,7 @@ layout: post
 title: Drill Down in Vue Pivot Table | Syncfusion
 description: Learn how the Vue Pivot Table drills down and up through hierarchical row and column members, expands all headers for fields, and selectively drills.
 control: Drill down 
-platform: ej2-vue
+platform: grid-sdk
 documentation: ug
 domainurl: ##DomainURL##
 ---

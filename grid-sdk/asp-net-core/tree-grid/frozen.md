@@ -16,8 +16,6 @@ Frozen rows and columns provides an option to make rows and columns always visib
 
 In this demo, the [`frozenColumns`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGrid.html#Syncfusion_EJ2_TreeGrid_TreeGrid_FrozenColumns) is set as '2' and the [`frozenRows`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGrid.html#Syncfusion_EJ2_TreeGrid_TreeGrid_FrozenRows) is set as '3'. Hence, the left two columns and top three rows are frozen.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-core/tree-grid/scrolling/frozencolumn/tagHelper %}
@@ -27,18 +25,6 @@ In this demo, the [`frozenColumns`](https://help.syncfusion.com/cr/aspnetmvc-js2
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/tree-grid/scrolling/frozencolumn/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Freezecolumn.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/tree-grid/scrolling/frozencolumn/freezecolumn.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
 
 
 ### Freeze particular columns
@@ -46,8 +32,6 @@ In this demo, the [`frozenColumns`](https://help.syncfusion.com/cr/aspnetmvc-js2
 To freeze particular column in the tree grid, the [`isFrozen`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGridColumn.html#Syncfusion_EJ2_TreeGrid_TreeGridColumn_IsFrozen) property of **e-treegrid-column** tag helper can be used.
 
 In this demo, the columns with field name **TaskName** and **StartDate** is frozen using the [`isFrozen`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGridColumn.html#Syncfusion_EJ2_TreeGrid_TreeGridColumn_IsFrozen) property of **e-treegrid-column**.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -57,18 +41,6 @@ In this demo, the columns with field name **TaskName** and **StartDate** is froz
 {% include code-snippet/grid-sdk/asp-net-core/tree-grid/scrolling/isfreezecol/isfreeze.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/tree-grid/scrolling/isfreezecol/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Isfreeze.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/tree-grid/scrolling/isfreezecol/isfreeze.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 
 
@@ -83,8 +55,6 @@ Types of the [`column.freeze`](https://help.syncfusion.com/cr/aspnetcore-js2/Syn
 
 In this demo, the **Task Name** column is frozen at the left and the **Priority** column is frozen at the right side of the content table.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-core/tree-grid/scrolling/freeze-direction/tagHelper %}
@@ -93,18 +63,6 @@ In this demo, the **Task Name** column is frozen at the left and the **Priority*
 {% include code-snippet/grid-sdk/asp-net-core/tree-grid/scrolling/freeze-direction/freeze-direction.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/tree-grid/scrolling/freeze-direction/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Freeze-direction.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/tree-grid/scrolling/freeze-direction/freeze-direction.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 
 

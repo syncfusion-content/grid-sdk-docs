@@ -3,7 +3,7 @@ layout: post
 title: Getting Started with Vue 2 Pivot Table | Syncfusion
 description: Learn how to get started with the Syncfusion Vue 2 Pivot Table control. Set up a Vue-CLI project, install the package, and render your first pivot report.
 control: Getting started
-platform: ej2-vue
+platform: grid-sdk
 documentation: ug
 domainurl: ##DomainURL##
 ---
