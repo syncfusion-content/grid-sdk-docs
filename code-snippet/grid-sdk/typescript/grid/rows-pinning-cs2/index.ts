@@ -6,6 +6,7 @@ Grid.Inject(Page);
 var grid : Grid = new Grid({
   dataSource: taskData,
   allowPaging: true,
+  pageSettings: { pageSize: 10 },
   isRowPinned: function (data:object) {
     if (data && data.Status === 'Open' && data.Priority === 'Critical') {
       return true;
