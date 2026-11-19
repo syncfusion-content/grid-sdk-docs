@@ -296,14 +296,12 @@ public class ComboBoxRendererExt : GridVirtualizingCellRenderer<TextBlock, SfCom
 
     public override object GetControlValue()
     {
-
         if (!HasCurrentCellState)
             return null;
         return CurrentCellRendererElement.GetValue(IsInEditing ? SfComboBox.SelectedValueProperty : TextBlock.TextProperty);
     }
 
     // Creates the binding to the Edit-element
-
     private void InitializeEditBinding(SfComboBox uiElement, GridColumn column)
     {
         var comboBoxColumn = (GridComboBoxColumn)column;
@@ -333,7 +331,6 @@ public class ComboBoxRendererExt : GridVirtualizingCellRenderer<TextBlock, SfCom
     }
 
     // This will be invoke when the editing is triggered.
-
     public override void OnInitializeEditElement(DataColumnBase dataColumn, SfComboBox uiElement, object dataContext)
     {
         GridColumn column = dataColumn.GridColumn;
@@ -345,7 +342,6 @@ public class ComboBoxRendererExt : GridVirtualizingCellRenderer<TextBlock, SfCom
     }
 
     // Display Element initialized for required properties
-
     public override void OnInitializeDisplayElement(Syncfusion.UI.Xaml.DataGrid.DataColumnBase dataColumn, TextBlock uiElement, object dataContext)
     {
         var column = dataColumn.GridColumn;
@@ -359,7 +355,6 @@ public class ComboBoxRendererExt : GridVirtualizingCellRenderer<TextBlock, SfCom
     }
 
     // This Display Binding has to be set with the TextBlock.TextProperty.
-
     private static void SetDisplayBinding(TextBlock element, GridColumn column, object dataContext)
     {
         var customColumn = (ComboBoxColumnExt)column;
