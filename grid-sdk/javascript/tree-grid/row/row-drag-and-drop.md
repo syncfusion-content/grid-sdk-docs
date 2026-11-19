@@ -37,19 +37,6 @@ The TreeGrid row drag and drop allows you to drag and drop TreeGrid rows on the 
 
 To drag and drop between two TreeGrid, enable the [`allowRowDragAndDrop`](https://ej2.syncfusion.com/javascript/documentation/api/treegrid#allowrowdraganddrop) property and specify the target TreeGrid ID in [`targetID`](https://ej2.syncfusion.com/javascript/documentation/api/treegrid/rowDropSettings#targetid) property of rowDropSettings. The `targetID` property accepts a single target ID as a string, or an array of target IDs to drop rows between multiple TreeGrids. See the next section for details on the multi-TreeGrid configuration.
 
-{% if page.publishingplatform == "typescript" %}
-
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/treegrid/draganddrop-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/treegrid/draganddrop-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/treegrid/draganddrop-cs1" %}
-
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}

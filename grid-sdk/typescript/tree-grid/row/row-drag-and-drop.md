@@ -57,8 +57,6 @@ To drag and drop between two TreeGrid, enable the [`allowRowDragAndDrop`](https:
 
 The [`targetID`](../../api/treegrid/rowDropSettings#targetid) property of [`rowDropSettings`](../../api/treegrid/rowDropSettings) accepts a single TreeGrid element ID (`string`) or an array of TreeGrid element IDs (`string[]`). Rows dragged from a source TreeGrid can be dropped only into the TreeGrids whose IDs are listed in this property. Enable row drag and drop by setting the [`allowRowDragAndDrop`](../../api/treegrid#allowrowdraganddrop) property to true and assign the target ID (or IDs) to the `targetID` property of `rowDropSettings`.
 
-{% if page.publishingplatform == "typescript" %}
-
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/grid-sdk/typescript/treegrid/draganddrop-cs2/index.ts %}
@@ -67,21 +65,8 @@ The [`targetID`](../../api/treegrid/rowDropSettings#targetid) property of [`rowD
 {% include code-snippet/grid-sdk/typescript/treegrid/draganddrop-cs2/index.html %}
 {% endhighlight %}
 {% endtabs %}
-        
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/treegrid/draganddrop-cs2" %}
 
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/treegrid/draganddrop-cs2/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/treegrid/draganddrop-cs2/index.html %}
-{% endhighlight %}
-{% endtabs %}
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/treegrid/draganddrop-cs2" %}
-{% endif %}
 
 To allow rows from a TreeGrid to be dropped into more than one destination, assign an array of element IDs to the [`targetID`](../../api/treegrid/rowDropSettings#targetid) property of [`rowDropSettings`](../../api/treegrid/rowDropSettings).
 
