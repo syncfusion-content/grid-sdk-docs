@@ -47,7 +47,7 @@ Row pinning in the Grid control keeps important rows visible at the top while na
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/rows-pinning-cs1" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/rows-pinning-cs2" %}
 
 
 ## Pinned rows selection
