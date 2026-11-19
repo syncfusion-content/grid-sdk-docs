@@ -660,9 +660,9 @@ let pivotObj: PivotView = new PivotView({
 
 ![Server-Side Pivot Engine using Dynamic Objects](./images/server-side-with-dynamic-object.png)
 
-### Custom Data Server Configuration
+### Advanced Server Configuration
 
-The Custom Data Server is an optional backend configuration layer in the ASP.NET Core **PivotController** application. It lets you register one or more file-based or database-based data sources as indexes, and control how the server loads, caches, secures, and serves them. Configure it in **PivotController/appsettings.json** or by using the configuration and index APIs of the controller. The Pivot Table continues to use server mode and the `/api/pivot/post` endpoint; it does not connect directly to the configured data source.
+The Advanced Server Configuration is an optional backend configuration layer in the ASP.NET Core **PivotController** application. It lets you register one or more file-based or database-based data sources as indexes, and control how the server loads, caches, secures, and serves them. Configure it in **PivotController/appsettings.json** or by using the configuration and index APIs of the controller. The Pivot Table continues to use server mode and the `/api/pivot/post` endpoint; it does not connect directly to the configured data source.
 
 #### Architecture and request flow
 
@@ -846,7 +846,7 @@ let pivotObj: PivotView = new PivotView({
 pivotObj.appendTo('#PivotTable');
 ```
 
-![Pivot Table connected to the Custom Data Server](./images/custom-data-server-pivot-table.png)
+![Pivot Table connected to the Advanced Server Configuration](./images/custom-data-server-pivot-table.png)
 
 > The URL uses the port set in `General:Port` (`6885` in the sample). If you enable HTTPS, use `https://` in the URL. If you change the port, update the URL.
 
@@ -901,9 +901,8 @@ These settings control index loading, refresh behavior, and server-side caching:
 |---|---|
 | `RetryAttempts` | Number of times the server retries after the first failed attempt to load an index. Set to `0` to disable retries. Valid values are `0` to `30`. **Default:** `3`. |
 | `CacheSizeLimit` | Maximum number of cached server responses for each index. When the limit is reached, the least recently used response is removed first. Set to `0` to disable caching. Changing it requires a restart. **Default:** `100`. |
-| `KeepDataOnRefresh` | When `true`, the previously loaded data stays available if a reload fails. Keeping old data while new data loads can use more RAM. **Default:** `true`. |
 
-`RetryAttempts` and `KeepDataOnRefresh` take effect immediately when changed through `PUT /api/config/datastorage`. To see which indexes are currently cached, call `GET /api/config/datastorage/cache-stats`.
+`RetryAttempts` takes effect immediately when changed through `PUT /api/config/datastorage`. To see which indexes are currently cached, call `GET /api/config/datastorage/cache-stats`.
 
 ##### DatabaseQuery Settings
 
