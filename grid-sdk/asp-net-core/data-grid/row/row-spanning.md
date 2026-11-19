@@ -4,7 +4,6 @@ title: Row Spanning in Syncfusion ASP.NET Core Grid Component
 description: Learn here all about Row Spanning in Syncfusion ASP.NET Core Grid component of Syncfusion Essential JS 2 and more.
 platform: grid-sdk
 control: Row Spanning
-publishingplatform: grid-sdk
 documentation: ug
 ---
 

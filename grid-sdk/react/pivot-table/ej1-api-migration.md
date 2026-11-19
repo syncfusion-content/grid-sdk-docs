@@ -3,7 +3,7 @@ layout: post
 title: EJ1 API migration in React Pivot Table | Syncfusion
 description: Learn how the React Pivot Table maps properties, methods, and events from Essential JS 1 PivotGrid to the EJ2 Pivot Table component.
 control: Pivot Table
-platform: ej2-react
+platform: grid-sdk
 documentation: ug
 domainurl: ##DomainURL##
 ---

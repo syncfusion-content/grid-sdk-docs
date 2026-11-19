@@ -3,7 +3,7 @@ layout: post
 title: Vue Tree Grid Frozen DOM Virtualization | Syncfusion
 description: Learn how DOM virtualization in Tree Grid improves large dataset performance through viewport rendering, and efficient scrolling.
 control: DOM Virtualization 
-platform: ej2-vue
+platform: grid-sdk
 documentation: ug
 domainurl: ##DomainURL##
 ---

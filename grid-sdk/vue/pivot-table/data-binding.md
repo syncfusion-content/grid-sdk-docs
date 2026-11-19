@@ -3,7 +3,7 @@ layout: post
 title: Data Binding in Vue Pivot Table | Syncfusion
 description: Learn how the Vue Pivot Table binds JSON, CSV, OData, and Web API sources via DataManager, and configures field mapping for display and aggregation.
 control: Data binding 
-platform: ej2-vue
+platform: grid-sdk
 documentation: ug
 domainurl: ##DomainURL##
 ---

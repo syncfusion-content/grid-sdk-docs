@@ -2,7 +2,7 @@
 layout: post
 title: Angular Grid Formula Reference | Syncfusion
 description: Reference for supported operators, built-in functions, and formula errors in the Angular Data Grid Formula Cell feature.
-platform: ej2-angular
+platform: grid-sdk
 control: Formula
 documentation: ug
 domainurl: ##DomainURL##

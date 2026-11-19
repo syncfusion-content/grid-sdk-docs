@@ -2,7 +2,7 @@
 layout: post
 title: Performance best practices in React Pivot Table | Syncfusion
 description: Learn how the React Pivot Table handles large datasets and complex reports with performance tips like virtual scrolling, paging, and data compression.
-platform: ej2-react
+platform: grid-sdk
 control: Pivot Table
 documentation: ug
 domainurl: ##DomainURL##

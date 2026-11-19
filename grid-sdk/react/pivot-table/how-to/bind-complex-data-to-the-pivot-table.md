@@ -2,7 +2,7 @@
 layout: post
 title: How to convert complex JSON to flat JSON for Pivot Table | Syncfusion
 description: Step-by-step example showing how to convert complex JSON to flat JSON in the React Pivot Table and assign it as the data source.
-platform: ej2-react
+platform: grid-sdk
 control: Pivot Table
 documentation: ug
 domainurl: ##DomainURL##

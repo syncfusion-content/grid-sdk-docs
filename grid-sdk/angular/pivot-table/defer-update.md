@@ -2,7 +2,7 @@
 layout: post
 title: Defer Update in Angular Pivot Table | Syncfusion
 description: Learn how the Angular Pivot Table defers layout updates so users configure rows, columns, and filters before the report is applied.
-platform: ej2-angular
+platform: grid-sdk
 control: Pivot Table 
 documentation: ug
 domainurl: ##DomainURL##

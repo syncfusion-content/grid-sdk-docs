@@ -3,7 +3,7 @@ layout: post
 title: Paging in React Pivot Table | Syncfusion
 description: Learn how the React Pivot Table paginates rows and columns using pageSettings to navigate large datasets efficiently.
 control: Pivot Table
-platform: ej2-react
+platform: grid-sdk
 documentation: ug
 domainurl: ##DomainURL##
 ---

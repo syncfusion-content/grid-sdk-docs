@@ -10,7 +10,7 @@ domainurl: https://help.syncfusion.com/grid-sdk
 
 # Context Menu in TypeScript TreeGrid
 
-The TreeGrid has options to show the context menu when right clicked on it. To enable this feature, you need to define either default or custom item in the [`contextMenuItems`](../api/treegrid#contextmenuitems).
+The TreeGrid has options to show the context menu when right clicked on it. To enable this feature, you need to define either default or custom item in the [`contextMenuItems`](https://ej2.syncfusion.com/documentation/api/treegrid#contextmenuitems).
 
 To use the context menu, inject the `ContextMenu` module in the treegrid.
 
@@ -24,7 +24,7 @@ Items| Description
 `Delete` | Delete the current record.
 `Save` | Save the edited record.
 `Cancel` | Cancel the edited state.
-`PdfExport` | Export the treegrid data as Pdf document.
+`PdfExport` | Export the treegrid data as PDF document.
 `ExcelExport` | Export the treegrid data as Excel document.
 `CsvExport` | Export the treegrid data as CSV document.
 `SortAscending` | Sort the current column in ascending order.
@@ -37,7 +37,6 @@ Items| Description
 `Indent` | Indents the record to one level of hierarchy.|
 `Outdent` | Outdents the record to one level of hierarchy.|
 
-{% if page.publishingplatform == "typescript" %}
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -50,29 +49,15 @@ Items| Description
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/treegrid/contextmenu-cs1" %}
 
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/treegrid/contextmenu-cs1/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/treegrid/contextmenu-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/treegrid/contextmenu-cs1" %}
-{% endif %}
 
 ## Custom context menu items
 
-The custom context menu items can be added by defining the [`contextMenuItems`](../api/treegrid#contextmenuitems) as a collection of
-[`contextMenuItemModel`](../api/grid/contextMenuItemModel).
-Actions for this customized items can be defined in the [`contextMenuClick`](../api/treegrid#contextmenuclick) event.
+The custom context menu items can be added by defining the [`contextMenuItems`](https://ej2.syncfusion.com/documentation/api/treegrid#contextmenuitems) as a collection of
+[`contextMenuItemModel`](https://ej2.syncfusion.com/documentation/api/grid/contextMenuItemModel).
+Actions for this customized items can be defined in the [`contextMenuClick`](https://ej2.syncfusion.com/documentation/api/treegrid#contextmenuclick) event.
 
 In the below sample, we have shown context menu item for parent rows to expand or collapse child rows.
 
-{% if page.publishingplatform == "typescript" %}
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -85,25 +70,11 @@ In the below sample, we have shown context menu item for parent rows to expand o
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/treegrid/contextmenu-cs2" %}
 
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/treegrid/contextmenu-cs2/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/treegrid/contextmenu-cs2/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/treegrid/contextmenu-cs2" %}
-{% endif %}
 
 ## Enable and disable context menu items dynamically
 
 You can enable and disable the context menu items using the [`enableItems`](https://ej2.syncfusion.com/documentation/api/menu#enableitems) method in [`contextMenuOpen`](https://ej2.syncfusion.com/documentation/api/treegrid#contextmenuopen) event.
 
-{% if page.publishingplatform == "typescript" %}
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -116,19 +87,6 @@ You can enable and disable the context menu items using the [`enableItems`](http
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/treegrid/contextmenu-cs3" %}
 
-{% elsif page.publishingplatform == "javascript" %}
 
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/grid-sdk/typescript/treegrid/contextmenu-cs3/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/treegrid/contextmenu-cs3/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/treegrid/contextmenu-cs3" %}
-{% endif %}
-
-> You can hide or show an item in context menu for specific area inside of treegrid by defining the [`target`](../api/grid/contextMenuItemModel#target) property.
+> You can hide or show an item in context menu for specific area inside of treegrid by defining the [`target`](https://ej2.syncfusion.com/documentation/api/grid/contextMenuItemModel#target) property.
 > You can refer to our [`JavaScript Tree Grid`](https://www.syncfusion.com/javascript-ui-controls/js-tree-grid) feature tour page for its groundbreaking feature representations. You can also explore our JavaScript Tree Grid example [`JavaScript Tree Grid example`](https://ej2.syncfusion.com/demos/#/material/tree-grid/treegrid-overview.html) to knows how to present and manipulate data.

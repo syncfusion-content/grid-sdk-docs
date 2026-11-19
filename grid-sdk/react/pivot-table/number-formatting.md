@@ -3,7 +3,7 @@ layout: post
 title: Number formatting in React Pivot Table | Syncfusion
 description: Learn how the React Pivot Table applies number formats such as currency, percentage, and decimal places to value cells through formatSettings.
 control: Pivot Table
-platform: ej2-react
+platform: grid-sdk
 documentation: ug
 domainurl: ##DomainURL##
 ---

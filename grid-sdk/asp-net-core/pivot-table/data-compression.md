@@ -4,7 +4,6 @@ title: Data Compression in ASP.NET Core Pivot Table | Syncfusion
 description: Learn how the ASP.NET Core Pivot Table uses allowDataCompression with virtual scrolling to dedupe raw input data and speed up rendering on large datasets.
 platform: grid-sdk
 control: Data Compression
-publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
@@ -18,8 +17,6 @@ When binding large volumes of raw data, the pivot table processes all raw data t
 
 N> This options will only function when the virtual scrolling is enabled.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/virtual-scrolling-compression/tagHelper %}
@@ -28,18 +25,6 @@ N> This options will only function when the virtual scrolling is enabled.
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/virtual-scrolling-compression/VirtualScrolling.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/virtual-scrolling-compression/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="VirtualScrolling.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/virtual-scrolling-compression/VirtualScrolling.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 **Limitations during data compression:**
 

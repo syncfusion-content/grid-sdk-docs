@@ -293,7 +293,7 @@ const actionComplete = (args: DialogEditEventArgs) => {
 
 ## Render tab component inside the dialog template
 
-Rendering a [Tab](../../../tab/index.html) component inside the dialog template enhances the grid editing experience. This feature is especially useful for presenting multiple editing sections or categories in a tabbed layout, ensuring a more intuitive and easily navigable interface for data editing.
+Rendering a [Tab](https://ej2.syncfusion.com/react/documentation/tab/index.html) component inside the dialog template enhances the grid editing experience. This feature is especially useful for presenting multiple editing sections or categories in a tabbed layout, ensuring a more intuitive and easily navigable interface for data editing.
 
 To enable this functionality, set the [editSettings.mode](https://ej2.syncfusion.com/react/documentation/api/grid/editSettings#mode) property of the grid to `Dialog`. Additionally, use the [editSettings.template](https://ej2.syncfusion.com/react/documentation/api/grid/editSettings#template) property to define a template variable containing the `Tab` component and its corresponding content.
 

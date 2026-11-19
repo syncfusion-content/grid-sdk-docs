@@ -1,15 +1,14 @@
 ---
 layout: post
-title: PDF Export in ##Platform_Name## Pivot Table | Syncfusion
-description: Learn how the ##Platform_Name## Pivot Table exports to PDF via `pdfExport`, with multiple Pivot Tables supported in a single document using `pivotTableIds`.
-platform: ej2-javascript
+title: PDF Export in TypeScript Pivot Table | Syncfusion
+description: Learn how the TypeScript Pivot Table exports to PDF via `pdfExport`, with multiple Pivot Tables supported in a single document using `pivotTableIds`.
+platform: grid-sdk
 control: PDF export
-publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# PDF Export in ##Platform_Name## Pivot Table
+# PDF Export in TypeScript Pivot Table
 
 The Typescript Pivot Table allows exporting pivot table data as a PDF document. To enable PDF export, inject the `PDFExport` module into the Pivot Table and set the [`allowPdfExport`](https://ej2.syncfusion.com/documentation/api/pivotview/index-default#allowpdfexport) property to **true**. Once enabled, use the [`pdfExport`](https://ej2.syncfusion.com/documentation/api/pivotview/index-default#pdfexport) method to generate and download the PDF file.
 

@@ -4,7 +4,6 @@ title: Filtering in ASP.NET Core Pivot Table | Syncfusion
 description: Learn how the ASP.NET Core Pivot Table applies member, label, and value filtering on row, column, and filter axes via the Field List or e-filtersettings.
 platform: grid-sdk
 control: Filtering
-publishingplatform: ##Platform_Name##
 documentation: ug
 ---
 
@@ -47,8 +46,6 @@ You can also configure filtering programmatically using the [`e-filtersettings`]
 
 > When you specify unavailable or inappropriate members in the include or exclude filter items collection, they will be ignored.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/filtering/member-filtering/tagHelper %}
@@ -57,18 +54,6 @@ You can also configure filtering programmatically using the [`e-filtersettings`]
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/filtering/member-filtering/Filtering.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/filtering/member-filtering/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Filtering.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/filtering/member-filtering/Filtering.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 
 
@@ -108,8 +93,6 @@ The member filter dialog improves loading performance when working with large da
 
 You can control how many members are displayed in the member filter dialog using the [`maxNodeLimitInMemberEditor`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_MaxNodeLimitInMemberEditor) property. By default, this property is set to **1000**. When your data contains more members than this limit, only the specified number will be shown initially, and a message will indicate how many additional members are available.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/filtering/max-node/tagHelper %}
@@ -118,18 +101,6 @@ You can control how many members are displayed in the member filter dialog using
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/filtering/max-node/Filtering.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/filtering/max-node/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Filtering.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/filtering/max-node/Filtering.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 
 
@@ -150,8 +121,6 @@ By default, this property is set to **true** and search operations will only app
 
 This approach prevents performance issues when working with hierarchies that contain large numbers of members. Once level members are loaded, they remain available for all subsequent operations (such as reopening the dialog or drag-and-drop actions) and persist until you refresh the web page.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/getting-start-mvc/olap-member-load/tagHelper %}
@@ -160,18 +129,6 @@ This approach prevents performance issues when working with hierarchies that con
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/getting-start-mvc/olap-member-load/filtering.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/getting-start-mvc/olap-member-load/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Filtering.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/getting-start-mvc/olap-member-load/filtering.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 
 
@@ -196,8 +153,6 @@ This option enables you to control the depth of member loading by specifying how
 
 The [`levelCount`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewFilterSetting.html#Syncfusion_EJ2_PivotView_PivotViewFilterSetting_LevelCount) property is set to **1** by default, which means only the first level members are loaded initially. When you apply filters or search operations, they will only affect the members within the loaded levels.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/getting-start-mvc/olap-level-count/tagHelper %}
@@ -206,18 +161,6 @@ The [`levelCount`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/getting-start-mvc/olap-level-count/filtering.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/getting-start-mvc/olap-level-count/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Filtering.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/getting-start-mvc/olap-level-count/filtering.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 
 ![Loading members based on level number](images/level-count.png)
@@ -248,8 +191,6 @@ Label filtering allows you to display only the data with specific header text ac
 
 To enable label filtering, set the [`allowLabelFilter`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html#Syncfusion_EJ2_PivotView_PivotViewDataSourceSettings_AllowLabelFilter) property to **true** in the [`e-datasourcesettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html). Once enabled, you can access the filtering options by clicking the filter icon next to any field in the row or column axis of the field list or grouping bar. This opens the filtering dialog where you can navigate to the "Label" tab to apply your label filtering criteria.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/filtering/label-filtering/filtering-ui/tagHelper %}
@@ -258,18 +199,6 @@ To enable label filtering, set the [`allowLabelFilter`](https://help.syncfusion.
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/filtering/label-filtering/filtering-ui/Filtering.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/filtering/label-filtering/filtering-ui/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Filtering.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/filtering/label-filtering/filtering-ui/Filtering.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 ![Filter icon in field list](images/labelfiltering_fl_icon.png)
 <br/>
@@ -319,8 +248,6 @@ The following table shows all available [**Operators**](https://help.syncfusion.
 | Between| Shows records with text values that fall between two specified values.|
 | NotBetween| Shows records with text values that do not fall between two specified values.|
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/filtering/label-filtering/text-filtering/tagHelper %}
@@ -329,18 +256,6 @@ The following table shows all available [**Operators**](https://help.syncfusion.
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/filtering/label-filtering/text-filtering/Filtering.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/filtering/label-filtering/text-filtering/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Filtering.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/filtering/label-filtering/text-filtering/Filtering.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 
 
@@ -363,8 +278,6 @@ For example, to display only sales data where the "Sold" field values are less t
 
 > Number filtering is available only when the field contains numeric data format.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/filtering/label-filtering/number-filtering/tagHelper %}
@@ -373,18 +286,6 @@ For example, to display only sales data where the "Sold" field values are less t
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/filtering/label-filtering/number-filtering/Filtering.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/filtering/label-filtering/number-filtering/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Filtering.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/filtering/label-filtering/number-filtering/Filtering.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 
 
@@ -400,8 +301,6 @@ To apply date filtering, specify your filtering criteria using the [`value1`](ht
 
 > Date filtering is available only when the field has date type [`e-formatsettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewFormatSettings.html) configured.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/filtering/label-filtering/date-filtering/tagHelper %}
@@ -410,18 +309,6 @@ To apply date filtering, specify your filtering criteria using the [`value1`](ht
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/filtering/label-filtering/date-filtering/Filtering.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/filtering/label-filtering/date-filtering/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Filtering.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/filtering/label-filtering/date-filtering/Filtering.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 
 
@@ -439,8 +326,6 @@ Value filtering allows you to filter data based on aggregated values from measur
 
 You can enable value filtering by setting the [`allowValueFilter`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html#Syncfusion_EJ2_PivotView_PivotViewDataSourceSettings_AllowValueFilter) property to **true** in the [`e-datasourcesettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettings.html). Once enabled, click the filter icon next to any field in the row or column axis within the field list or grouping bar. A filtering dialog will appear where you can navigate to the "Value" tab to perform value filtering operations.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/filtering/value-filtering-ui/tagHelper %}
@@ -449,18 +334,6 @@ You can enable value filtering by setting the [`allowValueFilter`](https://help.
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/filtering/value-filtering-ui/Filtering.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/filtering/value-filtering-ui/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Filtering.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/filtering/value-filtering-ui/Filtering.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 ![Filter icon in field list](images/labelfiltering_fl_icon.png)
 <br/>
@@ -500,8 +373,6 @@ The following table shows the available operators for value filtering:
 | Top | Top N members by highest values (client-side only).|
 | Bottom | Bottom N members by lowest values (client-side only).|
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/filtering/value-filtering/tagHelper %}
@@ -510,18 +381,6 @@ The following table shows the available operators for value filtering:
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/filtering/value-filtering/Filtering.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/filtering/value-filtering/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Filtering.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/filtering/value-filtering/Filtering.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 
 
@@ -549,8 +408,6 @@ The event includes the following parameters:
 
 For example, you can use the [`memberFiltering`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_MemberFiltering) event to block the filter action by setting `args.cancel` parameter to **true**. This is shown below:
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/filtering/member-filtering-event/tagHelper %}
@@ -559,18 +416,6 @@ For example, you can use the [`memberFiltering`](https://help.syncfusion.com/cr/
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/filtering/member-filtering-event/Filtering.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/filtering/member-filtering-event/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Filtering.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/filtering/member-filtering-event/Filtering.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 ### MemberEditorOpen
 
@@ -583,8 +428,6 @@ When you open the Member Editor dialog, the  [`memberEditorOpen`](https://help
 
 Here’s an example. In the Pivot Table below, only the selected member for the "Country" field appears in the Member Editor dialog:
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/filtering/memberEditorOpen-event/tagHelper %}
@@ -593,18 +436,6 @@ Here’s an example. In the Pivot Table below, only the selected member for the 
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/filtering/memberEditorOpen-event/Filtering.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/filtering/memberEditorOpen-event/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Filtering.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/filtering/memberEditorOpen-event/Filtering.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 
 ### ActionBegin
@@ -621,8 +452,6 @@ The [`actionBegin`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2
 
 In the example below, you can prevent a filter action by setting **args.cancel** to **true** in the [`actionBegin`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_ActionBegin) event:
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/action-event/actionBegin-filter/tagHelper %}
@@ -631,18 +460,6 @@ In the example below, you can prevent a filter action by setting **args.cancel**
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/action-event/actionBegin-filter/actionBegin-aggregation.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/action-event/actionBegin-filter/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="ActionBegin-aggregation.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/action-event/actionBegin-filter/actionBegin-aggregation.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
 
 ### ActionComplete
 
@@ -660,8 +477,6 @@ The event provides the following parameters:
 
 - `actionInfo`: Provides detailed information about the current UI action. For filtering operations, this includes filter members, field name, and other relevant details.
 
-{% if page.publishingplatform == "aspnet-core" %}
-
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/action-event/actionComplete-filter/tagHelper %}
@@ -671,18 +486,6 @@ The event provides the following parameters:
 {% endhighlight %}
 {% endtabs %}
 
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/action-event/actionComplete-filter/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="ActionComplete-aggregation.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/action-event/actionComplete-filter/actionComplete-aggregation.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}
-
 ### ActionFailure
 
 The [`actionFailure`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_ActionFailure) event is triggered when a UI action fails to produce the expected result. This event provides detailed information about the failure through the following parameters:
@@ -690,8 +493,6 @@ The [`actionFailure`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.E
 * `actionName`: It holds the name of the current action failed. For example, if the action fails while filtering, the action name will be shown as **Filter field**.
 
 * `errorInfo`: It holds the error information of the current UI action.
-
-{% if page.publishingplatform == "aspnet-core" %}
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
@@ -701,15 +502,3 @@ The [`actionFailure`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.E
 {% include code-snippet/grid-sdk/asp-net-core/pivot-table/action-event/actionFailure-filter/actionFailure-aggregation.cs %}
 {% endhighlight %}
 {% endtabs %}
-
-{% elsif page.publishingplatform == "aspnet-mvc" %}
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/action-event/actionFailure-filter/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="ActionFailure-aggregation.cs" %}
-{% include code-snippet/grid-sdk/asp-net-core/pivot-table/action-event/actionFailure-filter/actionFailure-aggregation.cs %}
-{% endhighlight %}
-{% endtabs %}
-{% endif %}

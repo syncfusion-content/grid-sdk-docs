@@ -3,7 +3,7 @@ layout: post
 title: Save and Load in Angular Pivot Table | Syncfusion
 description: Learn how the Angular Pivot Table saves and restores the dataSourceSettings report through custom toolbar export and import actions.
 control: Tool bar
-platform: ej2-angular
+platform: grid-sdk
 documentation: ug
 domainurl: ##DomainURL##
 ---

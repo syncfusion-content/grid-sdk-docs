@@ -3,7 +3,7 @@ layout: post
 title: Field List in Vue Pivot Table | Syncfusion
 description: Learn how the Vue Pivot Table shows a field list for runtime report editing in popup or stand-alone mode, with search and sort.
 control: Field list 
-platform: ej2-vue
+platform: grid-sdk
 documentation: ug
 domainurl: ##DomainURL##
 ---

@@ -2,7 +2,7 @@
 layout: post
 title: Getting Started with Angular Pivot Table | Syncfusion
 description: Learn how to get started with the Syncfusion Angular Pivot Table control. Explore setup, features, examples, and customization options.
-platform: ej2-angular
+platform: grid-sdk
 control: Getting started 
 documentation: ug
 domainurl: ##DomainURL##
@@ -112,11 +112,11 @@ Modify the template in the **src/app/app.ts** file to render the Pivot Table com
 
 {% tabs %}
 {% highlight ts tabtitle="app.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/angular/pivot-table/angular/pivot-table/getting-started-cs105/src/app/app.ts %}
+{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs105/src/app/app.ts %}
 {% endhighlight %}
 
 {% highlight ts tabtitle="main.ts" %}
-{% include code-snippet/grid-sdk/angular/pivot-table/angular/pivot-table/angular/pivot-table/getting-started-cs105/src/main.ts %}
+{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs105/src/main.ts %}
 {% endhighlight %}
 
 {% endtabs %}

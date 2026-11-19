@@ -3,7 +3,7 @@ layout: post
 title: React Pivot Table - Hot Chocolate GraphQL Backend | Syncfusion
 description: Integrate Syncfusion React Pivot Table with ASP.NET Core and a Hot Chocolate GraphQL backend to perform CRUD operations.
 control: GraphQL Adaptor
-platform: ej2-react
+platform: grid-sdk
 documentation: ug
 domainurl: ##DomainURL##
 ---
