@@ -1,0 +1,32 @@
+#container {
+    visibility: hidden;
+}
+
+#loader {
+  color: #008cff;
+  font-family: 'Helvetica Neue','calibiri';
+  font-size: 14px;
+  height: 40px;
+  left: 45%;
+  position: absolute;
+  top: 45%;
+  width: 30%;
+}
+
+.controls {
+    padding: 10px;
+}
+
+.controls label {
+    margin-right: 12px;
+}
+
+#Grid {
+    --e-grid-change-highlight-color: #0b6e4f;
+    --e-grid-highlight-flash-duration: 800ms;
+    --e-grid-highlight-fade-duration: 1500ms;
+}
+
+#Grid td.e-grid-cell-changed {
+    font-weight: 600;
+}
