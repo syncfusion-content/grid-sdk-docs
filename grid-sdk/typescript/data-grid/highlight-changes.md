@@ -4,7 +4,6 @@ title: Highlight Data Changes in TypeScript Data Grid | Syncfusion
 description: Learn how to flash changed cells in the TypeScript Data Grid, set the flash color and duration, flash cells in code, and restyle the highlight with CSS.
 platform: grid-sdk
 control: Highlight Changes
-publishingplatform: grid-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
