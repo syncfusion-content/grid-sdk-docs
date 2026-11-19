@@ -21,7 +21,7 @@ To enable cell editing in the Data Grid, configure the [editSettings->mode](http
 {% include code-snippet/grid-sdk/react/grid/cell-edit-cs1/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/gridcode-snippet/grid-sdk/react/grid/cell-edit-cs1/app/App.tsx %}
+{% include code-snippet/grid-sdk/react/grid/cell-edit-cs1/app/App.tsx %}
 {% endhighlight %}
 {% highlight js tabtitle="datasource.jsx" %}
 {% include code-snippet/grid-sdk/react/grid/cell-edit-cs1/app/datasource.jsx %}
