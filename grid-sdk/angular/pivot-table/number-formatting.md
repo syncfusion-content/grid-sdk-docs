@@ -65,6 +65,26 @@ You can also format the values at runtime using the formatting dialog. This opti
 
 > **Important:** To use the runtime formatting dialog (and the toolbar option), include the `NumberFormattingService` module in the `@NgModule.providers` section.
 
+## Formatting date values in value axis
+
+When a date or datetime field is added to the values axis and aggregated with **Min** or **Max**, the Pivot Table displays the aggregated date value rather than a numeric total. To control how these values appear, configure [`formatSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/datasourcesettings#formatsettings) with a `type` of `'date'` or `'dateTime'` together with a standard date [`format`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/formatsettingsmodel#format) string (for example, `'dd/MM/yyyy'`).
+
+If the same date field is aggregated with **Count** or **DistinctCount**, the result is a numeric value, so apply a numeric format string such as `'N0'`. When a Min or Max date field has no matching records for a particular row-column intersection, the cell displays the configured empty cell text.
+
+The following sample shows **Min** and **Count** aggregations on the `OrderDate` field, with a date format applied to the Min field and a numeric format applied to the count field.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs345/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs345/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs345" %}
+
 ## Custom format
 
 Custom format lets you display numbers in your preferred pattern by setting the [`format`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/formatsettingsmodel#format) property within the [`formatSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/datasourcesettings#formatsettings). You can use one or more format specifiers (shown in the table below) to control how values appear in the Pivot Table. The Input column shows the `format` value applied to the value `123` (except where noted).

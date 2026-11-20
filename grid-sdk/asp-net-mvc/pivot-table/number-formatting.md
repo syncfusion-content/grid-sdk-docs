@@ -60,6 +60,23 @@ You can also format the values at runtime using the formatting dialog. This opti
 
 > **Important:** To use the runtime formatting dialog, include the `NumberFormatting` module in the pivot table.
 
+## Formatting date values in value axis
+
+When a date or datetime field is added to the values axis and aggregated with **Min** or **Max**, the Pivot Table displays the aggregated date value rather than a numeric total. To control how these values appear, configure [`FormatSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewFormatSetting.html) with a `type` of `'date'` or `'dateTime'` together with a standard date `format` string (for example, `'dd/MM/yyyy'`).
+
+If the same date field is aggregated with **Count** or **DistinctCount**, the result is a numeric value, so apply a numeric format string such as `'N0'`. When a Min or Max date field has no matching records for a particular row-column intersection, the cell displays the configured empty cell text.
+
+The following sample shows **Min** and **Count** aggregations on the `OrderDate` field, with a date format applied to the Min field and a numeric format applied to the count field.
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/number-formatting/date-formatting/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Formatting.cs" %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/number-formatting/date-formatting/formatting.cs %}
+{% endhighlight %}
+{% endtabs %}
+
 ## Custom format
 
 Custom format lets you display numbers in your preferred pattern by setting the [`Format`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewFormatSetting.html#Syncfusion_EJ2_PivotView_PivotViewFormatSetting_Format) property within the [`FormatSettings`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewFormatSetting.html). You can use one or more format specifiers (shown in the table below) to control how values appear in the Pivot Table.
