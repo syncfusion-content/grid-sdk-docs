@@ -8,6 +8,8 @@
 
 - `#I890402` - Resolved an exception thrown when opening the foreign key column filter dialog while the Grid was loading its initial data.
 
+- `#I890136` - Resolved an issue where the submenu expand (caret) icon was displayed for custom column menu items created using [ColumnMenuItemModel](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.ColumnMenuItemModel.html) despite not having any child menu items configured.
+
 ## Features
 
 - Added support for NodaTime data types in the Grid, enabling seamless data operations such as formatting, filtering, sorting, editing, and CRUD operations.
