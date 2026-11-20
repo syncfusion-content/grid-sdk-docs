@@ -12,12 +12,6 @@ domainurl: https://help.syncfusion.com/grid-sdk
 
 The ASP.NET MVC Grid can revert and reapply edit actions such as cell edits, row additions and row deletions. Undo and redo are available in all editing modes, such as Normal (inline), Dialog and Batch, and in cell editing.
 
-Undo and redo can be used in three ways, which are described in the following topics:
-
-* [Undo redo with toolbar](#undo-redo-with-toolbar)
-* [Undo redo with keyboard shortcuts](#undo-redo-with-keyboard-shortcuts)
-* [Undo redo with batch editing](#undo-redo-with-batch-editing)
-
 ## Undo redo with toolbar
 
 Set the [EnableUndoRedo](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.GridEditSettings.html#enableundoredo) property to `true` to enable undo and redo. Then add the `Undo` and `Redo` items to the toolbar. The `Undo` item reverts the last edit action and the `Redo` item reapplies the action that was undone. Both items are disabled while there is nothing to undo or redo.
@@ -36,7 +30,7 @@ In the following example, undo and redo are enabled in Normal editing mode with 
 
 ### Limit the number of undo and redo actions
 
-Use the [UndoRedoLimit](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.GridEditSettings.html#undoredolimit) property to control the maximum number of edit actions stored in the undo and redo stack. When the limit is reached, the oldest action is removed from the stack. The default value is `20`.
+Use the [UndoRedoLimit](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.GridEditSettings.html#undoredolimit) property to control the maximum number of edit actions stored in the undo and redo stack. When the limit is reached, the oldest action is removed from the stack. The default value is `5`, so by default up to 5 actions can be undone or redone.
 
 In the previous example, the limit is set to `10`, so only the last 10 edit actions can be undone.
 
@@ -65,16 +59,16 @@ In the following example, the toolbar does not contain the `Undo` and `Redo` ite
 
 ## Undo redo with batch editing
 
-In Batch mode, changes stay in the grid and are not sent to the data source until the `Update` toolbar item is clicked. Undo and redo work on these pending changes when [EnableUndoRedo](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.GridEditSettings.html#enableundoredo) is `true`.
+To enable undo and redo in batch editing, set [EnableUndoRedo](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.GridEditSettings.html#enableundoredo) to `true` and set the edit mode to `Batch`. Additionally, set the [EnableBatchUndoRedo](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.GridEditSettings.html#enablebatchundoredo) property to `true` to support undo and redo actions during batch operations.
 
-After the `Update` is clicked, the changes are saved and the undo and redo stack is cleared by default. Set the [EnableBatchUndoRedo](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.GridEditSettings.html#enablebatchundoredo) property to `true` along with [EnableUndoRedo](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.GridEditSettings.html#enableundoredo) to keep the stack after the changes are saved. The saved batch changes can then still be undone and redone.
+By default, batch editing keeps the changes virtually in the grid until they are saved with the `Update` toolbar item. The `EnableBatchUndoRedo` property provides undo and redo options during this bulk editing process, so the pending cell edits, added rows and deleted rows can be reverted or reapplied before they are saved.
 
 | Property | Behavior |
 |-----|-----|
-| EnableUndoRedo | Undo and redo are available for the changes made before they are saved. |
-| EnableBatchUndoRedo | Undo and redo remain available for the changes after the `Update` is clicked and the batch changes are saved. |
+| EnableUndoRedo | Enables undo and redo for the editing actions. |
+| EnableBatchUndoRedo | Enables undo and redo for the pending changes during batch editing. |
 
-In the following example, EnableUndoRedo and EnableBatchUndoRedo are set to `true`. Edit the cells, click `Update`, and then use `Undo` and `Redo`.
+In the following example, EnableUndoRedo and EnableBatchUndoRedo are set to `true`. Edit, add or delete rows, and then use `Undo` and `Redo` before clicking `Update`.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
