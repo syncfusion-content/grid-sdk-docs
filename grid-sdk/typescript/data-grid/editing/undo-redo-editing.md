@@ -69,14 +69,14 @@ In the following example, the toolbar does not contain the `Undo` and `Redo` ite
 
 To enable undo and redo in batch editing, set [editSettings.enableUndoRedo](https://ej2.syncfusion.com/documentation/api/grid/editSettings#enableundoredo) to `true` and set the edit mode to `Batch`. Additionally, set the [editSettings.enableBatchUndoRedo](https://ej2.syncfusion.com/documentation/api/grid/editSettings#enablebatchundoredo) property to `true` to support undo and redo actions during batch operations.
 
-By default, batch editing keeps the changes virtually in the grid until they are saved with the `Update` toolbar item. The `enableBatchUndoRedo` property provides undo and redo options during this bulk editing process, so the pending cell edits, added rows and deleted rows can be reverted or reapplied before they are saved.
+In batch editing, clicking the `Update` toolbar item commits the pending changes to the data source. When `enableBatchUndoRedo` is set to `true`, the `Undo` and `Redo` actions can still be performed even after the changes are saved.
 
 | Property | Behavior |
 |-----|-----|
 | enableUndoRedo | Enables undo and redo for the editing actions. |
-| enableBatchUndoRedo | Enables undo and redo for the pending changes during batch editing. |
+| enableBatchUndoRedo | Keeps undo and redo available after the `Update` is clicked and the batch changes are saved to the data source. |
 
-In the following example, enableUndoRedo and enableBatchUndoRedo are set to `true`. Edit, add or delete rows, and then use `Undo` and `Redo` before clicking `Update`.
+In the following example, enableUndoRedo and enableBatchUndoRedo are set to `true`. Edit, add or delete rows, click `Update` to save the changes, and then use `Undo` and `Redo` to revert or reapply them.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -91,6 +91,3 @@ In the following example, enableUndoRedo and enableBatchUndoRedo are set to `tru
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/undo-redo-cs3" %}
-
-> * The number of stored actions is limited by the [editSettings.undoRedoLimit](https://ej2.syncfusion.com/documentation/api/grid/editSettings#undoredolimit) property.
-> * The grid also provides the `undoEdit`, `redoEdit`, `isUndoStackAvailable` and `isRedoStackAvailable` methods to perform undo and redo and check the stack from code.
