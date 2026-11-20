@@ -33,8 +33,8 @@ End users can perform calculations on groups of values (specifically for value f
 | SampleVar| Displays the sample variance for the selected field.|
 | RunningTotals| Displays the running total for the selected field values.|
 | PercentageOfRunningTotals| Displays the cumulative percentage of running totals (client-side engine only).|
-| DifferenceFrom| Displays the pivot table values with difference from the value of the base item in the base field.|
-| PercentageOfDifferenceFrom| Displays the pivot table values with percentage difference from the value of the base item in the base field.|
+| DifferenceFrom| Displays the difference relative to a specific base item or adjacent member (`'(previous)'` / `'(next)'`) in the base field. Configured using `baseField`, `baseItem`, and optionally `allowCrossGroupCalculation`.|
+| PercentageOfDifferenceFrom| Displays the percentage difference relative to a specific base item or adjacent member (`'(previous)'` / `'(next)'`) in the base field. Configured using `baseField`, `baseItem`, and optionally `allowCrossGroupCalculation`.|
 | PercentageOfGrandTotal| Displays the pivot table values with percentage of grand total of all values.|
 | PercentageOfColumnTotal| Displays the pivot table values in each column with percentage of total values for the column.|
 | PercentageOfRowTotal| Displays the pivot table values in each row with percentage of total values for the row.|
@@ -48,9 +48,12 @@ End users can perform calculations on groups of values (specifically for value f
 
 For each value field, the aggregation type can be set using the property [`type`](https://ej2.syncfusion.com/react/documentation/api/pivotview/fieldoptionsmodel#type) in [`values`](https://ej2.syncfusion.com/react/documentation/api/pivotview/datasourcesettings#values). Aggregation types like **DifferenceFrom** and **PercentageOfDifferenceFrom** also require a specific field and item, which are configured using the [`baseField`](https://ej2.syncfusion.com/react/documentation/api/pivotview/fieldoptionsmodel#basefield) and [`baseItem`](https://ej2.syncfusion.com/react/documentation/api/pivotview/fieldoptionsmodel#baseitem) properties. Likewise, the **PercentageOfParentTotal** type can be scoped to a specific field using the [`baseField`](https://ej2.syncfusion.com/react/documentation/api/pivotview/fieldoptionsmodel#basefield) property. For instance, the aggregation type **DifferenceFrom** takes the specified field and its corresponding member as input, then compares its value against other members in the same field and across different fields to compute the appropriate output value.
 
-* [`type`](https://ej2.syncfusion.com/react/documentation/api/pivotview/fieldoptionsmodel#type): It allows you to set the aggregate type of the field.
-* [`baseField`](https://ej2.syncfusion.com/react/documentation/api/pivotview/fieldoptionsmodel#basefield): It allows you to set the specific field to aggregate the values.
-* [`baseItem`](https://ej2.syncfusion.com/react/documentation/api/pivotview/fieldoptionsmodel#baseitem): It allows you to set the specific member to aggregate the values.
+| Property | Applicable Types | Description |
+|---|---|---|
+| [`type`](https://ej2.syncfusion.com/react/documentation/api/pivotview/fieldoptionsmodel#type) | All | Specifies the aggregation function to apply. |
+| [`baseField`](https://ej2.syncfusion.com/react/documentation/api/pivotview/fieldoptionsmodel#basefield) | **DifferenceFrom**, **PercentageOfDifferenceFrom**, **PercentageOfParentTotal** | Specifies the reference field to aggregate against. |
+| [`baseItem`](https://ej2.syncfusion.com/react/documentation/api/pivotview/fieldoptionsmodel#baseitem) | **DifferenceFrom**, **PercentageOfDifferenceFrom** | Specifies the reference member name, or dynamic adjacent tokens (`'(previous)'` / `'(next)'`). |
+| `allowCrossGroupCalculation` | **DifferenceFrom**, **PercentageOfDifferenceFrom** | When using adjacent tokens, determines whether difference calculation continues across parent group boundaries (`true`) or resets within each group (`false`). |
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
@@ -70,40 +73,6 @@ For each value field, the aggregation type can be set using the property [`type`
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs1" %}
 
 > By default, the aggregation is set to **Sum** for value fields that have a number type, and to **Count** for value fields that have non-number type values such as string, date, datetime, boolean, and so on.
-
-## Adjacent member differences (previous and next)
-
-The Pivot Table supports computing adjacent member differences dynamically along the base field axis using the **DifferenceFrom** and **PercentageOfDifferenceFrom** aggregation types. Instead of comparing against a static member, you can set the [`baseItem`](https://ej2.syncfusion.com/react/documentation/api/pivotview/fieldoptionsmodel#baseitem) property to `'(previous)'` or `'(next)'`. The difference is then calculated relative to the immediately preceding or succeeding visible member based on the current sorting and filtering applied to the [`baseField`](https://ej2.syncfusion.com/react/documentation/api/pivotview/fieldoptionsmodel#basefield).
-
-When using `'(previous)'`, the first member along the axis has no preceding member, so its cell remains empty. Similarly, when using `'(next)'`, the last member has no succeeding member and displays an empty cell. When the difference between adjacent values is zero, the cell displays `0`. For **PercentageOfDifferenceFrom**, if the adjacent base value is zero, `N/A` is displayed.
-
-By default, adjacent differences are calculated within each parent group. To compute differences continuously across parent group boundaries, set the `allowCrossGroupCalculation` property to `true`.
-
-You can also configure adjacent member differences at runtime using the Value field settings dialog by selecting `(previous)` or `(next)` from the **Base item** dropdown and checking **Compare across groups**.
-
-![Value field settings popup showing (previous), (next), and Compare across groups](images/aggregation_adjacent_difference.png)
-
-> **Limitations:**
-> * This feature is applicable only to relational data sources; OLAP data sources ignore the `'(previous)'` and `'(next)'` tokens.
-> * If the data source contains a literal member named `(previous)` or `(next)`, it will be shadowed by the special token.
-> * If an error occurs during adjacent difference calculations, the [`actionFailure`](https://ej2.syncfusion.com/react/documentation/api/pivotview/index-default#actionfailure) event is triggered with the action name `"Adjacent difference error"`.
-
-{% tabs %}
-{% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs352/app/App.jsx %}
-{% endhighlight %}
-{% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs352/app/App.tsx %}
-{% endhighlight %}
-{% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs352/app/datasource.jsx %}
-{% endhighlight %}
-{% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/grid-sdk/react/pivot-table/default-cs352/app/datasource.tsx %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs352" %}
 
 ## Modifying aggregation type for value fields at runtime
 

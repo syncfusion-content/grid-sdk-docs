@@ -33,8 +33,8 @@ End users can perform calculations on groups of values (specifically for value f
 | SampleVar| Displays the sample variance for the selected field.|
 | RunningTotals| Displays the running total for the selected field values.|
 | PercentageOfRunningTotals| Cumulative percentage of running totals (client-side engine only).|
-| DifferenceFrom| Displays the pivot table values with difference from the value of the base item in the base field.|
-| PercentageOfDifferenceFrom| Displays the pivot table values with percentage difference from the value of the base item in the base field.|
+| DifferenceFrom| Displays the difference relative to a specific base item or adjacent member (`'(previous)'` / `'(next)'`) in the base field. Configured using `baseField`, `baseItem`, and optionally `allowCrossGroupCalculation`.|
+| PercentageOfDifferenceFrom| Displays the percentage difference relative to a specific base item or adjacent member (`'(previous)'` / `'(next)'`) in the base field. Configured using `baseField`, `baseItem`, and optionally `allowCrossGroupCalculation`.|
 | PercentageOfGrandTotal| Displays the pivot table values with percentage of grand total of all values.|
 | PercentageOfColumnTotal| Displays the pivot table values in each column with percentage of total values for the column.|
 | PercentageOfRowTotal| Displays the pivot table values in each row with percentage of total values for the row.|
@@ -47,9 +47,12 @@ End users can perform calculations on groups of values (specifically for value f
 
 For each value field, the aggregation type can be set using the property [`Type`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewRow.html#Syncfusion_EJ2_PivotView_PivotViewRow_Type) in [`Value`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.ValuesDataSourceSettings.html). Meanwhile, aggregation types like [**SummaryTypes.DifferenceFrom**](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.SummaryTypes.html) and [**SummaryTypes.PercentageOfDifferenceFrom**](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.SummaryTypes.html) can check for specific field of specific item using [`BaseField`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewRow.html#Syncfusion_EJ2_PivotView_PivotViewRow_BaseField) and [`BaseItem`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewRow.html#Syncfusion_EJ2_PivotView_PivotViewRow_BaseItem) properties. Likewise, [**SummaryTypes.PercentageOfParentTotal**](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.SummaryTypes.html) type can for specific field using [`BaseField`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewRow.html#Syncfusion_EJ2_PivotView_PivotViewRow_BaseField) property. For instance, the aggregation type [**SummaryTypes.DifferenceFrom**](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.SummaryTypes.html) would intake the specified field and its corresponding member as input and its value is compared across other members in the same field and also across different fields to formulate an appropriate output value.  
 
-* [`Type`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewRow.html#Syncfusion_EJ2_PivotView_PivotViewRow_Type): It allows to set the aggregate type of the field.
-* [`BaseField`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewRow.html#Syncfusion_EJ2_PivotView_PivotViewRow_BaseField): It allows to set the specific field to aggregate the values.
-* [`BaseItem`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewRow.html#Syncfusion_EJ2_PivotView_PivotViewRow_BaseItem): It allows to set the specific member to aggregate the values.
+| Property | Applicable Types | Description |
+|---|---|---|
+| [`Type`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewRow.html#Syncfusion_EJ2_PivotView_PivotViewRow_Type) | All | Specifies the aggregation function to apply. |
+| [`BaseField`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewRow.html#Syncfusion_EJ2_PivotView_PivotViewRow_BaseField) | [**SummaryTypes.DifferenceFrom**](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.SummaryTypes.html), [**SummaryTypes.PercentageOfDifferenceFrom**](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.SummaryTypes.html), [**SummaryTypes.PercentageOfParentTotal**](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.SummaryTypes.html) | Specifies the reference field to aggregate against. |
+| [`BaseItem`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewRow.html#Syncfusion_EJ2_PivotView_PivotViewRow_BaseItem) | [**SummaryTypes.DifferenceFrom**](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.SummaryTypes.html), [**SummaryTypes.PercentageOfDifferenceFrom**](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.SummaryTypes.html) | Specifies the reference member name, or dynamic adjacent tokens (`'(previous)'` / `'(next)'`). |
+| `AllowCrossGroupCalculation` | [**SummaryTypes.DifferenceFrom**](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.SummaryTypes.html), [**SummaryTypes.PercentageOfDifferenceFrom**](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.SummaryTypes.html) | When using adjacent tokens, determines whether difference calculation continues across parent group boundaries (`true`) or resets within each group (`false`). |
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -64,32 +67,6 @@ For each value field, the aggregation type can be set using the property [`Type`
 
 
 > By default, the aggregation will be considered as [**SummaryTypes.Sum**](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.SummaryTypes.html) to the value fields which had number type and for the value fields which had non-number type values such as string, date, datetime, boolean, etc., the aggregation type will be considered as [**SummaryTypes.Count**](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.SummaryTypes.html).
-
-## Adjacent member differences (previous and next)
-
-The Pivot Table supports computing adjacent member differences dynamically along the base field axis using the **DifferenceFrom** and **PercentageOfDifferenceFrom** aggregation types. Instead of comparing against a static member, you can set the [`BaseItem`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewRow.html#Syncfusion_EJ2_PivotView_PivotViewRow_BaseItem) property to `'(previous)'` or `'(next)'`. The difference is then calculated relative to the immediately preceding or succeeding visible member based on the current sorting and filtering applied to the [`BaseField`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewRow.html#Syncfusion_EJ2_PivotView_PivotViewRow_BaseField).
-
-When using `'(previous)'`, the first member along the axis has no preceding member, so its cell remains empty. Similarly, when using `'(next)'`, the last member has no succeeding member and displays an empty cell. When the difference between adjacent values is zero, the cell displays `0`. For **PercentageOfDifferenceFrom**, if the adjacent base value is zero, `N/A` is displayed.
-
-By default, adjacent differences are calculated within each parent group. To compute differences continuously across parent group boundaries, set `AllowCrossGroupCalculation` to `true` (for example, `.AllowCrossGroupCalculation(true)`).
-
-You can also configure adjacent member differences at runtime using the Value field settings dialog by selecting `(previous)` or `(next)` from the **Base item** dropdown and checking **Compare across groups**.
-
-![Value field settings popup showing (previous), (next), and Compare across groups](images/aggregation_adjacent_difference.png)
-
-> **Limitations:**
-> * This feature is applicable only to relational data sources; OLAP data sources ignore the `'(previous)'` and `'(next)'` tokens.
-> * If the data source contains a literal member named `(previous)` or `(next)`, it will be shadowed by the special token.
-> * If an error occurs during adjacent difference calculations, the [`ActionFailure`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotView.html#Syncfusion_EJ2_PivotView_PivotView_ActionFailure) event is triggered with the action name `"Adjacent difference error"`.
-
-{% tabs %}
-{% highlight razor tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/aggregation/adjacent-difference/razor %}
-{% endhighlight %}
-{% highlight c# tabtitle="Aggregation.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/aggregation/adjacent-difference/aggregation.cs %}
-{% endhighlight %}
-{% endtabs %}
 
 ## Modifying aggregation type for value fields at runtime
 
