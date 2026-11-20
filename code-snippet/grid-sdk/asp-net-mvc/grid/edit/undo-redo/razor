@@ -1,0 +1,8 @@
+@Html.EJS().Grid("grid").DataSource((IEnumerable<object>)ViewBag.DataSource).Height("273px").Columns(col =>
+{
+    col.Field("ItemID").HeaderText("Item ID").IsPrimaryKey(true).Width("100").ValidationRules(new { required = "true" }).TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("ItemName").HeaderText("Item Name").Width("140").ValidationRules(new { required = "true" }).Add();
+    col.Field("Category").HeaderText("Category").EditType("dropdownedit").Width("130").Add();
+    col.Field("Stock").HeaderText("Stock").Width("100").EditType("numericedit").ValidationRules(new { required = "true", min = 0 }).TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("Price").HeaderText("Price").Width("110").Format("C2").EditType("numericedit").ValidationRules(new { required = "true", min = 1 }).TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+}).EditSettings(edit => { edit.AllowAdding(true).AllowEditing(true).AllowDeleting(true).EnableUndoRedo(true).Mode(Syncfusion.EJ2.Grids.EditMode.Batch); }).Toolbar(new List<string>() { "Add", "Edit", "Delete", "Update", "Cancel", "Undo", "Redo" }).Render()
