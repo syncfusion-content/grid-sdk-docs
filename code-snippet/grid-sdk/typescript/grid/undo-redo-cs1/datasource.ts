@@ -1,62 +1,62 @@
 export let data: Object[] = [
     {
-        "ProductID": 1,
-        "ProductName": "Chai",
-        "Category": "Beverages",
-        "UnitPrice": 18
+        "OrderID": 10248,
+        "CustomerID": "VINET",
+        "Freight": 32.38,
+        "ShipCountry": "France"
     },
     {
-        "ProductID": 2,
-        "ProductName": "Chang",
-        "Category": "Beverages",
-        "UnitPrice": 19
+        "OrderID": 10249,
+        "CustomerID": "TOMSP",
+        "Freight": 11.61,
+        "ShipCountry": "Germany"
     },
     {
-        "ProductID": 3,
-        "ProductName": "Aniseed Syrup",
-        "Category": "Condiments",
-        "UnitPrice": 10
+        "OrderID": 10250,
+        "CustomerID": "HANAR",
+        "Freight": 65.83,
+        "ShipCountry": "Brazil"
     },
     {
-        "ProductID": 4,
-        "ProductName": "Chef Anton Cajun",
-        "Category": "Condiments",
-        "UnitPrice": 22
+        "OrderID": 10251,
+        "CustomerID": "VICTE",
+        "Freight": 41.34,
+        "ShipCountry": "France"
     },
     {
-        "ProductID": 5,
-        "ProductName": "Ikura",
-        "Category": "Seafood",
-        "UnitPrice": 31
+        "OrderID": 10252,
+        "CustomerID": "SUPRD",
+        "Freight": 51.3,
+        "ShipCountry": "Belgium"
     },
     {
-        "ProductID": 6,
-        "ProductName": "Konbu",
-        "Category": "Seafood",
-        "UnitPrice": 6
+        "OrderID": 10253,
+        "CustomerID": "CHOPS",
+        "Freight": 22.98,
+        "ShipCountry": "Switzerland"
     },
     {
-        "ProductID": 7,
-        "ProductName": "Tofu",
-        "Category": "Produce",
-        "UnitPrice": 23
+        "OrderID": 10254,
+        "CustomerID": "RICSU",
+        "Freight": 148.33,
+        "ShipCountry": "Switzerland"
     },
     {
-        "ProductID": 8,
-        "ProductName": "Genen Shouyu",
-        "Category": "Condiments",
-        "UnitPrice": 15
+        "OrderID": 10255,
+        "CustomerID": "WELLI",
+        "Freight": 13.97,
+        "ShipCountry": "Brazil"
     },
     {
-        "ProductID": 9,
-        "ProductName": "Pavlova",
-        "Category": "Confections",
-        "UnitPrice": 17
+        "OrderID": 10256,
+        "CustomerID": "HILAA",
+        "Freight": 81.91,
+        "ShipCountry": "Venezuela"
     },
     {
-        "ProductID": 10,
-        "ProductName": "Alice Mutton",
-        "Category": "Meat",
-        "UnitPrice": 39
+        "OrderID": 10257,
+        "CustomerID": "ERNSH",
+        "Freight": 140.51,
+        "ShipCountry": "Austria"
     }
 ];

@@ -1,30 +1,29 @@
-public class InventoryData
+public class OrderData
 {
-    public int ItemID { get; set; }
-    public string ItemName { get; set; }
-    public string Category { get; set; }
-    public int Stock { get; set; }
-    public double Price { get; set; }
+    public int OrderID { get; set; }
+    public string CustomerID { get; set; }
+    public double Freight { get; set; }
+    public string ShipCountry { get; set; }
 
-    public static List<InventoryData> GetAllRecords()
+    public static List<OrderData> GetAllRecords()
     {
-        var data = new List<InventoryData>();
-        data.Add(new InventoryData { ItemID = 5001, ItemName = "Laptop", Category = "Electronics", Stock = 45, Price = 899.99 });
-        data.Add(new InventoryData { ItemID = 5002, ItemName = "Mouse", Category = "Accessories", Stock = 150, Price = 19.5 });
-        data.Add(new InventoryData { ItemID = 5003, ItemName = "Keyboard", Category = "Accessories", Stock = 120, Price = 35 });
-        data.Add(new InventoryData { ItemID = 5004, ItemName = "Monitor", Category = "Electronics", Stock = 60, Price = 189 });
-        data.Add(new InventoryData { ItemID = 5005, ItemName = "Desk Lamp", Category = "Furniture", Stock = 80, Price = 24.75 });
-        data.Add(new InventoryData { ItemID = 5006, ItemName = "Office Chair", Category = "Furniture", Stock = 35, Price = 149 });
-        data.Add(new InventoryData { ItemID = 5007, ItemName = "USB Hub", Category = "Accessories", Stock = 200, Price = 12.3 });
-        data.Add(new InventoryData { ItemID = 5008, ItemName = "Webcam", Category = "Electronics", Stock = 75, Price = 54.9 });
-        data.Add(new InventoryData { ItemID = 5009, ItemName = "Headset", Category = "Electronics", Stock = 90, Price = 69 });
-        data.Add(new InventoryData { ItemID = 5010, ItemName = "Notebook", Category = "Stationery", Stock = 500, Price = 2.5 });
+        var data = new List<OrderData>();
+        data.Add(new OrderData { OrderID = 10248, CustomerID = "VINET", Freight = 32.38, ShipCountry = "France" });
+        data.Add(new OrderData { OrderID = 10249, CustomerID = "TOMSP", Freight = 11.61, ShipCountry = "Germany" });
+        data.Add(new OrderData { OrderID = 10250, CustomerID = "HANAR", Freight = 65.83, ShipCountry = "Brazil" });
+        data.Add(new OrderData { OrderID = 10251, CustomerID = "VICTE", Freight = 41.34, ShipCountry = "France" });
+        data.Add(new OrderData { OrderID = 10252, CustomerID = "SUPRD", Freight = 51.3, ShipCountry = "Belgium" });
+        data.Add(new OrderData { OrderID = 10253, CustomerID = "CHOPS", Freight = 22.98, ShipCountry = "Switzerland" });
+        data.Add(new OrderData { OrderID = 10254, CustomerID = "RICSU", Freight = 148.33, ShipCountry = "Switzerland" });
+        data.Add(new OrderData { OrderID = 10255, CustomerID = "WELLI", Freight = 13.97, ShipCountry = "Brazil" });
+        data.Add(new OrderData { OrderID = 10256, CustomerID = "HILAA", Freight = 81.91, ShipCountry = "Venezuela" });
+        data.Add(new OrderData { OrderID = 10257, CustomerID = "ERNSH", Freight = 140.51, ShipCountry = "Austria" });
         return data;
     }
 }
 
 public ActionResult Index()
 {
-    ViewBag.DataSource = InventoryData.GetAllRecords();
+    ViewBag.DataSource = OrderData.GetAllRecords();
     return View();
 }

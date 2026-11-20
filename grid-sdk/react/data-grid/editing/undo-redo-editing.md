@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Undo Redo Editing in React Grid | Syncfusion
-description: Learn how to undo and redo cell edits, row additions and row deletions in batch editing mode of the Syncfusion React Grid.
+description: Learn how to undo and redo edit actions in the Syncfusion React Grid using toolbar items and keyboard shortcuts, and how to use batch undo redo and the undo redo limit.
 platform: grid-sdk
 control: Undo Redo Editing
 documentation: ug
@@ -10,9 +10,19 @@ domainurl: https://help.syncfusion.com/grid-sdk
 
 # Undo Redo Editing in React Grid
 
-The Grid supports undoing and redoing edit actions in batch editing mode. Cell edits, row additions and row deletions made before the changes are saved can be reverted or reapplied one step at a time, without discarding the other pending changes.
+The React Data Grid can revert and reapply edit actions such as cell edits, row additions and row deletions. Undo and redo are available in all editing modes, such as Normal (inline), Dialog and Batch, and in cell editing.
 
-To enable this feature, set [editSettings.enableUndoRedo](https://ej2.syncfusion.com/react/documentation/api/grid/editSettings#enableundoredo) to `true` and set the editing mode to [Batch](https://help.syncfusion.com/grid-sdk/react/data-grid/editing/batch-editing). Then add the `Undo` and `Redo` items to the toolbar.
+Undo and redo can be used in three ways, which are described in the following topics:
+
+* [Undo redo with toolbar](#undo-redo-with-toolbar)
+* [Undo redo with keyboard shortcuts](#undo-redo-with-keyboard-shortcuts)
+* [Undo redo with batch editing](#undo-redo-with-batch-editing)
+
+## Undo redo with toolbar
+
+Set the [editSettings.enableUndoRedo](https://ej2.syncfusion.com/react/documentation/api/grid/editSettings#enableundoredo) property to `true` to enable undo and redo. Then add the `Undo` and `Redo` items to the toolbar. The `Undo` item reverts the last edit action and the `Redo` item reapplies the action that was undone. Both items are disabled while there is nothing to undo or redo.
+
+In the following example, undo and redo are enabled in Normal editing mode with the toolbar items.
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
@@ -31,10 +41,71 @@ To enable this feature, set [editSettings.enableUndoRedo](https://ej2.syncfusion
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/grid/undo-redo-cs1" %}
 
-> * Undo and Redo are supported only in batch editing mode.
-> * Each action is stored in a stack. Use the toolbar `Undo` and `Redo` items to move through the stack.
-> * For grid editing setup and configuration, refer to the [Edit Feature Setup](./edit#set-up-editing).
+### Limit the number of undo and redo actions
 
-## Limit the number of undo and redo actions
+Use the [editSettings.undoRedoLimit](https://ej2.syncfusion.com/react/documentation/api/grid/editSettings#undoredolimit) property to control the maximum number of edit actions stored in the undo and redo stack. When the limit is reached, the oldest action is removed from the stack. The default value is `20`.
 
-The number of stored actions is controlled by [editSettings.undoRedoLimit](https://ej2.syncfusion.com/react/documentation/api/grid/editSettings#undoredolimit). When the limit is reached, the oldest action is removed from the stack.
+In the previous example, the limit is set to `10`, so only the last 10 edit actions can be undone.
+
+## Undo redo with keyboard shortcuts
+
+When [editSettings.enableUndoRedo](https://ej2.syncfusion.com/react/documentation/api/grid/editSettings#enableundoredo) is `true`, undo and redo can also be performed with keyboard shortcuts. The shortcuts work without the `Undo` and `Redo` toolbar items.
+
+| Shortcut | Action |
+|-----|-----|
+| <kbd>Ctrl</kbd> + <kbd>Z</kbd> | Undo the last edit action. |
+| <kbd>Ctrl</kbd> + <kbd>Y</kbd> or <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>Z</kbd> | Redo the last undone action. |
+
+> On macOS, use the <kbd>Cmd</kbd> key instead of <kbd>Ctrl</kbd>.
+
+In the following example, the toolbar does not contain the `Undo` and `Redo` items. Edit a record, press <kbd>Ctrl</kbd> + <kbd>Z</kbd> to undo it, and press <kbd>Ctrl</kbd> + <kbd>Y</kbd> to redo it.
+
+{% tabs %}
+{% highlight js tabtitle="App.jsx" %}
+{% include code-snippet/grid-sdk/react/grid/undo-redo-cs2/app/App.jsx %}
+{% endhighlight %}
+{% highlight ts tabtitle="App.tsx" %}
+{% include code-snippet/grid-sdk/react/grid/undo-redo-cs2/app/App.tsx %}
+{% endhighlight %}
+{% highlight js tabtitle="datasource.jsx" %}
+{% include code-snippet/grid-sdk/react/grid/undo-redo-cs2/app/datasource.jsx %}
+{% endhighlight %}
+{% highlight ts tabtitle="datasource.tsx" %}
+{% include code-snippet/grid-sdk/react/grid/undo-redo-cs2/app/datasource.tsx %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/grid/undo-redo-cs2" %}
+
+## Undo redo with batch editing
+
+In Batch mode, changes stay in the grid and are not sent to the data source until the `Update` toolbar item is clicked. Undo and redo work on these pending changes when [editSettings.enableUndoRedo](https://ej2.syncfusion.com/react/documentation/api/grid/editSettings#enableundoredo) is `true`.
+
+After the `Update` is clicked, the changes are saved and the undo and redo stack is cleared by default. Set the [editSettings.enableBatchUndoRedo](https://ej2.syncfusion.com/react/documentation/api/grid/editSettings#enablebatchundoredo) property to `true` along with [editSettings.enableUndoRedo](https://ej2.syncfusion.com/react/documentation/api/grid/editSettings#enableundoredo) to keep the stack after the changes are saved. The saved batch changes can then still be undone and redone.
+
+| Property | Behavior |
+|-----|-----|
+| enableUndoRedo | Undo and redo are available for the changes made before they are saved. |
+| enableBatchUndoRedo | Undo and redo remain available for the changes after the `Update` is clicked and the batch changes are saved. |
+
+In the following example, enableUndoRedo and enableBatchUndoRedo are set to `true`. Edit the cells, click `Update`, and then use `Undo` and `Redo`.
+
+{% tabs %}
+{% highlight js tabtitle="App.jsx" %}
+{% include code-snippet/grid-sdk/react/grid/undo-redo-cs3/app/App.jsx %}
+{% endhighlight %}
+{% highlight ts tabtitle="App.tsx" %}
+{% include code-snippet/grid-sdk/react/grid/undo-redo-cs3/app/App.tsx %}
+{% endhighlight %}
+{% highlight js tabtitle="datasource.jsx" %}
+{% include code-snippet/grid-sdk/react/grid/undo-redo-cs3/app/datasource.jsx %}
+{% endhighlight %}
+{% highlight ts tabtitle="datasource.tsx" %}
+{% include code-snippet/grid-sdk/react/grid/undo-redo-cs3/app/datasource.tsx %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/grid/undo-redo-cs3" %}
+
+> * The number of stored actions is limited by the [editSettings.undoRedoLimit](https://ej2.syncfusion.com/react/documentation/api/grid/editSettings#undoredolimit) property.
+> * The grid also provides the `undoEdit`, `redoEdit`, `isUndoStackAvailable` and `isRedoStackAvailable` methods to perform undo and redo and check the stack from code.

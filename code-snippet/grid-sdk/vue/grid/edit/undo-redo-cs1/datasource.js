@@ -1,62 +1,62 @@
 export let data = [
     {
-        "TaskID": 1,
-        "Title": "Design login page",
-        "Assignee": "Alice",
-        "Status": "Open"
+        "OrderID": 10248,
+        "CustomerID": "VINET",
+        "Freight": 32.38,
+        "ShipCountry": "France"
     },
     {
-        "TaskID": 2,
-        "Title": "Fix navbar bug",
-        "Assignee": "Bob",
-        "Status": "InProgress"
+        "OrderID": 10249,
+        "CustomerID": "TOMSP",
+        "Freight": 11.61,
+        "ShipCountry": "Germany"
     },
     {
-        "TaskID": 3,
-        "Title": "Write unit tests",
-        "Assignee": "Carol",
-        "Status": "Open"
+        "OrderID": 10250,
+        "CustomerID": "HANAR",
+        "Freight": 65.83,
+        "ShipCountry": "Brazil"
     },
     {
-        "TaskID": 4,
-        "Title": "Update documentation",
-        "Assignee": "Dave",
-        "Status": "Done"
+        "OrderID": 10251,
+        "CustomerID": "VICTE",
+        "Freight": 41.34,
+        "ShipCountry": "France"
     },
     {
-        "TaskID": 5,
-        "Title": "Optimize queries",
-        "Assignee": "Eve",
-        "Status": "InProgress"
+        "OrderID": 10252,
+        "CustomerID": "SUPRD",
+        "Freight": 51.3,
+        "ShipCountry": "Belgium"
     },
     {
-        "TaskID": 6,
-        "Title": "Review pull requests",
-        "Assignee": "Frank",
-        "Status": "Open"
+        "OrderID": 10253,
+        "CustomerID": "CHOPS",
+        "Freight": 22.98,
+        "ShipCountry": "Switzerland"
     },
     {
-        "TaskID": 7,
-        "Title": "Deploy to staging",
-        "Assignee": "Grace",
-        "Status": "Done"
+        "OrderID": 10254,
+        "CustomerID": "RICSU",
+        "Freight": 148.33,
+        "ShipCountry": "Switzerland"
     },
     {
-        "TaskID": 8,
-        "Title": "Refactor API layer",
-        "Assignee": "Heidi",
-        "Status": "InProgress"
+        "OrderID": 10255,
+        "CustomerID": "WELLI",
+        "Freight": 13.97,
+        "ShipCountry": "Brazil"
     },
     {
-        "TaskID": 9,
-        "Title": "Add dark theme",
-        "Assignee": "Ivan",
-        "Status": "Open"
+        "OrderID": 10256,
+        "CustomerID": "HILAA",
+        "Freight": 81.91,
+        "ShipCountry": "Venezuela"
     },
     {
-        "TaskID": 10,
-        "Title": "Set up CI pipeline",
-        "Assignee": "Judy",
-        "Status": "Done"
+        "OrderID": 10257,
+        "CustomerID": "ERNSH",
+        "Freight": 140.51,
+        "ShipCountry": "Austria"
     }
 ];

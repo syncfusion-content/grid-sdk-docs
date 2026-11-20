@@ -1,0 +1,7 @@
+@Html.EJS().Grid("grid").DataSource((IEnumerable<object>)ViewBag.DataSource).Height("273px").Columns(col =>
+{
+    col.Field("EmployeeID").HeaderText("Employee ID").Width("120").IsPrimaryKey(true).ValidationRules(new { required = "true", number = "true" }).TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+    col.Field("Name").HeaderText("Name").Width("160").ValidationRules(new { required = "true" }).Add();
+    col.Field("Department").HeaderText("Department").Width("140").EditType("dropdownedit").Add();
+    col.Field("Salary").HeaderText("Salary").Width("120").EditType("numericedit").Format("C0").ValidationRules(new { required = "true", min = 1000 }).TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+}).EditSettings(edit => { edit.AllowAdding(true).AllowEditing(true).AllowDeleting(true).EnableUndoRedo(true).Mode(Syncfusion.EJ2.Grids.EditMode.Normal); }).Toolbar(new List<string>() { "Add", "Edit", "Delete", "Update", "Cancel" }).Render()

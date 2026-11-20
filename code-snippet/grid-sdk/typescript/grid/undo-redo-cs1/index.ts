@@ -5,13 +5,13 @@ Grid.Inject(Edit, Toolbar);
 
 let grid: Grid = new Grid({
     dataSource: data,
-    editSettings: { allowEditing: true, allowAdding: true, allowDeleting: true, mode: 'Batch', enableUndoRedo: true },
+    editSettings: { allowEditing: true, allowAdding: true, allowDeleting: true, mode: 'Normal', enableUndoRedo: true, undoRedoLimit: 10 },
     toolbar: ['Add', 'Edit', 'Delete', 'Update', 'Cancel', 'Undo', 'Redo'],
     columns: [
-        { field: 'ProductID', headerText: 'Product ID', validationRules: { required: true, number: true }, textAlign: 'Right', isPrimaryKey: true, width: 120 },
-        { field: 'ProductName', headerText: 'Product Name', validationRules: { required: true }, width: 160 },
-        { field: 'Category', headerText: 'Category', editType: 'dropdownedit', validationRules: { required: true }, width: 140 },
-        { field: 'UnitPrice', headerText: 'Unit Price', textAlign: 'Right', editType: 'numericedit', format: 'C2', validationRules: { required: true, min: 1 }, width: 120 }
+        { field: 'OrderID', headerText: 'Order ID', width: 120, textAlign: 'Right', isPrimaryKey: true, validationRules: { required: true, number: true } },
+        { field: 'CustomerID', headerText: 'Customer ID', width: 140, validationRules: { required: true, minLength: 3 } },
+        { field: 'Freight', headerText: 'Freight', width: 120, editType: 'numericedit', format: 'C2', textAlign: 'Right', validationRules: { required: true, min: 1, max: 1000 } },
+        { field: 'ShipCountry', headerText: 'Ship Country', width: 150, editType: 'dropdownedit' }
     ],
     height: 273
 });
