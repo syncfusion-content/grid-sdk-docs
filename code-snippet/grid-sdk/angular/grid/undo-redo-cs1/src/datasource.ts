@@ -1,62 +1,62 @@
 export let data: Object[] = [
     {
-        "CustomerID": "C100",
-        "CompanyName": "Alfreds Futterkiste",
-        "ContactName": "Maria Anders",
-        "Country": "Germany"
+        "OrderID": 10248,
+        "CustomerID": "VINET",
+        "Freight": 32.38,
+        "ShipCountry": "France"
     },
     {
-        "CustomerID": "C101",
-        "CompanyName": "Ana Trujillo Emparedados",
-        "ContactName": "Ana Trujillo",
-        "Country": "Mexico"
+        "OrderID": 10249,
+        "CustomerID": "TOMSP",
+        "Freight": 11.61,
+        "ShipCountry": "Germany"
     },
     {
-        "CustomerID": "C102",
-        "CompanyName": "Antonio Moreno Taquer\u00eda",
-        "ContactName": "Antonio Moreno",
-        "Country": "Mexico"
+        "OrderID": 10250,
+        "CustomerID": "HANAR",
+        "Freight": 65.83,
+        "ShipCountry": "Brazil"
     },
     {
-        "CustomerID": "C103",
-        "CompanyName": "Around the Horn",
-        "ContactName": "Thomas Hardy",
-        "Country": "UK"
+        "OrderID": 10251,
+        "CustomerID": "VICTE",
+        "Freight": 41.34,
+        "ShipCountry": "France"
     },
     {
-        "CustomerID": "C104",
-        "CompanyName": "Berglunds snabbk\u00f6p",
-        "ContactName": "Christina Berglund",
-        "Country": "Sweden"
+        "OrderID": 10252,
+        "CustomerID": "SUPRD",
+        "Freight": 51.3,
+        "ShipCountry": "Belgium"
     },
     {
-        "CustomerID": "C105",
-        "CompanyName": "Blondel p\u00e8re et fils",
-        "ContactName": "Fr\u00e9d\u00e9rique Citeaux",
-        "Country": "France"
+        "OrderID": 10253,
+        "CustomerID": "CHOPS",
+        "Freight": 22.98,
+        "ShipCountry": "Switzerland"
     },
     {
-        "CustomerID": "C106",
-        "CompanyName": "B\u00f3lido Comidas",
-        "ContactName": "Mart\u00edn Sommer",
-        "Country": "Spain"
+        "OrderID": 10254,
+        "CustomerID": "RICSU",
+        "Freight": 148.33,
+        "ShipCountry": "Switzerland"
     },
     {
-        "CustomerID": "C107",
-        "CompanyName": "Bon app'",
-        "ContactName": "Laurence Lebihan",
-        "Country": "France"
+        "OrderID": 10255,
+        "CustomerID": "WELLI",
+        "Freight": 13.97,
+        "ShipCountry": "Brazil"
     },
     {
-        "CustomerID": "C108",
-        "CompanyName": "Bottom-Dollar Markets",
-        "ContactName": "Elizabeth Lincoln",
-        "Country": "Canada"
+        "OrderID": 10256,
+        "CustomerID": "HILAA",
+        "Freight": 81.91,
+        "ShipCountry": "Venezuela"
     },
     {
-        "CustomerID": "C109",
-        "CompanyName": "B's Beverages",
-        "ContactName": "Victoria Ashworth",
-        "Country": "UK"
+        "OrderID": 10257,
+        "CustomerID": "ERNSH",
+        "Freight": 140.51,
+        "ShipCountry": "Austria"
     }
 ];

@@ -1,62 +1,62 @@
 export let data: Object[] = [
     {
-        "EmployeeID": 1001,
-        "Name": "Nancy Davolio",
-        "Department": "Sales",
-        "Salary": 52000
+        "OrderID": 10248,
+        "CustomerID": "VINET",
+        "Freight": 32.38,
+        "ShipCountry": "France"
     },
     {
-        "EmployeeID": 1002,
-        "Name": "Andrew Fuller",
-        "Department": "Management",
-        "Salary": 98000
+        "OrderID": 10249,
+        "CustomerID": "TOMSP",
+        "Freight": 11.61,
+        "ShipCountry": "Germany"
     },
     {
-        "EmployeeID": 1003,
-        "Name": "Janet Leverling",
-        "Department": "Sales",
-        "Salary": 61000
+        "OrderID": 10250,
+        "CustomerID": "HANAR",
+        "Freight": 65.83,
+        "ShipCountry": "Brazil"
     },
     {
-        "EmployeeID": 1004,
-        "Name": "Margaret Peacock",
-        "Department": "Marketing",
-        "Salary": 57000
+        "OrderID": 10251,
+        "CustomerID": "VICTE",
+        "Freight": 41.34,
+        "ShipCountry": "France"
     },
     {
-        "EmployeeID": 1005,
-        "Name": "Steven Buchanan",
-        "Department": "Engineering",
-        "Salary": 72000
+        "OrderID": 10252,
+        "CustomerID": "SUPRD",
+        "Freight": 51.3,
+        "ShipCountry": "Belgium"
     },
     {
-        "EmployeeID": 1006,
-        "Name": "Michael Suyama",
-        "Department": "Engineering",
-        "Salary": 69000
+        "OrderID": 10253,
+        "CustomerID": "CHOPS",
+        "Freight": 22.98,
+        "ShipCountry": "Switzerland"
     },
     {
-        "EmployeeID": 1007,
-        "Name": "Robert King",
-        "Department": "Support",
-        "Salary": 45000
+        "OrderID": 10254,
+        "CustomerID": "RICSU",
+        "Freight": 148.33,
+        "ShipCountry": "Switzerland"
     },
     {
-        "EmployeeID": 1008,
-        "Name": "Laura Callahan",
-        "Department": "Support",
-        "Salary": 43000
+        "OrderID": 10255,
+        "CustomerID": "WELLI",
+        "Freight": 13.97,
+        "ShipCountry": "Brazil"
     },
     {
-        "EmployeeID": 1009,
-        "Name": "Anne Dodsworth",
-        "Department": "Marketing",
-        "Salary": 55000
+        "OrderID": 10256,
+        "CustomerID": "HILAA",
+        "Freight": 81.91,
+        "ShipCountry": "Venezuela"
     },
     {
-        "EmployeeID": 1010,
-        "Name": "Nigel Nelson",
-        "Department": "Finance",
-        "Salary": 66000
+        "OrderID": 10257,
+        "CustomerID": "ERNSH",
+        "Freight": 140.51,
+        "ShipCountry": "Austria"
     }
 ];

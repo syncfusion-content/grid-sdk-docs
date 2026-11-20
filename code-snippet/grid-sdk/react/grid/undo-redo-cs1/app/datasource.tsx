@@ -31,32 +31,32 @@ export let data: Object[] = [
     },
     {
         "OrderID": 10253,
-        "CustomerID": "HANAR",
-        "Freight": 58.17,
-        "ShipCountry": "Brazil"
-    },
-    {
-        "OrderID": 10254,
         "CustomerID": "CHOPS",
         "Freight": 22.98,
         "ShipCountry": "Switzerland"
     },
     {
-        "OrderID": 10255,
+        "OrderID": 10254,
         "CustomerID": "RICSU",
         "Freight": 148.33,
         "ShipCountry": "Switzerland"
     },
     {
-        "OrderID": 10256,
+        "OrderID": 10255,
         "CustomerID": "WELLI",
         "Freight": 13.97,
         "ShipCountry": "Brazil"
     },
     {
-        "OrderID": 10257,
+        "OrderID": 10256,
         "CustomerID": "HILAA",
         "Freight": 81.91,
         "ShipCountry": "Venezuela"
+    },
+    {
+        "OrderID": 10257,
+        "CustomerID": "ERNSH",
+        "Freight": 140.51,
+        "ShipCountry": "Austria"
     }
 ];
