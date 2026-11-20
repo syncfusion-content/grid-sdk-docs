@@ -9,7 +9,7 @@ import { PivotViewComponent as EjsPivotview } from "@syncfusion/ej2-vue-pivotvie
 const dataSourceSettings = {
   url: "https://bi.syncfusion.com/productservice/api/sales",
   type: "CSV",
-  delimiter: ";",
+  delimiter: ",",
   enableQuotedLineBreaks: true,
   expandAll: false,
   enableSorting: true,

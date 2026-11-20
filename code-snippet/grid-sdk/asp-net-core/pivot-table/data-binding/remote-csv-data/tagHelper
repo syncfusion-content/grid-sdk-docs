@@ -1,5 +1,5 @@
 <ejs-pivotview id="PivotView" height="300">
-    <e-datasourcesettings Url="https://bi.syncfusion.com/productservice/api/sales" Type='CSV' delimiter=";" enableQuotedLineBreaks="true">
+    <e-datasourcesettings Url="https://bi.syncfusion.com/productservice/api/sales" Type='CSV' delimiter="," enableQuotedLineBreaks="true">
         <e-rows>
             <e-field name="Region"></e-field>
             <e-field name="Country"></e-field>

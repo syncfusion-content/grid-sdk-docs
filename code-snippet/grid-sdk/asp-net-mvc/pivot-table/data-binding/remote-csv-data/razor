@@ -1,5 +1,5 @@
 @Html.EJS().PivotView("PivotView").Height("300").DataSourceSettings(dataSource => dataSource.Url("https://bi.syncfusion.com/productservice/api/sales")
-.ExpandAll(false).ShowAggregationOnValueField(false).EnableSorting(true).Type(Syncfusion.EJ2.PivotView.DataSourceType.CSV).Delimiter(";").EnableQuotedLineBreaks(true)
+.ExpandAll(false).ShowAggregationOnValueField(false).EnableSorting(true).Type(Syncfusion.EJ2.PivotView.DataSourceType.CSV).Delimiter(",").EnableQuotedLineBreaks(true)
 .FormatSettings(formatsettings =>
 {
     formatsettings.Name("Total Revenue").Format("C0").UseGrouping(true).Add();

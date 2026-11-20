@@ -7,7 +7,7 @@ function App() {
   let dataSourceSettings: DataSourceSettingsModel = {
     url: 'https://bi.syncfusion.com/productservice/api/sales',
     type: 'CSV',
-    delimiter: ';',
+    delimiter: ',',
     enableQuotedLineBreaks: true,
     expandAll: false,
     enableSorting: true,

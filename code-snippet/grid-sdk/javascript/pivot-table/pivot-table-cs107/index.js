@@ -2,7 +2,7 @@ var pivotObj = new ej.pivotview.PivotView({
     dataSourceSettings: {
         url: 'https://bi.syncfusion.com/productservice/api/sales',
         type: 'CSV',
-        delimiter: ';',
+        delimiter: ',',
         enableQuotedLineBreaks: true,
         expandAll: false,
         enableSorting: true,
