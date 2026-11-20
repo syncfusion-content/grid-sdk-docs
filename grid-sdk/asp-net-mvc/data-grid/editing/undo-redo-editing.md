@@ -19,11 +19,8 @@ Set the [EnableUndoRedo](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion
 In the following example, undo and redo are enabled in Normal editing mode, and the `Undo` and `Redo` items are added to the toolbar.
 
 {% tabs %}
-{% highlight razor tabtitle="Razor (CSHTML)" %}
+{% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-mvc/grid/edit/undo-redo/razor %}
-{% endhighlight %}
-{% highlight cshtml tabtitle="Tag Helper (CSHTML)" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/grid/edit/undo-redo/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Controller.cs" %}
 {% include code-snippet/grid-sdk/asp-net-mvc/grid/edit/undo-redo/undoredo.cs %}
@@ -51,11 +48,8 @@ When [EnableUndoRedo](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ
 In the following example, the toolbar does not contain the `Undo` and `Redo` items. Edit a record, press <kbd>Ctrl</kbd> + <kbd>Z</kbd> to undo the change, and press <kbd>Ctrl</kbd> + <kbd>Y</kbd> to redo it.
 
 {% tabs %}
-{% highlight razor tabtitle="Razor (CSHTML)" %}
+{% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-mvc/grid/edit/undo-redo-keyboard/razor %}
-{% endhighlight %}
-{% highlight cshtml tabtitle="Tag Helper (CSHTML)" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/grid/edit/undo-redo-keyboard/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Controller.cs" %}
 {% include code-snippet/grid-sdk/asp-net-mvc/grid/edit/undo-redo-keyboard/undoredokeyboard.cs %}
@@ -77,11 +71,8 @@ During batch editing, changes are maintained as pending changes until a batch sa
 In the following example, `EnableUndoRedo` and `EnableBatchUndoRedo` are set to `true`. Edit, add, or delete rows, save the batch changes, and then use `Undo` and `Redo` to revert or reapply the changes.
 
 {% tabs %}
-{% highlight razor tabtitle="Razor (CSHTML)" %}
+{% highlight cshtml tabtitle="CSHTML" %}
 {% include code-snippet/grid-sdk/asp-net-mvc/grid/edit/undo-redo-batch/razor %}
-{% endhighlight %}
-{% highlight cshtml tabtitle="Tag Helper (CSHTML)" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/grid/edit/undo-redo-batch/tagHelper %}
 {% endhighlight %}
 {% highlight c# tabtitle="Controller.cs" %}
 {% include code-snippet/grid-sdk/asp-net-mvc/grid/edit/undo-redo-batch/undoredobatch.cs %}

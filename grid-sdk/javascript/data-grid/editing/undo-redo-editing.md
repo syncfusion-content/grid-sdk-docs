@@ -22,9 +22,6 @@ In the following example, undo and redo are enabled in Normal editing mode, and 
 {% highlight js tabtitle="index.js" %}
 {% include code-snippet/grid-sdk/javascript/grid/undo-redo-cs1/index.js %}
 {% endhighlight %}
-{% highlight js tabtitle="es5-datasource.js" %}
-{% include code-snippet/grid-sdk/javascript/grid/undo-redo-cs1/es5-datasource.js %}
-{% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/grid-sdk/javascript/grid/undo-redo-cs1/index.html %}
 {% endhighlight %}
@@ -55,9 +52,6 @@ In the following example, the toolbar does not contain the `Undo` and `Redo` ite
 {% highlight js tabtitle="index.js" %}
 {% include code-snippet/grid-sdk/javascript/grid/undo-redo-cs2/index.js %}
 {% endhighlight %}
-{% highlight js tabtitle="es5-datasource.js" %}
-{% include code-snippet/grid-sdk/javascript/grid/undo-redo-cs2/es5-datasource.js %}
-{% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/grid-sdk/javascript/grid/undo-redo-cs2/index.html %}
 {% endhighlight %}
@@ -81,9 +75,6 @@ In the following example, `enableUndoRedo` and `enableBatchUndoRedo` are set to 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
 {% include code-snippet/grid-sdk/javascript/grid/undo-redo-cs3/index.js %}
-{% endhighlight %}
-{% highlight js tabtitle="es5-datasource.js" %}
-{% include code-snippet/grid-sdk/javascript/grid/undo-redo-cs3/es5-datasource.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
 {% include code-snippet/grid-sdk/javascript/grid/undo-redo-cs3/index.html %}

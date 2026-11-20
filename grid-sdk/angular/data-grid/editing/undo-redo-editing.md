@@ -22,9 +22,6 @@ In the following example, undo and redo are enabled in Normal editing mode, and 
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid-sdk/angular/grid/undo-redo-cs1/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="datasource.ts" %}
-{% include code-snippet/grid-sdk/angular/grid/undo-redo-cs1/src/datasource.ts %}
-{% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid-sdk/angular/grid/undo-redo-cs1/src/main.ts %}
 {% endhighlight %}
@@ -55,9 +52,6 @@ In the following example, the toolbar does not contain the `Undo` and `Redo` ite
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid-sdk/angular/grid/undo-redo-cs2/src/app.component.ts %}
 {% endhighlight %}
-{% highlight ts tabtitle="datasource.ts" %}
-{% include code-snippet/grid-sdk/angular/grid/undo-redo-cs2/src/datasource.ts %}
-{% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid-sdk/angular/grid/undo-redo-cs2/src/main.ts %}
 {% endhighlight %}
@@ -81,9 +75,6 @@ In the following example, `enableUndoRedo` and `enableBatchUndoRedo` are set to 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
 {% include code-snippet/grid-sdk/angular/grid/undo-redo-cs3/src/app.component.ts %}
-{% endhighlight %}
-{% highlight ts tabtitle="datasource.ts" %}
-{% include code-snippet/grid-sdk/angular/grid/undo-redo-cs3/src/datasource.ts %}
 {% endhighlight %}
 {% highlight ts tabtitle="main.ts" %}
 {% include code-snippet/grid-sdk/angular/grid/undo-redo-cs3/src/main.ts %}

@@ -25,9 +25,6 @@ In the following example, undo and redo are enabled in Normal editing mode, and 
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
 {% include code-snippet/grid-sdk/vue/grid/edit/undo-redo-cs1/app.vue %}
 {% endhighlight %}
-{% highlight js tabtitle="datasource.js" %}
-{% include code-snippet/grid-sdk/vue/grid/edit/undo-redo-cs1/datasource.js %}
-{% endhighlight %}
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/grid/edit/undo-redo-cs1" %}
@@ -58,9 +55,6 @@ In the following example, the toolbar does not contain the `Undo` and `Redo` ite
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
 {% include code-snippet/grid-sdk/vue/grid/edit/undo-redo-cs2/app.vue %}
 {% endhighlight %}
-{% highlight js tabtitle="datasource.js" %}
-{% include code-snippet/grid-sdk/vue/grid/edit/undo-redo-cs2/datasource.js %}
-{% endhighlight %}
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/grid/edit/undo-redo-cs2" %}
@@ -84,9 +78,6 @@ In the following example, `enableUndoRedo` and `enableBatchUndoRedo` are set to 
 {% endhighlight %}
 {% highlight html tabtitle="Options API (~/src/App.vue)" %}
 {% include code-snippet/grid-sdk/vue/grid/edit/undo-redo-cs3/app.vue %}
-{% endhighlight %}
-{% highlight js tabtitle="datasource.js" %}
-{% include code-snippet/grid-sdk/vue/grid/edit/undo-redo-cs3/datasource.js %}
 {% endhighlight %}
 {% endtabs %}
 
