@@ -30,7 +30,7 @@ In the following example, undo and redo are enabled in Normal editing mode with 
 
 ### Limit the number of undo and redo actions
 
-Use the [UndoRedoLimit](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridEditSettings.html#undoredolimit) property to control the maximum number of edit actions stored in the undo and redo stack. When the limit is reached, the oldest action is removed from the stack. The default value is `5`, so by default up to 5 actions can be undone or redone.
+Use the [UndoRedoLimit](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.Grids.GridEditSettings.html#undoredolimit) property to control the maximum number of edit actions stored in the undo and redo stack. When the limit is reached, the oldest action is removed from the stack. The default value is `20`.
 
 In the previous example, the limit is set to `10`, so only the last 10 edit actions can be undone.
 
