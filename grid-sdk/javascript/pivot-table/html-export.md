@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # HTML Export in JavaScript Pivot Table
 
-The JavaScript Pivot Table allows exporting the rendered table view into a standalone HTML file. To enable HTML export, set the `allowHtmlExport` property to **true** and inject the `HtmlExport` module into the Pivot Table. Once enabled, call the `exportToHTML` method programmatically, or use the HTML option in the built-in Toolbar export menu.
+The JavaScript Pivot Table allows exporting the rendered table view into a standalone HTML file. To enable HTML export, set the `allowHtmlExport` property to **true**. The `HtmlExport` module is included in the Syncfusion script bundle used by the sample. Once enabled, call the `exportToHTML` method programmatically, or use the HTML option in the built-in Toolbar export menu.
 
 In the following example, an external button is used to start the HTML export. When the button is clicked, the `exportToHTML` method is called with `HtmlExportProperties` so that the Pivot Table is saved as an HTML file.
 

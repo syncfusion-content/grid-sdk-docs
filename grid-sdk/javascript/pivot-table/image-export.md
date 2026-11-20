@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # Image Export in JavaScript Pivot Table
 
-The JavaScript Pivot Table supports exporting the current visible pivot composition into image formats: **PNG**, **JPEG** and **SVG**. To enable image export, set the `allowImageExport` property to **true** and inject the `HtmlExport` module into the Pivot Table. Once enabled, call the `exportToImage` method programmatically, or use the image options in the built-in Toolbar export menu.
+The JavaScript Pivot Table supports exporting the current visible pivot composition into image formats: **PNG**, **JPEG** and **SVG**. To enable image export, set the `allowImageExport` property to **true**. The `HtmlExport` module is included in the Syncfusion script bundle used by the sample. Once enabled, call the `exportToImage` method programmatically, or use the image options in the built-in Toolbar export menu.
 
 In the following example, an external button is used to start the image export. When the button is clicked, the `exportToImage` method is called with the **PNG** format and `ImageExportProperties` so that the Pivot Table is saved as an image.
 

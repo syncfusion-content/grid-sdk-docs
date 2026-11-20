@@ -10,7 +10,7 @@ domainurl: ##DomainURL##
 
 # HTML Export in ASP.NET Core Pivot Table
 
-The ASP.NET Core Pivot Table allows exporting the rendered table view into a standalone HTML file. To enable HTML export, set the `allowHtmlExport` property to **true** to enable the `HtmlExport` module. Once enabled, call the `exportToHTML` method programmatically, or use the HTML option in the built-in Toolbar export menu.
+The ASP.NET Core Pivot Table allows exporting the rendered table view into a standalone HTML file. To enable HTML export, set the `allowHtmlExport` property to **true**. The `HtmlExport` module is required for this feature. Once enabled, call the `exportToHTML` method programmatically, or use the HTML option in the built-in Toolbar export menu.
 
 In the following example, an external button is used to start the HTML export. When the button is clicked, the `exportToHTML` method is called with `HtmlExportProperties` so that the Pivot Table is saved as an HTML file.
 
