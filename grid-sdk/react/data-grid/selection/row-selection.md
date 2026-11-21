@@ -751,6 +751,40 @@ The following example demonstrates clearing row selection by calling the `clearR
 
  {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/grid/selection-cs11" %}
 
+## Prevent row deselection
+
+The Grid provides support for preventing specific rows from being deselected based on custom criteria. This feature helps maintain the selection state of important records and prevents users from accidentally removing them from the current selection.
+
+To define non-deselectable rows, use the `isRowNonDeselectable` callback property. The callback receives the row data and returns a boolean value indicating whether the row should be prevented from being deselected.
+
+Return `true` to prevent the row from being deselected.
+Return `false` to allow normal deselection behavior.
+
+## Sample
+
+This sample demonstrates how to prevent specific rows from being deselected by using the `isRowNonDeselectable` callback.
+
+{% tabs %}
+{% highlight js tabtitle="App.jsx" %}
+{% include code-snippet/grid-sdk/react/grid/selection-row-prevent-deselection/app/App.jsx %}
+{% endhighlight %}
+{% highlight ts tabtitle="App.tsx" %}
+{% include code-snippet/grid-sdk/react/grid/selection-row-prevent-deselection/app/App.tsx %}
+{% endhighlight %}
+{% highlight js tabtitle="datasource.jsx" %}
+{% include code-snippet/grid-sdk/react/grid/selection-row-prevent-deselection/app/datasource.jsx %}
+{% endhighlight %}
+{% highlight ts tabtitle="datasource.tsx" %}
+{% include code-snippet/grid-sdk/react/grid/selection-row-prevent-deselection/app/datasource.tsx %}
+{% endhighlight %}
+{% endtabs %}
+
+### Preview
+
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/grid/selection-row-prevent-deselection" %}
+
+The preview includes an option to open the sample in StackBlitz.
+
 ## Row selection events 
 
 The Grid provides several events related to row selection that allow responding to and customizing the behavior of row selection. These events provide control over various aspects of row selection. The following are the available row selection events:
