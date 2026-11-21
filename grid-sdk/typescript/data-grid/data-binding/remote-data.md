@@ -14,21 +14,68 @@ In TypeScript Grid component, binding remote data is a fundamental aspect that e
 
 Additionally, leverage the power for data retrieval and operations, enhancing event handling, asynchronous programming, and concurrent value management in TypeScript applications.
 
-## Custom binding
+## Custom binding with SSRM
 
-The custom binding feature in the TypeScript Grid enables you to manage your own custom API for handling data processing externally and then binding the resulting data to the Grid. This allows you to implement your own custom data logic to your application's requirements. When using custom binding, the Grid expects the result of the custom logic to be an object with properties `result` and `count`. The `result` property should contain the data to be displayed in the Grid, while the `count` property indicates the total number of records in the dataset for your application. To utilize custom binding, you can handle the  [DataManager](../../data). The DataManager integrates seamlessly with the TypeScript Grid to manage custom data processing and binding. 
+The custom binding feature in the TypeScript Grid enables managing a custom API for handling data processing externally and binding the processed data to the grid. This allows implementing application-specific data logic and supports the Server-Side Row Model (SSRM) workflow by using the `dataStateChange` event to send the current grid state to the server. The Grid then binds the returned data and expects the response to be an object containing the `result` and `count` properties.
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Grid component offers a range of powerful features for handling grid actions such as **paging**, **grouping**, **sorting** and **filtering**. These actions trigger the [dataStateChange](../../api/grid#datastatechange) event. The feature for CRUD action such as **Create**, **Read**, **Update**, **Delete** operations. This action trigger the [dataSourceChanged](../../api/grid#datasourcechanged) event. This event provides you with the opportunity to manage and manipulate data according to the individual's interactions. 
+- `result` -  This property should contain the array of records that will be displayed in the Data Grid. 
+- `count` - This property should indicate the total number of records available in the entire dataset.
 
-**Using the dataStateChange event**
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Grid component offers a range of powerful features for handling grid actions such as **paging**, **grouping**, **sorting** and **filtering**. These actions trigger the [dataStateChange](https://ej2.syncfusion.com/documentation/api/grid#datastatechange) event. The feature for CRUD action such as **Create**, **Read**, **Update**, **Delete** operations. This action trigger the [dataSourceChanged](https://ej2.syncfusion.com/documentation/api/grid#datasourcechanged) event. This event provides you with the opportunity to manage and manipulate data according to the individual's interactions. 
 
-The `dataStateChange` event is triggered whenever you perform actions that modify the state of the grid's data, such as changing pages, applying sorting, or grouping. This event provides detailed information about the action performed and the current state of the grid, including parameters like page number, sorting details, and filtering criteria.
+### Client-side vs server-side data processing
+
+Data Grid applications can process data using either a client-side or server-side approach.
+
+In a client-side model, the complete dataset is loaded into the browser and all data operations, such as paging, sorting, filtering, grouping, searching, and aggregation, are performed on the client.
+
+![Client side data rendering](../images/databining/client-side-rendering.jpg)
+
+In a Server-Side Row Model (SSRM), the complete dataset remains on the server. The Grid requests only the records required for the current view and processes data operations to the server. This approach reduces browser memory usage and improves performance when working with large datasets.
+
+![Server side data rendering](../images/databining/server-side-rendering.jpg)
+
+The following workflow illustrates the SSRM process:
+
+1. The Grid requests data based on its current state.
+2. The current state is sent through the `dataStateChange` event and includes information such as paging, sorting, filtering, searching, grouping, and aggregation.
+3. The server processes the request against the complete dataset.
+4. The server returns only the required records along with the total record count.
+5. The Grid renders the returned records and uses the total count to maintain paging and data navigation.
+
+A typical server response contains the following properties:
+
+```ts
+{
+  result: [...],
+  count: 100000
+}
+```
+
+The following table compares client-side processing and server-side processing in the grid.
+
+| Aspect | Client-side processing | Server-side processing (custom binding) |
+|--------|------------------------|-----------------------------------------|
+| Data loaded in browser | Complete dataset | Current page or block only |
+| Data ownership | Browser | Server |
+| Data operations | Executed in the browser | Executed on the server |
+| Suitable data size | Small to medium | Large (hundreds of thousands to millions of records) |
+| Browser memory usage | Increases as data size grows | Lower and predictable |
+| Network request | Single request on initial load | Request for each grid action |
+
+> Custom binding is suitable when data requests must be fully controlled by the application, such as with Redux or an external API. When the server follows a standard protocol, use the [DataManager](https://ej2.syncfusion.com/documentation/data/getting-started) with a built-in adaptor such as [UrlAdaptor](../connecting-to-adaptors/url-adaptor), [WebApiAdaptor](../connecting-to-adaptors/web-api-adaptor), [ODataV4Adaptor](../connecting-to-adaptors/odatav4-adaptor), or [GraphQLAdaptor](../connecting-to-adaptors/graphql-adaptor), which sends grid actions to the server automatically without handling the `dataStateChange` and `dataSourceChanged` events.
+
+### Handle the dataStateChange event
+
+In the SSRM workflow, the `dataStateChange` event acts as the communication point between the Grid and the server. This event triggers whenever actions modify the grid's data state, such as changing pages, applying sorting, or grouping. This event provides detailed information about the performed action and current grid state, including parameters like page number, sorting details, and filtering criteria.
 
 To implement the `dataStateChange` event, follow these steps:
 
 1. **Subscribe to the event:** In your component code, subscribe to the `dataStateChange` event using the appropriate event handler function. This function will be executed whenever you interact with the grid.
 
 2. **Handle data state:** Inside the event handler function, you can access the event arguments to determine the individual actions and intentions. The action property of the event arguments indicates the type of action performed (e.g., paging, sorting, grouping).
+
+3. **Return the result:** Assign the processed `result` and `count` to the grid's `dataSource` property to render the requested records.
 
 > The `dataStateChange` event will not be triggered during the initial rendering.
 
@@ -846,6 +893,33 @@ The following example demonstrates how to send additional parameters to the serv
   {% endtabs %}
 
 ![AdditionalParameters](../images/databining/remote-additional-params.png)
+
+## Custom binding with caching
+
+The TypeScript Data Grid provides the [enableCache](https://ej2.syncfusion.com/javascript/documentation/api/grid/infiniteScrollSettings#enablecache) option for custom data binding. When enabled, the data retrieved from the server is stored on the client and reused for subsequent data operations whenever possible. This reduces redundant data requests, improves responsiveness and enhances performance with large datasets.
+
+The custom binding cache works with infinite scrolling, minimizing unnecessary server requests while keeping navigation smooth. The `dataStateChange` event is triggered only when the requested data is not already available in the cache.
+
+{% tabs %}
+{% highlight ts tabtitle="app.ts" %}
+{% include code-snippet/grid-sdk/typescript/grid/remote-custom-binding-cache/app.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/grid-sdk/typescript/grid/remote-custom-binding-cache/index.html %}
+{% endhighlight %}
+{% highlight css tabtitle="styles.css" %}
+{% include code-snippet/grid-sdk/typescript/grid/remote-custom-binding-cache/styles.css %}
+{% endhighlight %}
+{% highlight ts tabtitle="server.ts" %}
+{% include code-snippet/grid-sdk/typescript/grid/remote-custom-binding-cache/server.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="orderService.ts" %}
+{% include code-snippet/grid-sdk/typescript/grid/remote-custom-binding-cache/orderService.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="datasource.ts" %}
+{% include code-snippet/grid-sdk/typescript/grid/remote-custom-binding-cache/datasource.ts %}
+{% endhighlight %}
+{% endtabs %}
 
 ## Offline mode
 
