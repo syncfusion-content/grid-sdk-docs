@@ -751,6 +751,36 @@ The following example demonstrates clearing row selection by calling the `clearR
 
  {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/grid/selection-cs11" %}
 
+## Deselect rows programmatically
+
+The Grid provides methods to programmatically deselect rows without requiring user interaction. This is useful when implementing custom selection logic, clearing selections based on business rules, or responding to application events.
+
+The Grid offers two methods for deselecting rows:
+
+- [deselectRow](https://ej2.syncfusion.com/react/documentation/api/grid/selection#deselectrow): Deselects a single row by passing its row index.
+- [deselectRows](https://ej2.syncfusion.com/react/documentation/api/grid/selection#deselectrows): Deselects multiple rows by passing an array of row indexes.
+
+> The deselection methods work only when row selection is enabled with [selectionSettings.mode](https://ej2.syncfusion.com/react/documentation/api/grid/selectionSettings#mode) set to `Row` or `Both`. Both `Single` and `Multiple` selection types are supported. The methods use **view row indexes** (not record keys), and deselection is ignored during editing mode.
+
+The following example demonstrates deselecting rows programmatically:
+
+{% tabs %}
+{% highlight js tabtitle="App.jsx" %}
+{% include code-snippet/grid-sdk/react/grid/deselect-row-single/app/App.jsx %}
+{% endhighlight %}
+{% highlight ts tabtitle="App.tsx" %}
+{% include code-snippet/grid-sdk/react/grid/deselect-row-single/app/App.tsx %}
+{% endhighlight %}
+{% highlight js tabtitle="datasource.jsx" %}
+{% include code-snippet/grid-sdk/react/grid/deselect-row-single/app/datasource.jsx %}
+{% endhighlight %}
+{% highlight ts tabtitle="datasource.tsx" %}
+{% include code-snippet/grid-sdk/react/grid/deselect-row-single/app/datasource.tsx %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/grid/deselect-row-single" %}
+
 ## Row selection events 
 
 The Grid provides several events related to row selection that allow responding to and customizing the behavior of row selection. These events provide control over various aspects of row selection. The following are the available row selection events:

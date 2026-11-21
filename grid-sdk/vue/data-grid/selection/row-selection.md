@@ -481,6 +481,30 @@ The following example demonstrates how to clear row selection by calling the [cl
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/grid/select/selection-row-clear" %}
 
+## Deselect rows programmatically
+
+The Grid provides methods to programmatically deselect rows without requiring user interaction. This is useful when implementing custom selection logic, clearing selections based on business rules, or responding to application events.
+
+The Grid offers two methods for deselecting rows:
+
+- [deselectRow](https://ej2.syncfusion.com/vue/documentation/api/grid/selection#deselectrow): Deselects a single row by passing its row index.
+- [deselectRows](https://ej2.syncfusion.com/vue/documentation/api/grid/selection#deselectrows): Deselects multiple rows by passing an array of row indexes.
+
+> The deselection methods work only when row selection is enabled with [selectionSettings.mode](https://ej2.syncfusion.com/vue/documentation/api/grid/selectionSettings#mode) property set to **Row** or **Both**. Both **Single** and **Multiple** selection types are supported. The methods use **view row indexes** (not record keys), and deselection is ignored during editing mode.
+
+The following example demonstrates deselecting rows programmatically:
+
+{% tabs %}
+{% highlight html tabtitle="Composition API (~/src/App.vue)" %}
+{% include code-snippet/grid-sdk/vue/grid/select/deselect-row-single/app-composition.vue %}
+{% endhighlight %}
+{% highlight html tabtitle="Options API (~/src/App.vue)" %}
+{% include code-snippet/grid-sdk/vue/grid/select/deselect-row-single/app.vue %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/grid/select/deselect-row-single" %}
+
 ## Row selection events 
 
 The Grid provides several events related to row selection that allow you to respond to and customize the behavior of row selection. These events give you control over various aspects of row selection. Here are the available row selection events:

@@ -266,6 +266,30 @@ The following example demonstrates how to clear row selection by calling the `cl
 
 ![Clear row selection programmatically ](../images/selection/row-clear-selection.gif)
 
+## Deselect rows programmatically
+
+The Grid provides methods to programmatically deselect rows without requiring user interaction. This is useful when implementing custom selection logic, clearing selections based on business rules, or responding to application events.
+
+The Grid offers two methods for deselecting rows:
+
+- `deselectRow`: Deselects a single row by passing its row index.
+- `deselectRows`: Deselects multiple rows by passing an array of row indexes.
+
+> The deselection methods work only when row selection is enabled with [selectionSettings.Mode](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.GridSelectionSettings.html#Syncfusion_EJ2_Grids_GridSelectionSettings_Mode) property set to **Row** or **Both**. Both **Single** and **Multiple** selection types are supported. The methods use **view row indexes** (not record keys), and deselection is ignored during editing mode.
+
+The following example demonstrates deselecting rows programmatically:
+
+{% tabs %}
+{% highlight cshtml tabtitle="CSHTML" %}
+{% include code-snippet/grid-sdk/asp-net-mvc/grid/deselect-row-single/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="row-deselection.cs" %}
+{% include code-snippet/grid-sdk/asp-net-mvc/grid/deselect-row-single/row-deselection.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+![Deselect rows programmatically](../images/selection/row-deselect-single.gif)
+
 ## Row selection events 
 
 The Grid provides several events related to row selection that allow you to respond to and customize the behavior of row selection. These events give you control over various aspects of row selection. Here are the available row selection events:
