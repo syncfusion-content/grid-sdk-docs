@@ -1,0 +1,18 @@
+@using Syncfusion.EJ2.PivotView
+
+@Html.EJS().PivotView("PivotView").Height("350").DataSourceSettings(dataSource => dataSource.DataSource((IEnumerable<object>)ViewBag.DataSource).Rows(rows =>
+{
+    rows.Name("Country").Add();
+}).Columns(columns =>
+{
+    columns.Name("Products").Add();
+}).Values(values =>
+{
+    values.Name("OrderDate").Caption("Earliest Order").Type(Syncfusion.EJ2.PivotView.SummaryTypes.Min).Add();
+    values.Name("OrderDate").Caption("Order Count").Type(Syncfusion.EJ2.PivotView.SummaryTypes.Count).Add();
+    values.Name("Amount").Caption("Total Amount").Type(Syncfusion.EJ2.PivotView.SummaryTypes.Sum).Add();
+}).FormatSettings(formatsettings =>
+{
+    formatsettings.Name("OrderDate").Type("date").Format("dd/MM/yyyy").Add();
+    formatsettings.Name("Amount").Format("C0").Add();
+})).Render()

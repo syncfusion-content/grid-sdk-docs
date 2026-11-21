@@ -51,6 +51,25 @@ You can also format the values at runtime using the formatting dialog. This opti
 
 > To use the formatting dialog, inject the `NumberFormatting` module into the pivot table.
 
+## Formatting date values in value axis
+
+When a date or datetime field is added to the values axis and aggregated with **Min** or **Max**, the Pivot Table displays the aggregated date value rather than a numeric total. To control how these values appear, configure [`formatSettings`](https://ej2.syncfusion.com/documentation/api/pivotview/dataSourceSettings#formatsettings) with a `type` of `'date'` or `'dateTime'` together with a standard date [`format`](https://ej2.syncfusion.com/documentation/api/pivotview/formatSettingsModel#format) string (for example, `'dd/MM/yyyy'`).
+
+If the same date field is aggregated with **Count** or **DistinctCount**, the result is a numeric value, so apply a numeric format string such as `'N0'`. When a Min or Max date field has no matching records for a particular row-column intersection, the cell displays the configured empty cell text.
+
+The following sample shows **Min** and **Count** aggregations on the `OrderDate` field, with a date format applied to the Min field and a numeric format applied to the count field.
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs508/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs508/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/pivot-table/pivot-table-cs508" %}
+
 ## Custom format
 
 You can add any custom format directly to the [`format`](https://ej2.syncfusion.com/documentation/api/pivotview/formatSettingsModel#format) property in the [`formatSettings`](https://ej2.syncfusion.com/documentation/api/pivotview/dataSourceSettings#formatsettings). Custom format can be achieved by using one or more format specifiers listed in the below table.

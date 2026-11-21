@@ -1,0 +1,19 @@
+<ejs-pivotview id="PivotView" height="350">
+    <e-datasourcesettings dataSource="@ViewBag.DataSource">
+        <e-rows>
+            <e-field name="Country"></e-field>
+        </e-rows>
+        <e-columns>
+            <e-field name="Products"></e-field>
+        </e-columns>
+        <e-values>
+            <e-field name="OrderDate" caption="Earliest Order" type="Min"></e-field>
+            <e-field name="OrderDate" caption="Order Count" type="Count"></e-field>
+            <e-field name="Amount" caption="Total Amount" type="Sum"></e-field>
+        </e-values>
+        <e-formatsettings>
+            <e-field name="OrderDate" type="date" format="dd/MM/yyyy"></e-field>
+            <e-field name="Amount" format="C0"></e-field>
+        </e-formatsettings>
+    </e-datasourcesettings>
+</ejs-pivotview>
