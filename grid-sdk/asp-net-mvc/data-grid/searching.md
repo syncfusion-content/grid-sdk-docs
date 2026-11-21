@@ -133,13 +133,19 @@ The following example demonstrates how to search specific columns such as **Cust
 
 ![Search specific columns](images/search/search-specific.gif)
 
-## Search on each key stroke
+## Search Modes
 
-The search on each keystroke feature in Syncfusion<sup style="font-size:70%">&reg;</sup> Grid enables you to perform real-time searching of grid data as they type in the search text box. This functionality provides a seamless and interactive searching experience, allowing you to see the search results dynamically updating in real time as they enter each keystroke in the search box
+Search Modes lets you choose how the Grid applies search results. Use this section to switch between the two supported modes at runtime:
 
-To achieve this, you need to bind the `keyup` event to the search input element inside the [Created](https://help.syncfusion.com/cr/aspnetmvc-js2/syncfusion.ej2.grids.grid.html#Syncfusion_EJ2_Grids_Grid_Created) event of the grid component. 
+- **Default Mode**: Search is executed only when the user presses the <kbd>Enter</kbd> key or clicking a button.
+- **Immediate Mode**: Search is executed automatically while typing based on the configured `ImmediateModeDelay`.
 
-In the following example, the `Created` event is bound to the grid component, and inside the event handler, the `keyup` event is bound to the `search` input element. Whenever the `keyup` event is triggered, the current `search` string is obtained from the `search` input element, and the `search` method is invoked on the grid instance with the current search string as a parameter. This allows the search results to be displayed in real-time as you type in the search box.
+| Property | Accepted values | Behavior |
+|---|---|---|
+| `SearchSettings.Mode` | `Default`, `Immediate` | Controls whether search waits for <kbd>Enter</kbd> or runs automatically while typing. |
+| `SearchSettings.ImmediateModeDelay` | Number in milliseconds | Sets the delay before search is triggered in `Immediate` mode. |
+
+The example below uses a dropdown to switch between the two modes at runtime. When **Immediate** is selected, the Grid updates `SearchSettings.Mode` to `Immediate` and sets `ImmediateModeDelay` to `1500`. When **Default** is selected, the Grid updates `SearchSettings.Mode` to `Default`.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -150,9 +156,7 @@ In the following example, the `Created` event is bound to the grid component, an
 {% endhighlight %}
 {% endtabs %}
 
-![Search on each key stroke](images/search/search-keystoke.gif)
-
-> Search on each key stroke approach may affect the performance of the application when dealing with a large number of records.
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/asp-net-mvc/grid/search/search-each-key" %}
 
 ## Perform search based on column formatting
 
