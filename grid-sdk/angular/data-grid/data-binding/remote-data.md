@@ -1221,6 +1221,32 @@ The following example demonstrates the process of sending additional parameters 
 
 ![AdditionalParameters](../images/additional_parameters.png)
 
+## Custom binding with caching
+
+The Data Grid provides the [enableCache](https://ej2.syncfusion.com/angular/documentation/api/grid/infiniteScrollSettings#enablecache) option for custom data binding. When enabled, the data retrieved from the server is stored on the client and reused for subsequent data operations whenever possible. This reduces redundant data requests, improves responsiveness and enhances performance with large datasets.
+
+The custom binding cache works with infinite scrolling, minimizing unnecessary server requests while keeping navigation smooth. The `dataStateChange` event is triggered only when the requested data is not already available in the cache.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/grid-sdk/angular/grid/observables-async-cache/src/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="crud.service.ts" %}
+{% include code-snippet/grid-sdk/angular/grid/observables-async-cache/src/crud.service.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="data.service.ts" %}
+{% include code-snippet/grid-sdk/angular/grid/observables-async-cache/src/data.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="customers.ts" %}
+{% include code-snippet/grid-sdk/angular/grid/observables-async-cache/src/customers.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="config.ts" %}
+{% include code-snippet/grid-sdk/angular/grid/observables-async-cache/src/app.config.ts %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/observables-async-cache" %}
+
 ## Offline mode
 
 On remote data binding, all grid actions such as paging, sorting, editing, grouping, filtering, etc., process on server-side. To avoid post back for every action, set the grid to load all data on initialization and make the actions process in client-side. To enable this behavior, use the `offline` property of `DataManager`.
