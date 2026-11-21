@@ -1,0 +1,17 @@
+@Html.EJS().PivotView("PivotView").Height("450").Width("100%").DataSourceSettings(dataSource => dataSource
+    .DataSource((IEnumerable<object>)ViewBag.DataSource)
+).GridSettings(grid => grid
+    .Layout(Syncfusion.EJ2.PivotView.PivotTableLayout.Flat)
+).FlatSettings(flat => flat
+    .AllowSorting(true)
+    .AllowFiltering(true)
+    .AllowPaging(true)
+    .PageSettings(p => p.PageSize(10))
+    .Columns(col => {
+        col.Field("Country").HeaderText("Country").Width("140").Add();
+        col.Field("Products").HeaderText("Products").Width("160").Add();
+        col.Field("Year").HeaderText("Year").Width("120").Add();
+        col.Field("Sold").HeaderText("Units Sold").Width("120").Add();
+        col.Field("Amount").HeaderText("Sold Amount").Width("140").Add();
+    })
+).Render()
