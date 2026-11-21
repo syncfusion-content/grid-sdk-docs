@@ -18,7 +18,7 @@ Follow the below steps to bind SfTreeGrid with SfDataPager.
  
 1. Create `IEnumerable` collection that you want to bind and set it to [SfDataPager.Source](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Controls.DataPager.SfDataPager.html#Syncfusion_UI_Xaml_Controls_DataPager_SfDataPager_Source) property.
 
-2. Set [SfDataPager.PageSize](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Controls.DataPager.SfDataPager.html#Syncfusion_UI_Xaml_Controls_DataPager_SfDataPager_PageSize) property to specify the number of `RootNodes` to be displayed per page.
+2. Set [SfDataPager.PageSize](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Controls.DataPager.SfDataPager.html#Syncfusion_UI_Xaml_Controls_DataPager_SfDataPager_PageSize) property to specify the number of `RootNodes` to be displayed per page. By default, only the root nodes are counted for the page size. To count all the visible rows instead, refer to [PageSizeMode](#pagesizemode).
 
 3. Bind [SfDataPager.PagedSource](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Controls.DataPager.SfDataPager.html#Syncfusion_UI_Xaml_Controls_DataPager_SfDataPager_PagedSource) to [SfTreeGrid.ItemsSource](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_ItemsSource) property. So whenever the page is changed, `PagedSource` will be update based on current page.
 
@@ -181,7 +181,283 @@ public class EmployeeInfo
 
 1. Paging is not supported when using `SfTreeGrid` in unbound mode (TreeGridUnBoundView).
 2. `SfDataPager`’s on‑demand loading functionality is not supported.
-3. **Child nodes** are not considered in page size calculation.
+3. **Child nodes** are not considered in page size calculation when [PageSizeMode](#pagesizemode) is `Root` (default). Set `PageSizeMode` to `All` to include the expanded child nodes in the page size calculation.
 4. Selection should not be maintained when moving from one page to another.
-5. **Sorting and Filtering** are applied across all pages. However, node reordering occurs only within each individual page.
+5. **Sorting and Filtering** are applied across all pages. However, node reordering occurs only within each individual page when [PageSizeMode](#pagesizemode) is `Root` (default). When `PageSizeMode` is `All`, sorting is applied to the entire tree before the pages are created.
 6. The **data operations** such as Add, Replace, Remove, Insert, and Move are not supported.
+
+## PageSizeMode
+
+By default, [SfDataPager.PageSize](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Controls.DataPager.SfDataPager.html#Syncfusion_UI_Xaml_Controls_DataPager_SfDataPager_PageSize) specifies the number of root nodes to be displayed per page, and the child nodes of the expanded root nodes are not counted. The [SfTreeGrid.PageSizeMode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_PageSizeMode) property allows you to change what is counted towards the `PageSize` when the SfTreeGrid is paged using SfDataPager. The default value of `PageSizeMode` is [Root](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.PageSizeMode.html).
+
+### PageSizeMode types
+
+The [PageSizeMode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.PageSizeMode.html) enumeration provides the following modes.
+
+<table>
+<tr>
+<td>
+{{'**Mode**'| markdownify }}
+</td>
+<td>
+{{'**Description**'| markdownify }}
+</td>
+</tr>
+<tr>
+<td>
+Root
+</td>
+<td>
+Only the root nodes are counted towards the <code>PageSize</code>. The child nodes of the expanded root nodes are displayed along with their root node and do not affect the page size. This is the default mode.
+</td>
+</tr>
+<tr>
+<td>
+All
+</td>
+<td>
+All the visible rows, which are the root nodes and the child nodes of the expanded parent nodes, are counted towards the <code>PageSize</code> as a flat list. Expanding or collapsing a node changes the number of visible rows and the pages are created again.
+</td>
+</tr>
+</table>
+
+### Root mode
+
+In `Root` mode, the `PageSize` is the number of root nodes displayed in a page. The page count is calculated from the number of root nodes. The child nodes of the root nodes in the current page are not counted, so the number of rows in a page increases when the nodes in that page are expanded.
+
+The expansion state of the nodes is retained when you navigate between the pages.
+
+The following code snippet shows `Root` mode. Since `Root` is the default value, setting the `PageSizeMode` property is optional.
+
+{% tabs %}
+{% highlight xaml %}
+<Grid>
+    <Grid.RowDefinitions>
+        <RowDefinition Height="*" />
+        <RowDefinition Height="Auto" />
+    </Grid.RowDefinitions>
+
+    <syncfusion:SfTreeGrid 
+            x:Name="treeGrid"
+            Grid.Row="0"
+            AutoGenerateColumns="True"
+            PageSizeMode="Root"
+            ItemsSource="{Binding ElementName=sfDataPager, Path=PagedSource}"
+            SelfRelationRootValue="-1"
+            ParentPropertyName="ID" 
+            ChildPropertyName="ReportsTo">
+    </syncfusion:SfTreeGrid>
+
+    <datapager:SfDataPager
+            x:Name="sfDataPager"
+            Grid.Row="1"
+            Orientation="Horizontal"
+            NumericButtonCount="7"
+            PageSize="3"
+            Source="{Binding Employees}" />
+</Grid>
+{% endhighlight %}
+{% highlight c# %}
+treeGrid.PageSizeMode = PageSizeMode.Root;
+{% endhighlight %}
+{% endtabs %}
+
+With the data used in the [Getting started](#getting-started) section, there are seven root nodes. When the `PageSize` is 3, the SfDataPager displays three pages that contain three, three, and one root nodes respectively, irrespective of the number of expanded child nodes.
+
+### All mode
+
+In `All` mode, the `PageSize` is the number of visible rows displayed in a page. The visible rows are the root nodes and the child nodes of the expanded parent nodes, which are arranged in the order in which they appear in the SfTreeGrid when it is not paged. This list is divided into pages of `PageSize` rows, so every page has the same number of rows except the last page.
+
+* The page count is calculated from the number of visible rows. When a node is expanded or collapsed, the number of visible rows changes, the page count is updated in the SfDataPager, and the rows in the pages are arranged again. If the current page index is greater than the new last page, the SfTreeGrid moves to the last page.
+* A page can start or end in the middle of the child nodes of a parent node. The child nodes in a page are displayed at their own node level.
+* The nodes that are filtered out are not counted as visible rows.
+* The expansion state of the nodes is retained when you navigate between the pages.
+* [SfTreeGrid.ExpandAllNodes](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_ExpandAllNodes) and [SfTreeGrid.CollapseAllNodes](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_CollapseAllNodes) methods expand and collapse the nodes in all the pages, not only the nodes in the current page.
+* When [AutoExpandMode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_AutoExpandMode) is set, the nodes in all the pages are expanded while loading. So the page count in the SfDataPager is calculated based on the expanded rows.
+* Sorting and filtering are applied to the entire tree before the pages are created. So the sorted order is maintained across all the pages.
+
+The following code snippet shows `All` mode.
+
+{% tabs %}
+{% highlight xaml %}
+<Grid>
+    <Grid.RowDefinitions>
+        <RowDefinition Height="*" />
+        <RowDefinition Height="Auto" />
+    </Grid.RowDefinitions>
+
+    <syncfusion:SfTreeGrid 
+            x:Name="treeGrid"
+            Grid.Row="0"
+            AutoGenerateColumns="True"
+            PageSizeMode="All"
+            ItemsSource="{Binding ElementName=sfDataPager, Path=PagedSource}"
+            SelfRelationRootValue="-1"
+            ParentPropertyName="ID" 
+            ChildPropertyName="ReportsTo">
+    </syncfusion:SfTreeGrid>
+
+    <datapager:SfDataPager
+            x:Name="sfDataPager"
+            Grid.Row="1"
+            Orientation="Horizontal"
+            NumericButtonCount="7"
+            PageSize="5"
+            Source="{Binding Employees}" />
+</Grid>
+{% endhighlight %}
+{% highlight c# %}
+treeGrid.PageSizeMode = PageSizeMode.All;
+{% endhighlight %}
+{% endtabs %}
+
+N> `PageSizeMode` can also be changed at runtime after the SfTreeGrid is loaded. The pages are created again based on the new mode and the page count in the SfDataPager is updated.
+
+### Examples
+
+The following examples use the `ViewModel` and `EmployeeInfo` classes given in the [Getting started](#getting-started) section.
+
+#### Comparing the page content in Root and All modes
+
+Consider that the `PageSize` is 5, the data is the same as in the [Getting started](#getting-started) section, and only the **Ferando Joseph** root node is expanded while all the other nodes are collapsed. Its child nodes **Andrew Fuller**, **Janet Leverling**, and **Steven Buchanan** are visible. The following table shows the rows displayed in each page.
+
+<table>
+<tr>
+<td>
+{{'**Page**'| markdownify }}
+</td>
+<td>
+{{'**Root mode**'| markdownify }}
+</td>
+<td>
+{{'**All mode**'| markdownify }}
+</td>
+</tr>
+<tr>
+<td>
+1
+</td>
+<td>
+Five root nodes (Ferando Joseph, John Adams, Thomas Jefferson, Andrew Madison, and Ulysses Pierce) and the three child nodes of Ferando Joseph, which are eight rows in total.
+</td>
+<td>
+Five visible rows: Ferando Joseph, Andrew Fuller, Janet Leverling, Steven Buchanan, and John Adams.
+</td>
+</tr>
+<tr>
+<td>
+2
+</td>
+<td>
+The remaining two root nodes (Jimmy Harrison and Ronald Fillmore).
+</td>
+<td>
+The next five visible rows: Thomas Jefferson, Andrew Madison, Ulysses Pierce, Jimmy Harrison, and Ronald Fillmore.
+</td>
+</tr>
+</table>
+
+In both the modes the SfDataPager displays two pages. In `Root` mode, the page count is based on the seven root nodes. In `All` mode, the page count is based on the ten visible rows. If you expand one more node in `All` mode, the number of visible rows increases and the SfDataPager updates the page count accordingly.
+
+#### Loading all the pages in expanded state
+
+Setting `AutoExpandMode` to `AllNodesExpanded` in `All` mode expands the nodes of all the pages while loading. The data used in the [Getting started](#getting-started) section has 31 records. So when the `PageSize` is 10, the SfDataPager displays four pages with 10, 10, 10, and 1 rows.
+
+{% tabs %}
+{% highlight xaml %}
+<Grid>
+    <Grid.RowDefinitions>
+        <RowDefinition Height="*" />
+        <RowDefinition Height="Auto" />
+    </Grid.RowDefinitions>
+
+    <syncfusion:SfTreeGrid 
+            x:Name="treeGrid"
+            Grid.Row="0"
+            AutoExpandMode="AllNodesExpanded"
+            AutoGenerateColumns="True"
+            PageSizeMode="All"
+            ItemsSource="{Binding ElementName=sfDataPager, Path=PagedSource}"
+            SelfRelationRootValue="-1"
+            ParentPropertyName="ID" 
+            ChildPropertyName="ReportsTo">
+    </syncfusion:SfTreeGrid>
+
+    <datapager:SfDataPager
+            x:Name="sfDataPager"
+            Grid.Row="1"
+            Orientation="Horizontal"
+            NumericButtonCount="7"
+            PageSize="10"
+            Source="{Binding Employees}" />
+</Grid>
+{% endhighlight %}
+{% highlight c# %}
+treeGrid.AutoExpandMode = AutoExpandMode.AllNodesExpanded;
+treeGrid.PageSizeMode = PageSizeMode.All;
+{% endhighlight %}
+{% endtabs %}
+
+#### Changing the PageSizeMode and expanding the nodes at runtime
+
+The following code snippet changes the `PageSizeMode` and expands or collapses all the nodes of all the pages through button click events.
+
+{% tabs %}
+{% highlight xaml %}
+<Grid>
+    <Grid.RowDefinitions>
+        <RowDefinition Height="Auto" />
+        <RowDefinition Height="*" />
+        <RowDefinition Height="Auto" />
+    </Grid.RowDefinitions>
+
+    <StackPanel Grid.Row="0" Orientation="Horizontal">
+        <Button Content="Root Mode" Click="OnRootModeClick" Margin="5" />
+        <Button Content="All Mode" Click="OnAllModeClick" Margin="5" />
+        <Button Content="Expand All" Click="OnExpandAllClick" Margin="5" />
+        <Button Content="Collapse All" Click="OnCollapseAllClick" Margin="5" />
+    </StackPanel>
+
+    <syncfusion:SfTreeGrid 
+            x:Name="treeGrid"
+            Grid.Row="1"
+            AutoGenerateColumns="True"
+            ItemsSource="{Binding ElementName=sfDataPager, Path=PagedSource}"
+            SelfRelationRootValue="-1"
+            ParentPropertyName="ID" 
+            ChildPropertyName="ReportsTo">
+    </syncfusion:SfTreeGrid>
+
+    <datapager:SfDataPager
+            x:Name="sfDataPager"
+            Grid.Row="2"
+            Orientation="Horizontal"
+            NumericButtonCount="7"
+            PageSize="5"
+            Source="{Binding Employees}" />
+</Grid>
+{% endhighlight %}
+{% highlight c# %}
+private void OnRootModeClick(object sender, RoutedEventArgs e)
+{
+    treeGrid.PageSizeMode = PageSizeMode.Root;
+}
+
+private void OnAllModeClick(object sender, RoutedEventArgs e)
+{
+    treeGrid.PageSizeMode = PageSizeMode.All;
+}
+
+private void OnExpandAllClick(object sender, RoutedEventArgs e)
+{
+    treeGrid.ExpandAllNodes();
+}
+
+private void OnCollapseAllClick(object sender, RoutedEventArgs e)
+{
+    treeGrid.CollapseAllNodes();
+}
+{% endhighlight %}
+{% endtabs %}
+
+N> In `All` mode, `ExpandAllNodes` increases the number of visible rows and so the page count in the SfDataPager increases. Similarly, `CollapseAllNodes` decreases the page count.
