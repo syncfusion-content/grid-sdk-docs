@@ -379,6 +379,23 @@ The following table shows the available operators for value filtering:
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/default-cs82" %}
 
+### Top and bottom percentage value filters
+
+By default, Top and Bottom value filtering selects a specific number of items based on aggregated measure values. In addition, you can filter records based on a percentage of the total top or bottom members or values. To enable this, set the `mode` property to `Percent` in the `filterSettings` under `dataSourceSettings`.
+
+In the filter settings, specify `condition` as **Top** or **Bottom**, set `mode` as **Percent**, and define the desired percentage (1 to 100) in `value1`. This is useful for analyzing top-performing or under-performing contributors, such as displaying the products contributing to the top 20% or bottom 10% of total sales.
+
+{% tabs %}
+{% highlight html tabtitle="Composition API (~/src/App.vue)" %}
+{% include code-snippet/grid-sdk/vue/pivot-table/default-cs302/app-composition.vue %}
+{% endhighlight %}
+{% highlight html tabtitle="Options API (~/src/App.vue)" %}
+{% include code-snippet/grid-sdk/vue/pivot-table/default-cs302/app.vue %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/default-cs302" %}
+
 ### Clearing the existing value filter
 
 You can clear the applied value filter by clicking the "Clear" option at the bottom of the filter dialog under the "Value" tab.
