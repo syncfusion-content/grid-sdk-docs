@@ -1,0 +1,31 @@
+<div class="controls" style="padding: 10px 0">
+    <label>Color <input type="color" id="color" value="#ffb347"></label>
+    <label>Flash duration (ms) <input type="number" id="flash" value="500" min="0" step="100"></label>
+    <label>Fade duration (ms) <input type="number" id="fade" value="1000" min="0" step="100"></label>
+    <button class="e-btn" id="applySettings">Apply settings</button>
+    <button class="e-btn" id="updatePrices">Update prices</button>
+</div>
+<ejs-grid id="Grid" dataSource="@ViewBag.DataSource" enableHighlightOnDataChange="true" height="300">
+    <e-grid-highlightsettings color="#ffb347" flashDuration="500" fadeDuration="1000"></e-grid-highlightsettings>
+    <e-grid-columns>
+        <e-grid-column field="Symbol" headerText="Symbol" width="110" isPrimaryKey="true"></e-grid-column>
+        <e-grid-column field="Company" headerText="Company" width="180"></e-grid-column>
+        <e-grid-column field="Price" headerText="Price" width="120" format="C2" textAlign="Right"></e-grid-column>
+        <e-grid-column field="Volume" headerText="Volume" width="140" format="N0" textAlign="Right"></e-grid-column>
+    </e-grid-columns>
+</ejs-grid>
+<script>
+    document.getElementById('applySettings').addEventListener('click', function () {
+        var grid = document.getElementById('Grid').ej2_instances[0];
+        grid.highlightSettings.color = document.getElementById('color').value;
+        grid.highlightSettings.flashDuration = Number(document.getElementById('flash').value);
+        grid.highlightSettings.fadeDuration = Number(document.getElementById('fade').value);
+    });
+    document.getElementById('updatePrices').addEventListener('click', function () {
+        var grid = document.getElementById('Grid').ej2_instances[0];
+        var symbols = ['AAPL', 'NVDA', 'TSLA'];
+        symbols.forEach((symbol) => {
+            grid.setCellValue(symbol, 'Price', +(100 + Math.random() * 150).toFixed(2));
+        });
+    });
+</script>
