@@ -9,22 +9,20 @@ import { PivotViewComponent as EjsPivotview } from "@syncfusion/ej2-vue-pivotvie
 const dataSourceSettings = {
   url: "https://bi.syncfusion.com/productservice/api/sales",
   type: "CSV",
+  delimiter: ",",
+  enableQuotedLineBreaks: true,
   expandAll: false,
   enableSorting: true,
   formatSettings: [
-    { name: "Total Cost", format: "C0" },
     { name: "Total Revenue", format: "C0" },
     { name: "Total Profit", format: "C0" }
   ],
-  drilledMembers: [{ name: "Item Type", items: ["Baby Food"] }],
   rows: [{ name: "Region" }, { name: "Country" }],
   columns: [{ name: "Item Type" }, { name: "Sales Channel" }],
   values: [
-    { name: "Total Cost" },
     { name: "Total Revenue" },
     { name: "Total Profit" }
-  ],
-  filters: []
+  ]
 };
 const height = 350;
 </script>

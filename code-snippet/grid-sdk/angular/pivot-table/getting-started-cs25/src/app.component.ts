@@ -31,11 +31,12 @@ export class AppComponent implements OnInit {
     this.dataSourceSettings = {
       url: 'https://bi.syncfusion.com/productservice/api/sales',
       type: 'CSV',
+      delimiter: ',',
+      enableQuotedLineBreaks: true,
       expandAll: false,
       enableSorting: true,
       // tslint:disable-next-line:max-line-length
-      formatSettings: [{ name: 'Total Cost', format: 'C0' }, { name: 'Total Revenue', format: 'C0' }, { name: 'Total Profit', format: 'C0' }],
-      drilledMembers: [{ name: 'Item Type', items: ['Baby Food'] }],
+      formatSettings: [{ name: 'Total Revenue', format: 'C0' }, { name: 'Total Profit', format: 'C0' }],
       rows: [
         { name: 'Region' },
         { name: 'Country' }
@@ -45,11 +46,9 @@ export class AppComponent implements OnInit {
         { name: 'Sales Channel' }
       ],
       values: [
-        { name: 'Total Cost' },
         { name: 'Total Revenue' },
         { name: 'Total Profit' }
-      ],
-      filters: []
+      ]
     };
   }
 }
