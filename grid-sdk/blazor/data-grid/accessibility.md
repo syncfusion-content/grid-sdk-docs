@@ -212,6 +212,230 @@ For example:
 - To group columns when a header is focused, use <kbd>Command + Space</kbd>.
 - To expand visible groups, use <kbd>Ctrl + Down Arrow</kbd>.
 
+## Using Custom Key Support
+
+The Blazor DataGrid supports replacing the default built-in keyboard shortcuts or adding new ones that perform the same actions. This allows you to customize the keyboard experience to match your application's conventions or accessibility requirements.
+
+To configure custom keyboard shortcuts, set the **KeyboardShortcuts** property on the `SfGrid` component with a `GridCustomKeyboardShortcuts` object. Each action category (DataCell, Header, EditCell, GroupRow, DetailRow, and Common) contains a dictionary mapping `GridKeyboardAction` enum values to custom key combinations.
+
+**DataCell**
+
+| Action | Windows | Mac | Description |
+|--------|---------|-----|---|
+| NavigateUp | Shift+Enter | ⇧+Enter | Move focus up one cell. |
+| NavigateDown | Enter, ArrowDown, Shift+Down | Enter, ↓, ⇧+↓ | Move focus down one cell. |
+| NavigateLeft | Shift+Tab | ⇧+Tab | Move focus to the previous cell. |
+| NavigateRight | Tab, ArrowRight, Shift+Right | Tab, →, ⇧+→ | Move focus to the next cell. |
+| NavigateRowStart | Home | Fn+← | Move focus to the first cell in the row. |
+| NavigateRowEnd | End | Fn+→ | Move focus to the last cell in the row. |
+| NavigateGridStart | Ctrl+Home | ⌘+Fn+← | Move focus to the first cell in the grid. |
+| NavigateGridEnd | Ctrl+End | ⌘+Fn+→ | Move focus to the last cell in the grid. |
+| StartEdit | F2 | F2 | Start editing the focused cell. |
+| AddRecord | Insert | ⌥+Enter | Add a new row. |
+| DeleteRecord | Delete | Delete | Delete the focused or selected rows. |
+| SelectAll | Ctrl+A | ⌘+A | Select all rows. |
+| PageUp | PageUp | PageUp | Go to the previous page. |
+| PageDown | PageDown | PageDown | Go to the next page. |
+| SelectToggle | Space | Space | Toggle selection of the focused checkbox row. |
+| Undo | Ctrl+Z | ⌘+Z | Undo the most recent edit. |
+| Redo | Ctrl+Y | ⌘+⇧+Z | Redo the most recently undone edit. |
+
+**Header**
+
+| Action | Windows | Mac | Description |
+|--------|---------|-----|---|
+| SortColumn | Enter, Ctrl+Enter | Enter, ⌘+Enter | Sort the focused column. |
+| ToggleHeaderCheckbox | Space | Space | Toggle the header checkbox. |
+| MoveFocusToFirstRow | Alt+W | ⌥+W | Move focus to the first content row. |
+| NavigateLeft | Shift+Tab | ⇧+Tab | Move focus to the previous header cell. |
+| NavigateRight | Tab | Tab | Move focus to the next header cell. |
+| GroupColumn | Ctrl+Space | ⌘+Space | Group or ungroup the focused column. |
+| ReorderColumnLeft | Ctrl+Left | ⌘+← | Move the focused column left. |
+| ReorderColumnRight | Ctrl+Right | ⌘+→ | Move the focused column right. |
+| FocusFilterBar | ArrowDown | ↓ | Move focus into the filter bar. |
+| OpenColumnMenu | Alt+ArrowDown | ⌥+↓ | Open the focused column's menu. |
+| OpenFilterMenu | Alt+ArrowDown | ⌥+↓ | Open the focused column's filter menu. |
+
+**EditCell**
+
+| Action | Windows | Mac | Description |
+|--------|---------|-----|---|
+| Escape | Escape | Escape | Cancel the current edit. |
+| EditEndAndTabNext | Tab | Tab | Commit the edit and move to the next editable cell. |
+| EditEndAndShiftTabPrev | Shift+Tab | ⇧+Tab | Commit the edit and move to the previous editable cell. |
+
+**GroupRow**
+
+| Action | Windows | Mac | Description |
+|--------|---------|-----|---|
+| ExpandGroup | ArrowRight | → | Expand the focused group. |
+| CollapseGroup | ArrowLeft | ← | Collapse the focused group. |
+| ExpandAllGroup | Ctrl+Down | ⌘+↓ | Expand all groups. |
+| CollapseAllGroup | Ctrl+Up | ⌘+↑ | Collapse all groups. |
+
+**DetailRow**
+
+| Action | Windows | Mac | Description |
+|--------|---------|-----|---|
+| ExpandDetailRow | Enter, Alt+ArrowDown | Enter, ⌥+↓ | Expand the focused detail row. |
+| CollapseDetailRow | Enter, Alt+ArrowUp | Enter, ⌥+↑ | Collapse the focused detail row. |
+| ExpandAllDetailRows | Ctrl+ArrowDown | ⌘+↓ | Expand all detail rows. |
+| CollapseAllDetailRows | Ctrl+ArrowUp | ⌘+↑ | Collapse all detail rows. |
+
+**Common**
+
+| Action | Windows | Mac | Description |
+|--------|---------|-----|---|
+| Print | Ctrl+P | ⌘+P | Open the browser print dialog. |
+| Copy | Ctrl+C | ⌘+C | Copy selected cells to the clipboard. |
+| CopyWithHeaders | Ctrl+Shift+H | ⌘+⇧+H | Copy selected cells with their headers. |
+| Paste | Ctrl+V | ⌘+V | Paste clipboard content into the grid. |
+
+The following example demonstrates how to customize keyboard shortcuts for navigation, editing, and common actions:
+
+{% tabs %}
+{% highlight razor tabtitle="Index.razor" %}
+@using Syncfusion.Blazor.Grids
+
+<SfGrid DataSource="@GridData"
+    AllowPaging="true"
+    AllowSorting="true"
+    AllowGrouping="true"
+    AllowReordering="true"
+    AllowSelection="true"
+    AllowFiltering="true"
+    @ref="Grid"
+    Toolbar="@(new List<string>() { "Add", "Edit", "Delete", "Update", "Cancel" })"
+    KeyboardShortcuts="@Shortcuts"
+    Height="400">
+    <GridEditSettings AllowEditing="true" AllowAdding="true" AllowDeleting="true"></GridEditSettings>
+    <GridFilterSettings Type="FilterType.Menu"></GridFilterSettings>
+    <GridSelectionSettings CheckboxOnly="true"></GridSelectionSettings>
+    <GridColumns>
+        <GridColumn Type="ColumnType.CheckBox" Width="50"></GridColumn>
+        <GridColumn Field="@nameof(OrderData.OrderID)" HeaderText="Order ID" IsPrimaryKey="true" Width="120" />
+        <GridColumn Field="@nameof(OrderData.CustomerID)" HeaderText="Customer Name" Width="150" />
+        <GridColumn Field="@nameof(OrderData.ShipCity)" HeaderText="Ship City" Width="120" />
+        <GridColumn Field="@nameof(OrderData.OrderDate)" HeaderText="Order Date" Format="d" Width="140" />
+        <GridColumn Field="@nameof(OrderData.ShipName)" HeaderText="Ship Name" Width="160" />
+    </GridColumns>
+</SfGrid>
+
+@code {
+    private SfGrid<OrderData> Grid { get; set; } = default!;
+
+    public List<OrderData> GridData { get; set; }
+
+    protected override void OnInitialized()
+    {
+        GridData = OrderData.GetAllRecords();
+    }
+
+    private GridCustomKeyboardShortcuts Shortcuts { get; } = new()
+    {
+        Header = new Dictionary<GridKeyboardAction, string>
+        {
+            { GridKeyboardAction.NavigateLeft, "Alt+J" },
+            { GridKeyboardAction.NavigateRight, "Alt+L" },
+            { GridKeyboardAction.SortColumn, "Alt+S" },
+            { GridKeyboardAction.GroupColumn, "Alt+G" },
+            { GridKeyboardAction.ReorderColumnLeft, "Ctrl+J" },
+            { GridKeyboardAction.ReorderColumnRight, "Ctrl+L" },
+            { GridKeyboardAction.ToggleHeaderCheckbox, "Alt+H" },
+            { GridKeyboardAction.MoveFocusToFirstRow, "Alt+R" },
+            { GridKeyboardAction.OpenColumnMenu, "Alt+M" },
+            { GridKeyboardAction.OpenFilterMenu, "Ctrl+F" }
+        },
+        DataCell = new Dictionary<GridKeyboardAction, string>
+        {
+            { GridKeyboardAction.NavigateUp, "Alt+I" },
+            { GridKeyboardAction.NavigateDown, "Alt+K" },
+            { GridKeyboardAction.NavigateLeft, "Alt+J" },
+            { GridKeyboardAction.NavigateRight, "Alt+L" },
+            { GridKeyboardAction.NavigateRowStart, "Alt+U" },
+            { GridKeyboardAction.NavigateRowEnd, "Alt+O" },
+            { GridKeyboardAction.NavigateGridStart, "Ctrl+U" },
+            { GridKeyboardAction.NavigateGridEnd, "Ctrl+O" },
+            { GridKeyboardAction.StartEdit, "Alt+E" },
+            { GridKeyboardAction.AddRecord, "Alt+A" },
+            { GridKeyboardAction.DeleteRecord, "Alt+D" },
+            { GridKeyboardAction.SelectAll, "Alt+S" }
+        },
+        GroupRow = new Dictionary<GridKeyboardAction, string>
+        {
+            { GridKeyboardAction.ExpandGroup, "Alt+C" },
+            { GridKeyboardAction.CollapseGroup, "Alt+V" },
+            { GridKeyboardAction.ExpandAllGroup, "Ctrl+C" },
+            { GridKeyboardAction.CollapseAllGroup, "Ctrl+V" }
+        },
+        EditCell = new Dictionary<GridKeyboardAction, string>
+        {
+            { GridKeyboardAction.Escape, "Alt+B" }
+        },
+        Common = new Dictionary<GridKeyboardAction, string>
+        {
+            { GridKeyboardAction.Print, "Ctrl+F" },
+            { GridKeyboardAction.Copy, "Ctrl+U" },
+            { GridKeyboardAction.CopyWithHeaders, "Ctrl+I" },
+            { GridKeyboardAction.Paste, "Ctrl+P" }
+        }
+    };
+}
+{% endhighlight %}
+{% highlight c# tabtitle="OrderData.cs" %}
+public class OrderData
+{
+    public static List<OrderData> Orders = new List<OrderData>();
+
+    public OrderData() { }
+
+    public OrderData(int? OrderID, string CustomerID, string ShipCity, string ShipName, DateTime? OrderDate)
+    {
+        this.OrderID = OrderID;
+        this.CustomerID = CustomerID;
+        this.ShipCity = ShipCity;
+        this.ShipName = ShipName;
+        this.OrderDate = OrderDate;
+    }
+
+    public static List<OrderData> GetAllRecords()
+    {
+        if (Orders.Count() == 0)
+        {
+            int OrderID = 10247;
+            for (int i = 1; i < 2; i++)
+            {
+                Orders.Add(new OrderData(OrderID + 1, "VINET", "Reims", "Vins et alcools Chevali", new DateTime(2026, 1, 1)));
+                Orders.Add(new OrderData(OrderID + 2, "TOMSP", "Münster", "Toms Spezialitäten", new DateTime(2026, 1, 2)));
+                Orders.Add(new OrderData(OrderID + 3, "HANAR", "Rio de Janeiro", "Hanari Carnes", new DateTime(2026, 1, 3)));
+                Orders.Add(new OrderData(OrderID + 4, "VICTE", "Lyon", "Victuailles en stock", new DateTime(2026, 1, 4)));
+                Orders.Add(new OrderData(OrderID + 5, "SUPRD", "Charleroi", "Suprêmes délices", new DateTime(2026, 1, 5)));
+                Orders.Add(new OrderData(OrderID + 6, "HANAR", "Lyon", "Hanari Carnes", new DateTime(2026, 1, 6)));
+                Orders.Add(new OrderData(OrderID + 7, "CHOPS", "Rio de Janeiro", "Chop-suey Chinese", new DateTime(2026, 1, 7)));
+                Orders.Add(new OrderData(OrderID + 8, "ERNSH", "Münster", "Richter Supermarkt", new DateTime(2026, 1, 8)));
+                Orders.Add(new OrderData(OrderID + 9, "WELLI", "Reims", "Wellington Import", new DateTime(2026, 1, 9)));
+                OrderID += 9;
+            }
+        }
+        return Orders;
+    }
+
+    public int? OrderID { get; set; }
+    public string CustomerID { get; set; }
+    public string ShipCity { get; set; }
+    public string ShipName { get; set; }
+    public DateTime? OrderDate { get; set; }
+}
+{% endhighlight %}
+{% endtabs %}
+
+### Key Points
+
+- **Partial customization:** You can customize only the actions you need. Uncustomized actions retain their default keyboard shortcuts.
+- **Action categories:** Shortcuts are organized by context (DataCell, Header, EditCell, GroupRow, DetailRow, Common) for logical grouping.
+- **Key combination format:** Use standard keyboard notation (e.g., `"Alt+J"`, `"Ctrl+Shift+H"`) for custom key combinations.
+- **Override defaults:** Custom shortcuts override the default behavior, allowing complete control over keyboard interactions.
+
 ## Ensuring accessibility
 
 The Blazor DataGrid is validated for accessibility using [axe-core](https://www.nuget.org/packages/Deque.AxeCore.Playwright) integrated with Playwright tests.
@@ -219,4 +443,5 @@ Accessibility compliance can be evaluated using the interactive [sample](https:/
 
 ## See also
 
+* [Keyboard interaction](#keyboard-interaction)
 * [Accessibility in Blazor component](https://blazor.syncfusion.com/documentation/common/accessibility)
