@@ -64,6 +64,34 @@ For each value field, the aggregation type can be set using the property [`type`
 
 > By default, the aggregation will be considered as **Sum** to the value fields which had number type and for the value fields which had non-number type values such as string, date, datetime, boolean, etc., the aggregation type will be considered as **Count**.
 
+## Adjacent member differences (previous and next)
+
+The Pivot Table supports computing adjacent member differences dynamically along the base field axis using the **DifferenceFrom** and **PercentageOfDifferenceFrom** aggregation types. Instead of comparing against a static member, you can set the [`baseItem`](https://ej2.syncfusion.com/vue/documentation/api/pivotview/iFieldOptions#baseitem) property to `'(previous)'` or `'(next)'`. The difference is then calculated relative to the immediately preceding or succeeding visible member based on the current sorting and filtering applied to the [`baseField`](https://ej2.syncfusion.com/vue/documentation/api/pivotview/iFieldOptions#basefield).
+
+When using `'(previous)'`, the first member along the axis has no preceding member, so its cell remains empty. Similarly, when using `'(next)'`, the last member has no succeeding member and displays an empty cell. When the difference between adjacent values is zero, the cell displays `0`. For **PercentageOfDifferenceFrom**, if the adjacent base value is zero, `N/A` is displayed.
+
+By default, adjacent differences are calculated within each parent group. To compute differences continuously across parent group boundaries, set the `allowCrossGroupCalculation` property to `true`.
+
+You can also configure adjacent member differences at runtime using the Value field settings dialog by selecting `(previous)` or `(next)` from the **Base item** dropdown and checking **Compare across groups**.
+
+![Value field settings popup showing (previous), (next), and Compare across groups](images/aggregation_adjacent_difference.png)
+
+> **Limitations:**
+> * This feature is applicable only to relational data sources; OLAP data sources ignore the `'(previous)'` and `'(next)'` tokens.
+> * If the data source contains a literal member named `(previous)` or `(next)`, it will be shadowed by the special token.
+> * If an error occurs during adjacent difference calculations, the [`actionFailure`](https://ej2.syncfusion.com/vue/documentation/api/pivotview/index-default#actionfailure) event is triggered with the action name `"Adjacent difference error"`.
+
+{% tabs %}
+{% highlight html tabtitle="Composition API (~/src/App.vue)" %}
+{% include code-snippet/grid-sdk/vue/pivot-table/default-cs302/app-composition.vue %}
+{% endhighlight %}
+{% highlight html tabtitle="Options API (~/src/App.vue)" %}
+{% include code-snippet/grid-sdk/vue/pivot-table/default-cs302/app.vue %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/pivot-table/default-cs302" %}
+
 ## Modifying aggregation type for value fields at runtime
 
 You can dynamically modify the aggregation type for value fields in the Pivot Table component through the UI at runtime. Value fields, displayed in the grouping bar and field list, include a dropdown icon that allows you to select from various aggregation types (e.g., **Sum**, **Average**, **Count**). Once you select a new aggregation type, the pivot table updates instantly to reflect the change, providing a seamless experience for data analysis.
