@@ -664,6 +664,8 @@ let pivotObj: PivotView = new PivotView({
 
 The Advanced Server Configuration is an optional backend configuration layer in the ASP.NET Core **PivotController** application. It lets you register one or more file-based or database-based data sources as indexes, and control how the server loads, caches, secures, and serves them. Configure it in **PivotController/appsettings.json** or by using the configuration and index APIs of the controller. The Pivot Table continues to use server mode and the `/api/pivot/post` endpoint; it does not connect directly to the configured data source.
 
+You can download the ASP.NET Core standalone Pivot Table [application](https://github.com/SyncfusionExamples/syncfusion-pivot-table-advanced-server-configuration) from GitHub. This repository provides the primary reference for configuring JSON, CSV, PostgreSQL, and other supported database data sources.
+
 #### Architecture and request flow
 
 1. The Pivot Table posts its report definition and the requested action to `/api/pivot/post`.
