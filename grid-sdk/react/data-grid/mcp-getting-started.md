@@ -3,7 +3,7 @@ layout: post
 title: WebMCP tool integration for React components | Syncfusion
 description: Learn how to integrate WebMCP with Syncfusion React components to enable AI interaction, configure tools, manage access, and monitor execution.
 control: WebMCP
-platform: grid-sdk
+platform: ej2-react
 documentation: ug
 domainurl: ##DomainURL##
 ---
@@ -105,7 +105,7 @@ Follow these steps to integrate WebMCP support into Syncfusion® React component
 
 ### Step 1: Set up the Vite project
 
-Create a React Vite application and integrate the Syncfusion® React Data Grid component using the [getting started](./getting-started) guide. After completing the setup, follow the steps below to enable WebMCP integration.
+Create a React Vite application and integrate the Syncfusion® React Data Grid component using the [getting started](https://help.syncfusion.com/grid-sdk/react/data-grid/getting-started) guide. After completing the setup, follow the steps below to enable WebMCP integration.
 
 ### Step 2: Enable WebMCP support
 
@@ -177,7 +177,7 @@ Use the [webMcpSettings](https://ej2.syncfusion.com/react/documentation/api/grid
 
 | Property | Description |
 |-----------|-------------|
-| `name` | Prefix applied to registered tool names. If name: `sales` is specified, a tool such as `getSelectedRecords` may be registered as `sales_getSelectedRecords`, allowing multiple component instances to coexist without tool name conflicts. |
+| `name` | Prefix applied to registered tool names. If name: `salesGrid` is specified, a tool such as `getSelectedRecords` may be registered as `salesGrid_getSelectedRecords`, allowing multiple component instances to coexist without tool name conflicts. |
 | `tools` | List of tool names to expose. Any supported tools not included in this list will not be registered. |
 | `exposedTo` | List of trusted domains that are allowed to interact with the component through WebMCP. |
 
@@ -190,7 +190,7 @@ Grid.Inject(WebMcpGrid);
 
 function App() {
     return <GridComponent dataSource={data} height={315} enableWebMcp={true} allowSorting={true} allowFiltering={true}  webMcpSettings={{
-                name: 'sales',
+                name: 'salesGrid',
                 tools: ['getSelectedRecords', 'sortByColumn', 'clearFiltering'],
                 exposedTo: ['https://www.syncfusion.com/']
             }}>
@@ -241,7 +241,7 @@ function App() {
     };
     return <GridComponent dataSource={data} height={315} enableWebMcp={true} allowSorting={true} allowFiltering={true} 
     beforeWebMcpToolExecute={beforeWebMcpToolExecute} webMcpSettings={{
-                name: 'sales',
+                name: 'salesGrid',
                 tools: ['getSelectedRecords', 'sortByColumn', 'clearFiltering'],
                 exposedTo: ['https://www.syncfusion.com/']
             }}>

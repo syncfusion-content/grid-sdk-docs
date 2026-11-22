@@ -1,0 +1,122 @@
+public IActionResult Index()
+{
+    ViewBag.dataSource = ProductData.GetAllRecords();
+    return View();
+}
+
+public class ProductData
+{
+    public int ProductID { get; set; }
+    public string ProductName { get; set; }
+    public string Category { get; set; }
+    public string Region { get; set; }
+    public double UnitPrice { get; set; }
+    public int UnitsInStock { get; set; }
+
+    public static List<ProductData> GetAllRecords()
+    {
+        return new List<ProductData>
+        {
+            new ProductData { ProductID = 5001, ProductName = "Product 001", Category = "Beverages", Region = "Europe", UnitPrice = 5.0, UnitsInStock = 10 },
+            new ProductData { ProductID = 5002, ProductName = "Product 002", Category = "Condiments", Region = "Europe", UnitPrice = 10.3, UnitsInStock = 17 },
+            new ProductData { ProductID = 5003, ProductName = "Product 003", Category = "Dairy", Region = "Europe", UnitPrice = 15.6, UnitsInStock = 24 },
+            new ProductData { ProductID = 5004, ProductName = "Product 004", Category = "Produce", Region = "Europe", UnitPrice = 20.9, UnitsInStock = 31 },
+            new ProductData { ProductID = 5005, ProductName = "Product 005", Category = "Seafood", Region = "Europe", UnitPrice = 26.2, UnitsInStock = 38 },
+            new ProductData { ProductID = 5006, ProductName = "Product 006", Category = "Beverages", Region = "Asia", UnitPrice = 31.5, UnitsInStock = 45 },
+            new ProductData { ProductID = 5007, ProductName = "Product 007", Category = "Condiments", Region = "Asia", UnitPrice = 36.8, UnitsInStock = 52 },
+            new ProductData { ProductID = 5008, ProductName = "Product 008", Category = "Dairy", Region = "Asia", UnitPrice = 42.1, UnitsInStock = 59 },
+            new ProductData { ProductID = 5009, ProductName = "Product 009", Category = "Produce", Region = "Asia", UnitPrice = 7.4, UnitsInStock = 66 },
+            new ProductData { ProductID = 5010, ProductName = "Product 010", Category = "Seafood", Region = "Asia", UnitPrice = 12.7, UnitsInStock = 73 },
+            new ProductData { ProductID = 5011, ProductName = "Product 011", Category = "Beverages", Region = "Americas", UnitPrice = 18.0, UnitsInStock = 80 },
+            new ProductData { ProductID = 5012, ProductName = "Product 012", Category = "Condiments", Region = "Americas", UnitPrice = 23.3, UnitsInStock = 87 },
+            new ProductData { ProductID = 5013, ProductName = "Product 013", Category = "Dairy", Region = "Americas", UnitPrice = 28.6, UnitsInStock = 94 },
+            new ProductData { ProductID = 5014, ProductName = "Product 014", Category = "Produce", Region = "Americas", UnitPrice = 33.9, UnitsInStock = 11 },
+            new ProductData { ProductID = 5015, ProductName = "Product 015", Category = "Seafood", Region = "Americas", UnitPrice = 39.2, UnitsInStock = 18 },
+            new ProductData { ProductID = 5016, ProductName = "Product 016", Category = "Beverages", Region = "Europe", UnitPrice = 44.5, UnitsInStock = 25 },
+            new ProductData { ProductID = 5017, ProductName = "Product 017", Category = "Condiments", Region = "Europe", UnitPrice = 9.8, UnitsInStock = 32 },
+            new ProductData { ProductID = 5018, ProductName = "Product 018", Category = "Dairy", Region = "Europe", UnitPrice = 15.1, UnitsInStock = 39 },
+            new ProductData { ProductID = 5019, ProductName = "Product 019", Category = "Produce", Region = "Europe", UnitPrice = 20.4, UnitsInStock = 46 },
+            new ProductData { ProductID = 5020, ProductName = "Product 020", Category = "Seafood", Region = "Europe", UnitPrice = 25.7, UnitsInStock = 53 },
+            new ProductData { ProductID = 5021, ProductName = "Product 021", Category = "Beverages", Region = "Asia", UnitPrice = 31.0, UnitsInStock = 60 },
+            new ProductData { ProductID = 5022, ProductName = "Product 022", Category = "Condiments", Region = "Asia", UnitPrice = 36.3, UnitsInStock = 67 },
+            new ProductData { ProductID = 5023, ProductName = "Product 023", Category = "Dairy", Region = "Asia", UnitPrice = 41.6, UnitsInStock = 74 },
+            new ProductData { ProductID = 5024, ProductName = "Product 024", Category = "Produce", Region = "Asia", UnitPrice = 6.9, UnitsInStock = 81 },
+            new ProductData { ProductID = 5025, ProductName = "Product 025", Category = "Seafood", Region = "Asia", UnitPrice = 12.2, UnitsInStock = 88 },
+            new ProductData { ProductID = 5026, ProductName = "Product 026", Category = "Beverages", Region = "Americas", UnitPrice = 17.5, UnitsInStock = 95 },
+            new ProductData { ProductID = 5027, ProductName = "Product 027", Category = "Condiments", Region = "Americas", UnitPrice = 22.8, UnitsInStock = 12 },
+            new ProductData { ProductID = 5028, ProductName = "Product 028", Category = "Dairy", Region = "Americas", UnitPrice = 28.1, UnitsInStock = 19 },
+            new ProductData { ProductID = 5029, ProductName = "Product 029", Category = "Produce", Region = "Americas", UnitPrice = 33.4, UnitsInStock = 26 },
+            new ProductData { ProductID = 5030, ProductName = "Product 030", Category = "Seafood", Region = "Americas", UnitPrice = 38.7, UnitsInStock = 33 },
+            new ProductData { ProductID = 5031, ProductName = "Product 031", Category = "Beverages", Region = "Europe", UnitPrice = 44.0, UnitsInStock = 40 },
+            new ProductData { ProductID = 5032, ProductName = "Product 032", Category = "Condiments", Region = "Europe", UnitPrice = 9.3, UnitsInStock = 47 },
+            new ProductData { ProductID = 5033, ProductName = "Product 033", Category = "Dairy", Region = "Europe", UnitPrice = 14.6, UnitsInStock = 54 },
+            new ProductData { ProductID = 5034, ProductName = "Product 034", Category = "Produce", Region = "Europe", UnitPrice = 19.9, UnitsInStock = 61 },
+            new ProductData { ProductID = 5035, ProductName = "Product 035", Category = "Seafood", Region = "Europe", UnitPrice = 25.2, UnitsInStock = 68 },
+            new ProductData { ProductID = 5036, ProductName = "Product 036", Category = "Beverages", Region = "Asia", UnitPrice = 30.5, UnitsInStock = 75 },
+            new ProductData { ProductID = 5037, ProductName = "Product 037", Category = "Condiments", Region = "Asia", UnitPrice = 35.8, UnitsInStock = 82 },
+            new ProductData { ProductID = 5038, ProductName = "Product 038", Category = "Dairy", Region = "Asia", UnitPrice = 41.1, UnitsInStock = 89 },
+            new ProductData { ProductID = 5039, ProductName = "Product 039", Category = "Produce", Region = "Asia", UnitPrice = 6.4, UnitsInStock = 96 },
+            new ProductData { ProductID = 5040, ProductName = "Product 040", Category = "Seafood", Region = "Asia", UnitPrice = 11.7, UnitsInStock = 13 },
+            new ProductData { ProductID = 5041, ProductName = "Product 041", Category = "Beverages", Region = "Americas", UnitPrice = 17.0, UnitsInStock = 20 },
+            new ProductData { ProductID = 5042, ProductName = "Product 042", Category = "Condiments", Region = "Americas", UnitPrice = 22.3, UnitsInStock = 27 },
+            new ProductData { ProductID = 5043, ProductName = "Product 043", Category = "Dairy", Region = "Americas", UnitPrice = 27.6, UnitsInStock = 34 },
+            new ProductData { ProductID = 5044, ProductName = "Product 044", Category = "Produce", Region = "Americas", UnitPrice = 32.9, UnitsInStock = 41 },
+            new ProductData { ProductID = 5045, ProductName = "Product 045", Category = "Seafood", Region = "Americas", UnitPrice = 38.2, UnitsInStock = 48 },
+            new ProductData { ProductID = 5046, ProductName = "Product 046", Category = "Beverages", Region = "Europe", UnitPrice = 43.5, UnitsInStock = 55 },
+            new ProductData { ProductID = 5047, ProductName = "Product 047", Category = "Condiments", Region = "Europe", UnitPrice = 8.8, UnitsInStock = 62 },
+            new ProductData { ProductID = 5048, ProductName = "Product 048", Category = "Dairy", Region = "Europe", UnitPrice = 14.1, UnitsInStock = 69 },
+            new ProductData { ProductID = 5049, ProductName = "Product 049", Category = "Produce", Region = "Europe", UnitPrice = 19.4, UnitsInStock = 76 },
+            new ProductData { ProductID = 5050, ProductName = "Product 050", Category = "Seafood", Region = "Europe", UnitPrice = 24.7, UnitsInStock = 83 },
+            new ProductData { ProductID = 5051, ProductName = "Product 051", Category = "Beverages", Region = "Asia", UnitPrice = 30.0, UnitsInStock = 90 },
+            new ProductData { ProductID = 5052, ProductName = "Product 052", Category = "Condiments", Region = "Asia", UnitPrice = 35.3, UnitsInStock = 97 },
+            new ProductData { ProductID = 5053, ProductName = "Product 053", Category = "Dairy", Region = "Asia", UnitPrice = 40.6, UnitsInStock = 14 },
+            new ProductData { ProductID = 5054, ProductName = "Product 054", Category = "Produce", Region = "Asia", UnitPrice = 5.9, UnitsInStock = 21 },
+            new ProductData { ProductID = 5055, ProductName = "Product 055", Category = "Seafood", Region = "Asia", UnitPrice = 11.2, UnitsInStock = 28 },
+            new ProductData { ProductID = 5056, ProductName = "Product 056", Category = "Beverages", Region = "Americas", UnitPrice = 16.5, UnitsInStock = 35 },
+            new ProductData { ProductID = 5057, ProductName = "Product 057", Category = "Condiments", Region = "Americas", UnitPrice = 21.8, UnitsInStock = 42 },
+            new ProductData { ProductID = 5058, ProductName = "Product 058", Category = "Dairy", Region = "Americas", UnitPrice = 27.1, UnitsInStock = 49 },
+            new ProductData { ProductID = 5059, ProductName = "Product 059", Category = "Produce", Region = "Americas", UnitPrice = 32.4, UnitsInStock = 56 },
+            new ProductData { ProductID = 5060, ProductName = "Product 060", Category = "Seafood", Region = "Americas", UnitPrice = 37.7, UnitsInStock = 63 },
+            new ProductData { ProductID = 5061, ProductName = "Product 061", Category = "Beverages", Region = "Europe", UnitPrice = 43.0, UnitsInStock = 70 },
+            new ProductData { ProductID = 5062, ProductName = "Product 062", Category = "Condiments", Region = "Europe", UnitPrice = 8.3, UnitsInStock = 77 },
+            new ProductData { ProductID = 5063, ProductName = "Product 063", Category = "Dairy", Region = "Europe", UnitPrice = 13.6, UnitsInStock = 84 },
+            new ProductData { ProductID = 5064, ProductName = "Product 064", Category = "Produce", Region = "Europe", UnitPrice = 18.9, UnitsInStock = 91 },
+            new ProductData { ProductID = 5065, ProductName = "Product 065", Category = "Seafood", Region = "Europe", UnitPrice = 24.2, UnitsInStock = 98 },
+            new ProductData { ProductID = 5066, ProductName = "Product 066", Category = "Beverages", Region = "Asia", UnitPrice = 29.5, UnitsInStock = 15 },
+            new ProductData { ProductID = 5067, ProductName = "Product 067", Category = "Condiments", Region = "Asia", UnitPrice = 34.8, UnitsInStock = 22 },
+            new ProductData { ProductID = 5068, ProductName = "Product 068", Category = "Dairy", Region = "Asia", UnitPrice = 40.1, UnitsInStock = 29 },
+            new ProductData { ProductID = 5069, ProductName = "Product 069", Category = "Produce", Region = "Asia", UnitPrice = 5.4, UnitsInStock = 36 },
+            new ProductData { ProductID = 5070, ProductName = "Product 070", Category = "Seafood", Region = "Asia", UnitPrice = 10.7, UnitsInStock = 43 },
+            new ProductData { ProductID = 5071, ProductName = "Product 071", Category = "Beverages", Region = "Americas", UnitPrice = 16.0, UnitsInStock = 50 },
+            new ProductData { ProductID = 5072, ProductName = "Product 072", Category = "Condiments", Region = "Americas", UnitPrice = 21.3, UnitsInStock = 57 },
+            new ProductData { ProductID = 5073, ProductName = "Product 073", Category = "Dairy", Region = "Americas", UnitPrice = 26.6, UnitsInStock = 64 },
+            new ProductData { ProductID = 5074, ProductName = "Product 074", Category = "Produce", Region = "Americas", UnitPrice = 31.9, UnitsInStock = 71 },
+            new ProductData { ProductID = 5075, ProductName = "Product 075", Category = "Seafood", Region = "Americas", UnitPrice = 37.2, UnitsInStock = 78 },
+            new ProductData { ProductID = 5076, ProductName = "Product 076", Category = "Beverages", Region = "Europe", UnitPrice = 42.5, UnitsInStock = 85 },
+            new ProductData { ProductID = 5077, ProductName = "Product 077", Category = "Condiments", Region = "Europe", UnitPrice = 7.8, UnitsInStock = 92 },
+            new ProductData { ProductID = 5078, ProductName = "Product 078", Category = "Dairy", Region = "Europe", UnitPrice = 13.1, UnitsInStock = 99 },
+            new ProductData { ProductID = 5079, ProductName = "Product 079", Category = "Produce", Region = "Europe", UnitPrice = 18.4, UnitsInStock = 16 },
+            new ProductData { ProductID = 5080, ProductName = "Product 080", Category = "Seafood", Region = "Europe", UnitPrice = 23.7, UnitsInStock = 23 },
+            new ProductData { ProductID = 5081, ProductName = "Product 081", Category = "Beverages", Region = "Asia", UnitPrice = 29.0, UnitsInStock = 30 },
+            new ProductData { ProductID = 5082, ProductName = "Product 082", Category = "Condiments", Region = "Asia", UnitPrice = 34.3, UnitsInStock = 37 },
+            new ProductData { ProductID = 5083, ProductName = "Product 083", Category = "Dairy", Region = "Asia", UnitPrice = 39.6, UnitsInStock = 44 },
+            new ProductData { ProductID = 5084, ProductName = "Product 084", Category = "Produce", Region = "Asia", UnitPrice = 44.9, UnitsInStock = 51 },
+            new ProductData { ProductID = 5085, ProductName = "Product 085", Category = "Seafood", Region = "Asia", UnitPrice = 10.2, UnitsInStock = 58 },
+            new ProductData { ProductID = 5086, ProductName = "Product 086", Category = "Beverages", Region = "Americas", UnitPrice = 15.5, UnitsInStock = 65 },
+            new ProductData { ProductID = 5087, ProductName = "Product 087", Category = "Condiments", Region = "Americas", UnitPrice = 20.8, UnitsInStock = 72 },
+            new ProductData { ProductID = 5088, ProductName = "Product 088", Category = "Dairy", Region = "Americas", UnitPrice = 26.1, UnitsInStock = 79 },
+            new ProductData { ProductID = 5089, ProductName = "Product 089", Category = "Produce", Region = "Americas", UnitPrice = 31.4, UnitsInStock = 86 },
+            new ProductData { ProductID = 5090, ProductName = "Product 090", Category = "Seafood", Region = "Americas", UnitPrice = 36.7, UnitsInStock = 93 },
+            new ProductData { ProductID = 5091, ProductName = "Product 091", Category = "Beverages", Region = "Europe", UnitPrice = 42.0, UnitsInStock = 10 },
+            new ProductData { ProductID = 5092, ProductName = "Product 092", Category = "Condiments", Region = "Europe", UnitPrice = 7.3, UnitsInStock = 17 },
+            new ProductData { ProductID = 5093, ProductName = "Product 093", Category = "Dairy", Region = "Europe", UnitPrice = 12.6, UnitsInStock = 24 },
+            new ProductData { ProductID = 5094, ProductName = "Product 094", Category = "Produce", Region = "Europe", UnitPrice = 17.9, UnitsInStock = 31 },
+            new ProductData { ProductID = 5095, ProductName = "Product 095", Category = "Seafood", Region = "Europe", UnitPrice = 23.2, UnitsInStock = 38 },
+            new ProductData { ProductID = 5096, ProductName = "Product 096", Category = "Beverages", Region = "Asia", UnitPrice = 28.5, UnitsInStock = 45 },
+            new ProductData { ProductID = 5097, ProductName = "Product 097", Category = "Condiments", Region = "Asia", UnitPrice = 33.8, UnitsInStock = 52 },
+            new ProductData { ProductID = 5098, ProductName = "Product 098", Category = "Dairy", Region = "Asia", UnitPrice = 39.1, UnitsInStock = 59 },
+            new ProductData { ProductID = 5099, ProductName = "Product 099", Category = "Produce", Region = "Asia", UnitPrice = 44.4, UnitsInStock = 66 },
+            new ProductData { ProductID = 5100, ProductName = "Product 100", Category = "Seafood", Region = "Asia", UnitPrice = 9.7, UnitsInStock = 73 }
+        };
+    }
+}

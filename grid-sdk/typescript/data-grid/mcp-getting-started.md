@@ -3,7 +3,7 @@ layout: post
 title: WebMCP tool integration for Typescript (ES5) controls | Syncfusion
 description: Learn how to integrate WebMCP with Syncfusion Typescript (ES5) controls to enable AI interaction, configure tools, manage access, and monitor execution.
 control: WebMCP
-platform: grid-sdk
+platform: ej2-javascript
 documentation: ug
 domainurl: ##DomainURL##
 ---
@@ -183,7 +183,7 @@ Use the [webMcpSettings](https://ej2.syncfusion.com/documentation/api/grid/index
 
 | Property | Description |
 |-----------|-------------|
-| `name` | Prefix applied to registered tool names. If name: `sales` is specified, a tool such as `getSelectedRecords` may be registered as `sales_getSelectedRecords`, allowing multiple control instances to coexist without tool name conflicts. |
+| `name` | Prefix applied to registered tool names. If name: `salesGrid` is specified, a tool such as `getSelectedRecords` may be registered as `salesGrid_getSelectedRecords`, allowing multiple control instances to coexist without tool name conflicts. |
 | `tools` | List of tool names to expose. Any supported tools not included in this list will not be registered. |
 | `exposedTo` | List of trusted domains that are allowed to interact with the control through WebMCP. |
 
@@ -195,7 +195,7 @@ var grid = new Grid({
     dataSource: data,
     enableWebMcp: true,
     webMcpSettings: {
-        name: 'sales',
+        name: 'salesGrid',
         tools: ['getSelectedRecords', 'sortByColumn', 'clearFiltering'],
         exposedTo: ['https://www.syncfusion.com/']
     },
@@ -232,7 +232,7 @@ var grid = new Grid({
     dataSource: data,
     enableWebMcp: true,
     webMcpSettings: {
-        name: 'sales',
+        name: 'salesGrid',
         tools: ['getSelectedRecords', 'sortByColumn', 'clearFiltering'],
         exposedTo: ['https://www.syncfusion.com/']
     },

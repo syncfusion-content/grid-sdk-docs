@@ -3,7 +3,7 @@ layout: post
 title: WebMCP tool integration for Angular components | Syncfusion
 description: Learn how to integrate WebMCP with Syncfusion Angular components to enable AI interaction, configure tools, manage access, and monitor execution.
 control: WebMCP
-platform: grid-sdk
+platform: ej2-angular
 documentation: ug
 domainurl: ##DomainURL##
 ---
@@ -196,7 +196,7 @@ Use the [webMcpSettings](https://ej2.syncfusion.com/angular/documentation/api/gr
 
 | Property | Description |
 |-----------|-------------|
-| `name` | Prefix applied to registered tool names. If name: `orders` is specified, a tool such as `getSelectedRecords` may be registered as `getSelectedRecords`, allowing multiple component instances to coexist without tool name conflicts. |
+| `name` | Prefix applied to registered tool names. If name: `salesGrid` is specified, a tool such as `getSelectedRecords` may be registered as `salesGrid_getSelectedRecords`, allowing multiple component instances to coexist without tool name conflicts. |
 | `tools` | List of tool names to expose. Any supported tools not included in this list will not be registered. |
 | `exposedTo` | List of trusted domains that are allowed to interact with the component through WebMCP. |
 
@@ -232,7 +232,7 @@ const data: object[] = [
 })
 export class AppComponent {
   public webMcpSettings = {
-    name: 'orders',
+    name: 'salesGrid',
     tools: ['getSelectedRecords', 'sortByColumn', 'clearFiltering'],
     exposedTo: ['https://www.syncfusion.com/']
   };
@@ -285,7 +285,7 @@ const data: object[] = [
 })
 export class AppComponent {
   public webMcpSettings = {
-    name: 'orders',
+    name: 'salesGrid',
     tools: ['getSelectedRecords', 'sortByColumn', 'clearFiltering'],
     exposedTo: ['https://www.syncfusion.com/']
   };
