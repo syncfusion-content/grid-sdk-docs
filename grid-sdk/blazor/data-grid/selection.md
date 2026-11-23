@@ -803,7 +803,7 @@ public class OrderDetails
 
 {% previewsample "https://blazorplayground.syncfusion.com/embed/VZVRCWVUJHXvAbTZ?appbar=false&editor=false&result=true&errorlist=false&theme=bootstrap5" %}
 
-> **Limitations of IsRowSelectable**
+> **Limitations**
 >
 > * The property is ignored when the Grid is configured for cell selection.
 > * For remote data sources, row selectability is evaluated only for records available in the current server response.
