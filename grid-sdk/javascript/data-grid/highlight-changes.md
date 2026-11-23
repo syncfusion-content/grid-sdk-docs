@@ -20,8 +20,6 @@ The grid needs a primary key to find the row. Set `isPrimaryKey` to "true" on on
 
 The following example shows a stock dashboard. The "Update prices" button changes the price of three symbols, and each changed cell flashes.
 
-{% elsif page.publishingplatform == "javascript" %}
-
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
 {% include code-snippet/grid-sdk/javascript/grid/highlight-changes-cs1/index.js %}
