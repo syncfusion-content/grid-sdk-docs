@@ -87,6 +87,78 @@ this.treeGrid.EditTrigger = EditTrigger.OnTap;
 {% endhighlight %}
 {% endtabs %}
 
+## Non-Alphanumeric Key Type-to-Edit
+
+SfTreeGrid supports type-to-edit in WinUI. When a cell is the current cell and is not in edit mode, typing a character begins editing that cell with the typed character. The TreeGrid handles the composed character received from the keyboard (the `CharacterReceived` event) instead of the pressed key. Hence, non-alphanumeric characters such as symbols and punctuation (for example `@`, `#`, `-`, `.` and `,`) begin editing in the same way as letters and digits.
+
+{% tabs %}
+{% highlight xaml %}
+
+<treeGrid:SfTreeGrid Name="treeGrid"
+                        ChildPropertyName="ReportsTo"
+                        ParentPropertyName="ID"
+                        SelfRelationRootValue="-1"
+                        AllowEditing="True"
+                        NavigationMode="Cell"
+                        AutoGenerateColumns="False"
+                        ItemsSource="{Binding Employees}">
+    <treeGrid:SfTreeGrid.Columns>
+        <treeGrid:TreeGridTextColumn HeaderText="First Name" MappingName="FirstName" />
+        <treeGrid:TreeGridNumericColumn HeaderText="Salary" MappingName="Salary" />
+    </treeGrid:SfTreeGrid.Columns>
+</treeGrid:SfTreeGrid>
+
+{% endhighlight %}
+{% highlight c# %}
+
+this.treeGrid.AllowEditing = true;
+this.treeGrid.NavigationMode = NavigationMode.Cell;
+
+{% endhighlight %}
+{% endtabs %}
+
+The behavior of the typed character depends on the column type of the current cell.
+
+* **TreeGridTextColumn** – the typed character replaces the existing cell text, and the cursor is placed after the typed character. The character is applied irrespective of the [EditorSelectionBehavior](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.SfGridBase.html#Syncfusion_UI_Xaml_Grids_SfGridBase_EditorSelectionBehavior) value.
+* **TreeGridNumericColumn** – the behavior depends on the typed character:
+    * A decimal digit of any script (for example, Arabic-Indic or full-width digits) replaces the existing value with that digit.
+    * The negative sign, positive sign, or decimal separator of the current culture is entered in the editor text, and the cursor is placed after it.
+    * Any other character opens the editor with the existing value, and the character is not applied.
+* **Other column types** – the editor opens with the existing value, and the typed character is not applied.
+
+### Cases that do not begin editing
+
+Type-to-edit does not begin editing in the following cases:
+
+* The character is a control character, a white-space character (including <kbd>Space</kbd>), or a surrogate character (for example, emoji).
+* Only <kbd>Ctrl</kbd> or only <kbd>Alt</kbd> is pressed along with the key, or a Windows logo key is pressed. These combinations are treated as shortcuts. <kbd>Ctrl</kbd> + <kbd>Alt</kbd> is treated as text because AltGr is reported as <kbd>Ctrl</kbd> + <kbd>Alt</kbd>.
+* The current cell is already in edit mode. The editor handles the characters.
+* [NavigationMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.NavigationMode.html) is not set to `Cell`, or there is no current cell.
+* The input originates from a control hosted inside a cell. The input belongs to that control.
+
+### Read-only and non-editable cells
+
+The typed character is ignored, and editing does not begin, when the current cell cannot enter edit mode. This applies when editing is disabled for the column, the column is read-only, or the edit is canceled in the [CurrentCellBeginEdit](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_CurrentCellBeginEdit) event.
+
+{% tabs %}
+{% highlight xaml %}
+
+<treeGrid:TreeGridTextColumn HeaderText="First Name" MappingName="FirstName" AllowEditing="False" />
+
+{% endhighlight %}
+{% highlight c# %}
+
+this.treeGrid.Columns["FirstName"].AllowEditing = false;
+
+{% endhighlight %}
+{% endtabs %}
+
+When type-to-edit begins editing, the `CurrentCellBeginEdit` event is raised in the same way as when editing begins through the <kbd>F2</kbd> key or by clicking the cell.
+
+N> Type-to-edit in WinUI is triggered only by the received character, so a single key press never begins editing twice.
+
+N> Verification Required – Source information unavailable: type-to-edit behavior with input method editors (IME) and with template columns was not verified from the implementation source code.
+
 ## Cursor placement
 
 When the cell enters into edit mode, cursor is placed based on [SfTreeGrid.EditorSelectionBehavior](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.SfGridBase.html#Syncfusion_UI_Xaml_Grids_SfGridBase_EditorSelectionBehavior) property.
