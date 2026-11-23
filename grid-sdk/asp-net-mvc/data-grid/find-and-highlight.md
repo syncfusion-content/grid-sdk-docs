@@ -13,7 +13,7 @@ The Syncfusion ASP.NET MVC Data Grid supports Find and Highlight. This feature l
 
 Find operates independently of the Grid's Search functionality. While Search filters records based on a query, Find preserves all visible records and enables navigation through matching cells.
 
-## Enable find option
+## Enable find and highlight
 
 To enable Find and Highlight, add the `Find` item to the Grid [toolbar](https://help.syncfusion.com/cr/aspnetmvc-js2/syncfusion.ej2.grids.grid.html#Syncfusion_EJ2_Grids_Grid_Toolbar).
 

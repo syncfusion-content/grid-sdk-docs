@@ -14,7 +14,7 @@ The Syncfusion TypeScript Data Grid supports Find and Highlight. This feature lo
 
 Find operates independently of the Grid's Search functionality. While Search filters records based on a query, Find preserves all visible records and enables navigation through matching cells.
 
-## Enable find option
+## Enable find and highlight
 
 To enable Find and Highlight, add the `Find` item to the Grid [toolbar](https://ej2.syncfusion.com/documentation/api/grid#toolbar), then import and inject the `Find` module.
 
