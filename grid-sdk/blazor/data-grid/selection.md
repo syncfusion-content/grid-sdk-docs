@@ -726,8 +726,6 @@ The `IsRowSelectable` property accepts a predicate function (`Func<object, bool>
 
 This feature supports row-based selection modes, including checkbox selection. The selectability result is evaluated and cached for each record to improve performance during selection-related operations.
 
-In the following sample, only the row with **OrderID** `10248` can be selected. All other rows are non-selectable.
-
 {% tabs %}
 {% highlight razor tabtitle="Index.razor" %}
 
