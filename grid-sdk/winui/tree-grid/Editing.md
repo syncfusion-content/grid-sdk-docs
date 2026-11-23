@@ -87,18 +87,6 @@ this.treeGrid.EditTrigger = EditTrigger.OnTap;
 {% endhighlight %}
 {% endtabs %}
 
-## Non-Alphanumeric Key Type-to-Edit
-
-When a cell is the current cell, typing a non-alphanumeric printable character such as `@`, `#`, `$`, `%`, `&`, `-` or `.` begins editing that cell. The typed character is inserted into the editor when editing begins. This applies to editable cells in the same way as typing a letter or digit.
-
-### Cases that do not begin editing
-
-Typing does not begin editing in the following cases,
-
-* A control character or a white-space character is typed.
-* The current cell is read-only or non-editable, for example when `AllowEditing` is `False` for the grid or the column.
-* The cell is already in edit mode.
-
 ## Cursor placement
 
 When the cell enters into edit mode, cursor is placed based on [SfTreeGrid.EditorSelectionBehavior](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.SfGridBase.html#Syncfusion_UI_Xaml_Grids_SfGridBase_EditorSelectionBehavior) property.
