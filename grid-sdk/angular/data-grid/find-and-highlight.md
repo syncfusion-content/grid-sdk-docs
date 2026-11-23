@@ -14,7 +14,7 @@ The Syncfusion Angular Data Grid supports the Find and Highlight feature, which 
 
 Find operates independently of the Grid's Search functionality. While Search filters records based on a query, Find preserves all visible records and enables navigation through matching cells.
 
-## Enable find and highlight
+## Enable find option
 
 To enable the find and highlight feature, add the `Find` item to the Grid [toolbar](https://ej2.syncfusion.com/angular/documentation/api/grid#toolbar), import the `FindService`, and include it in the Grid's `providers` section.
 

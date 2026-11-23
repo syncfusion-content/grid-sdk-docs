@@ -14,7 +14,7 @@ The Syncfusion Vue Data Grid supports Find and Highlight. This feature locates t
 
 Find operates independently of the Grid's Search functionality. While Search filters records based on a query, Find preserves all visible records and enables navigation through matching cells.
 
-## Enable find and highlight
+## Enable find option
 
 To enable Find and Highlight, add the `Find` item to the Grid [toolbar](https://ej2.syncfusion.com/vue/documentation/api/grid#toolbar), import the `Find` module, and include it in the Grid's `provide` section.
 
