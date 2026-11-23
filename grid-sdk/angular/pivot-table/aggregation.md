@@ -130,6 +130,44 @@ By default, the dropdown icon to change the aggregation type is visible in the g
   
 {% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs4" %}
 
+## Multiple Instances of the Same Field in Values
+
+> This feature is applicable only for relational data sources.
+
+The Pivot Table component supports adding the same field to the [`values`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/datasourcesettings#values) property of [`dataSourceSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/datasourcesettings) more than once, with each instance configured independently using a distinct aggregation type and a distinct caption. For example, you can add the **Amount** field twice: one instance aggregated as **Sum of Amount** and another aggregated as **Average of Amount**.
+
+Each instance is treated as a separate configuration and maintains its own:
+
+* Aggregation type ([`type`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/fieldoptionsmodel#type))
+* Display caption ([`caption`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/fieldoptionsmodel#caption))
+* Number format (resolved independently in the number formatting dialog)
+* Base field ([`baseField`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/fieldoptionsmodel#basefield))
+* Base item ([`baseItem`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/fieldoptionsmodel#baseitem))
+
+At runtime, every instance is rendered as its own entry in the user interface:
+
+* As a separate button in the Grouping Bar.
+* As a separate value column in the Pivot Table.
+* As a separate series in the Pivot Chart.
+
+Changing an aggregation type from the context menu in the Grouping Bar only affects the selected instance; other instances of the same field remain unchanged. In the number formatting dialog, each instance is listed and formatted separately. Value sorting, filtering, and conditional formatting always resolve to the selected instance, ensuring that operations on one instance do not impact the others.
+
+Instances can be reordered or removed individually using the Grouping Bar buttons without affecting the other instances of the same field.
+
+The following example demonstrates configuring two instances of the **Amount** field in [`dataSourceSettings.values`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/datasourcesettings#values), alongside the **Sold** field.
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs344/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs344/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs344" %}
+
 ## Event
 
 The Pivot Table provides the following events to monitor aggregation-related UI actions. Each event lets you track or intercept a specific stage of the user interaction lifecycle.

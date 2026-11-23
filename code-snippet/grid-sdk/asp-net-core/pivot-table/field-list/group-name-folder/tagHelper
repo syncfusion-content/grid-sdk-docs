@@ -15,9 +15,10 @@
             <e-field name="Sold" caption="Units Sold"></e-field>
         </e-values>
         <e-fieldmapping>
-            <e-field name="Quarter" groupName="Product catagory"></e-field>
-            <e-field name="Products" groupName="Product catagory"></e-field>
-            <e-field name="Amount" caption="Sold Amount" groupName="Product catagory"></e-field>
+            <e-field name="Quarter"></e-field>
+            <e-field name="Products" groupName="Products"></e-field>
+            <e-field name="Amount" caption="Sold Amount" groupName="Sales/Regional"></e-field>
+            <e-field name="Sold" groupName="Sales/Domestic"></e-field>
         </e-fieldmapping>
     </e-datasourcesettings>
 </ejs-pivotview>
