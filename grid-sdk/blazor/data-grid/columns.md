@@ -39,6 +39,19 @@ The Blazor DataGrid supports the following column types:
 | `TimeOnly` | Represents `TimeOnly` values (available in .NET 7 and later). |
 | `CheckBox` | Renders a checkbox within the column, primarily used for row selection. |
 
+> **Note**
+>
+> The Syncfusion Blazor DataGrid supports [NodaTime](https://nodatime.org/) data types and provides seamless data operations, including formatting, filtering, sorting, editing, and CRUD operations.
+>
+> The following NodaTime types are supported:
+>
+> * `Instant`
+> * `LocalDate`
+> * `LocalTime`
+> * `LocalDateTime`
+> * `OffsetDateTime`
+>
+> **Important:** NodaTime support is currently available only for local data binding. Operations with remote data sources are not supported.
 
 {% tabs %}
 {% highlight razor tabtitle="Index.razor" %}
