@@ -10,15 +10,15 @@ domainurl: https://help.syncfusion.com/grid-sdk
 
 # Find and Highlight in React Data Grid
 
-The Syncfusion React Data Grid supports find and highlight, which enables locating text matches within grid data without filtering or removing records from the view. Find highlights matching cells, provides match counts, and supports navigation between matches.
+The Syncfusion React Data Grid supports Find and Highlight. This feature locates text matches in Grid data without filtering or removing records from the view. Find highlights matching cells, provides match counts, and supports navigation between matches.
 
-Find operates independently of the grid's Search functionality. While Search filters records based on a query, Find preserves all visible records and allows navigation through matching cells.
+Find operates independently of the Grid's Search functionality. While Search filters records based on a query, Find preserves all visible records and enables navigation through matching cells.
 
-## Enable find
+## Enable find and highlight
 
-To enable the find feature, add the `Find` item to the grid [toolbar](https://ej2.syncfusion.com/react/documentation/api/grid#toolbar), import and inject the `Find` module.
+To enable Find and Highlight, add the `Find` item to the Grid [toolbar](https://ej2.syncfusion.com/react/documentation/api/grid#toolbar), then import and inject the `Find` module.
 
-The following example demonstrates enabling the find toolbar in the grid. Matching values are highlighted and the "Previous" and "Next" buttons navigate between matches.
+The following example shows the Find toolbar item enabled in the Grid. Matching values are highlighted, and the "Previous" and "Next" buttons navigate between matches.
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
@@ -42,7 +42,7 @@ The following example demonstrates enabling the find toolbar in the grid. Matchi
 
 ## Customize find settings
 
-Use the `findSettings` property to customize the find feature. Configure `findSettings` to control search behavior, including case sensitivity.
+Use the `findSettings` property to customize Find and Highlight behavior, including case sensitivity.
 
 | Property | Description |
 |----------|-------------|
@@ -50,7 +50,7 @@ Use the `findSettings` property to customize the find feature. Configure `findSe
 | `findSettings.currentPageOnly` | Restricts find operations to records displayed on the current page. |
 | `findSettings.caseSensitive` | Determines whether character casing is considered when matching values. |
 
-The following sample demonstrates the find feature with case-sensitive matching and highlights matching content on the currently displayed page.
+The following sample demonstrates case-sensitive Find operations and highlights matching content on the currently displayed page.
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
@@ -74,7 +74,7 @@ The following sample demonstrates the find feature with case-sensitive matching 
 
 ## Programmatic find operations
 
-The Data Grid provides methods for performing find operations programmatically. These methods enable finding and highlighting matching content, navigating between results, retrieving match information, and clearing the active match.
+The Data Grid provides methods to perform Find operations programmatically. Use these methods to find and highlight matching content, navigate between results, retrieve match information, and clear the active match.
 
 | Method | Description |
 |--------|-------------|
@@ -87,7 +87,7 @@ The Data Grid provides methods for performing find operations programmatically. 
 | `getTotalMatches()` | Returns the number of occurrences found in the client-enumerable result set. |
 | `getActiveMatch()` | Returns the active match, or `null` when no match is active. |
 
-The following example demonstrates how to programmatically perform a find operation using an external input, along with "Find", "Next", "Previous", and "Clear" buttons.
+The following example shows a Find operation using an external input and "Find", "Next", "Previous", and "Clear" buttons.
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
