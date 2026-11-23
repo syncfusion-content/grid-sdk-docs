@@ -10,15 +10,15 @@ domainurl: https://help.syncfusion.com/grid-sdk
 
 # Find and Highlight in Angular Data Grid
 
-The Syncfusion Angular Data Grid supports find and highlight, which enables locating text matches within grid data without filtering or removing records from the view. Find highlights matching cells, provides match counts, and supports navigation between matches.
+The Syncfusion Angular Data Grid supports the Find and Highlight feature, which enables to locate text matches in Grid data without filtering or removing records from the view. Find highlights matching cells, provides match counts, and supports navigation between matches.
 
-Find operates independently of the grid's Search functionality. While Search filters records based on a query, Find preserves all visible records and allows navigation through matching cells.
+Find operates independently of the Grid's Search functionality. While Search filters records based on a query, Find preserves all visible records and enables navigation through matching cells.
 
-## Enable find
+## Enable find and highlight
 
-To enable the find feature, add the `Find` item to the grid [toolbar](https://ej2.syncfusion.com/angular/documentation/api/grid#toolbar), import the `FindService`, include it in the grid's `providers` section.
+To enable the find and highlight feature, add the `Find` item to the Grid [toolbar](https://ej2.syncfusion.com/angular/documentation/api/grid#toolbar), import the `FindService`, and include it in the Grid's `providers` section.
 
-The following example demonstrates enabling the find toolbar in the grid. Matching values are highlighted and the "Previous" and "Next" buttons navigate between matches.
+The following example demonstrates enabling the Find toolbar item in the Grid. Matching values are highlighted, and the "Previous" and "Next" buttons navigate between matches.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -36,7 +36,7 @@ The following example demonstrates enabling the find toolbar in the grid. Matchi
 
 ## Customize find settings
 
-Use the `findSettings` property to customize the find feature. Configure `findSettings` to control search behavior, including case sensitivity.
+Use the `findSettings` property to customize Find and Highlight. Configure `findSettings` to control search behavior, including case sensitivity.
 
 | Property | Description |
 |----------|-------------|
@@ -44,7 +44,7 @@ Use the `findSettings` property to customize the find feature. Configure `findSe
 | `findSettings.currentPageOnly` | Restricts find operations to records displayed on the current page. |
 | `findSettings.caseSensitive` | Determines whether character casing is considered when matching values. |
 
-The following sample demonstrates the find feature with case-sensitive matching and highlights matching content on the currently displayed page.
+The following sample demonstrates case-sensitive find operations and highlights matching content on the currently displayed page.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

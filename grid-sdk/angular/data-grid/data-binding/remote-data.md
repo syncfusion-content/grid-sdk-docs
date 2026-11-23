@@ -14,76 +14,23 @@ In Angular Grid component, binding remote data is a fundamental aspect that enha
 
 Additionally, leverage the power for data retrieval and operations, enhancing event handling, asynchronous programming, and concurrent value management in Angular applications.
 
-## Custom binding with SSRM
-
-The custom binding feature in the Data Grid enables managing a custom API for handling data processing externally and then binding the resulting data to the grid. When using custom binding, the Data Grid expects the result to be an object with `result` and `count` properties.
-
-- `result` -  This property should contain the array of records that will be displayed in the Data Grid. 
-- `count` - This property should indicate the total number of records available in the entire dataset.
-
-The [Data Grid](https://www.syncfusion.com/angular-components/angular-data-grid) component offers a range of powerful features such as **paging**, **grouping**, **sorting**, and **filtering**. These actions trigger the [dataStateChange](https://ej2.syncfusion.com/angular/documentation/api/grid/index-default#datastatechange) event. CRUD actions such as **Create**, **Read**, **Update**, and **Delete** trigger the [dataSourceChanged](https://ej2.syncfusion.com/angular/documentation/api/grid/index-default#datasourcechanged) event. These events provide an opportunity to manage and manipulate data according to user interactions.
-
-### Client-side vs server-side data processing
-
-Data Grid applications can process data using either a client-side or server-side approach.
-
-In a client-side model, the complete dataset is loaded into the browser and all data operations, such as paging, sorting, filtering, grouping, searching, and aggregation, are performed on the client.
-
-![Client side data rendering](../images/client-side-rendering.jpg)
-
-In a Server-Side Row Model (SSRM), the complete dataset remains on the server. The Grid requests only the records required for the current view and processes data operations to the server. This approach reduces browser memory usage and improves performance when working with large datasets.
-
-![Server side data rendering](../images/server-side-rendering.jpg)
-
-The following workflow illustrates the SSRM process:
-
-1. The Data Grid requests data based on its current state.
-2. The current state is sent through the `dataStateChange` event and includes information such as paging, sorting, filtering, searching, grouping, and aggregation.
-3. The server processes the request against the complete dataset.
-4. The server returns only the required records along with the total record count.
-5. The Data Grid renders the returned records and uses the total count to maintain paging and data navigation.
-
-A typical server response contains the following properties:
-
-```ts
-{
-  result: [...],
-  count: 100000
-}
-```
-
-The following table compares client-side processing and server-side processing in the grid.
-
-| Aspect | Client-side processing | Server-side processing (custom binding) |
-|--------|------------------------|-----------------------------------------|
-| Data loaded in browser | Complete dataset | Current page or block only |
-| Data ownership | Browser | Server |
-| Data operations | Executed in the browser | Executed on the server |
-| Suitable data size | Small to medium | Large (hundreds of thousands to millions of records) |
-| Browser memory usage | Increases as data size grows | Lower and predictable |
-| Network request | Single request on initial load | Request for each grid action |
-
-> Custom binding is suitable when data requests must be fully controlled by the application, such as with Redux or an external API. When the server follows a standard protocol, use the [DataManager](https://ej2.syncfusion.com/angular/documentation/data/getting-started) with a built-in adaptor such as [UrlAdaptor](../connecting-to-adaptors/url-adaptor), [WebApiAdaptor](../connecting-to-adaptors/web-api-adaptor), [ODataV4Adaptor](../connecting-to-adaptors/odatav4-adaptor), or [GraphQLAdaptor](../connecting-to-adaptors/graphql-adaptor), which sends grid actions to the server automatically without handling the `dataStateChange` and `dataSourceChanged` events.
-
 ## Binding observable data using async pipe
 
 Observables represent a fundamental reactive programming concept widely adopted throughout the Angular framework. An Observable creates a stream of data or events that can be observed over time, providing an elegant solution for handling asynchronous operations including input event processing, HTTP requests, and event management.
 
 The Syncfusion Angular Grid seamlessly integrates with Observables through the async pipe, enabling effortless binding of grid data. The [AsyncPipe](https://angular.dev/api/common/AsyncPipe) automatically subscribes to observables, extracting the latest emitted value with the required `result` and `count` properties structure that aligns perfectly with the grid's data expectations.
 
-The Data Grid component delivers comprehensive functionality for handling grid actions including **searching**, **filtering**, **sorting**, **grouping**, and **paging**. These interactions trigger the [dataStateChange](https://ej2.syncfusion.com/angular/documentation/api/grid#datastatechange) event, providing opportunities to manage and manipulate data according to interactions.
+The Syncfusion Grid component delivers comprehensive functionality for handling grid actions including **searching**, **filtering**, **sorting**, **grouping**, and **paging**. These interactions trigger the [dataStateChange](https://ej2.syncfusion.com/angular/documentation/api/grid#datastatechange) event, providing opportunities to manage and manipulate data according to user interactions.
 
-### Handle the dataStateChange event
+**Using the `dataStateChange` event**
 
-In the SSRM workflow, the `dataStateChange` event acts as the communication point between the Grid and the server. This event triggers whenever actions modify the grid's data state, such as changing pages, applying sorting, or grouping. This event provides detailed information about the performed action and current grid state, including parameters like page number, sorting details, and filtering criteria.
+The `dataStateChange` event triggers whenever actions modify the grid's data state, such as changing pages, applying sorting, or grouping. This event provides detailed information about the performed action and current grid state, including parameters like page number, sorting details, and filtering criteria.
 
 To implement the `dataStateChange` event effectively:
 
 1. **Subscribe to the event:** In the component code, subscribe to the `dataStateChange` event using the appropriate event handler function. This function is executed whenever the grid is interacted with.
 
-2. **Handle data state:** Inside the event handler function, the event arguments can be accessed to determine the specific actions and intentions. The `action` property of the event arguments indicates the type of action performed (e.g., paging, sorting, grouping).
-
-3. **Return the result:** Assign the processed `result` and `count` to the grid's `dataSource` property to render the requested records.
+2. **Handle data state:** Inside the event handler function, the event arguments can be accessed to determine the specific actions and intentions. The action property of the event arguments indicates the type of action performed (e.g., paging, sorting, grouping).
 
 > The `dataStateChange` event will not be triggered during the initial rendering. To display records on grid initialization, perform the operation in the `ngOnInit` life cycle hook.
 
@@ -339,7 +286,7 @@ getAllData(state: any, action: any): Observable<any> {
 
 **Lazy load grouping**
 
-Lazy load grouping extends the SSRM pattern by retrieving group child records only when a group is expanded. Instead of loading all records for every group during the initial request, the grid requests the child records for a specific group on demand. This reduces initial data transfer and improves performance when working with large grouped datasets.
+In Angular, lazy loading refers to the technique of loading data dynamically when they are needed, instead of loading everything upfront. Lazy load grouping enables efficient loading and display of grouped data by fetching only the required data on demand.
 
 To enable this feature, the [groupSettings.enableLazyLoading](https://ej2.syncfusion.com/angular/documentation/api/grid/groupsettings#enableLazyLoading) property must be set to `true`. In addition, the state must be managed based on the initial grid action as follows.
 
