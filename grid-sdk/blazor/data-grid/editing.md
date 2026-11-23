@@ -13,7 +13,7 @@ The [Blazor DataGrid](https://www.syncfusion.com/blazor-components/blazor-datagr
 
 To enable editing functionality directly within the Blazor Data Grid, editing requires configure the [AllowEditing](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridEditSettings.html#Syncfusion_Blazor_Grids_GridEditSettings_AllowEditing), [AllowAdding](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridEditSettings.html#Syncfusion_Blazor_Grids_GridEditSettings_AllowAdding), and [AllowDeleting](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridEditSettings.html#Syncfusion_Blazor_Grids_GridEditSettings_AllowDeleting) properties within the [GridEditSettings](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridEditSettings.html) to **true**.
 
-The editing feature requires a primary key column for CRUD operations. To define the primary key, set [Columns.IsPrimaryKey](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridColumn.html#Syncfusion_Blazor_Grids_GridColumn_IsPrimaryKey) to **true** in the relevant column.
+The editing feature requires a primary key column for CRUD operations. To define the primary key, set [Columns.IsPrimaryKey](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridColumn.html#Syncfusion_Blazor_Grids_GridColumn_IsPrimaryKey) to **true** in the relevant column. When a single field cannot uniquely identify a record, multiple columns can be marked as primary keys. For more information, refer to the [Composite primary key support](#composite-primary-key-support) section.
 
 Edit actions can be initiated by double-clicking a row or by selecting a row and clicking the **Edit** button in the toolbar. New records can be added by clicking the **Add** button in the toolbar or by invoking the [AddRecord](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.SfGrid-1.html#Syncfusion_Blazor_Grids_SfGrid_1_AddRecord) method externally. **Save** and **Cancel** actions during edit mode are available through the respective toolbar icons. Records can be deleted by selecting a row and clicking the **Delete** button in the toolbar.
 
@@ -197,6 +197,104 @@ To activate this feature, configure the [Toolbar](https://help.syncfusion.com/cr
 {% endtabs %}
 
 {% previewsample "https://blazorplayground.syncfusion.com/embed/rZBIDysApJMqmYgM?appbar=false&editor=false&result=true&errorlist=false&theme=bootstrap5" %}
+
+## Composite primary key support
+
+The composite primary key feature enables the Blazor DataGrid to uniquely identify records using multiple columns when a single field cannot uniquely identify a record. To define a composite primary key, set the [IsPrimaryKey](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridColumn.html#Syncfusion_Blazor_Grids_GridColumn_IsPrimaryKey) property to **true** for each column that forms the key. The combined values of all primary key columns identify a record.
+
+With composite primary key support, the Blazor DataGrid reliably performs CRUD (Create, Read, Update, and Delete) operations by using the combined values of all primary key columns to identify a record. This ensures accurate row matching across all editing modes and data operations.
+
+The complete key information is propagated through the Grid events, `DataManager` operations, data adaptors, and editing workflows. During update and delete operations, the values of all primary key fields are included so that the correct record is identified and processed.
+
+In the following example, the **Order ID** and **Product ID** columns are marked with `IsPrimaryKey="true"`, so the combination of both values uniquely identifies each order record while adding, editing, and deleting.
+
+{% tabs %}
+{% highlight razor tabtitle="Index.razor" %}
+
+@page "/"
+@using Syncfusion.Blazor.Grids
+
+<SfGrid DataSource="@Orders" Toolbar="@(new List<string>() { "Add", "Edit", "Delete", "Update", "Cancel" })" Height="315">
+    <GridEditSettings AllowAdding="true" AllowEditing="true" AllowDeleting="true"></GridEditSettings>
+    <GridColumns>
+        <GridColumn Field=@nameof(OrderData.OrderID) HeaderText="Order ID" IsPrimaryKey="true" TextAlign="TextAlign.Right" Width="100" ValidationRules="@(new ValidationRules { Required = true })"></GridColumn>
+        <GridColumn Field=@nameof(OrderData.ProductID) HeaderText="Product ID" IsPrimaryKey="true" TextAlign="TextAlign.Right" Width="100" ValidationRules="@(new ValidationRules { Required = true })"></GridColumn>
+        <GridColumn Field=@nameof(OrderData.CustomerID) HeaderText="Customer Name" Width="120" ValidationRules="@(new ValidationRules { Required = true })"></GridColumn>
+        <GridColumn Field=@nameof(OrderData.Freight) HeaderText="Freight" Format="C2" TextAlign="TextAlign.Right" Width="120" EditType="EditType.NumericEdit" ValidationRules="@(new ValidationRules { Required = true, Min = 1, Max = 1000 })"></GridColumn>
+        <GridColumn Field=@nameof(OrderData.ShipCountry) HeaderText="ShipCountry" EditType="EditType.DropDownEdit" TextAlign="TextAlign.Right" Width="150"></GridColumn>
+    </GridColumns>
+</SfGrid>
+
+@code {
+    public List<OrderData> Orders { get; set; }
+
+    protected override void OnInitialized()
+    {
+        Orders = OrderData.GetAllRecords();
+    }
+}
+
+{% endhighlight %}
+
+{% highlight c# tabtitle="OrderData.cs" %}
+
+public class OrderData
+{
+    public static List<OrderData> Orders = new List<OrderData>();
+
+    public OrderData() { }
+
+    public OrderData(int OrderID, int ProductID, string CustomerID, string ShipName, double Freight, DateTime? OrderDate, DateTime? ShippedDate, bool? IsVerified, string ShipCity, string ShipCountry, int employeeID)
+    {
+        this.OrderID = OrderID;
+        this.ProductID = ProductID;
+        this.CustomerID = CustomerID;
+        this.ShipName = ShipName;
+        this.Freight = Freight;
+        this.OrderDate = OrderDate;
+        this.ShippedDate = ShippedDate;
+        this.IsVerified = IsVerified;
+        this.ShipCity = ShipCity;
+        this.ShipCountry = ShipCountry;
+        this.EmployeeID = employeeID;
+    }
+
+    public static List<OrderData> GetAllRecords()
+    {
+        if (Orders.Count == 0)
+        {
+            Orders.Add(new OrderData(10248, 1, "VINET", "Vins et alcools Chevalier", 32.38, new DateTime(1996, 7, 4), new DateTime(1996, 08, 07), true, "Reims", "France", 1));
+            Orders.Add(new OrderData(10249, 2, "TOMSP", "Toms Spezialitäten", 11.61, new DateTime(1996, 7, 5), new DateTime(1996, 08, 07), false, "Münster", "Germany", 2));
+            Orders.Add(new OrderData(10250, 3, "HANAR", "Hanari Carnes", 65.83, new DateTime(1996, 7, 6), new DateTime(1996, 08, 07), true, "Rio de Janeiro", "Brazil", 3));
+            Orders.Add(new OrderData(10251, 4, "VINET", "Vins et alcools Chevalier", 41.34, new DateTime(1996, 7, 7), new DateTime(1996, 08, 07), false, "Lyon", "France", 1));
+            Orders.Add(new OrderData(10252, 5, "SUPRD", "Suprêmes délices", 151.30, new DateTime(1996, 7, 8), new DateTime(1996, 08, 07), true, "Charleroi", "Belgium", 2));
+            Orders.Add(new OrderData(10253, 6, "HANAR", "Hanari Carnes", 58.17, new DateTime(1996, 7, 9), new DateTime(1996, 08, 07), false, "Bern", "Switzerland", 3));
+            Orders.Add(new OrderData(10254, 7, "CHOPS", "Chop-suey Chinese", 22.98, new DateTime(1996, 7, 10), new DateTime(1996, 08, 07), true, "Genève", "Switzerland", 2));
+            Orders.Add(new OrderData(10255, 8, "VINET", "Vins et alcools Chevalier", 148.33, new DateTime(1996, 7, 11), new DateTime(1996, 08, 07), false, "Resende", "Brazil", 1));
+        }
+        return Orders;
+    }
+
+    public int OrderID { get; set; }
+    public int ProductID { get; set; }
+    public string CustomerID { get; set; }
+    public string ShipName { get; set; }
+    public double? Freight { get; set; }
+    public DateTime? OrderDate { get; set; }
+    public DateTime? ShippedDate { get; set; }
+    public bool? IsVerified { get; set; }
+    public string ShipCity { get; set; }
+    public string ShipCountry { get; set; }
+    public int EmployeeID { get; set; }
+}
+
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "https://blazorplayground.syncfusion.com/embed/htBdMsVUpGKMCqUF?appbar=false&editor=false&result=true&errorlist=false&theme=bootstrap5" %}
+
+> * Set [IsPrimaryKey](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridColumn.html#Syncfusion_Blazor_Grids_GridColumn_IsPrimaryKey) to **true** for every column that forms the composite key. Records are matched using the combined values of all primary key columns.
+> * Composite primary key support applies to all editing modes of the Blazor DataGrid.
 
 ## Disable editing for particular column
 
