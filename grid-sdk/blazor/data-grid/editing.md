@@ -211,7 +211,6 @@ In the following example, the **Order ID** and **Product ID** columns are marked
 {% tabs %}
 {% highlight razor tabtitle="Index.razor" %}
 
-@page "/"
 @using Syncfusion.Blazor.Grids
 
 <SfGrid DataSource="@Orders" Toolbar="@(new List<string>() { "Add", "Edit", "Delete", "Update", "Cancel" })" Height="315">
