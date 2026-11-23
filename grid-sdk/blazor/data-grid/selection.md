@@ -718,9 +718,9 @@ public class OrderDetails
 
 > When **Select All** is used, only records visible in the current view are selected. The **SelectedRecords** property shows the count for the current page. As navigation continues to other pages, new records load on demand, and **SelectedRecords** includes selections from each visited page. This design ensures efficient data retrieval with paging. Selecting all records across the entire dataset and retrieving them at once is not supported when **Select All** is enabled.
 
-## Prevent specific rows from being selected in checkbox selection
+## Prevent specific rows from being selected
 
-The Blazor DataGrid provides the [IsRowSelectable](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridSelectionSettings.html#Syncfusion_Blazor_Grids_GridSelectionSettings_IsRowSelectable) property in [GridSelectionSettings](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridSelectionSettings.html) to conditionally control row selection based on row data. This feature is useful when checkbox selection is enabled and specific rows must be excluded from selection based on business requirements.
+The Blazor DataGrid provides the [IsRowSelectable](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridSelectionSettings.html#Syncfusion_Blazor_Grids_GridSelectionSettings_IsRowSelectable) property in [GridSelectionSettings](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridSelectionSettings.html) to conditionally control row selection based on row data. This feature is useful with row selection and checkbox selection when specific rows must be excluded from selection based on business requirements.
 
 The `IsRowSelectable` property accepts a predicate function (`Func<object, bool>`) that receives the current row data and returns **true** or **false** to determine whether the row can be selected. Rows for which the predicate returns **false** are treated as non-selectable and are excluded from both user-initiated and programmatic selection operations. When the property is not set, all rows are selectable.
 
