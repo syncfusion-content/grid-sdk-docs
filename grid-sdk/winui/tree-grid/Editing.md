@@ -87,6 +87,46 @@ this.treeGrid.EditTrigger = EditTrigger.OnTap;
 {% endhighlight %}
 {% endtabs %}
 
+## Non-Alphanumeric Key Type-to-Edit
+
+SfTreeGrid allows users to start editing a cell by typing non-alphanumeric printable characters such as `@`, `#`, `$`, `%`, `&`, `-`, `.`, and `,`.
+
+When a cell is selected and is not already in edit mode, typing one of these characters automatically enters edit mode and inserts the typed character into the editor.
+
+{% tabs %}
+{% highlight xaml %}
+
+<treeGrid:SfTreeGrid Name="treeGrid"
+                     ChildPropertyName="ReportsTo"
+                     ParentPropertyName="ID"
+                     SelfRelationRootValue="-1"
+                     AllowEditing="True"
+                     NavigationMode="Cell"
+                     AutoGenerateColumns="True"
+                     ItemsSource="{Binding Employees}"/>
+</treeGrid:SfTreeGrid>
+
+{% endhighlight %}
+{% highlight c# %}
+
+this.treeGrid.AllowEditing = true;
+this.treeGrid.NavigationMode = NavigationMode.Cell;
+
+{% endhighlight %}
+{% endtabs %}
+
+<img src="Editing-images/winui-treegrid-editing-non-alphanumeric-key.png" alt="WinUI TreeGrid Non-alphanumeric key editing" width="100%" Height="Auto"/>
+
+### Cases that do not begin editing
+
+Type-to-edit does not begin editing in the following cases:
+
+* The typed key is a control key, white-space character (including <kbd>Space</kbd>), or is used together with shortcut modifiers such as <kbd>Ctrl</kbd> or <kbd>Alt</kbd>.
+* The current cell is already in edit mode, or [NavigationMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.SfGridBase.html#Syncfusion_UI_Xaml_Grids_SfGridBase_NavigationMode) is not set to `Cell`, or there is no current cell.
+* The current cell is read-only, editing is disabled for the cell, or editing is canceled in the [CurrentCellBeginEdit](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_CurrentCellBeginEdit) event.
+
+When editing begins through type-to-edit, the `CurrentCellBeginEdit` event is raised in the same way as when editing begins using the <kbd>F2</kbd> key or by clicking the cell.
+
 ## Cursor placement
 
 When the cell enters into edit mode, cursor is placed based on [SfTreeGrid.EditorSelectionBehavior](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.SfGridBase.html#Syncfusion_UI_Xaml_Grids_SfGridBase_EditorSelectionBehavior) property.
