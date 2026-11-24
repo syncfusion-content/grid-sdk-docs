@@ -93,7 +93,7 @@ The date range menu filter can be customized using the following properties of `
   * `Both`: Displays both the default predefined presets and the custom preset ranges.
 * `customPresetRanges`: An array of objects defining custom date range presets. Each preset object requires a `label`, `start` date, and `end` date.
 
-You can also dynamically update the `dateRanges` settings (such as enabling or disabling presets, changing the preset mode, or applying custom preset ranges) using external controls such as CheckBox and DropDownList by updating the column's filter configuration and calling the `refreshColumns` method.
+You can also dynamically update the `dateRanges` settings (such as enabling or disabling presets, changing the preset mode, or applying custom preset ranges) using external controls such as CheckBox and DropDownList by updating the column's filter configuration.
 
 The following example demonstrates how to configure and dynamically update the date range menu filter in the JavaScript Grid:
 
