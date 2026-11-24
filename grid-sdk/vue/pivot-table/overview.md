@@ -71,7 +71,7 @@ The **Availability** column uses the following terms:
 | Member editor | Configurable | Relational and OLAP | [Filtering](./filtering) |
 | Deferred layout update | Configurable | Relational and OLAP | [Defer update](./defer-update) |
 | Compact layout | Built-in | Relational and OLAP | [Row and column](./row-and-column) |
-| Classic (tabular) layout | Configurable | Relational only | [Classic layout](./classic-layout) |
+| Classic (tabular) layout | Configurable | Relational only | [Layout](./layout) |
 | Show or hide subtotals and grand totals | Configurable | Relational and OLAP | [Show or hide totals](./summary-customization) |
 
 ### Performance

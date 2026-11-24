@@ -26,7 +26,7 @@ The following table lists the built-in toolbar options and their actions:
 | Load | Opens a report from the report list |
 | Grid | Displays the pivot table |
 | Chart | Shows a pivot chart with options to select different chart types and enable or disable multiple axes |
-| Exporting | Exports the pivot table as PDF, Excel, or CSV, or the pivot chart as a PDF or image |
+| Exporting | Exports the pivot table as PDF, Excel, CSV, HTML, or image (PNG, JPEG, SVG), or the pivot chart as a PDF or image |
 | Sub-total | Shows or hides subtotals in the pivot table |
 | Grand Total | Shows or hides grand totals in the pivot table |
 | Conditional Formatting | Opens a pop-up to apply formatting to cells based on conditions |
@@ -896,7 +896,7 @@ The [`actionBegin`](https://ej2.syncfusion.com/javascript/documentation/api/pivo
    | Report change | Report change |
    | Conditional Formatting | Open conditional formatting dialog |
    | Number Formatting | Open number formatting dialog |
-   | Export menu | PDF export, Excel export, CSV export |
+   | Export menu | PDF export, Excel export, CSV export, HTML export, Image export |
    | Show Fieldlist | Open field list |
    | Show Table | Show table view |
    | Chart menu | Show chart view |
@@ -935,7 +935,7 @@ The [`actionComplete`](https://ej2.syncfusion.com/javascript/documentation/api/p
    | Report change | Report changed |
    | Conditional Formatting | Conditionally formatted |
    | Number Formatting | Number formatted |
-   | Export menu | PDF exported, Excel exported, CSV exported |
+   | Export menu | PDF exported, Excel exported, CSV exported, HTML exported, Image exported |
    | Show Fieldlist | Field list closed |
    | Show Table | Table view shown |
    | Sub-totals menu | Sub-totals hidden, Row sub-totals shown, Column sub-totals shown, Sub-totals shown |
@@ -970,7 +970,7 @@ The [`actionFailure`](https://ej2.syncfusion.com/javascript/documentation/api/pi
    | Report change | Report change |
    | Conditional Formatting | Open conditional formatting dialog |
    | Number Formatting | Open number formatting dialog |
-   | Export menu | PDF export, Excel export, CSV export |
+   | Export menu | PDF export, Excel export, CSV export, HTML export, Image export |
    | Show Fieldlist | Open field list |
    | Show Table | Show table view |
    | Chart menu | Show chart view |
@@ -995,3 +995,5 @@ The [`actionFailure`](https://ej2.syncfusion.com/javascript/documentation/api/pi
 * [Toolbar Component](https://ej2.syncfusion.com/javascript/documentation/toolbar/getting-started)
 * [Excel Exporting](./excel-export)
 * [PDF Exporting](./pdf-export)
+* [HTML Exporting](./html-export)
+* [Image Exporting](./image-export)

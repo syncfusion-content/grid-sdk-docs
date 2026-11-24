@@ -33,8 +33,8 @@ End users can perform calculations on groups of values (specifically for value f
 | SampleVar| Displays the sample variance for the selected field.|
 | RunningTotals| Displays the running total for the selected field values.|
 | PercentageOfRunningTotals| Cumulative percentage of running totals (client-side engine only).|
-| DifferenceFrom| Displays the pivot table values with difference from the value of the base item in the base field.|
-| PercentageOfDifferenceFrom| Displays the pivot table values with percentage difference from the value of the base item in the base field.|
+| DifferenceFrom| Displays the difference relative to a specific base item or adjacent member (`'(previous)'` / `'(next)'`) in the base field. Configured using `baseField`, `baseItem`, and optionally `allowCrossGroupCalculation`.|
+| PercentageOfDifferenceFrom| Displays the percentage difference relative to a specific base item or adjacent member (`'(previous)'` / `'(next)'`) in the base field. Configured using `baseField`, `baseItem`, and optionally `allowCrossGroupCalculation`.|
 | PercentageOfGrandTotal| Displays the pivot table values with percentage of grand total of all values.|
 | PercentageOfColumnTotal| Displays the pivot table values in each column with percentage of total values for the column.|
 | PercentageOfRowTotal| Displays the pivot table values in each row with percentage of total values for the row.|
@@ -47,9 +47,12 @@ End users can perform calculations on groups of values (specifically for value f
 
 For each value field, the aggregation type can be set using the property [`type`](https://ej2.syncfusion.com/documentation/api/pivotview/datasourcesettings#type) in [`values`](https://ej2.syncfusion.com/documentation/api/pivotview/dataSourceSettings#values). Meanwhile, aggregation types like **DifferenceFrom** and **PercentageOfDifferenceFrom** can check for specific field of specific item using [`baseField`](https://ej2.syncfusion.com/documentation/api/pivotview/fieldoptionsmodel#basefield) and [`baseItem`](https://ej2.syncfusion.com/documentation/api/pivotview/fieldoptionsmodel#baseitem) properties. Likewise, **PercentageOfParentTotal** type can for specific field using [`baseField`](https://ej2.syncfusion.com/documentation/api/pivotview/fieldoptionsmodel#basefield) property. For instance, the aggregation type **DifferenceFrom** would intake the specified field and its corresponding member as input and its value is compared across other members in the same field and also across different fields to formulate an appropriate output value.
 
-* [`type`](https://ej2.syncfusion.com/documentation/api/pivotview/datasourcesettings#type): It allows to set the aggregate type of the field.
-* [`baseField`](https://ej2.syncfusion.com/documentation/api/pivotview/fieldoptionsmodel#basefield): It allows to set the specific field to aggregate the values.
-* [`baseItem`](https://ej2.syncfusion.com/documentation/api/pivotview/fieldoptionsmodel#baseitem): It allows to set the specific member to aggregate the values.
+| Property | Applicable Types | Description |
+|---|---|---|
+| [`type`](https://ej2.syncfusion.com/documentation/api/pivotview/datasourcesettings#type) | All | Specifies the aggregation function to apply. |
+| [`baseField`](https://ej2.syncfusion.com/documentation/api/pivotview/fieldoptionsmodel#basefield) | **DifferenceFrom**, **PercentageOfDifferenceFrom**, **PercentageOfParentTotal** | Specifies the reference field to aggregate against. |
+| [`baseItem`](https://ej2.syncfusion.com/documentation/api/pivotview/fieldoptionsmodel#baseitem) | **DifferenceFrom**, **PercentageOfDifferenceFrom** | Specifies the reference member name, or dynamic adjacent tokens (`'(previous)'` / `'(next)'`). |
+| `allowCrossGroupCalculation` | **DifferenceFrom**, **PercentageOfDifferenceFrom** | When using adjacent tokens, determines whether difference calculation continues across parent group boundaries (`true`) or resets within each group (`false`). |
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
