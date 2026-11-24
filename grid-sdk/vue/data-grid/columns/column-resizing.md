@@ -131,6 +131,26 @@ The following screenshot represents the column resizing on the touch device.
 
 ![Touch Interaction](../images/column-resizing.jpg)
 
+## Resize columns using keyboard
+
+The Data Grid supports keyboard-based column resizing to improve accessibility and keyboard navigation. The width adjustment applied for each key press is controlled by the `resizeSettings.resizeStep` property.
+
+When a resize handle receives focus:
+
+- Press the <kbd>Alt + →</kbd> key to decrease the column width.
+- Press the <kbd>Alt + ←</kbd> key to increase the column width.
+
+{% tabs %}
+{% highlight html tabtitle="Composition API (~/src/App.vue)" %}
+{% include code-snippet/grid-sdk/vue/grid/column/resize-keyboard/app-composition.vue %}
+{% endhighlight %}
+{% highlight html tabtitle="Options API (~/src/App.vue)" %}
+{% include code-snippet/grid-sdk/vue/grid/column/resize-keyboard/app.vue %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/grid/column/resize-keyboard" %}
+
 ## Resizing column externally
 
 Grid provides the ability to resize columns using an external button click. This can be achieved by changing the [width](https://ej2.syncfusion.com/vue/documentation/api/grid/column#width) property of the column and refreshing the grid using the [refreshColumns](https://ej2.syncfusion.com/vue/documentation/api/grid#refreshcolumns) method in the external button click function.
