@@ -152,6 +152,16 @@ By default, remote CSV data is parsed using a comma (`,`) as the field separator
 
 When CSV fields enclosed in double quotes contain multi-line text or line breaks, set `enableQuotedLineBreaks` to `true` in `dataSourceSettings`. This preserves line breaks within the quoted field value instead of splitting it into a new record. Both properties are applicable when `type` is set to `'CSV'` and data is retrieved remotely via `url`.
 
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/data-binding/remote-csv-data/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="Remotecsvdata.cs" %}
+{% include code-snippet/grid-sdk/asp-net-mvc/pivot-table/data-binding/remote-csv-data/remotecsvdata.cs %}
+{% endhighlight %}
+{% endtabs %}
+
+![Pivot Table bound to remote CSV data](images/remote-csv-data.png)
 
 ## Remote Data Binding
 

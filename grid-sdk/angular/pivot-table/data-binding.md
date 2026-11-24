@@ -183,6 +183,17 @@ By default, remote CSV data is parsed using a comma (`,`) as the field separator
 
 When CSV fields enclosed in double quotes contain multi-line text or line breaks, set `enableQuotedLineBreaks` to `true` in `dataSourceSettings`. This preserves line breaks within the quoted field value instead of splitting it into a new record. Both properties are applicable when `type` is set to `'CSV'` and data is retrieved remotely via `url`.
 
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs25/src/app.component.ts %}
+{% endhighlight %}
+
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/grid-sdk/angular/pivot-table/getting-started-cs25/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/pivot-table/getting-started-cs25" %}
 
 ## Remote Data Binding
 
