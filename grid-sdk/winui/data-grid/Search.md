@@ -259,15 +259,13 @@ You can select the records which contains the search text by using `GetSearchedR
 {% tabs %}
 {% highlight c# %}
 
-this.dataGrid.SelectedItems.Clear();
-this.dataGrid.SearchHelper.AllowSearching = true;
-this.dataGrid.SearchHelper.Search("SearchText"); 
-var records = this.sfDataGrid.SearchHelper.GetSearchRecords();
-if (records != null && records.Count > 0)
+this.sfDataGrid.SelectedItems.Clear();
+this.sfDataGrid.SearchHelper.AllowSearching = true;
+this.sfDataGrid.SearchHelper.Search("SearchText");
+var list = this.sfDataGrid.SearchHelper.GetSearchRecords();
+if (list != null && list.Count > 0)
 {
-    int recordIndex = this.sfDataGrid.ResolveToRecordIndex(
-        this.sfDataGrid.ResolveToRowIndex(records[0].Record));
-
+    int recordIndex = this.sfDataGrid.ResolveToRecordIndex(this.sfDataGrid.ResolveToRowIndex(list[0].Record));
     this.sfDataGrid.SelectedIndex = recordIndex;
 }
 
