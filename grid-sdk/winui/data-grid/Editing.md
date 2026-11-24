@@ -95,6 +95,7 @@ The result depends on the column type of the current cell,
 
 * **GridTextColumn** – the typed character replaces the existing value, and the cursor is placed after it. [EditorSelectionBehavior](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.SfGridBase.html#Syncfusion_UI_Xaml_Grids_SfGridBase_EditorSelectionBehavior) does not affect this case.
 * **GridNumericColumn** – only the digits 0 to 9 are applied and replace the existing value. Any other character, such as `-`, `.` or a symbol, opens the editor with the existing value.
+* **GridUnBoundColumn** – with the default text editor, the typed character replaces the existing value. With `EditTemplate` or `EditTemplateSelector`, editing does not begin by typing.
 * **Other editable columns** – the editor opens with the existing value.
 * **Non-editable columns** – editing does not begin.
 
@@ -107,10 +108,8 @@ Typing does not begin editing in the following cases,
 * [NavigationMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.SfGridBase.html#Syncfusion_UI_Xaml_Grids_SfGridBase_NavigationMode) is not set to `Cell`.
 * The cell is already in edit mode.
 * The cell is read-only or non-editable.
-* The current cell belongs to a template column. For unbound columns, see the note below.
+* The current cell belongs to a template column.
 * The edit is canceled in the [CurrentCellBeginEdit](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.DataGrid.SfDataGrid.html#Syncfusion_UI_Xaml_DataGrid_SfDataGrid_CurrentCellBeginEdit) event. The cell remains unchanged and the typed character is not applied.
-
-N> `GridUnBoundColumn` begins editing through type-to-edit when it uses the default text editor. It does not begin editing through type-to-edit when `EditTemplate` or `EditTemplateSelector` is set.
 
 N> The `CurrentCellBeginEdit` event does not distinguish editing started by typing from editing started by <kbd>F2</kbd> or a click. Canceling the event cancels all of them.
 
