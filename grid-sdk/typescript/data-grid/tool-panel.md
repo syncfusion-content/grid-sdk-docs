@@ -35,7 +35,13 @@ Each item in `toolPanels` is either the panel type name (for example `'Columns'`
 
 ## Columns and Filters panel
 
-The Columns panel lists the Grid columns with checkboxes. Clear a checkbox to hide a column and select it to show the column again.
+The **Columns** panel lists the Grid columns with checkboxes. Clear a checkbox to hide a column and select it to show the column again.
+
+The **Filters** panel lists every filterable column. Expand a column, set the filter and apply it.
+
+To use them, add `Columns` and `Filters` to `toolPanels`, set `allowFiltering` to `true` and inject the `ColumnChooser` and `Filter` modules.
+
+The following sample shows the Columns and Filters panels.
 
 ### Reorder columns
 
@@ -48,11 +54,7 @@ When the `Group` and `Aggregate` modules are injected and `allowGrouping` is `tr
 * **Row Groups** - drag a column here to group the Grid by that column. Remove the column from the area to ungroup it.
 * **Values** - drag a column here to add an aggregate for it, and choose the aggregate type (for example Sum or Average) from the menu on the item.
 
-### Filter columns
-
-Add `Filters` to `toolPanels` next to `Columns`, set `allowFiltering` to `true` and inject the `Filter` module. The Filters panel lists every filterable column; expand a column, set the filter and apply it.
-
-The following sample shows the Columns and Filters panels with column reordering, row grouping and aggregates.
+The sample below also enables reordering, row grouping and aggregates.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
