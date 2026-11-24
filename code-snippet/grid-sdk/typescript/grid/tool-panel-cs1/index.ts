@@ -11,7 +11,6 @@ let grid: Grid = new Grid({
         position: 'Right',
         type: 'Push',
         width: 300,
-        isOpen: true,
         toolPanels: [
             'Columns',
             'Filters'

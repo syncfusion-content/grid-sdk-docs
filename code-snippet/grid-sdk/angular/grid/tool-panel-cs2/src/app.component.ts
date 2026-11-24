@@ -29,7 +29,6 @@ export class AppComponent implements OnInit {
             position: 'Right',
             type: 'Push',
             width: 300,
-            isOpen: true,
             toolPanels: [
                 'Edit',
                 'Columns'

@@ -7,7 +7,6 @@ var grid = new ej.grids.Grid({
         position: 'Right',
         type: 'Push',
         width: 300,
-        isOpen: true,
         toolPanels: [
             'Edit',
             'Columns'

@@ -33,7 +33,6 @@ Each item in `toolPanels` is either the panel type name (for example `'Columns'`
 | `position` | Side bar position: `Left` or `Right`. |
 | `type` | How the side bar opens: `Push` or `Over`. See [Side bar type](#side-bar-type). |
 | `width` | Width of the side bar in pixels. |
-| `isOpen` | Opens the side bar when the Grid is rendered. |
 
 ### Side bar type
 

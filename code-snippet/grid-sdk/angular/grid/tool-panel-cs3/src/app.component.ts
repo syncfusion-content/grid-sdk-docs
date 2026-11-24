@@ -27,7 +27,6 @@ export class AppComponent implements OnInit {
             position: 'Left',
             type: 'Over',
             width: 300,
-            isOpen: true,
             toolPanels: [
                 'Columns',
                 {

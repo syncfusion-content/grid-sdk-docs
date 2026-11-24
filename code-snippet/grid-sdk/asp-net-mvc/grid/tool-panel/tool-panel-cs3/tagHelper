@@ -6,7 +6,7 @@
         <e-grid-column field="UnitPrice" headerText="Unit Price" width="140" textAlign="Right" format="C2"></e-grid-column>
         <e-grid-column field="UnitsInStock" headerText="Units In Stock" width="140" textAlign="Right"></e-grid-column>
     </e-grid-columns>
-    <e-grid-toolpanelsettings position="Left" type="Over" width="300" isOpen="true">
+    <e-grid-toolpanelsettings position="Left" type="Over" width="300">
         <e-toolpanels>
             <e-toolpanel type="Columns"></e-toolpanel>
             <e-toolpanel type="Custom" template="#customPanelTemplate"></e-toolpanel>

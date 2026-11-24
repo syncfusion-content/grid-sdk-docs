@@ -5,7 +5,7 @@
   col.Field("Category").HeaderText("Category").Width("140").Add();
   col.Field("UnitPrice").HeaderText("Unit Price").Width("140").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Format("C2").Add();
   col.Field("UnitsInStock").HeaderText("Units In Stock").Width("140").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
-}).ToolPanelSettings(tp => tp.Position("Left").Type("Over").Width("300").IsOpen(true).ToolPanels(panels =>
+}).ToolPanelSettings(tp => tp.Position("Left").Type("Over").Width("300").ToolPanels(panels =>
 {
   panels.Type("Columns").Add();
   panels.Type("Custom").Template("#customPanelTemplate").Add();

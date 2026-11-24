@@ -8,7 +8,7 @@
         <e-grid-column field="Country" headerText="Country" width="140"></e-grid-column>
         <e-grid-column field="Salary" headerText="Salary" width="140" textAlign="Right" format="C0"></e-grid-column>
     </e-grid-columns>
-    <e-grid-toolpanelsettings position="Right" type="Push" width="300" isOpen="true">
+    <e-grid-toolpanelsettings position="Right" type="Push" width="300">
         <e-toolpanels>
             <e-toolpanel type="Edit"></e-toolpanel>
             <e-toolpanel type="Columns"></e-toolpanel>
