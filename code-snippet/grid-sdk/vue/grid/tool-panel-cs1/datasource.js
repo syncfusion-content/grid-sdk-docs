@@ -1,58 +1,58 @@
 export let data = [
     {
-        "MovieID": 1,
-        "Title": "Inception",
-        "Genre": "Sci-Fi",
-        "Year": 2010,
-        "Rating": 8.8
+        "OrderID": 10248,
+        "CustomerID": "VINET",
+        "ShipCity": "Reims",
+        "ShipCountry": "France",
+        "Freight": 32.38
     },
     {
-        "MovieID": 2,
-        "Title": "The Godfather",
-        "Genre": "Crime",
-        "Year": 1972,
-        "Rating": 9.2
+        "OrderID": 10249,
+        "CustomerID": "TOMSP",
+        "ShipCity": "Munster",
+        "ShipCountry": "Germany",
+        "Freight": 11.61
     },
     {
-        "MovieID": 3,
-        "Title": "Spirited Away",
-        "Genre": "Animation",
-        "Year": 2001,
-        "Rating": 8.6
+        "OrderID": 10250,
+        "CustomerID": "HANAR",
+        "ShipCity": "Rio de Janeiro",
+        "ShipCountry": "Brazil",
+        "Freight": 65.83
     },
     {
-        "MovieID": 4,
-        "Title": "Parasite",
-        "Genre": "Thriller",
-        "Year": 2019,
-        "Rating": 8.5
+        "OrderID": 10251,
+        "CustomerID": "VICTE",
+        "ShipCity": "Lyon",
+        "ShipCountry": "France",
+        "Freight": 41.34
     },
     {
-        "MovieID": 5,
-        "Title": "Gladiator",
-        "Genre": "Action",
-        "Year": 2000,
-        "Rating": 8.5
+        "OrderID": 10252,
+        "CustomerID": "SUPRD",
+        "ShipCity": "Charleroi",
+        "ShipCountry": "Belgium",
+        "Freight": 51.3
     },
     {
-        "MovieID": 6,
-        "Title": "Amelie",
-        "Genre": "Romance",
-        "Year": 2001,
-        "Rating": 8.3
+        "OrderID": 10253,
+        "CustomerID": "HANAR",
+        "ShipCity": "Rio de Janeiro",
+        "ShipCountry": "Brazil",
+        "Freight": 58.17
     },
     {
-        "MovieID": 7,
-        "Title": "Interstellar",
-        "Genre": "Sci-Fi",
-        "Year": 2014,
-        "Rating": 8.7
+        "OrderID": 10254,
+        "CustomerID": "CHOPS",
+        "ShipCity": "Bern",
+        "ShipCountry": "Switzerland",
+        "Freight": 22.98
     },
     {
-        "MovieID": 8,
-        "Title": "Coco",
-        "Genre": "Animation",
-        "Year": 2017,
-        "Rating": 8.4
+        "OrderID": 10255,
+        "CustomerID": "RICSU",
+        "ShipCity": "Geneve",
+        "ShipCountry": "Switzerland",
+        "Freight": 148.33
     }
 ];

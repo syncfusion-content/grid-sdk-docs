@@ -1,10 +1,10 @@
-@Html.EJS().Grid("grid").DataSource((IEnumerable<object>)ViewBag.dataSource).Height("320px").AllowFiltering().AllowReordering().EnableToolPanel(true).Columns(col =>
+@Html.EJS().Grid("grid").DataSource((IEnumerable<object>)ViewBag.dataSource).Height("320px").EnableToolPanel(true).AllowFiltering().AllowReordering().Columns(col =>
 {
-  col.Field("BookID").HeaderText("Book ID").Width("110").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
-  col.Field("Title").HeaderText("Title").Width("140").Add();
-  col.Field("Author").HeaderText("Author").Width("140").Add();
-  col.Field("Genre").HeaderText("Genre").Width("140").Add();
-  col.Field("Price").HeaderText("Price").Width("140").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+  col.Field("OrderID").HeaderText("Order ID").Width("140").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+  col.Field("CustomerID").HeaderText("Customer ID").Width("140").Add();
+  col.Field("ShipCity").HeaderText("Ship City").Width("140").Add();
+  col.Field("ShipCountry").HeaderText("Ship Country").Width("140").Add();
+  col.Field("Freight").HeaderText("Freight").Width("140").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Format("C2").Add();
 }).ToolPanelSettings(tp => tp.Position("Right").IsOpen(true).DefaultToolPanel("columns").ToolPanels(panels =>
 {
   panels.Id("columns").Type("Columns").HeaderText("Columns").Add();

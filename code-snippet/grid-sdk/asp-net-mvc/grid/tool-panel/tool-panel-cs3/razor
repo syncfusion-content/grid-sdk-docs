@@ -1,0 +1,16 @@
+@Html.EJS().Grid("grid").DataSource((IEnumerable<object>)ViewBag.dataSource).Height("320px").EnableToolPanel(true).Columns(col =>
+{
+  col.Field("OrderID").HeaderText("Order ID").Width("140").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+  col.Field("CustomerID").HeaderText("Customer ID").Width("140").Add();
+  col.Field("ShipCity").HeaderText("Ship City").Width("140").Add();
+  col.Field("ShipCountry").HeaderText("Ship Country").Width("140").Add();
+  col.Field("Freight").HeaderText("Freight").Width("140").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Format("C2").Add();
+}).ToolPanelSettings(tp => tp.Position("Left").IsOpen(true).DefaultToolPanel("columns").ToolPanels(panels =>
+{
+  panels.Id("columns").Type("Columns").HeaderText("Columns").Add();
+  panels.Id("summary").Type("Custom").HeaderText("Summary").IconCss("e-icons e-description").Template("#customPanelTemplate").Add();
+})).Render()
+
+<script id="customPanelTemplate" type="text/x-template">
+    <div class="custom-panel"><h4>Order Summary</h4><p>Total orders: 8</p><p>Select a row to review the order here.</p></div>
+</script>

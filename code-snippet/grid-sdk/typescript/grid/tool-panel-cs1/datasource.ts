@@ -1,58 +1,58 @@
 export let data: Object[] = [
     {
-        "StudentID": 1,
-        "StudentName": "Aria Patel",
-        "Department": "Physics",
-        "Grade": "A",
-        "Score": 92
+        "OrderID": 10248,
+        "CustomerID": "VINET",
+        "ShipCity": "Reims",
+        "ShipCountry": "France",
+        "Freight": 32.38
     },
     {
-        "StudentID": 2,
-        "StudentName": "Liam Chen",
-        "Department": "Chemistry",
-        "Grade": "B",
-        "Score": 81
+        "OrderID": 10249,
+        "CustomerID": "TOMSP",
+        "ShipCity": "Munster",
+        "ShipCountry": "Germany",
+        "Freight": 11.61
     },
     {
-        "StudentID": 3,
-        "StudentName": "Noah Smith",
-        "Department": "Biology",
-        "Grade": "A",
-        "Score": 95
+        "OrderID": 10250,
+        "CustomerID": "HANAR",
+        "ShipCity": "Rio de Janeiro",
+        "ShipCountry": "Brazil",
+        "Freight": 65.83
     },
     {
-        "StudentID": 4,
-        "StudentName": "Emma Garcia",
-        "Department": "Maths",
-        "Grade": "C",
-        "Score": 68
+        "OrderID": 10251,
+        "CustomerID": "VICTE",
+        "ShipCity": "Lyon",
+        "ShipCountry": "France",
+        "Freight": 41.34
     },
     {
-        "StudentID": 5,
-        "StudentName": "Olivia Brown",
-        "Department": "Physics",
-        "Grade": "B",
-        "Score": 84
+        "OrderID": 10252,
+        "CustomerID": "SUPRD",
+        "ShipCity": "Charleroi",
+        "ShipCountry": "Belgium",
+        "Freight": 51.3
     },
     {
-        "StudentID": 6,
-        "StudentName": "Ethan Wilson",
-        "Department": "Maths",
-        "Grade": "A",
-        "Score": 90
+        "OrderID": 10253,
+        "CustomerID": "HANAR",
+        "ShipCity": "Rio de Janeiro",
+        "ShipCountry": "Brazil",
+        "Freight": 58.17
     },
     {
-        "StudentID": 7,
-        "StudentName": "Mia Rossi",
-        "Department": "Chemistry",
-        "Grade": "B",
-        "Score": 79
+        "OrderID": 10254,
+        "CustomerID": "CHOPS",
+        "ShipCity": "Bern",
+        "ShipCountry": "Switzerland",
+        "Freight": 22.98
     },
     {
-        "StudentID": 8,
-        "StudentName": "Lucas Meyer",
-        "Department": "Biology",
-        "Grade": "C",
-        "Score": 66
+        "OrderID": 10255,
+        "CustomerID": "RICSU",
+        "ShipCity": "Geneve",
+        "ShipCountry": "Switzerland",
+        "Freight": 148.33
     }
 ];

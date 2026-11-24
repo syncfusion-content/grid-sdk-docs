@@ -1,58 +1,58 @@
 export let data: object[] = [
     {
-        "CustomerID": "ALFKI",
-        "CompanyName": "Alfreds Futterkiste",
-        "ContactName": "Maria Anders",
-        "City": "Berlin",
-        "Orders": 6
+        "OrderID": 10248,
+        "CustomerID": "VINET",
+        "ShipCity": "Reims",
+        "ShipCountry": "France",
+        "Freight": 32.38
     },
     {
-        "CustomerID": "ANATR",
-        "CompanyName": "Ana Trujillo Emparedados",
-        "ContactName": "Ana Trujillo",
-        "City": "Mexico D.F.",
-        "Orders": 4
+        "OrderID": 10249,
+        "CustomerID": "TOMSP",
+        "ShipCity": "Munster",
+        "ShipCountry": "Germany",
+        "Freight": 11.61
     },
     {
-        "CustomerID": "ANTON",
-        "CompanyName": "Antonio Moreno Taqueria",
-        "ContactName": "Antonio Moreno",
-        "City": "Mexico D.F.",
-        "Orders": 7
+        "OrderID": 10250,
+        "CustomerID": "HANAR",
+        "ShipCity": "Rio de Janeiro",
+        "ShipCountry": "Brazil",
+        "Freight": 65.83
     },
     {
-        "CustomerID": "AROUT",
-        "CompanyName": "Around the Horn",
-        "ContactName": "Thomas Hardy",
-        "City": "London",
-        "Orders": 13
+        "OrderID": 10251,
+        "CustomerID": "VICTE",
+        "ShipCity": "Lyon",
+        "ShipCountry": "France",
+        "Freight": 41.34
     },
     {
-        "CustomerID": "BERGS",
-        "CompanyName": "Berglunds snabbkop",
-        "ContactName": "Christina Berglund",
-        "City": "Lulea",
-        "Orders": 18
+        "OrderID": 10252,
+        "CustomerID": "SUPRD",
+        "ShipCity": "Charleroi",
+        "ShipCountry": "Belgium",
+        "Freight": 51.3
     },
     {
-        "CustomerID": "BLAUS",
-        "CompanyName": "Blauer See Delikatessen",
-        "ContactName": "Hanna Moos",
-        "City": "Mannheim",
-        "Orders": 7
+        "OrderID": 10253,
+        "CustomerID": "HANAR",
+        "ShipCity": "Rio de Janeiro",
+        "ShipCountry": "Brazil",
+        "Freight": 58.17
     },
     {
-        "CustomerID": "BOLID",
-        "CompanyName": "Bolido Comidas preparadas",
-        "ContactName": "Martin Sommer",
-        "City": "Madrid",
-        "Orders": 3
+        "OrderID": 10254,
+        "CustomerID": "CHOPS",
+        "ShipCity": "Bern",
+        "ShipCountry": "Switzerland",
+        "Freight": 22.98
     },
     {
-        "CustomerID": "BONAP",
-        "CompanyName": "Bon app",
-        "ContactName": "Laurence Lebihan",
-        "City": "Marseille",
-        "Orders": 17
+        "OrderID": 10255,
+        "CustomerID": "RICSU",
+        "ShipCity": "Geneve",
+        "ShipCountry": "Switzerland",
+        "Freight": 148.33
     }
 ];

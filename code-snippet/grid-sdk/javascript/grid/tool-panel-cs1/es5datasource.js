@@ -1,58 +1,58 @@
 var data = [
     {
-        "ProductID": 101,
-        "ProductName": "Chai",
-        "Category": "Beverages",
-        "UnitPrice": 18.0,
-        "Stock": 39
+        "OrderID": 10248,
+        "CustomerID": "VINET",
+        "ShipCity": "Reims",
+        "ShipCountry": "France",
+        "Freight": 32.38
     },
     {
-        "ProductID": 102,
-        "ProductName": "Chang",
-        "Category": "Beverages",
-        "UnitPrice": 19.5,
-        "Stock": 17
+        "OrderID": 10249,
+        "CustomerID": "TOMSP",
+        "ShipCity": "Munster",
+        "ShipCountry": "Germany",
+        "Freight": 11.61
     },
     {
-        "ProductID": 103,
-        "ProductName": "Aniseed Syrup",
-        "Category": "Condiments",
-        "UnitPrice": 10.0,
-        "Stock": 13
+        "OrderID": 10250,
+        "CustomerID": "HANAR",
+        "ShipCity": "Rio de Janeiro",
+        "ShipCountry": "Brazil",
+        "Freight": 65.83
     },
     {
-        "ProductID": 104,
-        "ProductName": "Tofu",
-        "Category": "Produce",
-        "UnitPrice": 23.25,
-        "Stock": 35
+        "OrderID": 10251,
+        "CustomerID": "VICTE",
+        "ShipCity": "Lyon",
+        "ShipCountry": "France",
+        "Freight": 41.34
     },
     {
-        "ProductID": 105,
-        "ProductName": "Ikura",
-        "Category": "Seafood",
-        "UnitPrice": 31.0,
-        "Stock": 31
+        "OrderID": 10252,
+        "CustomerID": "SUPRD",
+        "ShipCity": "Charleroi",
+        "ShipCountry": "Belgium",
+        "Freight": 51.3
     },
     {
-        "ProductID": 106,
-        "ProductName": "Konbu",
-        "Category": "Seafood",
-        "UnitPrice": 6.0,
-        "Stock": 24
+        "OrderID": 10253,
+        "CustomerID": "HANAR",
+        "ShipCity": "Rio de Janeiro",
+        "ShipCountry": "Brazil",
+        "Freight": 58.17
     },
     {
-        "ProductID": 107,
-        "ProductName": "Pavlova",
-        "Category": "Confections",
-        "UnitPrice": 17.45,
-        "Stock": 29
+        "OrderID": 10254,
+        "CustomerID": "CHOPS",
+        "ShipCity": "Bern",
+        "ShipCountry": "Switzerland",
+        "Freight": 22.98
     },
     {
-        "ProductID": 108,
-        "ProductName": "Sir Rodney Scones",
-        "Category": "Confections",
-        "UnitPrice": 10.0,
-        "Stock": 3
+        "OrderID": 10255,
+        "CustomerID": "RICSU",
+        "ShipCity": "Geneve",
+        "ShipCountry": "Switzerland",
+        "Freight": 148.33
     }
 ];

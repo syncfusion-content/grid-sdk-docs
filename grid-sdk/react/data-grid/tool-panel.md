@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Tool Panel in React Grid | Syncfusion
-description: Learn how to use the Tool Panel sidebar in the React Data Grid to manage columns, drag and drop column order, and filters from one place.
+description: Learn how to use the Tool Panel sidebar in the React Data Grid to manage columns, filters, record editing and custom content from one place.
 control: Tool Panel
 platform: grid-sdk
 documentation: ug
@@ -10,31 +10,59 @@ domainurl: https://help.syncfusion.com/grid-sdk
 
 # Tool Panel in React Grid
 
-The Tool Panel is a sidebar that centralizes grid operations in a single place. Dedicated panels, opened from a vertical button strip, help organize column management and filtering without leaving the grid. Panel content updates automatically with the current grid configuration.
+The Tool Panel is a sidebar that centralizes grid operations in a single place. Dedicated panels, opened from a vertical button strip, help organize column management, filtering and editing without leaving the grid. Panel content updates automatically with the current grid configuration, and only the actions that are available are shown.
 
 The built-in panels are:
 
-* **Columns** - shows or hides columns with a searchable checkbox list. When column chooser reordering is enabled, columns can be reordered by dragging the drag handle of each item.
-* **Filters** - an accordion with one item per column that has filtering enabled; each item hosts the same filter UI as the column's filter dialog.
-* **Custom** - a panel rendered from a template.
+| Panel | `type` | Purpose |
+|-------|--------|---------|
+| Columns | `Columns` | Show or hide columns and reorder them by drag and drop. |
+| Filters | `Filters` | Apply and modify filters for all filterable columns from one panel. |
+| Editing | `Edit` | Update the selected records, including bulk editing of several rows. |
+| Custom | `Custom` | Render application-specific content from a template. |
 
-## Enable the Tool Panel
+## Side bar
 
-To enable the Tool Panel:
+The side bar hosts the tool panels. Enable it by setting the `enableToolPanel` property to `true`, and configure it with the `toolPanelSettings` property.
 
-* Set the `enableToolPanel` property to `true`.
-* Configure the panels using the `toolPanelSettings.toolPanels` property. Each panel needs a unique `id` and a `type` (`Columns`, `Filters` or `Custom`).
-* Inject the `Filter`, `Reorder`, `ColumnChooser` and `SideBar` modules into the Grid using the `Inject` component.
+> Inject the required modules into the Grid using the `Inject` component. Each panel also needs its feature module: `ColumnChooser` for Columns, `Filter` for Filters, and `Edit` and `Selection` for Editing.
 
-The `toolPanelSettings` property also controls the sidebar `position` (`Left` or `Right`), whether it is initially open (`isOpen`), and which panel is shown first (`defaultToolPanel`).
+### Configure the side bar
 
-> The Filters panel requires `allowFiltering` to be `true`, and the Columns panel requires the `ColumnChooser` module.
+| Property (`toolPanelSettings`) | Description |
+|----------|-------------|
+| `toolPanels` | Collection of panels shown in the side bar. Each panel needs a unique `id` and a `type`. |
+| `defaultToolPanel` | The `id` of the panel that is selected when the side bar is opened. |
+| `isOpen` | Specifies whether the side bar is open when the grid is initially rendered. |
+| `hiddenByDefault` | Specifies whether the side bar is hidden when the grid is initially rendered. |
+| `position` | Position of the side bar: `Left` or `Right`. |
+| `type` | Display mode of the side bar. |
+| `width` | Width of the side bar. |
 
-## Reorder columns by drag and drop in the Columns panel
+Each item of `toolPanels` supports the following properties:
 
-Set `columnChooserSettings.allowReordering` to `true` together with `allowReordering` on the Grid and the `Reorder` module to show a drag handle beside each column in the Columns panel. Dragging an item moves the column in the Grid header. The reorder follows the same rules as header reordering, so columns with `allowReordering` set to `false` or locked columns cannot be moved. The setting is ignored when a column chooser `template` is used.
+| Property | Description |
+|----------|-------------|
+| `id` | Unique identifier of the panel. |
+| `type` | Panel type: `Columns`, `Filters`, `Edit` or `Custom`. |
+| `headerText` | Text displayed as the panel header. |
+| `iconCss` | CSS class of the icon displayed on the side bar button. |
+| `tooltip` | Tooltip shown for the side bar button. |
+| `template` | Content of a `Custom` panel. |
+| `visible` | Specifies whether the panel button is shown. |
+| `columns` | Columns the panel works with. |
 
-In the following sample, the Columns and Filters panels are enabled and column chooser reordering is turned on.
+The panel body is created lazily, when the panel is opened for the first time. The side bar raises the `toolPanelCreated`, `toolPanelOpen`, `toolPanelOpened`, `toolPanelClose` and `toolPanelClosed` events; `toolPanelOpen` and `toolPanelClose` can be canceled.
+
+## Columns panel
+
+The Columns panel lists the grid columns with checkboxes and a search box, so columns can be shown or hidden directly from the side bar.
+
+### Reorder columns by drag and drop
+
+Set `columnChooserSettings.allowReordering` to `true`, together with `allowReordering` on the Grid and the `Reorder` module, to show a drag handle beside each column. Dragging an item moves the column in the Grid header, following the same rules as header reordering: columns with `allowReordering` set to `false`, locked columns and columns outside the frozen boundary cannot be moved. The setting is ignored when a column chooser `template` is used.
+
+The following sample enables the Columns and Filters panels with drag-and-drop column reordering.
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
@@ -52,6 +80,61 @@ In the following sample, the Columns and Filters panels are enabled and column c
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/grid/tool-panel-cs1" %}
+
+## Filters panel
+
+The Filters panel shows an accordion with one item for each column that has filtering enabled. Expanding an item displays the same filter UI as the column's filter dialog (`Menu`, `CheckBox` or `Excel`, based on the filter type configured for the column), so filters can be viewed, applied and cleared from a single place without opening individual column filter menus.
+
+To use the panel, set `allowFiltering` to `true`, add a panel of type `Filters` and inject the `Filter` module. The first sample on this page shows the Filters panel.
+
+## Editing panel
+
+The Editing panel is a dedicated workspace for updating the selected records. It is designed for bulk editing: changes made in the panel are applied to every selected row instead of editing rows or cells one by one.
+
+* The panel shows editable fields for the selected rows, using the editors defined by each column, including custom editors.
+* When one row is selected, its values are displayed. When several rows are selected, the editors are empty, and the value you enter is applied to all of them.
+* There are no Save or Cancel buttons. A field is validated when its editor changes, using the column `validationRules`, and the valid value is applied immediately.
+* The panel is rendered again when the selection changes.
+
+To use the panel, set `editSettings.allowEditing` to `true`, define a primary key column, add a panel of type `Edit` and inject the `Edit` and `Selection` modules. Set `selectionSettings.type` to `Multiple` to edit several rows together.
+
+{% tabs %}
+{% highlight js tabtitle="App.jsx" %}
+{% include code-snippet/grid-sdk/react/grid/tool-panel-cs2/app/App.jsx %}
+{% endhighlight %}
+{% highlight ts tabtitle="App.tsx" %}
+{% include code-snippet/grid-sdk/react/grid/tool-panel-cs2/app/App.tsx %}
+{% endhighlight %}
+{% highlight js tabtitle="datasource.jsx" %}
+{% include code-snippet/grid-sdk/react/grid/tool-panel-cs2/app/datasource.jsx %}
+{% endhighlight %}
+{% highlight ts tabtitle="datasource.tsx" %}
+{% include code-snippet/grid-sdk/react/grid/tool-panel-cs2/app/datasource.tsx %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/grid/tool-panel-cs2" %}
+
+## Custom panel
+
+A custom panel integrates application-specific content into the side bar, for example additional information, custom actions or workflows beyond the built-in Columns, Filters and Editing panels. Add a panel with `type` set to `Custom` and provide its content through the `template` property, along with the `headerText` and `iconCss` used on the side bar button.
+
+{% tabs %}
+{% highlight js tabtitle="App.jsx" %}
+{% include code-snippet/grid-sdk/react/grid/tool-panel-cs3/app/App.jsx %}
+{% endhighlight %}
+{% highlight ts tabtitle="App.tsx" %}
+{% include code-snippet/grid-sdk/react/grid/tool-panel-cs3/app/App.tsx %}
+{% endhighlight %}
+{% highlight js tabtitle="datasource.jsx" %}
+{% include code-snippet/grid-sdk/react/grid/tool-panel-cs3/app/datasource.jsx %}
+{% endhighlight %}
+{% highlight ts tabtitle="datasource.tsx" %}
+{% include code-snippet/grid-sdk/react/grid/tool-panel-cs3/app/datasource.tsx %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/grid/tool-panel-cs3" %}
 
 ## Related API
 

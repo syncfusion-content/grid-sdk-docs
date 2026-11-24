@@ -1,29 +1,29 @@
 public IActionResult Index()
 {
-    ViewBag.dataSource = Book.GetAllRecords();
+    ViewBag.dataSource = OrderData.GetAllRecords();
     return View();
 }
 
-public class Book
+public class OrderData
 {
-    public int BookID { get; set; }
-    public string Title { get; set; }
-    public string Author { get; set; }
-    public string Genre { get; set; }
-    public double Price { get; set; }
+    public int OrderID { get; set; }
+    public string CustomerID { get; set; }
+    public string ShipCity { get; set; }
+    public string ShipCountry { get; set; }
+    public double Freight { get; set; }
 
-    public static List<Book> GetAllRecords()
+    public static List<OrderData> GetAllRecords()
     {
-        return new List<Book>()
+        return new List<OrderData>()
         {
-            new Book() { BookID = 1, Title = "Dune", Author = "Frank Herbert", Genre = "Sci-Fi", Price = 15.99 },
-            new Book() { BookID = 2, Title = "Emma", Author = "Jane Austen", Genre = "Classic", Price = 9.5 },
-            new Book() { BookID = 3, Title = "1984", Author = "George Orwell", Genre = "Dystopia", Price = 12.0 },
-            new Book() { BookID = 4, Title = "The Hobbit", Author = "J.R.R. Tolkien", Genre = "Fantasy", Price = 14.25 },
-            new Book() { BookID = 5, Title = "Sapiens", Author = "Yuval Harari", Genre = "History", Price = 18.0 },
-            new Book() { BookID = 6, Title = "Gone Girl", Author = "Gillian Flynn", Genre = "Thriller", Price = 13.4 },
-            new Book() { BookID = 7, Title = "Educated", Author = "Tara Westover", Genre = "Memoir", Price = 16.0 },
-            new Book() { BookID = 8, Title = "Neuromancer", Author = "William Gibson", Genre = "Sci-Fi", Price = 11.75 },
+            new OrderData() { OrderID = 10248, CustomerID = "VINET", ShipCity = "Reims", ShipCountry = "France", Freight = 32.38 },
+            new OrderData() { OrderID = 10249, CustomerID = "TOMSP", ShipCity = "Munster", ShipCountry = "Germany", Freight = 11.61 },
+            new OrderData() { OrderID = 10250, CustomerID = "HANAR", ShipCity = "Rio de Janeiro", ShipCountry = "Brazil", Freight = 65.83 },
+            new OrderData() { OrderID = 10251, CustomerID = "VICTE", ShipCity = "Lyon", ShipCountry = "France", Freight = 41.34 },
+            new OrderData() { OrderID = 10252, CustomerID = "SUPRD", ShipCity = "Charleroi", ShipCountry = "Belgium", Freight = 51.3 },
+            new OrderData() { OrderID = 10253, CustomerID = "HANAR", ShipCity = "Rio de Janeiro", ShipCountry = "Brazil", Freight = 58.17 },
+            new OrderData() { OrderID = 10254, CustomerID = "CHOPS", ShipCity = "Bern", ShipCountry = "Switzerland", Freight = 22.98 },
+            new OrderData() { OrderID = 10255, CustomerID = "RICSU", ShipCity = "Geneve", ShipCountry = "Switzerland", Freight = 148.33 },
         };
     }
 }

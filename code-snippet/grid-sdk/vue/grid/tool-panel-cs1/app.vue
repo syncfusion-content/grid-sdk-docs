@@ -1,13 +1,12 @@
 <template>
   <div id="app">
-    <ejs-grid :dataSource='data' height='320px' :allowFiltering='true' :allowReordering='true' :enableToolPanel='true'
-      :toolPanelSettings='toolPanelSettings' :columnChooserSettings='columnChooserSettings'>
+    <ejs-grid :dataSource='data' height='320px' :enableToolPanel='true' :toolPanelSettings='toolPanelSettings' :allowFiltering='true' :allowReordering='true' :columnChooserSettings='columnChooserSettings'>
       <e-columns>
-        <e-column field='MovieID' headerText='Movie ID' width='110' textAlign="Right"></e-column>
-        <e-column field='Title' headerText='Title' width='140'></e-column>
-        <e-column field='Genre' headerText='Genre' width='140'></e-column>
-        <e-column field='Year' headerText='Year' width='140' textAlign="Right"></e-column>
-        <e-column field='Rating' headerText='Rating' width='140' textAlign="Right"></e-column>
+        <e-column field='OrderID' headerText='Order ID' width='140' textAlign='Right'></e-column>
+        <e-column field='CustomerID' headerText='Customer ID' width='140'></e-column>
+        <e-column field='ShipCity' headerText='Ship City' width='140'></e-column>
+        <e-column field='ShipCountry' headerText='Ship Country' width='140'></e-column>
+        <e-column field='Freight' headerText='Freight' width='140' textAlign='Right' format='C2'></e-column>
       </e-columns>
     </ejs-grid>
   </div>
@@ -26,16 +25,24 @@ export default {
   data() {
     return {
       data: data,
-      toolPanelSettings: {
-        position: 'Left',
-        isOpen: true,
-        defaultToolPanel: 'columns',
-        toolPanels: [
-          { id: 'columns', type: 'Columns', headerText: 'Columns' },
-          { id: 'filters', type: 'Filters', headerText: 'Filters' }
-        ]
-      },
-      columnChooserSettings: { allowReordering: true }
+      columnChooserSettings: { allowReordering: true },
+toolPanelSettings: {
+          position: 'Right',
+          isOpen: true,
+          defaultToolPanel: 'columns',
+          toolPanels: [
+              {
+                  id: 'columns',
+                  type: 'Columns',
+                  headerText: 'Columns'
+              },
+              {
+                  id: 'filters',
+                  type: 'Filters',
+                  headerText: 'Filters'
+              }
+          ]
+      }
     };
   },
   provide: {
