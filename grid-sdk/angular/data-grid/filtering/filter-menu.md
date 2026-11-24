@@ -131,7 +131,7 @@ Filter operators are comparison methods that determine the match between the fil
 - `equals`: Exact match
 - `contains`: Partial match (substring search)
 - `startswith`: Matches beginning of value
-- `greater than`: Numeric/date comparison
+- `greaterthan`: Numeric/date comparison
 
 The Grid enables customizing the default filter operator list using the [filterSettings.operators](https://ej2.syncfusion.com/angular/documentation/api/grid/filterSettings#operators) property. This feature defines custom sets of operators available in the filter menu, allowing restriction or simplification of filtering methods for specific columns.
 
