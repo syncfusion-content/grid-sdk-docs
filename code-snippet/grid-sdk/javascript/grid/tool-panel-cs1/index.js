@@ -5,7 +5,6 @@ var grid = new ej.grids.Grid({
     enableToolPanel: true,
     toolPanelSettings: {
         position: 'Right',
-        type: 'Push',
         width: 300,
         toolPanels: [
             'Columns',

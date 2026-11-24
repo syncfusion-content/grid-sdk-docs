@@ -9,7 +9,6 @@ let grid: Grid = new Grid({
     enableToolPanel: true,
     toolPanelSettings: {
         position: 'Right',
-        type: 'Push',
         width: 300,
         toolPanels: [
             'Edit',

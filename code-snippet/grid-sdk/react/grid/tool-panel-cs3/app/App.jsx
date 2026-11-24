@@ -5,7 +5,6 @@ import { data } from './datasource';
 function App() {
     const toolPanelSettings = {
         position: 'Left',
-        type: 'Over',
         width: 300,
         toolPanels: [
             'Columns',

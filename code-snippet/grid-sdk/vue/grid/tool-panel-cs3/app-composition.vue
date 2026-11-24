@@ -18,7 +18,6 @@ import { data } from './datasource.js';
 
 const toolPanelSettings = {
     position: 'Left',
-    type: 'Over',
     width: 300,
     toolPanels: [
         'Columns',

@@ -31,15 +31,8 @@ Each item in `toolPanels` is either the panel type name (for example `'Columns'`
 |----------|-------------|
 | `toolPanels` | Panels shown in the side bar, in order. |
 | `position` | Side bar position: `Left` or `Right`. |
-| `type` | How the side bar opens: `Push` or `Over`. See [Side bar type](#side-bar-type). |
+| `type` | How the side bar opens. `Push` opens the side bar beside the Grid and shrinks the Grid content; `Over` opens it on top of the Grid content without resizing it. |
 | `width` | Width of the side bar in pixels. |
-
-### Side bar type
-
-* `Push` - the side bar opens beside the Grid and the Grid content shrinks to make room.
-* `Over` - the side bar opens on top of the Grid content without resizing the Grid.
-
-Use `width` to set the side bar width. In the samples on this page the first two use `Push` and the Custom panel sample uses `Over`, all with a `width` of `300`.
 
 ## Columns and Filters panel
 

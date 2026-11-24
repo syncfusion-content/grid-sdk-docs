@@ -27,7 +27,6 @@ export default {
       data: data,
       toolPanelSettings: {
           position: 'Left',
-          type: 'Over',
           width: 300,
           toolPanels: [
               'Columns',

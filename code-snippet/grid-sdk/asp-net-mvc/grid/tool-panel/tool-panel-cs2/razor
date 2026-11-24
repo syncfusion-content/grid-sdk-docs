@@ -5,7 +5,7 @@
   col.Field("Title").HeaderText("Title").Width("140").Add();
   col.Field("Country").HeaderText("Country").Width("140").Add();
   col.Field("Salary").HeaderText("Salary").Width("140").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Format("C0").Add();
-}).ToolPanelSettings(tp => tp.Position("Right").Type("Push").Width("300").ToolPanels(panels =>
+}).ToolPanelSettings(tp => tp.Position("Right").Width("300").ToolPanels(panels =>
 {
   panels.Type("Edit").Add();
   panels.Type("Columns").Add();

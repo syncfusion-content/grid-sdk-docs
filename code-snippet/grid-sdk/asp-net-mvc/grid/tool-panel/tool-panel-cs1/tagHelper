@@ -6,7 +6,7 @@
         <e-grid-column field="ShipCountry" headerText="Ship Country" width="140"></e-grid-column>
         <e-grid-column field="Freight" headerText="Freight" width="140" textAlign="Right" format="C2"></e-grid-column>
     </e-grid-columns>
-    <e-grid-toolpanelsettings position="Right" type="Push" width="300">
+    <e-grid-toolpanelsettings position="Right" width="300">
         <e-toolpanels>
             <e-toolpanel type="Columns"></e-toolpanel>
             <e-toolpanel type="Filters"></e-toolpanel>

@@ -18,7 +18,6 @@ import { data } from './datasource.js';
 
 const toolPanelSettings = {
     position: 'Right',
-    type: 'Push',
     width: 300,
     toolPanels: [
         'Edit',

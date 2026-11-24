@@ -9,7 +9,6 @@ let grid: Grid = new Grid({
     enableToolPanel: true,
     toolPanelSettings: {
         position: 'Left',
-        type: 'Over',
         width: 300,
         toolPanels: [
             'Columns',
