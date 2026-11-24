@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Undo Redo Editing in ASP.NET MVC Grid | Syncfusion
-description: Learn how to undo and redo edit actions in the Syncfusion ASP.NET MVC Grid using toolbar items and keyboard shortcuts, and how to use batch undo redo and the undo redo limit.
+description: Learn how to undo and redo edit actions in Syncfusion ASP.NET MVC Grid using toolbar items, keyboard shortcuts, and batch undo redo.
 platform: grid-sdk
 control: Undo Redo Editing
 documentation: ug
