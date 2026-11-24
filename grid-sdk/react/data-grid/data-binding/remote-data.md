@@ -18,10 +18,10 @@ Additionally, leverage the power for data retrieval and operations, enhancing ev
 
 The custom binding feature in the React Grid enables managing a custom API for handling data processing externally and then binding the resulting data to the Grid.This allows implementing custom data logic tailored to the application's requirements. When using custom binding, the Grid expects the result of the custom logic to be an object with properties `result` and `count`.
 
-- `result` -  This property should contain the array of records that will be displayed in the Grid. 
+- `result` -  This property should contain the array of records that will be displayed in the Grid.  
 - `count` - This property should indicate the total number of records available in the entire dataset.
 
-To utilize custom binding, the application can handle the [DataManager](https://ej2.syncfusion.com/react/documentation/data/getting-started). The DataManager integrates seamlessly with the React Grid to manage custom data processing and binding. 
+To utilize custom binding, the application can handle the [DataManager](https://ej2.syncfusion.com/react/documentation/data/getting-started). The DataManager integrates seamlessly with the React Grid to manage custom data processing and binding.
 
 The [React Data Grid](https://www.syncfusion.com/react-components/react-data-grid) component offers a range of powerful features for handling grid actions such as **paging**, **grouping**, **sorting** and **filtering**. These actions trigger the [dataStateChange](https://ej2.syncfusion.com/react/documentation/api/grid/index-default#datastatechange) event. The feature for CRUD action such as **Create**, **Read**, **Update**, **Delete** operations. This action trigger the [dataSourceChanged](https://ej2.syncfusion.com/react/documentation/api/grid/index-default#datasourcechanged) event. This event provides the opportunity to manage and manipulate data according to the individual's interactions.
 
@@ -791,6 +791,39 @@ The following example demonstrates the process of sending additional parameters 
 {% endtabs %}
 
 ![AdditionalParameters](../images/additional-parameter.png)
+
+## Custom binding with caching
+
+The React Data Grid provides the [enableCache](https://ej2.syncfusion.com/react/documentation/api/grid/infiniteScrollSettings#enablecache) option for custom data binding. When enabled, the data retrieved from the server is stored on the client and reused for subsequent data operations whenever possible. This reduces redundant data requests, improves responsiveness and enhances performance with large datasets.
+
+The custom binding cache works with infinite scrolling, minimizing unnecessary server requests while keeping navigation smooth. The `dataStateChange` event is triggered only when the requested data is not already available in the cache.
+
+{% tabs %}
+{% highlight js tabtitle="App.jsx" %}
+{% include code-snippet/grid-sdk/react/grid/custom-binding-cache-cs1/app/App.jsx %}
+{% endhighlight %}
+{% highlight ts tabtitle="App.tsx" %}
+{% include code-snippet/grid-sdk/react/grid/custom-binding-cache-cs1/app/App.tsx %}
+{% endhighlight %}
+{% highlight js tabtitle="Reducer.jsx" %}
+{% include code-snippet/grid-sdk/react/grid/custom-binding-cache-cs1/app/reducer/reducer.jsx %}
+{% endhighlight %}
+{% highlight ts tabtitle="Reducer.tsx" %}
+{% include code-snippet/grid-sdk/react/grid/custom-binding-cache-cs1/app/reducer/reducer.tsx %}
+{% endhighlight %}
+{% highlight js tabtitle="Action.jsx" %}
+{% include code-snippet/grid-sdk/react/grid/custom-binding-cache-cs1/app/reducer/action.jsx %}
+{% endhighlight %}
+{% highlight ts tabtitle="Action.tsx" %}
+{% include code-snippet/grid-sdk/react/grid/custom-binding-cache-cs1/app/reducer/action.tsx %}
+{% endhighlight %}
+{% highlight js tabtitle="datasource.jsx" %}
+{% include code-snippet/grid-sdk/react/grid/custom-binding-cache-cs1/app/datasource.jsx %}
+{% endhighlight %}
+{% highlight ts tabtitle="datasource.tsx" %}
+{% include code-snippet/grid-sdk/react/grid/custom-binding-cache-cs1/app/datasource.tsx %}
+{% endhighlight %}
+{% endtabs %}
 
 ## Offline mode
 

@@ -18,7 +18,7 @@ Additionally, leverage the power for data retrieval and operations, enhancing ev
 
 The custom binding feature in the JavaScript Grid enables you to manage your own custom API for handling data processing externally and then binding the resulting data to the Grid. This allows you to implement your own custom data logic to your application's requirements. When using custom binding, the Grid expects the result of the custom logic to be an object with properties `result` and `count`. The `result` property should contain the data to be displayed in the Grid, while the `count` property indicates the total number of records in the dataset for your application. To utilize custom binding, you can handle the  [DataManager](../../data). The DataManager integrates seamlessly with the JavaScript Grid to manage custom data processing and binding. 
 
-The Syncfusion<sup style="font-size:70%">&reg;</sup> Grid component offers a range of powerful features for handling grid actions such as **paging**, **grouping**, **sorting** and **filtering**. These actions trigger the [dataStateChange](../../api/grid#datastatechange) event. The feature for CRUD action such as **Create**, **Read**, **Update**, **Delete** operations. This action trigger the [dataSourceChanged](../../api/grid#datasourcechanged) event. This event provides you with the opportunity to manage and manipulate data according to the individual's interactions. 
+The Syncfusion<sup style="font-size:70%">&reg;</sup> Grid component offers a range of powerful features for handling grid actions such as **paging**, **grouping**, **sorting** and **filtering**. These actions trigger the [dataStateChange](../../api/grid#datastatechange) event. The feature for CRUD action such as **Create**, **Read**, **Update**, **Delete** operations. This action trigger the [dataSourceChanged](../../api/grid#datasourcechanged) event. This event provides you with the opportunity to manage and manipulate data according to the individual's interactions.
 
 **Using the dataStateChange event**
 
@@ -813,6 +813,30 @@ The following example demonstrates how to send additional parameters to the serv
   {% endtabs %}
 
 ![AdditionalParameters](../images/databining/remote-additional-params.png)
+
+## Custom binding with caching
+
+The JavaScript Data Grid provides the [enableCache](https://ej2.syncfusion.com/javascript/documentation/api/grid/infiniteScrollSettings#enablecache) option for custom data binding. When enabled, the data retrieved from the server is stored on the client and reused for subsequent data operations whenever possible. This reduces redundant data requests, improves responsiveness and enhances performance with large datasets.
+
+The custom binding cache works with infinite scrolling, minimizing unnecessary server requests while keeping navigation smooth. The `dataStateChange` event is triggered only when the requested data is not already available in the cache.
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/grid-sdk/javascript/grid/remote-custom-binding-cache/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/grid-sdk/javascript/grid/remote-custom-binding-cache/index.html %}
+{% endhighlight %}
+{% highlight js tabtitle="server.js" %}
+{% include code-snippet/grid-sdk/javascript/grid/remote-custom-binding-cache/server.js %}
+{% endhighlight %}
+{% highlight js tabtitle="orderService.js" %}
+{% include code-snippet/grid-sdk/javascript/grid/remote-custom-binding-cache/orderService.js %}
+{% endhighlight %}
+{% highlight js tabtitle="datasource.js" %}
+{% include code-snippet/grid-sdk/javascript/grid/remote-custom-binding-cache/datasource.js %}
+{% endhighlight %}
+{% endtabs %}
 
 ## Offline mode
 
