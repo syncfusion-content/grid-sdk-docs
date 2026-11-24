@@ -33,8 +33,8 @@ End users can perform calculations on groups of values (specifically for value f
 | SampleVar| Displays the sample variance for the selected field.|
 | RunningTotals| Displays the running total for the selected field values.|
 | PercentageOfRunningTotals| Cumulative percentage of running totals (client-side engine only).|
-| DifferenceFrom| Displays the pivot table values with difference from the value of the base item in the base field.|
-| PercentageOfDifferenceFrom| Displays the pivot table values with percentage difference from the value of the base item in the base field.|
+| DifferenceFrom| Displays the difference relative to a specific base item or adjacent member (`'(previous)'` / `'(next)'`) in the base field. Configured using `BaseField`, `BaseItem`, and optionally `AllowCrossGroupCalculation`.|
+| PercentageOfDifferenceFrom| Displays the percentage difference relative to a specific base item or adjacent member (`'(previous)'` / `'(next)'`) in the base field. Configured using `BaseField`, `BaseItem`, and optionally `AllowCrossGroupCalculation`.|
 | PercentageOfGrandTotal| Displays the pivot table values with percentage of grand total of all values.|
 | PercentageOfColumnTotal| Displays the pivot table values in each column with percentage of total values for the column.|
 | PercentageOfRowTotal| Displays the pivot table values in each row with percentage of total values for the row.|

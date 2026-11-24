@@ -45,9 +45,9 @@ End users can perform calculations on groups of values (specifically for value f
 
 ## Assigning aggregation type for value fields through API
 
-For each value field, the aggregation type can be set using the property [`type`](https://ej2.syncfusion.com/documentation/api/pivotview/datasourcesettings#type) in [`values`](https://ej2.syncfusion.com/documentation/api/pivotview/dataSourceSettings#values). Meanwhile, aggregation types like **DifferenceFrom** and **PercentageOfDifferenceFrom** can check for specific field of specific item using [`baseField`](https://ej2.syncfusion.com/documentation/api/pivotview/fieldoptionsmodel#basefield) and [`baseItem`](https://ej2.syncfusion.com/documentation/api/pivotview/fieldoptionsmodel#baseitem) properties. Likewise, **PercentageOfParentTotal** type can for specific field using [`baseField`](https://ej2.syncfusion.com/documentation/api/pivotview/fieldoptionsmodel#basefield) property. For instance, the aggregation type **DifferenceFrom** would intake the specified field and its corresponding member as input and its value is compared across other members in the same field and also across different fields to formulate an appropriate output value.
+For each value field, the aggregation type can be set using the property [`type`](https://ej2.syncfusion.com/documentation/api/pivotview/fieldoptionsmodel#type) in [`values`](https://ej2.syncfusion.com/documentation/api/pivotview/dataSourceSettings#values). Meanwhile, aggregation types like **DifferenceFrom** and **PercentageOfDifferenceFrom** can check for specific field of specific item using [`baseField`](https://ej2.syncfusion.com/documentation/api/pivotview/fieldoptionsmodel#basefield) and [`baseItem`](https://ej2.syncfusion.com/documentation/api/pivotview/fieldoptionsmodel#baseitem) properties. Likewise, **PercentageOfParentTotal** type can for specific field using [`baseField`](https://ej2.syncfusion.com/documentation/api/pivotview/fieldoptionsmodel#basefield) property. For instance, the aggregation type **DifferenceFrom** would intake the specified field and its corresponding member as input and its value is compared across other members in the same field and also across different fields to formulate an appropriate output value.
 
-* [`type`](https://ej2.syncfusion.com/documentation/api/pivotview/datasourcesettings#type): It allows to set the aggregate type of the field.
+* [`type`](https://ej2.syncfusion.com/documentation/api/pivotview/fieldoptionsmodel#type): It allows to set the aggregate type of the field.
 * [`baseField`](https://ej2.syncfusion.com/documentation/api/pivotview/fieldoptionsmodel#basefield): It allows to set the specific field to aggregate the values.
 * [`baseItem`](https://ej2.syncfusion.com/documentation/api/pivotview/fieldoptionsmodel#baseitem): It allows to set the specific member to aggregate the values.
 
@@ -133,7 +133,7 @@ The Pivot Table component supports adding the same field to the [`values`](https
 
 Each instance is treated as a separate configuration and maintains its own:
 
-* Aggregation type ([`type`](https://ej2.syncfusion.com/documentation/api/pivotview/datasourcesettings#type))
+* Aggregation type ([`type`](https://ej2.syncfusion.com/documentation/api/pivotview/fieldoptionsmodel#type))
 * Display caption ([`caption`](https://ej2.syncfusion.com/documentation/api/pivotview/fieldoptionsmodel#caption))
 * Number format (resolved independently in the number formatting dialog)
 * Base field ([`baseField`](https://ej2.syncfusion.com/documentation/api/pivotview/fieldoptionsmodel#basefield))
