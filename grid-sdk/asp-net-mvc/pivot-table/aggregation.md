@@ -14,7 +14,7 @@ documentation: ug
 
 End users can perform calculations on groups of values (specifically for value fields placed in the value axis) by using different aggregation types. By default, values are combined by summing them. Additional aggregation types are described below.
 
-> Numeric fields support all aggregation types listed below, except **CalculatedField**. Fields of type string, date, datetime, boolean, and similar types support only [**SummaryTypes.Count**](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.SummaryTypes.html) and **DistinctCount** aggregation.
+> Numeric fields support all aggregation types listed below, except **CalculatedField**. Date and datetime fields support **Min**, **Max**, **Count**, and **DistinctCount** aggregation. Fields of type string, boolean, and similar types support only [**SummaryTypes.Count**](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.SummaryTypes.html) and **DistinctCount** aggregation.
 
 | Operator | Description |
 |------|-------------|
@@ -22,8 +22,8 @@ End users can perform calculations on groups of values (specifically for value f
 | Product| Displays the product of the selected field values.|
 | Count| Displays the number of records for the selected field.|
 | DistinctCount| Displays the number of unique records for the selected field.|
-| Min| Displays the minimum value for the selected field.|
-| Max| Displays the maximum value for the selected field.|
+| Min| Displays the minimum value for the selected field. For date or datetime fields, displays the earliest date or datetime value.|
+| Max| Displays the maximum value for the selected field. For date or datetime fields, displays the latest date or datetime value.|
 | Avg| Displays the average (mean) of the selected field values.|
 | Median| Displays the median value for the selected field.|
 | Index| Displays the index value for the selected field data.|
