@@ -93,6 +93,25 @@ The following example demonstrates infinite scrolling with an unknown record cou
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/grid/virtualscroll/infinite-scroll-countless" %}
 
+## Infinite scrolling with unknown record count
+
+Infinite scrolling requires a total record count to determine the number of data blocks to request. When the server does not return the total record count, the grid continues requesting data blocks as the user scrolls until no more records are available.
+
+To enable this behavior, set the `infiniteScrollSettings.enableCountLessMode` property to `true`. This is useful when working with data services that do not provide a total record count.
+
+The following example demonstrates infinite scrolling with an unknown record count using a `DataManager` with `UrlAdaptor` and the `enableCountLessMode` property:
+
+{% tabs %}
+{% highlight html tabtitle="Composition API (~/src/App.vue)" %}
+{% include code-snippet/grid-sdk/vue/grid/virtualscroll/infinite-scroll-countless/app-composition.vue %}
+{% endhighlight %}
+{% highlight html tabtitle="Options API (~/src/App.vue)" %}
+{% include code-snippet/grid-sdk/vue/grid/virtualscroll/infinite-scroll-countless/app.vue %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/grid/virtualscroll/infinite-scroll-countless" %}
+
 ## Limitations
 
 * Due to the element height limitation in browsers, the maximum number of records loaded by the grid is limited due to the browser capability.
