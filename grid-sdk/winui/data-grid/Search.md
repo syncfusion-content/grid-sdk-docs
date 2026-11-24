@@ -210,7 +210,7 @@ Master-details view allows you to search the data by using `SearchHelper.Search`
 {% highlight c# %}
 
 (this.sfDataGrid.DetailsViewDefinition[0] as GridViewDefinition).DataGrid.SearchHelper.AllowSearching = true;
-(this.sfDataGrid.DetailsViewDefinition[0] as GridViewDefinition).DataGrid.SearchHelper.Search(TextBox.Text);
+(this.sfDataGrid.DetailsViewDefinition[0] as GridViewDefinition).DataGrid.SearchHelper.Search(searchTextBox.Text);
 
 {% endhighlight %}
 {% endtabs %}
@@ -227,13 +227,13 @@ You can navigate to the cells contains the SearchText using `SearchHelper.FindNe
 {% highlight c# %}
 
 (this.sfDataGrid.DetailsViewDefinition[0] as GridViewDefinition).DataGrid.SearchHelper.AllowSearching = true;
-(this.sfDataGrid.DetailsViewDefinition[0] as GridViewDefinition).DataGrid.SearchHelper.FindNext(SearchBox.Text);
-(this.sfDataGrid.DetailsViewDefinition[0] as GridViewDefinition).DataGrid.SearchHelper.FindPrevious(SearchBox.Text);
+(this.sfDataGrid.DetailsViewDefinition[0] as GridViewDefinition).DataGrid.SearchHelper.FindNext(searchTextBox.Text);
+(this.sfDataGrid.DetailsViewDefinition[0] as GridViewDefinition).DataGrid.SearchHelper.FindPrevious(searchTextBox.Text);
 
 {% endhighlight %}
 {% endtabs %}
 
-N> It is not possible to Navigate with the two DataGrid at a time.
+N> It is not possible to navigate two DataGrid controls at the same time.
 
 ## Search customization
 
@@ -254,7 +254,7 @@ public class SearchHelperExt : SearchHelper
 
 ### Select the record based on the SearchText
 
-You can select the records which contains the search text by using `GetSearchedRecord` method. 
+You can select the records that contain the search text by using the `GetSearchRecords` method.
 
 {% tabs %}
 {% highlight c# %}
@@ -324,19 +324,19 @@ public class ComboBoxRendererExt : GridVirtualizingCellRenderer<TextBlock, SfCom
             
         };
 
-        uiElement.SetBinding(ComboBox.SelectedValueProperty, bind);
+        uiElement.SetBinding(SfComboBox.SelectedValueProperty, bind);
 
         // Binding the ItemSource to the GridComboBox.
         var itemsSourceBinding = new Binding { Path = new PropertyPath("ItemsSource"), Mode = BindingMode.TwoWay, Source = comboBoxColumn };
-        uiElement.SetBinding(ComboBox.ItemsSourceProperty, itemsSourceBinding);
+        uiElement.SetBinding(SfComboBox.ItemsSourceProperty, itemsSourceBinding);
         var displayMemberBinding = new Binding { Path = new PropertyPath("DisplayMemberPath"), Mode = BindingMode.TwoWay, Source = comboBoxColumn };
-        uiElement.SetBinding(ComboBox.DisplayMemberPathProperty, displayMemberBinding);
+        uiElement.SetBinding(SfComboBox.DisplayMemberPathProperty, displayMemberBinding);
         var selectedValuePathBinding = new Binding { Path = new PropertyPath("SelectedValuePath"), Mode = BindingMode.TwoWay, Source = comboBoxColumn };
-        uiElement.SetBinding(ComboBox.SelectedValuePathProperty, selectedValuePathBinding);
+        uiElement.SetBinding(SfComboBox.SelectedValuePathProperty, selectedValuePathBinding);
         var isEditableBinding = new Binding { Path = new PropertyPath("IsEditable"), Mode = BindingMode.TwoWay, Source = comboBoxColumn };
-        uiElement.SetBinding(ComboBox.IsEditableProperty, isEditableBinding);
+        uiElement.SetBinding(SfComboBox.IsEditableProperty, isEditableBinding);
         var itemTemplateBinding = new Binding { Path = new PropertyPath("ItemTemplate"), Mode = BindingMode.TwoWay, Source = comboBoxColumn };
-        uiElement.SetBinding(ComboBox.ItemTemplateProperty, itemTemplateBinding);
+        uiElement.SetBinding(SfComboBox.ItemTemplateProperty, itemTemplateBinding);
     }
 
     // This will be invoke when the editing is triggered.
