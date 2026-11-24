@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <ejs-grid :dataSource='data' height='320px' :enableToolPanel='true' :toolPanelSettings='toolPanelSettings' :allowFiltering='true' :allowReordering='true' :columnChooserSettings='columnChooserSettings'>
+    <ejs-grid :dataSource='data' height='320px' :enableToolPanel='true' :toolPanelSettings='toolPanelSettings' :allowFiltering='true' :allowGrouping='true' :allowReordering='true' :columnChooserSettings='columnChooserSettings'>
       <e-columns>
         <e-column field='OrderID' headerText='Order ID' width='140' textAlign='Right'></e-column>
         <e-column field='CustomerID' headerText='Customer ID' width='140'></e-column>
@@ -13,26 +13,17 @@
 </template>
 <script setup>
 import { provide } from "vue";
-import { GridComponent as EjsGrid, ColumnDirective as EColumn, ColumnsDirective as EColumns, Filter, Reorder, ColumnChooser, SideBar } from "@syncfusion/ej2-vue-grids";
+import { GridComponent as EjsGrid, ColumnDirective as EColumn, ColumnsDirective as EColumns, Filter, Reorder, ColumnChooser, Group, Aggregate, SideBar } from "@syncfusion/ej2-vue-grids";
 import { data } from './datasource.js';
 
 const toolPanelSettings = {
     position: 'Right',
     isOpen: true,
-    defaultToolPanel: 'columns',
     toolPanels: [
-        {
-            id: 'columns',
-            type: 'Columns',
-            headerText: 'Columns'
-        },
-        {
-            id: 'filters',
-            type: 'Filters',
-            headerText: 'Filters'
-        }
+        'Columns',
+        'Filters'
     ]
 };
 const columnChooserSettings = { allowReordering: true };
-provide('grid', [Filter, Reorder, ColumnChooser, SideBar]);
+provide('grid', [Filter, Reorder, ColumnChooser, Group, Aggregate, SideBar]);
 </script>

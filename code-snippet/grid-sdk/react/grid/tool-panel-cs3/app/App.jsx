@@ -6,18 +6,10 @@ function App() {
     const toolPanelSettings = {
         position: 'Left',
         isOpen: true,
-        defaultToolPanel: 'columns',
         toolPanels: [
+            'Columns',
             {
-                id: 'columns',
-                type: 'Columns',
-                headerText: 'Columns'
-            },
-            {
-                id: 'summary',
                 type: 'Custom',
-                headerText: 'Summary',
-                iconCss: 'e-icons e-description',
                 template: () => (<div className='custom-panel'><h4>Product Summary</h4><p>Total products: 8</p><p>Select a row to review the product here.</p></div>)
             }
         ]

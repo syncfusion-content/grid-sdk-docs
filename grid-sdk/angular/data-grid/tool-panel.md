@@ -10,59 +10,45 @@ domainurl: https://help.syncfusion.com/grid-sdk
 
 # Tool Panel in Angular Grid
 
-The Tool Panel is a sidebar that centralizes grid operations in a single place. Dedicated panels, opened from a vertical button strip, help organize column management, filtering and editing without leaving the grid. Panel content updates automatically with the current grid configuration, and only the actions that are available are shown.
+The Tool Panel is a side bar in the Grid that gives quick access to column management, filtering, editing and custom content from a single place. Each panel opens from a button on the side bar.
 
-The built-in panels are:
+## Enable the tool panel
 
-| Panel | `type` | Purpose |
-|-------|--------|---------|
-| Columns | `Columns` | Show or hide columns and reorder them by drag and drop. |
-| Filters | `Filters` | Apply and modify filters for all filterable columns from one panel. |
-| Editing | `Edit` | Update the selected records, including bulk editing of several rows. |
-| Custom | `Custom` | Render application-specific content from a template. |
+Set the `enableToolPanel` property to `true` and choose the panels to show in the `toolPanelSettings.toolPanels` property. The built-in panels are `Columns`, `Filters` and `Edit`. A `Custom` panel renders your own content through the `template` property.
 
-## Side bar
+> The tool panel requires the **SideBar** module in addition to the modules of the panels you use. Provide the required services (including `SideBarService`) in the component `providers`.
 
-The side bar hosts the tool panels. Enable it by setting the `enableToolPanel` property to `true`, and configure it with the `toolPanelSettings` property.
+| Panel | Required modules |
+|-------|------------------|
+| `Columns` | `SideBar`, `ColumnChooser` (add `Reorder` for column reordering, `Group` and `Aggregate` for the row group and values drop areas) |
+| `Filters` | `SideBar`, `Filter` |
+| `Edit` | `SideBar`, `Edit`, `Selection` |
+| `Custom` | `SideBar` |
 
-> Provide the required services (for example `ColumnChooserService` and `SideBarService`) in the component `providers`. Each panel also needs its feature module: `ColumnChooser` for Columns, `Filter` for Filters, and `Edit` and `Selection` for Editing.
-
-### Configure the side bar
-
-| Property (`toolPanelSettings`) | Description |
-|----------|-------------|
-| `toolPanels` | Collection of panels shown in the side bar. Each panel needs a unique `id` and a `type`. |
-| `defaultToolPanel` | The `id` of the panel that is selected when the side bar is opened. |
-| `isOpen` | Specifies whether the side bar is open when the grid is initially rendered. |
-| `hiddenByDefault` | Specifies whether the side bar is hidden when the grid is initially rendered. |
-| `position` | Position of the side bar: `Left` or `Right`. |
-| `type` | Display mode of the side bar. |
-| `width` | Width of the side bar. |
-
-Each item of `toolPanels` supports the following properties:
+Each item in `toolPanels` is either the panel type name (for example `'Columns'`) or an object. In the object form only `type` is required for the built-in panels; `id` and `headerText` are optional. A `Custom` panel needs the `template` property.
 
 | Property | Description |
 |----------|-------------|
-| `id` | Unique identifier of the panel. |
-| `type` | Panel type: `Columns`, `Filters`, `Edit` or `Custom`. |
-| `headerText` | Text displayed as the panel header. |
-| `iconCss` | CSS class of the icon displayed on the side bar button. |
-| `tooltip` | Tooltip shown for the side bar button. |
-| `template` | Content of a `Custom` panel. |
-| `visible` | Specifies whether the panel button is shown. |
-| `columns` | Columns the panel works with. |
-
-The panel body is created lazily, when the panel is opened for the first time. The side bar raises the `toolPanelCreated`, `toolPanelOpen`, `toolPanelOpened`, `toolPanelClose` and `toolPanelClosed` events; `toolPanelOpen` and `toolPanelClose` can be canceled.
+| `toolPanels` | Panels shown in the side bar, in order. |
+| `position` | Side bar position: `Left` or `Right`. |
+| `isOpen` | Opens the side bar when the Grid is rendered. |
 
 ## Columns panel
 
-The Columns panel lists the grid columns with checkboxes and a search box, so columns can be shown or hidden directly from the side bar.
+The Columns panel lists the Grid columns with checkboxes. Clear a checkbox to hide a column and select it to show the column again.
 
-### Reorder columns by drag and drop
+### Reorder columns
 
-Set `columnChooserSettings.allowReordering` to `true`, together with `allowReordering` on the Grid and the `Reorder` module, to show a drag handle beside each column. Dragging an item moves the column in the Grid header, following the same rules as header reordering: columns with `allowReordering` set to `false`, locked columns and columns outside the frozen boundary cannot be moved. The setting is ignored when a column chooser `template` is used.
+Set `allowReordering` to `true` on the Grid and in `columnChooserSettings`, and inject the `Reorder` module. A drag handle appears beside each column in the panel; drag a column up or down to change its position in the Grid.
 
-The following sample enables the Columns and Filters panels with drag-and-drop column reordering.
+### Group and aggregate by drag and drop
+
+When the `Group` and `Aggregate` modules are injected and `allowGrouping` is `true`, the Columns panel also shows two drop areas below the column list:
+
+* **Row Groups** - drag a column here to group the Grid by that column. Remove the column from the area to ungroup it.
+* **Values** - drag a column here to add an aggregate for it, and choose the aggregate type (for example Sum or Average) from the menu on the item.
+
+The following sample shows the Columns and Filters panels with column reordering, row grouping and aggregates.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -80,20 +66,11 @@ The following sample enables the Columns and Filters panels with drag-and-drop c
 
 ## Filters panel
 
-The Filters panel shows an accordion with one item for each column that has filtering enabled. Expanding an item displays the same filter UI as the column's filter dialog (`Menu`, `CheckBox` or `Excel`, based on the filter type configured for the column), so filters can be viewed, applied and cleared from a single place without opening individual column filter menus.
+The Filters panel shows the filter options of every filterable column in one place. Expand a column, set the filter and apply it. To use it, set `allowFiltering` to `true`, add `Filters` to `toolPanels` and inject the `Filter` module. The previous sample includes this panel.
 
-To use the panel, set `allowFiltering` to `true`, add a panel of type `Filters` and inject the `Filter` module. The first sample on this page shows the Filters panel.
+## Edit panel
 
-## Editing panel
-
-The Editing panel is a dedicated workspace for updating the selected records. It is designed for bulk editing: changes made in the panel are applied to every selected row instead of editing rows or cells one by one.
-
-* The panel shows editable fields for the selected rows, using the editors defined by each column, including custom editors.
-* When one row is selected, its values are displayed. When several rows are selected, the editors are empty, and the value you enter is applied to all of them.
-* There are no Save or Cancel buttons. A field is validated when its editor changes, using the column `validationRules`, and the valid value is applied immediately.
-* The panel is rendered again when the selection changes.
-
-To use the panel, set `editSettings.allowEditing` to `true`, define a primary key column, add a panel of type `Edit` and inject the `Edit` and `Selection` modules. Set `selectionSettings.type` to `Multiple` to edit several rows together.
+The Edit panel updates the selected records. Select one or more rows, change a value in the panel and it is applied to all selected rows. To use it, set `editSettings.allowEditing` to `true`, set `isPrimaryKey` on a column, set `selectionSettings.type` to `Multiple`, add `Edit` to `toolPanels` and inject the `Edit` and `Selection` modules.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -111,7 +88,7 @@ To use the panel, set `editSettings.allowEditing` to `true`, define a primary ke
 
 ## Custom panel
 
-A custom panel integrates application-specific content into the side bar, for example additional information, custom actions or workflows beyond the built-in Columns, Filters and Editing panels. Add a panel with `type` set to `Custom` and provide its content through the `template` property, along with the `headerText` and `iconCss` used on the side bar button.
+Add an object with `type` set to `Custom` and provide the content in the `template` property. The `id` and `headerText` properties are optional.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}

@@ -1,12 +1,12 @@
-@Html.EJS().Grid("grid").DataSource((IEnumerable<object>)ViewBag.dataSource).Height("320px").EnableToolPanel(true).AllowFiltering().AllowReordering().Columns(col =>
+@Html.EJS().Grid("grid").DataSource((IEnumerable<object>)ViewBag.dataSource).Height("320px").EnableToolPanel(true).AllowFiltering().AllowGrouping().AllowReordering().Columns(col =>
 {
   col.Field("OrderID").HeaderText("Order ID").Width("140").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
   col.Field("CustomerID").HeaderText("Customer ID").Width("140").Add();
   col.Field("ShipCity").HeaderText("Ship City").Width("140").Add();
   col.Field("ShipCountry").HeaderText("Ship Country").Width("140").Add();
   col.Field("Freight").HeaderText("Freight").Width("140").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Format("C2").Add();
-}).ToolPanelSettings(tp => tp.Position("Right").IsOpen(true).DefaultToolPanel("columns").ToolPanels(panels =>
+}).ToolPanelSettings(tp => tp.Position("Right").IsOpen(true).ToolPanels(panels =>
 {
-  panels.Id("columns").Type("Columns").HeaderText("Columns").Add();
-  panels.Id("filters").Type("Filters").HeaderText("Filters").Add();
+  panels.Type("Columns").Add();
+  panels.Type("Filters").Add();
 })).ColumnChooserSettings(cc => cc.AllowReordering(true)).Render()

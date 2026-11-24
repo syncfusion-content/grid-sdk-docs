@@ -8,10 +8,10 @@
         <e-grid-column field="Country" headerText="Country" width="140"></e-grid-column>
         <e-grid-column field="Salary" headerText="Salary" width="140" textAlign="Right" format="C0"></e-grid-column>
     </e-grid-columns>
-    <e-grid-toolpanelsettings position="Right" isOpen="true" defaultToolPanel="editing">
+    <e-grid-toolpanelsettings position="Right" isOpen="true">
         <e-toolpanels>
-            <e-toolpanel id="editing" type="Edit" headerText="Editing"></e-toolpanel>
-            <e-toolpanel id="columns" type="Columns" headerText="Columns"></e-toolpanel>
+            <e-toolpanel type="Edit"></e-toolpanel>
+            <e-toolpanel type="Columns"></e-toolpanel>
         </e-toolpanels>
     </e-grid-toolpanelsettings>
 </ejs-grid>

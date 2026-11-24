@@ -1,7 +1,7 @@
-import { Grid, Filter, Reorder, ColumnChooser, SideBar } from '@syncfusion/ej2-grids';
+import { Grid, Filter, Reorder, ColumnChooser, Group, Aggregate, SideBar } from '@syncfusion/ej2-grids';
 import { data } from './datasource.ts';
 
-Grid.Inject(Filter, Reorder, ColumnChooser, SideBar);
+Grid.Inject(Filter, Reorder, ColumnChooser, Group, Aggregate, SideBar);
 
 let grid: Grid = new Grid({
     dataSource: data,
@@ -10,21 +10,13 @@ let grid: Grid = new Grid({
     toolPanelSettings: {
         position: 'Right',
         isOpen: true,
-        defaultToolPanel: 'columns',
         toolPanels: [
-            {
-                id: 'columns',
-                type: 'Columns',
-                headerText: 'Columns'
-            },
-            {
-                id: 'filters',
-                type: 'Filters',
-                headerText: 'Filters'
-            }
+            'Columns',
+            'Filters'
         ]
     },
     allowFiltering: true,
+    allowGrouping: true,
     allowReordering: true,
     columnChooserSettings: { allowReordering: true },
     columns: [

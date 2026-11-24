@@ -28,18 +28,9 @@ export class AppComponent implements OnInit {
         this.toolPanelSettings = {
             position: 'Right',
             isOpen: true,
-            defaultToolPanel: 'editing',
             toolPanels: [
-                {
-                    id: 'editing',
-                    type: 'Edit',
-                    headerText: 'Editing'
-                },
-                {
-                    id: 'columns',
-                    type: 'Columns',
-                    headerText: 'Columns'
-                }
+                'Edit',
+                'Columns'
             ]
         };
         this.editSettings = { allowEditing: true, mode: 'Normal' };

@@ -6,10 +6,10 @@
         <e-grid-column field="UnitPrice" headerText="Unit Price" width="140" textAlign="Right" format="C2"></e-grid-column>
         <e-grid-column field="UnitsInStock" headerText="Units In Stock" width="140" textAlign="Right"></e-grid-column>
     </e-grid-columns>
-    <e-grid-toolpanelsettings position="Left" isOpen="true" defaultToolPanel="columns">
+    <e-grid-toolpanelsettings position="Left" isOpen="true">
         <e-toolpanels>
-            <e-toolpanel id="columns" type="Columns" headerText="Columns"></e-toolpanel>
-            <e-toolpanel id="summary" type="Custom" headerText="Summary" iconCss="e-icons e-description" template="#customPanelTemplate"></e-toolpanel>
+            <e-toolpanel type="Columns"></e-toolpanel>
+            <e-toolpanel type="Custom" template="#customPanelTemplate"></e-toolpanel>
         </e-toolpanels>
     </e-grid-toolpanelsettings>
 </ejs-grid>

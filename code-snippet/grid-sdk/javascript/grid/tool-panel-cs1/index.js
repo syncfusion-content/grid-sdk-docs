@@ -1,4 +1,4 @@
-ej.grids.Grid.Inject(ej.grids.Filter, ej.grids.Reorder, ej.grids.ColumnChooser, ej.grids.SideBar);
+ej.grids.Grid.Inject(ej.grids.Filter, ej.grids.Reorder, ej.grids.ColumnChooser, ej.grids.Group, ej.grids.Aggregate, ej.grids.SideBar);
 var grid = new ej.grids.Grid({
     dataSource: data,
     height: 320,
@@ -6,21 +6,13 @@ var grid = new ej.grids.Grid({
     toolPanelSettings: {
         position: 'Right',
         isOpen: true,
-        defaultToolPanel: 'columns',
         toolPanels: [
-            {
-                id: 'columns',
-                type: 'Columns',
-                headerText: 'Columns'
-            },
-            {
-                id: 'filters',
-                type: 'Filters',
-                headerText: 'Filters'
-            }
+            'Columns',
+            'Filters'
         ]
     },
     allowFiltering: true,
+    allowGrouping: true,
     allowReordering: true,
     columnChooserSettings: { allowReordering: true },
     columns: [

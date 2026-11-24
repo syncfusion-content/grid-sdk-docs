@@ -28,18 +28,10 @@ export default {
       toolPanelSettings: {
           position: 'Left',
           isOpen: true,
-          defaultToolPanel: 'columns',
           toolPanels: [
+              'Columns',
               {
-                  id: 'columns',
-                  type: 'Columns',
-                  headerText: 'Columns'
-              },
-              {
-                  id: 'summary',
                   type: 'Custom',
-                  headerText: 'Summary',
-                  iconCss: 'e-icons e-description',
                   template: '#customPanelTemplate'
               }
           ]

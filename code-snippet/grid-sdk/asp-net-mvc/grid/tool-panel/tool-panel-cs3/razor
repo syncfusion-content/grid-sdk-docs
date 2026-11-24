@@ -5,10 +5,10 @@
   col.Field("Category").HeaderText("Category").Width("140").Add();
   col.Field("UnitPrice").HeaderText("Unit Price").Width("140").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Format("C2").Add();
   col.Field("UnitsInStock").HeaderText("Units In Stock").Width("140").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
-}).ToolPanelSettings(tp => tp.Position("Left").IsOpen(true).DefaultToolPanel("columns").ToolPanels(panels =>
+}).ToolPanelSettings(tp => tp.Position("Left").IsOpen(true).ToolPanels(panels =>
 {
-  panels.Id("columns").Type("Columns").HeaderText("Columns").Add();
-  panels.Id("summary").Type("Custom").HeaderText("Summary").IconCss("e-icons e-description").Template("#customPanelTemplate").Add();
+  panels.Type("Columns").Add();
+  panels.Type("Custom").Template("#customPanelTemplate").Add();
 })).Render()
 
 <script id="customPanelTemplate" type="text/x-template">

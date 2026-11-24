@@ -6,18 +6,9 @@ var grid = new ej.grids.Grid({
     toolPanelSettings: {
         position: 'Right',
         isOpen: true,
-        defaultToolPanel: 'editing',
         toolPanels: [
-            {
-                id: 'editing',
-                type: 'Edit',
-                headerText: 'Editing'
-            },
-            {
-                id: 'columns',
-                type: 'Columns',
-                headerText: 'Columns'
-            }
+            'Edit',
+            'Columns'
         ]
     },
     editSettings: { allowEditing: true, mode: 'Normal' },
