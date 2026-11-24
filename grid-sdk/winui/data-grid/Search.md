@@ -145,7 +145,7 @@ You can highlight the currently navigated search text using `SearchHelper.Searc
 
 this.sfDataGrid.SearchHelper.SearchHighlightBrush = new SolidColorBrush(Colors.Red);
 this.sfDataGrid.SearchHelper.AllowSearching = true;
-this.sfDataGrid.SearchHelper.FindNext("TextBox.Text");
+this.sfDataGrid.SearchHelper.FindNext(searchTextBox.Text);
 
 {% endhighlight %}
 {% endtabs %}
