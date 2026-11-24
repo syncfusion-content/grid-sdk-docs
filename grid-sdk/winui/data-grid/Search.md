@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Search in WinUI Data Grid | SyncfusionÂ®
+title: Search in WinUI Data Grid | Syncfusion®
 description: Search in WinUI Data Grid locates and highlights matching cell text, navigates between matches, and optionally filters rows using the SearchHelper class.
 platform: grid-sdk
 control: Data Grid
