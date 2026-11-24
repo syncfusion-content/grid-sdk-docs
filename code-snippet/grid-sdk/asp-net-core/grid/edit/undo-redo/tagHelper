@@ -1,0 +1,9 @@
+<ejs-grid id="grid" dataSource="@ViewBag.DataSource" height="273px" toolbar="@(new List<string>() { "Add", "Edit", "Delete", "Update", "Cancel", "Undo", "Redo" })">
+  <e-grid-editSettings allowAdding="true" allowDeleting="true" allowEditing="true" enableUndoRedo="true" undoRedoLimit="10" mode="Normal"></e-grid-editSettings>
+  <e-grid-columns>
+    <e-grid-column field="OrderID" headerText="Order ID" textAlign="Right" isPrimaryKey="true" validationRules="@(new { required=true, number=true })" width="120"></e-grid-column>
+    <e-grid-column field="CustomerID" headerText="Customer ID" validationRules="@(new { required=true, minLength=3 })" width="140"></e-grid-column>
+    <e-grid-column field="Freight" headerText="Freight" textAlign="Right" editType="numericedit" format="C2" validationRules="@(new { required=true, min=1, max=1000 })" width="120"></e-grid-column>
+    <e-grid-column field="ShipCountry" headerText="Ship Country" editType="dropdownedit" width="150"></e-grid-column>
+  </e-grid-columns>
+</ejs-grid>

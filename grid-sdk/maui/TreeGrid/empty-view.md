@@ -350,5 +350,5 @@ public class FilterItem : BindableObject
 In this scenario, a `FilterItem` object is assigned to the `EmptyView` property, and its `Filter` property is bound to the `SearchBar.Text` property. When the `SearchBar.TextChanged` event is raised, the current search text is stored in the `Filter` property. If filtering results in no visible tree nodes, the `EmptyViewTemplate` is displayed and uses the bound Filter value to show a dynamic message based on the search term.
 
  **How FilterProperty works:** `BindableProperty.Create` enables property binding in .NET MAUI. The `FilterProperty` BindableProperty allows the `Filter` property to respond to changes from external bindings, such as `SearchBar.Text`, ensuring that the empty view content is updated automatically whenever the search text changes.
-
- <img src="Images/emptyview/emptyviewtemplate-with-custombinding.png" width="404" alt="TreeGrid EmptyViewTemplate with Custom Binding">
+ 
+<img src="Images/emptyview/emptyviewtemplate-with-custombinding.png" width="404" alt="TreeGrid EmptyViewTemplate with Custom Binding">

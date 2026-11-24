@@ -1,0 +1,15 @@
+<ejs-pivotview id="PivotView" height="450" width="100%">
+    <e-datasourcesettings dataSource="@ViewBag.DataSource">
+    </e-datasourcesettings>
+    <e-gridSettings layout="Flat"></e-gridSettings>
+    <e-flatSettings allowSorting="true" allowFiltering="true" allowPaging="true">
+        <e-flat-pagesettings pageSize="10"></e-flat-pagesettings>
+        <e-flat-columns>
+            <e-flat-column field="Country" headerText="Country" width="140"></e-flat-column>
+            <e-flat-column field="Products" headerText="Products" width="160"></e-flat-column>
+            <e-flat-column field="Year" headerText="Year" width="120"></e-flat-column>
+            <e-flat-column field="Sold" headerText="Units Sold" width="120"></e-flat-column>
+            <e-flat-column field="Amount" headerText="Sold Amount" width="140"></e-flat-column>
+        </e-flat-columns>
+    </e-flatSettings>
+</ejs-pivotview>
