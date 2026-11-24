@@ -97,13 +97,13 @@ N> Setting `AllowFiltering` assigns the search filter to `SfDataGrid.View.Filter
 
 ## Changing Search Highlight Background
 
-In WinUI DataGrid (SfDatagrid), you can change the search text highlighting color by setting `SearchHelper.SearchBrush` property. 
+In WinUI DataGrid (SfDataGrid), you can change the search text highlighting color by setting `SearchHelper.SearchBrush` property. 
 
 {% tabs %}
 {% highlight c# %}
 
-this.sfdataGrid.SearchHelper.SearchBrush = new SolidColorBrush(Colors.Red);
-this.sfdataGrid.SearchHelper.Search(TextBox.Text);
+this.sfDataGrid.SearchHelper.SearchBrush = new SolidColorBrush(Colors.Red);
+this.sfDataGrid.SearchHelper.Search(searchTextBox.Text);
 
 {% endhighlight %}
 {% endtabs %}
@@ -112,7 +112,7 @@ this.sfdataGrid.SearchHelper.Search(TextBox.Text);
 
 ## Changing foreground for search highlight
 
-In WinUI DataGrid (SfDatagrid), you can change the foreground color for search text by setting the `SearchHelper.SearchForegroundBrush` property. 
+In WinUI DataGrid (SfDataGrid), you can change the foreground color for search text by setting the `SearchHelper.SearchForegroundBrush` property. 
 
 {% tabs %}
 {% highlight c# %}
@@ -260,11 +260,16 @@ You can select the records which contains the search text by using `GetSearchedR
 {% highlight c# %}
 
 this.dataGrid.SelectedItems.Clear();
-this.dataGrid.AllowSearching = true;
+this.dataGrid.SearchHelper.AllowSearching = true;
 this.dataGrid.SearchHelper.Search("SearchText"); 
-var list = this.dataGrid.SearchHelper.GetSearchRecords();
-int recordIndex = this.dataGrid.ResolveToRecordIndex(this.dataGrid.ResolveToRowIndex(list[0].Record));
-this.dataGrid.SelectedIndex = recordIndex;
+var records = this.sfDataGrid.SearchHelper.GetSearchRecords();
+if (records != null && records.Count > 0)
+{
+    int recordIndex = this.sfDataGrid.ResolveToRecordIndex(
+        this.sfDataGrid.ResolveToRowIndex(records[0].Record));
+
+    this.sfDataGrid.SelectedIndex = recordIndex;
+}
 
 {% endhighlight %}
 {% endtabs %}
@@ -339,24 +344,12 @@ public class ComboBoxRendererExt : GridVirtualizingCellRenderer<TextBlock, SfCom
     // This will be invoke when the editing is triggered.
     public override void OnInitializeEditElement(DataColumnBase dataColumn, SfComboBox uiElement, object dataContext)
     {
-        GridColumn column = dataColumn.GridColumn;
-        InitializeEditBinding(uiElement, column);
-        var textAlignment = new Binding { Path = new PropertyPath("TextAlignment"), Mode = BindingMode.OneWay, Source = column, Converter = new TextAlignmentToHorizontalAlignmentConverter() };
-        uiElement.SetBinding(Control.HorizontalContentAlignmentProperty, textAlignment);
-        var verticalAlignment = new Binding { Path = new PropertyPath("VerticalAlignment"), Mode = BindingMode.TwoWay, Source = column };
-        uiElement.SetBinding(Control.VerticalContentAlignmentProperty, verticalAlignment);
+        InitializeEditBinding(uiElement, dataColumn.GridColumn);
     }
-
-    // Display Element initialized for required properties
-    public override void OnInitializeDisplayElement(Syncfusion.UI.Xaml.DataGrid.DataColumnBase dataColumn, TextBlock uiElement, object dataContext)
+    
+    public override void OnInitializeDisplayElement(DataColumnBase dataColumn, TextBlock uiElement, object dataContext)
     {
-        var column = dataColumn.GridColumn;
-        var gridColumn = column as GridComboBoxColumn;
-        uiElement.SetBinding(TextBlock.TextProperty, column.DisplayBinding);
-        var textAlignment = new Binding { Path = new PropertyPath("TextAlignment"), Mode = BindingMode.OneWay, Source = column, Converter = new TextAlignmentToHorizontalAlignmentConverter() };
-        uiElement.SetBinding(Control.HorizontalAlignmentProperty, textAlignment);
-        var verticalAlignment = new Binding { Path = new PropertyPath("VerticalAlignment"), Mode = BindingMode.TwoWay, Source = column };
-        uiElement.SetBinding(Control.VerticalAlignmentProperty, verticalAlignment);
+        SetDisplayBinding(uiElement, dataColumn.GridColumn, dataContext);
         uiElement.Margin = new Thickness(3, 0, 1, 0);
     }
 
@@ -380,6 +373,8 @@ public class ComboBoxRendererExt : GridVirtualizingCellRenderer<TextBlock, SfCom
 
 {% tabs %}
 {% highlight xaml %}
+xmlns:local="using:YourAppNamespace"
+
 <dataGrid:SfDataGrid x:Name="sfDataGrid"
                      AutoGenerateColumns="False"
                      ItemsSource="{Binding Orders}">
