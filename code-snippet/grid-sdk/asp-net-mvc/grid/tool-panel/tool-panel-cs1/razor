@@ -5,7 +5,7 @@
   col.Field("ShipCity").HeaderText("Ship City").Width("140").Add();
   col.Field("ShipCountry").HeaderText("Ship Country").Width("140").Add();
   col.Field("Freight").HeaderText("Freight").Width("140").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Format("C2").Add();
-}).ToolPanelSettings(tp => tp.Position("Right").IsOpen(true).ToolPanels(panels =>
+}).ToolPanelSettings(tp => tp.Position("Right").Type("Push").Width("300").IsOpen(true).ToolPanels(panels =>
 {
   panels.Type("Columns").Add();
   panels.Type("Filters").Add();

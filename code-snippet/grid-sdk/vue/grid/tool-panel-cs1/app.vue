@@ -28,6 +28,8 @@ export default {
       columnChooserSettings: { allowReordering: true },
 toolPanelSettings: {
           position: 'Right',
+          type: 'Push',
+          width: 300,
           isOpen: true,
           toolPanels: [
               'Columns',

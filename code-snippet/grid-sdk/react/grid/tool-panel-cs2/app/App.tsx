@@ -5,6 +5,8 @@ import { data } from './datasource';
 function App() {
     const toolPanelSettings: object = {
         position: 'Right',
+        type: 'Push',
+        width: 300,
         isOpen: true,
         toolPanels: [
             'Edit',
