@@ -119,6 +119,8 @@ this.treeGrid.NavigationMode = NavigationMode.Cell;
 {% endhighlight %}
 {% endtabs %}
 
+<img src="Editing-images/winui-treegrid-editing-non-alphanumeric-key.png" alt="WinUI TreeGrid Non-alphanumeric key editing" width="100%" Height="Auto"/>
+
 The result depends on the column type of the current cell,
 
 * **TreeGridTextColumn** – the typed character replaces the existing value, and the cursor is placed after it. [EditorSelectionBehavior](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.SfGridBase.html#Syncfusion_UI_Xaml_Grids_SfGridBase_EditorSelectionBehavior) does not affect this case.

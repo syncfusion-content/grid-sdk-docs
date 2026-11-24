@@ -89,6 +89,8 @@ sfDataGrid.NavigationMode = NavigationMode.Cell;
 {% endhighlight %}
 {% endtabs %}
 
+<img src="Editing_images/winui-datagrid-editing-non-alphanumeric-key.png" alt="WinUI DataGrid Non-alphanumeric key editing" width="100%" Height="Auto"/>
+
 The result depends on the column type of the current cell,
 
 * **GridTextColumn** – the typed character replaces the existing value, and the cursor is placed after it. [EditorSelectionBehavior](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.SfGridBase.html#Syncfusion_UI_Xaml_Grids_SfGridBase_EditorSelectionBehavior) does not affect this case.
