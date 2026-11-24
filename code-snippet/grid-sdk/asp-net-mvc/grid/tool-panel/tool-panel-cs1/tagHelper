@@ -1,0 +1,16 @@
+<ejs-grid id="grid" dataSource="@ViewBag.dataSource" height="320px" allowFiltering="true" allowReordering="true" enableToolPanel="true">
+    <e-grid-columns>
+        <e-grid-column field="BookID" headerText="Book ID" width="110" textAlign="Right"></e-grid-column>
+        <e-grid-column field="Title" headerText="Title" width="140"></e-grid-column>
+        <e-grid-column field="Author" headerText="Author" width="140"></e-grid-column>
+        <e-grid-column field="Genre" headerText="Genre" width="140"></e-grid-column>
+        <e-grid-column field="Price" headerText="Price" width="140" textAlign="Right"></e-grid-column>
+    </e-grid-columns>
+    <e-grid-toolpanelsettings position="Right" isOpen="true" defaultToolPanel="columns">
+        <e-toolpanels>
+            <e-toolpanel id="columns" type="Columns" headerText="Columns"></e-toolpanel>
+            <e-toolpanel id="filters" type="Filters" headerText="Filters"></e-toolpanel>
+        </e-toolpanels>
+    </e-grid-toolpanelsettings>
+    <e-grid-columnchoosersettings allowReordering="true"></e-grid-columnchoosersettings>
+</ejs-grid>

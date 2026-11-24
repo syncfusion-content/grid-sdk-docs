@@ -1,0 +1,12 @@
+@Html.EJS().Grid("grid").DataSource((IEnumerable<object>)ViewBag.dataSource).Height("320px").AllowFiltering().AllowReordering().EnableToolPanel(true).Columns(col =>
+{
+  col.Field("VehicleID").HeaderText("Vehicle ID").Width("110").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+  col.Field("Model").HeaderText("Model").Width("140").Add();
+  col.Field("Brand").HeaderText("Brand").Width("140").Add();
+  col.Field("Year").HeaderText("Year").Width("140").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+  col.Field("Price").HeaderText("Price").Width("140").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+}).ToolPanelSettings(tp => tp.Position("Right").IsOpen(true).DefaultToolPanel("columns").ToolPanels(panels =>
+{
+  panels.Id("columns").Type("Columns").HeaderText("Columns").Add();
+  panels.Id("filters").Type("Filters").HeaderText("Filters").Add();
+})).ColumnChooserSettings(cc => cc.AllowReordering(true)).Render()

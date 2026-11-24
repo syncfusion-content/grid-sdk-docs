@@ -1,0 +1,12 @@
+@Html.EJS().Grid("grid").DataSource((IEnumerable<object>)ViewBag.dataSource).Height("320px").AllowFiltering().AllowReordering().EnableToolPanel(true).Columns(col =>
+{
+  col.Field("BookID").HeaderText("Book ID").Width("110").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+  col.Field("Title").HeaderText("Title").Width("140").Add();
+  col.Field("Author").HeaderText("Author").Width("140").Add();
+  col.Field("Genre").HeaderText("Genre").Width("140").Add();
+  col.Field("Price").HeaderText("Price").Width("140").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+}).ToolPanelSettings(tp => tp.Position("Right").IsOpen(true).DefaultToolPanel("columns").ToolPanels(panels =>
+{
+  panels.Id("columns").Type("Columns").HeaderText("Columns").Add();
+  panels.Id("filters").Type("Filters").HeaderText("Filters").Add();
+})).ColumnChooserSettings(cc => cc.AllowReordering(true)).Render()
