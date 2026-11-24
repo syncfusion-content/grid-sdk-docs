@@ -1,10 +1,10 @@
 @Html.EJS().Grid("grid").DataSource((IEnumerable<object>)ViewBag.dataSource).Height("320px").EnableToolPanel(true).Columns(col =>
 {
-  col.Field("OrderID").HeaderText("Order ID").Width("140").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
-  col.Field("CustomerID").HeaderText("Customer ID").Width("140").Add();
-  col.Field("ShipCity").HeaderText("Ship City").Width("140").Add();
-  col.Field("ShipCountry").HeaderText("Ship Country").Width("140").Add();
-  col.Field("Freight").HeaderText("Freight").Width("140").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Format("C2").Add();
+  col.Field("ProductID").HeaderText("Product ID").Width("140").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+  col.Field("ProductName").HeaderText("Product Name").Width("140").Add();
+  col.Field("Category").HeaderText("Category").Width("140").Add();
+  col.Field("UnitPrice").HeaderText("Unit Price").Width("140").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Format("C2").Add();
+  col.Field("UnitsInStock").HeaderText("Units In Stock").Width("140").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
 }).ToolPanelSettings(tp => tp.Position("Left").IsOpen(true).DefaultToolPanel("columns").ToolPanels(panels =>
 {
   panels.Id("columns").Type("Columns").HeaderText("Columns").Add();
@@ -12,5 +12,5 @@
 })).Render()
 
 <script id="customPanelTemplate" type="text/x-template">
-    <div class="custom-panel"><h4>Order Summary</h4><p>Total orders: 8</p><p>Select a row to review the order here.</p></div>
+    <div class="custom-panel"><h4>Product Summary</h4><p>Total products: 8</p><p>Select a row to review the product here.</p></div>
 </script>

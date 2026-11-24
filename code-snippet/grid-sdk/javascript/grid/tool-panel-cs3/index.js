@@ -23,11 +23,11 @@ var grid = new ej.grids.Grid({
         ]
     },
     columns: [
-        { field: 'OrderID', headerText: 'Order ID', width: 140, textAlign: 'Right' },
-        { field: 'CustomerID', headerText: 'Customer ID', width: 140 },
-        { field: 'ShipCity', headerText: 'Ship City', width: 140 },
-        { field: 'ShipCountry', headerText: 'Ship Country', width: 140 },
-        { field: 'Freight', headerText: 'Freight', width: 140, textAlign: 'Right', format: 'C2' }
+        { field: 'ProductID', headerText: 'Product ID', width: 140, textAlign: 'Right' },
+        { field: 'ProductName', headerText: 'Product Name', width: 140 },
+        { field: 'Category', headerText: 'Category', width: 140 },
+        { field: 'UnitPrice', headerText: 'Unit Price', width: 140, textAlign: 'Right', format: 'C2' },
+        { field: 'UnitsInStock', headerText: 'Units In Stock', width: 140, textAlign: 'Right' }
     ]
 });
 grid.appendTo('#Grid');

@@ -27,11 +27,11 @@ let grid: Grid = new Grid({
     editSettings: { allowEditing: true, mode: 'Normal' },
     selectionSettings: { type: 'Multiple' },
     columns: [
-        { field: 'OrderID', headerText: 'Order ID', width: 140, textAlign: 'Right', isPrimaryKey: true },
-        { field: 'CustomerID', headerText: 'Customer ID', width: 140 },
-        { field: 'ShipCity', headerText: 'Ship City', width: 140 },
-        { field: 'ShipCountry', headerText: 'Ship Country', width: 140 },
-        { field: 'Freight', headerText: 'Freight', width: 140, textAlign: 'Right', format: 'C2' }
+        { field: 'EmployeeID', headerText: 'Employee ID', width: 140, textAlign: 'Right', isPrimaryKey: true },
+        { field: 'Name', headerText: 'Name', width: 140 },
+        { field: 'Title', headerText: 'Title', width: 140 },
+        { field: 'Country', headerText: 'Country', width: 140 },
+        { field: 'Salary', headerText: 'Salary', width: 140, textAlign: 'Right', format: 'C0' }
     ]
 });
 grid.appendTo('#Grid');

@@ -1,29 +1,30 @@
 public IActionResult Index()
 {
-    ViewBag.dataSource = OrderData.GetAllRecords();
+    ViewBag.dataSource = EmployeeData.GetAllRecords();
     return View();
 }
 
-public class OrderData
+public class EmployeeData
 {
-    public int OrderID { get; set; }
-    public string CustomerID { get; set; }
-    public string ShipCity { get; set; }
-    public string ShipCountry { get; set; }
-    public double Freight { get; set; }
+    public int EmployeeID { get; set; }
+    public string Name { get; set; }
+    public string Title { get; set; }
+    public string Country { get; set; }
+    public int Salary { get; set; }
 
-    public static List<OrderData> GetAllRecords()
+
+    public static List<EmployeeData> GetAllRecords()
     {
-        return new List<OrderData>()
+        return new List<EmployeeData>()
         {
-            new OrderData() { OrderID = 10248, CustomerID = "VINET", ShipCity = "Reims", ShipCountry = "France", Freight = 32.38 },
-            new OrderData() { OrderID = 10249, CustomerID = "TOMSP", ShipCity = "Munster", ShipCountry = "Germany", Freight = 11.61 },
-            new OrderData() { OrderID = 10250, CustomerID = "HANAR", ShipCity = "Rio de Janeiro", ShipCountry = "Brazil", Freight = 65.83 },
-            new OrderData() { OrderID = 10251, CustomerID = "VICTE", ShipCity = "Lyon", ShipCountry = "France", Freight = 41.34 },
-            new OrderData() { OrderID = 10252, CustomerID = "SUPRD", ShipCity = "Charleroi", ShipCountry = "Belgium", Freight = 51.3 },
-            new OrderData() { OrderID = 10253, CustomerID = "HANAR", ShipCity = "Rio de Janeiro", ShipCountry = "Brazil", Freight = 58.17 },
-            new OrderData() { OrderID = 10254, CustomerID = "CHOPS", ShipCity = "Bern", ShipCountry = "Switzerland", Freight = 22.98 },
-            new OrderData() { OrderID = 10255, CustomerID = "RICSU", ShipCity = "Geneve", ShipCountry = "Switzerland", Freight = 148.33 },
+            new EmployeeData() { EmployeeID = 1, Name = "Nancy Davolio", Title = "Sales Representative", Country = "USA", Salary = 52000 },
+            new EmployeeData() { EmployeeID = 2, Name = "Andrew Fuller", Title = "Vice President", Country = "USA", Salary = 98000 },
+            new EmployeeData() { EmployeeID = 3, Name = "Janet Leverling", Title = "Sales Manager", Country = "UK", Salary = 76000 },
+            new EmployeeData() { EmployeeID = 4, Name = "Margaret Peacock", Title = "Sales Associate", Country = "France", Salary = 48000 },
+            new EmployeeData() { EmployeeID = 5, Name = "Steven Buchanan", Title = "Team Lead", Country = "UK", Salary = 67000 },
+            new EmployeeData() { EmployeeID = 6, Name = "Michael Suyama", Title = "Developer", Country = "Germany", Salary = 71000 },
+            new EmployeeData() { EmployeeID = 7, Name = "Robert King", Title = "Analyst", Country = "Spain", Salary = 59000 },
+            new EmployeeData() { EmployeeID = 8, Name = "Laura Callahan", Title = "Coordinator", Country = "USA", Salary = 45000 },
         };
     }
 }

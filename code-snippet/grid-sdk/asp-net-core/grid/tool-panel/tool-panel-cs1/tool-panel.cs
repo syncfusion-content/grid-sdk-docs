@@ -12,6 +12,7 @@ public class OrderData
     public string ShipCountry { get; set; }
     public double Freight { get; set; }
 
+
     public static List<OrderData> GetAllRecords()
     {
         return new List<OrderData>()

@@ -22,11 +22,11 @@ function App() {
     };
     return <GridComponent dataSource={data} height={320} enableToolPanel={true} toolPanelSettings={toolPanelSettings} editSettings={{ allowEditing: true, mode: 'Normal' }} selectionSettings={{ type: 'Multiple' }}>
         <ColumnsDirective>
-            <ColumnDirective field='OrderID' headerText='Order ID' width='140' textAlign='Right' isPrimaryKey={true} />
-            <ColumnDirective field='CustomerID' headerText='Customer ID' width='140' />
-            <ColumnDirective field='ShipCity' headerText='Ship City' width='140' />
-            <ColumnDirective field='ShipCountry' headerText='Ship Country' width='140' />
-            <ColumnDirective field='Freight' headerText='Freight' width='140' textAlign='Right' format='C2' />
+            <ColumnDirective field='EmployeeID' headerText='Employee ID' width='140' textAlign='Right' isPrimaryKey={true} />
+            <ColumnDirective field='Name' headerText='Name' width='140' />
+            <ColumnDirective field='Title' headerText='Title' width='140' />
+            <ColumnDirective field='Country' headerText='Country' width='140' />
+            <ColumnDirective field='Salary' headerText='Salary' width='140' textAlign='Right' format='C0' />
         </ColumnsDirective>
         <Inject services={[Edit, Selection, ColumnChooser, SideBar]} />
     </GridComponent>

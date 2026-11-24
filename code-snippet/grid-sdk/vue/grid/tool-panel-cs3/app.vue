@@ -2,11 +2,11 @@
   <div id="app">
     <ejs-grid :dataSource='data' height='320px' :enableToolPanel='true' :toolPanelSettings='toolPanelSettings'>
       <e-columns>
-        <e-column field='OrderID' headerText='Order ID' width='140' textAlign='Right'></e-column>
-        <e-column field='CustomerID' headerText='Customer ID' width='140'></e-column>
-        <e-column field='ShipCity' headerText='Ship City' width='140'></e-column>
-        <e-column field='ShipCountry' headerText='Ship Country' width='140'></e-column>
-        <e-column field='Freight' headerText='Freight' width='140' textAlign='Right' format='C2'></e-column>
+        <e-column field='ProductID' headerText='Product ID' width='140' textAlign='Right'></e-column>
+        <e-column field='ProductName' headerText='Product Name' width='140'></e-column>
+        <e-column field='Category' headerText='Category' width='140'></e-column>
+        <e-column field='UnitPrice' headerText='Unit Price' width='140' textAlign='Right' format='C2'></e-column>
+        <e-column field='UnitsInStock' headerText='Units In Stock' width='140' textAlign='Right'></e-column>
       </e-columns>
     </ejs-grid>
   </div>

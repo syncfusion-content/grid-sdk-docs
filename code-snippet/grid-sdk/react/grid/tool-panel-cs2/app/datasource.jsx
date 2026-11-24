@@ -1,58 +1,58 @@
 export let data = [
     {
-        "OrderID": 10248,
-        "CustomerID": "VINET",
-        "ShipCity": "Reims",
-        "ShipCountry": "France",
-        "Freight": 32.38
+        "EmployeeID": 1,
+        "Name": "Nancy Davolio",
+        "Title": "Sales Representative",
+        "Country": "USA",
+        "Salary": 52000
     },
     {
-        "OrderID": 10249,
-        "CustomerID": "TOMSP",
-        "ShipCity": "Munster",
-        "ShipCountry": "Germany",
-        "Freight": 11.61
+        "EmployeeID": 2,
+        "Name": "Andrew Fuller",
+        "Title": "Vice President",
+        "Country": "USA",
+        "Salary": 98000
     },
     {
-        "OrderID": 10250,
-        "CustomerID": "HANAR",
-        "ShipCity": "Rio de Janeiro",
-        "ShipCountry": "Brazil",
-        "Freight": 65.83
+        "EmployeeID": 3,
+        "Name": "Janet Leverling",
+        "Title": "Sales Manager",
+        "Country": "UK",
+        "Salary": 76000
     },
     {
-        "OrderID": 10251,
-        "CustomerID": "VICTE",
-        "ShipCity": "Lyon",
-        "ShipCountry": "France",
-        "Freight": 41.34
+        "EmployeeID": 4,
+        "Name": "Margaret Peacock",
+        "Title": "Sales Associate",
+        "Country": "France",
+        "Salary": 48000
     },
     {
-        "OrderID": 10252,
-        "CustomerID": "SUPRD",
-        "ShipCity": "Charleroi",
-        "ShipCountry": "Belgium",
-        "Freight": 51.3
+        "EmployeeID": 5,
+        "Name": "Steven Buchanan",
+        "Title": "Team Lead",
+        "Country": "UK",
+        "Salary": 67000
     },
     {
-        "OrderID": 10253,
-        "CustomerID": "HANAR",
-        "ShipCity": "Rio de Janeiro",
-        "ShipCountry": "Brazil",
-        "Freight": 58.17
+        "EmployeeID": 6,
+        "Name": "Michael Suyama",
+        "Title": "Developer",
+        "Country": "Germany",
+        "Salary": 71000
     },
     {
-        "OrderID": 10254,
-        "CustomerID": "CHOPS",
-        "ShipCity": "Bern",
-        "ShipCountry": "Switzerland",
-        "Freight": 22.98
+        "EmployeeID": 7,
+        "Name": "Robert King",
+        "Title": "Analyst",
+        "Country": "Spain",
+        "Salary": 59000
     },
     {
-        "OrderID": 10255,
-        "CustomerID": "RICSU",
-        "ShipCity": "Geneve",
-        "ShipCountry": "Switzerland",
-        "Freight": 148.33
+        "EmployeeID": 8,
+        "Name": "Laura Callahan",
+        "Title": "Coordinator",
+        "Country": "USA",
+        "Salary": 45000
     }
 ];
