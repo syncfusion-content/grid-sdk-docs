@@ -143,8 +143,9 @@ You can highlight the currently navigated search text using `SearchHelper.Searc
 {% tabs %}
 {% highlight c# %}
 
-this.sfdataGrid.SearchHelper.SearchHighlightBrush = new SolidColorBrush(Colors.Red);
-this.sfdataGrid.SearchHelper.FindNext("TextBox.Text ");
+this.sfDataGrid.SearchHelper.SearchHighlightBrush = new SolidColorBrush(Colors.Red);
+this.sfDataGrid.SearchHelper.AllowSearching = true;
+this.sfDataGrid.SearchHelper.FindNext("TextBox.Text");
 
 {% endhighlight %}
 {% endtabs %}
@@ -156,7 +157,7 @@ You can highlight the foreground color of current navigated search text by using
 {% tabs %}
 {% highlight c# %}
 
-this.sfdataGrid.SearchHelper.SearchForegroundHighlightBrush = new SolidColorBrush(Colors.Red);
+this.sfDataGrid.SearchHelper.SearchForegroundHighlightBrush = new SolidColorBrush(Colors.Red);
 
 {% endhighlight %}
 {% endtabs %}
@@ -208,12 +209,15 @@ Master-details view allows you to search the data by using `SearchHelper.Search`
 {% tabs %}
 {% highlight c# %}
 
+(this.sfDataGrid.DetailsViewDefinition[0] as GridViewDefinition).DataGrid.SearchHelper.AllowSearching = true;
 (this.sfDataGrid.DetailsViewDefinition[0] as GridViewDefinition).DataGrid.SearchHelper.Search(TextBox.Text);
 
 {% endhighlight %}
 {% endtabs %}
 
 ![WinUI DataGrid displays Searched Data](Search_images/winui-datagrid-search-data.png)
+
+N> In a Master-Details view, each DetailsViewDataGrid maintains its own SearchHelper instance. SearchHelper settings defined on the parent grid are **not inherited** by child detail grids. Therefore, all SearchHelper-related properties (such as AllowCaseSensitiveSearch, AllowSearching, SearchType, brushes, and other search customization settings) must be configured separately for each details grid.
 
 ### Navigating cells based on search text in DetailsViewDataGrid
 
@@ -222,6 +226,7 @@ You can navigate to the cells contains the SearchText using `SearchHelper.FindNe
 {% tabs %}
 {% highlight c# %}
 
+(this.sfDataGrid.DetailsViewDefinition[0] as GridViewDefinition).DataGrid.SearchHelper.AllowSearching = true;
 (this.sfDataGrid.DetailsViewDefinition[0] as GridViewDefinition).DataGrid.SearchHelper.FindNext(SearchBox.Text);
 (this.sfDataGrid.DetailsViewDefinition[0] as GridViewDefinition).DataGrid.SearchHelper.FindPrevious(SearchBox.Text);
 
@@ -255,6 +260,7 @@ You can select the records which contains the search text by using `GetSearchedR
 {% highlight c# %}
 
 this.dataGrid.SelectedItems.Clear();
+this.dataGrid.AllowSearching = true;
 this.dataGrid.SearchHelper.Search("SearchText"); 
 var list = this.dataGrid.SearchHelper.GetSearchRecords();
 int recordIndex = this.dataGrid.ResolveToRecordIndex(this.dataGrid.ResolveToRowIndex(list[0].Record));
