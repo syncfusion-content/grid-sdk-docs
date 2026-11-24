@@ -33,7 +33,7 @@ Each item in `toolPanels` is either the panel type name (for example `'Columns'`
 | `position` | Side bar position: `Left` or `Right`. |
 | `isOpen` | Opens the side bar when the Grid is rendered. |
 
-## Columns panel
+## Columns and Filters panel
 
 The Columns panel lists the Grid columns with checkboxes. Clear a checkbox to hide a column and select it to show the column again.
 
@@ -47,6 +47,10 @@ When the `Group` and `Aggregate` modules are injected and `allowGrouping` is `tr
 
 * **Row Groups** - drag a column here to group the Grid by that column. Remove the column from the area to ungroup it.
 * **Values** - drag a column here to add an aggregate for it, and choose the aggregate type (for example Sum or Average) from the menu on the item.
+
+### Filter columns
+
+Add `Filters` to `toolPanels` next to `Columns`, set `allowFiltering` to `true` and inject the `Filter` module. The Filters panel lists every filterable column; expand a column, set the filter and apply it.
 
 The following sample shows the Columns and Filters panels with column reordering, row grouping and aggregates.
 
@@ -63,10 +67,6 @@ The following sample shows the Columns and Filters panels with column reordering
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/grid/tool-panel-cs1" %}
-
-## Filters panel
-
-The Filters panel shows the filter options of every filterable column in one place. Expand a column, set the filter and apply it. To use it, set `allowFiltering` to `true`, add `Filters` to `toolPanels` and inject the `Filter` module. The previous sample includes this panel.
 
 ## Edit panel
 
