@@ -65,7 +65,7 @@ N> It is mandatory to set the [NavigationMode](https://help.syncfusion.com/cr/wi
 
 ## Entering into edit mode
 
-You can enter into edit mode by pressing <kbd>F2</kbd> key or clicking (touch also supported) the cell. You can allow users to edit the cell in single click (OnTap) or double click (OnDoubleTap) by setting [SfTreeGrid.EditTrigger](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.SfGridBase.html#Syncfusion_UI_Xaml_Grids_SfGridBase_EditTrigger) property.
+You can enter into edit mode by pressing <kbd>F2</kbd> key or clicking (touch also supported) the cell. You can allow users to edit the cell in single click (OnTap) or double click (OnDoubleTap) by setting [SfTreeGrid.EditTrigger](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.SfGridBase.html#Syncfusion_UI_Xaml_Grids_SfGridBase_EditTrigger) property. Typing a printable character on the current cell also begins editing. For more information, refer to [Non-Alphanumeric Key Type-to-Edit](#non-alphanumeric-key-type-to-edit).
 
 {% tabs %}
 {% highlight xaml %}
@@ -86,6 +86,59 @@ this.treeGrid.EditTrigger = EditTrigger.OnTap;
 	
 {% endhighlight %}
 {% endtabs %}
+
+## Non-Alphanumeric Key Type-to-Edit
+
+When a cell is the current cell, typing a printable character, including non-alphanumeric characters such as `@`, `#`, `$`, `%`, `&`, `-` and `.`, begins editing that cell. There is no separate property for this behavior. Type-to-edit is available when editing is enabled by [AllowEditing](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.SfGridBase.html#Syncfusion_UI_Xaml_Grids_SfGridBase_AllowEditing) and [NavigationMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.SfGridBase.html#Syncfusion_UI_Xaml_Grids_SfGridBase_NavigationMode) is set to `Cell`.
+
+{% tabs %}
+{% highlight xaml %}
+
+<treeGrid:SfTreeGrid Name="treeGrid"
+                        ChildPropertyName="ReportsTo"
+                        ParentPropertyName="ID"
+                        SelfRelationRootValue="-1"
+                        AllowEditing="True"
+                        NavigationMode="Cell"
+                        AutoGenerateColumns="False"
+                        ItemsSource="{Binding Employees}">
+    <treeGrid:SfTreeGrid.Columns>
+        <treeGrid:TreeGridTextColumn HeaderText="First Name" MappingName="FirstName" />
+        <treeGrid:TreeGridNumericColumn HeaderText="Salary" MappingName="Salary" />
+    </treeGrid:SfTreeGrid.Columns>
+</treeGrid:SfTreeGrid>
+
+{% endhighlight %}
+{% highlight c# %}
+
+using Syncfusion.UI.Xaml.Grids;
+
+this.treeGrid.AllowEditing = true;
+this.treeGrid.NavigationMode = NavigationMode.Cell;
+
+{% endhighlight %}
+{% endtabs %}
+
+The result depends on the column type of the current cell,
+
+* **TreeGridTextColumn** – the typed character replaces the existing value, and the cursor is placed after it. [EditorSelectionBehavior](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.SfGridBase.html#Syncfusion_UI_Xaml_Grids_SfGridBase_EditorSelectionBehavior) does not affect this case.
+* **TreeGridNumericColumn** – only the digits 0 to 9 are applied and replace the existing value. Any other character, such as `-`, `.` or a symbol, opens the editor with the existing value.
+* **Other editable columns** – the editor opens with the existing value.
+* **Non-editable columns** – editing does not begin.
+
+### Cases that do not begin editing
+
+Typing does not begin editing in the following cases,
+
+* A control character, a white-space character such as <kbd>Space</kbd>, or a surrogate character such as an emoji is typed.
+* <kbd>Ctrl</kbd> alone or <kbd>Alt</kbd> alone is pressed with the key. <kbd>Ctrl</kbd> + <kbd>Alt</kbd> (AltGr) is treated as text, so characters from localized keyboards begin editing.
+* [NavigationMode](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.Grids.SfGridBase.html#Syncfusion_UI_Xaml_Grids_SfGridBase_NavigationMode) is not set to `Cell`.
+* The cell is already in edit mode.
+* The cell is read-only or non-editable.
+* The current cell belongs to a template column.
+* The edit is canceled in the [CurrentCellBeginEdit](https://help.syncfusion.com/cr/winui/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_CurrentCellBeginEdit) event. The cell remains unchanged and the typed character is not applied.
+
+N> The `CurrentCellBeginEdit` event does not distinguish editing started by typing from editing started by <kbd>F2</kbd> or a click. Canceling the event cancels all of them.
 
 ## Cursor placement
 
