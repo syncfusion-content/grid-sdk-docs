@@ -61,7 +61,8 @@ export default {
         "GrandTotal",
         "ConditionalFormatting",
         "NumberFormatting",
-        "FieldList"
+        "FieldList",
+        "FullScreen"
       ]
     };
   },

@@ -19,7 +19,7 @@
     values.Name("Amount").Caption("Sold Amount").Add();
 })
 ).GridSettings(new Syncfusion.EJ2.PivotView.PivotViewGridSettings { ColumnWidth = 140 }).DisplayOption(new PivotViewDisplayOption { View = Syncfusion.EJ2.PivotView.View.Both }).Toolbar(new List<string>
-() { "New", "Save", "SaveAs", "Rename", "Remove", "Load", "Grid", "Chart", "Export", "SubTotal", "GrandTotal", "ConditionalFormatting", "NumberFormatting", "FieldList" }).SaveReport("saveReport").LoadReport("loadReport").FetchReport("fetchReport").RenameReport("renameReport").RemoveReport("removeReport").NewReport("newReport").Render()
+() { "New", "Save", "SaveAs", "Rename", "Remove", "Load", "Grid", "Chart", "Export", "SubTotal", "GrandTotal", "ConditionalFormatting", "NumberFormatting", "FieldList", "FullScreen" }).SaveReport("saveReport").LoadReport("loadReport").FetchReport("fetchReport").RenameReport("renameReport").RemoveReport("removeReport").NewReport("newReport").Render()
 <style>
     #pivotview {
         width: 100%;
