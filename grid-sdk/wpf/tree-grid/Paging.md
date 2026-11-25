@@ -179,11 +179,11 @@ public class EmployeeInfo
 
 ## Page size mode
 
-The `PageSizeMode` property determines how records are displayed on a page based on the specified PageSize.
+The [PageSizeMode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_PageSizeMode) property determines how records are displayed on a page based on the specified PageSize.
 
-* All: The number of records displayed on a page is determined by the `PageSize` property. In this mode, both root and child records are considered.
+* **All**: The number of records displayed on a page is determined by the [PageSize](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Controls.DataPager.SfDataPager.html#Syncfusion_UI_Xaml_Controls_DataPager_SfDataPager_PageSize) property. In this mode, both root and child records are considered.
 
-* Root: This is the default mode. The number of root records displayed on a page is determined by the `PageSize` property. In this mode, only root-level records are considered, while child records are displayed along with their corresponding parent records.
+* **Root**: This is the default mode. The number of root records displayed on a page is determined by the [PageSize](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Controls.DataPager.SfDataPager.html#Syncfusion_UI_Xaml_Controls_DataPager_SfDataPager_PageSize) property. In this mode, only root-level records are considered, while child records are displayed along with their corresponding parent records.
 
 {% tabs %}
 {% highlight xaml %}
