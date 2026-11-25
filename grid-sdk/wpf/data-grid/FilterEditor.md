@@ -18,7 +18,7 @@ Before enabling the Filter Editor, ensure filtering is enabled by setting [SfDat
 
 ## Enable Filter Editor
 
-You can enable the Filter Editor by setting the (SfDataGrid.EnableFilterEditor)[https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_EnableFilterEditor] property to `true`. The default value is `false`.
+You can enable the Filter Editor by setting the [SfDataGrid.EnableFilterEditor](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_EnableFilterEditor) property to `true`. The default value is `false`.
 
 When `EnableFilterEditor` is set to `true`, the Filter Editor action is displayed in the column filter popup. The Edit Filter icon is also displayed in the Filter Editor Panel.
 
@@ -84,7 +84,7 @@ The Filter Editor Panel displays the current filter criteria applied to the Grid
 
 The panel is synchronized with the filtering changes performed through the supported Grid filtering options.
 
-You can display the Filter Editor Panel by setting the (SfDataGrid.FilterPanelPosition)[https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_FilterPanelPosition] property to `Top` or `Bottom`. The default value is `None`.
+You can display the Filter Editor Panel by setting the [SfDataGrid.FilterPanelPosition](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Grid.SfDataGrid.html#Syncfusion_UI_Xaml_Grid_SfDataGrid_FilterPanelPosition) property to `Top` or `Bottom`. The default value is `None`.
 
 | Value     | Description                                                |
 |-----------|------------------------------------------------------------|
