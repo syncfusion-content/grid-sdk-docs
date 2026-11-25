@@ -18,12 +18,7 @@ The Status Bar updates automatically when grid data, filtering, or selection cha
 
 Enable the Status Bar by setting `enableStatusBar` to **true** and configure built-in panels through `statusBarSettings.items`.
 
-The following example shows the basic Status Bar layout:
-
-- `TotalRowCount` on the **Left**
-- `FilteredRowCount` on the **Left**
-- `TotalAndFilteredRowCount` on the **Right**
-- `SelectedRowCount` in the **Center**
+The following example demonstrates built-in panel rendering and panel placement.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -37,23 +32,6 @@ The following example shows the basic Status Bar layout:
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/status-bar-cs1" %}
 
 ## Built-in Panels
-
-The following example demonstrates built-in panel rendering and panel placement.
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/typescript/grid/status-bar-cs2/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/status-bar-cs2/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/status-bar-cs2" %}
-
-The Status Bar renders built-in panels by reading each item in `statusBarSettings.items`.
-
-### Status Bar Item Rendering
 
 The Status Bar renders built-in panels by reading each item in `statusBarSettings.items`.
 
@@ -83,7 +61,31 @@ Each panel is registered using the configured `key`, which enables runtime acces
 
 ## Aggregates Panel
 
-The `SelectedCellAggregates` panel displays aggregate values for selected numeric cells. Enable cell selection, select multiple cells, and the Status Bar updates with values such as Sum, Average, Min, Max, or Count.
+The `SelectedCellAggregates` panel displays aggregate values for selected numeric cells. Enable cell selection and select multiple cells to view aggregate values in the Status Bar. Use the `aggregateFunctions` property within `statusPanelParams` to specify the aggregates to display, such as Sum, Avg, Min, Max, or Count. The Status Bar dynamically updates the configured aggregate values based on the selected cells.
+
+The following example demonstrates displaying selected cell aggregates in the Status Bar. The `aggregateFunctions` property in `statusPanelParams` configures `Avg`, `Sum`, and `Max` aggregates for the selected cells.
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/grid-sdk/typescript/grid/status-bar-cs2/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/grid-sdk/typescript/grid/status-bar-cs2/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/status-bar-cs2" %}
+
+## Value Formatting
+
+Status Bar panels support value formatting through `valueFormatter`. Use the valueFormatter property within `statusPanelParams` to customize how values are displayed in Status Bar panels, such as formatting numbers, currency, or percentages.
+
+For example:
+- `1000` → `1K`
+- `$1,500.00`
+- `85.25%`
+
+The following example demonstrates formatting the total row count by using the `valueFormatter` property. The formatter converts the row count value to a locale-specific string.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -96,31 +98,11 @@ The `SelectedCellAggregates` panel displays aggregate values for selected numeri
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/status-bar-cs3" %}
 
-## Value Formatting
-
-Status Bar panels support value formatting through `valueFormatter`. You can use it to format numbers, currency, and percentage values.
-
-For example:
-
-- `1000` → `1K`
-- `1500000` → `1.5M`
-- `$1,500.00`
-- `85.25%`
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/typescript/grid/status-bar-cs4/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/typescript/grid/status-bar-cs4/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/status-bar-cs4" %}
-
 ## Custom Panel
 
-Create a custom Status Bar panel when you need to display application-specific information. Register the custom panel in `statusBarSettings.items` and render your own content in the template.
+Create a custom Status Bar panel when you need to display application-specific information. Register the custom panel in `statusBarSettings.items` and use the `statusPanelParams` property to define a custom template and render your own content in the Status Bar.
+
+The following example demonstrates creating a custom Status Bar panel by configuring a custom template in `statusPanelParams`. The template displays the total revenue based on the panel context.
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
