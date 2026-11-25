@@ -5,7 +5,7 @@ import { sampleData } from './datasource';
 
 class Source extends React.Component<{}, {}>{
     public data: Object[] = sampleData;
-    public rowDropSettings: RowDropSettingsModel = { targetID: ['secondTree', 'thirdTree'] };
+    public rowDropSettings: RowDropSettingsModel = { targetID: ['DestGrid'] };
     public selectionSettings: SelectionSettingsModel = { type: 'Multiple' };
     public style = { marginBottom: '20px' };
     render() {
@@ -25,29 +25,10 @@ class Source extends React.Component<{}, {}>{
 
 class Target extends React.Component<{}, {}>{
     public data: Object[] = [];
-    public rowDropSettings: RowDropSettingsModel = { targetID: ['TreeGrid', 'thirdTree'] };
+    public rowDropSettings: RowDropSettingsModel = { targetID: ['TreeGrid'] };
     public selectionSettings: SelectionSettingsModel = { type: 'Multiple' };
     render() {
-        return <TreeGridComponent treeColumnIndex={1} id='secondTree' allowRowDragAndDrop={true}
-        rowDropSettings={this.rowDropSettings} selectionSettings={this.selectionSettings}
-         childMapping='subtasks' height='275'>
-            <ColumnsDirective>
-              <ColumnDirective field='taskID' headerText='Task ID' width='90' textAlign='Right'></ColumnDirective>
-              <ColumnDirective field='taskName' headerText='Task Name' width='180'></ColumnDirective>
-              <ColumnDirective field='startDate' headerText='Start Date' width='90' format='yMd' textAlign='Right' type='date' />
-              <ColumnDirective field='duration' headerText='Duration' width='80' textAlign='Right' />
-            </ColumnsDirective>
-            <Inject services={[RowDD]}/>
-        </TreeGridComponent>
-    }
-}
-
-class Third extends React.Component<{}, {}>{
-    public data: Object[] = [];
-    public rowDropSettings: RowDropSettingsModel = { targetID: ['TreeGrid', 'secondTree'] };
-    public selectionSettings: SelectionSettingsModel = { type: 'Multiple' };
-    render() {
-        return <TreeGridComponent treeColumnIndex={1} id='thirdTree' allowRowDragAndDrop={true}
+        return <TreeGridComponent treeColumnIndex={1} id='DestGrid' allowRowDragAndDrop={true}
         rowDropSettings={this.rowDropSettings} selectionSettings={this.selectionSettings}
          childMapping='subtasks' height='275'>
             <ColumnsDirective>
@@ -66,7 +47,6 @@ function App(){
     return <div>
             <Source></Source>
             <Target></Target>
-            <Third></Third>
            </div>;
 }
 ReactDOM.render(<App />, document.getElementById('treegrid'));
