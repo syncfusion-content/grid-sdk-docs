@@ -1,44 +1,45 @@
 import { ColumnDirective, ColumnsDirective, GridComponent } from '@syncfusion/ej2-react-grids';
 import { Inject, Find } from '@syncfusion/ej2-react-grids';
+import { ButtonComponent } from '@syncfusion/ej2-react-buttons';
 import * as React from 'react';
 import { data } from './datasource';
- 
+
 function App() {
   const gridInstance = React.useRef<GridComponent | null>(null);
   const [findText, setFindText] = React.useState('');
   const [hasSearched, setHasSearched] = React.useState(false);
- 
+
   function find() {
     if (gridInstance.current && findText.trim()) {
       gridInstance.current.find(findText);
       setHasSearched(true);
     }
   }
- 
+
   function findNext() {
     if (gridInstance.current && hasSearched) {
       gridInstance.current.findNext();
     }
   }
- 
+
   function findPrevious() {
     if (gridInstance.current && hasSearched) {
       gridInstance.current.findPrevious();
     }
   }
- 
+
   function clearFind() {
     gridInstance.current?.clearFind();
     setFindText('');
     setHasSearched(false);
   }
- 
+
   function handleFindTextChange(event: React.ChangeEvent<HTMLInputElement>) {
     setFindText(event.target.value);
     gridInstance.current?.clearFind();
     setHasSearched(false);
   }
- 
+
   return (
     <div>
       <div style={{ paddingBottom: '20px', textAlign: 'left' }}>
@@ -50,10 +51,10 @@ function App() {
           value={findText}
           onChange={handleFindTextChange}
         />
-        <button className="e-control e-btn" style={{ marginLeft: '10px' }} disabled={!findText.trim()} onClick={find}>Find</button>
-        <button className="e-control e-btn" style={{ marginLeft: '10px' }} disabled={!hasSearched} onClick={findNext}>Next</button>
-        <button className="e-control e-btn" style={{ marginLeft: '10px' }} disabled={!hasSearched} onClick={findPrevious}>Previous</button>
-        <button className="e-control e-btn" style={{ marginLeft: '10px' }} disabled={!findText.trim() && !hasSearched} onClick={clearFind}>Clear</button>
+        <ButtonComponent content="Find" style={{ marginLeft: '10px' }} disabled={!findText.trim()} onClick={find} />
+        <ButtonComponent content="Next" style={{ marginLeft: '10px' }} disabled={!hasSearched} onClick={findNext} />
+        <ButtonComponent content="Previous" style={{ marginLeft: '10px' }} disabled={!hasSearched} onClick={findPrevious} />
+        <ButtonComponent content="Clear" style={{ marginLeft: '10px' }} disabled={!findText.trim() && !hasSearched} onClick={clearFind} />
       </div>
       <GridComponent ref={gridInstance} dataSource={data} height={272}>
         <ColumnsDirective>
