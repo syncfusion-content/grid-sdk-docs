@@ -33,6 +33,7 @@ The following table lists the built-in toolbar options and their actions:
 | Number Formatting | Opens a pop-up to apply number formatting to cells |
 | Field List | Opens the field list pop-up to configure the [`e-datasourcesettings`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewDataSourceSettingsBuilder.html) |
 | MDX | Displays the MDX query used to retrieve data from an OLAP data source. **Note**: This option applies only to OLAP data sources. |
+| FullScreen | Expands the Pivot Table to fill the viewport; selecting it again restores the normal layout. `FullScreen` is a toolbar item string. For programmatic control, use `setFullScreen(enable: boolean)`. |
 
 > The order of toolbar options can be changed by simply moving the position of items in the **ToolbarItems** collection. Also if end user wants to remove any toolbar option from getting displayed, it can be simply ignored from adding into the **ToolbarItems** collection.
 

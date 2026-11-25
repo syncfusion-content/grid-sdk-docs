@@ -107,7 +107,7 @@ export class AppComponent {
         this.displayOption = { view: 'Both' } as DisplayOption;
 
         this.toolbarOptions = ['New', 'Save', 'SaveAs', 'Rename', 'Remove', 'Load',
-            'Grid', 'Chart', 'Export', 'SubTotal', 'GrandTotal', 'ConditionalFormatting', 'NumberFormatting', 'FieldList'] as ToolbarItems[];
+            'Grid', 'Chart', 'Export', 'SubTotal', 'GrandTotal', 'ConditionalFormatting', 'NumberFormatting', 'FieldList', 'FullScreen'] as ToolbarItems[];
         this.dataSourceSettings = {
             dataSource: Pivot_Data as IDataSet[],
             expandAll: false,
