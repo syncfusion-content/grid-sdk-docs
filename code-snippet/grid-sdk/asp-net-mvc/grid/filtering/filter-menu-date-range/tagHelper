@@ -1,0 +1,90 @@
+@{
+    var presetModes = new string[] { "Default", "Custom", "Both" };
+    var dateFilter = new
+    {
+        dateRanges = new
+        {
+            enablePresets = false,
+            presetMode = "Default",
+            customPresetRanges = new object[] { }
+        }
+    };
+}
+
+<div style="padding: 10px 0px">
+    <ejs-checkbox id="enablePresets" label="Enable Presets" checked="false" change="onEnablePresetsChange"></ejs-checkbox>
+    <span style="margin-left: 10px">
+        <ejs-checkbox id="enableCustomPresets" label="Enable Custom Presets" checked="false" change="onCustomPresetsChange"></ejs-checkbox>
+    </span>
+    <span style="margin-left: 10px">
+        <ejs-dropdownlist id="presetMode" dataSource="@presetModes" value="@("Default")" width="180px" placeholder="Preset Mode" change="onPresetModeChange"></ejs-dropdownlist>
+    </span>
+</div>
+
+<ejs-grid id="grid" dataSource="@ViewBag.dataSource" allowPaging="true" allowFiltering="true">
+    <e-grid-filterSettings type="Menu"></e-grid-filterSettings>
+    <e-grid-columns>
+        <e-grid-column field="OrderID" headerText="Order ID" textAlign="Right" width="120"></e-grid-column>
+        <e-grid-column field="CustomerID" headerText="Customer ID" width="150"></e-grid-column>
+        <e-grid-column field="OrderDate" headerText="Order Date" width="150" type="date" format="yMd" filter="dateFilter"></e-grid-column>
+        <e-grid-column field="Freight" headerText="Freight" width="120" format="C2" textAlign="Right"></e-grid-column>
+        <e-grid-column field="ShipCountry" headerText="Ship Country" width="150"></e-grid-column>
+    </e-grid-columns>
+</ejs-grid>
+
+<script>
+    var enablePresets = false;
+    var enableCustomPresets = false;
+    var presetMode = 'Default';
+
+    var customRanges = [
+        {
+            label: 'Yesterday',
+            start: new Date(new Date().setDate(new Date().getDate() - 1)),
+            end: new Date(new Date().setDate(new Date().getDate() - 1))
+        },
+        {
+            label: 'Today',
+            start: new Date(),
+            end: new Date()
+        },
+        {
+            label: 'Last 5 Days',
+            start: new Date(new Date().setDate(new Date().getDate() - 4)),
+            end: new Date()
+        },
+        {
+            label: 'Next 5 Days',
+            start: new Date(),
+            end: new Date(new Date().setDate(new Date().getDate() + 4))
+        }
+    ];
+
+    function updateDateRangeSettings() {
+        var grid = document.getElementById("grid").ej2_instances[0];
+        var column = grid.getColumnByField('OrderDate');
+        column.filter = {
+            dateRanges: {
+                enablePresets: enablePresets,
+                presetMode: presetMode,
+                customPresetRanges: enableCustomPresets ? customRanges : []
+            }
+        };
+        grid.refreshColumns();
+    }
+
+    function onEnablePresetsChange(args) {
+        enablePresets = args.checked;
+        updateDateRangeSettings();
+    }
+
+    function onCustomPresetsChange(args) {
+        enableCustomPresets = args.checked;
+        updateDateRangeSettings();
+    }
+
+    function onPresetModeChange(args) {
+        presetMode = args.value;
+        updateDateRangeSettings();
+    }
+</script>

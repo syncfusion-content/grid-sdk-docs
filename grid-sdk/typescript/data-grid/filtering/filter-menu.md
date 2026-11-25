@@ -82,6 +82,33 @@ Here is an example that demonstrates how to show 24 hours time format in filter 
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/filter-menu-cs1" %}
 
+## Date range menu filter
+
+The TypeScript Grid allows you to filter date or datetime columns within a specified date range in the filter menu dialog. By configuring the `dateRanges` property on the column's `filter` object, the filter dialog provides date range filtering capabilities with optional preset ranges.
+
+The date range menu filter can be customized using the following properties of `dateRanges`:
+
+* `enablePresets`: A boolean property that specifies whether to display preset range options (such as Today, This Month, Last Month, etc.) in the filter menu dialog.
+* `presetMode`: Specifies which presets to display when `enablePresets` is enabled. The supported options are:
+  * `Default`: Displays predefined date range presets such as Today, This Month, Last Month, This Year, etc.
+  * `Custom`: Displays only the custom preset ranges defined in the `customPresetRanges` property.
+  * `Both`: Displays both the default predefined presets and the custom preset ranges.
+* `customPresetRanges`: An array of objects defining custom date range presets. Each preset object requires a `label`, `start` date, and `end` date.
+
+You can also dynamically update the `dateRanges` settings (such as enabling or disabling presets, changing the preset mode, or applying custom preset ranges) using external controls such as CheckBox and DropDownList by updating the column's filter configuration.
+
+The following example demonstrates how to configure and dynamically update the date range menu filter in the TypeScript Grid:
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/grid-sdk/typescript/grid/filter-menu-cs5/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/grid-sdk/typescript/grid/filter-menu-cs5/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/grid/filter-menu-cs5" %}
 
 ## Customizing filter menu operators list
 
