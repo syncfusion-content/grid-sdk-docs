@@ -365,8 +365,8 @@ The following table shows the available operators for value filtering:
 | LessThanOrEqualTo| Shows records where the value is less than or equal to the specified value.|
 | Between| Shows records with values between the specified start and end values.|
 | NotBetween| Shows records with values outside the specified start and end values.|
-| Top | Top N members by highest values (client-side only).|
-| Bottom | Bottom N members by lowest values (client-side only).|
+| Top | Selects members with the highest aggregated values (client-side only). Supports three modes: **Items** (default) selects the specified number of members; **Percent** selects the specified percentage of members; **Sum** selects members in descending value order until their cumulative aggregated value reaches or exceeds the specified amount.|
+| Bottom | Selects members with the lowest aggregated values (client-side only). Supports three modes: **Items** (default) selects the specified number of members; **Percent** selects the specified percentage of members; **Sum** selects members in ascending value order until their cumulative aggregated value reaches or exceeds the specified amount.|
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
