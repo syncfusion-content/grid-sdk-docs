@@ -10,7 +10,7 @@ domainurl: https://help.syncfusion.com/grid-sdk
 
 # Status Bar in JavaScript Data Grid
 
-The [JavaScript Data Grid](https://www.syncfusion.com/javascript-ui-controls/js-grid) provides a configurable Status Bar area that displays real-time grid information. It can show built-in panels for row counts, selected row count, and selected cell aggregates, and it also supports custom panels.
+The JavaScript Data Grid provides a configurable Status Bar area that displays real-time grid information. It can show built-in panels for row counts, selected row count, and selected cell aggregates, and it also supports custom panels.
 
 The Status Bar updates automatically when grid data, filtering, or selection changes. You can access a rendered panel at runtime by using `getStatusPanel`.
 
