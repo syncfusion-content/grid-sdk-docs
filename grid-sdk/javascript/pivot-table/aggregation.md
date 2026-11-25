@@ -49,7 +49,7 @@ For each value field, the aggregation type can be set using the property [`type`
 
 | Property | Applicable Types | Description |
 |---|---|---|
-| [`type`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/fieldoptionsmodel#type) | All | Specifies the aggregation function to apply. |
+| [`type`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/datasourcesettings#type) | All | Specifies the aggregation function to apply. |
 | [`baseField`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/fieldoptionsmodel#basefield) | **DifferenceFrom**, **PercentageOfDifferenceFrom**, **PercentageOfParentTotal** | Specifies the reference field to aggregate against. |
 | [`baseItem`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/fieldoptionsmodel#baseitem) | **DifferenceFrom**, **PercentageOfDifferenceFrom** | Specifies the reference member name, or dynamic adjacent tokens (`'(previous)'` / `'(next)'`). |
 | `allowCrossGroupCalculation` | **DifferenceFrom**, **PercentageOfDifferenceFrom** | When using adjacent tokens, determines whether difference calculation continues across parent group boundaries (`true`) or resets within each group (`false`). |
