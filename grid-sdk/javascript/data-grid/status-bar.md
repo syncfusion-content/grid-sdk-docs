@@ -10,7 +10,7 @@ domainurl: https://help.syncfusion.com/grid-sdk
 
 # Status Bar in JavaScript Data Grid
 
-The [JavaScript Data Grid](https://www.syncfusion.com/javascript-ui-controls/js-grid) provides a configurable Status Bar area that displays real-time grid information. It can show built-in panels for row counts, selected row count, and selected cell aggregates, and it also supports custom panels.
+The JavaScript Data Grid provides a configurable Status Bar area that displays real-time grid information. It can show built-in panels for row counts, selected row count, and selected cell aggregates, and it also supports custom panels.
 
 The Status Bar updates automatically when grid data, filtering, or selection changes. You can access a rendered panel at runtime by using `getStatusPanel`.
 
@@ -21,11 +21,11 @@ Enable the Status Bar by setting `enableStatusBar` to **true** and configure bui
 The following example demonstrates built-in panel rendering and panel placement.
 
 {% tabs %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/status-bar-cs1/index.html %}
-{% endhighlight %}
 {% highlight js tabtitle="index.js" %}
 {% include code-snippet/grid-sdk/javascript/grid/status-bar-cs1/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/grid-sdk/javascript/grid/status-bar-cs1/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -66,11 +66,11 @@ The `SelectedCellAggregates` panel displays aggregate values for selected numeri
 The following example demonstrates displaying selected cell aggregates in the Status Bar. The `aggregateFunctions` property in `statusPanelParams` configures `Avg`, `Sum`, and `Max` aggregates for the selected cells.
 
 {% tabs %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/status-bar-cs2/index.html %}
-{% endhighlight %}
 {% highlight js tabtitle="index.js" %}
 {% include code-snippet/grid-sdk/javascript/grid/status-bar-cs2/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/grid-sdk/javascript/grid/status-bar-cs2/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -88,11 +88,11 @@ For example:
 The following example demonstrates formatting the total row count by using the `valueFormatter` property. The formatter converts the row count value to a locale-specific string.
 
 {% tabs %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/status-bar-cs3/index.html %}
-{% endhighlight %}
 {% highlight js tabtitle="index.js" %}
 {% include code-snippet/grid-sdk/javascript/grid/status-bar-cs3/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/grid-sdk/javascript/grid/status-bar-cs3/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
@@ -105,11 +105,11 @@ Create a custom Status Bar panel when you need to display application-specific i
 The following example demonstrates creating a custom Status Bar panel by configuring a custom template in `statusPanelParams`. The template displays the total revenue based on the panel context.
 
 {% tabs %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/status-bar-cs4/index.html %}
-{% endhighlight %}
 {% highlight js tabtitle="index.js" %}
 {% include code-snippet/grid-sdk/javascript/grid/status-bar-cs4/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/grid-sdk/javascript/grid/status-bar-cs4/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
