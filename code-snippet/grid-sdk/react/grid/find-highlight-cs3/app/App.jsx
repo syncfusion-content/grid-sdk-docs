@@ -1,5 +1,6 @@
 import { ColumnDirective, ColumnsDirective, GridComponent } from '@syncfusion/ej2-react-grids';
 import { Inject, Find } from '@syncfusion/ej2-react-grids';
+import { ButtonComponent } from '@syncfusion/ej2-react-buttons';
 import * as React from 'react';
 import { data } from './datasource';
  
@@ -54,10 +55,10 @@ function App() {
           value={findText}
           onChange={handleFindTextChange}
         />
-        <button className="e-control e-btn" style={{ marginLeft: '10px' }} disabled={!findText.trim()} onClick={find}>Find</button>
-        <button className="e-control e-btn" style={{ marginLeft: '10px' }} disabled={!hasSearched} onClick={findNext}>Next</button>
-        <button className="e-control e-btn" style={{ marginLeft: '10px' }} disabled={!hasSearched} onClick={findPrevious}>Previous</button>
-        <button className="e-control e-btn" style={{ marginLeft: '10px' }} disabled={!findText.trim() && !hasSearched} onClick={clearFind}>Clear</button>
+        <ButtonComponent content="Find" style={{ marginLeft: '10px' }} disabled={!findText.trim()} onClick={find} />
+        <ButtonComponent content="Next" style={{ marginLeft: '10px' }} disabled={!hasSearched} onClick={findNext} />
+        <ButtonComponent content="Previous" style={{ marginLeft: '10px' }} disabled={!hasSearched} onClick={findPrevious} />
+        <ButtonComponent content="Clear" style={{ marginLeft: '10px' }} disabled={!findText.trim() && !hasSearched} onClick={clearFind} />
       </div>
       <GridComponent ref={gridInstance} dataSource={data} height={272}>
         <ColumnsDirective>
