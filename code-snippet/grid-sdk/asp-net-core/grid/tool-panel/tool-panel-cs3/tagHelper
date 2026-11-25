@@ -1,0 +1,19 @@
+<ejs-grid id="grid" dataSource="@ViewBag.dataSource" height="320px" enableToolPanel="true">
+    <e-grid-columns>
+        <e-grid-column field="ProductID" headerText="Product ID" width="140" textAlign="Right"></e-grid-column>
+        <e-grid-column field="ProductName" headerText="Product Name" width="140"></e-grid-column>
+        <e-grid-column field="Category" headerText="Category" width="140"></e-grid-column>
+        <e-grid-column field="UnitPrice" headerText="Unit Price" width="140" textAlign="Right" format="C2"></e-grid-column>
+        <e-grid-column field="UnitsInStock" headerText="Units In Stock" width="140" textAlign="Right"></e-grid-column>
+    </e-grid-columns>
+    <e-grid-toolpanelsettings position="Left" width="300">
+        <e-toolpanels>
+            <e-toolpanel type="Columns"></e-toolpanel>
+            <e-toolpanel type="Custom" template="#customPanelTemplate"></e-toolpanel>
+        </e-toolpanels>
+    </e-grid-toolpanelsettings>
+</ejs-grid>
+
+<script id="customPanelTemplate" type="text/x-template">
+    <div class="custom-panel"><h4>Product Summary</h4><p>Total products: 8</p><p>Select a row to review the product here.</p></div>
+</script>
