@@ -14,7 +14,7 @@ domainurl: ##DomainURL##
 
 End users can perform calculations on groups of values (specifically for value fields placed in the value axis) by using different aggregation types. By default, values are combined by summing them. Additional aggregation types are described below.
 
-> Numeric fields support all aggregation types listed below, except **CalculatedField**. Fields of type string, date, datetime, boolean, and similar types support only **Count** and **DistinctCount** aggregation.
+> Numeric fields support all aggregation types listed below, except **CalculatedField**. Date and datetime fields support **Min**, **Max**, **Count**, and **DistinctCount** aggregation. Fields of type string, boolean, and similar types support only **Count** and **DistinctCount** aggregation.
 
 | Operator | Description |
 |------|-------------|
@@ -22,8 +22,8 @@ End users can perform calculations on groups of values (specifically for value f
 | Product| Displays the product of the selected field values.|
 | Count| Displays the number of records for the selected field.|
 | DistinctCount| Displays the number of unique records for the selected field.|
-| Min| Displays the minimum value for the selected field.|
-| Max| Displays the maximum value for the selected field.|
+| Min| Displays the minimum value for the selected field. For date or datetime fields, displays the earliest date or datetime value.|
+| Max| Displays the maximum value for the selected field. For date or datetime fields, displays the latest date or datetime value.|
 | Avg| Displays the average (mean) of the selected field values.|
 | Median| Displays the median value for the selected field.|
 | Index| Displays the index value for the selected field data.|
@@ -31,7 +31,7 @@ End users can perform calculations on groups of values (specifically for value f
 | SampleStDev| Displays the sample standard deviation for the selected field.|
 | PopulationVar| Displays the variance of the population for the selected field.|
 | SampleVar| Displays the sample variance for the selected field.|
-| RunningTotals| Displays the running total for the selected field values.|
+| RunningTotals| Displays the running total for the selected field values. Set `runningTotalDirection` on the value field to control whether it accumulates across columns in each row (`'Row'`) or down rows in each column (`'Column'`).|
 | PercentageOfRunningTotals| Cumulative percentage of running totals (client-side engine only).|
 | DifferenceFrom| Displays the difference relative to a specific base item or adjacent member (`'(previous)'` / `'(next)'`) in the base field. Configured using `baseField`, `baseItem`, and optionally `allowCrossGroupCalculation`.|
 | PercentageOfDifferenceFrom| Displays the percentage difference relative to a specific base item or adjacent member (`'(previous)'` / `'(next)'`) in the base field. Configured using `baseField`, `baseItem`, and optionally `allowCrossGroupCalculation`.|
@@ -45,7 +45,7 @@ End users can perform calculations on groups of values (specifically for value f
 
 ## Assigning aggregation type for value fields through API
 
-For each value field, the aggregation type can be set using the property [`type`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/datasourcesettings#type) in [`values`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/dataSourceSettings#values). Meanwhile, aggregation types like **DifferenceFrom** and **PercentageOfDifferenceFrom** can check for specific field of specific item using [`baseField`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/fieldoptionsmodel#basefield) and [`baseItem`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/fieldoptionsmodel#baseitem) properties. Likewise, **PercentageOfParentTotal** type can for specific field using [`baseField`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/fieldoptionsmodel#basefield) property. For instance, the aggregation type **DifferenceFrom** would intake the specified field and its corresponding member as input and its value is compared across other members in the same field and also across different fields to formulate an appropriate output value.
+For each value field, the aggregation type can be set using the property [`type`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/fieldoptionsmodel#type) in [`values`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/dataSourceSettings#values). Meanwhile, aggregation types like **DifferenceFrom** and **PercentageOfDifferenceFrom** can check for specific field of specific item using [`baseField`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/fieldoptionsmodel#basefield) and [`baseItem`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/fieldoptionsmodel#baseitem) properties. Likewise, **PercentageOfParentTotal** type can for specific field using [`baseField`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/fieldoptionsmodel#basefield) property. For instance, the aggregation type **DifferenceFrom** would intake the specified field and its corresponding member as input and its value is compared across other members in the same field and also across different fields to formulate an appropriate output value.
 
 | Property | Applicable Types | Description |
 |---|---|---|
@@ -53,6 +53,7 @@ For each value field, the aggregation type can be set using the property [`type`
 | [`baseField`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/fieldoptionsmodel#basefield) | **DifferenceFrom**, **PercentageOfDifferenceFrom**, **PercentageOfParentTotal** | Specifies the reference field to aggregate against. |
 | [`baseItem`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/fieldoptionsmodel#baseitem) | **DifferenceFrom**, **PercentageOfDifferenceFrom** | Specifies the reference member name, or dynamic adjacent tokens (`'(previous)'` / `'(next)'`). |
 | `allowCrossGroupCalculation` | **DifferenceFrom**, **PercentageOfDifferenceFrom** | When using adjacent tokens, determines whether difference calculation continues across parent group boundaries (`true`) or resets within each group (`false`). |
+| `runningTotalDirection` | **RunningTotals**, **PercentageOfRunningTotals** | Sets the direction used to calculate running totals. |
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -136,7 +137,7 @@ The Pivot Table component supports adding the same field to the [`values`](https
 
 Each instance is treated as a separate configuration and maintains its own:
 
-* Aggregation type ([`type`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/datasourcesettings#type))
+* Aggregation type ([`type`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/fieldoptionsmodel#type))
 * Display caption ([`caption`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/fieldoptionsmodel#caption))
 * Number format (resolved independently in the number formatting dialog)
 * Base field ([`baseField`](https://ej2.syncfusion.com/javascript/documentation/api/pivotview/fieldoptionsmodel#basefield))
