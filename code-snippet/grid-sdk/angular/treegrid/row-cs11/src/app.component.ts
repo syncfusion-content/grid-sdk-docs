@@ -11,7 +11,7 @@ import { sampleData } from './datasource';
     standalone: true,
     selector: 'app-container',
     template: `<div>
-                    <div style="float:left;width:32%">
+                    <div style="float:left;width:49%">
                         <ejs-treegrid id='TreeGrid' [dataSource]='data' [allowRowDragAndDrop]='true' height='250' [treeColumnIndex]='1' [rowDropSettings]='first_treeDrop'
                              [selectionSettings]='selectionSettings' childMapping='subtasks' >
                             <e-columns>
@@ -22,19 +22,8 @@ import { sampleData } from './datasource';
                             </e-columns>
                         </ejs-treegrid>
                     </div>
-                    <div style="float:left;width:32%">
-                        <ejs-treegrid id='secondTree' height='250' [allowRowDragAndDrop]='true' [treeColumnIndex]='1' [rowDropSettings]='second_treeDrop' childMapping='subtasks'
-                            [selectionSettings]='selectionSettings'>
-                            <e-columns>
-                                <e-column field='taskID' headerText='Task ID' [isPrimaryKey]='true' textAlign='Right' width=90></e-column>
-                                <e-column field='taskName' headerText='Task Name' textAlign='Left' width=180></e-column>
-                                <e-column field='startDate' headerText='Start Date' textAlign='Right' format='yMd' width=90></e-column>
-                                <e-column field='duration' headerText='Duration' textAlign='Right' width=80></e-column>
-                            </e-columns>
-                         </ejs-treegrid>
-                    </div>
-                    <div style="float:right;width:32%">
-                        <ejs-treegrid id='thirdTree' height='250' [allowRowDragAndDrop]='true' [treeColumnIndex]='1' [rowDropSettings]='third_treeDrop' childMapping='subtasks'
+                    <div style="float:left;width:49%">
+                        <ejs-treegrid id='destTree' height='250' [allowRowDragAndDrop]='true' [treeColumnIndex]='1' [rowDropSettings]='second_treeDrop' childMapping='subtasks'
                             [selectionSettings]='selectionSettings'>
                             <e-columns>
                                 <e-column field='taskID' headerText='Task ID' [isPrimaryKey]='true' textAlign='Right' width=90></e-column>
@@ -50,13 +39,11 @@ export class AppComponent implements OnInit {
     public data?: Object[];
     public first_treeDrop?: Object;
     public second_treeDrop?: Object;
-    public third_treeDrop?: Object;
     public selectionSettings?: Object;
     ngOnInit(): void {
         this.data = sampleData;
         this.selectionSettings = { type: 'Multiple' };
-        this.first_treeDrop = { targetID: ['secondTree', 'thirdTree'] };
-        this.second_treeDrop = { targetID: ['TreeGrid', 'thirdTree'] };
-        this.third_treeDrop = { targetID: ['TreeGrid', 'secondTree'] };
+        this.first_treeDrop = { targetID: ['destTree'] };
+        this.second_treeDrop = { targetID: ['TreeGrid'] };
     }
 }
