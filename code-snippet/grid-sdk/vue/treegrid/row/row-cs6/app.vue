@@ -8,15 +8,7 @@
                 <e-column field='startDate' headerText='Start Date' textAlign='Right' format='yMd' width=120></e-column>
                 <e-column field="duration" headerText="Duration" width="90"></e-column></e-columns>
         </ejs-treegrid>
-        <ejs-treegrid id='secondTree' :allowRowDragAndDrop='true' height='315' :treeColumnIndex='1' :rowDropSettings='rowDrops' :selectionSettings='selectionSettings' childMapping='subtasks' >
-            <e-columns>
-                <e-column field="taskID" headerText="Task ID" width="120" isPrimaryKey="true"></e-column>
-                <e-column field="taskName" headerText="Task Name" width="220"></e-column>
-                <e-column field='startDate' headerText='Start Date' textAlign='Right' format='yMd' width=120></e-column>
-                <e-column field="duration" headerText="Duration" width="90"></e-column>
-            </e-columns>
-        </ejs-treegrid>
-        <ejs-treegrid id='thirdTree' :allowRowDragAndDrop='true' height='315' :treeColumnIndex='1' :rowDropSettings='rowDropsThird' :selectionSettings='selectionSettings' childMapping='subtasks' >
+        <ejs-treegrid id='DestTree' :allowRowDragAndDrop='true' height='315' :treeColumnIndex='1' :rowDropSettings='rowDrops' :selectionSettings='selectionSettings' childMapping='subtasks' >
             <e-columns>
                 <e-column field="taskID" headerText="Task ID" width="120" isPrimaryKey="true"></e-column>
                 <e-column field="taskName" headerText="Task Name" width="220"></e-column>
@@ -44,9 +36,8 @@ components: {
             return {
                 data: sampleData,
                 selectionSettings: { type: 'Multiple' },
-                rowDrop: { targetID: ['secondTree', 'thirdTree'] },
-                rowDrops: { targetID: ['TreeGrid', 'thirdTree'] },
-                rowDropsThird: { targetID: ['TreeGrid', 'secondTree'] }
+                rowDrop: { targetID: ['DestTree'] },
+                rowDrops: { targetID: ['TreeGrid'] }
             };
         },
         provide: {
