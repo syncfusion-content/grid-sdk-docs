@@ -1,9 +1,9 @@
 ---
 layout: post
-title: WebMCP Integration in Blazor Grid | Syncfusion®
-description: WebMCP integration in Blazor DataGrid explains setup, tool registration, configuration, and API reference with code examples.
+title: WebMCP Integration in Blazor DataGrid | Syncfusion
+description: Learn how to integrate WebMCP with the Blazor DataGrid to enable AI interaction, configure tools, and call grid APIs from the browser.
 platform: grid-sdk
-control: WebMCP
+control: DataGrid
 documentation: ug
 ---
 
