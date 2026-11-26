@@ -724,7 +724,7 @@ The Blazor DataGrid provides the [IsRowSelectable](https://help.syncfusion.com/c
 
 The `IsRowSelectable` property accepts a predicate function (`Func<object, bool>`) that receives the current row data and returns **true** or **false** to determine whether the row can be selected. Rows for which the predicate returns **false** are treated as non-selectable and are excluded from both user-initiated and programmatic selection operations. When the property is not set, all rows are selectable.
 
-This feature supports row-based selection modes, including checkbox selection. The selectability result is evaluated and cached for each record to improve performance during selection-related operations.
+This feature supports row-based selection modes, including checkbox selection. The selectable state is evaluated and cached for each record to improve performance during selection-related operations.
 
 {% tabs %}
 {% highlight razor tabtitle="Index.razor" %}
@@ -804,7 +804,7 @@ public class OrderDetails
 > **Limitations**
 >
 > * The property is ignored when the Grid is configured for cell selection.
-> * For remote data sources, row selectability is evaluated only for records available in the current server response.
+> * For remote data sources, row selection eligibility is evaluated only for records available in the current server response.
 > * The selectable state is cached per record and is refreshed only during data-processing operations such as filtering, searching, editing, refresh actions, or when new data is received from a remote data source.
 > * Rows that are evaluated as non-selectable are automatically excluded from user selection interactions, [SelectRowAsync](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.SfGrid-1.html#Syncfusion_Blazor_Grids_SfGrid_1_SelectRowAsync_System_Int32_System_Nullable_System_Boolean__System_Boolean_), [SelectRowsAsync](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.SfGrid-1.html#Syncfusion_Blazor_Grids_SfGrid_1_SelectRowsAsync_System_Int32___), **Select All** operations, and persisted selection tracking.
 > * If a previously selected record becomes non-selectable after re-evaluation, it is automatically removed from the persisted selection collection.
