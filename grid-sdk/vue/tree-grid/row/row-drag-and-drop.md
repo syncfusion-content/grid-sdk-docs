@@ -62,7 +62,8 @@ To drag and drop rows between multiple TreeGrids, enable the [`allowRowDragAndDr
 {% include code-snippet/grid-sdk/vue/treegrid/row/row-cs6/app.vue %}
 {% endhighlight %}
 {% endtabs %}
-        {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/treegrid/row/row-cs6" %}
+        
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/treegrid/row/row-cs6" %}
 
 
 ## Drag and drop events
