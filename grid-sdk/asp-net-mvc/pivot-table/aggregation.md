@@ -31,7 +31,7 @@ End users can perform calculations on groups of values (specifically for value f
 | SampleStDev| Displays the sample standard deviation for the selected field.|
 | PopulationVar| Displays the variance of the population for the selected field.|
 | SampleVar| Displays the sample variance for the selected field.|
-| RunningTotals| Displays the running total for the selected field values. Set `RunningTotalDirection` on the value field to control whether it accumulates across columns in each row (`'Row'`) or down rows in each column (`'Column'`).|
+| RunningTotals| Displays the running total for the selected field values.|
 | PercentageOfRunningTotals| Cumulative percentage of running totals (client-side engine only).|
 | DifferenceFrom| Displays the difference relative to a specific base item or adjacent member (`'(previous)'` / `'(next)'`) in the base field. Configured using `BaseField`, `BaseItem`, and optionally `AllowCrossGroupCalculation`.|
 | PercentageOfDifferenceFrom| Displays the percentage difference relative to a specific base item or adjacent member (`'(previous)'` / `'(next)'`) in the base field. Configured using `BaseField`, `BaseItem`, and optionally `AllowCrossGroupCalculation`.|
@@ -53,7 +53,6 @@ For each value field, the aggregation type can be set using the property [`Type`
 | [`BaseField`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewRow.html#Syncfusion_EJ2_PivotView_PivotViewRow_BaseField) | [**SummaryTypes.DifferenceFrom**](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.SummaryTypes.html), [**SummaryTypes.PercentageOfDifferenceFrom**](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.SummaryTypes.html), [**SummaryTypes.PercentageOfParentTotal**](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.SummaryTypes.html) | Specifies the reference field to aggregate against. |
 | [`BaseItem`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.PivotViewRow.html#Syncfusion_EJ2_PivotView_PivotViewRow_BaseItem) | [**SummaryTypes.DifferenceFrom**](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.SummaryTypes.html), [**SummaryTypes.PercentageOfDifferenceFrom**](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.SummaryTypes.html) | Specifies the reference member name, or dynamic adjacent tokens (`'(previous)'` / `'(next)'`). |
 | `AllowCrossGroupCalculation` | [**SummaryTypes.DifferenceFrom**](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.SummaryTypes.html), [**SummaryTypes.PercentageOfDifferenceFrom**](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.PivotView.SummaryTypes.html) | When using adjacent tokens, determines whether difference calculation continues across parent group boundaries (`true`) or resets within each group (`false`). |
-| `RunningTotalDirection` | **RunningTotals**, **PercentageOfRunningTotals** | Sets the direction used to calculate running totals. |
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}

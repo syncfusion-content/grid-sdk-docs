@@ -33,7 +33,6 @@ The following table lists the built-in toolbar options and their actions:
 | Number Formatting | Opens a pop-up to apply number formatting to cells |
 | Field List | Opens the field list pop-up to configure the [`dataSourceSettings`](https://ej2.syncfusion.com/react/documentation/api/pivotview/datasourcesettings) |
 | MDX | Displays the MDX query used to retrieve data from an OLAP data source. **Note**: This option applies only to OLAP data sources. |
-| FullScreen | Expands the Pivot Table to fill the viewport; selecting it again restores the normal layout. `FullScreen` is a toolbar item string. For programmatic control, use `setFullScreen(enable: boolean)`. |
 
 > The order of toolbar options can be changed by reordering items in the **ToolbarItems** collection. To remove a built-in option, simply omit it from the collection.
 
