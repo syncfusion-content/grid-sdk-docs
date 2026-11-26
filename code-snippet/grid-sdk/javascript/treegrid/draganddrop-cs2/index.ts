@@ -8,7 +8,7 @@ let treegrid: TreeGrid = new TreeGrid({
     treeColumnIndex: 1,
     childMapping: 'subtasks',
     allowRowDragAndDrop: true,
-    rowDropSettings: { targetID: ['secondTree', 'thirdTree'] },
+    rowDropSettings: { targetID: ['destTree'] },
     selectionSettings: { type: 'Multiple' },
     columns: [
             { field: 'taskID', headerText: 'Task ID', isPrimaryKey: true, width: 90, textAlign: 'Right' },
@@ -21,12 +21,12 @@ let treegrid: TreeGrid = new TreeGrid({
 });
 treegrid.appendTo('#TreeGrid');
 
-let secondTree: TreeGrid = new TreeGrid({
+let destTree: TreeGrid = new TreeGrid({
     dataSource: [],
     treeColumnIndex: 1,
     childMapping: 'subtasks',
     allowRowDragAndDrop: true,
-    rowDropSettings: { targetID: ['TreeGrid', 'thirdTree'] },
+    rowDropSettings: { targetID: ['TreeGrid'] },
     selectionSettings: { type: 'Multiple' },
     columns: [
             { field: 'taskID', headerText: 'Task ID', isPrimaryKey: true, width: 90, textAlign: 'Right' },
@@ -37,22 +37,5 @@ let secondTree: TreeGrid = new TreeGrid({
             { field: 'duration', headerText: 'Duration', width: 80, textAlign: 'Right' }
     ]
 });
-secondTree.appendTo('#secondTree');
+destTree.appendTo('#destTree');
 
-let thirdTree: TreeGrid = new TreeGrid({
-    dataSource: [],
-    treeColumnIndex: 1,
-    childMapping: 'subtasks',
-    allowRowDragAndDrop: true,
-    rowDropSettings: { targetID: ['TreeGrid', 'secondTree'] },
-    selectionSettings: { type: 'Multiple' },
-    columns: [
-            { field: 'taskID', headerText: 'Task ID', isPrimaryKey: true, width: 90, textAlign: 'Right' },
-            { field: 'taskName', headerText: 'Task Name', width: 180 },
-            {
-                field: 'startDate', headerText: 'Start Date', width: 90, textAlign: 'Right', type: 'date',format: 'yMd'
-            },
-            { field: 'duration', headerText: 'Duration', width: 80, textAlign: 'Right' }
-    ]
-});
-thirdTree.appendTo('#thirdTree');
