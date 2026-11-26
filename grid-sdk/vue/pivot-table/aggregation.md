@@ -56,6 +56,7 @@ For each value field, the aggregation type can be set using the property [`type`
 | `runningTotalDirection` | **RunningTotals**, **PercentageOfRunningTotals** | Sets the direction used to calculate running totals. |
 
 
+
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
 {% include code-snippet/grid-sdk/vue/pivot-table/default-cs1/app-composition.vue %}
