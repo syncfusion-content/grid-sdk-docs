@@ -177,11 +177,51 @@ public class EmployeeInfo
 
 ![WPF TreeGrid diplays Multiple Pages using SfDataPager](paging_images/wpf-treeGrid-multiple-page.png)
 
-### Limitations
+## Page size mode
+
+The [PageSizeMode](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.TreeGrid.SfTreeGrid.html#Syncfusion_UI_Xaml_TreeGrid_SfTreeGrid_PageSizeMode) property determines how records are displayed on a page based on the specified PageSize.
+
+* **All**: The number of records displayed on a page is determined by the [PageSize](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Controls.DataPager.SfDataPager.html#Syncfusion_UI_Xaml_Controls_DataPager_SfDataPager_PageSize) property. In this mode, both root and child records are considered.
+
+* **Root**: This is the default mode. The number of root records displayed on a page is determined by the [PageSize](https://help.syncfusion.com/cr/wpf/Syncfusion.UI.Xaml.Controls.DataPager.SfDataPager.html#Syncfusion_UI_Xaml_Controls_DataPager_SfDataPager_PageSize) property. In this mode, only root-level records are considered, while child records are displayed along with their corresponding parent records.
+
+{% tabs %}
+{% highlight xaml %}
+<Grid>
+    <Grid.RowDefinitions>
+        <RowDefinition Height="*" />
+        <RowDefinition Height="Auto" />
+    </Grid.RowDefinitions>
+
+    <syncfusion:SfTreeGrid 
+            x:Name="treeGrid"
+            Grid.Row="0"
+            AutoGenerateColumns="True"
+            ItemsSource="{Binding ElementName=sfDataPager, Path=PagedSource}"
+            SelfRelationRootValue="-1"
+            AutoExpandMode="AllNodesExpanded"
+            ParentPropertyName="ID"
+            PageSizeMode="All"
+            ChildPropertyName="ReportsTo">
+    </syncfusion:SfTreeGrid>
+
+    <datapager:SfDataPager
+            x:Name="sfDataPager"
+            Grid.Row="1"
+            Orientation="Horizontal"
+            NumericButtonCount="7"
+            PageSize="3"
+            Source="{Binding Employees}" />
+</Grid>
+{% endhighlight %}
+{% endtabs %}
+
+![Page Size Mode in WPF TreeGrid](paging_images/wpf-treegrid-pagesizemode.png)
+
+## Limitations
 
 1. Paging is not supported when using `SfTreeGrid` in unbound mode (TreeGridUnBoundView).
 2. `SfDataPager`’s on‑demand loading functionality is not supported.
-3. **Child nodes** are not considered in page size calculation.
-4. Selection should not be maintained when moving from one page to another.
-5. **Sorting and Filtering** are applied across all pages. However, node reordering occurs only within each individual page.
-6. The **data operations** such as Add, Replace, Remove, Insert, and Move are not supported.
+3. Selection should not be maintained when moving from one page to another.
+4. **Sorting and Filtering** are applied across all pages. However, node reordering occurs only within each individual page.
+5. The **data operations** such as Add, Replace, Remove, Insert, and Move are not supported.
