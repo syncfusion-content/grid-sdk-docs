@@ -70,7 +70,7 @@ Enable WebMCP by setting `EnableWebMcp` to `true`. Optionally, define a `Name` i
   private List<Order> Orders { get; set; } = new()
     {
         new() { OrderID = 10248, CustomerID = "VINET", ShipCountry = "Reims", Freight = 32.38 },
-        new() { OrderID = 10249, CustomerID = "TOMSP", ShipCountry = "Münster", Freight = 11.61 },
+        new() { OrderID = 10249, CustomerID = "TOMSP", ShipCountry = "Munster", Freight = 11.61 },
         new() { OrderID = 10250, CustomerID = "HANAR", ShipCountry = "Reims", Freight = 65.83 },
         new() { OrderID = 10251, CustomerID = "VICTE", ShipCountry = "Lyon", Freight = 41.34 },
         new() { OrderID = 10252, CustomerID = "SUPRD", ShipCountry = "Charleroi", Freight = 51.30 },
@@ -393,7 +393,7 @@ Configure WebMCP tools with custom descriptions and enable or disable specific t
     private List<Order> Orders { get; set; } = new()
     {
         new() { OrderID = 10248, CustomerID = "VINET", ShipCountry = "Reims" },
-        new() { OrderID = 10249, CustomerID = "TOMSP", ShipCountry = "Münster"},
+        new() { OrderID = 10249, CustomerID = "TOMSP", ShipCountry = "Munster"},
         new() { OrderID = 10250, CustomerID = "HANAR", ShipCountry = "Reims"},
         new() { OrderID = 10251, CustomerID = "VICTE", ShipCountry = "Lyon"},
         new() { OrderID = 10252, CustomerID = "SUPRD", ShipCountry = "Charleroi"},
