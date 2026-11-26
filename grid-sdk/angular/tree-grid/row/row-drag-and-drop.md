@@ -114,7 +114,8 @@ To drag and drop rows between multiple TreeGrids, enable the [allowRowDragAndDro
 {% include code-snippet/grid-sdk/angular/treegrid/row-cs11/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  {% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/row-cs11" %}
+
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/row-cs11" %}
 
 
 ## Drag and drop to custom component 
