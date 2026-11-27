@@ -88,7 +88,7 @@ The following example demonstrates setting the [allowTextWrap](https://ej2.syncf
 
  {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/grid/autowrap-cs1" %}
 
- ## Enable or disable cell text selection
+## Enable or disable cell text selection
 
 The Data Grid supports cell text selection by default, allowing users to select text within grid cells, group captions, and summary rows using standard browser text selection features. However, in some scenarios, text selection may need to be disabled to help protect sensitive information and prevent users from copying important data. To disable cell text selection, set the `allowTextSelection` property to `false`.
 
