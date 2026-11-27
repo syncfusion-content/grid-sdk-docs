@@ -1,7 +1,7 @@
 ---
 layout: post
 title: WebMCP Getting Started with JavaScript Pivot Table | Syncfusion
-description: Configure browser-based WebMCP tools for the Syncfusion JavaScript Pivot Table.
+description: Learn to enable browser-based WebMCP tools in the Syncfusion JavaScript Pivot Table and configure the core adapter and tool settings.
 platform: grid-sdk
 control: WebMCP
 documentation: ug
@@ -16,7 +16,7 @@ The `WebMcpPivotView` adapter runs in the browser and registers tools through `d
 
 ## Browser requirements
 
-WebMCP is experimental. The [Chrome WebMCP documentation](https://developer.chrome.com/docs/ai/webmcp) describes an origin trial beginning with Chrome 149 and local testing with `chrome://flags/#enable-webmcp-testing`. Enable the flag and relaunch Chrome for local testing, or follow the current origin-trial instructions for an eligible deployed origin. Other browser/version support is not established by that documentation.
+This browser API is experimental. The [Chrome WebMCP documentation](https://developer.chrome.com/docs/ai/webmcp) describes an origin trial beginning with Chrome 149 and local testing with `chrome://flags/#enable-webmcp-testing`. Enable the flag and relaunch Chrome for local testing, or follow the current origin-trial instructions for an eligible deployed origin. Other browser/version support is not established by that documentation.
 
 The page must expose `document.modelContext.registerTool`. The adapter skips registration and logs a warning if this API is unavailable. The official WebMCP setup does not require the extension or API key mentioned in some unrelated demos.
 
