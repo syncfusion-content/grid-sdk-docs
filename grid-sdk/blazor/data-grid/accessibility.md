@@ -291,8 +291,6 @@ Keyboard actions are grouped into six categories based on the grid area where th
 | CopyWithHeaders | Ctrl+Shift+H | ⌘+⇧+H | Copy selected cells along with their column headers. |
 | Paste | Ctrl+V | ⌘+V | Paste clipboard content into the grid. |
 
-In the following example, a `GridCustomKeyboardShortcuts` object is assigned to the **KeyboardShortcuts** property to change the default shortcuts. Sorting a focused header column uses <kbd>Alt</kbd> + <kbd>S</kbd> instead of <kbd>Enter</kbd>, and editing a focused data cell starts with <kbd>Alt</kbd> + <kbd>E</kbd> instead of <kbd>F2</kbd>. Shortcuts for group rows, edit cells, and common actions such as print and copy are also changed.
-
 {% tabs %}
 {% highlight razor tabtitle="Index.razor" %}
 @using Syncfusion.Blazor.Grids
