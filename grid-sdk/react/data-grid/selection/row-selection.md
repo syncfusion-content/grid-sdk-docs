@@ -766,20 +766,17 @@ The following example demonstrates deselecting rows programmatically:
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
-{% include code-snippet/grid-sdk/react/grid/deselect-row-single/app/App.tsx %}
+{% include code-snippet/grid-sdk/react/grid/deselect-row-multiple/app/App.jsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="App.tsx" %}
-{% include code-snippet/grid-sdk/react/grid/deselect-row-single/app/App.tsx %}
-{% endhighlight %}
-{% highlight js tabtitle="datasource.jsx" %}
-{% include code-snippet/grid-sdk/react/grid/deselect-row-single/app/datasource.tsx %}
+{% include code-snippet/grid-sdk/react/grid/deselect-row-multiple/app/App.tsx %}
 {% endhighlight %}
 {% highlight ts tabtitle="datasource.tsx" %}
-{% include code-snippet/grid-sdk/react/grid/deselect-row-single/app/datasource.tsx %}
+{% include code-snippet/grid-sdk/react/grid/deselect-row-multiple/app/datasource.tsx %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/grid/deselect-row-single" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/grid/deselect-row-multiple" %}
 
 ## Row selection events 
 

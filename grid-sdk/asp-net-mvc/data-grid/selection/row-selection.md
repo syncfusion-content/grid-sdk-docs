@@ -281,10 +281,10 @@ The following example demonstrates deselecting rows programmatically:
 
 {% tabs %}
 {% highlight cshtml tabtitle="CSHTML" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/grid/deselect-row-single/razor %}
+{% include code-snippet/grid-sdk/asp-net-mvc/grid/selection/row-deselection/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="row-deselection.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/grid/deselect-row-single/row-deselection.cs %}
+{% include code-snippet/grid-sdk/asp-net-mvc/grid/selection/row-deselection/row-deselection.cs %}
 {% endhighlight %}
 {% endtabs %}
 
