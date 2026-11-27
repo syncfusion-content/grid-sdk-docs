@@ -446,7 +446,7 @@ public class OrderData
 
 A disabled keyboard action no longer runs when the default keys are pressed. Disable a default action when the default shortcut conflicts with another shortcut in the application, or when an operation such as sorting or grouping must not run from the keyboard.
 
-To disable an action, map the matching `GridKeyboardAction` value to `string.Empty` in the category dictionary. Only the keyboard shortcut is disabled. The operation remains available through mouse interaction, such as clicking a column header to sort.
+To disable an action, map the matching `GridKeyboardAction` value to `string.Empty` in the category dictionary.
 
 The following example disables the default sorting and grouping shortcuts in the **Header** category.
 
