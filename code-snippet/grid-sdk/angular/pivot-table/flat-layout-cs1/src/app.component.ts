@@ -18,17 +18,17 @@ export class AppComponent implements OnInit {
         this.dataSourceSettings = { dataSource: Pivot_Data as IDataSet[] };
         this.gridSettings = { layout: 'Flat' };
         this.flatSettings = {
-    columns: [
-    { field: 'Country', headerText: 'Country', width: 140 },
-    { field: 'Products', headerText: 'Products', width: 160 },
-    { field: 'Year', headerText: 'Year', width: 120 },
-    { field: 'Sold', headerText: 'Units Sold', width: 120 },
-    { field: 'Amount', headerText: 'Sold Amount', width: 140 }
-],
-    allowSorting: true,
-    allowFiltering: true,
-    allowPaging: true,
-    pageSettings: { pageSize: 10 }
-};
+            columns: [
+                { field: 'Country', headerText: 'Country', width: 140 },
+                { field: 'Products', headerText: 'Products', width: 160 },
+                { field: 'Year', headerText: 'Year', width: 120 },
+                { field: 'Sold', headerText: 'Units Sold', width: 120 },
+                { field: 'Amount', headerText: 'Sold Amount', width: 140 }
+            ],
+            allowSorting: true,
+            allowFiltering: true,
+            allowPaging: true,
+            pageSettings: { pageSize: 10 }
+        };
     }
 }

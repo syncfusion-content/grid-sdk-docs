@@ -9,7 +9,7 @@ System.config({
         "jsx": "react"
     },
     paths: {
-        "syncfusion:": "https://cdn.syncfusion.com/ej2/35.2.13/"
+        "syncfusion:": "https://cdn.syncfusion.com/ej2/35.2.14/"
     },
     map: {
         app: 'app',
@@ -33,6 +33,7 @@ System.config({
         "@syncfusion/ej2-dropdowns": "syncfusion:ej2-dropdowns/dist/ej2-dropdowns.umd.min.js",
         "@syncfusion/ej2-splitbuttons": "syncfusion:ej2-splitbuttons/dist/ej2-splitbuttons.umd.min.js",
         "@syncfusion/ej2-pivotview": "syncfusion:ej2-pivotview/dist/ej2-pivotview.umd.min.js",
+        "@syncfusion/ej2-querybuilder": "syncfusion:ej2-querybuilder/dist/ej2-querybuilder.umd.min.js",
         "@syncfusion/ej2-notifications":"syncfusion:ej2-notifications/dist/ej2-notifications.umd.min.js",
         
         "@syncfusion/ej2-react-base": "syncfusion:ej2-react-base/dist/ej2-react-base.umd.min.js",
