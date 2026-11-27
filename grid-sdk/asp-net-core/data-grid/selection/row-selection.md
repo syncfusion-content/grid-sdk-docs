@@ -288,7 +288,6 @@ The following example demonstrates deselecting rows programmatically:
 {% endhighlight %}
 {% endtabs %}
 
-![Deselect rows programmatically](../images/selection/row-deselect-single.gif)
 
 ## Row selection events 
 
