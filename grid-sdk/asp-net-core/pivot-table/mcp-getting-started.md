@@ -21,13 +21,19 @@ ASP.NET Core hosts the PivotView control in a Razor page, but WebMCP is configur
 
 ## WebMCP setup
 
-This browser API is experimental. The [Chrome documentation for this API](https://developer.chrome.com/docs/ai/webmcp) describes an origin trial beginning with Chrome 149 and local testing with the `chrome://flags/#enable-webmcp-testing` flag. Enable the flag and relaunch Chrome for local testing, or follow the current origin-trial instructions for an eligible deployed origin. Other browser/version support is not established by that documentation.
+The [Chrome AI documentation](https://developer.chrome.com/docs/ai/) describes the WebMCP origin-trial and local-testing setup. WebMCP is experimental, and browser/version availability may change.
 
-The page must expose `document.modelContext.registerTool`. The PivotView adapter checks for this API when registering tools. The official WebMCP setup does not require the extension or API key mentioned in some unrelated demos.
+For local testing with the browser extension:
+
+1. Enable **WebMCP for testing** in `chrome://flags/` and relaunch Chrome. The extension listing currently requires Chrome 155.0.8052.0 or later.
+2. Install [WebMCP - Model Context Tool Inspector](https://chromewebstore.google.com/detail/webmcp-model-context-tool/gbpdfapgefenggkahomfgkhfehlcenpd) from the Chrome Web Store.
+3. To use Gemini through the extension, create or copy an API key from [Google AI Studio](https://aistudio.google.com/app/apikey) and enter it in the extension.
+
+The extension can also inspect and invoke tools manually. It is optional: the PivotView adapter registers tools through `document.modelContext.registerTool` when the browser API is available, without the extension or an API key. The extension listing warns that it does not provide production-level security boundaries; do not use it on untrusted websites.
 
 ## Tools
 
-All tools below are registered with `readOnlyHint: false`. Unless otherwise noted, successful execution returns a WebMCP text content item containing JSON with `success`, `data`, and `message`; the `data` value is `{}`. Cancellation returns text JSON with `action`, `cancelled: true`, and `message`; errors return `isError: true` and a text message. Export handlers return the initiated file name in `data.fileName`. Note that their declared output schema says `filePath`, while the implementation currently returns `fileName`.
+All tools below are registered with `readOnlyHint: false`. Unless otherwise noted, successful execution returns a WebMCP text content item containing JSON with `success`, `data`, and `message`; the `data` value is `{}`. Cancellation responses contain an action, a cancellation status, and a message; errors return `isError: true` and a text message. Export handlers return the initiated file name in `data.fileName`. Note that their declared output schema says `filePath`, while the implementation currently returns `fileName`.
 
 | Tool | Inputs | Behavior and prerequisites |
 |---|---|---|

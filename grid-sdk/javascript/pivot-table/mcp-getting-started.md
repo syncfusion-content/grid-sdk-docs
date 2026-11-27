@@ -22,13 +22,19 @@ The `WebMcpPivotView` adapter runs in the browser and registers tools through `d
 
 ## WebMCP setup
 
-This browser API is experimental. The [Chrome documentation for this API](https://developer.chrome.com/docs/ai/webmcp) describes an origin trial beginning with Chrome 149 and local testing with `chrome://flags/#enable-webmcp-testing`. Enable the flag and relaunch Chrome for local testing, or follow the current origin-trial instructions for an eligible deployed origin. Other browser/version support is not established by that documentation.
+The [Chrome AI documentation](https://developer.chrome.com/docs/ai/) describes the WebMCP origin-trial and local-testing setup. WebMCP is experimental, and browser/version availability may change.
 
-The page must expose `document.modelContext.registerTool`. The adapter skips registration and logs a warning if this API is unavailable. The official WebMCP setup does not require the extension or API key mentioned in some unrelated demos.
+For local testing with the browser extension:
+
+1. Enable **WebMCP for testing** in `chrome://flags/` and relaunch Chrome. The extension listing currently requires Chrome 155.0.8052.0 or later.
+2. Install [WebMCP - Model Context Tool Inspector](https://chromewebstore.google.com/detail/webmcp-model-context-tool/gbpdfapgefenggkahomfgkhfehlcenpd) from the Chrome Web Store.
+3. To use Gemini through the extension, create or copy an API key from [Google AI Studio](https://aistudio.google.com/app/apikey) and enter it in the extension.
+
+The extension can also inspect and invoke tools manually. It is optional: the PivotView adapter registers tools through `document.modelContext.registerTool` when the browser API is available, without the extension or an API key. The extension listing warns that it does not provide production-level security boundaries; do not use it on untrusted websites.
 
 ## Tools
 
-Unless noted, successful calls return text content containing JSON with `success`, `data`, and `message`; `data` is `{}`. Cancellation returns `action`, `cancelled: true`, and `message`; errors set `isError: true`. Export handlers return the initiated file name as `data.fileName`, although the declared schema says `filePath`.
+Unless noted, successful calls return text content containing JSON with `success`, `data`, and `message`; `data` is `{}`. Cancellation responses contain an action, a cancellation status, and a message; errors set `isError: true`. Export handlers return the initiated file name as `data.fileName`, although the declared schema says `filePath`.
 
 | Tool | Inputs | Behavior and prerequisites |
 |---|---|---|
