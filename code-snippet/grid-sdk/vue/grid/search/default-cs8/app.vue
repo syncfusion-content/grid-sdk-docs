@@ -1,6 +1,10 @@
 <template>
     <div id="app">
-        <ejs-grid ref='grid' id='grid' :dataSource='data' :toolbar='toolbarOptions' height='262px' :created='created'>
+        <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 12px;">
+          <label for="searchMode">Search Mode</label>
+          <ejs-dropdownlist id="searchMode" :dataSource="searchModes" :fields="ddlFields" value="Default" @change="searchModeChange" width="140px"></ejs-dropdownlist>
+        </div>
+        <ejs-grid ref='grid' id='grid' :dataSource='data' :toolbar='toolbarOptions' :searchSettings='searchSettings' height='262px'>
             <e-columns>
               <e-column field='OrderID' headerText='Order ID' textAlign='Right' width=100></e-column>
               <e-column field='CustomerID' headerText='Customer ID' width=120></e-column>
@@ -15,25 +19,34 @@
 <script>
 
 import { GridComponent, ColumnsDirective, ColumnDirective, Toolbar, Search } from "@syncfusion/ej2-vue-grids";
+import { DropDownListComponent } from "@syncfusion/ej2-vue-dropdowns";
 import { data } from './datasource.js'
 export default {
 name: "App",
 components: {
 "ejs-grid":GridComponent,
 "e-columns":ColumnsDirective,
-"e-column":ColumnDirective
+"e-column":ColumnDirective,
+"ejs-dropdownlist":DropDownListComponent
 },
   data() {
     return {
       data: data,
       toolbarOptions: ['Search'],
+      searchModes: [
+        { text: 'Default', value: 'Default' },
+        { text: 'Immediate', value: 'Immediate' }
+      ],
+      ddlFields: { text: 'text', value: 'value' },
+      searchSettings: { mode: 'Default' }
     };
   },
   methods: {
-    created: function() {
-        document.getElementById(this.$refs.grid.$el.id + "_searchbar").addEventListener('keyup', () => {
-          this.$refs.grid.search(event.target.value)
-        });
+    searchModeChange: function(args) {
+      this.searchSettings = {
+        mode: args.value,
+        immediateModeDelay: args.value === 'Immediate' ? 1500 : 0
+      };
     }
   },
   provide: {
