@@ -372,10 +372,8 @@ Keyboard actions are grouped into six categories based on the grid area where th
         },
         Common = new Dictionary<GridKeyboardAction, string>
         {
-            { GridKeyboardAction.Print, "Ctrl+F" },
             { GridKeyboardAction.Copy, "Ctrl+U" },
             { GridKeyboardAction.CopyWithHeaders, "Ctrl+I" },
-            { GridKeyboardAction.Paste, "Ctrl+P" }
         }
     };
 }
