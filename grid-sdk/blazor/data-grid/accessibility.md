@@ -214,9 +214,22 @@ For example:
 
 ## Custom Keyboard Navigation
 
-The Blazor DataGrid allows its default keyboard shortcuts to be changed to match application requirements and accessibility guidelines. A default shortcut can be replaced with a different key combination, or a built-in action can be disabled. Actions that are not configured keep their default shortcuts.
+Custom keyboard navigation in the Blazor DataGrid assigns new key combinations to grid actions, such as navigation, sorting, grouping, editing, and copying, or disables default keyboard actions. Custom shortcuts are useful when a default shortcut conflicts with a browser or application shortcut, when shortcuts must follow an organization's accessibility guidelines, or when a keyboard operation must not be available to end users.
 
-Keyboard actions are grouped into six categories based on the grid area where they apply: **DataCell**, **Header**, **EditCell**, **GroupRow**, **DetailRow**, and **Common**. The following tables list the actions in each category and their default shortcuts.
+To configure custom shortcuts, assign a `GridCustomKeyboardShortcuts` object to the **KeyboardShortcuts** property of the `SfGrid` component. The object contains one dictionary for each grid area, such as **Header** or **DataCell**. Each dictionary maps a `GridKeyboardAction` value to a key combination string, such as `"Alt+S"` or `"Ctrl+Shift+H"`. When the mapped keys are pressed in the matching grid area, the DataGrid runs the mapped action. Actions without a custom mapping keep the default shortcuts.
+
+Keyboard actions are grouped into six categories. Each category matches the grid area where the action runs.
+
+| Category | Grid area |
+|----------|-----------|
+| **DataCell** | Focused data cells. |
+| **Header** | Focused header cells. |
+| **EditCell** | Cells in edit mode. |
+| **GroupRow** | Focused group caption rows. |
+| **DetailRow** | Focused rows with a detail template. |
+| **Common** | Grid-wide actions, such as print, copy, and paste. |
+
+The following tables list the actions in each category and the default shortcuts.
 
 **DataCell**
 
@@ -288,7 +301,7 @@ Keyboard actions are grouped into six categories based on the grid area where th
 |--------|---------|-----|---|
 | Print | Ctrl+P | ⌘+P | Open the browser print dialog. |
 | Copy | Ctrl+C | ⌘+C | Copy selected cells to the clipboard. |
-| CopyWithHeaders | Ctrl+Shift+H | ⌘+⇧+H | Copy selected cells along with their column headers. |
+| CopyWithHeaders | Ctrl+Shift+H | ⌘+⇧+H | Copy selected cells along with the column headers. |
 | Paste | Ctrl+V | ⌘+V | Paste clipboard content into the grid. |
 
 {% tabs %}
@@ -431,16 +444,18 @@ public class OrderData
 
 ### Disable default keyboard actions
 
-A built-in keyboard action can be turned off by mapping its `GridKeyboardAction` value to `string.Empty`. The action then stops responding to its default keys. This helps when a default shortcut conflicts with a shortcut used elsewhere in the application, or when an operation must not be available from the keyboard.
+A disabled keyboard action no longer runs when the default keys are pressed. Disable a default action when the default shortcut conflicts with another shortcut in the application, or when an operation such as sorting or grouping must not run from the keyboard.
 
-In this example, the **Header** dictionary maps two actions to `string.Empty`:
+To disable an action, map the matching `GridKeyboardAction` value to `string.Empty` in the category dictionary. Only the keyboard shortcut is disabled. The operation remains available through mouse interaction, such as clicking a column header to sort.
+
+The following example disables the default sorting and grouping shortcuts in the **Header** category.
 
 | Action | Default shortcut (Windows) | Default shortcut (Mac) | Result |
 |--------|----------------------------|------------------------|--------|
 | `GridKeyboardAction.SortColumn` | Enter, Ctrl+Enter | Enter, ⌘+Enter | Sorting from a focused header cell is disabled. |
 | `GridKeyboardAction.GroupColumn` | Ctrl+Space | ⌘+Space | Grouping from a focused header cell is disabled. |
 
-All other shortcuts, such as header navigation, column reordering, and opening the filter menu, keep working.
+Other header shortcuts, such as navigation, column reordering, and opening the filter menu, continue to use the default keys.
 
 {% tabs %}
 {% highlight razor tabtitle="Index.razor" %}
