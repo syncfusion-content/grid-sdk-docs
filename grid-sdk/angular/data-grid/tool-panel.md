@@ -69,7 +69,7 @@ The sample below shows both panels with reordering, row grouping and aggregates 
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/tool-panel-cs1" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/angular/grid/tool-panel-cs1" %}
 
 ## Edit panel
 
@@ -87,7 +87,7 @@ The Edit panel updates the selected records. Select one or more rows, change a v
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/tool-panel-cs2" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/angular/grid/tool-panel-cs2" %}
 
 ## Custom panel
 
@@ -105,7 +105,7 @@ Add an object with `type` set to `Custom` and provide the content in the `templa
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/tool-panel-cs3" %}
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/angular/grid/tool-panel-cs3" %}
 
 ## Related API
 
