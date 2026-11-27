@@ -198,15 +198,15 @@ To activate this feature, configure the [Toolbar](https://help.syncfusion.com/cr
 
 {% previewsample "https://blazorplayground.syncfusion.com/embed/rZBIDysApJMqmYgM?appbar=false&editor=false&result=true&errorlist=false&theme=bootstrap5" %}
 
-## Composite primary key support
+## Configure composite primary keys in Blazor DataGrid
 
-The composite primary key feature enables the Blazor DataGrid to uniquely identify records using multiple columns when a single field cannot uniquely identify a record. To define a composite primary key, set the [IsPrimaryKey](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridColumn.html#Syncfusion_Blazor_Grids_GridColumn_IsPrimaryKey) property to **true** for each column that forms the key. The combined values of all primary key columns identify a record.
+The Blazor DataGrid supports **composite primary keys**, allowing you to uniquely identify a record using multiple columns when a single column does not contain unique values. To configure a composite primary key, set the [IsPrimaryKey](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridColumn.html#Syncfusion_Blazor_Grids_GridColumn_IsPrimaryKey) property to `true` for each column that participates in the key. The combination of these column values is used to uniquely identify each record.
 
-With composite primary key support, the Blazor DataGrid reliably performs CRUD (Create, Read, Update, and Delete) operations by using the combined values of all primary key columns to identify a record. This ensures accurate row matching across all editing modes and data operations.
+When a composite primary key is defined, the DataGrid uses the combined key values to accurately perform **CRUD (Create, Read, Update, and Delete)** operations. This ensures that the correct record is identified and processed across all editing modes and data operations.
 
-The complete key information is propagated through the Grid events, `DataManager` operations, data adaptors, and editing workflows. During update and delete operations, the values of all primary key fields are included so that the correct record is identified and processed.
+The complete key information is also available throughout Grid events, `DataManager` operations, data adaptors, and editing workflows. During update and delete operations, the values of all primary key columns are included so that the correct record can be located and updated reliably.
 
-In the following example, the **Order ID** and **Product ID** columns are marked with `IsPrimaryKey="true"`, so the combination of both values uniquely identifies each order record while adding, editing, and deleting.
+The **Order ID** and **Product ID** columns are configured as primary key columns by setting `IsPrimaryKey="true"`. Their combined values uniquely identify each order record, enabling reliable CRUD operations.
 
 {% tabs %}
 {% highlight razor tabtitle="Index.razor" %}
@@ -291,9 +291,6 @@ public class OrderData
 {% endtabs %}
 
 {% previewsample "https://blazorplayground.syncfusion.com/embed/htBdMsVUpGKMCqUF?appbar=false&editor=false&result=true&errorlist=false&theme=bootstrap5" %}
-
-> * Set [IsPrimaryKey](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridColumn.html#Syncfusion_Blazor_Grids_GridColumn_IsPrimaryKey) to **true** for every column that forms the composite key. Records are matched using the combined values of all primary key columns.
-> * Composite primary key support applies to all editing modes of the Blazor DataGrid.
 
 ## Disable editing for particular column
 
