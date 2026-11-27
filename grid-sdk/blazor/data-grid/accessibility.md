@@ -214,11 +214,9 @@ For example:
 
 ## Customize keyboard shortcuts
 
-The Blazor DataGrid provides flexible keyboard shortcut customization for supported grid actions. Default shortcuts can be replaced with custom key combinations, and specific built-in actions can be disabled, so that keyboard behavior aligns with application requirements and accessibility guidelines.
+The Blazor DataGrid allows its default keyboard shortcuts to be changed to match application requirements and accessibility guidelines. A default shortcut can be replaced with a different key combination, or a built-in action can be disabled. Actions that are not configured keep their default shortcuts.
 
-To customize keyboard shortcuts, assign a `GridCustomKeyboardShortcuts` object to the **KeyboardShortcuts** property of the `SfGrid` component. Shortcuts are organized into the **DataCell**, **Header**, **EditCell**, **GroupRow**, **DetailRow**, and **Common** categories based on the grid area where each action applies. Only the configured actions change; all other actions continue to use their default keyboard shortcuts.
-
-The following tables list the supported actions and their default keyboard shortcuts.
+Keyboard actions are grouped into six categories based on the grid area where they apply: **DataCell**, **Header**, **EditCell**, **GroupRow**, **DetailRow**, and **Common**. The following tables list the actions in each category and their default shortcuts.
 
 **DataCell**
 
@@ -293,7 +291,14 @@ The following tables list the supported actions and their default keyboard short
 | CopyWithHeaders | Ctrl+Shift+H | ⌘+⇧+H | Copy selected cells along with their column headers. |
 | Paste | Ctrl+V | ⌘+V | Paste clipboard content into the grid. |
 
-The following example replaces the default shortcuts with custom key combinations for actions across multiple categories.
+To assign custom keyboard shortcuts:
+
+1. Create a `GridCustomKeyboardShortcuts` object.
+2. For each category to change, add a `Dictionary<GridKeyboardAction, string>` to the matching property, such as **Header** or **DataCell**.
+3. In each dictionary, map a `GridKeyboardAction` value to the new key combination, written as a string such as `"Alt+S"` or `"Ctrl+Shift+H"`.
+4. Assign the object to the **KeyboardShortcuts** property of the `SfGrid` component.
+
+In this example, sorting a focused header column uses <kbd>Alt</kbd> + <kbd>S</kbd> instead of <kbd>Enter</kbd>, and editing a focused data cell starts with <kbd>Alt</kbd> + <kbd>E</kbd> instead of <kbd>F2</kbd>. Shortcuts for group rows, edit cells, and common actions such as print and copy are also changed.
 
 {% tabs %}
 {% highlight razor tabtitle="Index.razor" %}
@@ -431,11 +436,22 @@ public class OrderData
 {% endhighlight %}
 {% endtabs %}
 
+> **Note:**
+> - **Multiple keys for one action:** A single action can respond to more than one key combination. For example, the **NavigateDown** action in the **DataCell** category responds to <kbd>Enter</kbd>, <kbd>↓</kbd>, and <kbd>Shift</kbd> + <kbd>↓</kbd> by default.
+> - **Replacing defaults:** A custom key combination replaces the default shortcuts of that action.
+
 ### Disable default keyboard actions
 
-Specific built-in keyboard actions can be disabled by mapping the corresponding `GridKeyboardAction` value to `string.Empty` in the **KeyboardShortcuts** configuration. This is useful when a default shortcut conflicts with an application-level shortcut or when a particular keyboard operation must not be available to end users.
+A built-in keyboard action can be turned off by mapping its `GridKeyboardAction` value to `string.Empty`. The action then stops responding to its default keys. This helps when a default shortcut conflicts with a shortcut used elsewhere in the application, or when an operation must not be available from the keyboard.
 
-In the following example, the default keyboard shortcuts for column sorting and column grouping are disabled in the **Header** category.
+In this example, the **Header** dictionary maps two actions to `string.Empty`:
+
+| Action | Default shortcut (Windows) | Default shortcut (Mac) | Result |
+|--------|----------------------------|------------------------|--------|
+| `GridKeyboardAction.SortColumn` | Enter, Ctrl+Enter | Enter, ⌘+Enter | Sorting from a focused header cell is disabled. |
+| `GridKeyboardAction.GroupColumn` | Ctrl+Space | ⌘+Space | Grouping from a focused header cell is disabled. |
+
+All other shortcuts, such as header navigation, column reordering, and opening the filter menu, keep working.
 
 {% tabs %}
 {% highlight razor tabtitle="Index.razor" %}
@@ -532,30 +548,6 @@ public class OrderData
 }
 {% endhighlight %}
 {% endtabs %}
-
-**Explanation**
-
-The **KeyboardShortcuts** property accepts a `GridCustomKeyboardShortcuts` object that customizes keyboard behavior for each grid area. Assigning `string.Empty` to a `GridKeyboardAction` removes the key combination for that action, so the associated default keyboard shortcut is no longer triggered.
-
-```csharp
-private GridCustomKeyboardShortcuts Shortcuts { get; } = new()
-{
-    Header = new Dictionary<GridKeyboardAction, string>
-    {
-        { GridKeyboardAction.SortColumn, string.Empty },
-        { GridKeyboardAction.GroupColumn, string.Empty }
-    }
-};
-```
-
-In this configuration:
-
-| Action | Default shortcut (Windows) | Default shortcut (Mac) | Result |
-|--------|----------------------------|------------------------|--------|
-| `GridKeyboardAction.SortColumn` | Enter, Ctrl+Enter | Enter, ⌘+Enter | The default sorting shortcut on a focused header cell is disabled. |
-| `GridKeyboardAction.GroupColumn` | Ctrl+Space | ⌘+Space | The default grouping shortcut on a focused header cell is disabled. |
-
-All other built-in keyboard shortcuts, including header navigation, column reordering, and filter menu access, continue to function without modification. This approach provides granular control over keyboard interactions while preserving the remaining DataGrid keyboard navigation experience.
 
 ## Ensuring accessibility
 
