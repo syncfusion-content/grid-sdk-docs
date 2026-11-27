@@ -542,5 +542,4 @@ Accessibility compliance can be evaluated using the interactive [sample](https:/
 
 ## See also
 
-* [Keyboard interaction](#keyboard-interaction)
 * [Accessibility in Blazor component](https://blazor.syncfusion.com/documentation/common/accessibility)
