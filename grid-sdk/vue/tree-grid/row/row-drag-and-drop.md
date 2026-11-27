@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Vue TreeGrid Row Drag and Drop | Syncfusion
-description: Learn here all about Row drag and drop in Vue TreeGrid of Essential JS 2 and more.
+description: Learn how to drag and drop rows in Vue TreeGrid within the same grid, between two TreeGrids, or between multiple TreeGrids for advanced data movement.
 control: Row drag and drop 
 platform: grid-sdk
 documentation: ug
@@ -35,7 +35,7 @@ The TreeGrid row drag and drop allows you to drag and drop TreeGrid rows on the 
 
 ## Drag and drop to another Tree Grid
 
-To drag and drop between two TreeGrid, enable the [`allowRowDragAndDrop`](https://ej2.syncfusion.com/vue/documentation/api/treegrid#allowrowdraganddrop) property and specify the target TreeGrid ID in [`targetID`](https://ej2.syncfusion.com/vue/documentation/api/treegrid/rowDropSettings#targetid) property of rowDropSettings.
+To drag and drop between two TreeGrid, enable the [`allowRowDragAndDrop`](https://ej2.syncfusion.com/vue/documentation/api/treegrid#allowrowdraganddrop) property and specify the target TreeGrid ID in [`targetID`](https://ej2.syncfusion.com/vue/documentation/api/treegrid/rowDropSettings#targetid) property of rowDropSettings. The `targetID` property accepts a single target ID as a string, or an array of target IDs to drop rows between multiple TreeGrids. See the next section for details on the multi-TreeGrid configuration.
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
@@ -48,6 +48,23 @@ To drag and drop between two TreeGrid, enable the [`allowRowDragAndDrop`](https:
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/treegrid/row/row-cs2" %}
 
+
+## Drag and drop between multiple Tree Grids
+
+To drag and drop rows between multiple TreeGrids, enable the [`allowRowDragAndDrop`](https://ej2.syncfusion.com/vue/documentation/api/treegrid#allowrowdraganddrop) property and specify the target TreeGrid IDs in the [`targetID`](https://ej2.syncfusion.com/vue/documentation/api/treegrid/rowDropSettings#targetid) property of `rowDropSettings`. The `targetID` property accepts an array of TreeGrid IDs to allow row drag and drop between multiple TreeGrids.
+
+
+{% tabs %}
+{% highlight html tabtitle="Composition API (~/src/App.vue)" %}
+{% include code-snippet/grid-sdk/vue/treegrid/row/row-cs6/app-composition.vue %}
+{% endhighlight %}
+{% highlight html tabtitle="Options API (~/src/App.vue)" %}
+{% include code-snippet/grid-sdk/vue/treegrid/row/row-cs6/app.vue %}
+{% endhighlight %}
+{% endtabs %}
+        {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/treegrid/row/row-cs6" %}
+
+
 ## Drag and drop events
 
 The following events are triggered while drag and drop the treegrid rows.
@@ -59,9 +76,9 @@ The following events are triggered while drag and drop the treegrid rows.
 
 ## Prevent reordering a row as child to another row
 
-You can prevent the default behavior of dropping rows as children to the target by setting the `cancel` property to `true` in [rowDrop](https://ej2.syncfusion.com/vue/documentation/api/treegrid#rowdrop) event argument. You can also change the drop position after cancelling using [reorderRows](https://ej2.syncfusion.com/vue/documentation/api/treegrid#reorderrows) method.
+You can prevent the default behavior of dropping rows as children to the target by setting the `cancel` property to `true` in [rowDrop](https://ej2.syncfusion.com/vue/documentation/api/treegrid#rowdrop) event argument. You can also change the drop position after canceling using [reorderRows](https://ej2.syncfusion.com/vue/documentation/api/treegrid#reorderrows) method.
 
-In the below example drop action is cancelled and dropped above to target row.
+In the below example drop action is canceled and dropped above to target row.
 
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}

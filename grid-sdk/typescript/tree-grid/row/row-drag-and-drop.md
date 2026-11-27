@@ -52,6 +52,22 @@ To drag and drop between two TreeGrid, enable the [`allowRowDragAndDrop`](https:
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/treegrid/draganddrop-cs1" %}
 
 
+## Drag and drop between multiple Tree Grids
+
+To drag and drop rows between multiple TreeGrids, enable the [`allowRowDragAndDrop`](https://ej2.syncfusion.com/documentation/api/treegrid#allowrowdraganddrop) property and specify the target TreeGrid IDs in the [`targetID`](https://ej2.syncfusion.com/documentation/api/treegrid/rowDropSettings#targetid) property of `rowDropSettings`. The `targetID` property accepts an array of TreeGrid IDs to allow row drag and drop between multiple TreeGrids.
+
+ {% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/grid-sdk/typescript/treegrid/draganddrop-cs2/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/grid-sdk/typescript/treegrid/draganddrop-cs2/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/typescript/treegrid/draganddrop-cs2" %}
+
+
 ## Drag and drop events
 
 The following events are triggered while drag and drop the treegrid rows.

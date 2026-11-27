@@ -1,0 +1,18 @@
+<ejs-grid id="grid" dataSource="@ViewBag.dataSource" allowGrouping="true" height="400px">
+    <e-grid-groupsettings columns="@(new string[] {"Category","Region"})" isGroupOpenByDefault="isGroupOpen"></e-grid-groupsettings>
+    <e-grid-columns>
+        <e-grid-column field="ProductID" headerText="Product ID" textAlign="Right" width="120"></e-grid-column>
+        <e-grid-column field="ProductName" headerText="Product Name" width="150"></e-grid-column>
+        <e-grid-column field="Category" headerText="Category" width="140"></e-grid-column>
+        <e-grid-column field="Region" headerText="Region" width="130"></e-grid-column>
+        <e-grid-column field="UnitPrice" headerText="Unit Price" textAlign="Right" width="120"></e-grid-column>
+        <e-grid-column field="UnitsInStock" headerText="Units In Stock" textAlign="Right" width="140"></e-grid-column>
+    </e-grid-columns>
+</ejs-grid>
+
+<script>
+    function isGroupOpen(args) {
+        // Open only the 'Beverages' group at the first level; its child groups stay collapsed.
+        return args.level === 1 && args.key === 'Beverages';
+    }
+</script>

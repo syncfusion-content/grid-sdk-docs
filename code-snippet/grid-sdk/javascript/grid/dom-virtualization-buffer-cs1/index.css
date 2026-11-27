@@ -1,0 +1,91 @@
+#container {
+    visibility: hidden;
+}
+
+#loader {
+  color: #008cff;
+  font-family: 'Helvetica Neue','calibiri';
+  font-size: 14px;
+  height: 40px;
+  left: 45%;
+  position: absolute;
+  top: 45%;
+  width: 30%;
+}
+.category-badge {
+    display: inline-block;
+    padding: 12px;
+    border-radius: 12px;
+    text-align: center;
+    width: 100px;
+}
+
+.category-books {
+    background-color: #FEF7E0;
+    color: #EA8600;
+}
+
+.category-sports {
+    background-color: #FEF7E0;
+    color: #EA8600;
+}
+
+.category-electronics {
+    background-color: #FEF7E0;
+    color: #EA8600;
+}
+
+.category-clothing {
+    background-color: #FEF7E0;
+    color: #EA8600;
+}
+
+.category-food {
+    background-color: #FEF7E0;
+    color: #EA8600;
+}
+
+/* Dark theme overrides for category badges */
+.fabric-dark .category-books,
+.material-dark .category-books,
+.bootstrap-dark .category-books,
+.tailwind-dark .category-books,
+.bootstrap5-dark .category-books,
+.fluent-dark .category-books,
+.fluent2-dark .category-books,
+.highcontrast .category-books,
+.fabric-dark .category-sports,
+.material-dark .category-sports,
+.bootstrap-dark .category-sports,
+.tailwind-dark .category-sports,
+.bootstrap5-dark .category-sports,
+.fluent-dark .category-sports,
+.fluent2-dark .category-sports,
+.highcontrast .category-sports,
+.fabric-dark .category-electronics,
+.material-dark .category-electronics,
+.bootstrap-dark .category-electronics,
+.tailwind-dark .category-electronics,
+.bootstrap5-dark .category-electronics,
+.fluent-dark .category-electronics,
+.fluent2-dark .category-electronics,
+.highcontrast .category-electronics,
+.fabric-dark .category-clothing,
+.material-dark .category-clothing,
+.bootstrap-dark .category-clothing,
+.tailwind-dark .category-clothing,
+.bootstrap5-dark .category-clothing,
+.fluent-dark .category-clothing,
+.fluent2-dark .category-clothing,
+.highcontrast .category-clothing,
+.fabric-dark .category-food,
+.material-dark .category-food,
+.bootstrap-dark .category-food,
+.tailwind-dark .category-food,
+.bootstrap5-dark .category-food,
+.fluent-dark .category-food,
+.fluent2-dark .category-food,
+.highcontrast .category-food {
+    background-color: #534514;
+    color: #FDD663;
+}

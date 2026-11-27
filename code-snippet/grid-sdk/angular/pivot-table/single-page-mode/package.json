@@ -34,6 +34,7 @@
     "zone.js": "0.14.3",
     "@syncfusion/ej2-pivotview": "*",
     "@syncfusion/ej2-angular-pivotview": "*",
+    "@syncfusion/ej2-querybuilder": "*",
     "@syncfusion/ej2-tailwind3-theme": "*"
   },
   "devDependencies": {

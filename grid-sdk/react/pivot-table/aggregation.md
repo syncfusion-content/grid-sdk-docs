@@ -14,7 +14,7 @@ domainurl: ##DomainURL##
 
 End users can perform calculations on groups of values (specifically for value fields placed in the value axis) by using different aggregation types. By default, values are combined by summing them. Additional aggregation types are described below.
 
-> Numeric fields support all aggregation types listed below. Fields of type string, date, datetime, boolean, and similar types support only **Count** and **DistinctCount** aggregation.
+> Numeric fields support all aggregation types listed below. Date and datetime fields support **Min**, **Max**, **Count**, and **DistinctCount** aggregation. Fields of type string, boolean, and similar types support only **Count** and **DistinctCount** aggregation.
 
 | Operator | Description |
 |------|-------------|
@@ -22,8 +22,8 @@ End users can perform calculations on groups of values (specifically for value f
 | Product| Displays the product of the selected field values.|
 | Count| Displays the number of records for the selected field.|
 | DistinctCount| Displays the number of unique records for the selected field.|
-| Min| Displays the minimum value for the selected field.|
-| Max| Displays the maximum value for the selected field.|
+| Min| Displays the minimum value for the selected field. For date or datetime fields, displays the earliest date or datetime value.|
+| Max| Displays the maximum value for the selected field. For date or datetime fields, displays the latest date or datetime value.|
 | Avg| Displays the average (mean) of the selected field values.|
 | Median| Displays the median value for the selected field.|
 | Index| Displays a sequential index number (1, 2, 3, …) for the selected field values in the pivot result.|
@@ -31,10 +31,10 @@ End users can perform calculations on groups of values (specifically for value f
 | SampleStDev| Displays the sample standard deviation for the selected field.|
 | PopulationVar| Displays the variance of the population for the selected field.|
 | SampleVar| Displays the sample variance for the selected field.|
-| RunningTotals| Displays the running total for the selected field values.|
+| RunningTotals| Displays the running total for the selected field values. Set `runningTotalDirection` on the value field to control whether it accumulates across columns in each row (`'Row'`) or down rows in each column (`'Column'`).|
 | PercentageOfRunningTotals| Displays the cumulative percentage of running totals (client-side engine only).|
-| DifferenceFrom| Displays the pivot table values with difference from the value of the base item in the base field.|
-| PercentageOfDifferenceFrom| Displays the pivot table values with percentage difference from the value of the base item in the base field.|
+| DifferenceFrom| Displays the difference relative to a specific base item or adjacent member (`'(previous)'` / `'(next)'`) in the base field. Configured using `baseField`, `baseItem`, and optionally `allowCrossGroupCalculation`.|
+| PercentageOfDifferenceFrom| Displays the percentage difference relative to a specific base item or adjacent member (`'(previous)'` / `'(next)'`) in the base field. Configured using `baseField`, `baseItem`, and optionally `allowCrossGroupCalculation`.|
 | PercentageOfGrandTotal| Displays the pivot table values with percentage of grand total of all values.|
 | PercentageOfColumnTotal| Displays the pivot table values in each column with percentage of total values for the column.|
 | PercentageOfRowTotal| Displays the pivot table values in each row with percentage of total values for the row.|
@@ -48,9 +48,13 @@ End users can perform calculations on groups of values (specifically for value f
 
 For each value field, the aggregation type can be set using the property [`type`](https://ej2.syncfusion.com/react/documentation/api/pivotview/fieldoptionsmodel#type) in [`values`](https://ej2.syncfusion.com/react/documentation/api/pivotview/datasourcesettings#values). Aggregation types like **DifferenceFrom** and **PercentageOfDifferenceFrom** also require a specific field and item, which are configured using the [`baseField`](https://ej2.syncfusion.com/react/documentation/api/pivotview/fieldoptionsmodel#basefield) and [`baseItem`](https://ej2.syncfusion.com/react/documentation/api/pivotview/fieldoptionsmodel#baseitem) properties. Likewise, the **PercentageOfParentTotal** type can be scoped to a specific field using the [`baseField`](https://ej2.syncfusion.com/react/documentation/api/pivotview/fieldoptionsmodel#basefield) property. For instance, the aggregation type **DifferenceFrom** takes the specified field and its corresponding member as input, then compares its value against other members in the same field and across different fields to compute the appropriate output value.
 
-* [`type`](https://ej2.syncfusion.com/react/documentation/api/pivotview/fieldoptionsmodel#type): It allows you to set the aggregate type of the field.
-* [`baseField`](https://ej2.syncfusion.com/react/documentation/api/pivotview/fieldoptionsmodel#basefield): It allows you to set the specific field to aggregate the values.
-* [`baseItem`](https://ej2.syncfusion.com/react/documentation/api/pivotview/fieldoptionsmodel#baseitem): It allows you to set the specific member to aggregate the values.
+| Property | Applicable Types | Description |
+|---|---|---|
+| [`type`](https://ej2.syncfusion.com/react/documentation/api/pivotview/fieldoptionsmodel#type) | All | Specifies the aggregation function to apply. |
+| [`baseField`](https://ej2.syncfusion.com/react/documentation/api/pivotview/fieldoptionsmodel#basefield) | **DifferenceFrom**, **PercentageOfDifferenceFrom**, **PercentageOfParentTotal** | Specifies the reference field to aggregate against. |
+| [`baseItem`](https://ej2.syncfusion.com/react/documentation/api/pivotview/fieldoptionsmodel#baseitem) | **DifferenceFrom**, **PercentageOfDifferenceFrom** | Specifies the reference member name, or dynamic adjacent tokens (`'(previous)'` / `'(next)'`). |
+| `allowCrossGroupCalculation` | **DifferenceFrom**, **PercentageOfDifferenceFrom** | When using adjacent tokens, determines whether difference calculation continues across parent group boundaries (`true`) or resets within each group (`false`). |
+| `runningTotalDirection` | **RunningTotals**, **PercentageOfRunningTotals** | Sets the direction used to calculate running totals. |
 
 {% tabs %}
 {% highlight js tabtitle="App.jsx" %}
@@ -149,6 +153,49 @@ By default, the dropdown icon to change the aggregation type is visible in the g
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs4" %}
+
+## Multiple Instances of the Same Field in Values
+
+> This feature is applicable only for relational data sources.
+
+The Pivot Table component supports adding the same field to the [`values`](https://ej2.syncfusion.com/react/documentation/api/pivotview/dataSourceSettings#values) property of [`dataSourceSettings`](https://ej2.syncfusion.com/react/documentation/api/pivotview/dataSourceSettings) more than once, with each instance configured independently using a distinct aggregation type and a distinct caption. For example, you can add the **Amount** field twice: one instance aggregated as **Sum of Amount** and another aggregated as **Average of Amount**.
+
+Each instance is treated as a separate configuration and maintains its own:
+
+* Aggregation type ([`type`](https://ej2.syncfusion.com/react/documentation/api/pivotview/datasourcesettings#type))
+* Display caption ([`caption`](https://ej2.syncfusion.com/react/documentation/api/pivotview/fieldoptionsmodel#caption))
+* Number format (resolved independently in the number formatting dialog)
+* Base field ([`baseField`](https://ej2.syncfusion.com/react/documentation/api/pivotview/fieldoptionsmodel#basefield))
+* Base item ([`baseItem`](https://ej2.syncfusion.com/react/documentation/api/pivotview/fieldoptionsmodel#baseitem))
+
+At runtime, every instance is rendered as its own entry in the user interface:
+
+* As a separate button in the Grouping Bar.
+* As a separate value column in the Pivot Table.
+* As a separate series in the Pivot Chart.
+
+Changing an aggregation type from the context menu in the Grouping Bar only affects the selected instance; other instances of the same field remain unchanged. In the number formatting dialog, each instance is listed and formatted separately. Value sorting, filtering, and conditional formatting always resolve to the selected instance, ensuring that operations on one instance do not impact the others.
+
+Instances can be reordered or removed individually using the Grouping Bar buttons without affecting the other instances of the same field.
+
+The following example demonstrates configuring two instances of the **Amount** field in [`dataSourceSettings.values`](https://ej2.syncfusion.com/react/documentation/api/pivotview/dataSourceSettings#values), alongside the **Sold** field.
+
+{% tabs %}
+{% highlight js tabtitle="App.jsx" %}
+{% include code-snippet/grid-sdk/react/pivot-table/default-cs351/app/App.jsx %}
+{% endhighlight %}
+{% highlight ts tabtitle="App.tsx" %}
+{% include code-snippet/grid-sdk/react/pivot-table/default-cs351/app/App.tsx %}
+{% endhighlight %}
+{% highlight js tabtitle="datasource.jsx" %}
+{% include code-snippet/grid-sdk/react/pivot-table/default-cs351/app/datasource.jsx %}
+{% endhighlight %}
+{% highlight ts tabtitle="datasource.tsx" %}
+{% include code-snippet/grid-sdk/react/pivot-table/default-cs351/app/datasource.tsx %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/pivot-table/default-cs351" %}
 
 ## Event
 

@@ -30,7 +30,7 @@ N> * Selection feature must be enabled for row drag and drop.
 
 ## Drag and drop to another Tree Grid
 
-To drag and drop between two TreeGrid, enable the [`allowRowDragAndDrop`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.TreeGrid.TreeGrid.html#Syncfusion_EJ2_TreeGrid_TreeGrid_AllowRowDragAndDrop) property and specify the target TreeGrid ID in [`targetID`](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.TreeGrid.TreeGridRowDropSettings.html#Syncfusion_EJ2_TreeGrid_TreeGridRowDropSettings_TargetID) property of rowDropSettings.
+To drag and drop between two TreeGrid, enable the [`allowRowDragAndDrop`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGrid.html#Syncfusion_EJ2_TreeGrid_TreeGrid_AllowRowDragAndDrop) property and specify the target TreeGrid ID in [`targetID`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGridRowDropSettings.html#Syncfusion_EJ2_TreeGrid_TreeGridRowDropSettings_TargetID) property of rowDropSettings. The `targetID` property accepts a single target ID as a string, or an array of target IDs to drop rows between multiple TreeGrids. See the next section for details on the multi-TreeGrid configuration.
 
 {% tabs %}
 {% highlight razor tabtitle="CSHTML" %}
@@ -40,6 +40,24 @@ To drag and drop between two TreeGrid, enable the [`allowRowDragAndDrop`](https:
 {% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/row/row-drag-drop/dragdrop.cs %}
 {% endhighlight %}
 {% endtabs %}
+
+
+## Drag and drop between multiple Tree Grids
+
+To drag and drop rows between multiple TreeGrids, enable the [`allowRowDragAndDrop`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGrid.html#Syncfusion_EJ2_TreeGrid_TreeGrid_AllowRowDragAndDrop) property and specify the target TreeGrid IDs in the [`targetID`](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.TreeGrid.TreeGridRowDropSettings.html#Syncfusion_EJ2_TreeGrid_TreeGridRowDropSettings_TargetID) property of `rowDropSettings`. The `targetID` property accepts an array of TreeGrid IDs to allow row drag and drop between multiple TreeGrids.
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/row/row-drag-multiple/razor %}
+{% endhighlight %}
+{% highlight taghelper tabtitle="CSHTML" %}
+{% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/row/row-drag-multiple/tagHelper %}
+{% endhighlight %}
+{% highlight c# tabtitle="Dragdrop.cs" %}
+{% include code-snippet/grid-sdk/asp-net-mvc/tree-grid/row/row-drag-multiple/dragdrop.cs %}
+{% endhighlight %}
+{% endtabs %}
+
 
 ## Drag and drop events
 

@@ -87,7 +87,7 @@ var pivotTableObj = new ej.pivotview.PivotView({
             value: 'Amount', enableExport: true, chartSeries: { type: 'Column', animation: { enable: false } }, enableMultipleAxis: false,
         },
         toolbar: ['New', 'Save', 'SaveAs', 'Rename', 'Remove', 'Load',
-            'Grid', 'Chart', 'Export', 'SubTotal', 'GrandTotal', 'ConditionalFormatting', 'FieldList'],
+            'Grid', 'Chart', 'Export', 'SubTotal', 'GrandTotal', 'ConditionalFormatting', 'FieldList', 'FullScreen'],
         allowExcelExport: true,
         allowConditionalFormatting: true,
         allowPdfExport: true,

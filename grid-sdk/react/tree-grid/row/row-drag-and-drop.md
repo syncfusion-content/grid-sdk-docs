@@ -36,7 +36,7 @@ Row drag and drop supports reordering within the same TreeGrid using the drag ic
 
 ## Drag and drop to another TreeGrid
 
-To drag and drop between two TreeGrids, enable [allowRowDragAndDrop](https://ej2.syncfusion.com/react/documentation/api/treegrid#allowrowdraganddrop) and set the target TreeGrid ID in the [targetID](https://ej2.syncfusion.com/react/documentation/api/treegrid/rowDropSettings#targetid) property of `rowDropSettings`.
+To drag and drop between two TreeGrids, enable [allowRowDragAndDrop](https://ej2.syncfusion.com/react/documentation/api/treegrid#allowrowdraganddrop) and set the target TreeGrid ID in the [targetID](https://ej2.syncfusion.com/react/documentation/api/treegrid/rowDropSettings#targetid) property of `rowDropSettings`. The `targetID` property accepts a single target ID as a string, or an array of target IDs to drop rows between multiple TreeGrids. See the next section for details on the multi-TreeGrid configuration.
 
 {% tabs %}
 {% highlight js tabtitle="index.jsx" %}
@@ -48,6 +48,23 @@ To drag and drop between two TreeGrids, enable [allowRowDragAndDrop](https://ej2
 {% endtabs %}
 
  {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/treegrid/row-cs2" %}
+
+
+## Drag and drop between multiple Tree Grids
+
+To drag and drop rows between multiple TreeGrids, enable the [allowRowDragAndDrop](https://ej2.syncfusion.com/react/documentation/api/treegrid#allowrowdraganddrop) property and specify the target TreeGrid IDs in the [targetID](https://ej2.syncfusion.com/react/documentation/api/treegrid/rowDropSettings#targetid) property of `rowDropSettings`. The `targetID` property accepts an array of TreeGrid IDs to allow row drag and drop between multiple TreeGrids.
+
+
+{% tabs %}
+{% highlight js tabtitle="index.jsx" %}
+{% include code-snippet/grid-sdk/react/treegrid/row-cs4/app/index.jsx %}
+{% endhighlight %}
+{% highlight ts tabtitle="index.tsx" %}
+{% include code-snippet/grid-sdk/react/treegrid/row-cs4/app/index.tsx %}
+{% endhighlight %}
+{% endtabs %}
+ {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/react/treegrid/row-cs4" %}
+
 
 ## Drag and drop events
 

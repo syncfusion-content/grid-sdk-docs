@@ -1,0 +1,16 @@
+@Html.EJS().Grid("grid").DataSource((IEnumerable<object>)ViewBag.dataSource).Height("400px").Columns(col =>
+{
+  col.Field("ProductID").HeaderText("Product ID").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+  col.Field("ProductName").HeaderText("Product Name").Width("150").Add();
+  col.Field("Category").HeaderText("Category").Width("140").Add();
+  col.Field("Region").HeaderText("Region").Width("130").Add();
+  col.Field("UnitPrice").HeaderText("Unit Price").Width("120").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+  col.Field("UnitsInStock").HeaderText("Units In Stock").Width("140").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+}).AllowGrouping().GroupSettings(group => { group.Columns(new string[] { "Category", "Region" }).IsGroupOpenByDefault("isGroupOpen"); }).Render()
+
+<script>
+    function isGroupOpen(args) {
+        // Open only the 'Beverages' group at the first level; its child groups stay collapsed.
+        return args.level === 1 && args.key === 'Beverages';
+    }
+</script>

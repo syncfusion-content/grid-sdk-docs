@@ -1,0 +1,10 @@
+@Html.EJS().Grid("grid").DataSource((IEnumerable<object>)ViewBag.dataSource).Height("400px").Columns(col =>
+{
+  col.Field("accountId").HeaderText("Account ID").Width("140").Add();
+  col.Field("fullName").HeaderText("Full Name").Width("150").Add();
+  col.Field("state").HeaderText("State").Width("130").Add();
+  col.Field("portfolioType").HeaderText("Portfolio Type").Width("140").Add();
+  col.Field("balanceUsd").HeaderText("Balance (USD)").Width("140").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+  col.Field("ytdReturnPct").HeaderText("YTD Return %").Width("130").TextAlign(Syncfusion.EJ2.Grids.TextAlign.Right).Add();
+  col.Field("riskLevel").HeaderText("Risk Level").Width("120").Add();
+}).AllowGrouping().GroupSettings(group => { group.Columns(new string[] { "state", "portfolioType" }).DefaultExpanded(1).EnableSticky(true); }).Render()

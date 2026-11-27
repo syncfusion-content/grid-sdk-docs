@@ -155,6 +155,8 @@ The example below uses a dropdown to switch between the two modes at runtime. Wh
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/grid/search/default-cs8" %}
+```
+
 
 ## Perform search based on column formatting
 

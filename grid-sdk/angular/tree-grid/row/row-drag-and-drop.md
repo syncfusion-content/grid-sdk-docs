@@ -85,7 +85,7 @@ If the border line appears at both top and bottom of the target row, which is **
 
 The TreeGrid row drag and drop allows dragging TreeGrid rows and dropping to another TreeGrid. This feature can be enabled by setting the [allowRowDragAndDrop](https://ej2.syncfusion.com/angular/documentation/api/treegrid#allowrowdraganddrop) property to **true** in the TreeGrid component. This property specifies whether to enable or disable the row drag and drop feature in the TreeGrid. By default, this property is set to **false**, which means that row drag and drop functionality is not enabled.
 
-To specify the target component where the TreeGrid rows should be dropped, use the [targetID](https://ej2.syncfusion.com/angular/documentation/api/treegrid/rowDropSettings#targetid) property of the [rowDropSettings](https://ej2.syncfusion.com/angular/documentation/api/treegrid/rowDropSettings) object. The `targetID` property takes the ID of the target component as its value.
+To specify the target component where the TreeGrid rows should be dropped, use the [targetID](https://ej2.syncfusion.com/angular/documentation/api/treegrid/rowDropSettings#targetid) property of the [rowDropSettings](https://ej2.syncfusion.com/angular/documentation/api/treegrid/rowDropSettings) object. The `targetID` property accepts a single target ID as a string, or an array of target IDs to drop rows between multiple TreeGrids. See the next section for details on the multi-TreeGrid configuration.
 
 Here's an example code snippet that demonstrates how to enable row drag and drop another TreeGrid:
 
@@ -99,6 +99,23 @@ Here's an example code snippet that demonstrates how to enable row drag and drop
 {% endtabs %}
   
 {% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/row-cs4" %}
+
+
+## Drag and drop between multiple Tree Grids
+
+To drag and drop rows between multiple TreeGrids, enable the [allowRowDragAndDrop](https://ej2.syncfusion.com/angular/documentation/api/treegrid#allowrowdraganddrop) property and specify the target TreeGrid IDs in the [targetID](https://ej2.syncfusion.com/angular/documentation/api/treegrid/rowDropSettings#targetid) property of `rowDropSettings`. The `targetID` property accepts an array of TreeGrid IDs to allow row drag and drop between multiple TreeGrids.
+
+
+{% tabs %}
+{% highlight ts tabtitle="app.component.ts" %}
+{% include code-snippet/grid-sdk/angular/treegrid/row-cs11/src/app.component.ts %}
+{% endhighlight %}
+{% highlight ts tabtitle="main.ts" %}
+{% include code-snippet/grid-sdk/angular/treegrid/row-cs11/src/main.ts %}
+{% endhighlight %}
+{% endtabs %}
+  {% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/tree-grid/row-cs11" %}
+
 
 ## Drag and drop to custom component 
 

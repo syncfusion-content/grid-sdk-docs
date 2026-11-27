@@ -1,0 +1,9 @@
+<ejs-grid id="grid" dataSource="@ViewBag.DataSource" height="273px" toolbar="@(new List<string>() { "Add", "Edit", "Delete", "Update", "Cancel" })">
+  <e-grid-editSettings allowAdding="true" allowDeleting="true" allowEditing="true" enableUndoRedo="true" mode="Normal"></e-grid-editSettings>
+  <e-grid-columns>
+    <e-grid-column field="EmployeeID" headerText="Employee ID" textAlign="Right" isPrimaryKey="true" validationRules="@(new { required=true, number=true })" width="120"></e-grid-column>
+    <e-grid-column field="Name" headerText="Name" validationRules="@(new { required=true })" width="160"></e-grid-column>
+    <e-grid-column field="Department" headerText="Department" editType="dropdownedit" width="140"></e-grid-column>
+    <e-grid-column field="Salary" headerText="Salary" textAlign="Right" editType="numericedit" format="C0" validationRules="@(new { required=true, min=1000 })" width="120"></e-grid-column>
+  </e-grid-columns>
+</ejs-grid>

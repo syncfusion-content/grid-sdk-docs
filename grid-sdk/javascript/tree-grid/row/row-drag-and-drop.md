@@ -35,7 +35,7 @@ The TreeGrid row drag and drop allows you to drag and drop TreeGrid rows on the 
 
 ## Drag and drop to another Tree Grid
 
-To drag and drop between two TreeGrid, enable the [`allowRowDragAndDrop`](https://ej2.syncfusion.com/javascript/documentation/api/treegrid#allowrowdraganddrop) property and specify the target TreeGrid ID in [`targetID`](https://ej2.syncfusion.com/javascript/documentation/api/treegrid/rowDropSettings#targetid) property of rowDropSettings.
+To drag and drop between two TreeGrid, enable the [`allowRowDragAndDrop`](https://ej2.syncfusion.com/javascript/documentation/api/treegrid#allowrowdraganddrop) property and specify the target TreeGrid ID in [`targetID`](https://ej2.syncfusion.com/javascript/documentation/api/treegrid/rowDropSettings#targetid) property of rowDropSettings. The `targetID` property accepts a single target ID as a string, or an array of target IDs to drop rows between multiple TreeGrids. See the next section for details on the multi-TreeGrid configuration.
 
 
 {% tabs %}
@@ -48,6 +48,23 @@ To drag and drop between two TreeGrid, enable the [`allowRowDragAndDrop`](https:
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/treegrid/draganddrop-cs1" %}
+
+
+## Drag and drop between multiple Tree Grids
+
+To drag and drop rows between multiple TreeGrids, enable the [`allowRowDragAndDrop`](https://ej2.syncfusion.com/javascript/documentation/api/treegrid#allowrowdraganddrop) property and specify the target TreeGrid IDs in the [`targetID`](https://ej2.syncfusion.com/javascript/documentation/api/treegrid/rowDropSettings#targetid) property of `rowDropSettings`. The `targetID` property accepts an array of TreeGrid IDs to allow row drag and drop between multiple TreeGrids.
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/grid-sdk/javascript/treegrid/draganddrop-cs2/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/grid-sdk/javascript/treegrid/draganddrop-cs2/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/treegrid/draganddrop-cs2" %}
+
 
 ## Drag and drop events
 
