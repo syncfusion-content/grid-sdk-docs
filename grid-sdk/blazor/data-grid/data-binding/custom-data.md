@@ -1,14 +1,14 @@
 ---
 layout: post
-title: Blazor Grid OnDataLoad Event | Syncfusion
-description: Implement event-driven data binding in Blazor Data Grid with the OnDataLoad event for custom data retrieval.
+title: Blazor Grid Server Data Binding | Syncfusion
+description: Implement server data binding in Blazor Data Grid using the OnDataLoad event for custom data retrieval and server-side data operations.
 platform: grid-sdk
 control: DataGrid
 documentation: ug
-keywords: blazor datagrid event-driven databinding, OnDataLoad event, custom data retrieval, server-side operations
+keywords: blazor datagrid server data binding, event-driven data binding, server-side data binding, OnDataLoad event, custom data retrieval, server-side operations, remote data processing
 ---
 
-# Event-Driven Data Binding in Blazor Data Grid
+# Server Data Binding in Blazor Data Grid
 
 Event-driven data binding enables the Data Grid to retrieve data through the [OnDataLoad]((https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridEvents-1.html#Syncfusion_Blazor_Grids_GridEvents_1_OnDataLoad)) event instead of using built-in data adaptors. Each paging, sorting, filtering, searching, or grouping operation triggers the `OnDataLoad` event so the application can fetch and return data from custom services, APIs, databases, or repositories.
 
@@ -295,7 +295,7 @@ Calculate the aggregate values requested in `args.Request.Aggregates` and return
 
 ## Handling CRUD operation
 
-Event-driven data binding requires explicit handling of changes. The Data Grid notifies the application through dedicated events such as `RowUpdating` and `RowDeleting` when records are added, edited, or deleted. These events provide a reliable mechanism to capture and respond to data modifications, allowing the application to validate changes, apply business logic, maintain data integrity, and save modifications to the data source.
+Server data binding requires explicit handling of changes. The Data Grid notifies the application through dedicated events such as `RowUpdating` and `RowDeleting` when records are added, edited, or deleted. These events provide a reliable mechanism to capture and respond to data modifications, allowing the application to validate changes, apply business logic, maintain data integrity, and save modifications to the data source.
 
 - **RowUpdating** - Triggered when a record is added or edited. Access the record through` args.Data` and use `args.Action` to determine whether to insert a new record or update an existing record.
 
