@@ -10,9 +10,9 @@ keywords: blazor datagrid server data binding, event-driven data binding, server
 
 # Server Data Binding in Blazor Data Grid
 
-Event-driven data binding enables the Data Grid to retrieve data through the [OnDataLoad]((https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridEvents-1.html#Syncfusion_Blazor_Grids_GridEvents_1_OnDataLoad)) event instead of using built-in data adaptors. Each paging, sorting, filtering, searching, or grouping operation triggers the `OnDataLoad` event so the application can fetch and return data from custom services, APIs, databases, or repositories.
+Server data binding enables the Data Grid to retrieve data through the [OnDataLoad]((https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridEvents-1.html#Syncfusion_Blazor_Grids_GridEvents_1_OnDataLoad)) event instead of using built-in data adaptors. Each paging, sorting, filtering, searching, or grouping operation triggers the `OnDataLoad` event so the application can fetch and return data from custom services, APIs, databases, or repositories.
 
-Event-driven data binding is ideal for the following scenarios:
+Server data binding is ideal for the following scenarios:
 
 - **REST API integration**: Fetch data from remote APIs with custom headers, authentication, or pagination logic.
 - **Server-side operations**: Perform all filtering, sorting, and searching on the server to optimize performance with large datasets.
