@@ -430,6 +430,7 @@ public class OrderData
 {% endtabs %}
 
  **Note**
+ 
 - **Partial customization:** You can customize only the actions required for your application. Any action that is not configured will continue to use its default keyboard shortcut.
 - **Action categories:** Keyboard shortcuts are grouped into categories such as **DataCell**, **Header**, **EditCell**, **GroupRow**, **DetailRow**, and **Common**. This makes it easier to organize and manage shortcuts based on where they are used in the grid.
 - **Override defaults:** When a custom shortcut is assigned to an action, it replaces the default keyboard shortcut for that action.
