@@ -73,6 +73,32 @@ Here is an example that demonstrates how to show 24 hours time format in filter 
 
 ![Filter menu](../images/filtering/filterbar-format.png)
 
+## Date range menu filter
+
+The ASP.NET MVC Grid allows you to filter date or datetime columns within a specified date range in the filter menu dialog. By configuring the `dateRanges` property on the column's `filter` object, the filter dialog provides date range filtering capabilities with optional preset ranges.
+
+The date range menu filter can be customized using the following properties of `dateRanges`:
+
+* `enablePresets`: A boolean property that specifies whether to display preset range options (such as Today, This Month, Last Month, etc.) in the filter menu dialog.
+* `presetMode`: Specifies which presets to display when `enablePresets` is enabled. The supported options are:
+  * `Default`: Displays predefined date range presets such as Today, This Month, Last Month, This Year, etc.
+  * `Custom`: Displays only the custom preset ranges defined in the `customPresetRanges` property.
+  * `Both`: Displays both the default predefined presets and the custom preset ranges.
+* `customPresetRanges`: An array of objects defining custom date range presets. Each preset object requires a `label`, `start` date, and `end` date.
+
+You can also dynamically update the `dateRanges` settings (such as enabling or disabling presets, changing the preset mode, or applying custom preset ranges) using external controls such as CheckBox and DropDownList by updating the column's filter configuration.
+
+The following example demonstrates how to configure and dynamically update the date range menu filter in the ASP.NET MVC Grid:
+
+{% tabs %}
+{% highlight razor tabtitle="CSHTML" %}
+{% include code-snippet/grid-sdk/asp-net-mvc/grid/filtering/filter-menu-date-range/razor %}
+{% endhighlight %}
+{% highlight c# tabtitle="filtermenu.cs" %}
+{% include code-snippet/grid-sdk/asp-net-mvc/grid/filtering/filter-menu-date-range/filtermenu.cs %}
+{% endhighlight %}
+{% endtabs %}
+
 ## Customizing filter menu operators list
 
 The Syncfusion<sup style="font-size:70%">&reg;</sup>  ASP.NET MVC Grid enables you to customize the default filter operator list by utilizing the [FilterSettings.Operators](https://help.syncfusion.com/cr/aspnetmvc-js2/Syncfusion.EJ2.Grids.GridFilterSettings.html#Syncfusion_EJ2_Grids_GridFilterSettings_Operators) property. This feature allows you to define your own set of operators that will be available in the filter menu. You can customize operators for string, number, date, and boolean data types.
