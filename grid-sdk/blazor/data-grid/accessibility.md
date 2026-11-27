@@ -222,7 +222,7 @@ Use custom keyboard navigation in the following scenarios:
 * Shortcuts must follow an organization's accessibility or usability guidelines.
 * A keyboard operation, such as sorting or grouping, must not be available to end users.
 
-Keyboard actions are grouped into six categories. Each category matches the grid area where the action runs.
+To customize keyboard shortcuts, assign a `GridCustomKeyboardShortcuts` object to the **KeyboardShortcuts** property of the `SfGrid` component. Shortcuts can be configured for actions in the **DataCell**, **Header**, **EditCell**, **GroupRow**, **DetailRow**, and **Common** categories. Each category matches the grid area where the action runs.
 
 | Category | Grid area |
 |----------|-----------|
@@ -241,78 +241,78 @@ The following tables list the actions in each category and the default shortcuts
 
 | Action | Windows | Mac | Description |
 |--------|---------|-----|---|
-| NavigateUp | Shift+Enter | ⇧+Enter | Move focus to the cell above. |
-| NavigateDown | Enter, ArrowDown, Shift+Down | Enter, ↓, ⇧+↓ | Move focus to the cell below. |
-| NavigateLeft | Shift+Tab | ⇧+Tab | Move focus to the previous cell. |
-| NavigateRight | Tab, ArrowRight, Shift+Right | Tab, →, ⇧+→ | Move focus to the next cell. |
-| NavigateRowStart | Home | Fn+← | Move focus to the first cell in the current row. |
-| NavigateRowEnd | End | Fn+→ | Move focus to the last cell in the current row. |
-| NavigateGridStart | Ctrl+Home | ⌘+Fn+← | Move focus to the first cell in the grid. |
-| NavigateGridEnd | Ctrl+End | ⌘+Fn+→ | Move focus to the last cell in the grid. |
-| StartEdit | F2 | F2 | Begin editing the focused cell. |
-| AddRecord | Insert | ⌥+Enter | Add a new row. |
-| DeleteRecord | Delete | Delete | Delete the focused row or selected rows. |
-| SelectAll | Ctrl+A | ⌘+A | Select all rows. |
-| PageUp | PageUp | PageUp | Move to the previous page. |
-| PageDown | PageDown | PageDown | Move to the next page. |
-| SelectToggle | Space | Space | Select or clear the focused checkbox row. |
-| Undo | Ctrl+Z | ⌘+Z | Undo the last edit operation. |
-| Redo | Ctrl+Y | ⌘+⇧+Z | Redo the last undone operation. |
+| NavigateUp | <kbd>Shift</kbd> + <kbd>Enter</kbd> | <kbd>⇧</kbd> + <kbd>Enter</kbd> | Move focus to the cell above. |
+| NavigateDown | <kbd>Enter</kbd> / <kbd>↓</kbd> / <kbd>Shift</kbd> + <kbd>↓</kbd> | <kbd>Enter</kbd> / <kbd>↓</kbd> / <kbd>⇧</kbd> + <kbd>↓</kbd> | Move focus to the cell below. |
+| NavigateLeft | <kbd>Shift</kbd> + <kbd>Tab</kbd> | <kbd>⇧</kbd> + <kbd>Tab</kbd> | Move focus to the previous cell. |
+| NavigateRight | <kbd>Tab</kbd> / <kbd>→</kbd> / <kbd>Shift</kbd> + <kbd>→</kbd> | <kbd>Tab</kbd> / <kbd>→</kbd> / <kbd>⇧</kbd> + <kbd>→</kbd> | Move focus to the next cell. |
+| NavigateRowStart | <kbd>Home</kbd> | <kbd>Fn</kbd> + <kbd>←</kbd> | Move focus to the first cell in the current row. |
+| NavigateRowEnd | <kbd>End</kbd> | <kbd>Fn</kbd> + <kbd>→</kbd> | Move focus to the last cell in the current row. |
+| NavigateGridStart | <kbd>Ctrl</kbd> + <kbd>Home</kbd> | <kbd>⌘</kbd> + <kbd>Fn</kbd> + <kbd>←</kbd> | Move focus to the first cell in the grid. |
+| NavigateGridEnd | <kbd>Ctrl</kbd> + <kbd>End</kbd> | <kbd>⌘</kbd> + <kbd>Fn</kbd> + <kbd>→</kbd> | Move focus to the last cell in the grid. |
+| StartEdit | <kbd>F2</kbd> | <kbd>F2</kbd> | Begin editing the focused cell. |
+| AddRecord | <kbd>Insert</kbd> | <kbd>⌥</kbd> + <kbd>Enter</kbd> | Add a new row. |
+| DeleteRecord | <kbd>Delete</kbd> | <kbd>Delete</kbd> | Delete the focused row or selected rows. |
+| SelectAll | <kbd>Ctrl</kbd> + <kbd>A</kbd> | <kbd>⌘</kbd> + <kbd>A</kbd> | Select all rows. |
+| PageUp | <kbd>PageUp</kbd> | <kbd>PageUp</kbd> | Move to the previous page. |
+| PageDown | <kbd>PageDown</kbd> | <kbd>PageDown</kbd> | Move to the next page. |
+| SelectToggle | <kbd>Space</kbd> | <kbd>Space</kbd> | Select or clear the focused checkbox row. |
+| Undo | <kbd>Ctrl</kbd> + <kbd>Z</kbd> | <kbd>⌘</kbd> + <kbd>Z</kbd> | Undo the last edit operation. |
+| Redo | <kbd>Ctrl</kbd> + <kbd>Y</kbd> | <kbd>⌘</kbd> + <kbd>⇧</kbd> + <kbd>Z</kbd> | Redo the last undone operation. |
 
 **Header**
 
 | Action | Windows | Mac | Description |
 |--------|---------|-----|---|
-| SortColumn | Enter, Ctrl+Enter | Enter, ⌘+Enter | Sort the focused column. |
-| ToggleHeaderCheckbox | Space | Space | Select or clear all rows using the header checkbox. |
-| MoveFocusToFirstRow | Alt+W | ⌥+W | Move focus to the first data row. |
-| NavigateLeft | Shift+Tab | ⇧+Tab | Move focus to the previous header cell. |
-| NavigateRight | Tab | Tab | Move focus to the next header cell. |
-| GroupColumn | Ctrl+Space | ⌘+Space | Group or ungroup the focused column. |
-| ReorderColumnLeft | Ctrl+Left | ⌘+← | Move the focused column to the left. |
-| ReorderColumnRight | Ctrl+Right | ⌘+→ | Move the focused column to the right. |
-| FocusFilterBar | ArrowDown | ↓ | Move focus to the filter bar. |
-| OpenColumnMenu | Alt+ArrowDown | ⌥+↓ | Open the column menu. |
-| OpenFilterMenu | Alt+ArrowDown | ⌥+↓ | Open the filter menu for the focused column. |
+| SortColumn | <kbd>Enter</kbd> / <kbd>Ctrl</kbd> + <kbd>Enter</kbd> | <kbd>Enter</kbd> / <kbd>⌘</kbd> + <kbd>Enter</kbd> | Sort the focused column. |
+| ToggleHeaderCheckbox | <kbd>Space</kbd> | <kbd>Space</kbd> | Select or clear all rows using the header checkbox. |
+| MoveFocusToFirstRow | <kbd>Alt</kbd> + <kbd>W</kbd> | <kbd>⌥</kbd> + <kbd>W</kbd> | Move focus to the first data row. |
+| NavigateLeft | <kbd>Shift</kbd> + <kbd>Tab</kbd> | <kbd>⇧</kbd> + <kbd>Tab</kbd> | Move focus to the previous header cell. |
+| NavigateRight | <kbd>Tab</kbd> | <kbd>Tab</kbd> | Move focus to the next header cell. |
+| GroupColumn | <kbd>Ctrl</kbd> + <kbd>Space</kbd> | <kbd>⌘</kbd> + <kbd>Space</kbd> | Group or ungroup the focused column. |
+| ReorderColumnLeft | <kbd>Ctrl</kbd> + <kbd>←</kbd> | <kbd>⌘</kbd> + <kbd>←</kbd> | Move the focused column to the left. |
+| ReorderColumnRight | <kbd>Ctrl</kbd> + <kbd>→</kbd> | <kbd>⌘</kbd> + <kbd>→</kbd> | Move the focused column to the right. |
+| FocusFilterBar | <kbd>↓</kbd> | <kbd>↓</kbd> | Move focus to the filter bar. |
+| OpenColumnMenu | <kbd>Alt</kbd> + <kbd>↓</kbd> | <kbd>⌥</kbd> + <kbd>↓</kbd> | Open the column menu. |
+| OpenFilterMenu | <kbd>Alt</kbd> + <kbd>↓</kbd> | <kbd>⌥</kbd> + <kbd>↓</kbd> | Open the filter menu for the focused column. |
 
 **EditCell**
 
 | Action | Windows | Mac | Description |
 |--------|---------|-----|---|
-| Escape | Escape | Escape | Cancel the current edit. |
-| EditEndAndTabNext | Tab | Tab | Save the edit and move to the next editable cell. |
-| EditEndAndShiftTabPrev | Shift+Tab | ⇧+Tab | Save the edit and move to the previous editable cell. |
+| Escape | <kbd>Escape</kbd> | <kbd>Escape</kbd> | Cancel the current edit. |
+| EditEndAndTabNext | <kbd>Tab</kbd> | <kbd>Tab</kbd> | Save the edit and move to the next editable cell. |
+| EditEndAndShiftTabPrev | <kbd>Shift</kbd> + <kbd>Tab</kbd> | <kbd>⇧</kbd> + <kbd>Tab</kbd> | Save the edit and move to the previous editable cell. |
 
 **GroupRow**
 
 | Action | Windows | Mac | Description |
 |--------|---------|-----|---|
-| ExpandGroup | ArrowRight | → | Expand the focused group. |
-| CollapseGroup | ArrowLeft | ← | Collapse the focused group. |
-| ExpandAllGroup | Ctrl+Down | ⌘+↓ | Expand all groups. |
-| CollapseAllGroup | Ctrl+Up | ⌘+↑ | Collapse all groups. |
+| ExpandGroup | <kbd>→</kbd> | <kbd>→</kbd> | Expand the focused group. |
+| CollapseGroup | <kbd>←</kbd> | <kbd>←</kbd> | Collapse the focused group. |
+| ExpandAllGroup | <kbd>Ctrl</kbd> + <kbd>↓</kbd> | <kbd>⌘</kbd> + <kbd>↓</kbd> | Expand all groups. |
+| CollapseAllGroup | <kbd>Ctrl</kbd> + <kbd>↑</kbd> | <kbd>⌘</kbd> + <kbd>↑</kbd> | Collapse all groups. |
 
 **DetailRow**
 
 | Action | Windows | Mac | Description |
 |--------|---------|-----|---|
-| ExpandDetailRow | Enter, Alt+ArrowDown | Enter, ⌥+↓ | Expand the focused detail row. |
-| CollapseDetailRow | Enter, Alt+ArrowUp | Enter, ⌥+↑ | Collapse the focused detail row. |
-| ExpandAllDetailRows | Ctrl+ArrowDown | ⌘+↓ | Expand all detail rows. |
-| CollapseAllDetailRows | Ctrl+ArrowUp | ⌘+↑ | Collapse all detail rows. |
+| ExpandDetailRow | <kbd>Enter</kbd> / <kbd>Alt</kbd> + <kbd>↓</kbd> | <kbd>Enter</kbd> / <kbd>⌥</kbd> + <kbd>↓</kbd> | Expand the focused detail row. |
+| CollapseDetailRow | <kbd>Enter</kbd> / <kbd>Alt</kbd> + <kbd>↑</kbd> | <kbd>Enter</kbd> / <kbd>⌥</kbd> + <kbd>↑</kbd> | Collapse the focused detail row. |
+| ExpandAllDetailRows | <kbd>Ctrl</kbd> + <kbd>↓</kbd> | <kbd>⌘</kbd> + <kbd>↓</kbd> | Expand all detail rows. |
+| CollapseAllDetailRows | <kbd>Ctrl</kbd> + <kbd>↑</kbd> | <kbd>⌘</kbd> + <kbd>↑</kbd> | Collapse all detail rows. |
 
 **Common**
 
 | Action | Windows | Mac | Description |
 |--------|---------|-----|---|
-| Print | Ctrl+P | ⌘+P | Open the browser print dialog. |
-| Copy | Ctrl+C | ⌘+C | Copy selected cells to the clipboard. |
-| CopyWithHeaders | Ctrl+Shift+H | ⌘+⇧+H | Copy selected cells along with the column headers. |
-| Paste | Ctrl+V | ⌘+V | Paste clipboard content into the grid. |
+| Print | <kbd>Ctrl</kbd> + <kbd>P</kbd> | <kbd>⌘</kbd> + <kbd>P</kbd> | Open the browser print dialog. |
+| Copy | <kbd>Ctrl</kbd> + <kbd>C</kbd> | <kbd>⌘</kbd> + <kbd>C</kbd> | Copy selected cells to the clipboard. |
+| CopyWithHeaders | <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>H</kbd> | <kbd>⌘</kbd> + <kbd>⇧</kbd> + <kbd>H</kbd> | Copy selected cells along with the column headers. |
+| Paste | <kbd>Ctrl</kbd> + <kbd>V</kbd> | <kbd>⌘</kbd> + <kbd>V</kbd> | Paste clipboard content into the grid. |
 
 ### Assign custom keyboard shortcuts
 
-To assign custom shortcuts, set the **KeyboardShortcuts** property of the `SfGrid` component to a `GridCustomKeyboardShortcuts` object. The object contains one dictionary for each category, such as **Header** or **DataCell**. Each dictionary maps a `GridKeyboardAction` value to a key combination string, such as `"Alt+S"` or `"Ctrl+Shift+H"`. When the mapped keys are pressed in the matching grid area, the DataGrid runs the mapped action.
+The `GridCustomKeyboardShortcuts` object contains one dictionary for each category, such as **Header** or **DataCell**. Each dictionary maps a `GridKeyboardAction` value to a key combination string, such as `"Alt+S"` or `"Ctrl+Shift+H"`. When the mapped keys are pressed in the matching grid area, the DataGrid runs the mapped action.
 
 {% tabs %}
 {% highlight razor tabtitle="Index.razor" %}
@@ -460,8 +460,8 @@ The following example disables the default sorting and grouping shortcuts in the
 
 | Action | Default shortcut (Windows) | Default shortcut (Mac) | Result |
 |--------|----------------------------|------------------------|--------|
-| `GridKeyboardAction.SortColumn` | Enter, Ctrl+Enter | Enter, ⌘+Enter | Sorting from a focused header cell is disabled. |
-| `GridKeyboardAction.GroupColumn` | Ctrl+Space | ⌘+Space | Grouping from a focused header cell is disabled. |
+| `GridKeyboardAction.SortColumn` | <kbd>Enter</kbd> / <kbd>Ctrl</kbd> + <kbd>Enter</kbd> | <kbd>Enter</kbd> / <kbd>⌘</kbd> + <kbd>Enter</kbd> | Sorting from a focused header cell is disabled. |
+| `GridKeyboardAction.GroupColumn` | <kbd>Ctrl</kbd> + <kbd>Space</kbd> | <kbd>⌘</kbd> + <kbd>Space</kbd> | Grouping from a focused header cell is disabled. |
 
 Other header shortcuts, such as navigation, column reordering, and opening the filter menu, continue to use the default keys.
 
