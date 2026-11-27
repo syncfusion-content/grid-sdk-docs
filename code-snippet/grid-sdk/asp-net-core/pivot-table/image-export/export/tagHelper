@@ -1,4 +1,4 @@
-<ejs-button id="pdf" content="Image Export" isPrimary="true"></ejs-button>
+<ejs-button id="export" content="Image Export" isPrimary="true"></ejs-button>
 
 <ejs-pivotview id="PivotView" height="300" allowImageExport="true">
     <e-datasourcesettings dataSource="@ViewBag.DataSource" expandAll="false">
@@ -22,7 +22,7 @@
 
 <script>
     var pivotObj;
-    document.getElementById('pdf').onclick = function () {
+    document.getElementById('export').onclick = function () {
         pivotObj = document.getElementById('PivotView').ej2_instances[0];
         var imageExportProperties = { fileName: 'PivotTable.png', backgroundColor: '#ffffff', scale: 2 };
         pivotObj.exportToImage('PNG', imageExportProperties);
