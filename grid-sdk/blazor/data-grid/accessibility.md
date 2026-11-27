@@ -214,7 +214,7 @@ For example:
 
 ## Custom Keyboard Navigation
 
-Custom keyboard navigation in the Syncfusion® Blazor DataGrid changes the keys that run grid actions, such as navigation, sorting, grouping, editing, and copying. A default shortcut can be replaced with a new key combination, or a default keyboard action can be disabled. Actions without a custom setting keep the default shortcuts.
+Custom keyboard navigation in the Syncfusion® Blazor DataGrid changes the keys used to run grid actions, such as navigation, sorting, grouping, editing, and copying. A default shortcut can be replaced with a new key combination, or a default keyboard action can be disabled. Actions without a custom setting keep the default shortcuts.
 
 Use custom keyboard navigation in the following scenarios:
 
