@@ -216,12 +216,6 @@ For example:
 
 Custom keyboard navigation in the Syncfusion® Blazor DataGrid changes the keys used to run grid actions, such as navigation, sorting, grouping, editing, and copying. A default shortcut can be replaced with a new key combination, or a default keyboard action can be disabled. Actions without a custom setting keep the default shortcuts.
 
-Use custom keyboard navigation in the following scenarios:
-
-* A default shortcut conflicts with a browser or application shortcut.
-* Shortcuts must follow an organization's accessibility or usability guidelines.
-* A keyboard operation, such as sorting or grouping, must not be available to end users.
-
 To customize keyboard shortcuts, assign a `GridCustomKeyboardShortcuts` object to the **KeyboardShortcuts** property of the `SfGrid` component. Shortcuts can be configured for actions in the **DataCell**, **Header**, **EditCell**, **GroupRow**, **DetailRow**, and **Common** categories. Each category matches the grid area where the action runs.
 
 | Category | Grid area |
