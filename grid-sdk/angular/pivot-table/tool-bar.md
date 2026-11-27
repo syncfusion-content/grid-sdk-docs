@@ -26,13 +26,14 @@ The following table lists the built-in toolbar options and their actions:
 | Load | Opens a report from the report list |
 | Grid | Displays the pivot table |
 | Chart | Shows a pivot chart with options to select different chart types and enable or disable multiple axes |
-| Exporting | Exports the pivot table as PDF, Excel, or CSV, or the pivot chart as a PDF or image |
+| Exporting | Exports the pivot table as PDF, Excel, CSV, HTML, or image (PNG, JPEG, SVG), or the pivot chart as a PDF or image |
 | Sub-total | Shows or hides subtotals in the pivot table |
 | Grand Total | Shows or hides grand totals in the pivot table |
 | Conditional Formatting | Opens a pop-up to apply formatting to cells based on conditions |
 | Number Formatting | Opens a pop-up to apply number formatting to cells |
 | Field List | Opens the field list pop-up to configure the [`dataSourceSettings`](https://ej2.syncfusion.com/angular/documentation/api/pivotview/datasourcesettings) |
 | MDX | Displays the MDX query used to retrieve data from an OLAP data source. **Note**: This option applies only to OLAP data sources. |
+| FullScreen | Expands the Pivot Table to fill the viewport; selecting it again restores the normal layout. `FullScreen` is a toolbar item string. For programmatic control, use `setFullScreen(enable: boolean)`. |
 
 > The order of toolbar options can be changed by reordering items in the **ToolbarItems** collection. To remove a built-in option, simply omit it from the collection.
 
@@ -1051,7 +1052,7 @@ The [`toolbarRender`](https://ej2.syncfusion.com/angular/documentation/api/pivot
 
 ### BeforeExport
 
-The Pivot Table component allows users to export data as PDF, Excel, or CSV files using the toolbar options. The [`beforeExport`](https://ej2.syncfusion.com/angular/documentation/api/pivotview#beforeexport) event lets users customize settings for the exported document before the export process begins. For instance, users can add a header or footer to a PDF document by setting the [`header`](https://ej2.syncfusion.com/angular/documentation/api/grid/pdfExportProperties#header) and [`footer`](https://ej2.syncfusion.com/angular/documentation/api/grid/pdfExportProperties#footer) properties in the [`pdfExportProperties`](https://ej2.syncfusion.com/angular/documentation/api/grid/pdfExportProperties) object within this event. Similarly, for Excel exports, users can define headers using the [`excelExportProperties`](https://ej2.syncfusion.com/angular/documentation/api/grid/excelExportProperties) object.
+The Pivot Table component allows users to export data as PDF, Excel, CSV, HTML, or image files using the toolbar options. The [`beforeExport`](https://ej2.syncfusion.com/angular/documentation/api/pivotview#beforeexport) event lets users customize settings for the exported document before the export process begins. For instance, users can add a header or footer to a PDF document by setting the [`header`](https://ej2.syncfusion.com/angular/documentation/api/grid/pdfExportProperties#header) and [`footer`](https://ej2.syncfusion.com/angular/documentation/api/grid/pdfExportProperties#footer) properties in the [`pdfExportProperties`](https://ej2.syncfusion.com/angular/documentation/api/grid/pdfExportProperties) object within this event. Similarly, for Excel exports, users can define headers using the [`excelExportProperties`](https://ej2.syncfusion.com/angular/documentation/api/grid/excelExportProperties) object.
 
 Here’s an example of how to use the `beforeExport` event to customize headers and footers for both PDF and Excel exports:
 
@@ -1084,7 +1085,7 @@ The [`actionBegin`](https://ej2.syncfusion.com/angular/documentation/api/pivotvi
    | Report change | Report change |
    | Conditional Formatting | Open conditional formatting dialog |
    | Number Formatting | Open number formatting dialog |
-   | Export menu | PDF export, Excel export, CSV export |
+   | Export menu | PDF export, Excel export, CSV export, HTML export, Image export |
    | Show Fieldlist | Open field list |
    | Show Table | Show table view |
    | Chart menu | Show chart view |
@@ -1124,7 +1125,7 @@ The [`actionComplete`](https://ej2.syncfusion.com/angular/documentation/api/pivo
    | Report change | Report changed |
    | Conditional Formatting | Conditionally formatted |
    | Number Formatting | Number formatted |
-   | Export menu | PDF exported, Excel exported, CSV exported |
+   | Export menu | PDF exported, Excel exported, CSV exported, HTML exported, Image exported |
    | Show Fieldlist | Field list closed |
    | Show Table | Table view shown |
    | Sub-totals menu | Sub-totals hidden, Row sub-totals shown, Column sub-totals shown, Sub-totals shown |
@@ -1160,7 +1161,7 @@ The [`actionFailure`](https://ej2.syncfusion.com/angular/documentation/api/pivot
    | Report change | Report change |
    | Conditional Formatting | Open conditional formatting dialog |
    | Number Formatting | Open number formatting dialog |
-   | Export menu | PDF export, Excel export, CSV export |
+   | Export menu | PDF export, Excel export, CSV export, HTML export, Image export |
    | Show Fieldlist | Open field list |
    | Show Table | Show table view |
    | Chart menu | Show chart view |

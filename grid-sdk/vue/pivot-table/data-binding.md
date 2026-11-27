@@ -171,6 +171,10 @@ Remote CSV data binding allows you to load data directly from external sources w
 
 To bind remote CSV data, set the [`URL`](https://ej2.syncfusion.com/vue/documentation/api/pivotview/iDataOptions#url) property under [`dataSourceSettings`](https://ej2.syncfusion.com/vue/documentation/api/pivotview/index-default#datasourcesettings) to point to your data source endpoint. The [`URL`](https://ej2.syncfusion.com/vue/documentation/api/pivotview/iDataOptions#url) property accepts both direct downloadable CSV files (*.csv) and web service URLs that return CSV data.
 
+By default, remote CSV data is parsed using a comma (`,`) as the field separator. If your CSV file uses a different separator (such as a semicolon `;`, tab `\t`, or pipe `|`), specify it using the `delimiter` property in `dataSourceSettings`. Quoted fields may also safely contain the configured delimiter.
+
+When CSV fields enclosed in double quotes contain multi-line text or line breaks, set `enableQuotedLineBreaks` to `true` in `dataSourceSettings`. This preserves line breaks within the quoted field value instead of splitting it into a new record. Both properties are applicable when `type` is set to `'CSV'` and data is retrieved remotely via `url`.
+
 {% tabs %}
 {% highlight html tabtitle="Composition API (~/src/App.vue)" %}
 {% include code-snippet/grid-sdk/vue/pivot-table/common-cs2/app-composition.vue %}

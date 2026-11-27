@@ -3,7 +3,7 @@ layout: post
 title: WebMCP tool integration for Angular components | Syncfusion
 description: Learn how to integrate WebMCP with Syncfusion Angular components to enable AI interaction, configure tools, manage access, and monitor execution.
 control: WebMCP
-platform: ej2-angular
+platform: grid-sdk
 documentation: ug
 domainurl: ##DomainURL##
 ---

@@ -20,7 +20,7 @@ function App() {
   };
   let pivotObj: PivotViewComponent;
   let toolbarOptions: any = ['New', 'Save', 'SaveAs', 'Rename', 'Remove', 'Load',
-        'Grid', 'Chart', 'Export', 'SubTotal', 'GrandTotal', 'ConditionalFormatting', 'NumberFormatting', 'FieldList'];
+        'Grid', 'Chart', 'Export', 'SubTotal', 'GrandTotal', 'ConditionalFormatting', 'NumberFormatting', 'FieldList', 'FullScreen'];
 
 
     function saveReport(args: any): void {

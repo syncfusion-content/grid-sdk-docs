@@ -8,15 +8,7 @@
                 <e-column field='startDate' headerText='Start Date' textAlign='Right' format='yMd' width=120></e-column>
                 <e-column field="duration" headerText="Duration" width="90"></e-column></e-columns>
         </ejs-treegrid>
-        <ejs-treegrid id='secondTree' :allowRowDragAndDrop='true' height='315' :treeColumnIndex='1' :rowDropSettings='rowDrops' :selectionSettings='selectionSettings' childMapping='subtasks' >
-            <e-columns>
-                <e-column field="taskID" headerText="Task ID" width="120" isPrimaryKey="true"></e-column>
-                <e-column field="taskName" headerText="Task Name" width="220"></e-column>
-                <e-column field='startDate' headerText='Start Date' textAlign='Right' format='yMd' width=120></e-column>
-                <e-column field="duration" headerText="Duration" width="90"></e-column>
-            </e-columns>
-        </ejs-treegrid>
-        <ejs-treegrid id='thirdTree' :allowRowDragAndDrop='true' height='315' :treeColumnIndex='1' :rowDropSettings='rowDropsThird' :selectionSettings='selectionSettings' childMapping='subtasks' >
+        <ejs-treegrid id='DestTree' :allowRowDragAndDrop='true' height='315' :treeColumnIndex='1' :rowDropSettings='rowDrops' :selectionSettings='selectionSettings' childMapping='subtasks' >
             <e-columns>
                 <e-column field="taskID" headerText="Task ID" width="120" isPrimaryKey="true"></e-column>
                 <e-column field="taskName" headerText="Task Name" width="220"></e-column>
@@ -39,11 +31,9 @@ const data = sampleData;
 
 const selectionSettings = { type: 'Multiple' };
 
-const rowDrop = { targetID: ['secondTree', 'thirdTree'] };
+const rowDrop = { targetID: ['DestTree'] };
 
-const rowDrops = { targetID: ['TreeGrid', 'thirdTree'] };
-
-const rowDropsThird = { targetID: ['TreeGrid', 'secondTree'] };
+const rowDrops = { targetID: ['TreeGrid'] };
 
 provide('treegrid',  [RowDD, Selection]);
 

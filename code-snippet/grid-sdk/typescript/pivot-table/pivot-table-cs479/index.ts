@@ -89,7 +89,7 @@ let pivotTableObj: PivotView = new PivotView({
             pivotTableObj.setProperties({ dataSourceSettings: { columns: [], rows: [], values: [], filters: [] } }, false);
         },
         toolbar: ['New', 'Save', 'SaveAs', 'Rename', 'Remove', 'Load',
-        'Grid', 'Chart', 'Export', 'SubTotal', 'GrandTotal', 'Formatting', 'FieldList'],
+        'Grid', 'Chart', 'Export', 'SubTotal', 'GrandTotal', 'Formatting', 'FieldList', 'FullScreen'],
         allowExcelExport: true,
         allowNumberFormatting: true,
         allowConditionalFormatting: true,

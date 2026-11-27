@@ -15,7 +15,7 @@ function App() {
     };
     let pivotObj;
     let toolbarOptions = ['New', 'Save', 'SaveAs', 'Rename', 'Remove', 'Load',
-        'Grid', 'Chart', 'Export', 'SubTotal', 'GrandTotal', 'ConditionalFormatting', 'NumberFormatting', 'FieldList'];
+        'Grid', 'Chart', 'Export', 'SubTotal', 'GrandTotal', 'ConditionalFormatting', 'NumberFormatting', 'FieldList', 'FullScreen'];
     function saveReport(args) {
         let reports = [];
         let isSaved = false;
