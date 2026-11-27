@@ -212,13 +212,11 @@ For example:
 - To group columns when a header is focused, use <kbd>Command + Space</kbd>.
 - To expand visible groups, use <kbd>Ctrl + Down Arrow</kbd>.
 
-## Using Custom Key Support
+## Custom Keyboard Navigation
 
-The Blazor DataGrid allows you to customize keyboard shortcuts by replacing the default shortcuts or adding your own key combinations for supported grid actions. This helps you align the grid's keyboard behavior with your application's requirements and accessibility guidelines.
+The Blazor DataGrid allows its default keyboard shortcuts to be changed to match application requirements and accessibility guidelines. A default shortcut can be replaced with a different key combination, or a built-in action can be disabled. Actions that are not configured keep their default shortcuts.
 
-To customize keyboard shortcuts, assign a `GridCustomKeyboardShortcuts` object to the **KeyboardShortcuts** property of the `SfGrid` component. You can configure shortcuts for actions in the **DataCell**, **Header**, **EditCell**, **GroupRow**, **DetailRow**, and **Common** categories.
-
-The following tables list the supported actions and their default keyboard shortcuts.
+Keyboard actions are grouped into six categories based on the grid area where they apply: **DataCell**, **Header**, **EditCell**, **GroupRow**, **DetailRow**, and **Common**. The following tables list the actions in each category and their default shortcuts.
 
 **DataCell**
 
@@ -429,12 +427,115 @@ public class OrderData
 {% endhighlight %}
 {% endtabs %}
 
- **Note**
- 
-- **Partial customization:** You can customize only the actions required for your application. Any action that is not configured will continue to use its default keyboard shortcut.
-- **Action categories:** Keyboard shortcuts are grouped into categories such as **DataCell**, **Header**, **EditCell**, **GroupRow**, **DetailRow**, and **Common**. This makes it easier to organize and manage shortcuts based on where they are used in the grid.
-- **Override defaults:** When a custom shortcut is assigned to an action, it replaces the default keyboard shortcut for that action.
--**Unique key combinations:** To ensure consistent behavior, avoid assigning the same key combination to multiple grid actions.
+> **Note:** A single action can respond to more than one key combination. For example, the **NavigateDown** action in the **DataCell** category responds to <kbd>Enter</kbd>, <kbd>↓</kbd>, and <kbd>Shift</kbd> + <kbd>↓</kbd> by default.
+
+### Disable default keyboard actions
+
+A built-in keyboard action can be turned off by mapping its `GridKeyboardAction` value to `string.Empty`. The action then stops responding to its default keys. This helps when a default shortcut conflicts with a shortcut used elsewhere in the application, or when an operation must not be available from the keyboard.
+
+In this example, the **Header** dictionary maps two actions to `string.Empty`:
+
+| Action | Default shortcut (Windows) | Default shortcut (Mac) | Result |
+|--------|----------------------------|------------------------|--------|
+| `GridKeyboardAction.SortColumn` | Enter, Ctrl+Enter | Enter, ⌘+Enter | Sorting from a focused header cell is disabled. |
+| `GridKeyboardAction.GroupColumn` | Ctrl+Space | ⌘+Space | Grouping from a focused header cell is disabled. |
+
+All other shortcuts, such as header navigation, column reordering, and opening the filter menu, keep working.
+
+{% tabs %}
+{% highlight razor tabtitle="Index.razor" %}
+@using Syncfusion.Blazor.Grids
+
+<SfGrid DataSource="@GridData"
+    AllowPaging="true"
+    AllowSorting="true"
+    AllowGrouping="true"
+    AllowReordering="true"
+    AllowSelection="true"
+    AllowFiltering="true"
+    @ref="Grid"
+    Toolbar="@(new List<string>() { "Add", "Edit", "Delete", "Update", "Cancel" })"
+    KeyboardShortcuts="@Shortcuts"
+    Height="400">
+    <GridEditSettings AllowEditing="true" AllowAdding="true" AllowDeleting="true"></GridEditSettings>
+    <GridFilterSettings Type="FilterType.Menu"></GridFilterSettings>
+    <GridSelectionSettings CheckboxOnly="true"></GridSelectionSettings>
+    <GridColumns>
+        <GridColumn Type="ColumnType.CheckBox" Width="50"></GridColumn>
+        <GridColumn Field="@nameof(OrderData.OrderID)" HeaderText="Order ID" IsPrimaryKey="true" Width="120" />
+        <GridColumn Field="@nameof(OrderData.CustomerID)" HeaderText="Customer Name" Width="150" />
+        <GridColumn Field="@nameof(OrderData.ShipCity)" HeaderText="Ship City" Width="120" />
+        <GridColumn Field="@nameof(OrderData.OrderDate)" HeaderText="Order Date" Format="d" Width="140" />
+        <GridColumn Field="@nameof(OrderData.ShipName)" HeaderText="Ship Name" Width="160" />
+    </GridColumns>
+</SfGrid>
+
+@code {
+    private SfGrid<OrderData> Grid { get; set; } = default!;
+
+    public List<OrderData> GridData { get; set; }
+
+    protected override void OnInitialized()
+    {
+        GridData = OrderData.GetAllRecords();
+    }
+
+    private GridCustomKeyboardShortcuts Shortcuts { get; } = new()
+    {
+        Header = new Dictionary<GridKeyboardAction, string>
+        {
+            { GridKeyboardAction.SortColumn, string.Empty },
+            { GridKeyboardAction.GroupColumn, string.Empty }
+        }
+    };
+}
+{% endhighlight %}
+{% highlight c# tabtitle="OrderData.cs" %}
+public class OrderData
+{
+    public static List<OrderData> Orders = new List<OrderData>();
+
+    public OrderData() { }
+
+    public OrderData(int? OrderID, string CustomerID, string ShipCity, string ShipName, DateTime? OrderDate)
+    {
+        this.OrderID = OrderID;
+        this.CustomerID = CustomerID;
+        this.ShipCity = ShipCity;
+        this.ShipName = ShipName;
+        this.OrderDate = OrderDate;
+    }
+
+    public static List<OrderData> GetAllRecords()
+    {
+        if (Orders.Count() == 0)
+        {
+            int OrderID = 10247;
+            for (int i = 1; i < 2; i++)
+            {
+                Orders.Add(new OrderData(OrderID + 1, "VINET", "Reims", "Vins et alcools Chevali", new DateTime(2026, 1, 1)));
+                Orders.Add(new OrderData(OrderID + 2, "TOMSP", "Münster", "Toms Spezialitäten", new DateTime(2026, 1, 2)));
+                Orders.Add(new OrderData(OrderID + 3, "HANAR", "Rio de Janeiro", "Hanari Carnes", new DateTime(2026, 1, 3)));
+                Orders.Add(new OrderData(OrderID + 4, "VICTE", "Lyon", "Victuailles en stock", new DateTime(2026, 1, 4)));
+                Orders.Add(new OrderData(OrderID + 5, "SUPRD", "Charleroi", "Suprêmes délices", new DateTime(2026, 1, 5)));
+                Orders.Add(new OrderData(OrderID + 6, "HANAR", "Lyon", "Hanari Carnes", new DateTime(2026, 1, 6)));
+                Orders.Add(new OrderData(OrderID + 7, "CHOPS", "Rio de Janeiro", "Chop-suey Chinese", new DateTime(2026, 1, 7)));
+                Orders.Add(new OrderData(OrderID + 8, "ERNSH", "Münster", "Richter Supermarkt", new DateTime(2026, 1, 8)));
+                Orders.Add(new OrderData(OrderID + 9, "WELLI", "Reims", "Wellington Import", new DateTime(2026, 1, 9)));
+                OrderID += 9;
+            }
+        }
+        return Orders;
+    }
+
+    public int? OrderID { get; set; }
+    public string CustomerID { get; set; }
+    public string ShipCity { get; set; }
+    public string ShipName { get; set; }
+    public DateTime? OrderDate { get; set; }
+}
+{% endhighlight %}
+{% endtabs %}
 
 ## Ensuring accessibility
 
