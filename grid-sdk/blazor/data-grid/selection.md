@@ -720,11 +720,11 @@ public class OrderDetails
 
 ## Prevent specific rows from being selected
 
-The Blazor DataGrid provides the [IsRowSelectable](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridSelectionSettings.html#Syncfusion_Blazor_Grids_GridSelectionSettings_IsRowSelectable) property in [GridSelectionSettings](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridSelectionSettings.html) to conditionally control row selection based on row data. This feature is useful with row selection and checkbox selection when specific rows must be excluded from selection based on business requirements.
+The Blazor DataGrid provides the [IsRowSelectable](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridSelectionSettings.html#Syncfusion_Blazor_Grids_GridSelectionSettings_IsRowSelectable) property in [GridSelectionSettings](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridSelectionSettings.html) to conditionally control row selection based on row data. This feature is useful when you need to prevent specific rows from being selected based on business requirements.
 
-The `IsRowSelectable` property accepts a predicate function (`Func<object, bool>`) that receives the current row data and returns **true** or **false** to determine whether the row can be selected. Rows for which the predicate returns **false** are treated as non-selectable and are excluded from both user-initiated and programmatic selection operations. When the property is not set, all rows are selectable.
+The `IsRowSelectable` property accepts a predicate function (`Func<object, bool>`) that receives the current row data and returns `true` or `false` to determine whether the row can be selected. Rows for which the function returns `false` are treated as non-selectable and cannot be selected through user interaction or programmatic selection operations. When this property is not specified, all rows are selectable by default.
 
-This feature supports row-based selection modes, including checkbox selection. The selectable state is evaluated and cached for each record to improve performance during selection-related operations.
+This feature supports row selection, including checkbox selection. To improve performance, the DataGrid evaluates and caches the row selectability result for each record during selection-related operations.
 
 {% tabs %}
 {% highlight razor tabtitle="Index.razor" %}
@@ -801,10 +801,9 @@ public class OrderDetails
 
 {% previewsample "https://blazorplayground.syncfusion.com/embed/VZVRCWVUJHXvAbTZ?appbar=false&editor=false&result=true&errorlist=false&theme=bootstrap5" %}
 
-> **Limitations**
+> **Note**
 >
-> * The property is ignored when the Grid is configured for cell selection.
-> * For remote data sources, row selection eligibility is evaluated only for records available in the current server response.
-> * The selectable state is cached per record and is refreshed only during data-processing operations such as filtering, searching, editing, refresh actions, or when new data is received from a remote data source.
-> * Rows that are evaluated as non-selectable are automatically excluded from user selection interactions, [SelectRowAsync](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.SfGrid-1.html#Syncfusion_Blazor_Grids_SfGrid_1_SelectRowAsync_System_Int32_System_Nullable_System_Boolean__System_Boolean_), [SelectRowsAsync](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.SfGrid-1.html#Syncfusion_Blazor_Grids_SfGrid_1_SelectRowsAsync_System_Int32___), **Select All** operations, and persisted selection tracking.
-> * If a previously selected record becomes non-selectable after re-evaluation, it is automatically removed from the persisted selection collection.
+> * The `IsRowSelectable` property applies only to row-based selection modes, including checkbox selection. It is not applicable when cell selection is enabled.
+> * Rows that do not satisfy the configured selection criteria are automatically excluded from selection operations.
+> * The configured selection logic is applied consistently to user interactions, checkbox selection, and programmatic selection operations.
+> * The DataGrid evaluates the selection condition for each record and optimizes the result to ensure efficient selection operations.
