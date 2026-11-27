@@ -745,8 +745,10 @@ This feature supports row selection, including checkbox selection. To improve pe
 @code {
     private SfGrid<OrderDetails> Grid;
     public List<OrderDetails> OrderData { get; set; }
-    private bool IsSelectable(object data) =>
-   ((OrderDetails)data).OrderID == 10248;
+    private bool IsSelectable(object data)
+    {
+        return data is OrderDetails order && order.OrderID != 10248;
+    }
     protected override void OnInitialized()
     {
         OrderData = OrderDetails.GetAllRecords();
@@ -799,7 +801,7 @@ public class OrderDetails
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "https://blazorplayground.syncfusion.com/embed/VZVRCWVUJHXvAbTZ?appbar=false&editor=false&result=true&errorlist=false&theme=bootstrap5" %}
+{% previewsample "https://blazorplayground.syncfusion.com/embed/VDrxsiBGgaCAimdy?appbar=false&editor=false&result=true&errorlist=false&theme=fluent2" %}
 
 > **Note**
 >
