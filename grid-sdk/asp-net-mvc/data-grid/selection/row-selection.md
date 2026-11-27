@@ -284,7 +284,7 @@ The following example demonstrates deselecting rows programmatically:
 {% include code-snippet/grid-sdk/asp-net-mvc/grid/selection/row-deselection/razor %}
 {% endhighlight %}
 {% highlight c# tabtitle="row-deselection.cs" %}
-{% include code-snippet/grid-sdk/asp-net-mvc/grid/selection/row-deselection/row-deselection.cs %}
+{% include code-snippet/grid-sdk/asp-net-mvc/grid/selection/row-deselection.cs %}
 {% endhighlight %}
 {% endtabs %}
 
