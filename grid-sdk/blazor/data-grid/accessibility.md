@@ -212,7 +212,7 @@ For example:
 - To group columns when a header is focused, use <kbd>Command + Space</kbd>.
 - To expand visible groups, use <kbd>Ctrl + Down Arrow</kbd>.
 
-## Customize keyboard shortcuts
+## Custom Keyboard Navigation
 
 The Blazor DataGrid allows its default keyboard shortcuts to be changed to match application requirements and accessibility guidelines. A default shortcut can be replaced with a different key combination, or a built-in action can be disabled. Actions that are not configured keep their default shortcuts.
 
@@ -290,8 +290,6 @@ Keyboard actions are grouped into six categories based on the grid area where th
 | Copy | Ctrl+C | ⌘+C | Copy selected cells to the clipboard. |
 | CopyWithHeaders | Ctrl+Shift+H | ⌘+⇧+H | Copy selected cells along with their column headers. |
 | Paste | Ctrl+V | ⌘+V | Paste clipboard content into the grid. |
-
-To assign custom keyboard shortcuts:
 
 1. Create a `GridCustomKeyboardShortcuts` object.
 2. For each category to change, add a `Dictionary<GridKeyboardAction, string>` to the matching property, such as **Header** or **DataCell**.
@@ -436,9 +434,7 @@ public class OrderData
 {% endhighlight %}
 {% endtabs %}
 
-> **Note:**
-> - **Multiple keys for one action:** A single action can respond to more than one key combination. For example, the **NavigateDown** action in the **DataCell** category responds to <kbd>Enter</kbd>, <kbd>↓</kbd>, and <kbd>Shift</kbd> + <kbd>↓</kbd> by default.
-> - **Replacing defaults:** A custom key combination replaces the default shortcuts of that action.
+> **Note:** A single action can respond to more than one key combination. For example, the **NavigateDown** action in the **DataCell** category responds to <kbd>Enter</kbd>, <kbd>↓</kbd>, and <kbd>Shift</kbd> + <kbd>↓</kbd> by default.
 
 ### Disable default keyboard actions
 
@@ -455,7 +451,6 @@ All other shortcuts, such as header navigation, column reordering, and opening t
 
 {% tabs %}
 {% highlight razor tabtitle="Index.razor" %}
-@page "/"
 @using Syncfusion.Blazor.Grids
 
 <SfGrid DataSource="@GridData"
