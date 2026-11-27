@@ -212,6 +212,346 @@ For example:
 - To group columns when a header is focused, use <kbd>Command + Space</kbd>.
 - To expand visible groups, use <kbd>Ctrl + Down Arrow</kbd>.
 
+## Custom Keyboard Navigation
+
+Custom keyboard navigation in the Syncfusion® Blazor DataGrid changes the keys used to run grid actions, such as navigation, sorting, grouping, editing, and copying. A default shortcut can be replaced with a new key combination, or a default keyboard action can be disabled. Actions without a custom setting keep the default shortcuts.
+
+To customize keyboard shortcuts, assign a `GridCustomKeyboardShortcuts` object to the **KeyboardShortcuts** property of the `SfGrid` component. Shortcuts can be configured for actions in the **DataCell**, **Header**, **EditCell**, **GroupRow**, **DetailRow**, and **Common** categories. Each category matches the grid area where the action runs.
+
+| Category | Grid area |
+|----------|-----------|
+| **DataCell** | Focused data cells. |
+| **Header** | Focused header cells. |
+| **EditCell** | Cells in edit mode. |
+| **GroupRow** | Focused group caption rows. |
+| **DetailRow** | Focused rows with a detail template. |
+| **Common** | Grid-wide actions, such as print, copy, and paste. |
+
+### Default keyboard shortcuts
+
+The following tables list the actions in each category and the default shortcuts.
+
+**DataCell**
+
+| Action | Windows | Mac | Description |
+|--------|---------|-----|---|
+| NavigateUp | <kbd>Shift</kbd> + <kbd>Enter</kbd> | <kbd>⇧</kbd> + <kbd>Enter</kbd> | Move focus to the cell above. |
+| NavigateDown | <kbd>Enter</kbd> / <kbd>↓</kbd> / <kbd>Shift</kbd> + <kbd>↓</kbd> | <kbd>Enter</kbd> / <kbd>↓</kbd> / <kbd>⇧</kbd> + <kbd>↓</kbd> | Move focus to the cell below. |
+| NavigateLeft | <kbd>Shift</kbd> + <kbd>Tab</kbd> | <kbd>⇧</kbd> + <kbd>Tab</kbd> | Move focus to the previous cell. |
+| NavigateRight | <kbd>Tab</kbd> / <kbd>→</kbd> / <kbd>Shift</kbd> + <kbd>→</kbd> | <kbd>Tab</kbd> / <kbd>→</kbd> / <kbd>⇧</kbd> + <kbd>→</kbd> | Move focus to the next cell. |
+| NavigateRowStart | <kbd>Home</kbd> | <kbd>Fn</kbd> + <kbd>←</kbd> | Move focus to the first cell in the current row. |
+| NavigateRowEnd | <kbd>End</kbd> | <kbd>Fn</kbd> + <kbd>→</kbd> | Move focus to the last cell in the current row. |
+| NavigateGridStart | <kbd>Ctrl</kbd> + <kbd>Home</kbd> | <kbd>⌘</kbd> + <kbd>Fn</kbd> + <kbd>←</kbd> | Move focus to the first cell in the grid. |
+| NavigateGridEnd | <kbd>Ctrl</kbd> + <kbd>End</kbd> | <kbd>⌘</kbd> + <kbd>Fn</kbd> + <kbd>→</kbd> | Move focus to the last cell in the grid. |
+| StartEdit | <kbd>F2</kbd> | <kbd>F2</kbd> | Begin editing the focused cell. |
+| AddRecord | <kbd>Insert</kbd> | <kbd>⌥</kbd> + <kbd>Enter</kbd> | Add a new row. |
+| DeleteRecord | <kbd>Delete</kbd> | <kbd>Delete</kbd> | Delete the focused row or selected rows. |
+| SelectAll | <kbd>Ctrl</kbd> + <kbd>A</kbd> | <kbd>⌘</kbd> + <kbd>A</kbd> | Select all rows. |
+| PageUp | <kbd>PageUp</kbd> | <kbd>PageUp</kbd> | Move to the previous page. |
+| PageDown | <kbd>PageDown</kbd> | <kbd>PageDown</kbd> | Move to the next page. |
+| SelectToggle | <kbd>Space</kbd> | <kbd>Space</kbd> | Select or clear the focused checkbox row. |
+| Undo | <kbd>Ctrl</kbd> + <kbd>Z</kbd> | <kbd>⌘</kbd> + <kbd>Z</kbd> | Undo the last edit operation. |
+| Redo | <kbd>Ctrl</kbd> + <kbd>Y</kbd> | <kbd>⌘</kbd> + <kbd>⇧</kbd> + <kbd>Z</kbd> | Redo the last undone operation. |
+
+**Header**
+
+| Action | Windows | Mac | Description |
+|--------|---------|-----|---|
+| SortColumn | <kbd>Enter</kbd> / <kbd>Ctrl</kbd> + <kbd>Enter</kbd> | <kbd>Enter</kbd> / <kbd>⌘</kbd> + <kbd>Enter</kbd> | Sort the focused column. |
+| ToggleHeaderCheckbox | <kbd>Space</kbd> | <kbd>Space</kbd> | Select or clear all rows using the header checkbox. |
+| MoveFocusToFirstRow | <kbd>Alt</kbd> + <kbd>W</kbd> | <kbd>⌥</kbd> + <kbd>W</kbd> | Move focus to the first data row. |
+| NavigateLeft | <kbd>Shift</kbd> + <kbd>Tab</kbd> | <kbd>⇧</kbd> + <kbd>Tab</kbd> | Move focus to the previous header cell. |
+| NavigateRight | <kbd>Tab</kbd> | <kbd>Tab</kbd> | Move focus to the next header cell. |
+| GroupColumn | <kbd>Ctrl</kbd> + <kbd>Space</kbd> | <kbd>⌘</kbd> + <kbd>Space</kbd> | Group or ungroup the focused column. |
+| ReorderColumnLeft | <kbd>Ctrl</kbd> + <kbd>←</kbd> | <kbd>⌘</kbd> + <kbd>←</kbd> | Move the focused column to the left. |
+| ReorderColumnRight | <kbd>Ctrl</kbd> + <kbd>→</kbd> | <kbd>⌘</kbd> + <kbd>→</kbd> | Move the focused column to the right. |
+| FocusFilterBar | <kbd>↓</kbd> | <kbd>↓</kbd> | Move focus to the filter bar. |
+| OpenColumnMenu | <kbd>Alt</kbd> + <kbd>↓</kbd> | <kbd>⌥</kbd> + <kbd>↓</kbd> | Open the column menu. |
+| OpenFilterMenu | <kbd>Alt</kbd> + <kbd>↓</kbd> | <kbd>⌥</kbd> + <kbd>↓</kbd> | Open the filter menu for the focused column. |
+
+**EditCell**
+
+| Action | Windows | Mac | Description |
+|--------|---------|-----|---|
+| Escape | <kbd>Escape</kbd> | <kbd>Escape</kbd> | Cancel the current edit. |
+| EditEndAndTabNext | <kbd>Tab</kbd> | <kbd>Tab</kbd> | Save the edit and move to the next editable cell. |
+| EditEndAndShiftTabPrev | <kbd>Shift</kbd> + <kbd>Tab</kbd> | <kbd>⇧</kbd> + <kbd>Tab</kbd> | Save the edit and move to the previous editable cell. |
+
+**GroupRow**
+
+| Action | Windows | Mac | Description |
+|--------|---------|-----|---|
+| ExpandGroup | <kbd>→</kbd> | <kbd>→</kbd> | Expand the focused group. |
+| CollapseGroup | <kbd>←</kbd> | <kbd>←</kbd> | Collapse the focused group. |
+| ExpandAllGroup | <kbd>Ctrl</kbd> + <kbd>↓</kbd> | <kbd>⌘</kbd> + <kbd>↓</kbd> | Expand all groups. |
+| CollapseAllGroup | <kbd>Ctrl</kbd> + <kbd>↑</kbd> | <kbd>⌘</kbd> + <kbd>↑</kbd> | Collapse all groups. |
+
+**DetailRow**
+
+| Action | Windows | Mac | Description |
+|--------|---------|-----|---|
+| ExpandDetailRow | <kbd>Enter</kbd> / <kbd>Alt</kbd> + <kbd>↓</kbd> | <kbd>Enter</kbd> / <kbd>⌥</kbd> + <kbd>↓</kbd> | Expand the focused detail row. |
+| CollapseDetailRow | <kbd>Enter</kbd> / <kbd>Alt</kbd> + <kbd>↑</kbd> | <kbd>Enter</kbd> / <kbd>⌥</kbd> + <kbd>↑</kbd> | Collapse the focused detail row. |
+| ExpandAllDetailRows | <kbd>Ctrl</kbd> + <kbd>↓</kbd> | <kbd>⌘</kbd> + <kbd>↓</kbd> | Expand all detail rows. |
+| CollapseAllDetailRows | <kbd>Ctrl</kbd> + <kbd>↑</kbd> | <kbd>⌘</kbd> + <kbd>↑</kbd> | Collapse all detail rows. |
+
+**Common**
+
+| Action | Windows | Mac | Description |
+|--------|---------|-----|---|
+| Print | <kbd>Ctrl</kbd> + <kbd>P</kbd> | <kbd>⌘</kbd> + <kbd>P</kbd> | Open the browser print dialog. |
+| Copy | <kbd>Ctrl</kbd> + <kbd>C</kbd> | <kbd>⌘</kbd> + <kbd>C</kbd> | Copy selected cells to the clipboard. |
+| CopyWithHeaders | <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>H</kbd> | <kbd>⌘</kbd> + <kbd>⇧</kbd> + <kbd>H</kbd> | Copy selected cells along with the column headers. |
+| Paste | <kbd>Ctrl</kbd> + <kbd>V</kbd> | <kbd>⌘</kbd> + <kbd>V</kbd> | Paste clipboard content into the grid. |
+
+### Assign custom keyboard shortcuts
+
+The `GridCustomKeyboardShortcuts` object contains one dictionary for each category, such as **Header** or **DataCell**. Each dictionary maps a `GridKeyboardAction` value to a key combination string, such as `"Alt+S"` or `"Ctrl+Shift+H"`. When the mapped keys are pressed in the matching grid area, the DataGrid runs the mapped action.
+
+{% tabs %}
+{% highlight razor tabtitle="Index.razor" %}
+@using Syncfusion.Blazor.Grids
+
+<SfGrid DataSource="@GridData"
+    AllowPaging="true"
+    AllowSorting="true"
+    AllowGrouping="true"
+    AllowReordering="true"
+    AllowSelection="true"
+    AllowFiltering="true"
+    @ref="Grid"
+    Toolbar="@(new List<string>() { "Add", "Edit", "Delete", "Update", "Cancel" })"
+    KeyboardShortcuts="@Shortcuts"
+    Height="400">
+    <GridEditSettings AllowEditing="true" AllowAdding="true" AllowDeleting="true"></GridEditSettings>
+    <GridFilterSettings Type="FilterType.Menu"></GridFilterSettings>
+    <GridSelectionSettings CheckboxOnly="true"></GridSelectionSettings>
+    <GridColumns>
+        <GridColumn Type="ColumnType.CheckBox" Width="50"></GridColumn>
+        <GridColumn Field="@nameof(OrderData.OrderID)" HeaderText="Order ID" IsPrimaryKey="true" Width="120" />
+        <GridColumn Field="@nameof(OrderData.CustomerID)" HeaderText="Customer Name" Width="150" />
+        <GridColumn Field="@nameof(OrderData.ShipCity)" HeaderText="Ship City" Width="120" />
+        <GridColumn Field="@nameof(OrderData.OrderDate)" HeaderText="Order Date" Format="d" Width="140" />
+        <GridColumn Field="@nameof(OrderData.ShipName)" HeaderText="Ship Name" Width="160" />
+    </GridColumns>
+</SfGrid>
+
+@code {
+    private SfGrid<OrderData> Grid { get; set; } = default!;
+
+    public List<OrderData> GridData { get; set; }
+
+    protected override void OnInitialized()
+    {
+        GridData = OrderData.GetAllRecords();
+    }
+
+    private GridCustomKeyboardShortcuts Shortcuts { get; } = new()
+    {
+        Header = new Dictionary<GridKeyboardAction, string>
+        {
+            { GridKeyboardAction.NavigateLeft, "Alt+J" },
+            { GridKeyboardAction.NavigateRight, "Alt+L" },
+            { GridKeyboardAction.SortColumn, "Alt+S" },
+            { GridKeyboardAction.GroupColumn, "Alt+G" },
+            { GridKeyboardAction.ReorderColumnLeft, "Ctrl+J" },
+            { GridKeyboardAction.ReorderColumnRight, "Ctrl+L" },
+            { GridKeyboardAction.ToggleHeaderCheckbox, "Alt+H" },
+            { GridKeyboardAction.MoveFocusToFirstRow, "Alt+R" },
+            { GridKeyboardAction.OpenColumnMenu, "Alt+M" },
+            { GridKeyboardAction.OpenFilterMenu, "Ctrl+F" }
+        },
+        DataCell = new Dictionary<GridKeyboardAction, string>
+        {
+            { GridKeyboardAction.NavigateUp, "Alt+I" },
+            { GridKeyboardAction.NavigateDown, "Alt+K" },
+            { GridKeyboardAction.NavigateLeft, "Alt+J" },
+            { GridKeyboardAction.NavigateRight, "Alt+L" },
+            { GridKeyboardAction.NavigateRowStart, "Alt+U" },
+            { GridKeyboardAction.NavigateRowEnd, "Alt+O" },
+            { GridKeyboardAction.NavigateGridStart, "Ctrl+U" },
+            { GridKeyboardAction.NavigateGridEnd, "Ctrl+O" },
+            { GridKeyboardAction.StartEdit, "Alt+E" },
+            { GridKeyboardAction.AddRecord, "Alt+A" },
+            { GridKeyboardAction.DeleteRecord, "Alt+D" },
+            { GridKeyboardAction.SelectAll, "Alt+S" }
+        },
+        GroupRow = new Dictionary<GridKeyboardAction, string>
+        {
+            { GridKeyboardAction.ExpandGroup, "Alt+C" },
+            { GridKeyboardAction.CollapseGroup, "Alt+V" },
+            { GridKeyboardAction.ExpandAllGroup, "Ctrl+C" },
+            { GridKeyboardAction.CollapseAllGroup, "Ctrl+V" }
+        },
+        EditCell = new Dictionary<GridKeyboardAction, string>
+        {
+            { GridKeyboardAction.Escape, "Alt+B" }
+        },
+        Common = new Dictionary<GridKeyboardAction, string>
+        {
+            { GridKeyboardAction.Copy, "Ctrl+U" },
+            { GridKeyboardAction.CopyWithHeaders, "Ctrl+I" },
+        }
+    };
+}
+{% endhighlight %}
+{% highlight c# tabtitle="OrderData.cs" %}
+public class OrderData
+{
+    public static List<OrderData> Orders = new List<OrderData>();
+
+    public OrderData() { }
+
+    public OrderData(int? OrderID, string CustomerID, string ShipCity, string ShipName, DateTime? OrderDate)
+    {
+        this.OrderID = OrderID;
+        this.CustomerID = CustomerID;
+        this.ShipCity = ShipCity;
+        this.ShipName = ShipName;
+        this.OrderDate = OrderDate;
+    }
+
+    public static List<OrderData> GetAllRecords()
+    {
+        if (Orders.Count() == 0)
+        {
+            int OrderID = 10247;
+            for (int i = 1; i < 2; i++)
+            {
+                Orders.Add(new OrderData(OrderID + 1, "VINET", "Reims", "Vins et alcools Chevali", new DateTime(2026, 1, 1)));
+                Orders.Add(new OrderData(OrderID + 2, "TOMSP", "Münster", "Toms Spezialitäten", new DateTime(2026, 1, 2)));
+                Orders.Add(new OrderData(OrderID + 3, "HANAR", "Rio de Janeiro", "Hanari Carnes", new DateTime(2026, 1, 3)));
+                Orders.Add(new OrderData(OrderID + 4, "VICTE", "Lyon", "Victuailles en stock", new DateTime(2026, 1, 4)));
+                Orders.Add(new OrderData(OrderID + 5, "SUPRD", "Charleroi", "Suprêmes délices", new DateTime(2026, 1, 5)));
+                Orders.Add(new OrderData(OrderID + 6, "HANAR", "Lyon", "Hanari Carnes", new DateTime(2026, 1, 6)));
+                Orders.Add(new OrderData(OrderID + 7, "CHOPS", "Rio de Janeiro", "Chop-suey Chinese", new DateTime(2026, 1, 7)));
+                Orders.Add(new OrderData(OrderID + 8, "ERNSH", "Münster", "Richter Supermarkt", new DateTime(2026, 1, 8)));
+                Orders.Add(new OrderData(OrderID + 9, "WELLI", "Reims", "Wellington Import", new DateTime(2026, 1, 9)));
+                OrderID += 9;
+            }
+        }
+        return Orders;
+    }
+
+    public int? OrderID { get; set; }
+    public string CustomerID { get; set; }
+    public string ShipCity { get; set; }
+    public string ShipName { get; set; }
+    public DateTime? OrderDate { get; set; }
+}
+{% endhighlight %}
+{% endtabs %}
+
+N> A single action can respond to more than one key combination. For example, the `NavigateDown` action in the **DataCell** category responds to <kbd>Enter</kbd>, <kbd>↓</kbd>, and <kbd>Shift</kbd> + <kbd>↓</kbd> by default.
+
+### Disable default keyboard actions
+
+Disabling a default keyboard action stops the action from running when the default keys are pressed. To disable an action, map the matching `GridKeyboardAction` value to `string.Empty` in the category dictionary.
+
+The following example disables the default sorting and grouping shortcuts in the **Header** category.
+
+| Action | Default shortcut (Windows) | Default shortcut (Mac) | Result |
+|--------|----------------------------|------------------------|--------|
+| `GridKeyboardAction.SortColumn` | <kbd>Enter</kbd> / <kbd>Ctrl</kbd> + <kbd>Enter</kbd> | <kbd>Enter</kbd> / <kbd>⌘</kbd> + <kbd>Enter</kbd> | Sorting from a focused header cell is disabled. |
+| `GridKeyboardAction.GroupColumn` | <kbd>Ctrl</kbd> + <kbd>Space</kbd> | <kbd>⌘</kbd> + <kbd>Space</kbd> | Grouping from a focused header cell is disabled. |
+
+Other header shortcuts, such as navigation, column reordering, and opening the filter menu, continue to use the default keys.
+
+{% tabs %}
+{% highlight razor tabtitle="Index.razor" %}
+@using Syncfusion.Blazor.Grids
+
+<SfGrid DataSource="@GridData"
+    AllowPaging="true"
+    AllowSorting="true"
+    AllowGrouping="true"
+    AllowReordering="true"
+    AllowSelection="true"
+    AllowFiltering="true"
+    @ref="Grid"
+    Toolbar="@(new List<string>() { "Add", "Edit", "Delete", "Update", "Cancel" })"
+    KeyboardShortcuts="@Shortcuts"
+    Height="400">
+    <GridEditSettings AllowEditing="true" AllowAdding="true" AllowDeleting="true"></GridEditSettings>
+    <GridFilterSettings Type="FilterType.Menu"></GridFilterSettings>
+    <GridSelectionSettings CheckboxOnly="true"></GridSelectionSettings>
+    <GridColumns>
+        <GridColumn Type="ColumnType.CheckBox" Width="50"></GridColumn>
+        <GridColumn Field="@nameof(OrderData.OrderID)" HeaderText="Order ID" IsPrimaryKey="true" Width="120" />
+        <GridColumn Field="@nameof(OrderData.CustomerID)" HeaderText="Customer Name" Width="150" />
+        <GridColumn Field="@nameof(OrderData.ShipCity)" HeaderText="Ship City" Width="120" />
+        <GridColumn Field="@nameof(OrderData.OrderDate)" HeaderText="Order Date" Format="d" Width="140" />
+        <GridColumn Field="@nameof(OrderData.ShipName)" HeaderText="Ship Name" Width="160" />
+    </GridColumns>
+</SfGrid>
+
+@code {
+    private SfGrid<OrderData> Grid { get; set; } = default!;
+
+    public List<OrderData> GridData { get; set; }
+
+    protected override void OnInitialized()
+    {
+        GridData = OrderData.GetAllRecords();
+    }
+
+    private GridCustomKeyboardShortcuts Shortcuts { get; } = new()
+    {
+        Header = new Dictionary<GridKeyboardAction, string>
+        {
+            { GridKeyboardAction.SortColumn, string.Empty },
+            { GridKeyboardAction.GroupColumn, string.Empty }
+        }
+    };
+}
+{% endhighlight %}
+{% highlight c# tabtitle="OrderData.cs" %}
+public class OrderData
+{
+    public static List<OrderData> Orders = new List<OrderData>();
+
+    public OrderData() { }
+
+    public OrderData(int? OrderID, string CustomerID, string ShipCity, string ShipName, DateTime? OrderDate)
+    {
+        this.OrderID = OrderID;
+        this.CustomerID = CustomerID;
+        this.ShipCity = ShipCity;
+        this.ShipName = ShipName;
+        this.OrderDate = OrderDate;
+    }
+
+    public static List<OrderData> GetAllRecords()
+    {
+        if (Orders.Count() == 0)
+        {
+            int OrderID = 10247;
+            for (int i = 1; i < 2; i++)
+            {
+                Orders.Add(new OrderData(OrderID + 1, "VINET", "Reims", "Vins et alcools Chevali", new DateTime(2026, 1, 1)));
+                Orders.Add(new OrderData(OrderID + 2, "TOMSP", "Münster", "Toms Spezialitäten", new DateTime(2026, 1, 2)));
+                Orders.Add(new OrderData(OrderID + 3, "HANAR", "Rio de Janeiro", "Hanari Carnes", new DateTime(2026, 1, 3)));
+                Orders.Add(new OrderData(OrderID + 4, "VICTE", "Lyon", "Victuailles en stock", new DateTime(2026, 1, 4)));
+                Orders.Add(new OrderData(OrderID + 5, "SUPRD", "Charleroi", "Suprêmes délices", new DateTime(2026, 1, 5)));
+                Orders.Add(new OrderData(OrderID + 6, "HANAR", "Lyon", "Hanari Carnes", new DateTime(2026, 1, 6)));
+                Orders.Add(new OrderData(OrderID + 7, "CHOPS", "Rio de Janeiro", "Chop-suey Chinese", new DateTime(2026, 1, 7)));
+                Orders.Add(new OrderData(OrderID + 8, "ERNSH", "Münster", "Richter Supermarkt", new DateTime(2026, 1, 8)));
+                Orders.Add(new OrderData(OrderID + 9, "WELLI", "Reims", "Wellington Import", new DateTime(2026, 1, 9)));
+                OrderID += 9;
+            }
+        }
+        return Orders;
+    }
+
+    public int? OrderID { get; set; }
+    public string CustomerID { get; set; }
+    public string ShipCity { get; set; }
+    public string ShipName { get; set; }
+    public DateTime? OrderDate { get; set; }
+}
+{% endhighlight %}
+{% endtabs %}
+
 ## Ensuring accessibility
 
 The Blazor DataGrid is validated for accessibility using [axe-core](https://www.nuget.org/packages/Deque.AxeCore.Playwright) integrated with Playwright tests.
