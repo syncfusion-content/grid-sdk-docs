@@ -214,55 +214,57 @@ For example:
 
 ## Using Custom Key Support
 
-The Blazor DataGrid supports replacing the default built-in keyboard shortcuts or adding new ones that perform the same actions. This allows you to customize the keyboard experience to match your application's conventions or accessibility requirements.
+The Blazor DataGrid allows you to customize keyboard shortcuts by replacing the default shortcuts or adding your own key combinations for supported grid actions. This helps you align the grid's keyboard behavior with your application's requirements and accessibility guidelines.
 
-To configure custom keyboard shortcuts, set the **KeyboardShortcuts** property on the `SfGrid` component with a `GridCustomKeyboardShortcuts` object. Each action category (DataCell, Header, EditCell, GroupRow, DetailRow, and Common) contains a dictionary mapping `GridKeyboardAction` enum values to custom key combinations.
+To customize keyboard shortcuts, assign a `GridCustomKeyboardShortcuts` object to the **KeyboardShortcuts** property of the `SfGrid` component. You can configure shortcuts for actions in the **DataCell**, **Header**, **EditCell**, **GroupRow**, **DetailRow**, and **Common** categories.
+
+The following tables list the supported actions and their default keyboard shortcuts.
 
 **DataCell**
 
 | Action | Windows | Mac | Description |
 |--------|---------|-----|---|
-| NavigateUp | Shift+Enter | ⇧+Enter | Move focus up one cell. |
-| NavigateDown | Enter, ArrowDown, Shift+Down | Enter, ↓, ⇧+↓ | Move focus down one cell. |
+| NavigateUp | Shift+Enter | ⇧+Enter | Move focus to the cell above. |
+| NavigateDown | Enter, ArrowDown, Shift+Down | Enter, ↓, ⇧+↓ | Move focus to the cell below. |
 | NavigateLeft | Shift+Tab | ⇧+Tab | Move focus to the previous cell. |
 | NavigateRight | Tab, ArrowRight, Shift+Right | Tab, →, ⇧+→ | Move focus to the next cell. |
-| NavigateRowStart | Home | Fn+← | Move focus to the first cell in the row. |
-| NavigateRowEnd | End | Fn+→ | Move focus to the last cell in the row. |
+| NavigateRowStart | Home | Fn+← | Move focus to the first cell in the current row. |
+| NavigateRowEnd | End | Fn+→ | Move focus to the last cell in the current row. |
 | NavigateGridStart | Ctrl+Home | ⌘+Fn+← | Move focus to the first cell in the grid. |
 | NavigateGridEnd | Ctrl+End | ⌘+Fn+→ | Move focus to the last cell in the grid. |
-| StartEdit | F2 | F2 | Start editing the focused cell. |
+| StartEdit | F2 | F2 | Begin editing the focused cell. |
 | AddRecord | Insert | ⌥+Enter | Add a new row. |
-| DeleteRecord | Delete | Delete | Delete the focused or selected rows. |
+| DeleteRecord | Delete | Delete | Delete the focused row or selected rows. |
 | SelectAll | Ctrl+A | ⌘+A | Select all rows. |
-| PageUp | PageUp | PageUp | Go to the previous page. |
-| PageDown | PageDown | PageDown | Go to the next page. |
-| SelectToggle | Space | Space | Toggle selection of the focused checkbox row. |
-| Undo | Ctrl+Z | ⌘+Z | Undo the most recent edit. |
-| Redo | Ctrl+Y | ⌘+⇧+Z | Redo the most recently undone edit. |
+| PageUp | PageUp | PageUp | Move to the previous page. |
+| PageDown | PageDown | PageDown | Move to the next page. |
+| SelectToggle | Space | Space | Select or clear the focused checkbox row. |
+| Undo | Ctrl+Z | ⌘+Z | Undo the last edit operation. |
+| Redo | Ctrl+Y | ⌘+⇧+Z | Redo the last undone operation. |
 
 **Header**
 
 | Action | Windows | Mac | Description |
 |--------|---------|-----|---|
 | SortColumn | Enter, Ctrl+Enter | Enter, ⌘+Enter | Sort the focused column. |
-| ToggleHeaderCheckbox | Space | Space | Toggle the header checkbox. |
-| MoveFocusToFirstRow | Alt+W | ⌥+W | Move focus to the first content row. |
+| ToggleHeaderCheckbox | Space | Space | Select or clear all rows using the header checkbox. |
+| MoveFocusToFirstRow | Alt+W | ⌥+W | Move focus to the first data row. |
 | NavigateLeft | Shift+Tab | ⇧+Tab | Move focus to the previous header cell. |
 | NavigateRight | Tab | Tab | Move focus to the next header cell. |
 | GroupColumn | Ctrl+Space | ⌘+Space | Group or ungroup the focused column. |
-| ReorderColumnLeft | Ctrl+Left | ⌘+← | Move the focused column left. |
-| ReorderColumnRight | Ctrl+Right | ⌘+→ | Move the focused column right. |
-| FocusFilterBar | ArrowDown | ↓ | Move focus into the filter bar. |
-| OpenColumnMenu | Alt+ArrowDown | ⌥+↓ | Open the focused column's menu. |
-| OpenFilterMenu | Alt+ArrowDown | ⌥+↓ | Open the focused column's filter menu. |
+| ReorderColumnLeft | Ctrl+Left | ⌘+← | Move the focused column to the left. |
+| ReorderColumnRight | Ctrl+Right | ⌘+→ | Move the focused column to the right. |
+| FocusFilterBar | ArrowDown | ↓ | Move focus to the filter bar. |
+| OpenColumnMenu | Alt+ArrowDown | ⌥+↓ | Open the column menu. |
+| OpenFilterMenu | Alt+ArrowDown | ⌥+↓ | Open the filter menu for the focused column. |
 
 **EditCell**
 
 | Action | Windows | Mac | Description |
 |--------|---------|-----|---|
 | Escape | Escape | Escape | Cancel the current edit. |
-| EditEndAndTabNext | Tab | Tab | Commit the edit and move to the next editable cell. |
-| EditEndAndShiftTabPrev | Shift+Tab | ⇧+Tab | Commit the edit and move to the previous editable cell. |
+| EditEndAndTabNext | Tab | Tab | Save the edit and move to the next editable cell. |
+| EditEndAndShiftTabPrev | Shift+Tab | ⇧+Tab | Save the edit and move to the previous editable cell. |
 
 **GroupRow**
 
@@ -288,10 +290,8 @@ To configure custom keyboard shortcuts, set the **KeyboardShortcuts** property o
 |--------|---------|-----|---|
 | Print | Ctrl+P | ⌘+P | Open the browser print dialog. |
 | Copy | Ctrl+C | ⌘+C | Copy selected cells to the clipboard. |
-| CopyWithHeaders | Ctrl+Shift+H | ⌘+⇧+H | Copy selected cells with their headers. |
+| CopyWithHeaders | Ctrl+Shift+H | ⌘+⇧+H | Copy selected cells along with their column headers. |
 | Paste | Ctrl+V | ⌘+V | Paste clipboard content into the grid. |
-
-The following example demonstrates how to customize keyboard shortcuts for navigation, editing, and common actions:
 
 {% tabs %}
 {% highlight razor tabtitle="Index.razor" %}
@@ -429,12 +429,11 @@ public class OrderData
 {% endhighlight %}
 {% endtabs %}
 
-### Key Points
-
-- **Partial customization:** You can customize only the actions you need. Uncustomized actions retain their default keyboard shortcuts.
-- **Action categories:** Shortcuts are organized by context (DataCell, Header, EditCell, GroupRow, DetailRow, Common) for logical grouping.
-- **Key combination format:** Use standard keyboard notation (e.g., `"Alt+J"`, `"Ctrl+Shift+H"`) for custom key combinations.
-- **Override defaults:** Custom shortcuts override the default behavior, allowing complete control over keyboard interactions.
+ **Note**
+- **Partial customization:** You can customize only the actions required for your application. Any action that is not configured will continue to use its default keyboard shortcut.
+- **Action categories:** Keyboard shortcuts are grouped into categories such as **DataCell**, **Header**, **EditCell**, **GroupRow**, **DetailRow**, and **Common**. This makes it easier to organize and manage shortcuts based on where they are used in the grid.
+- **Override defaults:** When a custom shortcut is assigned to an action, it replaces the default keyboard shortcut for that action.
+-**Unique key combinations:** To ensure consistent behavior, avoid assigning the same key combination to multiple grid actions.
 
 ## Ensuring accessibility
 
