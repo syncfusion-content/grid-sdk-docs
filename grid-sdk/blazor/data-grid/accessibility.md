@@ -214,9 +214,13 @@ For example:
 
 ## Custom Keyboard Navigation
 
-Custom keyboard navigation in the Blazor DataGrid assigns new key combinations to grid actions, such as navigation, sorting, grouping, editing, and copying, or disables default keyboard actions. Custom shortcuts are useful when a default shortcut conflicts with a browser or application shortcut, when shortcuts must follow an organization's accessibility guidelines, or when a keyboard operation must not be available to end users.
+Custom keyboard navigation in the Syncfusion® Blazor DataGrid changes the keys that run grid actions, such as navigation, sorting, grouping, editing, and copying. A default shortcut can be replaced with a new key combination, or a default keyboard action can be disabled. Actions without a custom setting keep the default shortcuts.
 
-To configure custom shortcuts, assign a `GridCustomKeyboardShortcuts` object to the **KeyboardShortcuts** property of the `SfGrid` component. The object contains one dictionary for each grid area, such as **Header** or **DataCell**. Each dictionary maps a `GridKeyboardAction` value to a key combination string, such as `"Alt+S"` or `"Ctrl+Shift+H"`. When the mapped keys are pressed in the matching grid area, the DataGrid runs the mapped action. Actions without a custom mapping keep the default shortcuts.
+Use custom keyboard navigation in the following scenarios:
+
+* A default shortcut conflicts with a browser or application shortcut.
+* Shortcuts must follow an organization's accessibility or usability guidelines.
+* A keyboard operation, such as sorting or grouping, must not be available to end users.
 
 Keyboard actions are grouped into six categories. Each category matches the grid area where the action runs.
 
@@ -228,6 +232,8 @@ Keyboard actions are grouped into six categories. Each category matches the grid
 | **GroupRow** | Focused group caption rows. |
 | **DetailRow** | Focused rows with a detail template. |
 | **Common** | Grid-wide actions, such as print, copy, and paste. |
+
+### Default keyboard shortcuts
 
 The following tables list the actions in each category and the default shortcuts.
 
@@ -303,6 +309,10 @@ The following tables list the actions in each category and the default shortcuts
 | Copy | Ctrl+C | ⌘+C | Copy selected cells to the clipboard. |
 | CopyWithHeaders | Ctrl+Shift+H | ⌘+⇧+H | Copy selected cells along with the column headers. |
 | Paste | Ctrl+V | ⌘+V | Paste clipboard content into the grid. |
+
+### Assign custom keyboard shortcuts
+
+To assign custom shortcuts, set the **KeyboardShortcuts** property of the `SfGrid` component to a `GridCustomKeyboardShortcuts` object. The object contains one dictionary for each category, such as **Header** or **DataCell**. Each dictionary maps a `GridKeyboardAction` value to a key combination string, such as `"Alt+S"` or `"Ctrl+Shift+H"`. When the mapped keys are pressed in the matching grid area, the DataGrid runs the mapped action.
 
 {% tabs %}
 {% highlight razor tabtitle="Index.razor" %}
@@ -440,13 +450,11 @@ public class OrderData
 {% endhighlight %}
 {% endtabs %}
 
-> **Note:** A single action can respond to more than one key combination. For example, the **NavigateDown** action in the **DataCell** category responds to <kbd>Enter</kbd>, <kbd>↓</kbd>, and <kbd>Shift</kbd> + <kbd>↓</kbd> by default.
+N> A single action can respond to more than one key combination. For example, the `NavigateDown` action in the **DataCell** category responds to <kbd>Enter</kbd>, <kbd>↓</kbd>, and <kbd>Shift</kbd> + <kbd>↓</kbd> by default.
 
 ### Disable default keyboard actions
 
-A disabled keyboard action no longer runs when the default keys are pressed. Disable a default action when the default shortcut conflicts with another shortcut in the application, or when an operation such as sorting or grouping must not run from the keyboard.
-
-To disable an action, map the matching `GridKeyboardAction` value to `string.Empty` in the category dictionary.
+Disabling a default keyboard action stops the action from running when the default keys are pressed. To disable an action, map the matching `GridKeyboardAction` value to `string.Empty` in the category dictionary.
 
 The following example disables the default sorting and grouping shortcuts in the **Header** category.
 
