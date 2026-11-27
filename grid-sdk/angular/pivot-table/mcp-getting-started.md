@@ -1,26 +1,72 @@
 ---
 layout: post
-title: WebMCP Getting Started with Angular Pivot Table | Syncfusion
-description: Learn to enable browser-based WebMCP tools in the Syncfusion Angular Pivot Table, configure registration, and troubleshoot setup.
-platform: grid-sdk
+title: WebMCP tool integration for Angular Pivot Table | Syncfusion
+description: Learn how to integrate WebMCP with the Syncfusion Angular Pivot Table, configure tools, and control their execution.
 control: WebMCP
+platform: grid-sdk
 documentation: ug
 domainurl: ##DomainURL##
 ---
 
-# WebMCP Getting Started with Angular Pivot Table
+# WebMCP Tools Integration for Syncfusion® Angular Pivot Table
 
-WebMCP lets a browser-based AI agent discover and invoke structured tools exposed by a web page. The Syncfusion® Pivot Table registers tools for report changes, filtering, sorting, drill operations, formatting, charts, and export. These tools change PivotView state or initiate exports; all built-in descriptors set `readOnlyHint: false`.
+WebMCP allows AI assistants running in the browser to interact directly with Syncfusion® components through natural language prompts. Instead of relying on DOM inspection or simulated user interactions, an AI assistant can use structured tools to update a Pivot Table report, apply filters and sorting, drill through headers, format values, change chart views, and export the report.
 
 The Angular wrapper supplies the PivotView component and its module providers. `PivotViewAllModule` includes `WebMcpPivotViewService`, which provides the core adapter when `enableWebMcp` is enabled. Registration runs in the browser through `document.modelContext.registerTool`.
 
-## Browser requirements
+> WebMCP is an experimental browser capability. Availability and setup requirements may change as the specification evolves.
 
-This browser API is experimental. The [Chrome WebMCP documentation](https://developer.chrome.com/docs/ai/webmcp) describes an origin trial beginning with Chrome 149 and local testing with `chrome://flags/#enable-webmcp-testing`. Enable the flag and relaunch Chrome for local testing, or follow the current origin-trial instructions for an eligible deployed origin. Other browser/version support is not established by that documentation.
+## Prerequisites
+
+- Syncfusion® Angular Pivot Table packages
+- Angular CLI and Node.js
+- A Chromium-based browser with WebMCP support
+
+## WebMCP setup
+
+The [Chrome documentation for WebMCP](https://developer.chrome.com/docs/ai/webmcp) describes an origin trial beginning with Chrome 149 and local testing with `chrome://flags/#enable-webmcp-testing`. Enable the flag and relaunch Chrome for local testing, or follow the current origin-trial instructions for an eligible deployed origin. Other browser/version support is not established by that documentation.
 
 The page must expose `document.modelContext.registerTool`. The adapter skips registration and logs a warning if it is unavailable. The official WebMCP setup does not require the extension or API key mentioned in some unrelated demos.
 
-## Create an Angular Pivot Table with WebMCP
+## Tools
+
+The built-in PivotView tools update report state or initiate exports; all built-in descriptors set `readOnlyHint: false`. Unless noted, successful calls return JSON text with `success`, `data`, and `message`. Cancellation returns an action, cancellation status, and message; errors set `isError: true`.
+
+| Tool | What it does | Changes | On by default | Needs confirmation |
+| --- | --- | --- | --- | --- |
+| `setDataSource` | Replaces the source with a `dataSource` array; object arrays are JSON and array-of-arrays are CSV. The schema requires `dataSource`, but the handler also accepts `url` and `type` (`JSON` or `CSV`); `.csv` URLs default to CSV. | DataMutation | Yes | No |
+| `addFieldToAxis` | Adds `fieldName` to `rows`, `columns`, `values`, or `filters` using `axis`. | ViewStateMutation | Yes | No |
+| `removeFieldFromAxis` | Removes `fieldName` from the specified `axis`. | ViewStateMutation | Yes | No |
+| `moveFieldBetweenAxes` | Moves `fieldName` from `fromAxis` to `toAxis`. | ViewStateMutation | Yes | No |
+| `applyFiltering` | Adds or updates `filters[]` entries with a required `name` and optional `type`, `items`, `condition`, `value1`, and `value2`. Supported types are `Include`, `Exclude`, `Label`, `Date`, `Number`, and `Value`; values may be strings or numbers, and `value2` supports ranges. | ViewStateMutation | Yes | No |
+| `applySorting` | Adds or updates `sortSettings[]` entries with `name` and `order` (`Ascending`, `Descending`, or `None`). Requires `dataSourceSettings.enableSorting: true`. | ViewStateMutation | Yes | No |
+| `applyValueSorting` | Sets `valueSortSettings` with `headerText` and `sortOrder`, and optional `headerDelimiter`, `columnHeaderText`, `columnSortOrder`, `rowHeaderText`, and `rowSortOrder`. Requires `enableValueSorting: true`. | ViewStateMutation | Yes | No |
+| `clearAllFilters` | Clears all filters. | ViewStateMutation | Yes | No |
+| `applyConditionalFormatting` | Adds `formatRules[]` with `conditions`, `value1`, and `style`; optional properties include `measure`, `value2`, `style.backgroundColor`, `style.color`, `style.fontFamily`, `style.fontSize`, and `applyGrandTotals`. Requires `allowConditionalFormatting: true` and `ConditionalFormatting`. | ViewStateMutation | Yes | No |
+| `manageCalculatedField` | Creates, updates, or deletes a calculated field using `action` (`create`, `update`, or `delete`) and `fieldName`; create and update also require `formula`. Requires `allowCalculatedField: true` and `CalculatedField`. | ViewStateMutation | Yes | No |
+| `clearSorting` | Clears all sorts. Requires `dataSourceSettings.enableSorting: true`. | ViewStateMutation | Yes | No |
+| `clearConditionalFormatting` | Clears conditional formatting rules. Requires `allowConditionalFormatting: true` and `ConditionalFormatting`. | ViewStateMutation | Yes | No |
+| `clearNumberFormatting` | Clears number formats. Requires `allowNumberFormatting: true` and `NumberFormatting`. | ViewStateMutation | Yes | No |
+| `exportToExcel` | Initiates Excel export; accepts an optional file name through `exportProperties.fileName` or `fileName`. Requires `allowExcelExport: true` and `ExcelExport`. | ExternalExport | Yes | No |
+| `exportToPDF` | Initiates PDF export; accepts an optional file name through `exportProperties.fileName` or `fileName`. Requires `allowPdfExport: true` and `PDFExport`. | ExternalExport | Yes | No |
+| `exportToCSV` | Initiates CSV export; accepts an optional file name through `exportProperties.fileName` or `fileName`. Requires `allowExcelExport: true` and `ExcelExport`. | ExternalExport | Yes | No |
+| `drillDownField` | Expands a field or members on the `rows` or `columns` axis using `fieldName`, `axis`, and optional `drillMembers` and `delimiter`. The default member delimiter is `**`. | ViewStateMutation | Yes | No |
+| `drillUpField` | Collapses a field or members on the `rows` or `columns` axis using `fieldName`, `axis`, and optional `drillMembers` and `delimiter`. The default member delimiter is `**`. | ViewStateMutation | Yes | No |
+| `expandAllHeaders` | Expands all headers. | ViewStateMutation | Yes | No |
+| `collapseAllHeaders` | Collapses all headers. | ViewStateMutation | Yes | No |
+| `setChartType` | Sets `chartSettings.chartSeries.type` using `chartType`. Inject `PivotChart` to render a PivotChart. | ViewStateMutation | Yes | No |
+| `toggleViewMode` | Sets `displayOption.view` to `Table`, `Chart`, or `Both`. Values are case-sensitive; chart rendering requires `PivotChart`. | ViewStateMutation | Yes | No |
+| `applyNumberFormat` | Adds or updates `formatSettings[]` entries with a required `name` and optional `format`, `useGrouping`, and `currency`. Requires `allowNumberFormatting: true` and `NumberFormatting`. | ViewStateMutation | Yes | No |
+
+The `Needs confirmation` column indicates whether the built-in tool displays a confirmation prompt. `showConfirmationDialog` does not display a prompt for built-in PivotView actions; `beforeWebMcpToolExecute` can cancel a tool call.
+
+The module names in the requirements column are PivotView core exports. In Angular, use the corresponding wrapper services, such as `ExcelExportService`, `PDFExportService`, `ConditionalFormattingService`, `NumberFormattingService`, `CalculatedFieldService`, and `PivotChartService`. `PivotViewAllModule` includes these services; provide the corresponding services when importing modules individually.
+
+## Integrating WebMCP tools
+
+Follow these steps to integrate WebMCP support into a Syncfusion® Angular Pivot Table.
+
+### Step 1: Set up the Angular project
 
 Create a standalone Angular application and install the PivotView and theme packages:
 
@@ -36,7 +82,13 @@ In `src/styles.css`, import the PivotView styles:
 @import '../node_modules/@syncfusion/ej2-material3-theme/styles/pivotview/index.css';
 ```
 
-The `<ejs-pivotview>` selector is provided by Angular's `PivotViewComponent` wrapper. Import `PivotViewAllModule` into the standalone component; it provides `WebMcpPivotViewService` along with the PivotView component.
+### Step 2: Enable WebMCP support
+
+Import `PivotViewAllModule` into the standalone component. It provides the `<ejs-pivotview>` component and `WebMcpPivotViewService`.
+
+### Step 3: Register component tools
+
+Set `enableWebMcp` to `true` to register the built-in tools with the WebMCP runtime. The adapter registers tools during PivotView initialization.
 
 `src/app/app.ts`:
 
@@ -80,79 +132,32 @@ export class App {
 }
 ```
 
-Run the app with `ng serve`, then open the local URL in a supported Chrome build with WebMCP enabled. The adapter registers tools during PivotView initialization.
+Run the app with `ng serve`, then open the local URL in a supported Chrome build with WebMCP enabled.
 
-## Tool registration and settings
+### Step 4: Customize tool registration
 
-The default tool-name prefix is the rendered PivotView element id. With `name: 'sales'`, registered tool names use the `sales_<toolName>` form.
+Use `webMcpSettings` to customize how the tools are exposed. The default tool-name prefix is the rendered PivotView element id. With `name: 'sales'`, registered tool names use the `sales_<toolName>` form.
 
-| Setting | Behavior |
-|---|---|
-| `name` | Optional tool-name prefix; defaults to the component element id. |
-| `tools` | Optional tool names or `WebMcpTool` definitions; omitted or empty selects built-in tools. |
+| Property | Description |
+| --- | --- |
+| `name` | Optional prefix applied to registered tool names. Defaults to the component element id. |
+| `tools` | Optional tool names or `WebMcpTool` definitions. When omitted or empty, the built-in tools are selected. |
 | `exposedTo` | Optional origins passed to tool registration; omitted when empty. |
 
-`beforeWebMcpToolExecute` runs before a tool handler. Its event arguments can set `cancel = true` and provide `cancellationResponse`. `showConfirmationDialog` requests confirmation, but the current core helper does not display a prompt; it is checked only in the unimplemented-tool fallback and does not confirm built-in PivotView actions.
+### Step 5: Monitor and control tool execution
 
-## Built-in PivotView tools
+The `beforeWebMcpToolExecute` event runs before a tool handler. Its event arguments can set `cancel = true` and provide `cancellationResponse`. Use this event to audit tool usage, validate requests, cancel operations, and apply application-specific rules.
 
-Unless noted, success returns text content containing JSON with `success`, `data`, and `message`; `data` is `{}`. Cancellation returns `action`, `cancelled: true`, and `message`; errors set `isError: true`. Export handlers return the initiated file name as `data.fileName`, although the declared output schema says `filePath`.
+> AI-generated requests should be validated before executing operations that change report state or initiate exports. Use `beforeWebMcpToolExecute` to enforce application-specific rules.
 
-| Tool | Inputs | Behavior and prerequisites |
-|---|---|---|
-| `setDataSource` | `dataSource` array; optional `url`, `type` | Replaces the source; object arrays are JSON and array-of-arrays are CSV. The schema requires `dataSource`, but the handler also accepts a URL; `type` may be JSON or CSV, and `.csv` URLs default to CSV. |
-| `addFieldToAxis` | `fieldName`, `axis` | Adds a field to `rows`, `columns`, `values`, or `filters`. |
-| `removeFieldFromAxis` | `fieldName`, `axis` | Removes a field from one of those axes. |
-| `moveFieldBetweenAxes` | `fieldName`, `fromAxis`, `toAxis` | Moves a field between the four axes. |
-| `applyFiltering` | `filters[]`: required `name`; optional `type` (`Include`, `Exclude`, `Label`, `Date`, `Number`, `Value`), `items[]`, `condition`, `value1`, `value2` | Adds or updates filter settings; values may be strings or numbers and `value2` supports ranges. |
-| `applySorting` | `sortSettings[]`: `name`, `order` (`Ascending`, `Descending`, `None`) | Adds or updates sorts; requires `dataSourceSettings.enableSorting: true`. |
-| `applyValueSorting` | `valueSortSettings`: `headerText`, `sortOrder`; optional `headerDelimiter`, `columnHeaderText`, `columnSortOrder`, `rowHeaderText`, `rowSortOrder` | Sets value sorting; requires `enableValueSorting: true`. |
-| `clearAllFilters` | None | Clears all filters. |
-| `applyConditionalFormatting` | `formatRules[]`: `conditions`, `value1`, `style`; optional `measure`, `value2`, `style.backgroundColor`, `style.color`, `style.fontFamily`, `style.fontSize`, `applyGrandTotals` | Adds rules; requires `allowConditionalFormatting: true` and `ConditionalFormatting`. |
-| `manageCalculatedField` | `action` (`create`, `update`, `delete`), `fieldName`; `formula` for create/update | Manages a calculated field; requires `allowCalculatedField: true` and `CalculatedField`. |
-| `clearSorting` | None | Clears all sorts; requires `dataSourceSettings.enableSorting: true`. |
-| `clearConditionalFormatting` | None | Clears rules; requires `allowConditionalFormatting: true` and `ConditionalFormatting`. |
-| `clearNumberFormatting` | None | Clears number formats; requires `allowNumberFormatting: true` and `NumberFormatting`. |
-| `exportToExcel` | Optional `exportProperties.fileName` or top-level `fileName` | Initiates Excel export; requires `allowExcelExport: true` and `ExcelExport`. |
-| `exportToPDF` | Optional `exportProperties.fileName` or top-level `fileName` | Initiates PDF export; requires `allowPdfExport: true` and `PDFExport`. |
-| `exportToCSV` | Optional `exportProperties.fileName` or top-level `fileName` | Initiates CSV export; requires `allowExcelExport: true` and `ExcelExport`. |
-| `drillDownField` | `fieldName`, `axis` (`rows` or `columns`); optional `drillMembers[]`, `delimiter` | Expands a field or members on the selected axis; default member delimiter is `**`. |
-| `drillUpField` | `fieldName`, `axis` (`rows` or `columns`); optional `drillMembers[]`, `delimiter` | Collapses a field or members on the selected axis; default member delimiter is `**`. |
-| `expandAllHeaders` | None | Expands all headers. |
-| `collapseAllHeaders` | None | Collapses all headers. |
-| `setChartType` | `chartType` string | Sets `chartSettings.chartSeries.type`; inject `PivotChart` to render a PivotChart. |
-| `toggleViewMode` | `viewMode`: `Table`, `Chart`, or `Both` | Sets `displayOption.view`; values are case-sensitive and chart rendering needs `PivotChart`. |
-| `applyNumberFormat` | `formatSettings[]`: required `name`; optional `format`, `useGrouping`, `currency` | Adds or updates number formatting; requires `allowNumberFormatting: true` and `NumberFormatting`. |
+## Best practices
 
-The module names are the PivotView core exports. For Angular, the wrapper provides corresponding services such as `ExcelExportService`, `PDFExportService`, `ConditionalFormattingService`, `NumberFormattingService`, `CalculatedFieldService`, and `PivotChartService`. `PivotViewAllModule` includes the wrapper services; use the corresponding providers if importing modules individually.
+- Expose only the tools required by the application by configuring `webMcpSettings.tools`.
+- Use the `name` property when multiple PivotView instances exist on the same page.
+- Configure `exposedTo` with the origins allowed by the application.
+- Monitor tool activity and validate requests in `beforeWebMcpToolExecute`.
+- Enable the required PivotView feature properties and modules for feature-dependent tools.
 
-## Example requests
+## Explore the demo
 
-- “Add `Sales` to values and `Country` to rows.” — `addFieldToAxis`
-- “Filter `Country` to France.” — `applyFiltering`
-- “Sort the report by `Sales` descending.” — `applySorting`
-- “Expand all headers.” — `expandAllHeaders`
-- “Show a line chart.” — `setChartType` and `toggleViewMode`
-- “Export the report as `sales.csv`.” — `exportToCSV`
-
-## Troubleshooting
-
-- If no tools register, check `enableWebMcp`, confirm `PivotViewAllModule` is imported, and verify `document.modelContext.registerTool` is available.
-- If an agent cannot find tool names, check the component id or configured `webMcpSettings.name`.
-- If a feature tool reports that a feature is unavailable, enable its listed property and register the corresponding Angular module service.
-
-## See also
-
-- [Getting Started](./getting-started)
-- [Filtering](./filtering)
-- [Sorting](./sorting)
-- [Excel export](./excel-export)
-
-## Sources
-
-- [PivotView WebMCP adapter source](https://github.com/Syncfusion/ej2-javascript-ui-controls/blob/03de1a97556505c42f353cbd34a25673bd197c4b/controls/pivotview/src/pivotview/actions/webmcp-adapter.ts)
-- [PivotView core source](https://github.com/Syncfusion/ej2-javascript-ui-controls/blob/03de1a97556505c42f353cbd34a25673bd197c4b/controls/pivotview/src/pivotview/base/pivotview.ts)
-- [Angular PivotView wrapper exports](https://github.com/Syncfusion/ej2-angular-ui-components/blob/master/components/pivotview/src/index.ts)
-- [Angular PivotView module providers](https://github.com/Syncfusion/ej2-angular-ui-components/blob/master/components/pivotview/src/pivotview/pivotview-all.module.ts)
-- [Angular Pivot Table Getting Started](./getting-started)
-- [Chrome WebMCP documentation](https://developer.chrome.com/docs/ai/webmcp)
+Explore the Syncfusion® Angular Pivot Table with WebMCP integration through this [demo](https://demos.syncfusion.com/grid-sdk/pivot-table/webmcp/index.html).

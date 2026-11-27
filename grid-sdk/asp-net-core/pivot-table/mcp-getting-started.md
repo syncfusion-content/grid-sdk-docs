@@ -1,25 +1,67 @@
 ---
 layout: post
-title: WebMCP Getting Started with ASP.NET Core Pivot Table | Syncfusion
-description: Enable browser-based WebMCP tools for the Syncfusion ASP.NET Core Pivot Table and review verified wrapper APIs.
+title: WebMCP tool integration for ASP.NET Core Pivot Table | Syncfusion
+description: Learn how to integrate WebMCP with the Syncfusion ASP.NET Core Pivot Table, configure tools, and control their execution.
 platform: grid-sdk
 control: WebMCP
 documentation: ug
 ---
 
-# WebMCP Getting Started with ASP.NET Core Pivot Table
+# WebMCP Tools Integration for Syncfusion® ASP.NET Core Pivot Table
 
 WebMCP lets a browser-based AI agent discover and invoke structured tools exposed by a web page. The Syncfusion® Pivot Table registers tools for PivotView report changes, filtering, sorting, drill operations, formatting, charts, and export. These tools change PivotView state or initiate exports; the core descriptors mark every built-in tool `readOnlyHint: false`.
 
 ASP.NET Core hosts the PivotView control in a Razor page, but WebMCP is configured by the JavaScript PivotView running in the browser. The .NET wrapper exposes the `EnableWebMcp` property; WebMCP is not a server-side .NET API.
 
-## Browser requirements
+## Prerequisites
 
-This browser API is experimental. The [Chrome WebMCP documentation](https://developer.chrome.com/docs/ai/webmcp) describes an origin trial beginning with Chrome 149 and local testing with the `chrome://flags/#enable-webmcp-testing` flag. Enable the flag and relaunch Chrome for local testing, or follow the current origin-trial instructions for an eligible deployed origin. Other browser/version support is not established by that documentation.
+- Syncfusion® ASP.NET Core Pivot Table package
+- .NET SDK
+- A Chromium-based browser with WebMCP support
+
+## WebMCP setup
+
+This browser API is experimental. The [Chrome documentation for this API](https://developer.chrome.com/docs/ai/webmcp) describes an origin trial beginning with Chrome 149 and local testing with the `chrome://flags/#enable-webmcp-testing` flag. Enable the flag and relaunch Chrome for local testing, or follow the current origin-trial instructions for an eligible deployed origin. Other browser/version support is not established by that documentation.
 
 The page must expose `document.modelContext.registerTool`. The PivotView adapter checks for this API when registering tools. The official WebMCP setup does not require the extension or API key mentioned in some unrelated demos.
 
-## Add WebMCP to an ASP.NET Core Pivot Table
+## Tools
+
+All tools below are registered with `readOnlyHint: false`. Unless otherwise noted, successful execution returns a WebMCP text content item containing JSON with `success`, `data`, and `message`; the `data` value is `{}`. Cancellation returns text JSON with `action`, `cancelled: true`, and `message`; errors return `isError: true` and a text message. Export handlers return the initiated file name in `data.fileName`. Note that their declared output schema says `filePath`, while the implementation currently returns `fileName`.
+
+| Tool | Inputs | Behavior and prerequisites |
+|---|---|---|
+| `setDataSource` | `dataSource` array; optional `url`, `type` | Replaces source data; arrays of objects are treated as JSON and arrays of arrays as CSV. Although the schema marks `dataSource` required, the handler also accepts a URL; `type` can specify JSON or CSV, otherwise a URL ending in `.csv` is treated as CSV. |
+| `addFieldToAxis` | `fieldName`, `axis` | Adds a field to `rows`, `columns`, `values`, or `filters`. |
+| `removeFieldFromAxis` | `fieldName`, `axis` | Removes a named field from one of those four axes. |
+| `moveFieldBetweenAxes` | `fieldName`, `fromAxis`, `toAxis` | Moves a named field between the four axes. |
+| `applyFiltering` | `filters[]`: `name` (required), optional `type` (`Include`, `Exclude`, `Label`, `Date`, `Number`, `Value`), `items[]`, `condition`, `value1`, `value2` | Adds or updates filter settings. `value1` and `value2` accept strings or numbers; `value2` supports range conditions. |
+| `applySorting` | `sortSettings[]`: `name`, `order` (`Ascending`, `Descending`, `None`) | Adds or updates sort settings. Requires `dataSourceSettings.enableSorting: true`. |
+| `applyValueSorting` | `valueSortSettings`: required `headerText`, `sortOrder`; optional `headerDelimiter`, `columnHeaderText`, `columnSortOrder`, `rowHeaderText`, `rowSortOrder` | Sets value-based sorting. Requires `enableValueSorting: true`. |
+| `clearAllFilters` | None | Clears all filter settings. |
+| `applyConditionalFormatting` | `formatRules[]`: required `conditions`, `value1`, `style`; optional `measure`, `value2`, `style.backgroundColor`, `style.color`, `style.fontFamily`, `style.fontSize`, `applyGrandTotals` | Adds conditional formatting rules. Requires `allowConditionalFormatting: true` and the `ConditionalFormatting` module. |
+| `manageCalculatedField` | `action` (`create`, `update`, `delete`), `fieldName`; `formula` for create/update | Creates, updates, or deletes a calculated field. Requires `allowCalculatedField: true` and the `CalculatedField` module. |
+| `clearSorting` | None | Clears all sort settings. Requires `dataSourceSettings.enableSorting: true`. |
+| `clearConditionalFormatting` | None | Clears conditional formatting rules. Requires `allowConditionalFormatting: true` and the `ConditionalFormatting` module. |
+| `clearNumberFormatting` | None | Clears number-format settings. Requires `allowNumberFormatting: true` and the `NumberFormatting` module. |
+| `exportToExcel` | Optional `exportProperties.fileName` (handler also accepts top-level `fileName`) | Initiates Excel export. Requires `allowExcelExport: true` and the `ExcelExport` module. |
+| `exportToPDF` | Optional `exportProperties.fileName` (handler also accepts top-level `fileName`) | Initiates PDF export. Requires `allowPdfExport: true` and the `PDFExport` module. |
+| `exportToCSV` | Optional `exportProperties.fileName` (handler also accepts top-level `fileName`) | Initiates CSV export. Requires `allowExcelExport: true` and the `ExcelExport` module. |
+| `drillDownField` | `fieldName`, `axis` (`rows` or `columns`); optional `drillMembers[]`, `delimiter` | Expands a row/column field, or specified members. The field must be present on the selected axis; the default member delimiter is `**`. |
+| `drillUpField` | `fieldName`, `axis` (`rows` or `columns`); optional `drillMembers[]`, `delimiter` | Collapses a row/column field, or specified members. The field must be present on the selected axis; the default member delimiter is `**`. |
+| `expandAllHeaders` | None | Sets all headers to expanded. |
+| `collapseAllHeaders` | None | Sets all headers to collapsed. |
+| `setChartType` | `chartType` string | Sets `chartSettings.chartSeries.type`. Inject `PivotChart` when the page must render a PivotChart. |
+| `toggleViewMode` | `viewMode`: `Table`, `Chart`, or `Both` | Changes `displayOption.view`. These values are case-sensitive in the handler; inject `PivotChart` to render chart view. |
+| `applyNumberFormat` | `formatSettings[]`: required `name`; optional `format`, `useGrouping`, `currency` | Adds or updates number formatting. Requires `allowNumberFormatting: true` and the `NumberFormatting` module. |
+
+The module names are the PivotView core exports. Set each related `allow...` property when its tool requires it; ensure the ASP.NET Core package version ships the matching browser module before enabling optional feature tools.
+
+## Integrating WebMCP tools
+
+Follow these steps to integrate WebMCP support into a Syncfusion® ASP.NET Core Pivot Table.
+
+### Step 1: Set up the ASP.NET Core project
 
 Create a Razor Pages app and install the ASP.NET Core PivotView and theme packages, following [Getting Started with ASP.NET Core Pivot Table](./getting-started).
 
@@ -28,7 +70,11 @@ dotnet add package Syncfusion.AspNetCore.PivotView
 dotnet add package Syncfusion.AspNetCore.Themes
 ```
 
+### Step 2: Enable WebMCP support
+
 Add the Tag Helpers in `Pages/_ViewImports.cshtml`, and reference the Syncfusion PivotView script and theme and `<ejs-scripts>` in the shared layout as shown in the [ASP.NET Core getting-started guide](./getting-started). On the Razor page, set the verified `enableWebMcp` Tag Helper property to `true`. The generated PivotView element id is used as the default tool-name prefix.
+
+### Step 3: Register component tools
 
 `Pages/Index.cshtml`:
 
@@ -82,7 +128,7 @@ namespace PivotWebMcp.Pages
 
 Run the app with `dotnet run`, then open it in a Chrome build with WebMCP enabled. The Tag Helper configures a browser PivotView; the WebMCP adapter calls `document.modelContext.registerTool(tool, options)` in that page.
 
-### Configure the registered tools
+### Step 4: Customize tool registration
 
 The ASP.NET Core API reference exposes `PivotView.WebMcpSettings` as a `PivotViewWebMcpSettings` object. Its documented properties are `Name`, `Tools`, and `ExposedTo`. Their core behavior is:
 
@@ -94,43 +140,11 @@ The ASP.NET Core API reference exposes `PivotView.WebMcpSettings` as a `PivotVie
 
 **Unresolved wrapper syntax:** The published ASP.NET Core API reference confirms `EnableWebMcp` and the `PivotViewWebMcpSettings` properties, but does not show the Razor syntax for assigning a `WebMcpSettings` object or a custom `Tools` collection. The runnable sample therefore uses the verified enable flag and default settings (all built-in tools); it does not guess the nested-settings syntax.
 
-### Monitor or cancel a tool
+### Step 5: Monitor and control tool execution
 
 In the core implementation, `beforeWebMcpToolExecute` runs before a tool handler and receives `toolName` and `toolArgs`. Setting `cancel` to `true` cancels execution; `cancellationResponse` optionally supplies the cancellation message. Setting `showConfirmationDialog` requests confirmation, but the current implementation does not display a confirmation UI: its confirmation helper only logs a warning and returns `true`, and the flag is checked only in the fallback for an unimplemented tool. Do not treat it as confirmation for built-in PivotView tools.
 
 **Unresolved wrapper syntax:** The ASP.NET Core API reference does not provide a verified `beforeWebMcpToolExecute` Razor callback example or confirm the callback argument shape for this wrapper. Bind a client-side callback only after verifying that syntax against the target package version.
-
-## Built-in PivotView tools
-
-All tools below are registered with `readOnlyHint: false`. Unless otherwise noted, successful execution returns a WebMCP text content item containing JSON with `success`, `data`, and `message`; the `data` value is `{}`. Cancellation returns text JSON with `action`, `cancelled: true`, and `message`; errors return `isError: true` and a text message. Export handlers return the initiated file name in `data.fileName`. Note that their declared output schema says `filePath`, while the implementation currently returns `fileName`.
-
-| Tool | Inputs | Behavior and prerequisites |
-|---|---|---|
-| `setDataSource` | `dataSource` array; optional `url`, `type` | Replaces source data; arrays of objects are treated as JSON and arrays of arrays as CSV. Although the schema marks `dataSource` required, the handler also accepts a URL; `type` can specify JSON or CSV, otherwise a URL ending in `.csv` is treated as CSV. |
-| `addFieldToAxis` | `fieldName`, `axis` | Adds a field to `rows`, `columns`, `values`, or `filters`. |
-| `removeFieldFromAxis` | `fieldName`, `axis` | Removes a named field from one of those four axes. |
-| `moveFieldBetweenAxes` | `fieldName`, `fromAxis`, `toAxis` | Moves a named field between the four axes. |
-| `applyFiltering` | `filters[]`: `name` (required), optional `type` (`Include`, `Exclude`, `Label`, `Date`, `Number`, `Value`), `items[]`, `condition`, `value1`, `value2` | Adds or updates filter settings. `value1` and `value2` accept strings or numbers; `value2` supports range conditions. |
-| `applySorting` | `sortSettings[]`: `name`, `order` (`Ascending`, `Descending`, `None`) | Adds or updates sort settings. Requires `dataSourceSettings.enableSorting: true`. |
-| `applyValueSorting` | `valueSortSettings`: required `headerText`, `sortOrder`; optional `headerDelimiter`, `columnHeaderText`, `columnSortOrder`, `rowHeaderText`, `rowSortOrder` | Sets value-based sorting. Requires `enableValueSorting: true`. |
-| `clearAllFilters` | None | Clears all filter settings. |
-| `applyConditionalFormatting` | `formatRules[]`: required `conditions`, `value1`, `style`; optional `measure`, `value2`, `style.backgroundColor`, `style.color`, `style.fontFamily`, `style.fontSize`, `applyGrandTotals` | Adds conditional formatting rules. Requires `allowConditionalFormatting: true` and the `ConditionalFormatting` module. |
-| `manageCalculatedField` | `action` (`create`, `update`, `delete`), `fieldName`; `formula` for create/update | Creates, updates, or deletes a calculated field. Requires `allowCalculatedField: true` and the `CalculatedField` module. |
-| `clearSorting` | None | Clears all sort settings. Requires `dataSourceSettings.enableSorting: true`. |
-| `clearConditionalFormatting` | None | Clears conditional formatting rules. Requires `allowConditionalFormatting: true` and the `ConditionalFormatting` module. |
-| `clearNumberFormatting` | None | Clears number-format settings. Requires `allowNumberFormatting: true` and the `NumberFormatting` module. |
-| `exportToExcel` | Optional `exportProperties.fileName` (handler also accepts top-level `fileName`) | Initiates Excel export. Requires `allowExcelExport: true` and the `ExcelExport` module. |
-| `exportToPDF` | Optional `exportProperties.fileName` (handler also accepts top-level `fileName`) | Initiates PDF export. Requires `allowPdfExport: true` and the `PDFExport` module. |
-| `exportToCSV` | Optional `exportProperties.fileName` (handler also accepts top-level `fileName`) | Initiates CSV export. Requires `allowExcelExport: true` and the `ExcelExport` module. |
-| `drillDownField` | `fieldName`, `axis` (`rows` or `columns`); optional `drillMembers[]`, `delimiter` | Expands a row/column field, or specified members. The field must be present on the selected axis; the default member delimiter is `**`. |
-| `drillUpField` | `fieldName`, `axis` (`rows` or `columns`); optional `drillMembers[]`, `delimiter` | Collapses a row/column field, or specified members. The field must be present on the selected axis; the default member delimiter is `**`. |
-| `expandAllHeaders` | None | Sets all headers to expanded. |
-| `collapseAllHeaders` | None | Sets all headers to collapsed. |
-| `setChartType` | `chartType` string | Sets `chartSettings.chartSeries.type`. Inject `PivotChart` when the page must render a PivotChart. |
-| `toggleViewMode` | `viewMode`: `Table`, `Chart`, or `Both` | Changes `displayOption.view`. These values are case-sensitive in the handler; inject `PivotChart` to render chart view. |
-| `applyNumberFormat` | `formatSettings[]`: required `name`; optional `format`, `useGrouping`, `currency` | Adds or updates number formatting. Requires `allowNumberFormatting: true` and the `NumberFormatting` module. |
-
-The module names are the PivotView core exports. Set each related `allow...` property when its tool requires it; ensure the ASP.NET Core package version ships the matching browser module before enabling optional feature tools.
 
 ## Example requests
 
@@ -148,6 +162,17 @@ The module names are the PivotView core exports. Set each related `allow...` pro
 - If an agent cannot find an expected name, check the element `id`. The default prefix is the rendered PivotView element id.
 - If a feature tool reports that a feature is disabled or its module is missing, enable the listed `allow...` property and confirm that the browser-side PivotView build includes the required module.
 
+## Best practices
+
+- Enable only the PivotView features required by the application and include their corresponding browser modules.
+- Use a unique PivotView element id when multiple instances are present.
+- Apply application-specific validation before executing operations that change report state or initiate exports.
+- Do not assume Razor syntax for WebMCP callbacks or nested settings that is not documented by the ASP.NET Core wrapper.
+
+## Explore the demo
+
+Explore the Syncfusion® ASP.NET Core Pivot Table with WebMCP integration through this [demo](https://demos.syncfusion.com/grid-sdk/pivot-table/webmcp/index.html).
+
 ## See also
 
 - [Getting Started](./getting-started)
@@ -157,9 +182,9 @@ The module names are the PivotView core exports. Set each related `allow...` pro
 
 ## Sources
 
-- [PivotView WebMCP adapter source](https://github.com/Syncfusion/ej2-javascript-ui-controls/blob/03de1a97556505c42f353cbd34a25673bd197c4b/controls/pivotview/src/pivotview/actions/webmcp-adapter.ts)
-- [PivotView core source](https://github.com/Syncfusion/ej2-javascript-ui-controls/blob/03de1a97556505c42f353cbd34a25673bd197c4b/controls/pivotview/src/pivotview/base/pivotview.ts)
+- [PivotView WebMCP adapter source](https://raw.githubusercontent.com/Syncfusion/ej2-javascript-ui-controls/03de1a97556505c42f353cbd34a25673bd197c4b/controls/pivotview/src/pivotview/actions/webmcp-adapter.ts)
+- [PivotView core source](https://raw.githubusercontent.com/Syncfusion/ej2-javascript-ui-controls/03de1a97556505c42f353cbd34a25673bd197c4b/controls/pivotview/src/pivotview/base/pivotview.ts)
 - [ASP.NET Core PivotView API reference](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotView.html)
 - [ASP.NET Core PivotView WebMCP settings API reference](https://help.syncfusion.com/cr/aspnetcore-js2/Syncfusion.EJ2.PivotView.PivotViewWebMcpSettings.html)
 - [ASP.NET Core PivotView User Guide: Getting Started](./getting-started)
-- [Chrome WebMCP documentation](https://developer.chrome.com/docs/ai/webmcp)
+- [Chrome documentation for this API](https://developer.chrome.com/docs/ai/webmcp)
