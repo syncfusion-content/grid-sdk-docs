@@ -38,5 +38,3 @@ var ddl = new ej.dropdowns.DropDownList({
     width: '140px'
 });
 ddl.appendTo('#searchMode');
-
-
