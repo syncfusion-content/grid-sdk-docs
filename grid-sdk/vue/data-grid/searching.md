@@ -134,24 +134,29 @@ The following example demonstrates how to search specific columns such as **Cust
         
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/grid/search/default-cs6" %}
 
-## Search on each key stroke
+## Search Modes
 
-The search on each keystroke feature in Vue Data Grid enables you to perform real-time searching of grid data as they type in the search text box. This functionality provides a seamless and interactive searching experience, allowing you to see the search results dynamically updating in real time as they enter each keystroke in the search box
+Search Modes lets you choose how the Grid applies search results. Use this section to switch between the two supported modes at runtime:
 
-To achieve this, you need to bind the `keyup` event to the search input element inside the [created](https://ej2.syncfusion.com/vue/documentation/api/grid#created) event of the grid component. 
+- **Default Mode**: Search is executed only when the user presses the <kbd>Enter</kbd> key or clicking a button.
+- **Immediate Mode**: Search is executed automatically while typing based on the configured `immediateModeDelay`.
 
-In the following example, the `created` event is bound to the grid component, and inside the event handler, the `keyup` event is bound to the [search](https://ej2.syncfusion.com/vue/documentation/api/grid#search) input element. Whenever the `keyup` event is triggered, the current `search` string is obtained from the `search` input element, and the `search` method is invoked on the grid instance with the current search string as a parameter. This allows the search results to be displayed in real-time as you type in the search box.
+| Property | Accepted values | Behavior |
+|---|---|---|
+| `searchSettings.mode` | `Default`, `Immediate` | Controls whether search waits for <kbd>Enter</kbd> or runs automatically while typing. |
+| `searchSettings.immediateModeDelay` | Number in milliseconds | Sets the delay before search is triggered in `Immediate` mode. |
+
+The example below uses a dropdown to switch between the two modes at runtime. When **Immediate** is selected, the Grid updates `searchSettings.mode` to `Immediate` and sets `immediateModeDelay` to `1500`. When **Default** is selected, the Grid updates `searchSettings.mode` to `Default`.
 
 {% tabs %}
-{% highlight html tabtitle="Composition API (~/src/App.vue)" %}
-{% include code-snippet/grid-sdk/vue/grid/search/default-cs8/app-composition.vue %}
-{% endhighlight %}
-{% highlight html tabtitle="Options API (~/src/App.vue)" %}
+{% highlight vue tabtitle="app.vue" %}
 {% include code-snippet/grid-sdk/vue/grid/search/default-cs8/app.vue %}
 {% endhighlight %}
 {% endtabs %}
-        
+
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/vue/grid/search/default-cs8" %}
+```
+
 
 ## Perform search based on column formatting
 

@@ -156,17 +156,19 @@ The following example searches only the "Customer ID", "Freight", and "Ship Coun
   
 {% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/searching-cs4" %}
 
-## Search on each key stroke
+## Search Modes
 
-The real-time search feature enables searching as each keystroke is entered into the search box. This provides immediate, dynamic search results without requiring pressing <kbd>Enter</kbd> or clicking a button.
+Search Modes lets you choose how the Grid applies search results. Use this section to switch between the two supported modes at runtime:
 
-Implementation of real-time search:
+- **Default Mode**: Search is executed only when the user presses the <kbd>Enter</kbd> key or clicking a button.
+- **Immediate Mode**: Search is executed automatically while typing based on the configured `immediateModeDelay`.
 
-1. Bind the `keyup` event to the search input element inside the grid's [created](https://ej2.syncfusion.com/angular/documentation/api/grid#created) event.
-2. The `keyup` event triggers the search method on each keystroke.
-3. The grid results update in real-time as typing occurs.
+| Property | Accepted values | Behavior |
+|---|---|---|
+| `searchSettings.mode` | `Default`, `Immediate` | Controls whether search waits for <kbd>Enter</kbd> or runs automatically while typing. |
+| `searchSettings.immediateModeDelay` | Number in milliseconds | Sets the delay before search is triggered in `Immediate` mode. |
 
-In the following example, the `created` event of the grid binds the `keyup` event to the search input element. When typing occurs, the `keyup` event fires, retrieves the current search text from the input, and calls the grid's [search](https://ej2.syncfusion.com/angular/documentation/api/grid#search) method with the new text. This produces real-time filtering as typing happens.
+The example below uses a dropdown to switch between the two modes at runtime. When **Immediate** is selected, the Grid updates `searchSettings.mode` to `Immediate` and sets `immediateModeDelay` to `1500`. When **Default** is selected, the Grid updates `searchSettings.mode` to `Default`.
 
 {% tabs %}
 {% highlight ts tabtitle="app.component.ts" %}
@@ -177,10 +179,8 @@ In the following example, the `created` event of the grid binds the `keyup` even
 {% include code-snippet/grid-sdk/angular/grid/searching-cs6/src/main.ts %}
 {% endhighlight %}
 {% endtabs %}
-  
-{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/searching-cs6" %}
 
-> Search on each key stroke approach may affect the performance of the application when dealing with a large number of records.
+{% previewsample "https://help.syncfusion.com/samples/grid-sdk/angular/data-grid/searching-cs6" %}
 
 ## Perform search based on column formatting
 
