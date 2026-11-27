@@ -5,32 +5,32 @@ import * as React from 'react';
 import { data } from './datasource';
  
 function App() {
-  const gridInstance = React.useRef(null);
+  let gridInstance = null;
   const [findText, setFindText] = React.useState('');
   const [hasSearched, setHasSearched] = React.useState(false);
  
   function find() {
-    if (gridInstance.current && findText.trim()) {
-      gridInstance.current.find(findText);
+    if (gridInstance && findText.trim()) {
+      gridInstance.find(findText);
       setHasSearched(true);
     }
   }
  
   function findNext() {
-    if (gridInstance.current && hasSearched) {
-      gridInstance.current.findNext();
+    if (gridInstance && hasSearched) {
+      gridInstance.findNext();
     }
   }
  
   function findPrevious() {
-    if (gridInstance.current && hasSearched) {
-      gridInstance.current.findPrevious();
+    if (gridInstance && hasSearched) {
+      gridInstance.findPrevious();
     }
   }
  
   function clearFind() {
-    if (gridInstance.current) {
-      gridInstance.current.clearFind();
+    if (gridInstance) {
+      gridInstance.clearFind();
     }
     setFindText('');
     setHasSearched(false);
@@ -38,8 +38,8 @@ function App() {
  
   function handleFindTextChange(event) {
     setFindText(event.target.value);
-    if (gridInstance.current) {
-      gridInstance.current.clearFind();
+    if (gridInstance) {
+      gridInstance.clearFind();
     }
     setHasSearched(false);
   }
@@ -60,7 +60,13 @@ function App() {
         <ButtonComponent content="Previous" style={{ marginLeft: '10px' }} disabled={!hasSearched} onClick={findPrevious} />
         <ButtonComponent content="Clear" style={{ marginLeft: '10px' }} disabled={!findText.trim() && !hasSearched} onClick={clearFind} />
       </div>
-      <GridComponent ref={gridInstance} dataSource={data} height={272}>
+      <GridComponent
+        ref={(grid) => {
+          gridInstance = grid;
+        }}
+        dataSource={data}
+        height={272}
+      >
         <ColumnsDirective>
           <ColumnDirective field='OrderID' headerText='Order ID' width='90' textAlign="Right"/>
           <ColumnDirective field='CustomerID' headerText='Customer ID' width='110' textAlign="Left"/>
