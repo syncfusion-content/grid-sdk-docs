@@ -212,11 +212,11 @@ For example:
 - To group columns when a header is focused, use <kbd>Command + Space</kbd>.
 - To expand visible groups, use <kbd>Ctrl + Down Arrow</kbd>.
 
-## Using Custom Key Support
+## Customize keyboard shortcuts
 
-The Blazor DataGrid allows you to customize keyboard shortcuts by replacing the default shortcuts or adding your own key combinations for supported grid actions. This helps you align the grid's keyboard behavior with your application's requirements and accessibility guidelines.
+The Blazor DataGrid provides flexible keyboard shortcut customization for supported grid actions. Default shortcuts can be replaced with custom key combinations, and specific built-in actions can be disabled, so that keyboard behavior aligns with application requirements and accessibility guidelines.
 
-To customize keyboard shortcuts, assign a `GridCustomKeyboardShortcuts` object to the **KeyboardShortcuts** property of the `SfGrid` component. You can configure shortcuts for actions in the **DataCell**, **Header**, **EditCell**, **GroupRow**, **DetailRow**, and **Common** categories.
+To customize keyboard shortcuts, assign a `GridCustomKeyboardShortcuts` object to the **KeyboardShortcuts** property of the `SfGrid` component. Shortcuts are organized into the **DataCell**, **Header**, **EditCell**, **GroupRow**, **DetailRow**, and **Common** categories based on the grid area where each action applies. Only the configured actions change; all other actions continue to use their default keyboard shortcuts.
 
 The following tables list the supported actions and their default keyboard shortcuts.
 
@@ -292,6 +292,8 @@ The following tables list the supported actions and their default keyboard short
 | Copy | Ctrl+C | ⌘+C | Copy selected cells to the clipboard. |
 | CopyWithHeaders | Ctrl+Shift+H | ⌘+⇧+H | Copy selected cells along with their column headers. |
 | Paste | Ctrl+V | ⌘+V | Paste clipboard content into the grid. |
+
+The following example replaces the default shortcuts with custom key combinations for actions across multiple categories.
 
 {% tabs %}
 {% highlight razor tabtitle="Index.razor" %}
@@ -429,12 +431,131 @@ public class OrderData
 {% endhighlight %}
 {% endtabs %}
 
- **Note**
- 
-- **Partial customization:** You can customize only the actions required for your application. Any action that is not configured will continue to use its default keyboard shortcut.
-- **Action categories:** Keyboard shortcuts are grouped into categories such as **DataCell**, **Header**, **EditCell**, **GroupRow**, **DetailRow**, and **Common**. This makes it easier to organize and manage shortcuts based on where they are used in the grid.
-- **Override defaults:** When a custom shortcut is assigned to an action, it replaces the default keyboard shortcut for that action.
--**Unique key combinations:** To ensure consistent behavior, avoid assigning the same key combination to multiple grid actions.
+### Disable default keyboard actions
+
+Specific built-in keyboard actions can be disabled by mapping the corresponding `GridKeyboardAction` value to `string.Empty` in the **KeyboardShortcuts** configuration. This is useful when a default shortcut conflicts with an application-level shortcut or when a particular keyboard operation must not be available to end users.
+
+In the following example, the default keyboard shortcuts for column sorting and column grouping are disabled in the **Header** category.
+
+{% tabs %}
+{% highlight razor tabtitle="Index.razor" %}
+@page "/"
+@using Syncfusion.Blazor.Grids
+
+<SfGrid DataSource="@GridData"
+    AllowPaging="true"
+    AllowSorting="true"
+    AllowGrouping="true"
+    AllowReordering="true"
+    AllowSelection="true"
+    AllowFiltering="true"
+    @ref="Grid"
+    Toolbar="@(new List<string>() { "Add", "Edit", "Delete", "Update", "Cancel" })"
+    KeyboardShortcuts="@Shortcuts"
+    Height="400">
+    <GridEditSettings AllowEditing="true" AllowAdding="true" AllowDeleting="true"></GridEditSettings>
+    <GridFilterSettings Type="FilterType.Menu"></GridFilterSettings>
+    <GridSelectionSettings CheckboxOnly="true"></GridSelectionSettings>
+    <GridColumns>
+        <GridColumn Type="ColumnType.CheckBox" Width="50"></GridColumn>
+        <GridColumn Field="@nameof(OrderData.OrderID)" HeaderText="Order ID" IsPrimaryKey="true" Width="120" />
+        <GridColumn Field="@nameof(OrderData.CustomerID)" HeaderText="Customer Name" Width="150" />
+        <GridColumn Field="@nameof(OrderData.ShipCity)" HeaderText="Ship City" Width="120" />
+        <GridColumn Field="@nameof(OrderData.OrderDate)" HeaderText="Order Date" Format="d" Width="140" />
+        <GridColumn Field="@nameof(OrderData.ShipName)" HeaderText="Ship Name" Width="160" />
+    </GridColumns>
+</SfGrid>
+
+@code {
+    private SfGrid<OrderData> Grid { get; set; } = default!;
+
+    public List<OrderData> GridData { get; set; }
+
+    protected override void OnInitialized()
+    {
+        GridData = OrderData.GetAllRecords();
+    }
+
+    private GridCustomKeyboardShortcuts Shortcuts { get; } = new()
+    {
+        Header = new Dictionary<GridKeyboardAction, string>
+        {
+            { GridKeyboardAction.SortColumn, string.Empty },
+            { GridKeyboardAction.GroupColumn, string.Empty }
+        }
+    };
+}
+{% endhighlight %}
+{% highlight c# tabtitle="OrderData.cs" %}
+public class OrderData
+{
+    public static List<OrderData> Orders = new List<OrderData>();
+
+    public OrderData() { }
+
+    public OrderData(int? OrderID, string CustomerID, string ShipCity, string ShipName, DateTime? OrderDate)
+    {
+        this.OrderID = OrderID;
+        this.CustomerID = CustomerID;
+        this.ShipCity = ShipCity;
+        this.ShipName = ShipName;
+        this.OrderDate = OrderDate;
+    }
+
+    public static List<OrderData> GetAllRecords()
+    {
+        if (Orders.Count() == 0)
+        {
+            int OrderID = 10247;
+            for (int i = 1; i < 2; i++)
+            {
+                Orders.Add(new OrderData(OrderID + 1, "VINET", "Reims", "Vins et alcools Chevali", new DateTime(2026, 1, 1)));
+                Orders.Add(new OrderData(OrderID + 2, "TOMSP", "Münster", "Toms Spezialitäten", new DateTime(2026, 1, 2)));
+                Orders.Add(new OrderData(OrderID + 3, "HANAR", "Rio de Janeiro", "Hanari Carnes", new DateTime(2026, 1, 3)));
+                Orders.Add(new OrderData(OrderID + 4, "VICTE", "Lyon", "Victuailles en stock", new DateTime(2026, 1, 4)));
+                Orders.Add(new OrderData(OrderID + 5, "SUPRD", "Charleroi", "Suprêmes délices", new DateTime(2026, 1, 5)));
+                Orders.Add(new OrderData(OrderID + 6, "HANAR", "Lyon", "Hanari Carnes", new DateTime(2026, 1, 6)));
+                Orders.Add(new OrderData(OrderID + 7, "CHOPS", "Rio de Janeiro", "Chop-suey Chinese", new DateTime(2026, 1, 7)));
+                Orders.Add(new OrderData(OrderID + 8, "ERNSH", "Münster", "Richter Supermarkt", new DateTime(2026, 1, 8)));
+                Orders.Add(new OrderData(OrderID + 9, "WELLI", "Reims", "Wellington Import", new DateTime(2026, 1, 9)));
+                OrderID += 9;
+            }
+        }
+        return Orders;
+    }
+
+    public int? OrderID { get; set; }
+    public string CustomerID { get; set; }
+    public string ShipCity { get; set; }
+    public string ShipName { get; set; }
+    public DateTime? OrderDate { get; set; }
+}
+{% endhighlight %}
+{% endtabs %}
+
+**Explanation**
+
+The **KeyboardShortcuts** property accepts a `GridCustomKeyboardShortcuts` object that customizes keyboard behavior for each grid area. Assigning `string.Empty` to a `GridKeyboardAction` removes the key combination for that action, so the associated default keyboard shortcut is no longer triggered.
+
+```csharp
+private GridCustomKeyboardShortcuts Shortcuts { get; } = new()
+{
+    Header = new Dictionary<GridKeyboardAction, string>
+    {
+        { GridKeyboardAction.SortColumn, string.Empty },
+        { GridKeyboardAction.GroupColumn, string.Empty }
+    }
+};
+```
+
+In this configuration:
+
+| Action | Default shortcut (Windows) | Default shortcut (Mac) | Result |
+|--------|----------------------------|------------------------|--------|
+| `GridKeyboardAction.SortColumn` | Enter, Ctrl+Enter | Enter, ⌘+Enter | The default sorting shortcut on a focused header cell is disabled. |
+| `GridKeyboardAction.GroupColumn` | Ctrl+Space | ⌘+Space | The default grouping shortcut on a focused header cell is disabled. |
+
+All other built-in keyboard shortcuts, including header navigation, column reordering, and filter menu access, continue to function without modification. This approach provides granular control over keyboard interactions while preserving the remaining DataGrid keyboard navigation experience.
 
 ## Ensuring accessibility
 
