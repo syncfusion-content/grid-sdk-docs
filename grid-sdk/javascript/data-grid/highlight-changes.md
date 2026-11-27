@@ -4,7 +4,6 @@ title: Highlight Data Changes in JavaScript Data Grid | Syncfusion
 description: Learn how to flash changed cells in the JavaScript Data Grid, set the flash color and duration, flash cells in code, and restyle the highlight with CSS.
 platform: grid-sdk
 control: Highlight Changes
-publishingplatform: grid-sdk
 documentation: ug
 domainurl: https://help.syncfusion.com/grid-sdk
 ---
@@ -21,21 +20,6 @@ The grid needs a primary key to find the row. Set `isPrimaryKey` to "true" on on
 
 The following example shows a stock dashboard. The "Update prices" button changes the price of three symbols, and each changed cell flashes.
 
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/highlight-changes-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/highlight-changes-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/highlight-changes-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
 {% include code-snippet/grid-sdk/javascript/grid/highlight-changes-cs1/index.js %}
@@ -46,8 +30,6 @@ The following example shows a stock dashboard. The "Update prices" button change
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/highlight-changes-cs1" %}
-
-{% endif %}
 
 > To skip flashing for one column, set `enableHighlightOnDataChange` to "false" on that column.
 
@@ -63,21 +45,6 @@ Use `highlightSettings` to control how the flash looks. It has these properties:
 
 The following example shows a financial monitoring grid. Change the color and durations, select "Apply settings", and then select "Update prices".
 
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/highlight-changes-cs2/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/highlight-changes-cs2/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/highlight-changes-cs2" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
 {% include code-snippet/grid-sdk/javascript/grid/highlight-changes-cs2/index.js %}
@@ -89,8 +56,6 @@ The following example shows a financial monitoring grid. Change the color and du
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/highlight-changes-cs2" %}
 
-{% endif %}
-
 ## Programmatically flash cells
 
 Call `flashCells` to flash cells without a data change. The method works even when `enableHighlightOnDataChange` is "false". It accepts these options:
@@ -100,21 +65,6 @@ Call `flashCells` to flash cells without a data change. The method works even wh
 * `highlightSettings`: flash settings for this call only. They override the grid settings.
 
 The following example shows a risk analysis grid. Select a row and use the buttons to flash the row, a column, or specific cells.
-
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/highlight-changes-cs3/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/highlight-changes-cs3/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/highlight-changes-cs3" %}
-
-{% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
@@ -126,8 +76,6 @@ The following example shows a risk analysis grid. Select a row and use the butto
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/highlight-changes-cs3" %}
-
-{% endif %}
 
 ## Customizing highlight appearance
 
@@ -141,21 +89,6 @@ The grid adds the `e-grid-cell-changed` class to a flashed cell and the `e-grid-
 
 The following example applies brand colors and timings with CSS.
 
-{% if page.publishingplatform == "typescript" %}
-
-{% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/grid-sdk/javascript/grid/highlight-changes-cs4/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/grid-sdk/javascript/grid/highlight-changes-cs4/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/highlight-changes-cs4" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
 {% include code-snippet/grid-sdk/javascript/grid/highlight-changes-cs4/index.js %}
@@ -166,8 +99,6 @@ The following example applies brand colors and timings with CSS.
 {% endtabs %}
 
 {% previewsample "https://help.syncfusion.com/code-snippet/grid-sdk/javascript/grid/highlight-changes-cs4" %}
-
-{% endif %}
 
 ## Related APIs
 
