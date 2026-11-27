@@ -41,7 +41,7 @@ The Blazor DataGrid supports the following column types:
 
 > **Note**
 >
-> The Syncfusion Blazor DataGrid supports [NodaTime](https://nodatime.org/) data types and provides seamless data operations, including formatting, filtering, sorting, editing, and CRUD operations.
+> The Syncfusion Blazor DataGrid supports [NodaTime](https://nodatime.org/) data types and enables seamless data operations such as formatting, sorting, filtering, editing, and CRUD operations.
 >
 > The following NodaTime types are supported:
 >
@@ -51,7 +51,7 @@ The Blazor DataGrid supports the following column types:
 > * `LocalDateTime`
 > * `OffsetDateTime`
 >
-> **Important:** NodaTime support is currently available only for local data binding. Operations with remote data sources are not supported.
+> **Important:** NodaTime support is currently available only for local data binding. Remote data binding and operations with remote data sources are not supported.
 
 {% tabs %}
 {% highlight razor tabtitle="Index.razor" %}
