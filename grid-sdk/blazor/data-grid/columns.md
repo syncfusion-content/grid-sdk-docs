@@ -39,6 +39,19 @@ The Blazor DataGrid supports the following column types:
 | `TimeOnly` | Represents `TimeOnly` values (available in .NET 7 and later). |
 | `CheckBox` | Renders a checkbox within the column, primarily used for row selection. |
 
+> **Note**
+>
+> The Syncfusion Blazor DataGrid supports [NodaTime](https://nodatime.org/) data types and enables seamless data operations such as formatting, sorting, filtering, editing, and CRUD operations.
+>
+> The following NodaTime types are supported:
+>
+> * `Instant`
+> * `LocalDate`
+> * `LocalTime`
+> * `LocalDateTime`
+> * `OffsetDateTime`
+>
+> **Important:** NodaTime support is currently available only for local data binding. Remote data binding and operations with remote data sources are not supported.
 
 {% tabs %}
 {% highlight razor tabtitle="Index.razor" %}
@@ -2284,7 +2297,7 @@ await Grid.RefreshColumnsAsync();
 ```
 ## Responsive columns
 
-The Blazor DataGrid supports responsive column visibility using the [HideAtMedia](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridColumn.html#Syncfusion_Blazor_Grids_GridColumn_HideAtMedia) property. This property accepts valid CSS [Media Queries](http://cssmediaqueries.com/what-are-css-media-queries.html) and hides columns based on screen width conditions.
+The Blazor DataGrid supports responsive column visibility using the [HideAtMedia](https://help.syncfusion.com/cr/blazor/Syncfusion.Blazor.Grids.GridColumn.html#Syncfusion_Blazor_Grids_GridColumn_HideAtMedia) property. This property accepts valid CSS [Media Queries](https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Media_queries/Using) and hides columns based on screen width conditions.
 
 Use `HideAtMedia` property to create responsive layouts where certain columns are hidden automatically on smaller screens, improving readability and reducing horizontal scrolling.
 
