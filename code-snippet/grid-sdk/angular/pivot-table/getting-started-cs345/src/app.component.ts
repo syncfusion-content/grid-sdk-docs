@@ -11,31 +11,29 @@ import { Pivot_Data } from './datasource';
 import { DataSourceSettingsModel } from '@syncfusion/ej2-pivotview/src/model/datasourcesettings-model';
 
 @Component({
-imports: [
-        
+    imports: [
+
         PivotViewAllModule,
         PivotFieldListAllModule
     ],
-providers: [HtmlExportService],
-standalone: true,
-  selector: 'app-container',
-  template: `<div class="col-md-8">
+    providers: [HtmlExportService],
+    standalone: true,
+    selector: 'app-container',
+    template: `<div class="col-md-8">
   <ejs-pivotview #pivotview id='PivotView' height='350' [dataSourceSettings]=dataSourceSettings allowHtmlExport='true' [width]=width></ejs-pivotview></div>
   <div class="col-md-2"><button ej-button id='export'>Export</button></div>`
 })
 export class AppComponent implements OnInit {
-  public width?: string;
-  public dataSourceSettings?: DataSourceSettingsModel;
-  public button?: Button;
-  public htmlExportProperties?: HtmlExportProperties;
+    public width?: string;
+    public dataSourceSettings?: DataSourceSettingsModel;
+    public button?: Button;
+    public htmlExportProperties?: HtmlExportProperties;
 
-    @ViewChild('pivotview', {static: false})
+    @ViewChild('pivotview', { static: false })
     public pivotGridObj?: PivotView;
 
     ngOnInit(): void {
-
         this.width = "100%";
-
         this.dataSourceSettings = {
             dataSource: Pivot_Data as IDataSet[],
             expandAll: false,
