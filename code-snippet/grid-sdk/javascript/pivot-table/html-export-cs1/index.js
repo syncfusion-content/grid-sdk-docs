@@ -14,9 +14,9 @@ var pivotTableObj = new ej.pivotview.PivotView({
 pivotTableObj.appendTo('#PivotTable');
 
 var exportBtn = new ej.buttons.Button({ isPrimary: true });
-exportBtn.appendTo('#pdf');
+exportBtn.appendTo('#export');
 
-document.getElementById('pdf').onclick = function () {
+document.getElementById('export').onclick = function () {
     var htmlExportProperties = { fileName: 'PivotTable.html', title: 'Sales Analysis Report', includeStyles: true };
     pivotTableObj.exportToHTML(htmlExportProperties);
 };
