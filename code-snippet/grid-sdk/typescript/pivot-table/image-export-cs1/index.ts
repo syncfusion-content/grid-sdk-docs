@@ -22,9 +22,9 @@ let pivotTableObj: PivotView = new PivotView({
 pivotTableObj.appendTo('#PivotTable');
 
 let exportBtn: Button = new Button({ isPrimary: true });
-exportBtn.appendTo('#pdf');
+exportBtn.appendTo('#export');
 
-document.getElementById('pdf').onclick = function () {
+document.getElementById('export').onclick = function () {
     let imageExportProperties: ImageExportProperties = { fileName: 'PivotTable.png', backgroundColor: '#ffffff', scale: 2 };
     pivotTableObj.exportToImage('PNG', imageExportProperties);
 };
