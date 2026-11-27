@@ -46,7 +46,8 @@ const toolbar = [
   "GrandTotal",
   "ConditionalFormatting",
   "NumberFormatting",
-  "FieldList"
+  "FieldList",
+  "FullScreen"
 ];
 
 const saveReport = (args) => {
